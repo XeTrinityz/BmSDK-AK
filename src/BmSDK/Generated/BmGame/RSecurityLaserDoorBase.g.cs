@@ -107,7 +107,8 @@ public partial class RSecurityLaserDoorBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RSecurityLaserDoorBase.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {

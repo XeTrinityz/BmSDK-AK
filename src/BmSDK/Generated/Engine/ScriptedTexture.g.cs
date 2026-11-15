@@ -94,7 +94,8 @@ public partial class ScriptedTexture : BmSDK.Engine.TextureRenderTarget2D, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bNeedsUpdate
+    /// BoolProperty: bNeedsUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedsUpdate
     {

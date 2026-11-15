@@ -103,7 +103,8 @@ public partial class RForceFieldVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bForceActive
+    /// BoolProperty: bForceActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceActive
     {

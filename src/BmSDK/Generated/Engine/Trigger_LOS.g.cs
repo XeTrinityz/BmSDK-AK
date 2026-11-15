@@ -136,7 +136,8 @@ public partial class Trigger_LOS : BmSDK.Engine.Trigger, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenChecks
+    /// FloatProperty: TimeBetweenChecks<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TimeBetweenChecks
     {

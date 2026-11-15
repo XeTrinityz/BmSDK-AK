@@ -93,7 +93,8 @@ public partial class RSeqAct_SetVehicleCombatDifficulty : BmSDK.Engine.SequenceA
     }
 
     /// <summary>
-    /// IntProperty: ChapterDifficulty
+    /// IntProperty: ChapterDifficulty<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ChapterDifficulty
     {

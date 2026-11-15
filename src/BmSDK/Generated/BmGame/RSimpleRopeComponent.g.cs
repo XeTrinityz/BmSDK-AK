@@ -173,7 +173,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RopeSectionLength
+    /// FloatProperty: RopeSectionLength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float RopeSectionLength
     {
@@ -182,7 +183,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bEnableRopeSpooling
+    /// BoolProperty: bEnableRopeSpooling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableRopeSpooling
     {
@@ -191,7 +193,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SpoolEffectStength
+    /// FloatProperty: SpoolEffectStength<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float SpoolEffectStength
     {

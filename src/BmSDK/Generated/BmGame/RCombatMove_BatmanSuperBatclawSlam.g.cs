@@ -408,13 +408,15 @@ public partial class RCombatMove_BatmanSuperBatclawSlam : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 836);
 
     /// <summary>
-    /// StructProperty: SuperScreenShake
+    /// StructProperty: SuperScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=3.7,Y=3.7,Z=3),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct SuperScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 992);
@@ -465,7 +467,8 @@ public partial class RCombatMove_BatmanSuperBatclawSlam : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// ComponentProperty: BatClawRope
+    /// ComponentProperty: BatClawRope<br/>
+    /// Default: BmGame.Default__RCombatMove_BatmanSuperBatclawSlam.RopeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent BatClawRope
     {
@@ -582,7 +585,8 @@ public partial class RCombatMove_BatmanSuperBatclawSlam : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: RevertCamTime
+    /// FloatProperty: RevertCamTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RevertCamTime
     {

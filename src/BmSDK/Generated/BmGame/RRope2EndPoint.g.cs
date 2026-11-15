@@ -79,7 +79,8 @@ public partial class RRope2EndPoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: EndType
+    /// IntProperty: EndType<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int EndType
     {

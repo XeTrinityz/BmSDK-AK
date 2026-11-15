@@ -510,7 +510,8 @@ public partial class MPawnPlayerBatgirlBase : BmSDK.BmGame.RPawnPlayerBmBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: MaxBalloon
+    /// IntProperty: MaxBalloon<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxBalloon
     {
@@ -519,7 +520,8 @@ public partial class MPawnPlayerBatgirlBase : BmSDK.BmGame.RPawnPlayerBmBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: MaxTheeth
+    /// IntProperty: MaxTheeth<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int MaxTheeth
     {
@@ -528,7 +530,8 @@ public partial class MPawnPlayerBatgirlBase : BmSDK.BmGame.RPawnPlayerBmBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: MaxJITB
+    /// IntProperty: MaxJITB<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxJITB
     {
@@ -537,7 +540,8 @@ public partial class MPawnPlayerBatgirlBase : BmSDK.BmGame.RPawnPlayerBmBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: Achievement_Scared_ThugDefeated_Amount_Needed
+    /// IntProperty: Achievement_Scared_ThugDefeated_Amount_Needed<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int Achievement_Scared_ThugDefeated_Amount_Needed
     {
@@ -555,7 +559,8 @@ public partial class MPawnPlayerBatgirlBase : BmSDK.BmGame.RPawnPlayerBmBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: Achievement_ThugDefeated_DuringHack_Amount_Needed
+    /// IntProperty: Achievement_ThugDefeated_DuringHack_Amount_Needed<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int Achievement_ThugDefeated_DuringHack_Amount_Needed
     {

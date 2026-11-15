@@ -97,7 +97,8 @@ public partial class RAnimNotify_AddForce : BmSDK.Engine.AnimNotify, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 100);
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {

@@ -124,7 +124,8 @@ public partial class RSeqAct_AddOrRemovePersistentHudTarget : BmSDK.Engine.Seque
     }
 
     /// <summary>
-    /// StrProperty: AnimNameForAdd
+    /// StrProperty: AnimNameForAdd<br/>
+    /// Default: "factory_worker"
     /// </summary>
     public unsafe BmSDK.FString AnimNameForAdd
     {
@@ -169,7 +170,8 @@ public partial class RSeqAct_AddOrRemovePersistentHudTarget : BmSDK.Engine.Seque
     }
 
     /// <summary>
-    /// BoolProperty: SuppressDuringRemoteControl
+    /// BoolProperty: SuppressDuringRemoteControl<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SuppressDuringRemoteControl
     {
@@ -178,7 +180,8 @@ public partial class RSeqAct_AddOrRemovePersistentHudTarget : BmSDK.Engine.Seque
     }
 
     /// <summary>
-    /// BoolProperty: FadeDuringCombat
+    /// BoolProperty: FadeDuringCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FadeDuringCombat
     {

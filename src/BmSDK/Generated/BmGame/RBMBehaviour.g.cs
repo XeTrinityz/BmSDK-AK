@@ -1718,7 +1718,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bPlaceableBehaviour
+    /// BoolProperty: bPlaceableBehaviour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlaceableBehaviour
     {
@@ -1754,7 +1755,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanCheckFalling
+    /// BoolProperty: bCanCheckFalling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCheckFalling
     {
@@ -1817,7 +1819,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bShouldPreventFinalBlow
+    /// BoolProperty: bShouldPreventFinalBlow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldPreventFinalBlow
     {
@@ -1826,7 +1829,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bShouldClearCombatMove
+    /// BoolProperty: bShouldClearCombatMove<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldClearCombatMove
     {
@@ -1835,7 +1839,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowBarkPanicking
+    /// BoolProperty: bAllowBarkPanicking<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowBarkPanicking
     {
@@ -2033,7 +2038,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: ThoughtRed
+    /// ByteProperty: ThoughtRed<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte ThoughtRed
     {
@@ -2042,7 +2048,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: ThoughtGreen
+    /// ByteProperty: ThoughtGreen<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte ThoughtGreen
     {
@@ -2051,7 +2058,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: ThoughtBlue
+    /// ByteProperty: ThoughtBlue<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte ThoughtBlue
     {
@@ -2111,7 +2119,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCharacter.FCustomIdleConfig>(Ptr + 484);
 
     /// <summary>
-    /// IntProperty: NumBehaviourOutputLinks
+    /// IntProperty: NumBehaviourOutputLinks<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumBehaviourOutputLinks
     {
@@ -2144,7 +2153,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: MinRandAimWaitTime
+    /// FloatProperty: MinRandAimWaitTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinRandAimWaitTime
     {
@@ -2153,7 +2163,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RandAimWaitRandomFactor
+    /// FloatProperty: RandAimWaitRandomFactor<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RandAimWaitRandomFactor
     {
@@ -2171,7 +2182,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// NameProperty: RandomAimAtName
+    /// NameProperty: RandomAimAtName<br/>
+    /// Default: RandAimA
     /// </summary>
     public unsafe BmSDK.FName RandomAimAtName
     {

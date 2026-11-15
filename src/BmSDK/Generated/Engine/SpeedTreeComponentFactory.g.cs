@@ -79,7 +79,8 @@ public partial class SpeedTreeComponentFactory : BmSDK.Engine.PrimitiveComponent
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: SpeedTreeComponent
+    /// ComponentProperty: SpeedTreeComponent<br/>
+    /// Default: Engine.Default__SpeedTreeComponentFactory.SpeedTreeComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SpeedTreeComponent SpeedTreeComponent
     {

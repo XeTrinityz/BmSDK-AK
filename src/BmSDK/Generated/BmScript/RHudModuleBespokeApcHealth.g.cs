@@ -482,7 +482,8 @@ public partial class RHudModuleBespokeApcHealth : BmSDK.BmGame.RHudModuleBespoke
     }
 
     /// <summary>
-    /// FloatProperty: CloudburstOvercharge
+    /// FloatProperty: CloudburstOvercharge<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CloudburstOvercharge
     {

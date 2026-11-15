@@ -338,7 +338,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetBehind
+    /// FloatProperty: FollowOffsetBehind<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FollowOffsetBehind
     {
@@ -356,7 +357,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowLaneMax
+    /// FloatProperty: FollowLaneMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FollowLaneMax
     {
@@ -365,7 +367,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetAggression
+    /// FloatProperty: FollowOffsetAggression<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float FollowOffsetAggression
     {
@@ -374,7 +377,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowMinThrottle
+    /// FloatProperty: FollowMinThrottle<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float FollowMinThrottle
     {
@@ -383,7 +387,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowMaxThrottle
+    /// FloatProperty: FollowMaxThrottle<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float FollowMaxThrottle
     {
@@ -401,7 +406,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// BoolProperty: ConstrainFollowVehicleRouteForFollowers
+    /// BoolProperty: ConstrainFollowVehicleRouteForFollowers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ConstrainFollowVehicleRouteForFollowers
     {
@@ -500,7 +506,8 @@ public partial class RVehicleBehaviour_FollowVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: SingleFileSpacing
+    /// FloatProperty: SingleFileSpacing<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SingleFileSpacing
     {

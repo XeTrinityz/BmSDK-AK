@@ -535,7 +535,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
     }
 
     /// <summary>
-    /// ClassProperty: GameMessageClass
+    /// ClassProperty: GameMessageClass<br/>
+    /// Default: Engine.GameMessage
     /// </summary>
     public unsafe BmSDK.Class GameMessageClass
     {
@@ -643,7 +644,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
     }
 
     /// <summary>
-    /// StrProperty: StringSpectating
+    /// StrProperty: StringSpectating<br/>
+    /// Default: "Spectating"
     /// </summary>
     public unsafe BmSDK.FString StringSpectating
     {
@@ -652,7 +654,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
     }
 
     /// <summary>
-    /// StrProperty: StringUnknown
+    /// StrProperty: StringUnknown<br/>
+    /// Default: "Unknown"
     /// </summary>
     public unsafe BmSDK.FString StringUnknown
     {
@@ -694,7 +697,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(Ptr + 808);
 
     /// <summary>
-    /// NameProperty: SessionName
+    /// NameProperty: SessionName<br/>
+    /// Default: Game
     /// </summary>
     public unsafe BmSDK.FName SessionName
     {

@@ -382,7 +382,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ByteProperty: MultipointFollowListener
+    /// ByteProperty: MultipointFollowListener<br/>
+    /// Default: AK_LISTENER_CAMERA_1
     /// </summary>
     public unsafe BmSDK.Engine.AkWwise.EListenerID MultipointFollowListener
     {

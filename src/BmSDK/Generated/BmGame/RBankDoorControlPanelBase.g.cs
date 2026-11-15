@@ -160,7 +160,8 @@ public partial class RBankDoorControlPanelBase : BmSDK.Engine.Actor, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: OriginalStaticMesh
+    /// ComponentProperty: OriginalStaticMesh<br/>
+    /// Default: BmGame.Default__RBankDoorControlPanelBase.StatMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent OriginalStaticMesh
     {
@@ -178,7 +179,8 @@ public partial class RBankDoorControlPanelBase : BmSDK.Engine.Actor, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: BombMesh
+    /// ComponentProperty: BombMesh<br/>
+    /// Default: BmGame.Default__RBankDoorControlPanelBase.BombMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BombMesh
     {

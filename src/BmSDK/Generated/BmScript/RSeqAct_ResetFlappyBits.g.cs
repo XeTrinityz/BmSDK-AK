@@ -125,7 +125,8 @@ public partial class RSeqAct_ResetFlappyBits : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: NumFrames
+    /// IntProperty: NumFrames<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumFrames
     {

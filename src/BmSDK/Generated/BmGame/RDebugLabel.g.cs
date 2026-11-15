@@ -122,7 +122,8 @@ public partial class RDebugLabel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float Range
     {
@@ -131,7 +132,8 @@ public partial class RDebugLabel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Text
+    /// StrProperty: Text<br/>
+    /// Default: "Example text"
     /// </summary>
     public unsafe BmSDK.FString Text
     {
@@ -140,13 +142,15 @@ public partial class RDebugLabel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Colour
+    /// StructProperty: Colour<br/>
+    /// Default: (B=255,G=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor Colour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 688);
 
     /// <summary>
-    /// FloatProperty: Scale
+    /// FloatProperty: Scale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Scale
     {

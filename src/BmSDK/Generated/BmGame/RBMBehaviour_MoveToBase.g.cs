@@ -205,7 +205,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
     public partial record struct FStartleOptions
     {
         /// <summary>
-        /// FloatProperty: TimeBetweenStartles
+        /// FloatProperty: TimeBetweenStartles<br/>
+        /// Default: 30
         /// </summary>
         public unsafe float TimeBetweenStartles
         {
@@ -214,7 +215,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
         }
 
         /// <summary>
-        /// StructProperty: StartledAnimations
+        /// StructProperty: StartledAnimations<br/>
+        /// Default: (FrontStartle=(AnimationName=Stand_Idle_Startled_Front,bHasNoMovement=true),BackStartle=(AnimationName=Stand_Idle_Startled_Back,bHasNoMovement=true))
         /// </summary>
         public unsafe BmSDK.BmGame.RBMBehaviour_MoveToBase.FMoveToStartledAnimationData StartledAnimations
         {
@@ -257,7 +259,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
     public partial record struct FMoveToStartledAnimationData
     {
         /// <summary>
-        /// StructProperty: FrontStartle
+        /// StructProperty: FrontStartle<br/>
+        /// Default: (AnimationName=Stand_Idle_Startled_Front,bHasNoMovement=true)
         /// </summary>
         public unsafe BmSDK.BmGame.RBMBehaviour_MoveToBase.FMoveToRandomAnimation FrontStartle
         {
@@ -266,7 +269,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
         }
 
         /// <summary>
-        /// StructProperty: BackStartle
+        /// StructProperty: BackStartle<br/>
+        /// Default: (AnimationName=Stand_Idle_Startled_Back,bHasNoMovement=true)
         /// </summary>
         public unsafe BmSDK.BmGame.RBMBehaviour_MoveToBase.FMoveToRandomAnimation BackStartle
         {
@@ -291,7 +295,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
         }
 
         /// <summary>
-        /// BoolProperty: bHasNoMovement
+        /// BoolProperty: bHasNoMovement<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bHasNoMovement
         {
@@ -310,7 +315,8 @@ public partial class RBMBehaviour_MoveToBase : BmSDK.BmGame.RBMBehaviour_ActionQ
     }
 
     /// <summary>
-    /// StructProperty: StartleSettings
+    /// StructProperty: StartleSettings<br/>
+    /// Default: (TimeBetweenStartles=30,StartledAnimations=(FrontStartle=(AnimationName=Stand_Idle_Startled_Front,bHasNoMovement=true),BackStartle=(AnimationName=Stand_Idle_Startled_Back,bHasNoMovement=true)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMBehaviour_MoveToBase.FStartleOptions StartleSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMBehaviour_MoveToBase.FStartleOptions>(Ptr + 596);

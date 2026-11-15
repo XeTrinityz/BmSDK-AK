@@ -153,7 +153,8 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
     }
 
     /// <summary>
-    /// IntProperty: AttackerPassengerSlot
+    /// IntProperty: AttackerPassengerSlot<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int AttackerPassengerSlot
     {
@@ -207,7 +208,8 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
     }
 
     /// <summary>
-    /// FloatProperty: WarningTime
+    /// FloatProperty: WarningTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float WarningTime
     {

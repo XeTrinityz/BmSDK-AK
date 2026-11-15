@@ -121,7 +121,8 @@ public partial class MaterialFunction : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LibraryCategories
+    /// ArrayProperty: LibraryCategories<br/>
+    /// Default: ("Misc")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> LibraryCategories
     {

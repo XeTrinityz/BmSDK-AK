@@ -169,7 +169,8 @@ public partial class RCombatMove_VillainRobotRifleAttack : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// StructProperty: ReloadID
+    /// StructProperty: ReloadID<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId ReloadID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 816);

@@ -74,7 +74,8 @@ public partial class RRiddlerBatmobileChallenge_GateBase : BmSDK.BmScript.RRiddl
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: HolderStaticMesh
+    /// ComponentProperty: HolderStaticMesh<br/>
+    /// Default: BmScript.Default__RRiddlerBatmobileChallenge_GateBase.HolderStatMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent HolderStaticMesh
     {

@@ -259,7 +259,8 @@ public partial class RSeqAct_UpdateJokerNuke : BmSDK.BmGame.RSeqAct_UpdateJokerN
     }
 
     /// <summary>
-    /// ArrayProperty: DummyAnimsetref
+    /// ArrayProperty: DummyAnimsetref<br/>
+    /// Default: (Anim_Batman_TG_Com.Code.BM_Jokerfied_TG_Counter,Anim_Batman_TG_Com.Code.TG_BM_Jokerfied_Counter,Anim_Batman_TG_Com.Code.BM_Jk_Fatal_Floor_Takedown,Anim_Batman_TG_Com.Code.JK_BM_Fatal_Floor_Takedown,A...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSet> DummyAnimsetref
     {
@@ -304,7 +305,8 @@ public partial class RSeqAct_UpdateJokerNuke : BmSDK.BmGame.RSeqAct_UpdateJokerN
     }
 
     /// <summary>
-    /// FloatProperty: FadeTimeForNormal
+    /// FloatProperty: FadeTimeForNormal<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeTimeForNormal
     {
@@ -313,7 +315,8 @@ public partial class RSeqAct_UpdateJokerNuke : BmSDK.BmGame.RSeqAct_UpdateJokerN
     }
 
     /// <summary>
-    /// FloatProperty: FadeTimeForInOut
+    /// FloatProperty: FadeTimeForInOut<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float FadeTimeForInOut
     {
@@ -322,7 +325,8 @@ public partial class RSeqAct_UpdateJokerNuke : BmSDK.BmGame.RSeqAct_UpdateJokerN
     }
 
     /// <summary>
-    /// NameProperty: FadeParamName
+    /// NameProperty: FadeParamName<br/>
+    /// Default: Disintegration
     /// </summary>
     public unsafe BmSDK.FName FadeParamName
     {

@@ -79,7 +79,8 @@ public partial class RForensicBeacon : BmSDK.BmGame.RDummyTarget, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: IsActive
+    /// BoolProperty: IsActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsActive
     {

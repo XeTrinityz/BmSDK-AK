@@ -446,7 +446,8 @@ public partial class RLevelTransitionDoorBunkerNativeBase : BmSDK.BmGame.RLevelT
     }
 
     /// <summary>
-    /// FloatProperty: PlayerOpenHeight
+    /// FloatProperty: PlayerOpenHeight<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float PlayerOpenHeight
     {
@@ -464,7 +465,8 @@ public partial class RLevelTransitionDoorBunkerNativeBase : BmSDK.BmGame.RLevelT
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerBlocker
+    /// ComponentProperty: PlayerBlocker<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBunkerNativeBase.PlayerBlocker0
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent PlayerBlocker
     {

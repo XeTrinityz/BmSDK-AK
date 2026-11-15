@@ -778,7 +778,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ComponentProperty: LeftWeapon
+    /// ComponentProperty: LeftWeapon<br/>
+    /// Default: BmScript.Default__MPawnVillainNightwing.LeftWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftWeapon
     {
@@ -787,7 +788,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ComponentProperty: RightWeapon
+    /// ComponentProperty: RightWeapon<br/>
+    /// Default: BmScript.Default__MPawnVillainNightwing.RightWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightWeapon
     {
@@ -796,7 +798,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ComponentProperty: LeftStickVfx
+    /// ComponentProperty: LeftStickVfx<br/>
+    /// Default: BmScript.Default__MPawnVillainNightwing.LeftWeaponVfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LeftStickVfx
     {
@@ -805,7 +808,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ComponentProperty: RightStickVfx
+    /// ComponentProperty: RightStickVfx<br/>
+    /// Default: BmScript.Default__MPawnVillainNightwing.RightWeaponVfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RightStickVfx
     {
@@ -814,7 +818,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ObjectProperty: CombatPoseConfig
+    /// ObjectProperty: CombatPoseConfig<br/>
+    /// Default: BmScript.Default__MPawnVillainNightwing.NewCombatPoseConfig
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig CombatPoseConfig
     {
@@ -823,7 +828,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// ObjectProperty: AttackHeadFx
+    /// ObjectProperty: AttackHeadFx<br/>
+    /// Default: FFX_Combat.Particles.Icon.fx_AttackIndicator_Unblockable_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem AttackHeadFx
     {
@@ -832,7 +838,8 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
     }
 
     /// <summary>
-    /// BoolProperty: bCanRepelAttack
+    /// BoolProperty: bCanRepelAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanRepelAttack
     {

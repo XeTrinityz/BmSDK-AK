@@ -752,7 +752,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// FloatProperty: VertPeripheralVision
+    /// FloatProperty: VertPeripheralVision<br/>
+    /// Default: 0.866
     /// </summary>
     public unsafe float VertPeripheralVision
     {
@@ -878,7 +879,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// BoolProperty: bAllowMeshHidingFromXrayAlpha
+    /// BoolProperty: bAllowMeshHidingFromXrayAlpha<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowMeshHidingFromXrayAlpha
     {
@@ -941,7 +943,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RBMPawnAIAnim.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -968,7 +971,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// FloatProperty: MaxXRayFadeDist
+    /// FloatProperty: MaxXRayFadeDist<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float MaxXRayFadeDist
     {
@@ -986,25 +990,29 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// StructProperty: XrayBlueColor
+    /// StructProperty: XrayBlueColor<br/>
+    /// Default: (B=255,G=130)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor XrayBlueColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3008);
 
     /// <summary>
-    /// StructProperty: XrayRedColor
+    /// StructProperty: XrayRedColor<br/>
+    /// Default: (G=60,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor XrayRedColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3012);
 
     /// <summary>
-    /// StructProperty: XrayWhiteColor
+    /// StructProperty: XrayWhiteColor<br/>
+    /// Default: (B=255,G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor XrayWhiteColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3016);
 
     /// <summary>
-    /// ObjectProperty: XRayDangerMaterial
+    /// ObjectProperty: XRayDangerMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xraySkin_generalAggressive_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayDangerMaterial
     {
@@ -1022,7 +1030,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XRayMaterial
+    /// ObjectProperty: XRayMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xraySkin_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayMaterial
     {
@@ -1040,7 +1049,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XRayDangerBoneMaterial
+    /// ObjectProperty: XRayDangerBoneMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayBone_generalAggressive_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayDangerBoneMaterial
     {
@@ -1058,7 +1068,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XRayBoneMaterial
+    /// ObjectProperty: XRayBoneMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayBone_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayBoneMaterial
     {
@@ -1076,7 +1087,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XRayDangerGutsMaterial
+    /// ObjectProperty: XRayDangerGutsMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayGuts_generalAggressive_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayDangerGutsMaterial
     {
@@ -1094,7 +1106,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XRayGutsMaterial
+    /// ObjectProperty: XRayGutsMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayGuts_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayGutsMaterial
     {
@@ -1121,7 +1134,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: ThermalMaterial
+    /// ObjectProperty: ThermalMaterial<br/>
+    /// Default: VFX_Forensics.CatVision.CatVisionSkin_General_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface ThermalMaterial
     {
@@ -1139,7 +1153,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: NWVisionMaterial
+    /// ObjectProperty: NWVisionMaterial<br/>
+    /// Default: VFX_Forensics.NightwingVision.NightwingVision_General_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface NWVisionMaterial
     {
@@ -1175,7 +1190,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Fundamentals
+    /// ObjectProperty: PoseConfig_Fundamentals<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Fundamental
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Fundamentals
     {
@@ -1202,7 +1218,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XrayCharacterSpriteBlue
+    /// ObjectProperty: XrayCharacterSpriteBlue<br/>
+    /// Default: VFX_Forensics.Xray.xray_CharacterSpriteBlue
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem XrayCharacterSpriteBlue
     {
@@ -1211,7 +1228,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ObjectProperty: XrayCharacterSpriteRed
+    /// ObjectProperty: XrayCharacterSpriteRed<br/>
+    /// Default: VFX_Forensics.Xray.xray_CharacterSpriteRed
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem XrayCharacterSpriteRed
     {
@@ -1247,7 +1265,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// ComponentProperty: XrayCharacterSprite
+    /// ComponentProperty: XrayCharacterSprite<br/>
+    /// Default: BmGame.Default__RBMPawnAIAnim.XCS
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent XrayCharacterSprite
     {
@@ -1283,7 +1302,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// FloatProperty: XRayVisibilityFadeInStartTime
+    /// FloatProperty: XRayVisibilityFadeInStartTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float XRayVisibilityFadeInStartTime
     {
@@ -1292,7 +1312,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// FloatProperty: XRayVisibilityFadeInDuration
+    /// FloatProperty: XRayVisibilityFadeInDuration<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float XRayVisibilityFadeInDuration
     {
@@ -1301,7 +1322,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// FloatProperty: XRayVisibilityMaxDistance
+    /// FloatProperty: XRayVisibilityMaxDistance<br/>
+    /// Default: 5200
     /// </summary>
     public unsafe float XRayVisibilityMaxDistance
     {
@@ -1364,7 +1386,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
     }
 
     /// <summary>
-    /// NameProperty: OverworldName
+    /// NameProperty: OverworldName<br/>
+    /// Default: OW
     /// </summary>
     public unsafe BmSDK.FName OverworldName
     {

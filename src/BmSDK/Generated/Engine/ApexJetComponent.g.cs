@@ -79,7 +79,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: GridShapeRadius
+    /// FloatProperty: GridShapeRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float GridShapeRadius
     {
@@ -88,7 +89,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: GridShapeHeight
+    /// FloatProperty: GridShapeHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float GridShapeHeight
     {
@@ -97,7 +99,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: GridBoundaryFadePercentage
+    /// FloatProperty: GridBoundaryFadePercentage<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float GridBoundaryFadePercentage
     {
@@ -106,7 +109,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FieldStrength
+    /// FloatProperty: FieldStrength<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float FieldStrength
     {
@@ -124,7 +128,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: NoiseSpaceScale
+    /// FloatProperty: NoiseSpaceScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NoiseSpaceScale
     {
@@ -133,7 +138,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTimeScale
+    /// FloatProperty: NoiseTimeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NoiseTimeScale
     {
@@ -142,7 +148,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// IntProperty: NoiseOctaves
+    /// IntProperty: NoiseOctaves<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoiseOctaves
     {
@@ -187,7 +194,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FieldSize
+    /// FloatProperty: FieldSize<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FieldSize
     {
@@ -196,7 +204,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FieldNearRatio
+    /// FloatProperty: FieldNearRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FieldNearRatio
     {
@@ -205,7 +214,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FieldFarRatio
+    /// FloatProperty: FieldFarRatio<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float FieldFarRatio
     {
@@ -223,7 +233,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: DirectionalStretch
+    /// FloatProperty: DirectionalStretch<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DirectionalStretch
     {
@@ -232,7 +243,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: AverageStartRatio
+    /// FloatProperty: AverageStartRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AverageStartRatio
     {
@@ -241,7 +253,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: AverageEndRatio
+    /// FloatProperty: AverageEndRatio<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AverageEndRatio
     {
@@ -250,7 +263,8 @@ public partial class ApexJetComponent : BmSDK.Engine.ApexFieldSamplerComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {

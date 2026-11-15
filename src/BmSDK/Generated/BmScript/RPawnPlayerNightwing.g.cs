@@ -1162,7 +1162,8 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
     }
 
     /// <summary>
-    /// ComponentProperty: LeftWeapon
+    /// ComponentProperty: LeftWeapon<br/>
+    /// Default: BmScript.Default__RPawnPlayerNightwing.LeftWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftWeapon
     {
@@ -1171,7 +1172,8 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
     }
 
     /// <summary>
-    /// ComponentProperty: RightWeapon
+    /// ComponentProperty: RightWeapon<br/>
+    /// Default: BmScript.Default__RPawnPlayerNightwing.RightWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightWeapon
     {
@@ -1273,7 +1275,8 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
     }
 
     /// <summary>
-    /// FloatProperty: ProximityScannerRange
+    /// FloatProperty: ProximityScannerRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ProximityScannerRange
     {

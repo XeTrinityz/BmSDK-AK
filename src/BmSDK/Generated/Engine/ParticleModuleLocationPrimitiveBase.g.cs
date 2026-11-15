@@ -79,7 +79,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: Positive_X
+    /// BoolProperty: Positive_X<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Positive_X
     {
@@ -88,7 +89,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// BoolProperty: Positive_Y
+    /// BoolProperty: Positive_Y<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Positive_Y
     {
@@ -97,7 +99,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// BoolProperty: Positive_Z
+    /// BoolProperty: Positive_Z<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Positive_Z
     {
@@ -106,7 +109,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// BoolProperty: Negative_X
+    /// BoolProperty: Negative_X<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Negative_X
     {
@@ -115,7 +119,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// BoolProperty: Negative_Y
+    /// BoolProperty: Negative_Y<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Negative_Y
     {
@@ -124,7 +129,8 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// BoolProperty: Negative_Z
+    /// BoolProperty: Negative_Z<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Negative_Z
     {
@@ -151,13 +157,15 @@ public partial class ParticleModuleLocationPrimitiveBase : BmSDK.Engine.Particle
     }
 
     /// <summary>
-    /// StructProperty: VelocityScale
+    /// StructProperty: VelocityScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleLocationPrimitiveBase.DistributionVelocityScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat VelocityScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: StartLocation
+    /// StructProperty: StartLocation<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleLocationPrimitiveBase.DistributionStartLocation,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartLocation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 136);

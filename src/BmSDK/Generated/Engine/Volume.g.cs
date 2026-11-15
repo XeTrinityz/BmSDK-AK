@@ -318,7 +318,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyCollideWithPlayer
+    /// BoolProperty: bOnlyCollideWithPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyCollideWithPlayer
     {

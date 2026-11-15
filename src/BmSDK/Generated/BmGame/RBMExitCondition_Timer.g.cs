@@ -181,7 +181,8 @@ public partial class RBMExitCondition_Timer : BmSDK.BmGame.RBMExitCondition, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bTimerActive
+    /// BoolProperty: bTimerActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTimerActive
     {

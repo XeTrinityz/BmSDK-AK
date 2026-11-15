@@ -1324,7 +1324,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// ObjectProperty: BlastRadiusFX
+    /// ObjectProperty: BlastRadiusFX<br/>
+    /// Default: Postprocess_Level.RobinVision.Robin_ExplosivesVisualisation
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BlastRadiusFX
     {
@@ -1333,7 +1334,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// ComponentProperty: RightShield
+    /// ComponentProperty: RightShield<br/>
+    /// Default: BmScript.Default__RPawnPlayerRobin.RightShieldMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightShield
     {
@@ -1342,7 +1344,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// ComponentProperty: LeftShield
+    /// ComponentProperty: LeftShield<br/>
+    /// Default: BmScript.Default__RPawnPlayerRobin.LeftShieldMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftShield
     {
@@ -1351,7 +1354,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// ComponentProperty: RightWeapon
+    /// ComponentProperty: RightWeapon<br/>
+    /// Default: BmScript.Default__RPawnPlayerRobin.RightWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightWeapon
     {
@@ -1360,7 +1364,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// ComponentProperty: LeftWeapon
+    /// ComponentProperty: LeftWeapon<br/>
+    /// Default: BmScript.Default__RPawnPlayerRobin.LeftWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftWeapon
     {
@@ -1447,7 +1452,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: CheckForExplodingThingsPeriod
+    /// FloatProperty: CheckForExplodingThingsPeriod<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float CheckForExplodingThingsPeriod
     {
@@ -1456,7 +1462,8 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.Bm
     }
 
     /// <summary>
-    /// IntProperty: StickyBombThingIndex
+    /// IntProperty: StickyBombThingIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int StickyBombThingIndex
     {

@@ -186,7 +186,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 668);
 
     /// <summary>
-    /// IntProperty: MaxLODLevel
+    /// IntProperty: MaxLODLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MaxLODLevel
     {
@@ -222,7 +223,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StreamingDistanceMultiplier
+    /// FloatProperty: StreamingDistanceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StreamingDistanceMultiplier
     {
@@ -231,7 +233,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LODDistanceFactor
+    /// FloatProperty: LODDistanceFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LODDistanceFactor
     {
@@ -276,7 +279,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StaticLightingResolution
+    /// FloatProperty: StaticLightingResolution<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StaticLightingResolution
     {
@@ -285,7 +289,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsProxy
+    /// BoolProperty: bIsProxy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsProxy
     {
@@ -321,7 +326,8 @@ public partial class LandscapeProxy : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightmassSettings
+    /// StructProperty: LightmassSettings<br/>
+    /// Default: (bUmbraIsOccluder=true,EmissiveLightFalloffExponent=2,EmissiveBoost=1,DiffuseBoost=1,SpecularBoost=1,FullyOccludedSamplesFraction=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings LightmassSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings>(Ptr + 904);

@@ -124,7 +124,8 @@ public partial class RSeqAct_PlayCameraEmitter : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Lifetime
+    /// FloatProperty: Lifetime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float Lifetime
     {

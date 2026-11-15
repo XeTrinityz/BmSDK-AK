@@ -79,7 +79,8 @@ public partial class RRope2LengthUpdater : BmSDK.BmGame.RRope2Updater, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: LengthChangeType
+    /// ByteProperty: LengthChangeType<br/>
+    /// Default: LENGTHCHANGETYPE_Smooth
     /// </summary>
     public unsafe BmSDK.BmGame.RRope2LengthUpdater.ELengthChangeType LengthChangeType
     {

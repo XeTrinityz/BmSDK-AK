@@ -146,7 +146,8 @@ public partial class RVehicleBehaviour_TankStrafePrimaryTarget : BmSDK.BmGame.RV
     }
 
     /// <summary>
-    /// FloatProperty: AttackBatmanRangeFromMe
+    /// FloatProperty: AttackBatmanRangeFromMe<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float AttackBatmanRangeFromMe
     {
@@ -155,7 +156,8 @@ public partial class RVehicleBehaviour_TankStrafePrimaryTarget : BmSDK.BmGame.RV
     }
 
     /// <summary>
-    /// FloatProperty: AttackBatmanMaxRangeFromPrimary
+    /// FloatProperty: AttackBatmanMaxRangeFromPrimary<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float AttackBatmanMaxRangeFromPrimary
     {
@@ -164,7 +166,8 @@ public partial class RVehicleBehaviour_TankStrafePrimaryTarget : BmSDK.BmGame.RV
     }
 
     /// <summary>
-    /// IntProperty: MinNumAttackingBatmobile
+    /// IntProperty: MinNumAttackingBatmobile<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MinNumAttackingBatmobile
     {

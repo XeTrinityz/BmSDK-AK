@@ -915,7 +915,8 @@ public partial class RHudModuleHealthBar : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: FlashHudWhenWounded
+    /// BoolProperty: FlashHudWhenWounded<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FlashHudWhenWounded
     {
@@ -951,7 +952,8 @@ public partial class RHudModuleHealthBar : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: DualPlayAbilityLevel
+    /// IntProperty: DualPlayAbilityLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DualPlayAbilityLevel
     {
@@ -960,7 +962,8 @@ public partial class RHudModuleHealthBar : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: DualPlayValueOutOf75
+    /// IntProperty: DualPlayValueOutOf75<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DualPlayValueOutOf75
     {
@@ -969,7 +972,8 @@ public partial class RHudModuleHealthBar : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: BatmobileTakedownLevel
+    /// IntProperty: BatmobileTakedownLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BatmobileTakedownLevel
     {
@@ -987,7 +991,8 @@ public partial class RHudModuleHealthBar : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: DualCombatSlots
+    /// IntProperty: DualCombatSlots<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DualCombatSlots
     {

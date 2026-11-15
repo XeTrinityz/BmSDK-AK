@@ -576,7 +576,8 @@ public partial class RAEC_Search_Group : BmSDK.BmGame.RAlertEventCoordinatorBase
     }
 
     /// <summary>
-    /// ClassProperty: SpawnClass
+    /// ClassProperty: SpawnClass<br/>
+    /// Default: BmGame.RAEC_Search_Sub_Standard
     /// </summary>
     public unsafe BmSDK.Class SpawnClass
     {

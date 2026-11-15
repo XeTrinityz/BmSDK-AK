@@ -161,7 +161,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     public partial record struct FRockRainSettings
     {
         /// <summary>
-        /// FloatProperty: Density
+        /// FloatProperty: Density<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float Density
         {
@@ -170,7 +171,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: Width
+        /// FloatProperty: Width<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Width
         {
@@ -188,7 +190,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// StructProperty: FearGasSludgeColor
+        /// StructProperty: FearGasSludgeColor<br/>
+        /// Default: (R=0.19,G=1.25,B=0.1,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor FearGasSludgeColor
         {
@@ -197,7 +200,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: RainTexture
+        /// ObjectProperty: RainTexture<br/>
+        /// Default: VFX_WeatherSystem.Weather_Rain
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D RainTexture
         {
@@ -206,7 +210,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: RainStreakTexture
+        /// ObjectProperty: RainStreakTexture<br/>
+        /// Default: VFX_WeatherSystem.Weather_RainStreak
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D RainStreakTexture
         {
@@ -215,7 +220,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: RainSoundBed
+        /// ObjectProperty: RainSoundBed<br/>
+        /// Default: Ww_WEA_Rain01.Play_Rain01
         /// </summary>
         public unsafe BmSDK.Engine.AkEvent RainSoundBed
         {
@@ -224,7 +230,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: RainProximityRadius
+        /// FloatProperty: RainProximityRadius<br/>
+        /// Default: 800
         /// </summary>
         public unsafe float RainProximityRadius
         {
@@ -233,7 +240,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// IntProperty: RainProximityRange
+        /// IntProperty: RainProximityRange<br/>
+        /// Default: 14
         /// </summary>
         public unsafe int RainProximityRange
         {
@@ -265,7 +273,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: ParticleCount
+    /// IntProperty: ParticleCount<br/>
+    /// Default: 20480
     /// </summary>
     public unsafe int ParticleCount
     {
@@ -274,7 +283,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BoxSize
+    /// FloatProperty: BoxSize<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float BoxSize
     {
@@ -292,7 +302,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bHasMotionBlurTexture
+    /// BoolProperty: bHasMotionBlurTexture<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasMotionBlurTexture
     {
@@ -301,7 +312,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: RainSettings
+    /// StructProperty: RainSettings<br/>
+    /// Default: (Density=0.5,Width=1,FearGasSludgeColor=(R=0.19,G=1.25,B=0.1,A=1),RainTexture=VFX_WeatherSystem.Weather_Rain,RainStreakTexture=VFX_WeatherSystem.Weather_RainStreak,RainSoundBed=Ww_WEA_Rain01.Play_Rain...
     /// </summary>
     public unsafe ref BmSDK.Engine.RRainComponent.FRockRainSettings RainSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RRainComponent.FRockRainSettings>(Ptr + 556);

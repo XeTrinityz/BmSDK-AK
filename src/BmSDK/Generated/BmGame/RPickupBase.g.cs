@@ -892,7 +892,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ComponentProperty: PickupMesh
+    /// ComponentProperty: PickupMesh<br/>
+    /// Default: BmGame.Default__RPickupBase.Mesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent PickupMesh
     {
@@ -910,7 +911,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// StrProperty: FlagName
+    /// StrProperty: FlagName<br/>
+    /// Default: "_Pickup_"
     /// </summary>
     public unsafe BmSDK.FString FlagName
     {
@@ -919,7 +921,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ByteProperty: GameAction
+    /// ByteProperty: GameAction<br/>
+    /// Default: GA_Pickup
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EGameAction GameAction
     {
@@ -964,7 +967,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -1018,7 +1022,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeHarpooned
+    /// BoolProperty: bCanBeHarpooned<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeHarpooned
     {
@@ -1045,7 +1050,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: ScanDistMax
+    /// FloatProperty: ScanDistMax<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ScanDistMax
     {
@@ -1099,7 +1105,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RPickupBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {

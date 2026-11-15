@@ -262,7 +262,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: MovieStreamSource
+    /// ByteProperty: MovieStreamSource<br/>
+    /// Default: MovieStream_Memory
     /// </summary>
     public unsafe BmSDK.Engine.TextureMovie.EMovieStreamSource MovieStreamSource
     {
@@ -271,7 +272,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DecoderClass
+    /// ClassProperty: DecoderClass<br/>
+    /// Default: Engine.CodecMovieFallback
     /// </summary>
     public unsafe BmSDK.Class DecoderClass
     {
@@ -307,7 +309,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: Looping
+    /// BoolProperty: Looping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Looping
     {
@@ -325,7 +328,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoPlay
+    /// BoolProperty: AutoPlay<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoPlay
     {
@@ -334,7 +338,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Data
+    /// StructProperty: Data<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror Data
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 340);

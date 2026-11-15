@@ -112,7 +112,8 @@ public partial class MaterialExpressionInteriorMapping : BmSDK.Engine.MaterialEx
     }
 
     /// <summary>
-    /// FloatProperty: CavityDepthMultiplier
+    /// FloatProperty: CavityDepthMultiplier<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float CavityDepthMultiplier
     {

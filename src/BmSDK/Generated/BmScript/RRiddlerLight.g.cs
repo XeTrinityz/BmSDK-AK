@@ -108,7 +108,8 @@ public partial class RRiddlerLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RRiddlerLight.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {

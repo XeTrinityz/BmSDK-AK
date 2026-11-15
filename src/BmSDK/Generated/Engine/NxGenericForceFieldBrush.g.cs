@@ -109,7 +109,8 @@ public partial class NxGenericForceFieldBrush : BmSDK.Engine.Volume, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: ExcludeChannel
+    /// IntProperty: ExcludeChannel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ExcludeChannel
     {
@@ -118,13 +119,15 @@ public partial class NxGenericForceFieldBrush : BmSDK.Engine.Volume, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 744);
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -214,7 +217,8 @@ public partial class NxGenericForceFieldBrush : BmSDK.Engine.Volume, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 884);
 
     /// <summary>
-    /// FloatProperty: TorusRadius
+    /// FloatProperty: TorusRadius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TorusRadius
     {

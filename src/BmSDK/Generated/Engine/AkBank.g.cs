@@ -209,7 +209,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: BankLoadType
+    /// ByteProperty: BankLoadType<br/>
+    /// Default: AK_BANK_LOAD_NORMAL
     /// </summary>
     public unsafe BmSDK.Engine.AkBank.EAkBankLoadType BankLoadType
     {

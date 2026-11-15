@@ -613,7 +613,8 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: m_aSWFTest
+    /// ArrayProperty: m_aSWFTest<br/>
+    /// Default: (67,87,83,17,173,243,0,0,120,156,164,187,103,88,147,91,183,46,140,178,4,21,1,93,40,189,232,98,9,186,232,210,91,88,54,80,17,88,138,210,2,132,34,61,33,129,208,73,64,69,64,164,45,27,29,162,32,34,210,107,...
     /// </summary>
     public unsafe BmSDK.TArray<byte> m_aSWFTest
     {

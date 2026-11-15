@@ -160,7 +160,8 @@ public partial class LineBatchComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: ActiveLineSubBatch
+    /// IntProperty: ActiveLineSubBatch<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ActiveLineSubBatch
     {

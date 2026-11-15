@@ -88,7 +88,8 @@ public partial class RDmgType_SimultaneousCounter : BmSDK.BmGame.RDmgType_Strike
     }
 
     /// <summary>
-    /// ByteProperty: CounterStrength
+    /// ByteProperty: CounterStrength<br/>
+    /// Default: ECS_Strong
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerCombat.CounterStrength CounterStrength
     {

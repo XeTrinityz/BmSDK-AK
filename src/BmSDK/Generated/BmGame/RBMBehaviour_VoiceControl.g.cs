@@ -362,7 +362,8 @@ public partial class RBMBehaviour_VoiceControl : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: AcknowledgeEvent
+    /// ObjectProperty: AcknowledgeEvent<br/>
+    /// Default: ww_npc_robots.Play_Robot_Comand_Response
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AcknowledgeEvent
     {

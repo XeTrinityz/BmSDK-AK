@@ -139,19 +139,22 @@ public partial class RPawnFriendly_Freeze : BmSDK.BmGame.RPawnFriendly, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: lightMeshRotationOffset
+    /// StructProperty: lightMeshRotationOffset<br/>
+    /// Default: (Pitch=16384)
     /// </summary>
     public unsafe ref BmSDK.Rotator lightMeshRotationOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 4740);
 
     /// <summary>
-    /// StructProperty: lightMeshBaseSize
+    /// StructProperty: lightMeshBaseSize<br/>
+    /// Default: (X=100,Y=100,Z=360)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 lightMeshBaseSize
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 4752);
 
     /// <summary>
-    /// FloatProperty: desiredLightEndRadius
+    /// FloatProperty: desiredLightEndRadius<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float desiredLightEndRadius
     {
@@ -160,7 +163,8 @@ public partial class RPawnFriendly_Freeze : BmSDK.BmGame.RPawnFriendly, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: GunLightMesh
+    /// ComponentProperty: GunLightMesh<br/>
+    /// Default: BmScript.Default__RPawnFriendly_Freeze.SearchLightMesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent GunLightMesh
     {
@@ -187,7 +191,8 @@ public partial class RPawnFriendly_Freeze : BmSDK.BmGame.RPawnFriendly, BmSDK.IG
     }
 
     /// <summary>
-    /// NameProperty: lightAttachBoneName
+    /// NameProperty: lightAttachBoneName<br/>
+    /// Default: Bip01_R_Hand
     /// </summary>
     public unsafe BmSDK.FName lightAttachBoneName
     {

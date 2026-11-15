@@ -124,7 +124,8 @@ public partial class RSuperRECGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: GadgetInteractions
+    /// ComponentProperty: GadgetInteractions<br/>
+    /// Default: BmGame.Default__RSuperRECGeneratorBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent GadgetInteractions
     {

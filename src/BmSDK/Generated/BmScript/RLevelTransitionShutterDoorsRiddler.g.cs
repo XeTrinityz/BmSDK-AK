@@ -221,7 +221,8 @@ public partial class RLevelTransitionShutterDoorsRiddler : BmSDK.BmScript.RLevel
     }
 
     /// <summary>
-    /// ObjectProperty: RiddlerfiedLight
+    /// ObjectProperty: RiddlerfiedLight<br/>
+    /// Default: Riddler_Caves.Riddler_Door_Light
     /// </summary>
     public unsafe BmSDK.BmGame.RDeferred_PointLight RiddlerfiedLight
     {
@@ -230,7 +231,8 @@ public partial class RLevelTransitionShutterDoorsRiddler : BmSDK.BmScript.RLevel
     }
 
     /// <summary>
-    /// ObjectProperty: RiddlerfiedMat
+    /// ObjectProperty: RiddlerfiedMat<br/>
+    /// Default: Riddler_Caves.Riddler_Shutter_ShutterON
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface RiddlerfiedMat
     {

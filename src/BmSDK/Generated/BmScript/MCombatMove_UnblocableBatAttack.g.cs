@@ -314,7 +314,8 @@ public partial class MCombatMove_UnblocableBatAttack : BmSDK.BmGame.RCombatMove_
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 848);
 
     /// <summary>
-    /// FloatProperty: fRangeDist
+    /// FloatProperty: fRangeDist<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float fRangeDist
     {

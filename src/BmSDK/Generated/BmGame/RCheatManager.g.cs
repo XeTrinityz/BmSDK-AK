@@ -4063,7 +4063,8 @@ public partial class RCheatManager : BmSDK.Engine.CheatManager, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ArrayProperty: BatmobileSettings
+    /// ArrayProperty: BatmobileSettings<br/>
+    /// Default: ((TireFrictionMod=0.8,LatStiffYMod=0.4),(TireFrictionMod=1,LatStiffYMod=1,StandardSteeringSpeedCurve=(Points=((OutVal=60),(InVal=600,OutVal=55),(InVal=1100,OutVal=55),(InVal=1300,OutVal=20),(InVal=200...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RCheatManager.FBatmobileHandlingTweak> BatmobileSettings
     {

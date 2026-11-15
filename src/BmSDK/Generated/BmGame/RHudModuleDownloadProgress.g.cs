@@ -344,7 +344,8 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: FinalProportion
+    /// FloatProperty: FinalProportion<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FinalProportion
     {
@@ -353,7 +354,8 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: DownloadPeriod
+    /// FloatProperty: DownloadPeriod<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DownloadPeriod
     {
@@ -362,7 +364,8 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PostDownloadDisplayPeriod
+    /// FloatProperty: PostDownloadDisplayPeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PostDownloadDisplayPeriod
     {
@@ -389,7 +392,8 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: OtherDownloadMovie
+    /// ObjectProperty: OtherDownloadMovie<br/>
+    /// Default: HudModuleDownloadProgress.HudModuleDownload_Batman
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie OtherDownloadMovie
     {

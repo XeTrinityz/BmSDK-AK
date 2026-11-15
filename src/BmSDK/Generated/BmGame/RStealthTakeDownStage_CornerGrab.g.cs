@@ -179,7 +179,8 @@ public partial class RStealthTakeDownStage_CornerGrab : BmSDK.BmGame.RStealthTak
     }
 
     /// <summary>
-    /// FloatProperty: StageDelay
+    /// FloatProperty: StageDelay<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float StageDelay
     {
@@ -188,7 +189,8 @@ public partial class RStealthTakeDownStage_CornerGrab : BmSDK.BmGame.RStealthTak
     }
 
     /// <summary>
-    /// ByteProperty: NextStageUnaware
+    /// ByteProperty: NextStageUnaware<br/>
+    /// Default: ESTDS_GrabFromCrouch
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages NextStageUnaware
     {

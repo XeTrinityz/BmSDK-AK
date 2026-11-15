@@ -116,7 +116,8 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CollisionHeight
+    /// FloatProperty: CollisionHeight<br/>
+    /// Default: 22
     /// </summary>
     public unsafe float CollisionHeight
     {
@@ -125,7 +126,8 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CollisionRadius
+    /// FloatProperty: CollisionRadius<br/>
+    /// Default: 22
     /// </summary>
     public unsafe float CollisionRadius
     {
@@ -134,7 +136,8 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: AABBScale
+    /// FloatProperty: AABBScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AABBScale
     {
@@ -143,13 +146,15 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: CylinderColor
+    /// StructProperty: CylinderColor<br/>
+    /// Default: (B=157,G=149,R=223,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor CylinderColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 552);
 
     /// <summary>
-    /// BoolProperty: bDrawBoundingBox
+    /// BoolProperty: bDrawBoundingBox<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawBoundingBox
     {
@@ -176,7 +181,8 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bForceGreenWhenSelected
+    /// BoolProperty: bForceGreenWhenSelected<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceGreenWhenSelected
     {

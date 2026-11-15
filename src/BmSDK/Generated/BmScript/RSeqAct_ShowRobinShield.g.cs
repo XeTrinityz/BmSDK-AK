@@ -102,7 +102,8 @@ public partial class RSeqAct_ShowRobinShield : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: show
+    /// BoolProperty: show<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool show
     {
@@ -111,7 +112,8 @@ public partial class RSeqAct_ShowRobinShield : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: RightHand
+    /// BoolProperty: RightHand<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RightHand
     {

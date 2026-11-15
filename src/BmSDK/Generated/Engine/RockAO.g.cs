@@ -79,7 +79,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: RSContrast
+    /// FloatProperty: RSContrast<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RSContrast
     {
@@ -88,7 +89,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RSRadiusMax
+    /// FloatProperty: RSRadiusMax<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RSRadiusMax
     {
@@ -97,7 +99,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RSRadiusMin
+    /// FloatProperty: RSRadiusMin<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float RSRadiusMin
     {
@@ -106,7 +109,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RSRadiusScale
+    /// FloatProperty: RSRadiusScale<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float RSRadiusScale
     {
@@ -115,7 +119,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RSDepthTestRadius
+    /// FloatProperty: RSDepthTestRadius<br/>
+    /// Default: 0.015
     /// </summary>
     public unsafe float RSDepthTestRadius
     {
@@ -124,7 +129,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RSEdgeThreshold
+    /// FloatProperty: RSEdgeThreshold<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float RSEdgeThreshold
     {
@@ -133,13 +139,15 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: OcclusionColor
+    /// StructProperty: OcclusionColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor OcclusionColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 148);
 
     /// <summary>
-    /// FloatProperty: OcclusionPower
+    /// FloatProperty: OcclusionPower<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float OcclusionPower
     {
@@ -148,7 +156,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionScale
+    /// FloatProperty: OcclusionScale<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float OcclusionScale
     {
@@ -166,7 +175,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinOcclusion
+    /// FloatProperty: MinOcclusion<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MinOcclusion
     {
@@ -175,7 +185,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionRadius
+    /// FloatProperty: OcclusionRadius<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float OcclusionRadius
     {
@@ -184,7 +195,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionAttenuation
+    /// FloatProperty: OcclusionAttenuation<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float OcclusionAttenuation
     {
@@ -193,7 +205,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionFadeoutMinDistance
+    /// FloatProperty: OcclusionFadeoutMinDistance<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float OcclusionFadeoutMinDistance
     {
@@ -202,7 +215,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionFadeoutMaxDistance
+    /// FloatProperty: OcclusionFadeoutMaxDistance<br/>
+    /// Default: 4500
     /// </summary>
     public unsafe float OcclusionFadeoutMaxDistance
     {
@@ -211,7 +225,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HaloDistanceThreshold
+    /// FloatProperty: HaloDistanceThreshold<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float HaloDistanceThreshold
     {
@@ -220,7 +235,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HaloDistanceScale
+    /// FloatProperty: HaloDistanceScale<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float HaloDistanceScale
     {
@@ -229,7 +245,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HaloOcclusion
+    /// FloatProperty: HaloOcclusion<br/>
+    /// Default: 0.04
     /// </summary>
     public unsafe float HaloOcclusion
     {
@@ -238,7 +255,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EdgeDistanceThreshold
+    /// FloatProperty: EdgeDistanceThreshold<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float EdgeDistanceThreshold
     {
@@ -247,7 +265,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EdgeDistanceScale
+    /// FloatProperty: EdgeDistanceScale<br/>
+    /// Default: 0.003
     /// </summary>
     public unsafe float EdgeDistanceScale
     {
@@ -256,7 +275,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FilterDistanceScale
+    /// FloatProperty: FilterDistanceScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FilterDistanceScale
     {
@@ -265,7 +285,8 @@ public partial class RockAO : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: FilterSize
+    /// IntProperty: FilterSize<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int FilterSize
     {

@@ -85,7 +85,8 @@ public partial class MaterialExpressionCosine : BmSDK.Engine.MaterialExpression,
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// FloatProperty: Period
+    /// FloatProperty: Period<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Period
     {

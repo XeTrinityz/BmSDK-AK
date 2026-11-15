@@ -163,7 +163,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: PropDensityMultiplier
+    /// FloatProperty: PropDensityMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PropDensityMultiplier
     {
@@ -178,7 +179,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1000);
 
     /// <summary>
-    /// FloatProperty: PropRightingForceMultiplier
+    /// FloatProperty: PropRightingForceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PropRightingForceMultiplier
     {

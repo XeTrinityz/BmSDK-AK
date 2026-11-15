@@ -1084,7 +1084,8 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: RumbleEnabled
+    /// BoolProperty: RumbleEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RumbleEnabled
     {
@@ -1129,7 +1130,8 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: ResonatorMoviePath
+    /// StrProperty: ResonatorMoviePath<br/>
+    /// Default: "PasswordCracker.PasswordCracker"
     /// </summary>
     public unsafe BmSDK.FString ResonatorMoviePath
     {

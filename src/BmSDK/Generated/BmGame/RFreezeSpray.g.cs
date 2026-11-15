@@ -579,7 +579,8 @@ public partial class RFreezeSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: IceExplodeEffect
+    /// ObjectProperty: IceExplodeEffect<br/>
+    /// Default: VFX_Gadgets.FreezeBlast.FrostKill_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem IceExplodeEffect
     {
@@ -687,7 +688,8 @@ public partial class RFreezeSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: fFreezeClusterBlastRadius
+    /// FloatProperty: fFreezeClusterBlastRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float fFreezeClusterBlastRadius
     {

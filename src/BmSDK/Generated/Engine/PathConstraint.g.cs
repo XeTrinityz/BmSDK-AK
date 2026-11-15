@@ -107,7 +107,8 @@ public partial class PathConstraint : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CacheIdx
+    /// IntProperty: CacheIdx<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CacheIdx
     {

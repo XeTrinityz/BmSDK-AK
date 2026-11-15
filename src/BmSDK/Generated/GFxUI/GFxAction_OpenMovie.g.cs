@@ -138,7 +138,8 @@ public partial class GFxAction_OpenMovie : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// ClassProperty: MoviePlayerClass
+    /// ClassProperty: MoviePlayerClass<br/>
+    /// Default: GFxUI.GFxMoviePlayer
     /// </summary>
     public unsafe BmSDK.Class MoviePlayerClass
     {
@@ -165,7 +166,8 @@ public partial class GFxAction_OpenMovie : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayWithHudOff
+    /// BoolProperty: bDisplayWithHudOff<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayWithHudOff
     {
@@ -183,7 +185,8 @@ public partial class GFxAction_OpenMovie : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: Priority
+    /// ByteProperty: Priority<br/>
+    /// Default: DPGB_Default
     /// </summary>
     public unsafe BmSDK.GFxUI.GFxMoviePlayer.GFxDPGBias Priority
     {

@@ -305,7 +305,8 @@ public partial class MStickyConcussionGrenade : BmSDK.BmGame.RProjectileGadgetBa
     }
 
     /// <summary>
-    /// IntProperty: MaxDeployedGrenade
+    /// IntProperty: MaxDeployedGrenade<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxDeployedGrenade
     {

@@ -256,7 +256,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetBase
+    /// FloatProperty: FollowOffsetBase<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FollowOffsetBase
     {
@@ -265,7 +266,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetExtra
+    /// FloatProperty: FollowOffsetExtra<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FollowOffsetExtra
     {
@@ -274,7 +276,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: BackoffPlayerRange
+    /// FloatProperty: BackoffPlayerRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BackoffPlayerRange
     {
@@ -283,7 +286,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: BackoffFollowOffsetBase
+    /// FloatProperty: BackoffFollowOffsetBase<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float BackoffFollowOffsetBase
     {
@@ -292,7 +296,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: BackoffFollowOffsetExtra
+    /// FloatProperty: BackoffFollowOffsetExtra<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float BackoffFollowOffsetExtra
     {
@@ -310,7 +315,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: BatmanTailingDuration
+    /// FloatProperty: BatmanTailingDuration<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BatmanTailingDuration
     {
@@ -319,7 +325,8 @@ public partial class RVehicleBehaviour_PursuitCop : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: BatmanTailingDistance
+    /// FloatProperty: BatmanTailingDistance<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float BatmanTailingDistance
     {

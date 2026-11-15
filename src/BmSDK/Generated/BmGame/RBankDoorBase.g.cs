@@ -419,7 +419,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComp
+    /// ComponentProperty: SkeletalMeshComp<br/>
+    /// Default: BmGame.Default__RBankDoorBase.SkelMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComp
     {
@@ -428,13 +429,15 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
     }
 
     /// <summary>
-    /// StructProperty: movement_ClosedToOpen
+    /// StructProperty: movement_ClosedToOpen<br/>
+    /// Default: (Z=300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 movement_ClosedToOpen
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 708);
 
     /// <summary>
-    /// FloatProperty: TransitionDuration
+    /// FloatProperty: TransitionDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TransitionDuration
     {
@@ -587,7 +590,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
     }
 
     /// <summary>
-    /// FloatProperty: NavBlockerScale
+    /// FloatProperty: NavBlockerScale<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float NavBlockerScale
     {

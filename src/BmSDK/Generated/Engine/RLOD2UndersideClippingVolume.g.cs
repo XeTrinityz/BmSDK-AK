@@ -79,7 +79,8 @@ public partial class RLOD2UndersideClippingVolume : BmSDK.Engine.Volume, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: CheckDownwardFacingNormal
+    /// BoolProperty: CheckDownwardFacingNormal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CheckDownwardFacingNormal
     {

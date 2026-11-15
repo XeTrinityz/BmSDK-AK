@@ -111,7 +111,8 @@ public partial class RSeqAct_ShowVehicleOnHUD : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bCanLoseTarget
+    /// BoolProperty: bCanLoseTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanLoseTarget
     {
@@ -120,7 +121,8 @@ public partial class RSeqAct_ShowVehicleOnHUD : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bCanUntagTarget
+    /// BoolProperty: bCanUntagTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUntagTarget
     {

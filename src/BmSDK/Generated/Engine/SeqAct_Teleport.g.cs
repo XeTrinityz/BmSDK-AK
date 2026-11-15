@@ -130,7 +130,8 @@ public partial class SeqAct_Teleport : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateRotation
+    /// BoolProperty: bUpdateRotation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateRotation
     {
@@ -166,7 +167,8 @@ public partial class SeqAct_Teleport : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bStopAllMovement
+    /// BoolProperty: bStopAllMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopAllMovement
     {
@@ -175,7 +177,8 @@ public partial class SeqAct_Teleport : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bSpawnBatmobile
+    /// BoolProperty: bSpawnBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpawnBatmobile
     {

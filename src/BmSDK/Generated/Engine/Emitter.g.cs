@@ -450,7 +450,8 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ParticleSystemComponent
+    /// ComponentProperty: ParticleSystemComponent<br/>
+    /// Default: Engine.Default__Emitter.ParticleSystemComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ParticleSystemComponent
     {
@@ -495,7 +496,8 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowMatineeToPause
+    /// BoolProperty: bAllowMatineeToPause<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowMatineeToPause
     {

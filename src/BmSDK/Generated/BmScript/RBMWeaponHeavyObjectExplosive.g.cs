@@ -260,7 +260,8 @@ public partial class RBMWeaponHeavyObjectExplosive : BmSDK.BmScript.RBMWeaponHea
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RBMWeaponHeavyObjectExplosive.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -284,13 +285,15 @@ public partial class RBMWeaponHeavyObjectExplosive : BmSDK.BmScript.RBMWeaponHea
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1760);
 
     /// <summary>
-    /// StructProperty: TargetOffset
+    /// StructProperty: TargetOffset<br/>
+    /// Default: (Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1772);
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_OBJ_PropaneCylinders.Play_Propane_Cylinder_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {

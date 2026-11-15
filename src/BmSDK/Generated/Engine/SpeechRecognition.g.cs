@@ -79,7 +79,8 @@ public partial class SpeechRecognition : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: Language
+    /// StrProperty: Language<br/>
+    /// Default: "INT"
     /// </summary>
     public unsafe BmSDK.FString Language
     {
@@ -88,7 +89,8 @@ public partial class SpeechRecognition : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ConfidenceThreshhold
+    /// FloatProperty: ConfidenceThreshhold<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ConfidenceThreshhold
     {

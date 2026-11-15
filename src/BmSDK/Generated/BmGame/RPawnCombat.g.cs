@@ -2696,7 +2696,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: DamageAmount
+        /// FloatProperty: DamageAmount<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float DamageAmount
         {
@@ -2723,7 +2724,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// ClassProperty: DamageType
+        /// ClassProperty: DamageType<br/>
+        /// Default: BmGame.RDamageType
         /// </summary>
         public unsafe BmSDK.Class DamageType
         {
@@ -2759,7 +2761,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeBlocked
+        /// BoolProperty: bCanBeBlocked<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeBlocked
         {
@@ -2867,7 +2870,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// BoolProperty: bCanForceIntoCombat
+        /// BoolProperty: bCanForceIntoCombat<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanForceIntoCombat
         {
@@ -2966,7 +2970,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: TransitionDurationScale
+        /// FloatProperty: TransitionDurationScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TransitionDurationScale
         {
@@ -2984,7 +2989,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// ClassProperty: HitReactionClass
+        /// ClassProperty: HitReactionClass<br/>
+        /// Default: BmGame.RBMBehaviour_HitReaction
         /// </summary>
         public unsafe BmSDK.Class HitReactionClass
         {
@@ -3239,7 +3245,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: DebugOffset
+    /// StructProperty: DebugOffset<br/>
+    /// Default: (Z=-80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DebugOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2660);
@@ -3362,7 +3369,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: PunchedInFaceSFX
+    /// ObjectProperty: PunchedInFaceSFX<br/>
+    /// Default: Ww_CHR_Combat.Play_Enemy_Punch_Player_Face
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PunchedInFaceSFX
     {
@@ -3371,7 +3379,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: KickedInStomachSFX
+    /// ObjectProperty: KickedInStomachSFX<br/>
+    /// Default: Ww_CHR_Combat.Play_Enemy_Kick_Player_Body
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent KickedInStomachSFX
     {
@@ -3407,7 +3416,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileThreatComp
+    /// ComponentProperty: BatmobileThreatComp<br/>
+    /// Default: BmGame.Default__RPawnCombat.ThreatComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleThreatComponent BatmobileThreatComp
     {
@@ -3434,7 +3444,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ClassProperty: CombatRedirectMoveClass
+    /// ClassProperty: CombatRedirectMoveClass<br/>
+    /// Default: BmGame.RCombatMove_BatmanRedirect
     /// </summary>
     public unsafe BmSDK.Class CombatRedirectMoveClass
     {
@@ -3452,7 +3463,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bIsValidCombatant
+    /// BoolProperty: bIsValidCombatant<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsValidCombatant
     {
@@ -3461,7 +3473,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeHitInCombat
+    /// BoolProperty: bCanBeHitInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeHitInCombat
     {
@@ -3479,7 +3492,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenDown
+    /// BoolProperty: bCanBeTakenDown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenDown
     {
@@ -3488,7 +3502,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeThrown
+    /// BoolProperty: bCanBeThrown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeThrown
     {
@@ -3497,7 +3512,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenDownOnFloor
+    /// BoolProperty: bCanBeTakenDownOnFloor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenDownOnFloor
     {
@@ -3524,7 +3540,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bQuickKOIfLastEnemy
+    /// BoolProperty: bQuickKOIfLastEnemy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bQuickKOIfLastEnemy
     {
@@ -3596,7 +3613,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanWritheWhenRagdoll
+    /// BoolProperty: bCanWritheWhenRagdoll<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanWritheWhenRagdoll
     {
@@ -3713,7 +3731,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: CollisionProxyRadius
+    /// FloatProperty: CollisionProxyRadius<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float CollisionProxyRadius
     {
@@ -3722,7 +3741,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: CollisionProxyHeight
+    /// FloatProperty: CollisionProxyHeight<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float CollisionProxyHeight
     {
@@ -3767,7 +3787,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: TargettedByBatarang
+    /// IntProperty: TargettedByBatarang<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TargettedByBatarang
     {
@@ -3794,7 +3815,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RagdollStunTimeMultiplier
+    /// FloatProperty: RagdollStunTimeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RagdollStunTimeMultiplier
     {
@@ -3815,7 +3837,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 2944);
 
     /// <summary>
-    /// FloatProperty: SpecialMoveLeftFootCycleStartTime
+    /// FloatProperty: SpecialMoveLeftFootCycleStartTime<br/>
+    /// Default: 3.4
     /// </summary>
     public unsafe float SpecialMoveLeftFootCycleStartTime
     {

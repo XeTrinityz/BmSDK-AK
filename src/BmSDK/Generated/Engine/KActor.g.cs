@@ -264,7 +264,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDamageAppliesImpulse
+    /// BoolProperty: bDamageAppliesImpulse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDamageAppliesImpulse
     {
@@ -327,7 +328,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bNeedsRBStateReplication
+    /// BoolProperty: bNeedsRBStateReplication<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedsRBStateReplication
     {
@@ -336,7 +338,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDisableClientSidePawnInteractions
+    /// BoolProperty: bDisableClientSidePawnInteractions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableClientSidePawnInteractions
     {
@@ -345,13 +348,15 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: FakePhysics
+    /// StructProperty: FakePhysics<br/>
+    /// Default: (PhysInfo=(InstantaneousActivationDelay=0.1,InstantaneousVelocityThreshold=1,InstantaneousVelocityAssuredThreshold=100,InstantaneousProbability=0.25,ContinuousMonitorWindowDuration=0.2,ContinuousMinim...
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkFakePhysics FakePhysics
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkFakePhysics>(Ptr + 772);
 
     /// <summary>
-    /// FloatProperty: StayUprightTorqueFactor
+    /// FloatProperty: StayUprightTorqueFactor<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float StayUprightTorqueFactor
     {
@@ -360,7 +365,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StayUprightMaxTorque
+    /// FloatProperty: StayUprightMaxTorque<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float StayUprightMaxTorque
     {
@@ -369,7 +375,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxPhysicsVelocity
+    /// FloatProperty: MaxPhysicsVelocity<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float MaxPhysicsVelocity
     {

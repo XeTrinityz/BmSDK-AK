@@ -93,7 +93,8 @@ public partial class RSeqAct_SetVehicleCombatBehaviour : BmSDK.Engine.SequenceAc
     }
 
     /// <summary>
-    /// ClassProperty: NewCombatBehaviour
+    /// ClassProperty: NewCombatBehaviour<br/>
+    /// Default: BmGame.RVehicleBehaviour_TankStrafe
     /// </summary>
     public unsafe BmSDK.Class NewCombatBehaviour
     {

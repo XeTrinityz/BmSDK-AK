@@ -433,7 +433,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BMDetectionAngleDegrees
+    /// FloatProperty: BMDetectionAngleDegrees<br/>
+    /// Default: 13
     /// </summary>
     public unsafe float BMDetectionAngleDegrees
     {
@@ -478,7 +479,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: lightMeshBaseAngle
+    /// FloatProperty: lightMeshBaseAngle<br/>
+    /// Default: 11
     /// </summary>
     public unsafe float lightMeshBaseAngle
     {
@@ -487,7 +489,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: lightMeshBaseLength
+    /// FloatProperty: lightMeshBaseLength<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float lightMeshBaseLength
     {
@@ -496,7 +499,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: pointDownAngleLocal
+    /// FloatProperty: pointDownAngleLocal<br/>
+    /// Default: -40
     /// </summary>
     public unsafe float pointDownAngleLocal
     {
@@ -505,7 +509,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: lightMaxRadius
+    /// FloatProperty: lightMaxRadius<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float lightMaxRadius
     {

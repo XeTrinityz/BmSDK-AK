@@ -166,7 +166,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMove
+    /// ObjectProperty: RescueMeMove<br/>
+    /// Default: Batman_Gadget_Moves.GrappleGun.Rescue_Flat_New
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMove
     {
@@ -175,7 +176,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMoveRailing
+    /// ObjectProperty: RescueMeMoveRailing<br/>
+    /// Default: Batman_Gadget_Moves.GrappleGun.Rescue_Railing_New
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMoveRailing
     {
@@ -184,7 +186,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMoveOntoRailing
+    /// ObjectProperty: RescueMeMoveOntoRailing<br/>
+    /// Default: Batman_Gadget_Moves.GrappleGun.Rescue_Onto_Railing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMoveOntoRailing
     {
@@ -211,7 +214,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMoveQuick
+    /// ObjectProperty: RescueMeMoveQuick<br/>
+    /// Default: Batman_Agility_Moves.ClimbLedge.Climb_Ledge_Flat_New
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMoveQuick
     {
@@ -220,7 +224,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMoveRailingQuick
+    /// ObjectProperty: RescueMeMoveRailingQuick<br/>
+    /// Default: Batman_Agility_Moves.ClimbLedge.Climb_Onto_Railing_Hang_128
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMoveRailingQuick
     {
@@ -229,7 +234,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: RescueMeMoveOntoRailingQuick
+    /// ObjectProperty: RescueMeMoveOntoRailingQuick<br/>
+    /// Default: Batman_Agility_Moves.ClimbLedge.Climb_Onto_Railing_Hang
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RescueMeMoveOntoRailingQuick
     {
@@ -238,7 +244,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: fadeTime
+    /// FloatProperty: fadeTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float fadeTime
     {
@@ -247,7 +254,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: FadeInTime
+    /// FloatProperty: FadeInTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeInTime
     {
@@ -256,7 +264,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BlackTime
+    /// FloatProperty: BlackTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BlackTime
     {
@@ -307,13 +316,15 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1044);
 
     /// <summary>
-    /// StructProperty: GrappleUpVelocity
+    /// StructProperty: GrappleUpVelocity<br/>
+    /// Default: (Z=10000)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GrappleUpVelocity
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1056);
 
     /// <summary>
-    /// FloatProperty: GrappleAccel
+    /// FloatProperty: GrappleAccel<br/>
+    /// Default: 35000
     /// </summary>
     public unsafe float GrappleAccel
     {
@@ -322,7 +333,8 @@ public partial class RRescuePoint : BmSDK.BmGame.RGrapplePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: CombatantRangeDetection
+    /// FloatProperty: CombatantRangeDetection<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CombatantRangeDetection
     {

@@ -88,7 +88,8 @@ public partial class RLocalLightContainer : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BrightnessFadeTime
+    /// FloatProperty: BrightnessFadeTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BrightnessFadeTime
     {

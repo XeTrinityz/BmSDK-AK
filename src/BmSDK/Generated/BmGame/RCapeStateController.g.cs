@@ -461,7 +461,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AutoForwardTimer
+    /// FloatProperty: AutoForwardTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AutoForwardTimer
     {
@@ -590,7 +591,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DebugRenderBoneIndex
+    /// IntProperty: DebugRenderBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DebugRenderBoneIndex
     {
@@ -599,7 +601,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DeepIntersectionHandlingNumTestChainVsShapesPerFrame
+    /// IntProperty: DeepIntersectionHandlingNumTestChainVsShapesPerFrame<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int DeepIntersectionHandlingNumTestChainVsShapesPerFrame
     {

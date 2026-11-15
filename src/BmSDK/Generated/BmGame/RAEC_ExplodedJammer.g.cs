@@ -216,7 +216,8 @@ public partial class RAEC_ExplodedJammer : BmSDK.BmGame.RAlertEventCoordinatorBa
     }
 
     /// <summary>
-    /// IntProperty: MinWanted
+    /// IntProperty: MinWanted<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MinWanted
     {
@@ -225,7 +226,8 @@ public partial class RAEC_ExplodedJammer : BmSDK.BmGame.RAlertEventCoordinatorBa
     }
 
     /// <summary>
-    /// IntProperty: MaxWanted
+    /// IntProperty: MaxWanted<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxWanted
     {
@@ -252,7 +254,8 @@ public partial class RAEC_ExplodedJammer : BmSDK.BmGame.RAlertEventCoordinatorBa
     }
 
     /// <summary>
-    /// FloatProperty: ActivePeriod
+    /// FloatProperty: ActivePeriod<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ActivePeriod
     {

@@ -161,7 +161,8 @@ public partial class ApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticCo
     }
 
     /// <summary>
-    /// FloatProperty: SleepEnergyThreshold
+    /// FloatProperty: SleepEnergyThreshold<br/>
+    /// Default: 1250
     /// </summary>
     public unsafe float SleepEnergyThreshold
     {
@@ -170,7 +171,8 @@ public partial class ApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticCo
     }
 
     /// <summary>
-    /// FloatProperty: SleepDamping
+    /// FloatProperty: SleepDamping<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SleepDamping
     {

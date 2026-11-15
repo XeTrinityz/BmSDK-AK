@@ -237,7 +237,8 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     }
 
     /// <summary>
-    /// FloatProperty: SplitScreenShakeScale
+    /// FloatProperty: SplitScreenShakeScale<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SplitScreenShakeScale
     {

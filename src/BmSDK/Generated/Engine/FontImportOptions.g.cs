@@ -79,7 +79,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Data
+    /// StructProperty: Data<br/>
+    /// Default: (FontName="Arial",Height=16,bEnableAntialiasing=true,bIncludeASCIIRange=true,ForegroundColor=(R=1,G=1,B=1,A=1),TexturePageWidth=256,TexturePageMaxHeight=256,XPadding=1,YPadding=1,DistanceFieldScaleFac...
     /// </summary>
     public unsafe ref BmSDK.Engine.FontImportOptions.FFontImportOptionsData Data
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.FontImportOptions.FFontImportOptionsData>(Ptr + 84);
@@ -91,7 +92,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FFontImportOptionsData
     {
         /// <summary>
-        /// StrProperty: FontName
+        /// StrProperty: FontName<br/>
+        /// Default: "Arial"
         /// </summary>
         public unsafe BmSDK.FString FontName
         {
@@ -100,7 +102,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Height
+        /// FloatProperty: Height<br/>
+        /// Default: 16
         /// </summary>
         public unsafe float Height
         {
@@ -109,7 +112,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bEnableAntialiasing
+        /// BoolProperty: bEnableAntialiasing<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bEnableAntialiasing
         {
@@ -208,7 +212,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bIncludeASCIIRange
+        /// BoolProperty: bIncludeASCIIRange<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bIncludeASCIIRange
         {
@@ -217,7 +222,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: ForegroundColor
+        /// StructProperty: ForegroundColor<br/>
+        /// Default: (R=1,G=1,B=1,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor ForegroundColor
         {
@@ -235,7 +241,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: TexturePageWidth
+        /// IntProperty: TexturePageWidth<br/>
+        /// Default: 256
         /// </summary>
         public unsafe int TexturePageWidth
         {
@@ -244,7 +251,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: TexturePageMaxHeight
+        /// IntProperty: TexturePageMaxHeight<br/>
+        /// Default: 256
         /// </summary>
         public unsafe int TexturePageMaxHeight
         {
@@ -253,7 +261,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: XPadding
+        /// IntProperty: XPadding<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int XPadding
         {
@@ -262,7 +271,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: YPadding
+        /// IntProperty: YPadding<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int YPadding
         {
@@ -334,7 +344,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: DistanceFieldScaleFactor
+        /// IntProperty: DistanceFieldScaleFactor<br/>
+        /// Default: 16
         /// </summary>
         public unsafe int DistanceFieldScaleFactor
         {
@@ -343,7 +354,8 @@ public partial class FontImportOptions : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DistanceFieldScanRadiusScale
+        /// FloatProperty: DistanceFieldScanRadiusScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DistanceFieldScanRadiusScale
         {

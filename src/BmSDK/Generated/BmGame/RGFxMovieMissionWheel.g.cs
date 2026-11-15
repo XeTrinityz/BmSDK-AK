@@ -1432,7 +1432,8 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: WorldPPSettings
+    /// StructProperty: WorldPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_FocusDistance=true,bOverride_DOF_InterpolationDuration=true,InterpolateOverDistanceFade=250...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings WorldPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 1220);

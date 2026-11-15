@@ -257,7 +257,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseLeafCards
+    /// BoolProperty: bUseLeafCards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseLeafCards
     {
@@ -266,7 +267,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseLeafMeshes
+    /// BoolProperty: bUseLeafMeshes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseLeafMeshes
     {
@@ -275,7 +277,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseBranches
+    /// BoolProperty: bUseBranches<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseBranches
     {
@@ -284,7 +287,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseFronds
+    /// BoolProperty: bUseFronds<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseFronds
     {
@@ -293,7 +297,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseBillboards
+    /// BoolProperty: bUseBillboards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseBillboards
     {
@@ -302,7 +307,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: Lod3DStart
+    /// FloatProperty: Lod3DStart<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float Lod3DStart
     {
@@ -311,7 +317,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: Lod3DEnd
+    /// FloatProperty: Lod3DEnd<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float Lod3DEnd
     {
@@ -320,7 +327,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: LodBillboardStart
+    /// FloatProperty: LodBillboardStart<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float LodBillboardStart
     {
@@ -329,7 +337,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: LodBillboardEnd
+    /// FloatProperty: LodBillboardEnd<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float LodBillboardEnd
     {
@@ -338,7 +347,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: LodLevelOverride
+    /// FloatProperty: LodLevelOverride<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LodLevelOverride
     {

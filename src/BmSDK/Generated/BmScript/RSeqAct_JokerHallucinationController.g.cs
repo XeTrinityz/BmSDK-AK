@@ -240,7 +240,8 @@ public partial class RSeqAct_JokerHallucinationController : BmSDK.BmGame.RSeqAct
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistanceToSpawnPoint
+    /// FloatProperty: MaxDistanceToSpawnPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxDistanceToSpawnPoint
     {

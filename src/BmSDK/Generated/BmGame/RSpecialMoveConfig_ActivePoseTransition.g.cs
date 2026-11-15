@@ -96,7 +96,8 @@ public partial class RSpecialMoveConfig_ActivePoseTransition : BmSDK.BmGame.RSpe
     }
 
     /// <summary>
-    /// NameProperty: EndMovementStance
+    /// NameProperty: EndMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName EndMovementStance
     {

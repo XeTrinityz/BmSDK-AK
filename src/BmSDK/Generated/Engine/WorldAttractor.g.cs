@@ -166,7 +166,8 @@ public partial class WorldAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -202,19 +203,22 @@ public partial class WorldAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: FalloffExponent
+    /// StructProperty: FalloffExponent<br/>
+    /// Default: (Distribution=Engine.Default__WorldAttractor.DistributionFalloffExponent)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat FalloffExponent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 684);
 
     /// <summary>
-    /// StructProperty: Range
+    /// StructProperty: Range<br/>
+    /// Default: (Distribution=Engine.Default__WorldAttractor.DistributionRange)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat Range
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 728);
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Distribution=Engine.Default__WorldAttractor.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 772);
@@ -229,13 +233,15 @@ public partial class WorldAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DragCoefficient
+    /// StructProperty: DragCoefficient<br/>
+    /// Default: (Distribution=Engine.Default__WorldAttractor.DistributionDragCoefficient)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat DragCoefficient
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 820);
 
     /// <summary>
-    /// StructProperty: DragRadius
+    /// StructProperty: DragRadius<br/>
+    /// Default: (Distribution=Engine.Default__WorldAttractor.DistributionDragRadius)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat DragRadius
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 864);

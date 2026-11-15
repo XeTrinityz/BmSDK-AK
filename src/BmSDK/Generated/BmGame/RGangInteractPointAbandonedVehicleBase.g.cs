@@ -292,7 +292,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     }
 
     /// <summary>
-    /// IntProperty: OverridePickedAnimationData
+    /// IntProperty: OverridePickedAnimationData<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverridePickedAnimationData
     {
@@ -301,7 +302,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     }
 
     /// <summary>
-    /// IntProperty: TwinnedIndex
+    /// IntProperty: TwinnedIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TwinnedIndex
     {

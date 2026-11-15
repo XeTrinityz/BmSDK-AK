@@ -107,7 +107,8 @@ public partial class RAutovistaTarget : BmSDK.BmGame.RDummyTarget, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StrProperty: DisplayText
+    /// StrProperty: DisplayText<br/>
+    /// Default: "Test Target"
     /// </summary>
     public unsafe BmSDK.FString DisplayText
     {
@@ -125,7 +126,8 @@ public partial class RAutovistaTarget : BmSDK.BmGame.RDummyTarget, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StrProperty: CursorIcon
+    /// StrProperty: CursorIcon<br/>
+    /// Default: "Normal"
     /// </summary>
     public unsafe BmSDK.FString CursorIcon
     {
@@ -134,7 +136,8 @@ public partial class RAutovistaTarget : BmSDK.BmGame.RDummyTarget, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: FadeWhenBehind
+    /// BoolProperty: FadeWhenBehind<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FadeWhenBehind
     {
@@ -170,7 +173,8 @@ public partial class RAutovistaTarget : BmSDK.BmGame.RDummyTarget, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutTimer
+    /// FloatProperty: FadeOutTimer<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float FadeOutTimer
     {
@@ -179,7 +183,8 @@ public partial class RAutovistaTarget : BmSDK.BmGame.RDummyTarget, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutPeriod
+    /// FloatProperty: FadeOutPeriod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeOutPeriod
     {

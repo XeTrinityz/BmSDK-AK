@@ -581,7 +581,8 @@ public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDe
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmGame.Default__RThugEatingPlantBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {
@@ -721,7 +722,8 @@ public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDe
     public InlineArray<BmSDK.FName> AttackAnimList => new(4, Ptr + 784, 8, this);
 
     /// <summary>
-    /// NameProperty: AttackAnimList
+    /// NameProperty: AttackAnimList<br/>
+    /// Default: Ivy_Plant_Attack_100_To_200
     /// </summary>
     public unsafe BmSDK.FName AttackAnimList_0
     {
@@ -729,7 +731,8 @@ public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDe
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 784); }
     }
     /// <summary>
-    /// NameProperty: AttackAnimList
+    /// NameProperty: AttackAnimList<br/>
+    /// Default: Ivy_Plant_Attack_200_To_400
     /// </summary>
     public unsafe BmSDK.FName AttackAnimList_1
     {
@@ -737,7 +740,8 @@ public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDe
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 792); }
     }
     /// <summary>
-    /// NameProperty: AttackAnimList
+    /// NameProperty: AttackAnimList<br/>
+    /// Default: Ivy_Plant_Attack_400_To_600
     /// </summary>
     public unsafe BmSDK.FName AttackAnimList_2
     {
@@ -745,7 +749,8 @@ public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDe
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 800); }
     }
     /// <summary>
-    /// NameProperty: AttackAnimList
+    /// NameProperty: AttackAnimList<br/>
+    /// Default: Ivy_Plant_Attack_600_To_800
     /// </summary>
     public unsafe BmSDK.FName AttackAnimList_3
     {

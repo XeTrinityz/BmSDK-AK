@@ -1341,7 +1341,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: CombatPointCheckTime
+    /// FloatProperty: CombatPointCheckTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CombatPointCheckTime
     {
@@ -1359,7 +1360,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: UseCombatPointChance
+    /// FloatProperty: UseCombatPointChance<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float UseCombatPointChance
     {
@@ -1404,7 +1406,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// BoolProperty: bHasTurnSteps
+    /// BoolProperty: bHasTurnSteps<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasTurnSteps
     {
@@ -1422,7 +1425,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// BoolProperty: bHasFrontStep
+    /// BoolProperty: bHasFrontStep<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasFrontStep
     {
@@ -1692,7 +1696,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: RoamRadius
+    /// FloatProperty: RoamRadius<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RoamRadius
     {
@@ -1743,7 +1748,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: MinMoveAmount
+    /// FloatProperty: MinMoveAmount<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float MinMoveAmount
     {
@@ -1752,7 +1758,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: MinMoveSpeedForce
+    /// FloatProperty: MinMoveSpeedForce<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float MinMoveSpeedForce
     {
@@ -1761,7 +1768,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: MaxMoveSpeedForce
+    /// FloatProperty: MaxMoveSpeedForce<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MaxMoveSpeedForce
     {
@@ -1839,7 +1847,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: TurnThresholdCos
+    /// FloatProperty: TurnThresholdCos<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TurnThresholdCos
     {
@@ -1848,7 +1857,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
     }
 
     /// <summary>
-    /// FloatProperty: NotUsingMoveToTime
+    /// FloatProperty: NotUsingMoveToTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float NotUsingMoveToTime
     {

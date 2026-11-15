@@ -88,7 +88,8 @@ public partial class SeqVar_External : BmSDK.Engine.SequenceVariable, BmSDK.IGam
     }
 
     /// <summary>
-    /// StrProperty: VariableLabel
+    /// StrProperty: VariableLabel<br/>
+    /// Default: "Default Var"
     /// </summary>
     public unsafe BmSDK.FString VariableLabel
     {

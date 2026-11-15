@@ -136,7 +136,8 @@ public partial class CameraActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AspectRatio
+    /// FloatProperty: AspectRatio<br/>
+    /// Default: 1.77778
     /// </summary>
     public unsafe float AspectRatio
     {
@@ -145,7 +146,8 @@ public partial class CameraActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FOVAngle
+    /// FloatProperty: FOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float FOVAngle
     {
@@ -163,7 +165,8 @@ public partial class CameraActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CamOverridePostProcess
+    /// StructProperty: CamOverridePostProcess<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings CamOverridePostProcess
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 684);

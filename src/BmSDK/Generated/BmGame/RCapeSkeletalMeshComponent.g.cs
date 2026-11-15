@@ -167,7 +167,8 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
     }
 
     /// <summary>
-    /// ByteProperty: CapeBoundsCalculationType
+    /// ByteProperty: CapeBoundsCalculationType<br/>
+    /// Default: CAPEBOUNDSCALCULATION_Standard
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeSkeletalMeshComponent.ECapeBoundsCalculationType CapeBoundsCalculationType
     {
@@ -176,7 +177,8 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
     }
 
     /// <summary>
-    /// FloatProperty: LooseCapeBoundsRadius
+    /// FloatProperty: LooseCapeBoundsRadius<br/>
+    /// Default: 230
     /// </summary>
     public unsafe float LooseCapeBoundsRadius
     {

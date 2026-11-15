@@ -205,7 +205,8 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: LastAttackFinishedTime
+    /// FloatProperty: LastAttackFinishedTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastAttackFinishedTime
     {

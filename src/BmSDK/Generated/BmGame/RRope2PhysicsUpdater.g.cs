@@ -155,7 +155,8 @@ public partial class RRope2PhysicsUpdater : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RopeTwistLimitPerMetre
+    /// FloatProperty: RopeTwistLimitPerMetre<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float RopeTwistLimitPerMetre
     {

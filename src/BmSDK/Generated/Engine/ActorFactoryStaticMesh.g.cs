@@ -88,7 +88,8 @@ public partial class ActorFactoryStaticMesh : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: DrawScale3D
+    /// StructProperty: DrawScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrawScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);

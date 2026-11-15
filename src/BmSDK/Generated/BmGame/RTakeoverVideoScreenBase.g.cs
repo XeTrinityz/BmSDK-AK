@@ -218,7 +218,8 @@ public partial class RTakeoverVideoScreenBase : BmSDK.Engine.StaticMeshActor, Bm
     }
 
     /// <summary>
-    /// IntProperty: videoMaterialIndex
+    /// IntProperty: videoMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int videoMaterialIndex
     {
@@ -263,7 +264,8 @@ public partial class RTakeoverVideoScreenBase : BmSDK.Engine.StaticMeshActor, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenOverByRiddler
+    /// BoolProperty: bCanBeTakenOverByRiddler<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenOverByRiddler
     {
@@ -272,7 +274,8 @@ public partial class RTakeoverVideoScreenBase : BmSDK.Engine.StaticMeshActor, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenOverByScarecrow
+    /// BoolProperty: bCanBeTakenOverByScarecrow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenOverByScarecrow
     {

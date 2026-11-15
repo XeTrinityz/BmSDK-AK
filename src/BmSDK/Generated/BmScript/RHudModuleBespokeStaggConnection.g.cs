@@ -160,7 +160,8 @@ public partial class RHudModuleBespokeStaggConnection : BmSDK.BmGame.RHudModuleB
     }
 
     /// <summary>
-    /// FloatProperty: CurrentProportion
+    /// FloatProperty: CurrentProportion<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float CurrentProportion
     {

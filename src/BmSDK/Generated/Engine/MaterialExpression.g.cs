@@ -164,7 +164,8 @@ public partial class MaterialExpression : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowInputs
+    /// BoolProperty: bShowInputs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowInputs
     {
@@ -173,7 +174,8 @@ public partial class MaterialExpression : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowOutputs
+    /// BoolProperty: bShowOutputs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowOutputs
     {
@@ -233,7 +235,8 @@ public partial class MaterialExpression : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Outputs
+    /// ArrayProperty: Outputs<br/>
+    /// Default: (())
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MaterialExpression.FExpressionOutput> Outputs
     {

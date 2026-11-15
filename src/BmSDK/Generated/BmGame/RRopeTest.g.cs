@@ -160,7 +160,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 748);
 
     /// <summary>
-    /// FloatProperty: MaxLength1
+    /// FloatProperty: MaxLength1<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxLength1
     {
@@ -169,7 +170,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Length1
+    /// FloatProperty: Length1<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float Length1
     {
@@ -178,7 +180,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChangeToInstantlyLength
+    /// FloatProperty: ChangeToInstantlyLength<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ChangeToInstantlyLength
     {
@@ -187,7 +190,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GradualChangeLength
+    /// FloatProperty: GradualChangeLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float GradualChangeLength
     {
@@ -196,7 +200,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GradualChangeDuration
+    /// FloatProperty: GradualChangeDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GradualChangeDuration
     {
@@ -217,7 +222,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 792);
 
     /// <summary>
-    /// FloatProperty: StretchBreakRatio
+    /// FloatProperty: StretchBreakRatio<br/>
+    /// Default: 1.06
     /// </summary>
     public unsafe float StretchBreakRatio
     {
@@ -226,7 +232,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StretchRopeLength
+    /// FloatProperty: StretchRopeLength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float StretchRopeLength
     {
@@ -244,7 +251,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: CurrentTestState
+    /// ByteProperty: CurrentTestState<br/>
+    /// Default: ROPETEST_Initialise
     /// </summary>
     public unsafe BmSDK.BmGame.RRopeTest.ERopeTestState CurrentTestState
     {
@@ -271,7 +279,8 @@ public partial class RRopeTest : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StateWaitDuration
+    /// FloatProperty: StateWaitDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StateWaitDuration
     {

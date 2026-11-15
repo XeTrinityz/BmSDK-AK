@@ -107,7 +107,8 @@ public partial class RDamageOverTimeVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: DamagePerSecond
+    /// IntProperty: DamagePerSecond<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int DamagePerSecond
     {
@@ -116,7 +117,8 @@ public partial class RDamageOverTimeVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DamageTimeInterval
+    /// FloatProperty: DamageTimeInterval<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageTimeInterval
     {
@@ -125,7 +127,8 @@ public partial class RDamageOverTimeVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDmgType_Smilex
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {

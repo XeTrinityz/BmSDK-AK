@@ -124,7 +124,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UseBone0ForLocation
+    /// BoolProperty: UseBone0ForLocation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseBone0ForLocation
     {
@@ -133,7 +134,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: OverrideRPM
+    /// BoolProperty: OverrideRPM<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OverrideRPM
     {
@@ -142,7 +144,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: OverrideThrottle
+    /// BoolProperty: OverrideThrottle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OverrideThrottle
     {
@@ -151,7 +154,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: OverrideBrake
+    /// BoolProperty: OverrideBrake<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OverrideBrake
     {
@@ -178,7 +182,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UseWheelRPM
+    /// BoolProperty: UseWheelRPM<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseWheelRPM
     {

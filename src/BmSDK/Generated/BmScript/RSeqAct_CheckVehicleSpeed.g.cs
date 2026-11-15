@@ -111,7 +111,8 @@ public partial class RSeqAct_CheckVehicleSpeed : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeed
+    /// FloatProperty: MinSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinSpeed
     {
@@ -120,7 +121,8 @@ public partial class RSeqAct_CheckVehicleSpeed : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -129,7 +131,8 @@ public partial class RSeqAct_CheckVehicleSpeed : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngle
+    /// FloatProperty: MaxAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxAngle
     {
@@ -138,7 +141,8 @@ public partial class RSeqAct_CheckVehicleSpeed : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistance
+    /// FloatProperty: MaxDistance<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxDistance
     {

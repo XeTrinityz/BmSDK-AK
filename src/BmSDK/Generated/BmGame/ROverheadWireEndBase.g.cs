@@ -170,7 +170,8 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     }
 
     /// <summary>
-    /// ClassProperty: WireClass
+    /// ClassProperty: WireClass<br/>
+    /// Default: BmGame.RHidePoint_RopeBase
     /// </summary>
     public unsafe BmSDK.Class WireClass
     {
@@ -179,7 +180,8 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     }
 
     /// <summary>
-    /// FloatProperty: RopeSlackDist
+    /// FloatProperty: RopeSlackDist<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RopeSlackDist
     {

@@ -564,7 +564,8 @@ public partial class RCombatMove_AttackRiddlerMechPilot : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: PoundTime
+    /// FloatProperty: PoundTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PoundTime
     {

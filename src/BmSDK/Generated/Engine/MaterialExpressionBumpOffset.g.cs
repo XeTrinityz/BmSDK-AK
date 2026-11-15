@@ -97,7 +97,8 @@ public partial class MaterialExpressionBumpOffset : BmSDK.Engine.MaterialExpress
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 276);
 
     /// <summary>
-    /// FloatProperty: HeightRatio
+    /// FloatProperty: HeightRatio<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float HeightRatio
     {
@@ -106,7 +107,8 @@ public partial class MaterialExpressionBumpOffset : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: ReferencePlane
+    /// FloatProperty: ReferencePlane<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ReferencePlane
     {

@@ -797,7 +797,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoDestroySourceWhenHidden
+    /// BoolProperty: bAutoDestroySourceWhenHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoDestroySourceWhenHidden
     {
@@ -806,7 +807,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoDestroySourceWhenDead
+    /// BoolProperty: bAutoDestroySourceWhenDead<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoDestroySourceWhenDead
     {
@@ -815,7 +817,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bKillSoundsOnDestroy
+    /// BoolProperty: bKillSoundsOnDestroy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKillSoundsOnDestroy
     {
@@ -842,7 +845,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoUpdateSpatial
+    /// BoolProperty: bAutoUpdateSpatial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoUpdateSpatial
     {
@@ -869,7 +873,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableEnvironments
+    /// BoolProperty: bEnableEnvironments<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableEnvironments
     {
@@ -959,7 +964,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FalloffRadiusMultiplier
+    /// FloatProperty: FalloffRadiusMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FalloffRadiusMultiplier
     {
@@ -1061,7 +1067,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 216);
 
     /// <summary>
-    /// FloatProperty: ObsOccMultiplier
+    /// FloatProperty: ObsOccMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ObsOccMultiplier
     {
@@ -1070,7 +1077,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ObsOccMultiplierDlg
+    /// FloatProperty: ObsOccMultiplierDlg<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ObsOccMultiplierDlg
     {
@@ -1109,7 +1117,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WetDryMixVolume
+    /// FloatProperty: WetDryMixVolume<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WetDryMixVolume
     {

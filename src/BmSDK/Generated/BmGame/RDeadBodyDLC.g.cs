@@ -79,7 +79,8 @@ public partial class RDeadBodyDLC : BmSDK.BmGame.RDeadBody, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: RandSeed
+    /// IntProperty: RandSeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RandSeed
     {

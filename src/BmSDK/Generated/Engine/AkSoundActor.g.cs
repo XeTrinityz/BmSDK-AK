@@ -106,7 +106,8 @@ public partial class AkSoundActor : BmSDK.Engine.AkActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ActorAudioComponent
+    /// ComponentProperty: ActorAudioComponent<br/>
+    /// Default: Engine.Default__AkSoundActor.AkSoundActorAkComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkComponent ActorAudioComponent
     {

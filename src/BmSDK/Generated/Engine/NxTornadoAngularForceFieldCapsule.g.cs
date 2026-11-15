@@ -79,7 +79,8 @@ public partial class NxTornadoAngularForceFieldCapsule : BmSDK.Engine.NxTornadoA
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__NxTornadoAngularForceFieldCapsule.DrawCapsule0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCapsuleComponent RenderComponent
     {

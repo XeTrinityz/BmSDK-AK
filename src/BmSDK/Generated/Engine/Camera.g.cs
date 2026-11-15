@@ -725,7 +725,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: BlendFunction
+        /// ByteProperty: BlendFunction<br/>
+        /// Default: VTBlend_Cubic
         /// </summary>
         public unsafe BmSDK.Engine.Camera.EViewTargetBlendFunction BlendFunction
         {
@@ -734,7 +735,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: BlendExp
+        /// FloatProperty: BlendExp<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float BlendExp
         {
@@ -752,7 +754,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bResetCameraBehindPlayer
+        /// BoolProperty: bResetCameraBehindPlayer<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bResetCameraBehindPlayer
         {
@@ -817,7 +820,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: POV
+        /// StructProperty: POV<br/>
+        /// Default: (FOV=90)
         /// </summary>
         public unsafe BmSDK.GameObject.FTPOV POV
         {
@@ -860,7 +864,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: POV
+        /// StructProperty: POV<br/>
+        /// Default: (FOV=90)
         /// </summary>
         public unsafe BmSDK.GameObject.FTPOV POV
         {
@@ -967,7 +972,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: CameraShakeCamModClass
+    /// ClassProperty: CameraShakeCamModClass<br/>
+    /// Default: Engine.CameraModifier_CameraShake
     /// </summary>
     public unsafe BmSDK.Class CameraShakeCamModClass
     {
@@ -985,7 +991,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultFOV
+    /// FloatProperty: DefaultFOV<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float DefaultFOV
     {
@@ -1066,7 +1073,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseClientSideCameraUpdates
+    /// BoolProperty: bUseClientSideCameraUpdates<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseClientSideCameraUpdates
     {
@@ -1111,7 +1119,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultAspectRatio
+    /// FloatProperty: DefaultAspectRatio<br/>
+    /// Default: 1.33333
     /// </summary>
     public unsafe float DefaultAspectRatio
     {
@@ -1162,13 +1171,15 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CamPostProcessSettings
+    /// StructProperty: CamPostProcessSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings CamPostProcessSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 812);
 
     /// <summary>
-    /// StructProperty: RenderingOverrides
+    /// StructProperty: RenderingOverrides<br/>
+    /// Default: (bAllowAmbientOcclusion=true,bAllowDominantWholeSceneDynamicShadows=true,bAllowMotionBlurSkinning=true,bAllowTemporalAA=true,bAllowLightShafts=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides RenderingOverrides
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides>(Ptr + 1336);
@@ -1228,25 +1239,29 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CameraCache
+    /// StructProperty: CameraCache<br/>
+    /// Default: (POV=(FOV=90))
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FTCameraCache CameraCache
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FTCameraCache>(Ptr + 1392);
 
     /// <summary>
-    /// StructProperty: LastFrameCameraCache
+    /// StructProperty: LastFrameCameraCache<br/>
+    /// Default: (POV=(FOV=90))
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FTCameraCache LastFrameCameraCache
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FTCameraCache>(Ptr + 1424);
 
     /// <summary>
-    /// StructProperty: ViewTarget
+    /// StructProperty: ViewTarget<br/>
+    /// Default: (POV=(FOV=90))
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FTViewTarget ViewTarget
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FTViewTarget>(Ptr + 1456);
 
     /// <summary>
-    /// StructProperty: PendingViewTarget
+    /// StructProperty: PendingViewTarget<br/>
+    /// Default: (POV=(FOV=90))
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FTViewTarget PendingViewTarget
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FTViewTarget>(Ptr + 1512);
@@ -1261,7 +1276,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BlendParams
+    /// StructProperty: BlendParams<br/>
+    /// Default: (BlendFunction=VTBlend_Cubic,BlendExp=2,bResetCameraBehindPlayer=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FViewTargetTransitionParams BlendParams
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FViewTargetTransitionParams>(Ptr + 1572);
@@ -1276,7 +1292,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FreeCamDistance
+    /// FloatProperty: FreeCamDistance<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float FreeCamDistance
     {

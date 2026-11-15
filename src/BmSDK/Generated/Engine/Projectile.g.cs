@@ -421,7 +421,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Speed
+    /// FloatProperty: Speed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float Speed
     {
@@ -430,7 +431,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -448,7 +450,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBlockedByInstigator
+    /// BoolProperty: bBlockedByInstigator<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockedByInstigator
     {
@@ -511,7 +514,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__Projectile.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -520,7 +524,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: MyDamageType
+    /// ClassProperty: MyDamageType<br/>
+    /// Default: Engine.DamageType
     /// </summary>
     public unsafe BmSDK.Class MyDamageType
     {
@@ -547,7 +552,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageRadius
+    /// FloatProperty: DamageRadius<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float DamageRadius
     {
@@ -565,7 +571,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NetCullDistanceSquared
+    /// FloatProperty: NetCullDistanceSquared<br/>
+    /// Default: 4e+08
     /// </summary>
     public unsafe float NetCullDistanceSquared
     {

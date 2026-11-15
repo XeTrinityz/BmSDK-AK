@@ -285,7 +285,8 @@ public partial class RCommandBeacon : BmSDK.BmGame.RCommandBeaconBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: damagedMesh
+    /// ComponentProperty: damagedMesh<br/>
+    /// Default: BmScript.Default__RCommandBeacon.meshCompDamaged
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent damagedMesh
     {

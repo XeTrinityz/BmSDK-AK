@@ -1754,7 +1754,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     public partial record struct FSentryGunSettings
     {
         /// <summary>
-        /// ByteProperty: SearchType
+        /// ByteProperty: SearchType<br/>
+        /// Default: eSGST_ConstantRotation
         /// </summary>
         public unsafe BmSDK.BmGame.RSentryGunBase.ESentryGunSearchType SearchType
         {
@@ -1772,7 +1773,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: maxRotationRate_search
+        /// FloatProperty: maxRotationRate_search<br/>
+        /// Default: 45
         /// </summary>
         public unsafe float maxRotationRate_search
         {
@@ -1781,7 +1783,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: maxRotationRate_attack
+        /// FloatProperty: maxRotationRate_attack<br/>
+        /// Default: 180
         /// </summary>
         public unsafe float maxRotationRate_attack
         {
@@ -1790,7 +1793,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: timeTillMaxRotationRate_search
+        /// FloatProperty: timeTillMaxRotationRate_search<br/>
+        /// Default: 0.3
         /// </summary>
         public unsafe float timeTillMaxRotationRate_search
         {
@@ -1799,7 +1803,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: timeTillMaxRotationRate_attack
+        /// FloatProperty: timeTillMaxRotationRate_attack<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float timeTillMaxRotationRate_attack
         {
@@ -1817,7 +1822,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: aimPauseTime
+        /// FloatProperty: aimPauseTime<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float aimPauseTime
         {
@@ -1826,7 +1832,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: FOV
+        /// FloatProperty: FOV<br/>
+        /// Default: 25
         /// </summary>
         public unsafe float FOV
         {
@@ -1835,7 +1842,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: Range
+        /// FloatProperty: Range<br/>
+        /// Default: 2000
         /// </summary>
         public unsafe float Range
         {
@@ -1853,7 +1861,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: shootAngleTolerance
+        /// FloatProperty: shootAngleTolerance<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float shootAngleTolerance
         {
@@ -1871,7 +1880,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: instantShootRange
+        /// FloatProperty: instantShootRange<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float instantShootRange
         {
@@ -1880,7 +1890,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: pauseDurationAfterLosingPlayer
+        /// FloatProperty: pauseDurationAfterLosingPlayer<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float pauseDurationAfterLosingPlayer
         {
@@ -1889,7 +1900,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: pauseDurationBeforeShootingPlayer
+        /// FloatProperty: pauseDurationBeforeShootingPlayer<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float pauseDurationBeforeShootingPlayer
         {
@@ -1898,7 +1910,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: GunDamage
+        /// FloatProperty: GunDamage<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float GunDamage
         {
@@ -1907,7 +1920,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: TimeBetweenShots
+        /// FloatProperty: TimeBetweenShots<br/>
+        /// Default: 0.15
         /// </summary>
         public unsafe float TimeBetweenShots
         {
@@ -1916,7 +1930,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeTakenDown
+        /// BoolProperty: bCanBeTakenDown<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeTakenDown
         {
@@ -1925,7 +1940,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: jamDuration
+        /// FloatProperty: jamDuration<br/>
+        /// Default: 15
         /// </summary>
         public unsafe float jamDuration
         {
@@ -1934,7 +1950,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: jamStartTransitionDuration
+        /// FloatProperty: jamStartTransitionDuration<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float jamStartTransitionDuration
         {
@@ -1943,7 +1960,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: jamEndTransitionDuration
+        /// FloatProperty: jamEndTransitionDuration<br/>
+        /// Default: 0.75
         /// </summary>
         public unsafe float jamEndTransitionDuration
         {
@@ -1997,7 +2015,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: minFiringTime
+        /// FloatProperty: minFiringTime<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float minFiringTime
         {
@@ -2015,7 +2034,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: BMBelowGun_ShaftFadeStartZ
+        /// FloatProperty: BMBelowGun_ShaftFadeStartZ<br/>
+        /// Default: 200
         /// </summary>
         public unsafe float BMBelowGun_ShaftFadeStartZ
         {
@@ -2024,7 +2044,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         }
 
         /// <summary>
-        /// FloatProperty: BMBelowGun_ShaftFadeEndZ
+        /// FloatProperty: BMBelowGun_ShaftFadeEndZ<br/>
+        /// Default: 300
         /// </summary>
         public unsafe float BMBelowGun_ShaftFadeEndZ
         {
@@ -2073,7 +2094,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactSound
+    /// ObjectProperty: ImpactSound<br/>
+    /// Default: Ww_WPN_BulletImpacts_Player.Play_BulletImpact_Player
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ImpactSound
     {
@@ -2463,7 +2485,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: CombatLockOnTime
+    /// FloatProperty: CombatLockOnTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CombatLockOnTime
     {
@@ -2472,7 +2495,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bSelfLightAllowed
+    /// BoolProperty: bSelfLightAllowed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSelfLightAllowed
     {
@@ -2724,7 +2748,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: bulletTrailBaseRange
+    /// FloatProperty: bulletTrailBaseRange<br/>
+    /// Default: 19500
     /// </summary>
     public unsafe float bulletTrailBaseRange
     {
@@ -2733,7 +2758,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: Settings
+    /// StructProperty: Settings<br/>
+    /// Default: (SearchType=eSGST_ConstantRotation,maxRotationRate_search=45,maxRotationRate_attack=180,timeTillMaxRotationRate_search=0.3,timeTillMaxRotationRate_attack=0.1,aimPauseTime=3,FOV=25,Range=2000,shootAngl...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSentryGunBase.FSentryGunSettings Settings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSentryGunBase.FSentryGunSettings>(Ptr + 1112);
@@ -2745,7 +2771,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1252);
 
     /// <summary>
-    /// FloatProperty: bodyPhysVelMin
+    /// FloatProperty: bodyPhysVelMin<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float bodyPhysVelMin
     {
@@ -2754,7 +2781,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: bodyPhysVelMax
+    /// FloatProperty: bodyPhysVelMax<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float bodyPhysVelMax
     {
@@ -2763,7 +2791,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: bodyImpulseMin
+    /// FloatProperty: bodyImpulseMin<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float bodyImpulseMin
     {
@@ -2772,7 +2801,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: bodyImpulseMax
+    /// FloatProperty: bodyImpulseMax<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float bodyImpulseMax
     {
@@ -3048,7 +3078,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: powerDownTransitionDuration
+    /// FloatProperty: powerDownTransitionDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float powerDownTransitionDuration
     {
@@ -3057,7 +3088,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: powerUpTransitionDuration
+    /// FloatProperty: powerUpTransitionDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float powerUpTransitionDuration
     {
@@ -3066,7 +3098,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: LightRangeMod
+    /// FloatProperty: LightRangeMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightRangeMod
     {
@@ -3093,7 +3126,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: RECReactionDuration
+    /// FloatProperty: RECReactionDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RECReactionDuration
     {

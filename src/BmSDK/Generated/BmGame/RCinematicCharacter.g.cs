@@ -109,7 +109,8 @@ public partial class RCinematicCharacter : BmSDK.BmGame.RCinematicActor, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: CharacterDefine
+    /// ObjectProperty: CharacterDefine<br/>
+    /// Default: MiscCharacterDefines.Debugging.PinkDefault
     /// </summary>
     public unsafe BmSDK.BmGame.RCharacterDefine CharacterDefine
     {
@@ -163,7 +164,8 @@ public partial class RCinematicCharacter : BmSDK.BmGame.RCinematicActor, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: RandSeed
+    /// IntProperty: RandSeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RandSeed
     {

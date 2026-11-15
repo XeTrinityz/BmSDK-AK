@@ -94,7 +94,8 @@ public partial class BlockingVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBlockCamera
+    /// BoolProperty: bBlockCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockCamera
     {

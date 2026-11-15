@@ -79,7 +79,8 @@ public partial class LandscapeHeightfieldCollisionComponent : BmSDK.Engine.Primi
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: CollisionHeightData
+    /// StructProperty: CollisionHeightData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CollisionHeightData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 540);
@@ -94,7 +95,8 @@ public partial class LandscapeHeightfieldCollisionComponent : BmSDK.Engine.Primi
     }
 
     /// <summary>
-    /// StructProperty: DominantLayerData
+    /// StructProperty: DominantLayerData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror DominantLayerData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 620);

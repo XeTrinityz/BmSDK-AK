@@ -93,7 +93,8 @@ public partial class RPlaceableCombatDroppedWeapon : BmSDK.Engine.Actor, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: SkelMesh
+    /// ComponentProperty: SkelMesh<br/>
+    /// Default: BmGame.Default__RPlaceableCombatDroppedWeapon.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkelMesh
     {
@@ -111,7 +112,8 @@ public partial class RPlaceableCombatDroppedWeapon : BmSDK.Engine.Actor, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bCanBePickedUpByThugs
+    /// BoolProperty: bCanBePickedUpByThugs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBePickedUpByThugs
     {

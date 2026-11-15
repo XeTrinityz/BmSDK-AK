@@ -109,7 +109,8 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: GrateGrappleOnTopMove
+    /// ObjectProperty: GrateGrappleOnTopMove<br/>
+    /// Default: Batman_Environment_Moves.HidePointGrate.Grapple_Through_Grate
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GrateGrappleOnTopMove
     {
@@ -118,7 +119,8 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: GrateGrappleToCrawlSpaceMove
+    /// ObjectProperty: GrateGrappleToCrawlSpaceMove<br/>
+    /// Default: Batman_Environment_Moves.HidePointGrate.Grapple_Through_Grate_To_Ceiling_Void
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GrateGrappleToCrawlSpaceMove
     {
@@ -136,7 +138,8 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RHidePoint_Grate.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {

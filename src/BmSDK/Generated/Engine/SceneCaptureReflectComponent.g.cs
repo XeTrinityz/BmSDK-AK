@@ -88,7 +88,8 @@ public partial class SceneCaptureReflectComponent : BmSDK.Engine.SceneCaptureCom
     }
 
     /// <summary>
-    /// FloatProperty: ScaleFOV
+    /// FloatProperty: ScaleFOV<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleFOV
     {
@@ -97,7 +98,8 @@ public partial class SceneCaptureReflectComponent : BmSDK.Engine.SceneCaptureCom
     }
 
     /// <summary>
-    /// FloatProperty: FarClip
+    /// FloatProperty: FarClip<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FarClip
     {
@@ -106,7 +108,8 @@ public partial class SceneCaptureReflectComponent : BmSDK.Engine.SceneCaptureCom
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyShowReflectionObjects
+    /// BoolProperty: bOnlyShowReflectionObjects<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyShowReflectionObjects
     {

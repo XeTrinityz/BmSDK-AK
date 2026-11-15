@@ -176,7 +176,8 @@ public partial class RVehicleBehaviour_PullOver : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: PullOverDuration
+    /// FloatProperty: PullOverDuration<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float PullOverDuration
     {
@@ -221,7 +222,8 @@ public partial class RVehicleBehaviour_PullOver : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: MaxBatmobileSpeed
+    /// FloatProperty: MaxBatmobileSpeed<br/>
+    /// Default: 2800
     /// </summary>
     public unsafe float MaxBatmobileSpeed
     {

@@ -94,7 +94,8 @@ public partial class RForensicsMovieTestActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: MoviePlayer
+    /// ComponentProperty: MoviePlayer<br/>
+    /// Default: BmGame.Default__RForensicsMovieTestActor.MoviePlayer0
     /// </summary>
     public unsafe BmSDK.BmGame.RForensicsMoviePlayer MoviePlayer
     {
@@ -103,7 +104,8 @@ public partial class RForensicsMovieTestActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: TVMeshComponent
+    /// ComponentProperty: TVMeshComponent<br/>
+    /// Default: BmGame.Default__RForensicsMovieTestActor.TVMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent TVMeshComponent
     {

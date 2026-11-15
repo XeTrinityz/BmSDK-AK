@@ -1126,7 +1126,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     public InlineArray<float> BetweenShotTime => new(3, Ptr + 764, 4, this);
 
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BetweenShotTime_0
     {
@@ -1134,7 +1135,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 764); }
     }
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 1.25
     /// </summary>
     public unsafe float BetweenShotTime_1
     {
@@ -1142,7 +1144,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 768); }
     }
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float BetweenShotTime_2
     {
@@ -1295,7 +1298,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bCanFailPickupIfBatmanClose
+    /// BoolProperty: bCanFailPickupIfBatmanClose<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanFailPickupIfBatmanClose
     {
@@ -1322,13 +1326,15 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// StructProperty: ReloadID
+    /// StructProperty: ReloadID<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId ReloadID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 796);
 
     /// <summary>
-    /// FloatProperty: RetreatDist
+    /// FloatProperty: RetreatDist<br/>
+    /// Default: 650
     /// </summary>
     public unsafe float RetreatDist
     {
@@ -1379,7 +1385,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SecondsBeforeDeactivateMusic
+    /// FloatProperty: SecondsBeforeDeactivateMusic<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SecondsBeforeDeactivateMusic
     {
@@ -1412,7 +1419,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SniperFOVOverride
+    /// FloatProperty: SniperFOVOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SniperFOVOverride
     {
@@ -1421,7 +1429,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SniperVertMultiOverride
+    /// FloatProperty: SniperVertMultiOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SniperVertMultiOverride
     {

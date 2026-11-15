@@ -124,7 +124,8 @@ public partial class RBMWeaponBatmanCarryJokerCop : BmSDK.BmGame.RBMWeapon, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: CarryAnimset
+    /// ObjectProperty: CarryAnimset<br/>
+    /// Default: Anim_Batman_Carry_Jokers.Code.BM_Carring_JokerCop
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet CarryAnimset
     {

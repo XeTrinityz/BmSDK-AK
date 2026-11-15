@@ -375,7 +375,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ObjectProperty: SmokePS
+    /// ObjectProperty: SmokePS<br/>
+    /// Default: VFX_Smoke.fx_PowerboxDefuse2_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SmokePS
     {
@@ -393,7 +394,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ObjectProperty: TurnedOffMaterial1
+    /// ObjectProperty: TurnedOffMaterial1<br/>
+    /// Default: OBJ_Computer.CPU_Machine.OBJ_Computer_CPU_Machine_OFF_MAT
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface TurnedOffMaterial1
     {
@@ -411,7 +413,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ObjectProperty: TurnedOffMaterial2
+    /// ObjectProperty: TurnedOffMaterial2<br/>
+    /// Default: OBJ_Computer.Laptop.OBJ_POWERGENERATOR_Others04_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface TurnedOffMaterial2
     {
@@ -447,7 +450,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ObjectProperty: HumSound
+    /// ObjectProperty: HumSound<br/>
+    /// Default: Ww_OBJ_JunctionBox.Play_JunctionBox_Hum01
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent HumSound
     {
@@ -465,7 +469,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ObjectProperty: SmashSound
+    /// ObjectProperty: SmashSound<br/>
+    /// Default: Ww_OBJ_JunctionBox.Play_JunctionBox_BoxSmash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SmashSound
     {
@@ -594,7 +599,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RDisruptableControlBox.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -603,7 +609,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenMesh1
+    /// ComponentProperty: BrokenMesh1<br/>
+    /// Default: BmScript.Default__RDisruptableControlBox.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BrokenMesh1
     {
@@ -612,7 +619,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// ComponentProperty: SmokeFX
+    /// ComponentProperty: SmokeFX<br/>
+    /// Default: BmScript.Default__RDisruptableControlBox.Smoke
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SmokeFX
     {
@@ -657,7 +665,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// FloatProperty: KismetEventDelay
+    /// FloatProperty: KismetEventDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float KismetEventDelay
     {
@@ -666,7 +675,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// StrProperty: DisabledInvestigateText
+    /// StrProperty: DisabledInvestigateText<br/>
+    /// Default: "Frontend.Detective.DisruptDISABLEBox"
     /// </summary>
     public unsafe BmSDK.FString DisabledInvestigateText
     {
@@ -675,7 +685,8 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     }
 
     /// <summary>
-    /// IntProperty: ScreenIndex
+    /// IntProperty: ScreenIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ScreenIndex
     {

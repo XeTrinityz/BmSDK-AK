@@ -112,7 +112,8 @@ public partial class RBatmobileTunnelVolume : BmSDK.BmGame.RBatmobileForceVolume
     }
 
     /// <summary>
-    /// FloatProperty: LocalGravity
+    /// FloatProperty: LocalGravity<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float LocalGravity
     {

@@ -121,7 +121,8 @@ public partial class RGFxWorldMovieActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: MovieComponent
+    /// ComponentProperty: MovieComponent<br/>
+    /// Default: BmGame.Default__RGFxWorldMovieActor.MovieComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RGFxWorldMovieComponent MovieComponent
     {
@@ -130,7 +131,8 @@ public partial class RGFxWorldMovieActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: TheClass
+    /// ClassProperty: TheClass<br/>
+    /// Default: BmGame.RGFxMovieWorldBase
     /// </summary>
     public unsafe BmSDK.Class TheClass
     {
@@ -148,7 +150,8 @@ public partial class RGFxWorldMovieActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: TimingMode
+    /// ByteProperty: TimingMode<br/>
+    /// Default: TM_Real
     /// </summary>
     public unsafe BmSDK.GFxUI.GFxMoviePlayer.GFxTimingMode TimingMode
     {
@@ -157,7 +160,8 @@ public partial class RGFxWorldMovieActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bWorldRendered
+    /// BoolProperty: bWorldRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWorldRendered
     {
@@ -166,7 +170,8 @@ public partial class RGFxWorldMovieActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDepthTested
+    /// BoolProperty: bDepthTested<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDepthTested
     {

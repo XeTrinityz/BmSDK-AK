@@ -154,7 +154,8 @@ public partial class MaterialExpressionAlphaFader : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: DistanceFade_End
+    /// FloatProperty: DistanceFade_End<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float DistanceFade_End
     {
@@ -163,7 +164,8 @@ public partial class MaterialExpressionAlphaFader : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: AngularFade_Power
+    /// FloatProperty: AngularFade_Power<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularFade_Power
     {
@@ -172,7 +174,8 @@ public partial class MaterialExpressionAlphaFader : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: BiasScale
+    /// FloatProperty: BiasScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BiasScale
     {

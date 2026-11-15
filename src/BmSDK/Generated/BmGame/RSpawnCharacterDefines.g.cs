@@ -88,7 +88,8 @@ public partial class RSpawnCharacterDefines : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SpacingMultiplier
+    /// FloatProperty: SpacingMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpacingMultiplier
     {
@@ -115,7 +116,8 @@ public partial class RSpawnCharacterDefines : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LableRange
+    /// FloatProperty: LableRange<br/>
+    /// Default: 1e+07
     /// </summary>
     public unsafe float LableRange
     {

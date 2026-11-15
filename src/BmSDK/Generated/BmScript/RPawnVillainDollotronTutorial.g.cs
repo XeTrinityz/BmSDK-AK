@@ -308,7 +308,8 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     }
 
     /// <summary>
-    /// BoolProperty: bNeverDied
+    /// BoolProperty: bNeverDied<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeverDied
     {
@@ -389,7 +390,8 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     }
 
     /// <summary>
-    /// FloatProperty: CurrZoom
+    /// FloatProperty: CurrZoom<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float CurrZoom
     {
@@ -398,7 +400,8 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     }
 
     /// <summary>
-    /// FloatProperty: TurnCamTime
+    /// FloatProperty: TurnCamTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TurnCamTime
     {

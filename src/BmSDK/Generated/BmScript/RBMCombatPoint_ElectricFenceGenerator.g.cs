@@ -117,7 +117,8 @@ public partial class RBMCombatPoint_ElectricFenceGenerator : BmSDK.BmGame.RBMCom
     }
 
     /// <summary>
-    /// ComponentProperty: GeneratorMesh
+    /// ComponentProperty: GeneratorMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFenceGenerator.NewGeneratorMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent GeneratorMesh
     {
@@ -126,7 +127,8 @@ public partial class RBMCombatPoint_ElectricFenceGenerator : BmSDK.BmGame.RBMCom
     }
 
     /// <summary>
-    /// ComponentProperty: DamagedGeneratorMesh
+    /// ComponentProperty: DamagedGeneratorMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFenceGenerator.NewDamagedGeneratorMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent DamagedGeneratorMesh
     {

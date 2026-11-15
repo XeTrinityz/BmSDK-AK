@@ -243,7 +243,8 @@ public partial class MBatgirlBalloons : BmSDK.BmGame.RPickupBase, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ObjectProperty: BaloonPopSound
+    /// ObjectProperty: BaloonPopSound<br/>
+    /// Default: Ww_OBJ_Balloons.Play_BalloonPop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BaloonPopSound
     {
@@ -252,7 +253,8 @@ public partial class MBatgirlBalloons : BmSDK.BmGame.RPickupBase, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ObjectProperty: BaloonPopVFX
+    /// ObjectProperty: BaloonPopVFX<br/>
+    /// Default: VFX_Generic.Particles.Balloon_pop
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BaloonPopVFX
     {
@@ -261,7 +263,8 @@ public partial class MBatgirlBalloons : BmSDK.BmGame.RPickupBase, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ObjectProperty: XrayActive_MIC
+    /// ObjectProperty: XrayActive_MIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_Interact_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayActive_MIC
     {

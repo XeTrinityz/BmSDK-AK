@@ -106,7 +106,8 @@ public partial class MorphNodeWeightByBoneRotation : BmSDK.Engine.MorphNodeWeigh
     }
 
     /// <summary>
-    /// ByteProperty: BoneAxis
+    /// ByteProperty: BoneAxis<br/>
+    /// Default: AXIS_Y
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis BoneAxis
     {
@@ -133,7 +134,8 @@ public partial class MorphNodeWeightByBoneRotation : BmSDK.Engine.MorphNodeWeigh
     }
 
     /// <summary>
-    /// ArrayProperty: WeightArray
+    /// ArrayProperty: WeightArray<br/>
+    /// Default: ((),(Angle=90,TargetWeight=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MorphNodeWeightByBoneAngle.FBoneAngleMorph> WeightArray
     {

@@ -385,7 +385,8 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FPlayerEdgeColl>(Ptr + 1140);
 
     /// <summary>
-    /// StructProperty: EnvironmentEdgeTypes
+    /// StructProperty: EnvironmentEdgeTypes<br/>
+    /// Default: (JumpGap512=true,Edge=true,JumpGap256=true,JumpGap384=true,GapNoHeadRoom=true,ShimmyLedge=true,DangleLedge=true,JumpGap512NoShimmy=true,EdgeNoShimmy=true,JumpGap256NoShimmy=true,JumpGap384NoShimmy=tru...
     /// </summary>
     public unsafe ref BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer EnvironmentEdgeTypes
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer>(Ptr + 1160);

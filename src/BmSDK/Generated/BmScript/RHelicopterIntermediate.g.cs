@@ -1838,7 +1838,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// ObjectProperty: SpottedEvent
+    /// ObjectProperty: SpottedEvent<br/>
+    /// Default: Ww_VEH_Tank_Small.Play_PredatorDrone_Spotted
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SpottedEvent
     {
@@ -1892,7 +1893,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmScript.Default__RHelicopterIntermediate.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {
@@ -1910,7 +1912,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// IntProperty: CurrentHighPriorityTarget
+    /// IntProperty: CurrentHighPriorityTarget<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentHighPriorityTarget
     {
@@ -1928,7 +1931,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// BoolProperty: bWatchBatmanFight
+    /// BoolProperty: bWatchBatmanFight<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWatchBatmanFight
     {
@@ -1937,7 +1941,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// BoolProperty: bAttackBatman
+    /// BoolProperty: bAttackBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAttackBatman
     {
@@ -1955,7 +1960,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// BoolProperty: bAllowGrappleTo
+    /// BoolProperty: bAllowGrappleTo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowGrappleTo
     {
@@ -2198,7 +2204,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: GunShotTime
+    /// FloatProperty: GunShotTime<br/>
+    /// Default: 0.085
     /// </summary>
     public unsafe float GunShotTime
     {
@@ -2207,7 +2214,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketShotTime
+    /// FloatProperty: RocketShotTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float RocketShotTime
     {
@@ -2216,7 +2224,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketShotTimeDoubleShot
+    /// FloatProperty: RocketShotTimeDoubleShot<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float RocketShotTimeDoubleShot
     {
@@ -2225,7 +2234,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// StrProperty: InvestigateTitle
+    /// StrProperty: InvestigateTitle<br/>
+    /// Default: "FRONTEND.Detective.ChopperTitle"
     /// </summary>
     public unsafe BmSDK.FString InvestigateTitle
     {
@@ -2234,7 +2244,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// StrProperty: InvestigateDetail
+    /// StrProperty: InvestigateDetail<br/>
+    /// Default: "FRONTEND.Detective.Chopper"
     /// </summary>
     public unsafe BmSDK.FString InvestigateDetail
     {
@@ -2270,7 +2281,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: GunDamage
+    /// FloatProperty: GunDamage<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float GunDamage
     {
@@ -2279,7 +2291,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketDamage
+    /// FloatProperty: RocketDamage<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RocketDamage
     {
@@ -2288,7 +2301,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketDamageRadius
+    /// FloatProperty: RocketDamageRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float RocketDamageRadius
     {
@@ -2315,7 +2329,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: WindFrequency
+    /// FloatProperty: WindFrequency<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float WindFrequency
     {
@@ -2324,7 +2339,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: WindStrength
+    /// FloatProperty: WindStrength<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float WindStrength
     {
@@ -2402,7 +2418,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: DialogueTimeStamp
+    /// FloatProperty: DialogueTimeStamp<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DialogueTimeStamp
     {
@@ -2411,7 +2428,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: MinPeriodBetweenDialogue
+    /// FloatProperty: MinPeriodBetweenDialogue<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinPeriodBetweenDialogue
     {
@@ -2420,7 +2438,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// ByteProperty: MostRecentDialogueEnum
+    /// ByteProperty: MostRecentDialogueEnum<br/>
+    /// Default: HD_MAX
     /// </summary>
     public unsafe BmSDK.BmScript.RSeqEvent_HelicopterDialogueTrigger.HeliDialogue MostRecentDialogueEnum
     {
@@ -2474,7 +2493,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: ChaingunRepairPeriod
+    /// FloatProperty: ChaingunRepairPeriod<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ChaingunRepairPeriod
     {
@@ -2492,7 +2512,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// IntProperty: UniqueIndex
+    /// IntProperty: UniqueIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UniqueIndex
     {
@@ -2519,7 +2540,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: DistSquaredForHighDetail
+    /// FloatProperty: DistSquaredForHighDetail<br/>
+    /// Default: 2.5e+07
     /// </summary>
     public unsafe float DistSquaredForHighDetail
     {
@@ -2546,7 +2568,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: ChainGunDeployPeriod
+    /// FloatProperty: ChainGunDeployPeriod<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ChainGunDeployPeriod
     {
@@ -2555,7 +2578,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketDeployPeriod
+    /// FloatProperty: RocketDeployPeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RocketDeployPeriod
     {
@@ -2564,7 +2588,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: RocketLockonTime
+    /// FloatProperty: RocketLockonTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RocketLockonTime
     {
@@ -2582,7 +2607,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// IntProperty: MaterialEndIndex
+    /// IntProperty: MaterialEndIndex<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MaterialEndIndex
     {
@@ -2591,7 +2617,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// IntProperty: MaterialExclude
+    /// IntProperty: MaterialExclude<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaterialExclude
     {
@@ -2600,7 +2627,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// IntProperty: MaterialExclude2
+    /// IntProperty: MaterialExclude2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MaterialExclude2
     {
@@ -2654,7 +2682,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: KnockbackThreatenRange
+    /// FloatProperty: KnockbackThreatenRange<br/>
+    /// Default: 1600
     /// </summary>
     public unsafe float KnockbackThreatenRange
     {
@@ -2663,7 +2692,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: KnockbackShootRange
+    /// FloatProperty: KnockbackShootRange<br/>
+    /// Default: 1400
     /// </summary>
     public unsafe float KnockbackShootRange
     {
@@ -2672,7 +2702,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: KnockbackGrappleRange
+    /// FloatProperty: KnockbackGrappleRange<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float KnockbackGrappleRange
     {
@@ -2681,7 +2712,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// FloatProperty: KnockbackSpread
+    /// FloatProperty: KnockbackSpread<br/>
+    /// Default: 48
     /// </summary>
     public unsafe float KnockbackSpread
     {
@@ -2696,7 +2728,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2948);
 
     /// <summary>
-    /// IntProperty: KnockbackInitialPitch
+    /// IntProperty: KnockbackInitialPitch<br/>
+    /// Default: -3000
     /// </summary>
     public unsafe int KnockbackInitialPitch
     {
@@ -2711,7 +2744,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2964);
 
     /// <summary>
-    /// FloatProperty: maxGuardVelocity
+    /// FloatProperty: maxGuardVelocity<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float maxGuardVelocity
     {
@@ -2738,7 +2772,8 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
     }
 
     /// <summary>
-    /// StructProperty: ExplosionScreenShake
+    /// StructProperty: ExplosionScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ExplosionScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2988);

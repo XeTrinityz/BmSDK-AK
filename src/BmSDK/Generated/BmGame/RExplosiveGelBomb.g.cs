@@ -266,7 +266,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RExplosiveGelBomb.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -365,7 +366,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: DetonatorInteractions
+    /// ComponentProperty: DetonatorInteractions<br/>
+    /// Default: BmGame.Default__RExplosiveGelBomb.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent DetonatorInteractions
     {
@@ -374,7 +376,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RExplosiveGelBomb.Trail0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {
@@ -383,7 +386,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimedExplosiveDelay
+    /// FloatProperty: TimedExplosiveDelay<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float TimedExplosiveDelay
     {
@@ -392,7 +396,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float ExplosionRadius
     {
@@ -401,7 +406,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SuperComboExplosionRadius
+    /// FloatProperty: SuperComboExplosionRadius<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float SuperComboExplosionRadius
     {
@@ -410,7 +416,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -473,7 +480,8 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: GelDamage
+    /// IntProperty: GelDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int GelDamage
     {

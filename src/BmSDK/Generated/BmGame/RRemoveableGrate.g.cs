@@ -871,7 +871,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// BoolProperty: bFallOffAfterAnim
+    /// BoolProperty: bFallOffAfterAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFallOffAfterAnim
     {
@@ -934,7 +935,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// BoolProperty: bCreateTunnelFunnel
+    /// BoolProperty: bCreateTunnelFunnel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCreateTunnelFunnel
     {
@@ -1051,7 +1053,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: AnimatedBoneName
+    /// NameProperty: AnimatedBoneName<br/>
+    /// Default: Grate_Wall_Root
     /// </summary>
     public unsafe BmSDK.FName AnimatedBoneName
     {
@@ -1147,7 +1150,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// ObjectProperty: ConstraintSetup
+    /// ObjectProperty: ConstraintSetup<br/>
+    /// Default: BmGame.Default__RRemoveableGrate.MyConstraintSetup
     /// </summary>
     public unsafe BmSDK.Engine.RB_ConstraintSetup ConstraintSetup
     {
@@ -1156,7 +1160,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// ObjectProperty: ConstraintInstance
+    /// ObjectProperty: ConstraintInstance<br/>
+    /// Default: BmGame.Default__RRemoveableGrate.MyConstraintInstance
     /// </summary>
     public unsafe BmSDK.Engine.RB_ConstraintInstance ConstraintInstance
     {
@@ -1221,7 +1226,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmGame.Default__RRemoveableGrate.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -1248,7 +1254,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// FloatProperty: HarpoonMod
+    /// FloatProperty: HarpoonMod<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float HarpoonMod
     {
@@ -1271,7 +1278,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     public InlineArray<BmSDK.FName> BoltSockets => new(4, Ptr + 912, 8, this);
 
     /// <summary>
-    /// NameProperty: BoltSockets
+    /// NameProperty: BoltSockets<br/>
+    /// Default: TopLeftBolt
     /// </summary>
     public unsafe BmSDK.FName BoltSockets_0
     {
@@ -1279,7 +1287,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 912); }
     }
     /// <summary>
-    /// NameProperty: BoltSockets
+    /// NameProperty: BoltSockets<br/>
+    /// Default: TopRightBolt
     /// </summary>
     public unsafe BmSDK.FName BoltSockets_1
     {
@@ -1287,7 +1296,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 920); }
     }
     /// <summary>
-    /// NameProperty: BoltSockets
+    /// NameProperty: BoltSockets<br/>
+    /// Default: BottomLeftBolt
     /// </summary>
     public unsafe BmSDK.FName BoltSockets_2
     {
@@ -1295,7 +1305,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 928); }
     }
     /// <summary>
-    /// NameProperty: BoltSockets
+    /// NameProperty: BoltSockets<br/>
+    /// Default: BottomRightBolt
     /// </summary>
     public unsafe BmSDK.FName BoltSockets_3
     {
@@ -1313,7 +1324,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// FloatProperty: GrateRemoveLoudImpulseMultiplier
+    /// FloatProperty: GrateRemoveLoudImpulseMultiplier<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float GrateRemoveLoudImpulseMultiplier
     {
@@ -1322,13 +1334,15 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// StructProperty: GrateRemoveLoudImpulsePosition
+    /// StructProperty: GrateRemoveLoudImpulsePosition<br/>
+    /// Default: (X=10,Z=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GrateRemoveLoudImpulsePosition
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 952);
 
     /// <summary>
-    /// FloatProperty: GrateRemoveSilentImpulseMultiplier
+    /// FloatProperty: GrateRemoveSilentImpulseMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float GrateRemoveSilentImpulseMultiplier
     {
@@ -1343,19 +1357,22 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 968);
 
     /// <summary>
-    /// StructProperty: ConstraintLocalSpaceAttachPoint
+    /// StructProperty: ConstraintLocalSpaceAttachPoint<br/>
+    /// Default: (X=-69,Z=-56)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ConstraintLocalSpaceAttachPoint
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 980);
 
     /// <summary>
-    /// StructProperty: ConstraintLocalSpaceSwingAxis
+    /// StructProperty: ConstraintLocalSpaceSwingAxis<br/>
+    /// Default: (Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ConstraintLocalSpaceSwingAxis
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 992);
 
     /// <summary>
-    /// StructProperty: ConstraintLocalSpaceFixedAxis
+    /// StructProperty: ConstraintLocalSpaceFixedAxis<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ConstraintLocalSpaceFixedAxis
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1004);

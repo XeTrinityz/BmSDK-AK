@@ -228,7 +228,8 @@ public partial class LensFlareSource : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: LensFlareComp
+    /// ComponentProperty: LensFlareComp<br/>
+    /// Default: Engine.Default__LensFlareSource.LensFlareComponent0
     /// </summary>
     public unsafe BmSDK.Engine.LensFlareComponent LensFlareComp
     {

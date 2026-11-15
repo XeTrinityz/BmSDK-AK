@@ -257,7 +257,8 @@ public partial class RSeqAct_HeavyTankScanning : BmSDK.BmGame.RSeqAct_HeavyTankS
     }
 
     /// <summary>
-    /// FloatProperty: LastTankAngleSent
+    /// FloatProperty: LastTankAngleSent<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastTankAngleSent
     {
@@ -266,7 +267,8 @@ public partial class RSeqAct_HeavyTankScanning : BmSDK.BmGame.RSeqAct_HeavyTankS
     }
 
     /// <summary>
-    /// FloatProperty: LastTurretAngleSent
+    /// FloatProperty: LastTurretAngleSent<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastTurretAngleSent
     {
@@ -275,7 +277,8 @@ public partial class RSeqAct_HeavyTankScanning : BmSDK.BmGame.RSeqAct_HeavyTankS
     }
 
     /// <summary>
-    /// FloatProperty: AngleRangeDegrees
+    /// FloatProperty: AngleRangeDegrees<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float AngleRangeDegrees
     {
@@ -284,7 +287,8 @@ public partial class RSeqAct_HeavyTankScanning : BmSDK.BmGame.RSeqAct_HeavyTankS
     }
 
     /// <summary>
-    /// FloatProperty: AngleRangeForBack
+    /// FloatProperty: AngleRangeForBack<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float AngleRangeForBack
     {
@@ -293,7 +297,8 @@ public partial class RSeqAct_HeavyTankScanning : BmSDK.BmGame.RSeqAct_HeavyTankS
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistanceForRecommendZoom
+    /// FloatProperty: MaxDistanceForRecommendZoom<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float MaxDistanceForRecommendZoom
     {

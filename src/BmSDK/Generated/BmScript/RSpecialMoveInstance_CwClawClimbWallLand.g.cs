@@ -450,7 +450,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 992);
 
     /// <summary>
-    /// FloatProperty: MaxWallIdleTime
+    /// FloatProperty: MaxWallIdleTime<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float MaxWallIdleTime
     {
@@ -582,7 +583,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: AutoPounceDelay
+    /// FloatProperty: AutoPounceDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AutoPounceDelay
     {
@@ -591,7 +593,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: AutoPounceExtraRandomDelay
+    /// FloatProperty: AutoPounceExtraRandomDelay<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float AutoPounceExtraRandomDelay
     {
@@ -600,7 +603,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: WallJumpOffSpeed
+    /// FloatProperty: WallJumpOffSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float WallJumpOffSpeed
     {
@@ -609,7 +613,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: WallJumpOffAngle
+    /// FloatProperty: WallJumpOffAngle<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float WallJumpOffAngle
     {
@@ -681,7 +686,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: TanUp
+    /// FloatProperty: TanUp<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float TanUp
     {
@@ -690,7 +696,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: TanSteepLR
+    /// FloatProperty: TanSteepLR<br/>
+    /// Default: 1.19
     /// </summary>
     public unsafe float TanSteepLR
     {
@@ -699,7 +706,8 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: ButtonMashPenaltyTime
+    /// FloatProperty: ButtonMashPenaltyTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ButtonMashPenaltyTime
     {

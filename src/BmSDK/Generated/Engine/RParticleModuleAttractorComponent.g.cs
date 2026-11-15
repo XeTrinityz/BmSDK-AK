@@ -85,7 +85,8 @@ public partial class RParticleModuleAttractorComponent : BmSDK.Engine.ParticleMo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FRChannel8>(Ptr + 96);
 
     /// <summary>
-    /// BoolProperty: PlayerCharacter
+    /// BoolProperty: PlayerCharacter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PlayerCharacter
     {
@@ -94,7 +95,8 @@ public partial class RParticleModuleAttractorComponent : BmSDK.Engine.ParticleMo
     }
 
     /// <summary>
-    /// StructProperty: StrengthMultiplier
+    /// StructProperty: StrengthMultiplier<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__RParticleModuleAttractorComponent.StrengthMultiplierDist)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StrengthMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 104);

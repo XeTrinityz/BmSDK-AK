@@ -703,7 +703,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// StructProperty: OctreeId
+    /// StructProperty: OctreeId<br/>
+    /// Default: (ElementIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FOctreeElementId OctreeId
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FOctreeElementId>(Ptr + 1016);
@@ -763,7 +764,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: ExpansionRadius
+    /// FloatProperty: ExpansionRadius<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float ExpansionRadius
     {
@@ -772,7 +774,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: MaxExpansionRadius
+    /// FloatProperty: MaxExpansionRadius<br/>
+    /// Default: 7168
     /// </summary>
     public unsafe float MaxExpansionRadius
     {
@@ -835,7 +838,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bMergePolysAfterGeneration
+    /// BoolProperty: bMergePolysAfterGeneration<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMergePolysAfterGeneration
     {
@@ -853,7 +857,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bExcludeSameSidePolysWhenBuildingObstacleMesh
+    /// BoolProperty: bExcludeSameSidePolysWhenBuildingObstacleMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExcludeSameSidePolysWhenBuildingObstacleMesh
     {
@@ -871,7 +876,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bSplitPolys
+    /// BoolProperty: bSplitPolys<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSplitPolys
     {
@@ -880,7 +886,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bSplitEdges
+    /// BoolProperty: bSplitEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSplitEdges
     {
@@ -898,7 +905,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bUseRecast
+    /// BoolProperty: bUseRecast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseRecast
     {
@@ -934,7 +942,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRenderInShowPaths
+    /// BoolProperty: bRenderInShowPaths<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRenderInShowPaths
     {
@@ -943,7 +952,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bDrawWalkableSurface
+    /// BoolProperty: bDrawWalkableSurface<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawWalkableSurface
     {
@@ -952,7 +962,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bDrawObstacleSurface
+    /// BoolProperty: bDrawObstacleSurface<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawObstacleSurface
     {
@@ -988,7 +999,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_RespectAICanStepUpOn
+    /// BoolProperty: bRecast_RespectAICanStepUpOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_RespectAICanStepUpOn
     {
@@ -997,7 +1009,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_MergeFlags
+    /// BoolProperty: bRecast_MergeFlags<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_MergeFlags
     {
@@ -1006,7 +1019,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_ApplyHeightSpanFilter
+    /// BoolProperty: bRecast_ApplyHeightSpanFilter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_ApplyHeightSpanFilter
     {
@@ -1015,7 +1029,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_FilterLowHangingWalkableObstacles
+    /// BoolProperty: bRecast_FilterLowHangingWalkableObstacles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_FilterLowHangingWalkableObstacles
     {
@@ -1024,7 +1039,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_FilterLedgeSpans
+    /// BoolProperty: bRecast_FilterLedgeSpans<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_FilterLedgeSpans
     {
@@ -1033,7 +1049,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRecast_FilterWalkableLowHeightSpans
+    /// BoolProperty: bRecast_FilterWalkableLowHeightSpans<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecast_FilterWalkableLowHeightSpans
     {
@@ -1051,7 +1068,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// BoolProperty: bRebuildThisPylon
+    /// BoolProperty: bRebuildThisPylon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRebuildThisPylon
     {
@@ -1192,7 +1210,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: ExcludePolyMinWidth
+    /// FloatProperty: ExcludePolyMinWidth<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float ExcludePolyMinWidth
     {
@@ -1201,7 +1220,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: ObstacleMeshEdgeDelta
+    /// FloatProperty: ObstacleMeshEdgeDelta<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ObstacleMeshEdgeDelta
     {
@@ -1210,7 +1230,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: ObstacleMeshEdgeDeltaZ
+    /// FloatProperty: ObstacleMeshEdgeDeltaZ<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float ObstacleMeshEdgeDeltaZ
     {
@@ -1219,7 +1240,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: MaxMeshHeightDeviationAllowed
+    /// FloatProperty: MaxMeshHeightDeviationAllowed<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxMeshHeightDeviationAllowed
     {
@@ -1228,7 +1250,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: CheckAmountUp
+    /// FloatProperty: CheckAmountUp<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CheckAmountUp
     {
@@ -1237,7 +1260,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: CheckAmountDown
+    /// FloatProperty: CheckAmountDown<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CheckAmountDown
     {
@@ -1246,7 +1270,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: MinEdgeLengthToSplit
+    /// FloatProperty: MinEdgeLengthToSplit<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinEdgeLengthToSplit
     {
@@ -1255,7 +1280,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// FloatProperty: MinPolyWidthToSplit
+    /// FloatProperty: MinPolyWidthToSplit<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MinPolyWidthToSplit
     {
@@ -1291,7 +1317,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// IntProperty: DebugEdgeCount
+    /// IntProperty: DebugEdgeCount<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DebugEdgeCount
     {
@@ -1309,7 +1336,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// IntProperty: PylonCellSize
+    /// IntProperty: PylonCellSize<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int PylonCellSize
     {
@@ -1318,7 +1346,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// IntProperty: PylonCellHeight
+    /// IntProperty: PylonCellHeight<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int PylonCellHeight
     {
@@ -1357,7 +1386,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1296);
 
     /// <summary>
-    /// FloatProperty: MaxGroundCheckSize
+    /// FloatProperty: MaxGroundCheckSize<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxGroundCheckSize
     {
@@ -1366,7 +1396,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
     }
 
     /// <summary>
-    /// IntProperty: MaxSubdivisions
+    /// IntProperty: MaxSubdivisions<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MaxSubdivisions
     {

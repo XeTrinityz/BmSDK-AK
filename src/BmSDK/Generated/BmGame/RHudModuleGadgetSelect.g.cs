@@ -451,7 +451,8 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: HighlightGadget
+    /// IntProperty: HighlightGadget<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HighlightGadget
     {

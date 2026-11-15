@@ -74,7 +74,8 @@ public partial class ActorFactoryRigidBody : BmSDK.Engine.ActorFactoryDynamicSM,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bStartAwake
+    /// BoolProperty: bStartAwake<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStartAwake
     {
@@ -83,7 +84,8 @@ public partial class ActorFactoryRigidBody : BmSDK.Engine.ActorFactoryDynamicSM,
     }
 
     /// <summary>
-    /// BoolProperty: bDamageAppliesImpulse
+    /// BoolProperty: bDamageAppliesImpulse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDamageAppliesImpulse
     {
@@ -134,7 +136,8 @@ public partial class ActorFactoryRigidBody : BmSDK.Engine.ActorFactoryDynamicSM,
     }
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_GameplayPhysics
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -143,7 +146,8 @@ public partial class ActorFactoryRigidBody : BmSDK.Engine.ActorFactoryDynamicSM,
     }
 
     /// <summary>
-    /// FloatProperty: StayUprightTorqueFactor
+    /// FloatProperty: StayUprightTorqueFactor<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float StayUprightTorqueFactor
     {
@@ -152,7 +156,8 @@ public partial class ActorFactoryRigidBody : BmSDK.Engine.ActorFactoryDynamicSM,
     }
 
     /// <summary>
-    /// FloatProperty: StayUprightMaxTorque
+    /// FloatProperty: StayUprightMaxTorque<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float StayUprightMaxTorque
     {

@@ -452,7 +452,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCratesAreSafeOutputHasFired
+    /// BoolProperty: bCratesAreSafeOutputHasFired<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCratesAreSafeOutputHasFired
     {
@@ -488,7 +489,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: fTiltIsSafeForCratesThreshold
+    /// FloatProperty: fTiltIsSafeForCratesThreshold<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fTiltIsSafeForCratesThreshold
     {
@@ -497,7 +499,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// ByteProperty: BlimpRenderingDPG
+    /// ByteProperty: BlimpRenderingDPG<br/>
+    /// Default: SDPG_RockBlimp1
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup BlimpRenderingDPG
     {
@@ -524,7 +527,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSeqAct_AirshipBobbingBase.FAxisBobSettings>(Ptr + 548);
 
     /// <summary>
-    /// FloatProperty: TiltAccel
+    /// FloatProperty: TiltAccel<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TiltAccel
     {
@@ -533,7 +537,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TiltMaxSpeed
+    /// FloatProperty: TiltMaxSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float TiltMaxSpeed
     {
@@ -542,7 +547,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TiltExponentialDamping
+    /// FloatProperty: TiltExponentialDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TiltExponentialDamping
     {
@@ -551,7 +557,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CameraTiltProp
+    /// FloatProperty: CameraTiltProp<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CameraTiltProp
     {
@@ -560,7 +567,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxManualTilt
+    /// FloatProperty: MaxManualTilt<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxManualTilt
     {

@@ -116,7 +116,8 @@ public partial class RSeqAct_AimPhysicsVelocity : BmSDK.BmGame.RSeqAct_SetPhysic
     }
 
     /// <summary>
-    /// FloatProperty: Speed
+    /// FloatProperty: Speed<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float Speed
     {
@@ -125,7 +126,8 @@ public partial class RSeqAct_AimPhysicsVelocity : BmSDK.BmGame.RSeqAct_SetPhysic
     }
 
     /// <summary>
-    /// FloatProperty: RandomOffset
+    /// FloatProperty: RandomOffset<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float RandomOffset
     {

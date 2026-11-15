@@ -226,7 +226,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// ObjectProperty: myBank
+    /// ObjectProperty: myBank<br/>
+    /// Default: Ww_CHR_BatmanGauntlet.CHR_BatmanGauntlet
     /// </summary>
     public unsafe BmSDK.Engine.AkBank myBank
     {
@@ -253,7 +254,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// IntProperty: CurrentlySelectedUpgrade
+    /// IntProperty: CurrentlySelectedUpgrade<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentlySelectedUpgrade
     {
@@ -262,7 +264,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// IntProperty: ControllerSelection
+    /// IntProperty: ControllerSelection<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ControllerSelection
     {
@@ -289,7 +292,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// IntProperty: LowestUpgradeAvalaible
+    /// IntProperty: LowestUpgradeAvalaible<br/>
+    /// Default: 999
     /// </summary>
     public unsafe int LowestUpgradeAvalaible
     {
@@ -316,7 +320,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// BoolProperty: confirmButtonUp
+    /// BoolProperty: confirmButtonUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool confirmButtonUp
     {
@@ -352,7 +357,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeLines
+    /// ArrayProperty: UpgradeLines<br/>
+    /// Default: (main_bmob_drone_virus_desc_alfred.Lines.Main_Bmob_Drone_Virus_Desc_Alfred_01,main_bmob_emp_desc_alfred.Lines.Main_Bmob_Emp_Desc_Alfred_01,main_bmob_wg_mk_3_desc_alfred.Lines.Main_Bmob_Wg_Mk_3_Desc_Al...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkDialogueLine> UpgradeLines
     {
@@ -361,7 +367,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeLinesLuciusFox
+    /// ArrayProperty: UpgradeLinesLuciusFox<br/>
+    /// Default: (main_bmob_drone_virus_desc_lucius.Lines.Main_Bmob_Drone_Virus_Desc_Lucius_01,main_bmob_emp_desc_lucius.Lines.Main_Bmob_Emp_Desc_Lucius_01,main_bmob_wg_mk_3_desc_lucius.Lines.Main_Bmob_Wg_Mk_3_Desc_Lu...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkDialogueLine> UpgradeLinesLuciusFox
     {
@@ -370,7 +377,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeLinesLuciusFoxInRoom
+    /// ArrayProperty: UpgradeLinesLuciusFoxInRoom<br/>
+    /// Default: (main_bmob_drone_virus_desc_lucius_Dry.Lines.Main_Bmob_Drone_Virus_Desc_Lucius_Dry_01,main_bmob_emp_desc_lucius_Dry.Lines.Main_Bmob_Emp_Desc_Lucius_Dry_01,main_bmob_wg_mk_3_desc_lucius_Dry.Lines.Main_...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkDialogueLine> UpgradeLinesLuciusFoxInRoom
     {
@@ -394,7 +402,8 @@ public partial class RSeqAct_BatmobileUpgradeFunctionality : BmSDK.Engine.SeqAct
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkDialogue.FAkSpeechOptions>(Ptr + 504);
 
     /// <summary>
-    /// FloatProperty: screenShutdownDelay
+    /// FloatProperty: screenShutdownDelay<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float screenShutdownDelay
     {

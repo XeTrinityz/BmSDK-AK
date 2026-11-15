@@ -185,7 +185,8 @@ public partial class InterpTrackAnimControl : BmSDK.Engine.InterpTrackFloatBase,
     }
 
     /// <summary>
-    /// BoolProperty: bEnableAutomaticTeleports
+    /// BoolProperty: bEnableAutomaticTeleports<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableAutomaticTeleports
     {
@@ -221,7 +222,8 @@ public partial class InterpTrackAnimControl : BmSDK.Engine.InterpTrackFloatBase,
     }
 
     /// <summary>
-    /// BoolProperty: bStopDialogueOnSkip
+    /// BoolProperty: bStopDialogueOnSkip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopDialogueOnSkip
     {

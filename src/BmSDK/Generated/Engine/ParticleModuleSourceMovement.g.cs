@@ -79,7 +79,8 @@ public partial class ParticleModuleSourceMovement : BmSDK.Engine.ParticleModuleL
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SourceMovementScale
+    /// StructProperty: SourceMovementScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleSourceMovement.DistributionSourceMovementScale,MinRange=(X=1,Y=1,Z=1),Max...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector SourceMovementScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);

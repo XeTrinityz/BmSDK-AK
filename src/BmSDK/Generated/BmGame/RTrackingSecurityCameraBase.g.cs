@@ -797,7 +797,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
     }
 
     /// <summary>
-    /// BoolProperty: bSwitchedOn
+    /// BoolProperty: bSwitchedOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSwitchedOn
     {
@@ -842,7 +843,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
     }
 
     /// <summary>
-    /// FloatProperty: SweepYawRange
+    /// FloatProperty: SweepYawRange<br/>
+    /// Default: 71
     /// </summary>
     public unsafe float SweepYawRange
     {
@@ -860,7 +862,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
     }
 
     /// <summary>
-    /// IntProperty: FOV
+    /// IntProperty: FOV<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe int FOV
     {

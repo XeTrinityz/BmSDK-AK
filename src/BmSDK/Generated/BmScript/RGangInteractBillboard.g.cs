@@ -156,7 +156,8 @@ public partial class RGangInteractBillboard : BmSDK.BmGame.RGangInteractPointBre
     }
 
     /// <summary>
-    /// ObjectProperty: BillboardSmashEffect
+    /// ObjectProperty: BillboardSmashEffect<br/>
+    /// Default: VFX_Riot.Particles.Window_Smash_Small
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BillboardSmashEffect
     {

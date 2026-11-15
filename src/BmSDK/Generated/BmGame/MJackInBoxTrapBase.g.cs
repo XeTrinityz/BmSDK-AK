@@ -385,7 +385,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ImpulseComponent
+    /// ComponentProperty: ImpulseComponent<br/>
+    /// Default: BmGame.Default__MJackInBoxTrapBase.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent ImpulseComponent
     {
@@ -403,13 +404,15 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: Shaker
+    /// StructProperty: Shaker<br/>
+    /// Default: (TimeDuration=0.4,LocAmplitude=(X=20,Y=10,Z=10),LocFrequency=(X=1.7,Y=1.7,Z=1.7),RotAmplitude=(X=2400,Y=2400,Z=2400),RotFrequency=(X=2.5,Y=2.5,Z=2.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Fa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shaker
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 788);
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -418,7 +421,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: FractureRadius
+    /// FloatProperty: FractureRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float FractureRadius
     {
@@ -427,7 +431,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AttractionRadius
+    /// FloatProperty: AttractionRadius<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float AttractionRadius
     {
@@ -436,7 +441,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SurroundRadius
+    /// FloatProperty: SurroundRadius<br/>
+    /// Default: 290
     /// </summary>
     public unsafe float SurroundRadius
     {
@@ -445,7 +451,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ShootFromRadius
+    /// FloatProperty: ShootFromRadius<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float ShootFromRadius
     {
@@ -454,7 +461,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ExplosionRadius
     {
@@ -472,7 +480,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionRumble
+    /// ObjectProperty: ExplosionRumble<br/>
+    /// Default: BmGame.Default__MJackInBoxTrapBase.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExplosionRumble
     {

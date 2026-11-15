@@ -90,25 +90,29 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// StructProperty: SceneShadows
+    /// StructProperty: SceneShadows<br/>
+    /// Default: (Z=-0.003)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SceneShadows
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: SceneHighLights
+    /// StructProperty: SceneHighLights<br/>
+    /// Default: (X=0.8,Y=0.8,Z=0.8)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SceneHighLights
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 188);
 
     /// <summary>
-    /// StructProperty: SceneMidTones
+    /// StructProperty: SceneMidTones<br/>
+    /// Default: (X=1.3,Y=1.3,Z=1.3)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SceneMidTones
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 200);
 
     /// <summary>
-    /// FloatProperty: SceneDesaturation
+    /// FloatProperty: SceneDesaturation<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float SceneDesaturation
     {
@@ -117,7 +121,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// StructProperty: SceneColorize
+    /// StructProperty: SceneColorize<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SceneColorize
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 216);
@@ -132,7 +137,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: TonemapperRange
+    /// FloatProperty: TonemapperRange<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float TonemapperRange
     {
@@ -141,7 +147,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: TonemapperToeFactor
+    /// FloatProperty: TonemapperToeFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TonemapperToeFactor
     {
@@ -150,7 +157,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: TonemapperScale
+    /// FloatProperty: TonemapperScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TonemapperScale
     {
@@ -195,7 +203,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: SceneImageGrainScale
+    /// FloatProperty: SceneImageGrainScale<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float SceneImageGrainScale
     {
@@ -213,7 +222,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: BloomWeightMedium
+    /// FloatProperty: BloomWeightMedium<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BloomWeightMedium
     {
@@ -231,7 +241,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: BloomSizeScaleSmall
+    /// FloatProperty: BloomSizeScaleSmall<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float BloomSizeScaleSmall
     {
@@ -240,7 +251,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: BloomSizeScaleMedium
+    /// FloatProperty: BloomSizeScaleMedium<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BloomSizeScaleMedium
     {
@@ -249,7 +261,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// FloatProperty: BloomSizeScaleLarge
+    /// FloatProperty: BloomSizeScaleLarge<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BloomSizeScaleLarge
     {
@@ -258,7 +271,8 @@ public partial class UberPostProcessEffect : BmSDK.Engine.DOFBloomMotionBlurEffe
     }
 
     /// <summary>
-    /// StructProperty: PreviousLUTBlender
+    /// StructProperty: PreviousLUTBlender<br/>
+    /// Default: (bHasChanged=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FLUTBlender PreviousLUTBlender
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FLUTBlender>(Ptr + 280);

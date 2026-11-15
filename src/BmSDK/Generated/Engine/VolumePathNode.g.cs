@@ -79,7 +79,8 @@ public partial class VolumePathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StartingRadius
+    /// FloatProperty: StartingRadius<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float StartingRadius
     {
@@ -88,7 +89,8 @@ public partial class VolumePathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StartingHeight
+    /// FloatProperty: StartingHeight<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float StartingHeight
     {

@@ -578,7 +578,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: SelectedButton
+    /// IntProperty: SelectedButton<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SelectedButton
     {
@@ -641,7 +642,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// BoolProperty: bIsDropDownCollapsed
+    /// BoolProperty: bIsDropDownCollapsed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsDropDownCollapsed
     {
@@ -668,7 +670,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: MIN_AGE
+    /// IntProperty: MIN_AGE<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MIN_AGE
     {
@@ -677,7 +680,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: MAX_AGE
+    /// IntProperty: MAX_AGE<br/>
+    /// Default: 121
     /// </summary>
     public unsafe int MAX_AGE
     {
@@ -686,7 +690,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: MIN_PASSWORD_LEN
+    /// IntProperty: MIN_PASSWORD_LEN<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int MIN_PASSWORD_LEN
     {
@@ -695,7 +700,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: MAX_PASSWORD_LEN
+    /// IntProperty: MAX_PASSWORD_LEN<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int MAX_PASSWORD_LEN
     {
@@ -704,7 +710,8 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     }
 
     /// <summary>
-    /// IntProperty: AGE_DROPDOWN_SLOTS
+    /// IntProperty: AGE_DROPDOWN_SLOTS<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int AGE_DROPDOWN_SLOTS
     {

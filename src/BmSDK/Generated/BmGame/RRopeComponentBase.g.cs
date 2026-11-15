@@ -780,7 +780,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: HasConstraint
+    /// BoolProperty: HasConstraint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasConstraint
     {
@@ -834,7 +835,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: Material
+    /// ObjectProperty: Material<br/>
+    /// Default: VFX_Generic.fx_Rope_M
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface Material
     {
@@ -945,7 +947,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: RopeStretch
+    /// FloatProperty: RopeStretch<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeStretch
     {
@@ -954,7 +957,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: RopeWidth
+    /// FloatProperty: RopeWidth<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RopeWidth
     {
@@ -990,7 +994,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// ByteProperty: RopeChangeType
+    /// ByteProperty: RopeChangeType<br/>
+    /// Default: ROPELENGTHCHANGE_MAX
     /// </summary>
     public unsafe BmSDK.BmGame.RRopeComponentBase.ERopeLengthChangeType RopeChangeType
     {
@@ -1008,7 +1013,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: RopeDrawWidth
+    /// FloatProperty: RopeDrawWidth<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RopeDrawWidth
     {
@@ -1017,7 +1023,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: UnitsPerV
+    /// FloatProperty: UnitsPerV<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float UnitsPerV
     {
@@ -1035,7 +1042,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: RopeRenderInterpolationScale
+    /// FloatProperty: RopeRenderInterpolationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeRenderInterpolationScale
     {
@@ -1044,7 +1052,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: AutoRopeLengthSlackRatio
+    /// FloatProperty: AutoRopeLengthSlackRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AutoRopeLengthSlackRatio
     {
@@ -1053,7 +1062,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: AutoRopeLengthMinLength
+    /// FloatProperty: AutoRopeLengthMinLength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AutoRopeLengthMinLength
     {
@@ -1062,7 +1072,8 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: AutoRopeLengthMaxLength
+    /// FloatProperty: AutoRopeLengthMaxLength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AutoRopeLengthMaxLength
     {

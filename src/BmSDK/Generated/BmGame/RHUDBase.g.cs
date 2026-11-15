@@ -308,7 +308,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxWarningsAndErrors
+    /// IntProperty: MaxWarningsAndErrors<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxWarningsAndErrors
     {

@@ -228,7 +228,8 @@ public partial class KAsset : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: Engine.Default__KAsset.KAssetSkelMeshComponent
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -237,7 +238,8 @@ public partial class KAsset : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDamageAppliesImpulse
+    /// BoolProperty: bDamageAppliesImpulse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDamageAppliesImpulse
     {

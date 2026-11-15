@@ -189,7 +189,8 @@ public partial class RSeqAct_PlayAnimOnMesh : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: DisableStasisOnTargetWhenPlayed
+    /// BoolProperty: DisableStasisOnTargetWhenPlayed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DisableStasisOnTargetWhenPlayed
     {
@@ -225,7 +226,8 @@ public partial class RSeqAct_PlayAnimOnMesh : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: BlendTime
+    /// FloatProperty: BlendTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendTime
     {

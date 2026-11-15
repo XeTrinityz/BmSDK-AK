@@ -385,7 +385,8 @@ public partial class RSeqAct_AugmentedForensics : BmSDK.BmGame.RSeqAct_Augmented
     }
 
     /// <summary>
-    /// FloatProperty: WindingSpeed
+    /// FloatProperty: WindingSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float WindingSpeed
     {
@@ -430,7 +431,8 @@ public partial class RSeqAct_AugmentedForensics : BmSDK.BmGame.RSeqAct_Augmented
     }
 
     /// <summary>
-    /// FloatProperty: CurrentUnlimitedTime
+    /// FloatProperty: CurrentUnlimitedTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentUnlimitedTime
     {
@@ -481,7 +483,8 @@ public partial class RSeqAct_AugmentedForensics : BmSDK.BmGame.RSeqAct_Augmented
     }
 
     /// <summary>
-    /// FloatProperty: AudioTimeSecondsLast
+    /// FloatProperty: AudioTimeSecondsLast<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AudioTimeSecondsLast
     {

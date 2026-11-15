@@ -138,7 +138,8 @@ public partial class SeqCond_SwitchObject : BmSDK.Engine.SeqCond_SwitchBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: SupportedValues
+    /// ArrayProperty: SupportedValues<br/>
+    /// Default: ((bDefaultValue=true))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SeqCond_SwitchObject.FSwitchObjectCase> SupportedValues
     {

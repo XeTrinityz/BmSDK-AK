@@ -101,7 +101,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -119,7 +120,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// FloatProperty: FogDensity
+    /// FloatProperty: FogDensity<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float FogDensity
     {
@@ -128,7 +130,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// FloatProperty: FogHeightFalloff
+    /// FloatProperty: FogHeightFalloff<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FogHeightFalloff
     {
@@ -137,7 +140,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// FloatProperty: FogMaxOpacity
+    /// FloatProperty: FogMaxOpacity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FogMaxOpacity
     {
@@ -155,7 +159,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// FloatProperty: LightTerminatorAngle
+    /// FloatProperty: LightTerminatorAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float LightTerminatorAngle
     {
@@ -164,7 +169,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// FloatProperty: OppositeLightBrightness
+    /// FloatProperty: OppositeLightBrightness<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float OppositeLightBrightness
     {
@@ -173,13 +179,15 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// StructProperty: OppositeLightColor
+    /// StructProperty: OppositeLightColor<br/>
+    /// Default: (B=255,G=208,R=177)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor OppositeLightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 156);
 
     /// <summary>
-    /// FloatProperty: LightInscatteringBrightness
+    /// FloatProperty: LightInscatteringBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightInscatteringBrightness
     {
@@ -188,7 +196,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     }
 
     /// <summary>
-    /// StructProperty: LightInscatteringColor
+    /// StructProperty: LightInscatteringColor<br/>
+    /// Default: (B=41,G=212,R=245)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor LightInscatteringColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 164);

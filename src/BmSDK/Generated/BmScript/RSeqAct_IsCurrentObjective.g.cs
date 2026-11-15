@@ -115,7 +115,8 @@ public partial class RSeqAct_IsCurrentObjective : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: DeactivateMarkerIfNotMainPath
+    /// BoolProperty: DeactivateMarkerIfNotMainPath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DeactivateMarkerIfNotMainPath
     {

@@ -282,7 +282,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: MinMoveTowardsPlayerForce
+    /// FloatProperty: MinMoveTowardsPlayerForce<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MinMoveTowardsPlayerForce
     {
@@ -291,7 +292,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: MaxMoveTowardsPlayerForce
+    /// FloatProperty: MaxMoveTowardsPlayerForce<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MaxMoveTowardsPlayerForce
     {
@@ -300,7 +302,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: MoveTowardsPlayerForceMinCombatants
+    /// FloatProperty: MoveTowardsPlayerForceMinCombatants<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MoveTowardsPlayerForceMinCombatants
     {
@@ -309,7 +312,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: MoveTowardsPlayerForceMaxCombatants
+    /// FloatProperty: MoveTowardsPlayerForceMaxCombatants<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MoveTowardsPlayerForceMaxCombatants
     {
@@ -318,7 +322,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: HitTargetRadius
+    /// FloatProperty: HitTargetRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float HitTargetRadius
     {

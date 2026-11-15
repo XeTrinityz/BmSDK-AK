@@ -972,7 +972,8 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// BoolProperty: bDisplaySwitch
+    /// BoolProperty: bDisplaySwitch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplaySwitch
     {
@@ -1026,7 +1027,8 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// ComponentProperty: StrikeTrail
+    /// ComponentProperty: StrikeTrail<br/>
+    /// Default: BmScript.Default__RCombatMove_JokerBoxerCloseAttack.StrikeTrailBase
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StrikeTrail
     {
@@ -1197,7 +1199,8 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AttackRange
     {
@@ -1242,7 +1245,8 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// FloatProperty: HitRange
+    /// FloatProperty: HitRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float HitRange
     {
@@ -1260,7 +1264,8 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// FloatProperty: StrikeRadius
+    /// FloatProperty: StrikeRadius<br/>
+    /// Default: 88
     /// </summary>
     public unsafe float StrikeRadius
     {

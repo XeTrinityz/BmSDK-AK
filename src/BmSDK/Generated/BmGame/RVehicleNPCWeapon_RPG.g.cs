@@ -299,7 +299,8 @@ public partial class RVehicleNPCWeapon_RPG : BmSDK.BmGame.RVehicleNPCWeapon, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float Range
     {
@@ -308,7 +309,8 @@ public partial class RVehicleNPCWeapon_RPG : BmSDK.BmGame.RVehicleNPCWeapon, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TurnSpeed
+    /// FloatProperty: TurnSpeed<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float TurnSpeed
     {
@@ -431,7 +433,8 @@ public partial class RVehicleNPCWeapon_RPG : BmSDK.BmGame.RVehicleNPCWeapon, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 804);
 
     /// <summary>
-    /// FloatProperty: FireTargetLag
+    /// FloatProperty: FireTargetLag<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FireTargetLag
     {
@@ -440,7 +443,8 @@ public partial class RVehicleNPCWeapon_RPG : BmSDK.BmGame.RVehicleNPCWeapon, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ProjectileLifespan
+    /// FloatProperty: ProjectileLifespan<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ProjectileLifespan
     {

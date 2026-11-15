@@ -79,7 +79,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Properties
+    /// StructProperty: Properties<br/>
+    /// Default: (Volume=1,Pitch=1,StereoBleed=0.25,LFEBleed=0.5,bReverb=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.SoundClass.FSoundClassProperties Properties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.SoundClass.FSoundClassProperties>(Ptr + 84);
@@ -127,7 +128,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FSoundClassProperties
     {
         /// <summary>
-        /// FloatProperty: Volume
+        /// FloatProperty: Volume<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Volume
         {
@@ -136,7 +138,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Pitch
+        /// FloatProperty: Pitch<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Pitch
         {
@@ -145,7 +148,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: StereoBleed
+        /// FloatProperty: StereoBleed<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float StereoBleed
         {
@@ -154,7 +158,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: LFEBleed
+        /// FloatProperty: LFEBleed<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float LFEBleed
         {
@@ -226,7 +231,8 @@ public partial class SoundClass : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bReverb
+        /// BoolProperty: bReverb<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bReverb
         {

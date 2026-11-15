@@ -79,7 +79,8 @@ public partial class InterpTrackStereoConvergence : BmSDK.Engine.InterpTrackFloa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: ResetConvergence
+    /// BoolProperty: ResetConvergence<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ResetConvergence
     {

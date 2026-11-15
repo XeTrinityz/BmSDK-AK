@@ -201,7 +201,8 @@ public partial class RGlideOutOfBoundsVolume : BmSDK.Engine.BlockingVolume, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: TurnAroundMove
+    /// ObjectProperty: TurnAroundMove<br/>
+    /// Default: Batman_Environment_Moves.Glide.Glide_Out_Of_Bounds
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig TurnAroundMove
     {
@@ -258,7 +259,8 @@ public partial class RGlideOutOfBoundsVolume : BmSDK.Engine.BlockingVolume, BmSD
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 788);
 
     /// <summary>
-    /// ArrayProperty: GunFireEffects
+    /// ArrayProperty: GunFireEffects<br/>
+    /// Default: ((OriginLocationOffset=(X=3000,Y=1500,Z=-1000),OriginRotationOffset=(Pitch=5000,Yaw=-27306),DelayInSeconds=0.25),(OriginLocationOffset=(X=2500,Y=-2500,Z=-2000),OriginRotationOffset=(Pitch=10012,Yaw=18...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGlideOutOfBoundsVolume.FGunFireLocator> GunFireEffects
     {

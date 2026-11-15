@@ -2165,7 +2165,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCanUseLadders
+    /// BoolProperty: bCanUseLadders<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUseLadders
     {
@@ -2174,7 +2175,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCanTraverse
+    /// BoolProperty: bCanTraverse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTraverse
     {
@@ -2201,7 +2203,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoPathShortening
+    /// BoolProperty: bCanDoPathShortening<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoPathShortening
     {
@@ -2483,7 +2486,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 604);
 
     /// <summary>
-    /// FloatProperty: StuckTestTime
+    /// FloatProperty: StuckTestTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float StuckTestTime
     {

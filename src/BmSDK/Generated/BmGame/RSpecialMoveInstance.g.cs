@@ -1090,7 +1090,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAuthoritativeMovement
+    /// BoolProperty: bAuthoritativeMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAuthoritativeMovement
     {
@@ -1108,7 +1109,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeAttacked
+    /// BoolProperty: bCanBeAttacked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeAttacked
     {
@@ -1126,7 +1128,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bUseCameraAnim
+    /// BoolProperty: bUseCameraAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCameraAnim
     {

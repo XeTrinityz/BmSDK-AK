@@ -142,31 +142,36 @@ public partial class RGlideKickCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: CameraPivotOffset
+    /// StructProperty: CameraPivotOffset<br/>
+    /// Default: (Z=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1256);
 
     /// <summary>
-    /// StructProperty: CameraOffset
+    /// StructProperty: CameraOffset<br/>
+    /// Default: (X=-200,Y=50,Z=-30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1268);
 
     /// <summary>
-    /// StructProperty: LookRotatorOffset
+    /// StructProperty: LookRotatorOffset<br/>
+    /// Default: (Yaw=-2000)
     /// </summary>
     public unsafe ref BmSDK.Rotator LookRotatorOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1280);
 
     /// <summary>
-    /// StructProperty: LookPositionOffset
+    /// StructProperty: LookPositionOffset<br/>
+    /// Default: (Z=-100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LookPositionOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1292);
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 1304);

@@ -214,7 +214,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ObjectProperty: TwofaceAnimset
+    /// ObjectProperty: TwofaceAnimset<br/>
+    /// Default: Anim_Joker.Code.Phase2_TF
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet TwofaceAnimset
     {
@@ -250,7 +251,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ObjectProperty: JokerKnockBackMove
+    /// ObjectProperty: JokerKnockBackMove<br/>
+    /// Default: Anim_Joker.SpecialMoves.TwofaceReact
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig JokerKnockBackMove
     {
@@ -259,7 +261,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: IntroAnimName
+    /// NameProperty: IntroAnimName<br/>
+    /// Default: 2Face_Talk_In
     /// </summary>
     public unsafe BmSDK.FName IntroAnimName
     {
@@ -268,7 +271,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: TalkAnimName
+    /// NameProperty: TalkAnimName<br/>
+    /// Default: 2Face_Talk_Idle
     /// </summary>
     public unsafe BmSDK.FName TalkAnimName
     {
@@ -277,7 +281,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: AimAnimName
+    /// NameProperty: AimAnimName<br/>
+    /// Default: 2Face_Fire_In
     /// </summary>
     public unsafe BmSDK.FName AimAnimName
     {
@@ -286,7 +291,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: AimFastAnimName
+    /// NameProperty: AimFastAnimName<br/>
+    /// Default: 2Face_Fire_In_Fast
     /// </summary>
     public unsafe BmSDK.FName AimFastAnimName
     {
@@ -295,7 +301,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: AimIdleAnimName
+    /// NameProperty: AimIdleAnimName<br/>
+    /// Default: 2Face_Fire_Idle
     /// </summary>
     public unsafe BmSDK.FName AimIdleAnimName
     {
@@ -304,7 +311,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ArrayProperty: ShootAnimName
+    /// ArrayProperty: ShootAnimName<br/>
+    /// Default: (2Face_Fire_01,2Face_Fire_02,2Face_Fire_03)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ShootAnimName
     {
@@ -322,7 +330,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: TimeToShoot
+    /// FloatProperty: TimeToShoot<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeToShoot
     {
@@ -331,7 +340,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: JokerTooCloseDistance
+    /// FloatProperty: JokerTooCloseDistance<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float JokerTooCloseDistance
     {
@@ -340,7 +350,8 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: JokerCloseForAimDistance
+    /// FloatProperty: JokerCloseForAimDistance<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float JokerCloseForAimDistance
     {

@@ -133,7 +133,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: CameraYawOffset
+    /// FloatProperty: CameraYawOffset<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float CameraYawOffset
     {
@@ -142,7 +143,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: CameraPitchOffset
+    /// FloatProperty: CameraPitchOffset<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float CameraPitchOffset
     {
@@ -151,7 +153,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: MinOverlayTimer
+    /// FloatProperty: MinOverlayTimer<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float MinOverlayTimer
     {
@@ -160,7 +163,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: MaxOverlayTimer
+    /// FloatProperty: MaxOverlayTimer<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxOverlayTimer
     {
@@ -169,7 +173,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: MininumStartDistance
+    /// FloatProperty: MininumStartDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MininumStartDistance
     {
@@ -178,7 +183,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: MaxThumbSpeed
+    /// FloatProperty: MaxThumbSpeed<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float MaxThumbSpeed
     {
@@ -187,7 +193,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: ThumbAccel
+    /// FloatProperty: ThumbAccel<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float ThumbAccel
     {
@@ -196,7 +203,8 @@ public partial class RSpecialMoveConfig_ResonateObject : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: ThumbDecel
+    /// FloatProperty: ThumbDecel<br/>
+    /// Default: 1440
     /// </summary>
     public unsafe float ThumbDecel
     {

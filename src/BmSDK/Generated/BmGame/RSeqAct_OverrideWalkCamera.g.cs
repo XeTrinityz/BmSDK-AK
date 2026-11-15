@@ -106,7 +106,8 @@ public partial class RSeqAct_OverrideWalkCamera : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// NameProperty: CameraName
+    /// NameProperty: CameraName<br/>
+    /// Default: FirstPersonCamera
     /// </summary>
     public unsafe BmSDK.FName CameraName
     {
@@ -169,13 +170,15 @@ public partial class RSeqAct_OverrideWalkCamera : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// StructProperty: CustomCameraConfig
+    /// StructProperty: CustomCameraConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-76,Y=86,Z=-16),StateFreeCameraSitOffsetMax=(Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CustomCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 364);
 
     /// <summary>
-    /// FloatProperty: CustomCameraFOV
+    /// FloatProperty: CustomCameraFOV<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float CustomCameraFOV
     {
@@ -184,7 +187,8 @@ public partial class RSeqAct_OverrideWalkCamera : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: CustomCameraZoomFOV
+    /// FloatProperty: CustomCameraZoomFOV<br/>
+    /// Default: 27
     /// </summary>
     public unsafe float CustomCameraZoomFOV
     {

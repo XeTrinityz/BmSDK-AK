@@ -97,7 +97,8 @@ public partial class SpeedTree : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LeafStaticShadowOpacity
+    /// FloatProperty: LeafStaticShadowOpacity<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LeafStaticShadowOpacity
     {
@@ -160,7 +161,8 @@ public partial class SpeedTree : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WindStrength
+    /// FloatProperty: WindStrength<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float WindStrength
     {
@@ -169,7 +171,8 @@ public partial class SpeedTree : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WindDirection
+    /// StructProperty: WindDirection<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WindDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);

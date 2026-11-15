@@ -115,7 +115,8 @@ public partial class RSeqAct_SideStory_PygVictim : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// IntProperty: VictimPercent
+    /// IntProperty: VictimPercent<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int VictimPercent
     {

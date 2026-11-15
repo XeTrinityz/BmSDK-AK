@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_TakedownFakeScarecrow : BmSDK.BmGame.RSp
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: TransInAnimName
+    /// NameProperty: TransInAnimName<br/>
+    /// Default: Fake_Scarecrow_Takedown_In
     /// </summary>
     public unsafe BmSDK.FName TransInAnimName
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveConfig_TakedownFakeScarecrow : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: MaximumCameraPitch
+    /// FloatProperty: MaximumCameraPitch<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaximumCameraPitch
     {
@@ -115,7 +117,8 @@ public partial class RSpecialMoveConfig_TakedownFakeScarecrow : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: MaximumCameraYaw
+    /// FloatProperty: MaximumCameraYaw<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaximumCameraYaw
     {

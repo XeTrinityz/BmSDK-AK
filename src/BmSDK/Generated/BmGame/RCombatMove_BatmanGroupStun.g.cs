@@ -448,7 +448,8 @@ public partial class RCombatMove_BatmanGroupStun : BmSDK.BmGame.RCombatMove_Play
     }
 
     /// <summary>
-    /// FloatProperty: DamageRadius
+    /// FloatProperty: DamageRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DamageRadius
     {
@@ -469,7 +470,8 @@ public partial class RCombatMove_BatmanGroupStun : BmSDK.BmGame.RCombatMove_Play
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 988);
 
     /// <summary>
-    /// FloatProperty: InfluenceTime
+    /// FloatProperty: InfluenceTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float InfluenceTime
     {
@@ -487,7 +489,8 @@ public partial class RCombatMove_BatmanGroupStun : BmSDK.BmGame.RCombatMove_Play
     }
 
     /// <summary>
-    /// FloatProperty: TargetGameSpeed
+    /// FloatProperty: TargetGameSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TargetGameSpeed
     {
@@ -496,7 +499,8 @@ public partial class RCombatMove_BatmanGroupStun : BmSDK.BmGame.RCombatMove_Play
     }
 
     /// <summary>
-    /// FloatProperty: CurrentGameSpeed
+    /// FloatProperty: CurrentGameSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentGameSpeed
     {

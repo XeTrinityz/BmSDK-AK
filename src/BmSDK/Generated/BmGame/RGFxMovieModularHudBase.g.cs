@@ -533,7 +533,8 @@ public partial class RGFxMovieModularHudBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bHudVisibilityGame
+    /// BoolProperty: bHudVisibilityGame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHudVisibilityGame
     {
@@ -542,7 +543,8 @@ public partial class RGFxMovieModularHudBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bHudVisibilityManual
+    /// BoolProperty: bHudVisibilityManual<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHudVisibilityManual
     {

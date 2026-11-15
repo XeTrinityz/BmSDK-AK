@@ -1611,7 +1611,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: DecidingLocationTargetMarkerVFX
+    /// ComponentProperty: DecidingLocationTargetMarkerVFX<br/>
+    /// Default: BmGame.Default__RVoiceSynthesiser.DecidingLocationTargetMarkerVFX0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DecidingLocationTargetMarkerVFX
     {
@@ -1740,7 +1741,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2568);
 
     /// <summary>
-    /// FloatProperty: fMaximumVoiceLockInteractionDistanceSquared
+    /// FloatProperty: fMaximumVoiceLockInteractionDistanceSquared<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float fMaximumVoiceLockInteractionDistanceSquared
     {
@@ -1749,7 +1751,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: iMaximumNumberOfStartupBeams
+    /// IntProperty: iMaximumNumberOfStartupBeams<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int iMaximumNumberOfStartupBeams
     {
@@ -1767,7 +1770,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: fExtendedCooldownTime
+    /// FloatProperty: fExtendedCooldownTime<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float fExtendedCooldownTime
     {
@@ -1776,7 +1780,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: iMaximumNumberOfStrikesBeforeExtendedCooldown
+    /// IntProperty: iMaximumNumberOfStrikesBeforeExtendedCooldown<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iMaximumNumberOfStrikesBeforeExtendedCooldown
     {
@@ -1794,7 +1799,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: fDelayAfterWhichATakedownWillNotBeAStrike
+    /// FloatProperty: fDelayAfterWhichATakedownWillNotBeAStrike<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float fDelayAfterWhichATakedownWillNotBeAStrike
     {
@@ -1803,7 +1809,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: fLastThugReactionRunningTime
+    /// FloatProperty: fLastThugReactionRunningTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float fLastThugReactionRunningTime
     {

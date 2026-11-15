@@ -79,7 +79,8 @@ public partial class MetaSurfaceEffect : BmSDK.Engine.PostProcessEffect, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: RadiusSize
+    /// FloatProperty: RadiusSize<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RadiusSize
     {
@@ -88,7 +89,8 @@ public partial class MetaSurfaceEffect : BmSDK.Engine.PostProcessEffect, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TestLow
+    /// FloatProperty: TestLow<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TestLow
     {
@@ -97,7 +99,8 @@ public partial class MetaSurfaceEffect : BmSDK.Engine.PostProcessEffect, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TestHigh
+    /// FloatProperty: TestHigh<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TestHigh
     {
@@ -106,7 +109,8 @@ public partial class MetaSurfaceEffect : BmSDK.Engine.PostProcessEffect, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: UpperRange
+    /// FloatProperty: UpperRange<br/>
+    /// Default: 2.15
     /// </summary>
     public unsafe float UpperRange
     {
@@ -115,7 +119,8 @@ public partial class MetaSurfaceEffect : BmSDK.Engine.PostProcessEffect, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: Power
+    /// FloatProperty: Power<br/>
+    /// Default: 32
     /// </summary>
     public unsafe float Power
     {

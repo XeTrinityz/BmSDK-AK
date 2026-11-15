@@ -207,7 +207,8 @@ public partial class MGrappleGunBg : BmSDK.BmGame.RGrappleGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmScript.Default__MGrappleGunBg.MuzzleFlash
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -216,7 +217,8 @@ public partial class MGrappleGunBg : BmSDK.BmGame.RGrappleGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BoostedGrappleGunMesh
+    /// ObjectProperty: BoostedGrappleGunMesh<br/>
+    /// Default: Gadgets.GrappleGun.Equipment_GrappleGun_Boost
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh BoostedGrappleGunMesh
     {

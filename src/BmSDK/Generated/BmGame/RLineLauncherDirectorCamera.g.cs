@@ -188,7 +188,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: PivotDistMin
+    /// FloatProperty: PivotDistMin<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PivotDistMin
     {
@@ -197,7 +198,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: PivotDistMax
+    /// FloatProperty: PivotDistMax<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PivotDistMax
     {
@@ -206,7 +208,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OffsetSize
+    /// FloatProperty: OffsetSize<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float OffsetSize
     {
@@ -215,7 +218,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ZVelocity
+    /// FloatProperty: ZVelocity<br/>
+    /// Default: -35
     /// </summary>
     public unsafe float ZVelocity
     {
@@ -254,7 +258,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 1300);

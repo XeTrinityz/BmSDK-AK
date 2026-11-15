@@ -229,7 +229,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: KillTime
+    /// FloatProperty: KillTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float KillTime
     {
@@ -238,7 +239,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -247,7 +249,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bGrappleUp
+    /// BoolProperty: bGrappleUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGrappleUp
     {
@@ -256,7 +259,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDisablesBatarangCamera
+    /// BoolProperty: bDisablesBatarangCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisablesBatarangCamera
     {
@@ -274,7 +278,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bForceFalling
+    /// BoolProperty: bForceFalling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceFalling
     {
@@ -292,7 +297,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDmgType_KillZone
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -319,7 +325,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: InstantGrappleRescueMove
+    /// ObjectProperty: InstantGrappleRescueMove<br/>
+    /// Default: Batman_Gadget_Moves.GrappleGun.RescueFireGrappleGun
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig InstantGrappleRescueMove
     {
@@ -355,7 +362,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: GrappleRescueAnim
+    /// NameProperty: GrappleRescueAnim<br/>
+    /// Default: Fall_To_Grapple
     /// </summary>
     public unsafe BmSDK.FName GrappleRescueAnim
     {
@@ -364,7 +372,8 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: KillZoneTimeDilation
+    /// FloatProperty: KillZoneTimeDilation<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float KillZoneTimeDilation
     {

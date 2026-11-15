@@ -308,7 +308,8 @@ public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.Bm
     }
 
     /// <summary>
-    /// BoolProperty: HasYAxisMatinee
+    /// BoolProperty: HasYAxisMatinee<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasYAxisMatinee
     {
@@ -326,7 +327,8 @@ public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: XAxisSpeed
+    /// FloatProperty: XAxisSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float XAxisSpeed
     {
@@ -335,7 +337,8 @@ public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: YAxisSpeed
+    /// FloatProperty: YAxisSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float YAxisSpeed
     {
@@ -344,7 +347,8 @@ public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: AccelTime
+    /// FloatProperty: AccelTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AccelTime
     {

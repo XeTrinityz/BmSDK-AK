@@ -1593,7 +1593,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleHeight
+    /// FloatProperty: MaxGrappleHeight<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxGrappleHeight
     {
@@ -1602,7 +1603,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MinGrappleHeight
+    /// FloatProperty: MinGrappleHeight<br/>
+    /// Default: 320
     /// </summary>
     public unsafe float MinGrappleHeight
     {
@@ -1611,7 +1613,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleHorizontalDistance
+    /// FloatProperty: MaxGrappleHorizontalDistance<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float MaxGrappleHorizontalDistance
     {
@@ -1620,7 +1623,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleAngle
+    /// FloatProperty: MaxGrappleAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float MaxGrappleAngle
     {
@@ -1629,7 +1633,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxHorizontalDistanceForAimedGrapple
+    /// FloatProperty: MaxHorizontalDistanceForAimedGrapple<br/>
+    /// Default: 9999999
     /// </summary>
     public unsafe float MaxHorizontalDistanceForAimedGrapple
     {
@@ -1638,7 +1643,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxAimedGrappleAngle
+    /// FloatProperty: MaxAimedGrappleAngle<br/>
+    /// Default: 27
     /// </summary>
     public unsafe float MaxAimedGrappleAngle
     {
@@ -1647,7 +1653,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunGrappleAngle
+    /// FloatProperty: RunGrappleAngle<br/>
+    /// Default: 18
     /// </summary>
     public unsafe float RunGrappleAngle
     {
@@ -1656,7 +1663,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: WallStickGrappleAngle
+    /// FloatProperty: WallStickGrappleAngle<br/>
+    /// Default: 33
     /// </summary>
     public unsafe float WallStickGrappleAngle
     {
@@ -1665,7 +1673,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EscapeGrappleAngle
+    /// FloatProperty: EscapeGrappleAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float EscapeGrappleAngle
     {
@@ -2025,7 +2034,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactSound
+    /// ObjectProperty: ImpactSound<br/>
+    /// Default: Ww_CHR_BatmanDeviceImpacts.Play_BatmanDeviceImpact
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ImpactSound
     {
@@ -2052,7 +2062,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: PassiveImpactSound
+    /// ObjectProperty: PassiveImpactSound<br/>
+    /// Default: Ww_CHR_BatmanDeviceImpacts.Play_DeviceImpact_PassiveCharacter
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PassiveImpactSound
     {
@@ -2151,7 +2162,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: IconSize
+    /// FloatProperty: IconSize<br/>
+    /// Default: 0.075
     /// </summary>
     public unsafe float IconSize
     {
@@ -2160,7 +2172,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MinGrapplePitch
+    /// IntProperty: MinGrapplePitch<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe int MinGrapplePitch
     {
@@ -2178,7 +2191,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MinVantagePitch
+    /// IntProperty: MinVantagePitch<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe int MinVantagePitch
     {
@@ -2187,7 +2201,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: VantagePointGrappleAngle
+    /// FloatProperty: VantagePointGrappleAngle<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float VantagePointGrappleAngle
     {
@@ -2196,7 +2211,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChutePointGrappleAngle
+    /// FloatProperty: ChutePointGrappleAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float ChutePointGrappleAngle
     {
@@ -2205,7 +2221,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChutePointGrappleAngleWeight
+    /// FloatProperty: ChutePointGrappleAngleWeight<br/>
+    /// Default: 0.97
     /// </summary>
     public unsafe float ChutePointGrappleAngleWeight
     {
@@ -2214,7 +2231,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxOWSwingRange
+    /// FloatProperty: MaxOWSwingRange<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float MaxOWSwingRange
     {
@@ -2421,7 +2439,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bAllowAimingWhenFalling
+    /// BoolProperty: bAllowAimingWhenFalling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowAimingWhenFalling
     {
@@ -2466,7 +2485,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bUseGrappleOctree
+    /// BoolProperty: bUseGrappleOctree<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseGrappleOctree
     {
@@ -2583,7 +2603,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxHorizontalRange
+    /// FloatProperty: MaxHorizontalRange<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float MaxHorizontalRange
     {
@@ -2685,7 +2706,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: RopeInitTimer
+    /// IntProperty: RopeInitTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RopeInitTimer
     {
@@ -2694,7 +2716,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: VantagePointSwingRate
+    /// FloatProperty: VantagePointSwingRate<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float VantagePointSwingRate
     {
@@ -2703,7 +2726,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: StandingSwingRate
+    /// FloatProperty: StandingSwingRate<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float StandingSwingRate
     {
@@ -2757,7 +2781,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: VantagePointBias
+    /// FloatProperty: VantagePointBias<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float VantagePointBias
     {
@@ -2775,7 +2800,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrappleAccelTime
+    /// FloatProperty: GrappleAccelTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float GrappleAccelTime
     {
@@ -2784,7 +2810,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: FlyingGrapplePitch
+    /// IntProperty: FlyingGrapplePitch<br/>
+    /// Default: 4096
     /// </summary>
     public unsafe int FlyingGrapplePitch
     {
@@ -2823,7 +2850,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HidePointDistWeight
+    /// FloatProperty: HidePointDistWeight<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float HidePointDistWeight
     {
@@ -2832,7 +2860,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HidePointAngleWeight
+    /// FloatProperty: HidePointAngleWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float HidePointAngleWeight
     {
@@ -2841,7 +2870,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HidePointAnglePower
+    /// FloatProperty: HidePointAnglePower<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float HidePointAnglePower
     {
@@ -2850,7 +2880,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AngleToNormalWeight
+    /// FloatProperty: AngleToNormalWeight<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float AngleToNormalWeight
     {
@@ -2859,7 +2890,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningHidePointDistWeight
+    /// FloatProperty: RunningHidePointDistWeight<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float RunningHidePointDistWeight
     {
@@ -2868,7 +2900,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningHidePointAngleWeight
+    /// FloatProperty: RunningHidePointAngleWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RunningHidePointAngleWeight
     {
@@ -2877,7 +2910,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningHidePointAnglePower
+    /// FloatProperty: RunningHidePointAnglePower<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RunningHidePointAnglePower
     {
@@ -2886,7 +2920,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningAngleToNormalWeight
+    /// FloatProperty: RunningAngleToNormalWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RunningAngleToNormalWeight
     {
@@ -2895,7 +2930,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningStickyWeight
+    /// FloatProperty: RunningStickyWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RunningStickyWeight
     {
@@ -2904,7 +2940,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EdgeSwingDistWeight
+    /// FloatProperty: EdgeSwingDistWeight<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float EdgeSwingDistWeight
     {
@@ -2913,7 +2950,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EdgeSwingAngleWeight
+    /// FloatProperty: EdgeSwingAngleWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float EdgeSwingAngleWeight
     {
@@ -2922,7 +2960,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EdgeSwingAnglePower
+    /// FloatProperty: EdgeSwingAnglePower<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float EdgeSwingAnglePower
     {
@@ -2931,7 +2970,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EdgeSwingAngleToNormalWeight
+    /// FloatProperty: EdgeSwingAngleToNormalWeight<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float EdgeSwingAngleToNormalWeight
     {
@@ -2940,7 +2980,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChuteAngleWeight
+    /// FloatProperty: ChuteAngleWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ChuteAngleWeight
     {
@@ -2949,7 +2990,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChuteAnglePower
+    /// FloatProperty: ChuteAnglePower<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ChuteAnglePower
     {
@@ -2958,7 +3000,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChuteDistWeight
+    /// FloatProperty: ChuteDistWeight<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float ChuteDistWeight
     {
@@ -2967,7 +3010,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: RunningGrappleAngleTan
+    /// FloatProperty: RunningGrappleAngleTan<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RunningGrappleAngleTan
     {
@@ -2976,7 +3020,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: OffScreenLRIconBias
+    /// FloatProperty: OffScreenLRIconBias<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float OffScreenLRIconBias
     {
@@ -3014,27 +3059,32 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     public InlineArray<BmSDK.GameObject.FColor> DebugDrawColor => new(13, Ptr + 3164, 4, this);
 
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3164);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (G=255,R=200)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3168);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3172);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3176);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (B=255,G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3180);
@@ -3044,7 +3094,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3184);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (G=128,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3188);
@@ -3054,7 +3105,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_7
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3192);
     /// <summary>
-    /// StructProperty: DebugDrawColor
+    /// StructProperty: DebugDrawColor<br/>
+    /// Default: (B=255,G=100,R=100)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugDrawColor_8
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 3196);
@@ -3092,7 +3144,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3228);
 
     /// <summary>
-    /// FloatProperty: GrappleIconTravelTime
+    /// FloatProperty: GrappleIconTravelTime<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float GrappleIconTravelTime
     {
@@ -3119,7 +3172,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AerialGrappleRange
+    /// FloatProperty: AerialGrappleRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AerialGrappleRange
     {
@@ -3320,7 +3374,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3500);
 
     /// <summary>
-    /// IntProperty: NumGrapplePointsToCheckPerFrame
+    /// IntProperty: NumGrapplePointsToCheckPerFrame<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumGrapplePointsToCheckPerFrame
     {
@@ -3353,7 +3408,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrapplePointThinkingTime
+    /// FloatProperty: GrapplePointThinkingTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float GrapplePointThinkingTime
     {
@@ -3362,7 +3418,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraHeight
+    /// FloatProperty: MaxGrappleBoostExtraHeight<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxGrappleBoostExtraHeight
     {
@@ -3371,7 +3428,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraSpeed
+    /// FloatProperty: MaxGrappleBoostExtraSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxGrappleBoostExtraSpeed
     {
@@ -3380,7 +3438,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrappleBoostHeightFactor
+    /// FloatProperty: GrappleBoostHeightFactor<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float GrappleBoostHeightFactor
     {
@@ -3389,7 +3448,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraHeightMk3
+    /// FloatProperty: MaxGrappleBoostExtraHeightMk3<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxGrappleBoostExtraHeightMk3
     {
@@ -3398,7 +3458,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraSpeedMk3
+    /// FloatProperty: MaxGrappleBoostExtraSpeedMk3<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxGrappleBoostExtraSpeedMk3
     {
@@ -3407,7 +3468,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrappleBoostHeightFactorMk3
+    /// FloatProperty: GrappleBoostHeightFactorMk3<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float GrappleBoostHeightFactorMk3
     {
@@ -3416,7 +3478,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraHeightMk4
+    /// FloatProperty: MaxGrappleBoostExtraHeightMk4<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxGrappleBoostExtraHeightMk4
     {
@@ -3425,7 +3488,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleBoostExtraSpeedMk4
+    /// FloatProperty: MaxGrappleBoostExtraSpeedMk4<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxGrappleBoostExtraSpeedMk4
     {
@@ -3434,7 +3498,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrappleBoostHeightFactorMk4
+    /// FloatProperty: GrappleBoostHeightFactorMk4<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float GrappleBoostHeightFactorMk4
     {
@@ -3452,7 +3517,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ChainGrappleRange
+    /// FloatProperty: ChainGrappleRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float ChainGrappleRange
     {
@@ -3476,7 +3542,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3604);
 
     /// <summary>
-    /// FloatProperty: GlideStickForwardTilt
+    /// FloatProperty: GlideStickForwardTilt<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float GlideStickForwardTilt
     {
@@ -3485,7 +3552,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GlideStickCheckLocationShift
+    /// FloatProperty: GlideStickCheckLocationShift<br/>
+    /// Default: 384
     /// </summary>
     public unsafe float GlideStickCheckLocationShift
     {
@@ -3494,7 +3562,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: GrappleFilter
+    /// IntProperty: GrappleFilter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GrappleFilter
     {
@@ -3503,7 +3572,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: HidePointFilter
+    /// IntProperty: HidePointFilter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HidePointFilter
     {
@@ -3512,13 +3582,15 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: PlayerPositionCheckOffset
+    /// StructProperty: PlayerPositionCheckOffset<br/>
+    /// Default: (Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PlayerPositionCheckOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3632);
 
     /// <summary>
-    /// FloatProperty: fDelayedChuteTargetButtonHoldTime
+    /// FloatProperty: fDelayedChuteTargetButtonHoldTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float fDelayedChuteTargetButtonHoldTime
     {
@@ -3527,7 +3599,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GrappleStiffness
+    /// FloatProperty: GrappleStiffness<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float GrappleStiffness
     {
@@ -3536,7 +3609,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: GrappleDodgeAnims
+    /// ArrayProperty: GrappleDodgeAnims<br/>
+    /// Default: ((RightSpeed=500,DodgeAnim=Grapple_Avoid_Left),(RightSpeed=-500,DodgeAnim=Grapple_Avoid_Right))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleDodgeAnim> GrappleDodgeAnims
     {

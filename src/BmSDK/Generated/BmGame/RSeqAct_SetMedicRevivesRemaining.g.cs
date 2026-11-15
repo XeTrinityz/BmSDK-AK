@@ -93,7 +93,8 @@ public partial class RSeqAct_SetMedicRevivesRemaining : BmSDK.Engine.SequenceAct
     }
 
     /// <summary>
-    /// IntProperty: NumberOfMedicRevives
+    /// IntProperty: NumberOfMedicRevives<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int NumberOfMedicRevives
     {

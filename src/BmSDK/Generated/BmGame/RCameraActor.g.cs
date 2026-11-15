@@ -212,7 +212,8 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ScreenShakeModifier
+    /// ObjectProperty: ScreenShakeModifier<br/>
+    /// Default: BmGame.Default__RCameraActor.ScreenShakeMod
     /// </summary>
     public unsafe BmSDK.BmGame.RBMScreenShakeModifier ScreenShakeModifier
     {
@@ -221,7 +222,8 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: OverlayPlayer
+    /// ObjectProperty: OverlayPlayer<br/>
+    /// Default: BmGame.Default__RCameraActor.Overlays
     /// </summary>
     public unsafe BmSDK.BmGame.RCameraOverlayPlayer OverlayPlayer
     {
@@ -284,7 +286,8 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AuthoredAspectRatio
+    /// FloatProperty: AuthoredAspectRatio<br/>
+    /// Default: 1.3333334
     /// </summary>
     public unsafe float AuthoredAspectRatio
     {

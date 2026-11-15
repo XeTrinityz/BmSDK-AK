@@ -79,7 +79,8 @@ public partial class FogVolumeSphericalDensityComponent : BmSDK.Engine.FogVolume
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxDensity
+    /// FloatProperty: MaxDensity<br/>
+    /// Default: 0.002
     /// </summary>
     public unsafe float MaxDensity
     {
@@ -97,7 +98,8 @@ public partial class FogVolumeSphericalDensityComponent : BmSDK.Engine.FogVolume
     }
 
     /// <summary>
-    /// FloatProperty: fadeStart
+    /// FloatProperty: fadeStart<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float fadeStart
     {
@@ -106,7 +108,8 @@ public partial class FogVolumeSphericalDensityComponent : BmSDK.Engine.FogVolume
     }
 
     /// <summary>
-    /// FloatProperty: fadeEnd
+    /// FloatProperty: fadeEnd<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float fadeEnd
     {
@@ -121,7 +124,8 @@ public partial class FogVolumeSphericalDensityComponent : BmSDK.Engine.FogVolume
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 216);
 
     /// <summary>
-    /// FloatProperty: SphereRadius
+    /// FloatProperty: SphereRadius<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float SphereRadius
     {

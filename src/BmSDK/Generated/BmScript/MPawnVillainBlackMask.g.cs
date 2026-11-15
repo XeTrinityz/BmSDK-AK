@@ -565,7 +565,8 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
     }
 
     /// <summary>
-    /// ComponentProperty: LeftWeapon
+    /// ComponentProperty: LeftWeapon<br/>
+    /// Default: BmScript.Default__MPawnVillainBlackMask.LeftWeaponMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftWeapon
     {
@@ -574,7 +575,8 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
     }
 
     /// <summary>
-    /// ComponentProperty: LaserSight
+    /// ComponentProperty: LaserSight<br/>
+    /// Default: BmScript.Default__MPawnVillainBlackMask.Sight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LaserSight
     {
@@ -601,7 +603,8 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
     }
 
     /// <summary>
-    /// ObjectProperty: LaserAudible
+    /// ObjectProperty: LaserAudible<br/>
+    /// Default: BmScript.Default__MPawnVillainBlackMask.LaserAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible LaserAudible
     {
@@ -610,7 +613,8 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
     }
 
     /// <summary>
-    /// ObjectProperty: ScopeLaserLoop
+    /// ObjectProperty: ScopeLaserLoop<br/>
+    /// Default: Ww_WPN_SniperRifle.Play_SniperRifleLaser
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScopeLaserLoop
     {
@@ -619,7 +623,8 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
     }
 
     /// <summary>
-    /// ObjectProperty: ShotConversation
+    /// ObjectProperty: ShotConversation<br/>
+    /// Default: dlc_rh_barks_bossbarks_blackmask_shooting.Conversation.dlc_rh_barks_bossbarks_blackmask_shooting
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation ShotConversation
     {

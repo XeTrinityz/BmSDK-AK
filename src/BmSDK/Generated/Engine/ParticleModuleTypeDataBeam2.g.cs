@@ -115,7 +115,8 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// ByteProperty: BeamMethod
+    /// ByteProperty: BeamMethod<br/>
+    /// Default: PEB2M_Target
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModuleTypeDataBeam2.EBeam2Method BeamMethod
     {
@@ -133,7 +134,8 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// IntProperty: TextureTile
+    /// IntProperty: TextureTile<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TextureTile
     {
@@ -151,7 +153,8 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// IntProperty: Sheets
+    /// IntProperty: Sheets<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Sheets
     {
@@ -169,7 +172,8 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// FloatProperty: Speed
+    /// FloatProperty: Speed<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float Speed
     {
@@ -196,7 +200,8 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// BoolProperty: RenderGeometry
+    /// BoolProperty: RenderGeometry<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RenderGeometry
     {
@@ -250,19 +255,22 @@ public partial class ParticleModuleTypeDataBeam2 : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// StructProperty: Distance
+    /// StructProperty: Distance<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(25,25,25,25),Distribution=Engine.Default__ParticleModuleTypeDataBeam2.DistributionDistance)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Distance
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 140);
 
     /// <summary>
-    /// StructProperty: TaperFactor
+    /// StructProperty: TaperFactor<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleTypeDataBeam2.DistributionTaperFactor)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat TaperFactor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: TaperScale
+    /// StructProperty: TaperScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleTypeDataBeam2.DistributionTaperScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat TaperScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 212);

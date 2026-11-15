@@ -457,7 +457,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PropagationSetup
+    /// ObjectProperty: PropagationSetup<br/>
+    /// Default: AudibleSetups.Propagation.VehicleBasicObstructionOcclusion
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudiblePropagation PropagationSetup
     {
@@ -556,7 +557,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VehicleDebugName
+    /// StrProperty: VehicleDebugName<br/>
+    /// Default: "NotSet"
     /// </summary>
     public unsafe BmSDK.FString VehicleDebugName
     {
@@ -565,7 +567,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinimumRPM
+    /// IntProperty: MinimumRPM<br/>
+    /// Default: 500
     /// </summary>
     public unsafe int MinimumRPM
     {
@@ -574,7 +577,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaximumRPM
+    /// IntProperty: MaximumRPM<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe int MaximumRPM
     {
@@ -583,7 +587,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: AfterFirstGearRPMAddition
+    /// IntProperty: AfterFirstGearRPMAddition<br/>
+    /// Default: 500
     /// </summary>
     public unsafe int AfterFirstGearRPMAddition
     {
@@ -601,7 +606,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaximumSpeed
+    /// IntProperty: MaximumSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaximumSpeed
     {
@@ -610,7 +616,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaximumGear
+    /// IntProperty: MaximumGear<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaximumGear
     {
@@ -619,7 +626,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMSmoothValue
+    /// FloatProperty: RPMSmoothValue<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float RPMSmoothValue
     {
@@ -637,7 +645,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMTimeToClutch
+    /// FloatProperty: RPMTimeToClutch<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float RPMTimeToClutch
     {
@@ -646,7 +655,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThrottleResponsePress
+    /// FloatProperty: ThrottleResponsePress<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ThrottleResponsePress
     {
@@ -655,7 +665,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThrottleResponseRelease
+    /// FloatProperty: ThrottleResponseRelease<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float ThrottleResponseRelease
     {
@@ -664,7 +675,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThrottleResponseInAir
+    /// FloatProperty: ThrottleResponseInAir<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float ThrottleResponseInAir
     {
@@ -673,7 +685,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinLoadForSpeeding
+    /// FloatProperty: MinLoadForSpeeding<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MinLoadForSpeeding
     {
@@ -682,7 +695,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLoadForRotation
+    /// FloatProperty: MaxLoadForRotation<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MaxLoadForRotation
     {
@@ -691,7 +705,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedingLoadValue
+    /// FloatProperty: SpeedingLoadValue<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float SpeedingLoadValue
     {
@@ -745,7 +760,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableMinimumGearChangeTime
+    /// BoolProperty: EnableMinimumGearChangeTime<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableMinimumGearChangeTime
     {
@@ -862,7 +878,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeForFirstSweep
+    /// FloatProperty: TimeForFirstSweep<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeForFirstSweep
     {
@@ -871,7 +888,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMForGearKickIn
+    /// FloatProperty: RPMForGearKickIn<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float RPMForGearKickIn
     {
@@ -880,7 +898,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMForGearKickOut
+    /// FloatProperty: RPMForGearKickOut<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float RPMForGearKickOut
     {
@@ -889,7 +908,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeIncreasePerGear
+    /// FloatProperty: TimeIncreasePerGear<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeIncreasePerGear
     {
@@ -898,7 +918,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AmountOfRPMToLoosePerBump
+    /// FloatProperty: AmountOfRPMToLoosePerBump<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float AmountOfRPMToLoosePerBump
     {
@@ -907,7 +928,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaximumInfiniteGears
+    /// IntProperty: MaximumInfiniteGears<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaximumInfiniteGears
     {
@@ -916,7 +938,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InfiniteGearTurboRatio
+    /// FloatProperty: InfiniteGearTurboRatio<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float InfiniteGearTurboRatio
     {
@@ -925,7 +948,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRPMDifferenceBetweenGears
+    /// FloatProperty: MaxRPMDifferenceBetweenGears<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxRPMDifferenceBetweenGears
     {
@@ -934,7 +958,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinRPMDifferenceBetweenGears
+    /// FloatProperty: MinRPMDifferenceBetweenGears<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinRPMDifferenceBetweenGears
     {
@@ -943,7 +968,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: InitialDrivingMode
+    /// ByteProperty: InitialDrivingMode<br/>
+    /// Default: EDM_Potter
     /// </summary>
     public unsafe BmSDK.Engine.AkVehicleSoundInfo.EDrivingModes InitialDrivingMode
     {
@@ -988,7 +1014,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EngineMinimumActiveTime
+    /// FloatProperty: EngineMinimumActiveTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float EngineMinimumActiveTime
     {
@@ -1006,7 +1033,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinimumGearChangeTime
+    /// FloatProperty: MinimumGearChangeTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MinimumGearChangeTime
     {
@@ -1042,7 +1070,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GearOverrunInitialAmount
+    /// FloatProperty: GearOverrunInitialAmount<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float GearOverrunInitialAmount
     {
@@ -1051,7 +1080,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GearOverrunVariance
+    /// FloatProperty: GearOverrunVariance<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GearOverrunVariance
     {
@@ -1060,7 +1090,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BasePercentage
+    /// FloatProperty: BasePercentage<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float BasePercentage
     {
@@ -1069,7 +1100,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PercentageForPitch
+    /// FloatProperty: PercentageForPitch<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float PercentageForPitch
     {
@@ -1078,7 +1110,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PercentageForSuspension
+    /// FloatProperty: PercentageForSuspension<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float PercentageForSuspension
     {
@@ -1087,7 +1120,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GearReverseRatio
+    /// FloatProperty: GearReverseRatio<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float GearReverseRatio
     {
@@ -1096,7 +1130,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ShortRPMBurstThrottleThreshold
+    /// FloatProperty: ShortRPMBurstThrottleThreshold<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float ShortRPMBurstThrottleThreshold
     {
@@ -1105,7 +1140,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenShortRPMBurstTimed
+    /// FloatProperty: TimeBetweenShortRPMBurstTimed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeBetweenShortRPMBurstTimed
     {
@@ -1123,7 +1159,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMToCutShortRPMBurst
+    /// FloatProperty: RPMToCutShortRPMBurst<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RPMToCutShortRPMBurst
     {
@@ -1132,7 +1169,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RotatingAddValue
+    /// FloatProperty: RotatingAddValue<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float RotatingAddValue
     {
@@ -1141,7 +1179,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RotatingMultiplier
+    /// FloatProperty: RotatingMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RotatingMultiplier
     {
@@ -1150,7 +1189,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeedForAlternate
+    /// FloatProperty: MinSpeedForAlternate<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float MinSpeedForAlternate
     {
@@ -1159,7 +1199,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MaximumRPMForAlternate
+    /// ArrayProperty: MaximumRPMForAlternate<br/>
+    /// Default: (0,4000)
     /// </summary>
     public unsafe BmSDK.TArray<float> MaximumRPMForAlternate
     {
@@ -1168,7 +1209,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMFallsInAirPercentPerSecond
+    /// FloatProperty: RPMFallsInAirPercentPerSecond<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RPMFallsInAirPercentPerSecond
     {
@@ -1186,7 +1228,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RPMFallsInAirDecreaseIfOverThisMaxmimum
+    /// FloatProperty: RPMFallsInAirDecreaseIfOverThisMaxmimum<br/>
+    /// Default: 99999
     /// </summary>
     public unsafe float RPMFallsInAirDecreaseIfOverThisMaxmimum
     {
@@ -1375,7 +1418,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedToCutLoadRPMBurst
+    /// FloatProperty: SpeedToCutLoadRPMBurst<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float SpeedToCutLoadRPMBurst
     {
@@ -1402,7 +1446,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedToTriggerSurfaceSoundMPH
+    /// FloatProperty: SpeedToTriggerSurfaceSoundMPH<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpeedToTriggerSurfaceSoundMPH
     {
@@ -1411,7 +1456,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionDampingValue
+    /// FloatProperty: SuspensionDampingValue<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SuspensionDampingValue
     {
@@ -1420,7 +1466,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionDampingRate
+    /// FloatProperty: SuspensionDampingRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SuspensionDampingRate
     {
@@ -1582,7 +1629,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinimumSpeedForImpact
+    /// FloatProperty: MinimumSpeedForImpact<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinimumSpeedForImpact
     {
@@ -1591,7 +1639,8 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRetriggerDelay
+    /// FloatProperty: ImpactRetriggerDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ImpactRetriggerDelay
     {
@@ -1600,13 +1649,15 @@ public partial class AkVehicleSoundInfo : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: EnvPawnInVehicleCabin
+    /// StructProperty: EnvPawnInVehicleCabin<br/>
+    /// Default: (WetMixAdjust=1,DryMixAdjust=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkEnvironmentSettings EnvPawnInVehicleCabin
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkEnvironmentSettings>(Ptr + 1432);
 
     /// <summary>
-    /// StructProperty: EnvPawnInVehicleBoot
+    /// StructProperty: EnvPawnInVehicleBoot<br/>
+    /// Default: (WetMixAdjust=1,DryMixAdjust=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkEnvironmentSettings EnvPawnInVehicleBoot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkEnvironmentSettings>(Ptr + 1448);

@@ -1503,7 +1503,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// ClassProperty: UIControllerClass
+    /// ClassProperty: UIControllerClass<br/>
+    /// Default: Engine.UIInteraction
     /// </summary>
     public unsafe BmSDK.Class UIControllerClass
     {
@@ -1539,7 +1540,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StructProperty: ShowFlags
+    /// StructProperty: ShowFlags<br/>
+    /// Default: (flags0=(A=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.GameViewportClient.FExportShowFlags_Mirror ShowFlags
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameViewportClient.FExportShowFlags_Mirror>(Ptr + 164);
@@ -1581,7 +1583,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// ByteProperty: Default2PSplitType
+    /// ByteProperty: Default2PSplitType<br/>
+    /// Default: eSST_2P_VERTICAL
     /// </summary>
     public unsafe BmSDK.Engine.GameViewportClient.ESplitScreenType Default2PSplitType
     {
@@ -1590,7 +1593,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// ByteProperty: Default3PSplitType
+    /// ByteProperty: Default3PSplitType<br/>
+    /// Default: eSST_3P_FAVOR_TOP
     /// </summary>
     public unsafe BmSDK.Engine.GameViewportClient.ESplitScreenType Default3PSplitType
     {
@@ -1599,7 +1603,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StrProperty: LoadingMessage
+    /// StrProperty: LoadingMessage<br/>
+    /// Default: "LOADING"
     /// </summary>
     public unsafe BmSDK.FString LoadingMessage
     {
@@ -1608,7 +1613,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StrProperty: SavingMessage
+    /// StrProperty: SavingMessage<br/>
+    /// Default: "SAVING"
     /// </summary>
     public unsafe BmSDK.FString SavingMessage
     {
@@ -1617,7 +1623,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StrProperty: ConnectingMessage
+    /// StrProperty: ConnectingMessage<br/>
+    /// Default: "CONNECTING"
     /// </summary>
     public unsafe BmSDK.FString ConnectingMessage
     {
@@ -1626,7 +1633,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StrProperty: PausedMessage
+    /// StrProperty: PausedMessage<br/>
+    /// Default: "PAUSED"
     /// </summary>
     public unsafe BmSDK.FString PausedMessage
     {
@@ -1635,7 +1643,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StrProperty: PrecachingMessage
+    /// StrProperty: PrecachingMessage<br/>
+    /// Default: "PRECACHING"
     /// </summary>
     public unsafe BmSDK.FString PrecachingMessage
     {
@@ -1716,13 +1725,15 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// StructProperty: TitleSafeZone
+    /// StructProperty: TitleSafeZone<br/>
+    /// Default: (MaxPercentX=0.9,MaxPercentY=0.9,XbMaxPercentX=0.8958333,XbMaxPercentY=0.9259259,RecommendedPercentX=0.8,RecommendedPercentY=0.8)
     /// </summary>
     public unsafe ref BmSDK.Engine.GameViewportClient.FTitleSafeZoneArea TitleSafeZone
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameViewportClient.FTitleSafeZoneArea>(Ptr + 280);
 
     /// <summary>
-    /// IntProperty: ReflectionVolumeMode
+    /// IntProperty: ReflectionVolumeMode<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ReflectionVolumeMode
     {
@@ -1737,7 +1748,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameViewportClient.FExportShowFlags_Mirror>(Ptr + 308);
 
     /// <summary>
-    /// ArrayProperty: SplitscreenInfo
+    /// ArrayProperty: SplitscreenInfo<br/>
+    /// Default: ((PlayerData=((SizeX=1,SizeY=1))),(PlayerData=((SizeX=1,SizeY=0.5),(SizeX=1,SizeY=0.5,OriginY=0.5))),(PlayerData=((SizeX=0.5,SizeY=1),(SizeX=0.5,SizeY=1,OriginX=0.5))),(PlayerData=((SizeX=0.6,SizeY=1)...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.GameViewportClient.FSplitscreenData> SplitscreenInfo
     {
@@ -1768,7 +1780,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ProgressTimeOut
+    /// FloatProperty: ProgressTimeOut<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float ProgressTimeOut
     {
@@ -1777,7 +1790,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ProgressFadeTime
+    /// FloatProperty: ProgressFadeTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ProgressFadeTime
     {

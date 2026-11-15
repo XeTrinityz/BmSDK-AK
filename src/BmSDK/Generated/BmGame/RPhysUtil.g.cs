@@ -150,7 +150,8 @@ public partial class RPhysUtil : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AnimPlayRate
+        /// FloatProperty: AnimPlayRate<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float AnimPlayRate
         {
@@ -267,7 +268,8 @@ public partial class RPhysUtil : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ScaleHeadDepthBias
+        /// FloatProperty: ScaleHeadDepthBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ScaleHeadDepthBias
         {
@@ -276,7 +278,8 @@ public partial class RPhysUtil : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ScaleDepthBias
+        /// FloatProperty: ScaleDepthBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ScaleDepthBias
         {

@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_CatchLedge : BmSDK.BmGame.RSpecialMoveCo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: PreCatchPose
+    /// NameProperty: PreCatchPose<br/>
+    /// Default: Falling
     /// </summary>
     public unsafe BmSDK.FName PreCatchPose
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_CatchLedge : BmSDK.BmGame.RSpecialMoveCo
     }
 
     /// <summary>
-    /// FloatProperty: MaxCorrectionAccel
+    /// FloatProperty: MaxCorrectionAccel<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxCorrectionAccel
     {
@@ -115,7 +117,8 @@ public partial class RSpecialMoveConfig_CatchLedge : BmSDK.BmGame.RSpecialMoveCo
     }
 
     /// <summary>
-    /// FloatProperty: LongFallAnimSpeed
+    /// FloatProperty: LongFallAnimSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float LongFallAnimSpeed
     {

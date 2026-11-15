@@ -213,7 +213,8 @@ public partial class RTriggerPredatorAlertOnLOSWithActorVolume : BmSDK.Engine.Vo
     }
 
     /// <summary>
-    /// FloatProperty: LOSTimeBeforeTriggerAlert
+    /// FloatProperty: LOSTimeBeforeTriggerAlert<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LOSTimeBeforeTriggerAlert
     {
@@ -222,7 +223,8 @@ public partial class RTriggerPredatorAlertOnLOSWithActorVolume : BmSDK.Engine.Vo
     }
 
     /// <summary>
-    /// NameProperty: PlayerBoneName
+    /// NameProperty: PlayerBoneName<br/>
+    /// Default: Bip01_Spine3
     /// </summary>
     public unsafe BmSDK.FName PlayerBoneName
     {

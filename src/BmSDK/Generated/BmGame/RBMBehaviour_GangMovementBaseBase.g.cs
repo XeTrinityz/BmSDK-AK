@@ -334,7 +334,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// NameProperty: AnimSprint
+    /// NameProperty: AnimSprint<br/>
+    /// Default: Scared_Sprint_01
     /// </summary>
     public unsafe BmSDK.FName AnimSprint
     {
@@ -343,7 +344,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// NameProperty: AnimRun
+    /// NameProperty: AnimRun<br/>
+    /// Default: Run_Forward_Loot
     /// </summary>
     public unsafe BmSDK.FName AnimRun
     {
@@ -352,7 +354,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// NameProperty: AnimFleeRun
+    /// NameProperty: AnimFleeRun<br/>
+    /// Default: Scared_Run_01
     /// </summary>
     public unsafe BmSDK.FName AnimFleeRun
     {
@@ -361,7 +364,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// NameProperty: AnimWalk
+    /// NameProperty: AnimWalk<br/>
+    /// Default: Walk_Aggressive_01
     /// </summary>
     public unsafe BmSDK.FName AnimWalk
     {
@@ -451,7 +455,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// BoolProperty: bCanUseWeaponConfigPool
+    /// BoolProperty: bCanUseWeaponConfigPool<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUseWeaponConfigPool
     {

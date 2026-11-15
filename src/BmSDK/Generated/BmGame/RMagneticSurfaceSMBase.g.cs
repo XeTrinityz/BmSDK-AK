@@ -844,7 +844,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RMagneticSurfaceSMBase.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -979,7 +980,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ComponentProperty: MagBlastInteractions
+    /// ComponentProperty: MagBlastInteractions<br/>
+    /// Default: BmGame.Default__RMagneticSurfaceSMBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent MagBlastInteractions
     {
@@ -1024,7 +1026,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: EnergyDrainPerSecond
+    /// FloatProperty: EnergyDrainPerSecond<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float EnergyDrainPerSecond
     {
@@ -1060,7 +1063,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MatineeAttractPlaybackSpeed
+    /// FloatProperty: MatineeAttractPlaybackSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MatineeAttractPlaybackSpeed
     {
@@ -1069,7 +1073,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MatineeRepelPlaybackSpeed
+    /// FloatProperty: MatineeRepelPlaybackSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeRepelPlaybackSpeed
     {
@@ -1078,7 +1083,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MatineeAttractAcceleration
+    /// FloatProperty: MatineeAttractAcceleration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeAttractAcceleration
     {
@@ -1087,7 +1093,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MatineeRepelAcceleration
+    /// FloatProperty: MatineeRepelAcceleration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeRepelAcceleration
     {
@@ -1096,7 +1103,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MatineeDeceleration
+    /// FloatProperty: MatineeDeceleration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeDeceleration
     {
@@ -1132,7 +1140,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -1177,7 +1186,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// BoolProperty: bNeedsTicking
+    /// BoolProperty: bNeedsTicking<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedsTicking
     {
@@ -1258,7 +1268,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// BoolProperty: bActivateMatineeWhenStepping
+    /// BoolProperty: bActivateMatineeWhenStepping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActivateMatineeWhenStepping
     {
@@ -1312,7 +1323,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: AttractForceFactor
+    /// FloatProperty: AttractForceFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AttractForceFactor
     {
@@ -1321,7 +1333,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: RepelForceFactor
+    /// FloatProperty: RepelForceFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RepelForceFactor
     {
@@ -1405,7 +1418,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: InfluenceRadius
+    /// FloatProperty: InfluenceRadius<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float InfluenceRadius
     {

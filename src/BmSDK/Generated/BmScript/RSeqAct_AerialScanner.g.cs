@@ -379,7 +379,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: AnimNameForAdd
+    /// StrProperty: AnimNameForAdd<br/>
+    /// Default: "factory_worker"
     /// </summary>
     public unsafe BmSDK.FString AnimNameForAdd
     {
@@ -388,7 +389,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetNameUnknown
+    /// StrProperty: TargetNameUnknown<br/>
+    /// Default: "$GFxUI.BatScanner.Unidentified"
     /// </summary>
     public unsafe BmSDK.FString TargetNameUnknown
     {
@@ -397,7 +399,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetNameDatabasePrefix
+    /// StrProperty: TargetNameDatabasePrefix<br/>
+    /// Default: "$GFxUI.BatScanner.AceWorker"
     /// </summary>
     public unsafe BmSDK.FString TargetNameDatabasePrefix
     {
@@ -406,7 +409,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetInfoDatabasePrefix
+    /// StrProperty: TargetInfoDatabasePrefix<br/>
+    /// Default: "$GFxUI.BatScanner.AceWorkerInfoHtml"
     /// </summary>
     public unsafe BmSDK.FString TargetInfoDatabasePrefix
     {
@@ -415,7 +419,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetFoundFlagPrefix
+    /// StrProperty: TargetFoundFlagPrefix<br/>
+    /// Default: "AceWorkerFound"
     /// </summary>
     public unsafe BmSDK.FString TargetFoundFlagPrefix
     {
@@ -424,7 +429,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetSavedPrefix
+    /// StrProperty: TargetSavedPrefix<br/>
+    /// Default: "AceWorker"
     /// </summary>
     public unsafe BmSDK.FString TargetSavedPrefix
     {
@@ -433,7 +439,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// StrProperty: TargetSavedSuffix
+    /// StrProperty: TargetSavedSuffix<br/>
+    /// Default: "_Saved"
     /// </summary>
     public unsafe BmSDK.FString TargetSavedSuffix
     {
@@ -451,7 +458,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// BoolProperty: bNaturalMovementIsLeft
+    /// BoolProperty: bNaturalMovementIsLeft<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNaturalMovementIsLeft
     {
@@ -460,7 +468,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// BoolProperty: bShowTargetReadout
+    /// BoolProperty: bShowTargetReadout<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowTargetReadout
     {
@@ -514,7 +523,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeedMultiplier
+    /// FloatProperty: MinSpeedMultiplier<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MinSpeedMultiplier
     {
@@ -523,7 +533,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeedMultiplier
+    /// FloatProperty: MaxSpeedMultiplier<br/>
+    /// Default: 1.8
     /// </summary>
     public unsafe float MaxSpeedMultiplier
     {
@@ -568,7 +579,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// ObjectProperty: MovieInfo
+    /// ObjectProperty: MovieInfo<br/>
+    /// Default: HudModuleExtraAerialScanner.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie MovieInfo
     {
@@ -586,7 +598,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// ObjectProperty: MinigameFFWaveForm
+    /// ObjectProperty: MinigameFFWaveForm<br/>
+    /// Default: BmScript.Default__RSeqAct_AerialScanner.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform MinigameFFWaveForm
     {
@@ -631,7 +644,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// IntProperty: CurrentScanTarget
+    /// IntProperty: CurrentScanTarget<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentScanTarget
     {
@@ -712,7 +726,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: ScrubDeadZone
+    /// FloatProperty: ScrubDeadZone<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ScrubDeadZone
     {
@@ -739,7 +754,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: ScrubChangePeriodInverse
+    /// FloatProperty: ScrubChangePeriodInverse<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScrubChangePeriodInverse
     {
@@ -757,7 +773,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: WholeScreenMovePeriod
+    /// FloatProperty: WholeScreenMovePeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float WholeScreenMovePeriod
     {
@@ -766,7 +783,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: MaxScreenProportion
+    /// FloatProperty: MaxScreenProportion<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float MaxScreenProportion
     {
@@ -775,7 +793,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: Param_ScanDuration
+    /// FloatProperty: Param_ScanDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float Param_ScanDuration
     {
@@ -784,7 +803,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: Param_ScanFailureDuration
+    /// FloatProperty: Param_ScanFailureDuration<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float Param_ScanFailureDuration
     {
@@ -793,7 +813,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: Param_ScanSuccessDuration
+    /// FloatProperty: Param_ScanSuccessDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Param_ScanSuccessDuration
     {
@@ -802,7 +823,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: Param_ScanRadius
+    /// FloatProperty: Param_ScanRadius<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float Param_ScanRadius
     {
@@ -811,7 +833,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: Param_ScanRadiusLockon
+    /// FloatProperty: Param_ScanRadiusLockon<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float Param_ScanRadiusLockon
     {
@@ -820,7 +843,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: CurrentPlaySpeed
+    /// FloatProperty: CurrentPlaySpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentPlaySpeed
     {
@@ -829,7 +853,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: TargetPlaySpeed
+    /// FloatProperty: TargetPlaySpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TargetPlaySpeed
     {
@@ -838,7 +863,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: PlaySpeedAcceleration
+    /// FloatProperty: PlaySpeedAcceleration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PlaySpeedAcceleration
     {
@@ -856,7 +882,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: PostWinDurationBeforeReturn
+    /// FloatProperty: PostWinDurationBeforeReturn<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float PostWinDurationBeforeReturn
     {
@@ -865,7 +892,8 @@ public partial class RSeqAct_AerialScanner : BmSDK.BmGame.RSeqAct_MinigameSequen
     }
 
     /// <summary>
-    /// FloatProperty: KBMScaleFactor
+    /// FloatProperty: KBMScaleFactor<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float KBMScaleFactor
     {

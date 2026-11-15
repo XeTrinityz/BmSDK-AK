@@ -153,7 +153,8 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
     }
 
     /// <summary>
-    /// StructProperty: gunSettings
+    /// StructProperty: gunSettings<br/>
+    /// Default: (SearchType=eSGST_ConstantRotation,maxRotationRate_search=45,maxRotationRate_attack=180,timeTillMaxRotationRate_search=0.3,timeTillMaxRotationRate_attack=0.1,aimPauseTime=3,FOV=25,Range=2000,shootAngl...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSentryGunBase.FSentryGunSettings gunSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSentryGunBase.FSentryGunSettings>(Ptr + 840);

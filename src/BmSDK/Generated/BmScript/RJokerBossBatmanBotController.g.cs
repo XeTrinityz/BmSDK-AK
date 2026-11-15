@@ -580,7 +580,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// ObjectProperty: DisarmedByBatman
+    /// ObjectProperty: DisarmedByBatman<br/>
+    /// Default: Anim_Joker.SpecialMove.DisarmJoker
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig DisarmedByBatman
     {
@@ -589,7 +590,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// ObjectProperty: DisarmedByBatman180
+    /// ObjectProperty: DisarmedByBatman180<br/>
+    /// Default: Anim_Joker.SpecialMove.DisarmJoker180
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig DisarmedByBatman180
     {
@@ -682,7 +684,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// BoolProperty: bUseCameraLookForAttacks
+    /// BoolProperty: bUseCameraLookForAttacks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCameraLookForAttacks
     {
@@ -781,7 +784,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// IntProperty: NumTakeDownsForFinal
+    /// IntProperty: NumTakeDownsForFinal<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumTakeDownsForFinal
     {
@@ -799,7 +803,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenTakedowns
+    /// FloatProperty: MinTimeBetweenTakedowns<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinTimeBetweenTakedowns
     {
@@ -970,7 +975,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// FloatProperty: DotForCameraLookAtComplete
+    /// FloatProperty: DotForCameraLookAtComplete<br/>
+    /// Default: 0.95
     /// </summary>
     public unsafe float DotForCameraLookAtComplete
     {
@@ -979,7 +985,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// FloatProperty: TimeForForcedCameraLook
+    /// FloatProperty: TimeForForcedCameraLook<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float TimeForForcedCameraLook
     {
@@ -1009,7 +1016,8 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
     }
 
     /// <summary>
-    /// FloatProperty: HerringWaitTime
+    /// FloatProperty: HerringWaitTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float HerringWaitTime
     {

@@ -103,7 +103,8 @@ public partial class MaterialExpressionSphereMask : BmSDK.Engine.MaterialExpress
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 328);
 
     /// <summary>
-    /// FloatProperty: AttenuationRadius
+    /// FloatProperty: AttenuationRadius<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float AttenuationRadius
     {
@@ -112,7 +113,8 @@ public partial class MaterialExpressionSphereMask : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: HardnessPercent
+    /// FloatProperty: HardnessPercent<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float HardnessPercent
     {

@@ -74,7 +74,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: SRGB
+    /// BoolProperty: SRGB<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SRGB
     {
@@ -315,7 +316,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
     public InlineArray<float> UnpackMax => new(4, Ptr + 104, 4, this);
 
     /// <summary>
-    /// FloatProperty: UnpackMax
+    /// FloatProperty: UnpackMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UnpackMax_0
     {
@@ -323,7 +325,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 104); }
     }
     /// <summary>
-    /// FloatProperty: UnpackMax
+    /// FloatProperty: UnpackMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UnpackMax_1
     {
@@ -331,7 +334,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 108); }
     }
     /// <summary>
-    /// FloatProperty: UnpackMax
+    /// FloatProperty: UnpackMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UnpackMax_2
     {
@@ -339,7 +343,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 112); }
     }
     /// <summary>
-    /// FloatProperty: UnpackMax
+    /// FloatProperty: UnpackMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UnpackMax_3
     {
@@ -348,7 +353,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: SourceArt
+    /// StructProperty: SourceArt<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror SourceArt
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 120);
@@ -468,7 +474,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 260);
 
     /// <summary>
-    /// FloatProperty: AdjustBrightness
+    /// FloatProperty: AdjustBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AdjustBrightness
     {
@@ -477,7 +484,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdjustBrightnessCurve
+    /// FloatProperty: AdjustBrightnessCurve<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AdjustBrightnessCurve
     {
@@ -495,7 +503,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdjustSaturation
+    /// FloatProperty: AdjustSaturation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AdjustSaturation
     {
@@ -504,7 +513,8 @@ public partial class Texture : BmSDK.Engine.Surface, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdjustRGBCurve
+    /// FloatProperty: AdjustRGBCurve<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AdjustRGBCurve
     {

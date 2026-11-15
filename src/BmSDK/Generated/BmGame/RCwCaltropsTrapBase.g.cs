@@ -220,7 +220,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: CaltropsParticleSystem
+    /// ComponentProperty: CaltropsParticleSystem<br/>
+    /// Default: BmGame.Default__RCwCaltropsTrapBase.CaltropsParticleSystem0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent CaltropsParticleSystem
     {
@@ -229,7 +230,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: CurrCollisionCylinders
+    /// ArrayProperty: CurrCollisionCylinders<br/>
+    /// Default: (BmGame.Default__RCwCaltropsTrapBase.InitialCollisionCylinder)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.CylinderComponent> CurrCollisionCylinders
     {
@@ -238,7 +240,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxClusterDistance
+    /// FloatProperty: MaxClusterDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MaxClusterDistance
     {
@@ -247,7 +250,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: MinClusterNumElements
+    /// IntProperty: MinClusterNumElements<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int MinClusterNumElements
     {
@@ -256,7 +260,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ClusterCylinderRadiusMultiplier
+    /// FloatProperty: ClusterCylinderRadiusMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ClusterCylinderRadiusMultiplier
     {

@@ -291,7 +291,8 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
     }
 
     /// <summary>
-    /// StrProperty: DLCRootDir
+    /// StrProperty: DLCRootDir<br/>
+    /// Default: "../../DLC/"
     /// </summary>
     public unsafe BmSDK.FString DLCRootDir
     {

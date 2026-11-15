@@ -94,7 +94,8 @@ public partial class RRiddlerLaserDLC : BmSDK.BmScript.RRiddlerLaser, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: HitTargetPFX
+    /// ObjectProperty: HitTargetPFX<br/>
+    /// Default: EFX_RiddlerRooms.Particles.Riddler_Laser_Hit
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HitTargetPFX
     {

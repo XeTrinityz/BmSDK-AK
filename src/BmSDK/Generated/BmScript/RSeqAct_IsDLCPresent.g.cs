@@ -106,7 +106,8 @@ public partial class RSeqAct_IsDLCPresent : BmSDK.Engine.SequenceAction, BmSDK.I
     }
 
     /// <summary>
-    /// StrProperty: DLC_BundleName
+    /// StrProperty: DLC_BundleName<br/>
+    /// Default: "Catwoman"
     /// </summary>
     public unsafe BmSDK.FString DLC_BundleName
     {

@@ -188,7 +188,8 @@ public partial class RSeqAct_HelicopterGunshipCalibrateAndBegin : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// IntProperty: HelicopterArmour
+    /// IntProperty: HelicopterArmour<br/>
+    /// Default: 700
     /// </summary>
     public unsafe int HelicopterArmour
     {

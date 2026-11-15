@@ -467,7 +467,8 @@ public partial class RRiddleSolution : BmSDK.BmGame.RRiddleSolutionBase, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bScannable
+    /// BoolProperty: bScannable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bScannable
     {
@@ -494,7 +495,8 @@ public partial class RRiddleSolution : BmSDK.BmGame.RRiddleSolutionBase, BmSDK.B
     }
 
     /// <summary>
-    /// ByteProperty: OverworldHintRadius
+    /// ByteProperty: OverworldHintRadius<br/>
+    /// Default: HintRadius_Regular
     /// </summary>
     public unsafe BmSDK.BmGame.RRiddleSolution.RiddlerCameoOverworldHintRadius OverworldHintRadius
     {

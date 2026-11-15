@@ -467,7 +467,8 @@ public partial class MDualHandgunsRh : BmSDK.BmGame.MThrowGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: FireGunMove
+    /// ObjectProperty: FireGunMove<br/>
+    /// Default: WBGMDLC_Redhood_Special_Moves.Gadget.HandGun
     /// </summary>
     public unsafe BmSDK.BmGame.MSpecialMoveConfig_ShootHandGunRh FireGunMove
     {
@@ -476,7 +477,8 @@ public partial class MDualHandgunsRh : BmSDK.BmGame.MThrowGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: FireGunInCombatMove
+    /// ObjectProperty: FireGunInCombatMove<br/>
+    /// Default: WBGMDLC_Redhood_Special_Moves.Gadget.HandGunQuickFire
     /// </summary>
     public unsafe BmSDK.BmGame.MSpecialMoveConfig_ShootHandGunRh FireGunInCombatMove
     {
@@ -485,7 +487,8 @@ public partial class MDualHandgunsRh : BmSDK.BmGame.MThrowGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: BulletTrailTemplate
+    /// ObjectProperty: BulletTrailTemplate<br/>
+    /// Default: DLC_VFX_Combat.Particles.VFX__RHood_Bullet_Trail_NEW
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BulletTrailTemplate
     {

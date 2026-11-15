@@ -200,7 +200,8 @@ public partial class RPatrolPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PauseTimeMax
+    /// FloatProperty: PauseTimeMax<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PauseTimeMax
     {
@@ -209,7 +210,8 @@ public partial class RPatrolPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: RandomiseLookatOrder
+    /// BoolProperty: RandomiseLookatOrder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RandomiseLookatOrder
     {

@@ -395,7 +395,8 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// IntProperty: ClosestRecordIndex
+    /// IntProperty: ClosestRecordIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ClosestRecordIndex
     {
@@ -422,7 +423,8 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: TimeSinceDistanceCheck
+    /// FloatProperty: TimeSinceDistanceCheck<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float TimeSinceDistanceCheck
     {

@@ -147,7 +147,8 @@ public partial class RBMBehaviour_RunToCombat : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: DelayBeforeActiveCombat
+    /// FloatProperty: DelayBeforeActiveCombat<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DelayBeforeActiveCombat
     {

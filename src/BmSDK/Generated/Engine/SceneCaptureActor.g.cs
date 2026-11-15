@@ -98,7 +98,8 @@ public partial class SceneCaptureActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bKeepUpdatingInGame
+    /// BoolProperty: bKeepUpdatingInGame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKeepUpdatingInGame
     {

@@ -362,7 +362,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RVantageMineBase.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -371,7 +372,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// ComponentProperty: InteractionList
+    /// ComponentProperty: InteractionList<br/>
+    /// Default: BmGame.Default__RVantageMineBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractionList
     {
@@ -416,7 +418,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// ComponentProperty: LightFX
+    /// ComponentProperty: LightFX<br/>
+    /// Default: BmGame.Default__RVantageMineBase.VFXLightComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LightFX
     {
@@ -425,7 +428,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// ComponentProperty: VisibilityFX
+    /// ComponentProperty: VisibilityFX<br/>
+    /// Default: BmGame.Default__RVantageMineBase.VisibilityComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent VisibilityFX
     {
@@ -443,7 +447,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// FloatProperty: BoomTime
+    /// FloatProperty: BoomTime<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float BoomTime
     {
@@ -479,7 +484,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
     }
 
     /// <summary>
-    /// FloatProperty: BeamDetectRadius
+    /// FloatProperty: BeamDetectRadius<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float BeamDetectRadius
     {
@@ -500,7 +506,8 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 840);
 
     /// <summary>
-    /// FloatProperty: fNumberOfFramesUntilVantagePointIsHit
+    /// FloatProperty: fNumberOfFramesUntilVantagePointIsHit<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float fNumberOfFramesUntilVantagePointIsHit
     {

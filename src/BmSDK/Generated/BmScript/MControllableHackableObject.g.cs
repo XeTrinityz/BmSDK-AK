@@ -300,7 +300,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAllowMatineeLoop
+    /// BoolProperty: bAllowMatineeLoop<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowMatineeLoop
     {
@@ -336,7 +337,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bRumbleEnabled
+    /// BoolProperty: bRumbleEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRumbleEnabled
     {
@@ -372,7 +374,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bCanControlHackBeCanceled
+    /// BoolProperty: bCanControlHackBeCanceled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanControlHackBeCanceled
     {
@@ -399,7 +402,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -471,7 +475,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: HardStopRumble
+    /// ObjectProperty: HardStopRumble<br/>
+    /// Default: BmScript.Default__MControllableHackableObject.StartForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform HardStopRumble
     {
@@ -480,7 +485,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: MoveRumble
+    /// ObjectProperty: MoveRumble<br/>
+    /// Default: BmScript.Default__MControllableHackableObject.MoveForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform MoveRumble
     {
@@ -534,7 +540,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MatineeLength
+    /// FloatProperty: MatineeLength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeLength
     {
@@ -549,7 +556,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1080);
 
     /// <summary>
-    /// FloatProperty: MinimumForwardRatio
+    /// FloatProperty: MinimumForwardRatio<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float MinimumForwardRatio
     {
@@ -558,7 +566,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FailHackMaxSpeedRatio
+    /// FloatProperty: FailHackMaxSpeedRatio<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FailHackMaxSpeedRatio
     {
@@ -567,7 +576,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: WarningMaxSpeedRatio
+    /// FloatProperty: WarningMaxSpeedRatio<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WarningMaxSpeedRatio
     {
@@ -594,7 +604,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AudioAndRumbleStartDelay
+    /// FloatProperty: AudioAndRumbleStartDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AudioAndRumbleStartDelay
     {
@@ -695,7 +706,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SpeedUp
+    /// FloatProperty: SpeedUp<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SpeedUp
     {
@@ -704,7 +716,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SpeedDown
+    /// FloatProperty: SpeedDown<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float SpeedDown
     {
@@ -728,7 +741,8 @@ public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.MControllableHackableObject.FMatineePhaseDefine>(Ptr + 1192);
 
     /// <summary>
-    /// FloatProperty: PhaseTransitionSmoothingProgress
+    /// FloatProperty: PhaseTransitionSmoothingProgress<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float PhaseTransitionSmoothingProgress
     {

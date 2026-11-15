@@ -213,7 +213,8 @@ public partial class RPlinthCollarKey : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: SkelKey
+    /// ComponentProperty: SkelKey<br/>
+    /// Default: BmScript.Default__RPlinthCollarKey.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkelKey
     {
@@ -258,7 +259,8 @@ public partial class RPlinthCollarKey : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// ArrayProperty: AllowedAnglesInDeg
+    /// ArrayProperty: AllowedAnglesInDeg<br/>
+    /// Default: (0,90,180,270)
     /// </summary>
     public unsafe BmSDK.TArray<float> AllowedAnglesInDeg
     {

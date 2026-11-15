@@ -97,7 +97,8 @@ public partial class LandscapeLayerInfoObject : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: Hardness
+    /// FloatProperty: Hardness<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Hardness
     {

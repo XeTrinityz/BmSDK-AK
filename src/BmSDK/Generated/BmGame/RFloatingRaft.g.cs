@@ -408,7 +408,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: HarpoonPullMove
+    /// ObjectProperty: HarpoonPullMove<br/>
+    /// Default: Batman_Gadget_Moves.HarpoonGun.HarpoonDragFloatingBoat
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig HarpoonPullMove
     {
@@ -417,7 +418,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: FromShorePullMove
+    /// ObjectProperty: FromShorePullMove<br/>
+    /// Default: Batman_Gadget_Moves.HarpoonGun.HarpoonDragFloatingBoatFromShore
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig FromShorePullMove
     {
@@ -545,7 +547,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactRumble
+    /// ObjectProperty: ImpactRumble<br/>
+    /// Default: BmGame.Default__RFloatingRaft.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ImpactRumble
     {
@@ -554,7 +557,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: GrinderRumble
+    /// ObjectProperty: GrinderRumble<br/>
+    /// Default: BmGame.Default__RFloatingRaft.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform GrinderRumble
     {
@@ -563,7 +567,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: BatclawInteraction
+    /// ComponentProperty: BatclawInteraction<br/>
+    /// Default: BmGame.Default__RFloatingRaft.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatclawInteraction
     {
@@ -572,7 +577,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderAttractor
+    /// ComponentProperty: CylinderAttractor<br/>
+    /// Default: BmGame.Default__RFloatingRaft.CylinderAttractor
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderAttractor
     {
@@ -581,7 +587,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ForceApplicationBaseOffsetProportion
+    /// FloatProperty: ForceApplicationBaseOffsetProportion<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float ForceApplicationBaseOffsetProportion
     {
@@ -596,7 +603,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1064);
 
     /// <summary>
-    /// FloatProperty: fMaximumOceanChoppicityThatRaftCanSpawnIn
+    /// FloatProperty: fMaximumOceanChoppicityThatRaftCanSpawnIn<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fMaximumOceanChoppicityThatRaftCanSpawnIn
     {
@@ -614,7 +622,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: CurrentSavedLocation
+    /// IntProperty: CurrentSavedLocation<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentSavedLocation
     {
@@ -680,7 +689,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1116);
 
     /// <summary>
-    /// FloatProperty: LastGrinderHitTime
+    /// FloatProperty: LastGrinderHitTime<br/>
+    /// Default: -99999
     /// </summary>
     public unsafe float LastGrinderHitTime
     {
@@ -689,7 +699,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: GrinderPushPeakTime
+    /// FloatProperty: GrinderPushPeakTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float GrinderPushPeakTime
     {
@@ -698,7 +709,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: GrinderPushPeakDuration
+    /// FloatProperty: GrinderPushPeakDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GrinderPushPeakDuration
     {
@@ -707,7 +719,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: GrinderPushDuration
+    /// FloatProperty: GrinderPushDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GrinderPushDuration
     {
@@ -716,7 +729,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: GrinderPushMaxForce
+    /// FloatProperty: GrinderPushMaxForce<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float GrinderPushMaxForce
     {
@@ -725,7 +739,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: GrinderPushImpulse
+    /// FloatProperty: GrinderPushImpulse<br/>
+    /// Default: 175
     /// </summary>
     public unsafe float GrinderPushImpulse
     {
@@ -752,7 +767,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: MaxHealth
+    /// IntProperty: MaxHealth<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxHealth
     {
@@ -761,7 +777,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: Shaker
+    /// StructProperty: Shaker<br/>
+    /// Default: (TimeDuration=0.75,LocAmplitude=(X=50,Y=50,Z=60),LocFrequency=(X=0.5,Y=2,Z=1),RotAmplitude=(X=1000,Y=500,Z=6000),RotFrequency=(X=2.5,Y=2.5,Z=2.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Fallof...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shaker
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1176);
@@ -813,7 +830,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     public InlineArray<float> WakeScales => new(4, Ptr + 1396, 4, this);
 
     /// <summary>
-    /// FloatProperty: WakeScales
+    /// FloatProperty: WakeScales<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WakeScales_0
     {
@@ -821,7 +839,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1396); }
     }
     /// <summary>
-    /// FloatProperty: WakeScales
+    /// FloatProperty: WakeScales<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WakeScales_1
     {
@@ -829,7 +848,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1400); }
     }
     /// <summary>
-    /// FloatProperty: WakeScales
+    /// FloatProperty: WakeScales<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WakeScales_2
     {
@@ -837,7 +857,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1404); }
     }
     /// <summary>
-    /// FloatProperty: WakeScales
+    /// FloatProperty: WakeScales<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WakeScales_3
     {
@@ -884,7 +905,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: impactRumbleVelocityThreshold
+    /// FloatProperty: impactRumbleVelocityThreshold<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float impactRumbleVelocityThreshold
     {

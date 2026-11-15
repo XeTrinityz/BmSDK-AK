@@ -93,7 +93,8 @@ public partial class RRiddlerMechForceFieldSource : BmSDK.Engine.Actor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: SourceFx
+    /// ComponentProperty: SourceFx<br/>
+    /// Default: BmScript.Default__RRiddlerMechForceFieldSource.NewSourceFx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SourceFx
     {

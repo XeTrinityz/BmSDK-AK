@@ -88,7 +88,8 @@ public partial class RInterpTrackInstCape : BmSDK.Engine.InterpTrackInst, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: fSeekPos
+    /// FloatProperty: fSeekPos<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fSeekPos
     {

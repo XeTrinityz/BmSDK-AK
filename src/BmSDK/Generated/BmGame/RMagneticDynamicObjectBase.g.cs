@@ -299,7 +299,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: MassFactor
+    /// FloatProperty: MassFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MassFactor
     {
@@ -308,7 +309,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: OverrideAttractImpulse
+    /// FloatProperty: OverrideAttractImpulse<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideAttractImpulse
     {
@@ -317,7 +319,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRepelImpulse
+    /// FloatProperty: OverrideRepelImpulse<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideRepelImpulse
     {
@@ -326,7 +329,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: OverrideAttractForce
+    /// FloatProperty: OverrideAttractForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideAttractForce
     {
@@ -335,7 +339,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRepelForce
+    /// FloatProperty: OverrideRepelForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideRepelForce
     {
@@ -380,7 +385,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: MaxAcceleration
+    /// FloatProperty: MaxAcceleration<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxAcceleration
     {
@@ -389,7 +395,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// FloatProperty: MinMagStrength
+    /// FloatProperty: MinMagStrength<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinMagStrength
     {
@@ -434,7 +441,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
     }
 
     /// <summary>
-    /// IntProperty: CurrentSavedLocation
+    /// IntProperty: CurrentSavedLocation<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentSavedLocation
     {

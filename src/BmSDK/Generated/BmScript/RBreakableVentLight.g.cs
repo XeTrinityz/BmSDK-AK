@@ -93,7 +93,8 @@ public partial class RBreakableVentLight : BmSDK.BmGame.RBreakableVentLightBase,
     }
 
     /// <summary>
-    /// ComponentProperty: LightComp
+    /// ComponentProperty: LightComp<br/>
+    /// Default: BmScript.Default__RBreakableVentLight.PointLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent LightComp
     {

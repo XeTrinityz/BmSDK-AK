@@ -106,7 +106,8 @@ public partial class RSeqAct_LapCounter : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: maxLap
+    /// IntProperty: maxLap<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int maxLap
     {
@@ -115,7 +116,8 @@ public partial class RSeqAct_LapCounter : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: LapCount
+    /// IntProperty: LapCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int LapCount
     {
@@ -124,7 +126,8 @@ public partial class RSeqAct_LapCounter : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: StartLap
+    /// IntProperty: StartLap<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int StartLap
     {

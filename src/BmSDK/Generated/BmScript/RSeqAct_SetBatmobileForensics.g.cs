@@ -582,7 +582,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// StrProperty: ForensicTrailStringForFlash
+    /// StrProperty: ForensicTrailStringForFlash<br/>
+    /// Default: "Ch3_Main_1_Sub_5_OM"
     /// </summary>
     public unsafe BmSDK.FString ForensicTrailStringForFlash
     {
@@ -798,7 +799,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// IntProperty: RevealAllBeforeThisInt
+    /// IntProperty: RevealAllBeforeThisInt<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RevealAllBeforeThisInt
     {
@@ -843,7 +845,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: PulseRange
+    /// FloatProperty: PulseRange<br/>
+    /// Default: 7500
     /// </summary>
     public unsafe float PulseRange
     {
@@ -852,7 +855,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: PulseRangeForFinal
+    /// FloatProperty: PulseRangeForFinal<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float PulseRangeForFinal
     {
@@ -861,7 +865,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: PulseSpeed
+    /// FloatProperty: PulseSpeed<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float PulseSpeed
     {
@@ -870,7 +875,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: PulseConeHalfWidthRadians
+    /// FloatProperty: PulseConeHalfWidthRadians<br/>
+    /// Default: 0.44
     /// </summary>
     public unsafe float PulseConeHalfWidthRadians
     {
@@ -900,7 +906,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 580);
 
     /// <summary>
-    /// FloatProperty: PulseTempCountdown
+    /// FloatProperty: PulseTempCountdown<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PulseTempCountdown
     {
@@ -945,7 +952,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// IntProperty: BestRevealedIndex
+    /// IntProperty: BestRevealedIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BestRevealedIndex
     {
@@ -963,7 +971,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// IntProperty: ForensicLightIndex
+    /// IntProperty: ForensicLightIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForensicLightIndex
     {
@@ -981,7 +990,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: FadeLerpSpeed
+    /// FloatProperty: FadeLerpSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float FadeLerpSpeed
     {
@@ -990,7 +1000,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: ObjectiveMarkerAppearsWhenThisFarFromPath
+    /// FloatProperty: ObjectiveMarkerAppearsWhenThisFarFromPath<br/>
+    /// Default: 7500
     /// </summary>
     public unsafe float ObjectiveMarkerAppearsWhenThisFarFromPath
     {
@@ -1008,7 +1019,8 @@ public partial class RSeqAct_SetBatmobileForensics : BmSDK.BmGame.RSeqAct_SetBat
     }
 
     /// <summary>
-    /// FloatProperty: ObjectiveMarkerDisappearsWhenThisFarFromPath
+    /// FloatProperty: ObjectiveMarkerDisappearsWhenThisFarFromPath<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float ObjectiveMarkerDisappearsWhenThisFarFromPath
     {

@@ -200,7 +200,8 @@ public partial class EmitterCameraLensEffectBase : BmSDK.Engine.Emitter, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BaseFOV
+    /// FloatProperty: BaseFOV<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float BaseFOV
     {
@@ -209,7 +210,8 @@ public partial class EmitterCameraLensEffectBase : BmSDK.Engine.Emitter, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DistFromCamera
+    /// FloatProperty: DistFromCamera<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float DistFromCamera
     {

@@ -119,7 +119,8 @@ public partial class AnimNotify_PlayParticleEffect : BmSDK.Engine.AnimNotify, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bSkipIfOwnerIsHidden
+    /// BoolProperty: bSkipIfOwnerIsHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipIfOwnerIsHidden
     {
@@ -146,7 +147,8 @@ public partial class AnimNotify_PlayParticleEffect : BmSDK.Engine.AnimNotify, Bm
     }
 
     /// <summary>
-    /// NameProperty: BoneSocketModuleActorName
+    /// NameProperty: BoneSocketModuleActorName<br/>
+    /// Default: BoneSocketActor
     /// </summary>
     public unsafe BmSDK.FName BoneSocketModuleActorName
     {

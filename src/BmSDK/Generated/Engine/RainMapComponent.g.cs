@@ -94,7 +94,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: WetnessGlobalScale
+    /// FloatProperty: WetnessGlobalScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WetnessGlobalScale
     {
@@ -103,7 +104,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MinimumDampAmount
+    /// FloatProperty: MinimumDampAmount<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MinimumDampAmount
     {
@@ -112,7 +114,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: DampThreshold
+    /// FloatProperty: DampThreshold<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DampThreshold
     {
@@ -121,7 +124,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: PuddleThreshold
+    /// FloatProperty: PuddleThreshold<br/>
+    /// Default: 1.1
     /// </summary>
     public unsafe float PuddleThreshold
     {
@@ -130,7 +134,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: Darkening
+    /// FloatProperty: Darkening<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Darkening
     {
@@ -139,7 +144,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RainWakeFrequency
+    /// FloatProperty: RainWakeFrequency<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float RainWakeFrequency
     {
@@ -148,7 +154,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RainWakeAmount
+    /// FloatProperty: RainWakeAmount<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float RainWakeAmount
     {
@@ -157,7 +164,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RainWakeSpeed
+    /// FloatProperty: RainWakeSpeed<br/>
+    /// Default: 14
     /// </summary>
     public unsafe float RainWakeSpeed
     {
@@ -166,7 +174,8 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RainWakeVariation
+    /// FloatProperty: RainWakeVariation<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RainWakeVariation
     {

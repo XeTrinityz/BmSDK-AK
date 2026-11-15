@@ -1028,7 +1028,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxShortensPerFrame
+    /// IntProperty: MaxShortensPerFrame<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxShortensPerFrame
     {

@@ -267,7 +267,8 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// DelegateProperty: __OnInitialize__Delegate
+    /// DelegateProperty: __OnInitialize__Delegate<br/>
+    /// Default: Initialized
     /// </summary>
     public unsafe BmSDK.FScriptDelegate __OnInitialize__Delegate
     {

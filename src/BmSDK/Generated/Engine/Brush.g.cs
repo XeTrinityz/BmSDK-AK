@@ -173,7 +173,8 @@ public partial class Brush : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: BrushComponent
+    /// ComponentProperty: BrushComponent<br/>
+    /// Default: Engine.Default__Brush.BrushComponent0
     /// </summary>
     public unsafe BmSDK.Engine.BrushComponent BrushComponent
     {

@@ -4481,7 +4481,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     public partial record struct FScenarioID
     {
         /// <summary>
-        /// IntProperty: Idx
+        /// IntProperty: Idx<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int Idx
         {
@@ -4647,7 +4648,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxRiotPawns
+    /// IntProperty: MaxRiotPawns<br/>
+    /// Default: 90
     /// </summary>
     public unsafe int MaxRiotPawns
     {
@@ -4656,7 +4658,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PopulationMinActivateDist
+    /// FloatProperty: PopulationMinActivateDist<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float PopulationMinActivateDist
     {
@@ -4665,7 +4668,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PopulationMinDeactivateDist
+    /// FloatProperty: PopulationMinDeactivateDist<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float PopulationMinDeactivateDist
     {
@@ -4674,7 +4678,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PopulationMinBackwardsDeactivateDist
+    /// FloatProperty: PopulationMinBackwardsDeactivateDist<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float PopulationMinBackwardsDeactivateDist
     {
@@ -4683,7 +4688,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PopulationMaxCosAngle
+    /// FloatProperty: PopulationMaxCosAngle<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PopulationMaxCosAngle
     {
@@ -4728,7 +4734,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinDistBetweenMilitiaCheckpointsAndRiotZones
+    /// FloatProperty: MinDistBetweenMilitiaCheckpointsAndRiotZones<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float MinDistBetweenMilitiaCheckpointsAndRiotZones
     {
@@ -4746,7 +4753,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenBatmobileMobs
+    /// FloatProperty: MinTimeBetweenBatmobileMobs<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MinTimeBetweenBatmobileMobs
     {
@@ -4824,7 +4832,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseUmbraForRioterSpawning
+    /// BoolProperty: bUseUmbraForRioterSpawning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseUmbraForRioterSpawning
     {
@@ -4842,7 +4851,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDebugRiotZoneVisualisation_Thugs
+    /// BoolProperty: bDebugRiotZoneVisualisation_Thugs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugRiotZoneVisualisation_Thugs
     {
@@ -4851,7 +4861,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDebugRiotZoneVisualisation_RiotPoints
+    /// BoolProperty: bDebugRiotZoneVisualisation_RiotPoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugRiotZoneVisualisation_RiotPoints
     {
@@ -5004,7 +5015,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUsePawnPooling
+    /// BoolProperty: bUsePawnPooling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsePawnPooling
     {
@@ -5022,7 +5034,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseWeaponPooling
+    /// BoolProperty: bUseWeaponPooling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseWeaponPooling
     {
@@ -5040,7 +5053,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseWeaponConfigPool
+    /// BoolProperty: bUseWeaponConfigPool<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseWeaponConfigPool
     {
@@ -5085,7 +5099,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxStasisPawnsToDisplay
+    /// IntProperty: MaxStasisPawnsToDisplay<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int MaxStasisPawnsToDisplay
     {
@@ -5094,7 +5109,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: RunAwayBehaviourClass
+    /// ClassProperty: RunAwayBehaviourClass<br/>
+    /// Default: BmGame.RBMBehaviour_AvoidanceRunAway
     /// </summary>
     public unsafe BmSDK.Class RunAwayBehaviourClass
     {
@@ -5130,7 +5146,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DebugRiotZoneVisualisationScale
+    /// FloatProperty: DebugRiotZoneVisualisationScale<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float DebugRiotZoneVisualisationScale
     {
@@ -5139,7 +5156,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BatmobilePawnCountMultiplier
+    /// FloatProperty: BatmobilePawnCountMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BatmobilePawnCountMultiplier
     {
@@ -5148,7 +5166,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NonBatmobilePawnCountMultiplier
+    /// FloatProperty: NonBatmobilePawnCountMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NonBatmobilePawnCountMultiplier
     {
@@ -5211,7 +5230,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScenarios_TimeBetweenSpawns
+    /// FloatProperty: VehicleScenarios_TimeBetweenSpawns<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float VehicleScenarios_TimeBetweenSpawns
     {
@@ -5220,7 +5240,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScenarios_MinLifeTime
+    /// FloatProperty: VehicleScenarios_MinLifeTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float VehicleScenarios_MinLifeTime
     {
@@ -5229,7 +5250,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScenarios_SpawnChance
+    /// FloatProperty: VehicleScenarios_SpawnChance<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float VehicleScenarios_SpawnChance
     {
@@ -5238,7 +5260,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScenarios_RiotSpawnTimout
+    /// FloatProperty: VehicleScenarios_RiotSpawnTimout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float VehicleScenarios_RiotSpawnTimout
     {
@@ -5247,7 +5270,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_MaxScenarios
+    /// IntProperty: VehicleScenarios_MaxScenarios<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int VehicleScenarios_MaxScenarios
     {
@@ -5274,7 +5298,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_VehicleRadius
+    /// IntProperty: VehicleScenarios_VehicleRadius<br/>
+    /// Default: 11000
     /// </summary>
     public unsafe int VehicleScenarios_VehicleRadius
     {
@@ -5283,7 +5308,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_VehicleSpawnRadius
+    /// IntProperty: VehicleScenarios_VehicleSpawnRadius<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int VehicleScenarios_VehicleSpawnRadius
     {
@@ -5292,7 +5318,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_VehicleSpawnAvoidRadius
+    /// IntProperty: VehicleScenarios_VehicleSpawnAvoidRadius<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe int VehicleScenarios_VehicleSpawnAvoidRadius
     {
@@ -5301,7 +5328,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScenarios_RespawnAfterDeathTime
+    /// FloatProperty: VehicleScenarios_RespawnAfterDeathTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float VehicleScenarios_RespawnAfterDeathTime
     {
@@ -5310,7 +5338,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_EnterFightThugsLimit
+    /// IntProperty: VehicleScenarios_EnterFightThugsLimit<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int VehicleScenarios_EnterFightThugsLimit
     {
@@ -5319,7 +5348,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VehicleScenarios_EnterFightVehiclesLimit
+    /// IntProperty: VehicleScenarios_EnterFightVehiclesLimit<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int VehicleScenarios_EnterFightVehiclesLimit
     {
@@ -5415,7 +5445,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1028);
 
     /// <summary>
-    /// FloatProperty: LocalPopulationRadius
+    /// FloatProperty: LocalPopulationRadius<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float LocalPopulationRadius
     {
@@ -5424,13 +5455,15 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: StoredScenarioID
+    /// StructProperty: StoredScenarioID<br/>
+    /// Default: (Idx=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPopulationManager.FScenarioID StoredScenarioID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPopulationManager.FScenarioID>(Ptr + 1044);
 
     /// <summary>
-    /// IntProperty: StoredDistrictID
+    /// IntProperty: StoredDistrictID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int StoredDistrictID
     {
@@ -5448,7 +5481,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DronePopulationFallOffStart
+    /// FloatProperty: DronePopulationFallOffStart<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DronePopulationFallOffStart
     {
@@ -5457,7 +5491,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DronePopulationFallOffMax
+    /// FloatProperty: DronePopulationFallOffMax<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DronePopulationFallOffMax
     {
@@ -5520,7 +5555,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: APCInfos
+    /// ArrayProperty: APCInfos<br/>
+    /// Default: ((APCSideStoryScenarioInfo=(MaxActiveInstances=-1,bUseMaxInstances=1),TimeBetweenAPCsWhenSeen=150,TimeBetweenAPCsWhenSeenForWheel=15,TimeBetweenAPCsWhenDestroyedForWheel=300,TimeBetweenAPCsWhenDestroy...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPersistentData.FAPCSideStoryInfo> APCInfos
     {
@@ -5529,7 +5565,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ExtraCarScenarios
+    /// ArrayProperty: ExtraCarScenarios<br/>
+    /// Default: (Vehicle_Scenarios.Cop_Being_Chased_Scenario,Vehicle_Scenarios.Cop_Chasing_Car_Scenario)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleScenario> ExtraCarScenarios
     {
@@ -5538,7 +5575,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ExtraCarScenarioMinTimeBetween
+    /// FloatProperty: ExtraCarScenarioMinTimeBetween<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ExtraCarScenarioMinTimeBetween
     {
@@ -5547,7 +5585,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ExtraCarScenarioMaxTimeBetween
+    /// FloatProperty: ExtraCarScenarioMaxTimeBetween<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float ExtraCarScenarioMaxTimeBetween
     {
@@ -5619,7 +5658,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WandererSpawnDist
+    /// FloatProperty: WandererSpawnDist<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float WandererSpawnDist
     {
@@ -5628,7 +5668,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WandererDeleteDist
+    /// FloatProperty: WandererDeleteDist<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float WandererDeleteDist
     {
@@ -5637,7 +5678,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxJokersAllowedInRiots
+    /// IntProperty: MaxJokersAllowedInRiots<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxJokersAllowedInRiots
     {
@@ -5646,7 +5688,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerTimeBetweenRiotAppearance
+    /// IntProperty: JokerTimeBetweenRiotAppearance<br/>
+    /// Default: 300
     /// </summary>
     public unsafe int JokerTimeBetweenRiotAppearance
     {
@@ -5655,7 +5698,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerTimeBetweenRiotChances
+    /// IntProperty: JokerTimeBetweenRiotChances<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int JokerTimeBetweenRiotChances
     {
@@ -5664,7 +5708,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerInRiotPercChance
+    /// FloatProperty: JokerInRiotPercChance<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float JokerInRiotPercChance
     {
@@ -5691,7 +5736,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinDistForJoker
+    /// FloatProperty: MinDistForJoker<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinDistForJoker
     {
@@ -5700,7 +5746,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistForJoker
+    /// FloatProperty: MaxDistForJoker<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxDistForJoker
     {
@@ -5709,7 +5756,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RiddlerInformantTimeMin
+    /// FloatProperty: RiddlerInformantTimeMin<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RiddlerInformantTimeMin
     {
@@ -5718,7 +5766,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RiddlerInformantTimeMax
+    /// FloatProperty: RiddlerInformantTimeMax<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RiddlerInformantTimeMax
     {
@@ -5763,7 +5812,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThreatWarningAmount
+    /// FloatProperty: ThreatWarningAmount<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float ThreatWarningAmount
     {
@@ -5790,7 +5840,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ThreatAssetContainers
+    /// ArrayProperty: ThreatAssetContainers<br/>
+    /// Default: (Game_ThreatLevelAssets.CityX.CityXThreatAsset,Game_ThreatLevelAssets.CityY.CityYThreatAsset,Game_ThreatLevelAssets.CityZ.CityZThreatAsset)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RCityBlockThreatAsset> ThreatAssetContainers
     {
@@ -5835,7 +5886,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ThugCharacterDefines
+    /// ArrayProperty: ThugCharacterDefines<br/>
+    /// Default: (ThugDefines.Rioters.RioterThug1_NoGM_CITY,ThugDefines.Rioters.RioterThug1_NoGM_CITY,ThugDefines.Rioters.RioterThug1_GM_CITY,ThugDefines.penguin.PenguinThug1_CITY,ThugDefines.penguin.PenguinThug1_CITY...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RCharacterDefine> ThugCharacterDefines
     {
@@ -5844,7 +5896,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ThugPoolSize
+    /// IntProperty: ThugPoolSize<br/>
+    /// Default: 120
     /// </summary>
     public unsafe int ThugPoolSize
     {
@@ -5853,7 +5906,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MilitiaCharacterDefines
+    /// ArrayProperty: MilitiaCharacterDefines<br/>
+    /// Default: (ThugDefines.Redhood.RedHood_Militia_CITY)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RCharacterDefine> MilitiaCharacterDefines
     {
@@ -5862,7 +5916,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MilitiaPoolSize
+    /// IntProperty: MilitiaPoolSize<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int MilitiaPoolSize
     {
@@ -5880,7 +5935,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WeaponPoolSize
+    /// IntProperty: WeaponPoolSize<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int WeaponPoolSize
     {
@@ -5889,7 +5945,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: WeaponPoolTypes
+    /// ArrayProperty: WeaponPoolTypes<br/>
+    /// Default: (BmGame.RBMWeaponBatBase,BmGame.RBMWeaponCombatRifleBase)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Class> WeaponPoolTypes
     {
@@ -5925,7 +5982,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RiddlerInformantPostInterrogateTimer
+    /// FloatProperty: RiddlerInformantPostInterrogateTimer<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float RiddlerInformantPostInterrogateTimer
     {

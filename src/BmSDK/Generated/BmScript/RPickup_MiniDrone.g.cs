@@ -245,7 +245,8 @@ public partial class RPickup_MiniDrone : BmSDK.BmGame.RPickup_MiniDroneBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmScript.Default__RPickup_MiniDrone.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -254,7 +255,8 @@ public partial class RPickup_MiniDrone : BmSDK.BmGame.RPickup_MiniDroneBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeFX
+    /// ObjectProperty: ExplodeFX<br/>
+    /// Default: VFX_Weapon.Particles.SpiderDrone_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplodeFX
     {
@@ -263,7 +265,8 @@ public partial class RPickup_MiniDrone : BmSDK.BmGame.RPickup_MiniDroneBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: LoopSfx
+    /// ObjectProperty: LoopSfx<br/>
+    /// Default: Ww_OBJ_LittleWallRobot.Play_Little_Wall_Robot_Amb
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoopSfx
     {
@@ -272,7 +275,8 @@ public partial class RPickup_MiniDrone : BmSDK.BmGame.RPickup_MiniDroneBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeSfx
+    /// ObjectProperty: ExplodeSfx<br/>
+    /// Default: Ww_OBJ_LittleWallRobot.Play_Little_Wall_Robot_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeSfx
     {
@@ -308,7 +312,8 @@ public partial class RPickup_MiniDrone : BmSDK.BmGame.RPickup_MiniDroneBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: ChainHealth
+    /// IntProperty: ChainHealth<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int ChainHealth
     {

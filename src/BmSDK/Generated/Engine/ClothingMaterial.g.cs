@@ -97,7 +97,8 @@ public partial class ClothingMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumOfCalculatedVertices
+    /// IntProperty: NumOfCalculatedVertices<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int NumOfCalculatedVertices
     {

@@ -239,7 +239,8 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowDetectiveModeBeacon
+    /// BoolProperty: bShowDetectiveModeBeacon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowDetectiveModeBeacon
     {

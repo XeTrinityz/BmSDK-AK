@@ -79,7 +79,8 @@ public partial class ParticleModuleSpawnPerUnit : BmSDK.Engine.ParticleModuleSpa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: UnitScalar
+    /// FloatProperty: UnitScalar<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float UnitScalar
     {
@@ -88,7 +89,8 @@ public partial class ParticleModuleSpawnPerUnit : BmSDK.Engine.ParticleModuleSpa
     }
 
     /// <summary>
-    /// StructProperty: SpawnPerUnit
+    /// StructProperty: SpawnPerUnit<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleSpawnPerUnit.RequiredDistributionSpawnPerUnit)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SpawnPerUnit
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 104);
@@ -130,7 +132,8 @@ public partial class ParticleModuleSpawnPerUnit : BmSDK.Engine.ParticleModuleSpa
     }
 
     /// <summary>
-    /// FloatProperty: MovementTolerance
+    /// FloatProperty: MovementTolerance<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MovementTolerance
     {
@@ -139,7 +142,8 @@ public partial class ParticleModuleSpawnPerUnit : BmSDK.Engine.ParticleModuleSpa
     }
 
     /// <summary>
-    /// FloatProperty: MaxFrameDistance
+    /// FloatProperty: MaxFrameDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxFrameDistance
     {

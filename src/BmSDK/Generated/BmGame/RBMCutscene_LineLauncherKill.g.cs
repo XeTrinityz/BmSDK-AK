@@ -202,7 +202,8 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CamTimer
     {
@@ -229,7 +230,8 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeed
+    /// FloatProperty: UpSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float UpSpeed
     {
@@ -238,7 +240,8 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeedDecel
+    /// FloatProperty: UpSpeedDecel<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float UpSpeedDecel
     {
@@ -247,7 +250,8 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeed
+    /// FloatProperty: FOVSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FOVSpeed
     {
@@ -256,7 +260,8 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeedDecel
+    /// FloatProperty: FOVSpeedDecel<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float FOVSpeedDecel
     {

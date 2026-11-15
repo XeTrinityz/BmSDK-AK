@@ -199,7 +199,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// NameProperty: PlayerCharacterName
+    /// NameProperty: PlayerCharacterName<br/>
+    /// Default: Playable_Batman
     /// </summary>
     public unsafe BmSDK.FName PlayerCharacterName
     {
@@ -226,7 +227,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: LoadSlot
+    /// IntProperty: LoadSlot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LoadSlot
     {
@@ -235,7 +237,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: TransferSlot
+    /// IntProperty: TransferSlot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TransferSlot
     {

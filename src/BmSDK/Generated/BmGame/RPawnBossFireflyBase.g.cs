@@ -1041,7 +1041,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     public InlineArray<BmSDK.FString> encounterCompleteFlagNames => new(3, Ptr + 6780, 16, this);
 
     /// <summary>
-    /// StrProperty: encounterCompleteFlagNames
+    /// StrProperty: encounterCompleteFlagNames<br/>
+    /// Default: "SS_Firefly_CityX_Complete"
     /// </summary>
     public unsafe BmSDK.FString encounterCompleteFlagNames_0
     {
@@ -1049,7 +1050,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6780); }
     }
     /// <summary>
-    /// StrProperty: encounterCompleteFlagNames
+    /// StrProperty: encounterCompleteFlagNames<br/>
+    /// Default: "SS_Firefly_CityY_Complete"
     /// </summary>
     public unsafe BmSDK.FString encounterCompleteFlagNames_1
     {
@@ -1057,7 +1059,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6796); }
     }
     /// <summary>
-    /// StrProperty: encounterCompleteFlagNames
+    /// StrProperty: encounterCompleteFlagNames<br/>
+    /// Default: "SS_Firefly_CityZ_Complete"
     /// </summary>
     public unsafe BmSDK.FString encounterCompleteFlagNames_2
     {
@@ -1084,7 +1087,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: targetVFXZOffset
+    /// FloatProperty: targetVFXZOffset<br/>
+    /// Default: -170
     /// </summary>
     public unsafe float targetVFXZOffset
     {
@@ -1102,7 +1106,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: targetLinePulseStartDist
+    /// FloatProperty: targetLinePulseStartDist<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float targetLinePulseStartDist
     {
@@ -1111,7 +1116,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: targetLinePulsePeriod_Max
+    /// FloatProperty: targetLinePulsePeriod_Max<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float targetLinePulsePeriod_Max
     {
@@ -1120,7 +1126,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: targetLinePulsePeriod_Min
+    /// FloatProperty: targetLinePulsePeriod_Min<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float targetLinePulsePeriod_Min
     {
@@ -1141,7 +1148,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6868);
 
     /// <summary>
-    /// FloatProperty: HorizontalRubberbandingPeriod
+    /// FloatProperty: HorizontalRubberbandingPeriod<br/>
+    /// Default: 1.8
     /// </summary>
     public unsafe float HorizontalRubberbandingPeriod
     {
@@ -1150,7 +1158,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxHorizontalAcceleration
+    /// FloatProperty: MaxHorizontalAcceleration<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxHorizontalAcceleration
     {
@@ -1159,7 +1168,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: VerticalRubberbandingPeriod
+    /// FloatProperty: VerticalRubberbandingPeriod<br/>
+    /// Default: 1.8
     /// </summary>
     public unsafe float VerticalRubberbandingPeriod
     {
@@ -1168,7 +1178,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxVerticalAcceleration
+    /// FloatProperty: MaxVerticalAcceleration<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxVerticalAcceleration
     {
@@ -1207,7 +1218,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rollRateMax
+    /// FloatProperty: rollRateMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float rollRateMax
     {
@@ -1216,7 +1228,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rollRateTimeTillMax
+    /// FloatProperty: rollRateTimeTillMax<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float rollRateTimeTillMax
     {
@@ -1225,7 +1238,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: turnAnimRateOfChange
+    /// FloatProperty: turnAnimRateOfChange<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float turnAnimRateOfChange
     {
@@ -1234,7 +1248,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rollAnimMultiplier
+    /// FloatProperty: rollAnimMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float rollAnimMultiplier
     {
@@ -1243,7 +1258,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: codeRollMaxDeg
+    /// FloatProperty: codeRollMaxDeg<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float codeRollMaxDeg
     {
@@ -1252,7 +1268,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: yawChangeRate
+    /// FloatProperty: yawChangeRate<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float yawChangeRate
     {
@@ -1261,7 +1278,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: animForwardMin
+    /// FloatProperty: animForwardMin<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float animForwardMin
     {
@@ -1270,7 +1288,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: animForwardMax
+    /// FloatProperty: animForwardMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float animForwardMax
     {
@@ -1288,7 +1307,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rotV2_DYawDegreesRequiredForMaxRoll
+    /// FloatProperty: rotV2_DYawDegreesRequiredForMaxRoll<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float rotV2_DYawDegreesRequiredForMaxRoll
     {
@@ -1297,7 +1317,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rotV2_RollAccelTime
+    /// FloatProperty: rotV2_RollAccelTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float rotV2_RollAccelTime
     {
@@ -1306,7 +1327,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: rotV2_RollDrivingYawRate
+    /// FloatProperty: rotV2_RollDrivingYawRate<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float rotV2_RollDrivingYawRate
     {
@@ -1348,7 +1370,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 7000);
 
     /// <summary>
-    /// FloatProperty: minSmokeSpawnRate
+    /// FloatProperty: minSmokeSpawnRate<br/>
+    /// Default: 0.03
     /// </summary>
     public unsafe float minSmokeSpawnRate
     {
@@ -1357,7 +1380,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: maxSmokeRateVelocity
+    /// FloatProperty: maxSmokeRateVelocity<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float maxSmokeRateVelocity
     {
@@ -1420,7 +1444,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: boostParamMax
+    /// FloatProperty: boostParamMax<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float boostParamMax
     {
@@ -1429,7 +1454,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: boostParamScale
+    /// FloatProperty: boostParamScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float boostParamScale
     {
@@ -1438,7 +1464,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: boostEffectThreshold
+    /// FloatProperty: boostEffectThreshold<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float boostEffectThreshold
     {
@@ -1447,7 +1474,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: boostEffectDuration
+    /// FloatProperty: boostEffectDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float boostEffectDuration
     {
@@ -1456,7 +1484,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: minTimeBetweenBoostEffects
+    /// FloatProperty: minTimeBetweenBoostEffects<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float minTimeBetweenBoostEffects
     {
@@ -1465,7 +1494,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: energyShrinkPeriod
+    /// FloatProperty: energyShrinkPeriod<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float energyShrinkPeriod
     {
@@ -1474,7 +1504,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: energyProportion
+    /// FloatProperty: energyProportion<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float energyProportion
     {
@@ -1483,7 +1514,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: smokeFuelLevel
+    /// FloatProperty: smokeFuelLevel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float smokeFuelLevel
     {

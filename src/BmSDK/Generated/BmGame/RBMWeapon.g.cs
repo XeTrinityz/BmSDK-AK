@@ -1745,7 +1745,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeHitHoldingWeapon
+    /// BoolProperty: bCanBeHitHoldingWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeHitHoldingWeapon
     {
@@ -1781,7 +1782,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanTraverseHoldingWeapon
+    /// BoolProperty: bCanTraverseHoldingWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTraverseHoldingWeapon
     {
@@ -1799,7 +1801,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bDropOnDisarm
+    /// BoolProperty: bDropOnDisarm<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDropOnDisarm
     {
@@ -1808,7 +1811,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayDeathTip
+    /// BoolProperty: bDisplayDeathTip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayDeathTip
     {
@@ -1889,7 +1893,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanAerialRedirect
+    /// BoolProperty: bCanAerialRedirect<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanAerialRedirect
     {
@@ -1898,7 +1903,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeUsedByArmoured
+    /// BoolProperty: bCanBeUsedByArmoured<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeUsedByArmoured
     {
@@ -1925,7 +1931,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanBePooled
+    /// BoolProperty: bCanBePooled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBePooled
     {
@@ -1961,7 +1968,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: DropOnBeatdown
+    /// BoolProperty: DropOnBeatdown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DropOnBeatdown
     {
@@ -2060,7 +2068,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanBatClawAttach
+    /// BoolProperty: bCanBatClawAttach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBatClawAttach
     {
@@ -2123,7 +2132,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeDestroyedByFearTakedown
+    /// BoolProperty: bCanBeDestroyedByFearTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeDestroyedByFearTakedown
     {
@@ -2141,7 +2151,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// BoolProperty: bPawnGoRagdollWhenHitByBaseballBat
+    /// BoolProperty: bPawnGoRagdollWhenHitByBaseballBat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPawnGoRagdollWhenHitByBaseballBat
     {
@@ -2195,7 +2206,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: PrimaryAttachBone
+    /// NameProperty: PrimaryAttachBone<br/>
+    /// Default: Gundummy
     /// </summary>
     public unsafe BmSDK.FName PrimaryAttachBone
     {
@@ -2213,7 +2225,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RBMWeapon.ThirdPersonMesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -2384,7 +2397,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: XRayJammedMaterial
+    /// ObjectProperty: XRayJammedMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayJammedMaterial
     {
@@ -2393,7 +2407,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: XRayDoubleJammedMaterial
+    /// ObjectProperty: XRayDoubleJammedMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayDoubleJammedMaterial
     {
@@ -2402,7 +2417,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: XRayDangerousMaterial
+    /// ObjectProperty: XRayDangerousMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_generalAggressive_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayDangerousMaterial
     {
@@ -2411,7 +2427,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: ThermalMaterial
+    /// ObjectProperty: ThermalMaterial<br/>
+    /// Default: VFX_Forensics.CatVision.CatVisionSkin_General_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface ThermalMaterial
     {
@@ -2474,7 +2491,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: JammedVFXTemplate
+    /// ObjectProperty: JammedVFXTemplate<br/>
+    /// Default: VFX_Gadgets.Disruptor.First_State_Indication
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JammedVFXTemplate
     {
@@ -2483,7 +2501,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ObjectProperty: DoubleJammedVFXTemplate
+    /// ObjectProperty: DoubleJammedVFXTemplate<br/>
+    /// Default: VFX_Gadgets.Disruptor.Second_State_Indication
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem DoubleJammedVFXTemplate
     {
@@ -2627,7 +2646,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ByteProperty: takedownType
+    /// ByteProperty: takedownType<br/>
+    /// Default: TDT_Unarmed
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerCombat.ETakedownType takedownType
     {
@@ -2699,7 +2719,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// ByteProperty: CombatReadiness
+    /// ByteProperty: CombatReadiness<br/>
+    /// Default: CRS_Ready
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillain.CombatReadinessState CombatReadiness
     {
@@ -2717,7 +2738,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: VillainThrowDistanceMulti
+    /// FloatProperty: VillainThrowDistanceMulti<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VillainThrowDistanceMulti
     {
@@ -2726,7 +2748,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: CombatMoveStance
+    /// NameProperty: CombatMoveStance<br/>
+    /// Default: Combat
     /// </summary>
     public unsafe BmSDK.FName CombatMoveStance
     {
@@ -2735,7 +2758,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: TauntMoveStance
+    /// NameProperty: TauntMoveStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName TauntMoveStance
     {
@@ -2789,7 +2813,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: StepLength
+    /// FloatProperty: StepLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float StepLength
     {
@@ -2825,7 +2850,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: SavedXrayAlpha
+    /// FloatProperty: SavedXrayAlpha<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SavedXrayAlpha
     {
@@ -2852,7 +2878,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: XRayVisibilityFadeInStartTime
+    /// FloatProperty: XRayVisibilityFadeInStartTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float XRayVisibilityFadeInStartTime
     {
@@ -2861,7 +2888,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: XRayVisibilityFadeInDuration
+    /// FloatProperty: XRayVisibilityFadeInDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float XRayVisibilityFadeInDuration
     {
@@ -2906,7 +2934,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: WeaponFlagValue
+    /// NameProperty: WeaponFlagValue<br/>
+    /// Default: FV_WEAPON_Unarmed
     /// </summary>
     public unsafe BmSDK.FName WeaponFlagValue
     {
@@ -2915,7 +2944,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: OverworldName
+    /// NameProperty: OverworldName<br/>
+    /// Default: OW
     /// </summary>
     public unsafe BmSDK.FName OverworldName
     {
@@ -2924,7 +2954,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: PickupTransitionName
+    /// NameProperty: PickupTransitionName<br/>
+    /// Default: PickupWeapon
     /// </summary>
     public unsafe BmSDK.FName PickupTransitionName
     {
@@ -2933,7 +2964,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: PickupSlideTransitionName
+    /// NameProperty: PickupSlideTransitionName<br/>
+    /// Default: PickupWeapon_Slide
     /// </summary>
     public unsafe BmSDK.FName PickupSlideTransitionName
     {
@@ -2942,7 +2974,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: PickupKnackeredTransitionName
+    /// NameProperty: PickupKnackeredTransitionName<br/>
+    /// Default: PickupWeapon_Knackered
     /// </summary>
     public unsafe BmSDK.FName PickupKnackeredTransitionName
     {
@@ -3014,7 +3047,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// NameProperty: nJammedVFXAttachBone
+    /// NameProperty: nJammedVFXAttachBone<br/>
+    /// Default: Assault_Rifle
     /// </summary>
     public unsafe BmSDK.FName nJammedVFXAttachBone
     {
@@ -3023,13 +3057,15 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// StructProperty: vJammedVFXPivotParameter
+    /// StructProperty: vJammedVFXPivotParameter<br/>
+    /// Default: (X=10,Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vJammedVFXPivotParameter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1544);
 
     /// <summary>
-    /// FloatProperty: fJammedVFXRadiusParameter
+    /// FloatProperty: fJammedVFXRadiusParameter<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float fJammedVFXRadiusParameter
     {
@@ -3038,7 +3074,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: fJammedVFXLengthParameter
+    /// FloatProperty: fJammedVFXLengthParameter<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float fJammedVFXLengthParameter
     {
@@ -3047,7 +3084,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorHUDDescription
+    /// StrProperty: sDisruptorHUDDescription<br/>
+    /// Default: "#DSRPT|Sabotage|$Disruptor.Weapon|$Disruptor.WeaponDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorHUDDescription
     {
@@ -3056,7 +3094,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
     }
 
     /// <summary>
-    /// FloatProperty: TurnOnPickupTime
+    /// FloatProperty: TurnOnPickupTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TurnOnPickupTime
     {

@@ -303,7 +303,8 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: MineInVentTFRConfig
+    /// ObjectProperty: MineInVentTFRConfig<br/>
+    /// Default: BmScript.Default__RPawnVillainGunMinelayer.MineInVentTFRConfig0
     /// </summary>
     public unsafe BmSDK.BmGame.RTransitionFromRunConfig MineInVentTFRConfig
     {
@@ -312,7 +313,8 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: MineMesh
+    /// ObjectProperty: MineMesh<br/>
+    /// Default: Mine.MineOnThug
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh MineMesh
     {
@@ -321,7 +323,8 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: MinePhysics
+    /// ObjectProperty: MinePhysics<br/>
+    /// Default: Mine.PhysicsAsset.MineOnThug_Physics
     /// </summary>
     public unsafe BmSDK.Engine.PhysicsAsset MinePhysics
     {
@@ -330,7 +333,8 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: DisruptedMineXrayMIC
+    /// ObjectProperty: DisruptedMineXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant DisruptedMineXrayMIC
     {
@@ -339,7 +343,8 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: NormalMineXrayMIC
+    /// ObjectProperty: NormalMineXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant NormalMineXrayMIC
     {

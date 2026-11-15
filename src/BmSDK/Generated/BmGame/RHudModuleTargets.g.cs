@@ -1322,7 +1322,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: FocusTargetIndexCurrentlyDisplayed
+    /// IntProperty: FocusTargetIndexCurrentlyDisplayed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int FocusTargetIndexCurrentlyDisplayed
     {
@@ -1331,7 +1332,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: FocusTargetIndexPending
+    /// IntProperty: FocusTargetIndexPending<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int FocusTargetIndexPending
     {
@@ -1358,7 +1360,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MainCursorIndex
+    /// IntProperty: MainCursorIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MainCursorIndex
     {
@@ -1385,7 +1388,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DefaultCursorDepth
+    /// FloatProperty: DefaultCursorDepth<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DefaultCursorDepth
     {
@@ -1466,7 +1470,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: ExclusiveCompassItem
+    /// IntProperty: ExclusiveCompassItem<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ExclusiveCompassItem
     {
@@ -1484,7 +1489,8 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: iCurrentGrappleEjectUpgLevel
+    /// IntProperty: iCurrentGrappleEjectUpgLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iCurrentGrappleEjectUpgLevel
     {

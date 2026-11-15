@@ -103,7 +103,8 @@ public partial class RAddContentBatmobileMesh : BmSDK.BmGame.RAdditionalContent,
     }
 
     /// <summary>
-    /// FloatProperty: VectorDisplacementMultiplier
+    /// FloatProperty: VectorDisplacementMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VectorDisplacementMultiplier
     {
@@ -112,13 +113,15 @@ public partial class RAddContentBatmobileMesh : BmSDK.BmGame.RAdditionalContent,
     }
 
     /// <summary>
-    /// StructProperty: DamageColour
+    /// StructProperty: DamageColour<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor DamageColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 128);
 
     /// <summary>
-    /// NameProperty: DamageChapterName
+    /// NameProperty: DamageChapterName<br/>
+    /// Default: Damage_Chapter
     /// </summary>
     public unsafe BmSDK.FName DamageChapterName
     {
@@ -127,7 +130,8 @@ public partial class RAddContentBatmobileMesh : BmSDK.BmGame.RAdditionalContent,
     }
 
     /// <summary>
-    /// NameProperty: DamageScratchesAllOverName
+    /// NameProperty: DamageScratchesAllOverName<br/>
+    /// Default: Damage_Scratches_All_Over
     /// </summary>
     public unsafe BmSDK.FName DamageScratchesAllOverName
     {
@@ -136,7 +140,8 @@ public partial class RAddContentBatmobileMesh : BmSDK.BmGame.RAdditionalContent,
     }
 
     /// <summary>
-    /// NameProperty: VectorDisplacementMultiplierName
+    /// NameProperty: VectorDisplacementMultiplierName<br/>
+    /// Default: Vector_Displacement_Multiplier
     /// </summary>
     public unsafe BmSDK.FName VectorDisplacementMultiplierName
     {
@@ -145,7 +150,8 @@ public partial class RAddContentBatmobileMesh : BmSDK.BmGame.RAdditionalContent,
     }
 
     /// <summary>
-    /// NameProperty: DamageColourName
+    /// NameProperty: DamageColourName<br/>
+    /// Default: Damage_Colour
     /// </summary>
     public unsafe BmSDK.FName DamageColourName
     {

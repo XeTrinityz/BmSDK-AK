@@ -79,13 +79,15 @@ public partial class ParticleModuleSpawn : BmSDK.Engine.ParticleModuleSpawnBase,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Rate
+    /// StructProperty: Rate<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(20,20,20,20),Distribution=Engine.Default__ParticleModuleSpawn.RequiredDistributionSpawnRate)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Rate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: RateScale
+    /// StructProperty: RateScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleSpawn.RequiredDistributionSpawnRateScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat RateScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 136);

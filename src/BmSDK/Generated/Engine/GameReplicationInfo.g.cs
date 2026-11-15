@@ -314,7 +314,8 @@ public partial class GameReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bStopCountDown
+    /// BoolProperty: bStopCountDown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopCountDown
     {

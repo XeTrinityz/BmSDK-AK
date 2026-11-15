@@ -570,7 +570,8 @@ public partial class RCombatMove_BatmanFloorTakedown : BmSDK.BmGame.RCombatMove_
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistanceCloseAnim
+    /// FloatProperty: MaxDistanceCloseAnim<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MaxDistanceCloseAnim
     {

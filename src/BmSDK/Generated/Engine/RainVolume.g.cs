@@ -217,7 +217,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: RainComponent
+    /// ComponentProperty: RainComponent<br/>
+    /// Default: Engine.Default__RainVolume.RainComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RRainComponent RainComponent
     {
@@ -226,7 +227,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: RainMap
+    /// ComponentProperty: RainMap<br/>
+    /// Default: Engine.Default__RainVolume.RainMapt0
     /// </summary>
     public unsafe BmSDK.Engine.RainMapComponent RainMap
     {
@@ -262,7 +264,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDrawFarRainMesh
+    /// BoolProperty: bDrawFarRainMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawFarRainMesh
     {
@@ -280,7 +283,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: FarRainMesh
+    /// ComponentProperty: FarRainMesh<br/>
+    /// Default: Engine.Default__RainVolume.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FarRainMesh
     {
@@ -289,7 +293,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: FarAtmosMesh
+    /// ComponentProperty: FarAtmosMesh<br/>
+    /// Default: Engine.Default__RainVolume.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FarAtmosMesh
     {
@@ -298,7 +303,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: NearMist
+    /// ComponentProperty: NearMist<br/>
+    /// Default: Engine.Default__RainVolume.NearMistPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent NearMist
     {

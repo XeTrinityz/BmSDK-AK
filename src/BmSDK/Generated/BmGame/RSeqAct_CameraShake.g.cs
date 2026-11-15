@@ -129,7 +129,8 @@ public partial class RSeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: Shake
+    /// StructProperty: Shake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 356);
@@ -159,7 +160,8 @@ public partial class RSeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 528);
 
     /// <summary>
-    /// ArrayProperty: PreMades
+    /// ArrayProperty: PreMades<br/>
+    /// Default: ((TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=2...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct> PreMades
     {

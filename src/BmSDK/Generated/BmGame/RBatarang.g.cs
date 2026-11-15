@@ -881,7 +881,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// ByteProperty: AimingConfig
+        /// ByteProperty: AimingConfig<br/>
+        /// Default: ACD_NullAimingConfig
         /// </summary>
         public unsafe BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimingConfig
         {
@@ -924,7 +925,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: BatarangRumble
+    /// ObjectProperty: BatarangRumble<br/>
+    /// Default: BmGame.Default__RBatarang.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform BatarangRumble
     {
@@ -1039,7 +1041,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: AudibleTargetMarker
+    /// ComponentProperty: AudibleTargetMarker<br/>
+    /// Default: BmGame.Default__RBatarang.TargetMarker0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AudibleTargetMarker
     {
@@ -1057,7 +1060,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ClassProperty: BatarangCameraClass
+    /// ClassProperty: BatarangCameraClass<br/>
+    /// Default: BmGame.RBatarangCamera
     /// </summary>
     public unsafe BmSDK.Class BatarangCameraClass
     {
@@ -1066,7 +1070,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: BatarangOverlay
+    /// StructProperty: BatarangOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId BatarangOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 2216);
@@ -1144,7 +1149,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: BatarangTargets
+    /// BoolProperty: BatarangTargets<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BatarangTargets
     {
@@ -1189,7 +1195,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanComboThrow
+    /// BoolProperty: bCanComboThrow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanComboThrow
     {
@@ -1306,7 +1313,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: MaxNumTargets
+    /// IntProperty: MaxNumTargets<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxNumTargets
     {
@@ -1315,7 +1323,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BatarangRange
+    /// FloatProperty: BatarangRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float BatarangRange
     {
@@ -1324,7 +1333,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetRange
+    /// FloatProperty: AutoTargetRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AutoTargetRange
     {
@@ -1333,7 +1343,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngle
+    /// FloatProperty: AutoTargetAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float AutoTargetAngle
     {
@@ -1342,7 +1353,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: NormalTargetAngle
+    /// FloatProperty: NormalTargetAngle<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float NormalTargetAngle
     {
@@ -1351,7 +1363,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: MaxQueuedBatarangs
+    /// IntProperty: MaxQueuedBatarangs<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxQueuedBatarangs
     {
@@ -1390,7 +1403,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2304);
 
     /// <summary>
-    /// FloatProperty: StunModifier
+    /// FloatProperty: StunModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StunModifier
     {
@@ -1399,7 +1413,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ImpactModifier
+    /// FloatProperty: ImpactModifier<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float ImpactModifier
     {
@@ -1408,7 +1423,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: IdealThrowYaw
+    /// FloatProperty: IdealThrowYaw<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float IdealThrowYaw
     {
@@ -1417,7 +1433,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: IdealImpactYaw
+    /// FloatProperty: IdealImpactYaw<br/>
+    /// Default: -45
     /// </summary>
     public unsafe float IdealImpactYaw
     {
@@ -1426,7 +1443,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: IdealThrowLength
+    /// FloatProperty: IdealThrowLength<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float IdealThrowLength
     {
@@ -1444,7 +1462,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: IdealImpactPitch
+    /// FloatProperty: IdealImpactPitch<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float IdealImpactPitch
     {
@@ -1453,7 +1472,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ThrowSpeed
+    /// FloatProperty: ThrowSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float ThrowSpeed
     {
@@ -1462,7 +1482,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: IdealFlightTime
+    /// FloatProperty: IdealFlightTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float IdealFlightTime
     {
@@ -1480,7 +1501,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCStunModifier
+    /// FloatProperty: RCStunModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RCStunModifier
     {
@@ -1489,7 +1511,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCImpactModifier
+    /// FloatProperty: RCImpactModifier<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float RCImpactModifier
     {
@@ -1498,7 +1521,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCIdealThrowYaw
+    /// FloatProperty: RCIdealThrowYaw<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RCIdealThrowYaw
     {
@@ -1507,7 +1531,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCIdealImpactYaw
+    /// FloatProperty: RCIdealImpactYaw<br/>
+    /// Default: -45
     /// </summary>
     public unsafe float RCIdealImpactYaw
     {
@@ -1516,7 +1541,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCIdealThrowLength
+    /// FloatProperty: RCIdealThrowLength<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float RCIdealThrowLength
     {
@@ -1534,7 +1560,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCIdealImpactPitch
+    /// FloatProperty: RCIdealImpactPitch<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RCIdealImpactPitch
     {
@@ -1543,7 +1570,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCIdealFlightTime
+    /// FloatProperty: RCIdealFlightTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RCIdealFlightTime
     {
@@ -1561,7 +1589,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: MaxNumQuickBatarangs
+    /// IntProperty: MaxNumQuickBatarangs<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxNumQuickBatarangs
     {
@@ -1606,7 +1635,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: ComboMoveType
+    /// ByteProperty: ComboMoveType<br/>
+    /// Default: ECMT_Batarang
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EComboMoveType ComboMoveType
     {
@@ -1634,32 +1664,38 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2420);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Batarang_Stand_Throw,Batarang_Throw_Alternative),AimingConfig=ACD_BatarangAimingConfig),(ThrowAnims=(Stand_Quick_Throw_B_01),AimingConfig=ACD_NoAimingAimingConfig,MinAng...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2436);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Batarang_Cover_R_Throw),AimingConfig=ACD_NullAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2452);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Batarang_Cover_R_Throw),AimingConfig=ACD_NullAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2468);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Batarang_Vantage_Throw),AimingConfig=ACD_NullAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2484);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Wire_Batarang_Throw),AimingConfig=ACD_WireBatarangThrowAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2500);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Batarang_Railing_Throw),AimingConfig=ACD_NullAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2516);
@@ -1674,17 +1710,20 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_8
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2548);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Stand_Quick_Throw_B_01),AimingConfig=ACD_NoAimingAimingConfig,MinAngle=135,MaxAngle=-135),(ThrowAnims=(Stand_Quick_Throw_R_02),LeftHanded=(true),AimingConfig=ACD_NoAimin...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_9
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2564);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Run_Quick_Throw_01,Run_Quick_Throw_02),AimingConfig=ACD_NullAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_10
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2580);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Glide_Quick_Throw_F_01,Glide_Quick_Throw_F_02),AimingConfig=ACD_NoAimingAimingConfig)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer ThrowDirectionTypes_11
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2596);
@@ -1695,7 +1734,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBatarang.FBatarangThrowDirectionsContainer>(Ptr + 2612);
 
     /// <summary>
-    /// FloatProperty: BatarangCameraDelay
+    /// FloatProperty: BatarangCameraDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BatarangCameraDelay
     {
@@ -1704,7 +1744,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: RCReboundTime
+    /// FloatProperty: RCReboundTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RCReboundTime
     {

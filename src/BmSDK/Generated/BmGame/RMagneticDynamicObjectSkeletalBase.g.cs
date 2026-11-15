@@ -450,7 +450,8 @@ public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalM
     }
 
     /// <summary>
-    /// FloatProperty: MinMagStrength
+    /// FloatProperty: MinMagStrength<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinMagStrength
     {

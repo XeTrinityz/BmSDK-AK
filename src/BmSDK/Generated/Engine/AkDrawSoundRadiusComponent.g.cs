@@ -79,7 +79,8 @@ public partial class AkDrawSoundRadiusComponent : BmSDK.Engine.PrimitiveComponen
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: SphereSides
+    /// IntProperty: SphereSides<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int SphereSides
     {

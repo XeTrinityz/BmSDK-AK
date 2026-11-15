@@ -972,7 +972,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: HaveTargetAlpha
+    /// FloatProperty: HaveTargetAlpha<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float HaveTargetAlpha
     {
@@ -981,7 +982,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: NoTargetAlpha
+    /// FloatProperty: NoTargetAlpha<br/>
+    /// Default: 0.18
     /// </summary>
     public unsafe float NoTargetAlpha
     {
@@ -990,7 +992,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: FadedMeshAlpha
+    /// FloatProperty: FadedMeshAlpha<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float FadedMeshAlpha
     {
@@ -999,7 +1002,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: HighlightChangeSpeed
+    /// FloatProperty: HighlightChangeSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float HighlightChangeSpeed
     {
@@ -1062,7 +1066,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// StrProperty: HUDPromptString
+    /// StrProperty: HUDPromptString<br/>
+    /// Default: "EnvironmentTakedown"
     /// </summary>
     public unsafe BmSDK.FString HUDPromptString
     {

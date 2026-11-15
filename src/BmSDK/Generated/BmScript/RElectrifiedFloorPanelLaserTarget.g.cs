@@ -145,7 +145,8 @@ public partial class RElectrifiedFloorPanelLaserTarget : BmSDK.BmGame.RElectrifi
     }
 
     /// <summary>
-    /// FloatProperty: LaserChargeTime
+    /// FloatProperty: LaserChargeTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float LaserChargeTime
     {

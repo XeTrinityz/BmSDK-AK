@@ -188,7 +188,8 @@ public partial class RCrowdAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AttractionRadius
+    /// FloatProperty: AttractionRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AttractionRadius
     {
@@ -197,7 +198,8 @@ public partial class RCrowdAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Attraction
+    /// FloatProperty: Attraction<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float Attraction
     {
@@ -206,7 +208,8 @@ public partial class RCrowdAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAttractorEnabled
+    /// BoolProperty: bAttractorEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAttractorEnabled
     {

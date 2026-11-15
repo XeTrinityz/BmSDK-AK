@@ -261,7 +261,8 @@ public partial class RVehicleNPCWeapon_APCMissileTurret : BmSDK.BmGame.RVehicleN
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float Range
     {
@@ -270,7 +271,8 @@ public partial class RVehicleNPCWeapon_APCMissileTurret : BmSDK.BmGame.RVehicleN
     }
 
     /// <summary>
-    /// FloatProperty: ProjectileLifespan
+    /// FloatProperty: ProjectileLifespan<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ProjectileLifespan
     {
@@ -339,7 +341,8 @@ public partial class RVehicleNPCWeapon_APCMissileTurret : BmSDK.BmGame.RVehicleN
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 768);
 
     /// <summary>
-    /// FloatProperty: FireTargetLag
+    /// FloatProperty: FireTargetLag<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FireTargetLag
     {

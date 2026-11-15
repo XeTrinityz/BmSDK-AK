@@ -79,13 +79,15 @@ public partial class ParticleModuleColorScaleOverLife : BmSDK.Engine.ParticleMod
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: ColorScaleOverLife
+    /// StructProperty: ColorScaleOverLife<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleColorScaleOverLife.DistributionColorScaleOverLife,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector ColorScaleOverLife
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// StructProperty: AlphaScaleOverLife
+    /// StructProperty: AlphaScaleOverLife<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleColorScaleOverLife.DistributionAlphaScaleOverLife)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat AlphaScaleOverLife
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 160);

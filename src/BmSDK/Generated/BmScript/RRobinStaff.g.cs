@@ -223,7 +223,8 @@ public partial class RRobinStaff : BmSDK.BmGame.RStaffBase, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2072);
 
     /// <summary>
-    /// FloatProperty: LaunchGravity
+    /// FloatProperty: LaunchGravity<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float LaunchGravity
     {
@@ -232,7 +233,8 @@ public partial class RRobinStaff : BmSDK.BmGame.RStaffBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LaunchSpeed
+    /// FloatProperty: LaunchSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float LaunchSpeed
     {

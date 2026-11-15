@@ -79,7 +79,8 @@ public partial class ZoneInfo : BmSDK.Engine.Info, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: KillZ
+    /// FloatProperty: KillZ<br/>
+    /// Default: -262143
     /// </summary>
     public unsafe float KillZ
     {
@@ -88,7 +89,8 @@ public partial class ZoneInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftKill
+    /// FloatProperty: SoftKill<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float SoftKill
     {
@@ -97,7 +99,8 @@ public partial class ZoneInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: KillZDamageType
+    /// ClassProperty: KillZDamageType<br/>
+    /// Default: Engine.KillZDamageType
     /// </summary>
     public unsafe BmSDK.Class KillZDamageType
     {

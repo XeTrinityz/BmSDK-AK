@@ -88,7 +88,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Mass
+    /// FloatProperty: Mass<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Mass
     {
@@ -133,7 +134,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bFlexAssetAutoAssignPhase
+    /// BoolProperty: bFlexAssetAutoAssignPhase<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFlexAssetAutoAssignPhase
     {
@@ -142,7 +144,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIgnoreInitialTrigger
+    /// BoolProperty: bIgnoreInitialTrigger<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIgnoreInitialTrigger
     {
@@ -178,7 +181,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StretchStiffness
+    /// FloatProperty: StretchStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StretchStiffness
     {
@@ -187,7 +191,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BendStiffness
+    /// FloatProperty: BendStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BendStiffness
     {
@@ -196,7 +201,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TetherStiffness
+    /// FloatProperty: TetherStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TetherStiffness
     {
@@ -205,7 +211,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TetherGive
+    /// FloatProperty: TetherGive<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TetherGive
     {
@@ -214,7 +221,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverPressure
+    /// FloatProperty: OverPressure<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OverPressure
     {
@@ -232,7 +240,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RigidSamplingDistance
+    /// FloatProperty: RigidSamplingDistance<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float RigidSamplingDistance
     {
@@ -247,7 +256,8 @@ public partial class FlexAsset : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 160);
 
     /// <summary>
-    /// FloatProperty: InflatableStiffness
+    /// FloatProperty: InflatableStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InflatableStiffness
     {

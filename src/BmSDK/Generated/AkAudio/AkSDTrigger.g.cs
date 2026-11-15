@@ -88,7 +88,8 @@ public partial class AkSDTrigger : BmSDK.AkAudio.AkSDNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Props
+    /// ObjectProperty: Props<br/>
+    /// Default: AkAudio.Default__AkSDTrigger.AkProperties_AkProps
     /// </summary>
     public unsafe BmSDK.Engine.AkProperties Props
     {

@@ -394,7 +394,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: TooFastThreshold
+    /// FloatProperty: TooFastThreshold<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float TooFastThreshold
     {
@@ -403,7 +404,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: WarningThreshold
+    /// FloatProperty: WarningThreshold<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float WarningThreshold
     {
@@ -412,7 +414,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: BatteryMoveSpeed
+    /// FloatProperty: BatteryMoveSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BatteryMoveSpeed
     {
@@ -430,7 +433,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillFullSuitDegrade
+    /// FloatProperty: TimeTillFullSuitDegrade<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeTillFullSuitDegrade
     {
@@ -466,7 +470,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MagneticLockTime
+    /// FloatProperty: MagneticLockTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MagneticLockTime
     {
@@ -484,7 +489,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: GasValue
+    /// FloatProperty: GasValue<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float GasValue
     {
@@ -529,7 +535,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeForCough
+    /// FloatProperty: MinTimeForCough<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float MinTimeForCough
     {
@@ -538,7 +545,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeForCough
+    /// FloatProperty: MaxTimeForCough<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxTimeForCough
     {
@@ -547,7 +555,8 @@ public partial class RSpecialMoveConfig_ReplaceBatmobileBattery : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// NameProperty: CoughAnim
+    /// NameProperty: CoughAnim<br/>
+    /// Default: BM_PowerCore_Cough
     /// </summary>
     public unsafe BmSDK.FName CoughAnim
     {

@@ -172,7 +172,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UpdateX
+    /// BoolProperty: UpdateX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateX
     {
@@ -181,7 +182,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UpdateY
+    /// BoolProperty: UpdateY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateY
     {
@@ -190,7 +192,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UpdateZ
+    /// BoolProperty: UpdateZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateZ
     {
@@ -199,7 +202,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bRandomVolumeStartEnabled
+    /// BoolProperty: bRandomVolumeStartEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRandomVolumeStartEnabled
     {

@@ -106,7 +106,8 @@ public partial class RSeqAct_UpdatePlayerSkin : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: CharacterId
+    /// StrProperty: CharacterId<br/>
+    /// Default: "Batman"
     /// </summary>
     public unsafe BmSDK.FString CharacterId
     {

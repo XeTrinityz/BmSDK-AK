@@ -92,7 +92,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: Shake
+    /// ObjectProperty: Shake<br/>
+    /// Default: Engine.Default__SeqAct_CameraShake.Shake0
     /// </summary>
     public unsafe BmSDK.Engine.CameraShake Shake
     {
@@ -110,7 +111,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ShakeScale
+    /// FloatProperty: ShakeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ShakeScale
     {
@@ -119,7 +121,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bDoControllerVibration
+    /// BoolProperty: bDoControllerVibration<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoControllerVibration
     {
@@ -146,7 +149,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RadialShake_InnerRadius
+    /// FloatProperty: RadialShake_InnerRadius<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float RadialShake_InnerRadius
     {
@@ -155,7 +159,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RadialShake_OuterRadius
+    /// FloatProperty: RadialShake_OuterRadius<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float RadialShake_OuterRadius
     {
@@ -164,7 +169,8 @@ public partial class SeqAct_CameraShake : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RadialShake_Falloff
+    /// FloatProperty: RadialShake_Falloff<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RadialShake_Falloff
     {

@@ -386,7 +386,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     }
 
     /// <summary>
-    /// IntProperty: AlternateDirectorTrackForPlayback
+    /// IntProperty: AlternateDirectorTrackForPlayback<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int AlternateDirectorTrackForPlayback
     {
@@ -431,7 +432,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     }
 
     /// <summary>
-    /// FloatProperty: TruncatedInterpLength
+    /// FloatProperty: TruncatedInterpLength<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TruncatedInterpLength
     {

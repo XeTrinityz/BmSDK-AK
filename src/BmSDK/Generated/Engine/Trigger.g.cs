@@ -203,7 +203,8 @@ public partial class Trigger : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__Trigger.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -221,7 +222,8 @@ public partial class Trigger : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AITriggerDelay
+    /// FloatProperty: AITriggerDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float AITriggerDelay
     {

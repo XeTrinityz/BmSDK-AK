@@ -145,7 +145,8 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToCloth
+    /// BoolProperty: bForceApplyToCloth<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToCloth
     {
@@ -154,7 +155,8 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToFluid
+    /// BoolProperty: bForceApplyToFluid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToFluid
     {
@@ -199,7 +201,8 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 552);

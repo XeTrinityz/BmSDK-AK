@@ -245,7 +245,8 @@ public partial class RBMAIAction_DroneComFixDisruption : BmSDK.BmGame.RBMAIActio
     }
 
     /// <summary>
-    /// FloatProperty: DialogueDelay
+    /// FloatProperty: DialogueDelay<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float DialogueDelay
     {

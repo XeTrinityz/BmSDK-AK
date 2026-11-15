@@ -1578,7 +1578,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BreadCrumbDistanceInterval
+    /// FloatProperty: BreadCrumbDistanceInterval<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float BreadCrumbDistanceInterval
     {

@@ -79,7 +79,8 @@ public partial class WindDirectionalSource : BmSDK.Engine.Info, BmSDK.IGameObjec
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: Component
+    /// ComponentProperty: Component<br/>
+    /// Default: Engine.Default__WindDirectionalSource.WindDirectionalSourceComponent0
     /// </summary>
     public unsafe BmSDK.Engine.WindDirectionalSourceComponent Component
     {

@@ -85,7 +85,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     public partial record struct FBackscreenDebugData
     {
         /// <summary>
-        /// BoolProperty: bPointCloud
+        /// BoolProperty: bPointCloud<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPointCloud
         {
@@ -94,7 +95,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: TweenInRate
+        /// FloatProperty: TweenInRate<br/>
+        /// Default: 0.075
         /// </summary>
         public unsafe float TweenInRate
         {
@@ -103,7 +105,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: TweenOutRate
+        /// FloatProperty: TweenOutRate<br/>
+        /// Default: 0.075
         /// </summary>
         public unsafe float TweenOutRate
         {
@@ -112,7 +115,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_XMin
+        /// FloatProperty: Map_XMin<br/>
+        /// Default: -160000
         /// </summary>
         public unsafe float Map_XMin
         {
@@ -121,7 +125,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_XMax
+        /// FloatProperty: Map_XMax<br/>
+        /// Default: -8000
         /// </summary>
         public unsafe float Map_XMax
         {
@@ -130,7 +135,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_YMin
+        /// FloatProperty: Map_YMin<br/>
+        /// Default: -140000
         /// </summary>
         public unsafe float Map_YMin
         {
@@ -148,7 +154,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_DefaultHeight
+        /// FloatProperty: Map_DefaultHeight<br/>
+        /// Default: 2000
         /// </summary>
         public unsafe float Map_DefaultHeight
         {
@@ -157,7 +164,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_DefaultElevation
+        /// FloatProperty: Map_DefaultElevation<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float Map_DefaultElevation
         {
@@ -166,7 +174,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_DefaultDistance
+        /// FloatProperty: Map_DefaultDistance<br/>
+        /// Default: 30000
         /// </summary>
         public unsafe float Map_DefaultDistance
         {
@@ -184,7 +193,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_Elevation_Max
+        /// FloatProperty: Map_Elevation_Max<br/>
+        /// Default: 35
         /// </summary>
         public unsafe float Map_Elevation_Max
         {
@@ -193,7 +203,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_Distance_Min
+        /// FloatProperty: Map_Distance_Min<br/>
+        /// Default: 20000
         /// </summary>
         public unsafe float Map_Distance_Min
         {
@@ -202,7 +213,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_Distance_Max
+        /// FloatProperty: Map_Distance_Max<br/>
+        /// Default: 120000
         /// </summary>
         public unsafe float Map_Distance_Max
         {
@@ -211,7 +223,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_Velocity
+        /// FloatProperty: Map_Velocity<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float Map_Velocity
         {
@@ -220,7 +233,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_DistanceScalar
+        /// FloatProperty: Map_DistanceScalar<br/>
+        /// Default: 5000
         /// </summary>
         public unsafe float Map_DistanceScalar
         {
@@ -229,7 +243,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// IntProperty: Map_NearRange
+        /// IntProperty: Map_NearRange<br/>
+        /// Default: 30000
         /// </summary>
         public unsafe int Map_NearRange
         {
@@ -238,7 +253,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// IntProperty: Map_MidRange
+        /// IntProperty: Map_MidRange<br/>
+        /// Default: 60000
         /// </summary>
         public unsafe int Map_MidRange
         {
@@ -247,7 +263,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_IconMinVal
+        /// FloatProperty: Map_IconMinVal<br/>
+        /// Default: 8
         /// </summary>
         public unsafe float Map_IconMinVal
         {
@@ -256,7 +273,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_IconNearVal
+        /// FloatProperty: Map_IconNearVal<br/>
+        /// Default: 8000
         /// </summary>
         public unsafe float Map_IconNearVal
         {
@@ -265,7 +283,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_IconScaleVal
+        /// FloatProperty: Map_IconScaleVal<br/>
+        /// Default: 3500
         /// </summary>
         public unsafe float Map_IconScaleVal
         {
@@ -274,7 +293,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         }
 
         /// <summary>
-        /// FloatProperty: Map_IconMulVal
+        /// FloatProperty: Map_IconMulVal<br/>
+        /// Default: 1.5
         /// </summary>
         public unsafe float Map_IconMulVal
         {
@@ -1226,7 +1246,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_CharacterAI_ShowErrorThoughts
+    /// BoolProperty: Debug_CharacterAI_ShowErrorThoughts<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_CharacterAI_ShowErrorThoughts
     {
@@ -1316,7 +1337,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_AI_StuckNavDetection
+    /// BoolProperty: Debug_AI_StuckNavDetection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_AI_StuckNavDetection
     {
@@ -1325,7 +1347,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_AI_PerformInlineHandling
+    /// BoolProperty: Debug_AI_PerformInlineHandling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_AI_PerformInlineHandling
     {
@@ -1424,7 +1447,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bReactionBehaviours
+    /// BoolProperty: bReactionBehaviours<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReactionBehaviours
     {
@@ -1433,7 +1457,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bReactionBehavioursPlayer
+    /// BoolProperty: bReactionBehavioursPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReactionBehavioursPlayer
     {
@@ -1460,7 +1485,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowHistory_General
+    /// BoolProperty: bShowHistory_General<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowHistory_General
     {
@@ -1469,7 +1495,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowHistory_Behaviour
+    /// BoolProperty: bShowHistory_Behaviour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowHistory_Behaviour
     {
@@ -1478,7 +1505,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowHistory_BehaviourState
+    /// BoolProperty: bShowHistory_BehaviourState<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowHistory_BehaviourState
     {
@@ -1487,7 +1515,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowHistory_ActionQueue
+    /// BoolProperty: bShowHistory_ActionQueue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowHistory_ActionQueue
     {
@@ -1559,7 +1588,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowThoughtsPawnStasis_InStasis
+    /// BoolProperty: bShowThoughtsPawnStasis_InStasis<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowThoughtsPawnStasis_InStasis
     {
@@ -1568,7 +1598,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowThoughtsPawnStasis_NotInStasis
+    /// BoolProperty: bShowThoughtsPawnStasis_NotInStasis<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowThoughtsPawnStasis_NotInStasis
     {
@@ -1694,7 +1725,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowThoughtsBehaviour
+    /// BoolProperty: bShowThoughtsBehaviour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowThoughtsBehaviour
     {
@@ -1793,7 +1825,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowThoughtsRouter_FailReason
+    /// BoolProperty: bShowThoughtsRouter_FailReason<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowThoughtsRouter_FailReason
     {
@@ -2009,7 +2042,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bGargSmashingActive
+    /// BoolProperty: bGargSmashingActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGargSmashingActive
     {
@@ -2036,7 +2070,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bEnableAdHocGrouping
+    /// BoolProperty: bEnableAdHocGrouping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableAdHocGrouping
     {
@@ -2054,7 +2089,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAIVocalDebugVoices
+    /// BoolProperty: bAIVocalDebugVoices<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAIVocalDebugVoices
     {
@@ -2063,7 +2099,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAIVocalDebugEmotes
+    /// BoolProperty: bAIVocalDebugEmotes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAIVocalDebugEmotes
     {
@@ -2072,7 +2109,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAIVocalDebugBarks
+    /// BoolProperty: bAIVocalDebugBarks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAIVocalDebugBarks
     {
@@ -2081,7 +2119,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAIVocalDebugSpeech
+    /// BoolProperty: bAIVocalDebugSpeech<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAIVocalDebugSpeech
     {
@@ -2243,7 +2282,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_CanAttack
+    /// BoolProperty: Debug_Combat_CanAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_CanAttack
     {
@@ -2279,7 +2319,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_CameraAssist
+    /// BoolProperty: Debug_Combat_CameraAssist<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_CameraAssist
     {
@@ -2450,7 +2491,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_DisableUndeadCheck
+    /// BoolProperty: Debug_Combat_DisableUndeadCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_DisableUndeadCheck
     {
@@ -2504,7 +2546,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableSimultaneousAttacks
+    /// BoolProperty: Debug_Combat_EnableSimultaneousAttacks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableSimultaneousAttacks
     {
@@ -2513,7 +2556,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableTGPunches
+    /// BoolProperty: Debug_Combat_EnableTGPunches<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableTGPunches
     {
@@ -2522,7 +2566,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableTGKicks
+    /// BoolProperty: Debug_Combat_EnableTGKicks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableTGKicks
     {
@@ -2531,7 +2576,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableTGGrab
+    /// BoolProperty: Debug_Combat_EnableTGGrab<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableTGGrab
     {
@@ -2540,7 +2586,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableTGCharge
+    /// BoolProperty: Debug_Combat_EnableTGCharge<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableTGCharge
     {
@@ -2549,7 +2596,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableCESingle
+    /// BoolProperty: Debug_Combat_EnableCESingle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableCESingle
     {
@@ -2558,7 +2606,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableCEMulti
+    /// BoolProperty: Debug_Combat_EnableCEMulti<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableCEMulti
     {
@@ -2567,7 +2616,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableCEWall
+    /// BoolProperty: Debug_Combat_EnableCEWall<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableCEWall
     {
@@ -2576,7 +2626,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableCEAlly
+    /// BoolProperty: Debug_Combat_EnableCEAlly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableCEAlly
     {
@@ -2585,7 +2636,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Combat_EnableCEFury
+    /// BoolProperty: Debug_Combat_EnableCEFury<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Combat_EnableCEFury
     {
@@ -2738,7 +2790,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_Venom_KeepInView
+    /// BoolProperty: Debug_Venom_KeepInView<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_Venom_KeepInView
     {
@@ -3116,7 +3169,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Debug_DebugLabels
+    /// BoolProperty: Debug_DebugLabels<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Debug_DebugLabels
     {
@@ -3440,7 +3494,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DebugGCTime
+    /// FloatProperty: DebugGCTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DebugGCTime
     {
@@ -3467,7 +3522,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: Debug_AI_PathFindsPerFrame
+    /// IntProperty: Debug_AI_PathFindsPerFrame<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int Debug_AI_PathFindsPerFrame
     {
@@ -3476,7 +3532,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: Debug_AI_PathShortensPerFrame
+    /// IntProperty: Debug_AI_PathShortensPerFrame<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int Debug_AI_PathShortensPerFrame
     {
@@ -3485,7 +3542,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: Debug_AI_RunAwayLookAhead
+    /// IntProperty: Debug_AI_RunAwayLookAhead<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int Debug_AI_RunAwayLookAhead
     {
@@ -3494,7 +3552,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_AI_RunAwayLookAheadDist
+    /// FloatProperty: Debug_AI_RunAwayLookAheadDist<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float Debug_AI_RunAwayLookAheadDist
     {
@@ -3503,7 +3562,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: WonkyPolyToolTolerance
+    /// IntProperty: WonkyPolyToolTolerance<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int WonkyPolyToolTolerance
     {
@@ -3512,7 +3572,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: ChaseTreeSearchDist
+    /// IntProperty: ChaseTreeSearchDist<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe int ChaseTreeSearchDist
     {
@@ -3611,7 +3672,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_TargettingArc
+    /// FloatProperty: Debug_Combat_TargettingArc<br/>
+    /// Default: 65
     /// </summary>
     public unsafe float Debug_Combat_TargettingArc
     {
@@ -3620,7 +3682,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_ComboLengthMin
+    /// FloatProperty: Debug_Combat_ComboLengthMin<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float Debug_Combat_ComboLengthMin
     {
@@ -3629,7 +3692,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_AllyDist
+    /// FloatProperty: Debug_Combat_AllyDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float Debug_Combat_AllyDist
     {
@@ -3638,7 +3702,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_BMForce
+    /// FloatProperty: Debug_Combat_BMForce<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float Debug_Combat_BMForce
     {
@@ -3647,7 +3712,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_AllyForce
+    /// FloatProperty: Debug_Combat_AllyForce<br/>
+    /// Default: 375
     /// </summary>
     public unsafe float Debug_Combat_AllyForce
     {
@@ -3665,7 +3731,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_StunTime
+    /// FloatProperty: Debug_Combat_StunTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float Debug_Combat_StunTime
     {
@@ -3674,7 +3741,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_ZapTime
+    /// FloatProperty: Debug_Combat_ZapTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float Debug_Combat_ZapTime
     {
@@ -3683,7 +3751,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Combat_LaseredTime
+    /// FloatProperty: Debug_Combat_LaseredTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float Debug_Combat_LaseredTime
     {
@@ -3701,7 +3770,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: Debug_Combat_Sets
+    /// ArrayProperty: Debug_Combat_Sets<br/>
+    /// Default: (true,true,true,true,true,true,true,true,true,true)
     /// </summary>
     public unsafe BmSDK.TArray<bool> Debug_Combat_Sets
     {
@@ -3710,7 +3780,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// IntProperty: Debug_Sniper_ViewConeDisplayRange
+    /// IntProperty: Debug_Sniper_ViewConeDisplayRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe int Debug_Sniper_ViewConeDisplayRange
     {
@@ -3719,7 +3790,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Sniper_ViewConeFOV
+    /// FloatProperty: Debug_Sniper_ViewConeFOV<br/>
+    /// Default: 0.995
     /// </summary>
     public unsafe float Debug_Sniper_ViewConeFOV
     {
@@ -3728,7 +3800,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Sniper_ViewConeVertMulti
+    /// FloatProperty: Debug_Sniper_ViewConeVertMulti<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Debug_Sniper_ViewConeVertMulti
     {
@@ -3746,7 +3819,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Player_ScanForBombThugsRange
+    /// FloatProperty: Debug_Player_ScanForBombThugsRange<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float Debug_Player_ScanForBombThugsRange
     {
@@ -3755,7 +3829,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Player_ScanForBombThugsCosAngle
+    /// FloatProperty: Debug_Player_ScanForBombThugsCosAngle<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float Debug_Player_ScanForBombThugsCosAngle
     {
@@ -3791,7 +3866,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrenadeXYSpeed
+    /// FloatProperty: MaxGrenadeXYSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxGrenadeXYSpeed
     {
@@ -3800,7 +3876,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrenadeOverallSpeed
+    /// FloatProperty: MaxGrenadeOverallSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float MaxGrenadeOverallSpeed
     {
@@ -3809,13 +3886,15 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// StructProperty: GrenTraceExtent
+    /// StructProperty: GrenTraceExtent<br/>
+    /// Default: (X=40,Y=40,Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GrenTraceExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 300);
 
     /// <summary>
-    /// IntProperty: Debug_PickupLabelsRange
+    /// IntProperty: Debug_PickupLabelsRange<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int Debug_PickupLabelsRange
     {
@@ -3854,7 +3933,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentDebugData.FCinematicAnimDebug>(Ptr + 420);
 
     /// <summary>
-    /// FloatProperty: GroupSplitBranchTooCloseDist
+    /// FloatProperty: GroupSplitBranchTooCloseDist<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float GroupSplitBranchTooCloseDist
     {
@@ -3863,7 +3943,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Debug_Destructibles_BatclawDamageAmount
+    /// FloatProperty: Debug_Destructibles_BatclawDamageAmount<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float Debug_Destructibles_BatclawDamageAmount
     {
@@ -3872,7 +3953,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: Debug_MostWantedData
+    /// ArrayProperty: Debug_MostWantedData<br/>
+    /// Default: ((),(),(Flags=("SS_Pyg_Victim1Open","SS_Pyg_Victim1Done","SS_Pyg_Victim2Open","SS_Pyg_Victim2Done","SS_Pyg_Victim3Open","SS_Pyg_Victim3Done","SS_Pyg_Victim4Open","SS_Pyg_Victim4Done","SS_Pyg_Victim5Op...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPersistentDebugData.FMostWantedDebugMenuData> Debug_MostWantedData
     {
@@ -3881,7 +3963,8 @@ public partial class RPersistentDebugData : BmSDK.Engine.PersistentDebugData, Bm
     }
 
     /// <summary>
-    /// StructProperty: Debug_BackscreenDebugData
+    /// StructProperty: Debug_BackscreenDebugData<br/>
+    /// Default: (bPointCloud=true,TweenInRate=0.075,TweenOutRate=0.075,Map_XMin=-160000,Map_XMax=-8000,Map_YMin=-140000,Map_DefaultHeight=2000,Map_DefaultElevation=20,Map_DefaultDistance=30000,Map_Elevation_Max=35,Ma...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentDebugData.FBackscreenDebugData Debug_BackscreenDebugData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentDebugData.FBackscreenDebugData>(Ptr + 448);

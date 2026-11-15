@@ -125,7 +125,8 @@ public partial class RHidePoint_Clocktower : BmSDK.BmScript.RHidePoint_Grate, Bm
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraGrateMeshForAnimSync
+    /// ComponentProperty: ExtraGrateMeshForAnimSync<br/>
+    /// Default: BmScript.Default__RHidePoint_Clocktower.GrateMesh5
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraGrateMeshForAnimSync
     {

@@ -142,25 +142,29 @@ public partial class RVantagePointGrappleCamera : BmSDK.BmGame.RCameraActor, BmS
     }
 
     /// <summary>
-    /// StructProperty: SilentPredCameraOffset
+    /// StructProperty: SilentPredCameraOffset<br/>
+    /// Default: (X=-135,Y=30,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SilentPredCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1264);
 
     /// <summary>
-    /// StructProperty: CameraOffset
+    /// StructProperty: CameraOffset<br/>
+    /// Default: (X=-30,Y=-200,Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1276);
 
     /// <summary>
-    /// StructProperty: BeamCameraOffset
+    /// StructProperty: BeamCameraOffset<br/>
+    /// Default: (X=-100,Y=200,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BeamCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1288);
 
     /// <summary>
-    /// FloatProperty: PlayerTargetWeight
+    /// FloatProperty: PlayerTargetWeight<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float PlayerTargetWeight
     {
@@ -181,7 +185,8 @@ public partial class RVantagePointGrappleCamera : BmSDK.BmGame.RCameraActor, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1316);
 
     /// <summary>
-    /// BoolProperty: bFrozen
+    /// BoolProperty: bFrozen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFrozen
     {

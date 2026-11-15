@@ -97,7 +97,8 @@ public partial class RInterpTrackFaceFXLookAt : BmSDK.Engine.InterpTrackFloatBas
     }
 
     /// <summary>
-    /// StrProperty: YawRegisterName
+    /// StrProperty: YawRegisterName<br/>
+    /// Default: "Eyes_Yaw_Code"
     /// </summary>
     public unsafe BmSDK.FString YawRegisterName
     {
@@ -106,7 +107,8 @@ public partial class RInterpTrackFaceFXLookAt : BmSDK.Engine.InterpTrackFloatBas
     }
 
     /// <summary>
-    /// StrProperty: PitchRegisterName
+    /// StrProperty: PitchRegisterName<br/>
+    /// Default: "Eyes_Pitch_Code"
     /// </summary>
     public unsafe BmSDK.FString PitchRegisterName
     {

@@ -97,7 +97,8 @@ public partial class AnimNodeBlendBySpeed : BmSDK.Engine.AnimNodeBlendList, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: BlendUpTime
+    /// FloatProperty: BlendUpTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BlendUpTime
     {
@@ -106,7 +107,8 @@ public partial class AnimNodeBlendBySpeed : BmSDK.Engine.AnimNodeBlendList, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: BlendDownTime
+    /// FloatProperty: BlendDownTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BlendDownTime
     {
@@ -115,7 +117,8 @@ public partial class AnimNodeBlendBySpeed : BmSDK.Engine.AnimNodeBlendList, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: BlendDownPerc
+    /// FloatProperty: BlendDownPerc<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendDownPerc
     {
@@ -124,7 +127,8 @@ public partial class AnimNodeBlendBySpeed : BmSDK.Engine.AnimNodeBlendList, BmSD
     }
 
     /// <summary>
-    /// ArrayProperty: Constraints
+    /// ArrayProperty: Constraints<br/>
+    /// Default: (0,180,350,900)
     /// </summary>
     public unsafe BmSDK.TArray<float> Constraints
     {

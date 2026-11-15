@@ -88,7 +88,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimStateName
+    /// NameProperty: AnimStateName<br/>
+    /// Default: Default
     /// </summary>
     public unsafe BmSDK.FName AnimStateName
     {
@@ -124,7 +125,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBlendInPose
+    /// BoolProperty: bBlendInPose<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlendInPose
     {
@@ -160,7 +162,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableSupportSprings
+    /// BoolProperty: bEnableSupportSprings<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableSupportSprings
     {
@@ -196,7 +199,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableOverstretchHandling
+    /// BoolProperty: bEnableOverstretchHandling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableOverstretchHandling
     {
@@ -214,7 +218,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableWindEffect
+    /// BoolProperty: bEnableWindEffect<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableWindEffect
     {
@@ -286,7 +291,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimBlendInDuration
+    /// FloatProperty: AnimBlendInDuration<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AnimBlendInDuration
     {
@@ -295,7 +301,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PoseBlendDuration
+    /// FloatProperty: PoseBlendDuration<br/>
+    /// Default: 0.375
     /// </summary>
     public unsafe float PoseBlendDuration
     {
@@ -322,7 +329,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AutoForwardTimer
+    /// FloatProperty: AutoForwardTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AutoForwardTimer
     {
@@ -376,7 +384,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimDriveJointLinearComponentForceLimit
+    /// FloatProperty: AnimDriveJointLinearComponentForceLimit<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AnimDriveJointLinearComponentForceLimit
     {
@@ -385,7 +394,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimDriveJointLinearComponentStrength
+    /// FloatProperty: AnimDriveJointLinearComponentStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float AnimDriveJointLinearComponentStrength
     {
@@ -403,7 +413,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimDriveJointAngularComponentForceLimit
+    /// FloatProperty: AnimDriveJointAngularComponentForceLimit<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AnimDriveJointAngularComponentForceLimit
     {
@@ -412,7 +423,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimDriveJointAngularComponentStrength
+    /// FloatProperty: AnimDriveJointAngularComponentStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float AnimDriveJointAngularComponentStrength
     {
@@ -430,7 +442,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DriveToAnimatedTolerance
+    /// FloatProperty: DriveToAnimatedTolerance<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DriveToAnimatedTolerance
     {
@@ -439,7 +452,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinApplyRotVel
+    /// FloatProperty: MinApplyRotVel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinApplyRotVel
     {
@@ -448,7 +462,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ForceStrengthMultiplier
+    /// FloatProperty: ForceStrengthMultiplier<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ForceStrengthMultiplier
     {
@@ -457,7 +472,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxForceCap
+    /// FloatProperty: MaxForceCap<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxForceCap
     {
@@ -466,7 +482,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChainPosStrengthMultiplierMin
+    /// FloatProperty: ChainPosStrengthMultiplierMin<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ChainPosStrengthMultiplierMin
     {
@@ -475,7 +492,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChainPosStrengthMultiplierChangeOverLength
+    /// FloatProperty: ChainPosStrengthMultiplierChangeOverLength<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ChainPosStrengthMultiplierChangeOverLength
     {
@@ -484,7 +502,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverstretchHandlingDistanceOverride
+    /// FloatProperty: OverstretchHandlingDistanceOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverstretchHandlingDistanceOverride
     {
@@ -502,7 +521,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxWindSpeed
+    /// FloatProperty: MaxWindSpeed<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MaxWindSpeed
     {
@@ -526,7 +546,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 240);
 
     /// <summary>
-    /// FloatProperty: SpringWeightBlendSpeed
+    /// FloatProperty: SpringWeightBlendSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SpringWeightBlendSpeed
     {
@@ -553,7 +574,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RunEffectForceStrengthMultiplierIncreaseRate
+    /// FloatProperty: RunEffectForceStrengthMultiplierIncreaseRate<br/>
+    /// Default: 0.0015
     /// </summary>
     public unsafe float RunEffectForceStrengthMultiplierIncreaseRate
     {
@@ -580,7 +602,8 @@ public partial class RCapeStateConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DepthBiasMagnitudeClamp
+    /// FloatProperty: DepthBiasMagnitudeClamp<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float DepthBiasMagnitudeClamp
     {

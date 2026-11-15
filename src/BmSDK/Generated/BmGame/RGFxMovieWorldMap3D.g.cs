@@ -705,7 +705,8 @@ public partial class RGFxMovieWorldMap3D : BmSDK.BmGame.RGFxMovieWorldBase, BmSD
     }
 
     /// <summary>
-    /// IntProperty: SelectedIconIndex
+    /// IntProperty: SelectedIconIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SelectedIconIndex
     {

@@ -639,7 +639,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: HeadAiming
+    /// ObjectProperty: HeadAiming<br/>
+    /// Default: BmScript.Default__RPawnBossJokerNukeGun.Head1
     /// </summary>
     public unsafe BmSDK.Engine.RAimingConfig HeadAiming
     {
@@ -657,7 +658,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: JokerAnimSet
+    /// ObjectProperty: JokerAnimSet<br/>
+    /// Default: Anim_Thug.Code.TG_Combat
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet JokerAnimSet
     {
@@ -666,7 +668,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: SuperPunchJoker
+    /// ObjectProperty: SuperPunchJoker<br/>
+    /// Default: Anim_Joker.SpecialMove.KickJokerIntoGurney
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SuperPunchJoker
     {
@@ -675,7 +678,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: BeatdownEndMove
+    /// ObjectProperty: BeatdownEndMove<br/>
+    /// Default: Anim_Joker.SpecialMove.KickJokerIntoGurney
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BeatdownEndMove
     {
@@ -684,7 +688,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: PushBatman
+    /// ObjectProperty: PushBatman<br/>
+    /// Default: Batman_Boss_Moves.Joker.JokerEscapeFromCell
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig PushBatman
     {
@@ -783,7 +788,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bCellTakedownDisabled
+    /// BoolProperty: bCellTakedownDisabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCellTakedownDisabled
     {
@@ -831,7 +837,8 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ExtraPunchDist
+    /// FloatProperty: ExtraPunchDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ExtraPunchDist
     {

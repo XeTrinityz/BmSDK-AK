@@ -171,7 +171,8 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: Shape
+    /// ComponentProperty: Shape<br/>
+    /// Default: Engine.Default__ForceFieldShapeBox.DrawBox0
     /// </summary>
     public unsafe BmSDK.Engine.DrawBoxComponent Shape
     {

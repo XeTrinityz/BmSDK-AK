@@ -92,7 +92,8 @@ public partial class SeqEvent_LOS : BmSDK.Engine.SequenceEvent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ScreenCenterDistance
+    /// FloatProperty: ScreenCenterDistance<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ScreenCenterDistance
     {
@@ -101,7 +102,8 @@ public partial class SeqEvent_LOS : BmSDK.Engine.SequenceEvent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: TriggerDistance
+    /// FloatProperty: TriggerDistance<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float TriggerDistance
     {
@@ -110,7 +112,8 @@ public partial class SeqEvent_LOS : BmSDK.Engine.SequenceEvent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCheckForObstructions
+    /// BoolProperty: bCheckForObstructions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckForObstructions
     {

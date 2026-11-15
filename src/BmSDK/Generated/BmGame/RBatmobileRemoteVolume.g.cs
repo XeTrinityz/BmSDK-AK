@@ -158,7 +158,8 @@ public partial class RBatmobileRemoteVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: IsActive
+    /// BoolProperty: IsActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsActive
     {
@@ -194,7 +195,8 @@ public partial class RBatmobileRemoteVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: ActiveIfLevelNotLoadedIndex
+    /// IntProperty: ActiveIfLevelNotLoadedIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ActiveIfLevelNotLoadedIndex
     {
@@ -203,7 +205,8 @@ public partial class RBatmobileRemoteVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: ActiveIfLevelNotLoadedIndex2
+    /// IntProperty: ActiveIfLevelNotLoadedIndex2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ActiveIfLevelNotLoadedIndex2
     {

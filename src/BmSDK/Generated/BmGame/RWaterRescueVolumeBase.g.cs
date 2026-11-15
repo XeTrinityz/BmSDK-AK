@@ -288,7 +288,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmGame.Default__RWaterRescueVolumeBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {
@@ -297,7 +298,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ClassProperty: dmgType
+    /// ClassProperty: dmgType<br/>
+    /// Default: BmGame.RDmgType_Fell
     /// </summary>
     public unsafe BmSDK.Class dmgType
     {
@@ -315,7 +317,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bCanRescueWithoutFade
+    /// BoolProperty: bCanRescueWithoutFade<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanRescueWithoutFade
     {
@@ -342,7 +345,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: AffectsBatmobile
+    /// BoolProperty: AffectsBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AffectsBatmobile
     {
@@ -396,7 +400,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileSplashOffsetZ
+    /// FloatProperty: BatmobileSplashOffsetZ<br/>
+    /// Default: -400
     /// </summary>
     public unsafe float BatmobileSplashOffsetZ
     {

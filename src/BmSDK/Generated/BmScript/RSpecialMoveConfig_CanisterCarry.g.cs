@@ -133,7 +133,8 @@ public partial class RSpecialMoveConfig_CanisterCarry : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: ExplodeInContainerAnim
+    /// NameProperty: ExplodeInContainerAnim<br/>
+    /// Default: React_To_Canister_Standing
     /// </summary>
     public unsafe BmSDK.FName ExplodeInContainerAnim
     {
@@ -205,7 +206,8 @@ public partial class RSpecialMoveConfig_CanisterCarry : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: PullCanisterSpeed
+    /// FloatProperty: PullCanisterSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PullCanisterSpeed
     {
@@ -238,7 +240,8 @@ public partial class RSpecialMoveConfig_CanisterCarry : BmSDK.BmGame.RSpecialMov
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 520);
 
     /// <summary>
-    /// FloatProperty: WarningDropOffPerSec
+    /// FloatProperty: WarningDropOffPerSec<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float WarningDropOffPerSec
     {
@@ -256,7 +259,8 @@ public partial class RSpecialMoveConfig_CanisterCarry : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// StructProperty: BreathingShake
+    /// StructProperty: BreathingShake<br/>
+    /// Default: (TimeDuration=1,LocAmplitude=(X=20,Y=20,Z=20),LocFrequency=(X=0.01,Y=0.01,Z=0.01),RotAmplitude=(X=400,Y=400,Z=400),RotFrequency=(X=0.01,Y=0.01,Z=0.01),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(F...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BreathingShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 544);

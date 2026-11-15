@@ -764,7 +764,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// IntProperty: MinRoadWidth
+    /// IntProperty: MinRoadWidth<br/>
+    /// Default: 768
     /// </summary>
     public unsafe int MinRoadWidth
     {
@@ -782,7 +783,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// ArrayProperty: WanderWalks
+    /// ArrayProperty: WanderWalks<br/>
+    /// Default: (Patrol_Walk_01,Patrol_Walk_02,Patrol_Walk_03,Patrol_Walk_04,Patrol_Walk_05)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> WanderWalks
     {
@@ -791,7 +793,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// ArrayProperty: WanderWalksSlow
+    /// ArrayProperty: WanderWalksSlow<br/>
+    /// Default: (Patrol_Walk_01_Slow,Patrol_Walk_02_Slow,Patrol_Walk_03_Slow,Patrol_Walk_04_Slow,Patrol_Walk_05_Slow)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> WanderWalksSlow
     {
@@ -800,7 +803,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// FloatProperty: CloseToDestDist
+    /// FloatProperty: CloseToDestDist<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CloseToDestDist
     {
@@ -809,7 +813,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// FloatProperty: AimAheadOfLeaderDistRioter
+    /// FloatProperty: AimAheadOfLeaderDistRioter<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AimAheadOfLeaderDistRioter
     {
@@ -818,7 +823,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// FloatProperty: AimAheadOfLeaderDistMilitia
+    /// FloatProperty: AimAheadOfLeaderDistMilitia<br/>
+    /// Default: -200
     /// </summary>
     public unsafe float AimAheadOfLeaderDistMilitia
     {
@@ -857,7 +863,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 964);
 
     /// <summary>
-    /// ArrayProperty: WanderWalkOverlays
+    /// ArrayProperty: WanderWalkOverlays<br/>
+    /// Default: ((Overlays=(Patrol_Walk_01_Overlay_01,Patrol_Walk_01_Overlay_02,Patrol_Walk_01_Overlay_03)),(Overlays=(Patrol_Walk_02_Overlay_01,Patrol_Walk_02_Overlay_02,Patrol_Walk_02_Overlay_03)),(Overlays=(Patrol...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMBehaviour_Wanderers.FWanderOverlays> WanderWalkOverlays
     {
@@ -884,7 +891,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenOverlays
+    /// FloatProperty: MinTimeBetweenOverlays<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinTimeBetweenOverlays
     {
@@ -893,7 +901,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenOverlays
+    /// FloatProperty: MaxTimeBetweenOverlays<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxTimeBetweenOverlays
     {
@@ -902,13 +911,15 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// StructProperty: CommanderStopOverlays
+    /// StructProperty: CommanderStopOverlays<br/>
+    /// Default: (Overlays=(Walk_Stop))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMBehaviour_Wanderers.FWanderOverlays CommanderStopOverlays
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMBehaviour_Wanderers.FWanderOverlays>(Ptr + 1008);
 
     /// <summary>
-    /// StructProperty: FollowerStopOverlays
+    /// StructProperty: FollowerStopOverlays<br/>
+    /// Default: (Overlays=(Walk_Stop))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMBehaviour_Wanderers.FWanderOverlays FollowerStopOverlays
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMBehaviour_Wanderers.FWanderOverlays>(Ptr + 1024);
@@ -929,7 +940,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1044);
 
     /// <summary>
-    /// ArrayProperty: WeaponData
+    /// ArrayProperty: WeaponData<br/>
+    /// Default: ((NumPatrolWalks=5,PatrolAnimset=Anim_IC_Streets_Navigation.Thug.TG_Patrol_Walks,PushOffAnimSet=Anim_Thug.Code.TG_Street_PushOff),(WeaponType=RBMWeaponBatBase,NumPatrolWalks=2,PatrolAnimset=Anim_IC_St...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMBehaviour_Wanderers.FWeaponAnimOverrides> WeaponData
     {
@@ -938,7 +950,8 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
     }
 
     /// <summary>
-    /// ArrayProperty: MilitiaRandomFakeWeapons
+    /// ArrayProperty: MilitiaRandomFakeWeapons<br/>
+    /// Default: (IPad,Media)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MilitiaRandomFakeWeapons
     {

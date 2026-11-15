@@ -490,7 +490,8 @@ public partial class RGadgetSelectBM3 : BmSDK.BmGame.RGadgetSelect, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: RequiredGadgetIndex
+    /// IntProperty: RequiredGadgetIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RequiredGadgetIndex
     {
@@ -517,7 +518,8 @@ public partial class RGadgetSelectBM3 : BmSDK.BmGame.RGadgetSelect, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: fGoOffscreenPeriod
+    /// FloatProperty: fGoOffscreenPeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float fGoOffscreenPeriod
     {
@@ -535,7 +537,8 @@ public partial class RGadgetSelectBM3 : BmSDK.BmGame.RGadgetSelect, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: EarlySelectionDelay
+    /// FloatProperty: EarlySelectionDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float EarlySelectionDelay
     {

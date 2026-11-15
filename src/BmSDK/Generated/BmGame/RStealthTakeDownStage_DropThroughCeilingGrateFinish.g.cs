@@ -123,7 +123,8 @@ public partial class RStealthTakeDownStage_DropThroughCeilingGrateFinish : BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: CeilingGrateOpeningSound
+    /// ObjectProperty: CeilingGrateOpeningSound<br/>
+    /// Default: ww_sbj_takedown_subjectives.Play_SBJ_FlipGrateTakedown
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CeilingGrateOpeningSound
     {

@@ -210,7 +210,8 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     }
 
     /// <summary>
-    /// IntProperty: NumJokersKilledBeforeDeathMoves
+    /// IntProperty: NumJokersKilledBeforeDeathMoves<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int NumJokersKilledBeforeDeathMoves
     {
@@ -300,7 +301,8 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     }
 
     /// <summary>
-    /// ClassProperty: JokerCharacter
+    /// ClassProperty: JokerCharacter<br/>
+    /// Default: BmGame.RCharacter_Guard
     /// </summary>
     public unsafe BmSDK.Class JokerCharacter
     {
@@ -318,7 +320,8 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     }
 
     /// <summary>
-    /// ArrayProperty: DummyAnimsetref
+    /// ArrayProperty: DummyAnimsetref<br/>
+    /// Default: (Anim_Batman_TG_Com.Code.BM_Jokerfied_TG_Counter,Anim_Batman_TG_Com.Code.TG_BM_Jokerfied_Counter,Anim_Batman_TG_Com.Code.BM_Jk_Fatal_Floor_Takedown,Anim_Batman_TG_Com.Code.JK_BM_Fatal_Floor_Takedown,A...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSet> DummyAnimsetref
     {
@@ -399,7 +402,8 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     }
 
     /// <summary>
-    /// FloatProperty: MinJokerCombatPointReuseTime
+    /// FloatProperty: MinJokerCombatPointReuseTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinJokerCombatPointReuseTime
     {
@@ -408,7 +412,8 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     }
 
     /// <summary>
-    /// FloatProperty: MaxJokerCombatPointReuseTime
+    /// FloatProperty: MaxJokerCombatPointReuseTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float MaxJokerCombatPointReuseTime
     {

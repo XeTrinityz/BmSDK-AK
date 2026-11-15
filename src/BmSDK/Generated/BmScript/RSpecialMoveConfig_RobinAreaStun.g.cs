@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MinFallSpeed
+    /// FloatProperty: MinFallSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MinFallSpeed
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MaxFallSpeed
+    /// FloatProperty: MaxFallSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float MaxFallSpeed
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MinRange
+    /// FloatProperty: MinRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MinRange
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MaxRange
+    /// FloatProperty: MaxRange<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float MaxRange
     {
@@ -115,7 +119,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MinStunTime
+    /// FloatProperty: MinStunTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinStunTime
     {
@@ -124,7 +129,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MaxStunTime
+    /// FloatProperty: MaxStunTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxStunTime
     {
@@ -133,7 +139,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ObjectProperty: VictimReactionAnimSet
+    /// ObjectProperty: VictimReactionAnimSet<br/>
+    /// Default: Anim_Thug.Code.TG_Electromagnetic_Blast_Reaction
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet VictimReactionAnimSet
     {
@@ -142,7 +149,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerAnimset
+    /// ObjectProperty: PlayerAnimset<br/>
+    /// Default: Anim_Robin_Gadget.Code.RB_Staff
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PlayerAnimset
     {
@@ -151,7 +159,8 @@ public partial class RSpecialMoveConfig_RobinAreaStun : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: PlayerAnimName
+    /// NameProperty: PlayerAnimName<br/>
+    /// Default: Electromagnetic_Blast_Stand_Attack
     /// </summary>
     public unsafe BmSDK.FName PlayerAnimName
     {

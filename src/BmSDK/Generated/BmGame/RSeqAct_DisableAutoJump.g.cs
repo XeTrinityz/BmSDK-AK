@@ -93,7 +93,8 @@ public partial class RSeqAct_DisableAutoJump : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bDisableJump
+    /// BoolProperty: bDisableJump<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableJump
     {

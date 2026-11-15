@@ -411,7 +411,8 @@ public partial class RCombatMove_NightwingGroupStun : BmSDK.BmGame.RCombatMove_P
     }
 
     /// <summary>
-    /// ObjectProperty: StunEffect
+    /// ObjectProperty: StunEffect<br/>
+    /// Default: VFX_Gadgets.FX_Batarang_Ricochet_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem StunEffect
     {
@@ -438,7 +439,8 @@ public partial class RCombatMove_NightwingGroupStun : BmSDK.BmGame.RCombatMove_P
     }
 
     /// <summary>
-    /// FloatProperty: LeftStickTotalFlightTime
+    /// FloatProperty: LeftStickTotalFlightTime<br/>
+    /// Default: 1.461
     /// </summary>
     public unsafe float LeftStickTotalFlightTime
     {
@@ -513,7 +515,8 @@ public partial class RCombatMove_NightwingGroupStun : BmSDK.BmGame.RCombatMove_P
     }
 
     /// <summary>
-    /// FloatProperty: RightStickTotalFlightTime
+    /// FloatProperty: RightStickTotalFlightTime<br/>
+    /// Default: 0.712
     /// </summary>
     public unsafe float RightStickTotalFlightTime
     {
@@ -543,7 +546,8 @@ public partial class RCombatMove_NightwingGroupStun : BmSDK.BmGame.RCombatMove_P
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1140);
 
     /// <summary>
-    /// FloatProperty: StickSpinSpeed
+    /// FloatProperty: StickSpinSpeed<br/>
+    /// Default: 120000
     /// </summary>
     public unsafe float StickSpinSpeed
     {

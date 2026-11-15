@@ -100,7 +100,8 @@ public partial class MaterialExpressionDirectionalBlurSceneTexture : BmSDK.Engin
     }
 
     /// <summary>
-    /// IntProperty: SampleNum
+    /// IntProperty: SampleNum<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int SampleNum
     {

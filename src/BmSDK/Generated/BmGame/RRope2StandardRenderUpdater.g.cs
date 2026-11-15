@@ -145,7 +145,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
     }
 
     /// <summary>
-    /// ObjectProperty: Material
+    /// ObjectProperty: Material<br/>
+    /// Default: VFX_Generic.fx_Rope_M_lit
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface Material
     {
@@ -190,7 +191,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
     }
 
     /// <summary>
-    /// FloatProperty: UnitsPerV
+    /// FloatProperty: UnitsPerV<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float UnitsPerV
     {
@@ -199,7 +201,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
     }
 
     /// <summary>
-    /// FloatProperty: RopeRenderInterpolationScale
+    /// FloatProperty: RopeRenderInterpolationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeRenderInterpolationScale
     {
@@ -208,7 +211,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
     }
 
     /// <summary>
-    /// FloatProperty: RopeRenderInterpolationScaleTarget
+    /// FloatProperty: RopeRenderInterpolationScaleTarget<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeRenderInterpolationScaleTarget
     {
@@ -217,7 +221,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
     }
 
     /// <summary>
-    /// FloatProperty: RopeRenderInterpolationScaleMaxChangeRate
+    /// FloatProperty: RopeRenderInterpolationScaleMaxChangeRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeRenderInterpolationScaleMaxChangeRate
     {

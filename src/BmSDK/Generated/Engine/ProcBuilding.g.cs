@@ -342,7 +342,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Color
+        /// StructProperty: Color<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor Color
         {
@@ -465,7 +466,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bGenerateRoofMesh
+    /// BoolProperty: bGenerateRoofMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGenerateRoofMesh
     {
@@ -501,7 +503,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSplitWallsAtRoofLevels
+    /// BoolProperty: bSplitWallsAtRoofLevels<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSplitWallsAtRoofLevels
     {
@@ -510,7 +513,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSplitWallsAtWallEdges
+    /// BoolProperty: bSplitWallsAtWallEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSplitWallsAtWallEdges
     {
@@ -528,7 +532,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBuildingBrushCollision
+    /// BoolProperty: bBuildingBrushCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBuildingBrushCollision
     {
@@ -645,7 +650,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SimpleMeshMassiveLODDistance
+    /// FloatProperty: SimpleMeshMassiveLODDistance<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float SimpleMeshMassiveLODDistance
     {
@@ -654,7 +660,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RenderToTexturePullBackAmount
+    /// FloatProperty: RenderToTexturePullBackAmount<br/>
+    /// Default: 125
     /// </summary>
     public unsafe float RenderToTexturePullBackAmount
     {
@@ -663,7 +670,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RoofLightmapRes
+    /// IntProperty: RoofLightmapRes<br/>
+    /// Default: 64
     /// </summary>
     public unsafe int RoofLightmapRes
     {
@@ -672,7 +680,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NonRectWallLightmapRes
+    /// IntProperty: NonRectWallLightmapRes<br/>
+    /// Default: 64
     /// </summary>
     public unsafe int NonRectWallLightmapRes
     {

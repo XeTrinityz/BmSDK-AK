@@ -399,7 +399,8 @@ public partial class RSpecialMoveInstance_OmnitronRemoteControl : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ObjectProperty: TunerFFWaveForm
+    /// ObjectProperty: TunerFFWaveForm<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_OmnitronRemoteControl.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TunerFFWaveForm
     {

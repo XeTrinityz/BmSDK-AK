@@ -107,7 +107,8 @@ public partial class RBarkConvoAction_Pause : BmSDK.BmGame.RBarkConvoAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MinPauseTime
+    /// FloatProperty: MinPauseTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MinPauseTime
     {
@@ -116,7 +117,8 @@ public partial class RBarkConvoAction_Pause : BmSDK.BmGame.RBarkConvoAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxPauseTime
+    /// FloatProperty: MaxPauseTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float MaxPauseTime
     {

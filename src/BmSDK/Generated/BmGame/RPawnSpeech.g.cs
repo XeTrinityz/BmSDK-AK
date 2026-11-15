@@ -247,7 +247,8 @@ public partial class RPawnSpeech : BmSDK.BmGame.RBMPawnAI, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: PawnSpeechDialogueComponent
+    /// ComponentProperty: PawnSpeechDialogueComponent<br/>
+    /// Default: BmGame.Default__RPawnSpeech.DialogueComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueComponent PawnSpeechDialogueComponent
     {

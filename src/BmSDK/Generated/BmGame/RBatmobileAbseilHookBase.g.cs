@@ -201,7 +201,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmGame.Default__RBatmobileAbseilHookBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -210,7 +211,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// ComponentProperty: CylComp
+    /// ComponentProperty: CylComp<br/>
+    /// Default: BmGame.Default__RBatmobileAbseilHookBase.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylComp
     {
@@ -219,7 +221,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeMinLength
+    /// FloatProperty: AbseilRopeMinLength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AbseilRopeMinLength
     {
@@ -228,7 +231,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeMaxLength
+    /// FloatProperty: AbseilRopeMaxLength<br/>
+    /// Default: 9000
     /// </summary>
     public unsafe float AbseilRopeMaxLength
     {
@@ -237,7 +241,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeReleaseLength
+    /// FloatProperty: AbseilRopeReleaseLength<br/>
+    /// Default: 8500
     /// </summary>
     public unsafe float AbseilRopeReleaseLength
     {
@@ -300,7 +305,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// BoolProperty: IsOnCeiling
+    /// BoolProperty: IsOnCeiling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsOnCeiling
     {
@@ -333,7 +339,8 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
     }
 
     /// <summary>
-    /// FloatProperty: MaxTargetRange
+    /// FloatProperty: MaxTargetRange<br/>
+    /// Default: 4700
     /// </summary>
     public unsafe float MaxTargetRange
     {

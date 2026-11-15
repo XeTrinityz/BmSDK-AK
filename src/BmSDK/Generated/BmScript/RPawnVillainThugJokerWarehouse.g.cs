@@ -229,7 +229,8 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     }
 
     /// <summary>
-    /// ArrayProperty: ThugDeathAnims
+    /// ArrayProperty: ThugDeathAnims<br/>
+    /// Default: (Thug_Death_01,Thug_Death_02,Thug_Death_03,Thug_Death_04,Thug_Death_05,Thug_Death_06,Thug_Death_07)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ThugDeathAnims
     {
@@ -238,7 +239,8 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     }
 
     /// <summary>
-    /// ArrayProperty: ThugDeathIdleAnims
+    /// ArrayProperty: ThugDeathIdleAnims<br/>
+    /// Default: (Thug_Death_Idle_01,Thug_Death_Idle_02,Thug_Death_Idle_03,Thug_Death_Idle_04,Thug_Death_Idle_05,Thug_Death_Idle_06,Thug_Death_Idle_07)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ThugDeathIdleAnims
     {

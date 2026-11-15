@@ -145,7 +145,8 @@ public partial class AnimNodeBlendMultiBone : BmSDK.Engine.AnimNodeBlendBase, Bm
         }
 
         /// <summary>
-        /// FloatProperty: InitPerBoneIncrease
+        /// FloatProperty: InitPerBoneIncrease<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float InitPerBoneIncrease
         {

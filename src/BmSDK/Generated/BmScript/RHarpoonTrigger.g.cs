@@ -136,7 +136,8 @@ public partial class RHarpoonTrigger : BmSDK.BmGame.RHarpoonTriggerBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmScript.Default__RHarpoonTrigger.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -145,7 +146,8 @@ public partial class RHarpoonTrigger : BmSDK.BmGame.RHarpoonTriggerBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: CylComp
+    /// ComponentProperty: CylComp<br/>
+    /// Default: BmScript.Default__RHarpoonTrigger.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylComp
     {

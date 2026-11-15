@@ -777,7 +777,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bIsArkhamCity
+    /// BoolProperty: bIsArkhamCity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsArkhamCity
     {
@@ -786,7 +787,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bDisableLightningStrikes
+    /// BoolProperty: bDisableLightningStrikes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableLightningStrikes
     {
@@ -795,7 +797,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bFadeOutOWLighting
+    /// BoolProperty: bFadeOutOWLighting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFadeOutOWLighting
     {
@@ -840,7 +843,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bNoDynamicGlideTutorial
+    /// BoolProperty: bNoDynamicGlideTutorial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoDynamicGlideTutorial
     {
@@ -912,7 +916,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: AkProps
+    /// ObjectProperty: AkProps<br/>
+    /// Default: BmGame.Default__RLevelVolume.AkProperties_AkProps
     /// </summary>
     public unsafe BmSDK.Engine.AkProperties AkProps
     {
@@ -993,7 +998,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: LevelWind
+    /// StructProperty: LevelWind<br/>
+    /// Default: (IsApplyWind=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FRBasicWindConfig LevelWind
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRBasicWindConfig>(Ptr + 964);
@@ -1044,7 +1050,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: VantagePointCheckWorldZ
+    /// FloatProperty: VantagePointCheckWorldZ<br/>
+    /// Default: -1e+07
     /// </summary>
     public unsafe float VantagePointCheckWorldZ
     {
@@ -1053,7 +1060,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenRandomBarks
+    /// FloatProperty: MinTimeBetweenRandomBarks<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinTimeBetweenRandomBarks
     {
@@ -1062,7 +1070,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: Priority
+    /// FloatProperty: Priority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Priority
     {
@@ -1071,7 +1080,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: OverrideBatclawRange
+    /// FloatProperty: OverrideBatclawRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideBatclawRange
     {
@@ -1080,7 +1090,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RoofTopLevel
+    /// FloatProperty: RoofTopLevel<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float RoofTopLevel
     {
@@ -1089,7 +1100,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: StreetLevel
+    /// FloatProperty: StreetLevel<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float StreetLevel
     {
@@ -1098,7 +1110,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TrimBatmobileRouteMinRange
+    /// FloatProperty: TrimBatmobileRouteMinRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float TrimBatmobileRouteMinRange
     {
@@ -1143,7 +1156,8 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LocalCharacterLightBrightness
+    /// FloatProperty: LocalCharacterLightBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LocalCharacterLightBrightness
     {

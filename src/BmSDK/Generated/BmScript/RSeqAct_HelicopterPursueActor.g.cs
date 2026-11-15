@@ -133,7 +133,8 @@ public partial class RSeqAct_HelicopterPursueActor : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// FloatProperty: PursuitDistance
+    /// FloatProperty: PursuitDistance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float PursuitDistance
     {
@@ -142,7 +143,8 @@ public partial class RSeqAct_HelicopterPursueActor : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// BoolProperty: MakeThisHelicopterGoReallyFast
+    /// BoolProperty: MakeThisHelicopterGoReallyFast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MakeThisHelicopterGoReallyFast
     {

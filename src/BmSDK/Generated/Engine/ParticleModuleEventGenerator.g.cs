@@ -112,7 +112,8 @@ public partial class ParticleModuleEventGenerator : BmSDK.Engine.ParticleModuleE
         }
 
         /// <summary>
-        /// IntProperty: LowFreq
+        /// IntProperty: LowFreq<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int LowFreq
         {

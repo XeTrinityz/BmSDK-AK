@@ -322,7 +322,8 @@ public partial class RPawnVillainGunJammerBase : BmSDK.BmScript.RPawnVillainGunP
     }
 
     /// <summary>
-    /// ObjectProperty: TheMovieInstance
+    /// ObjectProperty: TheMovieInstance<br/>
+    /// Default: JammerTowerHUD.HUD
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheMovieInstance
     {
@@ -331,7 +332,8 @@ public partial class RPawnVillainGunJammerBase : BmSDK.BmScript.RPawnVillainGunP
     }
 
     /// <summary>
-    /// ObjectProperty: JammerDisruptedXrayMIC
+    /// ObjectProperty: JammerDisruptedXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant JammerDisruptedXrayMIC
     {
@@ -340,7 +342,8 @@ public partial class RPawnVillainGunJammerBase : BmSDK.BmScript.RPawnVillainGunP
     }
 
     /// <summary>
-    /// ComponentProperty: jammerFX
+    /// ComponentProperty: jammerFX<br/>
+    /// Default: BmScript.Default__RPawnVillainGunJammerBase.jammerFXComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent jammerFX
     {

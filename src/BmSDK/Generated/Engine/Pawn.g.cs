@@ -4044,7 +4044,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxStepHeight
+    /// FloatProperty: MaxStepHeight<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float MaxStepHeight
     {
@@ -4053,7 +4054,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxJumpHeight
+    /// FloatProperty: MaxJumpHeight<br/>
+    /// Default: 96
     /// </summary>
     public unsafe float MaxJumpHeight
     {
@@ -4062,7 +4064,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WalkableFloorZ
+    /// FloatProperty: WalkableFloorZ<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float WalkableFloorZ
     {
@@ -4080,7 +4083,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LedgeCheckThreshold
+    /// FloatProperty: LedgeCheckThreshold<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float LedgeCheckThreshold
     {
@@ -4311,7 +4315,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: InventoryManagerClass
+    /// ClassProperty: InventoryManagerClass<br/>
+    /// Default: Engine.InventoryManager
     /// </summary>
     public unsafe BmSDK.Class InventoryManagerClass
     {
@@ -4320,7 +4325,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__Pawn.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -4446,7 +4452,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bJumpCapable
+    /// BoolProperty: bJumpCapable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bJumpCapable
     {
@@ -4455,7 +4462,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanJump
+    /// BoolProperty: bCanJump<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanJump
     {
@@ -4464,7 +4472,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanWalk
+    /// BoolProperty: bCanWalk<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanWalk
     {
@@ -4527,7 +4536,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowLedgeOverhang
+    /// BoolProperty: bAllowLedgeOverhang<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowLedgeOverhang
     {
@@ -4545,7 +4555,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSimulateGravity
+    /// BoolProperty: bSimulateGravity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSimulateGravity
     {
@@ -4725,7 +4736,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bLOSHearing
+    /// BoolProperty: bLOSHearing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLOSHearing
     {
@@ -4797,7 +4809,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bModifyNavPointDest
+    /// BoolProperty: bModifyNavPointDest<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bModifyNavPointDest
     {
@@ -4860,7 +4873,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bLimitFallAccel
+    /// BoolProperty: bLimitFallAccel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLimitFallAccel
     {
@@ -5013,7 +5027,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowSlideOffEdges
+    /// BoolProperty: bAllowSlideOffEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowSlideOffEdges
     {
@@ -5040,7 +5055,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: WalkingPhysics
+    /// ByteProperty: WalkingPhysics<br/>
+    /// Default: PHYS_Walking
     /// </summary>
     public unsafe BmSDK.Engine.Actor.EPhysics WalkingPhysics
     {
@@ -5112,7 +5128,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CrouchHeight
+    /// FloatProperty: CrouchHeight<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float CrouchHeight
     {
@@ -5121,7 +5138,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CrouchRadius
+    /// FloatProperty: CrouchRadius<br/>
+    /// Default: 34
     /// </summary>
     public unsafe float CrouchRadius
     {
@@ -5139,7 +5157,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NonPreferredVehiclePathMultiplier
+    /// FloatProperty: NonPreferredVehiclePathMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NonPreferredVehiclePathMultiplier
     {
@@ -5148,7 +5167,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DesiredSpeed
+    /// FloatProperty: DesiredSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DesiredSpeed
     {
@@ -5157,7 +5177,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDesiredSpeed
+    /// FloatProperty: MaxDesiredSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxDesiredSpeed
     {
@@ -5166,7 +5187,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HearingThreshold
+    /// FloatProperty: HearingThreshold<br/>
+    /// Default: 2800
     /// </summary>
     public unsafe float HearingThreshold
     {
@@ -5184,7 +5206,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SightRadius
+    /// FloatProperty: SightRadius<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float SightRadius
     {
@@ -5202,7 +5225,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AvgPhysicsTime
+    /// FloatProperty: AvgPhysicsTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AvgPhysicsTime
     {
@@ -5211,7 +5235,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Mass
+    /// FloatProperty: Mass<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float Mass
     {
@@ -5316,7 +5341,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPitchLimit
+    /// IntProperty: MaxPitchLimit<br/>
+    /// Default: 3072
     /// </summary>
     public unsafe int MaxPitchLimit
     {
@@ -5325,7 +5351,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GroundSpeed
+    /// FloatProperty: GroundSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float GroundSpeed
     {
@@ -5334,7 +5361,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WaterSpeed
+    /// FloatProperty: WaterSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float WaterSpeed
     {
@@ -5343,7 +5371,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AirSpeed
+    /// FloatProperty: AirSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float AirSpeed
     {
@@ -5352,7 +5381,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LadderSpeed
+    /// FloatProperty: LadderSpeed<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float LadderSpeed
     {
@@ -5361,7 +5391,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AccelRate
+    /// FloatProperty: AccelRate<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float AccelRate
     {
@@ -5370,7 +5401,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JumpZ
+    /// FloatProperty: JumpZ<br/>
+    /// Default: 420
     /// </summary>
     public unsafe float JumpZ
     {
@@ -5379,7 +5411,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OutofWaterZ
+    /// FloatProperty: OutofWaterZ<br/>
+    /// Default: 420
     /// </summary>
     public unsafe float OutofWaterZ
     {
@@ -5388,7 +5421,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxOutOfWaterStepHeight
+    /// FloatProperty: MaxOutOfWaterStepHeight<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float MaxOutOfWaterStepHeight
     {
@@ -5397,7 +5431,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AirControl
+    /// FloatProperty: AirControl<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float AirControl
     {
@@ -5406,7 +5441,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WalkingPct
+    /// FloatProperty: WalkingPct<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float WalkingPct
     {
@@ -5415,7 +5451,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MovementSpeedModifier
+    /// FloatProperty: MovementSpeedModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MovementSpeedModifier
     {
@@ -5424,7 +5461,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CrouchedPct
+    /// FloatProperty: CrouchedPct<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CrouchedPct
     {
@@ -5433,7 +5471,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxFallSpeed
+    /// FloatProperty: MaxFallSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MaxFallSpeed
     {
@@ -5442,7 +5481,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AIMaxFallSpeedFactor
+    /// FloatProperty: AIMaxFallSpeedFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AIMaxFallSpeedFactor
     {
@@ -5451,7 +5491,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BaseEyeHeight
+    /// FloatProperty: BaseEyeHeight<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float BaseEyeHeight
     {
@@ -5460,7 +5501,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EyeHeight
+    /// FloatProperty: EyeHeight<br/>
+    /// Default: 54
     /// </summary>
     public unsafe float EyeHeight
     {
@@ -5484,7 +5526,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Health
+    /// IntProperty: Health<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int Health
     {
@@ -5550,7 +5593,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1180);
 
     /// <summary>
-    /// FloatProperty: noise1time
+    /// FloatProperty: noise1time<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float noise1time
     {
@@ -5574,7 +5618,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1200);
 
     /// <summary>
-    /// FloatProperty: noise2time
+    /// FloatProperty: noise2time<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float noise2time
     {
@@ -5592,7 +5637,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoundDampening
+    /// FloatProperty: SoundDampening<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoundDampening
     {
@@ -5601,7 +5647,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageScaling
+    /// FloatProperty: DamageScaling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageScaling
     {
@@ -5619,7 +5666,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: LandMovementState
+    /// NameProperty: LandMovementState<br/>
+    /// Default: PlayerWalking
     /// </summary>
     public unsafe BmSDK.FName LandMovementState
     {
@@ -5628,7 +5676,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: WaterMovementState
+    /// NameProperty: WaterMovementState<br/>
+    /// Default: PlayerSwimming
     /// </summary>
     public unsafe BmSDK.FName WaterMovementState
     {
@@ -5658,7 +5707,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1276);
 
     /// <summary>
-    /// FloatProperty: RBPushRadius
+    /// FloatProperty: RBPushRadius<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RBPushRadius
     {
@@ -5667,7 +5717,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RBPushStrength
+    /// FloatProperty: RBPushStrength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float RBPushStrength
     {
@@ -5685,7 +5736,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleCheckRadius
+    /// FloatProperty: VehicleCheckRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float VehicleCheckRadius
     {
@@ -5694,7 +5746,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ViewPitchMin
+    /// FloatProperty: ViewPitchMin<br/>
+    /// Default: -16384
     /// </summary>
     public unsafe float ViewPitchMin
     {
@@ -5703,7 +5756,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ViewPitchMax
+    /// FloatProperty: ViewPitchMax<br/>
+    /// Default: 16383
     /// </summary>
     public unsafe float ViewPitchMax
     {
@@ -5712,7 +5766,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: AllowedYawError
+    /// IntProperty: AllowedYawError<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe int AllowedYawError
     {
@@ -5796,7 +5851,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineTypes.FRootMotionCurve>(Ptr + 1420);
 
     /// <summary>
-    /// FloatProperty: RootMotionInterpRate
+    /// FloatProperty: RootMotionInterpRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RootMotionInterpRate
     {

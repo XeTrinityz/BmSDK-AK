@@ -139,7 +139,8 @@ public partial class RHelicopterHangPoint : BmSDK.BmGame.RHangPointSpawnable, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: GrappleToChopperMove
+    /// ObjectProperty: GrappleToChopperMove<br/>
+    /// Default: Batman_Environment_Moves.Helicopter.Hang_On_Helicopter
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GrappleToChopperMove
     {

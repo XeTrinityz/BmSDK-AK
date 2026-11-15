@@ -363,7 +363,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: FSMPartPoolSize
+    /// IntProperty: FSMPartPoolSize<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int FSMPartPoolSize
     {
@@ -381,7 +382,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableAntiLinearVibration
+    /// BoolProperty: bEnableAntiLinearVibration<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableAntiLinearVibration
     {
@@ -390,7 +392,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableSpawnChunkEffectForRadialDamage
+    /// BoolProperty: bEnableSpawnChunkEffectForRadialDamage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableSpawnChunkEffectForRadialDamage
     {
@@ -399,7 +402,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DestroyVibrationLevel
+    /// FloatProperty: DestroyVibrationLevel<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float DestroyVibrationLevel
     {
@@ -408,7 +412,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DestroyMinAngVel
+    /// FloatProperty: DestroyMinAngVel<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float DestroyMinAngVel
     {
@@ -417,7 +422,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DestroyLinearVibrationLevel
+    /// FloatProperty: DestroyLinearVibrationLevel<br/>
+    /// Default: 14
     /// </summary>
     public unsafe float DestroyLinearVibrationLevel
     {
@@ -426,7 +432,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DestroyMinLinearVel
+    /// FloatProperty: DestroyMinLinearVel<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float DestroyMinLinearVel
     {
@@ -435,7 +442,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionVelScale
+    /// FloatProperty: ExplosionVelScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ExplosionVelScale
     {

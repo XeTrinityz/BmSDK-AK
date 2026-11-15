@@ -444,7 +444,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyVisibleInOverworld
+    /// BoolProperty: bOnlyVisibleInOverworld<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyVisibleInOverworld
     {
@@ -462,7 +463,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AppearAsBatsymbol
+    /// BoolProperty: AppearAsBatsymbol<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearAsBatsymbol
     {
@@ -480,7 +482,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnMapScreen
+    /// BoolProperty: AppearOnMapScreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnMapScreen
     {
@@ -489,7 +492,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnCompass
+    /// BoolProperty: AppearOnCompass<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnCompass
     {
@@ -498,7 +502,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnSatnav
+    /// BoolProperty: AppearOnSatnav<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnSatnav
     {
@@ -606,7 +611,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HT_AppearAsHudTarget
+    /// BoolProperty: HT_AppearAsHudTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HT_AppearAsHudTarget
     {
@@ -615,7 +621,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HT_ShowFocusDetailAuto
+    /// BoolProperty: HT_ShowFocusDetailAuto<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HT_ShowFocusDetailAuto
     {
@@ -633,7 +640,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HT_ShowDistance
+    /// BoolProperty: HT_ShowDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HT_ShowDistance
     {
@@ -741,7 +749,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MarkerIcon
+    /// StrProperty: MarkerIcon<br/>
+    /// Default: "Objective"
     /// </summary>
     public unsafe BmSDK.FString MarkerIcon
     {
@@ -759,7 +768,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HighObjectiveMarkerHeight
+    /// FloatProperty: HighObjectiveMarkerHeight<br/>
+    /// Default: 3536
     /// </summary>
     public unsafe float HighObjectiveMarkerHeight
     {
@@ -768,7 +778,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinSatnavRadius
+    /// FloatProperty: MinSatnavRadius<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MinSatnavRadius
     {
@@ -876,7 +887,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: HT_HudTargetAnimName
+    /// StrProperty: HT_HudTargetAnimName<br/>
+    /// Default: "vehicle_onscreen"
     /// </summary>
     public unsafe BmSDK.FString HT_HudTargetAnimName
     {
@@ -885,7 +897,8 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: HT_HudTargetAnimNameWhenOffscreen
+    /// StrProperty: HT_HudTargetAnimNameWhenOffscreen<br/>
+    /// Default: "vehicle_offscreen"
     /// </summary>
     public unsafe BmSDK.FString HT_HudTargetAnimNameWhenOffscreen
     {

@@ -119,7 +119,8 @@ public partial class RBatmobileScrewSpikesBase : BmSDK.Engine.InterpActor, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ActivateRange
+    /// FloatProperty: ActivateRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ActivateRange
     {

@@ -100,7 +100,8 @@ public partial class StaticMeshSocket : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: RelativeScale
+    /// StructProperty: RelativeScale<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RelativeScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 116);

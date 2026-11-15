@@ -289,7 +289,8 @@ public partial class RCombatMove_BatmanFailMove : BmSDK.BmGame.RCombatMove_Batma
     }
 
     /// <summary>
-    /// FloatProperty: SpecialMoveTime
+    /// FloatProperty: SpecialMoveTime<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float SpecialMoveTime
     {

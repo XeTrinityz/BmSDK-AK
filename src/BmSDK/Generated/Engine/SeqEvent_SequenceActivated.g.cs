@@ -79,7 +79,8 @@ public partial class SeqEvent_SequenceActivated : BmSDK.Engine.SequenceEvent, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: InputLabel
+    /// StrProperty: InputLabel<br/>
+    /// Default: "In"
     /// </summary>
     public unsafe BmSDK.FString InputLabel
     {

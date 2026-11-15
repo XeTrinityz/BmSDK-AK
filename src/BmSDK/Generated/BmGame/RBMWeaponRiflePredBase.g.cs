@@ -115,7 +115,8 @@ public partial class RBMWeaponRiflePredBase : BmSDK.BmGame.RBMWeaponRanged, BmSD
     }
 
     /// <summary>
-    /// NameProperty: ReloadAnimName
+    /// NameProperty: ReloadAnimName<br/>
+    /// Default: Reload
     /// </summary>
     public unsafe BmSDK.FName ReloadAnimName
     {

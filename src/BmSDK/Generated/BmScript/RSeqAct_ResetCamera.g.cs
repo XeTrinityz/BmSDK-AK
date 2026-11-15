@@ -138,7 +138,8 @@ public partial class RSeqAct_ResetCamera : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ResetToGameCamTime
+    /// FloatProperty: ResetToGameCamTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ResetToGameCamTime
     {

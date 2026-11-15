@@ -285,7 +285,8 @@ public partial class GameUISceneClient : BmSDK.Engine.UISceneClient, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bEnableDebugInput
+    /// BoolProperty: bEnableDebugInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableDebugInput
     {
@@ -303,7 +304,8 @@ public partial class GameUISceneClient : BmSDK.Engine.UISceneClient, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bCaptureUnprocessedInput
+    /// BoolProperty: bCaptureUnprocessedInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCaptureUnprocessedInput
     {

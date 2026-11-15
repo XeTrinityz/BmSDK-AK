@@ -571,7 +571,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
     }
 
     /// <summary>
-    /// FloatProperty: BatsDistance
+    /// FloatProperty: BatsDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float BatsDistance
     {
@@ -751,7 +752,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
         }
 
         /// <summary>
-        /// IntProperty: FOV
+        /// IntProperty: FOV<br/>
+        /// Default: 40
         /// </summary>
         public unsafe int FOV
         {
@@ -760,7 +762,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {

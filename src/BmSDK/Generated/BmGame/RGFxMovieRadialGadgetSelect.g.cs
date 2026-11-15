@@ -943,7 +943,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: WorldPPSettings
+    /// StructProperty: WorldPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_FocusDistance=true,bOverride_DOF_InterpolationDuration=true,InterpolateOverDistanceFade=250...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings WorldPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 704);
@@ -967,7 +968,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: LeftCornerGadgetIndex
+    /// IntProperty: LeftCornerGadgetIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LeftCornerGadgetIndex
     {
@@ -976,7 +978,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: RequiredGadget_OutOfSixteen
+    /// IntProperty: RequiredGadget_OutOfSixteen<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RequiredGadget_OutOfSixteen
     {
@@ -1141,7 +1144,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: CloseWheelEvent
+    /// ObjectProperty: CloseWheelEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Close
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CloseWheelEvent
     {
@@ -1150,7 +1154,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: CloseWheelEquipEvent
+    /// ObjectProperty: CloseWheelEquipEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Equip
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CloseWheelEquipEvent
     {
@@ -1159,7 +1164,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: WheelHighlightEmptyEvent
+    /// ObjectProperty: WheelHighlightEmptyEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Highlight_Empty
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WheelHighlightEmptyEvent
     {
@@ -1168,7 +1174,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: WheelHighlightGadgetEvent
+    /// ObjectProperty: WheelHighlightGadgetEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Highlight_Gadget
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WheelHighlightGadgetEvent
     {
@@ -1177,7 +1184,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: PlayWheelMoveEvent
+    /// ObjectProperty: PlayWheelMoveEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Move
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PlayWheelMoveEvent
     {
@@ -1186,7 +1194,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: StopWheelMoveEvent
+    /// ObjectProperty: StopWheelMoveEvent<br/>
+    /// Default: Ww_UI_InGame.Stop_UI_Gadget_Wheel_Move
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent StopWheelMoveEvent
     {
@@ -1195,7 +1204,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: WheelOpenEvent
+    /// ObjectProperty: WheelOpenEvent<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Gadget_Wheel_Open
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WheelOpenEvent
     {
@@ -1235,7 +1245,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1440); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_1
     {
@@ -1243,7 +1254,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1444); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_2
     {
@@ -1251,7 +1263,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1448); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_3
     {
@@ -1259,7 +1272,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1452); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 11
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_4
     {
@@ -1267,7 +1281,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1456); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_5
     {
@@ -1275,7 +1290,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1460); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_6
     {
@@ -1283,7 +1299,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1464); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_7
     {
@@ -1291,7 +1308,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1468); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_8
     {
@@ -1299,7 +1317,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1472); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_9
     {
@@ -1307,7 +1326,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1476); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_10
     {
@@ -1315,7 +1335,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1480); }
     }
     /// <summary>
-    /// IntProperty: CycleGadgetsIndexOrder
+    /// IntProperty: CycleGadgetsIndexOrder<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int CycleGadgetsIndexOrder_11
     {

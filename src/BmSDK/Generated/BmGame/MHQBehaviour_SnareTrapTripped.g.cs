@@ -186,7 +186,8 @@ public partial class MHQBehaviour_SnareTrapTripped : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ClassProperty: DType
+    /// ClassProperty: DType<br/>
+    /// Default: BmGame.RDmgType_Electricity
     /// </summary>
     public unsafe BmSDK.Class DType
     {
@@ -240,13 +241,15 @@ public partial class MHQBehaviour_SnareTrapTripped : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// StructProperty: HitNormal
+    /// StructProperty: HitNormal<br/>
+    /// Default: (X=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HitNormal
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 600);
 
     /// <summary>
-    /// FloatProperty: TrappedTime
+    /// FloatProperty: TrappedTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TrappedTime
     {
@@ -264,7 +267,8 @@ public partial class MHQBehaviour_SnareTrapTripped : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: OutAnimTime
+    /// FloatProperty: OutAnimTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float OutAnimTime
     {

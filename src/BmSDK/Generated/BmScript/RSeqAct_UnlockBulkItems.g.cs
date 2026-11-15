@@ -93,7 +93,8 @@ public partial class RSeqAct_UnlockBulkItems : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// StrProperty: BulkUnlockTitle
+    /// StrProperty: BulkUnlockTitle<br/>
+    /// Default: "Design.Fill.ThisTitle"
     /// </summary>
     public unsafe BmSDK.FString BulkUnlockTitle
     {
@@ -102,7 +103,8 @@ public partial class RSeqAct_UnlockBulkItems : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// StrProperty: BulkUnlockDesc
+    /// StrProperty: BulkUnlockDesc<br/>
+    /// Default: "Design.Fill.ThisDescription"
     /// </summary>
     public unsafe BmSDK.FString BulkUnlockDesc
     {

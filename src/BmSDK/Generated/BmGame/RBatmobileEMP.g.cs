@@ -248,7 +248,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 7500
     /// </summary>
     public unsafe float Range
     {
@@ -257,7 +258,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: DisableEnemyDuration
+    /// ArrayProperty: DisableEnemyDuration<br/>
+    /// Default: (2,4,8,12)
     /// </summary>
     public unsafe BmSDK.TArray<float> DisableEnemyDuration
     {
@@ -266,7 +268,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ChargeParticle
+    /// ComponentProperty: ChargeParticle<br/>
+    /// Default: BmGame.Default__RBatmobileEMP.ChargeParticle0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ChargeParticle
     {
@@ -275,7 +278,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: PowerLevelChargeTime
+    /// ArrayProperty: PowerLevelChargeTime<br/>
+    /// Default: (0,0.5,1,1.5)
     /// </summary>
     public unsafe BmSDK.TArray<float> PowerLevelChargeTime
     {
@@ -311,7 +315,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: EMPFFWaveForm
+    /// ObjectProperty: EMPFFWaveForm<br/>
+    /// Default: BmGame.Default__RBatmobileEMP.EMPForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform EMPFFWaveForm
     {
@@ -320,7 +325,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ImpulseComponent
+    /// ComponentProperty: ImpulseComponent<br/>
+    /// Default: BmGame.Default__RBatmobileEMP.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent ImpulseComponent
     {
@@ -356,7 +362,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: EMPImpulse
+    /// ArrayProperty: EMPImpulse<br/>
+    /// Default: (5000)
     /// </summary>
     public unsafe BmSDK.TArray<float> EMPImpulse
     {
@@ -365,7 +372,8 @@ public partial class RBatmobileEMP : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: EMPVehicleImpulse
+    /// ArrayProperty: EMPVehicleImpulse<br/>
+    /// Default: (20000)
     /// </summary>
     public unsafe BmSDK.TArray<float> EMPVehicleImpulse
     {

@@ -97,7 +97,8 @@ public partial class RAnimNotify_Graffiti : BmSDK.Engine.AnimNotify, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: Size
+    /// StructProperty: Size<br/>
+    /// Default: (X=100,Y=100,Z=100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Size
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 96);

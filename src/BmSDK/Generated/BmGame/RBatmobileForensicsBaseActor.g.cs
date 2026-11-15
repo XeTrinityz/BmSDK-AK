@@ -123,7 +123,8 @@ public partial class RBatmobileForensicsBaseActor : BmSDK.Engine.Actor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: RevealedParticleFX
+    /// ComponentProperty: RevealedParticleFX<br/>
+    /// Default: BmGame.Default__RBatmobileForensicsBaseActor.Pfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RevealedParticleFX
     {

@@ -1186,7 +1186,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ObjectProperty: ShieldAnimset
+    /// ObjectProperty: ShieldAnimset<br/>
+    /// Default: anim_multiweapon_com.Code.MW_Shield
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ShieldAnimset
     {
@@ -1195,7 +1196,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ObjectProperty: ArmourAnimset
+    /// ObjectProperty: ArmourAnimset<br/>
+    /// Default: anim_multiweapon_com.Code.MW_Armour
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ArmourAnimset
     {
@@ -1204,7 +1206,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ObjectProperty: BladeAnimset
+    /// ObjectProperty: BladeAnimset<br/>
+    /// Default: anim_multiweapon_com.Code.MW_Blade
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet BladeAnimset
     {
@@ -1213,7 +1216,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ObjectProperty: BlockSound
+    /// ObjectProperty: BlockSound<br/>
+    /// Default: Ww_WPN_Shield.Play_Shield_Block
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BlockSound
     {
@@ -1222,7 +1226,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ComponentProperty: BladeTrail
+    /// ComponentProperty: BladeTrail<br/>
+    /// Default: BmScript.Default__RPawnVillainMultiStage.TrailComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BladeTrail
     {
@@ -1231,7 +1236,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangOverride
+    /// ComponentProperty: BatarangOverride<br/>
+    /// Default: BmScript.Default__RPawnVillainMultiStage.NewBatarangOverride
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatarangOverride
     {
@@ -1312,7 +1318,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// NameProperty: ThrowInAnimName
+    /// NameProperty: ThrowInAnimName<br/>
+    /// Default: Pick_Up_Body_In
     /// </summary>
     public unsafe BmSDK.FName ThrowInAnimName
     {
@@ -1348,7 +1355,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ArrayProperty: ShieldMaterialIds
+    /// ArrayProperty: ShieldMaterialIds<br/>
+    /// Default: (5)
     /// </summary>
     public unsafe BmSDK.TArray<int> ShieldMaterialIds
     {
@@ -1357,7 +1365,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ArrayProperty: HandMaterialIds
+    /// ArrayProperty: HandMaterialIds<br/>
+    /// Default: (8,9)
     /// </summary>
     public unsafe BmSDK.TArray<int> HandMaterialIds
     {
@@ -1366,7 +1375,8 @@ public partial class RPawnVillainMultiStage : BmSDK.BmGame.RPawnVillainMultiStag
     }
 
     /// <summary>
-    /// ArrayProperty: BladeMaterialIds
+    /// ArrayProperty: BladeMaterialIds<br/>
+    /// Default: (7)
     /// </summary>
     public unsafe BmSDK.TArray<int> BladeMaterialIds
     {

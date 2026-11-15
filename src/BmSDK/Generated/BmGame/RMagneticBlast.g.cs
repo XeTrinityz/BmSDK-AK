@@ -968,7 +968,8 @@ public partial class RMagneticBlast : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: Rumble
+    /// ObjectProperty: Rumble<br/>
+    /// Default: BmGame.Default__RMagneticBlast.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform Rumble
     {
@@ -1025,7 +1026,8 @@ public partial class RMagneticBlast : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bCanRepel
+    /// BoolProperty: bCanRepel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanRepel
     {
@@ -1142,7 +1144,8 @@ public partial class RMagneticBlast : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: PlaceReceiverOverlay
+    /// StructProperty: PlaceReceiverOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId PlaceReceiverOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 2268);

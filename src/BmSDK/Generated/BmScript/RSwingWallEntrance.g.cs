@@ -163,7 +163,8 @@ public partial class RSwingWallEntrance : BmSDK.BmGame.RSwingChutePointBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GrappleThroughMove
+    /// ObjectProperty: GrappleThroughMove<br/>
+    /// Default: Batman_Gadget_Moves.GrappleGun.Grapple_End_On_Railing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GrappleThroughMove
     {

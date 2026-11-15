@@ -572,7 +572,8 @@ public partial class RCombatMove_VillainAttack : BmSDK.BmGame.RCombatMove, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: DmgImpulseVal
+    /// FloatProperty: DmgImpulseVal<br/>
+    /// Default: 1800
     /// </summary>
     public unsafe float DmgImpulseVal
     {
@@ -617,7 +618,8 @@ public partial class RCombatMove_VillainAttack : BmSDK.BmGame.RCombatMove, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeStruck
+    /// BoolProperty: bCanBeStruck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeStruck
     {
@@ -662,7 +664,8 @@ public partial class RCombatMove_VillainAttack : BmSDK.BmGame.RCombatMove, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoThrowCounter
+    /// BoolProperty: bCanDoThrowCounter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoThrowCounter
     {

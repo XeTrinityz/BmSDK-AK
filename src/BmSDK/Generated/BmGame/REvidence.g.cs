@@ -160,7 +160,8 @@ public partial class REvidence : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticleScale
+    /// FloatProperty: ParticleScale<br/>
+    /// Default: 0.11
     /// </summary>
     public unsafe float ParticleScale
     {

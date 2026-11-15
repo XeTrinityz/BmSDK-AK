@@ -242,7 +242,8 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: NormalMesh
+    /// ComponentProperty: NormalMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoFuseBox.NormalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent NormalMesh
     {
@@ -251,7 +252,8 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenSkeletalMesh
+    /// ComponentProperty: BrokenSkeletalMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoFuseBox.BrokenMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BrokenSkeletalMesh
     {
@@ -260,7 +262,8 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// NameProperty: SocketName
+    /// NameProperty: SocketName<br/>
+    /// Default: FuseBox
     /// </summary>
     public unsafe BmSDK.FName SocketName
     {
@@ -269,7 +272,8 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightStaticMesh
+    /// ComponentProperty: InRangeHighlightStaticMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoFuseBox.InRangeHighlightStaticComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InRangeHighlightStaticMesh
     {

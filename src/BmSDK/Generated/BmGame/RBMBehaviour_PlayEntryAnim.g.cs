@@ -116,7 +116,8 @@ public partial class RBMBehaviour_PlayEntryAnim : BmSDK.BmGame.RBMBehaviour_Cont
     }
 
     /// <summary>
-    /// IntProperty: UnhideCounter
+    /// IntProperty: UnhideCounter<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int UnhideCounter
     {

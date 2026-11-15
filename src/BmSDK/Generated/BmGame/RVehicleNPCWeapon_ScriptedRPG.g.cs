@@ -269,7 +269,8 @@ public partial class RVehicleNPCWeapon_ScriptedRPG : BmSDK.BmGame.RVehicleNPCWea
     }
 
     /// <summary>
-    /// BoolProperty: UnderScriptControl
+    /// BoolProperty: UnderScriptControl<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UnderScriptControl
     {
@@ -287,7 +288,8 @@ public partial class RVehicleNPCWeapon_ScriptedRPG : BmSDK.BmGame.RVehicleNPCWea
     }
 
     /// <summary>
-    /// FloatProperty: TimeOnScreenToShoot
+    /// FloatProperty: TimeOnScreenToShoot<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeOnScreenToShoot
     {

@@ -541,7 +541,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: MaxViewYaw
+    /// IntProperty: MaxViewYaw<br/>
+    /// Default: 13000
     /// </summary>
     public unsafe int MaxViewYaw
     {
@@ -550,7 +551,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
     }
 
     /// <summary>
-    /// NameProperty: NextCameraState
+    /// NameProperty: NextCameraState<br/>
+    /// Default: CopSittingAtBar
     /// </summary>
     public unsafe BmSDK.FName NextCameraState
     {
@@ -577,7 +579,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3136);
 
     /// <summary>
-    /// FloatProperty: MeshLerpValue
+    /// FloatProperty: MeshLerpValue<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MeshLerpValue
     {
@@ -586,7 +589,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MeshRotLerpValue
+    /// FloatProperty: MeshRotLerpValue<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MeshRotLerpValue
     {

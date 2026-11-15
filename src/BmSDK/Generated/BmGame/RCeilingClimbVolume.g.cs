@@ -488,7 +488,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -515,7 +516,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: WallClimbVolumeColour
+    /// StructProperty: WallClimbVolumeColour<br/>
+    /// Default: (G=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WallClimbVolumeColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 928);

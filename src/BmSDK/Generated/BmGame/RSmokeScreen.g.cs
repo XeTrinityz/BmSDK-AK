@@ -389,7 +389,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// ComponentProperty: LOSBlockingCylinder
+    /// ComponentProperty: LOSBlockingCylinder<br/>
+    /// Default: BmGame.Default__RSmokeScreen.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent LOSBlockingCylinder
     {
@@ -398,7 +399,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: SmokeScreenDuration
+    /// FloatProperty: SmokeScreenDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float SmokeScreenDuration
     {
@@ -407,7 +409,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: SmokeScreenAudioRadiusInner
+    /// FloatProperty: SmokeScreenAudioRadiusInner<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SmokeScreenAudioRadiusInner
     {
@@ -416,7 +419,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: SmokeScreenAudioRadiusOuter
+    /// FloatProperty: SmokeScreenAudioRadiusOuter<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SmokeScreenAudioRadiusOuter
     {
@@ -425,7 +429,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: SmokeAudioEffectTimeUp
+    /// FloatProperty: SmokeAudioEffectTimeUp<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SmokeAudioEffectTimeUp
     {
@@ -506,7 +511,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: fUpgradeDurationMultiplier
+    /// FloatProperty: fUpgradeDurationMultiplier<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float fUpgradeDurationMultiplier
     {
@@ -515,7 +521,8 @@ public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableIn
     }
 
     /// <summary>
-    /// FloatProperty: fUpgradeRadiusMultiplier
+    /// FloatProperty: fUpgradeRadiusMultiplier<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float fUpgradeRadiusMultiplier
     {

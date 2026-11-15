@@ -103,7 +103,8 @@ public partial class MaterialExpressionWireAAMesh : BmSDK.Engine.MaterialExpress
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 328);
 
     /// <summary>
-    /// FloatProperty: StartingWidth
+    /// FloatProperty: StartingWidth<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float StartingWidth
     {
@@ -112,7 +113,8 @@ public partial class MaterialExpressionWireAAMesh : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// FloatProperty: MinPixelSize
+    /// FloatProperty: MinPixelSize<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinPixelSize
     {

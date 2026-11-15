@@ -147,7 +147,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: Percentage
+    /// IntProperty: Percentage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int Percentage
     {
@@ -165,7 +166,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: PercentageGainedWhenBelowThreshold
+    /// IntProperty: PercentageGainedWhenBelowThreshold<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int PercentageGainedWhenBelowThreshold
     {
@@ -174,7 +176,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: PercentageGainedFromThresholdOnwards
+    /// IntProperty: PercentageGainedFromThresholdOnwards<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int PercentageGainedFromThresholdOnwards
     {
@@ -183,7 +186,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: SynopsisTextId
+    /// IntProperty: SynopsisTextId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SynopsisTextId
     {
@@ -192,7 +196,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: ProgressTextId
+    /// IntProperty: ProgressTextId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ProgressTextId
     {
@@ -237,7 +242,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: BoardTitleId
+    /// IntProperty: BoardTitleId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BoardTitleId
     {
@@ -246,7 +252,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: BoardSynopsisId
+    /// IntProperty: BoardSynopsisId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BoardSynopsisId
     {
@@ -255,7 +262,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: BoardImageId
+    /// IntProperty: BoardImageId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BoardImageId
     {
@@ -264,7 +272,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: BoardTickerId
+    /// IntProperty: BoardTickerId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BoardTickerId
     {
@@ -273,7 +282,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: WaynetechMessageTitle
+    /// StrProperty: WaynetechMessageTitle<br/>
+    /// Default: "GFxUI.Objectives.SideStoryAdvanced"
     /// </summary>
     public unsafe BmSDK.FString WaynetechMessageTitle
     {
@@ -282,7 +292,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: WaynetechMessagePrefix
+    /// StrProperty: WaynetechMessagePrefix<br/>
+    /// Default: "GFxUI.Objectives.PointsEarnedSingle"
     /// </summary>
     public unsafe BmSDK.FString WaynetechMessagePrefix
     {
@@ -291,7 +302,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: WaynetechMessagePrefixMultiple
+    /// StrProperty: WaynetechMessagePrefixMultiple<br/>
+    /// Default: "GFxUI.Objectives.PointsEarnedMultiple"
     /// </summary>
     public unsafe BmSDK.FString WaynetechMessagePrefixMultiple
     {
@@ -300,7 +312,8 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: WaynetechPromptString
+    /// StrProperty: WaynetechPromptString<br/>
+    /// Default: "ViewUpgrade"
     /// </summary>
     public unsafe BmSDK.FString WaynetechPromptString
     {

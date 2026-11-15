@@ -88,7 +88,8 @@ public partial class MSpecialMoveConfig_HackControlPanel : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: LocationLerpValue
+    /// FloatProperty: LocationLerpValue<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float LocationLerpValue
     {
@@ -97,7 +98,8 @@ public partial class MSpecialMoveConfig_HackControlPanel : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: RotationLerpValue
+    /// FloatProperty: RotationLerpValue<br/>
+    /// Default: 0.91
     /// </summary>
     public unsafe float RotationLerpValue
     {

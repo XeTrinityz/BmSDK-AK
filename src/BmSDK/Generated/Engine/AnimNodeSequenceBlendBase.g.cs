@@ -74,7 +74,8 @@ public partial class AnimNodeSequenceBlendBase : BmSDK.Engine.AnimNodeSequence, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: Anims
+    /// ArrayProperty: Anims<br/>
+    /// Default: ((Weight=1),())
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimNodeSequenceBlendBase.FAnimBlendInfo> Anims
     {

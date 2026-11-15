@@ -79,61 +79,71 @@ public partial class ParticleModuleUberLTISIVCLILIRSSBLIRR : BmSDK.Engine.Partic
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Lifetime
+    /// StructProperty: Lifetime<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionLifetime)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Lifetime
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 112);
 
     /// <summary>
-    /// StructProperty: StartSize
+    /// StructProperty: StartSize<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartSize,MinRange=(X=1,Y=1,Z=1),MaxR...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartSize
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 148);
 
     /// <summary>
-    /// StructProperty: StartVelocity
+    /// StructProperty: StartVelocity<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=6,LookupTable=(0,10,0,0,0,0,0,10,0,0,0,0,0,10),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartVelocity,MaxRange...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartVelocity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 212);
 
     /// <summary>
-    /// StructProperty: StartVelocityRadial
+    /// StructProperty: StartVelocityRadial<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartVelocityRadial)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartVelocityRadial
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 276);
 
     /// <summary>
-    /// StructProperty: ColorOverLife
+    /// StructProperty: ColorOverLife<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionColorOverLife,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector ColorOverLife
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 312);
 
     /// <summary>
-    /// StructProperty: AlphaOverLife
+    /// StructProperty: AlphaOverLife<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(255.9,255.9,255.9,255.9),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionAlphaOverLife)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat AlphaOverLife
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 376);
 
     /// <summary>
-    /// StructProperty: StartLocation
+    /// StructProperty: StartLocation<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartLocation,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartLocation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 412);
 
     /// <summary>
-    /// StructProperty: StartRotation
+    /// StructProperty: StartRotation<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=2,LookupTable=(0,1,0,1,0,1),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartRotation)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 476);
 
     /// <summary>
-    /// StructProperty: SizeLifeMultiplier
+    /// StructProperty: SizeLifeMultiplier<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionLifeMultiplier,MinRange=(X=1,Y=1,Z=1)...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector SizeLifeMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 512);
 
     /// <summary>
-    /// BoolProperty: SizeMultiplyX
+    /// BoolProperty: SizeMultiplyX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SizeMultiplyX
     {
@@ -142,7 +152,8 @@ public partial class ParticleModuleUberLTISIVCLILIRSSBLIRR : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// BoolProperty: SizeMultiplyY
+    /// BoolProperty: SizeMultiplyY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SizeMultiplyY
     {
@@ -151,7 +162,8 @@ public partial class ParticleModuleUberLTISIVCLILIRSSBLIRR : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// BoolProperty: SizeMultiplyZ
+    /// BoolProperty: SizeMultiplyZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SizeMultiplyZ
     {
@@ -160,7 +172,8 @@ public partial class ParticleModuleUberLTISIVCLILIRSSBLIRR : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// StructProperty: StartRotationRate
+    /// StructProperty: StartRotationRate<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleUberLTISIVCLILIRSSBLIRR.DistributionStartRotationRate)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartRotationRate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 580);

@@ -1052,7 +1052,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// ObjectProperty: PounceLandFX
+    /// ObjectProperty: PounceLandFX<br/>
+    /// Default: PFX_Catwoman.Particles.pounce_climb
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem PounceLandFX
     {
@@ -1061,7 +1062,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// ObjectProperty: PounceHardLandFX
+    /// ObjectProperty: PounceHardLandFX<br/>
+    /// Default: PFX_Catwoman.Particles.pounce_impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem PounceHardLandFX
     {
@@ -1070,7 +1072,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// ObjectProperty: HairMaterialInst
+    /// ObjectProperty: HairMaterialInst<br/>
+    /// Default: Catwoman.Materials.Catwoman_Hair_Blend_Anisotropy_Mat_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant HairMaterialInst
     {
@@ -1079,7 +1082,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// ObjectProperty: HairCWC1MaterialInst
+    /// ObjectProperty: HairCWC1MaterialInst<br/>
+    /// Default: Character_Shared.Materials.Catwoman_Hair_Blend_intro_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant HairCWC1MaterialInst
     {
@@ -1139,7 +1143,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// NameProperty: OWBrightnessMaterialParameterName
+    /// NameProperty: OWBrightnessMaterialParameterName<br/>
+    /// Default: CW_OW_Brightness_Multiplier
     /// </summary>
     public unsafe BmSDK.FName OWBrightnessMaterialParameterName
     {
@@ -1148,7 +1153,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// FloatProperty: BrightnessIndoors
+    /// FloatProperty: BrightnessIndoors<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BrightnessIndoors
     {
@@ -1157,7 +1163,8 @@ public partial class RPawnPlayerCatwoman : BmSDK.BmGame.RPawnPlayerCatwomanBase,
     }
 
     /// <summary>
-    /// FloatProperty: BrightnessOutdoors
+    /// FloatProperty: BrightnessOutdoors<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BrightnessOutdoors
     {

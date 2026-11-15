@@ -96,7 +96,8 @@ public partial class RPawnPlayerSpeech : BmSDK.BmGame.RPawnPlayerCombat, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerSpeechDialogueComponent
+    /// ComponentProperty: PlayerSpeechDialogueComponent<br/>
+    /// Default: BmGame.Default__RPawnPlayerSpeech.DialogueComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueComponent PlayerSpeechDialogueComponent
     {

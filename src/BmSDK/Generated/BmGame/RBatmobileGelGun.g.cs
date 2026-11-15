@@ -93,7 +93,8 @@ public partial class RBatmobileGelGun : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float Range
     {
@@ -102,7 +103,8 @@ public partial class RBatmobileGelGun : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: VillainImpulse
+    /// FloatProperty: VillainImpulse<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float VillainImpulse
     {
@@ -111,7 +113,8 @@ public partial class RBatmobileGelGun : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TargetRadius
+    /// FloatProperty: TargetRadius<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float TargetRadius
     {

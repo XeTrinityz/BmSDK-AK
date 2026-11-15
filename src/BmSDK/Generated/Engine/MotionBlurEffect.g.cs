@@ -79,7 +79,8 @@ public partial class MotionBlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxVelocity
+    /// FloatProperty: MaxVelocity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxVelocity
     {
@@ -88,7 +89,8 @@ public partial class MotionBlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MotionBlurAmount
+    /// FloatProperty: MotionBlurAmount<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MotionBlurAmount
     {
@@ -97,7 +99,8 @@ public partial class MotionBlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: FullMotionBlur
+    /// BoolProperty: FullMotionBlur<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FullMotionBlur
     {
@@ -106,7 +109,8 @@ public partial class MotionBlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraRotationThreshold
+    /// FloatProperty: CameraRotationThreshold<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float CameraRotationThreshold
     {
@@ -115,7 +119,8 @@ public partial class MotionBlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraTranslationThreshold
+    /// FloatProperty: CameraTranslationThreshold<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float CameraTranslationThreshold
     {

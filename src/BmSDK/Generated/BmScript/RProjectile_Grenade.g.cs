@@ -172,7 +172,8 @@ public partial class RProjectile_Grenade : BmSDK.BmGame.RProjectile_GrenadeBase,
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_WPN_ThugGrenade.Play_ThugGrenadeExplode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {
@@ -181,7 +182,8 @@ public partial class RProjectile_Grenade : BmSDK.BmGame.RProjectile_GrenadeBase,
     }
 
     /// <summary>
-    /// ObjectProperty: BounceSound
+    /// ObjectProperty: BounceSound<br/>
+    /// Default: Ww_WPN_ThugGrenade.Play_ThugGrenadeImpact
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BounceSound
     {
@@ -190,7 +192,8 @@ public partial class RProjectile_Grenade : BmSDK.BmGame.RProjectile_GrenadeBase,
     }
 
     /// <summary>
-    /// ObjectProperty: BounceSoundParam
+    /// ObjectProperty: BounceSoundParam<br/>
+    /// Default: Ww_Parameters.Phys_Velocity
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName BounceSoundParam
     {
@@ -199,7 +202,8 @@ public partial class RProjectile_Grenade : BmSDK.BmGame.RProjectile_GrenadeBase,
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionParticleSystem
+    /// ObjectProperty: ExplosionParticleSystem<br/>
+    /// Default: FFX_Combat.Particles.Grenade_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionParticleSystem
     {

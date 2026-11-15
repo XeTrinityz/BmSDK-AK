@@ -1247,7 +1247,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// NameProperty: CombatMoveStance
+    /// NameProperty: CombatMoveStance<br/>
+    /// Default: Combat
     /// </summary>
     public unsafe BmSDK.FName CombatMoveStance
     {
@@ -1256,7 +1257,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: IdealBMRange
+    /// FloatProperty: IdealBMRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float IdealBMRange
     {
@@ -1265,7 +1267,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: IdealBMRange2D
+    /// FloatProperty: IdealBMRange2D<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float IdealBMRange2D
     {
@@ -1274,7 +1277,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: IdealBMRangeWhenMedic
+    /// FloatProperty: IdealBMRangeWhenMedic<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float IdealBMRangeWhenMedic
     {
@@ -1283,7 +1287,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: PlayerTooHighHeight
+    /// FloatProperty: PlayerTooHighHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float PlayerTooHighHeight
     {
@@ -1292,7 +1297,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: MoveToPlayerExtentSize
+    /// FloatProperty: MoveToPlayerExtentSize<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MoveToPlayerExtentSize
     {
@@ -1400,7 +1406,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: AllyMinRange
+    /// FloatProperty: AllyMinRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float AllyMinRange
     {
@@ -1409,7 +1416,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: AllyMaxForce
+    /// FloatProperty: AllyMaxForce<br/>
+    /// Default: 375
     /// </summary>
     public unsafe float AllyMaxForce
     {
@@ -1418,7 +1426,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
     }
 
     /// <summary>
-    /// FloatProperty: PlayerForce
+    /// FloatProperty: PlayerForce<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float PlayerForce
     {

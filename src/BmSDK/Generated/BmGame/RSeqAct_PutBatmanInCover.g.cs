@@ -129,7 +129,8 @@ public partial class RSeqAct_PutBatmanInCover : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: SpecialMove
+    /// ObjectProperty: SpecialMove<br/>
+    /// Default: Batman_Agility_Moves.Cover.Corner_Stick_Left
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SpecialMove
     {

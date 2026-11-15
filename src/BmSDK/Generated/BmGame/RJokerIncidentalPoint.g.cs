@@ -149,7 +149,8 @@ public partial class RJokerIncidentalPoint : BmSDK.BmGame.RDummyTarget, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: Animations
+    /// ObjectProperty: Animations<br/>
+    /// Default: BmGame.Default__RJokerIncidentalPoint.AnimNodeSeq0
     /// </summary>
     public unsafe BmSDK.Engine.AnimNodeSequence Animations
     {

@@ -79,7 +79,8 @@ public partial class SkelControl_Multiply : BmSDK.Engine.SkelControlBase, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: Multiplier
+    /// FloatProperty: Multiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Multiplier
     {

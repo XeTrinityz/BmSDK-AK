@@ -112,7 +112,8 @@ public partial class RBatmobileForceVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: Force
+    /// StructProperty: Force<br/>
+    /// Default: (Z=1000)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Force
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 740);
@@ -172,7 +173,8 @@ public partial class RBatmobileForceVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: ApplyIfNumWheelsOffGround
+    /// IntProperty: ApplyIfNumWheelsOffGround<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ApplyIfNumWheelsOffGround
     {
@@ -181,7 +183,8 @@ public partial class RBatmobileForceVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ApplyIfForwardSpeedLessThan
+    /// FloatProperty: ApplyIfForwardSpeedLessThan<br/>
+    /// Default: 2800
     /// </summary>
     public unsafe float ApplyIfForwardSpeedLessThan
     {
@@ -199,7 +202,8 @@ public partial class RBatmobileForceVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: ApplyIfInitialNumWheelsOnGround
+    /// IntProperty: ApplyIfInitialNumWheelsOnGround<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ApplyIfInitialNumWheelsOnGround
     {

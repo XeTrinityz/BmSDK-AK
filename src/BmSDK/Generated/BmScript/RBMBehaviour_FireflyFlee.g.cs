@@ -875,7 +875,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// StructProperty: offsetFromRoad
+    /// StructProperty: offsetFromRoad<br/>
+    /// Default: (Z=500)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 offsetFromRoad
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 864);
@@ -938,7 +939,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: LookAheadDist
+    /// FloatProperty: LookAheadDist<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float LookAheadDist
     {
@@ -965,7 +967,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: CurrentLink
+    /// IntProperty: CurrentLink<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentLink
     {
@@ -974,7 +977,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: CurrentPoint
+    /// IntProperty: CurrentPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentPoint
     {
@@ -992,7 +996,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: LookBackPoint
+    /// IntProperty: LookBackPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LookBackPoint
     {
@@ -1001,7 +1006,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: LookAheadPoint
+    /// IntProperty: LookAheadPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LookAheadPoint
     {
@@ -1016,7 +1022,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1328);
 
     /// <summary>
-    /// FloatProperty: bobBasePeriod
+    /// FloatProperty: bobBasePeriod<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float bobBasePeriod
     {
@@ -1025,7 +1032,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: bobPeriodVariance
+    /// FloatProperty: bobPeriodVariance<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float bobPeriodVariance
     {
@@ -1034,7 +1042,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: bobBaseMagnitude
+    /// FloatProperty: bobBaseMagnitude<br/>
+    /// Default: 170
     /// </summary>
     public unsafe float bobBaseMagnitude
     {
@@ -1043,7 +1052,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: bobMagnitudeVariance
+    /// FloatProperty: bobMagnitudeVariance<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float bobMagnitudeVariance
     {
@@ -1052,7 +1062,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: bobRange
+    /// FloatProperty: bobRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float bobRange
     {
@@ -1061,7 +1072,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: bobTimeToActivate
+    /// FloatProperty: bobTimeToActivate<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float bobTimeToActivate
     {
@@ -1124,7 +1136,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1404);
 
     /// <summary>
-    /// IntProperty: numRefinements_NewLink
+    /// IntProperty: numRefinements_NewLink<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int numRefinements_NewLink
     {
@@ -1133,7 +1146,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: numRefinements_EachFrame
+    /// IntProperty: numRefinements_EachFrame<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int numRefinements_EachFrame
     {
@@ -1151,7 +1165,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// BoolProperty: bUseVehLookAhead
+    /// BoolProperty: bUseVehLookAhead<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseVehLookAhead
     {
@@ -1187,7 +1202,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: vehLookAheadDist
+    /// FloatProperty: vehLookAheadDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float vehLookAheadDist
     {
@@ -1196,7 +1212,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: rotLookAheadExtra
+    /// FloatProperty: rotLookAheadExtra<br/>
+    /// Default: 1100
     /// </summary>
     public unsafe float rotLookAheadExtra
     {
@@ -1205,7 +1222,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: LookBehindDist
+    /// FloatProperty: LookBehindDist<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float LookBehindDist
     {
@@ -1214,7 +1232,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: currentLinkIndexInRoute
+    /// IntProperty: currentLinkIndexInRoute<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int currentLinkIndexInRoute
     {
@@ -1223,7 +1242,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: accelToHistoryNum
+    /// IntProperty: accelToHistoryNum<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int accelToHistoryNum
     {
@@ -1250,7 +1270,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: roadWidthProportionToUseMax
+    /// FloatProperty: roadWidthProportionToUseMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float roadWidthProportionToUseMax
     {
@@ -1259,7 +1280,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// IntProperty: prevRouteMaxLength
+    /// IntProperty: prevRouteMaxLength<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int prevRouteMaxLength
     {
@@ -1277,7 +1299,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: returnToCentreTolerance
+    /// FloatProperty: returnToCentreTolerance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float returnToCentreTolerance
     {
@@ -1286,7 +1309,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: returnToCentreRate
+    /// FloatProperty: returnToCentreRate<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float returnToCentreRate
     {
@@ -1304,7 +1328,8 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenDialogue
+    /// FloatProperty: MinTimeBetweenDialogue<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinTimeBetweenDialogue
     {
@@ -1318,27 +1343,32 @@ public partial class RBMBehaviour_FireflyFlee : BmSDK.BmGame.RBMBehaviour_Firefl
     public InlineArray<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo> dialogueTypeTimes => new(5, Ptr + 1500, 16, this);
 
     /// <summary>
-    /// StructProperty: dialogueTypeTimes
+    /// StructProperty: dialogueTypeTimes<br/>
+    /// Default: (minTimeBetweenTriggers=15,EventFlag=FV_EVENT_FF_Ambient)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo dialogueTypeTimes_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo>(Ptr + 1500);
     /// <summary>
-    /// StructProperty: dialogueTypeTimes
+    /// StructProperty: dialogueTypeTimes<br/>
+    /// Default: (minTimeBetweenTriggers=15,EventFlag=FV_EVENT_FF_BombLaunched)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo dialogueTypeTimes_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo>(Ptr + 1516);
     /// <summary>
-    /// StructProperty: dialogueTypeTimes
+    /// StructProperty: dialogueTypeTimes<br/>
+    /// Default: (minTimeBetweenTriggers=15,EventFlag=FV_EVENT_FF_BombHit)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo dialogueTypeTimes_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo>(Ptr + 1532);
     /// <summary>
-    /// StructProperty: dialogueTypeTimes
+    /// StructProperty: dialogueTypeTimes<br/>
+    /// Default: (minTimeBetweenTriggers=8,EventFlag=FV_EVENT_FF_Close)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo dialogueTypeTimes_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo>(Ptr + 1548);
     /// <summary>
-    /// StructProperty: dialogueTypeTimes
+    /// StructProperty: dialogueTypeTimes<br/>
+    /// Default: (EventFlag=FV_EVENT_FF_OutOfFuel)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo dialogueTypeTimes_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RBMBehaviour_FireflyFlee.FdialogueTimingInfo>(Ptr + 1564);

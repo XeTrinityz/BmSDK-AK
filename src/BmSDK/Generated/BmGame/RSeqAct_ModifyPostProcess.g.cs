@@ -124,7 +124,8 @@ public partial class RSeqAct_ModifyPostProcess : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// StructProperty: PostProcessSettings
+    /// StructProperty: PostProcessSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings PostProcessSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 376);

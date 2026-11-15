@@ -116,7 +116,8 @@ public partial class RSeqAct_ChallengeEnemyCount : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// IntProperty: CountValue
+    /// IntProperty: CountValue<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CountValue
     {

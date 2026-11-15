@@ -88,7 +88,8 @@ public partial class SeqAct_SetPhysics : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bWakePhysics
+    /// BoolProperty: bWakePhysics<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWakePhysics
     {

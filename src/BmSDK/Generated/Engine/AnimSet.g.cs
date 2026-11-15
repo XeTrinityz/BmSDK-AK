@@ -290,7 +290,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_Face
+    /// BoolProperty: AutoDeleteTracks_Face<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_Face
     {
@@ -308,7 +309,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_Nubs
+    /// BoolProperty: AutoDeleteTracks_Nubs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_Nubs
     {
@@ -317,7 +319,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_Flappy
+    /// BoolProperty: AutoDeleteTracks_Flappy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_Flappy
     {
@@ -326,7 +329,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_Scale
+    /// BoolProperty: AutoDeleteTracks_Scale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_Scale
     {
@@ -335,7 +339,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_Procedural
+    /// BoolProperty: AutoDeleteTracks_Procedural<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_Procedural
     {
@@ -353,7 +358,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_CowlAndMask
+    /// BoolProperty: AutoDeleteTracks_CowlAndMask<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_CowlAndMask
     {
@@ -362,7 +368,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutoDeleteTracks_FaceMoveHelpers
+    /// BoolProperty: AutoDeleteTracks_FaceMoveHelpers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoDeleteTracks_FaceMoveHelpers
     {

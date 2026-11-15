@@ -4589,7 +4589,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
         }
 
         /// <summary>
-        /// BoolProperty: bCastShadow
+        /// BoolProperty: bCastShadow<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCastShadow
         {
@@ -4625,7 +4626,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeXrayed
+        /// BoolProperty: bCanBeXrayed<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeXrayed
         {
@@ -4679,7 +4681,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
         }
 
         /// <summary>
-        /// BoolProperty: bSnappedToGround
+        /// BoolProperty: bSnappedToGround<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bSnappedToGround
         {
@@ -5311,7 +5314,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ArrayProperty: FacialDamageParameters
+    /// ArrayProperty: FacialDamageParameters<br/>
+    /// Default: (Damage_L_1,Damage_L_2,Damage_L_3,Damage_R_1,Damage_R_2,Damage_R_3)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FacialDamageParameters
     {
@@ -5320,7 +5324,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ArrayProperty: FacialDamageValues
+    /// ArrayProperty: FacialDamageValues<br/>
+    /// Default: (0,0.125,0.25,0.375,0.5,0.625,0.75,0.875)
     /// </summary>
     public unsafe BmSDK.TArray<float> FacialDamageValues
     {
@@ -5374,7 +5379,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bFallBackToNavMeshFloor
+    /// BoolProperty: bFallBackToNavMeshFloor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFallBackToNavMeshFloor
     {
@@ -5545,7 +5551,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeDisarmedByMagBlast
+    /// BoolProperty: bCanBeDisarmedByMagBlast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeDisarmedByMagBlast
     {
@@ -5572,7 +5579,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bInstantEnterCombatOnMagBlast
+    /// BoolProperty: bInstantEnterCombatOnMagBlast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInstantEnterCombatOnMagBlast
     {
@@ -5581,7 +5589,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bForceNavMeshObstacleUpdate
+    /// BoolProperty: bForceNavMeshObstacleUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceNavMeshObstacleUpdate
     {
@@ -5590,7 +5599,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bApplySoftPawnCollision
+    /// BoolProperty: bApplySoftPawnCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bApplySoftPawnCollision
     {
@@ -5599,7 +5609,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bReceiveSoftPawnCollision
+    /// BoolProperty: bReceiveSoftPawnCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReceiveSoftPawnCollision
     {
@@ -5617,7 +5628,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bApplyRouterPawnAvoidance
+    /// BoolProperty: bApplyRouterPawnAvoidance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bApplyRouterPawnAvoidance
     {
@@ -5626,7 +5638,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bTickGunFire
+    /// BoolProperty: bTickGunFire<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTickGunFire
     {
@@ -5653,7 +5666,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bWeaponCanBePickedUp
+    /// BoolProperty: bWeaponCanBePickedUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWeaponCanBePickedUp
     {
@@ -5806,7 +5820,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeXrayed
+    /// BoolProperty: bCanBeXrayed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeXrayed
     {
@@ -6265,7 +6280,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Falling
+    /// ObjectProperty: PoseConfig_Falling<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Falling
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Falling
     {
@@ -6274,7 +6290,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Standing
+    /// ObjectProperty: PoseConfig_Standing<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Standing
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Standing
     {
@@ -6283,7 +6300,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Basic
+    /// ObjectProperty: PoseConfig_Basic<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Basic
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Basic
     {
@@ -6292,7 +6310,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Ladder
+    /// ObjectProperty: PoseConfig_Ladder<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Ladder
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Ladder
     {
@@ -6670,13 +6689,15 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// StructProperty: SearchExtent
+    /// StructProperty: SearchExtent<br/>
+    /// Default: (X=30,Y=30,Z=92)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SearchExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3852);
 
     /// <summary>
-    /// StructProperty: TerrifiedSearchExtent
+    /// StructProperty: TerrifiedSearchExtent<br/>
+    /// Default: (X=50,Y=50,Z=92)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TerrifiedSearchExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3864);
@@ -6700,7 +6721,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: SoftPawnCollisionRadiusMultiplier
+    /// FloatProperty: SoftPawnCollisionRadiusMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoftPawnCollisionRadiusMultiplier
     {
@@ -6724,7 +6746,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// NameProperty: HolsterBoneName
+    /// NameProperty: HolsterBoneName<br/>
+    /// Default: Flappy_Gun_R_B_01
     /// </summary>
     public unsafe BmSDK.FName HolsterBoneName
     {
@@ -6769,7 +6792,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: InstantSightRange
+    /// FloatProperty: InstantSightRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float InstantSightRange
     {
@@ -6778,7 +6802,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: FocusedSightRange
+    /// FloatProperty: FocusedSightRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float FocusedSightRange
     {
@@ -6787,7 +6812,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: FocusedVisionRadius
+    /// FloatProperty: FocusedVisionRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float FocusedVisionRadius
     {
@@ -6796,7 +6822,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: PeripheralSightRange
+    /// FloatProperty: PeripheralSightRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float PeripheralSightRange
     {
@@ -6805,7 +6832,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: ExtendedSightRange
+    /// FloatProperty: ExtendedSightRange<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float ExtendedSightRange
     {
@@ -6862,7 +6890,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: DeathFadePause
+    /// FloatProperty: DeathFadePause<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DeathFadePause
     {
@@ -6871,7 +6900,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: DeathFadeDuration
+    /// FloatProperty: DeathFadeDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DeathFadeDuration
     {
@@ -6886,7 +6916,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 4084);
 
     /// <summary>
-    /// FloatProperty: MaxBumpedTimer
+    /// FloatProperty: MaxBumpedTimer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MaxBumpedTimer
     {
@@ -6940,7 +6971,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// StructProperty: PropLightingChannels
+    /// StructProperty: PropLightingChannels<br/>
+    /// Default: (Dynamic=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer PropLightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 4144);
@@ -6955,7 +6987,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ArrayProperty: BatarangTargetBodyParts
+    /// ArrayProperty: BatarangTargetBodyParts<br/>
+    /// Default: (Bip01_Head,Bip01_Spine2,Bip01_L_Forearm,Bip01_R_Forearm,Bip01_L_Calf,Bip01_R_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BatarangTargetBodyParts
     {
@@ -6964,7 +6997,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// ArrayProperty: WhipTargetBodyParts
+    /// ArrayProperty: WhipTargetBodyParts<br/>
+    /// Default: (Bip01_L_Forearm,Bip01_R_Forearm,Bip01_Spine2,Bip01_L_Calf,Bip01_R_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> WhipTargetBodyParts
     {
@@ -6982,7 +7016,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// NameProperty: SpineName
+    /// NameProperty: SpineName<br/>
+    /// Default: Bip01_Spine2
     /// </summary>
     public unsafe BmSDK.FName SpineName
     {
@@ -7192,7 +7227,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: ZBlendSpeed
+    /// FloatProperty: ZBlendSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ZBlendSpeed
     {
@@ -7219,7 +7255,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// IntProperty: CombatIdleStanceID
+    /// IntProperty: CombatIdleStanceID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CombatIdleStanceID
     {
@@ -7282,7 +7319,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisLength_Normal
+    /// FloatProperty: grateVisLength_Normal<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float grateVisLength_Normal
     {
@@ -7291,7 +7329,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisLength_GrateSearch
+    /// FloatProperty: grateVisLength_GrateSearch<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float grateVisLength_GrateSearch
     {
@@ -7300,7 +7339,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisWidth_Normal
+    /// FloatProperty: grateVisWidth_Normal<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float grateVisWidth_Normal
     {
@@ -7309,7 +7349,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisWidth_GrateSearch
+    /// FloatProperty: grateVisWidth_GrateSearch<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float grateVisWidth_GrateSearch
     {
@@ -7318,7 +7359,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisForwardBiasDist
+    /// FloatProperty: grateVisForwardBiasDist<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float grateVisForwardBiasDist
     {
@@ -7327,7 +7369,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisAlreadyVisibleBonusRange
+    /// FloatProperty: grateVisAlreadyVisibleBonusRange<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float grateVisAlreadyVisibleBonusRange
     {
@@ -7336,7 +7379,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: grateVisWarmupTime
+    /// FloatProperty: grateVisWarmupTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float grateVisWarmupTime
     {
@@ -7363,7 +7407,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// IntProperty: NumWallChecks
+    /// IntProperty: NumWallChecks<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int NumWallChecks
     {
@@ -7396,7 +7441,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
     }
 
     /// <summary>
-    /// FloatProperty: ForwardWallCheckYaw
+    /// FloatProperty: ForwardWallCheckYaw<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ForwardWallCheckYaw
     {

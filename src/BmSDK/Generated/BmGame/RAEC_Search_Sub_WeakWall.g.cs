@@ -348,7 +348,8 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
     }
 
     /// <summary>
-    /// FloatProperty: LOSCheckInterval
+    /// FloatProperty: LOSCheckInterval<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LOSCheckInterval
     {
@@ -357,7 +358,8 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
     }
 
     /// <summary>
-    /// FloatProperty: preShootAimDuration
+    /// FloatProperty: preShootAimDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float preShootAimDuration
     {
@@ -366,7 +368,8 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
     }
 
     /// <summary>
-    /// FloatProperty: preDestroyShootDuration
+    /// FloatProperty: preDestroyShootDuration<br/>
+    /// Default: 1.9
     /// </summary>
     public unsafe float preDestroyShootDuration
     {
@@ -375,7 +378,8 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
     }
 
     /// <summary>
-    /// FloatProperty: postDestroyShootDuration
+    /// FloatProperty: postDestroyShootDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float postDestroyShootDuration
     {
@@ -411,7 +415,8 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
     }
 
     /// <summary>
-    /// FloatProperty: stopAndShootDist
+    /// FloatProperty: stopAndShootDist<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float stopAndShootDist
     {

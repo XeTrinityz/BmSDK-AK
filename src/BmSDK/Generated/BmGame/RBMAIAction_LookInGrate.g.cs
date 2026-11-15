@@ -535,7 +535,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GREN_VEL_FACTOR
+    /// FloatProperty: GREN_VEL_FACTOR<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float GREN_VEL_FACTOR
     {
@@ -544,7 +545,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GREN_ON_TOP_OF_GRATE_VEL_FACTOR
+    /// FloatProperty: GREN_ON_TOP_OF_GRATE_VEL_FACTOR<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float GREN_ON_TOP_OF_GRATE_VEL_FACTOR
     {
@@ -553,7 +555,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GREN_Z_VEL
+    /// FloatProperty: GREN_Z_VEL<br/>
+    /// Default: -45
     /// </summary>
     public unsafe float GREN_Z_VEL
     {
@@ -562,7 +565,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GREN_DEST_FACTOR
+    /// FloatProperty: GREN_DEST_FACTOR<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float GREN_DEST_FACTOR
     {
@@ -571,7 +575,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: incendiaryGrenadeExplodeTime
+    /// FloatProperty: incendiaryGrenadeExplodeTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float incendiaryGrenadeExplodeTime
     {
@@ -580,7 +585,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: standardGrenadeExplodeTime
+    /// FloatProperty: standardGrenadeExplodeTime<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float standardGrenadeExplodeTime
     {
@@ -604,7 +610,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: idleDuration
+    /// FloatProperty: idleDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float idleDuration
     {
@@ -622,7 +629,8 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: nextIncendiaryCountDownTime
+    /// FloatProperty: nextIncendiaryCountDownTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float nextIncendiaryCountDownTime
     {

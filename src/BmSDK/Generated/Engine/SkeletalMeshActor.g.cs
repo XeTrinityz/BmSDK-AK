@@ -637,7 +637,8 @@ public partial class SkeletalMeshActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShouldDoAnimNotifies
+    /// BoolProperty: bShouldDoAnimNotifies<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldDoAnimNotifies
     {
@@ -664,7 +665,8 @@ public partial class SkeletalMeshActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: Engine.Default__SkeletalMeshActor.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {

@@ -208,7 +208,8 @@ public partial class RBMBehaviour_Follow : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FollowDist
+    /// FloatProperty: FollowDist<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float FollowDist
     {
@@ -235,7 +236,8 @@ public partial class RBMBehaviour_Follow : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bFaceFollowActor
+    /// BoolProperty: bFaceFollowActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFaceFollowActor
     {

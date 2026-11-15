@@ -278,7 +278,8 @@ public partial class RPawnJohnnyCharisma : BmSDK.BmGame.RPawnVillainThug, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bReadyForTakedown
+    /// BoolProperty: bReadyForTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReadyForTakedown
     {

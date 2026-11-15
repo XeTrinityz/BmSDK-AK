@@ -292,7 +292,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: CurrentTargets
+    /// ArrayProperty: CurrentTargets<br/>
+    /// Default: (None)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.Actor> CurrentTargets
     {
@@ -301,7 +302,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: CurrentTargetParts
+    /// ArrayProperty: CurrentTargetParts<br/>
+    /// Default: (-1)
     /// </summary>
     public unsafe BmSDK.TArray<int> CurrentTargetParts
     {
@@ -319,7 +321,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CombatTargettingMaxRange
+    /// FloatProperty: CombatTargettingMaxRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float CombatTargettingMaxRange
     {
@@ -328,7 +331,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TargettingMaxRange
+    /// FloatProperty: TargettingMaxRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TargettingMaxRange
     {
@@ -337,7 +341,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TargettingMaxAngle
+    /// FloatProperty: TargettingMaxAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float TargettingMaxAngle
     {
@@ -346,7 +351,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: DefenceConeAngle
+    /// FloatProperty: DefenceConeAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float DefenceConeAngle
     {
@@ -355,7 +361,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: MaxBulletHits
+    /// IntProperty: MaxBulletHits<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int MaxBulletHits
     {
@@ -364,7 +371,8 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CloseRangeChargeThreshold
+    /// FloatProperty: CloseRangeChargeThreshold<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CloseRangeChargeThreshold
     {

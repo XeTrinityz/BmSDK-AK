@@ -418,7 +418,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Rate
+    /// FloatProperty: Rate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Rate
     {
@@ -526,7 +527,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSynchronize
+    /// BoolProperty: bSynchronize<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSynchronize
     {
@@ -688,7 +690,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraAnimScale
+    /// FloatProperty: CameraAnimScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CameraAnimScale
     {
@@ -697,7 +700,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraAnimPlayRate
+    /// FloatProperty: CameraAnimPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CameraAnimPlayRate
     {
@@ -706,7 +710,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraAnimBlendInTime
+    /// FloatProperty: CameraAnimBlendInTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CameraAnimBlendInTime
     {
@@ -715,7 +720,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraAnimBlendOutTime
+    /// FloatProperty: CameraAnimBlendOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CameraAnimBlendOutTime
     {

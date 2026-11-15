@@ -122,7 +122,8 @@ public partial class RSeqAct_OverrideApexClothSimulationEnabled : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: bSimulationEnabled
+    /// BoolProperty: bSimulationEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSimulationEnabled
     {
@@ -131,7 +132,8 @@ public partial class RSeqAct_OverrideApexClothSimulationEnabled : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: bClothVisible
+    /// BoolProperty: bClothVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClothVisible
     {

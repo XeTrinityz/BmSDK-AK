@@ -885,7 +885,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeRunning
+    /// FloatProperty: TimeRunning<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TimeRunning
     {
@@ -978,7 +979,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FovToSizeRatio
+    /// FloatProperty: FovToSizeRatio<br/>
+    /// Default: -170
     /// </summary>
     public unsafe float FovToSizeRatio
     {
@@ -987,7 +989,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoomSize
+    /// FloatProperty: ZoomSize<br/>
+    /// Default: 0.45
     /// </summary>
     public unsafe float ZoomSize
     {
@@ -1023,7 +1026,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DeepScanZoomRate
+    /// FloatProperty: DeepScanZoomRate<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float DeepScanZoomRate
     {
@@ -1050,7 +1054,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScanDurationDefault
+    /// FloatProperty: ScanDurationDefault<br/>
+    /// Default: 2.7
     /// </summary>
     public unsafe float ScanDurationDefault
     {

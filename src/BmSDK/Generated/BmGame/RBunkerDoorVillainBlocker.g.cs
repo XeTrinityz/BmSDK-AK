@@ -154,7 +154,8 @@ public partial class RBunkerDoorVillainBlocker : BmSDK.Engine.Actor, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RBunkerDoorVillainBlocker.CollisionBox
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh
     {
@@ -172,7 +173,8 @@ public partial class RBunkerDoorVillainBlocker : BmSDK.Engine.Actor, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bDoorCompletelyClosed
+    /// BoolProperty: bDoorCompletelyClosed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoorCompletelyClosed
     {

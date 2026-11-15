@@ -88,7 +88,8 @@ public partial class RRandomDelay : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinDelay
+    /// FloatProperty: MinDelay<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float MinDelay
     {
@@ -97,7 +98,8 @@ public partial class RRandomDelay : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDelay
+    /// FloatProperty: MaxDelay<br/>
+    /// Default: 0.08
     /// </summary>
     public unsafe float MaxDelay
     {
@@ -106,7 +108,8 @@ public partial class RRandomDelay : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DelayProbability
+    /// FloatProperty: DelayProbability<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float DelayProbability
     {
@@ -115,7 +118,8 @@ public partial class RRandomDelay : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterDelayPeriod
+    /// FloatProperty: InterDelayPeriod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InterDelayPeriod
     {

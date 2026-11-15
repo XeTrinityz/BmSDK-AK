@@ -142,13 +142,15 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1256);
 
     /// <summary>
-    /// StructProperty: DefaultCameraRot
+    /// StructProperty: DefaultCameraRot<br/>
+    /// Default: (Pitch=-1000,Yaw=-3500)
     /// </summary>
     public unsafe ref BmSDK.Rotator DefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1268);
 
     /// <summary>
-    /// FloatProperty: SpectatorCameraSpeed
+    /// FloatProperty: SpectatorCameraSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float SpectatorCameraSpeed
     {

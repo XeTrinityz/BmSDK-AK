@@ -79,7 +79,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: CompressionAmount
+    /// FloatProperty: CompressionAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CompressionAmount
     {
@@ -88,7 +89,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: StripTracksIfSameAsReferencePose
+    /// BoolProperty: StripTracksIfSameAsReferencePose<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StripTracksIfSameAsReferencePose
     {
@@ -97,7 +99,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableAdaptiveDownsample
+    /// BoolProperty: EnableAdaptiveDownsample<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableAdaptiveDownsample
     {
@@ -124,7 +127,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableRotationRetargeting
+    /// BoolProperty: EnableRotationRetargeting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableRotationRetargeting
     {
@@ -151,7 +155,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableCharacterOptimisations
+    /// BoolProperty: EnableCharacterOptimisations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCharacterOptimisations
     {
@@ -160,7 +165,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableCapeOptimisations
+    /// BoolProperty: EnableCapeOptimisations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCapeOptimisations
     {
@@ -187,7 +193,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: AdaptiveDownsampleNumbers
+    /// ArrayProperty: AdaptiveDownsampleNumbers<br/>
+    /// Default: (1)
     /// </summary>
     public unsafe BmSDK.TArray<int> AdaptiveDownsampleNumbers
     {
@@ -196,7 +203,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ForceDownsample
+    /// FloatProperty: ForceDownsample<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ForceDownsample
     {
@@ -205,7 +213,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdaptiveDownsampleEnergyLowScale
+    /// FloatProperty: AdaptiveDownsampleEnergyLowScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AdaptiveDownsampleEnergyLowScale
     {
@@ -214,7 +223,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdaptiveDownsampleEnergyHighScale
+    /// FloatProperty: AdaptiveDownsampleEnergyHighScale<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float AdaptiveDownsampleEnergyHighScale
     {
@@ -223,7 +233,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AdaptiveDownsampleEnergyPower
+    /// FloatProperty: AdaptiveDownsampleEnergyPower<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AdaptiveDownsampleEnergyPower
     {
@@ -232,7 +243,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DefaultTrackSettings
+    /// StructProperty: DefaultTrackSettings<br/>
+    /// Default: (ErrorBounds=(Rotation=0.02,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings DefaultTrackSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 140);
@@ -247,7 +259,8 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: MotionTrackSettings
+    /// StructProperty: MotionTrackSettings<br/>
+    /// Default: (ErrorBounds=(Rotation=0.2,Translation=0.2,Scale=0.01))
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings MotionTrackSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 172);
@@ -289,97 +302,113 @@ public partial class RAnimZip_Settings : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings
+    /// StructProperty: CharacterTrackSettings<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 224);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Bip01
+    /// StructProperty: CharacterTrackSettings_Bip01<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.01,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Bip01
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Pelvis
+    /// StructProperty: CharacterTrackSettings_Pelvis<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.01,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Pelvis
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 256);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Spine
+    /// StructProperty: CharacterTrackSettings_Spine<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Spine
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 272);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Face
+    /// StructProperty: CharacterTrackSettings_Face<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.01,Scale=0.01))
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Face
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 288);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Head
+    /// StructProperty: CharacterTrackSettings_Head<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Head
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 304);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Clavicle
+    /// StructProperty: CharacterTrackSettings_Clavicle<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Clavicle
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 320);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Arm
+    /// StructProperty: CharacterTrackSettings_Arm<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Arm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 336);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Hand
+    /// StructProperty: CharacterTrackSettings_Hand<br/>
+    /// Default: (ErrorBounds=(Rotation=0.05,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Hand
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 352);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Finger
+    /// StructProperty: CharacterTrackSettings_Finger<br/>
+    /// Default: (ErrorBounds=(Rotation=0.2,Translation=0.05,Scale=0.01))
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Finger
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 368);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Gundummy
+    /// StructProperty: CharacterTrackSettings_Gundummy<br/>
+    /// Default: (ErrorBounds=(Rotation=0.02,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Gundummy
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 384);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Leg
+    /// StructProperty: CharacterTrackSettings_Leg<br/>
+    /// Default: (ErrorBounds=(Rotation=0.01,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Leg
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 400);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Foot
+    /// StructProperty: CharacterTrackSettings_Foot<br/>
+    /// Default: (ErrorBounds=(Rotation=0.05,Translation=0.05,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Foot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 416);
 
     /// <summary>
-    /// StructProperty: CharacterTrackSettings_Toe
+    /// StructProperty: CharacterTrackSettings_Toe<br/>
+    /// Default: (ErrorBounds=(Rotation=0.2,Translation=0.05,Scale=0.01))
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CharacterTrackSettings_Toe
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 432);
 
     /// <summary>
-    /// StructProperty: CapeTrackSettings
+    /// StructProperty: CapeTrackSettings<br/>
+    /// Default: (ErrorBounds=(Rotation=0.5,Translation=0.1,Scale=0.01),AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CapeTrackSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 448);
 
     /// <summary>
-    /// StructProperty: CameraTrackSettings
+    /// StructProperty: CameraTrackSettings<br/>
+    /// Default: (AllowRotationRetargeting=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings CameraTrackSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAnimZip_Settings.FAnimZipTrackSettings>(Ptr + 464);

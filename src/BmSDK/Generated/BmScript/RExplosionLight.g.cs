@@ -133,7 +133,8 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Lifetime
+    /// FloatProperty: Lifetime<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float Lifetime
     {
@@ -142,7 +143,8 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrentTime
+    /// FloatProperty: CurrentTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentTime
     {
@@ -151,7 +153,8 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InitialBrightness
+    /// FloatProperty: InitialBrightness<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float InitialBrightness
     {
@@ -160,7 +163,8 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PointLightArch
+    /// ObjectProperty: PointLightArch<br/>
+    /// Default: VFX_Smoke.fx_ResonatorDet_Light
     /// </summary>
     public unsafe BmSDK.Engine.PointLight PointLightArch
     {
@@ -178,7 +182,8 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: LifeType
+    /// ByteProperty: LifeType<br/>
+    /// Default: EL_FastStartSlowEnd
     /// </summary>
     public unsafe BmSDK.BmScript.RExplosionLight.ELifeType LifeType
     {

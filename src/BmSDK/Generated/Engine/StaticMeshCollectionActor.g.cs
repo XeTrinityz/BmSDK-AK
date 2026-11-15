@@ -88,7 +88,8 @@ public partial class StaticMeshCollectionActor : BmSDK.Engine.StaticMeshActorBas
     }
 
     /// <summary>
-    /// IntProperty: MaxStaticMeshComponents
+    /// IntProperty: MaxStaticMeshComponents<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int MaxStaticMeshComponents
     {

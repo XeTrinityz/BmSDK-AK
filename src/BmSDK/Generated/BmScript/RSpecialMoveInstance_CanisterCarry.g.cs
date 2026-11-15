@@ -387,7 +387,8 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// ObjectProperty: WarningRumble
+    /// ObjectProperty: WarningRumble<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_CanisterCarry.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform WarningRumble
     {
@@ -483,7 +484,8 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StructProperty: BreatheOverlay
+    /// StructProperty: BreatheOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId BreatheOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 940);
@@ -498,13 +500,15 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StructProperty: WarningOverlay
+    /// StructProperty: WarningOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId WarningOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 952);
 
     /// <summary>
-    /// IntProperty: KBMScaleFactor
+    /// IntProperty: KBMScaleFactor<br/>
+    /// Default: 900
     /// </summary>
     public unsafe int KBMScaleFactor
     {

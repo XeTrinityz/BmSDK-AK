@@ -223,7 +223,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenAttacks
+    /// FloatProperty: MinTimeBetweenAttacks<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinTimeBetweenAttacks
     {
@@ -232,7 +233,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenAttacks
+    /// FloatProperty: MaxTimeBetweenAttacks<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MaxTimeBetweenAttacks
     {
@@ -241,7 +243,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleZ
+    /// FloatProperty: MaxOnscreenCosAngleZ<br/>
+    /// Default: 0.93
     /// </summary>
     public unsafe float MaxOnscreenCosAngleZ
     {
@@ -250,7 +253,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleXY
+    /// FloatProperty: MaxOnscreenCosAngleXY<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float MaxOnscreenCosAngleXY
     {
@@ -259,7 +263,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MinLookingAtCosAngleZ
+    /// FloatProperty: MinLookingAtCosAngleZ<br/>
+    /// Default: 0.985
     /// </summary>
     public unsafe float MinLookingAtCosAngleZ
     {
@@ -268,7 +273,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MinLookingAtCosAngleXY
+    /// FloatProperty: MinLookingAtCosAngleXY<br/>
+    /// Default: 0.985
     /// </summary>
     public unsafe float MinLookingAtCosAngleXY
     {
@@ -304,7 +310,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// IntProperty: CamPitchAdjustment
+    /// IntProperty: CamPitchAdjustment<br/>
+    /// Default: -1200
     /// </summary>
     public unsafe int CamPitchAdjustment
     {
@@ -322,7 +329,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: HackTime
+    /// FloatProperty: HackTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float HackTime
     {
@@ -331,7 +339,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: HackExpiryVirus
+    /// FloatProperty: HackExpiryVirus<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HackExpiryVirus
     {
@@ -340,7 +349,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: HackExpiryOverload
+    /// FloatProperty: HackExpiryOverload<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HackExpiryOverload
     {
@@ -349,7 +359,8 @@ public partial class RSeqAct_OracleTankAttack : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: HackExpiryOverloadEMP
+    /// FloatProperty: HackExpiryOverloadEMP<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HackExpiryOverloadEMP
     {

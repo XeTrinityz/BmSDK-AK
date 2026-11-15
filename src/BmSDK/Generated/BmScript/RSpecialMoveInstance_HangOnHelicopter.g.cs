@@ -271,7 +271,8 @@ public partial class RSpecialMoveInstance_HangOnHelicopter : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// StructProperty: ScreenShake
+    /// StructProperty: ScreenShake<br/>
+    /// Default: (TimeDuration=1e+09,LocFrequency=(X=10,Y=10,Z=10),RotAmplitude=(X=25,Y=25),RotFrequency=(X=3.5,Y=2,Z=4),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FrequencyDropPower=0.8,FrequencyDropFactor=0.8,F...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1084);

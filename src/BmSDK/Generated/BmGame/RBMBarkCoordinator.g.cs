@@ -706,7 +706,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBarksEnabled
+    /// BoolProperty: bBarksEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBarksEnabled
     {
@@ -715,7 +716,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bRandomBarksEnabled
+    /// BoolProperty: bRandomBarksEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRandomBarksEnabled
     {
@@ -751,7 +753,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinRandomBarkTime
+    /// FloatProperty: MinRandomBarkTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MinRandomBarkTime
     {
@@ -760,7 +763,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrRandomBarkTime
+    /// FloatProperty: CurrRandomBarkTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float CurrRandomBarkTime
     {
@@ -778,7 +782,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTannoyTime
+    /// FloatProperty: MinTannoyTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MinTannoyTime
     {

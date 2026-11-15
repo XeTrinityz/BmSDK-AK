@@ -196,7 +196,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// ComponentProperty: FireParticleSystem
+    /// ComponentProperty: FireParticleSystem<br/>
+    /// Default: BmScript.Default__RProjectile_GrenadeFirefly.FirePFXComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FireParticleSystem
     {
@@ -205,7 +206,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// ComponentProperty: TrailParticleSystem
+    /// ComponentProperty: TrailParticleSystem<br/>
+    /// Default: BmScript.Default__RProjectile_GrenadeFirefly.TrailPFXComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent TrailParticleSystem
     {
@@ -214,7 +216,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// ComponentProperty: WarningParticleSystem
+    /// ComponentProperty: WarningParticleSystem<br/>
+    /// Default: BmScript.Default__RProjectile_GrenadeFirefly.WarningPFXComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent WarningParticleSystem
     {
@@ -223,7 +226,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: WarningParticleSystemRadiusModifier
+    /// FloatProperty: WarningParticleSystemRadiusModifier<br/>
+    /// Default: 2.75
     /// </summary>
     public unsafe float WarningParticleSystemRadiusModifier
     {
@@ -232,7 +236,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// ObjectProperty: HitFloor_SFX
+    /// ObjectProperty: HitFloor_SFX<br/>
+    /// Default: Ww_CHR_Firefly.Play_Firefly_Grenade_Hit_Floor
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent HitFloor_SFX
     {
@@ -295,7 +300,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenImpactAndDetonation
+    /// FloatProperty: timeBetweenImpactAndDetonation<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float timeBetweenImpactAndDetonation
     {
@@ -304,7 +310,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: fireDuration
+    /// FloatProperty: fireDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float fireDuration
     {
@@ -313,7 +320,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: FireFadeOutDuration
+    /// FloatProperty: FireFadeOutDuration<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float FireFadeOutDuration
     {
@@ -331,7 +339,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: DamageInterval
+    /// FloatProperty: DamageInterval<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float DamageInterval
     {
@@ -340,7 +349,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: FFBombDamageAmount
+    /// FloatProperty: FFBombDamageAmount<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float FFBombDamageAmount
     {
@@ -349,7 +359,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: FFBombExplosionImpulse
+    /// FloatProperty: FFBombExplosionImpulse<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float FFBombExplosionImpulse
     {
@@ -358,7 +369,8 @@ public partial class RProjectile_GrenadeFirefly : BmSDK.BmScript.RProjectile_Gre
     }
 
     /// <summary>
-    /// FloatProperty: expectedFireRadius
+    /// FloatProperty: expectedFireRadius<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float expectedFireRadius
     {

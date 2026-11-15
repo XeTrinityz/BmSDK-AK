@@ -248,7 +248,8 @@ public partial class RSpecialMoveInstance_CwPounceOnThug : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: IdealPounceRange
+    /// FloatProperty: IdealPounceRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float IdealPounceRange
     {

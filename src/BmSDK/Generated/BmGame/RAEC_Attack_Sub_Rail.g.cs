@@ -208,7 +208,8 @@ public partial class RAEC_Attack_Sub_Rail : BmSDK.BmGame.RAEC_Attack_Sub_Converg
     }
 
     /// <summary>
-    /// FloatProperty: ApproachOffset
+    /// FloatProperty: ApproachOffset<br/>
+    /// Default: 107.79
     /// </summary>
     public unsafe float ApproachOffset
     {

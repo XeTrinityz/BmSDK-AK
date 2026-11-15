@@ -246,7 +246,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OscillationBlendInTime
+    /// FloatProperty: OscillationBlendInTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float OscillationBlendInTime
     {
@@ -255,7 +256,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OscillationBlendOutTime
+    /// FloatProperty: OscillationBlendOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float OscillationBlendOutTime
     {
@@ -291,7 +293,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimPlayRate
+    /// FloatProperty: AnimPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AnimPlayRate
     {
@@ -300,7 +303,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimScale
+    /// FloatProperty: AnimScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AnimScale
     {
@@ -309,7 +313,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimBlendInTime
+    /// FloatProperty: AnimBlendInTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float AnimBlendInTime
     {
@@ -318,7 +323,8 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimBlendOutTime
+    /// FloatProperty: AnimBlendOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float AnimBlendOutTime
     {

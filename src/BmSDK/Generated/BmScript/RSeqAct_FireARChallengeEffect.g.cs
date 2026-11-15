@@ -115,7 +115,8 @@ public partial class RSeqAct_FireARChallengeEffect : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// ObjectProperty: LevelSwitchFX
+    /// ObjectProperty: LevelSwitchFX<br/>
+    /// Default: XFX_Joel.ARChallenge.AR_EntryScan
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem LevelSwitchFX
     {

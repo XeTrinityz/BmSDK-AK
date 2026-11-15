@@ -303,7 +303,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ImportOptions
+    /// StructProperty: ImportOptions<br/>
+    /// Default: (FontName="Arial",Height=16,bEnableAntialiasing=true,bIncludeASCIIRange=true,ForegroundColor=(R=1,G=1,B=1,A=1),TexturePageWidth=256,TexturePageMaxHeight=256,XPadding=1,YPadding=1,DistanceFieldScaleFac...
     /// </summary>
     public unsafe ref BmSDK.Engine.FontImportOptions.FFontImportOptionsData ImportOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.FontImportOptions.FFontImportOptionsData>(Ptr + 212);
@@ -327,7 +328,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScalingFactor
+    /// FloatProperty: ScalingFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScalingFactor
     {

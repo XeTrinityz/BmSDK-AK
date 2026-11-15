@@ -106,7 +106,8 @@ public partial class RSeqAct_SetPawnHealthMultiplier : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: PawnHealthMultiplier
+    /// FloatProperty: PawnHealthMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PawnHealthMultiplier
     {

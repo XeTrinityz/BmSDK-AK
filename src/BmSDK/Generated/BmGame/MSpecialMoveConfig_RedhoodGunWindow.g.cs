@@ -79,7 +79,8 @@ public partial class MSpecialMoveConfig_RedhoodGunWindow : BmSDK.BmGame.RSpecial
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: fractureRumble
+    /// ObjectProperty: fractureRumble<br/>
+    /// Default: BmGame.Default__MSpecialMoveConfig_RedhoodGunWindow.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform fractureRumble
     {

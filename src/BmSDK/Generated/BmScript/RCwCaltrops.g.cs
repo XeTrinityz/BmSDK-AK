@@ -195,13 +195,15 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: TrapStirOffset
+    /// StructProperty: TrapStirOffset<br/>
+    /// Default: (Z=-120)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TrapStirOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2592);
 
     /// <summary>
-    /// FloatProperty: TrapStirInnerVelocity
+    /// FloatProperty: TrapStirInnerVelocity<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float TrapStirInnerVelocity
     {
@@ -210,7 +212,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TrapStirOuterVelocity
+    /// FloatProperty: TrapStirOuterVelocity<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float TrapStirOuterVelocity
     {
@@ -219,7 +222,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TrapStirRadius
+    /// FloatProperty: TrapStirRadius<br/>
+    /// Default: 140
     /// </summary>
     public unsafe float TrapStirRadius
     {
@@ -228,7 +232,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: StirActivationPause
+    /// FloatProperty: StirActivationPause<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float StirActivationPause
     {
@@ -237,13 +242,15 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: TrapSwipeOffset
+    /// StructProperty: TrapSwipeOffset<br/>
+    /// Default: (Z=-30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TrapSwipeOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2620);
 
     /// <summary>
-    /// FloatProperty: TrapSwipeInnerVelocity
+    /// FloatProperty: TrapSwipeInnerVelocity<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float TrapSwipeInnerVelocity
     {
@@ -252,7 +259,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TrapSwipeOuterVelocity
+    /// FloatProperty: TrapSwipeOuterVelocity<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float TrapSwipeOuterVelocity
     {
@@ -261,7 +269,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TrapSwipeRadius
+    /// FloatProperty: TrapSwipeRadius<br/>
+    /// Default: 55
     /// </summary>
     public unsafe float TrapSwipeRadius
     {
@@ -270,7 +279,8 @@ public partial class RCwCaltrops : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: SwipeActivationPause
+    /// FloatProperty: SwipeActivationPause<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SwipeActivationPause
     {

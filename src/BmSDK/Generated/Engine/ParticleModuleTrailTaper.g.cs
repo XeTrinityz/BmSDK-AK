@@ -88,7 +88,8 @@ public partial class ParticleModuleTrailTaper : BmSDK.Engine.ParticleModuleTrail
     }
 
     /// <summary>
-    /// StructProperty: TaperFactor
+    /// StructProperty: TaperFactor<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleTrailTaper.DistributionTaperFactor)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat TaperFactor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);

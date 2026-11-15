@@ -79,7 +79,8 @@ public partial class RAnimNotify_SpawnParticleFX : BmSDK.Engine.AnimNotify, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: BoneOrSocket
+    /// ByteProperty: BoneOrSocket<br/>
+    /// Default: BOSS_Socket
     /// </summary>
     public unsafe BmSDK.BmGame.RAnimNotify_SpawnParticleFX.BoneOrSocketSource BoneOrSocket
     {

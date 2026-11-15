@@ -216,7 +216,8 @@ public partial class RBMBehaviour_Idle_ShootAtBatmobile : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// FloatProperty: idlePeriodMin
+    /// FloatProperty: idlePeriodMin<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float idlePeriodMin
     {
@@ -225,7 +226,8 @@ public partial class RBMBehaviour_Idle_ShootAtBatmobile : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// FloatProperty: idlePeriodMax
+    /// FloatProperty: idlePeriodMax<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float idlePeriodMax
     {
@@ -234,7 +236,8 @@ public partial class RBMBehaviour_Idle_ShootAtBatmobile : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// FloatProperty: sightRange
+    /// FloatProperty: sightRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float sightRange
     {

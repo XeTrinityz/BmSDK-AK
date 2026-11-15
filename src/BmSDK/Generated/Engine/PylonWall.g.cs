@@ -79,7 +79,8 @@ public partial class PylonWall : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bForStreetLevelPylon
+    /// BoolProperty: bForStreetLevelPylon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForStreetLevelPylon
     {

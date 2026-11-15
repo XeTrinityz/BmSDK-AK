@@ -79,7 +79,8 @@ public partial class ParticleModuleTypeDataTrail : BmSDK.Engine.ParticleModuleTy
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: RenderGeometry
+    /// BoolProperty: RenderGeometry<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RenderGeometry
     {
@@ -124,7 +125,8 @@ public partial class ParticleModuleTypeDataTrail : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// IntProperty: TessellationFactor
+    /// IntProperty: TessellationFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TessellationFactor
     {
@@ -133,13 +135,15 @@ public partial class ParticleModuleTypeDataTrail : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// StructProperty: Tension
+    /// StructProperty: Tension<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleTypeDataTrail.DistributionTension)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Tension
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: SpawnDistance
+    /// StructProperty: SpawnDistance<br/>
+    /// Default: (X=5,Y=5,Z=5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SpawnDistance
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 140);

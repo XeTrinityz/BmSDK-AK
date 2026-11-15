@@ -103,7 +103,8 @@ public partial class MaterialExpressionInteriorMappingParameter : BmSDK.Engine.M
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 472);
 
     /// <summary>
-    /// FloatProperty: CavityDepthMultiplier
+    /// FloatProperty: CavityDepthMultiplier<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float CavityDepthMultiplier
     {

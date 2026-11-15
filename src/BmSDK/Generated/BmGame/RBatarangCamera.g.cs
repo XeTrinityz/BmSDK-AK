@@ -432,7 +432,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: FlipAnimSet
+    /// ObjectProperty: FlipAnimSet<br/>
+    /// Default: Gadgets.Batarang.Equipment_Batarang_Camera
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet FlipAnimSet
     {
@@ -456,7 +457,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1288);
 
     /// <summary>
-    /// StructProperty: CameraOffset
+    /// StructProperty: CameraOffset<br/>
+    /// Default: (X=-50,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1300);
@@ -477,7 +479,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bDofChange
+    /// BoolProperty: bDofChange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDofChange
     {
@@ -540,7 +543,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SlowDownDuration
+    /// FloatProperty: SlowDownDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SlowDownDuration
     {
@@ -549,7 +553,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SpeedUpDuration
+    /// FloatProperty: SpeedUpDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SpeedUpDuration
     {
@@ -558,7 +563,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: CameraBlendSpeed
+    /// FloatProperty: CameraBlendSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CameraBlendSpeed
     {
@@ -567,7 +573,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: BatarangComboFlightGameSpeed
+    /// FloatProperty: BatarangComboFlightGameSpeed<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BatarangComboFlightGameSpeed
     {
@@ -576,7 +583,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: BatarangComboSlowDownDuration
+    /// FloatProperty: BatarangComboSlowDownDuration<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BatarangComboSlowDownDuration
     {
@@ -585,7 +593,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: BatarangComboSpeedUpDuration
+    /// FloatProperty: BatarangComboSpeedUpDuration<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float BatarangComboSpeedUpDuration
     {
@@ -594,7 +603,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ImpactTurnRate
+    /// FloatProperty: ImpactTurnRate<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float ImpactTurnRate
     {
@@ -612,7 +622,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MinFlightGameSpeed
+    /// FloatProperty: MinFlightGameSpeed<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinFlightGameSpeed
     {
@@ -621,7 +632,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HarpoonGameSpeed
+    /// FloatProperty: HarpoonGameSpeed<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float HarpoonGameSpeed
     {
@@ -630,13 +642,15 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: ScreenShakeSettings
+    /// StructProperty: ScreenShakeSettings<br/>
+    /// Default: (TimeDuration=100,LocAmplitude=(Y=6,Z=6),LocFrequency=(Y=4,Z=4),RotAmplitude=(Z=400),RotFrequency=(Z=5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=2000,FalloffMaxRange=10000,FallO...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ScreenShakeSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1372);
 
     /// <summary>
-    /// StructProperty: CameraDOFSettings
+    /// StructProperty: CameraDOFSettings<br/>
+    /// Default: (ApertureStop=1.2,FocusDistance=220,InterpolationDuration=1,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct CameraDOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 1528);
@@ -774,7 +788,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: FlipAnimName
+    /// NameProperty: FlipAnimName<br/>
+    /// Default: Controllable_Batarang_Flip180
     /// </summary>
     public unsafe BmSDK.FName FlipAnimName
     {

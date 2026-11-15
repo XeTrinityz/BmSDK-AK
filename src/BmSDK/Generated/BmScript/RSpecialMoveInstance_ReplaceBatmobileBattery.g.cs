@@ -653,7 +653,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: RumbleWarning
+    /// ObjectProperty: RumbleWarning<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform RumbleWarning
     {
@@ -662,7 +663,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: RumbleLock
+    /// ObjectProperty: RumbleLock<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform RumbleLock
     {
@@ -698,7 +700,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: DiveVFX2
+    /// ComponentProperty: DiveVFX2<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.SuitPFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DiveVFX2
     {
@@ -707,7 +710,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: DiveVFX
+    /// ComponentProperty: DiveVFX<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.SuitPFX1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DiveVFX
     {
@@ -716,7 +720,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: PowerCellActivateVFX
+    /// ComponentProperty: PowerCellActivateVFX<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX6
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent PowerCellActivateVFX
     {
@@ -725,7 +730,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileVentVFX2
+    /// ComponentProperty: BatmobileVentVFX2<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX4
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatmobileVentVFX2
     {
@@ -734,7 +740,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileVentVFX1
+    /// ComponentProperty: BatmobileVentVFX1<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX3
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatmobileVentVFX1
     {
@@ -743,7 +750,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileBatteryLockVFX
+    /// ComponentProperty: BatmobileBatteryLockVFX<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX5
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatmobileBatteryLockVFX
     {
@@ -752,7 +760,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileBatteryVFX
+    /// ComponentProperty: BatmobileBatteryVFX<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatmobileBatteryVFX
     {
@@ -761,7 +770,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: SuitVFX
+    /// ComponentProperty: SuitVFX<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_ReplaceBatmobileBattery.PFX1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SuitVFX
     {
@@ -851,7 +861,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// BoolProperty: bCanDie
+    /// BoolProperty: bCanDie<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDie
     {
@@ -1094,13 +1105,15 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: OverchargeCol
+    /// StructProperty: OverchargeCol<br/>
+    /// Default: (R=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor OverchargeCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1104);
 
     /// <summary>
-    /// StructProperty: SafeCol
+    /// StructProperty: SafeCol<br/>
+    /// Default: (R=0.35,G=0.72,B=0.989,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SafeCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1120);
@@ -1124,7 +1137,8 @@ public partial class RSpecialMoveInstance_ReplaceBatmobileBattery : BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: KBMScaleFactor
+    /// IntProperty: KBMScaleFactor<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe int KBMScaleFactor
     {

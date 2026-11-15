@@ -336,7 +336,8 @@ public partial class RAEC_HideFromBatmobile : BmSDK.BmGame.RAlertEventCoordinato
     }
 
     /// <summary>
-    /// FloatProperty: EndBarkDelay
+    /// FloatProperty: EndBarkDelay<br/>
+    /// Default: 2.1
     /// </summary>
     public unsafe float EndBarkDelay
     {

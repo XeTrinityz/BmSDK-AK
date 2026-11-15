@@ -295,7 +295,8 @@ public partial class RSeqAct_FilmB1InterrogationController : BmSDK.BmGame.RSeqAc
     }
 
     /// <summary>
-    /// NameProperty: RobinAnimation
+    /// NameProperty: RobinAnimation<br/>
+    /// Default: BM_RB_Interrogation_RB_Idle_In
     /// </summary>
     public unsafe BmSDK.FName RobinAnimation
     {
@@ -304,7 +305,8 @@ public partial class RSeqAct_FilmB1InterrogationController : BmSDK.BmGame.RSeqAc
     }
 
     /// <summary>
-    /// NameProperty: BatmanAnimation
+    /// NameProperty: BatmanAnimation<br/>
+    /// Default: BM_RB_Interrogation_BM_Idle_In
     /// </summary>
     public unsafe BmSDK.FName BatmanAnimation
     {
@@ -313,7 +315,8 @@ public partial class RSeqAct_FilmB1InterrogationController : BmSDK.BmGame.RSeqAc
     }
 
     /// <summary>
-    /// NameProperty: RobinAnimationIdle
+    /// NameProperty: RobinAnimationIdle<br/>
+    /// Default: BM_RB_Interrogation_RB_Idle
     /// </summary>
     public unsafe BmSDK.FName RobinAnimationIdle
     {
@@ -322,7 +325,8 @@ public partial class RSeqAct_FilmB1InterrogationController : BmSDK.BmGame.RSeqAc
     }
 
     /// <summary>
-    /// NameProperty: BatmanAnimationIdle
+    /// NameProperty: BatmanAnimationIdle<br/>
+    /// Default: BM_RB_Interrogation_BM_Idle
     /// </summary>
     public unsafe BmSDK.FName BatmanAnimationIdle
     {

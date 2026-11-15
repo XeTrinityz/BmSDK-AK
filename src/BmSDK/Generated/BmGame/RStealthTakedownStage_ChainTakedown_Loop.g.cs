@@ -152,7 +152,8 @@ public partial class RStealthTakedownStage_ChainTakedown_Loop : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// FloatProperty: fDistanceThresholdForFarAnimation
+    /// FloatProperty: fDistanceThresholdForFarAnimation<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float fDistanceThresholdForFarAnimation
     {

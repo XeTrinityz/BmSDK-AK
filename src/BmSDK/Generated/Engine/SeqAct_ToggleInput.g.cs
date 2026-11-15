@@ -79,7 +79,8 @@ public partial class SeqAct_ToggleInput : BmSDK.Engine.SeqAct_Toggle, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bToggleMovement
+    /// BoolProperty: bToggleMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bToggleMovement
     {
@@ -88,7 +89,8 @@ public partial class SeqAct_ToggleInput : BmSDK.Engine.SeqAct_Toggle, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bToggleTurning
+    /// BoolProperty: bToggleTurning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bToggleTurning
     {

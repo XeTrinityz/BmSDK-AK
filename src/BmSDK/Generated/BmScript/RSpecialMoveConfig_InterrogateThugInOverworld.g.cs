@@ -151,7 +151,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ArrayProperty: RoadRotOffset
+    /// ArrayProperty: RoadRotOffset<br/>
+    /// Default: ((Yaw=5000),(Yaw=5000),(Yaw=5000))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Rotator> RoadRotOffset
     {
@@ -160,7 +161,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: SecondTransEnd
+    /// FloatProperty: SecondTransEnd<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float SecondTransEnd
     {
@@ -169,7 +171,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: SecondRotEnd
+    /// FloatProperty: SecondRotEnd<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float SecondRotEnd
     {
@@ -178,7 +181,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: SecondTransStart
+    /// FloatProperty: SecondTransStart<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SecondTransStart
     {
@@ -196,7 +200,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ArrayProperty: InitialLightingLocOffset
+    /// ArrayProperty: InitialLightingLocOffset<br/>
+    /// Default: ((X=-25.27,Y=-39.366),(X=-25,Y=-40),(X=-15,Y=-40))
     /// </summary>
     public unsafe BmSDK.TArray<System.Numerics.Vector3> InitialLightingLocOffset
     {
@@ -205,7 +210,8 @@ public partial class RSpecialMoveConfig_InterrogateThugInOverworld : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ArrayProperty: IntialLightingRotOffset
+    /// ArrayProperty: IntialLightingRotOffset<br/>
+    /// Default: ((Yaw=-21809),(Yaw=-20935),(Yaw=-20935))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Rotator> IntialLightingRotOffset
     {

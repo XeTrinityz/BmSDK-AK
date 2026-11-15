@@ -621,7 +621,8 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
     }
 
     /// <summary>
-    /// FloatProperty: TimeOutDelay
+    /// FloatProperty: TimeOutDelay<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeOutDelay
     {
@@ -639,7 +640,8 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
     }
 
     /// <summary>
-    /// FloatProperty: ReassignPeriod
+    /// FloatProperty: ReassignPeriod<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ReassignPeriod
     {

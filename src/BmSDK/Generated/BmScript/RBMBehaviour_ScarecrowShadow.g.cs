@@ -186,7 +186,8 @@ public partial class RBMBehaviour_ScarecrowShadow : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: IdleAnimations
+    /// ArrayProperty: IdleAnimations<br/>
+    /// Default: (Chemical_Tank_Idle,Chemical_Tank_Idle_01,Chemical_Tank_Idle_02,Chemical_Tank_Idle_03,Chemical_Tank_Idle_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IdleAnimations
     {
@@ -258,7 +259,8 @@ public partial class RBMBehaviour_ScarecrowShadow : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// BoolProperty: bCanShowJoker
+    /// BoolProperty: bCanShowJoker<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanShowJoker
     {
@@ -267,7 +269,8 @@ public partial class RBMBehaviour_ScarecrowShadow : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// NameProperty: WalkAnimation
+    /// NameProperty: WalkAnimation<br/>
+    /// Default: Chemical_Tank_Walk
     /// </summary>
     public unsafe BmSDK.FName WalkAnimation
     {
@@ -276,7 +279,8 @@ public partial class RBMBehaviour_ScarecrowShadow : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// NameProperty: WalkIn
+    /// NameProperty: WalkIn<br/>
+    /// Default: Chemical_Tank_Walk_In
     /// </summary>
     public unsafe BmSDK.FName WalkIn
     {
@@ -285,7 +289,8 @@ public partial class RBMBehaviour_ScarecrowShadow : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// NameProperty: WalkOff
+    /// NameProperty: WalkOff<br/>
+    /// Default: Chemical_Tank_Walk_Off
     /// </summary>
     public unsafe BmSDK.FName WalkOff
     {

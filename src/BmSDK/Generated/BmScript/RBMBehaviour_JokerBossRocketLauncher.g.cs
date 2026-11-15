@@ -258,7 +258,8 @@ public partial class RBMBehaviour_JokerBossRocketLauncher : BmSDK.BmGame.RBMBeha
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenFire
+    /// FloatProperty: TimeBetweenFire<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float TimeBetweenFire
     {
@@ -273,7 +274,8 @@ public partial class RBMBehaviour_JokerBossRocketLauncher : BmSDK.BmGame.RBMBeha
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 644);
 
     /// <summary>
-    /// FloatProperty: LookAheadTime
+    /// FloatProperty: LookAheadTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float LookAheadTime
     {
@@ -282,7 +284,8 @@ public partial class RBMBehaviour_JokerBossRocketLauncher : BmSDK.BmGame.RBMBeha
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileWarningTime
+    /// FloatProperty: BatmobileWarningTime<br/>
+    /// Default: 1.25
     /// </summary>
     public unsafe float BatmobileWarningTime
     {

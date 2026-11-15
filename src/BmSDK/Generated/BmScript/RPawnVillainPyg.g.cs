@@ -628,7 +628,8 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6712);
 
     /// <summary>
-    /// IntProperty: PrevWindowIdx
+    /// IntProperty: PrevWindowIdx<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PrevWindowIdx
     {

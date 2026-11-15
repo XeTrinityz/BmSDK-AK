@@ -127,7 +127,8 @@ public partial class RBatmobileMine : BmSDK.BmGame.RMortarProjectile, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ProximityLifeTime
+    /// FloatProperty: ProximityLifeTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ProximityLifeTime
     {
@@ -136,7 +137,8 @@ public partial class RBatmobileMine : BmSDK.BmGame.RMortarProjectile, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ProximityRadius
+    /// FloatProperty: ProximityRadius<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float ProximityRadius
     {

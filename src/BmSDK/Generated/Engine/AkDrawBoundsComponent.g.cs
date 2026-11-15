@@ -79,13 +79,15 @@ public partial class AkDrawBoundsComponent : BmSDK.Engine.PrimitiveComponent, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: DrawBoundsColor
+    /// StructProperty: DrawBoundsColor<br/>
+    /// Default: (B=196,G=167,R=84)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DrawBoundsColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
 
     /// <summary>
-    /// StructProperty: ExtraBoxDrawColour
+    /// StructProperty: ExtraBoxDrawColour<br/>
+    /// Default: (B=185,G=57,R=172,A=64)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ExtraBoxDrawColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 544);

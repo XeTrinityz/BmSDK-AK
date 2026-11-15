@@ -123,7 +123,8 @@ public partial class SeqVar_Player : BmSDK.Engine.SeqVar_Object, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAllPlayers
+    /// BoolProperty: bAllPlayers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllPlayers
     {

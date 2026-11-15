@@ -166,7 +166,8 @@ public partial class RWinchableDoor : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompDoor
+    /// ComponentProperty: MeshCompDoor<br/>
+    /// Default: BmScript.Default__RWinchableDoor.MeshCompDoor0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent MeshCompDoor
     {
@@ -175,7 +176,8 @@ public partial class RWinchableDoor : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BreakForce
+    /// FloatProperty: BreakForce<br/>
+    /// Default: 50000
     /// </summary>
     public unsafe float BreakForce
     {
@@ -184,7 +186,8 @@ public partial class RWinchableDoor : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BreakForceOffset
+    /// FloatProperty: BreakForceOffset<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BreakForceOffset
     {
@@ -193,7 +196,8 @@ public partial class RWinchableDoor : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BreakForceRadius
+    /// FloatProperty: BreakForceRadius<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float BreakForceRadius
     {

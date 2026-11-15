@@ -1013,7 +1013,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: FireOverlayAnimation
+    /// StructProperty: FireOverlayAnimation<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId FireOverlayAnimation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 2068);
@@ -1190,19 +1191,22 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: NormalFireScreenShake
+    /// StructProperty: NormalFireScreenShake<br/>
+    /// Default: (TimeDuration=0.25,RotAmplitude=(X=700),RotFrequency=(X=2),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(bAmplitudeXShowsInitialDirection=true,FalloffMinRange=2000,FalloffMaxRange=10000,FallOffMinVa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct NormalFireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2080);
 
     /// <summary>
-    /// StructProperty: ZoomedFireScreenShake
+    /// StructProperty: ZoomedFireScreenShake<br/>
+    /// Default: (TimeDuration=0.25,RotAmplitude=(X=300),RotFrequency=(X=2),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(bAmplitudeXShowsInitialDirection=true,FalloffMinRange=2000,FalloffMaxRange=10000,FallOffMinVa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ZoomedFireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2236);
 
     /// <summary>
-    /// FloatProperty: ReplenishTime
+    /// FloatProperty: ReplenishTime<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float ReplenishTime
     {
@@ -1238,7 +1242,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: fDelayBetweenMagazineChanges
+    /// FloatProperty: fDelayBetweenMagazineChanges<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float fDelayBetweenMagazineChanges
     {
@@ -1704,7 +1709,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: ScreenMIC
+    /// ObjectProperty: ScreenMIC<br/>
+    /// Default: Gadgets.DroneDisruptor.DroneDisruptorScreen_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant ScreenMIC
     {
@@ -1740,7 +1746,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: AimRadius
+    /// FloatProperty: AimRadius<br/>
+    /// Default: 14
     /// </summary>
     public unsafe float AimRadius
     {
@@ -1749,7 +1756,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: iAntiEquipmentMaximumAmmo
+    /// IntProperty: iAntiEquipmentMaximumAmmo<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iAntiEquipmentMaximumAmmo
     {
@@ -1758,7 +1766,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: iAntiEquipmentRemainingAmmo
+    /// IntProperty: iAntiEquipmentRemainingAmmo<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iAntiEquipmentRemainingAmmo
     {
@@ -1785,7 +1794,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: fScreenTurnOnSpeed
+    /// FloatProperty: fScreenTurnOnSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float fScreenTurnOnSpeed
     {

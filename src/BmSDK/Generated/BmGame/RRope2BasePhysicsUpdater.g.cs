@@ -140,7 +140,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// BoolProperty: bCreateBasicRopeJoint
+    /// BoolProperty: bCreateBasicRopeJoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCreateBasicRopeJoint
     {
@@ -149,7 +150,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// BoolProperty: bAlignEndAnchorYAxes
+    /// BoolProperty: bAlignEndAnchorYAxes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignEndAnchorYAxes
     {
@@ -158,7 +160,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// BoolProperty: bRestrictEndAnchorTwist
+    /// BoolProperty: bRestrictEndAnchorTwist<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRestrictEndAnchorTwist
     {
@@ -167,7 +170,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// BoolProperty: bCreateDirectConnectJoints
+    /// BoolProperty: bCreateDirectConnectJoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCreateDirectConnectJoints
     {
@@ -176,7 +180,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// BoolProperty: bCreateEndAnchors
+    /// BoolProperty: bCreateEndAnchors<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCreateEndAnchors
     {
@@ -185,7 +190,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// FloatProperty: SplitImpulseApplicationMass
+    /// FloatProperty: SplitImpulseApplicationMass<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SplitImpulseApplicationMass
     {
@@ -194,7 +200,8 @@ public partial class RRope2BasePhysicsUpdater : BmSDK.BmGame.RRope2PhysicsUpdate
     }
 
     /// <summary>
-    /// FloatProperty: MaxSplitImpulseStrength
+    /// FloatProperty: MaxSplitImpulseStrength<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float MaxSplitImpulseStrength
     {

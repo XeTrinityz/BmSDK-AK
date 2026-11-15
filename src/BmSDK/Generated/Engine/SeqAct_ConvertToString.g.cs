@@ -92,7 +92,8 @@ public partial class SeqAct_ConvertToString : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bIncludeVarComment
+    /// BoolProperty: bIncludeVarComment<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIncludeVarComment
     {
@@ -101,7 +102,8 @@ public partial class SeqAct_ConvertToString : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// StrProperty: VarSeparator
+    /// StrProperty: VarSeparator<br/>
+    /// Default: ", "
     /// </summary>
     public unsafe BmSDK.FString VarSeparator
     {
@@ -110,7 +112,8 @@ public partial class SeqAct_ConvertToString : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: NumberOfInputs
+    /// IntProperty: NumberOfInputs<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumberOfInputs
     {

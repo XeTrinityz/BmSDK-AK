@@ -116,7 +116,8 @@ public partial class RWaterFlowTarget : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EffectRadius
+    /// FloatProperty: EffectRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float EffectRadius
     {
@@ -125,7 +126,8 @@ public partial class RWaterFlowTarget : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FlowSpeed
+    /// FloatProperty: FlowSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float FlowSpeed
     {
@@ -188,7 +190,8 @@ public partial class RWaterFlowTarget : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

@@ -925,7 +925,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: EyeGlowColour
+    /// StructProperty: EyeGlowColour<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor EyeGlowColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 10204);

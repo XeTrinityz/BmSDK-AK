@@ -110,7 +110,8 @@ public partial class RSpecialMoveConfig_HoldLedge : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// StructProperty: LedgeOffset
+    /// StructProperty: LedgeOffset<br/>
+    /// Default: (X=60,Z=-37)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LedgeOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 444);

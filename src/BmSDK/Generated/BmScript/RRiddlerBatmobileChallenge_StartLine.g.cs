@@ -97,7 +97,8 @@ public partial class RRiddlerBatmobileChallenge_StartLine : BmSDK.BmScript.RRidd
     }
 
     /// <summary>
-    /// ObjectProperty: StartEvent
+    /// ObjectProperty: StartEvent<br/>
+    /// Default: Ww_DLC00_UI.Play_DLC_Race_Start_Section
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent StartEvent
     {

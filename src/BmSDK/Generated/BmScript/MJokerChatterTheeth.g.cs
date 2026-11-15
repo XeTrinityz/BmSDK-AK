@@ -258,7 +258,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: ChatteringTeethSFX
+    /// ObjectProperty: ChatteringTeethSFX<br/>
+    /// Default: Ww_MDLC45_BG_NPC_BossFight.Play_MDLC45_Joker_TeethChatter
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ChatteringTeethSFX
     {
@@ -267,7 +268,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: SmashedChatteringTeethSFX
+    /// ObjectProperty: SmashedChatteringTeethSFX<br/>
+    /// Default: Ww_CHR_JokerTeeth.Play_Joker_TeethChatter_Smash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SmashedChatteringTeethSFX
     {
@@ -285,7 +287,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: ChatterAnimSet
+    /// ObjectProperty: ChatterAnimSet<br/>
+    /// Default: BatgirlDLC_Collectibles.ChatteringTeeth.OBJ_Joker_ChatteringTeeth_ANIM
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ChatterAnimSet
     {
@@ -294,7 +297,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: XrayActive_MIC
+    /// ObjectProperty: XrayActive_MIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_Interact_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayActive_MIC
     {
@@ -303,7 +307,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: XrayInactive_MIC
+    /// ObjectProperty: XrayInactive_MIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayBone_deadBody_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayInactive_MIC
     {
@@ -312,7 +317,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: TeethSkelMesh
+    /// ComponentProperty: TeethSkelMesh<br/>
+    /// Default: BmScript.Default__MJokerChatterTheeth.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent TeethSkelMesh
     {
@@ -321,7 +327,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: RadiusComponent
+    /// ComponentProperty: RadiusComponent<br/>
+    /// Default: BmScript.Default__MJokerChatterTheeth.DrawSphere0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent RadiusComponent
     {
@@ -339,7 +346,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: TeethSpeed
+    /// FloatProperty: TeethSpeed<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float TeethSpeed
     {
@@ -348,7 +356,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: TurnTime
+    /// FloatProperty: TurnTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TurnTime
     {
@@ -357,7 +366,8 @@ public partial class MJokerChatterTheeth : BmSDK.BmGame.RPickupBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 96
     /// </summary>
     public unsafe float Radius
     {

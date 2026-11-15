@@ -106,7 +106,8 @@ public partial class AnimNodeBlendByBase : BmSDK.Engine.AnimNodeBlendList, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: BlendTime
+    /// FloatProperty: BlendTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendTime
     {

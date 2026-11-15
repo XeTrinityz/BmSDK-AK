@@ -104,7 +104,8 @@ public partial class RSeqAct_AutoJez : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: PMaps
+    /// ArrayProperty: PMaps<br/>
+    /// Default: ("entry","cityx","cityy","cityz","ace","underace","stagg","film","lockup","hideout","clocktower","manbat","pyg","jokerboss","penguincache","orphan","sacrifice","waynetower","bank","exit")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> PMaps
     {
@@ -113,7 +114,8 @@ public partial class RSeqAct_AutoJez : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: AutoJezChapters
+    /// ArrayProperty: AutoJezChapters<br/>
+    /// Default: ((Name="stagg",Chapter=4),(Name="cityx",Chapter=3),(Name="cityy",Chapter=3),(Name="cityz",Chapter=3))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RSeqAct_AutoJez.FAutoJezChapter> AutoJezChapters
     {

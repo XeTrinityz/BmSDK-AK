@@ -88,7 +88,8 @@ public partial class SeqVar_RandomInt : BmSDK.Engine.SeqVar_Int, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: Max
+    /// IntProperty: Max<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int Max
     {

@@ -179,7 +179,8 @@ public partial class RBMAIAction_ThermalSmokePerim : BmSDK.BmGame.RBMAIAction, B
     }
 
     /// <summary>
-    /// NameProperty: ExitStance
+    /// NameProperty: ExitStance<br/>
+    /// Default: Standing_Panicked
     /// </summary>
     public unsafe BmSDK.FName ExitStance
     {

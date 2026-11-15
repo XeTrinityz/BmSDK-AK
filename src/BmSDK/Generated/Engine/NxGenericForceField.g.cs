@@ -155,7 +155,8 @@ public partial class NxGenericForceField : BmSDK.Engine.NxForceField, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 888);
 
     /// <summary>
-    /// FloatProperty: TorusRadius
+    /// FloatProperty: TorusRadius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TorusRadius
     {

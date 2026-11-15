@@ -79,7 +79,8 @@ public partial class AnimNodeScalePlayRate : BmSDK.Engine.AnimNodeBlendBase, BmS
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: ScaleByValue
+    /// FloatProperty: ScaleByValue<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleByValue
     {

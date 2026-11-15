@@ -136,7 +136,8 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     }
 
     /// <summary>
-    /// ObjectProperty: TheGFxMovieInstance
+    /// ObjectProperty: TheGFxMovieInstance<br/>
+    /// Default: FullScreenVideo.TextureMovie
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheGFxMovieInstance
     {
@@ -181,7 +182,8 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     }
 
     /// <summary>
-    /// FloatProperty: USM_BufferSize
+    /// FloatProperty: USM_BufferSize<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float USM_BufferSize
     {
@@ -190,7 +192,8 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     }
 
     /// <summary>
-    /// BoolProperty: bLoop
+    /// BoolProperty: bLoop<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLoop
     {
@@ -217,7 +220,8 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     }
 
     /// <summary>
-    /// BoolProperty: bUseSubtitles
+    /// BoolProperty: bUseSubtitles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseSubtitles
     {

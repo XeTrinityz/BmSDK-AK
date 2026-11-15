@@ -389,7 +389,8 @@ public partial class RSpecialMoveEnvironmentObject : BmSDK.Engine.Actor, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmGame.Default__RSpecialMoveEnvironmentObject.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -434,7 +435,8 @@ public partial class RSpecialMoveEnvironmentObject : BmSDK.Engine.Actor, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

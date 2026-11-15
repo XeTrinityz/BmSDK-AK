@@ -134,7 +134,8 @@ public partial class RSeqAct_ModifyStreaming : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyReloadConditionalsOnCurrentLevel
+    /// BoolProperty: bOnlyReloadConditionalsOnCurrentLevel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyReloadConditionalsOnCurrentLevel
     {

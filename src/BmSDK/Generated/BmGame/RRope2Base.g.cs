@@ -469,7 +469,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
     }
 
     /// <summary>
-    /// ComponentProperty: RopeComponent
+    /// ComponentProperty: RopeComponent<br/>
+    /// Default: BmGame.Default__RRope2Base.RRope2Component0
     /// </summary>
     public unsafe BmSDK.BmGame.RRope2Component RopeComponent
     {
@@ -478,7 +479,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
     }
 
     /// <summary>
-    /// IntProperty: MaxNumSplitsAllowed
+    /// IntProperty: MaxNumSplitsAllowed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MaxNumSplitsAllowed
     {
@@ -496,7 +498,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
     }
 
     /// <summary>
-    /// BoolProperty: IsRopeBatarangable
+    /// BoolProperty: IsRopeBatarangable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsRopeBatarangable
     {
@@ -568,7 +571,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
     }
 
     /// <summary>
-    /// FloatProperty: BatarangEndBufferLength
+    /// FloatProperty: BatarangEndBufferLength<br/>
+    /// Default: 32
     /// </summary>
     public unsafe float BatarangEndBufferLength
     {
@@ -613,7 +617,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangInteractionComp
+    /// ComponentProperty: BatarangInteractionComp<br/>
+    /// Default: BmGame.Default__RRope2Base.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatarangInteractionComp
     {

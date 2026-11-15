@@ -1107,7 +1107,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: WallahLevelParam
+    /// ObjectProperty: WallahLevelParam<br/>
+    /// Default: Ww_Parameters.Riot_Walla
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName WallahLevelParam
     {
@@ -1116,7 +1117,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: SuppressWalla
+    /// ObjectProperty: SuppressWalla<br/>
+    /// Default: AudibleSetups.Facts.DrivingOrTanks
     /// </summary>
     public unsafe BmSDK.Engine.AkPredicate SuppressWalla
     {
@@ -1242,7 +1244,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowDynamicActivation
+    /// BoolProperty: bAllowDynamicActivation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowDynamicActivation
     {
@@ -1431,7 +1434,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// StrProperty: GasIsActiveFlag
+    /// StrProperty: GasIsActiveFlag<br/>
+    /// Default: "GasActiveInOverworld"
     /// </summary>
     public unsafe BmSDK.FString GasIsActiveFlag
     {
@@ -1575,7 +1579,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TimeToIgnoreProximityCheckOnSpawns
+    /// FloatProperty: TimeToIgnoreProximityCheckOnSpawns<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeToIgnoreProximityCheckOnSpawns
     {
@@ -1674,7 +1679,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenFlares
+    /// FloatProperty: TimeBetweenFlares<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float TimeBetweenFlares
     {
@@ -1881,7 +1887,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: HelicopterPointOfInterestType
+    /// ByteProperty: HelicopterPointOfInterestType<br/>
+    /// Default: HPOI_Riot
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.HelicopterPointOfInterestTypes HelicopterPointOfInterestType
     {

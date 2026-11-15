@@ -435,7 +435,8 @@ public partial class RCombatMove_BatmanThrownObjectCounter : BmSDK.BmGame.RComba
     }
 
     /// <summary>
-    /// BoolProperty: bCanUpdateThrowDir
+    /// BoolProperty: bCanUpdateThrowDir<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUpdateThrowDir
     {
@@ -474,7 +475,8 @@ public partial class RCombatMove_BatmanThrownObjectCounter : BmSDK.BmGame.RComba
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 908);
 
     /// <summary>
-    /// FloatProperty: ControllerInputThreshold
+    /// FloatProperty: ControllerInputThreshold<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float ControllerInputThreshold
     {

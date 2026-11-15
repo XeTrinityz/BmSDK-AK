@@ -85,7 +85,8 @@ public partial class MaterialExpressionMagicUVs : BmSDK.Engine.MaterialExpressio
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// FloatProperty: DefaultScale
+    /// FloatProperty: DefaultScale<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float DefaultScale
     {

@@ -313,7 +313,8 @@ public partial class RRiotObjectBase : BmSDK.Engine.KAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RRiotObjectBase.sm1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -347,7 +348,8 @@ public partial class RRiotObjectBase : BmSDK.Engine.KAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ObjectParticleSystem
+    /// ComponentProperty: ObjectParticleSystem<br/>
+    /// Default: BmGame.Default__RRiotObjectBase.ROPFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ObjectParticleSystem
     {
@@ -356,7 +358,8 @@ public partial class RRiotObjectBase : BmSDK.Engine.KAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ObjectParticleSystem2
+    /// ComponentProperty: ObjectParticleSystem2<br/>
+    /// Default: BmGame.Default__RRiotObjectBase.ROPFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ObjectParticleSystem2
     {

@@ -373,7 +373,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: TunerFFWaveForm
+    /// ObjectProperty: TunerFFWaveForm<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_OmnitronPasswordCracking.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TunerFFWaveForm
     {
@@ -427,7 +428,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: ResonantTolerance
+    /// FloatProperty: ResonantTolerance<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float ResonantTolerance
     {
@@ -481,7 +483,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: TotalScoreIncreaseRate
+    /// FloatProperty: TotalScoreIncreaseRate<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float TotalScoreIncreaseRate
     {
@@ -490,7 +493,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: TotalScoreDecreaseRate
+    /// FloatProperty: TotalScoreDecreaseRate<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float TotalScoreDecreaseRate
     {
@@ -559,7 +563,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: fBootUpTime
+    /// FloatProperty: fBootUpTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fBootUpTime
     {
@@ -568,7 +573,8 @@ public partial class RSpecialMoveInstance_OmnitronPasswordCracking : BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: fShutDownTime
+    /// FloatProperty: fShutDownTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fShutDownTime
     {

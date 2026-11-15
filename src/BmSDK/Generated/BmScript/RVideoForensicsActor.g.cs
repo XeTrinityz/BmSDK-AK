@@ -202,7 +202,8 @@ public partial class RVideoForensicsActor : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: MoviePlayer
+    /// ComponentProperty: MoviePlayer<br/>
+    /// Default: BmScript.Default__RVideoForensicsActor.MoviePlayer0
     /// </summary>
     public unsafe BmSDK.BmGame.RForensicsMoviePlayer MoviePlayer
     {
@@ -211,7 +212,8 @@ public partial class RVideoForensicsActor : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: TVMeshComponent
+    /// ComponentProperty: TVMeshComponent<br/>
+    /// Default: BmScript.Default__RVideoForensicsActor.TVMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent TVMeshComponent
     {

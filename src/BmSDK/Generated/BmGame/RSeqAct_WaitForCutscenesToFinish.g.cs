@@ -139,7 +139,8 @@ public partial class RSeqAct_WaitForCutscenesToFinish : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: DelayTimer
+    /// FloatProperty: DelayTimer<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DelayTimer
     {

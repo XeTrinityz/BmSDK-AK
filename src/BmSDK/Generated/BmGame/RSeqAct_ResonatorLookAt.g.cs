@@ -111,7 +111,8 @@ public partial class RSeqAct_ResonatorLookAt : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: TransitionTime
+    /// FloatProperty: TransitionTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TransitionTime
     {
@@ -120,7 +121,8 @@ public partial class RSeqAct_ResonatorLookAt : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: CameraDuration
+    /// FloatProperty: CameraDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CameraDuration
     {

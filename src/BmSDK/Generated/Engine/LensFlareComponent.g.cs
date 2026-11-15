@@ -266,7 +266,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bAutoActivate
+    /// BoolProperty: bAutoActivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoActivate
     {
@@ -383,7 +384,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: SourceColor
+    /// StructProperty: SourceColor<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SourceColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 596);

@@ -192,7 +192,8 @@ public partial class Route : BmSDK.Engine.Info, BmSDK.Engine.EditorLinkSelection
     }
 
     /// <summary>
-    /// FloatProperty: FudgeFactor
+    /// FloatProperty: FudgeFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FudgeFactor
     {

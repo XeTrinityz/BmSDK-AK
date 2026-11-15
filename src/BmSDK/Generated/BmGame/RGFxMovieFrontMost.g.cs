@@ -946,7 +946,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: FadeNames
+    /// ArrayProperty: FadeNames<br/>
+    /// Default: ("Bats","Riddler")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> FadeNames
     {

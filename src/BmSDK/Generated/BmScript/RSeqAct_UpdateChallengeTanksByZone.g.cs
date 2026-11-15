@@ -120,7 +120,8 @@ public partial class RSeqAct_UpdateChallengeTanksByZone : BmSDK.Engine.SequenceA
     }
 
     /// <summary>
-    /// IntProperty: MaxTanksInZone
+    /// IntProperty: MaxTanksInZone<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxTanksInZone
     {

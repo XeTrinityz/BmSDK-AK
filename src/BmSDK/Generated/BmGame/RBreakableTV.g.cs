@@ -232,7 +232,8 @@ public partial class RBreakableTV : BmSDK.BmGame.RTakeoverVideoScreenBase, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: MaterialIndex
+    /// IntProperty: MaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaterialIndex
     {

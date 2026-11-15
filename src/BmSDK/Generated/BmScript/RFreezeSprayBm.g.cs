@@ -254,7 +254,8 @@ public partial class RFreezeSprayBm : BmSDK.BmGame.RFreezeSpray, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: HandDryIce
+    /// ComponentProperty: HandDryIce<br/>
+    /// Default: BmScript.Default__RFreezeSprayBm.DryIceEffect
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HandDryIce
     {
@@ -263,13 +264,15 @@ public partial class RFreezeSprayBm : BmSDK.BmGame.RFreezeSpray, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: HandDryIceOffset
+    /// StructProperty: HandDryIceOffset<br/>
+    /// Default: (Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HandDryIceOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2712);
 
     /// <summary>
-    /// ObjectProperty: NVHandDryIceParticleSystem
+    /// ObjectProperty: NVHandDryIceParticleSystem<br/>
+    /// Default: VFX_Gadgets.FreezeBlast.DryIce
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem NVHandDryIceParticleSystem
     {

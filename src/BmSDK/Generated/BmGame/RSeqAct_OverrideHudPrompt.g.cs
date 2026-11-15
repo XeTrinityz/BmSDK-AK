@@ -106,7 +106,8 @@ public partial class RSeqAct_OverrideHudPrompt : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// StrProperty: OverridePromptText
+    /// StrProperty: OverridePromptText<br/>
+    /// Default: "Frontend.HelpText.LoseHelicopter"
     /// </summary>
     public unsafe BmSDK.FString OverridePromptText
     {
@@ -124,7 +125,8 @@ public partial class RSeqAct_OverrideHudPrompt : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OverrideScreenDuration
+    /// FloatProperty: OverrideScreenDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float OverrideScreenDuration
     {

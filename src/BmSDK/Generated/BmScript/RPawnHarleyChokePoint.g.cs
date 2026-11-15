@@ -476,7 +476,8 @@ public partial class RPawnHarleyChokePoint : BmSDK.BmGame.RPawnHarleyChokePointB
     }
 
     /// <summary>
-    /// FloatProperty: minTimeBetweenJammerOutputTriggering
+    /// FloatProperty: minTimeBetweenJammerOutputTriggering<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float minTimeBetweenJammerOutputTriggering
     {

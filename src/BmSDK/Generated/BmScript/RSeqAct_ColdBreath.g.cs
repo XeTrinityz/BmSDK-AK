@@ -140,7 +140,8 @@ public partial class RSeqAct_ColdBreath : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: BreathFX
+    /// ComponentProperty: BreathFX<br/>
+    /// Default: BmScript.Default__RSeqAct_ColdBreath.BreathEffect
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BreathFX
     {

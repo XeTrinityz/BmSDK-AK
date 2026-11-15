@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: SmashRadius
+    /// FloatProperty: SmashRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SmashRadius
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MinShockwaveRadius
+    /// FloatProperty: MinShockwaveRadius<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MinShockwaveRadius
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MaxShockwaveRadius
+    /// FloatProperty: MaxShockwaveRadius<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float MaxShockwaveRadius
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: ShockwaveRadiusPower
+    /// FloatProperty: ShockwaveRadiusPower<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShockwaveRadiusPower
     {
@@ -115,7 +119,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: ShockwaveForce
+    /// FloatProperty: ShockwaveForce<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ShockwaveForce
     {
@@ -124,7 +129,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: ShockwaveTan
+    /// FloatProperty: ShockwaveTan<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShockwaveTan
     {
@@ -133,7 +139,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: ShockwaveUpgradeDelay
+    /// FloatProperty: ShockwaveUpgradeDelay<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float ShockwaveUpgradeDelay
     {
@@ -178,7 +185,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ObjectProperty: Rumble
+    /// ObjectProperty: Rumble<br/>
+    /// Default: BmScript.Default__RSpecialMoveConfig_ShockwaveLand.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform Rumble
     {
@@ -187,7 +195,8 @@ public partial class RSpecialMoveConfig_ShockwaveLand : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: ShockwaveFXRadius
+    /// FloatProperty: ShockwaveFXRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ShockwaveFXRadius
     {

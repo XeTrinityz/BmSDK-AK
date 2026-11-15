@@ -79,7 +79,8 @@ public partial class RBlockingCylinder : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: BmGame.Default__RBlockingCylinder.DrawCylinder0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent
     {
@@ -88,7 +89,8 @@ public partial class RBlockingCylinder : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: BmGame.Default__RBlockingCylinder.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {

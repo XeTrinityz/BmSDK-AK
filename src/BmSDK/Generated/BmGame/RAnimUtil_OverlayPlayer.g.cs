@@ -354,7 +354,8 @@ public partial class RAnimUtil_OverlayPlayer : BmSDK.GameObject, BmSDK.IGameObje
     public partial record struct FOverlayId
     {
         /// <summary>
-        /// IntProperty: PlayerID
+        /// IntProperty: PlayerID<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int PlayerID
         {
@@ -363,7 +364,8 @@ public partial class RAnimUtil_OverlayPlayer : BmSDK.GameObject, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// IntProperty: AnimId
+        /// IntProperty: AnimId<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int AnimId
         {

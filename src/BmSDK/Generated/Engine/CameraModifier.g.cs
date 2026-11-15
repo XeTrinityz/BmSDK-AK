@@ -303,7 +303,8 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: Priority
+    /// ByteProperty: Priority<br/>
+    /// Default: 127
     /// </summary>
     public unsafe byte Priority
     {

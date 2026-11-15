@@ -359,7 +359,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// BoolProperty: AlertLeadVehicleWhenSeenBatman
+    /// BoolProperty: AlertLeadVehicleWhenSeenBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlertLeadVehicleWhenSeenBatman
     {
@@ -368,7 +369,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// BoolProperty: AllowShoot
+    /// BoolProperty: AllowShoot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowShoot
     {
@@ -395,7 +397,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// BoolProperty: PassengersRunAfterDeathExit
+    /// BoolProperty: PassengersRunAfterDeathExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PassengersRunAfterDeathExit
     {
@@ -422,7 +425,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetBase
+    /// FloatProperty: FollowOffsetBase<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float FollowOffsetBase
     {
@@ -431,7 +435,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetExtra
+    /// FloatProperty: FollowOffsetExtra<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FollowOffsetExtra
     {
@@ -440,7 +445,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: MaxAttackPlayerRange
+    /// FloatProperty: MaxAttackPlayerRange<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float MaxAttackPlayerRange
     {

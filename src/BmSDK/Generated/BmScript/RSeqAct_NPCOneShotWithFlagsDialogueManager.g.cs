@@ -177,7 +177,8 @@ public partial class RSeqAct_NPCOneShotWithFlagsDialogueManager : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenDialogueMin
+    /// FloatProperty: timeBetweenDialogueMin<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float timeBetweenDialogueMin
     {
@@ -186,7 +187,8 @@ public partial class RSeqAct_NPCOneShotWithFlagsDialogueManager : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenDialogueMax
+    /// FloatProperty: timeBetweenDialogueMax<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float timeBetweenDialogueMax
     {
@@ -204,7 +206,8 @@ public partial class RSeqAct_NPCOneShotWithFlagsDialogueManager : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: BRandom
+    /// BoolProperty: BRandom<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BRandom
     {
@@ -213,7 +216,8 @@ public partial class RSeqAct_NPCOneShotWithFlagsDialogueManager : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: bLoop
+    /// BoolProperty: bLoop<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLoop
     {

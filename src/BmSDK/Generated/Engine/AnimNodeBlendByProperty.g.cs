@@ -115,7 +115,8 @@ public partial class AnimNodeBlendByProperty : BmSDK.Engine.AnimNodeBlendList, B
     }
 
     /// <summary>
-    /// BoolProperty: bSynchronizeNodesInEditor
+    /// BoolProperty: bSynchronizeNodesInEditor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSynchronizeNodesInEditor
     {
@@ -169,7 +170,8 @@ public partial class AnimNodeBlendByProperty : BmSDK.Engine.AnimNodeBlendList, B
     }
 
     /// <summary>
-    /// FloatProperty: BlendTime
+    /// FloatProperty: BlendTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BlendTime
     {
@@ -187,7 +189,8 @@ public partial class AnimNodeBlendByProperty : BmSDK.Engine.AnimNodeBlendList, B
     }
 
     /// <summary>
-    /// FloatProperty: FloatPropMax
+    /// FloatProperty: FloatPropMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FloatPropMax
     {
@@ -196,7 +199,8 @@ public partial class AnimNodeBlendByProperty : BmSDK.Engine.AnimNodeBlendList, B
     }
 
     /// <summary>
-    /// FloatProperty: BlendToChild1Time
+    /// FloatProperty: BlendToChild1Time<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BlendToChild1Time
     {
@@ -205,7 +209,8 @@ public partial class AnimNodeBlendByProperty : BmSDK.Engine.AnimNodeBlendList, B
     }
 
     /// <summary>
-    /// FloatProperty: BlendToChild2Time
+    /// FloatProperty: BlendToChild2Time<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BlendToChild2Time
     {

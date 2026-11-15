@@ -142,7 +142,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetVehiclePopulations
+    /// BoolProperty: bSetVehiclePopulations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetVehiclePopulations
     {
@@ -151,7 +152,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetDronePopulation
+    /// BoolProperty: bSetDronePopulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetDronePopulation
     {
@@ -160,7 +162,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetHumveePopulation
+    /// BoolProperty: bSetHumveePopulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetHumveePopulation
     {
@@ -196,7 +199,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetVehiclePopulation
+    /// BoolProperty: bSetVehiclePopulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetVehiclePopulation
     {
@@ -205,7 +209,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetRiotPopulation
+    /// BoolProperty: bSetRiotPopulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetRiotPopulation
     {
@@ -214,7 +219,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: bSetVehicleFormations
+    /// BoolProperty: bSetVehicleFormations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetVehicleFormations
     {
@@ -241,7 +247,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: PostGasRiotSpawnPercentage
+    /// FloatProperty: PostGasRiotSpawnPercentage<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PostGasRiotSpawnPercentage
     {
@@ -250,7 +257,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: NumThugsWantToFightFromRiotMin
+    /// IntProperty: NumThugsWantToFightFromRiotMin<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int NumThugsWantToFightFromRiotMin
     {
@@ -259,7 +267,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: NumThugsWantToFightFromRiotMax
+    /// IntProperty: NumThugsWantToFightFromRiotMax<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int NumThugsWantToFightFromRiotMax
     {
@@ -268,7 +277,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: MaximumNonRiotThugsAllowedToFight
+    /// IntProperty: MaximumNonRiotThugsAllowedToFight<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaximumNonRiotThugsAllowedToFight
     {
@@ -295,7 +305,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// StructProperty: WandererData
+    /// StructProperty: WandererData<br/>
+    /// Default: (MaxWanderingGroups=3)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSeqAct_SetRandomPopulationBase.FWanderingData WandererData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSeqAct_SetRandomPopulationBase.FWanderingData>(Ptr + 384);
@@ -307,7 +318,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSeqAct_SetRandomPopulationBase.FRiotWeapons>(Ptr + 392);
 
     /// <summary>
-    /// IntProperty: PercChanceWanderersHaveAWeapon
+    /// IntProperty: PercChanceWanderersHaveAWeapon<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int PercChanceWanderersHaveAWeapon
     {
@@ -370,7 +382,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: WarmUpVehiclePopulationTime
+    /// FloatProperty: WarmUpVehiclePopulationTime<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float WarmUpVehiclePopulationTime
     {
@@ -379,7 +392,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: MaxVehicleScenarios
+    /// IntProperty: MaxVehicleScenarios<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int MaxVehicleScenarios
     {
@@ -388,7 +402,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: MaxMilitaryScenarios
+    /// IntProperty: MaxMilitaryScenarios<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxMilitaryScenarios
     {
@@ -397,7 +412,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: TotalMilitaryPopulation
+    /// IntProperty: TotalMilitaryPopulation<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int TotalMilitaryPopulation
     {
@@ -415,7 +431,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: TotalHumveePopulation
+    /// IntProperty: TotalHumveePopulation<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int TotalHumveePopulation
     {
@@ -442,7 +459,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: MaxDroneThreatLevel
+    /// IntProperty: MaxDroneThreatLevel<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxDroneThreatLevel
     {
@@ -460,7 +478,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenAPCsWhenSeen
+    /// FloatProperty: TimeBetweenAPCsWhenSeen<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float TimeBetweenAPCsWhenSeen
     {
@@ -469,7 +488,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenAPCsWhenDestroyed
+    /// FloatProperty: TimeBetweenAPCsWhenDestroyed<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float TimeBetweenAPCsWhenDestroyed
     {
@@ -545,7 +565,8 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     public partial record struct FWanderingData
     {
         /// <summary>
-        /// FloatProperty: MaxWanderingGroups
+        /// FloatProperty: MaxWanderingGroups<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float MaxWanderingGroups
         {

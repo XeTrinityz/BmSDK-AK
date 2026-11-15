@@ -79,37 +79,43 @@ public partial class RParticleModuleLocationSphereSection : BmSDK.Engine.Particl
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: RadiusMin
+    /// StructProperty: RadiusMin<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(75,75,75,75),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionRadiusMin)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat RadiusMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);
 
     /// <summary>
-    /// StructProperty: RadiusMax
+    /// StructProperty: RadiusMax<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(100,100,100,100),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionRadiusMax)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat RadiusMax
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 132);
 
     /// <summary>
-    /// StructProperty: ThetaMin
+    /// StructProperty: ThetaMin<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionThetaMin)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat ThetaMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: ThetaMax
+    /// StructProperty: ThetaMax<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(90,90,90,90),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionThetaMax)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat ThetaMax
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 204);
 
     /// <summary>
-    /// StructProperty: PhiMin
+    /// StructProperty: PhiMin<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionPhiMin)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat PhiMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: PhiMax
+    /// StructProperty: PhiMax<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(90,90,90,90),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionPhiMax)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat PhiMax
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 276);
@@ -124,7 +130,8 @@ public partial class RParticleModuleLocationSphereSection : BmSDK.Engine.Particl
     }
 
     /// <summary>
-    /// StructProperty: VelocityScale
+    /// StructProperty: VelocityScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__RParticleModuleLocationSphereSection.DistributionVelocityScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat VelocityScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 316);

@@ -326,7 +326,8 @@ public partial class RCombatMove_NightwingGroupElectrify : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// ObjectProperty: BeamTemplate
+    /// ObjectProperty: BeamTemplate<br/>
+    /// Default: VFX_Gadgets.magnet.MagnetBeam_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BeamTemplate
     {
@@ -335,7 +336,8 @@ public partial class RCombatMove_NightwingGroupElectrify : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// ObjectProperty: BeamEndPointTemplate
+    /// ObjectProperty: BeamEndPointTemplate<br/>
+    /// Default: VFX_Gadgets.magnet.BeamImpact_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BeamEndPointTemplate
     {

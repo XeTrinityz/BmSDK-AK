@@ -90,7 +90,8 @@ public partial class ParticleModuleLocationPrimitiveCylinder : BmSDK.Engine.Part
     }
 
     /// <summary>
-    /// BoolProperty: RadialVelocity
+    /// BoolProperty: RadialVelocity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RadialVelocity
     {
@@ -108,19 +109,22 @@ public partial class ParticleModuleLocationPrimitiveCylinder : BmSDK.Engine.Part
     }
 
     /// <summary>
-    /// StructProperty: StartRadius
+    /// StructProperty: StartRadius<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(50,50,50,50),Distribution=Engine.Default__ParticleModuleLocationPrimitiveCylinder.DistributionStartRadius)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartRadius
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 204);
 
     /// <summary>
-    /// StructProperty: StartHeight
+    /// StructProperty: StartHeight<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(50,50,50,50),Distribution=Engine.Default__ParticleModuleLocationPrimitiveCylinder.DistributionStartHeight)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartHeight
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 240);
 
     /// <summary>
-    /// ByteProperty: HeightAxis
+    /// ByteProperty: HeightAxis<br/>
+    /// Default: PMLPC_HEIGHTAXIS_Z
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModuleLocationPrimitiveCylinder.CylinderHeightAxis HeightAxis
     {

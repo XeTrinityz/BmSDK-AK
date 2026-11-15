@@ -443,7 +443,8 @@ public partial class RPred_MuseumBoothReactionPointBase : BmSDK.Engine.Actor, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 692);
 
     /// <summary>
-    /// BoolProperty: bCanBeTriggeredByRemoteControl
+    /// BoolProperty: bCanBeTriggeredByRemoteControl<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTriggeredByRemoteControl
     {
@@ -461,7 +462,8 @@ public partial class RPred_MuseumBoothReactionPointBase : BmSDK.Engine.Actor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: RemoteControlCoolDownTime
+    /// FloatProperty: RemoteControlCoolDownTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RemoteControlCoolDownTime
     {

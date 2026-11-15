@@ -250,7 +250,8 @@ public partial class RHudModuleBoss : BmSDK.BmGame.RHudModule, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrentHealthProportion
+    /// FloatProperty: CurrentHealthProportion<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentHealthProportion
     {
@@ -259,7 +260,8 @@ public partial class RHudModuleBoss : BmSDK.BmGame.RHudModule, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FlashHealthBarIfLowerThan
+    /// FloatProperty: FlashHealthBarIfLowerThan<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FlashHealthBarIfLowerThan
     {

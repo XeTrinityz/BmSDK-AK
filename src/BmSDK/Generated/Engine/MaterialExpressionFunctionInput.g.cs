@@ -100,7 +100,8 @@ public partial class MaterialExpressionFunctionInput : BmSDK.Engine.MaterialExpr
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// StrProperty: InputName
+    /// StrProperty: InputName<br/>
+    /// Default: "In"
     /// </summary>
     public unsafe BmSDK.FString InputName
     {
@@ -124,7 +125,8 @@ public partial class MaterialExpressionFunctionInput : BmSDK.Engine.MaterialExpr
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 256);
 
     /// <summary>
-    /// ByteProperty: InputType
+    /// ByteProperty: InputType<br/>
+    /// Default: FunctionInput_Vector3
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionFunctionInput.EFunctionInputType InputType
     {
@@ -133,7 +135,8 @@ public partial class MaterialExpressionFunctionInput : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// StructProperty: PreviewValue
+    /// StructProperty: PreviewValue<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 PreviewValue
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 288);
@@ -148,7 +151,8 @@ public partial class MaterialExpressionFunctionInput : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// BoolProperty: bCompilingFunctionPreview
+    /// BoolProperty: bCompilingFunctionPreview<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCompilingFunctionPreview
     {

@@ -133,7 +133,8 @@ public partial class RSeqEvent_BreakablePropDamage : BmSDK.Engine.SequenceEvent,
     }
 
     /// <summary>
-    /// BoolProperty: bActivateOnAnyLaterStage
+    /// BoolProperty: bActivateOnAnyLaterStage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActivateOnAnyLaterStage
     {

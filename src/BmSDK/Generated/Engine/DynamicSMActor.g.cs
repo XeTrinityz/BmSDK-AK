@@ -225,7 +225,8 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: Engine.Default__DynamicSMActor.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -270,7 +271,8 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bPawnCanBaseOn
+    /// BoolProperty: bPawnCanBaseOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPawnCanBaseOn
     {
@@ -288,7 +290,8 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bGoIntoStasisWhenHidden
+    /// BoolProperty: bGoIntoStasisWhenHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGoIntoStasisWhenHidden
     {
@@ -360,7 +363,8 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 748);
 
     /// <summary>
-    /// ByteProperty: JumpOffPawnDirectionMask
+    /// ByteProperty: JumpOffPawnDirectionMask<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte JumpOffPawnDirectionMask
     {
@@ -369,7 +373,8 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MinImpactVelocityForImpactEffect
+    /// FloatProperty: MinImpactVelocityForImpactEffect<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinImpactVelocityForImpactEffect
     {

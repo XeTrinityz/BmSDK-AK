@@ -2583,7 +2583,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: APCSideStoryScenarioInfo
+        /// StructProperty: APCSideStoryScenarioInfo<br/>
+        /// Default: (MaxActiveInstances=-1,bUseMaxInstances=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RGameInfo.FVehicleScenarioInfo APCSideStoryScenarioInfo
         {
@@ -2956,7 +2957,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StrProperty: JokerVideoProgressName
+        /// StrProperty: JokerVideoProgressName<br/>
+        /// Default: "A"
         /// </summary>
         public unsafe BmSDK.FString JokerVideoProgressName
         {
@@ -3616,7 +3618,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: InstallChunkRequired
+    /// ByteProperty: InstallChunkRequired<br/>
+    /// Default: InstallChunk_SelectNewGame
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EInstallChunk InstallChunkRequired
     {
@@ -3679,7 +3682,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: VideoRecordStatus
+    /// ByteProperty: VideoRecordStatus<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte VideoRecordStatus
     {
@@ -3697,7 +3701,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: GlideTutorialStageGlide
+    /// ByteProperty: GlideTutorialStageGlide<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte GlideTutorialStageGlide
     {
@@ -3706,7 +3711,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: GlideTutorialStageSteer
+    /// ByteProperty: GlideTutorialStageSteer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe byte GlideTutorialStageSteer
     {
@@ -3715,7 +3721,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: GlideTutorialStageDive
+    /// ByteProperty: GlideTutorialStageDive<br/>
+    /// Default: 4
     /// </summary>
     public unsafe byte GlideTutorialStageDive
     {
@@ -5578,7 +5585,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SaveGameChapter
+    /// IntProperty: SaveGameChapter<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SaveGameChapter
     {
@@ -5587,7 +5595,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SaveGameIndex
+    /// IntProperty: SaveGameIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SaveGameIndex
     {
@@ -5596,7 +5605,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Description
+    /// StrProperty: Description<br/>
+    /// Default: "&lt;BLANK DESC&gt;"
     /// </summary>
     public unsafe BmSDK.FString Description
     {
@@ -5605,7 +5615,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StorySynopsis
+    /// ArrayProperty: StorySynopsis<br/>
+    /// Default: (0)
     /// </summary>
     public unsafe BmSDK.TArray<int> StorySynopsis
     {
@@ -5641,7 +5652,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PrimaryObjective
+    /// StrProperty: PrimaryObjective<br/>
+    /// Default: "&lt;BLANK OBJECTIVE&gt;"
     /// </summary>
     public unsafe BmSDK.FString PrimaryObjective
     {
@@ -5713,7 +5725,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CurrentGadgetName
+    /// NameProperty: CurrentGadgetName<br/>
+    /// Default: RHarpoonGunBm
     /// </summary>
     public unsafe BmSDK.FName CurrentGadgetName
     {
@@ -5755,7 +5768,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PlayerHealth
+    /// IntProperty: PlayerHealth<br/>
+    /// Default: 100000
     /// </summary>
     public unsafe int PlayerHealth
     {
@@ -5764,7 +5778,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BallisticArmour
+    /// IntProperty: BallisticArmour<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BallisticArmour
     {
@@ -5773,7 +5788,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MeleeArmour
+    /// IntProperty: MeleeArmour<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MeleeArmour
     {
@@ -5782,7 +5798,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CWBallisticArmour
+    /// IntProperty: CWBallisticArmour<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CWBallisticArmour
     {
@@ -5791,7 +5808,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CWMeleeArmour
+    /// IntProperty: CWMeleeArmour<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CWMeleeArmour
     {
@@ -5800,7 +5818,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BatmobileHealth
+    /// IntProperty: BatmobileHealth<br/>
+    /// Default: 100000
     /// </summary>
     public unsafe int BatmobileHealth
     {
@@ -5818,7 +5837,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ButtonBashDDA
+    /// FloatProperty: ButtonBashDDA<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float ButtonBashDDA
     {
@@ -5836,7 +5856,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_Counter
+    /// IntProperty: HelpPromptCount_Counter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_Counter
     {
@@ -5854,7 +5875,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_Takedown
+    /// IntProperty: HelpPromptCount_Takedown<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_Takedown
     {
@@ -5890,7 +5912,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_ComboBatarang
+    /// IntProperty: HelpPromptCount_ComboBatarang<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_ComboBatarang
     {
@@ -6007,7 +6030,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_GrappleInOW
+    /// IntProperty: HelpPromptCount_GrappleInOW<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_GrappleInOW
     {
@@ -6025,7 +6049,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_GrappleBoost
+    /// IntProperty: HelpPromptCount_GrappleBoost<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_GrappleBoost
     {
@@ -6034,7 +6059,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HelpPromptCount_RaftCancel
+    /// IntProperty: HelpPromptCount_RaftCancel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HelpPromptCount_RaftCancel
     {
@@ -6062,12 +6088,14 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 872);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=30)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 884);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=5)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 896);
@@ -6077,47 +6105,56 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 908);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=15)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 920);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=10)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 932);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=3)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 944);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=5)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_7
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 956);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=10)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_8
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 968);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=30)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_9
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 980);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=4)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_10
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 992);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=5)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_11
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 1004);
     /// <summary>
-    /// StructProperty: HelpPrompt_BatmobileDriveTutorial
+    /// StructProperty: HelpPrompt_BatmobileDriveTutorial<br/>
+    /// Default: (TimeOut=3)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection HelpPrompt_BatmobileDriveTutorial_12
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FBatmobileDriveTutorialSection>(Ptr + 1016);
@@ -6176,7 +6213,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1108); }
     }
     /// <summary>
-    /// StrProperty: BatmobileTutorialFlagToSetWhenComplete
+    /// StrProperty: BatmobileTutorialFlagToSetWhenComplete<br/>
+    /// Default: "Batmobile_Eject_Tutorial_Complete"
     /// </summary>
     public unsafe BmSDK.FString BatmobileTutorialFlagToSetWhenComplete_6
     {
@@ -6332,7 +6370,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PygSearchDialogueIndex
+    /// IntProperty: PygSearchDialogueIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int PygSearchDialogueIndex
     {
@@ -6341,7 +6380,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PenguinSuspendDialogueIndex
+    /// IntProperty: PenguinSuspendDialogueIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int PenguinSuspendDialogueIndex
     {
@@ -6350,7 +6390,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: InterrogationIndexes
+    /// ArrayProperty: InterrogationIndexes<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> InterrogationIndexes
     {
@@ -6386,7 +6427,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NumInterrogationPerDistrict
+    /// ArrayProperty: NumInterrogationPerDistrict<br/>
+    /// Default: (0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumInterrogationPerDistrict
     {
@@ -6395,7 +6437,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NumInterrogationPerDistrictCh9
+    /// ArrayProperty: NumInterrogationPerDistrictCh9<br/>
+    /// Default: (0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumInterrogationPerDistrictCh9
     {
@@ -6422,7 +6465,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MapTapeCharactersToBioCharacters
+    /// ArrayProperty: MapTapeCharactersToBioCharacters<br/>
+    /// Default: (BioCharacter_MAX,BioCharacter_Simon_Stagg,BioCharacter_Harley_Quinn,BioCharacter_Arkham_Knight,BioCharacter_Riddler,BioCharacter_Scarecrow,BioCharacter_Penguin,BioCharacter_Professor_Pyg,BioCharacter...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.EBioCharacter> MapTapeCharactersToBioCharacters
     {
@@ -6431,7 +6475,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Bio_LocIndexs
+    /// ArrayProperty: Bio_LocIndexs<br/>
+    /// Default: (0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> Bio_LocIndexs
     {
@@ -6455,7 +6500,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1400);
 
     /// <summary>
-    /// ArrayProperty: CustomWaypoint
+    /// ArrayProperty: CustomWaypoint<br/>
+    /// Default: (0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> CustomWaypoint
     {
@@ -6491,7 +6537,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ObjectiveStyle
+    /// StrProperty: ObjectiveStyle<br/>
+    /// Default: "OS_Scarecrow"
     /// </summary>
     public unsafe BmSDK.FString ObjectiveStyle
     {
@@ -6527,7 +6574,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: PlayableCharacter
+    /// NameProperty: PlayableCharacter<br/>
+    /// Default: Playable_Batman
     /// </summary>
     public unsafe BmSDK.FName PlayableCharacter
     {
@@ -6536,7 +6584,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: PlayableBatmobile
+    /// NameProperty: PlayableBatmobile<br/>
+    /// Default: Playable_Batmobile
     /// </summary>
     public unsafe BmSDK.FName PlayableBatmobile
     {
@@ -6545,7 +6594,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BullyEncounters_Active
+    /// ArrayProperty: BullyEncounters_Active<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> BullyEncounters_Active
     {
@@ -6554,7 +6604,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BullyEncounters_Completed
+    /// ArrayProperty: BullyEncounters_Completed<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> BullyEncounters_Completed
     {
@@ -6563,7 +6614,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BullyEncounters_JackRyder_Active
+    /// ArrayProperty: BullyEncounters_JackRyder_Active<br/>
+    /// Default: (0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> BullyEncounters_JackRyder_Active
     {
@@ -6572,7 +6624,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BullyEncounters_JackRyder_Completed
+    /// ArrayProperty: BullyEncounters_JackRyder_Completed<br/>
+    /// Default: (0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> BullyEncounters_JackRyder_Completed
     {
@@ -6824,7 +6877,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: TutInfo
+    /// ArrayProperty: TutInfo<br/>
+    /// Default: ((),(bPlayerActivated=1,ActionsRequired=5),(bPlayerActivated=1,ActionsRequired=4),(ActionsRequired=2),(ActionsRequired=2),(ActionsRequired=3),(ActionsRequired=1),(ActionsRequired=3),(ActionsRequired=2...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPersistentData.FTutorialInfoNew> TutInfo
     {
@@ -6833,7 +6887,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: AutomaticCombatTutorials
+    /// ArrayProperty: AutomaticCombatTutorials<br/>
+    /// Default: (TUT_Combat_Strike,TUT_Combat_Counter,TUT_Combat_Evade,TUT_Combat_BladeComboCounter,TUT_Combat_Beatdown,TUT_Combat_AerialAttack,TUT_Combat_DirectedAerialAttack,TUT_Combat_Takedown,TUT_Combat_GroundTak...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPersistentData.ETutorialType> AutomaticCombatTutorials
     {
@@ -6842,7 +6897,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: HighPriorityDesignTutorials
+    /// ArrayProperty: HighPriorityDesignTutorials<br/>
+    /// Default: (TUT_Thug_Knife,TUT_Thug_Shield,TUT_Thug_Armoured,TUT_Thug_MultiStage,TUT_Thug_StunStick,TUT_MedicBuff)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPersistentData.ETutorialType> HighPriorityDesignTutorials
     {
@@ -6878,7 +6934,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantPriorities__OW_A
+    /// ArrayProperty: informantPriorities__OW_A<br/>
+    /// Default: (-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantPriorities__OW_A
     {
@@ -6887,7 +6944,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantPriorities__OW_C
+    /// ArrayProperty: informantPriorities__OW_C<br/>
+    /// Default: (-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantPriorities__OW_C
     {
@@ -6896,7 +6954,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantPriorities__OW_E
+    /// ArrayProperty: informantPriorities__OW_E<br/>
+    /// Default: (-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantPriorities__OW_E
     {
@@ -6905,7 +6964,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantMaintainPriority__OW_A
+    /// ArrayProperty: informantMaintainPriority__OW_A<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantMaintainPriority__OW_A
     {
@@ -6914,7 +6974,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantMaintainPriority__OW_C
+    /// ArrayProperty: informantMaintainPriority__OW_C<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantMaintainPriority__OW_C
     {
@@ -6923,7 +6984,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: informantMaintainPriority__OW_E
+    /// ArrayProperty: informantMaintainPriority__OW_E<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> informantMaintainPriority__OW_E
     {
@@ -6932,7 +6994,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: lastChapterSeenByInformantManager
+    /// IntProperty: lastChapterSeenByInformantManager<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int lastChapterSeenByInformantManager
     {
@@ -7051,7 +7114,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: JokerRooftopSideStoryDialogueIndexNew
+    /// ArrayProperty: JokerRooftopSideStoryDialogueIndexNew<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> JokerRooftopSideStoryDialogueIndexNew
     {
@@ -7228,7 +7292,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: APCInfo
+    /// StructProperty: APCInfo<br/>
+    /// Default: (APCSideStoryScenarioInfo=(MaxActiveInstances=-1,bUseMaxInstances=1))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPersistentData.FAPCSideStoryInfo APCInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentData.FAPCSideStoryInfo>(Ptr + 2996);
@@ -7252,7 +7317,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: MW_DLC_Tutorial
+    /// ByteProperty: MW_DLC_Tutorial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte MW_DLC_Tutorial
     {
@@ -7261,7 +7327,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: AR_DLC_Tutorial
+    /// ByteProperty: AR_DLC_Tutorial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte AR_DLC_Tutorial
     {
@@ -7291,7 +7358,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3176);
 
     /// <summary>
-    /// ArrayProperty: PersistentLevelNames
+    /// ArrayProperty: PersistentLevelNames<br/>
+    /// Default: (OW,Court,Church,Steel,Museum,Under,GCPD,Riddler,IvyLair,CW,Zsasz,Nora,MadHatter,BaneSS,Hush)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PersistentLevelNames
     {

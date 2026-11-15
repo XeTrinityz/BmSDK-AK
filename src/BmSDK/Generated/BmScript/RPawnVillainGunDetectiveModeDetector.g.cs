@@ -364,7 +364,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: DMDMesh
+    /// ObjectProperty: DMDMesh<br/>
+    /// Default: detective_mode_jammer.detective_mode_jammer
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh DMDMesh
     {
@@ -373,7 +374,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: DMDPhysicsAsset
+    /// ObjectProperty: DMDPhysicsAsset<br/>
+    /// Default: detective_mode_jammer.Detective_Mode_Jammer_Physics
     /// </summary>
     public unsafe BmSDK.Engine.PhysicsAsset DMDPhysicsAsset
     {
@@ -382,7 +384,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplosionVFX
+    /// ObjectProperty: JammedExplosionVFX<br/>
+    /// Default: FFX_Combat.Particles.Destroy.DND_Electrical_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JammedExplosionVFX
     {
@@ -391,7 +394,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplodeEvent
+    /// ObjectProperty: JammedExplodeEvent<br/>
+    /// Default: Ww_NPC_Electrocute.Play_NPC_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammedExplodeEvent
     {
@@ -400,7 +404,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: DisruptedDMDXrayMIC
+    /// ObjectProperty: DisruptedDMDXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant DisruptedDMDXrayMIC
     {
@@ -409,7 +414,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ObjectProperty: NormalDMDXrayMIC
+    /// ObjectProperty: NormalDMDXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant NormalDMDXrayMIC
     {
@@ -418,7 +424,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// ComponentProperty: FXComp
+    /// ComponentProperty: FXComp<br/>
+    /// Default: BmScript.Default__RPawnVillainGunDetectiveModeDetector.FXComponent
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FXComp
     {
@@ -436,19 +443,22 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// StructProperty: DMDPropScale
+    /// StructProperty: DMDPropScale<br/>
+    /// Default: (X=0.55,Y=2,Z=0.8)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DMDPropScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6872);
 
     /// <summary>
-    /// StructProperty: DMDAttachToBodyOffset
+    /// StructProperty: DMDAttachToBodyOffset<br/>
+    /// Default: (X=15,Z=-10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DMDAttachToBodyOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6884);
 
     /// <summary>
-    /// StructProperty: DMDAttachToBodyRotation
+    /// StructProperty: DMDAttachToBodyRotation<br/>
+    /// Default: (Yaw=16384,Roll=-16384)
     /// </summary>
     public unsafe ref BmSDK.Rotator DMDAttachToBodyRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 6896);
@@ -472,7 +482,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// NameProperty: nHandBoneToAttachDetectorTo
+    /// NameProperty: nHandBoneToAttachDetectorTo<br/>
+    /// Default: Gundummy02
     /// </summary>
     public unsafe BmSDK.FName nHandBoneToAttachDetectorTo
     {
@@ -481,7 +492,8 @@ public partial class RPawnVillainGunDetectiveModeDetector : BmSDK.BmScript.RPawn
     }
 
     /// <summary>
-    /// NameProperty: nBeltBoneToAttachDetectorTo
+    /// NameProperty: nBeltBoneToAttachDetectorTo<br/>
+    /// Default: Bip01_L_Thigh
     /// </summary>
     public unsafe BmSDK.FName nBeltBoneToAttachDetectorTo
     {

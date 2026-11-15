@@ -140,7 +140,8 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: StaticDecal
+    /// BoolProperty: StaticDecal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StaticDecal
     {
@@ -149,7 +150,8 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// ByteProperty: DecalPriority
+    /// ByteProperty: DecalPriority<br/>
+    /// Default: DP_Default
     /// </summary>
     public unsafe BmSDK.GameObject.EDecalPriority DecalPriority
     {
@@ -239,13 +241,15 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: UVScaleOffset
+    /// StructProperty: UVScaleOffset<br/>
+    /// Default: (X=1,Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 UVScaleOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 800);
 
     /// <summary>
-    /// StructProperty: DynamicParameter
+    /// StructProperty: DynamicParameter<br/>
+    /// Default: (X=1,Y=1,Z=1,W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 DynamicParameter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 816);

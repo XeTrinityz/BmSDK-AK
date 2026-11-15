@@ -135,7 +135,8 @@ public partial class NavMeshPath_MinDistBetweenSpecsOfType : BmSDK.Engine.NavMes
     }
 
     /// <summary>
-    /// FloatProperty: Penalty
+    /// FloatProperty: Penalty<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float Penalty
     {

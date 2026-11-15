@@ -460,7 +460,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: SceneClientClass
+    /// ClassProperty: SceneClientClass<br/>
+    /// Default: Engine.GameUISceneClient
     /// </summary>
     public unsafe BmSDK.Class SceneClientClass
     {
@@ -469,7 +470,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: UIManagerClass
+    /// ClassProperty: UIManagerClass<br/>
+    /// Default: Engine.UIManager
     /// </summary>
     public unsafe BmSDK.Class UIManagerClass
     {
@@ -496,7 +498,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UIJoystickDeadZone
+    /// FloatProperty: UIJoystickDeadZone<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float UIJoystickDeadZone
     {
@@ -505,7 +508,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UIAxisMultiplier
+    /// FloatProperty: UIAxisMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UIAxisMultiplier
     {
@@ -514,7 +518,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AxisRepeatDelay
+    /// FloatProperty: AxisRepeatDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float AxisRepeatDelay
     {
@@ -523,7 +528,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MouseButtonRepeatDelay
+    /// FloatProperty: MouseButtonRepeatDelay<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float MouseButtonRepeatDelay
     {
@@ -532,7 +538,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DoubleClickTriggerSeconds
+    /// FloatProperty: DoubleClickTriggerSeconds<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DoubleClickTriggerSeconds
     {
@@ -541,7 +548,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DoubleClickPixelTolerance
+    /// IntProperty: DoubleClickPixelTolerance<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int DoubleClickPixelTolerance
     {
@@ -556,7 +564,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.UIInteraction.FUIKeyRepeatData>(Ptr + 280);
 
     /// <summary>
-    /// ArrayProperty: ConfiguredAxisEmulationDefinitions
+    /// ArrayProperty: ConfiguredAxisEmulationDefinitions<br/>
+    /// Default: ((AxisInputKey=MouseX,AdjacentAxisInputKey=MouseY),(AxisInputKey=MouseY,AdjacentAxisInputKey=MouseX),(AxisInputKey=XboxTypeS_LeftX,AdjacentAxisInputKey=XboxTypeS_LeftY,bEmulateButtonPress=true,InputKe...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.UIRoot.FUIAxisEmulationDefinition> ConfiguredAxisEmulationDefinitions
     {
@@ -579,22 +588,26 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
     public InlineArray<BmSDK.Engine.UIInteraction.FUIAxisEmulationData> AxisInputEmulation => new(4, Ptr + 384, 20, this);
 
     /// <summary>
-    /// StructProperty: AxisInputEmulation
+    /// StructProperty: AxisInputEmulation<br/>
+    /// Default: (bEnabled=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.UIInteraction.FUIAxisEmulationData AxisInputEmulation_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.UIInteraction.FUIAxisEmulationData>(Ptr + 384);
     /// <summary>
-    /// StructProperty: AxisInputEmulation
+    /// StructProperty: AxisInputEmulation<br/>
+    /// Default: (bEnabled=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.UIInteraction.FUIAxisEmulationData AxisInputEmulation_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.UIInteraction.FUIAxisEmulationData>(Ptr + 404);
     /// <summary>
-    /// StructProperty: AxisInputEmulation
+    /// StructProperty: AxisInputEmulation<br/>
+    /// Default: (bEnabled=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.UIInteraction.FUIAxisEmulationData AxisInputEmulation_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.UIInteraction.FUIAxisEmulationData>(Ptr + 424);
     /// <summary>
-    /// StructProperty: AxisInputEmulation
+    /// StructProperty: AxisInputEmulation<br/>
+    /// Default: (bEnabled=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.UIInteraction.FUIAxisEmulationData AxisInputEmulation_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.UIInteraction.FUIAxisEmulationData>(Ptr + 444);

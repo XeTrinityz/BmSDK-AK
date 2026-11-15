@@ -794,7 +794,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RHelicopterGunship.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -803,7 +804,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// IntProperty: DamageMaterialIndex
+    /// IntProperty: DamageMaterialIndex<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int DamageMaterialIndex
     {
@@ -821,7 +823,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: MissileProjectileArchetype
+    /// ObjectProperty: MissileProjectileArchetype<br/>
+    /// Default: Vehicle_Weapon_Archetypes.Projectiles.Helicopter_Missile
     /// </summary>
     public unsafe BmSDK.BmGame.RProjectile MissileProjectileArchetype
     {
@@ -830,7 +833,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: SwarmerProjectileArchetype
+    /// ObjectProperty: SwarmerProjectileArchetype<br/>
+    /// Default: Vehicle_Weapon_Archetypes.Projectiles.Helicopter_Swarmer_Missile
     /// </summary>
     public unsafe BmSDK.BmGame.RProjectile SwarmerProjectileArchetype
     {
@@ -839,7 +843,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: MortarProjectileArchetype
+    /// ObjectProperty: MortarProjectileArchetype<br/>
+    /// Default: Vehicle_Weapon_Archetypes.Projectiles.Helicopter_Mortar_Projectile
     /// </summary>
     public unsafe BmSDK.BmGame.RProjectile MortarProjectileArchetype
     {
@@ -857,7 +862,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: lightsArchetype
+    /// ObjectProperty: lightsArchetype<br/>
+    /// Default: Red_Hood_Helicopter.GunshipSelfLightArchetype
     /// </summary>
     public unsafe BmSDK.BmScript.RHelicopterGunshipSelfLight lightsArchetype
     {
@@ -875,7 +881,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: HoverLoop
+    /// ObjectProperty: HoverLoop<br/>
+    /// Default: ww_veh_helicopter_redhood.Play_RedHood_Heli_Hover_Loop01
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent HoverLoop
     {
@@ -884,7 +891,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: explosionImpulse
+    /// ComponentProperty: explosionImpulse<br/>
+    /// Default: BmScript.Default__RHelicopterGunship.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent explosionImpulse
     {
@@ -893,7 +901,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: VisualDamageComp
+    /// ComponentProperty: VisualDamageComp<br/>
+    /// Default: BmScript.Default__RHelicopterGunship.VisDmgComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVisualDamageComponent VisualDamageComp
     {
@@ -902,7 +911,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: RocketAttackRange
+    /// FloatProperty: RocketAttackRange<br/>
+    /// Default: 150000
     /// </summary>
     public unsafe float RocketAttackRange
     {
@@ -911,7 +921,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: RocketAttackMinRange
+    /// FloatProperty: RocketAttackMinRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float RocketAttackMinRange
     {
@@ -920,7 +931,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: ChaingunAttackRange
+    /// FloatProperty: ChaingunAttackRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ChaingunAttackRange
     {
@@ -929,7 +941,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: ChaingunAttackMinRange
+    /// FloatProperty: ChaingunAttackMinRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ChaingunAttackMinRange
     {
@@ -938,7 +951,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// IntProperty: RocketsPerSalvo
+    /// IntProperty: RocketsPerSalvo<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int RocketsPerSalvo
     {
@@ -947,7 +961,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// IntProperty: SwarmerMissilesPerSalvo
+    /// IntProperty: SwarmerMissilesPerSalvo<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int SwarmerMissilesPerSalvo
     {
@@ -956,7 +971,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: StartOfLevelSalvoMultiplier
+    /// FloatProperty: StartOfLevelSalvoMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float StartOfLevelSalvoMultiplier
     {
@@ -965,7 +981,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: StartOfLevelSalvosUntilHealthProportionIs
+    /// FloatProperty: StartOfLevelSalvosUntilHealthProportionIs<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float StartOfLevelSalvosUntilHealthProportionIs
     {
@@ -983,7 +1000,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: DeathDisappearTime
+    /// FloatProperty: DeathDisappearTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DeathDisappearTime
     {
@@ -992,7 +1010,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// IntProperty: HelicopterArmour
+    /// IntProperty: HelicopterArmour<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int HelicopterArmour
     {
@@ -1001,7 +1020,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: VisibleArmourProportionWhenDepleted
+    /// FloatProperty: VisibleArmourProportionWhenDepleted<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float VisibleArmourProportionWhenDepleted
     {
@@ -1028,7 +1048,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalDistanceFromBatmanForAttack
+    /// FloatProperty: HorizontalDistanceFromBatmanForAttack<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float HorizontalDistanceFromBatmanForAttack
     {
@@ -1037,7 +1058,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// BoolProperty: EnableRedHoodDialogue
+    /// BoolProperty: EnableRedHoodDialogue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableRedHoodDialogue
     {
@@ -1181,7 +1203,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: CurrentStateSpeed
+    /// FloatProperty: CurrentStateSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CurrentStateSpeed
     {
@@ -1211,7 +1234,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: UpdateFreeMovePeriod
+    /// FloatProperty: UpdateFreeMovePeriod<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float UpdateFreeMovePeriod
     {
@@ -1394,7 +1418,8 @@ public partial class RHelicopterGunship : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: CrashGravity
+    /// FloatProperty: CrashGravity<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float CrashGravity
     {

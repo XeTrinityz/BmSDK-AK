@@ -706,7 +706,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: pauseDurationBeforeShootingPlayer
+    /// FloatProperty: pauseDurationBeforeShootingPlayer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float pauseDurationBeforeShootingPlayer
     {
@@ -715,7 +716,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: pauseDurationAfterLosingPlayer
+    /// FloatProperty: pauseDurationAfterLosingPlayer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float pauseDurationAfterLosingPlayer
     {
@@ -1063,7 +1065,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1672);
 
     /// <summary>
-    /// FloatProperty: PPSpeed
+    /// FloatProperty: PPSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PPSpeed
     {
@@ -1072,7 +1075,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PPMax
+    /// FloatProperty: PPMax<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float PPMax
     {

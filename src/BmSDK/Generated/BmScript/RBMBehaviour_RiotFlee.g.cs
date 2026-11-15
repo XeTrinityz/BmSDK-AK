@@ -259,7 +259,8 @@ public partial class RBMBehaviour_RiotFlee : BmSDK.BmGame.RBMBehaviour_GangMovem
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfRunAway
+    /// FloatProperty: ChanceOfRunAway<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float ChanceOfRunAway
     {

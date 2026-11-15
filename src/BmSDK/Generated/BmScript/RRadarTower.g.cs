@@ -310,7 +310,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmScript.Default__RRadarTower.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -319,7 +320,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ComponentProperty: DestroyedMesh
+    /// ComponentProperty: DestroyedMesh<br/>
+    /// Default: BmScript.Default__RRadarTower.SkeletalMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent DestroyedMesh
     {
@@ -328,7 +330,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: GelInControlPanelMove
+    /// ObjectProperty: GelInControlPanelMove<br/>
+    /// Default: Batman_Level_Moves.ExplosiveGel.Spray_Gel_In_Radar_Tower
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GelInControlPanelMove
     {
@@ -337,7 +340,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionTemplate
+    /// ObjectProperty: ExplosionTemplate<br/>
+    /// Default: EFX_SideStories.Hush.Control_Panel_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionTemplate
     {
@@ -364,7 +368,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionSweetener
+    /// ObjectProperty: ExplosionSweetener<br/>
+    /// Default: Ww_OBJ_Red_Hood_Vehicle_Radar.Play_Radar_Destroyed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplosionSweetener
     {
@@ -373,7 +378,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: destroyedSFXLoop
+    /// ObjectProperty: destroyedSFXLoop<br/>
+    /// Default: Ww_OBJ_Watchtower.Play_Watchtower_Gun_Destroyed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent destroyedSFXLoop
     {
@@ -382,7 +388,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: destroyedSFXFire
+    /// ObjectProperty: destroyedSFXFire<br/>
+    /// Default: Ww_OBJ_Red_Hood_Vehicle_Radar.Play_Radar_fire
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent destroyedSFXFire
     {
@@ -391,7 +398,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ObjectProperty: XrayMat
+    /// ObjectProperty: XrayMat<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MINES_INST_YEL
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayMat
     {
@@ -400,7 +408,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ComponentProperty: RedPulseFX
+    /// ComponentProperty: RedPulseFX<br/>
+    /// Default: BmScript.Default__RRadarTower.CPFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RedPulseFX
     {
@@ -409,7 +418,8 @@ public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RE
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmScript.Default__RRadarTower.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {

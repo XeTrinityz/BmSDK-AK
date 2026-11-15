@@ -135,7 +135,8 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsServer
+    /// BoolProperty: IsServer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsServer
     {
@@ -144,7 +145,8 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsClient
+    /// BoolProperty: IsClient<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsClient
     {
@@ -153,7 +155,8 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsEditor
+    /// BoolProperty: IsEditor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsEditor
     {
@@ -171,7 +174,8 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ShowErrorCount
+    /// BoolProperty: ShowErrorCount<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ShowErrorCount
     {

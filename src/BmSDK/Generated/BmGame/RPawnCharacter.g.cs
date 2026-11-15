@@ -4512,7 +4512,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowFlappyBits
+    /// BoolProperty: AllowFlappyBits<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowFlappyBits
     {
@@ -4539,7 +4540,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowProceduralBreathing
+    /// BoolProperty: AllowProceduralBreathing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowProceduralBreathing
     {
@@ -4566,7 +4568,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableFloorCorrection
+    /// BoolProperty: EnableFloorCorrection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableFloorCorrection
     {
@@ -4575,7 +4578,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowFloorCorrectionRaycast
+    /// BoolProperty: AllowFloorCorrectionRaycast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowFloorCorrectionRaycast
     {
@@ -4683,7 +4687,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bConstrainRagdollToDynamicNavMesh
+    /// BoolProperty: bConstrainRagdollToDynamicNavMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bConstrainRagdollToDynamicNavMesh
     {
@@ -4788,7 +4793,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FPreviousPoseDescription>(Ptr + 1952);
 
     /// <summary>
-    /// StructProperty: Pose
+    /// StructProperty: Pose<br/>
+    /// Default: (TransitionDurationScale=1,TransitionMeetingPointEnd=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNode_Pose.FPoseDescription Pose
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FPoseDescription>(Ptr + 2056);
@@ -4833,7 +4839,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GetupBlendOutDuration
+    /// FloatProperty: GetupBlendOutDuration<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float GetupBlendOutDuration
     {
@@ -4851,7 +4858,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: RagdollVsNavMeshSolution
+    /// ByteProperty: RagdollVsNavMeshSolution<br/>
+    /// Default: RAGvsNAV_Auto
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnCharacter.ERagdollVsNavMesh RagdollVsNavMeshSolution
     {
@@ -4920,7 +4928,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2532);
 
     /// <summary>
-    /// ArrayProperty: Tweak_FaceFXRegisters
+    /// ArrayProperty: Tweak_FaceFXRegisters<br/>
+    /// Default: ((Name="Eye_Yaw"),(Name="Eye_Pitch"),(Name="Head_Yaw"),(Name="Head_Pitch"),(Name="Head_Roll"),(Name="E_Default"),(Name="E_Angry"),(Name="E_Frown"),(Name="E_Hit_L"),(Name="E_Hit_R"),(Name="E_Injured"),...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPawnCharacter.FTweakFaceFXRegister> Tweak_FaceFXRegisters
     {
@@ -4947,7 +4956,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavTestLength
+    /// FloatProperty: NavTestLength<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float NavTestLength
     {
@@ -4956,7 +4966,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RagdollFacingThreshold
+    /// FloatProperty: RagdollFacingThreshold<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float RagdollFacingThreshold
     {
@@ -4983,7 +4994,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WetnessAccumulationAlpha
+    /// FloatProperty: WetnessAccumulationAlpha<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WetnessAccumulationAlpha
     {
@@ -4992,7 +5004,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: RainParameterName
+    /// NameProperty: RainParameterName<br/>
+    /// Default: Batman_Rain_Direction
     /// </summary>
     public unsafe BmSDK.FName RainParameterName
     {
@@ -5001,7 +5014,8 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PreviousRainDirectionColor
+    /// StructProperty: PreviousRainDirectionColor<br/>
+    /// Default: (R=-999,G=-999,B=-999,A=-999)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PreviousRainDirectionColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2612);

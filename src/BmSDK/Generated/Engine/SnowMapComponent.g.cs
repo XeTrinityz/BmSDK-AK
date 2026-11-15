@@ -94,7 +94,8 @@ public partial class SnowMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SnowGlobalScale
+    /// FloatProperty: SnowGlobalScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SnowGlobalScale
     {
@@ -112,7 +113,8 @@ public partial class SnowMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SnowHeightFadeStart
+    /// FloatProperty: SnowHeightFadeStart<br/>
+    /// Default: 1465
     /// </summary>
     public unsafe float SnowHeightFadeStart
     {
@@ -121,7 +123,8 @@ public partial class SnowMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SnowHeightFadeEnd
+    /// FloatProperty: SnowHeightFadeEnd<br/>
+    /// Default: 7702
     /// </summary>
     public unsafe float SnowHeightFadeEnd
     {
@@ -130,7 +133,8 @@ public partial class SnowMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: SnowGroundColor
+    /// StructProperty: SnowGroundColor<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SnowGroundColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 140);

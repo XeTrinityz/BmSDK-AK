@@ -246,7 +246,8 @@ public partial class RBMBehaviour_CoopPatrol : BmSDK.BmGame.RBMBehaviour_ActionQ
     }
 
     /// <summary>
-    /// BoolProperty: bStartCombatOnLOS
+    /// BoolProperty: bStartCombatOnLOS<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStartCombatOnLOS
     {
@@ -255,7 +256,8 @@ public partial class RBMBehaviour_CoopPatrol : BmSDK.BmGame.RBMBehaviour_ActionQ
     }
 
     /// <summary>
-    /// ByteProperty: MoveSpeed
+    /// ByteProperty: MoveSpeed<br/>
+    /// Default: MS_Walk
     /// </summary>
     public unsafe BmSDK.Engine.RAutomaticTransitions.EMovementSpeed MoveSpeed
     {

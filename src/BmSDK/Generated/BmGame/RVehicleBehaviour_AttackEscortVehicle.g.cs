@@ -194,7 +194,8 @@ public partial class RVehicleBehaviour_AttackEscortVehicle : BmSDK.BmGame.RVehic
     }
 
     /// <summary>
-    /// FloatProperty: DelayUntilNextAttack
+    /// FloatProperty: DelayUntilNextAttack<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float DelayUntilNextAttack
     {
@@ -203,7 +204,8 @@ public partial class RVehicleBehaviour_AttackEscortVehicle : BmSDK.BmGame.RVehic
     }
 
     /// <summary>
-    /// FloatProperty: DelayBetweenRammingAttacks
+    /// FloatProperty: DelayBetweenRammingAttacks<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float DelayBetweenRammingAttacks
     {

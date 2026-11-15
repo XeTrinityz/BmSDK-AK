@@ -1528,7 +1528,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeRumble
+    /// ObjectProperty: ExplodeRumble<br/>
+    /// Default: BmGame.Default__RCommandBeaconBase.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExplodeRumble
     {
@@ -1591,7 +1592,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: overrideFailDist
+    /// FloatProperty: overrideFailDist<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float overrideFailDist
     {
@@ -1600,7 +1602,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: abandonTime
+    /// FloatProperty: abandonTime<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float abandonTime
     {
@@ -1618,7 +1621,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MinPeriodBetweenDialogue
+    /// FloatProperty: MinPeriodBetweenDialogue<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinPeriodBetweenDialogue
     {
@@ -1645,7 +1649,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// BoolProperty: SideStory
+    /// BoolProperty: SideStory<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SideStory
     {
@@ -1654,7 +1659,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// BoolProperty: bCanTriggerReinforcements
+    /// BoolProperty: bCanTriggerReinforcements<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTriggerReinforcements
     {
@@ -1672,7 +1678,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// BoolProperty: bCanDetectPlayer
+    /// BoolProperty: bCanDetectPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDetectPlayer
     {
@@ -1735,7 +1742,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// BoolProperty: PowerRevsGlobal
+    /// BoolProperty: PowerRevsGlobal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PowerRevsGlobal
     {
@@ -1753,7 +1761,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// BoolProperty: bNeedsToPowerDownIfBMBLNearby
+    /// BoolProperty: bNeedsToPowerDownIfBMBLNearby<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedsToPowerDownIfBMBLNearby
     {
@@ -1816,7 +1825,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: HUDElementVisRange
+    /// FloatProperty: HUDElementVisRange<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float HUDElementVisRange
     {
@@ -1825,7 +1835,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// IntProperty: Difficulty_One_To_Five
+    /// IntProperty: Difficulty_One_To_Five<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int Difficulty_One_To_Five
     {
@@ -1834,7 +1845,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: BMBLOutOfBoundsDistance
+    /// FloatProperty: BMBLOutOfBoundsDistance<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float BMBLOutOfBoundsDistance
     {
@@ -1870,7 +1882,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: BMBLDist
+    /// FloatProperty: BMBLDist<br/>
+    /// Default: 1e+08
     /// </summary>
     public unsafe float BMBLDist
     {
@@ -1879,7 +1892,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: prevBMBLDist
+    /// FloatProperty: prevBMBLDist<br/>
+    /// Default: 1e+08
     /// </summary>
     public unsafe float prevBMBLDist
     {
@@ -1897,7 +1911,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: bLightPulsePeriod_idle
+    /// FloatProperty: bLightPulsePeriod_idle<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float bLightPulsePeriod_idle
     {
@@ -1906,7 +1921,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: bLightPulsePeriod_active
+    /// FloatProperty: bLightPulsePeriod_active<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float bLightPulsePeriod_active
     {
@@ -1924,7 +1940,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: radiusVFXInitialSize
+    /// FloatProperty: radiusVFXInitialSize<br/>
+    /// Default: 159
     /// </summary>
     public unsafe float radiusVFXInitialSize
     {
@@ -1942,7 +1959,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// StrProperty: everInteractedFlag
+    /// StrProperty: everInteractedFlag<br/>
+    /// Default: "SS_CommandBeacons_DoneFirstInteract"
     /// </summary>
     public unsafe BmSDK.FString everInteractedFlag
     {
@@ -1960,7 +1978,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// IntProperty: GaugeMaterialIndex
+    /// IntProperty: GaugeMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int GaugeMaterialIndex
     {
@@ -1969,7 +1988,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// NameProperty: GaugePowerInputName
+    /// NameProperty: GaugePowerInputName<br/>
+    /// Default: Gauge1
     /// </summary>
     public unsafe BmSDK.FName GaugePowerInputName
     {
@@ -1978,7 +1998,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// NameProperty: GaugePowerOutputName
+    /// NameProperty: GaugePowerOutputName<br/>
+    /// Default: Gauge2
     /// </summary>
     public unsafe BmSDK.FName GaugePowerOutputName
     {
@@ -1987,7 +2008,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: RevsMultiplier
+    /// FloatProperty: RevsMultiplier<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float RevsMultiplier
     {
@@ -1996,7 +2018,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxRevs
+    /// FloatProperty: MaxRevs<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxRevs
     {
@@ -2005,7 +2028,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxRevsHoldTime
+    /// FloatProperty: MaxRevsHoldTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxRevsHoldTime
     {
@@ -2014,7 +2038,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: RevsDeltaLimit
+    /// FloatProperty: RevsDeltaLimit<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float RevsDeltaLimit
     {
@@ -2023,7 +2048,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: RevsVelLimit
+    /// FloatProperty: RevsVelLimit<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RevsVelLimit
     {
@@ -2074,7 +2100,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1120);
 
     /// <summary>
-    /// FloatProperty: winchInitiationDuration
+    /// FloatProperty: winchInitiationDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float winchInitiationDuration
     {
@@ -2101,7 +2128,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// NameProperty: coreExposeAnimName
+    /// NameProperty: coreExposeAnimName<br/>
+    /// Default: Red_Hood_Command_Beacons
     /// </summary>
     public unsafe BmSDK.FName coreExposeAnimName
     {
@@ -2119,7 +2147,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MineRange
+    /// FloatProperty: MineRange<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float MineRange
     {
@@ -2128,7 +2157,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MineDamage
+    /// FloatProperty: MineDamage<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float MineDamage
     {
@@ -2137,7 +2167,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: MineImpulse
+    /// FloatProperty: MineImpulse<br/>
+    /// Default: 180000
     /// </summary>
     public unsafe float MineImpulse
     {
@@ -2146,7 +2177,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenMineAttacks
+    /// FloatProperty: TimeBetweenMineAttacks<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeBetweenMineAttacks
     {
@@ -2155,7 +2187,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
     }
 
     /// <summary>
-    /// FloatProperty: friendlyRangeExtra
+    /// FloatProperty: friendlyRangeExtra<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float friendlyRangeExtra
     {

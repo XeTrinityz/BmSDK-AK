@@ -346,7 +346,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// ObjectProperty: WallaName
+    /// ObjectProperty: WallaName<br/>
+    /// Default: Ww_Parameters.Stagg_B1_JokerWallaVol
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName WallaName
     {
@@ -418,7 +419,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// FloatProperty: MoveThugsInnerRadius
+    /// FloatProperty: MoveThugsInnerRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MoveThugsInnerRadius
     {
@@ -427,7 +429,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// FloatProperty: MoveThugsIdealRadius
+    /// FloatProperty: MoveThugsIdealRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MoveThugsIdealRadius
     {
@@ -436,7 +439,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// IntProperty: MoveThugsInnerNumToLeave
+    /// IntProperty: MoveThugsInnerNumToLeave<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MoveThugsInnerNumToLeave
     {
@@ -463,7 +467,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// IntProperty: MinInnerThugs
+    /// IntProperty: MinInnerThugs<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int MinInnerThugs
     {
@@ -472,7 +477,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// FloatProperty: TimeBeforeAutoEnd
+    /// FloatProperty: TimeBeforeAutoEnd<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TimeBeforeAutoEnd
     {
@@ -481,7 +487,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// ArrayProperty: FloorAnimNames
+    /// ArrayProperty: FloorAnimNames<br/>
+    /// Default: (TG_A_Dead_Pose,TG_B_Dead_Pose,TG_C_Dead_Pose,TG_D_Dead_Pose)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FloorAnimNames
     {
@@ -490,7 +497,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// ArrayProperty: GetUpAnimNames
+    /// ArrayProperty: GetUpAnimNames<br/>
+    /// Default: (TG_A_GetUp,TG_B_GetUp,TG_C_GetUp,TG_D_GetUp)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> GetUpAnimNames
     {
@@ -499,7 +507,8 @@ public partial class RSeqAct_StartFearDart : BmSDK.BmGame.RSeqAct_CombatSpawnerB
     }
 
     /// <summary>
-    /// ArrayProperty: GetUpIdleAnimNames
+    /// ArrayProperty: GetUpIdleAnimNames<br/>
+    /// Default: (TG_A_Idle,TG_B_Idle,TG_C_Idle,TG_D_Idle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> GetUpIdleAnimNames
     {

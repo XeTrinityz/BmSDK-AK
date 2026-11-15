@@ -114,7 +114,8 @@ public partial class RRiddlerRollerSpikes : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: Spikes
+    /// ComponentProperty: Spikes<br/>
+    /// Default: BmScript.Default__RRiddlerRollerSpikes.SkelMeshCompSpikes
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Spikes
     {

@@ -93,7 +93,8 @@ public partial class RBMExitConditionCombiner : BmSDK.BmGame.RBMExitCondition, B
     }
 
     /// <summary>
-    /// IntProperty: NumExitConditions
+    /// IntProperty: NumExitConditions<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumExitConditions
     {

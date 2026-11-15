@@ -487,7 +487,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     public partial record struct FSeqEventLink
     {
         /// <summary>
-        /// ClassProperty: ExpectedType
+        /// ClassProperty: ExpectedType<br/>
+        /// Default: Engine.SequenceEvent
         /// </summary>
         public unsafe BmSDK.Class ExpectedType
         {
@@ -575,7 +576,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     public partial record struct FSeqVarLink
     {
         /// <summary>
-        /// ClassProperty: ExpectedType
+        /// ClassProperty: ExpectedType<br/>
+        /// Default: Engine.SequenceVariable
         /// </summary>
         public unsafe BmSDK.Class ExpectedType
         {
@@ -1101,7 +1103,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bStripInputLinkDesc
+    /// BoolProperty: bStripInputLinkDesc<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStripInputLinkDesc
     {
@@ -1110,7 +1113,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bStripOutputLinkDesc
+    /// BoolProperty: bStripOutputLinkDesc<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStripOutputLinkDesc
     {
@@ -1119,7 +1123,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoActivateOutputLinks
+    /// BoolProperty: bAutoActivateOutputLinks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoActivateOutputLinks
     {
@@ -1254,7 +1259,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: InputLinks
+    /// ArrayProperty: InputLinks<br/>
+    /// Default: ((LinkDesc="In"))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SequenceOp.FSeqOpInputLink> InputLinks
     {
@@ -1263,7 +1269,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: OutputLinks
+    /// ArrayProperty: OutputLinks<br/>
+    /// Default: ((LinkDesc="Out"))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SequenceOp.FSeqOpOutputLink> OutputLinks
     {

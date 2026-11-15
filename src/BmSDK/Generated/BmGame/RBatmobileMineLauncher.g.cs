@@ -149,7 +149,8 @@ public partial class RBatmobileMineLauncher : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: MaxNumMines
+    /// IntProperty: MaxNumMines<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int MaxNumMines
     {
@@ -158,7 +159,8 @@ public partial class RBatmobileMineLauncher : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: MinNumMines
+    /// IntProperty: MinNumMines<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MinNumMines
     {
@@ -167,7 +169,8 @@ public partial class RBatmobileMineLauncher : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: BuildUpTime
+    /// FloatProperty: BuildUpTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float BuildUpTime
     {
@@ -185,7 +188,8 @@ public partial class RBatmobileMineLauncher : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: FireInterval
+    /// FloatProperty: FireInterval<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FireInterval
     {
@@ -248,7 +252,8 @@ public partial class RBatmobileMineLauncher : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ProximityRadius
+    /// FloatProperty: ProximityRadius<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float ProximityRadius
     {

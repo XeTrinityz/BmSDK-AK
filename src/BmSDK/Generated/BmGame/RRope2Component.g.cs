@@ -1180,7 +1180,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRope2Component.FRopeEndAttachData>(Ptr + 572);
 
     /// <summary>
-    /// FloatProperty: RopeLength
+    /// FloatProperty: RopeLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RopeLength
     {
@@ -1189,7 +1190,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RopeWidth
+    /// FloatProperty: RopeWidth<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RopeWidth
     {
@@ -1198,7 +1200,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: RopeRenderUpdater
+    /// ObjectProperty: RopeRenderUpdater<br/>
+    /// Default: BmGame.Default__RRope2Component.RRope2StandardRenderUpdater0
     /// </summary>
     public unsafe BmSDK.BmGame.RRope2RenderUpdater RopeRenderUpdater
     {
@@ -1207,7 +1210,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: RopePhysicsUpdater
+    /// ObjectProperty: RopePhysicsUpdater<br/>
+    /// Default: BmGame.Default__RRope2Component.RRope2PhysicsUpdater0
     /// </summary>
     public unsafe BmSDK.BmGame.RRope2PhysicsUpdater RopePhysicsUpdater
     {
@@ -1382,7 +1386,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ConnectSwingLimit
+        /// FloatProperty: ConnectSwingLimit<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float ConnectSwingLimit
         {
@@ -1391,7 +1396,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ConnectTwistLimit
+        /// FloatProperty: ConnectTwistLimit<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float ConnectTwistLimit
         {
@@ -1522,7 +1528,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ConnectSwingLimit
+        /// FloatProperty: ConnectSwingLimit<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float ConnectSwingLimit
         {
@@ -1531,7 +1538,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ConnectTwistLimit
+        /// FloatProperty: ConnectTwistLimit<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float ConnectTwistLimit
         {
@@ -1549,7 +1557,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// BoolProperty: bDisableEndCollision
+        /// BoolProperty: bDisableEndCollision<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bDisableEndCollision
         {
@@ -1558,7 +1567,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// BoolProperty: bAllowDirectConnection
+        /// BoolProperty: bAllowDirectConnection<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowDirectConnection
         {
@@ -1567,7 +1577,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// BoolProperty: bAllowRenderToConnection
+        /// BoolProperty: bAllowRenderToConnection<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowRenderToConnection
         {

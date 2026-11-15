@@ -79,7 +79,8 @@ public partial class SeqAct_Switch : BmSDK.Engine.SequenceAction, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: LinkCount
+    /// IntProperty: LinkCount<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int LinkCount
     {
@@ -88,7 +89,8 @@ public partial class SeqAct_Switch : BmSDK.Engine.SequenceAction, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: IncrementAmount
+    /// IntProperty: IncrementAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int IncrementAmount
     {
@@ -115,7 +117,8 @@ public partial class SeqAct_Switch : BmSDK.Engine.SequenceAction, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: Indices
+    /// ArrayProperty: Indices<br/>
+    /// Default: (1)
     /// </summary>
     public unsafe BmSDK.TArray<int> Indices
     {

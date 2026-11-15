@@ -1,3 +1,6 @@
+using System.Globalization;
+using System.Text.Json;
+
 namespace BmSDK.Printer;
 
 // What the printer needs from the dump, worked out the way the in-game generator did it
@@ -24,6 +27,10 @@ sealed class PropertyInfo : MemberInfo
     public bool IsReturnParam;
     public bool ShouldReturnByRef;
     public bool OwnsMemory;
+
+    // The default value of each element, written the way UnrealScript would, or null when it's
+    // zero, empty or None.
+    public List<string?> Defaults = [];
 }
 
 class StructInfo : MemberInfo
@@ -355,8 +362,167 @@ sealed class InfoBuilder(Dump dump)
         {
             info.BitMask = (int)prop.Mask;
         }
+
+        var defaults = prop.Outer switch
+        {
+            ClassNode c => c.Defaults,
+            StructNode { Kind: "struct" } s => s.Defaults,
+            _ => null,
+        };
+        if (defaults is not null && defaults.TryGetValue(prop.Name, out var value))
+        {
+            for (var i = 0; i < prop.Dim; i++)
+            {
+                var element = prop.Dim > 1 && value.ValueKind == JsonValueKind.Array
+                    ? (i < value.GetArrayLength() ? value[i] : default)
+                    : value;
+                info.Defaults.Add(Shorten(DefaultText(prop, element, 0)));
+            }
+        }
         return info;
     }
+
+    const int MaxDefaultLength = 200;
+
+    static string? Shorten(string? text) =>
+        text is null || text.Length <= MaxDefaultLength ? text : text[..MaxDefaultLength] + "...";
+
+    // One value as UnrealScript writes it in defaultproperties, or null when it's the zero value.
+    string? DefaultText(PropNode prop, JsonElement value, int depth)
+    {
+        if (value.ValueKind is JsonValueKind.Undefined or JsonValueKind.Null || depth > 8)
+        {
+            return null;
+        }
+
+        switch (prop.Type)
+        {
+            case "IntProperty":
+                return value.ValueKind == JsonValueKind.Number && value.GetInt64() == 0 ? null : value.GetRawText();
+
+            case "FloatProperty":
+                if (value.ValueKind == JsonValueKind.String)
+                {
+                    return value.GetString();
+                }
+                return value.GetDouble() == 0 ? null : value.GetRawText();
+
+            case "ByteProperty":
+            {
+                var number = value.GetInt32();
+                if (number == 0)
+                {
+                    return null;
+                }
+                return dump.Find(prop.RefPath(148)) is EnumNode en && number < en.Names.Count
+                    ? en.Names[number]
+                    : number.ToString(CultureInfo.InvariantCulture);
+            }
+
+            case "BoolProperty":
+                return value.ValueKind == JsonValueKind.True ? "true" : null;
+
+            case "NameProperty":
+            {
+                var name = value.GetString();
+                return string.IsNullOrEmpty(name) || name == "None" ? null : name;
+            }
+
+            case "StrProperty":
+            {
+                var text = value.GetString();
+                return string.IsNullOrEmpty(text) ? null : "\"" + text + "\"";
+            }
+
+            case "ObjectProperty":
+            case "ClassProperty":
+            case "ComponentProperty":
+            case "InterfaceProperty":
+                return value.ValueKind == JsonValueKind.String ? value.GetString() : null;
+
+            case "DelegateProperty":
+            {
+                if (value.ValueKind != JsonValueKind.Object || !value.TryGetProperty("func", out var func))
+                {
+                    return null;
+                }
+                var name = func.GetString();
+                return string.IsNullOrEmpty(name) || name == "None" ? null : name;
+            }
+
+            case "StructProperty":
+            {
+                // A Pointer holds a native address, which says nothing about the class
+                if (value.ValueKind != JsonValueKind.Object || dump.Find(prop.RefPath(148)) is not StructNode st || st.Name == "Pointer")
+                {
+                    return null;
+                }
+
+                var members = new Dictionary<string, PropNode>(StringComparer.Ordinal);
+                for (StructNode? s = st; s is not null; s = dump.Find(s.SuperPath) as StructNode)
+                {
+                    foreach (var field in s.Fields)
+                    {
+                        if (field is PropNode p)
+                        {
+                            members.TryAdd(p.Name, p);
+                        }
+                    }
+                }
+
+                var parts = new List<string>();
+                foreach (var member in value.EnumerateObject())
+                {
+                    if (members.TryGetValue(member.Name, out var memberProp) && MemberText(memberProp, member.Value, depth + 1) is { } text)
+                    {
+                        parts.Add(member.Name + "=" + text);
+                    }
+                }
+                return parts.Count == 0 ? null : "(" + string.Join(",", parts) + ")";
+            }
+
+            case "ArrayProperty":
+            {
+                if (value.ValueKind != JsonValueKind.Array || value.GetArrayLength() == 0 || prop.Sub.FirstOrDefault() is not { } inner)
+                {
+                    return null;
+                }
+
+                var items = new List<string>();
+                foreach (var item in value.EnumerateArray())
+                {
+                    // The dumper ends a long array with "...N more"
+                    items.Add(item.ValueKind == JsonValueKind.String && item.GetString()!.StartsWith("...", StringComparison.Ordinal)
+                        ? item.GetString()!
+                        : DefaultText(inner, item, depth + 1) ?? ZeroText(inner));
+                }
+                return "(" + string.Join(",", items) + ")";
+            }
+        }
+
+        return null;
+    }
+
+    // A struct member, which can be a fixed size array of its own.
+    string? MemberText(PropNode prop, JsonElement value, int depth)
+    {
+        if (prop.Dim <= 1 || value.ValueKind != JsonValueKind.Array)
+        {
+            return DefaultText(prop, value, depth);
+        }
+
+        var items = value.EnumerateArray().Select(v => DefaultText(prop, v, depth)).ToList();
+        return items.All(i => i is null) ? null : "(" + string.Join(",", items.Select(i => i ?? ZeroText(prop))) + ")";
+    }
+
+    static string ZeroText(PropNode prop) => prop.Type switch
+    {
+        "BoolProperty" => "false",
+        "NameProperty" or "ObjectProperty" or "ClassProperty" or "ComponentProperty" or "InterfaceProperty" or "DelegateProperty" => "None",
+        "StrProperty" => "\"\"",
+        "StructProperty" or "ArrayProperty" => "()",
+        _ => "0",
+    };
 
     StructInfo Struct(StructNode st)
     {

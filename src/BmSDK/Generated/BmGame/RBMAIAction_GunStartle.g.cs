@@ -205,7 +205,8 @@ public partial class RBMAIAction_GunStartle : BmSDK.BmGame.RBMAIAction, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 876);
 
     /// <summary>
-    /// FloatProperty: PauseTime
+    /// FloatProperty: PauseTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float PauseTime
     {

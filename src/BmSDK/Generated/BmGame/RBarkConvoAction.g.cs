@@ -308,7 +308,8 @@ public partial class RBarkConvoAction : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: Out
+    /// ArrayProperty: Out<br/>
+    /// Default: ((Label="Next"))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBarkConvoAction.FBCA_Output> Out
     {

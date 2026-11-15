@@ -232,7 +232,8 @@ public partial class RStringUpRope : BmSDK.BmGame.RRopeBaseSpawnable, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: RopeHook
+    /// ComponentProperty: RopeHook<br/>
+    /// Default: BmGame.Default__RStringUpRope.Hook
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RopeHook
     {
@@ -250,7 +251,8 @@ public partial class RStringUpRope : BmSDK.BmGame.RRopeBaseSpawnable, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ConstrainCylinderOffset
+    /// FloatProperty: ConstrainCylinderOffset<br/>
+    /// Default: -175
     /// </summary>
     public unsafe float ConstrainCylinderOffset
     {
@@ -259,7 +261,8 @@ public partial class RStringUpRope : BmSDK.BmGame.RRopeBaseSpawnable, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ConstrainCylinderRadius
+    /// FloatProperty: ConstrainCylinderRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ConstrainCylinderRadius
     {

@@ -295,7 +295,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: SuicideAttackRange
+    /// FloatProperty: SuicideAttackRange<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float SuicideAttackRange
     {
@@ -304,7 +305,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: ThrusterForce
+    /// FloatProperty: ThrusterForce<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ThrusterForce
     {
@@ -313,7 +315,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: RamMaxSteeringAngle
+    /// FloatProperty: RamMaxSteeringAngle<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RamMaxSteeringAngle
     {
@@ -322,7 +325,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: TrailingTime
+    /// FloatProperty: TrailingTime<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float TrailingTime
     {
@@ -403,7 +407,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetBase
+    /// FloatProperty: FollowOffsetBase<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float FollowOffsetBase
     {
@@ -412,7 +417,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetExtra
+    /// FloatProperty: FollowOffsetExtra<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float FollowOffsetExtra
     {
@@ -445,7 +451,8 @@ public partial class RVehicleBehaviour_SuicideDroneAttack : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: totalTimeInRangeRequired
+    /// FloatProperty: totalTimeInRangeRequired<br/>
+    /// Default: 270
     /// </summary>
     public unsafe float totalTimeInRangeRequired
     {

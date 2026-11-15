@@ -153,7 +153,8 @@ public partial class RPollenStaticMeshActor : BmSDK.Engine.DynamicSMActor, BmSDK
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 784);
 
     /// <summary>
-    /// ByteProperty: PollenVisibility
+    /// ByteProperty: PollenVisibility<br/>
+    /// Default: PV_InPollenAndPostPollen
     /// </summary>
     public unsafe BmSDK.Engine.RPollenStaticMeshActor.EPollenVisibility PollenVisibility
     {
@@ -162,7 +163,8 @@ public partial class RPollenStaticMeshActor : BmSDK.Engine.DynamicSMActor, BmSDK
     }
 
     /// <summary>
-    /// ByteProperty: ParticleActiveState
+    /// ByteProperty: ParticleActiveState<br/>
+    /// Default: PPA_InPollenAndPostPollen
     /// </summary>
     public unsafe BmSDK.Engine.RPollenStaticMeshActor.EParticlesActiveState ParticleActiveState
     {

@@ -389,7 +389,8 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: JokerfiedBatmanMoves
+    /// ObjectProperty: JokerfiedBatmanMoves<br/>
+    /// Default: Anim_Scarecrow.Code.Stagg_B3_Anim_BM_SC
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet JokerfiedBatmanMoves
     {
@@ -398,7 +399,8 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ScarecrowMoves
+    /// ObjectProperty: ScarecrowMoves<br/>
+    /// Default: Anim_Scarecrow.Code.Stagg_B3_Anim_SC_BM
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ScarecrowMoves
     {
@@ -407,7 +409,8 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ThugExtraMoves
+    /// ObjectProperty: ThugExtraMoves<br/>
+    /// Default: Anim_Scarecrow.Code.Stagg_B3_Anim_TG_BM
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ThugExtraMoves
     {

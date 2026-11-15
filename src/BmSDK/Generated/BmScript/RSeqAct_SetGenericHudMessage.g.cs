@@ -115,7 +115,8 @@ public partial class RSeqAct_SetGenericHudMessage : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: bShowInCentre
+    /// BoolProperty: bShowInCentre<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowInCentre
     {

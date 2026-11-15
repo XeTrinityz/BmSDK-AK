@@ -110,7 +110,8 @@ public partial class RVehicleCustomisation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: RoofRackSocket
+    /// NameProperty: RoofRackSocket<br/>
+    /// Default: RoofRack
     /// </summary>
     public unsafe BmSDK.FName RoofRackSocket
     {
@@ -137,7 +138,8 @@ public partial class RVehicleCustomisation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDoCustomisations
+    /// BoolProperty: bDoCustomisations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoCustomisations
     {
@@ -146,7 +148,8 @@ public partial class RVehicleCustomisation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PickedIndex
+    /// IntProperty: PickedIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PickedIndex
     {
@@ -155,7 +158,8 @@ public partial class RVehicleCustomisation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PickedMatIndex
+    /// IntProperty: PickedMatIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PickedMatIndex
     {

@@ -115,7 +115,8 @@ public partial class RRemoveDebrisInBoxActor : BmSDK.Engine.Actor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: BmGame.Default__RRemoveDebrisInBoxActor.DrawBox0
     /// </summary>
     public unsafe BmSDK.Engine.DrawBoxComponent RenderComponent
     {
@@ -124,13 +125,15 @@ public partial class RRemoveDebrisInBoxActor : BmSDK.Engine.Actor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: BoxExtent
+    /// StructProperty: BoxExtent<br/>
+    /// Default: (X=200,Y=200,Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoxExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 676);
 
     /// <summary>
-    /// BoolProperty: bRemoveDestructibleChunks
+    /// BoolProperty: bRemoveDestructibleChunks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRemoveDestructibleChunks
     {
@@ -139,7 +142,8 @@ public partial class RRemoveDebrisInBoxActor : BmSDK.Engine.Actor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bRemoveVehicleParts
+    /// BoolProperty: bRemoveVehicleParts<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRemoveVehicleParts
     {

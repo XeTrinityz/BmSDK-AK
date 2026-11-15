@@ -121,7 +121,8 @@ public partial class McpServiceBase : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: McpConfigClassName
+    /// StrProperty: McpConfigClassName<br/>
+    /// Default: "IpDrv.McpServiceConfig"
     /// </summary>
     public unsafe BmSDK.FString McpConfigClassName
     {

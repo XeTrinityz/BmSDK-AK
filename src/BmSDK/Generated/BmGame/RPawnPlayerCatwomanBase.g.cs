@@ -859,7 +859,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         }
 
         /// <summary>
-        /// IntProperty: CachedBoneAttachIndex
+        /// IntProperty: CachedBoneAttachIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int CachedBoneAttachIndex
         {
@@ -1034,7 +1035,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bAllowAerialWhipPounce
+    /// BoolProperty: bAllowAerialWhipPounce<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowAerialWhipPounce
     {
@@ -1061,7 +1063,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bDebugSwingAllowEarlyWhipIn
+    /// BoolProperty: bDebugSwingAllowEarlyWhipIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugSwingAllowEarlyWhipIn
     {
@@ -1070,7 +1073,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bDebugSwingForceEarlyWhipIn
+    /// BoolProperty: bDebugSwingForceEarlyWhipIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugSwingForceEarlyWhipIn
     {
@@ -1124,7 +1128,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bSetCeilingBase
+    /// BoolProperty: bSetCeilingBase<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetCeilingBase
     {
@@ -1133,7 +1138,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// NameProperty: WhipSkelControlName
+    /// NameProperty: WhipSkelControlName<br/>
+    /// Default: Whip
     /// </summary>
     public unsafe BmSDK.FName WhipSkelControlName
     {
@@ -1142,7 +1148,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxDirectPounceHeightToCeilings
+    /// FloatProperty: MaxDirectPounceHeightToCeilings<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxDirectPounceHeightToCeilings
     {
@@ -1151,7 +1158,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: WhipTrailMinAppearSpeed
+    /// FloatProperty: WhipTrailMinAppearSpeed<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float WhipTrailMinAppearSpeed
     {
@@ -1160,7 +1168,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinTrailsWhipExtent
+    /// FloatProperty: MinTrailsWhipExtent<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinTrailsWhipExtent
     {

@@ -349,7 +349,8 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
     }
 
     /// <summary>
-    /// IntProperty: Range
+    /// IntProperty: Range<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int Range
     {
@@ -385,7 +386,8 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
     }
 
     /// <summary>
-    /// ComponentProperty: SkelMeshComp
+    /// ComponentProperty: SkelMeshComp<br/>
+    /// Default: BmScript.Default__RProjectile_Grenade_Incendiary.SkelComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkelMeshComp
     {

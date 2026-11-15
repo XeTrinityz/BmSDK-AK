@@ -283,7 +283,8 @@ public partial class RBMBehaviour_BatClawed : BmSDK.BmGame.RBMBehaviour_HitReact
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeAttacked
+    /// BoolProperty: bCanBeAttacked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeAttacked
     {
@@ -292,7 +293,8 @@ public partial class RBMBehaviour_BatClawed : BmSDK.BmGame.RBMBehaviour_HitReact
     }
 
     /// <summary>
-    /// BoolProperty: bCanTripAndFall
+    /// BoolProperty: bCanTripAndFall<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTripAndFall
     {

@@ -448,7 +448,8 @@ public partial class RPawnVillainRedHoodPred : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanKickingMeInnaFaceSpecialMove
+    /// ObjectProperty: BatmanKickingMeInnaFaceSpecialMove<br/>
+    /// Default: Batman_Environment_Moves.VantagePoint.GrappleToVantagePointAndKickRedHoodInnaFace
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanKickingMeInnaFaceSpecialMove
     {
@@ -457,7 +458,8 @@ public partial class RPawnVillainRedHoodPred : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanKickingMeToFloorSpecialMove
+    /// ObjectProperty: BatmanKickingMeToFloorSpecialMove<br/>
+    /// Default: Batman_Environment_Moves.VantagePoint.SwingToVantagePointAndKickRedHoodToFloor
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanKickingMeToFloorSpecialMove
     {
@@ -475,7 +477,8 @@ public partial class RPawnVillainRedHoodPred : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ComponentProperty: InteractionsThatWeAreExplicitlyPlayingErrorMessagesFor
+    /// ComponentProperty: InteractionsThatWeAreExplicitlyPlayingErrorMessagesFor<br/>
+    /// Default: BmScript.Default__RPawnVillainRedHoodPred.DeniedInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractionsThatWeAreExplicitlyPlayingErrorMessagesFor
     {
@@ -493,7 +496,8 @@ public partial class RPawnVillainRedHoodPred : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// FloatProperty: fMinTimeBetweenDisruptorOutputTriggering
+    /// FloatProperty: fMinTimeBetweenDisruptorOutputTriggering<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float fMinTimeBetweenDisruptorOutputTriggering
     {

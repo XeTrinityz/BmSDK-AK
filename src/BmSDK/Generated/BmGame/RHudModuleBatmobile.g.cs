@@ -1350,7 +1350,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: fCurrentHealthProportion
+    /// FloatProperty: fCurrentHealthProportion<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fCurrentHealthProportion
     {
@@ -1404,7 +1405,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: SpecialWeaponValue1
+    /// IntProperty: SpecialWeaponValue1<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SpecialWeaponValue1
     {
@@ -1413,7 +1415,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: SpecialWeaponValue2
+    /// IntProperty: SpecialWeaponValue2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SpecialWeaponValue2
     {
@@ -1422,7 +1425,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: SpecialWeaponValue3
+    /// IntProperty: SpecialWeaponValue3<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SpecialWeaponValue3
     {
@@ -1458,7 +1462,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: CurrentMachineGunAccuracy
+    /// FloatProperty: CurrentMachineGunAccuracy<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentMachineGunAccuracy
     {
@@ -1503,7 +1508,8 @@ public partial class RHudModuleBatmobile : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeOpacity
+    /// FloatProperty: BattleModeOpacity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BattleModeOpacity
     {

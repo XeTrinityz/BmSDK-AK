@@ -133,7 +133,8 @@ public partial class RAudioFearGasTrackerBase : BmSDK.Engine.AkActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// StrProperty: StartFlag
+    /// StrProperty: StartFlag<br/>
+    /// Default: "GasActiveInOverworld"
     /// </summary>
     public unsafe BmSDK.FString StartFlag
     {
@@ -142,7 +143,8 @@ public partial class RAudioFearGasTrackerBase : BmSDK.Engine.AkActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// StrProperty: StopFlag
+    /// StrProperty: StopFlag<br/>
+    /// Default: "Ch7c_Ivy_Has_Died"
     /// </summary>
     public unsafe BmSDK.FString StopFlag
     {

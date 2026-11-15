@@ -91,7 +91,8 @@ public partial class UmbraStreamingVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 740);
 
     /// <summary>
-    /// ByteProperty: UmbraStorageMode
+    /// ByteProperty: UmbraStorageMode<br/>
+    /// Default: USM_WithVolume
     /// </summary>
     public unsafe BmSDK.Engine.UmbraStreamingVolume.EUmbraStorageMode UmbraStorageMode
     {
@@ -109,7 +110,8 @@ public partial class UmbraStreamingVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: UmbraBackfaceCullingOverride
+    /// IntProperty: UmbraBackfaceCullingOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UmbraBackfaceCullingOverride
     {

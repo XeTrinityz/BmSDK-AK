@@ -431,7 +431,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultTexture_Black
+    /// ObjectProperty: DefaultTexture_Black<br/>
+    /// Default: EngineResources.Black
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D DefaultTexture_Black
     {
@@ -440,7 +441,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultTexture_White
+    /// ObjectProperty: DefaultTexture_White<br/>
+    /// Default: EngineResources.WhiteSquareTexture
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D DefaultTexture_White
     {
@@ -449,7 +451,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: ConsoleKey
+    /// NameProperty: ConsoleKey<br/>
+    /// Default: F10
     /// </summary>
     public unsafe BmSDK.FName ConsoleKey
     {
@@ -458,7 +461,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: TypeKey
+    /// NameProperty: TypeKey<br/>
+    /// Default: Quote
     /// </summary>
     public unsafe BmSDK.FName TypeKey
     {
@@ -467,7 +471,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxScrollbackSize
+    /// IntProperty: MaxScrollbackSize<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe int MaxScrollbackSize
     {
@@ -512,7 +517,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HistoryBot
+    /// IntProperty: HistoryBot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HistoryBot
     {
@@ -745,7 +751,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ManualAutoCompleteList
+    /// ArrayProperty: ManualAutoCompleteList<br/>
+    /// Default: ((Command="Exit",Desc="Exit (Exits the game)"),(Command="DebugCreatePlayer 1"),(Command="FreezeAt",Desc="Locks the player view and rendering time."),(Command="SSSwapControllers"),(Command="Open",Desc=...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine._Console.FAutoCompleteCommand> ManualAutoCompleteList
     {
@@ -772,7 +779,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: AutoCompleteTree
+    /// StructProperty: AutoCompleteTree<br/>
+    /// Default: (IndexChar=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine._Console.FAutoCompleteNode AutoCompleteTree
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine._Console.FAutoCompleteNode>(Ptr + 568);

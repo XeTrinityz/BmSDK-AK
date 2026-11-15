@@ -333,7 +333,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// ObjectProperty: PowerStartEvent
+    /// ObjectProperty: PowerStartEvent<br/>
+    /// Default: ww_obj_cityz_10_antenna_power_socket.Play_OBJ_Antenna_Power_Socket
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PowerStartEvent
     {
@@ -342,7 +343,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// ObjectProperty: VehiclePowerStartEvent
+    /// ObjectProperty: VehiclePowerStartEvent<br/>
+    /// Default: ww_obj_cityz_10_antenna_power_socket.Play_Batmobile_Antenna_Power_Loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent VehiclePowerStartEvent
     {
@@ -351,7 +353,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// ObjectProperty: PowerRevsParamName
+    /// ObjectProperty: PowerRevsParamName<br/>
+    /// Default: Ww_Parameters.CityZ_10_Antenna_Power_Revs
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName PowerRevsParamName
     {
@@ -396,7 +399,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// ComponentProperty: ElectricityEffectComp
+    /// ComponentProperty: ElectricityEffectComp<br/>
+    /// Default: BmScript.Default__RWinchableJunctionBox.ElectricityEffectComp0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ElectricityEffectComp
     {
@@ -405,7 +409,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// IntProperty: GaugeMaterialIndex
+    /// IntProperty: GaugeMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int GaugeMaterialIndex
     {
@@ -414,7 +419,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// NameProperty: GaugePowerInputName
+    /// NameProperty: GaugePowerInputName<br/>
+    /// Default: Gauge1
     /// </summary>
     public unsafe BmSDK.FName GaugePowerInputName
     {
@@ -423,7 +429,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// NameProperty: GaugePowerOutputName
+    /// NameProperty: GaugePowerOutputName<br/>
+    /// Default: Gauge2
     /// </summary>
     public unsafe BmSDK.FName GaugePowerOutputName
     {
@@ -468,7 +475,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// BoolProperty: PowerRevsGlobal
+    /// BoolProperty: PowerRevsGlobal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PowerRevsGlobal
     {
@@ -477,7 +485,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// FloatProperty: RevsMultiplier
+    /// FloatProperty: RevsMultiplier<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float RevsMultiplier
     {
@@ -486,7 +495,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// FloatProperty: MaxRevs
+    /// FloatProperty: MaxRevs<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxRevs
     {
@@ -495,7 +505,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// FloatProperty: MaxRevsHoldTime
+    /// FloatProperty: MaxRevsHoldTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxRevsHoldTime
     {
@@ -504,7 +515,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// FloatProperty: RevsVelLimit
+    /// FloatProperty: RevsVelLimit<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RevsVelLimit
     {
@@ -540,7 +552,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// IntProperty: LightMaterialIndex
+    /// IntProperty: LightMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int LightMaterialIndex
     {
@@ -549,7 +562,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// NameProperty: LightParameterName
+    /// NameProperty: LightParameterName<br/>
+    /// Default: LightOn
     /// </summary>
     public unsafe BmSDK.FName LightParameterName
     {
@@ -558,7 +572,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// IntProperty: PoweredLightMaterialIndex
+    /// IntProperty: PoweredLightMaterialIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PoweredLightMaterialIndex
     {
@@ -567,7 +582,8 @@ public partial class RWinchableJunctionBox : BmSDK.BmGame.RWinchableJunctionBoxB
     }
 
     /// <summary>
-    /// NameProperty: PoweredLightParameterName
+    /// NameProperty: PoweredLightParameterName<br/>
+    /// Default: LightOn
     /// </summary>
     public unsafe BmSDK.FName PoweredLightParameterName
     {

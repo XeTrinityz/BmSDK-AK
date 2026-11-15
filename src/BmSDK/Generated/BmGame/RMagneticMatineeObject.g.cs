@@ -471,7 +471,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// ByteProperty: EmitType
+        /// ByteProperty: EmitType<br/>
+        /// Default: MMOET_WhileMoving
         /// </summary>
         public unsafe BmSDK.BmGame.RMagneticMatineeObject.MagMatObjEmitType EmitType
         {
@@ -480,7 +481,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// FloatProperty: MinEmitSpeed
+        /// FloatProperty: MinEmitSpeed<br/>
+        /// Default: 0.001
         /// </summary>
         public unsafe float MinEmitSpeed
         {
@@ -489,7 +491,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// FloatProperty: MaxEmitSpeed
+        /// FloatProperty: MaxEmitSpeed<br/>
+        /// Default: 0.001
         /// </summary>
         public unsafe float MaxEmitSpeed
         {
@@ -498,7 +501,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// NameProperty: FadeParameterName
+        /// NameProperty: FadeParameterName<br/>
+        /// Default: Alpha
         /// </summary>
         public unsafe BmSDK.FName FadeParameterName
         {
@@ -535,7 +539,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     public partial record struct FMagneticMatineeMovementProperties
     {
         /// <summary>
-        /// FloatProperty: Damping
+        /// FloatProperty: Damping<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float Damping
         {
@@ -544,7 +549,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// FloatProperty: Mass
+        /// FloatProperty: Mass<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Mass
         {
@@ -553,7 +559,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
         }
 
         /// <summary>
-        /// FloatProperty: EndCollisionRestitution
+        /// FloatProperty: EndCollisionRestitution<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float EndCollisionRestitution
         {
@@ -671,7 +678,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// StructProperty: Gravity
+    /// StructProperty: Gravity<br/>
+    /// Default: (Z=-1500)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Gravity
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 964);
@@ -701,7 +709,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpringForce
+    /// FloatProperty: MaxSpringForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxSpringForce
     {
@@ -719,7 +728,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: SpringDamping
+    /// FloatProperty: SpringDamping<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float SpringDamping
     {
@@ -728,19 +738,22 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// StructProperty: ForwardMovementProperties
+    /// StructProperty: ForwardMovementProperties<br/>
+    /// Default: (Damping=0.1,Mass=1,EndCollisionRestitution=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RMagneticMatineeObject.FMagneticMatineeMovementProperties ForwardMovementProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RMagneticMatineeObject.FMagneticMatineeMovementProperties>(Ptr + 1008);
 
     /// <summary>
-    /// StructProperty: BackwardMovementProperties
+    /// StructProperty: BackwardMovementProperties<br/>
+    /// Default: (Damping=0.1,Mass=1,EndCollisionRestitution=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RMagneticMatineeObject.FMagneticMatineeMovementProperties BackwardMovementProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RMagneticMatineeObject.FMagneticMatineeMovementProperties>(Ptr + 1020);
 
     /// <summary>
-    /// NameProperty: InitialPositionMatineeEventName
+    /// NameProperty: InitialPositionMatineeEventName<br/>
+    /// Default: Initial_Position
     /// </summary>
     public unsafe BmSDK.FName InitialPositionMatineeEventName
     {
@@ -749,7 +762,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// NameProperty: StopPositionMatineeEventName
+    /// NameProperty: StopPositionMatineeEventName<br/>
+    /// Default: Stop_Position
     /// </summary>
     public unsafe BmSDK.FName StopPositionMatineeEventName
     {
@@ -758,7 +772,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// NameProperty: SpringPositionMatineeEventName
+    /// NameProperty: SpringPositionMatineeEventName<br/>
+    /// Default: Spring_Position
     /// </summary>
     public unsafe BmSDK.FName SpringPositionMatineeEventName
     {
@@ -872,7 +887,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: DirectionTestDeltaTime
+    /// FloatProperty: DirectionTestDeltaTime<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float DirectionTestDeltaTime
     {
@@ -920,13 +936,15 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// StructProperty: Direction
+    /// StructProperty: Direction<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Direction
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1224);
 
     /// <summary>
-    /// FloatProperty: MaxPosSpeed
+    /// FloatProperty: MaxPosSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MaxPosSpeed
     {
@@ -935,7 +953,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxNegSpeed
+    /// FloatProperty: MaxNegSpeed<br/>
+    /// Default: -300
     /// </summary>
     public unsafe float MaxNegSpeed
     {
@@ -944,7 +963,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: StartSpeed
+    /// FloatProperty: StartSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StartSpeed
     {
@@ -953,7 +973,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: StopSpeed
+    /// FloatProperty: StopSpeed<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float StopSpeed
     {
@@ -962,7 +983,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: MinBumpSpeed
+    /// FloatProperty: MinBumpSpeed<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MinBumpSpeed
     {
@@ -989,7 +1011,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: AudioRestartSpeed
+    /// FloatProperty: AudioRestartSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AudioRestartSpeed
     {

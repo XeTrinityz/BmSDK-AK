@@ -246,7 +246,8 @@ public partial class RBMDeathCutscene_FinalCounterCam : BmSDK.BmGame.RBMDeathCut
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CamTimer
     {
@@ -264,7 +265,8 @@ public partial class RBMDeathCutscene_FinalCounterCam : BmSDK.BmGame.RBMDeathCut
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeed
+    /// FloatProperty: FOVSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float FOVSpeed
     {
@@ -273,7 +275,8 @@ public partial class RBMDeathCutscene_FinalCounterCam : BmSDK.BmGame.RBMDeathCut
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeedDecel
+    /// FloatProperty: FOVSpeedDecel<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float FOVSpeedDecel
     {

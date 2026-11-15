@@ -180,13 +180,15 @@ public partial class RStealthTakedownStage_DropToGrab : BmSDK.BmGame.RStealthTak
     }
 
     /// <summary>
-    /// StructProperty: ShortDropBackAnimSet
+    /// StructProperty: ShortDropBackAnimSet<br/>
+    /// Default: (AttackerAnimation=(Grab_From_Step_Off_Ledge_ShortDrop),VictimAnimations=((Anims=(Grab_From_Step_Off_Ledge_ShortDrop))),MeetingTime=0.25,CameraCollision=true,fCameraBlendInTime=0.5,StrikeBone=Bip01_Pe...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet ShortDropBackAnimSet
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet>(Ptr + 1700);
 
     /// <summary>
-    /// StructProperty: ShortDropFrontAnimSet
+    /// StructProperty: ShortDropFrontAnimSet<br/>
+    /// Default: (AttackerAnimation=(Grab_From_Step_Off_Ledge_Front_ShortDrop),VictimAnimations=((Anims=(Grab_From_Step_Off_Ledge_Front_ShortDrop))),MeetingTime=0.25,CameraCollision=true,fCameraBlendInTime=0.5,StrikeB...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet ShortDropFrontAnimSet
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet>(Ptr + 2008);

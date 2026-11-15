@@ -196,7 +196,8 @@ public partial class RPickup_RiddlerCatwoman : BmSDK.BmGame.RPickupBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: Light
+    /// ComponentProperty: Light<br/>
+    /// Default: BmScript.Default__RPickup_RiddlerCatwoman.CheapLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent Light
     {

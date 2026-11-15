@@ -119,7 +119,8 @@ public partial class RNPCCrowdSpawner : BmSDK.BmGame.RSeqAct_CombatSpawnerBase, 
     }
 
     /// <summary>
-    /// FloatProperty: DelayBetweenSpawns
+    /// FloatProperty: DelayBetweenSpawns<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float DelayBetweenSpawns
     {

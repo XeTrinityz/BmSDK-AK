@@ -371,7 +371,8 @@ public partial class OnlineGameSearch : BmSDK.Engine.Settings, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxSearchResults
+    /// IntProperty: MaxSearchResults<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int MaxSearchResults
     {
@@ -413,7 +414,8 @@ public partial class OnlineGameSearch : BmSDK.Engine.Settings, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: GameSettingsClass
+    /// ClassProperty: GameSettingsClass<br/>
+    /// Default: Engine.OnlineGameSettings
     /// </summary>
     public unsafe BmSDK.Class GameSettingsClass
     {
@@ -461,7 +463,8 @@ public partial class OnlineGameSearch : BmSDK.Engine.Settings, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PingBucketSize
+    /// IntProperty: PingBucketSize<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int PingBucketSize
     {

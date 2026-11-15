@@ -94,7 +94,8 @@ public partial class RSpecialMoveConfig_HarpoonThug : BmSDK.BmGame.RSpecialMoveC
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSpecialMoveConfig_HarpoonThug.FBatclawBatmanAnimConfig>(Ptr + 416);
 
     /// <summary>
-    /// StructProperty: FireScreenShake
+    /// StructProperty: FireScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct FireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 452);
@@ -136,7 +137,8 @@ public partial class RSpecialMoveConfig_HarpoonThug : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MinimumReactionRange
+    /// FloatProperty: MinimumReactionRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MinimumReactionRange
     {

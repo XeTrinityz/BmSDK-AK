@@ -203,7 +203,8 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
     }
 
     /// <summary>
-    /// FloatProperty: DestroyPartRadiusFactor
+    /// FloatProperty: DestroyPartRadiusFactor<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float DestroyPartRadiusFactor
     {
@@ -275,7 +276,8 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
     }
 
     /// <summary>
-    /// FloatProperty: FracPartGravScale
+    /// FloatProperty: FracPartGravScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FracPartGravScale
     {
@@ -284,7 +286,8 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
     }
 
     /// <summary>
-    /// ByteProperty: AsleepRBChannel
+    /// ByteProperty: AsleepRBChannel<br/>
+    /// Default: RBCC_GameplayPhysics
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel AsleepRBChannel
     {

@@ -103,7 +103,8 @@ public partial class RBarkConvoPawnRef_BestForFlagType : BmSDK.BmGame.RBarkConvo
     }
 
     /// <summary>
-    /// BoolProperty: bAllowNoFlagFoundFallback
+    /// BoolProperty: bAllowNoFlagFoundFallback<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowNoFlagFoundFallback
     {

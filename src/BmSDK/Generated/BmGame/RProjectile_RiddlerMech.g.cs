@@ -110,7 +110,8 @@ public partial class RProjectile_RiddlerMech : BmSDK.BmGame.RProjectile, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: ProjFx
+    /// ComponentProperty: ProjFx<br/>
+    /// Default: BmGame.Default__RProjectile_RiddlerMech.NewProjFx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ProjFx
     {

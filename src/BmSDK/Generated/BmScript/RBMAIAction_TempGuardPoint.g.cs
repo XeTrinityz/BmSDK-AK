@@ -232,7 +232,8 @@ public partial class RBMAIAction_TempGuardPoint : BmSDK.BmGame.RBMAIAction, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: WatchAimWidth
+    /// FloatProperty: WatchAimWidth<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float WatchAimWidth
     {

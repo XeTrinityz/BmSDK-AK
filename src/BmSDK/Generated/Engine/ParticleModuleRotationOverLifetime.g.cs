@@ -79,13 +79,15 @@ public partial class ParticleModuleRotationOverLifetime : BmSDK.Engine.ParticleM
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: RotationOverLife
+    /// StructProperty: RotationOverLife<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleRotationOverLifetime.DistributionRotOverLife)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat RotationOverLife
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);
 
     /// <summary>
-    /// BoolProperty: Scale
+    /// BoolProperty: Scale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Scale
     {

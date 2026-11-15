@@ -126,7 +126,8 @@ public partial class RHelicopterControlVolume : BmSDK.Engine.Volume, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: ForceHelicopterToTopOfVolume
+    /// BoolProperty: ForceHelicopterToTopOfVolume<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ForceHelicopterToTopOfVolume
     {

@@ -422,7 +422,8 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     }
 
     /// <summary>
-    /// ObjectProperty: TunerFFWaveForm
+    /// ObjectProperty: TunerFFWaveForm<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_CalibrateVoiceSynthesiser.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TunerFFWaveForm
     {
@@ -431,7 +432,8 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     }
 
     /// <summary>
-    /// ObjectProperty: myBank
+    /// ObjectProperty: myBank<br/>
+    /// Default: Ww_CHR_VoiceSynthesizer.CHR_VoiceSynthesizer
     /// </summary>
     public unsafe BmSDK.Engine.AkBank myBank
     {
@@ -548,7 +550,8 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: FlashRumbleValue
+    /// FloatProperty: FlashRumbleValue<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FlashRumbleValue
     {

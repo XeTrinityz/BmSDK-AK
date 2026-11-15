@@ -138,7 +138,8 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// ObjectProperty: PropertySheet
+    /// ObjectProperty: PropertySheet<br/>
+    /// Default: BmGame.Default__RSeqAct_StartGauntletMovieBase.propSheet
     /// </summary>
     public unsafe BmSDK.Engine.AkProperties PropertySheet
     {

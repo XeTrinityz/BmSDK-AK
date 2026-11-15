@@ -255,7 +255,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: WaterDepth
+    /// FloatProperty: WaterDepth<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WaterDepth
     {
@@ -309,7 +310,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Density
+    /// FloatProperty: Density<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float Density
     {
@@ -318,7 +320,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Viscosity
+    /// FloatProperty: Viscosity<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float Viscosity
     {
@@ -327,7 +330,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AngularViscosityMultiplier
+    /// FloatProperty: AngularViscosityMultiplier<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float AngularViscosityMultiplier
     {
@@ -336,7 +340,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AngularViscosityCurveEndSpeed
+    /// FloatProperty: AngularViscosityCurveEndSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AngularViscosityCurveEndSpeed
     {
@@ -345,7 +350,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RightingTorqueStrength
+    /// FloatProperty: RightingTorqueStrength<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float RightingTorqueStrength
     {
@@ -354,7 +360,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MinExtentInclusionTolerance
+    /// FloatProperty: MinExtentInclusionTolerance<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MinExtentInclusionTolerance
     {

@@ -120,7 +120,8 @@ public partial class RDestroyByTypeVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

@@ -132,7 +132,8 @@ public partial class SeqAct_Delay : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: DefaultDuration
+    /// FloatProperty: DefaultDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DefaultDuration
     {
@@ -141,7 +142,8 @@ public partial class SeqAct_Delay : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {

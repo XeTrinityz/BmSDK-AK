@@ -2413,7 +2413,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: SubMapDefaults
+    /// ArrayProperty: SubMapDefaults<br/>
+    /// Default: ((MapName="Default",Distance=40000),(MapName="Lockup",Distance=30000),(MapName="Film",Distance=30000),(MapName="Ivy",Distance=25000),(MapName="Hideout",Distance=40000),(MapName="Stagg",Distance=80000)...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmScript.RGFxMovieBackScreen_Normal.FSubMapDefault> SubMapDefaults
     {
@@ -2422,7 +2423,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: Dialogs
+    /// ArrayProperty: Dialogs<br/>
+    /// Default: ((RefName="ThreatTutorial_1",AkLineRef=Main_Ch03_S01_Threat_Level_Intro.Lines.Scenes_Gauntlet_Alfred_Ch03_S01_Threat_Level_Intro_04,Who="TT"),(RefName="ThreatTutorial_2",AkLineRef=Main_Ch03_S01_Threat...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmScript.RGFxMovieBackScreen_Normal.FDialogEntry> Dialogs
     {
@@ -2476,7 +2478,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// IntProperty: ThreatLevelAreaLast
+    /// IntProperty: ThreatLevelAreaLast<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ThreatLevelAreaLast
     {
@@ -2485,7 +2488,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: ThreatLevels
+    /// ArrayProperty: ThreatLevels<br/>
+    /// Default: (0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> ThreatLevels
     {
@@ -2503,7 +2507,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: OW_IncludeTheseExceptions
+    /// ArrayProperty: OW_IncludeTheseExceptions<br/>
+    /// Default: ("CityX_T10","CityX_T11","CityX_M","CityX_NE","Ace_B2")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> OW_IncludeTheseExceptions
     {
@@ -2512,7 +2517,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: OW_ExcludeTheseExceptions
+    /// ArrayProperty: OW_ExcludeTheseExceptions<br/>
+    /// Default: ("Stagg_B3")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> OW_ExcludeTheseExceptions
     {
@@ -2755,7 +2761,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerItems_InBuildings
+    /// ArrayProperty: RiddlerItems_InBuildings<br/>
+    /// Default: ("CityZ_Riddler_5","CityX_Riddler_8","CityX_Riddler_33","CityX_Riddler_26","CityZ_Riddler_25","CityY_Riddler_30","CityY_Pickup_30")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> RiddlerItems_InBuildings
     {
@@ -2764,7 +2771,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerItem_OffsetNames
+    /// ArrayProperty: RiddlerItem_OffsetNames<br/>
+    /// Default: ("HideOut_Riddler_20","HideOut_Riddler_34","HideOut_Pickup_9","HideOut_Pickup_10","HideOut_Pickup_11","HideOut_Pickup_12","HideOut_Pickup_13","HideOut_Pickup_18","HideOut_Pickup_19","HideOut_Pickup_20...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> RiddlerItem_OffsetNames
     {
@@ -2773,7 +2781,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerItem_OffsetValues
+    /// ArrayProperty: RiddlerItem_OffsetValues<br/>
+    /// Default: (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
     /// </summary>
     public unsafe BmSDK.TArray<int> RiddlerItem_OffsetValues
     {
@@ -2791,7 +2800,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradePrompts
+    /// ArrayProperty: UpgradePrompts<br/>
+    /// Default: ((Id=CI_AerialAttack,Label="00"),(Id=CI_AimGadget,Label="01"),(Id=CI_AimGadget,Label="02"),(Id=CI_AimGadget,Label="03"),(Id=CI_AimGadget,Label="04"),(Id=CI_AimGadget,Label="05"),(Id=CI_AimGadget,Label...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmScript.RGFxMovieBackScreen_Normal.FPromptEntry> UpgradePrompts
     {
@@ -2863,7 +2873,8 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     }
 
     /// <summary>
-    /// ObjectProperty: MinigameFFWaveForm
+    /// ObjectProperty: MinigameFFWaveForm<br/>
+    /// Default: BmScript.Default__RGFxMovieBackScreen_Normal.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform MinigameFFWaveForm
     {

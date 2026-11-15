@@ -151,7 +151,8 @@ public partial class RSpecialMoveConfig_CwPounceOnThug : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: SmashRadius
+    /// FloatProperty: SmashRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SmashRadius
     {
@@ -160,7 +161,8 @@ public partial class RSpecialMoveConfig_CwPounceOnThug : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// StructProperty: SmashScreenShake
+    /// StructProperty: SmashScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct SmashScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 524);

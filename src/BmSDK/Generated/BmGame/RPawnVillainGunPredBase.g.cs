@@ -851,7 +851,8 @@ public partial class RPawnVillainGunPredBase : BmSDK.BmGame.RPawnVillainGunBase,
     }
 
     /// <summary>
-    /// IntProperty: GrenadeLeftIndex
+    /// IntProperty: GrenadeLeftIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GrenadeLeftIndex
     {
@@ -860,7 +861,8 @@ public partial class RPawnVillainGunPredBase : BmSDK.BmGame.RPawnVillainGunBase,
     }
 
     /// <summary>
-    /// IntProperty: GrenadeRightIndex
+    /// IntProperty: GrenadeRightIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GrenadeRightIndex
     {
@@ -941,7 +943,8 @@ public partial class RPawnVillainGunPredBase : BmSDK.BmGame.RPawnVillainGunBase,
     }
 
     /// <summary>
-    /// FloatProperty: GoggleBlindTime
+    /// FloatProperty: GoggleBlindTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float GoggleBlindTime
     {

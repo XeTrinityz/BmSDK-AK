@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: HeightDifferenceForJumpStart
+    /// FloatProperty: HeightDifferenceForJumpStart<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float HeightDifferenceForJumpStart
     {
@@ -160,7 +161,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: StartWhipInAirGravityOverride
+    /// FloatProperty: StartWhipInAirGravityOverride<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float StartWhipInAirGravityOverride
     {
@@ -205,7 +207,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumEllipseHeight
+    /// FloatProperty: PendulumEllipseHeight<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PendulumEllipseHeight
     {
@@ -214,7 +217,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumEllipseLength
+    /// FloatProperty: PendulumEllipseLength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float PendulumEllipseLength
     {
@@ -223,7 +227,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumSwingSpeedMultiplier
+    /// FloatProperty: PendulumSwingSpeedMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PendulumSwingSpeedMultiplier
     {
@@ -232,7 +237,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumSwingSlowdownAngleDivisor
+    /// FloatProperty: PendulumSwingSlowdownAngleDivisor<br/>
+    /// Default: 1.4
     /// </summary>
     public unsafe float PendulumSwingSlowdownAngleDivisor
     {
@@ -241,7 +247,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumMaximumHeightOffset
+    /// FloatProperty: PendulumMaximumHeightOffset<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float PendulumMaximumHeightOffset
     {
@@ -250,7 +257,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: PendulumTurningSpeed
+    /// FloatProperty: PendulumTurningSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PendulumTurningSpeed
     {
@@ -259,7 +267,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: WhipClimbSpeed
+    /// FloatProperty: WhipClimbSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float WhipClimbSpeed
     {
@@ -268,7 +277,8 @@ public partial class RSpecialMoveConfig_WhipRappel_Catwoman : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: LedgeMountButtonHoldTime
+    /// FloatProperty: LedgeMountButtonHoldTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float LedgeMountButtonHoldTime
     {

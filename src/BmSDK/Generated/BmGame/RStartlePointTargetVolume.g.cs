@@ -175,7 +175,8 @@ public partial class RStartlePointTargetVolume : BmSDK.Engine.Volume, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: iMaxChecksPerFrame
+    /// IntProperty: iMaxChecksPerFrame<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iMaxChecksPerFrame
     {

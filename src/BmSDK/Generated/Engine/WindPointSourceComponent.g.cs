@@ -88,7 +88,8 @@ public partial class WindPointSourceComponent : BmSDK.Engine.WindDirectionalSour
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float Radius
     {

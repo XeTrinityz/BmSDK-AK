@@ -83,7 +83,8 @@ public partial class RIncendiaryGrenadeCharge_Base : BmSDK.Engine.Actor, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: timeTillIgnition
+    /// FloatProperty: timeTillIgnition<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float timeTillIgnition
     {
@@ -92,7 +93,8 @@ public partial class RIncendiaryGrenadeCharge_Base : BmSDK.Engine.Actor, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: fireDuration
+    /// FloatProperty: fireDuration<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float fireDuration
     {

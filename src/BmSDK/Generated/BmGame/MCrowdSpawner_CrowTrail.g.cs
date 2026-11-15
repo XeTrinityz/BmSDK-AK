@@ -124,7 +124,8 @@ public partial class MCrowdSpawner_CrowTrail : BmSDK.BmGame.RCrowdSpawner, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SpawnSize
+    /// FloatProperty: SpawnSize<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float SpawnSize
     {

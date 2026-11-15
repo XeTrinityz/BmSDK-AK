@@ -318,7 +318,8 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 644);
 
     /// <summary>
-    /// BoolProperty: bWalkingClockwise
+    /// BoolProperty: bWalkingClockwise<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWalkingClockwise
     {
@@ -345,7 +346,8 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToWalkAt
+    /// FloatProperty: DistanceToWalkAt<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float DistanceToWalkAt
     {
@@ -354,7 +356,8 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
     }
 
     /// <summary>
-    /// FloatProperty: LegYawStr
+    /// FloatProperty: LegYawStr<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float LegYawStr
     {

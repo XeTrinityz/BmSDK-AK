@@ -384,7 +384,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DustComponent
+    /// ComponentProperty: DustComponent<br/>
+    /// Default: Engine.Default__RDustVolume.DustComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RDustComponent DustComponent
     {
@@ -393,7 +394,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DustMap
+    /// ComponentProperty: DustMap<br/>
+    /// Default: Engine.Default__RDustVolume.DustMapComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RDustMapComponent DustMap
     {
@@ -456,7 +458,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: ThickFearGasComponent
+    /// ComponentProperty: ThickFearGasComponent<br/>
+    /// Default: Engine.Default__RDustVolume.ThickFearGasC
     /// </summary>
     public unsafe BmSDK.Engine.RThickFearGasComponent ThickFearGasComponent
     {
@@ -465,7 +468,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DustGasFollowVFX
+    /// ComponentProperty: DustGasFollowVFX<br/>
+    /// Default: Engine.Default__RDustVolume.DustGasFollowPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DustGasFollowVFX
     {
@@ -474,7 +478,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DustSparkBigVFX
+    /// ComponentProperty: DustSparkBigVFX<br/>
+    /// Default: Engine.Default__RDustVolume.DustSparkBigPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DustSparkBigVFX
     {
@@ -483,7 +488,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DustSparkVFX
+    /// ComponentProperty: DustSparkVFX<br/>
+    /// Default: Engine.Default__RDustVolume.DustSparkPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DustSparkVFX
     {
@@ -492,7 +498,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: FarDustMesh
+    /// ComponentProperty: FarDustMesh<br/>
+    /// Default: Engine.Default__RDustVolume.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FarDustMesh
     {
@@ -501,7 +508,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DustTrailLifeSpan
+    /// FloatProperty: DustTrailLifeSpan<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float DustTrailLifeSpan
     {
@@ -510,7 +518,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DustTopFXLifeSpan
+    /// FloatProperty: DustTopFXLifeSpan<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DustTopFXLifeSpan
     {
@@ -519,7 +528,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bFearGasActive
+    /// BoolProperty: bFearGasActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFearGasActive
     {
@@ -528,7 +538,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bStateTarget
+    /// BoolProperty: bStateTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStateTarget
     {
@@ -555,7 +566,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: InterpSpeed
+    /// FloatProperty: InterpSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float InterpSpeed
     {
@@ -564,7 +576,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: InterpCurrent
+    /// FloatProperty: InterpCurrent<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InterpCurrent
     {
@@ -573,7 +586,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: InterpTarget
+    /// FloatProperty: InterpTarget<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InterpTarget
     {
@@ -609,7 +623,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: numTrails
+    /// IntProperty: numTrails<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int numTrails
     {
@@ -645,7 +660,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: numGasTopFX
+    /// IntProperty: numGasTopFX<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int numGasTopFX
     {

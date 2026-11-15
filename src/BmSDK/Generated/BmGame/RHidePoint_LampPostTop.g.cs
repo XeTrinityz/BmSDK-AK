@@ -325,7 +325,8 @@ public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, 
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionShape
+    /// ComponentProperty: CollisionShape<br/>
+    /// Default: BmGame.Default__RHidePoint_LampPostTop.AggColl
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent CollisionShape
     {
@@ -334,7 +335,8 @@ public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, 
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfJokerHallucination
+    /// FloatProperty: ChanceOfJokerHallucination<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ChanceOfJokerHallucination
     {
@@ -343,7 +345,8 @@ public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, 
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenJokerHallucinationOverlays
+    /// FloatProperty: TimeBetweenJokerHallucinationOverlays<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeBetweenJokerHallucinationOverlays
     {
@@ -400,7 +403,8 @@ public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, 
     }
 
     /// <summary>
-    /// FloatProperty: XAxisSpeed
+    /// FloatProperty: XAxisSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float XAxisSpeed
     {
@@ -409,7 +413,8 @@ public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, 
     }
 
     /// <summary>
-    /// FloatProperty: AccelTime
+    /// FloatProperty: AccelTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AccelTime
     {

@@ -337,7 +337,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 740);
 
     /// <summary>
-    /// BoolProperty: bVelocityAffectsWalking
+    /// BoolProperty: bVelocityAffectsWalking<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVelocityAffectsWalking
     {
@@ -364,7 +365,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEntryPain
+    /// BoolProperty: bEntryPain<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEntryPain
     {
@@ -472,7 +474,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GroundFriction
+    /// FloatProperty: GroundFriction<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float GroundFriction
     {
@@ -481,7 +484,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TerminalVelocity
+    /// FloatProperty: TerminalVelocity<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float TerminalVelocity
     {
@@ -499,7 +503,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: Engine.DamageType
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -517,7 +522,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FluidFriction
+    /// FloatProperty: FluidFriction<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FluidFriction
     {
@@ -526,7 +532,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PainInterval
+    /// FloatProperty: PainInterval<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PainInterval
     {
@@ -544,7 +551,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDampingForce
+    /// FloatProperty: MaxDampingForce<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float MaxDampingForce
     {

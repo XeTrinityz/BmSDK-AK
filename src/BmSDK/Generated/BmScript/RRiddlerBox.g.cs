@@ -117,7 +117,8 @@ public partial class RRiddlerBox : BmSDK.BmGame.RRiddlerBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: TimeToDrillIn
+    /// FloatProperty: TimeToDrillIn<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeToDrillIn
     {
@@ -180,7 +181,8 @@ public partial class RRiddlerBox : BmSDK.BmGame.RRiddlerBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: SizeCheck2DForSink
+    /// FloatProperty: SizeCheck2DForSink<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float SizeCheck2DForSink
     {

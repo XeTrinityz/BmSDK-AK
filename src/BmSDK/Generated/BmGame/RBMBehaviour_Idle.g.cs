@@ -257,7 +257,8 @@ public partial class RBMBehaviour_Idle : BmSDK.BmGame.RBMBehaviour, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bLookAtPlayer
+    /// BoolProperty: bLookAtPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookAtPlayer
     {

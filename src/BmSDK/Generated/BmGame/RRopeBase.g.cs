@@ -346,7 +346,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
     }
 
     /// <summary>
-    /// ComponentProperty: RopeComponent
+    /// ComponentProperty: RopeComponent<br/>
+    /// Default: BmGame.Default__RRopeBase.RopeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RRopeComponent RopeComponent
     {
@@ -364,7 +365,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
     }
 
     /// <summary>
-    /// BoolProperty: IsRopeBatarangable
+    /// BoolProperty: IsRopeBatarangable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsRopeBatarangable
     {
@@ -382,7 +384,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
     }
 
     /// <summary>
-    /// BoolProperty: bBatarangCameraFollowsAttachedActor
+    /// BoolProperty: bBatarangCameraFollowsAttachedActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBatarangCameraFollowsAttachedActor
     {
@@ -427,7 +430,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangInteractionComp
+    /// ComponentProperty: BatarangInteractionComp<br/>
+    /// Default: BmGame.Default__RRopeBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatarangInteractionComp
     {
@@ -436,7 +440,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
     }
 
     /// <summary>
-    /// FloatProperty: InvestigatePerc
+    /// FloatProperty: InvestigatePerc<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float InvestigatePerc
     {

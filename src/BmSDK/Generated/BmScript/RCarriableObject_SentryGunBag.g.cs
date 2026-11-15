@@ -121,7 +121,8 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     }
 
     /// <summary>
-    /// ComponentProperty: GadgetInteractions
+    /// ComponentProperty: GadgetInteractions<br/>
+    /// Default: BmScript.Default__RCarriableObject_SentryGunBag.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent GadgetInteractions
     {
@@ -130,7 +131,8 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     }
 
     /// <summary>
-    /// ObjectProperty: DisruptedMIC
+    /// ObjectProperty: DisruptedMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant DisruptedMIC
     {
@@ -139,7 +141,8 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     }
 
     /// <summary>
-    /// ObjectProperty: NormalMIC
+    /// ObjectProperty: NormalMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant NormalMIC
     {

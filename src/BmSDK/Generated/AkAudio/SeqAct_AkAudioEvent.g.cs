@@ -106,7 +106,8 @@ public partial class SeqAct_AkAudioEvent : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: PendingCallbacks
+    /// IntProperty: PendingCallbacks<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PendingCallbacks
     {

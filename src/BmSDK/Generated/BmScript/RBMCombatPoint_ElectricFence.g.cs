@@ -271,7 +271,8 @@ public partial class RBMCombatPoint_ElectricFence : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: FenceMesh
+    /// ComponentProperty: FenceMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFence.FenceMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FenceMesh
     {
@@ -280,7 +281,8 @@ public partial class RBMCombatPoint_ElectricFence : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: FenceDamagedMesh
+    /// ComponentProperty: FenceDamagedMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFence.FenceDamagedMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FenceDamagedMesh
     {
@@ -289,7 +291,8 @@ public partial class RBMCombatPoint_ElectricFence : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightStaticMesh
+    /// ComponentProperty: InRangeHighlightStaticMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFence.InRangeHighlightStaticComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InRangeHighlightStaticMesh
     {

@@ -79,7 +79,8 @@ public partial class SeqEvent_Console : BmSDK.Engine.SequenceEvent, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: ConsoleEventName
+    /// NameProperty: ConsoleEventName<br/>
+    /// Default: Default
     /// </summary>
     public unsafe BmSDK.FName ConsoleEventName
     {
@@ -88,7 +89,8 @@ public partial class SeqEvent_Console : BmSDK.Engine.SequenceEvent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StrProperty: EventDesc
+    /// StrProperty: EventDesc<br/>
+    /// Default: "No description"
     /// </summary>
     public unsafe BmSDK.FString EventDesc
     {

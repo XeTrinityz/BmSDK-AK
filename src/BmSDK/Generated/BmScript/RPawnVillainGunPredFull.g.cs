@@ -509,7 +509,8 @@ public partial class RPawnVillainGunPredFull : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// NameProperty: ArmbandSocket
+    /// NameProperty: ArmbandSocket<br/>
+    /// Default: Armband
     /// </summary>
     public unsafe BmSDK.FName ArmbandSocket
     {

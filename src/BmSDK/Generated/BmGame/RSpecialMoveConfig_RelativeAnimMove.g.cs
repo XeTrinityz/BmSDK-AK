@@ -172,7 +172,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// ByteProperty: AimAt
+    /// ByteProperty: AimAt<br/>
+    /// Default: ACD_NullAimingConfig
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimAt
     {
@@ -208,7 +209,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// BoolProperty: FollowBaseYawOnly
+    /// BoolProperty: FollowBaseYawOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FollowBaseYawOnly
     {
@@ -217,7 +219,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// BoolProperty: bCrouchDuringAnim
+    /// BoolProperty: bCrouchDuringAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCrouchDuringAnim
     {
@@ -271,7 +274,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// BoolProperty: bAlignRotationWithNormal
+    /// BoolProperty: bAlignRotationWithNormal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignRotationWithNormal
     {
@@ -298,7 +302,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// BoolProperty: bAlignPosition
+    /// BoolProperty: bAlignPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignPosition
     {
@@ -397,7 +402,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: EndMovementStance
+    /// NameProperty: EndMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName EndMovementStance
     {
@@ -406,7 +412,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: KillXYVelocityScale
+    /// FloatProperty: KillXYVelocityScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float KillXYVelocityScale
     {
@@ -415,7 +422,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: OptimumDistance
+    /// FloatProperty: OptimumDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OptimumDistance
     {
@@ -424,7 +432,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistanceCorrection
+    /// FloatProperty: MaxDistanceCorrection<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MaxDistanceCorrection
     {
@@ -433,7 +442,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: MeetingTime
+    /// FloatProperty: MeetingTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MeetingTime
     {
@@ -451,7 +461,8 @@ public partial class RSpecialMoveConfig_RelativeAnimMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: OverrideGlideSpeed
+    /// FloatProperty: OverrideGlideSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideGlideSpeed
     {

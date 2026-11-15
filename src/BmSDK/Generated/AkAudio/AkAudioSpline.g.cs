@@ -107,7 +107,8 @@ public partial class AkAudioSpline : BmSDK.Engine.SplineActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SplineAudioFollowListener
+    /// ByteProperty: SplineAudioFollowListener<br/>
+    /// Default: AK_LISTENER_CAMERA_1
     /// </summary>
     public unsafe BmSDK.Engine.AkWwise.EListenerID SplineAudioFollowListener
     {

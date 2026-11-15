@@ -143,7 +143,8 @@ public partial class RSeqAct_SlowMo : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: GameSpeed
+    /// FloatProperty: GameSpeed<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float GameSpeed
     {

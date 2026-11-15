@@ -88,7 +88,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// NameProperty: EndPose
+    /// NameProperty: EndPose<br/>
+    /// Default: Grapple
     /// </summary>
     public unsafe BmSDK.FName EndPose
     {
@@ -97,7 +98,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// NameProperty: TransitionName
+    /// NameProperty: TransitionName<br/>
+    /// Default: FireGrapple
     /// </summary>
     public unsafe BmSDK.FName TransitionName
     {
@@ -106,7 +108,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// NameProperty: GrappleAimPose
+    /// NameProperty: GrappleAimPose<br/>
+    /// Default: GrappleAim
     /// </summary>
     public unsafe BmSDK.FName GrappleAimPose
     {
@@ -124,7 +127,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// BoolProperty: bAlignCamera
+    /// BoolProperty: bAlignCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignCamera
     {
@@ -160,7 +164,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// BoolProperty: GrappleStartsWhenFlying
+    /// BoolProperty: GrappleStartsWhenFlying<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool GrappleStartsWhenFlying
     {
@@ -169,7 +174,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// BoolProperty: UpdateReferenceRot
+    /// BoolProperty: UpdateReferenceRot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateReferenceRot
     {
@@ -187,7 +193,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: GrappleFireTime
+    /// FloatProperty: GrappleFireTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float GrappleFireTime
     {
@@ -196,7 +203,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: TightenTime
+    /// FloatProperty: TightenTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float TightenTime
     {
@@ -205,7 +213,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: FallingGrappleTime
+    /// FloatProperty: FallingGrappleTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FallingGrappleTime
     {
@@ -214,7 +223,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: OverrideGravity
+    /// FloatProperty: OverrideGravity<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float OverrideGravity
     {
@@ -232,7 +242,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRopeTighteningDelay
+    /// FloatProperty: OverrideRopeTighteningDelay<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideRopeTighteningDelay
     {
@@ -250,7 +261,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleAnimScale
+    /// FloatProperty: MaxGrappleAnimScale<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MaxGrappleAnimScale
     {
@@ -259,7 +271,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: IdealGrappleLength
+    /// FloatProperty: IdealGrappleLength<br/>
+    /// Default: 3700
     /// </summary>
     public unsafe float IdealGrappleLength
     {
@@ -268,7 +281,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrappleYaw
+    /// FloatProperty: MaxGrappleYaw<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float MaxGrappleYaw
     {
@@ -277,7 +291,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrapplePitch
+    /// FloatProperty: MaxGrapplePitch<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float MaxGrapplePitch
     {
@@ -286,7 +301,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: GrapplePitchAngleOffset
+    /// FloatProperty: GrapplePitchAngleOffset<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float GrapplePitchAngleOffset
     {
@@ -313,7 +329,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// NameProperty: CustomTravelAnim
+    /// NameProperty: CustomTravelAnim<br/>
+    /// Default: GrappleTravel
     /// </summary>
     public unsafe BmSDK.FName CustomTravelAnim
     {
@@ -322,7 +339,8 @@ public partial class RSpecialMoveConfig_FireGrapple : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// ByteProperty: OverrideAimingConfig
+    /// ByteProperty: OverrideAimingConfig<br/>
+    /// Default: ACD_NullAimingConfig
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc OverrideAimingConfig
     {

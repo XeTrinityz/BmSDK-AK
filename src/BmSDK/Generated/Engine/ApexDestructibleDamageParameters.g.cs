@@ -103,7 +103,8 @@ public partial class ApexDestructibleDamageParameters : BmSDK.GameObject, BmSDK.
         }
 
         /// <summary>
-        /// StructProperty: Params
+        /// StructProperty: Params<br/>
+        /// Default: (OverrideMode=DPOM_Absolute,BaseDamage=70,Momentum=200)
         /// </summary>
         public unsafe BmSDK.Engine.ApexDestructibleDamageParameters.FDamageParameters Params
         {
@@ -119,7 +120,8 @@ public partial class ApexDestructibleDamageParameters : BmSDK.GameObject, BmSDK.
     public partial record struct FDamageParameters
     {
         /// <summary>
-        /// ByteProperty: OverrideMode
+        /// ByteProperty: OverrideMode<br/>
+        /// Default: DPOM_Absolute
         /// </summary>
         public unsafe BmSDK.Engine.ApexDestructibleDamageParameters.EDamageParameterOverrideMode OverrideMode
         {
@@ -128,7 +130,8 @@ public partial class ApexDestructibleDamageParameters : BmSDK.GameObject, BmSDK.
         }
 
         /// <summary>
-        /// FloatProperty: BaseDamage
+        /// FloatProperty: BaseDamage<br/>
+        /// Default: 70
         /// </summary>
         public unsafe float BaseDamage
         {
@@ -146,7 +149,8 @@ public partial class ApexDestructibleDamageParameters : BmSDK.GameObject, BmSDK.
         }
 
         /// <summary>
-        /// FloatProperty: Momentum
+        /// FloatProperty: Momentum<br/>
+        /// Default: 200
         /// </summary>
         public unsafe float Momentum
         {

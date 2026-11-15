@@ -1475,7 +1475,8 @@ public partial class RGFxMovieUI_MainMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bEventCalendar
+    /// BoolProperty: bEventCalendar<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEventCalendar
     {
@@ -1574,7 +1575,8 @@ public partial class RGFxMovieUI_MainMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: InstallerGFxMovieInstance
+    /// ObjectProperty: InstallerGFxMovieInstance<br/>
+    /// Default: InstallationProgress.InstallationProgress
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie InstallerGFxMovieInstance
     {
@@ -1637,7 +1639,8 @@ public partial class RGFxMovieUI_MainMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: ASetRivalState
+    /// IntProperty: ASetRivalState<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ASetRivalState
     {
@@ -1673,7 +1676,8 @@ public partial class RGFxMovieUI_MainMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGam
     }
 
     /// <summary>
-    /// ArrayProperty: WBIDMovieInfo
+    /// ArrayProperty: WBIDMovieInfo<br/>
+    /// Default: (WBID.WBID_OverlayMain,WBID.ScreenAttract,WBID.ScreenLegal,WBID.ScreenEmailForm,None,WBID.ScreenVerify,None,None,WBID.ScreenWBIDOptions,WBID.ScreenGeneric)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.GFxUI.SwfMovie> WBIDMovieInfo
     {

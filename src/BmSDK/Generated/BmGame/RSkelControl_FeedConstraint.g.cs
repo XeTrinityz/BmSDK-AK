@@ -124,13 +124,15 @@ public partial class RSkelControl_FeedConstraint : BmSDK.Engine.SkelControlBase,
     }
 
     /// <summary>
-    /// StructProperty: SourceRange
+    /// StructProperty: SourceRange<br/>
+    /// Default: (Max=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSkelControl_FeedConstraint.FFeedConstraintSourceRange SourceRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSkelControl_FeedConstraint.FFeedConstraintSourceRange>(Ptr + 260);
 
     /// <summary>
-    /// StructProperty: DestinationRange
+    /// StructProperty: DestinationRange<br/>
+    /// Default: (Max=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSkelControl_FeedConstraint.FFeedConstraintDestinationRange DestinationRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSkelControl_FeedConstraint.FFeedConstraintDestinationRange>(Ptr + 272);

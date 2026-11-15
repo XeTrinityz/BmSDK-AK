@@ -79,7 +79,8 @@ public partial class ArrowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: ArrowColor
+    /// StructProperty: ArrowColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ArrowColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
@@ -103,7 +104,8 @@ public partial class ArrowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ArrowSize
+    /// FloatProperty: ArrowSize<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ArrowSize
     {

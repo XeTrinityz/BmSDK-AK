@@ -585,7 +585,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: LockedClosedRepelAnimation
+    /// NameProperty: LockedClosedRepelAnimation<br/>
+    /// Default: Rattle
     /// </summary>
     public unsafe BmSDK.FName LockedClosedRepelAnimation
     {
@@ -594,7 +595,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: LockedClosedAttractAnimation
+    /// NameProperty: LockedClosedAttractAnimation<br/>
+    /// Default: Rattle
     /// </summary>
     public unsafe BmSDK.FName LockedClosedAttractAnimation
     {
@@ -603,7 +605,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenStruggleAnimation
+    /// NameProperty: OpenStruggleAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_Loop_02
     /// </summary>
     public unsafe BmSDK.FName OpenStruggleAnimation
     {
@@ -612,7 +615,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: ClosedStruggleAnimation
+    /// NameProperty: ClosedStruggleAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Closed_React_02
     /// </summary>
     public unsafe BmSDK.FName ClosedStruggleAnimation
     {
@@ -657,7 +661,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// BoolProperty: bAutoClose
+    /// BoolProperty: bAutoClose<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoClose
     {
@@ -729,7 +734,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenAnimation
+    /// NameProperty: OpenAnimation<br/>
+    /// Default: Open
     /// </summary>
     public unsafe BmSDK.FName OpenAnimation
     {
@@ -738,7 +744,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: CloseAnimation
+    /// NameProperty: CloseAnimation<br/>
+    /// Default: Close
     /// </summary>
     public unsafe BmSDK.FName CloseAnimation
     {
@@ -774,7 +781,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: ClosedReactAnimation
+    /// NameProperty: ClosedReactAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Closed_React
     /// </summary>
     public unsafe BmSDK.FName ClosedReactAnimation
     {
@@ -783,7 +791,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: AutoCloseDelay
+    /// FloatProperty: AutoCloseDelay<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float AutoCloseDelay
     {
@@ -792,7 +801,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// StructProperty: DoorCentre
+    /// StructProperty: DoorCentre<br/>
+    /// Default: (X=225,Y=-64)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DoorCentre
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 908);
@@ -807,7 +817,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ByteProperty: DoorState
+    /// ByteProperty: DoorState<br/>
+    /// Default: ESDS_Closed
     /// </summary>
     public unsafe BmSDK.BmScript.RMagneticDoor.EShutterDoorState DoorState
     {
@@ -825,7 +836,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: InvestigateYOffsetOnOtherSide
+    /// FloatProperty: InvestigateYOffsetOnOtherSide<br/>
+    /// Default: 224
     /// </summary>
     public unsafe float InvestigateYOffsetOnOtherSide
     {
@@ -834,7 +846,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ComponentProperty: MagBlastInteractions
+    /// ComponentProperty: MagBlastInteractions<br/>
+    /// Default: BmScript.Default__RMagneticDoor.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent MagBlastInteractions
     {
@@ -843,7 +856,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenFullAnimation
+    /// NameProperty: OpenFullAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_In
     /// </summary>
     public unsafe BmSDK.FName OpenFullAnimation
     {
@@ -852,7 +866,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: Open128Animation
+    /// NameProperty: Open128Animation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_128_In
     /// </summary>
     public unsafe BmSDK.FName Open128Animation
     {
@@ -861,7 +876,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: CloseFullAnimation
+    /// NameProperty: CloseFullAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_Out
     /// </summary>
     public unsafe BmSDK.FName CloseFullAnimation
     {
@@ -870,7 +886,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: Close128Animation
+    /// NameProperty: Close128Animation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_128_Out
     /// </summary>
     public unsafe BmSDK.FName Close128Animation
     {
@@ -879,7 +896,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenedLoopFullAnimation
+    /// NameProperty: OpenedLoopFullAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_Loop
     /// </summary>
     public unsafe BmSDK.FName OpenedLoopFullAnimation
     {
@@ -888,7 +906,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenedLoop128Animation
+    /// NameProperty: OpenedLoop128Animation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_128_Loop
     /// </summary>
     public unsafe BmSDK.FName OpenedLoop128Animation
     {
@@ -897,7 +916,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenedStruggle128Animation
+    /// NameProperty: OpenedStruggle128Animation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_128_React
     /// </summary>
     public unsafe BmSDK.FName OpenedStruggle128Animation
     {
@@ -906,7 +926,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// NameProperty: OpenedStruggleFullAnimation
+    /// NameProperty: OpenedStruggleFullAnimation<br/>
+    /// Default: DOORS_Steelworks_Shutter_Doors_Open_Loop_02
     /// </summary>
     public unsafe BmSDK.FName OpenedStruggleFullAnimation
     {
@@ -915,7 +936,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ComponentProperty: MotorMesh1
+    /// ComponentProperty: MotorMesh1<br/>
+    /// Default: BmScript.Default__RMagneticDoor.SkeletalMeshComponent2
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MotorMesh1
     {
@@ -924,7 +946,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ComponentProperty: MotorMesh2
+    /// ComponentProperty: MotorMesh2<br/>
+    /// Default: BmScript.Default__RMagneticDoor.SkeletalMeshComponent3
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MotorMesh2
     {
@@ -933,7 +956,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: MotorOpenAnimDuration
+    /// FloatProperty: MotorOpenAnimDuration<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MotorOpenAnimDuration
     {
@@ -942,7 +966,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: MotorCloseAnimDuration
+    /// FloatProperty: MotorCloseAnimDuration<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MotorCloseAnimDuration
     {
@@ -987,7 +1012,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ComponentProperty: ActivatedPFXAlt
+    /// ComponentProperty: ActivatedPFXAlt<br/>
+    /// Default: BmScript.Default__RMagneticDoor.HitByRec1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ActivatedPFXAlt
     {
@@ -996,7 +1022,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// ComponentProperty: ActivatedPFX
+    /// ComponentProperty: ActivatedPFX<br/>
+    /// Default: BmScript.Default__RMagneticDoor.HitByRec0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ActivatedPFX
     {
@@ -1032,7 +1059,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: MotorMaterialOpenSpeed
+    /// FloatProperty: MotorMaterialOpenSpeed<br/>
+    /// Default: -1.4
     /// </summary>
     public unsafe float MotorMaterialOpenSpeed
     {
@@ -1041,7 +1069,8 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// FloatProperty: MotorMaterialCloseSpeed
+    /// FloatProperty: MotorMaterialCloseSpeed<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float MotorMaterialCloseSpeed
     {
@@ -1050,19 +1079,22 @@ public partial class RMagneticDoor : BmSDK.BmGame.RMagneticDynamicObjectSkeletal
     }
 
     /// <summary>
-    /// StructProperty: MotorActivationFXOffset1
+    /// StructProperty: MotorActivationFXOffset1<br/>
+    /// Default: (X=500,Y=100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MotorActivationFXOffset1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1112);
 
     /// <summary>
-    /// StructProperty: MotorActivationFXOffset2
+    /// StructProperty: MotorActivationFXOffset2<br/>
+    /// Default: (X=500,Y=100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MotorActivationFXOffset2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1124);
 
     /// <summary>
-    /// StructProperty: MotorAutoTargetOffset
+    /// StructProperty: MotorAutoTargetOffset<br/>
+    /// Default: (Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MotorAutoTargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1136);

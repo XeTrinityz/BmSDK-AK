@@ -269,7 +269,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: BlowUpFX
+    /// ObjectProperty: BlowUpFX<br/>
+    /// Default: VFX_Gadgets.REC.REC_bang
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BlowUpFX
     {
@@ -278,7 +279,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: BlowUpSound
+    /// ObjectProperty: BlowUpSound<br/>
+    /// Default: Ww_OBJ_JunctionBox.Play_JunctionBox_BoxSmash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BlowUpSound
     {
@@ -287,7 +289,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: ActivateAudioEvent
+    /// ObjectProperty: ActivateAudioEvent<br/>
+    /// Default: Ww_CHR_BatmanREC.Play_REC_Activate
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ActivateAudioEvent
     {
@@ -296,7 +299,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: DeactivateAudioEvent
+    /// ObjectProperty: DeactivateAudioEvent<br/>
+    /// Default: Ww_CHR_BatmanREC.Play_REC_Deactivate
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent DeactivateAudioEvent
     {
@@ -323,7 +327,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: GeneratorLoop
+    /// ObjectProperty: GeneratorLoop<br/>
+    /// Default: ww_obj_rec_water_generator.Play_OBJ_REC_Water_Generator_Loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent GeneratorLoop
     {
@@ -332,7 +337,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: GenOnFX
+    /// ComponentProperty: GenOnFX<br/>
+    /// Default: BmScript.Default__RWaterGenerator.OnPart1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GenOnFX
     {
@@ -341,7 +347,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: DestroyedMesh
+    /// ComponentProperty: DestroyedMesh<br/>
+    /// Default: BmScript.Default__RWaterGenerator.DestroyedMesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent DestroyedMesh
     {
@@ -350,7 +357,8 @@ public partial class RWaterGenerator : BmSDK.BmGame.RWaterGeneratorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: GeneratorMesh
+    /// ComponentProperty: GeneratorMesh<br/>
+    /// Default: BmScript.Default__RWaterGenerator.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GeneratorMesh
     {

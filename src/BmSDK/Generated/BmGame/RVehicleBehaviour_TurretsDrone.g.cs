@@ -180,7 +180,8 @@ public partial class RVehicleBehaviour_TurretsDrone : BmSDK.BmGame.RVehicleBehav
     }
 
     /// <summary>
-    /// FloatProperty: TurretRotationSpeed
+    /// FloatProperty: TurretRotationSpeed<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float TurretRotationSpeed
     {

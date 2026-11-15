@@ -103,7 +103,8 @@ public partial class ParticleModuleLocationStaticVertSurface : BmSDK.Engine.Part
     }
 
     /// <summary>
-    /// BoolProperty: bOrientMeshEmitters
+    /// BoolProperty: bOrientMeshEmitters<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOrientMeshEmitters
     {
@@ -121,7 +122,8 @@ public partial class ParticleModuleLocationStaticVertSurface : BmSDK.Engine.Part
     }
 
     /// <summary>
-    /// NameProperty: StaticMeshActorParamName
+    /// NameProperty: StaticMeshActorParamName<br/>
+    /// Default: VertSurfaceActor
     /// </summary>
     public unsafe BmSDK.FName StaticMeshActorParamName
     {

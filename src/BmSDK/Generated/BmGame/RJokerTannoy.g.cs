@@ -369,7 +369,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bTannoyActive
+    /// BoolProperty: bTannoyActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTannoyActive
     {
@@ -414,7 +415,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenLines
+    /// FloatProperty: MinTimeBetweenLines<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MinTimeBetweenLines
     {
@@ -441,7 +443,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TannoyCharDef
+    /// ObjectProperty: TannoyCharDef<br/>
+    /// Default: BarkCharDef_Tannoy_Knight.BCD_Tannoy_Knight
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkCharacterDef TannoyCharDef
     {
@@ -450,7 +453,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: CharacterVoice
+    /// ObjectProperty: CharacterVoice<br/>
+    /// Default: DLG_Voices.Redhood
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueVoice CharacterVoice
     {
@@ -486,7 +490,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DSDef
+    /// ObjectProperty: DSDef<br/>
+    /// Default: BarkCharDef_Tannoy_Deathstroke.BCD_Tannoy_Deathstroke
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkCharacterDef DSDef
     {
@@ -504,7 +509,8 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: PawnSpeechDialogueComponent
+    /// ComponentProperty: PawnSpeechDialogueComponent<br/>
+    /// Default: BmGame.Default__RJokerTannoy.DialogueComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueComponent PawnSpeechDialogueComponent
     {

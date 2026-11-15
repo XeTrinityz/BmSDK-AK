@@ -79,7 +79,8 @@ public partial class RCharacter_MultiStage : BmSDK.BmGame.RCharacter_Thug, BmSDK
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: TypeSwitchName
+    /// ObjectProperty: TypeSwitchName<br/>
+    /// Default: ww_npc_brute_type.NPC_Brute_Militia
     /// </summary>
     public unsafe BmSDK.Engine.AkSwitchName TypeSwitchName
     {

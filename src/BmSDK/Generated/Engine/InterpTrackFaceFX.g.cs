@@ -131,7 +131,8 @@ public partial class InterpTrackFaceFX : BmSDK.Engine.InterpTrack, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysPlayOnFirstUpdate
+    /// BoolProperty: bAlwaysPlayOnFirstUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysPlayOnFirstUpdate
     {

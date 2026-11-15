@@ -343,7 +343,8 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
     }
 
     /// <summary>
-    /// ArrayProperty: JobAssignerList
+    /// ArrayProperty: JobAssignerList<br/>
+    /// Default: (BmGame.Default__RAEC_LevelScripting.LevelScriptAssign,BmGame.Default__RAEC_LevelScripting.MiniManDownAssign,BmGame.Default__RAEC_LevelScripting.GrateGrenadeAssign,BmGame.Default__RAEC_LevelScripting....
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RJobAssignment> JobAssignerList
     {

@@ -91,7 +91,8 @@ public partial class ApexForceFieldGenericComponent : BmSDK.Engine.ApexForceFiel
     }
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -100,7 +101,8 @@ public partial class ApexForceFieldGenericComponent : BmSDK.Engine.ApexForceFiel
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -199,7 +201,8 @@ public partial class ApexForceFieldGenericComponent : BmSDK.Engine.ApexForceFiel
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 752);
 
     /// <summary>
-    /// FloatProperty: TorusRadius
+    /// FloatProperty: TorusRadius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TorusRadius
     {

@@ -79,7 +79,8 @@ public partial class RParticleModuleWorldWind : BmSDK.Engine.ParticleModuleVeloc
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: WindMultiplier
+    /// StructProperty: WindMultiplier<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=2,LookupTable=(0.9,1,0.9,1,0.9,1),Distribution=Engine.Default__RParticleModuleWorldWind.WindMultiplierTemp)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat WindMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);

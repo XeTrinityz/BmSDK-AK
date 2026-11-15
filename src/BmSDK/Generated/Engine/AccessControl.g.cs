@@ -798,7 +798,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: IPPolicies
+    /// ArrayProperty: IPPolicies<br/>
+    /// Default: ("ACCEPT;*")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> IPPolicies
     {
@@ -816,7 +817,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: IPBanned
+    /// StrProperty: IPBanned<br/>
+    /// Default: "Your IP address has been banned on this server."
     /// </summary>
     public unsafe BmSDK.FString IPBanned
     {
@@ -825,7 +827,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: WrongPassword
+    /// StrProperty: WrongPassword<br/>
+    /// Default: "The password you entered is incorrect."
     /// </summary>
     public unsafe BmSDK.FString WrongPassword
     {
@@ -834,7 +837,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NeedPassword
+    /// StrProperty: NeedPassword<br/>
+    /// Default: "You need to enter a password to join this game."
     /// </summary>
     public unsafe BmSDK.FString NeedPassword
     {
@@ -843,7 +847,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SessionBanned
+    /// StrProperty: SessionBanned<br/>
+    /// Default: "Your IP address has been banned from the current game session."
     /// </summary>
     public unsafe BmSDK.FString SessionBanned
     {
@@ -852,7 +857,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: KickedMsg
+    /// StrProperty: KickedMsg<br/>
+    /// Default: "You have been forcibly removed from the game."
     /// </summary>
     public unsafe BmSDK.FString KickedMsg
     {
@@ -861,7 +867,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultKickReason
+    /// StrProperty: DefaultKickReason<br/>
+    /// Default: "None specified"
     /// </summary>
     public unsafe BmSDK.FString DefaultKickReason
     {
@@ -870,7 +877,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: IdleKickReason
+    /// StrProperty: IdleKickReason<br/>
+    /// Default: "Kicked for idling."
     /// </summary>
     public unsafe BmSDK.FString IdleKickReason
     {
@@ -879,7 +887,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: AdminClass
+    /// ClassProperty: AdminClass<br/>
+    /// Default: Engine.Admin
     /// </summary>
     public unsafe BmSDK.Class AdminClass
     {
@@ -911,7 +920,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     public InlineArray<BmSDK.FString> ACDisplayText => new(3, Ptr + 852, 16, this);
 
     /// <summary>
-    /// StrProperty: ACDisplayText
+    /// StrProperty: ACDisplayText<br/>
+    /// Default: "Game Password"
     /// </summary>
     public unsafe BmSDK.FString ACDisplayText_0
     {
@@ -919,7 +929,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 852); }
     }
     /// <summary>
-    /// StrProperty: ACDisplayText
+    /// StrProperty: ACDisplayText<br/>
+    /// Default: "Access Policies"
     /// </summary>
     public unsafe BmSDK.FString ACDisplayText_1
     {
@@ -927,7 +938,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 868); }
     }
     /// <summary>
-    /// StrProperty: ACDisplayText
+    /// StrProperty: ACDisplayText<br/>
+    /// Default: "Admin Password"
     /// </summary>
     public unsafe BmSDK.FString ACDisplayText_2
     {
@@ -941,7 +953,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     public InlineArray<BmSDK.FString> ACDescText => new(3, Ptr + 900, 16, this);
 
     /// <summary>
-    /// StrProperty: ACDescText
+    /// StrProperty: ACDescText<br/>
+    /// Default: "If this password is set, players will have to enter it to join this server."
     /// </summary>
     public unsafe BmSDK.FString ACDescText_0
     {
@@ -949,7 +962,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 900); }
     }
     /// <summary>
-    /// StrProperty: ACDescText
+    /// StrProperty: ACDescText<br/>
+    /// Default: "Specifies IP addresses or address ranges which have been banned."
     /// </summary>
     public unsafe BmSDK.FString ACDescText_1
     {
@@ -957,7 +971,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 916); }
     }
     /// <summary>
-    /// StrProperty: ACDescText
+    /// StrProperty: ACDescText<br/>
+    /// Default: "Password required to login with administrator privileges on this server."
     /// </summary>
     public unsafe BmSDK.FString ACDescText_2
     {
@@ -975,7 +990,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAuthenticateClients
+    /// BoolProperty: bAuthenticateClients<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAuthenticateClients
     {
@@ -984,7 +1000,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAuthenticateServer
+    /// BoolProperty: bAuthenticateServer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAuthenticateServer
     {
@@ -993,7 +1010,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAuthenticateListenHost
+    /// BoolProperty: bAuthenticateListenHost<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAuthenticateListenHost
     {
@@ -1020,7 +1038,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxAuthRetryCount
+    /// IntProperty: MaxAuthRetryCount<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxAuthRetryCount
     {
@@ -1029,7 +1048,8 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: AuthRetryDelay
+    /// IntProperty: AuthRetryDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int AuthRetryDelay
     {

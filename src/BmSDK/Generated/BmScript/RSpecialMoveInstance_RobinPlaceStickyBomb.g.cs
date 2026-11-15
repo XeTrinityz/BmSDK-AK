@@ -205,7 +205,8 @@ public partial class RSpecialMoveInstance_RobinPlaceStickyBomb : BmSDK.BmGame.RS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 1012);
 
     /// <summary>
-    /// NameProperty: StickyBombSocket
+    /// NameProperty: StickyBombSocket<br/>
+    /// Default: Bip01_R_Clavicle
     /// </summary>
     public unsafe BmSDK.FName StickyBombSocket
     {

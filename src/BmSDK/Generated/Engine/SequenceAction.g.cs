@@ -83,7 +83,8 @@ public partial class SequenceAction : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCallHandler
+    /// BoolProperty: bCallHandler<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCallHandler
     {

@@ -323,7 +323,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: ReceiveMode
+    /// ByteProperty: ReceiveMode<br/>
+    /// Default: RMODE_Event
     /// </summary>
     public unsafe BmSDK.IpDrv.InternetLink.EReceiveMode ReceiveMode
     {

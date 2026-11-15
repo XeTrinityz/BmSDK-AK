@@ -178,7 +178,8 @@ public partial class RSkeletalMeshComponent_Export : BmSDK.GameObject, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: BoneScaleRatio
+        /// FloatProperty: BoneScaleRatio<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float BoneScaleRatio
         {
@@ -672,7 +673,8 @@ public partial class RSkeletalMeshComponent_Export : BmSDK.GameObject, BmSDK.IGa
         }
 
         /// <summary>
-        /// ByteProperty: NormalMode
+        /// ByteProperty: NormalMode<br/>
+        /// Default: SMONM_RecalculateNormals
         /// </summary>
         public unsafe BmSDK.Engine.RSkeletalMeshComponent_Export.SkeletalMeshOptimizationNormalMode NormalMode
         {
@@ -681,7 +683,8 @@ public partial class RSkeletalMeshComponent_Export : BmSDK.GameObject, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: BoneReductionRatio
+        /// FloatProperty: BoneReductionRatio<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float BoneReductionRatio
         {
@@ -690,7 +693,8 @@ public partial class RSkeletalMeshComponent_Export : BmSDK.GameObject, BmSDK.IGa
         }
 
         /// <summary>
-        /// IntProperty: MaxBonesPerVertex
+        /// IntProperty: MaxBonesPerVertex<br/>
+        /// Default: 4
         /// </summary>
         public unsafe int MaxBonesPerVertex
         {
@@ -699,7 +703,8 @@ public partial class RSkeletalMeshComponent_Export : BmSDK.GameObject, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: UseVertexWelding
+        /// BoolProperty: UseVertexWelding<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool UseVertexWelding
         {

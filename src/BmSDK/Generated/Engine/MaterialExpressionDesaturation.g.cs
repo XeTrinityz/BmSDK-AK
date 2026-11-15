@@ -91,7 +91,8 @@ public partial class MaterialExpressionDesaturation : BmSDK.Engine.MaterialExpre
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 224);
 
     /// <summary>
-    /// StructProperty: LuminanceFactors
+    /// StructProperty: LuminanceFactors<br/>
+    /// Default: (R=0.3,G=0.59,B=0.11)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LuminanceFactors
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 276);

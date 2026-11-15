@@ -727,7 +727,8 @@ public partial class RCombatMove_VillainUnarmedGrab : BmSDK.BmGame.RCombatMove_V
     }
 
     /// <summary>
-    /// BoolProperty: bDisableCapeDepthBias
+    /// BoolProperty: bDisableCapeDepthBias<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableCapeDepthBias
     {
@@ -763,7 +764,8 @@ public partial class RCombatMove_VillainUnarmedGrab : BmSDK.BmGame.RCombatMove_V
     }
 
     /// <summary>
-    /// IntProperty: MaxStrikes
+    /// IntProperty: MaxStrikes<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int MaxStrikes
     {
@@ -787,7 +789,8 @@ public partial class RCombatMove_VillainUnarmedGrab : BmSDK.BmGame.RCombatMove_V
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 876);
 
     /// <summary>
-    /// FloatProperty: GrabRange
+    /// FloatProperty: GrabRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float GrabRange
     {
@@ -796,7 +799,8 @@ public partial class RCombatMove_VillainUnarmedGrab : BmSDK.BmGame.RCombatMove_V
     }
 
     /// <summary>
-    /// FloatProperty: GrabbedDamageTime
+    /// FloatProperty: GrabbedDamageTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GrabbedDamageTime
     {

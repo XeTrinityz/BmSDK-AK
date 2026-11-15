@@ -516,7 +516,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: numUses
+    /// IntProperty: numUses<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int numUses
     {
@@ -525,7 +526,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: numUsesRemaining
+    /// IntProperty: numUsesRemaining<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int numUsesRemaining
     {
@@ -534,7 +536,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: Priority
+    /// FloatProperty: Priority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Priority
     {
@@ -561,7 +564,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: lootNotExhaustedXrayMat
+    /// ObjectProperty: lootNotExhaustedXrayMat<br/>
+    /// Default: VFX_Forensics.Xray.xrayInfo_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant lootNotExhaustedXrayMat
     {
@@ -597,7 +601,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RLootSourceBase.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -660,7 +665,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: lootSourceEnabled
+    /// BoolProperty: lootSourceEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool lootSourceEnabled
     {
@@ -687,7 +693,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bCanAutoSelect
+    /// BoolProperty: bCanAutoSelect<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanAutoSelect
     {
@@ -741,7 +748,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: approxTargetLocationOffset
+    /// FloatProperty: approxTargetLocationOffset<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float approxTargetLocationOffset
     {
@@ -759,7 +767,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: lootingDuration
+    /// FloatProperty: lootingDuration<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float lootingDuration
     {
@@ -768,7 +777,8 @@ public partial class RLootSourceBase : BmSDK.BmGame.RLootPointBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: lootingDuration_COCKY
+    /// FloatProperty: lootingDuration_COCKY<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float lootingDuration_COCKY
     {

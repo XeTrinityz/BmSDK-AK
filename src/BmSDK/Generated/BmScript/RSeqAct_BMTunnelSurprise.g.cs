@@ -206,7 +206,8 @@ public partial class RSeqAct_BMTunnelSurprise : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DotLimit
+    /// FloatProperty: DotLimit<br/>
+    /// Default: 0.707
     /// </summary>
     public unsafe float DotLimit
     {
@@ -215,7 +216,8 @@ public partial class RSeqAct_BMTunnelSurprise : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DistToBats
+    /// FloatProperty: DistToBats<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DistToBats
     {
@@ -251,7 +253,8 @@ public partial class RSeqAct_BMTunnelSurprise : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: BestFovDotResult
+    /// FloatProperty: BestFovDotResult<br/>
+    /// Default: 0.33
     /// </summary>
     public unsafe float BestFovDotResult
     {

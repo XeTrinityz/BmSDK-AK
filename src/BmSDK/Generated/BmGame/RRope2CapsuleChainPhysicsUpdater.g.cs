@@ -79,7 +79,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: RopeSwingLimitPerMetre
+    /// FloatProperty: RopeSwingLimitPerMetre<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float RopeSwingLimitPerMetre
     {
@@ -88,7 +89,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: SwingLimitPerConnection
+    /// FloatProperty: SwingLimitPerConnection<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float SwingLimitPerConnection
     {
@@ -97,7 +99,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: SwingSpringStrength
+    /// FloatProperty: SwingSpringStrength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SwingSpringStrength
     {
@@ -106,7 +109,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: SwingSpringDamping
+    /// FloatProperty: SwingSpringDamping<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float SwingSpringDamping
     {
@@ -115,7 +119,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: TwistSpringStrength
+    /// FloatProperty: TwistSpringStrength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TwistSpringStrength
     {
@@ -124,7 +129,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: TwistSpringDamping
+    /// FloatProperty: TwistSpringDamping<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TwistSpringDamping
     {
@@ -133,7 +139,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: DesiredCapsuleLength
+    /// FloatProperty: DesiredCapsuleLength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DesiredCapsuleLength
     {
@@ -142,7 +149,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: MinRopeWidth
+    /// FloatProperty: MinRopeWidth<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MinRopeWidth
     {
@@ -151,7 +159,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleLinearDamping
+    /// FloatProperty: CapsuleLinearDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CapsuleLinearDamping
     {
@@ -160,7 +169,8 @@ public partial class RRope2CapsuleChainPhysicsUpdater : BmSDK.BmGame.RRope2BaseP
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleAngularDamping
+    /// FloatProperty: CapsuleAngularDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CapsuleAngularDamping
     {

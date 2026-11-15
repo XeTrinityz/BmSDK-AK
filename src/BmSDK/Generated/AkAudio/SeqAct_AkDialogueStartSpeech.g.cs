@@ -125,7 +125,8 @@ public partial class SeqAct_AkDialogueStartSpeech : BmSDK.AkAudio.SeqAct_AkBaseS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkDialogue.FAkSpeechOptions>(Ptr + 384);
 
     /// <summary>
-    /// FloatProperty: SkipFade
+    /// FloatProperty: SkipFade<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SkipFade
     {

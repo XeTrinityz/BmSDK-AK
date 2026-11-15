@@ -107,7 +107,8 @@ public partial class RSeqAct_SlowBM : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MoveSpeedModifier
+    /// FloatProperty: MoveSpeedModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MoveSpeedModifier
     {

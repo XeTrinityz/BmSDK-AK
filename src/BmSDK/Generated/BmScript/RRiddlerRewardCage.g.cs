@@ -248,7 +248,8 @@ public partial class RRiddlerRewardCage : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RewardOpenSfx
+    /// ObjectProperty: RewardOpenSfx<br/>
+    /// Default: Ww_OBJ_RiddlerTrap.Play_Riddler_Trap_Open01
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RewardOpenSfx
     {
@@ -257,7 +258,8 @@ public partial class RRiddlerRewardCage : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmScript.Default__RRiddlerRewardCage.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {

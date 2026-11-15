@@ -126,7 +126,8 @@ public partial class RSeqAct_ToggleRobinLieutenantAssist : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// BoolProperty: bGrappleIfAlreadyOnVantagePoint
+    /// BoolProperty: bGrappleIfAlreadyOnVantagePoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGrappleIfAlreadyOnVantagePoint
     {
@@ -135,7 +136,8 @@ public partial class RSeqAct_ToggleRobinLieutenantAssist : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// BoolProperty: bUseCamera
+    /// BoolProperty: bUseCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCamera
     {

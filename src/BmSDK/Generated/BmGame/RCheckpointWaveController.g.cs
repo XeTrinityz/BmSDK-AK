@@ -167,7 +167,8 @@ public partial class RCheckpointWaveController : BmSDK.BmGame.RBMWaveController,
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileProxDist
+    /// FloatProperty: BatmobileProxDist<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BatmobileProxDist
     {

@@ -534,7 +534,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: CoolDownTime
+    /// FloatProperty: CoolDownTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CoolDownTime
     {
@@ -543,7 +544,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ChargeUpDelay
+    /// FloatProperty: ChargeUpDelay<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ChargeUpDelay
     {
@@ -552,7 +554,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ChargeUpTime
+    /// FloatProperty: ChargeUpTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ChargeUpTime
     {
@@ -561,7 +564,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: ChargingScreenShake
+    /// StructProperty: ChargingScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ChargingScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2408);
@@ -630,7 +634,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: ChargeShakeId
+    /// IntProperty: ChargeShakeId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ChargeShakeId
     {
@@ -657,7 +662,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: ScanFFWaveForm
+    /// ObjectProperty: ScanFFWaveForm<br/>
+    /// Default: BmGame.Default__RBatmobileSonar.ScanFFWaveForm0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ScanFFWaveForm
     {
@@ -729,7 +735,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: VehicleScannerMaterial
+    /// ObjectProperty: VehicleScannerMaterial<br/>
+    /// Default: VFX_Forensics.BatmobileView.BatmobileViewHighlight_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface VehicleScannerMaterial
     {
@@ -738,7 +745,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: ObjectScannerMaterial
+    /// ObjectProperty: ObjectScannerMaterial<br/>
+    /// Default: VFX_Forensics.BatmobileView.BatmobileViewHighlight_NoOcclusion_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface ObjectScannerMaterial
     {
@@ -765,19 +773,22 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: ScanScreenShake
+    /// StructProperty: ScanScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ScanScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2688);
 
     /// <summary>
-    /// StructProperty: BlastScreenShake
+    /// StructProperty: BlastScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BlastScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2844);
 
     /// <summary>
-    /// FloatProperty: KnockDownThugsRange
+    /// FloatProperty: KnockDownThugsRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float KnockDownThugsRange
     {
@@ -786,7 +797,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: StunThugsRange
+    /// FloatProperty: StunThugsRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float StunThugsRange
     {
@@ -795,7 +807,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AlertVehiclesRange
+    /// FloatProperty: AlertVehiclesRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float AlertVehiclesRange
     {
@@ -804,7 +817,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScanRange
+    /// FloatProperty: VehicleScanRange<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float VehicleScanRange
     {
@@ -813,7 +827,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: VehicleScanAngle
+    /// FloatProperty: VehicleScanAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float VehicleScanAngle
     {
@@ -831,7 +846,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ScannerSpeed
+    /// FloatProperty: ScannerSpeed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float ScannerSpeed
     {
@@ -840,7 +856,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ScanDuration
+    /// FloatProperty: ScanDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScanDuration
     {
@@ -867,7 +884,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: MaxScannedVehicles
+    /// IntProperty: MaxScannedVehicles<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int MaxScannedVehicles
     {

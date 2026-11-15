@@ -249,7 +249,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -258,7 +259,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
     }
 
     /// <summary>
-    /// FloatProperty: FractureRadius
+    /// FloatProperty: FractureRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float FractureRadius
     {
@@ -267,7 +269,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float ExplosionRadius
     {
@@ -276,7 +279,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
     }
 
     /// <summary>
-    /// FloatProperty: SeenRadius
+    /// FloatProperty: SeenRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SeenRadius
     {
@@ -285,7 +289,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
     }
 
     /// <summary>
-    /// FloatProperty: RetreatRadius
+    /// FloatProperty: RetreatRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float RetreatRadius
     {
@@ -306,7 +311,8 @@ public partial class MStickyConcussionGrenadeProjectile : BmSDK.BmGame.RGadgetPr
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 992);
 
     /// <summary>
-    /// BoolProperty: bAutoDetonate
+    /// BoolProperty: bAutoDetonate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoDetonate
     {

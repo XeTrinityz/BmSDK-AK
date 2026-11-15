@@ -102,7 +102,8 @@ public partial class AnimNodeAdditiveBlending : BmSDK.Engine.AnimNodeBlend, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bPassThroughWhenNotRendered
+    /// BoolProperty: bPassThroughWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPassThroughWhenNotRendered
     {

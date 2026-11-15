@@ -1065,7 +1065,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanResonate
+    /// BoolProperty: bCanResonate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanResonate
     {
@@ -1101,7 +1102,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: PreviousTargetOutOfRange
+    /// BoolProperty: PreviousTargetOutOfRange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PreviousTargetOutOfRange
     {
@@ -1155,7 +1157,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDebugTargeting
+    /// BoolProperty: bDebugTargeting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugTargeting
     {
@@ -1200,7 +1203,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisruptorRange
+    /// FloatProperty: DisruptorRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float DisruptorRange
     {
@@ -1542,7 +1546,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LeftThumbOffset
+    /// FloatProperty: LeftThumbOffset<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float LeftThumbOffset
     {
@@ -1551,7 +1556,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RightThumbOffset
+    /// FloatProperty: RightThumbOffset<br/>
+    /// Default: -0.1
     /// </summary>
     public unsafe float RightThumbOffset
     {
@@ -1566,7 +1572,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 2380);
 
     /// <summary>
-    /// IntProperty: MaxSecondaryTargets
+    /// IntProperty: MaxSecondaryTargets<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int MaxSecondaryTargets
     {
@@ -1629,7 +1636,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScreenLightBrightness
+    /// FloatProperty: ScreenLightBrightness<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ScreenLightBrightness
     {
@@ -1647,7 +1655,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ResonatorTargetIcons
+    /// ArrayProperty: ResonatorTargetIcons<br/>
+    /// Default: ("resonator_target","resonator_target2","resonator_target3","resonator_target4","resonator_target5")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ResonatorTargetIcons
     {
@@ -1656,7 +1665,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerTargetIcons
+    /// ArrayProperty: RiddlerTargetIcons<br/>
+    /// Default: ("riddler_hack","riddler_hack2","riddler_hack3","riddler_hack4","riddler_hack5")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> RiddlerTargetIcons
     {

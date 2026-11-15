@@ -79,7 +79,8 @@ public partial class SceneCapture2DActor : BmSDK.Engine.SceneCaptureActor, BmSDK
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: DrawFrustum
+    /// ComponentProperty: DrawFrustum<br/>
+    /// Default: Engine.Default__SceneCapture2DActor.DrawFrust0
     /// </summary>
     public unsafe BmSDK.Engine.DrawFrustumComponent DrawFrustum
     {

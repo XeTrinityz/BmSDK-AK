@@ -215,7 +215,8 @@ public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapB
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RFireExtinguisherTrap.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -224,7 +225,8 @@ public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapB
     }
 
     /// <summary>
-    /// FloatProperty: ExplodeDelay
+    /// FloatProperty: ExplodeDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ExplodeDelay
     {
@@ -239,7 +241,8 @@ public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapB
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 680);
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -248,13 +251,15 @@ public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapB
     }
 
     /// <summary>
-    /// StructProperty: TargetOffset
+    /// StructProperty: TargetOffset<br/>
+    /// Default: (Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 696);
 
     /// <summary>
-    /// ComponentProperty: FireExMesh
+    /// ComponentProperty: FireExMesh<br/>
+    /// Default: BmScript.Default__RFireExtinguisherTrap.Mesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FireExMesh
     {
@@ -263,7 +268,8 @@ public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapB
     }
 
     /// <summary>
-    /// ObjectProperty: BrokenFireExMesh
+    /// ObjectProperty: BrokenFireExMesh<br/>
+    /// Default: GameplayOBJ.Mesh.OBJ_FireExtinguisher_Broken
     /// </summary>
     public unsafe BmSDK.Engine.StaticMesh BrokenFireExMesh
     {

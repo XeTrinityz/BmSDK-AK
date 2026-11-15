@@ -121,7 +121,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: WantFadeIn
+    /// BoolProperty: WantFadeIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool WantFadeIn
     {
@@ -166,7 +167,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeInDelay
+    /// FloatProperty: FadeInDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeInDelay
     {
@@ -175,7 +177,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeSpeed
+    /// FloatProperty: FadeSpeed<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float FadeSpeed
     {
@@ -184,7 +187,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ConeZScale
+    /// FloatProperty: ConeZScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ConeZScale
     {
@@ -202,7 +206,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StaticMeshes
+    /// ArrayProperty: StaticMeshes<br/>
+    /// Default: (BmGame.Default__RBatSignalBase.StaticMeshComponent_4,BmGame.Default__RBatSignalBase.StaticMeshComponent_6)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.StaticMeshComponent> StaticMeshes
     {
@@ -211,7 +216,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinScale
+    /// FloatProperty: MinScale<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MinScale
     {
@@ -220,7 +226,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxScale
+    /// FloatProperty: MaxScale<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float MaxScale
     {
@@ -229,7 +236,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DistForMinScale
+    /// FloatProperty: DistForMinScale<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float DistForMinScale
     {
@@ -238,7 +246,8 @@ public partial class RBatSignalBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DistForMaxScale
+    /// FloatProperty: DistForMaxScale<br/>
+    /// Default: 30000
     /// </summary>
     public unsafe float DistForMaxScale
     {

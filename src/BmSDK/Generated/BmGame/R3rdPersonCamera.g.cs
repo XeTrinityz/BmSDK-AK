@@ -2196,7 +2196,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     public partial record struct FCameraSmoother
     {
         /// <summary>
-        /// FloatProperty: LastSmoothDistance
+        /// FloatProperty: LastSmoothDistance<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float LastSmoothDistance
         {
@@ -2223,7 +2224,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DirectionDistance
+        /// FloatProperty: DirectionDistance<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float DirectionDistance_0
         {
@@ -2231,7 +2233,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 12); }; }
         }
         /// <summary>
-        /// FloatProperty: DirectionDistance
+        /// FloatProperty: DirectionDistance<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float DirectionDistance_1
         {
@@ -2239,7 +2242,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 16); }; }
         }
         /// <summary>
-        /// FloatProperty: DirectionDistance
+        /// FloatProperty: DirectionDistance<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float DirectionDistance_2
         {
@@ -2247,7 +2251,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 20); }; }
         }
         /// <summary>
-        /// FloatProperty: DirectionDistance
+        /// FloatProperty: DirectionDistance<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float DirectionDistance_3
         {
@@ -2256,7 +2261,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MinCameraSmoothingAngle
+        /// FloatProperty: MinCameraSmoothingAngle<br/>
+        /// Default: 10
         /// </summary>
         public unsafe float MinCameraSmoothingAngle
         {
@@ -2265,7 +2271,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxCameraSmoothingAngle
+        /// FloatProperty: MaxCameraSmoothingAngle<br/>
+        /// Default: 25
         /// </summary>
         public unsafe float MaxCameraSmoothingAngle
         {
@@ -2324,7 +2331,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     public partial record struct FRailingOffsetSettings
     {
         /// <summary>
-        /// FloatProperty: fRailingOffsetReachesMaximumProportionAngle
+        /// FloatProperty: fRailingOffsetReachesMaximumProportionAngle<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float fRailingOffsetReachesMaximumProportionAngle
         {
@@ -2333,7 +2341,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: fRailingOffsetInterpolationSpeed
+        /// FloatProperty: fRailingOffsetInterpolationSpeed<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float fRailingOffsetInterpolationSpeed
         {
@@ -2342,7 +2351,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: fRailingOffsetMaximumDistanceToTheLeft
+        /// FloatProperty: fRailingOffsetMaximumDistanceToTheLeft<br/>
+        /// Default: 180
         /// </summary>
         public unsafe float fRailingOffsetMaximumDistanceToTheLeft
         {
@@ -2351,7 +2361,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: fRailingOffsetMaximumDistanceToTheRight
+        /// FloatProperty: fRailingOffsetMaximumDistanceToTheRight<br/>
+        /// Default: 180
         /// </summary>
         public unsafe float fRailingOffsetMaximumDistanceToTheRight
         {
@@ -2403,7 +2414,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AccelerationModifier
+        /// FloatProperty: AccelerationModifier<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float AccelerationModifier
         {
@@ -2412,7 +2424,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DecelerationModifier
+        /// FloatProperty: DecelerationModifier<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DecelerationModifier
         {
@@ -2942,7 +2955,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableCameraAssist
+    /// BoolProperty: EnableCameraAssist<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCameraAssist
     {
@@ -3032,7 +3046,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: DontDrawClosePawns
+    /// BoolProperty: DontDrawClosePawns<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DontDrawClosePawns
     {
@@ -3221,7 +3236,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: CanToggleDrivingCam
+    /// BoolProperty: CanToggleDrivingCam<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanToggleDrivingCam
     {
@@ -3380,7 +3396,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1776);
 
     /// <summary>
-    /// StructProperty: HeadOffset
+    /// StructProperty: HeadOffset<br/>
+    /// Default: (Y=10,Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1788);
@@ -3416,7 +3433,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DOFManager
+    /// ObjectProperty: DOFManager<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.NewDOFManager
     /// </summary>
     public unsafe BmSDK.BmGame.RDOFManager DOFManager
     {
@@ -3425,7 +3443,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ScreenShakeModifier
+    /// ObjectProperty: ScreenShakeModifier<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.ScreenShakeMod
     /// </summary>
     public unsafe BmSDK.BmGame.RBMScreenShakeModifier ScreenShakeModifier
     {
@@ -3470,7 +3489,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BatarangViewPP
+    /// ObjectProperty: BatarangViewPP<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.BatarangRCPP
     /// </summary>
     public unsafe BmSDK.BmGame.RRCBatarangViewPostProcess BatarangViewPP
     {
@@ -3479,7 +3499,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RemoteBatmobilePP
+    /// ObjectProperty: RemoteBatmobilePP<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.BatmobileRCPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess RemoteBatmobilePP
     {
@@ -3488,7 +3509,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DisruptorZoomPP
+    /// ObjectProperty: DisruptorZoomPP<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.DisruptorPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess DisruptorZoomPP
     {
@@ -3497,7 +3519,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: OverlayPlayer
+    /// ObjectProperty: OverlayPlayer<br/>
+    /// Default: BmGame.Default__R3rdPersonCamera.Overlays
     /// </summary>
     public unsafe BmSDK.BmGame.RCameraOverlayPlayer OverlayPlayer
     {
@@ -3533,7 +3556,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TargetFOV
+    /// FloatProperty: TargetFOV<br/>
+    /// Default: 74
     /// </summary>
     public unsafe float TargetFOV
     {
@@ -3563,7 +3587,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1976);
 
     /// <summary>
-    /// FloatProperty: CurrentCameraFOVAngle
+    /// FloatProperty: CurrentCameraFOVAngle<br/>
+    /// Default: 74
     /// </summary>
     public unsafe float CurrentCameraFOVAngle
     {
@@ -3614,7 +3639,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TransitionTime
+    /// FloatProperty: TransitionTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TransitionTime
     {
@@ -3623,7 +3649,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: maxPitch
+    /// IntProperty: maxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int maxPitch
     {
@@ -3632,7 +3659,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinPitch
+    /// IntProperty: MinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int MinPitch
     {
@@ -3701,7 +3729,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2084);
 
     /// <summary>
-    /// FloatProperty: YawAccel
+    /// FloatProperty: YawAccel<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float YawAccel
     {
@@ -3710,7 +3739,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PitchAccel
+    /// FloatProperty: PitchAccel<br/>
+    /// Default: 50000
     /// </summary>
     public unsafe float PitchAccel
     {
@@ -3719,7 +3749,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: YawDecel
+    /// FloatProperty: YawDecel<br/>
+    /// Default: 3e+05
     /// </summary>
     public unsafe float YawDecel
     {
@@ -3728,7 +3759,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PitchDecel
+    /// FloatProperty: PitchDecel<br/>
+    /// Default: 3e+05
     /// </summary>
     public unsafe float PitchDecel
     {
@@ -3755,13 +3787,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WalkStateCameraOffset
+    /// StructProperty: WalkStateCameraOffset<br/>
+    /// Default: (X=-138,Y=33,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WalkStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2120);
 
     /// <summary>
-    /// FloatProperty: WalkStateCameraFOVAngle
+    /// FloatProperty: WalkStateCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float WalkStateCameraFOVAngle
     {
@@ -3776,13 +3810,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2136);
 
     /// <summary>
-    /// StructProperty: WalkCanisterStateCameraOffset
+    /// StructProperty: WalkCanisterStateCameraOffset<br/>
+    /// Default: (X=-138,Y=33,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WalkCanisterStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2148);
 
     /// <summary>
-    /// FloatProperty: WalkCanisterStateCameraFOVAngle
+    /// FloatProperty: WalkCanisterStateCameraFOVAngle<br/>
+    /// Default: 55
     /// </summary>
     public unsafe float WalkCanisterStateCameraFOVAngle
     {
@@ -3797,13 +3833,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2164);
 
     /// <summary>
-    /// StructProperty: DialogueStateCameraOffset
+    /// StructProperty: DialogueStateCameraOffset<br/>
+    /// Default: (X=-13,Y=22)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DialogueStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2176);
 
     /// <summary>
-    /// FloatProperty: DialogueStateCameraFOVAngle
+    /// FloatProperty: DialogueStateCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float DialogueStateCameraFOVAngle
     {
@@ -3812,7 +3850,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DialogueStateDefaultCameraRot
+    /// StructProperty: DialogueStateDefaultCameraRot<br/>
+    /// Default: (Pitch=-1000,Yaw=-3500)
     /// </summary>
     public unsafe ref BmSDK.Rotator DialogueStateDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2192);
@@ -3824,7 +3863,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2204);
 
     /// <summary>
-    /// FloatProperty: ForensicsScanStateCameraFOVAngle
+    /// FloatProperty: ForensicsScanStateCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float ForensicsScanStateCameraFOVAngle
     {
@@ -3839,13 +3879,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2220);
 
     /// <summary>
-    /// StructProperty: UsingSpotlightStateCameraOffset
+    /// StructProperty: UsingSpotlightStateCameraOffset<br/>
+    /// Default: (Z=92)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 UsingSpotlightStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2232);
 
     /// <summary>
-    /// FloatProperty: UsingSpotlightStateCameraFOVAngle
+    /// FloatProperty: UsingSpotlightStateCameraFOVAngle<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float UsingSpotlightStateCameraFOVAngle
     {
@@ -3860,13 +3902,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2248);
 
     /// <summary>
-    /// StructProperty: ForensicsFilterStateCameraOffset
+    /// StructProperty: ForensicsFilterStateCameraOffset<br/>
+    /// Default: (X=-138,Y=33)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ForensicsFilterStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2260);
 
     /// <summary>
-    /// FloatProperty: ForensicsFilterStateCameraFOVAngle
+    /// FloatProperty: ForensicsFilterStateCameraFOVAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float ForensicsFilterStateCameraFOVAngle
     {
@@ -3881,13 +3925,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2276);
 
     /// <summary>
-    /// StructProperty: RunStateCameraOffset
+    /// StructProperty: RunStateCameraOffset<br/>
+    /// Default: (X=-138,Y=33,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RunStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2288);
 
     /// <summary>
-    /// FloatProperty: RunStateCameraFOVAngle
+    /// FloatProperty: RunStateCameraFOVAngle<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float RunStateCameraFOVAngle
     {
@@ -3896,7 +3942,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BoostRunFOVAngle
+    /// FloatProperty: BoostRunFOVAngle<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float BoostRunFOVAngle
     {
@@ -3911,13 +3958,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2308);
 
     /// <summary>
-    /// StructProperty: PairedAnimationStateCameraOffset
+    /// StructProperty: PairedAnimationStateCameraOffset<br/>
+    /// Default: (X=-400)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PairedAnimationStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2320);
 
     /// <summary>
-    /// FloatProperty: PairedAnimationStateCameraFOVAngle
+    /// FloatProperty: PairedAnimationStateCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float PairedAnimationStateCameraFOVAngle
     {
@@ -3926,19 +3975,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PairedAnimationStateDefaultCameraRot
+    /// StructProperty: PairedAnimationStateDefaultCameraRot<br/>
+    /// Default: (Pitch=-2000,Yaw=-16000)
     /// </summary>
     public unsafe ref BmSDK.Rotator PairedAnimationStateDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2336);
 
     /// <summary>
-    /// StructProperty: StealthStateCameraOffset
+    /// StructProperty: StealthStateCameraOffset<br/>
+    /// Default: (X=-176,Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 StealthStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2348);
 
     /// <summary>
-    /// FloatProperty: StealthStateCameraFOVAngle
+    /// FloatProperty: StealthStateCameraFOVAngle<br/>
+    /// Default: 76
     /// </summary>
     public unsafe float StealthStateCameraFOVAngle
     {
@@ -3947,7 +3999,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverworldStealthStateCameraFOVAngle
+    /// FloatProperty: OverworldStealthStateCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float OverworldStealthStateCameraFOVAngle
     {
@@ -3962,13 +4015,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2368);
 
     /// <summary>
-    /// StructProperty: TunnelStateCameraOffset
+    /// StructProperty: TunnelStateCameraOffset<br/>
+    /// Default: (X=-32)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TunnelStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2380);
 
     /// <summary>
-    /// FloatProperty: TunnelStateCameraFOVAngle
+    /// FloatProperty: TunnelStateCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TunnelStateCameraFOVAngle
     {
@@ -3983,13 +4038,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2396);
 
     /// <summary>
-    /// StructProperty: TunnelStateCameraPivotOffset
+    /// StructProperty: TunnelStateCameraPivotOffset<br/>
+    /// Default: (X=-5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TunnelStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2408);
 
     /// <summary>
-    /// FloatProperty: ScarecrowTakedownCameraFOVAngle
+    /// FloatProperty: ScarecrowTakedownCameraFOVAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float ScarecrowTakedownCameraFOVAngle
     {
@@ -4004,7 +4061,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2424);
 
     /// <summary>
-    /// StructProperty: JokerFpsPivotOffset
+    /// StructProperty: JokerFpsPivotOffset<br/>
+    /// Default: (Z=58)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 JokerFpsPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2436);
@@ -4016,7 +4074,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2448);
 
     /// <summary>
-    /// FloatProperty: JokerFPSFov
+    /// FloatProperty: JokerFPSFov<br/>
+    /// Default: 64.4
     /// </summary>
     public unsafe float JokerFPSFov
     {
@@ -4025,7 +4084,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerFPSZoomFov
+    /// FloatProperty: JokerFPSZoomFov<br/>
+    /// Default: 44.4
     /// </summary>
     public unsafe float JokerFPSZoomFov
     {
@@ -4034,19 +4094,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GrappleDefaultCameraRot
+    /// StructProperty: GrappleDefaultCameraRot<br/>
+    /// Default: (Pitch=10000)
     /// </summary>
     public unsafe ref BmSDK.Rotator GrappleDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2468);
 
     /// <summary>
-    /// StructProperty: FallingStateCameraOffset
+    /// StructProperty: FallingStateCameraOffset<br/>
+    /// Default: (X=-160,Y=20,Z=78)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FallingStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2480);
 
     /// <summary>
-    /// FloatProperty: FallingStateCameraFOVAngle
+    /// FloatProperty: FallingStateCameraFOVAngle<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float FallingStateCameraFOVAngle
     {
@@ -4055,13 +4118,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: FallingDefaultCameraRot
+    /// StructProperty: FallingDefaultCameraRot<br/>
+    /// Default: (Pitch=-10000)
     /// </summary>
     public unsafe ref BmSDK.Rotator FallingDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2496);
 
     /// <summary>
-    /// FloatProperty: FallingStateSwingSmoothingStrength
+    /// FloatProperty: FallingStateSwingSmoothingStrength<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FallingStateSwingSmoothingStrength
     {
@@ -4070,7 +4135,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FallingStateSwingTransitionTime
+    /// FloatProperty: FallingStateSwingTransitionTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float FallingStateSwingTransitionTime
     {
@@ -4079,13 +4145,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GrappleAimCameraOffset
+    /// StructProperty: GrappleAimCameraOffset<br/>
+    /// Default: (X=-45,Y=27,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GrappleAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2516);
 
     /// <summary>
-    /// FloatProperty: GrappleAimCameraFOVAngle
+    /// FloatProperty: GrappleAimCameraFOVAngle<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float GrappleAimCameraFOVAngle
     {
@@ -4100,7 +4168,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2532);
 
     /// <summary>
-    /// IntProperty: GrappleAimMaxPitch
+    /// IntProperty: GrappleAimMaxPitch<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe int GrappleAimMaxPitch
     {
@@ -4109,7 +4178,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: GrappleAimMinPitch
+    /// IntProperty: GrappleAimMinPitch<br/>
+    /// Default: 8192
     /// </summary>
     public unsafe int GrappleAimMinPitch
     {
@@ -4118,13 +4188,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: HarpoonAimCameraOffset
+    /// StructProperty: HarpoonAimCameraOffset<br/>
+    /// Default: (X=-150,Y=35,Z=45)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HarpoonAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2552);
 
     /// <summary>
-    /// FloatProperty: HarpoonAimCameraFOVAngle
+    /// FloatProperty: HarpoonAimCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float HarpoonAimCameraFOVAngle
     {
@@ -4139,7 +4211,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2568);
 
     /// <summary>
-    /// IntProperty: HarpoonAimMaxPitch
+    /// IntProperty: HarpoonAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int HarpoonAimMaxPitch
     {
@@ -4148,7 +4221,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HarpoonAimMinPitch
+    /// IntProperty: HarpoonAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int HarpoonAimMinPitch
     {
@@ -4157,13 +4231,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: MagneticBlastAimCameraOffset
+    /// StructProperty: MagneticBlastAimCameraOffset<br/>
+    /// Default: (X=-138,Y=33,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MagneticBlastAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2588);
 
     /// <summary>
-    /// FloatProperty: MagneticBlastAimCameraFOVAngle
+    /// FloatProperty: MagneticBlastAimCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float MagneticBlastAimCameraFOVAngle
     {
@@ -4178,7 +4254,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2604);
 
     /// <summary>
-    /// IntProperty: MagneticBlastAimMaxPitch
+    /// IntProperty: MagneticBlastAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int MagneticBlastAimMaxPitch
     {
@@ -4187,7 +4264,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MagneticBlastAimMinPitch
+    /// IntProperty: MagneticBlastAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int MagneticBlastAimMinPitch
     {
@@ -4196,19 +4274,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: OmnitronAimCameraOffset
+    /// StructProperty: OmnitronAimCameraOffset<br/>
+    /// Default: (X=-71,Y=10,Z=13)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2624);
 
     /// <summary>
-    /// StructProperty: OmnitronAimCameraPivotOffset
+    /// StructProperty: OmnitronAimCameraPivotOffset<br/>
+    /// Default: (Z=-20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronAimCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2636);
 
     /// <summary>
-    /// FloatProperty: OmnitronAimCameraFOVAngle
+    /// FloatProperty: OmnitronAimCameraFOVAngle<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float OmnitronAimCameraFOVAngle
     {
@@ -4223,7 +4304,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2652);
 
     /// <summary>
-    /// IntProperty: OmnitronAimMaxPitch
+    /// IntProperty: OmnitronAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int OmnitronAimMaxPitch
     {
@@ -4232,7 +4314,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: OmnitronAimMinPitch
+    /// IntProperty: OmnitronAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int OmnitronAimMinPitch
     {
@@ -4241,19 +4324,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: OmnitronCornerLeftStateOffset
+    /// StructProperty: OmnitronCornerLeftStateOffset<br/>
+    /// Default: (X=-45,Y=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronCornerLeftStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2672);
 
     /// <summary>
-    /// StructProperty: OmnitronCornerRightStateOffset
+    /// StructProperty: OmnitronCornerRightStateOffset<br/>
+    /// Default: (X=-45,Y=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronCornerRightStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2684);
 
     /// <summary>
-    /// FloatProperty: OmnitronCornerStateFOVAngle
+    /// FloatProperty: OmnitronCornerStateFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float OmnitronCornerStateFOVAngle
     {
@@ -4262,37 +4348,43 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: OmnitronCornerStateDefaultRot
+    /// StructProperty: OmnitronCornerStateDefaultRot<br/>
+    /// Default: (Roll=-910)
     /// </summary>
     public unsafe ref BmSDK.Rotator OmnitronCornerStateDefaultRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2700);
 
     /// <summary>
-    /// StructProperty: OmnitronCornerLeftStateCameraPivotOffset
+    /// StructProperty: OmnitronCornerLeftStateCameraPivotOffset<br/>
+    /// Default: (X=50,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronCornerLeftStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2712);
 
     /// <summary>
-    /// StructProperty: OmnitronCornerRightStateCameraPivotOffset
+    /// StructProperty: OmnitronCornerRightStateCameraPivotOffset<br/>
+    /// Default: (X=50,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronCornerRightStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2724);
 
     /// <summary>
-    /// StructProperty: RHDAimCameraOffset
+    /// StructProperty: RHDAimCameraOffset<br/>
+    /// Default: (X=-71,Y=10,Z=13)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2736);
 
     /// <summary>
-    /// StructProperty: RHDAimCameraPivotOffset
+    /// StructProperty: RHDAimCameraPivotOffset<br/>
+    /// Default: (Z=-20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDAimCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2748);
 
     /// <summary>
-    /// FloatProperty: RHDAimCameraFOVAngle
+    /// FloatProperty: RHDAimCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float RHDAimCameraFOVAngle
     {
@@ -4307,7 +4399,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2764);
 
     /// <summary>
-    /// IntProperty: RHDAimMaxPitch
+    /// IntProperty: RHDAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int RHDAimMaxPitch
     {
@@ -4316,7 +4409,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RHDAimMinPitch
+    /// IntProperty: RHDAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int RHDAimMinPitch
     {
@@ -4325,19 +4419,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: RHDCornerLeftStateOffset
+    /// StructProperty: RHDCornerLeftStateOffset<br/>
+    /// Default: (X=-80,Y=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDCornerLeftStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2784);
 
     /// <summary>
-    /// StructProperty: RHDCornerRightStateOffset
+    /// StructProperty: RHDCornerRightStateOffset<br/>
+    /// Default: (X=-80,Y=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDCornerRightStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2796);
 
     /// <summary>
-    /// FloatProperty: RHDCornerStateFOVAngle
+    /// FloatProperty: RHDCornerStateFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float RHDCornerStateFOVAngle
     {
@@ -4346,31 +4443,36 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: RHDCornerStateDefaultRot
+    /// StructProperty: RHDCornerStateDefaultRot<br/>
+    /// Default: (Roll=-910)
     /// </summary>
     public unsafe ref BmSDK.Rotator RHDCornerStateDefaultRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2812);
 
     /// <summary>
-    /// StructProperty: RHDCornerLeftStateCameraPivotOffset
+    /// StructProperty: RHDCornerLeftStateCameraPivotOffset<br/>
+    /// Default: (X=70,Y=40,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDCornerLeftStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2824);
 
     /// <summary>
-    /// StructProperty: RHDCornerRightStateCameraPivotOffset
+    /// StructProperty: RHDCornerRightStateCameraPivotOffset<br/>
+    /// Default: (X=70,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDCornerRightStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2836);
 
     /// <summary>
-    /// StructProperty: FreezeJammerAimCameraOffset
+    /// StructProperty: FreezeJammerAimCameraOffset<br/>
+    /// Default: (X=-150,Y=35,Z=45)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FreezeJammerAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2848);
 
     /// <summary>
-    /// FloatProperty: FreezeJammerAimCameraFOVAngle
+    /// FloatProperty: FreezeJammerAimCameraFOVAngle<br/>
+    /// Default: 67
     /// </summary>
     public unsafe float FreezeJammerAimCameraFOVAngle
     {
@@ -4385,7 +4487,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2864);
 
     /// <summary>
-    /// IntProperty: FreezeJammerAimMaxPitch
+    /// IntProperty: FreezeJammerAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int FreezeJammerAimMaxPitch
     {
@@ -4394,7 +4497,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: FreezeJammerAimMinPitch
+    /// IntProperty: FreezeJammerAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int FreezeJammerAimMinPitch
     {
@@ -4409,7 +4513,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2884);
 
     /// <summary>
-    /// FloatProperty: JokerGunAimCameraFOVAngle
+    /// FloatProperty: JokerGunAimCameraFOVAngle<br/>
+    /// Default: 55
     /// </summary>
     public unsafe float JokerGunAimCameraFOVAngle
     {
@@ -4418,7 +4523,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerGunAimMaxPitch
+    /// IntProperty: JokerGunAimMaxPitch<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int JokerGunAimMaxPitch
     {
@@ -4427,7 +4533,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerGunAimMinPitch
+    /// IntProperty: JokerGunAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int JokerGunAimMinPitch
     {
@@ -4442,7 +4549,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2908);
 
     /// <summary>
-    /// FloatProperty: JokerGunZoomAimCameraFOVAngle
+    /// FloatProperty: JokerGunZoomAimCameraFOVAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float JokerGunZoomAimCameraFOVAngle
     {
@@ -4451,7 +4559,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerGunZoomAimMaxPitch
+    /// IntProperty: JokerGunZoomAimMaxPitch<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int JokerGunZoomAimMaxPitch
     {
@@ -4460,7 +4569,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: JokerGunZoomAimMinPitch
+    /// IntProperty: JokerGunZoomAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int JokerGunZoomAimMinPitch
     {
@@ -4475,7 +4585,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2932);
 
     /// <summary>
-    /// FloatProperty: JokerGunZoomRoom3AimCameraFOVAngle
+    /// FloatProperty: JokerGunZoomRoom3AimCameraFOVAngle<br/>
+    /// Default: 55
     /// </summary>
     public unsafe float JokerGunZoomRoom3AimCameraFOVAngle
     {
@@ -4502,7 +4613,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerGunSmoothingStrength
+    /// FloatProperty: JokerGunSmoothingStrength<br/>
+    /// Default: 24
     /// </summary>
     public unsafe float JokerGunSmoothingStrength
     {
@@ -4511,13 +4623,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LineLauncherAimCameraOffset
+    /// StructProperty: LineLauncherAimCameraOffset<br/>
+    /// Default: (X=-45,Z=125)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LineLauncherAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2960);
 
     /// <summary>
-    /// FloatProperty: LineLauncherAimCameraFOVAngle
+    /// FloatProperty: LineLauncherAimCameraFOVAngle<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float LineLauncherAimCameraFOVAngle
     {
@@ -4550,13 +4664,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BatarangAimCameraOffset
+    /// StructProperty: BatarangAimCameraOffset<br/>
+    /// Default: (X=-182,Y=47,Z=36)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatarangAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2996);
 
     /// <summary>
-    /// FloatProperty: BatarangAimCameraFOVAngle
+    /// FloatProperty: BatarangAimCameraFOVAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float BatarangAimCameraFOVAngle
     {
@@ -4571,7 +4687,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3012);
 
     /// <summary>
-    /// IntProperty: BatarangAimMaxPitch
+    /// IntProperty: BatarangAimMaxPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int BatarangAimMaxPitch
     {
@@ -4580,7 +4697,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BatarangAimMinPitch
+    /// IntProperty: BatarangAimMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int BatarangAimMinPitch
     {
@@ -4595,7 +4713,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3032);
 
     /// <summary>
-    /// FloatProperty: WallClimbStartCameraFOVAngle
+    /// FloatProperty: WallClimbStartCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float WallClimbStartCameraFOVAngle
     {
@@ -4604,7 +4723,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WallClimbHeadOffset
+    /// StructProperty: WallClimbHeadOffset<br/>
+    /// Default: (X=-70)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WallClimbHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3048);
@@ -4616,7 +4736,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3060);
 
     /// <summary>
-    /// FloatProperty: PounceCameraFOVAngle
+    /// FloatProperty: PounceCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float PounceCameraFOVAngle
     {
@@ -4631,19 +4752,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3076);
 
     /// <summary>
-    /// StructProperty: VantageClimbHeadOffset
+    /// StructProperty: VantageClimbHeadOffset<br/>
+    /// Default: (X=-100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VantageClimbHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3088);
 
     /// <summary>
-    /// StructProperty: BatTrackerAimCameraOffset
+    /// StructProperty: BatTrackerAimCameraOffset<br/>
+    /// Default: (X=-130,Y=25,Z=81)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatTrackerAimCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3100);
 
     /// <summary>
-    /// FloatProperty: BatTrackerAimCameraFOVAngle
+    /// FloatProperty: BatTrackerAimCameraFOVAngle<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float BatTrackerAimCameraFOVAngle
     {
@@ -4664,7 +4788,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3128);
 
     /// <summary>
-    /// FloatProperty: CorridorCombatStateCameraFOVAngle
+    /// FloatProperty: CorridorCombatStateCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float CorridorCombatStateCameraFOVAngle
     {
@@ -4673,7 +4798,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NightwingBossFightCameraFOVAngle
+    /// FloatProperty: NightwingBossFightCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float NightwingBossFightCameraFOVAngle
     {
@@ -4682,7 +4808,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HighCombatStateCameraFOVAngle
+    /// FloatProperty: HighCombatStateCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float HighCombatStateCameraFOVAngle
     {
@@ -4691,13 +4818,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LookStateCameraOffset
+    /// StructProperty: LookStateCameraOffset<br/>
+    /// Default: (X=-120,Y=33,Z=52)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LookStateCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3152);
 
     /// <summary>
-    /// FloatProperty: LookStateCameraFOVAngle
+    /// FloatProperty: LookStateCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float LookStateCameraFOVAngle
     {
@@ -4712,7 +4841,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3168);
 
     /// <summary>
-    /// IntProperty: LookStateMaxPitch
+    /// IntProperty: LookStateMaxPitch<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe int LookStateMaxPitch
     {
@@ -4721,7 +4851,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: LookStateMinPitch
+    /// IntProperty: LookStateMinPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int LookStateMinPitch
     {
@@ -4730,7 +4861,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookModeScale
+    /// FloatProperty: LookModeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookModeScale
     {
@@ -4739,7 +4871,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookSpringBack
+    /// FloatProperty: LookSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookSpringBack
     {
@@ -4748,7 +4881,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GrappleLookSpringBack
+    /// FloatProperty: GrappleLookSpringBack<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float GrappleLookSpringBack
     {
@@ -4757,7 +4891,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GrappleCameraFOVAngle
+    /// FloatProperty: GrappleCameraFOVAngle<br/>
+    /// Default: 105
     /// </summary>
     public unsafe float GrappleCameraFOVAngle
     {
@@ -4766,7 +4901,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoomStateCameraFOVAngle
+    /// FloatProperty: ZoomStateCameraFOVAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ZoomStateCameraFOVAngle
     {
@@ -4775,13 +4911,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CoverRightCameraOffset
+    /// StructProperty: CoverRightCameraOffset<br/>
+    /// Default: (X=-180,Z=-30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CoverRightCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3208);
 
     /// <summary>
-    /// FloatProperty: CoverRightCameraFOVAngle
+    /// FloatProperty: CoverRightCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float CoverRightCameraFOVAngle
     {
@@ -4796,13 +4934,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3224);
 
     /// <summary>
-    /// StructProperty: AlcoveCameraOffset
+    /// StructProperty: AlcoveCameraOffset<br/>
+    /// Default: (X=-160,Z=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AlcoveCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3236);
 
     /// <summary>
-    /// FloatProperty: AlcoveCameraFOVAngle
+    /// FloatProperty: AlcoveCameraFOVAngle<br/>
+    /// Default: 65
     /// </summary>
     public unsafe float AlcoveCameraFOVAngle
     {
@@ -4817,19 +4957,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3252);
 
     /// <summary>
-    /// StructProperty: AlcoveCameraPivotOffset
+    /// StructProperty: AlcoveCameraPivotOffset<br/>
+    /// Default: (X=160)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AlcoveCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3264);
 
     /// <summary>
-    /// StructProperty: GlidingCameraOffset
+    /// StructProperty: GlidingCameraOffset<br/>
+    /// Default: (X=-240,Z=30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GlidingCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3276);
 
     /// <summary>
-    /// FloatProperty: GlidingCameraFOVAngle
+    /// FloatProperty: GlidingCameraFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float GlidingCameraFOVAngle
     {
@@ -4838,7 +4981,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GlidingCameraExtraFOVAngle
+    /// FloatProperty: GlidingCameraExtraFOVAngle<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float GlidingCameraExtraFOVAngle
     {
@@ -4847,13 +4991,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GlidingCameraRot
+    /// StructProperty: GlidingCameraRot<br/>
+    /// Default: (Pitch=-1000)
     /// </summary>
     public unsafe ref BmSDK.Rotator GlidingCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3296);
 
     /// <summary>
-    /// FloatProperty: GlideLagStrength
+    /// FloatProperty: GlideLagStrength<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float GlideLagStrength
     {
@@ -4862,7 +5008,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GlideLagBoostStrength
+    /// FloatProperty: GlideLagBoostStrength<br/>
+    /// Default: 13
     /// </summary>
     public unsafe float GlideLagBoostStrength
     {
@@ -4871,7 +5018,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GlideLagStrengthBlendTime
+    /// FloatProperty: GlideLagStrengthBlendTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float GlideLagStrengthBlendTime
     {
@@ -4880,7 +5028,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DiveCameraOrientationTime
+    /// FloatProperty: DiveCameraOrientationTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DiveCameraOrientationTime
     {
@@ -4889,19 +5038,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GlideKickOffWallHeadOffset
+    /// StructProperty: GlideKickOffWallHeadOffset<br/>
+    /// Default: (Y=25,Z=25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GlideKickOffWallHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3324);
 
     /// <summary>
-    /// StructProperty: BoostGlidingCameraOffset
+    /// StructProperty: BoostGlidingCameraOffset<br/>
+    /// Default: (X=-130,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoostGlidingCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3336);
 
     /// <summary>
-    /// FloatProperty: BoostGlidingCameraFOVAngle
+    /// FloatProperty: BoostGlidingCameraFOVAngle<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float BoostGlidingCameraFOVAngle
     {
@@ -4910,19 +5062,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BoostGlidingCameraRot
+    /// StructProperty: BoostGlidingCameraRot<br/>
+    /// Default: (Pitch=-1000)
     /// </summary>
     public unsafe ref BmSDK.Rotator BoostGlidingCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3352);
 
     /// <summary>
-    /// StructProperty: PouncingCameraOffset
+    /// StructProperty: PouncingCameraOffset<br/>
+    /// Default: (X=-288,Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PouncingCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3364);
 
     /// <summary>
-    /// FloatProperty: SilentPredCameraFOVAngle
+    /// FloatProperty: SilentPredCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float SilentPredCameraFOVAngle
     {
@@ -4931,7 +5086,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SilentPredOverworldCameraFOVAngle
+    /// FloatProperty: SilentPredOverworldCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float SilentPredOverworldCameraFOVAngle
     {
@@ -4940,7 +5096,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PerchLedgeCameraFOVAngle
+    /// FloatProperty: PerchLedgeCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float PerchLedgeCameraFOVAngle
     {
@@ -4955,7 +5112,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3388);
 
     /// <summary>
-    /// FloatProperty: PerchLedgeSwingCameraFOVAngle
+    /// FloatProperty: PerchLedgeSwingCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float PerchLedgeSwingCameraFOVAngle
     {
@@ -4964,19 +5122,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PerchLedgeSwingHeadOffset
+    /// StructProperty: PerchLedgeSwingHeadOffset<br/>
+    /// Default: (Z=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PerchLedgeSwingHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3404);
 
     /// <summary>
-    /// StructProperty: HangCameraOffset
+    /// StructProperty: HangCameraOffset<br/>
+    /// Default: (X=-150)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HangCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3416);
 
     /// <summary>
-    /// FloatProperty: HangCameraFOVAngle
+    /// FloatProperty: HangCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HangCameraFOVAngle
     {
@@ -4985,13 +5146,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: HangDefaultCameraRot
+    /// StructProperty: HangDefaultCameraRot<br/>
+    /// Default: (Pitch=-9000)
     /// </summary>
     public unsafe ref BmSDK.Rotator HangDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3432);
 
     /// <summary>
-    /// FloatProperty: MinFreeCameraDistance
+    /// FloatProperty: MinFreeCameraDistance<br/>
+    /// Default: 164
     /// </summary>
     public unsafe float MinFreeCameraDistance
     {
@@ -5000,7 +5163,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxFreeCameraDistance
+    /// FloatProperty: MaxFreeCameraDistance<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MaxFreeCameraDistance
     {
@@ -5009,7 +5173,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ShortCamSpringConst
+    /// FloatProperty: ShortCamSpringConst<br/>
+    /// Default: 16
     /// </summary>
     public unsafe float ShortCamSpringConst
     {
@@ -5018,7 +5183,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LongCamSpringConst
+    /// FloatProperty: LongCamSpringConst<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float LongCamSpringConst
     {
@@ -5033,7 +5199,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3460);
 
     /// <summary>
-    /// FloatProperty: CurrentShortCamSpringConst
+    /// FloatProperty: CurrentShortCamSpringConst<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentShortCamSpringConst
     {
@@ -5042,7 +5209,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrentLongCamSpringConst
+    /// FloatProperty: CurrentLongCamSpringConst<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentLongCamSpringConst
     {
@@ -5051,13 +5219,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CameraPivotOffsetDef
+    /// StructProperty: CameraPivotOffsetDef<br/>
+    /// Default: (Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraPivotOffsetDef
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3480);
 
     /// <summary>
-    /// IntProperty: MaxFreeCameraPitch
+    /// IntProperty: MaxFreeCameraPitch<br/>
+    /// Default: 14500
     /// </summary>
     public unsafe int MaxFreeCameraPitch
     {
@@ -5066,7 +5236,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinFreeCameraPitch
+    /// IntProperty: MinFreeCameraPitch<br/>
+    /// Default: -13000
     /// </summary>
     public unsafe int MinFreeCameraPitch
     {
@@ -5075,7 +5246,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoomSensitivityMod
+    /// FloatProperty: ZoomSensitivityMod<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ZoomSensitivityMod
     {
@@ -5084,7 +5256,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookSensitivityMod
+    /// FloatProperty: LookSensitivityMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookSensitivityMod
     {
@@ -5093,7 +5266,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: fGadgetVariableLookSensitivityMod
+    /// FloatProperty: fGadgetVariableLookSensitivityMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float fGadgetVariableLookSensitivityMod
     {
@@ -5102,7 +5276,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HarpoonSensitivityMod
+    /// FloatProperty: HarpoonSensitivityMod<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float HarpoonSensitivityMod
     {
@@ -5111,7 +5286,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerGunSensitivityMod
+    /// FloatProperty: JokerGunSensitivityMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float JokerGunSensitivityMod
     {
@@ -5120,7 +5296,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerGunZoomSensitivityMod
+    /// FloatProperty: JokerGunZoomSensitivityMod<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float JokerGunZoomSensitivityMod
     {
@@ -5129,7 +5306,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JokerGunZoomRoom3SensitivityMod
+    /// FloatProperty: JokerGunZoomRoom3SensitivityMod<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float JokerGunZoomRoom3SensitivityMod
     {
@@ -5138,7 +5316,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SensitivityModZ
+    /// FloatProperty: SensitivityModZ<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SensitivityModZ
     {
@@ -5171,13 +5350,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3568);
 
     /// <summary>
-    /// StructProperty: ZipLineCameraOffset
+    /// StructProperty: ZipLineCameraOffset<br/>
+    /// Default: (X=-350)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ZipLineCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3580);
 
     /// <summary>
-    /// FloatProperty: ZipLineCameraFOVAngle
+    /// FloatProperty: ZipLineCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float ZipLineCameraFOVAngle
     {
@@ -5186,25 +5367,29 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ZipLineDefaultCameraRot
+    /// StructProperty: ZipLineDefaultCameraRot<br/>
+    /// Default: (Pitch=-3000,Yaw=-5000)
     /// </summary>
     public unsafe ref BmSDK.Rotator ZipLineDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3596);
 
     /// <summary>
-    /// StructProperty: ZipLineTargetOffset
+    /// StructProperty: ZipLineTargetOffset<br/>
+    /// Default: (X=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ZipLineTargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3608);
 
     /// <summary>
-    /// StructProperty: HarpoonPullCameraOffset
+    /// StructProperty: HarpoonPullCameraOffset<br/>
+    /// Default: (X=-150,Y=30,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HarpoonPullCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3620);
 
     /// <summary>
-    /// FloatProperty: HarpoonPullCameraFOVAngle
+    /// FloatProperty: HarpoonPullCameraFOVAngle<br/>
+    /// Default: 74
     /// </summary>
     public unsafe float HarpoonPullCameraFOVAngle
     {
@@ -5213,7 +5398,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: HarpoonPullDefaultCameraRot
+    /// StructProperty: HarpoonPullDefaultCameraRot<br/>
+    /// Default: (Pitch=-1820,Yaw=-3640)
     /// </summary>
     public unsafe ref BmSDK.Rotator HarpoonPullDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3636);
@@ -5225,31 +5411,36 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3648);
 
     /// <summary>
-    /// StructProperty: FixedCameraHeadOffset
+    /// StructProperty: FixedCameraHeadOffset<br/>
+    /// Default: (Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FixedCameraHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3660);
 
     /// <summary>
-    /// StructProperty: FreeCameraHeadOffset
+    /// StructProperty: FreeCameraHeadOffset<br/>
+    /// Default: (Y=10,Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FreeCameraHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3672);
 
     /// <summary>
-    /// StructProperty: AlcoveCameraHeadOffset
+    /// StructProperty: AlcoveCameraHeadOffset<br/>
+    /// Default: (X=128,Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AlcoveCameraHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3684);
 
     /// <summary>
-    /// StructProperty: SwingingFromAboveCameraOffset
+    /// StructProperty: SwingingFromAboveCameraOffset<br/>
+    /// Default: (X=-45,Z=125)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SwingingFromAboveCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3696);
 
     /// <summary>
-    /// FloatProperty: SwingingFromAboveCameraFOVAngle
+    /// FloatProperty: SwingingFromAboveCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float SwingingFromAboveCameraFOVAngle
     {
@@ -5264,7 +5455,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3712);
 
     /// <summary>
-    /// FloatProperty: CeilingClimbCamFOVAngle
+    /// FloatProperty: CeilingClimbCamFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float CeilingClimbCamFOVAngle
     {
@@ -5273,19 +5465,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CeilingClimbCamHeadOffset
+    /// StructProperty: CeilingClimbCamHeadOffset<br/>
+    /// Default: (X=-25,Z=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CeilingClimbCamHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3728);
 
     /// <summary>
-    /// StructProperty: CeilingClimbCamRot
+    /// StructProperty: CeilingClimbCamRot<br/>
+    /// Default: (Roll=32040)
     /// </summary>
     public unsafe ref BmSDK.Rotator CeilingClimbCamRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3740);
 
     /// <summary>
-    /// FloatProperty: ZoomFOV
+    /// FloatProperty: ZoomFOV<br/>
+    /// Default: 27
     /// </summary>
     public unsafe float ZoomFOV
     {
@@ -5294,7 +5489,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ExtraZoomFOV
+    /// FloatProperty: ExtraZoomFOV<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ExtraZoomFOV
     {
@@ -5303,7 +5499,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoomTime
+    /// FloatProperty: ZoomTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ZoomTime
     {
@@ -5312,7 +5509,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RaftPullFOVAngle
+    /// FloatProperty: RaftPullFOVAngle<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float RaftPullFOVAngle
     {
@@ -5321,7 +5519,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DiveToBatmobilePickupFOVAngle
+    /// FloatProperty: DiveToBatmobilePickupFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float DiveToBatmobilePickupFOVAngle
     {
@@ -5330,13 +5529,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DiveToBatmobilePickupRot
+    /// StructProperty: DiveToBatmobilePickupRot<br/>
+    /// Default: (Pitch=1000,Roll=1365)
     /// </summary>
     public unsafe ref BmSDK.Rotator DiveToBatmobilePickupRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3772);
 
     /// <summary>
-    /// FloatProperty: DiveToBatmobilePickupPivotMax
+    /// FloatProperty: DiveToBatmobilePickupPivotMax<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float DiveToBatmobilePickupPivotMax
     {
@@ -5345,7 +5546,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FearTakedownFOVAngle
+    /// FloatProperty: FearTakedownFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float FearTakedownFOVAngle
     {
@@ -5354,7 +5556,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ForcedPitch
+    /// IntProperty: ForcedPitch<br/>
+    /// Default: -10000
     /// </summary>
     public unsafe int ForcedPitch
     {
@@ -5402,7 +5605,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GrateCameraPivotOffset
+    /// StructProperty: GrateCameraPivotOffset<br/>
+    /// Default: (Z=120)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GrateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3832);
@@ -5555,13 +5759,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: EdgeSwingCameraOffset
+    /// StructProperty: EdgeSwingCameraOffset<br/>
+    /// Default: (X=-180,Z=-100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 EdgeSwingCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3984);
 
     /// <summary>
-    /// FloatProperty: EdgeSwingCameraFOVAngle
+    /// FloatProperty: EdgeSwingCameraFOVAngle<br/>
+    /// Default: 95
     /// </summary>
     public unsafe float EdgeSwingCameraFOVAngle
     {
@@ -5570,7 +5776,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: EdgeSwingCameraRot
+    /// StructProperty: EdgeSwingCameraRot<br/>
+    /// Default: (Pitch=-1000)
     /// </summary>
     public unsafe ref BmSDK.Rotator EdgeSwingCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 4000);
@@ -5606,7 +5813,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CrosshairAngleOffsetFactor
+    /// FloatProperty: CrosshairAngleOffsetFactor<br/>
+    /// Default: 0.43
     /// </summary>
     public unsafe float CrosshairAngleOffsetFactor
     {
@@ -5615,13 +5823,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BaseZoomDOFSettings
+    /// StructProperty: BaseZoomDOFSettings<br/>
+    /// Default: (ApertureStop=0.5,FocusDistance=220,InterpolationDuration=0.25,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct BaseZoomDOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 4048);
 
     /// <summary>
-    /// FloatProperty: MinZoomFarApertureStop
+    /// FloatProperty: MinZoomFarApertureStop<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float MinZoomFarApertureStop
     {
@@ -5630,13 +5840,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ZoomedDOFSetting
+    /// StructProperty: ZoomedDOFSetting<br/>
+    /// Default: (ApertureStop=22,FocusDistance=220,InterpolationDuration=1,BloomScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct ZoomedDOFSetting
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 4072);
 
     /// <summary>
-    /// FloatProperty: ThugCameraFOVAngle
+    /// FloatProperty: ThugCameraFOVAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float ThugCameraFOVAngle
     {
@@ -5645,7 +5857,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThugZoomCameraFOVAngle
+    /// FloatProperty: ThugZoomCameraFOVAngle<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float ThugZoomCameraFOVAngle
     {
@@ -5654,511 +5867,596 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WalkCamConfig
+    /// StructProperty: WalkCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-76,Y=86,Z=-16),StateFreeCameraSitOffsetMax=(Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig WalkCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4100);
 
     /// <summary>
-    /// StructProperty: WalkCanisterCamConfig
+    /// StructProperty: WalkCanisterCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-76,Y=50,Z=-10),StateFreeCameraSitOffsetMax=(Y=25,Z=40),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig WalkCanisterCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4268);
 
     /// <summary>
-    /// StructProperty: AgilityWalkCamConfig
+    /// StructProperty: AgilityWalkCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-85,Y=43,Z=16),StateFreeCameraSitOffsetMax=(Y=25,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig AgilityWalkCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4436);
 
     /// <summary>
-    /// StructProperty: RunCamConfig
+    /// StructProperty: RunCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-114),StateFreeCameraSitOffsetMax=(X=36,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RunCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4604);
 
     /// <summary>
-    /// StructProperty: RooftopRunCamConfig
+    /// StructProperty: RooftopRunCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-314),StateFreeCameraSitOffsetMax=(X=-164,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-15000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RooftopRunCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4772);
 
     /// <summary>
-    /// StructProperty: DemonTrialsCamConfig
+    /// StructProperty: DemonTrialsCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-114),StateFreeCameraSitOffsetMax=(X=36,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=400,MaxFreeCameraDistanc...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DemonTrialsCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 4940);
 
     /// <summary>
-    /// StructProperty: CombatWalkCamConfig
+    /// StructProperty: CombatWalkCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-300),StateFreeCameraSitOffsetMax=(X=-300,Z=75),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CombatWalkCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5108);
 
     /// <summary>
-    /// StructProperty: StandingHoldCamConfig
+    /// StructProperty: StandingHoldCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Y=15),StateFreeCameraSitOffsetMax=(X=-50,Y=15,Z=50),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCam...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig StandingHoldCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5276);
 
     /// <summary>
-    /// StructProperty: FearTakedownCamConfig
+    /// StructProperty: FearTakedownCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-140,Y=80,Z=40),StateFreeCameraSitOffsetMax=(X=-60,Y=80,Z=80),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,Short...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig FearTakedownCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5444);
 
     /// <summary>
-    /// StructProperty: StandingGrabCamConfig
+    /// StructProperty: StandingGrabCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Y=15),StateFreeCameraSitOffsetMax=(X=50,Y=15,Z=50),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig StandingGrabCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5612);
 
     /// <summary>
-    /// StructProperty: GrappleCamConfig
+    /// StructProperty: GrappleCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200),StateFreeCameraSitOffsetMax=(X=-200,Z=100),CameraPivotOffset=(Z=85),ZoomedOffset=(Z=80),maxPitch=12000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDista...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GrappleCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5780);
 
     /// <summary>
-    /// StructProperty: GrappleRescueCamConfig
+    /// StructProperty: GrappleRescueCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250,Z=50),StateFreeCameraSitOffsetMax=(X=-250,Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpring...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GrappleRescueCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 5948);
 
     /// <summary>
-    /// StructProperty: HqGrappleStartCamConfig
+    /// StructProperty: HqGrappleStartCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200),StateFreeCameraSitOffsetMax=(X=-200,Z=100),CameraPivotOffset=(Z=85),ZoomedOffset=(Z=80),maxPitch=12000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDista...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HqGrappleStartCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6116);
 
     /// <summary>
-    /// StructProperty: CapeChuteConfig
+    /// StructProperty: CapeChuteConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Y=15),StateFreeCameraSitOffsetMax=(X=-50,Y=15,Z=50),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCam...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CapeChuteConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6284);
 
     /// <summary>
-    /// StructProperty: LedgeHangCamConfig
+    /// StructProperty: LedgeHangCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Z=50),StateFreeCameraSitOffsetMax=(X=-250),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LedgeHangCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6452);
 
     /// <summary>
-    /// StructProperty: LedgeHangKickedByThugCamConfig
+    /// StructProperty: LedgeHangKickedByThugCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Z=-50),StateFreeCameraSitOffsetMax=(X=-100,Z=50),CameraPivotOffset=(X=50,Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=4500,MinFreeCameraDistance=86,MaxFreeCam...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LedgeHangKickedByThugCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6620);
 
     /// <summary>
-    /// StructProperty: LedgeHangTakedownStartCamConfig
+    /// StructProperty: LedgeHangTakedownStartCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Y=-50,Z=-90),StateFreeCameraSitOffsetMax=(X=-250,Y=-50,Z=-70),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LedgeHangTakedownStartCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6788);
 
     /// <summary>
-    /// StructProperty: LedgeHangTakedownCamConfig
+    /// StructProperty: LedgeHangTakedownCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Y=-50,Z=-90),StateFreeCameraSitOffsetMax=(X=-250,Y=-50,Z=-70),CameraPivotOffset=(Z=-20),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=12...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LedgeHangTakedownCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 6956);
 
     /// <summary>
-    /// StructProperty: QuickTakedownCamConfig
+    /// StructProperty: QuickTakedownCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Y=-50,Z=-30),StateFreeCameraSitOffsetMax=(X=-250,Y=-50,Z=50),CameraPivotOffset=(Z=-50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=120...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig QuickTakedownCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7124);
 
     /// <summary>
-    /// StructProperty: GenericFarFreeCamConfig
+    /// StructProperty: GenericFarFreeCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250),StateFreeCameraSitOffsetMax=(X=-100,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GenericFarFreeCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7292);
 
     /// <summary>
-    /// StructProperty: AirshipControlCamConfig
+    /// StructProperty: AirshipControlCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250,Y=100),StateFreeCameraSitOffsetMax=(X=-100,Y=100,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFree...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig AirshipControlCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7460);
 
     /// <summary>
-    /// StructProperty: RaftPullCamConfig
+    /// StructProperty: RaftPullCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-400),StateFreeCameraSitOffsetMax=(X=-250,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RaftPullCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7628);
 
     /// <summary>
-    /// StructProperty: HangPointCamConfig
+    /// StructProperty: HangPointCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMax=(X=-100,Z=-40),CameraPivotOffset=(Z=-90),ZoomedOffset=(X=50,Z=-30),maxPitch=1500,MinPitch=-13000,MinFreeCameraDistance=50,MaxFreeCameraDistance=86,ShortCamSpringConst=16,L...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HangPointCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7796);
 
     /// <summary>
-    /// StructProperty: StealthCamConfig
+    /// StructProperty: StealthCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-264),StateFreeCameraSitOffsetMax=(X=-50,Y=25,Z=116),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraD...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig StealthCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 7964);
 
     /// <summary>
-    /// StructProperty: StealthWallCamConfig
+    /// StructProperty: StealthWallCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-264),StateFreeCameraSitOffsetMax=(X=-50,Y=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringConst=...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig StealthWallCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8132);
 
     /// <summary>
-    /// StructProperty: CrouchUnderObstacleCamConfig
+    /// StructProperty: CrouchUnderObstacleCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=50,Z=-50),StateFreeCameraSitOffsetMax=(Y=25,Z=80),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDist...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CrouchUnderObstacleCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8300);
 
     /// <summary>
-    /// StructProperty: RailingCamConfig
+    /// StructProperty: RailingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-264),StateFreeCameraSitOffsetMax=(X=-50,Y=25,Z=200),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-50,Y=25,Z=200),CameraPivotOffset=(Z=65),ZoomedOff...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RailingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8468);
 
     /// <summary>
-    /// StructProperty: FloorAttackCamConfig
+    /// StructProperty: FloorAttackCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-364),StateFreeCameraSitOffsetMax=(X=-214,Y=25,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraD...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig FloorAttackCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8636);
 
     /// <summary>
-    /// StructProperty: IntroCamConfig
+    /// StructProperty: IntroCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-85,Y=50),StateFreeCameraSitOffsetMax=(X=36,Y=25,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig IntroCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8804);
 
     /// <summary>
-    /// StructProperty: SwingingCamConfig
+    /// StructProperty: SwingingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-350),StateFreeCameraSitOffsetMax=(X=-350,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=-2000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistan...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig SwingingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 8972);
 
     /// <summary>
-    /// StructProperty: WallClimbCamConfig
+    /// StructProperty: WallClimbCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-150,Z=-100),StateFreeCameraSitOffsetMax=(X=-105,Z=-50),CameraPivotOffset=(X=-70),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=320,MaxFreeCa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig WallClimbCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9140);
 
     /// <summary>
-    /// StructProperty: WallClimbStartCamConfig
+    /// StructProperty: WallClimbStartCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-140,Z=-60),StateFreeCameraSitOffsetMax=(X=-140,Z=130),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=386,MaxFreeCameraDistance=310,ShortCamSp...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig WallClimbStartCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9308);
 
     /// <summary>
-    /// StructProperty: PounceCamConfig
+    /// StructProperty: PounceCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-140,Z=100),StateFreeCameraSitOffsetMax=(X=-140,Z=150),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=100,ShortCamSpr...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig PounceCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9476);
 
     /// <summary>
-    /// StructProperty: VantageClimbCamConfig
+    /// StructProperty: VantageClimbCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-265,Y=-120),StateFreeCameraSitOffsetMax=(X=-100,Y=-120,Z=150),CameraPivotOffset=(Z=20),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig VantageClimbCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9644);
 
     /// <summary>
-    /// StructProperty: SwingingFromAboveCamConfig
+    /// StructProperty: SwingingFromAboveCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200),StateFreeCameraSitOffsetMax=(X=-250),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringConst=80,L...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig SwingingFromAboveCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9812);
 
     /// <summary>
-    /// StructProperty: TakedownFromAboveCamConfig
+    /// StructProperty: TakedownFromAboveCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200),StateFreeCameraSitOffsetMax=(Z=50),CameraPivotOffset=(Z=10),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=100,MaxFreeCameraDistance=100...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig TakedownFromAboveCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 9980);
 
     /// <summary>
-    /// StructProperty: SilentPredatorCamConfig
+    /// StructProperty: SilentPredatorCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-265,Y=-120),StateFreeCameraSitOffsetMax=(X=-100,Y=-120,Z=150),CameraPivotOffset=(Z=20),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-16202,MinFreeCameraDistance=86,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig SilentPredatorCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10148);
 
     /// <summary>
-    /// StructProperty: PerchLedgeCamConfig
+    /// StructProperty: PerchLedgeCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-265,Y=-120),StateFreeCameraSitOffsetMax=(X=-100,Y=-120,Z=150),CameraPivotOffset=(Z=20),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-16202,MinFreeCameraDistance=86,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig PerchLedgeCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10316);
 
     /// <summary>
-    /// StructProperty: PerchLedgeSwingCamConfig
+    /// StructProperty: PerchLedgeSwingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-150,Z=-120),StateFreeCameraSitOffsetMax=(X=-150),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=-2000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDist...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig PerchLedgeSwingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10484);
 
     /// <summary>
-    /// StructProperty: CorridorCombatCamConfig
+    /// StructProperty: CorridorCombatCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-235,Y=50),StateFreeCameraSitOffsetMax=(X=36,Y=25,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CorridorCombatCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10652);
 
     /// <summary>
-    /// StructProperty: NightwingBossFightCamConfig
+    /// StructProperty: NightwingBossFightCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-235,Y=50),StateFreeCameraSitOffsetMax=(X=36,Y=25,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig NightwingBossFightCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10820);
 
     /// <summary>
-    /// StructProperty: HighCombatCamConfig
+    /// StructProperty: HighCombatCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-350),StateFreeCameraSitOffsetMax=(X=-350),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=186,MaxFreeCameraDistance=186,ShortCamSpringConst=64...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HighCombatCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 10988);
 
     /// <summary>
-    /// StructProperty: LookDownCamConfig
+    /// StructProperty: LookDownCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(Z=-150),StateFreeCameraSitOffsetMax=(Z=-150),CameraPivotOffset=(Z=20),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LookDownCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11156);
 
     /// <summary>
-    /// StructProperty: LineLauncherCamConfig
+    /// StructProperty: LineLauncherCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-95,Y=75,Z=-10),StateFreeCameraSitOffsetMax=(X=36,Y=50,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpri...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LineLauncherCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11324);
 
     /// <summary>
-    /// StructProperty: BatarangCamConfig
+    /// StructProperty: BatarangCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-83,Y=86,Z=-7),StateFreeCameraSitOffsetMax=(X=-65,Y=35,Z=65),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFre...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BatarangCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11492);
 
     /// <summary>
-    /// StructProperty: WhipRappelBolaCamConfig
+    /// StructProperty: WhipRappelBolaCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-83,Y=86,Z=-20),StateFreeCameraSitOffsetMax=(X=-65,Y=35,Z=65),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=150,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig WhipRappelBolaCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11660);
 
     /// <summary>
-    /// StructProperty: HarpoonAimConfig
+    /// StructProperty: HarpoonAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-76,Y=69,Z=32),StateFreeCameraSitOffsetMax=(Y=25,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HarpoonAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11828);
 
     /// <summary>
-    /// StructProperty: MagneticBlastAimConfig
+    /// StructProperty: MagneticBlastAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-53,Y=64,Z=24),StateFreeCameraSitOffsetMax=(Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig MagneticBlastAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 11996);
 
     /// <summary>
-    /// StructProperty: OmnitronAimConfig
+    /// StructProperty: OmnitronAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-75,Y=44,Z=25),StateFreeCameraSitOffsetMax=(X=-75,Y=44,Z=25),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=5,MaxFree...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig OmnitronAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 12164);
 
     /// <summary>
-    /// StructProperty: OmnitronStealthAimConfig
+    /// StructProperty: OmnitronStealthAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-140,Y=54,Z=40),StateFreeCameraSitOffsetMax=(X=-150,Y=54,Z=80),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=50,MaxFreeCameraDistance=50,Shor...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig OmnitronStealthAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 12332);
 
     /// <summary>
-    /// StructProperty: RHDAimConfig
+    /// StructProperty: RHDAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-110,Y=45,Z=10),StateFreeCameraSitOffsetMax=(X=-75,Y=65,Z=35),CameraPivotOffset=(Z=68),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=5,MaxFre...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RHDAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 12500);
 
     /// <summary>
-    /// StructProperty: RHDStealthAimConfig
+    /// StructProperty: RHDStealthAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-60,Y=70,Z=20),StateFreeCameraSitOffsetMax=(X=-150,Y=54,Z=80),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-16000,MinFreeCameraDistance=50,MaxFreeCameraDistance=50,Short...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RHDStealthAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 12668);
 
     /// <summary>
-    /// StructProperty: FreezeJammerAimConfig
+    /// StructProperty: FreezeJammerAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-76,Y=86,Z=-16),StateFreeCameraSitOffsetMax=(Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig FreezeJammerAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 12836);
 
     /// <summary>
-    /// StructProperty: JokerGunAimConfig
+    /// StructProperty: JokerGunAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-18,Y=49,Z=10),StateFreeCameraSitOffsetMax=(Y=25,Z=10),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig JokerGunAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13004);
 
     /// <summary>
-    /// StructProperty: JokerGunZoomAimConfig
+    /// StructProperty: JokerGunZoomAimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-18,Y=35,Z=10),StateFreeCameraSitOffsetMax=(Y=25,Z=10),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=50,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig JokerGunZoomAimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13172);
 
     /// <summary>
-    /// StructProperty: JokerGunZoomRoom3AimConfig
+    /// StructProperty: JokerGunZoomRoom3AimConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-18,Y=40,Z=10),StateFreeCameraSitOffsetMax=(Y=25,Z=10),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=50,MaxFreeCamer...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig JokerGunZoomRoom3AimConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13340);
 
     /// <summary>
-    /// StructProperty: GrateCameraConfig
+    /// StructProperty: GrateCameraConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-107,Z=7),StateFreeCameraSitOffsetMax=(X=80,Z=50),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDist...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GrateCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13508);
 
     /// <summary>
-    /// StructProperty: HighGrateCameraConfig
+    /// StructProperty: HighGrateCameraConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250,Z=-100),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringConst=16,LongCa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HighGrateCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13676);
 
     /// <summary>
-    /// StructProperty: SlideCameraConfig
+    /// StructProperty: SlideCameraConfig<br/>
+    /// Default: (CameraPivotOffset=(X=-50,Z=-50),ZoomedOffset=(Z=80),maxPitch=2000,MinPitch=-12000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringConst=16,LongCamSpringConst=4,CameraSitOffsetPower=1,...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig SlideCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 13844);
 
     /// <summary>
-    /// StructProperty: CeilingClimbCamConfig
+    /// StructProperty: CeilingClimbCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-150,Z=15),StateFreeCameraSitOffsetMax=(X=50,Y=25,Z=-200),CameraPivotOffset=(X=-30,Z=-50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=136,M...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CeilingClimbCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14012);
 
     /// <summary>
-    /// StructProperty: CeilingToLedgeHangCamConfig
+    /// StructProperty: CeilingToLedgeHangCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Z=-50),StateFreeCameraSitOffsetMax=(X=-350),CameraPivotOffset=(X=-50,Z=-25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CeilingToLedgeHangCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14180);
 
     /// <summary>
-    /// StructProperty: CeilingToCatwalkCamConfig
+    /// StructProperty: CeilingToCatwalkCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-176,Y=86,Z=-16),StateFreeCameraSitOffsetMax=(Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=186,MaxFreeCa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CeilingToCatwalkCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14348);
 
     /// <summary>
-    /// StructProperty: CeilingBatarangCamConfig
+    /// StructProperty: CeilingBatarangCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-83,Y=-86,Z=-7),StateFreeCameraSitOffsetMax=(X=-65,Y=-35,Z=65),CameraPivotOffset=(Z=-50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,Max...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CeilingBatarangCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14516);
 
     /// <summary>
-    /// StructProperty: LedgeSwingCamConfig
+    /// StructProperty: LedgeSwingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250),StateFreeCameraSitOffsetMax=(X=-50,Y=25,Z=116),CameraPivotOffset=(Z=25),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraD...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig LedgeSwingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14684);
 
     /// <summary>
-    /// StructProperty: DeepFallLandCamConfig
+    /// StructProperty: DeepFallLandCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Z=-90),StateFreeCameraSitOffsetMax=(X=-100,Z=-50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=150,MaxFreeCameraDistance=150,ShortCamSp...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DeepFallLandCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 14852);
 
     /// <summary>
-    /// StructProperty: HelicopterCamConfig
+    /// StructProperty: HelicopterCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-250,Z=-100),StateFreeCameraSitOffsetMax=(X=150,Z=-300),CameraPivotOffset=(Z=-100),ZoomedOffset=(Z=80),maxPitch=8000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCam...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig HelicopterCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15020);
 
     /// <summary>
-    /// StructProperty: DrivingCamConfig
+    /// StructProperty: DrivingCamConfig<br/>
+    /// Default: (ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,CameraSitOffsetPower=1,CameraSitOffsetMin=16384,CameraSitOffsetMax=16384,MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DrivingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15188);
 
     /// <summary>
-    /// StructProperty: FleeingCamConfig
+    /// StructProperty: FleeingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-300),StateFreeCameraSitOffsetMax=(X=-300,Z=350),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-100,Z=800),CameraPivotOffset=(Z=155),ZoomedOffset=(X=...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig FleeingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15356);
 
     /// <summary>
-    /// StructProperty: BoostingCamConfig
+    /// StructProperty: BoostingCamConfig<br/>
+    /// Default: (ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,CameraSitOffsetPower=1,CameraSitOffsetMin=16384,CameraSitOffsetMax=16384,MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BoostingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15524);
 
     /// <summary>
-    /// StructProperty: BarrelRollCamConfig
+    /// StructProperty: BarrelRollCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-300,Z=-25),StateFreeCameraSitOffsetMax=(X=-100,Z=350),CameraPivotOffset=(Z=155),ZoomedOffset=(X=50,Z=-30),maxPitch=10000,MinPitch=-10000,MinFreeCameraDistance=400,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BarrelRollCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15692);
 
     /// <summary>
-    /// StructProperty: BattleModeCamConfig
+    /// StructProperty: BattleModeCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-350,Z=200),StateFreeCameraSitOffsetMax=(X=-500,Z=200),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-1600,Z=1400),CameraPivotOffset=(Z=5),ZoomedOffs...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BattleModeCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 15860);
 
     /// <summary>
-    /// StructProperty: BattleModeWinchCamConfig
+    /// StructProperty: BattleModeWinchCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-650,Z=400),StateFreeCameraSitOffsetMax=(X=-800,Z=400),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-900,Z=2800),CameraPivotOffset=(X=400,Z=5),Zoome...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BattleModeWinchCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16028);
 
     /// <summary>
-    /// StructProperty: BattleModeAbseilingCamConfig
+    /// StructProperty: BattleModeAbseilingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-1000),StateFreeCameraSitOffsetMax=(X=-300,Z=-200),CameraPivotOffset=(X=-100,Z=700),ZoomedOffset=(X=50,Z=-30),maxPitch=14500,MinPitch=-14000,MinFreeCameraDistance=400,M...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BattleModeAbseilingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16196);
 
     /// <summary>
-    /// StructProperty: ChasingCamConfig
+    /// StructProperty: ChasingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-2000,Z=100),StateFreeCameraSitOffsetMax=(X=-2000,Z=100),CameraPivotOffset=(Z=-300),ZoomedOffset=(X=50,Z=-30),maxPitch=-3000,MinPitch=-3000,MinFreeCameraDistance=400,Ma...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig ChasingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16364);
 
     /// <summary>
-    /// StructProperty: GlideInBatmobileCamConfig
+    /// StructProperty: GlideInBatmobileCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-450,Z=300),StateFreeCameraSitOffsetMax=(X=-500,Z=200),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-600,Z=2800),CameraPivotOffset=(Z=5),ZoomedOffse...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GlideInBatmobileCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16532);
 
     /// <summary>
-    /// StructProperty: ThugCamConfig
+    /// StructProperty: ThugCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-60,Y=50),StateFreeCameraSitOffsetMax=(X=-25,Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCame...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig ThugCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16700);
 
     /// <summary>
-    /// StructProperty: DiveToBatmobilePickupCamConfig
+    /// StructProperty: DiveToBatmobilePickupCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-1500,Y=100,Z=-50),StateFreeCameraSitOffsetMax=(X=-300,Z=50),CameraPivotOffset=(Z=-600),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DiveToBatmobilePickupCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 16868);
 
     /// <summary>
-    /// StructProperty: DisruptorSniperStandingCamConfig
+    /// StructProperty: DisruptorSniperStandingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=10,Y=40,Z=40),StateFreeCameraSitOffsetMax=(X=10,Y=40,Z=40),CameraPivotOffset=(Z=40),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeC...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DisruptorSniperStandingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17036);
 
     /// <summary>
-    /// StructProperty: DisruptorSniperVantageCamConfig
+    /// StructProperty: DisruptorSniperVantageCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(Y=50,Z=10),StateFreeCameraSitOffsetMax=(Y=50,Z=10),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-16000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringCons...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DisruptorSniperVantageCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17204);
 
     /// <summary>
-    /// StructProperty: DisruptorSniperRailingCamConfig
+    /// StructProperty: DisruptorSniperRailingCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-100,Y=100,Z=10),StateFreeCameraSitOffsetMax=(X=-100,Y=100,Z=10),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-16000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,Sh...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DisruptorSniperRailingCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17372);
 
     /// <summary>
-    /// StructProperty: DisruptorSniperCornerCamConfig
+    /// StructProperty: DisruptorSniperCornerCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-75,Y=44,Z=25),StateFreeCameraSitOffsetMax=(X=-75,Y=44,Z=25),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFre...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DisruptorSniperCornerCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17540);
 
     /// <summary>
-    /// StructProperty: BatmobileConversationCamConfig
+    /// StructProperty: BatmobileConversationCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-50),StateFreeCameraSitOffsetMax=(Z=50),CameraPivotOffset=(X=125,Z=75),ZoomedOffset=(Z=80),maxPitch=2000,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BatmobileConversationCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17708);
 
     /// <summary>
-    /// StructProperty: RidingCarCamConfig
+    /// StructProperty: RidingCarCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-800,Y=100,Z=50),StateFreeCameraSitOffsetMax=(X=-450,Y=100,Z=50),CameraPivotOffset=(Z=50),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,Ma...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig RidingCarCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 17876);
 
     /// <summary>
-    /// StructProperty: ScarerowBossCamConfig
+    /// StructProperty: ScarerowBossCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-350,Z=200),StateFreeCameraSitOffsetMax=(X=-500,Z=200),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-200,Z=700),CameraPivotOffset=(Z=5),ZoomedOffset...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig ScarerowBossCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 18044);
 
     /// <summary>
-    /// FloatProperty: MinFleeCameraDist
+    /// FloatProperty: MinFleeCameraDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MinFleeCameraDist
     {
@@ -6167,7 +6465,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxFleeCameraDist
+    /// FloatProperty: MaxFleeCameraDist<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxFleeCameraDist
     {
@@ -6176,7 +6475,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FleeCameraDistOffset
+    /// FloatProperty: FleeCameraDistOffset<br/>
+    /// Default: -300
     /// </summary>
     public unsafe float FleeCameraDistOffset
     {
@@ -6185,13 +6485,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CurrentCameraConfig
+    /// StructProperty: CurrentCameraConfig<br/>
+    /// Default: (ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,CameraSitOffsetPower=1,CameraSitOffsetMin=16384,CameraSitOffsetMax=16384,MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CurrentCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 18224);
 
     /// <summary>
-    /// FloatProperty: LookDownVantageCamFOVAngle
+    /// FloatProperty: LookDownVantageCamFOVAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float LookDownVantageCamFOVAngle
     {
@@ -6200,19 +6502,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LookDownDefaultCameraRot
+    /// StructProperty: LookDownDefaultCameraRot<br/>
+    /// Default: (Roll=1800)
     /// </summary>
     public unsafe ref BmSDK.Rotator LookDownDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 18396);
 
     /// <summary>
-    /// StructProperty: AlternativeWalkCamConfig
+    /// StructProperty: AlternativeWalkCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-114,Y=42,Z=12),StateFreeCameraSitOffsetMax=(X=16,Y=25,Z=60),CameraPivotOffset=(Z=65),ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,MinFreeCameraDistance=86,MaxFre...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig AlternativeWalkCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 18408);
 
     /// <summary>
-    /// FloatProperty: AlternativeWalkCamFOV
+    /// FloatProperty: AlternativeWalkCamFOV<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float AlternativeWalkCamFOV
     {
@@ -6221,7 +6526,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SlideStateCameraFOVAngle
+    /// FloatProperty: SlideStateCameraFOVAngle<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float SlideStateCameraFOVAngle
     {
@@ -6230,13 +6536,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DiveOverRailingPivotOffset
+    /// StructProperty: DiveOverRailingPivotOffset<br/>
+    /// Default: (Z=-60)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DiveOverRailingPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 18584);
 
     /// <summary>
-    /// FloatProperty: DiveOverRailingPitch
+    /// FloatProperty: DiveOverRailingPitch<br/>
+    /// Default: -4000
     /// </summary>
     public unsafe float DiveOverRailingPitch
     {
@@ -6245,7 +6553,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileConversationCamFOV
+    /// FloatProperty: BatmobileConversationCamFOV<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float BatmobileConversationCamFOV
     {
@@ -6254,7 +6563,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ScarecrowOffset
+    /// StructProperty: ScarecrowOffset<br/>
+    /// Default: (X=10,Z=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ScarecrowOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 18604);
@@ -6314,7 +6624,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 18800);
 
     /// <summary>
-    /// ByteProperty: BlimpRenderingDPG
+    /// ByteProperty: BlimpRenderingDPG<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup BlimpRenderingDPG
     {
@@ -6380,55 +6691,64 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 18884);
 
     /// <summary>
-    /// StructProperty: ResonatorWanderSettings
+    /// StructProperty: ResonatorWanderSettings<br/>
+    /// Default: (CameraWanderMagnitude=0.5,CameraWanderRotationMagnitude=100,CameraWanderSinComponent1=0.8,CameraWanderSinComponent2=0.5461741,CameraWanderZOffset=1.1512128,Priority=0.5)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings ResonatorWanderSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings>(Ptr + 18896);
 
     /// <summary>
-    /// StructProperty: RHDWanderSettings
+    /// StructProperty: RHDWanderSettings<br/>
+    /// Default: (CameraWanderMagnitude=0.5,CameraWanderRotationMagnitude=100,CameraWanderSinComponent1=0.8,CameraWanderSinComponent2=0.5461741,CameraWanderZOffset=1.1512128,Priority=0.5)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings RHDWanderSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings>(Ptr + 18964);
 
     /// <summary>
-    /// StructProperty: ScarecrowWanderSettings
+    /// StructProperty: ScarecrowWanderSettings<br/>
+    /// Default: (CameraWanderRollMagnitude=2000,CameraWanderSinComponent1=0.024543,CameraWanderSinComponent2=0.0101546,Priority=1,bOneWayWander=true,OneWayTimer=10)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings ScarecrowWanderSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings>(Ptr + 19032);
 
     /// <summary>
-    /// StructProperty: GlideWanderSettings
+    /// StructProperty: GlideWanderSettings<br/>
+    /// Default: (CameraWanderMagnitude=2.5,CameraWanderRotationMagnitude=100,CameraWanderSinComponent1=4.8,CameraWanderSinComponent2=0.5461741,CameraWanderZOffset=1.1512128,Priority=0.75)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings GlideWanderSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings>(Ptr + 19100);
 
     /// <summary>
-    /// StructProperty: GlideCameraShake
+    /// StructProperty: GlideCameraShake<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=1,Y=3,Z=3),LocFrequency=(X=6,Y=1,Z=1.24648),RotAmplitude=(X=100,Y=100,Z=300),RotFrequency=(X=1.124154,Y=0.8749,Z=0.75),FOVMultiplier=1,FOVFrequency=5,AdvancedOption...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct GlideCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 19168);
 
     /// <summary>
-    /// StructProperty: BoostGlideCameraShake
+    /// StructProperty: BoostGlideCameraShake<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=1,Y=2,Z=2),LocFrequency=(X=3.231,Y=3,Z=4.12356),RotAmplitude=(X=100,Y=100,Z=100),RotFrequency=(X=4.1245,Y=3.14124,Z=9),FOVMultiplier=1,FOVFrequency=5,AdvancedOption...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BoostGlideCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 19324);
 
     /// <summary>
-    /// StructProperty: GrappleCameraShake
+    /// StructProperty: GrappleCameraShake<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=1,Y=3,Z=3),LocFrequency=(X=6,Y=1,Z=1.24648),RotAmplitude=(X=100,Y=100,Z=100),RotFrequency=(X=1.124154,Y=0.8749,Z=0.75),FOVMultiplier=1,FOVFrequency=5,AdvancedOption...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct GrappleCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 19480);
 
     /// <summary>
-    /// StructProperty: BatmobileBoostCameraShake
+    /// StructProperty: BatmobileBoostCameraShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileBoostCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 19636);
 
     /// <summary>
-    /// StructProperty: BatmobileWheelSpinCameraShake
+    /// StructProperty: BatmobileWheelSpinCameraShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileWheelSpinCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 19792);
@@ -6476,13 +6796,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 19992);
 
     /// <summary>
-    /// StructProperty: CornerStateOffset
+    /// StructProperty: CornerStateOffset<br/>
+    /// Default: (X=-275,Y=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CornerStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20004);
 
     /// <summary>
-    /// FloatProperty: CornerStateFOVAngle
+    /// FloatProperty: CornerStateFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float CornerStateFOVAngle
     {
@@ -6491,19 +6813,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CornerStateDefaultRot
+    /// StructProperty: CornerStateDefaultRot<br/>
+    /// Default: (Roll=-2730)
     /// </summary>
     public unsafe ref BmSDK.Rotator CornerStateDefaultRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 20020);
 
     /// <summary>
-    /// StructProperty: CornerStateCameraPivotOffset
+    /// StructProperty: CornerStateCameraPivotOffset<br/>
+    /// Default: (Z=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CornerStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20032);
 
     /// <summary>
-    /// FloatProperty: ZoomedFOVAngle
+    /// FloatProperty: ZoomedFOVAngle<br/>
+    /// Default: 74
     /// </summary>
     public unsafe float ZoomedFOVAngle
     {
@@ -6539,7 +6864,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MotionBlurBlendTime
+    /// FloatProperty: MotionBlurBlendTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MotionBlurBlendTime
     {
@@ -6566,7 +6892,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinCameraMotionBlur
+    /// FloatProperty: MinCameraMotionBlur<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float MinCameraMotionBlur
     {
@@ -6575,13 +6902,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ResonatorCameraOffset
+    /// StructProperty: ResonatorCameraOffset<br/>
+    /// Default: (X=-71,Y=10,Z=13)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ResonatorCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20076);
 
     /// <summary>
-    /// FloatProperty: ResonatorFOVAngle
+    /// FloatProperty: ResonatorFOVAngle<br/>
+    /// Default: 38
     /// </summary>
     public unsafe float ResonatorFOVAngle
     {
@@ -6590,19 +6919,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ResonatorCameraPivotOffset
+    /// StructProperty: ResonatorCameraPivotOffset<br/>
+    /// Default: (Z=-20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ResonatorCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20092);
 
     /// <summary>
-    /// StructProperty: RHDPasswordCrackCameraOffset
+    /// StructProperty: RHDPasswordCrackCameraOffset<br/>
+    /// Default: (X=-75,Y=26,Z=78)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RHDPasswordCrackCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20104);
 
     /// <summary>
-    /// FloatProperty: RHDPasswordCrackFOVAngle
+    /// FloatProperty: RHDPasswordCrackFOVAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float RHDPasswordCrackFOVAngle
     {
@@ -6611,7 +6943,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RHDPasswordCrack43FOVAngle
+    /// FloatProperty: RHDPasswordCrack43FOVAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float RHDPasswordCrack43FOVAngle
     {
@@ -6632,7 +6965,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20136);
 
     /// <summary>
-    /// FloatProperty: OverrideBloomValue
+    /// FloatProperty: OverrideBloomValue<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float OverrideBloomValue
     {
@@ -6659,7 +6993,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrentCameraAssistStrengthScale
+    /// FloatProperty: CurrentCameraAssistStrengthScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentCameraAssistStrengthScale
     {
@@ -6668,7 +7003,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraAssistBuildUpTime
+    /// FloatProperty: CameraAssistBuildUpTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CameraAssistBuildUpTime
     {
@@ -6698,7 +7034,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RetainZoomStates
+    /// ArrayProperty: RetainZoomStates<br/>
+    /// Default: (Batarang,HarpoonAim,BattleModeCamera,AntiPersonelBattleModeCamera)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> RetainZoomStates
     {
@@ -6725,7 +7062,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LookAtSpeeds
+    /// ArrayProperty: LookAtSpeeds<br/>
+    /// Default: ((DegreesPerSecond=90,SlowDownAngle=22.5,AccelerationModifier=1,DecelerationModifier=10),(DegreesPerSecond=180,SlowDownAngle=15,AccelerationModifier=1,DecelerationModifier=10),(DegreesPerSecond=540,Sl...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.R3rdPersonCamera.FCameraLookAtSpeedDescriptor> LookAtSpeeds
     {
@@ -6746,7 +7084,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20260);
 
     /// <summary>
-    /// StructProperty: ZoomOffset
+    /// StructProperty: ZoomOffset<br/>
+    /// Default: (Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ZoomOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20272);
@@ -6758,19 +7097,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20284);
 
     /// <summary>
-    /// StructProperty: CeilingZoomOffset
+    /// StructProperty: CeilingZoomOffset<br/>
+    /// Default: (Z=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CeilingZoomOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20296);
 
     /// <summary>
-    /// StructProperty: CeilingCameraZoomOffset
+    /// StructProperty: CeilingCameraZoomOffset<br/>
+    /// Default: (Z=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CeilingCameraZoomOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20308);
 
     /// <summary>
-    /// FloatProperty: ZoomFocusSpeed
+    /// FloatProperty: ZoomFocusSpeed<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float ZoomFocusSpeed
     {
@@ -6779,7 +7121,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxZoomFocusDistance
+    /// FloatProperty: MaxZoomFocusDistance<br/>
+    /// Default: 12288
     /// </summary>
     public unsafe float MaxZoomFocusDistance
     {
@@ -6797,7 +7140,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CameraHideClasses
+    /// ArrayProperty: CameraHideClasses<br/>
+    /// Default: (BmGame.RPawnCharacter)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Class> CameraHideClasses
     {
@@ -6806,7 +7150,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: RunOverlayName
+    /// NameProperty: RunOverlayName<br/>
+    /// Default: Running_Forward_1
     /// </summary>
     public unsafe BmSDK.FName RunOverlayName
     {
@@ -6815,7 +7160,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RunOverlayStrength
+    /// FloatProperty: RunOverlayStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RunOverlayStrength
     {
@@ -6833,7 +7179,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HelicopterCameraFOVAngle
+    /// FloatProperty: HelicopterCameraFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float HelicopterCameraFOVAngle
     {
@@ -6878,7 +7225,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ResonatorScreenScene_DOFApertureStop
+    /// FloatProperty: ResonatorScreenScene_DOFApertureStop<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float ResonatorScreenScene_DOFApertureStop
     {
@@ -6887,7 +7235,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ResonatorScreenScene_DOFDistance
+    /// FloatProperty: ResonatorScreenScene_DOFDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ResonatorScreenScene_DOFDistance
     {
@@ -6959,7 +7308,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeCamFOV
+    /// FloatProperty: BattleModeCamFOV<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float BattleModeCamFOV
     {
@@ -6968,7 +7318,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeWinchCamFOV
+    /// FloatProperty: BattleModeWinchCamFOV<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float BattleModeWinchCamFOV
     {
@@ -6977,7 +7328,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AntiPersonelBattleModeCamFOV
+    /// FloatProperty: AntiPersonelBattleModeCamFOV<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float AntiPersonelBattleModeCamFOV
     {
@@ -6986,7 +7338,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BattleModeHeadOffset
+    /// StructProperty: BattleModeHeadOffset<br/>
+    /// Default: (Z=150)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BattleModeHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20444);
@@ -7007,7 +7360,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BattleModeWinchHeadOffset
+    /// StructProperty: BattleModeWinchHeadOffset<br/>
+    /// Default: (Z=300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BattleModeWinchHeadOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20472);
@@ -7031,7 +7385,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChasingCamFOV
+    /// FloatProperty: ChasingCamFOV<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float ChasingCamFOV
     {
@@ -7046,7 +7401,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 20496);
 
     /// <summary>
-    /// FloatProperty: JumpSmoothingStrength
+    /// FloatProperty: JumpSmoothingStrength<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float JumpSmoothingStrength
     {
@@ -7100,7 +7456,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BattleModeAbseilingExtraCameraRot
+    /// StructProperty: BattleModeAbseilingExtraCameraRot<br/>
+    /// Default: (Pitch=1500)
     /// </summary>
     public unsafe ref BmSDK.Rotator BattleModeAbseilingExtraCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 20532);
@@ -7115,13 +7472,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GauntletCameraOffset
+    /// StructProperty: GauntletCameraOffset<br/>
+    /// Default: (X=-138,Y=33,Z=95)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GauntletCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 20548);
 
     /// <summary>
-    /// FloatProperty: GauntletCameraFOVAngle
+    /// FloatProperty: GauntletCameraFOVAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float GauntletCameraFOVAngle
     {
@@ -7130,43 +7489,50 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GauntletDefaultCameraRot
+    /// StructProperty: GauntletDefaultCameraRot<br/>
+    /// Default: (Pitch=-3000)
     /// </summary>
     public unsafe ref BmSDK.Rotator GauntletDefaultCameraRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 20564);
 
     /// <summary>
-    /// StructProperty: GauntletCamConfig
+    /// StructProperty: GauntletCamConfig<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(Z=15),StateFreeCameraSitOffsetMax=(X=8,Z=25),CameraPivotOffset=(X=20,Y=20,Z=65),ZoomedOffset=(Z=80),maxPitch=8192,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDi...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GauntletCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 20576);
 
     /// <summary>
-    /// StructProperty: GauntletPerchCamConfig
+    /// StructProperty: GauntletPerchCamConfig<br/>
+    /// Default: (CameraPivotOffset=(X=20,Y=20,Z=15),ZoomedOffset=(Z=80),maxPitch=8192,MinPitch=-13000,MinFreeCameraDistance=86,MaxFreeCameraDistance=86,ShortCamSpringConst=250,LongCamSpringConst=250,DefaultCameraPitc...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig GauntletPerchCamConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 20744);
 
     /// <summary>
-    /// StructProperty: CurrentRailingOffsetSettings
+    /// StructProperty: CurrentRailingOffsetSettings<br/>
+    /// Default: (fRailingOffsetReachesMaximumProportionAngle=100,fRailingOffsetInterpolationSpeed=3,fRailingOffsetMaximumDistanceToTheLeft=180,fRailingOffsetMaximumDistanceToTheRight=180)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings CurrentRailingOffsetSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings>(Ptr + 20912);
 
     /// <summary>
-    /// StructProperty: DefaultRailingOffsetSettings
+    /// StructProperty: DefaultRailingOffsetSettings<br/>
+    /// Default: (fRailingOffsetReachesMaximumProportionAngle=100,fRailingOffsetInterpolationSpeed=3,fRailingOffsetMaximumDistanceToTheLeft=180,fRailingOffsetMaximumDistanceToTheRight=180)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings DefaultRailingOffsetSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings>(Ptr + 20936);
 
     /// <summary>
-    /// StructProperty: DisruptorRailingOffsetSettings
+    /// StructProperty: DisruptorRailingOffsetSettings<br/>
+    /// Default: (fRailingOffsetReachesMaximumProportionAngle=100,fRailingOffsetInterpolationSpeed=3,fRailingOffsetMaximumDistanceToTheRight=180)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings DisruptorRailingOffsetSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings>(Ptr + 20960);
 
     /// <summary>
-    /// StructProperty: RHDRailingOffsetSettings
+    /// StructProperty: RHDRailingOffsetSettings<br/>
+    /// Default: (fRailingOffsetReachesMaximumProportionAngle=100,fRailingOffsetInterpolationSpeed=3,fRailingOffsetMaximumDistanceToTheLeft=20,fRailingOffsetMaximumDistanceToTheRight=90)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings RHDRailingOffsetSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FRailingOffsetSettings>(Ptr + 20984);
@@ -7237,7 +7603,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SmoothingConfigMaxVelocity
+    /// FloatProperty: SmoothingConfigMaxVelocity<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float SmoothingConfigMaxVelocity
     {
@@ -7246,7 +7613,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SmoothingConfigStrength
+    /// FloatProperty: SmoothingConfigStrength<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float SmoothingConfigStrength
     {
@@ -7255,7 +7623,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SmoothingConfigMaxAccel
+    /// FloatProperty: SmoothingConfigMaxAccel<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float SmoothingConfigMaxAccel
     {
@@ -7264,7 +7633,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrentSmoothingConfigStrength
+    /// FloatProperty: CurrentSmoothingConfigStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentSmoothingConfigStrength
     {
@@ -7273,7 +7643,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverworldRunningConfigStrength
+    /// FloatProperty: OverworldRunningConfigStrength<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float OverworldRunningConfigStrength
     {
@@ -7282,7 +7653,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NormalConfigStrength
+    /// FloatProperty: NormalConfigStrength<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float NormalConfigStrength
     {
@@ -7303,7 +7675,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21208);
 
     /// <summary>
-    /// FloatProperty: LastCameraMoveTime
+    /// FloatProperty: LastCameraMoveTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastCameraMoveTime
     {
@@ -7519,7 +7892,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21476);
 
     /// <summary>
-    /// FloatProperty: ZoomPointAngle
+    /// FloatProperty: ZoomPointAngle<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ZoomPointAngle
     {
@@ -7528,7 +7902,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TightZoomPointAngle
+    /// FloatProperty: TightZoomPointAngle<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float TightZoomPointAngle
     {
@@ -7639,13 +8014,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 21552);
 
     /// <summary>
-    /// FloatProperty: RunStatePelvisXY
+    /// FloatProperty: RunStatePelvisXY<br/>
+    /// Default: -2
     /// </summary>
     public unsafe float RunStatePelvisXY
     {
@@ -7654,7 +8031,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RunStatePelvisZ
+    /// FloatProperty: RunStatePelvisZ<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float RunStatePelvisZ
     {
@@ -7663,7 +8041,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RunStatePelvisSway
+    /// FloatProperty: RunStatePelvisSway<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float RunStatePelvisSway
     {
@@ -7672,7 +8051,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultPelvisFollowZ
+    /// FloatProperty: DefaultPelvisFollowZ<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DefaultPelvisFollowZ
     {
@@ -7681,7 +8061,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultPelvisFollowXY
+    /// FloatProperty: DefaultPelvisFollowXY<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float DefaultPelvisFollowXY
     {
@@ -7690,7 +8071,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultPelvisSway
+    /// FloatProperty: DefaultPelvisSway<br/>
+    /// Default: -3
     /// </summary>
     public unsafe float DefaultPelvisSway
     {
@@ -7708,7 +8090,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxCollisionDist
+    /// FloatProperty: MaxCollisionDist<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxCollisionDist
     {
@@ -7717,7 +8100,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CustomCameraConfig
+    /// StructProperty: CustomCameraConfig<br/>
+    /// Default: (ZoomedOffset=(Z=80),maxPitch=14500,MinPitch=-13000,CameraSitOffsetPower=1,CameraSitOffsetMin=16384,CameraSitOffsetMax=16384,MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig CustomCameraConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 21620);
@@ -7786,7 +8170,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultPitchDragSpeed
+    /// FloatProperty: DefaultPitchDragSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float DefaultPitchDragSpeed
     {
@@ -7795,7 +8180,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FallingPitchDragSpeed
+    /// FloatProperty: FallingPitchDragSpeed<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float FallingPitchDragSpeed
     {
@@ -7813,7 +8199,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisruptorSniperFOVAngle
+    /// FloatProperty: DisruptorSniperFOVAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float DisruptorSniperFOVAngle
     {
@@ -7822,7 +8209,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisruptorSniperZoomedFOVAngle
+    /// FloatProperty: DisruptorSniperZoomedFOVAngle<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DisruptorSniperZoomedFOVAngle
     {
@@ -7831,7 +8219,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: vDisruptorCornerCameraOffset
+    /// StructProperty: vDisruptorCornerCameraOffset<br/>
+    /// Default: (X=-100,Y=110,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vDisruptorCornerCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21864);
@@ -7843,13 +8232,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21876);
 
     /// <summary>
-    /// StructProperty: CockpitCameraOffset
+    /// StructProperty: CockpitCameraOffset<br/>
+    /// Default: (X=100,Z=130)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CockpitCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21888);
 
     /// <summary>
-    /// StructProperty: LoopTheLoopCameraOffset
+    /// StructProperty: LoopTheLoopCameraOffset<br/>
+    /// Default: (X=-1000,Z=300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LoopTheLoopCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 21900);
@@ -7933,13 +8324,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22028);
 
     /// <summary>
-    /// StructProperty: OculusPlayerCameraOffset
+    /// StructProperty: OculusPlayerCameraOffset<br/>
+    /// Default: (X=-80,Y=20,Z=24)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OculusPlayerCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22040);
 
     /// <summary>
-    /// StructProperty: OculusBattleModeCameraOffset
+    /// StructProperty: OculusBattleModeCameraOffset<br/>
+    /// Default: (X=-70,Z=180)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OculusBattleModeCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22052);
@@ -7960,19 +8353,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22068);
 
     /// <summary>
-    /// StructProperty: CopSittingAtBarPivotOffset
+    /// StructProperty: CopSittingAtBarPivotOffset<br/>
+    /// Default: (Z=-117)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CopSittingAtBarPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22080);
 
     /// <summary>
-    /// StructProperty: CopSittingAtBarOffset
+    /// StructProperty: CopSittingAtBarOffset<br/>
+    /// Default: (Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CopSittingAtBarOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22092);
 
     /// <summary>
-    /// FloatProperty: CopSittingAtBarFov
+    /// FloatProperty: CopSittingAtBarFov<br/>
+    /// Default: 47
     /// </summary>
     public unsafe float CopSittingAtBarFov
     {
@@ -7981,7 +8377,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CopCameraZoomFOV
+    /// FloatProperty: CopCameraZoomFOV<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float CopCameraZoomFOV
     {
@@ -7996,7 +8393,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22112);
 
     /// <summary>
-    /// StructProperty: FirstPersonCameraCopCameraPivotOffset
+    /// StructProperty: FirstPersonCameraCopCameraPivotOffset<br/>
+    /// Default: (Z=70)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FirstPersonCameraCopCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22124);
@@ -8008,7 +8406,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22136);
 
     /// <summary>
-    /// FloatProperty: RidingCarCamFOV
+    /// FloatProperty: RidingCarCamFOV<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float RidingCarCamFOV
     {
@@ -8017,7 +8416,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RidingCarSmoothingConfigStrength
+    /// FloatProperty: RidingCarSmoothingConfigStrength<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RidingCarSmoothingConfigStrength
     {
@@ -8026,19 +8426,22 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrivingCamConfig1
+    /// StructProperty: DrivingCamConfig1<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-300,Z=-25),StateFreeCameraSitOffsetMax=(X=-400,Z=-25),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-500,Z=500),CameraPivotOffset=(Z=155),ZoomedOffs...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DrivingCamConfig1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 22156);
 
     /// <summary>
-    /// StructProperty: BoostingCamConfig1
+    /// StructProperty: BoostingCamConfig1<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Z=-75),StateFreeCameraSitOffsetMax=(X=-100,Z=350),CameraPivotOffset=(Z=155),ZoomedOffset=(X=50,Z=-30),maxPitch=10000,MinPitch=-10000,MinFreeCameraDistance=400,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BoostingCamConfig1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 22324);
 
     /// <summary>
-    /// FloatProperty: DrivingCamFOVInterpMaxSpeed1
+    /// FloatProperty: DrivingCamFOVInterpMaxSpeed1<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DrivingCamFOVInterpMaxSpeed1
     {
@@ -8047,7 +8450,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamFOV1
+    /// FloatProperty: DrivingCamFOV1<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float DrivingCamFOV1
     {
@@ -8056,7 +8460,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BoostingCamFOV1
+    /// FloatProperty: BoostingCamFOV1<br/>
+    /// Default: 95
     /// </summary>
     public unsafe float BoostingCamFOV1
     {
@@ -8065,7 +8470,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamMaxExtraFOV1
+    /// FloatProperty: DrivingCamMaxExtraFOV1<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DrivingCamMaxExtraFOV1
     {
@@ -8074,7 +8480,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamMaxExtraTranslation1
+    /// FloatProperty: DrivingCamMaxExtraTranslation1<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DrivingCamMaxExtraTranslation1
     {
@@ -8092,7 +8499,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BoostingCamSmoothingStrength1
+    /// FloatProperty: BoostingCamSmoothingStrength1<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float BoostingCamSmoothingStrength1
     {
@@ -8101,7 +8509,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamSmoothingStrength1
+    /// FloatProperty: DrivingCamSmoothingStrength1<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float DrivingCamSmoothingStrength1
     {
@@ -8110,7 +8519,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AirborneCamSmoothingStrength1
+    /// FloatProperty: AirborneCamSmoothingStrength1<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float AirborneCamSmoothingStrength1
     {
@@ -8119,43 +8529,50 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BonnetCameraOffset1
+    /// StructProperty: BonnetCameraOffset1<br/>
+    /// Default: (X=200,Z=30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraOffset1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22528);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringDampingPower1
+    /// StructProperty: BonnetCameraSpringDampingPower1<br/>
+    /// Default: (X=1,Y=1,Z=1.1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringDampingPower1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22540);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringDampingFactor1
+    /// StructProperty: BonnetCameraSpringDampingFactor1<br/>
+    /// Default: (X=12,Y=12,Z=12)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringDampingFactor1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22552);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringPower1
+    /// StructProperty: BonnetCameraSpringPower1<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringPower1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22564);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringConst1
+    /// StructProperty: BonnetCameraSpringConst1<br/>
+    /// Default: (X=8,Y=16,Z=16)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringConst1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22576);
 
     /// <summary>
-    /// StructProperty: BonnetCameraAccelFactor1
+    /// StructProperty: BonnetCameraAccelFactor1<br/>
+    /// Default: (X=-0.25,Y=0.5,Z=-0.5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraAccelFactor1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22588);
 
     /// <summary>
-    /// StructProperty: BonnetCamMax1
+    /// StructProperty: BonnetCamMax1<br/>
+    /// Default: (X=1.5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCamMax1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22600);
@@ -8170,7 +8587,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCameraLeanFactor1
+    /// FloatProperty: DrivingCameraLeanFactor1<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float DrivingCameraLeanFactor1
     {
@@ -8179,7 +8597,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCameraPitchFactor1
+    /// FloatProperty: DrivingCameraPitchFactor1<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float DrivingCameraPitchFactor1
     {
@@ -8188,7 +8607,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingHeadImpulseFactor1
+    /// FloatProperty: DrivingHeadImpulseFactor1<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DrivingHeadImpulseFactor1
     {
@@ -8197,7 +8617,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrivingModeHeadOffset1
+    /// StructProperty: DrivingModeHeadOffset1<br/>
+    /// Default: (Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrivingModeHeadOffset1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22628);
@@ -8212,7 +8633,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamDriftOrientationFactor1
+    /// FloatProperty: DrivingCamDriftOrientationFactor1<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float DrivingCamDriftOrientationFactor1
     {
@@ -8221,37 +8643,43 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BatmobileBoostCameraShake1
+    /// StructProperty: BatmobileBoostCameraShake1<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=20,Y=10,Z=10),LocFrequency=(X=3.231,Y=3,Z=4.12356),RotAmplitude=(X=100,Y=100,Z=300),RotFrequency=(X=4.1245,Y=3.14124,Z=9),FOVMultiplier=1,FOVFrequency=5,AdvancedOpt...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileBoostCameraShake1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 22648);
 
     /// <summary>
-    /// StructProperty: BatmobileWheelSpinCameraShake1
+    /// StructProperty: BatmobileWheelSpinCameraShake1<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=10,Y=10),LocFrequency=(X=0.80775,Y=0.75,Z=1.03089),RotAmplitude=(X=50,Y=50,Z=25),RotFrequency=(X=32.99601,Y=25.129927,Z=36),FOVMultiplier=1,FOVFrequency=5,AdvancedO...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileWheelSpinCameraShake1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 22804);
 
     /// <summary>
-    /// StructProperty: BatmobileWheelSpinCameraCamOffset1
+    /// StructProperty: BatmobileWheelSpinCameraCamOffset1<br/>
+    /// Default: (X=100,Z=-100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatmobileWheelSpinCameraCamOffset1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 22960);
 
     /// <summary>
-    /// StructProperty: DrivingCamConfig2
+    /// StructProperty: DrivingCamConfig2<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-500),StateFreeCameraSitOffsetMax=(X=-500),UseStateFreeCameraSitOffsetUp=true,StateFreeCameraSitOffsetUp=(X=-500,Z=500),CameraPivotOffset=(Z=155),ZoomedOffset=(X=50,Z=-...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig DrivingCamConfig2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 22972);
 
     /// <summary>
-    /// StructProperty: BoostingCamConfig2
+    /// StructProperty: BoostingCamConfig2<br/>
+    /// Default: (StateFreeCameraSitOffsetMin=(X=-200,Z=-75),StateFreeCameraSitOffsetMax=(X=-100,Z=350),CameraPivotOffset=(Z=155),ZoomedOffset=(X=50,Z=-30),maxPitch=10000,MinPitch=-10000,MinFreeCameraDistance=400,MaxF...
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig BoostingCamConfig2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig>(Ptr + 23140);
 
     /// <summary>
-    /// FloatProperty: DrivingCamFOVInterpMaxSpeed2
+    /// FloatProperty: DrivingCamFOVInterpMaxSpeed2<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DrivingCamFOVInterpMaxSpeed2
     {
@@ -8260,7 +8688,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamFOV2
+    /// FloatProperty: DrivingCamFOV2<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float DrivingCamFOV2
     {
@@ -8269,7 +8698,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BoostingCamFOV2
+    /// FloatProperty: BoostingCamFOV2<br/>
+    /// Default: 95
     /// </summary>
     public unsafe float BoostingCamFOV2
     {
@@ -8278,7 +8708,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamMaxExtraFOV2
+    /// FloatProperty: DrivingCamMaxExtraFOV2<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DrivingCamMaxExtraFOV2
     {
@@ -8287,7 +8718,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamMaxExtraTranslation2
+    /// FloatProperty: DrivingCamMaxExtraTranslation2<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DrivingCamMaxExtraTranslation2
     {
@@ -8305,7 +8737,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BoostingCamSmoothingStrength2
+    /// FloatProperty: BoostingCamSmoothingStrength2<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float BoostingCamSmoothingStrength2
     {
@@ -8314,7 +8747,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCamSmoothingStrength2
+    /// FloatProperty: DrivingCamSmoothingStrength2<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float DrivingCamSmoothingStrength2
     {
@@ -8323,7 +8757,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AirborneCamSmoothingStrength2
+    /// FloatProperty: AirborneCamSmoothingStrength2<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float AirborneCamSmoothingStrength2
     {
@@ -8332,43 +8767,50 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BonnetCameraOffset2
+    /// StructProperty: BonnetCameraOffset2<br/>
+    /// Default: (X=80,Z=55)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraOffset2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23344);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringDampingPower2
+    /// StructProperty: BonnetCameraSpringDampingPower2<br/>
+    /// Default: (X=1,Y=1,Z=1.1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringDampingPower2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23356);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringDampingFactor2
+    /// StructProperty: BonnetCameraSpringDampingFactor2<br/>
+    /// Default: (X=12,Y=12,Z=12)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringDampingFactor2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23368);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringPower2
+    /// StructProperty: BonnetCameraSpringPower2<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringPower2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23380);
 
     /// <summary>
-    /// StructProperty: BonnetCameraSpringConst2
+    /// StructProperty: BonnetCameraSpringConst2<br/>
+    /// Default: (X=8,Y=16,Z=16)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraSpringConst2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23392);
 
     /// <summary>
-    /// StructProperty: BonnetCameraAccelFactor2
+    /// StructProperty: BonnetCameraAccelFactor2<br/>
+    /// Default: (X=-0.25,Y=-0.5,Z=-0.5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCameraAccelFactor2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23404);
 
     /// <summary>
-    /// StructProperty: BonnetCamMax2
+    /// StructProperty: BonnetCamMax2<br/>
+    /// Default: (X=1.5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BonnetCamMax2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23416);
@@ -8383,7 +8825,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCameraLeanFactor2
+    /// FloatProperty: DrivingCameraLeanFactor2<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float DrivingCameraLeanFactor2
     {
@@ -8392,7 +8835,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingCameraPitchFactor2
+    /// FloatProperty: DrivingCameraPitchFactor2<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float DrivingCameraPitchFactor2
     {
@@ -8401,7 +8845,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivingHeadImpulseFactor2
+    /// FloatProperty: DrivingHeadImpulseFactor2<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DrivingHeadImpulseFactor2
     {
@@ -8410,7 +8855,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrivingModeHeadOffset2
+    /// StructProperty: DrivingModeHeadOffset2<br/>
+    /// Default: (Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrivingModeHeadOffset2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23444);
@@ -8425,13 +8871,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BatmobileBoostCameraShake2
+    /// StructProperty: BatmobileBoostCameraShake2<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=20,Y=10,Z=10),LocFrequency=(X=3.231,Y=3,Z=4.12356),RotAmplitude=(X=100,Y=100,Z=300),RotFrequency=(X=4.1245,Y=3.14124,Z=9),FOVMultiplier=1,FOVFrequency=5,AdvancedOpt...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileBoostCameraShake2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 23460);
 
     /// <summary>
-    /// FloatProperty: DrivingCamDriftOrientationFactor2
+    /// FloatProperty: DrivingCamDriftOrientationFactor2<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DrivingCamDriftOrientationFactor2
     {
@@ -8440,13 +8888,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BatmobileWheelSpinCameraShake2
+    /// StructProperty: BatmobileWheelSpinCameraShake2<br/>
+    /// Default: (TimeDuration=1e+06,LocAmplitude=(X=10,Y=10),LocFrequency=(X=0.80775,Y=0.75,Z=1.03089),RotAmplitude=(X=50,Y=50,Z=25),RotFrequency=(X=32.99601,Y=25.129927,Z=36),FOVMultiplier=1,FOVFrequency=5,AdvancedO...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct BatmobileWheelSpinCameraShake2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 23620);
 
     /// <summary>
-    /// StructProperty: BatmobileWheelSpinCameraCamOffset2
+    /// StructProperty: BatmobileWheelSpinCameraCamOffset2<br/>
+    /// Default: (X=100,Z=-100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatmobileWheelSpinCameraCamOffset2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23776);
@@ -8458,13 +8908,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 23788);
 
     /// <summary>
-    /// StructProperty: VoiceSynthCornerStateOffset
+    /// StructProperty: VoiceSynthCornerStateOffset<br/>
+    /// Default: (X=-200,Y=190,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VoiceSynthCornerStateOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23800);
 
     /// <summary>
-    /// FloatProperty: VoiceSynthCornerStateFOVAngle
+    /// FloatProperty: VoiceSynthCornerStateFOVAngle<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float VoiceSynthCornerStateFOVAngle
     {
@@ -8473,13 +8925,15 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: VoiceSynthCornerStateDefaultRot
+    /// StructProperty: VoiceSynthCornerStateDefaultRot<br/>
+    /// Default: (Roll=-2730)
     /// </summary>
     public unsafe ref BmSDK.Rotator VoiceSynthCornerStateDefaultRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 23816);
 
     /// <summary>
-    /// StructProperty: VoiceSynthCornerStateCameraPivotOffset
+    /// StructProperty: VoiceSynthCornerStateCameraPivotOffset<br/>
+    /// Default: (Z=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VoiceSynthCornerStateCameraPivotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23828);
@@ -8491,7 +8945,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 23840);
 
     /// <summary>
-    /// FloatProperty: BonetCamSpringMax
+    /// FloatProperty: BonetCamSpringMax<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float BonetCamSpringMax
     {
@@ -8500,7 +8955,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BonetCamSpringStrength
+    /// FloatProperty: BonetCamSpringStrength<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BonetCamSpringStrength
     {
@@ -8584,7 +9040,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: ZoomedOffset
+        /// StructProperty: ZoomedOffset<br/>
+        /// Default: (Z=80)
         /// </summary>
         public unsafe System.Numerics.Vector3 ZoomedOffset
         {
@@ -8593,7 +9050,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: maxPitch
+        /// FloatProperty: maxPitch<br/>
+        /// Default: 14500
         /// </summary>
         public unsafe float maxPitch
         {
@@ -8602,7 +9060,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MinPitch
+        /// FloatProperty: MinPitch<br/>
+        /// Default: -13000
         /// </summary>
         public unsafe float MinPitch
         {
@@ -8656,7 +9115,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: CameraSitOffsetPower
+        /// FloatProperty: CameraSitOffsetPower<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CameraSitOffsetPower
         {
@@ -8665,7 +9125,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: CameraSitOffsetMin
+        /// FloatProperty: CameraSitOffsetMin<br/>
+        /// Default: 16384
         /// </summary>
         public unsafe float CameraSitOffsetMin
         {
@@ -8674,7 +9135,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: CameraSitOffsetMax
+        /// FloatProperty: CameraSitOffsetMax<br/>
+        /// Default: 16384
         /// </summary>
         public unsafe float CameraSitOffsetMax
         {
@@ -8728,7 +9190,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MinCameraSmoothingAngle
+        /// FloatProperty: MinCameraSmoothingAngle<br/>
+        /// Default: 10
         /// </summary>
         public unsafe float MinCameraSmoothingAngle
         {
@@ -8737,7 +9200,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxCameraSmoothingAngle
+        /// FloatProperty: MaxCameraSmoothingAngle<br/>
+        /// Default: 25
         /// </summary>
         public unsafe float MaxCameraSmoothingAngle
         {

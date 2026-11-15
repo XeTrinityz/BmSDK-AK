@@ -237,7 +237,8 @@ public partial class RStealthTakeDownStage_LedgeAttack : BmSDK.BmGame.RStealthTa
     }
 
     /// <summary>
-    /// ArrayProperty: iKnockoutSmashAnimationRemap
+    /// ArrayProperty: iKnockoutSmashAnimationRemap<br/>
+    /// Default: (0,3,6)
     /// </summary>
     public unsafe BmSDK.TArray<int> iKnockoutSmashAnimationRemap
     {

@@ -607,7 +607,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: JokerDefine
+    /// ObjectProperty: JokerDefine<br/>
+    /// Default: MainCharacterDefines.Villain.JokerHealthy
     /// </summary>
     public unsafe BmSDK.BmGame.RCharacterDefine JokerDefine
     {
@@ -616,7 +617,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: JokerDefineNoApex
+    /// ObjectProperty: JokerDefineNoApex<br/>
+    /// Default: MainCharacterDefines.Villain.JokerHealthy_Overworld
     /// </summary>
     public unsafe BmSDK.BmGame.RCharacterDefine JokerDefineNoApex
     {
@@ -661,7 +663,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
     }
 
     /// <summary>
-    /// ClassProperty: JokerCharacter
+    /// ClassProperty: JokerCharacter<br/>
+    /// Default: BmGame.RCharacter
     /// </summary>
     public unsafe BmSDK.Class JokerCharacter
     {
@@ -688,7 +691,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: FadeSpeedMultiplier
+    /// FloatProperty: FadeSpeedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeSpeedMultiplier
     {

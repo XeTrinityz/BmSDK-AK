@@ -79,7 +79,8 @@ public partial class SeqEvent_Used : BmSDK.Engine.SequenceEvent, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bAimToInteract
+    /// BoolProperty: bAimToInteract<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAimToInteract
     {
@@ -88,7 +89,8 @@ public partial class SeqEvent_Used : BmSDK.Engine.SequenceEvent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: InteractDistance
+    /// FloatProperty: InteractDistance<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float InteractDistance
     {
@@ -97,7 +99,8 @@ public partial class SeqEvent_Used : BmSDK.Engine.SequenceEvent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StrProperty: InteractText
+    /// StrProperty: InteractText<br/>
+    /// Default: "Use"
     /// </summary>
     public unsafe BmSDK.FString InteractText
     {

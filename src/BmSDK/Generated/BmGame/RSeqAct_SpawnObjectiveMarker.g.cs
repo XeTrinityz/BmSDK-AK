@@ -146,7 +146,8 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: AppearAsBatsymbol
+    /// BoolProperty: AppearAsBatsymbol<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearAsBatsymbol
     {
@@ -155,7 +156,8 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnMapScreen
+    /// BoolProperty: AppearOnMapScreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnMapScreen
     {
@@ -164,7 +166,8 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnCompass
+    /// BoolProperty: AppearOnCompass<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnCompass
     {
@@ -173,7 +176,8 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: AppearOnSatnav
+    /// BoolProperty: AppearOnSatnav<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AppearOnSatnav
     {

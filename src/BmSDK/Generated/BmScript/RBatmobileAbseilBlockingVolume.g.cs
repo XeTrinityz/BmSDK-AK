@@ -121,7 +121,8 @@ public partial class RBatmobileAbseilBlockingVolume : BmSDK.Engine.Volume, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SparkParticleEffect
+    /// ObjectProperty: SparkParticleEffect<br/>
+    /// Default: VFX_Batmobile.Particles.Sparks.Batmobile_Impact_02
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SparkParticleEffect
     {
@@ -130,7 +131,8 @@ public partial class RBatmobileAbseilBlockingVolume : BmSDK.Engine.Volume, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SparksSoundEffect
+    /// ObjectProperty: SparksSoundEffect<br/>
+    /// Default: Ww_PSO_Hideout_A2_Massive_Fan.Play_PSO_Hideout_A2_Fan_Impact
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SparksSoundEffect
     {

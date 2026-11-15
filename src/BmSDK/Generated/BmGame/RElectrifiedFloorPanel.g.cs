@@ -496,7 +496,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ShockingActiveTime
+    /// FloatProperty: ShockingActiveTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShockingActiveTime
     {
@@ -505,7 +506,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: WarmupTime
+    /// FloatProperty: WarmupTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float WarmupTime
     {
@@ -514,7 +516,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// NameProperty: Name_Warmup
+    /// NameProperty: Name_Warmup<br/>
+    /// Default: Warmup
     /// </summary>
     public unsafe BmSDK.FName Name_Warmup
     {
@@ -523,7 +526,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// NameProperty: Name_WarmupPower
+    /// NameProperty: Name_WarmupPower<br/>
+    /// Default: WarmupPower
     /// </summary>
     public unsafe BmSDK.FName Name_WarmupPower
     {
@@ -532,7 +536,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// NameProperty: Name_Activated
+    /// NameProperty: Name_Activated<br/>
+    /// Default: Activated
     /// </summary>
     public unsafe BmSDK.FName Name_Activated
     {
@@ -541,7 +546,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// NameProperty: Name_Deactivated
+    /// NameProperty: Name_Deactivated<br/>
+    /// Default: Deactivated
     /// </summary>
     public unsafe BmSDK.FName Name_Deactivated
     {
@@ -550,7 +556,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// NameProperty: Name_Shocking
+    /// NameProperty: Name_Shocking<br/>
+    /// Default: Shocking
     /// </summary>
     public unsafe BmSDK.FName Name_Shocking
     {
@@ -559,7 +566,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: SoundRadius
+    /// FloatProperty: SoundRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SoundRadius
     {
@@ -676,7 +684,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDmgType_ElectricFloor
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -694,7 +703,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalFloorMesh
+    /// ComponentProperty: SkeletalFloorMesh<br/>
+    /// Default: BmGame.Default__RElectrifiedFloorPanel.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalFloorMesh
     {

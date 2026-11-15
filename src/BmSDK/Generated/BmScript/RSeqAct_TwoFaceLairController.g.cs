@@ -357,7 +357,8 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
     }
 
     /// <summary>
-    /// ClassProperty: ThugCharacter
+    /// ClassProperty: ThugCharacter<br/>
+    /// Default: BmGame.RCharacter_Thug
     /// </summary>
     public unsafe BmSDK.Class ThugCharacter
     {
@@ -366,7 +367,8 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
     }
 
     /// <summary>
-    /// ClassProperty: TwofaceCharacter
+    /// ClassProperty: TwofaceCharacter<br/>
+    /// Default: BmGame.RCharacter_Thug
     /// </summary>
     public unsafe BmSDK.Class TwofaceCharacter
     {
@@ -375,7 +377,8 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
     }
 
     /// <summary>
-    /// ClassProperty: PenguinCharacter
+    /// ClassProperty: PenguinCharacter<br/>
+    /// Default: BmGame.RCharacter_Thug
     /// </summary>
     public unsafe BmSDK.Class PenguinCharacter
     {
@@ -384,7 +387,8 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
     }
 
     /// <summary>
-    /// ClassProperty: RiddlerCharacter
+    /// ClassProperty: RiddlerCharacter<br/>
+    /// Default: BmGame.RCharacter_Thug
     /// </summary>
     public unsafe BmSDK.Class RiddlerCharacter
     {

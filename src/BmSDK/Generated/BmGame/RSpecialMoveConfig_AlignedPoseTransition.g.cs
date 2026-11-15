@@ -94,7 +94,8 @@ public partial class RSpecialMoveConfig_AlignedPoseTransition : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: CameraLagTime
+    /// FloatProperty: CameraLagTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CameraLagTime
     {

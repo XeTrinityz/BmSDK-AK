@@ -118,7 +118,8 @@ public partial class Path_WithinTraversalDist : BmSDK.Engine.PathConstraint, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSoft
+    /// BoolProperty: bSoft<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSoft
     {
@@ -127,7 +128,8 @@ public partial class Path_WithinTraversalDist : BmSDK.Engine.PathConstraint, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SoftStartPenalty
+    /// FloatProperty: SoftStartPenalty<br/>
+    /// Default: 320
     /// </summary>
     public unsafe float SoftStartPenalty
     {

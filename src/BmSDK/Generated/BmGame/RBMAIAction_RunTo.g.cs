@@ -240,7 +240,8 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTraverse
+    /// BoolProperty: bAllowTraverse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTraverse
     {
@@ -294,7 +295,8 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
     }
 
     /// <summary>
-    /// NameProperty: RunMoveStance
+    /// NameProperty: RunMoveStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName RunMoveStance
     {

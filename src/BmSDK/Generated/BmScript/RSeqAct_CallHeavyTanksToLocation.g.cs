@@ -116,7 +116,8 @@ public partial class RSeqAct_CallHeavyTanksToLocation : BmSDK.Engine.SequenceAct
     }
 
     /// <summary>
-    /// FloatProperty: MaxRange
+    /// FloatProperty: MaxRange<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float MaxRange
     {
@@ -125,7 +126,8 @@ public partial class RSeqAct_CallHeavyTanksToLocation : BmSDK.Engine.SequenceAct
     }
 
     /// <summary>
-    /// IntProperty: MaxTanksToCall
+    /// IntProperty: MaxTanksToCall<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int MaxTanksToCall
     {

@@ -394,7 +394,8 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     }
 
     /// <summary>
-    /// NameProperty: MovementStancePose
+    /// NameProperty: MovementStancePose<br/>
+    /// Default: Combat
     /// </summary>
     public unsafe BmSDK.FName MovementStancePose
     {

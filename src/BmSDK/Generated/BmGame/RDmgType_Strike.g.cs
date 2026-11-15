@@ -79,7 +79,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bAddScore
+    /// BoolProperty: bAddScore<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAddScore
     {
@@ -97,7 +98,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bIncCombo
+    /// BoolProperty: bIncCombo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIncCombo
     {
@@ -133,7 +135,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: StrikeDamage
+    /// IntProperty: StrikeDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int StrikeDamage
     {
@@ -142,7 +145,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: StrainAmount
+    /// FloatProperty: StrainAmount<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float StrainAmount
     {
@@ -151,7 +155,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: StrikeStrength
+    /// ByteProperty: StrikeStrength<br/>
+    /// Default: SS_Weak
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.StrikeStrength StrikeStrength
     {
@@ -169,7 +174,8 @@ public partial class RDmgType_Strike : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: PreferredTargetDist
+    /// FloatProperty: PreferredTargetDist<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PreferredTargetDist
     {

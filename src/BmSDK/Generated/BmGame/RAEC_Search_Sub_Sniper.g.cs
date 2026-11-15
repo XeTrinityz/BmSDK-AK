@@ -282,7 +282,8 @@ public partial class RAEC_Search_Sub_Sniper : BmSDK.BmGame.RAlertEventCoordinato
     }
 
     /// <summary>
-    /// FloatProperty: LastFireTime
+    /// FloatProperty: LastFireTime<br/>
+    /// Default: -4
     /// </summary>
     public unsafe float LastFireTime
     {

@@ -452,7 +452,8 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     }
 
     /// <summary>
-    /// IntProperty: SelectedButton
+    /// IntProperty: SelectedButton<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SelectedButton
     {
@@ -506,7 +507,8 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     }
 
     /// <summary>
-    /// IntProperty: MASK_HEIGHT
+    /// IntProperty: MASK_HEIGHT<br/>
+    /// Default: 400
     /// </summary>
     public unsafe int MASK_HEIGHT
     {
@@ -515,7 +517,8 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     }
 
     /// <summary>
-    /// IntProperty: SCROLL_RATE
+    /// IntProperty: SCROLL_RATE<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int SCROLL_RATE
     {

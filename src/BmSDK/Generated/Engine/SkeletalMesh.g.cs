@@ -789,7 +789,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SkelMirrorAxis
+    /// ByteProperty: SkelMirrorAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis SkelMirrorAxis
     {
@@ -798,7 +799,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SkelMirrorFlipAxis
+    /// ByteProperty: SkelMirrorFlipAxis<br/>
+    /// Default: AXIS_Z
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis SkelMirrorFlipAxis
     {
@@ -921,7 +923,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseSimpleLineCollision
+    /// BoolProperty: bUseSimpleLineCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseSimpleLineCollision
     {
@@ -930,7 +933,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseSimpleBoxCollision
+    /// BoolProperty: bUseSimpleBoxCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseSimpleBoxCollision
     {
@@ -984,7 +988,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnablePerBoneBounds
+    /// BoolProperty: EnablePerBoneBounds<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnablePerBoneBounds
     {
@@ -993,7 +998,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableFaceFX
+    /// BoolProperty: EnableFaceFX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableFaceFX
     {
@@ -1002,7 +1008,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableFaceFXBoneScaling
+    /// BoolProperty: EnableFaceFXBoneScaling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableFaceFXBoneScaling
     {
@@ -1020,7 +1027,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableTwistBoneFixers
+    /// BoolProperty: EnableTwistBoneFixers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableTwistBoneFixers
     {
@@ -1029,7 +1037,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableKneeElbowFixers
+    /// BoolProperty: EnableKneeElbowFixers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableKneeElbowFixers
     {
@@ -1038,7 +1047,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableNeckTwistFixer
+    /// BoolProperty: EnableNeckTwistFixer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableNeckTwistFixer
     {
@@ -1047,7 +1057,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableCollarTwistFixer
+    /// BoolProperty: EnableCollarTwistFixer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCollarTwistFixer
     {
@@ -1056,7 +1067,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableStretches
+    /// BoolProperty: EnableStretches<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableStretches
     {
@@ -1065,7 +1077,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableSkelControls
+    /// BoolProperty: EnableSkelControls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableSkelControls
     {
@@ -1092,7 +1105,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CollarTwistWeight
+    /// FloatProperty: CollarTwistWeight<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float CollarTwistWeight
     {
@@ -1128,7 +1142,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: PreviewBoundsType
+    /// ByteProperty: PreviewBoundsType<br/>
+    /// Default: SMCBT_Editor
     /// </summary>
     public unsafe BmSDK.Engine.RSkeletalMeshComponent_Export.ESkeletalMeshComponentBoundsType PreviewBoundsType
     {
@@ -1362,7 +1377,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothStretchStiffness
+    /// FloatProperty: ClothStretchStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothStretchStiffness
     {
@@ -1371,7 +1387,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothBendStiffness
+    /// FloatProperty: ClothBendStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothBendStiffness
     {
@@ -1380,7 +1397,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothDensity
+    /// FloatProperty: ClothDensity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothDensity
     {
@@ -1389,7 +1407,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothThickness
+    /// FloatProperty: ClothThickness<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ClothThickness
     {
@@ -1398,7 +1417,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothDamping
+    /// FloatProperty: ClothDamping<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ClothDamping
     {
@@ -1407,7 +1427,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ClothIterations
+    /// IntProperty: ClothIterations<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ClothIterations
     {
@@ -1416,7 +1437,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ClothHierarchicalIterations
+    /// IntProperty: ClothHierarchicalIterations<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ClothHierarchicalIterations
     {
@@ -1425,7 +1447,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothFriction
+    /// FloatProperty: ClothFriction<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ClothFriction
     {
@@ -1434,7 +1457,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothRelativeGridSpacing
+    /// FloatProperty: ClothRelativeGridSpacing<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothRelativeGridSpacing
     {
@@ -1443,7 +1467,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothPressure
+    /// FloatProperty: ClothPressure<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothPressure
     {
@@ -1452,7 +1477,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothCollisionResponseCoefficient
+    /// FloatProperty: ClothCollisionResponseCoefficient<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ClothCollisionResponseCoefficient
     {
@@ -1461,7 +1487,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothAttachmentResponseCoefficient
+    /// FloatProperty: ClothAttachmentResponseCoefficient<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ClothAttachmentResponseCoefficient
     {
@@ -1470,7 +1497,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothAttachmentTearFactor
+    /// FloatProperty: ClothAttachmentTearFactor<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ClothAttachmentTearFactor
     {
@@ -1479,7 +1507,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothSleepLinearVelocity
+    /// FloatProperty: ClothSleepLinearVelocity<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ClothSleepLinearVelocity
     {
@@ -1488,7 +1517,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HardStretchLimitFactor
+    /// FloatProperty: HardStretchLimitFactor<br/>
+    /// Default: 1.1
     /// </summary>
     public unsafe float HardStretchLimitFactor
     {
@@ -1569,7 +1599,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothMetalImpulseThreshold
+    /// FloatProperty: ClothMetalImpulseThreshold<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ClothMetalImpulseThreshold
     {
@@ -1605,7 +1636,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothTearFactor
+    /// FloatProperty: ClothTearFactor<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float ClothTearFactor
     {
@@ -1614,7 +1646,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ClothTearReserve
+    /// IntProperty: ClothTearReserve<br/>
+    /// Default: 128
     /// </summary>
     public unsafe int ClothTearReserve
     {
@@ -1758,7 +1791,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyVolumeStiffness
+    /// FloatProperty: SoftBodyVolumeStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoftBodyVolumeStiffness
     {
@@ -1767,7 +1801,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyStretchingStiffness
+    /// FloatProperty: SoftBodyStretchingStiffness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoftBodyStretchingStiffness
     {
@@ -1776,7 +1811,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyDensity
+    /// FloatProperty: SoftBodyDensity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoftBodyDensity
     {
@@ -1785,7 +1821,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyParticleRadius
+    /// FloatProperty: SoftBodyParticleRadius<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float SoftBodyParticleRadius
     {
@@ -1794,7 +1831,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyDamping
+    /// FloatProperty: SoftBodyDamping<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SoftBodyDamping
     {
@@ -1803,7 +1841,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SoftBodySolverIterations
+    /// IntProperty: SoftBodySolverIterations<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int SoftBodySolverIterations
     {
@@ -1812,7 +1851,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyFriction
+    /// FloatProperty: SoftBodyFriction<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SoftBodyFriction
     {
@@ -1821,7 +1861,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyRelativeGridSpacing
+    /// FloatProperty: SoftBodyRelativeGridSpacing<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SoftBodyRelativeGridSpacing
     {
@@ -1830,7 +1871,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodySleepLinearVelocity
+    /// FloatProperty: SoftBodySleepLinearVelocity<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SoftBodySleepLinearVelocity
     {
@@ -1848,7 +1890,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyAttachmentResponse
+    /// FloatProperty: SoftBodyAttachmentResponse<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SoftBodyAttachmentResponse
     {
@@ -1857,7 +1900,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyCollisionResponse
+    /// FloatProperty: SoftBodyCollisionResponse<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SoftBodyCollisionResponse
     {
@@ -1866,7 +1910,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyDetailLevel
+    /// FloatProperty: SoftBodyDetailLevel<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SoftBodyDetailLevel
     {
@@ -1875,7 +1920,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SoftBodySubdivisionLevel
+    /// IntProperty: SoftBodySubdivisionLevel<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int SoftBodySubdivisionLevel
     {
@@ -1884,7 +1930,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSoftBodyIsoSurface
+    /// BoolProperty: bSoftBodyIsoSurface<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSoftBodyIsoSurface
     {
@@ -1911,7 +1958,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyAttachmentThreshold
+    /// FloatProperty: SoftBodyAttachmentThreshold<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SoftBodyAttachmentThreshold
     {
@@ -1920,7 +1968,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableSoftBodyTwoWayCollision
+    /// BoolProperty: bEnableSoftBodyTwoWayCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableSoftBodyTwoWayCollision
     {
@@ -1929,7 +1978,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SoftBodyAttachmentTearFactor
+    /// FloatProperty: SoftBodyAttachmentTearFactor<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float SoftBodyAttachmentTearFactor
     {
@@ -1974,7 +2024,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StreamingDistanceMultiplier
+    /// FloatProperty: StreamingDistanceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StreamingDistanceMultiplier
     {
@@ -2028,7 +2079,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseClothCollisionChannels
+    /// BoolProperty: bUseClothCollisionChannels<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseClothCollisionChannels
     {
@@ -2037,7 +2089,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisplayFactorForFullySkinnedCloth
+    /// FloatProperty: DisplayFactorForFullySkinnedCloth<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float DisplayFactorForFullySkinnedCloth
     {
@@ -2046,7 +2099,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisplayFactorForFullyPhysicalCloth
+    /// FloatProperty: DisplayFactorForFullyPhysicalCloth<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DisplayFactorForFullyPhysicalCloth
     {
@@ -2055,7 +2109,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothWindStrengthScale
+    /// FloatProperty: ClothWindStrengthScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ClothWindStrengthScale
     {
@@ -2064,7 +2119,8 @@ public partial class SkeletalMesh : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothWindAdaptTime
+    /// FloatProperty: ClothWindAdaptTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ClothWindAdaptTime
     {

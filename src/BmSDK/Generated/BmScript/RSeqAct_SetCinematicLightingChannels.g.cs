@@ -102,13 +102,15 @@ public partial class RSeqAct_SetCinematicLightingChannels : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// StructProperty: CinematicLightingChannels
+    /// StructProperty: CinematicLightingChannels<br/>
+    /// Default: (bInitialized=true,Dynamic=true,CompositeDynamic=true,Cinematic_1=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer CinematicLightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 360);
 
     /// <summary>
-    /// StructProperty: OriginalLightingChannels
+    /// StructProperty: OriginalLightingChannels<br/>
+    /// Default: (bInitialized=true,Dynamic=true,CompositeDynamic=true,Character=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer OriginalLightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 364);

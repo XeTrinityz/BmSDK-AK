@@ -119,7 +119,8 @@ public partial class MorphNodePose : BmSDK.Engine.MorphNodeBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: Weight
+    /// FloatProperty: Weight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Weight
     {

@@ -278,7 +278,8 @@ public partial class RBMBehaviour_Flee : BmSDK.BmGame.RBMBehaviour, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: TimeSinceBark
+    /// FloatProperty: TimeSinceBark<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float TimeSinceBark
     {

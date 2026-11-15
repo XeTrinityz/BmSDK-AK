@@ -144,7 +144,8 @@ public partial class RImpassableHazard : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: StumbleMove
+    /// ObjectProperty: StumbleMove<br/>
+    /// Default: Batman_Environment_Moves.HazardVolume.StumbleFromHazard
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig StumbleMove
     {

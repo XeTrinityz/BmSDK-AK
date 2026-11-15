@@ -106,7 +106,8 @@ public partial class RSeqAct_SideStorySetIntelState : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// IntProperty: GiveIntelUnlessThisManyDifferentIconsAlreadyOnMap
+    /// IntProperty: GiveIntelUnlessThisManyDifferentIconsAlreadyOnMap<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int GiveIntelUnlessThisManyDifferentIconsAlreadyOnMap
     {

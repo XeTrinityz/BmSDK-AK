@@ -576,7 +576,8 @@ public partial class MGFxWidgetOverlayScreen : BmSDK.GFxUI.GFxObject, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: PromptAIndex
+    /// IntProperty: PromptAIndex<br/>
+    /// Default: -2
     /// </summary>
     public unsafe int PromptAIndex
     {
@@ -585,7 +586,8 @@ public partial class MGFxWidgetOverlayScreen : BmSDK.GFxUI.GFxObject, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: PromptBIndex
+    /// IntProperty: PromptBIndex<br/>
+    /// Default: -3
     /// </summary>
     public unsafe int PromptBIndex
     {
@@ -594,7 +596,8 @@ public partial class MGFxWidgetOverlayScreen : BmSDK.GFxUI.GFxObject, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: PromptExtraIndex
+    /// IntProperty: PromptExtraIndex<br/>
+    /// Default: -4
     /// </summary>
     public unsafe int PromptExtraIndex
     {

@@ -79,7 +79,8 @@ public partial class McpServiceConfig : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: Protocol
+    /// StrProperty: Protocol<br/>
+    /// Default: "http"
     /// </summary>
     public unsafe BmSDK.FString Protocol
     {
@@ -88,7 +89,8 @@ public partial class McpServiceConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Domain
+    /// StrProperty: Domain<br/>
+    /// Default: "localhost:8888"
     /// </summary>
     public unsafe BmSDK.FString Domain
     {

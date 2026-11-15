@@ -300,7 +300,8 @@ public partial class RAEC_BatarangReaction_Master : BmSDK.BmGame.RAlertEventCoor
     }
 
     /// <summary>
-    /// FloatProperty: LastActuallyPlayerEventTime
+    /// FloatProperty: LastActuallyPlayerEventTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastActuallyPlayerEventTime
     {

@@ -119,7 +119,8 @@ public partial class RVentNetworkOutLine : BmSDK.Engine.StaticMeshActor, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: BatmanInteractions
+    /// ComponentProperty: BatmanInteractions<br/>
+    /// Default: BmGame.Default__RVentNetworkOutLine.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatmanInteractions
     {
@@ -128,7 +129,8 @@ public partial class RVentNetworkOutLine : BmSDK.Engine.StaticMeshActor, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: EditorStaticMesh
+    /// ComponentProperty: EditorStaticMesh<br/>
+    /// Default: BmGame.Default__RVentNetworkOutLine.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent EditorStaticMesh
     {

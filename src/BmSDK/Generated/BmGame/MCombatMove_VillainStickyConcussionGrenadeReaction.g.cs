@@ -310,7 +310,8 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: RifleWeaponAnimSet
+    /// ObjectProperty: RifleWeaponAnimSet<br/>
+    /// Default: Anim_Thug_Rifle.Code.TGRifle_PredCore
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RifleWeaponAnimSet
     {
@@ -319,7 +320,8 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: SmokeReactionAnimset
+    /// ObjectProperty: SmokeReactionAnimset<br/>
+    /// Default: Anim_Thug.Code.TG_Smoke_Reaction
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet SmokeReactionAnimset
     {
@@ -328,7 +330,8 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: HitReactionAnimSet
+    /// ObjectProperty: HitReactionAnimSet<br/>
+    /// Default: Anim_Thug.Code.TG_HitReaction
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet HitReactionAnimSet
     {
@@ -388,7 +391,8 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: LastHitDmgInfo
+    /// StructProperty: LastHitDmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo LastHitDmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 868);

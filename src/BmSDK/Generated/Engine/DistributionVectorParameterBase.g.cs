@@ -89,7 +89,8 @@ public partial class DistributionVectorParameterBase : BmSDK.Engine.Distribution
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 140);
 
     /// <summary>
-    /// StructProperty: MaxInput
+    /// StructProperty: MaxInput<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MaxInput
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);
@@ -101,7 +102,8 @@ public partial class DistributionVectorParameterBase : BmSDK.Engine.Distribution
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 164);
 
     /// <summary>
-    /// StructProperty: MaxOutput
+    /// StructProperty: MaxOutput<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MaxOutput
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 176);

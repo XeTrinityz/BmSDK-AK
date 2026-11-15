@@ -122,7 +122,8 @@ public partial class RHangAttackHook : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: HangDistance
+    /// FloatProperty: HangDistance<br/>
+    /// Default: 384
     /// </summary>
     public unsafe float HangDistance
     {

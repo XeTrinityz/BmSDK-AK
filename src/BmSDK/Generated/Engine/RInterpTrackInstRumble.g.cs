@@ -88,7 +88,8 @@ public partial class RInterpTrackInstRumble : BmSDK.Engine.InterpTrackInst, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: fSeekPos
+    /// FloatProperty: fSeekPos<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fSeekPos
     {

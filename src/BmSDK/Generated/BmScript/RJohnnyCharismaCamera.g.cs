@@ -140,7 +140,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1256);
 
     /// <summary>
-    /// FloatProperty: LookModeScale
+    /// FloatProperty: LookModeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookModeScale
     {
@@ -149,7 +150,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LookSpringBack
+    /// FloatProperty: LookSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookSpringBack
     {
@@ -173,7 +175,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LocLerpVal
+    /// FloatProperty: LocLerpVal<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float LocLerpVal
     {
@@ -182,7 +185,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RotLerpValNear
+    /// FloatProperty: RotLerpValNear<br/>
+    /// Default: 0.08
     /// </summary>
     public unsafe float RotLerpValNear
     {
@@ -191,7 +195,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RotLerpValFar
+    /// FloatProperty: RotLerpValFar<br/>
+    /// Default: 0.04
     /// </summary>
     public unsafe float RotLerpValFar
     {
@@ -200,7 +205,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RotLerpDistFar
+    /// FloatProperty: RotLerpDistFar<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RotLerpDistFar
     {
@@ -209,7 +215,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RotLerpDistNear
+    /// FloatProperty: RotLerpDistNear<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float RotLerpDistNear
     {
@@ -260,7 +267,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LookAroundMul
+    /// FloatProperty: LookAroundMul<br/>
+    /// Default: 125
     /// </summary>
     public unsafe float LookAroundMul
     {
@@ -269,7 +277,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MouseLookMul
+    /// FloatProperty: MouseLookMul<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MouseLookMul
     {
@@ -287,7 +296,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: HeightChangeNear
+    /// FloatProperty: HeightChangeNear<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float HeightChangeNear
     {
@@ -296,7 +306,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForNearHeight
+    /// FloatProperty: CameraDistForNearHeight<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CameraDistForNearHeight
     {
@@ -305,7 +316,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForFarHeight
+    /// FloatProperty: CameraDistForFarHeight<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float CameraDistForFarHeight
     {
@@ -323,7 +335,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: RotChangeNear
+    /// IntProperty: RotChangeNear<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe int RotChangeNear
     {
@@ -332,7 +345,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForNearRot
+    /// FloatProperty: CameraDistForNearRot<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CameraDistForNearRot
     {
@@ -341,7 +355,8 @@ public partial class RJohnnyCharismaCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForFarRot
+    /// FloatProperty: CameraDistForFarRot<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float CameraDistForFarRot
     {

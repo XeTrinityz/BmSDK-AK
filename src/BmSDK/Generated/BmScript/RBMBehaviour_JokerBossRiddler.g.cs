@@ -178,7 +178,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ObjectProperty: SurpriseThugAnimset
+    /// ObjectProperty: SurpriseThugAnimset<br/>
+    /// Default: Anim_Joker.Code.Phase2_TG
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet SurpriseThugAnimset
     {
@@ -187,7 +188,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ObjectProperty: SurpriseRiddlerAnimset
+    /// ObjectProperty: SurpriseRiddlerAnimset<br/>
+    /// Default: Anim_Joker.Code.Phase2_Riddler
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet SurpriseRiddlerAnimset
     {
@@ -241,7 +243,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: ThugCowerAnim
+    /// NameProperty: ThugCowerAnim<br/>
+    /// Default: Hostage_Idle_01
     /// </summary>
     public unsafe BmSDK.FName ThugCowerAnim
     {
@@ -250,7 +253,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: ThugCowerIdle
+    /// NameProperty: ThugCowerIdle<br/>
+    /// Default: Hostage_Idle
     /// </summary>
     public unsafe BmSDK.FName ThugCowerIdle
     {
@@ -259,7 +263,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ArrayProperty: SurpriseRiddlerAnimNames
+    /// ArrayProperty: SurpriseRiddlerAnimNames<br/>
+    /// Default: (Hostage_In)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> SurpriseRiddlerAnimNames
     {
@@ -268,7 +273,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: SurpriseRiddlerIdleName
+    /// NameProperty: SurpriseRiddlerIdleName<br/>
+    /// Default: Hostage_Idle
     /// </summary>
     public unsafe BmSDK.FName SurpriseRiddlerIdleName
     {
@@ -277,7 +283,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: SurpriseRiddlerPreIdleName
+    /// NameProperty: SurpriseRiddlerPreIdleName<br/>
+    /// Default: Idle
     /// </summary>
     public unsafe BmSDK.FName SurpriseRiddlerPreIdleName
     {
@@ -418,7 +425,8 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: RiddlerWaitTime
+    /// FloatProperty: RiddlerWaitTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RiddlerWaitTime
     {

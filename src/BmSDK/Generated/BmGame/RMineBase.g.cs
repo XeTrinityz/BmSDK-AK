@@ -263,7 +263,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: PlayerDamageType
+    /// ClassProperty: PlayerDamageType<br/>
+    /// Default: BmGame.RDmgType_ThugMineExplosion_Player
     /// </summary>
     public unsafe BmSDK.Class PlayerDamageType
     {
@@ -272,7 +273,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BeepDistance
+    /// FloatProperty: BeepDistance<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float BeepDistance
     {
@@ -281,7 +283,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageDistance
+    /// FloatProperty: DamageDistance<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float DamageDistance
     {
@@ -290,7 +293,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float DamageAmount
     {

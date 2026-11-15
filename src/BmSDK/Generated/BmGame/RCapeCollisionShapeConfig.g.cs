@@ -124,7 +124,8 @@ public partial class RCapeCollisionShapeConfig : BmSDK.GameObject, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ByteProperty: ShapeType
+    /// ByteProperty: ShapeType<br/>
+    /// Default: ECollisionShape_ConvexHull
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeCollisionShapeConfig.ECollisionShape ShapeType
     {
@@ -166,7 +167,8 @@ public partial class RCapeCollisionShapeConfig : BmSDK.GameObject, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);
 
     /// <summary>
-    /// FloatProperty: Length1
+    /// FloatProperty: Length1<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Length1
     {
@@ -181,7 +183,8 @@ public partial class RCapeCollisionShapeConfig : BmSDK.GameObject, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: ForwardsVector
+    /// StructProperty: ForwardsVector<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ForwardsVector
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 180);

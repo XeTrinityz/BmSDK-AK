@@ -612,7 +612,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
     }
 
     /// <summary>
-    /// ArrayProperty: AggregatesList
+    /// ArrayProperty: AggregatesList<br/>
+    /// Default: ((EventID=103,AggregateID=10004),(EventID=109,AggregateID=10005),(EventID=51,AggregateID=10102),(EventID=4,AggregateID=10103),(EventID=5,AggregateID=10104),(EventID=150,AggregateID=10202,TargetAggrega...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.GameStatsAggregator.FAggregateEventMapping> AggregatesList
     {
@@ -627,7 +628,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMap_Mirror>(Ptr + 148);
 
     /// <summary>
-    /// ArrayProperty: AggregateEvents
+    /// ArrayProperty: AggregateEvents<br/>
+    /// Default: ((EventID=10001,EventName=Player Time Alive,StatGroup=(Group=GSG_Aggregate,Level=1),EventDataType=21),(EventID=10002,EventName=Kills,StatGroup=(Group=GSG_Aggregate,Level=1),EventDataType=21),(EventID=...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.GameplayEvents.FGameplayEventMetaData> AggregateEvents
     {

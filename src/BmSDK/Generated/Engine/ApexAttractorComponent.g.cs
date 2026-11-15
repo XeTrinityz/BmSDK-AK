@@ -79,7 +79,8 @@ public partial class ApexAttractorComponent : BmSDK.Engine.ApexFieldSamplerCompo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {

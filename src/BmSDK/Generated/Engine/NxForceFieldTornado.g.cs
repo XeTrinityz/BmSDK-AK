@@ -145,7 +145,8 @@ public partial class NxForceFieldTornado : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -154,7 +155,8 @@ public partial class NxForceFieldTornado : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ForceTopRadius
+    /// FloatProperty: ForceTopRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceTopRadius
     {
@@ -181,7 +183,8 @@ public partial class NxForceFieldTornado : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ForceHeight
+    /// FloatProperty: ForceHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceHeight
     {

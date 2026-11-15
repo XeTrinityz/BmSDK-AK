@@ -79,7 +79,8 @@ public partial class AkAudioBeacon : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: ResetParameters
+    /// ArrayProperty: ResetParameters<br/>
+    /// Default: (Ww_Parameters.Batmobile_EMP,Ww_Parameters.Combat_Fear_SuperSloMo,Ww_Parameters.BML_Speed_Global)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkParameterName> ResetParameters
     {
@@ -88,7 +89,8 @@ public partial class AkAudioBeacon : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ResetStates
+    /// ArrayProperty: ResetStates<br/>
+    /// Default: (Ww_Mix_FirstPerson_Crawl.MIX_FirstPerson_Crawl_OFF)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkStateName> ResetStates
     {

@@ -138,7 +138,8 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
     }
 
     /// <summary>
-    /// FloatProperty: droppedImpulseMagnitude
+    /// FloatProperty: droppedImpulseMagnitude<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float droppedImpulseMagnitude
     {

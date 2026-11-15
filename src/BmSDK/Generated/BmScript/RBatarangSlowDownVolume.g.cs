@@ -112,7 +112,8 @@ public partial class RBatarangSlowDownVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: SlowDownFactor
+    /// FloatProperty: SlowDownFactor<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float SlowDownFactor
     {

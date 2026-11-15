@@ -121,7 +121,8 @@ public partial class RSeqAct_SmoothCameraTransition : BmSDK.Engine.SeqAct_Latent
     }
 
     /// <summary>
-    /// FloatProperty: MoveTime
+    /// FloatProperty: MoveTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MoveTime
     {

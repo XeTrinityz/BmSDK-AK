@@ -355,7 +355,8 @@ public partial class RBMAIAction_CrouchByCasualty : BmSDK.BmGame.RBMAIAction, Bm
     }
 
     /// <summary>
-    /// StructProperty: LastAdditiveAnim
+    /// StructProperty: LastAdditiveAnim<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId LastAdditiveAnim
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 876);
@@ -373,7 +374,8 @@ public partial class RBMAIAction_CrouchByCasualty : BmSDK.BmGame.RBMAIAction, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 896);
 
     /// <summary>
-    /// ByteProperty: CurrentOverlayState
+    /// ByteProperty: CurrentOverlayState<br/>
+    /// Default: CMD_FaceDown
     /// </summary>
     public unsafe BmSDK.BmGame.RBMAIAction_CrouchByCasualty.CheckManDown_OverlayState CurrentOverlayState
     {
@@ -382,7 +384,8 @@ public partial class RBMAIAction_CrouchByCasualty : BmSDK.BmGame.RBMAIAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenJokerHallucinationOverlays
+    /// FloatProperty: TimeBetweenJokerHallucinationOverlays<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeBetweenJokerHallucinationOverlays
     {

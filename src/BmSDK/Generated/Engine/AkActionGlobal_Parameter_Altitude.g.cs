@@ -79,7 +79,8 @@ public partial class AkActionGlobal_Parameter_Altitude : BmSDK.Engine.AkActionGl
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: AltitudeParameter
+    /// ObjectProperty: AltitudeParameter<br/>
+    /// Default: Ww_Parameters.Exterior_Height
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName AltitudeParameter
     {

@@ -79,7 +79,8 @@ public partial class NxRadialForceField : BmSDK.Engine.NxForceField, BmSDK.IGame
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__NxRadialForceField.DrawSphere0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent RenderComponent
     {
@@ -88,7 +89,8 @@ public partial class NxRadialForceField : BmSDK.Engine.NxForceField, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -97,7 +99,8 @@ public partial class NxRadialForceField : BmSDK.Engine.NxForceField, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {

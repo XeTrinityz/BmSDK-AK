@@ -100,7 +100,8 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: AimDistance
+    /// FloatProperty: AimDistance<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AimDistance
     {
@@ -145,7 +146,8 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DotProdMin
+    /// FloatProperty: DotProdMin<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DotProdMin
     {
@@ -154,7 +156,8 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: SavedDistance
+    /// FloatProperty: SavedDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SavedDistance
     {
@@ -199,7 +202,8 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
     }
 
     /// <summary>
-    /// ClassProperty: ExpectedType
+    /// ClassProperty: ExpectedType<br/>
+    /// Default: Engine.SeqVar_Object
     /// </summary>
     public unsafe BmSDK.Class ExpectedType
     {

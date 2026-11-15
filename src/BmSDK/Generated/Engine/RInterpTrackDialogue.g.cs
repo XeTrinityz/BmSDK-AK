@@ -115,7 +115,8 @@ public partial class RInterpTrackDialogue : BmSDK.Engine.InterpTrackVectorBase, 
     }
 
     /// <summary>
-    /// StructProperty: SpeechOptions
+    /// StructProperty: SpeechOptions<br/>
+    /// Default: (bRejectIfInterruptsMatchingSpeech=true,bAllowMissingVoiceForSingleLine=true,bForceSubtitlesIfNewest=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkDialogue.FAkSpeechOptions SpeechOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkDialogue.FAkSpeechOptions>(Ptr + 324);

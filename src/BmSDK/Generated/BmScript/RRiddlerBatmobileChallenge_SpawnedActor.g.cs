@@ -168,7 +168,8 @@ public partial class RRiddlerBatmobileChallenge_SpawnedActor : BmSDK.Engine.Acto
     }
 
     /// <summary>
-    /// ObjectProperty: RotationLoopingAudio
+    /// ObjectProperty: RotationLoopingAudio<br/>
+    /// Default: ww_dlc11_obj_waynetech_tunnel.Play_DLC11_OBJ_WayneTech_8RT_Spin
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RotationLoopingAudio
     {
@@ -177,7 +178,8 @@ public partial class RRiddlerBatmobileChallenge_SpawnedActor : BmSDK.Engine.Acto
     }
 
     /// <summary>
-    /// ObjectProperty: RotationStopAudio
+    /// ObjectProperty: RotationStopAudio<br/>
+    /// Default: ww_dlc11_obj_waynetech_tunnel.Stop_DLC11_OBJ_WayneTech_8RT_Spin
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RotationStopAudio
     {

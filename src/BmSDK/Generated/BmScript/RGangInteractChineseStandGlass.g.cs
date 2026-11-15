@@ -170,7 +170,8 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
     }
 
     /// <summary>
-    /// ObjectProperty: GlassSmashEffect
+    /// ObjectProperty: GlassSmashEffect<br/>
+    /// Default: VFX_Riot.Particles.Window_Smash_Small
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem GlassSmashEffect
     {

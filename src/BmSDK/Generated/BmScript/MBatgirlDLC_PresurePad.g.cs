@@ -138,7 +138,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__MBatgirlDLC_PresurePad.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {
@@ -147,7 +148,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: PadMesh
+    /// ComponentProperty: PadMesh<br/>
+    /// Default: BmScript.Default__MBatgirlDLC_PresurePad.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent PadMesh
     {
@@ -183,7 +185,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTriggeredByBatgirlOnly
+    /// BoolProperty: bCanBeTriggeredByBatgirlOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTriggeredByBatgirlOnly
     {
@@ -192,7 +195,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bDisableWhileInCombat
+    /// BoolProperty: bDisableWhileInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableWhileInCombat
     {
@@ -219,7 +223,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DiveStageValue1
+    /// FloatProperty: DiveStageValue1<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float DiveStageValue1
     {
@@ -228,7 +233,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DiveStageValue2
+    /// FloatProperty: DiveStageValue2<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float DiveStageValue2
     {
@@ -237,7 +243,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DiveStageValue3
+    /// FloatProperty: DiveStageValue3<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float DiveStageValue3
     {
@@ -246,7 +253,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DiveStageValue4
+    /// FloatProperty: DiveStageValue4<br/>
+    /// Default: 1250
     /// </summary>
     public unsafe float DiveStageValue4
     {
@@ -255,7 +263,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DiveStageValue5
+    /// FloatProperty: DiveStageValue5<br/>
+    /// Default: 1550
     /// </summary>
     public unsafe float DiveStageValue5
     {
@@ -309,7 +318,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: TurnedOffMIC
+    /// ObjectProperty: TurnedOffMIC<br/>
+    /// Default: BatgirlDLC_Pressurepad.BGDLC_PB_Inactive
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant TurnedOffMIC
     {
@@ -318,7 +328,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: WaitingForInputMIC
+    /// ObjectProperty: WaitingForInputMIC<br/>
+    /// Default: BatgirlDLC_Pressurepad.BGDLC_PB_Inactive
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant WaitingForInputMIC
     {
@@ -327,7 +338,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: PadTriggeredMIC
+    /// ObjectProperty: PadTriggeredMIC<br/>
+    /// Default: BatgirlDLC_Pressurepad.BGDLC_PB_PAD_Triggered
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant PadTriggeredMIC
     {
@@ -345,7 +357,8 @@ public partial class MBatgirlDLC_PresurePad : BmSDK.BmGame.RPresurePadBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmScript.Default__MBatgirlDLC_PresurePad.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {

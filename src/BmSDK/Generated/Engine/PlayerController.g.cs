@@ -6589,7 +6589,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: simpleFFWaveform
+    /// ObjectProperty: simpleFFWaveform<br/>
+    /// Default: Engine.Default__PlayerController.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform simpleFFWaveform
     {
@@ -6742,7 +6743,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__PlayerController.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -6751,7 +6753,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ClassProperty: InputClass
+    /// ClassProperty: InputClass<br/>
+    /// Default: Engine.PlayerInput
     /// </summary>
     public unsafe BmSDK.Class InputClass
     {
@@ -6760,7 +6763,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ClassProperty: CheatClass
+    /// ClassProperty: CheatClass<br/>
+    /// Default: Engine.CheatManager
     /// </summary>
     public unsafe BmSDK.Class CheatClass
     {
@@ -6769,7 +6773,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ClassProperty: SavedMoveClass
+    /// ClassProperty: SavedMoveClass<br/>
+    /// Default: Engine.SavedMove
     /// </summary>
     public unsafe BmSDK.Class SavedMoveClass
     {
@@ -6778,7 +6783,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ClassProperty: CameraClass
+    /// ClassProperty: CameraClass<br/>
+    /// Default: Engine.Camera
     /// </summary>
     public unsafe BmSDK.Class CameraClass
     {
@@ -6949,7 +6955,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bInteractiveMode
+    /// BoolProperty: bInteractiveMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInteractiveMode
     {
@@ -6985,7 +6992,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bRenderHUDFullScreen
+    /// BoolProperty: bRenderHUDFullScreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRenderHUDFullScreen
     {
@@ -7003,7 +7011,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bShowKismetDrawText
+    /// BoolProperty: bShowKismetDrawText<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowKismetDrawText
     {
@@ -7021,7 +7030,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bIsUsingStreamingVolumes
+    /// BoolProperty: bIsUsingStreamingVolumes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsUsingStreamingVolumes
     {
@@ -7075,7 +7085,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bCheckRelevancyThroughPortals
+    /// BoolProperty: bCheckRelevancyThroughPortals<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckRelevancyThroughPortals
     {
@@ -7111,7 +7122,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: MaxResponseTime
+    /// FloatProperty: MaxResponseTime<br/>
+    /// Default: 0.125
     /// </summary>
     public unsafe float MaxResponseTime
     {
@@ -7192,7 +7204,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: FOVAngle
+    /// FloatProperty: FOVAngle<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float FOVAngle
     {
@@ -7201,7 +7214,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: DesiredFOV
+    /// FloatProperty: DesiredFOV<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float DesiredFOV
     {
@@ -7210,7 +7224,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: DefaultFOV
+    /// FloatProperty: DefaultFOV<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float DefaultFOV
     {
@@ -7219,7 +7234,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: LODDistanceFactor
+    /// FloatProperty: LODDistanceFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LODDistanceFactor
     {
@@ -7345,7 +7361,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: LastSpeedHackLog
+    /// FloatProperty: LastSpeedHackLog<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastSpeedHackLog
     {
@@ -7447,7 +7464,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: InteractDistance
+    /// FloatProperty: InteractDistance<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float InteractDistance
     {
@@ -7539,7 +7557,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: SpectatorCameraSpeed
+    /// FloatProperty: SpectatorCameraSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float SpectatorCameraSpeed
     {
@@ -7548,7 +7567,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: MinRespawnDelay
+    /// FloatProperty: MinRespawnDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinRespawnDelay
     {

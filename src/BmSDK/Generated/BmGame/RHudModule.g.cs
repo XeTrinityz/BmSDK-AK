@@ -371,7 +371,8 @@ public partial class RHudModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: CanBeTinted
+    /// BoolProperty: CanBeTinted<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanBeTinted
     {
@@ -443,7 +444,8 @@ public partial class RHudModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ModulePriority
+    /// IntProperty: ModulePriority<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ModulePriority
     {

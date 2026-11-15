@@ -142,7 +142,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// ByteProperty: TakedownFeatureType
+    /// ByteProperty: TakedownFeatureType<br/>
+    /// Default: TFT_Ledge
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayer.ETakedownFeature_Type TakedownFeatureType
     {
@@ -151,7 +152,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// ByteProperty: OnSpotNextStage
+    /// ByteProperty: OnSpotNextStage<br/>
+    /// Default: ESTDS_FromAboveOnSpotEnd
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages OnSpotNextStage
     {
@@ -160,7 +162,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerAnimationsByType
+    /// ArrayProperty: PlayerAnimationsByType<br/>
+    /// Default: (Fear_512_Stand_Railing_TD,Fear_512_Railing_TD,Fear_512_Stand_TD,Fear_512_Railing_TD)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerAnimationsByType
     {
@@ -169,7 +172,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerOnSpotAnimationsByType
+    /// ArrayProperty: PlayerOnSpotAnimationsByType<br/>
+    /// Default: (Fear_512_On_Spot_Stand_Railing_TD,Fear_512_On_Spot_Railing_TD,Fear_512_On_Spot_Stand_TD,Fear_512_On_Spot_Railing_TD)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerOnSpotAnimationsByType
     {
@@ -178,7 +182,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// NameProperty: VictimFrontAnimation
+    /// NameProperty: VictimFrontAnimation<br/>
+    /// Default: Silent_512_End_TD
     /// </summary>
     public unsafe BmSDK.FName VictimFrontAnimation
     {
@@ -187,7 +192,8 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAbove : BmSDK.B
     }
 
     /// <summary>
-    /// NameProperty: VictimBackAnimation
+    /// NameProperty: VictimBackAnimation<br/>
+    /// Default: Silent_512_End_TD
     /// </summary>
     public unsafe BmSDK.FName VictimBackAnimation
     {

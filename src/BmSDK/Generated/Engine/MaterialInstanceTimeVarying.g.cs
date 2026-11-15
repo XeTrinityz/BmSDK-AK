@@ -500,7 +500,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -536,7 +537,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {
@@ -572,7 +574,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// StructProperty: ParameterValue
+        /// StructProperty: ParameterValue<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor ParameterValue
         {
@@ -606,7 +609,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -642,7 +646,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {
@@ -678,7 +683,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// StructProperty: ParameterValue
+        /// StructProperty: ParameterValue<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor ParameterValue
         {
@@ -712,7 +718,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -748,7 +755,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {
@@ -809,7 +817,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -845,7 +854,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {
@@ -915,7 +925,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -951,7 +962,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {
@@ -1021,7 +1033,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: StartTime
+        /// FloatProperty: StartTime<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float StartTime
         {
@@ -1057,7 +1070,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
         }
 
         /// <summary>
-        /// FloatProperty: CycleTime
+        /// FloatProperty: CycleTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float CycleTime
         {

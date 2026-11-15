@@ -88,13 +88,15 @@ public partial class LightFunction : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Scale
+    /// StructProperty: Scale<br/>
+    /// Default: (X=1024,Y=1024,Z=1024)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Scale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 92);
 
     /// <summary>
-    /// FloatProperty: DisabledBrightness
+    /// FloatProperty: DisabledBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DisabledBrightness
     {

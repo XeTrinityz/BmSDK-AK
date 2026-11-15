@@ -153,7 +153,8 @@ public partial class RSeqAct_MiniDroneHasTarget : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: Enabled
+    /// BoolProperty: Enabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Enabled
     {

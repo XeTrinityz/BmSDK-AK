@@ -2757,7 +2757,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NamedInterfaceDefs
+    /// ArrayProperty: NamedInterfaceDefs<br/>
+    /// Default: ((InterfaceName=RecentPlayersList,InterfaceClassName="Engine.OnlineRecentPlayersList"))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FNamedInterfaceDef> NamedInterfaceDefs
     {

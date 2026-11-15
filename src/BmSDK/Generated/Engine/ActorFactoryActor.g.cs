@@ -79,7 +79,8 @@ public partial class ActorFactoryActor : BmSDK.Engine.ActorFactory, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ClassProperty: ActorClass
+    /// ClassProperty: ActorClass<br/>
+    /// Default: Engine.Actor
     /// </summary>
     public unsafe BmSDK.Class ActorClass
     {

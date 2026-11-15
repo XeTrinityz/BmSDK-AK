@@ -126,7 +126,8 @@ public partial class RPhysicalEvidenceCrimeScene : BmSDK.BmGame.RPhysicalEvidenc
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyVisibleInScanMode
+    /// BoolProperty: bOnlyVisibleInScanMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyVisibleInScanMode
     {
@@ -135,7 +136,8 @@ public partial class RPhysicalEvidenceCrimeScene : BmSDK.BmGame.RPhysicalEvidenc
     }
 
     /// <summary>
-    /// BoolProperty: CurrentlyScannable
+    /// BoolProperty: CurrentlyScannable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CurrentlyScannable
     {
@@ -162,7 +164,8 @@ public partial class RPhysicalEvidenceCrimeScene : BmSDK.BmGame.RPhysicalEvidenc
     }
 
     /// <summary>
-    /// FloatProperty: ScanDurationOverride
+    /// FloatProperty: ScanDurationOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ScanDurationOverride
     {

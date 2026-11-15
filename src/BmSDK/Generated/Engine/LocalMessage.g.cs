@@ -218,7 +218,8 @@ public partial class LocalMessage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsSpecial
+    /// BoolProperty: bIsSpecial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsSpecial
     {
@@ -245,7 +246,8 @@ public partial class LocalMessage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsConsoleMessage
+    /// BoolProperty: bIsConsoleMessage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsConsoleMessage
     {
@@ -272,7 +274,8 @@ public partial class LocalMessage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Lifetime
+    /// FloatProperty: Lifetime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float Lifetime
     {
@@ -281,13 +284,15 @@ public partial class LocalMessage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrawColor
+    /// StructProperty: DrawColor<br/>
+    /// Default: (B=255,G=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DrawColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 92);
 
     /// <summary>
-    /// FloatProperty: PosY
+    /// FloatProperty: PosY<br/>
+    /// Default: 0.83
     /// </summary>
     public unsafe float PosY
     {

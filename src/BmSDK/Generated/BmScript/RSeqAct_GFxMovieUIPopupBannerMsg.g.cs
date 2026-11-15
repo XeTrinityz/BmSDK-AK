@@ -129,7 +129,8 @@ public partial class RSeqAct_GFxMovieUIPopupBannerMsg : BmSDK.Engine.SequenceAct
     }
 
     /// <summary>
-    /// ObjectProperty: TheGFxMovieInstance
+    /// ObjectProperty: TheGFxMovieInstance<br/>
+    /// Default: UIPopups.BlankUIScreen
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheGFxMovieInstance
     {

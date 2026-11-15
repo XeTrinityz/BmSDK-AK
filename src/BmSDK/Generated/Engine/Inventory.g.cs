@@ -311,7 +311,8 @@ public partial class Inventory : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DroppedPickupClass
+    /// ClassProperty: DroppedPickupClass<br/>
+    /// Default: Engine.DroppedPickup
     /// </summary>
     public unsafe BmSDK.Class DroppedPickupClass
     {
@@ -365,7 +366,8 @@ public partial class Inventory : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDesireability
+    /// FloatProperty: MaxDesireability<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MaxDesireability
     {
@@ -374,7 +376,8 @@ public partial class Inventory : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PickupMessage
+    /// StrProperty: PickupMessage<br/>
+    /// Default: "Snagged an item."
     /// </summary>
     public unsafe BmSDK.FString PickupMessage
     {

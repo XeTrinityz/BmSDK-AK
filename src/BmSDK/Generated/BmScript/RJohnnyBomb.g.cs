@@ -224,7 +224,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: Barrel1
+    /// ComponentProperty: Barrel1<br/>
+    /// Default: BmScript.Default__RJohnnyBomb.SMBarrel1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Barrel1
     {
@@ -233,7 +234,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: Barrel2
+    /// ComponentProperty: Barrel2<br/>
+    /// Default: BmScript.Default__RJohnnyBomb.SMBarrel2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Barrel2
     {
@@ -260,7 +262,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanSpecialMove
+    /// ObjectProperty: BatmanSpecialMove<br/>
+    /// Default: Batman_Level_Moves.Film_B4.DisarmBomb
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanSpecialMove
     {
@@ -287,7 +290,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RJohnnyBomb.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -296,7 +300,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: ExplodeEffect
+    /// ComponentProperty: ExplodeEffect<br/>
+    /// Default: BmScript.Default__RJohnnyBomb.ExplodeEffect0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ExplodeEffect
     {
@@ -305,7 +310,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: DisarmEffect
+    /// ComponentProperty: DisarmEffect<br/>
+    /// Default: BmScript.Default__RJohnnyBomb.DisarmEffect0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DisarmEffect
     {
@@ -323,7 +329,8 @@ public partial class RJohnnyBomb : BmSDK.BmGame.RInteractableItem, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MinDistForAngCheck
+    /// FloatProperty: MinDistForAngCheck<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float MinDistForAngCheck
     {

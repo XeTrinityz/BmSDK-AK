@@ -272,7 +272,8 @@ public partial class RGangInteractWindowBase : BmSDK.BmGame.RGangInteractPointBr
     }
 
     /// <summary>
-    /// IntProperty: ForcePointSelection
+    /// IntProperty: ForcePointSelection<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForcePointSelection
     {

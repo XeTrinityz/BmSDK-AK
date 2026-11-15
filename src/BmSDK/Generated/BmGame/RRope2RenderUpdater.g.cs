@@ -114,7 +114,8 @@ public partial class RRope2RenderUpdater : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bNeedsRendererUpdate
+    /// BoolProperty: bNeedsRendererUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedsRendererUpdate
     {

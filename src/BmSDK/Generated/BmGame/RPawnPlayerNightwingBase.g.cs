@@ -159,7 +159,8 @@ public partial class RPawnPlayerNightwingBase : BmSDK.BmGame.RPawnPlayer, BmSDK.
     }
 
     /// <summary>
-    /// NameProperty: TargetClass
+    /// NameProperty: TargetClass<br/>
+    /// Default: Batarang
     /// </summary>
     public unsafe BmSDK.FName TargetClass
     {

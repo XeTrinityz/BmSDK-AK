@@ -112,7 +112,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -121,7 +122,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Settings
+    /// StructProperty: Settings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings Settings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 748);
@@ -175,7 +177,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_bEnableHighQualityDOF
+        /// BoolProperty: bOverride_bEnableHighQualityDOF<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_bEnableHighQualityDOF
         {
@@ -184,7 +187,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableBloom
+        /// BoolProperty: bOverride_EnableBloom<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableBloom
         {
@@ -193,7 +197,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableDOF
+        /// BoolProperty: bOverride_EnableDOF<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableDOF
         {
@@ -202,7 +207,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableMotionBlur
+        /// BoolProperty: bOverride_EnableMotionBlur<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableMotionBlur
         {
@@ -211,7 +217,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableSceneEffect
+        /// BoolProperty: bOverride_EnableSceneEffect<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableSceneEffect
         {
@@ -220,7 +227,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_AllowAmbientOcclusion
+        /// BoolProperty: bOverride_AllowAmbientOcclusion<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_AllowAmbientOcclusion
         {
@@ -229,7 +237,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_BloomOverload
+        /// BoolProperty: bOverride_BloomOverload<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_BloomOverload
         {
@@ -238,7 +247,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_BloomLowerCut
+        /// BoolProperty: bOverride_BloomLowerCut<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_BloomLowerCut
         {
@@ -247,7 +257,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_DOF_ApertureStop
+        /// BoolProperty: bOverride_DOF_ApertureStop<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_DOF_ApertureStop
         {
@@ -256,7 +267,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_DOF_FocusDistance
+        /// BoolProperty: bOverride_DOF_FocusDistance<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_DOF_FocusDistance
         {
@@ -265,7 +277,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_DOF_InterpolationDuration
+        /// BoolProperty: bOverride_DOF_InterpolationDuration<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_DOF_InterpolationDuration
         {
@@ -328,7 +341,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_Scene_Desaturation
+        /// BoolProperty: bOverride_Scene_Desaturation<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_Scene_Desaturation
         {
@@ -355,7 +369,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_Scene_HighLights
+        /// BoolProperty: bOverride_Scene_HighLights<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_Scene_HighLights
         {
@@ -364,7 +379,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_Scene_MidTones
+        /// BoolProperty: bOverride_Scene_MidTones<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_Scene_MidTones
         {
@@ -373,7 +389,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_Scene_Shadows
+        /// BoolProperty: bOverride_Scene_Shadows<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_Scene_Shadows
         {
@@ -382,7 +399,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_Scene_InterpolationDuration
+        /// BoolProperty: bOverride_Scene_InterpolationDuration<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_Scene_InterpolationDuration
         {
@@ -409,7 +427,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InterpolateOverDistanceFade
+        /// FloatProperty: InterpolateOverDistanceFade<br/>
+        /// Default: 2500
         /// </summary>
         public unsafe float InterpolateOverDistanceFade
         {
@@ -427,7 +446,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bEnableBloom
+        /// BoolProperty: bEnableBloom<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bEnableBloom
         {
@@ -454,7 +474,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bEnableMotionBlur
+        /// BoolProperty: bEnableMotionBlur<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bEnableMotionBlur
         {
@@ -463,7 +484,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bEnableSceneEffect
+        /// BoolProperty: bEnableSceneEffect<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bEnableSceneEffect
         {
@@ -472,7 +494,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowAmbientOcclusion
+        /// BoolProperty: bAllowAmbientOcclusion<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowAmbientOcclusion
         {
@@ -481,7 +504,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD1
+        /// BoolProperty: bOverride_EnableAtmosD1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD1
         {
@@ -490,7 +514,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAtmosD1
+        /// BoolProperty: bAtmosD1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAtmosD1
         {
@@ -499,7 +524,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD1Col
+        /// BoolProperty: bOverride_EnableAtmosD1Col<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD1Col
         {
@@ -508,7 +534,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosD1_Colour
+        /// StructProperty: AtmosD1_Colour<br/>
+        /// Default: (B=113,G=170,R=227,A=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor AtmosD1_Colour
         {
@@ -517,7 +544,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD1Den
+        /// BoolProperty: bOverride_EnableAtmosD1Den<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD1Den
         {
@@ -535,7 +563,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD1Start
+        /// BoolProperty: bOverride_EnableAtmosD1Start<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD1Start
         {
@@ -544,7 +573,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosD1_DistanceStart
+        /// FloatProperty: AtmosD1_DistanceStart<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float AtmosD1_DistanceStart
         {
@@ -553,7 +583,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD1End
+        /// BoolProperty: bOverride_EnableAtmosD1End<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD1End
         {
@@ -562,7 +593,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosD1_DistanceEnd
+        /// FloatProperty: AtmosD1_DistanceEnd<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float AtmosD1_DistanceEnd
         {
@@ -571,7 +603,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD2
+        /// BoolProperty: bOverride_EnableAtmosD2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD2
         {
@@ -580,7 +613,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAtmosD2
+        /// BoolProperty: bAtmosD2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAtmosD2
         {
@@ -589,7 +623,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD2Col
+        /// BoolProperty: bOverride_EnableAtmosD2Col<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD2Col
         {
@@ -598,7 +633,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosD2_Colour
+        /// StructProperty: AtmosD2_Colour<br/>
+        /// Default: (B=113,G=170,R=227,A=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor AtmosD2_Colour
         {
@@ -607,7 +643,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD2Den
+        /// BoolProperty: bOverride_EnableAtmosD2Den<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD2Den
         {
@@ -625,7 +662,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD2Start
+        /// BoolProperty: bOverride_EnableAtmosD2Start<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD2Start
         {
@@ -634,7 +672,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosD2_DistanceStart
+        /// FloatProperty: AtmosD2_DistanceStart<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float AtmosD2_DistanceStart
         {
@@ -643,7 +682,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosD2End
+        /// BoolProperty: bOverride_EnableAtmosD2End<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosD2End
         {
@@ -652,7 +692,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosD2_DistanceEnd
+        /// FloatProperty: AtmosD2_DistanceEnd<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float AtmosD2_DistanceEnd
         {
@@ -661,7 +702,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH1
+        /// BoolProperty: bOverride_EnableAtmosH1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH1
         {
@@ -670,7 +712,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAtmosH1
+        /// BoolProperty: bAtmosH1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAtmosH1
         {
@@ -679,7 +722,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH1Col
+        /// BoolProperty: bOverride_EnableAtmosH1Col<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH1Col
         {
@@ -688,7 +732,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosH1_Colour
+        /// StructProperty: AtmosH1_Colour<br/>
+        /// Default: (B=113,G=170,R=227,A=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor AtmosH1_Colour
         {
@@ -697,7 +742,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH1Den
+        /// BoolProperty: bOverride_EnableAtmosH1Den<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH1Den
         {
@@ -715,7 +761,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH1Size
+        /// BoolProperty: bOverride_EnableAtmosH1Size<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH1Size
         {
@@ -724,7 +771,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosH1_GradientSize
+        /// FloatProperty: AtmosH1_GradientSize<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float AtmosH1_GradientSize
         {
@@ -733,7 +781,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH1Pos
+        /// BoolProperty: bOverride_EnableAtmosH1Pos<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH1Pos
         {
@@ -742,7 +791,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosH1_GradientPosition
+        /// FloatProperty: AtmosH1_GradientPosition<br/>
+        /// Default: 1000
         /// </summary>
         public unsafe float AtmosH1_GradientPosition
         {
@@ -751,7 +801,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH2
+        /// BoolProperty: bOverride_EnableAtmosH2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH2
         {
@@ -760,7 +811,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAtmosH2
+        /// BoolProperty: bAtmosH2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAtmosH2
         {
@@ -769,7 +821,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH2Col
+        /// BoolProperty: bOverride_EnableAtmosH2Col<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH2Col
         {
@@ -778,7 +831,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosH2_Colour
+        /// StructProperty: AtmosH2_Colour<br/>
+        /// Default: (B=113,G=170,R=227,A=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor AtmosH2_Colour
         {
@@ -787,7 +841,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH2Den
+        /// BoolProperty: bOverride_EnableAtmosH2Den<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH2Den
         {
@@ -805,7 +860,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH2Size
+        /// BoolProperty: bOverride_EnableAtmosH2Size<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH2Size
         {
@@ -814,7 +870,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosH2_GradientSize
+        /// FloatProperty: AtmosH2_GradientSize<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float AtmosH2_GradientSize
         {
@@ -823,7 +880,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosH2Pos
+        /// BoolProperty: bOverride_EnableAtmosH2Pos<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosH2Pos
         {
@@ -832,7 +890,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosH2_GradientPosition
+        /// FloatProperty: AtmosH2_GradientPosition<br/>
+        /// Default: 1000
         /// </summary>
         public unsafe float AtmosH2_GradientPosition
         {
@@ -841,7 +900,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Colour
+        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Colour<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosGlobal_Gradient_Colour
         {
@@ -850,7 +910,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosGlobal_Gradient_Colour
+        /// StructProperty: AtmosGlobal_Gradient_Colour<br/>
+        /// Default: (B=255,G=255,R=255,A=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor AtmosGlobal_Gradient_Colour
         {
@@ -859,7 +920,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Direction
+        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Direction<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosGlobal_Gradient_Direction
         {
@@ -868,7 +930,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosGlobal_Gradient_Direction
+        /// StructProperty: AtmosGlobal_Gradient_Direction<br/>
+        /// Default: (X=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 AtmosGlobal_Gradient_Direction
         {
@@ -877,7 +940,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Density
+        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Density<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosGlobal_Gradient_Density
         {
@@ -895,7 +959,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Cosine
+        /// BoolProperty: bOverride_EnableAtmosGlobal_Gradient_Cosine<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosGlobal_Gradient_Cosine
         {
@@ -904,7 +969,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosGlobal_Gradient_Cosine
+        /// FloatProperty: AtmosGlobal_Gradient_Cosine<br/>
+        /// Default: 8
         /// </summary>
         public unsafe float AtmosGlobal_Gradient_Cosine
         {
@@ -913,7 +979,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHazeWeight
+        /// BoolProperty: bOverride_EnableAtmosHazeWeight<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHazeWeight
         {
@@ -922,7 +989,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHazeNear
+        /// BoolProperty: bOverride_EnableAtmosHazeNear<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHazeNear
         {
@@ -931,7 +999,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHazeFar
+        /// BoolProperty: bOverride_EnableAtmosHazeFar<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHazeFar
         {
@@ -949,7 +1018,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosHazeNear
+        /// FloatProperty: AtmosHazeNear<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float AtmosHazeNear
         {
@@ -958,7 +1028,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AtmosHazeFar
+        /// FloatProperty: AtmosHazeFar<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float AtmosHazeFar
         {
@@ -967,7 +1038,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosAmbientD1
+        /// BoolProperty: bOverride_EnableAtmosAmbientD1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosAmbientD1
         {
@@ -976,7 +1048,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosAmbientD2
+        /// BoolProperty: bOverride_EnableAtmosAmbientD2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosAmbientD2
         {
@@ -985,7 +1058,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosAmbientH1
+        /// BoolProperty: bOverride_EnableAtmosAmbientH1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosAmbientH1
         {
@@ -994,7 +1068,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosAmbientH2
+        /// BoolProperty: bOverride_EnableAtmosAmbientH2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosAmbientH2
         {
@@ -1003,7 +1078,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosAmbientD1
+        /// StructProperty: AtmosAmbientD1<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor AtmosAmbientD1
         {
@@ -1012,7 +1088,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosAmbientD2
+        /// StructProperty: AtmosAmbientD2<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor AtmosAmbientD2
         {
@@ -1021,7 +1098,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosAmbientH1
+        /// StructProperty: AtmosAmbientH1<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor AtmosAmbientH1
         {
@@ -1030,7 +1108,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosAmbientH2
+        /// StructProperty: AtmosAmbientH2<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor AtmosAmbientH2
         {
@@ -1039,7 +1118,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosNoiseD1
+        /// BoolProperty: bOverride_EnableAtmosNoiseD1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosNoiseD1
         {
@@ -1048,7 +1128,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosNoiseD2
+        /// BoolProperty: bOverride_EnableAtmosNoiseD2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosNoiseD2
         {
@@ -1057,7 +1138,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosNoiseH1
+        /// BoolProperty: bOverride_EnableAtmosNoiseH1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosNoiseH1
         {
@@ -1066,7 +1148,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosNoiseH2
+        /// BoolProperty: bOverride_EnableAtmosNoiseH2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosNoiseH2
         {
@@ -1111,7 +1194,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHeightMapModD1
+        /// BoolProperty: bOverride_EnableAtmosHeightMapModD1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHeightMapModD1
         {
@@ -1120,7 +1204,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHeightMapModD2
+        /// BoolProperty: bOverride_EnableAtmosHeightMapModD2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHeightMapModD2
         {
@@ -1129,7 +1214,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHeightMapModH1
+        /// BoolProperty: bOverride_EnableAtmosHeightMapModH1<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHeightMapModH1
         {
@@ -1138,7 +1224,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_EnableAtmosHeightMapModH2
+        /// BoolProperty: bOverride_EnableAtmosHeightMapModH2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_EnableAtmosHeightMapModH2
         {
@@ -1147,7 +1234,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosHeightMapModD1
+        /// StructProperty: AtmosHeightMapModD1<br/>
+        /// Default: (Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 AtmosHeightMapModD1
         {
@@ -1156,7 +1244,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosHeightMapModD2
+        /// StructProperty: AtmosHeightMapModD2<br/>
+        /// Default: (Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 AtmosHeightMapModD2
         {
@@ -1165,7 +1254,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosHeightMapModH1
+        /// StructProperty: AtmosHeightMapModH1<br/>
+        /// Default: (Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 AtmosHeightMapModH1
         {
@@ -1174,7 +1264,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AtmosHeightMapModH2
+        /// StructProperty: AtmosHeightMapModH2<br/>
+        /// Default: (Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 AtmosHeightMapModH2
         {
@@ -1183,7 +1274,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_ExposureAutoBracketing
+        /// BoolProperty: bOverride_ExposureAutoBracketing<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_ExposureAutoBracketing
         {
@@ -1192,7 +1284,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ExposureAutoBracketing
+        /// FloatProperty: ExposureAutoBracketing<br/>
+        /// Default: 4
         /// </summary>
         public unsafe float ExposureAutoBracketing
         {
@@ -1201,7 +1294,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bOverride_ExposureBaseOffset
+        /// BoolProperty: bOverride_ExposureBaseOffset<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bOverride_ExposureBaseOffset
         {
@@ -1210,7 +1304,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ExposureBaseOffset
+        /// FloatProperty: ExposureBaseOffset<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ExposureBaseOffset
         {
@@ -1219,7 +1314,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: BloomOverload
+        /// FloatProperty: BloomOverload<br/>
+        /// Default: 0.05
         /// </summary>
         public unsafe float BloomOverload
         {
@@ -1228,7 +1324,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: BloomLowerCut
+        /// FloatProperty: BloomLowerCut<br/>
+        /// Default: 0.01
         /// </summary>
         public unsafe float BloomLowerCut
         {
@@ -1237,7 +1334,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DOF_ApertureStop
+        /// FloatProperty: DOF_ApertureStop<br/>
+        /// Default: 22
         /// </summary>
         public unsafe float DOF_ApertureStop
         {
@@ -1246,7 +1344,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DOF_FocusDistance
+        /// FloatProperty: DOF_FocusDistance<br/>
+        /// Default: 220
         /// </summary>
         public unsafe float DOF_FocusDistance
         {
@@ -1255,7 +1354,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DOF_InterpolationDuration
+        /// FloatProperty: DOF_InterpolationDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DOF_InterpolationDuration
         {
@@ -1264,7 +1364,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MotionBlur_MaxVelocity
+        /// FloatProperty: MotionBlur_MaxVelocity<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MotionBlur_MaxVelocity
         {
@@ -1273,7 +1374,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MotionBlur_Amount
+        /// FloatProperty: MotionBlur_Amount<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float MotionBlur_Amount
         {
@@ -1282,7 +1384,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: MotionBlur_FullMotionBlur
+        /// BoolProperty: MotionBlur_FullMotionBlur<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool MotionBlur_FullMotionBlur
         {
@@ -1291,7 +1394,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MotionBlur_CameraRotationThreshold
+        /// FloatProperty: MotionBlur_CameraRotationThreshold<br/>
+        /// Default: 45
         /// </summary>
         public unsafe float MotionBlur_CameraRotationThreshold
         {
@@ -1300,7 +1404,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MotionBlur_CameraTranslationThreshold
+        /// FloatProperty: MotionBlur_CameraTranslationThreshold<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float MotionBlur_CameraTranslationThreshold
         {
@@ -1309,7 +1414,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MotionBlur_InterpolationDuration
+        /// FloatProperty: MotionBlur_InterpolationDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MotionBlur_InterpolationDuration
         {
@@ -1327,7 +1433,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Scene_Colorize
+        /// StructProperty: Scene_Colorize<br/>
+        /// Default: (X=1,Y=1,Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 Scene_Colorize
         {
@@ -1345,7 +1452,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Scene_HighLights
+        /// StructProperty: Scene_HighLights<br/>
+        /// Default: (R=1,G=1,B=1,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor Scene_HighLights
         {
@@ -1354,7 +1462,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Scene_MidTones
+        /// StructProperty: Scene_MidTones<br/>
+        /// Default: (R=0.5,G=0.5,B=0.5,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor Scene_MidTones
         {
@@ -1363,7 +1472,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Scene_Shadows
+        /// StructProperty: Scene_Shadows<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor Scene_Shadows
         {
@@ -1372,7 +1482,8 @@ public partial class PostProcessVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Scene_InterpolationDuration
+        /// FloatProperty: Scene_InterpolationDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Scene_InterpolationDuration
         {

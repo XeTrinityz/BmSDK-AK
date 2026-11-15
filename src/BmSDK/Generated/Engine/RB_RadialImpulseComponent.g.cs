@@ -110,7 +110,8 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseStrength
+    /// FloatProperty: ImpulseStrength<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float ImpulseStrength
     {
@@ -119,7 +120,8 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseRadius
+    /// FloatProperty: ImpulseRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ImpulseRadius
     {
@@ -173,13 +175,15 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// StructProperty: AffectedChannels
+    /// StructProperty: AffectedChannels<br/>
+    /// Default: (Default=true,Nothing=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Gargoyles=true,PawnRagdoll=true,Rope=true,Cloth=true,BlockingVolume=true,DeadPawn=true,Clothing=tru...
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer AffectedChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 556);
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DamageAmount
     {

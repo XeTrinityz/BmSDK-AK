@@ -115,7 +115,8 @@ public partial class ParticleModuleLocationBoneSocket : BmSDK.Engine.ParticleMod
     }
 
     /// <summary>
-    /// ByteProperty: SourceType
+    /// ByteProperty: SourceType<br/>
+    /// Default: BONESOCKETSOURCE_Sockets
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModuleLocationBoneSocket.ELocationBoneSocketSource SourceType
     {
@@ -157,7 +158,8 @@ public partial class ParticleModuleLocationBoneSocket : BmSDK.Engine.ParticleMod
     }
 
     /// <summary>
-    /// BoolProperty: bOrientMeshEmitters
+    /// BoolProperty: bOrientMeshEmitters<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOrientMeshEmitters
     {
@@ -175,7 +177,8 @@ public partial class ParticleModuleLocationBoneSocket : BmSDK.Engine.ParticleMod
     }
 
     /// <summary>
-    /// NameProperty: SkelMeshActorParamName
+    /// NameProperty: SkelMeshActorParamName<br/>
+    /// Default: BoneSocketActor
     /// </summary>
     public unsafe BmSDK.FName SkelMeshActorParamName
     {

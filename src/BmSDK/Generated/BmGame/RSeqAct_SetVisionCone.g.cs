@@ -108,7 +108,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalCone
+    /// FloatProperty: HorizontalCone<br/>
+    /// Default: 130
     /// </summary>
     public unsafe float HorizontalCone
     {
@@ -117,7 +118,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: VerticalCone
+    /// FloatProperty: VerticalCone<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float VerticalCone
     {
@@ -126,7 +128,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PeripheralRange
+    /// FloatProperty: PeripheralRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float PeripheralRange
     {
@@ -135,7 +138,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ExtendedSightRange
+    /// FloatProperty: ExtendedSightRange<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float ExtendedSightRange
     {
@@ -144,7 +148,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: FocusedVisionRadius
+    /// FloatProperty: FocusedVisionRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float FocusedVisionRadius
     {
@@ -153,7 +158,8 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: FocusedRange
+    /// FloatProperty: FocusedRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float FocusedRange
     {

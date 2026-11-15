@@ -1052,7 +1052,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// ComponentProperty: CockpitLight
+    /// ComponentProperty: CockpitLight<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.CockpitLight1
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent CockpitLight
     {
@@ -1061,7 +1062,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// ComponentProperty: ElectFistFx
+    /// ComponentProperty: ElectFistFx<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewElectFistFx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ElectFistFx
     {
@@ -1070,7 +1072,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// ComponentProperty: ChargeFxComp
+    /// ComponentProperty: ChargeFxComp<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewChargeFxComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ChargeFxComp
     {
@@ -1084,7 +1087,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     public InlineArray<BmSDK.Engine.ParticleSystemComponent> HeadLightFxList => new(16, Ptr + 6808, 8, this);
 
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx01
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_0
     {
@@ -1092,7 +1096,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6808); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx02
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_1
     {
@@ -1100,7 +1105,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6816); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx03
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_2
     {
@@ -1108,7 +1114,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6824); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx04
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_3
     {
@@ -1116,7 +1123,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6832); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx05
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_4
     {
@@ -1124,7 +1132,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6840); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx06
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_5
     {
@@ -1132,7 +1141,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6848); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx07
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_6
     {
@@ -1140,7 +1150,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6856); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx08
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_7
     {
@@ -1148,7 +1159,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6864); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx09
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_8
     {
@@ -1156,7 +1168,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6872); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx10
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_9
     {
@@ -1164,7 +1177,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6880); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx11
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_10
     {
@@ -1172,7 +1186,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6888); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx12
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_11
     {
@@ -1180,7 +1195,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6896); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx13
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_12
     {
@@ -1188,7 +1204,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6904); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx14
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_13
     {
@@ -1196,7 +1213,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6912); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx15
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_14
     {
@@ -1204,7 +1222,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6920); }
     }
     /// <summary>
-    /// ComponentProperty: HeadLightFxList
+    /// ComponentProperty: HeadLightFxList<br/>
+    /// Default: BmScript.Default__RPawnVillainRiddlerMechSuit.NewHeadLightFx16
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadLightFxList_15
     {
@@ -1213,7 +1232,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// IntProperty: PipesMaterialIdx
+    /// IntProperty: PipesMaterialIdx<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int PipesMaterialIdx
     {
@@ -1228,7 +1248,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 6940);
 
     /// <summary>
-    /// FloatProperty: ForceChargeInterval
+    /// FloatProperty: ForceChargeInterval<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float ForceChargeInterval
     {
@@ -1237,7 +1258,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// FloatProperty: FarAttackInterval
+    /// FloatProperty: FarAttackInterval<br/>
+    /// Default: 14
     /// </summary>
     public unsafe float FarAttackInterval
     {
@@ -1270,7 +1292,8 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
     }
 
     /// <summary>
-    /// IntProperty: HitPoints
+    /// IntProperty: HitPoints<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int HitPoints
     {

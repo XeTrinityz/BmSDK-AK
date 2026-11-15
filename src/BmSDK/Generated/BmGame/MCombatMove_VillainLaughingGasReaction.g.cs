@@ -107,7 +107,8 @@ public partial class MCombatMove_VillainLaughingGasReaction : BmSDK.BmGame.RComb
     }
 
     /// <summary>
-    /// ArrayProperty: IdleAnimNames
+    /// ArrayProperty: IdleAnimNames<br/>
+    /// Default: (LaughingGas_01_Idle,LaughingGas_02_Idle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IdleAnimNames
     {
@@ -116,7 +117,8 @@ public partial class MCombatMove_VillainLaughingGasReaction : BmSDK.BmGame.RComb
     }
 
     /// <summary>
-    /// ArrayProperty: OutAnimNames
+    /// ArrayProperty: OutAnimNames<br/>
+    /// Default: (LaughingGas_01_Out,LaughingGas_02_Out)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OutAnimNames
     {

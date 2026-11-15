@@ -191,7 +191,8 @@ public partial class FogVolumeDensityInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: AutomaticMeshComponent
+    /// ComponentProperty: AutomaticMeshComponent<br/>
+    /// Default: Engine.Default__FogVolumeDensityInfo.AutomaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent AutomaticMeshComponent
     {

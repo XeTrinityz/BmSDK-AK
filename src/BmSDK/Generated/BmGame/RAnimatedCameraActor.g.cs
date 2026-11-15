@@ -130,7 +130,8 @@ public partial class RAnimatedCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: LastKnownGood
+    /// StructProperty: LastKnownGood<br/>
+    /// Default: (FOV=90)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FTPOV LastKnownGood
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FTPOV>(Ptr + 1252);

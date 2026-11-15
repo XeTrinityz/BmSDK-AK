@@ -317,7 +317,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: PhysMaterialMaskUVChannel
+    /// IntProperty: PhysMaterialMaskUVChannel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PhysMaterialMaskUVChannel
     {
@@ -371,7 +372,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: DecalPriority
+    /// ByteProperty: DecalPriority<br/>
+    /// Default: DP_Default
     /// </summary>
     public unsafe BmSDK.GameObject.EDecalPriority DecalPriority
     {

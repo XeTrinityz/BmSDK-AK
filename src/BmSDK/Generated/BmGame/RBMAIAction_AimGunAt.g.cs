@@ -205,7 +205,8 @@ public partial class RBMAIAction_AimGunAt : BmSDK.BmGame.RBMAIAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: randomAimWidth
+    /// FloatProperty: randomAimWidth<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float randomAimWidth
     {

@@ -1004,7 +1004,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateMayhemMeterBounds
+    /// BoolProperty: bUpdateMayhemMeterBounds<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateMayhemMeterBounds
     {
@@ -1040,7 +1041,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
     }
 
     /// <summary>
-    /// FloatProperty: MayhemMeterMax
+    /// FloatProperty: MayhemMeterMax<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MayhemMeterMax
     {
@@ -1058,7 +1060,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
     }
 
     /// <summary>
-    /// FloatProperty: MayhemMeterDuration
+    /// FloatProperty: MayhemMeterDuration<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MayhemMeterDuration
     {

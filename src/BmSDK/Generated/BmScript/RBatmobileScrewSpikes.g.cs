@@ -173,7 +173,8 @@ public partial class RBatmobileScrewSpikes : BmSDK.BmGame.RBatmobileScrewSpikesB
     }
 
     /// <summary>
-    /// IntProperty: PlayerDamageAmount
+    /// IntProperty: PlayerDamageAmount<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int PlayerDamageAmount
     {
@@ -182,7 +183,8 @@ public partial class RBatmobileScrewSpikes : BmSDK.BmGame.RBatmobileScrewSpikesB
     }
 
     /// <summary>
-    /// NameProperty: SpikeAnimName
+    /// NameProperty: SpikeAnimName<br/>
+    /// Default: RiddlerCave_Absail_Spikes
     /// </summary>
     public unsafe BmSDK.FName SpikeAnimName
     {

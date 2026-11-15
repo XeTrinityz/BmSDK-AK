@@ -139,7 +139,8 @@ public partial class RSeqAct_ShowObjectiveStyleMessage : BmSDK.Engine.SequenceAc
     }
 
     /// <summary>
-    /// FloatProperty: ShowTimeSeconds
+    /// FloatProperty: ShowTimeSeconds<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ShowTimeSeconds
     {

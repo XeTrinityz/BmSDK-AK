@@ -2170,7 +2170,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// IntProperty: MaxLightEnvironmentPooledReuses
+    /// IntProperty: MaxLightEnvironmentPooledReuses<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxLightEnvironmentPooledReuses
     {
@@ -2224,7 +2225,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bAutoActivate
+    /// BoolProperty: bAutoActivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoActivate
     {
@@ -2323,7 +2325,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bIsAvailableForPoolReuse
+    /// BoolProperty: bIsAvailableForPoolReuse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsAvailableForPoolReuse
     {
@@ -2413,7 +2416,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bIsViewRelevanceDirty
+    /// BoolProperty: bIsViewRelevanceDirty<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsViewRelevanceDirty
     {
@@ -2476,7 +2480,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bIsThreadSafe
+    /// BoolProperty: bIsThreadSafe<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsThreadSafe
     {
@@ -2566,7 +2571,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: SecondsBeforeInactive
+    /// FloatProperty: SecondsBeforeInactive<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SecondsBeforeInactive
     {
@@ -2584,7 +2590,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBeforeForceUpdateTransform
+    /// FloatProperty: MaxTimeBeforeForceUpdateTransform<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MaxTimeBeforeForceUpdateTransform
     {
@@ -2665,7 +2672,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// StructProperty: IncomingLight
+    /// StructProperty: IncomingLight<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor IncomingLight
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 796);
@@ -2800,7 +2808,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: CustomTimeDilation
+    /// FloatProperty: CustomTimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CustomTimeDilation
     {

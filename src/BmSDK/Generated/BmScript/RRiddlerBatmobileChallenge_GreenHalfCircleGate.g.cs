@@ -125,7 +125,8 @@ public partial class RRiddlerBatmobileChallenge_GreenHalfCircleGate : BmSDK.BmSc
     }
 
     /// <summary>
-    /// ObjectProperty: SuccessEvent
+    /// ObjectProperty: SuccessEvent<br/>
+    /// Default: Ww_DLC00_UI.Play_DLC_Races_Positive
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SuccessEvent
     {

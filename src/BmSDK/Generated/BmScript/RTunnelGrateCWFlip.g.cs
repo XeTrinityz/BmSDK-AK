@@ -123,7 +123,8 @@ public partial class RTunnelGrateCWFlip : BmSDK.BmGame.RTunnelGrateCWFlipBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: StaticOuterMesh
+    /// ComponentProperty: StaticOuterMesh<br/>
+    /// Default: BmScript.Default__RTunnelGrateCWFlip.GrateMesh4
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticOuterMesh
     {

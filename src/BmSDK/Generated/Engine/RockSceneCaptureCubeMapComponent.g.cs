@@ -88,7 +88,8 @@ public partial class RockSceneCaptureCubeMapComponent : BmSDK.Engine.SceneCaptur
     }
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {

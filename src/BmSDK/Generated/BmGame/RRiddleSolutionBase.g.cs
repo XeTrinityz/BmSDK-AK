@@ -109,7 +109,8 @@ public partial class RRiddleSolutionBase : BmSDK.BmGame.RRiddleBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ScreenCoveragePercentageToIgnore
+    /// FloatProperty: ScreenCoveragePercentageToIgnore<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScreenCoveragePercentageToIgnore
     {
@@ -118,7 +119,8 @@ public partial class RRiddleSolutionBase : BmSDK.BmGame.RRiddleBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: ScreenCoveragePercentageRequired
+    /// IntProperty: ScreenCoveragePercentageRequired<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ScreenCoveragePercentageRequired
     {
@@ -127,7 +129,8 @@ public partial class RRiddleSolutionBase : BmSDK.BmGame.RRiddleBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: PercentageAllowedOffScreen
+    /// IntProperty: PercentageAllowedOffScreen<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int PercentageAllowedOffScreen
     {
@@ -145,7 +148,8 @@ public partial class RRiddleSolutionBase : BmSDK.BmGame.RRiddleBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RRiddleSolutionBase.CollisionBox
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh
     {

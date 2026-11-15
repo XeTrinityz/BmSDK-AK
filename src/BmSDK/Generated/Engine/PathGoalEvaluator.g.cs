@@ -125,7 +125,8 @@ public partial class PathGoalEvaluator : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPathVisits
+    /// IntProperty: MaxPathVisits<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe int MaxPathVisits
     {
@@ -134,7 +135,8 @@ public partial class PathGoalEvaluator : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CacheIdx
+    /// IntProperty: CacheIdx<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CacheIdx
     {

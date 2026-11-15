@@ -97,7 +97,8 @@ public partial class RSpecialMoveConfig_Shimmy : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// FloatProperty: MaxAnimOverrideTime
+    /// FloatProperty: MaxAnimOverrideTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MaxAnimOverrideTime
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveConfig_Shimmy : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// FloatProperty: FasterMoveAnimTimeOffset
+    /// FloatProperty: FasterMoveAnimTimeOffset<br/>
+    /// Default: -0.2
     /// </summary>
     public unsafe float FasterMoveAnimTimeOffset
     {
@@ -115,7 +117,8 @@ public partial class RSpecialMoveConfig_Shimmy : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// ByteProperty: ShimmyDir
+    /// ByteProperty: ShimmyDir<br/>
+    /// Default: SD_ShimmyLeft
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig_Shimmy.EShimmyDir ShimmyDir
     {
@@ -124,7 +127,8 @@ public partial class RSpecialMoveConfig_Shimmy : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// BoolProperty: bValidShimmyOverride
+    /// BoolProperty: bValidShimmyOverride<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidShimmyOverride
     {
@@ -133,7 +137,8 @@ public partial class RSpecialMoveConfig_Shimmy : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// BoolProperty: bNoSettleAnim
+    /// BoolProperty: bNoSettleAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoSettleAnim
     {

@@ -88,7 +88,8 @@ public partial class InterpTrackInstDirector : BmSDK.Engine.InterpTrackInst, BmS
     }
 
     /// <summary>
-    /// StructProperty: OldRenderingOverrides
+    /// StructProperty: OldRenderingOverrides<br/>
+    /// Default: (bAllowAmbientOcclusion=true,bAllowDominantWholeSceneDynamicShadows=true,bAllowMotionBlurSkinning=true,bAllowTemporalAA=true,bAllowLightShafts=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides OldRenderingOverrides
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides>(Ptr + 92);

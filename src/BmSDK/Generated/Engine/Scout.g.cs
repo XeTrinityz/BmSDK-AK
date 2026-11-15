@@ -93,7 +93,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PathSizes
+    /// ArrayProperty: PathSizes<br/>
+    /// Default: ((Desc=Human,Radius=48,Height=80),(Desc=Common,Radius=72,Height=100),(Desc=Max,Radius=120,Height=120),(Desc=Vehicle,Radius=260,Height=120))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.Scout.FPathSizeInfo> PathSizes
     {
@@ -102,7 +103,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TestJumpZ
+    /// FloatProperty: TestJumpZ<br/>
+    /// Default: 420
     /// </summary>
     public unsafe float TestJumpZ
     {
@@ -111,7 +113,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TestGroundSpeed
+    /// FloatProperty: TestGroundSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float TestGroundSpeed
     {
@@ -120,7 +123,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TestMaxFallSpeed
+    /// FloatProperty: TestMaxFallSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float TestMaxFallSpeed
     {
@@ -129,7 +133,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TestFallSpeed
+    /// FloatProperty: TestFallSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float TestFallSpeed
     {
@@ -147,7 +152,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinNumPlayerStarts
+    /// IntProperty: MinNumPlayerStarts<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MinNumPlayerStarts
     {
@@ -156,7 +162,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DefaultReachSpecClass
+    /// ClassProperty: DefaultReachSpecClass<br/>
+    /// Default: Engine.ReachSpec
     /// </summary>
     public unsafe BmSDK.Class DefaultReachSpecClass
     {
@@ -165,7 +172,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: EdgePathColors
+    /// ArrayProperty: EdgePathColors<br/>
+    /// Default: ((B=255),(G=255),(R=255),(B=255,G=255))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.GameObject.FColor> EdgePathColors
     {
@@ -174,7 +182,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_StepSize
+    /// FloatProperty: NavMeshGen_StepSize<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float NavMeshGen_StepSize
     {
@@ -183,7 +192,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_EntityHalfHeight
+    /// FloatProperty: NavMeshGen_EntityHalfHeight<br/>
+    /// Default: 72
     /// </summary>
     public unsafe float NavMeshGen_EntityHalfHeight
     {
@@ -192,7 +202,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_StartingHeightOffset
+    /// FloatProperty: NavMeshGen_StartingHeightOffset<br/>
+    /// Default: 65
     /// </summary>
     public unsafe float NavMeshGen_StartingHeightOffset
     {
@@ -201,7 +212,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MaxDropHeight
+    /// FloatProperty: NavMeshGen_MaxDropHeight<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float NavMeshGen_MaxDropHeight
     {
@@ -210,7 +222,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MaxStepHeight
+    /// FloatProperty: NavMeshGen_MaxStepHeight<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float NavMeshGen_MaxStepHeight
     {
@@ -219,7 +232,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_VertZDeltaSnapThresh
+    /// FloatProperty: NavMeshGen_VertZDeltaSnapThresh<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float NavMeshGen_VertZDeltaSnapThresh
     {
@@ -228,7 +242,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MinPolyArea
+    /// FloatProperty: NavMeshGen_MinPolyArea<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float NavMeshGen_MinPolyArea
     {
@@ -237,7 +252,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_BorderBackfill_CheckDist
+    /// FloatProperty: NavMeshGen_BorderBackfill_CheckDist<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float NavMeshGen_BorderBackfill_CheckDist
     {
@@ -246,7 +262,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MinMergeDotAreaThreshold
+    /// FloatProperty: NavMeshGen_MinMergeDotAreaThreshold<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float NavMeshGen_MinMergeDotAreaThreshold
     {
@@ -264,7 +281,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MinMergeDotLargeArea
+    /// FloatProperty: NavMeshGen_MinMergeDotLargeArea<br/>
+    /// Default: 0.95
     /// </summary>
     public unsafe float NavMeshGen_MinMergeDotLargeArea
     {
@@ -273,7 +291,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MaxPolyHeight
+    /// FloatProperty: NavMeshGen_MaxPolyHeight<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float NavMeshGen_MaxPolyHeight
     {
@@ -282,7 +301,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MaxPolyBuildHeight
+    /// FloatProperty: NavMeshGen_MaxPolyBuildHeight<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float NavMeshGen_MaxPolyBuildHeight
     {
@@ -291,7 +311,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_HeightMergeThreshold
+    /// FloatProperty: NavMeshGen_HeightMergeThreshold<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float NavMeshGen_HeightMergeThreshold
     {
@@ -300,7 +321,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_EdgeMaxDelta
+    /// FloatProperty: NavMeshGen_EdgeMaxDelta<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float NavMeshGen_EdgeMaxDelta
     {
@@ -309,7 +331,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MaxGroundCheckSize
+    /// FloatProperty: NavMeshGen_MaxGroundCheckSize<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float NavMeshGen_MaxGroundCheckSize
     {
@@ -318,7 +341,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshGen_MinEdgeLength
+    /// FloatProperty: NavMeshGen_MinEdgeLength<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float NavMeshGen_MinEdgeLength
     {
@@ -327,7 +351,8 @@ public partial class Scout : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: NavMeshGen_ExpansionDoObstacleMeshSimplification
+    /// BoolProperty: NavMeshGen_ExpansionDoObstacleMeshSimplification<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool NavMeshGen_ExpansionDoObstacleMeshSimplification
     {

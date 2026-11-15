@@ -3424,7 +3424,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: DepthBiasMinDistanceFromCameraPlaneOverride
+        /// FloatProperty: DepthBiasMinDistanceFromCameraPlaneOverride<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float DepthBiasMinDistanceFromCameraPlaneOverride
         {
@@ -3433,7 +3434,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: MinDepthBiasMultiplier
+        /// FloatProperty: MinDepthBiasMultiplier<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float MinDepthBiasMultiplier
         {
@@ -3609,7 +3611,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         }
 
         /// <summary>
-        /// StructProperty: RelativeScale
+        /// StructProperty: RelativeScale<br/>
+        /// Default: (X=1,Y=1,Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 RelativeScale
         {
@@ -3879,7 +3882,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxNearlyStillSpeed
+    /// FloatProperty: MaxNearlyStillSpeed<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MaxNearlyStillSpeed
     {
@@ -3927,7 +3931,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GlobalAnimRateScale
+    /// FloatProperty: GlobalAnimRateScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GlobalAnimRateScale
     {
@@ -3936,7 +3941,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: StreamingDistanceMultiplier
+    /// FloatProperty: StreamingDistanceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StreamingDistanceMultiplier
     {
@@ -3954,7 +3960,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: WireframeColor
+    /// StructProperty: WireframeColor<br/>
+    /// Default: (B=28,G=221,R=221,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WireframeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1008);
@@ -4173,7 +4180,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: AnimationLODFrameRate
+    /// IntProperty: AnimationLODFrameRate<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int AnimationLODFrameRate
     {
@@ -4299,7 +4307,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: bTransformFromAnimParent
+    /// IntProperty: bTransformFromAnimParent<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int bTransformFromAnimParent
     {
@@ -4416,7 +4425,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateSkelWhenNotRendered
+    /// BoolProperty: bUpdateSkelWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateSkelWhenNotRendered
     {
@@ -4434,7 +4444,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bTickAnimNodesWhenNotRendered
+    /// BoolProperty: bTickAnimNodesWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTickAnimNodesWhenNotRendered
     {
@@ -4569,7 +4580,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateKinematicBonesFromAnimation
+    /// BoolProperty: bUpdateKinematicBonesFromAnimation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateKinematicBonesFromAnimation
     {
@@ -4587,7 +4599,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bSkelCompFixed
+    /// BoolProperty: bSkelCompFixed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkelCompFixed
     {
@@ -4641,7 +4654,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bPerBoneMotionBlur
+    /// BoolProperty: bPerBoneMotionBlur<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPerBoneMotionBlur
     {
@@ -4650,7 +4664,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bSyncActorLocationToRootRigidBody
+    /// BoolProperty: bSyncActorLocationToRootRigidBody<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSyncActorLocationToRootRigidBody
     {
@@ -4749,7 +4764,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bPhysicsAssetOverridesBoundsType
+    /// BoolProperty: bPhysicsAssetOverridesBoundsType<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPhysicsAssetOverridesBoundsType
     {
@@ -4767,7 +4783,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: LineCheckBoundsScale
+    /// StructProperty: LineCheckBoundsScale<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LineCheckBoundsScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1464);
@@ -4872,7 +4889,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DampingRampupMinTime
+    /// FloatProperty: DampingRampupMinTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DampingRampupMinTime
     {
@@ -4881,7 +4899,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DampingRampupMaxTime
+    /// FloatProperty: DampingRampupMaxTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DampingRampupMaxTime
     {
@@ -4890,7 +4909,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: PermanentFixRampupTime
+    /// FloatProperty: PermanentFixRampupTime<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float PermanentFixRampupTime
     {
@@ -4899,7 +4919,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AggressiveLODMultiplier
+    /// FloatProperty: AggressiveLODMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AggressiveLODMultiplier
     {
@@ -4935,7 +4956,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bAutoFreezeClothWhenNotRendered
+    /// BoolProperty: bAutoFreezeClothWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoFreezeClothWhenNotRendered
     {
@@ -5025,7 +5047,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bCacheAnimSequenceNodes
+    /// BoolProperty: bCacheAnimSequenceNodes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCacheAnimSequenceNodes
     {
@@ -5070,7 +5093,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bUseParentAnimComponentLODLevel
+    /// BoolProperty: bUseParentAnimComponentLODLevel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseParentAnimComponentLODLevel
     {
@@ -5160,7 +5184,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1596);
 
     /// <summary>
-    /// FloatProperty: ClothBlendWeight
+    /// FloatProperty: ClothBlendWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothBlendWeight
     {
@@ -5178,7 +5203,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: ClothBlendMinDistanceFactor
+    /// FloatProperty: ClothBlendMinDistanceFactor<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ClothBlendMinDistanceFactor
     {
@@ -5337,7 +5363,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: ClothRBChannel
+    /// ByteProperty: ClothRBChannel<br/>
+    /// Default: RBCC_Cloth
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel ClothRBChannel
     {
@@ -5346,7 +5373,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: ClothRBCollideWithChannels
+    /// StructProperty: ClothRBCollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,PawnRagdoll=true,Projectile=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer ClothRBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 1816);
@@ -5361,7 +5389,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: ClothImpulseScale
+    /// FloatProperty: ClothImpulseScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ClothImpulseScale
     {
@@ -5370,7 +5399,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: ClothAttachmentTearFactor
+    /// FloatProperty: ClothAttachmentTearFactor<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ClothAttachmentTearFactor
     {
@@ -5388,7 +5418,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceForClothReset
+    /// FloatProperty: MinDistanceForClothReset<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float MinDistanceForClothReset
     {
@@ -5403,7 +5434,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1840);
 
     /// <summary>
-    /// ByteProperty: ApexClothingRBChannel
+    /// ByteProperty: ApexClothingRBChannel<br/>
+    /// Default: RBCC_Clothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel ApexClothingRBChannel
     {
@@ -5412,13 +5444,15 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: ApexClothingRBCollideWithChannels
+    /// StructProperty: ApexClothingRBCollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true,EffectPhysics=true,BlockingVolume=true,ClothingCollision=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer ApexClothingRBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 1856);
 
     /// <summary>
-    /// ByteProperty: ApexClothingCollisionRBChannel
+    /// ByteProperty: ApexClothingCollisionRBChannel<br/>
+    /// Default: RBCC_ClothingCollision
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel ApexClothingCollisionRBChannel
     {
@@ -5427,7 +5461,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bAutoFreezeApexClothingWhenNotRendered
+    /// BoolProperty: bAutoFreezeApexClothingWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoFreezeApexClothingWhenNotRendered
     {
@@ -5535,13 +5570,15 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2000);
 
     /// <summary>
-    /// StructProperty: RootMotionAccelScale
+    /// StructProperty: RootMotionAccelScale<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RootMotionAccelScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2012);
 
     /// <summary>
-    /// ByteProperty: RootMotionMode
+    /// ByteProperty: RootMotionMode<br/>
+    /// Default: RMM_Ignore
     /// </summary>
     public unsafe BmSDK.Engine.RSkeletalMeshComponent_Export.ERootMotionMode RootMotionMode
     {
@@ -5550,7 +5587,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: PreviousRMM
+    /// ByteProperty: PreviousRMM<br/>
+    /// Default: RMM_Ignore
     /// </summary>
     public unsafe BmSDK.Engine.RSkeletalMeshComponent_Export.ERootMotionMode PreviousRMM
     {
@@ -5604,7 +5642,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: FaceFXBlendMode
+    /// ByteProperty: FaceFXBlendMode<br/>
+    /// Default: FXBM_Additive
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent.EFaceFXBlendMode FaceFXBlendMode
     {
@@ -5790,7 +5829,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FBoneAtom>(Ptr + 2352);
 
     /// <summary>
-    /// StructProperty: CurrDepthBiasData
+    /// StructProperty: CurrDepthBiasData<br/>
+    /// Default: (DepthBiasMinDistanceFromCameraPlaneOverride=-1,MinDepthBiasMultiplier=0.5)
     /// </summary>
     public unsafe ref BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData CurrDepthBiasData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData>(Ptr + 2384);
@@ -5805,7 +5845,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableTwistBoneFixers
+    /// BoolProperty: bEnableTwistBoneFixers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableTwistBoneFixers
     {
@@ -5814,7 +5855,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableKneeElbowFixers
+    /// BoolProperty: bEnableKneeElbowFixers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableKneeElbowFixers
     {
@@ -5823,7 +5865,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableNeckTwistFixer
+    /// BoolProperty: bEnableNeckTwistFixer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableNeckTwistFixer
     {
@@ -5832,7 +5875,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableCollarTwistFixer
+    /// BoolProperty: bEnableCollarTwistFixer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableCollarTwistFixer
     {
@@ -5841,7 +5885,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableBreathingFixer
+    /// BoolProperty: bEnableBreathingFixer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableBreathingFixer
     {
@@ -5850,7 +5895,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableSkeletalMeshSkelControls
+    /// BoolProperty: bEnableSkeletalMeshSkelControls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableSkeletalMeshSkelControls
     {
@@ -5859,7 +5905,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bEnableDrivenMaterialParameters
+    /// BoolProperty: bEnableDrivenMaterialParameters<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableDrivenMaterialParameters
     {
@@ -5877,7 +5924,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bAllowRagdollContainmentChecks
+    /// BoolProperty: bAllowRagdollContainmentChecks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowRagdollContainmentChecks
     {
@@ -5895,7 +5943,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: StuckBodyPartIndex
+    /// IntProperty: StuckBodyPartIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int StuckBodyPartIndex
     {
@@ -5931,7 +5980,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxRagdollLiveTime
+    /// FloatProperty: MaxRagdollLiveTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxRagdollLiveTime
     {
@@ -5940,7 +5990,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinRagdollStuckTime
+    /// FloatProperty: MinRagdollStuckTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinRagdollStuckTime
     {
@@ -5949,7 +6000,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinNearlyStillBodiesProportionForNearlyStillRagdoll
+    /// FloatProperty: MinNearlyStillBodiesProportionForNearlyStillRagdoll<br/>
+    /// Default: 0.55
     /// </summary>
     public unsafe float MinNearlyStillBodiesProportionForNearlyStillRagdoll
     {
@@ -5997,7 +6049,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: ProgressiveDrawingFraction
+    /// FloatProperty: ProgressiveDrawingFraction<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ProgressiveDrawingFraction
     {
@@ -6042,7 +6095,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: RFlapsInitialBlendWeightOverride
+    /// FloatProperty: RFlapsInitialBlendWeightOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float RFlapsInitialBlendWeightOverride
     {

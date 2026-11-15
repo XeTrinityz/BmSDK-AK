@@ -405,7 +405,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowLogDebug
+    /// BoolProperty: bShowLogDebug<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowLogDebug
     {
@@ -441,7 +442,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JokerDefine
+    /// ObjectProperty: JokerDefine<br/>
+    /// Default: MainCharacterDefines.Villain.JokerOnThugRig
     /// </summary>
     public unsafe BmSDK.BmGame.RCharacterDefine JokerDefine
     {
@@ -495,7 +497,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RiotHistoryForRepeatCheckMax
+    /// IntProperty: RiotHistoryForRepeatCheckMax<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int RiotHistoryForRepeatCheckMax
     {

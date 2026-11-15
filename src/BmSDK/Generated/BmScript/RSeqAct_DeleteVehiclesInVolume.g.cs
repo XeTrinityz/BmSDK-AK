@@ -120,7 +120,8 @@ public partial class RSeqAct_DeleteVehiclesInVolume : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// BoolProperty: DeleteDeadVehicles
+    /// BoolProperty: DeleteDeadVehicles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DeleteDeadVehicles
     {
@@ -129,7 +130,8 @@ public partial class RSeqAct_DeleteVehiclesInVolume : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// BoolProperty: DeleteAbandonedVehicles
+    /// BoolProperty: DeleteAbandonedVehicles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DeleteAbandonedVehicles
     {

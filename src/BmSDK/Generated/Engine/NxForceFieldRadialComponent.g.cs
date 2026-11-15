@@ -79,7 +79,8 @@ public partial class NxForceFieldRadialComponent : BmSDK.Engine.NxForceFieldComp
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -88,7 +89,8 @@ public partial class NxForceFieldRadialComponent : BmSDK.Engine.NxForceFieldComp
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -97,7 +99,8 @@ public partial class NxForceFieldRadialComponent : BmSDK.Engine.NxForceFieldComp
     }
 
     /// <summary>
-    /// FloatProperty: SelfRotationStrength
+    /// FloatProperty: SelfRotationStrength<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float SelfRotationStrength
     {

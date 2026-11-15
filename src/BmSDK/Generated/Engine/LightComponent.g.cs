@@ -341,12 +341,14 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     public InlineArray<BmSDK.Engine.LightComponent.FFGelLayer> GelLayer => new(2, Ptr + 124, 64, this);
 
     /// <summary>
-    /// StructProperty: GelLayer
+    /// StructProperty: GelLayer<br/>
+    /// Default: (Scale=(X=1,Y=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FFGelLayer GelLayer_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FFGelLayer>(Ptr + 124);
     /// <summary>
-    /// StructProperty: GelLayer
+    /// StructProperty: GelLayer<br/>
+    /// Default: (Scale=(X=1,Y=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FFGelLayer GelLayer_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FFGelLayer>(Ptr + 188);
@@ -361,7 +363,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Layer0Multiplier
+    /// FloatProperty: Layer0Multiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Layer0Multiplier
     {
@@ -418,7 +421,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SignalSmoothingHigh
+    /// FloatProperty: SignalSmoothingHigh<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SignalSmoothingHigh
     {
@@ -436,7 +440,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: EffectorBrightness
+    /// FloatProperty: EffectorBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EffectorBrightness
     {
@@ -451,7 +456,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 444);
 
     /// <summary>
-    /// StructProperty: OctreeId
+    /// StructProperty: OctreeId<br/>
+    /// Default: (ElementIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FOctreeElementId OctreeId
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FOctreeElementId>(Ptr + 448);
@@ -478,7 +484,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Brightness
+    /// FloatProperty: Brightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Brightness
     {
@@ -487,7 +494,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Radiosity
+    /// FloatProperty: Radiosity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Radiosity
     {
@@ -496,7 +504,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: RadiosityDiffuse
+    /// FloatProperty: RadiosityDiffuse<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RadiosityDiffuse
     {
@@ -505,7 +514,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ShadowUpdatePriority
+    /// FloatProperty: ShadowUpdatePriority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ShadowUpdatePriority
     {
@@ -514,13 +524,15 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: LightColor
+    /// StructProperty: LightColor<br/>
+    /// Default: (B=255,G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor LightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 512);
 
     /// <summary>
-    /// FloatProperty: CullAreaMultiplier
+    /// FloatProperty: CullAreaMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CullAreaMultiplier
     {
@@ -529,7 +541,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: UmbraId
+    /// IntProperty: UmbraId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UmbraId
     {
@@ -547,7 +560,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: UmbraIndex
+    /// IntProperty: UmbraIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UmbraIndex
     {
@@ -592,7 +606,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -610,7 +625,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: CastShadows
+    /// BoolProperty: CastShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CastShadows
     {
@@ -619,7 +635,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: CastStaticShadows
+    /// BoolProperty: CastStaticShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CastStaticShadows
     {
@@ -628,7 +645,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: CastDynamicShadows
+    /// BoolProperty: CastDynamicShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CastDynamicShadows
     {
@@ -637,7 +655,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bCastCompositeShadow
+    /// BoolProperty: bCastCompositeShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastCompositeShadow
     {
@@ -646,7 +665,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bAffectCompositeShadowDirection
+    /// BoolProperty: bAffectCompositeShadowDirection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectCompositeShadowDirection
     {
@@ -817,7 +837,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bPrecomputedLightingIsValid
+    /// BoolProperty: bPrecomputedLightingIsValid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPrecomputedLightingIsValid
     {
@@ -835,7 +856,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bAllowCompositingIntoDLE
+    /// BoolProperty: bAllowCompositingIntoDLE<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowCompositingIntoDLE
     {
@@ -853,7 +875,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: LightingChannels
+    /// StructProperty: LightingChannels<br/>
+    /// Default: (bInitialized=true,Static=true,Dynamic=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 548);
@@ -895,7 +918,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {
@@ -904,7 +928,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: CoreSize
+    /// FloatProperty: CoreSize<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CoreSize
     {
@@ -913,7 +938,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: OmniFadeRadiusFactor
+    /// FloatProperty: OmniFadeRadiusFactor<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float OmniFadeRadiusFactor
     {
@@ -922,7 +948,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionDepthRange
+    /// FloatProperty: OcclusionDepthRange<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float OcclusionDepthRange
     {
@@ -931,7 +958,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BloomScale
+    /// FloatProperty: BloomScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BloomScale
     {
@@ -949,7 +977,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BloomScreenBlendThreshold
+    /// FloatProperty: BloomScreenBlendThreshold<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BloomScreenBlendThreshold
     {
@@ -958,13 +987,15 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: BloomTint
+    /// StructProperty: BloomTint<br/>
+    /// Default: (B=255,G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BloomTint
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 588);
 
     /// <summary>
-    /// FloatProperty: RadialBlurPercent
+    /// FloatProperty: RadialBlurPercent<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RadialBlurPercent
     {
@@ -973,7 +1004,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMaskDarkness
+    /// FloatProperty: OcclusionMaskDarkness<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float OcclusionMaskDarkness
     {
@@ -991,7 +1023,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ShadowResolutionMultiplier
+    /// FloatProperty: ShadowResolutionMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ShadowResolutionMultiplier
     {
@@ -1051,7 +1084,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         }
 
         /// <summary>
-        /// StructProperty: Scale
+        /// StructProperty: Scale<br/>
+        /// Default: (X=1,Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector2 Scale
         {
@@ -1107,7 +1141,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     public partial record struct FEffectorSignal
     {
         /// <summary>
-        /// FloatProperty: Speed
+        /// FloatProperty: Speed<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Speed
         {
@@ -1125,7 +1160,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         }
 
         /// <summary>
-        /// FloatProperty: intensity
+        /// FloatProperty: intensity<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float intensity
         {

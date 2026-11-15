@@ -484,7 +484,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AdditiveIdle
+        /// StructProperty: AdditiveIdle<br/>
+        /// Default: (Weight=(Value=1))
         /// </summary>
         public unsafe BmSDK.BmGame.RAnimConfig.FAdditiveAnimConfig AdditiveIdle
         {
@@ -583,7 +584,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: LegYawConfig
+        /// StructProperty: LegYawConfig<br/>
+        /// Default: (Strength=5,MaxVelocity=10,MaxAccel=30)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FChaserConfig LegYawConfig
         {
@@ -592,7 +594,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: RunLegYawConfig
+        /// StructProperty: RunLegYawConfig<br/>
+        /// Default: (Strength=15,MaxVelocity=10,MaxAccel=90)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FChaserConfig RunLegYawConfig
         {
@@ -601,7 +604,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: LegDirectionConfig
+        /// StructProperty: LegDirectionConfig<br/>
+        /// Default: (Strength=5,MaxVelocity=12,MaxAccel=30)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FChaserConfig LegDirectionConfig
         {
@@ -610,7 +614,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AimAtTiming
+        /// StructProperty: AimAtTiming<br/>
+        /// Default: (InDuration=0.7,OutDuration=1,SpringStrength=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming AimAtTiming
         {
@@ -619,7 +624,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: LookAtTiming
+        /// StructProperty: LookAtTiming<br/>
+        /// Default: (InDuration=0.7,OutDuration=1,SpringStrength=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming LookAtTiming
         {
@@ -637,7 +643,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: FloorCorrection
+        /// StructProperty: FloorCorrection<br/>
+        /// Default: (Standing=(Along=-11,Up=-3,Down=-3,OrientationPivotZ=40),Moving=(Along=-11,Up=-17,Down=-19,OrientationPivotZ=40))
         /// </summary>
         public unsafe BmSDK.BmGame.RGameInfo.FFloorCorrectionConfig FloorCorrection
         {
@@ -745,7 +752,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Timing
+        /// StructProperty: Timing<br/>
+        /// Default: (SpringStrength=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming Timing
         {
@@ -779,7 +787,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SpringStrength
+        /// FloatProperty: SpringStrength<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpringStrength
         {

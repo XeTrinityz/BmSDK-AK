@@ -378,7 +378,8 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// BoolProperty: bCheckDestinationActor
+    /// BoolProperty: bCheckDestinationActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckDestinationActor
     {
@@ -387,7 +388,8 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// BoolProperty: bLookAtPlayer
+    /// BoolProperty: bLookAtPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookAtPlayer
     {
@@ -396,7 +398,8 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// BoolProperty: bExitIfPathFindFails
+    /// BoolProperty: bExitIfPathFindFails<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExitIfPathFindFails
     {
@@ -459,7 +462,8 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     }
 
     /// <summary>
-    /// FloatProperty: CloseToGoalDist
+    /// FloatProperty: CloseToGoalDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CloseToGoalDist
     {

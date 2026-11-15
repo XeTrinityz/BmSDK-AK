@@ -156,7 +156,8 @@ public partial class RBMBehaviour_HitReactionShocked : BmSDK.BmGame.RBMBehaviour
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 592);
 
     /// <summary>
-    /// StructProperty: HitNormal
+    /// StructProperty: HitNormal<br/>
+    /// Default: (X=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HitNormal
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 604);

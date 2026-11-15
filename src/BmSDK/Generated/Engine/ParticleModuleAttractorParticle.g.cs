@@ -98,13 +98,15 @@ public partial class ParticleModuleAttractorParticle : BmSDK.Engine.ParticleModu
     }
 
     /// <summary>
-    /// StructProperty: Range
+    /// StructProperty: Range<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorParticle.DistributionRange)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Range
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 104);
 
     /// <summary>
-    /// BoolProperty: bStrengthByDistance
+    /// BoolProperty: bStrengthByDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStrengthByDistance
     {
@@ -140,7 +142,8 @@ public partial class ParticleModuleAttractorParticle : BmSDK.Engine.ParticleModu
     }
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorParticle.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 144);

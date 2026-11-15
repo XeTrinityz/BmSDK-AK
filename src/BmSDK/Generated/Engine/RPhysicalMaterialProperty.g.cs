@@ -212,7 +212,8 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         }
 
         /// <summary>
-        /// FloatProperty: Radius
+        /// FloatProperty: Radius<br/>
+        /// Default: 300
         /// </summary>
         public unsafe float Radius
         {
@@ -589,7 +590,8 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         }
 
         /// <summary>
-        /// FloatProperty: DecalSizeMin
+        /// FloatProperty: DecalSizeMin<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float DecalSizeMin
         {
@@ -598,7 +600,8 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         }
 
         /// <summary>
-        /// FloatProperty: DecalSizeMax
+        /// FloatProperty: DecalSizeMax<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float DecalSizeMax
         {
@@ -607,7 +610,8 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         }
 
         /// <summary>
-        /// BoolProperty: DecalRandomRotation
+        /// BoolProperty: DecalRandomRotation<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool DecalRandomRotation
         {
@@ -617,7 +621,8 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
     }
 
     /// <summary>
-    /// StructProperty: FootstepInfo
+    /// StructProperty: FootstepInfo<br/>
+    /// Default: (SlideParticleEffect=PFX_Batman.Particles.BatmanSlideDefault,WetParticleEffect=PFX_Batman.Particles.Water.Footstep_Water_Splash,FearGasParticleEffect=XFX_BM3_Klemen.Particles.Gas_Benchmark_KickUp)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FMaterialFootstepInfo FootstepInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FMaterialFootstepInfo>(Ptr + 84);
@@ -637,43 +642,51 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
     public InlineArray<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo> ImpactInfo => new(7, Ptr + 152, 44, this);
 
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (SoundEvent=Ww_CHR_BatmanDeviceImpacts.Play_BatmanDeviceImpact,ParticleEffect=VFX_Gadgets.FX_Batarang_Ricochet_P,DecalSizeMin=100,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 152);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (DecalSizeMin=100,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 196);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (DecalSizeMin=100,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 240);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (ParticleEffect=VFX_Batmobile.Particles.Impacts.Batmobile_Gun_Concrete_Impact,Decal=VFX_Decals.Materials.Decal_Concrete_Bullet_Damage_1,DecalSizeMin=150,DecalSizeMax=200,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 284);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (ParticleEffect=VFX_Batmobile.Particles.Impacts.Batmobile_Gun_Concrete_Impact,Decal=VFX_Decals.Materials.Decal_Concrete_Bullet_Damage_1,DecalSizeMin=50,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 328);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (DecalSizeMin=100,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 372);
     /// <summary>
-    /// StructProperty: ImpactInfo
+    /// StructProperty: ImpactInfo<br/>
+    /// Default: (ParticleEffect=VFX_Batmobile.Particles.Impacts.Batmobile_Gun_Concrete_Impact,Decal=VFX_Decals.Materials.Decal_Concrete_Bullet_Damage_1,DecalSizeMin=50,DecalSizeMax=100,DecalRandomRotation=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo ImpactInfo_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FImpactEffectInfo>(Ptr + 416);
 
     /// <summary>
-    /// StructProperty: AdvancedImpactInfo
+    /// StructProperty: AdvancedImpactInfo<br/>
+    /// Default: (Radius=300)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPhysicalMaterialProperty.FAdvancedImpactEffectInfo AdvancedImpactInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPhysicalMaterialProperty.FAdvancedImpactEffectInfo>(Ptr + 460);

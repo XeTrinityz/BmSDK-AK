@@ -310,7 +310,8 @@ public partial class MPawnVillainPredSniper : BmSDK.BmScript.RPawnVillainGunPred
     }
 
     /// <summary>
-    /// BoolProperty: bCurrentlySniping
+    /// BoolProperty: bCurrentlySniping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCurrentlySniping
     {

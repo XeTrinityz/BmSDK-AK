@@ -119,7 +119,8 @@ public partial class SeqAct_AkMusicReplace : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: DebugStatesThatWillBeUsed
+    /// IntProperty: DebugStatesThatWillBeUsed<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int DebugStatesThatWillBeUsed
     {

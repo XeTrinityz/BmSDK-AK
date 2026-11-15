@@ -127,7 +127,8 @@ public partial class MaterialExpressionReliefMapping : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// FloatProperty: HeightMultiplier
+    /// FloatProperty: HeightMultiplier<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float HeightMultiplier
     {
@@ -136,7 +137,8 @@ public partial class MaterialExpressionReliefMapping : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// IntProperty: LSteps
+    /// IntProperty: LSteps<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int LSteps
     {

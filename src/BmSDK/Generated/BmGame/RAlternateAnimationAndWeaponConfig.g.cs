@@ -216,7 +216,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
     public partial record struct FMovementAnimNames
     {
         /// <summary>
-        /// NameProperty: StandAnim
+        /// NameProperty: StandAnim<br/>
+        /// Default: Stand_Idle
         /// </summary>
         public unsafe BmSDK.FName StandAnim
         {
@@ -225,7 +226,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         }
 
         /// <summary>
-        /// NameProperty: WalkAnim
+        /// NameProperty: WalkAnim<br/>
+        /// Default: Walk_Forward
         /// </summary>
         public unsafe BmSDK.FName WalkAnim
         {
@@ -234,7 +236,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         }
 
         /// <summary>
-        /// NameProperty: RunAnim
+        /// NameProperty: RunAnim<br/>
+        /// Default: Run_Forward
         /// </summary>
         public unsafe BmSDK.FName RunAnim
         {
@@ -243,7 +246,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         }
 
         /// <summary>
-        /// NameProperty: BackWalkAnim
+        /// NameProperty: BackWalkAnim<br/>
+        /// Default: Walk_Back
         /// </summary>
         public unsafe BmSDK.FName BackWalkAnim
         {
@@ -252,7 +256,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         }
 
         /// <summary>
-        /// NameProperty: BackRunAnim
+        /// NameProperty: BackRunAnim<br/>
+        /// Default: Walk_Back
         /// </summary>
         public unsafe BmSDK.FName BackRunAnim
         {
@@ -261,7 +266,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         }
 
         /// <summary>
-        /// FloatProperty: LegAnimYawStr
+        /// FloatProperty: LegAnimYawStr<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float LegAnimYawStr
         {
@@ -334,7 +340,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
     }
 
     /// <summary>
-    /// ObjectProperty: XRayMaterial
+    /// ObjectProperty: XRayMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xraySkin_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayMaterial
     {
@@ -388,7 +395,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTurningToAim
+    /// BoolProperty: bAllowTurningToAim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTurningToAim
     {
@@ -406,7 +414,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
     }
 
     /// <summary>
-    /// StructProperty: MovementAnims
+    /// StructProperty: MovementAnims<br/>
+    /// Default: (StandAnim=Stand_Idle,WalkAnim=Walk_Forward,RunAnim=Run_Forward,BackWalkAnim=Walk_Back,BackRunAnim=Walk_Back,LegAnimYawStr=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAlternateAnimationAndWeaponConfig.FMovementAnimNames MovementAnims
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAlternateAnimationAndWeaponConfig.FMovementAnimNames>(Ptr + 184);

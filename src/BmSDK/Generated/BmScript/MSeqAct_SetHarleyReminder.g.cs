@@ -106,7 +106,8 @@ public partial class MSeqAct_SetHarleyReminder : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ReminderDelay
+    /// FloatProperty: ReminderDelay<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float ReminderDelay
     {

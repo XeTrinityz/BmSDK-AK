@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_PoseTransition : BmSDK.BmGame.RSpecialMo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: EndMovementStance
+    /// NameProperty: EndMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName EndMovementStance
     {

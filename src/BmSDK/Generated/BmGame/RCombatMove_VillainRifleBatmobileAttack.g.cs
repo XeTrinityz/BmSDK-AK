@@ -177,7 +177,8 @@ public partial class RCombatMove_VillainRifleBatmobileAttack : BmSDK.BmGame.RCom
     }
 
     /// <summary>
-    /// BoolProperty: bNeedReload
+    /// BoolProperty: bNeedReload<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNeedReload
     {
@@ -204,7 +205,8 @@ public partial class RCombatMove_VillainRifleBatmobileAttack : BmSDK.BmGame.RCom
     }
 
     /// <summary>
-    /// StructProperty: ReloadID
+    /// StructProperty: ReloadID<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId ReloadID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 828);

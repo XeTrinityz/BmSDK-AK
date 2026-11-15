@@ -200,13 +200,15 @@ public partial class RSpecialMoveConfig_Interrogation : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// StructProperty: DofStruct
+    /// StructProperty: DofStruct<br/>
+    /// Default: (ApertureStop=3,FocusDistance=100,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct DofStruct
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 512);
 
     /// <summary>
-    /// ByteProperty: AnimatedCameraCollisionOption
+    /// ByteProperty: AnimatedCameraCollisionOption<br/>
+    /// Default: CCO_Player
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig_Interrogation.CameraCollisionOption AnimatedCameraCollisionOption
     {
@@ -215,7 +217,8 @@ public partial class RSpecialMoveConfig_Interrogation : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// StructProperty: VictimHeadLocatorOffset
+    /// StructProperty: VictimHeadLocatorOffset<br/>
+    /// Default: (X=-10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VictimHeadLocatorOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 536);

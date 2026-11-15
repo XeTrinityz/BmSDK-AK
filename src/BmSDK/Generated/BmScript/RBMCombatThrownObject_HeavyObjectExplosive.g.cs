@@ -283,7 +283,8 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_OBJ_PropaneCylinders.Play_Propane_Cylinder_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {
@@ -292,7 +293,8 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_HeavyObjectExplosive.ExtraInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -301,7 +303,8 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
     }
 
     /// <summary>
-    /// StructProperty: BatarangOffset
+    /// StructProperty: BatarangOffset<br/>
+    /// Default: (X=10,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatarangOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1212);

@@ -139,7 +139,8 @@ public partial class RSpecialMoveInstance_AnimMove : BmSDK.BmGame.RSpecialMoveIn
     }
 
     /// <summary>
-    /// StructProperty: Overlay
+    /// StructProperty: Overlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId Overlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 876);

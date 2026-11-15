@@ -3470,7 +3470,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TimeScale
+        /// FloatProperty: TimeScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TimeScale
         {
@@ -3590,7 +3591,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TransitionDurationScale
+        /// FloatProperty: TransitionDurationScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TransitionDurationScale
         {
@@ -3608,7 +3610,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TransitionMeetingPointEnd
+        /// FloatProperty: TransitionMeetingPointEnd<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TransitionMeetingPointEnd
         {
@@ -3937,7 +3940,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AdditiveIdle
+        /// StructProperty: AdditiveIdle<br/>
+        /// Default: (Weight=(Value=1))
         /// </summary>
         public unsafe BmSDK.BmGame.RAnimConfig.FAdditiveAnimConfig AdditiveIdle
         {
@@ -3991,7 +3995,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: AimAtTiming
+        /// StructProperty: AimAtTiming<br/>
+        /// Default: (InDuration=0.5,OutDuration=0.5,SpringStrength=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming AimAtTiming
         {
@@ -4000,7 +4005,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: LookAtTiming
+        /// StructProperty: LookAtTiming<br/>
+        /// Default: (InDuration=0.5,OutDuration=0.5,SpringStrength=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming LookAtTiming
         {
@@ -4037,7 +4043,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableRagdollSupport
+    /// BoolProperty: EnableRagdollSupport<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableRagdollSupport
     {
@@ -4046,7 +4053,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableCheekyBlending
+    /// BoolProperty: EnableCheekyBlending<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCheekyBlending
     {
@@ -4205,7 +4213,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FEditorNonsense>(Ptr + 284);
 
     /// <summary>
-    /// StructProperty: PreviousEditor
+    /// StructProperty: PreviousEditor<br/>
+    /// Default: (AdditiveIdle=(Weight=(Value=1)),AimAtTiming=(InDuration=0.5,OutDuration=0.5,SpringStrength=1),LookAtTiming=(InDuration=0.5,OutDuration=0.5,SpringStrength=1))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNode_Pose.FEditorNonsense PreviousEditor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FEditorNonsense>(Ptr + 404);
@@ -4283,7 +4292,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AimingBoneConfig
+    /// ObjectProperty: AimingBoneConfig<br/>
+    /// Default: AimingBoneConfigs.Default
     /// </summary>
     public unsafe BmSDK.BmGame.RAimingBoneConfig AimingBoneConfig
     {
@@ -4316,7 +4326,8 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FCurveFloatState>(Ptr + 612);
 
     /// <summary>
-    /// StructProperty: PosePlayer
+    /// StructProperty: PosePlayer<br/>
+    /// Default: (AimAtRequest=(TimingOverride=(Timing=(SpringStrength=1))))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_PosePlayer.FPosePlayer PosePlayer
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FPosePlayer>(Ptr + 628);
@@ -4379,13 +4390,15 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Breathing
+    /// StructProperty: Breathing<br/>
+    /// Default: (TimeScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNode_Pose.FBreathingState Breathing
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FBreathingState>(Ptr + 1536);
 
     /// <summary>
-    /// FloatProperty: GlobalTimeScale
+    /// FloatProperty: GlobalTimeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GlobalTimeScale
     {

@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_RobinShieldCharge : BmSDK.BmGame.RSpecia
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: QuickChargeDist
+    /// FloatProperty: QuickChargeDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float QuickChargeDist
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_RobinShieldCharge : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: VictimReactionAnimSet
+    /// ObjectProperty: VictimReactionAnimSet<br/>
+    /// Default: Anim_Thug_Rifle.Code.TGRifle_Caltrop_Reaction
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet VictimReactionAnimSet
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_RobinShieldCharge : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerAnimset
+    /// ObjectProperty: PlayerAnimset<br/>
+    /// Default: Anim_Robin_Gadget.Code.RB_Bullet_Shield
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PlayerAnimset
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_RobinShieldCharge : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: ControllerRumble
+    /// ObjectProperty: ControllerRumble<br/>
+    /// Default: BmScript.Default__RSpecialMoveConfig_RobinShieldCharge.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ControllerRumble
     {

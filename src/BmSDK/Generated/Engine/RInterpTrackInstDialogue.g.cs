@@ -88,7 +88,8 @@ public partial class RInterpTrackInstDialogue : BmSDK.Engine.InterpTrackInst, Bm
     }
 
     /// <summary>
-    /// FloatProperty: SeekPos
+    /// FloatProperty: SeekPos<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SeekPos
     {

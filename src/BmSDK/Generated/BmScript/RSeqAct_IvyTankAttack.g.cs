@@ -235,7 +235,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenAttacks
+    /// FloatProperty: MinTimeBetweenAttacks<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinTimeBetweenAttacks
     {
@@ -244,7 +245,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenAttacks
+    /// FloatProperty: MaxTimeBetweenAttacks<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MaxTimeBetweenAttacks
     {
@@ -253,7 +255,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleZ
+    /// FloatProperty: MaxOnscreenCosAngleZ<br/>
+    /// Default: 0.93
     /// </summary>
     public unsafe float MaxOnscreenCosAngleZ
     {
@@ -262,7 +265,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleXY
+    /// FloatProperty: MaxOnscreenCosAngleXY<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float MaxOnscreenCosAngleXY
     {
@@ -271,7 +275,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinLookingAtCosAngleZ
+    /// FloatProperty: MinLookingAtCosAngleZ<br/>
+    /// Default: 0.985
     /// </summary>
     public unsafe float MinLookingAtCosAngleZ
     {
@@ -280,7 +285,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinLookingAtCosAngleXY
+    /// FloatProperty: MinLookingAtCosAngleXY<br/>
+    /// Default: 0.985
     /// </summary>
     public unsafe float MinLookingAtCosAngleXY
     {
@@ -307,7 +313,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: PlantAnimset
+    /// ObjectProperty: PlantAnimset<br/>
+    /// Default: Anim_Ivy.Plants.Plants_Attack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PlantAnimset
     {
@@ -325,7 +332,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineScale
+    /// FloatProperty: IvyVineScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineScale
     {
@@ -334,7 +342,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineClosePlayRate
+    /// FloatProperty: IvyVineClosePlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineClosePlayRate
     {
@@ -343,7 +352,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineFarPlayRate
+    /// FloatProperty: IvyVineFarPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineFarPlayRate
     {
@@ -370,7 +380,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineInPlayRate
+    /// FloatProperty: IvyVineInPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineInPlayRate
     {
@@ -379,7 +390,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineIdlePlayRate
+    /// FloatProperty: IvyVineIdlePlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineIdlePlayRate
     {
@@ -388,7 +400,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineIdlePlayTime
+    /// FloatProperty: IvyVineIdlePlayTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float IvyVineIdlePlayTime
     {
@@ -397,7 +410,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: IvyVineOutPlayRate
+    /// FloatProperty: IvyVineOutPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IvyVineOutPlayRate
     {
@@ -406,7 +420,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinRateScaleDistance
+    /// FloatProperty: MinRateScaleDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinRateScaleDistance
     {
@@ -415,7 +430,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxRateScaleDistance
+    /// FloatProperty: MaxRateScaleDistance<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaxRateScaleDistance
     {
@@ -460,7 +476,8 @@ public partial class RSeqAct_IvyTankAttack : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: CamPitchAdjustment
+    /// IntProperty: CamPitchAdjustment<br/>
+    /// Default: -1200
     /// </summary>
     public unsafe int CamPitchAdjustment
     {

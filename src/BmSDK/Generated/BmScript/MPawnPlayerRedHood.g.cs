@@ -895,7 +895,8 @@ public partial class MPawnPlayerRedHood : BmSDK.BmGame.MPawnPlayerRedHoodBase, B
     }
 
     /// <summary>
-    /// FloatProperty: ProximityScannerRange
+    /// FloatProperty: ProximityScannerRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ProximityScannerRange
     {
@@ -1009,7 +1010,8 @@ public partial class MPawnPlayerRedHood : BmSDK.BmGame.MPawnPlayerRedHoodBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: FXGunLeft
+    /// ObjectProperty: FXGunLeft<br/>
+    /// Default: PFX_RedHood.Emmiter.RedHood_GUNS_muzzleflash_Left
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem FXGunLeft
     {
@@ -1018,7 +1020,8 @@ public partial class MPawnPlayerRedHood : BmSDK.BmGame.MPawnPlayerRedHoodBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: FXGunRight
+    /// ObjectProperty: FXGunRight<br/>
+    /// Default: PFX_RedHood.Emmiter.RedHood_GUNS_muzzleflash
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem FXGunRight
     {

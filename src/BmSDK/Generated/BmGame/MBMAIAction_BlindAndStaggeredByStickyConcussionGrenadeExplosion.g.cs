@@ -94,7 +94,8 @@ public partial class MBMAIAction_BlindAndStaggeredByStickyConcussionGrenadeExplo
     }
 
     /// <summary>
-    /// FloatProperty: MaxBlindTime
+    /// FloatProperty: MaxBlindTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MaxBlindTime
     {

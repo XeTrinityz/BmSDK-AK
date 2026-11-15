@@ -535,7 +535,8 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StunTime
+    /// FloatProperty: StunTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float StunTime
     {
@@ -679,7 +680,8 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WritheDmgInfo
+    /// StructProperty: WritheDmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo WritheDmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 100);
@@ -694,7 +696,8 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ARFMulti
+    /// FloatProperty: ARFMulti<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ARFMulti
     {
@@ -811,7 +814,8 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultWritheDescriptions
+    /// ArrayProperty: DefaultWritheDescriptions<br/>
+    /// Default: ((InitialWrithe=((FaceUpAnimName=Writhe_Big),(FaceUpAnimName=Writhe_Face),(FaceUpAnimName=Writhe_Face_01),(FaceUpAnimName=Foetal_Writhe),(FaceUpAnimName=Writhe_Stomach),(FaceUpAnimName=Chest_Hit_Writh...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPawnCombat.FWritheDescription> DefaultWritheDescriptions
     {
@@ -841,7 +845,8 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UnFreezeTime
+    /// FloatProperty: UnFreezeTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float UnFreezeTime
     {

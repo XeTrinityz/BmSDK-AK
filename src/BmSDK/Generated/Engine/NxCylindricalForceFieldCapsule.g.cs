@@ -100,7 +100,8 @@ public partial class NxCylindricalForceFieldCapsule : BmSDK.Engine.NxCylindrical
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__NxCylindricalForceFieldCapsule.DrawCapsule0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCapsuleComponent RenderComponent
     {

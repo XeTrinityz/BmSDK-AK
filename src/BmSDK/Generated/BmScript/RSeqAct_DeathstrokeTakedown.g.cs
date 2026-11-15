@@ -304,7 +304,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSetBM
+    /// ObjectProperty: AnimSetBM<br/>
+    /// Default: anim_matinee_city_x.Deathstroke_Sequence.Batman
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSetBM
     {
@@ -313,7 +314,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSetBMBL
+    /// ObjectProperty: AnimSetBMBL<br/>
+    /// Default: anim_matinee_city_x.Deathstroke_Sequence.Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSetBMBL
     {
@@ -322,7 +324,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSetDS
+    /// ObjectProperty: AnimSetDS<br/>
+    /// Default: anim_matinee_city_x.Deathstroke_Sequence.Deathstroke
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSetDS
     {
@@ -331,7 +334,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSetCamera
+    /// ObjectProperty: AnimSetCamera<br/>
+    /// Default: anim_matinee_city_x.Deathstroke_Sequence.Camera
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSetCamera
     {
@@ -340,7 +344,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSetTank
+    /// ObjectProperty: AnimSetTank<br/>
+    /// Default: Red_Hood_Comander_Tank.Red_Hood_Comander_Tank_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSetTank
     {
@@ -421,7 +426,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// NameProperty: LaunchAnimName
+    /// NameProperty: LaunchAnimName<br/>
+    /// Default: Batman_Tackle_Deathstroke
     /// </summary>
     public unsafe BmSDK.FName LaunchAnimName
     {
@@ -430,7 +436,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// NameProperty: LandAnimName
+    /// NameProperty: LandAnimName<br/>
+    /// Default: BM_Put_Deathstroke_In_The_Batmoblie
     /// </summary>
     public unsafe BmSDK.FName LandAnimName
     {
@@ -448,7 +455,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: TooLongForLosTime
+    /// FloatProperty: TooLongForLosTime<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float TooLongForLosTime
     {
@@ -466,7 +474,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: FadeDownTime
+    /// FloatProperty: FadeDownTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float FadeDownTime
     {
@@ -541,7 +550,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: minDistBetweenLandingAndTank
+    /// FloatProperty: minDistBetweenLandingAndTank<br/>
+    /// Default: 1800
     /// </summary>
     public unsafe float minDistBetweenLandingAndTank
     {
@@ -571,7 +581,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 628);
 
     /// <summary>
-    /// IntProperty: TankLevelIndex
+    /// IntProperty: TankLevelIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TankLevelIndex
     {
@@ -580,7 +591,8 @@ public partial class RSeqAct_DeathstrokeTakedown : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// IntProperty: MatineeLevelIndex
+    /// IntProperty: MatineeLevelIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MatineeLevelIndex
     {

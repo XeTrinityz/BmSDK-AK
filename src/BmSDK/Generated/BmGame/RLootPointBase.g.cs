@@ -341,7 +341,8 @@ public partial class RLootPointBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisrupta
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RLootPointBase.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -350,7 +351,8 @@ public partial class RLootPointBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisrupta
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RLootPointBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {

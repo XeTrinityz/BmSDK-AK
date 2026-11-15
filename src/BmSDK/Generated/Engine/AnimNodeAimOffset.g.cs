@@ -129,7 +129,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     public partial record struct FAimOffsetProfile
     {
         /// <summary>
-        /// NameProperty: ProfileName
+        /// NameProperty: ProfileName<br/>
+        /// Default: Default
         /// </summary>
         public unsafe BmSDK.FName ProfileName
         {
@@ -138,7 +139,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
         }
 
         /// <summary>
-        /// StructProperty: HorizontalRange
+        /// StructProperty: HorizontalRange<br/>
+        /// Default: (X=-1,Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector2 HorizontalRange
         {
@@ -147,7 +149,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
         }
 
         /// <summary>
-        /// StructProperty: VerticalRange
+        /// StructProperty: VerticalRange<br/>
+        /// Default: (X=-1,Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector2 VerticalRange
         {
@@ -286,7 +289,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bSynchronizeNodesInEditor
+    /// BoolProperty: bSynchronizeNodesInEditor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSynchronizeNodesInEditor
     {
@@ -295,7 +299,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: PassThroughAtOrAboveLOD
+    /// IntProperty: PassThroughAtOrAboveLOD<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int PassThroughAtOrAboveLOD
     {
@@ -304,7 +309,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: ForcedAimDir
+    /// ByteProperty: ForcedAimDir<br/>
+    /// Default: ANIMAIM_CENTERCENTER
     /// </summary>
     public unsafe BmSDK.Engine.AnimNodeAimOffset.EAnimAimDir ForcedAimDir
     {

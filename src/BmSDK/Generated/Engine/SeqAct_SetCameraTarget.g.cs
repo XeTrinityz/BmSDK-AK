@@ -115,7 +115,8 @@ public partial class SeqAct_SetCameraTarget : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: TransitionParams
+    /// StructProperty: TransitionParams<br/>
+    /// Default: (BlendFunction=VTBlend_Cubic,BlendExp=2,bResetCameraBehindPlayer=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.Camera.FViewTargetTransitionParams TransitionParams
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Camera.FViewTargetTransitionParams>(Ptr + 360);

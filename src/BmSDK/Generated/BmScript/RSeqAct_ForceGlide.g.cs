@@ -115,7 +115,8 @@ public partial class RSeqAct_ForceGlide : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bIgnoreLookInput
+    /// BoolProperty: bIgnoreLookInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIgnoreLookInput
     {

@@ -127,7 +127,8 @@ public partial class NxForceFieldRadial : BmSDK.Engine.NxForceField, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {

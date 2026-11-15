@@ -234,7 +234,8 @@ public partial class RBMAIAction_HoldPerim : BmSDK.BmGame.RBMAIAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bLookBack
+    /// BoolProperty: bLookBack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookBack
     {

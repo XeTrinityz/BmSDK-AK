@@ -79,7 +79,8 @@ public partial class ApexForceFieldRadialComponent : BmSDK.Engine.ApexForceField
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -88,7 +89,8 @@ public partial class ApexForceFieldRadialComponent : BmSDK.Engine.ApexForceField
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -106,7 +108,8 @@ public partial class ApexForceFieldRadialComponent : BmSDK.Engine.ApexForceField
     }
 
     /// <summary>
-    /// ByteProperty: ForceFalloff
+    /// ByteProperty: ForceFalloff<br/>
+    /// Default: RIF_Linear
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERadialImpulseFalloff ForceFalloff
     {

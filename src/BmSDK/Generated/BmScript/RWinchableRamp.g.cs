@@ -449,7 +449,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompRamp
+    /// ComponentProperty: MeshCompRamp<br/>
+    /// Default: BmScript.Default__RWinchableRamp.MeshCompRamp0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompRamp
     {
@@ -458,7 +459,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompHook
+    /// ComponentProperty: MeshCompHook<br/>
+    /// Default: BmScript.Default__RWinchableRamp.MeshCompHook0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompHook
     {
@@ -467,7 +469,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompDownHook
+    /// ComponentProperty: MeshCompDownHook<br/>
+    /// Default: BmScript.Default__RWinchableRamp.MeshCompHook1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompDownHook
     {
@@ -575,7 +578,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: MinWinchRange
+    /// FloatProperty: MinWinchRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MinWinchRange
     {
@@ -584,7 +588,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// NameProperty: RampLowToMidAnimName
+    /// NameProperty: RampLowToMidAnimName<br/>
+    /// Default: City_Ramp_Main_Bridge_Down
     /// </summary>
     public unsafe BmSDK.FName RampLowToMidAnimName
     {
@@ -593,7 +598,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// NameProperty: RampMidToHighAnimName
+    /// NameProperty: RampMidToHighAnimName<br/>
+    /// Default: City_Ramp_Main_Bridge_Up
     /// </summary>
     public unsafe BmSDK.FName RampMidToHighAnimName
     {
@@ -620,7 +626,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: FallingCrashSoundVelThreshold
+    /// FloatProperty: FallingCrashSoundVelThreshold<br/>
+    /// Default: 0.07
     /// </summary>
     public unsafe float FallingCrashSoundVelThreshold
     {
@@ -692,7 +699,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: FallRate
+    /// FloatProperty: FallRate<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FallRate
     {
@@ -701,7 +709,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: FallAccel
+    /// FloatProperty: FallAccel<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float FallAccel
     {
@@ -737,7 +746,8 @@ public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: InteractEventPosition
+    /// FloatProperty: InteractEventPosition<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float InteractEventPosition
     {

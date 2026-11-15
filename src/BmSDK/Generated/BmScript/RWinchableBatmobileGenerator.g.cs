@@ -239,7 +239,8 @@ public partial class RWinchableBatmobileGenerator : BmSDK.BmGame.RWinchableJunct
     }
 
     /// <summary>
-    /// ComponentProperty: ElectricityEffectComp
+    /// ComponentProperty: ElectricityEffectComp<br/>
+    /// Default: BmScript.Default__RWinchableBatmobileGenerator.ElectricityEffectComp0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ElectricityEffectComp
     {
@@ -248,7 +249,8 @@ public partial class RWinchableBatmobileGenerator : BmSDK.BmGame.RWinchableJunct
     }
 
     /// <summary>
-    /// ObjectProperty: PowerStartEvent
+    /// ObjectProperty: PowerStartEvent<br/>
+    /// Default: ww_obj_cityz_10_antenna_power_socket.Play_OBJ_Antenna_Power_Socket
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PowerStartEvent
     {
@@ -257,7 +259,8 @@ public partial class RWinchableBatmobileGenerator : BmSDK.BmGame.RWinchableJunct
     }
 
     /// <summary>
-    /// ObjectProperty: VehiclePowerStartEvent
+    /// ObjectProperty: VehiclePowerStartEvent<br/>
+    /// Default: ww_obj_cityz_10_antenna_power_socket.Play_Batmobile_Antenna_Power_Loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent VehiclePowerStartEvent
     {

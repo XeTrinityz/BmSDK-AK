@@ -276,7 +276,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: LightMat
+    /// ObjectProperty: LightMat<br/>
+    /// Default: BmScript.Default__RRiddlerSwitch.MIC2
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant LightMat
     {
@@ -285,7 +286,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactFX
+    /// ObjectProperty: ImpactFX<br/>
+    /// Default: EFX_RiddlerRooms.Particles.RiddlerSwitchImpact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ImpactFX
     {
@@ -294,7 +296,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: OverloadFX
+    /// ObjectProperty: OverloadFX<br/>
+    /// Default: EFX_RiddlerRooms.Particles.RiddlerSwitchDie
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem OverloadFX
     {
@@ -303,7 +306,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactSoundFX
+    /// ObjectProperty: ImpactSoundFX<br/>
+    /// Default: Ww_OBJ_RiddlerSwitch.Play_Riddler_Switch
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ImpactSoundFX
     {
@@ -312,7 +316,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RRiddlerSwitch.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {
@@ -321,7 +326,8 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: GlowDot
+    /// ComponentProperty: GlowDot<br/>
+    /// Default: BmScript.Default__RRiddlerSwitch.Glow1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GlowDot
     {

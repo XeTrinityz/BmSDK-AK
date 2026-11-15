@@ -265,7 +265,8 @@ public partial class MGFxWidgetOverlayScreenWBIDOptions : BmSDK.BmScript.MGFxWid
     }
 
     /// <summary>
-    /// IntProperty: SelectedButton
+    /// IntProperty: SelectedButton<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SelectedButton
     {

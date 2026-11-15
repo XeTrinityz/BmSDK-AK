@@ -79,13 +79,15 @@ public partial class EdCoordSystem : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: M
+    /// StructProperty: M<br/>
+    /// Default: (XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FMatrix M
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 96);
 
     /// <summary>
-    /// StrProperty: Desc
+    /// StrProperty: Desc<br/>
+    /// Default: "Coord System"
     /// </summary>
     public unsafe BmSDK.FString Desc
     {

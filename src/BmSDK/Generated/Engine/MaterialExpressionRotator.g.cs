@@ -97,7 +97,8 @@ public partial class MaterialExpressionRotator : BmSDK.Engine.MaterialExpression
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 276);
 
     /// <summary>
-    /// FloatProperty: CenterX
+    /// FloatProperty: CenterX<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CenterX
     {
@@ -106,7 +107,8 @@ public partial class MaterialExpressionRotator : BmSDK.Engine.MaterialExpression
     }
 
     /// <summary>
-    /// FloatProperty: CenterY
+    /// FloatProperty: CenterY<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CenterY
     {
@@ -115,7 +117,8 @@ public partial class MaterialExpressionRotator : BmSDK.Engine.MaterialExpression
     }
 
     /// <summary>
-    /// FloatProperty: Speed
+    /// FloatProperty: Speed<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float Speed
     {

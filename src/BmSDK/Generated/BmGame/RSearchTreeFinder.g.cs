@@ -722,7 +722,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 140);
 
     /// <summary>
-    /// FloatProperty: GrateDetectWidth
+    /// FloatProperty: GrateDetectWidth<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float GrateDetectWidth
     {

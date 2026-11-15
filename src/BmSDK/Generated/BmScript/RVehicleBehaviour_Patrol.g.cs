@@ -219,7 +219,8 @@ public partial class RVehicleBehaviour_Patrol : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: SpeedFactor
+    /// FloatProperty: SpeedFactor<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float SpeedFactor
     {
@@ -228,7 +229,8 @@ public partial class RVehicleBehaviour_Patrol : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// BoolProperty: TankTurnOnSpot
+    /// BoolProperty: TankTurnOnSpot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TankTurnOnSpot
     {
@@ -282,7 +284,8 @@ public partial class RVehicleBehaviour_Patrol : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: LookAtTargetDuration
+    /// FloatProperty: LookAtTargetDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookAtTargetDuration
     {
@@ -291,7 +294,8 @@ public partial class RVehicleBehaviour_Patrol : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: LookAtTargetTurretSpeed
+    /// FloatProperty: LookAtTargetTurretSpeed<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float LookAtTargetTurretSpeed
     {
@@ -318,7 +322,8 @@ public partial class RVehicleBehaviour_Patrol : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// IntProperty: TargetRoadPoint
+    /// IntProperty: TargetRoadPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TargetRoadPoint
     {

@@ -297,7 +297,8 @@ public partial class RAnimUtil_PosePlayer : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FStanceChange
     {
         /// <summary>
-        /// StructProperty: Pose
+        /// StructProperty: Pose<br/>
+        /// Default: (Pose=(AdditiveIdle=(Weight=(Value=1)),LegYawConfig=(Strength=5,MaxVelocity=10,MaxAccel=30),RunLegYawConfig=(Strength=15,MaxVelocity=10,MaxAccel=90),LegDirectionConfig=(Strength=5,MaxVelocity=12,MaxAc...
         /// </summary>
         public unsafe BmSDK.BmGame.RAnimUtil_PosePlayer.FStanceChangePose Pose
         {
@@ -983,7 +984,8 @@ public partial class RAnimUtil_PosePlayer : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Pose
+        /// StructProperty: Pose<br/>
+        /// Default: (AdditiveIdle=(Weight=(Value=1)),LegYawConfig=(Strength=5,MaxVelocity=10,MaxAccel=30),RunLegYawConfig=(Strength=15,MaxVelocity=10,MaxAccel=90),LegDirectionConfig=(Strength=5,MaxVelocity=12,MaxAccel=30...
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FPose Pose
         {
@@ -2060,7 +2062,8 @@ public partial class RAnimUtil_PosePlayer : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: TimingOverride
+        /// StructProperty: TimingOverride<br/>
+        /// Default: (Timing=(SpringStrength=1))
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTimingOverride TimingOverride
         {
@@ -2121,7 +2124,8 @@ public partial class RAnimUtil_PosePlayer : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: TimingOverride
+        /// StructProperty: TimingOverride<br/>
+        /// Default: (Timing=(SpringStrength=1))
         /// </summary>
         public unsafe BmSDK.BmGame.RPoseConfig.FAimingTransitionTimingOverride TimingOverride
         {

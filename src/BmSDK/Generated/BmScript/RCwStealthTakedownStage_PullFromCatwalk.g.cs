@@ -184,7 +184,8 @@ public partial class RCwStealthTakedownStage_PullFromCatwalk : BmSDK.BmGame.RSte
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1664);
 
     /// <summary>
-    /// NameProperty: VictimRightAnimName
+    /// NameProperty: VictimRightAnimName<br/>
+    /// Default: Takedown_Ceiling_Above_Whip_R
     /// </summary>
     public unsafe BmSDK.FName VictimRightAnimName
     {
@@ -193,7 +194,8 @@ public partial class RCwStealthTakedownStage_PullFromCatwalk : BmSDK.BmGame.RSte
     }
 
     /// <summary>
-    /// NameProperty: RailingMoveAnimName
+    /// NameProperty: RailingMoveAnimName<br/>
+    /// Default: Takedown_Ceiling_Above_Whip
     /// </summary>
     public unsafe BmSDK.FName RailingMoveAnimName
     {

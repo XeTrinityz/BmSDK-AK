@@ -95,7 +95,8 @@ public partial class RSmokeScreenBM : BmSDK.BmGame.RSmokeScreen, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: UpgradedAOESmokeFX
+    /// ObjectProperty: UpgradedAOESmokeFX<br/>
+    /// Default: VFX_Gadgets.Particles.Smoke_Pellet_UPGR02
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem UpgradedAOESmokeFX
     {
@@ -104,7 +105,8 @@ public partial class RSmokeScreenBM : BmSDK.BmGame.RSmokeScreen, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: UpgradedDurationSmokeFX
+    /// ObjectProperty: UpgradedDurationSmokeFX<br/>
+    /// Default: VFX_Gadgets.Particles.Smoke_Pellet_UPGR01
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem UpgradedDurationSmokeFX
     {

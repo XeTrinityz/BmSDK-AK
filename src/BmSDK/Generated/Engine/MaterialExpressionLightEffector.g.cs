@@ -88,7 +88,8 @@ public partial class MaterialExpressionLightEffector : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// FloatProperty: SignalSmoothingHigh
+    /// FloatProperty: SignalSmoothingHigh<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SignalSmoothingHigh
     {
@@ -106,7 +107,8 @@ public partial class MaterialExpressionLightEffector : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// FloatProperty: EffectorBrightness
+    /// FloatProperty: EffectorBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EffectorBrightness
     {
@@ -127,7 +129,8 @@ public partial class MaterialExpressionLightEffector : BmSDK.Engine.MaterialExpr
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 204);
 
     /// <summary>
-    /// FloatProperty: LightBrightness
+    /// FloatProperty: LightBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightBrightness
     {

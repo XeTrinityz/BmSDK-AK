@@ -164,7 +164,8 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CurrentSuicideCarsLevel
+    /// FloatProperty: CurrentSuicideCarsLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentSuicideCarsLevel
     {

@@ -122,7 +122,8 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -149,7 +150,8 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAllowPreShadow
+    /// BoolProperty: bAllowPreShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowPreShadow
     {
@@ -167,7 +169,8 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DominantShadowFactor
+    /// FloatProperty: DominantShadowFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DominantShadowFactor
     {

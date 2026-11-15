@@ -166,7 +166,8 @@ public partial class RBMBehaviour_Controlled : BmSDK.BmGame.RBMBehaviour, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bAllowBasingOnVehicles
+    /// BoolProperty: bAllowBasingOnVehicles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowBasingOnVehicles
     {
@@ -175,7 +176,8 @@ public partial class RBMBehaviour_Controlled : BmSDK.BmGame.RBMBehaviour, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bStopDialogueOnActivate
+    /// BoolProperty: bStopDialogueOnActivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopDialogueOnActivate
     {

@@ -79,13 +79,15 @@ public partial class ParticleModuleKillBox : BmSDK.Engine.ParticleModuleKillBase
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: LowerLeftCorner
+    /// StructProperty: LowerLeftCorner<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleKillBox.DistributionLowerLeftCorner,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector LowerLeftCorner
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// StructProperty: UpperRightCorner
+    /// StructProperty: UpperRightCorner<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleKillBox.DistributionUpperRightCorner,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector UpperRightCorner
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 160);
@@ -109,7 +111,8 @@ public partial class ParticleModuleKillBox : BmSDK.Engine.ParticleModuleKillBase
     }
 
     /// <summary>
-    /// BoolProperty: bAxisAlignedAndFixedSize
+    /// BoolProperty: bAxisAlignedAndFixedSize<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAxisAlignedAndFixedSize
     {

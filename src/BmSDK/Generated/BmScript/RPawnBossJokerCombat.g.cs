@@ -629,7 +629,8 @@ public partial class RPawnBossJokerCombat : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: BeatDownMove
+    /// ObjectProperty: BeatDownMove<br/>
+    /// Default: Anim_Joker.SpecialMove.BeatDownJoker
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BeatDownMove
     {
@@ -638,7 +639,8 @@ public partial class RPawnBossJokerCombat : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: FTCameras
+    /// ObjectProperty: FTCameras<br/>
+    /// Default: Anim_Batman_TG_Com.Code.BM_JK_Cameras
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet FTCameras
     {

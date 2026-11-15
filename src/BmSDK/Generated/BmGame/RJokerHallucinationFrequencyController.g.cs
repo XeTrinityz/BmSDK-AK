@@ -323,7 +323,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
     }
 
     /// <summary>
-    /// ArrayProperty: ChanceOfJokerHallucinationByType
+    /// ArrayProperty: ChanceOfJokerHallucinationByType<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,100,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> ChanceOfJokerHallucinationByType
     {
@@ -341,7 +342,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
     }
 
     /// <summary>
-    /// ArrayProperty: AppearanceHistory
+    /// ArrayProperty: AppearanceHistory<br/>
+    /// Default: ((),(),(),(),(),(),(),(),(),(),(),(),(),())
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RJokerHallucinationFrequencyController.FHallucinationAppearanceHistory> AppearanceHistory
     {
@@ -350,7 +352,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
     }
 
     /// <summary>
-    /// IntProperty: MaxHistory
+    /// IntProperty: MaxHistory<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxHistory
     {

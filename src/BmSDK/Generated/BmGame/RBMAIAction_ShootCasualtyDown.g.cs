@@ -227,7 +227,8 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     }
 
     /// <summary>
-    /// FloatProperty: FallWaitDuration
+    /// FloatProperty: FallWaitDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FallWaitDuration
     {

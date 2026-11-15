@@ -79,7 +79,8 @@ public partial class RAnimNotify_WeaponDestroy : BmSDK.Engine.AnimNotify, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: WeaponDestroyInfo
+    /// StructProperty: WeaponDestroyInfo<br/>
+    /// Default: (bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FWeaponDestroyInfo WeaponDestroyInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FWeaponDestroyInfo>(Ptr + 84);

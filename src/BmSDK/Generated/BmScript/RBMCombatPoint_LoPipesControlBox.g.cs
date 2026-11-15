@@ -161,7 +161,8 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// ComponentProperty: ControlBoxMesh
+    /// ComponentProperty: ControlBoxMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoPipesControlBox.NewControlBoxMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ControlBoxMesh
     {
@@ -170,7 +171,8 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// ComponentProperty: DamagedControlBoxMesh
+    /// ComponentProperty: DamagedControlBoxMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoPipesControlBox.NewDamagedControlBoxMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent DamagedControlBoxMesh
     {

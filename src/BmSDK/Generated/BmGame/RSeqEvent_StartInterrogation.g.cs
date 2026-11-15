@@ -284,7 +284,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// ObjectProperty: InterrogationAura
+    /// ObjectProperty: InterrogationAura<br/>
+    /// Default: VFX_Forensics.HeadToHead_CharacterOutline_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance InterrogationAura
     {
@@ -293,7 +294,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// ObjectProperty: XrayInterrogationAura
+    /// ObjectProperty: XrayInterrogationAura<br/>
+    /// Default: VFX_Forensics.Xray.Overlay.Xray_Overlay_Highlight_RIDDLER_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance XrayInterrogationAura
     {
@@ -356,7 +358,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// BoolProperty: bRiddler
+    /// BoolProperty: bRiddler<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRiddler
     {
@@ -401,7 +404,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// StrProperty: InterrogationMovesPackageName
+    /// StrProperty: InterrogationMovesPackageName<br/>
+    /// Default: "Batman_Interrogation_Moves"
     /// </summary>
     public unsafe BmSDK.FString InterrogationMovesPackageName
     {
@@ -410,7 +414,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// StrProperty: CatwomanInterrogationMovesPackageName
+    /// StrProperty: CatwomanInterrogationMovesPackageName<br/>
+    /// Default: "Catwoman_Interrogation_Moves"
     /// </summary>
     public unsafe BmSDK.FString CatwomanInterrogationMovesPackageName
     {
@@ -419,7 +424,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// IntProperty: StoredRevealsLeft
+    /// IntProperty: StoredRevealsLeft<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int StoredRevealsLeft
     {
@@ -428,7 +434,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
     }
 
     /// <summary>
-    /// IntProperty: NumToReveal
+    /// IntProperty: NumToReveal<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int NumToReveal
     {

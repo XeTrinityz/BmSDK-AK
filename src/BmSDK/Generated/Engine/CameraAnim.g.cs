@@ -97,7 +97,8 @@ public partial class CameraAnim : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AnimLength
+    /// FloatProperty: AnimLength<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float AnimLength
     {
@@ -112,13 +113,15 @@ public partial class CameraAnim : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FBox>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: BasePPSettings
+    /// StructProperty: BasePPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,InterpolateOverDistanceFade=2500,bEnableBloom=true,bEnableMotionBlur=true,bEnableSceneEffect=true,bAllowAmbientOcclusion=true,bOverride_EnableAtmosD1=true,bAtmosD...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings BasePPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 132);
 
     /// <summary>
-    /// FloatProperty: BasePPSettingsAlpha
+    /// FloatProperty: BasePPSettingsAlpha<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BasePPSettingsAlpha
     {
@@ -127,7 +130,8 @@ public partial class CameraAnim : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BaseFOV
+    /// FloatProperty: BaseFOV<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float BaseFOV
     {

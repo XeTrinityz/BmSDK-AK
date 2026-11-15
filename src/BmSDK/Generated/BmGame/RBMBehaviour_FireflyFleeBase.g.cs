@@ -338,7 +338,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 652);
 
     /// <summary>
-    /// FloatProperty: minDistFromPlayer_initial
+    /// FloatProperty: minDistFromPlayer_initial<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float minDistFromPlayer_initial
     {
@@ -347,7 +348,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: minDistFromPlayer_final
+    /// FloatProperty: minDistFromPlayer_final<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float minDistFromPlayer_final
     {
@@ -361,7 +363,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     public InlineArray<float> ffCruisingSpeedSettings => new(3, Ptr + 672, 4, this);
 
     /// <summary>
-    /// FloatProperty: ffCruisingSpeedSettings
+    /// FloatProperty: ffCruisingSpeedSettings<br/>
+    /// Default: 1800
     /// </summary>
     public unsafe float ffCruisingSpeedSettings_0
     {
@@ -369,7 +372,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 672); }
     }
     /// <summary>
-    /// FloatProperty: ffCruisingSpeedSettings
+    /// FloatProperty: ffCruisingSpeedSettings<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ffCruisingSpeedSettings_1
     {
@@ -377,7 +381,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 676); }
     }
     /// <summary>
-    /// FloatProperty: ffCruisingSpeedSettings
+    /// FloatProperty: ffCruisingSpeedSettings<br/>
+    /// Default: 2200
     /// </summary>
     public unsafe float ffCruisingSpeedSettings_2
     {
@@ -395,7 +400,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: ffEvasionSpeed
+    /// FloatProperty: ffEvasionSpeed<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ffEvasionSpeed
     {
@@ -404,7 +410,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: slowCruisingSpeedProportion
+    /// FloatProperty: slowCruisingSpeedProportion<br/>
+    /// Default: 0.66
     /// </summary>
     public unsafe float slowCruisingSpeedProportion
     {
@@ -422,7 +429,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: ffOutOfFuelSpeed
+    /// FloatProperty: ffOutOfFuelSpeed<br/>
+    /// Default: 1600
     /// </summary>
     public unsafe float ffOutOfFuelSpeed
     {
@@ -436,7 +444,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     public InlineArray<float> allowSideRoadsChanceSettings => new(3, Ptr + 704, 4, this);
 
     /// <summary>
-    /// FloatProperty: allowSideRoadsChanceSettings
+    /// FloatProperty: allowSideRoadsChanceSettings<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float allowSideRoadsChanceSettings_0
     {
@@ -444,7 +453,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 704); }
     }
     /// <summary>
-    /// FloatProperty: allowSideRoadsChanceSettings
+    /// FloatProperty: allowSideRoadsChanceSettings<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float allowSideRoadsChanceSettings_1
     {
@@ -452,7 +462,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 708); }
     }
     /// <summary>
-    /// FloatProperty: allowSideRoadsChanceSettings
+    /// FloatProperty: allowSideRoadsChanceSettings<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float allowSideRoadsChanceSettings_2
     {
@@ -470,7 +481,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: speedBoostDecayTime
+    /// FloatProperty: speedBoostDecayTime<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float speedBoostDecayTime
     {
@@ -479,7 +491,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: takedownPromptRange
+    /// FloatProperty: takedownPromptRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float takedownPromptRange
     {
@@ -488,7 +501,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: takedownRange
+    /// FloatProperty: takedownRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float takedownRange
     {
@@ -497,7 +511,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: failDistance
+    /// FloatProperty: failDistance<br/>
+    /// Default: 16000
     /// </summary>
     public unsafe float failDistance
     {
@@ -560,7 +575,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: movementStartTime
+    /// FloatProperty: movementStartTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float movementStartTime
     {
@@ -569,7 +585,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenBombs_Min
+    /// FloatProperty: timeBetweenBombs_Min<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float timeBetweenBombs_Min
     {
@@ -578,7 +595,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenBombs_Max
+    /// FloatProperty: timeBetweenBombs_Max<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float timeBetweenBombs_Max
     {
@@ -587,7 +605,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: bombDamageAmount
+    /// FloatProperty: bombDamageAmount<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float bombDamageAmount
     {
@@ -596,7 +615,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: FFBombBlastRadius
+    /// FloatProperty: FFBombBlastRadius<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float FFBombBlastRadius
     {
@@ -605,7 +625,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: FFBombBlastRadius_Multibomb
+    /// FloatProperty: FFBombBlastRadius_Multibomb<br/>
+    /// Default: 110
     /// </summary>
     public unsafe float FFBombBlastRadius_Multibomb
     {
@@ -677,7 +698,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: bombs_LaunchVel
+    /// FloatProperty: bombs_LaunchVel<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float bombs_LaunchVel
     {
@@ -686,7 +708,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// IntProperty: bombs_numSpansAhead
+    /// IntProperty: bombs_numSpansAhead<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int bombs_numSpansAhead
     {
@@ -695,7 +718,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: bombs_minRoadWidth
+    /// FloatProperty: bombs_minRoadWidth<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float bombs_minRoadWidth
     {
@@ -713,7 +737,8 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
     }
 
     /// <summary>
-    /// FloatProperty: bombs_maxDistFromCentre
+    /// FloatProperty: bombs_maxDistFromCentre<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float bombs_maxDistFromCentre
     {

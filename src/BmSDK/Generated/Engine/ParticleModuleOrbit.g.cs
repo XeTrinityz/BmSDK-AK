@@ -85,7 +85,8 @@ public partial class ParticleModuleOrbit : BmSDK.Engine.ParticleModuleOrbitBase,
     public partial record struct FOrbitOptions
     {
         /// <summary>
-        /// BoolProperty: bProcessDuringSpawn
+        /// BoolProperty: bProcessDuringSpawn<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bProcessDuringSpawn
         {
@@ -113,7 +114,8 @@ public partial class ParticleModuleOrbit : BmSDK.Engine.ParticleModuleOrbitBase,
     }
 
     /// <summary>
-    /// ByteProperty: ChainMode
+    /// ByteProperty: ChainMode<br/>
+    /// Default: EOChainMode_Link
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModuleOrbit.EOrbitChainMode ChainMode
     {
@@ -122,37 +124,43 @@ public partial class ParticleModuleOrbit : BmSDK.Engine.ParticleModuleOrbitBase,
     }
 
     /// <summary>
-    /// StructProperty: OffsetAmount
+    /// StructProperty: OffsetAmount<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=6,LookupTable=(0,50,0,0,0,0,50,0,0,0,0,0,50,0),Distribution=Engine.Default__ParticleModuleOrbit.DistributionOffsetAmount,MaxRange=(Y=50),RangesCache...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector OffsetAmount
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: OffsetOptions
+    /// StructProperty: OffsetOptions<br/>
+    /// Default: (bProcessDuringSpawn=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions OffsetOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: RotationAmount
+    /// StructProperty: RotationAmount<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=6,LookupTable=(0,1,0,0,0,1,1,1,0,0,0,1,1,1),Distribution=Engine.Default__ParticleModuleOrbit.DistributionRotationAmount,MaxRange=(X=1,Y=1,Z=1),Range...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector RotationAmount
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 172);
 
     /// <summary>
-    /// StructProperty: RotationOptions
+    /// StructProperty: RotationOptions<br/>
+    /// Default: (bProcessDuringSpawn=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions RotationOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions>(Ptr + 236);
 
     /// <summary>
-    /// StructProperty: RotationRateAmount
+    /// StructProperty: RotationRateAmount<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=6,LookupTable=(0,1,0,0,0,1,1,1,0,0,0,1,1,1),Distribution=Engine.Default__ParticleModuleOrbit.DistributionRotationRateAmount,MaxRange=(X=1,Y=1,Z=1),R...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector RotationRateAmount
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: RotationRateOptions
+    /// StructProperty: RotationRateOptions<br/>
+    /// Default: (bProcessDuringSpawn=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions RotationRateOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleOrbit.FOrbitOptions>(Ptr + 304);

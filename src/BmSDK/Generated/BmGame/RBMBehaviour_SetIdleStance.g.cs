@@ -103,7 +103,8 @@ public partial class RBMBehaviour_SetIdleStance : BmSDK.BmGame.RBMBehaviour, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bWaitOneFrame
+    /// BoolProperty: bWaitOneFrame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWaitOneFrame
     {

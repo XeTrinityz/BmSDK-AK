@@ -97,7 +97,8 @@ public partial class InterpTrackToggle : BmSDK.Engine.InterpTrack, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bActivateWithJustAttachedFlag
+    /// BoolProperty: bActivateWithJustAttachedFlag<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActivateWithJustAttachedFlag
     {
@@ -106,7 +107,8 @@ public partial class InterpTrackToggle : BmSDK.Engine.InterpTrack, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenForwards
+    /// BoolProperty: bFireEventsWhenForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenForwards
     {
@@ -115,7 +117,8 @@ public partial class InterpTrackToggle : BmSDK.Engine.InterpTrack, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenBackwards
+    /// BoolProperty: bFireEventsWhenBackwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenBackwards
     {
@@ -124,7 +127,8 @@ public partial class InterpTrackToggle : BmSDK.Engine.InterpTrack, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenJumpingForwards
+    /// BoolProperty: bFireEventsWhenJumpingForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenJumpingForwards
     {

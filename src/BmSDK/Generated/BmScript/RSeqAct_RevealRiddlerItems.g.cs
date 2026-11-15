@@ -93,7 +93,8 @@ public partial class RSeqAct_RevealRiddlerItems : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// IntProperty: RevealNum
+    /// IntProperty: RevealNum<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int RevealNum
     {

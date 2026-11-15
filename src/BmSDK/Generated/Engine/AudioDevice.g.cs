@@ -232,7 +232,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: DialogueOcclusionEnabled
+    /// BoolProperty: DialogueOcclusionEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DialogueOcclusionEnabled
     {
@@ -241,7 +242,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: SFXOcclusionEnabled
+    /// BoolProperty: SFXOcclusionEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SFXOcclusionEnabled
     {
@@ -250,7 +252,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: CompressorEnabled
+    /// BoolProperty: CompressorEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CompressorEnabled
     {
@@ -313,7 +316,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TransientMasterVolume
+    /// FloatProperty: TransientMasterVolume<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TransientMasterVolume
     {
@@ -358,7 +362,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CompressorAttack
+    /// FloatProperty: CompressorAttack<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float CompressorAttack
     {
@@ -367,7 +372,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CompressorRelease
+    /// FloatProperty: CompressorRelease<br/>
+    /// Default: 78.8
     /// </summary>
     public unsafe float CompressorRelease
     {
@@ -376,7 +382,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CompressorThreshold
+    /// FloatProperty: CompressorThreshold<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CompressorThreshold
     {
@@ -385,7 +392,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CompressorGain
+    /// FloatProperty: CompressorGain<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CompressorGain
     {
@@ -394,7 +402,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccStartValueM
+    /// FloatProperty: OccStartValueM<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float OccStartValueM
     {
@@ -403,7 +412,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccFloor
+    /// FloatProperty: OccFloor<br/>
+    /// Default: 0.65
     /// </summary>
     public unsafe float OccFloor
     {
@@ -412,7 +422,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccDistanceFloor
+    /// FloatProperty: OccDistanceFloor<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float OccDistanceFloor
     {
@@ -421,7 +432,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccLerp
+    /// FloatProperty: OccLerp<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float OccLerp
     {
@@ -430,7 +442,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccSlowLerp
+    /// FloatProperty: OccSlowLerp<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float OccSlowLerp
     {
@@ -439,7 +452,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccDistanceLerp
+    /// FloatProperty: OccDistanceLerp<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float OccDistanceLerp
     {
@@ -448,7 +462,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccUncontestedFloor
+    /// FloatProperty: OccUncontestedFloor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float OccUncontestedFloor
     {
@@ -466,7 +481,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccCloseMax
+    /// FloatProperty: OccCloseMax<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float OccCloseMax
     {
@@ -475,7 +491,8 @@ public partial class AudioDevice : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OccCloseMinPercent
+    /// FloatProperty: OccCloseMinPercent<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float OccCloseMinPercent
     {

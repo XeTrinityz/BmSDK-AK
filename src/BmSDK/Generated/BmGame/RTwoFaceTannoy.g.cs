@@ -167,7 +167,8 @@ public partial class RTwoFaceTannoy : BmSDK.BmGame.RPredator_Tannoy, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: nextLineIndex
+    /// IntProperty: nextLineIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int nextLineIndex
     {
@@ -176,7 +177,8 @@ public partial class RTwoFaceTannoy : BmSDK.BmGame.RPredator_Tannoy, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: EventName
+    /// NameProperty: EventName<br/>
+    /// Default: FV_EVENT_BANK_TAKEDOWNTANNOYRESPONSE_BANKLARGE
     /// </summary>
     public unsafe BmSDK.FName EventName
     {

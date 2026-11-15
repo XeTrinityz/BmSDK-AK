@@ -91,13 +91,15 @@ public partial class ParticleModuleAttractorLine : BmSDK.Engine.ParticleModuleAt
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 108);
 
     /// <summary>
-    /// StructProperty: Range
+    /// StructProperty: Range<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorLine.DistributionRange)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Range
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 120);
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorLine.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 156);

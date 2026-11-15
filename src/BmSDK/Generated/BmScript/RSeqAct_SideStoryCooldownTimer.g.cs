@@ -116,7 +116,8 @@ public partial class RSeqAct_SideStoryCooldownTimer : BmSDK.Engine.SeqAct_Latent
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Duration
     {

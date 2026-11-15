@@ -88,7 +88,8 @@ public partial class AkActionGlobal_Event : BmSDK.Engine.AkActionGlobal, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: GlobalSource
+    /// ByteProperty: GlobalSource<br/>
+    /// Default: AK_GLOBAL_EVENT_AMBIENCE
     /// </summary>
     public unsafe BmSDK.Engine.AkActionGlobal_Event.EGlobalEventType GlobalSource
     {
@@ -97,7 +98,8 @@ public partial class AkActionGlobal_Event : BmSDK.Engine.AkActionGlobal, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bUseSharedSource
+    /// BoolProperty: bUseSharedSource<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseSharedSource
     {

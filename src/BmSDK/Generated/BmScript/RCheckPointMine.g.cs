@@ -404,7 +404,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: AttackParticleSystem
+    /// ObjectProperty: AttackParticleSystem<br/>
+    /// Default: VFX_Gadgets.CheckMine.Check_Mine_Batmobile_Effect
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem AttackParticleSystem
     {
@@ -413,7 +414,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: IdleSound
+    /// ObjectProperty: IdleSound<br/>
+    /// Default: Ww_WPN_ProximityMines.Play_Checkpoint_Mine_Active_loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent IdleSound
     {
@@ -422,7 +424,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: AttackSound
+    /// ObjectProperty: AttackSound<br/>
+    /// Default: Ww_WPN_ProximityMines.Play_Checkpoint_Mine_Shock
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AttackSound
     {
@@ -431,7 +434,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: DestroyedSound
+    /// ObjectProperty: DestroyedSound<br/>
+    /// Default: Ww_WPN_ProximityMines.Play_Checkpoint_Mine_Destroyed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent DestroyedSound
     {
@@ -440,7 +444,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: XrayMat
+    /// ObjectProperty: XrayMat<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MINES_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XrayMat
     {
@@ -458,7 +463,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: lightsArchetype
+    /// ObjectProperty: lightsArchetype<br/>
+    /// Default: Vehicle_Enemy_Archetypes.Static.CheckPointMineLights
     /// </summary>
     public unsafe BmSDK.BmScript.RCheckPointMineLights lightsArchetype
     {
@@ -494,7 +500,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: damagedMesh
+    /// ComponentProperty: damagedMesh<br/>
+    /// Default: BmScript.Default__RCheckPointMine.damagedMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent damagedMesh
     {
@@ -503,7 +510,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmScript.Default__RCheckPointMine.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -512,7 +520,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmScript.Default__RCheckPointMine.MeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -521,7 +530,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: ShotByBMBLParticleSystem
+    /// ComponentProperty: ShotByBMBLParticleSystem<br/>
+    /// Default: BmScript.Default__RCheckPointMine.ShotByBMBLParticleSystem_Comp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ShotByBMBLParticleSystem
     {
@@ -530,7 +540,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: AttackParticleSystem_Mine
+    /// ComponentProperty: AttackParticleSystem_Mine<br/>
+    /// Default: BmScript.Default__RCheckPointMine.AttackPFX_Mine
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AttackParticleSystem_Mine
     {
@@ -539,7 +550,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: WarningParticleSystem_DetectiveMode
+    /// ComponentProperty: WarningParticleSystem_DetectiveMode<br/>
+    /// Default: BmScript.Default__RCheckPointMine.WPS_DM
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent WarningParticleSystem_DetectiveMode
     {
@@ -548,7 +560,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: DestroyedVFX
+    /// ComponentProperty: DestroyedVFX<br/>
+    /// Default: BmScript.Default__RCheckPointMine.DestroyedVFXComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DestroyedVFX
     {
@@ -557,7 +570,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: WarningParticleSystem_BMBL
+    /// ComponentProperty: WarningParticleSystem_BMBL<br/>
+    /// Default: BmScript.Default__RCheckPointMine.WPS_BMBL
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent WarningParticleSystem_BMBL
     {
@@ -593,7 +607,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bWarningFXBlue
+    /// BoolProperty: bWarningFXBlue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWarningFXBlue
     {
@@ -647,7 +662,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: stayNeutralTime
+    /// FloatProperty: stayNeutralTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float stayNeutralTime
     {
@@ -674,7 +690,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: warningPFXBaseRadius
+    /// FloatProperty: warningPFXBaseRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float warningPFXBaseRadius
     {
@@ -683,7 +700,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// IntProperty: mineHealth
+    /// IntProperty: mineHealth<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int mineHealth
     {
@@ -692,7 +710,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: reloadDuration
+    /// FloatProperty: reloadDuration<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float reloadDuration
     {
@@ -710,7 +729,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// NameProperty: ReloadAnimName
+    /// NameProperty: ReloadAnimName<br/>
+    /// Default: Red_Hood_Check_Point_Mine
     /// </summary>
     public unsafe BmSDK.FName ReloadAnimName
     {
@@ -719,7 +739,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: ReloadAnimDuration
+    /// FloatProperty: ReloadAnimDuration<br/>
+    /// Default: 0.33
     /// </summary>
     public unsafe float ReloadAnimDuration
     {
@@ -728,7 +749,8 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: ReloadAnimPlayRate
+    /// FloatProperty: ReloadAnimPlayRate<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ReloadAnimPlayRate
     {

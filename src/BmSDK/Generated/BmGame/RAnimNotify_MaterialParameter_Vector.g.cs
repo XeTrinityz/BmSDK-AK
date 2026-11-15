@@ -88,7 +88,8 @@ public partial class RAnimNotify_MaterialParameter_Vector : BmSDK.Engine.AnimNot
     }
 
     /// <summary>
-    /// StructProperty: Value
+    /// StructProperty: Value<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 Value
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 96);

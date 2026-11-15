@@ -424,7 +424,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashLightSocket
+    /// NameProperty: MuzzleFlashLightSocket<br/>
+    /// Default: DummyLight
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashLightSocket
     {
@@ -433,7 +434,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmScript.Default__RPawnPlayerFPS_Joker.MuzzleFlashComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -442,7 +444,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashSocket
+    /// NameProperty: MuzzleFlashSocket<br/>
+    /// Default: DummyFlare
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashSocket
     {
@@ -460,7 +463,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: GunTracerParticleSystem
+    /// ObjectProperty: GunTracerParticleSystem<br/>
+    /// Default: BFX_Joker.Particles.Joker_STG_Tracer
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem GunTracerParticleSystem
     {
@@ -469,7 +473,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: HitEffectParticleSystem
+    /// ObjectProperty: HitEffectParticleSystem<br/>
+    /// Default: BFX_Joker.Particles.Joker_STG_Impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HitEffectParticleSystem
     {
@@ -478,7 +483,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BulletImpulse
+    /// FloatProperty: BulletImpulse<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float BulletImpulse
     {
@@ -487,7 +493,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BulletImpulseForRDP
+    /// FloatProperty: BulletImpulseForRDP<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BulletImpulseForRDP
     {
@@ -496,7 +503,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BulletRadiusForRDP
+    /// FloatProperty: BulletRadiusForRDP<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float BulletRadiusForRDP
     {
@@ -574,7 +582,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: BlunderbusShots
+    /// IntProperty: BlunderbusShots<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int BlunderbusShots
     {
@@ -583,7 +592,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BlunderbusRandom
+    /// FloatProperty: BlunderbusRandom<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float BlunderbusRandom
     {
@@ -604,7 +614,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3308);
 
     /// <summary>
-    /// FloatProperty: TimeTillNextAdditiveOverlay
+    /// FloatProperty: TimeTillNextAdditiveOverlay<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TimeTillNextAdditiveOverlay
     {
@@ -631,7 +642,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DistForBringGunInToMax
+    /// FloatProperty: DistForBringGunInToMax<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float DistForBringGunInToMax
     {
@@ -640,7 +652,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DistForBringGunIn
+    /// FloatProperty: DistForBringGunIn<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float DistForBringGunIn
     {
@@ -649,7 +662,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BringInLerpVal
+    /// FloatProperty: BringInLerpVal<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float BringInLerpVal
     {
@@ -658,7 +672,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BringOutLerpVal
+    /// FloatProperty: BringOutLerpVal<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BringOutLerpVal
     {
@@ -667,7 +682,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BringGunInMax
+    /// FloatProperty: BringGunInMax<br/>
+    /// Default: 55
     /// </summary>
     public unsafe float BringGunInMax
     {
@@ -685,7 +701,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: GunDummyBringInOffsetDist
+    /// FloatProperty: GunDummyBringInOffsetDist<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float GunDummyBringInOffsetDist
     {
@@ -703,7 +720,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfShotDecal
+    /// FloatProperty: ChanceOfShotDecal<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ChanceOfShotDecal
     {
@@ -712,7 +730,8 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: FramesSinceMatinee
+    /// IntProperty: FramesSinceMatinee<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int FramesSinceMatinee
     {

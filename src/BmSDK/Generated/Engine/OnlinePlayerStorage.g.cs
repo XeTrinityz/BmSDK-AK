@@ -837,7 +837,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VersionNumber
+    /// IntProperty: VersionNumber<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int VersionNumber
     {
@@ -855,7 +856,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SaveCountSettingId
+    /// IntProperty: SaveCountSettingId<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SaveCountSettingId
     {
@@ -891,7 +893,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DeviceID
+    /// IntProperty: DeviceID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DeviceID
     {

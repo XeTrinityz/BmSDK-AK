@@ -79,7 +79,8 @@ public partial class RSprite : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: SpriteComponent
+    /// ComponentProperty: SpriteComponent<br/>
+    /// Default: Engine.Default__RSprite.SpriteComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SpriteComponent SpriteComponent
     {

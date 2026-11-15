@@ -103,7 +103,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// NameProperty: DestCapeStateName
+        /// NameProperty: DestCapeStateName<br/>
+        /// Default: Physics
         /// </summary>
         public unsafe BmSDK.FName DestCapeStateName
         {
@@ -155,7 +156,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// BoolProperty: bCanPerformWithNoTarget
+        /// BoolProperty: bCanPerformWithNoTarget<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanPerformWithNoTarget
         {
@@ -164,7 +166,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// BoolProperty: bCanPerformOnBlocker
+        /// BoolProperty: bCanPerformOnBlocker<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanPerformOnBlocker
         {
@@ -173,7 +176,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// BoolProperty: bPrimeHitReaction
+        /// BoolProperty: bPrimeHitReaction<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPrimeHitReaction
         {
@@ -182,7 +186,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// BoolProperty: bHitsLow
+        /// BoolProperty: bHitsLow<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bHitsLow
         {
@@ -200,7 +205,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeMirrored
+        /// BoolProperty: bCanBeMirrored<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeMirrored
         {
@@ -368,7 +374,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: StrikeInfo
+    /// StructProperty: StrikeInfo<br/>
+    /// Default: (StrikeStrength=SS_Strong)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyStrikeInfo StrikeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyStrikeInfo>(Ptr + 84);
@@ -380,19 +387,22 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyCameraInfo>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: DamageInfo
+    /// StructProperty: DamageInfo<br/>
+    /// Default: (DamageForceMultiplier=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyDamageInfo DamageInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyDamageInfo>(Ptr + 112);
 
     /// <summary>
-    /// StructProperty: StrikeFlags
+    /// StructProperty: StrikeFlags<br/>
+    /// Default: (bCanPerformWithNoTarget=true,bCanPerformOnBlocker=true,bPrimeHitReaction=true,bHitsLow=true,bCanBeMirrored=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyStrikeFlags StrikeFlags
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyStrikeFlags>(Ptr + 172);
 
     /// <summary>
-    /// StructProperty: CapeInfo
+    /// StructProperty: CapeInfo<br/>
+    /// Default: (DestCapeStateName=Physics)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyCapeInfo CapeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_StrikeContact.FNotifyCapeInfo>(Ptr + 176);
@@ -425,7 +435,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -458,7 +469,8 @@ public partial class RAnimNotify_StrikeContact : BmSDK.Engine.AnimNotify, BmSDK.
         }
 
         /// <summary>
-        /// ByteProperty: StrikeStrength
+        /// ByteProperty: StrikeStrength<br/>
+        /// Default: SS_Strong
         /// </summary>
         public unsafe BmSDK.BmGame.RGameInfo.StrikeStrength StrikeStrength
         {

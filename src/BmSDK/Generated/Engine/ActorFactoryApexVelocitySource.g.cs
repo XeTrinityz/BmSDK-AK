@@ -79,7 +79,8 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: AverageVelocity
+    /// FloatProperty: AverageVelocity<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AverageVelocity
     {
@@ -88,7 +89,8 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
     }
 
     /// <summary>
-    /// FloatProperty: StandardVelocity
+    /// FloatProperty: StandardVelocity<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StandardVelocity
     {
@@ -106,7 +108,8 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
     }
 
     /// <summary>
-    /// ByteProperty: CollisionChannel
+    /// ByteProperty: CollisionChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel
     {
@@ -115,7 +118,8 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Radius
     {
@@ -124,13 +128,15 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
     }
 
     /// <summary>
-    /// StructProperty: Extents
+    /// StructProperty: Extents<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Extents
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 160);
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -139,7 +145,8 @@ public partial class ActorFactoryApexVelocitySource : BmSDK.Engine.ActorFactory,
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 176);

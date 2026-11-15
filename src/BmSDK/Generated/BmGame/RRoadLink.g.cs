@@ -199,12 +199,14 @@ public partial class RRoadLink : BmSDK.Engine.Actor, BmSDK.IGameObject
     public InlineArray<BmSDK.BmGame.RRoadLink.FLane> Lanes => new(2, Ptr + 724, 44, this);
 
     /// <summary>
-    /// StructProperty: Lanes
+    /// StructProperty: Lanes<br/>
+    /// Default: (Usable=true,Start=(InnerDistance=64,LaneWidth=512),End=(InnerDistance=64,LaneWidth=512))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RRoadLink.FLane Lanes_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadLink.FLane>(Ptr + 724);
     /// <summary>
-    /// StructProperty: Lanes
+    /// StructProperty: Lanes<br/>
+    /// Default: (Usable=true,Start=(InnerDistance=64,LaneWidth=512),End=(InnerDistance=64,LaneWidth=512))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RRoadLink.FLane Lanes_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadLink.FLane>(Ptr + 768);
@@ -215,12 +217,14 @@ public partial class RRoadLink : BmSDK.Engine.Actor, BmSDK.IGameObject
     public InlineArray<BmSDK.BmGame.RRoadLink.FLane> AltLanes => new(2, Ptr + 812, 44, this);
 
     /// <summary>
-    /// StructProperty: AltLanes
+    /// StructProperty: AltLanes<br/>
+    /// Default: (Usable=true,Start=(InnerDistance=64,LaneWidth=512),End=(InnerDistance=64,LaneWidth=512))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RRoadLink.FLane AltLanes_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadLink.FLane>(Ptr + 812);
     /// <summary>
-    /// StructProperty: AltLanes
+    /// StructProperty: AltLanes<br/>
+    /// Default: (Usable=true,Start=(InnerDistance=64,LaneWidth=512),End=(InnerDistance=64,LaneWidth=512))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RRoadLink.FLane AltLanes_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadLink.FLane>(Ptr + 856);
@@ -262,7 +266,8 @@ public partial class RRoadLink : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsMainRoad
+    /// BoolProperty: IsMainRoad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsMainRoad
     {

@@ -237,7 +237,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RPresurePad.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {
@@ -246,7 +247,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: PadMesh
+    /// ComponentProperty: PadMesh<br/>
+    /// Default: BmScript.Default__RPresurePad.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent PadMesh
     {
@@ -273,7 +275,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bValidVoiceSynthesiserTarget
+    /// BoolProperty: bValidVoiceSynthesiserTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidVoiceSynthesiserTarget
     {
@@ -291,7 +294,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: AudioSwitchActivated
+    /// ObjectProperty: AudioSwitchActivated<br/>
+    /// Default: Ww_OBJ_Riddler_OW_Switches.Play_Riddler_Switch_Pad_ON
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioSwitchActivated
     {
@@ -300,7 +304,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: AudioSwitchActivatedOff
+    /// ObjectProperty: AudioSwitchActivatedOff<br/>
+    /// Default: Ww_OBJ_Riddler_OW_Switches.Play_Riddler_Switch_Pad_OFF
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioSwitchActivatedOff
     {
@@ -309,7 +314,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: AudioSwitchActivated2nd
+    /// ObjectProperty: AudioSwitchActivated2nd<br/>
+    /// Default: Ww_OBJ_Riddler_OW_Switches.Play_Riddler_Switch_Pad_ON_2nd
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioSwitchActivated2nd
     {
@@ -318,7 +324,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: AudioSwitchActivated3rd
+    /// ObjectProperty: AudioSwitchActivated3rd<br/>
+    /// Default: Ww_OBJ_Riddler_OW_Switches.Play_Riddler_Switch_Pad_ON_3rd
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioSwitchActivated3rd
     {
@@ -345,7 +352,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: VoiceSynthesiserInteractionComponent
+    /// ComponentProperty: VoiceSynthesiserInteractionComponent<br/>
+    /// Default: BmScript.Default__RPresurePad.VSInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent VoiceSynthesiserInteractionComponent
     {
@@ -354,7 +362,8 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmScript.Default__RPresurePad.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -377,47 +386,56 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
     public InlineArray<BmSDK.BmScript.RPresurePad.FPressurePadMICList> MICList => new(9, Ptr + 840, 16, this);
 
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_ACTIVE,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 840);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_PINK_Active,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_PINK_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 856);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_AVOIDPAD_ACTIVE,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_AVOID_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 872);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_Inactive,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_Inactive)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 888);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_BLUE_ACTIVE,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_BLUE_Triggered_INST)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 904);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_YELLOW_Active,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_YELLOW_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 920);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_CYAN_Active,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_CYAN_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 936);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_ACTIVE,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_7
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 952);
     /// <summary>
-    /// StructProperty: MICList
+    /// StructProperty: MICList<br/>
+    /// Default: (WaitingForInputMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_ACTIVE,TriggeredMIC=Riddler_Room_Mech.PressurePad.RR_PB_PAD_Triggered)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RPresurePad.FPressurePadMICList MICList_8
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RPresurePad.FPressurePadMICList>(Ptr + 968);

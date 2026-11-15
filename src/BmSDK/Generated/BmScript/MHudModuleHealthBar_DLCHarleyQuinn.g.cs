@@ -341,7 +341,8 @@ public partial class MHudModuleHealthBar_DLCHarleyQuinn : BmSDK.BmGame.RHudModul
     }
 
     /// <summary>
-    /// FloatProperty: Max
+    /// FloatProperty: Max<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float Max
     {

@@ -195,7 +195,8 @@ public partial class RFreezeClusterGrenadeBm : BmSDK.BmGame.RFreezeClusterGrenad
     }
 
     /// <summary>
-    /// ComponentProperty: HandDryIce
+    /// ComponentProperty: HandDryIce<br/>
+    /// Default: BmScript.Default__RFreezeClusterGrenadeBm.DryIceEffect
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HandDryIce
     {
@@ -204,7 +205,8 @@ public partial class RFreezeClusterGrenadeBm : BmSDK.BmGame.RFreezeClusterGrenad
     }
 
     /// <summary>
-    /// StructProperty: HandDryIceOffset
+    /// StructProperty: HandDryIceOffset<br/>
+    /// Default: (X=-10,Y=5,Z=5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HandDryIceOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2684);

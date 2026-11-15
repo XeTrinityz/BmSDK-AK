@@ -97,7 +97,8 @@ public partial class RRiddlerBatmobileChallenge_FinishLine : BmSDK.BmScript.RRid
     }
 
     /// <summary>
-    /// ObjectProperty: SectionFailEvent
+    /// ObjectProperty: SectionFailEvent<br/>
+    /// Default: Ww_DLC00_UI.Play_DLC_Race_Fail_Section
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SectionFailEvent
     {
@@ -106,7 +107,8 @@ public partial class RRiddlerBatmobileChallenge_FinishLine : BmSDK.BmScript.RRid
     }
 
     /// <summary>
-    /// ObjectProperty: SectionSucceedEvent
+    /// ObjectProperty: SectionSucceedEvent<br/>
+    /// Default: Ww_AR_Challenges.Play_UI_AR_CheckPoint_Touch
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SectionSucceedEvent
     {

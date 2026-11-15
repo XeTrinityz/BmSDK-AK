@@ -261,7 +261,8 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     }
 
     /// <summary>
-    /// BoolProperty: bShutdownOnLeaderRemoval
+    /// BoolProperty: bShutdownOnLeaderRemoval<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShutdownOnLeaderRemoval
     {

@@ -7405,7 +7405,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TimerTimeDilation
+        /// FloatProperty: TimerTimeDilation<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TimerTimeDilation
         {
@@ -7701,7 +7702,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 208);
 
     /// <summary>
-    /// FloatProperty: DrawScale
+    /// FloatProperty: DrawScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DrawScale
     {
@@ -7710,7 +7712,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrawScale3D
+    /// StructProperty: DrawScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrawScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 224);
@@ -7737,7 +7740,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HighResTextureStreaming
+    /// BoolProperty: HighResTextureStreaming<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HighResTextureStreaming
     {
@@ -7908,7 +7912,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bRouteBeginPlayEvenIfStatic
+    /// BoolProperty: bRouteBeginPlayEvenIfStatic<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRouteBeginPlayEvenIfStatic
     {
@@ -7944,7 +7949,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanStepUpOn
+    /// BoolProperty: bCanStepUpOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanStepUpOn
     {
@@ -7953,7 +7959,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAICanStepUpOn
+    /// BoolProperty: bAICanStepUpOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAICanStepUpOn
     {
@@ -8007,7 +8014,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bReplicateMovement
+    /// BoolProperty: bReplicateMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReplicateMovement
     {
@@ -8052,7 +8060,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowFluidSurfaceInteraction
+    /// BoolProperty: bAllowFluidSurfaceInteraction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowFluidSurfaceInteraction
     {
@@ -8250,7 +8259,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bLightsUpdateLastRenderTime
+    /// BoolProperty: bLightsUpdateLastRenderTime<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLightsUpdateLastRenderTime
     {
@@ -8304,7 +8314,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSkipAttachedMoves
+    /// BoolProperty: bSkipAttachedMoves<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipAttachedMoves
     {
@@ -8349,7 +8360,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bMovable
+    /// BoolProperty: bMovable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMovable
     {
@@ -8637,7 +8649,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bJustTeleported
+    /// BoolProperty: bJustTeleported<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bJustTeleported
     {
@@ -8691,7 +8704,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEditable
+    /// BoolProperty: bEditable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEditable
     {
@@ -8835,7 +8849,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEdCanScale
+    /// BoolProperty: bEdCanScale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEdCanScale
     {
@@ -8844,7 +8859,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEdCanNonUniformScale
+    /// BoolProperty: bEdCanNonUniformScale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEdCanNonUniformScale
     {
@@ -8853,7 +8869,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEdCanNegativeScale
+    /// BoolProperty: bEdCanNegativeScale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEdCanNegativeScale
     {
@@ -8880,7 +8897,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowSlopedEdges
+    /// BoolProperty: bAllowSlopedEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowSlopedEdges
     {
@@ -8952,7 +8970,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bValidLineLauncherTarget
+    /// BoolProperty: bValidLineLauncherTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidLineLauncherTarget
     {
@@ -8961,7 +8980,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bValidGelTarget
+    /// BoolProperty: bValidGelTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidGelTarget
     {
@@ -9096,7 +9116,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: Role
+    /// ByteProperty: Role<br/>
+    /// Default: ROLE_Authority
     /// </summary>
     public unsafe BmSDK.Engine.Actor.ENetRole Role
     {
@@ -9105,7 +9126,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: CollisionFilter
+    /// ByteProperty: CollisionFilter<br/>
+    /// Default: COF_Actor
     /// </summary>
     public unsafe BmSDK.Component.ECollisionFilter CollisionFilter
     {
@@ -9114,7 +9136,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: CollisionType
+    /// ByteProperty: CollisionType<br/>
+    /// Default: COLLIDE_NoCollision
     /// </summary>
     public unsafe BmSDK.Engine.Actor.ECollisionType CollisionType
     {
@@ -9123,7 +9146,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: ReplicatedCollisionType
+    /// ByteProperty: ReplicatedCollisionType<br/>
+    /// Default: COLLIDE_MAX
     /// </summary>
     public unsafe BmSDK.Engine.Actor.ECollisionType ReplicatedCollisionType
     {
@@ -9631,7 +9655,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: Red
+        /// ByteProperty: Red<br/>
+        /// Default: 255
         /// </summary>
         public unsafe byte Red
         {
@@ -9640,7 +9665,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: Green
+        /// ByteProperty: Green<br/>
+        /// Default: 255
         /// </summary>
         public unsafe byte Green
         {
@@ -9649,7 +9675,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: Blue
+        /// ByteProperty: Blue<br/>
+        /// Default: 255
         /// </summary>
         public unsafe byte Blue
         {
@@ -9658,7 +9685,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: Alpha
+        /// ByteProperty: Alpha<br/>
+        /// Default: 255
         /// </summary>
         public unsafe byte Alpha
         {

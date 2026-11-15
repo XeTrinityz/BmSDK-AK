@@ -119,7 +119,8 @@ public partial class SeqAct_SetMatInstVectorParam : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// StructProperty: VectorValue
+    /// StructProperty: VectorValue<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor VectorValue
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 376);

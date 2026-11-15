@@ -115,7 +115,8 @@ public partial class RWindVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WindConfig
+    /// StructProperty: WindConfig<br/>
+    /// Default: (IsApplyWind=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FRBasicWindConfig WindConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRBasicWindConfig>(Ptr + 740);
@@ -148,7 +149,8 @@ public partial class RWindVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: GeneratedWindConfig
+    /// StructProperty: GeneratedWindConfig<br/>
+    /// Default: (MinTargetChangePeriod=0.2,MaxTargetChangePeriod=0.5,WindForceCoefficient=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FRWindConfig GeneratedWindConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRWindConfig>(Ptr + 784);

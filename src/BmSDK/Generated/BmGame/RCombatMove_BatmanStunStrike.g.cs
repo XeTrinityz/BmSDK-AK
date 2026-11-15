@@ -878,7 +878,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
     }
 
     /// <summary>
-    /// FloatProperty: TotalStunTime
+    /// FloatProperty: TotalStunTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float TotalStunTime
     {
@@ -896,7 +897,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
     }
 
     /// <summary>
-    /// FloatProperty: MinStunRadius
+    /// FloatProperty: MinStunRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MinStunRadius
     {
@@ -905,7 +907,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
     }
 
     /// <summary>
-    /// FloatProperty: MaxStunRadius
+    /// FloatProperty: MaxStunRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MaxStunRadius
     {
@@ -914,7 +917,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
     }
 
     /// <summary>
-    /// FloatProperty: MaxStunAngle
+    /// FloatProperty: MaxStunAngle<br/>
+    /// Default: 24000
     /// </summary>
     public unsafe float MaxStunAngle
     {
@@ -923,7 +927,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
     }
 
     /// <summary>
-    /// ComponentProperty: StunPropComponent
+    /// ComponentProperty: StunPropComponent<br/>
+    /// Default: BmGame.Default__RCombatMove_BatmanStunStrike.PropMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent StunPropComponent
     {

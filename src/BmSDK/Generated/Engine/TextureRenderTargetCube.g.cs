@@ -88,13 +88,15 @@ public partial class TextureRenderTargetCube : BmSDK.Engine.TextureRenderTarget,
     }
 
     /// <summary>
-    /// StructProperty: ClearColor
+    /// StructProperty: ClearColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ClearColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 320);
 
     /// <summary>
-    /// ByteProperty: Format
+    /// ByteProperty: Format<br/>
+    /// Default: PF_A8R8G8B8
     /// </summary>
     public unsafe BmSDK.Engine.Texture.EPixelFormat Format
     {

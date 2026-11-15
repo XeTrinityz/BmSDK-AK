@@ -938,7 +938,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: TunerFFWaveForm
+    /// ObjectProperty: TunerFFWaveForm<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_HatterBrainGame.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TunerFFWaveForm
     {
@@ -956,7 +957,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: leftStickMovingSound
+    /// ObjectProperty: leftStickMovingSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_BrainGame_MoveStick_L
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent leftStickMovingSound
     {
@@ -965,7 +967,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: rightStickMovingSound
+    /// ObjectProperty: rightStickMovingSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_BrainGame_MoveStick_R
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent rightStickMovingSound
     {
@@ -974,7 +977,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: targetHighlightSound
+    /// ObjectProperty: targetHighlightSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_MiniGame_TargetHighlight
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent targetHighlightSound
     {
@@ -983,7 +987,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: targetLostSound
+    /// ObjectProperty: targetLostSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_MiniGame_Target_Red
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent targetLostSound
     {
@@ -992,7 +997,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: musicParameterName
+    /// ObjectProperty: musicParameterName<br/>
+    /// Default: Ww_Parameters.DLC_MH_Siren_Detune
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName musicParameterName
     {
@@ -1001,7 +1007,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: nodeSuccessSound
+    /// ObjectProperty: nodeSuccessSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_MG_PointSuccess
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent nodeSuccessSound
     {
@@ -1010,7 +1017,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: nodeFailSound
+    /// ObjectProperty: nodeFailSound<br/>
+    /// Default: Ww_DLC14_MH_Minigame.Play_MH_MG_PointFail
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent nodeFailSound
     {
@@ -1052,7 +1060,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: fBootUpTime
+    /// FloatProperty: fBootUpTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fBootUpTime
     {
@@ -1061,7 +1070,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: fShutDownTime
+    /// FloatProperty: fShutDownTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fShutDownTime
     {
@@ -1151,7 +1161,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: LaserMovementSpeed
+    /// FloatProperty: LaserMovementSpeed<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float LaserMovementSpeed
     {
@@ -1277,7 +1288,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ArrayProperty: m_aNodesLeft
+    /// ArrayProperty: m_aNodesLeft<br/>
+    /// Default: (0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> m_aNodesLeft
     {
@@ -1286,7 +1298,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ArrayProperty: m_aNodesRight
+    /// ArrayProperty: m_aNodesRight<br/>
+    /// Default: (0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> m_aNodesRight
     {
@@ -1295,7 +1308,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ArrayProperty: orderedNodeList_Left
+    /// ArrayProperty: orderedNodeList_Left<br/>
+    /// Default: (0,1,2,4,3)
     /// </summary>
     public unsafe BmSDK.TArray<int> orderedNodeList_Left
     {
@@ -1304,7 +1318,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ArrayProperty: orderedNodeList_Right
+    /// ArrayProperty: orderedNodeList_Right<br/>
+    /// Default: (3,2,1,4,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> orderedNodeList_Right
     {
@@ -1438,17 +1453,20 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     public InlineArray<BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings> allSettings => new(4, Ptr + 1192, 48, this);
 
     /// <summary>
-    /// StructProperty: allSettings
+    /// StructProperty: allSettings<br/>
+    /// Default: (timeBetweenNodeActivations=3,laserDeactivateNodeTime=0.2,nodeWarmupTime=0.75,nodeActiveLifetime=4,nodeDestructionScoreChange=-0.075,nodeTimeoutScoreChange=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings allSettings_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings>(Ptr + 1192);
     /// <summary>
-    /// StructProperty: allSettings
+    /// StructProperty: allSettings<br/>
+    /// Default: (timeBetweenNodeActivations=1.2,laserDeactivateNodeTime=0.2,nodeWarmupTime=0.6,nodeActiveLifetime=3,nodeDestructionScoreChange=-0.04,nodeTimeoutScoreChange=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings allSettings_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings>(Ptr + 1240);
     /// <summary>
-    /// StructProperty: allSettings
+    /// StructProperty: allSettings<br/>
+    /// Default: (timeBetweenNodeActivations=0.8,laserDeactivateNodeTime=0.2,nodeWarmupTime=0.6,nodeActiveLifetime=2,nodeDestructionScoreChange=-0.03,nodeTimeoutScoreChange=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings allSettings_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings>(Ptr + 1288);
@@ -1465,7 +1483,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSpecialMoveInstance_HatterBrainGame.FDifficultySettings>(Ptr + 1384);
 
     /// <summary>
-    /// FloatProperty: laserIntersectThreshold
+    /// FloatProperty: laserIntersectThreshold<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float laserIntersectThreshold
     {
@@ -1474,7 +1493,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: nodeIntroAnimDuration
+    /// FloatProperty: nodeIntroAnimDuration<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float nodeIntroAnimDuration
     {
@@ -1483,7 +1503,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: timeFromNodeOutroTriggerToDeactivation
+    /// FloatProperty: timeFromNodeOutroTriggerToDeactivation<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float timeFromNodeOutroTriggerToDeactivation
     {
@@ -1537,7 +1558,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: LaserLerpSpeed
+    /// FloatProperty: LaserLerpSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float LaserLerpSpeed
     {
@@ -1546,7 +1568,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// IntProperty: numInputSlots
+    /// IntProperty: numInputSlots<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int numInputSlots
     {
@@ -1555,7 +1578,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: maxInputDelta
+    /// FloatProperty: maxInputDelta<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float maxInputDelta
     {
@@ -1564,7 +1588,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: LeftThumbOffset
+    /// FloatProperty: LeftThumbOffset<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float LeftThumbOffset
     {
@@ -1573,7 +1598,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: RightThumbOffset
+    /// FloatProperty: RightThumbOffset<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RightThumbOffset
     {
@@ -1582,7 +1608,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: leftThumbLightOffset
+    /// FloatProperty: leftThumbLightOffset<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float leftThumbLightOffset
     {
@@ -1591,7 +1618,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: rightThumbLightOffset
+    /// FloatProperty: rightThumbLightOffset<br/>
+    /// Default: 0.13
     /// </summary>
     public unsafe float rightThumbLightOffset
     {
@@ -1600,7 +1628,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: rumbleMod_Laser
+    /// FloatProperty: rumbleMod_Laser<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float rumbleMod_Laser
     {
@@ -1609,7 +1638,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: rumbleThreshold_Score
+    /// FloatProperty: rumbleThreshold_Score<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float rumbleThreshold_Score
     {
@@ -1618,7 +1648,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: rumbleMod_Score
+    /// FloatProperty: rumbleMod_Score<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float rumbleMod_Score
     {
@@ -1654,7 +1685,8 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: delayBeforeFirstNodeSpawn
+    /// FloatProperty: delayBeforeFirstNodeSpawn<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float delayBeforeFirstNodeSpawn
     {

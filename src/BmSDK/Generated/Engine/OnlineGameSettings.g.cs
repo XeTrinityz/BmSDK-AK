@@ -124,7 +124,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bShouldAdvertise
+    /// BoolProperty: bShouldAdvertise<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldAdvertise
     {
@@ -151,7 +152,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUsesStats
+    /// BoolProperty: bUsesStats<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsesStats
     {
@@ -160,7 +162,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAllowJoinInProgress
+    /// BoolProperty: bAllowJoinInProgress<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowJoinInProgress
     {
@@ -169,7 +172,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAllowInvites
+    /// BoolProperty: bAllowInvites<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowInvites
     {
@@ -178,7 +182,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUsesPresence
+    /// BoolProperty: bUsesPresence<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsesPresence
     {
@@ -187,7 +192,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAllowJoinViaPresence
+    /// BoolProperty: bAllowJoinViaPresence<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowJoinViaPresence
     {
@@ -250,7 +256,8 @@ public partial class OnlineGameSettings : BmSDK.Engine.Settings, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bShouldShrinkArbitratedSessions
+    /// BoolProperty: bShouldShrinkArbitratedSessions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldShrinkArbitratedSessions
     {

@@ -188,7 +188,8 @@ public partial class RVehicleMine : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RVehicleMine.MineMesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh
     {

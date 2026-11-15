@@ -152,7 +152,8 @@ public partial class RCheckpointBlockade : BmSDK.BmGame.RCheckpointBlockadeBase,
     }
 
     /// <summary>
-    /// ComponentProperty: BarrierCollisionMesh
+    /// ComponentProperty: BarrierCollisionMesh<br/>
+    /// Default: BmScript.Default__RCheckpointBlockade.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BarrierCollisionMesh
     {
@@ -161,7 +162,8 @@ public partial class RCheckpointBlockade : BmSDK.BmGame.RCheckpointBlockadeBase,
     }
 
     /// <summary>
-    /// ComponentProperty: BarrierMesh
+    /// ComponentProperty: BarrierMesh<br/>
+    /// Default: BmScript.Default__RCheckpointBlockade.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BarrierMesh
     {
@@ -224,7 +226,8 @@ public partial class RCheckpointBlockade : BmSDK.BmGame.RCheckpointBlockadeBase,
     }
 
     /// <summary>
-    /// ArrayProperty: MicArray
+    /// ArrayProperty: MicArray<br/>
+    /// Default: (BmScript.Default__RCheckpointBlockade.MIC0,BmScript.Default__RCheckpointBlockade.MIC1,BmScript.Default__RCheckpointBlockade.MIC2)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MaterialInstanceConstant> MicArray
     {

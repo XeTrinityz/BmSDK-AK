@@ -400,7 +400,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
     }
 
     /// <summary>
-    /// BoolProperty: bCopyParentMaterialInstancesOnAttach
+    /// BoolProperty: bCopyParentMaterialInstancesOnAttach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCopyParentMaterialInstancesOnAttach
     {
@@ -418,7 +419,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
     }
 
     /// <summary>
-    /// FloatProperty: TopBottomFragmentDistThreshold
+    /// FloatProperty: TopBottomFragmentDistThreshold<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TopBottomFragmentDistThreshold
     {

@@ -179,7 +179,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// ByteProperty: LookAtSpeed
+    /// ByteProperty: LookAtSpeed<br/>
+    /// Default: CLASP_Fast
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.CameraLookAtSpeed LookAtSpeed
     {
@@ -197,7 +198,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bAffectPitch
+    /// BoolProperty: bAffectPitch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectPitch
     {
@@ -206,7 +208,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bAffectYaw
+    /// BoolProperty: bAffectYaw<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectYaw
     {
@@ -215,7 +218,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bForceZoom
+    /// BoolProperty: bForceZoom<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceZoom
     {
@@ -242,7 +246,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bIgnoreLOSBlockersIfInDetectiveMode
+    /// BoolProperty: bIgnoreLOSBlockersIfInDetectiveMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIgnoreLOSBlockersIfInDetectiveMode
     {
@@ -251,7 +256,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bCancelIfInCombat
+    /// BoolProperty: bCancelIfInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCancelIfInCombat
     {
@@ -278,7 +284,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisallowMovement
+    /// BoolProperty: bDisallowMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisallowMovement
     {
@@ -305,7 +312,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float Duration
     {
@@ -314,7 +322,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ZoomFOV
+    /// FloatProperty: ZoomFOV<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZoomFOV
     {
@@ -323,7 +332,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaximumRange
+    /// FloatProperty: MaximumRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaximumRange
     {
@@ -341,7 +351,8 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: FOVAngleToTrigger
+    /// FloatProperty: FOVAngleToTrigger<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FOVAngleToTrigger
     {

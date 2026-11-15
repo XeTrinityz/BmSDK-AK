@@ -79,7 +79,8 @@ public partial class PostProcessEffect : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bShowInEditor
+    /// BoolProperty: bShowInEditor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowInEditor
     {
@@ -88,7 +89,8 @@ public partial class PostProcessEffect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowInGame
+    /// BoolProperty: bShowInGame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowInGame
     {
@@ -178,7 +180,8 @@ public partial class PostProcessEffect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SceneDPG
+    /// ByteProperty: SceneDPG<br/>
+    /// Default: SDPG_PostProcess
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup SceneDPG
     {

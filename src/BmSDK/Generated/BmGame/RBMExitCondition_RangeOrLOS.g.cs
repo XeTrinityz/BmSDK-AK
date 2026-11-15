@@ -117,7 +117,8 @@ public partial class RBMExitCondition_RangeOrLOS : BmSDK.BmGame.RBMExitCondition
     }
 
     /// <summary>
-    /// FloatProperty: LOSDelay
+    /// FloatProperty: LOSDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LOSDelay
     {
@@ -126,7 +127,8 @@ public partial class RBMExitCondition_RangeOrLOS : BmSDK.BmGame.RBMExitCondition
     }
 
     /// <summary>
-    /// BoolProperty: bCheckFOV
+    /// BoolProperty: bCheckFOV<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckFOV
     {
@@ -144,7 +146,8 @@ public partial class RBMExitCondition_RangeOrLOS : BmSDK.BmGame.RBMExitCondition
     }
 
     /// <summary>
-    /// BoolProperty: bCheckLOS
+    /// BoolProperty: bCheckLOS<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckLOS
     {

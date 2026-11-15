@@ -164,7 +164,8 @@ public partial class RBMBehaviour_PuzzleMonkey : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// NameProperty: LeftOneCage
+    /// NameProperty: LeftOneCage<br/>
+    /// Default: Walk_Left_256
     /// </summary>
     public unsafe BmSDK.FName LeftOneCage
     {
@@ -173,7 +174,8 @@ public partial class RBMBehaviour_PuzzleMonkey : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// NameProperty: LeftTwoCage
+    /// NameProperty: LeftTwoCage<br/>
+    /// Default: Walk_Left_512
     /// </summary>
     public unsafe BmSDK.FName LeftTwoCage
     {
@@ -182,7 +184,8 @@ public partial class RBMBehaviour_PuzzleMonkey : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// NameProperty: RightOneCage
+    /// NameProperty: RightOneCage<br/>
+    /// Default: Walk_Right_256
     /// </summary>
     public unsafe BmSDK.FName RightOneCage
     {
@@ -191,7 +194,8 @@ public partial class RBMBehaviour_PuzzleMonkey : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// NameProperty: RightTwoCage
+    /// NameProperty: RightTwoCage<br/>
+    /// Default: Walk_Right_512
     /// </summary>
     public unsafe BmSDK.FName RightTwoCage
     {
@@ -200,7 +204,8 @@ public partial class RBMBehaviour_PuzzleMonkey : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: CageWidth
+    /// FloatProperty: CageWidth<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float CageWidth
     {

@@ -268,7 +268,8 @@ public partial class RAEC_ExplodedWall_GroupCheck_Perimeter : BmSDK.BmGame.RAler
     }
 
     /// <summary>
-    /// FloatProperty: ReassignPeriod
+    /// FloatProperty: ReassignPeriod<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ReassignPeriod
     {

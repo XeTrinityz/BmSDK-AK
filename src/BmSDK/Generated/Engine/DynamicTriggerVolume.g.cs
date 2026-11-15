@@ -93,7 +93,8 @@ public partial class DynamicTriggerVolume : BmSDK.Engine.TriggerVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

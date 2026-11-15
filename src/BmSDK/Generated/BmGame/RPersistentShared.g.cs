@@ -1097,7 +1097,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SharedGlobalFlags
+    /// ArrayProperty: SharedGlobalFlags<br/>
+    /// Default: ("Stagg_C1_Trophy_1_Collected","Stagg_C1_Trophy_2_Collected","Stagg_C1_Trophy_3_Collected","Stagg_B1_Trophy_4_Collected","Stagg_C1_Trophy_5_Collected","Stagg_B1_Trophy_6_Collected","Stagg_B1_Trophy_7_...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> SharedGlobalFlags
     {
@@ -1106,7 +1107,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CatwomanEpisodes_New
+    /// ArrayProperty: CatwomanEpisodes_New<br/>
+    /// Default: (0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> CatwomanEpisodes_New
     {
@@ -1115,7 +1117,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CatwomanEpisodes_Unlocked
+    /// ArrayProperty: CatwomanEpisodes_Unlocked<br/>
+    /// Default: (0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> CatwomanEpisodes_Unlocked
     {
@@ -1151,7 +1154,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CharacterViewer_New
+    /// ArrayProperty: CharacterViewer_New<br/>
+    /// Default: (0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
     /// </summary>
     public unsafe BmSDK.TArray<byte> CharacterViewer_New
     {
@@ -1160,7 +1164,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CharacterViewer_Unlocked
+    /// ArrayProperty: CharacterViewer_Unlocked<br/>
+    /// Default: (0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> CharacterViewer_Unlocked
     {
@@ -1169,7 +1174,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GalleryUnlocks_New
+    /// ArrayProperty: GalleryUnlocks_New<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> GalleryUnlocks_New
     {
@@ -1178,7 +1184,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GalleryUnlocks
+    /// ArrayProperty: GalleryUnlocks<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> GalleryUnlocks
     {
@@ -1214,7 +1221,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DLC_MW_Completed
+    /// ArrayProperty: DLC_MW_Completed<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<byte> DLC_MW_Completed
     {
@@ -1223,7 +1231,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CityStories
+    /// ArrayProperty: CityStories<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> CityStories
     {
@@ -1232,7 +1241,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LinkedCityStories
+    /// ArrayProperty: LinkedCityStories<br/>
+    /// Default: (2,3,19,22,24,25,26,28,34,35,37,41,42,43,48,49,52,53,54,56,59,61)
     /// </summary>
     public unsafe BmSDK.TArray<int> LinkedCityStories
     {
@@ -1241,7 +1251,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GameplayStats
+    /// ArrayProperty: GameplayStats<br/>
+    /// Default: (0)
     /// </summary>
     public unsafe BmSDK.TArray<float> GameplayStats
     {
@@ -1250,7 +1261,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PercentStats_Game
+    /// ArrayProperty: PercentStats_Game<br/>
+    /// Default: (0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,0,0,0,0,0,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> PercentStats_Game
     {
@@ -1259,7 +1271,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PercentStats_GamePlus
+    /// ArrayProperty: PercentStats_GamePlus<br/>
+    /// Default: (0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> PercentStats_GamePlus
     {
@@ -1268,7 +1281,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StoryOverAllPercent
+    /// ArrayProperty: StoryOverAllPercent<br/>
+    /// Default: (0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> StoryOverAllPercent
     {
@@ -1403,7 +1417,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PickupTallys
+    /// ArrayProperty: PickupTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> PickupTallys
     {
@@ -1412,7 +1427,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CWPickupTallys
+    /// ArrayProperty: CWPickupTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> CWPickupTallys
     {
@@ -1421,7 +1437,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: JokerTeethPickupTallys
+    /// ArrayProperty: JokerTeethPickupTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> JokerTeethPickupTallys
     {
@@ -1430,7 +1447,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CharacterTapesCollected
+    /// ArrayProperty: CharacterTapesCollected<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> CharacterTapesCollected
     {
@@ -1439,7 +1457,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CharacterTapesMax
+    /// ArrayProperty: CharacterTapesMax<br/>
+    /// Default: (0,3,3,3,3,3,3,3,1,6)
     /// </summary>
     public unsafe BmSDK.TArray<int> CharacterTapesMax
     {
@@ -1448,7 +1467,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: TapesCollected
+    /// ArrayProperty: TapesCollected<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> TapesCollected
     {
@@ -1457,7 +1477,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: JokerBalloonTallys
+    /// ArrayProperty: JokerBalloonTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> JokerBalloonTallys
     {
@@ -1466,7 +1487,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BrokenPenguinTallys
+    /// ArrayProperty: BrokenPenguinTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> BrokenPenguinTallys
     {
@@ -1475,7 +1497,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BrokenCameraTallys
+    /// ArrayProperty: BrokenCameraTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> BrokenCameraTallys
     {
@@ -1484,7 +1507,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddleTallys
+    /// ArrayProperty: RiddleTallys<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> RiddleTallys
     {
@@ -1529,7 +1553,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PickupRevealsLeft
+    /// IntProperty: PickupRevealsLeft<br/>
+    /// Default: 315
     /// </summary>
     public unsafe int PickupRevealsLeft
     {
@@ -1538,7 +1563,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumSecretsTotal
+    /// IntProperty: NumSecretsTotal<br/>
+    /// Default: 315
     /// </summary>
     public unsafe int NumSecretsTotal
     {
@@ -1547,7 +1573,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: InterrogatesLeft
+    /// IntProperty: InterrogatesLeft<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int InterrogatesLeft
     {
@@ -1583,7 +1610,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BatChallengeCurrent
+    /// ArrayProperty: BatChallengeCurrent<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> BatChallengeCurrent
     {
@@ -1592,7 +1620,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BatChallengeBest
+    /// ArrayProperty: BatChallengeBest<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> BatChallengeBest
     {
@@ -1601,7 +1630,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BatChallengeNeeded
+    /// ArrayProperty: BatChallengeNeeded<br/>
+    /// Default: (0,150,250,50,5,30,20,3,5,3,3,5,3,0,2,10,5,5,5,5,0,3,1,3,0,3,0,0,0,3,0,0,1,1,0,3,0,1,5,0,0,3,0,8,3,3)
     /// </summary>
     public unsafe BmSDK.TArray<float> BatChallengeNeeded
     {
@@ -1610,7 +1640,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BatChallengeBeaten
+    /// ArrayProperty: BatChallengeBeaten<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> BatChallengeBeaten
     {
@@ -1628,7 +1659,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: XpForNextUpgrade
+    /// FloatProperty: XpForNextUpgrade<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float XpForNextUpgrade
     {

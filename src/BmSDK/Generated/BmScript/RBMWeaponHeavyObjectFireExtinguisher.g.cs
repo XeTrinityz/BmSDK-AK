@@ -217,7 +217,8 @@ public partial class RBMWeaponHeavyObjectFireExtinguisher : BmSDK.BmScript.RBMWe
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RBMWeaponHeavyObjectFireExtinguisher.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -241,7 +242,8 @@ public partial class RBMWeaponHeavyObjectFireExtinguisher : BmSDK.BmScript.RBMWe
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1760);
 
     /// <summary>
-    /// StructProperty: TargetOffset
+    /// StructProperty: TargetOffset<br/>
+    /// Default: (Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1772);

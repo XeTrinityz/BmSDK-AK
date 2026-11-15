@@ -201,7 +201,8 @@ public partial class RChallengeWall_Straight : BmSDK.BmGame.RChallengeWallBase, 
     }
 
     /// <summary>
-    /// BoolProperty: StartActive
+    /// BoolProperty: StartActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StartActive
     {
@@ -219,7 +220,8 @@ public partial class RChallengeWall_Straight : BmSDK.BmGame.RChallengeWallBase, 
     }
 
     /// <summary>
-    /// ComponentProperty: WallStaticMesh
+    /// ComponentProperty: WallStaticMesh<br/>
+    /// Default: BmScript.Default__RChallengeWall_Straight.StatMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent WallStaticMesh
     {
@@ -228,7 +230,8 @@ public partial class RChallengeWall_Straight : BmSDK.BmGame.RChallengeWallBase, 
     }
 
     /// <summary>
-    /// ObjectProperty: TurnAroundMove
+    /// ObjectProperty: TurnAroundMove<br/>
+    /// Default: Batman_Environment_Moves.Glide.Glide_Out_Of_Bounds
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig TurnAroundMove
     {
@@ -237,7 +240,8 @@ public partial class RChallengeWall_Straight : BmSDK.BmGame.RChallengeWallBase, 
     }
 
     /// <summary>
-    /// ObjectProperty: InGameMaterial
+    /// ObjectProperty: InGameMaterial<br/>
+    /// Default: XFX_Joel.ARChallenge.ARHighlight_Border_General_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant InGameMaterial
     {

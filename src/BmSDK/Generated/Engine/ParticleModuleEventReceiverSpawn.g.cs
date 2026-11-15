@@ -79,7 +79,8 @@ public partial class ParticleModuleEventReceiverSpawn : BmSDK.Engine.ParticleMod
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SpawnCount
+    /// StructProperty: SpawnCount<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleEventReceiverSpawn.RequiredDistributionSpawnCount)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SpawnCount
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 108);
@@ -112,7 +113,8 @@ public partial class ParticleModuleEventReceiverSpawn : BmSDK.Engine.ParticleMod
     }
 
     /// <summary>
-    /// StructProperty: InheritVelocityScale
+    /// StructProperty: InheritVelocityScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleEventReceiverSpawn.RequiredDistributionInheritVelocityScale,MinRange=(X=1...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector InheritVelocityScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 148);

@@ -179,7 +179,8 @@ public partial class RBMWeaponRiflePredFull : BmSDK.BmGame.RBMWeaponRiflePredThu
     }
 
     /// <summary>
-    /// ComponentProperty: PredLensFlareFX
+    /// ComponentProperty: PredLensFlareFX<br/>
+    /// Default: BmScript.Default__RBMWeaponRiflePredFull.PredLensFlareFX0
     /// </summary>
     public unsafe BmSDK.Engine.LensFlareComponent PredLensFlareFX
     {

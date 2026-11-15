@@ -384,7 +384,8 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     }
 
     /// <summary>
-    /// StrProperty: AudioSurvFrame
+    /// StrProperty: AudioSurvFrame<br/>
+    /// Default: "off"
     /// </summary>
     public unsafe BmSDK.FString AudioSurvFrame
     {

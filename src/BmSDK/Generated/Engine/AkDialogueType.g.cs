@@ -211,7 +211,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: StreamingPriority
+    /// ByteProperty: StreamingPriority<br/>
+    /// Default: AKIO_PRIORITY_NORMAL
     /// </summary>
     public unsafe BmSDK.Engine.AkWwise.EAkIOStreamPriorities StreamingPriority
     {
@@ -238,7 +239,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPreloadStreams
+    /// BoolProperty: bPreloadStreams<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPreloadStreams
     {
@@ -274,7 +276,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowSubtitles
+    /// BoolProperty: bShowSubtitles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowSubtitles
     {
@@ -283,7 +286,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowCharacterNameInSubtitles
+    /// BoolProperty: bShowCharacterNameInSubtitles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowCharacterNameInSubtitles
     {
@@ -301,7 +305,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEmoteInterrupts
+    /// BoolProperty: bEmoteInterrupts<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEmoteInterrupts
     {
@@ -328,7 +333,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowMarkerUI
+    /// BoolProperty: bShowMarkerUI<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowMarkerUI
     {
@@ -418,7 +424,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSuppressSurveillance
+    /// BoolProperty: bSuppressSurveillance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSuppressSurveillance
     {
@@ -436,7 +443,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurveillanceMinRange
+    /// FloatProperty: SurveillanceMinRange<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float SurveillanceMinRange
     {
@@ -445,7 +453,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurveillanceMidRange
+    /// FloatProperty: SurveillanceMidRange<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float SurveillanceMidRange
     {
@@ -454,7 +463,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurveillanceMaxRange
+    /// FloatProperty: SurveillanceMaxRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float SurveillanceMaxRange
     {
@@ -463,7 +473,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurveillanceDistortionDistance
+    /// FloatProperty: SurveillanceDistortionDistance<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float SurveillanceDistortionDistance
     {
@@ -481,7 +492,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SubtitleMaxDistance
+    /// FloatProperty: SubtitleMaxDistance<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float SubtitleMaxDistance
     {
@@ -499,7 +511,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WallaDuck
+    /// FloatProperty: WallaDuck<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WallaDuck
     {
@@ -553,7 +566,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DuckMultiplier
+    /// FloatProperty: DuckMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DuckMultiplier
     {

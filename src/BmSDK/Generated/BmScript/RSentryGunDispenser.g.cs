@@ -150,7 +150,8 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: GadgetInteractions
+    /// ComponentProperty: GadgetInteractions<br/>
+    /// Default: BmScript.Default__RSentryGunDispenser.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent GadgetInteractions
     {
@@ -159,7 +160,8 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: DisruptedMIC
+    /// ObjectProperty: DisruptedMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant DisruptedMIC
     {

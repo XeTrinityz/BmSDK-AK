@@ -181,7 +181,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawner : BmSDK.BmGame.RSeqAct_TwoFa
     }
 
     /// <summary>
-    /// ArrayProperty: CustomIdles
+    /// ArrayProperty: CustomIdles<br/>
+    /// Default: (Nervous_Stand_Glance,Nervous_Stand_Idle,Abseiling_Through_Roof_Close_Left_Idle,Abseiling_Through_Roof_Close_Right_02_Idle,Abseiling_Through_Roof_Far_Left_Idle,Abseiling_Through_Roof_Far_Right_Idle,Mi...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> CustomIdles
     {
@@ -190,7 +191,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawner : BmSDK.BmGame.RSeqAct_TwoFa
     }
 
     /// <summary>
-    /// ArrayProperty: CustomAnimSets
+    /// ArrayProperty: CustomAnimSets<br/>
+    /// Default: (Anim_Thug_Rifle.Code.TGRifle_PredCore,Anim_Thug_Rifle.Code.TGRifle_PredCore,Anim_IC_ACE_B1.Militia.Militia_Movement,Anim_IC_ACE_B1.Militia.Militia_Movement,Anim_IC_ACE_B1.Militia.Militia_Movement,Ani...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSet> CustomAnimSets
     {

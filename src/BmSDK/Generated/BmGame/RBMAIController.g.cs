@@ -3030,7 +3030,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: RiotBrain
+    /// ObjectProperty: RiotBrain<br/>
+    /// Default: BmGame.Default__RBMAIController.RiotBrain0
     /// </summary>
     public unsafe BmSDK.BmGame.RRiotBrain RiotBrain
     {
@@ -3372,7 +3373,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: TriggerActivationEventFrames
+    /// IntProperty: TriggerActivationEventFrames<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TriggerActivationEventFrames
     {
@@ -3417,7 +3419,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SuspectLimit
+    /// FloatProperty: SuspectLimit<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SuspectLimit
     {
@@ -3426,7 +3429,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SpottedLimit
+    /// FloatProperty: SpottedLimit<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float SpottedLimit
     {
@@ -3435,7 +3439,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MinCanSeePercent
+    /// FloatProperty: MinCanSeePercent<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MinCanSeePercent
     {
@@ -3444,7 +3449,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SimpleFOVCheckRange
+    /// FloatProperty: SimpleFOVCheckRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float SimpleFOVCheckRange
     {
@@ -3453,7 +3459,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: Attack360AwarenessRange
+    /// FloatProperty: Attack360AwarenessRange<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float Attack360AwarenessRange
     {
@@ -3489,7 +3496,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LookAtPlayerDistance
+    /// FloatProperty: LookAtPlayerDistance<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float LookAtPlayerDistance
     {
@@ -3507,7 +3515,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: HeadBone
+    /// NameProperty: HeadBone<br/>
+    /// Default: Bip01_Head
     /// </summary>
     public unsafe BmSDK.FName HeadBone
     {
@@ -3525,7 +3534,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: NoStateName
+    /// NameProperty: NoStateName<br/>
+    /// Default: NoState
     /// </summary>
     public unsafe BmSDK.FName NoStateName
     {

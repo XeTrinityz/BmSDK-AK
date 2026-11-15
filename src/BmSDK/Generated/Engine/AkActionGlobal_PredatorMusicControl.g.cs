@@ -79,7 +79,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: Predator_Intro
+    /// ObjectProperty: Predator_Intro<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Predator_Intro
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName Predator_Intro
     {
@@ -88,7 +89,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// ObjectProperty: Predator_FirstTD_Silent
+    /// ObjectProperty: Predator_FirstTD_Silent<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Predator_SilentTD
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName Predator_FirstTD_Silent
     {
@@ -97,7 +99,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// ObjectProperty: Predator_FirstTD_Noisy
+    /// ObjectProperty: Predator_FirstTD_Noisy<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Predator_NoisyTD
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName Predator_FirstTD_Noisy
     {
@@ -106,7 +109,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// ObjectProperty: Predator_Loop
+    /// ObjectProperty: Predator_Loop<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Predator_Layered
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName Predator_Loop
     {
@@ -142,7 +146,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// FloatProperty: Predator_Fail_Timeout
+    /// FloatProperty: Predator_Fail_Timeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float Predator_Fail_Timeout
     {
@@ -160,7 +165,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// BoolProperty: FailOnDeath
+    /// BoolProperty: FailOnDeath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FailOnDeath
     {
@@ -178,7 +184,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// BoolProperty: ReactToOtherPlayerSpotted
+    /// BoolProperty: ReactToOtherPlayerSpotted<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ReactToOtherPlayerSpotted
     {
@@ -313,7 +320,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// FloatProperty: Predator_Success_Timeout
+    /// FloatProperty: Predator_Success_Timeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float Predator_Success_Timeout
     {
@@ -331,7 +339,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// IntProperty: NumberOfPredatorSteps
+    /// IntProperty: NumberOfPredatorSteps<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int NumberOfPredatorSteps
     {
@@ -340,7 +349,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// FloatProperty: StepDownTime
+    /// FloatProperty: StepDownTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float StepDownTime
     {
@@ -358,7 +368,8 @@ public partial class AkActionGlobal_PredatorMusicControl : BmSDK.Engine.AkAction
     }
 
     /// <summary>
-    /// FloatProperty: SpottedDownTime
+    /// FloatProperty: SpottedDownTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float SpottedDownTime
     {

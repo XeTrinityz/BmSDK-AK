@@ -359,7 +359,8 @@ public partial class RSeqAct_IntegratedChallengeControl_MultiRound : BmSDK.BmScr
     }
 
     /// <summary>
-    /// FloatProperty: timeBeforeRoundSummaryVisible
+    /// FloatProperty: timeBeforeRoundSummaryVisible<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float timeBeforeRoundSummaryVisible
     {
@@ -368,7 +369,8 @@ public partial class RSeqAct_IntegratedChallengeControl_MultiRound : BmSDK.BmScr
     }
 
     /// <summary>
-    /// FloatProperty: timeBeforeRoundSummarySkippable
+    /// FloatProperty: timeBeforeRoundSummarySkippable<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float timeBeforeRoundSummarySkippable
     {
@@ -377,7 +379,8 @@ public partial class RSeqAct_IntegratedChallengeControl_MultiRound : BmSDK.BmScr
     }
 
     /// <summary>
-    /// FloatProperty: roundSummaryFadeOutTime
+    /// FloatProperty: roundSummaryFadeOutTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float roundSummaryFadeOutTime
     {

@@ -171,7 +171,8 @@ public partial class ForceFieldShapeSphere : BmSDK.Engine.ForceFieldShape, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: Shape
+    /// ComponentProperty: Shape<br/>
+    /// Default: Engine.Default__ForceFieldShapeSphere.DrawSphere0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent Shape
     {

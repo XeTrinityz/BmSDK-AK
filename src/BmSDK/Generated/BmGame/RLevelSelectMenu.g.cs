@@ -686,7 +686,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bMilestoneMapsOnly
+    /// BoolProperty: bMilestoneMapsOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMilestoneMapsOnly
     {
@@ -749,7 +750,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: ChapterNames
+    /// ArrayProperty: ChapterNames<br/>
+    /// Default: ("None","1","2","3","4","5","6","7","8","9")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ChapterNames
     {
@@ -758,7 +760,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: CharacterNames
+    /// ArrayProperty: CharacterNames<br/>
+    /// Default: ("Batman","Catwoman","Nightwing","BruceWayne","Robin","Azrael","Harley","DLCHarleyQuinn","DLCRedHood","DLCBatgirl","Robin0","Nightwing0","Catwoman0")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> CharacterNames
     {
@@ -767,7 +770,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: BatmobileNames
+    /// ArrayProperty: BatmobileNames<br/>
+    /// Default: ("Batmobile","BatmobileMk2","BatmobilePrototype","Batmobile1966","BatmobileJoker","BatmobileBurton","BatmobileClassic","BatmobileTumbler","BatmobileSnyder","BatmobileAsylum","BatmobileRocksteady","Bat...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> BatmobileNames
     {

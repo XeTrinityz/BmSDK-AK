@@ -566,7 +566,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: WeaponImpulse
+    /// FloatProperty: WeaponImpulse<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float WeaponImpulse
     {
@@ -575,7 +576,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ThrowImpulse
+    /// FloatProperty: ThrowImpulse<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float ThrowImpulse
     {
@@ -584,7 +586,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: PhysicsGrabber
+    /// ComponentProperty: PhysicsGrabber<br/>
+    /// Default: BmGame.Default__RPhysicsGrabber.RB_Handle0
     /// </summary>
     public unsafe BmSDK.Engine.RB_Handle PhysicsGrabber
     {
@@ -677,7 +680,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// ByteProperty: CurrentImpactMaterial
+    /// ByteProperty: CurrentImpactMaterial<br/>
+    /// Default: EPMIT_ThugFirearm
     /// </summary>
     public unsafe BmSDK.Engine.RPhysicalMaterialProperty.EPhysMaterialImpactTypes CurrentImpactMaterial
     {

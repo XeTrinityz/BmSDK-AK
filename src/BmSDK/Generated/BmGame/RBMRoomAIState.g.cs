@@ -3896,7 +3896,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: CurrentSentryAssignChance
+    /// FloatProperty: CurrentSentryAssignChance<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float CurrentSentryAssignChance
     {
@@ -3923,7 +3924,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: RandMaxTerrified
+    /// IntProperty: RandMaxTerrified<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int RandMaxTerrified
     {
@@ -3941,7 +3943,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenReloadBarks
+    /// FloatProperty: MinTimeBetweenReloadBarks<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MinTimeBetweenReloadBarks
     {
@@ -4022,7 +4025,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastThermalCheckBarkTime
+    /// FloatProperty: LastThermalCheckBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastThermalCheckBarkTime
     {
@@ -4031,7 +4035,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastCornerExitBarkTime
+    /// FloatProperty: LastCornerExitBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastCornerExitBarkTime
     {
@@ -4040,7 +4045,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastMineSafeReactionBarkTime
+    /// FloatProperty: LastMineSafeReactionBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastMineSafeReactionBarkTime
     {
@@ -4049,7 +4055,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastPairedStopMoveTime
+    /// FloatProperty: LastPairedStopMoveTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastPairedStopMoveTime
     {
@@ -4058,7 +4065,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastLedgeSearchBarkTime
+    /// FloatProperty: LastLedgeSearchBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastLedgeSearchBarkTime
     {
@@ -4067,7 +4075,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastGrateSearchBarkTime
+    /// FloatProperty: LastGrateSearchBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastGrateSearchBarkTime
     {
@@ -4076,7 +4085,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastFinishGuardPerimBarkTime
+    /// FloatProperty: LastFinishGuardPerimBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastFinishGuardPerimBarkTime
     {
@@ -4148,7 +4158,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: ValidTakedownActions
+    /// ArrayProperty: ValidTakedownActions<br/>
+    /// Default: (GA_Takedown_GrabStanding,GA_Takedown_GrabFloor,GA_Takedown_GrabGrate,GA_Takedown_GrabCorner,GA_Takedown_HangAttack,GA_Takedown_GlassAttack,GA_Takedown_VentAttack,GA_Takedown_LedgeAttack,GA_Takedown_D...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.EGameAction> ValidTakedownActions
     {
@@ -4157,7 +4168,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: ValidTakedownNames
+    /// ArrayProperty: ValidTakedownNames<br/>
+    /// Default: ("TakedownStanding","TakedownFloorGrab","TakedownFloorGrate","TakedownCorner","TakedownInvertedTakedown","TakedownGlassAttack","TakedownWallVent","TakedownLedge","TakedownDrop")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ValidTakedownNames
     {
@@ -4193,7 +4205,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ArrayProperty: RewardThresholds
+    /// ArrayProperty: RewardThresholds<br/>
+    /// Default: (1,2,3)
     /// </summary>
     public unsafe BmSDK.TArray<int> RewardThresholds
     {
@@ -4318,7 +4331,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     public InlineArray<BmSDK.FName> takedownResponseBarkFlags_Initial => new(12, Ptr + 984, 8, this);
 
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_GrateTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_0
     {
@@ -4326,7 +4340,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 984); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_SilentTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_1
     {
@@ -4334,7 +4349,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 992); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_LedgeTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_2
     {
@@ -4342,7 +4358,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1000); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_WeakWallTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_3
     {
@@ -4350,7 +4367,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1008); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_WeakWallExplodeTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_4
     {
@@ -4358,7 +4376,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1016); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_WindowTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_5
     {
@@ -4366,7 +4385,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1024); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_GlideKickTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_6
     {
@@ -4374,7 +4394,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1032); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_DropAttackTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_7
     {
@@ -4382,7 +4403,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1040); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_InvertedTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_8
     {
@@ -4390,7 +4412,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1048); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_TunnelTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_9
     {
@@ -4406,7 +4429,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1064); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Initial
+    /// NameProperty: takedownResponseBarkFlags_Initial<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounceInitial_ReverseLedgeTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Initial_11
     {
@@ -4420,7 +4444,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     public InlineArray<BmSDK.FName> takedownResponseBarkFlags_Repeat => new(12, Ptr + 1080, 8, this);
 
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_GrateTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_0
     {
@@ -4428,7 +4453,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1080); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_SilentTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_1
     {
@@ -4436,7 +4462,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1088); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_LedgeTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_2
     {
@@ -4444,7 +4471,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1096); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_WeakWallTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_3
     {
@@ -4452,7 +4480,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1104); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_WeakWallTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_4
     {
@@ -4460,7 +4489,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1112); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_WindowTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_5
     {
@@ -4468,7 +4498,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1120); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_MiscVP_TD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_6
     {
@@ -4476,7 +4507,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1128); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_MiscVP_TD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_7
     {
@@ -4484,7 +4516,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1136); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_MiscVP_TD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_8
     {
@@ -4492,7 +4525,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1144); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_TunnelTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_9
     {
@@ -4508,7 +4542,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1160); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_Repeat
+    /// NameProperty: takedownResponseBarkFlags_Repeat<br/>
+    /// Default: FV_EVENT_MD_RedHoodAnnounce_ReverseLedgeTD
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_Repeat_11
     {
@@ -4522,7 +4557,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     public InlineArray<BmSDK.FName> takedownResponseBarkFlags_ThugRecover => new(12, Ptr + 1176, 8, this);
 
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Grate
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_0
     {
@@ -4530,7 +4566,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1176); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Silent
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_1
     {
@@ -4538,7 +4575,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1184); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Ledge
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_2
     {
@@ -4546,7 +4584,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1192); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_GelWall
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_3
     {
@@ -4554,7 +4593,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1200); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_GelWall
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_4
     {
@@ -4570,7 +4610,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1216); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_GlideKick
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_6
     {
@@ -4578,7 +4619,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1224); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Drop
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_7
     {
@@ -4586,7 +4628,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1232); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Inverted
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_8
     {
@@ -4594,7 +4637,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1240); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_Tunnel
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_9
     {
@@ -4602,7 +4646,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1248); }
     }
     /// <summary>
-    /// NameProperty: takedownResponseBarkFlags_ThugRecover
+    /// NameProperty: takedownResponseBarkFlags_ThugRecover<br/>
+    /// Default: FV_INJURYSOURCE_DroneShock
     /// </summary>
     public unsafe BmSDK.FName takedownResponseBarkFlags_ThugRecover_10
     {
@@ -4664,7 +4709,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: DMDDecayRate
+    /// FloatProperty: DMDDecayRate<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float DMDDecayRate
     {
@@ -4673,7 +4719,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: DMDIncreaseRate
+    /// FloatProperty: DMDIncreaseRate<br/>
+    /// Default: 0.11
     /// </summary>
     public unsafe float DMDIncreaseRate
     {
@@ -4682,7 +4729,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: DMD_HUDWarnThreshold
+    /// FloatProperty: DMD_HUDWarnThreshold<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float DMD_HUDWarnThreshold
     {
@@ -4700,7 +4748,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: dmdAssignmentInterval
+    /// FloatProperty: dmdAssignmentInterval<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float dmdAssignmentInterval
     {
@@ -4721,7 +4770,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1336);
 
     /// <summary>
-    /// IntProperty: maxLevelScriptingInstances
+    /// IntProperty: maxLevelScriptingInstances<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int maxLevelScriptingInstances
     {
@@ -4739,7 +4789,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenLastStands
+    /// FloatProperty: TimeBetweenLastStands<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float TimeBetweenLastStands
     {
@@ -4820,7 +4871,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: iNumberOfFearTakedownsAvailable
+    /// IntProperty: iNumberOfFearTakedownsAvailable<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int iNumberOfFearTakedownsAvailable
     {
@@ -4829,7 +4881,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: iMaximumNumberOfFearTakedowns
+    /// IntProperty: iMaximumNumberOfFearTakedowns<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int iMaximumNumberOfFearTakedowns
     {
@@ -4838,7 +4891,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastDroneScanBarkTime
+    /// FloatProperty: LastDroneScanBarkTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastDroneScanBarkTime
     {
@@ -4991,7 +5045,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastPlantBombTime
+    /// FloatProperty: LastPlantBombTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastPlantBombTime
     {
@@ -5027,7 +5082,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastSearchUDestSpecialCaseTime
+    /// FloatProperty: LastSearchUDestSpecialCaseTime<br/>
+    /// Default: -600
     /// </summary>
     public unsafe float LastSearchUDestSpecialCaseTime
     {
@@ -5036,7 +5092,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LastStealthThugLineTime
+    /// FloatProperty: LastStealthThugLineTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float LastStealthThugLineTime
     {
@@ -5045,7 +5102,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: AlertToMineLayersInFrames
+    /// IntProperty: AlertToMineLayersInFrames<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int AlertToMineLayersInFrames
     {

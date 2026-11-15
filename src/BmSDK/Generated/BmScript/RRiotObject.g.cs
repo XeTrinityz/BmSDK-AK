@@ -362,7 +362,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: MolotovFlamePfx
+    /// ObjectProperty: MolotovFlamePfx<br/>
+    /// Default: VFX_Riot.Particles.Molotov_Bottle_Fire
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem MolotovFlamePfx
     {
@@ -371,7 +372,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: MolotovExplodePfx
+    /// ObjectProperty: MolotovExplodePfx<br/>
+    /// Default: VFX_Riot.Particles.Vehicle.Fire_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem MolotovExplodePfx
     {
@@ -380,7 +382,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: FlareFlameMilitiaArch
+    /// ObjectProperty: FlareFlameMilitiaArch<br/>
+    /// Default: VFX_Riot.Particles.Flares.Riot_Flare_Militia
     /// </summary>
     public unsafe BmSDK.Engine.Emitter FlareFlameMilitiaArch
     {
@@ -389,7 +392,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: SpraycanSprayPfx
+    /// ObjectProperty: SpraycanSprayPfx<br/>
+    /// Default: VFX_Riot.Particles.Graffiti_Spray
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SpraycanSprayPfx
     {
@@ -425,7 +429,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: FlareFlameArch
+    /// ArrayProperty: FlareFlameArch<br/>
+    /// Default: (VFX_Riot.Particles.Flares.Riot_Flare_C_1,VFX_Riot.Particles.Flares.Riot_Flare_C_2,VFX_Riot.Particles.Flares.Riot_Flare_C_3)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.Emitter> FlareFlameArch
     {
@@ -461,7 +466,8 @@ public partial class RRiotObject : BmSDK.BmGame.RRiotObjectBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bStopFXOnDrop
+    /// BoolProperty: bStopFXOnDrop<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopFXOnDrop
     {

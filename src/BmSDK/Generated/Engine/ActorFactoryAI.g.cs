@@ -79,7 +79,8 @@ public partial class ActorFactoryAI : BmSDK.Engine.ActorFactory, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ClassProperty: ControllerClass
+    /// ClassProperty: ControllerClass<br/>
+    /// Default: Engine.AIController
     /// </summary>
     public unsafe BmSDK.Class ControllerClass
     {
@@ -124,7 +125,8 @@ public partial class ActorFactoryAI : BmSDK.Engine.ActorFactory, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: TeamIndex
+    /// IntProperty: TeamIndex<br/>
+    /// Default: 255
     /// </summary>
     public unsafe int TeamIndex
     {

@@ -279,7 +279,8 @@ public partial class RAEC_Attack_WatchAndWait : BmSDK.BmGame.RAlertEventCoordina
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 720);
 
     /// <summary>
-    /// FloatProperty: WatchDuration
+    /// FloatProperty: WatchDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float WatchDuration
     {

@@ -357,7 +357,8 @@ public partial class RCombatMove_BatmanWeaponDestroy : BmSDK.BmGame.RCombatMove_
     }
 
     /// <summary>
-    /// StructProperty: WeaponDestroyInfo
+    /// StructProperty: WeaponDestroyInfo<br/>
+    /// Default: (bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FWeaponDestroyInfo WeaponDestroyInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FWeaponDestroyInfo>(Ptr + 868);

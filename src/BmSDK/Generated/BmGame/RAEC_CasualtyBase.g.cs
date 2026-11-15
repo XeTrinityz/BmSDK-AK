@@ -436,7 +436,8 @@ public partial class RAEC_CasualtyBase : BmSDK.BmGame.RAlertEventCoordinatorBase
     }
 
     /// <summary>
-    /// FloatProperty: DiscoveryTime
+    /// FloatProperty: DiscoveryTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DiscoveryTime
     {
@@ -445,7 +446,8 @@ public partial class RAEC_CasualtyBase : BmSDK.BmGame.RAlertEventCoordinatorBase
     }
 
     /// <summary>
-    /// FloatProperty: MiniManDownRegisterTime
+    /// FloatProperty: MiniManDownRegisterTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MiniManDownRegisterTime
     {

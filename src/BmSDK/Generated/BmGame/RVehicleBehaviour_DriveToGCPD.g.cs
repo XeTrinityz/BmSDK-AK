@@ -124,7 +124,8 @@ public partial class RVehicleBehaviour_DriveToGCPD : BmSDK.BmGame.RVehicleBehavi
     }
 
     /// <summary>
-    /// FloatProperty: DespawnMinDistanceFromBatman
+    /// FloatProperty: DespawnMinDistanceFromBatman<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DespawnMinDistanceFromBatman
     {
@@ -133,7 +134,8 @@ public partial class RVehicleBehaviour_DriveToGCPD : BmSDK.BmGame.RVehicleBehavi
     }
 
     /// <summary>
-    /// FloatProperty: DespawnMinTimeOffCamera
+    /// FloatProperty: DespawnMinTimeOffCamera<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float DespawnMinTimeOffCamera
     {

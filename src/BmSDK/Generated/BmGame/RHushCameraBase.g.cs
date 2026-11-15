@@ -79,7 +79,8 @@ public partial class RHushCameraBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StasisDistance
+    /// FloatProperty: StasisDistance<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float StasisDistance
     {

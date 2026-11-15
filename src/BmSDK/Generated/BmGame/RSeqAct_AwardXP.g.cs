@@ -79,7 +79,8 @@ public partial class RSeqAct_AwardXP : BmSDK.Engine.SequenceAction, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: Xp
+    /// IntProperty: Xp<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int Xp
     {

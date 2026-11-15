@@ -79,7 +79,8 @@ public partial class LensFlare : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SourceElement
+    /// StructProperty: SourceElement<br/>
+    /// Default: (ElementName=Source,bIsEnabled=true,bOcclusionPercentageInVertAlpha=true,bIntensityInVertAlpha=true,bInvertSourceDistance=true,bInvertRayDistance=true,bInvertRadialDistance=true,Size=(X=75,Y=75,Z=75),...
     /// </summary>
     public unsafe ref BmSDK.Engine.LensFlare.FLensFlareElement SourceElement
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LensFlare.FLensFlareElement>(Ptr + 84);
@@ -112,7 +113,8 @@ public partial class LensFlare : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SourceDPG
+    /// ByteProperty: SourceDPG<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup SourceDPG
     {
@@ -121,7 +123,8 @@ public partial class LensFlare : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: ReflectionsDPG
+    /// ByteProperty: ReflectionsDPG<br/>
+    /// Default: SDPG_Foreground
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup ReflectionsDPG
     {
@@ -157,7 +160,8 @@ public partial class LensFlare : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ConeFudgeFactor
+    /// FloatProperty: ConeFudgeFactor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ConeFudgeFactor
     {
@@ -220,7 +224,8 @@ public partial class LensFlare : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ScreenPercentageMap
+    /// StructProperty: ScreenPercentageMap<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,1,0,1),LookupTableTimeScale=1,Distribution=Engine.Default__LensFlare.DistributionScreenPercentageMap)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat ScreenPercentageMap
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 700);

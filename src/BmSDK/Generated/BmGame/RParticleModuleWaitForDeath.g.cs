@@ -79,7 +79,8 @@ public partial class RParticleModuleWaitForDeath : BmSDK.BmGame.RParticleModuleO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: PauseTime
+    /// FloatProperty: PauseTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PauseTime
     {

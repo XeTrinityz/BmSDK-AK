@@ -152,7 +152,8 @@ public partial class RSeqAct_CombatProgress : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bExitOnCombatFinished
+    /// BoolProperty: bExitOnCombatFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExitOnCombatFinished
     {

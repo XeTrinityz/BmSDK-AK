@@ -115,7 +115,8 @@ public partial class MTakedownSubroutineContext : BmSDK.BmGame.MHackSubroutineCo
     }
 
     /// <summary>
-    /// ByteProperty: TakedownDamageType
+    /// ByteProperty: TakedownDamageType<br/>
+    /// Default: HACK_TAKEDOWN_TYPE_Electric
     /// </summary>
     public unsafe BmSDK.BmScript.MTakedownSubroutineContext.EHackTakedownType TakedownDamageType
     {
@@ -124,7 +125,8 @@ public partial class MTakedownSubroutineContext : BmSDK.BmGame.MHackSubroutineCo
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionOver
+    /// FloatProperty: ZDifferentialExclusionOver<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionOver
     {
@@ -133,7 +135,8 @@ public partial class MTakedownSubroutineContext : BmSDK.BmGame.MHackSubroutineCo
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionUnder
+    /// FloatProperty: ZDifferentialExclusionUnder<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionUnder
     {

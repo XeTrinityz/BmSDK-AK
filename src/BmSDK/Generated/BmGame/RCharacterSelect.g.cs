@@ -463,7 +463,8 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: CurrentConfigIndex
+        /// IntProperty: CurrentConfigIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int CurrentConfigIndex
         {
@@ -472,7 +473,8 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: PendingConfigIndex
+        /// IntProperty: PendingConfigIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int PendingConfigIndex
         {
@@ -563,13 +565,15 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LeftPlayer
+    /// StructProperty: LeftPlayer<br/>
+    /// Default: (CurrentConfigIndex=-1,PendingConfigIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer LeftPlayer
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer>(Ptr + 724);
 
     /// <summary>
-    /// StructProperty: RightPlayer
+    /// StructProperty: RightPlayer<br/>
+    /// Default: (CurrentConfigIndex=-1,PendingConfigIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer RightPlayer
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer>(Ptr + 812);
@@ -584,13 +588,15 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightingChannels
+    /// StructProperty: LightingChannels<br/>
+    /// Default: (bInitialized=true,Dynamic=true,CompositeDynamic=true,Character=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 904);
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_Foreground
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {

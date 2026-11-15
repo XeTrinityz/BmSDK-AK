@@ -208,7 +208,8 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: SwitchAnimation
+    /// NameProperty: SwitchAnimation<br/>
+    /// Default: Turn_On_Switch
     /// </summary>
     public unsafe BmSDK.FName SwitchAnimation
     {
@@ -217,7 +218,8 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanSpecialMove
+    /// ObjectProperty: BatmanSpecialMove<br/>
+    /// Default: Batman_Environment_Moves.BigRedSwitch
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanSpecialMove
     {
@@ -226,7 +228,8 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RBigRedSwitch.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {

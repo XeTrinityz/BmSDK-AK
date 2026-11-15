@@ -288,7 +288,8 @@ public partial class MBMBehaviour_JokerCombatKnife : BmSDK.BmGame.RBMBehaviour_C
     }
 
     /// <summary>
-    /// FloatProperty: MinHealthAttack
+    /// FloatProperty: MinHealthAttack<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinHealthAttack
     {

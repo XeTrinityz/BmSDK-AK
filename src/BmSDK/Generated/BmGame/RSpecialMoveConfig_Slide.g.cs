@@ -115,7 +115,8 @@ public partial class RSpecialMoveConfig_Slide : BmSDK.BmGame.RSpecialMoveConfig,
     }
 
     /// <summary>
-    /// FloatProperty: TripImpulse
+    /// FloatProperty: TripImpulse<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float TripImpulse
     {
@@ -124,7 +125,8 @@ public partial class RSpecialMoveConfig_Slide : BmSDK.BmGame.RSpecialMoveConfig,
     }
 
     /// <summary>
-    /// FloatProperty: CollisionHeight
+    /// FloatProperty: CollisionHeight<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float CollisionHeight
     {
@@ -133,7 +135,8 @@ public partial class RSpecialMoveConfig_Slide : BmSDK.BmGame.RSpecialMoveConfig,
     }
 
     /// <summary>
-    /// FloatProperty: SlideTime
+    /// FloatProperty: SlideTime<br/>
+    /// Default: 0.333
     /// </summary>
     public unsafe float SlideTime
     {
@@ -142,7 +145,8 @@ public partial class RSpecialMoveConfig_Slide : BmSDK.BmGame.RSpecialMoveConfig,
     }
 
     /// <summary>
-    /// ByteProperty: AnimationLaunchFoot
+    /// ByteProperty: AnimationLaunchFoot<br/>
+    /// Default: RALF_RightFoot
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig_RunningRelativeAnimMove.RelativeAnimLaunchFoot AnimationLaunchFoot
     {

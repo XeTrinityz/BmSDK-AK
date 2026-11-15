@@ -200,7 +200,8 @@ public partial class MSnareTrapEffectComponent : BmSDK.BmGame.RPawnEffectCompone
     }
 
     /// <summary>
-    /// ObjectProperty: ExitVfxTemplate
+    /// ObjectProperty: ExitVfxTemplate<br/>
+    /// Default: PFX_Harley.Emmiter.VFX_SnareTrap_Explosion_GetOFF
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExitVfxTemplate
     {

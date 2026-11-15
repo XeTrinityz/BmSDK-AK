@@ -251,7 +251,8 @@ public partial class RStealthTakeDownStage_DoubleLedgeAttack : BmSDK.BmGame.RSte
     }
 
     /// <summary>
-    /// NameProperty: RopeBoneAttachName
+    /// NameProperty: RopeBoneAttachName<br/>
+    /// Default: Bip01_Pelvis
     /// </summary>
     public unsafe BmSDK.FName RopeBoneAttachName
     {
@@ -260,7 +261,8 @@ public partial class RStealthTakeDownStage_DoubleLedgeAttack : BmSDK.BmGame.RSte
     }
 
     /// <summary>
-    /// FloatProperty: RopeAttachConnectionDistance
+    /// FloatProperty: RopeAttachConnectionDistance<br/>
+    /// Default: 105
     /// </summary>
     public unsafe float RopeAttachConnectionDistance
     {
@@ -275,7 +277,8 @@ public partial class RStealthTakeDownStage_DoubleLedgeAttack : BmSDK.BmGame.RSte
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1904);
 
     /// <summary>
-    /// ArrayProperty: RopeExtraAttachConnections
+    /// ArrayProperty: RopeExtraAttachConnections<br/>
+    /// Default: ((RopeExtraAttachBoneName=Bip01_L_Calf,RopeExtraAttachBonePos=(X=50,Y=12)),(RopeExtraAttachBoneName=Bip01_R_Calf,RopeExtraAttachBonePos=(X=50,Y=-12)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RRopeComponent.FRopeExtraAttachConnection> RopeExtraAttachConnections
     {
@@ -290,7 +293,8 @@ public partial class RStealthTakeDownStage_DoubleLedgeAttack : BmSDK.BmGame.RSte
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1932);
 
     /// <summary>
-    /// StructProperty: RopePhysStartOffset
+    /// StructProperty: RopePhysStartOffset<br/>
+    /// Default: (X=-7)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RopePhysStartOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1944);
@@ -305,7 +309,8 @@ public partial class RStealthTakeDownStage_DoubleLedgeAttack : BmSDK.BmGame.RSte
     }
 
     /// <summary>
-    /// ArrayProperty: StageAnimNoRailingEx
+    /// ArrayProperty: StageAnimNoRailingEx<br/>
+    /// Default: ((AttackerAnimation=(Takedown_Ledge_Double_NoRailing),CapeStateName=(Silent_Takedown_Back_01),VictimAnimations=((Anims=(Takedown_Ledge_Double_NoRailing1,Takedown_Ledge_Double_NoRailing2))),MeetingTime...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet> StageAnimNoRailingEx
     {

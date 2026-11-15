@@ -154,7 +154,8 @@ public partial class RSeqAct_BespokePipeSonar : BmSDK.BmScript.RSeqAct_BespokeVi
     }
 
     /// <summary>
-    /// FloatProperty: RootNetworkOpacity
+    /// FloatProperty: RootNetworkOpacity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RootNetworkOpacity
     {
@@ -163,7 +164,8 @@ public partial class RSeqAct_BespokePipeSonar : BmSDK.BmScript.RSeqAct_BespokeVi
     }
 
     /// <summary>
-    /// FloatProperty: DistForFadeStart
+    /// FloatProperty: DistForFadeStart<br/>
+    /// Default: 1.6
     /// </summary>
     public unsafe float DistForFadeStart
     {
@@ -172,7 +174,8 @@ public partial class RSeqAct_BespokePipeSonar : BmSDK.BmScript.RSeqAct_BespokeVi
     }
 
     /// <summary>
-    /// FloatProperty: DistForFadeStop
+    /// FloatProperty: DistForFadeStop<br/>
+    /// Default: 1.65
     /// </summary>
     public unsafe float DistForFadeStop
     {

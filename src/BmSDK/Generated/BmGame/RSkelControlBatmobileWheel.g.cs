@@ -115,13 +115,15 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// StructProperty: SuspensionRotAxis
+    /// StructProperty: SuspensionRotAxis<br/>
+    /// Default: (Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SuspensionRotAxis
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 312);
 
     /// <summary>
-    /// FloatProperty: WheelSteeringVisualLimitDeg
+    /// FloatProperty: WheelSteeringVisualLimitDeg<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float WheelSteeringVisualLimitDeg
     {
@@ -130,7 +132,8 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// FloatProperty: CoolingDiskSpinSpeed
+    /// FloatProperty: CoolingDiskSpinSpeed<br/>
+    /// Default: -90
     /// </summary>
     public unsafe float CoolingDiskSpinSpeed
     {
@@ -139,13 +142,15 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// StructProperty: SquashAxis
+    /// StructProperty: SquashAxis<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SquashAxis
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 332);
 
     /// <summary>
-    /// FloatProperty: SquashMaxDist
+    /// FloatProperty: SquashMaxDist<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float SquashMaxDist
     {
@@ -154,7 +159,8 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// IntProperty: SuspensionBoneIndex
+    /// IntProperty: SuspensionBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SuspensionBoneIndex
     {
@@ -163,7 +169,8 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// IntProperty: DiskBrakeBoneIndex
+    /// IntProperty: DiskBrakeBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DiskBrakeBoneIndex
     {
@@ -172,7 +179,8 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// IntProperty: WheelBoneIndex
+    /// IntProperty: WheelBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelBoneIndex
     {
@@ -181,7 +189,8 @@ public partial class RSkelControlBatmobileWheel : BmSDK.Engine.SkelControlWheel,
     }
 
     /// <summary>
-    /// IntProperty: CoolingDiskBoneIndex
+    /// IntProperty: CoolingDiskBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CoolingDiskBoneIndex
     {

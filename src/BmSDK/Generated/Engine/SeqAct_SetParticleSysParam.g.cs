@@ -88,7 +88,8 @@ public partial class SeqAct_SetParticleSysParam : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bOverrideScalar
+    /// BoolProperty: bOverrideScalar<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOverrideScalar
     {
@@ -97,7 +98,8 @@ public partial class SeqAct_SetParticleSysParam : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bOverrideVector
+    /// BoolProperty: bOverrideVector<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOverrideVector
     {
@@ -106,7 +108,8 @@ public partial class SeqAct_SetParticleSysParam : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bOverrideActor
+    /// BoolProperty: bOverrideActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOverrideActor
     {

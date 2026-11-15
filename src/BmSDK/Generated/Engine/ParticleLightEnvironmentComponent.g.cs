@@ -79,7 +79,8 @@ public partial class ParticleLightEnvironmentComponent : BmSDK.Engine.DynamicLig
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: ReferenceCount
+    /// IntProperty: ReferenceCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ReferenceCount
     {
@@ -88,7 +89,8 @@ public partial class ParticleLightEnvironmentComponent : BmSDK.Engine.DynamicLig
     }
 
     /// <summary>
-    /// IntProperty: NumPooledReuses
+    /// IntProperty: NumPooledReuses<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumPooledReuses
     {
@@ -115,7 +117,8 @@ public partial class ParticleLightEnvironmentComponent : BmSDK.Engine.DynamicLig
     }
 
     /// <summary>
-    /// BoolProperty: bAllowDLESharing
+    /// BoolProperty: bAllowDLESharing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowDLESharing
     {

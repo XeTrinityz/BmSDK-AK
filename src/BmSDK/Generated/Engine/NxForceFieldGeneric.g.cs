@@ -130,7 +130,8 @@ public partial class NxForceFieldGeneric : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RoughExtentX
+    /// FloatProperty: RoughExtentX<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RoughExtentX
     {
@@ -139,7 +140,8 @@ public partial class NxForceFieldGeneric : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RoughExtentY
+    /// FloatProperty: RoughExtentY<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RoughExtentY
     {
@@ -148,7 +150,8 @@ public partial class NxForceFieldGeneric : BmSDK.Engine.NxForceField, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RoughExtentZ
+    /// FloatProperty: RoughExtentZ<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RoughExtentZ
     {
@@ -238,7 +241,8 @@ public partial class NxForceFieldGeneric : BmSDK.Engine.NxForceField, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 916);
 
     /// <summary>
-    /// FloatProperty: TorusRadius
+    /// FloatProperty: TorusRadius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TorusRadius
     {

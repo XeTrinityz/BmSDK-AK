@@ -109,7 +109,8 @@ public partial class RFlaps_ConstraintSetupDistance : BmSDK.Engine.RFlaps_Constr
     }
 
     /// <summary>
-    /// FloatProperty: ParticleMassBias
+    /// FloatProperty: ParticleMassBias<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ParticleMassBias
     {
@@ -127,7 +128,8 @@ public partial class RFlaps_ConstraintSetupDistance : BmSDK.Engine.RFlaps_Constr
     }
 
     /// <summary>
-    /// BoolProperty: bEnableMinDistance
+    /// BoolProperty: bEnableMinDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMinDistance
     {
@@ -136,7 +138,8 @@ public partial class RFlaps_ConstraintSetupDistance : BmSDK.Engine.RFlaps_Constr
     }
 
     /// <summary>
-    /// BoolProperty: bEnableMaxDistance
+    /// BoolProperty: bEnableMaxDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMaxDistance
     {

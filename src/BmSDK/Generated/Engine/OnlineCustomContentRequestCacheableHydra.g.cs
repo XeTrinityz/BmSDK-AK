@@ -290,7 +290,8 @@ public partial class OnlineCustomContentRequestCacheableHydra : BmSDK.Engine.Onl
     }
 
     /// <summary>
-    /// BoolProperty: bCacheLoadIntact
+    /// BoolProperty: bCacheLoadIntact<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCacheLoadIntact
     {

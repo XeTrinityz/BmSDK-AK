@@ -96,7 +96,8 @@ public partial class RTurnAwayGlidingPlayerCylinder : BmSDK.Engine.Actor, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerBlocker
+    /// ComponentProperty: PlayerBlocker<br/>
+    /// Default: BmGame.Default__RTurnAwayGlidingPlayerCylinder.PlayerBlockerComp
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent PlayerBlocker
     {

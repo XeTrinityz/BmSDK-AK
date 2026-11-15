@@ -189,7 +189,8 @@ public partial class RCombatMove_LieutenantWhipReaction : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// StructProperty: DmgInfo
+    /// StructProperty: DmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 784);

@@ -442,7 +442,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeUsedForSpawn
+    /// BoolProperty: bCanBeUsedForSpawn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeUsedForSpawn
     {
@@ -496,7 +497,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// BoolProperty: bIsActive
+    /// BoolProperty: bIsActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsActive
     {
@@ -874,7 +876,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// FloatProperty: LastFinishedTime
+    /// FloatProperty: LastFinishedTime<br/>
+    /// Default: -99
     /// </summary>
     public unsafe float LastFinishedTime
     {
@@ -910,7 +913,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// IntProperty: OverrideTransitionInIndex
+    /// IntProperty: OverrideTransitionInIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideTransitionInIndex
     {
@@ -955,7 +959,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// ByteProperty: EntrySpeed
+    /// ByteProperty: EntrySpeed<br/>
+    /// Default: MS_Run
     /// </summary>
     public unsafe BmSDK.Engine.RAutomaticTransitions.EMovementSpeed EntrySpeed
     {
@@ -964,7 +969,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// ByteProperty: ExitSpeed
+    /// ByteProperty: ExitSpeed<br/>
+    /// Default: MS_Run
     /// </summary>
     public unsafe BmSDK.Engine.RAutomaticTransitions.EMovementSpeed ExitSpeed
     {
@@ -1009,7 +1015,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// FloatProperty: DefaultPairedWaitingTime
+    /// FloatProperty: DefaultPairedWaitingTime<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float DefaultPairedWaitingTime
     {
@@ -1018,7 +1025,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// FloatProperty: LastTimeOutTime
+    /// FloatProperty: LastTimeOutTime<br/>
+    /// Default: -99
     /// </summary>
     public unsafe float LastTimeOutTime
     {
@@ -1063,7 +1071,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// FloatProperty: NavCheckTolerance
+    /// FloatProperty: NavCheckTolerance<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float NavCheckTolerance
     {
@@ -1144,7 +1153,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenFleeTaunts
+    /// FloatProperty: TimeBetweenFleeTaunts<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeBetweenFleeTaunts
     {

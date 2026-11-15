@@ -556,7 +556,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: RateScale
+        /// FloatProperty: RateScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float RateScale
         {

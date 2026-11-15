@@ -238,7 +238,8 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: CreditsSectionOrder
+    /// ArrayProperty: CreditsSectionOrder<br/>
+    /// Default: ("CREDITS_FULL_RS_DEVELOPED_BY","CREDITS_FULL_RS_LEAD_ANIMATOR","CREDITS_FULL_RS_ANIMATORS","CREDITS_FULL_RS_LEAD_MOTION_CAPTURE_ANIMATOR","CREDITS_FULL_RS_LEAD_TECHNICAL_ANIMATOR","CREDITS_FULL_RS_TE...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> CreditsSectionOrder
     {
@@ -247,7 +248,8 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bFrontend
+    /// BoolProperty: bFrontend<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFrontend
     {
@@ -256,7 +258,8 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSkipable
+    /// BoolProperty: bSkipable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipable
     {
@@ -265,7 +268,8 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bShowPromptAtStart
+    /// BoolProperty: bShowPromptAtStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowPromptAtStart
     {

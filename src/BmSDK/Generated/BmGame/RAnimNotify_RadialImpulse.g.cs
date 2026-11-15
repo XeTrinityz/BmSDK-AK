@@ -88,7 +88,8 @@ public partial class RAnimNotify_RadialImpulse : BmSDK.Engine.AnimNotify, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: RadialImpulseComponent
+    /// ComponentProperty: RadialImpulseComponent<br/>
+    /// Default: BmGame.Default__RAnimNotify_RadialImpulse.ImpulseComponent
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent RadialImpulseComponent
     {

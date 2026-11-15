@@ -694,7 +694,8 @@ public partial class RPawnVillainGunBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: HostageTakerInteractions
+    /// ComponentProperty: HostageTakerInteractions<br/>
+    /// Default: BmGame.Default__RPawnVillainGunBase.HostageTakerInteractions0
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent HostageTakerInteractions
     {
@@ -712,7 +713,8 @@ public partial class RPawnVillainGunBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SearchSpecialMoveTime
+    /// FloatProperty: SearchSpecialMoveTime<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float SearchSpecialMoveTime
     {
@@ -784,7 +786,8 @@ public partial class RPawnVillainGunBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGam
     }
 
     /// <summary>
-    /// ArrayProperty: JokerNervousSyncWalks
+    /// ArrayProperty: JokerNervousSyncWalks<br/>
+    /// Default: (Nervous_Walk_Forward,Nervous_Walk_Forward_02,Nervous_Walk_Forward_03,Nervous_Walk_Forward_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> JokerNervousSyncWalks
     {

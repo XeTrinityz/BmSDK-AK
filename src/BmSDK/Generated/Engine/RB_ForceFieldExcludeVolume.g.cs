@@ -79,7 +79,8 @@ public partial class RB_ForceFieldExcludeVolume : BmSDK.Engine.Volume, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: ForceFieldChannel
+    /// IntProperty: ForceFieldChannel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ForceFieldChannel
     {

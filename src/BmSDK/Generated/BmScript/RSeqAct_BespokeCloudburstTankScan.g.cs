@@ -204,7 +204,8 @@ public partial class RSeqAct_BespokeCloudburstTankScan : BmSDK.Engine.SeqAct_Lat
     }
 
     /// <summary>
-    /// ObjectProperty: MovieInfo
+    /// ObjectProperty: MovieInfo<br/>
+    /// Default: HudModuleBespokeCloudburstTankScan.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie MovieInfo
     {

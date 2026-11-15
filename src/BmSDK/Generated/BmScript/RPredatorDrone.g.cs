@@ -484,7 +484,8 @@ public partial class RPredatorDrone : BmSDK.BmScript.RHelicopterIntermediate, Bm
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RPredatorDrone.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -493,7 +494,8 @@ public partial class RPredatorDrone : BmSDK.BmScript.RHelicopterIntermediate, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: LandOnDroneMove
+    /// ObjectProperty: LandOnDroneMove<br/>
+    /// Default: Batman_Environment_Moves.Predator_Drone.Land_On_Pred_Drone_New
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig LandOnDroneMove
     {

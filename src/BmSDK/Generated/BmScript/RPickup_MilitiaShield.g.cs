@@ -188,7 +188,8 @@ public partial class RPickup_MilitiaShield : BmSDK.BmGame.RPickup_MilitiaShieldB
     }
 
     /// <summary>
-    /// ObjectProperty: LoopSfx
+    /// ObjectProperty: LoopSfx<br/>
+    /// Default: ww_obj_shield.Play_Shield_Amb
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoopSfx
     {
@@ -197,7 +198,8 @@ public partial class RPickup_MilitiaShield : BmSDK.BmGame.RPickup_MilitiaShieldB
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeSfx
+    /// ObjectProperty: ExplodeSfx<br/>
+    /// Default: ww_obj_shield.Play_Shield_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeSfx
     {

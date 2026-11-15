@@ -88,7 +88,8 @@ public partial class InterpTrackAkEvent : BmSDK.Engine.InterpTrack, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: FireEventsWhenForwards
+    /// BoolProperty: FireEventsWhenForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FireEventsWhenForwards
     {
@@ -115,7 +116,8 @@ public partial class InterpTrackAkEvent : BmSDK.Engine.InterpTrack, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: AudioShouldStopOnSkip
+    /// BoolProperty: AudioShouldStopOnSkip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AudioShouldStopOnSkip
     {
@@ -166,7 +168,8 @@ public partial class InterpTrackAkEvent : BmSDK.Engine.InterpTrack, BmSDK.IGameO
         }
 
         /// <summary>
-        /// FloatProperty: WwiseDuration
+        /// FloatProperty: WwiseDuration<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float WwiseDuration
         {

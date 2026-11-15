@@ -127,7 +127,8 @@ public partial class ForceFeedbackManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowsForceFeedback
+    /// BoolProperty: bAllowsForceFeedback<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowsForceFeedback
     {
@@ -243,7 +244,8 @@ public partial class ForceFeedbackManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScaleAllWaveformsBy
+    /// FloatProperty: ScaleAllWaveformsBy<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleAllWaveformsBy
     {

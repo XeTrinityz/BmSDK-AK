@@ -612,7 +612,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: WorldPPSettings
+    /// StructProperty: WorldPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_EnableSceneEffect=true,bOverride_BloomOverload=true,bOverride_BloomLowerCut=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings WorldPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 1184);

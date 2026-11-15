@@ -186,7 +186,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ObjectProperty: PenguinAnimset
+    /// ObjectProperty: PenguinAnimset<br/>
+    /// Default: Anim_Joker.Code.Phase2_PG
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PenguinAnimset
     {
@@ -213,7 +214,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveMoneyIdle
+    /// NameProperty: WaveMoneyIdle<br/>
+    /// Default: Cash_Idle
     /// </summary>
     public unsafe BmSDK.FName WaveMoneyIdle
     {
@@ -222,7 +224,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveMoneyIn
+    /// NameProperty: WaveMoneyIn<br/>
+    /// Default: Cash_Idle
     /// </summary>
     public unsafe BmSDK.FName WaveMoneyIn
     {
@@ -231,7 +234,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveMoneyShot
+    /// NameProperty: WaveMoneyShot<br/>
+    /// Default: Cash_Hand_Shot
     /// </summary>
     public unsafe BmSDK.FName WaveMoneyShot
     {
@@ -240,7 +244,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveDeath
+    /// NameProperty: WaveDeath<br/>
+    /// Default: Cash_Death
     /// </summary>
     public unsafe BmSDK.FName WaveDeath
     {
@@ -249,7 +254,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveDeathIdle
+    /// NameProperty: WaveDeathIdle<br/>
+    /// Default: Cash_Death_Idle
     /// </summary>
     public unsafe BmSDK.FName WaveDeathIdle
     {
@@ -258,7 +264,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: WaveToPlead
+    /// NameProperty: WaveToPlead<br/>
+    /// Default: Cash_To_Plead
     /// </summary>
     public unsafe BmSDK.FName WaveToPlead
     {
@@ -267,7 +274,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: PleadIdle
+    /// NameProperty: PleadIdle<br/>
+    /// Default: Plead_Idle
     /// </summary>
     public unsafe BmSDK.FName PleadIdle
     {
@@ -276,7 +284,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: PleadDeath
+    /// NameProperty: PleadDeath<br/>
+    /// Default: Plead_Death
     /// </summary>
     public unsafe BmSDK.FName PleadDeath
     {
@@ -285,7 +294,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: PleadDeathIdle
+    /// NameProperty: PleadDeathIdle<br/>
+    /// Default: Plead_Death_Idle
     /// </summary>
     public unsafe BmSDK.FName PleadDeathIdle
     {
@@ -294,7 +304,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: PleadToGrovel
+    /// NameProperty: PleadToGrovel<br/>
+    /// Default: Plead_To_Grovel
     /// </summary>
     public unsafe BmSDK.FName PleadToGrovel
     {
@@ -303,7 +314,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: GrovelIdle
+    /// NameProperty: GrovelIdle<br/>
+    /// Default: Grovel_Idle
     /// </summary>
     public unsafe BmSDK.FName GrovelIdle
     {
@@ -312,7 +324,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: GrovelDeath
+    /// NameProperty: GrovelDeath<br/>
+    /// Default: Grovel_Death
     /// </summary>
     public unsafe BmSDK.FName GrovelDeath
     {
@@ -321,7 +334,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// NameProperty: GrovelDeathIdle
+    /// NameProperty: GrovelDeathIdle<br/>
+    /// Default: Grovel_Death_Idle
     /// </summary>
     public unsafe BmSDK.FName GrovelDeathIdle
     {
@@ -345,7 +359,8 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: PleadTimer
+    /// FloatProperty: PleadTimer<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float PleadTimer
     {

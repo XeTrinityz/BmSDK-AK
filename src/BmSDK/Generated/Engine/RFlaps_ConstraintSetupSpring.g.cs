@@ -91,7 +91,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference>(Ptr + 128);
 
     /// <summary>
-    /// FloatProperty: SpringStrength
+    /// FloatProperty: SpringStrength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SpringStrength
     {
@@ -100,7 +101,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
     }
 
     /// <summary>
-    /// FloatProperty: SpringLinearDamping
+    /// FloatProperty: SpringLinearDamping<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float SpringLinearDamping
     {
@@ -109,7 +111,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
     }
 
     /// <summary>
-    /// FloatProperty: SpringQuadraticDamping
+    /// FloatProperty: SpringQuadraticDamping<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float SpringQuadraticDamping
     {
@@ -136,7 +139,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
     }
 
     /// <summary>
-    /// FloatProperty: ParticleMassBias
+    /// FloatProperty: ParticleMassBias<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ParticleMassBias
     {
@@ -145,7 +149,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
     }
 
     /// <summary>
-    /// BoolProperty: bEnableMinDistance
+    /// BoolProperty: bEnableMinDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMinDistance
     {
@@ -154,7 +159,8 @@ public partial class RFlaps_ConstraintSetupSpring : BmSDK.Engine.RFlaps_Constrai
     }
 
     /// <summary>
-    /// BoolProperty: bEnableMaxDistance
+    /// BoolProperty: bEnableMaxDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMaxDistance
     {

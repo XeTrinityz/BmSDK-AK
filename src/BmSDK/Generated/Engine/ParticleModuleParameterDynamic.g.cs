@@ -79,7 +79,8 @@ public partial class ParticleModuleParameterDynamic : BmSDK.Engine.ParticleModul
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: DynamicParams
+    /// ArrayProperty: DynamicParams<br/>
+    /// Default: ((ParamValue=(Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleParameterDynamic.DistributionParam1)),(ParamValue=(Op=1,LookupTableN...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ParticleModuleParameterDynamic.FEmitterDynamicParameter> DynamicParams
     {

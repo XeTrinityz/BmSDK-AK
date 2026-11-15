@@ -435,7 +435,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// BoolProperty: bOneShot
+    /// BoolProperty: bOneShot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOneShot
     {
@@ -444,7 +445,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// BoolProperty: bDestroyOnPickup
+    /// BoolProperty: bDestroyOnPickup<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestroyOnPickup
     {
@@ -534,7 +536,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// ComponentProperty: WeaponSkeletalMesh
+    /// ComponentProperty: WeaponSkeletalMesh<br/>
+    /// Default: BmGame.Default__RBMCombatPoint_EnvironmentWeapon.EnvironmentWeaponSkeletalMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent WeaponSkeletalMesh
     {
@@ -543,7 +546,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
     }
 
     /// <summary>
-    /// ComponentProperty: WeaponStaticMesh
+    /// ComponentProperty: WeaponStaticMesh<br/>
+    /// Default: BmGame.Default__RBMCombatPoint_EnvironmentWeapon.EnvironmentWeaponStaticMesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent WeaponStaticMesh
     {

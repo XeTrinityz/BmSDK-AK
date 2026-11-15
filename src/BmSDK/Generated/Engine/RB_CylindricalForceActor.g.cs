@@ -94,7 +94,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__RB_CylindricalForceActor.DrawCylinder0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent
     {
@@ -139,7 +140,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: EscapeVelocity
+    /// FloatProperty: EscapeVelocity<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float EscapeVelocity
     {
@@ -148,7 +150,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -157,7 +160,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ForceTopRadius
+    /// FloatProperty: ForceTopRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceTopRadius
     {
@@ -166,7 +170,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ForceHeight
+    /// FloatProperty: ForceHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceHeight
     {
@@ -193,7 +198,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToCloth
+    /// BoolProperty: bForceApplyToCloth<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToCloth
     {
@@ -202,7 +208,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToFluid
+    /// BoolProperty: bForceApplyToFluid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToFluid
     {
@@ -211,7 +218,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToRigidBodies
+    /// BoolProperty: bForceApplyToRigidBodies<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToRigidBodies
     {
@@ -229,7 +237,8 @@ public partial class RB_CylindricalForceActor : BmSDK.Engine.RigidBodyBase, BmSD
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 716);

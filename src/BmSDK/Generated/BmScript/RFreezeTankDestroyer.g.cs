@@ -238,7 +238,8 @@ public partial class RFreezeTankDestroyer : BmSDK.BmGame.RFreezeTankDestroyerBas
     }
 
     /// <summary>
-    /// ObjectProperty: SingleTankAnimset
+    /// ObjectProperty: SingleTankAnimset<br/>
+    /// Default: DLC_Anim_Freeze_IC.Tanks.Viper_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet SingleTankAnimset
     {
@@ -247,7 +248,8 @@ public partial class RFreezeTankDestroyer : BmSDK.BmGame.RFreezeTankDestroyerBas
     }
 
     /// <summary>
-    /// ObjectProperty: DoubleTankAnimset
+    /// ObjectProperty: DoubleTankAnimset<br/>
+    /// Default: DLC_Anim_Freeze_IC.Tanks.TwinViper_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet DoubleTankAnimset
     {
@@ -256,7 +258,8 @@ public partial class RFreezeTankDestroyer : BmSDK.BmGame.RFreezeTankDestroyerBas
     }
 
     /// <summary>
-    /// ObjectProperty: ArmourTankAnimset
+    /// ObjectProperty: ArmourTankAnimset<br/>
+    /// Default: DLC_Anim_Freeze_IC.Tanks.DiamondBack_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ArmourTankAnimset
     {
@@ -265,7 +268,8 @@ public partial class RFreezeTankDestroyer : BmSDK.BmGame.RFreezeTankDestroyerBas
     }
 
     /// <summary>
-    /// ObjectProperty: MissileTankAnimset
+    /// ObjectProperty: MissileTankAnimset<br/>
+    /// Default: DLC_Anim_Freeze_IC.Tanks.Hydra_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet MissileTankAnimset
     {
@@ -274,7 +278,8 @@ public partial class RFreezeTankDestroyer : BmSDK.BmGame.RFreezeTankDestroyerBas
     }
 
     /// <summary>
-    /// NameProperty: TankAnimName
+    /// NameProperty: TankAnimName<br/>
+    /// Default: Tank_Ice_Attack
     /// </summary>
     public unsafe BmSDK.FName TankAnimName
     {

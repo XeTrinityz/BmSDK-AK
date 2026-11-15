@@ -202,7 +202,8 @@ public partial class RDifficultyOverrideVolume : BmSDK.Engine.Volume, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bStartActive
+    /// BoolProperty: bStartActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStartActive
     {

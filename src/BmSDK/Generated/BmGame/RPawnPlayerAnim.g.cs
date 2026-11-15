@@ -168,7 +168,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
     public partial record struct FAllowedMovementTypes
     {
         /// <summary>
-        /// BoolProperty: bRun
+        /// BoolProperty: bRun<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bRun
         {
@@ -177,7 +178,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: bRunBack
+        /// BoolProperty: bRunBack<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bRunBack
         {
@@ -186,7 +188,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: bWalk
+        /// BoolProperty: bWalk<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bWalk
         {
@@ -195,7 +198,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: bWalkSlow
+        /// BoolProperty: bWalkSlow<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bWalkSlow
         {
@@ -204,7 +208,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: bWalkBack
+        /// BoolProperty: bWalkBack<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bWalkBack
         {
@@ -213,7 +218,8 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: bSprintBoost
+        /// BoolProperty: bSprintBoost<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bSprintBoost
         {
@@ -297,13 +303,15 @@ public partial class RPawnPlayerAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: BaseAimAtTiming
+    /// StructProperty: BaseAimAtTiming<br/>
+    /// Default: (SpringStrength=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming BaseAimAtTiming
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPoseConfig.FAimingTransitionTiming>(Ptr + 3024);
 
     /// <summary>
-    /// FloatProperty: CoverWallDistanceOffset
+    /// FloatProperty: CoverWallDistanceOffset<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float CoverWallDistanceOffset
     {

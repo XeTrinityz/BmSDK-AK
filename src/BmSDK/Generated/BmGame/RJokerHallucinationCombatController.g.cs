@@ -179,7 +179,8 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenSpawns
+    /// FloatProperty: MaxTimeBetweenSpawns<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MaxTimeBetweenSpawns
     {
@@ -197,7 +198,8 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RetryTimer
+    /// FloatProperty: RetryTimer<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RetryTimer
     {
@@ -224,7 +226,8 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     }
 
     /// <summary>
-    /// IntProperty: NumSpawnsBetweenPicks
+    /// IntProperty: NumSpawnsBetweenPicks<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumSpawnsBetweenPicks
     {

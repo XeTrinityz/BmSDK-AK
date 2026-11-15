@@ -206,7 +206,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// IntProperty: SloMoTrackIndex
+    /// IntProperty: SloMoTrackIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SloMoTrackIndex
     {
@@ -215,7 +216,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// IntProperty: OptionalDirectorTrackIndexForPlayback
+    /// IntProperty: OptionalDirectorTrackIndexForPlayback<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OptionalDirectorTrackIndexForPlayback
     {
@@ -224,7 +226,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// IntProperty: OptionalSloMoTrackIndexForPlayback
+    /// IntProperty: OptionalSloMoTrackIndexForPlayback<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OptionalSloMoTrackIndexForPlayback
     {
@@ -233,7 +236,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// FloatProperty: RewindSpeedMultiplier
+    /// FloatProperty: RewindSpeedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RewindSpeedMultiplier
     {
@@ -242,7 +246,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// FloatProperty: OptionalTimeToChangeToAtEndOfPlayback
+    /// FloatProperty: OptionalTimeToChangeToAtEndOfPlayback<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OptionalTimeToChangeToAtEndOfPlayback
     {
@@ -287,7 +292,8 @@ public partial class RSeqAct_AugmentedForensicsScanControl : BmSDK.Engine.Sequen
     }
 
     /// <summary>
-    /// FloatProperty: PauseBeforePlayback
+    /// FloatProperty: PauseBeforePlayback<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PauseBeforePlayback
     {

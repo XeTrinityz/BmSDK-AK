@@ -127,7 +127,8 @@ public partial class RStealthTakedownStage_RailingTakedown : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// StructProperty: TwistScreenShake
+    /// StructProperty: TwistScreenShake<br/>
+    /// Default: (TimeDuration=0.4,RotAmplitude=(Z=8000),RotFrequency=(Z=1),FOVMultiplier=1,FOVAmplitude=-100,FOVFrequency=1,AdvancedOptions=(FrequencyDropPower=0.8,FrequencyDropFactor=0.8,FalloffMinRange=2000,Falloff...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct TwistScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1664);

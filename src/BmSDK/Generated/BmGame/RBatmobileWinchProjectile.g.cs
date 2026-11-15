@@ -325,7 +325,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// FloatProperty: FireSpeed
+    /// FloatProperty: FireSpeed<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float FireSpeed
     {
@@ -334,7 +335,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// FloatProperty: WigglePeriod
+    /// FloatProperty: WigglePeriod<br/>
+    /// Default: 24
     /// </summary>
     public unsafe float WigglePeriod
     {
@@ -343,7 +345,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// FloatProperty: WiggleSize
+    /// FloatProperty: WiggleSize<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float WiggleSize
     {
@@ -361,7 +364,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// ComponentProperty: RetractionParticleTrail
+    /// ComponentProperty: RetractionParticleTrail<br/>
+    /// Default: BmGame.Default__RBatmobileWinchProjectile.Trail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RetractionParticleTrail
     {
@@ -370,7 +374,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// ObjectProperty: WallRicochetFX
+    /// ObjectProperty: WallRicochetFX<br/>
+    /// Default: VFX_Gadgets.FX_Batarang_Ricochet_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WallRicochetFX
     {
@@ -388,7 +393,8 @@ public partial class RBatmobileWinchProjectile : BmSDK.BmGame.RProjectileWithRop
     }
 
     /// <summary>
-    /// ObjectProperty: SingleTrackingSound
+    /// ObjectProperty: SingleTrackingSound<br/>
+    /// Default: Ww_CHR_BatclawGrapple.Play_Batclaw_POV_Whoosh
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SingleTrackingSound
     {

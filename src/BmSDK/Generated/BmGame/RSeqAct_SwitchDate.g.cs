@@ -125,7 +125,8 @@ public partial class RSeqAct_SwitchDate : BmSDK.Engine.SequenceAction, BmSDK.IGa
     public partial record struct FDateGroupDef
     {
         /// <summary>
-        /// StrProperty: Desc
+        /// StrProperty: Desc<br/>
+        /// Default: "Undefined"
         /// </summary>
         public unsafe BmSDK.FString Desc
         {
@@ -134,7 +135,8 @@ public partial class RSeqAct_SwitchDate : BmSDK.Engine.SequenceAction, BmSDK.IGa
         }
 
         /// <summary>
-        /// ArrayProperty: ValidDates
+        /// ArrayProperty: ValidDates<br/>
+        /// Default: ((Day=1))
         /// </summary>
         public unsafe BmSDK.TArray<BmSDK.BmGame.RSeqAct_SwitchDate.FDateDef> ValidDates
         {
@@ -150,7 +152,8 @@ public partial class RSeqAct_SwitchDate : BmSDK.Engine.SequenceAction, BmSDK.IGa
     public partial record struct FDateDef
     {
         /// <summary>
-        /// IntProperty: Day
+        /// IntProperty: Day<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int Day
         {

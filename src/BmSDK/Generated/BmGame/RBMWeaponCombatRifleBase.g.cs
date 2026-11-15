@@ -275,7 +275,8 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     }
 
     /// <summary>
-    /// ComponentProperty: LensFlareFX
+    /// ComponentProperty: LensFlareFX<br/>
+    /// Default: BmGame.Default__RBMWeaponCombatRifleBase.LensFlareFX0
     /// </summary>
     public unsafe BmSDK.Engine.LensFlareComponent LensFlareFX
     {

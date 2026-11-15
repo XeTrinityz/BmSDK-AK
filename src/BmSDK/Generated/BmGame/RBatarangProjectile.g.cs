@@ -711,7 +711,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangMesh
+    /// ComponentProperty: BatarangMesh<br/>
+    /// Default: BmGame.Default__RBatarangProjectile.GadgetMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BatarangMesh
     {
@@ -720,7 +721,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SpinAngularVelocity
+    /// FloatProperty: SpinAngularVelocity<br/>
+    /// Default: 1080
     /// </summary>
     public unsafe float SpinAngularVelocity
     {
@@ -729,7 +731,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: BatarangMass
+    /// FloatProperty: BatarangMass<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BatarangMass
     {
@@ -738,7 +741,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CosRicochetAngle
+    /// FloatProperty: CosRicochetAngle<br/>
+    /// Default: -2
     /// </summary>
     public unsafe float CosRicochetAngle
     {
@@ -747,7 +751,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TurnRate
+    /// FloatProperty: TurnRate<br/>
+    /// Default: 1800
     /// </summary>
     public unsafe float TurnRate
     {
@@ -756,7 +761,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: DefaultRoll
+    /// FloatProperty: DefaultRoll<br/>
+    /// Default: -40
     /// </summary>
     public unsafe float DefaultRoll
     {
@@ -765,7 +771,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: StunMod
+    /// FloatProperty: StunMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StunMod
     {
@@ -927,7 +934,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// ClassProperty: StealthBatarangDmgType
+    /// ClassProperty: StealthBatarangDmgType<br/>
+    /// Default: BmGame.RDmgType_StealthBatarang
     /// </summary>
     public unsafe BmSDK.Class StealthBatarangDmgType
     {
@@ -954,7 +962,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: RightWingTrail
+    /// ComponentProperty: RightWingTrail<br/>
+    /// Default: BmGame.Default__RBatarangProjectile.Trail2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RightWingTrail
     {
@@ -963,7 +972,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: LeftWingTrail
+    /// ComponentProperty: LeftWingTrail<br/>
+    /// Default: BmGame.Default__RBatarangProjectile.Trail1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LeftWingTrail
     {
@@ -972,7 +982,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangTrail
+    /// ComponentProperty: BatarangTrail<br/>
+    /// Default: BmGame.Default__RBatarangProjectile.Trail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatarangTrail
     {
@@ -1113,7 +1124,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: StopsOnPawns
+    /// BoolProperty: StopsOnPawns<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StopsOnPawns
     {
@@ -1212,7 +1224,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateBatarangMeshRotation
+    /// BoolProperty: bUpdateBatarangMeshRotation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateBatarangMeshRotation
     {
@@ -1341,7 +1354,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1180);
 
     /// <summary>
-    /// FloatProperty: DefaultDamage
+    /// FloatProperty: DefaultDamage<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float DefaultDamage
     {

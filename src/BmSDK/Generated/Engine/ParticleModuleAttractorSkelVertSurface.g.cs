@@ -125,19 +125,22 @@ public partial class ParticleModuleAttractorSkelVertSurface : BmSDK.Engine.Parti
     }
 
     /// <summary>
-    /// StructProperty: FalloffExponent
+    /// StructProperty: FalloffExponent<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorSkelVertSurface.DistributionFalloffExponent)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat FalloffExponent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: Range
+    /// StructProperty: Range<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorSkelVertSurface.DistributionRange)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Range
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 140);
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorSkelVertSurface.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 176);
@@ -149,13 +152,15 @@ public partial class ParticleModuleAttractorSkelVertSurface : BmSDK.Engine.Parti
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 212);
 
     /// <summary>
-    /// StructProperty: DragCoefficient
+    /// StructProperty: DragCoefficient<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleAttractorSkelVertSurface.DistributionDragCoefficient)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat DragCoefficient
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 248);
 
     /// <summary>
-    /// StructProperty: DragRadius
+    /// StructProperty: DragRadius<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleAttractorSkelVertSurface.DistributionDragRadius)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat DragRadius
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 284);
@@ -167,7 +172,8 @@ public partial class ParticleModuleAttractorSkelVertSurface : BmSDK.Engine.Parti
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 320);
 
     /// <summary>
-    /// NameProperty: SkelMeshActorParamName
+    /// NameProperty: SkelMeshActorParamName<br/>
+    /// Default: VertSurfaceActor
     /// </summary>
     public unsafe BmSDK.FName SkelMeshActorParamName
     {

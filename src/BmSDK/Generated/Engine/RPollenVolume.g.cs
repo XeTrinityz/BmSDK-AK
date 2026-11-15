@@ -231,7 +231,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: PollenComponent
+    /// ComponentProperty: PollenComponent<br/>
+    /// Default: Engine.Default__RPollenVolume.PollenComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RPollenComponent PollenComponent
     {
@@ -240,7 +241,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: PollenMap
+    /// ComponentProperty: PollenMap<br/>
+    /// Default: Engine.Default__RPollenVolume.PollenMapComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RPollenMapComponent PollenMap
     {
@@ -249,7 +251,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: PollenGasFollowVFX
+    /// ComponentProperty: PollenGasFollowVFX<br/>
+    /// Default: Engine.Default__RPollenVolume.PollenGasFollowPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent PollenGasFollowVFX
     {
@@ -294,7 +297,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: numTrails
+    /// IntProperty: numTrails<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int numTrails
     {

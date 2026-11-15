@@ -195,7 +195,8 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
     }
 
     /// <summary>
-    /// ComponentProperty: StaticDestructibleComponent
+    /// ComponentProperty: StaticDestructibleComponent<br/>
+    /// Default: Engine.Default__ApexDestructibleActor.DestructibleComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ApexStaticDestructibleComponent StaticDestructibleComponent
     {
@@ -204,7 +205,8 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
     }
 
     /// <summary>
-    /// IntProperty: LOD
+    /// IntProperty: LOD<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LOD
     {

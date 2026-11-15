@@ -572,7 +572,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ClassProperty: BrainType
+    /// ClassProperty: BrainType<br/>
+    /// Default: BmGame.RAIBrain
     /// </summary>
     public unsafe BmSDK.Class BrainType
     {
@@ -581,7 +582,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ClassProperty: PawnClass
+    /// ClassProperty: PawnClass<br/>
+    /// Default: BmGame.RPawnFriendly
     /// </summary>
     public unsafe BmSDK.Class PawnClass
     {
@@ -617,7 +619,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bSnapToGround
+    /// BoolProperty: bSnapToGround<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSnapToGround
     {
@@ -635,7 +638,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCastShadow
+    /// BoolProperty: bCastShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastShadow
     {
@@ -644,7 +648,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bInstantEnterCombatOnMagBlast
+    /// BoolProperty: bInstantEnterCombatOnMagBlast<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInstantEnterCombatOnMagBlast
     {
@@ -662,7 +667,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bAwardXPOnDeath
+    /// BoolProperty: bAwardXPOnDeath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAwardXPOnDeath
     {
@@ -698,7 +704,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bNotScaredOfBatmobileIfVillain
+    /// BoolProperty: bNotScaredOfBatmobileIfVillain<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNotScaredOfBatmobileIfVillain
     {
@@ -734,7 +741,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeXrayed
+    /// BoolProperty: bCanBeXrayed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeXrayed
     {
@@ -770,7 +778,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bPawnPoolRequiresNavMeshCheck
+    /// BoolProperty: bPawnPoolRequiresNavMeshCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPawnPoolRequiresNavMeshCheck
     {
@@ -806,7 +815,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bTriggerDeathOutput
+    /// BoolProperty: bTriggerDeathOutput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTriggerDeathOutput
     {
@@ -851,7 +861,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bSpawnOnceOnly
+    /// BoolProperty: bSpawnOnceOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpawnOnceOnly
     {
@@ -887,7 +898,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanTargetBatmobile
+    /// BoolProperty: bCanTargetBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTargetBatmobile
     {
@@ -896,7 +908,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeZappedByBatmobile
+    /// BoolProperty: bCanBeZappedByBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeZappedByBatmobile
     {
@@ -932,7 +945,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bWeaponCanBePickedUp
+    /// BoolProperty: bWeaponCanBePickedUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWeaponCanBePickedUp
     {
@@ -1004,7 +1018,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bShouldPreventFinalBlowCam
+    /// BoolProperty: bShouldPreventFinalBlowCam<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldPreventFinalBlowCam
     {
@@ -1022,7 +1037,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanPlayEnterCombatBark
+    /// BoolProperty: bCanPlayEnterCombatBark<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanPlayEnterCombatBark
     {
@@ -1040,7 +1056,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bRegisterDeadIfSP
+    /// BoolProperty: bRegisterDeadIfSP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRegisterDeadIfSP
     {
@@ -1058,7 +1075,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bStaggerPawnSpawning
+    /// BoolProperty: bStaggerPawnSpawning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStaggerPawnSpawning
     {
@@ -1121,7 +1139,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bFallBackToNavMeshFloor
+    /// BoolProperty: bFallBackToNavMeshFloor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFallBackToNavMeshFloor
     {
@@ -1157,7 +1176,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bApplySoftPawnCollision
+    /// BoolProperty: bApplySoftPawnCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bApplySoftPawnCollision
     {
@@ -1166,7 +1186,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bReceiveSoftPawnCollision
+    /// BoolProperty: bReceiveSoftPawnCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReceiveSoftPawnCollision
     {
@@ -1274,7 +1295,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ByteProperty: PawnStuckRagdollSolutionType
+    /// ByteProperty: PawnStuckRagdollSolutionType<br/>
+    /// Default: SRST_FreezeAndRemoveWhenOffScreen
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillain.StuckRagdollSolutionType PawnStuckRagdollSolutionType
     {
@@ -1328,7 +1350,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ByteProperty: RagdollVsNavMeshSolution
+    /// ByteProperty: RagdollVsNavMeshSolution<br/>
+    /// Default: RAGvsNAV_Auto
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnCharacter.ERagdollVsNavMesh RagdollVsNavMeshSolution
     {
@@ -1337,7 +1360,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ByteProperty: NewGamePlus_StreamedPredWeaponType
+    /// ByteProperty: NewGamePlus_StreamedPredWeaponType<br/>
+    /// Default: PREDWEAPON_None
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.StreamedPredWeaponTypes NewGamePlus_StreamedPredWeaponType
     {
@@ -1373,7 +1397,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: SideStoryDiscoveryHeight
+    /// IntProperty: SideStoryDiscoveryHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe int SideStoryDiscoveryHeight
     {
@@ -1409,7 +1434,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StrProperty: PawnDeadFlagName
+    /// StrProperty: PawnDeadFlagName<br/>
+    /// Default: "PawnDead"
     /// </summary>
     public unsafe BmSDK.FString PawnDeadFlagName
     {
@@ -1418,7 +1444,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: ForceTauntSetID
+    /// IntProperty: ForceTauntSetID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceTauntSetID
     {
@@ -1454,7 +1481,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: BrainOutputStartIndex
+    /// IntProperty: BrainOutputStartIndex<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int BrainOutputStartIndex
     {
@@ -1472,7 +1500,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SkeletalMeshAggressiveLODMultiplier
+    /// FloatProperty: SkeletalMeshAggressiveLODMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SkeletalMeshAggressiveLODMultiplier
     {
@@ -1481,7 +1510,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: fireCrewIndex
+    /// IntProperty: fireCrewIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int fireCrewIndex
     {

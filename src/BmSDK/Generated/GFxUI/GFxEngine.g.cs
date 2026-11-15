@@ -88,7 +88,8 @@ public partial class GFxEngine : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RefCount
+    /// IntProperty: RefCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int RefCount
     {

@@ -249,7 +249,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Meshes
+    /// ArrayProperty: Meshes<br/>
+    /// Default: (BmGame.Default__RDeadBody.SkeletalMeshComponent0,BmGame.Default__RDeadBody.HeadMesh,BmGame.Default__RDeadBody.ThirdMesh)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Meshes
     {
@@ -303,7 +304,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AutomaticallySetKOExpression
+    /// BoolProperty: AutomaticallySetKOExpression<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutomaticallySetKOExpression
     {
@@ -321,7 +323,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPauseSkel
+    /// BoolProperty: bPauseSkel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseSkel
     {
@@ -357,7 +360,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: XRayMaterial
+    /// ObjectProperty: XRayMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xraySkin_deadbody_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayMaterial
     {
@@ -375,7 +379,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: XRayBoneMaterial
+    /// ObjectProperty: XRayBoneMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayBone_deadBody_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayBoneMaterial
     {
@@ -393,7 +398,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: XRayGutsMaterial
+    /// ObjectProperty: XRayGutsMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayGuts_deadbodyl_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XRayGutsMaterial
     {
@@ -411,7 +417,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: XraySkeleton
+    /// ObjectProperty: XraySkeleton<br/>
+    /// Default: Skeletons.Mesh.Joker_Thug_Skeleton_Skin
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh XraySkeleton
     {
@@ -465,7 +472,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: DeathAnimName
+    /// NameProperty: DeathAnimName<br/>
+    /// Default: Dead01
     /// </summary>
     public unsafe BmSDK.FName DeathAnimName
     {
@@ -492,13 +500,15 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Breathing
+    /// StructProperty: Breathing<br/>
+    /// Default: (TimeScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNode_Pose.FBreathingState Breathing
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNode_Pose.FBreathingState>(Ptr + 840);
 
     /// <summary>
-    /// NameProperty: HeadBoneName
+    /// NameProperty: HeadBoneName<br/>
+    /// Default: Bip01_Head
     /// </summary>
     public unsafe BmSDK.FName HeadBoneName
     {

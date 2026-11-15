@@ -417,13 +417,15 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LastURL
+    /// StructProperty: LastURL<br/>
+    /// Default: (Valid=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.GameEngine.FURL LastURL
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameEngine.FURL>(Ptr + 2704);
 
     /// <summary>
-    /// StructProperty: LastRemoteURL
+    /// StructProperty: LastRemoteURL<br/>
+    /// Default: (Valid=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.GameEngine.FURL LastRemoteURL
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameEngine.FURL>(Ptr + 2792);
@@ -528,7 +530,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DownloadableContentEnumeratorClassName
+    /// StrProperty: DownloadableContentEnumeratorClassName<br/>
+    /// Default: "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks"
     /// </summary>
     public unsafe BmSDK.FString DownloadableContentEnumeratorClassName
     {
@@ -537,7 +540,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DownloadableContentManagerClassName
+    /// StrProperty: DownloadableContentManagerClassName<br/>
+    /// Default: "BmGame.RDownloadableContentManager"
     /// </summary>
     public unsafe BmSDK.FString DownloadableContentManagerClassName
     {
@@ -546,7 +550,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LocHelperSystemClassName
+    /// StrProperty: LocHelperSystemClassName<br/>
+    /// Default: "Engine.LocHelper"
     /// </summary>
     public unsafe BmSDK.FString LocHelperSystemClassName
     {
@@ -582,7 +587,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDeltaTime
+    /// FloatProperty: MaxDeltaTime<br/>
+    /// Default: 0.0416666
     /// </summary>
     public unsafe float MaxDeltaTime
     {

@@ -93,7 +93,8 @@ public partial class RSeqAct_ChangeWind : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: NewWindState
+    /// StructProperty: NewWindState<br/>
+    /// Default: (IsApplyWind=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FRBasicWindConfig NewWindState
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRBasicWindConfig>(Ptr + 352);

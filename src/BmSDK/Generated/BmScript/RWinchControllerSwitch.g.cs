@@ -167,7 +167,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// ComponentProperty: SwitchBox
+    /// ComponentProperty: SwitchBox<br/>
+    /// Default: BmScript.Default__RWinchControllerSwitch.RewireBox0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SwitchBox
     {
@@ -194,7 +195,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// NameProperty: SwitchOnAnimation
+    /// NameProperty: SwitchOnAnimation<br/>
+    /// Default: Lever_Control_Pull_Down
     /// </summary>
     public unsafe BmSDK.FName SwitchOnAnimation
     {
@@ -203,7 +205,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// NameProperty: SwitchOffAnimation
+    /// NameProperty: SwitchOffAnimation<br/>
+    /// Default: Lever_Control_Pull_Up
     /// </summary>
     public unsafe BmSDK.FName SwitchOffAnimation
     {
@@ -212,7 +215,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanSpecialMoveOn
+    /// ObjectProperty: BatmanSpecialMoveOn<br/>
+    /// Default: Batman_Environment_Moves.WinchSwitchOn
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanSpecialMoveOn
     {
@@ -221,7 +225,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanSpecialMoveOff
+    /// ObjectProperty: BatmanSpecialMoveOff<br/>
+    /// Default: Batman_Environment_Moves.WinchSwitchOff
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanSpecialMoveOff
     {
@@ -239,7 +244,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RWinchControllerSwitch.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -248,7 +254,8 @@ public partial class RWinchControllerSwitch : BmSDK.BmGame.RInteractableItem, Bm
     }
 
     /// <summary>
-    /// StrProperty: PromptWhenOn
+    /// StrProperty: PromptWhenOn<br/>
+    /// Default: "Frontend.HelpText.Use"
     /// </summary>
     public unsafe BmSDK.FString PromptWhenOn
     {

@@ -550,7 +550,8 @@ public partial class RGFxMovieUI_PhotoModeOverlay : BmSDK.BmGame.RGFxMovieUI, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bIsPromptsVisible
+    /// BoolProperty: bIsPromptsVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsPromptsVisible
     {

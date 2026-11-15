@@ -344,7 +344,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bEarlyAnimEndNotify
+    /// BoolProperty: bEarlyAnimEndNotify<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEarlyAnimEndNotify
     {
@@ -416,7 +417,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ArrayProperty: TargetWeight
+    /// ArrayProperty: TargetWeight<br/>
+    /// Default: (1)
     /// </summary>
     public unsafe BmSDK.TArray<float> TargetWeight
     {

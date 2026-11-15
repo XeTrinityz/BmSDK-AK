@@ -301,7 +301,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
         }
 
         /// <summary>
-        /// StructProperty: PlatformInputKeys
+        /// StructProperty: PlatformInputKeys<br/>
+        /// Default: (InputKeyData=(ModifierKeyFlags=56))
         /// </summary>
         public unsafe BmSDK.Engine.UIDataStore_InputAlias.FUIInputKeyData PlatformInputKeys_0
         {
@@ -309,7 +310,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 8); }; }
         }
         /// <summary>
-        /// StructProperty: PlatformInputKeys
+        /// StructProperty: PlatformInputKeys<br/>
+        /// Default: (InputKeyData=(ModifierKeyFlags=56))
         /// </summary>
         public unsafe BmSDK.Engine.UIDataStore_InputAlias.FUIInputKeyData PlatformInputKeys_1
         {
@@ -317,7 +319,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 36); }; }
         }
         /// <summary>
-        /// StructProperty: PlatformInputKeys
+        /// StructProperty: PlatformInputKeys<br/>
+        /// Default: (InputKeyData=(ModifierKeyFlags=56))
         /// </summary>
         public unsafe BmSDK.Engine.UIDataStore_InputAlias.FUIInputKeyData PlatformInputKeys_2
         {
@@ -333,7 +336,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     public partial record struct FUIInputKeyData
     {
         /// <summary>
-        /// StructProperty: InputKeyData
+        /// StructProperty: InputKeyData<br/>
+        /// Default: (ModifierKeyFlags=56)
         /// </summary>
         public unsafe BmSDK.Engine.UIRoot.FRawInputKeyEventData InputKeyData
         {

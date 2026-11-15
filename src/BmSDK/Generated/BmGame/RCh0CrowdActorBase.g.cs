@@ -124,7 +124,8 @@ public partial class RCh0CrowdActorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bTrackPC
+    /// BoolProperty: bTrackPC<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTrackPC
     {

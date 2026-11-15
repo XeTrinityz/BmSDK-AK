@@ -175,7 +175,8 @@ public partial class RPawnVillainThug_RobotPuzzle : BmSDK.BmScript.RPawnVillainT
     }
 
     /// <summary>
-    /// ObjectProperty: VoiceSynthSpecialMoveConfig
+    /// ObjectProperty: VoiceSynthSpecialMoveConfig<br/>
+    /// Default: Batman_Gadget_Moves.VoiceSynthesiser.CalibrateVoiceSynthesiserStanding_RobotRedux
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig VoiceSynthSpecialMoveConfig
     {

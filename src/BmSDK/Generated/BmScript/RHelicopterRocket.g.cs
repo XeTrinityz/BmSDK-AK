@@ -295,7 +295,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: ExplosionFX
+    /// ComponentProperty: ExplosionFX<br/>
+    /// Default: BmScript.Default__RHelicopterRocket.Pfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ExplosionFX
     {
@@ -304,7 +305,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: FuseFX
+    /// ComponentProperty: FuseFX<br/>
+    /// Default: BmScript.Default__RHelicopterRocket.PFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FuseFX
     {
@@ -313,7 +315,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ExplosionRadius
     {
@@ -331,7 +334,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -340,7 +344,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Lifetime
+    /// FloatProperty: Lifetime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float Lifetime
     {
@@ -349,7 +354,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fPlayerPromiximityProportionForAutoExplode
+    /// FloatProperty: fPlayerPromiximityProportionForAutoExplode<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fPlayerPromiximityProportionForAutoExplode
     {
@@ -484,7 +490,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RocketTurnRate
+    /// FloatProperty: RocketTurnRate<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RocketTurnRate
     {
@@ -502,7 +509,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FlightSpeedMax
+    /// FloatProperty: FlightSpeedMax<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float FlightSpeedMax
     {
@@ -511,7 +519,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GravityAcceleration
+    /// FloatProperty: GravityAcceleration<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float GravityAcceleration
     {
@@ -526,7 +535,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 896);
 
     /// <summary>
-    /// FloatProperty: MomentumCountdown
+    /// FloatProperty: MomentumCountdown<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float MomentumCountdown
     {
@@ -535,7 +545,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PostFireGravityPeriod
+    /// FloatProperty: PostFireGravityPeriod<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float PostFireGravityPeriod
     {
@@ -544,7 +555,8 @@ public partial class RHelicopterRocket : BmSDK.BmGame.RHelicopterRocketBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fPlayerLockonDistance
+    /// FloatProperty: fPlayerLockonDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fPlayerLockonDistance
     {

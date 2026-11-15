@@ -115,7 +115,8 @@ public partial class SVehicleSimTank : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxEngineTorque
+    /// FloatProperty: MaxEngineTorque<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxEngineTorque
     {
@@ -160,7 +161,8 @@ public partial class SVehicleSimTank : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: TurnMaxGripReduction
+    /// FloatProperty: TurnMaxGripReduction<br/>
+    /// Default: 0.97
     /// </summary>
     public unsafe float TurnMaxGripReduction
     {
@@ -169,7 +171,8 @@ public partial class SVehicleSimTank : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: TurnGripScaleRate
+    /// FloatProperty: TurnGripScaleRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TurnGripScaleRate
     {
@@ -178,7 +181,8 @@ public partial class SVehicleSimTank : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bTurnInPlaceOnSteer
+    /// BoolProperty: bTurnInPlaceOnSteer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTurnInPlaceOnSteer
     {

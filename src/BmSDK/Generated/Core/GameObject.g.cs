@@ -5498,7 +5498,8 @@ public partial class GameObject : BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: A
+        /// FloatProperty: A<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float A
         {
@@ -5729,7 +5730,8 @@ public partial class GameObject : BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FOV
+        /// FloatProperty: FOV<br/>
+        /// Default: 90
         /// </summary>
         public unsafe float FOV
         {
@@ -6747,7 +6749,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ObjectFlags
+    /// IntProperty: ObjectFlags<br/>
+    /// Default: 1606784
     /// </summary>
     public unsafe BmSDK.GameObject.EObjectFlags ObjectFlags
     {
@@ -6765,7 +6768,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HashIndexPrev
+    /// IntProperty: HashIndexPrev<br/>
+    /// Default: 118821
     /// </summary>
     public unsafe int HashIndexPrev
     {
@@ -6774,7 +6778,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HashIndexNext
+    /// IntProperty: HashIndexNext<br/>
+    /// Default: -2
     /// </summary>
     public unsafe int HashIndexNext
     {
@@ -6783,7 +6788,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HashOuterIndexPrev
+    /// IntProperty: HashOuterIndexPrev<br/>
+    /// Default: -2
     /// </summary>
     public unsafe int HashOuterIndexPrev
     {
@@ -6792,7 +6798,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HashOuterIndexNext
+    /// IntProperty: HashOuterIndexNext<br/>
+    /// Default: -2
     /// </summary>
     public unsafe int HashOuterIndexNext
     {
@@ -6819,7 +6826,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ObjectInternalInteger
+    /// IntProperty: ObjectInternalInteger<br/>
+    /// Default: 385001
     /// </summary>
     public unsafe int ObjectInternalInteger
     {
@@ -6828,7 +6836,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Outer
+    /// ObjectProperty: Outer<br/>
+    /// Default: Core
     /// </summary>
     public unsafe BmSDK.GameObject Outer
     {
@@ -6837,7 +6846,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: Name
+    /// NameProperty: Name<br/>
+    /// Default: Default__Object
     /// </summary>
     public unsafe BmSDK.FName Name
     {
@@ -6846,7 +6856,8 @@ public partial class GameObject : BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: Class
+    /// ClassProperty: Class<br/>
+    /// Default: Core.Object
     /// </summary>
     public unsafe BmSDK.Class Class
     {

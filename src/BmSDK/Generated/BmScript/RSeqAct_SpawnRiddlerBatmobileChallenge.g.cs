@@ -279,7 +279,8 @@ public partial class RSeqAct_SpawnRiddlerBatmobileChallenge : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: ChallengeTimeLimit
+    /// FloatProperty: ChallengeTimeLimit<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ChallengeTimeLimit
     {
@@ -342,7 +343,8 @@ public partial class RSeqAct_SpawnRiddlerBatmobileChallenge : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: fHACKTimeToWaitBeforeDisplayingTime
+    /// FloatProperty: fHACKTimeToWaitBeforeDisplayingTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fHACKTimeToWaitBeforeDisplayingTime
     {

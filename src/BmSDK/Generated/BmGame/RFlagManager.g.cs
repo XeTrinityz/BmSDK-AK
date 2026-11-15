@@ -573,7 +573,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NonSavedFlags
+    /// StrProperty: NonSavedFlags<br/>
+    /// Default: "DisableInformants,AnyoneTalking,Batmobile_InCombat,Batmobile_InPredator,Batmobile_InChase,Batman_InCombat,Batman_InDialogue,Batman_InXrayMode,Batman_TalkingToZsasz,NoFadeInOnStart,Batman_NoSaveAtDoor...
     /// </summary>
     public unsafe BmSDK.FString NonSavedFlags
     {
@@ -582,7 +583,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ChFlagsToNeverClear
+    /// ArrayProperty: ChFlagsToNeverClear<br/>
+    /// Default: ("A3_Ch2_CombatDone","A3_Ch2_BatmobileIn","A3_Ch2_PredDone","A3_Ch2_PredDone","Ch2_AceA3_MixingRoomDone","A3_Ch2_BatmobileIn","A3_Ch2_PredDone","A3_Ch2_TanksDead","UnderAce_A3_CH2_PredSave","A3_Ch2_Pr...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ChFlagsToNeverClear
     {

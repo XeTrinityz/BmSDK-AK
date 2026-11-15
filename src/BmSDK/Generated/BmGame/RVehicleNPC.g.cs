@@ -4450,7 +4450,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         }
 
         /// <summary>
-        /// StructProperty: Idles
+        /// StructProperty: Idles<br/>
+        /// Default: (MinInterval=10,MaxInterval=30)
         /// </summary>
         public unsafe BmSDK.BmGame.RVehicleNPC.FVehiclePassengerIdleInfo Idles
         {
@@ -4511,7 +4512,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         }
 
         /// <summary>
-        /// FloatProperty: MinInterval
+        /// FloatProperty: MinInterval<br/>
+        /// Default: 10
         /// </summary>
         public unsafe float MinInterval
         {
@@ -4520,7 +4522,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         }
 
         /// <summary>
-        /// FloatProperty: MaxInterval
+        /// FloatProperty: MaxInterval<br/>
+        /// Default: 30
         /// </summary>
         public unsafe float MaxInterval
         {
@@ -4710,7 +4713,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ObjectProperty: OracleHackingPfx
+    /// ObjectProperty: OracleHackingPfx<br/>
+    /// Default: VFX_Vehicles.Particles.Tank.Oracle_Hacking
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem OracleHackingPfx
     {
@@ -4719,7 +4723,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ObjectProperty: OracleHackedPfx
+    /// ObjectProperty: OracleHackedPfx<br/>
+    /// Default: VFX_Vehicles.Particles.Tank.Oracle_Hacking_Generic
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem OracleHackedPfx
     {
@@ -4854,7 +4859,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ObjectProperty: BlindRTPC
+    /// ObjectProperty: BlindRTPC<br/>
+    /// Default: Ww_Parameters.MUSIC_Timer
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName BlindRTPC
     {
@@ -5274,7 +5280,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ObjectProperty: VehicleCustomisation
+    /// ObjectProperty: VehicleCustomisation<br/>
+    /// Default: BmGame.Default__RVehicleNPC.VCO
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleCustomisation VehicleCustomisation
     {
@@ -5355,7 +5362,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ComponentProperty: explosionImpulse
+    /// ComponentProperty: explosionImpulse<br/>
+    /// Default: BmGame.Default__RVehicleNPC.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent explosionImpulse
     {
@@ -5373,7 +5381,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ComponentProperty: ThreatComponent
+    /// ComponentProperty: ThreatComponent<br/>
+    /// Default: BmGame.Default__RVehicleNPC.ThreatComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleThreatComponent ThreatComponent
     {
@@ -5652,7 +5661,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: bCompletelyDisabledByEMP
+    /// BoolProperty: bCompletelyDisabledByEMP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCompletelyDisabledByEMP
     {
@@ -5724,7 +5734,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: AudioTurretSpeedABS
+    /// BoolProperty: AudioTurretSpeedABS<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AudioTurretSpeedABS
     {
@@ -6012,7 +6023,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: bHeavyArmour
+    /// BoolProperty: bHeavyArmour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHeavyArmour
     {
@@ -6030,7 +6042,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: TakesVisualDamageFromCollisions
+    /// BoolProperty: TakesVisualDamageFromCollisions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TakesVisualDamageFromCollisions
     {
@@ -6201,7 +6214,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: bSetPassengersHostileOnExit
+    /// BoolProperty: bSetPassengersHostileOnExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetPassengersHostileOnExit
     {
@@ -6354,7 +6368,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BehaviourActivateRange
+    /// FloatProperty: BehaviourActivateRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BehaviourActivateRange
     {
@@ -6363,7 +6378,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BehaviourDeactivateRange
+    /// FloatProperty: BehaviourDeactivateRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float BehaviourDeactivateRange
     {
@@ -6372,7 +6388,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: SteeringLookAheadScale
+    /// FloatProperty: SteeringLookAheadScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SteeringLookAheadScale
     {
@@ -6381,7 +6398,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TyreFrictionScale
+    /// FloatProperty: TyreFrictionScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TyreFrictionScale
     {
@@ -6390,7 +6408,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DestroyMinPlayerRange
+    /// FloatProperty: DestroyMinPlayerRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DestroyMinPlayerRange
     {
@@ -6444,7 +6463,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: KillPostPassengersExitDelay
+    /// FloatProperty: KillPostPassengersExitDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float KillPostPassengersExitDelay
     {
@@ -6453,7 +6473,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveReverseThrottle
+    /// FloatProperty: SelfDriveReverseThrottle<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SelfDriveReverseThrottle
     {
@@ -6462,7 +6483,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveBackUpThrottle
+    /// FloatProperty: SelfDriveBackUpThrottle<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SelfDriveBackUpThrottle
     {
@@ -6654,7 +6676,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5492);
 
     /// <summary>
-    /// FloatProperty: TrappedEventDelay
+    /// FloatProperty: TrappedEventDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TrappedEventDelay
     {
@@ -6708,7 +6731,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: VehicleAsBombDamageRadius
+    /// FloatProperty: VehicleAsBombDamageRadius<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float VehicleAsBombDamageRadius
     {
@@ -6717,7 +6741,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: VehicleAsBombDamageAmount
+    /// FloatProperty: VehicleAsBombDamageAmount<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float VehicleAsBombDamageAmount
     {
@@ -6726,7 +6751,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: VehicleAsEmpDamageRadius
+    /// FloatProperty: VehicleAsEmpDamageRadius<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float VehicleAsEmpDamageRadius
     {
@@ -6735,7 +6761,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: VehicleAsEmpDamageAmount
+    /// FloatProperty: VehicleAsEmpDamageAmount<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float VehicleAsEmpDamageAmount
     {
@@ -6789,7 +6816,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StrProperty: sRHDScreenTitle
+    /// StrProperty: sRHDScreenTitle<br/>
+    /// Default: "$GFxUI.RHD.TargetVehicle"
     /// </summary>
     public unsafe BmSDK.FString sRHDScreenTitle
     {
@@ -6807,7 +6835,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorHUDDescription
+    /// StrProperty: sDisruptorHUDDescription<br/>
+    /// Default: "#DSRPT|Sabotage|$Disruptor.Tank|$Disruptor.TankDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorHUDDescription
     {
@@ -6816,7 +6845,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorTrackerHUDDescription
+    /// StrProperty: sDisruptorTrackerHUDDescription<br/>
+    /// Default: "#DSRPT|Track|$Disruptor.Tank|$Disruptor.VehicleDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorTrackerHUDDescription
     {
@@ -6834,7 +6864,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TurretRotSpeed
+    /// FloatProperty: TurretRotSpeed<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float TurretRotSpeed
     {
@@ -6843,7 +6874,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TurretMinPitch
+    /// FloatProperty: TurretMinPitch<br/>
+    /// Default: -30
     /// </summary>
     public unsafe float TurretMinPitch
     {
@@ -6852,7 +6884,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TurretMaxPitch
+    /// FloatProperty: TurretMaxPitch<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float TurretMaxPitch
     {
@@ -6861,7 +6894,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TurretMinYaw
+    /// FloatProperty: TurretMinYaw<br/>
+    /// Default: -180
     /// </summary>
     public unsafe float TurretMinYaw
     {
@@ -6870,7 +6904,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TurretMaxYaw
+    /// FloatProperty: TurretMaxYaw<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float TurretMaxYaw
     {
@@ -6933,7 +6968,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 5712);
 
     /// <summary>
-    /// FloatProperty: ShootInitialDelay
+    /// FloatProperty: ShootInitialDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShootInitialDelay
     {
@@ -6942,7 +6978,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: ShootInitialDelayRand
+    /// FloatProperty: ShootInitialDelayRand<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ShootInitialDelayRand
     {
@@ -6951,7 +6988,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: ShootNextDelay
+    /// FloatProperty: ShootNextDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float ShootNextDelay
     {
@@ -6987,7 +7025,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StructProperty: ProjectileLaunchOffset
+    /// StructProperty: ProjectileLaunchOffset<br/>
+    /// Default: (Z=300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ProjectileLaunchOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5752);
@@ -7020,7 +7059,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: AttackSpacingMultiplier
+    /// FloatProperty: AttackSpacingMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AttackSpacingMultiplier
     {
@@ -7029,7 +7069,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: AttackWarningModifier
+    /// FloatProperty: AttackWarningModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AttackWarningModifier
     {
@@ -7053,7 +7094,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: RunOverDamage
+    /// FloatProperty: RunOverDamage<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RunOverDamage
     {
@@ -7071,7 +7113,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MachineGunDamageInterval
+    /// FloatProperty: MachineGunDamageInterval<br/>
+    /// Default: 0.11
     /// </summary>
     public unsafe float MachineGunDamageInterval
     {
@@ -7089,7 +7132,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MachineGunShotDeviance
+    /// FloatProperty: MachineGunShotDeviance<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MachineGunShotDeviance
     {
@@ -7098,7 +7142,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MachineGunDamage
+    /// FloatProperty: MachineGunDamage<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float MachineGunDamage
     {
@@ -7107,7 +7152,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DeathImpulse
+    /// FloatProperty: DeathImpulse<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float DeathImpulse
     {
@@ -7116,7 +7162,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DeathImpulseRadius
+    /// FloatProperty: DeathImpulseRadius<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float DeathImpulseRadius
     {
@@ -7134,7 +7181,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DeathDisappearTime
+    /// FloatProperty: DeathDisappearTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DeathDisappearTime
     {
@@ -7194,7 +7242,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DeathParticleSystemVelocityFactor
+    /// FloatProperty: DeathParticleSystemVelocityFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DeathParticleSystemVelocityFactor
     {
@@ -7203,7 +7252,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DeathParticleSystemVelocityFalloff
+    /// FloatProperty: DeathParticleSystemVelocityFalloff<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DeathParticleSystemVelocityFalloff
     {
@@ -7227,7 +7277,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: CrushThreshold
+    /// FloatProperty: CrushThreshold<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CrushThreshold
     {
@@ -7236,7 +7287,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: CrushThresholdZ
+    /// FloatProperty: CrushThresholdZ<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CrushThresholdZ
     {
@@ -7293,7 +7345,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveReverseDuration
+    /// FloatProperty: SelfDriveReverseDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SelfDriveReverseDuration
     {
@@ -7323,7 +7376,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: WeaponDamageFXScale
+    /// FloatProperty: WeaponDamageFXScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WeaponDamageFXScale
     {
@@ -7332,7 +7386,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: VisualDamageCollisionSpeedScale
+    /// FloatProperty: VisualDamageCollisionSpeedScale<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float VisualDamageCollisionSpeedScale
     {
@@ -7386,7 +7441,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DroneHackerTime
+    /// FloatProperty: DroneHackerTime<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float DroneHackerTime
     {
@@ -7400,22 +7456,26 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     public InlineArray<BmSDK.BmGame.RVehicleNPC.FVehiclePassenger> Passengers => new(4, Ptr + 6040, 212, this);
 
     /// <summary>
-    /// StructProperty: Passengers
+    /// StructProperty: Passengers<br/>
+    /// Default: (SocketName=Driver,Idles=(MinInterval=10,MaxInterval=30))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehiclePassenger Passengers_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehiclePassenger>(Ptr + 6040);
     /// <summary>
-    /// StructProperty: Passengers
+    /// StructProperty: Passengers<br/>
+    /// Default: (SocketName=Passenger,Idles=(MinInterval=10,MaxInterval=30))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehiclePassenger Passengers_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehiclePassenger>(Ptr + 6252);
     /// <summary>
-    /// StructProperty: Passengers
+    /// StructProperty: Passengers<br/>
+    /// Default: (SocketName=BackPassengerLeft,Idles=(MinInterval=10,MaxInterval=30))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehiclePassenger Passengers_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehiclePassenger>(Ptr + 6464);
     /// <summary>
-    /// StructProperty: Passengers
+    /// StructProperty: Passengers<br/>
+    /// Default: (SocketName=BackPassengerRight,Idles=(MinInterval=10,MaxInterval=30))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehiclePassenger Passengers_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehiclePassenger>(Ptr + 6676);
@@ -7436,13 +7496,15 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction>(Ptr + 6904);
 
     /// <summary>
-    /// StructProperty: IndoorVisionCones
+    /// StructProperty: IndoorVisionCones<br/>
+    /// Default: (BatmobileVisionCone=(AlwaysSeeRange=7500,VisionRange=10000,ConeHorizontalHalfAngle=60,ConeVerticalHalfAngle=30,MaxZVisionRange=4000),BatmanVisionCone=(VisionRange=2000,ConeHorizontalHalfAngle=30,Cone...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehicleVisionSet IndoorVisionCones
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehicleVisionSet>(Ptr + 7072);
 
     /// <summary>
-    /// StructProperty: OutdoorVisionCones
+    /// StructProperty: OutdoorVisionCones<br/>
+    /// Default: (BatmobileVisionCone=(AlwaysSeeRange=7500,VisionRange=10000,ConeHorizontalHalfAngle=60,ConeVerticalHalfAngle=30,MaxZVisionRange=4000),BatmanVisionCone=(VisionRange=3000,ConeHorizontalHalfAngle=30,Cone...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleNPC.FVehicleVisionSet OutdoorVisionCones
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehicleVisionSet>(Ptr + 7120);
@@ -7463,7 +7525,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleNPC.FVehicleVisionSet>(Ptr + 7172);
 
     /// <summary>
-    /// StructProperty: ExplosionScreenShake
+    /// StructProperty: ExplosionScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ExplosionScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 7220);
@@ -7478,7 +7541,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: TimeUntilNextDriverIdleBark
+    /// FloatProperty: TimeUntilNextDriverIdleBark<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeUntilNextDriverIdleBark
     {
@@ -7487,7 +7551,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// IntProperty: PriorityLastDriverBark
+    /// IntProperty: PriorityLastDriverBark<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PriorityLastDriverBark
     {
@@ -7523,7 +7588,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MinDelayBetweenIdleBarks
+    /// FloatProperty: MinDelayBetweenIdleBarks<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinDelayBetweenIdleBarks
     {
@@ -7532,7 +7598,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MaxDelayBetweenIdleBarks
+    /// FloatProperty: MaxDelayBetweenIdleBarks<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxDelayBetweenIdleBarks
     {
@@ -7541,7 +7608,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: IdleBarkMaxBatmobileDist
+    /// FloatProperty: IdleBarkMaxBatmobileDist<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float IdleBarkMaxBatmobileDist
     {
@@ -7550,7 +7618,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileNearBarkBatmobileDist
+    /// FloatProperty: BatmobileNearBarkBatmobileDist<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float BatmobileNearBarkBatmobileDist
     {
@@ -7559,7 +7628,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileNearBarkEscortDist
+    /// FloatProperty: BatmobileNearBarkEscortDist<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float BatmobileNearBarkEscortDist
     {
@@ -7568,7 +7638,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StructProperty: DefaultWaveSpawnerProperties
+    /// StructProperty: DefaultWaveSpawnerProperties<br/>
+    /// Default: (bOverrideDefaultSettings=true,DropToGround=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSeqAct_VehicleEnemySpawner.FSpawnedVehicleEnemyDesc DefaultWaveSpawnerProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSeqAct_VehicleEnemySpawner.FSpawnedVehicleEnemyDesc>(Ptr + 7428);
@@ -7595,7 +7666,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 7532);
 
     /// <summary>
-    /// FloatProperty: MissileLockOnDuration
+    /// FloatProperty: MissileLockOnDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MissileLockOnDuration
     {
@@ -7637,7 +7709,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: AwareOfPlayerMax
+    /// FloatProperty: AwareOfPlayerMax<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float AwareOfPlayerMax
     {

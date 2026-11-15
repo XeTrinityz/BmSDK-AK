@@ -210,7 +210,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
     public InlineArray<BmSDK.FName> StandardGrenadeAnimNames => new(3, Ptr + 744, 8, this);
 
     /// <summary>
-    /// NameProperty: StandardGrenadeAnimNames
+    /// NameProperty: StandardGrenadeAnimNames<br/>
+    /// Default: Grenade_Throw_into_Floor_Vent_02
     /// </summary>
     public unsafe BmSDK.FName StandardGrenadeAnimNames_0
     {
@@ -218,7 +219,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 744); }
     }
     /// <summary>
-    /// NameProperty: StandardGrenadeAnimNames
+    /// NameProperty: StandardGrenadeAnimNames<br/>
+    /// Default: Grenade_Throw_into_Floor_Vent_02_Right
     /// </summary>
     public unsafe BmSDK.FName StandardGrenadeAnimNames_1
     {
@@ -226,7 +228,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 752); }
     }
     /// <summary>
-    /// NameProperty: StandardGrenadeAnimNames
+    /// NameProperty: StandardGrenadeAnimNames<br/>
+    /// Default: Grenade_Throw_into_Floor_Vent_02_Left
     /// </summary>
     public unsafe BmSDK.FName StandardGrenadeAnimNames_2
     {
@@ -240,7 +243,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
     public InlineArray<BmSDK.FName> IncendiaryGrenadeAnimNames => new(3, Ptr + 768, 8, this);
 
     /// <summary>
-    /// NameProperty: IncendiaryGrenadeAnimNames
+    /// NameProperty: IncendiaryGrenadeAnimNames<br/>
+    /// Default: Grenade_Incendiary_Throw_into_Floor_Vent
     /// </summary>
     public unsafe BmSDK.FName IncendiaryGrenadeAnimNames_0
     {
@@ -248,7 +252,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 768); }
     }
     /// <summary>
-    /// NameProperty: IncendiaryGrenadeAnimNames
+    /// NameProperty: IncendiaryGrenadeAnimNames<br/>
+    /// Default: Grenade_Incendiary_Throw_into_Floor_Vent_Right
     /// </summary>
     public unsafe BmSDK.FName IncendiaryGrenadeAnimNames_1
     {
@@ -256,7 +261,8 @@ public partial class RAEC_Search_Sub_DestroyGrate : BmSDK.BmGame.RAlertEventCoor
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 776); }
     }
     /// <summary>
-    /// NameProperty: IncendiaryGrenadeAnimNames
+    /// NameProperty: IncendiaryGrenadeAnimNames<br/>
+    /// Default: Grenade_Incendiary_Throw_into_Floor_Vent_Left
     /// </summary>
     public unsafe BmSDK.FName IncendiaryGrenadeAnimNames_2
     {

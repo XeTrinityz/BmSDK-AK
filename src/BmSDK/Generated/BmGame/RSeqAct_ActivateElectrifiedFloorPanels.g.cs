@@ -236,7 +236,8 @@ public partial class RSeqAct_ActivateElectrifiedFloorPanels : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: CurrentActivationTime
+    /// FloatProperty: CurrentActivationTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentActivationTime
     {
@@ -296,7 +297,8 @@ public partial class RSeqAct_ActivateElectrifiedFloorPanels : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// NameProperty: PercentName
+    /// NameProperty: PercentName<br/>
+    /// Default: Percent
     /// </summary>
     public unsafe BmSDK.FName PercentName
     {

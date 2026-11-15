@@ -79,7 +79,8 @@ public partial class MSpecialMoveConfig_HarleyJumpDown : BmSDK.BmGame.RSpecialMo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: JumpStartAnim
+    /// NameProperty: JumpStartAnim<br/>
+    /// Default: Pounce_RailToRail_Down_Start
     /// </summary>
     public unsafe BmSDK.FName JumpStartAnim
     {
@@ -88,7 +89,8 @@ public partial class MSpecialMoveConfig_HarleyJumpDown : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: JumpAirAnim
+    /// NameProperty: JumpAirAnim<br/>
+    /// Default: Pounce_RailToRail_Down_Air
     /// </summary>
     public unsafe BmSDK.FName JumpAirAnim
     {
@@ -97,7 +99,8 @@ public partial class MSpecialMoveConfig_HarleyJumpDown : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: JumpLandAnim
+    /// NameProperty: JumpLandAnim<br/>
+    /// Default: Pounce_RailToRail_Down_Land
     /// </summary>
     public unsafe BmSDK.FName JumpLandAnim
     {
@@ -106,7 +109,8 @@ public partial class MSpecialMoveConfig_HarleyJumpDown : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: JumpThroughWindowAnim
+    /// NameProperty: JumpThroughWindowAnim<br/>
+    /// Default: Pounce_Window_Down
     /// </summary>
     public unsafe BmSDK.FName JumpThroughWindowAnim
     {
@@ -115,7 +119,8 @@ public partial class MSpecialMoveConfig_HarleyJumpDown : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: EndCameraState
+    /// NameProperty: EndCameraState<br/>
+    /// Default: RailingStealth
     /// </summary>
     public unsafe BmSDK.FName EndCameraState
     {

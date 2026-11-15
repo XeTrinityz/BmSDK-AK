@@ -92,7 +92,8 @@ public partial class RSeqAct_EventSequence : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     }
 
     /// <summary>
-    /// ArrayProperty: TriggerEventsAtTimes
+    /// ArrayProperty: TriggerEventsAtTimes<br/>
+    /// Default: ((LinkName=Event1,TimeForLink=1,LinkId=1),(LinkName=Event2,TimeForLink=2,LinkId=2))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RSeqAct_EventSequence.FTimedLink> TriggerEventsAtTimes
     {
@@ -161,7 +162,8 @@ public partial class RSeqAct_EventSequence : BmSDK.Engine.SeqAct_Latent, BmSDK.I
     public partial record struct FTimedLink
     {
         /// <summary>
-        /// NameProperty: LinkName
+        /// NameProperty: LinkName<br/>
+        /// Default: NewEvent
         /// </summary>
         public unsafe BmSDK.FName LinkName
         {
@@ -179,7 +181,8 @@ public partial class RSeqAct_EventSequence : BmSDK.Engine.SeqAct_Latent, BmSDK.I
         }
 
         /// <summary>
-        /// IntProperty: LinkId
+        /// IntProperty: LinkId<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int LinkId
         {

@@ -227,7 +227,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: AudibilityCap
+    /// FloatProperty: AudibilityCap<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AudibilityCap
     {
@@ -236,7 +237,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: FalloffRadiusMultiplier
+    /// FloatProperty: FalloffRadiusMultiplier<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FalloffRadiusMultiplier
     {
@@ -407,7 +409,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: ObsOccMultiplier
+    /// FloatProperty: ObsOccMultiplier<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ObsOccMultiplier
     {
@@ -416,7 +419,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: ObsOccMultiplierDlg
+    /// FloatProperty: ObsOccMultiplierDlg<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ObsOccMultiplierDlg
     {
@@ -425,7 +429,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: WetDryMixVolume
+    /// FloatProperty: WetDryMixVolume<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WetDryMixVolume
     {
@@ -434,7 +439,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: DopplerVelocity
+    /// FloatProperty: DopplerVelocity<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DopplerVelocity
     {
@@ -443,7 +449,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionScalingDistance
+    /// FloatProperty: OcclusionScalingDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OcclusionScalingDistance
     {
@@ -452,7 +459,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplier
+    /// FloatProperty: OcclusionMultiplier<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OcclusionMultiplier
     {
@@ -461,7 +469,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplierAux
+    /// FloatProperty: OcclusionMultiplierAux<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OcclusionMultiplierAux
     {
@@ -470,7 +479,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplierDlg
+    /// FloatProperty: OcclusionMultiplierDlg<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OcclusionMultiplierDlg
     {
@@ -479,7 +489,8 @@ public partial class SeqAct_AkComponentSettings : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionBubble
+    /// FloatProperty: OcclusionBubble<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OcclusionBubble
     {

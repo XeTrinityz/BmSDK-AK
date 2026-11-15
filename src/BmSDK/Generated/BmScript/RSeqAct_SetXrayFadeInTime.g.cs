@@ -115,7 +115,8 @@ public partial class RSeqAct_SetXrayFadeInTime : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FadeInStartTime
+    /// FloatProperty: FadeInStartTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeInStartTime
     {
@@ -124,7 +125,8 @@ public partial class RSeqAct_SetXrayFadeInTime : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FadeInDurationTime
+    /// FloatProperty: FadeInDurationTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FadeInDurationTime
     {

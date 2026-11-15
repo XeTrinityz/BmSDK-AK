@@ -143,7 +143,8 @@ public partial class RSeqAct_SmokeMachine : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: paintRadius
+    /// FloatProperty: paintRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float paintRadius
     {

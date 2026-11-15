@@ -368,7 +368,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
     public partial record struct FProximityAndSightPatrol
     {
         /// <summary>
-        /// BoolProperty: bPauseIfBatmanNear
+        /// BoolProperty: bPauseIfBatmanNear<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPauseIfBatmanNear
         {
@@ -377,7 +378,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         }
 
         /// <summary>
-        /// FloatProperty: BatmanCloseDistance
+        /// FloatProperty: BatmanCloseDistance<br/>
+        /// Default: 200
         /// </summary>
         public unsafe float BatmanCloseDistance
         {
@@ -386,7 +388,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         }
 
         /// <summary>
-        /// FloatProperty: NPCLookAtDistance
+        /// FloatProperty: NPCLookAtDistance<br/>
+        /// Default: 600
         /// </summary>
         public unsafe float NPCLookAtDistance
         {
@@ -395,7 +398,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         }
 
         /// <summary>
-        /// FloatProperty: BatmanLookAtDistance
+        /// FloatProperty: BatmanLookAtDistance<br/>
+        /// Default: 600
         /// </summary>
         public unsafe float BatmanLookAtDistance
         {
@@ -510,7 +514,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 720);
 
     /// <summary>
-    /// BoolProperty: bStartFromCurrentPosition
+    /// BoolProperty: bStartFromCurrentPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStartFromCurrentPosition
     {
@@ -600,7 +605,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// StructProperty: ProximityAndSightOptions
+    /// StructProperty: ProximityAndSightOptions<br/>
+    /// Default: (bPauseIfBatmanNear=true,BatmanCloseDistance=200,NPCLookAtDistance=600,BatmanLookAtDistance=600)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMBehaviour_FriendlyPatrolNavMesh.FProximityAndSightPatrol ProximityAndSightOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMBehaviour_FriendlyPatrolNavMesh.FProximityAndSightPatrol>(Ptr + 772);
@@ -615,7 +621,8 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenWalks
+    /// FloatProperty: TimeBetweenWalks<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float TimeBetweenWalks
     {

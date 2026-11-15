@@ -143,7 +143,8 @@ public partial class MBMAIAction_JackInBoxAttraction_Stage1 : BmSDK.BmGame.RBMAI
     }
 
     /// <summary>
-    /// ArrayProperty: IdleAnims
+    /// ArrayProperty: IdleAnims<br/>
+    /// Default: (JackInBox_01_loop,JackInBox_02_loop)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IdleAnims
     {
@@ -152,7 +153,8 @@ public partial class MBMAIAction_JackInBoxAttraction_Stage1 : BmSDK.BmGame.RBMAI
     }
 
     /// <summary>
-    /// ArrayProperty: InAnims
+    /// ArrayProperty: InAnims<br/>
+    /// Default: (JackInBox_01_in,JackInBox_02_in)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> InAnims
     {
@@ -161,7 +163,8 @@ public partial class MBMAIAction_JackInBoxAttraction_Stage1 : BmSDK.BmGame.RBMAI
     }
 
     /// <summary>
-    /// ArrayProperty: OutAnims
+    /// ArrayProperty: OutAnims<br/>
+    /// Default: (JackInBox_01_out,JackInBox_02_out)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OutAnims
     {

@@ -311,7 +311,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearDamping
+    /// FloatProperty: LinearDamping<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float LinearDamping
     {
@@ -320,7 +321,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearStiffness
+    /// FloatProperty: LinearStiffness<br/>
+    /// Default: 1300
     /// </summary>
     public unsafe float LinearStiffness
     {
@@ -329,19 +331,22 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LinearStiffnessScale3D
+    /// StructProperty: LinearStiffnessScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LinearStiffnessScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 172);
 
     /// <summary>
-    /// StructProperty: LinearDampingScale3D
+    /// StructProperty: LinearDampingScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LinearDampingScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 184);
 
     /// <summary>
-    /// FloatProperty: AngularDamping
+    /// FloatProperty: AngularDamping<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float AngularDamping
     {
@@ -350,7 +355,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularStiffness
+    /// FloatProperty: AngularStiffness<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float AngularStiffness
     {

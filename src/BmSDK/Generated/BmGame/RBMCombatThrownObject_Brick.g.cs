@@ -95,7 +95,8 @@ public partial class RBMCombatThrownObject_Brick : BmSDK.BmGame.RBMCombatThrownO
     }
 
     /// <summary>
-    /// FloatProperty: DamageGiven
+    /// FloatProperty: DamageGiven<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageGiven
     {

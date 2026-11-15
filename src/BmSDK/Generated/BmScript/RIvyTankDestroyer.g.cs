@@ -233,7 +233,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TargetAnimSet
+    /// ObjectProperty: TargetAnimSet<br/>
+    /// Default: Anim_Ivy.Plants.Tanks_Plants_Attack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet TargetAnimSet
     {
@@ -242,7 +243,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ArmourTankAnimset
+    /// ObjectProperty: ArmourTankAnimset<br/>
+    /// Default: Anim_Ivy.Plants.Tanks_Armoured_Plants_Attack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet ArmourTankAnimset
     {
@@ -251,7 +253,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: MissileTankAnimset
+    /// ObjectProperty: MissileTankAnimset<br/>
+    /// Default: Anim_Ivy.Plants.Tanks_Missile_Plants_Attack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet MissileTankAnimset
     {
@@ -260,7 +263,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DoubleTankAnimset
+    /// ObjectProperty: DoubleTankAnimset<br/>
+    /// Default: Anim_Ivy.Plants.Tanks_Double_Plants_Attack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet DoubleTankAnimset
     {
@@ -269,7 +273,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SparkPSC
+    /// ComponentProperty: SparkPSC<br/>
+    /// Default: BmScript.Default__RIvyTankDestroyer.SparkyPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SparkPSC
     {
@@ -278,7 +283,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmScript.Default__RIvyTankDestroyer.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -287,7 +293,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: inAnimName
+    /// NameProperty: inAnimName<br/>
+    /// Default: Ivy_Plant_In
     /// </summary>
     public unsafe BmSDK.FName inAnimName
     {
@@ -296,7 +303,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: idleAnimName
+    /// NameProperty: idleAnimName<br/>
+    /// Default: Ivy_Plant_Idle
     /// </summary>
     public unsafe BmSDK.FName idleAnimName
     {
@@ -305,7 +313,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: outAnimName
+    /// NameProperty: outAnimName<br/>
+    /// Default: Ivy_Plant_Out
     /// </summary>
     public unsafe BmSDK.FName outAnimName
     {
@@ -314,7 +323,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: InAnimName2
+    /// NameProperty: InAnimName2<br/>
+    /// Default: Ivy_Plant_Wrap_Attack_In
     /// </summary>
     public unsafe BmSDK.FName InAnimName2
     {
@@ -323,7 +333,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: IdleAnimName2
+    /// NameProperty: IdleAnimName2<br/>
+    /// Default: Ivy_Plant_Wrap_Attack_Idle
     /// </summary>
     public unsafe BmSDK.FName IdleAnimName2
     {
@@ -332,7 +343,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: OutAnimName2
+    /// NameProperty: OutAnimName2<br/>
+    /// Default: Ivy_Plant_Wrap_Attack_Out
     /// </summary>
     public unsafe BmSDK.FName OutAnimName2
     {
@@ -341,7 +353,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VineScale
+    /// FloatProperty: VineScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VineScale
     {
@@ -404,7 +417,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: ArmourTankAnim
+    /// NameProperty: ArmourTankAnim<br/>
+    /// Default: Ivy_Plant_Attack_Armoured
     /// </summary>
     public unsafe BmSDK.FName ArmourTankAnim
     {
@@ -413,7 +427,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: MissileTankAnim
+    /// NameProperty: MissileTankAnim<br/>
+    /// Default: Ivy_Plant_Attack_Missile
     /// </summary>
     public unsafe BmSDK.FName MissileTankAnim
     {
@@ -422,7 +437,8 @@ public partial class RIvyTankDestroyer : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: DoubleTankAnim
+    /// NameProperty: DoubleTankAnim<br/>
+    /// Default: Ivy_Plant_Attack_Double
     /// </summary>
     public unsafe BmSDK.FName DoubleTankAnim
     {

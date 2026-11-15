@@ -182,7 +182,8 @@ public partial class RScanSolution : BmSDK.BmGame.RRiddleSolutionBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bScannable
+    /// BoolProperty: bScannable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bScannable
     {

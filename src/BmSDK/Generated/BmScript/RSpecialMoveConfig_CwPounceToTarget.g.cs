@@ -304,7 +304,8 @@ public partial class RSpecialMoveConfig_CwPounceToTarget : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeEndMovementStance
+    /// NameProperty: ClimbLedgeEndMovementStance<br/>
+    /// Default: Running
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeEndMovementStance
     {
@@ -313,7 +314,8 @@ public partial class RSpecialMoveConfig_CwPounceToTarget : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: ClimbRailingEndMovementStance
+    /// NameProperty: ClimbRailingEndMovementStance<br/>
+    /// Default: Running
     /// </summary>
     public unsafe BmSDK.FName ClimbRailingEndMovementStance
     {
@@ -322,7 +324,8 @@ public partial class RSpecialMoveConfig_CwPounceToTarget : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeEndControllerState
+    /// NameProperty: ClimbLedgeEndControllerState<br/>
+    /// Default: RunningMode
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeEndControllerState
     {
@@ -331,7 +334,8 @@ public partial class RSpecialMoveConfig_CwPounceToTarget : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: ClimbRailingEndControllerState
+    /// NameProperty: ClimbRailingEndControllerState<br/>
+    /// Default: RunningMode
     /// </summary>
     public unsafe BmSDK.FName ClimbRailingEndControllerState
     {
@@ -376,7 +380,8 @@ public partial class RSpecialMoveConfig_CwPounceToTarget : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// BoolProperty: bLookInLandDirection
+    /// BoolProperty: bLookInLandDirection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookInLandDirection
     {

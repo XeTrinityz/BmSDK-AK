@@ -94,7 +94,8 @@ public partial class RStopBatmobileBox : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: AggGeomComp
+    /// ComponentProperty: AggGeomComp<br/>
+    /// Default: BmGame.Default__RStopBatmobileBox.ColVol
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent AggGeomComp
     {

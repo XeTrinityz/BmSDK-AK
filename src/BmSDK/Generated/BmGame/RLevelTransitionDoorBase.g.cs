@@ -949,7 +949,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bCanUse
+    /// BoolProperty: bCanUse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUse
     {
@@ -1003,7 +1004,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bUsedLockedMesh
+    /// BoolProperty: bUsedLockedMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsedLockedMesh
     {
@@ -1012,7 +1014,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bCollisionCheckForUsage
+    /// BoolProperty: bCollisionCheckForUsage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCollisionCheckForUsage
     {
@@ -1039,7 +1042,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByBatman
+    /// BoolProperty: bUsableByBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByBatman
     {
@@ -1048,7 +1052,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByRobin
+    /// BoolProperty: bUsableByRobin<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByRobin
     {
@@ -1057,7 +1062,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByCatwoman
+    /// BoolProperty: bUsableByCatwoman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByCatwoman
     {
@@ -1066,7 +1072,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// BoolProperty: bAffectedByAutomaticCombatLock
+    /// BoolProperty: bAffectedByAutomaticCombatLock<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectedByAutomaticCombatLock
     {
@@ -1165,7 +1172,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ObjectProperty: XrayMat
+    /// ObjectProperty: XrayMat<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_DoorGeneric_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayMat
     {
@@ -1183,7 +1191,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ComponentProperty: LockedBarsMesh
+    /// ComponentProperty: LockedBarsMesh<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBase.BarsMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LockedBarsMesh
     {
@@ -1192,7 +1201,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh2
+    /// ComponentProperty: InvestigationMesh2<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBase.StaticMeshComponentII2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh2
     {
@@ -1201,7 +1211,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh1
+    /// ComponentProperty: InvestigationMesh1<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBase.StaticMeshComponentII1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh1
     {
@@ -1210,7 +1221,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ComponentProperty: DoorBlocker
+    /// ComponentProperty: DoorBlocker<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBase.ActualBlocker
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent DoorBlocker
     {
@@ -1228,7 +1240,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RLevelTransitionDoorBase.SKMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -1255,7 +1268,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// StrProperty: OpenDoorText
+    /// StrProperty: OpenDoorText<br/>
+    /// Default: "Frontend.HelpText.DoorUse"
     /// </summary>
     public unsafe BmSDK.FString OpenDoorText
     {
@@ -1264,7 +1278,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// StrProperty: LockedDoorText
+    /// StrProperty: LockedDoorText<br/>
+    /// Default: "DoorLocked"
     /// </summary>
     public unsafe BmSDK.FString LockedDoorText
     {
@@ -1273,7 +1288,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
     }
 
     /// <summary>
-    /// ArrayProperty: InvestigateNamePresets
+    /// ArrayProperty: InvestigateNamePresets<br/>
+    /// Default: (None,NeverSetFlag)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> InvestigateNamePresets
     {

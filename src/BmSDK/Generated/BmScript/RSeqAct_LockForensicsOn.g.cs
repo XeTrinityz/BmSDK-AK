@@ -129,7 +129,8 @@ public partial class RSeqAct_LockForensicsOn : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bLockAllGadgets
+    /// BoolProperty: bLockAllGadgets<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLockAllGadgets
     {
@@ -138,7 +139,8 @@ public partial class RSeqAct_LockForensicsOn : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bLockMap
+    /// BoolProperty: bLockMap<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLockMap
     {

@@ -4710,7 +4710,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactRumble
+    /// ObjectProperty: ImpactRumble<br/>
+    /// Default: BmGame.Default__RPlayerControllerCombat.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ImpactRumble
     {
@@ -4746,7 +4747,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// ObjectProperty: SniperPP
+    /// ObjectProperty: SniperPP<br/>
+    /// Default: BmGame.Default__RPlayerControllerCombat.AKSniperPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess SniperPP
     {
@@ -4755,7 +4757,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// ObjectProperty: FinalBlowPP
+    /// ObjectProperty: FinalBlowPP<br/>
+    /// Default: BmGame.Default__RPlayerControllerCombat.FinalPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess FinalBlowPP
     {
@@ -4782,7 +4785,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// ComponentProperty: ComboIncAC
+    /// ComponentProperty: ComboIncAC<br/>
+    /// Default: BmGame.Default__RPlayerControllerCombat.ComboInc
     /// </summary>
     public unsafe BmSDK.Engine.AudioComponent ComboIncAC
     {
@@ -4845,7 +4849,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// FloatProperty: AdrenalineSpecialLimit
+    /// FloatProperty: AdrenalineSpecialLimit<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AdrenalineSpecialLimit
     {
@@ -4854,7 +4859,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// FloatProperty: AdrenalineSuperSpecialLimit
+    /// FloatProperty: AdrenalineSuperSpecialLimit<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float AdrenalineSuperSpecialLimit
     {
@@ -4881,7 +4887,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// BoolProperty: bSuppressCombatCameraInCorridor
+    /// BoolProperty: bSuppressCombatCameraInCorridor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSuppressCombatCameraInCorridor
     {
@@ -5259,7 +5266,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoReadyGadgetOrCounter
+    /// BoolProperty: bCanDoReadyGadgetOrCounter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoReadyGadgetOrCounter
     {
@@ -5295,7 +5303,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// FloatProperty: DualPlayAdrenalineSpecialLimit
+    /// FloatProperty: DualPlayAdrenalineSpecialLimit<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float DualPlayAdrenalineSpecialLimit
     {
@@ -5304,7 +5313,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileTakedownAdrenalineValue
+    /// FloatProperty: BatmobileTakedownAdrenalineValue<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float BatmobileTakedownAdrenalineValue
     {
@@ -5313,7 +5323,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileTakedownAdrenalineSpecialLimit
+    /// FloatProperty: BatmobileTakedownAdrenalineSpecialLimit<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float BatmobileTakedownAdrenalineSpecialLimit
     {

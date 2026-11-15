@@ -94,7 +94,8 @@ public partial class MaterialExpressionConstantClamp : BmSDK.Engine.MaterialExpr
     }
 
     /// <summary>
-    /// FloatProperty: Max
+    /// FloatProperty: Max<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Max
     {

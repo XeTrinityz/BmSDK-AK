@@ -171,7 +171,8 @@ public partial class TerrainLayerSetup : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Alpha
+        /// FloatProperty: Alpha<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Alpha
         {

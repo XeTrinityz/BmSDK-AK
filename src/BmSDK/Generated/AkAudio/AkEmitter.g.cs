@@ -172,7 +172,8 @@ public partial class AkEmitter : BmSDK.Engine.AkSoundActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: EmitterEvents
+    /// ArrayProperty: EmitterEvents<br/>
+    /// Default: (None)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkEvent> EmitterEvents
     {
@@ -181,7 +182,8 @@ public partial class AkEmitter : BmSDK.Engine.AkSoundActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEmitterStartEnabled
+    /// BoolProperty: bEmitterStartEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEmitterStartEnabled
     {

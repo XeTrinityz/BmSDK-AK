@@ -79,7 +79,8 @@ public partial class ParticleModuleMeshRotation : BmSDK.Engine.ParticleModuleRot
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StartRotation
+    /// StructProperty: StartRotation<br/>
+    /// Default: (Op=2,LookupTableNumElements=2,LookupTableChunkSize=6,LookupTable=(0,1,0,0,0,1,1,1,0,0,0,1,1,1),Distribution=Engine.Default__ParticleModuleMeshRotation.DistributionStartRotation,MaxRange=(X=1,Y=1,Z=1)...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);

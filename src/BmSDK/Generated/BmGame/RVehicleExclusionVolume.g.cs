@@ -147,7 +147,8 @@ public partial class RVehicleExclusionVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: IsActive
+    /// BoolProperty: IsActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsActive
     {
@@ -183,7 +184,8 @@ public partial class RVehicleExclusionVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: BlocksHeavyTankPatrols
+    /// BoolProperty: BlocksHeavyTankPatrols<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BlocksHeavyTankPatrols
     {
@@ -192,7 +194,8 @@ public partial class RVehicleExclusionVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: BlockOtherVehicles
+    /// BoolProperty: BlockOtherVehicles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BlockOtherVehicles
     {
@@ -232,7 +235,8 @@ public partial class RVehicleExclusionVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ArrayProperty: ExclusionTypes
+    /// ArrayProperty: ExclusionTypes<br/>
+    /// Default: (0,VExT_Rioters)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleExclusionVolume.VehicleExclusionTypes> ExclusionTypes
     {

@@ -79,7 +79,8 @@ public partial class RParticleAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: ParticleAttractorComponent
+    /// ComponentProperty: ParticleAttractorComponent<br/>
+    /// Default: Engine.Default__RParticleAttractor.ParticleAttractorComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RParticleAttractorComponent ParticleAttractorComponent
     {

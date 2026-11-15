@@ -390,7 +390,8 @@ public partial class RAEC_Search_Sub : BmSDK.BmGame.RAEC_Search_Sub_FormationLea
     }
 
     /// <summary>
-    /// FloatProperty: MaxCheckTime
+    /// FloatProperty: MaxCheckTime<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float MaxCheckTime
     {
@@ -399,7 +400,8 @@ public partial class RAEC_Search_Sub : BmSDK.BmGame.RAEC_Search_Sub_FormationLea
     }
 
     /// <summary>
-    /// FloatProperty: MinCheckTime
+    /// FloatProperty: MinCheckTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MinCheckTime
     {
@@ -453,7 +455,8 @@ public partial class RAEC_Search_Sub : BmSDK.BmGame.RAEC_Search_Sub_FormationLea
     }
 
     /// <summary>
-    /// BoolProperty: bDoSearchSpecialCheck
+    /// BoolProperty: bDoSearchSpecialCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoSearchSpecialCheck
     {

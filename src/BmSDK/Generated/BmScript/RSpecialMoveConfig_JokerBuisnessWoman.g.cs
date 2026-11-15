@@ -277,7 +277,8 @@ public partial class RSpecialMoveConfig_JokerBuisnessWoman : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// ObjectProperty: RobinAnimSet
+    /// ObjectProperty: RobinAnimSet<br/>
+    /// Default: Anim_IC_FILM_A1.Robin.RB_JKWoman_Surprise
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RobinAnimSet
     {
@@ -286,7 +287,8 @@ public partial class RSpecialMoveConfig_JokerBuisnessWoman : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// ObjectProperty: JokerAnimSet
+    /// ObjectProperty: JokerAnimSet<br/>
+    /// Default: Anim_IC_FILM_A1.JokerWoman.JKWoman_Surprise
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet JokerAnimSet
     {

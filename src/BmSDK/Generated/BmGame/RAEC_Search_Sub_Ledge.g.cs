@@ -858,7 +858,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> movementStanceNamesLeft => new(2, Ptr + 792, 8, this);
 
     /// <summary>
-    /// NameProperty: movementStanceNamesLeft
+    /// NameProperty: movementStanceNamesLeft<br/>
+    /// Default: RailLookLeft1
     /// </summary>
     public unsafe BmSDK.FName movementStanceNamesLeft_0
     {
@@ -866,7 +867,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 792); }
     }
     /// <summary>
-    /// NameProperty: movementStanceNamesLeft
+    /// NameProperty: movementStanceNamesLeft<br/>
+    /// Default: RailLookLeft2
     /// </summary>
     public unsafe BmSDK.FName movementStanceNamesLeft_1
     {
@@ -880,7 +882,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> movementStanceNamesRight => new(2, Ptr + 808, 8, this);
 
     /// <summary>
-    /// NameProperty: movementStanceNamesRight
+    /// NameProperty: movementStanceNamesRight<br/>
+    /// Default: RailLookRight1
     /// </summary>
     public unsafe BmSDK.FName movementStanceNamesRight_0
     {
@@ -888,7 +891,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 808); }
     }
     /// <summary>
-    /// NameProperty: movementStanceNamesRight
+    /// NameProperty: movementStanceNamesRight<br/>
+    /// Default: RailLookRight2
     /// </summary>
     public unsafe BmSDK.FName movementStanceNamesRight_1
     {
@@ -902,7 +906,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> inAnimNamesLeft => new(2, Ptr + 824, 8, this);
 
     /// <summary>
-    /// NameProperty: inAnimNamesLeft
+    /// NameProperty: inAnimNamesLeft<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Left_01_In
     /// </summary>
     public unsafe BmSDK.FName inAnimNamesLeft_0
     {
@@ -910,7 +915,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 824); }
     }
     /// <summary>
-    /// NameProperty: inAnimNamesLeft
+    /// NameProperty: inAnimNamesLeft<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Left_02_In
     /// </summary>
     public unsafe BmSDK.FName inAnimNamesLeft_1
     {
@@ -924,7 +930,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> inAnimNamesRight => new(2, Ptr + 840, 8, this);
 
     /// <summary>
-    /// NameProperty: inAnimNamesRight
+    /// NameProperty: inAnimNamesRight<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Right_01_In
     /// </summary>
     public unsafe BmSDK.FName inAnimNamesRight_0
     {
@@ -932,7 +939,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 840); }
     }
     /// <summary>
-    /// NameProperty: inAnimNamesRight
+    /// NameProperty: inAnimNamesRight<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Right_02_In
     /// </summary>
     public unsafe BmSDK.FName inAnimNamesRight_1
     {
@@ -946,7 +954,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> outAnimNamesLeft => new(2, Ptr + 856, 8, this);
 
     /// <summary>
-    /// NameProperty: outAnimNamesLeft
+    /// NameProperty: outAnimNamesLeft<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Left_01_Out_To_Stand
     /// </summary>
     public unsafe BmSDK.FName outAnimNamesLeft_0
     {
@@ -954,7 +963,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 856); }
     }
     /// <summary>
-    /// NameProperty: outAnimNamesLeft
+    /// NameProperty: outAnimNamesLeft<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Left_02_Out_To_Stand
     /// </summary>
     public unsafe BmSDK.FName outAnimNamesLeft_1
     {
@@ -968,7 +978,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> outAnimNamesRight => new(2, Ptr + 872, 8, this);
 
     /// <summary>
-    /// NameProperty: outAnimNamesRight
+    /// NameProperty: outAnimNamesRight<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Right_01_Out_To_Stand
     /// </summary>
     public unsafe BmSDK.FName outAnimNamesRight_0
     {
@@ -976,7 +987,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 872); }
     }
     /// <summary>
-    /// NameProperty: outAnimNamesRight
+    /// NameProperty: outAnimNamesRight<br/>
+    /// Default: Nervous_Walk_Ledge_Look_Right_02_Out_To_Stand
     /// </summary>
     public unsafe BmSDK.FName outAnimNamesRight_1
     {
@@ -990,7 +1002,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<float> refDistFromRailing => new(2, Ptr + 888, 4, this);
 
     /// <summary>
-    /// FloatProperty: refDistFromRailing
+    /// FloatProperty: refDistFromRailing<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float refDistFromRailing_0
     {
@@ -998,7 +1011,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 888); }
     }
     /// <summary>
-    /// FloatProperty: refDistFromRailing
+    /// FloatProperty: refDistFromRailing<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float refDistFromRailing_1
     {
@@ -1097,7 +1111,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// FloatProperty: footSyncTolerance
+    /// FloatProperty: footSyncTolerance<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float footSyncTolerance
     {
@@ -1106,7 +1121,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// FloatProperty: outAnimEarlyTriggerRange
+    /// FloatProperty: outAnimEarlyTriggerRange<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float outAnimEarlyTriggerRange
     {
@@ -1115,7 +1131,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// IntProperty: forceAnim
+    /// IntProperty: forceAnim<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int forceAnim
     {
@@ -1178,7 +1195,8 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// FloatProperty: maxDistFromLedgeForSearch
+    /// FloatProperty: maxDistFromLedgeForSearch<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float maxDistFromLedgeForSearch
     {

@@ -155,7 +155,8 @@ public partial class RStealthTakedownStage_DoubleTeamFromCrouch : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ArrayProperty: StageAnimRobin
+    /// ArrayProperty: StageAnimRobin<br/>
+    /// Default: ((AttackerAnimation=(Dual_MinigunTG_Takedown_01,Dual_MinigunTG_Takedown_02,Dual_MinigunTG_Takedown_03),AttackerAnimSet=Anim_Thug_MiniGun.Code.RB_BM_TGMiniGun_PredAttack,MeetingTime=0.25,CameraCollisio...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet> StageAnimRobin
     {
@@ -164,7 +165,8 @@ public partial class RStealthTakedownStage_DoubleTeamFromCrouch : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// StructProperty: RobinStageAnims
+    /// StructProperty: RobinStageAnims<br/>
+    /// Default: (MeetingTime=0.25,CameraCollision=true,fCameraBlendInTime=0.5,StrikeBone=Bip01_Pelvis)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet RobinStageAnims
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet>(Ptr + 1696);

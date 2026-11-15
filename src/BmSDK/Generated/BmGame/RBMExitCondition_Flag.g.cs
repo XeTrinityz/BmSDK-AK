@@ -94,7 +94,8 @@ public partial class RBMExitCondition_Flag : BmSDK.BmGame.RBMExitCondition, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bExitWhenTrue
+    /// BoolProperty: bExitWhenTrue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExitWhenTrue
     {

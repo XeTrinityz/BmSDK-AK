@@ -121,7 +121,8 @@ public partial class RParticleModuleTypeDataGPU : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// StructProperty: CoefficientOfRestitutionD
+    /// StructProperty: CoefficientOfRestitutionD<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.5,0.5,0.5,0.5),Distribution=Engine.Default__RParticleModuleTypeDataGPU.CoefficientOfRestitutionDist)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat CoefficientOfRestitutionD
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 124);
@@ -181,7 +182,8 @@ public partial class RParticleModuleTypeDataGPU : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// BoolProperty: UseLegacyColorBehaviour
+    /// BoolProperty: UseLegacyColorBehaviour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseLegacyColorBehaviour
     {
@@ -208,7 +210,8 @@ public partial class RParticleModuleTypeDataGPU : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// FloatProperty: DepthThreshold
+    /// FloatProperty: DepthThreshold<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DepthThreshold
     {

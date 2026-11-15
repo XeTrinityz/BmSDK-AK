@@ -386,7 +386,8 @@ public partial class RBMAIAction_RailPeek : BmSDK.BmGame.RBMAIAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: PeekTimer
+    /// FloatProperty: PeekTimer<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float PeekTimer
     {

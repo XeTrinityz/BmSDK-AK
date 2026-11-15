@@ -92,7 +92,8 @@ public partial class SeqAct_InterpolateColour : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {
@@ -119,7 +120,8 @@ public partial class SeqAct_InterpolateColour : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// StructProperty: TargetColour
+    /// StructProperty: TargetColour<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor TargetColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 404);

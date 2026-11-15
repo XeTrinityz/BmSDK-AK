@@ -115,7 +115,8 @@ public partial class RAimingConfig : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAimingConfig.FAimingPartConfig>(Ptr + 120);
 
     /// <summary>
-    /// StructProperty: LookAt
+    /// StructProperty: LookAt<br/>
+    /// Default: (Enabled=true,Yaw=0.5,Pitch=0.7)
     /// </summary>
     public unsafe ref BmSDK.Engine.RAimingConfig.FAimingPartConfig LookAt
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RAimingConfig.FAimingPartConfig>(Ptr + 132);
@@ -175,7 +176,8 @@ public partial class RAimingConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LimitScale
+    /// FloatProperty: LimitScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LimitScale
     {
@@ -184,7 +186,8 @@ public partial class RAimingConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookAt_LimitScale
+    /// FloatProperty: LookAt_LimitScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookAt_LimitScale
     {

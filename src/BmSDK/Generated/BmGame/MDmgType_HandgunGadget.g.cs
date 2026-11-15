@@ -79,7 +79,8 @@ public partial class MDmgType_HandgunGadget : BmSDK.BmGame.RDmgType_Strike, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StunTime
+    /// FloatProperty: StunTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float StunTime
     {
@@ -88,7 +89,8 @@ public partial class MDmgType_HandgunGadget : BmSDK.BmGame.RDmgType_Strike, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseMulti
+    /// FloatProperty: ImpulseMulti<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ImpulseMulti
     {

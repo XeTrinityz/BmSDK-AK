@@ -186,7 +186,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: LookAtAxis
+    /// ByteProperty: LookAtAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis LookAtAxis
     {
@@ -195,7 +196,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: UpAxis
+    /// ByteProperty: UpAxis<br/>
+    /// Default: AXIS_Z
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis UpAxis
     {
@@ -204,7 +206,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: AllowRotationSpace
+    /// ByteProperty: AllowRotationSpace<br/>
+    /// Default: BCS_BoneSpace
     /// </summary>
     public unsafe BmSDK.Engine.SkelControlBase.EBoneControlSpace AllowRotationSpace
     {
@@ -258,7 +261,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bLimitBasedOnRefPose
+    /// BoolProperty: bLimitBasedOnRefPose<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLimitBasedOnRefPose
     {
@@ -285,7 +289,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bShowLimit
+    /// BoolProperty: bShowLimit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowLimit
     {
@@ -294,7 +299,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowRotationX
+    /// BoolProperty: bAllowRotationX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowRotationX
     {
@@ -303,7 +309,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowRotationY
+    /// BoolProperty: bAllowRotationY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowRotationY
     {
@@ -312,7 +319,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowRotationZ
+    /// BoolProperty: bAllowRotationZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowRotationZ
     {
@@ -321,7 +329,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TargetLocationInterpSpeed
+    /// FloatProperty: TargetLocationInterpSpeed<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TargetLocationInterpSpeed
     {
@@ -336,7 +345,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 280);
 
     /// <summary>
-    /// StructProperty: ActorSpaceLookAtTarget
+    /// StructProperty: ActorSpaceLookAtTarget<br/>
+    /// Default: (X=256)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ActorSpaceLookAtTarget
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 292);
@@ -351,7 +361,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: OuterMaxAngle
+    /// FloatProperty: OuterMaxAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float OuterMaxAngle
     {
@@ -369,19 +380,22 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: RotationAngleRangeX
+    /// StructProperty: RotationAngleRangeX<br/>
+    /// Default: (X=-90,Y=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 RotationAngleRangeX
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 316);
 
     /// <summary>
-    /// StructProperty: RotationAngleRangeY
+    /// StructProperty: RotationAngleRangeY<br/>
+    /// Default: (X=-90,Y=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 RotationAngleRangeY
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 324);
 
     /// <summary>
-    /// StructProperty: RotationAngleRangeZ
+    /// StructProperty: RotationAngleRangeZ<br/>
+    /// Default: (X=-90,Y=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 RotationAngleRangeZ
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 332);
@@ -396,7 +410,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LookAtAlpha
+    /// FloatProperty: LookAtAlpha<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookAtAlpha
     {
@@ -405,7 +420,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LookAtAlphaTarget
+    /// FloatProperty: LookAtAlphaTarget<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookAtAlphaTarget
     {
@@ -450,7 +466,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: ControlBoneIndex
+    /// IntProperty: ControlBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ControlBoneIndex
     {

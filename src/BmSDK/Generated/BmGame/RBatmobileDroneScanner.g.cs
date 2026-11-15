@@ -176,7 +176,8 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float Range
     {
@@ -185,7 +186,8 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ScanTime
+    /// FloatProperty: ScanTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ScanTime
     {
@@ -194,7 +196,8 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PostDownloadDisplayPeriod
+    /// FloatProperty: PostDownloadDisplayPeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PostDownloadDisplayPeriod
     {

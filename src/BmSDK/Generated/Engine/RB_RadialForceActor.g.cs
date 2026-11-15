@@ -94,7 +94,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__RB_RadialForceActor.DrawSphere0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent RenderComponent
     {
@@ -103,7 +104,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -112,7 +114,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -166,7 +169,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToCloth
+    /// BoolProperty: bForceApplyToCloth<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToCloth
     {
@@ -175,7 +179,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToFluid
+    /// BoolProperty: bForceApplyToFluid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToFluid
     {
@@ -184,7 +189,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bForceApplyToRigidBodies
+    /// BoolProperty: bForceApplyToRigidBodies<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceApplyToRigidBodies
     {
@@ -202,7 +208,8 @@ public partial class RB_RadialForceActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 700);

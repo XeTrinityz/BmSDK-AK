@@ -165,7 +165,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ControlStrength
+    /// FloatProperty: ControlStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ControlStrength
     {
@@ -174,7 +175,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BlendInTime
+    /// FloatProperty: BlendInTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendInTime
     {
@@ -183,7 +185,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutTime
+    /// FloatProperty: BlendOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendOutTime
     {
@@ -300,7 +303,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: StrengthTarget
+    /// FloatProperty: StrengthTarget<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StrengthTarget
     {
@@ -354,7 +358,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: BoneScale
+    /// FloatProperty: BoneScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BoneScale
     {
@@ -372,7 +377,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: IgnoreAtOrAboveLOD
+    /// IntProperty: IgnoreAtOrAboveLOD<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int IgnoreAtOrAboveLOD
     {

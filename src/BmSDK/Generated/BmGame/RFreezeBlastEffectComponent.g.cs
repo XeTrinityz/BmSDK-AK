@@ -365,7 +365,8 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
     }
 
     /// <summary>
-    /// FloatProperty: FreezeMaterialParameterSpeed
+    /// FloatProperty: FreezeMaterialParameterSpeed<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float FreezeMaterialParameterSpeed
     {

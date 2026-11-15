@@ -473,7 +473,8 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AccelDotThreshold
+    /// FloatProperty: AccelDotThreshold<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float AccelDotThreshold
     {

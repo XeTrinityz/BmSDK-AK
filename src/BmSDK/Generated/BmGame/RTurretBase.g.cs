@@ -845,7 +845,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: InstantShootDist
+    /// FloatProperty: InstantShootDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float InstantShootDist
     {
@@ -854,7 +855,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ShootAngleLimit
+    /// FloatProperty: ShootAngleLimit<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ShootAngleLimit
     {
@@ -908,7 +910,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bCanDamagePlayer
+    /// BoolProperty: bCanDamagePlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDamagePlayer
     {
@@ -944,7 +947,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bTrackingOriginNeedsUpdate
+    /// BoolProperty: bTrackingOriginNeedsUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTrackingOriginNeedsUpdate
     {
@@ -980,7 +984,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GunDamage
+    /// FloatProperty: GunDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GunDamage
     {
@@ -989,7 +994,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenShots
+    /// FloatProperty: TimeBetweenShots<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float TimeBetweenShots
     {
@@ -1022,7 +1028,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1216);
 
     /// <summary>
-    /// FloatProperty: jammedSpeed
+    /// FloatProperty: jammedSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float jammedSpeed
     {
@@ -1031,7 +1038,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: unjammedSpeedRandomFactor
+    /// FloatProperty: unjammedSpeedRandomFactor<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float unjammedSpeedRandomFactor
     {
@@ -1040,7 +1048,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: unJammedSpeed
+    /// FloatProperty: unJammedSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float unJammedSpeed
     {
@@ -1058,7 +1067,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: jerkPeriod
+    /// FloatProperty: jerkPeriod<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float jerkPeriod
     {
@@ -1082,7 +1092,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1252);
 
     /// <summary>
-    /// FloatProperty: speedMultiplier
+    /// FloatProperty: speedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float speedMultiplier
     {
@@ -1091,7 +1102,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: timeTillFullSpeed
+    /// FloatProperty: timeTillFullSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float timeTillFullSpeed
     {

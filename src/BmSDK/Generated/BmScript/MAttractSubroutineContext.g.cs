@@ -97,7 +97,8 @@ public partial class MAttractSubroutineContext : BmSDK.BmGame.MHackSubroutineCon
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionOver
+    /// FloatProperty: ZDifferentialExclusionOver<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionOver
     {
@@ -106,7 +107,8 @@ public partial class MAttractSubroutineContext : BmSDK.BmGame.MHackSubroutineCon
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionUnder
+    /// FloatProperty: ZDifferentialExclusionUnder<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionUnder
     {

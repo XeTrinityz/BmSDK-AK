@@ -369,7 +369,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bCheckDestinationActor
+    /// BoolProperty: bCheckDestinationActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckDestinationActor
     {
@@ -378,7 +379,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bLookAtPlayer
+    /// BoolProperty: bLookAtPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookAtPlayer
     {
@@ -387,7 +389,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bExitIfPathFindFails
+    /// BoolProperty: bExitIfPathFindFails<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExitIfPathFindFails
     {
@@ -396,7 +399,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bTrackTarget
+    /// BoolProperty: bTrackTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTrackTarget
     {
@@ -423,7 +427,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeHitInCombat
+    /// BoolProperty: bCanBeHitInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeHitInCombat
     {
@@ -432,7 +437,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeGrabbed
+    /// BoolProperty: bCanBeGrabbed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeGrabbed
     {
@@ -477,7 +483,8 @@ public partial class RBMBehaviour_MoveTo : BmSDK.BmGame.RBMBehaviour_MoveToBase,
     }
 
     /// <summary>
-    /// FloatProperty: CloseToGoalDist
+    /// FloatProperty: CloseToGoalDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CloseToGoalDist
     {

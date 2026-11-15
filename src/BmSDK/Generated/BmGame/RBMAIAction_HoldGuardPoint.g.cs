@@ -166,7 +166,8 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     }
 
     /// <summary>
-    /// BoolProperty: bDoIdleAnims
+    /// BoolProperty: bDoIdleAnims<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoIdleAnims
     {

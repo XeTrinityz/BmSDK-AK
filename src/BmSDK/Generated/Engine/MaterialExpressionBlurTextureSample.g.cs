@@ -119,7 +119,8 @@ public partial class MaterialExpressionBlurTextureSample : BmSDK.Engine.Material
     }
 
     /// <summary>
-    /// IntProperty: SampleNum
+    /// IntProperty: SampleNum<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int SampleNum
     {
@@ -128,7 +129,8 @@ public partial class MaterialExpressionBlurTextureSample : BmSDK.Engine.Material
     }
 
     /// <summary>
-    /// FloatProperty: SampleRadiusDefault
+    /// FloatProperty: SampleRadiusDefault<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float SampleRadiusDefault
     {

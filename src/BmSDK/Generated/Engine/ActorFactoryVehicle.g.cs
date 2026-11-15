@@ -79,7 +79,8 @@ public partial class ActorFactoryVehicle : BmSDK.Engine.ActorFactory, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ClassProperty: VehicleClass
+    /// ClassProperty: VehicleClass<br/>
+    /// Default: Engine.Vehicle
     /// </summary>
     public unsafe BmSDK.Class VehicleClass
     {

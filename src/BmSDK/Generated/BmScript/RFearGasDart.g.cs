@@ -440,7 +440,8 @@ public partial class RFearGasDart : BmSDK.BmGame.RBlowDartBase, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: WallImpactFX
+    /// ObjectProperty: WallImpactFX<br/>
+    /// Default: VFX_Gadgets.FX_Batarang_Ricochet_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WallImpactFX
     {
@@ -449,7 +450,8 @@ public partial class RFearGasDart : BmSDK.BmGame.RBlowDartBase, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: EnemyImpactFX
+    /// ObjectProperty: EnemyImpactFX<br/>
+    /// Default: FFX_Combat.Particles.Hits.fx_BatarangHit_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem EnemyImpactFX
     {
@@ -479,7 +481,8 @@ public partial class RFearGasDart : BmSDK.BmGame.RBlowDartBase, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2140);
 
     /// <summary>
-    /// FloatProperty: DartSpeed
+    /// FloatProperty: DartSpeed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float DartSpeed
     {
@@ -488,7 +491,8 @@ public partial class RFearGasDart : BmSDK.BmGame.RBlowDartBase, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: DartRange
+    /// FloatProperty: DartRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DartRange
     {

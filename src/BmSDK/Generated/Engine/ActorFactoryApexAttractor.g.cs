@@ -79,7 +79,8 @@ public partial class ActorFactoryApexAttractor : BmSDK.Engine.ActorFactory, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {
@@ -115,7 +116,8 @@ public partial class ActorFactoryApexAttractor : BmSDK.Engine.ActorFactory, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -124,13 +126,15 @@ public partial class ActorFactoryApexAttractor : BmSDK.Engine.ActorFactory, BmSD
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 164);
 
     /// <summary>
-    /// ByteProperty: CollisionChannel
+    /// ByteProperty: CollisionChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel
     {

@@ -79,7 +79,8 @@ public partial class SeqAct_Gate : BmSDK.Engine.SequenceAction, BmSDK.IGameObjec
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bOpen
+    /// BoolProperty: bOpen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOpen
     {

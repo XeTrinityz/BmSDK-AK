@@ -161,7 +161,8 @@ public partial class RCameraTransitionPathNode : BmSDK.BmGame.RSnapToPositionAct
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FBox>(Ptr + 700);
 
     /// <summary>
-    /// FloatProperty: BaseRadius
+    /// FloatProperty: BaseRadius<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float BaseRadius
     {

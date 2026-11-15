@@ -356,7 +356,8 @@ public partial class RSeqAct_MostWantedUpdate : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: chanceOfJokerUpdate
+    /// FloatProperty: chanceOfJokerUpdate<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float chanceOfJokerUpdate
     {

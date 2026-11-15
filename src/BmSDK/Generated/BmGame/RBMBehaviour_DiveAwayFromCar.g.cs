@@ -251,7 +251,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: DiveNames
+    /// ArrayProperty: DiveNames<br/>
+    /// Default: (Car_Evade_Dive_A,Car_Evade_Dive_B,Car_Evade_Dive_C,Car_Evade_Dive_D)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DiveNames
     {
@@ -260,7 +261,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: TazerDiveNames
+    /// ArrayProperty: TazerDiveNames<br/>
+    /// Default: (Car_Evade_Dive_Tazer)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TazerDiveNames
     {
@@ -269,7 +271,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: DiveFromHighNames
+    /// ArrayProperty: DiveFromHighNames<br/>
+    /// Default: (Car_Evade_Dive_FromHigh)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DiveFromHighNames
     {
@@ -278,7 +281,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: BraceNames
+    /// ArrayProperty: BraceNames<br/>
+    /// Default: (About_To_Be_Hit_Reaction)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BraceNames
     {
@@ -287,7 +291,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: WallHugNames
+    /// ArrayProperty: WallHugNames<br/>
+    /// Default: (Car_Evade_Wall_A,Car_Evade_Wall_B,Car_Evade_Wall_C,Car_Evade_Wall_D)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> WallHugNames
     {
@@ -296,7 +301,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: TazerOnSpotNames
+    /// ArrayProperty: TazerOnSpotNames<br/>
+    /// Default: (Car_Evade_OnSpot_Tazer)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TazerOnSpotNames
     {
@@ -305,7 +311,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSet
+    /// ObjectProperty: AnimSet<br/>
+    /// Default: Anim_IC_Streets.Thug.TG_Car_Evade
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSet
     {
@@ -350,7 +357,8 @@ public partial class RBMBehaviour_DiveAwayFromCar : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// BoolProperty: bCanStumble
+    /// BoolProperty: bCanStumble<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanStumble
     {

@@ -179,7 +179,8 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bShouldPauseWhileAdOpen
+    /// BoolProperty: bShouldPauseWhileAdOpen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldPauseWhileAdOpen
     {

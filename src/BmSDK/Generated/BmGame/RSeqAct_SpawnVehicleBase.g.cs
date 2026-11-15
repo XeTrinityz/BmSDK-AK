@@ -164,7 +164,8 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bFireflyRemovesAndAddsToPopulation
+    /// BoolProperty: bFireflyRemovesAndAddsToPopulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireflyRemovesAndAddsToPopulation
     {

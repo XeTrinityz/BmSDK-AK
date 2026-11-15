@@ -1325,7 +1325,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     public partial record struct FDestructWhooshBy
     {
         /// <summary>
-        /// BoolProperty: IsVehicleWhoosh
+        /// BoolProperty: IsVehicleWhoosh<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool IsVehicleWhoosh
         {
@@ -1386,7 +1387,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         }
 
         /// <summary>
-        /// StructProperty: Appearance
+        /// StructProperty: Appearance<br/>
+        /// Default: (CollideActors=true,BlockActors=true,CollisionFilter=COF_Actor,BrokenApexCollisionFilter=COF_ActorDoesntBlockCamera)
         /// </summary>
         public unsafe BmSDK.BmGame.RDestructibleProp.FDestructibleAppearance Appearance
         {
@@ -1636,7 +1638,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         }
 
         /// <summary>
-        /// BoolProperty: CollideActors
+        /// BoolProperty: CollideActors<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool CollideActors
         {
@@ -1645,7 +1648,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         }
 
         /// <summary>
-        /// BoolProperty: BlockActors
+        /// BoolProperty: BlockActors<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool BlockActors
         {
@@ -1654,7 +1658,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         }
 
         /// <summary>
-        /// ByteProperty: CollisionFilter
+        /// ByteProperty: CollisionFilter<br/>
+        /// Default: COF_Actor
         /// </summary>
         public unsafe BmSDK.Component.ECollisionFilter CollisionFilter
         {
@@ -1699,7 +1704,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         }
 
         /// <summary>
-        /// ByteProperty: BrokenApexCollisionFilter
+        /// ByteProperty: BrokenApexCollisionFilter<br/>
+        /// Default: COF_ActorDoesntBlockCamera
         /// </summary>
         public unsafe BmSDK.Component.ECollisionFilter BrokenApexCollisionFilter
         {
@@ -1754,7 +1760,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// StructProperty: InitialAppearance
+    /// StructProperty: InitialAppearance<br/>
+    /// Default: (CollideActors=true,BlockActors=true,CollisionFilter=COF_Actor,BrokenApexCollisionFilter=COF_ActorDoesntBlockCamera)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RDestructibleProp.FDestructibleAppearance InitialAppearance
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RDestructibleProp.FDestructibleAppearance>(Ptr + 788);
@@ -1859,7 +1866,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// ClassProperty: ExplosiveGelDamageType
+    /// ClassProperty: ExplosiveGelDamageType<br/>
+    /// Default: BmGame.RDmgType_ExplosiveGel
     /// </summary>
     public unsafe BmSDK.Class ExplosiveGelDamageType
     {
@@ -2252,7 +2260,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: CastShadow
+    /// BoolProperty: CastShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CastShadow
     {
@@ -2261,7 +2270,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: DontDamageCollidingVehicle
+    /// BoolProperty: DontDamageCollidingVehicle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DontDamageCollidingVehicle
     {
@@ -2270,7 +2280,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bRegisterNavMeshObstacle
+    /// BoolProperty: bRegisterNavMeshObstacle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRegisterNavMeshObstacle
     {
@@ -2279,7 +2290,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bPreCutFromNavMesh
+    /// BoolProperty: bPreCutFromNavMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPreCutFromNavMesh
     {
@@ -2540,7 +2552,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAllowOverrideDamageFromExplosiveGel
+    /// BoolProperty: bAllowOverrideDamageFromExplosiveGel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowOverrideDamageFromExplosiveGel
     {
@@ -2549,7 +2562,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bEnableApexDestructibleHardSleeping
+    /// BoolProperty: bEnableApexDestructibleHardSleeping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableApexDestructibleHardSleeping
     {
@@ -2558,7 +2572,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bPawnCanBaseOn
+    /// BoolProperty: bPawnCanBaseOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPawnCanBaseOn
     {
@@ -2621,7 +2636,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Health
+    /// FloatProperty: Health<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float Health
     {
@@ -2639,7 +2655,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// IntProperty: CurrentDamageStage
+    /// IntProperty: CurrentDamageStage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentDamageStage
     {
@@ -2648,7 +2665,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// IntProperty: DeferredDamageStage
+    /// IntProperty: DeferredDamageStage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DeferredDamageStage
     {
@@ -2681,7 +2699,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ParticleVelocityFalloffSpeed
+    /// FloatProperty: ParticleVelocityFalloffSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ParticleVelocityFalloffSpeed
     {
@@ -2744,7 +2763,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1288);
 
     /// <summary>
-    /// FloatProperty: ApproxMassForImpactEffects
+    /// FloatProperty: ApproxMassForImpactEffects<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ApproxMassForImpactEffects
     {
@@ -2762,7 +2782,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// ByteProperty: EdgeJumpType
+    /// ByteProperty: EdgeJumpType<br/>
+    /// Default: FENCEEDGE_Level
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.FenceJumpEdgeType EdgeJumpType
     {
@@ -2771,7 +2792,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_PropStaticChunks
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -2798,7 +2820,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// ByteProperty: RBDominanceGroup
+    /// ByteProperty: RBDominanceGroup<br/>
+    /// Default: 14
     /// </summary>
     public unsafe byte RBDominanceGroup
     {
@@ -2807,7 +2830,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {
@@ -2918,7 +2942,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// IntProperty: CachedClimbableCollection
+    /// IntProperty: CachedClimbableCollection<br/>
+    /// Default: 65535
     /// </summary>
     public unsafe int CachedClimbableCollection
     {
@@ -2954,7 +2979,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// StructProperty: RBCollideWithChannels
+    /// StructProperty: RBCollideWithChannels<br/>
+    /// Default: (Default=true,Projectile=true,PhysicsPuzzleObject=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer RBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 1488);
@@ -2969,7 +2995,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshObstacleSizeMultiplier
+    /// FloatProperty: NavMeshObstacleSizeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NavMeshObstacleSizeMultiplier
     {
@@ -2978,13 +3005,15 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// StructProperty: NavMeshObstacleSizeMultiplier3D
+    /// StructProperty: NavMeshObstacleSizeMultiplier3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 NavMeshObstacleSizeMultiplier3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1500);
 
     /// <summary>
-    /// FloatProperty: NavMeshObstacleMaxHeight
+    /// FloatProperty: NavMeshObstacleMaxHeight<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float NavMeshObstacleMaxHeight
     {
@@ -2993,7 +3022,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshShapeHeightOffset
+    /// FloatProperty: NavMeshShapeHeightOffset<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float NavMeshShapeHeightOffset
     {
@@ -3002,7 +3032,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshShapeAbsoluteHeight
+    /// FloatProperty: NavMeshShapeAbsoluteHeight<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float NavMeshShapeAbsoluteHeight
     {
@@ -3011,7 +3042,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DynamicNavMeshShapeHeightOffset
+    /// FloatProperty: DynamicNavMeshShapeHeightOffset<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DynamicNavMeshShapeHeightOffset
     {
@@ -3029,7 +3061,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeSinceLastChunkFractured
+    /// FloatProperty: TimeSinceLastChunkFractured<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TimeSinceLastChunkFractured
     {
@@ -3089,7 +3122,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ImpactEffectMassFactor
+    /// FloatProperty: ImpactEffectMassFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ImpactEffectMassFactor
     {
@@ -3149,7 +3183,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ToppleOverAngularVelocityMagnitude
+    /// FloatProperty: ToppleOverAngularVelocityMagnitude<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ToppleOverAngularVelocityMagnitude
     {

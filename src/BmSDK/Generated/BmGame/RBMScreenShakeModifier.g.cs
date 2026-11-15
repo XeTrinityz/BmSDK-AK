@@ -429,7 +429,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: TimeDuration
+        /// FloatProperty: TimeDuration<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float TimeDuration
         {
@@ -438,7 +439,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// StructProperty: LocAmplitude
+        /// StructProperty: LocAmplitude<br/>
+        /// Default: (Y=5,Z=5)
         /// </summary>
         public unsafe System.Numerics.Vector3 LocAmplitude
         {
@@ -447,7 +449,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// StructProperty: LocFrequency
+        /// StructProperty: LocFrequency<br/>
+        /// Default: (X=35,Y=35,Z=35)
         /// </summary>
         public unsafe System.Numerics.Vector3 LocFrequency
         {
@@ -474,7 +477,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// StructProperty: RotAmplitude
+        /// StructProperty: RotAmplitude<br/>
+        /// Default: (X=150,Y=150,Z=150)
         /// </summary>
         public unsafe System.Numerics.Vector3 RotAmplitude
         {
@@ -483,7 +487,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// StructProperty: RotFrequency
+        /// StructProperty: RotFrequency<br/>
+        /// Default: (X=35,Y=35,Z=35)
         /// </summary>
         public unsafe System.Numerics.Vector3 RotFrequency
         {
@@ -510,7 +515,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: FOVMultiplier
+        /// FloatProperty: FOVMultiplier<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float FOVMultiplier
         {
@@ -528,7 +534,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: FOVFrequency
+        /// FloatProperty: FOVFrequency<br/>
+        /// Default: 5
         /// </summary>
         public unsafe float FOVFrequency
         {
@@ -546,7 +553,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// StructProperty: AdvancedOptions
+        /// StructProperty: AdvancedOptions<br/>
+        /// Default: (FalloffMinRange=2000,FalloffMaxRange=10000,FallOffMinValue=0.1)
         /// </summary>
         public unsafe BmSDK.BmGame.RBMScreenShakeModifier.FBMAdvancedScreenShakeStruct AdvancedOptions
         {
@@ -643,7 +651,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: FalloffMinRange
+        /// FloatProperty: FalloffMinRange<br/>
+        /// Default: 2000
         /// </summary>
         public unsafe float FalloffMinRange
         {
@@ -652,7 +661,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: FalloffMaxRange
+        /// FloatProperty: FalloffMaxRange<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float FalloffMaxRange
         {
@@ -661,7 +671,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         }
 
         /// <summary>
-        /// FloatProperty: FallOffMinValue
+        /// FloatProperty: FallOffMinValue<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float FallOffMinValue
         {

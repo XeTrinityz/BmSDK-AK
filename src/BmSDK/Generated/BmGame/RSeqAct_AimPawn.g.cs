@@ -124,7 +124,8 @@ public partial class RSeqAct_AimPawn : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bAimAt
+    /// BoolProperty: bAimAt<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAimAt
     {

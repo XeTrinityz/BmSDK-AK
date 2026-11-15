@@ -92,7 +92,8 @@ public partial class RSeqAct_PrepareMapChangeFromURL : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// BoolProperty: bBlockOnLoad
+    /// BoolProperty: bBlockOnLoad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockOnLoad
     {

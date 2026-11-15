@@ -1278,7 +1278,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: bSwingHidePoint
+    /// BoolProperty: bSwingHidePoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSwingHidePoint
     {
@@ -1305,7 +1306,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: bCanSwing
+    /// BoolProperty: bCanSwing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanSwing
     {
@@ -1314,7 +1316,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayAutomaticHelp
+    /// BoolProperty: bDisplayAutomaticHelp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayAutomaticHelp
     {
@@ -1323,7 +1326,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: BatmanCanJumpOff
+    /// BoolProperty: BatmanCanJumpOff<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BatmanCanJumpOff
     {
@@ -1377,7 +1381,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: ValidHidePoint
+    /// BoolProperty: ValidHidePoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ValidHidePoint
     {
@@ -1431,7 +1436,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// BoolProperty: AutoAdjustOnPathBuild
+    /// BoolProperty: AutoAdjustOnPathBuild<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoAdjustOnPathBuild
     {
@@ -1530,7 +1536,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// ArrayProperty: AdditionalArrowComponent
+    /// ArrayProperty: AdditionalArrowComponent<br/>
+    /// Default: (None,None,None)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ArrowComponent> AdditionalArrowComponent
     {
@@ -1560,7 +1567,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 740);
 
     /// <summary>
-    /// FloatProperty: VantagePointRange
+    /// FloatProperty: VantagePointRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float VantagePointRange
     {
@@ -2003,7 +2011,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// ArrayProperty: CantJumpOff
+    /// ArrayProperty: CantJumpOff<br/>
+    /// Default: ((MinYaw=29000,MaxYaw=-29000))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RHidePoint.FCantJumpOffArc> CantJumpOff
     {
@@ -2021,7 +2030,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// FloatProperty: GunDamageMax
+    /// FloatProperty: GunDamageMax<br/>
+    /// Default: 110
     /// </summary>
     public unsafe float GunDamageMax
     {
@@ -2030,7 +2040,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// FloatProperty: RopeHealth
+    /// FloatProperty: RopeHealth<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float RopeHealth
     {
@@ -2039,7 +2050,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// FloatProperty: RopeDmgFromRifle
+    /// FloatProperty: RopeDmgFromRifle<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RopeDmgFromRifle
     {
@@ -2048,7 +2060,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// FloatProperty: RopeDmgFromShotgun
+    /// FloatProperty: RopeDmgFromShotgun<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RopeDmgFromShotgun
     {
@@ -2078,7 +2091,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1212);
 
     /// <summary>
-    /// StructProperty: CatwomanPerchOffset
+    /// StructProperty: CatwomanPerchOffset<br/>
+    /// Default: (X=80,Z=-60)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CatwomanPerchOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1224);
@@ -2102,7 +2116,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
     }
 
     /// <summary>
-    /// ArrayProperty: MineAttachSocketList
+    /// ArrayProperty: MineAttachSocketList<br/>
+    /// Default: (MineAttachPoint_01,MineAttachPoint_02,MineAttachPoint_03)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MineAttachSocketList
     {

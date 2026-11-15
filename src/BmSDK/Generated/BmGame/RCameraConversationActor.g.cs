@@ -146,7 +146,8 @@ public partial class RCameraConversationActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: MoveAllCamerasOnMove
+    /// BoolProperty: MoveAllCamerasOnMove<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MoveAllCamerasOnMove
     {

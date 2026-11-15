@@ -95,7 +95,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CompressionQuality
+    /// IntProperty: CompressionQuality<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int CompressionQuality
     {
@@ -239,7 +240,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinRange
+    /// FloatProperty: MinRange<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinRange
     {
@@ -248,7 +250,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRange
+    /// FloatProperty: MaxRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxRange
     {
@@ -257,7 +260,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DialogPriority
+    /// IntProperty: DialogPriority<br/>
+    /// Default: 128
     /// </summary>
     public unsafe int DialogPriority
     {
@@ -275,7 +279,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Volume
+    /// FloatProperty: Volume<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Volume
     {
@@ -284,7 +289,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Pitch
+    /// FloatProperty: Pitch<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Pitch
     {
@@ -338,7 +344,8 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: RawData
+    /// StructProperty: RawData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror RawData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 204);
@@ -371,37 +378,43 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CompressedPCData
+    /// StructProperty: CompressedPCData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedPCData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 288);
 
     /// <summary>
-    /// StructProperty: CompressedXbox360Data
+    /// StructProperty: CompressedXbox360Data<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedXbox360Data
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 352);
 
     /// <summary>
-    /// StructProperty: CompressedPS3Data
+    /// StructProperty: CompressedPS3Data<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedPS3Data
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 416);
 
     /// <summary>
-    /// StructProperty: CompressedWiiUData
+    /// StructProperty: CompressedWiiUData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedWiiUData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 480);
 
     /// <summary>
-    /// StructProperty: CompressedIPhoneData
+    /// StructProperty: CompressedIPhoneData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedIPhoneData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 544);
 
     /// <summary>
-    /// StructProperty: CompressedFlashData
+    /// StructProperty: CompressedFlashData<br/>
+    /// Default: (BulkDataFlags_LockStatus_ShouldFreeOnEmpty=1,BulkDataOffsetInFile=-1,BulkDataOffsetInFilePadding=-1,BulkDataSizeOnDisk=-1,SavedElementCount=-1,SavedBulkDataSizeOnDisk=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FUntypedBulkData_Mirror CompressedFlashData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FUntypedBulkData_Mirror>(Ptr + 608);

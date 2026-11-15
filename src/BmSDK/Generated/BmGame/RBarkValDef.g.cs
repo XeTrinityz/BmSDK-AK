@@ -74,7 +74,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: TrueFalseFlagList
+    /// ArrayProperty: TrueFalseFlagList<br/>
+    /// Default: (FV_True,FV_False)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TrueFalseFlagList
     {
@@ -83,7 +84,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: EventFlagList
+    /// ArrayProperty: EventFlagList<br/>
+    /// Default: (FV_EVENT_HeardNoise,FV_EVENT_SEARCH_Checkin,FV_EVENT_SEARCH_Chat,FV_EVENT_SEARCH_BuddyBump,FV_EVENT_SEARCH_LoneThug,FV_EVENT_SEARCH_BuddyBanter,FV_EVENT_AARem_Buddy,FV_EVENT_AARem_Grates,FV_EVENT_AAR...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> EventFlagList
     {
@@ -92,7 +94,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: FearFlagList
+    /// ArrayProperty: FearFlagList<br/>
+    /// Default: (FV_FEAR_COCKY,FV_FEAR_Nervous,FV_FEAR_Terrified)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FearFlagList
     {
@@ -101,7 +104,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DeliveryFlagList
+    /// ArrayProperty: DeliveryFlagList<br/>
+    /// Default: (FV_DELIVERY_Spoken,FV_DELIVERY_Shouted)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DeliveryFlagList
     {
@@ -110,7 +114,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerNameFlagList
+    /// ArrayProperty: PlayerNameFlagList<br/>
+    /// Default: (FV_PlayerName_Batman,FV_PLAYERNAME_Catwoman,FV_PLAYERNAME_Nightwing,FV_PLAYERNAME_Robin,FV_PLAYERNAME_RedHood,FV_PLAYERNAME_HarleyQuinn,FV_PLAYERNAME_Batgirl,FV_PLAYERNAME_Joker,FV_PLAYERNAME_Azrael)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerNameFlagList
     {
@@ -119,7 +124,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerGenderFlagList
+    /// ArrayProperty: PlayerGenderFlagList<br/>
+    /// Default: (FV_PLAYERGENDER_Male,FV_PLAYERGENDER_Female)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerGenderFlagList
     {
@@ -128,7 +134,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MiniManDownTimeFlagList
+    /// ArrayProperty: MiniManDownTimeFlagList<br/>
+    /// Default: (FV_MiniManDownTime_Recent,FV_MiniManDownTime_Old)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MiniManDownTimeFlagList
     {
@@ -137,7 +144,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: WeaponFlagList
+    /// ArrayProperty: WeaponFlagList<br/>
+    /// Default: (FV_WEAPON_Unarmed,FV_WEAPON_Pipe,FV_WEAPON_Knife,FV_WEAPON_Taser,FV_WEAPON_Projectile,FV_WEAPON_Gun,FV_WEAPON_Shield)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> WeaponFlagList
     {
@@ -146,7 +154,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: InjurySourceFlagList
+    /// ArrayProperty: InjurySourceFlagList<br/>
+    /// Default: (FV_INJURYSOURCE_Grate,FV_INJURYSOURCE_Silent,FV_INJURYSOURCE_Ledge,FV_INJURYSOURCE_GelWall,FV_INJURYSOURCE_GlideKick,FV_INJURYSOURCE_Drop,FV_INJURYSOURCE_Inverted,FV_INJURYSOURCE_Tunnel,FV_INJURYSOUR...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> InjurySourceFlagList
     {
@@ -155,7 +164,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: FractureTypeList
+    /// ArrayProperty: FractureTypeList<br/>
+    /// Default: (FV_FRACTURETYPE_Wall,FV_FRACTURETYPE_Floor,FV_FRACTURETYPE_Ceiling)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FractureTypeList
     {
@@ -164,7 +174,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SubjectLocationFlagList
+    /// ArrayProperty: SubjectLocationFlagList<br/>
+    /// Default: (FV_LOCATION_MiddleOfRoom,FV_LOCATION_NearDoor,FV_LOCATION_OnStairs,FV_LOCATION_NearStairs,FV_LOCATION_InStairwell,FV_LOCATION_Walkway,FV_LOCATION_GroundFloor,FV_LOCATION_TopFloor,FV_LOCATION_NorthSid...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> SubjectLocationFlagList
     {
@@ -173,7 +184,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CountFlagList
+    /// ArrayProperty: CountFlagList<br/>
+    /// Default: (FV_COUNT_Zero,FV_COUNT_One,FV_COUNT_Two,FV_COUNT_Three,FV_COUNT_Four,FV_COUNT_Five,FV_COUNT_Six,FV_COUNT_Seven,FV_COUNT_Eight,FV_COUNT_Nine,FV_COUNT_Ten,FV_COUNT_Eleven,FV_COUNT_Twelve,FV_COUNT_Thirt...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> CountFlagList
     {
@@ -182,7 +194,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StartleSourceFlagList
+    /// ArrayProperty: StartleSourceFlagList<br/>
+    /// Default: (FV_STARTLE_Alarm,FV_STARTLE_RobotArm,FV_STARTLE_Centrifuge,FV_STARTLE_Explosives,FV_STARTLE_Generator,FV_STARTLE_RoboTrex)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> StartleSourceFlagList
     {
@@ -191,7 +204,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: InvestigateTargetFlagList
+    /// ArrayProperty: InvestigateTargetFlagList<br/>
+    /// Default: (FV_INVTARGET_Grate,FV_INVTARGET_WallVent,FV_INVTARGET_WallOpening,FV_INVTARGET_Mine,FV_INVTARGET_WeaponCrate,FV_INVTARGET_WeakWall,FV_INVTARGET_Window,FV_INVTARGET_AlarmSystem,FV_INVTARGET_RobotArm,F...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> InvestigateTargetFlagList
     {
@@ -200,7 +214,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GuardTypeFlagList
+    /// ArrayProperty: GuardTypeFlagList<br/>
+    /// Default: (FV_GUARDTYPE_Zone,FV_GUARDTYPE_Door,FV_GUARDTYPE_ChemCarrier,FV_GUARDTYPE_Uplink,FV_GUARDTYPE_TopFloor)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> GuardTypeFlagList
     {
@@ -209,7 +224,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MapNameFlagList
+    /// ArrayProperty: MapNameFlagList<br/>
+    /// Default: (FV_MAPNAME_CityX_01,FV_MAPNAME_CityX_03,FV_MAPNAME_CityX_06,FV_MAPNAME_CityX_08,FV_MAPNAME_CityX_09,FV_MAPNAME_CityX_14,FV_MAPNAME_CityX_19,FV_MAPNAME_CityX_U16,FV_MAPNAME_CityY_02,FV_MAPNAME_CityY_0...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MapNameFlagList
     {
@@ -218,7 +234,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: IslandFlagList
+    /// ArrayProperty: IslandFlagList<br/>
+    /// Default: (FV_ISLAND_X,FV_ISLAND_Y,FV_ISLAND_Z,FV_ISLAND_Stagg,FV_ISLAND_VPKillerCroc)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IslandFlagList
     {
@@ -227,7 +244,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DroneTypeList
+    /// ArrayProperty: DroneTypeList<br/>
+    /// Default: (FV_DRONETYPE_Rattler,FV_DRONETYPE_Mamba,FV_DRONETYPE_Boa,FV_DRONETYPE_Cobra,FV_DRONETYPE_TwinRattler,FV_DRONETYPE_Diamondback,FV_DRONETYPE_Dragon,FV_DRONETYPE_Python,FV_DRONETYPE_Serpent)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DroneTypeList
     {
@@ -236,7 +254,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: TankBattleList
+    /// ArrayProperty: TankBattleList<br/>
+    /// Default: (FV_TANKBATTLE_ClockTower,FV_TANKBATTLE_HeavyCannon,FV_TANKBATTLE_Graveyard,FV_TANKBATTLE_GCPD,FV_TANKBATTLE_Beacon,FV_TANKBATTLE_Beacon1,FV_TANKBATTLE_BotanicalDropOff,FV_TANKBATTLE_Botanical,FV_TANK...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TankBattleList
     {
@@ -254,7 +273,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CombatTirednessList
+    /// ArrayProperty: CombatTirednessList<br/>
+    /// Default: (FV_COMBATTIREDNESS_Knackered,FV_COMBATTIREDNESS_Tired,FV_COMBATTIREDNESS_Normal)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> CombatTirednessList
     {
@@ -263,7 +283,8 @@ public partial class RBarkValDef : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: TakedownTypeList
+    /// ArrayProperty: TakedownTypeList<br/>
+    /// Default: (FV_TAKEDOWNTYPE_Generic,FV_TAKEDOWNTYPE_Arm,FV_TAKEDOWNTYPE_Leg,FV_TAKEDOWNTYPE_Head,FV_TAKEDOWNTYPE_BigGuy)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TakedownTypeList
     {

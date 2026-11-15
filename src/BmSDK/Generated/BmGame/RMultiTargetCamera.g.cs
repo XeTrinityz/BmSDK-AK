@@ -287,7 +287,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxMoveSpeed
+    /// FloatProperty: MaxMoveSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxMoveSpeed
     {
@@ -296,7 +297,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MoveAccel
+    /// FloatProperty: MoveAccel<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MoveAccel
     {
@@ -305,7 +307,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxTurnSpeed
+    /// FloatProperty: MaxTurnSpeed<br/>
+    /// Default: 32768
     /// </summary>
     public unsafe float MaxTurnSpeed
     {
@@ -314,7 +317,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TurnAccel
+    /// FloatProperty: TurnAccel<br/>
+    /// Default: 32768
     /// </summary>
     public unsafe float TurnAccel
     {
@@ -323,7 +327,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 1296);

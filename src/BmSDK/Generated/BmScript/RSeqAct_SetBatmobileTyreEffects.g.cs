@@ -93,7 +93,8 @@ public partial class RSeqAct_SetBatmobileTyreEffects : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// ByteProperty: DSMT
+    /// ByteProperty: DSMT<br/>
+    /// Default: DSMT_Pollen
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.EDrivableSurfaceMaterialType DSMT
     {

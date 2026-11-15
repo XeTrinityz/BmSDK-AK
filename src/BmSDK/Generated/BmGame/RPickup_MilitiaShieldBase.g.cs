@@ -625,7 +625,8 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RPickup_MilitiaShieldBase.Interactions0
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -634,7 +635,8 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     }
 
     /// <summary>
-    /// FloatProperty: ScanDistMax
+    /// FloatProperty: ScanDistMax<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ScanDistMax
     {

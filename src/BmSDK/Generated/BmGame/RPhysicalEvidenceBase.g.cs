@@ -351,7 +351,8 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RPhysicalEvidenceBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -360,7 +361,8 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// ComponentProperty: ScannerModeParticleFX
+    /// ComponentProperty: ScannerModeParticleFX<br/>
+    /// Default: BmGame.Default__RPhysicalEvidenceBase.PFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ScannerModeParticleFX
     {
@@ -369,7 +371,8 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// ComponentProperty: RevealedParticleFX
+    /// ComponentProperty: RevealedParticleFX<br/>
+    /// Default: BmGame.Default__RPhysicalEvidenceBase.Pfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RevealedParticleFX
     {
@@ -378,7 +381,8 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// NameProperty: ParamName
+    /// NameProperty: ParamName<br/>
+    /// Default: Alpha
     /// </summary>
     public unsafe BmSDK.FName ParamName
     {
@@ -402,7 +406,8 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// FloatProperty: CurrentLevel
+    /// FloatProperty: CurrentLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentLevel
     {
@@ -501,13 +506,15 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RX
     }
 
     /// <summary>
-    /// StructProperty: ParticleOffset
+    /// StructProperty: ParticleOffset<br/>
+    /// Default: (Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ParticleOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 772);
 
     /// <summary>
-    /// FloatProperty: OverScan
+    /// FloatProperty: OverScan<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OverScan
     {

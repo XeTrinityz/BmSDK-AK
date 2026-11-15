@@ -181,7 +181,8 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     }
 
     /// <summary>
-    /// IntProperty: MaxPostTapTargets
+    /// IntProperty: MaxPostTapTargets<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int MaxPostTapTargets
     {
@@ -208,7 +209,8 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     }
 
     /// <summary>
-    /// ComponentProperty: NewHydraPFX
+    /// ComponentProperty: NewHydraPFX<br/>
+    /// Default: BmScript.Default__RBatmobileMissileLauncherJoker.NewHydraPFX1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent NewHydraPFX
     {

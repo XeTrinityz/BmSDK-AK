@@ -90,7 +90,8 @@ public partial class SkelControlSpline : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: SplineLength
+    /// IntProperty: SplineLength<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int SplineLength
     {
@@ -99,7 +100,8 @@ public partial class SkelControlSpline : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: SplineBoneAxis
+    /// ByteProperty: SplineBoneAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis SplineBoneAxis
     {
@@ -126,7 +128,8 @@ public partial class SkelControlSpline : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: EndSplineTension
+    /// FloatProperty: EndSplineTension<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float EndSplineTension
     {
@@ -135,7 +138,8 @@ public partial class SkelControlSpline : BmSDK.Engine.SkelControlBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: StartSplineTension
+    /// FloatProperty: StartSplineTension<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float StartSplineTension
     {

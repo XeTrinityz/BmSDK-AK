@@ -196,7 +196,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: CellMesh
+    /// ComponentProperty: CellMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_JokerBossCell.NormalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent CellMesh
     {
@@ -205,7 +206,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightStaticMesh
+    /// ComponentProperty: InRangeHighlightStaticMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_JokerBossCell.InRangeHighlightStaticComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent InRangeHighlightStaticMesh
     {
@@ -214,7 +216,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// NameProperty: TakedownAnimName
+    /// NameProperty: TakedownAnimName<br/>
+    /// Default: FinishJk_Environment_Takedown_In
     /// </summary>
     public unsafe BmSDK.FName TakedownAnimName
     {
@@ -223,7 +226,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// FloatProperty: PlayerRange
+    /// FloatProperty: PlayerRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float PlayerRange
     {
@@ -232,7 +236,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// FloatProperty: PlayerToJokerRange
+    /// FloatProperty: PlayerToJokerRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float PlayerToJokerRange
     {
@@ -241,7 +246,8 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveHighlightMatIndexs
+    /// ArrayProperty: ActiveHighlightMatIndexs<br/>
+    /// Default: (1)
     /// </summary>
     public unsafe BmSDK.TArray<int> ActiveHighlightMatIndexs
     {

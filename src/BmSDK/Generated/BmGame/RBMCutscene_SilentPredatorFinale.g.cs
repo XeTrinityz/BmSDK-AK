@@ -202,7 +202,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CamTimer
     {
@@ -229,7 +230,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeed
+    /// FloatProperty: UpSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float UpSpeed
     {
@@ -238,7 +240,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeedDecel
+    /// FloatProperty: UpSpeedDecel<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float UpSpeedDecel
     {
@@ -247,7 +250,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeed
+    /// FloatProperty: FOVSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FOVSpeed
     {
@@ -256,7 +260,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeedDecel
+    /// FloatProperty: FOVSpeedDecel<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float FOVSpeedDecel
     {
@@ -280,7 +285,8 @@ public partial class RBMCutscene_SilentPredatorFinale : BmSDK.BmGame.RBMCutscene
     }
 
     /// <summary>
-    /// BoolProperty: DoCollisionTest
+    /// BoolProperty: DoCollisionTest<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoCollisionTest
     {

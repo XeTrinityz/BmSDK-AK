@@ -197,7 +197,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLight_Attack
+    /// ComponentProperty: SpotLight_Attack<br/>
+    /// Default: BmGame.Default__RSentryGunLightsBase.Light_Attack
     /// </summary>
     public unsafe BmSDK.Engine.SpotLightComponent SpotLight_Attack
     {
@@ -206,7 +207,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: LightShaft_Attack
+    /// ComponentProperty: LightShaft_Attack<br/>
+    /// Default: BmGame.Default__RSentryGunLightsBase.Shaft_Attack
     /// </summary>
     public unsafe BmSDK.Engine.RLightShaftVolumeComponent LightShaft_Attack
     {
@@ -215,7 +217,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: ConeColor
+    /// StructProperty: ConeColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ConeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 684);
@@ -257,7 +260,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: SelfLightComp
+    /// ComponentProperty: SelfLightComp<br/>
+    /// Default: BmGame.Default__RSentryGunLightsBase.SelfLight
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent SelfLightComp
     {

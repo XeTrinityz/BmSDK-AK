@@ -764,7 +764,8 @@ public partial class RCombatMove_BatmanAttack : BmSDK.BmGame.RCombatMove, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bHitPerfectStrike
+    /// BoolProperty: bHitPerfectStrike<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHitPerfectStrike
     {
@@ -809,7 +810,8 @@ public partial class RCombatMove_BatmanAttack : BmSDK.BmGame.RCombatMove, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bRootMotionOverridesFallingXY
+    /// BoolProperty: bRootMotionOverridesFallingXY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRootMotionOverridesFallingXY
     {
@@ -827,7 +829,8 @@ public partial class RCombatMove_BatmanAttack : BmSDK.BmGame.RCombatMove, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bInitiatedOnServer
+    /// BoolProperty: bInitiatedOnServer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInitiatedOnServer
     {

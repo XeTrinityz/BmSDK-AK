@@ -173,7 +173,8 @@ public partial class RSpecialMoveInstance_UseStaggDoorsLocked : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// ComponentProperty: DoorLight
+    /// ComponentProperty: DoorLight<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_UseStaggDoorsLocked.PointLightComponentDoorLight
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent DoorLight
     {
@@ -182,19 +183,22 @@ public partial class RSpecialMoveInstance_UseStaggDoorsLocked : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// StructProperty: BlueCol
+    /// StructProperty: BlueCol<br/>
+    /// Default: (B=255,G=150)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BlueCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1036);
 
     /// <summary>
-    /// StructProperty: RedCol
+    /// StructProperty: RedCol<br/>
+    /// Default: (R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor RedCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1040);
 
     /// <summary>
-    /// StructProperty: GreenCol
+    /// StructProperty: GreenCol<br/>
+    /// Default: (G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor GreenCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1044);

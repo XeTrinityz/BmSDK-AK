@@ -79,7 +79,8 @@ public partial class ParticleModuleMeshRotationRateMultiplyLife : BmSDK.Engine.P
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: LifeMultiplier
+    /// StructProperty: LifeMultiplier<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleMeshRotationRateMultiplyLife.DistributionLifeMultiplier,RangesCached=true...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector LifeMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);

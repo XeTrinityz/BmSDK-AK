@@ -128,7 +128,8 @@ public partial class RBMWaveController : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bStaggerPawnSpawning
+    /// BoolProperty: bStaggerPawnSpawning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStaggerPawnSpawning
     {
@@ -209,7 +210,8 @@ public partial class RBMWaveController : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// StrProperty: AllDeadFlagName
+    /// StrProperty: AllDeadFlagName<br/>
+    /// Default: "AllDeadFired"
     /// </summary>
     public unsafe BmSDK.FString AllDeadFlagName
     {

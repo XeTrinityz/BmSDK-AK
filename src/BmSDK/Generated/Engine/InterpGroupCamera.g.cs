@@ -155,7 +155,8 @@ public partial class InterpGroupCamera : BmSDK.Engine.InterpGroup, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.InterpGroupCamera.FCameraPreviewInfo>(Ptr + 172);
 
     /// <summary>
-    /// FloatProperty: CompressTolerance
+    /// FloatProperty: CompressTolerance<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CompressTolerance
     {

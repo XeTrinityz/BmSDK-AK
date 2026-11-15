@@ -181,7 +181,8 @@ public partial class RVehicleBehaviour_StopAndSpawnBase : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: StopNearActorDistance
+    /// FloatProperty: StopNearActorDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float StopNearActorDistance
     {
@@ -190,7 +191,8 @@ public partial class RVehicleBehaviour_StopAndSpawnBase : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// BoolProperty: DriveAtActor
+    /// BoolProperty: DriveAtActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DriveAtActor
     {

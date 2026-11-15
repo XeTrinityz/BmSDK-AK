@@ -234,7 +234,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: InterpGroupInst
+    /// ObjectProperty: InterpGroupInst<br/>
+    /// Default: Engine.Default__CameraAnimInst.InterpGroupInst0
     /// </summary>
     public unsafe BmSDK.Engine.InterpGroupInst InterpGroupInst
     {
@@ -288,7 +289,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bFinished
+    /// BoolProperty: bFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFinished
     {
@@ -297,7 +299,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoReleaseWhenFinished
+    /// BoolProperty: bAutoReleaseWhenFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoReleaseWhenFinished
     {
@@ -360,7 +363,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PlayRate
+    /// FloatProperty: PlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PlayRate
     {
@@ -378,7 +382,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TransientScaleModifier
+    /// FloatProperty: TransientScaleModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TransientScaleModifier
     {
@@ -420,7 +425,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: LastPPSettings
+    /// StructProperty: LastPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings LastPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 240);

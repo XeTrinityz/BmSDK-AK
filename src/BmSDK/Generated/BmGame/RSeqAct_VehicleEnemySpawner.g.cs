@@ -917,7 +917,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
     }
 
     /// <summary>
-    /// ClassProperty: KillAllDamageType
+    /// ClassProperty: KillAllDamageType<br/>
+    /// Default: Engine.DmgType_Telefragged
     /// </summary>
     public unsafe BmSDK.Class KillAllDamageType
     {
@@ -935,7 +936,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
     }
 
     /// <summary>
-    /// FloatProperty: MinSpacing
+    /// FloatProperty: MinSpacing<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MinSpacing
     {
@@ -968,7 +970,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
     }
 
     /// <summary>
-    /// IntProperty: CombatCheckIndex
+    /// IntProperty: CombatCheckIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CombatCheckIndex
     {
@@ -977,7 +980,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
     }
 
     /// <summary>
-    /// IntProperty: OverrideChapterDifficulty
+    /// IntProperty: OverrideChapterDifficulty<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideChapterDifficulty
     {
@@ -1151,7 +1155,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
         }
 
         /// <summary>
-        /// BoolProperty: DropToGround
+        /// BoolProperty: DropToGround<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool DropToGround
         {

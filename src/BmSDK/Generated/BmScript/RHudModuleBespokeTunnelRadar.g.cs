@@ -328,7 +328,8 @@ public partial class RHudModuleBespokeTunnelRadar : BmSDK.BmGame.RHudModuleBespo
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToExcavator
+    /// FloatProperty: DistanceToExcavator<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float DistanceToExcavator
     {

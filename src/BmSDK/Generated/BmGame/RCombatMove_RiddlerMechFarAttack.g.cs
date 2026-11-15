@@ -362,7 +362,8 @@ public partial class RCombatMove_RiddlerMechFarAttack : BmSDK.BmGame.RCombatMove
     }
 
     /// <summary>
-    /// FloatProperty: BeamTargetDist
+    /// FloatProperty: BeamTargetDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float BeamTargetDist
     {

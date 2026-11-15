@@ -109,7 +109,8 @@ public partial class RVehicleBehaviour_MonitorPlayer : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: MonitorPlayerRange
+    /// FloatProperty: MonitorPlayerRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MonitorPlayerRange
     {
@@ -118,7 +119,8 @@ public partial class RVehicleBehaviour_MonitorPlayer : BmSDK.BmGame.RVehicleBeha
     }
 
     /// <summary>
-    /// FloatProperty: MonitorInterval
+    /// FloatProperty: MonitorInterval<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MonitorInterval
     {

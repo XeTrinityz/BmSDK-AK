@@ -128,7 +128,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ConfiguredInternetSpeed
+    /// IntProperty: ConfiguredInternetSpeed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int ConfiguredInternetSpeed
     {
@@ -137,7 +138,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ConfiguredLanSpeed
+    /// IntProperty: ConfiguredLanSpeed<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe int ConfiguredLanSpeed
     {
@@ -146,7 +148,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PP_DesaturationMultiplier
+    /// FloatProperty: PP_DesaturationMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PP_DesaturationMultiplier
     {
@@ -155,7 +158,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PP_HighlightsMultiplier
+    /// FloatProperty: PP_HighlightsMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PP_HighlightsMultiplier
     {
@@ -164,7 +168,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PP_MidTonesMultiplier
+    /// FloatProperty: PP_MidTonesMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PP_MidTonesMultiplier
     {
@@ -173,7 +178,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PP_ShadowsMultiplier
+    /// FloatProperty: PP_ShadowsMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PP_ShadowsMultiplier
     {

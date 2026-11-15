@@ -260,7 +260,8 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: ProjectileMesh
+    /// ComponentProperty: ProjectileMesh<br/>
+    /// Default: BmGame.Default__RGadgetProjectileBase.GadgetMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ProjectileMesh
     {
@@ -383,7 +384,8 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: Gravity
+    /// FloatProperty: Gravity<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float Gravity
     {

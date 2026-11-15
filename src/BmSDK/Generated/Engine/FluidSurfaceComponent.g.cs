@@ -175,7 +175,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: LightMapResolution
+    /// IntProperty: LightMapResolution<br/>
+    /// Default: 128
     /// </summary>
     public unsafe int LightMapResolution
     {
@@ -184,13 +185,15 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// StructProperty: LightmassSettings
+    /// StructProperty: LightmassSettings<br/>
+    /// Default: (bUmbraIsOccluder=true,EmissiveLightFalloffExponent=2,EmissiveBoost=1,DiffuseBoost=1,SpecularBoost=1,FullyOccludedSamplesFraction=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings LightmassSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings>(Ptr + 568);
 
     /// <summary>
-    /// BoolProperty: EnableSimulation
+    /// BoolProperty: EnableSimulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableSimulation
     {
@@ -199,7 +202,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: EnableDetail
+    /// BoolProperty: EnableDetail<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableDetail
     {
@@ -262,7 +266,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowFluidSimulation
+    /// BoolProperty: bShowFluidSimulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowFluidSimulation
     {
@@ -271,7 +276,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowFluidDetail
+    /// BoolProperty: bShowFluidDetail<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowFluidDetail
     {
@@ -298,7 +304,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: SimulationQuadsX
+    /// IntProperty: SimulationQuadsX<br/>
+    /// Default: 200
     /// </summary>
     public unsafe int SimulationQuadsX
     {
@@ -307,7 +314,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: SimulationQuadsY
+    /// IntProperty: SimulationQuadsY<br/>
+    /// Default: 200
     /// </summary>
     public unsafe int SimulationQuadsY
     {
@@ -316,7 +324,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: GridSpacing
+    /// FloatProperty: GridSpacing<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float GridSpacing
     {
@@ -325,7 +334,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: GridSpacingLowRes
+    /// FloatProperty: GridSpacingLowRes<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float GridSpacingLowRes
     {
@@ -334,7 +344,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: GPUTessellationFactor
+    /// FloatProperty: GPUTessellationFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GPUTessellationFactor
     {
@@ -343,7 +354,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidDamping
+    /// FloatProperty: FluidDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FluidDamping
     {
@@ -352,7 +364,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidTravelSpeed
+    /// FloatProperty: FluidTravelSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FluidTravelSpeed
     {
@@ -361,7 +374,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidHeightScale
+    /// FloatProperty: FluidHeightScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FluidHeightScale
     {
@@ -370,7 +384,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidUpdateRate
+    /// FloatProperty: FluidUpdateRate<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FluidUpdateRate
     {
@@ -379,7 +394,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ForceImpact
+    /// FloatProperty: ForceImpact<br/>
+    /// Default: -3
     /// </summary>
     public unsafe float ForceImpact
     {
@@ -388,7 +404,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ForceContinuous
+    /// FloatProperty: ForceContinuous<br/>
+    /// Default: -200
     /// </summary>
     public unsafe float ForceContinuous
     {
@@ -397,7 +414,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: LightingContrast
+    /// FloatProperty: LightingContrast<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightingContrast
     {
@@ -406,7 +424,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DeactivationDistance
+    /// FloatProperty: DeactivationDistance<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DeactivationDistance
     {
@@ -415,7 +434,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: DetailResolution
+    /// IntProperty: DetailResolution<br/>
+    /// Default: 256
     /// </summary>
     public unsafe int DetailResolution
     {
@@ -424,7 +444,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailSize
+    /// FloatProperty: DetailSize<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DetailSize
     {
@@ -433,7 +454,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailDamping
+    /// FloatProperty: DetailDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DetailDamping
     {
@@ -442,7 +464,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailTravelSpeed
+    /// FloatProperty: DetailTravelSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DetailTravelSpeed
     {
@@ -451,7 +474,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailTransfer
+    /// FloatProperty: DetailTransfer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DetailTransfer
     {
@@ -460,7 +484,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailHeightScale
+    /// FloatProperty: DetailHeightScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DetailHeightScale
     {
@@ -469,7 +494,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: DetailUpdateRate
+    /// FloatProperty: DetailUpdateRate<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float DetailUpdateRate
     {
@@ -478,7 +504,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: NormalLength
+    /// FloatProperty: NormalLength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float NormalLength
     {
@@ -487,7 +514,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TestRippleSpeed
+    /// FloatProperty: TestRippleSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TestRippleSpeed
     {
@@ -496,7 +524,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TestRippleFrequency
+    /// FloatProperty: TestRippleFrequency<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TestRippleFrequency
     {
@@ -505,7 +534,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TestRippleRadius
+    /// FloatProperty: TestRippleRadius<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float TestRippleRadius
     {
@@ -514,7 +544,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidWidth
+    /// FloatProperty: FluidWidth<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FluidWidth
     {
@@ -523,7 +554,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FluidHeight
+    /// FloatProperty: FluidHeight<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FluidHeight
     {

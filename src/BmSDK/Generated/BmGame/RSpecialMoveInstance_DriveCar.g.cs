@@ -306,7 +306,8 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
     }
 
     /// <summary>
-    /// FloatProperty: SteerSpeed
+    /// FloatProperty: SteerSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SteerSpeed
     {
@@ -315,7 +316,8 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
     }
 
     /// <summary>
-    /// FloatProperty: SteerNoiseMax
+    /// FloatProperty: SteerNoiseMax<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float SteerNoiseMax
     {
@@ -324,7 +326,8 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
     }
 
     /// <summary>
-    /// ArrayProperty: SteerNoisePeriods
+    /// ArrayProperty: SteerNoisePeriods<br/>
+    /// Default: (0.4444444,1.123121,6.123121)
     /// </summary>
     public unsafe BmSDK.TArray<float> SteerNoisePeriods
     {

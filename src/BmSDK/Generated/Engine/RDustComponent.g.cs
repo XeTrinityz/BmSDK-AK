@@ -85,7 +85,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     public partial record struct FRockDustSettings
     {
         /// <summary>
-        /// FloatProperty: Density
+        /// FloatProperty: Density<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Density
         {
@@ -94,7 +95,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: Width
+        /// FloatProperty: Width<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Width
         {
@@ -103,7 +105,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: Opacity
+        /// FloatProperty: Opacity<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Opacity
         {
@@ -112,7 +115,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: DustTexture
+        /// ObjectProperty: DustTexture<br/>
+        /// Default: vfx_feargas.Floating_FearGasDust
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D DustTexture
         {
@@ -122,7 +126,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: ParticleCount
+    /// IntProperty: ParticleCount<br/>
+    /// Default: 20480
     /// </summary>
     public unsafe int ParticleCount
     {
@@ -131,7 +136,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BoxSize
+    /// FloatProperty: BoxSize<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float BoxSize
     {
@@ -140,7 +146,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: fade
+    /// FloatProperty: fade<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float fade
     {
@@ -149,7 +156,8 @@ public partial class RDustComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: DustSettings
+    /// StructProperty: DustSettings<br/>
+    /// Default: (Density=1,Width=1,Opacity=1,DustTexture=vfx_feargas.Floating_FearGasDust)
     /// </summary>
     public unsafe ref BmSDK.Engine.RDustComponent.FRockDustSettings DustSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RDustComponent.FRockDustSettings>(Ptr + 552);

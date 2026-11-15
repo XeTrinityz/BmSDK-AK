@@ -269,7 +269,8 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: ScopeLaserLoop
+    /// ObjectProperty: ScopeLaserLoop<br/>
+    /// Default: Ww_WPN_SniperRifle.Play_SniperRifleLaser
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScopeLaserLoop
     {
@@ -278,7 +279,8 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: LaserAudible
+    /// ObjectProperty: LaserAudible<br/>
+    /// Default: BmScript.Default__RBMWeaponChokePoint.LaserAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible LaserAudible
     {
@@ -287,7 +289,8 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: LaserSight
+    /// ComponentProperty: LaserSight<br/>
+    /// Default: BmScript.Default__RBMWeaponChokePoint.Sight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LaserSight
     {

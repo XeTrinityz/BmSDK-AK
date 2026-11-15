@@ -202,7 +202,8 @@ public partial class RPawnVillainGunInvisible : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: InvisibilityPackDisruptedXrayMIC
+    /// ObjectProperty: InvisibilityPackDisruptedXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant InvisibilityPackDisruptedXrayMIC
     {
@@ -211,7 +212,8 @@ public partial class RPawnVillainGunInvisible : BmSDK.BmScript.RPawnVillainGunPr
     }
 
     /// <summary>
-    /// ObjectProperty: InvisibilityPackXrayMIC
+    /// ObjectProperty: InvisibilityPackXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant InvisibilityPackXrayMIC
     {

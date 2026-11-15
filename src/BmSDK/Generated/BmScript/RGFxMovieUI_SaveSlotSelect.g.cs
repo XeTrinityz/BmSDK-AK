@@ -1041,7 +1041,8 @@ public partial class RGFxMovieUI_SaveSlotSelect : BmSDK.BmGame.RGFxMovieUI, BmSD
     }
 
     /// <summary>
-    /// IntProperty: MaxSlot
+    /// IntProperty: MaxSlot<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MaxSlot
     {
@@ -1140,7 +1141,8 @@ public partial class RGFxMovieUI_SaveSlotSelect : BmSDK.BmGame.RGFxMovieUI, BmSD
     }
 
     /// <summary>
-    /// StrProperty: FullyLocalisedDialogue
+    /// StrProperty: FullyLocalisedDialogue<br/>
+    /// Default: "INT FRA ITA DEU ESN JPN ESM PTB"
     /// </summary>
     public unsafe BmSDK.FString FullyLocalisedDialogue
     {

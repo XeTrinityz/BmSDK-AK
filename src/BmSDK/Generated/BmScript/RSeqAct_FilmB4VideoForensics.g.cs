@@ -121,7 +121,8 @@ public partial class RSeqAct_FilmB4VideoForensics : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// ObjectProperty: TheMovieInstance
+    /// ObjectProperty: TheMovieInstance<br/>
+    /// Default: VideoSurveillanceDumb.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheMovieInstance
     {
@@ -229,7 +230,8 @@ public partial class RSeqAct_FilmB4VideoForensics : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// BoolProperty: bAutoPlaying
+    /// BoolProperty: bAutoPlaying<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoPlaying
     {
@@ -307,7 +309,8 @@ public partial class RSeqAct_FilmB4VideoForensics : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// FloatProperty: ScrubSpeedMultiplier
+    /// FloatProperty: ScrubSpeedMultiplier<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ScrubSpeedMultiplier
     {

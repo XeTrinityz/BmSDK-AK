@@ -254,7 +254,8 @@ public partial class RSeqAct_CanSeePawn : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bCheckBumpIntoPlayer
+    /// BoolProperty: bCheckBumpIntoPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckBumpIntoPlayer
     {
@@ -281,7 +282,8 @@ public partial class RSeqAct_CanSeePawn : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ReverseFOVAngle
+    /// FloatProperty: ReverseFOVAngle<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ReverseFOVAngle
     {
@@ -290,7 +292,8 @@ public partial class RSeqAct_CanSeePawn : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MinDistance
+    /// FloatProperty: MinDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinDistance
     {
@@ -299,7 +302,8 @@ public partial class RSeqAct_CanSeePawn : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CheckFrequency
+    /// FloatProperty: CheckFrequency<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CheckFrequency
     {

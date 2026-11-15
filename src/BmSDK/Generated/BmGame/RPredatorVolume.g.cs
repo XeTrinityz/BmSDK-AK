@@ -282,7 +282,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: PredAIType
+    /// ByteProperty: PredAIType<br/>
+    /// Default: PRED_Full
     /// </summary>
     public unsafe BmSDK.BmGame.RPredatorVolume.PredatorAIType PredAIType
     {
@@ -300,7 +301,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableTerrified
+    /// BoolProperty: bEnableTerrified<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableTerrified
     {
@@ -309,7 +311,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanLockDoors
+    /// BoolProperty: bCanLockDoors<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanLockDoors
     {
@@ -318,7 +321,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bTacticianPresent
+    /// BoolProperty: bTacticianPresent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTacticianPresent
     {
@@ -444,7 +448,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RoomAIState
+    /// ComponentProperty: RoomAIState<br/>
+    /// Default: BmGame.Default__RPredatorVolume.AIStateComponent
     /// </summary>
     public unsafe BmSDK.BmGame.RBMRoomAIState RoomAIState
     {
@@ -453,7 +458,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinNotGuarding
+    /// FloatProperty: MinNotGuarding<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinNotGuarding
     {
@@ -498,7 +504,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: numMinesPerTakedown
+    /// IntProperty: numMinesPerTakedown<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int numMinesPerTakedown
     {

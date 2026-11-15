@@ -193,7 +193,8 @@ public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: TimeInSeconds
+    /// IntProperty: TimeInSeconds<br/>
+    /// Default: 60
     /// </summary>
     public unsafe int TimeInSeconds
     {
@@ -319,7 +320,8 @@ public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: TimeToAddPerKO
+    /// FloatProperty: TimeToAddPerKO<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeToAddPerKO
     {
@@ -328,7 +330,8 @@ public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: TimeDilation
+    /// FloatProperty: TimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeDilation
     {
@@ -355,7 +358,8 @@ public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: LastDrawTime
+    /// FloatProperty: LastDrawTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastDrawTime
     {
@@ -391,7 +395,8 @@ public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: WarningSound10Seconds
+    /// ObjectProperty: WarningSound10Seconds<br/>
+    /// Default: Ww_UI_InGame.Play_Countdown_Timer_Beep
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WarningSound10Seconds
     {

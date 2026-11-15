@@ -198,7 +198,8 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CROW_VS_HELICOPTER_RANGE
+    /// FloatProperty: CROW_VS_HELICOPTER_RANGE<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float CROW_VS_HELICOPTER_RANGE
     {

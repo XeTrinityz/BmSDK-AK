@@ -142,7 +142,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: PhysMaterialMaskUVChannel
+    /// IntProperty: PhysMaterialMaskUVChannel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PhysMaterialMaskUVChannel
     {
@@ -169,7 +170,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: LightingModel
+    /// ByteProperty: LightingModel<br/>
+    /// Default: MLM_RockBRDF
     /// </summary>
     public unsafe BmSDK.Engine.EngineTypes.EMaterialLightingModel LightingModel
     {
@@ -178,7 +180,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: DecalPriority
+    /// ByteProperty: DecalPriority<br/>
+    /// Default: DP_Default
     /// </summary>
     public unsafe BmSDK.GameObject.EDecalPriority DecalPriority
     {
@@ -205,37 +208,43 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: DiffuseColor
+    /// StructProperty: DiffuseColor<br/>
+    /// Default: (Constant=(B=128,G=128,R=128))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput DiffuseColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: DiffusePower
+    /// StructProperty: DiffusePower<br/>
+    /// Default: (Constant=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FScalarMaterialInput DiffusePower
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 228);
 
     /// <summary>
-    /// StructProperty: SpecularColor
+    /// StructProperty: SpecularColor<br/>
+    /// Default: (Constant=(B=128,G=128,R=128))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput SpecularColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 288);
 
     /// <summary>
-    /// StructProperty: SpecularColor2
+    /// StructProperty: SpecularColor2<br/>
+    /// Default: (Constant=(B=128,G=128,R=128))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput SpecularColor2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 348);
 
     /// <summary>
-    /// StructProperty: SpecularPower
+    /// StructProperty: SpecularPower<br/>
+    /// Default: (Constant=15)
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FScalarMaterialInput SpecularPower
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 408);
 
     /// <summary>
-    /// StructProperty: SpecularPower2
+    /// StructProperty: SpecularPower2<br/>
+    /// Default: (Constant=15)
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FScalarMaterialInput SpecularPower2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 468);
@@ -253,19 +262,22 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 596);
 
     /// <summary>
-    /// StructProperty: Opacity
+    /// StructProperty: Opacity<br/>
+    /// Default: (Constant=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FScalarMaterialInput Opacity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 656);
 
     /// <summary>
-    /// StructProperty: OpacityMask
+    /// StructProperty: OpacityMask<br/>
+    /// Default: (Constant=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FScalarMaterialInput OpacityMask
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 716);
 
     /// <summary>
-    /// FloatProperty: OpacityMaskClipValue
+    /// FloatProperty: OpacityMaskClipValue<br/>
+    /// Default: 0.3333
     /// </summary>
     public unsafe float OpacityMaskClipValue
     {
@@ -274,7 +286,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OpacityMaskClipValuePostDepth
+    /// FloatProperty: OpacityMaskClipValuePostDepth<br/>
+    /// Default: 0.3333
     /// </summary>
     public unsafe float OpacityMaskClipValuePostDepth
     {
@@ -352,7 +365,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 1344);
 
     /// <summary>
-    /// StructProperty: TwoSidedLightingColor
+    /// StructProperty: TwoSidedLightingColor<br/>
+    /// Default: (Constant=(B=255,G=255,R=255))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput TwoSidedLightingColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 1404);
@@ -388,13 +402,15 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FScalarMaterialInput>(Ptr + 1728);
 
     /// <summary>
-    /// StructProperty: SubsurfaceInscatteringColor
+    /// StructProperty: SubsurfaceInscatteringColor<br/>
+    /// Default: (Constant=(B=255,G=255,R=255))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput SubsurfaceInscatteringColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 1788);
 
     /// <summary>
-    /// StructProperty: SubsurfaceAbsorptionColor
+    /// StructProperty: SubsurfaceAbsorptionColor<br/>
+    /// Default: (Constant=(B=200,G=200,R=230))
     /// </summary>
     public unsafe ref BmSDK.Engine.Material.FColorMaterialInput SubsurfaceAbsorptionColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Material.FColorMaterialInput>(Ptr + 1848);
@@ -604,7 +620,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bDoPointCloudFalloff
+    /// BoolProperty: bDoPointCloudFalloff<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoPointCloudFalloff
     {
@@ -775,7 +792,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowFog
+    /// BoolProperty: bAllowFog<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowFog
     {
@@ -901,7 +919,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bUsedWithStaticMesh
+    /// BoolProperty: bUsedWithStaticMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsedWithStaticMesh
     {
@@ -1198,7 +1217,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowLightmapSpecular
+    /// BoolProperty: bAllowLightmapSpecular<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowLightmapSpecular
     {
@@ -1297,7 +1317,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: PointCloudOcclusion
+    /// FloatProperty: PointCloudOcclusion<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float PointCloudOcclusion
     {
@@ -1306,7 +1327,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: PointCloudScale
+    /// FloatProperty: PointCloudScale<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float PointCloudScale
     {
@@ -1315,13 +1337,15 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: SSSColourDefault
+    /// StructProperty: SSSColourDefault<br/>
+    /// Default: (R=0.45,G=0.2,B=0.06,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SSSColourDefault
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1992);
 
     /// <summary>
-    /// FloatProperty: ImageReflectionNormalDampening
+    /// FloatProperty: ImageReflectionNormalDampening<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float ImageReflectionNormalDampening
     {
@@ -1330,7 +1354,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: DeepScatterIntensity
+    /// FloatProperty: DeepScatterIntensity<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float DeepScatterIntensity
     {
@@ -1339,7 +1364,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: DeepScatterRadius
+    /// FloatProperty: DeepScatterRadius<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float DeepScatterRadius
     {
@@ -1348,7 +1374,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ThicknessNormalOffset
+    /// FloatProperty: ThicknessNormalOffset<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ThicknessNormalOffset
     {
@@ -1357,7 +1384,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ThicknessBlurRadius
+    /// FloatProperty: ThicknessBlurRadius<br/>
+    /// Default: 0.015
     /// </summary>
     public unsafe float ThicknessBlurRadius
     {
@@ -1366,7 +1394,8 @@ public partial class Material : BmSDK.Engine.MaterialInterface, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: ThicknessDepthSharpness
+    /// FloatProperty: ThicknessDepthSharpness<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ThicknessDepthSharpness
     {

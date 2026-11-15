@@ -123,7 +123,8 @@ public partial class SeqVar_Object : BmSDK.Engine.SequenceVariable, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 240);
 
     /// <summary>
-    /// ArrayProperty: SupportedClasses
+    /// ArrayProperty: SupportedClasses<br/>
+    /// Default: (Core.Object)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Class> SupportedClasses
     {

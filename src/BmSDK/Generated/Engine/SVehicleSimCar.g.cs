@@ -103,7 +103,8 @@ public partial class SVehicleSimCar : BmSDK.Engine.SVehicleSimBase, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ReverseThrottle
+    /// FloatProperty: ReverseThrottle<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ReverseThrottle
     {

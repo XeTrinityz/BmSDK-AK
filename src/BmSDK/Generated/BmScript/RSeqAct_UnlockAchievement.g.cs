@@ -102,7 +102,8 @@ public partial class RSeqAct_UnlockAchievement : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// IntProperty: Value
+    /// IntProperty: Value<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int Value
     {

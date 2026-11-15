@@ -176,7 +176,8 @@ public partial class RStealthTakeDownStage_ReverseChoke : BmSDK.BmGame.RStealthT
     }
 
     /// <summary>
-    /// ByteProperty: TakedownFeatureType
+    /// ByteProperty: TakedownFeatureType<br/>
+    /// Default: TFT_Ledge
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayer.ETakedownFeature_Type TakedownFeatureType
     {
@@ -185,7 +186,8 @@ public partial class RStealthTakeDownStage_ReverseChoke : BmSDK.BmGame.RStealthT
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerAnimationsByType
+    /// ArrayProperty: PlayerAnimationsByType<br/>
+    /// Default: (Silent_384_Stand_Railing_Takedown,Silent_384_Stand_Takedown,Silent_384_Stand_Takedown,Silent_384_Railing_Takedown)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerAnimationsByType
     {
@@ -194,7 +196,8 @@ public partial class RStealthTakeDownStage_ReverseChoke : BmSDK.BmGame.RStealthT
     }
 
     /// <summary>
-    /// NameProperty: VictimFrontAnimation
+    /// NameProperty: VictimFrontAnimation<br/>
+    /// Default: Silent_384_Takedown
     /// </summary>
     public unsafe BmSDK.FName VictimFrontAnimation
     {
@@ -203,7 +206,8 @@ public partial class RStealthTakeDownStage_ReverseChoke : BmSDK.BmGame.RStealthT
     }
 
     /// <summary>
-    /// NameProperty: VictimBackAnimation
+    /// NameProperty: VictimBackAnimation<br/>
+    /// Default: Silent_384_Takedown_Back
     /// </summary>
     public unsafe BmSDK.FName VictimBackAnimation
     {

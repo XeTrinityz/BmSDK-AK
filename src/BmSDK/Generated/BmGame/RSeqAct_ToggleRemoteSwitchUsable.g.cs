@@ -79,7 +79,8 @@ public partial class RSeqAct_ToggleRemoteSwitchUsable : BmSDK.Engine.SeqAct_Togg
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bUpdateMaterial
+    /// BoolProperty: bUpdateMaterial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateMaterial
     {

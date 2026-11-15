@@ -157,7 +157,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     public InlineArray<BmSDK.FName> RocketLaunchSlot => new(2, Ptr + 2396, 8, this);
 
     /// <summary>
-    /// NameProperty: RocketLaunchSlot
+    /// NameProperty: RocketLaunchSlot<br/>
+    /// Default: Rocket_1
     /// </summary>
     public unsafe BmSDK.FName RocketLaunchSlot_0
     {
@@ -165,7 +166,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2396); }
     }
     /// <summary>
-    /// NameProperty: RocketLaunchSlot
+    /// NameProperty: RocketLaunchSlot<br/>
+    /// Default: Rocket_2
     /// </summary>
     public unsafe BmSDK.FName RocketLaunchSlot_1
     {
@@ -174,7 +176,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ReloadTime
+    /// FloatProperty: ReloadTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ReloadTime
     {
@@ -201,7 +204,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RocketPitchOffset
+    /// FloatProperty: RocketPitchOffset<br/>
+    /// Default: -1.37
     /// </summary>
     public unsafe float RocketPitchOffset
     {
@@ -210,13 +214,15 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     }
 
     /// <summary>
-    /// StructProperty: AmmoStartPos
+    /// StructProperty: AmmoStartPos<br/>
+    /// Default: (X=0.95,Y=0.8)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 AmmoStartPos
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 2432);
 
     /// <summary>
-    /// FloatProperty: AmmoPipWidth
+    /// FloatProperty: AmmoPipWidth<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float AmmoPipWidth
     {
@@ -225,7 +231,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: AmmoPipHeight
+    /// FloatProperty: AmmoPipHeight<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float AmmoPipHeight
     {
@@ -234,7 +241,8 @@ public partial class RBatmobileRockets : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: AmmoPipStride
+    /// FloatProperty: AmmoPipStride<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float AmmoPipStride
     {

@@ -1006,7 +1006,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     public InlineArray<BmSDK.BmGame.RSimpleRopeComponent> FakeRopeComp => new(2, Ptr + 1028, 8, this);
 
     /// <summary>
-    /// ComponentProperty: FakeRopeComp
+    /// ComponentProperty: FakeRopeComp<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_LineLauncher.RopeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent FakeRopeComp_0
     {
@@ -1014,7 +1015,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1028); }
     }
     /// <summary>
-    /// ComponentProperty: FakeRopeComp
+    /// ComponentProperty: FakeRopeComp<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_LineLauncher.RopeComponent1
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent FakeRopeComp_1
     {
@@ -1023,7 +1025,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// StructProperty: KickOverlay
+    /// StructProperty: KickOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId KickOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 1044);
@@ -1191,7 +1194,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: MaxPotentialGrabTargetDistance
+    /// FloatProperty: MaxPotentialGrabTargetDistance<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxPotentialGrabTargetDistance
     {
@@ -1200,7 +1204,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// StructProperty: GrabVillainOverlay
+    /// StructProperty: GrabVillainOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId GrabVillainOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 1060);
@@ -1242,19 +1247,22 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// StructProperty: VictimLeftOffset
+    /// StructProperty: VictimLeftOffset<br/>
+    /// Default: (X=-20,Y=-25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VictimLeftOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1108);
 
     /// <summary>
-    /// StructProperty: VictimRightOffset
+    /// StructProperty: VictimRightOffset<br/>
+    /// Default: (X=-20,Y=25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VictimRightOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1120);
 
     /// <summary>
-    /// FloatProperty: TakedownWallLookAhead
+    /// FloatProperty: TakedownWallLookAhead<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TakedownWallLookAhead
     {
@@ -1263,7 +1271,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: SlowMoFactor
+    /// FloatProperty: SlowMoFactor<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SlowMoFactor
     {
@@ -1272,7 +1281,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToWall
+    /// FloatProperty: DistanceToWall<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float DistanceToWall
     {

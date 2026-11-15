@@ -79,7 +79,8 @@ public partial class RAnimNotify_Takedown : BmSDK.Engine.AnimNotify, BmSDK.IGame
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: TakedownInfo
+    /// StructProperty: TakedownInfo<br/>
+    /// Default: (takedownType=TDT_Unarmed,bActive=true,bCanBeMirrored=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FTakedownInfo TakedownInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FTakedownInfo>(Ptr + 84);

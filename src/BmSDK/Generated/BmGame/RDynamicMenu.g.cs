@@ -1384,7 +1384,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: PauseGameWhileActive
+    /// BoolProperty: PauseGameWhileActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PauseGameWhileActive
     {
@@ -1465,7 +1466,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanDisableTick
+    /// BoolProperty: bCanDisableTick<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDisableTick
     {
@@ -1474,7 +1476,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UseAnalogueControls
+    /// BoolProperty: UseAnalogueControls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseAnalogueControls
     {
@@ -1582,7 +1585,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SelectedPage
+    /// IntProperty: SelectedPage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SelectedPage
     {
@@ -1916,7 +1920,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TitleY
+    /// FloatProperty: TitleY<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float TitleY
     {
@@ -1925,7 +1930,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MenuY
+    /// FloatProperty: MenuY<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float MenuY
     {
@@ -1934,7 +1940,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MenuXGap
+    /// FloatProperty: MenuXGap<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MenuXGap
     {
@@ -1943,7 +1950,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MenuDataWidth
+    /// FloatProperty: MenuDataWidth<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float MenuDataWidth
     {
@@ -1961,7 +1969,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ItemGapH
+    /// FloatProperty: ItemGapH<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float ItemGapH
     {
@@ -1970,7 +1979,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InitRepeatTime
+    /// FloatProperty: InitRepeatTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float InitRepeatTime
     {
@@ -1979,7 +1989,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinRepeatTime
+    /// FloatProperty: MinRepeatTime<br/>
+    /// Default: 0.08
     /// </summary>
     public unsafe float MinRepeatTime
     {
@@ -1988,7 +1999,8 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: InitRepeatFrames
+    /// IntProperty: InitRepeatFrames<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int InitRepeatFrames
     {

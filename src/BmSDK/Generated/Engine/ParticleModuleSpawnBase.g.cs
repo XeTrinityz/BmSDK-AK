@@ -74,7 +74,8 @@ public partial class ParticleModuleSpawnBase : BmSDK.Engine.ParticleModule, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bProcessSpawnRate
+    /// BoolProperty: bProcessSpawnRate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProcessSpawnRate
     {
@@ -83,7 +84,8 @@ public partial class ParticleModuleSpawnBase : BmSDK.Engine.ParticleModule, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bProcessBurstList
+    /// BoolProperty: bProcessBurstList<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProcessBurstList
     {

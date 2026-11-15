@@ -390,7 +390,8 @@ public partial class RVehicleBehaviour_FlyingStrafe : BmSDK.BmGame.RVehicleBehav
     }
 
     /// <summary>
-    /// FloatProperty: FullThrottleRange
+    /// FloatProperty: FullThrottleRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FullThrottleRange
     {
@@ -399,7 +400,8 @@ public partial class RVehicleBehaviour_FlyingStrafe : BmSDK.BmGame.RVehicleBehav
     }
 
     /// <summary>
-    /// FloatProperty: ChaseMinRange
+    /// FloatProperty: ChaseMinRange<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ChaseMinRange
     {
@@ -456,7 +458,8 @@ public partial class RVehicleBehaviour_FlyingStrafe : BmSDK.BmGame.RVehicleBehav
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 676);
 
     /// <summary>
-    /// IntProperty: LastChaseLink
+    /// IntProperty: LastChaseLink<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LastChaseLink
     {

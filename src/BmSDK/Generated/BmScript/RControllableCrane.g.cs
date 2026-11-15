@@ -369,7 +369,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bUp
+    /// BoolProperty: bUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUp
     {
@@ -441,7 +442,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: TurnSpeed
+    /// FloatProperty: TurnSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float TurnSpeed
     {
@@ -450,7 +452,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: TurnAngleToSlowDown
+    /// FloatProperty: TurnAngleToSlowDown<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float TurnAngleToSlowDown
     {
@@ -459,7 +462,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: TurnAngleToStop
+    /// FloatProperty: TurnAngleToStop<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float TurnAngleToStop
     {
@@ -480,7 +484,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 764);
 
     /// <summary>
-    /// FloatProperty: VerticalMoveSpeed
+    /// FloatProperty: VerticalMoveSpeed<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float VerticalMoveSpeed
     {
@@ -489,7 +494,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalMoveSpeed
+    /// FloatProperty: HorizontalMoveSpeed<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float HorizontalMoveSpeed
     {
@@ -516,7 +522,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: Cables
+    /// ArrayProperty: Cables<br/>
+    /// Default: (BmScript.Default__RControllableCrane.CableEndMesh,BmScript.Default__RControllableCrane.CableEndMesh2,BmScript.Default__RControllableCrane.CableEndMesh3,BmScript.Default__RControllableCrane.CableEndMe...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.StaticMeshComponent> Cables
     {
@@ -730,7 +737,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 992);
 
     /// <summary>
-    /// FloatProperty: CameraHeightAdjustWhenCollidingWithFloor
+    /// FloatProperty: CameraHeightAdjustWhenCollidingWithFloor<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CameraHeightAdjustWhenCollidingWithFloor
     {
@@ -748,7 +756,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CamHeightAdjustPerSec
+    /// FloatProperty: CamHeightAdjustPerSec<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CamHeightAdjustPerSec
     {
@@ -757,7 +766,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LookHeightAdjust
+    /// FloatProperty: LookHeightAdjust<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float LookHeightAdjust
     {
@@ -784,7 +794,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: RootToBottomOfRampDist
+    /// FloatProperty: RootToBottomOfRampDist<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float RootToBottomOfRampDist
     {
@@ -802,7 +813,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MatineeLength
+    /// FloatProperty: MatineeLength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MatineeLength
     {
@@ -811,7 +823,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: RopeSeperationDist
+    /// StructProperty: RopeSeperationDist<br/>
+    /// Default: (X=330,Y=350,Z=-300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RopeSeperationDist
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1052);
@@ -823,7 +836,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1064);
 
     /// <summary>
-    /// FloatProperty: RopeWidth
+    /// FloatProperty: RopeWidth<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RopeWidth
     {
@@ -841,7 +855,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CableOffset
+    /// FloatProperty: CableOffset<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float CableOffset
     {
@@ -859,7 +874,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SavedMatineePoint
+    /// FloatProperty: SavedMatineePoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SavedMatineePoint
     {
@@ -886,7 +902,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: RotationSteps
+    /// IntProperty: RotationSteps<br/>
+    /// Default: 2731
     /// </summary>
     public unsafe int RotationSteps
     {
@@ -949,7 +966,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SpeedUp
+    /// FloatProperty: SpeedUp<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SpeedUp
     {
@@ -958,7 +976,8 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SpeedDown
+    /// FloatProperty: SpeedDown<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float SpeedDown
     {

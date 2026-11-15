@@ -198,7 +198,8 @@ public partial class MSeqAct_HarleyJITBTutorial : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Part1_Delay
+    /// FloatProperty: Part1_Delay<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float Part1_Delay
     {
@@ -207,7 +208,8 @@ public partial class MSeqAct_HarleyJITBTutorial : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Part5_DelayBeforeHarleySpotted
+    /// FloatProperty: Part5_DelayBeforeHarleySpotted<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float Part5_DelayBeforeHarleySpotted
     {
@@ -216,7 +218,8 @@ public partial class MSeqAct_HarleyJITBTutorial : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// IntProperty: Part6_NumberEnemiesToExplode
+    /// IntProperty: Part6_NumberEnemiesToExplode<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int Part6_NumberEnemiesToExplode
     {
@@ -225,7 +228,8 @@ public partial class MSeqAct_HarleyJITBTutorial : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bJITBTutorialInProgress
+    /// BoolProperty: bJITBTutorialInProgress<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bJITBTutorialInProgress
     {

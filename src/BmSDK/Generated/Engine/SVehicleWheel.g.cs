@@ -215,7 +215,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCollidesVehicles
+    /// BoolProperty: bCollidesVehicles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCollidesVehicles
     {
@@ -737,7 +738,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: WheelPSCClass
+    /// ClassProperty: WheelPSCClass<br/>
+    /// Default: Engine.ParticleSystemComponent
     /// </summary>
     public unsafe BmSDK.Class WheelPSCClass
     {
@@ -761,7 +763,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 556);
 
     /// <summary>
-    /// FloatProperty: WheelRadius
+    /// FloatProperty: WheelRadius<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float WheelRadius
     {
@@ -770,7 +773,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WheelWidth
+    /// FloatProperty: WheelWidth<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float WheelWidth
     {
@@ -779,7 +783,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionTravelUp
+    /// FloatProperty: SuspensionTravelUp<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float SuspensionTravelUp
     {
@@ -788,7 +793,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionTravelDown
+    /// FloatProperty: SuspensionTravelDown<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float SuspensionTravelDown
     {
@@ -797,7 +803,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionSpeedUp
+    /// FloatProperty: SuspensionSpeedUp<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float SuspensionSpeedUp
     {
@@ -806,7 +813,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionSpeedDown
+    /// FloatProperty: SuspensionSpeedDown<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float SuspensionSpeedDown
     {
@@ -842,7 +850,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: TyreType
+    /// ByteProperty: TyreType<br/>
+    /// Default: ETyreType_Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.ETyreType TyreType
     {
@@ -851,7 +860,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: HandbrakeTyreType
+    /// ByteProperty: HandbrakeTyreType<br/>
+    /// Default: ETyreType_Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.ETyreType HandbrakeTyreType
     {
@@ -860,7 +870,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: WheelspinTyreType
+    /// ByteProperty: WheelspinTyreType<br/>
+    /// Default: ETyreType_Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.ETyreType WheelspinTyreType
     {
@@ -869,7 +880,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: DriftTyreType
+    /// ByteProperty: DriftTyreType<br/>
+    /// Default: ETyreType_Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.ETyreType DriftTyreType
     {
@@ -878,7 +890,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: BrakeTyreType
+    /// ByteProperty: BrakeTyreType<br/>
+    /// Default: ETyreType_Batmobile
     /// </summary>
     public unsafe BmSDK.Engine.SVehicleWheel.ETyreType BrakeTyreType
     {
@@ -968,7 +981,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LongSlipFactor
+    /// FloatProperty: LongSlipFactor<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float LongSlipFactor
     {
@@ -977,7 +991,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LatSlipFactor
+    /// FloatProperty: LatSlipFactor<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float LatSlipFactor
     {
@@ -986,7 +1001,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HandbrakeLongSlipFactor
+    /// FloatProperty: HandbrakeLongSlipFactor<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float HandbrakeLongSlipFactor
     {
@@ -995,7 +1011,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HandbrakeLatSlipFactor
+    /// FloatProperty: HandbrakeLatSlipFactor<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float HandbrakeLatSlipFactor
     {
@@ -1004,7 +1021,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParkedSlipFactor
+    /// FloatProperty: ParkedSlipFactor<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float ParkedSlipFactor
     {
@@ -1022,7 +1040,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WheelTorqueFactor
+    /// FloatProperty: WheelTorqueFactor<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float WheelTorqueFactor
     {
@@ -1169,7 +1188,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: SlipParticleParamName
+    /// NameProperty: SlipParticleParamName<br/>
+    /// Default: WheelSlip
     /// </summary>
     public unsafe BmSDK.FName SlipParticleParamName
     {
@@ -1187,7 +1207,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: WetnessVelocityParamName
+    /// NameProperty: WetnessVelocityParamName<br/>
+    /// Default: Velocity
     /// </summary>
     public unsafe BmSDK.FName WetnessVelocityParamName
     {
@@ -1205,7 +1226,8 @@ public partial class SVehicleWheel : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DryingOffTime
+    /// FloatProperty: DryingOffTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DryingOffTime
     {

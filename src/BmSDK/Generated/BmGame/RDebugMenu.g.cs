@@ -992,7 +992,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StatList
+    /// ArrayProperty: StatList<br/>
+    /// Default: ("None","Engine","FPSChart","Game","Physics","Collision","Audio","Particles","SceneRendering","SceneUpdate","Threading","Streaming","Memory","RHI","Net","Anim","UI","CharacterLighting","Object","Memor...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> StatList
     {
@@ -1055,7 +1056,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowOnlyActiveSideStoryChapters
+    /// BoolProperty: bShowOnlyActiveSideStoryChapters<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowOnlyActiveSideStoryChapters
     {
@@ -1064,7 +1066,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: FlagListTypes
+    /// ArrayProperty: FlagListTypes<br/>
+    /// Default: ("All","From Code","From Map","Chapter","Unlocked_","ChalAvail_","MapObj_","SS_","?Riddler","?_Visible","Equip_")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> FlagListTypes
     {
@@ -1073,7 +1076,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LogFilters
+    /// ArrayProperty: LogFilters<br/>
+    /// Default: (ChallengeMode,DevCrossLevel,DevCamera,DevNavMesh,DevNavMeshWarning,DevGFxUI,DevOnline,DevStreaming,DevPhysics,LogUI,LogAI,LogAudio,LogPlayer,LogWeapon,LogBoss,Warning,Log,ScriptLog,ScriptWarning,Loca...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> LogFilters
     {

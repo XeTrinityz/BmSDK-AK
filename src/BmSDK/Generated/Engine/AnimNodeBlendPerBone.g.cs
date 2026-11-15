@@ -102,7 +102,8 @@ public partial class AnimNodeBlendPerBone : BmSDK.Engine.AnimNodeBlend, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bForceLocalSpaceBlend
+    /// BoolProperty: bForceLocalSpaceBlend<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceLocalSpaceBlend
     {

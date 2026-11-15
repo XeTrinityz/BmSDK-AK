@@ -254,7 +254,8 @@ public partial class RAnimUtil_ShimmyCorrection : BmSDK.GameObject, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: OverextensionCompensationWidth
+    /// FloatProperty: OverextensionCompensationWidth<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float OverextensionCompensationWidth
     {

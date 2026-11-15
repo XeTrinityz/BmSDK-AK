@@ -79,7 +79,8 @@ public partial class SeqAct_AkDialogueSetDucking : BmSDK.AkAudio.SeqAct_AkBaseSi
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: DuckingInfo
+    /// StructProperty: DuckingInfo<br/>
+    /// Default: (DuckingLevels=1,DuckAttackTime=0.25,DuckReleaseTime=0.5,FullyDuckedValue=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkDialogue.FAkDuckingInfo DuckingInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkDialogue.FAkDuckingInfo>(Ptr + 352);

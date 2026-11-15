@@ -79,7 +79,8 @@ public partial class SceneCaptureCubeMapActor : BmSDK.Engine.SceneCaptureActor, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: StaticMesh
+    /// ComponentProperty: StaticMesh<br/>
+    /// Default: Engine.Default__SceneCaptureCubeMapActor.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMesh
     {

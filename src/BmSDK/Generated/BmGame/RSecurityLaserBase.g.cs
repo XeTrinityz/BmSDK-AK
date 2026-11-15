@@ -147,7 +147,8 @@ public partial class RSecurityLaserBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerDetector
+    /// ComponentProperty: PlayerDetector<br/>
+    /// Default: BmGame.Default__RSecurityLaserBase.PlayerCollisionVol
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent PlayerDetector
     {
@@ -156,7 +157,8 @@ public partial class RSecurityLaserBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CollisionDepth
+    /// FloatProperty: CollisionDepth<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CollisionDepth
     {
@@ -165,7 +167,8 @@ public partial class RSecurityLaserBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CollisionHeight
+    /// FloatProperty: CollisionHeight<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CollisionHeight
     {

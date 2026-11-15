@@ -129,7 +129,8 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ShadowRadiusMultiplier
+    /// FloatProperty: ShadowRadiusMultiplier<br/>
+    /// Default: 1.1
     /// </summary>
     public unsafe float ShadowRadiusMultiplier
     {
@@ -138,7 +139,8 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float Radius
     {
@@ -147,7 +149,8 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: FalloffExponent
+    /// FloatProperty: FalloffExponent<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FalloffExponent
     {
@@ -156,7 +159,8 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ShadowFalloffExponent
+    /// FloatProperty: ShadowFalloffExponent<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShadowFalloffExponent
     {

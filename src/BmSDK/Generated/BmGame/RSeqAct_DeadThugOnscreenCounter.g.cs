@@ -169,7 +169,8 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysTriggerOutput
+    /// BoolProperty: bAlwaysTriggerOutput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysTriggerOutput
     {

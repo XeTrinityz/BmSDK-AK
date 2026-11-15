@@ -148,7 +148,8 @@ public partial class AkProximityTracker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ProximityTrackerEnabled
+    /// BoolProperty: ProximityTrackerEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ProximityTrackerEnabled
     {
@@ -166,7 +167,8 @@ public partial class AkProximityTracker : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZeroRadius
+    /// FloatProperty: ZeroRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ZeroRadius
     {

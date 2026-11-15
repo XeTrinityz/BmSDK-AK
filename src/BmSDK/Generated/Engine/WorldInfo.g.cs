@@ -1507,7 +1507,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FLightmassWorldInfoSettings
     {
         /// <summary>
-        /// FloatProperty: StaticLightingLevelScale
+        /// FloatProperty: StaticLightingLevelScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float StaticLightingLevelScale
         {
@@ -1516,7 +1517,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: NumIndirectLightingBounces
+        /// IntProperty: NumIndirectLightingBounces<br/>
+        /// Default: 3
         /// </summary>
         public unsafe int NumIndirectLightingBounces
         {
@@ -1534,7 +1536,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EnvironmentIntensity
+        /// FloatProperty: EnvironmentIntensity<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float EnvironmentIntensity
         {
@@ -1561,7 +1564,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EnvironmentSunIntensity
+        /// FloatProperty: EnvironmentSunIntensity<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float EnvironmentSunIntensity
         {
@@ -1570,7 +1574,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EnvironmentLightTerminatorAngle
+        /// FloatProperty: EnvironmentLightTerminatorAngle<br/>
+        /// Default: 90
         /// </summary>
         public unsafe float EnvironmentLightTerminatorAngle
         {
@@ -1588,7 +1593,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EmissiveBoost
+        /// FloatProperty: EmissiveBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float EmissiveBoost
         {
@@ -1597,7 +1603,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DiffuseBoost
+        /// FloatProperty: DiffuseBoost<br/>
+        /// Default: 5
         /// </summary>
         public unsafe float DiffuseBoost
         {
@@ -1606,7 +1613,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SpecularBoost
+        /// FloatProperty: SpecularBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpecularBoost
         {
@@ -1615,7 +1623,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: IndirectNormalInfluenceBoost
+        /// FloatProperty: IndirectNormalInfluenceBoost<br/>
+        /// Default: 0.3
         /// </summary>
         public unsafe float IndirectNormalInfluenceBoost
         {
@@ -1642,7 +1651,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DirectIlluminationOcclusionFraction
+        /// FloatProperty: DirectIlluminationOcclusionFraction<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float DirectIlluminationOcclusionFraction
         {
@@ -1651,7 +1661,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: IndirectIlluminationOcclusionFraction
+        /// FloatProperty: IndirectIlluminationOcclusionFraction<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectIlluminationOcclusionFraction
         {
@@ -1660,7 +1671,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: OcclusionExponent
+        /// FloatProperty: OcclusionExponent<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float OcclusionExponent
         {
@@ -1669,7 +1681,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FullyOccludedSamplesFraction
+        /// FloatProperty: FullyOccludedSamplesFraction<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float FullyOccludedSamplesFraction
         {
@@ -1678,7 +1691,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxOcclusionDistance
+        /// FloatProperty: MaxOcclusionDistance<br/>
+        /// Default: 200
         /// </summary>
         public unsafe float MaxOcclusionDistance
         {
@@ -1892,7 +1906,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FPhysXVerticalProperties
     {
         /// <summary>
-        /// StructProperty: Emitters
+        /// StructProperty: Emitters<br/>
+        /// Default: (bDisableLod=true,ParticlesLodMax=15000,PacketsPerPhysXParticleSystemMax=500,bApplyCylindricalPacketCulling=true,SpawnLodVsFifoBias=1)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXEmitterVerticalProperties Emitters
         {
@@ -1908,7 +1923,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FPhysXEmitterVerticalProperties
     {
         /// <summary>
-        /// BoolProperty: bDisableLod
+        /// BoolProperty: bDisableLod<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bDisableLod
         {
@@ -1926,7 +1942,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: ParticlesLodMax
+        /// IntProperty: ParticlesLodMax<br/>
+        /// Default: 15000
         /// </summary>
         public unsafe int ParticlesLodMax
         {
@@ -1935,7 +1952,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: PacketsPerPhysXParticleSystemMax
+        /// IntProperty: PacketsPerPhysXParticleSystemMax<br/>
+        /// Default: 500
         /// </summary>
         public unsafe int PacketsPerPhysXParticleSystemMax
         {
@@ -1944,7 +1962,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bApplyCylindricalPacketCulling
+        /// BoolProperty: bApplyCylindricalPacketCulling<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bApplyCylindricalPacketCulling
         {
@@ -1953,7 +1972,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SpawnLodVsFifoBias
+        /// FloatProperty: SpawnLodVsFifoBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpawnLodVsFifoBias
         {
@@ -1969,7 +1989,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FApexModuleDestructibleSettings
     {
         /// <summary>
-        /// IntProperty: MaxChunkIslandCount
+        /// IntProperty: MaxChunkIslandCount<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int MaxChunkIslandCount
         {
@@ -1978,7 +1999,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: MaxShapeCount
+        /// IntProperty: MaxShapeCount<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int MaxShapeCount
         {
@@ -1987,7 +2009,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: MaxRrbActorCount
+        /// IntProperty: MaxRrbActorCount<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int MaxRrbActorCount
         {
@@ -1996,7 +2019,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxChunkSeparationLOD
+        /// FloatProperty: MaxChunkSeparationLOD<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MaxChunkSeparationLOD
         {
@@ -2021,7 +2045,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FPhysXSceneProperties
     {
         /// <summary>
-        /// StructProperty: PrimaryScene
+        /// StructProperty: PrimaryScene<br/>
+        /// Default: (TimeStep=0.1,MaxTimeStep=0.05,MaxSubSteps=2)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXSimulationProperties PrimaryScene
         {
@@ -2030,7 +2055,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: CompartmentRigidBody
+        /// StructProperty: CompartmentRigidBody<br/>
+        /// Default: (TimeStep=0.1,MaxTimeStep=0.05,MaxSubSteps=2)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXSimulationProperties CompartmentRigidBody
         {
@@ -2039,7 +2065,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: CompartmentFluid
+        /// StructProperty: CompartmentFluid<br/>
+        /// Default: (bUseHardware=true,TimeStep=0.05,MaxTimeStep=0.05,MaxSubSteps=1)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXSimulationProperties CompartmentFluid
         {
@@ -2048,7 +2075,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: CompartmentCloth
+        /// StructProperty: CompartmentCloth<br/>
+        /// Default: (bUseHardware=true,bFixedTimeStep=true,TimeStep=0.033333335,MaxTimeStep=0.05,MaxSubSteps=2)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXSimulationProperties CompartmentCloth
         {
@@ -2057,7 +2085,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: CompartmentSoftBody
+        /// StructProperty: CompartmentSoftBody<br/>
+        /// Default: (bUseHardware=true,bFixedTimeStep=true,TimeStep=0.025,MaxTimeStep=0.05,MaxSubSteps=2)
         /// </summary>
         public unsafe BmSDK.Engine.WorldInfo.FPhysXSimulationProperties CompartmentSoftBody
         {
@@ -2091,7 +2120,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TimeStep
+        /// FloatProperty: TimeStep<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float TimeStep
         {
@@ -2100,7 +2130,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxTimeStep
+        /// FloatProperty: MaxTimeStep<br/>
+        /// Default: 0.05
         /// </summary>
         public unsafe float MaxTimeStep
         {
@@ -2109,7 +2140,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: MaxSubSteps
+        /// IntProperty: MaxSubSteps<br/>
+        /// Default: 2
         /// </summary>
         public unsafe int MaxSubSteps
         {
@@ -2125,7 +2157,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     public partial record struct FCompartmentRunList
     {
         /// <summary>
-        /// BoolProperty: RigidBody
+        /// BoolProperty: RigidBody<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool RigidBody
         {
@@ -2134,7 +2167,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: Fluid
+        /// BoolProperty: Fluid<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool Fluid
         {
@@ -2143,7 +2177,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: Cloth
+        /// BoolProperty: Cloth<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool Cloth
         {
@@ -2152,7 +2187,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: SoftBody
+        /// BoolProperty: SoftBody<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool SoftBody
         {
@@ -2278,7 +2314,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DefaultPostProcessSettings
+    /// StructProperty: DefaultPostProcessSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings DefaultPostProcessSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 688);
@@ -2492,7 +2529,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultTexture
+    /// ObjectProperty: DefaultTexture<br/>
+    /// Default: EngineResources.DefaultTexture
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D DefaultTexture
     {
@@ -2510,7 +2548,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WhiteSquareTexture
+    /// ObjectProperty: WhiteSquareTexture<br/>
+    /// Default: EngineResources.WhiteSquareTexture
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D WhiteSquareTexture
     {
@@ -2663,7 +2702,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: EmitterVertical
+    /// ObjectProperty: EmitterVertical<br/>
+    /// Default: Engine.Default__WorldInfo.PhysicsLODVerticalEmitter0
     /// </summary>
     public unsafe BmSDK.Engine.PhysicsLODVerticalEmitter EmitterVertical
     {
@@ -2690,7 +2730,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: InteractionManager
+    /// ComponentProperty: InteractionManager<br/>
+    /// Default: Engine.Default__WorldInfo.InteractionManager0
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionManager InteractionManager
     {
@@ -2717,7 +2758,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPersistPostProcessToNextLevel
+    /// BoolProperty: bPersistPostProcessToNextLevel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPersistPostProcessToNextLevel
     {
@@ -2915,7 +2957,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bNoMobileMapWarnings
+    /// BoolProperty: bNoMobileMapWarnings<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoMobileMapWarnings
     {
@@ -3014,7 +3057,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPlaceCellsOnSurfaces
+    /// BoolProperty: bPlaceCellsOnSurfaces<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlaceCellsOnSurfaces
     {
@@ -3032,7 +3076,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseUmbra
+    /// BoolProperty: bUseUmbra<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseUmbra
     {
@@ -3050,7 +3095,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUmbraBuildStreamingData
+    /// BoolProperty: bUmbraBuildStreamingData<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUmbraBuildStreamingData
     {
@@ -3059,7 +3105,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTemporalAA
+    /// BoolProperty: bAllowTemporalAA<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTemporalAA
     {
@@ -3122,7 +3169,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StreamingTimePerFrame
+    /// FloatProperty: StreamingTimePerFrame<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float StreamingTimePerFrame
     {
@@ -3185,7 +3233,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeDilation
+    /// FloatProperty: TimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeDilation
     {
@@ -3194,7 +3243,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NextTickTimeDilation
+    /// FloatProperty: NextTickTimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NextTickTimeDilation
     {
@@ -3203,7 +3253,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DemoPlayTimeDilation
+    /// FloatProperty: DemoPlayTimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DemoPlayTimeDilation
     {
@@ -3311,7 +3362,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: NextTravelType
+    /// ByteProperty: NextTravelType<br/>
+    /// Default: TRAVEL_Relative
     /// </summary>
     public unsafe BmSDK.Engine.Actor.ETravelType NextTravelType
     {
@@ -3347,7 +3399,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: LevelLightingQuality
+    /// ByteProperty: LevelLightingQuality<br/>
+    /// Default: Quality_MAX
     /// </summary>
     public unsafe BmSDK.Engine.EngineTypes.ELightingBuildQuality LevelLightingQuality
     {
@@ -3401,7 +3454,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StallZ
+    /// FloatProperty: StallZ<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float StallZ
     {
@@ -3419,7 +3473,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultGravityZ
+    /// FloatProperty: DefaultGravityZ<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float DefaultGravityZ
     {
@@ -3437,7 +3492,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RBPhysicsGravityScaling
+    /// FloatProperty: RBPhysicsGravityScaling<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RBPhysicsGravityScaling
     {
@@ -3446,7 +3502,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MoveRepSize
+    /// FloatProperty: MoveRepSize<br/>
+    /// Default: 42
     /// </summary>
     public unsafe float MoveRepSize
     {
@@ -3482,7 +3539,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PackedLightAndShadowMapTextureSize
+    /// IntProperty: PackedLightAndShadowMapTextureSize<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe int PackedLightAndShadowMapTextureSize
     {
@@ -3491,7 +3549,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DefaultColorScale
+    /// StructProperty: DefaultColorScale<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DefaultColorScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1912);
@@ -3623,7 +3682,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: EmitterPoolClassPath
+    /// StrProperty: EmitterPoolClassPath<br/>
+    /// Default: "Engine.EmitterPool"
     /// </summary>
     public unsafe BmSDK.FString EmitterPoolClassPath
     {
@@ -3641,7 +3701,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: FractureManagerClassPath
+    /// StrProperty: FractureManagerClassPath<br/>
+    /// Default: "BmGame.RFractureManager"
     /// </summary>
     public unsafe BmSDK.FString FractureManagerClassPath
     {
@@ -3659,7 +3720,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxPhysicsDeltaTime
+    /// FloatProperty: MaxPhysicsDeltaTime<br/>
+    /// Default: 0.33333334
     /// </summary>
     public unsafe float MaxPhysicsDeltaTime
     {
@@ -3668,7 +3730,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPhysicsSubsteps
+    /// IntProperty: MaxPhysicsSubsteps<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxPhysicsSubsteps
     {
@@ -3677,7 +3740,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PhysicsProperties
+    /// StructProperty: PhysicsProperties<br/>
+    /// Default: (PrimaryScene=(TimeStep=0.1,MaxTimeStep=0.05,MaxSubSteps=2),CompartmentRigidBody=(TimeStep=0.1,MaxTimeStep=0.05,MaxSubSteps=2),CompartmentFluid=(bUseHardware=true,TimeStep=0.05,MaxTimeStep=0.05,MaxSub...
     /// </summary>
     public unsafe ref BmSDK.Engine.WorldInfo.FPhysXSceneProperties PhysicsProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.WorldInfo.FPhysXSceneProperties>(Ptr + 2196);
@@ -3692,7 +3756,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultSkinWidth
+    /// FloatProperty: DefaultSkinWidth<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float DefaultSkinWidth
     {
@@ -3701,7 +3766,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexLODResourceBudget
+    /// FloatProperty: ApexLODResourceBudget<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ApexLODResourceBudget
     {
@@ -3710,7 +3776,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexDestructionLODResourceValue
+    /// FloatProperty: ApexDestructionLODResourceValue<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ApexDestructionLODResourceValue
     {
@@ -3719,7 +3786,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexClothingLODResourceValue
+    /// FloatProperty: ApexClothingLODResourceValue<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ApexClothingLODResourceValue
     {
@@ -3728,13 +3796,15 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DestructibleSettings
+    /// StructProperty: DestructibleSettings<br/>
+    /// Default: (MaxChunkIslandCount=-1,MaxShapeCount=-1,MaxRrbActorCount=-1,MaxChunkSeparationLOD=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.WorldInfo.FApexModuleDestructibleSettings DestructibleSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.WorldInfo.FApexModuleDestructibleSettings>(Ptr + 2308);
 
     /// <summary>
-    /// StructProperty: VerticalProperties
+    /// StructProperty: VerticalProperties<br/>
+    /// Default: (Emitters=(bDisableLod=true,ParticlesLodMax=15000,PacketsPerPhysXParticleSystemMax=500,bApplyCylindricalPacketCulling=true,SpawnLodVsFifoBias=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.WorldInfo.FPhysXVerticalProperties VerticalProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.WorldInfo.FPhysXVerticalProperties>(Ptr + 2328);
@@ -3749,7 +3819,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfPhysicsChunkOverride
+    /// FloatProperty: ChanceOfPhysicsChunkOverride<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ChanceOfPhysicsChunkOverride
     {
@@ -3776,7 +3847,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FractureExplosionVelScale
+    /// FloatProperty: FractureExplosionVelScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FractureExplosionVelScale
     {
@@ -3785,7 +3857,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxNumFacturedChunksToSpawnInAFrame
+    /// IntProperty: MaxNumFacturedChunksToSpawnInAFrame<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxNumFacturedChunksToSpawnInAFrame
     {
@@ -3803,7 +3876,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FracturedMeshWeaponDamage
+    /// FloatProperty: FracturedMeshWeaponDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FracturedMeshWeaponDamage
     {
@@ -3812,7 +3886,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VisibilityCellSize
+    /// IntProperty: VisibilityCellSize<br/>
+    /// Default: 256
     /// </summary>
     public unsafe int VisibilityCellSize
     {
@@ -3821,7 +3896,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: UmbraSmallestHole
+    /// IntProperty: UmbraSmallestHole<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int UmbraSmallestHole
     {
@@ -3830,7 +3906,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: UmbraBackfaceLimit
+    /// IntProperty: UmbraBackfaceLimit<br/>
+    /// Default: 99
     /// </summary>
     public unsafe int UmbraBackfaceLimit
     {
@@ -3866,7 +3943,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CharacterLitIndirectBrightness
+    /// FloatProperty: CharacterLitIndirectBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CharacterLitIndirectBrightness
     {
@@ -3875,7 +3953,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CharacterLitIndirectContrastFactor
+    /// FloatProperty: CharacterLitIndirectContrastFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CharacterLitIndirectContrastFactor
     {
@@ -3884,7 +3963,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CharacterShadowedIndirectBrightness
+    /// FloatProperty: CharacterShadowedIndirectBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CharacterShadowedIndirectBrightness
     {
@@ -3893,7 +3973,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CharacterShadowedIndirectContrastFactor
+    /// FloatProperty: CharacterShadowedIndirectContrastFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CharacterShadowedIndirectContrastFactor
     {
@@ -3902,7 +3983,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CharacterLightingContrastFactor
+    /// FloatProperty: CharacterLightingContrastFactor<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CharacterLightingContrastFactor
     {
@@ -3911,7 +3993,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ImageReflectionEnvironmentColor
+    /// StructProperty: ImageReflectionEnvironmentColor<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ImageReflectionEnvironmentColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2440);
@@ -3965,7 +4048,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightmassSettings
+    /// StructProperty: LightmassSettings<br/>
+    /// Default: (StaticLightingLevelScale=1,NumIndirectLightingBounces=3,EnvironmentIntensity=1,EnvironmentSunIntensity=1,EnvironmentLightTerminatorAngle=90,EmissiveBoost=1,DiffuseBoost=5,SpecularBoost=1,IndirectNorm...
     /// </summary>
     public unsafe ref BmSDK.Engine.WorldInfo.FLightmassWorldInfoSettings LightmassSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.WorldInfo.FLightmassWorldInfoSettings>(Ptr + 2636);
@@ -3995,7 +4079,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.WorldInfo.FHostMigrationState>(Ptr + 2868);
 
     /// <summary>
-    /// FloatProperty: HostMigrationTimeout
+    /// FloatProperty: HostMigrationTimeout<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float HostMigrationTimeout
     {
@@ -4004,7 +4089,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DebrisMaxHeightAboveGroundWhenSettled
+    /// FloatProperty: DebrisMaxHeightAboveGroundWhenSettled<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DebrisMaxHeightAboveGroundWhenSettled
     {
@@ -4013,7 +4099,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DebugDrawDestructiblesStrings
+    /// ArrayProperty: DebugDrawDestructiblesStrings<br/>
+    /// Default: ("None","City Archetypes","Interior Archetypes","Fracture Wall Archetypes","Player navigation geom","Tree collision","Support chunks","Mesh Type","Deprecated Apex Assets","Ticking","Support bounds","V...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> DebugDrawDestructiblesStrings
     {
@@ -4022,7 +4109,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DebugDrawDestructiblesDistance
+    /// FloatProperty: DebugDrawDestructiblesDistance<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float DebugDrawDestructiblesDistance
     {

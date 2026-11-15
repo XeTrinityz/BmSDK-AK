@@ -89,7 +89,8 @@ public partial class InterpTrackDirector : BmSDK.Engine.InterpTrack, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bResetCameraBehindBatman
+    /// BoolProperty: bResetCameraBehindBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bResetCameraBehindBatman
     {
@@ -98,7 +99,8 @@ public partial class InterpTrackDirector : BmSDK.Engine.InterpTrack, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bKeepBatmanOnScreen
+    /// BoolProperty: bKeepBatmanOnScreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKeepBatmanOnScreen
     {
@@ -116,7 +118,8 @@ public partial class InterpTrackDirector : BmSDK.Engine.InterpTrack, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bResetCameraBehindBatmanOnSkip
+    /// BoolProperty: bResetCameraBehindBatmanOnSkip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bResetCameraBehindBatmanOnSkip
     {
@@ -125,7 +128,8 @@ public partial class InterpTrackDirector : BmSDK.Engine.InterpTrack, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bSimulateCameraCutsOnClients
+    /// BoolProperty: bSimulateCameraCutsOnClients<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSimulateCameraCutsOnClients
     {
@@ -224,7 +228,8 @@ public partial class InterpTrackDirector : BmSDK.Engine.InterpTrack, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: PreviewAspectRatio
+    /// FloatProperty: PreviewAspectRatio<br/>
+    /// Default: 1.777777
     /// </summary>
     public unsafe float PreviewAspectRatio
     {

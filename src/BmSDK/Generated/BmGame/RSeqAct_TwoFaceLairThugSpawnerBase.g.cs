@@ -248,7 +248,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
     }
 
     /// <summary>
-    /// IntProperty: NumLeftForFastSpawning
+    /// IntProperty: NumLeftForFastSpawning<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int NumLeftForFastSpawning
     {
@@ -257,7 +258,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
     }
 
     /// <summary>
-    /// FloatProperty: DelayBetweenSpawns
+    /// FloatProperty: DelayBetweenSpawns<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DelayBetweenSpawns
     {

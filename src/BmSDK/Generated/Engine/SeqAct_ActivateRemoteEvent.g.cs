@@ -101,7 +101,8 @@ public partial class SeqAct_ActivateRemoteEvent : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// NameProperty: EventName
+    /// NameProperty: EventName<br/>
+    /// Default: DefaultEvent
     /// </summary>
     public unsafe BmSDK.FName EventName
     {

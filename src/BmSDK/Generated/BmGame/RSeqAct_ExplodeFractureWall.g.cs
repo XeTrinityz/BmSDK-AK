@@ -108,7 +108,8 @@ public partial class RSeqAct_ExplodeFractureWall : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// BoolProperty: bWantPhysChunksAndParticles
+    /// BoolProperty: bWantPhysChunksAndParticles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWantPhysChunksAndParticles
     {

@@ -79,7 +79,8 @@ public partial class RSideRoomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: LockDuration
+    /// FloatProperty: LockDuration<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float LockDuration
     {

@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_RunningRelativeAnimMove : BmSDK.BmGame.R
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: AnimationLaunchFoot
+    /// ByteProperty: AnimationLaunchFoot<br/>
+    /// Default: RALF_RightFoot
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig_RunningRelativeAnimMove.RelativeAnimLaunchFoot AnimationLaunchFoot
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_RunningRelativeAnimMove : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: AnimDistScale
+    /// FloatProperty: AnimDistScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AnimDistScale
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_RunningRelativeAnimMove : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: FootFastFwdThreshold
+    /// FloatProperty: FootFastFwdThreshold<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float FootFastFwdThreshold
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_RunningRelativeAnimMove : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: FootFastFwdScale
+    /// FloatProperty: FootFastFwdScale<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float FootFastFwdScale
     {
@@ -178,7 +182,8 @@ public partial class RSpecialMoveConfig_RunningRelativeAnimMove : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: CloseAnimAngleThreshold
+    /// FloatProperty: CloseAnimAngleThreshold<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float CloseAnimAngleThreshold
     {

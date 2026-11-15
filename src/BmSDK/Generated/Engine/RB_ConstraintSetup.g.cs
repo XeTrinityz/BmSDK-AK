@@ -85,7 +85,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FLinearDOFSetup
     {
         /// <summary>
-        /// ByteProperty: bLimited
+        /// ByteProperty: bLimited<br/>
+        /// Default: 1
         /// </summary>
         public unsafe byte bLimited
         {
@@ -147,13 +148,15 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 108);
 
     /// <summary>
-    /// StructProperty: PriAxis1
+    /// StructProperty: PriAxis1<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PriAxis1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 120);
 
     /// <summary>
-    /// StructProperty: SecAxis1
+    /// StructProperty: SecAxis1<br/>
+    /// Default: (Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SecAxis1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 132);
@@ -165,13 +168,15 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 144);
 
     /// <summary>
-    /// StructProperty: PriAxis2
+    /// StructProperty: PriAxis2<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PriAxis2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 156);
 
     /// <summary>
-    /// StructProperty: SecAxis2
+    /// StructProperty: SecAxis2<br/>
+    /// Default: (Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SecAxis2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 168);
@@ -198,7 +203,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableCollision
+    /// BoolProperty: bEnableCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableCollision
     {
@@ -315,7 +321,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ProjectionDistance
+    /// FloatProperty: ProjectionDistance<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ProjectionDistance
     {
@@ -324,7 +331,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ProjectionAngle
+    /// FloatProperty: ProjectionAngle<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ProjectionAngle
     {
@@ -333,19 +341,22 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LinearXSetup
+    /// StructProperty: LinearXSetup<br/>
+    /// Default: (bLimited=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup LinearXSetup
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup>(Ptr + 220);
 
     /// <summary>
-    /// StructProperty: LinearYSetup
+    /// StructProperty: LinearYSetup<br/>
+    /// Default: (bLimited=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup LinearYSetup
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup>(Ptr + 228);
 
     /// <summary>
-    /// StructProperty: LinearZSetup
+    /// StructProperty: LinearZSetup<br/>
+    /// Default: (bLimited=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup LinearZSetup
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RB_ConstraintSetup.FLinearDOFSetup>(Ptr + 236);
@@ -369,7 +380,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearBreakThreshold
+    /// FloatProperty: LinearBreakThreshold<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float LinearBreakThreshold
     {
@@ -441,7 +453,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularBreakThreshold
+    /// FloatProperty: AngularBreakThreshold<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AngularBreakThreshold
     {
@@ -450,7 +463,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PulleyRatio
+    /// FloatProperty: PulleyRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PulleyRatio
     {
@@ -459,7 +473,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistance
+    /// FloatProperty: MaxDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxDistance
     {
@@ -468,7 +483,8 @@ public partial class RB_ConstraintSetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinDistance
+    /// FloatProperty: MinDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinDistance
     {

@@ -79,7 +79,8 @@ public partial class DrawSphereComponent : BmSDK.Engine.PrimitiveComponent, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SphereColor
+    /// StructProperty: SphereColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor SphereColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
@@ -94,7 +95,8 @@ public partial class DrawSphereComponent : BmSDK.Engine.PrimitiveComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: SphereRadius
+    /// FloatProperty: SphereRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float SphereRadius
     {
@@ -103,7 +105,8 @@ public partial class DrawSphereComponent : BmSDK.Engine.PrimitiveComponent, BmSD
     }
 
     /// <summary>
-    /// IntProperty: SphereSides
+    /// IntProperty: SphereSides<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int SphereSides
     {
@@ -112,7 +115,8 @@ public partial class DrawSphereComponent : BmSDK.Engine.PrimitiveComponent, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bDrawWireSphere
+    /// BoolProperty: bDrawWireSphere<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawWireSphere
     {

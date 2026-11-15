@@ -2042,7 +2042,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDestroyOnExit
+    /// BoolProperty: bDestroyOnExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestroyOnExit
     {
@@ -2060,7 +2061,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUpdatePlayerMoveTo
+    /// BoolProperty: bUpdatePlayerMoveTo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdatePlayerMoveTo
     {
@@ -2087,7 +2089,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeClearedByBehaviour
+    /// BoolProperty: bCanBeClearedByBehaviour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeClearedByBehaviour
     {
@@ -2105,7 +2108,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowCriticalStrikeTutorial
+    /// BoolProperty: bShowCriticalStrikeTutorial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowCriticalStrikeTutorial
     {
@@ -2123,7 +2127,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCallEnterCombatIfInCombat
+    /// BoolProperty: bCallEnterCombatIfInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCallEnterCombatIfInCombat
     {
@@ -2249,7 +2254,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDualPlayFriendly
+    /// BoolProperty: bDualPlayFriendly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDualPlayFriendly
     {
@@ -2267,7 +2273,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeEffectedByQuickGel
+    /// BoolProperty: bCanBeEffectedByQuickGel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeEffectedByQuickGel
     {
@@ -2342,13 +2349,15 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 732);
 
     /// <summary>
-    /// StructProperty: CameraDOFSettings
+    /// StructProperty: CameraDOFSettings<br/>
+    /// Default: (ApertureStop=0.5,FocusDistance=220,InterpolationDuration=1,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct CameraDOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 744);
 
     /// <summary>
-    /// FloatProperty: DOFBlur
+    /// FloatProperty: DOFBlur<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float DOFBlur
     {
@@ -2357,7 +2366,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: PlayerControllerStateOnExit
+    /// NameProperty: PlayerControllerStateOnExit<br/>
+    /// Default: WalkingMode
     /// </summary>
     public unsafe BmSDK.FName PlayerControllerStateOnExit
     {

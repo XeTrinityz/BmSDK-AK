@@ -166,7 +166,8 @@ public partial class RBMAIAction_Reload : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: AR_Reload
+    /// StructProperty: AR_Reload<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId AR_Reload
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 864);

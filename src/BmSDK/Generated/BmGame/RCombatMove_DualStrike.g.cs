@@ -863,7 +863,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: BuddyStrikeTrail
+    /// ComponentProperty: BuddyStrikeTrail<br/>
+    /// Default: BmGame.Default__RCombatMove_DualStrike.StrikeTrailBaseBuddy
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BuddyStrikeTrail
     {
@@ -872,7 +873,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: InitiatorStrikeTrail
+    /// ComponentProperty: InitiatorStrikeTrail<br/>
+    /// Default: BmGame.Default__RCombatMove_DualStrike.StrikeTrailBaseInitiator
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent InitiatorStrikeTrail
     {
@@ -881,7 +883,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// ClassProperty: StrikeDmgType
+    /// ClassProperty: StrikeDmgType<br/>
+    /// Default: BmGame.RDmgType_HeavyStrike
     /// </summary>
     public unsafe BmSDK.Class StrikeDmgType
     {
@@ -962,7 +965,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: YawTolerance
+    /// IntProperty: YawTolerance<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int YawTolerance
     {
@@ -971,7 +975,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: StandByTime
+    /// FloatProperty: StandByTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StandByTime
     {
@@ -1034,7 +1039,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinIntoAnimDist
+    /// FloatProperty: MinIntoAnimDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MinIntoAnimDist
     {
@@ -1043,7 +1049,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxIntoAnimDist
+    /// FloatProperty: MaxIntoAnimDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxIntoAnimDist
     {
@@ -1052,7 +1059,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinDurationScale
+    /// FloatProperty: MinDurationScale<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MinDurationScale
     {
@@ -1061,7 +1069,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxDurationScale
+    /// FloatProperty: MaxDurationScale<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float MaxDurationScale
     {
@@ -1070,7 +1079,8 @@ public partial class RCombatMove_DualStrike : BmSDK.BmGame.RCombatMove, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 968);

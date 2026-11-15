@@ -88,7 +88,8 @@ public partial class RockDecalCollectionActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: MaxRockDecalComponents
+    /// IntProperty: MaxRockDecalComponents<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int MaxRockDecalComponents
     {

@@ -871,7 +871,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: CollisionCheckExtent
+    /// StructProperty: CollisionCheckExtent<br/>
+    /// Default: (X=50,Y=50,Z=150)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CollisionCheckExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1080);
@@ -1003,7 +1004,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: KilledByExcavator
+    /// ObjectProperty: KilledByExcavator<br/>
+    /// Default: BmScript.Default__RRedHoodExcavator.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform KilledByExcavator
     {
@@ -1012,7 +1014,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ExcavatorSearching
+    /// ObjectProperty: ExcavatorSearching<br/>
+    /// Default: BmScript.Default__RRedHoodExcavator.ForceFeedbackWaveform2
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExcavatorSearching
     {
@@ -1021,7 +1024,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ExcavatorChasing
+    /// ObjectProperty: ExcavatorChasing<br/>
+    /// Default: BmScript.Default__RRedHoodExcavator.ForceFeedbackWaveform3
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExcavatorChasing
     {
@@ -1030,7 +1034,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ExcavatorIdling
+    /// ObjectProperty: ExcavatorIdling<br/>
+    /// Default: BmScript.Default__RRedHoodExcavator.ForceFeedbackWaveform4
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExcavatorIdling
     {
@@ -1039,7 +1044,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: ReturnToMaze
+    /// ObjectProperty: ReturnToMaze<br/>
+    /// Default: BmScript.Default__RRedHoodExcavator.ForceFeedbackWaveform5
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ReturnToMaze
     {
@@ -1423,7 +1429,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: IntroAcceleration
+    /// FloatProperty: IntroAcceleration<br/>
+    /// Default: 1800
     /// </summary>
     public unsafe float IntroAcceleration
     {
@@ -1558,7 +1565,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: AlwaysShowOnRadar
+    /// BoolProperty: AlwaysShowOnRadar<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlwaysShowOnRadar
     {
@@ -1801,7 +1809,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SearchingSightRange
+    /// FloatProperty: SearchingSightRange<br/>
+    /// Default: 8200
     /// </summary>
     public unsafe float SearchingSightRange
     {
@@ -1819,7 +1828,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: HeavyCannonSearchDist
+    /// FloatProperty: HeavyCannonSearchDist<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float HeavyCannonSearchDist
     {
@@ -1846,7 +1856,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillMoreAggressiveSearching
+    /// FloatProperty: TimeTillMoreAggressiveSearching<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float TimeTillMoreAggressiveSearching
     {
@@ -1936,7 +1947,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TurnSpeedOffscreen
+    /// FloatProperty: TurnSpeedOffscreen<br/>
+    /// Default: 90000
     /// </summary>
     public unsafe float TurnSpeedOffscreen
     {
@@ -1972,7 +1984,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MazeMaxTurnSpeed
+    /// FloatProperty: MazeMaxTurnSpeed<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float MazeMaxTurnSpeed
     {
@@ -2035,7 +2048,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1796);
 
     /// <summary>
-    /// FloatProperty: AlightRotSpeed
+    /// FloatProperty: AlightRotSpeed<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float AlightRotSpeed
     {
@@ -2044,7 +2058,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AlightHeightSpeed
+    /// FloatProperty: AlightHeightSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float AlightHeightSpeed
     {
@@ -2077,7 +2092,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxSeismicDist
+    /// FloatProperty: MaxSeismicDist<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float MaxSeismicDist
     {
@@ -2149,31 +2165,36 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: SafeLightColour
+    /// StructProperty: SafeLightColour<br/>
+    /// Default: (B=100,G=100,R=100)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor SafeLightColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1868);
 
     /// <summary>
-    /// StructProperty: ChargeLightColour
+    /// StructProperty: ChargeLightColour<br/>
+    /// Default: (B=80,G=80,R=150)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ChargeLightColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1872);
 
     /// <summary>
-    /// StructProperty: SafeLightMatColour
+    /// StructProperty: SafeLightMatColour<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SafeLightMatColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1876);
 
     /// <summary>
-    /// StructProperty: ChargeLightMatColour
+    /// StructProperty: ChargeLightMatColour<br/>
+    /// Default: (R=5,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ChargeLightMatColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1892);
 
     /// <summary>
-    /// FloatProperty: DPropDestroyDist
+    /// FloatProperty: DPropDestroyDist<br/>
+    /// Default: 750000
     /// </summary>
     public unsafe float DPropDestroyDist
     {
@@ -2200,7 +2221,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxChaseCamDist
+    /// FloatProperty: MaxChaseCamDist<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float MaxChaseCamDist
     {
@@ -2209,7 +2231,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MinChaseCamBatmanSpeed
+    /// FloatProperty: MinChaseCamBatmanSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinChaseCamBatmanSpeed
     {
@@ -2218,7 +2241,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: CameraRotation
+    /// StructProperty: CameraRotation<br/>
+    /// Default: (Pitch=-5000)
     /// </summary>
     public unsafe ref BmSDK.Rotator CameraRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1936);
@@ -2230,7 +2254,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1948);
 
     /// <summary>
-    /// FloatProperty: CameraRotLerpValue
+    /// FloatProperty: CameraRotLerpValue<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float CameraRotLerpValue
     {
@@ -2239,7 +2264,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CameraLocLerpValue
+    /// FloatProperty: CameraLocLerpValue<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float CameraLocLerpValue
     {
@@ -2275,7 +2301,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PitchChangeByDistDiff
+    /// FloatProperty: PitchChangeByDistDiff<br/>
+    /// Default: -8000
     /// </summary>
     public unsafe float PitchChangeByDistDiff
     {
@@ -2323,7 +2350,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: SavedEndingTunnelWallIndex
+    /// IntProperty: SavedEndingTunnelWallIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SavedEndingTunnelWallIndex
     {
@@ -2332,7 +2360,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BMHitMomentum
+    /// FloatProperty: BMHitMomentum<br/>
+    /// Default: 50000
     /// </summary>
     public unsafe float BMHitMomentum
     {
@@ -2356,7 +2385,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2032);
 
     /// <summary>
-    /// FloatProperty: BatmobileSparkDist
+    /// FloatProperty: BatmobileSparkDist<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float BatmobileSparkDist
     {
@@ -2365,7 +2395,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SparkTimeBetween
+    /// FloatProperty: SparkTimeBetween<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SparkTimeBetween
     {
@@ -2404,13 +2435,15 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: ProximityScreenShake
+    /// StructProperty: ProximityScreenShake<br/>
+    /// Default: (TimeDuration=0.1,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ProximityScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2084);
 
     /// <summary>
-    /// FloatProperty: ProximityShakeDistanceMod
+    /// FloatProperty: ProximityShakeDistanceMod<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float ProximityShakeDistanceMod
     {
@@ -2419,7 +2452,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ProximityShakeMultiplierMod
+    /// FloatProperty: ProximityShakeMultiplierMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ProximityShakeMultiplierMod
     {
@@ -2443,7 +2477,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2264);
 
     /// <summary>
-    /// IntProperty: LightXSweep
+    /// IntProperty: LightXSweep<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe int LightXSweep
     {
@@ -2452,7 +2487,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: LightYSweep
+    /// IntProperty: LightYSweep<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe int LightYSweep
     {
@@ -2461,7 +2497,8 @@ public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: LightYReducation
+    /// IntProperty: LightYReducation<br/>
+    /// Default: -1500
     /// </summary>
     public unsafe int LightYReducation
     {

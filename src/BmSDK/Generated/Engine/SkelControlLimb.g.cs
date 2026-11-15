@@ -112,7 +112,8 @@ public partial class SkelControlLimb : BmSDK.Engine.SkelControlBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ByteProperty: BoneAxis
+    /// ByteProperty: BoneAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis BoneAxis
     {
@@ -121,7 +122,8 @@ public partial class SkelControlLimb : BmSDK.Engine.SkelControlBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ByteProperty: JointAxis
+    /// ByteProperty: JointAxis<br/>
+    /// Default: AXIS_Y
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis JointAxis
     {
@@ -223,7 +225,8 @@ public partial class SkelControlLimb : BmSDK.Engine.SkelControlBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: StretchLimits
+    /// StructProperty: StretchLimits<br/>
+    /// Default: (X=0.71,Y=1.2)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 StretchLimits
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 320);

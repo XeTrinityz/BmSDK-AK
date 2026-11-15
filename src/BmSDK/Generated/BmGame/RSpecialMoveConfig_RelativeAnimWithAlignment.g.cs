@@ -88,7 +88,8 @@ public partial class RSpecialMoveConfig_RelativeAnimWithAlignment : BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: AnimationStartRadius
+    /// FloatProperty: AnimationStartRadius<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float AnimationStartRadius
     {

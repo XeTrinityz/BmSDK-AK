@@ -106,7 +106,8 @@ public partial class RSeqAct_GFxMovieGCPDCount : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: TheGFxMovieInstance
+    /// ObjectProperty: TheGFxMovieInstance<br/>
+    /// Default: GCPDBoard.GCPD_Counter
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheGFxMovieInstance
     {

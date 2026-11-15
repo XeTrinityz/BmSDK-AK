@@ -449,7 +449,8 @@ public partial class RGFxMovieVideoSurveillanceDumb : BmSDK.BmGame.RGFxWorldMovi
     }
 
     /// <summary>
-    /// BoolProperty: HasFourCameras
+    /// BoolProperty: HasFourCameras<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasFourCameras
     {

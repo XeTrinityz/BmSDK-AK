@@ -680,7 +680,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: TriggerCompletedIfSkipped
+    /// BoolProperty: TriggerCompletedIfSkipped<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TriggerCompletedIfSkipped
     {
@@ -725,7 +726,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: UseMasterSyncTrackIfAvailable
+    /// BoolProperty: UseMasterSyncTrackIfAvailable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseMasterSyncTrackIfAvailable
     {
@@ -815,7 +817,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: PlayRate
+    /// FloatProperty: PlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PlayRate
     {
@@ -824,7 +827,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: MovementMultiplier
+    /// FloatProperty: MovementMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MovementMultiplier
     {
@@ -1094,13 +1098,15 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: RenderingOverrides
+    /// StructProperty: RenderingOverrides<br/>
+    /// Default: (bAllowAmbientOcclusion=true,bAllowDominantWholeSceneDynamicShadows=true,bAllowMotionBlurSkinning=true,bAllowTemporalAA=true,bAllowLightShafts=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides RenderingOverrides
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineBaseTypes.FRenderingPerformanceOverrides>(Ptr + 808);
 
     /// <summary>
-    /// FloatProperty: ConstantCameraAnimRate
+    /// FloatProperty: ConstantCameraAnimRate<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ConstantCameraAnimRate
     {

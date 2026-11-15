@@ -294,7 +294,8 @@ public partial class RSeqAct_MovePlayer : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MoveSpeedModifier
+    /// FloatProperty: MoveSpeedModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MoveSpeedModifier
     {

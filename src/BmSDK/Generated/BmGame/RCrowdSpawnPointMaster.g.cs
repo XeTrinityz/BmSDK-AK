@@ -97,7 +97,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinDistBetweenPoints
+    /// FloatProperty: MinDistBetweenPoints<br/>
+    /// Default: 230
     /// </summary>
     public unsafe float MinDistBetweenPoints
     {
@@ -106,7 +107,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistBetweenPoints
+    /// FloatProperty: MaxDistBetweenPoints<br/>
+    /// Default: 280
     /// </summary>
     public unsafe float MaxDistBetweenPoints
     {
@@ -133,7 +135,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: NumPerGroupMin
+    /// IntProperty: NumPerGroupMin<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumPerGroupMin
     {
@@ -142,7 +145,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: NumPerGroupMax
+    /// IntProperty: NumPerGroupMax<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int NumPerGroupMax
     {
@@ -151,7 +155,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: GroupSeperationDist
+    /// IntProperty: GroupSeperationDist<br/>
+    /// Default: 75
     /// </summary>
     public unsafe int GroupSeperationDist
     {
@@ -160,7 +165,8 @@ public partial class RCrowdSpawnPointMaster : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: GroupSeperationDistVariance
+    /// IntProperty: GroupSeperationDistVariance<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int GroupSeperationDistVariance
     {

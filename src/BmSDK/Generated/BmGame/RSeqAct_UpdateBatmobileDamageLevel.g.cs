@@ -169,7 +169,8 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     }
 
     /// <summary>
-    /// NameProperty: PlayerBatmobileName
+    /// NameProperty: PlayerBatmobileName<br/>
+    /// Default: Playable_Batmobile
     /// </summary>
     public unsafe BmSDK.FName PlayerBatmobileName
     {
@@ -187,7 +188,8 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     }
 
     /// <summary>
-    /// IntProperty: LoadSlot
+    /// IntProperty: LoadSlot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LoadSlot
     {

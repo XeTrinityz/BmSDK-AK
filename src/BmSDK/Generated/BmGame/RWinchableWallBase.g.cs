@@ -563,7 +563,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmGame.Default__RWinchableWallBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -590,7 +591,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageRate
+    /// FloatProperty: DamageRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageRate
     {
@@ -599,7 +601,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DamageMax
+    /// FloatProperty: DamageMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageMax
     {
@@ -842,7 +845,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxWinchAngle
+    /// FloatProperty: MaxWinchAngle<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MaxWinchAngle
     {
@@ -851,7 +855,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DestroyDelay
+    /// FloatProperty: DestroyDelay<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float DestroyDelay
     {

@@ -153,7 +153,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: LandSpeed
+    /// FloatProperty: LandSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float LandSpeed
     {
@@ -162,7 +163,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: JumpSpeed
+    /// FloatProperty: JumpSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float JumpSpeed
     {
@@ -171,7 +173,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MoveTime
+    /// FloatProperty: MoveTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float MoveTime
     {
@@ -180,7 +183,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MoveSpeed
+    /// FloatProperty: MoveSpeed<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MoveSpeed
     {
@@ -189,7 +193,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: StartAngle
+    /// FloatProperty: StartAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float StartAngle
     {
@@ -198,7 +203,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: EndAngle
+    /// FloatProperty: EndAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float EndAngle
     {
@@ -207,7 +213,8 @@ public partial class RVantagePointMovementCamera : BmSDK.BmGame.RCameraActor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: SwingDistance
+    /// FloatProperty: SwingDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SwingDistance
     {

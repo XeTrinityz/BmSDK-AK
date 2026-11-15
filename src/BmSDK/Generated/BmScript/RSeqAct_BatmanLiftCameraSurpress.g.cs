@@ -116,7 +116,8 @@ public partial class RSeqAct_BatmanLiftCameraSurpress : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: StartTimer
+    /// FloatProperty: StartTimer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float StartTimer
     {

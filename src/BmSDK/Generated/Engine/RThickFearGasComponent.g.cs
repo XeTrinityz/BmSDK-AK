@@ -85,7 +85,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
     public partial record struct FThickFearGasSettings
     {
         /// <summary>
-        /// StructProperty: fearGasDiffuseColor
+        /// StructProperty: fearGasDiffuseColor<br/>
+        /// Default: (R=0.6,G=0.2,B=0.0075,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor fearGasDiffuseColor
         {
@@ -94,7 +95,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
         }
 
         /// <summary>
-        /// FloatProperty: InsideDensity
+        /// FloatProperty: InsideDensity<br/>
+        /// Default: 0.0025
         /// </summary>
         public unsafe float InsideDensity
         {
@@ -103,7 +105,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
         }
 
         /// <summary>
-        /// FloatProperty: OutsideDensity
+        /// FloatProperty: OutsideDensity<br/>
+        /// Default: 0.01
         /// </summary>
         public unsafe float OutsideDensity
         {
@@ -112,7 +115,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
         }
 
         /// <summary>
-        /// FloatProperty: LightingAmount
+        /// FloatProperty: LightingAmount<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float LightingAmount
         {
@@ -131,7 +135,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
     }
 
     /// <summary>
-    /// ObjectProperty: LightMap
+    /// ObjectProperty: LightMap<br/>
+    /// Default: City_FogDensity.City_fogLods_FogLightmap
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D LightMap
     {
@@ -146,7 +151,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 556);
 
     /// <summary>
-    /// FloatProperty: activeDensityMod
+    /// FloatProperty: activeDensityMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float activeDensityMod
     {
@@ -155,7 +161,8 @@ public partial class RThickFearGasComponent : BmSDK.Engine.PrimitiveComponent, B
     }
 
     /// <summary>
-    /// StructProperty: ThickFearGas
+    /// StructProperty: ThickFearGas<br/>
+    /// Default: (fearGasDiffuseColor=(R=0.6,G=0.2,B=0.0075,A=1),InsideDensity=0.0025,OutsideDensity=0.01,LightingAmount=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RThickFearGasComponent.FThickFearGasSettings ThickFearGas
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RThickFearGasComponent.FThickFearGasSettings>(Ptr + 572);

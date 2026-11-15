@@ -501,7 +501,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EmissiveBoost
+        /// FloatProperty: EmissiveBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float EmissiveBoost
         {
@@ -510,7 +511,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DiffuseBoost
+        /// FloatProperty: DiffuseBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DiffuseBoost
         {
@@ -519,7 +521,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SpecularBoost
+        /// FloatProperty: SpecularBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpecularBoost
         {
@@ -528,7 +531,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ExportResolutionScale
+        /// FloatProperty: ExportResolutionScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ExportResolutionScale
         {
@@ -537,7 +541,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DistanceFieldPenumbraScale
+        /// FloatProperty: DistanceFieldPenumbraScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DistanceFieldPenumbraScale
         {

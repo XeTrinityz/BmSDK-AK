@@ -302,7 +302,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RBatmobileMissile.RocketTrail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {
@@ -311,7 +312,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RBatmobileMissile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent Mesh
     {
@@ -365,7 +367,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: HomingDelay
+    /// FloatProperty: HomingDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float HomingDelay
     {
@@ -374,7 +377,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: AccelRate
+    /// FloatProperty: AccelRate<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float AccelRate
     {
@@ -389,7 +393,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1068);
 
     /// <summary>
-    /// FloatProperty: VelZ
+    /// FloatProperty: VelZ<br/>
+    /// Default: -1200
     /// </summary>
     public unsafe float VelZ
     {
@@ -398,7 +403,8 @@ public partial class RBatmobileMissile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ForceExplodeProxDist
+    /// FloatProperty: ForceExplodeProxDist<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ForceExplodeProxDist
     {

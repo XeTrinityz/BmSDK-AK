@@ -123,7 +123,8 @@ public partial class HeightFog : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Component
+    /// ComponentProperty: Component<br/>
+    /// Default: Engine.Default__HeightFog.HeightFogComponent0
     /// </summary>
     public unsafe BmSDK.Engine.HeightFogComponent Component
     {

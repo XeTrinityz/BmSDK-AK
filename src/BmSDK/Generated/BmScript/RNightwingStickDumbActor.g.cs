@@ -93,7 +93,8 @@ public partial class RNightwingStickDumbActor : BmSDK.BmScript.RSkeletalMeshActo
     }
 
     /// <summary>
-    /// ComponentProperty: MeshComp
+    /// ComponentProperty: MeshComp<br/>
+    /// Default: BmScript.Default__RNightwingStickDumbActor.Mesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshComp
     {
@@ -102,7 +103,8 @@ public partial class RNightwingStickDumbActor : BmSDK.BmScript.RSkeletalMeshActo
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmScript.Default__RNightwingStickDumbActor.Trail1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {

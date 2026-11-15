@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_AnimMove : BmSDK.BmGame.RSpecialMoveConf
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MoveBlendOutTime
+    /// FloatProperty: MoveBlendOutTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MoveBlendOutTime
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_AnimMove : BmSDK.BmGame.RSpecialMoveConf
     }
 
     /// <summary>
-    /// FloatProperty: MoveBlendInTime
+    /// FloatProperty: MoveBlendInTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MoveBlendInTime
     {
@@ -115,7 +117,8 @@ public partial class RSpecialMoveConfig_AnimMove : BmSDK.BmGame.RSpecialMoveConf
     }
 
     /// <summary>
-    /// BoolProperty: bAlignRoot
+    /// BoolProperty: bAlignRoot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignRoot
     {
@@ -124,7 +127,8 @@ public partial class RSpecialMoveConfig_AnimMove : BmSDK.BmGame.RSpecialMoveConf
     }
 
     /// <summary>
-    /// BoolProperty: bTurnOffCollision
+    /// BoolProperty: bTurnOffCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTurnOffCollision
     {

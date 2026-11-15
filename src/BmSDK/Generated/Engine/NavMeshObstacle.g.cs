@@ -338,7 +338,8 @@ public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interfac
     }
 
     /// <summary>
-    /// BoolProperty: bSnapToGround
+    /// BoolProperty: bSnapToGround<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSnapToGround
     {

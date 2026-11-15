@@ -124,7 +124,8 @@ public partial class RSeqAct_RedHoodEndingAdjuster : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// FloatProperty: EndTime
+    /// FloatProperty: EndTime<br/>
+    /// Default: 1.6
     /// </summary>
     public unsafe float EndTime
     {

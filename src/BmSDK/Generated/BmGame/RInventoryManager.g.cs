@@ -444,22 +444,26 @@ public partial class RInventoryManager : BmSDK.Engine.InventoryManager, BmSDK.IG
     public InlineArray<BmSDK.BmGame.RInventoryManager.FGadgetDirection> AvailableGadgets => new(4, Ptr + 744, 16, this);
 
     /// <summary>
-    /// StructProperty: AvailableGadgets
+    /// StructProperty: AvailableGadgets<br/>
+    /// Default: (SelectableGadgets=(RHarpoonGun))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection AvailableGadgets_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 744);
     /// <summary>
-    /// StructProperty: AvailableGadgets
+    /// StructProperty: AvailableGadgets<br/>
+    /// Default: (SelectableGadgets=(RLineLauncher))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection AvailableGadgets_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 760);
     /// <summary>
-    /// StructProperty: AvailableGadgets
+    /// StructProperty: AvailableGadgets<br/>
+    /// Default: (SelectableGadgets=(RGooSpray))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection AvailableGadgets_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 776);
     /// <summary>
-    /// StructProperty: AvailableGadgets
+    /// StructProperty: AvailableGadgets<br/>
+    /// Default: (SelectableGadgets=(RResonatorTuner))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection AvailableGadgets_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 792);
@@ -470,22 +474,26 @@ public partial class RInventoryManager : BmSDK.Engine.InventoryManager, BmSDK.IG
     public InlineArray<BmSDK.BmGame.RInventoryManager.FGadgetDirection> BatarangGadgets => new(4, Ptr + 808, 16, this);
 
     /// <summary>
-    /// StructProperty: BatarangGadgets
+    /// StructProperty: BatarangGadgets<br/>
+    /// Default: (SelectableGadgets=(RBatarang))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection BatarangGadgets_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 808);
     /// <summary>
-    /// StructProperty: BatarangGadgets
+    /// StructProperty: BatarangGadgets<br/>
+    /// Default: (SelectableGadgets=(RBatarang_Controllable))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection BatarangGadgets_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 824);
     /// <summary>
-    /// StructProperty: BatarangGadgets
+    /// StructProperty: BatarangGadgets<br/>
+    /// Default: (SelectableGadgets=(RMagneticBlast))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection BatarangGadgets_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 840);
     /// <summary>
-    /// StructProperty: BatarangGadgets
+    /// StructProperty: BatarangGadgets<br/>
+    /// Default: (SelectableGadgets=(RFreezeSpray))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInventoryManager.FGadgetDirection BatarangGadgets_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInventoryManager.FGadgetDirection>(Ptr + 856);

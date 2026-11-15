@@ -248,7 +248,8 @@ public partial class RBMCombatThrownObject_BatDestroyed : BmSDK.BmGame.RBMCombat
     }
 
     /// <summary>
-    /// IntProperty: MaxTimesCanBeUsed
+    /// IntProperty: MaxTimesCanBeUsed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxTimesCanBeUsed
     {

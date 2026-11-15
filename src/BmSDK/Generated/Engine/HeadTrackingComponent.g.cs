@@ -140,7 +140,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: TrackControllerName
+    /// ArrayProperty: TrackControllerName<br/>
+    /// Default: (HeadLook,LeftEyeLook,RightEyeLook)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TrackControllerName
     {
@@ -149,7 +150,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LookAtActorRadius
+    /// FloatProperty: LookAtActorRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float LookAtActorRadius
     {
@@ -167,7 +169,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaxLookAtTime
+    /// FloatProperty: MaxLookAtTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MaxLookAtTime
     {
@@ -176,7 +179,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MinLookAtTime
+    /// FloatProperty: MinLookAtTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MinLookAtTime
     {
@@ -185,7 +189,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaxInterestTime
+    /// FloatProperty: MaxInterestTime<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float MaxInterestTime
     {
@@ -203,7 +208,8 @@ public partial class HeadTrackingComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: TargetBoneNames
+    /// ArrayProperty: TargetBoneNames<br/>
+    /// Default: (b_MF_Head,b_MF_Neck)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TargetBoneNames
     {

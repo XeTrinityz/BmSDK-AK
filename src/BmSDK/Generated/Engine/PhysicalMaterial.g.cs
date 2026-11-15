@@ -195,7 +195,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Friction
+    /// FloatProperty: Friction<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float Friction
     {
@@ -204,7 +205,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Restitution
+    /// FloatProperty: Restitution<br/>
+    /// Default: 0.000111
     /// </summary>
     public unsafe float Restitution
     {
@@ -282,7 +284,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SphericalInertiaTensorRadius
+    /// FloatProperty: SphericalInertiaTensorRadius<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float SphericalInertiaTensorRadius
     {
@@ -300,7 +303,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PhysicsSolverIterationCount
+    /// IntProperty: PhysicsSolverIterationCount<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int PhysicsSolverIterationCount
     {
@@ -309,7 +313,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SkinWidthOverride
+    /// FloatProperty: SkinWidthOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SkinWidthOverride
     {
@@ -318,7 +323,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRampUpAngularDamping
+    /// FloatProperty: MaxRampUpAngularDamping<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaxRampUpAngularDamping
     {
@@ -327,7 +333,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearDampingStartProportion
+    /// FloatProperty: LinearDampingStartProportion<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float LinearDampingStartProportion
     {
@@ -336,7 +343,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRampUpLinearDamping
+    /// FloatProperty: MaxRampUpLinearDamping<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MaxRampUpLinearDamping
     {
@@ -345,7 +353,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InertiaTensorScale
+    /// FloatProperty: InertiaTensorScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InertiaTensorScale
     {
@@ -354,7 +363,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Density
+    /// FloatProperty: Density<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Density
     {
@@ -372,7 +382,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearDamping
+    /// FloatProperty: LinearDamping<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float LinearDamping
     {
@@ -408,7 +419,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinImpactEffectSpeed
+    /// FloatProperty: MinImpactEffectSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinImpactEffectSpeed
     {
@@ -417,7 +429,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxImpactEffectSpeed
+    /// FloatProperty: MaxImpactEffectSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxImpactEffectSpeed
     {
@@ -426,7 +439,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactReFireDelay
+    /// FloatProperty: ImpactReFireDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ImpactReFireDelay
     {
@@ -633,13 +647,15 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PhysicsSound
+    /// StructProperty: PhysicsSound<br/>
+    /// Default: (InstantaneousActivationDelay=0.1,InstantaneousVelocityThreshold=1,InstantaneousVelocityAssuredThreshold=100,InstantaneousProbability=0.25,ContinuousMonitorWindowDuration=0.2,ContinuousMinimumLoopDura...
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkPhysInfo PhysicsSound
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkPhysInfo>(Ptr + 368);
 
     /// <summary>
-    /// FloatProperty: MinSlideEffectSpeed
+    /// FloatProperty: MinSlideEffectSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinSlideEffectSpeed
     {
@@ -648,7 +664,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxSlideEffectSpeed
+    /// FloatProperty: MaxSlideEffectSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxSlideEffectSpeed
     {
@@ -657,7 +674,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SlideReFireDelay
+    /// FloatProperty: SlideReFireDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SlideReFireDelay
     {
@@ -666,7 +684,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurfaceRainSoundNearRadius
+    /// FloatProperty: SurfaceRainSoundNearRadius<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float SurfaceRainSoundNearRadius
     {
@@ -675,7 +694,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurfaceRainSoundMidLoRadius
+    /// FloatProperty: SurfaceRainSoundMidLoRadius<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float SurfaceRainSoundMidLoRadius
     {
@@ -684,7 +704,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurfaceRainSoundMidHiRadius
+    /// FloatProperty: SurfaceRainSoundMidHiRadius<br/>
+    /// Default: 24
     /// </summary>
     public unsafe float SurfaceRainSoundMidHiRadius
     {
@@ -693,7 +714,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SurfaceRainSoundFarRadius
+    /// FloatProperty: SurfaceRainSoundFarRadius<br/>
+    /// Default: 18
     /// </summary>
     public unsafe float SurfaceRainSoundFarRadius
     {
@@ -702,7 +724,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: SoundPropagationInfo
+    /// StructProperty: SoundPropagationInfo<br/>
+    /// Default: (ObstructionFactor=1,OcclusionFactor=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkPropagationMaterial SoundPropagationInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkPropagationMaterial>(Ptr + 476);
@@ -726,13 +749,15 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DebugColor
+    /// StructProperty: DebugColor<br/>
+    /// Default: (B=255,G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DebugColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 492);
 
     /// <summary>
-    /// FloatProperty: DrivableMudTrailLength
+    /// FloatProperty: DrivableMudTrailLength<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DrivableMudTrailLength
     {
@@ -741,7 +766,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrivableWaterWetness
+    /// FloatProperty: DrivableWaterWetness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DrivableWaterWetness
     {

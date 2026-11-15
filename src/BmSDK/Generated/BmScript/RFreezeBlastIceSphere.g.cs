@@ -145,7 +145,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultFogMaterial
+    /// ObjectProperty: DefaultFogMaterial<br/>
+    /// Default: VFX_Gadgets.FreezeBlast.Freeze_PowderEffect_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant DefaultFogMaterial
     {
@@ -163,7 +164,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// FloatProperty: MaxIceRadius
+    /// FloatProperty: MaxIceRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MaxIceRadius
     {
@@ -172,7 +174,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// FloatProperty: MinIceRadius
+    /// FloatProperty: MinIceRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float MinIceRadius
     {
@@ -181,7 +184,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// FloatProperty: MaxIceDensity
+    /// FloatProperty: MaxIceDensity<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float MaxIceDensity
     {
@@ -190,7 +194,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// FloatProperty: IceFogDuration
+    /// FloatProperty: IceFogDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float IceFogDuration
     {
@@ -208,7 +213,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// BoolProperty: bActivateAutomatically
+    /// BoolProperty: bActivateAutomatically<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActivateAutomatically
     {
@@ -217,7 +223,8 @@ public partial class RFreezeBlastIceSphere : BmSDK.Engine.FogVolumeSphericalDens
     }
 
     /// <summary>
-    /// BoolProperty: bDestroyOnDeactivate
+    /// BoolProperty: bDestroyOnDeactivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestroyOnDeactivate
     {

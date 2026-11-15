@@ -124,7 +124,8 @@ public partial class RSeqAct_UnlockChallenge : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: MessageThePlayer
+    /// BoolProperty: MessageThePlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MessageThePlayer
     {
@@ -133,7 +134,8 @@ public partial class RSeqAct_UnlockChallenge : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: EnablePrerequisite
+    /// BoolProperty: EnablePrerequisite<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnablePrerequisite
     {
@@ -142,7 +144,8 @@ public partial class RSeqAct_UnlockChallenge : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// IntProperty: MaxMessageCount
+    /// IntProperty: MaxMessageCount<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxMessageCount
     {
@@ -151,7 +154,8 @@ public partial class RSeqAct_UnlockChallenge : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// IntProperty: DisplaySeconds
+    /// IntProperty: DisplaySeconds<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int DisplaySeconds
     {

@@ -83,7 +83,8 @@ public partial class ActorFactoryDynamicSM : BmSDK.Engine.ActorFactory, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: DrawScale3D
+    /// StructProperty: DrawScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrawScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);
@@ -134,7 +135,8 @@ public partial class ActorFactoryDynamicSM : BmSDK.Engine.ActorFactory, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCastDynamicShadow
+    /// BoolProperty: bCastDynamicShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastDynamicShadow
     {
@@ -143,7 +145,8 @@ public partial class ActorFactoryDynamicSM : BmSDK.Engine.ActorFactory, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: CollisionType
+    /// ByteProperty: CollisionType<br/>
+    /// Default: COLLIDE_NoCollision
     /// </summary>
     public unsafe BmSDK.Engine.Actor.ECollisionType CollisionType
     {

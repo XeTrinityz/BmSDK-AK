@@ -236,7 +236,8 @@ public partial class RSeqAct_AKAmbushInTunnelController : BmSDK.Engine.SeqAct_La
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 436);
 
     /// <summary>
-    /// NameProperty: ThugEndPose
+    /// NameProperty: ThugEndPose<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName ThugEndPose
     {

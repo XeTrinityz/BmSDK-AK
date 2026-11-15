@@ -214,7 +214,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: BatmanCanUse
+    /// BoolProperty: BatmanCanUse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BatmanCanUse
     {
@@ -241,7 +242,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: EscapePoint
+    /// BoolProperty: EscapePoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EscapePoint
     {
@@ -265,7 +267,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: InteractionList
+    /// ComponentProperty: InteractionList<br/>
+    /// Default: BmGame.Default__RCornerWallMarkerBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractionList
     {
@@ -301,7 +304,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: BatmanCornerType
+    /// ByteProperty: BatmanCornerType<br/>
+    /// Default: BCC_NoCorner
     /// </summary>
     public unsafe BmSDK.BmGame.REnvironmentCheckTicker.BatmanCoverCorners BatmanCornerType
     {

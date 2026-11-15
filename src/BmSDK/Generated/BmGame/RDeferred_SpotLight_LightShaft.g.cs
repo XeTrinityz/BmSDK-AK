@@ -94,7 +94,8 @@ public partial class RDeferred_SpotLight_LightShaft : BmSDK.BmGame.RDeferred_Spo
     }
 
     /// <summary>
-    /// ComponentProperty: LightShaft
+    /// ComponentProperty: LightShaft<br/>
+    /// Default: BmGame.Default__RDeferred_SpotLight_LightShaft.Shaft
     /// </summary>
     public unsafe BmSDK.Engine.RLightShaftVolumeComponent LightShaft
     {

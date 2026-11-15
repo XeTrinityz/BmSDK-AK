@@ -88,7 +88,8 @@ public partial class MaterialExpressionTextureCoordinate : BmSDK.Engine.Material
     }
 
     /// <summary>
-    /// FloatProperty: UTiling
+    /// FloatProperty: UTiling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UTiling
     {
@@ -97,7 +98,8 @@ public partial class MaterialExpressionTextureCoordinate : BmSDK.Engine.Material
     }
 
     /// <summary>
-    /// FloatProperty: VTiling
+    /// FloatProperty: VTiling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VTiling
     {

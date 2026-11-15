@@ -487,7 +487,8 @@ public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RHarpoonDragPhysicsBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -496,7 +497,8 @@ public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: MaximumDragSpeed
+    /// FloatProperty: MaximumDragSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MaximumDragSpeed
     {

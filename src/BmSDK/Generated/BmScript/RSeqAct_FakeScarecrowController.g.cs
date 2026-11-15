@@ -207,7 +207,8 @@ public partial class RSeqAct_FakeScarecrowController : BmSDK.BmGame.RSeqAct_Comb
     }
 
     /// <summary>
-    /// FloatProperty: WalkSpeedMultiplier
+    /// FloatProperty: WalkSpeedMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float WalkSpeedMultiplier
     {
@@ -243,7 +244,8 @@ public partial class RSeqAct_FakeScarecrowController : BmSDK.BmGame.RSeqAct_Comb
     }
 
     /// <summary>
-    /// ObjectProperty: GreenEyeMat
+    /// ObjectProperty: GreenEyeMat<br/>
+    /// Default: Batman_BM3_Materials.Materials.Batman_BM3_eye_JK_Hallucination
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant GreenEyeMat
     {
@@ -279,7 +281,8 @@ public partial class RSeqAct_FakeScarecrowController : BmSDK.BmGame.RSeqAct_Comb
     }
 
     /// <summary>
-    /// FloatProperty: MoveSpeedDropMaxDist
+    /// FloatProperty: MoveSpeedDropMaxDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MoveSpeedDropMaxDist
     {

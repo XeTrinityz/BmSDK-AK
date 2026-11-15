@@ -355,7 +355,8 @@ public partial class RFakeLockedDoor : BmSDK.Engine.Actor, BmSDK.BmGame.RInterac
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

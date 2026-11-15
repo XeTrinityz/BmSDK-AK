@@ -119,7 +119,8 @@ public partial class NxForceField : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bForceActive
+    /// BoolProperty: bForceActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceActive
     {
@@ -128,13 +129,15 @@ public partial class NxForceField : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 676);
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {

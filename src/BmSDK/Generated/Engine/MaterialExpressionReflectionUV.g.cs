@@ -79,7 +79,8 @@ public partial class MaterialExpressionReflectionUV : BmSDK.Engine.MaterialExpre
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: MaskTexture
+    /// ObjectProperty: MaskTexture<br/>
+    /// Default: VFX_LensFlares.Textures.LensFlare_Reflection_Blur1
     /// </summary>
     public unsafe BmSDK.Engine.Texture MaskTexture
     {
@@ -106,7 +107,8 @@ public partial class MaterialExpressionReflectionUV : BmSDK.Engine.MaterialExpre
     }
 
     /// <summary>
-    /// FloatProperty: NormalWeight
+    /// FloatProperty: NormalWeight<br/>
+    /// Default: -0.1
     /// </summary>
     public unsafe float NormalWeight
     {

@@ -79,7 +79,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: GridShapeRadius
+    /// FloatProperty: GridShapeRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float GridShapeRadius
     {
@@ -88,7 +89,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: GridShapeHeight
+    /// FloatProperty: GridShapeHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float GridShapeHeight
     {
@@ -97,7 +99,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: GridBoundaryFadePercentage
+    /// FloatProperty: GridBoundaryFadePercentage<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float GridBoundaryFadePercentage
     {
@@ -106,7 +109,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FieldStrength
+    /// FloatProperty: FieldStrength<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float FieldStrength
     {
@@ -115,7 +119,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -124,13 +129,15 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 164);
 
     /// <summary>
-    /// ByteProperty: CollisionChannel
+    /// ByteProperty: CollisionChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel
     {
@@ -148,7 +155,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: NoiseSpaceScale
+    /// FloatProperty: NoiseSpaceScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NoiseSpaceScale
     {
@@ -157,7 +165,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTimeScale
+    /// FloatProperty: NoiseTimeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NoiseTimeScale
     {
@@ -166,7 +175,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: NoiseOctaves
+    /// IntProperty: NoiseOctaves<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoiseOctaves
     {
@@ -211,7 +221,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FieldSize
+    /// FloatProperty: FieldSize<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FieldSize
     {
@@ -220,7 +231,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FieldNearRatio
+    /// FloatProperty: FieldNearRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FieldNearRatio
     {
@@ -229,7 +241,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FieldFarRatio
+    /// FloatProperty: FieldFarRatio<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float FieldFarRatio
     {
@@ -247,7 +260,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DirectionalStretch
+    /// FloatProperty: DirectionalStretch<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DirectionalStretch
     {
@@ -256,7 +270,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: AverageStartRatio
+    /// FloatProperty: AverageStartRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AverageStartRatio
     {
@@ -265,7 +280,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: AverageEndRatio
+    /// FloatProperty: AverageEndRatio<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AverageEndRatio
     {
@@ -274,7 +290,8 @@ public partial class ActorFactoryApexJet : BmSDK.Engine.ActorFactory, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {

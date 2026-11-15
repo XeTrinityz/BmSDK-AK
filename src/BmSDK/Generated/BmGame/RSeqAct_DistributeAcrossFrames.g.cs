@@ -88,7 +88,8 @@ public partial class RSeqAct_DistributeAcrossFrames : BmSDK.Engine.SeqAct_Latent
     }
 
     /// <summary>
-    /// IntProperty: LinkCount
+    /// IntProperty: LinkCount<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int LinkCount
     {

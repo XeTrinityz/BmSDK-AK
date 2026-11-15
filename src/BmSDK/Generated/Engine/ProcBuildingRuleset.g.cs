@@ -202,7 +202,8 @@ public partial class ProcBuildingRuleset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableInteriorTexture
+    /// BoolProperty: bEnableInteriorTexture<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableInteriorTexture
     {
@@ -283,7 +284,8 @@ public partial class ProcBuildingRuleset : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BuildingLODSpecular
+    /// FloatProperty: BuildingLODSpecular<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BuildingLODSpecular
     {

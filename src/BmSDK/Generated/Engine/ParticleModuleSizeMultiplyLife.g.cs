@@ -79,13 +79,15 @@ public partial class ParticleModuleSizeMultiplyLife : BmSDK.Engine.ParticleModul
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: LifeMultiplier
+    /// StructProperty: LifeMultiplier<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleSizeMultiplyLife.DistributionLifeMultiplier,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector LifeMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// BoolProperty: MultiplyX
+    /// BoolProperty: MultiplyX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MultiplyX
     {
@@ -94,7 +96,8 @@ public partial class ParticleModuleSizeMultiplyLife : BmSDK.Engine.ParticleModul
     }
 
     /// <summary>
-    /// BoolProperty: MultiplyY
+    /// BoolProperty: MultiplyY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MultiplyY
     {
@@ -103,7 +106,8 @@ public partial class ParticleModuleSizeMultiplyLife : BmSDK.Engine.ParticleModul
     }
 
     /// <summary>
-    /// BoolProperty: MultiplyZ
+    /// BoolProperty: MultiplyZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MultiplyZ
     {

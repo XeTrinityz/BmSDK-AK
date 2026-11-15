@@ -101,7 +101,8 @@ public partial class HeightFogComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -119,7 +120,8 @@ public partial class HeightFogComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: Density
+    /// FloatProperty: Density<br/>
+    /// Default: 5e-05
     /// </summary>
     public unsafe float Density
     {
@@ -128,7 +130,8 @@ public partial class HeightFogComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LightBrightness
+    /// FloatProperty: LightBrightness<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float LightBrightness
     {
@@ -137,13 +140,15 @@ public partial class HeightFogComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: LightColor
+    /// StructProperty: LightColor<br/>
+    /// Default: (B=255,G=255,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor LightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 140);
 
     /// <summary>
-    /// FloatProperty: ExtinctionDistance
+    /// FloatProperty: ExtinctionDistance<br/>
+    /// Default: 1e+08
     /// </summary>
     public unsafe float ExtinctionDistance
     {

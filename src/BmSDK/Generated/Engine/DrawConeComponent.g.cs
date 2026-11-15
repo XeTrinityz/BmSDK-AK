@@ -79,13 +79,15 @@ public partial class DrawConeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: ConeColor
+    /// StructProperty: ConeColor<br/>
+    /// Default: (B=255,G=200,R=150,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ConeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
 
     /// <summary>
-    /// FloatProperty: ConeRadius
+    /// FloatProperty: ConeRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ConeRadius
     {
@@ -94,7 +96,8 @@ public partial class DrawConeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ConeAngle
+    /// FloatProperty: ConeAngle<br/>
+    /// Default: 44
     /// </summary>
     public unsafe float ConeAngle
     {
@@ -103,7 +106,8 @@ public partial class DrawConeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: ConeSides
+    /// IntProperty: ConeSides<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int ConeSides
     {

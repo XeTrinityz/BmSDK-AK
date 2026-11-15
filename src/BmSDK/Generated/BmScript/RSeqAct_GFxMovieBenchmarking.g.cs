@@ -141,7 +141,8 @@ public partial class RSeqAct_GFxMovieBenchmarking : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// ObjectProperty: TheMovieInstance
+    /// ObjectProperty: TheMovieInstance<br/>
+    /// Default: BenchmarkingHud.HUD
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheMovieInstance
     {
@@ -168,7 +169,8 @@ public partial class RSeqAct_GFxMovieBenchmarking : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// ObjectProperty: ExitSound
+    /// ObjectProperty: ExitSound<br/>
+    /// Default: Ww_UI_FrontEnd.Play_UI_Generic_Back
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExitSound
     {
@@ -222,7 +224,8 @@ public partial class RSeqAct_GFxMovieBenchmarking : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// FloatProperty: ExitDelay
+    /// FloatProperty: ExitDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ExitDelay
     {

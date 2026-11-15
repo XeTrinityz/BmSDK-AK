@@ -512,7 +512,8 @@ public partial class RBMBehaviour_MoveToNavMesh : BmSDK.BmGame.RBMBehaviour, BmS
     }
 
     /// <summary>
-    /// ByteProperty: Speed
+    /// ByteProperty: Speed<br/>
+    /// Default: MOVETOSPEED_Run
     /// </summary>
     public unsafe BmSDK.BmGame.RBMBehaviour_MoveToNavMesh.MoveToSpeed Speed
     {

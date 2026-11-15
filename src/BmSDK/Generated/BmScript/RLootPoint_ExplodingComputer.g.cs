@@ -93,7 +93,8 @@ public partial class RLootPoint_ExplodingComputer : BmSDK.BmGame.RLootSourceBase
     }
 
     /// <summary>
-    /// ComponentProperty: damagedMesh
+    /// ComponentProperty: damagedMesh<br/>
+    /// Default: BmScript.Default__RLootPoint_ExplodingComputer.damagedMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent damagedMesh
     {
@@ -102,7 +103,8 @@ public partial class RLootPoint_ExplodingComputer : BmSDK.BmGame.RLootSourceBase
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionFX
+    /// ObjectProperty: ExplosionFX<br/>
+    /// Default: VFX_Destructibles.Particles.GrateDamageState
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionFX
     {

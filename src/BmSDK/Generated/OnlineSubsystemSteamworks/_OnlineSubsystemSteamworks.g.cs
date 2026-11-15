@@ -8570,7 +8570,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     }
 
     /// <summary>
-    /// ByteProperty: CurrentNotificationPosition
+    /// ByteProperty: CurrentNotificationPosition<br/>
+    /// Default: NNP_TopRight
     /// </summary>
     public unsafe BmSDK.Engine.OnlineSubsystem.ENetworkNotificationPosition CurrentNotificationPosition
     {
@@ -8615,7 +8616,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     }
 
     /// <summary>
-    /// StrProperty: LoggedInPlayerName
+    /// StrProperty: LoggedInPlayerName<br/>
+    /// Default: "Local Profile"
     /// </summary>
     public unsafe BmSDK.FString LoggedInPlayerName
     {
@@ -8807,7 +8809,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     }
 
     /// <summary>
-    /// BoolProperty: bVideoRecordEnabled
+    /// BoolProperty: bVideoRecordEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVideoRecordEnabled
     {
@@ -9022,7 +9025,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.FControllerConnectionState>(Ptr + 1280);
 
     /// <summary>
-    /// FloatProperty: ConnectionPresenceTimeInterval
+    /// FloatProperty: ConnectionPresenceTimeInterval<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ConnectionPresenceTimeInterval
     {
@@ -9067,7 +9071,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     }
 
     /// <summary>
-    /// ArrayProperty: AchievementMappings
+    /// ArrayProperty: AchievementMappings<br/>
+    /// Default: ((AchievementId=1,AchievementName=EACID_MP_A_Battle_Within),(AchievementId=2,AchievementName=EACID_MP_A_Heart_Broken_in_Two),(AchievementId=3,AchievementName=EACID_OT_Absolution),(AchievementId=4,Achi...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.FAchievementMappingInfo> AchievementMappings
     {
@@ -9223,7 +9228,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.FContentListCache>(Ptr + 1624);
 
     /// <summary>
-    /// StrProperty: DLCRootDir
+    /// StrProperty: DLCRootDir<br/>
+    /// Default: "../../DLC/"
     /// </summary>
     public unsafe BmSDK.FString DLCRootDir
     {

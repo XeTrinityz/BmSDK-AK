@@ -79,7 +79,8 @@ public partial class CullDistanceVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: CullDistances
+    /// ArrayProperty: CullDistances<br/>
+    /// Default: ((),(Size=10000))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.CullDistanceVolume.FCullDistanceSizePair> CullDistances
     {
@@ -88,7 +89,8 @@ public partial class CullDistanceVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

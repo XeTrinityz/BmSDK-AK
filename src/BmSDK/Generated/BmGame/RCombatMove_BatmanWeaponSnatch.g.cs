@@ -260,7 +260,8 @@ public partial class RCombatMove_BatmanWeaponSnatch : BmSDK.BmGame.RCombatMove_B
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FWeaponSnatchInfo>(Ptr + 868);
 
     /// <summary>
-    /// ByteProperty: WeaponTypeSnatch
+    /// ByteProperty: WeaponTypeSnatch<br/>
+    /// Default: WDL_Unarmed
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerCombat.EWeaponDestroyType WeaponTypeSnatch
     {

@@ -79,7 +79,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: EnginePeakTorque
+    /// FloatProperty: EnginePeakTorque<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float EnginePeakTorque
     {
@@ -88,7 +89,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: EngineMaxRPM
+    /// FloatProperty: EngineMaxRPM<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float EngineMaxRPM
     {
@@ -169,7 +171,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLongExtremumSlip
+    /// FloatProperty: WheelLongExtremumSlip<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float WheelLongExtremumSlip
     {
@@ -178,7 +181,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLongExtremumValue
+    /// FloatProperty: WheelLongExtremumValue<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WheelLongExtremumValue
     {
@@ -187,7 +191,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLongAsymptoteSlip
+    /// FloatProperty: WheelLongAsymptoteSlip<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float WheelLongAsymptoteSlip
     {
@@ -196,7 +201,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLongAsymptoteValue
+    /// FloatProperty: WheelLongAsymptoteValue<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float WheelLongAsymptoteValue
     {
@@ -205,7 +211,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLatExtremumSlip
+    /// FloatProperty: WheelLatExtremumSlip<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float WheelLatExtremumSlip
     {
@@ -214,7 +221,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLatExtremumValue
+    /// FloatProperty: WheelLatExtremumValue<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float WheelLatExtremumValue
     {
@@ -223,7 +231,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLatAsymptoteSlip
+    /// FloatProperty: WheelLatAsymptoteSlip<br/>
+    /// Default: 1.4
     /// </summary>
     public unsafe float WheelLatAsymptoteSlip
     {
@@ -232,7 +241,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelLatAsymptoteValue
+    /// FloatProperty: WheelLatAsymptoteValue<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float WheelLatAsymptoteValue
     {
@@ -241,7 +251,8 @@ public partial class SVehicleSimBase : BmSDK.Engine.ActorComponent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WheelInertia
+    /// FloatProperty: WheelInertia<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WheelInertia
     {

@@ -313,7 +313,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ReticuleMove
+    /// ObjectProperty: ReticuleMove<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_Cell_Reticule_Move
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ReticuleMove
     {
@@ -322,7 +323,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ScanBackward
+    /// ObjectProperty: ScanBackward<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_CCTV_Scan_Back
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScanBackward
     {
@@ -331,7 +333,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ScanForward
+    /// ObjectProperty: ScanForward<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_CCTV_Scan_Forward
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScanForward
     {
@@ -340,7 +343,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ZoomIn
+    /// ObjectProperty: ZoomIn<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_CCTV_Zoom_In
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ZoomIn
     {
@@ -349,7 +353,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ZoomOut
+    /// ObjectProperty: ZoomOut<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_CCTV_Zoom_Out
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ZoomOut
     {
@@ -358,7 +363,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: EvidenceFound
+    /// ObjectProperty: EvidenceFound<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_Evidence_Found
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent EvidenceFound
     {
@@ -367,7 +373,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: EvidenceLocked
+    /// ObjectProperty: EvidenceLocked<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_Evidence_Locked
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent EvidenceLocked
     {
@@ -376,7 +383,8 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
     }
 
     /// <summary>
-    /// ObjectProperty: ScanEvidence
+    /// ObjectProperty: ScanEvidence<br/>
+    /// Default: Ww_OBJ_CCTV_Scanner.Play_Scan_Evidence_Cell
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScanEvidence
     {

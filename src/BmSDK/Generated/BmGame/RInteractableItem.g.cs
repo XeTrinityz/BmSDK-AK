@@ -508,7 +508,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// StrProperty: Prompt
+    /// StrProperty: Prompt<br/>
+    /// Default: "Frontend.HelpText.Use"
     /// </summary>
     public unsafe BmSDK.FString Prompt
     {
@@ -526,7 +527,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Range
     {
@@ -535,7 +537,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: HeightRange
+    /// FloatProperty: HeightRange<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float HeightRange
     {
@@ -634,7 +637,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByBatman
+    /// BoolProperty: bUsableByBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByBatman
     {
@@ -643,7 +647,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByRobin
+    /// BoolProperty: bUsableByRobin<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByRobin
     {
@@ -652,7 +657,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// BoolProperty: bUsableByCatwoman
+    /// BoolProperty: bUsableByCatwoman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsableByCatwoman
     {
@@ -724,7 +730,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// BoolProperty: bIsActiveOverride
+    /// BoolProperty: bIsActiveOverride<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsActiveOverride
     {
@@ -733,7 +740,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// BoolProperty: bStasisWhenNotVisible
+    /// BoolProperty: bStasisWhenNotVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStasisWhenNotVisible
     {
@@ -802,7 +810,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// ObjectProperty: PushButtonAnimMove
+    /// ObjectProperty: PushButtonAnimMove<br/>
+    /// Default: Batman_Environment_Moves.Button.Press_Button
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig PushButtonAnimMove
     {
@@ -811,7 +820,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmGame.Default__RInteractableItem.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {
@@ -856,7 +866,8 @@ public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: FovRange
+    /// FloatProperty: FovRange<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float FovRange
     {

@@ -149,7 +149,8 @@ public partial class RSeqAct_Player2DDistanceCheck : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: Delay
+    /// FloatProperty: Delay<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float Delay
     {
@@ -158,7 +159,8 @@ public partial class RSeqAct_Player2DDistanceCheck : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: BatmanProximity2DDistance
+    /// FloatProperty: BatmanProximity2DDistance<br/>
+    /// Default: 3250
     /// </summary>
     public unsafe float BatmanProximity2DDistance
     {

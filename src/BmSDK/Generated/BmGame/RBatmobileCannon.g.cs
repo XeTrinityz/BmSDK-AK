@@ -737,7 +737,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bNonAimedCannonIsCameraRelative
+    /// BoolProperty: bNonAimedCannonIsCameraRelative<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNonAimedCannonIsCameraRelative
     {
@@ -809,7 +810,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bPerfectShot
+    /// BoolProperty: bPerfectShot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPerfectShot
     {
@@ -818,7 +820,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bLoseAccuracyOverTime
+    /// BoolProperty: bLoseAccuracyOverTime<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLoseAccuracyOverTime
     {
@@ -854,7 +857,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bHalfFireRate
+    /// BoolProperty: bHalfFireRate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHalfFireRate
     {
@@ -863,7 +867,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: CannonYawBone
+    /// NameProperty: CannonYawBone<br/>
+    /// Default: GUN_ROTATE
     /// </summary>
     public unsafe BmSDK.FName CannonYawBone
     {
@@ -872,7 +877,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: CannonPitchBone
+    /// NameProperty: CannonPitchBone<br/>
+    /// Default: Gun
     /// </summary>
     public unsafe BmSDK.FName CannonPitchBone
     {
@@ -881,7 +887,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: CannonSocket
+    /// NameProperty: CannonSocket<br/>
+    /// Default: Cannon
     /// </summary>
     public unsafe BmSDK.FName CannonSocket
     {
@@ -1079,7 +1086,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: TankHeadShotFFWaveForm
+    /// ObjectProperty: TankHeadShotFFWaveForm<br/>
+    /// Default: BmGame.Default__RBatmobileCannon.TankHeadShotFeedbackWaveForm
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TankHeadShotFFWaveForm
     {
@@ -1106,7 +1114,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDmgType_BatmobileChainGun
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -1115,7 +1124,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: GunYawOffset
+    /// IntProperty: GunYawOffset<br/>
+    /// Default: -16384
     /// </summary>
     public unsafe int GunYawOffset
     {
@@ -1136,7 +1146,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2640);
 
     /// <summary>
-    /// FloatProperty: AutoTargetRange
+    /// FloatProperty: AutoTargetRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float AutoTargetRange
     {
@@ -1145,7 +1156,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngle
+    /// FloatProperty: AutoTargetAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float AutoTargetAngle
     {
@@ -1154,7 +1166,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngleAimed
+    /// FloatProperty: AutoTargetAngleAimed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float AutoTargetAngleAimed
     {
@@ -1163,7 +1176,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactMomentum
+    /// FloatProperty: ImpactMomentum<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ImpactMomentum
     {
@@ -1172,7 +1186,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RecoilImpulse
+    /// FloatProperty: RecoilImpulse<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float RecoilImpulse
     {
@@ -1181,7 +1196,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: InaccuracyAngle
+    /// FloatProperty: InaccuracyAngle<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float InaccuracyAngle
     {
@@ -1199,7 +1215,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: HeatUpPerSecond
+    /// FloatProperty: HeatUpPerSecond<br/>
+    /// Default: 0.3333
     /// </summary>
     public unsafe float HeatUpPerSecond
     {
@@ -1208,7 +1225,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: HeadDownPerSecond
+    /// FloatProperty: HeadDownPerSecond<br/>
+    /// Default: 0.6666
     /// </summary>
     public unsafe float HeadDownPerSecond
     {
@@ -1217,7 +1235,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: OverheatOffValue
+    /// FloatProperty: OverheatOffValue<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float OverheatOffValue
     {
@@ -1235,19 +1254,22 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: HeatBarStart
+    /// StructProperty: HeatBarStart<br/>
+    /// Default: (X=0.88,Y=0.8)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 HeatBarStart
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 2696);
 
     /// <summary>
-    /// StructProperty: HeatBarSize
+    /// StructProperty: HeatBarSize<br/>
+    /// Default: (X=0.07,Y=0.02)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 HeatBarSize
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 2704);
 
     /// <summary>
-    /// FloatProperty: ChainGunMaxSpinSpeed
+    /// FloatProperty: ChainGunMaxSpinSpeed<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float ChainGunMaxSpinSpeed
     {
@@ -1256,7 +1278,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ChainGunSpinAccel
+    /// FloatProperty: ChainGunSpinAccel<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float ChainGunSpinAccel
     {
@@ -1265,7 +1288,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ChainGunSpinDecel
+    /// FloatProperty: ChainGunSpinDecel<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float ChainGunSpinDecel
     {
@@ -1292,7 +1316,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RiotSuppressorLockOnAngle
+    /// FloatProperty: RiotSuppressorLockOnAngle<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float RiotSuppressorLockOnAngle
     {
@@ -1301,7 +1326,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RiotSuppressorRange
+    /// FloatProperty: RiotSuppressorRange<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float RiotSuppressorRange
     {
@@ -1310,7 +1336,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RiotSuppressorFiringInterval
+    /// FloatProperty: RiotSuppressorFiringInterval<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RiotSuppressorFiringInterval
     {
@@ -1319,7 +1346,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RiotSuppressorVillainImpulse
+    /// FloatProperty: RiotSuppressorVillainImpulse<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float RiotSuppressorVillainImpulse
     {
@@ -1328,13 +1356,15 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: RiotSuppressorFireScreenShake
+    /// StructProperty: RiotSuppressorFireScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct RiotSuppressorFireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2748);
 
     /// <summary>
-    /// FloatProperty: ComboFiringInterval
+    /// FloatProperty: ComboFiringInterval<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ComboFiringInterval
     {
@@ -1343,7 +1373,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MinTurretPitch
+    /// FloatProperty: MinTurretPitch<br/>
+    /// Default: -5
     /// </summary>
     public unsafe float MinTurretPitch
     {
@@ -1352,7 +1383,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxTurretPitch
+    /// FloatProperty: MaxTurretPitch<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxTurretPitch
     {
@@ -1361,7 +1393,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: ChainGunDamage
+    /// IntProperty: ChainGunDamage<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int ChainGunDamage
     {
@@ -1370,7 +1403,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: UpgradedDamage
+    /// IntProperty: UpgradedDamage<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int UpgradedDamage
     {
@@ -1379,7 +1413,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: EMPLockOnTime
+    /// FloatProperty: EMPLockOnTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float EMPLockOnTime
     {
@@ -1406,7 +1441,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// NameProperty: TracerLifetimeParamName
+    /// NameProperty: TracerLifetimeParamName<br/>
+    /// Default: Lifetime
     /// </summary>
     public unsafe BmSDK.FName TracerLifetimeParamName
     {
@@ -1415,7 +1451,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TracerFXMaxRange
+    /// FloatProperty: TracerFXMaxRange<br/>
+    /// Default: 21000
     /// </summary>
     public unsafe float TracerFXMaxRange
     {
@@ -1442,7 +1479,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: RiotSuppressorImpactBones
+    /// ArrayProperty: RiotSuppressorImpactBones<br/>
+    /// Default: (Bip01_Head,Bip01_Spine2,Bip01_L_UpperArm,Bip01_R_UpperArm,Bip01_Spine1)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> RiotSuppressorImpactBones
     {
@@ -1451,7 +1489,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: ChainGunScreenShake
+    /// StructProperty: ChainGunScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ChainGunScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2980);
@@ -1475,7 +1514,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ReloadTime
+    /// FloatProperty: ReloadTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ReloadTime
     {
@@ -1484,13 +1524,15 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: InaccuracyVsTime
+    /// StructProperty: InaccuracyVsTime<br/>
+    /// Default: (Points=((),(InVal=1),(InVal=2.5,OutVal=3)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat InaccuracyVsTime
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 3148);
 
     /// <summary>
-    /// FloatProperty: InaccuracyDropMultiplier
+    /// FloatProperty: InaccuracyDropMultiplier<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float InaccuracyDropMultiplier
     {
@@ -1499,7 +1541,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxHeadshotAccuracyAngle
+    /// FloatProperty: MaxHeadshotAccuracyAngle<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float MaxHeadshotAccuracyAngle
     {
@@ -1508,7 +1551,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: InaccuracyVsTimeUpgrade
+    /// StructProperty: InaccuracyVsTimeUpgrade<br/>
+    /// Default: (Points=((),(InVal=1),(InVal=2.5,OutVal=3)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat InaccuracyVsTimeUpgrade
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 3176);
@@ -1523,7 +1567,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CurrentAccuracyZeroToOne
+    /// FloatProperty: CurrentAccuracyZeroToOne<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentAccuracyZeroToOne
     {
@@ -1550,7 +1595,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     }
 
     /// <summary>
-    /// ByteProperty: CurrentMode
+    /// ByteProperty: CurrentMode<br/>
+    /// Default: EBCM_Init
     /// </summary>
     public unsafe BmSDK.BmGame.RBatmobileCannon.EBatmobileCannonMode CurrentMode
     {

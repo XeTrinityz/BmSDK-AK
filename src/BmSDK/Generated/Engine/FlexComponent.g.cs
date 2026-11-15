@@ -131,7 +131,8 @@ public partial class FlexComponent : BmSDK.Engine.StaticMeshComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bFlexComponentAutoAssignPhase
+    /// BoolProperty: bFlexComponentAutoAssignPhase<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFlexComponentAutoAssignPhase
     {
@@ -221,7 +222,8 @@ public partial class FlexComponent : BmSDK.Engine.StaticMeshComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: FlexComponentDistanceBeforeSleep
+    /// FloatProperty: FlexComponentDistanceBeforeSleep<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FlexComponentDistanceBeforeSleep
     {
@@ -230,7 +232,8 @@ public partial class FlexComponent : BmSDK.Engine.StaticMeshComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: FlexComponentInvisibleFramesBeforeSleep
+    /// IntProperty: FlexComponentInvisibleFramesBeforeSleep<br/>
+    /// Default: 60
     /// </summary>
     public unsafe int FlexComponentInvisibleFramesBeforeSleep
     {

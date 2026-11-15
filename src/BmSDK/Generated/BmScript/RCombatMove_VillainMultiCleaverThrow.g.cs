@@ -422,7 +422,8 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// ArrayProperty: ThrowAnimName
+    /// ArrayProperty: ThrowAnimName<br/>
+    /// Default: (PP_Throw_Blades_1,PP_Throw_Blades_2,PP_Throw_Blades_3)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ThrowAnimName
     {

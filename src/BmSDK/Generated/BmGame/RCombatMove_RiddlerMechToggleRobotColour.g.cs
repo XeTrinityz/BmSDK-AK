@@ -235,7 +235,8 @@ public partial class RCombatMove_RiddlerMechToggleRobotColour : BmSDK.BmGame.RCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 824);
 
     /// <summary>
-    /// NameProperty: InitialState
+    /// NameProperty: InitialState<br/>
+    /// Default: TurningToFace
     /// </summary>
     public unsafe BmSDK.FName InitialState
     {

@@ -298,7 +298,8 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: HandleMesh
+    /// ComponentProperty: HandleMesh<br/>
+    /// Default: BmScript.Default__RCWBolas.GadgetHandleMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent HandleMesh
     {

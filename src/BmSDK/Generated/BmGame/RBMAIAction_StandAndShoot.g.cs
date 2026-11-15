@@ -211,7 +211,8 @@ public partial class RBMAIAction_StandAndShoot : BmSDK.BmGame.RBMAIAction, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ForcedAimAndFireTime
+    /// FloatProperty: ForcedAimAndFireTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ForcedAimAndFireTime
     {

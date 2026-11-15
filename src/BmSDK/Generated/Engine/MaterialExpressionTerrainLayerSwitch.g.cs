@@ -109,7 +109,8 @@ public partial class MaterialExpressionTerrainLayerSwitch : BmSDK.Engine.Materia
     }
 
     /// <summary>
-    /// BoolProperty: PreviewUsed
+    /// BoolProperty: PreviewUsed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PreviewUsed
     {

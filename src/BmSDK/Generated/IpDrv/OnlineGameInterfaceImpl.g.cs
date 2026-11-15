@@ -1521,7 +1521,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     }
 
     /// <summary>
-    /// IntProperty: LanAnnouncePort
+    /// IntProperty: LanAnnouncePort<br/>
+    /// Default: 14001
     /// </summary>
     public unsafe int LanAnnouncePort
     {
@@ -1530,7 +1531,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     }
 
     /// <summary>
-    /// IntProperty: LanGameUniqueId
+    /// IntProperty: LanGameUniqueId<br/>
+    /// Default: 1297549275
     /// </summary>
     public unsafe int LanGameUniqueId
     {
@@ -1539,7 +1541,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     }
 
     /// <summary>
-    /// IntProperty: LanPacketPlatformMask
+    /// IntProperty: LanPacketPlatformMask<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int LanPacketPlatformMask
     {
@@ -1557,7 +1560,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     }
 
     /// <summary>
-    /// FloatProperty: LanQueryTimeout
+    /// FloatProperty: LanQueryTimeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float LanQueryTimeout
     {

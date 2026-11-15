@@ -486,7 +486,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ComponentProperty: RightMesh
+    /// ComponentProperty: RightMesh<br/>
+    /// Default: BmScript.Default__RBMWeaponPredatorRedHoodRifle.RightGunMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightMesh
     {
@@ -495,7 +496,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ObjectProperty: LightArchetype
+    /// ObjectProperty: LightArchetype<br/>
+    /// Default: Pawn_Archetypes.Lights.ArkhamKnight_Rifle_Light
     /// </summary>
     public unsafe BmSDK.Engine.Light LightArchetype
     {
@@ -540,7 +542,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ComponentProperty: LensFlareFX
+    /// ComponentProperty: LensFlareFX<br/>
+    /// Default: BmScript.Default__RBMWeaponPredatorRedHoodRifle.LensFlareFX0
     /// </summary>
     public unsafe BmSDK.Engine.LensFlareComponent LensFlareFX
     {
@@ -549,7 +552,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ComponentProperty: GunLightMesh
+    /// ComponentProperty: GunLightMesh<br/>
+    /// Default: BmScript.Default__RBMWeaponPredatorRedHoodRifle.SearchLightMesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent GunLightMesh
     {
@@ -573,7 +577,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2020);
 
     /// <summary>
-    /// FloatProperty: LightMeshRadius
+    /// FloatProperty: LightMeshRadius<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LightMeshRadius
     {
@@ -600,7 +605,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: NarrowLightMeshRadius
+    /// FloatProperty: NarrowLightMeshRadius<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float NarrowLightMeshRadius
     {
@@ -609,7 +615,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: WideLightMeshRadius
+    /// FloatProperty: WideLightMeshRadius<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float WideLightMeshRadius
     {
@@ -618,7 +625,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightInnerAngle
+    /// FloatProperty: LightInnerAngle<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float LightInnerAngle
     {
@@ -627,7 +635,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightOuterAngle
+    /// FloatProperty: LightOuterAngle<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float LightOuterAngle
     {
@@ -636,7 +645,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightRadius
+    /// FloatProperty: LightRadius<br/>
+    /// Default: 4096
     /// </summary>
     public unsafe float LightRadius
     {
@@ -654,7 +664,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightMeshLength
+    /// FloatProperty: LightMeshLength<br/>
+    /// Default: 368
     /// </summary>
     public unsafe float LightMeshLength
     {
@@ -663,7 +674,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightAdditionalLength
+    /// FloatProperty: LightAdditionalLength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float LightAdditionalLength
     {
@@ -672,7 +684,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightRollSpeed
+    /// FloatProperty: LightRollSpeed<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float LightRollSpeed
     {
@@ -681,7 +694,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: LightForwardProjection
+    /// FloatProperty: LightForwardProjection<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float LightForwardProjection
     {
@@ -699,7 +713,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: PPSpeed
+    /// FloatProperty: PPSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PPSpeed
     {
@@ -708,7 +723,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// FloatProperty: PPCosAngle
+    /// FloatProperty: PPCosAngle<br/>
+    /// Default: 0.99
     /// </summary>
     public unsafe float PPCosAngle
     {
@@ -717,7 +733,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ArrayProperty: LaserSoundEvents
+    /// ArrayProperty: LaserSoundEvents<br/>
+    /// Default: (Ww_WPN_Rifle_RedHood.Play_Rifle_Redhood_Sniper_Beam_01,Ww_WPN_Rifle_RedHood.Play_Rifle_Redhood_Sniper_Beam_02,Ww_WPN_Rifle_RedHood.Play_Rifle_Redhood_Sniper_Beam_03,Ww_WPN_Rifle_RedHood.Play_Rifle_Re...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkEvent> LaserSoundEvents
     {
@@ -735,7 +752,8 @@ public partial class RBMWeaponPredatorRedHoodRifle : BmSDK.BmScript.RBMWeaponRif
     }
 
     /// <summary>
-    /// ArrayProperty: LaserAudibles
+    /// ArrayProperty: LaserAudibles<br/>
+    /// Default: (BmScript.Default__RBMWeaponPredatorRedHoodRifle.LaserScopeAudibleLeft,BmScript.Default__RBMWeaponPredatorRedHoodRifle.LaserScopeAudibleRight,BmScript.Default__RBMWeaponPredatorRedHoodRifle.LaserScope...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.RAkAudible> LaserAudibles
     {

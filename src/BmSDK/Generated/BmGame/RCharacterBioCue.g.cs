@@ -97,7 +97,8 @@ public partial class RCharacterBioCue : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ForceRandomLine
+    /// IntProperty: ForceRandomLine<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceRandomLine
     {

@@ -79,7 +79,8 @@ public partial class RAnimNotify_CounterHit : BmSDK.Engine.AnimNotify, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: CounterInfo
+    /// StructProperty: CounterInfo<br/>
+    /// Default: (CounterStrength=ECS_Strong,bActive=true,DestCapeStateName=Physics)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FCounterInfo CounterInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FCounterInfo>(Ptr + 84);

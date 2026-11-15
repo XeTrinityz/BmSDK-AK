@@ -795,7 +795,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherRange
+    /// FloatProperty: LineLauncherRange<br/>
+    /// Default: 12500
     /// </summary>
     public unsafe float LineLauncherRange
     {
@@ -804,7 +805,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherBackRange
+    /// FloatProperty: LineLauncherBackRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float LineLauncherBackRange
     {
@@ -813,7 +815,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherHeight
+    /// FloatProperty: LineLauncherHeight<br/>
+    /// Default: 351
     /// </summary>
     public unsafe float LineLauncherHeight
     {
@@ -822,7 +825,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherPlayerHeight
+    /// FloatProperty: LineLauncherPlayerHeight<br/>
+    /// Default: 239
     /// </summary>
     public unsafe float LineLauncherPlayerHeight
     {
@@ -831,7 +835,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinLineLauncherRange
+    /// FloatProperty: MinLineLauncherRange<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float MinLineLauncherRange
     {
@@ -840,7 +845,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinLineLauncherBackRange
+    /// FloatProperty: MinLineLauncherBackRange<br/>
+    /// Default: 16
     /// </summary>
     public unsafe float MinLineLauncherBackRange
     {
@@ -849,7 +855,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherFireRightOffset
+    /// FloatProperty: LineLauncherFireRightOffset<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float LineLauncherFireRightOffset
     {
@@ -988,7 +995,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: CameraAnimSet
+    /// ObjectProperty: CameraAnimSet<br/>
+    /// Default: Anim_Batman_Gadget.Cameras.BM_Gadget_Cameras
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet CameraAnimSet
     {
@@ -1055,7 +1063,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ZipForwardMaxSpeed
+    /// FloatProperty: ZipForwardMaxSpeed<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float ZipForwardMaxSpeed
     {
@@ -1064,7 +1073,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ZipForwardAccel
+    /// FloatProperty: ZipForwardAccel<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float ZipForwardAccel
     {
@@ -1091,7 +1101,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LineLauncherAttachAngle
+    /// FloatProperty: LineLauncherAttachAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float LineLauncherAttachAngle
     {
@@ -1100,7 +1111,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LowLineLauncherHeightOffset
+    /// FloatProperty: LowLineLauncherHeightOffset<br/>
+    /// Default: -80
     /// </summary>
     public unsafe float LowLineLauncherHeightOffset
     {
@@ -1109,7 +1121,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: LowLineLauncherPlayerHeightOffset
+    /// FloatProperty: LowLineLauncherPlayerHeightOffset<br/>
+    /// Default: -70
     /// </summary>
     public unsafe float LowLineLauncherPlayerHeightOffset
     {
@@ -1196,7 +1209,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2408);
 
     /// <summary>
-    /// IntProperty: RopeInitTimer
+    /// IntProperty: RopeInitTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RopeInitTimer
     {
@@ -1223,7 +1237,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinAimAngle
+    /// FloatProperty: MinAimAngle<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MinAimAngle
     {
@@ -1277,7 +1292,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// NameProperty: CameraFire2ndLineLeftAnim
+    /// NameProperty: CameraFire2ndLineLeftAnim<br/>
+    /// Default: Line_Launcher_Fire_Left
     /// </summary>
     public unsafe BmSDK.FName CameraFire2ndLineLeftAnim
     {
@@ -1286,7 +1302,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// NameProperty: CameraFire2ndLineRightAnim
+    /// NameProperty: CameraFire2ndLineRightAnim<br/>
+    /// Default: Line_Launcher_Fire_Right
     /// </summary>
     public unsafe BmSDK.FName CameraFire2ndLineRightAnim
     {
@@ -1295,7 +1312,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: CameraAnimFactor
+    /// FloatProperty: CameraAnimFactor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CameraAnimFactor
     {

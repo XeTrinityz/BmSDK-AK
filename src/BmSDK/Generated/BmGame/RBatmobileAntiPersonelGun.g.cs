@@ -135,7 +135,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float Range
     {
@@ -144,7 +145,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: LockOnAngle
+    /// FloatProperty: LockOnAngle<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float LockOnAngle
     {
@@ -153,7 +155,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// IntProperty: MaxNumTargets
+    /// IntProperty: MaxNumTargets<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int MaxNumTargets
     {
@@ -162,7 +165,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: VillainImpulse
+    /// FloatProperty: VillainImpulse<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float VillainImpulse
     {
@@ -180,7 +184,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: InitialFireDelay
+    /// FloatProperty: InitialFireDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float InitialFireDelay
     {
@@ -189,7 +194,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FireInterval
+    /// FloatProperty: FireInterval<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float FireInterval
     {
@@ -198,7 +204,8 @@ public partial class RBatmobileAntiPersonelGun : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CooldownDelay
+    /// FloatProperty: CooldownDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CooldownDelay
     {

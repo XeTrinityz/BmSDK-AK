@@ -308,7 +308,8 @@ public partial class RCombatMove_CatwomanGroupAttack : BmSDK.BmGame.RCombatMove_
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 932);
 
     /// <summary>
-    /// FloatProperty: MaxDisarmRadius
+    /// FloatProperty: MaxDisarmRadius<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float MaxDisarmRadius
     {

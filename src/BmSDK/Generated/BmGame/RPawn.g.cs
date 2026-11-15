@@ -1219,7 +1219,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LOSCheckBones
+    /// ArrayProperty: LOSCheckBones<br/>
+    /// Default: (Bip01_Head,Bip01_R_UpperArm,Bip01_L_UpperArm,Bip01_R_Hand,Bip01_L_Hand)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> LOSCheckBones
     {
@@ -1228,7 +1229,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: EnableFootsteps
+    /// BoolProperty: EnableFootsteps<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableFootsteps
     {
@@ -1300,7 +1302,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bThoughtsDisplayed
+    /// BoolProperty: bThoughtsDisplayed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bThoughtsDisplayed
     {
@@ -1480,7 +1483,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: BodyPartMap
+    /// ArrayProperty: BodyPartMap<br/>
+    /// Default: ((BoneName=Bip01_Head,BodyPart=HT_Head),(BoneName=Bip01_L_UpperArm,BodyPart=HT_LeftArm),(BoneName=Bip01_L_Forearm,BodyPart=HT_LeftArm),(BoneName=Bip01_L_Hand,BodyPart=HT_LeftArm),(BoneName=Bip01_R_Upp...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPawn.FBodyPartMadObj> BodyPartMap
     {
@@ -1561,7 +1565,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CurrentThoughtHistoryItem
+    /// IntProperty: CurrentThoughtHistoryItem<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentThoughtHistoryItem
     {

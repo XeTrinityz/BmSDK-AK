@@ -88,7 +88,8 @@ public partial class RCrowdTrigger : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ChecksPerFrame
+    /// IntProperty: ChecksPerFrame<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ChecksPerFrame
     {
@@ -97,7 +98,8 @@ public partial class RCrowdTrigger : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CheckRadius
+    /// FloatProperty: CheckRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CheckRadius
     {

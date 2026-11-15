@@ -79,7 +79,8 @@ public partial class BlurEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: BlurKernelSize
+    /// IntProperty: BlurKernelSize<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int BlurKernelSize
     {

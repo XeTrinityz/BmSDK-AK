@@ -92,7 +92,8 @@ public partial class SeqAct_ParticleEventGenerator : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

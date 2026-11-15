@@ -88,7 +88,8 @@ public partial class RParticleModuleGPURecycleSpawn : BmSDK.Engine.ParticleModul
     }
 
     /// <summary>
-    /// FloatProperty: ParticleBehaviourRandomisation
+    /// FloatProperty: ParticleBehaviourRandomisation<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float ParticleBehaviourRandomisation
     {
@@ -97,7 +98,8 @@ public partial class RParticleModuleGPURecycleSpawn : BmSDK.Engine.ParticleModul
     }
 
     /// <summary>
-    /// FloatProperty: RandomisationMultiplier
+    /// FloatProperty: RandomisationMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RandomisationMultiplier
     {

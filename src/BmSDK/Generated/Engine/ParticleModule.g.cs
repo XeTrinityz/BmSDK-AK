@@ -107,7 +107,8 @@ public partial class ParticleModule : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bResetSeedOnEmitterLooping
+        /// BoolProperty: bResetSeedOnEmitterLooping<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bResetSeedOnEmitterLooping
         {
@@ -230,7 +231,8 @@ public partial class ParticleModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -239,7 +241,8 @@ public partial class ParticleModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEditable
+    /// BoolProperty: bEditable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEditable
     {
@@ -248,7 +251,8 @@ public partial class ParticleModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: LODDuplicate
+    /// BoolProperty: LODDuplicate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool LODDuplicate
     {
@@ -275,7 +279,8 @@ public partial class ParticleModule : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsThreadSafe
+    /// BoolProperty: bIsThreadSafe<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsThreadSafe
     {

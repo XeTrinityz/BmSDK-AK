@@ -945,7 +945,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     public InlineArray<BmSDK.FString> SpeechCleanupReasonStrings => new(6, Ptr + 384, 16, this);
 
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "FAILED TO START: NoSpeechAsset"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_0
     {
@@ -953,7 +954,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 384); }
     }
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "FAILED TO START: FailedOncenessCheck"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_1
     {
@@ -961,7 +963,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 400); }
     }
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "FAILED TO START: StartSpeechError"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_2
     {
@@ -969,7 +972,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 416); }
     }
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "STREAMED OUT (SeqActCleanupFunction)"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_3
     {
@@ -977,7 +981,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 432); }
     }
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "STREAMED OUT (OnDelete)"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_4
     {
@@ -985,7 +990,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 448); }
     }
     /// <summary>
-    /// StrProperty: SpeechCleanupReasonStrings
+    /// StrProperty: SpeechCleanupReasonStrings<br/>
+    /// Default: "STREAMED OUT (BeginDestroy)"
     /// </summary>
     public unsafe BmSDK.FString SpeechCleanupReasonStrings_5
     {
@@ -1012,7 +1018,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bSkippable
+    /// BoolProperty: bSkippable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkippable
     {
@@ -1030,7 +1037,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bAutomaticallyAddPlayerAsSpeaker
+    /// BoolProperty: bAutomaticallyAddPlayerAsSpeaker<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutomaticallyAddPlayerAsSpeaker
     {
@@ -1351,7 +1359,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: maxNotifyWaitTime
+    /// FloatProperty: maxNotifyWaitTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float maxNotifyWaitTime
     {

@@ -166,7 +166,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 412);
 
     /// <summary>
-    /// FloatProperty: DotLimit
+    /// FloatProperty: DotLimit<br/>
+    /// Default: 0.707
     /// </summary>
     public unsafe float DotLimit
     {
@@ -175,7 +176,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: UpperDotLimit
+    /// FloatProperty: UpperDotLimit<br/>
+    /// Default: 0.82
     /// </summary>
     public unsafe float UpperDotLimit
     {
@@ -184,7 +186,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: DistToBats
+    /// FloatProperty: DistToBats<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DistToBats
     {
@@ -193,7 +196,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// IntProperty: TestRotationYaw
+    /// IntProperty: TestRotationYaw<br/>
+    /// Default: 24000
     /// </summary>
     public unsafe int TestRotationYaw
     {
@@ -202,7 +206,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// IntProperty: FinalRotationYaw
+    /// IntProperty: FinalRotationYaw<br/>
+    /// Default: 16384
     /// </summary>
     public unsafe int FinalRotationYaw
     {
@@ -229,7 +234,8 @@ public partial class RSeqAct_SurpriseBatmanAppearance : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: TimeoutTime
+    /// FloatProperty: TimeoutTime<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TimeoutTime
     {

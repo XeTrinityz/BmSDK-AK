@@ -121,7 +121,8 @@ public partial class SceneCapturePortalComponent : BmSDK.Engine.SceneCaptureComp
     }
 
     /// <summary>
-    /// FloatProperty: ScaleFOV
+    /// FloatProperty: ScaleFOV<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleFOV
     {

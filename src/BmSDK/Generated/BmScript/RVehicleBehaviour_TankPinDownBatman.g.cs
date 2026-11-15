@@ -238,7 +238,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// BoolProperty: CompleteWhenGoodLastAim
+    /// BoolProperty: CompleteWhenGoodLastAim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CompleteWhenGoodLastAim
     {
@@ -265,7 +266,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: CannonShootDelay
+    /// FloatProperty: CannonShootDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CannonShootDelay
     {
@@ -283,7 +285,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: TurretSpeedScale
+    /// FloatProperty: TurretSpeedScale<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TurretSpeedScale
     {
@@ -319,7 +322,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: ScanMaxYaw
+    /// FloatProperty: ScanMaxYaw<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float ScanMaxYaw
     {
@@ -328,7 +332,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: ScanSpeed
+    /// FloatProperty: ScanSpeed<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float ScanSpeed
     {
@@ -337,7 +342,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: ScanPause
+    /// FloatProperty: ScanPause<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ScanPause
     {
@@ -373,7 +379,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// IntProperty: AlertNumTanksIfAttacked
+    /// IntProperty: AlertNumTanksIfAttacked<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int AlertNumTanksIfAttacked
     {
@@ -382,7 +389,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: AlertTanksInRangeIfAttacked
+    /// FloatProperty: AlertTanksInRangeIfAttacked<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float AlertTanksInRangeIfAttacked
     {
@@ -391,7 +399,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: GoodAimConeDegrees
+    /// FloatProperty: GoodAimConeDegrees<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GoodAimConeDegrees
     {
@@ -400,7 +409,8 @@ public partial class RVehicleBehaviour_TankPinDownBatman : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: ForcedMachineGunBurstDuration
+    /// FloatProperty: ForcedMachineGunBurstDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ForcedMachineGunBurstDuration
     {

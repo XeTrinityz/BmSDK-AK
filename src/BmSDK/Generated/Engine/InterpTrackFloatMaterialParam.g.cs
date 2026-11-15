@@ -79,7 +79,8 @@ public partial class InterpTrackFloatMaterialParam : BmSDK.Engine.InterpTrackFlo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: AllMaterialsOnThisActor
+    /// BoolProperty: AllMaterialsOnThisActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllMaterialsOnThisActor
     {
@@ -97,7 +98,8 @@ public partial class InterpTrackFloatMaterialParam : BmSDK.Engine.InterpTrackFlo
     }
 
     /// <summary>
-    /// BoolProperty: ResetWhenMatineeExits
+    /// BoolProperty: ResetWhenMatineeExits<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ResetWhenMatineeExits
     {

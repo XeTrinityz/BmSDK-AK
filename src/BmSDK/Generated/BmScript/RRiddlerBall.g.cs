@@ -612,7 +612,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// ObjectProperty: RiddlerBallImpact
+    /// ObjectProperty: RiddlerBallImpact<br/>
+    /// Default: Ww_OBJ_RiddlerBall.Play_Riddler_Ball_Impact
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RiddlerBallImpact
     {
@@ -621,7 +622,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// ObjectProperty: RiddlerBallRollEvent
+    /// ObjectProperty: RiddlerBallRollEvent<br/>
+    /// Default: Ww_OBJ_RiddlerBall.Play_RiddlerBall_Roll
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RiddlerBallRollEvent
     {
@@ -657,7 +659,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// ComponentProperty: DeathPart
+    /// ComponentProperty: DeathPart<br/>
+    /// Default: BmScript.Default__RRiddlerBall.DeathPX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DeathPart
     {
@@ -666,7 +669,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// StructProperty: PickupRelativeOffset
+    /// StructProperty: PickupRelativeOffset<br/>
+    /// Default: (Y=24)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PickupRelativeOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 744);
@@ -717,7 +721,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// StrProperty: Prompt
+    /// StrProperty: Prompt<br/>
+    /// Default: "Frontend.HelpText.Use"
     /// </summary>
     public unsafe BmSDK.FString Prompt
     {
@@ -726,7 +731,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Range
     {
@@ -735,7 +741,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: HeightRange
+    /// FloatProperty: HeightRange<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float HeightRange
     {
@@ -762,7 +769,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: MaxAcceleration
+    /// FloatProperty: MaxAcceleration<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxAcceleration
     {
@@ -771,7 +779,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: MinMagStrength
+    /// FloatProperty: MinMagStrength<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinMagStrength
     {
@@ -780,7 +789,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: MassFactor
+    /// FloatProperty: MassFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MassFactor
     {
@@ -789,7 +799,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: OverrideAttractImpulse
+    /// FloatProperty: OverrideAttractImpulse<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideAttractImpulse
     {
@@ -798,7 +809,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRepelImpulse
+    /// FloatProperty: OverrideRepelImpulse<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideRepelImpulse
     {
@@ -807,7 +819,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: OverrideAttractForce
+    /// FloatProperty: OverrideAttractForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideAttractForce
     {
@@ -816,7 +829,8 @@ public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRepelForce
+    /// FloatProperty: OverrideRepelForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideRepelForce
     {

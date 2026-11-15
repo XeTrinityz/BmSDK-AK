@@ -144,7 +144,8 @@ public partial class RTakedownCountVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: numManDownsToTriggerResponseEvent
+    /// IntProperty: numManDownsToTriggerResponseEvent<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int numManDownsToTriggerResponseEvent
     {

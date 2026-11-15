@@ -281,7 +281,8 @@ public partial class RCombatMove_MinigunThugClash : BmSDK.BmGame.RCombatMove_Vil
     }
 
     /// <summary>
-    /// ArrayProperty: CamStartTime
+    /// ArrayProperty: CamStartTime<br/>
+    /// Default: (0.460387,0.45714,0.5802,0.40869)
     /// </summary>
     public unsafe BmSDK.TArray<float> CamStartTime
     {

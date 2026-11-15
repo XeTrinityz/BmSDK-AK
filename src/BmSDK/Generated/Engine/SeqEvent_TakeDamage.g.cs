@@ -163,7 +163,8 @@ public partial class SeqEvent_TakeDamage : BmSDK.Engine.SequenceEvent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DamageThreshold
+    /// FloatProperty: DamageThreshold<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DamageThreshold
     {
@@ -199,7 +200,8 @@ public partial class SeqEvent_TakeDamage : BmSDK.Engine.SequenceEvent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bResetDamageOnToggle
+    /// BoolProperty: bResetDamageOnToggle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bResetDamageOnToggle
     {

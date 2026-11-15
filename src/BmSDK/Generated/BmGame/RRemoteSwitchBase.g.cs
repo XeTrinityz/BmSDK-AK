@@ -695,7 +695,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bCreateNewXrayMaterial
+    /// BoolProperty: bCreateNewXrayMaterial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCreateNewXrayMaterial
     {
@@ -704,7 +705,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bUsable
+    /// BoolProperty: bUsable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsable
     {
@@ -713,7 +715,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// BoolProperty: bLightOn
+    /// BoolProperty: bLightOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLightOn
     {
@@ -812,7 +815,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StructProperty: OmnitronOffset
+    /// StructProperty: OmnitronOffset<br/>
+    /// Default: (Y=32,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 OmnitronOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 972);
@@ -836,7 +840,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StrProperty: DisplayTitle
+    /// StrProperty: DisplayTitle<br/>
+    /// Default: "$GFxUI.RHD.TargetSwitch"
     /// </summary>
     public unsafe BmSDK.FString DisplayTitle
     {
@@ -845,7 +850,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StrProperty: Description
+    /// StrProperty: Description<br/>
+    /// Default: "$GFxUI.RHD.ActionOn"
     /// </summary>
     public unsafe BmSDK.FString Description
     {
@@ -854,7 +860,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StrProperty: DescriptionOff
+    /// StrProperty: DescriptionOff<br/>
+    /// Default: "$GFxUI.RHD.ActionOff"
     /// </summary>
     public unsafe BmSDK.FString DescriptionOff
     {
@@ -863,7 +870,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StrProperty: SwitchOnPrompt
+    /// StrProperty: SwitchOnPrompt<br/>
+    /// Default: "$GFxUI.RHD.PromptActivate"
     /// </summary>
     public unsafe BmSDK.FString SwitchOnPrompt
     {
@@ -872,7 +880,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// StrProperty: SwitchOffPrompt
+    /// StrProperty: SwitchOffPrompt<br/>
+    /// Default: "$GFxUI.RHD.PromptActivate"
     /// </summary>
     public unsafe BmSDK.FString SwitchOffPrompt
     {
@@ -890,7 +899,8 @@ public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: fDurationBeforeLockInRemoteSwitchOpensDoor
+    /// FloatProperty: fDurationBeforeLockInRemoteSwitchOpensDoor<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float fDurationBeforeLockInRemoteSwitchOpensDoor
     {

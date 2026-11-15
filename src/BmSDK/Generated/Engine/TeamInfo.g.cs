@@ -173,7 +173,8 @@ public partial class TeamInfo : BmSDK.Engine.ReplicationInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: TeamName
+    /// StrProperty: TeamName<br/>
+    /// Default: "Team"
     /// </summary>
     public unsafe BmSDK.FString TeamName
     {
@@ -200,7 +201,8 @@ public partial class TeamInfo : BmSDK.Engine.ReplicationInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: TeamIndex
+    /// IntProperty: TeamIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TeamIndex
     {
@@ -209,7 +211,8 @@ public partial class TeamInfo : BmSDK.Engine.ReplicationInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: TeamColor
+    /// StructProperty: TeamColor<br/>
+    /// Default: (B=64,G=64,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor TeamColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 696);

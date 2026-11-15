@@ -372,7 +372,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bUnhidePlayerWhenFinished
+    /// BoolProperty: bUnhidePlayerWhenFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUnhidePlayerWhenFinished
     {
@@ -381,7 +382,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bIsSkippable
+    /// BoolProperty: bIsSkippable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsSkippable
     {
@@ -426,7 +428,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableMoveInput
+    /// BoolProperty: bDisableMoveInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableMoveInput
     {
@@ -435,7 +438,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableLookInput
+    /// BoolProperty: bDisableLookInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableLookInput
     {
@@ -462,7 +466,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableIdleOverlays
+    /// BoolProperty: bDisableIdleOverlays<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableIdleOverlays
     {
@@ -480,7 +485,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bFadeOutOnSkip
+    /// BoolProperty: bFadeOutOnSkip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFadeOutOnSkip
     {
@@ -507,7 +513,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bFadeInAfterSkip
+    /// BoolProperty: bFadeInAfterSkip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFadeInAfterSkip
     {
@@ -660,7 +667,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveAPCChases
+    /// BoolProperty: bDisableAnyActiveAPCChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveAPCChases
     {
@@ -669,7 +677,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActivePenguinVanChases
+    /// BoolProperty: bDisableAnyActivePenguinVanChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActivePenguinVanChases
     {
@@ -678,7 +687,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveRiddlerTrophyChases
+    /// BoolProperty: bDisableAnyActiveRiddlerTrophyChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveRiddlerTrophyChases
     {
@@ -687,7 +697,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveFireflyChases
+    /// BoolProperty: bDisableAnyActiveFireflyChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveFireflyChases
     {
@@ -795,7 +806,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DelayBeforeFadeInAfterSkip
+    /// FloatProperty: DelayBeforeFadeInAfterSkip<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float DelayBeforeFadeInAfterSkip
     {
@@ -822,7 +834,8 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MinimumThugDistance
+    /// FloatProperty: MinimumThugDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinimumThugDistance
     {

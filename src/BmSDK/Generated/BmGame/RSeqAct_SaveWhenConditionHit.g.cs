@@ -85,7 +85,8 @@ public partial class RSeqAct_SaveWhenConditionHit : BmSDK.Engine.SequenceAction,
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameRI.FDebugSaveDescription>(Ptr + 352);
 
     /// <summary>
-    /// BoolProperty: bMemoryOnlySave
+    /// BoolProperty: bMemoryOnlySave<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMemoryOnlySave
     {
@@ -112,7 +113,8 @@ public partial class RSeqAct_SaveWhenConditionHit : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// BoolProperty: bSaveWhenBatmanInCombat
+    /// BoolProperty: bSaveWhenBatmanInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSaveWhenBatmanInCombat
     {

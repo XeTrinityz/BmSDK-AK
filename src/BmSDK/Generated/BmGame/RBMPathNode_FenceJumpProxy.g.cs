@@ -165,7 +165,8 @@ public partial class RBMPathNode_FenceJumpProxy : BmSDK.BmGame.RBMPathNode_Varia
     }
 
     /// <summary>
-    /// FloatProperty: ClimbableZTolerance
+    /// FloatProperty: ClimbableZTolerance<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ClimbableZTolerance
     {

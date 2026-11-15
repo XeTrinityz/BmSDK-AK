@@ -306,7 +306,8 @@ public partial class RPawnPlayerNightwingDLC : BmSDK.BmScript.RPawnPlayerNightwi
     }
 
     /// <summary>
-    /// StructProperty: EyeGlowColour
+    /// StructProperty: EyeGlowColour<br/>
+    /// Default: (R=10,G=10,B=10,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor EyeGlowColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 10168);

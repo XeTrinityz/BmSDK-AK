@@ -109,7 +109,8 @@ public partial class SkelControl_CCD_IK : BmSDK.Engine.SkelControlBase, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 272);
 
     /// <summary>
-    /// IntProperty: NumBones
+    /// IntProperty: NumBones<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumBones
     {
@@ -118,7 +119,8 @@ public partial class SkelControl_CCD_IK : BmSDK.Engine.SkelControlBase, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: MaxPerBoneIterations
+    /// IntProperty: MaxPerBoneIterations<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxPerBoneIterations
     {
@@ -136,7 +138,8 @@ public partial class SkelControl_CCD_IK : BmSDK.Engine.SkelControlBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: Precision
+    /// FloatProperty: Precision<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float Precision
     {
@@ -181,7 +184,8 @@ public partial class SkelControl_CCD_IK : BmSDK.Engine.SkelControlBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngleSteps
+    /// FloatProperty: MaxAngleSteps<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float MaxAngleSteps
     {

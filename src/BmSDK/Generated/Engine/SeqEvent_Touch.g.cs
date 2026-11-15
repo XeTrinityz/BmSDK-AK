@@ -184,7 +184,8 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: ClassProximityTypes
+    /// ArrayProperty: ClassProximityTypes<br/>
+    /// Default: (Engine.Pawn)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Class> ClassProximityTypes
     {
@@ -202,7 +203,8 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bForceOverlapping
+    /// BoolProperty: bForceOverlapping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceOverlapping
     {

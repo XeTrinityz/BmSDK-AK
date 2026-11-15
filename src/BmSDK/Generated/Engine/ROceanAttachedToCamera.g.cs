@@ -502,7 +502,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
         }
 
         /// <summary>
-        /// ObjectProperty: DataMap
+        /// ObjectProperty: DataMap<br/>
+        /// Default: VFX_Water.WaterSystem.BM3_OceanData
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D DataMap
         {
@@ -521,7 +522,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: OceanVolumeInfo
+    /// StructProperty: OceanVolumeInfo<br/>
+    /// Default: (DataMap=VFX_Water.WaterSystem.BM3_OceanData)
     /// </summary>
     public unsafe ref BmSDK.Engine.ROceanAttachedToCamera.FFOceanVolumeInfo OceanVolumeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ROceanAttachedToCamera.FFOceanVolumeInfo>(Ptr + 748);
@@ -533,7 +535,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 784);
 
     /// <summary>
-    /// ComponentProperty: OceanComponent
+    /// ComponentProperty: OceanComponent<br/>
+    /// Default: Engine.Default__ROceanAttachedToCamera.OceanLC
     /// </summary>
     public unsafe BmSDK.Engine.ROceanComponent OceanComponent
     {
@@ -542,7 +545,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: sprayVFX
+    /// ComponentProperty: sprayVFX<br/>
+    /// Default: Engine.Default__ROceanAttachedToCamera.sprayPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent sprayVFX
     {
@@ -551,7 +555,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: sprayFarVFX
+    /// ComponentProperty: sprayFarVFX<br/>
+    /// Default: Engine.Default__ROceanAttachedToCamera.sprayFarPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent sprayFarVFX
     {
@@ -560,7 +565,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactTemplate
+    /// ObjectProperty: ImpactTemplate<br/>
+    /// Default: VFX_Water.Ocean.Ocean_Impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ImpactTemplate
     {
@@ -587,7 +593,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: numImpact
+    /// IntProperty: numImpact<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int numImpact
     {

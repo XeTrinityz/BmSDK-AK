@@ -85,7 +85,8 @@ public partial class ParticleModuleTypeDataPhysX : BmSDK.Engine.ParticleModuleTy
     public partial record struct FPhysXEmitterVerticalLodProperties
     {
         /// <summary>
-        /// FloatProperty: WeightForFifo
+        /// FloatProperty: WeightForFifo<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float WeightForFifo
         {
@@ -94,7 +95,8 @@ public partial class ParticleModuleTypeDataPhysX : BmSDK.Engine.ParticleModuleTy
         }
 
         /// <summary>
-        /// FloatProperty: WeightForSpawnLod
+        /// FloatProperty: WeightForSpawnLod<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float WeightForSpawnLod
         {
@@ -103,7 +105,8 @@ public partial class ParticleModuleTypeDataPhysX : BmSDK.Engine.ParticleModuleTy
         }
 
         /// <summary>
-        /// FloatProperty: SpawnLodRateVsLifeBias
+        /// FloatProperty: SpawnLodRateVsLifeBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpawnLodRateVsLifeBias
         {
@@ -131,7 +134,8 @@ public partial class ParticleModuleTypeDataPhysX : BmSDK.Engine.ParticleModuleTy
     }
 
     /// <summary>
-    /// StructProperty: VerticalLod
+    /// StructProperty: VerticalLod<br/>
+    /// Default: (WeightForFifo=1,WeightForSpawnLod=1,SpawnLodRateVsLifeBias=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModuleTypeDataPhysX.FPhysXEmitterVerticalLodProperties VerticalLod
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleTypeDataPhysX.FPhysXEmitterVerticalLodProperties>(Ptr + 104);

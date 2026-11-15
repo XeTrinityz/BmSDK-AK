@@ -287,7 +287,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ThreatComp
+    /// ComponentProperty: ThreatComp<br/>
+    /// Default: BmGame.Default__RTankMissile.ThreatComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleThreatComponent ThreatComp
     {
@@ -296,7 +297,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ShootCylinderComponent
+    /// ComponentProperty: ShootCylinderComponent<br/>
+    /// Default: BmGame.Default__RTankMissile.ShootCylinder
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent ShootCylinderComponent
     {
@@ -305,7 +307,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RTankMissile.RocketTrail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {
@@ -314,7 +317,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RTankMissile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent Mesh
     {
@@ -341,7 +345,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HomingDelay
+    /// FloatProperty: HomingDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float HomingDelay
     {
@@ -350,7 +355,8 @@ public partial class RTankMissile : BmSDK.BmGame.RProjectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AccelRate
+    /// FloatProperty: AccelRate<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float AccelRate
     {

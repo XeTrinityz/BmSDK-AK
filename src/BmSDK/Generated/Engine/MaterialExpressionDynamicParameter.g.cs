@@ -79,7 +79,8 @@ public partial class MaterialExpressionDynamicParameter : BmSDK.Engine.MaterialE
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: ParamNames
+    /// ArrayProperty: ParamNames<br/>
+    /// Default: ("Param1","Param2","Param3","Param4")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ParamNames
     {

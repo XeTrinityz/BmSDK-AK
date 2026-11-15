@@ -153,7 +153,8 @@ public partial class RBMAIAction_LookAtHole : BmSDK.BmGame.RBMAIAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: TimeToWait
+    /// FloatProperty: TimeToWait<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TimeToWait
     {

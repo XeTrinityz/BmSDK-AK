@@ -93,7 +93,8 @@ public partial class MObjectiveMarker : BmSDK.BmGame.RObjectiveMarker, BmSDK.IGa
     }
 
     /// <summary>
-    /// StrProperty: Filename
+    /// StrProperty: Filename<br/>
+    /// Default: "WBGMDLC_Batgirl"
     /// </summary>
     public unsafe BmSDK.FString Filename
     {

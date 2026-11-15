@@ -88,7 +88,8 @@ public partial class DrawVolumeBox : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// StructProperty: BackColor
+    /// StructProperty: BackColor<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor BackColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 544);

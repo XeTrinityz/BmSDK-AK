@@ -92,7 +92,8 @@ public partial class SeqAct_SetLocation : BmSDK.Engine.SeqAct_SetSequenceVariabl
     }
 
     /// <summary>
-    /// BoolProperty: bSetLocation
+    /// BoolProperty: bSetLocation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetLocation
     {
@@ -101,7 +102,8 @@ public partial class SeqAct_SetLocation : BmSDK.Engine.SeqAct_SetSequenceVariabl
     }
 
     /// <summary>
-    /// BoolProperty: bSetRotation
+    /// BoolProperty: bSetRotation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetRotation
     {

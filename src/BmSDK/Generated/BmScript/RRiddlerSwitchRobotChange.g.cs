@@ -211,7 +211,8 @@ public partial class RRiddlerSwitchRobotChange : BmSDK.BmScript.RRiddlerSwitch, 
     }
 
     /// <summary>
-    /// ComponentProperty: GlowDot2
+    /// ComponentProperty: GlowDot2<br/>
+    /// Default: BmScript.Default__RRiddlerSwitchRobotChange.Glow2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GlowDot2
     {

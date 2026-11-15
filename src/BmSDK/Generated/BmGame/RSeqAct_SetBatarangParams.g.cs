@@ -169,7 +169,8 @@ public partial class RSeqAct_SetBatarangParams : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: BatarangTargetBoneExclusions
+    /// ArrayProperty: BatarangTargetBoneExclusions<br/>
+    /// Default: (Bip01_Head,Bip01_Spine2,Bip01_L_Forearm,Bip01_R_Forearm,Bip01_L_Calf,Bip01_R_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BatarangTargetBoneExclusions
     {
@@ -178,7 +179,8 @@ public partial class RSeqAct_SetBatarangParams : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: OriginalBatarangTargetBones
+    /// ArrayProperty: OriginalBatarangTargetBones<br/>
+    /// Default: (Bip01_Head,Bip01_Spine2,Bip01_L_Forearm,Bip01_R_Forearm,Bip01_L_Calf,Bip01_R_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OriginalBatarangTargetBones
     {

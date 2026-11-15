@@ -2308,7 +2308,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: CachedParentToWorld
+    /// StructProperty: CachedParentToWorld<br/>
+    /// Default: (XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FMatrix CachedParentToWorld
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 240);
@@ -2332,7 +2333,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: MotionBlurInfoIndex
+    /// IntProperty: MotionBlurInfoIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MotionBlurInfoIndex
     {
@@ -2413,7 +2415,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MotionBlurInstanceScale
+    /// FloatProperty: MotionBlurInstanceScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MotionBlurInstanceScale
     {
@@ -2422,7 +2425,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: PerInstanceRandom
+    /// FloatProperty: PerInstanceRandom<br/>
+    /// Default: 0.37318033
     /// </summary>
     public unsafe float PerInstanceRandom
     {
@@ -2431,7 +2435,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: PerInstanceRandomOverride
+    /// FloatProperty: PerInstanceRandomOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PerInstanceRandomOverride
     {
@@ -2440,7 +2445,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: CullArea
+    /// FloatProperty: CullArea<br/>
+    /// Default: 1e+13
     /// </summary>
     public unsafe float CullArea
     {
@@ -2449,7 +2455,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: CullAreaMultiplier
+    /// FloatProperty: CullAreaMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CullAreaMultiplier
     {
@@ -2497,7 +2504,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 412);
 
     /// <summary>
-    /// FloatProperty: Scale
+    /// FloatProperty: Scale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Scale
     {
@@ -2506,7 +2514,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: Scale3D
+    /// StructProperty: Scale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Scale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 428);
@@ -2680,7 +2689,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowCullDistanceVolume
+    /// BoolProperty: bAllowCullDistanceVolume<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowCullDistanceVolume
     {
@@ -2959,7 +2969,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bUseAsOccluderAutomatic
+    /// BoolProperty: bUseAsOccluderAutomatic<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseAsOccluderAutomatic
     {
@@ -2968,7 +2979,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowOcclusionTesting
+    /// BoolProperty: bAllowOcclusionTesting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowOcclusionTesting
     {
@@ -2977,7 +2989,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowApproximateOcclusion
+    /// BoolProperty: bAllowApproximateOcclusion<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowApproximateOcclusion
     {
@@ -2986,7 +2999,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bUmbraUseAsOccluder
+    /// BoolProperty: bUmbraUseAsOccluder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUmbraUseAsOccluder
     {
@@ -3022,7 +3036,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bSelectable
+    /// BoolProperty: bSelectable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSelectable
     {
@@ -3067,7 +3082,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowDecalAutomaticReAttach
+    /// BoolProperty: bAllowDecalAutomaticReAttach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowDecalAutomaticReAttach
     {
@@ -3103,7 +3119,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCastDynamicShadow
+    /// BoolProperty: bCastDynamicShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastDynamicShadow
     {
@@ -3139,7 +3156,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAcceptsDynamicDominantLightShadows
+    /// BoolProperty: bAcceptsDynamicDominantLightShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAcceptsDynamicDominantLightShadows
     {
@@ -3175,7 +3193,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAcceptsDynamicLights
+    /// BoolProperty: bAcceptsDynamicLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAcceptsDynamicLights
     {
@@ -3256,7 +3275,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: CanBlockCamera
+    /// BoolProperty: CanBlockCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanBlockCamera
     {
@@ -3283,7 +3303,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bBlockFootPlacement
+    /// BoolProperty: bBlockFootPlacement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockFootPlacement
     {
@@ -3346,7 +3367,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bNotifyRigidBodyCollisionIgnoredWhenFarAway
+    /// BoolProperty: bNotifyRigidBodyCollisionIgnoredWhenFarAway<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNotifyRigidBodyCollisionIgnoredWhenFarAway
     {
@@ -3382,7 +3404,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bDisableMinCollisionThickness
+    /// BoolProperty: bDisableMinCollisionThickness<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableMinCollisionThickness
     {
@@ -3445,7 +3468,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: AlwaysLoadOnClient
+    /// BoolProperty: AlwaysLoadOnClient<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlwaysLoadOnClient
     {
@@ -3454,7 +3478,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: AlwaysLoadOnServer
+    /// BoolProperty: AlwaysLoadOnServer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlwaysLoadOnServer
     {
@@ -3499,7 +3524,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAllowShadowFade
+    /// BoolProperty: bAllowShadowFade<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowShadowFade
     {
@@ -3508,7 +3534,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bSupportedOnMobile
+    /// BoolProperty: bSupportedOnMobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSupportedOnMobile
     {
@@ -3535,7 +3562,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAddPxShapesToSceneQueryStructure
+    /// BoolProperty: bAddPxShapesToSceneQueryStructure<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAddPxShapesToSceneQueryStructure
     {
@@ -3562,7 +3590,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: VisibilityId
+    /// IntProperty: VisibilityId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int VisibilityId
     {
@@ -3571,7 +3600,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: UmbraId
+    /// IntProperty: UmbraId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UmbraId
     {
@@ -3595,7 +3625,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 512);
 
     /// <summary>
-    /// StructProperty: RBCollideWithChannels
+    /// StructProperty: RBCollideWithChannels<br/>
+    /// Default: (FlexAsset=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer RBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 516);
@@ -3616,7 +3647,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_World
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {
@@ -3634,7 +3666,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: RBDominanceGroup
+    /// ByteProperty: RBDominanceGroup<br/>
+    /// Default: 15
     /// </summary>
     public unsafe byte RBDominanceGroup
     {
@@ -3643,7 +3676,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: LevelEdgeCollectionIndex
+    /// IntProperty: LevelEdgeCollectionIndex<br/>
+    /// Default: 65535
     /// </summary>
     public unsafe int LevelEdgeCollectionIndex
     {

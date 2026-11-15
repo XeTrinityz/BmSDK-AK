@@ -395,7 +395,8 @@ public partial class RBMAIAction_SniperSearch : BmSDK.BmGame.RBMAIAction, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: ReloadID
+    /// StructProperty: ReloadID<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId ReloadID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 912);
@@ -410,7 +411,8 @@ public partial class RBMAIAction_SniperSearch : BmSDK.BmGame.RBMAIAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bFirstTimeActivate
+    /// BoolProperty: bFirstTimeActivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFirstTimeActivate
     {
@@ -478,7 +480,8 @@ public partial class RBMAIAction_SniperSearch : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<float> BetweenShotTime => new(3, Ptr + 940, 4, this);
 
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BetweenShotTime_0
     {
@@ -486,7 +489,8 @@ public partial class RBMAIAction_SniperSearch : BmSDK.BmGame.RBMAIAction, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 940); }
     }
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 1.25
     /// </summary>
     public unsafe float BetweenShotTime_1
     {
@@ -494,7 +498,8 @@ public partial class RBMAIAction_SniperSearch : BmSDK.BmGame.RBMAIAction, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 944); }
     }
     /// <summary>
-    /// FloatProperty: BetweenShotTime
+    /// FloatProperty: BetweenShotTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float BetweenShotTime_2
     {

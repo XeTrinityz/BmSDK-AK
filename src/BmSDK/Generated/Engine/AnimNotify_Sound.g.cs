@@ -88,7 +88,8 @@ public partial class AnimNotify_Sound : BmSDK.Engine.RAnimNotify_SoundBase, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bFollowActor
+    /// BoolProperty: bFollowActor<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFollowActor
     {

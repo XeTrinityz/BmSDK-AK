@@ -195,7 +195,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1296);
 
     /// <summary>
-    /// FloatProperty: MaxYaw
+    /// FloatProperty: MaxYaw<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float MaxYaw
     {
@@ -204,7 +205,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: maxPitch
+    /// FloatProperty: maxPitch<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float maxPitch
     {
@@ -213,7 +215,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: MaxX
+    /// FloatProperty: MaxX<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxX
     {
@@ -222,7 +225,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: MaxZ
+    /// FloatProperty: MaxZ<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxZ
     {
@@ -231,7 +235,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: RotSpeed
+    /// FloatProperty: RotSpeed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float RotSpeed
     {
@@ -240,7 +245,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: LocSpeed
+    /// FloatProperty: LocSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float LocSpeed
     {
@@ -249,7 +255,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: LookSpringBack
+    /// FloatProperty: LookSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookSpringBack
     {
@@ -258,7 +265,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// FloatProperty: LookLocSpringBack
+    /// FloatProperty: LookLocSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookLocSpringBack
     {
@@ -267,7 +275,8 @@ public partial class RCinematicCameraActor : BmSDK.BmGame.RAnimatedCameraActor, 
     }
 
     /// <summary>
-    /// BoolProperty: bDisableStickLook
+    /// BoolProperty: bDisableStickLook<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableStickLook
     {

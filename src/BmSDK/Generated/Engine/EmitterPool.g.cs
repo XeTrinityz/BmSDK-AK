@@ -386,7 +386,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: PSCTemplate
+    /// ComponentProperty: PSCTemplate<br/>
+    /// Default: Engine.Default__EmitterPool.ParticleSystemComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent PSCTemplate
     {
@@ -449,7 +450,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SMC_MIC_ReductionTime
+    /// FloatProperty: SMC_MIC_ReductionTime<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float SMC_MIC_ReductionTime
     {
@@ -467,7 +469,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: IdealStaticMeshComponents
+    /// IntProperty: IdealStaticMeshComponents<br/>
+    /// Default: 250
     /// </summary>
     public unsafe int IdealStaticMeshComponents
     {
@@ -476,7 +479,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: IdealMaterialInstanceConstants
+    /// IntProperty: IdealMaterialInstanceConstants<br/>
+    /// Default: 250
     /// </summary>
     public unsafe int IdealMaterialInstanceConstants
     {

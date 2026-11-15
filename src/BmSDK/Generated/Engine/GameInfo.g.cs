@@ -2560,85 +2560,99 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Map3DRenderingData
+    /// StructProperty: Map3DRenderingData<br/>
+    /// Default: (WaypointPosition=(W=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.GameInfo.FRMap3DRenderingData Map3DRenderingData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.GameInfo.FRMap3DRenderingData>(Ptr + 672);
 
     /// <summary>
-    /// StructProperty: PCColor
+    /// StructProperty: PCColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 768);
 
     /// <summary>
-    /// StructProperty: PCLineColor
+    /// StructProperty: PCLineColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCLineColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 784);
 
     /// <summary>
-    /// StructProperty: PCAmbientCol
+    /// StructProperty: PCAmbientCol<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCAmbientCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 800);
 
     /// <summary>
-    /// StructProperty: PCRadialFadeColor
+    /// StructProperty: PCRadialFadeColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCRadialFadeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 816);
 
     /// <summary>
-    /// StructProperty: PCSonarPlayerColor
+    /// StructProperty: PCSonarPlayerColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCSonarPlayerColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 832);
 
     /// <summary>
-    /// StructProperty: PCSonarWaypointColor
+    /// StructProperty: PCSonarWaypointColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCSonarWaypointColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 848);
 
     /// <summary>
-    /// StructProperty: PCHL_Building
+    /// StructProperty: PCHL_Building<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_Building
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 864);
 
     /// <summary>
-    /// StructProperty: PCHL_FireCrew
+    /// StructProperty: PCHL_FireCrew<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_FireCrew
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 880);
 
     /// <summary>
-    /// StructProperty: PCHL_ManBat
+    /// StructProperty: PCHL_ManBat<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_ManBat
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 896);
 
     /// <summary>
-    /// StructProperty: PCHL_Azrael
+    /// StructProperty: PCHL_Azrael<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_Azrael
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 912);
 
     /// <summary>
-    /// StructProperty: PCHL_PygVictim
+    /// StructProperty: PCHL_PygVictim<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_PygVictim
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 928);
 
     /// <summary>
-    /// StructProperty: PCHL_RiddlerBombThug
+    /// StructProperty: PCHL_RiddlerBombThug<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_RiddlerBombThug
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 944);
 
     /// <summary>
-    /// StructProperty: PCHL_RiddlerCameo
+    /// StructProperty: PCHL_RiddlerCameo<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PCHL_RiddlerCameo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 960);
@@ -2707,7 +2721,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bRestartLevel
+    /// BoolProperty: bRestartLevel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRestartLevel
     {
@@ -2716,7 +2731,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPauseable
+    /// BoolProperty: bPauseable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseable
     {
@@ -2752,7 +2768,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDelayedStart
+    /// BoolProperty: bDelayedStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDelayedStart
     {
@@ -2770,7 +2787,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bChangeLevels
+    /// BoolProperty: bChangeLevels<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bChangeLevels
     {
@@ -2941,7 +2959,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OWLightFadeAmount
+    /// FloatProperty: OWLightFadeAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OWLightFadeAmount
     {
@@ -3004,7 +3023,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GameDifficulty
+    /// FloatProperty: GameDifficulty<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GameDifficulty
     {
@@ -3022,7 +3042,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GameSpeed
+    /// FloatProperty: GameSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GameSpeed
     {
@@ -3040,7 +3061,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: HUDType
+    /// ClassProperty: HUDType<br/>
+    /// Default: Engine.HUD
     /// </summary>
     public unsafe BmSDK.Class HUDType
     {
@@ -3067,7 +3089,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxSpectatorsAllowed
+    /// IntProperty: MaxSpectatorsAllowed<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int MaxSpectatorsAllowed
     {
@@ -3085,7 +3108,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPlayers
+    /// IntProperty: MaxPlayers<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MaxPlayers
     {
@@ -3094,7 +3118,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPlayersAllowed
+    /// IntProperty: MaxPlayersAllowed<br/>
+    /// Default: 32
     /// </summary>
     public unsafe int MaxPlayersAllowed
     {
@@ -3130,7 +3155,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CurrentID
+    /// IntProperty: CurrentID<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int CurrentID
     {
@@ -3139,7 +3165,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultPlayerName
+    /// StrProperty: DefaultPlayerName<br/>
+    /// Default: "Player"
     /// </summary>
     public unsafe BmSDK.FString DefaultPlayerName
     {
@@ -3148,7 +3175,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: GameName
+    /// StrProperty: GameName<br/>
+    /// Default: "Game"
     /// </summary>
     public unsafe BmSDK.FString GameName
     {
@@ -3157,7 +3185,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FearCostFallOff
+    /// FloatProperty: FearCostFallOff<br/>
+    /// Default: 0.95
     /// </summary>
     public unsafe float FearCostFallOff
     {
@@ -3193,7 +3222,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DeathMessageClass
+    /// ClassProperty: DeathMessageClass<br/>
+    /// Default: Engine.LocalMessage
     /// </summary>
     public unsafe BmSDK.Class DeathMessageClass
     {
@@ -3202,7 +3232,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: GameMessageClass
+    /// ClassProperty: GameMessageClass<br/>
+    /// Default: Engine.GameMessage
     /// </summary>
     public unsafe BmSDK.Class GameMessageClass
     {
@@ -3247,7 +3278,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: StreamingPauseIcon
+    /// ObjectProperty: StreamingPauseIcon<br/>
+    /// Default: EngineResources.M_StreamingPause
     /// </summary>
     public unsafe BmSDK.Engine.Material StreamingPauseIcon
     {
@@ -3274,7 +3306,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: GameReplicationInfoClass
+    /// ClassProperty: GameReplicationInfoClass<br/>
+    /// Default: Engine.GameReplicationInfo
     /// </summary>
     public unsafe BmSDK.Class GameReplicationInfoClass
     {
@@ -3283,7 +3316,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: PlayerReplicationInfoClass
+    /// ClassProperty: PlayerReplicationInfoClass<br/>
+    /// Default: Engine.PlayerReplicationInfo
     /// </summary>
     public unsafe BmSDK.Class PlayerReplicationInfoClass
     {
@@ -3292,7 +3326,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: PlayerControllerClass
+    /// ClassProperty: PlayerControllerClass<br/>
+    /// Default: Engine.PlayerController
     /// </summary>
     public unsafe BmSDK.Class PlayerControllerClass
     {
@@ -3301,7 +3336,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: AccessControlClass
+    /// ClassProperty: AccessControlClass<br/>
+    /// Default: Engine.AccessControl
     /// </summary>
     public unsafe BmSDK.Class AccessControlClass
     {
@@ -3328,7 +3364,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeMarginSlack
+    /// FloatProperty: TimeMarginSlack<br/>
+    /// Default: 1.35
     /// </summary>
     public unsafe float TimeMarginSlack
     {
@@ -3337,7 +3374,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeMargin
+    /// FloatProperty: MinTimeMargin<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinTimeMargin
     {
@@ -3373,7 +3411,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: LeaderboardId
+    /// IntProperty: LeaderboardId<br/>
+    /// Default: -131072
     /// </summary>
     public unsafe int LeaderboardId
     {
@@ -3382,7 +3421,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ArbitratedLeaderboardId
+    /// IntProperty: ArbitratedLeaderboardId<br/>
+    /// Default: -65536
     /// </summary>
     public unsafe int ArbitratedLeaderboardId
     {
@@ -3418,7 +3458,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: TotalNetBandwidth
+    /// IntProperty: TotalNetBandwidth<br/>
+    /// Default: 32000
     /// </summary>
     public unsafe int TotalNetBandwidth
     {
@@ -3427,7 +3468,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinDynamicBandwidth
+    /// IntProperty: MinDynamicBandwidth<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe int MinDynamicBandwidth
     {
@@ -3436,7 +3478,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxDynamicBandwidth
+    /// IntProperty: MaxDynamicBandwidth<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe int MaxDynamicBandwidth
     {

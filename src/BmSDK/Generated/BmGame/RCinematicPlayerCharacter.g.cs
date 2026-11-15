@@ -349,7 +349,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
     }
 
     /// <summary>
-    /// ComponentProperty: ToggleableHairMesh
+    /// ComponentProperty: ToggleableHairMesh<br/>
+    /// Default: BmGame.Default__RCinematicPlayerCharacter.ToggleableHairMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ToggleableHairMesh
     {

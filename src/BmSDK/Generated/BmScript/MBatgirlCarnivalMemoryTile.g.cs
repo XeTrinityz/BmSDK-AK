@@ -152,7 +152,8 @@ public partial class MBatgirlCarnivalMemoryTile : BmSDK.BmScript.MBatgirlCarniva
     }
 
     /// <summary>
-    /// ComponentProperty: TileMesh
+    /// ComponentProperty: TileMesh<br/>
+    /// Default: BmScript.Default__MBatgirlCarnivalMemoryTile.Mesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent TileMesh
     {

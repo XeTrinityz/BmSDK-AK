@@ -309,7 +309,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// BoolProperty: bCanCancelTakedown
+    /// BoolProperty: bCanCancelTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCancelTakedown
     {
@@ -381,7 +382,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// BoolProperty: bPerformFearTakedownCheckFromBatmansPosition
+    /// BoolProperty: bPerformFearTakedownCheckFromBatmansPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPerformFearTakedownCheckFromBatmansPosition
     {
@@ -399,7 +401,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// ByteProperty: SpecialGrateFinish
+    /// ByteProperty: SpecialGrateFinish<br/>
+    /// Default: ESTDS_StealthTakeDownStageMAX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages SpecialGrateFinish
     {
@@ -408,7 +411,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// ByteProperty: SpecialLedgeFinish
+    /// ByteProperty: SpecialLedgeFinish<br/>
+    /// Default: ESTDS_StealthTakeDownStageMAX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages SpecialLedgeFinish
     {
@@ -417,7 +421,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// ByteProperty: SpecialGrappleFinish
+    /// ByteProperty: SpecialGrappleFinish<br/>
+    /// Default: ESTDS_StealthTakeDownStageMAX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages SpecialGrappleFinish
     {
@@ -444,7 +449,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// ObjectProperty: QuickTakedownHintRumble
+    /// ObjectProperty: QuickTakedownHintRumble<br/>
+    /// Default: BmGame.Default__RStealthTakedownStageQuickBase.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform QuickTakedownHintRumble
     {
@@ -453,7 +459,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// FloatProperty: QuickTakedownDelay
+    /// FloatProperty: QuickTakedownDelay<br/>
+    /// Default: 0.6666
     /// </summary>
     public unsafe float QuickTakedownDelay
     {
@@ -462,7 +469,8 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     }
 
     /// <summary>
-    /// IntProperty: BombStage
+    /// IntProperty: BombStage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BombStage
     {

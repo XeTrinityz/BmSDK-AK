@@ -270,7 +270,8 @@ public partial class RBMBehaviour_MoveToRandomPoint : BmSDK.BmGame.RBMBehaviour,
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 636);
 
     /// <summary>
-    /// BoolProperty: bUsePoints
+    /// BoolProperty: bUsePoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsePoints
     {

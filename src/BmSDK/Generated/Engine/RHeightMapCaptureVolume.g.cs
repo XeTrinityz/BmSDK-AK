@@ -594,7 +594,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: globalAmbientOcclusionPower
+    /// FloatProperty: globalAmbientOcclusionPower<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float globalAmbientOcclusionPower
     {
@@ -609,7 +610,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RHeightMapCaptureVolume.FFHeightMapVolumeInfo>(Ptr + 752);
 
     /// <summary>
-    /// ComponentProperty: WindComponent
+    /// ComponentProperty: WindComponent<br/>
+    /// Default: Engine.Default__RHeightMapCaptureVolume.WindComponent0
     /// </summary>
     public unsafe BmSDK.Engine.WindDirectionalSourceComponent WindComponent
     {
@@ -618,7 +620,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: Resolution
+    /// IntProperty: Resolution<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe int Resolution
     {

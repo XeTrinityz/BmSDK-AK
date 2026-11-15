@@ -28792,7 +28792,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GauntletProjectorArchetype
+    /// ObjectProperty: GauntletProjectorArchetype<br/>
+    /// Default: Batman_Archetypes.GauntletProjector.BatmanGauntletProjector
     /// </summary>
     public unsafe BmSDK.BmGame.RGauntletProjector GauntletProjectorArchetype
     {
@@ -28990,7 +28991,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: SurveillanceParticleEffectTemplate
+    /// ObjectProperty: SurveillanceParticleEffectTemplate<br/>
+    /// Default: VFX_Forensics.Particles.PhonePulse
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SurveillanceParticleEffectTemplate
     {
@@ -28999,7 +29001,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: SurveillanceParticleEffectTemplate_Helicopter
+    /// ObjectProperty: SurveillanceParticleEffectTemplate_Helicopter<br/>
+    /// Default: VFX_Forensics.Particles.ChopperPulse
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SurveillanceParticleEffectTemplate_Helicopter
     {
@@ -29026,7 +29029,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: UIOptionRumble
+    /// ObjectProperty: UIOptionRumble<br/>
+    /// Default: BmGame.Default__RPlayerController.ForceFeedbackWaveformUI
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform UIOptionRumble
     {
@@ -29152,7 +29156,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: CartoonPP
+    /// ObjectProperty: CartoonPP<br/>
+    /// Default: BmGame.Default__RPlayerController.CVPP
     /// </summary>
     public unsafe BmSDK.BmGame.RCartoonViewPostProcess CartoonPP
     {
@@ -29161,7 +29166,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: BackScreenPP
+    /// ObjectProperty: BackScreenPP<br/>
+    /// Default: BmGame.Default__RPlayerController.BSVPP
     /// </summary>
     public unsafe BmSDK.BmGame.RBackScreenViewPostProcess BackScreenPP
     {
@@ -29170,7 +29176,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: PhotoPP
+    /// ObjectProperty: PhotoPP<br/>
+    /// Default: BmGame.Default__RPlayerController.PVPP
     /// </summary>
     public unsafe BmSDK.BmGame.RPhotoViewPostProcess PhotoPP
     {
@@ -29179,7 +29186,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: FlashPP
+    /// ObjectProperty: FlashPP<br/>
+    /// Default: BmGame.Default__RPlayerController.FVPP
     /// </summary>
     public unsafe BmSDK.BmGame.RFlashViewPostProcess FlashPP
     {
@@ -29593,7 +29601,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GlidePostProcess
+    /// ObjectProperty: GlidePostProcess<br/>
+    /// Default: BmGame.Default__RPlayerController.GlidePP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess GlidePostProcess
     {
@@ -29602,7 +29611,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: FearTakedownPostProcess
+    /// ObjectProperty: FearTakedownPostProcess<br/>
+    /// Default: BmGame.Default__RPlayerController.FearTDPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess FearTakedownPostProcess
     {
@@ -29611,7 +29621,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerDamagePostProcess
+    /// ObjectProperty: PlayerDamagePostProcess<br/>
+    /// Default: BmGame.Default__RPlayerController.DamagePP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess PlayerDamagePostProcess
     {
@@ -29746,7 +29757,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: DiveBombFFWaveForm
+    /// ObjectProperty: DiveBombFFWaveForm<br/>
+    /// Default: BmGame.Default__RPlayerController.DiveBombForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DiveBombFFWaveForm
     {
@@ -30151,7 +30163,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: DrivingBoostFeedback
+    /// ObjectProperty: DrivingBoostFeedback<br/>
+    /// Default: BmGame.Default__RPlayerController.DrivingForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DrivingBoostFeedback
     {
@@ -30160,7 +30173,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: DrivingSlideFeedback
+    /// ObjectProperty: DrivingSlideFeedback<br/>
+    /// Default: BmGame.Default__RPlayerController.DrivingSlideFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DrivingSlideFeedback
     {
@@ -30322,7 +30336,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: HeavyTankArrowTexture
+    /// ObjectProperty: HeavyTankArrowTexture<br/>
+    /// Default: HUD.ui_arrow_m
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface HeavyTankArrowTexture
     {
@@ -30340,7 +30355,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: LocalCharacterLightArchetype
+    /// ObjectProperty: LocalCharacterLightArchetype<br/>
+    /// Default: Batman_Archetypes.Lighting.LocalLightContainer
     /// </summary>
     public unsafe BmSDK.BmGame.RLocalLightContainer LocalCharacterLightArchetype
     {
@@ -30430,7 +30446,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: EnvironmentChecker
+    /// ComponentProperty: EnvironmentChecker<br/>
+    /// Default: BmGame.Default__RPlayerController.EnvironmentTicker
     /// </summary>
     public unsafe BmSDK.BmGame.REnvironmentCheckTicker EnvironmentChecker
     {
@@ -30484,7 +30501,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysShowClimbDownPrompt
+    /// BoolProperty: bAlwaysShowClimbDownPrompt<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysShowClimbDownPrompt
     {
@@ -30736,7 +30754,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bUsingGamepadStored
+    /// BoolProperty: bUsingGamepadStored<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsingGamepadStored
     {
@@ -30835,7 +30854,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysShowVehicleRadar
+    /// BoolProperty: bAlwaysShowVehicleRadar<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysShowVehicleRadar
     {
@@ -31015,7 +31035,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAllowCartoonPP
+    /// BoolProperty: bAllowCartoonPP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowCartoonPP
     {
@@ -31258,7 +31279,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAllowedToUseIteractableItems
+    /// BoolProperty: bAllowedToUseIteractableItems<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowedToUseIteractableItems
     {
@@ -31636,7 +31658,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: UseRailingJumpAssistance
+    /// BoolProperty: UseRailingJumpAssistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseRailingJumpAssistance
     {
@@ -31789,7 +31812,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: SlideOnTapRT
+    /// BoolProperty: SlideOnTapRT<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SlideOnTapRT
     {
@@ -31834,7 +31858,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bGrappleBetweenVantagePoints
+    /// BoolProperty: bGrappleBetweenVantagePoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGrappleBetweenVantagePoints
     {
@@ -31969,7 +31994,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: ButtonCover
+    /// BoolProperty: ButtonCover<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ButtonCover
     {
@@ -31996,7 +32022,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bLeftTriggerBatarang
+    /// BoolProperty: bLeftTriggerBatarang<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLeftTriggerBatarang
     {
@@ -32608,7 +32635,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bNewQuickGadgetControls
+    /// BoolProperty: bNewQuickGadgetControls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNewQuickGadgetControls
     {
@@ -32653,7 +32681,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSlowdownAllowed
+    /// BoolProperty: bSlowdownAllowed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSlowdownAllowed
     {
@@ -32914,7 +32943,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bShowVehicleThreats
+    /// BoolProperty: bShowVehicleThreats<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowVehicleThreats
     {
@@ -32923,7 +32953,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bModernControls
+    /// BoolProperty: bModernControls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bModernControls
     {
@@ -33121,7 +33152,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: AlternativeWalk
+    /// BoolProperty: AlternativeWalk<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlternativeWalk
     {
@@ -33130,7 +33162,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: AlternativeWalkAllowCameraTurn
+    /// BoolProperty: AlternativeWalkAllowCameraTurn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlternativeWalkAllowCameraTurn
     {
@@ -33553,7 +33586,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ByteProperty: MapKeyActiveType
+    /// ByteProperty: MapKeyActiveType<br/>
+    /// Default: MK_Default
     /// </summary>
     public unsafe BmSDK.BmGame.RPlayerController.MapKeyType MapKeyActiveType
     {
@@ -33562,7 +33596,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ByteProperty: LastCharacterBioUnlocked
+    /// ByteProperty: LastCharacterBioUnlocked<br/>
+    /// Default: BioCharacter_MAX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EBioCharacter LastCharacterBioUnlocked
     {
@@ -33589,7 +33624,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ByteProperty: MostWantedLeaderboardId
+    /// ByteProperty: MostWantedLeaderboardId<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte MostWantedLeaderboardId
     {
@@ -33634,7 +33670,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ByteProperty: CapeGlideBoostRumbleFunctionRight
+    /// ByteProperty: CapeGlideBoostRumbleFunctionRight<br/>
+    /// Default: WF_Noise
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform.EWaveformFunction CapeGlideBoostRumbleFunctionRight
     {
@@ -33730,7 +33767,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3524);
 
     /// <summary>
-    /// ArrayProperty: PlayableCharactersV2
+    /// ArrayProperty: PlayableCharactersV2<br/>
+    /// Default: ((BaseId=7,Name="DLC_HarleyQuinn",LDRef="DLC1.UI.HarleyQuinn"),(BaseId=9,Name="DLC_RedHood",LDRef="DLC1.UI.RedHood"),(BaseId=8,Name="DLC_Batgirl",LDRef="DLC1.UI.Batgirl"))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPlayerController.FPlayableCharacterItem> PlayableCharactersV2
     {
@@ -33757,7 +33795,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: MapUseCurrentLevelInstead
+    /// ArrayProperty: MapUseCurrentLevelInstead<br/>
+    /// Default: ("Bank","PenguinCache")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> MapUseCurrentLevelInstead
     {
@@ -33766,7 +33805,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: MapCityTransitionRemaps
+    /// ArrayProperty: MapCityTransitionRemaps<br/>
+    /// Default: ((A="Orphan_A1",B="Orphan_A1"),(A="Orphan_01",B="Orphan_A1"),(A="Orphan_04",B="Orphan_A1"),(A="Orphan_09",B="Orphan_A1"),(A="Orphan_15",B="Orphan_A1"),(A="Orphan_C2",B="Orphan_C2"),(A="Orphan_C3",B="O...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPlayerController.FRemapStringAtoB> MapCityTransitionRemaps
     {
@@ -33820,7 +33860,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: VoiceRecList
+    /// ArrayProperty: VoiceRecList<br/>
+    /// Default: ("GADGETS_BATARANG","GADGETS_BATCLAW","GADGETS_EXPLOSIVEGEL","GADGETS_LINELAUNCHER","GENERAL_BATMOBILE","GENERAL_MOSTWANTEDUPDATE","GENERAL_PAUSEGAME","GENERAL_OPENMAP")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> VoiceRecList
     {
@@ -33982,7 +34023,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: TestFillLBUserIndex
+    /// IntProperty: TestFillLBUserIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TestFillLBUserIndex
     {
@@ -34027,7 +34069,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeSinceDisplayedHealthBar
+    /// FloatProperty: TimeSinceDisplayedHealthBar<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float TimeSinceDisplayedHealthBar
     {
@@ -34036,7 +34079,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PeriodBeforeHideHealthBar
+    /// FloatProperty: PeriodBeforeHideHealthBar<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PeriodBeforeHideHealthBar
     {
@@ -34045,7 +34089,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: InitialUpgradeDelay
+    /// IntProperty: InitialUpgradeDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int InitialUpgradeDelay
     {
@@ -34054,7 +34099,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: LastPointsToSpend
+    /// IntProperty: LastPointsToSpend<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LastPointsToSpend
     {
@@ -34099,7 +34145,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fHelicopterFlightControlHorizThreshold
+    /// FloatProperty: fHelicopterFlightControlHorizThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float fHelicopterFlightControlHorizThreshold
     {
@@ -34108,7 +34155,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fHelicopterFlightControlVertSeparation
+    /// FloatProperty: fHelicopterFlightControlVertSeparation<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float fHelicopterFlightControlVertSeparation
     {
@@ -34126,7 +34174,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: LastTimeEvidenceFound
+    /// FloatProperty: LastTimeEvidenceFound<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastTimeEvidenceFound
     {
@@ -34231,7 +34280,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: iHudScoreScore
+    /// IntProperty: iHudScoreScore<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iHudScoreScore
     {
@@ -34240,7 +34290,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: iHudScoreOpponent
+    /// IntProperty: iHudScoreOpponent<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iHudScoreOpponent
     {
@@ -34267,7 +34318,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: iOtherPlayerHealth
+    /// IntProperty: iOtherPlayerHealth<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int iOtherPlayerHealth
     {
@@ -34276,7 +34328,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: iOtherPlayerMaxHealth
+    /// IntProperty: iOtherPlayerMaxHealth<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int iOtherPlayerMaxHealth
     {
@@ -34309,7 +34362,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPlayerController.FHudComboData>(Ptr + 4124);
 
     /// <summary>
-    /// IntProperty: iHead2HeadBank
+    /// IntProperty: iHead2HeadBank<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iHead2HeadBank
     {
@@ -34360,7 +34414,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: DelayLiveChecking
+    /// IntProperty: DelayLiveChecking<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int DelayLiveChecking
     {
@@ -34405,7 +34460,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CartoonPPSpeedMulDown
+    /// FloatProperty: CartoonPPSpeedMulDown<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CartoonPPSpeedMulDown
     {
@@ -34414,7 +34470,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CartoonPPSpeedMulUp
+    /// FloatProperty: CartoonPPSpeedMulUp<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CartoonPPSpeedMulUp
     {
@@ -34432,7 +34489,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BackScreenPPSpeedMulDown
+    /// FloatProperty: BackScreenPPSpeedMulDown<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BackScreenPPSpeedMulDown
     {
@@ -34441,7 +34499,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BackScreenPPSpeedMulUp
+    /// FloatProperty: BackScreenPPSpeedMulUp<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BackScreenPPSpeedMulUp
     {
@@ -34450,7 +34509,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PhotoPPTimer
+    /// FloatProperty: PhotoPPTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PhotoPPTimer
     {
@@ -34459,7 +34519,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FlashPPTimer
+    /// FloatProperty: FlashPPTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FlashPPTimer
     {
@@ -34477,7 +34538,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GrappleAimTime
+    /// FloatProperty: GrappleAimTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float GrappleAimTime
     {
@@ -34486,7 +34548,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeToWaitForGrappleAim
+    /// FloatProperty: TimeToWaitForGrappleAim<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TimeToWaitForGrappleAim
     {
@@ -34582,7 +34645,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CurrTakedowns
+    /// IntProperty: CurrTakedowns<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int CurrTakedowns
     {
@@ -34591,7 +34655,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: MaxTakedowns
+    /// IntProperty: MaxTakedowns<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxTakedowns
     {
@@ -34678,7 +34743,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ForensicsBloomValue
+    /// FloatProperty: ForensicsBloomValue<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ForensicsBloomValue
     {
@@ -34819,7 +34885,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 4848);
 
     /// <summary>
-    /// FloatProperty: CapeGlideTerminalVelocity
+    /// FloatProperty: CapeGlideTerminalVelocity<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float CapeGlideTerminalVelocity
     {
@@ -34828,7 +34895,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxCapeGlideTerminalVelocity
+    /// FloatProperty: MaxCapeGlideTerminalVelocity<br/>
+    /// Default: 2400
     /// </summary>
     public unsafe float MaxCapeGlideTerminalVelocity
     {
@@ -34837,7 +34905,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideAccelRate
+    /// FloatProperty: CapeGlideAccelRate<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float CapeGlideAccelRate
     {
@@ -34846,7 +34915,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMaxLevelOffAlt
+    /// FloatProperty: CapeGlideMaxLevelOffAlt<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float CapeGlideMaxLevelOffAlt
     {
@@ -34855,7 +34925,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMinLevelOffAlt
+    /// FloatProperty: CapeGlideMinLevelOffAlt<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float CapeGlideMinLevelOffAlt
     {
@@ -34873,7 +34944,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GlideBoostSoundParamRampUpTime
+    /// FloatProperty: GlideBoostSoundParamRampUpTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GlideBoostSoundParamRampUpTime
     {
@@ -34882,7 +34954,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: BoostGlideMinCameraPitch
+    /// IntProperty: BoostGlideMinCameraPitch<br/>
+    /// Default: -3000
     /// </summary>
     public unsafe int BoostGlideMinCameraPitch
     {
@@ -34891,7 +34964,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideCameraTurnSpeed
+    /// FloatProperty: CapeGlideCameraTurnSpeed<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float CapeGlideCameraTurnSpeed
     {
@@ -34900,7 +34974,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SimpleGlideBoostDelay
+    /// FloatProperty: SimpleGlideBoostDelay<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float SimpleGlideBoostDelay
     {
@@ -34909,7 +34984,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GadgetsWhileGlidingRange
+    /// FloatProperty: GadgetsWhileGlidingRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float GadgetsWhileGlidingRange
     {
@@ -34918,7 +34994,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideCeilingDropRate
+    /// FloatProperty: CapeGlideCeilingDropRate<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float CapeGlideCeilingDropRate
     {
@@ -34927,7 +35004,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideCeilingSpeedFactor
+    /// FloatProperty: CapeGlideCeilingSpeedFactor<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CapeGlideCeilingSpeedFactor
     {
@@ -34972,7 +35050,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeForSilentAttack
+    /// FloatProperty: TimeForSilentAttack<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeForSilentAttack
     {
@@ -34987,7 +35066,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 5052);
 
     /// <summary>
-    /// FloatProperty: CapeGlideTurnProp
+    /// FloatProperty: CapeGlideTurnProp<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float CapeGlideTurnProp
     {
@@ -34996,7 +35076,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideRollSpeed
+    /// FloatProperty: CapeGlideRollSpeed<br/>
+    /// Default: 9000
     /// </summary>
     public unsafe float CapeGlideRollSpeed
     {
@@ -35005,7 +35086,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideYawRollRate
+    /// FloatProperty: CapeGlideYawRollRate<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CapeGlideYawRollRate
     {
@@ -35014,7 +35096,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideMaxPitch
+    /// IntProperty: CapeGlideMaxPitch<br/>
+    /// Default: -2548
     /// </summary>
     public unsafe int CapeGlideMaxPitch
     {
@@ -35023,7 +35106,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideMinPitch
+    /// IntProperty: CapeGlideMinPitch<br/>
+    /// Default: -15000
     /// </summary>
     public unsafe int CapeGlideMinPitch
     {
@@ -35032,7 +35116,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeBoostMaxPitch
+    /// IntProperty: CapeBoostMaxPitch<br/>
+    /// Default: -7000
     /// </summary>
     public unsafe int CapeBoostMaxPitch
     {
@@ -35041,7 +35126,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlidePitchRate
+    /// FloatProperty: CapeGlidePitchRate<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float CapeGlidePitchRate
     {
@@ -35050,7 +35136,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlidePitchAccel
+    /// FloatProperty: CapeGlidePitchAccel<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float CapeGlidePitchAccel
     {
@@ -35059,7 +35146,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMinSpeed
+    /// FloatProperty: CapeGlideMinSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float CapeGlideMinSpeed
     {
@@ -35068,7 +35156,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMaxSpeed
+    /// FloatProperty: CapeGlideMaxSpeed<br/>
+    /// Default: 2200
     /// </summary>
     public unsafe float CapeGlideMaxSpeed
     {
@@ -35077,7 +35166,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideAccel
+    /// FloatProperty: CapeGlideAccel<br/>
+    /// Default: 66
     /// </summary>
     public unsafe float CapeGlideAccel
     {
@@ -35086,7 +35176,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideDecel
+    /// FloatProperty: CapeGlideDecel<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CapeGlideDecel
     {
@@ -35095,7 +35186,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideQuickAccel
+    /// FloatProperty: CapeGlideQuickAccel<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float CapeGlideQuickAccel
     {
@@ -35104,7 +35196,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideOverworldMinSpeed
+    /// FloatProperty: CapeGlideOverworldMinSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CapeGlideOverworldMinSpeed
     {
@@ -35113,7 +35206,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMinDipTime
+    /// FloatProperty: CapeGlideMinDipTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CapeGlideMinDipTime
     {
@@ -35122,7 +35216,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideMaxDipTime
+    /// FloatProperty: CapeGlideMaxDipTime<br/>
+    /// Default: 18
     /// </summary>
     public unsafe float CapeGlideMaxDipTime
     {
@@ -35131,7 +35226,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideDippedMaxPitch
+    /// IntProperty: CapeGlideDippedMaxPitch<br/>
+    /// Default: -8000
     /// </summary>
     public unsafe int CapeGlideDippedMaxPitch
     {
@@ -35140,7 +35236,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringMaxPitchVelocityDiff
+    /// FloatProperty: CapeSoaringMaxPitchVelocityDiff<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CapeSoaringMaxPitchVelocityDiff
     {
@@ -35149,7 +35246,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringMaxPitchPower
+    /// FloatProperty: CapeSoaringMaxPitchPower<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CapeSoaringMaxPitchPower
     {
@@ -35158,7 +35256,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringMaxAngle
+    /// FloatProperty: CapeSoaringMaxAngle<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float CapeSoaringMaxAngle
     {
@@ -35167,7 +35266,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringVelocityPower
+    /// FloatProperty: CapeSoaringVelocityPower<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CapeSoaringVelocityPower
     {
@@ -35176,7 +35276,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringMinSpeed
+    /// FloatProperty: CapeSoaringMinSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CapeSoaringMinSpeed
     {
@@ -35185,7 +35286,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringDecelPower
+    /// FloatProperty: CapeSoaringDecelPower<br/>
+    /// Default: 1.75
     /// </summary>
     public unsafe float CapeSoaringDecelPower
     {
@@ -35194,7 +35296,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringExtraDecel
+    /// FloatProperty: CapeSoaringExtraDecel<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CapeSoaringExtraDecel
     {
@@ -35203,7 +35306,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlidePitchPower
+    /// FloatProperty: CapeGlidePitchPower<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CapeGlidePitchPower
     {
@@ -35212,7 +35316,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringExtraPullUp
+    /// FloatProperty: CapeSoaringExtraPullUp<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CapeSoaringExtraPullUp
     {
@@ -35221,7 +35326,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringPullUpAssist
+    /// FloatProperty: CapeSoaringPullUpAssist<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CapeSoaringPullUpAssist
     {
@@ -35230,7 +35336,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeSoaringPullUpAssistTime
+    /// FloatProperty: CapeSoaringPullUpAssistTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CapeSoaringPullUpAssistTime
     {
@@ -35239,7 +35346,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideCameraTurnStrength
+    /// FloatProperty: CapeGlideCameraTurnStrength<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CapeGlideCameraTurnStrength
     {
@@ -35248,7 +35356,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BoostGlideAccelModifier
+    /// FloatProperty: BoostGlideAccelModifier<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float BoostGlideAccelModifier
     {
@@ -35290,7 +35399,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DodgeMax
+    /// FloatProperty: DodgeMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DodgeMax
     {
@@ -35320,7 +35430,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DesiredGlidePPStrength
+    /// FloatProperty: DesiredGlidePPStrength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DesiredGlidePPStrength
     {
@@ -35347,7 +35458,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GlidePPMaxStrength
+    /// FloatProperty: GlidePPMaxStrength<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float GlidePPMaxStrength
     {
@@ -35416,7 +35528,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AboveTakedownExtraCeilingSpace
+    /// FloatProperty: AboveTakedownExtraCeilingSpace<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float AboveTakedownExtraCeilingSpace
     {
@@ -35425,7 +35538,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DropToGrabMaxHeight
+    /// FloatProperty: DropToGrabMaxHeight<br/>
+    /// Default: 768
     /// </summary>
     public unsafe float DropToGrabMaxHeight
     {
@@ -35434,7 +35548,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SwingDownFromAboveTakedownMaxHeight
+    /// FloatProperty: SwingDownFromAboveTakedownMaxHeight<br/>
+    /// Default: 1536
     /// </summary>
     public unsafe float SwingDownFromAboveTakedownMaxHeight
     {
@@ -35443,7 +35558,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AboveTakedownHorizontalRange
+    /// FloatProperty: AboveTakedownHorizontalRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float AboveTakedownHorizontalRange
     {
@@ -35452,7 +35568,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AboveTakedownHorizontalRange512
+    /// FloatProperty: AboveTakedownHorizontalRange512<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float AboveTakedownHorizontalRange512
     {
@@ -35506,7 +35623,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5616);
 
     /// <summary>
-    /// FloatProperty: GrappleLegPullUpSpeed
+    /// FloatProperty: GrappleLegPullUpSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GrappleLegPullUpSpeed
     {
@@ -35533,7 +35651,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideFromVantagePointPitchOffset
+    /// IntProperty: CapeGlideFromVantagePointPitchOffset<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int CapeGlideFromVantagePointPitchOffset
     {
@@ -35542,7 +35661,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GlideBoostRumbleDescentMin
+    /// FloatProperty: GlideBoostRumbleDescentMin<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float GlideBoostRumbleDescentMin
     {
@@ -35551,7 +35671,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GlideBoostRumbleDescentMax
+    /// FloatProperty: GlideBoostRumbleDescentMax<br/>
+    /// Default: 1600
     /// </summary>
     public unsafe float GlideBoostRumbleDescentMax
     {
@@ -35560,7 +35681,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideBoostMaxRumbleLeft
+    /// IntProperty: CapeGlideBoostMaxRumbleLeft<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int CapeGlideBoostMaxRumbleLeft
     {
@@ -35569,7 +35691,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: CapeGlideBoostMaxRumbleRight
+    /// IntProperty: CapeGlideBoostMaxRumbleRight<br/>
+    /// Default: 60
     /// </summary>
     public unsafe int CapeGlideBoostMaxRumbleRight
     {
@@ -35620,7 +35743,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5688);
 
     /// <summary>
-    /// FloatProperty: FallingAttackHeight
+    /// FloatProperty: FallingAttackHeight<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FallingAttackHeight
     {
@@ -35647,7 +35771,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DamageEffectDropOff
+    /// FloatProperty: DamageEffectDropOff<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageEffectDropOff
     {
@@ -35656,7 +35781,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxDamageEffectDamage
+    /// FloatProperty: MaxDamageEffectDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxDamageEffectDamage
     {
@@ -35665,7 +35791,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DamageEffectDelay
+    /// FloatProperty: DamageEffectDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float DamageEffectDelay
     {
@@ -35710,7 +35837,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: MovementStates
+    /// ArrayProperty: MovementStates<br/>
+    /// Default: (WalkingMode,StealthMoveMode,RunningMode,LedgePerch,Stealth,InvestigationMode,ChargeStrikeMoveMode)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MovementStates
     {
@@ -35719,7 +35847,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: MovementStateSelected
+    /// ArrayProperty: MovementStateSelected<br/>
+    /// Default: (true,false,false,false,false,false,false)
     /// </summary>
     public unsafe BmSDK.TArray<bool> MovementStateSelected
     {
@@ -35737,7 +35866,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MinFallHeight
+    /// FloatProperty: MinFallHeight<br/>
+    /// Default: 168
     /// </summary>
     public unsafe float MinFallHeight
     {
@@ -35764,7 +35894,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: grateTakedownTimeLimit
+    /// FloatProperty: grateTakedownTimeLimit<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float grateTakedownTimeLimit
     {
@@ -35791,7 +35922,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SwingGravity
+    /// FloatProperty: SwingGravity<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SwingGravity
     {
@@ -35800,7 +35932,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: CapeTrailBones
+    /// ArrayProperty: CapeTrailBones<br/>
+    /// Default: (CapeBone_0_10,CapeBone_4_08,CapeBone_5_08,CapeBone_9_10)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> CapeTrailBones
     {
@@ -35809,7 +35942,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: CapeTrail
+    /// ArrayProperty: CapeTrail<br/>
+    /// Default: (BmGame.Default__RPlayerController.LFootWingTrail,BmGame.Default__RPlayerController.MiddleTrail1,BmGame.Default__RPlayerController.MiddleTrail2,BmGame.Default__RPlayerController.RWingTrail)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ParticleSystemComponent> CapeTrail
     {
@@ -35818,13 +35952,15 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: SoftCoverEnvironmentTypes
+    /// StructProperty: SoftCoverEnvironmentTypes<br/>
+    /// Default: (LowBarrier=true,MediumBarrier=true,HighBarrier=true,LowWall=true,MediumWall=true,HighWall=true,UnscalableWall=true,CoverCorner=true,ShimmyLedgeWithRailing=true,LowWallWithRailing=true,MediumWallWithR...
     /// </summary>
     public unsafe ref BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer SoftCoverEnvironmentTypes
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer>(Ptr + 5872);
 
     /// <summary>
-    /// FloatProperty: SoftCoverInDistance
+    /// FloatProperty: SoftCoverInDistance<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float SoftCoverInDistance
     {
@@ -35833,7 +35969,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SoftCoverOutDistance
+    /// FloatProperty: SoftCoverOutDistance<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float SoftCoverOutDistance
     {
@@ -35851,7 +35988,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TimeToTriggerSoftCover
+    /// FloatProperty: TimeToTriggerSoftCover<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TimeToTriggerSoftCover
     {
@@ -35866,13 +36004,15 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 5896);
 
     /// <summary>
-    /// StructProperty: PeerCameraType
+    /// StructProperty: PeerCameraType<br/>
+    /// Default: (Edge=true,ShimmyLedgeWithRailing=true,LowBarrierWithDrop=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer PeerCameraType
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer>(Ptr + 5900);
 
     /// <summary>
-    /// StructProperty: GlideDiveEdgeType
+    /// StructProperty: GlideDiveEdgeType<br/>
+    /// Default: (Edge=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer GlideDiveEdgeType
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer>(Ptr + 5908);
@@ -35905,7 +36045,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: CapeGlideOrientationBlendTime
+    /// FloatProperty: CapeGlideOrientationBlendTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CapeGlideOrientationBlendTime
     {
@@ -35923,7 +36064,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: MinVantagePointGlidePitch
+    /// IntProperty: MinVantagePointGlidePitch<br/>
+    /// Default: -2000
     /// </summary>
     public unsafe int MinVantagePointGlidePitch
     {
@@ -36007,7 +36149,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5976);
 
     /// <summary>
-    /// ArrayProperty: HangUnfixedBones
+    /// ArrayProperty: HangUnfixedBones<br/>
+    /// Default: (Bip01_Spine,Bip01_Spine2,Bip01_Neck,Bip01_Neck1,Bip01_Pelvis,Bip01_L_Thigh,Bip01_L_Calf,Bip01_R_Thigh,Bip01_R_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> HangUnfixedBones
     {
@@ -36016,7 +36159,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: DangleUnfixedBones
+    /// ArrayProperty: DangleUnfixedBones<br/>
+    /// Default: (Bip01_Spine,Bip01_Spine2,Bip01_Neck,Bip01_Neck1,Bip01_Pelvis,Bip01_L_Thigh,Bip01_L_Calf,Bip01_L_Foot,Bip01_R_Thigh,Bip01_R_Calf,Bip01_R_Foot)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DangleUnfixedBones
     {
@@ -36232,7 +36376,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MostWantedDisplayTime
+    /// FloatProperty: MostWantedDisplayTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MostWantedDisplayTime
     {
@@ -36250,7 +36395,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: DelayMissionSelectAudioMaxFrames
+    /// IntProperty: DelayMissionSelectAudioMaxFrames<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int DelayMissionSelectAudioMaxFrames
     {
@@ -36268,7 +36414,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: DelayMissionSelectTurnMaxFrames
+    /// IntProperty: DelayMissionSelectTurnMaxFrames<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int DelayMissionSelectTurnMaxFrames
     {
@@ -36286,7 +36433,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: DelayMissionSelectObjectiveMessageMaxFrames
+    /// IntProperty: DelayMissionSelectObjectiveMessageMaxFrames<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int DelayMissionSelectObjectiveMessageMaxFrames
     {
@@ -36406,7 +36554,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: TunnelSpeed
+    /// FloatProperty: TunnelSpeed<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float TunnelSpeed
     {
@@ -36463,7 +36612,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: ForceSilentTakedownIndex
+    /// IntProperty: ForceSilentTakedownIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceSilentTakedownIndex
     {
@@ -36553,7 +36703,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6560);
 
     /// <summary>
-    /// FloatProperty: InitialTargetLockOnSpeed
+    /// FloatProperty: InitialTargetLockOnSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float InitialTargetLockOnSpeed
     {
@@ -36562,7 +36713,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AdditionalTargetLockOnSpeed
+    /// FloatProperty: AdditionalTargetLockOnSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AdditionalTargetLockOnSpeed
     {
@@ -36571,7 +36723,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: MaxSuperGlideAttackTargets
+    /// IntProperty: MaxSuperGlideAttackTargets<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int MaxSuperGlideAttackTargets
     {
@@ -36580,7 +36733,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SuperGlideAttackWidth
+    /// FloatProperty: SuperGlideAttackWidth<br/>
+    /// Default: 125
     /// </summary>
     public unsafe float SuperGlideAttackWidth
     {
@@ -36589,7 +36743,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SuperGlideAttackLength
+    /// FloatProperty: SuperGlideAttackLength<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float SuperGlideAttackLength
     {
@@ -36625,7 +36780,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SpeedMutatorSpeedScale
+    /// FloatProperty: SpeedMutatorSpeedScale<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float SpeedMutatorSpeedScale
     {
@@ -36649,7 +36805,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RunCameraDuration
+    /// FloatProperty: RunCameraDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RunCameraDuration
     {
@@ -36718,7 +36875,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: BatmobileKillStrings
+    /// ArrayProperty: BatmobileKillStrings<br/>
+    /// Default: ((MoveString="BodyShot"),(MoveType=EVKT_TurretShot,MoveString="TurretShot"),(MoveType=EVKT_CriticalShot,MoveString="CriticalShot"),(MoveType=EVKT_PerfectCritical,MoveString="PerfectCritical"),(MoveTyp...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPlayerController.FBatmobileChallengeKillString> BatmobileKillStrings
     {
@@ -36736,7 +36894,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: RiddlerProgressTotal
+    /// IntProperty: RiddlerProgressTotal<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RiddlerProgressTotal
     {
@@ -36808,7 +36967,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: GadgetFlagsForAchievement
+    /// ArrayProperty: GadgetFlagsForAchievement<br/>
+    /// Default: ("Unlocked_SonicBatarang","Equip_FreezeSpray","Equip_FreezeClusterGrenade","Unlocked_Shockwave","Unlocked_HeatSignatureMask","Unlocked_GlideBoostAttack","Unlocked_BallisticArmour4","Unlocked_MeleeArmo...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> GadgetFlagsForAchievement
     {
@@ -36817,7 +36977,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DotProdForInterrogateTutorialNew
+    /// FloatProperty: DotProdForInterrogateTutorialNew<br/>
+    /// Default: 0.96
     /// </summary>
     public unsafe float DotProdForInterrogateTutorialNew
     {
@@ -36826,7 +36987,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DotProdForInterrogateTutorialAlreadySeen
+    /// FloatProperty: DotProdForInterrogateTutorialAlreadySeen<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float DotProdForInterrogateTutorialAlreadySeen
     {
@@ -36835,7 +36997,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DistForInterrogateTutorialNew
+    /// FloatProperty: DistForInterrogateTutorialNew<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float DistForInterrogateTutorialNew
     {
@@ -36844,7 +37007,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DistForInterrogateTutorialAlreadySeen
+    /// FloatProperty: DistForInterrogateTutorialAlreadySeen<br/>
+    /// Default: 4500
     /// </summary>
     public unsafe float DistForInterrogateTutorialAlreadySeen
     {
@@ -36853,7 +37017,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DotProdForInterrogateTutorialNewZoomed
+    /// FloatProperty: DotProdForInterrogateTutorialNewZoomed<br/>
+    /// Default: 0.99
     /// </summary>
     public unsafe float DotProdForInterrogateTutorialNewZoomed
     {
@@ -36862,7 +37027,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DotProdForInterrogateTutorialAlreadySeenZoomed
+    /// FloatProperty: DotProdForInterrogateTutorialAlreadySeenZoomed<br/>
+    /// Default: 0.96
     /// </summary>
     public unsafe float DotProdForInterrogateTutorialAlreadySeenZoomed
     {
@@ -36871,7 +37037,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DistForInterrogateTutorialNewZoomed
+    /// FloatProperty: DistForInterrogateTutorialNewZoomed<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float DistForInterrogateTutorialNewZoomed
     {
@@ -36880,7 +37047,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DistForInterrogateTutorialAlreadySeenZoomed
+    /// FloatProperty: DistForInterrogateTutorialAlreadySeenZoomed<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float DistForInterrogateTutorialAlreadySeenZoomed
     {
@@ -36907,7 +37075,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: CheatCodes
+    /// ArrayProperty: CheatCodes<br/>
+    /// Default: ((),(),(E=ECheatCode_StretchHeadMode,Code=(2,2,2,3,3,3,0,0,1,0,0,2,2,3)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPlayerController.FCheatCode> CheatCodes
     {
@@ -36922,7 +37091,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAffectPlayerVolume.FAffectPlayerVolumeInfo>(Ptr + 6848);
 
     /// <summary>
-    /// FloatProperty: PursuitModeCameraLockTime
+    /// FloatProperty: PursuitModeCameraLockTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PursuitModeCameraLockTime
     {
@@ -36931,7 +37101,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MinSlipForDrivingRumble
+    /// FloatProperty: MinSlipForDrivingRumble<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MinSlipForDrivingRumble
     {
@@ -36940,7 +37111,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxSlipForDrivingRumble
+    /// FloatProperty: MaxSlipForDrivingRumble<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float MaxSlipForDrivingRumble
     {
@@ -36949,7 +37121,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DrivingSlipRumblePower
+    /// FloatProperty: DrivingSlipRumblePower<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float DrivingSlipRumblePower
     {
@@ -37090,7 +37263,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// NameProperty: radioPoseName
+    /// NameProperty: radioPoseName<br/>
+    /// Default: Radio
     /// </summary>
     public unsafe BmSDK.FName radioPoseName
     {
@@ -37132,7 +37306,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ChainTakedownRange
+    /// FloatProperty: ChainTakedownRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ChainTakedownRange
     {
@@ -37141,7 +37316,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: iMaximumNumberOfFearTakedowns
+    /// IntProperty: iMaximumNumberOfFearTakedowns<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iMaximumNumberOfFearTakedowns
     {
@@ -37195,7 +37371,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: HeavyTankRadarRange
+    /// FloatProperty: HeavyTankRadarRange<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float HeavyTankRadarRange
     {
@@ -37204,7 +37381,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: BattleModeWeaponSelectButtons
+    /// ArrayProperty: BattleModeWeaponSelectButtons<br/>
+    /// Default: ((Offset=(Y=1),Colour=(G=255)),(Offset=(X=1),Colour=(R=255)),(Offset=(X=-1),Colour=(B=255)),(Offset=(Y=-1),Colour=(G=255,R=255)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPlayerController.FBattleModeWeaponButton> BattleModeWeaponSelectButtons
     {
@@ -37213,13 +37391,15 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// StructProperty: BattleModeWeaponSelectOrigin
+    /// StructProperty: BattleModeWeaponSelectOrigin<br/>
+    /// Default: (X=0.495,Y=0.33)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 BattleModeWeaponSelectOrigin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 7132);
 
     /// <summary>
-    /// FloatProperty: BattleModeWeaponSelectSize
+    /// FloatProperty: BattleModeWeaponSelectSize<br/>
+    /// Default: 0.03
     /// </summary>
     public unsafe float BattleModeWeaponSelectSize
     {
@@ -37228,7 +37408,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeWeaponSelectButtonSize
+    /// FloatProperty: BattleModeWeaponSelectButtonSize<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float BattleModeWeaponSelectButtonSize
     {
@@ -37279,7 +37460,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: LocalCharacterLightDesredBrightness
+    /// FloatProperty: LocalCharacterLightDesredBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LocalCharacterLightDesredBrightness
     {
@@ -37375,7 +37557,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MedEjectGlideAttackHeight
+    /// FloatProperty: MedEjectGlideAttackHeight<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MedEjectGlideAttackHeight
     {
@@ -37384,7 +37567,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxEjectGlideAttackHeight
+    /// FloatProperty: MaxEjectGlideAttackHeight<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxEjectGlideAttackHeight
     {
@@ -37411,7 +37595,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GrappleBoostCameraLagTime
+    /// FloatProperty: GrappleBoostCameraLagTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float GrappleBoostCameraLagTime
     {
@@ -37420,7 +37605,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: GrappleBoostCameraLagExtraTime
+    /// FloatProperty: GrappleBoostCameraLagExtraTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float GrappleBoostCameraLagExtraTime
     {

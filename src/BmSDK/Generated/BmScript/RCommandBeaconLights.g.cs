@@ -189,7 +189,8 @@ public partial class RCommandBeaconLights : BmSDK.BmGame.RCommandBeaconLightsBas
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCommandBeaconLightsBase.FCommandBeaconMaterialSet>(Ptr + 900);
 
     /// <summary>
-    /// ObjectProperty: yellowLightSoundLoop
+    /// ObjectProperty: yellowLightSoundLoop<br/>
+    /// Default: Ww_OBJ_Red_Hood_Command_Beacon.Play_RH_Beacon_Yellow_Light_Flash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent yellowLightSoundLoop
     {
@@ -198,7 +199,8 @@ public partial class RCommandBeaconLights : BmSDK.BmGame.RCommandBeaconLightsBas
     }
 
     /// <summary>
-    /// ObjectProperty: slowRedLightSoundLoop
+    /// ObjectProperty: slowRedLightSoundLoop<br/>
+    /// Default: Ww_OBJ_Red_Hood_Command_Beacon.Play_RH_Beacon_Red_Light_Flash_Slow
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent slowRedLightSoundLoop
     {
@@ -207,7 +209,8 @@ public partial class RCommandBeaconLights : BmSDK.BmGame.RCommandBeaconLightsBas
     }
 
     /// <summary>
-    /// ObjectProperty: fastRedLightSoundLoop
+    /// ObjectProperty: fastRedLightSoundLoop<br/>
+    /// Default: Ww_OBJ_Red_Hood_Command_Beacon.Play_RH_Beacon_Red_Light_Flash_Fast
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent fastRedLightSoundLoop
     {
@@ -216,7 +219,8 @@ public partial class RCommandBeaconLights : BmSDK.BmGame.RCommandBeaconLightsBas
     }
 
     /// <summary>
-    /// ObjectProperty: HUDSound
+    /// ObjectProperty: HUDSound<br/>
+    /// Default: Ww_UI_InGame.Play_Mine_Proximity_Signal
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent HUDSound
     {

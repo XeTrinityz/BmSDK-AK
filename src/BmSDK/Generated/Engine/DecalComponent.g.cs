@@ -229,7 +229,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: Width
+    /// FloatProperty: Width<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Width
     {
@@ -238,7 +239,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: Height
+    /// FloatProperty: Height<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Height
     {
@@ -247,7 +249,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TileX
+    /// FloatProperty: TileX<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TileX
     {
@@ -256,7 +259,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TileY
+    /// FloatProperty: TileY<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TileY
     {
@@ -292,7 +296,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: FieldOfView
+    /// FloatProperty: FieldOfView<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float FieldOfView
     {
@@ -310,7 +315,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: FarPlane
+    /// FloatProperty: FarPlane<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float FarPlane
     {
@@ -391,7 +397,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bProjectOnBSP
+    /// BoolProperty: bProjectOnBSP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProjectOnBSP
     {
@@ -400,7 +407,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bProjectOnStaticMeshes
+    /// BoolProperty: bProjectOnStaticMeshes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProjectOnStaticMeshes
     {
@@ -409,7 +417,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bProjectOnSkeletalMeshes
+    /// BoolProperty: bProjectOnSkeletalMeshes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProjectOnSkeletalMeshes
     {
@@ -418,7 +427,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bProjectOnTerrain
+    /// BoolProperty: bProjectOnTerrain<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProjectOnTerrain
     {
@@ -472,7 +482,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: HitNodeIndex
+    /// IntProperty: HitNodeIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HitNodeIndex
     {
@@ -481,7 +492,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: HitLevelIndex
+    /// IntProperty: HitLevelIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HitLevelIndex
     {
@@ -544,7 +556,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DepthBias
+    /// FloatProperty: DepthBias<br/>
+    /// Default: -6e-05
     /// </summary>
     public unsafe float DepthBias
     {
@@ -571,7 +584,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BackfaceAngle
+    /// FloatProperty: BackfaceAngle<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float BackfaceAngle
     {
@@ -580,13 +594,15 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: BlendRange
+    /// StructProperty: BlendRange<br/>
+    /// Default: (X=89.5,Y=180)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 BlendRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 780);
 
     /// <summary>
-    /// FloatProperty: StreamingDistanceMultiplier
+    /// FloatProperty: StreamingDistanceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StreamingDistanceMultiplier
     {
@@ -595,7 +611,8 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: DecalTransform
+    /// ByteProperty: DecalTransform<br/>
+    /// Default: DecalTransform_SpawnRelative
     /// </summary>
     public unsafe BmSDK.Engine.DecalComponent.EDecalTransform DecalTransform
     {

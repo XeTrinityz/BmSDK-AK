@@ -109,7 +109,8 @@ public partial class RPawnCrowdRagdoll : BmSDK.BmGame.RPawnCrowd, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: RagdollPoseConfig
+    /// ObjectProperty: RagdollPoseConfig<br/>
+    /// Default: BmGame.Default__RPawnCrowdRagdoll.NewRagdollPoseConfig
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig RagdollPoseConfig
     {

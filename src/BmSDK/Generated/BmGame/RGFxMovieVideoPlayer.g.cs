@@ -488,7 +488,8 @@ public partial class RGFxMovieVideoPlayer : BmSDK.BmGame.RGFxMovie, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: UseSubtitles
+    /// BoolProperty: UseSubtitles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseSubtitles
     {

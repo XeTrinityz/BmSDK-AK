@@ -350,7 +350,8 @@ public partial class RBMCombatPoint_GunCrate : BmSDK.BmScript.RBMCombatPoint_Gun
     }
 
     /// <summary>
-    /// ComponentProperty: GunLockerMesh
+    /// ComponentProperty: GunLockerMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_GunCrate.NewGunLockerMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GunLockerMesh
     {
@@ -359,7 +360,8 @@ public partial class RBMCombatPoint_GunCrate : BmSDK.BmScript.RBMCombatPoint_Gun
     }
 
     /// <summary>
-    /// ComponentProperty: GunMesh
+    /// ComponentProperty: GunMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_GunCrate.NewGunMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GunMesh
     {
@@ -410,7 +412,8 @@ public partial class RBMCombatPoint_GunCrate : BmSDK.BmScript.RBMCombatPoint_Gun
     }
 
     /// <summary>
-    /// ObjectProperty: LightArchetype
+    /// ObjectProperty: LightArchetype<br/>
+    /// Default: Pawn_Archetypes.Lights.Weapon_Locker_Light
     /// </summary>
     public unsafe BmSDK.Engine.Light LightArchetype
     {
@@ -428,7 +431,8 @@ public partial class RBMCombatPoint_GunCrate : BmSDK.BmScript.RBMCombatPoint_Gun
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_NPC_Electrocute.Play_NPC_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {

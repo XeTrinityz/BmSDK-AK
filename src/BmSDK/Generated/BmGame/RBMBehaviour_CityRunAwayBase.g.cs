@@ -610,7 +610,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 816);
 
     /// <summary>
-    /// ArrayProperty: FleeReactionFront
+    /// ArrayProperty: FleeReactionFront<br/>
+    /// Default: (Reaction_to_BM_Front_01,Reaction_to_BM_Front_02,Reaction_to_BM_Front_03,Reaction_to_BM_Front_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FleeReactionFront
     {
@@ -619,7 +620,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// ArrayProperty: FleeReactionBack
+    /// ArrayProperty: FleeReactionBack<br/>
+    /// Default: (Reaction_to_BM_Back_01,Reaction_to_BM_Back_02,Reaction_to_BM_Back_03,Reaction_to_BM_Back_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FleeReactionBack
     {
@@ -709,7 +711,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// FloatProperty: TimeHiddenForDestroy
+    /// FloatProperty: TimeHiddenForDestroy<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeHiddenForDestroy
     {
@@ -718,7 +721,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceFromThreatToDestroy
+    /// FloatProperty: MinDistanceFromThreatToDestroy<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MinDistanceFromThreatToDestroy
     {
@@ -754,7 +758,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// IntProperty: LookAheadLinks
+    /// IntProperty: LookAheadLinks<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int LookAheadLinks
     {
@@ -772,7 +777,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// FloatProperty: MinRoadWidth
+    /// FloatProperty: MinRoadWidth<br/>
+    /// Default: 768
     /// </summary>
     public unsafe float MinRoadWidth
     {
@@ -790,7 +796,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// ArrayProperty: SprintingHitReactionAnims
+    /// ArrayProperty: SprintingHitReactionAnims<br/>
+    /// Default: (Sprint_Hit_Back_01,Sprint_Hit_Back_02,Sprint_Hit_Back_03,Sprint_Hit_Back_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> SprintingHitReactionAnims
     {
@@ -799,7 +806,8 @@ public partial class RBMBehaviour_CityRunAwayBase : BmSDK.BmGame.RBMBehaviour_Ga
     }
 
     /// <summary>
-    /// ArrayProperty: RunningHitReactionAnims
+    /// ArrayProperty: RunningHitReactionAnims<br/>
+    /// Default: (Run_Hit_Back_01,Run_Hit_Back_02,Run_Hit_Back_03,Run_Hit_Back_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> RunningHitReactionAnims
     {

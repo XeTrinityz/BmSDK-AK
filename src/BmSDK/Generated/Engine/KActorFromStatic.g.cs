@@ -286,7 +286,8 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxImpulseSpeed
+    /// FloatProperty: MaxImpulseSpeed<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float MaxImpulseSpeed
     {

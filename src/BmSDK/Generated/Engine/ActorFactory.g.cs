@@ -117,7 +117,8 @@ public partial class ActorFactory : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MenuPriority
+    /// IntProperty: MenuPriority<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MenuPriority
     {
@@ -153,7 +154,8 @@ public partial class ActorFactory : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPlaceable
+    /// BoolProperty: bPlaceable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlaceable
     {

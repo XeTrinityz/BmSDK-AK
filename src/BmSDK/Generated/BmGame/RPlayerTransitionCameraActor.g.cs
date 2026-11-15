@@ -335,7 +335,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: SplineTension
+    /// FloatProperty: SplineTension<br/>
+    /// Default: -0.25
     /// </summary>
     public unsafe float SplineTension
     {
@@ -344,7 +345,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CamSplineTime
+    /// FloatProperty: CamSplineTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CamSplineTime
     {
@@ -353,7 +355,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CamSplineEndTimePerc
+    /// FloatProperty: CamSplineEndTimePerc<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float CamSplineEndTimePerc
     {
@@ -362,7 +365,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CameraSpeed
+    /// FloatProperty: CameraSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float CameraSpeed
     {
@@ -371,7 +375,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: IdealCameraTime
+    /// FloatProperty: IdealCameraTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float IdealCameraTime
     {
@@ -380,7 +385,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CameraSpeedMin
+    /// FloatProperty: CameraSpeedMin<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CameraSpeedMin
     {
@@ -389,7 +395,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CameraSpeedMax
+    /// FloatProperty: CameraSpeedMax<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float CameraSpeedMax
     {
@@ -443,7 +450,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: RotationSpringStrength
+    /// FloatProperty: RotationSpringStrength<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float RotationSpringStrength
     {
@@ -452,7 +460,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: CameraLookAheadTime
+    /// FloatProperty: CameraLookAheadTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CameraLookAheadTime
     {
@@ -497,7 +506,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// BoolProperty: bResetCameraOnEndIfPlayer
+    /// BoolProperty: bResetCameraOnEndIfPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bResetCameraOnEndIfPlayer
     {
@@ -551,7 +561,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: BlendBackCharacterTime
+    /// FloatProperty: BlendBackCharacterTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float BlendBackCharacterTime
     {
@@ -560,7 +571,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: BlendBackVehicleTime
+    /// FloatProperty: BlendBackVehicleTime<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float BlendBackVehicleTime
     {
@@ -575,13 +587,15 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1332);
 
     /// <summary>
-    /// StructProperty: FollowOffsetMin
+    /// StructProperty: FollowOffsetMin<br/>
+    /// Default: (Z=250)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FollowOffsetMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1344);
 
     /// <summary>
-    /// FloatProperty: FollowCorrectionSpeed
+    /// FloatProperty: FollowCorrectionSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FollowCorrectionSpeed
     {
@@ -602,7 +616,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1372);
 
     /// <summary>
-    /// FloatProperty: BlendToFinalCamTime
+    /// FloatProperty: BlendToFinalCamTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendToFinalCamTime
     {
@@ -611,7 +626,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
     }
 
     /// <summary>
-    /// FloatProperty: DestinationFOV
+    /// FloatProperty: DestinationFOV<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float DestinationFOV
     {

@@ -141,7 +141,8 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistOfTargetPointFromOrigin
+    /// FloatProperty: MaxDistOfTargetPointFromOrigin<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float MaxDistOfTargetPointFromOrigin
     {

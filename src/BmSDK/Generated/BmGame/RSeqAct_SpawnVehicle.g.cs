@@ -198,7 +198,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
     }
 
     /// <summary>
-    /// BoolProperty: bSpawnOnceOnly
+    /// BoolProperty: bSpawnOnceOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpawnOnceOnly
     {
@@ -216,7 +217,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
     }
 
     /// <summary>
-    /// BoolProperty: bStaggerSpawning
+    /// BoolProperty: bStaggerSpawning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStaggerSpawning
     {
@@ -522,7 +524,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
     }
 
     /// <summary>
-    /// FloatProperty: MinDynamicSpawnDist
+    /// FloatProperty: MinDynamicSpawnDist<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MinDynamicSpawnDist
     {
@@ -540,7 +543,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
     }
 
     /// <summary>
-    /// ByteProperty: OverrideVehicleGroup
+    /// ByteProperty: OverrideVehicleGroup<br/>
+    /// Default: EVGT_All
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleNPC.EVehicleGroupType OverrideVehicleGroup
     {

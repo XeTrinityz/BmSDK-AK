@@ -88,7 +88,8 @@ public partial class MSpecialMoveConfig_PlaceJackInBox : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ExplosionRadius
     {

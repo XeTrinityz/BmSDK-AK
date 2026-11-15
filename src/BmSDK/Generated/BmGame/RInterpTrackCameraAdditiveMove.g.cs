@@ -100,7 +100,8 @@ public partial class RInterpTrackCameraAdditiveMove : BmSDK.Engine.InterpTrack, 
     }
 
     /// <summary>
-    /// BoolProperty: bShowTranslationOnCurveEd
+    /// BoolProperty: bShowTranslationOnCurveEd<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowTranslationOnCurveEd
     {

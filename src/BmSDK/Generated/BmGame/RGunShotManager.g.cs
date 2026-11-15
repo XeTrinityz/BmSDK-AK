@@ -727,7 +727,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ShotGunWeaponTypes
+    /// ArrayProperty: ShotGunWeaponTypes<br/>
+    /// Default: ((GunSwitch=Ww_Enemy_Gun.Enemy_Gun_Shotgun_Shotgun_01,RateOfFire=1.5),(GunSwitch=Ww_Enemy_Gun.Enemy_Gun_Shotgun_Shotgun_02,RateOfFire=1.5))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGunShotManager.FGunInfo> ShotGunWeaponTypes
     {
@@ -736,7 +737,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RifleWeaponTypes
+    /// ArrayProperty: RifleWeaponTypes<br/>
+    /// Default: ((GunSwitch=Ww_Enemy_Gun.Enemy_Gun_AssaultRifle_01,RateOfFire=0.068),(GunSwitch=Ww_Enemy_Gun.Enemy_Gun_AssaultRifle_02,RateOfFire=0.072),(GunSwitch=Ww_Enemy_Gun.Enemy_Gun_AssaultRifle_03,RateOfFire=0....
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGunShotManager.FGunInfo> RifleWeaponTypes
     {
@@ -754,7 +756,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SlowMoBullet
+    /// ObjectProperty: SlowMoBullet<br/>
+    /// Default: Ww_WPN_EnemyGuns.Play_Enemy_Gun_Slowmo
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SlowMoBullet
     {
@@ -763,7 +766,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BulletByFXRifle
+    /// ObjectProperty: BulletByFXRifle<br/>
+    /// Default: VFX_Weapon.Particles.BulletBy
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BulletByFXRifle
     {
@@ -772,7 +776,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TracerFXRifleSlowMo
+    /// ObjectProperty: TracerFXRifleSlowMo<br/>
+    /// Default: FFX_Combat.Particles.Trails.SloMo_Bullet_Trail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem TracerFXRifleSlowMo
     {
@@ -781,7 +786,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ShotGunVFX
+    /// ObjectProperty: ShotGunVFX<br/>
+    /// Default: VFX_Weapon.Particles.Shotgun_Tracer
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ShotGunVFX
     {
@@ -790,7 +796,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BulletByParam
+    /// ObjectProperty: BulletByParam<br/>
+    /// Default: Ww_Parameters.BulletBy_ClosestPoint
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName BulletByParam
     {
@@ -799,7 +806,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: OverMaxBed
+    /// ObjectProperty: OverMaxBed<br/>
+    /// Default: Ww_WPN_EnemyGuns.Play_Enemy_Gun_Bed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent OverMaxBed
     {
@@ -808,7 +816,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: OverMaxBedParameter
+    /// ObjectProperty: OverMaxBedParameter<br/>
+    /// Default: Ww_Parameters.EnemyGunsFiring
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName OverMaxBedParameter
     {
@@ -817,7 +826,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ObjectVelocityParameter
+    /// ObjectProperty: ObjectVelocityParameter<br/>
+    /// Default: Ww_Parameters.ObjectVelocity
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName ObjectVelocityParameter
     {
@@ -826,7 +836,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: GunReflectionEvent
+    /// ObjectProperty: GunReflectionEvent<br/>
+    /// Default: Ww_WPN_Reflections.Play_Enemy_Gun_Reflections
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent GunReflectionEvent
     {
@@ -835,7 +846,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AccessParam
+    /// ObjectProperty: AccessParam<br/>
+    /// Default: Ww_Parameters.EnemyGun_Env_Exterior
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName AccessParam
     {
@@ -862,7 +874,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxNumberOfEnemiesFiring
+    /// IntProperty: MaxNumberOfEnemiesFiring<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MaxNumberOfEnemiesFiring
     {
@@ -871,7 +884,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxNumberOfVehiclesFiring
+    /// IntProperty: MaxNumberOfVehiclesFiring<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxNumberOfVehiclesFiring
     {
@@ -880,7 +894,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxNumberOfVehicles
+    /// IntProperty: MaxNumberOfVehicles<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxNumberOfVehicles
     {
@@ -1075,7 +1090,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenRicochet
+    /// FloatProperty: TimeBetweenRicochet<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TimeBetweenRicochet
     {
@@ -1084,7 +1100,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenMaterialImpacts
+    /// FloatProperty: TimeBetweenMaterialImpacts<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float TimeBetweenMaterialImpacts
     {

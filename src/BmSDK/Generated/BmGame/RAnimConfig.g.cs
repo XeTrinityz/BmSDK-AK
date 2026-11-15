@@ -216,7 +216,8 @@ public partial class RAnimConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Weight
+        /// StructProperty: Weight<br/>
+        /// Default: (Value=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RAnimConfig.FWeight Weight
         {

@@ -942,7 +942,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh1
+    /// ComponentProperty: InvestigationMesh1<br/>
+    /// Default: BmGame.Default__RDestructibleProp_FractureWall.StaticMeshComponentII1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh1
     {
@@ -951,7 +952,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh2
+    /// ComponentProperty: InvestigationMesh2<br/>
+    /// Default: BmGame.Default__RDestructibleProp_FractureWall.StaticMeshComponentII2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh2
     {
@@ -960,7 +962,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// ComponentProperty: GadgetInteraction
+    /// ComponentProperty: GadgetInteraction<br/>
+    /// Default: BmGame.Default__RDestructibleProp_FractureWall.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent GadgetInteraction
     {
@@ -969,7 +972,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// ComponentProperty: VoiceSynthesiserHighlightStaticMesh
+    /// ComponentProperty: VoiceSynthesiserHighlightStaticMesh<br/>
+    /// Default: BmGame.Default__RDestructibleProp_FractureWall.VSStaticMesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent VoiceSynthesiserHighlightStaticMesh
     {
@@ -978,7 +982,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// BoolProperty: bValidVoiceSynthesiserTarget
+    /// BoolProperty: bValidVoiceSynthesiserTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidVoiceSynthesiserTarget
     {
@@ -1059,7 +1064,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// BoolProperty: CanInteract
+    /// BoolProperty: CanInteract<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanInteract
     {
@@ -1113,7 +1119,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// BoolProperty: bTriggerCombatEvent
+    /// BoolProperty: bTriggerCombatEvent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTriggerCombatEvent
     {
@@ -1122,7 +1129,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// BoolProperty: bDisableNearbyTempGuardPointsWhenDestroyed
+    /// BoolProperty: bDisableNearbyTempGuardPointsWhenDestroyed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableNearbyTempGuardPointsWhenDestroyed
     {
@@ -1158,7 +1166,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// BoolProperty: bSpawnGlassVolume
+    /// BoolProperty: bSpawnGlassVolume<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpawnGlassVolume
     {
@@ -1212,7 +1221,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// IntProperty: GlassSmashReactionID
+    /// IntProperty: GlassSmashReactionID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GlassSmashReactionID
     {
@@ -1311,7 +1321,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RDestructibleProp_FractureWall.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -1326,7 +1337,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1856);
 
     /// <summary>
-    /// FloatProperty: GelKillRadius
+    /// FloatProperty: GelKillRadius<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float GelKillRadius
     {

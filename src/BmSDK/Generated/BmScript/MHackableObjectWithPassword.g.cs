@@ -647,7 +647,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// ObjectProperty: HackingViewMaterial
+    /// ObjectProperty: HackingViewMaterial<br/>
+    /// Default: DLC45_Batgirl_Materials.Hacking.Hacking_Material_Master_Fade_MI
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface HackingViewMaterial
     {
@@ -656,7 +657,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// ObjectProperty: DetectiveModeMaterial
+    /// ObjectProperty: DetectiveModeMaterial<br/>
+    /// Default: DLC45_Batgirl_Materials.Hacking.Hacking_Material_Master_Fade_MI
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface DetectiveModeMaterial
     {
@@ -674,7 +676,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// ObjectProperty: AfterHackConversation
+    /// ObjectProperty: AfterHackConversation<br/>
+    /// Default: DLC_Bg_Barks_Char_Bg_Hackfinish.Conversation.DLC_Bg_Barks_Char_Bg_Hackfinish
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation AfterHackConversation
     {
@@ -701,7 +704,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// ObjectProperty: HighlightMaterial
+    /// ObjectProperty: HighlightMaterial<br/>
+    /// Default: DLC45_Batgirl_Materials.Hacking.Hacking_Material_NormalView_MI
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance HighlightMaterial
     {
@@ -764,7 +768,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -782,7 +787,8 @@ public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// BoolProperty: bUsingEnableStateMesh
+    /// BoolProperty: bUsingEnableStateMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsingEnableStateMesh
     {

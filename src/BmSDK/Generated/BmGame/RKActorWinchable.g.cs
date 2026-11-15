@@ -373,7 +373,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmGame.Default__RKActorWinchable.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -382,7 +383,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: HookMeshComp
+    /// ComponentProperty: HookMeshComp<br/>
+    /// Default: BmGame.Default__RKActorWinchable.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent HookMeshComp
     {
@@ -400,7 +402,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: HideOnHUDWhenBlockInteraction
+    /// BoolProperty: HideOnHUDWhenBlockInteraction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HideOnHUDWhenBlockInteraction
     {
@@ -598,7 +601,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxWinchAngle
+    /// FloatProperty: MaxWinchAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxWinchAngle
     {
@@ -607,7 +611,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: HighlightActorUsedZ
+    /// FloatProperty: HighlightActorUsedZ<br/>
+    /// Default: 1e+07
     /// </summary>
     public unsafe float HighlightActorUsedZ
     {
@@ -634,7 +639,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TimeAtRest
+    /// FloatProperty: TimeAtRest<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeAtRest
     {
@@ -652,7 +658,8 @@ public partial class RKActorWinchable : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: AngularDampingOverrideWhenWinchReleased
+    /// FloatProperty: AngularDampingOverrideWhenWinchReleased<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AngularDampingOverrideWhenWinchReleased
     {

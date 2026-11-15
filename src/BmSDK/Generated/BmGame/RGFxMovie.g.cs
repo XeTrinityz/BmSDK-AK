@@ -1625,7 +1625,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: iSplitscreenIndex
+    /// IntProperty: iSplitscreenIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iSplitscreenIndex
     {
@@ -1688,7 +1689,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: fTimeOfLastManualAdvance
+    /// FloatProperty: fTimeOfLastManualAdvance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fTimeOfLastManualAdvance
     {
@@ -1697,7 +1699,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: fMaximumManualAdvanceTime
+    /// FloatProperty: fMaximumManualAdvanceTime<br/>
+    /// Default: 0.04
     /// </summary>
     public unsafe float fMaximumManualAdvanceTime
     {

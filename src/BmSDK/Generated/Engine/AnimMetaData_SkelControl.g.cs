@@ -88,7 +88,8 @@ public partial class AnimMetaData_SkelControl : BmSDK.Engine.AnimMetaData, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bFullControlOverController
+    /// BoolProperty: bFullControlOverController<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFullControlOverController
     {

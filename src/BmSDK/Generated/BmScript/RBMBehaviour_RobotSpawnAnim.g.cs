@@ -178,7 +178,8 @@ public partial class RBMBehaviour_RobotSpawnAnim : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: SpawnPointAnimNames
+    /// ArrayProperty: SpawnPointAnimNames<br/>
+    /// Default: (NRiddler_ElecFloor_New_Anim)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> SpawnPointAnimNames
     {

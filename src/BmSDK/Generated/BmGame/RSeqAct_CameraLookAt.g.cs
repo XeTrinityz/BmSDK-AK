@@ -164,7 +164,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bAffectPitch
+    /// BoolProperty: bAffectPitch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectPitch
     {
@@ -173,7 +174,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bAffectYaw
+    /// BoolProperty: bAffectYaw<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectYaw
     {
@@ -263,7 +265,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {
@@ -272,7 +275,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxDragYaw
+    /// FloatProperty: MaxDragYaw<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxDragYaw
     {
@@ -281,7 +285,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxDragPitch
+    /// FloatProperty: MaxDragPitch<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxDragPitch
     {
@@ -290,7 +295,8 @@ public partial class RSeqAct_CameraLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OverrideZoomFOV
+    /// FloatProperty: OverrideZoomFOV<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideZoomFOV
     {

@@ -93,7 +93,8 @@ public partial class RSeqAct_TogglePlayerHair : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: Mesh
+    /// ObjectProperty: Mesh<br/>
+    /// Default: Batman_BM3_V2_Mesh.Mesh.Batman_BM3_V2_Skin_Hair
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh Mesh
     {

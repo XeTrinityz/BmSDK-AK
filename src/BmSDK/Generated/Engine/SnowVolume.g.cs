@@ -217,7 +217,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: SnowComponent
+    /// ComponentProperty: SnowComponent<br/>
+    /// Default: Engine.Default__SnowVolume.SnowComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RSnowComponent SnowComponent
     {
@@ -226,7 +227,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: SnowMap
+    /// ComponentProperty: SnowMap<br/>
+    /// Default: Engine.Default__SnowVolume.SnowMapt0
     /// </summary>
     public unsafe BmSDK.Engine.SnowMapComponent SnowMap
     {

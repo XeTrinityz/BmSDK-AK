@@ -139,7 +139,8 @@ public partial class RRiddlerBatmobileChallenge_SpawnedActor_StaticMesh : BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: WallStaticMesh
+    /// ComponentProperty: WallStaticMesh<br/>
+    /// Default: BmScript.Default__RRiddlerBatmobileChallenge_SpawnedActor_StaticMesh.WallStatMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent WallStaticMesh
     {

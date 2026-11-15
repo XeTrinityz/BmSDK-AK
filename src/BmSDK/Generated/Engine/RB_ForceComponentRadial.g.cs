@@ -93,7 +93,8 @@ public partial class RB_ForceComponentRadial : BmSDK.Engine.RB_ForceComponent, B
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponentSphere
+    /// ComponentProperty: RenderComponentSphere<br/>
+    /// Default: Engine.Default__RB_ForceComponentRadial.RenderComponent0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent RenderComponentSphere
     {
@@ -102,7 +103,8 @@ public partial class RB_ForceComponentRadial : BmSDK.Engine.RB_ForceComponent, B
     }
 
     /// <summary>
-    /// FloatProperty: ForceStrength
+    /// FloatProperty: ForceStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ForceStrength
     {
@@ -111,7 +113,8 @@ public partial class RB_ForceComponentRadial : BmSDK.Engine.RB_ForceComponent, B
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {

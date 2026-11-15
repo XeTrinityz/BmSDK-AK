@@ -280,7 +280,8 @@ public partial class RSeqAct_PredatorSwingTutorial : BmSDK.BmGame.RSeqAct_HelpTe
     }
 
     /// <summary>
-    /// IntProperty: RequiredNumSwings
+    /// IntProperty: RequiredNumSwings<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int RequiredNumSwings
     {

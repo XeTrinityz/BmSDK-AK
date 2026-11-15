@@ -122,7 +122,8 @@ public partial class RSeqAct_OverrideRFlapsBlendWeight : BmSDK.Engine.SequenceAc
     }
 
     /// <summary>
-    /// FloatProperty: StartBlendWeight
+    /// FloatProperty: StartBlendWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StartBlendWeight
     {
@@ -131,7 +132,8 @@ public partial class RSeqAct_OverrideRFlapsBlendWeight : BmSDK.Engine.SequenceAc
     }
 
     /// <summary>
-    /// FloatProperty: EndBlendWeight
+    /// FloatProperty: EndBlendWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EndBlendWeight
     {

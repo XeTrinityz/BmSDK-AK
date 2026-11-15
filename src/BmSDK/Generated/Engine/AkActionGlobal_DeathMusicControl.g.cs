@@ -79,7 +79,8 @@ public partial class AkActionGlobal_DeathMusicControl : BmSDK.Engine.AkActionGlo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: DeathState
+    /// ObjectProperty: DeathState<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Death
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName DeathState
     {
@@ -88,7 +89,8 @@ public partial class AkActionGlobal_DeathMusicControl : BmSDK.Engine.AkActionGlo
     }
 
     /// <summary>
-    /// FloatProperty: Death_MusicTimeout
+    /// FloatProperty: Death_MusicTimeout<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float Death_MusicTimeout
     {

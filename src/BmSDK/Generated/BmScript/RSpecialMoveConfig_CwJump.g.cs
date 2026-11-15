@@ -155,7 +155,8 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// BoolProperty: bAlignWithFeature
+    /// BoolProperty: bAlignWithFeature<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignWithFeature
     {
@@ -200,7 +201,8 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// FloatProperty: JumpOffSpeed
+    /// FloatProperty: JumpOffSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float JumpOffSpeed
     {
@@ -209,7 +211,8 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
     }
 
     /// <summary>
-    /// FloatProperty: JumpOffAngle
+    /// FloatProperty: JumpOffAngle<br/>
+    /// Default: 18
     /// </summary>
     public unsafe float JumpOffAngle
     {

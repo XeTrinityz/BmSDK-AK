@@ -184,7 +184,8 @@ public partial class RAEC_Attack_Sub_WatchAndWait_Fence : BmSDK.BmGame.RAlertEve
     }
 
     /// <summary>
-    /// FloatProperty: ApproachOffset
+    /// FloatProperty: ApproachOffset<br/>
+    /// Default: 107.79
     /// </summary>
     public unsafe float ApproachOffset
     {

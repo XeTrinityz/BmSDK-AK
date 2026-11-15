@@ -669,7 +669,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     public partial record struct FPostProcessSettingsOverride
     {
         /// <summary>
-        /// StructProperty: Settings
+        /// StructProperty: Settings<br/>
+        /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
         /// </summary>
         public unsafe BmSDK.Engine.PostProcessVolume.FPostProcessSettings Settings
         {
@@ -757,7 +758,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     public partial record struct FCurrentPostProcessVolumeInfo
     {
         /// <summary>
-        /// StructProperty: LastSettings
+        /// StructProperty: LastSettings<br/>
+        /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
         /// </summary>
         public unsafe BmSDK.Engine.PostProcessVolume.FPostProcessSettings LastSettings
         {
@@ -972,7 +974,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bWantToResetToMapDefaultPP
+    /// BoolProperty: bWantToResetToMapDefaultPP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWantToResetToMapDefaultPP
     {
@@ -1086,13 +1089,15 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 232);
 
     /// <summary>
-    /// StructProperty: CurrentPPInfo
+    /// StructProperty: CurrentPPInfo<br/>
+    /// Default: (LastSettings=(bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion...
     /// </summary>
     public unsafe ref BmSDK.Engine.LocalPlayer.FCurrentPostProcessVolumeInfo CurrentPPInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LocalPlayer.FCurrentPostProcessVolumeInfo>(Ptr + 244);
 
     /// <summary>
-    /// StructProperty: LevelPPInfo
+    /// StructProperty: LevelPPInfo<br/>
+    /// Default: (LastSettings=(bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion...
     /// </summary>
     public unsafe ref BmSDK.Engine.LocalPlayer.FCurrentPostProcessVolumeInfo LevelPPInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LocalPlayer.FCurrentPostProcessVolumeInfo>(Ptr + 784);
@@ -1107,7 +1112,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: AspectRatioAxisConstraint
+    /// ByteProperty: AspectRatioAxisConstraint<br/>
+    /// Default: AspectRatio_MaintainXFOV
     /// </summary>
     public unsafe BmSDK.GameObject.EAspectRatioAxisConstraint AspectRatioAxisConstraint
     {
@@ -1143,7 +1149,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ServerAuthTimeout
+    /// IntProperty: ServerAuthTimeout<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int ServerAuthTimeout
     {
@@ -1161,7 +1168,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxServerAuthRetryCount
+    /// IntProperty: MaxServerAuthRetryCount<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxServerAuthRetryCount
     {

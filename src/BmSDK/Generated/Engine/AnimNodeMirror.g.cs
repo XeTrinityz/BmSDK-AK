@@ -79,7 +79,8 @@ public partial class AnimNodeMirror : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bEnableMirroring
+    /// BoolProperty: bEnableMirroring<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMirroring
     {

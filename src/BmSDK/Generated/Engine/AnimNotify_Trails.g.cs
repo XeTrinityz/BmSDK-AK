@@ -266,7 +266,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bSkipIfOwnerIsHidden
+    /// BoolProperty: bSkipIfOwnerIsHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipIfOwnerIsHidden
     {
@@ -284,7 +285,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: FirstEdgeSocketName
+    /// NameProperty: FirstEdgeSocketName<br/>
+    /// Default: EndControl
     /// </summary>
     public unsafe BmSDK.FName FirstEdgeSocketName
     {
@@ -293,7 +295,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: ControlPointSocketName
+    /// NameProperty: ControlPointSocketName<br/>
+    /// Default: MidControl
     /// </summary>
     public unsafe BmSDK.FName ControlPointSocketName
     {
@@ -302,7 +305,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// NameProperty: SecondEdgeSocketName
+    /// NameProperty: SecondEdgeSocketName<br/>
+    /// Default: StartControl
     /// </summary>
     public unsafe BmSDK.FName SecondEdgeSocketName
     {
@@ -347,7 +351,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: SamplesPerSecond
+    /// FloatProperty: SamplesPerSecond<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float SamplesPerSecond
     {

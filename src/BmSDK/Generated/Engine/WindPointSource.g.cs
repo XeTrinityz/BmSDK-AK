@@ -79,7 +79,8 @@ public partial class WindPointSource : BmSDK.Engine.Info, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: Component
+    /// ComponentProperty: Component<br/>
+    /// Default: Engine.Default__WindPointSource.WindPointSourceComponent0
     /// </summary>
     public unsafe BmSDK.Engine.WindPointSourceComponent Component
     {

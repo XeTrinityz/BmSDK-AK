@@ -79,7 +79,8 @@ public partial class SeqAct_FinishSequence : BmSDK.Engine.SequenceAction, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: OutputLabel
+    /// StrProperty: OutputLabel<br/>
+    /// Default: "Out"
     /// </summary>
     public unsafe BmSDK.FString OutputLabel
     {

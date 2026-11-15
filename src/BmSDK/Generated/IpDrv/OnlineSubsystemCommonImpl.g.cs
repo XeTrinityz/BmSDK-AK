@@ -385,7 +385,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
     }
 
     /// <summary>
-    /// IntProperty: MaxLocalTalkers
+    /// IntProperty: MaxLocalTalkers<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxLocalTalkers
     {
@@ -394,7 +395,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
     }
 
     /// <summary>
-    /// IntProperty: MaxRemoteTalkers
+    /// IntProperty: MaxRemoteTalkers<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int MaxRemoteTalkers
     {

@@ -119,7 +119,8 @@ public partial class RSeqAct_LinkCinematicProxyToInGameActor : BmSDK.Engine.SeqA
     }
 
     /// <summary>
-    /// FloatProperty: WarningTimeout
+    /// FloatProperty: WarningTimeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float WarningTimeout
     {

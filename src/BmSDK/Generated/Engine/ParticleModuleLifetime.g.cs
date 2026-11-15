@@ -79,7 +79,8 @@ public partial class ParticleModuleLifetime : BmSDK.Engine.ParticleModuleLifetim
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Lifetime
+    /// StructProperty: Lifetime<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleLifetime.DistributionLifetime)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Lifetime
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);

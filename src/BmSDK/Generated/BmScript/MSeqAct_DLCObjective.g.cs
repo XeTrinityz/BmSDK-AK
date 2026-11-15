@@ -107,7 +107,8 @@ public partial class MSeqAct_DLCObjective : BmSDK.BmGame.RSeqAct_Objective, BmSD
     }
 
     /// <summary>
-    /// StrProperty: ObjectiveFileName
+    /// StrProperty: ObjectiveFileName<br/>
+    /// Default: "Frontend"
     /// </summary>
     public unsafe BmSDK.FString ObjectiveFileName
     {

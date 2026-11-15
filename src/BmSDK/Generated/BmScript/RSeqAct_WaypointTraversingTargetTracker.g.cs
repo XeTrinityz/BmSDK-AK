@@ -395,7 +395,8 @@ public partial class RSeqAct_WaypointTraversingTargetTracker : BmSDK.Engine.SeqA
     }
 
     /// <summary>
-    /// FloatProperty: MaximumDistanceToBatman
+    /// FloatProperty: MaximumDistanceToBatman<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaximumDistanceToBatman
     {
@@ -404,7 +405,8 @@ public partial class RSeqAct_WaypointTraversingTargetTracker : BmSDK.Engine.SeqA
     }
 
     /// <summary>
-    /// FloatProperty: MinimumDistanceToBatman
+    /// FloatProperty: MinimumDistanceToBatman<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MinimumDistanceToBatman
     {
@@ -413,7 +415,8 @@ public partial class RSeqAct_WaypointTraversingTargetTracker : BmSDK.Engine.SeqA
     }
 
     /// <summary>
-    /// FloatProperty: MovementSpeed
+    /// FloatProperty: MovementSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MovementSpeed
     {

@@ -91,7 +91,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: Density
+    /// FloatProperty: Density<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float Density
     {
@@ -109,7 +110,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMinX
+    /// FloatProperty: ScaleMinX<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMinX
     {
@@ -118,7 +120,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMinY
+    /// FloatProperty: ScaleMinY<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMinY
     {
@@ -127,7 +130,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMinZ
+    /// FloatProperty: ScaleMinZ<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMinZ
     {
@@ -136,7 +140,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMaxX
+    /// FloatProperty: ScaleMaxX<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMaxX
     {
@@ -145,7 +150,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMaxY
+    /// FloatProperty: ScaleMaxY<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMaxY
     {
@@ -154,7 +160,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ScaleMaxZ
+    /// FloatProperty: ScaleMaxZ<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleMaxZ
     {
@@ -190,7 +197,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: AlignToNormal
+    /// BoolProperty: AlignToNormal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlignToNormal
     {
@@ -199,7 +207,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: RandomYaw
+    /// BoolProperty: RandomYaw<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RandomYaw
     {
@@ -208,7 +217,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: UniformScale
+    /// BoolProperty: UniformScale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UniformScale
     {
@@ -343,7 +353,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: ShowPaintSettings
+    /// BoolProperty: ShowPaintSettings<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ShowPaintSettings
     {
@@ -379,7 +390,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: GroundSlope
+    /// FloatProperty: GroundSlope<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float GroundSlope
     {
@@ -388,7 +400,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HeightMin
+    /// FloatProperty: HeightMin<br/>
+    /// Default: -262144
     /// </summary>
     public unsafe float HeightMin
     {
@@ -397,7 +410,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HeightMax
+    /// FloatProperty: HeightMax<br/>
+    /// Default: 262144
     /// </summary>
     public unsafe float HeightMax
     {
@@ -433,7 +447,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MaxInstancesPerCluster
+    /// IntProperty: MaxInstancesPerCluster<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxInstancesPerCluster
     {
@@ -442,7 +457,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxClusterRadius
+    /// FloatProperty: MaxClusterRadius<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxClusterRadius
     {
@@ -451,7 +467,8 @@ public partial class InstancedFoliageSettings : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ReapplyDensityAmount
+    /// FloatProperty: ReapplyDensityAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ReapplyDensityAmount
     {

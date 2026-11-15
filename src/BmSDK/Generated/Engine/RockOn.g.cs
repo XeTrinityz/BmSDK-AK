@@ -95,19 +95,22 @@ public partial class RockOn : BmSDK.Engine.DOFBloomMotionBlurEffect, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: SceneShadows
+    /// StructProperty: SceneShadows<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SceneShadows
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: SceneHighLights
+    /// StructProperty: SceneHighLights<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SceneHighLights
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 192);
 
     /// <summary>
-    /// StructProperty: SceneMidTones
+    /// StructProperty: SceneMidTones<br/>
+    /// Default: (R=0.5,G=0.5,B=0.5,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SceneMidTones
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 208);
@@ -122,7 +125,8 @@ public partial class RockOn : BmSDK.Engine.DOFBloomMotionBlurEffect, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: SceneColorize
+    /// StructProperty: SceneColorize<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SceneColorize
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 228);
@@ -137,7 +141,8 @@ public partial class RockOn : BmSDK.Engine.DOFBloomMotionBlurEffect, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: EdgeDetectionThreshold
+    /// FloatProperty: EdgeDetectionThreshold<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float EdgeDetectionThreshold
     {

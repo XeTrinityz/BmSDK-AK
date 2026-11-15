@@ -129,7 +129,8 @@ public partial class RSkelControl_CantileverBeam : BmSDK.Engine.SkelControlLookA
     }
 
     /// <summary>
-    /// FloatProperty: PercentBeamVelocityTransfer
+    /// FloatProperty: PercentBeamVelocityTransfer<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float PercentBeamVelocityTransfer
     {

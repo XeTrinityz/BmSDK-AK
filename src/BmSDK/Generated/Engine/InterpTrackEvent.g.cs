@@ -88,7 +88,8 @@ public partial class InterpTrackEvent : BmSDK.Engine.InterpTrack, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenForwards
+    /// BoolProperty: bFireEventsWhenForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenForwards
     {
@@ -97,7 +98,8 @@ public partial class InterpTrackEvent : BmSDK.Engine.InterpTrack, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenBackwards
+    /// BoolProperty: bFireEventsWhenBackwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenBackwards
     {

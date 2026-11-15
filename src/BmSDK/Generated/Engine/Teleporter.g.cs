@@ -128,7 +128,8 @@ public partial class Teleporter : BmSDK.Engine.NavigationPoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bChangesYaw
+    /// BoolProperty: bChangesYaw<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bChangesYaw
     {
@@ -164,7 +165,8 @@ public partial class Teleporter : BmSDK.Engine.NavigationPoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

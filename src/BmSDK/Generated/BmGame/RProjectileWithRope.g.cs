@@ -396,7 +396,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 720);
 
     /// <summary>
-    /// FloatProperty: fireDuration
+    /// FloatProperty: fireDuration<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float fireDuration
     {
@@ -405,7 +406,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RopeTighteningDelay
+    /// FloatProperty: RopeTighteningDelay<br/>
+    /// Default: 0.45
     /// </summary>
     public unsafe float RopeTighteningDelay
     {
@@ -414,7 +416,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FireVerticalVelocityMultiplier
+    /// FloatProperty: FireVerticalVelocityMultiplier<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float FireVerticalVelocityMultiplier
     {
@@ -423,7 +426,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FireReturnDuration
+    /// FloatProperty: FireReturnDuration<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float FireReturnDuration
     {
@@ -447,7 +451,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLineSlackProportion
+    /// FloatProperty: MaxLineSlackProportion<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float MaxLineSlackProportion
     {
@@ -456,7 +461,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LineTightenOffset
+    /// FloatProperty: LineTightenOffset<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float LineTightenOffset
     {
@@ -483,7 +489,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponSplashEffect
+    /// ObjectProperty: WeaponSplashEffect<br/>
+    /// Default: FFX_Combat.fx_BatarangWater
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WeaponSplashEffect
     {
@@ -492,7 +499,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponSplashSound
+    /// ObjectProperty: WeaponSplashSound<br/>
+    /// Default: Ww_CHR_BatmanDeviceImpacts.Play_DeviceImpact_Splash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WeaponSplashSound
     {
@@ -501,7 +509,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponHitFearGasEffect
+    /// ObjectProperty: WeaponHitFearGasEffect<br/>
+    /// Default: FFX_Combat.fx_BatarangFearGas
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WeaponHitFearGasEffect
     {
@@ -519,7 +528,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: BmGame.Default__RProjectileWithRope.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -555,7 +565,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSpoolWhenFiring
+    /// BoolProperty: bSpoolWhenFiring<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpoolWhenFiring
     {

@@ -79,7 +79,8 @@ public partial class LightmassPrimitiveSettingsObject : BmSDK.GameObject, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: LightmassSettings
+    /// StructProperty: LightmassSettings<br/>
+    /// Default: (bUmbraIsOccluder=true,EmissiveLightFalloffExponent=2,EmissiveBoost=1,DiffuseBoost=1,SpecularBoost=1,FullyOccludedSamplesFraction=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings LightmassSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings>(Ptr + 84);

@@ -201,7 +201,8 @@ public partial class RBmPawnSpawner_RobotBase : BmSDK.BmGame.RBmPawnSpawner, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSetHidden
+    /// BoolProperty: bSetHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetHidden
     {
@@ -228,7 +229,8 @@ public partial class RBmPawnSpawner_RobotBase : BmSDK.BmGame.RBmPawnSpawner, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 772);
 
     /// <summary>
-    /// FloatProperty: playerDistThreshold
+    /// FloatProperty: playerDistThreshold<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float playerDistThreshold
     {
@@ -237,7 +239,8 @@ public partial class RBmPawnSpawner_RobotBase : BmSDK.BmGame.RBmPawnSpawner, BmS
     }
 
     /// <summary>
-    /// FloatProperty: robotDistThreshold
+    /// FloatProperty: robotDistThreshold<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float robotDistThreshold
     {

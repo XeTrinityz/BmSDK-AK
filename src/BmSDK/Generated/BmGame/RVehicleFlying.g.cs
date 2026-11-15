@@ -450,7 +450,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoSimultaneousAttack
+    /// BoolProperty: bCanDoSimultaneousAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoSimultaneousAttack
     {
@@ -468,7 +469,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: MinAltitude
+    /// FloatProperty: MinAltitude<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MinAltitude
     {
@@ -477,7 +479,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OptimalAltitude
+    /// FloatProperty: OptimalAltitude<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float OptimalAltitude
     {
@@ -540,7 +543,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: ShootHelper
+    /// ComponentProperty: ShootHelper<br/>
+    /// Default: BmGame.Default__RVehicleFlying.ShootCylinder
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent ShootHelper
     {
@@ -570,7 +574,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: LightsMaterialIndex
+    /// IntProperty: LightsMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int LightsMaterialIndex
     {
@@ -579,7 +584,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: fDisruptorAimMaximumHeight
+    /// FloatProperty: fDisruptorAimMaximumHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float fDisruptorAimMaximumHeight
     {
@@ -588,7 +594,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: fDisruptorAimMaximumRearDistance
+    /// FloatProperty: fDisruptorAimMaximumRearDistance<br/>
+    /// Default: 125
     /// </summary>
     public unsafe float fDisruptorAimMaximumRearDistance
     {

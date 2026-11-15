@@ -1343,7 +1343,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EquipTime
+    /// FloatProperty: EquipTime<br/>
+    /// Default: 0.33
     /// </summary>
     public unsafe float EquipTime
     {
@@ -1352,7 +1353,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PutDownTime
+    /// FloatProperty: PutDownTime<br/>
+    /// Default: 0.33
     /// </summary>
     public unsafe float PutDownTime
     {
@@ -1376,7 +1378,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanThrow
+    /// BoolProperty: bCanThrow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanThrow
     {
@@ -1421,7 +1424,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WeaponRange
+    /// FloatProperty: WeaponRange<br/>
+    /// Default: 16384
     /// </summary>
     public unsafe float WeaponRange
     {
@@ -1439,7 +1443,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultAnimSpeed
+    /// FloatProperty: DefaultAnimSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DefaultAnimSpeed
     {
@@ -1448,7 +1453,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Priority
+    /// FloatProperty: Priority<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float Priority
     {
@@ -1475,7 +1481,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AIRating
+    /// FloatProperty: AIRating<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AIRating
     {

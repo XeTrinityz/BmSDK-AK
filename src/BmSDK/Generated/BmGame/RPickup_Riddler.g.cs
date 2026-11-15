@@ -177,7 +177,8 @@ public partial class RPickup_Riddler : BmSDK.BmGame.RPickupBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: UnlockBioCharacter
+    /// ByteProperty: UnlockBioCharacter<br/>
+    /// Default: BioCharacter_Batman
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EBioCharacter UnlockBioCharacter
     {
@@ -213,7 +214,8 @@ public partial class RPickup_Riddler : BmSDK.BmGame.RPickupBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAutoSaveWhenCollected
+    /// BoolProperty: bAutoSaveWhenCollected<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoSaveWhenCollected
     {
@@ -249,7 +251,8 @@ public partial class RPickup_Riddler : BmSDK.BmGame.RPickupBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: Light
+    /// ComponentProperty: Light<br/>
+    /// Default: BmGame.Default__RPickup_Riddler.CheapLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent Light
     {

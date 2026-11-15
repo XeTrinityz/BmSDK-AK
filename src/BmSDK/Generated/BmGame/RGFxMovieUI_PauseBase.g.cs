@@ -190,13 +190,15 @@ public partial class RGFxMovieUI_PauseBase : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: WorldPPSettings
+    /// StructProperty: WorldPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_FocusDistance=true,bOverride_DOF_InterpolationDuration=true,InterpolateOverDistanceFade=250...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings WorldPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 1072);
 
     /// <summary>
-    /// ArrayProperty: PauseScreens
+    /// ArrayProperty: PauseScreens<br/>
+    /// Default: ((TheMovieInstance=PauseMenu.PauseMenu,TheClass=BmGame.RGFxMovieUI_Pause),(TheMovieInstance=PauseMenu.PauseGame,TheClass=BmGame.RGFxMovieUI_PauseOptionsGame),(TheMovieInstance=PauseMenu.PauseAudio,The...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGFxMovieUI_PauseBase.FScreenDef> PauseScreens
     {

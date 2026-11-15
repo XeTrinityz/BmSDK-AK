@@ -213,7 +213,8 @@ public partial class RStopBatmanFromUsingAirshipTiltVolume : BmSDK.Engine.Volume
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -258,7 +259,8 @@ public partial class RStopBatmanFromUsingAirshipTiltVolume : BmSDK.Engine.Volume
     }
 
     /// <summary>
-    /// FloatProperty: fNoMovementCountdownDuration
+    /// FloatProperty: fNoMovementCountdownDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fNoMovementCountdownDuration
     {

@@ -209,7 +209,8 @@ public partial class RPawnVillainGunWithCard : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ObjectProperty: SecurityCardMesh
+    /// ObjectProperty: SecurityCardMesh<br/>
+    /// Default: DLC_Equipment_Catwoman.Mesh.OBJ_ATM_Card
     /// </summary>
     public unsafe BmSDK.Engine.StaticMesh SecurityCardMesh
     {
@@ -218,7 +219,8 @@ public partial class RPawnVillainGunWithCard : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ObjectProperty: CardMaterial
+    /// ObjectProperty: CardMaterial<br/>
+    /// Default: VFX_Forensics.CatVision.CatVision_KeyCard_Master_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant CardMaterial
     {
@@ -227,7 +229,8 @@ public partial class RPawnVillainGunWithCard : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// ComponentProperty: CardGlintParticle
+    /// ComponentProperty: CardGlintParticle<br/>
+    /// Default: BmScript.Default__RPawnVillainGunWithCard.Particle0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent CardGlintParticle
     {
@@ -245,7 +248,8 @@ public partial class RPawnVillainGunWithCard : BmSDK.BmScript.RPawnVillainGunPre
     }
 
     /// <summary>
-    /// NameProperty: SecurityCardSocket
+    /// NameProperty: SecurityCardSocket<br/>
+    /// Default: Pass_Card
     /// </summary>
     public unsafe BmSDK.FName SecurityCardSocket
     {

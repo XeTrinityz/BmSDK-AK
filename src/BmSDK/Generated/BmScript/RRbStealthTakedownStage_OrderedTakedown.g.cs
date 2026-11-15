@@ -202,7 +202,8 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     }
 
     /// <summary>
-    /// StructProperty: RobinFrontTakedowns
+    /// StructProperty: RobinFrontTakedowns<br/>
+    /// Default: (AttackerAnimationPrefix="Ordered_Takedown_Front",DefaultCapeStateName=Ordered_Takedown_Back_01,VictimAnimationPrefix="Ordered_Takedown_Front",MeetingTime=0.25,CameraCollision=true,fCameraBlendInTime=...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet RobinFrontTakedowns
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet>(Ptr + 1664);

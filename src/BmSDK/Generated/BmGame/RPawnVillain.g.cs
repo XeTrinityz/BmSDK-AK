@@ -9653,7 +9653,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ByteProperty: StuckRagdollSolution
+    /// ByteProperty: StuckRagdollSolution<br/>
+    /// Default: SRST_FreezeAndRemoveWhenOffScreen
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillain.StuckRagdollSolutionType StuckRagdollSolution
     {
@@ -9680,7 +9681,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ByteProperty: CombatReadiness
+    /// ByteProperty: CombatReadiness<br/>
+    /// Default: CRS_Ready
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillain.CombatReadinessState CombatReadiness
     {
@@ -9689,7 +9691,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ByteProperty: CombatReadinessBot
+    /// ByteProperty: CombatReadinessBot<br/>
+    /// Default: CRS_Ready
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillain.CombatReadinessState CombatReadinessBot
     {
@@ -9707,7 +9710,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ByteProperty: InteractButton
+    /// ByteProperty: InteractButton<br/>
+    /// Default: EIIFB_Counter
     /// </summary>
     public unsafe BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton InteractButton
     {
@@ -9743,7 +9747,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Ragdoll
+    /// ObjectProperty: PoseConfig_Ragdoll<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Ragdoll
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Ragdoll
     {
@@ -9752,7 +9757,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Writhe
+    /// ObjectProperty: PoseConfig_Writhe<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Writhe
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Writhe
     {
@@ -9761,7 +9767,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_Attacked
+    /// ObjectProperty: PoseConfig_Attacked<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Attacked
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_Attacked
     {
@@ -9770,7 +9777,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_HitReaction
+    /// ObjectProperty: PoseConfig_HitReaction<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_HitReaction
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_HitReaction
     {
@@ -9779,7 +9787,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_HitReaction_Standing
+    /// ObjectProperty: PoseConfig_HitReaction_Standing<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_HitReaction_StandingStance
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_HitReaction_Standing
     {
@@ -9788,7 +9797,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_HitReaction_Combat
+    /// ObjectProperty: PoseConfig_HitReaction_Combat<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_HitReaction_CombatStance
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_HitReaction_Combat
     {
@@ -9896,7 +9906,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: GlideKickPS
+    /// ObjectProperty: GlideKickPS<br/>
+    /// Default: FFX_Combat.Particles.Icon.fx_GlideKickNotify_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem GlideKickPS
     {
@@ -9905,7 +9916,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: GlideKickMat_M
+    /// ObjectProperty: GlideKickMat_M<br/>
+    /// Default: FFX_Combat.fx_GlideKickNotify_m_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance GlideKickMat_M
     {
@@ -10103,7 +10115,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ObjectProperty: BlockAnimset
+    /// ObjectProperty: BlockAnimset<br/>
+    /// Default: Anim_Thug.Code.TG_Blocking
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet BlockAnimset
     {
@@ -10301,7 +10314,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractInteraction
+    /// ComponentProperty: PlayerInteractInteraction<br/>
+    /// Default: BmGame.Default__RPawnVillain.InterInteraction
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractInteraction
     {
@@ -10328,7 +10342,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ClassProperty: BeatdownCombatMoveClass
+    /// ClassProperty: BeatdownCombatMoveClass<br/>
+    /// Default: BmGame.RCombatMove_BatmanBeatdown
     /// </summary>
     public unsafe BmSDK.Class BeatdownCombatMoveClass
     {
@@ -10346,7 +10361,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ComponentProperty: RHDInteractions
+    /// ComponentProperty: RHDInteractions<br/>
+    /// Default: BmGame.Default__RPawnVillain.OmniInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent RHDInteractions
     {
@@ -10382,7 +10398,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ComponentProperty: CriticalPfxComp
+    /// ComponentProperty: CriticalPfxComp<br/>
+    /// Default: BmGame.Default__RPawnVillain.CriticalPfxCompBase
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent CriticalPfxComp
     {
@@ -10418,7 +10435,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ComponentProperty: HeadPSC
+    /// ComponentProperty: HeadPSC<br/>
+    /// Default: BmGame.Default__RPawnVillain.GenericHeadParticleSystem
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadPSC
     {
@@ -10427,7 +10445,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ClassProperty: FreezeBlastHitBehaviourClass
+    /// ClassProperty: FreezeBlastHitBehaviourClass<br/>
+    /// Default: BmGame.RBMBehaviour_FreezeBlastHit
     /// </summary>
     public unsafe BmSDK.Class FreezeBlastHitBehaviourClass
     {
@@ -10490,7 +10509,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanDieByFalling
+    /// BoolProperty: bCanDieByFalling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDieByFalling
     {
@@ -10499,7 +10519,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bStopSpeechOnDeath
+    /// BoolProperty: bStopSpeechOnDeath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopSpeechOnDeath
     {
@@ -10508,7 +10529,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanCombatBark
+    /// BoolProperty: bCanCombatBark<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCombatBark
     {
@@ -10517,7 +10539,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bStopDialogueWhenHit
+    /// BoolProperty: bStopDialogueWhenHit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopDialogueWhenHit
     {
@@ -10526,7 +10549,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bAwardDeathScore
+    /// BoolProperty: bAwardDeathScore<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAwardDeathScore
     {
@@ -10607,7 +10631,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bShouldPreventFinalBlowCam
+    /// BoolProperty: bShouldPreventFinalBlowCam<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldPreventFinalBlowCam
     {
@@ -10625,7 +10650,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanTargetBatmobile
+    /// BoolProperty: bCanTargetBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTargetBatmobile
     {
@@ -10787,7 +10813,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeRevived
+    /// BoolProperty: bCanBeRevived<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeRevived
     {
@@ -10805,7 +10832,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanHelpUpThugs
+    /// BoolProperty: bCanHelpUpThugs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanHelpUpThugs
     {
@@ -10823,7 +10851,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanDiveAwayFromCars
+    /// BoolProperty: bCanDiveAwayFromCars<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDiveAwayFromCars
     {
@@ -10832,7 +10861,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeZappedByBatmobile
+    /// BoolProperty: bCanBeZappedByBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeZappedByBatmobile
     {
@@ -10886,7 +10916,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bStrungUpBark
+    /// BoolProperty: bStrungUpBark<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStrungUpBark
     {
@@ -10922,7 +10953,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeatdown
+    /// BoolProperty: bCanBeatdown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeatdown
     {
@@ -11057,7 +11089,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bHasVantageMines
+    /// BoolProperty: bHasVantageMines<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasVantageMines
     {
@@ -11219,7 +11252,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanCheckFalling
+    /// BoolProperty: bCanCheckFalling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCheckFalling
     {
@@ -11273,7 +11307,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanTakeFreezeHit
+    /// BoolProperty: bCanTakeFreezeHit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTakeFreezeHit
     {
@@ -11282,7 +11317,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanTakeFreezeClusterHit
+    /// BoolProperty: bCanTakeFreezeClusterHit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTakeFreezeClusterHit
     {
@@ -11327,7 +11363,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTargettedForCombatTakedown
+    /// BoolProperty: bCanBeTargettedForCombatTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTargettedForCombatTakedown
     {
@@ -11345,7 +11382,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bReportKOTypeGameAction
+    /// BoolProperty: bReportKOTypeGameAction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReportKOTypeGameAction
     {
@@ -11426,7 +11464,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeShoved
+    /// BoolProperty: bCanBeShoved<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeShoved
     {
@@ -11435,7 +11474,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bCanThrowCounter
+    /// BoolProperty: bCanThrowCounter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanThrowCounter
     {
@@ -11489,7 +11529,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// BoolProperty: bAllowFearTakedown
+    /// BoolProperty: bAllowFearTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowFearTakedown
     {
@@ -11720,7 +11761,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: AntiDodgeFactor
+    /// FloatProperty: AntiDodgeFactor<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AntiDodgeFactor
     {
@@ -11729,7 +11771,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// IntProperty: KillFallSpeed
+    /// IntProperty: KillFallSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int KillFallSpeed
     {
@@ -11738,7 +11781,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// IntProperty: DestroyFallSpeed
+    /// IntProperty: DestroyFallSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe int DestroyFallSpeed
     {
@@ -11753,7 +11797,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5380);
 
     /// <summary>
-    /// ArrayProperty: OverlayAnims
+    /// ArrayProperty: OverlayAnims<br/>
+    /// Default: (CombatOverlay1,CombatOverlay2,CombatOverlay3)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OverlayAnims
     {
@@ -11762,7 +11807,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ArrayProperty: ArmouredOverlayAnims
+    /// ArrayProperty: ArmouredOverlayAnims<br/>
+    /// Default: (ArmouredCombatOverlay1,ArmouredCombatOverlay2,ArmouredCombatOverlay3,ArmouredCombatOverlay4)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ArmouredOverlayAnims
     {
@@ -11807,7 +11853,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// IntProperty: ForceTauntSetID
+    /// IntProperty: ForceTauntSetID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceTauntSetID
     {
@@ -11852,7 +11899,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: DelayBeforeActiveCombat
+    /// FloatProperty: DelayBeforeActiveCombat<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DelayBeforeActiveCombat
     {
@@ -11915,7 +11963,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: RagdollForceMultiplier
+    /// FloatProperty: RagdollForceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RagdollForceMultiplier
     {
@@ -11924,7 +11973,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// IntProperty: MedicRevivesRemaining
+    /// IntProperty: MedicRevivesRemaining<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MedicRevivesRemaining
     {
@@ -11951,7 +12001,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: TrackHistoryTime
+    /// FloatProperty: TrackHistoryTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TrackHistoryTime
     {
@@ -11996,7 +12047,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5608);
 
     /// <summary>
-    /// FloatProperty: PawnBatarangStunModifier
+    /// FloatProperty: PawnBatarangStunModifier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PawnBatarangStunModifier
     {
@@ -12122,7 +12174,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: CustomAntiPersonelStunTime
+    /// FloatProperty: CustomAntiPersonelStunTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomAntiPersonelStunTime
     {
@@ -12155,7 +12208,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// NameProperty: RagdollRestTestBone
+    /// NameProperty: RagdollRestTestBone<br/>
+    /// Default: Bip01_Spine
     /// </summary>
     public unsafe BmSDK.FName RagdollRestTestBone
     {
@@ -12164,7 +12218,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: LinearRestThreshold
+    /// FloatProperty: LinearRestThreshold<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearRestThreshold
     {
@@ -12173,7 +12228,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: AngularRestThreshold
+    /// FloatProperty: AngularRestThreshold<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float AngularRestThreshold
     {
@@ -12209,7 +12265,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// StrProperty: InteractPrompt
+    /// StrProperty: InteractPrompt<br/>
+    /// Default: "ButtonPromptInterrogate"
     /// </summary>
     public unsafe BmSDK.FString InteractPrompt
     {
@@ -12218,7 +12275,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// NameProperty: AerialAttackAnimName
+    /// NameProperty: AerialAttackAnimName<br/>
+    /// Default: Aerial_Evade_Takedown_tg
     /// </summary>
     public unsafe BmSDK.FName AerialAttackAnimName
     {
@@ -12254,7 +12312,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// ArrayProperty: BatclawSocketTargets
+    /// ArrayProperty: BatclawSocketTargets<br/>
+    /// Default: (Bip01_L_Clavicle,Bip01_R_Clavicle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BatclawSocketTargets
     {
@@ -12263,7 +12322,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: FreezeTime
+    /// FloatProperty: FreezeTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FreezeTime
     {
@@ -12272,7 +12332,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: FloorFreezeTime
+    /// FloatProperty: FloorFreezeTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FloorFreezeTime
     {
@@ -12281,7 +12342,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: GooSprayImpulseMultiplier
+    /// FloatProperty: GooSprayImpulseMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GooSprayImpulseMultiplier
     {
@@ -12356,7 +12418,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6132);
 
     /// <summary>
-    /// NameProperty: RECTargetBone
+    /// NameProperty: RECTargetBone<br/>
+    /// Default: Bip01_Spine2
     /// </summary>
     public unsafe BmSDK.FName RECTargetBone
     {
@@ -12491,13 +12554,15 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// StructProperty: vJammedVFXPivotParameter
+    /// StructProperty: vJammedVFXPivotParameter<br/>
+    /// Default: (X=10,Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vJammedVFXPivotParameter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6256);
 
     /// <summary>
-    /// FloatProperty: fJammedVFXRadiusParameter
+    /// FloatProperty: fJammedVFXRadiusParameter<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float fJammedVFXRadiusParameter
     {
@@ -12506,7 +12571,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: fJammedVFXLengthParameter
+    /// FloatProperty: fJammedVFXLengthParameter<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float fJammedVFXLengthParameter
     {
@@ -12521,7 +12587,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 6276);
 
     /// <summary>
-    /// FloatProperty: DistForMediumThugPickup
+    /// FloatProperty: DistForMediumThugPickup<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DistForMediumThugPickup
     {
@@ -12530,7 +12597,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     }
 
     /// <summary>
-    /// FloatProperty: DistForFarThugPickup
+    /// FloatProperty: DistForFarThugPickup<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DistForFarThugPickup
     {
@@ -12551,7 +12619,8 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6300);
 
     /// <summary>
-    /// FloatProperty: AttackDelay
+    /// FloatProperty: AttackDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float AttackDelay
     {

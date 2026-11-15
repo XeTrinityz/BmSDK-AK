@@ -136,7 +136,8 @@ public partial class RBatmobileInfiniteBoostVolume : BmSDK.Engine.Volume, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeed
+    /// FloatProperty: MinSpeed<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MinSpeed
     {

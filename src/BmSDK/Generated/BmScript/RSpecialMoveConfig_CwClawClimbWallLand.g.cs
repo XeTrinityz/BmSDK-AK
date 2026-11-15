@@ -448,7 +448,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: MidAirMinDistance
+    /// FloatProperty: MidAirMinDistance<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MidAirMinDistance
     {
@@ -457,7 +458,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: MidAirDistanceOffset
+    /// FloatProperty: MidAirDistanceOffset<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MidAirDistanceOffset
     {
@@ -466,7 +468,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: MidAirScale
+    /// FloatProperty: MidAirScale<br/>
+    /// Default: 0.04
     /// </summary>
     public unsafe float MidAirScale
     {
@@ -475,7 +478,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// BoolProperty: bScaleLR
+    /// BoolProperty: bScaleLR<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bScaleLR
     {
@@ -484,7 +488,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// BoolProperty: bScaleUp
+    /// BoolProperty: bScaleUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bScaleUp
     {
@@ -493,7 +498,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// BoolProperty: bClipLR
+    /// BoolProperty: bClipLR<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClipLR
     {
@@ -574,7 +580,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: ClipLRIdealDist
+    /// FloatProperty: ClipLRIdealDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ClipLRIdealDist
     {
@@ -583,7 +590,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: ClipLRPer100
+    /// FloatProperty: ClipLRPer100<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float ClipLRPer100
     {
@@ -592,7 +600,8 @@ public partial class RSpecialMoveConfig_CwClawClimbWallLand : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: ClipLRMaxTime
+    /// FloatProperty: ClipLRMaxTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ClipLRMaxTime
     {

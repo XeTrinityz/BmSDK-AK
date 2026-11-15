@@ -115,7 +115,8 @@ public partial class RSpecialMoveConfig_DisarmJohnnyBomb : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: HoldTime
+    /// FloatProperty: HoldTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float HoldTime
     {

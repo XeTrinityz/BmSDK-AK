@@ -206,7 +206,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: Explosion
+    /// ObjectProperty: Explosion<br/>
+    /// Default: VFX_Weapon.Particles.Rocket_Launcher_Impact_IVY
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem Explosion
     {
@@ -215,7 +216,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: TurnRateDegree
+    /// FloatProperty: TurnRateDegree<br/>
+    /// Default: 22.5
     /// </summary>
     public unsafe float TurnRateDegree
     {
@@ -233,7 +235,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: BlastRadiusInner
+    /// FloatProperty: BlastRadiusInner<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float BlastRadiusInner
     {
@@ -242,7 +245,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: BlastRadiusOuter
+    /// FloatProperty: BlastRadiusOuter<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float BlastRadiusOuter
     {
@@ -251,7 +255,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxExplosionImpulse
+    /// FloatProperty: MaxExplosionImpulse<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float MaxExplosionImpulse
     {
@@ -260,7 +265,8 @@ public partial class RPrototank_Missile : BmSDK.BmGame.RProjectile, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinExplosionImpulse
+    /// FloatProperty: MinExplosionImpulse<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinExplosionImpulse
     {

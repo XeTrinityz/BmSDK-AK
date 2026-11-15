@@ -124,7 +124,8 @@ public partial class RCrowdSpawner_BatmanAppear : BmSDK.BmGame.RCrowdSpawner, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AgentStageTime
+    /// FloatProperty: AgentStageTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float AgentStageTime
     {

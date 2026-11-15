@@ -435,7 +435,8 @@ public partial class RVehicleBehaviour_TankStrafe : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: FullThrottleRange
+    /// FloatProperty: FullThrottleRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FullThrottleRange
     {
@@ -444,7 +445,8 @@ public partial class RVehicleBehaviour_TankStrafe : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// FloatProperty: ChaseMinRange
+    /// FloatProperty: ChaseMinRange<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ChaseMinRange
     {

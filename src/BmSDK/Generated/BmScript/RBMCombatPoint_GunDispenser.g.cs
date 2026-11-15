@@ -244,7 +244,8 @@ public partial class RBMCombatPoint_GunDispenser : BmSDK.BmGame.RBMCombatPoint_G
     }
 
     /// <summary>
-    /// BoolProperty: bGunInLocker
+    /// BoolProperty: bGunInLocker<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGunInLocker
     {
@@ -253,7 +254,8 @@ public partial class RBMCombatPoint_GunDispenser : BmSDK.BmGame.RBMCombatPoint_G
     }
 
     /// <summary>
-    /// FloatProperty: OpenTime
+    /// FloatProperty: OpenTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float OpenTime
     {
@@ -289,7 +291,8 @@ public partial class RBMCombatPoint_GunDispenser : BmSDK.BmGame.RBMCombatPoint_G
     }
 
     /// <summary>
-    /// ComponentProperty: VoiceSynthesiserHighlightGrateMesh
+    /// ComponentProperty: VoiceSynthesiserHighlightGrateMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_GunDispenser.VoiceSynthesiserHighlightGrateMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent VoiceSynthesiserHighlightGrateMesh
     {
@@ -334,7 +337,8 @@ public partial class RBMCombatPoint_GunDispenser : BmSDK.BmGame.RBMCombatPoint_G
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeSinceUse
+    /// FloatProperty: MinTimeSinceUse<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MinTimeSinceUse
     {

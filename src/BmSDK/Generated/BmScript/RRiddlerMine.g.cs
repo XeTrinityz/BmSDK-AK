@@ -181,7 +181,8 @@ public partial class RRiddlerMine : BmSDK.BmScript.RThugMine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: StaticBaseMesh
+    /// ComponentProperty: StaticBaseMesh<br/>
+    /// Default: BmScript.Default__RRiddlerMine.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticBaseMesh
     {
@@ -190,7 +191,8 @@ public partial class RRiddlerMine : BmSDK.BmScript.RThugMine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RespawnTimer
+    /// FloatProperty: RespawnTimer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RespawnTimer
     {
@@ -199,7 +201,8 @@ public partial class RRiddlerMine : BmSDK.BmScript.RThugMine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RespawnDelayTimer
+    /// FloatProperty: RespawnDelayTimer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RespawnDelayTimer
     {
@@ -208,7 +211,8 @@ public partial class RRiddlerMine : BmSDK.BmScript.RThugMine, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZTransForRespawn
+    /// FloatProperty: ZTransForRespawn<br/>
+    /// Default: -50
     /// </summary>
     public unsafe float ZTransForRespawn
     {

@@ -1094,7 +1094,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RVehicleTank.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -1175,7 +1176,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowWeaponWarning
+    /// BoolProperty: bShowWeaponWarning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowWeaponWarning
     {
@@ -1220,7 +1222,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexFL
+    /// IntProperty: WheelIndexFL<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexFL
     {
@@ -1229,7 +1232,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexFR
+    /// IntProperty: WheelIndexFR<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexFR
     {
@@ -1238,7 +1242,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexRL
+    /// IntProperty: WheelIndexRL<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexRL
     {
@@ -1247,7 +1252,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexRR
+    /// IntProperty: WheelIndexRR<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexRR
     {
@@ -1256,7 +1262,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexFL2
+    /// IntProperty: WheelIndexFL2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexFL2
     {
@@ -1265,7 +1272,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexFR2
+    /// IntProperty: WheelIndexFR2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexFR2
     {
@@ -1274,7 +1282,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexRL2
+    /// IntProperty: WheelIndexRL2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexRL2
     {
@@ -1283,7 +1292,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WheelIndexRR2
+    /// IntProperty: WheelIndexRR2<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int WheelIndexRR2
     {
@@ -1310,7 +1320,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumMissilesPerVolley
+    /// IntProperty: NumMissilesPerVolley<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int NumMissilesPerVolley
     {
@@ -1325,7 +1336,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 7900);
 
     /// <summary>
-    /// FloatProperty: MissileFireInterval
+    /// FloatProperty: MissileFireInterval<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MissileFireInterval
     {
@@ -1352,7 +1364,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumSimultaneousAttackSlots
+    /// IntProperty: NumSimultaneousAttackSlots<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumSimultaneousAttackSlots
     {
@@ -1361,7 +1374,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CatTrackAnimScale
+    /// FloatProperty: CatTrackAnimScale<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float CatTrackAnimScale
     {
@@ -1379,7 +1393,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VolleyInterval
+    /// FloatProperty: VolleyInterval<br/>
+    /// Default: 0.333
     /// </summary>
     public unsafe float VolleyInterval
     {
@@ -1388,7 +1403,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VolleyAngle
+    /// FloatProperty: VolleyAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float VolleyAngle
     {
@@ -1442,7 +1458,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MissileVolleyMaxHealth
+    /// IntProperty: MissileVolleyMaxHealth<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MissileVolleyMaxHealth
     {
@@ -1460,7 +1477,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TankSteerScale
+    /// FloatProperty: TankSteerScale<br/>
+    /// Default: 0.333
     /// </summary>
     public unsafe float TankSteerScale
     {
@@ -1511,7 +1529,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MissileLaunchSocket
+    /// ArrayProperty: MissileLaunchSocket<br/>
+    /// Default: (Missile1,Missile2,Missile3,Missile4)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MissileLaunchSocket
     {
@@ -1544,7 +1563,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: TurretBaseBoneName
+    /// NameProperty: TurretBaseBoneName<br/>
+    /// Default: Chassis_ROUT
     /// </summary>
     public unsafe BmSDK.FName TurretBaseBoneName
     {
@@ -1553,7 +1573,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: EyeShotsToKill
+    /// IntProperty: EyeShotsToKill<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int EyeShotsToKill
     {
@@ -1562,7 +1583,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: LightsMaterialIndex
+    /// IntProperty: LightsMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int LightsMaterialIndex
     {

@@ -129,7 +129,8 @@ public partial class RSeqAct_MakeBatmanLookAtItems : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistance
+    /// FloatProperty: MaxDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxDistance
     {

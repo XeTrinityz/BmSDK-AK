@@ -130,7 +130,8 @@ public partial class RSeqAct_BespokeOneShotScan : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: MovieInfo
+    /// ObjectProperty: MovieInfo<br/>
+    /// Default: HudModuleBespokeOneShotDroneScan.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie MovieInfo
     {
@@ -148,7 +149,8 @@ public partial class RSeqAct_BespokeOneShotScan : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: SuppressSurveillance
+    /// BoolProperty: SuppressSurveillance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SuppressSurveillance
     {

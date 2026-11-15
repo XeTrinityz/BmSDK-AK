@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace BmSDK.Printer;
 
 // The reflection data of one class as the dumper wrote it, minus the raw memory.
@@ -18,6 +20,9 @@ sealed class ClassNode : Node
     public string? Source;
     public List<string> Interfaces = [];
     public List<Node> Fields = [];
+
+    // Property values of the class default object, by property name.
+    public Dictionary<string, JsonElement>? Defaults;
 }
 
 // Script structs, functions and states.
@@ -28,6 +33,9 @@ class StructNode : Node
     public int Size;
     public int Align;
     public List<Node> Fields = [];
+
+    // A script struct's default member values, by property name.
+    public Dictionary<string, JsonElement>? Defaults;
 }
 
 sealed class FuncNode : StructNode

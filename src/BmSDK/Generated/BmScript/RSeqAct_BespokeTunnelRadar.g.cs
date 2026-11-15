@@ -473,7 +473,8 @@ public partial class RSeqAct_BespokeTunnelRadar : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CurrentSeismicLevel
+    /// FloatProperty: CurrentSeismicLevel<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentSeismicLevel
     {
@@ -482,7 +483,8 @@ public partial class RSeqAct_BespokeTunnelRadar : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: SeismicLevelChangeSpeed
+    /// FloatProperty: SeismicLevelChangeSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float SeismicLevelChangeSpeed
     {
@@ -509,7 +511,8 @@ public partial class RSeqAct_BespokeTunnelRadar : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: NumberOfDamagePacketsExcavatorWillTake
+    /// FloatProperty: NumberOfDamagePacketsExcavatorWillTake<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float NumberOfDamagePacketsExcavatorWillTake
     {

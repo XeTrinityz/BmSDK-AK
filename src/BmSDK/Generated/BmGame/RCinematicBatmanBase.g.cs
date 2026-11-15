@@ -175,7 +175,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
     }
 
     /// <summary>
-    /// ComponentProperty: CapeSkeletalMesh
+    /// ComponentProperty: CapeSkeletalMesh<br/>
+    /// Default: BmGame.Default__RCinematicBatmanBase.CapeSkeletalMesh1
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeSkeletalMeshComponent CapeSkeletalMesh
     {
@@ -184,7 +185,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
     }
 
     /// <summary>
-    /// ComponentProperty: CapeComponent
+    /// ComponentProperty: CapeComponent<br/>
+    /// Default: BmGame.Default__RCinematicBatmanBase.CapeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeComponent CapeComponent
     {
@@ -193,7 +195,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
     }
 
     /// <summary>
-    /// ComponentProperty: CapeRenderingComponent
+    /// ComponentProperty: CapeRenderingComponent<br/>
+    /// Default: BmGame.Default__RCinematicBatmanBase.CapeRenderingComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeRenderingComponent CapeRenderingComponent
     {
@@ -202,7 +205,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
     }
 
     /// <summary>
-    /// BoolProperty: EnableCape
+    /// BoolProperty: EnableCape<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnableCape
     {
@@ -211,7 +215,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
     }
 
     /// <summary>
-    /// BoolProperty: UseAutomaticDamageModel
+    /// BoolProperty: UseAutomaticDamageModel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseAutomaticDamageModel
     {

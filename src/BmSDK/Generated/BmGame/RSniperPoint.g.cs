@@ -273,7 +273,8 @@ public partial class RSniperPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: OverrideMinAimAts
+    /// IntProperty: OverrideMinAimAts<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideMinAimAts
     {
@@ -282,7 +283,8 @@ public partial class RSniperPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: OverrideMaxAimAts
+    /// IntProperty: OverrideMaxAimAts<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideMaxAimAts
     {

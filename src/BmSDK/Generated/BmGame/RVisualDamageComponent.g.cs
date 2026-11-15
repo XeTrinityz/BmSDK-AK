@@ -458,7 +458,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: DeformationScale
+    /// FloatProperty: DeformationScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DeformationScale
     {
@@ -467,7 +468,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: MinDeformRadius
+    /// FloatProperty: MinDeformRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MinDeformRadius
     {
@@ -476,7 +478,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesSmallThreshold
+    /// FloatProperty: ImpactParticlesSmallThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ImpactParticlesSmallThreshold
     {
@@ -512,7 +515,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesMediumThreshold
+    /// FloatProperty: ImpactParticlesMediumThreshold<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ImpactParticlesMediumThreshold
     {
@@ -521,7 +525,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesLargeThreshold
+    /// FloatProperty: ImpactParticlesLargeThreshold<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ImpactParticlesLargeThreshold
     {

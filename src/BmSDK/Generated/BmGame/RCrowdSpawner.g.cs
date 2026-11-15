@@ -148,7 +148,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SpawnNum
+    /// IntProperty: SpawnNum<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int SpawnNum
     {
@@ -166,7 +167,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: AgentClass
+    /// ClassProperty: AgentClass<br/>
+    /// Default: BmGame.RCrowdAgent
     /// </summary>
     public unsafe BmSDK.Class AgentClass
     {
@@ -175,7 +177,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AwareRadius
+    /// FloatProperty: AwareRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float AwareRadius
     {
@@ -184,7 +187,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AvoidOtherRadius
+    /// FloatProperty: AvoidOtherRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float AvoidOtherRadius
     {
@@ -193,7 +197,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedBlendStart
+    /// FloatProperty: SpeedBlendStart<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float SpeedBlendStart
     {
@@ -202,7 +207,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedBlendEnd
+    /// FloatProperty: SpeedBlendEnd<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float SpeedBlendEnd
     {
@@ -211,7 +217,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxYawRate
+    /// FloatProperty: MaxYawRate<br/>
+    /// Default: 40000
     /// </summary>
     public unsafe float MaxYawRate
     {
@@ -220,7 +227,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Health
+    /// IntProperty: Health<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int Health
     {
@@ -247,7 +255,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinVelDamping
+    /// FloatProperty: MinVelDamping<br/>
+    /// Default: 0.98
     /// </summary>
     public unsafe float MinVelDamping
     {
@@ -256,7 +265,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxVelDamping
+    /// FloatProperty: MaxVelDamping<br/>
+    /// Default: 0.98
     /// </summary>
     public unsafe float MaxVelDamping
     {
@@ -283,7 +293,8 @@ public partial class RCrowdSpawner : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AvoidForce
+    /// FloatProperty: AvoidForce<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float AvoidForce
     {

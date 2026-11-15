@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: TransInAnimName
+    /// NameProperty: TransInAnimName<br/>
+    /// Default: BM_FF_Aerial_Takedown
     /// </summary>
     public unsafe BmSDK.FName TransInAnimName
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// NameProperty: idleAnimName
+    /// NameProperty: idleAnimName<br/>
+    /// Default: Beatdown_Idle
     /// </summary>
     public unsafe BmSDK.FName idleAnimName
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// ArrayProperty: PunchAnimNames
+    /// ArrayProperty: PunchAnimNames<br/>
+    /// Default: (Beatdown)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PunchAnimNames
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// IntProperty: NumPunches
+    /// IntProperty: NumPunches<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int NumPunches
     {
@@ -115,7 +119,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: idleTimeout_NoPunches
+    /// FloatProperty: idleTimeout_NoPunches<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float idleTimeout_NoPunches
     {
@@ -124,7 +129,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: idleTimeout_DonePunch
+    /// FloatProperty: idleTimeout_DonePunch<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float idleTimeout_DonePunch
     {
@@ -133,7 +139,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: beatdownFOVMax
+    /// FloatProperty: beatdownFOVMax<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float beatdownFOVMax
     {
@@ -142,7 +149,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: beatdownFOVMin
+    /// FloatProperty: beatdownFOVMin<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float beatdownFOVMin
     {
@@ -151,7 +159,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: beatdownExtraFOVAmount
+    /// FloatProperty: beatdownExtraFOVAmount<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float beatdownExtraFOVAmount
     {
@@ -160,7 +169,8 @@ public partial class RSpecialMoveConfig_EjectIntoFirefly : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: beatdownExtraFOVDuration
+    /// FloatProperty: beatdownExtraFOVDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float beatdownExtraFOVDuration
     {

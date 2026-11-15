@@ -872,7 +872,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: HitFx
+    /// ComponentProperty: HitFx<br/>
+    /// Default: BmScript.Default__RPawnVillainThug_Robot.NewHitFx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HitFx
     {
@@ -881,7 +882,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: StomachLight
+    /// ComponentProperty: StomachLight<br/>
+    /// Default: BmScript.Default__RPawnVillainThug_Robot.StomachLight1
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent StomachLight
     {
@@ -899,7 +901,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bPoweringUp
+    /// BoolProperty: bPoweringUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPoweringUp
     {
@@ -926,7 +929,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// FloatProperty: StomachLightBrightnessMul
+    /// FloatProperty: StomachLightBrightnessMul<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float StomachLightBrightnessMul
     {
@@ -935,7 +939,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DestStomachLightBrightnessMul
+    /// FloatProperty: DestStomachLightBrightnessMul<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DestStomachLightBrightnessMul
     {
@@ -971,7 +976,8 @@ public partial class RPawnVillainThug_Robot : BmSDK.BmGame.RPawnVillainThug, BmS
     }
 
     /// <summary>
-    /// FloatProperty: InvincibleTime
+    /// FloatProperty: InvincibleTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float InvincibleTime
     {

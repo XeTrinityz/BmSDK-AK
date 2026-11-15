@@ -88,7 +88,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bArmorStops
+    /// BoolProperty: bArmorStops<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bArmorStops
     {
@@ -106,7 +107,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bExtraMomentumZ
+    /// BoolProperty: bExtraMomentumZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExtraMomentumZ
     {
@@ -124,7 +126,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDeformVehicle
+    /// BoolProperty: bDeformVehicle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeformVehicle
     {
@@ -133,7 +136,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSmashVehicleGlass
+    /// BoolProperty: bSmashVehicleGlass<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSmashVehicleGlass
     {
@@ -142,7 +146,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSetBatmobileOnFire
+    /// BoolProperty: bSetBatmobileOnFire<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetBatmobileOnFire
     {
@@ -151,7 +156,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAlertTank
+    /// BoolProperty: bAlertTank<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlertTank
     {
@@ -160,7 +166,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: KDamageImpulse
+    /// FloatProperty: KDamageImpulse<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float KDamageImpulse
     {
@@ -205,7 +212,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleDamageScaling
+    /// FloatProperty: VehicleDamageScaling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VehicleDamageScaling
     {
@@ -214,7 +222,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleMomentumScaling
+    /// FloatProperty: VehicleMomentumScaling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VehicleMomentumScaling
     {
@@ -223,7 +232,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DamagedFFWaveform
+    /// ObjectProperty: DamagedFFWaveform<br/>
+    /// Default: Engine.Default__DamageType.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DamagedFFWaveform
     {
@@ -241,7 +251,8 @@ public partial class DamageType : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FracturedMeshDamage
+    /// FloatProperty: FracturedMeshDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FracturedMeshDamage
     {

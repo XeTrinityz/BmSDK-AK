@@ -467,7 +467,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: DeepScanFilterStrings_Surface_Muscle_Bone
+    /// ArrayProperty: DeepScanFilterStrings_Surface_Muscle_Bone<br/>
+    /// Default: ("Surface Scan**","Muscle Scan**","Bone Scan**")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> DeepScanFilterStrings_Surface_Muscle_Bone
     {
@@ -476,7 +477,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: DeepScanFilterProportions_Surface_Muscle_Bone
+    /// ArrayProperty: DeepScanFilterProportions_Surface_Muscle_Bone<br/>
+    /// Default: (5,7,4)
     /// </summary>
     public unsafe BmSDK.TArray<float> DeepScanFilterProportions_Surface_Muscle_Bone
     {
@@ -494,7 +496,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: DeepScanFinalDisplayFrameIndex
+    /// IntProperty: DeepScanFinalDisplayFrameIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int DeepScanFinalDisplayFrameIndex
     {
@@ -638,7 +641,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveOuterAlpha
+    /// ArrayProperty: ActiveOuterAlpha<br/>
+    /// Default: (1,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> ActiveOuterAlpha
     {
@@ -647,7 +651,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveInnerAlpha
+    /// ArrayProperty: ActiveInnerAlpha<br/>
+    /// Default: (0,1,1,1,1)
     /// </summary>
     public unsafe BmSDK.TArray<float> ActiveInnerAlpha
     {
@@ -656,7 +661,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: InactiveOuterAlpha
+    /// ArrayProperty: InactiveOuterAlpha<br/>
+    /// Default: (1,0,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<float> InactiveOuterAlpha
     {
@@ -665,7 +671,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: InactiveInnerAlpha
+    /// ArrayProperty: InactiveInnerAlpha<br/>
+    /// Default: (1,0.2,0.2,0.2,0.2)
     /// </summary>
     public unsafe BmSDK.TArray<float> InactiveInnerAlpha
     {
@@ -674,7 +681,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveMaskInner
+    /// ArrayProperty: ActiveMaskInner<br/>
+    /// Default: (0.1,0.1,0.1,0.1,0.1)
     /// </summary>
     public unsafe BmSDK.TArray<float> ActiveMaskInner
     {
@@ -683,7 +691,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveMaskOuter
+    /// ArrayProperty: ActiveMaskOuter<br/>
+    /// Default: (0.115,0.115,0.115,0.115,0.115)
     /// </summary>
     public unsafe BmSDK.TArray<float> ActiveMaskOuter
     {
@@ -692,7 +701,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: InactiveMaskInner
+    /// ArrayProperty: InactiveMaskInner<br/>
+    /// Default: (0,0.1,0.1,0.1,0.1)
     /// </summary>
     public unsafe BmSDK.TArray<float> InactiveMaskInner
     {
@@ -701,7 +711,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: InactiveMaskOuter
+    /// ArrayProperty: InactiveMaskOuter<br/>
+    /// Default: (0.001,0.115,0.115,0.115,0.115)
     /// </summary>
     public unsafe BmSDK.TArray<float> InactiveMaskOuter
     {
@@ -710,7 +721,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: ActiveFadeToCenter
+    /// ArrayProperty: ActiveFadeToCenter<br/>
+    /// Default: (1,1,1,1,1)
     /// </summary>
     public unsafe BmSDK.TArray<float> ActiveFadeToCenter
     {
@@ -719,7 +731,8 @@ public partial class RCrimeScene : BmSDK.BmGame.RCrimeSceneBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: InactiveFadeToCenter
+    /// ArrayProperty: InactiveFadeToCenter<br/>
+    /// Default: (0.4,0.4,0.4,0.4,0.4)
     /// </summary>
     public unsafe BmSDK.TArray<float> InactiveFadeToCenter
     {

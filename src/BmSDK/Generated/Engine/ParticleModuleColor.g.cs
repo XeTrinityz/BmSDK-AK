@@ -79,19 +79,22 @@ public partial class ParticleModuleColor : BmSDK.Engine.ParticleModuleColorBase,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StartColor
+    /// StructProperty: StartColor<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleColor.DistributionStartColor,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// StructProperty: StartAlpha
+    /// StructProperty: StartAlpha<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleColor.DistributionStartAlpha)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartAlpha
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 160);
 
     /// <summary>
-    /// BoolProperty: bClampAlpha
+    /// BoolProperty: bClampAlpha<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClampAlpha
     {

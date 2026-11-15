@@ -170,7 +170,8 @@ public partial class RStealthTakeDownStage_ChainTakedown_ReverseChoke : BmSDK.Bm
     }
 
     /// <summary>
-    /// ByteProperty: TakedownFeatureType
+    /// ByteProperty: TakedownFeatureType<br/>
+    /// Default: TFT_Ledge
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayer.ETakedownFeature_Type TakedownFeatureType
     {
@@ -179,7 +180,8 @@ public partial class RStealthTakeDownStage_ChainTakedown_ReverseChoke : BmSDK.Bm
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerAnimationsByType
+    /// ArrayProperty: PlayerAnimationsByType<br/>
+    /// Default: (Fear_384_Stand_Railing_Takedown,Fear_384_norailing_Takedown,Fear_384_norailing_Takedown,Fear_384_Railing_Takedown)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerAnimationsByType
     {

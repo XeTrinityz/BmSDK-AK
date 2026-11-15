@@ -219,7 +219,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ExplodeTime
+    /// FloatProperty: ExplodeTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ExplodeTime
     {
@@ -237,7 +238,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: BlastRadiusInner
+    /// FloatProperty: BlastRadiusInner<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float BlastRadiusInner
     {
@@ -246,7 +248,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: BlastRadiusOuter
+    /// FloatProperty: BlastRadiusOuter<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float BlastRadiusOuter
     {
@@ -255,7 +258,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxExplosionImpulse
+    /// FloatProperty: MaxExplosionImpulse<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float MaxExplosionImpulse
     {
@@ -264,7 +268,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinExplosionImpulse
+    /// FloatProperty: MinExplosionImpulse<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinExplosionImpulse
     {
@@ -294,7 +299,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDoVFX
+    /// BoolProperty: bDoVFX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoVFX
     {
@@ -303,7 +309,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDetonateIfStuck
+    /// BoolProperty: bDetonateIfStuck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDetonateIfStuck
     {
@@ -321,7 +328,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: WarningFXRange
+    /// FloatProperty: WarningFXRange<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float WarningFXRange
     {
@@ -339,7 +347,8 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: grenStaticMeshComp
+    /// ComponentProperty: grenStaticMeshComp<br/>
+    /// Default: BmGame.Default__RProjectile_GrenadeBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent grenStaticMeshComp
     {
@@ -348,13 +357,15 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: GrenadeScreenShake
+    /// StructProperty: GrenadeScreenShake<br/>
+    /// Default: (TimeDuration=0.4,LocAmplitude=(X=20,Y=10,Z=10),LocFrequency=(X=1.7,Y=1.7,Z=1.7),RotAmplitude=(X=2400,Y=2400,Z=2400),RotFrequency=(X=2.5,Y=2.5,Z=2.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Fa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct GrenadeScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 816);
 
     /// <summary>
-    /// FloatProperty: GrenadeScreenShakeRange
+    /// FloatProperty: GrenadeScreenShakeRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float GrenadeScreenShakeRange
     {

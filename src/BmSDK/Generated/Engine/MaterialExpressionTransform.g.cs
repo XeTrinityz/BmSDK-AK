@@ -109,7 +109,8 @@ public partial class MaterialExpressionTransform : BmSDK.Engine.MaterialExpressi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// ByteProperty: TransformSourceType
+    /// ByteProperty: TransformSourceType<br/>
+    /// Default: TRANSFORMSOURCE_Tangent
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionTransform.EMaterialVectorCoordTransformSource TransformSourceType
     {

@@ -104,7 +104,8 @@ public partial class MaterialExpressionTransformPosition : BmSDK.Engine.Material
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// ByteProperty: TransformSourceType
+    /// ByteProperty: TransformSourceType<br/>
+    /// Default: TRANSFORMPOSSOURCE_PostProjection
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionTransformPosition.EMaterialPositionTransformSource TransformSourceType
     {

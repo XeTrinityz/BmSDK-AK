@@ -180,7 +180,8 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bIncidentalDialogueAllowed
+    /// BoolProperty: bIncidentalDialogueAllowed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIncidentalDialogueAllowed
     {
@@ -198,7 +199,8 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: minTimeBetweenIncidentalDialogue
+    /// FloatProperty: minTimeBetweenIncidentalDialogue<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float minTimeBetweenIncidentalDialogue
     {
@@ -207,7 +209,8 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: maxTimeBetweenIncidentalDialogue
+    /// FloatProperty: maxTimeBetweenIncidentalDialogue<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float maxTimeBetweenIncidentalDialogue
     {

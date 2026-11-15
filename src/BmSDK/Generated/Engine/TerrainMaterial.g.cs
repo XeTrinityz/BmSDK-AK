@@ -106,7 +106,8 @@ public partial class TerrainMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MappingScale
+    /// FloatProperty: MappingScale<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float MappingScale
     {
@@ -160,7 +161,8 @@ public partial class TerrainMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DisplacementScale
+    /// FloatProperty: DisplacementScale<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float DisplacementScale
     {

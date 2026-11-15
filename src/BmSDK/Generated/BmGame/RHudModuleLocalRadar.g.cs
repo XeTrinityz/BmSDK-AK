@@ -873,7 +873,8 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CurrentHealth
+    /// FloatProperty: CurrentHealth<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentHealth
     {
@@ -1035,7 +1036,8 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: FakeTankFrameCounter
+    /// IntProperty: FakeTankFrameCounter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int FakeTankFrameCounter
     {
@@ -1044,7 +1046,8 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: FakeTankFrameInterval
+    /// IntProperty: FakeTankFrameInterval<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int FakeTankFrameInterval
     {
@@ -1053,7 +1056,8 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: FakeTankNumTanks
+    /// IntProperty: FakeTankNumTanks<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int FakeTankNumTanks
     {

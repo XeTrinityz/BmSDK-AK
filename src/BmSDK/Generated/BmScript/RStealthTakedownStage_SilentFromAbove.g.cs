@@ -141,7 +141,8 @@ public partial class RStealthTakedownStage_SilentFromAbove : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// ByteProperty: TakedownFeatureType
+    /// ByteProperty: TakedownFeatureType<br/>
+    /// Default: TFT_Ledge
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayer.ETakedownFeature_Type TakedownFeatureType
     {
@@ -150,7 +151,8 @@ public partial class RStealthTakedownStage_SilentFromAbove : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerAnimationsByType
+    /// ArrayProperty: PlayerAnimationsByType<br/>
+    /// Default: (Silent_512_Stand_Railing_TD,Silent_512_Railing_TD,Silent_512_Stand_TD,Silent_512_Railing_TD)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerAnimationsByType
     {
@@ -159,7 +161,8 @@ public partial class RStealthTakedownStage_SilentFromAbove : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// NameProperty: VictimFrontAnimation
+    /// NameProperty: VictimFrontAnimation<br/>
+    /// Default: Silent_512_End_TD
     /// </summary>
     public unsafe BmSDK.FName VictimFrontAnimation
     {
@@ -168,7 +171,8 @@ public partial class RStealthTakedownStage_SilentFromAbove : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// NameProperty: VictimBackAnimation
+    /// NameProperty: VictimBackAnimation<br/>
+    /// Default: Silent_512_End_TD
     /// </summary>
     public unsafe BmSDK.FName VictimBackAnimation
     {

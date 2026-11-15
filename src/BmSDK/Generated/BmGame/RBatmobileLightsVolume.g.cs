@@ -112,7 +112,8 @@ public partial class RBatmobileLightsVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: BatmobileUseIndoorLights
+    /// BoolProperty: BatmobileUseIndoorLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BatmobileUseIndoorLights
     {
@@ -121,7 +122,8 @@ public partial class RBatmobileLightsVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: NpcVehicleUseIndoorLights
+    /// BoolProperty: NpcVehicleUseIndoorLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool NpcVehicleUseIndoorLights
     {

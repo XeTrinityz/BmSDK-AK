@@ -111,7 +111,8 @@ public partial class RSeqAct_SetVehicleNPCWeaponScripted : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// IntProperty: PassengerSlot
+    /// IntProperty: PassengerSlot<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int PassengerSlot
     {

@@ -1109,7 +1109,8 @@ public partial class RGFxMovieUI_WBIDUnlocksAndRewards : BmSDK.BmGame.RGFxMovieU
     }
 
     /// <summary>
-    /// ArrayProperty: WBIDMovieInfo
+    /// ArrayProperty: WBIDMovieInfo<br/>
+    /// Default: (WBID.WBID_OverlayMain,WBID.ScreenAttract,WBID.ScreenLegal,WBID.ScreenEmailForm,None,WBID.ScreenVerify,None,None,WBID.ScreenWBIDOptions,WBID.ScreenGeneric)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.GFxUI.SwfMovie> WBIDMovieInfo
     {

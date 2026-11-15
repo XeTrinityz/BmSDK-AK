@@ -351,7 +351,8 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
     }
 
     /// <summary>
-    /// ComponentProperty: SelectedEnemyVFX
+    /// ComponentProperty: SelectedEnemyVFX<br/>
+    /// Default: BmGame.Default__RAEC_SonicBatarang.SelectedThugVFX1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SelectedEnemyVFX
     {
@@ -360,7 +361,8 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
     }
 
     /// <summary>
-    /// ComponentProperty: BeamVFX
+    /// ComponentProperty: BeamVFX<br/>
+    /// Default: BmGame.Default__RAEC_SonicBatarang.ThugDestinationBeamVFX2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BeamVFX
     {
@@ -369,7 +371,8 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
     }
 
     /// <summary>
-    /// ComponentProperty: DestinationTargetMarkerVFX
+    /// ComponentProperty: DestinationTargetMarkerVFX<br/>
+    /// Default: BmGame.Default__RAEC_SonicBatarang.DecidingLocationTargetMarkerVFX0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent DestinationTargetMarkerVFX
     {

@@ -115,7 +115,8 @@ public partial class RSeqAct_SetHeartbeatType : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSetOverrideHeartbeat
+    /// BoolProperty: bSetOverrideHeartbeat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSetOverrideHeartbeat
     {

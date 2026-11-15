@@ -375,7 +375,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeHurtByStrike
+    /// BoolProperty: bCanBeHurtByStrike<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeHurtByStrike
     {
@@ -429,7 +430,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableFloorCorrection
+    /// BoolProperty: bEnableFloorCorrection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableFloorCorrection
     {
@@ -438,7 +440,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseRandomCombatPoses
+    /// BoolProperty: bUseRandomCombatPoses<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseRandomCombatPoses
     {
@@ -456,7 +459,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bHasEnterCombatReactions
+    /// BoolProperty: bHasEnterCombatReactions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasEnterCombatReactions
     {
@@ -609,7 +613,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: ThrowBrickMoveClass
+    /// ClassProperty: ThrowBrickMoveClass<br/>
+    /// Default: BmGame.RCombatMove_VillainThrowBrick
     /// </summary>
     public unsafe BmSDK.Class ThrowBrickMoveClass
     {
@@ -627,7 +632,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DefaultControllerClass
+    /// ClassProperty: DefaultControllerClass<br/>
+    /// Default: BmGame.RBMAIController
     /// </summary>
     public unsafe BmSDK.Class DefaultControllerClass
     {
@@ -645,7 +651,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DrawScaleMultiplier
+    /// FloatProperty: DrawScaleMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DrawScaleMultiplier
     {
@@ -654,7 +661,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Health
+    /// IntProperty: Health<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int Health
     {
@@ -663,7 +671,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HealthMultiplier
+    /// FloatProperty: HealthMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float HealthMultiplier
     {
@@ -681,7 +690,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumCombatOverlays
+    /// IntProperty: NumCombatOverlays<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumCombatOverlays
     {

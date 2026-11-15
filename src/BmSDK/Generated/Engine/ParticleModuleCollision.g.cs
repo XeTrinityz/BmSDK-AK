@@ -116,19 +116,22 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// StructProperty: DampingFactor
+    /// StructProperty: DampingFactor<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleCollision.DistributionDampingFactor,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector DampingFactor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// StructProperty: DampingFactorRotation
+    /// StructProperty: DampingFactorRotation<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleCollision.DistributionDampingFactorRotation,MinRange=(X=1,Y=1,Z=1),MaxRan...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector DampingFactorRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 160);
 
     /// <summary>
-    /// StructProperty: MaxCollisions
+    /// StructProperty: MaxCollisions<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleCollision.DistributionMaxCollisions)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat MaxCollisions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 224);
@@ -161,7 +164,8 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// BoolProperty: bPawnsDoNotDecrementCount
+    /// BoolProperty: bPawnsDoNotDecrementCount<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPawnsDoNotDecrementCount
     {
@@ -179,7 +183,8 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// BoolProperty: bDropDetail
+    /// BoolProperty: bDropDetail<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDropDetail
     {
@@ -188,7 +193,8 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// BoolProperty: bCollideOnlyIfVisible
+    /// BoolProperty: bCollideOnlyIfVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCollideOnlyIfVisible
     {
@@ -197,7 +203,8 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// BoolProperty: bCollideWithWorld
+    /// BoolProperty: bCollideWithWorld<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCollideWithWorld
     {
@@ -224,13 +231,15 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// StructProperty: ParticleMass
+    /// StructProperty: ParticleMass<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.1,0.1,0.1,0.1),Distribution=Engine.Default__ParticleModuleCollision.DistributionParticleMass)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat ParticleMass
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 276);
 
     /// <summary>
-    /// FloatProperty: DirScalar
+    /// FloatProperty: DirScalar<br/>
+    /// Default: 3.5
     /// </summary>
     public unsafe float DirScalar
     {
@@ -239,7 +248,8 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// FloatProperty: VerticalFudgeFactor
+    /// FloatProperty: VerticalFudgeFactor<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float VerticalFudgeFactor
     {
@@ -248,13 +258,15 @@ public partial class ParticleModuleCollision : BmSDK.Engine.ParticleModuleCollis
     }
 
     /// <summary>
-    /// StructProperty: DelayAmount
+    /// StructProperty: DelayAmount<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleCollision.DistributionDelayAmount)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat DelayAmount
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 320);
 
     /// <summary>
-    /// FloatProperty: MaxCollisionDistance
+    /// FloatProperty: MaxCollisionDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxCollisionDistance
     {

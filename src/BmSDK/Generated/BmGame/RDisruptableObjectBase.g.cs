@@ -803,7 +803,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RDisruptableObjectBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -812,7 +813,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ByteProperty: Difficulty
+    /// ByteProperty: Difficulty<br/>
+    /// Default: DOD_Medium
     /// </summary>
     public unsafe BmSDK.BmGame.RDisruptableObjectBase.DisruptableObjectDifficulty Difficulty
     {
@@ -899,7 +901,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// BoolProperty: RumbleEnabledInMinigame
+    /// BoolProperty: RumbleEnabledInMinigame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RumbleEnabledInMinigame
     {
@@ -989,7 +992,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ArrayProperty: PasswordArray
+    /// ArrayProperty: PasswordArray<br/>
+    /// Default: ("PASSWORD")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> PasswordArray
     {
@@ -1016,7 +1020,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// StrProperty: DisplayIconName
+    /// StrProperty: DisplayIconName<br/>
+    /// Default: "Hack"
     /// </summary>
     public unsafe BmSDK.FString DisplayIconName
     {
@@ -1034,7 +1039,8 @@ public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// FloatProperty: fMaximumInteractionDistance
+    /// FloatProperty: fMaximumInteractionDistance<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float fMaximumInteractionDistance
     {

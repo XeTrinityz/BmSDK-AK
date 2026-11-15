@@ -268,7 +268,8 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmGame.Default__RWaterGeneratorBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -295,7 +296,8 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bValidTarget
+    /// BoolProperty: bValidTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidTarget
     {

@@ -359,7 +359,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// IntProperty: ChallengeChapter
+    /// IntProperty: ChallengeChapter<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ChallengeChapter
     {
@@ -377,7 +378,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// StructProperty: BaseChallengeSettings
+    /// StructProperty: BaseChallengeSettings<br/>
+    /// Default: (InstallChunkNeeded=InstallChunk_MAX)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FChallengeDesc BaseChallengeSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FChallengeDesc>(Ptr + 1100);
@@ -446,7 +448,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// BoolProperty: bUnlocked
+    /// BoolProperty: bUnlocked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUnlocked
     {
@@ -704,7 +707,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1364);
 
     /// <summary>
-    /// FloatProperty: ActivationRange
+    /// FloatProperty: ActivationRange<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float ActivationRange
     {
@@ -713,7 +717,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// FloatProperty: ActivationRangeBatmobile
+    /// FloatProperty: ActivationRangeBatmobile<br/>
+    /// Default: 480
     /// </summary>
     public unsafe float ActivationRangeBatmobile
     {
@@ -722,7 +727,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// FloatProperty: MiniUIRange
+    /// FloatProperty: MiniUIRange<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float MiniUIRange
     {
@@ -731,7 +737,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// FloatProperty: StasisRangeIfNotOnScreen
+    /// FloatProperty: StasisRangeIfNotOnScreen<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float StasisRangeIfNotOnScreen
     {
@@ -740,7 +747,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
     }
 
     /// <summary>
-    /// FloatProperty: VisibleRangeSq
+    /// FloatProperty: VisibleRangeSq<br/>
+    /// Default: 56250000
     /// </summary>
     public unsafe float VisibleRangeSq
     {

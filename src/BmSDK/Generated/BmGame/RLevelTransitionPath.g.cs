@@ -101,7 +101,8 @@ public partial class RLevelTransitionPath : BmSDK.BmGame.RLevelTransition, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: Bounds
+    /// ComponentProperty: Bounds<br/>
+    /// Default: BmGame.Default__RLevelTransitionPath.DrawBox0
     /// </summary>
     public unsafe BmSDK.BmGame.RLevelTransitionPathComponent Bounds
     {

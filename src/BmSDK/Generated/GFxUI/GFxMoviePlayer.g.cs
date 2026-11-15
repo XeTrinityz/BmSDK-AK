@@ -2160,7 +2160,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bGamePadUsed
+    /// BoolProperty: bGamePadUsed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGamePadUsed
     {
@@ -2223,7 +2224,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayWithHudOff
+    /// BoolProperty: bDisplayWithHudOff<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayWithHudOff
     {
@@ -2286,7 +2288,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bLogUnhandedWidgetInitializations
+    /// BoolProperty: bLogUnhandedWidgetInitializations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLogUnhandedWidgetInitializations
     {
@@ -2295,7 +2298,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowInput
+    /// BoolProperty: bAllowInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowInput
     {
@@ -2304,7 +2308,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowFocus
+    /// BoolProperty: bAllowFocus<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowFocus
     {
@@ -2349,7 +2354,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCloseOnLevelChange
+    /// BoolProperty: bCloseOnLevelChange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCloseOnLevelChange
     {
@@ -2562,7 +2568,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SceneDPG
+    /// ByteProperty: SceneDPG<br/>
+    /// Default: SDPG_PostProcess
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup SceneDPG
     {
@@ -2589,7 +2596,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: Priority
+    /// ByteProperty: Priority<br/>
+    /// Default: DPGB_Default
     /// </summary>
     public unsafe BmSDK.GFxUI.GFxMoviePlayer.GFxDPGBias Priority
     {
@@ -2643,7 +2651,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SplitscreenLayoutYAdjust
+    /// IntProperty: SplitscreenLayoutYAdjust<br/>
+    /// Default: -27
     /// </summary>
     public unsafe int SplitscreenLayoutYAdjust
     {

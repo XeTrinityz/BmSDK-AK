@@ -131,7 +131,8 @@ public partial class RSeqAct_CountNumHostiles : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// IntProperty: lastKnownNumThugs
+    /// IntProperty: lastKnownNumThugs<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int lastKnownNumThugs
     {

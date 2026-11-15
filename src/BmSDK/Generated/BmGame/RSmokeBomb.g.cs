@@ -442,7 +442,8 @@ public partial class RSmokeBomb : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bCanToggleDetectiveMode
+    /// BoolProperty: bCanToggleDetectiveMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanToggleDetectiveMode
     {

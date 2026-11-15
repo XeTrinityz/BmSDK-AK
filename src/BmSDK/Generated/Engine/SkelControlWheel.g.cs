@@ -88,7 +88,8 @@ public partial class SkelControlWheel : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: WheelMaxRenderDisplacement
+    /// FloatProperty: WheelMaxRenderDisplacement<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float WheelMaxRenderDisplacement
     {
@@ -97,7 +98,8 @@ public partial class SkelControlWheel : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: WheelMinRenderDisplacement
+    /// FloatProperty: WheelMinRenderDisplacement<br/>
+    /// Default: -50
     /// </summary>
     public unsafe float WheelMinRenderDisplacement
     {
@@ -124,7 +126,8 @@ public partial class SkelControlWheel : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ByteProperty: WheelRollAxis
+    /// ByteProperty: WheelRollAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis WheelRollAxis
     {
@@ -133,7 +136,8 @@ public partial class SkelControlWheel : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ByteProperty: WheelSteeringAxis
+    /// ByteProperty: WheelSteeringAxis<br/>
+    /// Default: AXIS_Z
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis WheelSteeringAxis
     {

@@ -187,7 +187,8 @@ public partial class SequenceEvent : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxTriggerCount
+    /// IntProperty: MaxTriggerCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxTriggerCount
     {
@@ -205,7 +206,8 @@ public partial class SequenceEvent : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -214,7 +216,8 @@ public partial class SequenceEvent : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPlayerOnly
+    /// BoolProperty: bPlayerOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayerOnly
     {

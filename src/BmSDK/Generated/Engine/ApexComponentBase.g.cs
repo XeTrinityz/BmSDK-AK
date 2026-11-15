@@ -103,7 +103,8 @@ public partial class ApexComponentBase : BmSDK.Engine.MeshComponent, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: WireframeColor
+    /// StructProperty: WireframeColor<br/>
+    /// Default: (B=64,G=128,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WireframeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 660);

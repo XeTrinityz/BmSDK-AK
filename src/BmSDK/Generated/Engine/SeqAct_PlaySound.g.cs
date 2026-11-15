@@ -159,7 +159,8 @@ public partial class SeqAct_PlaySound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: VolumeMultiplier
+    /// FloatProperty: VolumeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VolumeMultiplier
     {
@@ -168,7 +169,8 @@ public partial class SeqAct_PlaySound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: PitchMultiplier
+    /// FloatProperty: PitchMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PitchMultiplier
     {

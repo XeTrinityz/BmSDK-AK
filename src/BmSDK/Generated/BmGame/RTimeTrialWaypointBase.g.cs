@@ -305,7 +305,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: ArrowParticles
+    /// ObjectProperty: ArrowParticles<br/>
+    /// Default: VFX_AR.Particles.AR_LinkLine
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ArrowParticles
     {
@@ -323,7 +324,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionGeometry
+    /// ComponentProperty: CollisionGeometry<br/>
+    /// Default: BmGame.Default__RTimeTrialWaypointBase.PlayerCollisionVol
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent CollisionGeometry
     {
@@ -350,7 +352,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bShowNextOnActivate
+    /// BoolProperty: bShowNextOnActivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowNextOnActivate
     {
@@ -359,7 +362,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: TimeAdjustmentIsBonus
+    /// BoolProperty: TimeAdjustmentIsBonus<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TimeAdjustmentIsBonus
     {
@@ -395,7 +399,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ParticleScale
+    /// FloatProperty: ParticleScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ParticleScale
     {
@@ -422,7 +427,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 776);
 
     /// <summary>
-    /// IntProperty: SatNavForwardRouteIndex
+    /// IntProperty: SatNavForwardRouteIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SatNavForwardRouteIndex
     {

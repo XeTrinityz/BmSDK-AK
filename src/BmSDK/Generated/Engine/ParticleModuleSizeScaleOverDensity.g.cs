@@ -79,7 +79,8 @@ public partial class ParticleModuleSizeScaleOverDensity : BmSDK.Engine.ParticleM
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SizeScaleOverDensity
+    /// StructProperty: SizeScaleOverDensity<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleSizeScaleOverDensity.DistributionSizeScaleOverDensity,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector SizeScaleOverDensity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);

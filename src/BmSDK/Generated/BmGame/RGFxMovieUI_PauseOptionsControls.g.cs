@@ -195,7 +195,8 @@ public partial class RGFxMovieUI_PauseOptionsControls : BmSDK.BmGame.RGFxMovieUI
     }
 
     /// <summary>
-    /// StructProperty: KeyboardScreen
+    /// StructProperty: KeyboardScreen<br/>
+    /// Default: (TheMovieInstance=PauseMenu.PauseControlsKeyboard,TheClass=BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGFxMovieUI_PauseBase.FScreenDef KeyboardScreen
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGFxMovieUI_PauseBase.FScreenDef>(Ptr + 1644);

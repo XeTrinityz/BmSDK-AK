@@ -708,7 +708,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CustomGravityFactor
+    /// FloatProperty: CustomGravityFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CustomGravityFactor
     {
@@ -726,7 +727,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableCollisionResponse
+    /// BoolProperty: bEnableCollisionResponse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableCollisionResponse
     {
@@ -807,7 +809,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ContactReportForceThreshold
+    /// FloatProperty: ContactReportForceThreshold<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ContactReportForceThreshold
     {
@@ -816,7 +819,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InstanceMassScale
+    /// FloatProperty: InstanceMassScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InstanceMassScale
     {
@@ -825,7 +829,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InstanceDampingScale
+    /// FloatProperty: InstanceDampingScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InstanceDampingScale
     {
@@ -858,7 +863,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: IndexInPool
+    /// IntProperty: IndexInPool<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int IndexInPool
     {

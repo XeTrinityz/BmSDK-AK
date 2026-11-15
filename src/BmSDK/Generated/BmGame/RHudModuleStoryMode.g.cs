@@ -1137,7 +1137,8 @@ public partial class RHudModuleStoryMode : BmSDK.BmGame.RHudModule, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: CurrentLap
+    /// IntProperty: CurrentLap<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentLap
     {

@@ -210,7 +210,8 @@ public partial class RSeqAct_SetVehicleLights : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: AllLightsBrightness
+    /// FloatProperty: AllLightsBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AllLightsBrightness
     {

@@ -889,7 +889,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     public partial record struct FStoredLink
     {
         /// <summary>
-        /// IntProperty: StartID
+        /// IntProperty: StartID<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int StartID
         {
@@ -898,7 +899,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         }
 
         /// <summary>
-        /// IntProperty: EndID
+        /// IntProperty: EndID<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int EndID
         {
@@ -907,7 +909,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         }
 
         /// <summary>
-        /// IntProperty: RoadLinkID
+        /// IntProperty: RoadLinkID<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int RoadLinkID
         {
@@ -943,7 +946,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 788);
 
     /// <summary>
-    /// FloatProperty: MinWallDist
+    /// FloatProperty: MinWallDist<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MinWallDist
     {
@@ -952,7 +956,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxWallDist
+    /// FloatProperty: MaxWallDist<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MaxWallDist
     {
@@ -970,7 +975,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MinWallForce
+    /// FloatProperty: MinWallForce<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MinWallForce
     {
@@ -979,7 +985,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxWallForce
+    /// FloatProperty: MaxWallForce<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float MaxWallForce
     {
@@ -997,7 +1004,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxWallSideForceMultiplier
+    /// FloatProperty: MaxWallSideForceMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxWallSideForceMultiplier
     {
@@ -1006,7 +1014,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: CowerWallForce
+    /// FloatProperty: CowerWallForce<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CowerWallForce
     {
@@ -1015,7 +1024,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: CowerWallDistanceCheck
+    /// FloatProperty: CowerWallDistanceCheck<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CowerWallDistanceCheck
     {
@@ -1057,7 +1067,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: PathForce
+    /// FloatProperty: PathForce<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float PathForce
     {
@@ -1066,7 +1077,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MinRoadLookAhead
+    /// FloatProperty: MinRoadLookAhead<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinRoadLookAhead
     {
@@ -1075,7 +1087,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxRoadLookAhead
+    /// FloatProperty: MaxRoadLookAhead<br/>
+    /// Default: 1750
     /// </summary>
     public unsafe float MaxRoadLookAhead
     {
@@ -1093,7 +1106,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MinRoadOffset
+    /// FloatProperty: MinRoadOffset<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MinRoadOffset
     {
@@ -1102,7 +1116,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxRoadOffset
+    /// FloatProperty: MaxRoadOffset<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxRoadOffset
     {
@@ -1135,7 +1150,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 924);
 
     /// <summary>
-    /// FloatProperty: KeepPrevDestPointCos
+    /// FloatProperty: KeepPrevDestPointCos<br/>
+    /// Default: 0.707
     /// </summary>
     public unsafe float KeepPrevDestPointCos
     {
@@ -1153,7 +1169,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: TimeHiddenForDestroy
+    /// FloatProperty: TimeHiddenForDestroy<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeHiddenForDestroy
     {
@@ -1162,7 +1179,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceFromThreatToDestroy
+    /// FloatProperty: MinDistanceFromThreatToDestroy<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MinDistanceFromThreatToDestroy
     {
@@ -1198,7 +1216,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: GiveUpTime
+    /// FloatProperty: GiveUpTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GiveUpTime
     {
@@ -1216,7 +1235,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: EmergencyActionTime
+    /// FloatProperty: EmergencyActionTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float EmergencyActionTime
     {
@@ -1225,7 +1245,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: EmergencyActionHitNormalCos
+    /// FloatProperty: EmergencyActionHitNormalCos<br/>
+    /// Default: -0.9
     /// </summary>
     public unsafe float EmergencyActionHitNormalCos
     {
@@ -1243,7 +1264,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: EmergencyActionRecoveryMaxTime
+    /// FloatProperty: EmergencyActionRecoveryMaxTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float EmergencyActionRecoveryMaxTime
     {
@@ -1252,7 +1274,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MinCowerMoveForce
+    /// FloatProperty: MinCowerMoveForce<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float MinCowerMoveForce
     {
@@ -1261,7 +1284,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: MaxCowerStopForce
+    /// FloatProperty: MaxCowerStopForce<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MaxCowerStopForce
     {
@@ -1291,7 +1315,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: RepathCowerMoveTime
+    /// FloatProperty: RepathCowerMoveTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RepathCowerMoveTime
     {
@@ -1300,7 +1325,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: RepathCowerMoveAmount
+    /// FloatProperty: RepathCowerMoveAmount<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RepathCowerMoveAmount
     {
@@ -1309,7 +1335,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: RepathCowerAvoidActorCosDiff
+    /// FloatProperty: RepathCowerAvoidActorCosDiff<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RepathCowerAvoidActorCosDiff
     {
@@ -1444,7 +1471,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: TimeHiddenForDestroyInformant
+    /// FloatProperty: TimeHiddenForDestroyInformant<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float TimeHiddenForDestroyInformant
     {

@@ -130,7 +130,8 @@ public partial class RB_LineImpulseActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseStrength
+    /// FloatProperty: ImpulseStrength<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float ImpulseStrength
     {
@@ -139,7 +140,8 @@ public partial class RB_LineImpulseActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseRange
+    /// FloatProperty: ImpulseRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ImpulseRange
     {
@@ -184,7 +186,8 @@ public partial class RB_LineImpulseActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DamageAmount
     {

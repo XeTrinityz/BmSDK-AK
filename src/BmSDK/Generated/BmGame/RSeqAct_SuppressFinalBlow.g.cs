@@ -106,7 +106,8 @@ public partial class RSeqAct_SuppressFinalBlow : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bSuppressFinalBlow
+    /// BoolProperty: bSuppressFinalBlow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSuppressFinalBlow
     {
@@ -124,7 +125,8 @@ public partial class RSeqAct_SuppressFinalBlow : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bGiveXPOnUnsuppress
+    /// BoolProperty: bGiveXPOnUnsuppress<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGiveXPOnUnsuppress
     {

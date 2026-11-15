@@ -230,7 +230,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmScript.Default__RPickup_JackInTheBox.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -239,7 +240,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// ComponentProperty: MeshComponent
+    /// ComponentProperty: MeshComponent<br/>
+    /// Default: BmScript.Default__RPickup_JackInTheBox.SkelMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshComponent
     {
@@ -248,7 +250,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// FloatProperty: ProximityForExplosion
+    /// FloatProperty: ProximityForExplosion<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ProximityForExplosion
     {
@@ -257,7 +260,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// FloatProperty: DamageDistance
+    /// FloatProperty: DamageDistance<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float DamageDistance
     {
@@ -266,7 +270,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DamageAmount
     {
@@ -275,7 +280,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeFX
+    /// ObjectProperty: ExplodeFX<br/>
+    /// Default: VFX_Destructibles.Particles.JackInBox_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplodeFX
     {
@@ -284,7 +290,8 @@ public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBas
     }
 
     /// <summary>
-    /// ObjectProperty: AudioStaticLoop
+    /// ObjectProperty: AudioStaticLoop<br/>
+    /// Default: Ww_OBJ_JackInTheBox.Play_OBJ_JackInTheBox_Presence_Loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioStaticLoop
     {

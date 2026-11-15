@@ -139,7 +139,8 @@ public partial class RSeqAct_SetHelicopterHighPriorityTarget : BmSDK.Engine.Sequ
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalRangeForLookAt
+    /// FloatProperty: HorizontalRangeForLookAt<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float HorizontalRangeForLookAt
     {
@@ -148,7 +149,8 @@ public partial class RSeqAct_SetHelicopterHighPriorityTarget : BmSDK.Engine.Sequ
     }
 
     /// <summary>
-    /// BoolProperty: IgnoreLineOfSight
+    /// BoolProperty: IgnoreLineOfSight<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IgnoreLineOfSight
     {

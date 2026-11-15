@@ -1696,7 +1696,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerHints
+    /// ArrayProperty: RiddlerHints<br/>
+    /// Default: ((RefName="CityX_Riddler_2",AkLineRef=Riddler_CityX.Lines.Riddler_Cityx_02,Who="Riddler"),(RefName="CityX_Riddler_8",AkLineRef=Riddler_CityX.Lines.Riddler_Cityx_08,Who="Riddler"),(RefName="CityX_Riddl...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RSideStoryManager.FRiddlerHintEntry> RiddlerHints
     {
@@ -1762,7 +1763,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 172);
 
     /// <summary>
-    /// IntProperty: BestGroupIndex
+    /// IntProperty: BestGroupIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BestGroupIndex
     {
@@ -1771,7 +1773,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BestActorIndex
+    /// IntProperty: BestActorIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BestActorIndex
     {
@@ -1780,7 +1783,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CachedGroupIndex
+    /// IntProperty: CachedGroupIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CachedGroupIndex
     {
@@ -1807,7 +1811,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChapterNineIntelRecurrencePeriod
+    /// FloatProperty: ChapterNineIntelRecurrencePeriod<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float ChapterNineIntelRecurrencePeriod
     {

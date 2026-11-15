@@ -243,7 +243,8 @@ public partial class RPredHostageFleePoint : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

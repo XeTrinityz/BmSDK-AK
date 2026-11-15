@@ -360,7 +360,8 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadePercLast
+    /// FloatProperty: FadePercLast<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FadePercLast
     {
@@ -378,7 +379,8 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAudioFadeIn
+    /// BoolProperty: bAudioFadeIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAudioFadeIn
     {
@@ -396,7 +398,8 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AudioFadeTime
+    /// FloatProperty: AudioFadeTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AudioFadeTime
     {

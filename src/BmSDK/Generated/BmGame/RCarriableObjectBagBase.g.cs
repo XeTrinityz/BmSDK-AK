@@ -494,7 +494,8 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     }
 
     /// <summary>
-    /// ComponentProperty: VFXComp
+    /// ComponentProperty: VFXComp<br/>
+    /// Default: BmGame.Default__RCarriableObjectBagBase.VFXComponent
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent VFXComp
     {
@@ -646,7 +647,8 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     }
 
     /// <summary>
-    /// NameProperty: AttachBoneName
+    /// NameProperty: AttachBoneName<br/>
+    /// Default: Gundummy02
     /// </summary>
     public unsafe BmSDK.FName AttachBoneName
     {
@@ -691,7 +693,8 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorHUDDescription
+    /// StrProperty: sDisruptorHUDDescription<br/>
+    /// Default: "#DSRPT|Sabotage|$Disruptor.Sentry|$Disruptor.SentryDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorHUDDescription
     {

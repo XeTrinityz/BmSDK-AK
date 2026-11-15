@@ -182,7 +182,8 @@ public partial class RSeqAct_AceEvacController : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BackwardsTolerance
+    /// FloatProperty: BackwardsTolerance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float BackwardsTolerance
     {

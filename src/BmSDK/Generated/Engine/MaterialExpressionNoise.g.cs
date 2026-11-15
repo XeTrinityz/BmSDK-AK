@@ -85,7 +85,8 @@ public partial class MaterialExpressionNoise : BmSDK.Engine.MaterialExpression, 
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// FloatProperty: Seed1
+    /// FloatProperty: Seed1<br/>
+    /// Default: 1.157
     /// </summary>
     public unsafe float Seed1
     {
@@ -94,7 +95,8 @@ public partial class MaterialExpressionNoise : BmSDK.Engine.MaterialExpression, 
     }
 
     /// <summary>
-    /// FloatProperty: Seed2
+    /// FloatProperty: Seed2<br/>
+    /// Default: 5.348
     /// </summary>
     public unsafe float Seed2
     {
@@ -103,7 +105,8 @@ public partial class MaterialExpressionNoise : BmSDK.Engine.MaterialExpression, 
     }
 
     /// <summary>
-    /// FloatProperty: Seed3
+    /// FloatProperty: Seed3<br/>
+    /// Default: 3.072
     /// </summary>
     public unsafe float Seed3
     {

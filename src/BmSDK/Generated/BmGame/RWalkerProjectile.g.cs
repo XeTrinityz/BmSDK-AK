@@ -127,7 +127,8 @@ public partial class RWalkerProjectile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float Range
     {
@@ -145,7 +146,8 @@ public partial class RWalkerProjectile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: AccelZ
+    /// FloatProperty: AccelZ<br/>
+    /// Default: -5000
     /// </summary>
     public unsafe float AccelZ
     {
@@ -154,7 +156,8 @@ public partial class RWalkerProjectile : BmSDK.BmGame.RBasicProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: TrackGround
+    /// BoolProperty: TrackGround<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TrackGround
     {

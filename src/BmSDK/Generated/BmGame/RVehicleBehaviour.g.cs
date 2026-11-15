@@ -941,7 +941,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bCanBePlacedInKismet
+    /// BoolProperty: bCanBePlacedInKismet<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBePlacedInKismet
     {
@@ -977,7 +978,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: CanBeInteruptedByCombat
+    /// BoolProperty: CanBeInteruptedByCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanBeInteruptedByCombat
     {
@@ -1022,7 +1024,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bRequiresDriver
+    /// BoolProperty: bRequiresDriver<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRequiresDriver
     {
@@ -1085,7 +1088,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bShouldRegisterNavMeshObstacle
+    /// BoolProperty: bShouldRegisterNavMeshObstacle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldRegisterNavMeshObstacle
     {
@@ -1163,7 +1167,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MinDelayBetweenIdleBarks
+    /// FloatProperty: MinDelayBetweenIdleBarks<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinDelayBetweenIdleBarks
     {
@@ -1172,7 +1177,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxDelayBetweenIdleBarks
+    /// FloatProperty: MaxDelayBetweenIdleBarks<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxDelayBetweenIdleBarks
     {

@@ -98,7 +98,8 @@ public partial class RBarkConvoPawnRef : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DrawRadius
+    /// FloatProperty: DrawRadius<br/>
+    /// Default: 48
     /// </summary>
     public unsafe float DrawRadius
     {

@@ -1954,7 +1954,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     public partial record struct FProximityAndSight
     {
         /// <summary>
-        /// FloatProperty: BatmanProximityDistance
+        /// FloatProperty: BatmanProximityDistance<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float BatmanProximityDistance
         {
@@ -1963,7 +1964,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// FloatProperty: BatmanProximity2DDistance
+        /// FloatProperty: BatmanProximity2DDistance<br/>
+        /// Default: 3250
         /// </summary>
         public unsafe float BatmanProximity2DDistance
         {
@@ -1972,7 +1974,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// FloatProperty: NPCSeenDistance
+        /// FloatProperty: NPCSeenDistance<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float NPCSeenDistance
         {
@@ -1981,7 +1984,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// FloatProperty: BatmanSeenDistance
+        /// FloatProperty: BatmanSeenDistance<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float BatmanSeenDistance
         {
@@ -1990,7 +1994,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// FloatProperty: TimeBetweenNotSeenAndSeenForOutput
+        /// FloatProperty: TimeBetweenNotSeenAndSeenForOutput<br/>
+        /// Default: 5
         /// </summary>
         public unsafe float TimeBetweenNotSeenAndSeenForOutput
         {
@@ -2053,7 +2058,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bSeenBatmanBothWayCheck
+        /// BoolProperty: bSeenBatmanBothWayCheck<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bSeenBatmanBothWayCheck
         {
@@ -2062,7 +2068,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bDontCheckNPCs
+        /// BoolProperty: bDontCheckNPCs<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bDontCheckNPCs
         {
@@ -2071,7 +2078,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// FloatProperty: StartleDist
+        /// FloatProperty: StartleDist<br/>
+        /// Default: 1200
         /// </summary>
         public unsafe float StartleDist
         {
@@ -2096,7 +2104,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeGrabbed
+        /// BoolProperty: bCanBeGrabbed<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeGrabbed
         {
@@ -2114,7 +2123,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeHitInCombat
+        /// BoolProperty: bCanBeHitInCombat<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeHitInCombat
         {
@@ -2132,7 +2142,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bPlayReactionBeforeJoiningCombat
+        /// BoolProperty: bPlayReactionBeforeJoiningCombat<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPlayReactionBeforeJoiningCombat
         {
@@ -2186,7 +2197,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bCantRespondToAECAlerts
+        /// BoolProperty: bCantRespondToAECAlerts<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCantRespondToAECAlerts
         {
@@ -2319,7 +2331,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
         }
 
         /// <summary>
-        /// BoolProperty: bUseMoveTo
+        /// BoolProperty: bUseMoveTo<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bUseMoveTo
         {
@@ -2541,7 +2554,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// BoolProperty: bAllowedToLookAtThings
+    /// BoolProperty: bAllowedToLookAtThings<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowedToLookAtThings
     {
@@ -2568,7 +2582,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// BoolProperty: bNoLookAtsConnected
+    /// BoolProperty: bNoLookAtsConnected<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoLookAtsConnected
     {
@@ -2892,19 +2907,22 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// StructProperty: MoveOptions
+    /// StructProperty: MoveOptions<br/>
+    /// Default: (bUseMoveTo=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBM2Behaviour_IdleConfig.FMoveToData MoveOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBM2Behaviour_IdleConfig.FMoveToData>(Ptr + 752);
 
     /// <summary>
-    /// StructProperty: CSOptions
+    /// StructProperty: CSOptions<br/>
+    /// Default: (bCanBeGrabbed=true,bCanBeHitInCombat=true,bPlayReactionBeforeJoiningCombat=true,bCantRespondToAECAlerts=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBM2Behaviour_IdleConfig.FCombatAndSpOptions CSOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBM2Behaviour_IdleConfig.FCombatAndSpOptions>(Ptr + 820);
 
     /// <summary>
-    /// FloatProperty: PredBarkFudgeFactor
+    /// FloatProperty: PredBarkFudgeFactor<br/>
+    /// Default: -2700
     /// </summary>
     public unsafe float PredBarkFudgeFactor
     {
@@ -2913,7 +2931,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// StructProperty: ProximityAndSightOptions
+    /// StructProperty: ProximityAndSightOptions<br/>
+    /// Default: (BatmanProximityDistance=500,BatmanProximity2DDistance=3250,NPCSeenDistance=500,BatmanSeenDistance=500,TimeBetweenNotSeenAndSeenForOutput=5,bSeenBatmanBothWayCheck=true,bDontCheckNPCs=true,StartleDist...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBM2Behaviour_IdleConfig.FProximityAndSight ProximityAndSightOptions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBM2Behaviour_IdleConfig.FProximityAndSight>(Ptr + 832);
@@ -2928,7 +2947,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// IntProperty: ReservedInputLinks
+    /// IntProperty: ReservedInputLinks<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ReservedInputLinks
     {
@@ -2937,7 +2957,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// IntProperty: ReservedOutputLinks
+    /// IntProperty: ReservedOutputLinks<br/>
+    /// Default: 11
     /// </summary>
     public unsafe int ReservedOutputLinks
     {
@@ -2979,7 +3000,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
     }
 
     /// <summary>
-    /// StructProperty: PlayingOverlay
+    /// StructProperty: PlayingOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId PlayingOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 952);

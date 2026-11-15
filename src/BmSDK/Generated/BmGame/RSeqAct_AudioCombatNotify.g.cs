@@ -144,7 +144,8 @@ public partial class RSeqAct_AudioCombatNotify : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// BoolProperty: PawnsInCombat
+    /// BoolProperty: PawnsInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PawnsInCombat
     {

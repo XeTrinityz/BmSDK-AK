@@ -97,7 +97,8 @@ public partial class RSeqAct_MatineeVehicleRateBlend : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// FloatProperty: ReferenceVehicleSpeed
+    /// FloatProperty: ReferenceVehicleSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float ReferenceVehicleSpeed
     {
@@ -106,7 +107,8 @@ public partial class RSeqAct_MatineeVehicleRateBlend : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// FloatProperty: BlendDuration
+    /// FloatProperty: BlendDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BlendDuration
     {

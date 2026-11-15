@@ -138,7 +138,8 @@ public partial class SeqCond_SwitchClass : BmSDK.Engine.SeqCond_SwitchBase, BmSD
     }
 
     /// <summary>
-    /// ArrayProperty: ClassArray
+    /// ArrayProperty: ClassArray<br/>
+    /// Default: ((ClassName=Default))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SeqCond_SwitchClass.FSwitchClassInfo> ClassArray
     {

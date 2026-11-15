@@ -141,7 +141,8 @@ public partial class RJokerBillboard : BmSDK.BmGame.RJokerSwappableBase, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: SwapMaterialIndex
+    /// IntProperty: SwapMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SwapMaterialIndex
     {

@@ -160,7 +160,8 @@ public partial class AkManagedEmitter : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEmitterStartEnabled
+    /// BoolProperty: bEmitterStartEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEmitterStartEnabled
     {
@@ -247,7 +248,8 @@ public partial class AkManagedEmitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: Weighting
+        /// IntProperty: Weighting<br/>
+        /// Default: 100
         /// </summary>
         public unsafe int Weighting
         {

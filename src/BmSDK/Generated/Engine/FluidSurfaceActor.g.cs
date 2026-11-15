@@ -118,7 +118,8 @@ public partial class FluidSurfaceActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: FluidComponent
+    /// ComponentProperty: FluidComponent<br/>
+    /// Default: Engine.Default__FluidSurfaceActor.NewFluidComponent
     /// </summary>
     public unsafe BmSDK.Engine.FluidSurfaceComponent FluidComponent
     {

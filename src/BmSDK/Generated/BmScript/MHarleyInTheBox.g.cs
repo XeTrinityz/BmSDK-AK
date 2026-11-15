@@ -171,7 +171,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: HarleyBoxPopOutSFX
+    /// ObjectProperty: HarleyBoxPopOutSFX<br/>
+    /// Default: Ww_MDLC00_CHR_Harley_JackintheBox.Play_HQ_JackInTheBox_PopOut
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent HarleyBoxPopOutSFX
     {
@@ -180,7 +181,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: HarleyBoxPopOutVFX
+    /// ObjectProperty: HarleyBoxPopOutVFX<br/>
+    /// Default: BatgirlDLC_Collectibles.VFX.VFX_HarleyBox_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HarleyBoxPopOutVFX
     {
@@ -189,7 +191,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: AudioStaticLoop
+    /// ObjectProperty: AudioStaticLoop<br/>
+    /// Default: Ww_OBJ_JackInTheBox.Play_OBJ_JackInTheBox_Presence_Loop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioStaticLoop
     {
@@ -198,7 +201,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: HarleyBoxAnimSet
+    /// ObjectProperty: HarleyBoxAnimSet<br/>
+    /// Default: BatgirlDLC_Collectibles.JackInTheBox.JackInTheBox_Anim
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet HarleyBoxAnimSet
     {
@@ -207,7 +211,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: XrayActive_MIC
+    /// ObjectProperty: XrayActive_MIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_Interact_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayActive_MIC
     {
@@ -216,7 +221,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: XrayInactive_MIC
+    /// ObjectProperty: XrayInactive_MIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayBone_deadBody_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XrayInactive_MIC
     {
@@ -225,7 +231,8 @@ public partial class MHarleyInTheBox : BmSDK.BmGame.RInteractableItem, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: HarleyBoxMesh
+    /// ComponentProperty: HarleyBoxMesh<br/>
+    /// Default: BmScript.Default__MHarleyInTheBox.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent HarleyBoxMesh
     {

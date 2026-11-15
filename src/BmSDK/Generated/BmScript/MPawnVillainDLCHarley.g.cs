@@ -514,7 +514,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: CallBackupDialogue
+    /// ObjectProperty: CallBackupDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_callbackup.Conversation.dlc_bg_barks_bossbarks_hq_callbackup
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation CallBackupDialogue
     {
@@ -523,7 +524,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: HQBackupResDialogue
+    /// ObjectProperty: HQBackupResDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_hqbackupres.Conversation.dlc_bg_barks_bossbarks_hq_hqbackupres
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation HQBackupResDialogue
     {
@@ -532,7 +534,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: JokerHitDialogue
+    /// ObjectProperty: JokerHitDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_jokerhit.Conversation.dlc_bg_barks_bossbarks_hq_jokerhit
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation JokerHitDialogue
     {
@@ -541,7 +544,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerHitDialogue
+    /// ObjectProperty: PlayerHitDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_playerhit.Conversation.dlc_bg_barks_bossbarks_hq_playerhit
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation PlayerHitDialogue
     {
@@ -550,7 +554,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveStartDialogue
+    /// ObjectProperty: SuperMoveStartDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_supermovestart.Conversation.dlc_bg_barks_bossbarks_hq_supermovestart
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveStartDialogue
     {
@@ -559,7 +564,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveSuccessDialogue
+    /// ObjectProperty: SuperMoveSuccessDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_supermovesuccess.Conversation.dlc_bg_barks_bossbarks_hq_supermovesuccess
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveSuccessDialogue
     {
@@ -568,7 +574,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveFailDialogue
+    /// ObjectProperty: SuperMoveFailDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_hq_supermovefail.Conversation.dlc_bg_barks_bossbarks_hq_supermovefail
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveFailDialogue
     {
@@ -577,7 +584,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: BatGirlHelpRobinDialogue
+    /// ObjectProperty: BatGirlHelpRobinDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_bg_switched.Conversation.dlc_bg_barks_bossbarks_bg_switched
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation BatGirlHelpRobinDialogue
     {
@@ -586,7 +594,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: RobinHelpBatGirlDialogue
+    /// ObjectProperty: RobinHelpBatGirlDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_rb_switched.Conversation.dlc_bg_barks_bossbarks_rb_switched
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation RobinHelpBatGirlDialogue
     {
@@ -613,7 +622,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// IntProperty: TakedownDamageAmount
+    /// IntProperty: TakedownDamageAmount<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int TakedownDamageAmount
     {
@@ -622,7 +632,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// IntProperty: JokerDualAttackDamageOnHarley
+    /// IntProperty: JokerDualAttackDamageOnHarley<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int JokerDualAttackDamageOnHarley
     {
@@ -631,7 +642,8 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// IntProperty: JokerDualAttackDamageOnPlayer
+    /// IntProperty: JokerDualAttackDamageOnPlayer<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int JokerDualAttackDamageOnPlayer
     {

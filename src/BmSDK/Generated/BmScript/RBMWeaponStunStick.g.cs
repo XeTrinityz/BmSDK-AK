@@ -367,7 +367,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: StunStickFX
+    /// ComponentProperty: StunStickFX<br/>
+    /// Default: BmScript.Default__RBMWeaponStunStick.OnFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StunStickFX
     {
@@ -376,7 +377,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: SSAudible
+    /// ObjectProperty: SSAudible<br/>
+    /// Default: BmScript.Default__RBMWeaponStunStick.SSAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible SSAudible
     {
@@ -385,7 +387,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: LightRadius
+    /// FloatProperty: LightRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float LightRadius
     {
@@ -430,7 +433,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MinBrightnessAlpha
+    /// FloatProperty: MinBrightnessAlpha<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MinBrightnessAlpha
     {
@@ -439,7 +443,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MaxBrightnessAlpha
+    /// FloatProperty: MaxBrightnessAlpha<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float MaxBrightnessAlpha
     {
@@ -448,7 +453,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MinBrightnessSize
+    /// FloatProperty: MinBrightnessSize<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MinBrightnessSize
     {
@@ -457,7 +463,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MaxBrightnessSize
+    /// FloatProperty: MaxBrightnessSize<br/>
+    /// Default: 140
     /// </summary>
     public unsafe float MaxBrightnessSize
     {
@@ -466,7 +473,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MinBrightnessChangeSpeed
+    /// FloatProperty: MinBrightnessChangeSpeed<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MinBrightnessChangeSpeed
     {
@@ -475,7 +483,8 @@ public partial class RBMWeaponStunStick : BmSDK.BmGame.RBMWeaponStunStickBase, B
     }
 
     /// <summary>
-    /// FloatProperty: MaxBrightnessChangeSpeed
+    /// FloatProperty: MaxBrightnessChangeSpeed<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float MaxBrightnessChangeSpeed
     {

@@ -90,7 +90,8 @@ public partial class ParticleModulePhysicsVolumes : BmSDK.Engine.ParticleModuleW
     }
 
     /// <summary>
-    /// StructProperty: GlobalInfluence
+    /// StructProperty: GlobalInfluence<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModulePhysicsVolumes.DistributionInfluence)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat GlobalInfluence
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);

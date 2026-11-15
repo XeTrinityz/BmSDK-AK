@@ -1145,7 +1145,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRunSpeed
+    /// FloatProperty: OverrideRunSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float OverrideRunSpeed
     {
@@ -1154,7 +1155,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// FloatProperty: OverrideStealthSpeed
+    /// FloatProperty: OverrideStealthSpeed<br/>
+    /// Default: 492.96
     /// </summary>
     public unsafe float OverrideStealthSpeed
     {
@@ -1208,7 +1210,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// FloatProperty: CloakingDuration
+    /// FloatProperty: CloakingDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CloakingDuration
     {
@@ -1217,7 +1220,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// FloatProperty: CloakingBlend
+    /// FloatProperty: CloakingBlend<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CloakingBlend
     {
@@ -1244,7 +1248,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: Map2DRef
+    /// ObjectProperty: Map2DRef<br/>
+    /// Default: Map_CoreDLCBatgirl.Map_DLCOilrig
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie Map2DRef
     {
@@ -1253,7 +1258,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: TakedownConversation
+    /// ObjectProperty: TakedownConversation<br/>
+    /// Default: Dlc_Bg_Barks_Char_Bg_Takedown.Conversation.Dlc_Bg_Barks_Char_Bg_Takedown
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation TakedownConversation
     {
@@ -1262,7 +1268,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: DoubleTakedownConversation
+    /// ObjectProperty: DoubleTakedownConversation<br/>
+    /// Default: DLC_Bg_Barks_Char_Bg_Doubletakedown.Conversation.DLC_Bg_Barks_Char_Bg_Doubletakedown
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation DoubleTakedownConversation
     {
@@ -1271,7 +1278,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: BombHackIntroConversation
+    /// ObjectProperty: BombHackIntroConversation<br/>
+    /// Default: DLC_Bg_Barks_Char_Bg_Bombhackbegin.Conversation.DLC_Bg_Barks_Char_Bg_Bombhackbegin
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation BombHackIntroConversation
     {
@@ -1280,7 +1288,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: BombHackProgressConversation
+    /// ObjectProperty: BombHackProgressConversation<br/>
+    /// Default: DLC_Bg_Barks_Char_Hq_Bombhackprogress.Conversation.DLC_Bg_Barks_Char_Hq_Bombhackprogress
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation BombHackProgressConversation
     {
@@ -1289,7 +1298,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: HackInDangerAreaConversation
+    /// ObjectProperty: HackInDangerAreaConversation<br/>
+    /// Default: DLC_BG_BARKS_CHAR_BG_HACK_DANGER.Conversation.DLC_BG_BARKS_CHAR_BG_HACK_DANGER
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation HackInDangerAreaConversation
     {
@@ -1298,7 +1308,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: AfterRescueConversation
+    /// ObjectProperty: AfterRescueConversation<br/>
+    /// Default: DLC_BG_BARKS_CHAR_BG_WINDY.Conversation.DLC_BG_BARKS_CHAR_BG_WINDY
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation AfterRescueConversation
     {
@@ -1307,7 +1318,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: FingersMesh
+    /// ComponentProperty: FingersMesh<br/>
+    /// Default: BmScript.Default__MPawnPlayerBatgirl.FingersMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent FingersMesh
     {
@@ -1316,7 +1328,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: CatwomanInteractions
+    /// ComponentProperty: CatwomanInteractions<br/>
+    /// Default: BmScript.Default__MPawnPlayerBatgirl.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent CatwomanInteractions
     {
@@ -1379,7 +1392,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// ClassProperty: IceSphereClass
+    /// ClassProperty: IceSphereClass<br/>
+    /// Default: BmScript.RFreezeBlastIceSphere
     /// </summary>
     public unsafe BmSDK.Class IceSphereClass
     {
@@ -1397,7 +1411,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// IntProperty: MaxIceSpheres
+    /// IntProperty: MaxIceSpheres<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MaxIceSpheres
     {
@@ -1415,7 +1430,8 @@ public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, B
     }
 
     /// <summary>
-    /// FloatProperty: DelayBetweenLastmanStandingTakedownBarks
+    /// FloatProperty: DelayBetweenLastmanStandingTakedownBarks<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DelayBetweenLastmanStandingTakedownBarks
     {

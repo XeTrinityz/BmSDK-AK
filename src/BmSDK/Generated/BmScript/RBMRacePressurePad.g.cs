@@ -176,7 +176,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillOrange
+    /// FloatProperty: TimeTillOrange<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeTillOrange
     {
@@ -185,7 +186,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillGreen
+    /// FloatProperty: TimeTillGreen<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float TimeTillGreen
     {
@@ -221,7 +223,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: OrangeSFX
+    /// ObjectProperty: OrangeSFX<br/>
+    /// Default: Ww_OBJ_Riddler_PadRace.Play_OBJ_Riddler_PadRace_OrangeLight
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent OrangeSFX
     {
@@ -230,7 +233,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: GreenSFX
+    /// ObjectProperty: GreenSFX<br/>
+    /// Default: Ww_OBJ_Riddler_PadRace.Play_OBJ_Riddler_PadRace_GreenLight
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent GreenSFX
     {
@@ -239,7 +243,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: RedSFX
+    /// ObjectProperty: RedSFX<br/>
+    /// Default: Ww_OBJ_Riddler_PadRace.Play_OBJ_Riddler_PadRace_RedLight
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RedSFX
     {
@@ -248,7 +253,8 @@ public partial class RBMRacePressurePad : BmSDK.BmScript.RPresurePad, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: LoopSfx
+    /// ObjectProperty: LoopSfx<br/>
+    /// Default: Ww_OBJ_Riddler_PadRace.Play_OBJ_Riddler_PadRace_PresenceLoop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoopSfx
     {

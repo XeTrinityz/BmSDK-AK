@@ -115,7 +115,8 @@ public partial class RSpecialMoveConfig_ControlCrane : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: LocationLerpValue
+    /// FloatProperty: LocationLerpValue<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float LocationLerpValue
     {
@@ -124,7 +125,8 @@ public partial class RSpecialMoveConfig_ControlCrane : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: RotationLerpValue
+    /// FloatProperty: RotationLerpValue<br/>
+    /// Default: 0.91
     /// </summary>
     public unsafe float RotationLerpValue
     {

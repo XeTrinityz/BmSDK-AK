@@ -200,7 +200,8 @@ public partial class RBMBehaviour_RocketLauncherFiringAtScriptedTarget : BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: RocketFire_ReloadTime
+    /// FloatProperty: RocketFire_ReloadTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RocketFire_ReloadTime
     {
@@ -209,7 +210,8 @@ public partial class RBMBehaviour_RocketLauncherFiringAtScriptedTarget : BmSDK.B
     }
 
     /// <summary>
-    /// FloatProperty: DropWeaponDist
+    /// FloatProperty: DropWeaponDist<br/>
+    /// Default: 850
     /// </summary>
     public unsafe float DropWeaponDist
     {

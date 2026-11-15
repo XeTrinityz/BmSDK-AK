@@ -157,7 +157,8 @@ public partial class InterpTrackSound : BmSDK.Engine.InterpTrackVectorBase, BmSD
         }
 
         /// <summary>
-        /// FloatProperty: WwiseDuration
+        /// FloatProperty: WwiseDuration<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float WwiseDuration
         {

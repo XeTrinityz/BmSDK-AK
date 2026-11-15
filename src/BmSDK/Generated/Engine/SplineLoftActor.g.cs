@@ -121,7 +121,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ScaleX
+    /// FloatProperty: ScaleX<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleX
     {
@@ -130,7 +131,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ScaleY
+    /// FloatProperty: ScaleY<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleY
     {
@@ -175,7 +177,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: WorldXDir
+    /// StructProperty: WorldXDir<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WorldXDir
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 824);
@@ -187,7 +190,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 836);
 
     /// <summary>
-    /// BoolProperty: bSmoothInterpRollAndScale
+    /// BoolProperty: bSmoothInterpRollAndScale<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSmoothInterpRollAndScale
     {
@@ -196,7 +200,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAcceptsLights
+    /// BoolProperty: bAcceptsLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAcceptsLights
     {

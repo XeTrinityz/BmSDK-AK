@@ -88,7 +88,8 @@ public partial class LandscapeMaterialInstanceConstant : BmSDK.Engine.MaterialIn
     }
 
     /// <summary>
-    /// IntProperty: DataWeightmapIndex
+    /// IntProperty: DataWeightmapIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DataWeightmapIndex
     {

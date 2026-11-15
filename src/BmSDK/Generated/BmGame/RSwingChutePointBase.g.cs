@@ -325,7 +325,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: WallThickness
+    /// FloatProperty: WallThickness<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float WallThickness
     {
@@ -334,7 +335,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SwingChuteCheckOffset
+    /// FloatProperty: SwingChuteCheckOffset<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float SwingChuteCheckOffset
     {

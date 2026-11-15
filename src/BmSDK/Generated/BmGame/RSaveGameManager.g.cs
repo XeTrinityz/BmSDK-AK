@@ -602,7 +602,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LocationIDRemaps
+    /// ArrayProperty: LocationIDRemaps<br/>
+    /// Default: ((MapName="Orphan",MapRoom="Orphan_C2",Location="NRiddler"),(MapName="Orphan",MapRoom="Orphan_C3",Location="NRiddler"),(MapName="Orphan",MapRoom="Orphan_C4",Location="NRiddler"),(MapName="Orphan",MapR...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RSaveGameManager.FLocationIDRemap> LocationIDRemaps
     {

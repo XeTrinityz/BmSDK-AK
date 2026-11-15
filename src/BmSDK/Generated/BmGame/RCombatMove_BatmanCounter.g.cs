@@ -826,7 +826,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 868);
@@ -1000,7 +1001,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// BoolProperty: bFirstSlowMo
+    /// BoolProperty: bFirstSlowMo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFirstSlowMo
     {
@@ -1027,7 +1029,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// BoolProperty: bApplyDamageOnExit
+    /// BoolProperty: bApplyDamageOnExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bApplyDamageOnExit
     {
@@ -1063,7 +1066,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// BoolProperty: bCanFlashTeleport
+    /// BoolProperty: bCanFlashTeleport<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanFlashTeleport
     {
@@ -1108,7 +1112,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// StructProperty: CounterInfo
+    /// StructProperty: CounterInfo<br/>
+    /// Default: (CounterStrength=ECS_Strong,bActive=true,DestCapeStateName=Physics)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FCounterInfo CounterInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FCounterInfo>(Ptr + 1116);
@@ -1201,7 +1206,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
     }
 
     /// <summary>
-    /// ByteProperty: OverrideMoveType
+    /// ByteProperty: OverrideMoveType<br/>
+    /// Default: ECMT_Counter
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EComboMoveType OverrideMoveType
     {

@@ -817,7 +817,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// ObjectProperty: TheSwfMovie
+    /// ObjectProperty: TheSwfMovie<br/>
+    /// Default: FullScreenVideo.TextureMovie
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheSwfMovie
     {
@@ -979,7 +980,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// BoolProperty: bWaitingForAnim
+    /// BoolProperty: bWaitingForAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWaitingForAnim
     {
@@ -1024,7 +1026,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// BoolProperty: bWaitForLoadingScreenOver
+    /// BoolProperty: bWaitForLoadingScreenOver<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWaitForLoadingScreenOver
     {
@@ -1123,7 +1126,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// FloatProperty: MovieCameraFov
+    /// FloatProperty: MovieCameraFov<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float MovieCameraFov
     {
@@ -1177,7 +1181,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// IntProperty: lineSkippedTo
+    /// IntProperty: lineSkippedTo<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int lineSkippedTo
     {
@@ -1195,7 +1200,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     }
 
     /// <summary>
-    /// IntProperty: lineNumberAccordingToMovieCues
+    /// IntProperty: lineNumberAccordingToMovieCues<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int lineNumberAccordingToMovieCues
     {

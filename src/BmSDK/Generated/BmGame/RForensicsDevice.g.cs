@@ -2155,7 +2155,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SatNavSplineArchetype
+    /// ObjectProperty: SatNavSplineArchetype<br/>
+    /// Default: Batmobile_Archetypes.Misc.SatNav_Spline
     /// </summary>
     public unsafe BmSDK.Engine.SplineLoftActor SatNavSplineArchetype
     {
@@ -2191,7 +2192,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VehTrackSplineArchetype
+    /// ObjectProperty: VehTrackSplineArchetype<br/>
+    /// Default: Batmobile_Archetypes.Misc.VehTrack_Spline
     /// </summary>
     public unsafe BmSDK.Engine.SplineLoftActor VehTrackSplineArchetype
     {
@@ -2218,7 +2220,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SatNavUpArrow
+    /// ComponentProperty: SatNavUpArrow<br/>
+    /// Default: BmGame.Default__RForensicsDevice.SatNavUpArrow0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SatNavUpArrow
     {
@@ -2236,7 +2239,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLightFalloff
+    /// ComponentProperty: XrayLightFalloff<br/>
+    /// Default: BmGame.Default__RForensicsDevice.XrayLightComponent2
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLightFalloff
     {
@@ -2245,7 +2249,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RForensicsDevice.XrayLightComponent1
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -2254,7 +2259,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CameraPulseFX
+    /// ComponentProperty: CameraPulseFX<br/>
+    /// Default: BmGame.Default__RForensicsDevice.CameraPulse
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent CameraPulseFX
     {
@@ -2263,7 +2269,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ScanFX
+    /// ComponentProperty: ScanFX<br/>
+    /// Default: BmGame.Default__RForensicsDevice.ScanFXObj
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ScanFX
     {
@@ -2272,7 +2279,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ViewPP
+    /// ArrayProperty: ViewPP<br/>
+    /// Default: (BmGame.Default__RForensicsDevice.XRVPP,BmGame.Default__RForensicsDevice.DiVPP,BmGame.Default__RForensicsDevice.AIOVPP,BmGame.Default__RForensicsDevice.OFFVPP)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RViewPostProcess> ViewPP
     {
@@ -2290,7 +2298,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowDetectiveModeInfoDuringCinematicMode
+    /// BoolProperty: bShowDetectiveModeInfoDuringCinematicMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowDetectiveModeInfoDuringCinematicMode
     {
@@ -2371,7 +2380,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseCameraPulse
+    /// BoolProperty: bUseCameraPulse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCameraPulse
     {
@@ -2380,7 +2390,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanUseForensicsDeviceDirectly
+    /// BoolProperty: bCanUseForensicsDeviceDirectly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUseForensicsDeviceDirectly
     {
@@ -2470,7 +2481,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bXrayUseSpecialShading
+    /// BoolProperty: bXrayUseSpecialShading<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bXrayUseSpecialShading
     {
@@ -2479,7 +2491,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bXrayUsePointCloudShader
+    /// BoolProperty: bXrayUsePointCloudShader<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bXrayUsePointCloudShader
     {
@@ -2515,7 +2528,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsBatman
+    /// BoolProperty: bIsBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsBatman
     {
@@ -2722,7 +2736,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: CurrentFilterMode
+    /// ByteProperty: CurrentFilterMode<br/>
+    /// Default: DPPE_Off
     /// </summary>
     public unsafe BmSDK.BmGame.RForensicsDevice.DevicePostProcessEffects CurrentFilterMode
     {
@@ -2830,7 +2845,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeForFlash
+    /// FloatProperty: TimeForFlash<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float TimeForFlash
     {
@@ -2959,7 +2975,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1164);
 
     /// <summary>
-    /// FloatProperty: fVirtualDisruptorTowerTimer
+    /// FloatProperty: fVirtualDisruptorTowerTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fVirtualDisruptorTowerTimer
     {
@@ -2986,7 +3003,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JammedDetectiveModeGlitchPeriodMin
+    /// FloatProperty: JammedDetectiveModeGlitchPeriodMin<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float JammedDetectiveModeGlitchPeriodMin
     {
@@ -2995,7 +3013,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JammedDetectiveModeGlitchPeriodRange
+    /// FloatProperty: JammedDetectiveModeGlitchPeriodRange<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float JammedDetectiveModeGlitchPeriodRange
     {
@@ -3004,7 +3023,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: JammedDetectiveModeGlitchDuration
+    /// FloatProperty: JammedDetectiveModeGlitchDuration<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float JammedDetectiveModeGlitchDuration
     {
@@ -3022,7 +3042,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: PostProcessOverride
+    /// StructProperty: PostProcessOverride<br/>
+    /// Default: (InterpolateOverDistanceFade=2500,bEnableBloom=true,bEnableMotionBlur=true,bEnableSceneEffect=true,bAllowAmbientOcclusion=true,bAtmosD1=true,AtmosD1_Colour=(B=113,G=170,R=227,A=255),AtmosD1_DistanceSt...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings PostProcessOverride
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 1204);
@@ -3055,7 +3076,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCos
+    /// FloatProperty: MaxOnscreenCos<br/>
+    /// Default: 0.707
     /// </summary>
     public unsafe float MaxOnscreenCos
     {
@@ -3073,7 +3095,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LosLockonOnHud
+    /// FloatProperty: LosLockonOnHud<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LosLockonOnHud
     {
@@ -3127,7 +3150,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleTrackerMaxRangeForTestLos
+    /// FloatProperty: VehicleTrackerMaxRangeForTestLos<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float VehicleTrackerMaxRangeForTestLos
     {
@@ -3136,7 +3160,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VehicleTrackerMaxRangeForTestLosInBatmobile
+    /// FloatProperty: VehicleTrackerMaxRangeForTestLosInBatmobile<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float VehicleTrackerMaxRangeForTestLosInBatmobile
     {
@@ -3268,7 +3293,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: SatNavSplineFadeNearName
+    /// NameProperty: SatNavSplineFadeNearName<br/>
+    /// Default: Start_Distance_Fade
     /// </summary>
     public unsafe BmSDK.FName SatNavSplineFadeNearName
     {
@@ -3277,7 +3303,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: SatNavSplineFadeFarName
+    /// NameProperty: SatNavSplineFadeFarName<br/>
+    /// Default: End_Distance_Fade
     /// </summary>
     public unsafe BmSDK.FName SatNavSplineFadeFarName
     {
@@ -3286,7 +3313,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: SatNavSplineBrightnessName
+    /// NameProperty: SatNavSplineBrightnessName<br/>
+    /// Default: Brightness
     /// </summary>
     public unsafe BmSDK.FName SatNavSplineBrightnessName
     {
@@ -3295,7 +3323,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: SatNavSplineWrongWayName
+    /// NameProperty: SatNavSplineWrongWayName<br/>
+    /// Default: WrongWay
     /// </summary>
     public unsafe BmSDK.FName SatNavSplineWrongWayName
     {
@@ -3322,7 +3351,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SatNavFadeIn
+    /// FloatProperty: SatNavFadeIn<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float SatNavFadeIn
     {
@@ -3358,7 +3388,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SatNavArrowsSpacing
+    /// FloatProperty: SatNavArrowsSpacing<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SatNavArrowsSpacing
     {
@@ -3391,7 +3422,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2000);
 
     /// <summary>
-    /// FloatProperty: BatmobileStationaryTime
+    /// FloatProperty: BatmobileStationaryTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BatmobileStationaryTime
     {
@@ -3445,7 +3477,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SatNavForwardRouteNearLink
+    /// IntProperty: SatNavForwardRouteNearLink<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SatNavForwardRouteNearLink
     {
@@ -3454,7 +3487,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SatNavForwardRouteNearPoint
+    /// IntProperty: SatNavForwardRouteNearPoint<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SatNavForwardRouteNearPoint
     {

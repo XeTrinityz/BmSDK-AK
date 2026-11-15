@@ -93,7 +93,8 @@ public partial class RSeqAct_CheckPredatorAttackState : BmSDK.Engine.SequenceAct
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyCheckCurrentPlayer
+    /// BoolProperty: bOnlyCheckCurrentPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyCheckCurrentPlayer
     {

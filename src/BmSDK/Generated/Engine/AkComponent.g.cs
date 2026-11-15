@@ -1480,7 +1480,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAutoDestroySourceWhenHidden
+    /// BoolProperty: bAutoDestroySourceWhenHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoDestroySourceWhenHidden
     {
@@ -1489,7 +1490,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAutoDestroySourceWhenDead
+    /// BoolProperty: bAutoDestroySourceWhenDead<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoDestroySourceWhenDead
     {
@@ -1498,7 +1500,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bKillSoundsOnDestroy
+    /// BoolProperty: bKillSoundsOnDestroy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKillSoundsOnDestroy
     {
@@ -1552,7 +1555,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bEnableEnvironments
+    /// BoolProperty: bEnableEnvironments<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableEnvironments
     {
@@ -1624,7 +1628,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bDefaultAkComponent
+    /// BoolProperty: bDefaultAkComponent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDefaultAkComponent
     {
@@ -1903,7 +1908,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: DopplerParameter
+    /// ObjectProperty: DopplerParameter<br/>
+    /// Default: Ww_Parameters.Doppler
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName DopplerParameter
     {
@@ -1948,7 +1954,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionUpdateTimeFast
+    /// FloatProperty: OcclusionUpdateTimeFast<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float OcclusionUpdateTimeFast
     {
@@ -1957,7 +1964,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionUpdateTimeSlow
+    /// FloatProperty: OcclusionUpdateTimeSlow<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float OcclusionUpdateTimeSlow
     {
@@ -1966,7 +1974,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionInterpolationTime
+    /// FloatProperty: OcclusionInterpolationTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float OcclusionInterpolationTime
     {
@@ -1984,7 +1993,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplier
+    /// FloatProperty: OcclusionMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OcclusionMultiplier
     {
@@ -1993,7 +2003,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplierAux
+    /// FloatProperty: OcclusionMultiplierAux<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OcclusionMultiplierAux
     {
@@ -2002,7 +2013,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplierDlg
+    /// FloatProperty: OcclusionMultiplierDlg<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OcclusionMultiplierDlg
     {
@@ -2029,7 +2041,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: WetDryMixVolume
+    /// FloatProperty: WetDryMixVolume<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WetDryMixVolume
     {
@@ -2038,7 +2051,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: FalloffRadiusMultiplier
+    /// FloatProperty: FalloffRadiusMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FalloffRadiusMultiplier
     {
@@ -2382,7 +2396,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
     public partial record struct FAkFakePhysicsControl
     {
         /// <summary>
-        /// StructProperty: Physics
+        /// StructProperty: Physics<br/>
+        /// Default: (PhysInfo=(InstantaneousActivationDelay=0.1,InstantaneousVelocityThreshold=1,InstantaneousVelocityAssuredThreshold=100,InstantaneousProbability=0.25,ContinuousMonitorWindowDuration=0.2,ContinuousMinim...
         /// </summary>
         public unsafe BmSDK.Engine.AkWwise.FAkFakePhysics Physics
         {

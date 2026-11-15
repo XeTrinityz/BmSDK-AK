@@ -291,7 +291,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// IntProperty: MaxPawns
+    /// IntProperty: MaxPawns<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxPawns
     {
@@ -363,7 +364,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// IntProperty: MaxPawnsOnScreen
+    /// IntProperty: MaxPawnsOnScreen<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxPawnsOnScreen
     {
@@ -372,7 +374,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// IntProperty: MaxPawnsToSpawnEver
+    /// IntProperty: MaxPawnsToSpawnEver<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MaxPawnsToSpawnEver
     {
@@ -390,7 +393,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// FloatProperty: MinSpawnRadius
+    /// FloatProperty: MinSpawnRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MinSpawnRadius
     {
@@ -399,7 +403,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpawnRadius
+    /// FloatProperty: MaxSpawnRadius<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxSpawnRadius
     {
@@ -444,7 +449,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenRespawn
+    /// FloatProperty: TimeBetweenRespawn<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeBetweenRespawn
     {
@@ -471,7 +477,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// ObjectProperty: ChallengeParticleEffect
+    /// ObjectProperty: ChallengeParticleEffect<br/>
+    /// Default: VFX_AR.Particles.AR_SpawnBurst
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ChallengeParticleEffect
     {
@@ -480,7 +487,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// ObjectProperty: ChallengeImpactParticleEffect
+    /// ObjectProperty: ChallengeImpactParticleEffect<br/>
+    /// Default: VFX_AR.Particles.AR_Character_Impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ChallengeImpactParticleEffect
     {
@@ -489,7 +497,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// ObjectProperty: ChallengeAkEvent
+    /// ObjectProperty: ChallengeAkEvent<br/>
+    /// Default: Ww_AR_Challenges.Play_UI_AR_Enemy_Spawn
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ChallengeAkEvent
     {
@@ -498,7 +507,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// ObjectProperty: ChallengeDespawnParticleEffect
+    /// ObjectProperty: ChallengeDespawnParticleEffect<br/>
+    /// Default: VFX_AR.Particles.AR_Despawn
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ChallengeDespawnParticleEffect
     {
@@ -507,7 +517,8 @@ public partial class RSeqAct_InfiniteCombatSpawner : BmSDK.BmGame.RSeqAct_Infini
     }
 
     /// <summary>
-    /// ObjectProperty: ChallengeDespawnAkEvent
+    /// ObjectProperty: ChallengeDespawnAkEvent<br/>
+    /// Default: Ww_AR_Challenges.Play_UI_AR_Enemy_Spawn
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ChallengeDespawnAkEvent
     {

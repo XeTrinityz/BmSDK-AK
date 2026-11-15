@@ -110,7 +110,8 @@ public partial class RSpecialMoveConfig_HarpoonDragObject : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: MaxAnimRate
+    /// FloatProperty: MaxAnimRate<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float MaxAnimRate
     {
@@ -119,7 +120,8 @@ public partial class RSpecialMoveConfig_HarpoonDragObject : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: ButtonPressScoreBonus
+    /// FloatProperty: ButtonPressScoreBonus<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ButtonPressScoreBonus
     {
@@ -128,7 +130,8 @@ public partial class RSpecialMoveConfig_HarpoonDragObject : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: ScoreDecayRate
+    /// FloatProperty: ScoreDecayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScoreDecayRate
     {
@@ -146,7 +149,8 @@ public partial class RSpecialMoveConfig_HarpoonDragObject : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// ObjectProperty: PullTensionParam
+    /// ObjectProperty: PullTensionParam<br/>
+    /// Default: Ww_Parameters.Tension
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName PullTensionParam
     {
@@ -155,7 +159,8 @@ public partial class RSpecialMoveConfig_HarpoonDragObject : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: RopePullTensionRate
+    /// FloatProperty: RopePullTensionRate<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RopePullTensionRate
     {

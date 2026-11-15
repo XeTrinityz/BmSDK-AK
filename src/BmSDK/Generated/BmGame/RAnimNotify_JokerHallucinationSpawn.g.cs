@@ -79,7 +79,8 @@ public partial class RAnimNotify_JokerHallucinationSpawn : BmSDK.Engine.AnimNoti
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: HallucinationType
+    /// ByteProperty: HallucinationType<br/>
+    /// Default: JokerHallucination_NumHallucinationTypes
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination HallucinationType
     {

@@ -361,7 +361,8 @@ public partial class RBMBehaviour_Ragdoll : BmSDK.BmGame.RBMBehaviour, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DieByFallingTimer
+    /// FloatProperty: DieByFallingTimer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DieByFallingTimer
     {
@@ -532,7 +533,8 @@ public partial class RBMBehaviour_Ragdoll : BmSDK.BmGame.RBMBehaviour, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: WritheDmgInfo
+    /// StructProperty: WritheDmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo WritheDmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 620);
@@ -556,7 +558,8 @@ public partial class RBMBehaviour_Ragdoll : BmSDK.BmGame.RBMBehaviour, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: StunnedFX
+    /// ComponentProperty: StunnedFX<br/>
+    /// Default: BmGame.Default__RBMBehaviour_Ragdoll.StunnedPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StunnedFX
     {
@@ -565,7 +568,8 @@ public partial class RBMBehaviour_Ragdoll : BmSDK.BmGame.RBMBehaviour, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: ActivateStunnedFXFrames
+    /// IntProperty: ActivateStunnedFXFrames<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ActivateStunnedFXFrames
     {

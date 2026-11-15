@@ -185,7 +185,8 @@ public partial class RAudioGlassVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: BoxComponent
+    /// ComponentProperty: BoxComponent<br/>
+    /// Default: BmGame.Default__RAudioGlassVolume.CollisionBox
     /// </summary>
     public unsafe BmSDK.Engine.RBoxComponent BoxComponent
     {

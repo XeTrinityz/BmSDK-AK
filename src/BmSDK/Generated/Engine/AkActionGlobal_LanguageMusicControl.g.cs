@@ -79,7 +79,8 @@ public partial class AkActionGlobal_LanguageMusicControl : BmSDK.Engine.AkAction
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: LanguageStates
+    /// ArrayProperty: LanguageStates<br/>
+    /// Default: (Ww_MUSIC_GameState.MUSIC_Language_INT,Ww_MUSIC_GameState.MUSIC_Language_FRA,Ww_MUSIC_GameState.MUSIC_Language_ITA,Ww_MUSIC_GameState.MUSIC_Language_DEU,Ww_MUSIC_GameState.MUSIC_Language_ESN,Ww_MUSIC_...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkStateName> LanguageStates
     {

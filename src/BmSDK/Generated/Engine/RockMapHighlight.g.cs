@@ -100,7 +100,8 @@ public partial class RockMapHighlight : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RockMapHighlight.FFMapHighlightInfo>(Ptr + 672);
 
     /// <summary>
-    /// ByteProperty: Style
+    /// ByteProperty: Style<br/>
+    /// Default: HS_Box
     /// </summary>
     public unsafe BmSDK.Engine.RockMapHighlight.HighlightStyle Style
     {
@@ -118,7 +119,8 @@ public partial class RockMapHighlight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -145,7 +147,8 @@ public partial class RockMapHighlight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ColorAndFadePct
+    /// StructProperty: ColorAndFadePct<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 ColorAndFadePct
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 944);
@@ -166,7 +169,8 @@ public partial class RockMapHighlight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: StyleMesh
+    /// ComponentProperty: StyleMesh<br/>
+    /// Default: Engine.Default__RockMapHighlight.Mesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StyleMesh
     {
@@ -175,7 +179,8 @@ public partial class RockMapHighlight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeRange
+    /// FloatProperty: FadeRange<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeRange
     {

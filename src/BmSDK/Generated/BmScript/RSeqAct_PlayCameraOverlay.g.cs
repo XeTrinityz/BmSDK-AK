@@ -93,7 +93,8 @@ public partial class RSeqAct_PlayCameraOverlay : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// NameProperty: OverlayName
+    /// NameProperty: OverlayName<br/>
+    /// Default: KismetOverlay
     /// </summary>
     public unsafe BmSDK.FName OverlayName
     {
@@ -129,7 +130,8 @@ public partial class RSeqAct_PlayCameraOverlay : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: BlendInTime
+    /// FloatProperty: BlendInTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendInTime
     {
@@ -138,7 +140,8 @@ public partial class RSeqAct_PlayCameraOverlay : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutTime
+    /// FloatProperty: BlendOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendOutTime
     {
@@ -156,7 +159,8 @@ public partial class RSeqAct_PlayCameraOverlay : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OverlayWeight
+    /// FloatProperty: OverlayWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OverlayWeight
     {

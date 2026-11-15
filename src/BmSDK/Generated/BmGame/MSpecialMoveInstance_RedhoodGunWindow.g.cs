@@ -194,7 +194,8 @@ public partial class MSpecialMoveInstance_RedhoodGunWindow : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: TurnSpeed
+    /// FloatProperty: TurnSpeed<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float TurnSpeed
     {
@@ -203,7 +204,8 @@ public partial class MSpecialMoveInstance_RedhoodGunWindow : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: fDistanceShotBehindWindow
+    /// FloatProperty: fDistanceShotBehindWindow<br/>
+    /// Default: 625
     /// </summary>
     public unsafe float fDistanceShotBehindWindow
     {
@@ -212,7 +214,8 @@ public partial class MSpecialMoveInstance_RedhoodGunWindow : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: fDistanceShotInFrontWindow
+    /// FloatProperty: fDistanceShotInFrontWindow<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float fDistanceShotInFrontWindow
     {
@@ -221,7 +224,8 @@ public partial class MSpecialMoveInstance_RedhoodGunWindow : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// ClassProperty: GunDamageType
+    /// ClassProperty: GunDamageType<br/>
+    /// Default: BmGame.MDmgType_HandgunShot
     /// </summary>
     public unsafe BmSDK.Class GunDamageType
     {

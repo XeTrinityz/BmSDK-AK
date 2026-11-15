@@ -161,7 +161,8 @@ public partial class RArenaCamera : BmSDK.BmGame.RMultiTargetCamera, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ExtraPlayerRadius
+    /// FloatProperty: ExtraPlayerRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float ExtraPlayerRadius
     {
@@ -170,7 +171,8 @@ public partial class RArenaCamera : BmSDK.BmGame.RMultiTargetCamera, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: InterpStrength
+    /// FloatProperty: InterpStrength<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float InterpStrength
     {

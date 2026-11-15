@@ -126,7 +126,8 @@ public partial class RObjectCounterVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ClassProperty: ObjectType
+    /// ClassProperty: ObjectType<br/>
+    /// Default: BmGame.RMagneticDynamicObjectBase
     /// </summary>
     public unsafe BmSDK.Class ObjectType
     {

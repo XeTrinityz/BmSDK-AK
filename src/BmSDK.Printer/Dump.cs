@@ -208,6 +208,7 @@ sealed class Dump
             cls.Interfaces.Add(i.GetString()!);
         }
         ReadFields(e, cls, cls.Fields);
+        cls.Defaults = ReadDefaults(e);
         return cls;
     }
 
@@ -241,6 +242,7 @@ sealed class Dump
                 node.Size = f.GetProperty("size").GetInt32();
                 node.Align = f.TryGetProperty("align", out var a) ? a.GetInt32() : 0;
                 ReadFields(f, node, node.Fields);
+                node.Defaults = ReadDefaults(f);
                 return node;
             }
 
@@ -290,6 +292,24 @@ sealed class Dump
             }
         }
         return node;
+    }
+
+    static Dictionary<string, JsonElement>? ReadDefaults(JsonElement e)
+    {
+        if (!e.TryGetProperty("defaults", out var defaults) || defaults.ValueKind != JsonValueKind.Object)
+        {
+            return null;
+        }
+
+        var values = new Dictionary<string, JsonElement>(StringComparer.Ordinal);
+        foreach (var value in defaults.EnumerateObject())
+        {
+            if (value.Name != "_object")
+            {
+                values[value.Name] = value.Value.Clone();
+            }
+        }
+        return values;
     }
 
     static string? Str(JsonElement e, string key) =>

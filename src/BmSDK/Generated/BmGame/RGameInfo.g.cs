@@ -5052,7 +5052,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     public partial record struct FDofStruct
     {
         /// <summary>
-        /// FloatProperty: ApertureStop
+        /// FloatProperty: ApertureStop<br/>
+        /// Default: 22
         /// </summary>
         public unsafe float ApertureStop
         {
@@ -5061,7 +5062,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FocusDistance
+        /// FloatProperty: FocusDistance<br/>
+        /// Default: 220
         /// </summary>
         public unsafe float FocusDistance
         {
@@ -5070,7 +5072,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InterpolationDuration
+        /// FloatProperty: InterpolationDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float InterpolationDuration
         {
@@ -5079,7 +5082,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: BloomScale
+        /// FloatProperty: BloomScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float BloomScale
         {
@@ -5140,7 +5144,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeMirrored
+        /// BoolProperty: bCanBeMirrored<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeMirrored
         {
@@ -5149,7 +5154,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AttackRange
+        /// FloatProperty: AttackRange<br/>
+        /// Default: 200
         /// </summary>
         public unsafe float AttackRange
         {
@@ -5158,7 +5164,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ForceHitDistance
+        /// FloatProperty: ForceHitDistance<br/>
+        /// Default: 150
         /// </summary>
         public unsafe float ForceHitDistance
         {
@@ -5273,7 +5280,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: PersistentSaveSlotId
+        /// IntProperty: PersistentSaveSlotId<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int PersistentSaveSlotId
         {
@@ -6581,7 +6589,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: DependentOnPassengerID
+        /// IntProperty: DependentOnPassengerID<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int DependentOnPassengerID
         {
@@ -6996,7 +7005,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MinTargetChangePeriod
+        /// FloatProperty: MinTargetChangePeriod<br/>
+        /// Default: 0.2
         /// </summary>
         public unsafe float MinTargetChangePeriod
         {
@@ -7005,7 +7015,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxTargetChangePeriod
+        /// FloatProperty: MaxTargetChangePeriod<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float MaxTargetChangePeriod
         {
@@ -7014,7 +7025,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: WindForceCoefficient
+        /// FloatProperty: WindForceCoefficient<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float WindForceCoefficient
         {
@@ -7030,7 +7042,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     public partial record struct FRBasicWindConfig
     {
         /// <summary>
-        /// BoolProperty: IsApplyWind
+        /// BoolProperty: IsApplyWind<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool IsApplyWind
         {
@@ -8064,7 +8077,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: Range
+        /// StructProperty: Range<br/>
+        /// Default: (X=8000,Y=7000,Z=275,W=225)
         /// </summary>
         public unsafe System.Numerics.Vector4 Range
         {
@@ -8073,7 +8087,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: ParticleIndex
+        /// IntProperty: ParticleIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int ParticleIndex
         {
@@ -8091,7 +8106,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StrProperty: Action
+        /// StrProperty: Action<br/>
+        /// Default: "LAUNCH"
         /// </summary>
         public unsafe BmSDK.FString Action
         {
@@ -8597,7 +8613,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Scale
+        /// FloatProperty: Scale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Scale
         {
@@ -8624,7 +8641,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StrProperty: Action
+        /// StrProperty: Action<br/>
+        /// Default: "BUY"
         /// </summary>
         public unsafe BmSDK.FString Action
         {
@@ -8642,7 +8660,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: Value
+        /// IntProperty: Value<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int Value
         {
@@ -8660,7 +8679,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: Hierarchy
+        /// IntProperty: Hierarchy<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int Hierarchy
         {
@@ -10005,7 +10025,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ContentBeaconMovieInstance
+    /// ObjectProperty: ContentBeaconMovieInstance<br/>
+    /// Default: ContentBeacons.InGamePanel
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie ContentBeaconMovieInstance
     {
@@ -10077,7 +10098,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VehicleCombatManager
+    /// ObjectProperty: VehicleCombatManager<br/>
+    /// Default: BmGame.Default__RGameInfo.VehCombMan
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleCombatManager VehicleCombatManager
     {
@@ -10257,7 +10279,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JokerFrequencyController
+    /// ObjectProperty: JokerFrequencyController<br/>
+    /// Default: BmGame.Default__RGameInfo.JFC
     /// </summary>
     public unsafe BmSDK.BmGame.RJokerHallucinationFrequencyController JokerFrequencyController
     {
@@ -10293,7 +10316,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VideoScreenTakeoverMaterialToInstance
+    /// ObjectProperty: VideoScreenTakeoverMaterialToInstance<br/>
+    /// Default: OBJ_TV.OBJ_TV_Master_M
     /// </summary>
     public unsafe BmSDK.Engine.Material VideoScreenTakeoverMaterialToInstance
     {
@@ -10347,7 +10371,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultBatmanKeyMap
+    /// ArrayProperty: DefaultBatmanKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Forward",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="MoveForward | MoveForwardPressed | OnRelease MoveForwardReleased | DebugMenuUpPressed | ...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultBatmanKeyMap
     {
@@ -10356,7 +10381,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultPursuitKeyMap
+    /// ArrayProperty: DefaultPursuitKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Accelerate",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="DebugMenuUpPressed | OnRelease DebugMenuUpReleased | Axis aThrottleAxis Speed=1.0 Dea...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultPursuitKeyMap
     {
@@ -10365,7 +10391,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultBattleKeyMap
+    /// ArrayProperty: DefaultBattleKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Forward",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="DebugMenuUpPressed | OnRelease DebugMenuUpReleased | MoveForward  | Axis aRawLHJoyUp Spe...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultBattleKeyMap
     {
@@ -10374,7 +10401,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DebugLevelStarts
+    /// ArrayProperty: DebugLevelStarts<br/>
+    /// Default: ((Name="FE_NewGame",LevelNames="start batentry?Area=Intro_PT1?NoFadeIn?NoFadeOut?Players=Playable_Cop?Flags=Audio_Start_Intro_Active,Batman_GlideBoost,Batmobile_HeavyTankRadarDisabled,DamageLevel_Play...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FLevelStartDefinition> DebugLevelStarts
     {
@@ -10383,7 +10411,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerInterrogationTracks
+    /// ArrayProperty: RiddlerInterrogationTracks<br/>
+    /// Default: ("Riddler_Inf_Inf_One","Riddler_Inf_Inf_Two","Riddler_Inf_Inf_Three","Riddler_Inf_Inf_Four","Riddler_Inf_Inf_Five","Riddler_Inf_Inf_Six","Riddler_Inf_Inf_Seven","Riddler_Inf_Inf_Eight","Riddler_Inf_In...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> RiddlerInterrogationTracks
     {
@@ -10392,7 +10421,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RiddlerInterrogationTrackIntro
+    /// StrProperty: RiddlerInterrogationTrackIntro<br/>
+    /// Default: "Riddler_Inf_Inf_First"
     /// </summary>
     public unsafe BmSDK.FString RiddlerInterrogationTrackIntro
     {
@@ -10401,7 +10431,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RiddlerInterrogationTrackDemo
+    /// StrProperty: RiddlerInterrogationTrackDemo<br/>
+    /// Default: "Riddler_Inf_Inf_Demo"
     /// </summary>
     public unsafe BmSDK.FString RiddlerInterrogationTrackDemo
     {
@@ -10410,7 +10441,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerInterrogationTrackFightBack
+    /// ArrayProperty: RiddlerInterrogationTrackFightBack<br/>
+    /// Default: ("Riddler_Inf_Inf_FightBack","Riddler_Inf_Inf_FightBack_Two","Riddler_Inf_Inf_FightBack_Three","Riddler_Inf_Inf_FightBack_Four","Riddler_Inf_Inf_FightBack_Five")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> RiddlerInterrogationTrackFightBack
     {
@@ -10419,7 +10451,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NumRiddlersX
+    /// ArrayProperty: NumRiddlersX<br/>
+    /// Default: (0,0,0,5,5,10,10,15,15,5)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumRiddlersX
     {
@@ -10428,7 +10461,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NumRiddlersY
+    /// ArrayProperty: NumRiddlersY<br/>
+    /// Default: (0,0,0,0,0,5,5,10,10,5)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumRiddlersY
     {
@@ -10437,7 +10471,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: NumRiddlersZ
+    /// ArrayProperty: NumRiddlersZ<br/>
+    /// Default: (5,5,5,10,10,15,15,20,20,5)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumRiddlersZ
     {
@@ -10446,7 +10481,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelTransitionOffsets
+    /// ArrayProperty: LevelTransitionOffsets<br/>
+    /// Default: ((Level=Ace_A1,TargetPMap="UnderAce"),(Level=Bank_Med),(Level=Bank_Small),(Level=CityX_06,TargetPMap="PenguinCache",Offset=(X=-99840,Y=-55728,Z=608)),(Level=CityX_06,TargetPMap="Sacrifice",Offset=(X=-...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FLevelTransitionOffset> LevelTransitionOffsets
     {
@@ -10550,7 +10586,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     public InlineArray<BmSDK.FString> acquiredBMBLUpgradeFlagNames => new(4, Ptr + 2592, 16, this);
 
     /// <summary>
-    /// StrProperty: acquiredBMBLUpgradeFlagNames
+    /// StrProperty: acquiredBMBLUpgradeFlagNames<br/>
+    /// Default: "AcquiredBMBLUpgrade_DroneAllegiance"
     /// </summary>
     public unsafe BmSDK.FString acquiredBMBLUpgradeFlagNames_0
     {
@@ -10558,7 +10595,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2592); }
     }
     /// <summary>
-    /// StrProperty: acquiredBMBLUpgradeFlagNames
+    /// StrProperty: acquiredBMBLUpgradeFlagNames<br/>
+    /// Default: "AcquiredBMBLUpgrade_EMP"
     /// </summary>
     public unsafe BmSDK.FString acquiredBMBLUpgradeFlagNames_1
     {
@@ -10566,7 +10604,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2608); }
     }
     /// <summary>
-    /// StrProperty: acquiredBMBLUpgradeFlagNames
+    /// StrProperty: acquiredBMBLUpgradeFlagNames<br/>
+    /// Default: "AcquiredBMBLUpgrade_WeaponsGeneratorMk2"
     /// </summary>
     public unsafe BmSDK.FString acquiredBMBLUpgradeFlagNames_2
     {
@@ -10574,7 +10613,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2624); }
     }
     /// <summary>
-    /// StrProperty: acquiredBMBLUpgradeFlagNames
+    /// StrProperty: acquiredBMBLUpgradeFlagNames<br/>
+    /// Default: "AcquiredBMBLUpgrade_WeaponsGeneratorMk3"
     /// </summary>
     public unsafe BmSDK.FString acquiredBMBLUpgradeFlagNames_3
     {
@@ -10588,7 +10628,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     public InlineArray<BmSDK.FString> unavailableBMBLUpgradeFlagNames => new(4, Ptr + 2656, 16, this);
 
     /// <summary>
-    /// StrProperty: unavailableBMBLUpgradeFlagNames
+    /// StrProperty: unavailableBMBLUpgradeFlagNames<br/>
+    /// Default: "UnavailableBMBLUpgrade_DroneAllegiance"
     /// </summary>
     public unsafe BmSDK.FString unavailableBMBLUpgradeFlagNames_0
     {
@@ -10596,7 +10637,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2656); }
     }
     /// <summary>
-    /// StrProperty: unavailableBMBLUpgradeFlagNames
+    /// StrProperty: unavailableBMBLUpgradeFlagNames<br/>
+    /// Default: "UnavailableBMBLUpgrade_EMP"
     /// </summary>
     public unsafe BmSDK.FString unavailableBMBLUpgradeFlagNames_1
     {
@@ -10604,7 +10646,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2672); }
     }
     /// <summary>
-    /// StrProperty: unavailableBMBLUpgradeFlagNames
+    /// StrProperty: unavailableBMBLUpgradeFlagNames<br/>
+    /// Default: "UnavailableBMBLUpgrade_WeaponsGeneratorMk2"
     /// </summary>
     public unsafe BmSDK.FString unavailableBMBLUpgradeFlagNames_2
     {
@@ -10612,7 +10655,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2688); }
     }
     /// <summary>
-    /// StrProperty: unavailableBMBLUpgradeFlagNames
+    /// StrProperty: unavailableBMBLUpgradeFlagNames<br/>
+    /// Default: "UnavailableBMBLUpgrade_WeaponsGeneratorMk3"
     /// </summary>
     public unsafe BmSDK.FString unavailableBMBLUpgradeFlagNames_3
     {
@@ -10626,7 +10670,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     public InlineArray<BmSDK.FString> nextBMBLUpgradeFlagNames => new(4, Ptr + 2720, 16, this);
 
     /// <summary>
-    /// StrProperty: nextBMBLUpgradeFlagNames
+    /// StrProperty: nextBMBLUpgradeFlagNames<br/>
+    /// Default: "NextBMBLUpgrade_DroneAllegiance"
     /// </summary>
     public unsafe BmSDK.FString nextBMBLUpgradeFlagNames_0
     {
@@ -10634,7 +10679,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2720); }
     }
     /// <summary>
-    /// StrProperty: nextBMBLUpgradeFlagNames
+    /// StrProperty: nextBMBLUpgradeFlagNames<br/>
+    /// Default: "NextBMBLUpgrade_EMP"
     /// </summary>
     public unsafe BmSDK.FString nextBMBLUpgradeFlagNames_1
     {
@@ -10642,7 +10688,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2736); }
     }
     /// <summary>
-    /// StrProperty: nextBMBLUpgradeFlagNames
+    /// StrProperty: nextBMBLUpgradeFlagNames<br/>
+    /// Default: "NextBMBLUpgrade_WeaponsGeneratorMk2"
     /// </summary>
     public unsafe BmSDK.FString nextBMBLUpgradeFlagNames_2
     {
@@ -10650,7 +10697,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2752); }
     }
     /// <summary>
-    /// StrProperty: nextBMBLUpgradeFlagNames
+    /// StrProperty: nextBMBLUpgradeFlagNames<br/>
+    /// Default: "NextBMBLUpgrade_WeaponsGeneratorMk3"
     /// </summary>
     public unsafe BmSDK.FString nextBMBLUpgradeFlagNames_3
     {
@@ -10911,7 +10959,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ParticlePushBMAffectBaseVel
+    /// BoolProperty: ParticlePushBMAffectBaseVel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ParticlePushBMAffectBaseVel
     {
@@ -10920,7 +10969,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ParticlePushBMBLAffectBaseVel
+    /// BoolProperty: ParticlePushBMBLAffectBaseVel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ParticlePushBMBLAffectBaseVel
     {
@@ -11163,7 +11213,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ConceptItems
+    /// ArrayProperty: ConceptItems<br/>
+    /// Default: ((Name="Ace01",Package="Concept_Ace01"),(Name="Ace05",Package="Concept_Ace05"),(Name="Ace06",Package="Concept_Ace06"),(Name="Ace07",Package="Concept_Ace07"),(Name="Bank02",Package="Concept_Bank02"),(N...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FConceptItem> ConceptItems
     {
@@ -11172,7 +11223,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ShowcaseCameras
+    /// ArrayProperty: ShowcaseCameras<br/>
+    /// Default: ((Name="BatmobileUnified",VantagePosition=(X=580,Y=-135,Z=285),VantageLookAt=(Y=200),VantageFOV=60,InspectHeights=(X=75,Y=100,Z=200,W=50),InspectAngles=(X=5,Y=-30,Z=245),InspectFOVs=(X=70,Y=50,Z=20),I...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FShowcaseCamera> ShowcaseCameras
     {
@@ -11181,7 +11233,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ShowcaseItems
+    /// ArrayProperty: ShowcaseItems<br/>
+    /// Default: ((Page="Batmobiles",Item="Batmobile",Levels="Showcase_Ambient_Background|Showcase_Batmobiles_Standard",Camera="Batmobile",Skin="Playable_Batmobile_Std"),(Page="Batmobiles",Item="BatmobileMK2",Levels="...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FShowcaseItem> ShowcaseItems
     {
@@ -11199,7 +11252,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeHeaders
+    /// ArrayProperty: UpgradeHeaders<br/>
+    /// Default: ((Name="PageCombat",OX=-65,TX=-75,TY=15),(Name="PageGadgets1",OX=-30,OY=95,TX=-10,TY=105,LeftJustify=true),(Name="PageGadgets2",OX=30,OY=95,TX=10,TY=105),(Name="PageBatsuit",OX=65,TX=75,TY=15,LeftJust...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FUpgradeHeader> UpgradeHeaders
     {
@@ -11208,7 +11262,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeItems
+    /// ArrayProperty: UpgradeItems<br/>
+    /// Default: ((Page="Root",Item="CategoryMoves",Scale=0.8,Icon="Moves",Action="PAGE:Moves",Hierarchy=-1),(Page="Root",Item="CategoryCombat",X=-1,DX=-1,Scale=1,Icon="Combat",Background="Combat",Action="PAGE:Combat"...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FUpgradeItem> UpgradeItems
     {
@@ -11244,7 +11299,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: RiddlerPuzzles
+    /// ArrayProperty: RiddlerPuzzles<br/>
+    /// Default: ((Id=30,Category=RiddlerCategory_CityZ,Prize=(Tape=Tape_Riddler),Pieces=((Type=RiddlerPiece_Cameo,Id=5),(Type=RiddlerPiece_Bomb,Id=16),(Type=RiddlerPiece_Trophy,Id=19),(Type=RiddlerPiece_Trophy,Id=28)...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FRiddlerPuzzle> RiddlerPuzzles
     {
@@ -11352,7 +11408,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: GameMode
+    /// ByteProperty: GameMode<br/>
+    /// Default: EGM_Story
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EGameModes GameMode
     {
@@ -11454,7 +11511,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ChallengeRequiredFlags
+    /// StrProperty: ChallengeRequiredFlags<br/>
+    /// Default: "CityX_Alfred_Bridge_Lowered,Bridges_To_CityY_Lowered,Frontend_ARChallenge,CityX_11_Eastern_Tunnel_Doors_Open_Finished,Ch5b_WayneTower_Tanks_Start,Ch5b_WayneTower_Tanks_Battle_ACtive,Ch5b_CollectUpgra...
     /// </summary>
     public unsafe BmSDK.FString ChallengeRequiredFlags
     {
@@ -11463,7 +11521,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ChallengeRequiredChapters
+    /// StrProperty: ChallengeRequiredChapters<br/>
+    /// Default: "1d,A0,B0,D0,E0,F1,G0,H0,I0,K1,L0,O0,P0,Q0,R1,U0,V0,X0,Y0,Z0"
     /// </summary>
     public unsafe BmSDK.FString ChallengeRequiredChapters
     {
@@ -11481,7 +11540,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FootstepNoiseDist
+    /// FloatProperty: FootstepNoiseDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FootstepNoiseDist
     {
@@ -11490,7 +11550,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WalkFootstepNoiseDist
+    /// FloatProperty: WalkFootstepNoiseDist<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float WalkFootstepNoiseDist
     {
@@ -11499,7 +11560,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TakedownNoiseDist
+    /// FloatProperty: TakedownNoiseDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float TakedownNoiseDist
     {
@@ -11508,7 +11570,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChaseCheatTime
+    /// FloatProperty: ChaseCheatTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ChaseCheatTime
     {
@@ -11517,7 +11580,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RBSmashSpeedAlertThreshold
+    /// FloatProperty: RBSmashSpeedAlertThreshold<br/>
+    /// Default: 950
     /// </summary>
     public unsafe float RBSmashSpeedAlertThreshold
     {
@@ -11541,7 +11605,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRWindState>(Ptr + 3228);
 
     /// <summary>
-    /// StructProperty: CurrentWindConfig
+    /// StructProperty: CurrentWindConfig<br/>
+    /// Default: (MinTargetChangePeriod=0.2,MaxTargetChangePeriod=0.5,WindForceCoefficient=0.1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FRWindConfig CurrentWindConfig
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FRWindConfig>(Ptr + 3296);
@@ -11565,7 +11630,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VisibleObjectiveMarker
+    /// IntProperty: VisibleObjectiveMarker<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int VisibleObjectiveMarker
     {
@@ -11574,7 +11640,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HighestPriorityNonCustomObjectiveMarker
+    /// IntProperty: HighestPriorityNonCustomObjectiveMarker<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int HighestPriorityNonCustomObjectiveMarker
     {
@@ -11673,7 +11740,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerSwappableChance_Ch3
+    /// FloatProperty: jokerSwappableChance_Ch3<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float jokerSwappableChance_Ch3
     {
@@ -11682,7 +11750,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerSwappableChance_Ch5
+    /// FloatProperty: jokerSwappableChance_Ch5<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float jokerSwappableChance_Ch5
     {
@@ -11691,7 +11760,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerSwappableChance_Ch7
+    /// FloatProperty: jokerSwappableChance_Ch7<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float jokerSwappableChance_Ch7
     {
@@ -11700,7 +11770,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerSwappableChance_Ch9
+    /// FloatProperty: jokerSwappableChance_Ch9<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float jokerSwappableChance_Ch9
     {
@@ -11709,7 +11780,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerSwappableCooldownTime
+    /// FloatProperty: jokerSwappableCooldownTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float jokerSwappableCooldownTime
     {
@@ -11727,7 +11799,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: onScreenJokerfy_LightningDist
+    /// FloatProperty: onScreenJokerfy_LightningDist<br/>
+    /// Default: 12288
     /// </summary>
     public unsafe float onScreenJokerfy_LightningDist
     {
@@ -11736,7 +11809,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: onScreenJokerfy_MaxDist
+    /// FloatProperty: onScreenJokerfy_MaxDist<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float onScreenJokerfy_MaxDist
     {
@@ -11745,7 +11819,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: onScreenJokerfy_MinInterval
+    /// FloatProperty: onScreenJokerfy_MinInterval<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float onScreenJokerfy_MinInterval
     {
@@ -11754,7 +11829,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: jokerMeshSwapDuration
+    /// FloatProperty: jokerMeshSwapDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float jokerMeshSwapDuration
     {
@@ -11889,7 +11965,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PredChaseTime
+    /// FloatProperty: PredChaseTime<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float PredChaseTime
     {
@@ -11907,7 +11984,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LastExclaimTime
+    /// FloatProperty: LastExclaimTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastExclaimTime
     {
@@ -11961,19 +12039,22 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ParticlePushBMPos1Mult
+    /// StructProperty: ParticlePushBMPos1Mult<br/>
+    /// Default: (Z=0.6)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ParticlePushBMPos1Mult
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3780);
 
     /// <summary>
-    /// StructProperty: ParticlePushBMPos2Mult
+    /// StructProperty: ParticlePushBMPos2Mult<br/>
+    /// Default: (Z=-0.6)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ParticlePushBMPos2Mult
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3792);
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMMaxSpeed
+    /// FloatProperty: ParticlePushBMMaxSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ParticlePushBMMaxSpeed
     {
@@ -11982,7 +12063,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMMaxRange
+    /// FloatProperty: ParticlePushBMMaxRange<br/>
+    /// Default: 510
     /// </summary>
     public unsafe float ParticlePushBMMaxRange
     {
@@ -11991,7 +12073,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMMaxStrength
+    /// FloatProperty: ParticlePushBMMaxStrength<br/>
+    /// Default: -1000
     /// </summary>
     public unsafe float ParticlePushBMMaxStrength
     {
@@ -12000,19 +12083,22 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ParticlePushBMBLPos1Mult
+    /// StructProperty: ParticlePushBMBLPos1Mult<br/>
+    /// Default: (X=0.6)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ParticlePushBMBLPos1Mult
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3816);
 
     /// <summary>
-    /// StructProperty: ParticlePushBMBLPos2Mult
+    /// StructProperty: ParticlePushBMBLPos2Mult<br/>
+    /// Default: (X=-0.6)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ParticlePushBMBLPos2Mult
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3828);
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMBLMaxSpeed
+    /// FloatProperty: ParticlePushBMBLMaxSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ParticlePushBMBLMaxSpeed
     {
@@ -12021,7 +12107,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMBLMaxRange
+    /// FloatProperty: ParticlePushBMBLMaxRange<br/>
+    /// Default: 712
     /// </summary>
     public unsafe float ParticlePushBMBLMaxRange
     {
@@ -12030,7 +12117,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticlePushBMBLMaxStrength
+    /// FloatProperty: ParticlePushBMBLMaxStrength<br/>
+    /// Default: -5000
     /// </summary>
     public unsafe float ParticlePushBMBLMaxStrength
     {
@@ -12057,7 +12145,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ChallengeMapList
+    /// ArrayProperty: ChallengeMapList<br/>
+    /// Default: ((Id=602,LeaderboardId=32,ChallengeFrontendGroup=ECFrontendGroup_BatmobileHybrid,ChallengeRankMode=ECRM_ShortestTime,WorldLocation=(X=-119544,Y=-55311,Z=942),NavigationLocation=(X=-119544,Y=-55311,Z=9...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FChallengeDesc> ChallengeMapList
     {
@@ -12066,7 +12155,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MostWantedSetupData
+    /// ArrayProperty: MostWantedSetupData<br/>
+    /// Default: ((Name="Game",MissionWeight=400),(Id=1,Name="Blackfire",bStartLocked=true,BioCharacter=BioCharacter_Deacon_Blackfire,Markers=(100),MissionWeight=20,WaynetechPointsTotal=(3)),(Id=2,Name="Firefly",bStar...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FMostWantedSetup> MostWantedSetupData
     {
@@ -12075,7 +12165,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelVolumeList
+    /// ArrayProperty: LevelVolumeList<br/>
+    /// Default: ((LevelName=UnderAce_A3,Priority=3,Standalone=3,Bounds=(Min=(X=-34965.57,Y=-135146,Z=-362.48),Max=(X=-28437.57,Y=-123137.13,Z=4718.48))),(LevelName=UnderAce_A4,Priority=1,BspRoot=-1,Standalone=1,Bound...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FLevelVolumeDesc> LevelVolumeList
     {
@@ -12084,7 +12175,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelVolumeBspNodes
+    /// ArrayProperty: LevelVolumeBspNodes<br/>
+    /// Default: ((Plane=(X=-1,W=31253.572),ChildFront=1,ChildBack=13),(Plane=(Y=1,W=-126976.12),ChildFront=2,ChildBack=8),(Plane=(X=-1,W=34965.57),ChildFront=-1,ChildBack=3),(Plane=(Y=1,W=-123137.12),ChildFront=-1,Ch...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FLevelVolumeBsp> LevelVolumeBspNodes
     {
@@ -12093,7 +12185,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelTransitionList
+    /// ArrayProperty: LevelTransitionList<br/>
+    /// Default: ((LevelNameOwner="underace",LevelFront=1,LevelBack=2,Location=(X=-34816,Y=-118112,Z=-48),Extent=(X=759.37,Y=1660.71,Z=1660.71)),(LevelNameOwner="underace",LevelFront=2,Location=(X=-33056,Y=-126976,Z=1...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FLevelTransitionDesc> LevelTransitionList
     {
@@ -12102,7 +12195,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SubMapLocList
+    /// ArrayProperty: SubMapLocList<br/>
+    /// Default: ((SubName="Cityx",X=-113575,Y=-61150,FlagCheck="RiddlerCityXActive"),(SubName="Cityy",X=-82969,Y=-109248,FlagCheck="RiddlerCityYActive"),(SubName="CityZ",X=-53693,Y=-62572),(SubName="Ace",ParentMapNam...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FMapHackOWLoc> SubMapLocList
     {
@@ -12120,7 +12214,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MapElementItemList
+    /// ArrayProperty: MapElementItemList<br/>
+    /// Default: ((MapName="Underace",ItemType="Objective",ItemName="Ch2_Ace_Main_4_StopScarecrow_OM",X=-31744,Y=-118144,Z=-212,FloatUpBy=2000,Filter=1),(MapName="Cityx",ItemType="RiddlerCameo",ItemName="CityX_Riddler...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FMapElementsItem> MapElementItemList
     {
@@ -12129,7 +12224,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: StoryDLCList
+    /// ArrayProperty: StoryDLCList<br/>
+    /// Default: ((PersistentSaveSlotId=1),(Name="HarleyFreeR",UISortId=8,PersistentSaveSlotId=10,NewGameStart="start batentry?Area=CityZ_17,CityX_02,CityX_03,CityZ_13,CityZ_14,CityZ_16,CityZ_18,CityZ_T17?NoFadeOut?Fl...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FStoryDLCItem> StoryDLCList
     {
@@ -12147,7 +12243,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DLCBundlesInstalled
+    /// ArrayProperty: DLCBundlesInstalled<br/>
+    /// Default: ("","COMMUNITYPATCHHARLEYQUINN","HarleyPolice","COMMUNITYPATCHREDHOODFR","RedHood","COMMUNITYPATCHBATGIRLFR","Batgirl","BMOBPrototype","COMMUNITYPATCH1966","BmobClassic","Batman1stAppear","SkinBatmanF...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> DLCBundlesInstalled
     {
@@ -12360,7 +12457,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultBatgirlKeyMap
+    /// ArrayProperty: DefaultBatgirlKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Forward",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="MoveForward | MoveForwardPressed | OnRelease MoveForwardReleased | DebugMenuUpPressed | ...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultBatgirlKeyMap
     {
@@ -12369,7 +12467,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultRedHoodKeyMap
+    /// ArrayProperty: DefaultRedHoodKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Forward",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="MoveForward | MoveForwardPressed | OnRelease MoveForwardReleased | DebugMenuUpPressed | ...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultRedHoodKeyMap
     {
@@ -12378,7 +12477,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DefaultHarleyKeyMap
+    /// ArrayProperty: DefaultHarleyKeyMap<br/>
+    /// Default: ((Ability="$GFxUI.KeyboardControls.Forward",PrimaryKeyName="$PC.Keys.W",SecondaryKeyName="$PC.Keys.Up",Command="MoveForward | MoveForwardPressed | OnRelease MoveForwardReleased | DebugMenuUpPressed | ...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FKeyMap> DefaultHarleyKeyMap
     {
@@ -12387,7 +12487,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelVolumeListBatchBase
+    /// ArrayProperty: LevelVolumeListBatchBase<br/>
+    /// Default: (146,149,162,164,166,168,170,172,174,176,187)
     /// </summary>
     public unsafe BmSDK.TArray<int> LevelVolumeListBatchBase
     {
@@ -12396,7 +12497,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelVolumeBspNodesBatchBase
+    /// ArrayProperty: LevelVolumeBspNodesBatchBase<br/>
+    /// Default: (2160,2166,2818,2818,2818,2818,2818,2818,2818,2818,2956)
     /// </summary>
     public unsafe BmSDK.TArray<int> LevelVolumeBspNodesBatchBase
     {
@@ -12405,7 +12507,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: LevelTransitionListBatchBase
+    /// ArrayProperty: LevelTransitionListBatchBase<br/>
+    /// Default: (81,81,82,82,82,82,82,83,83,83,89)
     /// </summary>
     public unsafe BmSDK.TArray<int> LevelTransitionListBatchBase
     {
@@ -12414,7 +12517,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ChallengeCharacterIds
+    /// ArrayProperty: ChallengeCharacterIds<br/>
+    /// Default: ((Name="Default"),(Name="Batman",Id=10),(Name="Robin",Override="Robin0",Id=11),(Name="Nightwing",Override="Nightwing0",Id=12),(Name="Azrael",Id=13),(Name="Catwoman",Override="Catwoman0",Id=14),(Name="...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FChallengeCharacterId> ChallengeCharacterIds
     {
@@ -12423,7 +12527,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ChallengeRequiredChaptersById
+    /// ArrayProperty: ChallengeRequiredChaptersById<br/>
+    /// Default: ((Id=722,Chapters="9,A0,B0,D0,E0,F1,G0,H0,I0,K1,L0,O0,P0,Q0,R1,U0,V0,X0,Y0,Z0"),(Id=719,Chapters="9,A0,B0,D0,E0,F1,G0,H0,I0,K9,L0,O0,P0,Q0,R1,U0,V0,X0,Y0,Z0"),(Id=714,Chapters="9,A0,B0,D0,E0,F1,G0,H0,...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RGameInfo.FRequiredChaptersByChallengeId> ChallengeRequiredChaptersById
     {

@@ -191,7 +191,8 @@ public partial class RSeqAct_CaseFileControl : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: mBlendTimeToCamera
+    /// FloatProperty: mBlendTimeToCamera<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float mBlendTimeToCamera
     {
@@ -200,7 +201,8 @@ public partial class RSeqAct_CaseFileControl : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: mDelayBeforeAutoPlayback
+    /// FloatProperty: mDelayBeforeAutoPlayback<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float mDelayBeforeAutoPlayback
     {

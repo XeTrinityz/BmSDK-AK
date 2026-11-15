@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_CarryOracle : BmSDK.BmGame.RSpecialMoveC
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: CoverInAnimName
+    /// NameProperty: CoverInAnimName<br/>
+    /// Default: Cover_With_Oracle_Trans_In
     /// </summary>
     public unsafe BmSDK.FName CoverInAnimName
     {

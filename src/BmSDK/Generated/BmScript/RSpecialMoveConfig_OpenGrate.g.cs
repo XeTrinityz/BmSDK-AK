@@ -182,7 +182,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
         }
 
         /// <summary>
-        /// StructProperty: ScreenShake
+        /// StructProperty: ScreenShake<br/>
+        /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
         /// </summary>
         public unsafe BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ScreenShake
         {
@@ -264,7 +265,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// BoolProperty: bNoiseLevelUsed
+    /// BoolProperty: bNoiseLevelUsed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoiseLevelUsed
     {
@@ -309,7 +311,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: NoiseIncrease
+    /// FloatProperty: NoiseIncrease<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float NoiseIncrease
     {
@@ -318,7 +321,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: NoiseDecay
+    /// FloatProperty: NoiseDecay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseDecay
     {
@@ -363,7 +367,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// ObjectProperty: PullTensionParam
+    /// ObjectProperty: PullTensionParam<br/>
+    /// Default: Ww_Parameters.Tension
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName PullTensionParam
     {
@@ -390,7 +395,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: StruggleSpeedDecay
+    /// FloatProperty: StruggleSpeedDecay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float StruggleSpeedDecay
     {
@@ -399,7 +405,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: MinStruggleSpeed
+    /// FloatProperty: MinStruggleSpeed<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float MinStruggleSpeed
     {
@@ -408,7 +415,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: MaxStruggleSpeed
+    /// FloatProperty: MaxStruggleSpeed<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MaxStruggleSpeed
     {
@@ -417,7 +425,8 @@ public partial class RSpecialMoveConfig_OpenGrate : BmSDK.BmGame.RSpecialMoveCon
     }
 
     /// <summary>
-    /// FloatProperty: StruggleButtonBonus
+    /// FloatProperty: StruggleButtonBonus<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float StruggleButtonBonus
     {

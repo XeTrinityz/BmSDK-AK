@@ -595,7 +595,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1028);
 
     /// <summary>
-    /// FloatProperty: OneShotLineDelayMin
+    /// FloatProperty: OneShotLineDelayMin<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float OneShotLineDelayMin
     {
@@ -604,7 +605,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: OneShotLineDelayMax
+    /// FloatProperty: OneShotLineDelayMax<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float OneShotLineDelayMax
     {
@@ -622,7 +624,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// ArrayProperty: StageScan360Period
+    /// ArrayProperty: StageScan360Period<br/>
+    /// Default: (20,-18,15,-12)
     /// </summary>
     public unsafe BmSDK.TArray<float> StageScan360Period
     {
@@ -631,7 +634,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// ArrayProperty: ChaseTimes
+    /// ArrayProperty: ChaseTimes<br/>
+    /// Default: (0,20,40,60)
     /// </summary>
     public unsafe BmSDK.TArray<float> ChaseTimes
     {
@@ -640,7 +644,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// ArrayProperty: WeakPointOutputLinks
+    /// ArrayProperty: WeakPointOutputLinks<br/>
+    /// Default: (3,5,4,6)
     /// </summary>
     public unsafe BmSDK.TArray<int> WeakPointOutputLinks
     {
@@ -649,7 +654,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// StructProperty: ThrottleVsDistCurve
+    /// StructProperty: ThrottleVsDistCurve<br/>
+    /// Default: (Points=((InVal=-20000,OutVal=1.8),(InVal=-7500,OutVal=1.2),(InVal=-5000,OutVal=1.2),(InVal=-3000,OutVal=1)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat ThrottleVsDistCurve
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 1100);
@@ -682,7 +688,8 @@ public partial class RVehicleBehaviour_CommandTankSearch : BmSDK.BmGame.RVehicle
     }
 
     /// <summary>
-    /// FloatProperty: AlertTimer
+    /// FloatProperty: AlertTimer<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AlertTimer
     {

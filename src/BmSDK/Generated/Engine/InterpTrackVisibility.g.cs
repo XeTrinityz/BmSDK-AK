@@ -88,7 +88,8 @@ public partial class InterpTrackVisibility : BmSDK.Engine.InterpTrack, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenForwards
+    /// BoolProperty: bFireEventsWhenForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenForwards
     {
@@ -97,7 +98,8 @@ public partial class InterpTrackVisibility : BmSDK.Engine.InterpTrack, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenBackwards
+    /// BoolProperty: bFireEventsWhenBackwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenBackwards
     {
@@ -106,7 +108,8 @@ public partial class InterpTrackVisibility : BmSDK.Engine.InterpTrack, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bFireEventsWhenJumpingForwards
+    /// BoolProperty: bFireEventsWhenJumpingForwards<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFireEventsWhenJumpingForwards
     {

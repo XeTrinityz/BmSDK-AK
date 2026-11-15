@@ -251,7 +251,8 @@ public partial class RDamagePawnVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -323,7 +324,8 @@ public partial class RDamagePawnVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DmgInfo
+    /// StructProperty: DmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 768);

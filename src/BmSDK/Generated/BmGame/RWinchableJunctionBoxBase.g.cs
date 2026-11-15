@@ -488,7 +488,8 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: CanWinchTargetDuringEncounter
+    /// BoolProperty: CanWinchTargetDuringEncounter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CanWinchTargetDuringEncounter
     {
@@ -542,7 +543,8 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmGame.Default__RWinchableJunctionBoxBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -632,7 +634,8 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxWinchAngle
+    /// FloatProperty: MaxWinchAngle<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MaxWinchAngle
     {
@@ -641,7 +644,8 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxWinchAngle2
+    /// FloatProperty: MaxWinchAngle2<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MaxWinchAngle2
     {

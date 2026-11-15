@@ -415,7 +415,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// IntProperty: NumThugsForTriggeringHQTrap
+    /// IntProperty: NumThugsForTriggeringHQTrap<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumThugsForTriggeringHQTrap
     {
@@ -424,7 +425,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// IntProperty: NumThugsForTriggeringKranksTrap
+    /// IntProperty: NumThugsForTriggeringKranksTrap<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumThugsForTriggeringKranksTrap
     {
@@ -442,7 +444,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// BoolProperty: bDoNotWaitForEnableReturnInput
+    /// BoolProperty: bDoNotWaitForEnableReturnInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoNotWaitForEnableReturnInput
     {
@@ -496,7 +499,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: MinVantagePointAimTime
+    /// FloatProperty: MinVantagePointAimTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinVantagePointAimTime
     {
@@ -505,7 +509,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: MaxVantagePointAimTime
+    /// FloatProperty: MaxVantagePointAimTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxVantagePointAimTime
     {
@@ -514,7 +519,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: VantagePointAimSpeed
+    /// FloatProperty: VantagePointAimSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VantagePointAimSpeed
     {
@@ -523,7 +529,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: MinFloorPointAimTime
+    /// FloatProperty: MinFloorPointAimTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinFloorPointAimTime
     {
@@ -532,7 +539,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: MaxFloorPointAimTime
+    /// FloatProperty: MaxFloorPointAimTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxFloorPointAimTime
     {
@@ -541,7 +549,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: FloorPointAimSpeed
+    /// FloatProperty: FloorPointAimSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FloorPointAimSpeed
     {
@@ -550,7 +559,8 @@ public partial class RSeqAct_RedHoodSniperBossRoom : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: OverrideForVeryFirstGargoyleAimTime
+    /// FloatProperty: OverrideForVeryFirstGargoyleAimTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float OverrideForVeryFirstGargoyleAimTime
     {

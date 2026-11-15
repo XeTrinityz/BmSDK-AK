@@ -611,7 +611,8 @@ public partial class RSpecialMoveInstance_RelativeAnimMove : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// IntProperty: ChosenAnim
+    /// IntProperty: ChosenAnim<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ChosenAnim
     {
@@ -683,7 +684,8 @@ public partial class RSpecialMoveInstance_RelativeAnimMove : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// BoolProperty: bDelayCallingSetCameraState
+    /// BoolProperty: bDelayCallingSetCameraState<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDelayCallingSetCameraState
     {

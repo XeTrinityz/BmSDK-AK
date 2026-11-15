@@ -79,7 +79,8 @@ public partial class MSpecialMoveConfig_LaughingGrapple : BmSDK.BmGame.RSpecialM
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: SmokeTimer
+    /// FloatProperty: SmokeTimer<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float SmokeTimer
     {
@@ -88,7 +89,8 @@ public partial class MSpecialMoveConfig_LaughingGrapple : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// NameProperty: SmokeBombTransitionName
+    /// NameProperty: SmokeBombTransitionName<br/>
+    /// Default: DropLaughingGas
     /// </summary>
     public unsafe BmSDK.FName SmokeBombTransitionName
     {
@@ -97,7 +99,8 @@ public partial class MSpecialMoveConfig_LaughingGrapple : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// BoolProperty: PlayGrapple
+    /// BoolProperty: PlayGrapple<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PlayGrapple
     {

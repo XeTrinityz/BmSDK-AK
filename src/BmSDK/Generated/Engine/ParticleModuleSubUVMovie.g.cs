@@ -88,13 +88,15 @@ public partial class ParticleModuleSubUVMovie : BmSDK.Engine.ParticleModuleSubUV
     }
 
     /// <summary>
-    /// StructProperty: FrameRate
+    /// StructProperty: FrameRate<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(30,30,30,30),Distribution=Engine.Default__ParticleModuleSubUVMovie.DistributionFrameRate)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat FrameRate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 140);
 
     /// <summary>
-    /// IntProperty: StartingFrame
+    /// IntProperty: StartingFrame<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int StartingFrame
     {

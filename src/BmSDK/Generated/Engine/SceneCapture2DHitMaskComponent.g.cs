@@ -176,7 +176,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// IntProperty: ForceLOD
+    /// IntProperty: ForceLOD<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceLOD
     {
@@ -185,7 +186,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// IntProperty: HitMaskCullDistance
+    /// IntProperty: HitMaskCullDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int HitMaskCullDistance
     {
@@ -194,7 +196,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// FloatProperty: FadingStartTimeSinceHit
+    /// FloatProperty: FadingStartTimeSinceHit<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FadingStartTimeSinceHit
     {
@@ -203,7 +206,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// FloatProperty: FadingPercentage
+    /// FloatProperty: FadingPercentage<br/>
+    /// Default: 0.99
     /// </summary>
     public unsafe float FadingPercentage
     {
@@ -212,7 +216,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// FloatProperty: FadingDurationTime
+    /// FloatProperty: FadingDurationTime<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float FadingDurationTime
     {
@@ -221,7 +226,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
     }
 
     /// <summary>
-    /// FloatProperty: FadingIntervalTime
+    /// FloatProperty: FadingIntervalTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float FadingIntervalTime
     {

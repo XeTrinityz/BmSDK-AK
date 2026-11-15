@@ -120,7 +120,8 @@ public partial class LadderVolume : BmSDK.Engine.PhysicsVolume, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 856);
 
     /// <summary>
-    /// StructProperty: ClimbDir
+    /// StructProperty: ClimbDir<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ClimbDir
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 868);
@@ -162,7 +163,8 @@ public partial class LadderVolume : BmSDK.Engine.PhysicsVolume, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAutoPath
+    /// BoolProperty: bAutoPath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoPath
     {
@@ -171,7 +173,8 @@ public partial class LadderVolume : BmSDK.Engine.PhysicsVolume, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowLadderStrafing
+    /// BoolProperty: bAllowLadderStrafing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowLadderStrafing
     {

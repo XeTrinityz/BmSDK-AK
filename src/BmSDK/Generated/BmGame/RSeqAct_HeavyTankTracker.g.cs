@@ -129,7 +129,8 @@ public partial class RSeqAct_HeavyTankTracker : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ValueToSetAtRange1
+    /// FloatProperty: ValueToSetAtRange1<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ValueToSetAtRange1
     {
@@ -138,7 +139,8 @@ public partial class RSeqAct_HeavyTankTracker : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ValueToSetAtRange2
+    /// FloatProperty: ValueToSetAtRange2<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ValueToSetAtRange2
     {
@@ -147,7 +149,8 @@ public partial class RSeqAct_HeavyTankTracker : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ValueToSetOnMissileLockOn
+    /// FloatProperty: ValueToSetOnMissileLockOn<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float ValueToSetOnMissileLockOn
     {

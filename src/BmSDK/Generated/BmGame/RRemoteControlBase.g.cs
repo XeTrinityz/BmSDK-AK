@@ -391,7 +391,8 @@ public partial class RRemoteControlBase : BmSDK.Engine.Actor, BmSDK.BmGame.RRemo
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RRemoteControlBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -409,7 +410,8 @@ public partial class RRemoteControlBase : BmSDK.Engine.Actor, BmSDK.BmGame.RRemo
     }
 
     /// <summary>
-    /// FloatProperty: ExternalCameraBlendInTime
+    /// FloatProperty: ExternalCameraBlendInTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ExternalCameraBlendInTime
     {
@@ -418,7 +420,8 @@ public partial class RRemoteControlBase : BmSDK.Engine.Actor, BmSDK.BmGame.RRemo
     }
 
     /// <summary>
-    /// FloatProperty: ExternalCameraBlendOutTime
+    /// FloatProperty: ExternalCameraBlendOutTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ExternalCameraBlendOutTime
     {

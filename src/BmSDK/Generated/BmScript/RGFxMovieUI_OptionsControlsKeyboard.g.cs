@@ -542,7 +542,8 @@ public partial class RGFxMovieUI_OptionsControlsKeyboard : BmSDK.BmGame.RGFxMovi
     }
 
     /// <summary>
-    /// IntProperty: NoOption
+    /// IntProperty: NoOption<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoOption
     {
@@ -551,7 +552,8 @@ public partial class RGFxMovieUI_OptionsControlsKeyboard : BmSDK.BmGame.RGFxMovi
     }
 
     /// <summary>
-    /// IntProperty: CancelOption
+    /// IntProperty: CancelOption<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int CancelOption
     {

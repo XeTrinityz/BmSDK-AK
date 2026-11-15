@@ -330,7 +330,8 @@ public partial class RBatarang_MultiTarget : BmSDK.BmScript.RBatarangBm, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: NumTargets
+    /// IntProperty: NumTargets<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumTargets
     {
@@ -375,7 +376,8 @@ public partial class RBatarang_MultiTarget : BmSDK.BmScript.RBatarangBm, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: NextBatarangToThrow
+    /// IntProperty: NextBatarangToThrow<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int NextBatarangToThrow
     {
@@ -398,7 +400,8 @@ public partial class RBatarang_MultiTarget : BmSDK.BmScript.RBatarangBm, BmSDK.I
     public InlineArray<BmSDK.Engine.SkeletalMeshComponent> ExtraBatarangMeshes => new(2, Ptr + 2788, 8, this);
 
     /// <summary>
-    /// ComponentProperty: ExtraBatarangMeshes
+    /// ComponentProperty: ExtraBatarangMeshes<br/>
+    /// Default: BmScript.Default__RBatarang_MultiTarget.ExtraMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraBatarangMeshes_0
     {
@@ -406,7 +409,8 @@ public partial class RBatarang_MultiTarget : BmSDK.BmScript.RBatarangBm, BmSDK.I
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2788); }
     }
     /// <summary>
-    /// ComponentProperty: ExtraBatarangMeshes
+    /// ComponentProperty: ExtraBatarangMeshes<br/>
+    /// Default: BmScript.Default__RBatarang_MultiTarget.ExtraMesh2
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraBatarangMeshes_1
     {

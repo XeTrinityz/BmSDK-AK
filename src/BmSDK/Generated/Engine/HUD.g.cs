@@ -948,19 +948,22 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WhiteColor
+    /// StructProperty: WhiteColor<br/>
+    /// Default: (B=255,G=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WhiteColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 668);
 
     /// <summary>
-    /// StructProperty: GreenColor
+    /// StructProperty: GreenColor<br/>
+    /// Default: (G=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor GreenColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 672);
 
     /// <summary>
-    /// StructProperty: RedColor
+    /// StructProperty: RedColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor RedColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 676);
@@ -993,7 +996,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShowHUD
+    /// BoolProperty: bShowHUD<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowHUD
     {
@@ -1047,7 +1051,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bMessageBeep
+    /// BoolProperty: bMessageBeep<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMessageBeep
     {
@@ -1065,7 +1070,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HudCanvasScale
+    /// FloatProperty: HudCanvasScale<br/>
+    /// Default: 0.95
     /// </summary>
     public unsafe float HudCanvasScale
     {
@@ -1092,13 +1098,15 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ConsoleColor
+    /// StructProperty: ConsoleColor<br/>
+    /// Default: (B=253,G=216,R=153,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ConsoleColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 736);
 
     /// <summary>
-    /// IntProperty: ConsoleMessageCount
+    /// IntProperty: ConsoleMessageCount<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int ConsoleMessageCount
     {
@@ -1107,7 +1115,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ConsoleFontSize
+    /// IntProperty: ConsoleFontSize<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ConsoleFontSize
     {
@@ -1125,7 +1134,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxHUDAreaMessageCount
+    /// IntProperty: MaxHUDAreaMessageCount<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxHUDAreaMessageCount
     {
@@ -1189,7 +1199,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ConsoleMessagePosY
+    /// FloatProperty: ConsoleMessagePosY<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float ConsoleMessagePosY
     {
@@ -1270,7 +1281,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DebugDisplay
+    /// ArrayProperty: DebugDisplay<br/>
+    /// Default: (AI)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DebugDisplay
     {

@@ -88,7 +88,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DustGlobalScale
+    /// FloatProperty: DustGlobalScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DustGlobalScale
     {
@@ -97,7 +98,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MinimumMistAmount
+    /// FloatProperty: MinimumMistAmount<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MinimumMistAmount
     {
@@ -106,7 +108,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MistThreshold
+    /// FloatProperty: MistThreshold<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MistThreshold
     {
@@ -115,7 +118,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DustPileThreshold
+    /// FloatProperty: DustPileThreshold<br/>
+    /// Default: 1.1
     /// </summary>
     public unsafe float DustPileThreshold
     {
@@ -124,7 +128,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CausticsAmount
+    /// FloatProperty: CausticsAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CausticsAmount
     {
@@ -133,7 +138,8 @@ public partial class RDustMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DustScaleMod
+    /// FloatProperty: DustScaleMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DustScaleMod
     {

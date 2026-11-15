@@ -905,7 +905,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// IntProperty: RequiredCapeDataVersionNumber
+    /// IntProperty: RequiredCapeDataVersionNumber<br/>
+    /// Default: 21
     /// </summary>
     public unsafe int RequiredCapeDataVersionNumber
     {
@@ -932,7 +933,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// ObjectProperty: CapeStateController
+    /// ObjectProperty: CapeStateController<br/>
+    /// Default: BmGame.Default__RCapeComponent.RCapeStateController1
     /// </summary>
     public unsafe BmSDK.BmGame.RCapeStateController CapeStateController
     {
@@ -986,7 +988,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// ObjectProperty: PhysDampedMaterialOverride
+    /// ObjectProperty: PhysDampedMaterialOverride<br/>
+    /// Default: PhysicalMaterials.Code.Cape_Damped
     /// </summary>
     public unsafe BmSDK.Engine.PhysicalMaterial PhysDampedMaterialOverride
     {
@@ -995,7 +998,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// ObjectProperty: CapeCollisionShapePhysicalMaterial
+    /// ObjectProperty: CapeCollisionShapePhysicalMaterial<br/>
+    /// Default: PhysicalMaterials.Code.Cape_Collision_Shape
     /// </summary>
     public unsafe BmSDK.Engine.PhysicalMaterial CapeCollisionShapePhysicalMaterial
     {
@@ -1076,7 +1080,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// BoolProperty: IsUserInitEnabled
+    /// BoolProperty: IsUserInitEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsUserInitEnabled
     {
@@ -1193,7 +1198,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// BoolProperty: IsPhysicsPostProcessEnabled
+    /// BoolProperty: IsPhysicsPostProcessEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsPhysicsPostProcessEnabled
     {
@@ -1265,7 +1271,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// BoolProperty: bAsyncTickEnabled
+    /// BoolProperty: bAsyncTickEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAsyncTickEnabled
     {
@@ -1292,7 +1299,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// StructProperty: ForwardToStateData
+    /// StructProperty: ForwardToStateData<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData ForwardToStateData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 796);
@@ -1307,7 +1315,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: StateChangeOverrideScaleHeadDepthBias
+    /// FloatProperty: StateChangeOverrideScaleHeadDepthBias<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StateChangeOverrideScaleHeadDepthBias
     {
@@ -1316,7 +1325,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: StateChangeOverrideScaleDepthBias
+    /// FloatProperty: StateChangeOverrideScaleDepthBias<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StateChangeOverrideScaleDepthBias
     {
@@ -1334,7 +1344,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: ReducedDepthBiasClampValue
+    /// FloatProperty: ReducedDepthBiasClampValue<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float ReducedDepthBiasClampValue
     {
@@ -1352,7 +1363,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// ByteProperty: CollisionShapeRBDominanceGroup
+    /// ByteProperty: CollisionShapeRBDominanceGroup<br/>
+    /// Default: 15
     /// </summary>
     public unsafe byte CollisionShapeRBDominanceGroup
     {
@@ -1379,7 +1391,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: TeleportAutoDetectLinearThreshold
+    /// FloatProperty: TeleportAutoDetectLinearThreshold<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float TeleportAutoDetectLinearThreshold
     {
@@ -1388,7 +1401,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: TeleportAutoDetectAngularThreshold
+    /// FloatProperty: TeleportAutoDetectAngularThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TeleportAutoDetectAngularThreshold
     {
@@ -1397,7 +1411,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
     }
 
     /// <summary>
-    /// FloatProperty: MaterialSpeedVariableOverride
+    /// FloatProperty: MaterialSpeedVariableOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaterialSpeedVariableOverride
     {

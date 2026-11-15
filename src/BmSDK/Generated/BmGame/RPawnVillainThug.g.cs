@@ -417,7 +417,8 @@ public partial class RPawnVillainThug : BmSDK.BmGame.RPawnVillainCombat, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeKnackered
+    /// BoolProperty: bCanBeKnackered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeKnackered
     {
@@ -435,7 +436,8 @@ public partial class RPawnVillainThug : BmSDK.BmGame.RPawnVillainCombat, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DualStrikeRangeTolerance
+    /// FloatProperty: DualStrikeRangeTolerance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DualStrikeRangeTolerance
     {
@@ -444,7 +446,8 @@ public partial class RPawnVillainThug : BmSDK.BmGame.RPawnVillainCombat, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: BatarangOverride
+    /// ComponentProperty: BatarangOverride<br/>
+    /// Default: BmGame.Default__RPawnVillainThug.NewBatarangOverride
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatarangOverride
     {

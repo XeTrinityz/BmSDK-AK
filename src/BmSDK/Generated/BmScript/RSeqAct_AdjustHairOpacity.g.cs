@@ -107,7 +107,8 @@ public partial class RSeqAct_AdjustHairOpacity : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// NameProperty: ParamName
+    /// NameProperty: ParamName<br/>
+    /// Default: Opacity_Multiplier
     /// </summary>
     public unsafe BmSDK.FName ParamName
     {

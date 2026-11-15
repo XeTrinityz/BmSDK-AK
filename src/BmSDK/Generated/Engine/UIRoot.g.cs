@@ -456,7 +456,8 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: InputKeyState
+        /// ByteProperty: InputKeyState<br/>
+        /// Default: IE_Released
         /// </summary>
         public unsafe BmSDK.GameObject.EInputEvent InputKeyState
         {

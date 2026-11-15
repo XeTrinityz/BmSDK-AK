@@ -108,19 +108,22 @@ public partial class ParticleModuleTypeDataBeam : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// StructProperty: Distance
+    /// StructProperty: Distance<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleTypeDataBeam.DistributionDistance)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Distance
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: EndPoint
+    /// StructProperty: EndPoint<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleTypeDataBeam.DistributionEndPoint,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector EndPoint
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 136);
 
     /// <summary>
-    /// IntProperty: TessellationFactor
+    /// IntProperty: TessellationFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TessellationFactor
     {
@@ -129,19 +132,22 @@ public partial class ParticleModuleTypeDataBeam : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// StructProperty: EmitterStrength
+    /// StructProperty: EmitterStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1000,1000,1000,1000),Distribution=Engine.Default__ParticleModuleTypeDataBeam.DistributionEmitterStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat EmitterStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 204);
 
     /// <summary>
-    /// StructProperty: TargetStrength
+    /// StructProperty: TargetStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1000,1000,1000,1000),Distribution=Engine.Default__ParticleModuleTypeDataBeam.DistributionTargetStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat TargetStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: EndPointDirection
+    /// StructProperty: EndPointDirection<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,1,1,0,0,1,0,0),Distribution=Engine.Default__ParticleModuleTypeDataBeam.DistributionEndPointDirection,MinRange=(X=1),MaxRange=(X=1),...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector EndPointDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 276);
@@ -156,7 +162,8 @@ public partial class ParticleModuleTypeDataBeam : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// BoolProperty: RenderGeometry
+    /// BoolProperty: RenderGeometry<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RenderGeometry
     {

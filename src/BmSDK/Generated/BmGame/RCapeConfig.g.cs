@@ -115,7 +115,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinAutoPauseTimeStep
+    /// FloatProperty: MinAutoPauseTimeStep<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MinAutoPauseTimeStep
     {
@@ -133,7 +134,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: DefaultCapeStateName
+    /// NameProperty: DefaultCapeStateName<br/>
+    /// Default: BackwardIdle
     /// </summary>
     public unsafe BmSDK.FName DefaultCapeStateName
     {
@@ -142,7 +144,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CinematicCapeStateName
+    /// NameProperty: CinematicCapeStateName<br/>
+    /// Default: Cinematic
     /// </summary>
     public unsafe BmSDK.FName CinematicCapeStateName
     {
@@ -160,7 +163,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CapeChainWidth
+    /// FloatProperty: CapeChainWidth<br/>
+    /// Default: 7.5
     /// </summary>
     public unsafe float CapeChainWidth
     {
@@ -250,7 +254,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DefaultCapeBoneOverstretchLimit
+    /// FloatProperty: DefaultCapeBoneOverstretchLimit<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float DefaultCapeBoneOverstretchLimit
     {
@@ -259,13 +264,15 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: UnusedCollisionShapeWorldPosition
+    /// StructProperty: UnusedCollisionShapeWorldPosition<br/>
+    /// Default: (Z=-10000)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 UnusedCollisionShapeWorldPosition
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 320);
 
     /// <summary>
-    /// BoolProperty: IsUseManualDamping
+    /// BoolProperty: IsUseManualDamping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsUseManualDamping
     {
@@ -283,7 +290,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsUseVerticalParentRelativeDamping
+    /// BoolProperty: IsUseVerticalParentRelativeDamping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsUseVerticalParentRelativeDamping
     {
@@ -292,7 +300,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalDamping
+    /// FloatProperty: HorizontalDamping<br/>
+    /// Default: 0.975
     /// </summary>
     public unsafe float HorizontalDamping
     {
@@ -301,7 +310,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VerticalDamping
+    /// FloatProperty: VerticalDamping<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float VerticalDamping
     {
@@ -310,7 +320,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterChainSpringStrength
+    /// FloatProperty: InterChainSpringStrength<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float InterChainSpringStrength
     {
@@ -319,7 +330,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterChainSpringStrengthIncreaseRate
+    /// FloatProperty: InterChainSpringStrengthIncreaseRate<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float InterChainSpringStrengthIncreaseRate
     {
@@ -328,7 +340,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinHandleDeepCapeIntersectionVelocity
+    /// FloatProperty: MinHandleDeepCapeIntersectionVelocity<br/>
+    /// Default: -0.1
     /// </summary>
     public unsafe float MinHandleDeepCapeIntersectionVelocity
     {
@@ -337,7 +350,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HandleDeepCapeIntersectionStopDelay
+    /// FloatProperty: HandleDeepCapeIntersectionStopDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float HandleDeepCapeIntersectionStopDelay
     {
@@ -346,7 +360,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SupportConstraintLengthRatio
+    /// FloatProperty: SupportConstraintLengthRatio<br/>
+    /// Default: 1.06
     /// </summary>
     public unsafe float SupportConstraintLengthRatio
     {
@@ -355,19 +370,22 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BoneLocalNormal
+    /// StructProperty: BoneLocalNormal<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoneLocalNormal
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 364);
 
     /// <summary>
-    /// StructProperty: BoneLocalDirection
+    /// StructProperty: BoneLocalDirection<br/>
+    /// Default: (Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoneLocalDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 376);
 
     /// <summary>
-    /// FloatProperty: MaxForwardWindComponent
+    /// FloatProperty: MaxForwardWindComponent<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MaxForwardWindComponent
     {
@@ -376,7 +394,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumAffectedBonesPerChain
+    /// IntProperty: NumAffectedBonesPerChain<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int NumAffectedBonesPerChain
     {
@@ -385,7 +404,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WindForceDropoffProportion
+    /// FloatProperty: WindForceDropoffProportion<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float WindForceDropoffProportion
     {
@@ -394,7 +414,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WindForceDropoffPower
+    /// IntProperty: WindForceDropoffPower<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int WindForceDropoffPower
     {
@@ -403,7 +424,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WindFlutterForceMultiplier
+    /// FloatProperty: WindFlutterForceMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float WindFlutterForceMultiplier
     {
@@ -412,7 +434,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WindForceMultiplier
+    /// FloatProperty: WindForceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WindForceMultiplier
     {
@@ -430,7 +453,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CapeAnimNodeName
+    /// NameProperty: CapeAnimNodeName<br/>
+    /// Default: CapeNode
     /// </summary>
     public unsafe BmSDK.FName CapeAnimNodeName
     {
@@ -448,7 +472,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: DefaultAnimName
+    /// NameProperty: DefaultAnimName<br/>
+    /// Default: Cape_Down
     /// </summary>
     public unsafe BmSDK.FName DefaultAnimName
     {
@@ -502,7 +527,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BackwardsDepthBias
+    /// FloatProperty: BackwardsDepthBias<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float BackwardsDepthBias
     {
@@ -511,7 +537,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ForwardsDepthBias
+    /// FloatProperty: ForwardsDepthBias<br/>
+    /// Default: -5
     /// </summary>
     public unsafe float ForwardsDepthBias
     {
@@ -520,7 +547,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterpStartAngle
+    /// FloatProperty: InterpStartAngle<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float InterpStartAngle
     {
@@ -529,7 +557,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterpEndAngle
+    /// FloatProperty: InterpEndAngle<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float InterpEndAngle
     {
@@ -547,7 +576,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CapeStateMaterialConstantMaxChangePerSec
+    /// FloatProperty: CapeStateMaterialConstantMaxChangePerSec<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CapeStateMaterialConstantMaxChangePerSec
     {
@@ -556,7 +586,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CapeRainToggleMaxChangePerSec
+    /// FloatProperty: CapeRainToggleMaxChangePerSec<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float CapeRainToggleMaxChangePerSec
     {
@@ -565,7 +596,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CapeRainToggleMaterialConstantName
+    /// NameProperty: CapeRainToggleMaterialConstantName<br/>
+    /// Default: Cape_Rain_Intensity
     /// </summary>
     public unsafe BmSDK.FName CapeRainToggleMaterialConstantName
     {
@@ -574,7 +606,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CapeSpeedToggleMaterialConstantName
+    /// NameProperty: CapeSpeedToggleMaterialConstantName<br/>
+    /// Default: Cape_Speed
     /// </summary>
     public unsafe BmSDK.FName CapeSpeedToggleMaterialConstantName
     {
@@ -583,7 +616,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinDepthBiasTestDistanceFromCameraPlane
+    /// FloatProperty: MinDepthBiasTestDistanceFromCameraPlane<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MinDepthBiasTestDistanceFromCameraPlane
     {
@@ -592,7 +626,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CinematicMinDepthBiasTestDistanceFromCameraPlane
+    /// FloatProperty: CinematicMinDepthBiasTestDistanceFromCameraPlane<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float CinematicMinDepthBiasTestDistanceFromCameraPlane
     {
@@ -601,7 +636,8 @@ public partial class RCapeConfig : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HeadDepthBiasMultiplier
+    /// FloatProperty: HeadDepthBiasMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float HeadDepthBiasMultiplier
     {

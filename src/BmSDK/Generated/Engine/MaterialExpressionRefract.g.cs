@@ -97,7 +97,8 @@ public partial class MaterialExpressionRefract : BmSDK.Engine.MaterialExpression
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 276);
 
     /// <summary>
-    /// FloatProperty: DefaultIOR
+    /// FloatProperty: DefaultIOR<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float DefaultIOR
     {

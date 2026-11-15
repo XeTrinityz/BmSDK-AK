@@ -174,7 +174,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RRiddlerResetLight.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {
@@ -210,7 +211,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactFX
+    /// ObjectProperty: ImpactFX<br/>
+    /// Default: EFX_RiddlerRooms.Particles.RiddlerSwitchImpact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ImpactFX
     {
@@ -219,7 +221,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: OverloadFX
+    /// ObjectProperty: OverloadFX<br/>
+    /// Default: EFX_RiddlerRooms.Particles.RiddlerSwitchDie
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem OverloadFX
     {
@@ -228,7 +231,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactSoundFX
+    /// ObjectProperty: ImpactSoundFX<br/>
+    /// Default: Ww_OBJ_RiddlerSwitch.Play_Riddler_Switch
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ImpactSoundFX
     {
@@ -237,7 +241,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: BackMesh
+    /// ComponentProperty: BackMesh<br/>
+    /// Default: BmScript.Default__RRiddlerResetLight.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BackMesh
     {
@@ -246,7 +251,8 @@ public partial class RRiddlerResetLight : BmSDK.BmGame.RInteractableItem, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: GlowDot
+    /// ComponentProperty: GlowDot<br/>
+    /// Default: BmScript.Default__RRiddlerResetLight.Glow1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GlowDot
     {

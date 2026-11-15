@@ -179,7 +179,8 @@ public partial class DynamicBlockingVolume : BmSDK.Engine.BlockingVolume, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

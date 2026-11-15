@@ -93,7 +93,8 @@ public partial class RSeqAct_SetCurrentGadget : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// ClassProperty: GadgetType
+    /// ClassProperty: GadgetType<br/>
+    /// Default: BmGame.RBatarang
     /// </summary>
     public unsafe BmSDK.Class GadgetType
     {
@@ -111,7 +112,8 @@ public partial class RSeqAct_SetCurrentGadget : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// BoolProperty: ShowChangeOnHud
+    /// BoolProperty: ShowChangeOnHud<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ShowChangeOnHud
     {

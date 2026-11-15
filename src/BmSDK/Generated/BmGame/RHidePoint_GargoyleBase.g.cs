@@ -197,7 +197,8 @@ public partial class RHidePoint_GargoyleBase : BmSDK.BmGame.RHidePoint_Mesh, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfJokerHallucination
+    /// FloatProperty: ChanceOfJokerHallucination<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ChanceOfJokerHallucination
     {

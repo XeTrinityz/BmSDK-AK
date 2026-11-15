@@ -524,7 +524,8 @@ public partial class RCombatMove_VillainCloseAttack : BmSDK.BmGame.RCombatMove_V
     }
 
     /// <summary>
-    /// FloatProperty: OverrideStrikeDurationScale
+    /// FloatProperty: OverrideStrikeDurationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OverrideStrikeDurationScale
     {
@@ -662,7 +663,8 @@ public partial class RCombatMove_VillainCloseAttack : BmSDK.BmGame.RCombatMove_V
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float AttackRange
     {

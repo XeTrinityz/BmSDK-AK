@@ -127,7 +127,8 @@ public partial class RBatmobileRightingVolume : BmSDK.Engine.Volume, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: Torque
+    /// FloatProperty: Torque<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float Torque
     {
@@ -136,7 +137,8 @@ public partial class RBatmobileRightingVolume : BmSDK.Engine.Volume, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeed
+    /// FloatProperty: MinSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MinSpeed
     {

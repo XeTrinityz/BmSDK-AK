@@ -940,7 +940,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxAimX
+    /// FloatProperty: MaxAimX<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MaxAimX
     {
@@ -949,7 +950,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: MaxAimY
+    /// FloatProperty: MaxAimY<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MaxAimY
     {
@@ -958,7 +960,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: RelativeAimingCurvePower
+    /// FloatProperty: RelativeAimingCurvePower<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float RelativeAimingCurvePower
     {
@@ -1111,7 +1114,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: CrosshairOrigin
+    /// StructProperty: CrosshairOrigin<br/>
+    /// Default: (X=0.5,Y=0.35)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 CrosshairOrigin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 2292);
@@ -1126,7 +1130,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: LethalRange
+    /// FloatProperty: LethalRange<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float LethalRange
     {
@@ -1171,7 +1176,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: MaterialIndexToUpdateWhenPresent
+    /// IntProperty: MaterialIndexToUpdateWhenPresent<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MaterialIndexToUpdateWhenPresent
     {
@@ -1198,7 +1204,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SoundRadiusOrigin
+    /// FloatProperty: SoundRadiusOrigin<br/>
+    /// Default: 1600
     /// </summary>
     public unsafe float SoundRadiusOrigin
     {
@@ -1207,7 +1214,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SoundRadiusImpact
+    /// FloatProperty: SoundRadiusImpact<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float SoundRadiusImpact
     {
@@ -1216,7 +1224,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: SoundRadiusTrail
+    /// FloatProperty: SoundRadiusTrail<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float SoundRadiusTrail
     {

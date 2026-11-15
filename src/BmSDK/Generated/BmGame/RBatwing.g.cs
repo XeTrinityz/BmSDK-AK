@@ -249,7 +249,8 @@ public partial class RBatwing : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RBatwing.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -285,7 +286,8 @@ public partial class RBatwing : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: FloorDustComponent
+    /// ComponentProperty: FloorDustComponent<br/>
+    /// Default: BmGame.Default__RBatwing.FloorDustComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FloorDustComponent
     {
@@ -294,7 +296,8 @@ public partial class RBatwing : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: PropellerComponent
+    /// ComponentProperty: PropellerComponent<br/>
+    /// Default: BmGame.Default__RBatwing.PropellerComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent PropellerComponent
     {
@@ -303,7 +306,8 @@ public partial class RBatwing : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ExhaustComponent
+    /// ComponentProperty: ExhaustComponent<br/>
+    /// Default: BmGame.Default__RBatwing.ExhaustComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ExhaustComponent
     {
@@ -312,7 +316,8 @@ public partial class RBatwing : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: BoosterComponent
+    /// ComponentProperty: BoosterComponent<br/>
+    /// Default: BmGame.Default__RBatwing.BoosterComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BoosterComponent
     {

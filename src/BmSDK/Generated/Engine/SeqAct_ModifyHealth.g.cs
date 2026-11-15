@@ -101,7 +101,8 @@ public partial class SeqAct_ModifyHealth : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: Momentum
+    /// FloatProperty: Momentum<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float Momentum
     {

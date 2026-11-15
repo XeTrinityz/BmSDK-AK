@@ -223,7 +223,8 @@ public partial class RB_BodySetup : BmSDK.Engine.KMeshProps, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bConsiderForBounds
+    /// BoolProperty: bConsiderForBounds<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bConsiderForBounds
     {
@@ -286,7 +287,8 @@ public partial class RB_BodySetup : BmSDK.Engine.KMeshProps, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MassScale
+    /// FloatProperty: MassScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MassScale
     {

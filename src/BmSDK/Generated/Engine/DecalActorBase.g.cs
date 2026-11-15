@@ -83,7 +83,8 @@ public partial class DecalActorBase : BmSDK.Engine.Actor, BmSDK.Engine.EditorLin
     }
 
     /// <summary>
-    /// ComponentProperty: Decal
+    /// ComponentProperty: Decal<br/>
+    /// Default: Engine.Default__DecalActorBase.NewDecalComponent
     /// </summary>
     public unsafe BmSDK.Engine.DecalComponent Decal
     {

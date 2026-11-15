@@ -93,7 +93,8 @@ public partial class RHelicopterGunshipSelfLight : BmSDK.Engine.Actor, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLightComp
+    /// ComponentProperty: SpotLightComp<br/>
+    /// Default: BmScript.Default__RHelicopterGunshipSelfLight.SpotLight
     /// </summary>
     public unsafe BmSDK.Engine.SpotLightComponent SpotLightComp
     {

@@ -106,7 +106,8 @@ public partial class CopyHeightsToRGBEffect : BmSDK.Engine.PostProcessEffect, Bm
     }
 
     /// <summary>
-    /// StructProperty: ShadowGroundPlane
+    /// StructProperty: ShadowGroundPlane<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 ShadowGroundPlane
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 128);

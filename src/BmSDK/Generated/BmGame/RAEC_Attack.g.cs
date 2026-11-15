@@ -873,7 +873,8 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LastAttackChatterBarkTime
+    /// FloatProperty: LastAttackChatterBarkTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastAttackChatterBarkTime
     {
@@ -882,7 +883,8 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AttackChatterLockTime
+    /// FloatProperty: AttackChatterLockTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AttackChatterLockTime
     {
@@ -897,7 +899,8 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 824);
 
     /// <summary>
-    /// FloatProperty: LostBMIncendiary_Interval
+    /// FloatProperty: LostBMIncendiary_Interval<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float LostBMIncendiary_Interval
     {
@@ -906,7 +909,8 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LostBMIndendiary_LastTriggerTime
+    /// FloatProperty: LostBMIndendiary_LastTriggerTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LostBMIndendiary_LastTriggerTime
     {
@@ -915,7 +919,8 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LastAttackFinishedTime
+    /// FloatProperty: LastAttackFinishedTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastAttackFinishedTime
     {

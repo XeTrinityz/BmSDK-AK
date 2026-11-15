@@ -659,7 +659,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bMayCausePain
+    /// BoolProperty: bMayCausePain<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMayCausePain
     {
@@ -695,7 +696,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bMustTouchToReach
+    /// BoolProperty: bMustTouchToReach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMustTouchToReach
     {
@@ -713,7 +715,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBuildLongPaths
+    /// BoolProperty: bBuildLongPaths<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBuildLongPaths
     {
@@ -890,7 +893,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__NavigationPoint.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -965,7 +969,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 920);
 
     /// <summary>
-    /// IntProperty: NetworkID
+    /// IntProperty: NetworkID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int NetworkID
     {

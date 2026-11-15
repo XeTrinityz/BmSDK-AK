@@ -246,7 +246,8 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: ChanceOfAppearanceByType
+    /// ArrayProperty: ChanceOfAppearanceByType<br/>
+    /// Default: (10,10)
     /// </summary>
     public unsafe BmSDK.TArray<float> ChanceOfAppearanceByType
     {
@@ -255,7 +256,8 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: AppearanceHistory
+    /// ArrayProperty: AppearanceHistory<br/>
+    /// Default: ((MinTimeBetweenAppearances=10),(MinTimeBetweenAppearances=10))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RManBatAppearanceController.FManbatAppearanceHistory> AppearanceHistory
     {
@@ -264,7 +266,8 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: MaxHistory
+    /// IntProperty: MaxHistory<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxHistory
     {

@@ -415,7 +415,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangFrontMove
+    /// ObjectProperty: CatchBatarangFrontMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Front
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangFrontMove
     {
@@ -424,7 +425,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangLeftMove
+    /// ObjectProperty: CatchBatarangLeftMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Left
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangLeftMove
     {
@@ -433,7 +435,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangRightMove
+    /// ObjectProperty: CatchBatarangRightMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Right
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangRightMove
     {
@@ -442,7 +445,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangBackMove
+    /// ObjectProperty: CatchBatarangBackMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Back
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangBackMove
     {
@@ -451,7 +455,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangGargoyleMove
+    /// ObjectProperty: CatchBatarangGargoyleMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Gargoyle
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangGargoyleMove
     {
@@ -460,7 +465,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangRailingMove
+    /// ObjectProperty: CatchBatarangRailingMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Railing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangRailingMove
     {
@@ -469,7 +475,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangWireMove
+    /// ObjectProperty: CatchBatarangWireMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Wire
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangWireMove
     {
@@ -478,7 +485,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: CatchBatarangCoverMove
+    /// ObjectProperty: CatchBatarangCoverMove<br/>
+    /// Default: Batman_Gadget_Moves.Batarang.Catch_Controllable_Batarang_Cover
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig CatchBatarangCoverMove
     {
@@ -496,7 +504,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: ElectrifiedCatchAudio
+    /// ObjectProperty: ElectrifiedCatchAudio<br/>
+    /// Default: Ww_CHR_BatmanBatarang.Play_Batarang_Remote_Sparks
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ElectrifiedCatchAudio
     {
@@ -505,7 +514,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: RemoteControlBatarangMove
+    /// ObjectProperty: RemoteControlBatarangMove<br/>
+    /// Default: Batman_Gadget_Moves.Batmobile_Remote.RemoteControlBatmobile
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RemoteControlBatarangMove
     {
@@ -532,7 +542,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ClassProperty: RoundTheBackarangProjectileClass
+    /// ClassProperty: RoundTheBackarangProjectileClass<br/>
+    /// Default: BmScript.RBatarangProjectile_RoundTheBackarang
     /// </summary>
     public unsafe BmSDK.Class RoundTheBackarangProjectileClass
     {
@@ -541,7 +552,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: ElectrifiedCatchParticles
+    /// ComponentProperty: ElectrifiedCatchParticles<br/>
+    /// Default: BmScript.Default__RBatarang_Controllable.ElectrifiedCatch
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ElectrifiedCatchParticles
     {
@@ -586,7 +598,8 @@ public partial class RBatarang_Controllable : BmSDK.BmGame.RBatarang, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RoundTheBackarangChargeTime
+    /// FloatProperty: RoundTheBackarangChargeTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float RoundTheBackarangChargeTime
     {

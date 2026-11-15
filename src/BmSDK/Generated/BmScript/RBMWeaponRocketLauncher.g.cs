@@ -303,7 +303,8 @@ public partial class RBMWeaponRocketLauncher : BmSDK.BmGame.RBMWeaponRocketLaunc
     }
 
     /// <summary>
-    /// ComponentProperty: LaserSight
+    /// ComponentProperty: LaserSight<br/>
+    /// Default: BmScript.Default__RBMWeaponRocketLauncher.Sight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LaserSight
     {
@@ -312,7 +313,8 @@ public partial class RBMWeaponRocketLauncher : BmSDK.BmGame.RBMWeaponRocketLaunc
     }
 
     /// <summary>
-    /// ObjectProperty: LaserAudible
+    /// ObjectProperty: LaserAudible<br/>
+    /// Default: BmScript.Default__RBMWeaponRocketLauncher.LaserAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible LaserAudible
     {

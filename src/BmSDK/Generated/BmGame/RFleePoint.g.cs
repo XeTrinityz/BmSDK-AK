@@ -278,7 +278,8 @@ public partial class RFleePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -296,7 +297,8 @@ public partial class RFleePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowStasis
+    /// BoolProperty: bAllowStasis<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowStasis
     {

@@ -79,7 +79,8 @@ public partial class ClipPadEntry : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: Title
+    /// StrProperty: Title<br/>
+    /// Default: "Untitled"
     /// </summary>
     public unsafe BmSDK.FString Title
     {

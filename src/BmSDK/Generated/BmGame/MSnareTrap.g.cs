@@ -305,7 +305,8 @@ public partial class MSnareTrap : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: MaxDeployedTraps
+    /// IntProperty: MaxDeployedTraps<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxDeployedTraps
     {
@@ -341,7 +342,8 @@ public partial class MSnareTrap : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ThugUnArmoredTrappedTime
+    /// FloatProperty: ThugUnArmoredTrappedTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ThugUnArmoredTrappedTime
     {
@@ -350,7 +352,8 @@ public partial class MSnareTrap : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ThugArmoredTrappedTime
+    /// FloatProperty: ThugArmoredTrappedTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float ThugArmoredTrappedTime
     {

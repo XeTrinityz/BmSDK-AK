@@ -220,7 +220,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: UpdateX
+    /// BoolProperty: UpdateX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateX
     {
@@ -229,7 +230,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: UpdateY
+    /// BoolProperty: UpdateY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateY
     {
@@ -238,7 +240,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: UpdateZ
+    /// BoolProperty: UpdateZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateZ
     {
@@ -247,7 +250,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: UseFastBoundingBox
+    /// BoolProperty: UseFastBoundingBox<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseFastBoundingBox
     {

@@ -429,7 +429,8 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// FloatProperty: fSlowdownAmountToSelectNextVictim
+    /// FloatProperty: fSlowdownAmountToSelectNextVictim<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float fSlowdownAmountToSelectNextVictim
     {
@@ -438,7 +439,8 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// FloatProperty: fRealTimeWaitForSlowdownToEnd
+    /// FloatProperty: fRealTimeWaitForSlowdownToEnd<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float fRealTimeWaitForSlowdownToEnd
     {
@@ -501,7 +503,8 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// BoolProperty: bCountThisMoveTowardsFearTakedownCount
+    /// BoolProperty: bCountThisMoveTowardsFearTakedownCount<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCountThisMoveTowardsFearTakedownCount
     {
@@ -528,7 +531,8 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// StructProperty: FinalHitCameraShake
+    /// StructProperty: FinalHitCameraShake<br/>
+    /// Default: (TimeDuration=10,LocAmplitude=(X=10,Y=10),LocFrequency=(X=0.80775,Y=0.75,Z=1.03089),RotAmplitude=(X=50,Y=50,Z=25),RotFrequency=(X=100.99601,Y=100.12993,Z=100),FOVMultiplier=1,FOVFrequency=5,AdvancedOp...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct FinalHitCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1688);

@@ -194,7 +194,8 @@ public partial class RVehicleBehaviour_DriveToGoalPoint : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: DriveAtSpeed
+    /// FloatProperty: DriveAtSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DriveAtSpeed
     {
@@ -320,7 +321,8 @@ public partial class RVehicleBehaviour_DriveToGoalPoint : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: AwareOfBatmobileDuration
+    /// FloatProperty: AwareOfBatmobileDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float AwareOfBatmobileDuration
     {

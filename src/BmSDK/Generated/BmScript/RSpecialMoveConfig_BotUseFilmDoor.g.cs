@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_BotUseFilmDoor : BmSDK.BmGame.RSpecialMo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: RobinElvisAnimSet
+    /// ObjectProperty: RobinElvisAnimSet<br/>
+    /// Default: Anim_Batman_Carry_Jokers.Code.BM_Carring_JokerElvis
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RobinElvisAnimSet
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_BotUseFilmDoor : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// ObjectProperty: RobinCopAnimSet
+    /// ObjectProperty: RobinCopAnimSet<br/>
+    /// Default: Anim_Batman_Carry_Jokers.Code.BM_Carring_JokerElvis
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RobinCopAnimSet
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_BotUseFilmDoor : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// ObjectProperty: RobinWomanAnimSet
+    /// ObjectProperty: RobinWomanAnimSet<br/>
+    /// Default: Anim_Batman_Carry_Jokers.Code.BM_Carring_JokerTeacher
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RobinWomanAnimSet
     {

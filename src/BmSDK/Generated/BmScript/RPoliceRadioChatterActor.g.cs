@@ -240,7 +240,8 @@ public partial class RPoliceRadioChatterActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: ChatterEvent
+    /// ObjectProperty: ChatterEvent<br/>
+    /// Default: Ww_PSO_GCPD.Play_GCPD_Cop_Walkie_Talkie
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ChatterEvent
     {
@@ -258,7 +259,8 @@ public partial class RPoliceRadioChatterActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenChatter
+    /// FloatProperty: MinTimeBetweenChatter<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MinTimeBetweenChatter
     {
@@ -267,7 +269,8 @@ public partial class RPoliceRadioChatterActor : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenChatter
+    /// FloatProperty: MaxTimeBetweenChatter<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MaxTimeBetweenChatter
     {

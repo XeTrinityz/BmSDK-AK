@@ -509,7 +509,8 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     }
 
     /// <summary>
-    /// ComponentProperty: EyeFxLeftComp
+    /// ComponentProperty: EyeFxLeftComp<br/>
+    /// Default: BmScript.Default__RPawnVillainCombatExpert.NewEyeFxLeftComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent EyeFxLeftComp
     {
@@ -518,7 +519,8 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     }
 
     /// <summary>
-    /// ComponentProperty: EyeFxRightComp
+    /// ComponentProperty: EyeFxRightComp<br/>
+    /// Default: BmScript.Default__RPawnVillainCombatExpert.NewEyeFxRightComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent EyeFxRightComp
     {
@@ -527,7 +529,8 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     }
 
     /// <summary>
-    /// ComponentProperty: BladeFxComp
+    /// ComponentProperty: BladeFxComp<br/>
+    /// Default: BmScript.Default__RPawnVillainCombatExpert.NewBladeFxComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BladeFxComp
     {

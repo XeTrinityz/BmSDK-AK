@@ -515,7 +515,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// ComponentProperty: LadderMesh
+    /// ComponentProperty: LadderMesh<br/>
+    /// Default: BmScript.Default__RLevelTransitionLadderAndHatchBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent LadderMesh
     {
@@ -524,7 +525,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// ComponentProperty: GrateMesh
+    /// ComponentProperty: GrateMesh<br/>
+    /// Default: BmScript.Default__RLevelTransitionLadderAndHatchBase.GrateMesh2
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GrateMesh
     {
@@ -578,7 +580,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// BoolProperty: bCanUse
+    /// BoolProperty: bCanUse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUse
     {
@@ -596,7 +599,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanClimbRunMove
+    /// ObjectProperty: BatmanClimbRunMove<br/>
+    /// Default: Batman_Environment_Moves.ManHole.Climb_Ladder_Through_Hatch
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanClimbRunMove
     {
@@ -605,7 +609,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanClimbStandMove
+    /// ObjectProperty: BatmanClimbStandMove<br/>
+    /// Default: Batman_Environment_Moves.ManHole.Climb_Ladder_Through_Hatch_From_Stand
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanClimbStandMove
     {
@@ -614,7 +619,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanGrateMove
+    /// ObjectProperty: BatmanGrateMove<br/>
+    /// Default: Batman_Environment_Moves.ManHole.Climb_Down_Transition_Hatch
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanGrateMove
     {
@@ -680,7 +686,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 864);
 
     /// <summary>
-    /// FloatProperty: LadderHeight
+    /// FloatProperty: LadderHeight<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float LadderHeight
     {
@@ -689,7 +696,8 @@ public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTra
     }
 
     /// <summary>
-    /// FloatProperty: CloseRange
+    /// FloatProperty: CloseRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CloseRange
     {

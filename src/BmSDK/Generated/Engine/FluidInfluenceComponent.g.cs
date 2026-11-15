@@ -79,7 +79,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -88,7 +89,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: RaindropFillEntireFluid
+    /// BoolProperty: RaindropFillEntireFluid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RaindropFillEntireFluid
     {
@@ -124,7 +126,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// ByteProperty: InfluenceType
+    /// ByteProperty: InfluenceType<br/>
+    /// Default: Fluid_Wave
     /// </summary>
     public unsafe BmSDK.Engine.FluidInfluenceComponent.EInfluenceType InfluenceType
     {
@@ -133,7 +136,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistance
+    /// FloatProperty: MaxDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxDistance
     {
@@ -142,7 +146,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: WaveStrength
+    /// FloatProperty: WaveStrength<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float WaveStrength
     {
@@ -151,7 +156,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: WaveFrequency
+    /// FloatProperty: WaveFrequency<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WaveFrequency
     {
@@ -169,7 +175,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: WaveRadius
+    /// FloatProperty: WaveRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float WaveRadius
     {
@@ -178,7 +185,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: RaindropAreaRadius
+    /// FloatProperty: RaindropAreaRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float RaindropAreaRadius
     {
@@ -187,7 +195,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: RaindropRadius
+    /// FloatProperty: RaindropRadius<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RaindropRadius
     {
@@ -196,7 +205,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: RaindropStrength
+    /// FloatProperty: RaindropStrength<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RaindropStrength
     {
@@ -205,7 +215,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: RaindropRate
+    /// FloatProperty: RaindropRate<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RaindropRate
     {
@@ -214,7 +225,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FlowSpeed
+    /// FloatProperty: FlowSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float FlowSpeed
     {
@@ -223,7 +235,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// IntProperty: FlowNumRipples
+    /// IntProperty: FlowNumRipples<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int FlowNumRipples
     {
@@ -232,7 +245,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FlowSideMotionRadius
+    /// FloatProperty: FlowSideMotionRadius<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FlowSideMotionRadius
     {
@@ -241,7 +255,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FlowWaveRadius
+    /// FloatProperty: FlowWaveRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float FlowWaveRadius
     {
@@ -250,7 +265,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FlowStrength
+    /// FloatProperty: FlowStrength<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FlowStrength
     {
@@ -259,7 +275,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: FlowFrequency
+    /// FloatProperty: FlowFrequency<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float FlowFrequency
     {
@@ -268,7 +285,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: SphereOuterRadius
+    /// FloatProperty: SphereOuterRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float SphereOuterRadius
     {
@@ -277,7 +295,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: SphereInnerRadius
+    /// FloatProperty: SphereInnerRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float SphereInnerRadius
     {
@@ -286,7 +305,8 @@ public partial class FluidInfluenceComponent : BmSDK.Engine.PrimitiveComponent, 
     }
 
     /// <summary>
-    /// FloatProperty: SphereStrength
+    /// FloatProperty: SphereStrength<br/>
+    /// Default: -40
     /// </summary>
     public unsafe float SphereStrength
     {

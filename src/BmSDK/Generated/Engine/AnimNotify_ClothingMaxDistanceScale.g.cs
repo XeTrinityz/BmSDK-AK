@@ -79,7 +79,8 @@ public partial class AnimNotify_ClothingMaxDistanceScale : BmSDK.Engine.AnimNoti
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StartScale
+    /// FloatProperty: StartScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StartScale
     {
@@ -88,7 +89,8 @@ public partial class AnimNotify_ClothingMaxDistanceScale : BmSDK.Engine.AnimNoti
     }
 
     /// <summary>
-    /// FloatProperty: EndScale
+    /// FloatProperty: EndScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EndScale
     {

@@ -450,7 +450,8 @@ public partial class RSpecialMoveInstance_WhipRappel_Catwoman : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// BoolProperty: bPendulumSwingHasStopped
+    /// BoolProperty: bPendulumSwingHasStopped<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPendulumSwingHasStopped
     {
@@ -486,7 +487,8 @@ public partial class RSpecialMoveInstance_WhipRappel_Catwoman : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// BoolProperty: bPlayFastInAnimationToStart
+    /// BoolProperty: bPlayFastInAnimationToStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayFastInAnimationToStart
     {
@@ -513,7 +515,8 @@ public partial class RSpecialMoveInstance_WhipRappel_Catwoman : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// BoolProperty: bMovingTowardsCentre
+    /// BoolProperty: bMovingTowardsCentre<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMovingTowardsCentre
     {
@@ -564,7 +567,8 @@ public partial class RSpecialMoveInstance_WhipRappel_Catwoman : BmSDK.BmGame.RSp
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 936);
 
     /// <summary>
-    /// FloatProperty: fLastDangleAngle
+    /// FloatProperty: fLastDangleAngle<br/>
+    /// Default: -1.5707964
     /// </summary>
     public unsafe float fLastDangleAngle
     {

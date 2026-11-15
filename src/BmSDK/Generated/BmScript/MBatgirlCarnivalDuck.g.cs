@@ -239,7 +239,8 @@ public partial class MBatgirlCarnivalDuck : BmSDK.BmGame.RInteractableItem, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: BaloonPopVFX
+    /// ObjectProperty: BaloonPopVFX<br/>
+    /// Default: EFX_DLC45_Batgirl_Hubs.Particles.EFX_DLC_MiniGame_Hit
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem BaloonPopVFX
     {
@@ -248,7 +249,8 @@ public partial class MBatgirlCarnivalDuck : BmSDK.BmGame.RInteractableItem, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: FishMesh
+    /// ComponentProperty: FishMesh<br/>
+    /// Default: BmScript.Default__MBatgirlCarnivalDuck.Mesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent FishMesh
     {

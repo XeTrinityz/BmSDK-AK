@@ -97,7 +97,8 @@ public partial class SeqVar_ObjectVolume : BmSDK.Engine.SeqVar_Object, BmSDK.IGa
     }
 
     /// <summary>
-    /// ArrayProperty: ExcludeClassList
+    /// ArrayProperty: ExcludeClassList<br/>
+    /// Default: (Engine.Trigger,Engine.Volume)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Class> ExcludeClassList
     {
@@ -106,7 +107,8 @@ public partial class SeqVar_ObjectVolume : BmSDK.Engine.SeqVar_Object, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCollidingOnly
+    /// BoolProperty: bCollidingOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCollidingOnly
     {

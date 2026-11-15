@@ -151,7 +151,8 @@ public partial class RVehicleBehaviour_Chase : BmSDK.BmGame.RVehicleBehaviour, B
     }
 
     /// <summary>
-    /// FloatProperty: FullThrottleRange
+    /// FloatProperty: FullThrottleRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FullThrottleRange
     {
@@ -160,7 +161,8 @@ public partial class RVehicleBehaviour_Chase : BmSDK.BmGame.RVehicleBehaviour, B
     }
 
     /// <summary>
-    /// FloatProperty: ChaseMinRange
+    /// FloatProperty: ChaseMinRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float ChaseMinRange
     {

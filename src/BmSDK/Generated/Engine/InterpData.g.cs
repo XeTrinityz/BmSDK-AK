@@ -122,7 +122,8 @@ public partial class InterpData : BmSDK.Engine.SequenceVariable, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: InterpLength
+    /// FloatProperty: InterpLength<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float InterpLength
     {
@@ -203,7 +204,8 @@ public partial class InterpData : BmSDK.Engine.SequenceVariable, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: EdSectionEnd
+    /// FloatProperty: EdSectionEnd<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EdSectionEnd
     {
@@ -212,7 +214,8 @@ public partial class InterpData : BmSDK.Engine.SequenceVariable, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bShouldBakeAndPrune
+    /// BoolProperty: bShouldBakeAndPrune<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldBakeAndPrune
     {

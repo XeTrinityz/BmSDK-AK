@@ -297,7 +297,8 @@ public partial class RNightwingSticks : BmSDK.BmGame.RSticksGadgetBase, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2072);
 
     /// <summary>
-    /// FloatProperty: LaunchGravity
+    /// FloatProperty: LaunchGravity<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float LaunchGravity
     {
@@ -306,7 +307,8 @@ public partial class RNightwingSticks : BmSDK.BmGame.RSticksGadgetBase, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LaunchSpeed
+    /// FloatProperty: LaunchSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float LaunchSpeed
     {

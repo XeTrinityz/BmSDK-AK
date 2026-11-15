@@ -158,7 +158,8 @@ public partial class RSeqAct_RiddlerCombatSwitch : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: SwitchToCatwomanLongRangeBatmanMove
+    /// ObjectProperty: SwitchToCatwomanLongRangeBatmanMove<br/>
+    /// Default: Catwoman_DualPlay_Moves.CombatSwitch.Switch_To_Catwoman_LR_Batman
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SwitchToCatwomanLongRangeBatmanMove
     {
@@ -167,7 +168,8 @@ public partial class RSeqAct_RiddlerCombatSwitch : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: SwitchToCatwomanLongRangeCatwomanMove
+    /// ObjectProperty: SwitchToCatwomanLongRangeCatwomanMove<br/>
+    /// Default: Catwoman_DualPlay_Moves.CombatSwitch.Switch_To_Catwoman_LR_Catwoman
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SwitchToCatwomanLongRangeCatwomanMove
     {
@@ -176,7 +178,8 @@ public partial class RSeqAct_RiddlerCombatSwitch : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: SwitchToBatmanLongRangeBatmanMove
+    /// ObjectProperty: SwitchToBatmanLongRangeBatmanMove<br/>
+    /// Default: Catwoman_DualPlay_Moves.CombatSwitch.Switch_To_Batman_LR_Batman
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SwitchToBatmanLongRangeBatmanMove
     {
@@ -185,7 +188,8 @@ public partial class RSeqAct_RiddlerCombatSwitch : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ObjectProperty: SwitchToBatmanLongRangeCatwomanMove
+    /// ObjectProperty: SwitchToBatmanLongRangeCatwomanMove<br/>
+    /// Default: Catwoman_DualPlay_Moves.CombatSwitch.Switch_To_Batman_LR_Catwoman
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SwitchToBatmanLongRangeCatwomanMove
     {

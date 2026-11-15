@@ -79,7 +79,8 @@ public partial class RParticleModuleVelocityDrag : BmSDK.Engine.ParticleModuleVe
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: LinearDampingPerSecond
+    /// FloatProperty: LinearDampingPerSecond<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float LinearDampingPerSecond
     {

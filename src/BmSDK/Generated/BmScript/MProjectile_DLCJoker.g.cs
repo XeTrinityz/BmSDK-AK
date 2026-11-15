@@ -181,7 +181,8 @@ public partial class MProjectile_DLCJoker : BmSDK.BmGame.RProjectile_GrenadeBase
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent_Near
+    /// ObjectProperty: ExplodeEvent_Near<br/>
+    /// Default: Ww_VFX_Tank_Explosion.Play_ThugGrenadeExplode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent_Near
     {
@@ -190,7 +191,8 @@ public partial class MProjectile_DLCJoker : BmSDK.BmGame.RProjectile_GrenadeBase
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent_Far
+    /// ObjectProperty: ExplodeEvent_Far<br/>
+    /// Default: Ww_VFX_Tank_Explosion.Play_ThugGrenadeExplode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent_Far
     {
@@ -199,7 +201,8 @@ public partial class MProjectile_DLCJoker : BmSDK.BmGame.RProjectile_GrenadeBase
     }
 
     /// <summary>
-    /// ObjectProperty: BounceSound
+    /// ObjectProperty: BounceSound<br/>
+    /// Default: Ww_WPN_ThugGrenade.Play_ThugGrenadeImpact
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BounceSound
     {
@@ -208,7 +211,8 @@ public partial class MProjectile_DLCJoker : BmSDK.BmGame.RProjectile_GrenadeBase
     }
 
     /// <summary>
-    /// ObjectProperty: BounceSoundParam
+    /// ObjectProperty: BounceSoundParam<br/>
+    /// Default: Ww_Parameters.Phys_Velocity
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName BounceSoundParam
     {
@@ -217,7 +221,8 @@ public partial class MProjectile_DLCJoker : BmSDK.BmGame.RProjectile_GrenadeBase
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionParticleSystem
+    /// ObjectProperty: ExplosionParticleSystem<br/>
+    /// Default: FFX_Combat.Particles.Grenade_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionParticleSystem
     {

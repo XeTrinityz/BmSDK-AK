@@ -79,7 +79,8 @@ public partial class SpeedTreeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: SpeedTreeComponent
+    /// ComponentProperty: SpeedTreeComponent<br/>
+    /// Default: Engine.Default__SpeedTreeActor.SpeedTreeComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SpeedTreeComponent SpeedTreeComponent
     {

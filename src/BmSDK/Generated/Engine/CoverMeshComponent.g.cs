@@ -79,7 +79,8 @@ public partial class CoverMeshComponent : BmSDK.Engine.StaticMeshComponent, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: Meshes
+    /// ArrayProperty: Meshes<br/>
+    /// Default: ((),(),())
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.CoverMeshComponent.FCoverMeshes> Meshes
     {
@@ -88,7 +89,8 @@ public partial class CoverMeshComponent : BmSDK.Engine.StaticMeshComponent, BmSD
     }
 
     /// <summary>
-    /// StructProperty: LocationOffset
+    /// StructProperty: LocationOffset<br/>
+    /// Default: (Z=-60)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LocationOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 764);

@@ -124,7 +124,8 @@ public partial class RBMWeaponShotgun : BmSDK.BmScript.RBMWeaponRiflePredFull, B
     }
 
     /// <summary>
-    /// FloatProperty: BuckSpreadShotDeviance
+    /// FloatProperty: BuckSpreadShotDeviance<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float BuckSpreadShotDeviance
     {

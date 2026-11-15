@@ -131,7 +131,8 @@ public partial class RVehicleBehaviour_CarChase : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: FullThrottleRange
+    /// FloatProperty: FullThrottleRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FullThrottleRange
     {
@@ -140,7 +141,8 @@ public partial class RVehicleBehaviour_CarChase : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: ChaseMinRange
+    /// FloatProperty: ChaseMinRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ChaseMinRange
     {
@@ -149,7 +151,8 @@ public partial class RVehicleBehaviour_CarChase : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: PredictAheadTime
+    /// FloatProperty: PredictAheadTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PredictAheadTime
     {
@@ -158,19 +161,22 @@ public partial class RVehicleBehaviour_CarChase : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// StructProperty: CheatVsDistCurveChase
+    /// StructProperty: CheatVsDistCurveChase<br/>
+    /// Default: (Points=((InVal=2000,OutVal=1),(InVal=4500,OutVal=1.75),(InVal=10000,OutVal=2)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveChase
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 632);
 
     /// <summary>
-    /// StructProperty: CheatVsDistCurveJoinFormation
+    /// StructProperty: CheatVsDistCurveJoinFormation<br/>
+    /// Default: (Points=((InVal=2000,OutVal=0.3),(InVal=5000,OutVal=1)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveJoinFormation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 652);
 
     /// <summary>
-    /// FloatProperty: FollowOffsetBase
+    /// FloatProperty: FollowOffsetBase<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float FollowOffsetBase
     {
@@ -179,7 +185,8 @@ public partial class RVehicleBehaviour_CarChase : BmSDK.BmGame.RVehicleBehaviour
     }
 
     /// <summary>
-    /// FloatProperty: FollowOffsetExtra
+    /// FloatProperty: FollowOffsetExtra<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FollowOffsetExtra
     {

@@ -536,7 +536,8 @@ public partial class RBMBehaviour_HitReaction : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: HitDmgInfo
+    /// StructProperty: HitDmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo HitDmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 588);
@@ -668,7 +669,8 @@ public partial class RBMBehaviour_HitReaction : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: StunnedFX
+    /// ComponentProperty: StunnedFX<br/>
+    /// Default: BmGame.Default__RBMBehaviour_HitReaction.StunnedPSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StunnedFX
     {

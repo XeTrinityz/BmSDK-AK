@@ -264,7 +264,8 @@ public partial class RSeqAct_BespokeApcChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: MovieInfo
+    /// ObjectProperty: MovieInfo<br/>
+    /// Default: HudModuleBespokeApcHealth.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie MovieInfo
     {

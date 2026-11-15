@@ -1278,7 +1278,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanBePickedUpInCombat
+    /// BoolProperty: bCanBePickedUpInCombat<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBePickedUpInCombat
     {
@@ -1287,7 +1288,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanBePickedUpWhileTaunting
+    /// BoolProperty: bCanBePickedUpWhileTaunting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBePickedUpWhileTaunting
     {
@@ -1359,7 +1361,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bTurnOffRigidBodyCollisionOnHit
+    /// BoolProperty: bTurnOffRigidBodyCollisionOnHit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTurnOffRigidBodyCollisionOnHit
     {
@@ -1404,7 +1407,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bRighthandPickup
+    /// BoolProperty: bRighthandPickup<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRighthandPickup
     {
@@ -1458,7 +1462,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bFirstCollision
+    /// BoolProperty: bFirstCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFirstCollision
     {
@@ -1521,7 +1526,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ObjectProperty: ImpactEvent
+    /// ObjectProperty: ImpactEvent<br/>
+    /// Default: Ww_CHR_Combat.Play_Player_Impacted_GenThrownObject_CODE
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ImpactEvent
     {
@@ -1656,7 +1662,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: PlayerInteractions
+    /// ComponentProperty: PlayerInteractions<br/>
+    /// Default: BmGame.Default__RBMCombatThrownObject.PInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent PlayerInteractions
     {
@@ -1692,7 +1699,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDamageType
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -1758,7 +1766,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: PickupPriority
+    /// IntProperty: PickupPriority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int PickupPriority
     {
@@ -1791,7 +1800,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: ThrowCollisionExtents
+    /// StructProperty: ThrowCollisionExtents<br/>
+    /// Default: (X=30,Z=30)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowCollisionExtents
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 984);
@@ -1836,7 +1846,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1048);
 
     /// <summary>
-    /// FloatProperty: DropVelMultiplier
+    /// FloatProperty: DropVelMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DropVelMultiplier
     {
@@ -1845,7 +1856,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DropAngVelMultiplier
+    /// FloatProperty: DropAngVelMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DropAngVelMultiplier
     {
@@ -1908,7 +1920,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorHUDDescription
+    /// StrProperty: sDisruptorHUDDescription<br/>
+    /// Default: "#DSRPT|Sabotage|$Disruptor.Weapon|$Disruptor.WeaponDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorHUDDescription
     {
@@ -1953,7 +1966,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: TurnOnPickupTime
+    /// FloatProperty: TurnOnPickupTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TurnOnPickupTime
     {

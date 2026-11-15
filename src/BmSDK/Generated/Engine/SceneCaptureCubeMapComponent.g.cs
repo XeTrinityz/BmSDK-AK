@@ -88,7 +88,8 @@ public partial class SceneCaptureCubeMapComponent : BmSDK.Engine.SceneCaptureCom
     }
 
     /// <summary>
-    /// FloatProperty: NearPlane
+    /// FloatProperty: NearPlane<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float NearPlane
     {
@@ -97,7 +98,8 @@ public partial class SceneCaptureCubeMapComponent : BmSDK.Engine.SceneCaptureCom
     }
 
     /// <summary>
-    /// FloatProperty: FarPlane
+    /// FloatProperty: FarPlane<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FarPlane
     {

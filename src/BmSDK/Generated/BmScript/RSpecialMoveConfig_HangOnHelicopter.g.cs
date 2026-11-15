@@ -94,7 +94,8 @@ public partial class RSpecialMoveConfig_HangOnHelicopter : BmSDK.BmGame.RSpecial
         }
 
         /// <summary>
-        /// StructProperty: CapeState
+        /// StructProperty: CapeState<br/>
+        /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
         /// </summary>
         public unsafe BmSDK.BmGame.RPhysUtil.FCapeStateChangeData CapeState
         {

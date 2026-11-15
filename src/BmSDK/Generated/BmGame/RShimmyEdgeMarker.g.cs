@@ -195,7 +195,8 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bValid
+    /// BoolProperty: bValid<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValid
     {

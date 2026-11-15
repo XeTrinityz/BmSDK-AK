@@ -413,7 +413,8 @@ public partial class KMeshProps : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FKBoxElem
     {
         /// <summary>
-        /// StructProperty: TM
+        /// StructProperty: TM<br/>
+        /// Default: (XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1))
         /// </summary>
         public unsafe BmSDK.GameObject.FMatrix TM
         {
@@ -422,7 +423,8 @@ public partial class KMeshProps : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: X
+        /// FloatProperty: X<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float X
         {
@@ -431,7 +433,8 @@ public partial class KMeshProps : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Y
+        /// FloatProperty: Y<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Y
         {
@@ -440,7 +443,8 @@ public partial class KMeshProps : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Z
+        /// FloatProperty: Z<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Z
         {

@@ -269,7 +269,8 @@ public partial class RIncendiaryGrenadeCharge : BmSDK.BmGame.RIncendiaryGrenadeC
     }
 
     /// <summary>
-    /// ComponentProperty: endCapFire
+    /// ComponentProperty: endCapFire<br/>
+    /// Default: BmScript.Default__RIncendiaryGrenadeCharge.endCapFireComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent endCapFire
     {
@@ -278,7 +279,8 @@ public partial class RIncendiaryGrenadeCharge : BmSDK.BmGame.RIncendiaryGrenadeC
     }
 
     /// <summary>
-    /// ComponentProperty: FireFX
+    /// ComponentProperty: FireFX<br/>
+    /// Default: BmScript.Default__RIncendiaryGrenadeCharge.fireComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FireFX
     {
@@ -287,7 +289,8 @@ public partial class RIncendiaryGrenadeCharge : BmSDK.BmGame.RIncendiaryGrenadeC
     }
 
     /// <summary>
-    /// ComponentProperty: gasFX
+    /// ComponentProperty: gasFX<br/>
+    /// Default: BmScript.Default__RIncendiaryGrenadeCharge.gasComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent gasFX
     {
@@ -296,7 +299,8 @@ public partial class RIncendiaryGrenadeCharge : BmSDK.BmGame.RIncendiaryGrenadeC
     }
 
     /// <summary>
-    /// FloatProperty: DamagePerSecond
+    /// FloatProperty: DamagePerSecond<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float DamagePerSecond
     {
@@ -305,7 +309,8 @@ public partial class RIncendiaryGrenadeCharge : BmSDK.BmGame.RIncendiaryGrenadeC
     }
 
     /// <summary>
-    /// FloatProperty: grateTravelTime
+    /// FloatProperty: grateTravelTime<br/>
+    /// Default: 0.06
     /// </summary>
     public unsafe float grateTravelTime
     {

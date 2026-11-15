@@ -115,7 +115,8 @@ public partial class RSeqAct_PutPlayerInBatmobile : BmSDK.BmGame.RSeqAct_Overrid
     }
 
     /// <summary>
-    /// BoolProperty: PlayGetInAnim
+    /// BoolProperty: PlayGetInAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PlayGetInAnim
     {
@@ -160,7 +161,8 @@ public partial class RSeqAct_PutPlayerInBatmobile : BmSDK.BmGame.RSeqAct_Overrid
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileFarAwayDistanceThreshold
+    /// FloatProperty: BatmobileFarAwayDistanceThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float BatmobileFarAwayDistanceThreshold
     {

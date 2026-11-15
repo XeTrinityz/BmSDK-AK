@@ -79,19 +79,22 @@ public partial class ParticleModuleVelocityCone : BmSDK.Engine.ParticleModuleVel
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Angle
+    /// StructProperty: Angle<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleVelocityCone.DistributionAngle)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Angle
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: Velocity
+    /// StructProperty: Velocity<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleVelocityCone.DistributionVelocity)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Velocity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 136);
 
     /// <summary>
-    /// StructProperty: Direction
+    /// StructProperty: Direction<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Direction
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 172);

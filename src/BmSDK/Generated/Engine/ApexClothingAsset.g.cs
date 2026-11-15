@@ -124,7 +124,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseHardwareCloth
+    /// BoolProperty: bUseHardwareCloth<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseHardwareCloth
     {
@@ -142,7 +143,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bSlowStart
+    /// BoolProperty: bSlowStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSlowStart
     {
@@ -169,7 +171,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bResetAfterTeleport
+    /// BoolProperty: bResetAfterTeleport<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bResetAfterTeleport
     {
@@ -178,7 +181,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseLocalSpaceSimulation
+    /// BoolProperty: bUseLocalSpaceSimulation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseLocalSpaceSimulation
     {
@@ -214,7 +218,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistanceBlendTime
+    /// FloatProperty: MaxDistanceBlendTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxDistanceBlendTime
     {
@@ -223,7 +228,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ContinuousRotationThreshold
+    /// FloatProperty: ContinuousRotationThreshold<br/>
+    /// Default: 84
     /// </summary>
     public unsafe float ContinuousRotationThreshold
     {
@@ -232,7 +238,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ContinuousDistanceThreshold
+    /// FloatProperty: ContinuousDistanceThreshold<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ContinuousDistanceThreshold
     {
@@ -241,7 +248,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: LodWeightsMaxDistance
+    /// FloatProperty: LodWeightsMaxDistance<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float LodWeightsMaxDistance
     {
@@ -250,7 +258,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: LodWeightsDistanceWeight
+    /// FloatProperty: LodWeightsDistanceWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LodWeightsDistanceWeight
     {
@@ -277,7 +286,8 @@ public partial class ApexClothingAsset : BmSDK.Engine.ApexAsset, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: LODDecayTime
+    /// FloatProperty: LODDecayTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float LODDecayTime
     {

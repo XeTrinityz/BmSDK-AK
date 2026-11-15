@@ -83,7 +83,8 @@ public partial class MBMBehaviour_ScarecrowBase : BmSDK.BmGame.RBMBehaviour, BmS
     }
 
     /// <summary>
-    /// IntProperty: DefaultNumInputLink
+    /// IntProperty: DefaultNumInputLink<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int DefaultNumInputLink
     {
@@ -92,7 +93,8 @@ public partial class MBMBehaviour_ScarecrowBase : BmSDK.BmGame.RBMBehaviour, BmS
     }
 
     /// <summary>
-    /// IntProperty: DefaultNumOutputLink
+    /// IntProperty: DefaultNumOutputLink<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int DefaultNumOutputLink
     {

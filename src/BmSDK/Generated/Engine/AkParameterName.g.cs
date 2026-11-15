@@ -134,7 +134,8 @@ public partial class AkParameterName : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxValue
+    /// FloatProperty: MaxValue<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxValue
     {

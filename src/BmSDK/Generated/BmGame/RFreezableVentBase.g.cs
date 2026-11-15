@@ -232,7 +232,8 @@ public partial class RFreezableVentBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: VentDamageType
+    /// ClassProperty: VentDamageType<br/>
+    /// Default: BmGame.RDmgType_Explosion
     /// </summary>
     public unsafe BmSDK.Class VentDamageType
     {
@@ -259,7 +260,8 @@ public partial class RFreezableVentBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Blocker
+    /// ComponentProperty: Blocker<br/>
+    /// Default: BmGame.Default__RFreezableVentBase.PlayerBlocker
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent Blocker
     {
@@ -268,7 +270,8 @@ public partial class RFreezableVentBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlockerHeight
+    /// FloatProperty: BlockerHeight<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float BlockerHeight
     {
@@ -277,7 +280,8 @@ public partial class RFreezableVentBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlockerWidth
+    /// FloatProperty: BlockerWidth<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float BlockerWidth
     {
@@ -286,7 +290,8 @@ public partial class RFreezableVentBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlockerDepth
+    /// FloatProperty: BlockerDepth<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float BlockerDepth
     {

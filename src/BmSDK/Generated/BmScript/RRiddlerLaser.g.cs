@@ -123,7 +123,8 @@ public partial class RRiddlerLaser : BmSDK.Engine.Emitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: TargetLocationPFX
+    /// ComponentProperty: TargetLocationPFX<br/>
+    /// Default: BmScript.Default__RRiddlerLaser.TargetLocationEffect
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent TargetLocationPFX
     {
@@ -186,7 +187,8 @@ public partial class RRiddlerLaser : BmSDK.Engine.Emitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LaserLength
+    /// FloatProperty: LaserLength<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float LaserLength
     {
@@ -195,19 +197,22 @@ public partial class RRiddlerLaser : BmSDK.Engine.Emitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LaserColour
+    /// StructProperty: LaserColour<br/>
+    /// Default: (R=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LaserColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 780);
 
     /// <summary>
-    /// StructProperty: ChargedLaserColour
+    /// StructProperty: ChargedLaserColour<br/>
+    /// Default: (G=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ChargedLaserColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 796);
 
     /// <summary>
-    /// FloatProperty: BatmanDamage
+    /// FloatProperty: BatmanDamage<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float BatmanDamage
     {
@@ -252,7 +257,8 @@ public partial class RRiddlerLaser : BmSDK.Engine.Emitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxBounces
+    /// IntProperty: MaxBounces<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxBounces
     {
@@ -261,7 +267,8 @@ public partial class RRiddlerLaser : BmSDK.Engine.Emitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LaserChargeTime
+    /// FloatProperty: LaserChargeTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float LaserChargeTime
     {

@@ -500,7 +500,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CarSteerScale
+    /// FloatProperty: CarSteerScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CarSteerScale
     {
@@ -509,7 +510,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CarSteerDamping
+    /// FloatProperty: CarSteerDamping<br/>
+    /// Default: 0.03
     /// </summary>
     public unsafe float CarSteerDamping
     {
@@ -518,7 +520,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChaseRange
+    /// FloatProperty: ChaseRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ChaseRange
     {
@@ -608,7 +611,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: HealthBarBossName
+    /// StrProperty: HealthBarBossName<br/>
+    /// Default: "APC"
     /// </summary>
     public unsafe BmSDK.FString HealthBarBossName
     {

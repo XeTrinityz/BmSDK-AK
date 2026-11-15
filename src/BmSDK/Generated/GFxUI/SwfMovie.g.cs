@@ -133,7 +133,8 @@ public partial class SwfMovie : BmSDK.GFxUI.GFxRawData, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: PackedTextureResize
+    /// ByteProperty: PackedTextureResize<br/>
+    /// Default: EPackedTextureResize_Mult4
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie.EPackedTextureResize PackedTextureResize
     {
@@ -169,7 +170,8 @@ public partial class SwfMovie : BmSDK.GFxUI.GFxRawData, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RTTextures
+    /// IntProperty: RTTextures<br/>
+    /// Default: 24
     /// </summary>
     public unsafe int RTTextures
     {
@@ -178,7 +180,8 @@ public partial class SwfMovie : BmSDK.GFxUI.GFxRawData, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RTVideoTextures
+    /// IntProperty: RTVideoTextures<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int RTVideoTextures
     {

@@ -88,7 +88,8 @@ public partial class SkelControl_TwistBone : BmSDK.Engine.SkelControlBase, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: TwistAngleScale
+    /// FloatProperty: TwistAngleScale<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float TwistAngleScale
     {

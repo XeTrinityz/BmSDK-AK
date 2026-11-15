@@ -267,7 +267,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// IntProperty: NumPathPoints
+    /// IntProperty: NumPathPoints<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumPathPoints
     {
@@ -276,7 +277,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SmoothedPerc
+    /// FloatProperty: SmoothedPerc<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SmoothedPerc
     {
@@ -339,7 +341,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: StaticLookAheadDist
+    /// FloatProperty: StaticLookAheadDist<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float StaticLookAheadDist
     {
@@ -348,7 +351,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: LookAheadVelocityMultiplier
+    /// FloatProperty: LookAheadVelocityMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LookAheadVelocityMultiplier
     {
@@ -357,7 +361,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: SmoothingValue
+    /// FloatProperty: SmoothingValue<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float SmoothingValue
     {

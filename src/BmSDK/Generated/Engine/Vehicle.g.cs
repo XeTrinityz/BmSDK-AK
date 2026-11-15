@@ -901,7 +901,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: CrushedDamageType
+    /// ClassProperty: CrushedDamageType<br/>
+    /// Default: Engine.DmgType_Crushed
     /// </summary>
     public unsafe BmSDK.Class CrushedDamageType
     {
@@ -928,7 +929,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAttachDriver
+    /// BoolProperty: bAttachDriver<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAttachDriver
     {
@@ -1000,7 +1002,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bRetryPathfindingWithDriver
+    /// BoolProperty: bRetryPathfindingWithDriver<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRetryPathfindingWithDriver
     {
@@ -1018,7 +1021,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDoExtraNetRelevancyTraces
+    /// BoolProperty: bDoExtraNetRelevancyTraces<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoExtraNetRelevancyTraces
     {
@@ -1102,7 +1106,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MomentumMult
+    /// FloatProperty: MomentumMult<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MomentumMult
     {
@@ -1111,7 +1116,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinCrushSpeed
+    /// FloatProperty: MinCrushSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MinCrushSpeed
     {
@@ -1120,7 +1126,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ForceCrushPenetration
+    /// FloatProperty: ForceCrushPenetration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ForceCrushPenetration
     {
@@ -1201,7 +1208,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TurnTime
+    /// FloatProperty: TurnTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TurnTime
     {

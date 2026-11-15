@@ -209,7 +209,8 @@ public partial class RLevelTransitionShutterDoors : BmSDK.BmScript.RLevelTransit
     }
 
     /// <summary>
-    /// ObjectProperty: DoorOpeningLoop
+    /// ObjectProperty: DoorOpeningLoop<br/>
+    /// Default: Ww_OBJ_Riddler_Cave_Elevator.Play_OBJ_Cave_Elevator_Shutter_Loop_01_CODE
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent DoorOpeningLoop
     {
@@ -218,7 +219,8 @@ public partial class RLevelTransitionShutterDoors : BmSDK.BmScript.RLevelTransit
     }
 
     /// <summary>
-    /// ObjectProperty: DoorClosingLoop
+    /// ObjectProperty: DoorClosingLoop<br/>
+    /// Default: Ww_OBJ_Riddler_Cave_Elevator.Play_OBJ_Cave_Elevator_Shutter_Loop_02_CODE
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent DoorClosingLoop
     {

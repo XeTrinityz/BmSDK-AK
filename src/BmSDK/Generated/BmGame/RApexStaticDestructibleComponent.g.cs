@@ -204,7 +204,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
     }
 
     /// <summary>
-    /// IntProperty: ForceRemoveChunksInGroupOnFirstDamage
+    /// IntProperty: ForceRemoveChunksInGroupOnFirstDamage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceRemoveChunksInGroupOnFirstDamage
     {
@@ -219,7 +220,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.KMeshProps.FKAggregateGeom>(Ptr + 728);
 
     /// <summary>
-    /// FloatProperty: ValidBoundsExtentsBelowGround
+    /// FloatProperty: ValidBoundsExtentsBelowGround<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ValidBoundsExtentsBelowGround
     {
@@ -228,7 +230,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
     }
 
     /// <summary>
-    /// ClassProperty: ChainGunDamageType
+    /// ClassProperty: ChainGunDamageType<br/>
+    /// Default: BmGame.RDmgType_BatmobileChainGun
     /// </summary>
     public unsafe BmSDK.Class ChainGunDamageType
     {

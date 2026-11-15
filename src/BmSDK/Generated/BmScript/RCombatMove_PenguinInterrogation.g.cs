@@ -957,7 +957,8 @@ public partial class RCombatMove_PenguinInterrogation : BmSDK.BmGame.RCombatMove
     }
 
     /// <summary>
-    /// FloatProperty: KillTimer
+    /// FloatProperty: KillTimer<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float KillTimer
     {
@@ -1083,7 +1084,8 @@ public partial class RCombatMove_PenguinInterrogation : BmSDK.BmGame.RCombatMove
     }
 
     /// <summary>
-    /// FloatProperty: DistCheckSq
+    /// FloatProperty: DistCheckSq<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DistCheckSq
     {

@@ -360,7 +360,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: IdealFlightSpeed
+    /// FloatProperty: IdealFlightSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float IdealFlightSpeed
     {
@@ -375,7 +376,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 668);
 
     /// <summary>
-    /// FloatProperty: FlightAcceleration
+    /// FloatProperty: FlightAcceleration<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FlightAcceleration
     {
@@ -384,7 +386,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FleeAcceleration
+    /// FloatProperty: FleeAcceleration<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float FleeAcceleration
     {
@@ -393,7 +396,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FleeFlightSpeed
+    /// FloatProperty: FleeFlightSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FleeFlightSpeed
     {
@@ -402,7 +406,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FlightRollPerSec
+    /// FloatProperty: FlightRollPerSec<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float FlightRollPerSec
     {
@@ -411,7 +416,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxFlightRoll
+    /// FloatProperty: MaxFlightRoll<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float MaxFlightRoll
     {
@@ -420,7 +426,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DeviationForFlightRoll
+    /// FloatProperty: DeviationForFlightRoll<br/>
+    /// Default: 0.99999
     /// </summary>
     public unsafe float DeviationForFlightRoll
     {
@@ -438,7 +445,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: BatmanCloseDist
+    /// FloatProperty: BatmanCloseDist<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float BatmanCloseDist
     {
@@ -447,7 +455,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: EmergencyAvoidanceAccelerationBase
+    /// FloatProperty: EmergencyAvoidanceAccelerationBase<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float EmergencyAvoidanceAccelerationBase
     {
@@ -456,7 +465,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: EmergencyAvoidanceAccelerationVar
+    /// FloatProperty: EmergencyAvoidanceAccelerationVar<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float EmergencyAvoidanceAccelerationVar
     {
@@ -489,7 +499,8 @@ public partial class RBMBehaviour_Manbat : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 728);
 
     /// <summary>
-    /// ByteProperty: GrabPurpose
+    /// ByteProperty: GrabPurpose<br/>
+    /// Default: MBG_InjectCure1
     /// </summary>
     public unsafe BmSDK.BmScript.RBMBehaviour_Manbat.EGrabPurpose GrabPurpose
     {

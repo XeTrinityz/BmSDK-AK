@@ -258,7 +258,8 @@ public partial class RBMCombatPoint_HiElectricalBox : BmSDK.BmGame.RBMCombatPoin
     }
 
     /// <summary>
-    /// ComponentProperty: AirCondCables
+    /// ComponentProperty: AirCondCables<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiElectricalBox.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent AirCondCables
     {
@@ -276,7 +277,8 @@ public partial class RBMCombatPoint_HiElectricalBox : BmSDK.BmGame.RBMCombatPoin
     }
 
     /// <summary>
-    /// ComponentProperty: AirCondInRangeHighlightMesh
+    /// ComponentProperty: AirCondInRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiElectricalBox.AirCondInRangeHighlightComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent AirCondInRangeHighlightMesh
     {
@@ -285,7 +287,8 @@ public partial class RBMCombatPoint_HiElectricalBox : BmSDK.BmGame.RBMCombatPoin
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightMesh
+    /// ComponentProperty: InRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiElectricalBox.InRangeHighlightComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent InRangeHighlightMesh
     {
@@ -294,7 +297,8 @@ public partial class RBMCombatPoint_HiElectricalBox : BmSDK.BmGame.RBMCombatPoin
     }
 
     /// <summary>
-    /// NameProperty: SocketName
+    /// NameProperty: SocketName<br/>
+    /// Default: Fuse_Box
     /// </summary>
     public unsafe BmSDK.FName SocketName
     {

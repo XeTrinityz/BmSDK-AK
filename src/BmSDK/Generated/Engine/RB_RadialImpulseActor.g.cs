@@ -132,7 +132,8 @@ public partial class RB_RadialImpulseActor : BmSDK.Engine.RigidBodyBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: ImpulseComponent
+    /// ComponentProperty: ImpulseComponent<br/>
+    /// Default: Engine.Default__RB_RadialImpulseActor.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent ImpulseComponent
     {

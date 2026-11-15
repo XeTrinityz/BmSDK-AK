@@ -296,7 +296,8 @@ public partial class RBMBehaviour_EnterVehicle : BmSDK.BmGame.RBMBehaviour, BmSD
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 672);
 
     /// <summary>
-    /// BoolProperty: bMoveToAnimLocation
+    /// BoolProperty: bMoveToAnimLocation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMoveToAnimLocation
     {
@@ -323,7 +324,8 @@ public partial class RBMBehaviour_EnterVehicle : BmSDK.BmGame.RBMBehaviour, BmSD
     }
 
     /// <summary>
-    /// IntProperty: ForcePassengerSlot
+    /// IntProperty: ForcePassengerSlot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForcePassengerSlot
     {

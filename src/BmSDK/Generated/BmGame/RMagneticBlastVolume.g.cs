@@ -129,7 +129,8 @@ public partial class RMagneticBlastVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bBlockingPlayerInteraction
+    /// BoolProperty: bBlockingPlayerInteraction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockingPlayerInteraction
     {

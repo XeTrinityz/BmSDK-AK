@@ -431,7 +431,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
     }
 
     /// <summary>
-    /// FloatProperty: HydraUpdateTime
+    /// FloatProperty: HydraUpdateTime<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HydraUpdateTime
     {

@@ -79,7 +79,8 @@ public partial class MaterialExpressionSphericalMapping : BmSDK.Engine.MaterialE
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: SphericalMappingType
+    /// ByteProperty: SphericalMappingType<br/>
+    /// Default: SPHERICALMAPPING_CheapAlternative
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionSphericalMapping.ESphericalMappingType SphericalMappingType
     {

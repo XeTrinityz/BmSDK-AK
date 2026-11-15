@@ -79,7 +79,8 @@ public partial class RCheckPointMineLights : BmSDK.Engine.Actor, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: PointLight_Active
+    /// ComponentProperty: PointLight_Active<br/>
+    /// Default: BmScript.Default__RCheckPointMineLights.Light_Active
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent PointLight_Active
     {
@@ -88,7 +89,8 @@ public partial class RCheckPointMineLights : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: PointLight_Neutral
+    /// ComponentProperty: PointLight_Neutral<br/>
+    /// Default: BmScript.Default__RCheckPointMineLights.Light_Neutral
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent PointLight_Neutral
     {

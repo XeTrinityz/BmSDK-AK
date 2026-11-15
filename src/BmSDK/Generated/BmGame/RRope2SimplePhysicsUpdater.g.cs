@@ -311,7 +311,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRope2SimplePhysicsUpdater.FRRope2SimplePhysicsUpdaterInitData>(Ptr + 240);
 
     /// <summary>
-    /// FloatProperty: DesiredNodeLength
+    /// FloatProperty: DesiredNodeLength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DesiredNodeLength
     {
@@ -320,7 +321,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
     }
 
     /// <summary>
-    /// IntProperty: MaxNumNodesInRope
+    /// IntProperty: MaxNumNodesInRope<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int MaxNumNodesInRope
     {
@@ -329,7 +331,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
     }
 
     /// <summary>
-    /// IntProperty: NumNodeConstraintSolverIterations
+    /// IntProperty: NumNodeConstraintSolverIterations<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int NumNodeConstraintSolverIterations
     {
@@ -338,7 +341,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
     }
 
     /// <summary>
-    /// FloatProperty: TargetTighteningFactor
+    /// FloatProperty: TargetTighteningFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TargetTighteningFactor
     {

@@ -600,7 +600,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmScript.Default__RPickup_InsectCrate.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {
@@ -618,7 +619,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMeshComponent
+    /// ComponentProperty: BaseMeshComponent<br/>
+    /// Default: BmScript.Default__RPickup_InsectCrate.SkelMeshComponent2
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BaseMeshComponent
     {
@@ -672,7 +674,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: breakFX
+    /// ObjectProperty: breakFX<br/>
+    /// Default: EFX_Destructibles.Collectibles.Stagg.InsectCrate_Smash_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem breakFX
     {
@@ -681,7 +684,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: BreakRumble
+    /// ObjectProperty: BreakRumble<br/>
+    /// Default: BmScript.Default__RPickup_InsectCrate.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform BreakRumble
     {
@@ -690,7 +694,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: LightArch
+    /// ObjectProperty: LightArch<br/>
+    /// Default: Pawn_Archetypes.Lights.Breakable_InsectCrate_Light
     /// </summary>
     public unsafe BmSDK.BmGame.RDeferred_PointLight_Shadowed LightArch
     {
@@ -699,7 +704,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: LoopSfx
+    /// ObjectProperty: LoopSfx<br/>
+    /// Default: ww_obj_insectcrate.Play_Insect_Crate_Amb
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoopSfx
     {
@@ -708,7 +714,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeSfx
+    /// ObjectProperty: ExplodeSfx<br/>
+    /// Default: ww_obj_insectcrate.Play_Insect_Crate_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeSfx
     {
@@ -717,7 +724,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ObjectProperty: KickBreakCrate
+    /// ObjectProperty: KickBreakCrate<br/>
+    /// Default: Batman_Environment_Moves.InsectCrateDestroy
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig KickBreakCrate
     {
@@ -735,7 +743,8 @@ public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase,
     }
 
     /// <summary>
-    /// ComponentProperty: CylComp
+    /// ComponentProperty: CylComp<br/>
+    /// Default: BmScript.Default__RPickup_InsectCrate.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylComp
     {

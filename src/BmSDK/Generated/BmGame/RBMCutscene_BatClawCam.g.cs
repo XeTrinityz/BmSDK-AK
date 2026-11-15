@@ -202,7 +202,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ValidCombatantCamTimer
+    /// FloatProperty: ValidCombatantCamTimer<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ValidCombatantCamTimer
     {
@@ -211,7 +212,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CamTimer
     {
@@ -238,7 +240,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeed
+    /// FloatProperty: UpSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float UpSpeed
     {
@@ -247,7 +250,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeedDecel
+    /// FloatProperty: UpSpeedDecel<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float UpSpeedDecel
     {
@@ -256,7 +260,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeed
+    /// FloatProperty: FOVSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FOVSpeed
     {
@@ -265,7 +270,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeedDecel
+    /// FloatProperty: FOVSpeedDecel<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float FOVSpeedDecel
     {
@@ -274,7 +280,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: InitialFOVAngle
+    /// FloatProperty: InitialFOVAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float InitialFOVAngle
     {
@@ -283,7 +290,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: SlowMotionSpeed
+    /// FloatProperty: SlowMotionSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SlowMotionSpeed
     {
@@ -307,7 +315,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: SideDist
+    /// FloatProperty: SideDist<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float SideDist
     {
@@ -325,7 +334,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: FwdDist
+    /// FloatProperty: FwdDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float FwdDist
     {
@@ -361,7 +371,8 @@ public partial class RBMCutscene_BatClawCam : BmSDK.BmGame.RBMCutscene_Cam, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DesiredDistToTarget
+    /// FloatProperty: DesiredDistToTarget<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float DesiredDistToTarget
     {

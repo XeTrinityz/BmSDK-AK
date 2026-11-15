@@ -154,7 +154,8 @@ public partial class RVehicleBehaviour_FlyingGuard : BmSDK.BmGame.RVehicleBehavi
     }
 
     /// <summary>
-    /// FloatProperty: GuardRange
+    /// FloatProperty: GuardRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float GuardRange
     {

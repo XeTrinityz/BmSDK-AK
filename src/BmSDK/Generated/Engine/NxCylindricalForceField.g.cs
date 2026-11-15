@@ -101,7 +101,8 @@ public partial class NxCylindricalForceField : BmSDK.Engine.NxForceField, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {

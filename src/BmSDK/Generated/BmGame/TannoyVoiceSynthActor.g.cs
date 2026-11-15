@@ -168,7 +168,8 @@ public partial class TannoyVoiceSynthActor : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: PawnSpeechDialogueComponent
+    /// ComponentProperty: PawnSpeechDialogueComponent<br/>
+    /// Default: BmGame.Default__TannoyVoiceSynthActor.DialogueComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueComponent PawnSpeechDialogueComponent
     {

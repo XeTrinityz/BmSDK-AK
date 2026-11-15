@@ -265,7 +265,8 @@ public partial class MatineeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PlayRate
+    /// FloatProperty: PlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PlayRate
     {
@@ -274,7 +275,8 @@ public partial class MatineeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Position
+    /// FloatProperty: Position<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float Position
     {
@@ -455,7 +457,8 @@ public partial class MatineeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClientSidePositionErrorTolerance
+    /// FloatProperty: ClientSidePositionErrorTolerance<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ClientSidePositionErrorTolerance
     {

@@ -79,7 +79,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxForwardSpeed
+    /// FloatProperty: MaxForwardSpeed<br/>
+    /// Default: 1850
     /// </summary>
     public unsafe float MaxForwardSpeed
     {
@@ -88,7 +89,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxReverseSpeed
+    /// FloatProperty: MaxReverseSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxReverseSpeed
     {
@@ -97,7 +99,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: AccelerateTorque
+    /// FloatProperty: AccelerateTorque<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AccelerateTorque
     {
@@ -106,7 +109,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DecelerateTorque
+    /// FloatProperty: DecelerateTorque<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float DecelerateTorque
     {
@@ -115,7 +119,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SpeedChangeAggression
+    /// FloatProperty: SpeedChangeAggression<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float SpeedChangeAggression
     {
@@ -124,7 +129,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SpeedChangeAggressionReverse
+    /// FloatProperty: SpeedChangeAggressionReverse<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float SpeedChangeAggressionReverse
     {
@@ -133,7 +139,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: BrakeTorque
+    /// FloatProperty: BrakeTorque<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float BrakeTorque
     {
@@ -142,7 +149,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaxSteeringAngle
+    /// FloatProperty: MaxSteeringAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float MaxSteeringAngle
     {
@@ -151,7 +159,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: WheelSpinVelPeak
+    /// FloatProperty: WheelSpinVelPeak<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float WheelSpinVelPeak
     {
@@ -160,7 +169,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: WheelSpinVelMax
+    /// FloatProperty: WheelSpinVelMax<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float WheelSpinVelMax
     {
@@ -178,7 +188,8 @@ public partial class RVehicleSimCarNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: BaseThrottleUphill
+    /// FloatProperty: BaseThrottleUphill<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BaseThrottleUphill
     {

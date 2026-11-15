@@ -177,7 +177,8 @@ public partial class RCombatMove_RiddlerMechMassRobotColourChange : BmSDK.BmGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 856);
 
     /// <summary>
-    /// FloatProperty: CurrZoom
+    /// FloatProperty: CurrZoom<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float CurrZoom
     {
@@ -186,7 +187,8 @@ public partial class RCombatMove_RiddlerMechMassRobotColourChange : BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ExitDelay
+    /// FloatProperty: ExitDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ExitDelay
     {

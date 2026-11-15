@@ -88,7 +88,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: EQSettings
+    /// StructProperty: EQSettings<br/>
+    /// Default: (HFFrequency=2000,HFGain=1,MFCutoffFrequency=1000,MFBandwidth=1,MFGain=1,LFFrequency=600,LFGain=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.SoundMode.FAudioEQEffect EQSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.SoundMode.FAudioEQEffect>(Ptr + 88);
@@ -112,7 +113,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeInTime
+    /// FloatProperty: FadeInTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeInTime
     {
@@ -121,7 +123,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float Duration
     {
@@ -130,7 +133,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutTime
+    /// FloatProperty: FadeOutTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeOutTime
     {
@@ -154,7 +158,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// NameProperty: SoundClass
+        /// NameProperty: SoundClass<br/>
+        /// Default: Master
         /// </summary>
         public unsafe BmSDK.FName SoundClass
         {
@@ -163,7 +168,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: VolumeAdjuster
+        /// FloatProperty: VolumeAdjuster<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float VolumeAdjuster
         {
@@ -172,7 +178,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: PitchAdjuster
+        /// FloatProperty: PitchAdjuster<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float PitchAdjuster
         {
@@ -190,7 +197,8 @@ public partial class SoundMode : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: VoiceCenterChannelVolumeAdjuster
+        /// FloatProperty: VoiceCenterChannelVolumeAdjuster<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float VoiceCenterChannelVolumeAdjuster
         {

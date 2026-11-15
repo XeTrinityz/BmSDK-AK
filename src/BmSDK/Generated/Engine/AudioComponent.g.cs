@@ -327,7 +327,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bUseOwnerLocation
+    /// BoolProperty: bUseOwnerLocation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseOwnerLocation
     {
@@ -399,7 +400,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bAllowSpatialization
+    /// BoolProperty: bAllowSpatialization<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowSpatialization
     {
@@ -753,13 +755,15 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: LastLocation
+    /// StructProperty: LastLocation<br/>
+    /// Default: (X=1,Y=2,Z=3)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LastLocation
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 492);
 
     /// <summary>
-    /// FloatProperty: VolumeMultiplier
+    /// FloatProperty: VolumeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VolumeMultiplier
     {
@@ -768,7 +772,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: PitchMultiplier
+    /// FloatProperty: PitchMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PitchMultiplier
     {
@@ -777,7 +782,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: HighFrequencyGainMultiplier
+    /// FloatProperty: HighFrequencyGainMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float HighFrequencyGainMultiplier
     {

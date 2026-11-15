@@ -126,7 +126,8 @@ public partial class RFootstepVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ValueToSet
+    /// FloatProperty: ValueToSet<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ValueToSet
     {
@@ -135,7 +136,8 @@ public partial class RFootstepVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: NameToSet
+    /// ObjectProperty: NameToSet<br/>
+    /// Default: Ww_Parameters.SurfaceWetness
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName NameToSet
     {

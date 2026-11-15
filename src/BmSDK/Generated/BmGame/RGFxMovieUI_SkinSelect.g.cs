@@ -557,7 +557,8 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
     }
 
     /// <summary>
-    /// ArrayProperty: AllowedBaseIds
+    /// ArrayProperty: AllowedBaseIds<br/>
+    /// Default: (0,1)
     /// </summary>
     public unsafe BmSDK.TArray<int> AllowedBaseIds
     {

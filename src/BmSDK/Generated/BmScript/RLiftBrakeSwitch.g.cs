@@ -294,7 +294,8 @@ public partial class RLiftBrakeSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: UsedStateMesh
+    /// ComponentProperty: UsedStateMesh<br/>
+    /// Default: BmScript.Default__RLiftBrakeSwitch.usedStateMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent UsedStateMesh
     {
@@ -303,7 +304,8 @@ public partial class RLiftBrakeSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RLiftBrakeSwitch.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -312,7 +314,8 @@ public partial class RLiftBrakeSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ButtonLight
+    /// ComponentProperty: ButtonLight<br/>
+    /// Default: BmScript.Default__RLiftBrakeSwitch.ButtonLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent ButtonLight
     {
@@ -321,13 +324,15 @@ public partial class RLiftBrakeSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: ButtonLightColorOn
+    /// StructProperty: ButtonLightColorOn<br/>
+    /// Default: (B=90,G=255,R=16)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ButtonLightColorOn
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 944);
 
     /// <summary>
-    /// StructProperty: ButtonLightColorOff
+    /// StructProperty: ButtonLightColorOff<br/>
+    /// Default: (B=16,G=50,R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ButtonLightColorOff
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 948);

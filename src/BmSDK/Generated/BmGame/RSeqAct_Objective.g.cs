@@ -315,7 +315,8 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveAPCChases
+    /// BoolProperty: bDisableAnyActiveAPCChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveAPCChases
     {
@@ -324,7 +325,8 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActivePenguinVanChases
+    /// BoolProperty: bDisableAnyActivePenguinVanChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActivePenguinVanChases
     {
@@ -333,7 +335,8 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveRiddlerTrophyChases
+    /// BoolProperty: bDisableAnyActiveRiddlerTrophyChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveRiddlerTrophyChases
     {
@@ -342,7 +345,8 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bDisableAnyActiveFireflyChases
+    /// BoolProperty: bDisableAnyActiveFireflyChases<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableAnyActiveFireflyChases
     {

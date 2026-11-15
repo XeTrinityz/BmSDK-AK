@@ -74,7 +74,8 @@ public partial class PBRuleNodeBase : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: NextRules
+    /// ArrayProperty: NextRules<br/>
+    /// Default: ((LinkName=Next))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.PBRuleNodeBase.FPBRuleLink> NextRules
     {

@@ -408,7 +408,8 @@ public partial class RCombatMove_2DVillainHighLowAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: OutOfRangeDist
+    /// FloatProperty: OutOfRangeDist<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float OutOfRangeDist
     {

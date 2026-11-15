@@ -628,7 +628,8 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.MHac
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__MHackableObjectBase.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {
@@ -736,7 +737,8 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.MHac
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__MHackableObjectBase.NewInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -866,7 +868,8 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.MHac
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -884,7 +887,8 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.MHac
     }
 
     /// <summary>
-    /// BoolProperty: bUsingEnableStateMesh
+    /// BoolProperty: bUsingEnableStateMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsingEnableStateMesh
     {

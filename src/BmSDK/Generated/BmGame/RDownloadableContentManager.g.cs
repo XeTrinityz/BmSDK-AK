@@ -144,7 +144,8 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
     }
 
     /// <summary>
-    /// BoolProperty: bReloadDLC
+    /// BoolProperty: bReloadDLC<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReloadDLC
     {

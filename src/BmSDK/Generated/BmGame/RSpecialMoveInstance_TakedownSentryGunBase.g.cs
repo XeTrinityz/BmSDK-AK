@@ -84,7 +84,8 @@ public partial class RSpecialMoveInstance_TakedownSentryGunBase : BmSDK.BmGame.R
     public InlineArray<BmSDK.FName> AnimNames => new(3, Ptr + 876, 8, this);
 
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Silent_Takedown_Back_SentryGun
     /// </summary>
     public unsafe BmSDK.FName AnimNames_0
     {
@@ -92,7 +93,8 @@ public partial class RSpecialMoveInstance_TakedownSentryGunBase : BmSDK.BmGame.R
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 876); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Silent_Takedown_Back_SentryGun_02
     /// </summary>
     public unsafe BmSDK.FName AnimNames_1
     {
@@ -100,7 +102,8 @@ public partial class RSpecialMoveInstance_TakedownSentryGunBase : BmSDK.BmGame.R
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 884); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Silent_Takedown_Back_SentryGun_Front
     /// </summary>
     public unsafe BmSDK.FName AnimNames_2
     {

@@ -144,7 +144,8 @@ public partial class RFuseBoxSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenMesh1
+    /// ComponentProperty: BrokenMesh1<br/>
+    /// Default: BmScript.Default__RFuseBoxSwitch.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BrokenMesh1
     {

@@ -115,7 +115,8 @@ public partial class RSeqAct_SetObjectiveVisuallySuppressed : BmSDK.Engine.Seque
     }
 
     /// <summary>
-    /// BoolProperty: bIgnoreHiddenMarkers
+    /// BoolProperty: bIgnoreHiddenMarkers<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIgnoreHiddenMarkers
     {

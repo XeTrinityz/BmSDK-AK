@@ -111,7 +111,8 @@ public partial class AkEvent : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinZeroLatencyPrefetch
+    /// IntProperty: MinZeroLatencyPrefetch<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MinZeroLatencyPrefetch
     {

@@ -79,7 +79,8 @@ public partial class ParticleModuleSize : BmSDK.Engine.ParticleModuleSizeBase, B
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StartSize
+    /// StructProperty: StartSize<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__ParticleModuleSize.DistributionStartSize,MinRange=(X=1,Y=1,Z=1),MaxRange=(X=1,Y=1,Z=1),...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartSize
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);

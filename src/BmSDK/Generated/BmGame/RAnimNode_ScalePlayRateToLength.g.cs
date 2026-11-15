@@ -79,7 +79,8 @@ public partial class RAnimNode_ScalePlayRateToLength : BmSDK.Engine.AnimNodeBlen
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: ScaledAnimLength
+    /// FloatProperty: ScaledAnimLength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ScaledAnimLength
     {

@@ -106,7 +106,8 @@ public partial class RJokerTunnelPoint : BmSDK.BmGame.RDummyTarget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bCanLookAtBatman
+    /// BoolProperty: bCanLookAtBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanLookAtBatman
     {
@@ -142,7 +143,8 @@ public partial class RJokerTunnelPoint : BmSDK.BmGame.RDummyTarget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxDist
+    /// FloatProperty: MaxDist<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxDist
     {

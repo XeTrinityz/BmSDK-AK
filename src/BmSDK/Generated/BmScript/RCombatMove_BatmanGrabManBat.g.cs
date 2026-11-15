@@ -401,7 +401,8 @@ public partial class RCombatMove_BatmanGrabManBat : BmSDK.BmGame.RCombatMove, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 836);
 
     /// <summary>
-    /// FloatProperty: StruggleTime
+    /// FloatProperty: StruggleTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StruggleTime
     {
@@ -428,7 +429,8 @@ public partial class RCombatMove_BatmanGrabManBat : BmSDK.BmGame.RCombatMove, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 868);
 
     /// <summary>
-    /// FloatProperty: Peak
+    /// FloatProperty: Peak<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float Peak
     {

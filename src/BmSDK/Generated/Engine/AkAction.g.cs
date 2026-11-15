@@ -83,7 +83,8 @@ public partial class AkAction : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Counter
+    /// IntProperty: Counter<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Counter
     {

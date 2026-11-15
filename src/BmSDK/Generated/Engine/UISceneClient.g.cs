@@ -246,7 +246,8 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 224);
 
     /// <summary>
-    /// BoolProperty: bEnablePostProcess
+    /// BoolProperty: bEnablePostProcess<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnablePostProcess
     {

@@ -79,13 +79,15 @@ public partial class RAkAudiblePropagation : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: PropagationDesc
+    /// StructProperty: PropagationDesc<br/>
+    /// Default: (PropagationBubble=0.1,PropagationExtent=100,PrimaryRayOcclusionWeighting=1,PrimaryRayObstructionWeighting=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkPropagationDesc PropagationDesc
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkPropagationDesc>(Ptr + 84);
 
     /// <summary>
-    /// FloatProperty: UpdateTimeFast
+    /// FloatProperty: UpdateTimeFast<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float UpdateTimeFast
     {
@@ -94,7 +96,8 @@ public partial class RAkAudiblePropagation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UpdateTimeSlow
+    /// FloatProperty: UpdateTimeSlow<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float UpdateTimeSlow
     {
@@ -103,7 +106,8 @@ public partial class RAkAudiblePropagation : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InterpolationTime
+    /// FloatProperty: InterpolationTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float InterpolationTime
     {

@@ -275,7 +275,8 @@ public partial class RStealthTakedownStage_GrateInvertedTakedownEnd : BmSDK.BmGa
     }
 
     /// <summary>
-    /// NameProperty: RopeBoneAttachName
+    /// NameProperty: RopeBoneAttachName<br/>
+    /// Default: Bip01_Pelvis
     /// </summary>
     public unsafe BmSDK.FName RopeBoneAttachName
     {
@@ -284,7 +285,8 @@ public partial class RStealthTakedownStage_GrateInvertedTakedownEnd : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeAttachConnectionDistance
+    /// FloatProperty: RopeAttachConnectionDistance<br/>
+    /// Default: 105
     /// </summary>
     public unsafe float RopeAttachConnectionDistance
     {
@@ -293,7 +295,8 @@ public partial class RStealthTakedownStage_GrateInvertedTakedownEnd : BmSDK.BmGa
     }
 
     /// <summary>
-    /// ArrayProperty: RopeExtraAttachConnections
+    /// ArrayProperty: RopeExtraAttachConnections<br/>
+    /// Default: ((RopeExtraAttachBoneName=Bip01_L_Calf,RopeExtraAttachBonePos=(X=50,Z=12)),(RopeExtraAttachBoneName=Bip01_R_Calf,RopeExtraAttachBonePos=(X=50,Z=-12)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RRopeComponent.FRopeExtraAttachConnection> RopeExtraAttachConnections
     {

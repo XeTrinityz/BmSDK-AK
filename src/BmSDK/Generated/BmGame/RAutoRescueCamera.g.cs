@@ -129,7 +129,8 @@ public partial class RAutoRescueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1248);
 
     /// <summary>
-    /// StructProperty: SilentPredCameraOffset
+    /// StructProperty: SilentPredCameraOffset<br/>
+    /// Default: (X=-100,Y=30,Z=25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SilentPredCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1260);

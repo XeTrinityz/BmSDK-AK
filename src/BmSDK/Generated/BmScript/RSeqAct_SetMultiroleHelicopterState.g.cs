@@ -260,7 +260,8 @@ public partial class RSeqAct_SetMultiroleHelicopterState : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// BoolProperty: TankDropFaceBatmanOnDescent
+    /// BoolProperty: TankDropFaceBatmanOnDescent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TankDropFaceBatmanOnDescent
     {
@@ -287,7 +288,8 @@ public partial class RSeqAct_SetMultiroleHelicopterState : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: ProximityAtWhichToTriggerOutput
+    /// FloatProperty: ProximityAtWhichToTriggerOutput<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ProximityAtWhichToTriggerOutput
     {
@@ -296,7 +298,8 @@ public partial class RSeqAct_SetMultiroleHelicopterState : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: TankDropSecondsBeforeReascend
+    /// FloatProperty: TankDropSecondsBeforeReascend<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TankDropSecondsBeforeReascend
     {
@@ -305,7 +308,8 @@ public partial class RSeqAct_SetMultiroleHelicopterState : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// IntProperty: HelicopterArmour
+    /// IntProperty: HelicopterArmour<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int HelicopterArmour
     {

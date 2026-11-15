@@ -814,7 +814,8 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     }
 
     /// <summary>
-    /// BoolProperty: DoFadeOnSuccess
+    /// BoolProperty: DoFadeOnSuccess<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoFadeOnSuccess
     {
@@ -823,7 +824,8 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     }
 
     /// <summary>
-    /// BoolProperty: DoFadeOnFail
+    /// BoolProperty: DoFadeOnFail<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoFadeOnFail
     {
@@ -832,7 +834,8 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     }
 
     /// <summary>
-    /// BoolProperty: DoFadeOnAbort
+    /// BoolProperty: DoFadeOnAbort<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoFadeOnAbort
     {
@@ -841,7 +844,8 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     }
 
     /// <summary>
-    /// BoolProperty: DoFadeOnRestart
+    /// BoolProperty: DoFadeOnRestart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoFadeOnRestart
     {

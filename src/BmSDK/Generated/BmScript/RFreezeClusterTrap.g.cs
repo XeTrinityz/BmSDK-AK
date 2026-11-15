@@ -255,7 +255,8 @@ public partial class RFreezeClusterTrap : BmSDK.BmGame.RFreezeClusterTrapBase, B
     }
 
     /// <summary>
-    /// FloatProperty: PostActivationDestroyDelay
+    /// FloatProperty: PostActivationDestroyDelay<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float PostActivationDestroyDelay
     {
@@ -291,7 +292,8 @@ public partial class RFreezeClusterTrap : BmSDK.BmGame.RFreezeClusterTrapBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: ProjectileMesh
+    /// ComponentProperty: ProjectileMesh<br/>
+    /// Default: BmScript.Default__RFreezeClusterTrap.GadgetMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ProjectileMesh
     {
@@ -300,7 +302,8 @@ public partial class RFreezeClusterTrap : BmSDK.BmGame.RFreezeClusterTrapBase, B
     }
 
     /// <summary>
-    /// FloatProperty: SecondaryModeActivationDelay
+    /// FloatProperty: SecondaryModeActivationDelay<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float SecondaryModeActivationDelay
     {

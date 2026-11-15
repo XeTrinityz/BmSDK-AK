@@ -79,7 +79,8 @@ public partial class InterpCurveEdSetup : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ArrayProperty: Tabs
+    /// ArrayProperty: Tabs<br/>
+    /// Default: ((TabName="Default",ViewEndInput=1,ViewStartOutput=-1,ViewEndOutput=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.InterpCurveEdSetup.FCurveEdTab> Tabs
     {

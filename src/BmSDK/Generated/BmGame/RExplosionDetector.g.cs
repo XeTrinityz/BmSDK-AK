@@ -132,7 +132,8 @@ public partial class RExplosionDetector : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float Radius
     {
@@ -141,7 +142,8 @@ public partial class RExplosionDetector : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Height
+    /// FloatProperty: Height<br/>
+    /// Default: 140
     /// </summary>
     public unsafe float Height
     {

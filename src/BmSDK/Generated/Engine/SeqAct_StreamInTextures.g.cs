@@ -146,7 +146,8 @@ public partial class SeqAct_StreamInTextures : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: Seconds
+    /// FloatProperty: Seconds<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float Seconds
     {
@@ -155,7 +156,8 @@ public partial class SeqAct_StreamInTextures : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: StreamingDistanceMultiplier
+    /// FloatProperty: StreamingDistanceMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StreamingDistanceMultiplier
     {

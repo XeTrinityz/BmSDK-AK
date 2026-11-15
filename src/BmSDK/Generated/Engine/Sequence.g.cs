@@ -349,7 +349,8 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

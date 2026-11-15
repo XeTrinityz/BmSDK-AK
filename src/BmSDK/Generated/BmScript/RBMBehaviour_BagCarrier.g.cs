@@ -1770,7 +1770,8 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
     }
 
     /// <summary>
-    /// BoolProperty: bLastAmbientDialogueWasAboutCash
+    /// BoolProperty: bLastAmbientDialogueWasAboutCash<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLastAmbientDialogueWasAboutCash
     {
@@ -1830,7 +1831,8 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenOverlaysMin
+    /// FloatProperty: timeBetweenOverlaysMin<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float timeBetweenOverlaysMin
     {
@@ -1839,7 +1841,8 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenOverlaysMax
+    /// FloatProperty: timeBetweenOverlaysMax<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float timeBetweenOverlaysMax
     {
@@ -1857,7 +1860,8 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
     }
 
     /// <summary>
-    /// FloatProperty: pickupDuration
+    /// FloatProperty: pickupDuration<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float pickupDuration
     {
@@ -1875,7 +1879,8 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
     }
 
     /// <summary>
-    /// FloatProperty: aimAtGrateDuration
+    /// FloatProperty: aimAtGrateDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float aimAtGrateDuration
     {

@@ -433,7 +433,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     public partial record struct FAkAxisParameter
     {
         /// <summary>
-        /// FloatProperty: High
+        /// FloatProperty: High<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float High
         {
@@ -451,7 +452,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Mid
+        /// FloatProperty: Mid<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float Mid
         {
@@ -488,7 +490,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AkProps
+    /// ObjectProperty: AkProps<br/>
+    /// Default: AkAudio.Default__AkAudioVolume.AkProperties_AkProps
     /// </summary>
     public unsafe BmSDK.Engine.AkProperties AkProps
     {
@@ -542,7 +545,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OcclusionMultiplier
+    /// FloatProperty: OcclusionMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OcclusionMultiplier
     {
@@ -551,19 +555,22 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ParameterX
+    /// StructProperty: ParameterX<br/>
+    /// Default: (High=1,Mid=0.5)
     /// </summary>
     public unsafe ref BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter ParameterX
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter>(Ptr + 812);
 
     /// <summary>
-    /// StructProperty: ParameterY
+    /// StructProperty: ParameterY<br/>
+    /// Default: (High=1,Mid=0.5)
     /// </summary>
     public unsafe ref BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter ParameterY
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter>(Ptr + 828);
 
     /// <summary>
-    /// StructProperty: ParameterZ
+    /// StructProperty: ParameterZ<br/>
+    /// Default: (High=1,Mid=0.5)
     /// </summary>
     public unsafe ref BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter ParameterZ
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.AkAudio.AkAudioVolume.FAkAxisParameter>(Ptr + 844);
@@ -587,7 +594,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FalloffRadiusMultiplier
+    /// FloatProperty: FalloffRadiusMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FalloffRadiusMultiplier
     {
@@ -614,7 +622,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: TouchingCount
+    /// IntProperty: TouchingCount<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TouchingCount
     {
@@ -641,7 +650,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LastKnownOverlapTouchingValue
+    /// FloatProperty: LastKnownOverlapTouchingValue<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LastKnownOverlapTouchingValue
     {

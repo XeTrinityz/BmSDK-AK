@@ -79,7 +79,8 @@ public partial class AnimationCompressionAlgorithm_RemoveTrivialKeys : BmSDK.Eng
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxPosDiff
+    /// FloatProperty: MaxPosDiff<br/>
+    /// Default: 1e-04
     /// </summary>
     public unsafe float MaxPosDiff
     {
@@ -88,7 +89,8 @@ public partial class AnimationCompressionAlgorithm_RemoveTrivialKeys : BmSDK.Eng
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngleDiff
+    /// FloatProperty: MaxAngleDiff<br/>
+    /// Default: 3e-04
     /// </summary>
     public unsafe float MaxAngleDiff
     {

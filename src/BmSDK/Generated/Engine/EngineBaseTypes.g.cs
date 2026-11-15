@@ -80,7 +80,8 @@ public partial class EngineBaseTypes : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FRenderingPerformanceOverrides
     {
         /// <summary>
-        /// BoolProperty: bAllowAmbientOcclusion
+        /// BoolProperty: bAllowAmbientOcclusion<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowAmbientOcclusion
         {
@@ -89,7 +90,8 @@ public partial class EngineBaseTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowDominantWholeSceneDynamicShadows
+        /// BoolProperty: bAllowDominantWholeSceneDynamicShadows<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowDominantWholeSceneDynamicShadows
         {
@@ -98,7 +100,8 @@ public partial class EngineBaseTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowMotionBlurSkinning
+        /// BoolProperty: bAllowMotionBlurSkinning<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowMotionBlurSkinning
         {
@@ -107,7 +110,8 @@ public partial class EngineBaseTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowTemporalAA
+        /// BoolProperty: bAllowTemporalAA<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowTemporalAA
         {
@@ -116,7 +120,8 @@ public partial class EngineBaseTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowLightShafts
+        /// BoolProperty: bAllowLightShafts<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowLightShafts
         {

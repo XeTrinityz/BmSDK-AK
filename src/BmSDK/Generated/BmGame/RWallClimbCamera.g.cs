@@ -331,7 +331,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1248);
 
     /// <summary>
-    /// FloatProperty: maxPitch
+    /// FloatProperty: maxPitch<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float maxPitch
     {
@@ -340,7 +341,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxYaw
+    /// FloatProperty: MaxYaw<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxYaw
     {
@@ -349,7 +351,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BlendInTimeFromSwing
+    /// FloatProperty: BlendInTimeFromSwing<br/>
+    /// Default: 0.55
     /// </summary>
     public unsafe float BlendInTimeFromSwing
     {
@@ -358,7 +361,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BlendInTimeFromGround
+    /// FloatProperty: BlendInTimeFromGround<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float BlendInTimeFromGround
     {
@@ -367,7 +371,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutTime
+    /// FloatProperty: BlendOutTime<br/>
+    /// Default: 1.6
     /// </summary>
     public unsafe float BlendOutTime
     {
@@ -376,7 +381,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: NormalBlendOutTime
+    /// FloatProperty: NormalBlendOutTime<br/>
+    /// Default: 1.4
     /// </summary>
     public unsafe float NormalBlendOutTime
     {
@@ -385,7 +391,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LedgeBlendOutTime
+    /// FloatProperty: LedgeBlendOutTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LedgeBlendOutTime
     {
@@ -394,7 +401,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: TimeToBlendout
+    /// FloatProperty: TimeToBlendout<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float TimeToBlendout
     {
@@ -403,7 +411,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: PlayerTargetWeight
+    /// FloatProperty: PlayerTargetWeight<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float PlayerTargetWeight
     {
@@ -424,7 +433,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1308);
 
     /// <summary>
-    /// FloatProperty: CamDistance
+    /// FloatProperty: CamDistance<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float CamDistance
     {
@@ -433,7 +443,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: CamHeight
+    /// FloatProperty: CamHeight<br/>
+    /// Default: -250
     /// </summary>
     public unsafe float CamHeight
     {
@@ -442,7 +453,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ExtraVantageDistance
+    /// FloatProperty: ExtraVantageDistance<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ExtraVantageDistance
     {
@@ -469,7 +481,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1356);
 
     /// <summary>
-    /// FloatProperty: InitialLookAtSpeed
+    /// FloatProperty: InitialLookAtSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InitialLookAtSpeed
     {
@@ -478,7 +491,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: LookAtSpeed
+    /// FloatProperty: LookAtSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookAtSpeed
     {
@@ -487,7 +501,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FinalLookAtSpeed
+    /// FloatProperty: FinalLookAtSpeed<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float FinalLookAtSpeed
     {
@@ -496,7 +511,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FromSwingLookAtFactor
+    /// FloatProperty: FromSwingLookAtFactor<br/>
+    /// Default: 1.8
     /// </summary>
     public unsafe float FromSwingLookAtFactor
     {
@@ -505,7 +521,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MoveSpeed
+    /// FloatProperty: MoveSpeed<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float MoveSpeed
     {
@@ -514,7 +531,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FinalMoveSpeed
+    /// FloatProperty: FinalMoveSpeed<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float FinalMoveSpeed
     {
@@ -523,7 +541,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FastCollidedMoveSpeed
+    /// FloatProperty: FastCollidedMoveSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FastCollidedMoveSpeed
     {
@@ -631,7 +650,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bUseOvershotParams
+    /// BoolProperty: bUseOvershotParams<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseOvershotParams
     {
@@ -685,7 +705,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bRotationFixedOnTarget
+    /// BoolProperty: bRotationFixedOnTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRotationFixedOnTarget
     {
@@ -694,7 +715,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bWideFOVAngle
+    /// BoolProperty: bWideFOVAngle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWideFOVAngle
     {
@@ -742,7 +764,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1452);
 
     /// <summary>
-    /// FloatProperty: LookModeScale
+    /// FloatProperty: LookModeScale<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float LookModeScale
     {
@@ -751,7 +774,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxExtraPitch
+    /// FloatProperty: MaxExtraPitch<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxExtraPitch
     {
@@ -769,7 +793,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxExtraYaw
+    /// FloatProperty: MaxExtraYaw<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxExtraYaw
     {
@@ -799,7 +824,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1496);
 
     /// <summary>
-    /// FloatProperty: Spring
+    /// FloatProperty: Spring<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float Spring
     {
@@ -808,7 +834,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Spring2
+    /// FloatProperty: Spring2<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float Spring2
     {
@@ -817,7 +844,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Damper
+    /// FloatProperty: Damper<br/>
+    /// Default: 1.7
     /// </summary>
     public unsafe float Damper
     {
@@ -826,7 +854,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Damper2
+    /// FloatProperty: Damper2<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float Damper2
     {
@@ -835,7 +864,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Mass
+    /// FloatProperty: Mass<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Mass
     {
@@ -844,7 +874,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: Mass2
+    /// FloatProperty: Mass2<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Mass2
     {
@@ -862,7 +893,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MaxDampingRange
+    /// FloatProperty: MaxDampingRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MaxDampingRange
     {
@@ -889,13 +921,15 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 1548);
 
     /// <summary>
-    /// StructProperty: TargetOffset
+    /// StructProperty: TargetOffset<br/>
+    /// Default: (Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 TargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1584);

@@ -417,7 +417,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// ObjectProperty: TunerFFWaveForm
+    /// ObjectProperty: TunerFFWaveForm<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_ResonateObject.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TunerFFWaveForm
     {
@@ -462,7 +463,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: ResonantTolerance
+    /// FloatProperty: ResonantTolerance<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float ResonantTolerance
     {
@@ -516,7 +518,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: TotalScoreIncreaseRate
+    /// FloatProperty: TotalScoreIncreaseRate<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float TotalScoreIncreaseRate
     {
@@ -525,7 +528,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: TotalScoreDecreaseRate
+    /// FloatProperty: TotalScoreDecreaseRate<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float TotalScoreDecreaseRate
     {
@@ -594,7 +598,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: PCLeftThumbPos
+    /// FloatProperty: PCLeftThumbPos<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float PCLeftThumbPos
     {

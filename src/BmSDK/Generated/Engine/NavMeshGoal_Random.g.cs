@@ -130,7 +130,8 @@ public partial class NavMeshGoal_Random : BmSDK.Engine.NavMeshPathGoalEvaluator,
     }
 
     /// <summary>
-    /// IntProperty: MinDist
+    /// IntProperty: MinDist<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MinDist
     {
@@ -139,7 +140,8 @@ public partial class NavMeshGoal_Random : BmSDK.Engine.NavMeshPathGoalEvaluator,
     }
 
     /// <summary>
-    /// FloatProperty: BestRating
+    /// FloatProperty: BestRating<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float BestRating
     {

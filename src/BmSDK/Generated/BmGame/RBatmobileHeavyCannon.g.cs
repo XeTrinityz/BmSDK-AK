@@ -389,7 +389,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: HeavyCannonFFWaveForm
+    /// ObjectProperty: HeavyCannonFFWaveForm<br/>
+    /// Default: BmGame.Default__RBatmobileHeavyCannon.HeavyCannonFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform HeavyCannonFFWaveForm
     {
@@ -398,7 +399,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: RecoilImpulse
+    /// FloatProperty: RecoilImpulse<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float RecoilImpulse
     {
@@ -407,7 +409,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: RecoilImpulsePitch
+    /// FloatProperty: RecoilImpulsePitch<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RecoilImpulsePitch
     {
@@ -425,7 +428,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: ChargeShakeId
+    /// IntProperty: ChargeShakeId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ChargeShakeId
     {
@@ -434,7 +438,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LockOnRange
+    /// FloatProperty: LockOnRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float LockOnRange
     {
@@ -443,7 +448,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LockOnAngle
+    /// FloatProperty: LockOnAngle<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float LockOnAngle
     {
@@ -497,7 +503,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LockOnTimeMin
+    /// FloatProperty: LockOnTimeMin<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LockOnTimeMin
     {
@@ -506,7 +513,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LockOnTimeMax
+    /// FloatProperty: LockOnTimeMax<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float LockOnTimeMax
     {
@@ -524,19 +532,22 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: FireScreenShake
+    /// StructProperty: FireScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct FireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2500);
 
     /// <summary>
-    /// StructProperty: ChargingScreenShake
+    /// StructProperty: ChargingScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ChargingScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2656);
 
     /// <summary>
-    /// FloatProperty: ChargingDelay
+    /// FloatProperty: ChargingDelay<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ChargingDelay
     {
@@ -545,7 +556,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ChargeUpTime
+    /// FloatProperty: ChargeUpTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ChargeUpTime
     {
@@ -554,7 +566,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ChargeMaxDamageRadius
+    /// FloatProperty: ChargeMaxDamageRadius<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float ChargeMaxDamageRadius
     {
@@ -563,7 +576,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ChargeMaxDamageMultiplier
+    /// FloatProperty: ChargeMaxDamageMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ChargeMaxDamageMultiplier
     {
@@ -596,7 +610,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradedReloadTime
+    /// ArrayProperty: UpgradedReloadTime<br/>
+    /// Default: (1.75,1.5)
     /// </summary>
     public unsafe BmSDK.TArray<float> UpgradedReloadTime
     {
@@ -605,7 +620,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
     }
 
     /// <summary>
-    /// ByteProperty: CoolDownAnim
+    /// ByteProperty: CoolDownAnim<br/>
+    /// Default: 2
     /// </summary>
     public unsafe byte CoolDownAnim
     {

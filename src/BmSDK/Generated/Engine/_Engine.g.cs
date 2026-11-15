@@ -1499,7 +1499,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: MapMaskTexture
+    /// ObjectProperty: MapMaskTexture<br/>
+    /// Default: CITY_MapScreenAssets.CITY_MapScreenIslandMask
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D MapMaskTexture
     {
@@ -1508,7 +1509,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PostProcessNoiseTexture
+    /// ObjectProperty: PostProcessNoiseTexture<br/>
+    /// Default: PostProcess.PostProcessNoise
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D PostProcessNoiseTexture
     {
@@ -1517,7 +1519,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ScreenDirt
+    /// ObjectProperty: ScreenDirt<br/>
+    /// Default: PostProcess.pp_glareImpurities
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D ScreenDirt
     {
@@ -1526,7 +1529,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PostProcessGlareBeamTexture
+    /// ObjectProperty: PostProcessGlareBeamTexture<br/>
+    /// Default: PostProcess.pp_glareBeam
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D PostProcessGlareBeamTexture
     {
@@ -1535,7 +1539,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: EyelashMask
+    /// ObjectProperty: EyelashMask<br/>
+    /// Default: PostProcess.pp_EyelashMask
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D EyelashMask
     {
@@ -1544,7 +1549,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: GhostMask
+    /// ObjectProperty: GhostMask<br/>
+    /// Default: PostProcess.pp_glareGhost
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D GhostMask
     {
@@ -1553,7 +1559,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Rain_TemporalSplashPattern
+    /// ObjectProperty: Rain_TemporalSplashPattern<br/>
+    /// Default: PostProcess.Rain_TemporalSplashPattern
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Rain_TemporalSplashPattern
     {
@@ -1562,7 +1569,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Dust_DetailMap
+    /// ObjectProperty: Dust_DetailMap<br/>
+    /// Default: PostProcess.ThickGas_GlobalND
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Dust_DetailMap
     {
@@ -1571,7 +1579,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Dust_ReliefMap
+    /// ObjectProperty: Dust_ReliefMap<br/>
+    /// Default: PostProcess.ThickGas_Height
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Dust_ReliefMap
     {
@@ -1580,7 +1589,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Pollen_DetailMap
+    /// ObjectProperty: Pollen_DetailMap<br/>
+    /// Default: PostProcess.Pollen_GlobalND
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Pollen_DetailMap
     {
@@ -1589,7 +1599,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Pollen_ReliefMap
+    /// ObjectProperty: Pollen_ReliefMap<br/>
+    /// Default: PostProcess.Pollen_Height
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Pollen_ReliefMap
     {
@@ -1598,7 +1609,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TileComplexityTexture
+    /// ObjectProperty: TileComplexityTexture<br/>
+    /// Default: RockEditorResources.TileComplexity
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D TileComplexityTexture
     {
@@ -1607,7 +1619,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SMAA_AreaTexture
+    /// ObjectProperty: SMAA_AreaTexture<br/>
+    /// Default: PostProcess.SMAA_AreaTexDX10
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D SMAA_AreaTexture
     {
@@ -1616,7 +1629,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SMAA_SearchTexture
+    /// ObjectProperty: SMAA_SearchTexture<br/>
+    /// Default: PostProcess.SMAA_SearchTex
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D SMAA_SearchTexture
     {
@@ -1778,7 +1792,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: TinyFontName
+    /// StrProperty: TinyFontName<br/>
+    /// Default: "BmFonts.EngineTinyFont"
     /// </summary>
     public unsafe BmSDK.FString TinyFontName
     {
@@ -1787,7 +1802,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SmallFontName
+    /// StrProperty: SmallFontName<br/>
+    /// Default: "BmFonts.EngineSmallFont"
     /// </summary>
     public unsafe BmSDK.FString SmallFontName
     {
@@ -1796,7 +1812,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MediumFontName
+    /// StrProperty: MediumFontName<br/>
+    /// Default: "BmFonts.MediumFont"
     /// </summary>
     public unsafe BmSDK.FString MediumFontName
     {
@@ -1805,7 +1822,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LargeFontName
+    /// StrProperty: LargeFontName<br/>
+    /// Default: "BmFonts.MediumFont"
     /// </summary>
     public unsafe BmSDK.FString LargeFontName
     {
@@ -1814,7 +1832,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SubtitleFontName
+    /// StrProperty: SubtitleFontName<br/>
+    /// Default: "BmFonts.EngineSmallFont"
     /// </summary>
     public unsafe BmSDK.FString SubtitleFontName
     {
@@ -1832,7 +1851,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: AdditionalFontNames
+    /// ArrayProperty: AdditionalFontNames<br/>
+    /// Default: ("BmFonts.MediumFont")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> AdditionalFontNames
     {
@@ -1841,7 +1861,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ConsoleClassName
+    /// StrProperty: ConsoleClassName<br/>
+    /// Default: "Engine.Console"
     /// </summary>
     public unsafe BmSDK.FString ConsoleClassName
     {
@@ -1850,7 +1871,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: GameViewportClientClassName
+    /// StrProperty: GameViewportClientClassName<br/>
+    /// Default: "BmGame.RGFxGameViewportClient"
     /// </summary>
     public unsafe BmSDK.FString GameViewportClientClassName
     {
@@ -1859,7 +1881,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DataStoreClientClassName
+    /// StrProperty: DataStoreClientClassName<br/>
+    /// Default: "Engine.DataStoreClient"
     /// </summary>
     public unsafe BmSDK.FString DataStoreClientClassName
     {
@@ -1868,7 +1891,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LocalPlayerClassName
+    /// StrProperty: LocalPlayerClassName<br/>
+    /// Default: "Engine.LocalPlayer"
     /// </summary>
     public unsafe BmSDK.FString LocalPlayerClassName
     {
@@ -1877,7 +1901,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultMaterialName
+    /// StrProperty: DefaultMaterialName<br/>
+    /// Default: "EngineMaterials.DefaultMaterial"
     /// </summary>
     public unsafe BmSDK.FString DefaultMaterialName
     {
@@ -1886,7 +1911,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultDecalMaterialName
+    /// StrProperty: DefaultDecalMaterialName<br/>
+    /// Default: "EngineMaterials.DefaultDecalMaterial"
     /// </summary>
     public unsafe BmSDK.FString DefaultDecalMaterialName
     {
@@ -1895,7 +1921,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultTextureName
+    /// StrProperty: DefaultTextureName<br/>
+    /// Default: "EngineMaterials.DefaultDiffuse"
     /// </summary>
     public unsafe BmSDK.FString DefaultTextureName
     {
@@ -1904,7 +1931,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultTwoSidedMaterialName
+    /// StrProperty: DefaultTwoSidedMaterialName<br/>
+    /// Default: "EngineMaterials.DefaultTwoSidedMaterial"
     /// </summary>
     public unsafe BmSDK.FString DefaultTwoSidedMaterialName
     {
@@ -1913,7 +1941,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: WireframeMaterialName
+    /// StrProperty: WireframeMaterialName<br/>
+    /// Default: "EngineDebugMaterials.WireframeMaterial"
     /// </summary>
     public unsafe BmSDK.FString WireframeMaterialName
     {
@@ -1922,7 +1951,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: EmissiveTexturedMaterialName
+    /// StrProperty: EmissiveTexturedMaterialName<br/>
+    /// Default: "EngineMaterials.EmissiveTexturedMaterial"
     /// </summary>
     public unsafe BmSDK.FString EmissiveTexturedMaterialName
     {
@@ -1931,7 +1961,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: GeomMaterialName
+    /// StrProperty: GeomMaterialName<br/>
+    /// Default: "EngineDebugMaterials.GeomMaterial"
     /// </summary>
     public unsafe BmSDK.FString GeomMaterialName
     {
@@ -1940,7 +1971,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultFogVolumeMaterialName
+    /// StrProperty: DefaultFogVolumeMaterialName<br/>
+    /// Default: "EngineMaterials.FogVolumeMaterial"
     /// </summary>
     public unsafe BmSDK.FString DefaultFogVolumeMaterialName
     {
@@ -1949,7 +1981,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: TickMaterialName
+    /// StrProperty: TickMaterialName<br/>
+    /// Default: "EditorMaterials.Tick_Mat"
     /// </summary>
     public unsafe BmSDK.FString TickMaterialName
     {
@@ -1958,7 +1991,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: CrossMaterialName
+    /// StrProperty: CrossMaterialName<br/>
+    /// Default: "EditorMaterials.Cross_Mat"
     /// </summary>
     public unsafe BmSDK.FString CrossMaterialName
     {
@@ -1967,7 +2001,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LevelColorationLitMaterialName
+    /// StrProperty: LevelColorationLitMaterialName<br/>
+    /// Default: "EngineDebugMaterials.LevelColorationLitMaterial"
     /// </summary>
     public unsafe BmSDK.FString LevelColorationLitMaterialName
     {
@@ -1976,7 +2011,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LevelColorationUnlitMaterialName
+    /// StrProperty: LevelColorationUnlitMaterialName<br/>
+    /// Default: "EngineDebugMaterials.LevelColorationUnlitMaterial"
     /// </summary>
     public unsafe BmSDK.FString LevelColorationUnlitMaterialName
     {
@@ -1985,7 +2021,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LevelColorationLitTransMaterialName
+    /// StrProperty: LevelColorationLitTransMaterialName<br/>
+    /// Default: "EngineDebugMaterials.LevelColorationLitTransMaterial"
     /// </summary>
     public unsafe BmSDK.FString LevelColorationLitTransMaterialName
     {
@@ -1994,7 +2031,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LevelColorationUnlitTransMaterialName
+    /// StrProperty: LevelColorationUnlitTransMaterialName<br/>
+    /// Default: "EngineDebugMaterials.LevelColorationUnlitTransMaterial"
     /// </summary>
     public unsafe BmSDK.FString LevelColorationUnlitTransMaterialName
     {
@@ -2003,7 +2041,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LightingTexelDensityName
+    /// StrProperty: LightingTexelDensityName<br/>
+    /// Default: "EngineDebugMaterials.MAT_LevelColorationLitLightmapUVs"
     /// </summary>
     public unsafe BmSDK.FString LightingTexelDensityName
     {
@@ -2012,7 +2051,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ShadedLevelColorationLitMaterialName
+    /// StrProperty: ShadedLevelColorationLitMaterialName<br/>
+    /// Default: "EngineDebugMaterials.ShadedLevelColorationLitMaterial"
     /// </summary>
     public unsafe BmSDK.FString ShadedLevelColorationLitMaterialName
     {
@@ -2021,7 +2061,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ShadedLevelColorationUnlitMaterialName
+    /// StrProperty: ShadedLevelColorationUnlitMaterialName<br/>
+    /// Default: "EngineDebugMaterials.ShadedLevelColorationUnlitMaterial"
     /// </summary>
     public unsafe BmSDK.FString ShadedLevelColorationUnlitMaterialName
     {
@@ -2030,7 +2071,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RemoveSurfaceMaterialName
+    /// StrProperty: RemoveSurfaceMaterialName<br/>
+    /// Default: "EngineMaterials.RemoveSurfaceMaterial"
     /// </summary>
     public unsafe BmSDK.FString RemoveSurfaceMaterialName
     {
@@ -2039,7 +2081,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorMaterialName
+    /// StrProperty: VertexColorMaterialName<br/>
+    /// Default: "EngineDebugMaterials.VertexColorMaterial"
     /// </summary>
     public unsafe BmSDK.FString VertexColorMaterialName
     {
@@ -2048,7 +2091,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorViewModeMaterialName_ColorOnly
+    /// StrProperty: VertexColorViewModeMaterialName_ColorOnly<br/>
+    /// Default: "EngineDebugMaterials.VertexColorViewMode_ColorOnly"
     /// </summary>
     public unsafe BmSDK.FString VertexColorViewModeMaterialName_ColorOnly
     {
@@ -2057,7 +2101,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorViewModeMaterialName_AlphaAsColor
+    /// StrProperty: VertexColorViewModeMaterialName_AlphaAsColor<br/>
+    /// Default: "EngineDebugMaterials.VertexColorViewMode_AlphaAsColor"
     /// </summary>
     public unsafe BmSDK.FString VertexColorViewModeMaterialName_AlphaAsColor
     {
@@ -2066,7 +2111,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorViewModeMaterialName_RedOnly
+    /// StrProperty: VertexColorViewModeMaterialName_RedOnly<br/>
+    /// Default: "EngineDebugMaterials.VertexColorViewMode_RedOnly"
     /// </summary>
     public unsafe BmSDK.FString VertexColorViewModeMaterialName_RedOnly
     {
@@ -2075,7 +2121,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorViewModeMaterialName_GreenOnly
+    /// StrProperty: VertexColorViewModeMaterialName_GreenOnly<br/>
+    /// Default: "EngineDebugMaterials.VertexColorViewMode_GreenOnly"
     /// </summary>
     public unsafe BmSDK.FString VertexColorViewModeMaterialName_GreenOnly
     {
@@ -2084,7 +2131,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VertexColorViewModeMaterialName_BlueOnly
+    /// StrProperty: VertexColorViewModeMaterialName_BlueOnly<br/>
+    /// Default: "EngineDebugMaterials.VertexColorViewMode_BlueOnly"
     /// </summary>
     public unsafe BmSDK.FString VertexColorViewModeMaterialName_BlueOnly
     {
@@ -2093,7 +2141,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: HeatmapMaterialName
+    /// StrProperty: HeatmapMaterialName<br/>
+    /// Default: "EngineDebugMaterials.HeatmapMaterial"
     /// </summary>
     public unsafe BmSDK.FString HeatmapMaterialName
     {
@@ -2102,7 +2151,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: BoneWeightMaterialName
+    /// StrProperty: BoneWeightMaterialName<br/>
+    /// Default: "EngineDebugMaterials.BoneWeightMaterial"
     /// </summary>
     public unsafe BmSDK.FString BoneWeightMaterialName
     {
@@ -2111,7 +2161,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: TangentColorMaterialName
+    /// StrProperty: TangentColorMaterialName<br/>
+    /// Default: "EngineDebugMaterials.TangentColorMaterial"
     /// </summary>
     public unsafe BmSDK.FString TangentColorMaterialName
     {
@@ -2120,7 +2171,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MobileEmulationMasterMaterialName
+    /// StrProperty: MobileEmulationMasterMaterialName<br/>
+    /// Default: "MobileEngineMaterials.MobileMasterMaterial"
     /// </summary>
     public unsafe BmSDK.FString MobileEmulationMasterMaterialName
     {
@@ -2129,7 +2181,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ProcBuildingSimpleMaterialName
+    /// StrProperty: ProcBuildingSimpleMaterialName<br/>
+    /// Default: "EngineBuildings.ProcBuildingSimpleMaterial"
     /// </summary>
     public unsafe BmSDK.FString ProcBuildingSimpleMaterialName
     {
@@ -2138,7 +2191,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: BuildingQuadStaticMeshName
+    /// StrProperty: BuildingQuadStaticMeshName<br/>
+    /// Default: "EngineBuildings.BuildingQuadMesh"
     /// </summary>
     public unsafe BmSDK.FString BuildingQuadStaticMeshName
     {
@@ -2147,7 +2201,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ProcBuildingLODColorTexelsPerWorldUnit
+    /// FloatProperty: ProcBuildingLODColorTexelsPerWorldUnit<br/>
+    /// Default: 0.075
     /// </summary>
     public unsafe float ProcBuildingLODColorTexelsPerWorldUnit
     {
@@ -2156,7 +2211,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ProcBuildingLODLightingTexelsPerWorldUnit
+    /// FloatProperty: ProcBuildingLODLightingTexelsPerWorldUnit<br/>
+    /// Default: 0.015
     /// </summary>
     public unsafe float ProcBuildingLODLightingTexelsPerWorldUnit
     {
@@ -2165,7 +2221,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxProcBuildingLODColorTextureSize
+    /// IntProperty: MaxProcBuildingLODColorTextureSize<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe int MaxProcBuildingLODColorTextureSize
     {
@@ -2174,7 +2231,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxProcBuildingLODLightingTextureSize
+    /// IntProperty: MaxProcBuildingLODLightingTextureSize<br/>
+    /// Default: 256
     /// </summary>
     public unsafe int MaxProcBuildingLODLightingTextureSize
     {
@@ -2183,7 +2241,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UseProcBuildingLODTextureCropping
+    /// BoolProperty: UseProcBuildingLODTextureCropping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseProcBuildingLODTextureCropping
     {
@@ -2192,7 +2251,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ForcePowerOfTwoProcBuildingLODTextures
+    /// BoolProperty: ForcePowerOfTwoProcBuildingLODTextures<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ForcePowerOfTwoProcBuildingLODTextures
     {
@@ -2219,7 +2279,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseSound
+    /// BoolProperty: bUseSound<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseSound
     {
@@ -2228,7 +2289,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseBackgroundLevelStreaming
+    /// BoolProperty: bUseBackgroundLevelStreaming<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseBackgroundLevelStreaming
     {
@@ -2255,7 +2317,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSmoothFrameRate
+    /// BoolProperty: bSmoothFrameRate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSmoothFrameRate
     {
@@ -2390,7 +2453,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPauseOnLossOfFocus
+    /// BoolProperty: bPauseOnLossOfFocus<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseOnLossOfFocus
     {
@@ -2399,7 +2463,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCheckParticleRenderSize
+    /// BoolProperty: bCheckParticleRenderSize<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckParticleRenderSize
     {
@@ -2417,7 +2482,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableColorClear
+    /// BoolProperty: bEnableColorClear<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableColorClear
     {
@@ -2453,7 +2519,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableOnScreenDebugMessages
+    /// BoolProperty: bEnableOnScreenDebugMessages<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableOnScreenDebugMessages
     {
@@ -2489,7 +2556,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseRecastNavMesh
+    /// BoolProperty: bUseRecastNavMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseRecastNavMesh
     {
@@ -2507,7 +2575,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUseNormalMapsForSimpleLightMaps
+    /// BoolProperty: bUseNormalMapsForSimpleLightMaps<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseNormalMapsForSimpleLightMaps
     {
@@ -2561,7 +2630,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRMSDForCombiningMappings
+    /// FloatProperty: MaxRMSDForCombiningMappings<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float MaxRMSDForCombiningMappings
     {
@@ -2570,7 +2640,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ImageReflectionTextureSize
+    /// IntProperty: ImageReflectionTextureSize<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe int ImageReflectionTextureSize
     {
@@ -2579,13 +2650,15 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightingOnlyBrightness
+    /// StructProperty: LightingOnlyBrightness<br/>
+    /// Default: (R=0.25,G=0.25,B=0.25,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LightingOnlyBrightness
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1476);
 
     /// <summary>
-    /// ArrayProperty: LightComplexityColors
+    /// ArrayProperty: LightComplexityColors<br/>
+    /// Default: ((A=1),(G=255,A=1),(G=191,R=63,A=1),(G=127,R=127,A=1),(G=63,R=191,A=1),(R=255,A=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.GameObject.FColor> LightComplexityColors
     {
@@ -2594,7 +2667,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ShaderComplexityColors
+    /// ArrayProperty: ShaderComplexityColors<br/>
+    /// Default: ((A=1),(G=1,A=1),(R=0.5,G=0.5,A=1),(R=1,A=1),(B=1,A=1),(G=0.376,B=1,A=1),(R=0.639,G=0.776,B=1,A=1),(R=0.8,G=0.874,B=1,A=1),(R=1,G=1,B=1,A=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.GameObject.FLinearColor> ShaderComplexityColors
     {
@@ -2603,7 +2677,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxPixelShaderAdditiveComplexityCount
+    /// FloatProperty: MaxPixelShaderAdditiveComplexityCount<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxPixelShaderAdditiveComplexityCount
     {
@@ -2621,7 +2696,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: IdealTextureDensity
+    /// FloatProperty: IdealTextureDensity<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float IdealTextureDensity
     {
@@ -2630,7 +2706,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxTextureDensity
+    /// FloatProperty: MaxTextureDensity<br/>
+    /// Default: 21
     /// </summary>
     public unsafe float MaxTextureDensity
     {
@@ -2648,7 +2725,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: IdealLightMapDensity
+    /// FloatProperty: IdealLightMapDensity<br/>
+    /// Default: 0.0035
     /// </summary>
     public unsafe float IdealLightMapDensity
     {
@@ -2657,7 +2735,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLightMapDensity
+    /// FloatProperty: MaxLightMapDensity<br/>
+    /// Default: 0.012
     /// </summary>
     public unsafe float MaxLightMapDensity
     {
@@ -2666,7 +2745,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RenderLightMapDensityGrayscaleScale
+    /// FloatProperty: RenderLightMapDensityGrayscaleScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RenderLightMapDensityGrayscaleScale
     {
@@ -2675,7 +2755,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RenderLightMapDensityColorScale
+    /// FloatProperty: RenderLightMapDensityColorScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RenderLightMapDensityColorScale
     {
@@ -2684,19 +2765,22 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightMapDensityVertexMappedColor
+    /// StructProperty: LightMapDensityVertexMappedColor<br/>
+    /// Default: (R=0.65,G=0.65,B=0.25,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LightMapDensityVertexMappedColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1560);
 
     /// <summary>
-    /// StructProperty: LightMapDensitySelectedColor
+    /// StructProperty: LightMapDensitySelectedColor<br/>
+    /// Default: (R=1,G=0.2,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LightMapDensitySelectedColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1576);
 
     /// <summary>
-    /// ArrayProperty: StatColorMappings
+    /// ArrayProperty: StatColorMappings<br/>
+    /// Default: ((StatName="AverageFPS",ColorMap=((In=15,Out=(R=255)),(In=30,Out=(G=255,R=255)),(In=45,Out=(G=255)))),(StatName="Frametime",ColorMap=((In=1,Out=(G=255)),(In=25,Out=(G=255)),(In=29,Out=(G=255,R=255)),(...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine._Engine.FStatColorMapping> StatColorMappings
     {
@@ -2705,7 +2789,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: EditorBrushMaterialName
+    /// StrProperty: EditorBrushMaterialName<br/>
+    /// Default: "EngineMaterials.EditorBrushMaterial"
     /// </summary>
     public unsafe BmSDK.FString EditorBrushMaterialName
     {
@@ -2714,7 +2799,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultPhysMaterialName
+    /// StrProperty: DefaultPhysMaterialName<br/>
+    /// Default: "DefaultPhysicalMaterial.DefaultPhysicalMaterial"
     /// </summary>
     public unsafe BmSDK.FString DefaultPhysMaterialName
     {
@@ -2723,7 +2809,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LandscapeHolePhysMaterialName
+    /// StrProperty: LandscapeHolePhysMaterialName<br/>
+    /// Default: "EngineMaterials.LandscapeHolePhysicalMaterial"
     /// </summary>
     public unsafe BmSDK.FString LandscapeHolePhysMaterialName
     {
@@ -2732,7 +2819,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ApexDamageParamsName
+    /// StrProperty: ApexDamageParamsName<br/>
+    /// Default: "Global_Settings.APEX.Apex_Destructible_Damage_Parameters"
     /// </summary>
     public unsafe BmSDK.FString ApexDamageParamsName
     {
@@ -2750,7 +2838,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: TerrainErrorMaterialName
+    /// StrProperty: TerrainErrorMaterialName<br/>
+    /// Default: "EngineDebugMaterials.MaterialError_Mat"
     /// </summary>
     public unsafe BmSDK.FString TerrainErrorMaterialName
     {
@@ -2759,7 +2848,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: TerrainMaterialMaxTextureCount
+    /// IntProperty: TerrainMaterialMaxTextureCount<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int TerrainMaterialMaxTextureCount
     {
@@ -2768,7 +2858,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: TerrainTessellationCheckCount
+    /// IntProperty: TerrainTessellationCheckCount<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int TerrainTessellationCheckCount
     {
@@ -2777,7 +2868,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TerrainTessellationCheckDistance
+    /// FloatProperty: TerrainTessellationCheckDistance<br/>
+    /// Default: 4096
     /// </summary>
     public unsafe float TerrainTessellationCheckDistance
     {
@@ -2786,7 +2878,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultOnlineSubsystemName
+    /// StrProperty: DefaultOnlineSubsystemName<br/>
+    /// Default: "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks"
     /// </summary>
     public unsafe BmSDK.FString DefaultOnlineSubsystemName
     {
@@ -2795,7 +2888,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultPostProcessName
+    /// StrProperty: DefaultPostProcessName<br/>
+    /// Default: "PostProcess.PostProcess"
     /// </summary>
     public unsafe BmSDK.FString DefaultPostProcessName
     {
@@ -2804,7 +2898,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ThumbnailSkeletalMeshPostProcessName
+    /// StrProperty: ThumbnailSkeletalMeshPostProcessName<br/>
+    /// Default: "PostProcess.RockDefaultThumbnailPostProcess"
     /// </summary>
     public unsafe BmSDK.FString ThumbnailSkeletalMeshPostProcessName
     {
@@ -2813,7 +2908,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ThumbnailParticleSystemPostProcessName
+    /// StrProperty: ThumbnailParticleSystemPostProcessName<br/>
+    /// Default: "PostProcess.RockDefaultThumbnailPostProcess"
     /// </summary>
     public unsafe BmSDK.FString ThumbnailParticleSystemPostProcessName
     {
@@ -2822,7 +2918,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ThumbnailMaterialPostProcessName
+    /// StrProperty: ThumbnailMaterialPostProcessName<br/>
+    /// Default: "PostProcess.RockDefaultThumbnailPostProcess"
     /// </summary>
     public unsafe BmSDK.FString ThumbnailMaterialPostProcessName
     {
@@ -2831,7 +2928,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultUIScenePostProcessName
+    /// StrProperty: DefaultUIScenePostProcessName<br/>
+    /// Default: "EngineMaterials.DefaultUIPostProcess"
     /// </summary>
     public unsafe BmSDK.FString DefaultUIScenePostProcessName
     {
@@ -2840,7 +2938,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultUICaretMaterialName
+    /// StrProperty: DefaultUICaretMaterialName<br/>
+    /// Default: "EngineMaterials.BlinkingCaret"
     /// </summary>
     public unsafe BmSDK.FString DefaultUICaretMaterialName
     {
@@ -2849,7 +2948,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SceneCaptureReflectActorMaterialName
+    /// StrProperty: SceneCaptureReflectActorMaterialName<br/>
+    /// Default: "EngineMaterials.ScreenMaterial"
     /// </summary>
     public unsafe BmSDK.FString SceneCaptureReflectActorMaterialName
     {
@@ -2858,7 +2958,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SceneCaptureCubeActorMaterialName
+    /// StrProperty: SceneCaptureCubeActorMaterialName<br/>
+    /// Default: "EngineMaterials.CubeMaterial"
     /// </summary>
     public unsafe BmSDK.FString SceneCaptureCubeActorMaterialName
     {
@@ -2867,7 +2968,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ScreenDoorNoiseTextureName
+    /// StrProperty: ScreenDoorNoiseTextureName<br/>
+    /// Default: "EngineMaterials.Good64x64TilingNoiseHighFreq"
     /// </summary>
     public unsafe BmSDK.FString ScreenDoorNoiseTextureName
     {
@@ -2876,7 +2978,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ImageGrainNoiseTextureName
+    /// StrProperty: ImageGrainNoiseTextureName<br/>
+    /// Default: "EngineMaterials.Good64x64TilingNoiseHighFreq"
     /// </summary>
     public unsafe BmSDK.FString ImageGrainNoiseTextureName
     {
@@ -2885,7 +2988,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RandomAngleTextureName
+    /// StrProperty: RandomAngleTextureName<br/>
+    /// Default: "EngineMaterials.RandomAngles"
     /// </summary>
     public unsafe BmSDK.FString RandomAngleTextureName
     {
@@ -2894,7 +2998,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RandomNormalTextureName
+    /// StrProperty: RandomNormalTextureName<br/>
+    /// Default: "RockEngineMaterials.RockOrderedNormal"
     /// </summary>
     public unsafe BmSDK.FString RandomNormalTextureName
     {
@@ -2903,7 +3008,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: RandomMirrorDiscTextureName
+    /// StrProperty: RandomMirrorDiscTextureName<br/>
+    /// Default: "EngineMaterials.RandomMirrorDisc"
     /// </summary>
     public unsafe BmSDK.FString RandomMirrorDiscTextureName
     {
@@ -2912,7 +3018,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: WeightMapPlaceholderTextureName
+    /// StrProperty: WeightMapPlaceholderTextureName<br/>
+    /// Default: "EngineMaterials.WeightMapPlaceholderTexture"
     /// </summary>
     public unsafe BmSDK.FString WeightMapPlaceholderTextureName
     {
@@ -2921,7 +3028,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MapMaskTextureName
+    /// StrProperty: MapMaskTextureName<br/>
+    /// Default: "CITY_MapScreenAssets.CITY_MapScreenIslandMask"
     /// </summary>
     public unsafe BmSDK.FString MapMaskTextureName
     {
@@ -2930,7 +3038,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PostProcessNoiseTextureName
+    /// StrProperty: PostProcessNoiseTextureName<br/>
+    /// Default: "PostProcess.PostProcessNoise"
     /// </summary>
     public unsafe BmSDK.FString PostProcessNoiseTextureName
     {
@@ -2939,7 +3048,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Rain_TemporalSplashPatternName
+    /// StrProperty: Rain_TemporalSplashPatternName<br/>
+    /// Default: "PostProcess.Rain_TemporalSplashPattern"
     /// </summary>
     public unsafe BmSDK.FString Rain_TemporalSplashPatternName
     {
@@ -2948,7 +3058,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Dust_DetailMapName
+    /// StrProperty: Dust_DetailMapName<br/>
+    /// Default: "PostProcess.ThickGas_GlobalND"
     /// </summary>
     public unsafe BmSDK.FString Dust_DetailMapName
     {
@@ -2957,7 +3068,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Dust_ReliefMapName
+    /// StrProperty: Dust_ReliefMapName<br/>
+    /// Default: "PostProcess.ThickGas_Height"
     /// </summary>
     public unsafe BmSDK.FString Dust_ReliefMapName
     {
@@ -2966,7 +3078,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Pollen_DetailMapName
+    /// StrProperty: Pollen_DetailMapName<br/>
+    /// Default: "PostProcess.Pollen_GlobalND"
     /// </summary>
     public unsafe BmSDK.FString Pollen_DetailMapName
     {
@@ -2975,7 +3088,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: Pollen_ReliefMapName
+    /// StrProperty: Pollen_ReliefMapName<br/>
+    /// Default: "PostProcess.Pollen_Height"
     /// </summary>
     public unsafe BmSDK.FString Pollen_ReliefMapName
     {
@@ -2984,7 +3098,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LightProjection_RenderTargetName
+    /// StrProperty: LightProjection_RenderTargetName<br/>
+    /// Default: "RockEngineMaterials.LightProjectionRenderTarget"
     /// </summary>
     public unsafe BmSDK.FString LightProjection_RenderTargetName
     {
@@ -2993,7 +3108,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LightMapDensityTextureName
+    /// StrProperty: LightMapDensityTextureName<br/>
+    /// Default: "EngineMaterials.DefaultWhiteGrid"
     /// </summary>
     public unsafe BmSDK.FString LightMapDensityTextureName
     {
@@ -3002,7 +3118,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LightMapDensityNormalName
+    /// StrProperty: LightMapDensityNormalName<br/>
+    /// Default: "EngineMaterials.DefaultNormal"
     /// </summary>
     public unsafe BmSDK.FString LightMapDensityNormalName
     {
@@ -3020,7 +3137,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenPurgingPendingKillObjects
+    /// FloatProperty: TimeBetweenPurgingPendingKillObjects<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TimeBetweenPurgingPendingKillObjects
     {
@@ -3074,7 +3192,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxSmoothedFrameRate
+    /// FloatProperty: MaxSmoothedFrameRate<br/>
+    /// Default: 62
     /// </summary>
     public unsafe float MaxSmoothedFrameRate
     {
@@ -3083,7 +3202,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinSmoothedFrameRate
+    /// FloatProperty: MinSmoothedFrameRate<br/>
+    /// Default: 22
     /// </summary>
     public unsafe float MinSmoothedFrameRate
     {
@@ -3092,7 +3212,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumPawnsAllowedToBeSpawnedInAFrame
+    /// IntProperty: NumPawnsAllowedToBeSpawnedInAFrame<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumPawnsAllowedToBeSpawnedInAFrame
     {
@@ -3119,79 +3240,92 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: C_WorldBox
+    /// StructProperty: C_WorldBox<br/>
+    /// Default: (B=40,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_WorldBox
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2196);
 
     /// <summary>
-    /// StructProperty: C_BrushWire
+    /// StructProperty: C_BrushWire<br/>
+    /// Default: (R=192,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_BrushWire
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2200);
 
     /// <summary>
-    /// StructProperty: C_AddWire
+    /// StructProperty: C_AddWire<br/>
+    /// Default: (B=255,G=127,R=127,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_AddWire
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2204);
 
     /// <summary>
-    /// StructProperty: C_SubtractWire
+    /// StructProperty: C_SubtractWire<br/>
+    /// Default: (B=63,G=192,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_SubtractWire
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2208);
 
     /// <summary>
-    /// StructProperty: C_SemiSolidWire
+    /// StructProperty: C_SemiSolidWire<br/>
+    /// Default: (G=255,R=127,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_SemiSolidWire
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2212);
 
     /// <summary>
-    /// StructProperty: C_NonSolidWire
+    /// StructProperty: C_NonSolidWire<br/>
+    /// Default: (B=32,G=192,R=63,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_NonSolidWire
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2216);
 
     /// <summary>
-    /// StructProperty: C_WireBackground
+    /// StructProperty: C_WireBackground<br/>
+    /// Default: (A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_WireBackground
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2220);
 
     /// <summary>
-    /// StructProperty: C_ScaleBoxHi
+    /// StructProperty: C_ScaleBoxHi<br/>
+    /// Default: (B=157,G=149,R=223,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_ScaleBoxHi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2224);
 
     /// <summary>
-    /// StructProperty: C_VolumeCollision
+    /// StructProperty: C_VolumeCollision<br/>
+    /// Default: (B=157,G=223,R=149,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_VolumeCollision
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2228);
 
     /// <summary>
-    /// StructProperty: C_BSPCollision
+    /// StructProperty: C_BSPCollision<br/>
+    /// Default: (B=223,G=157,R=149,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_BSPCollision
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2232);
 
     /// <summary>
-    /// StructProperty: C_OrthoBackground
+    /// StructProperty: C_OrthoBackground<br/>
+    /// Default: (B=163,G=163,R=163,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_OrthoBackground
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2236);
 
     /// <summary>
-    /// StructProperty: C_Volume
+    /// StructProperty: C_Volume<br/>
+    /// Default: (B=255,G=196,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_Volume
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2240);
 
     /// <summary>
-    /// StructProperty: C_BrushShape
+    /// StructProperty: C_BrushShape<br/>
+    /// Default: (B=128,G=255,R=128,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor C_BrushShape
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 2244);
@@ -3206,7 +3340,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ScoutClassName
+    /// StrProperty: ScoutClassName<br/>
+    /// Default: "BMGame.RBMScout"
     /// </summary>
     public unsafe BmSDK.FString ScoutClassName
     {
@@ -3251,7 +3386,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraRotationThreshold
+    /// FloatProperty: CameraRotationThreshold<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float CameraRotationThreshold
     {
@@ -3260,7 +3396,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CameraTranslationThreshold
+    /// FloatProperty: CameraTranslationThreshold<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float CameraTranslationThreshold
     {
@@ -3269,7 +3406,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PrimitiveProbablyVisibleTime
+    /// FloatProperty: PrimitiveProbablyVisibleTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float PrimitiveProbablyVisibleTime
     {
@@ -3278,7 +3416,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PercentUnoccludedRequeries
+    /// FloatProperty: PercentUnoccludedRequeries<br/>
+    /// Default: 0.125
     /// </summary>
     public unsafe float PercentUnoccludedRequeries
     {
@@ -3287,7 +3426,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxOcclusionPixelsFraction
+    /// FloatProperty: MaxOcclusionPixelsFraction<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MaxOcclusionPixelsFraction
     {
@@ -3296,7 +3436,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PhysXLevel
+    /// IntProperty: PhysXLevel<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int PhysXLevel
     {
@@ -3305,7 +3446,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClothingOffset
+    /// FloatProperty: ClothingOffset<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float ClothingOffset
     {
@@ -3314,7 +3456,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxFluidNumVerts
+    /// IntProperty: MaxFluidNumVerts<br/>
+    /// Default: 1048576
     /// </summary>
     public unsafe int MaxFluidNumVerts
     {
@@ -3323,7 +3466,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FluidSimulationTimeLimit
+    /// FloatProperty: FluidSimulationTimeLimit<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FluidSimulationTimeLimit
     {
@@ -3350,7 +3494,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxParticleVertexMemory
+    /// IntProperty: MaxParticleVertexMemory<br/>
+    /// Default: 1048576
     /// </summary>
     public unsafe int MaxParticleVertexMemory
     {
@@ -3377,7 +3522,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BeginUPTryCount
+    /// IntProperty: BeginUPTryCount<br/>
+    /// Default: 200000
     /// </summary>
     public unsafe int BeginUPTryCount
     {
@@ -3404,7 +3550,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NetClientTicksPerSecond
+    /// FloatProperty: NetClientTicksPerSecond<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float NetClientTicksPerSecond
     {
@@ -3413,7 +3560,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxTrackedOcclusionIncrement
+    /// FloatProperty: MaxTrackedOcclusionIncrement<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MaxTrackedOcclusionIncrement
     {
@@ -3422,7 +3570,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TrackedOcclusionStepSize
+    /// FloatProperty: TrackedOcclusionStepSize<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TrackedOcclusionStepSize
     {
@@ -3431,7 +3580,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PersistentDebugDataClassName
+    /// StrProperty: PersistentDebugDataClassName<br/>
+    /// Default: "BMGame.RPersistentDebugData"
     /// </summary>
     public unsafe BmSDK.FString PersistentDebugDataClassName
     {
@@ -3440,7 +3590,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: FrameRateLimitingSetting
+    /// IntProperty: FrameRateLimitingSetting<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int FrameRateLimitingSetting
     {
@@ -3449,31 +3600,36 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DefaultSelectedMaterialColor
+    /// StructProperty: DefaultSelectedMaterialColor<br/>
+    /// Default: (R=0.04,G=0.02,B=0.24,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor DefaultSelectedMaterialColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2432);
 
     /// <summary>
-    /// StructProperty: DefaultHoveredMaterialColor
+    /// StructProperty: DefaultHoveredMaterialColor<br/>
+    /// Default: (R=0.02,G=0.02,B=0.02,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor DefaultHoveredMaterialColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2448);
 
     /// <summary>
-    /// StructProperty: SelectedMaterialColor
+    /// StructProperty: SelectedMaterialColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SelectedMaterialColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2464);
 
     /// <summary>
-    /// StructProperty: UnselectedMaterialColor
+    /// StructProperty: UnselectedMaterialColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor UnselectedMaterialColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2480);
 
     /// <summary>
-    /// ArrayProperty: IgnoreSimulatedFuncWarnings
+    /// ArrayProperty: IgnoreSimulatedFuncWarnings<br/>
+    /// Default: (Tick)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IgnoreSimulatedFuncWarnings
     {
@@ -3554,7 +3710,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSRotationalStrengthMultiplier
+    /// FloatProperty: ApexFSRotationalStrengthMultiplier<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ApexFSRotationalStrengthMultiplier
     {
@@ -3563,7 +3720,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSRadialStrengthMultiplier
+    /// FloatProperty: ApexFSRadialStrengthMultiplier<br/>
+    /// Default: 22
     /// </summary>
     public unsafe float ApexFSRadialStrengthMultiplier
     {
@@ -3572,7 +3730,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSLiftStrengthMultiplier
+    /// FloatProperty: ApexFSLiftStrengthMultiplier<br/>
+    /// Default: 21
     /// </summary>
     public unsafe float ApexFSLiftStrengthMultiplier
     {
@@ -3581,7 +3740,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSDurationMultiplier
+    /// FloatProperty: ApexFSDurationMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ApexFSDurationMultiplier
     {
@@ -3590,7 +3750,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSRotationalStrengthMultiplierFlex
+    /// FloatProperty: ApexFSRotationalStrengthMultiplierFlex<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ApexFSRotationalStrengthMultiplierFlex
     {
@@ -3599,7 +3760,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSRadialStrengthMultiplierFlex
+    /// FloatProperty: ApexFSRadialStrengthMultiplierFlex<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ApexFSRadialStrengthMultiplierFlex
     {
@@ -3608,7 +3770,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSLiftStrengthMultiplierFlex
+    /// FloatProperty: ApexFSLiftStrengthMultiplierFlex<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ApexFSLiftStrengthMultiplierFlex
     {
@@ -3617,7 +3780,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ApexFSDurationMultiplierFlex
+    /// FloatProperty: ApexFSDurationMultiplierFlex<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ApexFSDurationMultiplierFlex
     {
@@ -3626,7 +3790,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: KismetLevelUpdatePriorities
+    /// ArrayProperty: KismetLevelUpdatePriorities<br/>
+    /// Default: ((LevelName=WayneTower_B1_Cine_ChH2_Batman_Meets_Hush,Priority=1),(LevelName=CityZ_07_Cine_Ch5_OR_Penthouse,Priority=1),(LevelName=CityY_U09_Ch9a_Cine_Rooftop_Confrontation,Priority=1),(LevelName=City...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine._Engine.FKismetLevelUpdatePriority> KismetLevelUpdatePriorities
     {
@@ -3635,7 +3800,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedToStartReducingDestructibleParticles
+    /// FloatProperty: SpeedToStartReducingDestructibleParticles<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float SpeedToStartReducingDestructibleParticles
     {
@@ -3644,7 +3810,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpeedToStopReducingDestructibleParticles
+    /// FloatProperty: SpeedToStopReducingDestructibleParticles<br/>
+    /// Default: 2750
     /// </summary>
     public unsafe float SpeedToStopReducingDestructibleParticles
     {

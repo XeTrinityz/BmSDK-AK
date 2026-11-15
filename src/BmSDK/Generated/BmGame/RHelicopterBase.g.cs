@@ -2560,7 +2560,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: bAvoidGettingTooCloseToBatman
+    /// BoolProperty: bAvoidGettingTooCloseToBatman<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAvoidGettingTooCloseToBatman
     {
@@ -2587,7 +2588,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// BoolProperty: bHasRotors
+    /// BoolProperty: bHasRotors<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasRotors
     {
@@ -3076,7 +3078,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToCutAudio
+    /// FloatProperty: DistanceToCutAudio<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float DistanceToCutAudio
     {
@@ -3349,7 +3352,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1940);
 
     /// <summary>
-    /// FloatProperty: fOverrideSpeed
+    /// FloatProperty: fOverrideSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float fOverrideSpeed
     {
@@ -3412,7 +3416,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: fDisruptorAimMaximumHeight
+    /// FloatProperty: fDisruptorAimMaximumHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float fDisruptorAimMaximumHeight
     {
@@ -3421,7 +3426,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: fDisruptorAimMaximumRearDistance
+    /// FloatProperty: fDisruptorAimMaximumRearDistance<br/>
+    /// Default: -300
     /// </summary>
     public unsafe float fDisruptorAimMaximumRearDistance
     {
@@ -3430,7 +3436,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StrProperty: sRHDScreenTitle
+    /// StrProperty: sRHDScreenTitle<br/>
+    /// Default: "$GFxUI.RHD.TargetVehicle"
     /// </summary>
     public unsafe BmSDK.FString sRHDScreenTitle
     {
@@ -3439,7 +3446,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// ArrayProperty: HelicopterDifficultyLevels
+    /// ArrayProperty: HelicopterDifficultyLevels<br/>
+    /// Default: ((ChainGunDamage=1,RocketDamage=10),(ChainGunDamage=2.5,RocketDamage=15),(ChainGunDamage=5,RocketDamage=20),(ChainGunDamage=8,RocketDamage=30))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RHelicopterBase.FHelicopterDifficultyParameters> HelicopterDifficultyLevels
     {
@@ -3580,7 +3588,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: MaxAbseilHeight
+    /// FloatProperty: MaxAbseilHeight<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float MaxAbseilHeight
     {
@@ -3667,7 +3676,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BoundsRadius
+    /// FloatProperty: BoundsRadius<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float BoundsRadius
     {
@@ -3676,7 +3686,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: BoundsHeight
+    /// FloatProperty: BoundsHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float BoundsHeight
     {
@@ -3685,7 +3696,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// StrProperty: sDisruptorHUDDescription
+    /// StrProperty: sDisruptorHUDDescription<br/>
+    /// Default: "#DSRPT|Sabotage|$Disruptor.Drone|$Disruptor.DroneDesc"
     /// </summary>
     public unsafe BmSDK.FString sDisruptorHUDDescription
     {
@@ -3763,7 +3775,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 2328);
 
     /// <summary>
-    /// FloatProperty: PPSpeed
+    /// FloatProperty: PPSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PPSpeed
     {
@@ -3772,7 +3785,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
     }
 
     /// <summary>
-    /// FloatProperty: PPMax
+    /// FloatProperty: PPMax<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float PPMax
     {

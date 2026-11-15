@@ -124,7 +124,8 @@ public partial class RVehicleBehaviour_APCRunAway : BmSDK.BmGame.RVehicleBehavio
     }
 
     /// <summary>
-    /// IntProperty: OverrideChapterDifficulty
+    /// IntProperty: OverrideChapterDifficulty<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideChapterDifficulty
     {

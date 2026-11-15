@@ -140,7 +140,8 @@ public partial class InterpGroup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: GroupName
+    /// NameProperty: GroupName<br/>
+    /// Default: InterpGroup
     /// </summary>
     public unsafe BmSDK.FName GroupName
     {
@@ -173,7 +174,8 @@ public partial class InterpGroup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bVisible
+    /// BoolProperty: bVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVisible
     {
@@ -335,7 +337,8 @@ public partial class InterpGroup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: CinematicProxy_PlayerEndState
+    /// NameProperty: CinematicProxy_PlayerEndState<br/>
+    /// Default: CinematicMode
     /// </summary>
     public unsafe BmSDK.FName CinematicProxy_PlayerEndState
     {

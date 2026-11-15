@@ -102,7 +102,8 @@ public partial class GFxAction_CloseMovie : BmSDK.Engine.SequenceAction, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bUnload
+    /// BoolProperty: bUnload<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUnload
     {

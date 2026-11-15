@@ -349,7 +349,8 @@ public partial class RDialogueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1288);
 
     /// <summary>
-    /// FloatProperty: CameraFOV
+    /// FloatProperty: CameraFOV<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float CameraFOV
     {
@@ -370,7 +371,8 @@ public partial class RDialogueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1316);
 
     /// <summary>
-    /// FloatProperty: LookModeScale
+    /// FloatProperty: LookModeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookModeScale
     {
@@ -379,7 +381,8 @@ public partial class RDialogueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: LookSpringBack
+    /// FloatProperty: LookSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookSpringBack
     {
@@ -388,13 +391,15 @@ public partial class RDialogueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: DofStruct
+    /// StructProperty: DofStruct<br/>
+    /// Default: (ApertureStop=1.2,FocusDistance=100,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct DofStruct
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 1336);
 
     /// <summary>
-    /// StructProperty: ForensicsDofStruct
+    /// StructProperty: ForensicsDofStruct<br/>
+    /// Default: (ApertureStop=22,FocusDistance=220,InterpolationDuration=1,BloomScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct ForensicsDofStruct
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 1356);

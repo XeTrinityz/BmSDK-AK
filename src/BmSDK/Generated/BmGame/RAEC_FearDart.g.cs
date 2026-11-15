@@ -232,7 +232,8 @@ public partial class RAEC_FearDart : BmSDK.BmGame.RAlertEventCoordinatorBase, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FearDuration
+    /// FloatProperty: FearDuration<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FearDuration
     {

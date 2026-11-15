@@ -769,7 +769,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bUsesAmmo
+    /// BoolProperty: bUsesAmmo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUsesAmmo
     {
@@ -778,7 +779,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bMissAtRange
+    /// BoolProperty: bMissAtRange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMissAtRange
     {
@@ -832,7 +834,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bHoldOnWhenDivingFromCar
+    /// BoolProperty: bHoldOnWhenDivingFromCar<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHoldOnWhenDivingFromCar
     {
@@ -877,7 +880,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmGame.Default__RBMWeaponRanged.MuzzleFlashComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -886,7 +890,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashSocket
+    /// NameProperty: MuzzleFlashSocket<br/>
+    /// Default: DummyFlare
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashSocket
     {
@@ -895,7 +900,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: TraceBulletFX
+    /// ComponentProperty: TraceBulletFX<br/>
+    /// Default: BmGame.Default__RBMWeaponRanged.MuzzleFlashBulletComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent TraceBulletFX
     {
@@ -910,7 +916,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1812);
 
     /// <summary>
-    /// FloatProperty: ShotDeviance
+    /// FloatProperty: ShotDeviance<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ShotDeviance
     {
@@ -919,7 +926,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: TerrifiedCornerOutLeftAnimName
+    /// NameProperty: TerrifiedCornerOutLeftAnimName<br/>
+    /// Default: CornerLeftTransOutTerrified
     /// </summary>
     public unsafe BmSDK.FName TerrifiedCornerOutLeftAnimName
     {
@@ -928,7 +936,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: TerrifiedCornerOutRightAnimName
+    /// NameProperty: TerrifiedCornerOutRightAnimName<br/>
+    /// Default: CornerRightTransOutTerrified
     /// </summary>
     public unsafe BmSDK.FName TerrifiedCornerOutRightAnimName
     {
@@ -955,7 +964,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplodeEvent
+    /// ObjectProperty: JammedExplodeEvent<br/>
+    /// Default: Ww_VFX_Tank_Explosion.Play_ThugGrenadeExplode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammedExplodeEvent
     {
@@ -964,7 +974,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JammedClickEvent
+    /// ObjectProperty: JammedClickEvent<br/>
+    /// Default: Ww_WPN_EnemyGuns.Play_Enemy_DryFire
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammedClickEvent
     {
@@ -973,7 +984,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplosionVFX
+    /// ObjectProperty: JammedExplosionVFX<br/>
+    /// Default: VFX_Gadgets.Disruptor.Double_Jammed_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JammedExplosionVFX
     {

@@ -137,7 +137,8 @@ public partial class RBMAIAction_PauseAndLookAround : BmSDK.BmGame.RBMAIAction, 
     }
 
     /// <summary>
-    /// BoolProperty: bRandomLookDir
+    /// BoolProperty: bRandomLookDir<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRandomLookDir
     {

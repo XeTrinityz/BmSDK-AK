@@ -702,7 +702,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: HQBackupDialogue
+    /// ObjectProperty: HQBackupDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_jk_hqbackup.Conversation.dlc_bg_barks_bossbarks_jk_hqbackup
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation HQBackupDialogue
     {
@@ -711,7 +712,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerHitDialogue
+    /// ObjectProperty: PlayerHitDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_jk_playerhit.Conversation.dlc_bg_barks_bossbarks_jk_playerhit
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation PlayerHitDialogue
     {
@@ -720,7 +722,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveStartDialogue
+    /// ObjectProperty: SuperMoveStartDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_jk_supermovestart.Conversation.dlc_bg_barks_bossbarks_jk_supermovestart
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveStartDialogue
     {
@@ -729,7 +732,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveSuccessDialogue
+    /// ObjectProperty: SuperMoveSuccessDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_jk_supermovesuccess.Conversation.dlc_bg_barks_bossbarks_jk_supermovesuccess
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveSuccessDialogue
     {
@@ -738,7 +742,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SuperMoveFailDialogue
+    /// ObjectProperty: SuperMoveFailDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_jk_supermovefail.Conversation.dlc_bg_barks_bossbarks_jk_supermovefail
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SuperMoveFailDialogue
     {
@@ -747,7 +752,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SwichRBToBatGirlDialogue
+    /// ObjectProperty: SwichRBToBatGirlDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_bg_switched.Conversation.dlc_bg_barks_bossbarks_bg_switched
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SwichRBToBatGirlDialogue
     {
@@ -756,7 +762,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: SwichBatGirlToRBDialogue
+    /// ObjectProperty: SwichBatGirlToRBDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_rb_switched.Conversation.dlc_bg_barks_bossbarks_rb_switched
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation SwichBatGirlToRBDialogue
     {
@@ -765,7 +772,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: BatGirlHelpRobinDialogue
+    /// ObjectProperty: BatGirlHelpRobinDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_bg_switched_joker.Conversation.dlc_bg_barks_bossbarks_bg_switched_joker
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation BatGirlHelpRobinDialogue
     {
@@ -774,7 +782,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: RobinHelpBatGirlDialogue
+    /// ObjectProperty: RobinHelpBatGirlDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_rb_switched_joker.Conversation.dlc_bg_barks_bossbarks_rb_switched_joker
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation RobinHelpBatGirlDialogue
     {
@@ -783,7 +792,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: HatMesh
+    /// ComponentProperty: HatMesh<br/>
+    /// Default: BmScript.Default__MPawnVillainDLCJoker.HatMesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent HatMesh
     {
@@ -828,7 +838,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: FinisherDamageAmount
+    /// IntProperty: FinisherDamageAmount<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int FinisherDamageAmount
     {
@@ -843,7 +854,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6816);
 
     /// <summary>
-    /// FloatProperty: LevelCenterRaduis
+    /// FloatProperty: LevelCenterRaduis<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float LevelCenterRaduis
     {
@@ -852,7 +864,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SpecialAttackPunchDamage
+    /// FloatProperty: SpecialAttackPunchDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpecialAttackPunchDamage
     {
@@ -861,7 +874,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SpecialAttackKickDamage
+    /// FloatProperty: SpecialAttackKickDamage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpecialAttackKickDamage
     {
@@ -870,7 +884,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SpecialAttackHitDamage
+    /// FloatProperty: SpecialAttackHitDamage<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float SpecialAttackHitDamage
     {
@@ -879,7 +894,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: TimeBetweenThrowAttack
+    /// IntProperty: TimeBetweenThrowAttack<br/>
+    /// Default: 14
     /// </summary>
     public unsafe int TimeBetweenThrowAttack
     {
@@ -893,7 +909,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
     public InlineArray<int> SpecialAttackThreshhold => new(3, Ptr + 6848, 4, this);
 
     /// <summary>
-    /// IntProperty: SpecialAttackThreshhold
+    /// IntProperty: SpecialAttackThreshhold<br/>
+    /// Default: 75
     /// </summary>
     public unsafe int SpecialAttackThreshhold_0
     {
@@ -901,7 +918,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6848); }
     }
     /// <summary>
-    /// IntProperty: SpecialAttackThreshhold
+    /// IntProperty: SpecialAttackThreshhold<br/>
+    /// Default: 45
     /// </summary>
     public unsafe int SpecialAttackThreshhold_1
     {
@@ -909,7 +927,8 @@ public partial class MPawnVillainDLCJoker : BmSDK.BmGame.RPawnVillainThug, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 6852); }
     }
     /// <summary>
-    /// IntProperty: SpecialAttackThreshhold
+    /// IntProperty: SpecialAttackThreshhold<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int SpecialAttackThreshhold_2
     {

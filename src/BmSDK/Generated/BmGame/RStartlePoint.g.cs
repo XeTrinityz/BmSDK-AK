@@ -750,7 +750,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// FloatProperty: LastTriggerTime
+    /// FloatProperty: LastTriggerTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastTriggerTime
     {
@@ -795,7 +796,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanCantTriggerTakedownPointThought
+    /// ObjectProperty: BatmanCantTriggerTakedownPointThought<br/>
+    /// Default: Char_Batman_Gadgets_Rhd.Lines.Char_Batman_Gadgets_Rhd_01
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueSpeech BatmanCantTriggerTakedownPointThought
     {
@@ -813,7 +815,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// ObjectProperty: StartlePointXRayMIC
+    /// ObjectProperty: StartlePointXRayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant StartlePointXRayMIC
     {
@@ -822,7 +825,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// ObjectProperty: TakedownPointXRayMIC
+    /// ObjectProperty: TakedownPointXRayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_Interact_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant TakedownPointXRayMIC
     {
@@ -840,7 +844,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RStartlePoint.NewInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -849,7 +854,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// NameProperty: TargetClass
+    /// NameProperty: TargetClass<br/>
+    /// Default: StartlePoint
     /// </summary>
     public unsafe BmSDK.FName TargetClass
     {
@@ -867,7 +873,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// BoolProperty: bTriggerEveryoneInRange
+    /// BoolProperty: bTriggerEveryoneInRange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTriggerEveryoneInRange
     {
@@ -876,7 +883,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// BoolProperty: bAlertRoomIfThugStartled
+    /// BoolProperty: bAlertRoomIfThugStartled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlertRoomIfThugStartled
     {
@@ -894,7 +902,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// BoolProperty: bXRayMaterialsHaveBeenSet
+    /// BoolProperty: bXRayMaterialsHaveBeenSet<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bXRayMaterialsHaveBeenSet
     {
@@ -930,7 +939,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// FloatProperty: TakedownRadius
+    /// FloatProperty: TakedownRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float TakedownRadius
     {
@@ -939,7 +949,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// FloatProperty: fStartleRadius
+    /// FloatProperty: fStartleRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float fStartleRadius
     {
@@ -966,7 +977,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// FloatProperty: RadiusWithinWhichBatmanWillPlayExplosionReaction
+    /// FloatProperty: RadiusWithinWhichBatmanWillPlayExplosionReaction<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float RadiusWithinWhichBatmanWillPlayExplosionReaction
     {
@@ -984,7 +996,8 @@ public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRe
     }
 
     /// <summary>
-    /// ArrayProperty: nRHDTargetSockets
+    /// ArrayProperty: nRHDTargetSockets<br/>
+    /// Default: (RHDTarget1,RHDTarget2,RHDTarget3,RHDTarget4)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> nRHDTargetSockets
     {

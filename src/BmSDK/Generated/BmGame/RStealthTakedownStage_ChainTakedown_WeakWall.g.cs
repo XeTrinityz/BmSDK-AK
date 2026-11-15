@@ -266,7 +266,8 @@ public partial class RStealthTakedownStage_ChainTakedown_WeakWall : BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: WindowSmashSound
+    /// ObjectProperty: WindowSmashSound<br/>
+    /// Default: Ww_OBJ_Dest_GlassCeramic.Play_Glass_Break_BM_TDThroughWindow
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WindowSmashSound
     {

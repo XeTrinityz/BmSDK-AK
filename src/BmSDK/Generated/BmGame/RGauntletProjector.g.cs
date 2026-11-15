@@ -329,7 +329,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PrimaryRenderTarget
+    /// ObjectProperty: PrimaryRenderTarget<br/>
+    /// Default: Gadgets.Resonator.ProjectionPrimary_RT
     /// </summary>
     public unsafe BmSDK.Engine.TextureRenderTarget2D PrimaryRenderTarget
     {
@@ -338,7 +339,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SecondaryRenderTarget
+    /// ObjectProperty: SecondaryRenderTarget<br/>
+    /// Default: Gadgets.Resonator.ProjectionSecondary_RT
     /// </summary>
     public unsafe BmSDK.Engine.TextureRenderTarget2D SecondaryRenderTarget
     {
@@ -374,7 +376,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RHDOriginalMaterial
+    /// ObjectProperty: RHDOriginalMaterial<br/>
+    /// Default: Gadgets.Resonator.Display_RHD_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant RHDOriginalMaterial
     {
@@ -410,7 +413,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TVOnSound
+    /// ObjectProperty: TVOnSound<br/>
+    /// Default: Ww_CHR_BatmanGauntlet.Play_Gauntlet_On
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent TVOnSound
     {
@@ -419,7 +423,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: TVOffSound
+    /// ObjectProperty: TVOffSound<br/>
+    /// Default: Ww_CHR_BatmanGauntlet.Play_Gauntlet_Off
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent TVOffSound
     {
@@ -428,7 +433,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RHDOnSound
+    /// ObjectProperty: RHDOnSound<br/>
+    /// Default: Ww_CHR_RemoteHackingDevice.Play_RHD_On
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RHDOnSound
     {
@@ -437,7 +443,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RHDOffSound
+    /// ObjectProperty: RHDOffSound<br/>
+    /// Default: Ww_CHR_RemoteHackingDevice.Play_RHD_Off
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RHDOffSound
     {
@@ -455,7 +462,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: XrayWorldMaskMesh
+    /// ComponentProperty: XrayWorldMaskMesh<br/>
+    /// Default: BmGame.Default__RGauntletProjector.XrayScreen02
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent XrayWorldMaskMesh
     {
@@ -464,7 +472,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: XrayHighlightMaskMesh
+    /// ComponentProperty: XrayHighlightMaskMesh<br/>
+    /// Default: BmGame.Default__RGauntletProjector.XrayScreen01
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent XrayHighlightMaskMesh
     {
@@ -473,7 +482,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ScreenHologramMovieMesh
+    /// ComponentProperty: ScreenHologramMovieMesh<br/>
+    /// Default: BmGame.Default__RGauntletProjector.HologramScreenMesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ScreenHologramMovieMesh
     {
@@ -482,7 +492,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ScreenHologramMesh
+    /// ComponentProperty: ScreenHologramMesh<br/>
+    /// Default: BmGame.Default__RGauntletProjector.HologramMesh
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ScreenHologramMesh
     {
@@ -491,7 +502,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ScreenHologram
+    /// ComponentProperty: ScreenHologram<br/>
+    /// Default: BmGame.Default__RGauntletProjector.ScreenHologram0
     /// </summary>
     public unsafe BmSDK.BmGame.RGFxWorldMovieComponent ScreenHologram
     {
@@ -500,7 +512,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: ScreenLight
+    /// ComponentProperty: ScreenLight<br/>
+    /// Default: BmGame.Default__RGauntletProjector.ScreenLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.LightComponent ScreenLight
     {
@@ -617,7 +630,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScreenLightBrightness
+    /// FloatProperty: ScreenLightBrightness<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ScreenLightBrightness
     {
@@ -626,31 +640,36 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LeftCornerScreenOffset
+    /// StructProperty: LeftCornerScreenOffset<br/>
+    /// Default: (Y=-4,Z=-2)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LeftCornerScreenOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 324);
 
     /// <summary>
-    /// StructProperty: LeftCornerScreenRotationOffset
+    /// StructProperty: LeftCornerScreenRotationOffset<br/>
+    /// Default: (Pitch=3094,Yaw=5461,Roll=-2548)
     /// </summary>
     public unsafe ref BmSDK.Rotator LeftCornerScreenRotationOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 336);
 
     /// <summary>
-    /// StructProperty: ScreenToMeshOffset_Bone
+    /// StructProperty: ScreenToMeshOffset_Bone<br/>
+    /// Default: (X=-17,Y=2,Z=2.1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ScreenToMeshOffset_Bone
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 348);
 
     /// <summary>
-    /// StructProperty: BatmanToMeshOffset_Batmobile
+    /// StructProperty: BatmanToMeshOffset_Batmobile<br/>
+    /// Default: (X=33,Y=-15,Z=66)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatmanToMeshOffset_Batmobile
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 360);
 
     /// <summary>
-    /// StructProperty: BatmanToMeshRotation_Batmobile
+    /// StructProperty: BatmanToMeshRotation_Batmobile<br/>
+    /// Default: (Pitch=-1456,Yaw=1638,Roll=21845)
     /// </summary>
     public unsafe ref BmSDK.Rotator BatmanToMeshRotation_Batmobile
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 372);
@@ -683,7 +702,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: transInDuration
+    /// FloatProperty: transInDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float transInDuration
     {
@@ -692,7 +712,8 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: transOutDuration
+    /// FloatProperty: transOutDuration<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float transOutDuration
     {

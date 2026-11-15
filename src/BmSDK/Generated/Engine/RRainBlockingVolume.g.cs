@@ -100,7 +100,8 @@ public partial class RRainBlockingVolume : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RRainBlockingVolume.FFRainBlockInfo>(Ptr + 672);
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -109,7 +110,8 @@ public partial class RRainBlockingVolume : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: FadePct
+    /// StructProperty: FadePct<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 FadePct
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 928);
@@ -130,7 +132,8 @@ public partial class RRainBlockingVolume : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FadeRange
+    /// FloatProperty: FadeRange<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeRange
     {

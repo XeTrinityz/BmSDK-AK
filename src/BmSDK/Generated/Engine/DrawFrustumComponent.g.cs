@@ -79,13 +79,15 @@ public partial class DrawFrustumComponent : BmSDK.Engine.PrimitiveComponent, BmS
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: FrustumColor
+    /// StructProperty: FrustumColor<br/>
+    /// Default: (B=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor FrustumColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
 
     /// <summary>
-    /// FloatProperty: FrustumAngle
+    /// FloatProperty: FrustumAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float FrustumAngle
     {
@@ -94,7 +96,8 @@ public partial class DrawFrustumComponent : BmSDK.Engine.PrimitiveComponent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FrustumAspectRatio
+    /// FloatProperty: FrustumAspectRatio<br/>
+    /// Default: 1.33333
     /// </summary>
     public unsafe float FrustumAspectRatio
     {
@@ -103,7 +106,8 @@ public partial class DrawFrustumComponent : BmSDK.Engine.PrimitiveComponent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FrustumStartDist
+    /// FloatProperty: FrustumStartDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float FrustumStartDist
     {
@@ -112,7 +116,8 @@ public partial class DrawFrustumComponent : BmSDK.Engine.PrimitiveComponent, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FrustumEndDist
+    /// FloatProperty: FrustumEndDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float FrustumEndDist
     {

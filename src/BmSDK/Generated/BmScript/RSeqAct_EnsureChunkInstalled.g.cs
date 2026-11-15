@@ -116,7 +116,8 @@ public partial class RSeqAct_EnsureChunkInstalled : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// ObjectProperty: TheGFxMovieInstance
+    /// ObjectProperty: TheGFxMovieInstance<br/>
+    /// Default: InstallationProgress.InstallationProgress
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheGFxMovieInstance
     {

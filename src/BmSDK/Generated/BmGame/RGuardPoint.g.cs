@@ -259,7 +259,8 @@ public partial class RGuardPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: GuardAction
+    /// ClassProperty: GuardAction<br/>
+    /// Default: BmGame.RBMAIAction_HoldGuardPoint
     /// </summary>
     public unsafe BmSDK.Class GuardAction
     {
@@ -277,7 +278,8 @@ public partial class RGuardPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

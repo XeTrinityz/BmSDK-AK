@@ -88,7 +88,8 @@ public partial class RAnimNotify_DestructibleTakeDamage : BmSDK.Engine.AnimNotif
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DamageAmount
     {
@@ -97,7 +98,8 @@ public partial class RAnimNotify_DestructibleTakeDamage : BmSDK.Engine.AnimNotif
     }
 
     /// <summary>
-    /// FloatProperty: DamageRadius
+    /// FloatProperty: DamageRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DamageRadius
     {
@@ -106,7 +108,8 @@ public partial class RAnimNotify_DestructibleTakeDamage : BmSDK.Engine.AnimNotif
     }
 
     /// <summary>
-    /// StructProperty: DamageDirection
+    /// StructProperty: DamageDirection<br/>
+    /// Default: (Z=-1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DamageDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 100);

@@ -142,7 +142,8 @@ public partial class RMagicSmasher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: PhysicsGrabber
+    /// ComponentProperty: PhysicsGrabber<br/>
+    /// Default: BmGame.Default__RMagicSmasher.RB_Handle0
     /// </summary>
     public unsafe BmSDK.Engine.RB_Handle PhysicsGrabber
     {

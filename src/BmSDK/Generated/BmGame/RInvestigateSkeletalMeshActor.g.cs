@@ -125,7 +125,8 @@ public partial class RInvestigateSkeletalMeshActor : BmSDK.BmGame.RSkeletalMeshA
     }
 
     /// <summary>
-    /// ObjectProperty: InvestigateMat
+    /// ObjectProperty: InvestigateMat<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface InvestigateMat
     {

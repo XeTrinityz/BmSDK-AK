@@ -439,7 +439,8 @@ public partial class RSpecialMoveInstance_HarpoonThug : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// BoolProperty: bClearComboOnCancel
+    /// BoolProperty: bClearComboOnCancel<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClearComboOnCancel
     {

@@ -225,7 +225,8 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     }
 
     /// <summary>
-    /// IntProperty: videoMaterialIndex
+    /// IntProperty: videoMaterialIndex<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int videoMaterialIndex
     {
@@ -243,7 +244,8 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenOverByRiddler
+    /// BoolProperty: bCanBeTakenOverByRiddler<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenOverByRiddler
     {
@@ -252,7 +254,8 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTakenOverByScarecrow
+    /// BoolProperty: bCanBeTakenOverByScarecrow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTakenOverByScarecrow
     {

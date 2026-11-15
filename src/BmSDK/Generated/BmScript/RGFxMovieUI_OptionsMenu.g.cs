@@ -225,7 +225,8 @@ public partial class RGFxMovieUI_OptionsMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: FadeMode
+    /// IntProperty: FadeMode<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int FadeMode
     {

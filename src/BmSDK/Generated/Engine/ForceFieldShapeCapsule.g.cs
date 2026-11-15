@@ -185,7 +185,8 @@ public partial class ForceFieldShapeCapsule : BmSDK.Engine.ForceFieldShape, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: Shape
+    /// ComponentProperty: Shape<br/>
+    /// Default: Engine.Default__ForceFieldShapeCapsule.DrawCapsule0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCapsuleComponent Shape
     {

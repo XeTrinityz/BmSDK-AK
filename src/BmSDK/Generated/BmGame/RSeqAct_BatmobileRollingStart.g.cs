@@ -106,7 +106,8 @@ public partial class RSeqAct_BatmobileRollingStart : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float Duration
     {
@@ -133,7 +134,8 @@ public partial class RSeqAct_BatmobileRollingStart : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// FloatProperty: Throttle
+    /// FloatProperty: Throttle<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Throttle
     {

@@ -124,7 +124,8 @@ public partial class RSeqAct_UpdateDeadBody : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: InvestigationMaxDistance
+    /// FloatProperty: InvestigationMaxDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float InvestigationMaxDistance
     {

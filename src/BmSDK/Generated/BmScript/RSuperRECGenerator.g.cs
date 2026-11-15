@@ -156,7 +156,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ArrayProperty: SpinSpeeds
+    /// ArrayProperty: SpinSpeeds<br/>
+    /// Default: (10000,20000,30000,40000,50000)
     /// </summary>
     public unsafe BmSDK.TArray<float> SpinSpeeds
     {
@@ -165,7 +166,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ArrayProperty: NumSpinsBeforeCooldown
+    /// ArrayProperty: NumSpinsBeforeCooldown<br/>
+    /// Default: (-1,2,3,3,4)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumSpinsBeforeCooldown
     {
@@ -201,7 +203,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// FloatProperty: CoreWidth
+    /// FloatProperty: CoreWidth<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float CoreWidth
     {
@@ -219,7 +222,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ObjectProperty: GaugeMat
+    /// ObjectProperty: GaugeMat<br/>
+    /// Default: OBJ_Generator.Generator_FAN.OBJ_Generator_Gauge_Mat_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant GaugeMat
     {
@@ -237,7 +241,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: OverloadPFX
+    /// ComponentProperty: OverloadPFX<br/>
+    /// Default: BmScript.Default__RSuperRECGenerator.OverloadPFX1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent OverloadPFX
     {
@@ -246,7 +251,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenInnerCore
+    /// ComponentProperty: BrokenInnerCore<br/>
+    /// Default: BmScript.Default__RSuperRECGenerator.DestroyedMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BrokenInnerCore
     {
@@ -255,7 +261,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenOuterShield
+    /// ComponentProperty: BrokenOuterShield<br/>
+    /// Default: BmScript.Default__RSuperRECGenerator.DestroyedMesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BrokenOuterShield
     {
@@ -264,7 +271,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: InnerCore
+    /// ComponentProperty: InnerCore<br/>
+    /// Default: BmScript.Default__RSuperRECGenerator.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InnerCore
     {
@@ -273,7 +281,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: OuterShield
+    /// ComponentProperty: OuterShield<br/>
+    /// Default: BmScript.Default__RSuperRECGenerator.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent OuterShield
     {
@@ -300,7 +309,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// FloatProperty: CoreMaterialIndex
+    /// FloatProperty: CoreMaterialIndex<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CoreMaterialIndex
     {
@@ -318,7 +328,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// FloatProperty: TimeForDestructionFX
+    /// FloatProperty: TimeForDestructionFX<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeForDestructionFX
     {
@@ -327,7 +338,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// FloatProperty: TimeForSlowdownAfterDestruction
+    /// FloatProperty: TimeForSlowdownAfterDestruction<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeForSlowdownAfterDestruction
     {
@@ -345,7 +357,8 @@ public partial class RSuperRECGenerator : BmSDK.BmGame.RSuperRECGeneratorBase, B
     }
 
     /// <summary>
-    /// IntProperty: GaugeMatIndex
+    /// IntProperty: GaugeMatIndex<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int GaugeMatIndex
     {

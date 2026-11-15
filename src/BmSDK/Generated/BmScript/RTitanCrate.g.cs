@@ -93,7 +93,8 @@ public partial class RTitanCrate : BmSDK.BmGame.RTitanCrateBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: GelInteractions
+    /// ComponentProperty: GelInteractions<br/>
+    /// Default: BmScript.Default__RTitanCrate.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent GelInteractions
     {

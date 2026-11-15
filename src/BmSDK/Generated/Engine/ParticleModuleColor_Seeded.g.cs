@@ -79,7 +79,8 @@ public partial class ParticleModuleColor_Seeded : BmSDK.Engine.ParticleModuleCol
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: RandomSeedInfo
+    /// StructProperty: RandomSeedInfo<br/>
+    /// Default: (bResetSeedOnEmitterLooping=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModule.FParticleRandomSeedInfo RandomSeedInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModule.FParticleRandomSeedInfo>(Ptr + 200);

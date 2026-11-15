@@ -507,49 +507,57 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
     }
 
     /// <summary>
-    /// StructProperty: InAnimNames
+    /// StructProperty: InAnimNames<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_In,Medic_Revive_Right_OnBack_In),casFaceDown=(Medic_Revive_Left_OnFront_In,Medic_Revive_Right_OnFront_In))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames InAnimNames
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 956);
 
     /// <summary>
-    /// StructProperty: InAnimNames_RightTurn
+    /// StructProperty: InAnimNames_RightTurn<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_In_R90,Medic_Revive_Right_OnBack_In_R90),casFaceDown=(Medic_Revive_Left_OnFront_In_R90,Medic_Revive_Right_OnFront_In_R90))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames InAnimNames_RightTurn
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 988);
 
     /// <summary>
-    /// StructProperty: InAnimNames_LeftTurn
+    /// StructProperty: InAnimNames_LeftTurn<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_In_L90,Medic_Revive_Right_OnBack_In_L90),casFaceDown=(Medic_Revive_Left_OnFront_In_L90,Medic_Revive_Right_OnFront_In_L90))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames InAnimNames_LeftTurn
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1020);
 
     /// <summary>
-    /// StructProperty: JabAnimNames
+    /// StructProperty: JabAnimNames<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_Idle_02,Medic_Revive_Right_OnBack_Idle_02),casFaceDown=(Medic_Revive_Left_OnFront_Idle_02,Medic_Revive_Right_OnFront_Idle_02))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames JabAnimNames
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1052);
 
     /// <summary>
-    /// StructProperty: IdleAnimNames
+    /// StructProperty: IdleAnimNames<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_Idle,Medic_Revive_Right_OnBack_Idle),casFaceDown=(Medic_Revive_Left_OnFront_Idle,Medic_Revive_Right_OnFront_Idle))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames IdleAnimNames
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1084);
 
     /// <summary>
-    /// StructProperty: OutAnimNames_Medic
+    /// StructProperty: OutAnimNames_Medic<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_Out,Medic_Revive_Right_OnBack_Out),casFaceDown=(Medic_Revive_Left_OnFront_Out,Medic_Revive_Right_OnFront_Out))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames OutAnimNames_Medic
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1116);
 
     /// <summary>
-    /// StructProperty: OutAnimNames_Cas
+    /// StructProperty: OutAnimNames_Cas<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_Out_TG2,Medic_Revive_Right_OnBack_Out_TG2),casFaceDown=(Medic_Revive_Left_OnFront_Out_TG2,Medic_Revive_Right_OnFront_Out_TG2))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames OutAnimNames_Cas
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1148);
 
     /// <summary>
-    /// StructProperty: OutAnimNames_Cas_Unarmed
+    /// StructProperty: OutAnimNames_Cas_Unarmed<br/>
+    /// Default: (casFaceUp=(Medic_Revive_Left_OnBack_Out_TG2_Unarmed,Medic_Revive_Right_OnBack_Out_TG2_Unarmed),casFaceDown=(Medic_Revive_Left_OnFront_Out_TG2_Unarmed,Medic_Revive_Right_OnFront_Out_TG2_Unarmed))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames OutAnimNames_Cas_Unarmed
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_ReviveCasualty.FreviveAnimNames>(Ptr + 1180);
@@ -560,7 +568,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
     public InlineArray<BmSDK.FName> ThugInWayAnims_Medic => new(7, Ptr + 1212, 8, this);
 
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_01_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_0
     {
@@ -568,7 +577,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1212); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_02_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_1
     {
@@ -576,7 +586,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1220); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_Far_01_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_2
     {
@@ -584,7 +595,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1228); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_Right_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_3
     {
@@ -592,7 +604,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1236); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_Left_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_4
     {
@@ -600,7 +613,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1244); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_Far_Right_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_5
     {
@@ -608,7 +622,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1252); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Medic
+    /// NameProperty: ThugInWayAnims_Medic<br/>
+    /// Default: Man_Down_Push_Far_Left_Medic
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Medic_6
     {
@@ -622,7 +637,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
     public InlineArray<BmSDK.FName> ThugInWayAnims_Thug => new(7, Ptr + 1268, 8, this);
 
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_01_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_0
     {
@@ -630,7 +646,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1268); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_02_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_1
     {
@@ -638,7 +655,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1276); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_Far_01_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_2
     {
@@ -646,7 +664,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1284); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_Right_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_3
     {
@@ -654,7 +673,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1292); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_Left_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_4
     {
@@ -662,7 +682,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1300); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_Far_Right_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_5
     {
@@ -670,7 +691,8 @@ public partial class RBMAIAction_ReviveCasualty : BmSDK.BmGame.RBMAIAction, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1308); }
     }
     /// <summary>
-    /// NameProperty: ThugInWayAnims_Thug
+    /// NameProperty: ThugInWayAnims_Thug<br/>
+    /// Default: Man_Down_Push_Far_Left_TG
     /// </summary>
     public unsafe BmSDK.FName ThugInWayAnims_Thug_6
     {

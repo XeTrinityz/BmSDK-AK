@@ -439,32 +439,38 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<System.Numerics.Vector3> vilGrateLookRefPoints => new(6, Ptr + 748, 12, this);
 
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-132,Y=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 748);
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-117.2,Y=-4.75)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 760);
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-150.5,Y=-4.5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 772);
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-133,Y=5)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 784);
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-76)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 796);
     /// <summary>
-    /// StructProperty: vilGrateLookRefPoints
+    /// StructProperty: vilGrateLookRefPoints<br/>
+    /// Default: (X=-192.75,Y=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vilGrateLookRefPoints_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 808);
@@ -475,7 +481,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     public InlineArray<BmSDK.FName> AnimNames => new(6, Ptr + 820, 8, this);
 
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Grate_Look_Inside
     /// </summary>
     public unsafe BmSDK.FName AnimNames_0
     {
@@ -483,7 +490,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 820); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Grate_Shoot_Inside
     /// </summary>
     public unsafe BmSDK.FName AnimNames_1
     {
@@ -491,7 +499,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 828); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Grate_Shotgun_Inside
     /// </summary>
     public unsafe BmSDK.FName AnimNames_2
     {
@@ -499,7 +508,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 836); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Grenade_Throw_into_Floor_Vent_02
     /// </summary>
     public unsafe BmSDK.FName AnimNames_3
     {
@@ -507,7 +517,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 844); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Grate_Stand_Examine
     /// </summary>
     public unsafe BmSDK.FName AnimNames_4
     {
@@ -515,7 +526,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 852); }
     }
     /// <summary>
-    /// NameProperty: AnimNames
+    /// NameProperty: AnimNames<br/>
+    /// Default: Buddy_Floor_Grate_Check_In_Leader
     /// </summary>
     public unsafe BmSDK.FName AnimNames_5
     {
@@ -569,7 +581,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 900); }
     }
     /// <summary>
-    /// NameProperty: OutAnimNames
+    /// NameProperty: OutAnimNames<br/>
+    /// Default: Buddy_Floor_Grate_Check_Out_Leader
     /// </summary>
     public unsafe BmSDK.FName OutAnimNames_5
     {
@@ -578,7 +591,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// NameProperty: slaveInAnimName
+    /// NameProperty: slaveInAnimName<br/>
+    /// Default: Buddy_Floor_Grate_Check_In_Follower
     /// </summary>
     public unsafe BmSDK.FName slaveInAnimName
     {
@@ -587,7 +601,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// NameProperty: slaveIdleName
+    /// NameProperty: slaveIdleName<br/>
+    /// Default: Buddy_Floor_Grate_Check_Idle_Follower
     /// </summary>
     public unsafe BmSDK.FName slaveIdleName
     {
@@ -596,7 +611,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// NameProperty: slaveOutAnimName
+    /// NameProperty: slaveOutAnimName<br/>
+    /// Default: Buddy_Floor_Grate_Check_Out_Follower
     /// </summary>
     public unsafe BmSDK.FName slaveOutAnimName
     {
@@ -605,7 +621,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// FloatProperty: timeTillCanSeeInGrates
+    /// FloatProperty: timeTillCanSeeInGrates<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float timeTillCanSeeInGrates
     {
@@ -620,7 +637,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 944);
 
     /// <summary>
-    /// FloatProperty: distToEnterGrateMoveStance
+    /// FloatProperty: distToEnterGrateMoveStance<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float distToEnterGrateMoveStance
     {
@@ -683,7 +701,8 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
     }
 
     /// <summary>
-    /// FloatProperty: minApproachTime
+    /// FloatProperty: minApproachTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float minApproachTime
     {

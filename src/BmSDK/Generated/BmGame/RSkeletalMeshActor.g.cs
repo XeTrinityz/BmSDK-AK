@@ -478,7 +478,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: WarnAboutMultipleAnimControl
+    /// BoolProperty: WarnAboutMultipleAnimControl<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool WarnAboutMultipleAnimControl
     {

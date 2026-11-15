@@ -1036,7 +1036,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// FloatProperty: MayhemBarkLockTime
+    /// FloatProperty: MayhemBarkLockTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MayhemBarkLockTime
     {
@@ -1045,7 +1046,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: PounceLandFX
+    /// ObjectProperty: PounceLandFX<br/>
+    /// Default: PFX_Catwoman.Particles.pounce_climb
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem PounceLandFX
     {
@@ -1054,7 +1056,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: PounceHardLandFX
+    /// ObjectProperty: PounceHardLandFX<br/>
+    /// Default: PFX_Catwoman.Particles.pounce_impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem PounceHardLandFX
     {
@@ -1063,7 +1066,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: HairMaterialInst
+    /// ObjectProperty: HairMaterialInst<br/>
+    /// Default: Catwoman.Materials.Catwoman_Hair_Blend_Anisotropy_Mat_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant HairMaterialInst
     {
@@ -1072,7 +1076,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: HairCWC1MaterialInst
+    /// ObjectProperty: HairCWC1MaterialInst<br/>
+    /// Default: Character_Shared.Materials.Catwoman_Hair_Blend_intro_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant HairCWC1MaterialInst
     {
@@ -1081,7 +1086,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: StandMayhemModeSpecialMove
+    /// ObjectProperty: StandMayhemModeSpecialMove<br/>
+    /// Default: WBGMDLC_HarleyQuinn_Special_Moves.MayhemModeActivate_Stand
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig StandMayhemModeSpecialMove
     {
@@ -1090,7 +1096,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: RailingMayhemModeSpecialMove
+    /// ObjectProperty: RailingMayhemModeSpecialMove<br/>
+    /// Default: WBGMDLC_HarleyQuinn_Special_Moves.MayhemModeActivate_Railing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RailingMayhemModeSpecialMove
     {
@@ -1099,7 +1106,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ObjectProperty: HarleyOnSpeedFX
+    /// ObjectProperty: HarleyOnSpeedFX<br/>
+    /// Default: Zeppelin_World_Shaders.ParticleSystem.HarleyOnSpeed
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HarleyOnSpeedFX
     {
@@ -1164,7 +1172,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// ComponentProperty: BaseBallBat
+    /// ComponentProperty: BaseBallBat<br/>
+    /// Default: BmScript.Default__MPawnPlayerHarleyQuinn.BaseBallBat0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BaseBallBat
     {
@@ -1254,7 +1263,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// BoolProperty: bFinishedFight
+    /// BoolProperty: bFinishedFight<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFinishedFight
     {
@@ -1314,7 +1324,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// NameProperty: OWBrightnessMaterialParameterName
+    /// NameProperty: OWBrightnessMaterialParameterName<br/>
+    /// Default: CW_OW_Brightness_Multiplier
     /// </summary>
     public unsafe BmSDK.FName OWBrightnessMaterialParameterName
     {
@@ -1323,7 +1334,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// FloatProperty: BrightnessIndoors
+    /// FloatProperty: BrightnessIndoors<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BrightnessIndoors
     {
@@ -1332,7 +1344,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// FloatProperty: BrightnessOutdoors
+    /// FloatProperty: BrightnessOutdoors<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BrightnessOutdoors
     {
@@ -1346,7 +1359,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     public InlineArray<BmSDK.FName> HarleyOnSpeedFXBones => new(4, Ptr + 10820, 8, this);
 
     /// <summary>
-    /// NameProperty: HarleyOnSpeedFXBones
+    /// NameProperty: HarleyOnSpeedFXBones<br/>
+    /// Default: Bip01_L_Hand
     /// </summary>
     public unsafe BmSDK.FName HarleyOnSpeedFXBones_0
     {
@@ -1354,7 +1368,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 10820); }
     }
     /// <summary>
-    /// NameProperty: HarleyOnSpeedFXBones
+    /// NameProperty: HarleyOnSpeedFXBones<br/>
+    /// Default: Bip01_R_Hand
     /// </summary>
     public unsafe BmSDK.FName HarleyOnSpeedFXBones_1
     {
@@ -1362,7 +1377,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 10828); }
     }
     /// <summary>
-    /// NameProperty: HarleyOnSpeedFXBones
+    /// NameProperty: HarleyOnSpeedFXBones<br/>
+    /// Default: Bip01_L_Foot
     /// </summary>
     public unsafe BmSDK.FName HarleyOnSpeedFXBones_2
     {
@@ -1370,7 +1386,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 10836); }
     }
     /// <summary>
-    /// NameProperty: HarleyOnSpeedFXBones
+    /// NameProperty: HarleyOnSpeedFXBones<br/>
+    /// Default: Bip01_R_Foot
     /// </summary>
     public unsafe BmSDK.FName HarleyOnSpeedFXBones_3
     {
@@ -1379,7 +1396,8 @@ public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuin
     }
 
     /// <summary>
-    /// StructProperty: MayhemModeCameraShake
+    /// StructProperty: MayhemModeCameraShake<br/>
+    /// Default: (TimeDuration=2.2,LocAmplitude=(X=20,Y=20,Z=20),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMin...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct MayhemModeCameraShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 10852);

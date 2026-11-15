@@ -315,7 +315,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: TargetVehicle
+        /// IntProperty: TargetVehicle<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int TargetVehicle
         {
@@ -360,7 +361,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MassScale
+        /// FloatProperty: MassScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MassScale
         {
@@ -369,7 +371,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: ReturnToPatrolWhenPlayerLost
+        /// BoolProperty: ReturnToPatrolWhenPlayerLost<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool ReturnToPatrolWhenPlayerLost
         {
@@ -430,7 +433,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: IdleAnimCustom
+        /// StructProperty: IdleAnimCustom<br/>
+        /// Default: (MinInterval=10,MaxInterval=30)
         /// </summary>
         public unsafe BmSDK.BmGame.RVehicleNPC.FVehiclePassengerIdleInfo IdleAnimCustom
         {

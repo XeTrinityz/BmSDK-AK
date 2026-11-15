@@ -255,7 +255,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: ActivationSFX
+    /// ObjectProperty: ActivationSFX<br/>
+    /// Default: Ww_CHR_BatmanREC.Play_REC_Activate
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ActivationSFX
     {
@@ -264,7 +265,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: RECMotorJammedVFX
+    /// ComponentProperty: RECMotorJammedVFX<br/>
+    /// Default: BmScript.Default__RRECMotor.Jammed0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RECMotorJammedVFX
     {
@@ -273,7 +275,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: ActivationVFX
+    /// ComponentProperty: ActivationVFX<br/>
+    /// Default: BmScript.Default__RRECMotor.Activation0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ActivationVFX
     {
@@ -282,7 +285,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MotorMaterialUpSpeed
+    /// FloatProperty: MotorMaterialUpSpeed<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float MotorMaterialUpSpeed
     {
@@ -291,7 +295,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MotorMaterialDownSpeed
+    /// FloatProperty: MotorMaterialDownSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MotorMaterialDownSpeed
     {
@@ -300,7 +305,8 @@ public partial class RRECMotor : BmSDK.BmScript.RMagneticSurfaceSM, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: MotorActivationFXOffset
+    /// StructProperty: MotorActivationFXOffset<br/>
+    /// Default: (Y=-40,Z=40)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 MotorActivationFXOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1152);

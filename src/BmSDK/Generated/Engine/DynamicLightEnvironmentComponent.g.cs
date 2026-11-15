@@ -141,7 +141,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: InvisibleUpdateTime
+    /// FloatProperty: InvisibleUpdateTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float InvisibleUpdateTime
     {
@@ -150,7 +151,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenFullUpdates
+    /// FloatProperty: MinTimeBetweenFullUpdates<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MinTimeBetweenFullUpdates
     {
@@ -159,7 +161,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: VelocityUpdateTimeScale
+    /// FloatProperty: VelocityUpdateTimeScale<br/>
+    /// Default: 1e-06
     /// </summary>
     public unsafe float VelocityUpdateTimeScale
     {
@@ -168,7 +171,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: ShadowInterpolationSpeed
+    /// FloatProperty: ShadowInterpolationSpeed<br/>
+    /// Default: 0.004
     /// </summary>
     public unsafe float ShadowInterpolationSpeed
     {
@@ -177,7 +181,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// IntProperty: NumVolumeVisibilitySamples
+    /// IntProperty: NumVolumeVisibilitySamples<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumVolumeVisibilitySamples
     {
@@ -186,7 +191,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: LightingBoundsScale
+    /// FloatProperty: LightingBoundsScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightingBoundsScale
     {
@@ -195,25 +201,29 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// StructProperty: AmbientShadowColor
+    /// StructProperty: AmbientShadowColor<br/>
+    /// Default: (R=0.001,G=0.001,B=0.001,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor AmbientShadowColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 188);
 
     /// <summary>
-    /// StructProperty: AmbientShadowSourceDirection
+    /// StructProperty: AmbientShadowSourceDirection<br/>
+    /// Default: (X=0.01,Z=0.99)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AmbientShadowSourceDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 204);
 
     /// <summary>
-    /// StructProperty: AmbientGlow
+    /// StructProperty: AmbientGlow<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor AmbientGlow
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 216);
 
     /// <summary>
-    /// FloatProperty: LightDistance
+    /// FloatProperty: LightDistance<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float LightDistance
     {
@@ -222,7 +232,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: ShadowDistance
+    /// FloatProperty: ShadowDistance<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ShadowDistance
     {
@@ -231,7 +242,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bCastShadows
+    /// BoolProperty: bCastShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastShadows
     {
@@ -240,7 +252,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bCompositeShadowsFromDynamicLights
+    /// BoolProperty: bCompositeShadowsFromDynamicLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCompositeShadowsFromDynamicLights
     {
@@ -258,7 +271,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bAffectedBySmallDynamicLights
+    /// BoolProperty: bAffectedBySmallDynamicLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectedBySmallDynamicLights
     {
@@ -267,7 +281,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bUseBooleanEnvironmentShadowing
+    /// BoolProperty: bUseBooleanEnvironmentShadowing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseBooleanEnvironmentShadowing
     {
@@ -276,7 +291,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bShadowFromEnvironment
+    /// BoolProperty: bShadowFromEnvironment<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShadowFromEnvironment
     {
@@ -285,7 +301,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// BoolProperty: bDynamic
+    /// BoolProperty: bDynamic<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDynamic
     {
@@ -393,7 +410,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: ModShadowFadeoutExponent
+    /// FloatProperty: ModShadowFadeoutExponent<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ModShadowFadeoutExponent
     {
@@ -402,13 +420,15 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// StructProperty: MaxModulatedShadowColor
+    /// StructProperty: MaxModulatedShadowColor<br/>
+    /// Default: (R=0.5,G=0.5,B=0.5,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor MaxModulatedShadowColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 252);
 
     /// <summary>
-    /// FloatProperty: DominantShadowTransitionStartDistance
+    /// FloatProperty: DominantShadowTransitionStartDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DominantShadowTransitionStartDistance
     {
@@ -417,7 +437,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: DominantShadowTransitionEndDistance
+    /// FloatProperty: DominantShadowTransitionEndDistance<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DominantShadowTransitionEndDistance
     {
@@ -435,7 +456,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     }
 
     /// <summary>
-    /// FloatProperty: MinShadowAngle
+    /// FloatProperty: MinShadowAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float MinShadowAngle
     {

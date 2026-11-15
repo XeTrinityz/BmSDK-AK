@@ -5506,7 +5506,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// BoolProperty: SelfDriveAllowBoost
+    /// BoolProperty: SelfDriveAllowBoost<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SelfDriveAllowBoost
     {
@@ -5983,7 +5984,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// BoolProperty: bAllowPMDodge
+    /// BoolProperty: bAllowPMDodge<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowPMDodge
     {
@@ -6046,7 +6048,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: StrafeCooldown
+    /// FloatProperty: StrafeCooldown<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float StrafeCooldown
     {
@@ -6106,7 +6109,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: StrafeFwdCorrectionForce
+    /// FloatProperty: StrafeFwdCorrectionForce<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float StrafeFwdCorrectionForce
     {
@@ -6124,7 +6128,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: EbrakeTime
+    /// FloatProperty: EbrakeTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EbrakeTime
     {
@@ -6133,7 +6138,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: EBrakeBrakeForce
+    /// FloatProperty: EBrakeBrakeForce<br/>
+    /// Default: 160000
     /// </summary>
     public unsafe float EBrakeBrakeForce
     {
@@ -6142,7 +6148,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: EBrakeAccelForce
+    /// FloatProperty: EBrakeAccelForce<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float EBrakeAccelForce
     {
@@ -6151,7 +6158,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: AfterburnerSystem
+    /// ComponentProperty: AfterburnerSystem<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.ab
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AfterburnerSystem
     {
@@ -6160,7 +6168,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: AfterburnerWarmupSystem
+    /// ComponentProperty: AfterburnerWarmupSystem<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.ABW
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AfterburnerWarmupSystem
     {
@@ -6169,7 +6178,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: RearFinTrail
+    /// ComponentProperty: RearFinTrail<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.FinTrail0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RearFinTrail
     {
@@ -6178,7 +6188,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BrakeLightTrailSystemL
+    /// ComponentProperty: BrakeLightTrailSystemL<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.BrakeTrail0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BrakeLightTrailSystemL
     {
@@ -6187,7 +6198,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BrakeLightTrailSystemR
+    /// ComponentProperty: BrakeLightTrailSystemR<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.BrakeTrail1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BrakeLightTrailSystemR
     {
@@ -6196,7 +6208,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: SpeedLinesSystem
+    /// ComponentProperty: SpeedLinesSystem<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.SpeedLines0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SpeedLinesSystem
     {
@@ -6214,7 +6227,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: SideExhaustBurstEffect
+    /// ObjectProperty: SideExhaustBurstEffect<br/>
+    /// Default: VFX_Batmobile.Particles.Exhaust.Batmobile_Side_Exhaust
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SideExhaustBurstEffect
     {
@@ -6223,7 +6237,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: SideExhaustBoostEffect
+    /// ObjectProperty: SideExhaustBoostEffect<br/>
+    /// Default: VFX_Batmobile.Particles.Exhaust.Batmobile_Side_Exhaust
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SideExhaustBoostEffect
     {
@@ -6241,7 +6256,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: JumpLandSparksEffectL
+    /// ObjectProperty: JumpLandSparksEffectL<br/>
+    /// Default: VFX_Batmobile.Particles.Impacts.Batmobile_Landing_Sparks_L
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JumpLandSparksEffectL
     {
@@ -6250,7 +6266,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: JumpLandSparksEffectR
+    /// ObjectProperty: JumpLandSparksEffectR<br/>
+    /// Default: VFX_Batmobile.Particles.Impacts.Batmobile_Landing_Sparks_R
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JumpLandSparksEffectR
     {
@@ -6277,7 +6294,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: BurnoutDynamicGridActorTemplate
+    /// ObjectProperty: BurnoutDynamicGridActorTemplate<br/>
+    /// Default: Turbulence_Batmobile.Arch.BatmobileDynamicGrid
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridActor BurnoutDynamicGridActorTemplate
     {
@@ -6295,7 +6313,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: WispyDynamicGridActorTemplate
+    /// ObjectProperty: WispyDynamicGridActorTemplate<br/>
+    /// Default: Turbulence_Batmobile.Arch.BatmobileWispySmoke
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridActor WispyDynamicGridActorTemplate
     {
@@ -6313,7 +6332,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: PSMLightTemplate
+    /// ObjectProperty: PSMLightTemplate<br/>
+    /// Default: Turbulence_Batmobile.Arch.BatmobilePSM_Light
     /// </summary>
     public unsafe BmSDK.BmGame.RDeferred_SpotLight_Shadowed_Spawnable PSMLightTemplate
     {
@@ -6385,7 +6405,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: Transform_In_Bed
+    /// ObjectProperty: Transform_In_Bed<br/>
+    /// Default: Ww_BML_Batmobile.Play_BattleMode_In_Bed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent Transform_In_Bed
     {
@@ -6394,7 +6415,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: Transform_In_Reverse_Bed
+    /// ObjectProperty: Transform_In_Reverse_Bed<br/>
+    /// Default: Ww_BML_Batmobile.Play_BattleMode_In_Rev_Bed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent Transform_In_Reverse_Bed
     {
@@ -6403,7 +6425,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: Transform_Out_Bed
+    /// ObjectProperty: Transform_Out_Bed<br/>
+    /// Default: Ww_BML_Batmobile.Play_BattleMode_Out_Bed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent Transform_Out_Bed
     {
@@ -6412,7 +6435,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: Transform_Out_Reverse_Bed
+    /// ObjectProperty: Transform_Out_Reverse_Bed<br/>
+    /// Default: Ww_BML_Batmobile.Play_BattleMode_Out_Rev_Bed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent Transform_Out_Reverse_Bed
     {
@@ -6837,7 +6861,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: DiedFFWaveForm
+    /// ObjectProperty: DiedFFWaveForm<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.DiedFFWaveForm0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DiedFFWaveForm
     {
@@ -7217,7 +7242,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ObjectProperty: CollisionFFWaveForm
+    /// ObjectProperty: CollisionFFWaveForm<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.CollisionForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform CollisionFFWaveForm
     {
@@ -7298,7 +7324,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ClassProperty: CrushDamageType
+    /// ClassProperty: CrushDamageType<br/>
+    /// Default: Engine.DmgType_Crushed
     /// </summary>
     public unsafe BmSDK.Class CrushDamageType
     {
@@ -7307,7 +7334,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ClassProperty: RamDamageType
+    /// ClassProperty: RamDamageType<br/>
+    /// Default: BmGame.RDmgType_Barge
     /// </summary>
     public unsafe BmSDK.Class RamDamageType
     {
@@ -7316,7 +7344,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmobileOnFireMeshComp
+    /// ComponentProperty: BatmobileOnFireMeshComp<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.BatmobileOnFireMeshComp0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BatmobileOnFireMeshComp
     {
@@ -7325,7 +7354,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: RearCylinderComponent
+    /// ComponentProperty: RearCylinderComponent<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.RearCollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent RearCylinderComponent
     {
@@ -7334,7 +7364,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: FrontCylinderComponent
+    /// ComponentProperty: FrontCylinderComponent<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.FrontCollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent FrontCylinderComponent
     {
@@ -7343,7 +7374,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: HeatSteam
+    /// ComponentProperty: HeatSteam<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.HeatSteam
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeatSteam
     {
@@ -7361,7 +7393,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmanCollisionMeshBattleMode
+    /// ComponentProperty: BatmanCollisionMeshBattleMode<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.BatmanCollisionMeshBattleMode0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BatmanCollisionMeshBattleMode
     {
@@ -7370,7 +7403,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: BatmanCollisionMeshPursuitMode
+    /// ComponentProperty: BatmanCollisionMeshPursuitMode<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.BatmanCollisionMeshPursuitMode0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BatmanCollisionMeshPursuitMode
     {
@@ -7449,7 +7483,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: ThugZapperInteractions
+    /// ComponentProperty: ThugZapperInteractions<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.ZapperInt
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent ThugZapperInteractions
     {
@@ -7485,7 +7520,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: ZapperRR
+    /// ComponentProperty: ZapperRR<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.Zapper3
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ZapperRR
     {
@@ -7494,7 +7530,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: ZapperRL
+    /// ComponentProperty: ZapperRL<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.Zapper2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ZapperRL
     {
@@ -7503,7 +7540,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: ZapperFR
+    /// ComponentProperty: ZapperFR<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.Zapper1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ZapperFR
     {
@@ -7512,7 +7550,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: ZapperFL
+    /// ComponentProperty: ZapperFL<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.Zapper0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ZapperFL
     {
@@ -7521,7 +7560,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: WallScrapeSparksSystemR
+    /// ComponentProperty: WallScrapeSparksSystemR<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.WallScrape1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent WallScrapeSparksSystemR
     {
@@ -7530,7 +7570,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ComponentProperty: WallScrapeSparksSystemL
+    /// ComponentProperty: WallScrapeSparksSystemL<br/>
+    /// Default: BmGame.Default__RVehicleBatmobileBase.WallScrape0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent WallScrapeSparksSystemL
     {
@@ -7674,7 +7715,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ByteProperty: MaxEjectType
+    /// ByteProperty: MaxEjectType<br/>
+    /// Default: EBET_NormalEject
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleBatmobileBase.EBatmobileEjectType MaxEjectType
     {
@@ -7683,7 +7725,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// NameProperty: ImpactSparksSizeName
+    /// NameProperty: ImpactSparksSizeName<br/>
+    /// Default: Size
     /// </summary>
     public unsafe BmSDK.FName ImpactSparksSizeName
     {
@@ -7701,7 +7744,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: DiskBrakeMaterialIndex
+    /// IntProperty: DiskBrakeMaterialIndex<br/>
+    /// Default: 13
     /// </summary>
     public unsafe int DiskBrakeMaterialIndex
     {
@@ -7710,7 +7754,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ArrayProperty: MuddyCarMaterialIndices
+    /// ArrayProperty: MuddyCarMaterialIndices<br/>
+    /// Default: (0,2,3,4,9,13)
     /// </summary>
     public unsafe BmSDK.TArray<int> MuddyCarMaterialIndices
     {
@@ -7719,7 +7764,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: EMPMaterialIndex
+    /// IntProperty: EMPMaterialIndex<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int EMPMaterialIndex
     {
@@ -7737,7 +7783,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: LastMobileTime
+    /// FloatProperty: LastMobileTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastMobileTime
     {
@@ -7752,7 +7799,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 5948);
 
     /// <summary>
-    /// ArrayProperty: TauntPositions
+    /// ArrayProperty: TauntPositions<br/>
+    /// Default: ((),(Offset=(X=425)),(Offset=(X=-425)),(Offset=(X=200,Y=-250)),(Offset=(Y=-250)),(Offset=(X=-200,Y=-250)),(Offset=(X=200,Y=250)),(Offset=(Y=250)),(Offset=(X=-200,Y=250)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleBatmobileBase.FTauntPosition> TauntPositions
     {
@@ -7770,7 +7818,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistSceneryDuration
+    /// FloatProperty: ImpactRoadAssistSceneryDuration<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float ImpactRoadAssistSceneryDuration
     {
@@ -7779,7 +7828,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistEnemyDuration
+    /// FloatProperty: ImpactRoadAssistEnemyDuration<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ImpactRoadAssistEnemyDuration
     {
@@ -7788,7 +7838,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistFactor
+    /// FloatProperty: ImpactRoadAssistFactor<br/>
+    /// Default: 40000
     /// </summary>
     public unsafe float ImpactRoadAssistFactor
     {
@@ -7797,7 +7848,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistMaxTorque
+    /// FloatProperty: ImpactRoadAssistMaxTorque<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float ImpactRoadAssistMaxTorque
     {
@@ -7806,7 +7858,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistMaxAngle
+    /// FloatProperty: ImpactRoadAssistMaxAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float ImpactRoadAssistMaxAngle
     {
@@ -7815,7 +7868,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistAngVelocityTime
+    /// FloatProperty: ImpactRoadAssistAngVelocityTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ImpactRoadAssistAngVelocityTime
     {
@@ -7824,7 +7878,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistSteeringFactor
+    /// FloatProperty: ImpactRoadAssistSteeringFactor<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ImpactRoadAssistSteeringFactor
     {
@@ -7833,7 +7888,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistLookAheadTime
+    /// FloatProperty: ImpactRoadAssistLookAheadTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ImpactRoadAssistLookAheadTime
     {
@@ -7842,7 +7898,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRoadAssistAngleStrength
+    /// FloatProperty: ImpactRoadAssistAngleStrength<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float ImpactRoadAssistAngleStrength
     {
@@ -7872,7 +7929,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 6036);
 
     /// <summary>
-    /// FloatProperty: AccelTorqueFactor
+    /// FloatProperty: AccelTorqueFactor<br/>
+    /// Default: -0.02
     /// </summary>
     public unsafe float AccelTorqueFactor
     {
@@ -7881,7 +7939,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BrakeSpinOutAngVel
+    /// FloatProperty: BrakeSpinOutAngVel<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float BrakeSpinOutAngVel
     {
@@ -7890,7 +7949,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BrakeSpinOutTorqueFactor
+    /// FloatProperty: BrakeSpinOutTorqueFactor<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BrakeSpinOutTorqueFactor
     {
@@ -8116,7 +8176,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ThrottleSpeed
+    /// FloatProperty: ThrottleSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ThrottleSpeed
     {
@@ -8125,7 +8186,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: BattleModeYawOffset
+    /// IntProperty: BattleModeYawOffset<br/>
+    /// Default: 16384
     /// </summary>
     public unsafe int BattleModeYawOffset
     {
@@ -8134,7 +8196,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BattleDodgeImpulse
+    /// FloatProperty: BattleDodgeImpulse<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float BattleDodgeImpulse
     {
@@ -8143,7 +8206,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: ArmourModeDamageReduction
+    /// IntProperty: ArmourModeDamageReduction<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int ArmourModeDamageReduction
     {
@@ -8197,7 +8261,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// NameProperty: BattleModeTransformationAnimName
+    /// NameProperty: BattleModeTransformationAnimName<br/>
+    /// Default: Batmobile_V2_Tank_Spread_Open_Game
     /// </summary>
     public unsafe BmSDK.FName BattleModeTransformationAnimName
     {
@@ -8206,7 +8271,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// NameProperty: PursuitModeTransformationAnimName
+    /// NameProperty: PursuitModeTransformationAnimName<br/>
+    /// Default: Batmobile_V2_Tank_Spread_Close_Game
     /// </summary>
     public unsafe BmSDK.FName PursuitModeTransformationAnimName
     {
@@ -8290,7 +8356,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: BatmobileLevelVolIndex
+    /// IntProperty: BatmobileLevelVolIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int BatmobileLevelVolIndex
     {
@@ -8308,7 +8375,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeWidth
+    /// FloatProperty: BattleModeWidth<br/>
+    /// Default: 265
     /// </summary>
     public unsafe float BattleModeWidth
     {
@@ -8317,7 +8385,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeLength
+    /// FloatProperty: BattleModeLength<br/>
+    /// Default: 430
     /// </summary>
     public unsafe float BattleModeLength
     {
@@ -8326,7 +8395,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeHeight
+    /// FloatProperty: BattleModeHeight<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float BattleModeHeight
     {
@@ -8335,7 +8405,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PursuitModeWidth
+    /// FloatProperty: PursuitModeWidth<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float PursuitModeWidth
     {
@@ -8344,7 +8415,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PursuitModeLength
+    /// FloatProperty: PursuitModeLength<br/>
+    /// Default: 430
     /// </summary>
     public unsafe float PursuitModeLength
     {
@@ -8353,7 +8425,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PursuitModeHeight
+    /// FloatProperty: PursuitModeHeight<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float PursuitModeHeight
     {
@@ -8362,7 +8435,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: AdjustedCarDirectionFactor
+    /// FloatProperty: AdjustedCarDirectionFactor<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float AdjustedCarDirectionFactor
     {
@@ -8407,7 +8481,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: ExplosiveImpactScreenShake
+    /// StructProperty: ExplosiveImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ExplosiveImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 6596);
@@ -8537,13 +8612,15 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: SelfDriveRoadObstacleTypes
+    /// StructProperty: SelfDriveRoadObstacleTypes<br/>
+    /// Default: (Car=true,Humvee=true,APC=true,LightTank=true,HeavyTank=true,Abandoned=true,HeavyAbandoned=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicle.FRoadObstacleTypes SelfDriveRoadObstacleTypes
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicle.FRoadObstacleTypes>(Ptr + 6852);
 
     /// <summary>
-    /// FloatProperty: ImpactMaxDamage
+    /// FloatProperty: ImpactMaxDamage<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ImpactMaxDamage
     {
@@ -8552,7 +8629,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactMaxDamageSpeed
+    /// FloatProperty: ImpactMaxDamageSpeed<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ImpactMaxDamageSpeed
     {
@@ -8561,7 +8639,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactMinDamageSpeed
+    /// FloatProperty: ImpactMinDamageSpeed<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float ImpactMinDamageSpeed
     {
@@ -8570,7 +8649,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactStrafeMod
+    /// FloatProperty: ImpactStrafeMod<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ImpactStrafeMod
     {
@@ -8579,7 +8659,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactCivilianVehicleMod
+    /// FloatProperty: ImpactCivilianVehicleMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ImpactCivilianVehicleMod
     {
@@ -8588,7 +8669,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactBoostMod
+    /// FloatProperty: ImpactBoostMod<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ImpactBoostMod
     {
@@ -8597,7 +8679,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactMaxDamagePow
+    /// FloatProperty: ImpactMaxDamagePow<br/>
+    /// Default: 0.666
     /// </summary>
     public unsafe float ImpactMaxDamagePow
     {
@@ -8633,7 +8716,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: StafeImpactImpulse
+    /// FloatProperty: StafeImpactImpulse<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float StafeImpactImpulse
     {
@@ -8697,13 +8781,15 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: HeadLightsColourPursuit
+    /// StructProperty: HeadLightsColourPursuit<br/>
+    /// Default: (R=1,G=1,B=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor HeadLightsColourPursuit
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 7108);
 
     /// <summary>
-    /// StructProperty: HeadLightsColourBattle
+    /// StructProperty: HeadLightsColourBattle<br/>
+    /// Default: (R=25,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor HeadLightsColourBattle
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 7124);
@@ -8745,7 +8831,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: FakeExtraSpeedMax
+    /// FloatProperty: FakeExtraSpeedMax<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float FakeExtraSpeedMax
     {
@@ -8754,7 +8841,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: FakeExtaSpeedAccel
+    /// FloatProperty: FakeExtaSpeedAccel<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float FakeExtaSpeedAccel
     {
@@ -8763,7 +8851,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: FakeExtaSpeedDecel
+    /// FloatProperty: FakeExtaSpeedDecel<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FakeExtaSpeedDecel
     {
@@ -8781,7 +8870,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: SideSwipeRange
+    /// FloatProperty: SideSwipeRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SideSwipeRange
     {
@@ -8790,7 +8880,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: SideSwipeFwdRange
+    /// FloatProperty: SideSwipeFwdRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SideSwipeFwdRange
     {
@@ -8799,7 +8890,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: KillFlipTorque
+    /// FloatProperty: KillFlipTorque<br/>
+    /// Default: -2e+06
     /// </summary>
     public unsafe float KillFlipTorque
     {
@@ -8808,7 +8900,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: KillFlipTorqueDuration
+    /// FloatProperty: KillFlipTorqueDuration<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float KillFlipTorqueDuration
     {
@@ -8817,7 +8910,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: KillKeepyUpFactor
+    /// FloatProperty: KillKeepyUpFactor<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float KillKeepyUpFactor
     {
@@ -8826,7 +8920,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: KillKeepyUpFactorDuration
+    /// FloatProperty: KillKeepyUpFactorDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float KillKeepyUpFactorDuration
     {
@@ -8835,13 +8930,15 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: ImpactShake
+    /// StructProperty: ImpactShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 7208);
 
     /// <summary>
-    /// FloatProperty: ImpactShakeForceFactor
+    /// FloatProperty: ImpactShakeForceFactor<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float ImpactShakeForceFactor
     {
@@ -8850,7 +8947,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactShakeVehicleFactor
+    /// FloatProperty: ImpactShakeVehicleFactor<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ImpactShakeVehicleFactor
     {
@@ -8859,7 +8957,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactShakeAbandonedVehicleFactor
+    /// FloatProperty: ImpactShakeAbandonedVehicleFactor<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ImpactShakeAbandonedVehicleFactor
     {
@@ -8868,7 +8967,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ImpactShakeDestructiblesFactor
+    /// FloatProperty: ImpactShakeDestructiblesFactor<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ImpactShakeDestructiblesFactor
     {
@@ -8886,7 +8986,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: CameraImpactEffectFactorFwd
+    /// FloatProperty: CameraImpactEffectFactorFwd<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CameraImpactEffectFactorFwd
     {
@@ -8895,7 +8996,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: CameraImpactEffectFactorSide
+    /// FloatProperty: CameraImpactEffectFactorSide<br/>
+    /// Default: 0.375
     /// </summary>
     public unsafe float CameraImpactEffectFactorSide
     {
@@ -8904,7 +9006,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleImpactEffectFactorFwd
+    /// FloatProperty: VehicleImpactEffectFactorFwd<br/>
+    /// Default: -0.15
     /// </summary>
     public unsafe float VehicleImpactEffectFactorFwd
     {
@@ -8913,7 +9016,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleImpactEffectFactorSide
+    /// FloatProperty: VehicleImpactEffectFactorSide<br/>
+    /// Default: -0.4
     /// </summary>
     public unsafe float VehicleImpactEffectFactorSide
     {
@@ -8922,7 +9026,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleImpactForceFactorFwd
+    /// FloatProperty: VehicleImpactForceFactorFwd<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float VehicleImpactForceFactorFwd
     {
@@ -8931,7 +9036,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleImpactForceFalloff
+    /// FloatProperty: VehicleImpactForceFalloff<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float VehicleImpactForceFalloff
     {
@@ -8940,7 +9046,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleImpactForceMax
+    /// FloatProperty: VehicleImpactForceMax<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float VehicleImpactForceMax
     {
@@ -8958,7 +9065,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: VehicleShovingTorque
+    /// FloatProperty: VehicleShovingTorque<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float VehicleShovingTorque
     {
@@ -8991,7 +9099,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileStuckTimeMax
+    /// FloatProperty: BatmobileStuckTimeMax<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BatmobileStuckTimeMax
     {
@@ -9000,7 +9109,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileStuckTimeFlip
+    /// FloatProperty: BatmobileStuckTimeFlip<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BatmobileStuckTimeFlip
     {
@@ -9039,7 +9149,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 7480);
 
     /// <summary>
-    /// FloatProperty: CheatIgnoreCollisionWidth
+    /// FloatProperty: CheatIgnoreCollisionWidth<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CheatIgnoreCollisionWidth
     {
@@ -9048,7 +9159,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: CheatIgnoreCollisionMinSpeedFactor
+    /// FloatProperty: CheatIgnoreCollisionMinSpeedFactor<br/>
+    /// Default: 1250
     /// </summary>
     public unsafe float CheatIgnoreCollisionMinSpeedFactor
     {
@@ -9131,7 +9243,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: PassengerNoiseIndex
+    /// IntProperty: PassengerNoiseIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PassengerNoiseIndex
     {
@@ -9140,7 +9253,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumbleMinimumThreshold
+    /// FloatProperty: fRumbleMinimumThreshold<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float fRumbleMinimumThreshold
     {
@@ -9149,7 +9263,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumbleWallImpactScaleMultiplier
+    /// FloatProperty: fRumbleWallImpactScaleMultiplier<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float fRumbleWallImpactScaleMultiplier
     {
@@ -9158,7 +9273,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumblePhysicsObjectScaleMultiplier
+    /// FloatProperty: fRumblePhysicsObjectScaleMultiplier<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float fRumblePhysicsObjectScaleMultiplier
     {
@@ -9167,7 +9283,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumblePhysicsObjectMaxValue
+    /// FloatProperty: fRumblePhysicsObjectMaxValue<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float fRumblePhysicsObjectMaxValue
     {
@@ -9176,7 +9293,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumbleAbandonedVehicleScaleMultiplier
+    /// FloatProperty: fRumbleAbandonedVehicleScaleMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float fRumbleAbandonedVehicleScaleMultiplier
     {
@@ -9185,7 +9303,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: fRumbleJumpLandingScaleMultiplier
+    /// FloatProperty: fRumbleJumpLandingScaleMultiplier<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float fRumbleJumpLandingScaleMultiplier
     {
@@ -9302,7 +9421,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorPowerTickUp
+    /// FloatProperty: WeaponGeneratorPowerTickUp<br/>
+    /// Default: 0.666
     /// </summary>
     public unsafe float WeaponGeneratorPowerTickUp
     {
@@ -9311,7 +9431,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ArrayProperty: MaxWeaponGeneratorPower
+    /// ArrayProperty: MaxWeaponGeneratorPower<br/>
+    /// Default: (2,3,4)
     /// </summary>
     public unsafe BmSDK.TArray<float> MaxWeaponGeneratorPower
     {
@@ -9320,7 +9441,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorKillBonus
+    /// FloatProperty: WeaponGeneratorKillBonus<br/>
+    /// Default: 0.3334
     /// </summary>
     public unsafe float WeaponGeneratorKillBonus
     {
@@ -9329,7 +9451,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorHeavyTankKillBonus
+    /// FloatProperty: WeaponGeneratorHeavyTankKillBonus<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WeaponGeneratorHeavyTankKillBonus
     {
@@ -9374,7 +9497,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorDodgeBonus
+    /// FloatProperty: WeaponGeneratorDodgeBonus<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float WeaponGeneratorDodgeBonus
     {
@@ -9383,7 +9507,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorBonusMultiplier
+    /// FloatProperty: WeaponGeneratorBonusMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WeaponGeneratorBonusMultiplier
     {
@@ -9392,7 +9517,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorDrain
+    /// FloatProperty: WeaponGeneratorDrain<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float WeaponGeneratorDrain
     {
@@ -9401,7 +9527,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorDefaultPower
+    /// FloatProperty: WeaponGeneratorDefaultPower<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WeaponGeneratorDefaultPower
     {
@@ -9419,7 +9546,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorScarecrowBonus
+    /// FloatProperty: WeaponGeneratorScarecrowBonus<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float WeaponGeneratorScarecrowBonus
     {
@@ -9455,7 +9583,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: HeatSteamFallOffTime
+    /// FloatProperty: HeatSteamFallOffTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float HeatSteamFallOffTime
     {
@@ -9464,7 +9593,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: HeatSteamBuildUpTime
+    /// FloatProperty: HeatSteamBuildUpTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float HeatSteamBuildUpTime
     {
@@ -9473,7 +9603,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: HowMuchTheRainAffectsHeatSteam
+    /// FloatProperty: HowMuchTheRainAffectsHeatSteam<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float HowMuchTheRainAffectsHeatSteam
     {
@@ -9482,19 +9613,22 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: DriftAngularVelocityBySteer
+    /// StructProperty: DriftAngularVelocityBySteer<br/>
+    /// Default: (Points=((InVal=-1,OutVal=-200),(OutVal=-80),(InVal=1,OutVal=-20)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat DriftAngularVelocityBySteer
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 8008);
 
     /// <summary>
-    /// StructProperty: DriftSpeedBySteer
+    /// StructProperty: DriftSpeedBySteer<br/>
+    /// Default: (Points=((InVal=1),(OutVal=1000),(InVal=1,OutVal=2000)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat DriftSpeedBySteer
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 8028);
 
     /// <summary>
-    /// FloatProperty: DriftAngularVelocityFactor
+    /// FloatProperty: DriftAngularVelocityFactor<br/>
+    /// Default: 320
     /// </summary>
     public unsafe float DriftAngularVelocityFactor
     {
@@ -9503,7 +9637,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftAngularVelocityFactorMax
+    /// FloatProperty: DriftAngularVelocityFactorMax<br/>
+    /// Default: 5760
     /// </summary>
     public unsafe float DriftAngularVelocityFactorMax
     {
@@ -9512,7 +9647,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftVelocityFactor
+    /// FloatProperty: DriftVelocityFactor<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float DriftVelocityFactor
     {
@@ -9521,7 +9657,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftVelocityFactorMax
+    /// FloatProperty: DriftVelocityFactorMax<br/>
+    /// Default: 9999999
     /// </summary>
     public unsafe float DriftVelocityFactorMax
     {
@@ -9530,13 +9667,15 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: DriftVelocityForcePosOffset
+    /// StructProperty: DriftVelocityForcePosOffset<br/>
+    /// Default: (X=25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DriftVelocityForcePosOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 8064);
 
     /// <summary>
-    /// FloatProperty: DriftCorrectionSteerSpeed
+    /// FloatProperty: DriftCorrectionSteerSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DriftCorrectionSteerSpeed
     {
@@ -9545,7 +9684,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftWobbleFrequencyMax
+    /// FloatProperty: DriftWobbleFrequencyMax<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float DriftWobbleFrequencyMax
     {
@@ -9554,7 +9694,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftWobblePeriodMaxSpeed
+    /// FloatProperty: DriftWobblePeriodMaxSpeed<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float DriftWobblePeriodMaxSpeed
     {
@@ -9563,7 +9704,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: DriftWobbleStrengthMax
+    /// FloatProperty: DriftWobbleStrengthMax<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DriftWobbleStrengthMax
     {
@@ -9608,7 +9750,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ArrayProperty: ArmourLevels
+    /// ArrayProperty: ArmourLevels<br/>
+    /// Default: (0,300,600,900,1200)
     /// </summary>
     public unsafe BmSDK.TArray<int> ArmourLevels
     {
@@ -9617,7 +9760,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: LowHealthWarningLevel
+    /// IntProperty: LowHealthWarningLevel<br/>
+    /// Default: 300
     /// </summary>
     public unsafe int LowHealthWarningLevel
     {
@@ -9626,7 +9770,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileOnFireDamageRadiusScale
+    /// FloatProperty: BatmobileOnFireDamageRadiusScale<br/>
+    /// Default: 0.005
     /// </summary>
     public unsafe float BatmobileOnFireDamageRadiusScale
     {
@@ -9635,7 +9780,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileOnFireRadiusDecayDelay
+    /// FloatProperty: BatmobileOnFireRadiusDecayDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BatmobileOnFireRadiusDecayDelay
     {
@@ -9644,7 +9790,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileOnFireRadiusDecayRate
+    /// FloatProperty: BatmobileOnFireRadiusDecayRate<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BatmobileOnFireRadiusDecayRate
     {
@@ -9662,7 +9809,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PMDodgeTorque
+    /// FloatProperty: PMDodgeTorque<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float PMDodgeTorque
     {
@@ -9671,7 +9819,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PMDodgeForce
+    /// FloatProperty: PMDodgeForce<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float PMDodgeForce
     {
@@ -9680,7 +9829,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: PMDodgeDuration
+    /// FloatProperty: PMDodgeDuration<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float PMDodgeDuration
     {
@@ -9716,7 +9866,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: CurrentDisplayedWeaponGenerator
+    /// IntProperty: CurrentDisplayedWeaponGenerator<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentDisplayedWeaponGenerator
     {
@@ -9725,7 +9876,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// ArrayProperty: HealthRecoverRate
+    /// ArrayProperty: HealthRecoverRate<br/>
+    /// Default: (8,4,2)
     /// </summary>
     public unsafe BmSDK.TArray<float> HealthRecoverRate
     {
@@ -9749,7 +9901,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: NumGuardPoints
+    /// IntProperty: NumGuardPoints<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int NumGuardPoints
     {
@@ -9797,7 +9950,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// FloatProperty: ScalarToReduceDestructibleParticlesAtHighSpeed
+    /// FloatProperty: ScalarToReduceDestructibleParticlesAtHighSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScalarToReduceDestructibleParticlesAtHighSpeed
     {
@@ -9806,7 +9960,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: HideDriverPitch
+    /// IntProperty: HideDriverPitch<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int HideDriverPitch
     {
@@ -9815,7 +9970,8 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
     }
 
     /// <summary>
-    /// IntProperty: HideDriverYaw
+    /// IntProperty: HideDriverYaw<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int HideDriverYaw
     {

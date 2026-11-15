@@ -233,7 +233,8 @@ public partial class RSeqAct_BespokeVineSonar : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// StrProperty: RootNetworkString
+    /// StrProperty: RootNetworkString<br/>
+    /// Default: "Plant1"
     /// </summary>
     public unsafe BmSDK.FString RootNetworkString
     {

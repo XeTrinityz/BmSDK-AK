@@ -79,7 +79,8 @@ public partial class ParticleModuleLocationPrimitiveSphere : BmSDK.Engine.Partic
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StartRadius
+    /// StructProperty: StartRadius<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(50,50,50,50),Distribution=Engine.Default__ParticleModuleLocationPrimitiveSphere.DistributionStartRadius)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartRadius
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 200);

@@ -388,7 +388,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: ZoomMultiplication
+    /// IntProperty: ZoomMultiplication<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ZoomMultiplication
     {
@@ -397,7 +398,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ZoomCellSize
+    /// FloatProperty: ZoomCellSize<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ZoomCellSize
     {

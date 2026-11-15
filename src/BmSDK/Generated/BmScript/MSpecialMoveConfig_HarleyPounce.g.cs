@@ -79,7 +79,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: LaunchAnimUp
+    /// NameProperty: LaunchAnimUp<br/>
+    /// Default: Pounce_In_Up
     /// </summary>
     public unsafe BmSDK.FName LaunchAnimUp
     {
@@ -97,7 +98,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: LaunchAnim35
+    /// NameProperty: LaunchAnim35<br/>
+    /// Default: PounceStart_35
     /// </summary>
     public unsafe BmSDK.FName LaunchAnim35
     {
@@ -106,7 +108,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailLongStart
+    /// NameProperty: AnimRailToRailLongStart<br/>
+    /// Default: Pounce_RailToRail_Long_in
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailLongStart
     {
@@ -115,7 +118,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailLongEndWall
+    /// NameProperty: AnimRailToRailLongEndWall<br/>
+    /// Default: Pounce_RailToRail_Long_Out_Wall
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailLongEndWall
     {
@@ -124,7 +128,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailLongEndNoWall
+    /// NameProperty: AnimRailToRailLongEndNoWall<br/>
+    /// Default: Pounce_RailToRail_Long_Out_NoWall
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailLongEndNoWall
     {
@@ -133,7 +138,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailShortEnd
+    /// NameProperty: AnimRailToRailShortEnd<br/>
+    /// Default: Pounce_RailToRail_Short
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailShortEnd
     {
@@ -142,7 +148,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailShortEndOffBalance
+    /// NameProperty: AnimRailToRailShortEndOffBalance<br/>
+    /// Default: Pounce_RailToRail_Short_OffBalance
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailShortEndOffBalance
     {
@@ -151,7 +158,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimRailToRailMidEnd
+    /// NameProperty: AnimRailToRailMidEnd<br/>
+    /// Default: Pounce_RailToRail_Mid
     /// </summary>
     public unsafe BmSDK.FName AnimRailToRailMidEnd
     {
@@ -160,7 +168,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: AnimThroughGrate
+    /// NameProperty: AnimThroughGrate<br/>
+    /// Default: Pounce_Through_Grate
     /// </summary>
     public unsafe BmSDK.FName AnimThroughGrate
     {
@@ -187,7 +196,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: LandOnRailingWithWall
+    /// NameProperty: LandOnRailingWithWall<br/>
+    /// Default: Pounce_Onto_Railing_Wall
     /// </summary>
     public unsafe BmSDK.FName LandOnRailingWithWall
     {
@@ -196,7 +206,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: LandOnRailingWithoutWall
+    /// NameProperty: LandOnRailingWithoutWall<br/>
+    /// Default: Pounce_Onto_Railing_NoWall
     /// </summary>
     public unsafe BmSDK.FName LandOnRailingWithoutWall
     {
@@ -205,7 +216,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: LandOnRailingWithWallR
+    /// NameProperty: LandOnRailingWithWallR<br/>
+    /// Default: Pounce_Onto_Railing_Wall_R
     /// </summary>
     public unsafe BmSDK.FName LandOnRailingWithWallR
     {
@@ -214,7 +226,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: LandOnRailingWithoutWallR
+    /// NameProperty: LandOnRailingWithoutWallR<br/>
+    /// Default: Pounce_Onto_Railing_NoWall_R
     /// </summary>
     public unsafe BmSDK.FName LandOnRailingWithoutWallR
     {
@@ -223,7 +236,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: OverRailingWithWall
+    /// NameProperty: OverRailingWithWall<br/>
+    /// Default: Pounce_Over_Rail_Stand_Wall
     /// </summary>
     public unsafe BmSDK.FName OverRailingWithWall
     {
@@ -232,7 +246,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: OverRailingWithWallR
+    /// NameProperty: OverRailingWithWallR<br/>
+    /// Default: Pounce_Over_Rail_Stand_Wall_R
     /// </summary>
     public unsafe BmSDK.FName OverRailingWithWallR
     {
@@ -241,7 +256,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: OverRailingWithoutWall
+    /// NameProperty: OverRailingWithoutWall<br/>
+    /// Default: Pounce_Over_Rail_Stand_NoWall
     /// </summary>
     public unsafe BmSDK.FName OverRailingWithoutWall
     {
@@ -250,7 +266,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: OverRailingWithoutWallR
+    /// NameProperty: OverRailingWithoutWallR<br/>
+    /// Default: Pounce_Over_Rail_Stand_NoWall_R
     /// </summary>
     public unsafe BmSDK.FName OverRailingWithoutWallR
     {
@@ -259,7 +276,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: CartWheelToPounceShort
+    /// NameProperty: CartWheelToPounceShort<br/>
+    /// Default: Run_To_Pounce
     /// </summary>
     public unsafe BmSDK.FName CartWheelToPounceShort
     {
@@ -268,7 +286,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: CartWheelToPounceLong
+    /// NameProperty: CartWheelToPounceLong<br/>
+    /// Default: Long_Pounce_Start
     /// </summary>
     public unsafe BmSDK.FName CartWheelToPounceLong
     {
@@ -277,7 +296,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: JumpForwardThroughWindow
+    /// NameProperty: JumpForwardThroughWindow<br/>
+    /// Default: Pounce_Window_Forward
     /// </summary>
     public unsafe BmSDK.FName JumpForwardThroughWindow
     {
@@ -286,7 +306,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: RailingEndMovementStance
+    /// NameProperty: RailingEndMovementStance<br/>
+    /// Default: RailingSilentPredator
     /// </summary>
     public unsafe BmSDK.FName RailingEndMovementStance
     {
@@ -295,7 +316,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeRunEndMovementStance
+    /// NameProperty: ClimbLedgeRunEndMovementStance<br/>
+    /// Default: Running
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeRunEndMovementStance
     {
@@ -304,7 +326,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeStandEndMovementStance
+    /// NameProperty: ClimbLedgeStandEndMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeStandEndMovementStance
     {
@@ -313,7 +336,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceAir
+    /// NameProperty: PounceAir<br/>
+    /// Default: Pounce_Air
     /// </summary>
     public unsafe BmSDK.FName PounceAir
     {
@@ -322,7 +346,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceAirR
+    /// NameProperty: PounceAirR<br/>
+    /// Default: Pounce_Air_R
     /// </summary>
     public unsafe BmSDK.FName PounceAirR
     {
@@ -331,7 +356,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceClingWithWall
+    /// NameProperty: PounceClingWithWall<br/>
+    /// Default: Pounce_Cling_Wall
     /// </summary>
     public unsafe BmSDK.FName PounceClingWithWall
     {
@@ -340,7 +366,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceClingWithWallR
+    /// NameProperty: PounceClingWithWallR<br/>
+    /// Default: Pounce_Cling_Wall_R
     /// </summary>
     public unsafe BmSDK.FName PounceClingWithWallR
     {
@@ -349,7 +376,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceClingWithoutWall
+    /// NameProperty: PounceClingWithoutWall<br/>
+    /// Default: Pounce_Cling_NoWall
     /// </summary>
     public unsafe BmSDK.FName PounceClingWithoutWall
     {
@@ -358,7 +386,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: PounceClingWithoutWallR
+    /// NameProperty: PounceClingWithoutWallR<br/>
+    /// Default: Pounce_Cling_NoWall_R
     /// </summary>
     public unsafe BmSDK.FName PounceClingWithoutWallR
     {
@@ -367,7 +396,8 @@ public partial class MSpecialMoveConfig_HarleyPounce : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// NameProperty: EndCameraState
+    /// NameProperty: EndCameraState<br/>
+    /// Default: RailingStealth
     /// </summary>
     public unsafe BmSDK.FName EndCameraState
     {

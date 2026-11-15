@@ -664,7 +664,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// ObjectProperty: ScanPositive
+    /// ObjectProperty: ScanPositive<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Riddler_Brain_Chip_Positive
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScanPositive
     {
@@ -673,7 +674,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// ObjectProperty: ScanNegative
+    /// ObjectProperty: ScanNegative<br/>
+    /// Default: Ww_UI_InGame.Play_UI_Riddler_Brain_Chip_Negative
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScanNegative
     {
@@ -727,7 +729,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// ComponentProperty: LaserSightSystem
+    /// ComponentProperty: LaserSightSystem<br/>
+    /// Default: BmGame.Default__RBatarangProjectile_Controllable.LaserSight0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LaserSightSystem
     {
@@ -754,7 +757,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: MaxPitchVel
+    /// FloatProperty: MaxPitchVel<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxPitchVel
     {
@@ -763,7 +767,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: MaxYawVel
+    /// FloatProperty: MaxYawVel<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxYawVel
     {
@@ -772,7 +777,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: PitchAccel
+    /// FloatProperty: PitchAccel<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float PitchAccel
     {
@@ -781,7 +787,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: YawAccel
+    /// FloatProperty: YawAccel<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float YawAccel
     {
@@ -790,7 +797,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: ControlledTime
+    /// FloatProperty: ControlledTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ControlledTime
     {
@@ -985,7 +993,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1472);
 
     /// <summary>
-    /// FloatProperty: AutoLevelSpeed
+    /// FloatProperty: AutoLevelSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float AutoLevelSpeed
     {
@@ -1003,7 +1012,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: FlipTime
+    /// FloatProperty: FlipTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FlipTime
     {
@@ -1051,7 +1061,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: LightMaterialChangeTime
+    /// FloatProperty: LightMaterialChangeTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float LightMaterialChangeTime
     {
@@ -1114,7 +1125,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// IntProperty: MaxWallHits
+    /// IntProperty: MaxWallHits<br/>
+    /// Default: 666
     /// </summary>
     public unsafe int MaxWallHits
     {
@@ -1141,7 +1153,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: fAmountOfTimeToDisallowReboundsAfterThrow
+    /// FloatProperty: fAmountOfTimeToDisallowReboundsAfterThrow<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float fAmountOfTimeToDisallowReboundsAfterThrow
     {

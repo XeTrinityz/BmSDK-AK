@@ -602,7 +602,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionParticleSystem
+    /// ObjectProperty: ExplosionParticleSystem<br/>
+    /// Default: PFX_Joker.Particles.PFX_Joker_SmokeGrenade_01
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionParticleSystem
     {
@@ -611,7 +612,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Batgirl_ReactionCycle
+    /// NameProperty: Batgirl_ReactionCycle<br/>
+    /// Default: Villain_Attacks_Batgirl_01_Fail_Loop
     /// </summary>
     public unsafe BmSDK.FName Batgirl_ReactionCycle
     {
@@ -620,7 +622,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Robin_ReactionCycle
+    /// NameProperty: Robin_ReactionCycle<br/>
+    /// Default: Villain_Attacks_Robin_01_Fail_Loop
     /// </summary>
     public unsafe BmSDK.FName Robin_ReactionCycle
     {
@@ -629,7 +632,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Batgirl_DualAttackAnimFail
+    /// NameProperty: Batgirl_DualAttackAnimFail<br/>
+    /// Default: Villain_Attacks_Batgirl_01_Fail
     /// </summary>
     public unsafe BmSDK.FName Batgirl_DualAttackAnimFail
     {
@@ -638,7 +642,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Robin_DualAttackAnimFail
+    /// NameProperty: Robin_DualAttackAnimFail<br/>
+    /// Default: Villain_Attacks_Robin_01_Fail
     /// </summary>
     public unsafe BmSDK.FName Robin_DualAttackAnimFail
     {
@@ -647,7 +652,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Batgirl_CameraAnimFail
+    /// NameProperty: Batgirl_CameraAnimFail<br/>
+    /// Default: Villain_Attacks_Batgirl_01_Fail
     /// </summary>
     public unsafe BmSDK.FName Batgirl_CameraAnimFail
     {
@@ -656,7 +662,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Robin_CameraAnimFail
+    /// NameProperty: Robin_CameraAnimFail<br/>
+    /// Default: Villain_Attacks_Robin_01_Fail
     /// </summary>
     public unsafe BmSDK.FName Robin_CameraAnimFail
     {
@@ -665,7 +672,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Batgirl_DualAttackAnimSuccess
+    /// NameProperty: Batgirl_DualAttackAnimSuccess<br/>
+    /// Default: Villain_Attacks_Batgirl_01_Success
     /// </summary>
     public unsafe BmSDK.FName Batgirl_DualAttackAnimSuccess
     {
@@ -674,7 +682,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Robin_DualAttackAnimSuccess
+    /// NameProperty: Robin_DualAttackAnimSuccess<br/>
+    /// Default: Villain_Attacks_Robin_01_Success
     /// </summary>
     public unsafe BmSDK.FName Robin_DualAttackAnimSuccess
     {
@@ -683,7 +692,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Batgirl_CameraAnimSuccess
+    /// NameProperty: Batgirl_CameraAnimSuccess<br/>
+    /// Default: Villain_Attacks_Batgirl_01_Success
     /// </summary>
     public unsafe BmSDK.FName Batgirl_CameraAnimSuccess
     {
@@ -692,7 +702,8 @@ public partial class MCombatMove_JokerBossDualAttack : BmSDK.BmGame.RCombatMove,
     }
 
     /// <summary>
-    /// NameProperty: Robin_CameraAnimSuccess
+    /// NameProperty: Robin_CameraAnimSuccess<br/>
+    /// Default: Villain_Attacks_Robin_01_Success
     /// </summary>
     public unsafe BmSDK.FName Robin_CameraAnimSuccess
     {

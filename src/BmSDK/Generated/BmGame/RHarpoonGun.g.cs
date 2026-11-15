@@ -727,7 +727,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HarpoonRange
+    /// FloatProperty: HarpoonRange<br/>
+    /// Default: 2400
     /// </summary>
     public unsafe float HarpoonRange
     {
@@ -844,7 +845,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: RopeInitTimer
+    /// IntProperty: RopeInitTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RopeInitTimer
     {
@@ -1054,7 +1056,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: ProjectileAttachSocket
+    /// ArrayProperty: ProjectileAttachSocket<br/>
+    /// Default: (Claw1)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> ProjectileAttachSocket
     {
@@ -1072,7 +1075,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: IconSize
+    /// FloatProperty: IconSize<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float IconSize
     {
@@ -1081,7 +1085,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: EnemyTargetAngle
+    /// FloatProperty: EnemyTargetAngle<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float EnemyTargetAngle
     {
@@ -1090,7 +1095,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: CurrentTargets
+    /// ArrayProperty: CurrentTargets<br/>
+    /// Default: (None)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.Actor> CurrentTargets
     {
@@ -1099,7 +1105,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: CurrentTargetParts
+    /// ArrayProperty: CurrentTargetParts<br/>
+    /// Default: (-1)
     /// </summary>
     public unsafe BmSDK.TArray<int> CurrentTargetParts
     {
@@ -1108,7 +1115,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: UltraBatClawGrateSockets
+    /// ArrayProperty: UltraBatClawGrateSockets<br/>
+    /// Default: (BatClawAttach)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> UltraBatClawGrateSockets
     {

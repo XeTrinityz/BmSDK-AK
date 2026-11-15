@@ -221,7 +221,8 @@ public partial class RAddContentPlayerCharacterMesh : BmSDK.BmGame.RAdditionalCo
     }
 
     /// <summary>
-    /// IntProperty: Eye2MatIndex
+    /// IntProperty: Eye2MatIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int Eye2MatIndex
     {

@@ -124,7 +124,8 @@ public partial class RBMWeaponBatmanCarryJokerTeacherOrHarley : BmSDK.BmGame.RBM
     }
 
     /// <summary>
-    /// ObjectProperty: CarryAnimset
+    /// ObjectProperty: CarryAnimset<br/>
+    /// Default: Anim_Batman_Carry_Jokers.Code.BM_Carring_JokerTeacher
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet CarryAnimset
     {

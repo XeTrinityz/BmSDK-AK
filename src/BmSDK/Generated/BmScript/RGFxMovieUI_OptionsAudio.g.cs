@@ -191,7 +191,8 @@ public partial class RGFxMovieUI_OptionsAudio : BmSDK.BmGame.RGFxMovieUI, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: FullyLocalisedDialogue
+    /// StrProperty: FullyLocalisedDialogue<br/>
+    /// Default: "INT FRA ITA DEU ESN JPN ESM PTB"
     /// </summary>
     public unsafe BmSDK.FString FullyLocalisedDialogue
     {

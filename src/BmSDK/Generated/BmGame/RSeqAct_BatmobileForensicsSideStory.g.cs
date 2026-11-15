@@ -340,7 +340,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// ObjectProperty: ForensicsScanParticle
+    /// ObjectProperty: ForensicsScanParticle<br/>
+    /// Default: VFX_Forensics.BatmobileView.Particles.Tire_Track_Pulse_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ForensicsScanParticle
     {
@@ -349,7 +350,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// ObjectProperty: ForensicsScanSound
+    /// ObjectProperty: ForensicsScanSound<br/>
+    /// Default: Ww_BML_Sonar.Play_BML_Sonar_Forensics_Pulse
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ForensicsScanSound
     {
@@ -448,7 +450,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: SecondsBeforeDecay
+    /// FloatProperty: SecondsBeforeDecay<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float SecondsBeforeDecay
     {
@@ -466,7 +469,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: PulseRange
+    /// FloatProperty: PulseRange<br/>
+    /// Default: 7500
     /// </summary>
     public unsafe float PulseRange
     {
@@ -475,7 +479,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: PulseConeHalfWidthRadians
+    /// FloatProperty: PulseConeHalfWidthRadians<br/>
+    /// Default: 0.44
     /// </summary>
     public unsafe float PulseConeHalfWidthRadians
     {
@@ -484,7 +489,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: RevealRateWhenDiscoveringNew
+    /// FloatProperty: RevealRateWhenDiscoveringNew<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float RevealRateWhenDiscoveringNew
     {
@@ -493,7 +499,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: DisappearRateWhenTimingOut
+    /// FloatProperty: DisappearRateWhenTimingOut<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float DisappearRateWhenTimingOut
     {
@@ -502,7 +509,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: DisappearRateWhenComplete
+    /// FloatProperty: DisappearRateWhenComplete<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DisappearRateWhenComplete
     {
@@ -556,7 +564,8 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 540);
 
     /// <summary>
-    /// FloatProperty: LineofSightThresholdCentimetres
+    /// FloatProperty: LineofSightThresholdCentimetres<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float LineofSightThresholdCentimetres
     {

@@ -161,7 +161,8 @@ public partial class RSeqAct_PipeDreams : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FailLeewayDist
+    /// FloatProperty: FailLeewayDist<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FailLeewayDist
     {

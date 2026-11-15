@@ -472,7 +472,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bSatNavWanted
+    /// BoolProperty: bSatNavWanted<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSatNavWanted
     {
@@ -481,7 +482,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bArrowWanted
+    /// BoolProperty: bArrowWanted<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bArrowWanted
     {
@@ -517,7 +519,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bClockWarning
+    /// BoolProperty: bClockWarning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClockWarning
     {
@@ -553,7 +556,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bDisableBatmobile
+    /// BoolProperty: bDisableBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableBatmobile
     {
@@ -562,7 +566,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bLockedInBatmobile
+    /// BoolProperty: bLockedInBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLockedInBatmobile
     {
@@ -616,7 +621,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bCentreCameraOnChallengeStart
+    /// BoolProperty: bCentreCameraOnChallengeStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCentreCameraOnChallengeStart
     {
@@ -688,7 +694,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// BoolProperty: bPlayerImmuneTemporarily
+    /// BoolProperty: bPlayerImmuneTemporarily<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayerImmuneTemporarily
     {
@@ -742,7 +749,8 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
     }
 
     /// <summary>
-    /// FloatProperty: TimeDilation
+    /// FloatProperty: TimeDilation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeDilation
     {

@@ -264,7 +264,8 @@ public partial class RCombatMove_BatmanIntoThrow : BmSDK.BmGame.RCombatMove_Batm
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 868);
 
     /// <summary>
-    /// FloatProperty: MinIntoAnimDist
+    /// FloatProperty: MinIntoAnimDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MinIntoAnimDist
     {
@@ -273,7 +274,8 @@ public partial class RCombatMove_BatmanIntoThrow : BmSDK.BmGame.RCombatMove_Batm
     }
 
     /// <summary>
-    /// FloatProperty: MaxIntoAnimDist
+    /// FloatProperty: MaxIntoAnimDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxIntoAnimDist
     {
@@ -282,7 +284,8 @@ public partial class RCombatMove_BatmanIntoThrow : BmSDK.BmGame.RCombatMove_Batm
     }
 
     /// <summary>
-    /// FloatProperty: MinDurationScale
+    /// FloatProperty: MinDurationScale<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MinDurationScale
     {
@@ -291,7 +294,8 @@ public partial class RCombatMove_BatmanIntoThrow : BmSDK.BmGame.RCombatMove_Batm
     }
 
     /// <summary>
-    /// FloatProperty: MaxDurationScale
+    /// FloatProperty: MaxDurationScale<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float MaxDurationScale
     {

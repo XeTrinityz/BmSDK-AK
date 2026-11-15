@@ -192,7 +192,8 @@ public partial class NavMeshGoal_At : BmSDK.Engine.NavMeshPathGoalEvaluator, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PartialDistSq
+    /// FloatProperty: PartialDistSq<br/>
+    /// Default: 1e+12
     /// </summary>
     public unsafe float PartialDistSq
     {

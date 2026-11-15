@@ -1908,7 +1908,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FASColorTransform
     {
         /// <summary>
-        /// StructProperty: Multiply
+        /// StructProperty: Multiply<br/>
+        /// Default: (R=1,G=1,B=1,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor Multiply
         {

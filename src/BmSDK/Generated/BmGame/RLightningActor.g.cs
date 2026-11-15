@@ -177,7 +177,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ThunderSound
+    /// ObjectProperty: ThunderSound<br/>
+    /// Default: Ww_WEA_Thunder.Play_Exterior_Thunder
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ThunderSound
     {
@@ -195,7 +196,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: VerticalLightningStrikeVFX
+    /// ComponentProperty: VerticalLightningStrikeVFX<br/>
+    /// Default: BmGame.Default__RLightningActor.VerticalLightningStrikePSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent VerticalLightningStrikeVFX
     {
@@ -204,7 +206,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: LightningStrikeVFX
+    /// ComponentProperty: LightningStrikeVFX<br/>
+    /// Default: BmGame.Default__RLightningActor.LightningStrikePSC
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LightningStrikeVFX
     {
@@ -213,7 +216,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: LightningComponent
+    /// ComponentProperty: LightningComponent<br/>
+    /// Default: BmGame.Default__RLightningActor.DirectionalLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.DirectionalLightComponent LightningComponent
     {
@@ -228,7 +232,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 708);
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenStrikes
+    /// FloatProperty: MaxTimeBetweenStrikes<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxTimeBetweenStrikes
     {
@@ -237,7 +242,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenStrikesWeighting
+    /// FloatProperty: TimeBetweenStrikesWeighting<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeBetweenStrikesWeighting
     {
@@ -246,7 +252,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLightningStrength
+    /// FloatProperty: MaxLightningStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxLightningStrength
     {
@@ -255,7 +262,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLightningBrightness
+    /// FloatProperty: MaxLightningBrightness<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MaxLightningBrightness
     {
@@ -264,7 +272,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxFlashTime
+    /// FloatProperty: MaxFlashTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxFlashTime
     {
@@ -273,7 +282,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimingFadeIn
+    /// FloatProperty: TimingFadeIn<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float TimingFadeIn
     {
@@ -282,7 +292,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimingFadeOut
+    /// FloatProperty: TimingFadeOut<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float TimingFadeOut
     {
@@ -291,7 +302,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChaosIntensity
+    /// FloatProperty: ChaosIntensity<br/>
+    /// Default: 0.65
     /// </summary>
     public unsafe float ChaosIntensity
     {
@@ -300,7 +312,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ChaosFrequency
+    /// FloatProperty: ChaosFrequency<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ChaosFrequency
     {
@@ -354,7 +367,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FlashTimeBase
+    /// FloatProperty: FlashTimeBase<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FlashTimeBase
     {
@@ -363,7 +377,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NextStrikeIntensity
+    /// FloatProperty: NextStrikeIntensity<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float NextStrikeIntensity
     {
@@ -372,7 +387,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeToNextStrike
+    /// FloatProperty: TimeToNextStrike<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float TimeToNextStrike
     {

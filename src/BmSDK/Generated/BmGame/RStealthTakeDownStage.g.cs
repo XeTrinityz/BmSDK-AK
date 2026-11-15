@@ -1588,7 +1588,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: NextStage
+    /// ByteProperty: NextStage<br/>
+    /// Default: ESTDS_StealthTakeDownStageMAX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EStealthTakeDownStages NextStage
     {
@@ -1597,7 +1598,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: AISilentTakedownType
+    /// ByteProperty: AISilentTakedownType<br/>
+    /// Default: eAAITakeDownType_Silent
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.AAITakedownType AISilentTakedownType
     {
@@ -1606,7 +1608,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: BluntTraumaAchievementCategory
+    /// ByteProperty: BluntTraumaAchievementCategory<br/>
+    /// Default: BluntTrauma_MAX
     /// </summary>
     public unsafe BmSDK.BmGame.RPersistentData.BluntTraumaTakedowns BluntTraumaAchievementCategory
     {
@@ -1624,7 +1627,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bAutomaticTransitionTypeChangeAfterMeetingPoint
+    /// BoolProperty: bAutomaticTransitionTypeChangeAfterMeetingPoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutomaticTransitionTypeChangeAfterMeetingPoint
     {
@@ -1678,7 +1682,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bSlaveCameraToAttackerMesh
+    /// BoolProperty: bSlaveCameraToAttackerMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSlaveCameraToAttackerMesh
     {
@@ -1687,7 +1692,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseDOFSettingsForSpecialCameraAnim
+    /// BoolProperty: bUseDOFSettingsForSpecialCameraAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseDOFSettingsForSpecialCameraAnim
     {
@@ -1705,7 +1711,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseDofChange
+    /// BoolProperty: bUseDofChange<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseDofChange
     {
@@ -1741,7 +1748,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bFatal
+    /// BoolProperty: bFatal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFatal
     {
@@ -1858,7 +1866,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeAttacked
+    /// BoolProperty: bCanBeAttacked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeAttacked
     {
@@ -1966,7 +1975,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bCanGrabWeapon
+    /// BoolProperty: bCanGrabWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanGrabWeapon
     {
@@ -2092,7 +2102,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseCharacterBonesOnlyForRagdollZoneSearch
+    /// BoolProperty: bUseCharacterBonesOnlyForRagdollZoneSearch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCharacterBonesOnlyForRagdollZoneSearch
     {
@@ -2101,7 +2112,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// NameProperty: CameraState
+    /// NameProperty: CameraState<br/>
+    /// Default: StealthHold
     /// </summary>
     public unsafe BmSDK.FName CameraState
     {
@@ -2116,19 +2128,22 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 760);
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=25,Y=5,Z=5),LocFrequency=(X=6,Y=6,Z=6),RotAmplitude=(Z=10),RotFrequency=(X=10,Y=10,Z=10),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=2000,FalloffM...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 772);
 
     /// <summary>
-    /// StructProperty: CameraDOFSettings
+    /// StructProperty: CameraDOFSettings<br/>
+    /// Default: (ApertureStop=1.2,FocusDistance=220,InterpolationDuration=1,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct CameraDOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 928);
 
     /// <summary>
-    /// StructProperty: StageAnims
+    /// StructProperty: StageAnims<br/>
+    /// Default: (MeetingTime=0.25,CameraCollision=true,fCameraBlendInTime=0.5,StrikeBone=Bip01_Pelvis)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet StageAnims
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet>(Ptr + 948);
@@ -2173,7 +2188,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 1284);
 
     /// <summary>
-    /// IntProperty: MinVictims
+    /// IntProperty: MinVictims<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MinVictims
     {
@@ -2182,7 +2198,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: MaxVictims
+    /// IntProperty: MaxVictims<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxVictims
     {
@@ -2224,7 +2241,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: RateScale
+    /// FloatProperty: RateScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RateScale
     {
@@ -2293,7 +2311,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: fStartingNoInterruptDuration
+    /// FloatProperty: fStartingNoInterruptDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float fStartingNoInterruptDuration
     {
@@ -2447,7 +2466,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: MeetingTime
+        /// FloatProperty: MeetingTime<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float MeetingTime
         {
@@ -2564,7 +2584,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// BoolProperty: CameraCollision
+        /// BoolProperty: CameraCollision<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool CameraCollision
         {
@@ -2591,7 +2612,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: fCameraBlendInTime
+        /// FloatProperty: fCameraBlendInTime<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float fCameraBlendInTime
         {
@@ -2627,7 +2649,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// NameProperty: StrikeBone
+        /// NameProperty: StrikeBone<br/>
+        /// Default: Bip01_Pelvis
         /// </summary>
         public unsafe BmSDK.FName StrikeBone
         {

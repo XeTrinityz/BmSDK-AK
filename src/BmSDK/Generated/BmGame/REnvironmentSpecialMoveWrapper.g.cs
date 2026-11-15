@@ -139,7 +139,8 @@ public partial class REnvironmentSpecialMoveWrapper : BmSDK.GameObject, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinSpeed
+    /// FloatProperty: MinSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinSpeed
     {
@@ -148,7 +149,8 @@ public partial class REnvironmentSpecialMoveWrapper : BmSDK.GameObject, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -157,7 +159,8 @@ public partial class REnvironmentSpecialMoveWrapper : BmSDK.GameObject, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinStickAng
+    /// FloatProperty: MinStickAng<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinStickAng
     {
@@ -166,7 +169,8 @@ public partial class REnvironmentSpecialMoveWrapper : BmSDK.GameObject, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: AllowSlopedEdges
+    /// BoolProperty: AllowSlopedEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowSlopedEdges
     {
@@ -175,7 +179,8 @@ public partial class REnvironmentSpecialMoveWrapper : BmSDK.GameObject, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: AllowExtraSlopedEdges
+    /// BoolProperty: AllowExtraSlopedEdges<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowExtraSlopedEdges
     {

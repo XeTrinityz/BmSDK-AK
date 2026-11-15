@@ -157,7 +157,8 @@ public partial class RSeqAct_BatmobileCommanderTankScan : BmSDK.BmGame.RSeqAct_S
     }
 
     /// <summary>
-    /// ObjectProperty: ScanOutOfRangeLine
+    /// ObjectProperty: ScanOutOfRangeLine<br/>
+    /// Default: main_ch07_s26_cityy_tanks_bm_closer.Conversation.main_ch07_s26_cityy_tanks_bm_closer
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueSpeech ScanOutOfRangeLine
     {

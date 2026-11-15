@@ -141,7 +141,8 @@ public partial class RTunnelNetworkWallMarker : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

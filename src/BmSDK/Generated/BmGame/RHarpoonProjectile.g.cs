@@ -364,7 +364,8 @@ public partial class RHarpoonProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: FireSpeed
+    /// FloatProperty: FireSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float FireSpeed
     {
@@ -373,7 +374,8 @@ public partial class RHarpoonProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: WigglePeriod
+    /// FloatProperty: WigglePeriod<br/>
+    /// Default: 24
     /// </summary>
     public unsafe float WigglePeriod
     {
@@ -382,7 +384,8 @@ public partial class RHarpoonProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: WiggleSize
+    /// FloatProperty: WiggleSize<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float WiggleSize
     {

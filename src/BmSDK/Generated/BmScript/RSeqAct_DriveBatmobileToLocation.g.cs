@@ -208,7 +208,8 @@ public partial class RSeqAct_DriveBatmobileToLocation : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: AtLocationTolerance
+    /// FloatProperty: AtLocationTolerance<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float AtLocationTolerance
     {
@@ -217,7 +218,8 @@ public partial class RSeqAct_DriveBatmobileToLocation : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: UsePursuitModeMaxAngle
+    /// FloatProperty: UsePursuitModeMaxAngle<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float UsePursuitModeMaxAngle
     {
@@ -226,7 +228,8 @@ public partial class RSeqAct_DriveBatmobileToLocation : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: RotationDamping
+    /// FloatProperty: RotationDamping<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float RotationDamping
     {

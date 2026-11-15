@@ -257,7 +257,8 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     }
 
     /// <summary>
-    /// ComponentProperty: PipesMesh
+    /// ComponentProperty: PipesMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoPipes.PipesMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent PipesMesh
     {
@@ -266,7 +267,8 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightSkeletalMesh
+    /// ComponentProperty: InRangeHighlightSkeletalMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoPipes.InRangeHighlightSkeletalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent InRangeHighlightSkeletalMesh
     {

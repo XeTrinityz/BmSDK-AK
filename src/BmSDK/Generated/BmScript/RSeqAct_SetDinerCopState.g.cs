@@ -106,7 +106,8 @@ public partial class RSeqAct_SetDinerCopState : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// NameProperty: CopState
+    /// NameProperty: CopState<br/>
+    /// Default: WalkingAround
     /// </summary>
     public unsafe BmSDK.FName CopState
     {
@@ -115,7 +116,8 @@ public partial class RSeqAct_SetDinerCopState : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// IntProperty: MaxViewYaw
+    /// IntProperty: MaxViewYaw<br/>
+    /// Default: 13000
     /// </summary>
     public unsafe int MaxViewYaw
     {
@@ -124,7 +126,8 @@ public partial class RSeqAct_SetDinerCopState : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// NameProperty: NextCameraState
+    /// NameProperty: NextCameraState<br/>
+    /// Default: FirstPersonCameraCop
     /// </summary>
     public unsafe BmSDK.FName NextCameraState
     {

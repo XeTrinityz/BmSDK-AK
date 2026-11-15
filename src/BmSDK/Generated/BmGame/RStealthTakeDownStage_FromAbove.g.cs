@@ -156,7 +156,8 @@ public partial class RStealthTakeDownStage_FromAbove : BmSDK.BmGame.RStealthTake
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerAnimationsByType
+    /// ArrayProperty: PlayerAnimationsByType<br/>
+    /// Default: (Loud_512_Stand_Railing_Takedown,Loud_512_Stand_Takedown,Loud_512_Stand_Takedown,Loud_512_Railing_Takedown)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> PlayerAnimationsByType
     {

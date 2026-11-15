@@ -193,7 +193,8 @@ public partial class RInfinitePredatorSpawner : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenSpawns
+    /// FloatProperty: TimeBetweenSpawns<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TimeBetweenSpawns
     {

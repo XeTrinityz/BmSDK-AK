@@ -139,7 +139,8 @@ public partial class RRoadSplinePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Throttle
+    /// FloatProperty: Throttle<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Throttle
     {
@@ -175,7 +176,8 @@ public partial class RRoadSplinePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HeadlightsOn
+    /// BoolProperty: HeadlightsOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HeadlightsOn
     {

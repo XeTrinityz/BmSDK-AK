@@ -136,7 +136,8 @@ public partial class ParticleEmitter : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: CountLow
+        /// IntProperty: CountLow<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int CountLow
         {
@@ -165,7 +166,8 @@ public partial class ParticleEmitter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: EmitterName
+    /// NameProperty: EmitterName<br/>
+    /// Default: Particle Emitter
     /// </summary>
     public unsafe BmSDK.FName EmitterName
     {
@@ -225,7 +227,8 @@ public partial class ParticleEmitter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ConvertedModules
+    /// BoolProperty: ConvertedModules<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ConvertedModules
     {
@@ -279,7 +282,8 @@ public partial class ParticleEmitter : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MediumDetailSpawnRateScale
+    /// FloatProperty: MediumDetailSpawnRateScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MediumDetailSpawnRateScale
     {

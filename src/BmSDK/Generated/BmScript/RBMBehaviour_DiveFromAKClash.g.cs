@@ -184,7 +184,8 @@ public partial class RBMBehaviour_DiveFromAKClash : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ArrayProperty: DiveNames
+    /// ArrayProperty: DiveNames<br/>
+    /// Default: (Car_Evade_Dive_A,Car_Evade_Dive_B,Car_Evade_Dive_C,Car_Evade_Dive_D)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DiveNames
     {
@@ -193,7 +194,8 @@ public partial class RBMBehaviour_DiveFromAKClash : BmSDK.BmGame.RBMBehaviour, B
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSet
+    /// ObjectProperty: AnimSet<br/>
+    /// Default: Anim_IC_Streets.Thug.TG_Car_Evade
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSet
     {

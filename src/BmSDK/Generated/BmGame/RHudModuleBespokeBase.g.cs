@@ -408,7 +408,8 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: AllPurposeVariable
+    /// IntProperty: AllPurposeVariable<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int AllPurposeVariable
     {

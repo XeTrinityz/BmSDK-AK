@@ -163,7 +163,8 @@ public partial class RBMCameraEmitter : BmSDK.Engine.REmitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DistFromCamera
+    /// FloatProperty: DistFromCamera<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float DistFromCamera
     {

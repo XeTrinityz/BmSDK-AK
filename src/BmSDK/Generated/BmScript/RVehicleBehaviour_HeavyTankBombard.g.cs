@@ -168,7 +168,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// IntProperty: AlertNumTanksIfAttacked
+    /// IntProperty: AlertNumTanksIfAttacked<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int AlertNumTanksIfAttacked
     {
@@ -177,7 +178,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: AlertTanksInRangeIfAttacked
+    /// FloatProperty: AlertTanksInRangeIfAttacked<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float AlertTanksInRangeIfAttacked
     {
@@ -186,7 +188,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileOutOfRange
+    /// FloatProperty: BatmobileOutOfRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float BatmobileOutOfRange
     {
@@ -204,7 +207,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: DetectBatmobileRange
+    /// FloatProperty: DetectBatmobileRange<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float DetectBatmobileRange
     {
@@ -213,7 +217,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: CycleTargetsDelay
+    /// FloatProperty: CycleTargetsDelay<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float CycleTargetsDelay
     {
@@ -240,7 +245,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: CannonFirstShotDelayMin
+    /// FloatProperty: CannonFirstShotDelayMin<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CannonFirstShotDelayMin
     {
@@ -249,7 +255,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: CannonFirstShotDelayMax
+    /// FloatProperty: CannonFirstShotDelayMax<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CannonFirstShotDelayMax
     {
@@ -258,7 +265,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: CannonNextShotDelayMin
+    /// FloatProperty: CannonNextShotDelayMin<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CannonNextShotDelayMin
     {
@@ -267,7 +275,8 @@ public partial class RVehicleBehaviour_HeavyTankBombard : BmSDK.BmGame.RVehicleB
     }
 
     /// <summary>
-    /// FloatProperty: CannonNextShotDelayMax
+    /// FloatProperty: CannonNextShotDelayMax<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CannonNextShotDelayMax
     {

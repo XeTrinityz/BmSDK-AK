@@ -2507,7 +2507,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bSlowerZAcquire
+    /// BoolProperty: bSlowerZAcquire<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSlowerZAcquire
     {
@@ -2669,7 +2670,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinHitWall
+    /// FloatProperty: MinHitWall<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MinHitWall
     {
@@ -2786,7 +2788,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SightCounterInterval
+    /// FloatProperty: SightCounterInterval<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SightCounterInterval
     {
@@ -2813,7 +2816,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxMoveTowardPawnTargetTime
+    /// FloatProperty: MaxMoveTowardPawnTargetTime<br/>
+    /// Default: 1.2
     /// </summary>
     public unsafe float MaxMoveTowardPawnTargetTime
     {

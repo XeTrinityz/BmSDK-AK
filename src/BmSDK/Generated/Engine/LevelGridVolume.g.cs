@@ -102,7 +102,8 @@ public partial class LevelGridVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     public InlineArray<int> Subdivisions => new(3, Ptr + 760, 4, this);
 
     /// <summary>
-    /// IntProperty: Subdivisions
+    /// IntProperty: Subdivisions<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Subdivisions_0
     {
@@ -110,7 +111,8 @@ public partial class LevelGridVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 760); }
     }
     /// <summary>
-    /// IntProperty: Subdivisions
+    /// IntProperty: Subdivisions<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Subdivisions_1
     {
@@ -118,7 +120,8 @@ public partial class LevelGridVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 764); }
     }
     /// <summary>
-    /// IntProperty: Subdivisions
+    /// IntProperty: Subdivisions<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Subdivisions_2
     {
@@ -127,7 +130,8 @@ public partial class LevelGridVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LoadingDistance
+    /// FloatProperty: LoadingDistance<br/>
+    /// Default: 20480
     /// </summary>
     public unsafe float LoadingDistance
     {
@@ -136,7 +140,8 @@ public partial class LevelGridVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: KeepLoadedRange
+    /// FloatProperty: KeepLoadedRange<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float KeepLoadedRange
     {

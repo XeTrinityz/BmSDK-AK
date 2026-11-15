@@ -117,7 +117,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ByteProperty: PropBreakableType
+    /// ByteProperty: PropBreakableType<br/>
+    /// Default: BREAKABLETYPE_NonBreakable
     /// </summary>
     public unsafe BmSDK.BmGame.RSmashablePropConfig.EBreakableType PropBreakableType
     {
@@ -153,7 +154,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: PropCollideActors
+    /// BoolProperty: PropCollideActors<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PropCollideActors
     {
@@ -171,7 +173,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: PropBlockZeroExtent
+    /// BoolProperty: PropBlockZeroExtent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PropBlockZeroExtent
     {
@@ -180,7 +183,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: PropBlockNonZeroExtent
+    /// BoolProperty: PropBlockNonZeroExtent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PropBlockNonZeroExtent
     {
@@ -189,7 +193,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: PropDoDamage
+    /// BoolProperty: PropDoDamage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PropDoDamage
     {
@@ -207,7 +212,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: PropRememberWhenSmashed
+    /// BoolProperty: PropRememberWhenSmashed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PropRememberWhenSmashed
     {
@@ -225,7 +231,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bAlertVillainsOnSmash
+    /// BoolProperty: bAlertVillainsOnSmash<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlertVillainsOnSmash
     {
@@ -243,7 +250,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: PropBreakingForce
+    /// FloatProperty: PropBreakingForce<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PropBreakingForce
     {
@@ -252,7 +260,8 @@ public partial class RSmashablePropConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: PropBreakTimer
+    /// FloatProperty: PropBreakTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PropBreakTimer
     {

@@ -239,7 +239,8 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
     }
 
     /// <summary>
-    /// FloatProperty: DistanceAffectedWithin
+    /// FloatProperty: DistanceAffectedWithin<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float DistanceAffectedWithin
     {

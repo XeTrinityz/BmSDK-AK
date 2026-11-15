@@ -232,7 +232,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FSwarmDebugOptions
     {
         /// <summary>
-        /// BoolProperty: bDistributionEnabled
+        /// BoolProperty: bDistributionEnabled<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bDistributionEnabled
         {
@@ -284,7 +285,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bGatherBSPSurfacesAcrossComponents
+        /// BoolProperty: bGatherBSPSurfacesAcrossComponents<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bGatherBSPSurfacesAcrossComponents
         {
@@ -293,7 +295,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: CoplanarTolerance
+        /// FloatProperty: CoplanarTolerance<br/>
+        /// Default: 0.001
         /// </summary>
         public unsafe float CoplanarTolerance
         {
@@ -302,7 +305,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bUseDeterministicLighting
+        /// BoolProperty: bUseDeterministicLighting<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bUseDeterministicLighting
         {
@@ -311,7 +315,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bUseImmediateImport
+        /// BoolProperty: bUseImmediateImport<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bUseImmediateImport
         {
@@ -320,7 +325,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bImmediateProcessMappings
+        /// BoolProperty: bImmediateProcessMappings<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bImmediateProcessMappings
         {
@@ -329,7 +335,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bSortMappings
+        /// BoolProperty: bSortMappings<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bSortMappings
         {
@@ -356,7 +363,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bPadMappings
+        /// BoolProperty: bPadMappings<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPadMappings
         {
@@ -410,7 +418,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ExecutionTimeDivisor
+        /// FloatProperty: ExecutionTimeDivisor<br/>
+        /// Default: 15
         /// </summary>
         public unsafe float ExecutionTimeDivisor
         {
@@ -462,7 +471,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bUmbraIsOccluder
+        /// BoolProperty: bUmbraIsOccluder<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bUmbraIsOccluder
         {
@@ -471,7 +481,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EmissiveLightFalloffExponent
+        /// FloatProperty: EmissiveLightFalloffExponent<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float EmissiveLightFalloffExponent
         {
@@ -489,7 +500,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: EmissiveBoost
+        /// FloatProperty: EmissiveBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float EmissiveBoost
         {
@@ -498,7 +510,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DiffuseBoost
+        /// FloatProperty: DiffuseBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DiffuseBoost
         {
@@ -507,7 +520,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SpecularBoost
+        /// FloatProperty: SpecularBoost<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SpecularBoost
         {
@@ -516,7 +530,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FullyOccludedSamplesFraction
+        /// FloatProperty: FullyOccludedSamplesFraction<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float FullyOccludedSamplesFraction
         {
@@ -532,7 +547,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FLightmassDirectionalLightSettings
     {
         /// <summary>
-        /// FloatProperty: IndirectLightingScale
+        /// FloatProperty: IndirectLightingScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingScale
         {
@@ -541,7 +557,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: IndirectLightingSaturation
+        /// FloatProperty: IndirectLightingSaturation<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingSaturation
         {
@@ -550,7 +567,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ShadowExponent
+        /// FloatProperty: ShadowExponent<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float ShadowExponent
         {
@@ -559,7 +577,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: LightSourceAngle
+        /// FloatProperty: LightSourceAngle<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float LightSourceAngle
         {
@@ -575,7 +594,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FLightmassPointLightSettings
     {
         /// <summary>
-        /// FloatProperty: IndirectLightingScale
+        /// FloatProperty: IndirectLightingScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingScale
         {
@@ -584,7 +604,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: IndirectLightingSaturation
+        /// FloatProperty: IndirectLightingSaturation<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingSaturation
         {
@@ -593,7 +614,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ShadowExponent
+        /// FloatProperty: ShadowExponent<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float ShadowExponent
         {
@@ -602,7 +624,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: LightSourceRadius
+        /// FloatProperty: LightSourceRadius<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float LightSourceRadius
         {
@@ -618,7 +641,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FLightmassLightSettings
     {
         /// <summary>
-        /// FloatProperty: IndirectLightingScale
+        /// FloatProperty: IndirectLightingScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingScale
         {
@@ -627,7 +651,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: IndirectLightingSaturation
+        /// FloatProperty: IndirectLightingSaturation<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float IndirectLightingSaturation
         {
@@ -636,7 +661,8 @@ public partial class EngineTypes : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ShadowExponent
+        /// FloatProperty: ShadowExponent<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float ShadowExponent
         {

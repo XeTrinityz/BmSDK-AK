@@ -316,7 +316,8 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPlayedBreakout
+    /// BoolProperty: bPlayedBreakout<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayedBreakout
     {

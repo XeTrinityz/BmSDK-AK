@@ -102,7 +102,8 @@ public partial class RCrowdAttractor_Cone : BmSDK.BmGame.RCrowdAttractor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ConeHalfAngle
+    /// FloatProperty: ConeHalfAngle<br/>
+    /// Default: 10.5
     /// </summary>
     public unsafe float ConeHalfAngle
     {

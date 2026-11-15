@@ -591,7 +591,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DisplayName
+    /// StrProperty: DisplayName<br/>
+    /// Default: "Default Name"
     /// </summary>
     public unsafe BmSDK.FString DisplayName
     {
@@ -681,7 +682,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: MoveSpeed
+    /// ByteProperty: MoveSpeed<br/>
+    /// Default: MS_Walk
     /// </summary>
     public unsafe BmSDK.Engine.RAutomaticTransitions.EMovementSpeed MoveSpeed
     {
@@ -690,7 +692,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NetworkPopDist
+    /// FloatProperty: NetworkPopDist<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float NetworkPopDist
     {
@@ -699,7 +702,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NetworkBlendDist
+    /// FloatProperty: NetworkBlendDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float NetworkBlendDist
     {
@@ -738,7 +742,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction.FActionFacingState>(Ptr + 760);
 
     /// <summary>
-    /// FloatProperty: SpeedScale
+    /// FloatProperty: SpeedScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpeedScale
     {
@@ -765,7 +770,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: IdleStance
+    /// NameProperty: IdleStance<br/>
+    /// Default: ActionWildCard
     /// </summary>
     public unsafe BmSDK.FName IdleStance
     {
@@ -819,7 +825,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinRandAimWaitTime
+    /// FloatProperty: MinRandAimWaitTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinRandAimWaitTime
     {
@@ -828,7 +835,8 @@ public partial class RBMAIAction : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RandAimWaitRandomFactor
+    /// FloatProperty: RandAimWaitRandomFactor<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float RandAimWaitRandomFactor
     {

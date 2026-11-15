@@ -316,7 +316,8 @@ public partial class RBMCombatPoint_FloorVent : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: NormalMesh
+    /// ComponentProperty: NormalMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_FloorVent.NormalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent NormalMesh
     {
@@ -325,7 +326,8 @@ public partial class RBMCombatPoint_FloorVent : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: BrokenMesh
+    /// ComponentProperty: BrokenMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_FloorVent.BrokenMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BrokenMesh
     {
@@ -334,7 +336,8 @@ public partial class RBMCombatPoint_FloorVent : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightStaticMesh
+    /// ComponentProperty: InRangeHighlightStaticMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_FloorVent.InRangeHighlightStaticComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InRangeHighlightStaticMesh
     {

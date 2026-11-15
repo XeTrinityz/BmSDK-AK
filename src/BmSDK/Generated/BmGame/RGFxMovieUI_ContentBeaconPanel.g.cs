@@ -355,7 +355,8 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
     }
 
     /// <summary>
-    /// IntProperty: m_nCachedBeaconIndex
+    /// IntProperty: m_nCachedBeaconIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int m_nCachedBeaconIndex
     {

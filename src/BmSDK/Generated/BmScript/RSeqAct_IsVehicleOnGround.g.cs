@@ -93,7 +93,8 @@ public partial class RSeqAct_IsVehicleOnGround : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// IntProperty: NumWheelsRequiredToBeOnGround
+    /// IntProperty: NumWheelsRequiredToBeOnGround<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int NumWheelsRequiredToBeOnGround
     {
@@ -102,7 +103,8 @@ public partial class RSeqAct_IsVehicleOnGround : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: GroundMinNormalZ
+    /// FloatProperty: GroundMinNormalZ<br/>
+    /// Default: 0.707
     /// </summary>
     public unsafe float GroundMinNormalZ
     {

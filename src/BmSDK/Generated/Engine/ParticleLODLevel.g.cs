@@ -88,7 +88,8 @@ public partial class ParticleLODLevel : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -97,7 +98,8 @@ public partial class ParticleLODLevel : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ConvertedModules
+    /// BoolProperty: ConvertedModules<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ConvertedModules
     {

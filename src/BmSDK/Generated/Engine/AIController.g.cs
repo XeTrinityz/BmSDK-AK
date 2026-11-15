@@ -197,7 +197,8 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAdjustFromWalls
+    /// BoolProperty: bAdjustFromWalls<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAdjustFromWalls
     {

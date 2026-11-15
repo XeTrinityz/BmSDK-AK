@@ -134,7 +134,8 @@ public partial class RCombatMove_VillainDodge : BmSDK.BmGame.RCombatMove, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ReactTime
+    /// FloatProperty: ReactTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float ReactTime
     {

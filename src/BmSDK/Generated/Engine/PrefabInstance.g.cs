@@ -156,7 +156,8 @@ public partial class PrefabInstance : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PI_PackageVersion
+    /// IntProperty: PI_PackageVersion<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PI_PackageVersion
     {
@@ -165,7 +166,8 @@ public partial class PrefabInstance : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PI_LicenseePackageVersion
+    /// IntProperty: PI_LicenseePackageVersion<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PI_LicenseePackageVersion
     {
@@ -219,7 +221,8 @@ public partial class PrefabInstance : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: SiblingLeader
+    /// BoolProperty: SiblingLeader<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SiblingLeader
     {

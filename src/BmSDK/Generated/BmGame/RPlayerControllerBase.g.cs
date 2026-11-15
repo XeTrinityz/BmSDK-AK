@@ -897,7 +897,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// ClassProperty: DebugMenuClass
+    /// ClassProperty: DebugMenuClass<br/>
+    /// Default: BmGame.RDebugMenu
     /// </summary>
     public unsafe BmSDK.Class DebugMenuClass
     {
@@ -933,7 +934,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bCauseEventSkipCutscene
+    /// BoolProperty: bCauseEventSkipCutscene<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCauseEventSkipCutscene
     {

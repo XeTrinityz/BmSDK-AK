@@ -325,7 +325,8 @@ public partial class RPawnVillainCombat : BmSDK.BmGame.RPawnVillain, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: CombatPoseConfig
+    /// ObjectProperty: CombatPoseConfig<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Combat
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig CombatPoseConfig
     {

@@ -167,7 +167,8 @@ public partial class RDeathCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: SilentPredCameraOffset
+    /// StructProperty: SilentPredCameraOffset<br/>
+    /// Default: (X=-135,Y=30,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SilentPredCameraOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1268);

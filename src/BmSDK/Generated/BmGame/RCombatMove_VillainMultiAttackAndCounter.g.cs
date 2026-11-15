@@ -771,7 +771,8 @@ public partial class RCombatMove_VillainMultiAttackAndCounter : BmSDK.BmGame.RCo
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 824);
@@ -1008,7 +1009,8 @@ public partial class RCombatMove_VillainMultiAttackAndCounter : BmSDK.BmGame.RCo
     }
 
     /// <summary>
-    /// BoolProperty: bShouldKillOnExtremeSuccess
+    /// BoolProperty: bShouldKillOnExtremeSuccess<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldKillOnExtremeSuccess
     {

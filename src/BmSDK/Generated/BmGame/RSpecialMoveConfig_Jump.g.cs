@@ -101,7 +101,8 @@ public partial class RSpecialMoveConfig_Jump : BmSDK.BmGame.RSpecialMoveConfig_R
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 500);
 
     /// <summary>
-    /// BoolProperty: bAlignWithFeature
+    /// BoolProperty: bAlignWithFeature<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignWithFeature
     {

@@ -115,7 +115,8 @@ public partial class RSeqAct_SpawnExplosiveGel : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: Template
+    /// ObjectProperty: Template<br/>
+    /// Default: Batman_Archetypes.Gadgets.ExplosiveGel.Explosive_Gel_Mine_Combat
     /// </summary>
     public unsafe BmSDK.BmGame.RExplosiveGooMine Template
     {

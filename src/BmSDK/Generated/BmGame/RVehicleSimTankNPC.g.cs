@@ -94,7 +94,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxForwardSpeed
+    /// FloatProperty: MaxForwardSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxForwardSpeed
     {
@@ -103,7 +104,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxReverseSpeed
+    /// FloatProperty: MaxReverseSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MaxReverseSpeed
     {
@@ -112,7 +114,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: AccelerateTorque
+    /// FloatProperty: AccelerateTorque<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float AccelerateTorque
     {
@@ -121,7 +124,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DecelerateTorque
+    /// FloatProperty: DecelerateTorque<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float DecelerateTorque
     {
@@ -130,7 +134,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: SpeedChangeAggression
+    /// FloatProperty: SpeedChangeAggression<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float SpeedChangeAggression
     {
@@ -139,7 +144,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BrakeTorque
+    /// FloatProperty: BrakeTorque<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float BrakeTorque
     {
@@ -148,7 +154,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: WheelSpinVelPeak
+    /// FloatProperty: WheelSpinVelPeak<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float WheelSpinVelPeak
     {
@@ -157,7 +164,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: WheelSpinVelMax
+    /// FloatProperty: WheelSpinVelMax<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float WheelSpinVelMax
     {
@@ -184,7 +192,8 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BaseThrottleUphill
+    /// FloatProperty: BaseThrottleUphill<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BaseThrottleUphill
     {

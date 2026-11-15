@@ -134,7 +134,8 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// IntProperty: numEventsRequired
+    /// IntProperty: numEventsRequired<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int numEventsRequired
     {
@@ -143,7 +144,8 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// FloatProperty: timePeriod
+    /// FloatProperty: timePeriod<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float timePeriod
     {
@@ -170,7 +172,8 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// IntProperty: MaxTriggerCount
+    /// IntProperty: MaxTriggerCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxTriggerCount
     {

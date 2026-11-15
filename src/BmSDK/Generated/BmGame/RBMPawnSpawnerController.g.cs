@@ -211,7 +211,8 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// IntProperty: NumberOfPawnSpawners
+    /// IntProperty: NumberOfPawnSpawners<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumberOfPawnSpawners
     {

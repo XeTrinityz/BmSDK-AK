@@ -106,7 +106,8 @@ public partial class RSeqEvent_CustomBackscreenRequested : BmSDK.BmGame.RSeqEven
     }
 
     /// <summary>
-    /// IntProperty: Priority
+    /// IntProperty: Priority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Priority
     {

@@ -2218,7 +2218,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// BoolProperty: bStrikeDepletesWeapon
+    /// BoolProperty: bStrikeDepletesWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStrikeDepletesWeapon
     {
@@ -2278,7 +2279,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// ComponentProperty: StrikeRainTrail
+    /// ComponentProperty: StrikeRainTrail<br/>
+    /// Default: BmGame.Default__RCombatMove_BatmanStrike.StrikeRainTrailBase
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StrikeRainTrail
     {
@@ -2287,7 +2289,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// ComponentProperty: StrikeTrail
+    /// ComponentProperty: StrikeTrail<br/>
+    /// Default: BmGame.Default__RCombatMove_BatmanStrike.StrikeTrailBase
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StrikeTrail
     {
@@ -2332,19 +2335,22 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 976);
 
     /// <summary>
-    /// StructProperty: StrikeInfo
+    /// StructProperty: StrikeInfo<br/>
+    /// Default: (bCanPerformWithNoTarget=true,bCanPerformOnBlocker=true,bHitsLow=true,DestCapeStateName=Physics,bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo StrikeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo>(Ptr + 1132);
 
     /// <summary>
-    /// StructProperty: PrevStrikeInfo
+    /// StructProperty: PrevStrikeInfo<br/>
+    /// Default: (bCanPerformWithNoTarget=true,bCanPerformOnBlocker=true,bHitsLow=true,DestCapeStateName=Physics,bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo PrevStrikeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo>(Ptr + 1272);
@@ -2359,7 +2365,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// FloatProperty: StrikeContactTime
+    /// FloatProperty: StrikeContactTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float StrikeContactTime
     {
@@ -2425,7 +2432,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: ThirdTimeSinceUseThresh
+    /// IntProperty: ThirdTimeSinceUseThresh<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int ThirdTimeSinceUseThresh
     {
@@ -2434,7 +2442,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: SecondTimeSinceUseThresh
+    /// IntProperty: SecondTimeSinceUseThresh<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int SecondTimeSinceUseThresh
     {
@@ -2443,7 +2452,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: FirstTimeSinceUseThresh
+    /// IntProperty: FirstTimeSinceUseThresh<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int FirstTimeSinceUseThresh
     {
@@ -2452,7 +2462,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: ThirdTimeSinceUseScore
+    /// IntProperty: ThirdTimeSinceUseScore<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int ThirdTimeSinceUseScore
     {
@@ -2461,7 +2472,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: SecondTimeSinceUseScore
+    /// IntProperty: SecondTimeSinceUseScore<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int SecondTimeSinceUseScore
     {
@@ -2470,7 +2482,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: FirstTimeSinceUseScore
+    /// IntProperty: FirstTimeSinceUseScore<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int FirstTimeSinceUseScore
     {
@@ -2479,7 +2492,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// IntProperty: CorrectRangeScore
+    /// IntProperty: CorrectRangeScore<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int CorrectRangeScore
     {
@@ -2515,7 +2529,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// ArrayProperty: JokerStrikeAnimName
+    /// ArrayProperty: JokerStrikeAnimName<br/>
+    /// Default: (Final_Blow_Strike_Reaction_01,Final_Blow_Strike_Reaction_02,Final_Blow_Strike_Reaction_03,Final_Blow_Strike_Reaction_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> JokerStrikeAnimName
     {
@@ -2524,7 +2539,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// ArrayProperty: JokerStrikeIdleAnimName
+    /// ArrayProperty: JokerStrikeIdleAnimName<br/>
+    /// Default: (Final_Blow_Strike_Reaction_01_Idle,Final_Blow_Strike_Reaction_02_Idle,Final_Blow_Strike_Reaction_03_Idle,Final_Blow_Strike_Reaction_04_Idle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> JokerStrikeIdleAnimName
     {
@@ -2533,7 +2549,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
     }
 
     /// <summary>
-    /// FloatProperty: MaxTargetDist
+    /// FloatProperty: MaxTargetDist<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MaxTargetDist
     {

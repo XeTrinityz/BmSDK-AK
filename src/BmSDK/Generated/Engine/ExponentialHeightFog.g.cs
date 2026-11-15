@@ -123,7 +123,8 @@ public partial class ExponentialHeightFog : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Component
+    /// ComponentProperty: Component<br/>
+    /// Default: Engine.Default__ExponentialHeightFog.HeightFogComponent0
     /// </summary>
     public unsafe BmSDK.Engine.ExponentialHeightFogComponent Component
     {

@@ -684,7 +684,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: MaintainLookatEvenWithoutVisualContact
+    /// BoolProperty: MaintainLookatEvenWithoutVisualContact<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MaintainLookatEvenWithoutVisualContact
     {
@@ -819,7 +820,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxVelocity
+    /// FloatProperty: MaxVelocity<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxVelocity
     {
@@ -828,7 +830,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: StrafeVelocity
+    /// FloatProperty: StrafeVelocity<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float StrafeVelocity
     {
@@ -837,7 +840,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RocketAttackRange
+    /// FloatProperty: RocketAttackRange<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float RocketAttackRange
     {
@@ -846,7 +850,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RocketAttackMinRange
+    /// FloatProperty: RocketAttackMinRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float RocketAttackMinRange
     {
@@ -855,7 +860,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ChaingunAttackRange
+    /// FloatProperty: ChaingunAttackRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ChaingunAttackRange
     {
@@ -864,7 +870,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ChaingunAttackMinRange
+    /// FloatProperty: ChaingunAttackMinRange<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ChaingunAttackMinRange
     {
@@ -873,7 +880,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: RocketsPerSalvo
+    /// IntProperty: RocketsPerSalvo<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int RocketsPerSalvo
     {
@@ -882,7 +890,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: RocketsPerSalvoDuringStrafingRun
+    /// IntProperty: RocketsPerSalvoDuringStrafingRun<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe int RocketsPerSalvoDuringStrafingRun
     {
@@ -891,7 +900,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: RocketsPerSalvoDuringBlanketAttack
+    /// IntProperty: RocketsPerSalvoDuringBlanketAttack<br/>
+    /// Default: 14
     /// </summary>
     public unsafe int RocketsPerSalvoDuringBlanketAttack
     {
@@ -900,7 +910,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: RocketsHorizontalSpreadDuringBlanket
+    /// IntProperty: RocketsHorizontalSpreadDuringBlanket<br/>
+    /// Default: 500
     /// </summary>
     public unsafe int RocketsHorizontalSpreadDuringBlanket
     {
@@ -909,7 +920,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: HelicopterArmour
+    /// IntProperty: HelicopterArmour<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int HelicopterArmour
     {
@@ -954,7 +966,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: HeightAboveBatmanForAttack
+    /// FloatProperty: HeightAboveBatmanForAttack<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float HeightAboveBatmanForAttack
     {
@@ -963,7 +976,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalDistanceFromBatmanForAttack
+    /// FloatProperty: HorizontalDistanceFromBatmanForAttack<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float HorizontalDistanceFromBatmanForAttack
     {
@@ -972,7 +986,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: lowestDeltaT
+    /// FloatProperty: lowestDeltaT<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float lowestDeltaT
     {
@@ -981,7 +996,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OverrideSpeed
+    /// FloatProperty: OverrideSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideSpeed
     {
@@ -1005,7 +1021,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: UpdateFreeMovePeriod
+    /// FloatProperty: UpdateFreeMovePeriod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UpdateFreeMovePeriod
     {
@@ -1104,7 +1121,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MovementModifierWhenTankAttached
+    /// FloatProperty: MovementModifierWhenTankAttached<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float MovementModifierWhenTankAttached
     {
@@ -1140,7 +1158,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: HelicopterArmourInitial
+    /// IntProperty: HelicopterArmourInitial<br/>
+    /// Default: 30
     /// </summary>
     public unsafe int HelicopterArmourInitial
     {
@@ -1149,7 +1168,8 @@ public partial class RHelicopterMultiRole : BmSDK.BmScript.RHelicopter, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: maxPOIDist
+    /// FloatProperty: maxPOIDist<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float maxPOIDist
     {

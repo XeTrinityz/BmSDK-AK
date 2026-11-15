@@ -231,7 +231,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// ClassProperty: AchievementsProviderClass
+    /// ClassProperty: AchievementsProviderClass<br/>
+    /// Default: Engine.UIDataProvider_PlayerAchievements
     /// </summary>
     public unsafe BmSDK.Class AchievementsProviderClass
     {
@@ -240,7 +241,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// ClassProperty: FriendsProviderClass
+    /// ClassProperty: FriendsProviderClass<br/>
+    /// Default: Engine.UIDataProvider_OnlineFriends
     /// </summary>
     public unsafe BmSDK.Class FriendsProviderClass
     {
@@ -249,7 +251,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// ClassProperty: StorageProviderClass
+    /// ClassProperty: StorageProviderClass<br/>
+    /// Default: Engine.UIDataProvider_OnlinePlayerStorage
     /// </summary>
     public unsafe BmSDK.Class StorageProviderClass
     {
@@ -267,7 +270,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// ClassProperty: ProfileProviderClass
+    /// ClassProperty: ProfileProviderClass<br/>
+    /// Default: Engine.UIDataProvider_OnlineProfileSettings
     /// </summary>
     public unsafe BmSDK.Class ProfileProviderClass
     {
@@ -276,7 +280,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// ClassProperty: ProfileSettingsClass
+    /// ClassProperty: ProfileSettingsClass<br/>
+    /// Default: BmGame.RProfileSettings
     /// </summary>
     public unsafe BmSDK.Class ProfileSettingsClass
     {
@@ -285,7 +290,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// IntProperty: PlayerControllerId
+    /// IntProperty: PlayerControllerId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PlayerControllerId
     {
@@ -294,7 +300,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// StrProperty: PlayerNick
+    /// StrProperty: PlayerNick<br/>
+    /// Default: "PlayerNickNameHere"
     /// </summary>
     public unsafe BmSDK.FString PlayerNick
     {
@@ -303,7 +310,8 @@ public partial class UIDataStore_OnlinePlayerData : BmSDK.Engine.UIDataStore_Rem
     }
 
     /// <summary>
-    /// StrProperty: ProfileSettingsClassName
+    /// StrProperty: ProfileSettingsClassName<br/>
+    /// Default: "BmGame.RProfileSettings"
     /// </summary>
     public unsafe BmSDK.FString ProfileSettingsClassName
     {

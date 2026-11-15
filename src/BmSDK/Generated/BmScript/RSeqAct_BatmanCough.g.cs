@@ -93,7 +93,8 @@ public partial class RSeqAct_BatmanCough : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: CoughAnimset
+    /// ObjectProperty: CoughAnimset<br/>
+    /// Default: Anim_IC_ACE_A4.Batman.BM_Canister
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet CoughAnimset
     {
@@ -102,7 +103,8 @@ public partial class RSeqAct_BatmanCough : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// NameProperty: CoughName
+    /// NameProperty: CoughName<br/>
+    /// Default: BM_Cough_Additive
     /// </summary>
     public unsafe BmSDK.FName CoughName
     {

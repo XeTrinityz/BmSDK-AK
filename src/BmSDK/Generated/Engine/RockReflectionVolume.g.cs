@@ -94,13 +94,15 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: ReflectionBoxInfo
+    /// StructProperty: ReflectionBoxInfo<br/>
+    /// Default: (HDRScale=(X=1,Y=1,Z=1))
     /// </summary>
     public unsafe ref BmSDK.Engine.RockReflectionVolume.FFReflectionBoxInfo ReflectionBoxInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RockReflectionVolume.FFReflectionBoxInfo>(Ptr + 672);
 
     /// <summary>
-    /// ComponentProperty: SceneCapture
+    /// ComponentProperty: SceneCapture<br/>
+    /// Default: Engine.Default__RockReflectionVolume.SceneCaptureCubeMapComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SceneCaptureComponent SceneCapture
     {
@@ -109,7 +111,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMesh
+    /// ComponentProperty: StaticMesh<br/>
+    /// Default: Engine.Default__RockReflectionVolume.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMesh
     {
@@ -118,7 +121,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: PrecomputedResolution
+    /// IntProperty: PrecomputedResolution<br/>
+    /// Default: 512
     /// </summary>
     public unsafe int PrecomputedResolution
     {
@@ -127,7 +131,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: HighDynamicRangeMax
+    /// FloatProperty: HighDynamicRangeMax<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float HighDynamicRangeMax
     {
@@ -145,7 +150,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: FadeRange
+    /// FloatProperty: FadeRange<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FadeRange
     {
@@ -154,7 +160,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: FadeAmount
+    /// FloatProperty: FadeAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeAmount
     {
@@ -163,7 +170,8 @@ public partial class RockReflectionVolume : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowAutoUpdate
+    /// BoolProperty: bAllowAutoUpdate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowAutoUpdate
     {

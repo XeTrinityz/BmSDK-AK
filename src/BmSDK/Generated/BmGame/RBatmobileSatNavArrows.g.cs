@@ -79,7 +79,8 @@ public partial class RBatmobileSatNavArrows : BmSDK.Engine.Actor, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: ArrowPS
+    /// ComponentProperty: ArrowPS<br/>
+    /// Default: BmGame.Default__RBatmobileSatNavArrows.SatNavParticles
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ArrowPS
     {

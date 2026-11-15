@@ -176,7 +176,8 @@ public partial class RCombatAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent2
+    /// ComponentProperty: RenderComponent2<br/>
+    /// Default: BmGame.Default__RCombatAttractor.DrawCylinder1
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent2
     {
@@ -185,7 +186,8 @@ public partial class RCombatAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: BmGame.Default__RCombatAttractor.DrawCylinder0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent
     {
@@ -203,7 +205,8 @@ public partial class RCombatAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRange
+    /// FloatProperty: MaxRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxRange
     {
@@ -212,7 +215,8 @@ public partial class RCombatAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ForceMultiplier
+    /// FloatProperty: ForceMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ForceMultiplier
     {

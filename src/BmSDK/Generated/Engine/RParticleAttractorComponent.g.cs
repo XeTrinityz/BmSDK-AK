@@ -79,25 +79,29 @@ public partial class RParticleAttractorComponent : BmSDK.Engine.ActorComponent, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: AttractorChannel
+    /// StructProperty: AttractorChannel<br/>
+    /// Default: (Channel_0=true)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FRChannel8 AttractorChannel
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FRChannel8>(Ptr + 124);
 
     /// <summary>
-    /// StructProperty: Range
+    /// StructProperty: Range<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(10000,10000,10000,10000),Distribution=Engine.Default__RParticleAttractorComponent.DistributionRange)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat Range
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 128);
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(2500,2500,2500,2500),Distribution=Engine.Default__RParticleAttractorComponent.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FMatineeRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FMatineeRawDistributionFloat>(Ptr + 172);
 
     /// <summary>
-    /// BoolProperty: StrengthByDistance
+    /// BoolProperty: StrengthByDistance<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StrengthByDistance
     {

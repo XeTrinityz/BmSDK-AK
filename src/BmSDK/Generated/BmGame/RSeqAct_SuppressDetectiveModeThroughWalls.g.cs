@@ -150,7 +150,8 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
     }
 
     /// <summary>
-    /// BoolProperty: bAlsoKickPlayerOutOfDetectiveMode
+    /// BoolProperty: bAlsoKickPlayerOutOfDetectiveMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlsoKickPlayerOutOfDetectiveMode
     {

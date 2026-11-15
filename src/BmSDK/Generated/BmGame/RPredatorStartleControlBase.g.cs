@@ -310,7 +310,8 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RPredatorStartleControlBase.NewInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -319,7 +320,8 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
     }
 
     /// <summary>
-    /// ComponentProperty: InfluenceAreaMarker
+    /// ComponentProperty: InfluenceAreaMarker<br/>
+    /// Default: BmGame.Default__RPredatorStartleControlBase.InfluenceAreaMarker0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent InfluenceAreaMarker
     {

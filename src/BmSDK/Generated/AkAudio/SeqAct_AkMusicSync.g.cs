@@ -88,7 +88,8 @@ public partial class SeqAct_AkMusicSync : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: WaitTimeout
+    /// FloatProperty: WaitTimeout<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float WaitTimeout
     {

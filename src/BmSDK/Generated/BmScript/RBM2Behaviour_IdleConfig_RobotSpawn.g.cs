@@ -106,7 +106,8 @@ public partial class RBM2Behaviour_IdleConfig_RobotSpawn : BmSDK.BmGame.RBM2Beha
     }
 
     /// <summary>
-    /// NameProperty: SpawnPointAnimName
+    /// NameProperty: SpawnPointAnimName<br/>
+    /// Default: NRiddler_ElecFloor_New_Anim
     /// </summary>
     public unsafe BmSDK.FName SpawnPointAnimName
     {

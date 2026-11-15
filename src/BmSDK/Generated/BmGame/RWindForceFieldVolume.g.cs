@@ -159,7 +159,8 @@ public partial class RWindForceFieldVolume : BmSDK.BmGame.RForceFieldVolume, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: WindSource
+    /// ComponentProperty: WindSource<br/>
+    /// Default: BmGame.Default__RWindForceFieldVolume.WindDirectionalSourceComponent0
     /// </summary>
     public unsafe BmSDK.Engine.WindDirectionalSourceComponent WindSource
     {
@@ -204,7 +205,8 @@ public partial class RWindForceFieldVolume : BmSDK.BmGame.RForceFieldVolume, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ApexClothWindAdaptTime
+    /// FloatProperty: ApexClothWindAdaptTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ApexClothWindAdaptTime
     {
@@ -213,7 +215,8 @@ public partial class RWindForceFieldVolume : BmSDK.BmGame.RForceFieldVolume, BmS
     }
 
     /// <summary>
-    /// FloatProperty: WindStrengthScale
+    /// FloatProperty: WindStrengthScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WindStrengthScale
     {

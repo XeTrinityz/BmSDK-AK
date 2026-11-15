@@ -88,7 +88,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// ArrayProperty: TrackControllerName
+    /// ArrayProperty: TrackControllerName<br/>
+    /// Default: (HeadLook,LeftEyeLook,RightEyeLook)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TrackControllerName
     {
@@ -97,7 +98,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: LookAtActorRadius
+    /// FloatProperty: LookAtActorRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float LookAtActorRadius
     {
@@ -115,7 +117,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bLookAtPawns
+    /// BoolProperty: bLookAtPawns<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookAtPawns
     {
@@ -124,7 +127,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxLookAtTime
+    /// FloatProperty: MaxLookAtTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float MaxLookAtTime
     {
@@ -133,7 +137,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MinLookAtTime
+    /// FloatProperty: MinLookAtTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MinLookAtTime
     {
@@ -142,7 +147,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxInterestTime
+    /// FloatProperty: MaxInterestTime<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float MaxInterestTime
     {
@@ -160,7 +166,8 @@ public partial class InterpTrackHeadTracking : BmSDK.Engine.InterpTrack, BmSDK.I
     }
 
     /// <summary>
-    /// ArrayProperty: TargetBoneNames
+    /// ArrayProperty: TargetBoneNames<br/>
+    /// Default: (b_MF_Head,b_MF_Neck)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> TargetBoneNames
     {

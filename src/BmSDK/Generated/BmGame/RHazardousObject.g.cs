@@ -126,7 +126,8 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ClassProperty: DamageType
+    /// ClassProperty: DamageType<br/>
+    /// Default: BmGame.RDamageType
     /// </summary>
     public unsafe BmSDK.Class DamageType
     {
@@ -135,7 +136,8 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DamageAmount
     {
@@ -144,7 +146,8 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DamageDelay
+    /// FloatProperty: DamageDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float DamageDelay
     {
@@ -153,7 +156,8 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bCanDamagePawns
+    /// BoolProperty: bCanDamagePawns<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDamagePawns
     {

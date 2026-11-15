@@ -643,13 +643,15 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 2088);
 
     /// <summary>
-    /// StructProperty: CurrOverlayId
+    /// StructProperty: CurrOverlayId<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId CurrOverlayId
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 2092);
 
     /// <summary>
-    /// FloatProperty: DefaultHitDamage
+    /// FloatProperty: DefaultHitDamage<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DefaultHitDamage
     {
@@ -658,7 +660,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DefaultHitImpulse
+    /// FloatProperty: DefaultHitImpulse<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float DefaultHitImpulse
     {
@@ -676,7 +679,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BulletImpulseReductionProportionPerVillain
+    /// FloatProperty: BulletImpulseReductionProportionPerVillain<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BulletImpulseReductionProportionPerVillain
     {
@@ -685,7 +689,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: MaxNumVillainsWhichCanBeShotWithSingleBullet
+    /// IntProperty: MaxNumVillainsWhichCanBeShotWithSingleBullet<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxNumVillainsWhichCanBeShotWithSingleBullet
     {
@@ -694,7 +699,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngle
+    /// FloatProperty: AutoTargetAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float AutoTargetAngle
     {
@@ -703,7 +709,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxTracerDiffAngle
+    /// FloatProperty: MaxTracerDiffAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float MaxTracerDiffAngle
     {
@@ -712,7 +719,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetRange
+    /// FloatProperty: AutoTargetRange<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float AutoTargetRange
     {
@@ -721,7 +729,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmScript.Default__RJokerGunGadget.MuzzleFlashComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -730,7 +739,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashSocketName
+    /// NameProperty: MuzzleFlashSocketName<br/>
+    /// Default: Muzzle
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashSocketName
     {
@@ -739,7 +749,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: HitEffectParticleSystem
+    /// ObjectProperty: HitEffectParticleSystem<br/>
+    /// Default: BFX_Joker.Particles.Joker_STG_Impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HitEffectParticleSystem
     {
@@ -748,7 +759,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: GunTracerParticleSystem
+    /// ObjectProperty: GunTracerParticleSystem<br/>
+    /// Default: BFX_Joker.Particles.Joker_STG_Tracer
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem GunTracerParticleSystem
     {
@@ -757,7 +769,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: GunFireRumble
+    /// ObjectProperty: GunFireRumble<br/>
+    /// Default: BmScript.Default__RJokerGunGadget.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform GunFireRumble
     {
@@ -766,7 +779,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: LoadedGunFireSound
+    /// ObjectProperty: LoadedGunFireSound<br/>
+    /// Default: Ww_WPN_JokerShotGun.Play_JokerShotgun_Fire
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoadedGunFireSound
     {
@@ -807,17 +821,20 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     public InlineArray<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection> AutoAimFireDirections => new(3, Ptr + 2204, 44, this);
 
     /// <summary>
-    /// StructProperty: AutoAimFireDirections
+    /// StructProperty: AutoAimFireDirections<br/>
+    /// Default: (ThrowAnims=(Gun_Fire_Front),AimingConfig=ACD_HarpoonAimingConfig)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection AutoAimFireDirections_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection>(Ptr + 2204);
     /// <summary>
-    /// StructProperty: AutoAimFireDirections
+    /// StructProperty: AutoAimFireDirections<br/>
+    /// Default: (ThrowAnims=(Magnetic_Blast_Cover_Fire),AimingConfig=ACD_NullAimingConfig)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection AutoAimFireDirections_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection>(Ptr + 2248);
     /// <summary>
-    /// StructProperty: AutoAimFireDirections
+    /// StructProperty: AutoAimFireDirections<br/>
+    /// Default: (ThrowAnims=(Magnetic_Blast_Cover_Fire),AimingConfig=ACD_NullAimingConfig)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection AutoAimFireDirections_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirection>(Ptr + 2292);
@@ -835,7 +852,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2348);
 
     /// <summary>
-    /// IntProperty: BlunderbusShots
+    /// IntProperty: BlunderbusShots<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int BlunderbusShots
     {
@@ -844,7 +862,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BlunderbusRandom
+    /// FloatProperty: BlunderbusRandom<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float BlunderbusRandom
     {
@@ -889,7 +908,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: InvertAdditiveVal
+    /// BoolProperty: InvertAdditiveVal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool InvertAdditiveVal
     {
@@ -898,7 +918,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bForceDisableCrossHair
+    /// BoolProperty: bForceDisableCrossHair<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceDisableCrossHair
     {
@@ -916,7 +937,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bManageWalkingVelocity
+    /// BoolProperty: bManageWalkingVelocity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bManageWalkingVelocity
     {
@@ -934,7 +956,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DistForBringGunInToMax
+    /// FloatProperty: DistForBringGunInToMax<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float DistForBringGunInToMax
     {
@@ -943,7 +966,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DistForBringGunIn
+    /// FloatProperty: DistForBringGunIn<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DistForBringGunIn
     {
@@ -952,7 +976,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BringInLerpVal
+    /// FloatProperty: BringInLerpVal<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float BringInLerpVal
     {
@@ -985,7 +1010,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2404);
 
     /// <summary>
-    /// FloatProperty: WalkingPawnAccel
+    /// FloatProperty: WalkingPawnAccel<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float WalkingPawnAccel
     {
@@ -994,7 +1020,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: WalkingMaxSpeed
+    /// FloatProperty: WalkingMaxSpeed<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float WalkingMaxSpeed
     {
@@ -1003,7 +1030,8 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AimingMaxSpeed
+    /// FloatProperty: AimingMaxSpeed<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float AimingMaxSpeed
     {

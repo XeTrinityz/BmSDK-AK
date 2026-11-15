@@ -100,7 +100,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: BoundaryScale
+    /// FloatProperty: BoundaryScale<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float BoundaryScale
     {
@@ -109,13 +110,15 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// StructProperty: BoundarySize
+    /// StructProperty: BoundarySize<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoundarySize
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 608);
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {
@@ -124,7 +127,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// ByteProperty: FieldType
+    /// ByteProperty: FieldType<br/>
+    /// Default: VELOCITY_DIRECT
     /// </summary>
     public unsafe BmSDK.Engine.ApexNoiseComponent.EFieldType FieldType
     {
@@ -133,7 +137,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// ByteProperty: NoiseType
+    /// ByteProperty: NoiseType<br/>
+    /// Default: CURL
     /// </summary>
     public unsafe BmSDK.Engine.ApexNoiseComponent.ENoiseType NoiseType
     {
@@ -142,7 +147,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: FieldDragCoeff
+    /// FloatProperty: FieldDragCoeff<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FieldDragCoeff
     {
@@ -160,7 +166,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseStrength
+    /// FloatProperty: NoiseStrength<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float NoiseStrength
     {
@@ -169,7 +176,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseSpacePeriod
+    /// FloatProperty: NoiseSpacePeriod<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float NoiseSpacePeriod
     {
@@ -178,7 +186,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTimePeriod
+    /// FloatProperty: NoiseTimePeriod<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float NoiseTimePeriod
     {
@@ -187,7 +196,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// IntProperty: NoiseOctaves
+    /// IntProperty: NoiseOctaves<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoiseOctaves
     {
@@ -196,7 +206,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseStrengthOctaveMultiplier
+    /// FloatProperty: NoiseStrengthOctaveMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseStrengthOctaveMultiplier
     {
@@ -205,7 +216,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseSpacePeriodOctaveMultiplier
+    /// FloatProperty: NoiseSpacePeriodOctaveMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseSpacePeriodOctaveMultiplier
     {
@@ -214,7 +226,8 @@ public partial class ApexNoiseComponent : BmSDK.Engine.ApexFieldSamplerComponent
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTimePeriodOctaveMultiplier
+    /// FloatProperty: NoiseTimePeriodOctaveMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseTimePeriodOctaveMultiplier
     {

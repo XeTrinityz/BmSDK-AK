@@ -304,7 +304,8 @@ public partial class RPawnVillainGunPredMiniGunBase : BmSDK.BmGame.RPawnVillainG
     }
 
     /// <summary>
-    /// FloatProperty: MeleeAttackRange
+    /// FloatProperty: MeleeAttackRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MeleeAttackRange
     {

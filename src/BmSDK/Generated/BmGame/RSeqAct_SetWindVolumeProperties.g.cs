@@ -136,7 +136,8 @@ public partial class RSeqAct_SetWindVolumeProperties : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// FloatProperty: WindStrengthScale
+    /// FloatProperty: WindStrengthScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WindStrengthScale
     {

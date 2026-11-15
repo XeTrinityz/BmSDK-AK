@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_OmnitronRemoteControl : BmSDK.BmGame.RSp
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxThumbSpeed
+    /// FloatProperty: MaxThumbSpeed<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float MaxThumbSpeed
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_OmnitronRemoteControl : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: ThumbAccel
+    /// FloatProperty: ThumbAccel<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float ThumbAccel
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_OmnitronRemoteControl : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: ThumbDecel
+    /// FloatProperty: ThumbDecel<br/>
+    /// Default: 1440
     /// </summary>
     public unsafe float ThumbDecel
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_OmnitronRemoteControl : BmSDK.BmGame.RSp
     }
 
     /// <summary>
-    /// FloatProperty: MininumStartDistance
+    /// FloatProperty: MininumStartDistance<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MininumStartDistance
     {

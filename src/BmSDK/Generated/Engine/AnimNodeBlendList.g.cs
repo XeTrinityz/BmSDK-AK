@@ -138,7 +138,8 @@ public partial class AnimNodeBlendList : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bForceChildFullWeightWhenBecomingRelevant
+    /// BoolProperty: bForceChildFullWeightWhenBecomingRelevant<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceChildFullWeightWhenBecomingRelevant
     {
@@ -147,7 +148,8 @@ public partial class AnimNodeBlendList : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bSkipBlendWhenNotRendered
+    /// BoolProperty: bSkipBlendWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipBlendWhenNotRendered
     {

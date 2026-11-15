@@ -701,7 +701,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: LastCheckinBarkTime
+    /// FloatProperty: LastCheckinBarkTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastCheckinBarkTime
     {
@@ -710,7 +711,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: LastCalloutBarkTime
+    /// FloatProperty: LastCalloutBarkTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastCalloutBarkTime
     {
@@ -746,7 +748,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: MinDistForGesture
+    /// FloatProperty: MinDistForGesture<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MinDistForGesture
     {
@@ -755,7 +758,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: MaxSeparationForGesture
+    /// FloatProperty: MaxSeparationForGesture<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MaxSeparationForGesture
     {
@@ -782,7 +786,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: ForcePairMinTime
+    /// FloatProperty: ForcePairMinTime<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float ForcePairMinTime
     {
@@ -791,7 +796,8 @@ public partial class RAEC_SearchBase : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     }
 
     /// <summary>
-    /// FloatProperty: PairLockoutTime
+    /// FloatProperty: PairLockoutTime<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float PairLockoutTime
     {

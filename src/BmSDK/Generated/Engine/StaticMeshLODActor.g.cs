@@ -79,7 +79,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: UseSimplygonForSimplification
+    /// BoolProperty: UseSimplygonForSimplification<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseSimplygonForSimplification
     {
@@ -151,7 +152,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: OnlyTouchMaterialZero
+    /// BoolProperty: OnlyTouchMaterialZero<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OnlyTouchMaterialZero
     {
@@ -214,7 +216,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: OpacityMaskUseDXT
+    /// BoolProperty: OpacityMaskUseDXT<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OpacityMaskUseDXT
     {
@@ -223,7 +226,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: BiasTexturesAgainstSmallTriangles
+    /// BoolProperty: BiasTexturesAgainstSmallTriangles<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BiasTexturesAgainstSmallTriangles
     {
@@ -241,7 +245,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxDeviation
+    /// FloatProperty: MaxDeviation<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxDeviation
     {
@@ -250,7 +255,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: RemeshQuality
+    /// FloatProperty: RemeshQuality<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float RemeshQuality
     {
@@ -277,7 +283,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OpacityMaskClipValue
+    /// FloatProperty: OpacityMaskClipValue<br/>
+    /// Default: 0.499
     /// </summary>
     public unsafe float OpacityMaskClipValue
     {
@@ -286,7 +293,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: HardEdgeAngle
+    /// FloatProperty: HardEdgeAngle<br/>
+    /// Default: 91
     /// </summary>
     public unsafe float HardEdgeAngle
     {
@@ -295,7 +303,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: UVMaxStretch
+    /// FloatProperty: UVMaxStretch<br/>
+    /// Default: 0.0625
     /// </summary>
     public unsafe float UVMaxStretch
     {
@@ -304,7 +313,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PullInDistance
+    /// FloatProperty: PullInDistance<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float PullInDistance
     {
@@ -313,7 +323,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ClosestAllowed
+    /// FloatProperty: ClosestAllowed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ClosestAllowed
     {
@@ -322,7 +333,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OverrideTextureDistance
+    /// FloatProperty: OverrideTextureDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideTextureDistance
     {
@@ -331,7 +343,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OpaqueTextureSizeMultiplier
+    /// FloatProperty: OpaqueTextureSizeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OpaqueTextureSizeMultiplier
     {
@@ -340,7 +353,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OpacityMaskTextureSizeMultiplier
+    /// FloatProperty: OpacityMaskTextureSizeMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OpacityMaskTextureSizeMultiplier
     {
@@ -349,7 +363,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LOD2PullInDistance
+    /// FloatProperty: LOD2PullInDistance<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float LOD2PullInDistance
     {
@@ -358,7 +373,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LOD2ClosestAllowed
+    /// FloatProperty: LOD2ClosestAllowed<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float LOD2ClosestAllowed
     {
@@ -367,7 +383,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LOD2OverrideTextureDistance
+    /// FloatProperty: LOD2OverrideTextureDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LOD2OverrideTextureDistance
     {
@@ -376,7 +393,8 @@ public partial class StaticMeshLODActor : BmSDK.Engine.StaticMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LOD2EmissivePower
+    /// FloatProperty: LOD2EmissivePower<br/>
+    /// Default: 1.11
     /// </summary>
     public unsafe float LOD2EmissivePower
     {

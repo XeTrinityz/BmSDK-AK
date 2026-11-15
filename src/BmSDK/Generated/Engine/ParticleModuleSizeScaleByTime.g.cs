@@ -79,13 +79,15 @@ public partial class ParticleModuleSizeScaleByTime : BmSDK.Engine.ParticleModule
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SizeScaleByTime
+    /// StructProperty: SizeScaleByTime<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleSizeScaleByTime.DistributionSizeScaleByTime,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector SizeScaleByTime
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 96);
 
     /// <summary>
-    /// BoolProperty: bEnableX
+    /// BoolProperty: bEnableX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableX
     {
@@ -94,7 +96,8 @@ public partial class ParticleModuleSizeScaleByTime : BmSDK.Engine.ParticleModule
     }
 
     /// <summary>
-    /// BoolProperty: bEnableY
+    /// BoolProperty: bEnableY<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableY
     {
@@ -103,7 +106,8 @@ public partial class ParticleModuleSizeScaleByTime : BmSDK.Engine.ParticleModule
     }
 
     /// <summary>
-    /// BoolProperty: bEnableZ
+    /// BoolProperty: bEnableZ<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableZ
     {

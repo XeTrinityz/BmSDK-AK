@@ -301,7 +301,7 @@ sealed class Printer
     void PrintConst(ConstInfo c)
     {
         Line("/// <summary>");
-        Line($"/// Const: {c.Name} = {System.Security.SecurityElement.Escape(c.Text)}");
+        Line($"/// Const: {c.Name} = {XmlText(c.Text)}");
         Line("/// </summary>");
         Line($"public const {c.Type} {c.ManagedName} = {c.Literal};");
     }
@@ -338,8 +338,17 @@ sealed class Printer
             var offset = prop.Offset + i * prop.ElementSize;
             var name = prop.ArrayDim > 1 ? prop.ManagedName + "_" + i : prop.ManagedName;
 
+            var defaultText = i < prop.Defaults.Count ? prop.Defaults[i] : null;
             Line("/// <summary>");
-            Line($"/// {prop.ClassName}: {prop.Name}");
+            if (defaultText is null)
+            {
+                Line($"/// {prop.ClassName}: {prop.Name}");
+            }
+            else
+            {
+                Line($"/// {prop.ClassName}: {prop.Name}<br/>");
+                Line($"/// Default: {XmlText(defaultText)}");
+            }
             Line("/// </summary>");
 
             if (prop.ShouldReturnByRef)
@@ -374,6 +383,8 @@ sealed class Printer
             Line("}");
         }
     }
+
+    static string XmlText(string text) => text.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
 
     // A string passed to a function by value.
     static bool IsStringArg(PropertyInfo param) => !param.IsOutParam && param.TypeName == "BmSDK.FString";

@@ -79,7 +79,8 @@ public partial class RAnimNotify_Throw : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: ThrowInfo
+    /// StructProperty: ThrowInfo<br/>
+    /// Default: (bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FThrowInfo ThrowInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FThrowInfo>(Ptr + 84);

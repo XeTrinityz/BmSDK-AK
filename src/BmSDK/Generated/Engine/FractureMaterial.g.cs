@@ -223,7 +223,8 @@ public partial class FractureMaterial : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightingChannels
+    /// StructProperty: LightingChannels<br/>
+    /// Default: (bInitialized=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 112);

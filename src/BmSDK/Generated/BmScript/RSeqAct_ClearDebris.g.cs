@@ -106,7 +106,8 @@ public partial class RSeqAct_ClearDebris : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ClearSize
+    /// FloatProperty: ClearSize<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ClearSize
     {

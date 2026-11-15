@@ -176,7 +176,8 @@ public partial class RAEC_GelMineExplosion : BmSDK.BmGame.RAlertEventCoordinator
     }
 
     /// <summary>
-    /// FloatProperty: DistanceAffectedWithin
+    /// FloatProperty: DistanceAffectedWithin<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DistanceAffectedWithin
     {

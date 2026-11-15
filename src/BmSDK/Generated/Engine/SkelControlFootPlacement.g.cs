@@ -88,7 +88,8 @@ public partial class SkelControlFootPlacement : BmSDK.Engine.SkelControlLimb, Bm
     }
 
     /// <summary>
-    /// ByteProperty: FootUpAxis
+    /// ByteProperty: FootUpAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis FootUpAxis
     {
@@ -112,7 +113,8 @@ public partial class SkelControlFootPlacement : BmSDK.Engine.SkelControlLimb, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bOrientFootToGround
+    /// BoolProperty: bOrientFootToGround<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOrientFootToGround
     {
@@ -130,7 +132,8 @@ public partial class SkelControlFootPlacement : BmSDK.Engine.SkelControlLimb, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxUpAdjustment
+    /// FloatProperty: MaxUpAdjustment<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxUpAdjustment
     {
@@ -148,7 +151,8 @@ public partial class SkelControlFootPlacement : BmSDK.Engine.SkelControlLimb, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxFootOrientAdjust
+    /// FloatProperty: MaxFootOrientAdjust<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float MaxFootOrientAdjust
     {

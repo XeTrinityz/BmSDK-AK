@@ -788,7 +788,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraSkeletalMeshComponent1
+    /// ComponentProperty: ExtraSkeletalMeshComponent1<br/>
+    /// Default: BmGame.Default__RCinematicActor.ExtraSkeletalMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraSkeletalMeshComponent1
     {
@@ -797,7 +798,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraSkeletalMeshComponent2
+    /// ComponentProperty: ExtraSkeletalMeshComponent2<br/>
+    /// Default: BmGame.Default__RCinematicActor.ExtraSkeletalMeshComponent2
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraSkeletalMeshComponent2
     {
@@ -806,7 +808,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraSkeletalMeshComponent3
+    /// ComponentProperty: ExtraSkeletalMeshComponent3<br/>
+    /// Default: BmGame.Default__RCinematicActor.ExtraSkeletalMeshComponent3
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraSkeletalMeshComponent3
     {
@@ -815,7 +818,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraSkeletalMeshComponent4
+    /// ComponentProperty: ExtraSkeletalMeshComponent4<br/>
+    /// Default: BmGame.Default__RCinematicActor.ExtraSkeletalMeshComponent4
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraSkeletalMeshComponent4
     {
@@ -824,7 +828,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraSkeletalMeshComponent5
+    /// ComponentProperty: ExtraSkeletalMeshComponent5<br/>
+    /// Default: BmGame.Default__RCinematicActor.ExtraSkeletalMeshComponent5
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent ExtraSkeletalMeshComponent5
     {
@@ -851,7 +856,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: UseAutoFlappyBits
+    /// BoolProperty: UseAutoFlappyBits<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UseAutoFlappyBits
     {
@@ -869,7 +875,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: EnablePrestreamTextures
+    /// BoolProperty: EnablePrestreamTextures<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnablePrestreamTextures
     {
@@ -932,7 +939,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: WetnessAccumulationAlpha
+    /// FloatProperty: WetnessAccumulationAlpha<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WetnessAccumulationAlpha
     {
@@ -941,7 +949,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
     }
 
     /// <summary>
-    /// NameProperty: RainParameterName
+    /// NameProperty: RainParameterName<br/>
+    /// Default: Batman_Rain_Direction
     /// </summary>
     public unsafe BmSDK.FName RainParameterName
     {

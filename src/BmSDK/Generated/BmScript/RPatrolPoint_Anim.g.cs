@@ -97,7 +97,8 @@ public partial class RPatrolPoint_Anim : BmSDK.BmGame.RPatrolPoint, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: idlePeriodMin
+    /// FloatProperty: idlePeriodMin<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float idlePeriodMin
     {
@@ -106,7 +107,8 @@ public partial class RPatrolPoint_Anim : BmSDK.BmGame.RPatrolPoint, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: idlePeriodMax
+    /// FloatProperty: idlePeriodMax<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float idlePeriodMax
     {

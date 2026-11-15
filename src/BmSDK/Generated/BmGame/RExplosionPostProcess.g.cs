@@ -154,7 +154,8 @@ public partial class RExplosionPostProcess : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: MaterialToInstance
+    /// ObjectProperty: MaterialToInstance<br/>
+    /// Default: PostProcess.pp_Explosion_mi
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance MaterialToInstance
     {
@@ -190,7 +191,8 @@ public partial class RExplosionPostProcess : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeRunning
+    /// FloatProperty: TimeRunning<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeRunning
     {
@@ -199,7 +201,8 @@ public partial class RExplosionPostProcess : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: ParamName
+    /// NameProperty: ParamName<br/>
+    /// Default: ExFade
     /// </summary>
     public unsafe BmSDK.FName ParamName
     {

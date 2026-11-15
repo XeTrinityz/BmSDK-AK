@@ -117,7 +117,8 @@ public partial class RSingleCrow : BmSDK.BmScript.RCrows, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: straw
+    /// ComponentProperty: straw<br/>
+    /// Default: BmScript.Default__RSingleCrow.strawComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent straw
     {

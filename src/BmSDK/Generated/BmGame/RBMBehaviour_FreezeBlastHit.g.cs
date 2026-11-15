@@ -293,7 +293,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// ClassProperty: dmgType
+    /// ClassProperty: dmgType<br/>
+    /// Default: BmGame.RDmgType_Electricity
     /// </summary>
     public unsafe BmSDK.Class dmgType
     {
@@ -329,7 +330,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bDeactivateTorsoFreezeFX
+    /// BoolProperty: bDeactivateTorsoFreezeFX<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeactivateTorsoFreezeFX
     {
@@ -392,7 +394,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bRagdollOnExit
+    /// BoolProperty: bRagdollOnExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRagdollOnExit
     {
@@ -455,7 +458,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// StructProperty: HitNormal
+    /// StructProperty: HitNormal<br/>
+    /// Default: (X=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HitNormal
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 604);
@@ -470,7 +474,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FreezeTime
+    /// FloatProperty: FreezeTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FreezeTime
     {
@@ -479,7 +484,8 @@ public partial class RBMBehaviour_FreezeBlastHit : BmSDK.BmGame.RBMBehaviour, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OutAnimTime
+    /// FloatProperty: OutAnimTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float OutAnimTime
     {

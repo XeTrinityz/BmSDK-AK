@@ -524,7 +524,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: WalkOnGargoyleMove
+    /// ObjectProperty: WalkOnGargoyleMove<br/>
+    /// Default: Batman_Environment_Moves.VantagePoint.Walk_Onto_Gargoyle
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig WalkOnGargoyleMove
     {
@@ -533,7 +534,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: WalkOffGargoyleMove
+    /// ObjectProperty: WalkOffGargoyleMove<br/>
+    /// Default: Batman_Environment_Moves.VantagePoint.Walk_Off_Gargoyle
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig WalkOffGargoyleMove
     {
@@ -542,7 +544,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: WalkOffGargoyleMoveOntoRailing
+    /// ObjectProperty: WalkOffGargoyleMoveOntoRailing<br/>
+    /// Default: Batman_Environment_Moves.VantagePoint.Walk_Off_Gargoyle_Onto_Railing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig WalkOffGargoyleMoveOntoRailing
     {
@@ -578,7 +581,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RHidePoint_Mesh.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -596,7 +600,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: ScanFXComponent
+    /// ComponentProperty: ScanFXComponent<br/>
+    /// Default: BmGame.Default__RHidePoint_Mesh.ScanSystem
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ScanFXComponent
     {
@@ -605,7 +610,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: MaxTakedownRopeLength
+    /// FloatProperty: MaxTakedownRopeLength<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxTakedownRopeLength
     {

@@ -340,7 +340,8 @@ public partial class RBMAIAction_NervousSearchMove : BmSDK.BmGame.RBMAIAction_Ba
     }
 
     /// <summary>
-    /// ArrayProperty: LeftGestureAnim
+    /// ArrayProperty: LeftGestureAnim<br/>
+    /// Default: (Nervous_Walk_Gesture_Left_01,Nervous_Walk_Gesture_Left_02,Nervous_Walk_Gesture_Left_03,Nervous_Walk_Gesture_Left_04,Nervous_Walk_Gesture_Left_05,Nervous_Walk_Gesture_Left_06)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> LeftGestureAnim
     {
@@ -349,7 +350,8 @@ public partial class RBMAIAction_NervousSearchMove : BmSDK.BmGame.RBMAIAction_Ba
     }
 
     /// <summary>
-    /// ArrayProperty: RightGestureAnim
+    /// ArrayProperty: RightGestureAnim<br/>
+    /// Default: (Nervous_Walk_Gesture_Right_01,Nervous_Walk_Gesture_Right_02,Nervous_Walk_Gesture_Right_03,Nervous_Walk_Gesture_Right_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> RightGestureAnim
     {

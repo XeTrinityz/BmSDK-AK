@@ -320,7 +320,8 @@ public partial class RSeqAct_GordonGetInBatmobileController : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: ParkingSpotProxDist
+    /// FloatProperty: ParkingSpotProxDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ParkingSpotProxDist
     {
@@ -329,7 +330,8 @@ public partial class RSeqAct_GordonGetInBatmobileController : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: BatmobileSpeedForStop
+    /// FloatProperty: BatmobileSpeedForStop<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float BatmobileSpeedForStop
     {
@@ -338,13 +340,15 @@ public partial class RSeqAct_GordonGetInBatmobileController : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// StructProperty: WalkSpotOffset
+    /// StructProperty: WalkSpotOffset<br/>
+    /// Default: (X=500)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WalkSpotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 476);
 
     /// <summary>
-    /// FloatProperty: DistanceBetweenGordonAndParkingSpot
+    /// FloatProperty: DistanceBetweenGordonAndParkingSpot<br/>
+    /// Default: 1650
     /// </summary>
     public unsafe float DistanceBetweenGordonAndParkingSpot
     {

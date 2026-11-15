@@ -386,7 +386,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bInvertMouse
+    /// BoolProperty: bInvertMouse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInvertMouse
     {
@@ -476,7 +477,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableMouseSmoothing
+    /// BoolProperty: bEnableMouseSmoothing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableMouseSmoothing
     {
@@ -521,7 +523,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DoubleClickTime
+    /// FloatProperty: DoubleClickTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float DoubleClickTime
     {
@@ -530,7 +533,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MouseSensitivity
+    /// FloatProperty: MouseSensitivity<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MouseSensitivity
     {
@@ -823,7 +827,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MoveForwardSpeed
+    /// FloatProperty: MoveForwardSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MoveForwardSpeed
     {
@@ -832,7 +837,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MoveStrafeSpeed
+    /// FloatProperty: MoveStrafeSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float MoveStrafeSpeed
     {
@@ -841,7 +847,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookRightScale
+    /// FloatProperty: LookRightScale<br/>
+    /// Default: 375
     /// </summary>
     public unsafe float LookRightScale
     {
@@ -850,7 +857,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LookUpScale
+    /// FloatProperty: LookUpScale<br/>
+    /// Default: -300
     /// </summary>
     public unsafe float LookUpScale
     {
@@ -930,7 +938,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MouseSamples
+    /// IntProperty: MouseSamples<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MouseSamples
     {
@@ -939,7 +948,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MouseSamplingTotal
+    /// FloatProperty: MouseSamplingTotal<br/>
+    /// Default: 0.0083
     /// </summary>
     public unsafe float MouseSamplingTotal
     {

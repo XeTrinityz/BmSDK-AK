@@ -390,7 +390,8 @@ public partial class RSpecialMoveInstance_Slide : BmSDK.BmGame.RSpecialMoveInsta
     }
 
     /// <summary>
-    /// ObjectProperty: DestroyedSomethingRumble
+    /// ObjectProperty: DestroyedSomethingRumble<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_Slide.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DestroyedSomethingRumble
     {

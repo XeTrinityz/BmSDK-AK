@@ -112,13 +112,15 @@ public partial class AnimNodeSequenceBlendByAim : BmSDK.Engine.AnimNodeSequenceB
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 412);
 
     /// <summary>
-    /// StructProperty: HorizontalRange
+    /// StructProperty: HorizontalRange<br/>
+    /// Default: (X=-1,Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 HorizontalRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 420);
 
     /// <summary>
-    /// StructProperty: VerticalRange
+    /// StructProperty: VerticalRange<br/>
+    /// Default: (X=-1,Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 VerticalRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 428);

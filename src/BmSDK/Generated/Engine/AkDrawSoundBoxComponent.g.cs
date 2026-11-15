@@ -79,7 +79,8 @@ public partial class AkDrawSoundBoxComponent : BmSDK.Engine.DrawBoxComponent, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: DrawScale
+    /// FloatProperty: DrawScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DrawScale
     {

@@ -298,7 +298,8 @@ public partial class RExplosiveGooMineBm : BmSDK.BmGame.RExplosiveGooMine, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: ForceField
+    /// ComponentProperty: ForceField<br/>
+    /// Default: BmScript.Default__RExplosiveGooMineBm.ForceComponent
     /// </summary>
     public unsafe BmSDK.Engine.NxForceFieldRadialComponent ForceField
     {
@@ -316,7 +317,8 @@ public partial class RExplosiveGooMineBm : BmSDK.BmGame.RExplosiveGooMine, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: LethalExplosion
+    /// ObjectProperty: LethalExplosion<br/>
+    /// Default: VFX_Gadgets.ExplosiveGel.AOE_Explosion_UPGR
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem LethalExplosion
     {

@@ -937,7 +937,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// BoolProperty: bAttachRopeToFeet
+    /// BoolProperty: bAttachRopeToFeet<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAttachRopeToFeet
     {
@@ -1009,7 +1010,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// BoolProperty: bCalculateInitialFallbackPos
+    /// BoolProperty: bCalculateInitialFallbackPos<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCalculateInitialFallbackPos
     {
@@ -1138,13 +1140,15 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 1000);
 
     /// <summary>
-    /// StructProperty: AnimatedCameraCollisionOffset
+    /// StructProperty: AnimatedCameraCollisionOffset<br/>
+    /// Default: (X=60,Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AnimatedCameraCollisionOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1132);
 
     /// <summary>
-    /// StructProperty: CatwomanCameraCollisionOffset
+    /// StructProperty: CatwomanCameraCollisionOffset<br/>
+    /// Default: (Z=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CatwomanCameraCollisionOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1144);
@@ -1159,7 +1163,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StrProperty: FFXInterrogationName
+    /// StrProperty: FFXInterrogationName<br/>
+    /// Default: "E_Scared"
     /// </summary>
     public unsafe BmSDK.FString FFXInterrogationName
     {
@@ -1168,7 +1173,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: FFXInterrogationStrength
+    /// FloatProperty: FFXInterrogationStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FFXInterrogationStrength
     {
@@ -1177,7 +1183,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StrProperty: FFXIntimidationName
+    /// StrProperty: FFXIntimidationName<br/>
+    /// Default: "E_Intense"
     /// </summary>
     public unsafe BmSDK.FString FFXIntimidationName
     {
@@ -1186,7 +1193,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: FFXIntimidationStrength
+    /// FloatProperty: FFXIntimidationStrength<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float FFXIntimidationStrength
     {
@@ -1195,7 +1203,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StrProperty: FFXPlayerIntimidationName
+    /// StrProperty: FFXPlayerIntimidationName<br/>
+    /// Default: "E_Angry"
     /// </summary>
     public unsafe BmSDK.FString FFXPlayerIntimidationName
     {
@@ -1204,7 +1213,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: FFXPlayerIntimidationStrength
+    /// FloatProperty: FFXPlayerIntimidationStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FFXPlayerIntimidationStrength
     {
@@ -1213,7 +1223,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: FFXBlendTime
+    /// FloatProperty: FFXBlendTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FFXBlendTime
     {
@@ -1243,7 +1254,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1240);
 
     /// <summary>
-    /// FloatProperty: RopeLength
+    /// FloatProperty: RopeLength<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RopeLength
     {
@@ -1252,7 +1264,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// NameProperty: RopeBoneAttachName
+    /// NameProperty: RopeBoneAttachName<br/>
+    /// Default: Bip01_Pelvis
     /// </summary>
     public unsafe BmSDK.FName RopeBoneAttachName
     {
@@ -1261,7 +1274,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: RopeAttachConnectionDistance
+    /// FloatProperty: RopeAttachConnectionDistance<br/>
+    /// Default: 105
     /// </summary>
     public unsafe float RopeAttachConnectionDistance
     {
@@ -1276,7 +1290,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1268);
 
     /// <summary>
-    /// ArrayProperty: RopeExtraAttachConnections
+    /// ArrayProperty: RopeExtraAttachConnections<br/>
+    /// Default: ((RopeExtraAttachBoneName=Bip01_L_Calf,RopeExtraAttachBonePos=(X=50,Y=12)),(RopeExtraAttachBoneName=Bip01_R_Calf,RopeExtraAttachBonePos=(X=50,Y=-12)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RRopeComponent.FRopeExtraAttachConnection> RopeExtraAttachConnections
     {
@@ -1291,7 +1306,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1296);
 
     /// <summary>
-    /// StructProperty: RopePhysStartOffset
+    /// StructProperty: RopePhysStartOffset<br/>
+    /// Default: (X=-7)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RopePhysStartOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1308);
@@ -1306,7 +1322,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// IntProperty: NumRandomCameras
+    /// IntProperty: NumRandomCameras<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumRandomCameras
     {
@@ -1348,7 +1365,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1356);
 
     /// <summary>
-    /// FloatProperty: ChanceOfAttack
+    /// FloatProperty: ChanceOfAttack<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float ChanceOfAttack
     {

@@ -277,7 +277,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bInitialVisibilityValue
+    /// BoolProperty: bInitialVisibilityValue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInitialVisibilityValue
     {
@@ -286,7 +287,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     }
 
     /// <summary>
-    /// BoolProperty: bUseDynamicIndexBuffer
+    /// BoolProperty: bUseDynamicIndexBuffer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseDynamicIndexBuffer
     {

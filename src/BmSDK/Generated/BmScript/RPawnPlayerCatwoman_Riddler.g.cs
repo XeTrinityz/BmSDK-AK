@@ -202,7 +202,8 @@ public partial class RPawnPlayerCatwoman_Riddler : BmSDK.BmScript.RPawnPlayerCat
     }
 
     /// <summary>
-    /// ObjectProperty: IdleOverlaysNoCollar
+    /// ObjectProperty: IdleOverlaysNoCollar<br/>
+    /// Default: Anim_Catwoman_Movement.Code.CW_Stand_Idle_Overlay_No_Collar
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet IdleOverlaysNoCollar
     {

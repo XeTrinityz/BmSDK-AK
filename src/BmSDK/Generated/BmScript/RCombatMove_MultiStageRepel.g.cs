@@ -151,7 +151,8 @@ public partial class RCombatMove_MultiStageRepel : BmSDK.BmGame.RCombatMove, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 804);
 
     /// <summary>
-    /// FloatProperty: RepelRange
+    /// FloatProperty: RepelRange<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float RepelRange
     {

@@ -115,7 +115,8 @@ public partial class SoundCue : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: VolumeMultiplier
+    /// FloatProperty: VolumeMultiplier<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float VolumeMultiplier
     {
@@ -124,7 +125,8 @@ public partial class SoundCue : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PitchMultiplier
+    /// FloatProperty: PitchMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PitchMultiplier
     {

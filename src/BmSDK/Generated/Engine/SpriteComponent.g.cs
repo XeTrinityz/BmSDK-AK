@@ -170,7 +170,8 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: ScreenSize
+    /// FloatProperty: ScreenSize<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ScreenSize
     {

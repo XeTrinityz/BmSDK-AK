@@ -337,7 +337,8 @@ public partial class RSeqAct_RiddlerShootingRangeController : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: FlashTime
+    /// FloatProperty: FlashTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float FlashTime
     {

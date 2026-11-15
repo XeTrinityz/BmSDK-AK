@@ -109,7 +109,8 @@ public partial class RVehicleBehaviour_Parked : BmSDK.BmGame.RVehicleBehaviour, 
     }
 
     /// <summary>
-    /// FloatProperty: GotoCombatBehaviourIfBatmobileInRange
+    /// FloatProperty: GotoCombatBehaviourIfBatmobileInRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float GotoCombatBehaviourIfBatmobileInRange
     {

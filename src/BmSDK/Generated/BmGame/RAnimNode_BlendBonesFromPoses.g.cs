@@ -132,7 +132,8 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
     }
 
     /// <summary>
-    /// FloatProperty: TargetBlendWeight
+    /// FloatProperty: TargetBlendWeight<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TargetBlendWeight
     {
@@ -141,7 +142,8 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
     }
 
     /// <summary>
-    /// FloatProperty: TargetBlendDuration
+    /// FloatProperty: TargetBlendDuration<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TargetBlendDuration
     {

@@ -178,7 +178,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionTemplate
+    /// ObjectProperty: ExplosionTemplate<br/>
+    /// Default: VFX_Explosion.FX_GargoyleExp1_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ExplosionTemplate
     {
@@ -196,7 +197,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionSound
+    /// ObjectProperty: ExplosionSound<br/>
+    /// Default: Ww_PSO_VantagePointDestruction.Play_VPointDestructionLarge
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplosionSound
     {
@@ -205,7 +207,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ExplodeRadius
+    /// FloatProperty: ExplodeRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float ExplodeRadius
     {
@@ -214,7 +217,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ExplodeForce
+    /// FloatProperty: ExplodeForce<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ExplodeForce
     {
@@ -223,7 +227,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: BatmanDamage
+    /// ArrayProperty: BatmanDamage<br/>
+    /// Default: (20,30,40)
     /// </summary>
     public unsafe BmSDK.TArray<int> BatmanDamage
     {
@@ -232,7 +237,8 @@ public partial class RGargoyleBomb : BmSDK.BmGame.RGargoyleBombBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: WarningBeepDuration
+    /// FloatProperty: WarningBeepDuration<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float WarningBeepDuration
     {

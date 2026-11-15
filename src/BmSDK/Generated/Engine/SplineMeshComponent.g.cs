@@ -85,7 +85,8 @@ public partial class SplineMeshComponent : BmSDK.Engine.StaticMeshComponent, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.SplineMeshComponent.FSplineMeshParams>(Ptr + 748);
 
     /// <summary>
-    /// StructProperty: SplineXDir
+    /// StructProperty: SplineXDir<br/>
+    /// Default: (X=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SplineXDir
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 836);

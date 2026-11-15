@@ -230,7 +230,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: BmGame.Default__RCombatArea.DrawCylinder0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent
     {
@@ -239,7 +240,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent2
+    /// ComponentProperty: RenderComponent2<br/>
+    /// Default: BmGame.Default__RCombatArea.DrawCylinder1
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent2
     {
@@ -248,7 +250,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AreaRadius
+    /// FloatProperty: AreaRadius<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float AreaRadius
     {
@@ -257,7 +260,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AreaRadiusOuter
+    /// FloatProperty: AreaRadiusOuter<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float AreaRadiusOuter
     {
@@ -284,7 +288,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AreaHeight
+    /// FloatProperty: AreaHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float AreaHeight
     {
@@ -311,7 +316,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

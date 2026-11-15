@@ -229,7 +229,8 @@ public partial class RJokerSwappableBase : BmSDK.Engine.StaticMeshActor, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: Chapter
+    /// IntProperty: Chapter<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int Chapter
     {
@@ -238,7 +239,8 @@ public partial class RJokerSwappableBase : BmSDK.Engine.StaticMeshActor, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: overrideMaxDistForOnScreenSwap
+    /// FloatProperty: overrideMaxDistForOnScreenSwap<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float overrideMaxDistForOnScreenSwap
     {

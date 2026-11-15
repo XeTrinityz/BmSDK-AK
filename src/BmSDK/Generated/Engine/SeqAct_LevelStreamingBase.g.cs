@@ -87,7 +87,8 @@ public partial class SeqAct_LevelStreamingBase : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bMakeVisibleAfterLoad
+    /// BoolProperty: bMakeVisibleAfterLoad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bMakeVisibleAfterLoad
     {
@@ -105,7 +106,8 @@ public partial class SeqAct_LevelStreamingBase : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bRegisterLevelIfMissing
+    /// BoolProperty: bRegisterLevelIfMissing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRegisterLevelIfMissing
     {

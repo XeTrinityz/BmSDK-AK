@@ -193,7 +193,8 @@ public partial class RCrowdSequence : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: CrowdSpawnerClass
+    /// ClassProperty: CrowdSpawnerClass<br/>
+    /// Default: BmGame.RCrowdSpawner_XPBats
     /// </summary>
     public unsafe BmSDK.Class CrowdSpawnerClass
     {
@@ -256,7 +257,8 @@ public partial class RCrowdSequence : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpawnRate
+    /// FloatProperty: SpawnRate<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SpawnRate
     {

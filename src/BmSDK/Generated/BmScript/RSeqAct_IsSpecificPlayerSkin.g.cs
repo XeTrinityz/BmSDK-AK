@@ -93,7 +93,8 @@ public partial class RSeqAct_IsSpecificPlayerSkin : BmSDK.BmGame.RSeqAct_IsDefau
     }
 
     /// <summary>
-    /// StrProperty: FullSkinName
+    /// StrProperty: FullSkinName<br/>
+    /// Default: "Playable_Batman_std"
     /// </summary>
     public unsafe BmSDK.FString FullSkinName
     {

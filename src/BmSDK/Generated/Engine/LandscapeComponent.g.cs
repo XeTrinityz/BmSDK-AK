@@ -203,7 +203,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: WeightmapScaleBias
+    /// StructProperty: WeightmapScaleBias<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 WeightmapScaleBias
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 624);
@@ -218,7 +219,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: HeightmapScaleBias
+    /// StructProperty: HeightmapScaleBias<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 HeightmapScaleBias
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 656);
@@ -311,7 +313,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: ForcedLOD
+    /// IntProperty: ForcedLOD<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForcedLOD
     {
@@ -325,7 +328,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     public InlineArray<byte> NeighborLOD => new(8, Ptr + 816, 1, this);
 
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_0
     {
@@ -333,7 +337,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 816); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_1
     {
@@ -341,7 +346,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 817); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_2
     {
@@ -349,7 +355,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 818); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_3
     {
@@ -357,7 +364,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 819); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_4
     {
@@ -365,7 +373,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 820); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_5
     {
@@ -373,7 +382,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 821); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_6
     {
@@ -381,7 +391,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 822); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLOD
+    /// ByteProperty: NeighborLOD<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte NeighborLOD_7
     {
@@ -395,7 +406,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     public InlineArray<byte> NeighborLODBias => new(8, Ptr + 824, 1, this);
 
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_0
     {
@@ -403,7 +415,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 824); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_1
     {
@@ -411,7 +424,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 825); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_2
     {
@@ -419,7 +433,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 826); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_3
     {
@@ -427,7 +442,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 827); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_4
     {
@@ -435,7 +451,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 828); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_5
     {
@@ -443,7 +460,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 829); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_6
     {
@@ -451,7 +469,8 @@ public partial class LandscapeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 830); }
     }
     /// <summary>
-    /// ByteProperty: NeighborLODBias
+    /// ByteProperty: NeighborLODBias<br/>
+    /// Default: 128
     /// </summary>
     public unsafe byte NeighborLODBias_7
     {

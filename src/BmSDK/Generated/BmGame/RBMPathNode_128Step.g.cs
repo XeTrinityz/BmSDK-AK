@@ -136,7 +136,8 @@ public partial class RBMPathNode_128Step : BmSDK.BmGame.RBMPathNode_VariablePosi
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1068);
 
     /// <summary>
-    /// FloatProperty: StepHeight
+    /// FloatProperty: StepHeight<br/>
+    /// Default: 128
     /// </summary>
     public unsafe float StepHeight
     {

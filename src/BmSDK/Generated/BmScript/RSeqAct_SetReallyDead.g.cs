@@ -115,7 +115,8 @@ public partial class RSeqAct_SetReallyDead : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bReallyDead
+    /// BoolProperty: bReallyDead<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReallyDead
     {

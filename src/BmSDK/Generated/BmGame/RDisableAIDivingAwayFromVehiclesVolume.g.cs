@@ -183,7 +183,8 @@ public partial class RDisableAIDivingAwayFromVehiclesVolume : BmSDK.Engine.Volum
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -201,7 +202,8 @@ public partial class RDisableAIDivingAwayFromVehiclesVolume : BmSDK.Engine.Volum
     }
 
     /// <summary>
-    /// BoolProperty: bActiveBatmobile
+    /// BoolProperty: bActiveBatmobile<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActiveBatmobile
     {

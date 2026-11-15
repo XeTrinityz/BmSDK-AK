@@ -85,7 +85,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
     public partial record struct FRockPollenSettings
     {
         /// <summary>
-        /// FloatProperty: Density
+        /// FloatProperty: Density<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Density
         {
@@ -94,7 +95,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: Width
+        /// FloatProperty: Width<br/>
+        /// Default: 7
         /// </summary>
         public unsafe float Width
         {
@@ -112,7 +114,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: PollenHeightFadeStart
+        /// FloatProperty: PollenHeightFadeStart<br/>
+        /// Default: 5860
         /// </summary>
         public unsafe float PollenHeightFadeStart
         {
@@ -121,7 +124,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: PollenHeightFadeEnd
+        /// FloatProperty: PollenHeightFadeEnd<br/>
+        /// Default: 7702
         /// </summary>
         public unsafe float PollenHeightFadeEnd
         {
@@ -131,7 +135,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
     }
 
     /// <summary>
-    /// IntProperty: ParticleCount
+    /// IntProperty: ParticleCount<br/>
+    /// Default: 20480
     /// </summary>
     public unsafe int ParticleCount
     {
@@ -140,7 +145,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BoxSize
+    /// FloatProperty: BoxSize<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float BoxSize
     {
@@ -149,7 +155,8 @@ public partial class RPollenComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: PollenSettings
+    /// StructProperty: PollenSettings<br/>
+    /// Default: (Density=1,Width=7,PollenHeightFadeStart=5860,PollenHeightFadeEnd=7702)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPollenComponent.FRockPollenSettings PollenSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPollenComponent.FRockPollenSettings>(Ptr + 548);

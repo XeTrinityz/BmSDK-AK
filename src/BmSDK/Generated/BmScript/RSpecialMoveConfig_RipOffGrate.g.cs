@@ -160,7 +160,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// BoolProperty: bNoiseLevelUsed
+    /// BoolProperty: bNoiseLevelUsed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNoiseLevelUsed
     {
@@ -196,7 +197,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: StruggleDecayRate
+    /// FloatProperty: StruggleDecayRate<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float StruggleDecayRate
     {
@@ -205,7 +207,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: StrugglePressBonus
+    /// FloatProperty: StrugglePressBonus<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float StrugglePressBonus
     {
@@ -214,7 +217,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MaxStruggleSpeed
+    /// FloatProperty: MaxStruggleSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxStruggleSpeed
     {
@@ -223,7 +227,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: MinStruggleSpeed
+    /// FloatProperty: MinStruggleSpeed<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float MinStruggleSpeed
     {
@@ -232,7 +237,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: StrainBlendInSpeed
+    /// FloatProperty: StrainBlendInSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StrainBlendInSpeed
     {
@@ -241,7 +247,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: StrainBlendOutSpeed
+    /// FloatProperty: StrainBlendOutSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StrainBlendOutSpeed
     {
@@ -250,7 +257,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: NoiseIncrease
+    /// FloatProperty: NoiseIncrease<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float NoiseIncrease
     {
@@ -259,7 +267,8 @@ public partial class RSpecialMoveConfig_RipOffGrate : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: NoiseDecay
+    /// FloatProperty: NoiseDecay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseDecay
     {

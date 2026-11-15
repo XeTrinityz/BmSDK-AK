@@ -216,13 +216,15 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DOF
+    /// StructProperty: DOF<br/>
+    /// Default: (ApertureStop=22,FocusDistance=220,InterpolationDuration=1,BloomScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct DOF
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: OldDof
+    /// StructProperty: OldDof<br/>
+    /// Default: (ApertureStop=22,FocusDistance=220,InterpolationDuration=1,BloomScale=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct OldDof
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 120);

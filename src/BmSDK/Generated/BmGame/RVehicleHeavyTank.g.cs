@@ -1161,7 +1161,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: WeakPoint
+    /// ComponentProperty: WeakPoint<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.WeakPointMesh
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent WeakPoint
     {
@@ -1206,7 +1207,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// BoolProperty: WeakPointRevealed
+    /// BoolProperty: WeakPointRevealed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool WeakPointRevealed
     {
@@ -1278,7 +1280,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ScanRange
+    /// FloatProperty: ScanRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ScanRange
     {
@@ -1287,7 +1290,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: ScannerLightSource
+    /// ComponentProperty: ScannerLightSource<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.ScannerLight
     /// </summary>
     public unsafe BmSDK.Engine.SpotLightComponent ScannerLightSource
     {
@@ -1314,7 +1318,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 8144);
 
     /// <summary>
-    /// ObjectProperty: ScanLaser
+    /// ObjectProperty: ScanLaser<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.Scanner
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleScanLaser ScanLaser
     {
@@ -1341,7 +1346,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: LaserAudible
+    /// ObjectProperty: LaserAudible<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.LaserAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible LaserAudible
     {
@@ -1530,7 +1536,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: DeathExplosionWaveform
+    /// ObjectProperty: DeathExplosionWaveform<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.SmashRumble0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform DeathExplosionWaveform
     {
@@ -1584,7 +1591,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: WeakPointMeshComp
+    /// ComponentProperty: WeakPointMeshComp<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.WeakPoint0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent WeakPointMeshComp
     {
@@ -1593,7 +1601,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: ShieldImpactComp
+    /// ComponentProperty: ShieldImpactComp<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.Shield2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ShieldImpactComp
     {
@@ -1602,7 +1611,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: ShieldMeshComp
+    /// ComponentProperty: ShieldMeshComp<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.Shield1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ShieldMeshComp
     {
@@ -1611,7 +1621,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: Shield
+    /// ComponentProperty: Shield<br/>
+    /// Default: BmGame.Default__RVehicleHeavyTank.Shield0
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent Shield
     {
@@ -1629,7 +1640,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: NumScanLasers
+    /// IntProperty: NumScanLasers<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumScanLasers
     {
@@ -1656,7 +1668,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WeakPointRadius
+    /// FloatProperty: WeakPointRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float WeakPointRadius
     {
@@ -1665,7 +1678,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxLaserSoundVelocity
+    /// FloatProperty: MaxLaserSoundVelocity<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MaxLaserSoundVelocity
     {
@@ -1728,7 +1742,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: VisibilityTimeMod
+    /// FloatProperty: VisibilityTimeMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VisibilityTimeMod
     {
@@ -1773,7 +1788,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: CurrentBossStage
+    /// IntProperty: CurrentBossStage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentBossStage
     {
@@ -1818,7 +1834,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: PostPowerDownLineDelay
+    /// FloatProperty: PostPowerDownLineDelay<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float PostPowerDownLineDelay
     {
@@ -1872,7 +1889,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ArrayProperty: MaterialHeatValues
+    /// ArrayProperty: MaterialHeatValues<br/>
+    /// Default: (0.1,0.3,0.5,1)
     /// </summary>
     public unsafe BmSDK.TArray<float> MaterialHeatValues
     {
@@ -1881,7 +1899,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: PowerDownPowerBackUpDelay
+    /// FloatProperty: PowerDownPowerBackUpDelay<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float PowerDownPowerBackUpDelay
     {

@@ -127,7 +127,8 @@ public partial class RDisableEvadeVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowed
+    /// BoolProperty: bAllowed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowed
     {

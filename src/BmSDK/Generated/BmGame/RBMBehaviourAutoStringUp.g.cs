@@ -237,7 +237,8 @@ public partial class RBMBehaviourAutoStringUp : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// ArrayProperty: BoneConfigs
+    /// ArrayProperty: BoneConfigs<br/>
+    /// Default: ((BoneName=Bip01_L_Calf,BoneOffset=(X=50,Z=5)),(BoneName=Bip01_R_Calf,BoneOffset=(X=50,Z=-5)),(BoneName=Bip01_L_Forearm,BoneOffset=(X=30,Y=-5,Z=-5)),(BoneName=Bip01_R_Forearm,BoneOffset=(X=30,Y=-5,Z=-...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMBehaviourAutoStringUp.FStringUpBoneConfig> BoneConfigs
     {
@@ -264,7 +265,8 @@ public partial class RBMBehaviourAutoStringUp : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bRopeIsBatarangable
+    /// BoolProperty: bRopeIsBatarangable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRopeIsBatarangable
     {
@@ -300,7 +302,8 @@ public partial class RBMBehaviourAutoStringUp : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PawnXRayVisibilityTimer
+    /// FloatProperty: PawnXRayVisibilityTimer<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float PawnXRayVisibilityTimer
     {
@@ -318,7 +321,8 @@ public partial class RBMBehaviourAutoStringUp : BmSDK.BmGame.RBMBehaviour, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: ConstraintAttachDelayInFrames
+    /// IntProperty: ConstraintAttachDelayInFrames<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ConstraintAttachDelayInFrames
     {

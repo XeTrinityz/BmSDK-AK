@@ -125,7 +125,8 @@ public partial class RBMCombatThrownObject_Grenade : BmSDK.BmGame.RBMCombatThrow
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_VFX_Tank_Explosion.Play_ThugGrenadeExplode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {

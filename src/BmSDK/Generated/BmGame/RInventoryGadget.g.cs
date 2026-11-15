@@ -2365,7 +2365,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// ByteProperty: GadgetState
+    /// ByteProperty: GadgetState<br/>
+    /// Default: GS_None
     /// </summary>
     public unsafe BmSDK.BmGame.RInventoryGadget.GadgetEquipState GadgetState
     {
@@ -2392,7 +2393,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// ByteProperty: ThrowType
+    /// ByteProperty: ThrowType<br/>
+    /// Default: BTT_StandingThrow
     /// </summary>
     public unsafe BmSDK.BmGame.RInventoryGadget.BatarangThrowType ThrowType
     {
@@ -2428,7 +2430,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RInventoryGadget.GadgetMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent Mesh
     {
@@ -2446,7 +2449,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// ObjectProperty: XrayMaskMaterial
+    /// ObjectProperty: XrayMaskMaterial<br/>
+    /// Default: Batman_V2.Materials.V2_Batman_Xray_Mask_Mat
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface XrayMaskMaterial
     {
@@ -2500,7 +2504,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// ObjectProperty: FailedGadgetSpeechReplacementSound
+    /// ObjectProperty: FailedGadgetSpeechReplacementSound<br/>
+    /// Default: Ww_CHR_BatmanAlerts.Play_Gadget_Fail
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent FailedGadgetSpeechReplacementSound
     {
@@ -2783,7 +2788,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bSelectable
+    /// BoolProperty: bSelectable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSelectable
     {
@@ -2828,7 +2834,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bCanUseXRay
+    /// BoolProperty: bCanUseXRay<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUseXRay
     {
@@ -2954,7 +2961,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: AutoTargetRequiresLOS
+    /// BoolProperty: AutoTargetRequiresLOS<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoTargetRequiresLOS
     {
@@ -2981,7 +2989,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bUseRechargeDisplay
+    /// BoolProperty: bUseRechargeDisplay<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseRechargeDisplay
     {
@@ -3008,7 +3017,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bRecharging
+    /// BoolProperty: bRecharging<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecharging
     {
@@ -3080,7 +3090,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysUseHorizontalAutoTargetHelp
+    /// BoolProperty: bAlwaysUseHorizontalAutoTargetHelp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysUseHorizontalAutoTargetHelp
     {
@@ -3152,7 +3163,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bSharedWithNewGamePlus
+    /// BoolProperty: bSharedWithNewGamePlus<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSharedWithNewGamePlus
     {
@@ -3161,7 +3173,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bRequiresPawnForLOS
+    /// BoolProperty: bRequiresPawnForLOS<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRequiresPawnForLOS
     {
@@ -3197,7 +3210,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// BoolProperty: bOverrideTargetWeightsWhenZoomed
+    /// BoolProperty: bOverrideTargetWeightsWhenZoomed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOverrideTargetWeightsWhenZoomed
     {
@@ -3224,7 +3238,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: Ammo
+    /// IntProperty: Ammo<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int Ammo
     {
@@ -3242,7 +3257,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: CurrentRechargeValOverride
+    /// IntProperty: CurrentRechargeValOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentRechargeValOverride
     {
@@ -3269,7 +3285,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: MaxUpgradeLevel
+    /// IntProperty: MaxUpgradeLevel<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxUpgradeLevel
     {
@@ -3278,7 +3295,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: AutoTargetAnglePower
+    /// IntProperty: AutoTargetAnglePower<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int AutoTargetAnglePower
     {
@@ -3287,7 +3305,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngleWeight
+    /// FloatProperty: AutoTargetAngleWeight<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float AutoTargetAngleWeight
     {
@@ -3296,7 +3315,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetRangeWeight
+    /// FloatProperty: AutoTargetRangeWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AutoTargetRangeWeight
     {
@@ -3311,7 +3331,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1176);
 
     /// <summary>
-    /// IntProperty: MaxCornerViewAngle
+    /// IntProperty: MaxCornerViewAngle<br/>
+    /// Default: 11000
     /// </summary>
     public unsafe int MaxCornerViewAngle
     {
@@ -3329,7 +3350,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: LookSensitivity
+    /// FloatProperty: LookSensitivity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookSensitivity
     {
@@ -3413,7 +3435,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: CurrHuDRecharge
+    /// IntProperty: CurrHuDRecharge<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int CurrHuDRecharge
     {
@@ -3422,7 +3445,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: DefaultHighlightTimerCheck
+    /// FloatProperty: DefaultHighlightTimerCheck<br/>
+    /// Default: 0.1666
     /// </summary>
     public unsafe float DefaultHighlightTimerCheck
     {
@@ -3431,7 +3455,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: HighlightTimerCheck
+    /// FloatProperty: HighlightTimerCheck<br/>
+    /// Default: 0.1666
     /// </summary>
     public unsafe float HighlightTimerCheck
     {
@@ -3440,7 +3465,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// IntProperty: GadgetListEnum
+    /// IntProperty: GadgetListEnum<br/>
+    /// Default: 255
     /// </summary>
     public unsafe int GadgetListEnum
     {
@@ -3449,7 +3475,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: DestructibleImpactMomentum
+    /// FloatProperty: DestructibleImpactMomentum<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float DestructibleImpactMomentum
     {
@@ -3458,7 +3485,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: DestructibleImpactDamage
+    /// FloatProperty: DestructibleImpactDamage<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float DestructibleImpactDamage
     {
@@ -3560,7 +3588,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fHighlightDepthBiasMinimumValue
+    /// FloatProperty: fHighlightDepthBiasMinimumValue<br/>
+    /// Default: -0.1
     /// </summary>
     public unsafe float fHighlightDepthBiasMinimumValue
     {
@@ -3569,7 +3598,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fHighlightDepthBiasMaximumValue
+    /// FloatProperty: fHighlightDepthBiasMaximumValue<br/>
+    /// Default: -5
     /// </summary>
     public unsafe float fHighlightDepthBiasMaximumValue
     {
@@ -3578,7 +3608,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fHighlightDepthBiasLerpStartDistance
+    /// FloatProperty: fHighlightDepthBiasLerpStartDistance<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float fHighlightDepthBiasLerpStartDistance
     {
@@ -3587,7 +3618,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fHighlightDepthBiasLerpEndDistance
+    /// FloatProperty: fHighlightDepthBiasLerpEndDistance<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float fHighlightDepthBiasLerpEndDistance
     {
@@ -3614,7 +3646,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fLastPlayedGadgetSpeechTime
+    /// FloatProperty: fLastPlayedGadgetSpeechTime<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float fLastPlayedGadgetSpeechTime
     {
@@ -3623,7 +3656,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fGadgetSpeechCooldownTime
+    /// FloatProperty: fGadgetSpeechCooldownTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float fGadgetSpeechCooldownTime
     {
@@ -3641,7 +3675,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// NameProperty: RainParameterName
+    /// NameProperty: RainParameterName<br/>
+    /// Default: Batman_Rain_Direction
     /// </summary>
     public unsafe BmSDK.FName RainParameterName
     {
@@ -3659,19 +3694,22 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// StructProperty: WorldPPSettings
+    /// StructProperty: WorldPPSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableBloom=true,bOverride_EnableDOF=true,bOverride_EnableMotionBlur=true,bOverride_EnableSceneEffect=true,bOverride_AllowAmbientOcclusion=true,bOverrid...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings WorldPPSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 1516);
 
     /// <summary>
-    /// StructProperty: vAdditiveArmAvoidanceTraceExtent
+    /// StructProperty: vAdditiveArmAvoidanceTraceExtent<br/>
+    /// Default: (X=10,Y=10,Z=10)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 vAdditiveArmAvoidanceTraceExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2040);
 
     /// <summary>
-    /// FloatProperty: fAdditiveArmAvoidanceRightBias
+    /// FloatProperty: fAdditiveArmAvoidanceRightBias<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float fAdditiveArmAvoidanceRightBias
     {
@@ -3680,7 +3718,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fAdditiveArmAvoidanceTraceDistance
+    /// FloatProperty: fAdditiveArmAvoidanceTraceDistance<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float fAdditiveArmAvoidanceTraceDistance
     {
@@ -3689,7 +3728,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fAdditiveArmAvoidanceMaximumAvoidanceDistance
+    /// FloatProperty: fAdditiveArmAvoidanceMaximumAvoidanceDistance<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float fAdditiveArmAvoidanceMaximumAvoidanceDistance
     {
@@ -3698,7 +3738,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
     }
 
     /// <summary>
-    /// FloatProperty: fAdditiveArmAvoidanceInterpolationDistance
+    /// FloatProperty: fAdditiveArmAvoidanceInterpolationDistance<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float fAdditiveArmAvoidanceInterpolationDistance
     {
@@ -3731,7 +3772,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
         }
 
         /// <summary>
-        /// FloatProperty: Duration
+        /// FloatProperty: Duration<br/>
+        /// Default: 5
         /// </summary>
         public unsafe float Duration
         {

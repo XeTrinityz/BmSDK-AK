@@ -88,7 +88,8 @@ public partial class StaticLightCollectionActor : BmSDK.Engine.Light, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: MaxLightComponents
+    /// IntProperty: MaxLightComponents<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxLightComponents
     {

@@ -79,7 +79,8 @@ public partial class RDmgType_Ranged : BmSDK.BmGame.RDamageType, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StaggerBatmanRange
+    /// FloatProperty: StaggerBatmanRange<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float StaggerBatmanRange
     {

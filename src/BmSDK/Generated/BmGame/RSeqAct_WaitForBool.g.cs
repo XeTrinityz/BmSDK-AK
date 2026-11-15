@@ -92,7 +92,8 @@ public partial class RSeqAct_WaitForBool : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenChecks
+    /// FloatProperty: TimeBetweenChecks<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float TimeBetweenChecks
     {
@@ -110,7 +111,8 @@ public partial class RSeqAct_WaitForBool : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bWaitForSetToTrue
+    /// BoolProperty: bWaitForSetToTrue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWaitForSetToTrue
     {

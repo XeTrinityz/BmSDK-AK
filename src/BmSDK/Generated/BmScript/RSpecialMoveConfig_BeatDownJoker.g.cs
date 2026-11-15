@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_BeatDownJoker : BmSDK.BmGame.RSpecialMov
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: TransInAnimName
+    /// NameProperty: TransInAnimName<br/>
+    /// Default: Final_Takedown_In
     /// </summary>
     public unsafe BmSDK.FName TransInAnimName
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveConfig_BeatDownJoker : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: idleAnimName
+    /// NameProperty: idleAnimName<br/>
+    /// Default: Final_Takedown_Idle
     /// </summary>
     public unsafe BmSDK.FName idleAnimName
     {
@@ -115,7 +117,8 @@ public partial class RSpecialMoveConfig_BeatDownJoker : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: TransOutAnimName
+    /// NameProperty: TransOutAnimName<br/>
+    /// Default: Final_Takedown_Out
     /// </summary>
     public unsafe BmSDK.FName TransOutAnimName
     {
@@ -124,7 +127,8 @@ public partial class RSpecialMoveConfig_BeatDownJoker : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: BreakAnimName
+    /// NameProperty: BreakAnimName<br/>
+    /// Default: Final_Takedown_Break_Tap
     /// </summary>
     public unsafe BmSDK.FName BreakAnimName
     {
@@ -142,7 +146,8 @@ public partial class RSpecialMoveConfig_BeatDownJoker : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ObjectProperty: JokerAnimSet
+    /// ObjectProperty: JokerAnimSet<br/>
+    /// Default: Anim_Joker.Batman.JK_BM_Beatdown
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet JokerAnimSet
     {

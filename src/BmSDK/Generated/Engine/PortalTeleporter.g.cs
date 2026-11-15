@@ -195,7 +195,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     }
 
     /// <summary>
-    /// IntProperty: TextureResolutionX
+    /// IntProperty: TextureResolutionX<br/>
+    /// Default: 256
     /// </summary>
     public unsafe int TextureResolutionX
     {
@@ -204,7 +205,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     }
 
     /// <summary>
-    /// IntProperty: TextureResolutionY
+    /// IntProperty: TextureResolutionY<br/>
+    /// Default: 256
     /// </summary>
     public unsafe int TextureResolutionY
     {
@@ -222,7 +224,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAlwaysTeleportNonPawns
+    /// BoolProperty: bAlwaysTeleportNonPawns<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlwaysTeleportNonPawns
     {

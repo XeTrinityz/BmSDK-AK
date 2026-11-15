@@ -353,13 +353,15 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
     }
 
     /// <summary>
-    /// StructProperty: AttachOffset
+    /// StructProperty: AttachOffset<br/>
+    /// Default: (X=-1.867,Y=-9.653,Z=-104.97)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 AttachOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 444);
 
     /// <summary>
-    /// StructProperty: AttachRot
+    /// StructProperty: AttachRot<br/>
+    /// Default: (Pitch=746,Yaw=-18172,Roll=499)
     /// </summary>
     public unsafe ref BmSDK.Rotator AttachRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 456);

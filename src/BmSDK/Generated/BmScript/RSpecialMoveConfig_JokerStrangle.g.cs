@@ -124,7 +124,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// NameProperty: LaughLoop
+    /// NameProperty: LaughLoop<br/>
+    /// Default: BM_Choke_Laugh_Loop
     /// </summary>
     public unsafe BmSDK.FName LaughLoop
     {
@@ -133,7 +134,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: StruggleDecayRate
+    /// FloatProperty: StruggleDecayRate<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float StruggleDecayRate
     {
@@ -142,7 +144,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: StrugglePressBonus
+    /// FloatProperty: StrugglePressBonus<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float StrugglePressBonus
     {
@@ -151,7 +154,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MaxStruggleSpeed
+    /// FloatProperty: MaxStruggleSpeed<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxStruggleSpeed
     {
@@ -160,7 +164,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: MinStruggleSpeed
+    /// FloatProperty: MinStruggleSpeed<br/>
+    /// Default: -10
     /// </summary>
     public unsafe float MinStruggleSpeed
     {
@@ -178,7 +183,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: StrainBlendInSpeed
+    /// FloatProperty: StrainBlendInSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StrainBlendInSpeed
     {
@@ -187,7 +193,8 @@ public partial class RSpecialMoveConfig_JokerStrangle : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: StrainBlendOutSpeed
+    /// FloatProperty: StrainBlendOutSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StrainBlendOutSpeed
     {

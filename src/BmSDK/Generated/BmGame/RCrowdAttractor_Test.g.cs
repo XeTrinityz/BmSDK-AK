@@ -128,7 +128,8 @@ public partial class RCrowdAttractor_Test : BmSDK.BmGame.RCrowdAttractor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 700);
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float Radius
     {
@@ -137,7 +138,8 @@ public partial class RCrowdAttractor_Test : BmSDK.BmGame.RCrowdAttractor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: Speed
+    /// FloatProperty: Speed<br/>
+    /// Default: 12500
     /// </summary>
     public unsafe float Speed
     {

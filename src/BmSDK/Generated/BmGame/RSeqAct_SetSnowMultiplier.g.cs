@@ -113,7 +113,8 @@ public partial class RSeqAct_SetSnowMultiplier : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FallingSnow
+    /// FloatProperty: FallingSnow<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FallingSnow
     {
@@ -122,7 +123,8 @@ public partial class RSeqAct_SetSnowMultiplier : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: SettledSnow
+    /// FloatProperty: SettledSnow<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SettledSnow
     {

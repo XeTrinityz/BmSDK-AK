@@ -266,7 +266,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         }
 
         /// <summary>
-        /// FloatProperty: RateScale
+        /// FloatProperty: RateScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float RateScale
         {

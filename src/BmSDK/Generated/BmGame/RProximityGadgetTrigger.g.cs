@@ -143,7 +143,8 @@ public partial class RProximityGadgetTrigger : BmSDK.BmGame.RThugTrap, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComp
+    /// ComponentProperty: CylinderComp<br/>
+    /// Default: BmGame.Default__RProximityGadgetTrigger.Cylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComp
     {

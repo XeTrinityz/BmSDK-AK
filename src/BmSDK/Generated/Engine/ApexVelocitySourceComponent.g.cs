@@ -79,7 +79,8 @@ public partial class ApexVelocitySourceComponent : BmSDK.Engine.ApexFieldSampler
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: AverageVelocity
+    /// FloatProperty: AverageVelocity<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float AverageVelocity
     {
@@ -88,7 +89,8 @@ public partial class ApexVelocitySourceComponent : BmSDK.Engine.ApexFieldSampler
     }
 
     /// <summary>
-    /// FloatProperty: StandardVelocity
+    /// FloatProperty: StandardVelocity<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StandardVelocity
     {
@@ -106,7 +108,8 @@ public partial class ApexVelocitySourceComponent : BmSDK.Engine.ApexFieldSampler
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Radius
     {
@@ -115,13 +118,15 @@ public partial class ApexVelocitySourceComponent : BmSDK.Engine.ApexFieldSampler
     }
 
     /// <summary>
-    /// StructProperty: Extents
+    /// StructProperty: Extents<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Extents
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 620);
 
     /// <summary>
-    /// ComponentProperty: BoxComponent
+    /// ComponentProperty: BoxComponent<br/>
+    /// Default: Engine.Default__ApexVelocitySourceComponent.DrawBox0
     /// </summary>
     public unsafe BmSDK.Engine.DrawBoxComponent BoxComponent
     {

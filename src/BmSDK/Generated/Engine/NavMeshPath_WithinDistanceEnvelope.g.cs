@@ -131,7 +131,8 @@ public partial class NavMeshPath_WithinDistanceEnvelope : BmSDK.Engine.NavMeshPa
     }
 
     /// <summary>
-    /// BoolProperty: bSoft
+    /// BoolProperty: bSoft<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSoft
     {
@@ -149,7 +150,8 @@ public partial class NavMeshPath_WithinDistanceEnvelope : BmSDK.Engine.NavMeshPa
     }
 
     /// <summary>
-    /// FloatProperty: SoftStartPenalty
+    /// FloatProperty: SoftStartPenalty<br/>
+    /// Default: 320
     /// </summary>
     public unsafe float SoftStartPenalty
     {

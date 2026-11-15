@@ -103,7 +103,8 @@ public partial class RSpecialMoveConfig_PlaceGooMine : BmSDK.BmGame.RSpecialMove
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 512);
 
     /// <summary>
-    /// FloatProperty: SprayLength
+    /// FloatProperty: SprayLength<br/>
+    /// Default: 152
     /// </summary>
     public unsafe float SprayLength
     {

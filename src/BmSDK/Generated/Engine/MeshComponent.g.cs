@@ -517,7 +517,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bAllowMaterialSwap
+    /// BoolProperty: bAllowMaterialSwap<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowMaterialSwap
     {

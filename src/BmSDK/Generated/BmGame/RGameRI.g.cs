@@ -4095,7 +4095,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: StopDialogueEvent
+    /// ObjectProperty: StopDialogueEvent<br/>
+    /// Default: Ww_Global.Stop_Dialogue
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent StopDialogueEvent
     {
@@ -4203,7 +4204,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: CineLevelsToLoadOutsideOfCurrentLevel
+    /// ArrayProperty: CineLevelsToLoadOutsideOfCurrentLevel<br/>
+    /// Default: ("Bank_Large_Cine_LargeBank_Intro","Clocktower_C1_Cine_Ch3a_Oracle_Apartment_Door_Wall","Clocktower_C1_Cine_Ch3a_Oracle_Apartment_Three_Wall","Clocktower_C1_Cine_Ch3a_Oracle_Apartment_Reflections","Ci...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> CineLevelsToLoadOutsideOfCurrentLevel
     {
@@ -4212,7 +4214,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ArrayProperty: CineLevelsStartingInBatmobile
+    /// ArrayProperty: CineLevelsStartingInBatmobile<br/>
+    /// Default: ("Ace_B1_Cine_Ch2","CityX_09_Cine_Ch5b_Drop_Off_Ivy_At_Botanical_Gardens","CityX_10_Cine_Ch3cd_HeavyCannonDrop","CityX_11_Cine_Ch5b_Releasing_Plant_1","CityX_15_Cine_Ch7_Botanical_Gardens_Attack","Cit...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> CineLevelsStartingInBatmobile
     {
@@ -4248,7 +4251,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: MakeLevelsVisibleOnLoad
+    /// BoolProperty: MakeLevelsVisibleOnLoad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool MakeLevelsVisibleOnLoad
     {
@@ -4338,7 +4342,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bOneShotPerFrame
+    /// BoolProperty: bOneShotPerFrame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOneShotPerFrame
     {
@@ -4608,7 +4613,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1476);
 
     /// <summary>
-    /// StrProperty: BatmanInCombatFlagName
+    /// StrProperty: BatmanInCombatFlagName<br/>
+    /// Default: "Batman_InCombat"
     /// </summary>
     public unsafe BmSDK.FString BatmanInCombatFlagName
     {
@@ -4811,7 +4817,8 @@ public partial class RGameRI : BmSDK.Engine.GameReplicationInfo, BmSDK.IGameObje
     public InlineArray<BmSDK.BmGame.RGameRI.FLoadedPlayerCharacter> PlayerCharacters => new(8, Ptr + 1736, 84, this);
 
     /// <summary>
-    /// StructProperty: PlayerCharacters
+    /// StructProperty: PlayerCharacters<br/>
+    /// Default: (CharacterName=Playable_Batman)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameRI.FLoadedPlayerCharacter PlayerCharacters_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameRI.FLoadedPlayerCharacter>(Ptr + 1736);

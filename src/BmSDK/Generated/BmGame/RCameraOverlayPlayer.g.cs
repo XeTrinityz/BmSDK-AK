@@ -172,7 +172,8 @@ public partial class RCameraOverlayPlayer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CoreAnimSets
+    /// ArrayProperty: CoreAnimSets<br/>
+    /// Default: (Anim_Batman_Movement.Code.Camera_Anims)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSet> CoreAnimSets
     {

@@ -531,7 +531,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.3,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 804);
@@ -603,7 +604,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1016);
 
     /// <summary>
-    /// FloatProperty: AnimDurationScale
+    /// FloatProperty: AnimDurationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AnimDurationScale
     {
@@ -621,7 +623,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// IntProperty: NumAttacksAllowed
+    /// IntProperty: NumAttacksAllowed<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int NumAttacksAllowed
     {
@@ -693,7 +696,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float AttackRange
     {
@@ -702,7 +706,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// FloatProperty: HitRange
+    /// FloatProperty: HitRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float HitRange
     {
@@ -711,7 +716,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// FloatProperty: AvoidWallRange
+    /// FloatProperty: AvoidWallRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float AvoidWallRange
     {
@@ -720,7 +726,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
     }
 
     /// <summary>
-    /// FloatProperty: ScaleDelta
+    /// FloatProperty: ScaleDelta<br/>
+    /// Default: 0.02
     /// </summary>
     public unsafe float ScaleDelta
     {
@@ -750,7 +757,8 @@ public partial class RCombatMove_CEAttackBMCounter : BmSDK.BmGame.RCombatMove_Vi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCombatMove_VillainAttack.FAttackAndCounterInfo>(Ptr + 1080);
 
     /// <summary>
-    /// FloatProperty: AttackDelay
+    /// FloatProperty: AttackDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AttackDelay
     {

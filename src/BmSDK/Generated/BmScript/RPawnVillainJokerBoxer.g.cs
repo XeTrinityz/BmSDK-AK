@@ -734,7 +734,8 @@ public partial class RPawnVillainJokerBoxer : BmSDK.BmGame.RPawnVillainJokerBoxe
     }
 
     /// <summary>
-    /// IntProperty: ClashStageNumMax
+    /// IntProperty: ClashStageNumMax<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int ClashStageNumMax
     {
@@ -761,7 +762,8 @@ public partial class RPawnVillainJokerBoxer : BmSDK.BmGame.RPawnVillainJokerBoxe
     }
 
     /// <summary>
-    /// BoolProperty: bDoDualplayHintCheck
+    /// BoolProperty: bDoDualplayHintCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoDualplayHintCheck
     {
@@ -770,7 +772,8 @@ public partial class RPawnVillainJokerBoxer : BmSDK.BmGame.RPawnVillainJokerBoxe
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillHint
+    /// FloatProperty: TimeTillHint<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TimeTillHint
     {

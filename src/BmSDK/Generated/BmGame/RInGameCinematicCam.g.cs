@@ -496,7 +496,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bExitPlayingWhenFinished
+    /// BoolProperty: bExitPlayingWhenFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExitPlayingWhenFinished
     {
@@ -586,7 +587,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaximumUserCameraPitch
+    /// FloatProperty: MaximumUserCameraPitch<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MaximumUserCameraPitch
     {
@@ -595,7 +597,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: MaximumUserCameraYaw
+    /// FloatProperty: MaximumUserCameraYaw<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float MaximumUserCameraYaw
     {
@@ -643,7 +646,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DurationScale
+    /// FloatProperty: DurationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DurationScale
     {
@@ -658,7 +662,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1360);
 
     /// <summary>
-    /// StructProperty: Smoother
+    /// StructProperty: Smoother<br/>
+    /// Default: (LastSmoothDistance=1,DirectionDistance=(10000,10000,10000,10000),MinCameraSmoothingAngle=10,MaxCameraSmoothingAngle=25)
     /// </summary>
     public unsafe ref BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother Smoother
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.R3rdPersonCamera.FCameraSmoother>(Ptr + 1372);
@@ -754,7 +759,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: BlendBackToGameTime
+    /// FloatProperty: BlendBackToGameTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float BlendBackToGameTime
     {

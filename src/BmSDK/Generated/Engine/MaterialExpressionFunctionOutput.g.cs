@@ -79,7 +79,8 @@ public partial class MaterialExpressionFunctionOutput : BmSDK.Engine.MaterialExp
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: OutputName
+    /// StrProperty: OutputName<br/>
+    /// Default: "Result"
     /// </summary>
     public unsafe BmSDK.FString OutputName
     {

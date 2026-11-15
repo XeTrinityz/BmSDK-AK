@@ -119,7 +119,8 @@ public partial class RBMBehaviour_GasJoker : BmSDK.BmGame.RBMBehaviour, BmSDK.IG
     }
 
     /// <summary>
-    /// ArrayProperty: JokerOverlays
+    /// ArrayProperty: JokerOverlays<br/>
+    /// Default: (JK_Crowd_Overlay_01,JK_Crowd_Overlay_02,JK_Crowd_Overlay_03,JK_Crowd_Overlay_04,JK_Crowd_Overlay_05,JK_Crowd_Overlay_06)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> JokerOverlays
     {
@@ -128,7 +129,8 @@ public partial class RBMBehaviour_GasJoker : BmSDK.BmGame.RBMBehaviour, BmSDK.IG
     }
 
     /// <summary>
-    /// ArrayProperty: JokerAnimSets
+    /// ArrayProperty: JokerAnimSets<br/>
+    /// Default: (Anim_IC_City_X.Joker.JK_Laughing_Rioter_01,Anim_IC_City_X.Joker.JK_Laughing_Rioter_02,Anim_IC_City_X.Joker.JK_Laughing_Rioter_03,Anim_IC_City_X.Joker.JK_Laughing_Rioter_04,Anim_IC_City_X.Joker.JK_Lau...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSet> JokerAnimSets
     {

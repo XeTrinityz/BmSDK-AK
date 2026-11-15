@@ -115,7 +115,8 @@ public partial class RSeqAct_InRangeOfGadgetNoise : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float Range
     {

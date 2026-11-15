@@ -136,7 +136,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     }
 
     /// <summary>
-    /// FloatProperty: FieldOfView
+    /// FloatProperty: FieldOfView<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float FieldOfView
     {
@@ -145,7 +146,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     }
 
     /// <summary>
-    /// FloatProperty: NearPlane
+    /// FloatProperty: NearPlane<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float NearPlane
     {
@@ -154,7 +156,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     }
 
     /// <summary>
-    /// FloatProperty: FarPlane
+    /// FloatProperty: FarPlane<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float FarPlane
     {
@@ -163,7 +166,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateMatrices
+    /// BoolProperty: bUpdateMatrices<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateMatrices
     {
@@ -172,13 +176,15 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     }
 
     /// <summary>
-    /// StructProperty: ViewMatrix
+    /// StructProperty: ViewMatrix<br/>
+    /// Default: (XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FMatrix ViewMatrix
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: ProjMatrix
+    /// StructProperty: ProjMatrix<br/>
+    /// Default: (XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FMatrix ProjMatrix
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMatrix>(Ptr + 304);

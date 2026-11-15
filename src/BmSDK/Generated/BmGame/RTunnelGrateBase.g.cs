@@ -1281,7 +1281,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: GrateOpenFromAboveAnim
+    /// NameProperty: GrateOpenFromAboveAnim<br/>
+    /// Default: Tunnel_Grate_Enter
     /// </summary>
     public unsafe BmSDK.FName GrateOpenFromAboveAnim
     {
@@ -1290,7 +1291,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: GrateOpenFromBelowAnimAnim
+    /// NameProperty: GrateOpenFromBelowAnimAnim<br/>
+    /// Default: Tunnel_Grate_Exit
     /// </summary>
     public unsafe BmSDK.FName GrateOpenFromBelowAnimAnim
     {
@@ -1299,7 +1301,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: GrateOpenFromAboveCwAnim
+    /// NameProperty: GrateOpenFromAboveCwAnim<br/>
+    /// Default: Tunnel_Grate_Cw_FromAbove
     /// </summary>
     public unsafe BmSDK.FName GrateOpenFromAboveCwAnim
     {
@@ -1308,7 +1311,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: GrateOpenFromBelowCwAnim
+    /// NameProperty: GrateOpenFromBelowCwAnim<br/>
+    /// Default: Tunnel_Grate_Cw_FromBelow
     /// </summary>
     public unsafe BmSDK.FName GrateOpenFromBelowCwAnim
     {
@@ -1344,7 +1348,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// BoolProperty: bUseAboveGrateCamera
+    /// BoolProperty: bUseAboveGrateCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseAboveGrateCamera
     {
@@ -1497,7 +1502,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// NameProperty: SkelMeshBoneToMatch
+    /// NameProperty: SkelMeshBoneToMatch<br/>
+    /// Default: Tunnel_Grate
     /// </summary>
     public unsafe BmSDK.FName SkelMeshBoneToMatch
     {
@@ -1506,25 +1512,29 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// StructProperty: PlayerCheckExtent
+    /// StructProperty: PlayerCheckExtent<br/>
+    /// Default: (X=40,Y=40,Z=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PlayerCheckExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 900);
 
     /// <summary>
-    /// StructProperty: CheckDownOffset
+    /// StructProperty: CheckDownOffset<br/>
+    /// Default: (Z=130)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CheckDownOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 912);
 
     /// <summary>
-    /// StructProperty: CheckUpOffset
+    /// StructProperty: CheckUpOffset<br/>
+    /// Default: (Z=120)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CheckUpOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 924);
 
     /// <summary>
-    /// ByteProperty: TunnelGroupID
+    /// ByteProperty: TunnelGroupID<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte TunnelGroupID
     {
@@ -1557,7 +1567,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// FloatProperty: grateLockDuration
+    /// FloatProperty: grateLockDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float grateLockDuration
     {
@@ -1599,7 +1610,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// StructProperty: InRangeHighlightColour
+    /// StructProperty: InRangeHighlightColour<br/>
+    /// Default: (R=1,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor InRangeHighlightColour
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 1012);
@@ -1614,7 +1626,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// FloatProperty: thugVisionHighlightFadeInTime
+    /// FloatProperty: thugVisionHighlightFadeInTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float thugVisionHighlightFadeInTime
     {
@@ -1623,7 +1636,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     }
 
     /// <summary>
-    /// FloatProperty: thugVisionHighlightFadeOutTime
+    /// FloatProperty: thugVisionHighlightFadeOutTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float thugVisionHighlightFadeOutTime
     {

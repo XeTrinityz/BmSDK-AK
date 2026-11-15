@@ -152,7 +152,8 @@ public partial class RBMPathNode_SpecialMove : BmSDK.BmGame.RPathNode, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: NodesInSpecialMove
+    /// IntProperty: NodesInSpecialMove<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NodesInSpecialMove
     {

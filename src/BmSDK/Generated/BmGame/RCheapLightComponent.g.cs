@@ -79,7 +79,8 @@ public partial class RCheapLightComponent : BmSDK.Engine.FogVolumeSphericalDensi
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: AutomaticMeshComponent
+    /// ComponentProperty: AutomaticMeshComponent<br/>
+    /// Default: BmGame.Default__RCheapLightComponent.AutomaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent AutomaticMeshComponent
     {

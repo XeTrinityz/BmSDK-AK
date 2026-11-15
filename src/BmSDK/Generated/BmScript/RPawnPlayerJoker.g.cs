@@ -288,7 +288,8 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: GunStep1
+    /// ObjectProperty: GunStep1<br/>
+    /// Default: BmScript.Default__RPawnPlayerJoker.LowMantleWGun
     /// </summary>
     public unsafe BmSDK.BmGame.REnvironmentSpecialMoveWrapper GunStep1
     {
@@ -297,7 +298,8 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: GunStep2
+    /// ObjectProperty: GunStep2<br/>
+    /// Default: BmScript.Default__RPawnPlayerJoker.LowMantleWGunJoker
     /// </summary>
     public unsafe BmSDK.BmGame.REnvironmentSpecialMoveWrapper GunStep2
     {

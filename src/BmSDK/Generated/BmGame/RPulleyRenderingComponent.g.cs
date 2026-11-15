@@ -79,7 +79,8 @@ public partial class RPulleyRenderingComponent : BmSDK.Engine.PrimitiveComponent
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: Material
+    /// ObjectProperty: Material<br/>
+    /// Default: VFX_Generic.fx_Cable_M_lit
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface Material
     {

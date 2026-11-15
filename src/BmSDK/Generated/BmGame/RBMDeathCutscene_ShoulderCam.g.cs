@@ -362,7 +362,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float CamTimer
     {
@@ -389,7 +390,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeed
+    /// FloatProperty: UpSpeed<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float UpSpeed
     {
@@ -398,7 +400,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeedDecel
+    /// FloatProperty: UpSpeedDecel<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float UpSpeedDecel
     {
@@ -407,7 +410,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeed
+    /// FloatProperty: FOVSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FOVSpeed
     {
@@ -416,7 +420,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
     }
 
     /// <summary>
-    /// FloatProperty: FOVSpeedDecel
+    /// FloatProperty: FOVSpeedDecel<br/>
+    /// Default: 4.5
     /// </summary>
     public unsafe float FOVSpeedDecel
     {
@@ -581,7 +586,8 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 348);
 
     /// <summary>
-    /// FloatProperty: PlayerFocusAmount
+    /// FloatProperty: PlayerFocusAmount<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PlayerFocusAmount
     {

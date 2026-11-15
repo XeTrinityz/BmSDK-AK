@@ -400,7 +400,8 @@ public partial class RBMBehaviour_HideoutAmbushThug : BmSDK.BmGame.RBMBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: bNewRunAway
+    /// BoolProperty: bNewRunAway<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNewRunAway
     {

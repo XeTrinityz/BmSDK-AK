@@ -232,7 +232,8 @@ public partial class RBMDeathCutscene_FloorTakedownCam : BmSDK.BmGame.RBMDeathCu
     }
 
     /// <summary>
-    /// BoolProperty: bLookUp
+    /// BoolProperty: bLookUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLookUp
     {

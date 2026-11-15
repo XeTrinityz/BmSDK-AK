@@ -92,7 +92,8 @@ public partial class AkActionGlobal_MusicControl : BmSDK.Engine.AkActionGlobal, 
     }
 
     /// <summary>
-    /// ObjectProperty: CombatParam
+    /// ObjectProperty: CombatParam<br/>
+    /// Default: Ww_Parameters.MUSIC_Combat
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName CombatParam
     {
@@ -101,7 +102,8 @@ public partial class AkActionGlobal_MusicControl : BmSDK.Engine.AkActionGlobal, 
     }
 
     /// <summary>
-    /// ObjectProperty: PredatorParam
+    /// ObjectProperty: PredatorParam<br/>
+    /// Default: Ww_Parameters.MUSIC_Predator
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName PredatorParam
     {
@@ -110,7 +112,8 @@ public partial class AkActionGlobal_MusicControl : BmSDK.Engine.AkActionGlobal, 
     }
 
     /// <summary>
-    /// ObjectProperty: SpottedParam
+    /// ObjectProperty: SpottedParam<br/>
+    /// Default: Ww_Parameters.MUSIC_Spotted
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName SpottedParam
     {
@@ -119,7 +122,8 @@ public partial class AkActionGlobal_MusicControl : BmSDK.Engine.AkActionGlobal, 
     }
 
     /// <summary>
-    /// ObjectProperty: ProximityParam
+    /// ObjectProperty: ProximityParam<br/>
+    /// Default: Ww_Parameters.MUSIC_EnemyProximity
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName ProximityParam
     {
@@ -146,7 +150,8 @@ public partial class AkActionGlobal_MusicControl : BmSDK.Engine.AkActionGlobal, 
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToActivateLerpOnProximity
+    /// FloatProperty: DistanceToActivateLerpOnProximity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DistanceToActivateLerpOnProximity
     {

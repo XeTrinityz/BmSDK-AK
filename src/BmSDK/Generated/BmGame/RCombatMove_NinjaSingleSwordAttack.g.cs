@@ -542,7 +542,8 @@ public partial class RCombatMove_NinjaSingleSwordAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: TrackingRange
+    /// FloatProperty: TrackingRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float TrackingRange
     {
@@ -560,7 +561,8 @@ public partial class RCombatMove_NinjaSingleSwordAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: EnvCheckDelay
+    /// FloatProperty: EnvCheckDelay<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float EnvCheckDelay
     {

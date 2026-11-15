@@ -462,7 +462,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: LastSentNpcCountArmed
+    /// IntProperty: LastSentNpcCountArmed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LastSentNpcCountArmed
     {
@@ -471,7 +472,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// IntProperty: LastSentNpcCountUnarmed
+    /// IntProperty: LastSentNpcCountUnarmed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LastSentNpcCountUnarmed
     {
@@ -489,7 +491,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: GeneralMaterial
+    /// ObjectProperty: GeneralMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant GeneralMaterial
     {
@@ -498,7 +501,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: InteractMaterial
+    /// ObjectProperty: InteractMaterial<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_Interact_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant InteractMaterial
     {
@@ -606,7 +610,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ArrayProperty: InvestigateSpokenNames
+    /// ArrayProperty: InvestigateSpokenNames<br/>
+    /// Default: ("InvSpoke0","InvSpoke1","InvSpoke2","InvSpoke3","InvSpoke4","InvSpoke5")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> InvestigateSpokenNames
     {

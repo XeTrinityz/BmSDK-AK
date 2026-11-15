@@ -732,7 +732,8 @@ public partial class MHackingGadget : BmSDK.BmGame.MHackingGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: HackingPostProcess
+    /// ObjectProperty: HackingPostProcess<br/>
+    /// Default: BmScript.Default__MHackingGadget.HackingPP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess HackingPostProcess
     {
@@ -741,7 +742,8 @@ public partial class MHackingGadget : BmSDK.BmGame.MHackingGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: PasswordCrackingMove
+    /// ObjectProperty: PasswordCrackingMove<br/>
+    /// Default: WBGMDLC_Batgirl_Special_Moves.Omnitron_Password_Cracking
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig PasswordCrackingMove
     {
@@ -750,7 +752,8 @@ public partial class MHackingGadget : BmSDK.BmGame.MHackingGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: TriggerTargetBeamVFX
+    /// ObjectProperty: TriggerTargetBeamVFX<br/>
+    /// Default: DLC45_Batgirl_VFX.Particles.Remote_Hacking_Device_Line
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem TriggerTargetBeamVFX
     {
@@ -795,7 +798,8 @@ public partial class MHackingGadget : BmSDK.BmGame.MHackingGadgetBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: fUpdateTriggerTargetBeamDelayDefault
+    /// FloatProperty: fUpdateTriggerTargetBeamDelayDefault<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float fUpdateTriggerTargetBeamDelayDefault
     {

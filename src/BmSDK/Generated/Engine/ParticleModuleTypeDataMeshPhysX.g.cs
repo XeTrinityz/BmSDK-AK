@@ -102,7 +102,8 @@ public partial class ParticleModuleTypeDataMeshPhysX : BmSDK.Engine.ParticleModu
     }
 
     /// <summary>
-    /// ByteProperty: PhysXRotationMethod
+    /// ByteProperty: PhysXRotationMethod<br/>
+    /// Default: PMRM_Spherical
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModuleTypeDataMeshPhysX.EPhysXMeshRotationMethod PhysXRotationMethod
     {
@@ -111,7 +112,8 @@ public partial class ParticleModuleTypeDataMeshPhysX : BmSDK.Engine.ParticleModu
     }
 
     /// <summary>
-    /// FloatProperty: FluidRotationCoefficient
+    /// FloatProperty: FluidRotationCoefficient<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float FluidRotationCoefficient
     {
@@ -120,7 +122,8 @@ public partial class ParticleModuleTypeDataMeshPhysX : BmSDK.Engine.ParticleModu
     }
 
     /// <summary>
-    /// StructProperty: VerticalLod
+    /// StructProperty: VerticalLod<br/>
+    /// Default: (WeightForFifo=1,WeightForSpawnLod=1,SpawnLodRateVsLifeBias=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModuleTypeDataPhysX.FPhysXEmitterVerticalLodProperties VerticalLod
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleTypeDataPhysX.FPhysXEmitterVerticalLodProperties>(Ptr + 140);

@@ -3864,7 +3864,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// ByteProperty: CachedTankLightsOn
+    /// ByteProperty: CachedTankLightsOn<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte CachedTankLightsOn
     {
@@ -3909,7 +3910,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// ComponentProperty: VisualDamageComp
+    /// ComponentProperty: VisualDamageComp<br/>
+    /// Default: BmGame.Default__RVehicle.VisDmgComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVisualDamageComponent VisualDamageComp
     {
@@ -4017,7 +4019,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// BoolProperty: SelfDriveCanJumpDown
+    /// BoolProperty: SelfDriveCanJumpDown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool SelfDriveCanJumpDown
     {
@@ -4098,7 +4101,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// BoolProperty: bDoXrayLevelFadeCheck
+    /// BoolProperty: bDoXrayLevelFadeCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoXrayLevelFadeCheck
     {
@@ -4143,7 +4147,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// BoolProperty: bAddNavMeshObstacle
+    /// BoolProperty: bAddNavMeshObstacle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAddNavMeshObstacle
     {
@@ -4260,7 +4265,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// BoolProperty: TankLightsSwitchedOn
+    /// BoolProperty: TankLightsSwitchedOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TankLightsSwitchedOn
     {
@@ -4467,7 +4473,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// ObjectProperty: XRayMaterialMIC
+    /// ObjectProperty: XRayMaterialMIC<br/>
+    /// Default: BmGame.Default__RVehicle.MIC1
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant XRayMaterialMIC
     {
@@ -4516,7 +4523,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RVehicle.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -4600,7 +4608,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2404);
 
     /// <summary>
-    /// FloatProperty: SelfDriveThrottleScale
+    /// FloatProperty: SelfDriveThrottleScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SelfDriveThrottleScale
     {
@@ -4609,7 +4618,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveThrottleMin
+    /// FloatProperty: SelfDriveThrottleMin<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SelfDriveThrottleMin
     {
@@ -4627,7 +4637,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveLineMax
+    /// FloatProperty: SelfDriveLineMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SelfDriveLineMax
     {
@@ -4654,7 +4665,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveThrottleEaseDistance
+    /// FloatProperty: SelfDriveThrottleEaseDistance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float SelfDriveThrottleEaseDistance
     {
@@ -4699,7 +4711,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: SelfDriveExtraWidth
+    /// FloatProperty: SelfDriveExtraWidth<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float SelfDriveExtraWidth
     {
@@ -4753,7 +4766,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicle.FRoadObstacleTypes>(Ptr + 2544);
 
     /// <summary>
-    /// StructProperty: RoadObstacleStopForTypes
+    /// StructProperty: RoadObstacleStopForTypes<br/>
+    /// Default: (Batmobile=true,Car=true,Humvee=true,APC=true,LightTank=true,HeavyTank=true,Abandoned=true,HeavyAbandoned=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicle.FRoadObstacleTypes RoadObstacleStopForTypes
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicle.FRoadObstacleTypes>(Ptr + 2548);
@@ -4810,7 +4824,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: ObstacleAheadStopThreshold
+    /// FloatProperty: ObstacleAheadStopThreshold<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ObstacleAheadStopThreshold
     {
@@ -4828,7 +4843,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: SmashAbandonedVehicleSpeedThreshold
+    /// FloatProperty: SmashAbandonedVehicleSpeedThreshold<br/>
+    /// Default: 2200
     /// </summary>
     public unsafe float SmashAbandonedVehicleSpeedThreshold
     {
@@ -4888,7 +4904,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: DynamicNavMeshShapeHeightOffset
+    /// FloatProperty: DynamicNavMeshShapeHeightOffset<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float DynamicNavMeshShapeHeightOffset
     {
@@ -4903,7 +4920,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2656);
 
     /// <summary>
-    /// FloatProperty: PawnCollision_SideCheckDist_Min
+    /// FloatProperty: PawnCollision_SideCheckDist_Min<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float PawnCollision_SideCheckDist_Min
     {
@@ -4912,7 +4930,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_SideCheckDist_Max
+    /// FloatProperty: PawnCollision_SideCheckDist_Max<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float PawnCollision_SideCheckDist_Max
     {
@@ -4921,7 +4940,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_CosCheck_Front
+    /// FloatProperty: PawnCollision_CosCheck_Front<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float PawnCollision_CosCheck_Front
     {
@@ -4930,7 +4950,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_CosCheck_Side
+    /// FloatProperty: PawnCollision_CosCheck_Side<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PawnCollision_CosCheck_Side
     {
@@ -4939,7 +4960,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_SpeedMultiplier
+    /// FloatProperty: PawnCollision_LookAhead_SpeedMultiplier<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float PawnCollision_LookAhead_SpeedMultiplier
     {
@@ -4948,7 +4970,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_BaseDist
+    /// FloatProperty: PawnCollision_LookAhead_BaseDist<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float PawnCollision_LookAhead_BaseDist
     {
@@ -4957,7 +4980,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_Min
+    /// FloatProperty: PawnCollision_LookAhead_Min<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PawnCollision_LookAhead_Min
     {
@@ -4966,7 +4990,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_BackAdjustment
+    /// FloatProperty: PawnCollision_BackAdjustment<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float PawnCollision_BackAdjustment
     {
@@ -4984,7 +5009,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// IntProperty: LocationHistorySize
+    /// IntProperty: LocationHistorySize<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int LocationHistorySize
     {
@@ -5041,7 +5067,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: ShootAtLocationZOffset
+    /// FloatProperty: ShootAtLocationZOffset<br/>
+    /// Default: 32
     /// </summary>
     public unsafe float ShootAtLocationZOffset
     {
@@ -5050,13 +5077,15 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// StructProperty: CachedLightMat1234
+    /// StructProperty: CachedLightMat1234<br/>
+    /// Default: (R=-1,G=-1,B=-1,A=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor CachedLightMat1234
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2764);
 
     /// <summary>
-    /// StructProperty: CachedLightMat5678
+    /// StructProperty: CachedLightMat5678<br/>
+    /// Default: (R=-1,G=-1,B=-1,A=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor CachedLightMat5678
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2780);
@@ -5226,7 +5255,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: LightsBrightness
+    /// FloatProperty: LightsBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightsBrightness
     {
@@ -5391,7 +5421,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: WetnessAccumulationAlpha
+    /// FloatProperty: WetnessAccumulationAlpha<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WetnessAccumulationAlpha
     {
@@ -5400,7 +5431,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// NameProperty: RainParameterName
+    /// NameProperty: RainParameterName<br/>
+    /// Default: Batman_Rain_Direction
     /// </summary>
     public unsafe BmSDK.FName RainParameterName
     {
@@ -5409,7 +5441,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// StructProperty: LastRainParam
+    /// StructProperty: LastRainParam<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor LastRainParam
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 4340);
@@ -5460,7 +5493,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: DestructiblesImpactDamageMultiplier
+    /// FloatProperty: DestructiblesImpactDamageMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DestructiblesImpactDamageMultiplier
     {
@@ -5550,19 +5584,22 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// StructProperty: NPCCheckExtents
+    /// StructProperty: NPCCheckExtents<br/>
+    /// Default: (X=300,Y=200,Z=1000)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 NPCCheckExtents
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 4504);
 
     /// <summary>
-    /// StructProperty: NPCCheckOffset
+    /// StructProperty: NPCCheckOffset<br/>
+    /// Default: (Y=-50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 NPCCheckOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 4516);
 
     /// <summary>
-    /// FloatProperty: RoundRobinAccumulationTime
+    /// FloatProperty: RoundRobinAccumulationTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float RoundRobinAccumulationTime
     {
@@ -5571,7 +5608,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// IntProperty: VehicleListIndex
+    /// IntProperty: VehicleListIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int VehicleListIndex
     {
@@ -5616,7 +5654,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: MinDetectiveModeFadeDist
+    /// FloatProperty: MinDetectiveModeFadeDist<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float MinDetectiveModeFadeDist
     {
@@ -5625,7 +5664,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
     }
 
     /// <summary>
-    /// FloatProperty: MaxDetectiveModeFadeDist
+    /// FloatProperty: MaxDetectiveModeFadeDist<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float MaxDetectiveModeFadeDist
     {

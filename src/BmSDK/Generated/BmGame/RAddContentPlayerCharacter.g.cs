@@ -903,7 +903,8 @@ public partial class RAddContentPlayerCharacter : BmSDK.BmGame.RAdditionalConten
     }
 
     /// <summary>
-    /// StrProperty: CharacterAcronym
+    /// StrProperty: CharacterAcronym<br/>
+    /// Default: "BM"
     /// </summary>
     public unsafe BmSDK.FString CharacterAcronym
     {
@@ -966,7 +967,8 @@ public partial class RAddContentPlayerCharacter : BmSDK.BmGame.RAdditionalConten
     }
 
     /// <summary>
-    /// ObjectProperty: AudioForceAzrael
+    /// ObjectProperty: AudioForceAzrael<br/>
+    /// Default: Ww_PlayerCharacter.PlayerCharacter_Azrael_DLC
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName AudioForceAzrael
     {

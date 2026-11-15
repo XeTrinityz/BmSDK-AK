@@ -135,7 +135,8 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: BmGame.Default__RMine_StaticMesh.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {

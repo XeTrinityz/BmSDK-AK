@@ -235,7 +235,8 @@ public partial class RRelayDrone : BmSDK.BmScript.RHelicopterIntermediate, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RRelayDrone.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -244,7 +245,8 @@ public partial class RRelayDrone : BmSDK.BmScript.RHelicopterIntermediate, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: LandOnDroneMove
+    /// ObjectProperty: LandOnDroneMove<br/>
+    /// Default: Batman_Environment_Moves.Helicopter.Hang_On_Helicopter
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig LandOnDroneMove
     {

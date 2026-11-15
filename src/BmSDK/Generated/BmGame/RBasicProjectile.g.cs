@@ -243,7 +243,8 @@ public partial class RBasicProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ProjectileMesh
+    /// ComponentProperty: ProjectileMesh<br/>
+    /// Default: BmGame.Default__RBasicProjectile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ProjectileMesh
     {
@@ -252,7 +253,8 @@ public partial class RBasicProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ProjectileTrail
+    /// ComponentProperty: ProjectileTrail<br/>
+    /// Default: BmGame.Default__RBasicProjectile.RocketTrail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ProjectileTrail
     {
@@ -321,7 +323,8 @@ public partial class RBasicProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ImpactExplosionScale
+    /// FloatProperty: ImpactExplosionScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ImpactExplosionScale
     {
@@ -411,7 +414,8 @@ public partial class RBasicProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: TurretShotDamage
+    /// IntProperty: TurretShotDamage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int TurretShotDamage
     {
@@ -420,7 +424,8 @@ public partial class RBasicProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AlertTankRadius
+    /// FloatProperty: AlertTankRadius<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float AlertTankRadius
     {

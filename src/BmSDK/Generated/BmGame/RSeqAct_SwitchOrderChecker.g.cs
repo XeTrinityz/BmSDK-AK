@@ -107,7 +107,8 @@ public partial class RSeqAct_SwitchOrderChecker : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// IntProperty: NumInputs
+    /// IntProperty: NumInputs<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumInputs
     {
@@ -125,7 +126,8 @@ public partial class RSeqAct_SwitchOrderChecker : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bWrongSwitchStartsOver
+    /// BoolProperty: bWrongSwitchStartsOver<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bWrongSwitchStartsOver
     {

@@ -401,7 +401,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// ObjectProperty: MovieInfo
+    /// ObjectProperty: MovieInfo<br/>
+    /// Default: HudModuleExtraAerialScanner.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie MovieInfo
     {
@@ -428,7 +429,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// ObjectProperty: MinigameFFWaveForm
+    /// ObjectProperty: MinigameFFWaveForm<br/>
+    /// Default: BmScript.Default__RSeqAct_AerialScanner_RadioTowers.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform MinigameFFWaveForm
     {
@@ -455,7 +457,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// StrProperty: RadiationTargetIcon
+    /// StrProperty: RadiationTargetIcon<br/>
+    /// Default: "scarecrow_radioactive"
     /// </summary>
     public unsafe BmSDK.FString RadiationTargetIcon
     {
@@ -473,7 +476,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// StrProperty: AudioTargetIcon
+    /// StrProperty: AudioTargetIcon<br/>
+    /// Default: "scarecrow_audio"
     /// </summary>
     public unsafe BmSDK.FString AudioTargetIcon
     {
@@ -599,7 +603,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: GearingRatio
+    /// FloatProperty: GearingRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GearingRatio
     {
@@ -608,7 +613,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: RevolutionsPerSecond
+    /// FloatProperty: RevolutionsPerSecond<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float RevolutionsPerSecond
     {
@@ -728,7 +734,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: RadiationConeAngleDegrees
+    /// FloatProperty: RadiationConeAngleDegrees<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float RadiationConeAngleDegrees
     {
@@ -737,7 +744,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: AudioConeAngleDegrees
+    /// FloatProperty: AudioConeAngleDegrees<br/>
+    /// Default: 18
     /// </summary>
     public unsafe float AudioConeAngleDegrees
     {
@@ -755,7 +763,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: RumblePulseDuration
+    /// FloatProperty: RumblePulseDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RumblePulseDuration
     {
@@ -773,7 +782,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: SecondsToWinGame
+    /// FloatProperty: SecondsToWinGame<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SecondsToWinGame
     {
@@ -818,7 +828,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: SecondsToBootSystem
+    /// FloatProperty: SecondsToBootSystem<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SecondsToBootSystem
     {
@@ -827,7 +838,8 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
     }
 
     /// <summary>
-    /// FloatProperty: SecondsToBootEachTower
+    /// FloatProperty: SecondsToBootEachTower<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float SecondsToBootEachTower
     {

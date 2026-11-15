@@ -566,7 +566,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: OverlayMovieInstance
+    /// ObjectProperty: OverlayMovieInstance<br/>
+    /// Default: VideoSurveillanceDumb.Image
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie OverlayMovieInstance
     {
@@ -620,7 +621,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: VIDEO_MovieName
+    /// StrProperty: VIDEO_MovieName<br/>
+    /// Default: "BM3_FilmB4_JokerEntertainer_Door"
     /// </summary>
     public unsafe BmSDK.FString VIDEO_MovieName
     {
@@ -629,7 +631,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: TimestampOutputValue
+    /// FloatProperty: TimestampOutputValue<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TimestampOutputValue
     {
@@ -692,7 +695,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: UnzoomWhenFinished
+    /// BoolProperty: UnzoomWhenFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UnzoomWhenFinished
     {
@@ -701,7 +705,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: CurrentlyVisible
+    /// BoolProperty: CurrentlyVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CurrentlyVisible
     {
@@ -710,7 +715,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: HideVideoUntilIntroDone
+    /// BoolProperty: HideVideoUntilIntroDone<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HideVideoUntilIntroDone
     {
@@ -773,7 +779,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: PrevbIsUsingGamepad
+    /// BoolProperty: PrevbIsUsingGamepad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PrevbIsUsingGamepad
     {
@@ -818,7 +825,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SecondsPerRevolution
+    /// FloatProperty: SecondsPerRevolution<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SecondsPerRevolution
     {
@@ -827,7 +835,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaximumSpeed
+    /// FloatProperty: MaximumSpeed<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MaximumSpeed
     {
@@ -836,7 +845,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeedKBM
+    /// FloatProperty: MaxSpeedKBM<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxSpeedKBM
     {
@@ -845,7 +855,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: InputThreshold
+    /// FloatProperty: InputThreshold<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float InputThreshold
     {
@@ -854,7 +865,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: KBMScaleFactor
+    /// FloatProperty: KBMScaleFactor<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float KBMScaleFactor
     {
@@ -980,7 +992,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DistanceFromVideoActorOriginToDisplaySurface
+    /// FloatProperty: DistanceFromVideoActorOriginToDisplaySurface<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DistanceFromVideoActorOriginToDisplaySurface
     {
@@ -1094,7 +1107,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: CameraName1
+    /// StrProperty: CameraName1<br/>
+    /// Default: "CAM 1"
     /// </summary>
     public unsafe BmSDK.FString CameraName1
     {
@@ -1103,7 +1117,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: CameraName2
+    /// StrProperty: CameraName2<br/>
+    /// Default: "CAM 2"
     /// </summary>
     public unsafe BmSDK.FString CameraName2
     {
@@ -1112,7 +1127,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: CameraName3
+    /// StrProperty: CameraName3<br/>
+    /// Default: "CAM 3"
     /// </summary>
     public unsafe BmSDK.FString CameraName3
     {
@@ -1121,7 +1137,8 @@ public partial class RSeqAct_VideoForensics : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// StrProperty: CameraName4
+    /// StrProperty: CameraName4<br/>
+    /// Default: "CAM 4"
     /// </summary>
     public unsafe BmSDK.FString CameraName4
     {

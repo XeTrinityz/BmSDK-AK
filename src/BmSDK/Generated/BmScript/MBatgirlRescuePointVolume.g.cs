@@ -127,7 +127,8 @@ public partial class MBatgirlRescuePointVolume : BmSDK.BmGame.RRescuePointVolume
     }
 
     /// <summary>
-    /// BoolProperty: bDontPlayWaterSound
+    /// BoolProperty: bDontPlayWaterSound<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDontPlayWaterSound
     {

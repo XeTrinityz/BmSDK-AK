@@ -220,7 +220,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// IntProperty: Gear
+        /// IntProperty: Gear<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int Gear
         {
@@ -238,7 +239,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: Friction
+        /// FloatProperty: Friction<br/>
+        /// Default: 10
         /// </summary>
         public unsafe float Friction
         {
@@ -247,7 +249,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: Drag
+        /// FloatProperty: Drag<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Drag
         {
@@ -256,7 +259,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: DragNoLoad
+        /// FloatProperty: DragNoLoad<br/>
+        /// Default: 0.15
         /// </summary>
         public unsafe float DragNoLoad
         {
@@ -265,7 +269,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// IntProperty: NumForwardGears
+        /// IntProperty: NumForwardGears<br/>
+        /// Default: 3
         /// </summary>
         public unsafe int NumForwardGears
         {
@@ -274,7 +279,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: GearRatios
+        /// FloatProperty: GearRatios<br/>
+        /// Default: 3
         /// </summary>
         public unsafe float GearRatios_0
         {
@@ -282,7 +288,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 28); }; }
         }
         /// <summary>
-        /// FloatProperty: GearRatios
+        /// FloatProperty: GearRatios<br/>
+        /// Default: 1.5
         /// </summary>
         public unsafe float GearRatios_1
         {
@@ -290,7 +297,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 32); }; }
         }
         /// <summary>
-        /// FloatProperty: GearRatios
+        /// FloatProperty: GearRatios<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float GearRatios_2
         {
@@ -298,7 +306,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 36); }; }
         }
         /// <summary>
-        /// FloatProperty: GearRatios
+        /// FloatProperty: GearRatios<br/>
+        /// Default: 0.7
         /// </summary>
         public unsafe float GearRatios_3
         {
@@ -323,7 +332,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: DifferentialRatio
+        /// FloatProperty: DifferentialRatio<br/>
+        /// Default: 12
         /// </summary>
         public unsafe float DifferentialRatio
         {
@@ -332,7 +342,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMGearDown
+        /// FloatProperty: RPMGearDown<br/>
+        /// Default: 2500
         /// </summary>
         public unsafe float RPMGearDown
         {
@@ -341,7 +352,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMGearUp
+        /// FloatProperty: RPMGearUp<br/>
+        /// Default: 5000
         /// </summary>
         public unsafe float RPMGearUp
         {
@@ -350,7 +362,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: SlopeTorqueScale
+        /// FloatProperty: SlopeTorqueScale<br/>
+        /// Default: 1.3
         /// </summary>
         public unsafe float SlopeTorqueScale
         {
@@ -359,7 +372,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: BoostTorqueScale
+        /// FloatProperty: BoostTorqueScale<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float BoostTorqueScale
         {
@@ -368,7 +382,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: DonutBoostTorqueScale
+        /// FloatProperty: DonutBoostTorqueScale<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float DonutBoostTorqueScale
         {
@@ -377,7 +392,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: WheelspinBoostExtraTorque
+        /// FloatProperty: WheelspinBoostExtraTorque<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float WheelspinBoostExtraTorque
         {
@@ -386,7 +402,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMIdle
+        /// FloatProperty: RPMIdle<br/>
+        /// Default: 500
         /// </summary>
         public unsafe float RPMIdle
         {
@@ -395,7 +412,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: TorqueIdle
+        /// FloatProperty: TorqueIdle<br/>
+        /// Default: 12
         /// </summary>
         public unsafe float TorqueIdle
         {
@@ -404,7 +422,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMPeak
+        /// FloatProperty: RPMPeak<br/>
+        /// Default: 5500
         /// </summary>
         public unsafe float RPMPeak
         {
@@ -413,7 +432,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: TorquePeak
+        /// FloatProperty: TorquePeak<br/>
+        /// Default: 12
         /// </summary>
         public unsafe float TorquePeak
         {
@@ -422,7 +442,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMMax
+        /// FloatProperty: RPMMax<br/>
+        /// Default: 8500
         /// </summary>
         public unsafe float RPMMax
         {
@@ -431,7 +452,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: RPMWheelspin
+        /// FloatProperty: RPMWheelspin<br/>
+        /// Default: 6250
         /// </summary>
         public unsafe float RPMWheelspin
         {
@@ -440,7 +462,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: OutputGasIncSpeed
+        /// FloatProperty: OutputGasIncSpeed<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float OutputGasIncSpeed
         {
@@ -449,7 +472,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         }
 
         /// <summary>
-        /// FloatProperty: OutputGasDecSpeed
+        /// FloatProperty: OutputGasDecSpeed<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float OutputGasDecSpeed
         {
@@ -482,7 +506,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TurnOnSpotFrontTorqueFactor
+    /// FloatProperty: TurnOnSpotFrontTorqueFactor<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float TurnOnSpotFrontTorqueFactor
     {
@@ -491,7 +516,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TurnOnSpotRearTorqueFactor
+    /// FloatProperty: TurnOnSpotRearTorqueFactor<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float TurnOnSpotRearTorqueFactor
     {
@@ -518,7 +544,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: DesiredTurnOnSpotSpeed
+    /// FloatProperty: DesiredTurnOnSpotSpeed<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float DesiredTurnOnSpotSpeed
     {
@@ -725,7 +752,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BoostDuration
+    /// FloatProperty: BoostDuration<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float BoostDuration
     {
@@ -739,7 +767,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     public InlineArray<float> BoostCooldown => new(3, Ptr + 668, 4, this);
 
     /// <summary>
-    /// FloatProperty: BoostCooldown
+    /// FloatProperty: BoostCooldown<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float BoostCooldown_0
     {
@@ -747,7 +776,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 668); }
     }
     /// <summary>
-    /// FloatProperty: BoostCooldown
+    /// FloatProperty: BoostCooldown<br/>
+    /// Default: 9
     /// </summary>
     public unsafe float BoostCooldown_1
     {
@@ -755,7 +785,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 672); }
     }
     /// <summary>
-    /// FloatProperty: BoostCooldown
+    /// FloatProperty: BoostCooldown<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float BoostCooldown_2
     {
@@ -782,7 +813,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BoostDurationDonut
+    /// FloatProperty: BoostDurationDonut<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float BoostDurationDonut
     {
@@ -827,7 +859,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TurningModeMaxSpeed
+    /// FloatProperty: TurningModeMaxSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float TurningModeMaxSpeed
     {
@@ -845,7 +878,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeMaxSteering
+    /// FloatProperty: BattleModeMaxSteering<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float BattleModeMaxSteering
     {
@@ -854,7 +888,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeRearWheelTorquePower
+    /// FloatProperty: BattleModeRearWheelTorquePower<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BattleModeRearWheelTorquePower
     {
@@ -863,7 +898,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeLatSlipScale
+    /// FloatProperty: BattleModeLatSlipScale<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float BattleModeLatSlipScale
     {
@@ -872,7 +908,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeLongSlipScale
+    /// FloatProperty: BattleModeLongSlipScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float BattleModeLongSlipScale
     {
@@ -881,7 +918,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeEngineBrakingFactor
+    /// FloatProperty: BattleModeEngineBrakingFactor<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float BattleModeEngineBrakingFactor
     {
@@ -890,7 +928,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeTurnOnSpotTorqueFactor
+    /// FloatProperty: BattleModeTurnOnSpotTorqueFactor<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float BattleModeTurnOnSpotTorqueFactor
     {
@@ -917,7 +956,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeThrottleSpeed
+    /// FloatProperty: BattleModeThrottleSpeed<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BattleModeThrottleSpeed
     {
@@ -926,7 +966,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeMaxSpeed
+    /// FloatProperty: BattleModeMaxSpeed<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float BattleModeMaxSpeed
     {
@@ -935,7 +976,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeDriveForceFactor
+    /// FloatProperty: BattleModeDriveForceFactor<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float BattleModeDriveForceFactor
     {
@@ -944,7 +986,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeStopAndTurnAngleStationary
+    /// FloatProperty: BattleModeStopAndTurnAngleStationary<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float BattleModeStopAndTurnAngleStationary
     {
@@ -953,7 +996,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeStopAndTurnAngleMoving
+    /// FloatProperty: BattleModeStopAndTurnAngleMoving<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float BattleModeStopAndTurnAngleMoving
     {
@@ -962,7 +1006,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeSteerAngleFactor
+    /// FloatProperty: BattleModeSteerAngleFactor<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float BattleModeSteerAngleFactor
     {
@@ -1007,7 +1052,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BMFrontWheelMaxDroop
+    /// FloatProperty: BMFrontWheelMaxDroop<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float BMFrontWheelMaxDroop
     {
@@ -1016,7 +1062,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BMRearWheelMaxDroop
+    /// FloatProperty: BMRearWheelMaxDroop<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float BMRearWheelMaxDroop
     {
@@ -1025,7 +1072,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeTrailingSteerFactorTurnOnSpot
+    /// FloatProperty: BattleModeTrailingSteerFactorTurnOnSpot<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BattleModeTrailingSteerFactorTurnOnSpot
     {
@@ -1034,7 +1082,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeTrailingSteerFactorMoving
+    /// FloatProperty: BattleModeTrailingSteerFactorMoving<br/>
+    /// Default: -0.5
     /// </summary>
     public unsafe float BattleModeTrailingSteerFactorMoving
     {
@@ -1043,7 +1092,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeDrivingForceZOffset
+    /// FloatProperty: BattleModeDrivingForceZOffset<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float BattleModeDrivingForceZOffset
     {
@@ -1052,7 +1102,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CurrentBoostTimer
+    /// FloatProperty: CurrentBoostTimer<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentBoostTimer
     {
@@ -1106,7 +1157,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxPMSuspensionSpeed
+    /// FloatProperty: MaxPMSuspensionSpeed<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxPMSuspensionSpeed
     {
@@ -1115,7 +1167,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: PMFrontWheelMaxDroop
+    /// FloatProperty: PMFrontWheelMaxDroop<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float PMFrontWheelMaxDroop
     {
@@ -1124,7 +1177,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: PMRearWheelMaxDroop
+    /// FloatProperty: PMRearWheelMaxDroop<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float PMRearWheelMaxDroop
     {
@@ -1196,7 +1250,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeUprightTorqueFactor
+    /// FloatProperty: BattleModeUprightTorqueFactor<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float BattleModeUprightTorqueFactor
     {
@@ -1205,7 +1260,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeUprightMaxTorque
+    /// FloatProperty: BattleModeUprightMaxTorque<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float BattleModeUprightMaxTorque
     {
@@ -1226,7 +1282,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 900);
 
     /// <summary>
-    /// FloatProperty: TransformationTurnTorqueFactor
+    /// FloatProperty: TransformationTurnTorqueFactor<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float TransformationTurnTorqueFactor
     {
@@ -1235,7 +1292,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TransformationTurnDecelTorqueFactor
+    /// FloatProperty: TransformationTurnDecelTorqueFactor<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float TransformationTurnDecelTorqueFactor
     {
@@ -1244,7 +1302,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TransformationTurnOnSpotSpeed
+    /// FloatProperty: TransformationTurnOnSpotSpeed<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float TransformationTurnOnSpotSpeed
     {
@@ -1253,7 +1312,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: TransformationTurnFactor
+    /// FloatProperty: TransformationTurnFactor<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float TransformationTurnFactor
     {
@@ -1298,7 +1358,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// ByteProperty: DriveMode
+    /// ByteProperty: DriveMode<br/>
+    /// Default: BMDM_MAX
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleSimBatmobile.EBatmobileDriveMode DriveMode
     {
@@ -1334,7 +1395,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: FrontWheelSteerPct
+    /// FloatProperty: FrontWheelSteerPct<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FrontWheelSteerPct
     {
@@ -1352,7 +1414,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: HandBrakeOffTime
+    /// FloatProperty: HandBrakeOffTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float HandBrakeOffTime
     {
@@ -1361,7 +1424,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeSteerBiasRate
+    /// FloatProperty: BattleModeSteerBiasRate<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float BattleModeSteerBiasRate
     {
@@ -1418,7 +1482,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 996);
 
     /// <summary>
-    /// FloatProperty: SkidToPositionFactor
+    /// FloatProperty: SkidToPositionFactor<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float SkidToPositionFactor
     {
@@ -1427,7 +1492,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: SkidToPositionMax
+    /// FloatProperty: SkidToPositionMax<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float SkidToPositionMax
     {
@@ -1451,7 +1517,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1020);
 
     /// <summary>
-    /// FloatProperty: BatmobileMassRatio
+    /// FloatProperty: BatmobileMassRatio<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BatmobileMassRatio
     {
@@ -1487,7 +1554,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CinematicRevsSensitivity
+    /// FloatProperty: CinematicRevsSensitivity<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float CinematicRevsSensitivity
     {
@@ -1496,7 +1564,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CinematicRevsMax
+    /// FloatProperty: CinematicRevsMax<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float CinematicRevsMax
     {
@@ -1505,7 +1574,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CinematicRevsVelMax
+    /// FloatProperty: CinematicRevsVelMax<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float CinematicRevsVelMax
     {
@@ -1514,13 +1584,15 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: TransmissionModel
+    /// StructProperty: TransmissionModel<br/>
+    /// Default: (Gear=1,Friction=10,Drag=1,DragNoLoad=0.15,NumForwardGears=3,GearRatios=(3,1.5,1,0.7,0,0),DifferentialRatio=12,RPMGearDown=2500,RPMGearUp=5000,SlopeTorqueScale=1.3,BoostTorqueScale=2,DonutBoostTorqueS...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RVehicleSimBatmobile.FVehicleTransmission TransmissionModel
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RVehicleSimBatmobile.FVehicleTransmission>(Ptr + 1060);
 
     /// <summary>
-    /// FloatProperty: ScaleTopSpeed
+    /// FloatProperty: ScaleTopSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleTopSpeed
     {
@@ -1544,7 +1616,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1180);
 
     /// <summary>
-    /// FloatProperty: AirControlYawTorqueFactorMax
+    /// FloatProperty: AirControlYawTorqueFactorMax<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float AirControlYawTorqueFactorMax
     {
@@ -1553,7 +1626,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AirControlPitchTorqueFactorMax
+    /// FloatProperty: AirControlPitchTorqueFactorMax<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float AirControlPitchTorqueFactorMax
     {
@@ -1562,7 +1636,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AirControlYawTorqueFactorMin
+    /// FloatProperty: AirControlYawTorqueFactorMin<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float AirControlYawTorqueFactorMin
     {
@@ -1571,7 +1646,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AirControlPitchTorqueFactorMin
+    /// FloatProperty: AirControlPitchTorqueFactorMin<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float AirControlPitchTorqueFactorMin
     {
@@ -1580,7 +1656,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: AirControlInterpTime
+    /// FloatProperty: AirControlInterpTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float AirControlInterpTime
     {
@@ -1598,7 +1675,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeSlopeFactor
+    /// FloatProperty: BattleModeSlopeFactor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BattleModeSlopeFactor
     {

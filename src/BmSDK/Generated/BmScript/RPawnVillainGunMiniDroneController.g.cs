@@ -436,7 +436,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// NameProperty: nHandBoneToAttachControllerTo
+    /// NameProperty: nHandBoneToAttachControllerTo<br/>
+    /// Default: Gundummy
     /// </summary>
     public unsafe BmSDK.FName nHandBoneToAttachControllerTo
     {
@@ -445,7 +446,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// NameProperty: nBeltSocketToAttachControllerTo
+    /// NameProperty: nBeltSocketToAttachControllerTo<br/>
+    /// Default: MiniDroneControllerWhenUnequipped
     /// </summary>
     public unsafe BmSDK.FName nBeltSocketToAttachControllerTo
     {
@@ -454,7 +456,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: ControllerSkeletalMesh
+    /// ObjectProperty: ControllerSkeletalMesh<br/>
+    /// Default: Obj_Remote.Mesh.Remote_Controller
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh ControllerSkeletalMesh
     {
@@ -463,7 +466,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: ControllerPhysicsAsset
+    /// ObjectProperty: ControllerPhysicsAsset<br/>
+    /// Default: Obj_Remote.PhysicsAsset.Remote_Controller_Physics
     /// </summary>
     public unsafe BmSDK.Engine.PhysicsAsset ControllerPhysicsAsset
     {
@@ -472,7 +476,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: ControllerXrayMIC
+    /// ObjectProperty: ControllerXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant ControllerXrayMIC
     {
@@ -481,7 +486,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: ControllerDisruptedXrayMIC
+    /// ObjectProperty: ControllerDisruptedXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant ControllerDisruptedXrayMIC
     {
@@ -490,7 +496,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplosionVFX
+    /// ObjectProperty: JammedExplosionVFX<br/>
+    /// Default: FFX_Combat.Particles.Destroy.DND_Electrical_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JammedExplosionVFX
     {
@@ -499,7 +506,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplodeEvent
+    /// ObjectProperty: JammedExplodeEvent<br/>
+    /// Default: Ww_NPC_Electrocute.Play_NPC_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammedExplodeEvent
     {
@@ -508,7 +516,8 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     }
 
     /// <summary>
-    /// ObjectProperty: LightArchetype
+    /// ObjectProperty: LightArchetype<br/>
+    /// Default: Pawn_Archetypes.Lights.Drone_Remote_Control_Light_Spawnable
     /// </summary>
     public unsafe BmSDK.BmGame.RDeferred_SpotLight_Shadowed_Spawnable LightArchetype
     {

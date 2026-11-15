@@ -204,7 +204,8 @@ public partial class RStealthTakedownStage_GlideBoostTackle : BmSDK.BmGame.RStea
     }
 
     /// <summary>
-    /// FloatProperty: BowlingRadius
+    /// FloatProperty: BowlingRadius<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float BowlingRadius
     {
@@ -213,7 +214,8 @@ public partial class RStealthTakedownStage_GlideBoostTackle : BmSDK.BmGame.RStea
     }
 
     /// <summary>
-    /// FloatProperty: BowlingImpulse
+    /// FloatProperty: BowlingImpulse<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float BowlingImpulse
     {
@@ -222,7 +224,8 @@ public partial class RStealthTakedownStage_GlideBoostTackle : BmSDK.BmGame.RStea
     }
 
     /// <summary>
-    /// BoolProperty: DoGroundCorrection
+    /// BoolProperty: DoGroundCorrection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DoGroundCorrection
     {

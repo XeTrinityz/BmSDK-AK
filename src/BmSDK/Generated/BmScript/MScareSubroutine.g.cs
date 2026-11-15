@@ -137,7 +137,8 @@ public partial class MScareSubroutine : BmSDK.BmGame.MHackSubroutine, BmSDK.IGam
     }
 
     /// <summary>
-    /// ArrayProperty: HackReactDynamicLines
+    /// ArrayProperty: HackReactDynamicLines<br/>
+    /// Default: (DYNAMIC_DLC_BATGIRL.DynamicLines.DYNAMIC_Dlc_Bg_Extras_Jkth_Hacking_1,DYNAMIC_DLC_BATGIRL.DynamicLines.DYNAMIC_Dlc_Bg_Extras_Jkth_Hacking_2,DYNAMIC_DLC_BATGIRL.DynamicLines.DYNAMIC_Dlc_Bg_Extras_Jkth...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkDialogueLineDynamic> HackReactDynamicLines
     {

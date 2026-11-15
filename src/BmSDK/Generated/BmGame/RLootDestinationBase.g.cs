@@ -314,7 +314,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     public InlineArray<BmSDK.Engine.SpriteComponent> DropOffLocationSpriteComps => new(4, Ptr + 736, 8, this);
 
     /// <summary>
-    /// ComponentProperty: DropOffLocationSpriteComps
+    /// ComponentProperty: DropOffLocationSpriteComps<br/>
+    /// Default: BmGame.Default__RLootDestinationBase.Sprite0
     /// </summary>
     public unsafe BmSDK.Engine.SpriteComponent DropOffLocationSpriteComps_0
     {
@@ -322,7 +323,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 736); }
     }
     /// <summary>
-    /// ComponentProperty: DropOffLocationSpriteComps
+    /// ComponentProperty: DropOffLocationSpriteComps<br/>
+    /// Default: BmGame.Default__RLootDestinationBase.Sprite1
     /// </summary>
     public unsafe BmSDK.Engine.SpriteComponent DropOffLocationSpriteComps_1
     {
@@ -330,7 +332,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 744); }
     }
     /// <summary>
-    /// ComponentProperty: DropOffLocationSpriteComps
+    /// ComponentProperty: DropOffLocationSpriteComps<br/>
+    /// Default: BmGame.Default__RLootDestinationBase.Sprite2
     /// </summary>
     public unsafe BmSDK.Engine.SpriteComponent DropOffLocationSpriteComps_2
     {
@@ -338,7 +341,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 752); }
     }
     /// <summary>
-    /// ComponentProperty: DropOffLocationSpriteComps
+    /// ComponentProperty: DropOffLocationSpriteComps<br/>
+    /// Default: BmGame.Default__RLootDestinationBase.Sprite3
     /// </summary>
     public unsafe BmSDK.Engine.SpriteComponent DropOffLocationSpriteComps_3
     {
@@ -347,7 +351,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bDestinationEnabled
+    /// BoolProperty: bDestinationEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestinationEnabled
     {
@@ -374,7 +379,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bCanAutoSelect
+    /// BoolProperty: bCanAutoSelect<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanAutoSelect
     {
@@ -392,7 +398,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Priority
+    /// FloatProperty: Priority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Priority
     {
@@ -448,7 +455,8 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     }
 
     /// <summary>
-    /// IntProperty: numDropOffLocations
+    /// IntProperty: numDropOffLocations<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int numDropOffLocations
     {

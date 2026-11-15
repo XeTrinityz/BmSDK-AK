@@ -851,7 +851,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// ByteProperty: CurrentPhase
+    /// ByteProperty: CurrentPhase<br/>
+    /// Default: ETSP_NULLPhase
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleBehaviour_HeavyTankSearch.ETankSearchPhase CurrentPhase
     {
@@ -941,7 +942,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ScanAngle
+    /// FloatProperty: ScanAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float ScanAngle
     {
@@ -950,7 +952,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ScanPeriod
+    /// FloatProperty: ScanPeriod<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float ScanPeriod
     {
@@ -977,7 +980,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: LostPlayerTime
+    /// FloatProperty: LostPlayerTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float LostPlayerTime
     {
@@ -1004,7 +1008,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: SeenPlayerTimeToStopMoving
+    /// FloatProperty: SeenPlayerTimeToStopMoving<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float SeenPlayerTimeToStopMoving
     {
@@ -1076,7 +1081,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 692);
 
     /// <summary>
-    /// FloatProperty: FullThrottleRange
+    /// FloatProperty: FullThrottleRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FullThrottleRange
     {
@@ -1085,7 +1091,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ChaseMinRange
+    /// FloatProperty: ChaseMinRange<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float ChaseMinRange
     {
@@ -1094,7 +1101,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: MinStopAndTurnTime
+    /// FloatProperty: MinStopAndTurnTime<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MinStopAndTurnTime
     {
@@ -1103,7 +1111,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: MaxStopAndTurnTime
+    /// FloatProperty: MaxStopAndTurnTime<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float MaxStopAndTurnTime
     {
@@ -1121,7 +1130,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ScanWarningTime
+    /// FloatProperty: ScanWarningTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ScanWarningTime
     {
@@ -1130,7 +1140,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ScanRoundPeriod
+    /// FloatProperty: ScanRoundPeriod<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float ScanRoundPeriod
     {
@@ -1139,7 +1150,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: PlayerRangeRestricition
+    /// FloatProperty: PlayerRangeRestricition<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float PlayerRangeRestricition
     {
@@ -1148,7 +1160,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: NoiseAlertRange
+    /// FloatProperty: NoiseAlertRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float NoiseAlertRange
     {
@@ -1157,7 +1170,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: DamageAlertRange
+    /// FloatProperty: DamageAlertRange<br/>
+    /// Default: 50000
     /// </summary>
     public unsafe float DamageAlertRange
     {
@@ -1199,7 +1213,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: ReportInterval
+    /// FloatProperty: ReportInterval<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float ReportInterval
     {
@@ -1208,7 +1223,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: FutureLandCheckTime
+    /// FloatProperty: FutureLandCheckTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FutureLandCheckTime
     {
@@ -1217,7 +1233,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: MaxVelocityDiff
+    /// FloatProperty: MaxVelocityDiff<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxVelocityDiff
     {
@@ -1226,7 +1243,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: MaxPositionDiff
+    /// FloatProperty: MaxPositionDiff<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float MaxPositionDiff
     {
@@ -1235,7 +1253,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// FloatProperty: PatrolSpeedScale
+    /// FloatProperty: PatrolSpeedScale<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PatrolSpeedScale
     {
@@ -1271,13 +1290,15 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
     }
 
     /// <summary>
-    /// StructProperty: ChaseRestrictions
+    /// StructProperty: ChaseRestrictions<br/>
+    /// Default: (AllowArmouredRoads=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction ChaseRestrictions
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction>(Ptr + 812);
 
     /// <summary>
-    /// FloatProperty: ChasePlanPeriod
+    /// FloatProperty: ChasePlanPeriod<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float ChasePlanPeriod
     {

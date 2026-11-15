@@ -1427,7 +1427,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: MyIndex
+        /// IntProperty: MyIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int MyIndex
         {
@@ -1816,7 +1817,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Poll_Delay
+    /// FloatProperty: Poll_Delay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Poll_Delay
     {
@@ -1843,7 +1845,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Poll_ChallengeLeaderboardIdToCheck
+    /// IntProperty: Poll_ChallengeLeaderboardIdToCheck<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int Poll_ChallengeLeaderboardIdToCheck
     {
@@ -1861,7 +1864,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Poll_NextIndexToCheck
+    /// IntProperty: Poll_NextIndexToCheck<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int Poll_NextIndexToCheck
     {

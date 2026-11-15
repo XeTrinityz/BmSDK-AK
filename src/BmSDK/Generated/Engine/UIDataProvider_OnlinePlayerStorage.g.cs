@@ -329,7 +329,8 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     }
 
     /// <summary>
-    /// NameProperty: ProviderName
+    /// NameProperty: ProviderName<br/>
+    /// Default: PlayerStorageData
     /// </summary>
     public unsafe BmSDK.FName ProviderName
     {

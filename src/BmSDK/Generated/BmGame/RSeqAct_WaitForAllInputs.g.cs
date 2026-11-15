@@ -79,7 +79,8 @@ public partial class RSeqAct_WaitForAllInputs : BmSDK.Engine.SequenceAction, BmS
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: InputCount
+    /// IntProperty: InputCount<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int InputCount
     {
@@ -88,7 +89,8 @@ public partial class RSeqAct_WaitForAllInputs : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bTriggerOutputIfSkipped
+    /// BoolProperty: bTriggerOutputIfSkipped<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTriggerOutputIfSkipped
     {
@@ -106,7 +108,8 @@ public partial class RSeqAct_WaitForAllInputs : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: InputsActivated
+    /// ArrayProperty: InputsActivated<br/>
+    /// Default: (false,false)
     /// </summary>
     public unsafe BmSDK.TArray<bool> InputsActivated
     {

@@ -103,7 +103,8 @@ public partial class RWaypointTraversalTrailNode : BmSDK.BmGame.RDummyTarget, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OverrideSpeedTo
+    /// FloatProperty: OverrideSpeedTo<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideSpeedTo
     {
@@ -112,7 +113,8 @@ public partial class RWaypointTraversalTrailNode : BmSDK.BmGame.RDummyTarget, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OverrideMinimumDistanceToBatman
+    /// FloatProperty: OverrideMinimumDistanceToBatman<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideMinimumDistanceToBatman
     {
@@ -121,7 +123,8 @@ public partial class RWaypointTraversalTrailNode : BmSDK.BmGame.RDummyTarget, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OverrideMaximumDistanceToBatman
+    /// FloatProperty: OverrideMaximumDistanceToBatman<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideMaximumDistanceToBatman
     {
@@ -130,7 +133,8 @@ public partial class RWaypointTraversalTrailNode : BmSDK.BmGame.RDummyTarget, Bm
     }
 
     /// <summary>
-    /// FloatProperty: PauseHereUntilProximity
+    /// FloatProperty: PauseHereUntilProximity<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PauseHereUntilProximity
     {

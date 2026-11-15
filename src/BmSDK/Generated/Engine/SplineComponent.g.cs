@@ -201,13 +201,15 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: SplineColor
+    /// StructProperty: SplineColor<br/>
+    /// Default: (B=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor SplineColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 564);
 
     /// <summary>
-    /// FloatProperty: SplineDrawRes
+    /// FloatProperty: SplineDrawRes<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float SplineDrawRes
     {
@@ -216,7 +218,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: SplineArrowSize
+    /// FloatProperty: SplineArrowSize<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float SplineArrowSize
     {

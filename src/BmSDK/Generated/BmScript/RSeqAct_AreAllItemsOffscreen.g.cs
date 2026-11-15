@@ -149,7 +149,8 @@ public partial class RSeqAct_AreAllItemsOffscreen : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// FloatProperty: FovCheckValue
+    /// FloatProperty: FovCheckValue<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FovCheckValue
     {

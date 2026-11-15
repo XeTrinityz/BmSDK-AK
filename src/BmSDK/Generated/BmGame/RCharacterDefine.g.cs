@@ -121,7 +121,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: TriggerAtValue
+        /// FloatProperty: TriggerAtValue<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float TriggerAtValue
         {
@@ -139,7 +140,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Ratio
+        /// FloatProperty: Ratio<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Ratio
         {
@@ -202,7 +204,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bIsPlaceholder
+        /// BoolProperty: bIsPlaceholder<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bIsPlaceholder
         {
@@ -801,7 +804,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AudioContactWalkWet
+    /// ObjectProperty: AudioContactWalkWet<br/>
+    /// Default: ww_chr_footsteps_wet.Play_NPC_Walk_Water_Splash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioContactWalkWet
     {
@@ -810,7 +814,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AudioContactRunWet
+    /// ObjectProperty: AudioContactRunWet<br/>
+    /// Default: ww_chr_footsteps_wet.Play_NPC_Walk_Water_Splash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioContactRunWet
     {
@@ -828,7 +833,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bXraySkeletonIsPlaceholder
+    /// BoolProperty: bXraySkeletonIsPlaceholder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bXraySkeletonIsPlaceholder
     {
@@ -837,7 +843,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bXrayGutsIsPlaceholder
+    /// BoolProperty: bXrayGutsIsPlaceholder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bXrayGutsIsPlaceholder
     {
@@ -936,7 +943,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bPredThugHasHeadsetByDefault
+    /// BoolProperty: bPredThugHasHeadsetByDefault<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPredThugHasHeadsetByDefault
     {
@@ -954,7 +962,8 @@ public partial class RCharacterDefine : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowProceduralBreathing
+    /// BoolProperty: AllowProceduralBreathing<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowProceduralBreathing
     {

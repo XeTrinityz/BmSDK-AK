@@ -154,7 +154,8 @@ public partial class RCrowdSequence_SimplePath : BmSDK.BmGame.RCrowdSequence, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AttractionStrength
+    /// FloatProperty: AttractionStrength<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float AttractionStrength
     {
@@ -163,7 +164,8 @@ public partial class RCrowdSequence_SimplePath : BmSDK.BmGame.RCrowdSequence, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AttractionRadius
+    /// FloatProperty: AttractionRadius<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float AttractionRadius
     {

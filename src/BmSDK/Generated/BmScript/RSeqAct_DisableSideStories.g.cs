@@ -93,7 +93,8 @@ public partial class RSeqAct_DisableSideStories : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bFullyDisablePlayerMapSelection
+    /// BoolProperty: bFullyDisablePlayerMapSelection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFullyDisablePlayerMapSelection
     {
@@ -111,7 +112,8 @@ public partial class RSeqAct_DisableSideStories : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bAllowSideStoryLevelsToUnload
+    /// BoolProperty: bAllowSideStoryLevelsToUnload<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowSideStoryLevelsToUnload
     {

@@ -79,7 +79,8 @@ public partial class AmbientPlus3DirectionalLightComponent : BmSDK.Engine.LightC
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bRenderBeforeModShadows
+    /// BoolProperty: bRenderBeforeModShadows<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRenderBeforeModShadows
     {

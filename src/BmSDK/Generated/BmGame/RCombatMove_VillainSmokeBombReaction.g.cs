@@ -308,7 +308,8 @@ public partial class RCombatMove_VillainSmokeBombReaction : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// StructProperty: LastHitDmgInfo
+    /// StructProperty: LastHitDmgInfo<br/>
+    /// Default: (DamageAmount=-1,DamageType=BmGame.RDamageType,bCanBeBlocked=true,bCanForceIntoCombat=true,TransitionDurationScale=1,HitReactionClass=BmGame.RBMBehaviour_HitReaction)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnCombat.FDamageInfo LastHitDmgInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnCombat.FDamageInfo>(Ptr + 828);

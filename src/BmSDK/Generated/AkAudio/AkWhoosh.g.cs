@@ -163,7 +163,8 @@ public partial class AkWhoosh : BmSDK.Engine.AkActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -178,7 +179,8 @@ public partial class AkWhoosh : BmSDK.Engine.AkActor, BmSDK.IGameObject
     public partial record struct FWhooshBy
     {
         /// <summary>
-        /// BoolProperty: IsVehicle
+        /// BoolProperty: IsVehicle<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool IsVehicle
         {

@@ -247,7 +247,8 @@ public partial class RSeqAct_ShowLevelIntroText : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: HoldTextOnScreenTime
+    /// FloatProperty: HoldTextOnScreenTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float HoldTextOnScreenTime
     {

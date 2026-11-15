@@ -695,7 +695,8 @@ public partial class RCombatMove_BatmanComboTakedown : BmSDK.BmGame.RCombatMove_
     }
 
     /// <summary>
-    /// StructProperty: TakedownInfo
+    /// StructProperty: TakedownInfo<br/>
+    /// Default: (takedownType=TDT_Unarmed,bActive=true,bCanBeMirrored=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FTakedownInfo TakedownInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FTakedownInfo>(Ptr + 872);
@@ -866,7 +867,8 @@ public partial class RCombatMove_BatmanComboTakedown : BmSDK.BmGame.RCombatMove_
     }
 
     /// <summary>
-    /// IntProperty: OverrideDamageAmount
+    /// IntProperty: OverrideDamageAmount<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideDamageAmount
     {

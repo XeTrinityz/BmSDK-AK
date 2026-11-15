@@ -79,7 +79,8 @@ public partial class ApexShapeSphere : BmSDK.Engine.ApexShape, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: Shape
+    /// ComponentProperty: Shape<br/>
+    /// Default: Engine.Default__ApexShapeSphere.DrawSphere0
     /// </summary>
     public unsafe BmSDK.Engine.DrawSphereComponent Shape
     {

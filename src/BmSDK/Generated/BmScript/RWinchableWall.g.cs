@@ -259,7 +259,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompWall
+    /// ComponentProperty: MeshCompWall<br/>
+    /// Default: BmScript.Default__RWinchableWall.MeshCompWall0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompWall
     {
@@ -268,7 +269,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompHook
+    /// ComponentProperty: MeshCompHook<br/>
+    /// Default: BmScript.Default__RWinchableWall.MeshCompHook0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompHook
     {
@@ -277,7 +279,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompBroken
+    /// ComponentProperty: MeshCompBroken<br/>
+    /// Default: BmScript.Default__RWinchableWall.MeshCompBroken0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompBroken
     {
@@ -286,7 +289,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ComponentProperty: MeshCompHookBroken
+    /// ComponentProperty: MeshCompHookBroken<br/>
+    /// Default: BmScript.Default__RWinchableWall.MeshCompHookBroken0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MeshCompHookBroken
     {
@@ -295,7 +299,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// NameProperty: BreakAnimName
+    /// NameProperty: BreakAnimName<br/>
+    /// Default: Winch_Wall_New_Destruction
     /// </summary>
     public unsafe BmSDK.FName BreakAnimName
     {
@@ -313,7 +318,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: BreakForce
+    /// FloatProperty: BreakForce<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float BreakForce
     {
@@ -322,7 +328,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: BreakForceOffset
+    /// FloatProperty: BreakForceOffset<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float BreakForceOffset
     {
@@ -331,7 +338,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: BreakForceRadius
+    /// FloatProperty: BreakForceRadius<br/>
+    /// Default: 15000
     /// </summary>
     public unsafe float BreakForceRadius
     {
@@ -340,7 +348,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// ObjectProperty: ChunkSmashEffect
+    /// ObjectProperty: ChunkSmashEffect<br/>
+    /// Default: VFX_FractureMaterials.Particles.CRUMBLE.Concrete_SlowImpact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem ChunkSmashEffect
     {
@@ -403,7 +412,8 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmG
     }
 
     /// <summary>
-    /// FloatProperty: ChunkMinLifetime
+    /// FloatProperty: ChunkMinLifetime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ChunkMinLifetime
     {

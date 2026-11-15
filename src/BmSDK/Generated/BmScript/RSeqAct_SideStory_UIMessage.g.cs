@@ -151,7 +151,8 @@ public partial class RSeqAct_SideStory_UIMessage : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// ByteProperty: IconType
+    /// ByteProperty: IconType<br/>
+    /// Default: OI_ObjectiveCustomIconName
     /// </summary>
     public unsafe BmSDK.BmGame.RGFxMovieModularHud.ObjIcon IconType
     {
@@ -160,7 +161,8 @@ public partial class RSeqAct_SideStory_UIMessage : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// FloatProperty: ShowTimeSeconds
+    /// FloatProperty: ShowTimeSeconds<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ShowTimeSeconds
     {

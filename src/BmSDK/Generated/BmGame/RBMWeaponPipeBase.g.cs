@@ -167,7 +167,8 @@ public partial class RBMWeaponPipeBase : BmSDK.BmGame.RBMWeaponMelee, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig
+    /// ObjectProperty: PoseConfig<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Combat_Pipe
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig
     {
@@ -176,7 +177,8 @@ public partial class RBMWeaponPipeBase : BmSDK.BmGame.RBMWeaponMelee, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: PoseConfig_CombatPose
+    /// ObjectProperty: PoseConfig_CombatPose<br/>
+    /// Default: AI_Anim_Config.PoseConfig_AI_Combat_Pipe_CombatPose
     /// </summary>
     public unsafe BmSDK.BmGame.RPoseConfig PoseConfig_CombatPose
     {

@@ -198,7 +198,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bLockHorizontalPosition
+    /// BoolProperty: bLockHorizontalPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLockHorizontalPosition
     {
@@ -207,7 +208,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bLockYawRotation
+    /// BoolProperty: bLockYawRotation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLockYawRotation
     {
@@ -294,7 +296,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AngularForceFromWavesScale
+    /// FloatProperty: AngularForceFromWavesScale<br/>
+    /// Default: 90
     /// </summary>
     public unsafe float AngularForceFromWavesScale
     {
@@ -303,7 +306,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngularForceFromWaves
+    /// FloatProperty: MaxAngularForceFromWaves<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxAngularForceFromWaves
     {
@@ -312,7 +316,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: BuoyancyForceScale
+    /// FloatProperty: BuoyancyForceScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float BuoyancyForceScale
     {
@@ -321,7 +326,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: VerticalLinearDamping
+    /// FloatProperty: VerticalLinearDamping<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float VerticalLinearDamping
     {
@@ -330,7 +336,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalLinearDamping
+    /// FloatProperty: HorizontalLinearDamping<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float HorizontalLinearDamping
     {
@@ -339,7 +346,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: AngularDamping
+    /// FloatProperty: AngularDamping<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AngularDamping
     {
@@ -348,7 +356,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: YawAngularDamping
+    /// FloatProperty: YawAngularDamping<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float YawAngularDamping
     {

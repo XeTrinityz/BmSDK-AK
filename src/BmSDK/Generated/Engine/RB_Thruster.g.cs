@@ -103,7 +103,8 @@ public partial class RB_Thruster : BmSDK.Engine.RigidBodyBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThrustStrength
+    /// FloatProperty: ThrustStrength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ThrustStrength
     {

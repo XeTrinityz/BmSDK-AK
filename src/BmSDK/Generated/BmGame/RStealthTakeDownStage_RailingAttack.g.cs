@@ -235,7 +235,8 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     }
 
     /// <summary>
-    /// BoolProperty: bAttachRopeToFeet
+    /// BoolProperty: bAttachRopeToFeet<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAttachRopeToFeet
     {
@@ -262,7 +263,8 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     }
 
     /// <summary>
-    /// NameProperty: RopeBoneAttachName
+    /// NameProperty: RopeBoneAttachName<br/>
+    /// Default: Bip01_Pelvis
     /// </summary>
     public unsafe BmSDK.FName RopeBoneAttachName
     {
@@ -271,7 +273,8 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     }
 
     /// <summary>
-    /// FloatProperty: RopeAttachConnectionDistance
+    /// FloatProperty: RopeAttachConnectionDistance<br/>
+    /// Default: 105
     /// </summary>
     public unsafe float RopeAttachConnectionDistance
     {
@@ -286,7 +289,8 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1708);
 
     /// <summary>
-    /// ArrayProperty: RopeExtraAttachConnections
+    /// ArrayProperty: RopeExtraAttachConnections<br/>
+    /// Default: ((RopeExtraAttachBoneName=Bip01_L_Calf,RopeExtraAttachBonePos=(X=50,Y=12)),(RopeExtraAttachBoneName=Bip01_R_Calf,RopeExtraAttachBonePos=(X=50,Y=-12)))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RRopeComponent.FRopeExtraAttachConnection> RopeExtraAttachConnections
     {
@@ -301,7 +305,8 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1736);
 
     /// <summary>
-    /// StructProperty: RopePhysStartOffset
+    /// StructProperty: RopePhysStartOffset<br/>
+    /// Default: (X=-7)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RopePhysStartOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1748);

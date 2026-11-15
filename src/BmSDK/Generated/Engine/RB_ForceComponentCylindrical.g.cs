@@ -93,7 +93,8 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponentCylinder
+    /// ComponentProperty: RenderComponentCylinder<br/>
+    /// Default: Engine.Default__RB_ForceComponentCylindrical.RenderComponent0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponentCylinder
     {
@@ -138,7 +139,8 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     }
 
     /// <summary>
-    /// FloatProperty: EscapeVelocity
+    /// FloatProperty: EscapeVelocity<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float EscapeVelocity
     {
@@ -147,7 +149,8 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {
@@ -156,7 +159,8 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     }
 
     /// <summary>
-    /// FloatProperty: ForceTopRadius
+    /// FloatProperty: ForceTopRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceTopRadius
     {
@@ -165,7 +169,8 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     }
 
     /// <summary>
-    /// FloatProperty: ForceHeight
+    /// FloatProperty: ForceHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceHeight
     {

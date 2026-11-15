@@ -85,7 +85,8 @@ public partial class RRope2SimpleSphereChainPhysicsUpdater : BmSDK.BmGame.RRope2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RRope2SimpleSphereChainPhysicsUpdater.FRRope2SimpleSphereChainPhysicsUpdaterInitData>(Ptr + 240);
 
     /// <summary>
-    /// FloatProperty: DesiredNodeLength
+    /// FloatProperty: DesiredNodeLength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DesiredNodeLength
     {
@@ -94,7 +95,8 @@ public partial class RRope2SimpleSphereChainPhysicsUpdater : BmSDK.BmGame.RRope2
     }
 
     /// <summary>
-    /// FloatProperty: MinRopePhysWidth
+    /// FloatProperty: MinRopePhysWidth<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinRopePhysWidth
     {
@@ -103,7 +105,8 @@ public partial class RRope2SimpleSphereChainPhysicsUpdater : BmSDK.BmGame.RRope2
     }
 
     /// <summary>
-    /// IntProperty: MaxNumNodesInRope
+    /// IntProperty: MaxNumNodesInRope<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int MaxNumNodesInRope
     {

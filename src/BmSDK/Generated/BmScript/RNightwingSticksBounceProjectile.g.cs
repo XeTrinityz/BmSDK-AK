@@ -238,7 +238,8 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1296);
 
     /// <summary>
-    /// FloatProperty: CatchAnimDelay
+    /// FloatProperty: CatchAnimDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float CatchAnimDelay
     {
@@ -247,7 +248,8 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: ReturnSpeed
+    /// FloatProperty: ReturnSpeed<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float ReturnSpeed
     {
@@ -256,7 +258,8 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     }
 
     /// <summary>
-    /// FloatProperty: ReturnArcScale
+    /// FloatProperty: ReturnArcScale<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float ReturnArcScale
     {

@@ -108,7 +108,8 @@ public partial class RSeqAct_TriggerLightning : BmSDK.Engine.SequenceAction, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 360);
 
     /// <summary>
-    /// FloatProperty: LightningIntensity
+    /// FloatProperty: LightningIntensity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightningIntensity
     {

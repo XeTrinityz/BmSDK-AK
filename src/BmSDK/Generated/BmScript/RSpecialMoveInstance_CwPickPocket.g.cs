@@ -198,7 +198,8 @@ public partial class RSpecialMoveInstance_CwPickPocket : BmSDK.BmGame.RSpecialMo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 1012);
 
     /// <summary>
-    /// NameProperty: SecurityCardSocket
+    /// NameProperty: SecurityCardSocket<br/>
+    /// Default: Gundummy
     /// </summary>
     public unsafe BmSDK.FName SecurityCardSocket
     {

@@ -336,7 +336,8 @@ public partial class RSpecialMoveInstance_HarpoonBase : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ComponentProperty: HandJoinRope
+    /// ComponentProperty: HandJoinRope<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_HarpoonBase.RopeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent HandJoinRope
     {
@@ -345,7 +346,8 @@ public partial class RSpecialMoveInstance_HarpoonBase : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// ComponentProperty: BatClawRope
+    /// ComponentProperty: BatClawRope<br/>
+    /// Default: BmGame.Default__RSpecialMoveInstance_HarpoonBase.RopeComponent1
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent BatClawRope
     {

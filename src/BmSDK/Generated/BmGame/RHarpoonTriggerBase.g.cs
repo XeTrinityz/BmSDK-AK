@@ -179,7 +179,8 @@ public partial class RHarpoonTriggerBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: HarpoonTargetOffset
+    /// StructProperty: HarpoonTargetOffset<br/>
+    /// Default: (X=64,Z=64)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 HarpoonTargetOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 668);

@@ -188,7 +188,8 @@ public partial class RVehicleBehaviour_DroneHackerSuicide : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: TurretSpazCoolDownMin
+    /// FloatProperty: TurretSpazCoolDownMin<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TurretSpazCoolDownMin
     {
@@ -197,7 +198,8 @@ public partial class RVehicleBehaviour_DroneHackerSuicide : BmSDK.BmGame.RVehicl
     }
 
     /// <summary>
-    /// FloatProperty: TurretSpazCoolDownMax
+    /// FloatProperty: TurretSpazCoolDownMax<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TurretSpazCoolDownMax
     {

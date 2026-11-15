@@ -629,7 +629,8 @@ public partial class InterpTrackMove : BmSDK.Engine.InterpTrack, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bShowTranslationOnCurveEd
+    /// BoolProperty: bShowTranslationOnCurveEd<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowTranslationOnCurveEd
     {
@@ -656,7 +657,8 @@ public partial class InterpTrackMove : BmSDK.Engine.InterpTrack, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: MoveFrame
+    /// ByteProperty: MoveFrame<br/>
+    /// Default: IMF_RelativeToOriginActor
     /// </summary>
     public unsafe BmSDK.Engine.InterpTrackMove.EInterpTrackMoveFrame MoveFrame
     {

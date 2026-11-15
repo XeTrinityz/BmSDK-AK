@@ -465,7 +465,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: LeftArmMesh
+    /// ComponentProperty: LeftArmMesh<br/>
+    /// Default: BmScript.Default__RVehicleWalker.LeftArmMesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent LeftArmMesh
     {
@@ -474,7 +475,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: RightArmMesh
+    /// ComponentProperty: RightArmMesh<br/>
+    /// Default: BmScript.Default__RVehicleWalker.RightArmMesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RightArmMesh
     {
@@ -483,7 +485,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: LeftArmDamaged
+    /// ObjectProperty: LeftArmDamaged<br/>
+    /// Default: Red_Hood_Robot_Mech.Robot_Mech_Left_Missile_Damaged
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh LeftArmDamaged
     {
@@ -492,7 +495,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: RightArmDamaged
+    /// ObjectProperty: RightArmDamaged<br/>
+    /// Default: Red_Hood_Robot_Mech.Robot_Mech_Right_Missile_Damaged
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh RightArmDamaged
     {
@@ -519,7 +523,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoSimultaneousAttack
+    /// BoolProperty: bCanDoSimultaneousAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoSimultaneousAttack
     {
@@ -528,7 +533,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: NumRockets
+    /// IntProperty: NumRockets<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int NumRockets
     {
@@ -546,7 +552,8 @@ public partial class RVehicleWalker : BmSDK.BmGame.RVehicleWalkerBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DelayBetweenRockets
+    /// FloatProperty: DelayBetweenRockets<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float DelayBetweenRockets
     {

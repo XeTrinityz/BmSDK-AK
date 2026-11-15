@@ -108,7 +108,8 @@ public partial class RRiddlerBatmobileChallenge_FloorRoller : BmSDK.BmScript.RRi
     }
 
     /// <summary>
-    /// ComponentProperty: RollerMesh
+    /// ComponentProperty: RollerMesh<br/>
+    /// Default: BmScript.Default__RRiddlerBatmobileChallenge_FloorRoller.SkelMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent RollerMesh
     {
@@ -117,7 +118,8 @@ public partial class RRiddlerBatmobileChallenge_FloorRoller : BmSDK.BmScript.RRi
     }
 
     /// <summary>
-    /// NameProperty: SpinningAnimationName
+    /// NameProperty: SpinningAnimationName<br/>
+    /// Default: NR_FloorRoller_Tunnel
     /// </summary>
     public unsafe BmSDK.FName SpinningAnimationName
     {
@@ -126,7 +128,8 @@ public partial class RRiddlerBatmobileChallenge_FloorRoller : BmSDK.BmScript.RRi
     }
 
     /// <summary>
-    /// ComponentProperty: HolderStaticMesh
+    /// ComponentProperty: HolderStaticMesh<br/>
+    /// Default: BmScript.Default__RRiddlerBatmobileChallenge_FloorRoller.HolderStatMesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent HolderStaticMesh
     {

@@ -320,7 +320,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ObjectProperty: RunVariantAnimSet
+    /// ObjectProperty: RunVariantAnimSet<br/>
+    /// Default: Anim_IC_Streets_Navigation.Thug.TG_Runs
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RunVariantAnimSet
     {
@@ -329,7 +330,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ObjectProperty: FleeRunVariantAnimSet
+    /// ObjectProperty: FleeRunVariantAnimSet<br/>
+    /// Default: Anim_IC_Streets_Navigation.Thug.TG_Run_Scared
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet FleeRunVariantAnimSet
     {
@@ -338,7 +340,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ObjectProperty: walkVariantAnimSet
+    /// ObjectProperty: walkVariantAnimSet<br/>
+    /// Default: Anim_IC_Streets_Navigation.Thug.TG_Walk_Aggressive
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet walkVariantAnimSet
     {
@@ -365,7 +368,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ObjectProperty: PushOffAnimSet
+    /// ObjectProperty: PushOffAnimSet<br/>
+    /// Default: Anim_Thug.Code.TG_Street_PushOff
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PushOffAnimSet
     {
@@ -374,7 +378,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ObjectProperty: OverShootAnimSet
+    /// ObjectProperty: OverShootAnimSet<br/>
+    /// Default: Anim_IC_Streets_Navigation.Thug.TG_Overshoot
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet OverShootAnimSet
     {
@@ -383,7 +388,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: VariantFleeNames
+    /// ArrayProperty: VariantFleeNames<br/>
+    /// Default: (Scared_Run_Overlay_01,Scared_Run_Overlay_02,Scared_Run_Overlay_03,Scared_Run_Overlay_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> VariantFleeNames
     {
@@ -392,7 +398,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: VariantRunNames
+    /// ArrayProperty: VariantRunNames<br/>
+    /// Default: (Run_Loot_Variant_03,Run_Loot_Variant_02,Run_Loot_Variant_05,Run_Loot_Variant_01,Run_Loot_Variant_06,Run_Loot_Variant_07)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> VariantRunNames
     {
@@ -401,7 +408,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: VariantRunFlareNames
+    /// ArrayProperty: VariantRunFlareNames<br/>
+    /// Default: (Run_Flare_Variant_01,Run_Flare_Variant_02)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> VariantRunFlareNames
     {
@@ -410,7 +418,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceForRunVariant
+    /// FloatProperty: MinDistanceForRunVariant<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float MinDistanceForRunVariant
     {
@@ -419,7 +428,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceForRunFlareVariant
+    /// FloatProperty: MinDistanceForRunFlareVariant<br/>
+    /// Default: 1400
     /// </summary>
     public unsafe float MinDistanceForRunFlareVariant
     {
@@ -428,7 +438,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfFlare
+    /// FloatProperty: ChanceOfFlare<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ChanceOfFlare
     {
@@ -446,7 +457,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenRunVariants
+    /// FloatProperty: TimeBetweenRunVariants<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TimeBetweenRunVariants
     {
@@ -545,7 +557,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTraversal
+    /// BoolProperty: bAllowTraversal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTraversal
     {
@@ -554,7 +567,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: VariantWalkNames
+    /// ArrayProperty: VariantWalkNames<br/>
+    /// Default: (Walk_Aggressive_02,Walk_Aggressive_03,Walk_Aggressive_04,Walk_Aggressive_05,Walk_Aggressive_06,Walk_Aggressive_07,Walk_Aggressive_08,Walk_Aggressive_09)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> VariantWalkNames
     {
@@ -584,7 +598,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Left9090CornerNames
+    /// ArrayProperty: Left9090CornerNames<br/>
+    /// Default: (Run_Corner_Hug_Right_01,Run_Corner_Sharp_Right_01,Run_Corner_Wait_Right_01)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Left9090CornerNames
     {
@@ -593,7 +608,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Right9090CornerNames
+    /// ArrayProperty: Right9090CornerNames<br/>
+    /// Default: (Run_Corner_Hug_Left_01,Run_Corner_Sharp_Left_01,Run_Corner_Wait_Left_01)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Right9090CornerNames
     {
@@ -602,7 +618,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Left4590CornerNames
+    /// ArrayProperty: Left4590CornerNames<br/>
+    /// Default: (Run_Corner_Left_In45_Out90)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Left4590CornerNames
     {
@@ -611,7 +628,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Right4590CornerNames
+    /// ArrayProperty: Right4590CornerNames<br/>
+    /// Default: (Run_Corner_Right_In45_Out90)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Right4590CornerNames
     {
@@ -620,7 +638,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Left9045CornerNames
+    /// ArrayProperty: Left9045CornerNames<br/>
+    /// Default: (Run_Corner_Left_In90_Out45)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Left9045CornerNames
     {
@@ -629,7 +648,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Right9045CornerNames
+    /// ArrayProperty: Right9045CornerNames<br/>
+    /// Default: (Run_Corner_Right_In90_Out45)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Right9045CornerNames
     {
@@ -638,7 +658,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Left4545CornerNames
+    /// ArrayProperty: Left4545CornerNames<br/>
+    /// Default: (Run_Corner_Left_In45_Out45)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Left4545CornerNames
     {
@@ -647,7 +668,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: Right4545CornerNames
+    /// ArrayProperty: Right4545CornerNames<br/>
+    /// Default: (Run_Corner_Right_In45_Out45)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> Right4545CornerNames
     {
@@ -680,7 +702,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: BackPushOffs
+    /// ArrayProperty: BackPushOffs<br/>
+    /// Default: (Pushoff_Back_01,Pushoff_Back_02,Pushoff_Back_03,Pushoff_Back_04,Pushoff_Back_05)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BackPushOffs
     {
@@ -689,7 +712,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: LeftPushOffs
+    /// ArrayProperty: LeftPushOffs<br/>
+    /// Default: (Pushoff_Left_01,Pushoff_Left_02)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> LeftPushOffs
     {
@@ -698,7 +722,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: RightPushOffs
+    /// ArrayProperty: RightPushOffs<br/>
+    /// Default: (Pushoff_Right_01,Pushoff_Right_02,Pushoff_Right_03)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> RightPushOffs
     {
@@ -707,7 +732,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: FrontPushOffs
+    /// ArrayProperty: FrontPushOffs<br/>
+    /// Default: (Pushoff_Front_01,Pushoff_Front_02,Pushoff_Front_03)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FrontPushOffs
     {
@@ -716,7 +742,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// ArrayProperty: OverShoots
+    /// ArrayProperty: OverShoots<br/>
+    /// Default: (Overshoot_01,Overshoot_02)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OverShoots
     {
@@ -746,7 +773,8 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
     }
 
     /// <summary>
-    /// FloatProperty: DistForChatter
+    /// FloatProperty: DistForChatter<br/>
+    /// Default: 1400
     /// </summary>
     public unsafe float DistForChatter
     {

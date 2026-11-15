@@ -93,7 +93,8 @@ public partial class RSeqAct_SmashablePropChange : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// ByteProperty: PropChangeType
+    /// ByteProperty: PropChangeType<br/>
+    /// Default: SMASHABLEPROPCHANGE_TurnStaticOnStationary
     /// </summary>
     public unsafe BmSDK.BmGame.RSeqAct_SmashablePropChange.ESmashablePropChangeType PropChangeType
     {

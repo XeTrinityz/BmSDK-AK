@@ -183,7 +183,8 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: TrackingActorShouldBeVisibleOnStart
+    /// BoolProperty: TrackingActorShouldBeVisibleOnStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TrackingActorShouldBeVisibleOnStart
     {
@@ -210,7 +211,8 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: AmountOfTimeActorShouldBeInvisibleBeforeStopping
+    /// FloatProperty: AmountOfTimeActorShouldBeInvisibleBeforeStopping<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AmountOfTimeActorShouldBeInvisibleBeforeStopping
     {
@@ -219,7 +221,8 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: TimeToTrackWhilstInvis
+    /// FloatProperty: TimeToTrackWhilstInvis<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeToTrackWhilstInvis
     {

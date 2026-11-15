@@ -1628,7 +1628,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: StartCarAlarmEvent
+    /// ObjectProperty: StartCarAlarmEvent<br/>
+    /// Default: Ww_VEH_VehicleAlarms.Play_VEH_Alarm
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent StartCarAlarmEvent
     {
@@ -1637,7 +1638,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: Suppression
+    /// ObjectProperty: Suppression<br/>
+    /// Default: AudibleSetups.Facts.SD_ManyTanks
     /// </summary>
     public unsafe BmSDK.Engine.AkPredicate Suppression
     {
@@ -1709,7 +1711,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ObjectProperty: VehicleCustomisation
+    /// ObjectProperty: VehicleCustomisation<br/>
+    /// Default: BmGame.Default__RAbandonedVehicle.VCO
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleCustomisation VehicleCustomisation
     {
@@ -1745,7 +1748,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: MolotovCarFire
+    /// ComponentProperty: MolotovCarFire<br/>
+    /// Default: BmGame.Default__RAbandonedVehicle.CarFire
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MolotovCarFire
     {
@@ -1754,7 +1758,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmGame.Default__RAbandonedVehicle.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -1772,7 +1777,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ComponentProperty: VisualDamageComp
+    /// ComponentProperty: VisualDamageComp<br/>
+    /// Default: BmGame.Default__RAbandonedVehicle.VisDmgComp
     /// </summary>
     public unsafe BmSDK.BmGame.RVisualDamageComponent VisualDamageComp
     {
@@ -1922,7 +1928,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: CopyMaterialsOnDeath
+    /// BoolProperty: CopyMaterialsOnDeath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CopyMaterialsOnDeath
     {
@@ -1949,7 +1956,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bCanRegisterObstacle
+    /// BoolProperty: bCanRegisterObstacle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanRegisterObstacle
     {
@@ -2084,7 +2092,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: CarAlarmSwitchedOn
+    /// BoolProperty: CarAlarmSwitchedOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CarAlarmSwitchedOn
     {
@@ -2093,7 +2102,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: HasCarAlarm
+    /// BoolProperty: HasCarAlarm<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasCarAlarm
     {
@@ -2111,7 +2121,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: TankLightsSwitchedOn
+    /// BoolProperty: TankLightsSwitchedOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TankLightsSwitchedOn
     {
@@ -2219,7 +2230,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bPreCutFromNavMesh
+    /// BoolProperty: bPreCutFromNavMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPreCutFromNavMesh
     {
@@ -2318,7 +2330,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DeathJumpImpulse
+    /// FloatProperty: DeathJumpImpulse<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float DeathJumpImpulse
     {
@@ -2327,7 +2340,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DeathExplodeDelay
+    /// FloatProperty: DeathExplodeDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float DeathExplodeDelay
     {
@@ -2336,7 +2350,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DeathImpulse
+    /// FloatProperty: DeathImpulse<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float DeathImpulse
     {
@@ -2345,7 +2360,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DeathImpulseRadius
+    /// FloatProperty: DeathImpulseRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DeathImpulseRadius
     {
@@ -2354,7 +2370,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: ExplosionScreenShake
+    /// StructProperty: ExplosionScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ExplosionScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1936);
@@ -2369,7 +2386,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CrushThreshold
+    /// FloatProperty: CrushThreshold<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CrushThreshold
     {
@@ -2378,7 +2396,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: CrushThresholdZ
+    /// FloatProperty: CrushThresholdZ<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float CrushThresholdZ
     {
@@ -2387,19 +2406,22 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: CachedLightMat1234
+    /// StructProperty: CachedLightMat1234<br/>
+    /// Default: (R=-1,G=-1,B=-1,A=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor CachedLightMat1234
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2116);
 
     /// <summary>
-    /// StructProperty: CachedLightMat5678
+    /// StructProperty: CachedLightMat5678<br/>
+    /// Default: (R=-1,G=-1,B=-1,A=-1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor CachedLightMat5678
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 2132);
 
     /// <summary>
-    /// ByteProperty: CachedTankLightsOn
+    /// ByteProperty: CachedTankLightsOn<br/>
+    /// Default: 255
     /// </summary>
     public unsafe byte CachedTankLightsOn
     {
@@ -2408,7 +2430,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_SideCheckDist_Min
+    /// FloatProperty: PawnCollision_SideCheckDist_Min<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float PawnCollision_SideCheckDist_Min
     {
@@ -2417,7 +2440,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_SideCheckDist_Max
+    /// FloatProperty: PawnCollision_SideCheckDist_Max<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float PawnCollision_SideCheckDist_Max
     {
@@ -2426,7 +2450,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_CosCheck_Front
+    /// FloatProperty: PawnCollision_CosCheck_Front<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float PawnCollision_CosCheck_Front
     {
@@ -2435,7 +2460,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_CosCheck_Side
+    /// FloatProperty: PawnCollision_CosCheck_Side<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PawnCollision_CosCheck_Side
     {
@@ -2444,7 +2470,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_SpeedMultiplier
+    /// FloatProperty: PawnCollision_LookAhead_SpeedMultiplier<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PawnCollision_LookAhead_SpeedMultiplier
     {
@@ -2453,7 +2480,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_BaseDist
+    /// FloatProperty: PawnCollision_LookAhead_BaseDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float PawnCollision_LookAhead_BaseDist
     {
@@ -2462,7 +2490,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_LookAhead_Min
+    /// FloatProperty: PawnCollision_LookAhead_Min<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float PawnCollision_LookAhead_Min
     {
@@ -2471,7 +2500,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PawnCollision_BackAdjustment
+    /// FloatProperty: PawnCollision_BackAdjustment<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float PawnCollision_BackAdjustment
     {
@@ -2498,7 +2528,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LastXrayUpdateTime
+    /// FloatProperty: LastXrayUpdateTime<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LastXrayUpdateTime
     {
@@ -2549,7 +2580,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2264);
 
     /// <summary>
-    /// FloatProperty: MassScale
+    /// FloatProperty: MassScale<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float MassScale
     {
@@ -2612,7 +2644,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// NameProperty: WindscreenCrackParamName
+    /// NameProperty: WindscreenCrackParamName<br/>
+    /// Default: Exposed
     /// </summary>
     public unsafe BmSDK.FName WindscreenCrackParamName
     {
@@ -2621,7 +2654,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: WindowsMaterialIndex
+    /// IntProperty: WindowsMaterialIndex<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int WindowsMaterialIndex
     {
@@ -2657,7 +2691,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: BurnValuePerSec
+    /// FloatProperty: BurnValuePerSec<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BurnValuePerSec
     {
@@ -2666,7 +2701,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: MolotovBurnPoints
+    /// ArrayProperty: MolotovBurnPoints<br/>
+    /// Default: ((),(X=150))
     /// </summary>
     public unsafe BmSDK.TArray<System.Numerics.Vector3> MolotovBurnPoints
     {
@@ -2675,7 +2711,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: MolotovIntialBurn
+    /// ArrayProperty: MolotovIntialBurn<br/>
+    /// Default: ((Y=0.3),())
     /// </summary>
     public unsafe BmSDK.TArray<System.Numerics.Vector3> MolotovIntialBurn
     {
@@ -2720,7 +2757,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// NameProperty: RainParameterName
+    /// NameProperty: RainParameterName<br/>
+    /// Default: Batman_Rain_Direction
     /// </summary>
     public unsafe BmSDK.FName RainParameterName
     {
@@ -2735,7 +2773,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2416);
 
     /// <summary>
-    /// IntProperty: Health
+    /// IntProperty: Health<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int Health
     {
@@ -2786,7 +2825,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: ImpactDamageSpeedThreshold
+    /// FloatProperty: ImpactDamageSpeedThreshold<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ImpactDamageSpeedThreshold
     {
@@ -2816,7 +2856,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshShapeHeightOffset
+    /// FloatProperty: NavMeshShapeHeightOffset<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float NavMeshShapeHeightOffset
     {
@@ -2825,7 +2866,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: NavMeshShapeHeight
+    /// FloatProperty: NavMeshShapeHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float NavMeshShapeHeight
     {
@@ -2834,7 +2876,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DynamicNavMeshShapeHeightOffset
+    /// FloatProperty: DynamicNavMeshShapeHeightOffset<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DynamicNavMeshShapeHeightOffset
     {

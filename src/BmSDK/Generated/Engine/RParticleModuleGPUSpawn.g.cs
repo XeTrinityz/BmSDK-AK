@@ -97,7 +97,8 @@ public partial class RParticleModuleGPUSpawn : BmSDK.Engine.RParticleModuleGPURe
     }
 
     /// <summary>
-    /// FloatProperty: SpeedModulation
+    /// FloatProperty: SpeedModulation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpeedModulation
     {

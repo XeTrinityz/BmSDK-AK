@@ -190,7 +190,8 @@ public partial class RHotWireBox : BmSDK.BmGame.RHotWireBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// NameProperty: RewireAnimation
+    /// NameProperty: RewireAnimation<br/>
+    /// Default: Hotwire
     /// </summary>
     public unsafe BmSDK.FName RewireAnimation
     {
@@ -199,7 +200,8 @@ public partial class RHotWireBox : BmSDK.BmGame.RHotWireBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: BatmanSpecialMove
+    /// ObjectProperty: BatmanSpecialMove<br/>
+    /// Default: Batman_Environment_Moves.HotwireBox
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig BatmanSpecialMove
     {
@@ -208,7 +210,8 @@ public partial class RHotWireBox : BmSDK.BmGame.RHotWireBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RHotWireBox.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -217,7 +220,8 @@ public partial class RHotWireBox : BmSDK.BmGame.RHotWireBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ComponentProperty: RewireEffect
+    /// ComponentProperty: RewireEffect<br/>
+    /// Default: BmScript.Default__RHotWireBox.RewireEffect0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent RewireEffect
     {
@@ -226,7 +230,8 @@ public partial class RHotWireBox : BmSDK.BmGame.RHotWireBoxBase, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillStartPfx
+    /// FloatProperty: TimeTillStartPfx<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float TimeTillStartPfx
     {

@@ -88,7 +88,8 @@ public partial class SeqAct_FeatureTest : BmSDK.Engine.SeqAct_Log, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ScreenShotDelay
+    /// FloatProperty: ScreenShotDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScreenShotDelay
     {

@@ -126,7 +126,8 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 680);
 
     /// <summary>
-    /// FloatProperty: OverrideMinDistanceFromBatman
+    /// FloatProperty: OverrideMinDistanceFromBatman<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideMinDistanceFromBatman
     {
@@ -135,7 +136,8 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: OverrideMaxDistanceFromBatman
+    /// FloatProperty: OverrideMaxDistanceFromBatman<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideMaxDistanceFromBatman
     {
@@ -144,7 +146,8 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: OverrideWalkingSpeed
+    /// FloatProperty: OverrideWalkingSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideWalkingSpeed
     {
@@ -153,7 +156,8 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: OverrideSprintingSpeed
+    /// FloatProperty: OverrideSprintingSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideSprintingSpeed
     {
@@ -162,7 +166,8 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: WaitAtThisWaypointUntilBatmanThisClose
+    /// FloatProperty: WaitAtThisWaypointUntilBatmanThisClose<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float WaitAtThisWaypointUntilBatmanThisClose
     {

@@ -298,7 +298,8 @@ public partial class RCombatMove_CatwomanGroupTrip : BmSDK.BmGame.RCombatMove_Pl
     }
 
     /// <summary>
-    /// FloatProperty: MaxTripAngle
+    /// FloatProperty: MaxTripAngle<br/>
+    /// Default: 97000
     /// </summary>
     public unsafe float MaxTripAngle
     {
@@ -316,7 +317,8 @@ public partial class RCombatMove_CatwomanGroupTrip : BmSDK.BmGame.RCombatMove_Pl
     }
 
     /// <summary>
-    /// FloatProperty: TotalTripTime
+    /// FloatProperty: TotalTripTime<br/>
+    /// Default: 0.6
     /// </summary>
     public unsafe float TotalTripTime
     {
@@ -325,7 +327,8 @@ public partial class RCombatMove_CatwomanGroupTrip : BmSDK.BmGame.RCombatMove_Pl
     }
 
     /// <summary>
-    /// FloatProperty: MaxTripRadius
+    /// FloatProperty: MaxTripRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MaxTripRadius
     {

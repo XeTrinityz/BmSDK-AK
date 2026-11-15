@@ -327,7 +327,8 @@ public partial class RFreezeGrenadeCommonProjectile : BmSDK.BmGame.RGadgetProjec
     }
 
     /// <summary>
-    /// ObjectProperty: WaterIsTooTurbulentForAnIceRaftThought
+    /// ObjectProperty: WaterIsTooTurbulentForAnIceRaftThought<br/>
+    /// Default: Char_Batman_Gadgets_Fg_Water_Too_Turbulent.AutoRand.Char_Batman_Gadgets_Fg_Water_Too_Turbulent_AUTORAND_00
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueSpeech WaterIsTooTurbulentForAnIceRaftThought
     {

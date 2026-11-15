@@ -516,7 +516,8 @@ public partial class RSeqAct_RiddlerMechFight : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bFirstTime
+    /// BoolProperty: bFirstTime<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFirstTime
     {

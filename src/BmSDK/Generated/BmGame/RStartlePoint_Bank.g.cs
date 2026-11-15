@@ -332,7 +332,8 @@ public partial class RStartlePoint_Bank : BmSDK.BmGame.RStartlePoint, BmSDK.IGam
     }
 
     /// <summary>
-    /// StrProperty: sRHDScreenTitle
+    /// StrProperty: sRHDScreenTitle<br/>
+    /// Default: "$GFxUI.RHD.CacheGate"
     /// </summary>
     public unsafe BmSDK.FString sRHDScreenTitle
     {
@@ -341,7 +342,8 @@ public partial class RStartlePoint_Bank : BmSDK.BmGame.RStartlePoint, BmSDK.IGam
     }
 
     /// <summary>
-    /// StrProperty: sRHDScreenText
+    /// StrProperty: sRHDScreenText<br/>
+    /// Default: "$GFxUI.RHD.CacheClose"
     /// </summary>
     public unsafe BmSDK.FString sRHDScreenText
     {

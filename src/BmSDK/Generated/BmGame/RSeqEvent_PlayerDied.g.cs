@@ -79,7 +79,8 @@ public partial class RSeqEvent_PlayerDied : BmSDK.Engine.SequenceEvent, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: RelevantPlayerIndex
+    /// IntProperty: RelevantPlayerIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int RelevantPlayerIndex
     {

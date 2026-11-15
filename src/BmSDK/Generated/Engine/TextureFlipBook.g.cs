@@ -245,7 +245,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bLooping
+    /// BoolProperty: bLooping<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLooping
     {
@@ -254,7 +255,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoPlay
+    /// BoolProperty: bAutoPlay<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoPlay
     {
@@ -263,7 +265,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HorizontalImages
+    /// IntProperty: HorizontalImages<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int HorizontalImages
     {
@@ -272,7 +275,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: VerticalImages
+    /// IntProperty: VerticalImages<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int VerticalImages
     {
@@ -290,7 +294,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FrameRate
+    /// FloatProperty: FrameRate<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float FrameRate
     {
@@ -299,7 +304,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FrameTime
+    /// FloatProperty: FrameTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float FrameTime
     {

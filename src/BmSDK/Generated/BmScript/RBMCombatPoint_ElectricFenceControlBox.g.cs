@@ -161,7 +161,8 @@ public partial class RBMCombatPoint_ElectricFenceControlBox : BmSDK.BmGame.RBMCo
     }
 
     /// <summary>
-    /// ComponentProperty: ControlBoxMesh
+    /// ComponentProperty: ControlBoxMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFenceControlBox.NewControlBoxMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent ControlBoxMesh
     {
@@ -170,7 +171,8 @@ public partial class RBMCombatPoint_ElectricFenceControlBox : BmSDK.BmGame.RBMCo
     }
 
     /// <summary>
-    /// ComponentProperty: DamagedControlBoxMesh
+    /// ComponentProperty: DamagedControlBoxMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_ElectricFenceControlBox.NewDamagedControlBoxMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent DamagedControlBoxMesh
     {

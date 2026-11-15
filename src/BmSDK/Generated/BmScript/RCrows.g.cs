@@ -474,7 +474,8 @@ public partial class RCrows : BmSDK.BmGame.RCrowsBase, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 880);
 
     /// <summary>
-    /// FloatProperty: startledTurnRate
+    /// FloatProperty: startledTurnRate<br/>
+    /// Default: 720
     /// </summary>
     public unsafe float startledTurnRate
     {
@@ -483,7 +484,8 @@ public partial class RCrows : BmSDK.BmGame.RCrowsBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: baseFlightVelocity
+    /// StructProperty: baseFlightVelocity<br/>
+    /// Default: (Y=800,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 baseFlightVelocity
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 896);

@@ -79,7 +79,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxZeroingThreshold
+    /// FloatProperty: MaxZeroingThreshold<br/>
+    /// Default: 2e-04
     /// </summary>
     public unsafe float MaxZeroingThreshold
     {
@@ -88,7 +89,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: MaxPosDiffBitwise
+    /// FloatProperty: MaxPosDiffBitwise<br/>
+    /// Default: 0.007
     /// </summary>
     public unsafe float MaxPosDiffBitwise
     {
@@ -97,7 +99,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngleDiffBitwise
+    /// FloatProperty: MaxAngleDiffBitwise<br/>
+    /// Default: 0.002
     /// </summary>
     public unsafe float MaxAngleDiffBitwise
     {
@@ -106,7 +109,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// ArrayProperty: AllowedRotationFormats
+    /// ArrayProperty: AllowedRotationFormats<br/>
+    /// Default: (ACF_Identity,ACF_Fixed48NoW)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSequence.AnimationCompressionFormat> AllowedRotationFormats
     {
@@ -115,7 +119,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// ArrayProperty: AllowedTranslationFormats
+    /// ArrayProperty: AllowedTranslationFormats<br/>
+    /// Default: (ACF_Identity,ACF_IntervalFixed32NoW,ACF_Fixed48NoW)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AnimSequence.AnimationCompressionFormat> AllowedTranslationFormats
     {
@@ -160,7 +165,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: ResampledFramerate
+    /// FloatProperty: ResampledFramerate<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float ResampledFramerate
     {
@@ -169,7 +175,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// IntProperty: MinKeysForResampling
+    /// IntProperty: MinKeysForResampling<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MinKeysForResampling
     {
@@ -178,7 +185,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// IntProperty: TrackHeightBias
+    /// IntProperty: TrackHeightBias<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TrackHeightBias
     {
@@ -187,7 +195,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: ParentingDivisor
+    /// FloatProperty: ParentingDivisor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ParentingDivisor
     {
@@ -196,7 +205,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: ParentingDivisorExponent
+    /// FloatProperty: ParentingDivisorExponent<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ParentingDivisorExponent
     {
@@ -205,7 +215,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: RotationErrorSourceRatio
+    /// FloatProperty: RotationErrorSourceRatio<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float RotationErrorSourceRatio
     {
@@ -214,7 +225,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: TranslationErrorSourceRatio
+    /// FloatProperty: TranslationErrorSourceRatio<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float TranslationErrorSourceRatio
     {
@@ -223,7 +235,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: MaxErrorPerTrackRatio
+    /// FloatProperty: MaxErrorPerTrackRatio<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MaxErrorPerTrackRatio
     {
@@ -232,7 +245,8 @@ public partial class AnimationCompressionAlgorithm_PerTrackCompression : BmSDK.E
     }
 
     /// <summary>
-    /// FloatProperty: PerturbationProbeSize
+    /// FloatProperty: PerturbationProbeSize<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float PerturbationProbeSize
     {

@@ -167,7 +167,8 @@ public partial class RBMCombatDestructibleDamageProxy : BmSDK.Engine.Actor, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: DamageCylinder
+    /// ComponentProperty: DamageCylinder<br/>
+    /// Default: BmGame.Default__RBMCombatDestructibleDamageProxy.NewDamageCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent DamageCylinder
     {

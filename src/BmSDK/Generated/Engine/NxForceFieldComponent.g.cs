@@ -140,7 +140,8 @@ public partial class NxForceFieldComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bForceActive
+    /// BoolProperty: bForceActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceActive
     {
@@ -149,7 +150,8 @@ public partial class NxForceFieldComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bDestroyWhenInactive
+    /// BoolProperty: bDestroyWhenInactive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestroyWhenInactive
     {
@@ -167,7 +169,8 @@ public partial class NxForceFieldComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 580);

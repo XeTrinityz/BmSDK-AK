@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_KickJokerIntoGurney : BmSDK.BmGame.RSpec
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: PunchAnimName
+    /// NameProperty: PunchAnimName<br/>
+    /// Default: Super_Stirke
     /// </summary>
     public unsafe BmSDK.FName PunchAnimName
     {

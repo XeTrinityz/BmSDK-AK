@@ -79,7 +79,8 @@ public partial class ParticleModuleSubUV : BmSDK.Engine.ParticleModuleSubUVBase,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SubImageIndex
+    /// StructProperty: SubImageIndex<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleSubUV.DistributionSubImage)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SubImageIndex
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);

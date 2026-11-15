@@ -269,7 +269,8 @@ public partial class RBMAIAction_TerrifiedSearchMove : BmSDK.BmGame.RBMAIAction_
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenTurns
+    /// FloatProperty: TimeBetweenTurns<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeBetweenTurns
     {

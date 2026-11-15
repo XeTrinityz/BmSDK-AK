@@ -111,7 +111,8 @@ public partial class RJokerCombatSpawnPoint : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// ArrayProperty: FenceJumpAnimNames
+    /// ArrayProperty: FenceJumpAnimNames<br/>
+    /// Default: (ClimbOver_384_Fence)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FenceJumpAnimNames
     {

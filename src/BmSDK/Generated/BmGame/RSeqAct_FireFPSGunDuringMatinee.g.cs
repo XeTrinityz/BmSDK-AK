@@ -116,7 +116,8 @@ public partial class RSeqAct_FireFPSGunDuringMatinee : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// IntProperty: NumShotsToTriggerOutput
+    /// IntProperty: NumShotsToTriggerOutput<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int NumShotsToTriggerOutput
     {

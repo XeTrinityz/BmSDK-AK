@@ -93,7 +93,8 @@ public partial class HttpRequestWindowsMcp : BmSDK.WinDrv.HttpRequestWindows, Bm
     }
 
     /// <summary>
-    /// StrProperty: AppID
+    /// StrProperty: AppID<br/>
+    /// Default: "ib2"
     /// </summary>
     public unsafe BmSDK.FString AppID
     {
@@ -102,7 +103,8 @@ public partial class HttpRequestWindowsMcp : BmSDK.WinDrv.HttpRequestWindows, Bm
     }
 
     /// <summary>
-    /// StrProperty: AppSecret
+    /// StrProperty: AppSecret<br/>
+    /// Default: "bd3f341b_94b8_4e03_9a97_fdbf6b404b3c"
     /// </summary>
     public unsafe BmSDK.FString AppSecret
     {

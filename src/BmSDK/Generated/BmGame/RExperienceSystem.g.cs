@@ -732,7 +732,8 @@ public partial class RExperienceSystem : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: XPValue
+    /// ArrayProperty: XPValue<br/>
+    /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,50,25,75,75,0,75,100,75,200,150,100,150,150,150,200,500,150,50,75,100,25,25,500,500,500,500,250,100,0,200,200,200,200,200,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,...
     /// </summary>
     public unsafe BmSDK.TArray<float> XPValue
     {
@@ -741,7 +742,8 @@ public partial class RExperienceSystem : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: XPCurve
+    /// ArrayProperty: XPCurve<br/>
+    /// Default: (2000,3000,4000,5000,6000,7000,8000,9000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000)
     /// </summary>
     public unsafe BmSDK.TArray<float> XPCurve
     {
@@ -840,7 +842,8 @@ public partial class RExperienceSystem : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimePerSummaryEntry
+    /// FloatProperty: TimePerSummaryEntry<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float TimePerSummaryEntry
     {

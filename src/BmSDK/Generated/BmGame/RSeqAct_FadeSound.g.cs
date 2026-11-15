@@ -122,7 +122,8 @@ public partial class RSeqAct_FadeSound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: FadeInTime
+    /// FloatProperty: FadeInTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeInTime
     {
@@ -131,7 +132,8 @@ public partial class RSeqAct_FadeSound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutTime
+    /// FloatProperty: FadeOutTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeOutTime
     {

@@ -1118,7 +1118,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: Range
+    /// FloatProperty: Range<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float Range
     {
@@ -1127,7 +1128,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRange
+    /// FloatProperty: AbseilRange<br/>
+    /// Default: 6500
     /// </summary>
     public unsafe float AbseilRange
     {
@@ -1136,7 +1138,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: WinchPullSpeed
+    /// FloatProperty: WinchPullSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float WinchPullSpeed
     {
@@ -1145,7 +1148,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: TargetingCone
+    /// FloatProperty: TargetingCone<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TargetingCone
     {
@@ -1154,7 +1158,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AbseilTargetingCone
+    /// FloatProperty: AbseilTargetingCone<br/>
+    /// Default: 80
     /// </summary>
     public unsafe float AbseilTargetingCone
     {
@@ -1394,7 +1399,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: WinchTensionParam
+    /// ObjectProperty: WinchTensionParam<br/>
+    /// Default: Ww_Parameters.BML_Winch
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName WinchTensionParam
     {
@@ -1403,7 +1409,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: TensionParam
+    /// ObjectProperty: TensionParam<br/>
+    /// Default: Ww_Parameters.BML_WinchTension
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName TensionParam
     {
@@ -1430,7 +1437,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: RevRumble
+    /// ObjectProperty: RevRumble<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.RevRumble0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform RevRumble
     {
@@ -1439,7 +1447,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ObjectProperty: FireRumble
+    /// ObjectProperty: FireRumble<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.FireRumble0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform FireRumble
     {
@@ -1484,7 +1493,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: StubRope
+    /// ComponentProperty: StubRope<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.RopeComponent1
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent StubRope
     {
@@ -1493,7 +1503,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: ProjectileRope
+    /// ComponentProperty: ProjectileRope<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.RopeComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RSimpleRopeComponent ProjectileRope
     {
@@ -1502,7 +1513,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: BeamElectricityComp
+    /// ComponentProperty: BeamElectricityComp<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.BeamElectricityComp0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BeamElectricityComp
     {
@@ -1511,7 +1523,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: FireElectricityComp
+    /// ComponentProperty: FireElectricityComp<br/>
+    /// Default: BmGame.Default__RBatmobileWinch.FireElectricityComp0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FireElectricityComp
     {
@@ -1595,7 +1608,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: FireScreenShake
+    /// StructProperty: FireScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct FireScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 2684);
@@ -1610,7 +1624,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeMinLength
+    /// FloatProperty: AbseilRopeMinLength<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AbseilRopeMinLength
     {
@@ -1619,7 +1634,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeMaxLength
+    /// FloatProperty: AbseilRopeMaxLength<br/>
+    /// Default: 9000
     /// </summary>
     public unsafe float AbseilRopeMaxLength
     {
@@ -1628,7 +1644,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: AbseilRopeReleaseLength
+    /// FloatProperty: AbseilRopeReleaseLength<br/>
+    /// Default: 8500
     /// </summary>
     public unsafe float AbseilRopeReleaseLength
     {
@@ -1691,7 +1708,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ElectrifyRevsSensitivity
+    /// FloatProperty: ElectrifyRevsSensitivity<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ElectrifyRevsSensitivity
     {
@@ -1700,7 +1718,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ElectrifyRevsMax
+    /// FloatProperty: ElectrifyRevsMax<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float ElectrifyRevsMax
     {
@@ -1709,7 +1728,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: ElectrifyRevsVelMax
+    /// FloatProperty: ElectrifyRevsVelMax<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float ElectrifyRevsVelMax
     {

@@ -151,7 +151,8 @@ public partial class RSpecialMoveConfig_CwClawClimbEnd : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeEndMovementStance
+    /// NameProperty: ClimbLedgeEndMovementStance<br/>
+    /// Default: Running
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeEndMovementStance
     {
@@ -160,7 +161,8 @@ public partial class RSpecialMoveConfig_CwClawClimbEnd : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: ClimbRailingEndMovementStance
+    /// NameProperty: ClimbRailingEndMovementStance<br/>
+    /// Default: Running
     /// </summary>
     public unsafe BmSDK.FName ClimbRailingEndMovementStance
     {
@@ -169,7 +171,8 @@ public partial class RSpecialMoveConfig_CwClawClimbEnd : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: ClimbLedgeEndControllerState
+    /// NameProperty: ClimbLedgeEndControllerState<br/>
+    /// Default: RunningMode
     /// </summary>
     public unsafe BmSDK.FName ClimbLedgeEndControllerState
     {
@@ -178,7 +181,8 @@ public partial class RSpecialMoveConfig_CwClawClimbEnd : BmSDK.BmGame.RSpecialMo
     }
 
     /// <summary>
-    /// NameProperty: ClimbRailingEndControllerState
+    /// NameProperty: ClimbRailingEndControllerState<br/>
+    /// Default: RunningMode
     /// </summary>
     public unsafe BmSDK.FName ClimbRailingEndControllerState
     {

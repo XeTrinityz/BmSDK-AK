@@ -305,7 +305,8 @@ public partial class RSeqAct_GFxMovieComputerMinigame_ManBat : BmSDK.BmScript.RS
     }
 
     /// <summary>
-    /// ObjectProperty: AllTheSoundsPlayedFromTimeLine
+    /// ObjectProperty: AllTheSoundsPlayedFromTimeLine<br/>
+    /// Default: Ww_UI_Manbat_Computer.UI_Manbat_Computer
     /// </summary>
     public unsafe BmSDK.Engine.AkBank AllTheSoundsPlayedFromTimeLine
     {

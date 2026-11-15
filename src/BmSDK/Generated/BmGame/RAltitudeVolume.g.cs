@@ -112,7 +112,8 @@ public partial class RAltitudeVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxGlidePitchAtTop
+    /// IntProperty: MaxGlidePitchAtTop<br/>
+    /// Default: -8000
     /// </summary>
     public unsafe int MaxGlidePitchAtTop
     {

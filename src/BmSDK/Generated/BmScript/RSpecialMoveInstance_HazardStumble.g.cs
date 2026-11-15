@@ -94,7 +94,8 @@ public partial class RSpecialMoveInstance_HazardStumble : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// ObjectProperty: Rumble
+    /// ObjectProperty: Rumble<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_HazardStumble.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform Rumble
     {

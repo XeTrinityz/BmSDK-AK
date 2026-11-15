@@ -806,7 +806,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 140);
 
     /// <summary>
-    /// FloatProperty: LinearDriveSpring
+    /// FloatProperty: LinearDriveSpring<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float LinearDriveSpring
     {
@@ -815,7 +816,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearDriveDamping
+    /// FloatProperty: LinearDriveDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearDriveDamping
     {
@@ -833,7 +835,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: AngularPositionTarget
+    /// StructProperty: AngularPositionTarget<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FQuat AngularPositionTarget
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FQuat>(Ptr + 176);
@@ -845,7 +848,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 192);
 
     /// <summary>
-    /// FloatProperty: AngularDriveSpring
+    /// FloatProperty: AngularDriveSpring<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AngularDriveSpring
     {
@@ -854,7 +858,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularDriveDamping
+    /// FloatProperty: AngularDriveDamping<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularDriveDamping
     {

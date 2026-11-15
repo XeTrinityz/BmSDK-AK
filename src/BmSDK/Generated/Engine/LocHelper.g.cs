@@ -228,7 +228,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CountryCodeLookup
+    /// ArrayProperty: CountryCodeLookup<br/>
+    /// Default: ((CountryCode="ae",TOS="legal.tos_en_gb.swf",PP="legal.pp_en_au.swf",PS4Age=18,XBoxAgeGroup=XBOX_AGEGROUP_ADULT),(CountryCode="ar",TOS="legal.tos_es_mx.swf",PP="legal.pp_en_au.swf",PS4Age=18,XBoxAgeGr...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.LocHelper.FCountryCodeMap> CountryCodeLookup
     {
@@ -237,7 +238,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: DefaultCountry
+    /// StrProperty: DefaultCountry<br/>
+    /// Default: "us"
     /// </summary>
     public unsafe BmSDK.FString DefaultCountry
     {

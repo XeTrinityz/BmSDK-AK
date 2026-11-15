@@ -79,7 +79,8 @@ public partial class RSeqAct_InterpolateFloat : BmSDK.Engine.SeqAct_Latent, BmSD
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Duration
     {

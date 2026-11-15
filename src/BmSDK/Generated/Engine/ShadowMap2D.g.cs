@@ -106,7 +106,8 @@ public partial class ShadowMap2D : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FGuid>(Ptr + 108);
 
     /// <summary>
-    /// BoolProperty: bIsShadowFactorTexture
+    /// BoolProperty: bIsShadowFactorTexture<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsShadowFactorTexture
     {

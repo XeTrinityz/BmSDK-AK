@@ -203,7 +203,8 @@ public partial class RRoadArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LosOffsetZ
+    /// FloatProperty: LosOffsetZ<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float LosOffsetZ
     {
@@ -212,7 +213,8 @@ public partial class RRoadArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LosSizeZ
+    /// FloatProperty: LosSizeZ<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float LosSizeZ
     {
@@ -221,7 +223,8 @@ public partial class RRoadArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GridSquareSizeX
+    /// FloatProperty: GridSquareSizeX<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float GridSquareSizeX
     {
@@ -230,7 +233,8 @@ public partial class RRoadArea : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GridSquareSizeY
+    /// FloatProperty: GridSquareSizeY<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float GridSquareSizeY
     {

@@ -169,25 +169,29 @@ public partial class ParticleModuleBeamNoise : BmSDK.Engine.ParticleModuleBeamBa
     }
 
     /// <summary>
-    /// StructProperty: NoiseRange
+    /// StructProperty: NoiseRange<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(50,50,50,50,50,50,50,50),Distribution=Engine.Default__ParticleModuleBeamNoise.DistributionNoiseRange,MinRange=(X=50,Y=50,Z=50),MaxRan...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector NoiseRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 108);
 
     /// <summary>
-    /// StructProperty: NoiseRangeScale
+    /// StructProperty: NoiseRangeScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleBeamNoise.DistributionNoiseRangeScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat NoiseRangeScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 172);
 
     /// <summary>
-    /// StructProperty: NoiseSpeed
+    /// StructProperty: NoiseSpeed<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(50,50,50,50,50,50,50,50),Distribution=Engine.Default__ParticleModuleBeamNoise.DistributionNoiseSpeed,MinRange=(X=50,Y=50,Z=50),MaxRan...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector NoiseSpeed
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 208);
 
     /// <summary>
-    /// FloatProperty: NoiseLockRadius
+    /// FloatProperty: NoiseLockRadius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NoiseLockRadius
     {
@@ -205,7 +209,8 @@ public partial class ParticleModuleBeamNoise : BmSDK.Engine.ParticleModuleBeamBa
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTension
+    /// FloatProperty: NoiseTension<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float NoiseTension
     {
@@ -214,13 +219,15 @@ public partial class ParticleModuleBeamNoise : BmSDK.Engine.ParticleModuleBeamBa
     }
 
     /// <summary>
-    /// StructProperty: NoiseTangentStrength
+    /// StructProperty: NoiseTangentStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(250,250,250,250),Distribution=Engine.Default__ParticleModuleBeamNoise.DistributionNoiseTangentStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat NoiseTangentStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 284);
 
     /// <summary>
-    /// IntProperty: NoiseTessellation
+    /// IntProperty: NoiseTessellation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoiseTessellation
     {
@@ -238,7 +245,8 @@ public partial class ParticleModuleBeamNoise : BmSDK.Engine.ParticleModuleBeamBa
     }
 
     /// <summary>
-    /// StructProperty: NoiseScale
+    /// StructProperty: NoiseScale<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleBeamNoise.DistributionNoiseScale)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat NoiseScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 328);

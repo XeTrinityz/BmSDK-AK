@@ -442,7 +442,8 @@ public partial class RBMBehaviour_BatmobileInterrogateThug : BmSDK.BmGame.RBMBeh
     }
 
     /// <summary>
-    /// FloatProperty: MinDistForFire
+    /// FloatProperty: MinDistForFire<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinDistForFire
     {

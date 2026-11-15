@@ -92,7 +92,8 @@ public partial class SeqEvent_RemoteEvent : BmSDK.Engine.SequenceEvent, BmSDK.IG
     }
 
     /// <summary>
-    /// NameProperty: EventName
+    /// NameProperty: EventName<br/>
+    /// Default: DefaultEvent
     /// </summary>
     public unsafe BmSDK.FName EventName
     {

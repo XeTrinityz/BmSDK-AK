@@ -79,7 +79,8 @@ public partial class RGangRunAwayPoint : BmSDK.BmGame.RDummyTarget, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: AreaRadius
+    /// FloatProperty: AreaRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AreaRadius
     {

@@ -279,7 +279,8 @@ public partial class RBMCombatPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UseRadius
+    /// FloatProperty: UseRadius<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float UseRadius
     {
@@ -288,7 +289,8 @@ public partial class RBMCombatPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -297,7 +299,8 @@ public partial class RBMCombatPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeUsedWhileTaunting
+    /// BoolProperty: bCanBeUsedWhileTaunting<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeUsedWhileTaunting
     {

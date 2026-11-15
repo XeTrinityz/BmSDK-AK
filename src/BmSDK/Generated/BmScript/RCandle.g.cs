@@ -164,7 +164,8 @@ public partial class RCandle : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Flame
+    /// ComponentProperty: Flame<br/>
+    /// Default: BmScript.Default__RCandle.FlamePFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Flame
     {

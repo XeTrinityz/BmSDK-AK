@@ -394,7 +394,8 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: PostActivationDestroyDelay
+    /// FloatProperty: PostActivationDestroyDelay<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PostActivationDestroyDelay
     {
@@ -403,7 +404,8 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: CaltropsTrapActivateSound
+    /// ObjectProperty: CaltropsTrapActivateSound<br/>
+    /// Default: Ww_DVC_CWCaltrop.Play_CaltropHit
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CaltropsTrapActivateSound
     {
@@ -412,7 +414,8 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: RifleHitReactionAnimSet
+    /// ObjectProperty: RifleHitReactionAnimSet<br/>
+    /// Default: DLC_Anim_Thug_Rifle.Code.TGRifle_Caltrop_Reaction_DLC
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet RifleHitReactionAnimSet
     {
@@ -421,7 +424,8 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: UnarmedHitReactionAnimSet
+    /// ObjectProperty: UnarmedHitReactionAnimSet<br/>
+    /// Default: DLC_Anim_Thug.Code.TG_Caltrop_DLC
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet UnarmedHitReactionAnimSet
     {

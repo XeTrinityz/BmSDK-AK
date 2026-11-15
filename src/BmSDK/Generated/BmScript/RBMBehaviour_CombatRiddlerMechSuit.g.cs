@@ -335,7 +335,8 @@ public partial class RBMBehaviour_CombatRiddlerMechSuit : BmSDK.BmGame.RBMBehavi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 1052);
 
     /// <summary>
-    /// FloatProperty: EscapePointRange
+    /// FloatProperty: EscapePointRange<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float EscapePointRange
     {
@@ -371,7 +372,8 @@ public partial class RBMBehaviour_CombatRiddlerMechSuit : BmSDK.BmGame.RBMBehavi
     }
 
     /// <summary>
-    /// FloatProperty: TauntTimer
+    /// FloatProperty: TauntTimer<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TauntTimer
     {

@@ -258,7 +258,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// IntProperty: ActionCountRequired
+    /// IntProperty: ActionCountRequired<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int ActionCountRequired
     {
@@ -267,7 +268,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: ShowBigButtonPrompt
+    /// BoolProperty: ShowBigButtonPrompt<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ShowBigButtonPrompt
     {
@@ -312,7 +314,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bIsTutorial
+    /// BoolProperty: bIsTutorial<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsTutorial
     {
@@ -447,7 +450,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// ByteProperty: ForcedMapScreen
+    /// ByteProperty: ForcedMapScreen<br/>
+    /// Default: MK_Default
     /// </summary>
     public unsafe BmSDK.BmGame.RPlayerController.MapKeyType ForcedMapScreen
     {
@@ -456,13 +460,15 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: CrouchHelp
+    /// StructProperty: CrouchHelp<br/>
+    /// Default: (Line="Frontend.HelpText.ButtonPromptCrouch",Icon=CI_Crouch)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RHUDPrompt.FHelpLine CrouchHelp
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RHUDPrompt.FHelpLine>(Ptr + 444);
 
     /// <summary>
-    /// StructProperty: CoverHelp
+    /// StructProperty: CoverHelp<br/>
+    /// Default: (Line="Frontend.HelpText.FindCornerCover")
     /// </summary>
     public unsafe ref BmSDK.BmGame.RHUDPrompt.FHelpLine CoverHelp
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RHUDPrompt.FHelpLine>(Ptr + 472);
@@ -486,7 +492,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: SelectGadgetIcons
+    /// ArrayProperty: SelectGadgetIcons<br/>
+    /// Default: (CI_SelectBatarang,CI_SelectExplosiveGel,CI_SelectHarpoonGun,CI_SelectResonatorTuner,CI_SelectResonatorTuner,CI_SelectControllableBatarang,CI_SelectControllableBatarang,CI_SelectREC,CI_SelectREC,CI_Se...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RHUDPrompt.EControlIcon> SelectGadgetIcons
     {
@@ -495,7 +502,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: QuickGadgetIcons
+    /// ArrayProperty: QuickGadgetIcons<br/>
+    /// Default: (CI_QuickBatarang,CI_QuickGel,CI_QuickGel,CI_QuickBatClaw,CI_QuickFreeze,CI_QuickMagBlast)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RHUDPrompt.EControlIcon> QuickGadgetIcons
     {
@@ -504,7 +512,8 @@ public partial class RSeqAct_HelpText : BmSDK.Engine.SequenceAction, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: BatmobileWeaponIcons
+    /// ArrayProperty: BatmobileWeaponIcons<br/>
+    /// Default: (CI_BatmobileSecondaryFire,CI_BatmobileSecondaryFire,CI_BatmobileSecondaryFire,CI_BatmobileSecondaryFire,CI_RunGlide,CI_Cancel,CI_Strike,CI_SilentTakeDown,CI_BatmobileSonar,CI_BatmobileSonar)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RHUDPrompt.EControlIcon> BatmobileWeaponIcons
     {

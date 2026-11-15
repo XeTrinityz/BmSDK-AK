@@ -272,7 +272,8 @@ public partial class RBMCombatPoint_HiSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLightChain
+    /// ComponentProperty: SpotLightChain<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiSpotLight.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SpotLightChain
     {
@@ -299,7 +300,8 @@ public partial class RBMCombatPoint_HiSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLightInRangeHighlightMesh
+    /// ComponentProperty: SpotLightInRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiSpotLight.SpotLightInRangeHighlightComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SpotLightInRangeHighlightMesh
     {
@@ -308,7 +310,8 @@ public partial class RBMCombatPoint_HiSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightMesh
+    /// ComponentProperty: InRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_HiSpotLight.InRangeHighlightComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent InRangeHighlightMesh
     {
@@ -317,7 +320,8 @@ public partial class RBMCombatPoint_HiSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// NameProperty: SocketName
+    /// NameProperty: SocketName<br/>
+    /// Default: Light_Socket
     /// </summary>
     public unsafe BmSDK.FName SocketName
     {

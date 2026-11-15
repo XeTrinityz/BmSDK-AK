@@ -79,7 +79,8 @@ public partial class RSeqEvent_Rescued : BmSDK.Engine.SequenceEvent, BmSDK.IGame
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: CustomRange
+    /// FloatProperty: CustomRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomRange
     {
@@ -88,7 +89,8 @@ public partial class RSeqEvent_Rescued : BmSDK.Engine.SequenceEvent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CustomAngleRange
+    /// FloatProperty: CustomAngleRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomAngleRange
     {
@@ -97,7 +99,8 @@ public partial class RSeqEvent_Rescued : BmSDK.Engine.SequenceEvent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CustomHeightRange
+    /// FloatProperty: CustomHeightRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomHeightRange
     {
@@ -106,7 +109,8 @@ public partial class RSeqEvent_Rescued : BmSDK.Engine.SequenceEvent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: CustomUseAngleRange
+    /// FloatProperty: CustomUseAngleRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomUseAngleRange
     {

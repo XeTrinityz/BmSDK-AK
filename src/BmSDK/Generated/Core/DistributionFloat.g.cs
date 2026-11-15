@@ -281,7 +281,8 @@ public partial class DistributionFloat : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeBaked
+    /// BoolProperty: bCanBeBaked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeBaked
     {
@@ -290,7 +291,8 @@ public partial class DistributionFloat : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsDirty
+    /// BoolProperty: bIsDirty<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsDirty
     {

@@ -115,7 +115,8 @@ public partial class RSeqAct_AllowLevelScriptingWhenCocky : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bAllowLevelScriptingWhenCocky
+    /// BoolProperty: bAllowLevelScriptingWhenCocky<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowLevelScriptingWhenCocky
     {

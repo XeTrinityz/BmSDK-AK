@@ -3097,7 +3097,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GeneralOptions
+    /// ArrayProperty: GeneralOptions<br/>
+    /// Default: (1,0,0,49,100,100,100,0,1,0,100,1,0,1,0,0,0)
     /// </summary>
     public unsafe BmSDK.TArray<int> GeneralOptions
     {
@@ -3106,7 +3107,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Player1Options
+    /// ArrayProperty: Player1Options<br/>
+    /// Default: (0,0,1,1,0,1,1,0,0,0,0,1)
     /// </summary>
     public unsafe BmSDK.TArray<int> Player1Options
     {
@@ -3115,7 +3117,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Player2Options
+    /// ArrayProperty: Player2Options<br/>
+    /// Default: (0,0,1,1,0,1,1,0,0,0,0,1)
     /// </summary>
     public unsafe BmSDK.TArray<int> Player2Options
     {
@@ -3142,7 +3145,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CachedChallengeId
+    /// IntProperty: CachedChallengeId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CachedChallengeId
     {
@@ -3160,7 +3164,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CachedChallengeCharacterId
+    /// IntProperty: CachedChallengeCharacterId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CachedChallengeCharacterId
     {
@@ -3223,7 +3228,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ExtraProfileStrings
+    /// ArrayProperty: ExtraProfileStrings<br/>
+    /// Default: ("","","","")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ExtraProfileStrings
     {
@@ -3238,7 +3244,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(Ptr + 264);
 
     /// <summary>
-    /// IntProperty: Day
+    /// IntProperty: Day<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Day
     {
@@ -3247,7 +3254,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Month
+    /// IntProperty: Month<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Month
     {
@@ -3256,7 +3264,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Year
+    /// IntProperty: Year<br/>
+    /// Default: 1999
     /// </summary>
     public unsafe int Year
     {
@@ -3319,7 +3328,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: UsingGamepad
+    /// IntProperty: UsingGamepad<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int UsingGamepad
     {
@@ -3418,7 +3428,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxDDAChapter
+    /// IntProperty: MaxDDAChapter<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int MaxDDAChapter
     {
@@ -3427,7 +3438,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxDDAAddition
+    /// FloatProperty: MaxDDAAddition<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MaxDDAAddition
     {
@@ -3445,7 +3457,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: StatsNew
+    /// ByteProperty: StatsNew<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte StatsNew
     {
@@ -3499,7 +3512,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Difficulty_Strings
+    /// ArrayProperty: Difficulty_Strings<br/>
+    /// Default: ("Easy","Normal","Hard","Knightmare")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> Difficulty_Strings
     {
@@ -3571,7 +3585,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PursuitCount
+    /// IntProperty: PursuitCount<br/>
+    /// Default: 11
     /// </summary>
     public unsafe int PursuitCount
     {
@@ -3580,7 +3595,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: BattleCount
+    /// IntProperty: BattleCount<br/>
+    /// Default: 13
     /// </summary>
     public unsafe int BattleCount
     {
@@ -5211,7 +5227,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPersistentOptions.FStoredKeyMap>(Ptr + 12880);
 
     /// <summary>
-    /// IntProperty: BatgirlCount
+    /// IntProperty: BatgirlCount<br/>
+    /// Default: 29
     /// </summary>
     public unsafe int BatgirlCount
     {
@@ -5220,7 +5237,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: RedHoodCount
+    /// IntProperty: RedHoodCount<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int RedHoodCount
     {
@@ -5229,7 +5247,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: HarleyCount
+    /// IntProperty: HarleyCount<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int HarleyCount
     {
@@ -5238,7 +5257,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MouseSensitivity
+    /// FloatProperty: MouseSensitivity<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MouseSensitivity
     {
@@ -5247,7 +5267,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinMouseSensitivity
+    /// FloatProperty: MinMouseSensitivity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinMouseSensitivity
     {
@@ -5256,7 +5277,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxMouseSensitivity
+    /// FloatProperty: MaxMouseSensitivity<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float MaxMouseSensitivity
     {
@@ -5274,7 +5296,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MouseSmoothing
+    /// IntProperty: MouseSmoothing<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MouseSmoothing
     {

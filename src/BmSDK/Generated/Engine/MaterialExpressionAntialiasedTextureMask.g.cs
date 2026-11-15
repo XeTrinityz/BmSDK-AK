@@ -91,7 +91,8 @@ public partial class MaterialExpressionAntialiasedTextureMask : BmSDK.Engine.Mat
     }
 
     /// <summary>
-    /// FloatProperty: Threshold
+    /// FloatProperty: Threshold<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Threshold
     {
@@ -100,7 +101,8 @@ public partial class MaterialExpressionAntialiasedTextureMask : BmSDK.Engine.Mat
     }
 
     /// <summary>
-    /// ByteProperty: Channel
+    /// ByteProperty: Channel<br/>
+    /// Default: TCC_Alpha
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionAntialiasedTextureMask.ETextureColorChannel Channel
     {

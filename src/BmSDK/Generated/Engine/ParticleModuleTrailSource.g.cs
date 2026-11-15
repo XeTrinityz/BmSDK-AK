@@ -88,7 +88,8 @@ public partial class ParticleModuleTrailSource : BmSDK.Engine.ParticleModuleTrai
     }
 
     /// <summary>
-    /// ByteProperty: SelectionMethod
+    /// ByteProperty: SelectionMethod<br/>
+    /// Default: EPSSM_Sequential
     /// </summary>
     public unsafe BmSDK.Engine.ParticleModule.EParticleSourceSelectionMethod SelectionMethod
     {
@@ -106,7 +107,8 @@ public partial class ParticleModuleTrailSource : BmSDK.Engine.ParticleModuleTrai
     }
 
     /// <summary>
-    /// StructProperty: SourceStrength
+    /// StructProperty: SourceStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(100,100,100,100),Distribution=Engine.Default__ParticleModuleTrailSource.DistributionSourceStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SourceStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 108);

@@ -79,7 +79,8 @@ public partial class RSnowVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RainComponent
+    /// ComponentProperty: RainComponent<br/>
+    /// Default: BmGame.Default__RSnowVolume.RainComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RRainComponent RainComponent
     {

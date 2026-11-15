@@ -250,7 +250,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GlobalDataStoreClasses
+    /// ArrayProperty: GlobalDataStoreClasses<br/>
+    /// Default: ("Engine.UIDataStore_InputAlias")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> GlobalDataStoreClasses
     {
@@ -268,7 +269,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PlayerDataStoreClassNames
+    /// ArrayProperty: PlayerDataStoreClassNames<br/>
+    /// Default: ("Engine.UIDataStore_OnlinePlayerData")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> PlayerDataStoreClassNames
     {

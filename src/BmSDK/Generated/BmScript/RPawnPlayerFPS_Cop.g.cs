@@ -184,7 +184,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashLightSocket
+    /// NameProperty: MuzzleFlashLightSocket<br/>
+    /// Default: DummyLight
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashLightSocket
     {
@@ -193,7 +194,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmScript.Default__RPawnPlayerFPS_Cop.MuzzleFlashComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -202,7 +204,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// NameProperty: MuzzleFlashSocket
+    /// NameProperty: MuzzleFlashSocket<br/>
+    /// Default: DummyFlare
     /// </summary>
     public unsafe BmSDK.FName MuzzleFlashSocket
     {
@@ -220,7 +223,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BulletImpulse
+    /// FloatProperty: BulletImpulse<br/>
+    /// Default: 1200
     /// </summary>
     public unsafe float BulletImpulse
     {
@@ -229,7 +233,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: HitEffectParticleSystem
+    /// ObjectProperty: HitEffectParticleSystem<br/>
+    /// Default: VFX_Bullethits.Particles.Diner_Bullet_Impact
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HitEffectParticleSystem
     {
@@ -238,7 +243,8 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: ShotGun
+    /// ObjectProperty: ShotGun<br/>
+    /// Default: BmScript.Default__RPawnPlayerFPS_Cop.ForceFeedbackWaveform1
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ShotGun
     {

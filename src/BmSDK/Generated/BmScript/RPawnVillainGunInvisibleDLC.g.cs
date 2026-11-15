@@ -139,7 +139,8 @@ public partial class RPawnVillainGunInvisibleDLC : BmSDK.BmScript.RPawnVillainGu
     }
 
     /// <summary>
-    /// ObjectProperty: InvisibilityPackThermalMIC
+    /// ObjectProperty: InvisibilityPackThermalMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant InvisibilityPackThermalMIC
     {

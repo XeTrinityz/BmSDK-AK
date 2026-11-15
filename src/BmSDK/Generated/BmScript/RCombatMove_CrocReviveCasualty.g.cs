@@ -109,7 +109,8 @@ public partial class RCombatMove_CrocReviveCasualty : BmSDK.BmScript.RCombatMove
     }
 
     /// <summary>
-    /// FloatProperty: MoveDurationCheck
+    /// FloatProperty: MoveDurationCheck<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MoveDurationCheck
     {

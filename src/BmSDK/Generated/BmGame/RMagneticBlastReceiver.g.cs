@@ -1031,7 +1031,8 @@ public partial class RMagneticBlastReceiver : BmSDK.BmGame.RProjectile, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: SurfaceFXTemplate
+    /// ObjectProperty: SurfaceFXTemplate<br/>
+    /// Default: VFX_Gadgets.magnet.BeamImpact_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem SurfaceFXTemplate
     {

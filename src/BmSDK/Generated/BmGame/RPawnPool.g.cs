@@ -407,7 +407,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: PawnClassForSpawn
+    /// ClassProperty: PawnClassForSpawn<br/>
+    /// Default: BmGame.RPawnVillainThug
     /// </summary>
     public unsafe BmSDK.Class PawnClassForSpawn
     {

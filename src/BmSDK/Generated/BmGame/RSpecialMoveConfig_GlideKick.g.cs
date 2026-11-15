@@ -94,7 +94,8 @@ public partial class RSpecialMoveConfig_GlideKick : BmSDK.BmGame.RSpecialMoveCon
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 500);
 
     /// <summary>
-    /// ObjectProperty: SmashWindowRumble
+    /// ObjectProperty: SmashWindowRumble<br/>
+    /// Default: BmGame.Default__RSpecialMoveConfig_GlideKick.SmashRumble0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform SmashWindowRumble
     {

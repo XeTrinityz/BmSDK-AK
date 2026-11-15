@@ -204,7 +204,8 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenDialogue
+    /// FloatProperty: MinTimeBetweenDialogue<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinTimeBetweenDialogue
     {
@@ -213,7 +214,8 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeBetweenDialogue
+    /// FloatProperty: MaxTimeBetweenDialogue<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float MaxTimeBetweenDialogue
     {

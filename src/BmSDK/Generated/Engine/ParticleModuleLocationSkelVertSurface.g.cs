@@ -103,7 +103,8 @@ public partial class ParticleModuleLocationSkelVertSurface : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// BoolProperty: bOrientMeshEmitters
+    /// BoolProperty: bOrientMeshEmitters<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOrientMeshEmitters
     {
@@ -121,7 +122,8 @@ public partial class ParticleModuleLocationSkelVertSurface : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// NameProperty: SkelMeshActorParamName
+    /// NameProperty: SkelMeshActorParamName<br/>
+    /// Default: VertSurfaceActor
     /// </summary>
     public unsafe BmSDK.FName SkelMeshActorParamName
     {

@@ -394,7 +394,8 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// NameProperty: StartingReviveBark
+    /// NameProperty: StartingReviveBark<br/>
+    /// Default: FV_EVENT_COM_PreRevive
     /// </summary>
     public unsafe BmSDK.FName StartingReviveBark
     {
@@ -403,7 +404,8 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     }
 
     /// <summary>
-    /// NameProperty: FinishingReviveBark
+    /// NameProperty: FinishingReviveBark<br/>
+    /// Default: FV_EVENT_COM_Revive
     /// </summary>
     public unsafe BmSDK.FName FinishingReviveBark
     {

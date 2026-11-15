@@ -336,7 +336,8 @@ public partial class RBMBehaviour_GangIdleOrGroupAnimationPoint : BmSDK.BmScript
     }
 
     /// <summary>
-    /// FloatProperty: DefaultWaitingTimeOut
+    /// FloatProperty: DefaultWaitingTimeOut<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float DefaultWaitingTimeOut
     {

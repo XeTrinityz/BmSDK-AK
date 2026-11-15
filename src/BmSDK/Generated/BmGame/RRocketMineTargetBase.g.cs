@@ -117,7 +117,8 @@ public partial class RRocketMineTargetBase : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ImpulseMagToThugs
+    /// FloatProperty: ImpulseMagToThugs<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ImpulseMagToThugs
     {
@@ -126,7 +127,8 @@ public partial class RRocketMineTargetBase : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: DamageAmountToThugs
+    /// IntProperty: DamageAmountToThugs<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int DamageAmountToThugs
     {
@@ -135,7 +137,8 @@ public partial class RRocketMineTargetBase : BmSDK.Engine.KAsset, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: MinHitSpeed
+    /// FloatProperty: MinHitSpeed<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float MinHitSpeed
     {

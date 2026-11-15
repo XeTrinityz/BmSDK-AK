@@ -111,7 +111,8 @@ public partial class RBatmobileRocket_Projectile : BmSDK.BmGame.RProjectile, BmS
     }
 
     /// <summary>
-    /// FloatProperty: RocketAccel
+    /// FloatProperty: RocketAccel<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float RocketAccel
     {
@@ -147,7 +148,8 @@ public partial class RBatmobileRocket_Projectile : BmSDK.BmGame.RProjectile, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: ImpulseComponent
+    /// ComponentProperty: ImpulseComponent<br/>
+    /// Default: BmGame.Default__RBatmobileRocket_Projectile.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent ImpulseComponent
     {
@@ -156,7 +158,8 @@ public partial class RBatmobileRocket_Projectile : BmSDK.BmGame.RProjectile, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RBatmobileRocket_Projectile.RocketTrail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {
@@ -165,7 +168,8 @@ public partial class RBatmobileRocket_Projectile : BmSDK.BmGame.RProjectile, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: RocketMesh
+    /// ComponentProperty: RocketMesh<br/>
+    /// Default: BmGame.Default__RBatmobileRocket_Projectile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent RocketMesh
     {
@@ -174,13 +178,15 @@ public partial class RBatmobileRocket_Projectile : BmSDK.BmGame.RProjectile, BmS
     }
 
     /// <summary>
-    /// StructProperty: ImpactOffset
+    /// StructProperty: ImpactOffset<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ImpactOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 892);
 
     /// <summary>
-    /// FloatProperty: ImpactVehicleImpulse
+    /// FloatProperty: ImpactVehicleImpulse<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float ImpactVehicleImpulse
     {

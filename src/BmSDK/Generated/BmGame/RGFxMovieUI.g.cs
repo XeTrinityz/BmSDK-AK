@@ -3851,7 +3851,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ArrayProperty: ActiveColumnIndexs
+        /// ArrayProperty: ActiveColumnIndexs<br/>
+        /// Default: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
         /// </summary>
         public unsafe BmSDK.TArray<int> ActiveColumnIndexs
         {
@@ -4052,7 +4053,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: MenuIndex
+    /// StructProperty: MenuIndex<br/>
+    /// Default: (ActiveColumnIndexs=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGFxMovieUI.FMenuState MenuIndex
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGFxMovieUI.FMenuState>(Ptr + 712);
@@ -4076,7 +4078,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIsOptionsDefaults
+    /// BoolProperty: bIsOptionsDefaults<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsOptionsDefaults
     {
@@ -4094,7 +4097,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bInputBlocked
+    /// BoolProperty: bInputBlocked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInputBlocked
     {
@@ -4211,7 +4215,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NameBaseRef
+    /// StrProperty: NameBaseRef<br/>
+    /// Default: "$Menus."
     /// </summary>
     public unsafe BmSDK.FString NameBaseRef
     {

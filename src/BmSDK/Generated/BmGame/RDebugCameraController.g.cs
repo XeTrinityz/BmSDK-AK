@@ -1611,7 +1611,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// ObjectProperty: CinematicScreenShake
+    /// ObjectProperty: CinematicScreenShake<br/>
+    /// Default: BmGame.Default__RDebugCameraController.CamShake0
     /// </summary>
     public unsafe BmSDK.Engine.CameraShake CinematicScreenShake
     {
@@ -1620,7 +1621,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// ComponentProperty: LightingTestSphere
+    /// ComponentProperty: LightingTestSphere<br/>
+    /// Default: BmGame.Default__RDebugCameraController.StaticMeshComponent2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent LightingTestSphere
     {
@@ -1638,13 +1640,15 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// StructProperty: LightContainer1
+    /// StructProperty: LightContainer1<br/>
+    /// Default: (bInitialized=true,Dynamic=true,CompositeDynamic=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightContainer1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 1972);
 
     /// <summary>
-    /// StructProperty: LightContainer2
+    /// StructProperty: LightContainer2<br/>
+    /// Default: (bInitialized=true,Dynamic=true,CompositeDynamic=true,Character=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightContainer2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 1976);
@@ -1722,7 +1726,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// BoolProperty: CreateRoundShotFolders
+    /// BoolProperty: CreateRoundShotFolders<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CreateRoundShotFolders
     {
@@ -1731,7 +1736,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// BoolProperty: CreateOrbitShotFolders
+    /// BoolProperty: CreateOrbitShotFolders<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CreateOrbitShotFolders
     {
@@ -1848,13 +1854,15 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// StructProperty: DOFSettings
+    /// StructProperty: DOFSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_FocusDistance=true,bOverride_DOF_InterpolationDuration=true,InterpolateOverDistanceFade=250...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings DOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 2008);
 
     /// <summary>
-    /// IntProperty: iShotIndex
+    /// IntProperty: iShotIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int iShotIndex
     {
@@ -1863,7 +1871,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// IntProperty: NumRoundShotsPerTake
+    /// IntProperty: NumRoundShotsPerTake<br/>
+    /// Default: 64
     /// </summary>
     public unsafe int NumRoundShotsPerTake
     {
@@ -1881,7 +1890,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// IntProperty: NumOrbitShotsPerTake
+    /// IntProperty: NumOrbitShotsPerTake<br/>
+    /// Default: 64
     /// </summary>
     public unsafe int NumOrbitShotsPerTake
     {

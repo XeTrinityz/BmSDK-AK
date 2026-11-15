@@ -92,7 +92,8 @@ public partial class RSeqAct_BlendOutCinematicProxy : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutDuration
+    /// FloatProperty: BlendOutDuration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BlendOutDuration
     {

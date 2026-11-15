@@ -259,7 +259,8 @@ public partial class RSpecialMoveConfig_BatmobileInterrogation : BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: AnimationStartRadius
+    /// FloatProperty: AnimationStartRadius<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float AnimationStartRadius
     {
@@ -277,19 +278,22 @@ public partial class RSpecialMoveConfig_BatmobileInterrogation : BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// StructProperty: CarRotOffset
+    /// StructProperty: CarRotOffset<br/>
+    /// Default: (Yaw=21811)
     /// </summary>
     public unsafe ref BmSDK.Rotator CarRotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 556);
 
     /// <summary>
-    /// StructProperty: CarLocOffset
+    /// StructProperty: CarLocOffset<br/>
+    /// Default: (X=-25.2709,Y=39.3667,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CarLocOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 568);
 
     /// <summary>
-    /// ArrayProperty: RoadRotOffset
+    /// ArrayProperty: RoadRotOffset<br/>
+    /// Default: ((Yaw=5000),(Yaw=5000),(Yaw=5000))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Rotator> RoadRotOffset
     {
@@ -298,7 +302,8 @@ public partial class RSpecialMoveConfig_BatmobileInterrogation : BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: SecondTransEnd
+    /// FloatProperty: SecondTransEnd<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float SecondTransEnd
     {
@@ -307,7 +312,8 @@ public partial class RSpecialMoveConfig_BatmobileInterrogation : BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: SecondRotEnd
+    /// FloatProperty: SecondRotEnd<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float SecondRotEnd
     {
@@ -316,7 +322,8 @@ public partial class RSpecialMoveConfig_BatmobileInterrogation : BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: SecondTransStart
+    /// FloatProperty: SecondTransStart<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float SecondTransStart
     {

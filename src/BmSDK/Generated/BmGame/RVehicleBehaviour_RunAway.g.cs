@@ -587,38 +587,45 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     public InlineArray<BmSDK.GameObject.FInterpCurveFloat> CheatVsDistCurveNoEscorts => new(6, Ptr + 616, 20, this);
 
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((InVal=-1000,OutVal=1.5),(InVal=-500,OutVal=1.3),(InVal=-300,OutVal=1),(InVal=100,OutVal=0.8),(InVal=2000,OutVal=0.6),(InVal=10000,OutVal=0.3)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 616);
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((InVal=-1000,OutVal=1.5),(InVal=-500,OutVal=1.3),(InVal=-300,OutVal=1),(InVal=100,OutVal=0.8),(InVal=2000,OutVal=0.7),(InVal=10000,OutVal=0.5)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 636);
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((InVal=-1000,OutVal=1.5),(InVal=-500,OutVal=1.3),(OutVal=1),(InVal=500,OutVal=1),(InVal=2000,OutVal=0.8),(InVal=10000,OutVal=0.6)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 656);
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((InVal=-1000,OutVal=1.5),(InVal=-500,OutVal=1.3),(OutVal=1),(InVal=1000,OutVal=1.1),(InVal=3000,OutVal=0.9),(InVal=10000,OutVal=0.75)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 676);
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((InVal=-2000,OutVal=1.6),(InVal=-1600,OutVal=1.4),(InVal=-1200,OutVal=1.3),(OutVal=1),(InVal=7500,OutVal=0.75)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 696);
     /// <summary>
-    /// StructProperty: CheatVsDistCurveNoEscorts
+    /// StructProperty: CheatVsDistCurveNoEscorts<br/>
+    /// Default: (Points=((OutVal=0.8),(InVal=500,OutVal=0.75),(InVal=2000,OutVal=0.65),(InVal=10000,OutVal=0.5)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveNoEscorts_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 716);
 
     /// <summary>
-    /// StructProperty: CheatVsDistCurveWithEscorts
+    /// StructProperty: CheatVsDistCurveWithEscorts<br/>
+    /// Default: (Points=((InVal=-1000,OutVal=1.5),(InVal=-500,OutVal=1.3),(OutVal=1),(InVal=1000,OutVal=1),(InVal=2000,OutVal=0.8),(InVal=10000,OutVal=0.5)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat CheatVsDistCurveWithEscorts
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 736);
@@ -714,7 +721,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: TendToGoStraightUphill
+    /// BoolProperty: TendToGoStraightUphill<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool TendToGoStraightUphill
     {
@@ -723,7 +731,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: AutoUpdateDriveSpeed
+    /// BoolProperty: AutoUpdateDriveSpeed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoUpdateDriveSpeed
     {
@@ -741,7 +750,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: AllowShoot
+    /// BoolProperty: AllowShoot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowShoot
     {
@@ -750,7 +760,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: AvoidObstaclesBetweenLanes
+    /// BoolProperty: AvoidObstaclesBetweenLanes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AvoidObstaclesBetweenLanes
     {
@@ -759,7 +770,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: AutoUpdateSelfDriveLineLimits
+    /// BoolProperty: AutoUpdateSelfDriveLineLimits<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutoUpdateSelfDriveLineLimits
     {
@@ -795,7 +807,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: bUseFollowersForSpeedFudging
+    /// BoolProperty: bUseFollowersForSpeedFudging<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseFollowersForSpeedFudging
     {
@@ -822,7 +835,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: PassengersRunIfNearBatmobileAfterExit
+    /// BoolProperty: PassengersRunIfNearBatmobileAfterExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PassengersRunIfNearBatmobileAfterExit
     {
@@ -894,7 +908,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// BoolProperty: AllowTakeoffWheelspin
+    /// BoolProperty: AllowTakeoffWheelspin<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowTakeoffWheelspin
     {
@@ -912,7 +927,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: SpeedFactor
+    /// FloatProperty: SpeedFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SpeedFactor
     {
@@ -930,7 +946,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: GotAwayDistance
+    /// FloatProperty: GotAwayDistance<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float GotAwayDistance
     {
@@ -939,7 +956,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: GotAwayTimeLimit
+    /// FloatProperty: GotAwayTimeLimit<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float GotAwayTimeLimit
     {
@@ -957,7 +975,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: BatmanTailingDuration
+    /// FloatProperty: BatmanTailingDuration<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float BatmanTailingDuration
     {
@@ -966,7 +985,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: BatmanTailingDistance
+    /// FloatProperty: BatmanTailingDistance<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float BatmanTailingDistance
     {
@@ -993,7 +1013,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: MaxThrottleForSharpTurns
+    /// FloatProperty: MaxThrottleForSharpTurns<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MaxThrottleForSharpTurns
     {
@@ -1002,7 +1023,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: MaxWaitForObstacleTime
+    /// FloatProperty: MaxWaitForObstacleTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxWaitForObstacleTime
     {
@@ -1011,7 +1033,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: MaxTurnAngleDegrees
+    /// FloatProperty: MaxTurnAngleDegrees<br/>
+    /// Default: 102
     /// </summary>
     public unsafe float MaxTurnAngleDegrees
     {
@@ -1029,7 +1052,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: SeeBatmanBarkDistance
+    /// FloatProperty: SeeBatmanBarkDistance<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float SeeBatmanBarkDistance
     {
@@ -1056,7 +1080,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// ByteProperty: ChaseDifficulty
+    /// ByteProperty: ChaseDifficulty<br/>
+    /// Default: EChaseDiff_Default
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleCombatManager.EChaseDifficulty ChaseDifficulty
     {
@@ -1065,7 +1090,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: StuckNearBatmobileDist
+    /// FloatProperty: StuckNearBatmobileDist<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float StuckNearBatmobileDist
     {
@@ -1074,7 +1100,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: AvoidBatmobileLocationRange
+    /// FloatProperty: AvoidBatmobileLocationRange<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float AvoidBatmobileLocationRange
     {
@@ -1083,7 +1110,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: AvoidBatmanLocationRange
+    /// FloatProperty: AvoidBatmanLocationRange<br/>
+    /// Default: 12000
     /// </summary>
     public unsafe float AvoidBatmanLocationRange
     {
@@ -1092,7 +1120,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// FloatProperty: DistanceToPlanAhead
+    /// FloatProperty: DistanceToPlanAhead<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float DistanceToPlanAhead
     {
@@ -1110,7 +1139,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// IntProperty: PrimedForLeaveFormationLink
+    /// IntProperty: PrimedForLeaveFormationLink<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PrimedForLeaveFormationLink
     {
@@ -1128,7 +1158,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
     }
 
     /// <summary>
-    /// IntProperty: RoadLinkHistoryMaxLength
+    /// IntProperty: RoadLinkHistoryMaxLength<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int RoadLinkHistoryMaxLength
     {

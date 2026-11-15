@@ -139,7 +139,8 @@ public partial class RVehicleBehaviour_Uturn : BmSDK.BmGame.RVehicleBehaviour, B
     }
 
     /// <summary>
-    /// BoolProperty: UturnReverse
+    /// BoolProperty: UturnReverse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UturnReverse
     {
@@ -148,7 +149,8 @@ public partial class RVehicleBehaviour_Uturn : BmSDK.BmGame.RVehicleBehaviour, B
     }
 
     /// <summary>
-    /// BoolProperty: UturnLeft
+    /// BoolProperty: UturnLeft<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UturnLeft
     {

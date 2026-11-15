@@ -124,7 +124,8 @@ public partial class RVehicleBehaviour_FollowRoute : BmSDK.BmGame.RVehicleBehavi
     }
 
     /// <summary>
-    /// FloatProperty: SpeedFactor
+    /// FloatProperty: SpeedFactor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SpeedFactor
     {
@@ -133,7 +134,8 @@ public partial class RVehicleBehaviour_FollowRoute : BmSDK.BmGame.RVehicleBehavi
     }
 
     /// <summary>
-    /// FloatProperty: SeeBatmanDistance
+    /// FloatProperty: SeeBatmanDistance<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float SeeBatmanDistance
     {

@@ -138,7 +138,8 @@ public partial class RSeqAct_SetJokerStartupOptions : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// ByteProperty: InterceptHallucinationType
+    /// ByteProperty: InterceptHallucinationType<br/>
+    /// Default: JokerHallucination_NumHallucinationTypes
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination InterceptHallucinationType
     {

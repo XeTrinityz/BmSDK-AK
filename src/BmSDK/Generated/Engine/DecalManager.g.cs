@@ -230,7 +230,8 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: DecalTemplate
+    /// ComponentProperty: DecalTemplate<br/>
+    /// Default: Engine.Default__DecalManager.BaseDecal
     /// </summary>
     public unsafe BmSDK.Engine.DecalComponent DecalTemplate
     {
@@ -257,7 +258,8 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DecalLifeSpan
+    /// FloatProperty: DecalLifeSpan<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DecalLifeSpan
     {
@@ -266,7 +268,8 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DecalDepthBias
+    /// FloatProperty: DecalDepthBias<br/>
+    /// Default: -6e-05
     /// </summary>
     public unsafe float DecalDepthBias
     {
@@ -275,7 +278,8 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DecalBlendRange
+    /// StructProperty: DecalBlendRange<br/>
+    /// Default: (X=89.5,Y=180)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 DecalBlendRange
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 704);

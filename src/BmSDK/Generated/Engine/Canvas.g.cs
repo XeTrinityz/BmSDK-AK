@@ -1223,7 +1223,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Font
+    /// ObjectProperty: Font<br/>
+    /// Default: BmFonts.EngineSmallFont
     /// </summary>
     public unsafe BmSDK.Engine.Font Font
     {
@@ -1232,7 +1233,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultTexture
+    /// ObjectProperty: DefaultTexture<br/>
+    /// Default: EngineResources.WhiteSquareTexture
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D DefaultTexture
     {
@@ -1313,7 +1315,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DrawColor
+    /// StructProperty: DrawColor<br/>
+    /// Default: (B=127,G=127,R=127,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor DrawColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 132);
@@ -1373,7 +1376,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ColorModulate
+    /// StructProperty: ColorModulate<br/>
+    /// Default: (X=1,Y=1,Z=1,W=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FPlane ColorModulate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FPlane>(Ptr + 176);
@@ -1464,7 +1468,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: GlowInfo
+        /// StructProperty: GlowInfo<br/>
+        /// Default: (GlowColor=(A=1))
         /// </summary>
         public unsafe BmSDK.Engine.Canvas.FDepthFieldGlowInfo GlowInfo
         {
@@ -1525,7 +1530,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: ShadowColor
+        /// StructProperty: ShadowColor<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor ShadowColor
         {
@@ -1577,7 +1583,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: GlowColor
+        /// StructProperty: GlowColor<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor GlowColor
         {

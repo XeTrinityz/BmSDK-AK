@@ -121,7 +121,8 @@ public partial class RSeqAct_JokerfyThug : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAutoStopWhenDeadAndOffscreen
+    /// BoolProperty: bAutoStopWhenDeadAndOffscreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoStopWhenDeadAndOffscreen
     {

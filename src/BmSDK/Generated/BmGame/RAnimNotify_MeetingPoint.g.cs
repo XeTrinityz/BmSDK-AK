@@ -156,7 +156,8 @@ public partial class RAnimNotify_MeetingPoint : BmSDK.Engine.AnimNotify, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: Rotation
+    /// BoolProperty: Rotation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Rotation
     {
@@ -165,7 +166,8 @@ public partial class RAnimNotify_MeetingPoint : BmSDK.Engine.AnimNotify, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: Translation
+    /// BoolProperty: Translation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Translation
     {
@@ -174,13 +176,15 @@ public partial class RAnimNotify_MeetingPoint : BmSDK.Engine.AnimNotify, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: RotationComponents
+    /// StructProperty: RotationComponents<br/>
+    /// Default: (Yaw=true,Pitch=true,Roll=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_MeetingPoint.FMeetingPointRotationComponents RotationComponents
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_MeetingPoint.FMeetingPointRotationComponents>(Ptr + 92);
 
     /// <summary>
-    /// StructProperty: TranslationComponents
+    /// StructProperty: TranslationComponents<br/>
+    /// Default: (X=true,Y=true,Z=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimNotify_MeetingPoint.FMeetingPointTranslationComponents TranslationComponents
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimNotify_MeetingPoint.FMeetingPointTranslationComponents>(Ptr + 96);

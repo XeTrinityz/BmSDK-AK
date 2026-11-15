@@ -79,7 +79,8 @@ public partial class NxGenericForceFieldCapsule : BmSDK.Engine.NxGenericForceFie
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__NxGenericForceFieldCapsule.DrawCapsule0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCapsuleComponent RenderComponent
     {
@@ -88,7 +89,8 @@ public partial class NxGenericForceFieldCapsule : BmSDK.Engine.NxGenericForceFie
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleHeight
+    /// FloatProperty: CapsuleHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CapsuleHeight
     {
@@ -97,7 +99,8 @@ public partial class NxGenericForceFieldCapsule : BmSDK.Engine.NxGenericForceFie
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleRadius
+    /// FloatProperty: CapsuleRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CapsuleRadius
     {

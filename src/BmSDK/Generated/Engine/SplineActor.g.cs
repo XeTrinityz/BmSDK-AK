@@ -512,13 +512,15 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: SplineActorTangent
+    /// StructProperty: SplineActorTangent<br/>
+    /// Default: (X=300)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SplineActorTangent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 684);
 
     /// <summary>
-    /// StructProperty: SplineColor
+    /// StructProperty: SplineColor<br/>
+    /// Default: (B=255,R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor SplineColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 696);

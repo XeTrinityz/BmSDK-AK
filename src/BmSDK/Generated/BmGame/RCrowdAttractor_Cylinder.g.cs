@@ -131,7 +131,8 @@ public partial class RCrowdAttractor_Cylinder : BmSDK.BmGame.RCrowdAttractor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AttractionHeight
+    /// FloatProperty: AttractionHeight<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AttractionHeight
     {
@@ -140,7 +141,8 @@ public partial class RCrowdAttractor_Cylinder : BmSDK.BmGame.RCrowdAttractor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AttractionOuterRadiusMulti
+    /// FloatProperty: AttractionOuterRadiusMulti<br/>
+    /// Default: 1.4
     /// </summary>
     public unsafe float AttractionOuterRadiusMulti
     {
@@ -149,7 +151,8 @@ public partial class RCrowdAttractor_Cylinder : BmSDK.BmGame.RCrowdAttractor, Bm
     }
 
     /// <summary>
-    /// FloatProperty: AttractionWaveHeight
+    /// FloatProperty: AttractionWaveHeight<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AttractionWaveHeight
     {
@@ -194,7 +197,8 @@ public partial class RCrowdAttractor_Cylinder : BmSDK.BmGame.RCrowdAttractor, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCanAdvanceStage
+    /// BoolProperty: bCanAdvanceStage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanAdvanceStage
     {

@@ -416,7 +416,8 @@ public partial class RSpecialMoveInstance_FireGrapple : BmSDK.BmGame.RSpecialMov
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 904);
 
     /// <summary>
-    /// FloatProperty: MoveTimer
+    /// FloatProperty: MoveTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MoveTimer
     {
@@ -425,7 +426,8 @@ public partial class RSpecialMoveInstance_FireGrapple : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// StructProperty: FireOverlay
+    /// StructProperty: FireOverlay<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId FireOverlay
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 920);

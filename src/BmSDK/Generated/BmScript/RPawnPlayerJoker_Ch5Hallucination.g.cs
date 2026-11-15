@@ -108,7 +108,8 @@ public partial class RPawnPlayerJoker_Ch5Hallucination : BmSDK.BmGame.RPawnPlaye
     }
 
     /// <summary>
-    /// BoolProperty: bCanSeePlayer
+    /// BoolProperty: bCanSeePlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanSeePlayer
     {
@@ -126,7 +127,8 @@ public partial class RPawnPlayerJoker_Ch5Hallucination : BmSDK.BmGame.RPawnPlaye
     }
 
     /// <summary>
-    /// FloatProperty: VisibilityChance
+    /// FloatProperty: VisibilityChance<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float VisibilityChance
     {
@@ -135,7 +137,8 @@ public partial class RPawnPlayerJoker_Ch5Hallucination : BmSDK.BmGame.RPawnPlaye
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeToMakeVisible
+    /// FloatProperty: MinTimeToMakeVisible<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinTimeToMakeVisible
     {

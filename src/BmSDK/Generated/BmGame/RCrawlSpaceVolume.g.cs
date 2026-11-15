@@ -135,7 +135,8 @@ public partial class RCrawlSpaceVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SoundCuePriority
+    /// IntProperty: SoundCuePriority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SoundCuePriority
     {
@@ -144,7 +145,8 @@ public partial class RCrawlSpaceVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ReturnedSound
+    /// IntProperty: ReturnedSound<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ReturnedSound
     {

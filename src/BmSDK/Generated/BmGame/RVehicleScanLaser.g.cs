@@ -175,7 +175,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: LaserFX
+    /// ComponentProperty: LaserFX<br/>
+    /// Default: BmGame.Default__RVehicleScanLaser.LaserEffect
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent LaserFX
     {
@@ -184,7 +185,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SizzleFX
+    /// ComponentProperty: SizzleFX<br/>
+    /// Default: BmGame.Default__RVehicleScanLaser.SizzleParticleSystem
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent SizzleFX
     {
@@ -256,7 +258,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SweepPeriod
+    /// FloatProperty: SweepPeriod<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SweepPeriod
     {
@@ -274,7 +277,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SweepRange
+    /// FloatProperty: SweepRange<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float SweepRange
     {
@@ -283,7 +287,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DownwardsAngleInitial
+    /// FloatProperty: DownwardsAngleInitial<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float DownwardsAngleInitial
     {
@@ -292,7 +297,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DownwardsAngleRange
+    /// FloatProperty: DownwardsAngleRange<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float DownwardsAngleRange
     {
@@ -301,7 +307,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HeadstartRange
+    /// FloatProperty: HeadstartRange<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float HeadstartRange
     {
@@ -310,7 +317,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxLaserLength
+    /// FloatProperty: MaxLaserLength<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float MaxLaserLength
     {
@@ -343,7 +351,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 212);
 
     /// <summary>
-    /// FloatProperty: current_length
+    /// FloatProperty: current_length<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float current_length
     {
@@ -352,7 +361,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RangeScale
+    /// FloatProperty: RangeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RangeScale
     {
@@ -361,7 +371,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DesiredRangeScale
+    /// FloatProperty: DesiredRangeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DesiredRangeScale
     {
@@ -370,7 +381,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RangeScaleChangeRate
+    /// FloatProperty: RangeScaleChangeRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RangeScaleChangeRate
     {
@@ -379,7 +391,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LaserFXLength
+    /// FloatProperty: LaserFXLength<br/>
+    /// Default: 256
     /// </summary>
     public unsafe float LaserFXLength
     {
@@ -388,7 +401,8 @@ public partial class RVehicleScanLaser : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SizzleParam
+    /// FloatProperty: SizzleParam<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float SizzleParam
     {

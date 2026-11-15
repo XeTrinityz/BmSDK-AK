@@ -133,7 +133,8 @@ public partial class RFlaps_ConstraintSetupCone : BmSDK.Engine.RFlaps_Constraint
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference>(Ptr + 224);
 
     /// <summary>
-    /// FloatProperty: ConeAngle
+    /// FloatProperty: ConeAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float ConeAngle
     {
@@ -142,7 +143,8 @@ public partial class RFlaps_ConstraintSetupCone : BmSDK.Engine.RFlaps_Constraint
     }
 
     /// <summary>
-    /// FloatProperty: ConePerpAngle
+    /// FloatProperty: ConePerpAngle<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float ConePerpAngle
     {

@@ -88,7 +88,8 @@ public partial class SeqVar_RandomFloat : BmSDK.Engine.SeqVar_Float, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: Max
+    /// FloatProperty: Max<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Max
     {

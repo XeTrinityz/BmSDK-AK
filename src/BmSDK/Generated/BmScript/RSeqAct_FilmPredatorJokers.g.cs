@@ -164,7 +164,8 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenJokersAfterDialogue
+    /// FloatProperty: MinTimeBetweenJokersAfterDialogue<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinTimeBetweenJokersAfterDialogue
     {
@@ -173,7 +174,8 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxRangeForSpawn
+    /// FloatProperty: MaxRangeForSpawn<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaxRangeForSpawn
     {
@@ -182,7 +184,8 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxRangeBeforeDelete
+    /// FloatProperty: MaxRangeBeforeDelete<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float MaxRangeBeforeDelete
     {

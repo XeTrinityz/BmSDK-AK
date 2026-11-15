@@ -109,7 +109,8 @@ public partial class RVehicleSimFlyingNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxThrust
+    /// FloatProperty: MaxThrust<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MaxThrust
     {
@@ -127,7 +128,8 @@ public partial class RVehicleSimFlyingNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: WanderPeriod
+    /// StructProperty: WanderPeriod<br/>
+    /// Default: (X=2,Y=2,Z=2)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 WanderPeriod
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 208);

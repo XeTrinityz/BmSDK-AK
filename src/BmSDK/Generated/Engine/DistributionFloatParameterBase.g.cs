@@ -103,7 +103,8 @@ public partial class DistributionFloatParameterBase : BmSDK.Engine.DistributionF
     }
 
     /// <summary>
-    /// FloatProperty: MaxInput
+    /// FloatProperty: MaxInput<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxInput
     {
@@ -121,7 +122,8 @@ public partial class DistributionFloatParameterBase : BmSDK.Engine.DistributionF
     }
 
     /// <summary>
-    /// FloatProperty: MaxOutput
+    /// FloatProperty: MaxOutput<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxOutput
     {

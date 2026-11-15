@@ -101,7 +101,8 @@ public partial class DOFAndBloomEffect : BmSDK.Engine.DOFEffect, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: BloomOverload
+    /// FloatProperty: BloomOverload<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float BloomOverload
     {
@@ -110,7 +111,8 @@ public partial class DOFAndBloomEffect : BmSDK.Engine.DOFEffect, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: BloomLowerCut
+    /// FloatProperty: BloomLowerCut<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float BloomLowerCut
     {

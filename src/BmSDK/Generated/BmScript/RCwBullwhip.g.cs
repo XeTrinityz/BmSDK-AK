@@ -758,7 +758,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ByteProperty: AimingConfig
+        /// ByteProperty: AimingConfig<br/>
+        /// Default: ACD_NullAimingConfig
         /// </summary>
         public unsafe BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimingConfig
         {
@@ -822,7 +823,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: BatarangTargets
+    /// BoolProperty: BatarangTargets<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BatarangTargets
     {
@@ -903,7 +905,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VictimHitReactionAnimSet
+    /// ObjectProperty: VictimHitReactionAnimSet<br/>
+    /// Default: Anim_Catwoman_Thug_Gadget.Code.TG_CW_Whip
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet VictimHitReactionAnimSet
     {
@@ -963,7 +966,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2152);
 
     /// <summary>
-    /// FloatProperty: WhipRange
+    /// FloatProperty: WhipRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float WhipRange
     {
@@ -972,7 +976,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: NormalTargetAngle
+    /// FloatProperty: NormalTargetAngle<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float NormalTargetAngle
     {
@@ -981,7 +986,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetRange
+    /// FloatProperty: AutoTargetRange<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float AutoTargetRange
     {
@@ -990,7 +996,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AutoTargetAngle
+    /// FloatProperty: AutoTargetAngle<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float AutoTargetAngle
     {
@@ -1030,7 +1037,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
     public unsafe ref BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirectionsContainer ThrowDirectionTypes_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirectionsContainer>(Ptr + 2204);
     /// <summary>
-    /// StructProperty: ThrowDirectionTypes
+    /// StructProperty: ThrowDirectionTypes<br/>
+    /// Default: (ThrowDirections=((ThrowAnims=(Whip_Disarm),AimingConfig=ACD_GadgetAimingConfig),(ThrowAnims=(Whip_Disarm_Back),AimingConfig=ACD_NoAimingAimingConfig,MinAngle=135,MaxAngle=-135),(ThrowAnims=(Whip_Disa...
     /// </summary>
     public unsafe ref BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirectionsContainer ThrowDirectionTypes_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirectionsContainer>(Ptr + 2220);
@@ -1091,7 +1099,8 @@ public partial class RCwBullwhip : BmSDK.BmGame.RWhipBase, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RCwBullwhip.FBatarangThrowDirectionsContainer>(Ptr + 2396);
 
     /// <summary>
-    /// FloatProperty: MinTripDistance
+    /// FloatProperty: MinTripDistance<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinTripDistance
     {

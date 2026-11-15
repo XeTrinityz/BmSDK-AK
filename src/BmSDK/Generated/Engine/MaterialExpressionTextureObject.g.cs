@@ -79,7 +79,8 @@ public partial class MaterialExpressionTextureObject : BmSDK.Engine.MaterialExpr
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: Texture
+    /// ObjectProperty: Texture<br/>
+    /// Default: EngineResources.DefaultTexture
     /// </summary>
     public unsafe BmSDK.Engine.Texture Texture
     {

@@ -100,7 +100,8 @@ public partial class AkSDRelationshipIn : BmSDK.AkAudio.AkSDRelationship, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: InSeconds
+    /// FloatProperty: InSeconds<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float InSeconds
     {

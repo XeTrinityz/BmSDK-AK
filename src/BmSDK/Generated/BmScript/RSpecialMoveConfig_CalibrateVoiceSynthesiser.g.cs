@@ -249,7 +249,8 @@ public partial class RSpecialMoveConfig_CalibrateVoiceSynthesiser : BmSDK.BmGame
     }
 
     /// <summary>
-    /// StructProperty: DOFSettings
+    /// StructProperty: DOFSettings<br/>
+    /// Default: (ApertureStop=22,FocusDistance=220,InterpolationDuration=1,BloomScale=1,bEnableDOF=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FDofStruct DOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FDofStruct>(Ptr + 492);

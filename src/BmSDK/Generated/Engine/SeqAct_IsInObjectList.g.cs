@@ -79,7 +79,8 @@ public partial class SeqAct_IsInObjectList : BmSDK.Engine.SequenceAction, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bCheckForAllObjects
+    /// BoolProperty: bCheckForAllObjects<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckForAllObjects
     {

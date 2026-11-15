@@ -120,13 +120,15 @@ public partial class RVentChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: GoingUpStartOffset
+    /// StructProperty: GoingUpStartOffset<br/>
+    /// Default: (X=256,Z=192)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GoingUpStartOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1256);
 
     /// <summary>
-    /// StructProperty: GoingDownStartOffset
+    /// StructProperty: GoingDownStartOffset<br/>
+    /// Default: (X=256,Z=-192)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GoingDownStartOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1268);
@@ -150,7 +152,8 @@ public partial class RVentChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: maxPitch
+    /// IntProperty: maxPitch<br/>
+    /// Default: 8192
     /// </summary>
     public unsafe int maxPitch
     {
@@ -159,7 +162,8 @@ public partial class RVentChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// IntProperty: MinPitch
+    /// IntProperty: MinPitch<br/>
+    /// Default: -8192
     /// </summary>
     public unsafe int MinPitch
     {

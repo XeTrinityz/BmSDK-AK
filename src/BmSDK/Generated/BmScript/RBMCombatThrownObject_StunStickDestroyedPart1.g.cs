@@ -163,7 +163,8 @@ public partial class RBMCombatThrownObject_StunStickDestroyedPart1 : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: StunStickFX
+    /// ComponentProperty: StunStickFX<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_StunStickDestroyedPart1.OnFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StunStickFX
     {
@@ -172,7 +173,8 @@ public partial class RBMCombatThrownObject_StunStickDestroyedPart1 : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: SSAudible
+    /// ObjectProperty: SSAudible<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_StunStickDestroyedPart1.SSAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible SSAudible
     {
@@ -181,7 +183,8 @@ public partial class RBMCombatThrownObject_StunStickDestroyedPart1 : BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: ElectricLight
+    /// ComponentProperty: ElectricLight<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_StunStickDestroyedPart1.CheapLight
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent ElectricLight
     {

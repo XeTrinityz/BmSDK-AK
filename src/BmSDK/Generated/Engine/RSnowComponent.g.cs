@@ -161,7 +161,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     public partial record struct FRockSnowSettings
     {
         /// <summary>
-        /// FloatProperty: Density
+        /// FloatProperty: Density<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Density
         {
@@ -170,7 +171,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: Width
+        /// FloatProperty: Width<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Width
         {
@@ -179,7 +181,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: SnowTexture
+        /// ObjectProperty: SnowTexture<br/>
+        /// Default: VFX_Generic.Textures.Circular_Fade
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D SnowTexture
         {
@@ -188,7 +191,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// ObjectProperty: SnowStreakTexture
+        /// ObjectProperty: SnowStreakTexture<br/>
+        /// Default: VFX_Generic.Textures.Circular_Fade
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D SnowStreakTexture
         {
@@ -206,7 +210,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: SnowProximityRadius
+        /// FloatProperty: SnowProximityRadius<br/>
+        /// Default: 800
         /// </summary>
         public unsafe float SnowProximityRadius
         {
@@ -215,7 +220,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         }
 
         /// <summary>
-        /// IntProperty: SnowProximityRange
+        /// IntProperty: SnowProximityRange<br/>
+        /// Default: 14
         /// </summary>
         public unsafe int SnowProximityRange
         {
@@ -234,7 +240,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: ParticleCount
+    /// IntProperty: ParticleCount<br/>
+    /// Default: 40960
     /// </summary>
     public unsafe int ParticleCount
     {
@@ -243,7 +250,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BoxSize
+    /// FloatProperty: BoxSize<br/>
+    /// Default: 1536
     /// </summary>
     public unsafe float BoxSize
     {
@@ -261,7 +269,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bHasMotionBlurTexture
+    /// BoolProperty: bHasMotionBlurTexture<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHasMotionBlurTexture
     {
@@ -270,7 +279,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: SnowSettings
+    /// StructProperty: SnowSettings<br/>
+    /// Default: (Density=1,Width=1,SnowTexture=VFX_Generic.Textures.Circular_Fade,SnowStreakTexture=VFX_Generic.Textures.Circular_Fade,SnowProximityRadius=800,SnowProximityRange=14)
     /// </summary>
     public unsafe ref BmSDK.Engine.RSnowComponent.FRockSnowSettings SnowSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RSnowComponent.FRockSnowSettings>(Ptr + 556);

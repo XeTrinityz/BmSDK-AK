@@ -2053,7 +2053,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: FavouredSector
+        /// IntProperty: FavouredSector<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int FavouredSector
         {
@@ -2165,7 +2166,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: CurrentDifficulty
+        /// StructProperty: CurrentDifficulty<br/>
+        /// Default: (MaxEnemiesForFireSpeed=10,FireIntervalForOneEnemy=1.5,FireIntervalForMaxEnemies=0.5,AttackWarningTime=1,AttackWarningTimeForOneEnemy=0.75,MaxSimultaneousAttackSpacing=750,SimultaneousAttackInterval=0...
         /// </summary>
         public unsafe BmSDK.BmGame.RVehicleCombatManager.FVehicleEnemyAttacksContainer CurrentDifficulty
         {
@@ -2655,7 +2657,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FVehicleEnemyAttacksContainer
     {
         /// <summary>
-        /// IntProperty: MaxEnemiesForFireSpeed
+        /// IntProperty: MaxEnemiesForFireSpeed<br/>
+        /// Default: 10
         /// </summary>
         public unsafe int MaxEnemiesForFireSpeed
         {
@@ -2664,7 +2667,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FireIntervalForOneEnemy
+        /// FloatProperty: FireIntervalForOneEnemy<br/>
+        /// Default: 1.5
         /// </summary>
         public unsafe float FireIntervalForOneEnemy
         {
@@ -2673,7 +2677,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FireIntervalForMaxEnemies
+        /// FloatProperty: FireIntervalForMaxEnemies<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float FireIntervalForMaxEnemies
         {
@@ -2682,7 +2687,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AttackWarningTime
+        /// FloatProperty: AttackWarningTime<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float AttackWarningTime
         {
@@ -2691,7 +2697,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AttackWarningTimeForOneEnemy
+        /// FloatProperty: AttackWarningTimeForOneEnemy<br/>
+        /// Default: 0.75
         /// </summary>
         public unsafe float AttackWarningTimeForOneEnemy
         {
@@ -2700,7 +2707,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxSimultaneousAttackSpacing
+        /// FloatProperty: MaxSimultaneousAttackSpacing<br/>
+        /// Default: 750
         /// </summary>
         public unsafe float MaxSimultaneousAttackSpacing
         {
@@ -2709,7 +2717,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SimultaneousAttackInterval
+        /// FloatProperty: SimultaneousAttackInterval<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float SimultaneousAttackInterval
         {
@@ -2718,7 +2727,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DamageMod
+        /// FloatProperty: DamageMod<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DamageMod
         {
@@ -2745,7 +2755,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: HeavyTankVisibilityTime
+        /// FloatProperty: HeavyTankVisibilityTime<br/>
+        /// Default: 2
         /// </summary>
         public unsafe float HeavyTankVisibilityTime
         {
@@ -2754,7 +2765,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: NumTankMissiles
+        /// FloatProperty: NumTankMissiles<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float NumTankMissiles
         {
@@ -2763,7 +2775,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DamageFireIntervalBonus
+        /// FloatProperty: DamageFireIntervalBonus<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DamageFireIntervalBonus
         {
@@ -2772,7 +2785,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DamageFireIntervalFalloff
+        /// FloatProperty: DamageFireIntervalFalloff<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float DamageFireIntervalFalloff
         {
@@ -2781,7 +2795,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ExtraWarningTimeAtStart
+        /// FloatProperty: ExtraWarningTimeAtStart<br/>
+        /// Default: 0.75
         /// </summary>
         public unsafe float ExtraWarningTimeAtStart
         {
@@ -2790,7 +2805,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: NumHitsToDecayWarningTime
+        /// FloatProperty: NumHitsToDecayWarningTime<br/>
+        /// Default: 8
         /// </summary>
         public unsafe float NumHitsToDecayWarningTime
         {
@@ -2808,7 +2824,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// ArrayProperty: MultipleAttackPct
+        /// ArrayProperty: MultipleAttackPct<br/>
+        /// Default: (1)
         /// </summary>
         public unsafe BmSDK.TArray<float> MultipleAttackPct
         {
@@ -3106,7 +3123,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CombatAttackPattern
+    /// ArrayProperty: CombatAttackPattern<br/>
+    /// Default: ((MaxEnemiesForFireSpeed=5,FireIntervalForOneEnemy=1.6,FireIntervalForMaxEnemies=1.6,AttackWarningTime=1.75,AttackWarningTimeForOneEnemy=0.75,MaxSimultaneousAttackSpacing=750,SimultaneousAttackInterva...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleCombatManager.FVehicleEnemyAttacksContainer> CombatAttackPattern
     {
@@ -3115,7 +3133,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PredatorAttackPattern
+    /// ArrayProperty: PredatorAttackPattern<br/>
+    /// Default: ((MaxEnemiesForFireSpeed=10,FireIntervalForOneEnemy=1.5,FireIntervalForMaxEnemies=0.5,AttackWarningTime=1,AttackWarningTimeForOneEnemy=0.75,MaxSimultaneousAttackSpacing=750,SimultaneousAttackInterval=...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleCombatManager.FVehicleEnemyAttacksContainer> PredatorAttackPattern
     {
@@ -3124,7 +3143,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: ChaseAttackPattern
+    /// ArrayProperty: ChaseAttackPattern<br/>
+    /// Default: ((MaxEnemiesForFireSpeed=1,FireIntervalForOneEnemy=2,FireIntervalForMaxEnemies=1.2,AttackWarningTime=2,AttackWarningTimeForOneEnemy=0.75,MaxSimultaneousAttackSpacing=100,SimultaneousAttackInterval=0.2...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleCombatManager.FVehicleEnemyAttacksContainer> ChaseAttackPattern
     {
@@ -3133,7 +3153,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: OverrideChapterDifficulty
+    /// IntProperty: OverrideChapterDifficulty<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideChapterDifficulty
     {
@@ -3268,7 +3289,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: CombatGroupType
+    /// ByteProperty: CombatGroupType<br/>
+    /// Default: EVGT_All
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleNPC.EVehicleGroupType CombatGroupType
     {
@@ -3277,7 +3299,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: ChaseDifficulty
+    /// ByteProperty: ChaseDifficulty<br/>
+    /// Default: EChaseDiff_Easy
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleCombatManager.EChaseDifficulty ChaseDifficulty
     {
@@ -3304,7 +3327,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: VolleyDamageMultiplier
+    /// ArrayProperty: VolleyDamageMultiplier<br/>
+    /// Default: (1,0.25,0.125,0.05)
     /// </summary>
     public unsafe BmSDK.TArray<float> VolleyDamageMultiplier
     {
@@ -3340,7 +3364,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SearchRadiusFor1Tank
+    /// FloatProperty: SearchRadiusFor1Tank<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float SearchRadiusFor1Tank
     {
@@ -3349,7 +3374,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SearchRadiusFactor
+    /// FloatProperty: SearchRadiusFactor<br/>
+    /// Default: 2200
     /// </summary>
     public unsafe float SearchRadiusFactor
     {
@@ -3385,7 +3411,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillFlushOut
+    /// FloatProperty: TimeTillFlushOut<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float TimeTillFlushOut
     {
@@ -3394,7 +3421,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DistrictClearedOfDrones
+    /// IntProperty: DistrictClearedOfDrones<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int DistrictClearedOfDrones
     {
@@ -3412,7 +3440,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumGroundAttackSectors
+    /// IntProperty: NumGroundAttackSectors<br/>
+    /// Default: 12
     /// </summary>
     public unsafe int NumGroundAttackSectors
     {
@@ -3421,7 +3450,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumAerialAttackSectors
+    /// IntProperty: NumAerialAttackSectors<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int NumAerialAttackSectors
     {
@@ -3430,7 +3460,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeToLoseBatman
+    /// FloatProperty: TimeToLoseBatman<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeToLoseBatman
     {
@@ -3493,7 +3524,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: GameChapterToVehicleChapterMap
+    /// ArrayProperty: GameChapterToVehicleChapterMap<br/>
+    /// Default: (0,1,2,3,3,4,4,5,5,6,6,7,8)
     /// </summary>
     public unsafe BmSDK.TArray<int> GameChapterToVehicleChapterMap
     {
@@ -3502,7 +3534,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PursuitModeWarningTimeMod
+    /// FloatProperty: PursuitModeWarningTimeMod<br/>
+    /// Default: 1.25
     /// </summary>
     public unsafe float PursuitModeWarningTimeMod
     {
@@ -3511,7 +3544,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ThreatLevelPing
+    /// FloatProperty: ThreatLevelPing<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float ThreatLevelPing
     {
@@ -3520,7 +3554,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnterCombatCommunicationRange
+    /// FloatProperty: EnterCombatCommunicationRange<br/>
+    /// Default: 6000
     /// </summary>
     public unsafe float EnterCombatCommunicationRange
     {
@@ -3529,7 +3564,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InCombatCommunicationRange
+    /// FloatProperty: InCombatCommunicationRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float InCombatCommunicationRange
     {
@@ -3538,7 +3574,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: PopulationKillsToTriggerSave
+    /// IntProperty: PopulationKillsToTriggerSave<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int PopulationKillsToTriggerSave
     {
@@ -3579,7 +3616,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     public InlineArray<int> BaseChallengeScorePerType => new(17, Ptr + 540, 4, this);
 
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int BaseChallengeScorePerType_0
     {
@@ -3587,7 +3625,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 540); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_1
     {
@@ -3595,7 +3634,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 544); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_2
     {
@@ -3603,7 +3643,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 548); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_3
     {
@@ -3611,7 +3652,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 552); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_4
     {
@@ -3619,7 +3661,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 556); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_5
     {
@@ -3627,7 +3670,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 560); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int BaseChallengeScorePerType_6
     {
@@ -3635,7 +3679,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 564); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_7
     {
@@ -3643,7 +3688,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 568); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int BaseChallengeScorePerType_8
     {
@@ -3651,7 +3697,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 572); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int BaseChallengeScorePerType_9
     {
@@ -3659,7 +3706,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 576); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int BaseChallengeScorePerType_10
     {
@@ -3667,7 +3715,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 580); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int BaseChallengeScorePerType_11
     {
@@ -3675,7 +3724,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 584); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int BaseChallengeScorePerType_12
     {
@@ -3683,7 +3733,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 588); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int BaseChallengeScorePerType_13
     {
@@ -3691,7 +3742,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 592); }
     }
     /// <summary>
-    /// IntProperty: BaseChallengeScorePerType
+    /// IntProperty: BaseChallengeScorePerType<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int BaseChallengeScorePerType_14
     {
@@ -3716,7 +3768,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SecondaryWeaponVariationBonus
+    /// ArrayProperty: SecondaryWeaponVariationBonus<br/>
+    /// Default: (0,25,50,125)
     /// </summary>
     public unsafe BmSDK.TArray<int> SecondaryWeaponVariationBonus
     {
@@ -3725,7 +3778,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SecondaryWeaponPowerBonus
+    /// ArrayProperty: SecondaryWeaponPowerBonus<br/>
+    /// Default: (25,50,125,250)
     /// </summary>
     public unsafe BmSDK.TArray<int> SecondaryWeaponPowerBonus
     {
@@ -3734,7 +3788,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SecondaryWeaponVariationChallengeBonus
+    /// ArrayProperty: SecondaryWeaponVariationChallengeBonus<br/>
+    /// Default: (0,250,500,1000)
     /// </summary>
     public unsafe BmSDK.TArray<int> SecondaryWeaponVariationChallengeBonus
     {
@@ -3743,7 +3798,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SecondaryWeaponPowerChallengeBonus
+    /// ArrayProperty: SecondaryWeaponPowerChallengeBonus<br/>
+    /// Default: (250,500,1000,2000)
     /// </summary>
     public unsafe BmSDK.TArray<int> SecondaryWeaponPowerChallengeBonus
     {
@@ -3752,7 +3808,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ChallengeNoHitBonus
+    /// IntProperty: ChallengeNoHitBonus<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int ChallengeNoHitBonus
     {
@@ -3761,7 +3818,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ChallengePerfectBonus
+    /// IntProperty: ChallengePerfectBonus<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe int ChallengePerfectBonus
     {
@@ -3797,7 +3855,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CriticalRunDuration
+    /// FloatProperty: CriticalRunDuration<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float CriticalRunDuration
     {
@@ -3806,7 +3865,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CriticalRunCriticalScore
+    /// IntProperty: CriticalRunCriticalScore<br/>
+    /// Default: 50
     /// </summary>
     public unsafe int CriticalRunCriticalScore
     {
@@ -3815,7 +3875,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CriticalRunPerfectScore
+    /// IntProperty: CriticalRunPerfectScore<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int CriticalRunPerfectScore
     {
@@ -3860,7 +3921,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumAbandonedXrayUpdatesPerFrame
+    /// IntProperty: NumAbandonedXrayUpdatesPerFrame<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int NumAbandonedXrayUpdatesPerFrame
     {

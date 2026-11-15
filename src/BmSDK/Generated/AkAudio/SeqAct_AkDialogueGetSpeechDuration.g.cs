@@ -101,7 +101,8 @@ public partial class SeqAct_AkDialogueGetSpeechDuration : BmSDK.AkAudio.SeqAct_A
     }
 
     /// <summary>
-    /// FloatProperty: LowerBound
+    /// FloatProperty: LowerBound<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float LowerBound
     {
@@ -110,7 +111,8 @@ public partial class SeqAct_AkDialogueGetSpeechDuration : BmSDK.AkAudio.SeqAct_A
     }
 
     /// <summary>
-    /// FloatProperty: UpperBound
+    /// FloatProperty: UpperBound<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float UpperBound
     {

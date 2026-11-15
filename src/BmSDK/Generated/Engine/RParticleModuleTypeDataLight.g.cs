@@ -106,25 +106,29 @@ public partial class RParticleModuleTypeDataLight : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// StructProperty: LightSizeOverride
+    /// StructProperty: LightSizeOverride<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(200,200,200,200),Distribution=Engine.Default__RParticleModuleTypeDataLight.DistributionLightSizeOverride)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat LightSizeOverride
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: FalloffExponent
+    /// StructProperty: FalloffExponent<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(2,2,2,2),Distribution=Engine.Default__RParticleModuleTypeDataLight.DistributionFalloffExponent)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat FalloffExponent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 136);
 
     /// <summary>
-    /// StructProperty: LightColourOverride
+    /// StructProperty: LightColourOverride<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(1,1,1,1,1,1,1,1),Distribution=Engine.Default__RParticleModuleTypeDataLight.DistributionLightColourOverride,MinRange=(X=1,Y=1,Z=1),Max...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector LightColourOverride
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 172);
 
     /// <summary>
-    /// StructProperty: LightBrightness
+    /// StructProperty: LightBrightness<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__RParticleModuleTypeDataLight.DistributionLightBrightness)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat LightBrightness
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 236);

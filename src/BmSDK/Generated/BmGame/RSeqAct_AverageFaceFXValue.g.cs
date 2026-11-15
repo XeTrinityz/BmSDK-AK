@@ -133,7 +133,8 @@ public partial class RSeqAct_AverageFaceFXValue : BmSDK.Engine.SeqAct_Latent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Scalar
+    /// FloatProperty: Scalar<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Scalar
     {

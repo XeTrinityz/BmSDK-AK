@@ -272,7 +272,8 @@ public partial class RRobinBatClaw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: HarpoonFireMissMove
+    /// ObjectProperty: HarpoonFireMissMove<br/>
+    /// Default: Robin_Special_Moves.ZipKick.FireZipKickMiss
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig HarpoonFireMissMove
     {
@@ -281,7 +282,8 @@ public partial class RRobinBatClaw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VantageFireMove
+    /// ObjectProperty: VantageFireMove<br/>
+    /// Default: Robin_Special_Moves.ZipKick.FireZipKickVantage
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig VantageFireMove
     {
@@ -290,7 +292,8 @@ public partial class RRobinBatClaw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: VantageFailMove
+    /// ObjectProperty: VantageFailMove<br/>
+    /// Default: Robin_Special_Moves.ZipKick.ZipKickVantageFail
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig VantageFailMove
     {
@@ -299,7 +302,8 @@ public partial class RRobinBatClaw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RailingFireMove
+    /// ObjectProperty: RailingFireMove<br/>
+    /// Default: Robin_Special_Moves.ZipKick.FireZipKickRailing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RailingFireMove
     {
@@ -308,7 +312,8 @@ public partial class RRobinBatClaw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RailingFailMove
+    /// ObjectProperty: RailingFailMove<br/>
+    /// Default: Robin_Special_Moves.ZipKick.ZipKickRailingFail
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RailingFailMove
     {

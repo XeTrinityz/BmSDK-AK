@@ -97,7 +97,8 @@ public partial class RRope2AutoLengthUpdater : BmSDK.BmGame.RRope2Updater, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: MaxAutoLength
+    /// FloatProperty: MaxAutoLength<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxAutoLength
     {
@@ -106,7 +107,8 @@ public partial class RRope2AutoLengthUpdater : BmSDK.BmGame.RRope2Updater, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: AutoLengthMultiplier
+    /// FloatProperty: AutoLengthMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AutoLengthMultiplier
     {
@@ -115,7 +117,8 @@ public partial class RRope2AutoLengthUpdater : BmSDK.BmGame.RRope2Updater, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: MaxLengthChangeSpeed
+    /// FloatProperty: MaxLengthChangeSpeed<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float MaxLengthChangeSpeed
     {

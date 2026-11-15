@@ -200,7 +200,8 @@ public partial class RRiddlerMechForceField : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: ForceFieldFx
+    /// ComponentProperty: ForceFieldFx<br/>
+    /// Default: BmScript.Default__RRiddlerMechForceField.NewForceFieldFx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ForceFieldFx
     {
@@ -245,7 +246,8 @@ public partial class RRiddlerMechForceField : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: TargetForceLevel
+    /// FloatProperty: TargetForceLevel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TargetForceLevel
     {
@@ -254,7 +256,8 @@ public partial class RRiddlerMechForceField : BmSDK.Engine.Actor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: DamageCheckTime
+    /// FloatProperty: DamageCheckTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageCheckTime
     {

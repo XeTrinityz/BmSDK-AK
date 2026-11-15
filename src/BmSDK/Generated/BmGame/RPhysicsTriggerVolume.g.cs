@@ -141,7 +141,8 @@ public partial class RPhysicsTriggerVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

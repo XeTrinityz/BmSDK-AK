@@ -102,7 +102,8 @@ public partial class RSeqAct_DetectVehiclesInVolume : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// FloatProperty: BeamHeight
+    /// FloatProperty: BeamHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float BeamHeight
     {
@@ -111,7 +112,8 @@ public partial class RSeqAct_DetectVehiclesInVolume : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// FloatProperty: BeamRadius
+    /// FloatProperty: BeamRadius<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float BeamRadius
     {

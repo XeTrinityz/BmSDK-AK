@@ -297,7 +297,8 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     }
 
     /// <summary>
-    /// FloatProperty: RiotZoneSpeedFactor
+    /// FloatProperty: RiotZoneSpeedFactor<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float RiotZoneSpeedFactor
     {
@@ -306,7 +307,8 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     }
 
     /// <summary>
-    /// FloatProperty: RandomExtraSpeedFactor
+    /// FloatProperty: RandomExtraSpeedFactor<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RandomExtraSpeedFactor
     {
@@ -315,7 +317,8 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     }
 
     /// <summary>
-    /// FloatProperty: GotoCombatBehaviourIfBatmobileInRange
+    /// FloatProperty: GotoCombatBehaviourIfBatmobileInRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float GotoCombatBehaviourIfBatmobileInRange
     {
@@ -393,7 +396,8 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 968);
 
     /// <summary>
-    /// IntProperty: UseLinkAfterUturn
+    /// IntProperty: UseLinkAfterUturn<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int UseLinkAfterUturn
     {

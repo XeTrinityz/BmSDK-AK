@@ -395,7 +395,8 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     }
 
     /// <summary>
-    /// BoolProperty: bAutoFadeIfBatmanTouches
+    /// BoolProperty: bAutoFadeIfBatmanTouches<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoFadeIfBatmanTouches
     {
@@ -422,7 +423,8 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     }
 
     /// <summary>
-    /// ObjectProperty: JokerDefine
+    /// ObjectProperty: JokerDefine<br/>
+    /// Default: MainCharacterDefines.Villain.JokerOnThugRig
     /// </summary>
     public unsafe BmSDK.BmGame.RCharacterDefine JokerDefine
     {
@@ -431,7 +433,8 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     }
 
     /// <summary>
-    /// ClassProperty: JokerCharacter
+    /// ClassProperty: JokerCharacter<br/>
+    /// Default: BmGame.RCharacter
     /// </summary>
     public unsafe BmSDK.Class JokerCharacter
     {
@@ -449,7 +452,8 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     }
 
     /// <summary>
-    /// FloatProperty: FadeSpeedMultiplier
+    /// FloatProperty: FadeSpeedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeSpeedMultiplier
     {

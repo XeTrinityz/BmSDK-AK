@@ -155,7 +155,8 @@ public partial class RDisableAIAlertsVolume : BmSDK.BmGame.RDisableAIAlertsVolum
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

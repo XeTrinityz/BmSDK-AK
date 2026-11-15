@@ -420,7 +420,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DiagonalInDelay
+    /// FloatProperty: DiagonalInDelay<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float DiagonalInDelay
     {
@@ -429,7 +430,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DiagonalOutDelay
+    /// FloatProperty: DiagonalOutDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float DiagonalOutDelay
     {
@@ -438,7 +440,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SelectedColumn
+    /// ByteProperty: SelectedColumn<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte SelectedColumn
     {
@@ -447,7 +450,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SelectedRow
+    /// ByteProperty: SelectedRow<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte SelectedRow
     {
@@ -456,7 +460,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: LastColumn
+    /// ByteProperty: LastColumn<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte LastColumn
     {
@@ -465,7 +470,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: LastRow
+    /// ByteProperty: LastRow<br/>
+    /// Default: 1
     /// </summary>
     public unsafe byte LastRow
     {
@@ -501,7 +507,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DoubleTapTimer
+    /// FloatProperty: DoubleTapTimer<br/>
+    /// Default: -10000
     /// </summary>
     public unsafe float DoubleTapTimer
     {

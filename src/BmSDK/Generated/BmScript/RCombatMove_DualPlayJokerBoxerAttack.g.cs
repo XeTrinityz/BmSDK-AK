@@ -1467,7 +1467,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 924);
 
     /// <summary>
-    /// ArrayProperty: AttackList
+    /// ArrayProperty: AttackList<br/>
+    /// Default: (NEW_Clash_01_Fail,NEW_Clash_02_Fail,NEW_Clash_03_Fail,NEW_Clash_04_Fail)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> AttackList
     {
@@ -1476,7 +1477,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// ArrayProperty: CounterList
+    /// ArrayProperty: CounterList<br/>
+    /// Default: (NEW_Clash_01_Success,NEW_Clash_02_Success,NEW_Clash_03_Success,NEW_Clash_04_Success)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> CounterList
     {
@@ -1485,7 +1487,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// ArrayProperty: IdleList
+    /// ArrayProperty: IdleList<br/>
+    /// Default: (NEW_Clash_01_Beatdown_Idle,NEW_Clash_02_Beatdown_Idle,NEW_Clash_03_Beatdown_Idle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IdleList
     {
@@ -1539,7 +1542,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.2,LocAmplitude=(X=2.7,Y=2.7,Z=2),LocFrequency=(X=20,Y=20,Z=20),RotAmplitude=(X=200,Y=50,Z=50),RotFrequency=(X=5.5,Y=5.5,Z=5.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Frequency...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 1008);
@@ -1644,7 +1648,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float AttackRange
     {
@@ -1677,7 +1682,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: MaxGrabTime
+    /// FloatProperty: MaxGrabTime<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float MaxGrabTime
     {
@@ -1695,7 +1701,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// NameProperty: GetInAnimName
+    /// NameProperty: GetInAnimName<br/>
+    /// Default: NEW_BM_RB_Clash_In_01
     /// </summary>
     public unsafe BmSDK.FName GetInAnimName
     {
@@ -1704,7 +1711,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// NameProperty: GetInIdleAnimName
+    /// NameProperty: GetInIdleAnimName<br/>
+    /// Default: NEW_BM_RB_Clash_In_Idle
     /// </summary>
     public unsafe BmSDK.FName GetInIdleAnimName
     {
@@ -1722,7 +1730,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: MinIntoAnimDist
+    /// FloatProperty: MinIntoAnimDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float MinIntoAnimDist
     {
@@ -1731,7 +1740,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: MaxIntoAnimDist
+    /// FloatProperty: MaxIntoAnimDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxIntoAnimDist
     {
@@ -1740,7 +1750,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: MinDurationScale
+    /// FloatProperty: MinDurationScale<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MinDurationScale
     {
@@ -1749,7 +1760,8 @@ public partial class RCombatMove_DualPlayJokerBoxerAttack : BmSDK.BmGame.RCombat
     }
 
     /// <summary>
-    /// FloatProperty: MaxDurationScale
+    /// FloatProperty: MaxDurationScale<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float MaxDurationScale
     {

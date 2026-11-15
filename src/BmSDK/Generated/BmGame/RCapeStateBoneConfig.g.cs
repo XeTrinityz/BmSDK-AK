@@ -148,7 +148,8 @@ public partial class RCapeStateBoneConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: IsCollide
+        /// BoolProperty: IsCollide<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool IsCollide
         {
@@ -184,7 +185,8 @@ public partial class RCapeStateBoneConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AnimDriveJointLinearComponentStrengthOverride
+        /// FloatProperty: AnimDriveJointLinearComponentStrengthOverride<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float AnimDriveJointLinearComponentStrengthOverride
         {
@@ -193,7 +195,8 @@ public partial class RCapeStateBoneConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AnimDriveJointAngularComponentStrengthOverride
+        /// FloatProperty: AnimDriveJointAngularComponentStrengthOverride<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float AnimDriveJointAngularComponentStrengthOverride
         {
@@ -202,7 +205,8 @@ public partial class RCapeStateBoneConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bPushUsingParentComponentBone
+        /// BoolProperty: bPushUsingParentComponentBone<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPushUsingParentComponentBone
         {
@@ -238,7 +242,8 @@ public partial class RCapeStateBoneConfig : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bPushUsingParentComponentBone2
+        /// BoolProperty: bPushUsingParentComponentBone2<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bPushUsingParentComponentBone2
         {

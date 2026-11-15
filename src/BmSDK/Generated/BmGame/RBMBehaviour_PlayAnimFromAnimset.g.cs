@@ -182,7 +182,8 @@ public partial class RBMBehaviour_PlayAnimFromAnimset : BmSDK.BmGame.RBMBehaviou
     }
 
     /// <summary>
-    /// NameProperty: DestMovementStance
+    /// NameProperty: DestMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName DestMovementStance
     {
@@ -191,7 +192,8 @@ public partial class RBMBehaviour_PlayAnimFromAnimset : BmSDK.BmGame.RBMBehaviou
     }
 
     /// <summary>
-    /// NameProperty: DestWeaponStance
+    /// NameProperty: DestWeaponStance<br/>
+    /// Default: Relaxed
     /// </summary>
     public unsafe BmSDK.FName DestWeaponStance
     {
@@ -200,7 +202,8 @@ public partial class RBMBehaviour_PlayAnimFromAnimset : BmSDK.BmGame.RBMBehaviou
     }
 
     /// <summary>
-    /// IntProperty: ShowFrames
+    /// IntProperty: ShowFrames<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ShowFrames
     {

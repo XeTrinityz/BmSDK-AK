@@ -130,7 +130,8 @@ public partial class RSeqAct_ExitVehicleWithAnim : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: MaxVehicleVelocity
+    /// FloatProperty: MaxVehicleVelocity<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MaxVehicleVelocity
     {

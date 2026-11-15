@@ -106,7 +106,8 @@ public partial class RSeqAct_ReduceCombatBarkFrequency : BmSDK.Engine.SequenceAc
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenBarkMultiplier
+    /// FloatProperty: TimeBetweenBarkMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TimeBetweenBarkMultiplier
     {

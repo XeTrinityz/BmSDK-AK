@@ -204,7 +204,8 @@ public partial class MCrowdSequence_CrowTrail : BmSDK.BmGame.RCrowdSequence, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: BatMobileTrailFX
+    /// ComponentProperty: BatMobileTrailFX<br/>
+    /// Default: BmGame.Default__MCrowdSequence_CrowTrail.BatMobileTrailFX0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatMobileTrailFX
     {
@@ -285,7 +286,8 @@ public partial class MCrowdSequence_CrowTrail : BmSDK.BmGame.RCrowdSequence, BmS
     }
 
     /// <summary>
-    /// FloatProperty: EffectOnBatmobileScalar
+    /// FloatProperty: EffectOnBatmobileScalar<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float EffectOnBatmobileScalar
     {
@@ -312,7 +314,8 @@ public partial class MCrowdSequence_CrowTrail : BmSDK.BmGame.RCrowdSequence, BmS
     }
 
     /// <summary>
-    /// FloatProperty: BlendVelocityFactor
+    /// FloatProperty: BlendVelocityFactor<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendVelocityFactor
     {

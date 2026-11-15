@@ -123,7 +123,8 @@ public partial class DistributionVectorUniform : BmSDK.DistributionVector, BmSDK
     public InlineArray<BmSDK.DistributionVector.EDistributionVectorMirrorFlags> MirrorFlags => new(3, Ptr + 141, 1, this);
 
     /// <summary>
-    /// ByteProperty: MirrorFlags
+    /// ByteProperty: MirrorFlags<br/>
+    /// Default: EDVMF_Different
     /// </summary>
     public unsafe BmSDK.DistributionVector.EDistributionVectorMirrorFlags MirrorFlags_0
     {
@@ -131,7 +132,8 @@ public partial class DistributionVectorUniform : BmSDK.DistributionVector, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 141); }
     }
     /// <summary>
-    /// ByteProperty: MirrorFlags
+    /// ByteProperty: MirrorFlags<br/>
+    /// Default: EDVMF_Different
     /// </summary>
     public unsafe BmSDK.DistributionVector.EDistributionVectorMirrorFlags MirrorFlags_1
     {
@@ -139,7 +141,8 @@ public partial class DistributionVectorUniform : BmSDK.DistributionVector, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 142); }
     }
     /// <summary>
-    /// ByteProperty: MirrorFlags
+    /// ByteProperty: MirrorFlags<br/>
+    /// Default: EDVMF_Different
     /// </summary>
     public unsafe BmSDK.DistributionVector.EDistributionVectorMirrorFlags MirrorFlags_2
     {

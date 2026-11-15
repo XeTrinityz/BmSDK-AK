@@ -79,7 +79,8 @@ public partial class RParticleModuleSizeByVelocity : BmSDK.Engine.ParticleModule
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: SizeMultiplierMin
+    /// StructProperty: SizeMultiplierMin<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SizeMultiplierMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 96);
@@ -94,7 +95,8 @@ public partial class RParticleModuleSizeByVelocity : BmSDK.Engine.ParticleModule
     }
 
     /// <summary>
-    /// StructProperty: SizeMultiplierMax
+    /// StructProperty: SizeMultiplierMax<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 SizeMultiplierMax
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 112);

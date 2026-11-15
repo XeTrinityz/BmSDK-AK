@@ -79,7 +79,8 @@ public partial class RDummyTarget_Dialogue : BmSDK.BmGame.RDummyTarget, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: DialogueComponent
+    /// ComponentProperty: DialogueComponent<br/>
+    /// Default: BmGame.Default__RDummyTarget_Dialogue.RDummyTarget_Dialogue_AkDialogueComponent
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueComponent DialogueComponent
     {

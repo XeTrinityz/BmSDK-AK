@@ -79,7 +79,8 @@ public partial class RParticleModuleLighting : BmSDK.Engine.ParticleModuleColorB
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: Strength
+    /// FloatProperty: Strength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Strength
     {

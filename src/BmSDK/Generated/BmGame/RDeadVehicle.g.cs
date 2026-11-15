@@ -651,7 +651,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// ObjectProperty: AudioPhysicalMaterialOverride
+    /// ObjectProperty: AudioPhysicalMaterialOverride<br/>
+    /// Default: PhysicalMaterials.Vehicles.Armoured_Tank_DEAD
     /// </summary>
     public unsafe BmSDK.Engine.PhysicalMaterial AudioPhysicalMaterialOverride
     {
@@ -1193,7 +1194,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: DeformParticlesSmallThreshold
+    /// FloatProperty: DeformParticlesSmallThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DeformParticlesSmallThreshold
     {
@@ -1202,7 +1204,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: DeformParticlesMediumThreshold
+    /// FloatProperty: DeformParticlesMediumThreshold<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float DeformParticlesMediumThreshold
     {
@@ -1211,7 +1214,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: DeformParticlesLargeThreshold
+    /// FloatProperty: DeformParticlesLargeThreshold<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float DeformParticlesLargeThreshold
     {
@@ -1220,7 +1224,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesSmallThreshold
+    /// FloatProperty: ImpactParticlesSmallThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float ImpactParticlesSmallThreshold
     {
@@ -1229,7 +1234,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesMediumThreshold
+    /// FloatProperty: ImpactParticlesMediumThreshold<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ImpactParticlesMediumThreshold
     {
@@ -1238,7 +1244,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
     }
 
     /// <summary>
-    /// FloatProperty: ImpactParticlesLargeThreshold
+    /// FloatProperty: ImpactParticlesLargeThreshold<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float ImpactParticlesLargeThreshold
     {
@@ -1262,7 +1269,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1020);
 
     /// <summary>
-    /// FloatProperty: HowFarCanItFall
+    /// FloatProperty: HowFarCanItFall<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float HowFarCanItFall
     {

@@ -116,7 +116,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FinalProportion
+    /// FloatProperty: FinalProportion<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FinalProportion
     {
@@ -125,7 +126,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: DownloadPeriod
+    /// FloatProperty: DownloadPeriod<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DownloadPeriod
     {
@@ -134,7 +136,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// FloatProperty: PostDownloadDisplayPeriod
+    /// FloatProperty: PostDownloadDisplayPeriod<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float PostDownloadDisplayPeriod
     {
@@ -143,7 +146,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: InitialiseText
+    /// StrProperty: InitialiseText<br/>
+    /// Default: "$GFxUI.DownloadProgress.Initialise"
     /// </summary>
     public unsafe BmSDK.FString InitialiseText
     {
@@ -152,7 +156,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: DownloadText
+    /// StrProperty: DownloadText<br/>
+    /// Default: "$GFxUI.DownloadProgress.Download"
     /// </summary>
     public unsafe BmSDK.FString DownloadText
     {
@@ -161,7 +166,8 @@ public partial class RSeqAct_DownloadProgress : BmSDK.Engine.SequenceAction, BmS
     }
 
     /// <summary>
-    /// StrProperty: CompleteText
+    /// StrProperty: CompleteText<br/>
+    /// Default: "$GFxUI.DownloadProgress.Complete"
     /// </summary>
     public unsafe BmSDK.FString CompleteText
     {

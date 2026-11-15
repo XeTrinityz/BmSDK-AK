@@ -198,7 +198,8 @@ public partial class RGuardVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDoPerimDialogue
+    /// BoolProperty: bDoPerimDialogue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDoPerimDialogue
     {
@@ -270,7 +271,8 @@ public partial class RGuardVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: GuardDialogueType
+    /// NameProperty: GuardDialogueType<br/>
+    /// Default: FV_GUARDTYPE_Zone
     /// </summary>
     public unsafe BmSDK.FName GuardDialogueType
     {

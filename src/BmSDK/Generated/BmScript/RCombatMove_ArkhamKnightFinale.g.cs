@@ -502,7 +502,8 @@ public partial class RCombatMove_ArkhamKnightFinale : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AttackAnimName
+    /// NameProperty: AttackAnimName<br/>
+    /// Default: RH_Attack_Combo
     /// </summary>
     public unsafe BmSDK.FName AttackAnimName
     {
@@ -511,7 +512,8 @@ public partial class RCombatMove_ArkhamKnightFinale : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AttackHitAnimName
+    /// NameProperty: AttackHitAnimName<br/>
+    /// Default: RH_Attack_Combo_Hit_Reactions
     /// </summary>
     public unsafe BmSDK.FName AttackHitAnimName
     {

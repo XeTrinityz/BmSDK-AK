@@ -191,7 +191,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NormalMapLayer
+    /// IntProperty: NormalMapLayer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int NormalMapLayer
     {
@@ -263,7 +264,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxTesselationLevel
+    /// IntProperty: MaxTesselationLevel<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MaxTesselationLevel
     {
@@ -272,7 +274,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinTessellationLevel
+    /// IntProperty: MinTessellationLevel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MinTessellationLevel
     {
@@ -281,7 +284,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TesselationDistanceScale
+    /// FloatProperty: TesselationDistanceScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TesselationDistanceScale
     {
@@ -290,7 +294,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TessellationCheckDistance
+    /// FloatProperty: TessellationCheckDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TessellationCheckDistance
     {
@@ -299,7 +304,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CollisionTesselationLevel
+    /// IntProperty: CollisionTesselationLevel<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int CollisionTesselationLevel
     {
@@ -342,7 +348,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumPatchesX
+    /// IntProperty: NumPatchesX<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumPatchesX
     {
@@ -351,7 +358,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumPatchesY
+    /// IntProperty: NumPatchesY<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumPatchesY
     {
@@ -360,7 +368,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxComponentSize
+    /// IntProperty: MaxComponentSize<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int MaxComponentSize
     {
@@ -369,7 +378,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: StaticLightingResolution
+    /// IntProperty: StaticLightingResolution<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int StaticLightingResolution
     {
@@ -387,7 +397,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBilinearFilterLightmapGeneration
+    /// BoolProperty: bBilinearFilterLightmapGeneration<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBilinearFilterLightmapGeneration
     {
@@ -396,7 +407,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCastShadow
+    /// BoolProperty: bCastShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastShadow
     {
@@ -405,7 +417,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bForceDirectLightMap
+    /// BoolProperty: bForceDirectLightMap<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceDirectLightMap
     {
@@ -414,7 +427,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCastDynamicShadow
+    /// BoolProperty: bCastDynamicShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastDynamicShadow
     {
@@ -432,7 +446,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bBlockRigidBody
+    /// BoolProperty: bBlockRigidBody<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBlockRigidBody
     {
@@ -450,7 +465,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAcceptsDynamicLights
+    /// BoolProperty: bAcceptsDynamicLights<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAcceptsDynamicLights
     {
@@ -531,13 +547,15 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightingChannels
+    /// StructProperty: LightingChannels<br/>
+    /// Default: (bInitialized=true,Static=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 896);
 
     /// <summary>
-    /// StructProperty: LightmassSettings
+    /// StructProperty: LightmassSettings<br/>
+    /// Default: (bUmbraIsOccluder=true,EmissiveLightFalloffExponent=2,EmissiveBoost=1,DiffuseBoost=1,SpecularBoost=1,FullyOccludedSamplesFraction=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings LightmassSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.EngineTypes.FLightmassPrimitiveSettings>(Ptr + 900);
@@ -570,7 +588,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: WireframeColor
+    /// StructProperty: WireframeColor<br/>
+    /// Default: (B=255,G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WireframeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 956);
@@ -614,7 +633,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: AlphaMapIndex
+        /// IntProperty: AlphaMapIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int AlphaMapIndex
         {
@@ -639,7 +659,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MinScale
+        /// FloatProperty: MinScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MinScale
         {
@@ -648,7 +669,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: MaxScale
+        /// FloatProperty: MaxScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float MaxScale
         {
@@ -657,7 +679,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Density
+        /// FloatProperty: Density<br/>
+        /// Default: 0.01
         /// </summary>
         public unsafe float Density
         {
@@ -778,7 +801,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: AlphaMapIndex
+        /// IntProperty: AlphaMapIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int AlphaMapIndex
         {
@@ -814,7 +838,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: HighlightColor
+        /// StructProperty: HighlightColor<br/>
+        /// Default: (B=255,G=255,R=255)
         /// </summary>
         public unsafe BmSDK.GameObject.FColor HighlightColor
         {

@@ -94,7 +94,8 @@ public partial class MorphNodeWeightByBoneAngle : BmSDK.Engine.MorphNodeWeightBa
         }
 
         /// <summary>
-        /// FloatProperty: TargetWeight
+        /// FloatProperty: TargetWeight<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float TargetWeight
         {
@@ -131,7 +132,8 @@ public partial class MorphNodeWeightByBoneAngle : BmSDK.Engine.MorphNodeWeightBa
     }
 
     /// <summary>
-    /// ByteProperty: BaseBoneAxis
+    /// ByteProperty: BaseBoneAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis BaseBoneAxis
     {
@@ -140,7 +142,8 @@ public partial class MorphNodeWeightByBoneAngle : BmSDK.Engine.MorphNodeWeightBa
     }
 
     /// <summary>
-    /// ByteProperty: AngleBoneAxis
+    /// ByteProperty: AngleBoneAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis AngleBoneAxis
     {
@@ -212,7 +215,8 @@ public partial class MorphNodeWeightByBoneAngle : BmSDK.Engine.MorphNodeWeightBa
     }
 
     /// <summary>
-    /// ArrayProperty: WeightArray
+    /// ArrayProperty: WeightArray<br/>
+    /// Default: ((),(Angle=180,TargetWeight=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MorphNodeWeightByBoneAngle.FBoneAngleMorph> WeightArray
     {

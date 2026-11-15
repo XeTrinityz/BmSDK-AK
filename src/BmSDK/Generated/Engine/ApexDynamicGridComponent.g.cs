@@ -617,7 +617,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: poolDimX
+    /// ByteProperty: poolDimX<br/>
+    /// Default: DG_BLOCKS_16
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridPoolDim poolDimX
     {
@@ -626,7 +627,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: poolDimY
+    /// ByteProperty: poolDimY<br/>
+    /// Default: DG_BLOCKS_8
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridPoolDim poolDimY
     {
@@ -635,7 +637,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: poolDimZ
+    /// ByteProperty: poolDimZ<br/>
+    /// Default: DG_BLOCKS_8
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridPoolDim poolDimZ
     {
@@ -644,7 +647,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: boundingGridDimX
+    /// ByteProperty: boundingGridDimX<br/>
+    /// Default: DG_VBLOCKS_64
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridBoundingGridDim boundingGridDimX
     {
@@ -653,7 +657,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: boundingGridDimY
+    /// ByteProperty: boundingGridDimY<br/>
+    /// Default: DG_VBLOCKS_64
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridBoundingGridDim boundingGridDimY
     {
@@ -662,7 +667,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// ByteProperty: boundingGridDimZ
+    /// ByteProperty: boundingGridDimZ<br/>
+    /// Default: DG_VBLOCKS_64
     /// </summary>
     public unsafe BmSDK.Engine.ApexDynamicGridComponent.EDynamicGridBoundingGridDim boundingGridDimZ
     {
@@ -671,7 +677,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// StructProperty: blockSizeWorld
+    /// StructProperty: blockSizeWorld<br/>
+    /// Default: (X=50,Y=50,Z=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 blockSizeWorld
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 612);
@@ -686,7 +693,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// FloatProperty: vorticityConfinement
+    /// FloatProperty: vorticityConfinement<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float vorticityConfinement
     {
@@ -695,7 +703,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// IntProperty: velocitySmoothingIterationsForVC
+    /// IntProperty: velocitySmoothingIterationsForVC<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int velocitySmoothingIterationsForVC
     {
@@ -704,7 +713,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// FloatProperty: particleVelocityDissipation
+    /// FloatProperty: particleVelocityDissipation<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float particleVelocityDissipation
     {
@@ -713,7 +723,8 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// FloatProperty: gridVelocityDissipation
+    /// FloatProperty: gridVelocityDissipation<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float gridVelocityDissipation
     {
@@ -722,25 +733,29 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// StructProperty: particleToGridCoupling
+    /// StructProperty: particleToGridCoupling<br/>
+    /// Default: (accelTimeConstant=0.01,decelTimeConstant=10,thresholdMultiplier=2)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCParticleToGridCouplingParams particleToGridCoupling
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCParticleToGridCouplingParams>(Ptr + 644);
 
     /// <summary>
-    /// StructProperty: gridToParticleCoupling
+    /// StructProperty: gridToParticleCoupling<br/>
+    /// Default: (accelTimeConstant=0.01,decelTimeConstant=0.01,thresholdMultiplier=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCGridToParticleCouplingParams gridToParticleCoupling
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCGridToParticleCouplingParams>(Ptr + 656);
 
     /// <summary>
-    /// StructProperty: particleDensity
+    /// StructProperty: particleDensity<br/>
+    /// Default: (Enabled=true,smoothingRadius=2,saturationThreshold=16,GammaCorrection=0.5,BuoyancyAdvanced=(forceMaximum=1,forceMinimum=-1),ExpansionAdvanced=(rateMaximum=16))
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCDensityParams particleDensity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCDensityParams>(Ptr + 668);
 
     /// <summary>
-    /// IntProperty: pressureSolverIterations
+    /// IntProperty: pressureSolverIterations<br/>
+    /// Default: 20
     /// </summary>
     public unsafe int pressureSolverIterations
     {
@@ -749,37 +764,43 @@ public partial class ApexDynamicGridComponent : BmSDK.Engine.ApexFieldSamplerCom
     }
 
     /// <summary>
-    /// StructProperty: pressureMultigrid
+    /// StructProperty: pressureMultigrid<br/>
+    /// Default: (Enabled=true,Levels=3,FineIterations=1,CoarseIterations=4)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCMultigridParams pressureMultigrid
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCMultigridParams>(Ptr + 752);
 
     /// <summary>
-    /// StructProperty: stochasticParticleAdvection
+    /// StructProperty: stochasticParticleAdvection<br/>
+    /// Default: (SpatialStandardDeviation=0.25,VelocityStandardDeviation=0.25)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCStochasticParticleAdvectionParams stochasticParticleAdvection
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCStochasticParticleAdvectionParams>(Ptr + 768);
 
     /// <summary>
-    /// StructProperty: MacCormackAdvection
+    /// StructProperty: MacCormackAdvection<br/>
+    /// Default: (Sharpness=0.5)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCMacCormackAdvectionParams MacCormackAdvection
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCMacCormackAdvectionParams>(Ptr + 780);
 
     /// <summary>
-    /// StructProperty: selfShadowing
+    /// StructProperty: selfShadowing<br/>
+    /// Default: (saturationDensity=50,directionToLight=DG_AXIS_Z_UP,rawDensityWeight=1,shadowCouplingTimeConstant=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCSelfShadowingParams selfShadowing
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCSelfShadowingParams>(Ptr + 788);
 
     /// <summary>
-    /// StructProperty: selfShadowingSpotlight
+    /// StructProperty: selfShadowingSpotlight<br/>
+    /// Default: (saturationDensity=50,Direction=(Z=-1),LocationOffset=(Z=3500),FOV=90,NearPlane=2500,FarPlane=4000,shadowCouplingTimeConstant=0.1,SampleOffset=0.25)
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDynamicGridComponent.FSCSelfShadowingSpotlightParams selfShadowingSpotlight
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDynamicGridComponent.FSCSelfShadowingSpotlightParams>(Ptr + 812);
 
     /// <summary>
-    /// ComponentProperty: DrawComponent2
+    /// ComponentProperty: DrawComponent2<br/>
+    /// Default: Engine.Default__ApexDynamicGridComponent.DrawBox1
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent DrawComponent2
     {

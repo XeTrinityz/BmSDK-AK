@@ -117,7 +117,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// ByteProperty: FieldSamplerScene
+    /// ByteProperty: FieldSamplerScene<br/>
+    /// Default: FSS_TurbulenceScene
     /// </summary>
     public unsafe BmSDK.Engine.ApexFieldSamplerComponent.FSS_FieldSamplerScene FieldSamplerScene
     {
@@ -126,7 +127,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// ByteProperty: CollisionChannel
+    /// ByteProperty: CollisionChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel
     {
@@ -135,7 +137,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -144,7 +147,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true,FlexAsset=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 548);

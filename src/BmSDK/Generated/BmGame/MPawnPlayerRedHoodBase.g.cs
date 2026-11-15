@@ -540,7 +540,8 @@ public partial class MPawnPlayerRedHoodBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 10052);
 
     /// <summary>
-    /// NameProperty: TargetClass
+    /// NameProperty: TargetClass<br/>
+    /// Default: Batarang
     /// </summary>
     public unsafe BmSDK.FName TargetClass
     {

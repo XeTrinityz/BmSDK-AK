@@ -870,7 +870,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         }
 
         /// <summary>
-        /// StructProperty: vLightColorDesired
+        /// StructProperty: vLightColorDesired<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor vLightColorDesired
         {
@@ -879,7 +880,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         }
 
         /// <summary>
-        /// StructProperty: vLightColorCurrent
+        /// StructProperty: vLightColorCurrent<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor vLightColorCurrent
         {

@@ -207,7 +207,8 @@ public partial class InterpTrack : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: TrackInstClass
+    /// ClassProperty: TrackInstClass<br/>
+    /// Default: Engine.InterpTrackInst
     /// </summary>
     public unsafe BmSDK.Class TrackInstClass
     {
@@ -279,7 +280,8 @@ public partial class InterpTrack : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bVisible
+    /// BoolProperty: bVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVisible
     {

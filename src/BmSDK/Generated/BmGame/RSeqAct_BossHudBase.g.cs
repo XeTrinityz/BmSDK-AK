@@ -162,7 +162,8 @@ public partial class RSeqAct_BossHudBase : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// StrProperty: BossName
+    /// StrProperty: BossName<br/>
+    /// Default: "Firefly"
     /// </summary>
     public unsafe BmSDK.FString BossName
     {

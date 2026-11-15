@@ -112,7 +112,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
     public partial record struct FRockRainMapSettings
     {
         /// <summary>
-        /// FloatProperty: WetnessGlobalScale
+        /// FloatProperty: WetnessGlobalScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float WetnessGlobalScale
         {
@@ -121,7 +122,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: MinimumDampAmount
+        /// FloatProperty: MinimumDampAmount<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float MinimumDampAmount
         {
@@ -130,7 +132,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: DampThreshold
+        /// FloatProperty: DampThreshold<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DampThreshold
         {
@@ -139,7 +142,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: PuddleThreshold
+        /// FloatProperty: PuddleThreshold<br/>
+        /// Default: 1.1
         /// </summary>
         public unsafe float PuddleThreshold
         {
@@ -148,7 +152,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: Darkening
+        /// FloatProperty: Darkening<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Darkening
         {
@@ -157,7 +162,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: RainWakeFrequency
+        /// FloatProperty: RainWakeFrequency<br/>
+        /// Default: 0.05
         /// </summary>
         public unsafe float RainWakeFrequency
         {
@@ -166,7 +172,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: RainWakeAmount
+        /// FloatProperty: RainWakeAmount<br/>
+        /// Default: 0.2
         /// </summary>
         public unsafe float RainWakeAmount
         {
@@ -175,7 +182,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: RainWakeSpeed
+        /// FloatProperty: RainWakeSpeed<br/>
+        /// Default: 14
         /// </summary>
         public unsafe float RainWakeSpeed
         {
@@ -184,7 +192,8 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
         }
 
         /// <summary>
-        /// FloatProperty: RainWakeVariation
+        /// FloatProperty: RainWakeVariation<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float RainWakeVariation
         {
@@ -194,13 +203,15 @@ public partial class RSeqAct_Rain : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// StructProperty: RainSettings
+    /// StructProperty: RainSettings<br/>
+    /// Default: (Density=0.5,Width=1,FearGasSludgeColor=(R=0.19,G=1.25,B=0.1,A=1),RainTexture=VFX_WeatherSystem.Weather_Rain,RainStreakTexture=VFX_WeatherSystem.Weather_RainStreak,RainSoundBed=Ww_WEA_Rain01.Play_Rain...
     /// </summary>
     public unsafe ref BmSDK.Engine.RRainComponent.FRockRainSettings RainSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RRainComponent.FRockRainSettings>(Ptr + 352);
 
     /// <summary>
-    /// StructProperty: RainMap
+    /// StructProperty: RainMap<br/>
+    /// Default: (WetnessGlobalScale=1,MinimumDampAmount=0.25,DampThreshold=1,PuddleThreshold=1.1,Darkening=1,RainWakeFrequency=0.05,RainWakeAmount=0.2,RainWakeSpeed=14,RainWakeVariation=100)
     /// </summary>
     public unsafe ref BmSDK.BmScript.RSeqAct_Rain.FRockRainMapSettings RainMap
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSeqAct_Rain.FRockRainMapSettings>(Ptr + 416);

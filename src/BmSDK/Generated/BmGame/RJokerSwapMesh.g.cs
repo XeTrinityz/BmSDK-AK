@@ -244,7 +244,8 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionComp
+    /// ComponentProperty: CollisionComp<br/>
+    /// Default: BmGame.Default__RJokerSwapMesh.StaticMeshComponent_CollisionProxy
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent CollisionComp
     {
@@ -253,7 +254,8 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
     }
 
     /// <summary>
-    /// ComponentProperty: SecondaryMeshComponent
+    /// ComponentProperty: SecondaryMeshComponent<br/>
+    /// Default: BmGame.Default__RJokerSwapMesh.SecondaryMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent SecondaryMeshComponent
     {
@@ -271,7 +273,8 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: LightingChannels
+    /// StructProperty: LightingChannels<br/>
+    /// Default: (Static=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer LightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 828);

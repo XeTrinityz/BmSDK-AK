@@ -106,7 +106,8 @@ public partial class RSeqAct_SetStorySynopsisID : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// IntProperty: SynopsisChapterValue
+    /// IntProperty: SynopsisChapterValue<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SynopsisChapterValue
     {
@@ -115,7 +116,8 @@ public partial class RSeqAct_SetStorySynopsisID : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// IntProperty: SynopsisChapterImage
+    /// IntProperty: SynopsisChapterImage<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SynopsisChapterImage
     {

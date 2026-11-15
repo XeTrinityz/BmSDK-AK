@@ -291,7 +291,8 @@ public partial class RPawnVillainThugMedic : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: MedicPackDisruptedXrayMIC
+    /// ObjectProperty: MedicPackDisruptedXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant MedicPackDisruptedXrayMIC
     {
@@ -300,7 +301,8 @@ public partial class RPawnVillainThugMedic : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: MedicPackXrayMIC
+    /// ObjectProperty: MedicPackXrayMIC<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_MeleeWeapon_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant MedicPackXrayMIC
     {
@@ -309,7 +311,8 @@ public partial class RPawnVillainThugMedic : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplosionVFX
+    /// ObjectProperty: JammedExplosionVFX<br/>
+    /// Default: FFX_Combat.Particles.Destroy.DND_Electrical_Explosion
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem JammedExplosionVFX
     {
@@ -318,7 +321,8 @@ public partial class RPawnVillainThugMedic : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: JammedExplodeEvent
+    /// ObjectProperty: JammedExplodeEvent<br/>
+    /// Default: Ww_NPC_Electrocute.Play_NPC_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammedExplodeEvent
     {
@@ -345,7 +349,8 @@ public partial class RPawnVillainThugMedic : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bLastMedicIsRevive
+    /// BoolProperty: bLastMedicIsRevive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bLastMedicIsRevive
     {

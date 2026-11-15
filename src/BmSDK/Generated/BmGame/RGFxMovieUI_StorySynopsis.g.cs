@@ -203,7 +203,8 @@ public partial class RGFxMovieUI_StorySynopsis : BmSDK.BmGame.RGFxMovieUI, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: UserIndex
+    /// IntProperty: UserIndex<br/>
+    /// Default: 66
     /// </summary>
     public unsafe int UserIndex
     {
@@ -212,7 +213,8 @@ public partial class RGFxMovieUI_StorySynopsis : BmSDK.BmGame.RGFxMovieUI, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: MaxLimit
+    /// IntProperty: MaxLimit<br/>
+    /// Default: 67
     /// </summary>
     public unsafe int MaxLimit
     {

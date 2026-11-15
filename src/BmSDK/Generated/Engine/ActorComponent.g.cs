@@ -255,7 +255,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: TickGroup
+    /// ByteProperty: TickGroup<br/>
+    /// Default: TG_DuringAsyncWork
     /// </summary>
     public unsafe BmSDK.GameObject.ETickingGroup TickGroup
     {

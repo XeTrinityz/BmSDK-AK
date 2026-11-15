@@ -572,7 +572,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: PropBreakTimer
+    /// FloatProperty: PropBreakTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float PropBreakTimer
     {
@@ -596,7 +597,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1032);
 
     /// <summary>
-    /// NameProperty: BreakTimerName
+    /// NameProperty: BreakTimerName<br/>
+    /// Default: BreakProp
     /// </summary>
     public unsafe BmSDK.FName BreakTimerName
     {

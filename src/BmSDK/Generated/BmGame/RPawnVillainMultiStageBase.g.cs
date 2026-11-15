@@ -579,7 +579,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: FistFxCompLeft
+    /// ComponentProperty: FistFxCompLeft<br/>
+    /// Default: BmGame.Default__RPawnVillainMultiStageBase.NewFistFxCompLeft
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FistFxCompLeft
     {
@@ -588,7 +589,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: FistFxCompRight
+    /// ComponentProperty: FistFxCompRight<br/>
+    /// Default: BmGame.Default__RPawnVillainMultiStageBase.NewFistFxCompRight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent FistFxCompRight
     {
@@ -615,7 +617,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: EFAudible
+    /// ObjectProperty: EFAudible<br/>
+    /// Default: BmGame.Default__RPawnVillainMultiStageBase.EFAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible EFAudible
     {
@@ -651,7 +654,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: BladeFxCompRight
+    /// ComponentProperty: BladeFxCompRight<br/>
+    /// Default: BmGame.Default__RPawnVillainMultiStageBase.NewBladeFxCompRight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BladeFxCompRight
     {
@@ -660,7 +664,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: BladeFxCompLeft
+    /// ComponentProperty: BladeFxCompLeft<br/>
+    /// Default: BmGame.Default__RPawnVillainMultiStageBase.NewBladeFxCompLeft
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BladeFxCompLeft
     {
@@ -750,7 +755,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// ByteProperty: ThugState
+    /// ByteProperty: ThugState<br/>
+    /// Default: ETS_Armoured
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnVillainMultiStageBase.EThugState ThugState
     {
@@ -777,7 +783,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
     }
 
     /// <summary>
-    /// IntProperty: NumStrikes
+    /// IntProperty: NumStrikes<br/>
+    /// Default: 15
     /// </summary>
     public unsafe int NumStrikes
     {

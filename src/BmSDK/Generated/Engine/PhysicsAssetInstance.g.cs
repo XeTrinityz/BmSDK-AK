@@ -695,7 +695,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FMap_Mirror>(Ptr + 128);
 
     /// <summary>
-    /// FloatProperty: LinearSpringScale
+    /// FloatProperty: LinearSpringScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearSpringScale
     {
@@ -704,7 +705,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearDampingScale
+    /// FloatProperty: LinearDampingScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearDampingScale
     {
@@ -713,7 +715,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LinearForceLimitScale
+    /// FloatProperty: LinearForceLimitScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearForceLimitScale
     {
@@ -722,7 +725,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularSpringScale
+    /// FloatProperty: AngularSpringScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularSpringScale
     {
@@ -731,7 +735,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularDampingScale
+    /// FloatProperty: AngularDampingScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularDampingScale
     {
@@ -740,7 +745,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AngularForceLimitScale
+    /// FloatProperty: AngularForceLimitScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularForceLimitScale
     {
@@ -749,7 +755,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bInitBodies
+    /// BoolProperty: bInitBodies<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInitBodies
     {

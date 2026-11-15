@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_RobinBatClawAttack : BmSDK.BmGame.RSpeci
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: AttackSpeed
+    /// FloatProperty: AttackSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float AttackSpeed
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_RobinBatClawAttack : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: AttackAccel
+    /// FloatProperty: AttackAccel<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float AttackAccel
     {
@@ -97,7 +99,8 @@ public partial class RSpecialMoveConfig_RobinBatClawAttack : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// ObjectProperty: VictimReactionAnimSet
+    /// ObjectProperty: VictimReactionAnimSet<br/>
+    /// Default: Anim_Thug_Rifle.Code.TGRifle_Caltrop_Reaction
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet VictimReactionAnimSet
     {
@@ -106,7 +109,8 @@ public partial class RSpecialMoveConfig_RobinBatClawAttack : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerAnimset
+    /// ObjectProperty: PlayerAnimset<br/>
+    /// Default: Anim_Robin_Gadget.Code.RB_Staff
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet PlayerAnimset
     {

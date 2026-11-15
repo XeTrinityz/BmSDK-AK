@@ -1296,7 +1296,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bProximityDetector
+    /// BoolProperty: bProximityDetector<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bProximityDetector
     {
@@ -1323,7 +1324,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bUseNewGroundCamera
+    /// BoolProperty: bUseNewGroundCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseNewGroundCamera
     {
@@ -1362,7 +1364,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2816);
 
     /// <summary>
-    /// FloatProperty: FirstExplodeTime
+    /// FloatProperty: FirstExplodeTime<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float FirstExplodeTime
     {
@@ -1371,7 +1374,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: SubsequentExplodeDelay
+    /// FloatProperty: SubsequentExplodeDelay<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float SubsequentExplodeDelay
     {
@@ -1404,7 +1408,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: VillainTargetRange
+    /// FloatProperty: VillainTargetRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float VillainTargetRange
     {
@@ -1413,7 +1418,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: VantageExplosionRadius
+    /// FloatProperty: VantageExplosionRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float VantageExplosionRadius
     {
@@ -1422,7 +1428,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: VantageMarkerParticleFactor
+    /// FloatProperty: VantageMarkerParticleFactor<br/>
+    /// Default: 0.0025
     /// </summary>
     public unsafe float VantageMarkerParticleFactor
     {

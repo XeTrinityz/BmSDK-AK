@@ -242,7 +242,8 @@ public partial class RBMCombatPoint_LoSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLightMesh
+    /// ComponentProperty: SpotLightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoSpotLight.NormalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent SpotLightMesh
     {
@@ -251,7 +252,8 @@ public partial class RBMCombatPoint_LoSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: SpotLightMeshBroken
+    /// ComponentProperty: SpotLightMeshBroken<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoSpotLight.BrokenMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent SpotLightMeshBroken
     {
@@ -260,7 +262,8 @@ public partial class RBMCombatPoint_LoSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightMesh
+    /// ComponentProperty: InRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_LoSpotLight.InRangeHighlightComp
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InRangeHighlightMesh
     {
@@ -278,7 +281,8 @@ public partial class RBMCombatPoint_LoSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ObjectProperty: LightOnMaterial
+    /// ObjectProperty: LightOnMaterial<br/>
+    /// Default: Ace_MAT.Ace_CraneyardLight_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance LightOnMaterial
     {
@@ -287,7 +291,8 @@ public partial class RBMCombatPoint_LoSpotLight : BmSDK.BmGame.RBMCombatPoint_En
     }
 
     /// <summary>
-    /// ObjectProperty: LightOffMaterial
+    /// ObjectProperty: LightOffMaterial<br/>
+    /// Default: Ace_MAT.Ace_CraneyardLight_OFF_INST_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance LightOffMaterial
     {

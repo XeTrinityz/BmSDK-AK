@@ -79,7 +79,8 @@ public partial class RSeqEvent_HealthDroppedBelow : BmSDK.Engine.SequenceEvent, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: HealthThreshold
+    /// IntProperty: HealthThreshold<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int HealthThreshold
     {

@@ -165,7 +165,8 @@ public partial class RBatmobileScrewHook : BmSDK.BmGame.RBatmobileScrewHookBase,
     }
 
     /// <summary>
-    /// ComponentProperty: InteractComponent
+    /// ComponentProperty: InteractComponent<br/>
+    /// Default: BmScript.Default__RBatmobileScrewHook.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent InteractComponent
     {

@@ -158,7 +158,8 @@ public partial class ParticleModuleTypeDataApex : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// IntProperty: SubUVCount
+    /// IntProperty: SubUVCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SubUVCount
     {
@@ -167,7 +168,8 @@ public partial class ParticleModuleTypeDataApex : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// IntProperty: SubImagesHorizontal
+    /// IntProperty: SubImagesHorizontal<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SubImagesHorizontal
     {
@@ -176,7 +178,8 @@ public partial class ParticleModuleTypeDataApex : BmSDK.Engine.ParticleModuleTyp
     }
 
     /// <summary>
-    /// IntProperty: SubImagesVertical
+    /// IntProperty: SubImagesVertical<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SubImagesVertical
     {

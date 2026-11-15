@@ -123,7 +123,8 @@ public partial class NavMeshPath_Toward : BmSDK.Engine.NavMeshPathConstraint, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bBiasAgainstHighLevelPath
+    /// BoolProperty: bBiasAgainstHighLevelPath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBiasAgainstHighLevelPath
     {
@@ -132,7 +133,8 @@ public partial class NavMeshPath_Toward : BmSDK.Engine.NavMeshPathConstraint, Bm
     }
 
     /// <summary>
-    /// FloatProperty: OutOfHighLevelPathBias
+    /// FloatProperty: OutOfHighLevelPathBias<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float OutOfHighLevelPathBias
     {

@@ -409,7 +409,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: RopeComp
+    /// ComponentProperty: RopeComp<br/>
+    /// Default: BmGame.Default__RHidePoint_RopeBase.BaseRopeComp0
     /// </summary>
     public unsafe BmSDK.BmGame.RRope2Component RopeComp
     {
@@ -454,7 +455,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: RopeHighlight
+    /// ObjectProperty: RopeHighlight<br/>
+    /// Default: VFX_Forensics.Xray.xrayHighlight_rope_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant RopeHighlight
     {
@@ -472,7 +474,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: MovementCollision
+    /// ComponentProperty: MovementCollision<br/>
+    /// Default: BmGame.Default__RHidePoint_RopeBase.WireCollComp0
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent MovementCollision
     {

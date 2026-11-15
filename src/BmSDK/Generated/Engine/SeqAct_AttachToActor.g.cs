@@ -101,7 +101,8 @@ public partial class SeqAct_AttachToActor : BmSDK.Engine.SequenceAction, BmSDK.I
     }
 
     /// <summary>
-    /// BoolProperty: bHardAttach
+    /// BoolProperty: bHardAttach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHardAttach
     {

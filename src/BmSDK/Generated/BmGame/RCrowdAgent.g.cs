@@ -202,7 +202,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MoveTowardsFlockForce
+    /// FloatProperty: MoveTowardsFlockForce<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float MoveTowardsFlockForce
     {
@@ -211,7 +212,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MoveInFlockDirForce
+    /// FloatProperty: MoveInFlockDirForce<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float MoveInFlockDirForce
     {
@@ -235,7 +237,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bFlyAwayWhenFinish
+    /// BoolProperty: bFlyAwayWhenFinish<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFlyAwayWhenFinish
     {
@@ -244,7 +247,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: SkeletalMeshComponent
+    /// ComponentProperty: SkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RCrowdAgent.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SkeletalMeshComponent
     {
@@ -280,7 +284,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AvoidForce
+    /// FloatProperty: AvoidForce<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float AvoidForce
     {
@@ -325,7 +330,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WaveForce
+    /// FloatProperty: WaveForce<br/>
+    /// Default: 175
     /// </summary>
     public unsafe float WaveForce
     {
@@ -352,7 +358,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CurrScale
+    /// FloatProperty: CurrScale<br/>
+    /// Default: 1e-05
     /// </summary>
     public unsafe float CurrScale
     {
@@ -361,7 +368,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TargetScale
+    /// FloatProperty: TargetScale<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TargetScale
     {
@@ -370,7 +378,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ScaleBlend
+    /// FloatProperty: ScaleBlend<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float ScaleBlend
     {
@@ -406,7 +415,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DebugTimer
+    /// FloatProperty: DebugTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DebugTimer
     {

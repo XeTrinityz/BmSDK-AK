@@ -1212,7 +1212,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// ByteProperty: RBCollisionResponseType
+    /// ByteProperty: RBCollisionResponseType<br/>
+    /// Default: RBCR_ForceBreakObjectFallThrough
     /// </summary>
     public unsafe BmSDK.BmGame.RFractureWallBase.ERigidBodyCollisionResponseType RBCollisionResponseType
     {
@@ -1221,7 +1222,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// FloatProperty: RBCollisionBreakForce
+    /// FloatProperty: RBCollisionBreakForce<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RBCollisionBreakForce
     {
@@ -1248,7 +1250,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// FloatProperty: CollisionExplodeRadiusMultiplier
+    /// FloatProperty: CollisionExplodeRadiusMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CollisionExplodeRadiusMultiplier
     {
@@ -1257,7 +1260,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// FloatProperty: CollisionExplodeForceMultiplier
+    /// FloatProperty: CollisionExplodeForceMultiplier<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float CollisionExplodeForceMultiplier
     {
@@ -1365,7 +1369,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// BoolProperty: bTriggerCombatEvent
+    /// BoolProperty: bTriggerCombatEvent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTriggerCombatEvent
     {
@@ -1374,7 +1379,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// BoolProperty: bDisableNearbyTempGuardPointsWhenDestroyed
+    /// BoolProperty: bDisableNearbyTempGuardPointsWhenDestroyed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableNearbyTempGuardPointsWhenDestroyed
     {
@@ -1383,7 +1389,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// BoolProperty: bHarpoonable
+    /// BoolProperty: bHarpoonable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHarpoonable
     {
@@ -1491,7 +1498,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// IntProperty: GlassSmashReactionID
+    /// IntProperty: GlassSmashReactionID<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GlassSmashReactionID
     {
@@ -1509,7 +1517,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmGame.Default__RFractureWallBase.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {
@@ -1554,7 +1563,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// ObjectProperty: GooExplosionDebris
+    /// ObjectProperty: GooExplosionDebris<br/>
+    /// Default: VFX_Gadgets.fx_gooExplode_Debris_p
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem GooExplosionDebris
     {
@@ -1608,7 +1618,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// ComponentProperty: BatclawInteraction
+    /// ComponentProperty: BatclawInteraction<br/>
+    /// Default: BmGame.Default__RFractureWallBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent BatclawInteraction
     {
@@ -1623,7 +1634,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1080);
 
     /// <summary>
-    /// FloatProperty: CameraDuration
+    /// FloatProperty: CameraDuration<br/>
+    /// Default: 2.1
     /// </summary>
     public unsafe float CameraDuration
     {
@@ -1632,7 +1644,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
     }
 
     /// <summary>
-    /// FloatProperty: GelKillRadius
+    /// FloatProperty: GelKillRadius<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float GelKillRadius
     {

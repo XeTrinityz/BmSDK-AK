@@ -408,7 +408,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
         }
 
         /// <summary>
-        /// StructProperty: ParameterValue
+        /// StructProperty: ParameterValue<br/>
+        /// Default: (A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor ParameterValue
         {

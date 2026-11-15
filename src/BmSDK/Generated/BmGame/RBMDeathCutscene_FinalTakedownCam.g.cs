@@ -277,7 +277,8 @@ public partial class RBMDeathCutscene_FinalTakedownCam : BmSDK.BmGame.RBMDeathCu
     }
 
     /// <summary>
-    /// FloatProperty: CamTimer
+    /// FloatProperty: CamTimer<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CamTimer
     {
@@ -286,7 +287,8 @@ public partial class RBMDeathCutscene_FinalTakedownCam : BmSDK.BmGame.RBMDeathCu
     }
 
     /// <summary>
-    /// FloatProperty: SpinSpeed
+    /// FloatProperty: SpinSpeed<br/>
+    /// Default: 128000
     /// </summary>
     public unsafe float SpinSpeed
     {
@@ -295,7 +297,8 @@ public partial class RBMDeathCutscene_FinalTakedownCam : BmSDK.BmGame.RBMDeathCu
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpinSpeed
+    /// FloatProperty: MaxSpinSpeed<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaxSpinSpeed
     {
@@ -331,7 +334,8 @@ public partial class RBMDeathCutscene_FinalTakedownCam : BmSDK.BmGame.RBMDeathCu
     }
 
     /// <summary>
-    /// FloatProperty: UpSpeed
+    /// FloatProperty: UpSpeed<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float UpSpeed
     {

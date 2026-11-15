@@ -1882,7 +1882,8 @@ public partial class RGFxMovieModularHud : BmSDK.BmGame.RGFxMovieModularHudBase,
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1012);
 
     /// <summary>
-    /// IntProperty: ViewUpgradePromptDuration
+    /// IntProperty: ViewUpgradePromptDuration<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int ViewUpgradePromptDuration
     {

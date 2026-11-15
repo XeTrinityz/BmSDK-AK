@@ -590,7 +590,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// NameProperty: AttachmentSocket
+    /// NameProperty: AttachmentSocket<br/>
+    /// Default: Bip01_Head
     /// </summary>
     public unsafe BmSDK.FName AttachmentSocket
     {
@@ -635,7 +636,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bAllowEmotes
+    /// BoolProperty: bAllowEmotes<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowEmotes
     {
@@ -644,7 +646,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bKillDialogueOnDestroy
+    /// BoolProperty: bKillDialogueOnDestroy<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKillDialogueOnDestroy
     {
@@ -653,7 +656,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDefaultDialogueComponent
+    /// BoolProperty: bDefaultDialogueComponent<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDefaultDialogueComponent
     {

@@ -312,7 +312,8 @@ public partial class RJokerGunLv2Gadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: GunFireEffect
+    /// ComponentProperty: GunFireEffect<br/>
+    /// Default: BmScript.Default__RJokerGunLv2Gadget.GFE
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GunFireEffect
     {
@@ -321,7 +322,8 @@ public partial class RJokerGunLv2Gadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: GunBeamEffect
+    /// ComponentProperty: GunBeamEffect<br/>
+    /// Default: BmScript.Default__RJokerGunLv2Gadget.GCE
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GunBeamEffect
     {
@@ -351,7 +353,8 @@ public partial class RJokerGunLv2Gadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSD
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2124);
 
     /// <summary>
-    /// FloatProperty: CarDamagePerFrame
+    /// FloatProperty: CarDamagePerFrame<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CarDamagePerFrame
     {
@@ -360,7 +363,8 @@ public partial class RJokerGunLv2Gadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ThugDamagePerFrame
+    /// FloatProperty: ThugDamagePerFrame<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ThugDamagePerFrame
     {

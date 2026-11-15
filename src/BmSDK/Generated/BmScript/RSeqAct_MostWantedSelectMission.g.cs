@@ -124,7 +124,8 @@ public partial class RSeqAct_MostWantedSelectMission : BmSDK.Engine.SequenceActi
     }
 
     /// <summary>
-    /// BoolProperty: PickExactIcon
+    /// BoolProperty: PickExactIcon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool PickExactIcon
     {

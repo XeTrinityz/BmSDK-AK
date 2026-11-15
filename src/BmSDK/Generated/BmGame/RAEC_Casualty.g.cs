@@ -1152,7 +1152,8 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 932);
 
     /// <summary>
-    /// FloatProperty: CAS_FAR_GESTURE_DIST
+    /// FloatProperty: CAS_FAR_GESTURE_DIST<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float CAS_FAR_GESTURE_DIST
     {

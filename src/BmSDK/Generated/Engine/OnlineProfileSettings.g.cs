@@ -397,7 +397,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
     }
 
     /// <summary>
-    /// ArrayProperty: OwnerMappings
+    /// ArrayProperty: OwnerMappings<br/>
+    /// Default: ((),(Id=1,Name=Online Service Setting),(Id=2,Name=Game Setting))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.Settings.FIdToStringMapping> OwnerMappings
     {

@@ -1069,7 +1069,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: WheelSpeedMap
+    /// ArrayProperty: WheelSpeedMap<br/>
+    /// Default: ((WheelPct=0.25),(Speed=400,WheelPct=0.5),(Speed=1600,WheelPct=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SVehicle.FWheelPropToUpdateAtSpeed> WheelSpeedMap
     {
@@ -1213,7 +1214,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanFlip
+    /// BoolProperty: bCanFlip<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanFlip
     {
@@ -1417,7 +1419,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1724);
 
     /// <summary>
-    /// StructProperty: InertiaTensorMultiplier
+    /// StructProperty: InertiaTensorMultiplier<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 InertiaTensorMultiplier
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1736);
@@ -1459,7 +1462,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: StayUprightConstraintSetup
+    /// ObjectProperty: StayUprightConstraintSetup<br/>
+    /// Default: Engine.Default__SVehicle.MyStayUprightSetup
     /// </summary>
     public unsafe BmSDK.Engine.RB_StayUprightSetup StayUprightConstraintSetup
     {
@@ -1468,7 +1472,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: StayUprightConstraintInstance
+    /// ObjectProperty: StayUprightConstraintInstance<br/>
+    /// Default: Engine.Default__SVehicle.MyStayUprightConstraintInstance
     /// </summary>
     public unsafe BmSDK.Engine.RB_ConstraintInstance StayUprightConstraintInstance
     {
@@ -1504,7 +1509,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: HeavySuspensionShiftPercent
+    /// FloatProperty: HeavySuspensionShiftPercent<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float HeavySuspensionShiftPercent
     {
@@ -1513,7 +1519,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -1522,7 +1529,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngularVelocity
+    /// FloatProperty: MaxAngularVelocity<br/>
+    /// Default: 75000
     /// </summary>
     public unsafe float MaxAngularVelocity
     {
@@ -1540,7 +1548,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UprightLiftStrength
+    /// FloatProperty: UprightLiftStrength<br/>
+    /// Default: 225
     /// </summary>
     public unsafe float UprightLiftStrength
     {
@@ -1549,7 +1558,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UprightTorqueStrength
+    /// FloatProperty: UprightTorqueStrength<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float UprightTorqueStrength
     {
@@ -1558,7 +1568,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UprightTime
+    /// FloatProperty: UprightTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float UprightTime
     {
@@ -1630,7 +1641,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SquealThreshold
+    /// FloatProperty: SquealThreshold<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float SquealThreshold
     {
@@ -1639,7 +1651,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SquealLatThreshold
+    /// FloatProperty: SquealLatThreshold<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float SquealLatThreshold
     {
@@ -1648,7 +1661,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LatAngleVolumeMult
+    /// FloatProperty: LatAngleVolumeMult<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LatAngleVolumeMult
     {
@@ -1657,7 +1671,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EngineStartOffsetSecs
+    /// FloatProperty: EngineStartOffsetSecs<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float EngineStartOffsetSecs
     {
@@ -1666,7 +1681,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EngineStopOffsetSecs
+    /// FloatProperty: EngineStopOffsetSecs<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EngineStopOffsetSecs
     {
@@ -1747,13 +1763,15 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: BaseOffset
+    /// StructProperty: BaseOffset<br/>
+    /// Default: (Z=128)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BaseOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1912);
 
     /// <summary>
-    /// FloatProperty: CamDist
+    /// FloatProperty: CamDist<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float CamDist
     {
@@ -1795,7 +1813,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RadialImpulseScaling
+    /// FloatProperty: RadialImpulseScaling<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RadialImpulseScaling
     {
@@ -1804,7 +1823,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TyreSmokeWheelSpinThreshold
+    /// FloatProperty: TyreSmokeWheelSpinThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TyreSmokeWheelSpinThreshold
     {
@@ -1813,7 +1833,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TyreSmokeSkidThreshold
+    /// FloatProperty: TyreSmokeSkidThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TyreSmokeSkidThreshold
     {
@@ -1846,7 +1867,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FPlane>(Ptr + 2048);
 
     /// <summary>
-    /// FloatProperty: DefaultTyreUpdates
+    /// FloatProperty: DefaultTyreUpdates<br/>
+    /// Default: 8.5
     /// </summary>
     public unsafe float DefaultTyreUpdates
     {
@@ -1855,7 +1877,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MassScale
+    /// FloatProperty: MassScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MassScale
     {

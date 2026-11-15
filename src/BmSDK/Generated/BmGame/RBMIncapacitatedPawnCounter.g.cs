@@ -92,7 +92,8 @@ public partial class RBMIncapacitatedPawnCounter : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// ClassProperty: PawnType
+    /// ClassProperty: PawnType<br/>
+    /// Default: BmGame.RPawnVillain
     /// </summary>
     public unsafe BmSDK.Class PawnType
     {

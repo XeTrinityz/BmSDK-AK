@@ -148,7 +148,8 @@ public partial class RMortarProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 840);
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RMortarProjectile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh
     {
@@ -157,7 +158,8 @@ public partial class RMortarProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RMortarProjectile.RocketTrail
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail
     {
@@ -166,7 +168,8 @@ public partial class RMortarProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MortarLifespan
+    /// FloatProperty: MortarLifespan<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MortarLifespan
     {
@@ -175,7 +178,8 @@ public partial class RMortarProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: AccelerationZ
+    /// FloatProperty: AccelerationZ<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float AccelerationZ
     {
@@ -220,13 +224,15 @@ public partial class RMortarProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: ImpactScreenShake
+    /// StructProperty: ImpactScreenShake<br/>
+    /// Default: (TimeDuration=0.5,LocAmplitude=(Y=5,Z=5),LocFrequency=(X=35,Y=35,Z=35),RotAmplitude=(X=150,Y=150,Z=150),RotFrequency=(X=35,Y=35,Z=35),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(FalloffMinRange=20...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct ImpactScreenShake
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 908);
 
     /// <summary>
-    /// BoolProperty: DisplayWeaponWarning
+    /// BoolProperty: DisplayWeaponWarning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DisplayWeaponWarning
     {

@@ -97,7 +97,8 @@ public partial class AnimNodeRandom : BmSDK.Engine.AnimNodeBlendList, BmSDK.IGam
     }
 
     /// <summary>
-    /// IntProperty: PendingChildIndex
+    /// IntProperty: PendingChildIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PendingChildIndex
     {
@@ -121,7 +122,8 @@ public partial class AnimNodeRandom : BmSDK.Engine.AnimNodeBlendList, BmSDK.IGam
     public partial record struct FRandomAnimInfo
     {
         /// <summary>
-        /// FloatProperty: Chance
+        /// FloatProperty: Chance<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Chance
         {
@@ -148,7 +150,8 @@ public partial class AnimNodeRandom : BmSDK.Engine.AnimNodeBlendList, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: BlendInTime
+        /// FloatProperty: BlendInTime<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float BlendInTime
         {
@@ -157,7 +160,8 @@ public partial class AnimNodeRandom : BmSDK.Engine.AnimNodeBlendList, BmSDK.IGam
         }
 
         /// <summary>
-        /// StructProperty: PlayRateRange
+        /// StructProperty: PlayRateRange<br/>
+        /// Default: (X=1,Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector2 PlayRateRange
         {

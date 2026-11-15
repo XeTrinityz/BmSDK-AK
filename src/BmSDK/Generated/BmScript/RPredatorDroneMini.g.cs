@@ -174,12 +174,12 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     public const float SEARCHLIGHT_SCAN_INTERPOLATION = 1f;
 
     /// <summary>
-    /// Const: SEARCHLIGHT_WEAPON_SOCKET = &apos;Muzzle&apos;
+    /// Const: SEARCHLIGHT_WEAPON_SOCKET = 'Muzzle'
     /// </summary>
     public const string SEARCHLIGHT_WEAPON_SOCKET = "Muzzle";
 
     /// <summary>
-    /// Const: SEARCHLIGHT_LIGHT_SOCKET = &apos;SearchLight0&apos;
+    /// Const: SEARCHLIGHT_LIGHT_SOCKET = 'SearchLight0'
     /// </summary>
     public const string SEARCHLIGHT_LIGHT_SOCKET = "SearchLight0";
 
@@ -1686,7 +1686,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: m_XrayMIC_Normal
+    /// ObjectProperty: m_XrayMIC_Normal<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_generalAggressive_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant m_XrayMIC_Normal
     {
@@ -1695,7 +1696,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: m_XrayMIC_Disrupted
+    /// ObjectProperty: m_XrayMIC_Disrupted<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_Explode_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant m_XrayMIC_Disrupted
     {
@@ -1704,7 +1706,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: m_XrayMIC_Blinded
+    /// ObjectProperty: m_XrayMIC_Blinded<br/>
+    /// Default: VFX_Forensics.Xray.xrayMetal_general_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstanceConstant m_XrayMIC_Blinded
     {
@@ -1713,7 +1716,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: m_hCodesHaventBeenDownloadedYetThought
+    /// ObjectProperty: m_hCodesHaventBeenDownloadedYetThought<br/>
+    /// Default: Main_Ch04_S07_Stagg_A1_Bm_Target_Controller.Lines.Main_Ch04_S07_Stagg_A1_Bm_Target_Controller_01
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueSpeech m_hCodesHaventBeenDownloadedYetThought
     {
@@ -1740,7 +1744,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: AudioMovementLoopingEvent
+    /// ObjectProperty: AudioMovementLoopingEvent<br/>
+    /// Default: ww_veh_predator_drone_mini.Play_Predator_Drone_Mini_Flight
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioMovementLoopingEvent
     {
@@ -1749,7 +1754,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: AudioDestroyEvent
+    /// ObjectProperty: AudioDestroyEvent<br/>
+    /// Default: ww_veh_predator_drone_mini.Play_Predator_Drone_Mini_Destroyed
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioDestroyEvent
     {
@@ -1758,7 +1764,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: AudioElectrocuteLoopingEvent
+    /// ObjectProperty: AudioElectrocuteLoopingEvent<br/>
+    /// Default: ww_veh_predator_drone_mini.Play_Predator_Drone_Mini_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioElectrocuteLoopingEvent
     {
@@ -1767,7 +1774,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: AudioAlarm
+    /// ObjectProperty: AudioAlarm<br/>
+    /// Default: ww_veh_predator_drone_mini.Play_Predator_Drone_Mini_Alarm
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent AudioAlarm
     {
@@ -1776,7 +1784,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ObjectProperty: ZapClosePlayerSound
+    /// ObjectProperty: ZapClosePlayerSound<br/>
+    /// Default: Ww_CHR_BatmanElectrocute.Play_Batman_Electrocute
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ZapClosePlayerSound
     {
@@ -1785,7 +1794,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: m_MiniDroneToControllerLinePSC
+    /// ComponentProperty: m_MiniDroneToControllerLinePSC<br/>
+    /// Default: BmScript.Default__RPredatorDroneMini.MinidroneLine0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent m_MiniDroneToControllerLinePSC
     {
@@ -1794,7 +1804,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: RHDInteractions
+    /// ComponentProperty: RHDInteractions<br/>
+    /// Default: BmScript.Default__RPredatorDroneMini.OmniInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent RHDInteractions
     {
@@ -1803,7 +1814,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ComponentProperty: m_hElectricShield
+    /// ComponentProperty: m_hElectricShield<br/>
+    /// Default: BmScript.Default__RPredatorDroneMini.ElectricShield
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent m_hElectricShield
     {
@@ -1839,7 +1851,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// BoolProperty: m_bBehaviorPursueAllowFreeForm
+    /// BoolProperty: m_bBehaviorPursueAllowFreeForm<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool m_bBehaviorPursueAllowFreeForm
     {
@@ -1947,7 +1960,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// BoolProperty: m_bCanSelfDestruct
+    /// BoolProperty: m_bCanSelfDestruct<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool m_bCanSelfDestruct
     {
@@ -2001,7 +2015,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// BoolProperty: m_bMiniDroneToControllerLineInDetectiveMode
+    /// BoolProperty: m_bMiniDroneToControllerLineInDetectiveMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool m_bMiniDroneToControllerLineInDetectiveMode
     {
@@ -2028,7 +2043,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// ByteProperty: m_eSearchLightTargetMode
+    /// ByteProperty: m_eSearchLightTargetMode<br/>
+    /// Default: SLTM_Standard
     /// </summary>
     public unsafe BmSDK.BmScript.RPredatorDroneMini.SearchLightTargetMode m_eSearchLightTargetMode
     {
@@ -2262,7 +2278,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fMaximumMiniDroneControllerInteractionDistance
+    /// FloatProperty: m_fMaximumMiniDroneControllerInteractionDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float m_fMaximumMiniDroneControllerInteractionDistance
     {
@@ -2307,7 +2324,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3556);
 
     /// <summary>
-    /// FloatProperty: m_fSearchLightMoveInterpolationSpeed
+    /// FloatProperty: m_fSearchLightMoveInterpolationSpeed<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float m_fSearchLightMoveInterpolationSpeed
     {
@@ -2316,7 +2334,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fSearchLightScanTiltDesired
+    /// FloatProperty: m_fSearchLightScanTiltDesired<br/>
+    /// Default: -75
     /// </summary>
     public unsafe float m_fSearchLightScanTiltDesired
     {
@@ -2325,7 +2344,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fSearchLightScanTiltCurrent
+    /// FloatProperty: m_fSearchLightScanTiltCurrent<br/>
+    /// Default: -75
     /// </summary>
     public unsafe float m_fSearchLightScanTiltCurrent
     {
@@ -2352,7 +2372,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fSearchLightScanRotateSpeedDesired
+    /// FloatProperty: m_fSearchLightScanRotateSpeedDesired<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float m_fSearchLightScanRotateSpeedDesired
     {
@@ -2370,7 +2391,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fSearchLightScanSpreadDesired
+    /// FloatProperty: m_fSearchLightScanSpreadDesired<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float m_fSearchLightScanSpreadDesired
     {
@@ -2436,7 +2458,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 3656);
 
     /// <summary>
-    /// NameProperty: m_ExplosionTargetClass
+    /// NameProperty: m_ExplosionTargetClass<br/>
+    /// Default: StartlePoint
     /// </summary>
     public unsafe BmSDK.FName m_ExplosionTargetClass
     {
@@ -2454,7 +2477,8 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
     }
 
     /// <summary>
-    /// FloatProperty: m_fExplosionKillRange
+    /// FloatProperty: m_fExplosionKillRange<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float m_fExplosionKillRange
     {

@@ -435,7 +435,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: FireSound
+    /// ObjectProperty: FireSound<br/>
+    /// Default: Ww_CHR_RemoteGadget.Play_Remote_Gadget
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent FireSound
     {
@@ -444,7 +445,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: CancelSound
+    /// ObjectProperty: CancelSound<br/>
+    /// Default: Ww_CHR_RemoteGadget.Play_Remote_Gadget
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CancelSound
     {
@@ -453,7 +455,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: CancelSound2
+    /// ObjectProperty: CancelSound2<br/>
+    /// Default: Ww_CHR_RemoteGadget.Play_Remote_Gadget_Off
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CancelSound2
     {
@@ -462,7 +465,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: CallSound
+    /// ObjectProperty: CallSound<br/>
+    /// Default: Ww_CHR_BatmanGauntlet.Play_Gauntlet_Batmobile_Call
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CallSound
     {
@@ -480,7 +484,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: RemoteControlBatmobileMove
+    /// ObjectProperty: RemoteControlBatmobileMove<br/>
+    /// Default: Batman_Gadget_Moves.Batmobile_Remote.RemoteControlBatmobile
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig RemoteControlBatmobileMove
     {
@@ -498,7 +503,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: JammingRange
+    /// FloatProperty: JammingRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float JammingRange
     {
@@ -525,7 +531,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: JammerTime
+    /// FloatProperty: JammerTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float JammerTime
     {
@@ -534,7 +541,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CurrentJam
+    /// FloatProperty: CurrentJam<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentJam
     {
@@ -543,7 +551,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CursorSpeed
+    /// FloatProperty: CursorSpeed<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CursorSpeed
     {
@@ -552,7 +561,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CursorAccel
+    /// FloatProperty: CursorAccel<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CursorAccel
     {
@@ -561,7 +571,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CursorDecel
+    /// FloatProperty: CursorDecel<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float CursorDecel
     {
@@ -570,7 +581,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CursorReturnFactor
+    /// FloatProperty: CursorReturnFactor<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CursorReturnFactor
     {
@@ -579,7 +591,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CursorReturnDelay
+    /// FloatProperty: CursorReturnDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CursorReturnDelay
     {
@@ -588,7 +601,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxAimX
+    /// FloatProperty: MaxAimX<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MaxAimX
     {
@@ -597,7 +611,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: MaxAimY
+    /// FloatProperty: MaxAimY<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MaxAimY
     {
@@ -606,7 +621,8 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: RelativeAimingCurvePower
+    /// FloatProperty: RelativeAimingCurvePower<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RelativeAimingCurvePower
     {

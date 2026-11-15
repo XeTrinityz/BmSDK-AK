@@ -231,7 +231,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// ComponentProperty: CheapLight
+    /// ComponentProperty: CheapLight<br/>
+    /// Default: BmScript.Default__RMagneticSurfaceSM.CheapLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent CheapLight
     {
@@ -240,7 +241,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: ActiveSpinSpeed
+    /// FloatProperty: ActiveSpinSpeed<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float ActiveSpinSpeed
     {
@@ -249,7 +251,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: ChargedAttractSpinSpeed
+    /// FloatProperty: ChargedAttractSpinSpeed<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ChargedAttractSpinSpeed
     {
@@ -258,7 +261,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: ChargedRepelSpinSpeed
+    /// FloatProperty: ChargedRepelSpinSpeed<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float ChargedRepelSpinSpeed
     {
@@ -285,7 +289,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: SpinAcceleration
+    /// FloatProperty: SpinAcceleration<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SpinAcceleration
     {
@@ -294,7 +299,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: SpinDeceleration
+    /// FloatProperty: SpinDeceleration<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float SpinDeceleration
     {
@@ -303,7 +309,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// NameProperty: SpinAnimation
+    /// NameProperty: SpinAnimation<br/>
+    /// Default: Spin
     /// </summary>
     public unsafe BmSDK.FName SpinAnimation
     {
@@ -312,7 +319,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// NameProperty: JammedAnimation
+    /// NameProperty: JammedAnimation<br/>
+    /// Default: Stutter
     /// </summary>
     public unsafe BmSDK.FName JammedAnimation
     {
@@ -321,7 +329,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: GlowCurvePow
+    /// FloatProperty: GlowCurvePow<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GlowCurvePow
     {
@@ -330,7 +339,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: GlowCurveTime
+    /// FloatProperty: GlowCurveTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GlowCurveTime
     {
@@ -339,7 +349,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: GlowMaxStrength
+    /// FloatProperty: GlowMaxStrength<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float GlowMaxStrength
     {
@@ -348,7 +359,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// NameProperty: GlowParamName
+    /// NameProperty: GlowParamName<br/>
+    /// Default: TurbineLight
     /// </summary>
     public unsafe BmSDK.FName GlowParamName
     {
@@ -366,7 +378,8 @@ public partial class RMagneticSurfaceSM : BmSDK.BmGame.RMagneticSurfaceSMBase, B
     }
 
     /// <summary>
-    /// FloatProperty: LightBrightness
+    /// FloatProperty: LightBrightness<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float LightBrightness
     {

@@ -248,7 +248,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: bottomEdgeDistFromLadder
+    /// FloatProperty: bottomEdgeDistFromLadder<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float bottomEdgeDistFromLadder
     {
@@ -257,7 +258,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: topEdgeDistFromLadder
+    /// FloatProperty: topEdgeDistFromLadder<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float topEdgeDistFromLadder
     {
@@ -266,7 +268,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: ClimbBlocker
+    /// ComponentProperty: ClimbBlocker<br/>
+    /// Default: BmGame.Default__RLadder.Blocker
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent ClimbBlocker
     {
@@ -428,7 +431,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeUsedByAI
+    /// BoolProperty: bCanBeUsedByAI<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeUsedByAI
     {
@@ -437,7 +441,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bAddLadderSeedPoints
+    /// BoolProperty: bAddLadderSeedPoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAddLadderSeedPoints
     {
@@ -446,7 +451,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bAICanGoUp
+    /// BoolProperty: bAICanGoUp<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAICanGoUp
     {
@@ -455,7 +461,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bAICanGoDown
+    /// BoolProperty: bAICanGoDown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAICanGoDown
     {
@@ -473,7 +480,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: CloseRange
+    /// FloatProperty: CloseRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CloseRange
     {
@@ -482,7 +490,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: ShimmyEdgeOffset
+    /// StructProperty: ShimmyEdgeOffset<br/>
+    /// Default: (X=16,Z=384)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ShimmyEdgeOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 852);

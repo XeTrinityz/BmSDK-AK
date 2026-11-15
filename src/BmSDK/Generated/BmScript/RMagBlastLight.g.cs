@@ -125,7 +125,8 @@ public partial class RMagBlastLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Brightness
+    /// FloatProperty: Brightness<br/>
+    /// Default: 0.12
     /// </summary>
     public unsafe float Brightness
     {
@@ -143,7 +144,8 @@ public partial class RMagBlastLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxRadius
+    /// FloatProperty: MaxRadius<br/>
+    /// Default: 900
     /// </summary>
     public unsafe float MaxRadius
     {
@@ -152,7 +154,8 @@ public partial class RMagBlastLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: CheapLightComponent
+    /// ComponentProperty: CheapLightComponent<br/>
+    /// Default: BmScript.Default__RMagBlastLight.CheapLightComponent0
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent CheapLightComponent
     {
@@ -161,7 +164,8 @@ public partial class RMagBlastLight : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: LightColor
+    /// StructProperty: LightColor<br/>
+    /// Default: (B=35,G=30,R=20)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor LightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 688);

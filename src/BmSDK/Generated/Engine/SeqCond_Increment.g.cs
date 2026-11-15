@@ -79,7 +79,8 @@ public partial class SeqCond_Increment : BmSDK.Engine.SequenceCondition, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: IncrementAmount
+    /// IntProperty: IncrementAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int IncrementAmount
     {

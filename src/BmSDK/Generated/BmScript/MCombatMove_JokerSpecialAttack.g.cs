@@ -562,7 +562,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// ComponentProperty: GunMesh
+    /// ComponentProperty: GunMesh<br/>
+    /// Default: BmScript.Default__MCombatMove_JokerSpecialAttack.GunMesh0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GunMesh
     {
@@ -571,7 +572,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabIn_BG
+    /// NameProperty: AnimStabIn_BG<br/>
+    /// Default: Joker_stabs_Batgirl_In
     /// </summary>
     public unsafe BmSDK.FName AnimStabIn_BG
     {
@@ -580,7 +582,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabLoop_BG
+    /// NameProperty: AnimStabLoop_BG<br/>
+    /// Default: Joker_stabs_Batgirl_Loop
     /// </summary>
     public unsafe BmSDK.FName AnimStabLoop_BG
     {
@@ -589,7 +592,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimFailOut_BG
+    /// NameProperty: AnimFailOut_BG<br/>
+    /// Default: Joker_stabs_Batgirl_Fail_Out
     /// </summary>
     public unsafe BmSDK.FName AnimFailOut_BG
     {
@@ -598,7 +602,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabOut_BG
+    /// NameProperty: AnimStabOut_BG<br/>
+    /// Default: Joker_stabs_Batgirl_Out
     /// </summary>
     public unsafe BmSDK.FName AnimStabOut_BG
     {
@@ -607,7 +612,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabOutSuccess_BG
+    /// NameProperty: AnimStabOutSuccess_BG<br/>
+    /// Default: Joker_stabs_Batgirl_Out_Success
     /// </summary>
     public unsafe BmSDK.FName AnimStabOutSuccess_BG
     {
@@ -616,7 +622,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabIn_RB
+    /// NameProperty: AnimStabIn_RB<br/>
+    /// Default: Joker_stabs_Robin_In
     /// </summary>
     public unsafe BmSDK.FName AnimStabIn_RB
     {
@@ -625,7 +632,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabLoop_RB
+    /// NameProperty: AnimStabLoop_RB<br/>
+    /// Default: Joker_stabs_Robin_Loop
     /// </summary>
     public unsafe BmSDK.FName AnimStabLoop_RB
     {
@@ -634,7 +642,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimFailOut_RB
+    /// NameProperty: AnimFailOut_RB<br/>
+    /// Default: Joker_stabs_Robin_Fail_Out
     /// </summary>
     public unsafe BmSDK.FName AnimFailOut_RB
     {
@@ -643,7 +652,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabOut_RB
+    /// NameProperty: AnimStabOut_RB<br/>
+    /// Default: Joker_stabs_Robin_Out
     /// </summary>
     public unsafe BmSDK.FName AnimStabOut_RB
     {
@@ -652,7 +662,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// NameProperty: AnimStabOutSuccess_RB
+    /// NameProperty: AnimStabOutSuccess_RB<br/>
+    /// Default: Joker_stabs_Robin_Out_Success
     /// </summary>
     public unsafe BmSDK.FName AnimStabOutSuccess_RB
     {
@@ -661,7 +672,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// ArrayProperty: AnimGBPunchs
+    /// ArrayProperty: AnimGBPunchs<br/>
+    /// Default: (Joker_stabs_Batgirl_PunchA,Joker_stabs_Batgirl_PunchB,Joker_stabs_Batgirl_PunchC)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> AnimGBPunchs
     {
@@ -670,7 +682,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// ArrayProperty: AnimRBPunchs
+    /// ArrayProperty: AnimRBPunchs<br/>
+    /// Default: (Joker_stabs_Robin_PunchA,Joker_stabs_Robin_PunchB,Joker_stabs_Robin_PunchC)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> AnimRBPunchs
     {
@@ -751,7 +764,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// FloatProperty: FirstPunchDuration
+    /// FloatProperty: FirstPunchDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float FirstPunchDuration
     {
@@ -760,7 +774,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// FloatProperty: OtherPunchDuration
+    /// FloatProperty: OtherPunchDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float OtherPunchDuration
     {
@@ -787,7 +802,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// IntProperty: PunchNb
+    /// IntProperty: PunchNb<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int PunchNb
     {
@@ -796,7 +812,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// IntProperty: KnifeDamage
+    /// IntProperty: KnifeDamage<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int KnifeDamage
     {
@@ -805,7 +822,8 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
     }
 
     /// <summary>
-    /// IntProperty: ShotDamage
+    /// IntProperty: ShotDamage<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int ShotDamage
     {

@@ -684,7 +684,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// ClassProperty: VillainDamageType
+    /// ClassProperty: VillainDamageType<br/>
+    /// Default: BmGame.RDmgType_ThugMineExplosion
     /// </summary>
     public unsafe BmSDK.Class VillainDamageType
     {
@@ -693,7 +694,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// ClassProperty: PlayerDamageType
+    /// ClassProperty: PlayerDamageType<br/>
+    /// Default: BmGame.RDmgType_ThugMineExplosion_Player
     /// </summary>
     public unsafe BmSDK.Class PlayerDamageType
     {
@@ -702,7 +704,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmGame.Default__RThugMineBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -720,7 +723,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// ComponentProperty: VisibilityFX
+    /// ComponentProperty: VisibilityFX<br/>
+    /// Default: BmGame.Default__RThugMineBase.VisibilityComp
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent VisibilityFX
     {
@@ -729,7 +733,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// ComponentProperty: MineSkeletalMeshComponent
+    /// ComponentProperty: MineSkeletalMeshComponent<br/>
+    /// Default: BmGame.Default__RThugMineBase.SkeletalMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent MineSkeletalMeshComponent
     {
@@ -738,7 +743,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// FloatProperty: ProximityDistance
+    /// FloatProperty: ProximityDistance<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ProximityDistance
     {
@@ -747,7 +753,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// FloatProperty: DamageToBats
+    /// FloatProperty: DamageToBats<br/>
+    /// Default: 35
     /// </summary>
     public unsafe float DamageToBats
     {
@@ -828,7 +835,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// BoolProperty: bValidVoiceSynthesiserTarget
+    /// BoolProperty: bValidVoiceSynthesiserTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidVoiceSynthesiserTarget
     {
@@ -837,7 +845,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillStopTick
+    /// FloatProperty: TimeTillStopTick<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float TimeTillStopTick
     {
@@ -864,7 +873,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
     }
 
     /// <summary>
-    /// FloatProperty: DisruptExplodeTimer
+    /// FloatProperty: DisruptExplodeTimer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DisruptExplodeTimer
     {

@@ -212,7 +212,8 @@ public partial class RBMAIAction_RunToCas : BmSDK.BmGame.RBMAIAction_BaseMove, B
     public InlineArray<float> MinDist => new(3, Ptr + 920, 4, this);
 
     /// <summary>
-    /// FloatProperty: MinDist
+    /// FloatProperty: MinDist<br/>
+    /// Default: 230
     /// </summary>
     public unsafe float MinDist_0
     {
@@ -220,7 +221,8 @@ public partial class RBMAIAction_RunToCas : BmSDK.BmGame.RBMAIAction_BaseMove, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 920); }
     }
     /// <summary>
-    /// FloatProperty: MinDist
+    /// FloatProperty: MinDist<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float MinDist_1
     {
@@ -228,7 +230,8 @@ public partial class RBMAIAction_RunToCas : BmSDK.BmGame.RBMAIAction_BaseMove, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 924); }
     }
     /// <summary>
-    /// FloatProperty: MinDist
+    /// FloatProperty: MinDist<br/>
+    /// Default: 650
     /// </summary>
     public unsafe float MinDist_2
     {

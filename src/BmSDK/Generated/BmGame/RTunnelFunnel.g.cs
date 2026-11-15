@@ -159,7 +159,8 @@ public partial class RTunnelFunnel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CatchCosAngle
+    /// FloatProperty: CatchCosAngle<br/>
+    /// Default: 0.94
     /// </summary>
     public unsafe float CatchCosAngle
     {
@@ -195,7 +196,8 @@ public partial class RTunnelFunnel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmGame.Default__RTunnelFunnel.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -213,7 +215,8 @@ public partial class RTunnelFunnel : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bValidVoiceSynthesiserTarget
+    /// BoolProperty: bValidVoiceSynthesiserTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidVoiceSynthesiserTarget
     {

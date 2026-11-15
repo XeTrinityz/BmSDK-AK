@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_ScarecrowThugFinalTakedown : BmSDK.BmGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// NameProperty: TransInAnimName
+    /// NameProperty: TransInAnimName<br/>
+    /// Default: Final_Thug_Strike_In
     /// </summary>
     public unsafe BmSDK.FName TransInAnimName
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_ScarecrowThugFinalTakedown : BmSDK.BmGam
     }
 
     /// <summary>
-    /// NameProperty: TransOutAnimName
+    /// NameProperty: TransOutAnimName<br/>
+    /// Default: Final_Thug_Strike_Out
     /// </summary>
     public unsafe BmSDK.FName TransOutAnimName
     {

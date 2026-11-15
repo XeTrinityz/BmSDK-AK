@@ -100,7 +100,8 @@ public partial class NxGenericForceFieldBox : BmSDK.Engine.NxGenericForceField, 
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: Engine.Default__NxGenericForceFieldBox.DrawBox0
     /// </summary>
     public unsafe BmSDK.Engine.DrawBoxComponent RenderComponent
     {
@@ -109,7 +110,8 @@ public partial class NxGenericForceFieldBox : BmSDK.Engine.NxGenericForceField, 
     }
 
     /// <summary>
-    /// StructProperty: BoxExtent
+    /// StructProperty: BoxExtent<br/>
+    /// Default: (X=200,Y=200,Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoxExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 920);

@@ -106,7 +106,8 @@ public partial class RSeqAct_SetDifficultyChapter : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// IntProperty: Chapter
+    /// IntProperty: Chapter<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int Chapter
     {
@@ -115,7 +116,8 @@ public partial class RSeqAct_SetDifficultyChapter : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// FloatProperty: FloatChapter
+    /// FloatProperty: FloatChapter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FloatChapter
     {

@@ -429,7 +429,8 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
     }
 
     /// <summary>
-    /// FloatProperty: ExtentSize
+    /// FloatProperty: ExtentSize<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ExtentSize
     {
@@ -447,7 +448,8 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
     }
 
     /// <summary>
-    /// FloatProperty: DistBetweenProxys
+    /// FloatProperty: DistBetweenProxys<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float DistBetweenProxys
     {

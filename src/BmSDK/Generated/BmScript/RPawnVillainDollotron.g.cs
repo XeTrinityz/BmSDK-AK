@@ -228,7 +228,8 @@ public partial class RPawnVillainDollotron : BmSDK.BmGame.RPawnVillainThug, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: StunScale
+    /// FloatProperty: StunScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StunScale
     {

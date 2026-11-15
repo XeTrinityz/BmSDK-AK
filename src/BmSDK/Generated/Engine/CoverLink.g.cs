@@ -701,7 +701,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: TurnTargetPackedProperties
+        /// IntProperty: TurnTargetPackedProperties<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int TurnTargetPackedProperties
         {
@@ -764,7 +765,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanMantle
+        /// BoolProperty: bCanMantle<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanMantle
         {
@@ -800,7 +802,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanCoverSlip_Left
+        /// BoolProperty: bCanCoverSlip_Left<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanCoverSlip_Left
         {
@@ -809,7 +812,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanCoverSlip_Right
+        /// BoolProperty: bCanCoverSlip_Right<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanCoverSlip_Right
         {
@@ -818,7 +822,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanSwatTurn_Left
+        /// BoolProperty: bCanSwatTurn_Left<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanSwatTurn_Left
         {
@@ -827,7 +832,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bCanSwatTurn_Right
+        /// BoolProperty: bCanSwatTurn_Right<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanSwatTurn_Right
         {
@@ -836,7 +842,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bEnabled
+        /// BoolProperty: bEnabled<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bEnabled
         {
@@ -845,7 +852,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowPopup
+        /// BoolProperty: bAllowPopup<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowPopup
         {
@@ -854,7 +862,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowMantle
+        /// BoolProperty: bAllowMantle<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowMantle
         {
@@ -863,7 +872,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowCoverSlip
+        /// BoolProperty: bAllowCoverSlip<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowCoverSlip
         {
@@ -881,7 +891,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bAllowSwatTurn
+        /// BoolProperty: bAllowSwatTurn<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowSwatTurn
         {
@@ -1201,7 +1212,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: LtSlotIdx
+        /// IntProperty: LtSlotIdx<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int LtSlotIdx
         {
@@ -1210,7 +1222,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: RtSlotIdx
+        /// IntProperty: RtSlotIdx<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int RtSlotIdx
         {
@@ -1342,7 +1355,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoSort
+    /// BoolProperty: bAutoSort<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoSort
     {
@@ -1351,7 +1365,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAutoAdjust
+    /// BoolProperty: bAutoAdjust<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoAdjust
     {
@@ -1441,7 +1456,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LeanTraceDist
+    /// FloatProperty: LeanTraceDist<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float LeanTraceDist
     {
@@ -1450,7 +1466,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: Slots
+    /// ArrayProperty: Slots<br/>
+    /// Default: ((LocationOffset=(X=64),TurnTargetPackedProperties=-1,bCanMantle=true,bCanCoverSlip_Left=true,bCanCoverSlip_Right=true,bCanSwatTurn_Left=true,bCanSwatTurn_Right=true,bEnabled=true,bAllowPopup=true,bAl...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.CoverLink.FCoverSlot> Slots
     {
@@ -1477,7 +1494,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: InvalidateDistance
+    /// FloatProperty: InvalidateDistance<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float InvalidateDistance
     {
@@ -1486,7 +1504,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxFireLinkDist
+    /// FloatProperty: MaxFireLinkDist<br/>
+    /// Default: 2048
     /// </summary>
     public unsafe float MaxFireLinkDist
     {
@@ -1510,7 +1529,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AlignDist
+    /// FloatProperty: AlignDist<br/>
+    /// Default: 36
     /// </summary>
     public unsafe float AlignDist
     {
@@ -1519,7 +1539,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: AutoCoverSlotInterval
+    /// FloatProperty: AutoCoverSlotInterval<br/>
+    /// Default: 175
     /// </summary>
     public unsafe float AutoCoverSlotInterval
     {
@@ -1528,7 +1549,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: StandHeight
+    /// FloatProperty: StandHeight<br/>
+    /// Default: 160
     /// </summary>
     public unsafe float StandHeight
     {
@@ -1537,7 +1559,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MidHeight
+    /// FloatProperty: MidHeight<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float MidHeight
     {
@@ -1546,25 +1569,29 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: StandingLeanOffset
+    /// StructProperty: StandingLeanOffset<br/>
+    /// Default: (Y=78,Z=69)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 StandingLeanOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1040);
 
     /// <summary>
-    /// StructProperty: CrouchLeanOffset
+    /// StructProperty: CrouchLeanOffset<br/>
+    /// Default: (Y=70,Z=19)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CrouchLeanOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1052);
 
     /// <summary>
-    /// StructProperty: PopupOffset
+    /// StructProperty: PopupOffset<br/>
+    /// Default: (Z=70)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PopupOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1064);
 
     /// <summary>
-    /// FloatProperty: SlipDist
+    /// FloatProperty: SlipDist<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float SlipDist
     {
@@ -1573,7 +1600,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TurnDist
+    /// FloatProperty: TurnDist<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float TurnDist
     {
@@ -1582,7 +1610,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DangerScale
+    /// FloatProperty: DangerScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DangerScale
     {

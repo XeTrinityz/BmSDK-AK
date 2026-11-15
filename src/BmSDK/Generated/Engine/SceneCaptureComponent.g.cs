@@ -130,7 +130,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -184,7 +185,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bSkipRenderingDepthPrepass
+    /// BoolProperty: bSkipRenderingDepthPrepass<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipRenderingDepthPrepass
     {
@@ -193,7 +195,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: bCaptureEnabled
+    /// BoolProperty: bCaptureEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCaptureEnabled
     {
@@ -211,7 +214,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// StructProperty: ClearColor
+    /// StructProperty: ClearColor<br/>
+    /// Default: (A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor ClearColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 128);
@@ -235,7 +239,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: FrameRate
+    /// FloatProperty: FrameRate<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float FrameRate
     {

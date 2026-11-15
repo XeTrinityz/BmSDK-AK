@@ -103,7 +103,8 @@ public partial class RSeqAct_UpdateGravityMaterialParamsForStagg : BmSDK.Engine.
     }
 
     /// <summary>
-    /// NameProperty: GravityParamName
+    /// NameProperty: GravityParamName<br/>
+    /// Default: Gravity
     /// </summary>
     public unsafe BmSDK.FName GravityParamName
     {

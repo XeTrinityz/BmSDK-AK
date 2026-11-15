@@ -79,7 +79,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: MaxParticles
+    /// IntProperty: MaxParticles<br/>
+    /// Default: 32767
     /// </summary>
     public unsafe int MaxParticles
     {
@@ -97,7 +98,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_EffectPhysics
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -106,7 +108,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: SimulationMethod
+    /// ByteProperty: SimulationMethod<br/>
+    /// Default: ESM_NO_PARTICLE_INTERACTION
     /// </summary>
     public unsafe BmSDK.Engine.PhysXParticleSystem.ESimulationMethod SimulationMethod
     {
@@ -115,7 +118,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: PacketSizeMultiplier
+    /// ByteProperty: PacketSizeMultiplier<br/>
+    /// Default: EPSM_8
     /// </summary>
     public unsafe BmSDK.Engine.PhysXParticleSystem.EPacketSizeMultiplier PacketSizeMultiplier
     {
@@ -124,13 +128,15 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: RBCollideWithChannels
+    /// StructProperty: RBCollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer RBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 96);
 
     /// <summary>
-    /// FloatProperty: CollisionDistance
+    /// FloatProperty: CollisionDistance<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float CollisionDistance
     {
@@ -139,7 +145,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RestitutionWithStaticShapes
+    /// FloatProperty: RestitutionWithStaticShapes<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RestitutionWithStaticShapes
     {
@@ -148,7 +155,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RestitutionWithDynamicShapes
+    /// FloatProperty: RestitutionWithDynamicShapes<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RestitutionWithDynamicShapes
     {
@@ -157,7 +165,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FrictionWithStaticShapes
+    /// FloatProperty: FrictionWithStaticShapes<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float FrictionWithStaticShapes
     {
@@ -166,7 +175,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FrictionWithDynamicShapes
+    /// FloatProperty: FrictionWithDynamicShapes<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float FrictionWithDynamicShapes
     {
@@ -193,7 +203,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDynamicCollision
+    /// BoolProperty: bDynamicCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDynamicCollision
     {
@@ -211,7 +222,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bStaticCollision
+    /// BoolProperty: bStaticCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStaticCollision
     {
@@ -256,7 +268,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxMotionDistance
+    /// FloatProperty: MaxMotionDistance<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float MaxMotionDistance
     {
@@ -280,7 +293,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 140);
 
     /// <summary>
-    /// FloatProperty: RestParticleDistance
+    /// FloatProperty: RestParticleDistance<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float RestParticleDistance
     {
@@ -289,7 +303,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RestDensity
+    /// FloatProperty: RestDensity<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float RestDensity
     {
@@ -298,7 +313,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: KernelRadiusMultiplier
+    /// FloatProperty: KernelRadiusMultiplier<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float KernelRadiusMultiplier
     {
@@ -307,7 +323,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Stiffness
+    /// FloatProperty: Stiffness<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float Stiffness
     {
@@ -316,7 +333,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Viscosity
+    /// FloatProperty: Viscosity<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float Viscosity
     {
@@ -325,7 +343,8 @@ public partial class PhysXParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CollisionResponseCoefficient
+    /// FloatProperty: CollisionResponseCoefficient<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float CollisionResponseCoefficient
     {

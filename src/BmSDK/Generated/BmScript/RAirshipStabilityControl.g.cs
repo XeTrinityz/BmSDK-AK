@@ -94,7 +94,8 @@ public partial class RAirshipStabilityControl : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RAirshipStabilityControl.BaseMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BaseMesh
     {
@@ -103,7 +104,8 @@ public partial class RAirshipStabilityControl : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: BowlMesh
+    /// ComponentProperty: BowlMesh<br/>
+    /// Default: BmScript.Default__RAirshipStabilityControl.BowlMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent BowlMesh
     {
@@ -112,7 +114,8 @@ public partial class RAirshipStabilityControl : BmSDK.Engine.Actor, BmSDK.IGameO
     }
 
     /// <summary>
-    /// ComponentProperty: TopMesh
+    /// ComponentProperty: TopMesh<br/>
+    /// Default: BmScript.Default__RAirshipStabilityControl.TopMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent TopMesh
     {

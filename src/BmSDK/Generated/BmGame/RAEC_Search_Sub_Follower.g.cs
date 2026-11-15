@@ -402,7 +402,8 @@ public partial class RAEC_Search_Sub_Follower : BmSDK.BmGame.RAlertEventCoordina
     }
 
     /// <summary>
-    /// FloatProperty: minTimeBeforeDirectionSwap
+    /// FloatProperty: minTimeBeforeDirectionSwap<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float minTimeBeforeDirectionSwap
     {
@@ -411,7 +412,8 @@ public partial class RAEC_Search_Sub_Follower : BmSDK.BmGame.RAlertEventCoordina
     }
 
     /// <summary>
-    /// FloatProperty: maxTimeBeforeDirectionSwap
+    /// FloatProperty: maxTimeBeforeDirectionSwap<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float maxTimeBeforeDirectionSwap
     {

@@ -1754,7 +1754,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FAkDuckingInfo
     {
         /// <summary>
-        /// IntProperty: DuckingLevels
+        /// IntProperty: DuckingLevels<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int DuckingLevels
         {
@@ -1763,7 +1764,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DuckAttackTime
+        /// FloatProperty: DuckAttackTime<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float DuckAttackTime
         {
@@ -1772,7 +1774,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DuckReleaseTime
+        /// FloatProperty: DuckReleaseTime<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float DuckReleaseTime
         {
@@ -1781,7 +1784,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: FullyDuckedValue
+        /// FloatProperty: FullyDuckedValue<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float FullyDuckedValue
         {

@@ -1393,7 +1393,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: ReferencePointRotation
+    /// StructProperty: ReferencePointRotation<br/>
+    /// Default: (Yaw=16384)
     /// </summary>
     public unsafe ref BmSDK.Rotator ReferencePointRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 124);
@@ -1516,7 +1517,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RateScale
+    /// FloatProperty: RateScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RateScale
     {
@@ -1534,7 +1536,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverrideFramerate
+    /// FloatProperty: OverrideFramerate<br/>
+    /// Default: 29.97
     /// </summary>
     public unsafe float OverrideFramerate
     {
@@ -1552,7 +1555,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowCheekyBlendIn
+    /// BoolProperty: AllowCheekyBlendIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowCheekyBlendIn
     {
@@ -1561,7 +1565,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowCheekyBlendOut
+    /// BoolProperty: AllowCheekyBlendOut<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowCheekyBlendOut
     {
@@ -1570,7 +1575,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowAdditiveTransitionBlendIn
+    /// BoolProperty: AllowAdditiveTransitionBlendIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowAdditiveTransitionBlendIn
     {
@@ -1579,7 +1585,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: AllowAdditiveTransitionBlendOut
+    /// BoolProperty: AllowAdditiveTransitionBlendOut<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowAdditiveTransitionBlendOut
     {
@@ -1651,7 +1658,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: FaceOverlayHoldsLastFrame
+    /// BoolProperty: FaceOverlayHoldsLastFrame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FaceOverlayHoldsLastFrame
     {
@@ -1990,7 +1998,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AnimSequence.FAnimCollisionOptions>(Ptr + 780);
 
     /// <summary>
-    /// FloatProperty: BlendInDuration
+    /// FloatProperty: BlendInDuration<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendInDuration
     {
@@ -1999,7 +2008,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutDuration
+    /// FloatProperty: BlendOutDuration<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BlendOutDuration
     {
@@ -2068,7 +2078,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutPoint
+    /// FloatProperty: BlendOutPoint<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BlendOutPoint
     {
@@ -2131,7 +2142,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RootBoneTranslationOffsetOutPoint
+    /// FloatProperty: RootBoneTranslationOffsetOutPoint<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float RootBoneTranslationOffsetOutPoint
     {

@@ -236,7 +236,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bExtendable
+    /// BoolProperty: bExtendable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExtendable
     {
@@ -299,7 +300,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bGrapplePointOn
+    /// BoolProperty: bGrapplePointOn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGrapplePointOn
     {
@@ -380,7 +382,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCanEverBeGrappled
+    /// BoolProperty: bCanEverBeGrappled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanEverBeGrappled
     {
@@ -416,7 +419,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bDebugEditorCeilingClimbPoints
+    /// BoolProperty: bDebugEditorCeilingClimbPoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDebugEditorCeilingClimbPoints
     {
@@ -425,7 +429,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bCatwomanCanRescueHere
+    /// BoolProperty: bCatwomanCanRescueHere<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCatwomanCanRescueHere
     {

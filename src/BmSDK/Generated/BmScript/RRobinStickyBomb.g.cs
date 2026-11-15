@@ -445,7 +445,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionRumble
+    /// ObjectProperty: ExplosionRumble<br/>
+    /// Default: BmScript.Default__RRobinStickyBomb.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExplosionRumble
     {
@@ -454,7 +455,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: PlaceBombMove
+    /// ObjectProperty: PlaceBombMove<br/>
+    /// Default: Robin_Special_Moves.PlaceStickyStunBomb
     /// </summary>
     public unsafe BmSDK.BmScript.RSpecialMoveConfig_RobinPlaceStickyBomb PlaceBombMove
     {
@@ -463,7 +465,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: PlaceBombGroundMove
+    /// ObjectProperty: PlaceBombGroundMove<br/>
+    /// Default: Robin_Special_Moves.PlaceStickyStunBombGround
     /// </summary>
     public unsafe BmSDK.BmScript.RSpecialMoveConfig_RobinPlaceStickyBomb PlaceBombGroundMove
     {
@@ -472,7 +475,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// ObjectProperty: PlaceBombCombatMove
+    /// ObjectProperty: PlaceBombCombatMove<br/>
+    /// Default: Robin_Special_Moves.PlaceStickyStunBombCombat
     /// </summary>
     public unsafe BmSDK.BmScript.RSpecialMoveConfig_RobinPlaceStickyBomb PlaceBombCombatMove
     {
@@ -490,7 +494,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: TargettingMaxRange
+    /// FloatProperty: TargettingMaxRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float TargettingMaxRange
     {
@@ -499,7 +504,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: HurtRadius
+    /// FloatProperty: HurtRadius<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float HurtRadius
     {
@@ -508,7 +514,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: StunTime
+    /// FloatProperty: StunTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float StunTime
     {
@@ -517,7 +524,8 @@ public partial class RRobinStickyBomb : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float explosionImpulse
     {

@@ -121,7 +121,8 @@ public partial class RSkelControlDeformVehicle : BmSDK.Engine.SkelControlBase, B
         }
 
         /// <summary>
-        /// FloatProperty: MaxTranslation
+        /// FloatProperty: MaxTranslation<br/>
+        /// Default: 25
         /// </summary>
         public unsafe float MaxTranslation
         {
@@ -139,7 +140,8 @@ public partial class RSkelControlDeformVehicle : BmSDK.Engine.SkelControlBase, B
         }
 
         /// <summary>
-        /// FloatProperty: MinRotation
+        /// FloatProperty: MinRotation<br/>
+        /// Default: -20
         /// </summary>
         public unsafe float MinRotation
         {
@@ -148,7 +150,8 @@ public partial class RSkelControlDeformVehicle : BmSDK.Engine.SkelControlBase, B
         }
 
         /// <summary>
-        /// FloatProperty: MaxRotation
+        /// FloatProperty: MaxRotation<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float MaxRotation
         {

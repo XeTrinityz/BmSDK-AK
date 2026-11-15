@@ -79,13 +79,15 @@ public partial class RParticleModuleColorByVelocity : BmSDK.Engine.ParticleModul
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: ColorMultiplierMin
+    /// StructProperty: ColorMultiplierMin<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ColorMultiplierMin
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 96);
 
     /// <summary>
-    /// FloatProperty: AlphaMultiplierMin
+    /// FloatProperty: AlphaMultiplierMin<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AlphaMultiplierMin
     {
@@ -103,13 +105,15 @@ public partial class RParticleModuleColorByVelocity : BmSDK.Engine.ParticleModul
     }
 
     /// <summary>
-    /// StructProperty: ColorMultiplierMax
+    /// StructProperty: ColorMultiplierMax<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ColorMultiplierMax
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 116);
 
     /// <summary>
-    /// FloatProperty: AlphaMultiplierMax
+    /// FloatProperty: AlphaMultiplierMax<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AlphaMultiplierMax
     {

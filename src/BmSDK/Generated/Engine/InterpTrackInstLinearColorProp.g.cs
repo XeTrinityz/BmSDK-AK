@@ -88,7 +88,8 @@ public partial class InterpTrackInstLinearColorProp : BmSDK.Engine.InterpTrackIn
     }
 
     /// <summary>
-    /// StructProperty: ResetColor
+    /// StructProperty: ResetColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ResetColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 108);

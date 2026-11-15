@@ -402,7 +402,8 @@ public partial class OnlineRecentPlayersList : BmSDK.GameObject, BmSDK.IGameObje
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.OnlineRecentPlayersList.FRecentParty>(Ptr + 116);
 
     /// <summary>
-    /// IntProperty: MaxRecentPlayers
+    /// IntProperty: MaxRecentPlayers<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxRecentPlayers
     {
@@ -411,7 +412,8 @@ public partial class OnlineRecentPlayersList : BmSDK.GameObject, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// IntProperty: MaxRecentParties
+    /// IntProperty: MaxRecentParties<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxRecentParties
     {

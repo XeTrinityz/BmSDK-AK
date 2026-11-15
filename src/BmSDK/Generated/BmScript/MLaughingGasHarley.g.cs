@@ -309,7 +309,8 @@ public partial class MLaughingGasHarley : BmSDK.BmGame.MLaughingGasBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: LaughingGasArchetype
+    /// ObjectProperty: LaughingGasArchetype<br/>
+    /// Default: WBGMDLC_HarleyQuinn_Archetypes.Gadgets.LaughingGas.LaughingGas_Archetype
     /// </summary>
     public unsafe BmSDK.BmScript.MLaughingGasScreen LaughingGasArchetype
     {
@@ -318,7 +319,8 @@ public partial class MLaughingGasHarley : BmSDK.BmGame.MLaughingGasBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: LaughingGasSmokeOnEvent
+    /// ObjectProperty: LaughingGasSmokeOnEvent<br/>
+    /// Default: Ww_MDLC00_CHR_Harley_Psychosis.Play_MDLC00_Psychosis_HUD_LaughingGas
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LaughingGasSmokeOnEvent
     {
@@ -327,7 +329,8 @@ public partial class MLaughingGasHarley : BmSDK.BmGame.MLaughingGasBase, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: LaughingGasSmokeOffEvent
+    /// ObjectProperty: LaughingGasSmokeOffEvent<br/>
+    /// Default: Ww_MDLC00_CHR_Harley_Psychosis.Stop_MDLC00_Psychosis_HUD_LaughingGas
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LaughingGasSmokeOffEvent
     {
@@ -345,7 +348,8 @@ public partial class MLaughingGasHarley : BmSDK.BmGame.MLaughingGasBase, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: LaughingGasSmokeThreshold
+    /// FloatProperty: LaughingGasSmokeThreshold<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float LaughingGasSmokeThreshold
     {

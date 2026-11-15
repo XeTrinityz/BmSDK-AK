@@ -462,7 +462,8 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillDetonate
+    /// FloatProperty: TimeTillDetonate<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float TimeTillDetonate
     {
@@ -471,7 +472,8 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
     }
 
     /// <summary>
-    /// BoolProperty: HitFrontOfThug
+    /// BoolProperty: HitFrontOfThug<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HitFrontOfThug
     {

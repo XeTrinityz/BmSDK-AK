@@ -2660,7 +2660,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: JokerHallucinationCombatController
+    /// ObjectProperty: JokerHallucinationCombatController<br/>
+    /// Default: BmGame.Default__RBMAIManager.JHCC
     /// </summary>
     public unsafe BmSDK.BmGame.RJokerHallucinationCombatController JokerHallucinationCombatController
     {
@@ -2669,7 +2670,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: MilitiaChatter
+    /// ObjectProperty: MilitiaChatter<br/>
+    /// Default: BarkCharDef_Chatter_Militia.CHATTER_Militia
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkCharacterDef MilitiaChatter
     {
@@ -2678,7 +2680,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: GangChatter
+    /// ObjectProperty: GangChatter<br/>
+    /// Default: BarkCharDef_Chatter_Thug.CHATTER_Thug
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkCharacterDef GangChatter
     {
@@ -2687,7 +2690,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BarkPillarData
+    /// ObjectProperty: BarkPillarData<br/>
+    /// Default: DLG_Pillars.LookUp
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkPillarLookup BarkPillarData
     {
@@ -2723,7 +2727,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxPathNodesSeenPerCheck
+    /// IntProperty: MaxPathNodesSeenPerCheck<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int MaxPathNodesSeenPerCheck
     {
@@ -2732,7 +2737,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenSuccessfulChecks
+    /// FloatProperty: MinTimeBetweenSuccessfulChecks<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinTimeBetweenSuccessfulChecks
     {
@@ -2759,7 +2765,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: AIUpdatesPerFrame
+    /// IntProperty: AIUpdatesPerFrame<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int AIUpdatesPerFrame
     {
@@ -2768,7 +2775,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCombatEnabled
+    /// BoolProperty: bCombatEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCombatEnabled
     {
@@ -2948,7 +2956,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ManDownPerimeterCap
+    /// IntProperty: ManDownPerimeterCap<br/>
+    /// Default: 9
     /// </summary>
     public unsafe int ManDownPerimeterCap
     {
@@ -2957,7 +2966,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SmashNoiseRadius_Close
+    /// FloatProperty: SmashNoiseRadius_Close<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SmashNoiseRadius_Close
     {
@@ -3083,7 +3093,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: WorldAvoidanceUpdateGroups
+    /// IntProperty: WorldAvoidanceUpdateGroups<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int WorldAvoidanceUpdateGroups
     {
@@ -3092,7 +3103,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NextAvoidanceUpdate
+    /// IntProperty: NextAvoidanceUpdate<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int NextAvoidanceUpdate
     {
@@ -3119,7 +3131,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: CombatCollisionUpdateGroups
+    /// IntProperty: CombatCollisionUpdateGroups<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int CombatCollisionUpdateGroups
     {
@@ -3137,7 +3150,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NavMeshCollisionFloorCheckUpdateGroups
+    /// IntProperty: NavMeshCollisionFloorCheckUpdateGroups<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NavMeshCollisionFloorCheckUpdateGroups
     {
@@ -3155,7 +3169,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: IdleConfigLOSCheckUpdateGroups
+    /// IntProperty: IdleConfigLOSCheckUpdateGroups<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int IdleConfigLOSCheckUpdateGroups
     {
@@ -3164,7 +3179,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PredPartialFlagName
+    /// StrProperty: PredPartialFlagName<br/>
+    /// Default: "Predator_Partial"
     /// </summary>
     public unsafe BmSDK.FString PredPartialFlagName
     {
@@ -3173,7 +3189,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PredActiveFlagName
+    /// StrProperty: PredActiveFlagName<br/>
+    /// Default: "Predator_Active"
     /// </summary>
     public unsafe BmSDK.FString PredActiveFlagName
     {
@@ -3182,7 +3199,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: PredAllDownOrLockedUpFlagName
+    /// StrProperty: PredAllDownOrLockedUpFlagName<br/>
+    /// Default: "Predator_AllDownOrLockedUp"
     /// </summary>
     public unsafe BmSDK.FString PredAllDownOrLockedUpFlagName
     {
@@ -3200,7 +3218,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PathLookPitchScale_Up
+    /// FloatProperty: PathLookPitchScale_Up<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PathLookPitchScale_Up
     {
@@ -3209,7 +3228,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PathLookPitchScale_Down
+    /// FloatProperty: PathLookPitchScale_Down<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float PathLookPitchScale_Down
     {
@@ -3236,7 +3256,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PredDifficulty
+    /// ArrayProperty: PredDifficulty<br/>
+    /// Default: ((AlwaysHitRange=300,InstantHitIfNotRunningRange=500,TimeToAcquire=1.2,RifleDamagePerShot=2,ShotgunDamagePerShot=10,SniperDamagePerShot=10,InaccuracyRange=300,MaxInaccuracyRange=3000,HitRatio=0.25,Gre...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMAIManager.FPredatorDifficultyLevelDefine> PredDifficulty
     {
@@ -3245,7 +3266,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: PredFiringCountDamageMultiplier
+    /// ArrayProperty: PredFiringCountDamageMultiplier<br/>
+    /// Default: (1,0.75,0.5,0.5,0.5,0.5,0.5,0.5)
     /// </summary>
     public unsafe BmSDK.TArray<float> PredFiringCountDamageMultiplier
     {
@@ -3389,7 +3411,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: NavMeshObstacleQueueType
+    /// ByteProperty: NavMeshObstacleQueueType<br/>
+    /// Default: NAVOBSTACLEQUEUE_BatchAddAndRemove
     /// </summary>
     public unsafe BmSDK.BmGame.RBMAIManager.ENavMeshObstacleQueueType NavMeshObstacleQueueType
     {

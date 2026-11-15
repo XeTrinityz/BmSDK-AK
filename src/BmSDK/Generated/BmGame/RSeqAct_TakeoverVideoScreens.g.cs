@@ -227,7 +227,8 @@ public partial class RSeqAct_TakeoverVideoScreens : BmSDK.Engine.SeqAct_Latent, 
     }
 
     /// <summary>
-    /// FloatProperty: TransitionDuration
+    /// FloatProperty: TransitionDuration<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float TransitionDuration
     {

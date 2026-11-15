@@ -79,7 +79,8 @@ public partial class MaterialExpressionFresnel : BmSDK.Engine.MaterialExpression
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: Exponent
+    /// FloatProperty: Exponent<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float Exponent
     {

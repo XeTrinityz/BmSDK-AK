@@ -107,7 +107,8 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: TraceDistance
+    /// FloatProperty: TraceDistance<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float TraceDistance
     {
@@ -125,7 +126,8 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: NumWholeSceneDynamicShadowCascades
+    /// IntProperty: NumWholeSceneDynamicShadowCascades<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumWholeSceneDynamicShadowCascades
     {
@@ -134,7 +136,8 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CascadeDistributionExponent
+    /// FloatProperty: CascadeDistributionExponent<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CascadeDistributionExponent
     {

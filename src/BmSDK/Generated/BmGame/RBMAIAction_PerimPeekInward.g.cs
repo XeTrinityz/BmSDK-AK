@@ -189,7 +189,8 @@ public partial class RBMAIAction_PerimPeekInward : BmSDK.BmGame.RBMAIAction, BmS
     }
 
     /// <summary>
-    /// StructProperty: PeekID
+    /// StructProperty: PeekID<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId PeekID
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 892);

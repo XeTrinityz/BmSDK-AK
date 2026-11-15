@@ -388,7 +388,8 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: PreloadStreamPriority
+    /// ByteProperty: PreloadStreamPriority<br/>
+    /// Default: AKIO_PRIORITY_NORMAL
     /// </summary>
     public unsafe BmSDK.Engine.AkWwise.EAkIOStreamPriorities PreloadStreamPriority
     {

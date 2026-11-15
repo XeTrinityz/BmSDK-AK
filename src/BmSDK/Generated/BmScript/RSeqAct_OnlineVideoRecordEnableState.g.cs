@@ -93,7 +93,8 @@ public partial class RSeqAct_OnlineVideoRecordEnableState : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bRecordingEnabled
+    /// BoolProperty: bRecordingEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRecordingEnabled
     {

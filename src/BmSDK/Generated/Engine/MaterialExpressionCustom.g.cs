@@ -79,7 +79,8 @@ public partial class MaterialExpressionCustom : BmSDK.Engine.MaterialExpression,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: Code
+    /// StrProperty: Code<br/>
+    /// Default: "return 0;"
     /// </summary>
     public unsafe BmSDK.FString Code
     {
@@ -88,7 +89,8 @@ public partial class MaterialExpressionCustom : BmSDK.Engine.MaterialExpression,
     }
 
     /// <summary>
-    /// ByteProperty: OutputType
+    /// ByteProperty: OutputType<br/>
+    /// Default: CMOT_Float3
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionCustom.ECustomMaterialOutputType OutputType
     {
@@ -97,7 +99,8 @@ public partial class MaterialExpressionCustom : BmSDK.Engine.MaterialExpression,
     }
 
     /// <summary>
-    /// StrProperty: Description
+    /// StrProperty: Description<br/>
+    /// Default: "Custom"
     /// </summary>
     public unsafe BmSDK.FString Description
     {
@@ -106,7 +109,8 @@ public partial class MaterialExpressionCustom : BmSDK.Engine.MaterialExpression,
     }
 
     /// <summary>
-    /// ArrayProperty: Inputs
+    /// ArrayProperty: Inputs<br/>
+    /// Default: (())
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MaterialExpressionCustom.FCustomInput> Inputs
     {

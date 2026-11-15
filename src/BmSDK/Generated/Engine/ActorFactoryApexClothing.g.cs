@@ -88,7 +88,8 @@ public partial class ActorFactoryApexClothing : BmSDK.Engine.ActorFactorySkeleta
     }
 
     /// <summary>
-    /// ByteProperty: ClothingRBChannel
+    /// ByteProperty: ClothingRBChannel<br/>
+    /// Default: RBCC_Clothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel ClothingRBChannel
     {
@@ -97,7 +98,8 @@ public partial class ActorFactoryApexClothing : BmSDK.Engine.ActorFactorySkeleta
     }
 
     /// <summary>
-    /// StructProperty: ClothingRBCollideWithChannels
+    /// StructProperty: ClothingRBCollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true,EffectPhysics=true,BlockingVolume=true,ClothingCollision=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer ClothingRBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 188);

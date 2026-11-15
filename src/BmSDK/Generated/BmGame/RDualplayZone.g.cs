@@ -145,7 +145,8 @@ public partial class RDualplayZone : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent2
+    /// ComponentProperty: RenderComponent2<br/>
+    /// Default: BmGame.Default__RDualplayZone.DrawCylinder1
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent2
     {
@@ -154,7 +155,8 @@ public partial class RDualplayZone : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: RenderComponent
+    /// ComponentProperty: RenderComponent<br/>
+    /// Default: BmGame.Default__RDualplayZone.DrawCylinder0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCylinderComponent RenderComponent
     {
@@ -163,7 +165,8 @@ public partial class RDualplayZone : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoneRadius
+    /// FloatProperty: ZoneRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float ZoneRadius
     {
@@ -172,7 +175,8 @@ public partial class RDualplayZone : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ZoneCoverage
+    /// FloatProperty: ZoneCoverage<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float ZoneCoverage
     {

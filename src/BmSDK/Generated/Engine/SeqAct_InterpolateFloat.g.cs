@@ -92,7 +92,8 @@ public partial class SeqAct_InterpolateFloat : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {

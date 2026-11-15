@@ -272,7 +272,8 @@ public partial class RGFxWorldMovieActorMap3D : BmSDK.BmGame.RGFxWorldMovieActor
     }
 
     /// <summary>
-    /// ComponentProperty: RoadComponent
+    /// ComponentProperty: RoadComponent<br/>
+    /// Default: BmGame.Default__RGFxWorldMovieActorMap3D.RoadComponent0
     /// </summary>
     public unsafe BmSDK.BmGame.RMap3DRoadComponent RoadComponent
     {

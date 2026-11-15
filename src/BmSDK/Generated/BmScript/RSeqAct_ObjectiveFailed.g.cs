@@ -136,7 +136,8 @@ public partial class RSeqAct_ObjectiveFailed : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// StrProperty: GameOverSequence
+    /// StrProperty: GameOverSequence<br/>
+    /// Default: "Death_Blank"
     /// </summary>
     public unsafe BmSDK.FString GameOverSequence
     {
@@ -163,7 +164,8 @@ public partial class RSeqAct_ObjectiveFailed : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: FadeAudio
+    /// BoolProperty: FadeAudio<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FadeAudio
     {

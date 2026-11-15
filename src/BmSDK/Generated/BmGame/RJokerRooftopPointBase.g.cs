@@ -133,7 +133,8 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionCylinder
+    /// ComponentProperty: CollisionCylinder<br/>
+    /// Default: BmGame.Default__RJokerRooftopPointBase.CollisionCylinder1
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CollisionCylinder
     {

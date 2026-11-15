@@ -79,7 +79,8 @@ public partial class SkelControlHandlebars : BmSDK.Engine.SkelControlSingleBone,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: WheelRollAxis
+    /// ByteProperty: WheelRollAxis<br/>
+    /// Default: AXIS_Y
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis WheelRollAxis
     {
@@ -88,7 +89,8 @@ public partial class SkelControlHandlebars : BmSDK.Engine.SkelControlSingleBone,
     }
 
     /// <summary>
-    /// ByteProperty: HandlebarRotateAxis
+    /// ByteProperty: HandlebarRotateAxis<br/>
+    /// Default: AXIS_Z
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis HandlebarRotateAxis
     {
@@ -115,7 +117,8 @@ public partial class SkelControlHandlebars : BmSDK.Engine.SkelControlSingleBone,
     }
 
     /// <summary>
-    /// IntProperty: SteerWheelBoneIndex
+    /// IntProperty: SteerWheelBoneIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SteerWheelBoneIndex
     {

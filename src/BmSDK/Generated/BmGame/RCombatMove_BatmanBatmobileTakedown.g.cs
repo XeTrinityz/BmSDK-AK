@@ -516,7 +516,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// FloatProperty: MinIntoAnimDist
+    /// FloatProperty: MinIntoAnimDist<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MinIntoAnimDist
     {
@@ -525,7 +526,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// FloatProperty: MaxIntoAnimDist
+    /// FloatProperty: MaxIntoAnimDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxIntoAnimDist
     {
@@ -534,7 +536,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// FloatProperty: MinDurationScale
+    /// FloatProperty: MinDurationScale<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float MinDurationScale
     {
@@ -543,7 +546,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// FloatProperty: MaxDurationScale
+    /// FloatProperty: MaxDurationScale<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float MaxDurationScale
     {
@@ -582,7 +586,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 880);
 
     /// <summary>
-    /// ArrayProperty: AnimNameList
+    /// ArrayProperty: AnimNameList<br/>
+    /// Default: (Batmobile_Assisted_Combat_Takedown_01,Batmobile_Assisted_Combat_Takedown_02,Batmobile_Assisted_Combat_Takedown_Low)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> AnimNameList
     {
@@ -591,7 +596,8 @@ public partial class RCombatMove_BatmanBatmobileTakedown : BmSDK.BmGame.RCombatM
     }
 
     /// <summary>
-    /// NameProperty: GrabAnimName
+    /// NameProperty: GrabAnimName<br/>
+    /// Default: Batman_Grab_Thug
     /// </summary>
     public unsafe BmSDK.FName GrabAnimName
     {

@@ -177,7 +177,8 @@ public partial class LevelStreamingVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ByteProperty: StreamingUsage
+    /// ByteProperty: StreamingUsage<br/>
+    /// Default: SVB_LoadingAndVisibility
     /// </summary>
     public unsafe BmSDK.Engine.LevelStreamingVolume.EStreamingVolumeUsage StreamingUsage
     {

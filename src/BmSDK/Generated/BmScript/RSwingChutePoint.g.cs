@@ -404,7 +404,8 @@ public partial class RSwingChutePoint : BmSDK.BmGame.RSwingChutePointBase, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: GlideLocatorOffset
+    /// FloatProperty: GlideLocatorOffset<br/>
+    /// Default: -250
     /// </summary>
     public unsafe float GlideLocatorOffset
     {

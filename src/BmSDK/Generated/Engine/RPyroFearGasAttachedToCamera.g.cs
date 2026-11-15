@@ -465,7 +465,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         }
 
         /// <summary>
-        /// ObjectProperty: DataMap
+        /// ObjectProperty: DataMap<br/>
+        /// Default: VFX_Water.WaterSystem.BM3_OceanData
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D DataMap
         {
@@ -474,7 +475,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         }
 
         /// <summary>
-        /// ObjectProperty: LightMap
+        /// ObjectProperty: LightMap<br/>
+        /// Default: City_FogDensity.City_fogLods_FogLightmap
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D LightMap
         {
@@ -493,7 +495,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: PyroFearGasVolumeInfo
+    /// StructProperty: PyroFearGasVolumeInfo<br/>
+    /// Default: (DataMap=VFX_Water.WaterSystem.BM3_OceanData,LightMap=City_FogDensity.City_fogLods_FogLightmap)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPyroFearGasAttachedToCamera.FFPyroFearGasVolumeInfo PyroFearGasVolumeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPyroFearGasAttachedToCamera.FFPyroFearGasVolumeInfo>(Ptr + 748);
@@ -505,7 +508,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 792);
 
     /// <summary>
-    /// ComponentProperty: PyroFearGasComponent
+    /// ComponentProperty: PyroFearGasComponent<br/>
+    /// Default: Engine.Default__RPyroFearGasAttachedToCamera.PyroFearGasLC
     /// </summary>
     public unsafe BmSDK.Engine.RPyroFearGasComponent PyroFearGasComponent
     {

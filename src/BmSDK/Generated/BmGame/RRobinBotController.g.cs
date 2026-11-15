@@ -1415,7 +1415,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// ByteProperty: NextMove
+    /// ByteProperty: NextMove<br/>
+    /// Default: BCMT_Strike
     /// </summary>
     public unsafe BmSDK.BmGame.RRobinBotController.BotCombatMoveType NextMove
     {
@@ -1439,7 +1440,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1292);
 
     /// <summary>
-    /// FloatProperty: CloseToGoalDist
+    /// FloatProperty: CloseToGoalDist<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float CloseToGoalDist
     {
@@ -1448,7 +1450,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: CloseToOldDist
+    /// FloatProperty: CloseToOldDist<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float CloseToOldDist
     {
@@ -1457,7 +1460,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: RunBase
+    /// FloatProperty: RunBase<br/>
+    /// Default: 1.3
     /// </summary>
     public unsafe float RunBase
     {
@@ -1466,7 +1470,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: VeryCloseToGoalDist
+    /// FloatProperty: VeryCloseToGoalDist<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float VeryCloseToGoalDist
     {
@@ -1475,7 +1480,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: StandBehindDist
+    /// FloatProperty: StandBehindDist<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float StandBehindDist
     {
@@ -1484,7 +1490,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: ActualMoveSpeed
+    /// FloatProperty: ActualMoveSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ActualMoveSpeed
     {
@@ -1493,7 +1500,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: WalkBehindDist
+    /// FloatProperty: WalkBehindDist<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float WalkBehindDist
     {
@@ -1502,7 +1510,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: RunBehindDist
+    /// FloatProperty: RunBehindDist<br/>
+    /// Default: 1400
     /// </summary>
     public unsafe float RunBehindDist
     {
@@ -1529,7 +1538,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: TimeNeededForCrouchChange
+    /// FloatProperty: TimeNeededForCrouchChange<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float TimeNeededForCrouchChange
     {
@@ -1595,7 +1605,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: TimeUntilLookBehind
+    /// FloatProperty: TimeUntilLookBehind<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float TimeUntilLookBehind
     {
@@ -1604,7 +1615,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: MinDistToLookBack
+    /// FloatProperty: MinDistToLookBack<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MinDistToLookBack
     {
@@ -1622,7 +1634,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: MaxTimeToWatchPlayer
+    /// FloatProperty: MaxTimeToWatchPlayer<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float MaxTimeToWatchPlayer
     {
@@ -1631,7 +1644,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: MaxLookAtDist
+    /// FloatProperty: MaxLookAtDist<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxLookAtDist
     {
@@ -1640,7 +1654,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
     }
 
     /// <summary>
-    /// FloatProperty: IdealPredVantagePointDistance
+    /// FloatProperty: IdealPredVantagePointDistance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float IdealPredVantagePointDistance
     {

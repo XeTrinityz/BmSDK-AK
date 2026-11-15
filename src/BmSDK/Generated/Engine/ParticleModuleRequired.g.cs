@@ -184,7 +184,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTimeInterpolatedPosition
+    /// BoolProperty: bAllowTimeInterpolatedPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTimeInterpolatedPosition
     {
@@ -301,7 +302,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseMaxDrawCount
+    /// BoolProperty: bUseMaxDrawCount<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseMaxDrawCount
     {
@@ -319,7 +321,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PivotOffsetX
+    /// FloatProperty: PivotOffsetX<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PivotOffsetX
     {
@@ -328,7 +331,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PivotOffsetY
+    /// FloatProperty: PivotOffsetY<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PivotOffsetY
     {
@@ -337,7 +341,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: EmitterDuration
+    /// FloatProperty: EmitterDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EmitterDuration
     {
@@ -364,7 +369,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: SpawnRate
+    /// StructProperty: SpawnRate<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleRequired.RequiredDistributionSpawnRate)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SpawnRate
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 136);
@@ -397,7 +403,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: SubImages_Horizontal
+    /// IntProperty: SubImages_Horizontal<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SubImages_Horizontal
     {
@@ -406,7 +413,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: SubImages_Vertical
+    /// IntProperty: SubImages_Vertical<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SubImages_Vertical
     {
@@ -448,7 +456,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: MaxDrawCount
+    /// IntProperty: MaxDrawCount<br/>
+    /// Default: 500
     /// </summary>
     public unsafe int MaxDrawCount
     {
@@ -457,7 +466,8 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: DownsampleThresholdScreenFraction
+    /// FloatProperty: DownsampleThresholdScreenFraction<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float DownsampleThresholdScreenFraction
     {
@@ -466,13 +476,15 @@ public partial class ParticleModuleRequired : BmSDK.Engine.ParticleModule, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: NormalsSphereCenter
+    /// StructProperty: NormalsSphereCenter<br/>
+    /// Default: (Z=100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 NormalsSphereCenter
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 236);
 
     /// <summary>
-    /// StructProperty: NormalsCylinderDirection
+    /// StructProperty: NormalsCylinderDirection<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 NormalsCylinderDirection
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 248);

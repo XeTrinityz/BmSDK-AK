@@ -104,27 +104,32 @@ public partial class RFlaps_ConstraintSetupAnimBlend : BmSDK.Engine.RFlaps_Const
     public InlineArray<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData> BlendDatas => new(5, Ptr + 132, 12, this);
 
     /// <summary>
-    /// StructProperty: BlendDatas
+    /// StructProperty: BlendDatas<br/>
+    /// Default: (BlendWeight=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData BlendDatas_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData>(Ptr + 132);
     /// <summary>
-    /// StructProperty: BlendDatas
+    /// StructProperty: BlendDatas<br/>
+    /// Default: (BlendWeight=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData BlendDatas_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData>(Ptr + 144);
     /// <summary>
-    /// StructProperty: BlendDatas
+    /// StructProperty: BlendDatas<br/>
+    /// Default: (BlendWeight=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData BlendDatas_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData>(Ptr + 156);
     /// <summary>
-    /// StructProperty: BlendDatas
+    /// StructProperty: BlendDatas<br/>
+    /// Default: (BlendWeight=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData BlendDatas_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData>(Ptr + 168);
     /// <summary>
-    /// StructProperty: BlendDatas
+    /// StructProperty: BlendDatas<br/>
+    /// Default: (BlendWeight=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData BlendDatas_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RFlaps_ConstraintSetupAnimBlend.FRBlendBoneData>(Ptr + 180);
@@ -145,7 +150,8 @@ public partial class RFlaps_ConstraintSetupAnimBlend : BmSDK.Engine.RFlaps_Const
         }
 
         /// <summary>
-        /// FloatProperty: BlendWeight
+        /// FloatProperty: BlendWeight<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float BlendWeight
         {

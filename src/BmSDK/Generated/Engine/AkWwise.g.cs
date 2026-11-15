@@ -1349,7 +1349,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: PropagationBubble
+        /// FloatProperty: PropagationBubble<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float PropagationBubble
         {
@@ -1358,7 +1359,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: PropagationExtent
+        /// FloatProperty: PropagationExtent<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float PropagationExtent
         {
@@ -1367,7 +1369,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: PrimaryRayOcclusionWeighting
+        /// FloatProperty: PrimaryRayOcclusionWeighting<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float PrimaryRayOcclusionWeighting
         {
@@ -1376,7 +1379,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: PrimaryRayObstructionWeighting
+        /// FloatProperty: PrimaryRayObstructionWeighting<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float PrimaryRayObstructionWeighting
         {
@@ -1446,7 +1450,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: OcclusionWeighting
+        /// FloatProperty: OcclusionWeighting<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float OcclusionWeighting
         {
@@ -1455,7 +1460,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ObstructionWeighting
+        /// FloatProperty: ObstructionWeighting<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ObstructionWeighting
         {
@@ -1559,7 +1565,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FAkPropagationMaterial
     {
         /// <summary>
-        /// FloatProperty: ObstructionFactor
+        /// FloatProperty: ObstructionFactor<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ObstructionFactor
         {
@@ -1568,7 +1575,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: OcclusionFactor
+        /// FloatProperty: OcclusionFactor<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float OcclusionFactor
         {
@@ -1611,7 +1619,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: PhysInfo
+        /// StructProperty: PhysInfo<br/>
+        /// Default: (InstantaneousActivationDelay=0.1,InstantaneousVelocityThreshold=1,InstantaneousVelocityAssuredThreshold=100,InstantaneousProbability=0.25,ContinuousMonitorWindowDuration=0.2,ContinuousMinimumLoopDura...
         /// </summary>
         public unsafe BmSDK.Engine.AkWwise.FAkPhysInfo PhysInfo
         {
@@ -1868,7 +1877,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InstantaneousActivationDelay
+        /// FloatProperty: InstantaneousActivationDelay<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float InstantaneousActivationDelay
         {
@@ -1877,7 +1887,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InstantaneousVelocityThreshold
+        /// FloatProperty: InstantaneousVelocityThreshold<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float InstantaneousVelocityThreshold
         {
@@ -1886,7 +1897,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InstantaneousVelocityAssuredThreshold
+        /// FloatProperty: InstantaneousVelocityAssuredThreshold<br/>
+        /// Default: 100
         /// </summary>
         public unsafe float InstantaneousVelocityAssuredThreshold
         {
@@ -1895,7 +1907,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: InstantaneousProbability
+        /// FloatProperty: InstantaneousProbability<br/>
+        /// Default: 0.25
         /// </summary>
         public unsafe float InstantaneousProbability
         {
@@ -1904,7 +1917,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ContinuousMonitorWindowDuration
+        /// FloatProperty: ContinuousMonitorWindowDuration<br/>
+        /// Default: 0.2
         /// </summary>
         public unsafe float ContinuousMonitorWindowDuration
         {
@@ -1913,7 +1927,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ContinuousMinimumLoopDuration
+        /// FloatProperty: ContinuousMinimumLoopDuration<br/>
+        /// Default: 0.1
         /// </summary>
         public unsafe float ContinuousMinimumLoopDuration
         {
@@ -1922,7 +1937,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ContinuousVelocityThreshold
+        /// FloatProperty: ContinuousVelocityThreshold<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ContinuousVelocityThreshold
         {
@@ -1931,7 +1947,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SurfaceHardness
+        /// FloatProperty: SurfaceHardness<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SurfaceHardness
         {
@@ -1949,7 +1966,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: CoalesceRatio
+        /// FloatProperty: CoalesceRatio<br/>
+        /// Default: 0.01
         /// </summary>
         public unsafe float CoalesceRatio
         {
@@ -1983,7 +2001,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FAkEnvelopeSettings
     {
         /// <summary>
-        /// FloatProperty: SustainValue
+        /// FloatProperty: SustainValue<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SustainValue
         {
@@ -2001,7 +2020,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: AttackDuration
+        /// FloatProperty: AttackDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float AttackDuration
         {
@@ -2010,7 +2030,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: SustainDuration
+        /// FloatProperty: SustainDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float SustainDuration
         {
@@ -2019,7 +2040,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: ReleaseDuration
+        /// FloatProperty: ReleaseDuration<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ReleaseDuration
         {
@@ -2176,7 +2198,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FSimpleWhooshBy
     {
         /// <summary>
-        /// BoolProperty: IsVehicleWhoosh
+        /// BoolProperty: IsVehicleWhoosh<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool IsVehicleWhoosh
         {
@@ -2228,7 +2251,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: TransformedOrientation
+        /// StructProperty: TransformedOrientation<br/>
+        /// Default: (Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 TransformedOrientation
         {
@@ -2244,7 +2268,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     public partial record struct FAkEnvironmentInfo
     {
         /// <summary>
-        /// StructProperty: EnvSettings
+        /// StructProperty: EnvSettings<br/>
+        /// Default: (WetMixAdjust=1,DryMixAdjust=1)
         /// </summary>
         public unsafe BmSDK.Engine.AkWwise.FAkEnvironmentSettings EnvSettings
         {
@@ -2321,7 +2346,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: WetMixAdjust
+        /// FloatProperty: WetMixAdjust<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float WetMixAdjust
         {
@@ -2330,7 +2356,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: DryMixAdjust
+        /// FloatProperty: DryMixAdjust<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float DryMixAdjust
         {

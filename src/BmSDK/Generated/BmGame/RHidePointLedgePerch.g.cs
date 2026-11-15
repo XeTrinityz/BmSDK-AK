@@ -156,7 +156,8 @@ public partial class RHidePointLedgePerch : BmSDK.BmGame.RHidePoint, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: BatmanPerchOffset
+    /// StructProperty: BatmanPerchOffset<br/>
+    /// Default: (X=-16,Z=32)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatmanPerchOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1288);

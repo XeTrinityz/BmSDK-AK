@@ -170,7 +170,8 @@ public partial class R2DCombatCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: CamPerpendicularBase
+    /// FloatProperty: CamPerpendicularBase<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CamPerpendicularBase
     {
@@ -179,7 +180,8 @@ public partial class R2DCombatCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: CamPerpendicularScale
+    /// FloatProperty: CamPerpendicularScale<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float CamPerpendicularScale
     {
@@ -188,7 +190,8 @@ public partial class R2DCombatCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: CamHeight
+    /// FloatProperty: CamHeight<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CamHeight
     {
@@ -206,7 +209,8 @@ public partial class R2DCombatCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: CamMinOffset
+    /// FloatProperty: CamMinOffset<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float CamMinOffset
     {

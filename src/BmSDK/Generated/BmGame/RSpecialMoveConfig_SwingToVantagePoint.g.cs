@@ -225,7 +225,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// NameProperty: EndPose
+    /// NameProperty: EndPose<br/>
+    /// Default: SilentPredator
     /// </summary>
     public unsafe BmSDK.FName EndPose
     {
@@ -234,7 +235,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: DefaultSwingDistance
+    /// FloatProperty: DefaultSwingDistance<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float DefaultSwingDistance
     {
@@ -243,7 +245,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: DefaultSwingRadius
+    /// FloatProperty: DefaultSwingRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float DefaultSwingRadius
     {
@@ -252,7 +255,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: DefaultSwingTime
+    /// FloatProperty: DefaultSwingTime<br/>
+    /// Default: 0.33333
     /// </summary>
     public unsafe float DefaultSwingTime
     {
@@ -261,7 +265,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: VelocityBlendOut
+    /// FloatProperty: VelocityBlendOut<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float VelocityBlendOut
     {
@@ -270,7 +275,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// FloatProperty: DurationScalePower
+    /// FloatProperty: DurationScalePower<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float DurationScalePower
     {
@@ -279,7 +285,8 @@ public partial class RSpecialMoveConfig_SwingToVantagePoint : BmSDK.BmGame.RSpec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowMirroring
+    /// BoolProperty: bAllowMirroring<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowMirroring
     {

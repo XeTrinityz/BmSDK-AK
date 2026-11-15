@@ -197,7 +197,8 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     }
 
     /// <summary>
-    /// ComponentProperty: HeadPSC
+    /// ComponentProperty: HeadPSC<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_Cleaver.GenericHeadParticleSystem
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent HeadPSC
     {

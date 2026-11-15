@@ -92,7 +92,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -110,7 +111,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCheckSpawnCollision
+    /// BoolProperty: bCheckSpawnCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckSpawnCollision
     {
@@ -164,7 +166,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: SpawnCount
+    /// IntProperty: SpawnCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SpawnCount
     {
@@ -173,7 +176,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: SpawnDelay
+    /// FloatProperty: SpawnDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float SpawnDelay
     {
@@ -182,7 +186,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: LastSpawnIdx
+    /// IntProperty: LastSpawnIdx<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int LastSpawnIdx
     {
@@ -191,7 +196,8 @@ public partial class SeqAct_ActorFactory : BmSDK.Engine.SeqAct_Latent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: CurrentSpawnIdx
+    /// IntProperty: CurrentSpawnIdx<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int CurrentSpawnIdx
     {

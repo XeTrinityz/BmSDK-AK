@@ -79,7 +79,8 @@ public partial class SeqCond_IncrementFloat : BmSDK.Engine.SequenceCondition, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: IncrementAmount
+    /// FloatProperty: IncrementAmount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IncrementAmount
     {

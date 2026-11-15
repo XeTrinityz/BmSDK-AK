@@ -88,7 +88,8 @@ public partial class ActorFactoryApexDestructible : BmSDK.Engine.ActorFactory, B
     }
 
     /// <summary>
-    /// BoolProperty: OverrideRBCollisionSettings
+    /// BoolProperty: OverrideRBCollisionSettings<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool OverrideRBCollisionSettings
     {
@@ -97,7 +98,8 @@ public partial class ActorFactoryApexDestructible : BmSDK.Engine.ActorFactory, B
     }
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_EffectPhysics
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -106,7 +108,8 @@ public partial class ActorFactoryApexDestructible : BmSDK.Engine.ActorFactory, B
     }
 
     /// <summary>
-    /// ByteProperty: RBDominanceGroup
+    /// ByteProperty: RBDominanceGroup<br/>
+    /// Default: 16
     /// </summary>
     public unsafe byte RBDominanceGroup
     {
@@ -115,13 +118,15 @@ public partial class ActorFactoryApexDestructible : BmSDK.Engine.ActorFactory, B
     }
 
     /// <summary>
-    /// StructProperty: DrawScale3D
+    /// StructProperty: DrawScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrawScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true,EffectPhysics=true,BlockingVolume=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 164);

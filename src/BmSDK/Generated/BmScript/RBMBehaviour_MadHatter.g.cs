@@ -213,7 +213,8 @@ public partial class RBMBehaviour_MadHatter : BmSDK.BmGame.RBMBehaviour, BmSDK.I
     }
 
     /// <summary>
-    /// ObjectProperty: HandSlapParticleSystem
+    /// ObjectProperty: HandSlapParticleSystem<br/>
+    /// Default: DLC_VFX_Combat.Particles.Madhatter_HandSlam_P
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem HandSlapParticleSystem
     {
@@ -276,7 +277,8 @@ public partial class RBMBehaviour_MadHatter : BmSDK.BmGame.RBMBehaviour, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: FarSlapDist
+    /// FloatProperty: FarSlapDist<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float FarSlapDist
     {

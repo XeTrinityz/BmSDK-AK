@@ -196,7 +196,8 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
     }
 
     /// <summary>
-    /// NameProperty: nFoundFreeSpotAnimation
+    /// NameProperty: nFoundFreeSpotAnimation<br/>
+    /// Default: Silent_512_End_TD_FoundFreeSpot
     /// </summary>
     public unsafe BmSDK.FName nFoundFreeSpotAnimation
     {

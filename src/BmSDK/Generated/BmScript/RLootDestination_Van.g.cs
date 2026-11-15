@@ -166,7 +166,8 @@ public partial class RLootDestination_Van : BmSDK.BmGame.RLootDestinationBase, B
     }
 
     /// <summary>
-    /// FloatProperty: timeBetweenLightFlashes
+    /// FloatProperty: timeBetweenLightFlashes<br/>
+    /// Default: 0.33
     /// </summary>
     public unsafe float timeBetweenLightFlashes
     {
@@ -175,7 +176,8 @@ public partial class RLootDestination_Van : BmSDK.BmGame.RLootDestinationBase, B
     }
 
     /// <summary>
-    /// FloatProperty: lightFlashStrengthMin
+    /// FloatProperty: lightFlashStrengthMin<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float lightFlashStrengthMin
     {
@@ -184,7 +186,8 @@ public partial class RLootDestination_Van : BmSDK.BmGame.RLootDestinationBase, B
     }
 
     /// <summary>
-    /// FloatProperty: lightFlashStrengthMax
+    /// FloatProperty: lightFlashStrengthMax<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float lightFlashStrengthMax
     {
@@ -229,13 +232,15 @@ public partial class RLootDestination_Van : BmSDK.BmGame.RLootDestinationBase, B
     }
 
     /// <summary>
-    /// StructProperty: originalCol0
+    /// StructProperty: originalCol0<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor originalCol0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 876);
 
     /// <summary>
-    /// StructProperty: originalCol1
+    /// StructProperty: originalCol1<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor originalCol1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 892);

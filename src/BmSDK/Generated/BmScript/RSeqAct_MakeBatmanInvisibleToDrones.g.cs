@@ -102,7 +102,8 @@ public partial class RSeqAct_MakeBatmanInvisibleToDrones : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// FloatProperty: InvisibleTime
+    /// FloatProperty: InvisibleTime<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float InvisibleTime
     {

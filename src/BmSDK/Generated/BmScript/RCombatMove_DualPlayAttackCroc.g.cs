@@ -210,7 +210,8 @@ public partial class RCombatMove_DualPlayAttackCroc : BmSDK.BmScript.RCombatMove
     }
 
     /// <summary>
-    /// ObjectProperty: CamAnimset
+    /// ObjectProperty: CamAnimset<br/>
+    /// Default: DLC_Anim_Batman_Croc_Com.Code.BM_Com_Cameras
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet CamAnimset
     {

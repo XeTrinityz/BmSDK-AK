@@ -88,7 +88,8 @@ public partial class RPollenMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PollenGlobalScale
+    /// FloatProperty: PollenGlobalScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PollenGlobalScale
     {
@@ -97,7 +98,8 @@ public partial class RPollenMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PollenPileThreshold
+    /// FloatProperty: PollenPileThreshold<br/>
+    /// Default: 1.1
     /// </summary>
     public unsafe float PollenPileThreshold
     {
@@ -106,7 +108,8 @@ public partial class RPollenMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PollenHeightFadeStart
+    /// FloatProperty: PollenHeightFadeStart<br/>
+    /// Default: 1465
     /// </summary>
     public unsafe float PollenHeightFadeStart
     {
@@ -115,7 +118,8 @@ public partial class RPollenMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: PollenHeightFadeEnd
+    /// FloatProperty: PollenHeightFadeEnd<br/>
+    /// Default: 7702
     /// </summary>
     public unsafe float PollenHeightFadeEnd
     {
@@ -124,7 +128,8 @@ public partial class RPollenMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: PollenGroundColor
+    /// StructProperty: PollenGroundColor<br/>
+    /// Default: (R=0.8,G=1,B=0.5,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor PollenGroundColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 148);

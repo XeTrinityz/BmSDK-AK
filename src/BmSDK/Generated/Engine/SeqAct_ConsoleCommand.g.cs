@@ -117,7 +117,8 @@ public partial class SeqAct_ConsoleCommand : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// ArrayProperty: Commands
+    /// ArrayProperty: Commands<br/>
+    /// Default: ("")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> Commands
     {

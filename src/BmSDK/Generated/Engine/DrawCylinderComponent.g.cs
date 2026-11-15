@@ -79,7 +79,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: CylinderColor
+    /// StructProperty: CylinderColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor CylinderColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
@@ -94,7 +95,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CylinderRadius
+    /// FloatProperty: CylinderRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CylinderRadius
     {
@@ -103,7 +105,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CylinderTopRadius
+    /// FloatProperty: CylinderTopRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CylinderTopRadius
     {
@@ -112,7 +115,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CylinderHeight
+    /// FloatProperty: CylinderHeight<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CylinderHeight
     {
@@ -130,7 +134,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// IntProperty: CylinderSides
+    /// IntProperty: CylinderSides<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int CylinderSides
     {
@@ -139,7 +144,8 @@ public partial class DrawCylinderComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bDrawWireCylinder
+    /// BoolProperty: bDrawWireCylinder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawWireCylinder
     {

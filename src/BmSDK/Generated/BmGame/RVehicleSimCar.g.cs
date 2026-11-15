@@ -100,7 +100,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ThrottleSpeed
+    /// FloatProperty: ThrottleSpeed<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ThrottleSpeed
     {
@@ -154,7 +155,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bDriverlessBraking
+    /// BoolProperty: bDriverlessBraking<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDriverlessBraking
     {
@@ -181,7 +183,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SteeringReductionFactor
+    /// FloatProperty: SteeringReductionFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SteeringReductionFactor
     {
@@ -190,7 +193,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SteeringReductionRampUpRate
+    /// FloatProperty: SteeringReductionRampUpRate<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float SteeringReductionRampUpRate
     {
@@ -199,7 +203,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: CurrentSteeringReduction
+    /// FloatProperty: CurrentSteeringReduction<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrentSteeringReduction
     {
@@ -217,7 +222,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SteeringReductionSpeed
+    /// FloatProperty: SteeringReductionSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float SteeringReductionSpeed
     {
@@ -226,7 +232,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SteeringReductionMinSpeed
+    /// FloatProperty: SteeringReductionMinSpeed<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float SteeringReductionMinSpeed
     {
@@ -235,7 +242,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: MinHardTurnSpeed
+    /// FloatProperty: MinHardTurnSpeed<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float MinHardTurnSpeed
     {
@@ -244,7 +252,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: HardTurnMotorTorque
+    /// FloatProperty: HardTurnMotorTorque<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float HardTurnMotorTorque
     {
@@ -262,7 +271,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: HandbrakeOffSpeed
+    /// FloatProperty: HandbrakeOffSpeed<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float HandbrakeOffSpeed
     {
@@ -280,7 +290,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: FrontalCollisionGripFactor
+    /// FloatProperty: FrontalCollisionGripFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FrontalCollisionGripFactor
     {
@@ -289,7 +300,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: ConsoleHardTurnGripFactor
+    /// FloatProperty: ConsoleHardTurnGripFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ConsoleHardTurnGripFactor
     {
@@ -352,7 +364,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SpinSteeringFactor
+    /// FloatProperty: SpinSteeringFactor<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float SpinSteeringFactor
     {
@@ -373,7 +386,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 424);
 
     /// <summary>
-    /// FloatProperty: SteeringSpeedChangeDirectionMod
+    /// FloatProperty: SteeringSpeedChangeDirectionMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SteeringSpeedChangeDirectionMod
     {
@@ -382,7 +396,8 @@ public partial class RVehicleSimCar : BmSDK.Engine.SVehicleSimCar, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// FloatProperty: SteeringSpeedReCentreMod
+    /// FloatProperty: SteeringSpeedReCentreMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SteeringSpeedReCentreMod
     {

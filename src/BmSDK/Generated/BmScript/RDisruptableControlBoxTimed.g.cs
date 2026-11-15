@@ -221,7 +221,8 @@ public partial class RDisruptableControlBoxTimed : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// FloatProperty: RechargeTime
+    /// FloatProperty: RechargeTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float RechargeTime
     {
@@ -230,7 +231,8 @@ public partial class RDisruptableControlBoxTimed : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// BoolProperty: bPauseTimerDuringCinematicMode
+    /// BoolProperty: bPauseTimerDuringCinematicMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseTimerDuringCinematicMode
     {
@@ -395,7 +397,8 @@ public partial class RDisruptableControlBoxTimed : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RDisruptableControlBoxTimed.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -413,7 +416,8 @@ public partial class RDisruptableControlBoxTimed : BmSDK.BmGame.RDisruptableObje
     }
 
     /// <summary>
-    /// FloatProperty: fNumberOfBarsOnTimerMaterial
+    /// FloatProperty: fNumberOfBarsOnTimerMaterial<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float fNumberOfBarsOnTimerMaterial
     {

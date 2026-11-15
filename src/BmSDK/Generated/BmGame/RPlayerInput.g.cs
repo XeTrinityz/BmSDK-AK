@@ -528,7 +528,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bInvertJoystick
+    /// BoolProperty: bInvertJoystick<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInvertJoystick
     {
@@ -618,7 +619,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bInvertCapeGlide
+    /// BoolProperty: bInvertCapeGlide<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInvertCapeGlide
     {
@@ -807,7 +809,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GlanceUpScale
+    /// FloatProperty: GlanceUpScale<br/>
+    /// Default: -200
     /// </summary>
     public unsafe float GlanceUpScale
     {
@@ -816,7 +819,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: GlanceRightScale
+    /// FloatProperty: GlanceRightScale<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float GlanceRightScale
     {

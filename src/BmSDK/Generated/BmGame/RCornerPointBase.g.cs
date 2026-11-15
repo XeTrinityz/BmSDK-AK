@@ -442,7 +442,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 732);
 
     /// <summary>
-    /// FloatProperty: OffsetDist
+    /// FloatProperty: OffsetDist<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float OffsetDist
     {
@@ -469,7 +470,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LastLockTime
+    /// FloatProperty: LastLockTime<br/>
+    /// Default: -60
     /// </summary>
     public unsafe float LastLockTime
     {

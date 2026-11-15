@@ -79,7 +79,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: GridMinResolution
+    /// ByteProperty: GridMinResolution<br/>
+    /// Default: EGR_16
     /// </summary>
     public unsafe BmSDK.Engine.ApexGridComponent.EGridResolution GridMinResolution
     {
@@ -88,7 +89,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: GridMaxResolution
+    /// ByteProperty: GridMaxResolution<br/>
+    /// Default: EGR_32
     /// </summary>
     public unsafe BmSDK.Engine.ApexGridComponent.EGridResolution GridMaxResolution
     {
@@ -97,7 +99,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// ByteProperty: CollisionChannel
+    /// ByteProperty: CollisionChannel<br/>
+    /// Default: RBCC_Nothing
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel
     {
@@ -106,7 +109,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: GridSize
+    /// FloatProperty: GridSize<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float GridSize
     {
@@ -115,7 +119,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: GridSize3D
+    /// StructProperty: GridSize3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 GridSize3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 152);
@@ -139,7 +144,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {
@@ -148,7 +154,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BoundarySizePercentage
+    /// FloatProperty: BoundarySizePercentage<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BoundarySizePercentage
     {
@@ -163,7 +170,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 180);
 
     /// <summary>
-    /// FloatProperty: FieldVelocityMultiplier
+    /// FloatProperty: FieldVelocityMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FieldVelocityMultiplier
     {
@@ -172,7 +180,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: FieldVelocityWeight
+    /// FloatProperty: FieldVelocityWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FieldVelocityWeight
     {
@@ -190,7 +199,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -244,7 +254,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: AngularVelocityMultiplier
+    /// FloatProperty: AngularVelocityMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AngularVelocityMultiplier
     {
@@ -253,7 +264,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: AngularVelocityClamp
+    /// FloatProperty: AngularVelocityClamp<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float AngularVelocityClamp
     {
@@ -262,7 +274,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LinearVelocityMultiplier
+    /// FloatProperty: LinearVelocityMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LinearVelocityMultiplier
     {
@@ -271,7 +284,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LinearVelocityClamp
+    /// FloatProperty: LinearVelocityClamp<br/>
+    /// Default: 1e+06
     /// </summary>
     public unsafe float LinearVelocityClamp
     {
@@ -280,7 +294,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: MaxCollidingObjects
+    /// IntProperty: MaxCollidingObjects<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int MaxCollidingObjects
     {
@@ -289,7 +304,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: CollideWithChannels
+    /// StructProperty: CollideWithChannels<br/>
+    /// Default: (Default=true,Pawn=true,Vehicle=true,Water=true,GameplayPhysics=true,EffectPhysics=true,Cloth=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer CollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 244);
@@ -304,7 +320,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: VelocityFieldCleaningTime
+    /// FloatProperty: VelocityFieldCleaningTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float VelocityFieldCleaningTime
     {
@@ -313,7 +330,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: VelocityFieldCleaningDelay
+    /// FloatProperty: VelocityFieldCleaningDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float VelocityFieldCleaningDelay
     {
@@ -322,7 +340,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: VelocityFieldCleaningIntensity
+    /// FloatProperty: VelocityFieldCleaningIntensity<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float VelocityFieldCleaningIntensity
     {
@@ -340,7 +359,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: NoiseSpacePeriod
+    /// FloatProperty: NoiseSpacePeriod<br/>
+    /// Default: 0.9
     /// </summary>
     public unsafe float NoiseSpacePeriod
     {
@@ -349,7 +369,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: NoiseTimePeriod
+    /// FloatProperty: NoiseTimePeriod<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float NoiseTimePeriod
     {
@@ -358,7 +379,8 @@ public partial class ActorFactoryApexGrid : BmSDK.Engine.ActorFactory, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: NoiseOctaves
+    /// IntProperty: NoiseOctaves<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoiseOctaves
     {

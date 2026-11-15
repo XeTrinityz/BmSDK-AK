@@ -167,7 +167,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: Radius
+        /// FloatProperty: Radius<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Radius
         {
@@ -194,7 +195,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// FloatProperty: GravityEffectMultiplier
+        /// FloatProperty: GravityEffectMultiplier<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float GravityEffectMultiplier
         {
@@ -204,7 +206,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ConstraintSolverIterationCount
+    /// IntProperty: ConstraintSolverIterationCount<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int ConstraintSolverIterationCount
     {
@@ -249,7 +252,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SpringStrengthForDistanceConstraint
+    /// FloatProperty: SpringStrengthForDistanceConstraint<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float SpringStrengthForDistanceConstraint
     {

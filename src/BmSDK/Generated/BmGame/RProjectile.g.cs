@@ -596,7 +596,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponSplashEffect
+    /// ObjectProperty: WeaponSplashEffect<br/>
+    /// Default: FFX_Combat.fx_BatarangWater
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WeaponSplashEffect
     {
@@ -605,7 +606,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponSplashSound
+    /// ObjectProperty: WeaponSplashSound<br/>
+    /// Default: Ww_CHR_BatmanDeviceImpacts.Play_DeviceImpact_Splash
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WeaponSplashSound
     {
@@ -614,7 +616,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: WeaponHitFearGasEffect
+    /// ObjectProperty: WeaponHitFearGasEffect<br/>
+    /// Default: FFX_Combat.fx_BatarangFearGas
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystem WeaponHitFearGasEffect
     {
@@ -767,7 +770,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CleanupTime
+    /// FloatProperty: CleanupTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CleanupTime
     {

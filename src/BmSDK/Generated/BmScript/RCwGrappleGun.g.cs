@@ -498,7 +498,8 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ShortJumpOffPitchDown
+    /// FloatProperty: ShortJumpOffPitchDown<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float ShortJumpOffPitchDown
     {
@@ -507,7 +508,8 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: ShortJumpOffRelativePitchDown
+    /// FloatProperty: ShortJumpOffRelativePitchDown<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float ShortJumpOffRelativePitchDown
     {

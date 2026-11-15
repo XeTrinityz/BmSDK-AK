@@ -160,7 +160,8 @@ public partial class RSpecialMoveConfig_RelativeIdle : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// BoolProperty: bAlignRotationWithNormal
+    /// BoolProperty: bAlignRotationWithNormal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignRotationWithNormal
     {
@@ -214,7 +215,8 @@ public partial class RSpecialMoveConfig_RelativeIdle : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MeetingTime
+    /// FloatProperty: MeetingTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MeetingTime
     {
@@ -223,7 +225,8 @@ public partial class RSpecialMoveConfig_RelativeIdle : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// ByteProperty: AimAt
+    /// ByteProperty: AimAt<br/>
+    /// Default: ACD_NullAimingConfig
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimAt
     {
@@ -247,7 +250,8 @@ public partial class RSpecialMoveConfig_RelativeIdle : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MaximumCameraYaw
+    /// FloatProperty: MaximumCameraYaw<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float MaximumCameraYaw
     {
@@ -256,7 +260,8 @@ public partial class RSpecialMoveConfig_RelativeIdle : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MaximumCameraPitch
+    /// FloatProperty: MaximumCameraPitch<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float MaximumCameraPitch
     {

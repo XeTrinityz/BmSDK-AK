@@ -115,7 +115,8 @@ public partial class RInterpTrackCape : BmSDK.Engine.InterpTrack, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: KeyProperties
+    /// StructProperty: KeyProperties<br/>
+    /// Default: (ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RInterpTrackCape.FCapeTrackKey KeyProperties
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RInterpTrackCape.FCapeTrackKey>(Ptr + 216);
@@ -190,7 +191,8 @@ public partial class RInterpTrackCape : BmSDK.Engine.InterpTrack, BmSDK.IGameObj
         }
 
         /// <summary>
-        /// FloatProperty: ScaleHeadDepthBias
+        /// FloatProperty: ScaleHeadDepthBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ScaleHeadDepthBias
         {
@@ -199,7 +201,8 @@ public partial class RInterpTrackCape : BmSDK.Engine.InterpTrack, BmSDK.IGameObj
         }
 
         /// <summary>
-        /// FloatProperty: ScaleDepthBias
+        /// FloatProperty: ScaleDepthBias<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float ScaleDepthBias
         {

@@ -4557,7 +4557,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {
@@ -4628,7 +4629,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {
@@ -4680,7 +4682,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// ByteProperty: takedownType
+        /// ByteProperty: takedownType<br/>
+        /// Default: TDT_Unarmed
         /// </summary>
         public unsafe BmSDK.BmGame.RPawnPlayerCombat.ETakedownType takedownType
         {
@@ -4743,7 +4746,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {
@@ -4752,7 +4756,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bCanBeMirrored
+        /// BoolProperty: bCanBeMirrored<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanBeMirrored
         {
@@ -5083,7 +5088,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// ByteProperty: CounterStrength
+        /// ByteProperty: CounterStrength<br/>
+        /// Default: ECS_Strong
         /// </summary>
         public unsafe BmSDK.BmGame.RPawnPlayerCombat.CounterStrength CounterStrength
         {
@@ -5200,7 +5206,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {
@@ -5236,7 +5243,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// NameProperty: DestCapeStateName
+        /// NameProperty: DestCapeStateName<br/>
+        /// Default: Physics
         /// </summary>
         public unsafe BmSDK.FName DestCapeStateName
         {
@@ -5414,7 +5422,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// FloatProperty: TargetDist
+        /// FloatProperty: TargetDist<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float TargetDist
         {
@@ -5450,7 +5459,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// IntProperty: DualStrikeIndex
+        /// IntProperty: DualStrikeIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int DualStrikeIndex
         {
@@ -5763,7 +5773,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bCanPerformWithNoTarget
+        /// BoolProperty: bCanPerformWithNoTarget<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanPerformWithNoTarget
         {
@@ -5772,7 +5783,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bCanPerformOnBlocker
+        /// BoolProperty: bCanPerformOnBlocker<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bCanPerformOnBlocker
         {
@@ -5790,7 +5802,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bHitsLow
+        /// BoolProperty: bHitsLow<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bHitsLow
         {
@@ -5871,7 +5884,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// NameProperty: DestCapeStateName
+        /// NameProperty: DestCapeStateName<br/>
+        /// Default: Physics
         /// </summary>
         public unsafe BmSDK.FName DestCapeStateName
         {
@@ -5925,7 +5939,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         }
 
         /// <summary>
-        /// BoolProperty: bActive
+        /// BoolProperty: bActive<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bActive
         {
@@ -6086,7 +6101,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: CombatAnimRecord
+    /// StructProperty: CombatAnimRecord<br/>
+    /// Default: (PlayerID=-1,AnimId=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId CombatAnimRecord
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_OverlayPlayer.FOverlayId>(Ptr + 3052);
@@ -6128,7 +6144,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoStun
+    /// BoolProperty: bCanDoStun<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoStun
     {
@@ -6137,7 +6154,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoCounter
+    /// BoolProperty: bCanDoCounter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoCounter
     {
@@ -6146,7 +6164,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoSpecials
+    /// BoolProperty: bCanDoSpecials<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoSpecials
     {
@@ -6164,7 +6183,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bAutoSetAllowMovementExit
+    /// BoolProperty: bAutoSetAllowMovementExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoSetAllowMovementExit
     {
@@ -6182,7 +6202,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bCausesOutcastsToFlee
+    /// BoolProperty: bCausesOutcastsToFlee<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCausesOutcastsToFlee
     {
@@ -6272,7 +6293,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayTargettingLogs
+    /// BoolProperty: bDisplayTargettingLogs<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayTargettingLogs
     {
@@ -7073,7 +7095,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: GFxMovieRadialGadgetSelectClass
+    /// ClassProperty: GFxMovieRadialGadgetSelectClass<br/>
+    /// Default: BmGame.RGFxMovieRadialGadgetSelect
     /// </summary>
     public unsafe BmSDK.Class GFxMovieRadialGadgetSelectClass
     {
@@ -7082,7 +7105,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleSurveillanceClass
+    /// ClassProperty: HudModuleSurveillanceClass<br/>
+    /// Default: BmGame.RHudModuleAlertsAndSurveillance
     /// </summary>
     public unsafe BmSDK.Class HudModuleSurveillanceClass
     {
@@ -7091,7 +7115,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleStoryModeClass
+    /// ClassProperty: HudModuleStoryModeClass<br/>
+    /// Default: BmGame.RHudModuleStoryMode
     /// </summary>
     public unsafe BmSDK.Class HudModuleStoryModeClass
     {
@@ -7100,7 +7125,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleObjectivesClass
+    /// ClassProperty: HudModuleObjectivesClass<br/>
+    /// Default: BmGame.RHudModuleObjectives
     /// </summary>
     public unsafe BmSDK.Class HudModuleObjectivesClass
     {
@@ -7109,7 +7135,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleTargetsClass
+    /// ClassProperty: HudModuleTargetsClass<br/>
+    /// Default: BmGame.RHudModuleTargets
     /// </summary>
     public unsafe BmSDK.Class HudModuleTargetsClass
     {
@@ -7118,7 +7145,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleRoomNameClass
+    /// ClassProperty: HudModuleRoomNameClass<br/>
+    /// Default: BmGame.RHudModuleRoomName
     /// </summary>
     public unsafe BmSDK.Class HudModuleRoomNameClass
     {
@@ -7127,7 +7155,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleHealthBarClass
+    /// ClassProperty: HudModuleHealthBarClass<br/>
+    /// Default: BmGame.RHudModuleHealthBar
     /// </summary>
     public unsafe BmSDK.Class HudModuleHealthBarClass
     {
@@ -7136,7 +7165,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleHackingModeClass
+    /// ClassProperty: HudModuleHackingModeClass<br/>
+    /// Default: BmGame.RHudModuleHackingMode
     /// </summary>
     public unsafe BmSDK.Class HudModuleHackingModeClass
     {
@@ -7145,7 +7175,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleExtraSequenceClass
+    /// ClassProperty: HudModuleExtraSequenceClass<br/>
+    /// Default: BmGame.RHudModuleExtraSequence
     /// </summary>
     public unsafe BmSDK.Class HudModuleExtraSequenceClass
     {
@@ -7154,7 +7185,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ClassProperty: HudModuleDetectiveModeClass
+    /// ClassProperty: HudModuleDetectiveModeClass<br/>
+    /// Default: BmGame.RHudModuleDetectiveMode
     /// </summary>
     public unsafe BmSDK.Class HudModuleDetectiveModeClass
     {
@@ -7181,7 +7213,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// ComponentProperty: StunFXComponent
+    /// ComponentProperty: StunFXComponent<br/>
+    /// Default: BmGame.Default__RPawnPlayerCombat.StunFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent StunFXComponent
     {
@@ -7217,7 +7250,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// NameProperty: CharacterGender
+    /// NameProperty: CharacterGender<br/>
+    /// Default: FV_PLAYERGENDER_Male
     /// </summary>
     public unsafe BmSDK.FName CharacterGender
     {
@@ -7232,7 +7266,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 3896);
 
     /// <summary>
-    /// ArrayProperty: BoneNameListConversion
+    /// ArrayProperty: BoneNameListConversion<br/>
+    /// Default: (UnknownBoneFromBoneList,Bip01_Head,Bip01_Spine2,Bip01_Pelvis,Bip01_L_Hand,Bip01_L_Forearm,Bip01_L_Foot,Bip01_L_Calf,Bip01_R_Hand,Bip01_R_Forearm,Bip01_R_Foot,Bip01_R_Calf,BONE_BetweenHands)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> BoneNameListConversion
     {
@@ -7286,7 +7321,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: PrevStrikeInfo
+    /// StructProperty: PrevStrikeInfo<br/>
+    /// Default: (bCanPerformWithNoTarget=true,bCanPerformOnBlocker=true,bHitsLow=true,DestCapeStateName=Physics,bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo PrevStrikeInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo>(Ptr + 3960);
@@ -7421,7 +7457,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 4312);
 
     /// <summary>
-    /// FloatProperty: CurrFOV
+    /// FloatProperty: CurrFOV<br/>
+    /// Default: 70
     /// </summary>
     public unsafe float CurrFOV
     {
@@ -7448,7 +7485,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BeatdownMinDelay
+    /// FloatProperty: BeatdownMinDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BeatdownMinDelay
     {
@@ -7457,7 +7495,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: BeatdownDelayMod
+    /// FloatProperty: BeatdownDelayMod<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float BeatdownDelayMod
     {
@@ -7466,7 +7505,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: BeatdownNoDamageHits
+    /// IntProperty: BeatdownNoDamageHits<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int BeatdownNoDamageHits
     {
@@ -7475,7 +7515,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: BeatdownDamageMultiplier
+    /// IntProperty: BeatdownDamageMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int BeatdownDamageMultiplier
     {
@@ -7484,7 +7525,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: JokerfiedAttacks
+    /// FloatProperty: JokerfiedAttacks<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float JokerfiedAttacks
     {
@@ -7520,7 +7562,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: DualPlaySpeechInterval
+    /// FloatProperty: DualPlaySpeechInterval<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float DualPlaySpeechInterval
     {

@@ -768,7 +768,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     public partial record struct FBreakOffPartsData
     {
         /// <summary>
-        /// BoolProperty: bWantPhysChunksAndParticles
+        /// BoolProperty: bWantPhysChunksAndParticles<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bWantPhysChunksAndParticles
         {
@@ -777,7 +778,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
         }
 
         /// <summary>
-        /// BoolProperty: bAllowDamagedEventFiring
+        /// BoolProperty: bAllowDamagedEventFiring<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bAllowDamagedEventFiring
         {
@@ -786,7 +788,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
         }
 
         /// <summary>
-        /// ByteProperty: ExplosionType
+        /// ByteProperty: ExplosionType<br/>
+        /// Default: FMET_AllParts
         /// </summary>
         public unsafe BmSDK.Engine.FracturedStaticMeshActor.EFractureMeshExplosionType ExplosionType
         {
@@ -840,7 +843,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
         }
 
         /// <summary>
-        /// FloatProperty: BlastOriginRadiusOverride
+        /// FloatProperty: BlastOriginRadiusOverride<br/>
+        /// Default: -1
         /// </summary>
         public unsafe float BlastOriginRadiusOverride
         {
@@ -876,7 +880,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
         }
 
         /// <summary>
-        /// BoolProperty: bUseCoreBlastPositionIfPossible
+        /// BoolProperty: bUseCoreBlastPositionIfPossible<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bUseCoreBlastPositionIfPossible
         {
@@ -903,7 +908,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
         }
 
         /// <summary>
-        /// IntProperty: NumPartsPerChunk
+        /// IntProperty: NumPartsPerChunk<br/>
+        /// Default: 1
         /// </summary>
         public unsafe int NumPartsPerChunk
         {
@@ -987,7 +993,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// IntProperty: MaxPartsToSpawnAtOnce
+    /// IntProperty: MaxPartsToSpawnAtOnce<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int MaxPartsToSpawnAtOnce
     {
@@ -1032,7 +1039,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// BoolProperty: bAllowDisableTick
+    /// BoolProperty: bAllowDisableTick<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowDisableTick
     {
@@ -1041,7 +1049,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// BoolProperty: bSpawnExplosionChunks
+    /// BoolProperty: bSpawnExplosionChunks<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSpawnExplosionChunks
     {
@@ -1095,7 +1104,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// ComponentProperty: FracturedStaticMeshComponent
+    /// ComponentProperty: FracturedStaticMeshComponent<br/>
+    /// Default: Engine.Default__FracturedStaticMeshActor.FracturedStaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.FracturedStaticMeshComponent FracturedStaticMeshComponent
     {
@@ -1104,7 +1114,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// ComponentProperty: SkinnedComponent
+    /// ComponentProperty: SkinnedComponent<br/>
+    /// Default: Engine.Default__FracturedStaticMeshActor.FracturedSkinnedComponent0
     /// </summary>
     public unsafe BmSDK.Engine.FracturedSkinnedMeshComponent SkinnedComponent
     {
@@ -1131,7 +1142,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// FloatProperty: ChunkHealthScale
+    /// FloatProperty: ChunkHealthScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ChunkHealthScale
     {
@@ -1149,7 +1161,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// FloatProperty: FractureCullMinDistance
+    /// FloatProperty: FractureCullMinDistance<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float FractureCullMinDistance
     {
@@ -1158,7 +1171,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// FloatProperty: FractureCullMaxDistance
+    /// FloatProperty: FractureCullMaxDistance<br/>
+    /// Default: 4096
     /// </summary>
     public unsafe float FractureCullMaxDistance
     {
@@ -1167,7 +1181,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// ByteProperty: FracturePartRBChannel
+    /// ByteProperty: FracturePartRBChannel<br/>
+    /// Default: RBCC_PropDynamicChunks
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel FracturePartRBChannel
     {
@@ -1176,7 +1191,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// StructProperty: FracturePartRBPartCollideWithChannels
+    /// StructProperty: FracturePartRBPartCollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true,EffectPhysics=true,PawnRagdoll=true,PropDynamicChunks=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer FracturePartRBPartCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 776);
@@ -1242,7 +1258,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// IntProperty: NumChunksForExplosionSound
+    /// IntProperty: NumChunksForExplosionSound<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumChunksForExplosionSound
     {
@@ -1251,7 +1268,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
     }
 
     /// <summary>
-    /// StructProperty: FracturePartLightingChannels
+    /// StructProperty: FracturePartLightingChannels<br/>
+    /// Default: (Prop=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.LightComponent.FLightingChannelContainer FracturePartLightingChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.LightComponent.FLightingChannelContainer>(Ptr + 868);

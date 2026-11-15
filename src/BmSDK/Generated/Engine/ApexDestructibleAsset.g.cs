@@ -123,7 +123,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// FloatProperty: FractureEffectScale
+        /// FloatProperty: FractureEffectScale<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float FractureEffectScale
         {
@@ -141,7 +142,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// FloatProperty: MaxSizeChunkToCrumble
+        /// FloatProperty: MaxSizeChunkToCrumble<br/>
+        /// Default: 10000
         /// </summary>
         public unsafe float MaxSizeChunkToCrumble
         {
@@ -150,7 +152,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// FloatProperty: PercentageOfCrumbleEffects
+        /// FloatProperty: PercentageOfCrumbleEffects<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float PercentageOfCrumbleEffects
         {
@@ -184,7 +187,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     public partial record struct FNxDestructibleParameters
     {
         /// <summary>
-        /// StructProperty: DamageParameters
+        /// StructProperty: DamageParameters<br/>
+        /// Default: (DefaultImpactDamageDepth=-1)
         /// </summary>
         public unsafe BmSDK.Engine.ApexDestructibleAsset.FNxDestructibleDamageParameters DamageParameters
         {
@@ -193,7 +197,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// StructProperty: DebrisParameters
+        /// StructProperty: DebrisParameters<br/>
+        /// Default: (ValidBounds=(Min=(X=-5e+05,Y=-5e+05,Z=-5e+05),Max=(X=5e+05,Y=5e+05,Z=5e+05)))
         /// </summary>
         public unsafe BmSDK.Engine.ApexDestructibleAsset.FNxDestructibleDebrisParameters DebrisParameters
         {
@@ -436,7 +441,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// IntProperty: DynamicChunksDominanceGroup
+        /// IntProperty: DynamicChunksDominanceGroup<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int DynamicChunksDominanceGroup
         {
@@ -576,7 +582,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// StructProperty: ValidBounds
+        /// StructProperty: ValidBounds<br/>
+        /// Default: (Min=(X=-5e+05,Y=-5e+05,Z=-5e+05),Max=(X=5e+05,Y=5e+05,Z=5e+05))
         /// </summary>
         public unsafe BmSDK.GameObject.FBox ValidBounds
         {
@@ -628,7 +635,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         }
 
         /// <summary>
-        /// IntProperty: DefaultImpactDamageDepth
+        /// IntProperty: DefaultImpactDamageDepth<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int DefaultImpactDamageDepth
         {
@@ -929,7 +937,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: PercentageOfFracturedChunksForInitialDamage
+    /// FloatProperty: PercentageOfFracturedChunksForInitialDamage<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float PercentageOfFracturedChunksForInitialDamage
     {
@@ -983,7 +992,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenInitialBreaks
+    /// FloatProperty: TimeBetweenInitialBreaks<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TimeBetweenInitialBreaks
     {
@@ -1028,7 +1038,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bApplyApexMaterialsToStaticMesh
+    /// BoolProperty: bApplyApexMaterialsToStaticMesh<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bApplyApexMaterialsToStaticMesh
     {
@@ -1082,7 +1093,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: BreakLargeChunksOnImpact
+    /// BoolProperty: BreakLargeChunksOnImpact<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool BreakLargeChunksOnImpact
     {
@@ -1124,7 +1136,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.KMeshProps.FKAggregateGeom>(Ptr + 336);
 
     /// <summary>
-    /// FloatProperty: MinPlayerNavigationGeometryChunkDimension
+    /// FloatProperty: MinPlayerNavigationGeometryChunkDimension<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float MinPlayerNavigationGeometryChunkDimension
     {
@@ -1151,7 +1164,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: CookedBounds
+    /// StructProperty: CookedBounds<br/>
+    /// Default: (W=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector4 CookedBounds
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector4>(Ptr + 480);
@@ -1175,13 +1189,15 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// StructProperty: DestructibleParameters
+    /// StructProperty: DestructibleParameters<br/>
+    /// Default: (DamageParameters=(DefaultImpactDamageDepth=-1),DebrisParameters=(ValidBounds=(Min=(X=-5e+05,Y=-5e+05,Z=-5e+05),Max=(X=5e+05,Y=5e+05,Z=5e+05))),Flags=(ASSET_DEFINED_SUPPORT=true),DynamicChunksDominanc...
     /// </summary>
     public unsafe ref BmSDK.Engine.ApexDestructibleAsset.FNxDestructibleParameters DestructibleParameters
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ApexDestructibleAsset.FNxDestructibleParameters>(Ptr + 528);
 
     /// <summary>
-    /// FloatProperty: RemoveChunksBelowHeight
+    /// FloatProperty: RemoveChunksBelowHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float RemoveChunksBelowHeight
     {
@@ -1190,7 +1206,8 @@ public partial class ApexDestructibleAsset : BmSDK.Engine.ApexAsset, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: CrumbleParameters
+    /// ArrayProperty: CrumbleParameters<br/>
+    /// Default: ((FractureEffectScale=1,MaxSizeChunkToCrumble=10000,PercentageOfCrumbleEffects=1))
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ApexDestructibleAsset.FDestructibleCrumbleParameters> CrumbleParameters
     {

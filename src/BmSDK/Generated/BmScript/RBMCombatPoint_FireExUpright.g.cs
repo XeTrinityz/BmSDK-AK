@@ -308,7 +308,8 @@ public partial class RBMCombatPoint_FireExUpright : BmSDK.BmGame.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_FireExUpright.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {

@@ -79,7 +79,8 @@ public partial class RadialBlurActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: RadialBlur
+    /// ComponentProperty: RadialBlur<br/>
+    /// Default: Engine.Default__RadialBlurActor.RadialBlurComp
     /// </summary>
     public unsafe BmSDK.Engine.RadialBlurComponent RadialBlur
     {

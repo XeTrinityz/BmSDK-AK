@@ -88,7 +88,8 @@ public partial class ParticleModuleApexEmitterExplicitGeom : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// FloatProperty: Thickness
+    /// FloatProperty: Thickness<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float Thickness
     {
@@ -97,7 +98,8 @@ public partial class ParticleModuleApexEmitterExplicitGeom : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// IntProperty: MaxSamples
+    /// IntProperty: MaxSamples<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MaxSamples
     {
@@ -106,7 +108,8 @@ public partial class ParticleModuleApexEmitterExplicitGeom : BmSDK.Engine.Partic
     }
 
     /// <summary>
-    /// FloatProperty: PixelSize
+    /// FloatProperty: PixelSize<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PixelSize
     {
@@ -127,7 +130,8 @@ public partial class ParticleModuleApexEmitterExplicitGeom : BmSDK.Engine.Partic
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 136);
 
     /// <summary>
-    /// StructProperty: Scale
+    /// StructProperty: Scale<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Scale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 148);

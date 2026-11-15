@@ -185,7 +185,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bPauseRiots
+    /// BoolProperty: bPauseRiots<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseRiots
     {
@@ -194,7 +195,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bPauseDrones
+    /// BoolProperty: bPauseDrones<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseDrones
     {
@@ -203,7 +205,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bPauseDronesOnly
+    /// BoolProperty: bPauseDronesOnly<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseDronesOnly
     {
@@ -212,7 +215,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bPauseHumvees
+    /// BoolProperty: bPauseHumvees<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseHumvees
     {
@@ -221,7 +225,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// BoolProperty: bPauseThugCars
+    /// BoolProperty: bPauseThugCars<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPauseThugCars
     {
@@ -230,7 +235,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// FloatProperty: WarmUpVehiclePopulationTime
+    /// FloatProperty: WarmUpVehiclePopulationTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float WarmUpVehiclePopulationTime
     {
@@ -239,7 +245,8 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     }
 
     /// <summary>
-    /// FloatProperty: WarmUpMilitiaWanderersTime
+    /// FloatProperty: WarmUpMilitiaWanderersTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float WarmUpMilitiaWanderersTime
     {

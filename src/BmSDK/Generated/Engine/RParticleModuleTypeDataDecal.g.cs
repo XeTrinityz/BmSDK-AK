@@ -149,19 +149,22 @@ public partial class RParticleModuleTypeDataDecal : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// StructProperty: InitialRotation
+    /// StructProperty: InitialRotation<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__RParticleModuleTypeDataDecal.DistributionInitialRotation,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector InitialRotation
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 104);
 
     /// <summary>
-    /// StructProperty: InitialPerInstanceRandomOverride
+    /// StructProperty: InitialPerInstanceRandomOverride<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(-1,-1,-1,-1),Distribution=Engine.Default__RParticleModuleTypeDataDecal.DistributionInitialPerInstanceRandomOverride)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat InitialPerInstanceRandomOverride
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: UpdatingPerInstanceRandomOverride
+    /// StructProperty: UpdatingPerInstanceRandomOverride<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(-1,-1,-1,-1),Distribution=Engine.Default__RParticleModuleTypeDataDecal.DistributionUpdatingPerInstanceRandomOverride)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat UpdatingPerInstanceRandomOverride
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 204);
@@ -173,7 +176,8 @@ public partial class RParticleModuleTypeDataDecal : BmSDK.Engine.ParticleModuleT
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: UVBottomRight
+    /// StructProperty: UVBottomRight<br/>
+    /// Default: (X=1,Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 UVBottomRight
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 248);
@@ -197,7 +201,8 @@ public partial class RParticleModuleTypeDataDecal : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: StaticDecal
+    /// BoolProperty: StaticDecal<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool StaticDecal
     {
@@ -206,7 +211,8 @@ public partial class RParticleModuleTypeDataDecal : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// FloatProperty: BurstSpawnChance
+    /// FloatProperty: BurstSpawnChance<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BurstSpawnChance
     {

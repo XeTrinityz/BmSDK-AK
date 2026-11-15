@@ -171,7 +171,8 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SupportedEvents
+    /// ArrayProperty: SupportedEvents<br/>
+    /// Default: ((EventID=-1,EventName=Unknown,StatGroup=(Level=999),EventDataType=1),(EventName=Match Started,StatGroup=(Group=GSG_Game,Level=1),EventDataType=1),(EventID=1,EventName=Match Ended,StatGroup=(Group=GSG...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.GameplayEvents.FGameplayEventMetaData> SupportedEvents
     {

@@ -151,7 +151,8 @@ public partial class RSpecialMoveConfig_CwAerialWhipPounce : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: IdealSwingTime
+    /// FloatProperty: IdealSwingTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float IdealSwingTime
     {
@@ -160,7 +161,8 @@ public partial class RSpecialMoveConfig_CwAerialWhipPounce : BmSDK.BmGame.RSpeci
     }
 
     /// <summary>
-    /// FloatProperty: IdealSwingLength
+    /// FloatProperty: IdealSwingLength<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float IdealSwingLength
     {

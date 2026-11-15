@@ -79,7 +79,8 @@ public partial class RSeqAct_WaitForDroneCommentaryToFinish : BmSDK.Engine.SeqAc
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: DialogueType
+    /// ObjectProperty: DialogueType<br/>
+    /// Default: dlg_types.Broadcast_Intercept_Drone
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueType DialogueType
     {

@@ -333,7 +333,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UpdateTime_FPS
+    /// FloatProperty: UpdateTime_FPS<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float UpdateTime_FPS
     {
@@ -342,7 +343,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: UpdateTime_Delta
+    /// FloatProperty: UpdateTime_Delta<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float UpdateTime_Delta
     {
@@ -438,7 +440,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bEnableParticleDistanceCulling
+    /// BoolProperty: bEnableParticleDistanceCulling<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableParticleDistanceCulling
     {
@@ -501,7 +504,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ThumbnailImageOutOfDate
+    /// BoolProperty: ThumbnailImageOutOfDate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ThumbnailImageOutOfDate
     {
@@ -564,7 +568,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LODDistanceCheckTime
+    /// FloatProperty: LODDistanceCheckTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float LODDistanceCheckTime
     {
@@ -600,7 +605,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: particleDistanceCullMul
+    /// FloatProperty: particleDistanceCullMul<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float particleDistanceCullMul
     {
@@ -609,7 +615,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: particleDistanceCullFarMul
+    /// FloatProperty: particleDistanceCullFarMul<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float particleDistanceCullFarMul
     {
@@ -618,13 +625,15 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: FixedRelativeBoundingBox
+    /// StructProperty: FixedRelativeBoundingBox<br/>
+    /// Default: (Min=(X=-1,Y=-1,Z=-1),Max=(X=1,Y=1,Z=1),IsValid=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FBox FixedRelativeBoundingBox
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FBox>(Ptr + 224);
 
     /// <summary>
-    /// FloatProperty: SecondsBeforeInactive
+    /// FloatProperty: SecondsBeforeInactive<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float SecondsBeforeInactive
     {
@@ -699,7 +708,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 324);
 
     /// <summary>
-    /// FloatProperty: MacroUVRadius
+    /// FloatProperty: MacroUVRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float MacroUVRadius
     {

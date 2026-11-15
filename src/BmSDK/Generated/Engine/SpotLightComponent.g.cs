@@ -180,7 +180,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: OuterConeAngle
+    /// FloatProperty: OuterConeAngle<br/>
+    /// Default: 44
     /// </summary>
     public unsafe float OuterConeAngle
     {
@@ -189,7 +190,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: LightShaftConeAngle
+    /// FloatProperty: LightShaftConeAngle<br/>
+    /// Default: 89
     /// </summary>
     public unsafe float LightShaftConeAngle
     {
@@ -249,7 +251,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// ByteProperty: QualityLevel
+    /// ByteProperty: QualityLevel<br/>
+    /// Default: GFSDK_Q_Medium
     /// </summary>
     public unsafe BmSDK.Engine.SpotLightComponent.E_GFSDK_QualityLevel QualityLevel
     {
@@ -267,7 +270,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: DistanceScale
+    /// FloatProperty: DistanceScale<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float DistanceScale
     {
@@ -276,7 +280,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: GelThreshold
+    /// FloatProperty: GelThreshold<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float GelThreshold
     {
@@ -285,7 +290,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Scatter
+    /// FloatProperty: Scatter<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Scatter
     {
@@ -294,7 +300,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Absorption
+    /// FloatProperty: Absorption<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Absorption
     {
@@ -303,7 +310,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Phase
+    /// FloatProperty: Phase<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Phase
     {
@@ -312,7 +320,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: NvLightShaftsBrightness
+    /// FloatProperty: NvLightShaftsBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NvLightShaftsBrightness
     {
@@ -321,7 +330,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: OpacityShadowNearDepth
+    /// FloatProperty: OpacityShadowNearDepth<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float OpacityShadowNearDepth
     {
@@ -330,7 +340,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: OpacityShadowOpacityMultiplier
+    /// FloatProperty: OpacityShadowOpacityMultiplier<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float OpacityShadowOpacityMultiplier
     {

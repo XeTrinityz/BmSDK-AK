@@ -79,7 +79,8 @@ public partial class DrawTaperedCapsuleComponent : BmSDK.Engine.PrimitiveCompone
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: CapsuleColor
+    /// StructProperty: CapsuleColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor CapsuleColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
@@ -94,7 +95,8 @@ public partial class DrawTaperedCapsuleComponent : BmSDK.Engine.PrimitiveCompone
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleHeight
+    /// FloatProperty: CapsuleHeight<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CapsuleHeight
     {
@@ -103,7 +105,8 @@ public partial class DrawTaperedCapsuleComponent : BmSDK.Engine.PrimitiveCompone
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleRadius
+    /// FloatProperty: CapsuleRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float CapsuleRadius
     {
@@ -112,7 +115,8 @@ public partial class DrawTaperedCapsuleComponent : BmSDK.Engine.PrimitiveCompone
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleTopRadius
+    /// FloatProperty: CapsuleTopRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CapsuleTopRadius
     {
@@ -121,7 +125,8 @@ public partial class DrawTaperedCapsuleComponent : BmSDK.Engine.PrimitiveCompone
     }
 
     /// <summary>
-    /// BoolProperty: bDrawWireCapsule
+    /// BoolProperty: bDrawWireCapsule<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawWireCapsule
     {

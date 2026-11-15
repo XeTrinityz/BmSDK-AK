@@ -349,7 +349,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bFadeInIfSkipped
+    /// BoolProperty: bFadeInIfSkipped<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFadeInIfSkipped
     {
@@ -403,7 +404,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bSkippableIfNotLoading
+    /// BoolProperty: bSkippableIfNotLoading<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkippableIfNotLoading
     {
@@ -484,7 +486,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
     }
 
     /// <summary>
-    /// IntProperty: FakeFrameCount
+    /// IntProperty: FakeFrameCount<br/>
+    /// Default: 150
     /// </summary>
     public unsafe int FakeFrameCount
     {

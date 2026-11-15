@@ -715,7 +715,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: EnterGrateMove
+    /// ObjectProperty: EnterGrateMove<br/>
+    /// Default: Batman_Environment_Moves.flipGrate.Flip_Grate_Enter
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EnterGrateMove
     {
@@ -724,7 +725,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: EnterGrate512Move
+    /// ObjectProperty: EnterGrate512Move<br/>
+    /// Default: Batman_Environment_Moves.flipGrate.Flip_Grate_Enter_Far_512
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EnterGrate512Move
     {
@@ -733,7 +735,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: EnterGrate1024Move
+    /// ObjectProperty: EnterGrate1024Move<br/>
+    /// Default: Batman_Environment_Moves.flipGrate.Flip_Grate_Enter_Far_1024
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EnterGrate1024Move
     {
@@ -742,7 +745,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: ExitGrateFromCeilingMove
+    /// ObjectProperty: ExitGrateFromCeilingMove<br/>
+    /// Default: Batman_Environment_Moves.flipGrate.Flip_Grate_Exit_From_Ceiling
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig ExitGrateFromCeilingMove
     {
@@ -751,7 +755,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ObjectProperty: EnterGrateFromTakedownMove
+    /// ObjectProperty: EnterGrateFromTakedownMove<br/>
+    /// Default: Batman_Environment_Moves.flipGrate.Flip_Grate_From_Takedown
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EnterGrateFromTakedownMove
     {
@@ -832,7 +837,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: AnimatedStaticGrateMesh
+    /// ComponentProperty: AnimatedStaticGrateMesh<br/>
+    /// Default: BmGame.Default__RHidePoint_GrateBase.GrateMesh3
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent AnimatedStaticGrateMesh
     {
@@ -841,7 +847,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: StaticGrateMesh
+    /// ComponentProperty: StaticGrateMesh<br/>
+    /// Default: BmGame.Default__RHidePoint_GrateBase.GrateMesh2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticGrateMesh
     {
@@ -850,7 +857,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: GrateMesh
+    /// ComponentProperty: GrateMesh<br/>
+    /// Default: BmGame.Default__RHidePoint_GrateBase.GrateMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent GrateMesh
     {
@@ -859,7 +867,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// NameProperty: GrateOpenFromAboveAnim
+    /// NameProperty: GrateOpenFromAboveAnim<br/>
+    /// Default: Tunnel_Grate_Enter
     /// </summary>
     public unsafe BmSDK.FName GrateOpenFromAboveAnim
     {
@@ -877,7 +886,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bUseAboveGrateCamera
+    /// BoolProperty: bUseAboveGrateCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseAboveGrateCamera
     {
@@ -940,7 +950,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -958,7 +969,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bCanDoTakedown
+    /// BoolProperty: bCanDoTakedown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanDoTakedown
     {
@@ -1003,7 +1015,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// BoolProperty: bAllowLRInteraction
+    /// BoolProperty: bAllowLRInteraction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowLRInteraction
     {
@@ -1012,7 +1025,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// NameProperty: SkelMeshBoneToMatch
+    /// NameProperty: SkelMeshBoneToMatch<br/>
+    /// Default: Tunnel_Grate
     /// </summary>
     public unsafe BmSDK.FName SkelMeshBoneToMatch
     {
@@ -1021,19 +1035,22 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// StructProperty: PlayerCheckExtent
+    /// StructProperty: PlayerCheckExtent<br/>
+    /// Default: (X=40,Y=40,Z=90)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 PlayerCheckExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1436);
 
     /// <summary>
-    /// StructProperty: CheckDownOffset
+    /// StructProperty: CheckDownOffset<br/>
+    /// Default: (Z=130)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CheckDownOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1448);
 
     /// <summary>
-    /// StructProperty: CheckUpOffset
+    /// StructProperty: CheckUpOffset<br/>
+    /// Default: (Z=120)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CheckUpOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1460);
@@ -1072,7 +1089,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// StrProperty: OpenPromptString
+    /// StrProperty: OpenPromptString<br/>
+    /// Default: "ButtonPromptEnterGrate"
     /// </summary>
     public unsafe BmSDK.FString OpenPromptString
     {
@@ -1099,7 +1117,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: SpaceCheckZOffset
+    /// FloatProperty: SpaceCheckZOffset<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float SpaceCheckZOffset
     {

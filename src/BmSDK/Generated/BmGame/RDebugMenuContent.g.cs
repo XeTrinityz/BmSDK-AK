@@ -851,7 +851,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: DebrisMaxHeightStaticMeshComponent
+    /// ComponentProperty: DebrisMaxHeightStaticMeshComponent<br/>
+    /// Default: BmGame.Default__RDebugMenuContent.DebrisStaticMeshComponent
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent DebrisMaxHeightStaticMeshComponent
     {
@@ -860,7 +861,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: AudioComponent
+    /// ComponentProperty: AudioComponent<br/>
+    /// Default: BmGame.Default__RDebugMenuContent.AudioComponent
     /// </summary>
     public unsafe BmSDK.Engine.AudioComponent AudioComponent
     {
@@ -977,7 +979,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ArrayProperty: LevelStreamingTypes
+    /// ArrayProperty: LevelStreamingTypes<br/>
+    /// Default: ("Off","On","Full")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> LevelStreamingTypes
     {
@@ -1013,7 +1016,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: VehEncounterType
+    /// IntProperty: VehEncounterType<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int VehEncounterType
     {
@@ -1022,7 +1026,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: PrevDrawDestructiblesMode
+    /// IntProperty: PrevDrawDestructiblesMode<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PrevDrawDestructiblesMode
     {
@@ -1058,7 +1063,8 @@ public partial class RDebugMenuContent : BmSDK.BmGame.RDebugMenu, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: PopulationWarmUpTime
+    /// FloatProperty: PopulationWarmUpTime<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float PopulationWarmUpTime
     {

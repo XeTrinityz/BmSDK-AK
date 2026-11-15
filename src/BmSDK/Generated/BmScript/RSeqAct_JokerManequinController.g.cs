@@ -208,7 +208,8 @@ public partial class RSeqAct_JokerManequinController : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// ObjectProperty: StatueSequenceParam
+    /// ObjectProperty: StatueSequenceParam<br/>
+    /// Default: Ww_Parameters.JokerBoss_B2_StatueProgress
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName StatueSequenceParam
     {
@@ -280,7 +281,8 @@ public partial class RSeqAct_JokerManequinController : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// IntProperty: MaxRand
+    /// IntProperty: MaxRand<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxRand
     {
@@ -325,7 +327,8 @@ public partial class RSeqAct_JokerManequinController : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// FloatProperty: CloseDist
+    /// FloatProperty: CloseDist<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CloseDist
     {
@@ -334,7 +337,8 @@ public partial class RSeqAct_JokerManequinController : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// FloatProperty: MedDist
+    /// FloatProperty: MedDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MedDist
     {
@@ -361,7 +365,8 @@ public partial class RSeqAct_JokerManequinController : BmSDK.Engine.SeqAct_Laten
     }
 
     /// <summary>
-    /// FloatProperty: GracePeriod
+    /// FloatProperty: GracePeriod<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float GracePeriod
     {

@@ -185,7 +185,8 @@ public partial class RSpecialMoveInstance_PlaceGooOnEnemy : BmSDK.BmGame.RSpecia
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator>(Ptr + 1012);
 
     /// <summary>
-    /// NameProperty: GooMineSocket
+    /// NameProperty: GooMineSocket<br/>
+    /// Default: Bip01_R_Clavicle
     /// </summary>
     public unsafe BmSDK.FName GooMineSocket
     {

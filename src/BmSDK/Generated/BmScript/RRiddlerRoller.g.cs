@@ -170,7 +170,8 @@ public partial class RRiddlerRoller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: Roller
+    /// ComponentProperty: Roller<br/>
+    /// Default: BmScript.Default__RRiddlerRoller.SkelMeshCompRoller
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Roller
     {
@@ -197,7 +198,8 @@ public partial class RRiddlerRoller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: SpikeEffects
+    /// ArrayProperty: SpikeEffects<br/>
+    /// Default: (BmScript.Default__RRiddlerRoller.Dirt1,BmScript.Default__RRiddlerRoller.Dirt2,BmScript.Default__RRiddlerRoller.Dirt3,BmScript.Default__RRiddlerRoller.Dirt4)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ParticleSystemComponent> SpikeEffects
     {
@@ -425,7 +427,8 @@ public partial class RRiddlerRoller : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumSpaces
+    /// IntProperty: NumSpaces<br/>
+    /// Default: 7
     /// </summary>
     public unsafe int NumSpaces
     {

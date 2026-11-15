@@ -123,7 +123,8 @@ public partial class RDisruptableLaserGridHurt : BmSDK.BmScript.RDisruptableLase
     }
 
     /// <summary>
-    /// FloatProperty: DisableWhenHitTime
+    /// FloatProperty: DisableWhenHitTime<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DisableWhenHitTime
     {
@@ -132,7 +133,8 @@ public partial class RDisruptableLaserGridHurt : BmSDK.BmScript.RDisruptableLase
     }
 
     /// <summary>
-    /// FloatProperty: DamageToBatsValue
+    /// FloatProperty: DamageToBatsValue<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DamageToBatsValue
     {

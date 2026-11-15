@@ -85,7 +85,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
     public partial record struct FRockPyroFearGasSettings
     {
         /// <summary>
-        /// FloatProperty: WaveHeight
+        /// FloatProperty: WaveHeight<br/>
+        /// Default: 1024
         /// </summary>
         public unsafe float WaveHeight
         {
@@ -94,7 +95,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveStencilMesh
+        /// ObjectProperty: WaveStencilMesh<br/>
+        /// Default: Streets_Water.Streets_Water_Mainplane
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveStencilMesh
         {
@@ -103,7 +105,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTexture
+        /// ObjectProperty: WaveTexture<br/>
+        /// Default: VFX_Water.OW_PyroFearGasWaves_N
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D WaveTexture
         {
@@ -112,7 +115,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: FoamTexture
+        /// ObjectProperty: FoamTexture<br/>
+        /// Default: VFX_Water.WaterSystem.VFX_OceanFoam
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D FoamTexture
         {
@@ -121,7 +125,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// FloatProperty: FoamContactDistance
+        /// FloatProperty: FoamContactDistance<br/>
+        /// Default: 0.6
         /// </summary>
         public unsafe float FoamContactDistance
         {
@@ -130,7 +135,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// FloatProperty: ScatterBase
+        /// FloatProperty: ScatterBase<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float ScatterBase
         {
@@ -139,7 +145,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// StructProperty: WaterColAbsorption
+        /// StructProperty: WaterColAbsorption<br/>
+        /// Default: (R=0.4,G=0.5,B=0.99,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColAbsorption
         {
@@ -148,7 +155,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// StructProperty: WaterColTransmission
+        /// StructProperty: WaterColTransmission<br/>
+        /// Default: (R=0.4,G=0.72,B=0.04,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColTransmission
         {
@@ -157,7 +165,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// StructProperty: WaterColScatter
+        /// StructProperty: WaterColScatter<br/>
+        /// Default: (R=0.011,G=0.01,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColScatter
         {
@@ -166,7 +175,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshCenter
+        /// ObjectProperty: WaveTesselatedMeshCenter<br/>
+        /// Default: VFX_Water.Ocean_TessCenter
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshCenter
         {
@@ -175,7 +185,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshRingL
+        /// ObjectProperty: WaveTesselatedMeshRingL<br/>
+        /// Default: VFX_Water.Ocean_TessRingL
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshRingL
         {
@@ -184,7 +195,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshRingR
+        /// ObjectProperty: WaveTesselatedMeshRingR<br/>
+        /// Default: VFX_Water.Ocean_TessRingR
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshRingR
         {
@@ -193,7 +205,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshSkirt
+        /// ObjectProperty: WaveTesselatedMeshSkirt<br/>
+        /// Default: VFX_Water.Ocean_TessSkirt
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshSkirt
         {
@@ -236,7 +249,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
         }
 
         /// <summary>
-        /// IntProperty: impactIndexCandidate
+        /// IntProperty: impactIndexCandidate<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int impactIndexCandidate
         {
@@ -273,7 +287,8 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: PyroFearGasSize
+    /// FloatProperty: PyroFearGasSize<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float PyroFearGasSize
     {
@@ -330,13 +345,15 @@ public partial class RPyroFearGasComponent : BmSDK.Engine.PrimitiveComponent, Bm
     }
 
     /// <summary>
-    /// StructProperty: AsyncResults
+    /// StructProperty: AsyncResults<br/>
+    /// Default: (impactIndexCandidate=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RPyroFearGasComponent.FRockPyroFearGasAsyncResults AsyncResults
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPyroFearGasComponent.FRockPyroFearGasAsyncResults>(Ptr + 624);
 
     /// <summary>
-    /// StructProperty: PyroFearGasSettings
+    /// StructProperty: PyroFearGasSettings<br/>
+    /// Default: (WaveHeight=1024,WaveStencilMesh=Streets_Water.Streets_Water_Mainplane,WaveTexture=VFX_Water.OW_PyroFearGasWaves_N,FoamTexture=VFX_Water.WaterSystem.VFX_OceanFoam,FoamContactDistance=0.6,ScatterBase=2...
     /// </summary>
     public unsafe ref BmSDK.Engine.RPyroFearGasComponent.FRockPyroFearGasSettings PyroFearGasSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RPyroFearGasComponent.FRockPyroFearGasSettings>(Ptr + 668);

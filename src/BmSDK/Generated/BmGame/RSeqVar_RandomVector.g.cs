@@ -79,13 +79,15 @@ public partial class RSeqVar_RandomVector : BmSDK.Engine.SeqVar_Vector, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Min
+    /// StructProperty: Min<br/>
+    /// Default: (X=-1,Y=-1,Z=-1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Min
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 244);
 
     /// <summary>
-    /// StructProperty: Max
+    /// StructProperty: Max<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Max
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 256);

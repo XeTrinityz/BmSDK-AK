@@ -127,7 +127,8 @@ public partial class MSeqAct_DLCGordon : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: GenDialogue
+    /// ObjectProperty: GenDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_gord_gen.Conversation.dlc_bg_barks_bossbarks_gord_gen
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation GenDialogue
     {
@@ -136,7 +137,8 @@ public partial class MSeqAct_DLCGordon : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// ObjectProperty: HarleyBehindDialogue
+    /// ObjectProperty: HarleyBehindDialogue<br/>
+    /// Default: dlc_bg_barks_bossbarks_gord_harleybehind.Conversation.dlc_bg_barks_bossbarks_gord_harleybehind
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueConversation HarleyBehindDialogue
     {
@@ -163,7 +165,8 @@ public partial class MSeqAct_DLCGordon : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: GenDialogueDuration
+    /// FloatProperty: GenDialogueDuration<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float GenDialogueDuration
     {
@@ -181,7 +184,8 @@ public partial class MSeqAct_DLCGordon : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: HarleyBehindDialogueDuration
+    /// FloatProperty: HarleyBehindDialogueDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float HarleyBehindDialogueDuration
     {
@@ -199,7 +203,8 @@ public partial class MSeqAct_DLCGordon : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     }
 
     /// <summary>
-    /// FloatProperty: QuitDialogueDuration
+    /// FloatProperty: QuitDialogueDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float QuitDialogueDuration
     {

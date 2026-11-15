@@ -214,7 +214,8 @@ public partial class RSpecialMoveConfig_ChuteToCrawlSpace : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: StartAnimStartTime
+    /// FloatProperty: StartAnimStartTime<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float StartAnimStartTime
     {
@@ -241,7 +242,8 @@ public partial class RSpecialMoveConfig_ChuteToCrawlSpace : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// StructProperty: ChuteLoopCape
+    /// StructProperty: ChuteLoopCape<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData ChuteLoopCape
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 596);

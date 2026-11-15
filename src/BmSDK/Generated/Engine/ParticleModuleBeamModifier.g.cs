@@ -128,7 +128,8 @@ public partial class ParticleModuleBeamModifier : BmSDK.Engine.ParticleModuleBea
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleBeamModifier.FBeamModifierOptions>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: Position
+    /// StructProperty: Position<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleBeamModifier.DistributionPosition,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector Position
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 104);
@@ -140,7 +141,8 @@ public partial class ParticleModuleBeamModifier : BmSDK.Engine.ParticleModuleBea
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleBeamModifier.FBeamModifierOptions>(Ptr + 168);
 
     /// <summary>
-    /// StructProperty: Tangent
+    /// StructProperty: Tangent<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleBeamModifier.DistributionTangent,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector Tangent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 172);
@@ -161,7 +163,8 @@ public partial class ParticleModuleBeamModifier : BmSDK.Engine.ParticleModuleBea
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModuleBeamModifier.FBeamModifierOptions>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: Strength
+    /// StructProperty: Strength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleBeamModifier.DistributionStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Strength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 244);

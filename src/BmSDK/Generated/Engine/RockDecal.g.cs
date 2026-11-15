@@ -79,7 +79,8 @@ public partial class RockDecal : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: DecalComponent
+    /// ComponentProperty: DecalComponent<br/>
+    /// Default: Engine.Default__RockDecal.NewDecalComponent
     /// </summary>
     public unsafe BmSDK.Engine.RockDecalComponent DecalComponent
     {
@@ -94,7 +95,8 @@ public partial class RockDecal : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 676);
 
     /// <summary>
-    /// StructProperty: UVBottomRight
+    /// StructProperty: UVBottomRight<br/>
+    /// Default: (X=1,Y=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 UVBottomRight
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 684);
@@ -154,7 +156,8 @@ public partial class RockDecal : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: DecalCollisionScale
+    /// StructProperty: DecalCollisionScale<br/>
+    /// Default: (X=0.7,Y=0.7)
     /// </summary>
     public unsafe ref System.Numerics.Vector2 DecalCollisionScale
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector2>(Ptr + 720);

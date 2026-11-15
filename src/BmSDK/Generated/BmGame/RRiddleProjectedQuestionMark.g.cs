@@ -182,7 +182,8 @@ public partial class RRiddleProjectedQuestionMark : BmSDK.BmGame.RRiddleBase, Bm
     }
 
     /// <summary>
-    /// IntProperty: RiddleIndex
+    /// IntProperty: RiddleIndex<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int RiddleIndex
     {
@@ -200,7 +201,8 @@ public partial class RRiddleProjectedQuestionMark : BmSDK.BmGame.RRiddleBase, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyInXray
+    /// BoolProperty: bOnlyInXray<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyInXray
     {
@@ -209,7 +211,8 @@ public partial class RRiddleProjectedQuestionMark : BmSDK.BmGame.RRiddleBase, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCheckVisibilityOfFarPoint
+    /// BoolProperty: bCheckVisibilityOfFarPoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckVisibilityOfFarPoint
     {
@@ -218,7 +221,8 @@ public partial class RRiddleProjectedQuestionMark : BmSDK.BmGame.RRiddleBase, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCanUse
+    /// BoolProperty: bCanUse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUse
     {
@@ -245,7 +249,8 @@ public partial class RRiddleProjectedQuestionMark : BmSDK.BmGame.RRiddleBase, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ConeAngle
+    /// FloatProperty: ConeAngle<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float ConeAngle
     {

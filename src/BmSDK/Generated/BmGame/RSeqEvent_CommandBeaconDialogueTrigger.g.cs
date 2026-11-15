@@ -92,7 +92,8 @@ public partial class RSeqEvent_CommandBeaconDialogueTrigger : BmSDK.Engine.Seque
     }
 
     /// <summary>
-    /// BoolProperty: DialogueEnabled
+    /// BoolProperty: DialogueEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DialogueEnabled
     {

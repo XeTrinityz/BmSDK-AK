@@ -139,7 +139,8 @@ public partial class RSeqAct_KnockOverAI : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// ClassProperty: dmgType
+    /// ClassProperty: dmgType<br/>
+    /// Default: BmGame.RDmgType_Piston
     /// </summary>
     public unsafe BmSDK.Class dmgType
     {
@@ -193,7 +194,8 @@ public partial class RSeqAct_KnockOverAI : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: DamageAmount
+    /// FloatProperty: DamageAmount<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float DamageAmount
     {
@@ -202,7 +204,8 @@ public partial class RSeqAct_KnockOverAI : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MomentumAmount
+    /// FloatProperty: MomentumAmount<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MomentumAmount
     {
@@ -211,7 +214,8 @@ public partial class RSeqAct_KnockOverAI : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: StunTime
+    /// FloatProperty: StunTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float StunTime
     {

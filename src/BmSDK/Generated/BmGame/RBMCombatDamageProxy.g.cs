@@ -271,7 +271,8 @@ public partial class RBMCombatDamageProxy : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ObjectProperty: fractureRumble
+    /// ObjectProperty: fractureRumble<br/>
+    /// Default: BmGame.Default__RBMCombatDamageProxy.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform fractureRumble
     {
@@ -280,7 +281,8 @@ public partial class RBMCombatDamageProxy : BmSDK.Engine.Actor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ComponentProperty: DamageCylinder
+    /// ComponentProperty: DamageCylinder<br/>
+    /// Default: BmGame.Default__RBMCombatDamageProxy.NewDamageCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent DamageCylinder
     {

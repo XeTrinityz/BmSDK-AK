@@ -102,7 +102,8 @@ public partial class RSeqAct_FakeInterrogationAura : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// ObjectProperty: InterrogationAura
+    /// ObjectProperty: InterrogationAura<br/>
+    /// Default: VFX_Forensics.HeadToHead_CharacterOutline_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance InterrogationAura
     {

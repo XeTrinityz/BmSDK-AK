@@ -111,7 +111,8 @@ public partial class RSeqAct_GrappleToVantagePoint : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// BoolProperty: bGrappleIfAlreadyOnVantagePoint
+    /// BoolProperty: bGrappleIfAlreadyOnVantagePoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bGrappleIfAlreadyOnVantagePoint
     {
@@ -147,7 +148,8 @@ public partial class RSeqAct_GrappleToVantagePoint : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// BoolProperty: bUseCamera
+    /// BoolProperty: bUseCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseCamera
     {

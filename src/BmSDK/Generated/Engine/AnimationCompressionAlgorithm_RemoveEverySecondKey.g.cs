@@ -79,7 +79,8 @@ public partial class AnimationCompressionAlgorithm_RemoveEverySecondKey : BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: MinKeys
+    /// IntProperty: MinKeys<br/>
+    /// Default: 10
     /// </summary>
     public unsafe int MinKeys
     {

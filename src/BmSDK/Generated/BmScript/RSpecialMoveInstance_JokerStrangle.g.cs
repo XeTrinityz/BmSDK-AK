@@ -267,7 +267,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// ObjectProperty: BlackoutPP
+    /// ObjectProperty: BlackoutPP<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_JokerStrangle.StranglePP
     /// </summary>
     public unsafe BmSDK.BmGame.RViewPostProcess BlackoutPP
     {
@@ -321,7 +322,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 960);
 
     /// <summary>
-    /// FloatProperty: ppMindControlBottomPanInitial
+    /// FloatProperty: ppMindControlBottomPanInitial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ppMindControlBottomPanInitial
     {
@@ -339,7 +341,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: ppMindControlBottomPanComplete
+    /// FloatProperty: ppMindControlBottomPanComplete<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ppMindControlBottomPanComplete
     {
@@ -348,7 +351,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: ppMindControlTopPanInitial
+    /// FloatProperty: ppMindControlTopPanInitial<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ppMindControlTopPanInitial
     {
@@ -366,7 +370,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: ppMindControlTopPanComplete
+    /// FloatProperty: ppMindControlTopPanComplete<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ppMindControlTopPanComplete
     {
@@ -375,7 +380,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: ppMindControlRoundness
+    /// FloatProperty: ppMindControlRoundness<br/>
+    /// Default: 2.5
     /// </summary>
     public unsafe float ppMindControlRoundness
     {
@@ -384,7 +390,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: blurKernelInitial
+    /// FloatProperty: blurKernelInitial<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float blurKernelInitial
     {
@@ -393,7 +400,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: blurKernelWin
+    /// FloatProperty: blurKernelWin<br/>
+    /// Default: 64
     /// </summary>
     public unsafe float blurKernelWin
     {
@@ -402,7 +410,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: maxNearBlurAmountInitial
+    /// FloatProperty: maxNearBlurAmountInitial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float maxNearBlurAmountInitial
     {
@@ -411,7 +420,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: maxNearBlurAmountWin
+    /// FloatProperty: maxNearBlurAmountWin<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float maxNearBlurAmountWin
     {
@@ -420,7 +430,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: maxFarBlurAmountInitial
+    /// FloatProperty: maxFarBlurAmountInitial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float maxFarBlurAmountInitial
     {
@@ -429,7 +440,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: maxFarBlurAmountWin
+    /// FloatProperty: maxFarBlurAmountWin<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float maxFarBlurAmountWin
     {
@@ -438,7 +450,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: blurKernelToAmountTransitionPoint
+    /// FloatProperty: blurKernelToAmountTransitionPoint<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float blurKernelToAmountTransitionPoint
     {
@@ -447,7 +460,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: dofInterpDuration
+    /// FloatProperty: dofInterpDuration<br/>
+    /// Default: 1e-05
     /// </summary>
     public unsafe float dofInterpDuration
     {
@@ -456,7 +470,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: dofFocusDistanceInitial
+    /// FloatProperty: dofFocusDistanceInitial<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float dofFocusDistanceInitial
     {
@@ -465,7 +480,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: dofFocusDistanceWin
+    /// FloatProperty: dofFocusDistanceWin<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float dofFocusDistanceWin
     {
@@ -474,7 +490,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: bloomScaleInitial
+    /// FloatProperty: bloomScaleInitial<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float bloomScaleInitial
     {
@@ -483,7 +500,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: bloomScaleWin
+    /// FloatProperty: bloomScaleWin<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float bloomScaleWin
     {
@@ -492,7 +510,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: bloomThresholdInitial
+    /// FloatProperty: bloomThresholdInitial<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float bloomThresholdInitial
     {
@@ -501,7 +520,8 @@ public partial class RSpecialMoveInstance_JokerStrangle : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: bloomThresholdWin
+    /// FloatProperty: bloomThresholdWin<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float bloomThresholdWin
     {

@@ -4716,7 +4716,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: BatmobileTakedownHighlight
+    /// ObjectProperty: BatmobileTakedownHighlight<br/>
+    /// Default: VFX_Forensics.EnvironmentTakedownHighlight_INST
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInstance BatmobileTakedownHighlight
     {
@@ -4725,7 +4726,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RiotCombatWallahStart
+    /// ObjectProperty: RiotCombatWallahStart<br/>
+    /// Default: Ww_Thugs_Walla.Play_Thugs_Crowd_Battle_Chatter
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RiotCombatWallahStart
     {
@@ -4734,7 +4736,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RiotCombatWallahStop
+    /// ObjectProperty: RiotCombatWallahStop<br/>
+    /// Default: Ww_Thugs_Walla.Stop_Thugs_Crowd_Battle_Chatter
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RiotCombatWallahStop
     {
@@ -4743,7 +4746,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RiotStartCombatAkEvent
+    /// ObjectProperty: RiotStartCombatAkEvent<br/>
+    /// Default: Ww_Thugs_Walla.Play_Thugs_Batman_Sighted_Chatter_Oneshots
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent RiotStartCombatAkEvent
     {
@@ -4752,7 +4756,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: RiotCombatWallahParameter
+    /// ObjectProperty: RiotCombatWallahParameter<br/>
+    /// Default: Ww_Parameters.Combat_Walla
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName RiotCombatWallahParameter
     {
@@ -4806,7 +4811,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanAttack
+    /// BoolProperty: bCanAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanAttack
     {
@@ -5085,7 +5091,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ImpactRampIn
+    /// BoolProperty: ImpactRampIn<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ImpactRampIn
     {
@@ -5094,7 +5101,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: ImpactRampOut
+    /// BoolProperty: ImpactRampOut<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ImpactRampOut
     {
@@ -5112,7 +5120,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bKeepInViewLookAtPawnLocation
+    /// BoolProperty: bKeepInViewLookAtPawnLocation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bKeepInViewLookAtPawnLocation
     {
@@ -5328,7 +5337,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OverrideChapter
+    /// FloatProperty: OverrideChapter<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideChapter
     {
@@ -5403,7 +5413,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PawnHealthMultiplier
+    /// FloatProperty: PawnHealthMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float PawnHealthMultiplier
     {
@@ -5430,7 +5441,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: AllowedSimultaneousTypes
+    /// ArrayProperty: AllowedSimultaneousTypes<br/>
+    /// Default: (SCBT_Thug,SCBT_ThugPipe,SCBT_Ninja,SCBT_ThugRobot)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RPawnCombat.SimultaneousCounterBehaviourType> AllowedSimultaneousTypes
     {
@@ -5619,7 +5631,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LastExplosivePickedUpTime
+    /// FloatProperty: LastExplosivePickedUpTime<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float LastExplosivePickedUpTime
     {
@@ -5628,7 +5641,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: LastThrownObjectPickedUpTime
+    /// FloatProperty: LastThrownObjectPickedUpTime<br/>
+    /// Default: -20
     /// </summary>
     public unsafe float LastThrownObjectPickedUpTime
     {
@@ -5664,7 +5678,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactEmoteChanceCombat
+    /// FloatProperty: ImpactEmoteChanceCombat<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ImpactEmoteChanceCombat
     {
@@ -5673,7 +5688,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactEmoteChancePredator
+    /// FloatProperty: ImpactEmoteChancePredator<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float ImpactEmoteChancePredator
     {
@@ -5803,7 +5819,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMCombatManager.FWeaponConfigRef>(Ptr + 1536);
 
     /// <summary>
-    /// ArrayProperty: ThugPlayerPairedAnimsetPackageDefs
+    /// ArrayProperty: ThugPlayerPairedAnimsetPackageDefs<br/>
+    /// Default: ((PlayerName=Batman),(PlayerName=Catwoman),(PlayerName=Bruce_Wayne,PackageName="Anim_Bruce_Thug_Combat",VillainAnimsetNames=("TG_BW_Counter"),PlayerAnimsetNames=("BW_TG_Counter"),DynamicallyLoadedAnim...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMCombatManager.FPairedAnimsetPackageDef> ThugPlayerPairedAnimsetPackageDefs
     {
@@ -5812,7 +5829,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CachedCombatAnimsets
+    /// ArrayProperty: CachedCombatAnimsets<br/>
+    /// Default: ((AnimSet=Anim_Batman_TG_Com.Code.BM_Combat_Cameras),(AnimSet=Anim_Batman_TG_Com.Code.BM_TG_Counter),(AnimSet=Anim_Batman_TG_Com.Code.TG_BM_Counter),(AnimSet=Anim_Batman_TG_Com.Code.BM_TG_Takedown),(A...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMCombatManager.FCachedAnimset> CachedCombatAnimsets
     {
@@ -5821,7 +5839,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DifficultyProgressionDefines_Easy
+    /// ArrayProperty: DifficultyProgressionDefines_Easy<br/>
+    /// Default: ((MinChapter=2,MaxChapter=12,EasyValue=10,HardValue=10,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=10,HardValue=10,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=10,HardVa...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMCombatManager.FDifficultyProgressionDefine> DifficultyProgressionDefines_Easy
     {
@@ -5830,7 +5849,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DifficultyProgressionDefines_Normal
+    /// ArrayProperty: DifficultyProgressionDefines_Normal<br/>
+    /// Default: ((MinChapter=1,MaxChapter=12,EasyValue=10,HardValue=16,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=15,HardValue=22.5,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=10,Hard...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMCombatManager.FDifficultyProgressionDefine> DifficultyProgressionDefines_Normal
     {
@@ -5839,7 +5859,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: DifficultyProgressionDefines_Hard
+    /// ArrayProperty: DifficultyProgressionDefines_Hard<br/>
+    /// Default: ((MinChapter=2,MaxChapter=12,EasyValue=16,HardValue=16,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=22.5,HardValue=22.5,DebugMenuIncrement=1),(MinChapter=2,MaxChapter=12,EasyValue=15,Ha...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMCombatManager.FDifficultyProgressionDefine> DifficultyProgressionDefines_Hard
     {
@@ -5848,7 +5869,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: MoveTypeScores
+    /// ArrayProperty: MoveTypeScores<br/>
+    /// Default: (10,20,10,20,0,0,0,0,20,25,25,75,0,0,50,0,100,100,50,10,0,25,0,0,0,25,25,10,20,10,0,5,5,0,10,25,5,0,10,10,10,10,10,0,10,0,0,25,10,0,10,0,10,0,10,25,0,100,0,100,0,50,250,0,0,0,0,0,0,10,10)
     /// </summary>
     public unsafe BmSDK.TArray<int> MoveTypeScores
     {
@@ -5956,7 +5978,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ClosestCombatPawnDistance
+    /// FloatProperty: ClosestCombatPawnDistance<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ClosestCombatPawnDistance
     {
@@ -5983,7 +6006,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactMinSpeed
+    /// FloatProperty: ImpactMinSpeed<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ImpactMinSpeed
     {
@@ -5992,7 +6016,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactPreTime
+    /// FloatProperty: ImpactPreTime<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float ImpactPreTime
     {
@@ -6001,7 +6026,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactPostTime
+    /// FloatProperty: ImpactPostTime<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float ImpactPostTime
     {
@@ -6010,7 +6036,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRampInEnd
+    /// FloatProperty: ImpactRampInEnd<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float ImpactRampInEnd
     {
@@ -6019,7 +6046,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ImpactRampOutStart
+    /// FloatProperty: ImpactRampOutStart<br/>
+    /// Default: 0.95
     /// </summary>
     public unsafe float ImpactRampOutStart
     {
@@ -6061,7 +6089,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1792);
 
     /// <summary>
-    /// IntProperty: FleeBarksRemaining
+    /// IntProperty: FleeBarksRemaining<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int FleeBarksRemaining
     {
@@ -6070,7 +6099,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenBarkMultiplier
+    /// FloatProperty: TimeBetweenBarkMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeBetweenBarkMultiplier
     {
@@ -6088,7 +6118,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinCombatFOV
+    /// FloatProperty: MinCombatFOV<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float MinCombatFOV
     {
@@ -6097,7 +6128,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinCombatFOVNum
+    /// IntProperty: MinCombatFOVNum<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MinCombatFOVNum
     {
@@ -6106,7 +6138,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxCombatFOV
+    /// FloatProperty: MaxCombatFOV<br/>
+    /// Default: 85
     /// </summary>
     public unsafe float MaxCombatFOV
     {
@@ -6115,7 +6148,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxCombatFOVNum
+    /// IntProperty: MaxCombatFOVNum<br/>
+    /// Default: 5
     /// </summary>
     public unsafe int MaxCombatFOVNum
     {
@@ -6124,7 +6158,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: OverrideNumCombatants
+    /// IntProperty: OverrideNumCombatants<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int OverrideNumCombatants
     {
@@ -6133,7 +6168,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: FinishedCombatName
+    /// NameProperty: FinishedCombatName<br/>
+    /// Default: FinishedCombat
     /// </summary>
     public unsafe BmSDK.FName FinishedCombatName
     {
@@ -6142,7 +6178,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxYawOffsetDeg
+    /// FloatProperty: MaxYawOffsetDeg<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float MaxYawOffsetDeg
     {
@@ -6196,7 +6233,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleZ
+    /// FloatProperty: MaxOnscreenCosAngleZ<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float MaxOnscreenCosAngleZ
     {
@@ -6205,7 +6243,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxOnscreenCosAngleXY
+    /// FloatProperty: MaxOnscreenCosAngleXY<br/>
+    /// Default: 0.76
     /// </summary>
     public unsafe float MaxOnscreenCosAngleXY
     {
@@ -6304,7 +6343,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FinishedCombatTime
+    /// FloatProperty: FinishedCombatTime<br/>
+    /// Default: -1e+07
     /// </summary>
     public unsafe float FinishedCombatTime
     {
@@ -6322,7 +6362,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxSimCounterersOverride
+    /// IntProperty: MaxSimCounterersOverride<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MaxSimCounterersOverride
     {

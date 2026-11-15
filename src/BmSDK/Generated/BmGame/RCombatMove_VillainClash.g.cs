@@ -707,7 +707,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float AttackRange
     {
@@ -743,7 +744,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// NameProperty: ClashAnimPrefix
+    /// NameProperty: ClashAnimPrefix<br/>
+    /// Default: Clash_
     /// </summary>
     public unsafe BmSDK.FName ClashAnimPrefix
     {
@@ -752,7 +754,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// NameProperty: BeatdownAnimPrefix
+    /// NameProperty: BeatdownAnimPrefix<br/>
+    /// Default: Beatdown_
     /// </summary>
     public unsafe BmSDK.FName BeatdownAnimPrefix
     {
@@ -779,7 +782,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// FloatProperty: MaxBeatdownTime
+    /// FloatProperty: MaxBeatdownTime<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float MaxBeatdownTime
     {
@@ -827,7 +831,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// BoolProperty: bAllowNextStrike
+    /// BoolProperty: bAllowNextStrike<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowNextStrike
     {
@@ -881,7 +886,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// BoolProperty: bVillainDangerous
+    /// BoolProperty: bVillainDangerous<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVillainDangerous
     {
@@ -908,7 +914,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// BoolProperty: bPlayBMStrike
+    /// BoolProperty: bPlayBMStrike<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayBMStrike
     {
@@ -917,7 +924,8 @@ public partial class RCombatMove_VillainClash : BmSDK.BmGame.RCombatMove_Villain
     }
 
     /// <summary>
-    /// NameProperty: InitialState
+    /// NameProperty: InitialState<br/>
+    /// Default: IntoClash
     /// </summary>
     public unsafe BmSDK.FName InitialState
     {

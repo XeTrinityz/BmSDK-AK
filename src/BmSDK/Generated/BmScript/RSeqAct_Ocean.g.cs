@@ -106,7 +106,8 @@ public partial class RSeqAct_Ocean : BmSDK.Engine.SequenceAction, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: OceanSettings
+    /// StructProperty: OceanSettings<br/>
+    /// Default: (WaveHeight=1024,WaveStencilMesh=Streets_Water.Streets_Water_Mainplane,WaveTexture=VFX_Water.OWSea_Wave2_N,FoamTexture=VFX_Water.WaterSystem.VFX_OceanFoam,FoamContactDistance=0.6,CrestFXContactDistanc...
     /// </summary>
     public unsafe ref BmSDK.Engine.ROceanComponent.FRockOceanSettings OceanSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ROceanComponent.FRockOceanSettings>(Ptr + 352);

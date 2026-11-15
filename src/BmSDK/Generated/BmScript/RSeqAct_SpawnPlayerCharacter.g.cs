@@ -143,7 +143,8 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     }
 
     /// <summary>
-    /// NameProperty: PlayableCharacterName
+    /// NameProperty: PlayableCharacterName<br/>
+    /// Default: Playable_Catwoman
     /// </summary>
     public unsafe BmSDK.FName PlayableCharacterName
     {
@@ -152,7 +153,8 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     }
 
     /// <summary>
-    /// BoolProperty: bUseRobinBotController
+    /// BoolProperty: bUseRobinBotController<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseRobinBotController
     {
@@ -161,7 +163,8 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     }
 
     /// <summary>
-    /// BoolProperty: DualPlayCharacter
+    /// BoolProperty: DualPlayCharacter<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DualPlayCharacter
     {
@@ -170,7 +173,8 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     }
 
     /// <summary>
-    /// ClassProperty: BotControllerClass
+    /// ClassProperty: BotControllerClass<br/>
+    /// Default: BmGame.RRobinBotController
     /// </summary>
     public unsafe BmSDK.Class BotControllerClass
     {

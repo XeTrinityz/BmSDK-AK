@@ -265,7 +265,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAddToNavigationOctree
+    /// BoolProperty: bAddToNavigationOctree<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAddToNavigationOctree
     {
@@ -274,7 +275,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanCutCorners
+    /// BoolProperty: bCanCutCorners<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCutCorners
     {
@@ -283,7 +285,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCheckForObstructions
+    /// BoolProperty: bCheckForObstructions<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckForObstructions
     {

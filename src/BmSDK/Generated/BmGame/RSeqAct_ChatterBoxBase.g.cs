@@ -752,7 +752,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         }
 
         /// <summary>
-        /// IntProperty: wandererGroup
+        /// IntProperty: wandererGroup<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int wandererGroup
         {
@@ -761,7 +762,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         }
 
         /// <summary>
-        /// IntProperty: Group
+        /// IntProperty: Group<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int Group
         {
@@ -819,7 +821,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: onlyTriggerVideoChatterIfBillboardsVisible
+    /// BoolProperty: onlyTriggerVideoChatterIfBillboardsVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool onlyTriggerVideoChatterIfBillboardsVisible
     {
@@ -999,7 +1002,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: videoChatterIntervalMin
+    /// FloatProperty: videoChatterIntervalMin<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float videoChatterIntervalMin
     {
@@ -1008,7 +1012,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: videoChatterIntervalMax
+    /// FloatProperty: videoChatterIntervalMax<br/>
+    /// Default: 180
     /// </summary>
     public unsafe float videoChatterIntervalMax
     {
@@ -1017,7 +1022,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: videoChatterIntervalStepsFromMinToMax
+    /// IntProperty: videoChatterIntervalStepsFromMinToMax<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int videoChatterIntervalStepsFromMinToMax
     {
@@ -1026,7 +1032,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: helicopterChatterInterval
+    /// FloatProperty: helicopterChatterInterval<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float helicopterChatterInterval
     {
@@ -1035,7 +1042,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: helicopterBatmanChatterInterval
+    /// FloatProperty: helicopterBatmanChatterInterval<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float helicopterBatmanChatterInterval
     {
@@ -1044,7 +1052,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: riddlerChatterInitialTimer
+    /// FloatProperty: riddlerChatterInitialTimer<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float riddlerChatterInitialTimer
     {
@@ -1053,7 +1062,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: riddlerChatterSubseqeuntTimer
+    /// FloatProperty: riddlerChatterSubseqeuntTimer<br/>
+    /// Default: 450
     /// </summary>
     public unsafe float riddlerChatterSubseqeuntTimer
     {
@@ -1062,7 +1072,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: indoorBillboardChatterBumpTime
+    /// FloatProperty: indoorBillboardChatterBumpTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float indoorBillboardChatterBumpTime
     {

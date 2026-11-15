@@ -505,7 +505,8 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     }
 
     /// <summary>
-    /// StructProperty: ControlsScreen
+    /// StructProperty: ControlsScreen<br/>
+    /// Default: (TheMovieInstance=PauseMenu.PauseControls,TheClass=BmGame.RGFxMovieUI_PauseOptionsControls)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGFxMovieUI_PauseBase.FScreenDef ControlsScreen
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGFxMovieUI_PauseBase.FScreenDef>(Ptr + 1644);
@@ -565,7 +566,8 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     }
 
     /// <summary>
-    /// IntProperty: NoOption
+    /// IntProperty: NoOption<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NoOption
     {
@@ -574,7 +576,8 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     }
 
     /// <summary>
-    /// IntProperty: CancelOption
+    /// IntProperty: CancelOption<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int CancelOption
     {

@@ -101,7 +101,8 @@ public partial class AkSDNode : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HasOutputPin
+    /// BoolProperty: HasOutputPin<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasOutputPin
     {
@@ -110,7 +111,8 @@ public partial class AkSDNode : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: HasInputPin
+    /// BoolProperty: HasInputPin<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool HasInputPin
     {
@@ -182,7 +184,8 @@ public partial class AkSDNode : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: InputPinName
+    /// StrProperty: InputPinName<br/>
+    /// Default: "True"
     /// </summary>
     public unsafe BmSDK.FString InputPinName
     {

@@ -101,7 +101,8 @@ public partial class NxTornadoAngularForceField : BmSDK.Engine.NxForceField, BmS
     }
 
     /// <summary>
-    /// FloatProperty: ForceRadius
+    /// FloatProperty: ForceRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float ForceRadius
     {

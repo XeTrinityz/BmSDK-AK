@@ -920,7 +920,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: OverrideRunSpeed
+    /// FloatProperty: OverrideRunSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float OverrideRunSpeed
     {
@@ -929,7 +930,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: OverrideStealthSpeed
+    /// FloatProperty: OverrideStealthSpeed<br/>
+    /// Default: 492.96
     /// </summary>
     public unsafe float OverrideStealthSpeed
     {
@@ -1001,7 +1003,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: CloakingDuration
+    /// FloatProperty: CloakingDuration<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float CloakingDuration
     {
@@ -1010,7 +1013,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// FloatProperty: CloakingBlend
+    /// FloatProperty: CloakingBlend<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CloakingBlend
     {
@@ -1037,7 +1041,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ComponentProperty: FingersMesh
+    /// ComponentProperty: FingersMesh<br/>
+    /// Default: BmScript.Default__RPawnPlayerBm.FingersMesh1
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent FingersMesh
     {
@@ -1073,7 +1078,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// ClassProperty: IceSphereClass
+    /// ClassProperty: IceSphereClass<br/>
+    /// Default: BmScript.RFreezeBlastIceSphere
     /// </summary>
     public unsafe BmSDK.Class IceSphereClass
     {
@@ -1091,7 +1097,8 @@ public partial class RPawnPlayerBm : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGam
     }
 
     /// <summary>
-    /// IntProperty: MaxIceSpheres
+    /// IntProperty: MaxIceSpheres<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int MaxIceSpheres
     {

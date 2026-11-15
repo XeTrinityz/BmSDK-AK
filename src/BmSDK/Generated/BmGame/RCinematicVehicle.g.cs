@@ -466,7 +466,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// BoolProperty: EnablePrestreamTextures
+    /// BoolProperty: EnablePrestreamTextures<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool EnablePrestreamTextures
     {
@@ -501,7 +502,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 936);
 
     /// <summary>
-    /// FloatProperty: WheelRadius
+    /// FloatProperty: WheelRadius<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float WheelRadius
     {
@@ -510,7 +512,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionTravelUp
+    /// FloatProperty: SuspensionTravelUp<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float SuspensionTravelUp
     {
@@ -519,7 +522,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionTravelDown
+    /// FloatProperty: SuspensionTravelDown<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float SuspensionTravelDown
     {

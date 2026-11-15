@@ -129,7 +129,8 @@ public partial class AnimNodeBlend : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bSkipBlendWhenNotRendered
+    /// BoolProperty: bSkipBlendWhenNotRendered<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSkipBlendWhenNotRendered
     {

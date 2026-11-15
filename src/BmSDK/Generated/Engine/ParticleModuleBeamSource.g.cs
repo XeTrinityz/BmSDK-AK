@@ -142,19 +142,22 @@ public partial class ParticleModuleBeamSource : BmSDK.Engine.ParticleModuleBeamB
     }
 
     /// <summary>
-    /// StructProperty: Source
+    /// StructProperty: Source<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(50,50,50,50,50,50,50,50),Distribution=Engine.Default__ParticleModuleBeamSource.DistributionSource,MinRange=(X=50,Y=50,Z=50),MaxRange=...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector Source
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 112);
 
     /// <summary>
-    /// StructProperty: SourceTangent
+    /// StructProperty: SourceTangent<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,1,1,0,0,1,0,0),Distribution=Engine.Default__ParticleModuleBeamSource.DistributionSourceTangent,MinRange=(X=1),MaxRange=(X=1),Ranges...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector SourceTangent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: SourceStrength
+    /// StructProperty: SourceStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(25,25,25,25),Distribution=Engine.Default__ParticleModuleBeamSource.DistributionSourceStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat SourceStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 240);

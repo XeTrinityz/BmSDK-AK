@@ -115,7 +115,8 @@ public partial class MBlindSubroutineContext : BmSDK.BmGame.MHackSubroutineConte
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionOver
+    /// FloatProperty: ZDifferentialExclusionOver<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionOver
     {
@@ -124,7 +125,8 @@ public partial class MBlindSubroutineContext : BmSDK.BmGame.MHackSubroutineConte
     }
 
     /// <summary>
-    /// FloatProperty: ZDifferentialExclusionUnder
+    /// FloatProperty: ZDifferentialExclusionUnder<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float ZDifferentialExclusionUnder
     {

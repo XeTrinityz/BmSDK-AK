@@ -371,7 +371,8 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
     }
 
     /// <summary>
-    /// ComponentProperty: NormalMesh
+    /// ComponentProperty: NormalMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_PygTable.NormalMeshComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent NormalMesh
     {
@@ -380,7 +381,8 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
     }
 
     /// <summary>
-    /// ComponentProperty: InRangeHighlightMesh
+    /// ComponentProperty: InRangeHighlightMesh<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_PygTable.InRangeHighlightSkeletalComp
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent InRangeHighlightMesh
     {
@@ -407,7 +409,8 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
     }
 
     /// <summary>
-    /// ArrayProperty: SegmentMeshs
+    /// ArrayProperty: SegmentMeshs<br/>
+    /// Default: (VFX_SideStories.Pyg.Meshes.Pyg_DestroyedMask_01,VFX_SideStories.Pyg.Meshes.Pyg_DestroyedMask_02,VFX_SideStories.Pyg.Meshes.Pyg_DestroyedMask_05,VFX_SideStories.Pyg.Meshes.Pyg_DestroyedMask_07,VFX_Sid...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.StaticMesh> SegmentMeshs
     {

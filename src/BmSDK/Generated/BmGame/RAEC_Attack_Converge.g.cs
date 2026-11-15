@@ -498,7 +498,8 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
     }
 
     /// <summary>
-    /// ByteProperty: CurrentState
+    /// ByteProperty: CurrentState<br/>
+    /// Default: CPS_Inactive
     /// </summary>
     public unsafe BmSDK.BmGame.RAEC_Attack_Converge.ConvergeProcessState CurrentState
     {

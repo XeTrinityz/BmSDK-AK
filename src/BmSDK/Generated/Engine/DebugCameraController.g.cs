@@ -305,7 +305,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// NameProperty: PrimaryKey
+    /// NameProperty: PrimaryKey<br/>
+    /// Default: LeftMouseButton
     /// </summary>
     public unsafe BmSDK.FName PrimaryKey
     {
@@ -314,7 +315,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// NameProperty: SecondaryKey
+    /// NameProperty: SecondaryKey<br/>
+    /// Default: RightMouseButton
     /// </summary>
     public unsafe BmSDK.FName SecondaryKey
     {
@@ -323,7 +325,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// NameProperty: UnselectKey
+    /// NameProperty: UnselectKey<br/>
+    /// Default: Escape
     /// </summary>
     public unsafe BmSDK.FName UnselectKey
     {
@@ -332,7 +335,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bShowSelectedInfo
+    /// BoolProperty: bShowSelectedInfo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowSelectedInfo
     {

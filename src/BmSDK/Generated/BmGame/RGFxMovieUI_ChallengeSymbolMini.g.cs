@@ -440,7 +440,8 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
     }
 
     /// <summary>
-    /// BoolProperty: bVisible
+    /// BoolProperty: bVisible<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bVisible
     {
@@ -449,7 +450,8 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
     }
 
     /// <summary>
-    /// BoolProperty: bNotSet
+    /// BoolProperty: bNotSet<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bNotSet
     {

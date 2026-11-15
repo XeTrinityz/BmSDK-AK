@@ -105,7 +105,8 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: DefaultFogVolumeMaterial
+    /// ObjectProperty: DefaultFogVolumeMaterial<br/>
+    /// Default: EngineMaterials.FogVolumeMaterial
     /// </summary>
     public unsafe BmSDK.Engine.MaterialInterface DefaultFogVolumeMaterial
     {
@@ -114,7 +115,8 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -123,7 +125,8 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bAffectsTranslucency
+    /// BoolProperty: bAffectsTranslucency<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAffectsTranslucency
     {
@@ -141,13 +144,15 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// StructProperty: SimpleLightColor
+    /// StructProperty: SimpleLightColor<br/>
+    /// Default: (R=0.5,G=0.5,B=0.7,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor SimpleLightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 144);
 
     /// <summary>
-    /// StructProperty: ApproxFogLightColor
+    /// StructProperty: ApproxFogLightColor<br/>
+    /// Default: (R=0.5,G=0.5,B=0.7,A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ApproxFogLightColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 160);
@@ -162,7 +167,8 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     }
 
     /// <summary>
-    /// FloatProperty: MaxDistance
+    /// FloatProperty: MaxDistance<br/>
+    /// Default: 65535
     /// </summary>
     public unsafe float MaxDistance
     {

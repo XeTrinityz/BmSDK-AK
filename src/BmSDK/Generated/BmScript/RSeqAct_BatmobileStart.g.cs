@@ -160,7 +160,8 @@ public partial class RSeqAct_BatmobileStart : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceToEnemies
+    /// FloatProperty: MinDistanceToEnemies<br/>
+    /// Default: 7000
     /// </summary>
     public unsafe float MinDistanceToEnemies
     {

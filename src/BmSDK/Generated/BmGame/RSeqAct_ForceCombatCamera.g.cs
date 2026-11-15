@@ -121,7 +121,8 @@ public partial class RSeqAct_ForceCombatCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bForceUntilCombatHappens
+    /// BoolProperty: bForceUntilCombatHappens<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bForceUntilCombatHappens
     {
@@ -139,7 +140,8 @@ public partial class RSeqAct_ForceCombatCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bSuppressFinalBlowCamera
+    /// BoolProperty: bSuppressFinalBlowCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSuppressFinalBlowCamera
     {
@@ -166,7 +168,8 @@ public partial class RSeqAct_ForceCombatCamera : BmSDK.Engine.SeqAct_Latent, BmS
     }
 
     /// <summary>
-    /// IntProperty: ForceNumCombatantsForFOV
+    /// IntProperty: ForceNumCombatantsForFOV<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ForceNumCombatantsForFOV
     {

@@ -128,7 +128,8 @@ public partial class RAEC_BatarangReaction_Confused : BmSDK.BmGame.RAlertEventCo
     }
 
     /// <summary>
-    /// FloatProperty: LastQuitIntoSearchBarkTime
+    /// FloatProperty: LastQuitIntoSearchBarkTime<br/>
+    /// Default: -100
     /// </summary>
     public unsafe float LastQuitIntoSearchBarkTime
     {

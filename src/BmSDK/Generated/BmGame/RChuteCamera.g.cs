@@ -241,7 +241,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: IdealPathLength
+    /// FloatProperty: IdealPathLength<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float IdealPathLength
     {
@@ -259,7 +260,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EndSpeed
+    /// FloatProperty: EndSpeed<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float EndSpeed
     {
@@ -268,7 +270,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: IdealFlightTime
+    /// FloatProperty: IdealFlightTime<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float IdealFlightTime
     {
@@ -277,7 +280,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinimumFlightTime
+    /// FloatProperty: MinimumFlightTime<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float MinimumFlightTime
     {
@@ -382,7 +386,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: PlayerToChuteCameraSpeedFactor
+    /// FloatProperty: PlayerToChuteCameraSpeedFactor<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float PlayerToChuteCameraSpeedFactor
     {
@@ -391,7 +396,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlendInTime
+    /// FloatProperty: BlendInTime<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float BlendInTime
     {
@@ -400,7 +406,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BlendOutTime
+    /// FloatProperty: BlendOutTime<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float BlendOutTime
     {
@@ -409,7 +416,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: FinalCamPitch
+    /// FloatProperty: FinalCamPitch<br/>
+    /// Default: -30
     /// </summary>
     public unsafe float FinalCamPitch
     {

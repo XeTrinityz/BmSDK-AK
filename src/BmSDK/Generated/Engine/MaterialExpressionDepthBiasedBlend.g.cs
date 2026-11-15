@@ -88,7 +88,8 @@ public partial class MaterialExpressionDepthBiasedBlend : BmSDK.Engine.MaterialE
     }
 
     /// <summary>
-    /// FloatProperty: BiasScale
+    /// FloatProperty: BiasScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BiasScale
     {

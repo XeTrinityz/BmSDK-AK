@@ -137,7 +137,8 @@ public partial class RStealthTakeDownStage_HopOffLedgeStart : BmSDK.BmGame.RStea
     }
 
     /// <summary>
-    /// NameProperty: RailingAnimationName
+    /// NameProperty: RailingAnimationName<br/>
+    /// Default: Walk_Off_Railing
     /// </summary>
     public unsafe BmSDK.FName RailingAnimationName
     {

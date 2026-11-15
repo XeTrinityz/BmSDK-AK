@@ -431,7 +431,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: WireframeColor
+    /// StructProperty: WireframeColor<br/>
+    /// Default: (B=255,G=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor WireframeColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 652);

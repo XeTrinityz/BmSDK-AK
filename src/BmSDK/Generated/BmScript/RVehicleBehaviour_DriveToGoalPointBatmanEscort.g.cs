@@ -181,7 +181,8 @@ public partial class RVehicleBehaviour_DriveToGoalPointBatmanEscort : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: InitialAwareOfBatmobileDuration
+    /// FloatProperty: InitialAwareOfBatmobileDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float InitialAwareOfBatmobileDuration
     {
@@ -190,7 +191,8 @@ public partial class RVehicleBehaviour_DriveToGoalPointBatmanEscort : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxBatmobileSpeed
+    /// FloatProperty: MaxBatmobileSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxBatmobileSpeed
     {
@@ -199,7 +201,8 @@ public partial class RVehicleBehaviour_DriveToGoalPointBatmanEscort : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: DesiredBatmobileTailDistance
+    /// FloatProperty: DesiredBatmobileTailDistance<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float DesiredBatmobileTailDistance
     {
@@ -217,7 +220,8 @@ public partial class RVehicleBehaviour_DriveToGoalPointBatmanEscort : BmSDK.BmGa
     }
 
     /// <summary>
-    /// FloatProperty: DesiredBatmobileTailDistanceChangeRate
+    /// FloatProperty: DesiredBatmobileTailDistanceChangeRate<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float DesiredBatmobileTailDistanceChangeRate
     {

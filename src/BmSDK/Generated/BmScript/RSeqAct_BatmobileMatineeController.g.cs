@@ -161,7 +161,8 @@ public partial class RSeqAct_BatmobileMatineeController : BmSDK.Engine.SeqAct_La
     }
 
     /// <summary>
-    /// FloatProperty: MatineeSpeedMultiplier
+    /// FloatProperty: MatineeSpeedMultiplier<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float MatineeSpeedMultiplier
     {
@@ -170,7 +171,8 @@ public partial class RSeqAct_BatmobileMatineeController : BmSDK.Engine.SeqAct_La
     }
 
     /// <summary>
-    /// FloatProperty: DeadTimeUntilAutoRestart
+    /// FloatProperty: DeadTimeUntilAutoRestart<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DeadTimeUntilAutoRestart
     {

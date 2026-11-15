@@ -97,7 +97,8 @@ public partial class RSpecialMoveConfig_DiveOverRailing : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// NameProperty: EndStance
+    /// NameProperty: EndStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName EndStance
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveConfig_DiveOverRailing : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// FloatProperty: SmashRadius
+    /// FloatProperty: SmashRadius<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SmashRadius
     {

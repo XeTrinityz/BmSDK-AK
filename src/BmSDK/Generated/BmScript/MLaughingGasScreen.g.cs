@@ -157,7 +157,8 @@ public partial class MLaughingGasScreen : BmSDK.BmGame.MLaughingGasScreenBase, B
     }
 
     /// <summary>
-    /// FloatProperty: StunDuration
+    /// FloatProperty: StunDuration<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float StunDuration
     {

@@ -97,7 +97,8 @@ public partial class ActorFactoryPhysicsAsset : BmSDK.Engine.ActorFactory, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bStartAwake
+    /// BoolProperty: bStartAwake<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStartAwake
     {
@@ -106,7 +107,8 @@ public partial class ActorFactoryPhysicsAsset : BmSDK.Engine.ActorFactory, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bDamageAppliesImpulse
+    /// BoolProperty: bDamageAppliesImpulse<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDamageAppliesImpulse
     {
@@ -133,7 +135,8 @@ public partial class ActorFactoryPhysicsAsset : BmSDK.Engine.ActorFactory, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bCastDynamicShadow
+    /// BoolProperty: bCastDynamicShadow<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCastDynamicShadow
     {
@@ -148,7 +151,8 @@ public partial class ActorFactoryPhysicsAsset : BmSDK.Engine.ActorFactory, BmSDK
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 164);
 
     /// <summary>
-    /// StructProperty: DrawScale3D
+    /// StructProperty: DrawScale3D<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 DrawScale3D
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 176);

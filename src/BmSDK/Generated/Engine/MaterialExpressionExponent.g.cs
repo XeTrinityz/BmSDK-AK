@@ -85,7 +85,8 @@ public partial class MaterialExpressionExponent : BmSDK.Engine.MaterialExpressio
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// BoolProperty: bOffsetVisual
+    /// BoolProperty: bOffsetVisual<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOffsetVisual
     {

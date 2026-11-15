@@ -112,7 +112,8 @@ public partial class PlayerStart : BmSDK.Engine.NavigationPoint, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {
@@ -121,7 +122,8 @@ public partial class PlayerStart : BmSDK.Engine.NavigationPoint, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bPrimaryStart
+    /// BoolProperty: bPrimaryStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPrimaryStart
     {

@@ -461,7 +461,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bSaveWhenTeleportedTo
+    /// BoolProperty: bSaveWhenTeleportedTo<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bSaveWhenTeleportedTo
     {
@@ -479,7 +480,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bReshowCurrentObjectiveOnLoad
+    /// BoolProperty: bReshowCurrentObjectiveOnLoad<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bReshowCurrentObjectiveOnLoad
     {
@@ -551,7 +553,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
     }
 
     /// <summary>
-    /// BoolProperty: bAllowTickIsDisabled
+    /// BoolProperty: bAllowTickIsDisabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowTickIsDisabled
     {

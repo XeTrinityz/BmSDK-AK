@@ -88,7 +88,8 @@ public partial class InterpTrackSkelControlStrength : BmSDK.Engine.InterpTrackFl
     }
 
     /// <summary>
-    /// FloatProperty: ValueToSetWhenMatineeExits
+    /// FloatProperty: ValueToSetWhenMatineeExits<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ValueToSetWhenMatineeExits
     {

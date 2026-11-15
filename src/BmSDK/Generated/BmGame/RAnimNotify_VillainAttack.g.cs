@@ -79,13 +79,15 @@ public partial class RAnimNotify_VillainAttack : BmSDK.Engine.AnimNotify, BmSDK.
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: AttackInfo
+    /// StructProperty: AttackInfo<br/>
+    /// Default: (bCanBeMirrored=true,AttackRange=200,ForceHitDistance=150)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RGameInfo.FVillainAttackInfo AttackInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RGameInfo.FVillainAttackInfo>(Ptr + 84);
 
     /// <summary>
-    /// FloatProperty: PreNotifyTime
+    /// FloatProperty: PreNotifyTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float PreNotifyTime
     {

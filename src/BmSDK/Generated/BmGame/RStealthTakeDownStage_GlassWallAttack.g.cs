@@ -396,7 +396,8 @@ public partial class RStealthTakeDownStage_GlassWallAttack : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// ObjectProperty: WindowSmashSound
+    /// ObjectProperty: WindowSmashSound<br/>
+    /// Default: Ww_OBJ_Dest_GlassCeramic.Play_Glass_Break_BM_TDThroughWindow
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WindowSmashSound
     {
@@ -468,7 +469,8 @@ public partial class RStealthTakeDownStage_GlassWallAttack : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// ArrayProperty: WallAttackStageInfos
+    /// ArrayProperty: WallAttackStageInfos<br/>
+    /// Default: ((AnimInfos=((CameraCollisionOptions=(CCO_Victim,CCO_Player),CameraAnims=(Through_Wall_128_Back_A,Through_Wall_128_Back_B)),(CameraCollisionOptions=(CCO_Victim,CCO_Player),CameraAnims=(Through_Wall_Ba...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RStealthTakeDownStage_GlassWallAttack.FWallAttackStageInfo> WallAttackStageInfos
     {

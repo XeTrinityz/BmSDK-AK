@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_TakedownSentryGun : BmSDK.BmGame.RSpecia
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: BMAnimSet
+    /// ObjectProperty: BMAnimSet<br/>
+    /// Default: Anim_Batman_Thug_Pred.Code.BM_SentryGun_PredAttack
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet BMAnimSet
     {

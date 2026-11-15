@@ -79,61 +79,71 @@ public partial class RAimingBoneConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Spine
+    /// StructProperty: Spine<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Spine
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 84);
 
     /// <summary>
-    /// StructProperty: Spine1
+    /// StructProperty: Spine1<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Spine1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 124);
 
     /// <summary>
-    /// StructProperty: Spine2
+    /// StructProperty: Spine2<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Spine2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 164);
 
     /// <summary>
-    /// StructProperty: Spine3
+    /// StructProperty: Spine3<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Spine3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 204);
 
     /// <summary>
-    /// StructProperty: Neck
+    /// StructProperty: Neck<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Neck
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 244);
 
     /// <summary>
-    /// StructProperty: Head
+    /// StructProperty: Head<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues Head
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 284);
 
     /// <summary>
-    /// StructProperty: LeftClavicle
+    /// StructProperty: LeftClavicle<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues LeftClavicle
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 324);
 
     /// <summary>
-    /// StructProperty: LeftUpperArm
+    /// StructProperty: LeftUpperArm<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues LeftUpperArm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 364);
 
     /// <summary>
-    /// StructProperty: RightClavicle
+    /// StructProperty: RightClavicle<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues RightClavicle
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 404);
 
     /// <summary>
-    /// StructProperty: RightUpperArm
+    /// StructProperty: RightUpperArm<br/>
+    /// Default: (EnableLimit=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues RightUpperArm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAimingBoneConfig.FAimingBoneValues>(Ptr + 444);
@@ -154,7 +164,8 @@ public partial class RAimingBoneConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: EnableLimit
+        /// BoolProperty: EnableLimit<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool EnableLimit
         {

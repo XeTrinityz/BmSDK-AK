@@ -79,7 +79,8 @@ public partial class ActorFactoryApexTurbulenceHeatSource : BmSDK.Engine.ActorFa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: TemperatureAverage
+    /// FloatProperty: TemperatureAverage<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TemperatureAverage
     {
@@ -88,7 +89,8 @@ public partial class ActorFactoryApexTurbulenceHeatSource : BmSDK.Engine.ActorFa
     }
 
     /// <summary>
-    /// FloatProperty: TemperatureDeviation
+    /// FloatProperty: TemperatureDeviation<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float TemperatureDeviation
     {
@@ -97,7 +99,8 @@ public partial class ActorFactoryApexTurbulenceHeatSource : BmSDK.Engine.ActorFa
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Radius
     {
@@ -115,7 +118,8 @@ public partial class ActorFactoryApexTurbulenceHeatSource : BmSDK.Engine.ActorFa
     }
 
     /// <summary>
-    /// StructProperty: Extents
+    /// StructProperty: Extents<br/>
+    /// Default: (X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Extents
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 160);

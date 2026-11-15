@@ -139,7 +139,8 @@ public partial class RSeqAct_HatterCopTaunt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: HatterCombatTauntTime
+    /// FloatProperty: HatterCombatTauntTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float HatterCombatTauntTime
     {
@@ -148,7 +149,8 @@ public partial class RSeqAct_HatterCopTaunt : BmSDK.Engine.SeqAct_Latent, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: HatterCombatTauntRetryTime
+    /// FloatProperty: HatterCombatTauntRetryTime<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float HatterCombatTauntRetryTime
     {

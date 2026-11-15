@@ -574,7 +574,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: Acceleration
+    /// FloatProperty: Acceleration<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float Acceleration
     {
@@ -583,7 +584,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float MaxSpeed
     {
@@ -592,7 +594,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: HorizontalSpeed
+    /// FloatProperty: HorizontalSpeed<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float HorizontalSpeed
     {
@@ -601,7 +604,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MinLandAnimHeight
+    /// FloatProperty: MinLandAnimHeight<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float MinLandAnimHeight
     {
@@ -610,7 +614,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: MaxLandAnimHeight
+    /// FloatProperty: MaxLandAnimHeight<br/>
+    /// Default: 385
     /// </summary>
     public unsafe float MaxLandAnimHeight
     {
@@ -619,7 +624,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: KickTime
+    /// FloatProperty: KickTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float KickTime
     {
@@ -628,7 +634,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: LeftKickTime
+    /// FloatProperty: LeftKickTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LeftKickTime
     {
@@ -637,7 +644,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: RightKickTime
+    /// FloatProperty: RightKickTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RightKickTime
     {
@@ -646,7 +654,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: FwdKickRange
+    /// FloatProperty: FwdKickRange<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float FwdKickRange
     {
@@ -655,7 +664,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: KickForce
+    /// FloatProperty: KickForce<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float KickForce
     {
@@ -664,7 +674,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: KickRange
+    /// FloatProperty: KickRange<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float KickRange
     {
@@ -673,7 +684,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: KickPitch
+    /// FloatProperty: KickPitch<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float KickPitch
     {
@@ -682,7 +694,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: ImpactSpeedMod
+    /// FloatProperty: ImpactSpeedMod<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float ImpactSpeedMod
     {
@@ -745,7 +758,8 @@ public partial class RSpecialMoveConfig_LineLauncher : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// FloatProperty: TakedownStartTime
+    /// FloatProperty: TakedownStartTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TakedownStartTime
     {

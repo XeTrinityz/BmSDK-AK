@@ -113,7 +113,8 @@ public partial class RSeqAct_SwitchFlags : BmSDK.Engine.SequenceAction, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: Mode
+    /// ByteProperty: Mode<br/>
+    /// Default: SFMode_Last_True
     /// </summary>
     public unsafe BmSDK.BmGame.RSeqAct_SwitchFlags.SFModeType Mode
     {

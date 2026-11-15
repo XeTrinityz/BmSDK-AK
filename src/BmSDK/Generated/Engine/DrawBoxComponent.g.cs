@@ -79,7 +79,8 @@ public partial class DrawBoxComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: BoxColor
+    /// StructProperty: BoxColor<br/>
+    /// Default: (R=255,A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BoxColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
@@ -94,13 +95,15 @@ public partial class DrawBoxComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.I
     }
 
     /// <summary>
-    /// StructProperty: BoxExtent
+    /// StructProperty: BoxExtent<br/>
+    /// Default: (X=200,Y=200,Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BoxExtent
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 552);
 
     /// <summary>
-    /// BoolProperty: bDrawWireBox
+    /// BoolProperty: bDrawWireBox<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawWireBox
     {

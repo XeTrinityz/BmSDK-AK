@@ -79,7 +79,8 @@ public partial class RCityBlockThreatAsset : BmSDK.BmGame.RConfig, BmSDK.IGameOb
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: CityBlock
+    /// ByteProperty: CityBlock<br/>
+    /// Default: EDISTRICT_CityX
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.EDistrict CityBlock
     {

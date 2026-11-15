@@ -278,7 +278,8 @@ public partial class RBMBehaviour_WalkTowardsBatsAndBecomeJoker : BmSDK.BmGame.R
     }
 
     /// <summary>
-    /// ArrayProperty: JokerOverlays
+    /// ArrayProperty: JokerOverlays<br/>
+    /// Default: (JK_Crowd_Overlay_01,JK_Crowd_Overlay_02,JK_Crowd_Overlay_03,JK_Crowd_Overlay_04,JK_Crowd_Overlay_05,JK_Crowd_Overlay_06)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> JokerOverlays
     {

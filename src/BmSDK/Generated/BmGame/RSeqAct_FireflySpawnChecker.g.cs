@@ -219,7 +219,8 @@ public partial class RSeqAct_FireflySpawnChecker : BmSDK.Engine.SequenceAction, 
     public InlineArray<BmSDK.FString> flagSuffixes => new(3, Ptr + 352, 16, this);
 
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_locked"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_0
     {
@@ -227,7 +228,8 @@ public partial class RSeqAct_FireflySpawnChecker : BmSDK.Engine.SequenceAction, 
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 352); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_available"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_1
     {
@@ -235,7 +237,8 @@ public partial class RSeqAct_FireflySpawnChecker : BmSDK.Engine.SequenceAction, 
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 368); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_completed"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_2
     {
@@ -244,7 +247,8 @@ public partial class RSeqAct_FireflySpawnChecker : BmSDK.Engine.SequenceAction, 
     }
 
     /// <summary>
-    /// IntProperty: encounterIndex
+    /// IntProperty: encounterIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int encounterIndex
     {

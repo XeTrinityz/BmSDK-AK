@@ -137,7 +137,8 @@ public partial class RSeqAct_FadeScreen : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FadeInTime
+    /// FloatProperty: FadeInTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeInTime
     {
@@ -146,7 +147,8 @@ public partial class RSeqAct_FadeScreen : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutTime
+    /// FloatProperty: FadeOutTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FadeOutTime
     {
@@ -164,7 +166,8 @@ public partial class RSeqAct_FadeScreen : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bFadesAudio
+    /// BoolProperty: bFadesAudio<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFadesAudio
     {
@@ -182,7 +185,8 @@ public partial class RSeqAct_FadeScreen : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: IncludeInMovieCaptures
+    /// BoolProperty: IncludeInMovieCaptures<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IncludeInMovieCaptures
     {

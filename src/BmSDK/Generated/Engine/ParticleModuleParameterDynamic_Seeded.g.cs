@@ -79,7 +79,8 @@ public partial class ParticleModuleParameterDynamic_Seeded : BmSDK.Engine.Partic
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: RandomSeedInfo
+    /// StructProperty: RandomSeedInfo<br/>
+    /// Default: (bResetSeedOnEmitterLooping=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.ParticleModule.FParticleRandomSeedInfo RandomSeedInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ParticleModule.FParticleRandomSeedInfo>(Ptr + 120);

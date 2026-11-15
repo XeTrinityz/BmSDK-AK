@@ -108,7 +108,8 @@ public partial class MBMCombatPoint_LoSpotLight : BmSDK.BmScript.RBMCombatPoint_
     }
 
     /// <summary>
-    /// ComponentProperty: LightBeamVFX
+    /// ComponentProperty: LightBeamVFX<br/>
+    /// Default: BmScript.Default__MBMCombatPoint_LoSpotLight.LightBeamVFX0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LightBeamVFX
     {

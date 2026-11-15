@@ -96,7 +96,8 @@ public partial class RSpecialMoveConfig_SlideToCover : BmSDK.BmGame.RSpecialMove
     }
 
     /// <summary>
-    /// BoolProperty: AlignCamera
+    /// BoolProperty: AlignCamera<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AlignCamera
     {

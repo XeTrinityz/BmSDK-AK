@@ -235,7 +235,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: CamDistFromCentre
+    /// FloatProperty: CamDistFromCentre<br/>
+    /// Default: 600
     /// </summary>
     public unsafe float CamDistFromCentre
     {
@@ -271,7 +272,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: RobinFovCheck
+    /// FloatProperty: RobinFovCheck<br/>
+    /// Default: 0.8
     /// </summary>
     public unsafe float RobinFovCheck
     {
@@ -289,7 +291,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: DistForCloseCheck
+    /// FloatProperty: DistForCloseCheck<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float DistForCloseCheck
     {
@@ -298,7 +301,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: DistForPissingAboutCheck
+    /// FloatProperty: DistForPissingAboutCheck<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float DistForPissingAboutCheck
     {
@@ -325,7 +329,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// BoolProperty: bDrawDebug
+    /// BoolProperty: bDrawDebug<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawDebug
     {
@@ -343,7 +348,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: CameraFovNear
+    /// FloatProperty: CameraFovNear<br/>
+    /// Default: 40
     /// </summary>
     public unsafe float CameraFovNear
     {
@@ -352,7 +358,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: CameraFovFar
+    /// FloatProperty: CameraFovFar<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float CameraFovFar
     {
@@ -361,7 +368,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForNearFov
+    /// FloatProperty: CameraDistForNearFov<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float CameraDistForNearFov
     {
@@ -370,7 +378,8 @@ public partial class RSeqAct_JohnnyCharismaController : BmSDK.Engine.SeqAct_Late
     }
 
     /// <summary>
-    /// FloatProperty: CameraDistForFarFov
+    /// FloatProperty: CameraDistForFarFov<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float CameraDistForFarFov
     {

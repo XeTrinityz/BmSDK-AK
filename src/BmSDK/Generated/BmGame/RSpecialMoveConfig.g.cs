@@ -205,7 +205,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// NameProperty: EndControllerState
+    /// NameProperty: EndControllerState<br/>
+    /// Default: WalkingMode
     /// </summary>
     public unsafe BmSDK.FName EndControllerState
     {
@@ -214,7 +215,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// NameProperty: MoveControllerState
+    /// NameProperty: MoveControllerState<br/>
+    /// Default: SpecialMove
     /// </summary>
     public unsafe BmSDK.FName MoveControllerState
     {
@@ -286,7 +288,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: AnimatedCameraBlendInTime
+    /// FloatProperty: AnimatedCameraBlendInTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float AnimatedCameraBlendInTime
     {
@@ -295,7 +298,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: AnimatedCameraBlendOutTime
+    /// FloatProperty: AnimatedCameraBlendOutTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float AnimatedCameraBlendOutTime
     {
@@ -322,7 +326,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowCameraToOverrideExternalCams
+    /// BoolProperty: bAllowCameraToOverrideExternalCams<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowCameraToOverrideExternalCams
     {
@@ -439,7 +444,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAutoTriggerFromRun
+    /// BoolProperty: bAutoTriggerFromRun<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoTriggerFromRun
     {
@@ -484,7 +490,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowCameraControl
+    /// BoolProperty: bAllowCameraControl<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowCameraControl
     {
@@ -511,7 +518,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAlignCameraYaw
+    /// BoolProperty: bAlignCameraYaw<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignCameraYaw
     {
@@ -520,7 +528,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAlignCameraPitch
+    /// BoolProperty: bAlignCameraPitch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAlignCameraPitch
     {
@@ -529,7 +538,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bAllowInvestigationMode
+    /// BoolProperty: bAllowInvestigationMode<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowInvestigationMode
     {
@@ -565,7 +575,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bInteruptable
+    /// BoolProperty: bInteruptable<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bInteruptable
     {
@@ -709,7 +720,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bOverrideMoveMatches
+    /// BoolProperty: bOverrideMoveMatches<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOverrideMoveMatches
     {
@@ -736,7 +748,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTracked
+    /// BoolProperty: bCanBeTracked<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTracked
     {
@@ -790,7 +803,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// NameProperty: MoveCameraState
+    /// NameProperty: MoveCameraState<br/>
+    /// Default: Walk
     /// </summary>
     public unsafe BmSDK.FName MoveCameraState
     {
@@ -823,7 +837,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: CameraAlignStrength
+    /// ByteProperty: CameraAlignStrength<br/>
+    /// Default: CLAS_LookAtWeak
     /// </summary>
     public unsafe BmSDK.BmGame.RGameInfo.CameraLookAtStrength CameraAlignStrength
     {
@@ -850,7 +865,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// ByteProperty: SpecialMoveAnimSetType
+    /// ByteProperty: SpecialMoveAnimSetType<br/>
+    /// Default: SMAT_None
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig.ESpecialMoveAnimSetType SpecialMoveAnimSetType
     {
@@ -868,7 +884,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: CameraAlignDuration
+    /// FloatProperty: CameraAlignDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CameraAlignDuration
     {
@@ -877,13 +894,15 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: CapeStateChangeData
+    /// StructProperty: CapeStateChangeData<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData CapeStateChangeData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 224);
 
     /// <summary>
-    /// StructProperty: CapeFinishStateChangeData
+    /// StructProperty: CapeFinishStateChangeData<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData CapeFinishStateChangeData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 300);
@@ -913,7 +932,8 @@ public partial class RSpecialMoveConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObjec
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 384);
 
     /// <summary>
-    /// FloatProperty: OverrideTime
+    /// FloatProperty: OverrideTime<br/>
+    /// Default: 0.1666666
     /// </summary>
     public unsafe float OverrideTime
     {

@@ -102,7 +102,8 @@ public partial class RSeqAct_PlayVehicleBark : BmSDK.Engine.SequenceAction, BmSD
     }
 
     /// <summary>
-    /// NameProperty: BarkId
+    /// NameProperty: BarkId<br/>
+    /// Default: FV_EVENT_VEH_CALL_FOR_REINFORCEMENTS
     /// </summary>
     public unsafe BmSDK.FName BarkId
     {

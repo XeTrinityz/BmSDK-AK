@@ -124,7 +124,8 @@ public partial class RAnimNotify_BeginRagdoll : BmSDK.Engine.AnimNotify, BmSDK.I
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil.FRagdollParts>(Ptr + 104);
 
     /// <summary>
-    /// FloatProperty: MotorSpringScale
+    /// FloatProperty: MotorSpringScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MotorSpringScale
     {

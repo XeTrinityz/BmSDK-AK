@@ -477,7 +477,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: BatsShockedEffect
+    /// ComponentProperty: BatsShockedEffect<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.BatsShockedEffectvfx
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent BatsShockedEffect
     {
@@ -486,7 +487,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh2
+    /// ComponentProperty: InvestigationMesh2<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.StaticMeshComponentII2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh2
     {
@@ -495,7 +497,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh1
+    /// ComponentProperty: InvestigationMesh1<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.StaticMeshComponentII1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh1
     {
@@ -504,7 +507,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: InvisibleCollision
+    /// ComponentProperty: InvisibleCollision<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.CollisionBox
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvisibleCollision
     {
@@ -513,7 +517,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: ExtraEffect1
+    /// ComponentProperty: ExtraEffect1<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.LaserGrid2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ExtraEffect1
     {
@@ -522,7 +527,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// ComponentProperty: Effect
+    /// ComponentProperty: Effect<br/>
+    /// Default: BmGame.Default__RDisruptableLaserGridBase.LaserGrid
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Effect
     {
@@ -573,7 +579,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// FloatProperty: TimeSinceHitBM
+    /// FloatProperty: TimeSinceHitBM<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float TimeSinceHitBM
     {
@@ -582,7 +589,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// FloatProperty: FlickeringBrightness
+    /// FloatProperty: FlickeringBrightness<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FlickeringBrightness
     {
@@ -591,7 +599,8 @@ public partial class RDisruptableLaserGridBase : BmSDK.BmGame.RDisruptableObject
     }
 
     /// <summary>
-    /// FloatProperty: FlickeringBrightnessOnCharacters
+    /// FloatProperty: FlickeringBrightnessOnCharacters<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float FlickeringBrightnessOnCharacters
     {

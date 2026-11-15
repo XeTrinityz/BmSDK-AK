@@ -97,7 +97,8 @@ public partial class SeqAct_Possess : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bTryToLeaveVehicle
+    /// BoolProperty: bTryToLeaveVehicle<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTryToLeaveVehicle
     {

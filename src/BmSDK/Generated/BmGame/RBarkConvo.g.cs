@@ -697,7 +697,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: Root
+    /// ObjectProperty: Root<br/>
+    /// Default: BmGame.Default__RBarkConvo.Root0
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkConvoAction Root
     {
@@ -778,7 +779,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {
@@ -814,7 +816,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: SearchID
+    /// IntProperty: SearchID<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int SearchID
     {

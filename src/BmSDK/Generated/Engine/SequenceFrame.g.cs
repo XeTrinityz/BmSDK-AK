@@ -79,7 +79,8 @@ public partial class SequenceFrame : BmSDK.Engine.SequenceObject, BmSDK.IGameObj
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: SizeX
+    /// IntProperty: SizeX<br/>
+    /// Default: 128
     /// </summary>
     public unsafe int SizeX
     {
@@ -88,7 +89,8 @@ public partial class SequenceFrame : BmSDK.Engine.SequenceObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: SizeY
+    /// IntProperty: SizeY<br/>
+    /// Default: 64
     /// </summary>
     public unsafe int SizeY
     {
@@ -97,7 +99,8 @@ public partial class SequenceFrame : BmSDK.Engine.SequenceObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: BorderWidth
+    /// IntProperty: BorderWidth<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int BorderWidth
     {
@@ -115,7 +118,8 @@ public partial class SequenceFrame : BmSDK.Engine.SequenceObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// BoolProperty: bFilled
+    /// BoolProperty: bFilled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFilled
     {
@@ -133,13 +137,15 @@ public partial class SequenceFrame : BmSDK.Engine.SequenceObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// StructProperty: BorderColor
+    /// StructProperty: BorderColor<br/>
+    /// Default: (A=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BorderColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 240);
 
     /// <summary>
-    /// StructProperty: FillColor
+    /// StructProperty: FillColor<br/>
+    /// Default: (B=255,G=255,R=255,A=16)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor FillColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 244);

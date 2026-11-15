@@ -280,7 +280,8 @@ public partial class RSentryGun : BmSDK.BmGame.RSentryGunBase, BmSDK.BmGame.RInt
     }
 
     /// <summary>
-    /// ObjectProperty: lightsArchetype
+    /// ObjectProperty: lightsArchetype<br/>
+    /// Default: Pred_Archetypes.SentryGunLights
     /// </summary>
     public unsafe BmSDK.BmScript.RSentryGunLights lightsArchetype
     {
@@ -307,7 +308,8 @@ public partial class RSentryGun : BmSDK.BmGame.RSentryGunBase, BmSDK.BmGame.RInt
     }
 
     /// <summary>
-    /// BoolProperty: bValidVoiceSynthesiserTarget
+    /// BoolProperty: bValidVoiceSynthesiserTarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bValidVoiceSynthesiserTarget
     {

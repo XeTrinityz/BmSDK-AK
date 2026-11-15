@@ -79,7 +79,8 @@ public partial class RAnimNotify_SwitchWeaponBone : BmSDK.Engine.AnimNotify, BmS
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ByteProperty: TypeOfSwitch
+    /// ByteProperty: TypeOfSwitch<br/>
+    /// Default: ESWITCH_SwitchToHolster
     /// </summary>
     public unsafe BmSDK.BmGame.RAnimNotify_SwitchWeaponBone.ESwitchType TypeOfSwitch
     {

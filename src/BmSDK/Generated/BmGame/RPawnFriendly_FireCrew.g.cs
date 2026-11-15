@@ -107,7 +107,8 @@ public partial class RPawnFriendly_FireCrew : BmSDK.BmGame.RPawnFriendly, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: fireCrewIndex
+    /// IntProperty: fireCrewIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int fireCrewIndex
     {

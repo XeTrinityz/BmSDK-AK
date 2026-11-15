@@ -416,17 +416,20 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames> InNamesSideOn => new(3, Ptr + 940, 32, this);
 
     /// <summary>
-    /// StructProperty: InNamesSideOn
+    /// StructProperty: InNamesSideOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_01_In_Leader,Nervous_Paired_Corner_Right_01_In_Leader),follower=(Nervous_Paired_Corner_Left_01_In_Follower,Nervous_Paired_Corner_Right_01_In_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesSideOn_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 940);
     /// <summary>
-    /// StructProperty: InNamesSideOn
+    /// StructProperty: InNamesSideOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_02_In_Leader,Nervous_Paired_Corner_Right_02_In_Leader),follower=(Nervous_Paired_Corner_Left_02_In_Follower,Nervous_Paired_Corner_Right_02_In_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesSideOn_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 972);
     /// <summary>
-    /// StructProperty: InNamesSideOn
+    /// StructProperty: InNamesSideOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_03_In_Leader,Nervous_Paired_Corner_Right_03_In_Leader),follower=(Nervous_Paired_Corner_Left_03_In_Follower,Nervous_Paired_Corner_Right_03_In_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesSideOn_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1004);
@@ -437,17 +440,20 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames> InNamesHeadOn => new(3, Ptr + 1036, 32, this);
 
     /// <summary>
-    /// StructProperty: InNamesHeadOn
+    /// StructProperty: InNamesHeadOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_01_In_Front_Leader,Nervous_Paired_Corner_Right_01_In_Front_Leader),follower=(Nervous_Paired_Corner_Left_01_In_Front_Follower,Nervous_Paired_Corner_Right_01_In_Front...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesHeadOn_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1036);
     /// <summary>
-    /// StructProperty: InNamesHeadOn
+    /// StructProperty: InNamesHeadOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_02_In_Front_Leader,Nervous_Paired_Corner_Right_02_In_Front_Leader),follower=(Nervous_Paired_Corner_Left_02_In_Front_Follower,Nervous_Paired_Corner_Right_02_In_Front...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesHeadOn_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1068);
     /// <summary>
-    /// StructProperty: InNamesHeadOn
+    /// StructProperty: InNamesHeadOn<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_03_In_Front_Leader,Nervous_Paired_Corner_Right_03_In_Front_Leader),follower=(Nervous_Paired_Corner_Left_03_In_Front_Follower,Nervous_Paired_Corner_Right_03_In_Front...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames InNamesHeadOn_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1100);
@@ -458,17 +464,20 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames> IdleNames => new(3, Ptr + 1132, 32, this);
 
     /// <summary>
-    /// StructProperty: IdleNames
+    /// StructProperty: IdleNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_01_Idle_Leader,Nervous_Paired_Corner_Right_01_Idle_Leader),follower=(Nervous_Paired_Corner_Left_01_Idle_Follower,Nervous_Paired_Corner_Right_01_Idle_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames IdleNames_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1132);
     /// <summary>
-    /// StructProperty: IdleNames
+    /// StructProperty: IdleNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_02_Idle_Leader,Nervous_Paired_Corner_Right_02_Idle_Leader),follower=(Nervous_Paired_Corner_Left_02_Idle_Follower,Nervous_Paired_Corner_Right_02_Idle_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames IdleNames_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1164);
     /// <summary>
-    /// StructProperty: IdleNames
+    /// StructProperty: IdleNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_03_Idle_Leader,Nervous_Paired_Corner_Right_03_Idle_Leader),follower=(Nervous_Paired_Corner_Left_03_Idle_Follower,Nervous_Paired_Corner_Right_03_Idle_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames IdleNames_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1196);
@@ -479,17 +488,20 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames> OutNames => new(3, Ptr + 1228, 32, this);
 
     /// <summary>
-    /// StructProperty: OutNames
+    /// StructProperty: OutNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_01_Out_Leader,Nervous_Paired_Corner_Right_01_Out_Leader),follower=(Nervous_Paired_Corner_Left_01_Out_Follower,Nervous_Paired_Corner_Right_01_Out_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames OutNames_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1228);
     /// <summary>
-    /// StructProperty: OutNames
+    /// StructProperty: OutNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_02_Out_Leader,Nervous_Paired_Corner_Right_02_Out_Leader),follower=(Nervous_Paired_Corner_Left_02_Out_Follower,Nervous_Paired_Corner_Right_02_Out_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames OutNames_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1260);
     /// <summary>
-    /// StructProperty: OutNames
+    /// StructProperty: OutNames<br/>
+    /// Default: (leader=(Nervous_Paired_Corner_Left_03_Out_Leader,Nervous_Paired_Corner_Right_03_Out_Leader),follower=(Nervous_Paired_Corner_Left_03_Out_Follower,Nervous_Paired_Corner_Right_03_Out_Follower))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames OutNames_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMAIAction_PairedCorner.FcornerAnimNames>(Ptr + 1292);
@@ -500,7 +512,8 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
     public InlineArray<int> variantSwapsRoles => new(3, Ptr + 1324, 4, this);
 
     /// <summary>
-    /// IntProperty: variantSwapsRoles
+    /// IntProperty: variantSwapsRoles<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int variantSwapsRoles_0
     {
@@ -508,7 +521,8 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1324); }
     }
     /// <summary>
-    /// IntProperty: variantSwapsRoles
+    /// IntProperty: variantSwapsRoles<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int variantSwapsRoles_1
     {

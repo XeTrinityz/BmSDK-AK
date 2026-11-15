@@ -216,7 +216,8 @@ public partial class RSpecialMoveInstance_CustomDoorMove : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// ComponentProperty: DoorLight
+    /// ComponentProperty: DoorLight<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_CustomDoorMove.PointLightComponentDoorLight
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent DoorLight
     {
@@ -240,19 +241,22 @@ public partial class RSpecialMoveInstance_CustomDoorMove : BmSDK.BmGame.RSpecial
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1008);
 
     /// <summary>
-    /// StructProperty: BlueCol
+    /// StructProperty: BlueCol<br/>
+    /// Default: (B=255,G=150)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BlueCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1020);
 
     /// <summary>
-    /// StructProperty: RedCol
+    /// StructProperty: RedCol<br/>
+    /// Default: (R=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor RedCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1024);
 
     /// <summary>
-    /// StructProperty: GreenCol
+    /// StructProperty: GreenCol<br/>
+    /// Default: (G=255)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor GreenCol
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 1028);

@@ -79,7 +79,8 @@ public partial class ApexShapeCapsule : BmSDK.Engine.ApexShape, BmSDK.IGameObjec
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: Shape
+    /// ComponentProperty: Shape<br/>
+    /// Default: Engine.Default__ApexShapeCapsule.DrawCapsule0
     /// </summary>
     public unsafe BmSDK.Engine.DrawCapsuleComponent Shape
     {

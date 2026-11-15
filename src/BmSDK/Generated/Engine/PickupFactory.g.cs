@@ -389,7 +389,8 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// BoolProperty: bOnlyReplicateHidden
+    /// BoolProperty: bOnlyReplicateHidden<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOnlyReplicateHidden
     {

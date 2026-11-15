@@ -308,7 +308,8 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RTunnelGrateShared.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {

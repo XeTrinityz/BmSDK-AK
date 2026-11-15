@@ -74,7 +74,8 @@ public partial class DOFEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObje
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: FocusDistance
+    /// FloatProperty: FocusDistance<br/>
+    /// Default: 220
     /// </summary>
     public unsafe float FocusDistance
     {
@@ -83,7 +84,8 @@ public partial class DOFEffect : BmSDK.Engine.PostProcessEffect, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: ApertureStop
+    /// FloatProperty: ApertureStop<br/>
+    /// Default: 22
     /// </summary>
     public unsafe float ApertureStop
     {

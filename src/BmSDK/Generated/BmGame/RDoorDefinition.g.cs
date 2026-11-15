@@ -79,7 +79,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: SkeletalMesh
+    /// ObjectProperty: SkeletalMesh<br/>
+    /// Default: Game_Door.Mesh.Door_192x384
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMesh SkeletalMesh
     {
@@ -88,7 +89,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: PhysicsAsset
+    /// ObjectProperty: PhysicsAsset<br/>
+    /// Default: Game_Door.Physics.Door_192x384_Physics
     /// </summary>
     public unsafe BmSDK.Engine.PhysicsAsset PhysicsAsset
     {
@@ -97,7 +99,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: AnimSet
+    /// ObjectProperty: AnimSet<br/>
+    /// Default: Game_Door.Anims.Door_192x384_Anims
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet AnimSet
     {
@@ -106,7 +109,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ConfigOpenDoorFront
+    /// ObjectProperty: ConfigOpenDoorFront<br/>
+    /// Default: Batman_Environment_Moves.Door.Door_Front
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig ConfigOpenDoorFront
     {
@@ -115,7 +119,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ConfigOpenDoorBack
+    /// ObjectProperty: ConfigOpenDoorBack<br/>
+    /// Default: Batman_Environment_Moves.Door.Door_Back
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig ConfigOpenDoorBack
     {
@@ -124,7 +129,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ConfigLockedDoorFront
+    /// ObjectProperty: ConfigLockedDoorFront<br/>
+    /// Default: Batman_Environment_Moves.Door.Door_Front_Blocked
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig ConfigLockedDoorFront
     {
@@ -133,7 +139,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: ConfigLockedDoorBack
+    /// ObjectProperty: ConfigLockedDoorBack<br/>
+    /// Default: Batman_Environment_Moves.Door.Door_Front_Blocked
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig ConfigLockedDoorBack
     {
@@ -196,7 +203,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MatIndexForLockedStatus
+    /// IntProperty: MatIndexForLockedStatus<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int MatIndexForLockedStatus
     {
@@ -205,7 +213,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorUsedFront
+    /// NameProperty: AnimDoorUsedFront<br/>
+    /// Default: Door_Front
     /// </summary>
     public unsafe BmSDK.FName AnimDoorUsedFront
     {
@@ -214,7 +223,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorUsedBack
+    /// NameProperty: AnimDoorUsedBack<br/>
+    /// Default: Door_Back
     /// </summary>
     public unsafe BmSDK.FName AnimDoorUsedBack
     {
@@ -223,7 +233,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorUsedFrontDual
+    /// NameProperty: AnimDoorUsedFrontDual<br/>
+    /// Default: Doors_Double_Kicked_Open_Front
     /// </summary>
     public unsafe BmSDK.FName AnimDoorUsedFrontDual
     {
@@ -232,7 +243,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorUsedBackDual
+    /// NameProperty: AnimDoorUsedBackDual<br/>
+    /// Default: Doors_Double_Kicked_Open_Back
     /// </summary>
     public unsafe BmSDK.FName AnimDoorUsedBackDual
     {
@@ -241,7 +253,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorLockedFront
+    /// NameProperty: AnimDoorLockedFront<br/>
+    /// Default: Door_Locked_BM_Reverse
     /// </summary>
     public unsafe BmSDK.FName AnimDoorLockedFront
     {
@@ -250,7 +263,8 @@ public partial class RDoorDefinition : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// NameProperty: AnimDoorLockedBack
+    /// NameProperty: AnimDoorLockedBack<br/>
+    /// Default: Door_Locked_BM
     /// </summary>
     public unsafe BmSDK.FName AnimDoorLockedBack
     {

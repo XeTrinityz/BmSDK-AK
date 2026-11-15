@@ -420,7 +420,8 @@ public partial class RCombatMove_BatmanWeaponAttack : BmSDK.BmGame.RCombatMove_B
     }
 
     /// <summary>
-    /// BoolProperty: bCanGrabWeapon
+    /// BoolProperty: bCanGrabWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanGrabWeapon
     {
@@ -429,7 +430,8 @@ public partial class RCombatMove_BatmanWeaponAttack : BmSDK.BmGame.RCombatMove_B
     }
 
     /// <summary>
-    /// BoolProperty: bDropWeaponOnExit
+    /// BoolProperty: bDropWeaponOnExit<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDropWeaponOnExit
     {
@@ -465,7 +467,8 @@ public partial class RCombatMove_BatmanWeaponAttack : BmSDK.BmGame.RCombatMove_B
     }
 
     /// <summary>
-    /// FloatProperty: PickupCheckDist
+    /// FloatProperty: PickupCheckDist<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float PickupCheckDist
     {

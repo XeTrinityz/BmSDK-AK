@@ -220,7 +220,8 @@ public partial class RSeqAct_SmilexBombClock : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bUseHudTimer
+    /// BoolProperty: bUseHudTimer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUseHudTimer
     {

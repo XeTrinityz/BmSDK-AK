@@ -222,7 +222,8 @@ public partial class RGangFleePressPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: PressMinWidth
+    /// FloatProperty: PressMinWidth<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float PressMinWidth
     {

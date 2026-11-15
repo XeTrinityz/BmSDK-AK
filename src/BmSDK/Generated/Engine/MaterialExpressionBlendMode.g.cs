@@ -122,7 +122,8 @@ public partial class MaterialExpressionBlendMode : BmSDK.Engine.MaterialExpressi
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 276);
 
     /// <summary>
-    /// FloatProperty: DefaultPercent
+    /// FloatProperty: DefaultPercent<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DefaultPercent
     {

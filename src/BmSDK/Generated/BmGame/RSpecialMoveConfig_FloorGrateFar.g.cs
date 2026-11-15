@@ -115,7 +115,8 @@ public partial class RSpecialMoveConfig_FloorGrateFar : BmSDK.BmGame.RSpecialMov
     }
 
     /// <summary>
-    /// FloatProperty: JumpDistanceToGrate
+    /// FloatProperty: JumpDistanceToGrate<br/>
+    /// Default: 120
     /// </summary>
     public unsafe float JumpDistanceToGrate
     {

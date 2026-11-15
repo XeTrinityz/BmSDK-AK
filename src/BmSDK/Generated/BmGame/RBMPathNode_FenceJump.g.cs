@@ -190,7 +190,8 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
     }
 
     /// <summary>
-    /// BoolProperty: bAutoAdjustEndPoints
+    /// BoolProperty: bAutoAdjustEndPoints<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutoAdjustEndPoints
     {

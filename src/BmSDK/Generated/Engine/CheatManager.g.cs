@@ -1377,7 +1377,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ClassProperty: DebugCameraControllerClass
+    /// ClassProperty: DebugCameraControllerClass<br/>
+    /// Default: Engine.DebugCameraController
     /// </summary>
     public unsafe BmSDK.Class DebugCameraControllerClass
     {
@@ -1386,7 +1387,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ViewingFrom
+    /// StrProperty: ViewingFrom<br/>
+    /// Default: "Now viewing from"
     /// </summary>
     public unsafe BmSDK.FString ViewingFrom
     {
@@ -1395,7 +1397,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: OwnCamera
+    /// StrProperty: OwnCamera<br/>
+    /// Default: "Now viewing from own camera"
     /// </summary>
     public unsafe BmSDK.FString OwnCamera
     {

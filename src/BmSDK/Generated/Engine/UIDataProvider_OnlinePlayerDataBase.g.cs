@@ -103,7 +103,8 @@ public partial class UIDataProvider_OnlinePlayerDataBase : BmSDK.Engine.UIDataPr
     }
 
     /// <summary>
-    /// IntProperty: PlayerControllerId
+    /// IntProperty: PlayerControllerId<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PlayerControllerId
     {

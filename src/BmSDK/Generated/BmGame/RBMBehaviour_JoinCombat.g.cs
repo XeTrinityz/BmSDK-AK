@@ -253,7 +253,8 @@ public partial class RBMBehaviour_JoinCombat : BmSDK.BmGame.RBMBehaviour_Control
     }
 
     /// <summary>
-    /// ObjectProperty: FearTakedownReactionAnimset
+    /// ObjectProperty: FearTakedownReactionAnimset<br/>
+    /// Default: Anim_IC_Streets.Thug.TG_See_BM
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet FearTakedownReactionAnimset
     {
@@ -283,7 +284,8 @@ public partial class RBMBehaviour_JoinCombat : BmSDK.BmGame.RBMBehaviour_Control
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 628);
 
     /// <summary>
-    /// ArrayProperty: FearReactionsFront
+    /// ArrayProperty: FearReactionsFront<br/>
+    /// Default: (Reaction_to_BM_Front_01,Reaction_to_BM_Front_02,Reaction_to_BM_Front_03,Reaction_to_BM_Front_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FearReactionsFront
     {
@@ -292,7 +294,8 @@ public partial class RBMBehaviour_JoinCombat : BmSDK.BmGame.RBMBehaviour_Control
     }
 
     /// <summary>
-    /// ArrayProperty: FearReactionsBack
+    /// ArrayProperty: FearReactionsBack<br/>
+    /// Default: (Reaction_to_BM_Back_01,Reaction_to_BM_Back_02,Reaction_to_BM_Back_03,Reaction_to_BM_Back_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FearReactionsBack
     {

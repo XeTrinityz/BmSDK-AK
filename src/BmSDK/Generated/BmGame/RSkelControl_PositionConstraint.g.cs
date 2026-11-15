@@ -122,7 +122,8 @@ public partial class RSkelControl_PositionConstraint : BmSDK.Engine.SkelControlB
     }
 
     /// <summary>
-    /// BoolProperty: ApplyPosition
+    /// BoolProperty: ApplyPosition<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ApplyPosition
     {

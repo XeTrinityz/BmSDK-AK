@@ -240,7 +240,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: DepthPriorityGroup
+    /// ByteProperty: DepthPriorityGroup<br/>
+    /// Default: SDPG_Foreground
     /// </summary>
     public unsafe BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthPriorityGroup
     {
@@ -249,7 +250,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: BlurScale
+    /// FloatProperty: BlurScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BlurScale
     {
@@ -258,7 +260,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: BlurFalloffExponent
+    /// FloatProperty: BlurFalloffExponent<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float BlurFalloffExponent
     {
@@ -267,7 +270,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: BlurOpacity
+    /// FloatProperty: BlurOpacity<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BlurOpacity
     {
@@ -276,7 +280,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MaxCullDistance
+    /// FloatProperty: MaxCullDistance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float MaxCullDistance
     {
@@ -285,7 +290,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: DistanceFalloffExponent
+    /// FloatProperty: DistanceFalloffExponent<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float DistanceFalloffExponent
     {
@@ -294,7 +300,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bRenderAsVelocity
+    /// BoolProperty: bRenderAsVelocity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRenderAsVelocity
     {
@@ -303,7 +310,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bEnabled
+    /// BoolProperty: bEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnabled
     {

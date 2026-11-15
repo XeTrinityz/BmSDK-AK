@@ -97,7 +97,8 @@ public partial class RSpecialMoveConfig_PullDriverFromCar : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// BoolProperty: bPlayDriverAnim
+    /// BoolProperty: bPlayDriverAnim<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bPlayDriverAnim
     {
@@ -106,13 +107,15 @@ public partial class RSpecialMoveConfig_PullDriverFromCar : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// StructProperty: FlipRotationOffet
+    /// StructProperty: FlipRotationOffet<br/>
+    /// Default: (Pitch=-4000,Yaw=10000)
     /// </summary>
     public unsafe ref BmSDK.Rotator FlipRotationOffet
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 476);
 
     /// <summary>
-    /// FloatProperty: FlipRotationTorqueFactor
+    /// FloatProperty: FlipRotationTorqueFactor<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float FlipRotationTorqueFactor
     {
@@ -121,7 +124,8 @@ public partial class RSpecialMoveConfig_PullDriverFromCar : BmSDK.BmGame.RSpecia
     }
 
     /// <summary>
-    /// FloatProperty: FlipRotationTorqueDuration
+    /// FloatProperty: FlipRotationTorqueDuration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FlipRotationTorqueDuration
     {

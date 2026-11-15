@@ -198,7 +198,8 @@ public partial class RHudModuleDetectiveModeJamming : BmSDK.BmGame.RHudModule, B
     }
 
     /// <summary>
-    /// FloatProperty: CurrentDisplayValue
+    /// FloatProperty: CurrentDisplayValue<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CurrentDisplayValue
     {

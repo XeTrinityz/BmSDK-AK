@@ -115,7 +115,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentRolloffSendPlayer
+    /// FloatProperty: EnvironmentRolloffSendPlayer<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float EnvironmentRolloffSendPlayer
     {
@@ -124,7 +125,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentRolloffSendNoListener
+    /// FloatProperty: EnvironmentRolloffSendNoListener<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float EnvironmentRolloffSendNoListener
     {
@@ -133,7 +135,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentRolloffSendOnlyListener
+    /// FloatProperty: EnvironmentRolloffSendOnlyListener<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float EnvironmentRolloffSendOnlyListener
     {
@@ -142,7 +145,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentRolloffSend2DMode
+    /// FloatProperty: EnvironmentRolloffSend2DMode<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float EnvironmentRolloffSend2DMode
     {
@@ -151,7 +155,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentWetSendOccludedMultiplier
+    /// FloatProperty: EnvironmentWetSendOccludedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EnvironmentWetSendOccludedMultiplier
     {
@@ -160,7 +165,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentWetSendNotOccludedMultiplier
+    /// FloatProperty: EnvironmentWetSendNotOccludedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EnvironmentWetSendNotOccludedMultiplier
     {
@@ -169,7 +175,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentDrySendOccludedMultiplier
+    /// FloatProperty: EnvironmentDrySendOccludedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EnvironmentDrySendOccludedMultiplier
     {
@@ -178,7 +185,8 @@ public partial class AkEnvironmentName : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: EnvironmentDrySendNotOccludedMultiplier
+    /// FloatProperty: EnvironmentDrySendNotOccludedMultiplier<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EnvironmentDrySendNotOccludedMultiplier
     {

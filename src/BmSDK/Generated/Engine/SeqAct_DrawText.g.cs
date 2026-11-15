@@ -92,7 +92,8 @@ public partial class SeqAct_DrawText : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: DisplayTimeSeconds
+    /// FloatProperty: DisplayTimeSeconds<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float DisplayTimeSeconds
     {
@@ -110,7 +111,8 @@ public partial class SeqAct_DrawText : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: DrawTextInfo
+    /// StructProperty: DrawTextInfo<br/>
+    /// Default: (MessageFontScale=(X=1,Y=1),MessageColor=(B=255,G=255,R=255,A=255),MessageEndTime=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.HUD.FKismetDrawTextInfo DrawTextInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.HUD.FKismetDrawTextInfo>(Ptr + 360);

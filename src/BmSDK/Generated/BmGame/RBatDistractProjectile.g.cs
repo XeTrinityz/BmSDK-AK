@@ -335,7 +335,8 @@ public partial class RBatDistractProjectile : BmSDK.BmGame.RBatarangProjectile, 
     }
 
     /// <summary>
-    /// ArrayProperty: DetonateTargetCheckBones
+    /// ArrayProperty: DetonateTargetCheckBones<br/>
+    /// Default: (Bip01_Pelvis,Bip01_Head,Bip01_R_Hand,Bip01_L_Hand,Bip01_R_Calf,Bip01_L_Calf)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> DetonateTargetCheckBones
     {
@@ -380,7 +381,8 @@ public partial class RBatDistractProjectile : BmSDK.BmGame.RBatarangProjectile, 
     }
 
     /// <summary>
-    /// ComponentProperty: GasAttack
+    /// ComponentProperty: GasAttack<br/>
+    /// Default: BmGame.Default__RBatDistractProjectile.GasAttack
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GasAttack
     {

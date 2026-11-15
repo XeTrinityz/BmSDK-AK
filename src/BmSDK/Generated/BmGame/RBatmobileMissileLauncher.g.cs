@@ -377,7 +377,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: LockOnAngle
+    /// FloatProperty: LockOnAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float LockOnAngle
     {
@@ -386,7 +387,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: LockOnRange
+    /// FloatProperty: LockOnRange<br/>
+    /// Default: 8000
     /// </summary>
     public unsafe float LockOnRange
     {
@@ -395,7 +397,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: InitialFireDelay
+    /// FloatProperty: InitialFireDelay<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float InitialFireDelay
     {
@@ -404,7 +407,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FireInterval
+    /// FloatProperty: FireInterval<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float FireInterval
     {
@@ -413,7 +417,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: CooldownDelay
+    /// FloatProperty: CooldownDelay<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float CooldownDelay
     {
@@ -503,7 +508,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// ObjectProperty: MissileFFWaveForm
+    /// ObjectProperty: MissileFFWaveForm<br/>
+    /// Default: BmGame.Default__RBatmobileMissileLauncher.MissileForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform MissileFFWaveForm
     {
@@ -554,7 +560,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: VolleyDamageMultiplier
+    /// ArrayProperty: VolleyDamageMultiplier<br/>
+    /// Default: (1,1,1,1)
     /// </summary>
     public unsafe BmSDK.TArray<float> VolleyDamageMultiplier
     {
@@ -572,7 +579,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: MaxTargetsPerLevel
+    /// ArrayProperty: MaxTargetsPerLevel<br/>
+    /// Default: (1,4,7,10)
     /// </summary>
     public unsafe BmSDK.TArray<int> MaxTargetsPerLevel
     {
@@ -581,7 +589,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// ArrayProperty: MissileSockets
+    /// ArrayProperty: MissileSockets<br/>
+    /// Default: (MissileL,MissileR)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> MissileSockets
     {
@@ -599,7 +608,8 @@ public partial class RBatmobileMissileLauncher : BmSDK.BmGame.RVehicleWeapon, Bm
     }
 
     /// <summary>
-    /// FloatProperty: InfinitMissilesTime
+    /// FloatProperty: InfinitMissilesTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float InfinitMissilesTime
     {

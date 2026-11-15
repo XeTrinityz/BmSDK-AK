@@ -79,7 +79,8 @@ public partial class RAnimNotify_ChangeCape : BmSDK.Engine.AnimNotify, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StateChangeData
+    /// StructProperty: StateChangeData<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData StateChangeData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 84);

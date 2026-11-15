@@ -226,7 +226,8 @@ public partial class RSeqAct_OracleRoomHidingController : BmSDK.Engine.SeqAct_La
     }
 
     /// <summary>
-    /// FloatProperty: DotThreshold
+    /// FloatProperty: DotThreshold<br/>
+    /// Default: 0.68
     /// </summary>
     public unsafe float DotThreshold
     {
@@ -235,7 +236,8 @@ public partial class RSeqAct_OracleRoomHidingController : BmSDK.Engine.SeqAct_La
     }
 
     /// <summary>
-    /// FloatProperty: ZoomDotThreshold
+    /// FloatProperty: ZoomDotThreshold<br/>
+    /// Default: 0.85
     /// </summary>
     public unsafe float ZoomDotThreshold
     {

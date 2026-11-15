@@ -264,7 +264,8 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: VectorOneVal
+    /// StructProperty: VectorOneVal<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor VectorOneVal
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 144);
@@ -288,7 +289,8 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bFinished
+    /// BoolProperty: bFinished<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFinished
     {

@@ -356,7 +356,8 @@ public partial class RBMCombatPoint_Explosive : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmScript.Default__RBMCombatPoint_Explosive.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -365,7 +366,8 @@ public partial class RBMCombatPoint_Explosive : BmSDK.BmGame.RBMCombatPoint_Envi
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_OBJ_PropaneCylinders.Play_Propane_Cylinder_Explode
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {

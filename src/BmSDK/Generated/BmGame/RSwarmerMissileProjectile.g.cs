@@ -154,7 +154,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
     public InlineArray<BmSDK.Engine.StaticMeshComponent> Mesh => new(8, Ptr + 852, 8, this);
 
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_0
     {
@@ -162,7 +163,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 852); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_1
     {
@@ -170,7 +172,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 860); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_2
     {
@@ -178,7 +181,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 868); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh3
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_3
     {
@@ -186,7 +190,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 876); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh4
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_4
     {
@@ -194,7 +199,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 884); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh5
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_5
     {
@@ -202,7 +208,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 892); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh6
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_6
     {
@@ -210,7 +217,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 900); }
     }
     /// <summary>
-    /// ComponentProperty: Mesh
+    /// ComponentProperty: Mesh<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Mesh7
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent Mesh_7
     {
@@ -224,7 +232,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
     public InlineArray<BmSDK.Engine.ParticleSystemComponent> Trail => new(8, Ptr + 916, 8, this);
 
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_0
     {
@@ -232,7 +241,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 916); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_1
     {
@@ -240,7 +250,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 924); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail2
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_2
     {
@@ -248,7 +259,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 932); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail3
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_3
     {
@@ -256,7 +268,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 940); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail4
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_4
     {
@@ -264,7 +277,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 948); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail5
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_5
     {
@@ -272,7 +286,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 956); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail6
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_6
     {
@@ -280,7 +295,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 964); }
     }
     /// <summary>
-    /// ComponentProperty: Trail
+    /// ComponentProperty: Trail<br/>
+    /// Default: BmGame.Default__RSwarmerMissileProjectile.Trail7
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent Trail_7
     {
@@ -348,7 +364,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1076); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float MissileDelay_1
     {
@@ -356,7 +373,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1080); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float MissileDelay_2
     {
@@ -364,7 +382,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1084); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MissileDelay_3
     {
@@ -372,7 +391,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1088); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float MissileDelay_4
     {
@@ -380,7 +400,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1092); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float MissileDelay_5
     {
@@ -388,7 +409,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1096); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float MissileDelay_6
     {
@@ -396,7 +418,8 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1100); }
     }
     /// <summary>
-    /// FloatProperty: MissileDelay
+    /// FloatProperty: MissileDelay<br/>
+    /// Default: 0.35
     /// </summary>
     public unsafe float MissileDelay_7
     {
@@ -521,25 +544,29 @@ public partial class RSwarmerMissileProjectile : BmSDK.BmGame.RProjectile, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: SpreadHorizontalVsLifespan
+    /// StructProperty: SpreadHorizontalVsLifespan<br/>
+    /// Default: (Points=((OutVal=1,InterpMode=CIM_CurveAuto),(InVal=0.5,OutVal=4,InterpMode=CIM_CurveAuto),(InVal=0.7,OutVal=2,InterpMode=CIM_CurveAuto),(InVal=1,OutVal=1.5,InterpMode=CIM_CurveAuto)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat SpreadHorizontalVsLifespan
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 1212);
 
     /// <summary>
-    /// StructProperty: SpreadVerticalVsLifespan
+    /// StructProperty: SpreadVerticalVsLifespan<br/>
+    /// Default: (Points=((OutVal=1,InterpMode=CIM_CurveAuto),(InVal=0.5,OutVal=8,InterpMode=CIM_CurveAuto),(InVal=0.7,OutVal=4,InterpMode=CIM_CurveAuto),(InVal=1,OutVal=3,InterpMode=CIM_CurveAuto)))
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat SpreadVerticalVsLifespan
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 1232);
 
     /// <summary>
-    /// StructProperty: PositionVerticalVsLifespan
+    /// StructProperty: PositionVerticalVsLifespan<br/>
+    /// Default: (Points=((InterpMode=CIM_CurveAuto),(InVal=0.1,InterpMode=CIM_CurveAuto),(InVal=0.5,OutVal=-0.7,InterpMode=CIM_CurveAuto),(InVal=0.6,OutVal=-0.8,InterpMode=CIM_CurveAuto),(InVal=0.7,OutVal=-0.7,Interp...
     /// </summary>
     public unsafe ref BmSDK.GameObject.FInterpCurveFloat PositionVerticalVsLifespan
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FInterpCurveFloat>(Ptr + 1252);
 
     /// <summary>
-    /// FloatProperty: MissileLifespan
+    /// FloatProperty: MissileLifespan<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MissileLifespan
     {

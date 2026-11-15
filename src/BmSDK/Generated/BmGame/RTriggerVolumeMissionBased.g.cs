@@ -79,7 +79,8 @@ public partial class RTriggerVolumeMissionBased : BmSDK.Engine.TriggerVolume, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StrProperty: AssociatedMission
+    /// StrProperty: AssociatedMission<br/>
+    /// Default: "MostWantedScarecrow"
     /// </summary>
     public unsafe BmSDK.FString AssociatedMission
     {
@@ -97,7 +98,8 @@ public partial class RTriggerVolumeMissionBased : BmSDK.Engine.TriggerVolume, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bShowMostWantedPrompt
+    /// BoolProperty: bShowMostWantedPrompt<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShowMostWantedPrompt
     {
@@ -106,7 +108,8 @@ public partial class RTriggerVolumeMissionBased : BmSDK.Engine.TriggerVolume, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bActive
+    /// BoolProperty: bActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActive
     {

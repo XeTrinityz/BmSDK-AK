@@ -352,7 +352,8 @@ public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// ComponentProperty: interactionComponent
+    /// ComponentProperty: interactionComponent<br/>
+    /// Default: BmGame.Default__RTrackingObjectBase.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent interactionComponent
     {
@@ -445,7 +446,8 @@ public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: RangeY
+    /// FloatProperty: RangeY<br/>
+    /// Default: 16000
     /// </summary>
     public unsafe float RangeY
     {
@@ -454,7 +456,8 @@ public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.Bm
     }
 
     /// <summary>
-    /// FloatProperty: RangeP
+    /// FloatProperty: RangeP<br/>
+    /// Default: 16000
     /// </summary>
     public unsafe float RangeP
     {

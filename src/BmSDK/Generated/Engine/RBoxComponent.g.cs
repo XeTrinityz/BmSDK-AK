@@ -79,13 +79,15 @@ public partial class RBoxComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: BoxColor
+    /// StructProperty: BoxColor<br/>
+    /// Default: (B=255,G=155)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor BoxColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
 
     /// <summary>
-    /// StructProperty: KBox
+    /// StructProperty: KBox<br/>
+    /// Default: (TM=(XPlane=(X=1),YPlane=(Y=1),ZPlane=(Z=1),WPlane=(W=1)),X=1,Y=1,Z=1)
     /// </summary>
     public unsafe ref BmSDK.Engine.KMeshProps.FKBoxElem KBox
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.KMeshProps.FKBoxElem>(Ptr + 544);

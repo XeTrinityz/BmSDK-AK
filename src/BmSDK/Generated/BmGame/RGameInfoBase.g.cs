@@ -851,7 +851,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: SlowMoSFX
+    /// ObjectProperty: SlowMoSFX<br/>
+    /// Default: Ww_CHR_Combat.Play_Mid_Combat_Slowmo
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SlowMoSFX
     {
@@ -905,7 +906,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: DebugGameSpeed
+    /// FloatProperty: DebugGameSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DebugGameSpeed
     {
@@ -950,7 +952,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: CatwomanLevelTagsToNotLoad
+    /// ArrayProperty: CatwomanLevelTagsToNotLoad<br/>
+    /// Default: ("_BM","_ChM","_ChR","_ChT","_ChZ")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> CatwomanLevelTagsToNotLoad
     {

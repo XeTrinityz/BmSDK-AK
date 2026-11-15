@@ -154,7 +154,8 @@ public partial class RBatmobileSpeedLimitVolume : BmSDK.Engine.Volume, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MaxSpeed
+    /// FloatProperty: MaxSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float MaxSpeed
     {

@@ -79,13 +79,15 @@ public partial class AkMultipointEmitterLineComponent : BmSDK.Engine.PrimitiveCo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: LineColor
+    /// StructProperty: LineColor<br/>
+    /// Default: (B=196,G=167,R=84)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor LineColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 540);
 
     /// <summary>
-    /// StructProperty: CircleColor
+    /// StructProperty: CircleColor<br/>
+    /// Default: (B=196,G=167,R=84)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FColor CircleColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 544);

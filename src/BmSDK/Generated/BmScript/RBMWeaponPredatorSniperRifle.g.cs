@@ -236,7 +236,8 @@ public partial class RBMWeaponPredatorSniperRifle : BmSDK.BmScript.RBMWeaponRifl
     }
 
     /// <summary>
-    /// ObjectProperty: ScopeLaserLoop
+    /// ObjectProperty: ScopeLaserLoop<br/>
+    /// Default: Ww_WPN_SniperRifle.Play_SniperRifleLaser
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ScopeLaserLoop
     {
@@ -245,7 +246,8 @@ public partial class RBMWeaponPredatorSniperRifle : BmSDK.BmScript.RBMWeaponRifl
     }
 
     /// <summary>
-    /// ObjectProperty: LaserAudible
+    /// ObjectProperty: LaserAudible<br/>
+    /// Default: BmScript.Default__RBMWeaponPredatorSniperRifle.LaserAudible_
     /// </summary>
     public unsafe BmSDK.Engine.RAkAudible LaserAudible
     {
@@ -254,7 +256,8 @@ public partial class RBMWeaponPredatorSniperRifle : BmSDK.BmScript.RBMWeaponRifl
     }
 
     /// <summary>
-    /// ComponentProperty: LaserSight
+    /// ComponentProperty: LaserSight<br/>
+    /// Default: BmScript.Default__RBMWeaponPredatorSniperRifle.Sight
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent LaserSight
     {

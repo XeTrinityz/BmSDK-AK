@@ -727,7 +727,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: DisruptorRange
+    /// FloatProperty: DisruptorRange<br/>
+    /// Default: 250
     /// </summary>
     public unsafe float DisruptorRange
     {
@@ -736,7 +737,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ExtendedRange
+    /// FloatProperty: ExtendedRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ExtendedRange
     {
@@ -745,7 +747,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: SuperRange
+    /// FloatProperty: SuperRange<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float SuperRange
     {
@@ -871,7 +874,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: ResonatorMiniGameRenderTarget
+    /// ObjectProperty: ResonatorMiniGameRenderTarget<br/>
+    /// Default: Gadgets.Resonator.ProjectionPrimary_RT
     /// </summary>
     public unsafe BmSDK.Engine.TextureRenderTarget2D ResonatorMiniGameRenderTarget
     {
@@ -1042,7 +1046,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: IconSize
+    /// FloatProperty: IconSize<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float IconSize
     {
@@ -1051,7 +1056,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: LeftThumbOffset
+    /// FloatProperty: LeftThumbOffset<br/>
+    /// Default: -0.3
     /// </summary>
     public unsafe float LeftThumbOffset
     {
@@ -1060,7 +1066,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: RightThumbOffset
+    /// FloatProperty: RightThumbOffset<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float RightThumbOffset
     {
@@ -1069,7 +1076,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: ScreenLightBrightness
+    /// FloatProperty: ScreenLightBrightness<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float ScreenLightBrightness
     {
@@ -1096,7 +1104,8 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
     }
 
     /// <summary>
-    /// ArrayProperty: ResonatorTargetIcons
+    /// ArrayProperty: ResonatorTargetIcons<br/>
+    /// Default: ("resonator_target","resonator_target2","resonator_target3","resonator_target4","resonator_target5")
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FString> ResonatorTargetIcons
     {

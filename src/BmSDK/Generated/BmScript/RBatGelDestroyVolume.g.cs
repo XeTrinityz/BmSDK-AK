@@ -94,7 +94,8 @@ public partial class RBatGelDestroyVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// FloatProperty: DestroyTime
+    /// FloatProperty: DestroyTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float DestroyTime
     {

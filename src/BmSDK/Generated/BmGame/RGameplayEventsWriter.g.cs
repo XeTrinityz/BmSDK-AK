@@ -323,7 +323,8 @@ public partial class RGameplayEventsWriter : BmSDK.BmGame.RGameplayEventsHydra, 
     }
 
     /// <summary>
-    /// StrProperty: ConnectionString
+    /// StrProperty: ConnectionString<br/>
+    /// Default: "Provider=sqloledb;Data Source=SQL1;Initial Catalog=GameStats;Trusted_Connection=Yes"
     /// </summary>
     public unsafe BmSDK.FString ConnectionString
     {
@@ -332,7 +333,8 @@ public partial class RGameplayEventsWriter : BmSDK.BmGame.RGameplayEventsHydra, 
     }
 
     /// <summary>
-    /// StrProperty: RemoteConnectionIP
+    /// StrProperty: RemoteConnectionIP<br/>
+    /// Default: "10.0.0.142"
     /// </summary>
     public unsafe BmSDK.FString RemoteConnectionIP
     {
@@ -341,7 +343,8 @@ public partial class RGameplayEventsWriter : BmSDK.BmGame.RGameplayEventsHydra, 
     }
 
     /// <summary>
-    /// StrProperty: RemoteConnectionStringOverride
+    /// StrProperty: RemoteConnectionStringOverride<br/>
+    /// Default: "Data Source=SQL1;Initial Catalog=GameStats;Integrated Security=True;Pooling=False;Asynchronous Processing=True;Network Library=dbmssocn"
     /// </summary>
     public unsafe BmSDK.FString RemoteConnectionStringOverride
     {

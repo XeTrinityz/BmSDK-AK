@@ -132,7 +132,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// ComponentProperty: CylinderComponent
+    /// ComponentProperty: CylinderComponent<br/>
+    /// Default: Engine.Default__InteractiveFoliageActor.CollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CylinderComponent
     {
@@ -141,7 +142,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// BoolProperty: bAutomateBoundingCylinder
+    /// BoolProperty: bAutomateBoundingCylinder<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAutomateBoundingCylinder
     {
@@ -183,7 +185,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 756);
 
     /// <summary>
-    /// FloatProperty: FoliageDamageImpulseScale
+    /// FloatProperty: FoliageDamageImpulseScale<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float FoliageDamageImpulseScale
     {
@@ -192,7 +195,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FoliageTouchImpulseScale
+    /// FloatProperty: FoliageTouchImpulseScale<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FoliageTouchImpulseScale
     {
@@ -201,7 +205,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FoliageStiffness
+    /// FloatProperty: FoliageStiffness<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float FoliageStiffness
     {
@@ -210,7 +215,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FoliageStiffnessQuadratic
+    /// FloatProperty: FoliageStiffnessQuadratic<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float FoliageStiffnessQuadratic
     {
@@ -219,7 +225,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: FoliageDamping
+    /// FloatProperty: FoliageDamping<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FoliageDamping
     {
@@ -228,7 +235,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxDamageImpulse
+    /// FloatProperty: MaxDamageImpulse<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float MaxDamageImpulse
     {
@@ -237,7 +245,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxTouchImpulse
+    /// FloatProperty: MaxTouchImpulse<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float MaxTouchImpulse
     {
@@ -246,7 +255,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: MaxForce
+    /// FloatProperty: MaxForce<br/>
+    /// Default: 1e+05
     /// </summary>
     public unsafe float MaxForce
     {
@@ -282,7 +292,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
     }
 
     /// <summary>
-    /// FloatProperty: Mass
+    /// FloatProperty: Mass<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Mass
     {

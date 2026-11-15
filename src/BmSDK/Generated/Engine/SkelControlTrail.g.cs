@@ -79,7 +79,8 @@ public partial class SkelControlTrail : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: ChainLength
+    /// IntProperty: ChainLength<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int ChainLength
     {
@@ -88,7 +89,8 @@ public partial class SkelControlTrail : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ByteProperty: ChainBoneAxis
+    /// ByteProperty: ChainBoneAxis<br/>
+    /// Default: AXIS_X
     /// </summary>
     public unsafe BmSDK.GameObject.EAxis ChainBoneAxis
     {
@@ -133,7 +135,8 @@ public partial class SkelControlTrail : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: TrailRelaxation
+    /// FloatProperty: TrailRelaxation<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float TrailRelaxation
     {

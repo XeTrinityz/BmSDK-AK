@@ -95,7 +95,8 @@ public partial class RBMCombatThrownObject_TinCan : BmSDK.BmGame.RBMCombatThrown
     }
 
     /// <summary>
-    /// FloatProperty: DamageGiven
+    /// FloatProperty: DamageGiven<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float DamageGiven
     {

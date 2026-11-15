@@ -79,13 +79,15 @@ public partial class ParticleModuleVelocity : BmSDK.Engine.ParticleModuleVelocit
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: StartVelocity
+    /// StructProperty: StartVelocity<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,0,0,0,0,0,0,0),Distribution=Engine.Default__ParticleModuleVelocity.DistributionStartVelocity,RangesCached=true)
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector StartVelocity
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: StartVelocityRadial
+    /// StructProperty: StartVelocityRadial<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleVelocity.DistributionStartVelocityRadial)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat StartVelocityRadial
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 164);

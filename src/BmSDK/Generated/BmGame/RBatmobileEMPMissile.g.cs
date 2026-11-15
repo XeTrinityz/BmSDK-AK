@@ -604,7 +604,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: MaxDamageAngle
+    /// FloatProperty: MaxDamageAngle<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float MaxDamageAngle
     {
@@ -613,7 +614,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: SinWave1Param
+    /// FloatProperty: SinWave1Param<br/>
+    /// Default: 1.8541654
     /// </summary>
     public unsafe float SinWave1Param
     {
@@ -622,7 +624,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: SinWave2Param
+    /// FloatProperty: SinWave2Param<br/>
+    /// Default: 3.14159
     /// </summary>
     public unsafe float SinWave2Param
     {
@@ -631,7 +634,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: AngleDamageFactor
+    /// FloatProperty: AngleDamageFactor<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float AngleDamageFactor
     {
@@ -640,7 +644,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: MissileLockOnDuration
+    /// FloatProperty: MissileLockOnDuration<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float MissileLockOnDuration
     {
@@ -649,7 +654,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: CivilianMissileLockOnDuration
+    /// FloatProperty: CivilianMissileLockOnDuration<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float CivilianMissileLockOnDuration
     {
@@ -685,7 +691,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// NameProperty: LauncherBlendNodeName
+    /// NameProperty: LauncherBlendNodeName<br/>
+    /// Default: PursuitMissileBlendNode
     /// </summary>
     public unsafe BmSDK.FName LauncherBlendNodeName
     {
@@ -730,7 +737,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: YTargetRange
+    /// FloatProperty: YTargetRange<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float YTargetRange
     {
@@ -739,7 +747,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: YTargetRangeMax
+    /// FloatProperty: YTargetRangeMax<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float YTargetRangeMax
     {
@@ -748,7 +757,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: ZTargetRange
+    /// FloatProperty: ZTargetRange<br/>
+    /// Default: 512
     /// </summary>
     public unsafe float ZTargetRange
     {
@@ -757,7 +767,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: TunnelYTargetRange
+    /// FloatProperty: TunnelYTargetRange<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TunnelYTargetRange
     {
@@ -766,7 +777,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: TunnelYTargetRangeMax
+    /// FloatProperty: TunnelYTargetRangeMax<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float TunnelYTargetRangeMax
     {
@@ -775,7 +787,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: TunnelZTargetRange
+    /// FloatProperty: TunnelZTargetRange<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float TunnelZTargetRange
     {
@@ -784,7 +797,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: LoseLockXBonus
+    /// FloatProperty: LoseLockXBonus<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float LoseLockXBonus
     {
@@ -793,7 +807,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: LoseLockYBonus
+    /// FloatProperty: LoseLockYBonus<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float LoseLockYBonus
     {
@@ -802,7 +817,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
     }
 
     /// <summary>
-    /// FloatProperty: LoseLockZBonus
+    /// FloatProperty: LoseLockZBonus<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float LoseLockZBonus
     {

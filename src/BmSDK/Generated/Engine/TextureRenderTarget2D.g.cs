@@ -143,7 +143,8 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
     }
 
     /// <summary>
-    /// ByteProperty: Format
+    /// ByteProperty: Format<br/>
+    /// Default: PF_A8R8G8B8
     /// </summary>
     public unsafe BmSDK.Engine.Texture.EPixelFormat Format
     {
@@ -170,7 +171,8 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
     }
 
     /// <summary>
-    /// StructProperty: ClearColor
+    /// StructProperty: ClearColor<br/>
+    /// Default: (A=1)
     /// </summary>
     public unsafe ref BmSDK.GameObject.FLinearColor ClearColor
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FLinearColor>(Ptr + 328);

@@ -91,7 +91,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: SheetsPerTrail
+    /// IntProperty: SheetsPerTrail<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int SheetsPerTrail
     {
@@ -100,7 +101,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: MaxTrailCount
+    /// IntProperty: MaxTrailCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxTrailCount
     {
@@ -109,7 +111,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: MaxParticleInTrailCount
+    /// IntProperty: MaxParticleInTrailCount<br/>
+    /// Default: 500
     /// </summary>
     public unsafe int MaxParticleInTrailCount
     {
@@ -118,7 +121,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: MaxTessellationBetweenParticles
+    /// IntProperty: MaxTessellationBetweenParticles<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int MaxTessellationBetweenParticles
     {
@@ -127,7 +131,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bDeadTrailsOnDeactivate
+    /// BoolProperty: bDeadTrailsOnDeactivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeadTrailsOnDeactivate
     {
@@ -136,7 +141,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bDeadTrailsOnSourceLoss
+    /// BoolProperty: bDeadTrailsOnSourceLoss<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeadTrailsOnSourceLoss
     {
@@ -145,7 +151,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bClipSourceSegement
+    /// BoolProperty: bClipSourceSegement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClipSourceSegement
     {
@@ -154,7 +161,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bEnablePreviousTangentRecalculation
+    /// BoolProperty: bEnablePreviousTangentRecalculation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnablePreviousTangentRecalculation
     {
@@ -190,7 +198,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bRenderGeometry
+    /// BoolProperty: bRenderGeometry<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRenderGeometry
     {
@@ -262,7 +271,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// FloatProperty: DistanceTessellationStepSize
+    /// FloatProperty: DistanceTessellationStepSize<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float DistanceTessellationStepSize
     {
@@ -271,7 +281,8 @@ public partial class ParticleModuleTypeDataRibbon : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// FloatProperty: TangentTessellationScalar
+    /// FloatProperty: TangentTessellationScalar<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TangentTessellationScalar
     {

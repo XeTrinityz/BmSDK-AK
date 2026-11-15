@@ -193,7 +193,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// BoolProperty: Scan
+    /// BoolProperty: Scan<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Scan
     {
@@ -229,7 +230,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// IntProperty: AlertNumTanksIfAttacked
+    /// IntProperty: AlertNumTanksIfAttacked<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int AlertNumTanksIfAttacked
     {
@@ -238,7 +240,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: AlertTanksInRangeIfAttacked
+    /// FloatProperty: AlertTanksInRangeIfAttacked<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float AlertTanksInRangeIfAttacked
     {
@@ -265,7 +268,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: ScanMinYaw
+    /// FloatProperty: ScanMinYaw<br/>
+    /// Default: -45
     /// </summary>
     public unsafe float ScanMinYaw
     {
@@ -274,7 +278,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: ScanMaxYaw
+    /// FloatProperty: ScanMaxYaw<br/>
+    /// Default: 45
     /// </summary>
     public unsafe float ScanMaxYaw
     {
@@ -283,7 +288,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: ScanSpeed
+    /// FloatProperty: ScanSpeed<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float ScanSpeed
     {
@@ -292,7 +298,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: ScanPause
+    /// FloatProperty: ScanPause<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ScanPause
     {
@@ -301,7 +308,8 @@ public partial class RVehicleBehaviour_TankGuard : BmSDK.BmGame.RVehicleBehaviou
     }
 
     /// <summary>
-    /// FloatProperty: ScanPauseRandomExtra
+    /// FloatProperty: ScanPauseRandomExtra<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ScanPauseRandomExtra
     {

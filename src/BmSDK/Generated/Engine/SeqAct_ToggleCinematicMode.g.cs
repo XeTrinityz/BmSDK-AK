@@ -93,7 +93,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bDisableMovement
+    /// BoolProperty: bDisableMovement<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableMovement
     {
@@ -102,7 +103,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bDisableTurning
+    /// BoolProperty: bDisableTurning<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableTurning
     {
@@ -111,7 +113,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bHidePlayer
+    /// BoolProperty: bHidePlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bHidePlayer
     {
@@ -120,7 +123,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bDisableInput
+    /// BoolProperty: bDisableInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisableInput
     {
@@ -138,7 +142,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bDeadBodies
+    /// BoolProperty: bDeadBodies<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeadBodies
     {
@@ -147,7 +152,8 @@ public partial class SeqAct_ToggleCinematicMode : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// BoolProperty: bDroppedPickups
+    /// BoolProperty: bDroppedPickups<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDroppedPickups
     {

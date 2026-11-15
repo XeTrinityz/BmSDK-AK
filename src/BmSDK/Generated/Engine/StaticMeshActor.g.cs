@@ -93,7 +93,8 @@ public partial class StaticMeshActor : BmSDK.Engine.StaticMeshActorBase, BmSDK.I
     }
 
     /// <summary>
-    /// ComponentProperty: StaticMeshComponent
+    /// ComponentProperty: StaticMeshComponent<br/>
+    /// Default: Engine.Default__StaticMeshActor.StaticMeshComponent0
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent StaticMeshComponent
     {

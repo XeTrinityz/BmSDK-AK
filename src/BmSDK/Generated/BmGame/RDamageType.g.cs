@@ -144,7 +144,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeBlockedByWeapon
+    /// BoolProperty: bCanBeBlockedByWeapon<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeBlockedByWeapon
     {
@@ -153,7 +154,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeBlockedByArmour
+    /// BoolProperty: bCanBeBlockedByArmour<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeBlockedByArmour
     {
@@ -180,7 +182,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeRepelled
+    /// BoolProperty: bCanBeRepelled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeRepelled
     {
@@ -252,7 +255,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanTargetIfTargettedByBatarang
+    /// BoolProperty: bCanTargetIfTargettedByBatarang<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanTargetIfTargettedByBatarang
     {
@@ -261,7 +265,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCheckForMaxVelocityCap
+    /// BoolProperty: bCheckForMaxVelocityCap<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCheckForMaxVelocityCap
     {
@@ -297,7 +302,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanUseCloseTargetCheck
+    /// BoolProperty: bCanUseCloseTargetCheck<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUseCloseTargetCheck
     {
@@ -333,7 +339,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDamageMakesAwareOfPlayer
+    /// BoolProperty: bDamageMakesAwareOfPlayer<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDamageMakesAwareOfPlayer
     {
@@ -378,7 +385,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bStopSpeechOnRagdoll
+    /// BoolProperty: bStopSpeechOnRagdoll<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopSpeechOnRagdoll
     {
@@ -405,7 +413,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanHitLaserGridDuringHitReaction
+    /// BoolProperty: bCanHitLaserGridDuringHitReaction<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanHitLaserGridDuringHitReaction
     {
@@ -441,7 +450,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAwardXP
+    /// BoolProperty: bAwardXP<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAwardXP
     {
@@ -495,7 +505,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bCanRagdollImpactsDoDamage
+    /// BoolProperty: bCanRagdollImpactsDoDamage<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanRagdollImpactsDoDamage
     {
@@ -513,7 +524,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDestructibleChunksInheritDamageCauserVelocity
+    /// BoolProperty: bDestructibleChunksInheritDamageCauserVelocity<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestructibleChunksInheritDamageCauserVelocity
     {
@@ -522,7 +534,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDestructibleDamageCanBeDeferred
+    /// BoolProperty: bDestructibleDamageCanBeDeferred<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestructibleDamageCanBeDeferred
     {
@@ -540,7 +553,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: DamageToShield
+    /// IntProperty: DamageToShield<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int DamageToShield
     {
@@ -549,7 +563,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: BatmanDamageScale
+    /// FloatProperty: BatmanDamageScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BatmanDamageScale
     {
@@ -558,7 +573,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxStrikeDist
+    /// FloatProperty: MaxStrikeDist<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MaxStrikeDist
     {
@@ -567,7 +583,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxVenomStrikeDist
+    /// FloatProperty: MaxVenomStrikeDist<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float MaxVenomStrikeDist
     {
@@ -621,7 +638,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: Priority
+    /// IntProperty: Priority<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Priority
     {
@@ -639,7 +657,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: WeaponGeneratorPowerMod
+    /// FloatProperty: WeaponGeneratorPowerMod<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float WeaponGeneratorPowerMod
     {
@@ -648,7 +667,8 @@ public partial class RDamageType : BmSDK.Engine.DamageType, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NonPlayerVehicleDamageMod
+    /// IntProperty: NonPlayerVehicleDamageMod<br/>
+    /// Default: 6
     /// </summary>
     public unsafe int NonPlayerVehicleDamageMod
     {

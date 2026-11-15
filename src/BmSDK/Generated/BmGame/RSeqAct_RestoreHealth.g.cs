@@ -93,7 +93,8 @@ public partial class RSeqAct_RestoreHealth : BmSDK.Engine.SequenceAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: RestoreAmount
+    /// FloatProperty: RestoreAmount<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RestoreAmount
     {

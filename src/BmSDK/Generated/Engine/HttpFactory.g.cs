@@ -92,7 +92,8 @@ public partial class HttpFactory : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: HttpRequestClassName
+    /// StrProperty: HttpRequestClassName<br/>
+    /// Default: "WinDrv.HttpRequestWindows"
     /// </summary>
     public unsafe BmSDK.FString HttpRequestClassName
     {

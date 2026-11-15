@@ -79,7 +79,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: EngineUse
+    /// ObjectProperty: EngineUse<br/>
+    /// Default: Ww_Parameters.EngineHeat
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName EngineUse
     {
@@ -259,7 +260,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: DriftOnState
+    /// ObjectProperty: DriftOnState<br/>
+    /// Default: Ww_Batmobile_Drifting.Drifting_On
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName DriftOnState
     {
@@ -277,7 +279,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: CallInLoop
+    /// ObjectProperty: CallInLoop<br/>
+    /// Default: Ww_BML_Batmobile.Play_Batmobile_DistantRev
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CallInLoop
     {
@@ -286,7 +289,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: CallInSetOff
+    /// ObjectProperty: CallInSetOff<br/>
+    /// Default: Ww_BML_Tyres.Play_Batmobile_CallIn_SetOff
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent CallInSetOff
     {
@@ -295,7 +299,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: PlayerEjectRotateLoop
+    /// ObjectProperty: PlayerEjectRotateLoop<br/>
+    /// Default: Ww_BML_Tyres.Play_Batmobile_Eject_Stop
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PlayerEjectRotateLoop
     {
@@ -304,7 +309,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: CallInState
+    /// ObjectProperty: CallInState<br/>
+    /// Default: Ww_Batmobile_CallIn.Batmobile_CallIn
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName CallInState
     {
@@ -313,7 +319,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: WarmUpTurboDonuts
+    /// ObjectProperty: WarmUpTurboDonuts<br/>
+    /// Default: Ww_BML_Tyres.Play_Batmobile_WheelSpin_Boost
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent WarmUpTurboDonuts
     {
@@ -322,7 +329,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: LoopingForceSquealEvent
+    /// ObjectProperty: LoopingForceSquealEvent<br/>
+    /// Default: Ww_BML_Tyres.Play_Batmobile_Slide
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent LoopingForceSquealEvent
     {
@@ -331,7 +339,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: LoopingForceSquealParameter
+    /// ObjectProperty: LoopingForceSquealParameter<br/>
+    /// Default: Ww_Parameters.BML_Sliding
     /// </summary>
     public unsafe BmSDK.Engine.AkParameterName LoopingForceSquealParameter
     {
@@ -376,7 +385,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: PursuitToBattleMode
+    /// ObjectProperty: PursuitToBattleMode<br/>
+    /// Default: Ww_BML_Batmobile.Play_Batmobile_Engine_Transition_Out
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent PursuitToBattleMode
     {
@@ -385,7 +395,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: BattleModeToPursuit
+    /// ObjectProperty: BattleModeToPursuit<br/>
+    /// Default: Ww_BML_Batmobile.Play_Batmobile_Engine_Transition_In
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BattleModeToPursuit
     {
@@ -394,7 +405,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: BattleModeForward
+    /// ObjectProperty: BattleModeForward<br/>
+    /// Default: Ww_BML_Battlemode.Play_Batmobile_Battlemode_Oneshot
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BattleModeForward
     {
@@ -403,7 +415,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: BattleModeBackward
+    /// ObjectProperty: BattleModeBackward<br/>
+    /// Default: Ww_BML_Battlemode.Play_Batmobile_Battlemode_Oneshot
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BattleModeBackward
     {
@@ -412,7 +425,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: BattleModeLeft
+    /// ObjectProperty: BattleModeLeft<br/>
+    /// Default: Ww_BML_Battlemode.Play_Batmobile_Battlemode_Oneshot
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BattleModeLeft
     {
@@ -421,7 +435,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// ObjectProperty: BattleModeRight
+    /// ObjectProperty: BattleModeRight<br/>
+    /// Default: Ww_BML_Battlemode.Play_Batmobile_Battlemode_Oneshot
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent BattleModeRight
     {
@@ -448,7 +463,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: EngineUsePerMinute
+    /// FloatProperty: EngineUsePerMinute<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EngineUsePerMinute
     {
@@ -457,7 +473,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: EngineDecayPerMinute
+    /// FloatProperty: EngineDecayPerMinute<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EngineDecayPerMinute
     {
@@ -466,7 +483,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: EngineUseMaxValue
+    /// FloatProperty: EngineUseMaxValue<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EngineUseMaxValue
     {
@@ -475,7 +493,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: EngineUseRPMThreshold
+    /// FloatProperty: EngineUseRPMThreshold<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float EngineUseRPMThreshold
     {
@@ -484,7 +503,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: MinimumSpeedForExhaust
+    /// FloatProperty: MinimumSpeedForExhaust<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float MinimumSpeedForExhaust
     {
@@ -493,7 +513,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: MinRPMForExhaustPops
+    /// FloatProperty: MinRPMForExhaustPops<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float MinRPMForExhaustPops
     {
@@ -511,7 +532,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: MinimumExhaustFireTime
+    /// FloatProperty: MinimumExhaustFireTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinimumExhaustFireTime
     {
@@ -529,7 +551,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// BoolProperty: JumpEndsOnLand
+    /// BoolProperty: JumpEndsOnLand<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool JumpEndsOnLand
     {
@@ -556,7 +579,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: OneShotReleaseDelay
+    /// FloatProperty: OneShotReleaseDelay<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float OneShotReleaseDelay
     {
@@ -565,7 +589,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: DumpDropThreshold
+    /// FloatProperty: DumpDropThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float DumpDropThreshold
     {
@@ -574,7 +599,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TurboAttackLagSeconds
+    /// FloatProperty: TurboAttackLagSeconds<br/>
+    /// Default: 0.25
     /// </summary>
     public unsafe float TurboAttackLagSeconds
     {
@@ -583,7 +609,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TurboDecayLagSeconds
+    /// FloatProperty: TurboDecayLagSeconds<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float TurboDecayLagSeconds
     {
@@ -592,7 +619,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LookAheadOnRampSpeed
+    /// FloatProperty: LookAheadOnRampSpeed<br/>
+    /// Default: 44
     /// </summary>
     public unsafe float LookAheadOnRampSpeed
     {
@@ -601,7 +629,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TimeToLookAhead
+    /// FloatProperty: TimeToLookAhead<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float TimeToLookAhead
     {
@@ -610,7 +639,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TimeBeforeLookAheadAbandoned
+    /// FloatProperty: TimeBeforeLookAheadAbandoned<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float TimeBeforeLookAheadAbandoned
     {
@@ -619,7 +649,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TimeAfterJumpToEnableLookAhead
+    /// FloatProperty: TimeAfterJumpToEnableLookAhead<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float TimeAfterJumpToEnableLookAhead
     {
@@ -637,7 +668,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LimiterThreshold
+    /// FloatProperty: LimiterThreshold<br/>
+    /// Default: 0.99
     /// </summary>
     public unsafe float LimiterThreshold
     {
@@ -646,7 +678,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LimiterThresholdTime
+    /// FloatProperty: LimiterThresholdTime<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float LimiterThresholdTime
     {
@@ -655,7 +688,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LimiterRetriggerTimeMin
+    /// FloatProperty: LimiterRetriggerTimeMin<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LimiterRetriggerTimeMin
     {
@@ -664,7 +698,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LimiterRetriggerTimeMax
+    /// FloatProperty: LimiterRetriggerTimeMax<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LimiterRetriggerTimeMax
     {
@@ -673,7 +708,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LimiterResetTime
+    /// FloatProperty: LimiterResetTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LimiterResetTime
     {
@@ -709,7 +745,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: TimeBeforeLFO
+    /// FloatProperty: TimeBeforeLFO<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeBeforeLFO
     {
@@ -718,7 +755,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LFOVariance
+    /// FloatProperty: LFOVariance<br/>
+    /// Default: 0.15
     /// </summary>
     public unsafe float LFOVariance
     {
@@ -727,7 +765,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LFOTimePeriod
+    /// FloatProperty: LFOTimePeriod<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float LFOTimePeriod
     {
@@ -745,7 +784,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeSpeedAdjust
+    /// FloatProperty: BattleModeSpeedAdjust<br/>
+    /// Default: 1e-04
     /// </summary>
     public unsafe float BattleModeSpeedAdjust
     {
@@ -754,7 +794,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeMagnitude
+    /// FloatProperty: BattleModeMagnitude<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BattleModeMagnitude
     {
@@ -763,7 +804,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeResetMagnitude
+    /// FloatProperty: BattleModeResetMagnitude<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float BattleModeResetMagnitude
     {
@@ -772,7 +814,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: BattleModeRetriggerTime
+    /// FloatProperty: BattleModeRetriggerTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float BattleModeRetriggerTime
     {
@@ -808,7 +851,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: LeaveSettleTime
+    /// FloatProperty: LeaveSettleTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float LeaveSettleTime
     {
@@ -817,7 +861,8 @@ public partial class AkPlayerVehicleSoundInfo : BmSDK.Engine.AkVehicleSoundInfo,
     }
 
     /// <summary>
-    /// FloatProperty: EnterSettleTime
+    /// FloatProperty: EnterSettleTime<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float EnterSettleTime
     {

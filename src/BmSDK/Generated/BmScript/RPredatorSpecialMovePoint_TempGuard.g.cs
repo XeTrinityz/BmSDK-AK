@@ -149,7 +149,8 @@ public partial class RPredatorSpecialMovePoint_TempGuard : BmSDK.BmScript.RPreda
     }
 
     /// <summary>
-    /// FloatProperty: MinUseTime
+    /// FloatProperty: MinUseTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinUseTime
     {
@@ -158,7 +159,8 @@ public partial class RPredatorSpecialMovePoint_TempGuard : BmSDK.BmScript.RPreda
     }
 
     /// <summary>
-    /// FloatProperty: MaxUseTime
+    /// FloatProperty: MaxUseTime<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float MaxUseTime
     {

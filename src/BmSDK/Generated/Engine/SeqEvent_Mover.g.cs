@@ -138,7 +138,8 @@ public partial class SeqEvent_Mover : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: StayOpenTime
+    /// FloatProperty: StayOpenTime<br/>
+    /// Default: 1.5
     /// </summary>
     public unsafe float StayOpenTime
     {

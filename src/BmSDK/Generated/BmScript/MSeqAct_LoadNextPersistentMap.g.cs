@@ -115,7 +115,8 @@ public partial class MSeqAct_LoadNextPersistentMap : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// StrProperty: CharacterName
+    /// StrProperty: CharacterName<br/>
+    /// Default: "Batman"
     /// </summary>
     public unsafe BmSDK.FString CharacterName
     {
@@ -133,7 +134,8 @@ public partial class MSeqAct_LoadNextPersistentMap : BmSDK.Engine.SequenceAction
     }
 
     /// <summary>
-    /// BoolProperty: CreateSave
+    /// BoolProperty: CreateSave<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool CreateSave
     {

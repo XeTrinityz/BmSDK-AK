@@ -802,7 +802,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bAllowToBeDisabledByOther
+    /// BoolProperty: bAllowToBeDisabledByOther<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bAllowToBeDisabledByOther
     {
@@ -820,7 +821,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDetachComponentsWhenDisabledByOther
+    /// BoolProperty: bDetachComponentsWhenDisabledByOther<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDetachComponentsWhenDisabledByOther
     {
@@ -847,7 +849,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: UpdateRoomEntryPositionOnSave
+    /// BoolProperty: UpdateRoomEntryPositionOnSave<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UpdateRoomEntryPositionOnSave
     {
@@ -856,7 +859,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDisplayCombatLockText
+    /// BoolProperty: bDisplayCombatLockText<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplayCombatLockText
     {

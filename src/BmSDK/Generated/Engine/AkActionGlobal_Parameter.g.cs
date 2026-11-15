@@ -106,7 +106,8 @@ public partial class AkActionGlobal_Parameter : BmSDK.Engine.AkActionGlobal, BmS
     }
 
     /// <summary>
-    /// BoolProperty: ScaleActivationValue
+    /// BoolProperty: ScaleActivationValue<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ScaleActivationValue
     {
@@ -115,7 +116,8 @@ public partial class AkActionGlobal_Parameter : BmSDK.Engine.AkActionGlobal, BmS
     }
 
     /// <summary>
-    /// BoolProperty: ResetOnDeactivate
+    /// BoolProperty: ResetOnDeactivate<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ResetOnDeactivate
     {

@@ -79,7 +79,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: MusicStateOverOrOnValue
+    /// ObjectProperty: MusicStateOverOrOnValue<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Combat
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName MusicStateOverOrOnValue
     {
@@ -88,7 +89,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// ObjectProperty: MusicStateUnderValue
+    /// ObjectProperty: MusicStateUnderValue<br/>
+    /// Default: Ww_MUSIC_GameState.MUSIC_Explore
     /// </summary>
     public unsafe BmSDK.Engine.AkStateName MusicStateUnderValue
     {
@@ -115,7 +117,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// FloatProperty: ValueToChangeToCombat
+    /// FloatProperty: ValueToChangeToCombat<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ValueToChangeToCombat
     {
@@ -124,7 +127,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// FloatProperty: CombatSuccessTimeout
+    /// FloatProperty: CombatSuccessTimeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CombatSuccessTimeout
     {
@@ -142,7 +146,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// FloatProperty: CombatFailTimeout
+    /// FloatProperty: CombatFailTimeout<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float CombatFailTimeout
     {
@@ -160,7 +165,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// BoolProperty: FailOnDeath
+    /// BoolProperty: FailOnDeath<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool FailOnDeath
     {
@@ -196,7 +202,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// BoolProperty: KeepCheckingCombatWhilstUnderOne
+    /// BoolProperty: KeepCheckingCombatWhilstUnderOne<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool KeepCheckingCombatWhilstUnderOne
     {
@@ -241,7 +248,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// FloatProperty: TimeBetweenSamePawnDeath
+    /// FloatProperty: TimeBetweenSamePawnDeath<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeBetweenSamePawnDeath
     {
@@ -250,7 +258,8 @@ public partial class AkActionGlobal_CombatMusicControl : BmSDK.Engine.AkActionGl
     }
 
     /// <summary>
-    /// FloatProperty: TimeBeforeDeathsRegisterAfterCombatStarts
+    /// FloatProperty: TimeBeforeDeathsRegisterAfterCombatStarts<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeBeforeDeathsRegisterAfterCombatStarts
     {

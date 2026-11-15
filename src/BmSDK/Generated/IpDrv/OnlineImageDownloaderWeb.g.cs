@@ -223,7 +223,8 @@ public partial class OnlineImageDownloaderWeb : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MaxSimultaneousDownloads
+    /// IntProperty: MaxSimultaneousDownloads<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int MaxSimultaneousDownloads
     {

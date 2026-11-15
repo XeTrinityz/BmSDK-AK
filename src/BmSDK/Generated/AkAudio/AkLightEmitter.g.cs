@@ -207,7 +207,8 @@ public partial class AkLightEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ValueToTurnOn
+    /// FloatProperty: ValueToTurnOn<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float ValueToTurnOn
     {

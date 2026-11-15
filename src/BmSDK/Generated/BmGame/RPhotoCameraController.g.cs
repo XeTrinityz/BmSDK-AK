@@ -587,7 +587,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1944); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_AK
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_1
     {
@@ -595,7 +596,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1952); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_BleachBypass
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_2
     {
@@ -603,7 +605,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1960); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_ProBW
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_3
     {
@@ -611,7 +614,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1968); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_Demon
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_4
     {
@@ -619,7 +623,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1976); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_FilmColour
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_5
     {
@@ -627,7 +632,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1984); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_LaughingMatter
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_6
     {
@@ -635,7 +641,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1992); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_Poison
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_7
     {
@@ -643,7 +650,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2000); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: DLC_VFX_PP.CLUT.LUT_Vintage_1
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_8
     {
@@ -651,7 +659,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2008); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: Postprocess_Level.ColorGrading.Stagg_Lut
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_9
     {
@@ -659,7 +668,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2016); }
     }
     /// <summary>
-    /// ObjectProperty: Filter
+    /// ObjectProperty: Filter<br/>
+    /// Default: Postprocess_Level.ColorGrading.Ace_Chemicals_A1_Lut
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D Filter_10
     {
@@ -668,7 +678,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     }
 
     /// <summary>
-    /// StructProperty: DOFSettings
+    /// StructProperty: DOFSettings<br/>
+    /// Default: (bOverride_bEnableHighQualityDOF=true,bOverride_EnableDOF=true,bOverride_DOF_ApertureStop=true,bOverride_DOF_FocusDistance=true,bOverride_DOF_InterpolationDuration=true,bOverride_MotionBlur_Amount=tru...
     /// </summary>
     public unsafe ref BmSDK.Engine.PostProcessVolume.FPostProcessSettings DOFSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PostProcessVolume.FPostProcessSettings>(Ptr + 2032);

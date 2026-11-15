@@ -93,7 +93,8 @@ public partial class RSwordProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// ComponentProperty: SwordMesh
+    /// ComponentProperty: SwordMesh<br/>
+    /// Default: BmGame.Default__RSwordProjectile.GadgetMesh
     /// </summary>
     public unsafe BmSDK.Engine.SkeletalMeshComponent SwordMesh
     {
@@ -120,7 +121,8 @@ public partial class RSwordProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: ProjectileSpeed
+    /// FloatProperty: ProjectileSpeed<br/>
+    /// Default: 800
     /// </summary>
     public unsafe float ProjectileSpeed
     {
@@ -144,7 +146,8 @@ public partial class RSwordProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 872);
 
     /// <summary>
-    /// FloatProperty: PitchMeetingPoint
+    /// FloatProperty: PitchMeetingPoint<br/>
+    /// Default: 28888
     /// </summary>
     public unsafe float PitchMeetingPoint
     {
@@ -183,7 +186,8 @@ public partial class RSwordProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// FloatProperty: NumRevs
+    /// FloatProperty: NumRevs<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float NumRevs
     {

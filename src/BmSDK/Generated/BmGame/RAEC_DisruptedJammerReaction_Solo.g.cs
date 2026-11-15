@@ -168,7 +168,8 @@ public partial class RAEC_DisruptedJammerReaction_Solo : BmSDK.BmGame.RAlertEven
     }
 
     /// <summary>
-    /// ObjectProperty: JammerDisruptorSound
+    /// ObjectProperty: JammerDisruptorSound<br/>
+    /// Default: ww_chr_batmandisruptor.Play_Disrupt_Detective_Mode_Jammer
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent JammerDisruptorSound
     {

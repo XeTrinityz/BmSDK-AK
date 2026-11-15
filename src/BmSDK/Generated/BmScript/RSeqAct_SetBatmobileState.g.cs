@@ -390,7 +390,8 @@ public partial class RSeqAct_SetBatmobileState : BmSDK.Engine.SequenceAction, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ScaleTopSpeed
+    /// FloatProperty: ScaleTopSpeed<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float ScaleTopSpeed
     {

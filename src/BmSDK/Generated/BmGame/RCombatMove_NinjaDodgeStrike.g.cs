@@ -223,7 +223,8 @@ public partial class RCombatMove_NinjaDodgeStrike : BmSDK.BmGame.RCombatMove, Bm
     }
 
     /// <summary>
-    /// BoolProperty: bCanCounterStrike
+    /// BoolProperty: bCanCounterStrike<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanCounterStrike
     {
@@ -247,7 +248,8 @@ public partial class RCombatMove_NinjaDodgeStrike : BmSDK.BmGame.RCombatMove, Bm
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 804);
 
     /// <summary>
-    /// FloatProperty: ReactTime
+    /// FloatProperty: ReactTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float ReactTime
     {

@@ -778,7 +778,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: NewVehicleSound
+    /// ObjectProperty: NewVehicleSound<br/>
+    /// Default: Engine.Default__AkVehicle.VehicleSoundVar_0
     /// </summary>
     public unsafe BmSDK.Engine.AkVehicleSoundVar NewVehicleSound
     {

@@ -220,7 +220,8 @@ public partial class MSpecialMoveInstance_BatgirlOmnitronPasswordCracking : BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: SuccessBeepSound
+    /// ObjectProperty: SuccessBeepSound<br/>
+    /// Default: Ww_CHR_BatmanSonicResonator.Play_Sonic_Resonator_Success_Beep
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent SuccessBeepSound
     {

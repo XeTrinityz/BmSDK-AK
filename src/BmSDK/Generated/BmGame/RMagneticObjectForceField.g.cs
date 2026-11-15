@@ -102,7 +102,8 @@ public partial class RMagneticObjectForceField : BmSDK.Engine.NxRadialForceField
     }
 
     /// <summary>
-    /// FloatProperty: FieldStrengthMultiplier
+    /// FloatProperty: FieldStrengthMultiplier<br/>
+    /// Default: -200
     /// </summary>
     public unsafe float FieldStrengthMultiplier
     {

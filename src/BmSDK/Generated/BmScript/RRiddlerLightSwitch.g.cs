@@ -262,7 +262,8 @@ public partial class RRiddlerLightSwitch : BmSDK.BmGame.RInteractableItem, BmSDK
     }
 
     /// <summary>
-    /// ObjectProperty: GlowLightArch
+    /// ObjectProperty: GlowLightArch<br/>
+    /// Default: Pawn_Archetypes.Lights.Riddler_Question_Mark_Wall_Light
     /// </summary>
     public unsafe BmSDK.Engine.Light GlowLightArch
     {
@@ -271,7 +272,8 @@ public partial class RRiddlerLightSwitch : BmSDK.BmGame.RInteractableItem, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: BaseMesh
+    /// ComponentProperty: BaseMesh<br/>
+    /// Default: BmScript.Default__RRiddlerLightSwitch.StaticMeshComponent1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent BaseMesh
     {
@@ -289,7 +291,8 @@ public partial class RRiddlerLightSwitch : BmSDK.BmGame.RInteractableItem, BmSDK
     }
 
     /// <summary>
-    /// ComponentProperty: GlowDot
+    /// ComponentProperty: GlowDot<br/>
+    /// Default: BmScript.Default__RRiddlerLightSwitch.Glow1
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent GlowDot
     {
@@ -307,7 +310,8 @@ public partial class RRiddlerLightSwitch : BmSDK.BmGame.RInteractableItem, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bCanBeTargettedWhenOff
+    /// BoolProperty: bCanBeTargettedWhenOff<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanBeTargettedWhenOff
     {

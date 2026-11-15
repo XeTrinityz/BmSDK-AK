@@ -395,7 +395,8 @@ public partial class RHUD : BmSDK.BmGame.RHUDBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CinematicPromptFadeTime
+    /// FloatProperty: CinematicPromptFadeTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CinematicPromptFadeTime
     {
@@ -404,7 +405,8 @@ public partial class RHUD : BmSDK.BmGame.RHUDBase, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: CinematicPromptShowTime
+    /// FloatProperty: CinematicPromptShowTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CinematicPromptShowTime
     {

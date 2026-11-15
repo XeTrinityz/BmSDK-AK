@@ -448,7 +448,8 @@ public partial class RVehicleNPCBatmobile : BmSDK.BmGame.RVehicleNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// ComponentProperty: AfterburnerSystem
+    /// ComponentProperty: AfterburnerSystem<br/>
+    /// Default: BmGame.Default__RVehicleNPCBatmobile.ab
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AfterburnerSystem
     {
@@ -538,7 +539,8 @@ public partial class RVehicleNPCBatmobile : BmSDK.BmGame.RVehicleNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: BattleModeTransformationAnimName
+    /// NameProperty: BattleModeTransformationAnimName<br/>
+    /// Default: Batmobile_V2_Tank_Spread_Open_Game
     /// </summary>
     public unsafe BmSDK.FName BattleModeTransformationAnimName
     {
@@ -547,7 +549,8 @@ public partial class RVehicleNPCBatmobile : BmSDK.BmGame.RVehicleNPC, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: PursuitModeTransformationAnimName
+    /// NameProperty: PursuitModeTransformationAnimName<br/>
+    /// Default: Batmobile_V2_Tank_Spread_Close_Game
     /// </summary>
     public unsafe BmSDK.FName PursuitModeTransformationAnimName
     {

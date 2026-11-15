@@ -400,7 +400,8 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 964);
 
     /// <summary>
-    /// FloatProperty: RangeCounterDistance
+    /// FloatProperty: RangeCounterDistance<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float RangeCounterDistance
     {

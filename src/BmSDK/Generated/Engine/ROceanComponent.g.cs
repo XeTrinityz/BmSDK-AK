@@ -85,7 +85,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     public partial record struct FRockOceanSettings
     {
         /// <summary>
-        /// FloatProperty: WaveHeight
+        /// FloatProperty: WaveHeight<br/>
+        /// Default: 1024
         /// </summary>
         public unsafe float WaveHeight
         {
@@ -94,7 +95,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveStencilMesh
+        /// ObjectProperty: WaveStencilMesh<br/>
+        /// Default: Streets_Water.Streets_Water_Mainplane
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveStencilMesh
         {
@@ -103,7 +105,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTexture
+        /// ObjectProperty: WaveTexture<br/>
+        /// Default: VFX_Water.OWSea_Wave2_N
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D WaveTexture
         {
@@ -112,7 +115,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: FoamTexture
+        /// ObjectProperty: FoamTexture<br/>
+        /// Default: VFX_Water.WaterSystem.VFX_OceanFoam
         /// </summary>
         public unsafe BmSDK.Engine.Texture2D FoamTexture
         {
@@ -121,7 +125,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: FoamContactDistance
+        /// FloatProperty: FoamContactDistance<br/>
+        /// Default: 0.6
         /// </summary>
         public unsafe float FoamContactDistance
         {
@@ -130,7 +135,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: CrestFXContactDistance
+        /// FloatProperty: CrestFXContactDistance<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float CrestFXContactDistance
         {
@@ -139,7 +145,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ImpactFXContactDistance
+        /// FloatProperty: ImpactFXContactDistance<br/>
+        /// Default: 0.5
         /// </summary>
         public unsafe float ImpactFXContactDistance
         {
@@ -148,7 +155,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// FloatProperty: ScatterBase
+        /// FloatProperty: ScatterBase<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float ScatterBase
         {
@@ -157,7 +165,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// StructProperty: WaterColAbsorption
+        /// StructProperty: WaterColAbsorption<br/>
+        /// Default: (R=0.4,G=0.5,B=0.99,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColAbsorption
         {
@@ -166,7 +175,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// StructProperty: WaterColTransmission
+        /// StructProperty: WaterColTransmission<br/>
+        /// Default: (R=0.4,G=0.72,B=0.04,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColTransmission
         {
@@ -175,7 +185,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// StructProperty: WaterColScatter
+        /// StructProperty: WaterColScatter<br/>
+        /// Default: (R=0.011,G=0.01,A=1)
         /// </summary>
         public unsafe BmSDK.GameObject.FLinearColor WaterColScatter
         {
@@ -184,7 +195,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshCenter
+        /// ObjectProperty: WaveTesselatedMeshCenter<br/>
+        /// Default: VFX_Water.Ocean_TessCenter
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshCenter
         {
@@ -193,7 +205,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshRingL
+        /// ObjectProperty: WaveTesselatedMeshRingL<br/>
+        /// Default: VFX_Water.Ocean_TessRingL
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshRingL
         {
@@ -202,7 +215,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshRingR
+        /// ObjectProperty: WaveTesselatedMeshRingR<br/>
+        /// Default: VFX_Water.Ocean_TessRingR
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshRingR
         {
@@ -211,7 +225,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// ObjectProperty: WaveTesselatedMeshSkirt
+        /// ObjectProperty: WaveTesselatedMeshSkirt<br/>
+        /// Default: VFX_Water.Ocean_TessSkirt
         /// </summary>
         public unsafe BmSDK.Engine.StaticMesh WaveTesselatedMeshSkirt
         {
@@ -254,7 +269,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         }
 
         /// <summary>
-        /// IntProperty: impactIndexCandidate
+        /// IntProperty: impactIndexCandidate<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int impactIndexCandidate
         {
@@ -291,7 +307,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: OceanSize
+    /// FloatProperty: OceanSize<br/>
+    /// Default: 20000
     /// </summary>
     public unsafe float OceanSize
     {
@@ -327,7 +344,8 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// IntProperty: AttenDataResolution
+    /// IntProperty: AttenDataResolution<br/>
+    /// Default: 128
     /// </summary>
     public unsafe int AttenDataResolution
     {
@@ -411,13 +429,15 @@ public partial class ROceanComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
     }
 
     /// <summary>
-    /// StructProperty: AsyncResults
+    /// StructProperty: AsyncResults<br/>
+    /// Default: (impactIndexCandidate=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.ROceanComponent.FRockOceanAsyncResults AsyncResults
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ROceanComponent.FRockOceanAsyncResults>(Ptr + 700);
 
     /// <summary>
-    /// StructProperty: OceanSettings
+    /// StructProperty: OceanSettings<br/>
+    /// Default: (WaveHeight=1024,WaveStencilMesh=Streets_Water.Streets_Water_Mainplane,WaveTexture=VFX_Water.OWSea_Wave2_N,FoamTexture=VFX_Water.WaterSystem.VFX_OceanFoam,FoamContactDistance=0.6,CrestFXContactDistanc...
     /// </summary>
     public unsafe ref BmSDK.Engine.ROceanComponent.FRockOceanSettings OceanSettings
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.ROceanComponent.FRockOceanSettings>(Ptr + 744);

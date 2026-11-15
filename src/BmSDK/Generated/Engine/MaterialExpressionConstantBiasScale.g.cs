@@ -85,7 +85,8 @@ public partial class MaterialExpressionConstantBiasScale : BmSDK.Engine.Material
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 172);
 
     /// <summary>
-    /// FloatProperty: Bias
+    /// FloatProperty: Bias<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Bias
     {
@@ -94,7 +95,8 @@ public partial class MaterialExpressionConstantBiasScale : BmSDK.Engine.Material
     }
 
     /// <summary>
-    /// FloatProperty: Scale
+    /// FloatProperty: Scale<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float Scale
     {

@@ -103,7 +103,8 @@ public partial class RSkelControlTankTrack : BmSDK.Engine.SkelControlBase, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionStride
+    /// FloatProperty: SuspensionStride<br/>
+    /// Default: 400
     /// </summary>
     public unsafe float SuspensionStride
     {
@@ -130,7 +131,8 @@ public partial class RSkelControlTankTrack : BmSDK.Engine.SkelControlBase, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionMaxPosFront
+    /// FloatProperty: SuspensionMaxPosFront<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float SuspensionMaxPosFront
     {
@@ -139,7 +141,8 @@ public partial class RSkelControlTankTrack : BmSDK.Engine.SkelControlBase, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: SuspensionMaxPosRear
+    /// FloatProperty: SuspensionMaxPosRear<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float SuspensionMaxPosRear
     {

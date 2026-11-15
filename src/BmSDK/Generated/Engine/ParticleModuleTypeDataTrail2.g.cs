@@ -79,7 +79,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: TessellationFactor
+    /// IntProperty: TessellationFactor<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TessellationFactor
     {
@@ -97,7 +98,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// FloatProperty: TessellationStrength
+    /// FloatProperty: TessellationStrength<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float TessellationStrength
     {
@@ -106,7 +108,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: TextureTile
+    /// IntProperty: TextureTile<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int TextureTile
     {
@@ -115,7 +118,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: Sheets
+    /// IntProperty: Sheets<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int Sheets
     {
@@ -124,7 +128,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// IntProperty: MaxTrailCount
+    /// IntProperty: MaxTrailCount<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int MaxTrailCount
     {
@@ -160,7 +165,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: bClearTangents
+    /// BoolProperty: bClearTangents<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bClearTangents
     {
@@ -169,7 +175,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// BoolProperty: RenderGeometry
+    /// BoolProperty: RenderGeometry<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool RenderGeometry
     {
@@ -205,7 +212,8 @@ public partial class ParticleModuleTypeDataTrail2 : BmSDK.Engine.ParticleModuleT
     }
 
     /// <summary>
-    /// StructProperty: FixedAxis
+    /// StructProperty: FixedAxis<br/>
+    /// Default: (Z=1)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 FixedAxis
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 128);

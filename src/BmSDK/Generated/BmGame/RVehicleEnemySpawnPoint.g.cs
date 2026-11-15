@@ -88,7 +88,8 @@ public partial class RVehicleEnemySpawnPoint : BmSDK.BmGame.RDummyTarget, BmSDK.
     }
 
     /// <summary>
-    /// IntProperty: SpawnedEnemyIndex
+    /// IntProperty: SpawnedEnemyIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int SpawnedEnemyIndex
     {

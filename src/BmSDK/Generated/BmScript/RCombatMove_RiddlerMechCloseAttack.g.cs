@@ -725,7 +725,8 @@ public partial class RCombatMove_RiddlerMechCloseAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// BoolProperty: bDisplaySwitch
+    /// BoolProperty: bDisplaySwitch<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDisplaySwitch
     {
@@ -983,7 +984,8 @@ public partial class RCombatMove_RiddlerMechCloseAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: AttackRange
+    /// FloatProperty: AttackRange<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float AttackRange
     {
@@ -1019,7 +1021,8 @@ public partial class RCombatMove_RiddlerMechCloseAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: HitRange
+    /// FloatProperty: HitRange<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float HitRange
     {
@@ -1028,7 +1031,8 @@ public partial class RCombatMove_RiddlerMechCloseAttack : BmSDK.BmGame.RCombatMo
     }
 
     /// <summary>
-    /// FloatProperty: GrabbedDamageTime
+    /// FloatProperty: GrabbedDamageTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float GrabbedDamageTime
     {

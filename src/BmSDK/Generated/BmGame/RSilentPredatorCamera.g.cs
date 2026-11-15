@@ -206,7 +206,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// ObjectProperty: HeartBeatFFWaveform
+    /// ObjectProperty: HeartBeatFFWaveform<br/>
+    /// Default: BmGame.Default__RSilentPredatorCamera.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform HeartBeatFFWaveform
     {
@@ -215,7 +216,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: MinDistanceToTarget
+    /// FloatProperty: MinDistanceToTarget<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float MinDistanceToTarget
     {
@@ -236,7 +238,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1280);
 
     /// <summary>
-    /// FloatProperty: LookModeScale
+    /// FloatProperty: LookModeScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LookModeScale
     {
@@ -245,7 +248,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: LookSpringBack
+    /// FloatProperty: LookSpringBack<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float LookSpringBack
     {

@@ -92,7 +92,8 @@ public partial class SeqAct_Log : BmSDK.Engine.SequenceAction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bOutputToScreen
+    /// BoolProperty: bOutputToScreen<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bOutputToScreen
     {
@@ -101,7 +102,8 @@ public partial class SeqAct_Log : BmSDK.Engine.SequenceAction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bIncludeObjComment
+    /// BoolProperty: bIncludeObjComment<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIncludeObjComment
     {
@@ -110,7 +112,8 @@ public partial class SeqAct_Log : BmSDK.Engine.SequenceAction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: TargetDuration
+    /// FloatProperty: TargetDuration<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float TargetDuration
     {
@@ -134,7 +137,8 @@ public partial class SeqAct_Log : BmSDK.Engine.SequenceAction, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: OnscreenTime
+    /// FloatProperty: OnscreenTime<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float OnscreenTime
     {

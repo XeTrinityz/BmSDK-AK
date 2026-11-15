@@ -125,7 +125,8 @@ public partial class ParticleModuleLocationEmitter : BmSDK.Engine.ParticleModule
     }
 
     /// <summary>
-    /// FloatProperty: InheritSourceVelocityScale
+    /// FloatProperty: InheritSourceVelocityScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InheritSourceVelocityScale
     {
@@ -134,7 +135,8 @@ public partial class ParticleModuleLocationEmitter : BmSDK.Engine.ParticleModule
     }
 
     /// <summary>
-    /// FloatProperty: InheritSourceRotationScale
+    /// FloatProperty: InheritSourceRotationScale<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float InheritSourceRotationScale
     {

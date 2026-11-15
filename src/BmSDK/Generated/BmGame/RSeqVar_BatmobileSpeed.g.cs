@@ -79,7 +79,8 @@ public partial class RSeqVar_BatmobileSpeed : BmSDK.Engine.SeqVar_Float, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: ForwardSpeed
+    /// BoolProperty: ForwardSpeed<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool ForwardSpeed
     {

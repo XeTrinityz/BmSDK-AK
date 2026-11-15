@@ -146,7 +146,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// FloatProperty: ConeAngle
+    /// FloatProperty: ConeAngle<br/>
+    /// Default: 44
     /// </summary>
     public unsafe float ConeAngle
     {
@@ -155,7 +156,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe float Radius
     {
@@ -164,7 +166,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// FloatProperty: FalloffExponent
+    /// FloatProperty: FalloffExponent<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FalloffExponent
     {
@@ -182,7 +185,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// FloatProperty: FalloffOriginMul
+    /// FloatProperty: FalloffOriginMul<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float FalloffOriginMul
     {
@@ -197,7 +201,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FColor>(Ptr + 560);
 
     /// <summary>
-    /// FloatProperty: Brightness
+    /// FloatProperty: Brightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Brightness
     {
@@ -212,7 +217,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.GameObject.FPlane>(Ptr + 576);
 
     /// <summary>
-    /// BoolProperty: Enabled
+    /// BoolProperty: Enabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool Enabled
     {
@@ -221,7 +227,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// ObjectProperty: LightShaftMesh
+    /// ObjectProperty: LightShaftMesh<br/>
+    /// Default: RockEngineMeshes.DeferredLights.DeferredLight_SpotSphericalBound
     /// </summary>
     public unsafe BmSDK.Engine.StaticMesh LightShaftMesh
     {
@@ -230,7 +237,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     }
 
     /// <summary>
-    /// ObjectProperty: NoiseTexture
+    /// ObjectProperty: NoiseTexture<br/>
+    /// Default: EngineVolumetrics.LightBeam.Materials.T_EV_DustPanner_01
     /// </summary>
     public unsafe BmSDK.Engine.Texture2D NoiseTexture
     {

@@ -74,7 +74,8 @@ public partial class WaveFormBase : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ObjectProperty: TheWaveForm
+    /// ObjectProperty: TheWaveForm<br/>
+    /// Default: Engine.Default__WaveFormBase.ForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform TheWaveForm
     {

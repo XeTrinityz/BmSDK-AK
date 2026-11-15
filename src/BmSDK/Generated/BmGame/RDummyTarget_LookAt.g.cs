@@ -79,7 +79,8 @@ public partial class RDummyTarget_LookAt : BmSDK.BmGame.RDummyTarget, BmSDK.IGam
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: LookAtTime
+    /// FloatProperty: LookAtTime<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float LookAtTime
     {

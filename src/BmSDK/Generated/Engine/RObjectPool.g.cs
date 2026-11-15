@@ -428,7 +428,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: CurrentDestructionStage
+        /// IntProperty: CurrentDestructionStage<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int CurrentDestructionStage
         {
@@ -4604,322 +4605,386 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
     public InlineArray<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance> DamageInstances => new(64, Ptr + 6588, 44, this);
 
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6588);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6632);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6676);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6720);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6764);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6808);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6852);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_7
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6896);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_8
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6940);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_9
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 6984);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_10
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7028);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_11
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7072);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_12
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7116);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_13
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7160);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_14
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7204);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_15
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7248);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_16
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7292);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_17
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7336);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_18
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7380);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_19
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7424);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_20
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7468);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_21
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7512);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_22
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7556);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_23
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7600);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_24
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7644);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_25
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7688);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_26
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7732);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_27
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7776);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_28
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7820);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_29
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7864);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_30
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7908);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_31
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7952);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_32
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 7996);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_33
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8040);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_34
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8084);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_35
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8128);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_36
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8172);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_37
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8216);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_38
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8260);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_39
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8304);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_40
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8348);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_41
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8392);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_42
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8436);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_43
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8480);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_44
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8524);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_45
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8568);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_46
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8612);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_47
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8656);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_48
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8700);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_49
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8744);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_50
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8788);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_51
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8832);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_52
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8876);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_53
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8920);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_54
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 8964);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_55
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9008);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_56
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9052);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_57
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9096);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_58
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9140);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_59
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9184);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_60
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9228);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_61
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9272);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_62
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9316);
     /// <summary>
-    /// StructProperty: DamageInstances
+    /// StructProperty: DamageInstances<br/>
+    /// Default: (CurrentDestructionStage=-1)
     /// </summary>
     public unsafe ref BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance DamageInstances_63
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.RObjectPool.FRAdvancedDamageInstance>(Ptr + 9360);

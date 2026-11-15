@@ -171,7 +171,8 @@ public partial class RSeqAct_JokerCremationIntro : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: TimeToHoldButton
+    /// FloatProperty: TimeToHoldButton<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float TimeToHoldButton
     {
@@ -180,7 +181,8 @@ public partial class RSeqAct_JokerCremationIntro : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillMaxFlame
+    /// FloatProperty: TimeTillMaxFlame<br/>
+    /// Default: 3
     /// </summary>
     public unsafe float TimeTillMaxFlame
     {
@@ -189,7 +191,8 @@ public partial class RSeqAct_JokerCremationIntro : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeForHeld
+    /// FloatProperty: MinTimeForHeld<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float MinTimeForHeld
     {
@@ -207,7 +210,8 @@ public partial class RSeqAct_JokerCremationIntro : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// BoolProperty: bCoolingDown
+    /// BoolProperty: bCoolingDown<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCoolingDown
     {

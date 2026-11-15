@@ -108,7 +108,8 @@ public partial class RSeqAct_ChangeCape : BmSDK.Engine.SequenceAction, BmSDK.IGa
     }
 
     /// <summary>
-    /// StructProperty: StateChangeData
+    /// StructProperty: StateChangeData<br/>
+    /// Default: (AnimPlayRate=1,ScaleHeadDepthBias=1,ScaleDepthBias=1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPhysUtil.FCapeStateChangeData StateChangeData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPhysUtil.FCapeStateChangeData>(Ptr + 352);

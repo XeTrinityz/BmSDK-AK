@@ -231,7 +231,8 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     }
 
     /// <summary>
-    /// ComponentProperty: Interactions
+    /// ComponentProperty: Interactions<br/>
+    /// Default: BmScript.Default__RBMCombatThrownObject_HeavyObjectFireExtinguisher.ExtraInteractions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent Interactions
     {
@@ -240,13 +241,15 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     }
 
     /// <summary>
-    /// StructProperty: BatarangOffset
+    /// StructProperty: BatarangOffset<br/>
+    /// Default: (X=10,Z=35)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 BatarangOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1204);
 
     /// <summary>
-    /// BoolProperty: bFirstFireExCollision
+    /// BoolProperty: bFirstFireExCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFirstFireExCollision
     {
@@ -255,7 +258,8 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     }
 
     /// <summary>
-    /// ObjectProperty: ExplodeEvent
+    /// ObjectProperty: ExplodeEvent<br/>
+    /// Default: Ww_WPN_FireExtinguisher.Play_Extinguisher_Impact_Explode_Batarang
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ExplodeEvent
     {

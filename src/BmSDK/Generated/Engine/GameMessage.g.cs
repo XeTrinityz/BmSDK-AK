@@ -97,7 +97,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SwitchLevelMessage
+    /// StrProperty: SwitchLevelMessage<br/>
+    /// Default: "Switching Levels"
     /// </summary>
     public unsafe BmSDK.FString SwitchLevelMessage
     {
@@ -106,7 +107,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: LeftMessage
+    /// StrProperty: LeftMessage<br/>
+    /// Default: " left the game."
     /// </summary>
     public unsafe BmSDK.FString LeftMessage
     {
@@ -115,7 +117,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: FailedTeamMessage
+    /// StrProperty: FailedTeamMessage<br/>
+    /// Default: "Could not find team for player"
     /// </summary>
     public unsafe BmSDK.FString FailedTeamMessage
     {
@@ -124,7 +127,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: FailedPlaceMessage
+    /// StrProperty: FailedPlaceMessage<br/>
+    /// Default: "Could not find a starting spot"
     /// </summary>
     public unsafe BmSDK.FString FailedPlaceMessage
     {
@@ -133,7 +137,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: FailedSpawnMessage
+    /// StrProperty: FailedSpawnMessage<br/>
+    /// Default: "Could not spawn player"
     /// </summary>
     public unsafe BmSDK.FString FailedSpawnMessage
     {
@@ -142,7 +147,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: EnteredMessage
+    /// StrProperty: EnteredMessage<br/>
+    /// Default: " entered the game."
     /// </summary>
     public unsafe BmSDK.FString EnteredMessage
     {
@@ -151,7 +157,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MaxedOutMessage
+    /// StrProperty: MaxedOutMessage<br/>
+    /// Default: "Server is already at capacity."
     /// </summary>
     public unsafe BmSDK.FString MaxedOutMessage
     {
@@ -160,7 +167,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: ArbitrationMessage
+    /// StrProperty: ArbitrationMessage<br/>
+    /// Default: "The session has already started."
     /// </summary>
     public unsafe BmSDK.FString ArbitrationMessage
     {
@@ -169,7 +177,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: OvertimeMessage
+    /// StrProperty: OvertimeMessage<br/>
+    /// Default: "Score tied at the end of regulation. Sudden Death Overtime!!!"
     /// </summary>
     public unsafe BmSDK.FString OvertimeMessage
     {
@@ -178,7 +187,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: GlobalNameChange
+    /// StrProperty: GlobalNameChange<br/>
+    /// Default: "changed name to"
     /// </summary>
     public unsafe BmSDK.FString GlobalNameChange
     {
@@ -187,7 +197,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NewTeamMessage
+    /// StrProperty: NewTeamMessage<br/>
+    /// Default: "is now on"
     /// </summary>
     public unsafe BmSDK.FString NewTeamMessage
     {
@@ -205,7 +216,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NoNameChange
+    /// StrProperty: NoNameChange<br/>
+    /// Default: "Name is already in use."
     /// </summary>
     public unsafe BmSDK.FString NoNameChange
     {
@@ -214,7 +226,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VoteStarted
+    /// StrProperty: VoteStarted<br/>
+    /// Default: "started a vote."
     /// </summary>
     public unsafe BmSDK.FString VoteStarted
     {
@@ -223,7 +236,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: VotePassed
+    /// StrProperty: VotePassed<br/>
+    /// Default: "Vote passed."
     /// </summary>
     public unsafe BmSDK.FString VotePassed
     {
@@ -232,7 +246,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: MustHaveStats
+    /// StrProperty: MustHaveStats<br/>
+    /// Default: "Must have stats enabled to join this server."
     /// </summary>
     public unsafe BmSDK.FString MustHaveStats
     {
@@ -241,7 +256,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: CantBeSpectator
+    /// StrProperty: CantBeSpectator<br/>
+    /// Default: "Sorry, you cannot become a spectator at this time."
     /// </summary>
     public unsafe BmSDK.FString CantBeSpectator
     {
@@ -250,7 +266,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: CantBePlayer
+    /// StrProperty: CantBePlayer<br/>
+    /// Default: "Sorry, you cannot become an active player at this time."
     /// </summary>
     public unsafe BmSDK.FString CantBePlayer
     {
@@ -259,7 +276,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: BecameSpectator
+    /// StrProperty: BecameSpectator<br/>
+    /// Default: "became a spectator."
     /// </summary>
     public unsafe BmSDK.FString BecameSpectator
     {
@@ -268,7 +286,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NewPlayerMessage
+    /// StrProperty: NewPlayerMessage<br/>
+    /// Default: "A new player entered the game."
     /// </summary>
     public unsafe BmSDK.FString NewPlayerMessage
     {
@@ -277,7 +296,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: KickWarning
+    /// StrProperty: KickWarning<br/>
+    /// Default: "You are about to be kicked for idling!"
     /// </summary>
     public unsafe BmSDK.FString KickWarning
     {
@@ -286,7 +306,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: NewSpecMessage
+    /// StrProperty: NewSpecMessage<br/>
+    /// Default: "A spectator entered the game/"
     /// </summary>
     public unsafe BmSDK.FString NewSpecMessage
     {
@@ -295,7 +316,8 @@ public partial class GameMessage : BmSDK.Engine.LocalMessage, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StrProperty: SpecEnteredMessage
+    /// StrProperty: SpecEnteredMessage<br/>
+    /// Default: " joined as a spectator."
     /// </summary>
     public unsafe BmSDK.FString SpecEnteredMessage
     {

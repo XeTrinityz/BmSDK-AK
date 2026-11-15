@@ -249,7 +249,8 @@ public partial class RBMBehaviour_JokerEndOfCombat : BmSDK.BmGame.RBMBehaviour, 
     }
 
     /// <summary>
-    /// ArrayProperty: JokerAnims
+    /// ArrayProperty: JokerAnims<br/>
+    /// Default: ((Idle=Post_Fight_Idle,Overlays=(Post_Fight_Overlay_01,Post_Fight_Overlay_02)),(Idle=Post_Fight_Attack_TG_Idle,Overlays=(Post_Fight_Attack_TG_Overlay_01,Post_Fight_Attack_TG_Overlay_02,Post_Fight_Atta...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RBMBehaviour_JokerEndOfCombat.FJokerTauntAnims> JokerAnims
     {

@@ -79,7 +79,8 @@ public partial class RAnimNotify_FootSyncOut : BmSDK.Engine.AnimNotify, BmSDK.IG
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: AutomaticSyncPoint
+    /// BoolProperty: AutomaticSyncPoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutomaticSyncPoint
     {
@@ -88,7 +89,8 @@ public partial class RAnimNotify_FootSyncOut : BmSDK.Engine.AnimNotify, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: AutomaticSpeedAndDirection
+    /// BoolProperty: AutomaticSpeedAndDirection<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AutomaticSpeedAndDirection
     {
@@ -106,7 +108,8 @@ public partial class RAnimNotify_FootSyncOut : BmSDK.Engine.AnimNotify, BmSDK.IG
     }
 
     /// <summary>
-    /// ByteProperty: Speed
+    /// ByteProperty: Speed<br/>
+    /// Default: MS_Run
     /// </summary>
     public unsafe BmSDK.Engine.RAutomaticTransitions.EMovementSpeed Speed
     {

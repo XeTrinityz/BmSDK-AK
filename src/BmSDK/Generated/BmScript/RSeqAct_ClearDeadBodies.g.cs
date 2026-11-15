@@ -138,7 +138,8 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: MinNumBeforeClear
+    /// FloatProperty: MinNumBeforeClear<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float MinNumBeforeClear
     {
@@ -147,7 +148,8 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: NumToClear
+    /// FloatProperty: NumToClear<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float NumToClear
     {
@@ -156,7 +158,8 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: PercBeforeOOSCheck
+    /// FloatProperty: PercBeforeOOSCheck<br/>
+    /// Default: 65
     /// </summary>
     public unsafe float PercBeforeOOSCheck
     {
@@ -165,7 +168,8 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: TimeTillNextClear
+    /// FloatProperty: TimeTillNextClear<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float TimeTillNextClear
     {

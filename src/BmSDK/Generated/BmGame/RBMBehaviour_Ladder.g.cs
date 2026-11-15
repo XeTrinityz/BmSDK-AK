@@ -364,7 +364,8 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: LadderAnimset
+    /// ObjectProperty: LadderAnimset<br/>
+    /// Default: Anim_Thug.Code.TG_Ladder
     /// </summary>
     public unsafe BmSDK.Engine.AnimSet LadderAnimset
     {

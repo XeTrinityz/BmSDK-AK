@@ -97,7 +97,8 @@ public partial class RRiddlerBatmobileChallenge_RedHalfCircleGate : BmSDK.BmScri
     }
 
     /// <summary>
-    /// ObjectProperty: FailEvent
+    /// ObjectProperty: FailEvent<br/>
+    /// Default: Ww_DLC00_UI.Play_DLC_Races_Negative
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent FailEvent
     {

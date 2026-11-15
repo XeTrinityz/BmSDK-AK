@@ -371,7 +371,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
     public InlineArray<BmSDK.FString> flagSuffixes => new(5, Ptr + 384, 16, this);
 
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_unavailable"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_0
     {
@@ -379,7 +380,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 384); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_available"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_1
     {
@@ -387,7 +389,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 400); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_seen"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_2
     {
@@ -395,7 +398,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 416); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_rescued"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_3
     {
@@ -403,7 +407,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 432); }
     }
     /// <summary>
-    /// StrProperty: flagSuffixes
+    /// StrProperty: flagSuffixes<br/>
+    /// Default: "_rescuedAndGone"
     /// </summary>
     public unsafe BmSDK.FString flagSuffixes_4
     {
@@ -430,7 +435,8 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
     }
 
     /// <summary>
-    /// IntProperty: encounterIndex
+    /// IntProperty: encounterIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int encounterIndex
     {

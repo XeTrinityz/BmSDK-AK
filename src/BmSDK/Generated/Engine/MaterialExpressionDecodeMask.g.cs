@@ -114,7 +114,8 @@ public partial class MaterialExpressionDecodeMask : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// IntProperty: StepSize
+    /// IntProperty: StepSize<br/>
+    /// Default: 16
     /// </summary>
     public unsafe int StepSize
     {
@@ -123,7 +124,8 @@ public partial class MaterialExpressionDecodeMask : BmSDK.Engine.MaterialExpress
     }
 
     /// <summary>
-    /// ArrayProperty: Weight
+    /// ArrayProperty: Weight<br/>
+    /// Default: ((WeightName="BrowUpL=16"),(WeightName="BrowUpR=32"),(WeightName="BrowUpC=48"),(WeightName="LowBrow=64"),(WeightName="EyeWrinklesL=80"),(WeightName="EyeWrinklesR=96"),(WeightName="CheekL=112"),(Weight...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MaterialExpressionDecodeMask.FWeightInput> Weight
     {
@@ -150,7 +152,8 @@ public partial class MaterialExpressionDecodeMask : BmSDK.Engine.MaterialExpress
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.MaterialExpression.FExpressionInput>(Ptr + 296);
 
     /// <summary>
-    /// ByteProperty: DecodeBlendType
+    /// ByteProperty: DecodeBlendType<br/>
+    /// Default: DECODE_Add
     /// </summary>
     public unsafe BmSDK.Engine.MaterialExpressionDecodeMask.EDecodeBlendType DecodeBlendType
     {

@@ -733,7 +733,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: TargetMarker
+    /// ComponentProperty: TargetMarker<br/>
+    /// Default: BmGame.Default__RProjectileGadgetBase.TargetMarker0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent TargetMarker
     {
@@ -742,7 +743,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// ComponentProperty: AimingArcTrail
+    /// ComponentProperty: AimingArcTrail<br/>
+    /// Default: BmGame.Default__RProjectileGadgetBase.AimingArc
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent AimingArcTrail
     {
@@ -751,7 +753,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: LaunchSpeed
+    /// FloatProperty: LaunchSpeed<br/>
+    /// Default: 3000
     /// </summary>
     public unsafe float LaunchSpeed
     {
@@ -760,7 +763,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: Gravity
+    /// FloatProperty: Gravity<br/>
+    /// Default: 2500
     /// </summary>
     public unsafe float Gravity
     {
@@ -778,7 +782,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bDeactivateTrailInCover
+    /// BoolProperty: bDeactivateTrailInCover<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDeactivateTrailInCover
     {
@@ -814,7 +819,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bCanFireSecondary
+    /// BoolProperty: bCanFireSecondary<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanFireSecondary
     {
@@ -823,7 +829,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: bIgnoreGlassCollision
+    /// BoolProperty: bIgnoreGlassCollision<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIgnoreGlassCollision
     {
@@ -877,7 +884,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// BoolProperty: UnequipOnFire
+    /// BoolProperty: UnequipOnFire<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool UnequipOnFire
     {
@@ -886,7 +894,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: AimRange
+    /// FloatProperty: AimRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float AimRange
     {
@@ -895,7 +904,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ProjectileAutoTargetAngle
+    /// FloatProperty: ProjectileAutoTargetAngle<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float ProjectileAutoTargetAngle
     {
@@ -904,7 +914,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ProjectileAutoTargetRange
+    /// FloatProperty: ProjectileAutoTargetRange<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float ProjectileAutoTargetRange
     {
@@ -1039,37 +1050,44 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_0
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2420);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (Y=50,Z=70)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_1
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2432);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (Y=-80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_2
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2444);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (Y=80)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_3
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2456);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (X=35,Y=50,Z=15)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_4
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2468);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (X=35,Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_5
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2480);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (X=35,Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_6
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2492);
     /// <summary>
-    /// StructProperty: ThrowOffsetPosition
+    /// StructProperty: ThrowOffsetPosition<br/>
+    /// Default: (Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ThrowOffsetPosition_7
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2504);
@@ -1100,7 +1118,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 2564);
 
     /// <summary>
-    /// FloatProperty: AOERadius
+    /// FloatProperty: AOERadius<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float AOERadius
     {
@@ -1109,7 +1128,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: CombatAimAngle
+    /// FloatProperty: CombatAimAngle<br/>
+    /// Default: -25
     /// </summary>
     public unsafe float CombatAimAngle
     {
@@ -1118,7 +1138,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ReplenishTime
+    /// FloatProperty: ReplenishTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float ReplenishTime
     {
@@ -1127,7 +1148,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
     }
 
     /// <summary>
-    /// FloatProperty: ThrowTime
+    /// FloatProperty: ThrowTime<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ThrowTime
     {

@@ -88,7 +88,8 @@ public partial class ParticleModuleWorldAttractor : BmSDK.Engine.ParticleModuleW
     }
 
     /// <summary>
-    /// StructProperty: AttractorInfluence
+    /// StructProperty: AttractorInfluence<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1,1,1,1),Distribution=Engine.Default__ParticleModuleWorldAttractor.DistributionInfluence)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat AttractorInfluence
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 100);

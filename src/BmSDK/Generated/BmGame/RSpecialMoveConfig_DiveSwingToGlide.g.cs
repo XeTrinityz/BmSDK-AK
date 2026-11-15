@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_DiveSwingToGlide : BmSDK.BmGame.RSpecial
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: SwingStartSpeed
+    /// FloatProperty: SwingStartSpeed<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float SwingStartSpeed
     {
@@ -88,7 +89,8 @@ public partial class RSpecialMoveConfig_DiveSwingToGlide : BmSDK.BmGame.RSpecial
     }
 
     /// <summary>
-    /// FloatProperty: MinSwingRate
+    /// FloatProperty: MinSwingRate<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinSwingRate
     {

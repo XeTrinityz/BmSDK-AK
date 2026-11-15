@@ -121,7 +121,8 @@ public partial class RDummyTarget_ChinookBase : BmSDK.BmGame.RDummyTarget, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: arrowCompBackwardOffset
+    /// FloatProperty: arrowCompBackwardOffset<br/>
+    /// Default: 1600
     /// </summary>
     public unsafe float arrowCompBackwardOffset
     {

@@ -325,7 +325,8 @@ public partial class RNavMeshInspector : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: searchRange
+    /// FloatProperty: searchRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float searchRange
     {
@@ -334,7 +335,8 @@ public partial class RNavMeshInspector : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: searchRangeZ
+    /// FloatProperty: searchRangeZ<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float searchRangeZ
     {

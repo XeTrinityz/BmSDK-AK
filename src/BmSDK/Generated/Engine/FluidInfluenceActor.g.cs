@@ -127,7 +127,8 @@ public partial class FluidInfluenceActor : BmSDK.Engine.Actor, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: InfluenceComponent
+    /// ComponentProperty: InfluenceComponent<br/>
+    /// Default: Engine.Default__FluidInfluenceActor.NewInfluenceComponent
     /// </summary>
     public unsafe BmSDK.Engine.FluidInfluenceComponent InfluenceComponent
     {

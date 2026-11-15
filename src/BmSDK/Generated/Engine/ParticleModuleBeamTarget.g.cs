@@ -106,7 +106,8 @@ public partial class ParticleModuleBeamTarget : BmSDK.Engine.ParticleModuleBeamB
     }
 
     /// <summary>
-    /// StructProperty: Target
+    /// StructProperty: Target<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(50,50,50,50,50,50,50,50),Distribution=Engine.Default__ParticleModuleBeamTarget.DistributionTarget,MinRange=(X=50,Y=50,Z=50),MaxRange=...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector Target
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 108);
@@ -148,19 +149,22 @@ public partial class ParticleModuleBeamTarget : BmSDK.Engine.ParticleModuleBeamB
     }
 
     /// <summary>
-    /// StructProperty: TargetTangent
+    /// StructProperty: TargetTangent<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=3,LookupTable=(0,1,1,0,0,1,0,0),Distribution=Engine.Default__ParticleModuleBeamTarget.DistributionTargetTangent,MinRange=(X=1),MaxRange=(X=1),Ranges...
     /// </summary>
     public unsafe ref BmSDK.DistributionVector.FRawDistributionVector TargetTangent
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionVector.FRawDistributionVector>(Ptr + 176);
 
     /// <summary>
-    /// StructProperty: TargetStrength
+    /// StructProperty: TargetStrength<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(25,25,25,25),Distribution=Engine.Default__ParticleModuleBeamTarget.DistributionTargetStrength)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat TargetStrength
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 240);
 
     /// <summary>
-    /// FloatProperty: LockRadius
+    /// FloatProperty: LockRadius<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float LockRadius
     {

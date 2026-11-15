@@ -116,7 +116,8 @@ public partial class NavMeshPathGoalEvaluator : BmSDK.GameObject, BmSDK.IGameObj
     }
 
     /// <summary>
-    /// IntProperty: MaxPathVisits
+    /// IntProperty: MaxPathVisits<br/>
+    /// Default: 1024
     /// </summary>
     public unsafe int MaxPathVisits
     {

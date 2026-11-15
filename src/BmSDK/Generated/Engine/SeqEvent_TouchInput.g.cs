@@ -74,7 +74,8 @@ public partial class SeqEvent_TouchInput : BmSDK.Engine.SequenceEvent, BmSDK.IGa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// BoolProperty: bTrapInput
+    /// BoolProperty: bTrapInput<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTrapInput
     {
@@ -83,7 +84,8 @@ public partial class SeqEvent_TouchInput : BmSDK.Engine.SequenceEvent, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: AllowedPlayerIndex
+    /// IntProperty: AllowedPlayerIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int AllowedPlayerIndex
     {

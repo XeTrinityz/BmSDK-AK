@@ -95,7 +95,8 @@ public partial class AnimNotify_ViewShake : BmSDK.Engine.AnimNotify_Scripted, Bm
     }
 
     /// <summary>
-    /// FloatProperty: Duration
+    /// FloatProperty: Duration<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float Duration
     {
@@ -104,31 +105,36 @@ public partial class AnimNotify_ViewShake : BmSDK.Engine.AnimNotify_Scripted, Bm
     }
 
     /// <summary>
-    /// StructProperty: RotAmplitude
+    /// StructProperty: RotAmplitude<br/>
+    /// Default: (X=100,Y=100,Z=200)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RotAmplitude
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 88);
 
     /// <summary>
-    /// StructProperty: RotFrequency
+    /// StructProperty: RotFrequency<br/>
+    /// Default: (X=10,Y=10,Z=25)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 RotFrequency
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 100);
 
     /// <summary>
-    /// StructProperty: LocAmplitude
+    /// StructProperty: LocAmplitude<br/>
+    /// Default: (Y=3,Z=6)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LocAmplitude
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 112);
 
     /// <summary>
-    /// StructProperty: LocFrequency
+    /// StructProperty: LocFrequency<br/>
+    /// Default: (X=1,Y=10,Z=20)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 LocFrequency
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 124);
 
     /// <summary>
-    /// FloatProperty: FOVAmplitude
+    /// FloatProperty: FOVAmplitude<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float FOVAmplitude
     {
@@ -137,7 +143,8 @@ public partial class AnimNotify_ViewShake : BmSDK.Engine.AnimNotify_Scripted, Bm
     }
 
     /// <summary>
-    /// FloatProperty: FOVFrequency
+    /// FloatProperty: FOVFrequency<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float FOVFrequency
     {
@@ -164,7 +171,8 @@ public partial class AnimNotify_ViewShake : BmSDK.Engine.AnimNotify_Scripted, Bm
     }
 
     /// <summary>
-    /// FloatProperty: ShakeRadius
+    /// FloatProperty: ShakeRadius<br/>
+    /// Default: 4096
     /// </summary>
     public unsafe float ShakeRadius
     {

@@ -79,7 +79,8 @@ public partial class RAnimNotify_RFlapsBlendWeight : BmSDK.Engine.AnimNotify, Bm
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: StartWeight
+    /// FloatProperty: StartWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float StartWeight
     {
@@ -88,7 +89,8 @@ public partial class RAnimNotify_RFlapsBlendWeight : BmSDK.Engine.AnimNotify, Bm
     }
 
     /// <summary>
-    /// FloatProperty: EndWeight
+    /// FloatProperty: EndWeight<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float EndWeight
     {

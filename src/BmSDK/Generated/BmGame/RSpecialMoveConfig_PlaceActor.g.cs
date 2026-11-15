@@ -79,7 +79,8 @@ public partial class RSpecialMoveConfig_PlaceActor : BmSDK.BmGame.RSpecialMoveCo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ClassProperty: ActorClassToCreate
+    /// ClassProperty: ActorClassToCreate<br/>
+    /// Default: BmGame.RResonatorDisruptor
     /// </summary>
     public unsafe BmSDK.Class ActorClassToCreate
     {

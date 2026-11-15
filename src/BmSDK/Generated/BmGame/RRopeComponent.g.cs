@@ -270,7 +270,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 760);
 
     /// <summary>
-    /// FloatProperty: RopeDensity
+    /// FloatProperty: RopeDensity<br/>
+    /// Default: 0.05
     /// </summary>
     public unsafe float RopeDensity
     {
@@ -279,7 +280,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeDefaultSectionLength
+    /// FloatProperty: RopeDefaultSectionLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RopeDefaultSectionLength
     {
@@ -288,7 +290,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// IntProperty: RopeMaxNumSections
+    /// IntProperty: RopeMaxNumSections<br/>
+    /// Default: 25
     /// </summary>
     public unsafe int RopeMaxNumSections
     {
@@ -297,7 +300,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeMinSectionLength
+    /// FloatProperty: RopeMinSectionLength<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float RopeMinSectionLength
     {
@@ -306,7 +310,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeFixedSectionLength
+    /// FloatProperty: RopeFixedSectionLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RopeFixedSectionLength
     {
@@ -315,7 +320,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeAfterSplitFixedSectionLength
+    /// FloatProperty: RopeAfterSplitFixedSectionLength<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float RopeAfterSplitFixedSectionLength
     {
@@ -324,7 +330,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeSplitCurveRate
+    /// FloatProperty: RopeSplitCurveRate<br/>
+    /// Default: 0.7
     /// </summary>
     public unsafe float RopeSplitCurveRate
     {
@@ -333,7 +340,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeDontJoinCurveRate
+    /// FloatProperty: RopeDontJoinCurveRate<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float RopeDontJoinCurveRate
     {
@@ -342,7 +350,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeSectionJoinStretchRatio
+    /// FloatProperty: RopeSectionJoinStretchRatio<br/>
+    /// Default: 1.03
     /// </summary>
     public unsafe float RopeSectionJoinStretchRatio
     {
@@ -351,7 +360,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeJoinMaxAngleDiff
+    /// FloatProperty: RopeJoinMaxAngleDiff<br/>
+    /// Default: 0.015
     /// </summary>
     public unsafe float RopeJoinMaxAngleDiff
     {
@@ -360,7 +370,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeJoinMaxAngularVelDiff
+    /// FloatProperty: RopeJoinMaxAngularVelDiff<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float RopeJoinMaxAngularVelDiff
     {
@@ -369,7 +380,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeLeafShortenLength
+    /// FloatProperty: RopeLeafShortenLength<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float RopeLeafShortenLength
     {
@@ -378,7 +390,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: MinOverstretchHandleLengthRatio
+    /// FloatProperty: MinOverstretchHandleLengthRatio<br/>
+    /// Default: 1.01
     /// </summary>
     public unsafe float MinOverstretchHandleLengthRatio
     {
@@ -387,7 +400,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: RopeLoDUpdatePeriod
+    /// FloatProperty: RopeLoDUpdatePeriod<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float RopeLoDUpdatePeriod
     {
@@ -405,7 +419,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     }
 
     /// <summary>
-    /// FloatProperty: LoDUpdateTimer
+    /// FloatProperty: LoDUpdateTimer<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float LoDUpdateTimer
     {

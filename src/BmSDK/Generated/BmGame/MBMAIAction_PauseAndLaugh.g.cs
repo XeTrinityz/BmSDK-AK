@@ -180,7 +180,8 @@ public partial class MBMAIAction_PauseAndLaugh : BmSDK.BmGame.RBMAIAction, BmSDK
     }
 
     /// <summary>
-    /// BoolProperty: bRandomLookDir
+    /// BoolProperty: bRandomLookDir<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRandomLookDir
     {
@@ -213,7 +214,8 @@ public partial class MBMAIAction_PauseAndLaugh : BmSDK.BmGame.RBMAIAction, BmSDK
     }
 
     /// <summary>
-    /// ArrayProperty: IdleAnimNames
+    /// ArrayProperty: IdleAnimNames<br/>
+    /// Default: (LaughingGas_01_Idle,LaughingGas_02_Idle)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> IdleAnimNames
     {
@@ -222,7 +224,8 @@ public partial class MBMAIAction_PauseAndLaugh : BmSDK.BmGame.RBMAIAction, BmSDK
     }
 
     /// <summary>
-    /// ArrayProperty: OutAnimNames
+    /// ArrayProperty: OutAnimNames<br/>
+    /// Default: (LaughingGas_01_Out,LaughingGas_02_Out)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> OutAnimNames
     {

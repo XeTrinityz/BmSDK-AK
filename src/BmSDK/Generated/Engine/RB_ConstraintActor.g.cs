@@ -225,7 +225,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// ObjectProperty: ConstraintInstance
+    /// ObjectProperty: ConstraintInstance<br/>
+    /// Default: Engine.Default__RB_ConstraintActor.MyConstraintInstance
     /// </summary>
     public unsafe BmSDK.Engine.RB_ConstraintInstance ConstraintInstance
     {
@@ -261,7 +262,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateActor1RefFrame
+    /// BoolProperty: bUpdateActor1RefFrame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateActor1RefFrame
     {
@@ -270,7 +272,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bUpdateActor2RefFrame
+    /// BoolProperty: bUpdateActor2RefFrame<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bUpdateActor2RefFrame
     {
@@ -279,7 +282,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// BoolProperty: bEnableConstraintOnLevelStart
+    /// BoolProperty: bEnableConstraintOnLevelStart<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bEnableConstraintOnLevelStart
     {

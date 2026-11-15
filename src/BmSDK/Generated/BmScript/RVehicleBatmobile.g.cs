@@ -908,7 +908,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInMove
+    /// ObjectProperty: GetInMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Standing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInMove
     {
@@ -917,7 +918,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GlideInMove
+    /// ObjectProperty: GlideInMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Gliding
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GlideInMove
     {
@@ -926,7 +928,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GlideBoostInMove
+    /// ObjectProperty: GlideBoostInMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Glide_Boost
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GlideBoostInMove
     {
@@ -935,7 +938,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: FallInMove
+    /// ObjectProperty: FallInMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Falling
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig FallInMove
     {
@@ -944,7 +948,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetOutMove
+    /// ObjectProperty: GetOutMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_Out_Batmobile_Stand
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetOutMove
     {
@@ -953,7 +958,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetOutToStandFastMove
+    /// ObjectProperty: GetOutToStandFastMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_Out_Batmobile_Moving_To_Stand
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetOutToStandFastMove
     {
@@ -980,7 +986,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: EjectUpMove
+    /// ObjectProperty: EjectUpMove<br/>
+    /// Default: Batman_Batmobile_Moves.Eject.Eject_Up_To_Glide
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EjectUpMove
     {
@@ -989,7 +996,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: EjectForwardMove
+    /// ObjectProperty: EjectForwardMove<br/>
+    /// Default: Batman_Batmobile_Moves.Eject.Eject_Fwd_To_Glide
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EjectForwardMove
     {
@@ -998,7 +1006,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInRemoteMoveFront
+    /// ObjectProperty: GetInRemoteMoveFront<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Remote_Front
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInRemoteMoveFront
     {
@@ -1007,7 +1016,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInRemoteMoveBack
+    /// ObjectProperty: GetInRemoteMoveBack<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Remote_Back
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInRemoteMoveBack
     {
@@ -1016,7 +1026,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: JumpInBatmobileSkidStopMove
+    /// ObjectProperty: JumpInBatmobileSkidStopMove<br/>
+    /// Default: Batman_Batmobile_Moves.Jump_In_Batmobile_Skid_Stop
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig JumpInBatmobileSkidStopMove
     {
@@ -1025,7 +1036,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInWithoutAnimMove
+    /// ObjectProperty: GetInWithoutAnimMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_No_Anim
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInWithoutAnimMove
     {
@@ -1034,7 +1046,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: EjectWhenBatmobileVerticalMove
+    /// ObjectProperty: EjectWhenBatmobileVerticalMove<br/>
+    /// Default: Batman_Batmobile_Moves.Eject.Abseil_Eject_To_Glide
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EjectWhenBatmobileVerticalMove
     {
@@ -1043,7 +1056,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: EjectUpWhenBatmobileVerticalMove
+    /// ObjectProperty: EjectUpWhenBatmobileVerticalMove<br/>
+    /// Default: Batman_Batmobile_Moves.Eject.Abseil_Eject_Up_To_Glide
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig EjectUpWhenBatmobileVerticalMove
     {
@@ -1052,7 +1066,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInWhenBatmbileVerticalMove
+    /// ObjectProperty: GetInWhenBatmbileVerticalMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Abseiling
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInWhenBatmbileVerticalMove
     {
@@ -1061,7 +1076,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: SwingInBatmobileAbseilingMove
+    /// ObjectProperty: SwingInBatmobileAbseilingMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Swing
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig SwingInBatmobileAbseilingMove
     {
@@ -1079,7 +1095,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetInOnSideMove
+    /// ObjectProperty: GetInOnSideMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_On_Side
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetInOnSideMove
     {
@@ -1088,7 +1105,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: GetOutOnSideMove
+    /// ObjectProperty: GetOutOnSideMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_Out_Batmobile_On_Side
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig GetOutOnSideMove
     {
@@ -1097,7 +1115,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: HighSpeedPickupMove
+    /// ObjectProperty: HighSpeedPickupMove<br/>
+    /// Default: Batman_Batmobile_Moves.Get_In_Batmobile_Fast_Remote
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig HighSpeedPickupMove
     {
@@ -1106,7 +1125,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ObjectProperty: AfterburnerFFWaveForm
+    /// ObjectProperty: AfterburnerFFWaveForm<br/>
+    /// Default: BmScript.Default__RVehicleBatmobile.AfterburnerForceFeedbackWaveform
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform AfterburnerFFWaveForm
     {
@@ -1142,7 +1162,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// IntProperty: GetOutOnTopOnSteepInclinePitch
+    /// IntProperty: GetOutOnTopOnSteepInclinePitch<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe int GetOutOnTopOnSteepInclinePitch
     {
@@ -1187,7 +1208,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// BoolProperty: XrayMaterialsAssigned
+    /// BoolProperty: XrayMaterialsAssigned<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool XrayMaterialsAssigned
     {
@@ -1214,7 +1236,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fAfterBurnerRumbleStartStrength
+    /// FloatProperty: fAfterBurnerRumbleStartStrength<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float fAfterBurnerRumbleStartStrength
     {
@@ -1223,7 +1246,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fAfterBurnerRumbleStrengthTimeMultiplier
+    /// FloatProperty: fAfterBurnerRumbleStrengthTimeMultiplier<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float fAfterBurnerRumbleStrengthTimeMultiplier
     {
@@ -1250,7 +1274,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// FloatProperty: fAfterBurnerRumbleCutoffTimeMultiplier
+    /// FloatProperty: fAfterBurnerRumbleCutoffTimeMultiplier<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float fAfterBurnerRumbleCutoffTimeMultiplier
     {
@@ -1259,7 +1284,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradedGeneratorBonus
+    /// ArrayProperty: UpgradedGeneratorBonus<br/>
+    /// Default: (1.25,1.5)
     /// </summary>
     public unsafe BmSDK.TArray<float> UpgradedGeneratorBonus
     {
@@ -1268,7 +1294,8 @@ public partial class RVehicleBatmobile : BmSDK.BmGame.RVehicleBatmobileBase, BmS
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradedGeneratorShielding
+    /// ArrayProperty: UpgradedGeneratorShielding<br/>
+    /// Default: (0.333,0.666)
     /// </summary>
     public unsafe BmSDK.TArray<float> UpgradedGeneratorShielding
     {

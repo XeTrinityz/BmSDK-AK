@@ -79,7 +79,8 @@ public partial class AnimNodeScaleRateBySpeed : BmSDK.Engine.AnimNodeScalePlayRa
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: BaseSpeed
+    /// FloatProperty: BaseSpeed<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float BaseSpeed
     {

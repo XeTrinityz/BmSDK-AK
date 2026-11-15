@@ -79,7 +79,8 @@ public partial class ParticleModuleTrailSpawn : BmSDK.Engine.ParticleModuleTrail
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// ComponentProperty: SpawnDistanceMap
+    /// ComponentProperty: SpawnDistanceMap<br/>
+    /// Default: Engine.Default__ParticleModuleTrailSpawn.DistributionSpawnDistanceMap
     /// </summary>
     public unsafe BmSDK.Engine.DistributionFloatParticleParameter SpawnDistanceMap
     {

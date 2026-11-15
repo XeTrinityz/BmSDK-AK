@@ -158,7 +158,8 @@ public partial class RBMAIAction_DropFromGarg : BmSDK.BmGame.RBMAIAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: MaxDropSpeed
+    /// FloatProperty: MaxDropSpeed<br/>
+    /// Default: 950
     /// </summary>
     public unsafe float MaxDropSpeed
     {
@@ -167,7 +168,8 @@ public partial class RBMAIAction_DropFromGarg : BmSDK.BmGame.RBMAIAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: DropAcceleration
+    /// FloatProperty: DropAcceleration<br/>
+    /// Default: 2000
     /// </summary>
     public unsafe float DropAcceleration
     {
@@ -176,7 +178,8 @@ public partial class RBMAIAction_DropFromGarg : BmSDK.BmGame.RBMAIAction, BmSDK.
     }
 
     /// <summary>
-    /// FloatProperty: LandDist
+    /// FloatProperty: LandDist<br/>
+    /// Default: 170
     /// </summary>
     public unsafe float LandDist
     {

@@ -283,7 +283,8 @@ public partial class RCombatMove_LieutenantSledgehammerAttack : BmSDK.BmGame.RCo
     }
 
     /// <summary>
-    /// BoolProperty: bBark
+    /// BoolProperty: bBark<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bBark
     {

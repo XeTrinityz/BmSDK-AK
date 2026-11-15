@@ -214,7 +214,8 @@ public partial class TextureCube : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: ReflectionIndex
+    /// IntProperty: ReflectionIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int ReflectionIndex
     {

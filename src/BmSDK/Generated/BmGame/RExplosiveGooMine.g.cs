@@ -500,7 +500,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: ExplosionRadius
+    /// FloatProperty: ExplosionRadius<br/>
+    /// Default: 350
     /// </summary>
     public unsafe float ExplosionRadius
     {
@@ -509,7 +510,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: FractureRadius
+    /// FloatProperty: FractureRadius<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float FractureRadius
     {
@@ -518,7 +520,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 3500
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -527,7 +530,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: WallKillRadius
+    /// FloatProperty: WallKillRadius<br/>
+    /// Default: 700
     /// </summary>
     public unsafe float WallKillRadius
     {
@@ -572,7 +576,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ObjectProperty: ExplosionRumble
+    /// ObjectProperty: ExplosionRumble<br/>
+    /// Default: BmGame.Default__RExplosiveGooMine.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform ExplosionRumble
     {
@@ -698,7 +703,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ComponentProperty: VantageInfluenceAreaMarker
+    /// ComponentProperty: VantageInfluenceAreaMarker<br/>
+    /// Default: BmGame.Default__RExplosiveGooMine.InfluenceAreaMarker0
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent VantageInfluenceAreaMarker
     {
@@ -716,7 +722,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ComponentProperty: ImpulseComponent
+    /// ComponentProperty: ImpulseComponent<br/>
+    /// Default: BmGame.Default__RExplosiveGooMine.ImpulseComponent0
     /// </summary>
     public unsafe BmSDK.Engine.RB_RadialImpulseComponent ImpulseComponent
     {
@@ -725,7 +732,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// ComponentProperty: DetonatorInteractions
+    /// ComponentProperty: DetonatorInteractions<br/>
+    /// Default: BmGame.Default__RExplosiveGooMine.Interactions
     /// </summary>
     public unsafe BmSDK.Engine.RInteractionComponent DetonatorInteractions
     {
@@ -920,7 +928,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 888);
 
     /// <summary>
-    /// FloatProperty: SettleTimer
+    /// FloatProperty: SettleTimer<br/>
+    /// Default: 7
     /// </summary>
     public unsafe float SettleTimer
     {
@@ -929,7 +938,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// FloatProperty: SprayLength
+    /// FloatProperty: SprayLength<br/>
+    /// Default: 152
     /// </summary>
     public unsafe float SprayLength
     {
@@ -938,13 +948,15 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// StructProperty: Shaker
+    /// StructProperty: Shaker<br/>
+    /// Default: (TimeDuration=0.4,LocAmplitude=(X=20,Y=10,Z=10),LocFrequency=(X=1.7,Y=1.7,Z=1.7),RotAmplitude=(X=2400,Y=2400,Z=2400),RotFrequency=(X=2.5,Y=2.5,Z=2.5),FOVMultiplier=1,FOVFrequency=5,AdvancedOptions=(Fa...
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shaker
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct>(Ptr + 908);
 
     /// <summary>
-    /// IntProperty: AmmoPerMine
+    /// IntProperty: AmmoPerMine<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int AmmoPerMine
     {
@@ -953,7 +965,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
     }
 
     /// <summary>
-    /// IntProperty: GelDamage
+    /// IntProperty: GelDamage<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int GelDamage
     {
@@ -968,7 +981,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1072);
 
     /// <summary>
-    /// StructProperty: ExplosionArrowOffset
+    /// StructProperty: ExplosionArrowOffset<br/>
+    /// Default: (X=50,Y=50)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 ExplosionArrowOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 1084);

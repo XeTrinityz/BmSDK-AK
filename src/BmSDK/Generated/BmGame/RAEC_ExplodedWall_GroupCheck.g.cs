@@ -369,7 +369,8 @@ public partial class RAEC_ExplodedWall_GroupCheck : BmSDK.BmGame.RAlertEventCoor
     }
 
     /// <summary>
-    /// FloatProperty: TimeOutDelay
+    /// FloatProperty: TimeOutDelay<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float TimeOutDelay
     {

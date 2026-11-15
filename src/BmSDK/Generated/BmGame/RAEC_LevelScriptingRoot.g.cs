@@ -135,7 +135,8 @@ public partial class RAEC_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoordinat
     }
 
     /// <summary>
-    /// FloatProperty: latchDuration
+    /// FloatProperty: latchDuration<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float latchDuration
     {

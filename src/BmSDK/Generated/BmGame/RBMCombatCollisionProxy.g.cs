@@ -183,7 +183,8 @@ public partial class RBMCombatCollisionProxy : BmSDK.Engine.Actor, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionCylinder
+    /// ComponentProperty: CollisionCylinder<br/>
+    /// Default: BmGame.Default__RBMCombatCollisionProxy.NewCollisionCylinder
     /// </summary>
     public unsafe BmSDK.Engine.CylinderComponent CollisionCylinder
     {

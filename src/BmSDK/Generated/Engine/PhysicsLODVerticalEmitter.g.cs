@@ -79,7 +79,8 @@ public partial class PhysicsLODVerticalEmitter : BmSDK.GameObject, BmSDK.IGameOb
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// IntProperty: ParticlePercentage
+    /// IntProperty: ParticlePercentage<br/>
+    /// Default: 100
     /// </summary>
     public unsafe int ParticlePercentage
     {

@@ -188,7 +188,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: approxProportionActivePanels
+    /// FloatProperty: approxProportionActivePanels<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float approxProportionActivePanels
     {
@@ -197,7 +198,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: spawnTriggerRange
+    /// FloatProperty: spawnTriggerRange<br/>
+    /// Default: 2200
     /// </summary>
     public unsafe float spawnTriggerRange
     {
@@ -206,7 +208,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: explosionTriggerRadius
+    /// FloatProperty: explosionTriggerRadius<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float explosionTriggerRadius
     {
@@ -215,7 +218,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: explosionDamage
+    /// FloatProperty: explosionDamage<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float explosionDamage
     {
@@ -224,7 +228,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// FloatProperty: explosionImpulse
+    /// FloatProperty: explosionImpulse<br/>
+    /// Default: 60000
     /// </summary>
     public unsafe float explosionImpulse
     {
@@ -233,7 +238,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
     }
 
     /// <summary>
-    /// NameProperty: FloorOpenAnimationName
+    /// NameProperty: FloorOpenAnimationName<br/>
+    /// Default: NRiddler_ElecFloor_New_Anim
     /// </summary>
     public unsafe BmSDK.FName FloorOpenAnimationName
     {

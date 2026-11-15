@@ -516,7 +516,8 @@ public partial class RSpecialMoveInstance_OpenGrate : BmSDK.BmGame.RSpecialMoveI
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmScript.RSpecialMoveConfig_OpenGrate.FStruggleSequence>(Ptr + 1000);
 
     /// <summary>
-    /// ObjectProperty: CurrentWaveForm
+    /// ObjectProperty: CurrentWaveForm<br/>
+    /// Default: BmScript.Default__RSpecialMoveInstance_OpenGrate.ForceFeedbackWaveform0
     /// </summary>
     public unsafe BmSDK.Engine.ForceFeedbackWaveform CurrentWaveForm
     {

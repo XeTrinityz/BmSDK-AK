@@ -148,7 +148,8 @@ public partial class RAEC_MuseumBooth : BmSDK.BmGame.RAlertEventCoordinatorBase,
     }
 
     /// <summary>
-    /// IntProperty: MaxTriggerCount
+    /// IntProperty: MaxTriggerCount<br/>
+    /// Default: 2
     /// </summary>
     public unsafe int MaxTriggerCount
     {

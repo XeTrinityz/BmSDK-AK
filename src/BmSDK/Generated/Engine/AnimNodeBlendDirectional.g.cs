@@ -79,7 +79,8 @@ public partial class AnimNodeBlendDirectional : BmSDK.Engine.AnimNodeBlendBase, 
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: DirDegreesPerSecond
+    /// FloatProperty: DirDegreesPerSecond<br/>
+    /// Default: 360
     /// </summary>
     public unsafe float DirDegreesPerSecond
     {
@@ -97,7 +98,8 @@ public partial class AnimNodeBlendDirectional : BmSDK.Engine.AnimNodeBlendBase, 
     }
 
     /// <summary>
-    /// IntProperty: SingleAnimAtOrAboveLOD
+    /// IntProperty: SingleAnimAtOrAboveLOD<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe int SingleAnimAtOrAboveLOD
     {

@@ -134,7 +134,8 @@ public partial class RSeqAct_SetMiniDroneController : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// ObjectProperty: MinidroneCodesHaventBeenDownloadedYetThought
+    /// ObjectProperty: MinidroneCodesHaventBeenDownloadedYetThought<br/>
+    /// Default: Main_Ch04_S07_Stagg_A1_Bm_Target_Controller.Lines.Main_Ch04_S07_Stagg_A1_Bm_Target_Controller_01
     /// </summary>
     public unsafe BmSDK.Engine.AkDialogueSpeech MinidroneCodesHaventBeenDownloadedYetThought
     {
@@ -152,7 +153,8 @@ public partial class RSeqAct_SetMiniDroneController : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// FloatProperty: m_fMaximumMiniDroneControllerInteractionDistance
+    /// FloatProperty: m_fMaximumMiniDroneControllerInteractionDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float m_fMaximumMiniDroneControllerInteractionDistance
     {

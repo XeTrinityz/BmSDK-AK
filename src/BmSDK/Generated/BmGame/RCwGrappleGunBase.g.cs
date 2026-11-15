@@ -2440,7 +2440,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         }
 
         /// <summary>
-        /// IntProperty: ArrayIndex
+        /// IntProperty: ArrayIndex<br/>
+        /// Default: -1
         /// </summary>
         public unsafe int ArrayIndex
         {
@@ -4063,13 +4064,15 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
     }
 
     /// <summary>
-    /// StructProperty: CurrentClimbInfo
+    /// StructProperty: CurrentClimbInfo<br/>
+    /// Default: (ArrayIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo CurrentClimbInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo>(Ptr + 4036);
 
     /// <summary>
-    /// StructProperty: LastClimbInfo
+    /// StructProperty: LastClimbInfo<br/>
+    /// Default: (ArrayIndex=-1)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo LastClimbInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo>(Ptr + 5132);

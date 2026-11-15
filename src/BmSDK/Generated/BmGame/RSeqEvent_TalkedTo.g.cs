@@ -111,7 +111,8 @@ public partial class RSeqEvent_TalkedTo : BmSDK.Engine.SequenceEvent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CustomRange
+    /// FloatProperty: CustomRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomRange
     {
@@ -120,7 +121,8 @@ public partial class RSeqEvent_TalkedTo : BmSDK.Engine.SequenceEvent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CustomHeightRange
+    /// FloatProperty: CustomHeightRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomHeightRange
     {
@@ -129,7 +131,8 @@ public partial class RSeqEvent_TalkedTo : BmSDK.Engine.SequenceEvent, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CustomAngleRange
+    /// FloatProperty: CustomAngleRange<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float CustomAngleRange
     {

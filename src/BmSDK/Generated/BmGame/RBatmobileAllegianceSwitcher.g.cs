@@ -148,7 +148,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// FloatProperty: HackDuration
+    /// FloatProperty: HackDuration<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float HackDuration
     {
@@ -157,7 +158,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// FloatProperty: LockOnRange
+    /// FloatProperty: LockOnRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float LockOnRange
     {
@@ -166,7 +168,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// FloatProperty: LockOnAngle
+    /// FloatProperty: LockOnAngle<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float LockOnAngle
     {
@@ -256,7 +259,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// ArrayProperty: HackerEffect
+    /// ArrayProperty: HackerEffect<br/>
+    /// Default: (BmGame.Default__RBatmobileAllegianceSwitcher.DroneHackerEffect0,BmGame.Default__RBatmobileAllegianceSwitcher.DroneHackerEffect1,BmGame.Default__RBatmobileAllegianceSwitcher.DroneHackerEffect2,BmGame....
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.ParticleSystemComponent> HackerEffect
     {
@@ -283,7 +287,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// NameProperty: HackerEffectSocket
+    /// NameProperty: HackerEffectSocket<br/>
+    /// Default: BattleModeSpotLight
     /// </summary>
     public unsafe BmSDK.FName HackerEffectSocket
     {
@@ -292,7 +297,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// ArrayProperty: NumTargetsPerLevel
+    /// ArrayProperty: NumTargetsPerLevel<br/>
+    /// Default: (1,2,3,4)
     /// </summary>
     public unsafe BmSDK.TArray<int> NumTargetsPerLevel
     {
@@ -301,7 +307,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// ArrayProperty: HackDurationPerLevel
+    /// ArrayProperty: HackDurationPerLevel<br/>
+    /// Default: (600,600,600,600)
     /// </summary>
     public unsafe BmSDK.TArray<float> HackDurationPerLevel
     {
@@ -310,7 +317,8 @@ public partial class RBatmobileAllegianceSwitcher : BmSDK.BmGame.RVehicleWeapon,
     }
 
     /// <summary>
-    /// ArrayProperty: HackTimeMultiplierPerLevel
+    /// ArrayProperty: HackTimeMultiplierPerLevel<br/>
+    /// Default: (1.5,1,0.75,0.5)
     /// </summary>
     public unsafe BmSDK.TArray<float> HackTimeMultiplierPerLevel
     {

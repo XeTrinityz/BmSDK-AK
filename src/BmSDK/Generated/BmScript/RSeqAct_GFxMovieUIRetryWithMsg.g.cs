@@ -134,7 +134,8 @@ public partial class RSeqAct_GFxMovieUIRetryWithMsg : BmSDK.Engine.SequenceActio
     }
 
     /// <summary>
-    /// ObjectProperty: TheGFxMovieInstance
+    /// ObjectProperty: TheGFxMovieInstance<br/>
+    /// Default: InGameFlashContent.NonARLost
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie TheGFxMovieInstance
     {

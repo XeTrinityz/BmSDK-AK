@@ -92,7 +92,8 @@ public partial class RSeqEvent_HelicopterDialogueTrigger : BmSDK.Engine.Sequence
     }
 
     /// <summary>
-    /// BoolProperty: DialogueEnabled
+    /// BoolProperty: DialogueEnabled<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool DialogueEnabled
     {

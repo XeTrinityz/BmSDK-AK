@@ -242,7 +242,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: StartledAnimations
+        /// StructProperty: StartledAnimations<br/>
+        /// Default: (FrontStartle=(bHasNoMovement=true,RandomChancePerc=100),BackStartle=(bHasNoMovement=true,RandomChancePerc=100))
         /// </summary>
         public unsafe BmSDK.BmGame.RBM2IdleConfig.FStartledAnimationData StartledAnimations
         {
@@ -258,7 +259,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     public partial record struct FStartledAnimationData
     {
         /// <summary>
-        /// StructProperty: FrontStartle
+        /// StructProperty: FrontStartle<br/>
+        /// Default: (bHasNoMovement=true,RandomChancePerc=100)
         /// </summary>
         public unsafe BmSDK.BmGame.RBM2IdleConfig.FRandomAnimation FrontStartle
         {
@@ -267,7 +269,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// StructProperty: BackStartle
+        /// StructProperty: BackStartle<br/>
+        /// Default: (bHasNoMovement=true,RandomChancePerc=100)
         /// </summary>
         public unsafe BmSDK.BmGame.RBM2IdleConfig.FRandomAnimation BackStartle
         {
@@ -326,7 +329,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bHasNoMovement
+        /// BoolProperty: bHasNoMovement<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bHasNoMovement
         {
@@ -344,7 +348,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// IntProperty: RandomChancePerc
+        /// IntProperty: RandomChancePerc<br/>
+        /// Default: 100
         /// </summary>
         public unsafe int RandomChancePerc
         {
@@ -378,7 +383,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         }
 
         /// <summary>
-        /// BoolProperty: bHasNoMovement
+        /// BoolProperty: bHasNoMovement<br/>
+        /// Default: true
         /// </summary>
         public unsafe bool bHasNoMovement
         {
@@ -449,7 +455,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Anims
+    /// StructProperty: Anims<br/>
+    /// Default: (StartledAnimations=(FrontStartle=(bHasNoMovement=true,RandomChancePerc=100),BackStartle=(bHasNoMovement=true,RandomChancePerc=100)))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RBM2IdleConfig.FAnimationSets Anims
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBM2IdleConfig.FAnimationSets>(Ptr + 100);
@@ -485,7 +492,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ObjectProperty: IdleAimingConfig
+    /// ObjectProperty: IdleAimingConfig<br/>
+    /// Default: BmGame.Default__RBM2IdleConfig.RelaxedHead
     /// </summary>
     public unsafe BmSDK.Engine.RAimingConfig IdleAimingConfig
     {
@@ -503,7 +511,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: EndMovementStanceArray
+    /// ArrayProperty: EndMovementStanceArray<br/>
+    /// Default: (Standing,Standing,Combat,Combat)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> EndMovementStanceArray
     {
@@ -512,7 +521,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: EndWeaponStanceArray
+    /// ArrayProperty: EndWeaponStanceArray<br/>
+    /// Default: (Relaxed,Aiming,Relaxed,Aiming)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> EndWeaponStanceArray
     {
@@ -521,7 +531,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: IsAllowedToInstantlyChangeAnimation
+    /// BoolProperty: IsAllowedToInstantlyChangeAnimation<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool IsAllowedToInstantlyChangeAnimation
     {
@@ -557,7 +568,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: minTimeBetweenWalkVariants
+    /// FloatProperty: minTimeBetweenWalkVariants<br/>
+    /// Default: 6
     /// </summary>
     public unsafe float minTimeBetweenWalkVariants
     {
@@ -566,7 +578,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: maxTimeBetweenWalkVariants
+    /// FloatProperty: maxTimeBetweenWalkVariants<br/>
+    /// Default: 12
     /// </summary>
     public unsafe float maxTimeBetweenWalkVariants
     {
@@ -581,7 +594,8 @@ public partial class RBM2IdleConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RBM2IdleConfig.FInterrogationAnimations>(Ptr + 332);
 
     /// <summary>
-    /// FloatProperty: DeviationForMovement
+    /// FloatProperty: DeviationForMovement<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float DeviationForMovement
     {

@@ -79,7 +79,8 @@ public partial class ParticleModuleKillHeight : BmSDK.Engine.ParticleModuleKillB
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// StructProperty: Height
+    /// StructProperty: Height<br/>
+    /// Default: (Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0,0,0,0),Distribution=Engine.Default__ParticleModuleKillHeight.DistributionHeight)
     /// </summary>
     public unsafe ref BmSDK.DistributionFloat.FRawDistributionFloat Height
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.DistributionFloat.FRawDistributionFloat>(Ptr + 96);

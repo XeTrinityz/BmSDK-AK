@@ -101,7 +101,8 @@ public partial class SeqAct_Trace : BmSDK.Engine.SequenceAction, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// BoolProperty: bTraceWorld
+    /// BoolProperty: bTraceWorld<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTraceWorld
     {

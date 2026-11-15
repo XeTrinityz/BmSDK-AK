@@ -511,7 +511,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: viewConeAngle
+    /// FloatProperty: viewConeAngle<br/>
+    /// Default: 60
     /// </summary>
     public unsafe float viewConeAngle
     {
@@ -520,7 +521,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: awareOfBMBLRange
+    /// FloatProperty: awareOfBMBLRange<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float awareOfBMBLRange
     {
@@ -529,7 +531,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: minDist2D
+    /// FloatProperty: minDist2D<br/>
+    /// Default: 1500
     /// </summary>
     public unsafe float minDist2D
     {
@@ -538,7 +541,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: minDistZ
+    /// FloatProperty: minDistZ<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float minDistZ
     {
@@ -547,7 +551,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: maxDist2D
+    /// FloatProperty: maxDist2D<br/>
+    /// Default: 10000
     /// </summary>
     public unsafe float maxDist2D
     {
@@ -556,7 +561,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: minFleeTime
+    /// FloatProperty: minFleeTime<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float minFleeTime
     {
@@ -565,7 +571,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: introFleeTime
+    /// FloatProperty: introFleeTime<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float introFleeTime
     {
@@ -574,7 +581,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: fUntrackedAndOutOfSightTimeThreshold
+    /// FloatProperty: fUntrackedAndOutOfSightTimeThreshold<br/>
+    /// Default: 10
     /// </summary>
     public unsafe float fUntrackedAndOutOfSightTimeThreshold
     {
@@ -628,7 +636,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: throttleScaleNearDist
+    /// FloatProperty: throttleScaleNearDist<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float throttleScaleNearDist
     {
@@ -637,7 +646,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: throttleScaleFarDist
+    /// FloatProperty: throttleScaleFarDist<br/>
+    /// Default: 4000
     /// </summary>
     public unsafe float throttleScaleFarDist
     {
@@ -673,13 +683,15 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// StructProperty: boxSpawnOffset
+    /// StructProperty: boxSpawnOffset<br/>
+    /// Default: (Z=100)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 boxSpawnOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 520);
 
     /// <summary>
-    /// FloatProperty: boxSpawnIntervalMin
+    /// FloatProperty: boxSpawnIntervalMin<br/>
+    /// Default: 4
     /// </summary>
     public unsafe float boxSpawnIntervalMin
     {
@@ -688,7 +700,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: boxSpawnIntervalMax
+    /// FloatProperty: boxSpawnIntervalMax<br/>
+    /// Default: 8
     /// </summary>
     public unsafe float boxSpawnIntervalMax
     {
@@ -697,7 +710,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: boxSpawnMinVanSpeed
+    /// FloatProperty: boxSpawnMinVanSpeed<br/>
+    /// Default: 300
     /// </summary>
     public unsafe float boxSpawnMinVanSpeed
     {
@@ -706,7 +720,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: boxLifeTime
+    /// FloatProperty: boxLifeTime<br/>
+    /// Default: 30
     /// </summary>
     public unsafe float boxLifeTime
     {
@@ -715,7 +730,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// IntProperty: maxBoxes
+    /// IntProperty: maxBoxes<br/>
+    /// Default: 8
     /// </summary>
     public unsafe int maxBoxes
     {
@@ -751,7 +767,8 @@ public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK
     }
 
     /// <summary>
-    /// FloatProperty: lowLOSThreshold
+    /// FloatProperty: lowLOSThreshold<br/>
+    /// Default: 0.4
     /// </summary>
     public unsafe float lowLOSThreshold
     {

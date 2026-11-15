@@ -79,7 +79,8 @@ public partial class AnimationCompressionAlgorithm_Automatic : BmSDK.Engine.Anim
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxEndEffectorError
+    /// FloatProperty: MaxEndEffectorError<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MaxEndEffectorError
     {
@@ -88,7 +89,8 @@ public partial class AnimationCompressionAlgorithm_Automatic : BmSDK.Engine.Anim
     }
 
     /// <summary>
-    /// BoolProperty: bTryFixedBitwiseCompression
+    /// BoolProperty: bTryFixedBitwiseCompression<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTryFixedBitwiseCompression
     {
@@ -97,7 +99,8 @@ public partial class AnimationCompressionAlgorithm_Automatic : BmSDK.Engine.Anim
     }
 
     /// <summary>
-    /// BoolProperty: bTryPerTrackBitwiseCompression
+    /// BoolProperty: bTryPerTrackBitwiseCompression<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTryPerTrackBitwiseCompression
     {
@@ -106,7 +109,8 @@ public partial class AnimationCompressionAlgorithm_Automatic : BmSDK.Engine.Anim
     }
 
     /// <summary>
-    /// BoolProperty: bTryLinearKeyRemovalCompression
+    /// BoolProperty: bTryLinearKeyRemovalCompression<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTryLinearKeyRemovalCompression
     {
@@ -115,7 +119,8 @@ public partial class AnimationCompressionAlgorithm_Automatic : BmSDK.Engine.Anim
     }
 
     /// <summary>
-    /// BoolProperty: bTryIntervalKeyRemoval
+    /// BoolProperty: bTryIntervalKeyRemoval<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bTryIntervalKeyRemoval
     {

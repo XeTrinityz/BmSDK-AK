@@ -1000,7 +1000,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// NameProperty: NewMovementStance
+    /// NameProperty: NewMovementStance<br/>
+    /// Default: Standing
     /// </summary>
     public unsafe BmSDK.FName NewMovementStance
     {
@@ -1009,7 +1010,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// NameProperty: NewWeaponStance
+    /// NameProperty: NewWeaponStance<br/>
+    /// Default: Relaxed
     /// </summary>
     public unsafe BmSDK.FName NewWeaponStance
     {
@@ -1084,7 +1086,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: ChanceOfNewRunCycle
+    /// FloatProperty: ChanceOfNewRunCycle<br/>
+    /// Default: 33
     /// </summary>
     public unsafe float ChanceOfNewRunCycle
     {
@@ -1093,7 +1096,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// FloatProperty: StartleFriendDistance
+    /// FloatProperty: StartleFriendDistance<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float StartleFriendDistance
     {
@@ -1108,7 +1112,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 872);
 
     /// <summary>
-    /// ArrayProperty: FleeReactionFront
+    /// ArrayProperty: FleeReactionFront<br/>
+    /// Default: (Reaction_to_BM_Front_01,Reaction_to_BM_Front_02,Reaction_to_BM_Front_03,Reaction_to_BM_Front_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FleeReactionFront
     {
@@ -1117,7 +1122,8 @@ public partial class RBMBehaviour_GangMovementBase : BmSDK.BmGame.RBMBehaviour_G
     }
 
     /// <summary>
-    /// ArrayProperty: FleeReactionBack
+    /// ArrayProperty: FleeReactionBack<br/>
+    /// Default: (Reaction_to_BM_Back_01,Reaction_to_BM_Back_02,Reaction_to_BM_Back_03,Reaction_to_BM_Back_04)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.FName> FleeReactionBack
     {

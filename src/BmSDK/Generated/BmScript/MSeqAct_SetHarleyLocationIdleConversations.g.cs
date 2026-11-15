@@ -93,7 +93,8 @@ public partial class MSeqAct_SetHarleyLocationIdleConversations : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: bChangePenguinIdleConversations
+    /// BoolProperty: bChangePenguinIdleConversations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bChangePenguinIdleConversations
     {
@@ -102,7 +103,8 @@ public partial class MSeqAct_SetHarleyLocationIdleConversations : BmSDK.Engine.S
     }
 
     /// <summary>
-    /// BoolProperty: bChangePsychoIdleConversations
+    /// BoolProperty: bChangePsychoIdleConversations<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bChangePsychoIdleConversations
     {

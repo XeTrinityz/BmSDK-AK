@@ -128,7 +128,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: WhipHandWeightCurveFloatName
+    /// NameProperty: WhipHandWeightCurveFloatName<br/>
+    /// Default: WhipHandWeight
     /// </summary>
     public unsafe BmSDK.FName WhipHandWeightCurveFloatName
     {
@@ -137,7 +138,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: WhipTargetingWeightCurveFloatName
+    /// NameProperty: WhipTargetingWeightCurveFloatName<br/>
+    /// Default: WhipTargetingWeight
     /// </summary>
     public unsafe BmSDK.FName WhipTargetingWeightCurveFloatName
     {
@@ -146,7 +148,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: WhipReferencePoseBlendWeightMinCurveFloatName
+    /// NameProperty: WhipReferencePoseBlendWeightMinCurveFloatName<br/>
+    /// Default: RefPoseBlendWeightMin
     /// </summary>
     public unsafe BmSDK.FName WhipReferencePoseBlendWeightMinCurveFloatName
     {
@@ -155,7 +158,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// StructProperty: WhipHipPhysData
+    /// StructProperty: WhipHipPhysData<br/>
+    /// Default: (CentreOfMassDist=20,GravityZ=-500,RotationMax=30,Restitution=0.6,Damping=0.2,HandleForwardsVector=(X=1),HandleDownVector=(Y=1),HandleOutVector=(Z=1))
     /// </summary>
     public unsafe ref BmSDK.BmGame.RSkelControlWhip.FWhipHipPhysicsData WhipHipPhysData
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RSkelControlWhip.FWhipHipPhysicsData>(Ptr + 320);
@@ -284,7 +288,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: CentreOfMassDist
+        /// FloatProperty: CentreOfMassDist<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float CentreOfMassDist
         {
@@ -293,7 +298,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: GravityZ
+        /// FloatProperty: GravityZ<br/>
+        /// Default: -500
         /// </summary>
         public unsafe float GravityZ
         {
@@ -302,7 +308,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: RotationMax
+        /// FloatProperty: RotationMax<br/>
+        /// Default: 30
         /// </summary>
         public unsafe float RotationMax
         {
@@ -311,7 +318,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: Restitution
+        /// FloatProperty: Restitution<br/>
+        /// Default: 0.6
         /// </summary>
         public unsafe float Restitution
         {
@@ -320,7 +328,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// FloatProperty: Damping
+        /// FloatProperty: Damping<br/>
+        /// Default: 0.2
         /// </summary>
         public unsafe float Damping
         {
@@ -329,7 +338,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// StructProperty: HandleForwardsVector
+        /// StructProperty: HandleForwardsVector<br/>
+        /// Default: (X=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 HandleForwardsVector
         {
@@ -338,7 +348,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// StructProperty: HandleDownVector
+        /// StructProperty: HandleDownVector<br/>
+        /// Default: (Y=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 HandleDownVector
         {
@@ -347,7 +358,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
         }
 
         /// <summary>
-        /// StructProperty: HandleOutVector
+        /// StructProperty: HandleOutVector<br/>
+        /// Default: (Z=1)
         /// </summary>
         public unsafe System.Numerics.Vector3 HandleOutVector
         {

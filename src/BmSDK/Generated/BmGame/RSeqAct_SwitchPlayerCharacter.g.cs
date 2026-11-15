@@ -188,7 +188,8 @@ public partial class RSeqAct_SwitchPlayerCharacter : BmSDK.Engine.SeqAct_Latent,
     }
 
     /// <summary>
-    /// IntProperty: PreLoadSlot
+    /// IntProperty: PreLoadSlot<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int PreLoadSlot
     {

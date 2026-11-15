@@ -124,7 +124,8 @@ public partial class RCrowdSpawner_XPBats : BmSDK.BmGame.RCrowdSpawner, BmSDK.IG
     }
 
     /// <summary>
-    /// FloatProperty: AgentStageTime
+    /// FloatProperty: AgentStageTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float AgentStageTime
     {

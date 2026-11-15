@@ -680,7 +680,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimOpen
+    /// NameProperty: AnimOpen<br/>
+    /// Default: Bunker_Door_Open
     /// </summary>
     public unsafe BmSDK.FName AnimOpen
     {
@@ -689,7 +690,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimClose
+    /// NameProperty: AnimClose<br/>
+    /// Default: Bunker_Door_Close
     /// </summary>
     public unsafe BmSDK.FName AnimClose
     {
@@ -698,7 +700,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimOpenSlowStart
+    /// NameProperty: AnimOpenSlowStart<br/>
+    /// Default: Slow_Open_Begining
     /// </summary>
     public unsafe BmSDK.FName AnimOpenSlowStart
     {
@@ -707,7 +710,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimOpenSlowLoop
+    /// NameProperty: AnimOpenSlowLoop<br/>
+    /// Default: Slow_Open_Looping
     /// </summary>
     public unsafe BmSDK.FName AnimOpenSlowLoop
     {
@@ -716,7 +720,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimOpenSlowEnd
+    /// NameProperty: AnimOpenSlowEnd<br/>
+    /// Default: Slow_Open_End
     /// </summary>
     public unsafe BmSDK.FName AnimOpenSlowEnd
     {
@@ -725,7 +730,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// NameProperty: AnimOpenSlowClose
+    /// NameProperty: AnimOpenSlowClose<br/>
+    /// Default: Slow_Open_Close
     /// </summary>
     public unsafe BmSDK.FName AnimOpenSlowClose
     {
@@ -752,7 +758,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh2
+    /// ComponentProperty: InvestigationMesh2<br/>
+    /// Default: BmScript.Default__RLevelTransitionDoorBunkerBase.StaticMeshComponentII2
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh2
     {
@@ -761,7 +768,8 @@ public partial class RLevelTransitionDoorBunkerBase : BmSDK.BmGame.RLevelTransit
     }
 
     /// <summary>
-    /// ComponentProperty: InvestigationMesh1
+    /// ComponentProperty: InvestigationMesh1<br/>
+    /// Default: BmScript.Default__RLevelTransitionDoorBunkerBase.StaticMeshComponentII1
     /// </summary>
     public unsafe BmSDK.Engine.StaticMeshComponent InvestigationMesh1
     {

@@ -97,7 +97,8 @@ public partial class RSpecialMoveConfig_FakeRestart : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// FloatProperty: FadeOutTime
+    /// FloatProperty: FadeOutTime<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float FadeOutTime
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveConfig_FakeRestart : BmSDK.BmGame.RSpecialMoveC
     }
 
     /// <summary>
-    /// BoolProperty: fadesAudio
+    /// BoolProperty: fadesAudio<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool fadesAudio
     {

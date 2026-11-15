@@ -358,7 +358,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bShouldBeVisibleInLevelBrowser
+    /// BoolProperty: bShouldBeVisibleInLevelBrowser<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldBeVisibleInLevelBrowser
     {
@@ -367,7 +368,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bExpandedInLevelBrowser
+    /// BoolProperty: bExpandedInLevelBrowser<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bExpandedInLevelBrowser
     {
@@ -394,7 +396,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bDrawOnLevelStatusMap
+    /// BoolProperty: bDrawOnLevelStatusMap<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDrawOnLevelStatusMap
     {
@@ -481,7 +484,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MinTimeBetweenVolumeUnloadRequests
+    /// FloatProperty: MinTimeBetweenVolumeUnloadRequests<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MinTimeBetweenVolumeUnloadRequests
     {
@@ -508,7 +512,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: NavMeshGroup
+    /// ByteProperty: NavMeshGroup<br/>
+    /// Default: NavMeshGroup_1
     /// </summary>
     public unsafe BmSDK.Engine.LevelStreaming.ENavMeshGroup NavMeshGroup
     {
@@ -517,7 +522,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: ReflectionGroup
+    /// ByteProperty: ReflectionGroup<br/>
+    /// Default: ReflectionGroup_1
     /// </summary>
     public unsafe BmSDK.Engine.LevelStreaming.EReflectionGroup ReflectionGroup
     {

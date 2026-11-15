@@ -447,7 +447,8 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MinVantageAimTime
+    /// FloatProperty: MinVantageAimTime<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float MinVantageAimTime
     {
@@ -456,7 +457,8 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: MaxVantageAimTime
+    /// FloatProperty: MaxVantageAimTime<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float MaxVantageAimTime
     {
@@ -519,7 +521,8 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: AimListDirection
+    /// IntProperty: AimListDirection<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int AimListDirection
     {
@@ -537,13 +540,15 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// StructProperty: VantagePointAimOffset
+    /// StructProperty: VantagePointAimOffset<br/>
+    /// Default: (Z=-75)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 VantagePointAimOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 964);
 
     /// <summary>
-    /// FloatProperty: BeamBlendSpeed
+    /// FloatProperty: BeamBlendSpeed<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float BeamBlendSpeed
     {
@@ -561,7 +566,8 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// IntProperty: NumVantagePointsToLookAt
+    /// IntProperty: NumVantagePointsToLookAt<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int NumVantagePointsToLookAt
     {
@@ -588,7 +594,8 @@ public partial class RBMAIAction_OnGarg : BmSDK.BmGame.RBMAIAction, BmSDK.IGameO
     }
 
     /// <summary>
-    /// FloatProperty: OverrideTimeForFirstAim
+    /// FloatProperty: OverrideTimeForFirstAim<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float OverrideTimeForFirstAim
     {

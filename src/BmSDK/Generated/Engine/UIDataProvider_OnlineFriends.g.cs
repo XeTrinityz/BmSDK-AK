@@ -161,7 +161,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: NickNameCol
+    /// StrProperty: NickNameCol<br/>
+    /// Default: "Name"
     /// </summary>
     public unsafe BmSDK.FString NickNameCol
     {
@@ -170,7 +171,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: PresenceInfoCol
+    /// StrProperty: PresenceInfoCol<br/>
+    /// Default: "Online Status"
     /// </summary>
     public unsafe BmSDK.FString PresenceInfoCol
     {
@@ -188,7 +190,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: bIsOnlineCol
+    /// StrProperty: bIsOnlineCol<br/>
+    /// Default: "Is Online"
     /// </summary>
     public unsafe BmSDK.FString bIsOnlineCol
     {
@@ -197,7 +200,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: bIsPlayingCol
+    /// StrProperty: bIsPlayingCol<br/>
+    /// Default: "Is Playing"
     /// </summary>
     public unsafe BmSDK.FString bIsPlayingCol
     {
@@ -206,7 +210,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: bIsPlayingThisGameCol
+    /// StrProperty: bIsPlayingThisGameCol<br/>
+    /// Default: "Is Playing This Game"
     /// </summary>
     public unsafe BmSDK.FString bIsPlayingThisGameCol
     {
@@ -215,7 +220,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: bIsJoinableCol
+    /// StrProperty: bIsJoinableCol<br/>
+    /// Default: "Is Joinable"
     /// </summary>
     public unsafe BmSDK.FString bIsJoinableCol
     {
@@ -224,7 +230,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: bHasVoiceSupportCol
+    /// StrProperty: bHasVoiceSupportCol<br/>
+    /// Default: "Has Voice Support"
     /// </summary>
     public unsafe BmSDK.FString bHasVoiceSupportCol
     {
@@ -251,7 +258,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: OfflineText
+    /// StrProperty: OfflineText<br/>
+    /// Default: "Offline"
     /// </summary>
     public unsafe BmSDK.FString OfflineText
     {
@@ -260,7 +268,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: OnlineText
+    /// StrProperty: OnlineText<br/>
+    /// Default: "Online"
     /// </summary>
     public unsafe BmSDK.FString OnlineText
     {
@@ -269,7 +278,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: AwayText
+    /// StrProperty: AwayText<br/>
+    /// Default: "Away"
     /// </summary>
     public unsafe BmSDK.FString AwayText
     {
@@ -278,7 +288,8 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     }
 
     /// <summary>
-    /// StrProperty: BusyText
+    /// StrProperty: BusyText<br/>
+    /// Default: "Busy"
     /// </summary>
     public unsafe BmSDK.FString BusyText
     {

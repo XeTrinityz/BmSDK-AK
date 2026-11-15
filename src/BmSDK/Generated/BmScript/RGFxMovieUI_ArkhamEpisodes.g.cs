@@ -362,7 +362,8 @@ public partial class RGFxMovieUI_ArkhamEpisodes : BmSDK.BmGame.RGFxMovieUI, BmSD
     }
 
     /// <summary>
-    /// ObjectProperty: InstallerGFxMovieInstance
+    /// ObjectProperty: InstallerGFxMovieInstance<br/>
+    /// Default: InstallationProgress.InstallationProgress
     /// </summary>
     public unsafe BmSDK.GFxUI.SwfMovie InstallerGFxMovieInstance
     {

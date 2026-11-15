@@ -158,7 +158,8 @@ public partial class RBMAIAction_ShootActor : BmSDK.BmGame.RBMAIAction, BmSDK.IG
     }
 
     /// <summary>
-    /// BoolProperty: bActionStopAfterBurst
+    /// BoolProperty: bActionStopAfterBurst<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActionStopAfterBurst
     {

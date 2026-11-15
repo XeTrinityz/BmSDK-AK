@@ -235,7 +235,8 @@ public partial class RStealthTakeDownStage_GrabFromCrouch2 : BmSDK.BmGame.RSteal
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 1704);
 
     /// <summary>
-    /// IntProperty: iGoingDownStairsAnimationIndex
+    /// IntProperty: iGoingDownStairsAnimationIndex<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int iGoingDownStairsAnimationIndex
     {
@@ -244,7 +245,8 @@ public partial class RStealthTakeDownStage_GrabFromCrouch2 : BmSDK.BmGame.RSteal
     }
 
     /// <summary>
-    /// IntProperty: iGoingUpStairsAnimationIndex
+    /// IntProperty: iGoingUpStairsAnimationIndex<br/>
+    /// Default: 4
     /// </summary>
     public unsafe int iGoingUpStairsAnimationIndex
     {

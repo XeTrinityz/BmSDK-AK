@@ -220,7 +220,8 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     }
 
     /// <summary>
-    /// ArrayProperty: ObjectiveItemAppearanceEvents
+    /// ArrayProperty: ObjectiveItemAppearanceEvents<br/>
+    /// Default: (Ww_UI_InGame.Play_UI_MainStory_Update_Notify,Ww_UI_InGame.Play_UI_MainStory_Complete_Notify,Ww_UI_InGame.Play_UI_Content_Unlocked_Notify,Ww_UI_InGame.Play_UI_SideStory_Update_Notify,Ww_UI_InGame.Play...
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.AkEvent> ObjectiveItemAppearanceEvents
     {

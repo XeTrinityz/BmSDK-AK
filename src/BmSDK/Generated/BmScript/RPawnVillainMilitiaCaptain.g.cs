@@ -352,7 +352,8 @@ public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug,
     }
 
     /// <summary>
-    /// ArrayProperty: DestroyMineController
+    /// ArrayProperty: DestroyMineController<br/>
+    /// Default: (Batman_Level_Moves.Riots.DestroyMilitiaCaptainController,Batman_Level_Moves.Riots.DestroyMilitiaCaptainController_02,Batman_Level_Moves.Riots.DestroyMilitiaCaptainController_03)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RSpecialMoveConfig> DestroyMineController
     {
@@ -361,7 +362,8 @@ public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug,
     }
 
     /// <summary>
-    /// ObjectProperty: DestroyMineControllerNoCamera
+    /// ObjectProperty: DestroyMineControllerNoCamera<br/>
+    /// Default: Batman_Level_Moves.Riots.DestroyMilitiaCaptainControllerNoCam
     /// </summary>
     public unsafe BmSDK.BmGame.RSpecialMoveConfig DestroyMineControllerNoCamera
     {
@@ -370,7 +372,8 @@ public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug,
     }
 
     /// <summary>
-    /// ObjectProperty: ProximitySFX
+    /// ObjectProperty: ProximitySFX<br/>
+    /// Default: Ww_WPN_ProximityMines.Play_Command_Handheld_Signal
     /// </summary>
     public unsafe BmSDK.Engine.AkEvent ProximitySFX
     {
@@ -379,7 +382,8 @@ public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug,
     }
 
     /// <summary>
-    /// ComponentProperty: ControllerDevicePFX
+    /// ComponentProperty: ControllerDevicePFX<br/>
+    /// Default: BmScript.Default__RPawnVillainMilitiaCaptain.CPFX
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent ControllerDevicePFX
     {
@@ -397,7 +401,8 @@ public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug,
     }
 
     /// <summary>
-    /// FloatProperty: InteractRange
+    /// FloatProperty: InteractRange<br/>
+    /// Default: 150
     /// </summary>
     public unsafe float InteractRange
     {

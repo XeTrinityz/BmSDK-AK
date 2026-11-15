@@ -79,7 +79,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: MaxPosDiff
+    /// FloatProperty: MaxPosDiff<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float MaxPosDiff
     {
@@ -88,7 +89,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// FloatProperty: MaxAngleDiff
+    /// FloatProperty: MaxAngleDiff<br/>
+    /// Default: 0.00075
     /// </summary>
     public unsafe float MaxAngleDiff
     {
@@ -97,7 +99,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// FloatProperty: MaxEffectorDiff
+    /// FloatProperty: MaxEffectorDiff<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float MaxEffectorDiff
     {
@@ -106,7 +109,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// FloatProperty: MinEffectorDiff
+    /// FloatProperty: MinEffectorDiff<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float MinEffectorDiff
     {
@@ -115,7 +119,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// FloatProperty: EffectorDiffSocket
+    /// FloatProperty: EffectorDiffSocket<br/>
+    /// Default: 0.001
     /// </summary>
     public unsafe float EffectorDiffSocket
     {
@@ -124,7 +129,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// FloatProperty: ParentKeyScale
+    /// FloatProperty: ParentKeyScale<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float ParentKeyScale
     {
@@ -133,7 +139,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// BoolProperty: bRetarget
+    /// BoolProperty: bRetarget<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bRetarget
     {
@@ -142,7 +149,8 @@ public partial class AnimationCompressionAlgorithm_RemoveLinearKeys : BmSDK.Engi
     }
 
     /// <summary>
-    /// BoolProperty: bActuallyFilterLinearKeys
+    /// BoolProperty: bActuallyFilterLinearKeys<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bActuallyFilterLinearKeys
     {

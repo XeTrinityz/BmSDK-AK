@@ -144,7 +144,8 @@ public partial class RPredatorGunLockerMesh : BmSDK.BmGame.RPredatorGunLockerBas
     }
 
     /// <summary>
-    /// ComponentProperty: CollisionGeometry
+    /// ComponentProperty: CollisionGeometry<br/>
+    /// Default: BmScript.Default__RPredatorGunLockerMesh.PlayerCollisionVol
     /// </summary>
     public unsafe BmSDK.Engine.RAggGeomCollisionComponent CollisionGeometry
     {
@@ -168,7 +169,8 @@ public partial class RPredatorGunLockerMesh : BmSDK.BmGame.RPredatorGunLockerBas
     }
 
     /// <summary>
-    /// ComponentProperty: XrayLight
+    /// ComponentProperty: XrayLight<br/>
+    /// Default: BmScript.Default__RPredatorGunLockerMesh.XrayLightComponent
     /// </summary>
     public unsafe BmSDK.Engine.PointLightComponent XrayLight
     {

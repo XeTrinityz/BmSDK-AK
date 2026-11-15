@@ -115,7 +115,8 @@ public partial class RSeqAct_GetAndOpenFloorGrate : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// NameProperty: GrateAnimName
+    /// NameProperty: GrateAnimName<br/>
+    /// Default: Grate_Look_Inside
     /// </summary>
     public unsafe BmSDK.FName GrateAnimName
     {
@@ -124,7 +125,8 @@ public partial class RSeqAct_GetAndOpenFloorGrate : BmSDK.Engine.SequenceAction,
     }
 
     /// <summary>
-    /// StructProperty: OffsetRot
+    /// StructProperty: OffsetRot<br/>
+    /// Default: (Yaw=32768)
     /// </summary>
     public unsafe ref BmSDK.Rotator OffsetRot
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 368);

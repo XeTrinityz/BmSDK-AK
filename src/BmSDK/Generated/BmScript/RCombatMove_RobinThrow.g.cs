@@ -341,7 +341,8 @@ public partial class RCombatMove_RobinThrow : BmSDK.BmGame.RCombatMove_PlayerSpe
     }
 
     /// <summary>
-    /// BoolProperty: bCanUpdateThrowDir
+    /// BoolProperty: bCanUpdateThrowDir<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bCanUpdateThrowDir
     {
@@ -395,7 +396,8 @@ public partial class RCombatMove_RobinThrow : BmSDK.BmGame.RCombatMove_PlayerSpe
     }
 
     /// <summary>
-    /// FloatProperty: BiggestControllerInput
+    /// FloatProperty: BiggestControllerInput<br/>
+    /// Default: 0.3
     /// </summary>
     public unsafe float BiggestControllerInput
     {
@@ -422,7 +424,8 @@ public partial class RCombatMove_RobinThrow : BmSDK.BmGame.RCombatMove_PlayerSpe
     }
 
     /// <summary>
-    /// StructProperty: ThrowInfo
+    /// StructProperty: ThrowInfo<br/>
+    /// Default: (bActive=true)
     /// </summary>
     public unsafe ref BmSDK.BmGame.RPawnPlayerCombat.FThrowInfo ThrowInfo
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RPawnPlayerCombat.FThrowInfo>(Ptr + 976);

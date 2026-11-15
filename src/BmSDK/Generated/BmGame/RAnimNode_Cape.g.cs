@@ -419,7 +419,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: CurrCapeAnimNodeName
+    /// NameProperty: CurrCapeAnimNodeName<br/>
+    /// Default: Default
     /// </summary>
     public unsafe BmSDK.FName CurrCapeAnimNodeName
     {
@@ -455,7 +456,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: NewCapeAnimNodeName
+    /// NameProperty: NewCapeAnimNodeName<br/>
+    /// Default: Default
     /// </summary>
     public unsafe BmSDK.FName NewCapeAnimNodeName
     {
@@ -581,7 +583,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// FloatProperty: CurrAnimPlayRate
+    /// FloatProperty: CurrAnimPlayRate<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float CurrAnimPlayRate
     {
@@ -644,7 +647,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: PoseBlendAnimNodeName
+    /// NameProperty: PoseBlendAnimNodeName<br/>
+    /// Default: PoseBlend
     /// </summary>
     public unsafe BmSDK.FName PoseBlendAnimNodeName
     {
@@ -653,7 +657,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: StateAnimBlendNodeName
+    /// NameProperty: StateAnimBlendNodeName<br/>
+    /// Default: StateAnimBlend
     /// </summary>
     public unsafe BmSDK.FName StateAnimBlendNodeName
     {
@@ -662,7 +667,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: PrevStateAnimMirrorNodeName
+    /// NameProperty: PrevStateAnimMirrorNodeName<br/>
+    /// Default: PrevStateAnimMirror
     /// </summary>
     public unsafe BmSDK.FName PrevStateAnimMirrorNodeName
     {
@@ -671,7 +677,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: PrevStateAnimNodeName
+    /// NameProperty: PrevStateAnimNodeName<br/>
+    /// Default: PrevStateAnim
     /// </summary>
     public unsafe BmSDK.FName PrevStateAnimNodeName
     {
@@ -680,7 +687,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: CurrStateAnimMirrorNodeName
+    /// NameProperty: CurrStateAnimMirrorNodeName<br/>
+    /// Default: CurrStateAnimMirror
     /// </summary>
     public unsafe BmSDK.FName CurrStateAnimMirrorNodeName
     {
@@ -689,7 +697,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     }
 
     /// <summary>
-    /// NameProperty: CurrStateAnimNodeName
+    /// NameProperty: CurrStateAnimNodeName<br/>
+    /// Default: CurrStateAnim
     /// </summary>
     public unsafe BmSDK.FName CurrStateAnimNodeName
     {

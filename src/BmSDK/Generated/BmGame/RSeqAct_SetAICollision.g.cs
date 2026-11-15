@@ -111,7 +111,8 @@ public partial class RSeqAct_SetAICollision : BmSDK.Engine.SequenceAction, BmSDK
     }
 
     /// <summary>
-    /// ByteProperty: RagdollVsNavMeshSolution
+    /// ByteProperty: RagdollVsNavMeshSolution<br/>
+    /// Default: RAGvsNAV_Auto
     /// </summary>
     public unsafe BmSDK.BmGame.RPawnCharacter.ERagdollVsNavMesh RagdollVsNavMeshSolution
     {

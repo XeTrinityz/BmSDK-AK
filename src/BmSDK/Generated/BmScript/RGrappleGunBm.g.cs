@@ -221,7 +221,8 @@ public partial class RGrappleGunBm : BmSDK.BmGame.RGrappleGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ComponentProperty: MuzzleFlash
+    /// ComponentProperty: MuzzleFlash<br/>
+    /// Default: BmScript.Default__RGrappleGunBm.MuzzleFlash
     /// </summary>
     public unsafe BmSDK.Engine.ParticleSystemComponent MuzzleFlash
     {
@@ -230,7 +231,8 @@ public partial class RGrappleGunBm : BmSDK.BmGame.RGrappleGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeMeshes
+    /// ArrayProperty: UpgradeMeshes<br/>
+    /// Default: (Gadgets.GrappleGun.Equipment_GrappleGun_Boost_MK2,Gadgets.GrappleGun.Equipment_GrappleGun_Boost_MK2,Gadgets.GrappleGun.Equipment_GrappleGun_Boost_MK2)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.SkeletalMesh> UpgradeMeshes
     {
@@ -239,7 +241,8 @@ public partial class RGrappleGunBm : BmSDK.BmGame.RGrappleGun, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ArrayProperty: UpgradeMaterials
+    /// ArrayProperty: UpgradeMaterials<br/>
+    /// Default: (Gadgets.GrappleGun.Equipment_Grapple_Gun_Gauge_00_Mat,Gadgets.GrappleGun.Equipment_Grapple_Gun_Gauge_01_INST,Gadgets.GrappleGun.Equipment_Grapple_Gun_Gauge_02_INST)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.Engine.MaterialInterface> UpgradeMaterials
     {

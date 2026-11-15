@@ -88,13 +88,15 @@ public partial class WindDirectionalSourceComponent : BmSDK.Engine.ActorComponen
     }
 
     /// <summary>
-    /// StructProperty: Wind1Direction
+    /// StructProperty: Wind1Direction<br/>
+    /// Default: (Pitch=-7281,Yaw=5461)
     /// </summary>
     public unsafe ref BmSDK.Rotator Wind1Direction
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 132);
 
     /// <summary>
-    /// FloatProperty: Wind1Strength
+    /// FloatProperty: Wind1Strength<br/>
+    /// Default: 750
     /// </summary>
     public unsafe float Wind1Strength
     {
@@ -103,7 +105,8 @@ public partial class WindDirectionalSourceComponent : BmSDK.Engine.ActorComponen
     }
 
     /// <summary>
-    /// FloatProperty: Wind1Frequency
+    /// FloatProperty: Wind1Frequency<br/>
+    /// Default: 0.75
     /// </summary>
     public unsafe float Wind1Frequency
     {
@@ -112,13 +115,15 @@ public partial class WindDirectionalSourceComponent : BmSDK.Engine.ActorComponen
     }
 
     /// <summary>
-    /// StructProperty: Wind2Direction
+    /// StructProperty: Wind2Direction<br/>
+    /// Default: (Pitch=910,Yaw=-5461)
     /// </summary>
     public unsafe ref BmSDK.Rotator Wind2Direction
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 152);
 
     /// <summary>
-    /// FloatProperty: Wind2Strength
+    /// FloatProperty: Wind2Strength<br/>
+    /// Default: 200
     /// </summary>
     public unsafe float Wind2Strength
     {
@@ -127,7 +132,8 @@ public partial class WindDirectionalSourceComponent : BmSDK.Engine.ActorComponen
     }
 
     /// <summary>
-    /// FloatProperty: Wind2Frequency
+    /// FloatProperty: Wind2Frequency<br/>
+    /// Default: 3.15
     /// </summary>
     public unsafe float Wind2Frequency
     {

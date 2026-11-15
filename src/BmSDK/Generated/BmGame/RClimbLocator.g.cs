@@ -136,7 +136,8 @@ public partial class RClimbLocator : BmSDK.BmGame.RDummyTarget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bColumnFoot
+    /// BoolProperty: bColumnFoot<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bColumnFoot
     {
@@ -253,7 +254,8 @@ public partial class RClimbLocator : BmSDK.BmGame.RDummyTarget, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: FixedStep
+    /// FloatProperty: FixedStep<br/>
+    /// Default: -1
     /// </summary>
     public unsafe float FixedStep
     {

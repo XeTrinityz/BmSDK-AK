@@ -273,7 +273,8 @@ public partial class RGangVehicleInteractPoint : BmSDK.BmGame.RGangVehicleIntera
     }
 
     /// <summary>
-    /// BoolProperty: bIsActive
+    /// BoolProperty: bIsActive<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bIsActive
     {
@@ -309,7 +310,8 @@ public partial class RGangVehicleInteractPoint : BmSDK.BmGame.RGangVehicleIntera
     }
 
     /// <summary>
-    /// ObjectProperty: EmptyCarScenario
+    /// ObjectProperty: EmptyCarScenario<br/>
+    /// Default: Vehicle_Scenarios.Riots.Taxi_0_Passenger
     /// </summary>
     public unsafe BmSDK.BmGame.RVehicleScenario EmptyCarScenario
     {
@@ -345,7 +347,8 @@ public partial class RGangVehicleInteractPoint : BmSDK.BmGame.RGangVehicleIntera
     }
 
     /// <summary>
-    /// ArrayProperty: DropOff1PassengerCarScenario
+    /// ArrayProperty: DropOff1PassengerCarScenario<br/>
+    /// Default: (Vehicle_Scenarios.Riots.Taxi_1_Passenger)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleScenario> DropOff1PassengerCarScenario
     {
@@ -354,7 +357,8 @@ public partial class RGangVehicleInteractPoint : BmSDK.BmGame.RGangVehicleIntera
     }
 
     /// <summary>
-    /// ArrayProperty: DropOff2PassengerCarScenario
+    /// ArrayProperty: DropOff2PassengerCarScenario<br/>
+    /// Default: (Vehicle_Scenarios.Riots.Taxi_2_Passenger)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleScenario> DropOff2PassengerCarScenario
     {
@@ -363,7 +367,8 @@ public partial class RGangVehicleInteractPoint : BmSDK.BmGame.RGangVehicleIntera
     }
 
     /// <summary>
-    /// ArrayProperty: DropOff3PassengerCarScenario
+    /// ArrayProperty: DropOff3PassengerCarScenario<br/>
+    /// Default: (Vehicle_Scenarios.Riots.Taxi_3_Passenger)
     /// </summary>
     public unsafe BmSDK.TArray<BmSDK.BmGame.RVehicleScenario> DropOff3PassengerCarScenario
     {

@@ -166,7 +166,8 @@ public partial class RVehicleBehaviour_Idle : BmSDK.BmGame.RVehicleBehaviour, Bm
     }
 
     /// <summary>
-    /// BoolProperty: AllowAttack
+    /// BoolProperty: AllowAttack<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool AllowAttack
     {

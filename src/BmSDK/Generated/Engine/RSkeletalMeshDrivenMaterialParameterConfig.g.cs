@@ -130,7 +130,8 @@ public partial class RSkeletalMeshDrivenMaterialParameterConfig : BmSDK.GameObje
         }
 
         /// <summary>
-        /// FloatProperty: Angle_FullyOn
+        /// FloatProperty: Angle_FullyOn<br/>
+        /// Default: 20
         /// </summary>
         public unsafe float Angle_FullyOn
         {
@@ -139,7 +140,8 @@ public partial class RSkeletalMeshDrivenMaterialParameterConfig : BmSDK.GameObje
         }
 
         /// <summary>
-        /// FloatProperty: Value_FullyOn
+        /// FloatProperty: Value_FullyOn<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Value_FullyOn
         {
@@ -255,7 +257,8 @@ public partial class RSkeletalMeshDrivenMaterialParameterConfig : BmSDK.GameObje
         }
 
         /// <summary>
-        /// FloatProperty: Threshold_FullyOn
+        /// FloatProperty: Threshold_FullyOn<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Threshold_FullyOn
         {
@@ -264,7 +267,8 @@ public partial class RSkeletalMeshDrivenMaterialParameterConfig : BmSDK.GameObje
         }
 
         /// <summary>
-        /// FloatProperty: Value_FullyOn
+        /// FloatProperty: Value_FullyOn<br/>
+        /// Default: 1
         /// </summary>
         public unsafe float Value_FullyOn
         {

@@ -107,7 +107,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: AlarmTime
+    /// FloatProperty: AlarmTime<br/>
+    /// Default: 25
     /// </summary>
     public unsafe float AlarmTime
     {
@@ -134,7 +135,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: AlarmIntensity
+    /// FloatProperty: AlarmIntensity<br/>
+    /// Default: 50
     /// </summary>
     public unsafe float AlarmIntensity
     {
@@ -143,7 +145,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: AlarmVariableIntensity
+    /// FloatProperty: AlarmVariableIntensity<br/>
+    /// Default: 500
     /// </summary>
     public unsafe float AlarmVariableIntensity
     {
@@ -152,7 +155,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: NormalIntensity
+    /// FloatProperty: NormalIntensity<br/>
+    /// Default: 20
     /// </summary>
     public unsafe float NormalIntensity
     {
@@ -161,7 +165,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: LightBrightness
+    /// FloatProperty: LightBrightness<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float LightBrightness
     {
@@ -170,7 +175,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: LightVariableBrightness
+    /// FloatProperty: LightVariableBrightness<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float LightVariableBrightness
     {
@@ -179,7 +185,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: LightNormalBrightness
+    /// FloatProperty: LightNormalBrightness<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float LightNormalBrightness
     {
@@ -206,7 +213,8 @@ public partial class RSeqAct_CatwomanCollarAlarm : BmSDK.Engine.SeqAct_Latent, B
     }
 
     /// <summary>
-    /// FloatProperty: speedMultiplier
+    /// FloatProperty: speedMultiplier<br/>
+    /// Default: 5
     /// </summary>
     public unsafe float speedMultiplier
     {

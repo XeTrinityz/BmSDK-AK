@@ -277,7 +277,8 @@ public partial class RDroneCommanderTannoy : BmSDK.Engine.Actor, BmSDK.IGameObje
     }
 
     /// <summary>
-    /// ObjectProperty: BarkData
+    /// ObjectProperty: BarkData<br/>
+    /// Default: BarkCharDef_Drone.BCD_Drone
     /// </summary>
     public unsafe BmSDK.BmGame.RBarkCharacterDef BarkData
     {

@@ -79,7 +79,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: Radius
+    /// FloatProperty: Radius<br/>
+    /// Default: 15
     /// </summary>
     public unsafe float Radius
     {
@@ -88,7 +89,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MaxParticles
+    /// IntProperty: MaxParticles<br/>
+    /// Default: 8192
     /// </summary>
     public unsafe int MaxParticles
     {
@@ -106,7 +108,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// BoolProperty: bFixedTimeStep
+    /// BoolProperty: bFixedTimeStep<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bFixedTimeStep
     {
@@ -151,7 +154,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumIterations
+    /// IntProperty: NumIterations<br/>
+    /// Default: 3
     /// </summary>
     public unsafe int NumIterations
     {
@@ -160,7 +164,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: NumSubsteps
+    /// IntProperty: NumSubsteps<br/>
+    /// Default: 1
     /// </summary>
     public unsafe int NumSubsteps
     {
@@ -169,7 +174,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: MinFrameRate
+    /// IntProperty: MinFrameRate<br/>
+    /// Default: 60
     /// </summary>
     public unsafe int MinFrameRate
     {
@@ -178,7 +184,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: Gravity
+    /// StructProperty: Gravity<br/>
+    /// Default: (Z=-1000)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 Gravity
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 112);
@@ -193,7 +200,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxVelocity
+    /// FloatProperty: MaxVelocity<br/>
+    /// Default: 5000
     /// </summary>
     public unsafe float MaxVelocity
     {
@@ -202,7 +210,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: MaxContainerBound
+    /// FloatProperty: MaxContainerBound<br/>
+    /// Default: 1e+12
     /// </summary>
     public unsafe float MaxContainerBound
     {
@@ -211,7 +220,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SuccessiveOverRelaxation
+    /// FloatProperty: SuccessiveOverRelaxation<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SuccessiveOverRelaxation
     {
@@ -220,7 +230,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// ByteProperty: RBChannel
+    /// ByteProperty: RBChannel<br/>
+    /// Default: RBCC_FlexAsset
     /// </summary>
     public unsafe BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel RBChannel
     {
@@ -229,13 +240,15 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// StructProperty: RBCollideWithChannels
+    /// StructProperty: RBCollideWithChannels<br/>
+    /// Default: (Default=true,GameplayPhysics=true,EffectPhysics=true,BlockingVolume=true)
     /// </summary>
     public unsafe ref BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer RBCollideWithChannels
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer>(Ptr + 144);
 
     /// <summary>
-    /// FloatProperty: CellSizeFactor
+    /// FloatProperty: CellSizeFactor<br/>
+    /// Default: 2
     /// </summary>
     public unsafe float CellSizeFactor
     {
@@ -271,7 +284,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Friction
+    /// FloatProperty: Friction<br/>
+    /// Default: 0.2
     /// </summary>
     public unsafe float Friction
     {
@@ -280,7 +294,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: ParticleFriction
+    /// FloatProperty: ParticleFriction<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float ParticleFriction
     {
@@ -298,7 +313,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Restitution
+    /// FloatProperty: Restitution<br/>
+    /// Default: 0.01
     /// </summary>
     public unsafe float Restitution
     {
@@ -349,7 +365,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: RestDistance
+    /// FloatProperty: RestDistance<br/>
+    /// Default: 0.5
     /// </summary>
     public unsafe float RestDistance
     {
@@ -367,7 +384,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: Cohesion
+    /// FloatProperty: Cohesion<br/>
+    /// Default: 0.025
     /// </summary>
     public unsafe float Cohesion
     {
@@ -403,7 +421,8 @@ public partial class FlexContainer : BmSDK.GameObject, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// FloatProperty: SolidPressure
+    /// FloatProperty: SolidPressure<br/>
+    /// Default: 1
     /// </summary>
     public unsafe float SolidPressure
     {

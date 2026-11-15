@@ -322,7 +322,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bShouldSaveForCheckpoint
+    /// BoolProperty: bShouldSaveForCheckpoint<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bShouldSaveForCheckpoint
     {
@@ -331,7 +332,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bDestroyProjectilesOnEncroach
+    /// BoolProperty: bDestroyProjectilesOnEncroach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bDestroyProjectilesOnEncroach
     {
@@ -340,7 +342,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bContinueOnEncroachPhysicsObject
+    /// BoolProperty: bContinueOnEncroachPhysicsObject<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bContinueOnEncroachPhysicsObject
     {
@@ -349,7 +352,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// BoolProperty: bStopOnEncroach
+    /// BoolProperty: bStopOnEncroach<br/>
+    /// Default: true
     /// </summary>
     public unsafe bool bStopOnEncroach
     {
@@ -487,7 +491,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// FloatProperty: CrushBatmobileSpeedThreshold
+    /// FloatProperty: CrushBatmobileSpeedThreshold<br/>
+    /// Default: 1000
     /// </summary>
     public unsafe float CrushBatmobileSpeedThreshold
     {
@@ -514,7 +519,8 @@ public partial class InterpActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObjec
     }
 
     /// <summary>
-    /// StructProperty: FakePhysics
+    /// StructProperty: FakePhysics<br/>
+    /// Default: (PhysInfo=(InstantaneousActivationDelay=0.1,InstantaneousVelocityThreshold=1,InstantaneousVelocityAssuredThreshold=100,InstantaneousProbability=0.25,ContinuousMonitorWindowDuration=0.2,ContinuousMinim...
     /// </summary>
     public unsafe ref BmSDK.Engine.AkWwise.FAkFakePhysics FakePhysics
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.AkWwise.FAkFakePhysics>(Ptr + 844);

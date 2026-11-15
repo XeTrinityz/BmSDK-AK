@@ -412,7 +412,8 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
     }
 
     /// <summary>
-    /// IntProperty: GelIndex
+    /// IntProperty: GelIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int GelIndex
     {
@@ -493,7 +494,8 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Engine.Texture2D.FTextureLinkedListMirror>(Ptr + 440);
 
     /// <summary>
-    /// IntProperty: StreamingIndex
+    /// IntProperty: StreamingIndex<br/>
+    /// Default: -1
     /// </summary>
     public unsafe int StreamingIndex
     {

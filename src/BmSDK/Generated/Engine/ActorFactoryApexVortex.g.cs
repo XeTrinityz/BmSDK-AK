@@ -79,7 +79,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
-    /// FloatProperty: RotationalFieldStrength
+    /// FloatProperty: RotationalFieldStrength<br/>
+    /// Default: 75
     /// </summary>
     public unsafe float RotationalFieldStrength
     {
@@ -88,7 +89,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: RadialFieldStrength
+    /// FloatProperty: RadialFieldStrength<br/>
+    /// Default: -40
     /// </summary>
     public unsafe float RadialFieldStrength
     {
@@ -106,7 +108,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleFieldHeight
+    /// FloatProperty: CapsuleFieldHeight<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CapsuleFieldHeight
     {
@@ -115,7 +118,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleFieldBottomRadius
+    /// FloatProperty: CapsuleFieldBottomRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CapsuleFieldBottomRadius
     {
@@ -124,7 +128,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: CapsuleFieldTopRadius
+    /// FloatProperty: CapsuleFieldTopRadius<br/>
+    /// Default: 100
     /// </summary>
     public unsafe float CapsuleFieldTopRadius
     {
@@ -133,7 +138,8 @@ public partial class ActorFactoryApexVortex : BmSDK.Engine.ActorFactory, BmSDK.I
     }
 
     /// <summary>
-    /// FloatProperty: BoundaryFadePercentage
+    /// FloatProperty: BoundaryFadePercentage<br/>
+    /// Default: 0.1
     /// </summary>
     public unsafe float BoundaryFadePercentage
     {

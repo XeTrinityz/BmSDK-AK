@@ -151,13 +151,15 @@ public partial class RSpecialMoveConfig_DisarmJokerBoss : BmSDK.BmGame.RSpecialM
     }
 
     /// <summary>
-    /// StructProperty: CameraLocOffset
+    /// StructProperty: CameraLocOffset<br/>
+    /// Default: (Z=85)
     /// </summary>
     public unsafe ref System.Numerics.Vector3 CameraLocOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<System.Numerics.Vector3>(Ptr + 448);
 
     /// <summary>
-    /// StructProperty: CameraRotOffset
+    /// StructProperty: CameraRotOffset<br/>
+    /// Default: (Yaw=16384)
     /// </summary>
     public unsafe ref BmSDK.Rotator CameraRotOffset
         => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.Rotator>(Ptr + 460);
