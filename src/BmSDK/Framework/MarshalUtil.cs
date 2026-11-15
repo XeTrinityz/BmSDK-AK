@@ -391,7 +391,7 @@ public static unsafe class MarshalUtil
             {
                 if (s_unknownClassesLogged.Add(classPath))
                 {
-                    Debug.LogWarning(
+                    Debug.Log(
                         $"Couldn't find managed type for class '{classPath}', falling back to {superType.FullName}"
                     );
                 }
