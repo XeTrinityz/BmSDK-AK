@@ -187,6 +187,9 @@ internal static class RedirectManager
             return;
         }
 
+        // A redirect further down the chain runs on a frame that dies when it returns, so the outer
+        // redirect gets its own frame back for RunOriginal<T>.
+        var (outerStack, outerResult) = (call.Stack, call.Result);
         call.Stack = (IntPtr)stackPtr;
         call.Result = Result;
         var started = FrameStats.Now;
@@ -204,6 +207,11 @@ internal static class RedirectManager
             {
                 call.RunOriginal(stackPtr, Result);
             }
+        }
+        finally
+        {
+            call.Stack = outerStack;
+            call.Result = outerResult;
         }
     }
 

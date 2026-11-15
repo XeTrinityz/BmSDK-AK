@@ -128,7 +128,8 @@ internal sealed record RedirectCall(
 
     public unsafe void RunOriginal(FFrame* stackPtr, IntPtr result)
     {
-        OriginalRan = true;
+        // OriginalRan is set once the call returns. The call below reaches the next redirect first,
+        // and that one's RunOriginal has to work too.
 
         // Copy over args to new buffer for call to original function
         var paramsSize = TargetFunc.GetParamsBytes();
@@ -162,6 +163,7 @@ internal sealed record RedirectCall(
             (IntPtr)argsPtr,
             IntPtr.Zero
         );
+        OriginalRan = true;
 
         foreach (ref readonly var param in layout.AsSpan())
         {
