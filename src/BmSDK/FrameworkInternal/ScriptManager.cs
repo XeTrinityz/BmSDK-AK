@@ -1,6 +1,8 @@
 using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Reflection;
+using System.Reflection.Metadata;
+using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
 using System.Runtime.Loader;
 using System.Security.Cryptography;
@@ -60,7 +62,8 @@ internal static class ScriptManager
         allowUnsafe: true
     );
 
-    private record LoadedMod(Mod Mod, AssemblyLoadContext Alc, List<Script> Scripts);
+    // Dll is the prebuilt file the mod was loaded from, or null when it was compiled from its scripts.
+    private record LoadedMod(Mod Mod, AssemblyLoadContext Alc, List<Script> Scripts, string? Dll);
 
     private sealed class ScriptLoadContext(string name)
         : AssemblyLoadContext(name, isCollectible: true)
@@ -155,12 +158,21 @@ internal static class ScriptManager
 
         // Compiling is the slow part of starting up and each mod's is its own, so they run side by side.
         // The mods are still loaded one by one, in the same order as before.
-        var compiled = new (MemoryStream? Pe, MemoryStream? Pdb)[jobs.Count];
+        var compiled = new (MemoryStream? Pe, MemoryStream? Pdb, string? Dll)[jobs.Count];
         Parallel.For(0, jobs.Count, i =>
         {
             try
             {
-                compiled[i] = CompileMod(jobs[i].Mod, jobs[i].ScriptsDir);
+                var (mod, scriptsDir, _) = jobs[i];
+                if (UsesPrebuilt(mod, scriptsDir, out var assembly))
+                {
+                    compiled[i] = ReadModAssembly(mod, assembly);
+                }
+                else
+                {
+                    var (pe, pdb) = CompileMod(mod, scriptsDir);
+                    compiled[i] = (pe, pdb, null);
+                }
             }
             catch (Exception e)
             {
@@ -170,11 +182,15 @@ internal static class ScriptManager
 
         for (var i = 0; i < jobs.Count; i++)
         {
-            if (compiled[i] is { Pe: { } pe, Pdb: { } pdb })
+            if (compiled[i] is { Pe: { } pe } build)
             {
                 try
                 {
-                    LoadCompiled(jobs[i].Mod, pe, pdb);
+                    LoadCompiled(jobs[i].Mod, pe, build.Pdb, build.Dll);
+                    if (build.Dll != null)
+                    {
+                        Debug.Log($"[{jobs[i].Mod.Name}] Loaded the prebuilt {build.Dll}");
+                    }
                 }
                 catch (Exception e)
                 {
@@ -195,14 +211,14 @@ internal static class ScriptManager
             return false;
         }
 
-        LoadCompiled(mod, peStream, pdbStream);
+        LoadCompiled(mod, peStream, pdbStream, dll: null);
         return true;
     }
 
     /// <summary>
     /// Loads a mod's compiled assembly and starts its scripts on the engine thread.
     /// </summary>
-    private static void LoadCompiled(Mod mod, MemoryStream peStream, MemoryStream pdbStream)
+    private static void LoadCompiled(Mod mod, MemoryStream peStream, MemoryStream? pdbStream, string? dll)
     {
         var targetName = $"{mod.Name}.dll";
         var modAlc = new ScriptLoadContext(targetName);
@@ -218,7 +234,7 @@ internal static class ScriptManager
                 }
 
                 var scripts = CreateScriptInstances(asm, mod);
-                var loaded = new LoadedMod(mod, modAlc, scripts);
+                var loaded = new LoadedMod(mod, modAlc, scripts, dll);
                 s_loadedMods[mod.DirectoryPath] = loaded;
                 RebuildScripts();
 
@@ -310,6 +326,13 @@ internal static class ScriptManager
                         return;
                     }
 
+                    // A prebuilt mod only loads at startup, so a script change doesn't swap it for its sources.
+                    if (s_loadedMods.TryGetValue(modDirPath, out var current) && current.Dll != null)
+                    {
+                        Debug.Log($"[{current.Mod.Name}] Not reloading, {current.Dll} is loaded instead of the scripts");
+                        return;
+                    }
+
                     var mod = Mod.FromDirectory(modDirPath);
                     var modScriptsDir = Path.Combine(modDirPath, "scripts");
                     LoadMod(mod, modScriptsDir);
@@ -334,10 +357,7 @@ internal static class ScriptManager
             return (null, null);
         }
 
-        var sourceFilePaths = Directory
-            .EnumerateFiles(scriptsDir, "*.cs", SearchOption.AllDirectories)
-            .Where(filePath => !filePath.Replace("\\", "/").Contains("/obj/"))
-            .ToList();
+        var sourceFilePaths = EnumerateSources(scriptsDir).ToList();
 
         if (sourceFilePaths.Count == 0)
         {
@@ -406,6 +426,130 @@ internal static class ScriptManager
         peStream.Position = 0;
         pdbStream.Position = 0;
         return (peStream, pdbStream);
+    }
+
+    private static IEnumerable<string> EnumerateSources(string scriptsDir) =>
+        Directory
+            .EnumerateFiles(scriptsDir, "*.cs", SearchOption.AllDirectories)
+            .Where(filePath => !filePath.Replace("\\", "/").Contains("/obj/"));
+
+    private static bool HasSources(string scriptsDir) =>
+        Directory.Exists(scriptsDir) && EnumerateSources(scriptsDir).Any();
+
+    // --- Prebuilt mods ---
+
+    // The assembly mod.toml names wins whenever its file is there, so a player who installs a new build
+    // over an old copy that still has scripts runs the new build. Without the file, scripts compile as
+    // usual, which is how the mod's own developer works. With neither, the load reports what's missing.
+    private static bool UsesPrebuilt(Mod mod, string scriptsDir, out object? assembly)
+    {
+        if (!mod.Config.TryGetValue("assembly", out assembly))
+        {
+            return false;
+        }
+
+        var hasSources = HasSources(scriptsDir);
+        if (assembly is string file && !string.IsNullOrWhiteSpace(file) && File.Exists(Path.Combine(mod.DirectoryPath, file)))
+        {
+            if (hasSources)
+            {
+                Debug.Log($"[{mod.Name}] {file} is there, so the scripts folder is skipped");
+            }
+
+            return true;
+        }
+
+        return !hasSources;
+    }
+
+    // The file is read into memory rather than loaded by path, so it isn't locked and the mod's
+    // context can still unload.
+    private static (MemoryStream?, MemoryStream?, string?) ReadModAssembly(Mod mod, object? assembly)
+    {
+        if (assembly is not string file || string.IsNullOrWhiteSpace(file))
+        {
+            Debug.LogError($"[{mod.Name}] \"assembly\" in mod.toml must be the path of a .dll");
+            return (null, null, null);
+        }
+
+        string dllPath;
+        byte[] pe;
+        try
+        {
+            dllPath = Path.GetFullPath(Path.Combine(mod.DirectoryPath, file));
+            pe = File.ReadAllBytes(dllPath);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"[{mod.Name}] Couldn't read {file}: {e.Message}");
+            return (null, null, null);
+        }
+
+        if (!TryReadSdkReference(pe, out var builtAgainst))
+        {
+            Debug.LogError($"[{mod.Name}] {file} isn't a .NET assembly");
+            return (null, null, null);
+        }
+
+        var running = typeof(GameObject).Assembly.GetName().Version;
+        if (builtAgainst != null && builtAgainst != running)
+        {
+            Debug.LogWarning(
+                $"[{mod.Name}] {file} was built against BmSDK {builtAgainst} and this is BmSDK {running}. It may not work right."
+            );
+        }
+
+        MemoryStream? pdb = null;
+        var pdbPath = Path.ChangeExtension(dllPath, ".pdb");
+        if (File.Exists(pdbPath))
+        {
+            try
+            {
+                pdb = new MemoryStream(File.ReadAllBytes(pdbPath));
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning($"[{mod.Name}] {Path.GetFileName(pdbPath)} couldn't be read, loading without symbols: {e.Message}");
+            }
+        }
+
+        return (new MemoryStream(pe), pdb, file);
+    }
+
+    // False when the bytes aren't a .NET assembly. The version is null when it doesn't reference BmSDK.
+    private static bool TryReadSdkReference(byte[] pe, out Version? sdkVersion)
+    {
+        sdkVersion = null;
+        try
+        {
+            using var reader = new PEReader(new MemoryStream(pe, writable: false));
+            if (!reader.HasMetadata)
+            {
+                return false;
+            }
+
+            var metadata = reader.GetMetadataReader();
+            if (!metadata.IsAssembly)
+            {
+                return false;
+            }
+
+            var sdkName = typeof(GameObject).Assembly.GetName().Name!;
+            foreach (var handle in metadata.AssemblyReferences)
+            {
+                var reference = metadata.GetAssemblyReference(handle);
+                if (metadata.StringComparer.Equals(reference.Name, sdkName))
+                {
+                    sdkVersion = reference.Version;
+                }
+            }
+
+            return true;
+        }
+        catch (BadImageFormatException)
+        {
+            return false;
+        }
     }
 
     // --- Build cache ---

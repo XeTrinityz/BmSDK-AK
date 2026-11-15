@@ -1,2 +1,8 @@
 name = "Mod Template"
 description = "A template mod to use as a base"
+
+# To ship a built DLL instead of scripts, name it here. The path is relative to this folder.
+# A .pdb with the same name next to it is loaded too. When the DLL is there it's used over the scripts.
+# Build it against the same BmSDK.dll players have. BmSDK's global usings aren't added for it,
+# so the project has to declare its own.
+# assembly = "MyMod.dll"
