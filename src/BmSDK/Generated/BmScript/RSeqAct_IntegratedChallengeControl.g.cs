@@ -78,6 +78,16 @@ public partial class RSeqAct_IntegratedChallengeControl : BmSDK.BmGame.RSeqAct_I
         where TComponent : class, Framework.IScriptComponent<RSeqAct_IntegratedChallengeControl>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_CHALLENGE_TIME = 5999.0
+    /// </summary>
+    public const float MAX_CHALLENGE_TIME = 5999f;
+
+    /// <summary>
+    /// Const: MAX_CHALLENGE_SCORE = 100000000
+    /// </summary>
+    public const int MAX_CHALLENGE_SCORE = 100000000;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

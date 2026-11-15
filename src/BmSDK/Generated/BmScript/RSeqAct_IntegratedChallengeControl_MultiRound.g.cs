@@ -78,6 +78,11 @@ public partial class RSeqAct_IntegratedChallengeControl_MultiRound : BmSDK.BmScr
         where TComponent : class, Framework.IScriptComponent<RSeqAct_IntegratedChallengeControl_MultiRound>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_ROUNDS = 4
+    /// </summary>
+    public const int MAX_ROUNDS = 4;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

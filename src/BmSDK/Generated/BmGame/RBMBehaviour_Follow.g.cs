@@ -78,6 +78,11 @@ public partial class RBMBehaviour_Follow : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_Follow>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NOT_IN_RANGE_TIMEOUT = 1.0f
+    /// </summary>
+    public const float NOT_IN_RANGE_TIMEOUT = 1f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPathToFollowActor;
     /// <summary>
     /// Function: SetPathToFollowActor

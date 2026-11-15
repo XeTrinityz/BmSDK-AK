@@ -78,6 +78,16 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<WorldInfo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_INSTANCES_PER_CLASS = 5
+    /// </summary>
+    public const int MAX_INSTANCES_PER_CLASS = 5;
+
+    /// <summary>
+    /// Const: MAX_BOOKMARK_NUMBER = 10
+    /// </summary>
+    public const int MAX_BOOKMARK_NUMBER = 10;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawDestructibleArchetypesHUD;
     /// <summary>
     /// Function: DebugDrawDestructibleArchetypesHUD

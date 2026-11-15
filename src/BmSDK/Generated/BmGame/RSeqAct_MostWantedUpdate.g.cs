@@ -78,6 +78,11 @@ public partial class RSeqAct_MostWantedUpdate : BmSDK.Engine.SeqAct_Latent, BmSD
         where TComponent : class, Framework.IScriptComponent<RSeqAct_MostWantedUpdate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_MISSIONS_TO_UPDATE = 3
+    /// </summary>
+    public const int MAX_MISSIONS_TO_UPDATE = 3;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

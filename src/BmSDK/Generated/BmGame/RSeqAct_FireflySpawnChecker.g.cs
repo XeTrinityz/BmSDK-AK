@@ -78,6 +78,11 @@ public partial class RSeqAct_FireflySpawnChecker : BmSDK.Engine.SequenceAction, 
         where TComponent : class, Framework.IScriptComponent<RSeqAct_FireflySpawnChecker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_ENCOUNTERS = 12
+    /// </summary>
+    public const int NUM_ENCOUNTERS = 12;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

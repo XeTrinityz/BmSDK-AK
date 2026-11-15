@@ -78,6 +78,16 @@ public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermedi
         where TComponent : class, Framework.IScriptComponent<RHelicopterIntermediate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BlindedFlickerPeriod = 1
+    /// </summary>
+    public const int BlindedFlickerPeriod = 1;
+
+    /// <summary>
+    /// Const: THOUGHT_Z_OFFSET = -100
+    /// </summary>
+    public const int THOUGHT_Z_OFFSET = -100;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlyingVehicleAudioResume;
     /// <summary>
     /// Function: FlyingVehicleAudioResume

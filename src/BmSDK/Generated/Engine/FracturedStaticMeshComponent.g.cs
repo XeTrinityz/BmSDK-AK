@@ -78,6 +78,11 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
         where TComponent : class, Framework.IScriptComponent<FracturedStaticMeshComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAXMATS = 10
+    /// </summary>
+    public const int MAXMATS = 10;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFracturedMeshPhysMaterial;
     /// <summary>
     /// Function: GetFracturedMeshPhysMaterial

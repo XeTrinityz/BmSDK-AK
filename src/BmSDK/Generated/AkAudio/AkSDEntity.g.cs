@@ -73,6 +73,56 @@ public partial class AkSDEntity : BmSDK.AkAudio.AkSDNode, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkSDEntity>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: EEntityType_SymbolOrFact = 29
+    /// </summary>
+    public const int EEntityType_SymbolOrFact = 29;
+
+    /// <summary>
+    /// Const: EEntityType_Floats = 13
+    /// </summary>
+    public const int EEntityType_Floats = 13;
+
+    /// <summary>
+    /// Const: EEntityType_Object = 64
+    /// </summary>
+    public const int EEntityType_Object = 64;
+
+    /// <summary>
+    /// Const: EEntityType_Buss = 32
+    /// </summary>
+    public const int EEntityType_Buss = 32;
+
+    /// <summary>
+    /// Const: EEntityType_Symbol = 16
+    /// </summary>
+    public const int EEntityType_Symbol = 16;
+
+    /// <summary>
+    /// Const: EEntityType_GameVariable = 8
+    /// </summary>
+    public const int EEntityType_GameVariable = 8;
+
+    /// <summary>
+    /// Const: EEntityType_Parameter = 4
+    /// </summary>
+    public const int EEntityType_Parameter = 4;
+
+    /// <summary>
+    /// Const: EEntityType_Volume = 2
+    /// </summary>
+    public const int EEntityType_Volume = 2;
+
+    /// <summary>
+    /// Const: EEntityType_Numeric = 1
+    /// </summary>
+    public const int EEntityType_Numeric = 1;
+
+    /// <summary>
+    /// Const: EEntityType_Ignore = 0
+    /// </summary>
+    public const int EEntityType_Ignore = 0;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableName;
     /// <summary>
     /// Function: GetVariableName

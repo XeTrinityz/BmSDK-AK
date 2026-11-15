@@ -78,6 +78,31 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<PlayerController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAXCLIENTUPDATEINTERVAL = 0.25
+    /// </summary>
+    public const float MAXCLIENTUPDATEINTERVAL = 0.25f;
+
+    /// <summary>
+    /// Const: CLIENTADJUSTUPDATECOST = 180.0
+    /// </summary>
+    public const float CLIENTADJUSTUPDATECOST = 180f;
+
+    /// <summary>
+    /// Const: MAXVEHICLEPOSITIONERRORSQUARED = 900.0
+    /// </summary>
+    public const float MAXVEHICLEPOSITIONERRORSQUARED = 900f;
+
+    /// <summary>
+    /// Const: MAXNEARZEROVELOCITYSQUARED = 9.0
+    /// </summary>
+    public const float MAXNEARZEROVELOCITYSQUARED = 9f;
+
+    /// <summary>
+    /// Const: MAXPOSITIONERRORSQUARED = 3.0
+    /// </summary>
+    public const float MAXPOSITIONERRORSQUARED = 3f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatineeConstantCameraAnim;
     /// <summary>
     /// Function: SetMatineeConstantCameraAnim

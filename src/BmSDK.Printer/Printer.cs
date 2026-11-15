@@ -298,6 +298,14 @@ sealed class Printer
         Line("}");
     }
 
+    void PrintConst(ConstInfo c)
+    {
+        Line("/// <summary>");
+        Line($"/// Const: {c.Name} = {System.Security.SecurityElement.Escape(c.Text)}");
+        Line("/// </summary>");
+        Line($"public const {c.Type} {c.ManagedName} = {c.Literal};");
+    }
+
     void PrintEnum(EnumInfo en)
     {
         Line("/// <summary>");
@@ -564,6 +572,9 @@ sealed class Printer
         {
             case PropertyInfo prop:
                 PrintProperty(prop);
+                break;
+            case ConstInfo c:
+                PrintConst(c);
                 break;
             case EnumInfo en:
                 PrintEnum(en);

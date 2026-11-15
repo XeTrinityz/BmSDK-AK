@@ -78,6 +78,21 @@ public partial class RFlapsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RFlapsAssetInstance>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DebugHistoryNumFrames = 30
+    /// </summary>
+    public const int DebugHistoryNumFrames = 30;
+
+    /// <summary>
+    /// Const: RFlapsCollisionInstanceMaxNumBones = 8
+    /// </summary>
+    public const int RFlapsCollisionInstanceMaxNumBones = 8;
+
+    /// <summary>
+    /// Const: RFlapsAnimInstanceBlendMaxNumBlendedBones = 5
+    /// </summary>
+    public const int RFlapsAnimInstanceBlendMaxNumBlendedBones = 5;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeUp;
     /// <summary>
     /// Function: WakeUp

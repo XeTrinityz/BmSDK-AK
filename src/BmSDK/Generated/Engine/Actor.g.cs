@@ -73,6 +73,131 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Actor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: RB_Sleeping = 0x02
+    /// </summary>
+    public const int RB_Sleeping = 0x02;
+
+    /// <summary>
+    /// Const: RB_NeedsUpdate = 0x01
+    /// </summary>
+    public const int RB_NeedsUpdate = 0x01;
+
+    /// <summary>
+    /// Const: RB_None = 0x00
+    /// </summary>
+    public const int RB_None = 0x00;
+
+    /// <summary>
+    /// Const: RBSTATE_ANGVELSCALE = 1000.0
+    /// </summary>
+    public const float RBSTATE_ANGVELSCALE = 1000f;
+
+    /// <summary>
+    /// Const: RBSTATE_LINVELSCALE = 10.0
+    /// </summary>
+    public const float RBSTATE_LINVELSCALE = 10f;
+
+    /// <summary>
+    /// Const: ACTORMAXSTEPHEIGHT = 35.0
+    /// </summary>
+    public const float ACTORMAXSTEPHEIGHT = 35f;
+
+    /// <summary>
+    /// Const: MINFLOORZ = 0.7
+    /// </summary>
+    public const float MINFLOORZ = 0.7f;
+
+    /// <summary>
+    /// Const: REP_RBLOCATION_ERROR_TOLERANCE_SQ = 16.0f
+    /// </summary>
+    public const float REP_RBLOCATION_ERROR_TOLERANCE_SQ = 16f;
+
+    /// <summary>
+    /// Const: TRACEFLAG_OnlyCheckClimbable = 0x80000000
+    /// </summary>
+    public const int TRACEFLAG_OnlyCheckClimbable = unchecked((int)0x80000000);
+
+    /// <summary>
+    /// Const: TRACEFLAG_ForceAccurateBSPSorting = 0x40000000
+    /// </summary>
+    public const int TRACEFLAG_ForceAccurateBSPSorting = 0x40000000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_PlayerMovement = 0x20000000
+    /// </summary>
+    public const int TRACEFLAG_PlayerMovement = 0x20000000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_IgnoreComplexCollision = 0x10000000
+    /// </summary>
+    public const int TRACEFLAG_IgnoreComplexCollision = 0x10000000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_AllowApproxExtentVsSphyl = 0x200000
+    /// </summary>
+    public const int TRACEFLAG_AllowApproxExtentVsSphyl = 0x200000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_MoveIgnoredDestruction = 0x100000
+    /// </summary>
+    public const int TRACEFLAG_MoveIgnoredDestruction = 0x100000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Accurate = 0x80000
+    /// </summary>
+    public const int TRACEFLAG_Accurate = 0x80000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_AllComponents = 0x40000
+    /// </summary>
+    public const int TRACEFLAG_AllComponents = 0x40000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_ComplexCollision = 0x20000
+    /// </summary>
+    public const int TRACEFLAG_ComplexCollision = 0x20000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_ComplexCollisionifAvailable = 0x00800000
+    /// </summary>
+    public const int TRACEFLAG_ComplexCollisionifAvailable = 0x00800000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Audio = 0x00008000
+    /// </summary>
+    public const int TRACEFLAG_Audio = 0x00008000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Cylinder = 0x4000
+    /// </summary>
+    public const int TRACEFLAG_Cylinder = 0x4000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Visible = 0x1000
+    /// </summary>
+    public const int TRACEFLAG_Visible = 0x1000;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Material = 0x800
+    /// </summary>
+    public const int TRACEFLAG_Material = 0x800;
+
+    /// <summary>
+    /// Const: TRACEFLAG_SingleResult = 0x400
+    /// </summary>
+    public const int TRACEFLAG_SingleResult = 0x400;
+
+    /// <summary>
+    /// Const: TRACEFLAG_StopAtAnyHit = 0x200
+    /// </summary>
+    public const int TRACEFLAG_StopAtAnyHit = 0x200;
+
+    /// <summary>
+    /// Const: TRACEFLAG_Blocking = 0x40
+    /// </summary>
+    public const int TRACEFLAG_Blocking = 0x40;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
     /// Function: IsStaticForFloorCorrection

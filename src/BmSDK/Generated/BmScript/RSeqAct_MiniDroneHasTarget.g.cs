@@ -78,6 +78,11 @@ public partial class RSeqAct_MiniDroneHasTarget : BmSDK.Engine.SeqAct_Latent, Bm
         where TComponent : class, Framework.IScriptComponent<RSeqAct_MiniDroneHasTarget>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Version = 1
+    /// </summary>
+    public const int Version = 1;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

@@ -78,6 +78,21 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<NavigationHandle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NumBreadCrumbs = 10
+    /// </summary>
+    public const int NumBreadCrumbs = 10;
+
+    /// <summary>
+    /// Const: NUM_PATHFINDING_PARAMS = 12
+    /// </summary>
+    public const int NUM_PATHFINDING_PARAMS = 12;
+
+    /// <summary>
+    /// Const: LINECHECK_GRANULARITY = 768.f
+    /// </summary>
+    public const float LINECHECK_GRANULARITY = 768f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawBreadCrumbs;
     /// <summary>
     /// Function: DrawBreadCrumbs

@@ -78,6 +78,16 @@ public partial class RBMDeathCutscene_FinalTakedownCam : BmSDK.BmGame.RBMDeathCu
         where TComponent : class, Framework.IScriptComponent<RBMDeathCutscene_FinalTakedownCam>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: RIGHT_DIR = -1
+    /// </summary>
+    public const int RIGHT_DIR = -1;
+
+    /// <summary>
+    /// Const: LEFT_DIR = 1
+    /// </summary>
+    public const int LEFT_DIR = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate

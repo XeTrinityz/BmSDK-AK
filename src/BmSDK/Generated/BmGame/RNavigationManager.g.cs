@@ -78,6 +78,11 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RNavigationManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_PATH_INSTANCES_PER_CLASS = 20
+    /// </summary>
+    public const int MAX_PATH_INSTANCES_PER_CLASS = 20;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavManWTF;
     /// <summary>
     /// Function: NavManWTF

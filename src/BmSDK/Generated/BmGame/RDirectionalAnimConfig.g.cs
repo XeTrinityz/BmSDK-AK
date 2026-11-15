@@ -79,6 +79,11 @@ public partial class RDirectionalAnimConfig : BmSDK.BmGame.RConfig, BmSDK.IGameO
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: MAX_DIRECTIONAL_ANIMS = 12
+    /// </summary>
+    public const int MAX_DIRECTIONAL_ANIMS = 12;
+
+    /// <summary>
     /// InlineArray{NameProperty}: Directions
     /// </summary>
     public InlineArray<BmSDK.FName> Directions => new(12, Ptr + 84, 8, this);

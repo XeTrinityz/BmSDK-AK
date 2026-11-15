@@ -78,6 +78,11 @@ public partial class MPawnVillainDLCHarley : BmSDK.BmGame.RPawnVillainThug, BmSD
         where TComponent : class, Framework.IScriptComponent<MPawnVillainDLCHarley>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: HARLEY_FATAL_ATTACK_DAMAGE_PERCENTAGE = 0.2f
+    /// </summary>
+    public const float HARLEY_FATAL_ATTACK_DAMAGE_PERCENTAGE = 0.2f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldForceBeatDownEnd;
     /// <summary>
     /// Function: ShouldForceBeatDownEnd

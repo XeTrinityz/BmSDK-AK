@@ -78,6 +78,11 @@ public partial class RCommandBeaconLightsBase : BmSDK.Engine.Actor, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RCommandBeaconLightsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_MATERIAL_SLOTS = 4
+    /// </summary>
+    public const int NUM_MATERIAL_SLOTS = 4;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetComponentState;
     /// <summary>
     /// Function: SetComponentState

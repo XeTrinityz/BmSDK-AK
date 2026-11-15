@@ -78,6 +78,11 @@ public partial class RCombatMove_BatmanThrow : BmSDK.BmGame.RCombatMove_BatmanAt
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanThrow>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: HalfExtentCheckHeight = 50
+    /// </summary>
+    public const int HalfExtentCheckHeight = 50;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove

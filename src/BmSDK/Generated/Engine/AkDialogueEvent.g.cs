@@ -78,6 +78,11 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkDialogueEvent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SubtitleOcclusionThreshold = 0.5
+    /// </summary>
+    public const float SubtitleOcclusionThreshold = 0.5f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOncePerSession;
     /// <summary>
     /// Function: IsOncePerSession

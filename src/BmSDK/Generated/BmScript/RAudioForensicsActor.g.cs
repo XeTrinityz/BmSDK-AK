@@ -78,6 +78,11 @@ public partial class RAudioForensicsActor : BmSDK.BmGame.RAudioForensicsActorBas
         where TComponent : class, Framework.IScriptComponent<RAudioForensicsActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: InteravalToUpdateAudio = 1.f
+    /// </summary>
+    public const float InteravalToUpdateAudio = 1f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrack;
     /// <summary>
     /// Function: UpdateTrack

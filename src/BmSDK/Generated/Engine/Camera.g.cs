@@ -78,6 +78,11 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Camera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_ACTIVE_CAMERA_ANIMS = 8
+    /// </summary>
+    public const int MAX_ACTIVE_CAMERA_ANIMS = 8;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCameraAnim;
     /// <summary>
     /// Function: StopCameraAnim

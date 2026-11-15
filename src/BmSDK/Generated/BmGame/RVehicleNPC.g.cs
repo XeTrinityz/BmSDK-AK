@@ -73,6 +73,11 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
         where TComponent : class, Framework.IScriptComponent<RVehicleNPC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxPassengers = 4
+    /// </summary>
+    public const int MaxPassengers = 4;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FreezeAttackDestroyTarget;
     /// <summary>
     /// Function: FreezeAttackDestroyTarget

@@ -73,6 +73,16 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
         where TComponent : class, Framework.IScriptComponent<RLadder>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LADDER_BOTTOM = 1
+    /// </summary>
+    public const int LADDER_BOTTOM = 1;
+
+    /// <summary>
+    /// Const: LADDER_TOP = 0
+    /// </summary>
+    public const int LADDER_TOP = 0;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLadderInuseByAI;
     /// <summary>
     /// Function: IsLadderInuseByAI

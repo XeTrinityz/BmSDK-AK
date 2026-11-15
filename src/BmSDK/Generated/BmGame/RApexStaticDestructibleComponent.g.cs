@@ -78,6 +78,11 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
         where TComponent : class, Framework.IScriptComponent<RApexStaticDestructibleComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BitsPerFlagSet = 8
+    /// </summary>
+    public const int BitsPerFlagSet = 8;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketWorldLocationAndRotation;
     /// <summary>
     /// Function: GetSocketWorldLocationAndRotation

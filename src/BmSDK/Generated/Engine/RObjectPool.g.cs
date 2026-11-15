@@ -78,6 +78,26 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RObjectPool>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_ADVANCED_DAMAGE_INSTANCES = 64
+    /// </summary>
+    public const int MAX_ADVANCED_DAMAGE_INSTANCES = 64;
+
+    /// <summary>
+    /// Const: MAX_DECALS = 512
+    /// </summary>
+    public const int MAX_DECALS = 512;
+
+    /// <summary>
+    /// Const: MAX_EMITTERS_EPIC_POOL = 45
+    /// </summary>
+    public const int MAX_EMITTERS_EPIC_POOL = 45;
+
+    /// <summary>
+    /// Const: MAX_EMITTERS = 150
+    /// </summary>
+    public const int MAX_EMITTERS = 150;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxDamageInstances;
     /// <summary>
     /// Function: GetMaxDamageInstances

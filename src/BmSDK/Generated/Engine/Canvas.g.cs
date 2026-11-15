@@ -78,6 +78,11 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Canvas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: FlashText_DefaultSize = 15.0
+    /// </summary>
+    public const float FlashText_DefaultSize = 15f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugGraph;
     /// <summary>
     /// Function: DrawDebugGraph

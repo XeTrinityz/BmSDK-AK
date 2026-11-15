@@ -78,6 +78,31 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPersistentData>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Rad_EasterEgg = 16
+    /// </summary>
+    public const int Rad_EasterEgg = 16;
+
+    /// <summary>
+    /// Const: Rad_Mandatory = 8
+    /// </summary>
+    public const int Rad_Mandatory = 8;
+
+    /// <summary>
+    /// Const: Rad_InitiallyEncrypted = 4
+    /// </summary>
+    public const int Rad_InitiallyEncrypted = 4;
+
+    /// <summary>
+    /// Const: Rad_HasHint = 2
+    /// </summary>
+    public const int Rad_HasHint = 2;
+
+    /// <summary>
+    /// Const: Rad_HasBeenFound = 1
+    /// </summary>
+    public const int Rad_HasBeenFound = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDialogue;
     /// <summary>
     /// Function: LoadDialogue

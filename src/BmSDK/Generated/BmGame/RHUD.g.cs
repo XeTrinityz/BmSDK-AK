@@ -78,6 +78,11 @@ public partial class RHUD : BmSDK.BmGame.RHUDBase, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RHUD>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LeftOffset = 16
+    /// </summary>
+    public const int LeftOffset = 16;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldDrawHUD;
     /// <summary>
     /// Function: ShouldDrawHUD

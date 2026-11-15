@@ -78,6 +78,16 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSimultaneousAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kFormationVectorLength = 140
+    /// </summary>
+    public const int kFormationVectorLength = 140;
+
+    /// <summary>
+    /// Const: kNumAxis = 4
+    /// </summary>
+    public const int kNumAxis = 4;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShovePawns;
     /// <summary>
     /// Function: CanShovePawns

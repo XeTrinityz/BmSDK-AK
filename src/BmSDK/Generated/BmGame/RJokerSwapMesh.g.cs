@@ -78,6 +78,11 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RJokerSwapMesh>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_JOKER_MESHSWAP_OVERRIDE_MATERIALS = 4
+    /// </summary>
+    public const int NUM_JOKER_MESHSWAP_OVERRIDE_MATERIALS = 4;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyJokerOverrideMaterials;
     /// <summary>
     /// Function: ApplyJokerOverrideMaterials

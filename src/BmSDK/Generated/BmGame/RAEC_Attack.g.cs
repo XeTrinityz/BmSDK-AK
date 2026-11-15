@@ -78,6 +78,31 @@ public partial class RAEC_Attack : BmSDK.BmGame.RAEC_Attack_Base, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: OWFullPredAPSRange = 3000
+    /// </summary>
+    public const int OWFullPredAPSRange = 3000;
+
+    /// <summary>
+    /// Const: LitePredAPSRange = 7000
+    /// </summary>
+    public const int LitePredAPSRange = 7000;
+
+    /// <summary>
+    /// Const: GargAPSRange = 3000
+    /// </summary>
+    public const int GargAPSRange = 3000;
+
+    /// <summary>
+    /// Const: StandardAPSRange = 1000
+    /// </summary>
+    public const int StandardAPSRange = 1000;
+
+    /// <summary>
+    /// Const: ReassessDist = 400
+    /// </summary>
+    public const int ReassessDist = 400;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayExclaim;
     /// <summary>
     /// Function: PlayExclaim

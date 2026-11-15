@@ -73,6 +73,21 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RCinematicActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CINEMATICMESH_Hair = 4
+    /// </summary>
+    public const int CINEMATICMESH_Hair = 4;
+
+    /// <summary>
+    /// Const: CINEMATICMESH_Extra = 2
+    /// </summary>
+    public const int CINEMATICMESH_Extra = 2;
+
+    /// <summary>
+    /// Const: CINEMATICMESH_Main = 1
+    /// </summary>
+    public const int CINEMATICMESH_Main = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMeshComponents;
     /// <summary>
     /// Function: GetMeshComponents

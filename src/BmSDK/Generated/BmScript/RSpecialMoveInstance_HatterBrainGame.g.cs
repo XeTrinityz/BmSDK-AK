@@ -78,6 +78,16 @@ public partial class RSpecialMoveInstance_HatterBrainGame : BmSDK.BmGame.RSpecia
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_HatterBrainGame>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_SIDES = 2
+    /// </summary>
+    public const int NUM_SIDES = 2;
+
+    /// <summary>
+    /// Const: NUM_NODES_PER_SIDE = 5
+    /// </summary>
+    public const int NUM_NODES_PER_SIDE = 5;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDistanceFromPointToLine;
     /// <summary>
     /// Function: FindDistanceFromPointToLine

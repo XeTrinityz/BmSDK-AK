@@ -78,6 +78,26 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
         where TComponent : class, Framework.IScriptComponent<ApexDestructibleActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DestructibleDominanceGroup_Kickable = 15
+    /// </summary>
+    public const int DestructibleDominanceGroup_Kickable = 15;
+
+    /// <summary>
+    /// Const: DestructibleDominanceGroup_NonBlocking = 16
+    /// </summary>
+    public const int DestructibleDominanceGroup_NonBlocking = 16;
+
+    /// <summary>
+    /// Const: DestructibleDominanceGroup_Blocking = 14
+    /// </summary>
+    public const int DestructibleDominanceGroup_Blocking = 14;
+
+    /// <summary>
+    /// Const: DestructibleDominanceGroup_DynamicChunks = 16
+    /// </summary>
+    public const int DestructibleDominanceGroup_DynamicChunks = 16;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroy;
     /// <summary>
     /// Function: OnDestroy

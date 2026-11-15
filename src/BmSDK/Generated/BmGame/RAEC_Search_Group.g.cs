@@ -78,6 +78,11 @@ public partial class RAEC_Search_Group : BmSDK.BmGame.RAlertEventCoordinatorBase
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Group>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: TreeSearchDist = 2000
+    /// </summary>
+    public const int TreeSearchDist = 2000;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown

@@ -78,6 +78,16 @@ public partial class RAEC_Search_Sub_Follower : BmSDK.BmGame.RAlertEventCoordina
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Follower>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BackwardsDist = 140
+    /// </summary>
+    public const int BackwardsDist = 140;
+
+    /// <summary>
+    /// Const: CongaDist = 140
+    /// </summary>
+    public const int CongaDist = 140;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyEvent;
     /// <summary>
     /// Function: NotifyEvent

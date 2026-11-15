@@ -78,6 +78,71 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RForensicsDevice>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MissingPersonsTotalCount = 127492
+    /// </summary>
+    public const int MissingPersonsTotalCount = 127492;
+
+    /// <summary>
+    /// Const: VirtualDisruptorTowerPeriod = 1.0f
+    /// </summary>
+    public const float VirtualDisruptorTowerPeriod = 1f;
+
+    /// <summary>
+    /// Const: MaxDisruptorTowerDistance = 100000.0f
+    /// </summary>
+    public const float MaxDisruptorTowerDistance = 100000f;
+
+    /// <summary>
+    /// Const: MaxRadioSignalDistance = 80000
+    /// </summary>
+    public const int MaxRadioSignalDistance = 80000;
+
+    /// <summary>
+    /// Const: MaxFreezeRange = 68000
+    /// </summary>
+    public const int MaxFreezeRange = 68000;
+
+    /// <summary>
+    /// Const: FilterDistanceForDiscovery = 800
+    /// </summary>
+    public const int FilterDistanceForDiscovery = 800;
+
+    /// <summary>
+    /// Const: FilterDistanceToBeProcessed = 1900
+    /// </summary>
+    public const int FilterDistanceToBeProcessed = 1900;
+
+    /// <summary>
+    /// Const: FilterDistanceToBeFullyVisable = 3600
+    /// </summary>
+    public const int FilterDistanceToBeFullyVisable = 3600;
+
+    /// <summary>
+    /// Const: FilterMaxViewDistance = 4400
+    /// </summary>
+    public const int FilterMaxViewDistance = 4400;
+
+    /// <summary>
+    /// Const: LightTorchAngleMin = 0.9999
+    /// </summary>
+    public const float LightTorchAngleMin = 0.9999f;
+
+    /// <summary>
+    /// Const: LightTorchAngle = 0.98
+    /// </summary>
+    public const float LightTorchAngle = 0.98f;
+
+    /// <summary>
+    /// Const: DistanceToBeFullyVisable = 2100
+    /// </summary>
+    public const int DistanceToBeFullyVisable = 2100;
+
+    /// <summary>
+    /// Const: MaxViewDistance = 2700
+    /// </summary>
+    public const int MaxViewDistance = 2700;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAudioStates;
     /// <summary>
     /// Function: ResetAudioStates

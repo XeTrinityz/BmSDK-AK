@@ -78,6 +78,16 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RSideStoryManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MISSION_DIALOGUE_MAX_LINES = 2
+    /// </summary>
+    public const int MISSION_DIALOGUE_MAX_LINES = 2;
+
+    /// <summary>
+    /// Const: MISSION_DIALOGUE_MAX_LOAD_TIME = 30.0f
+    /// </summary>
+    public const float MISSION_DIALOGUE_MAX_LOAD_TIME = 30f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalisedRiddleFromRefName;
     /// <summary>
     /// Function: GetLocalisedRiddleFromRefName

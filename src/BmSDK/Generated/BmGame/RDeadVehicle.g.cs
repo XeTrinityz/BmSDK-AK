@@ -78,6 +78,11 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
         where TComponent : class, Framework.IScriptComponent<RDeadVehicle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxNumDeadVehicles = 6
+    /// </summary>
+    public const int MaxNumDeadVehicles = 6;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor

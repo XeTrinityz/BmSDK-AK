@@ -78,6 +78,11 @@ public partial class RPawnVillainRiddlerMechSuit : BmSDK.BmGame.RPawnVillainRidd
         where TComponent : class, Framework.IScriptComponent<RPawnVillainRiddlerMechSuit>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kMaxRobots = 16
+    /// </summary>
+    public const int kMaxRobots = 16;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSmashRobots;
     /// <summary>
     /// Function: CanSmashRobots

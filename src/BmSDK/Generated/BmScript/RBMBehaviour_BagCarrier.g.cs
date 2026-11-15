@@ -78,6 +78,31 @@ public partial class RBMBehaviour_BagCarrier : BmSDK.BmGame.RBMBehaviour_BagCarr
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_BagCarrier>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LOOKAHEAD_DIST_2 = 200.0f
+    /// </summary>
+    public const float LOOKAHEAD_DIST_2 = 200f;
+
+    /// <summary>
+    /// Const: LOOKAHEAD_DIST_1 = 0.0f
+    /// </summary>
+    public const float LOOKAHEAD_DIST_1 = 0f;
+
+    /// <summary>
+    /// Const: MIN_STAIR_ANGLE_DEG = 28.0f
+    /// </summary>
+    public const float MIN_STAIR_ANGLE_DEG = 28f;
+
+    /// <summary>
+    /// Const: ASSUMED_MAX_LOOT_SOURCE_DISTANCE = 30000.0f
+    /// </summary>
+    public const float ASSUMED_MAX_LOOT_SOURCE_DISTANCE = 30000f;
+
+    /// <summary>
+    /// Const: WAYPOINT_DIST_THRESHOLD = 100.0f
+    /// </summary>
+    public const float WAYPOINT_DIST_THRESHOLD = 100f;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

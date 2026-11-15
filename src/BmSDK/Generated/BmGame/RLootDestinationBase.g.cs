@@ -78,6 +78,11 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         where TComponent : class, Framework.IScriptComponent<RLootDestinationBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_DROPOFF_LOCATIONS = 4
+    /// </summary>
+    public const int MAX_DROPOFF_LOCATIONS = 4;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStateChange;
     /// <summary>
     /// Function: TryStateChange

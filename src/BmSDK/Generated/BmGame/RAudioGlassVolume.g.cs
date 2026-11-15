@@ -78,6 +78,11 @@ public partial class RAudioGlassVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RAudioGlassVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxSize = 600.0f
+    /// </summary>
+    public const float MaxSize = 600f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWindow;
     /// <summary>
     /// Function: SetWindow

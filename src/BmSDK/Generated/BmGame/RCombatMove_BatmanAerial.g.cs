@@ -78,6 +78,11 @@ public partial class RCombatMove_BatmanAerial : BmSDK.BmGame.RCombatMove_BatmanA
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanAerial>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: AttackDmgType = class&apos;RDmgType_AerialAttack&apos;
+    /// </summary>
+    public const string AttackDmgType = "class'RDmgType_AerialAttack'";
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerHasWeaponAnim;
     /// <summary>
     /// Function: PlayerHasWeaponAnim

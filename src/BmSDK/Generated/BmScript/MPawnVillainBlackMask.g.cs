@@ -78,6 +78,16 @@ public partial class MPawnVillainBlackMask : BmSDK.BmGame.MPawnVillainBlackMaskB
         where TComponent : class, Framework.IScriptComponent<MPawnVillainBlackMask>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BLACKMASK_FATAL_ATTACK_COUNT = 5.f
+    /// </summary>
+    public const float BLACKMASK_FATAL_ATTACK_COUNT = 5f;
+
+    /// <summary>
+    /// Const: BLACKMASK_MAX_HEALTH = 100
+    /// </summary>
+    public const int BLACKMASK_MAX_HEALTH = 100;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateRagdollWeaponConfig;
     /// <summary>
     /// Function: CreateRagdollWeaponConfig

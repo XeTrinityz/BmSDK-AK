@@ -78,6 +78,21 @@ public partial class RSearchRoutingWrapper : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RSearchRoutingWrapper>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxIntoSideRoomDist = 150
+    /// </summary>
+    public const int MaxIntoSideRoomDist = 150;
+
+    /// <summary>
+    /// Const: IgnoreFailureToLeaveSpecialZoneDist = 200
+    /// </summary>
+    public const int IgnoreFailureToLeaveSpecialZoneDist = 200;
+
+    /// <summary>
+    /// Const: StopBeforeWallDist = 300
+    /// </summary>
+    public const int StopBeforeWallDist = 300;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefinePullbackPoint;
     /// <summary>
     /// Function: RefinePullbackPoint

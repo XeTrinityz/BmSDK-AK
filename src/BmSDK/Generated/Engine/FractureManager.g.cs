@@ -78,6 +78,11 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<FractureManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: FSM_DEFAULTRECYCLETIME = 0.2
+    /// </summary>
+    public const float FSM_DEFAULTRECYCLETIME = 0.2f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick

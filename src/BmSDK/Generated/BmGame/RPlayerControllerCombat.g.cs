@@ -78,6 +78,11 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
         where TComponent : class, Framework.IScriptComponent<RPlayerControllerCombat>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MovesToUnlockSpecial = 5
+    /// </summary>
+    public const int MovesToUnlockSpecial = 5;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreRestart;
     /// <summary>
     /// Function: PreRestart

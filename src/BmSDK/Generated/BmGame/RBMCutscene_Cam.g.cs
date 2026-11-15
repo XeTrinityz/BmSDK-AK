@@ -78,6 +78,11 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RBMCutscene_Cam>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CAMERATESTDISTANCE = 15.0
+    /// </summary>
+    public const float CAMERATESTDISTANCE = 15f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndCam;
     /// <summary>
     /// Function: EndCam

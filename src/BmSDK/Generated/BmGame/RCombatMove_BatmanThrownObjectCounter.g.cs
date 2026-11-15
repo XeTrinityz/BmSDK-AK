@@ -78,6 +78,21 @@ public partial class RCombatMove_BatmanThrownObjectCounter : BmSDK.BmGame.RComba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanThrownObjectCounter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kMaxCatchDist = 250.f
+    /// </summary>
+    public const float kMaxCatchDist = 250f;
+
+    /// <summary>
+    /// Const: kMinCatchDist = 100.f
+    /// </summary>
+    public const float kMinCatchDist = 100f;
+
+    /// <summary>
+    /// Const: kMaxTimeToCatch = 0.11f
+    /// </summary>
+    public const float kMaxTimeToCatch = 0.11f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove

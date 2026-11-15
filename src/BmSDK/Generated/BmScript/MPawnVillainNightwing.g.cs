@@ -78,6 +78,16 @@ public partial class MPawnVillainNightwing : BmSDK.BmGame.MPawnVillainNightwingB
         where TComponent : class, Framework.IScriptComponent<MPawnVillainNightwing>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NIGHTWING_FATAL_ATTACK_COUNT = 4.f
+    /// </summary>
+    public const float NIGHTWING_FATAL_ATTACK_COUNT = 4f;
+
+    /// <summary>
+    /// Const: NIGHTWING_MAX_HEALTH = 60
+    /// </summary>
+    public const int NIGHTWING_MAX_HEALTH = 60;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySound_ImpactAI;
     /// <summary>
     /// Function: PlaySound_ImpactAI

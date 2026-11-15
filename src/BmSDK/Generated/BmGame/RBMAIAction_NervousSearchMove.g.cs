@@ -73,6 +73,11 @@ public partial class RBMAIAction_NervousSearchMove : BmSDK.BmGame.RBMAIAction_Ba
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_NervousSearchMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SlowScale = 0.8
+    /// </summary>
+    public const float SlowScale = 0.8f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WalkGestAim_Resume;
     /// <summary>
     /// Function: WalkGestAim_Resume

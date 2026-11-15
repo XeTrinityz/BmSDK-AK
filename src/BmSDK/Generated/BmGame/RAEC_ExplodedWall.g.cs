@@ -78,6 +78,11 @@ public partial class RAEC_ExplodedWall : BmSDK.BmGame.RAlertEventCoordinatorBase
         where TComponent : class, Framework.IScriptComponent<RAEC_ExplodedWall>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NumWanted = 3
+    /// </summary>
+    public const int NumWanted = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearInvestigateNavReqs;
     /// <summary>
     /// Function: ClearInvestigateNavReqs

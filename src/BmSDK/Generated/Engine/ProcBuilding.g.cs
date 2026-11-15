@@ -78,6 +78,16 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ProcBuilding>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: PROCBUILDING_VERSION = 1
+    /// </summary>
+    public const int PROCBUILDING_VERSION = 1;
+
+    /// <summary>
+    /// Const: ROOF_MINZ = 0.7
+    /// </summary>
+    public const float ROOF_MINZ = 0.7f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEdgeForTopLevelScope;
     /// <summary>
     /// Function: FindEdgeForTopLevelScope

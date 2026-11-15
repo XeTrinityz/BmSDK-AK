@@ -78,6 +78,46 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RDynamicMenu>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: PAD_IN_Y = 128
+    /// </summary>
+    public const int PAD_IN_Y = 128;
+
+    /// <summary>
+    /// Const: PAD_IN_X = 64
+    /// </summary>
+    public const int PAD_IN_X = 64;
+
+    /// <summary>
+    /// Const: PAD_IN_B = 32
+    /// </summary>
+    public const int PAD_IN_B = 32;
+
+    /// <summary>
+    /// Const: PAD_IN_A = 16
+    /// </summary>
+    public const int PAD_IN_A = 16;
+
+    /// <summary>
+    /// Const: PAD_DOWN = 8
+    /// </summary>
+    public const int PAD_DOWN = 8;
+
+    /// <summary>
+    /// Const: PAD_UP = 4
+    /// </summary>
+    public const int PAD_UP = 4;
+
+    /// <summary>
+    /// Const: PAD_RIGHT = 2
+    /// </summary>
+    public const int PAD_RIGHT = 2;
+
+    /// <summary>
+    /// Const: PAD_LEFT = 1
+    /// </summary>
+    public const int PAD_LEFT = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderItem;
     /// <summary>
     /// Function: RenderItem

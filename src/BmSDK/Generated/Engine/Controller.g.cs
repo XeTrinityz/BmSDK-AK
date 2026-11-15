@@ -73,6 +73,11 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Controller>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LATENT_MOVETOWARD = 503
+    /// </summary>
+    public const int LATENT_MOVETOWARD = 503;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
     /// Function: GetAkAudible

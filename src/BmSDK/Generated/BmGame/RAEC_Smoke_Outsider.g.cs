@@ -78,6 +78,11 @@ public partial class RAEC_Smoke_Outsider : BmSDK.BmGame.RAlertEventCoordinatorBa
         where TComponent : class, Framework.IScriptComponent<RAEC_Smoke_Outsider>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxDistForLateJoiner = 2000.f
+    /// </summary>
+    public const float MaxDistForLateJoiner = 2000f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown

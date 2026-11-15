@@ -78,6 +78,11 @@ public partial class RBMAIAction_PairedCorner : BmSDK.BmGame.RBMAIAction, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_PairedCorner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_PAIRED_CORNER_VARIANTS = 3
+    /// </summary>
+    public const int NUM_PAIRED_CORNER_VARIANTS = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick

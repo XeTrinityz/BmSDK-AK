@@ -78,6 +78,16 @@ public partial class RDialogueCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RDialogueCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CAMERATESTDISTANCE = 5.0
+    /// </summary>
+    public const float CAMERATESTDISTANCE = 5f;
+
+    /// <summary>
+    /// Const: NUMCAMS = 1
+    /// </summary>
+    public const int NUMCAMS = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNewCloseCamValues;
     /// <summary>
     /// Function: SetNewCloseCamValues

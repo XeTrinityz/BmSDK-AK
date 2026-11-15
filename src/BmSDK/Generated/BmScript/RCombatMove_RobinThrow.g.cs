@@ -78,6 +78,31 @@ public partial class RCombatMove_RobinThrow : BmSDK.BmGame.RCombatMove_PlayerSpe
         where TComponent : class, Framework.IScriptComponent<RCombatMove_RobinThrow>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxDurationScale = 1.3f
+    /// </summary>
+    public const float MaxDurationScale = 1.3f;
+
+    /// <summary>
+    /// Const: MinDurationScale = 0.9f
+    /// </summary>
+    public const float MinDurationScale = 0.9f;
+
+    /// <summary>
+    /// Const: MaxIntoAnimDist = 1000.f
+    /// </summary>
+    public const float MaxIntoAnimDist = 1000f;
+
+    /// <summary>
+    /// Const: MinIntoAnimDist = 500.f
+    /// </summary>
+    public const float MinIntoAnimDist = 500f;
+
+    /// <summary>
+    /// Const: HalfExtentCheckHeight = 50
+    /// </summary>
+    public const int HalfExtentCheckHeight = 50;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMoveForPawn;
     /// <summary>
     /// Function: ExitMoveForPawn

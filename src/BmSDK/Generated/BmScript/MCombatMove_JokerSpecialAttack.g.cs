@@ -78,6 +78,26 @@ public partial class MCombatMove_JokerSpecialAttack : BmSDK.BmGame.RCombatMove, 
         where TComponent : class, Framework.IScriptComponent<MCombatMove_JokerSpecialAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxDurationScale = 1.3f
+    /// </summary>
+    public const float MaxDurationScale = 1.3f;
+
+    /// <summary>
+    /// Const: MinDurationScale = 0.9f
+    /// </summary>
+    public const float MinDurationScale = 0.9f;
+
+    /// <summary>
+    /// Const: MaxAttackAnimDist = 1000.f
+    /// </summary>
+    public const float MaxAttackAnimDist = 1000f;
+
+    /// <summary>
+    /// Const: MinAttackAnimDist = 500.f
+    /// </summary>
+    public const float MinAttackAnimDist = 500f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnEquipJokerMagnum;
     /// <summary>
     /// Function: UnEquipJokerMagnum

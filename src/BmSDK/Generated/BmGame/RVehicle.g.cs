@@ -73,6 +73,11 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
         where TComponent : class, Framework.IScriptComponent<RVehicle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kMaxDestructibleDustTrails = 2
+    /// </summary>
+    public const int kMaxDestructibleDustTrails = 2;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RVehicleNoSpeedKill;
     /// <summary>
     /// Function: RVehicleNoSpeedKill

@@ -78,6 +78,11 @@ public partial class RGFxMovieUI_DLCScanning : BmSDK.BmGame.RGFxMovieUI, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_DLCScanning>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SHOW_FOR_FRAMES = 60
+    /// </summary>
+    public const int SHOW_FOR_FRAMES = 60;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DLC_IsScanActive;
     /// <summary>
     /// Function: DLC_IsScanActive

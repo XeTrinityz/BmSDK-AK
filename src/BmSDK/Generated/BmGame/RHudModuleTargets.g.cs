@@ -78,6 +78,86 @@ public partial class RHudModuleTargets : BmSDK.BmGame.RHudModule, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RHudModuleTargets>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Const_ScreenTanToCorner = 1.158
+    /// </summary>
+    public const float Const_ScreenTanToCorner = 1.158f;
+
+    /// <summary>
+    /// Const: Const_ScreenSafeY = 0.367
+    /// </summary>
+    public const float Const_ScreenSafeY = 0.367f;
+
+    /// <summary>
+    /// Const: Const_ScreenSafeX = 0.425
+    /// </summary>
+    public const float Const_ScreenSafeX = 0.425f;
+
+    /// <summary>
+    /// Const: TAF_ObjectiveTarget = 4096
+    /// </summary>
+    public const int TAF_ObjectiveTarget = 4096;
+
+    /// <summary>
+    /// Const: TAF_FadeDuringCombat = 2048
+    /// </summary>
+    public const int TAF_FadeDuringCombat = 2048;
+
+    /// <summary>
+    /// Const: TAF_SuppressDuringRemoteControl = 1024
+    /// </summary>
+    public const int TAF_SuppressDuringRemoteControl = 1024;
+
+    /// <summary>
+    /// Const: TAF_AppendDistance = 512
+    /// </summary>
+    public const int TAF_AppendDistance = 512;
+
+    /// <summary>
+    /// Const: TAF_PositionIconAboveTarget = 256
+    /// </summary>
+    public const int TAF_PositionIconAboveTarget = 256;
+
+    /// <summary>
+    /// Const: TAF_VariableSizeReticle = 128
+    /// </summary>
+    public const int TAF_VariableSizeReticle = 128;
+
+    /// <summary>
+    /// Const: TAF_OffscreenGrappleLogic = 64
+    /// </summary>
+    public const int TAF_OffscreenGrappleLogic = 64;
+
+    /// <summary>
+    /// Const: TAF_OverrideCentreScreenDepth = 32
+    /// </summary>
+    public const int TAF_OverrideCentreScreenDepth = 32;
+
+    /// <summary>
+    /// Const: TAF_CentreScreen = 16
+    /// </summary>
+    public const int TAF_CentreScreen = 16;
+
+    /// <summary>
+    /// Const: TAF_PersistUntilHidden = 8
+    /// </summary>
+    public const int TAF_PersistUntilHidden = 8;
+
+    /// <summary>
+    /// Const: TAF_ClampIfOffscreen = 4
+    /// </summary>
+    public const int TAF_ClampIfOffscreen = 4;
+
+    /// <summary>
+    /// Const: TAF_CullIfBehind = 2
+    /// </summary>
+    public const int TAF_CullIfBehind = 2;
+
+    /// <summary>
+    /// Const: TAF_Pulsing = 1
+    /// </summary>
+    public const int TAF_Pulsing = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuperEjectLevel;
     /// <summary>
     /// Function: SetSuperEjectLevel

@@ -78,6 +78,206 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
         where TComponent : class, Framework.IScriptComponent<GameplayEventsWriterBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: GAMEEVENT_MAX_EVENTID = 0x0000FFFF
+    /// </summary>
+    public const int GAMEEVENT_MAX_EVENTID = 0x0000FFFF;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GAME_SPECIFIC = 1000
+    /// </summary>
+    public const int GAMEEVENT_GAME_SPECIFIC = 1000;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GENERIC_PARAM_LIST_END = 400
+    /// </summary>
+    public const int GAMEEVENT_GENERIC_PARAM_LIST_END = 400;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GENERIC_PARAM_LIST_START = 300
+    /// </summary>
+    public const int GAMEEVENT_GENERIC_PARAM_LIST_START = 300;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_KILL_NORMAL = 200
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_KILL_NORMAL = 200;
+
+    /// <summary>
+    /// Const: GAMEEVENT_WEAPON_FIRED = 152
+    /// </summary>
+    public const int GAMEEVENT_WEAPON_FIRED = 152;
+
+    /// <summary>
+    /// Const: GAMEEVENT_WEAPON_DAMAGE_MELEE = 151
+    /// </summary>
+    public const int GAMEEVENT_WEAPON_DAMAGE_MELEE = 151;
+
+    /// <summary>
+    /// Const: GAMEEVENT_WEAPON_DAMAGE = 150
+    /// </summary>
+    public const int GAMEEVENT_WEAPON_DAMAGE = 150;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_ROUND_STALEMATE = 110
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_ROUND_STALEMATE = 110;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_ROUND_WON = 109
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_ROUND_WON = 109;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_DEATH = 108
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_DEATH = 108;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_KILL_STREAK = 107
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_KILL_STREAK = 107;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_TEAMCHANGE = 106
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_TEAMCHANGE = 106;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_LOCATION_POLL = 105
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_LOCATION_POLL = 105;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_KILL = 104
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_KILL = 104;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_MATCH_WON = 103
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_MATCH_WON = 103;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_SPAWN = 102
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_SPAWN = 102;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_LOGOUT = 101
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_LOGOUT = 101;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PLAYER_LOGIN = 100
+    /// </summary>
+    public const int GAMEEVENT_PLAYER_LOGIN = 100;
+
+    /// <summary>
+    /// Const: GAMEEVENT_TEAM_ROUND_STALEMATE = 52
+    /// </summary>
+    public const int GAMEEVENT_TEAM_ROUND_STALEMATE = 52;
+
+    /// <summary>
+    /// Const: GAMEEVENT_TEAM_ROUND_WON = 5
+    /// </summary>
+    public const int GAMEEVENT_TEAM_ROUND_WON = 5;
+
+    /// <summary>
+    /// Const: GAMEEVENT_TEAM_MATCH_WON = 4
+    /// </summary>
+    public const int GAMEEVENT_TEAM_MATCH_WON = 4;
+
+    /// <summary>
+    /// Const: GAMEEVENT_TEAM_GAME_SCORE = 51
+    /// </summary>
+    public const int GAMEEVENT_TEAM_GAME_SCORE = 51;
+
+    /// <summary>
+    /// Const: GAMEEVENT_TEAM_CREATED = 50
+    /// </summary>
+    public const int GAMEEVENT_TEAM_CREATED = 50;
+
+    /// <summary>
+    /// Const: GAMEEVENT_FRAMETIME_POLL = 43
+    /// </summary>
+    public const int GAMEEVENT_FRAMETIME_POLL = 43;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GPUFRAMETIME_POLL = 42
+    /// </summary>
+    public const int GAMEEVENT_GPUFRAMETIME_POLL = 42;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GAMETHREAD_POLL = 41
+    /// </summary>
+    public const int GAMEEVENT_GAMETHREAD_POLL = 41;
+
+    /// <summary>
+    /// Const: GAMEEVENT_RENDERTHREAD_POLL = 40
+    /// </summary>
+    public const int GAMEEVENT_RENDERTHREAD_POLL = 40;
+
+    /// <summary>
+    /// Const: GAMEEVENT_PING_POLL = 39
+    /// </summary>
+    public const int GAMEEVENT_PING_POLL = 39;
+
+    /// <summary>
+    /// Const: GAMEEVENT_NETWORKUSAGEOUT_POLL = 38
+    /// </summary>
+    public const int GAMEEVENT_NETWORKUSAGEOUT_POLL = 38;
+
+    /// <summary>
+    /// Const: GAMEEVENT_NETWORKUSAGEIN_POLL = 37
+    /// </summary>
+    public const int GAMEEVENT_NETWORKUSAGEIN_POLL = 37;
+
+    /// <summary>
+    /// Const: GAMEEVENT_FRAMERATE_POLL = 36
+    /// </summary>
+    public const int GAMEEVENT_FRAMERATE_POLL = 36;
+
+    /// <summary>
+    /// Const: GAMEEVENT_MEMORYUSAGE_POLL = 35
+    /// </summary>
+    public const int GAMEEVENT_MEMORYUSAGE_POLL = 35;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GAME_MAPNAME = 8
+    /// </summary>
+    public const int GAMEEVENT_GAME_MAPNAME = 8;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GAME_OPTION_URL = 7
+    /// </summary>
+    public const int GAMEEVENT_GAME_OPTION_URL = 7;
+
+    /// <summary>
+    /// Const: GAMEEVENT_GAME_CLASS = 6
+    /// </summary>
+    public const int GAMEEVENT_GAME_CLASS = 6;
+
+    /// <summary>
+    /// Const: GAMEEVENT_ROUND_ENDED = 3
+    /// </summary>
+    public const int GAMEEVENT_ROUND_ENDED = 3;
+
+    /// <summary>
+    /// Const: GAMEEVENT_ROUND_STARTED = 2
+    /// </summary>
+    public const int GAMEEVENT_ROUND_STARTED = 2;
+
+    /// <summary>
+    /// Const: GAMEEVENT_MATCH_ENDED = 1
+    /// </summary>
+    public const int GAMEEVENT_MATCH_ENDED = 1;
+
+    /// <summary>
+    /// Const: GAMEEVENT_MATCH_STARTED = 0
+    /// </summary>
+    public const int GAMEEVENT_MATCH_STARTED = 0;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordCoverLinkFireLinks;
     /// <summary>
     /// Function: RecordCoverLinkFireLinks

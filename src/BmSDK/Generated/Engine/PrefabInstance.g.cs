@@ -79,6 +79,11 @@ public partial class PrefabInstance : BmSDK.Engine.Actor, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: PrefabInstanceNumSiblings = 3
+    /// </summary>
+    public const int PrefabInstanceNumSiblings = 3;
+
+    /// <summary>
     /// ObjectProperty: TemplatePrefab
     /// </summary>
     public unsafe BmSDK.Engine.Prefab TemplatePrefab

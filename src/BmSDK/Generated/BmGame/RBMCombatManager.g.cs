@@ -78,6 +78,21 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RBMCombatManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kExclusivePriority = 50.f
+    /// </summary>
+    public const float kExclusivePriority = 50f;
+
+    /// <summary>
+    /// Const: kMaxVillainBatmobileTakedownRangeSq = 36000000.f
+    /// </summary>
+    public const float kMaxVillainBatmobileTakedownRangeSq = 36000000f;
+
+    /// <summary>
+    /// Const: kMaxPlayerBatmobileTakedownRangeSq = 4000000.f
+    /// </summary>
+    public const float kMaxPlayerBatmobileTakedownRangeSq = 4000000f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerDamageSuspended;
     /// <summary>
     /// Function: IsPlayerDamageSuspended

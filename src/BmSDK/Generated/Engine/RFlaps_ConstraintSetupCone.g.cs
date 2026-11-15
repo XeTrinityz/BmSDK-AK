@@ -79,6 +79,11 @@ public partial class RFlaps_ConstraintSetupCone : BmSDK.Engine.RFlaps_Constraint
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: RFlapsConeMaxNumConstrainedParticles = 5
+    /// </summary>
+    public const int RFlapsConeMaxNumConstrainedParticles = 5;
+
+    /// <summary>
     /// InlineArray{StructProperty}: ConstrainedParticles
     /// </summary>
     public InlineArray<BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference> ConstrainedParticles => new(5, Ptr + 112, 16, this);

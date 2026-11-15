@@ -78,6 +78,11 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<_Console>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxHistory = 16
+    /// </summary>
+    public const int MaxHistory = 16;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCompleteIndices;
     /// <summary>
     /// Function: UpdateCompleteIndices

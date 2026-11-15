@@ -78,6 +78,11 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
         where TComponent : class, Framework.IScriptComponent<RGameplayEventsHydra>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: GAMEEVENT_BUG_REPORT = 999
+    /// </summary>
+    public const int GAMEEVENT_BUG_REPORT = 999;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordGameAction;
     /// <summary>
     /// Function: RecordGameAction

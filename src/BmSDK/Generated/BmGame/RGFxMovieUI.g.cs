@@ -78,6 +78,31 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: RUI_GRIDBUTTONSTATE_PLATFORM = 4
+    /// </summary>
+    public const int RUI_GRIDBUTTONSTATE_PLATFORM = 4;
+
+    /// <summary>
+    /// Const: RUI_GRIDBUTTONSTATE_LOCKED = 2
+    /// </summary>
+    public const int RUI_GRIDBUTTONSTATE_LOCKED = 2;
+
+    /// <summary>
+    /// Const: RUI_GRIDBUTTONSTATE_NEW = 1
+    /// </summary>
+    public const int RUI_GRIDBUTTONSTATE_NEW = 1;
+
+    /// <summary>
+    /// Const: MENU_INDENT = 40
+    /// </summary>
+    public const int MENU_INDENT = 40;
+
+    /// <summary>
+    /// Const: MENU_ITEM_DISABLED = true
+    /// </summary>
+    public const bool MENU_ITEM_DISABLED = true;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabledStatusIME;
     /// <summary>
     /// Function: SetEnabledStatusIME

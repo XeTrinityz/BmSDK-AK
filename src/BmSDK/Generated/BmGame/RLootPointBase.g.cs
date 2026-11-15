@@ -73,6 +73,11 @@ public partial class RLootPointBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisrupta
         where TComponent : class, Framework.IScriptComponent<RLootPointBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_WAYPOINT_DBG_LINES = 8
+    /// </summary>
+    public const int MAX_WAYPOINT_DBG_LINES = 8;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisrupted;
     /// <summary>
     /// Function: IsDisrupted

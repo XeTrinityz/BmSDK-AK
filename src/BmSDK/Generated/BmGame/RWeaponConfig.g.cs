@@ -78,6 +78,11 @@ public partial class RWeaponConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RWeaponConfig>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_POSECONFIG_PREVIEW_EXTRA_MESHES = 3
+    /// </summary>
+    public const int MAX_POSECONFIG_PREVIEW_EXTRA_MESHES = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToString;
     /// <summary>
     /// Function: ToString

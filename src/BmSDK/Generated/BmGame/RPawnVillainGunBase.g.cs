@@ -73,6 +73,16 @@ public partial class RPawnVillainGunBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RPawnVillainGunBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: GRENADE_MAX_ELEVATION = 2000.0f
+    /// </summary>
+    public const float GRENADE_MAX_ELEVATION = 2000f;
+
+    /// <summary>
+    /// Const: RECDisableSpecialsMax = 3.0f
+    /// </summary>
+    public const float RECDisableSpecialsMax = 3f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGuardVolume;
     /// <summary>
     /// Function: SetGuardVolume

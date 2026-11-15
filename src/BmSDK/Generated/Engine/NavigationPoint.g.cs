@@ -78,6 +78,11 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<NavigationPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: INFINITE_PATH_COST = 10000000
+    /// </summary>
+    public const int INFINITE_PATH_COST = 10000000;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugAbbrev;
     /// <summary>
     /// Function: GetDebugAbbrev

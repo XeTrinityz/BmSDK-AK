@@ -79,6 +79,11 @@ public partial class RFlaps_ConstraintSetupAnimBlend : BmSDK.Engine.RFlaps_Const
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: RFlapsAnimBlendMaxNumBlendedBones = 5
+    /// </summary>
+    public const int RFlapsAnimBlendMaxNumBlendedBones = 5;
+
+    /// <summary>
     /// StructProperty: ConstrainedParticle
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference ConstrainedParticle

@@ -78,6 +78,11 @@ public partial class RJobAssignment_Minelayer : BmSDK.BmGame.RJobAssignment, BmS
         where TComponent : class, Framework.IScriptComponent<RJobAssignment_Minelayer>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MIN_DIST_FROM_CAS = 130.0f
+    /// </summary>
+    public const float MIN_DIST_FROM_CAS = 130f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoAssignment;
     /// <summary>
     /// Function: DoAssignment

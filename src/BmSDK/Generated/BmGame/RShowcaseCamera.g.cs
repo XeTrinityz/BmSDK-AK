@@ -78,6 +78,46 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RShowcaseCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: INPUT_FOV_DAMPEN_SPEED = 18.0
+    /// </summary>
+    public const float INPUT_FOV_DAMPEN_SPEED = 18f;
+
+    /// <summary>
+    /// Const: INPUT_FOV_ACCELERATION = 50.0
+    /// </summary>
+    public const float INPUT_FOV_ACCELERATION = 50f;
+
+    /// <summary>
+    /// Const: INPUT_SPIN_DAMPEN_SPEED = 16.0
+    /// </summary>
+    public const float INPUT_SPIN_DAMPEN_SPEED = 16f;
+
+    /// <summary>
+    /// Const: INPUT_SPIN_ACCELERATION = 3000.0
+    /// </summary>
+    public const float INPUT_SPIN_ACCELERATION = 3000f;
+
+    /// <summary>
+    /// Const: INPUT_HEIGHT_DAMPEN_SPEED = 20.0
+    /// </summary>
+    public const float INPUT_HEIGHT_DAMPEN_SPEED = 20f;
+
+    /// <summary>
+    /// Const: INPUT_HEIGHT_ACCELERATION = 100.0
+    /// </summary>
+    public const float INPUT_HEIGHT_ACCELERATION = 100f;
+
+    /// <summary>
+    /// Const: AUTO_MODE_DELAY = 15.0
+    /// </summary>
+    public const float AUTO_MODE_DELAY = 15f;
+
+    /// <summary>
+    /// Const: INTERPOLATION_SPEED = 5.0
+    /// </summary>
+    public const float INTERPOLATION_SPEED = 5f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLightRigs;
     /// <summary>
     /// Function: UpdateLightRigs

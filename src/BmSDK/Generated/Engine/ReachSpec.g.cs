@@ -78,6 +78,11 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ReachSpec>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BLOCKEDPATHCOST = 10000000
+    /// </summary>
+    public const int BLOCKEDPATHCOST = 10000000;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockedFor;
     /// <summary>
     /// Function: IsBlockedFor

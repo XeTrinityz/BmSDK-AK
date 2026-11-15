@@ -78,6 +78,11 @@ public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSD
         where TComponent : class, Framework.IScriptComponent<RHarpoonDragPhysicsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DragableObjectDominanceGroup = 10
+    /// </summary>
+    public const int DragableObjectDominanceGroup = 10;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeInteraction;
     /// <summary>
     /// Function: AllowLongRangeInteraction

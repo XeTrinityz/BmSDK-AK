@@ -78,6 +78,16 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         where TComponent : class, Framework.IScriptComponent<RLevelTransitionDoorBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAT_DOOR_LOCKED = 1
+    /// </summary>
+    public const int MAT_DOOR_LOCKED = 1;
+
+    /// <summary>
+    /// Const: MAT_DOOR_UNLOCKED = 0
+    /// </summary>
+    public const int MAT_DOOR_UNLOCKED = 0;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeInteraction;
     /// <summary>
     /// Function: AllowLongRangeInteraction

@@ -78,6 +78,11 @@ public partial class RBMAIAction_MoveAndTransition : BmSDK.BmGame.RBMAIAction_Ba
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_MoveAndTransition>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SCORE_INVALID = -1
+    /// </summary>
+    public const int SCORE_INVALID = -1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick

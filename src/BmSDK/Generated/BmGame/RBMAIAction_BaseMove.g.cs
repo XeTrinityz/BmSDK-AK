@@ -78,6 +78,21 @@ public partial class RBMAIAction_BaseMove : BmSDK.BmGame.RBMAIAction, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_BaseMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LOOKAHEAD_DIST_2 = 200.0f
+    /// </summary>
+    public const float LOOKAHEAD_DIST_2 = 200f;
+
+    /// <summary>
+    /// Const: LOOKAHEAD_DIST_1 = 0.0f
+    /// </summary>
+    public const float LOOKAHEAD_DIST_1 = 0f;
+
+    /// <summary>
+    /// Const: MIN_STAIR_ANGLE_DEG = 28.0f
+    /// </summary>
+    public const float MIN_STAIR_ANGLE_DEG = 28f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathDir;
     /// <summary>
     /// Function: GetPathDir

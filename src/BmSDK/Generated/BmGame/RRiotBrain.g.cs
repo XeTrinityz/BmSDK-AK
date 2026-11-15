@@ -78,6 +78,11 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RRiotBrain>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: RiotHistoryMax = 10
+    /// </summary>
+    public const int RiotHistoryMax = 10;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BecomeJoker;
     /// <summary>
     /// Function: BecomeJoker

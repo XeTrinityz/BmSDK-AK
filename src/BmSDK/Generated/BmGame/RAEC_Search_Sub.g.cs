@@ -73,6 +73,11 @@ public partial class RAEC_Search_Sub : BmSDK.BmGame.RAEC_Search_Sub_FormationLea
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SpecialMoveCheckFrequency = 0.9
+    /// </summary>
+    public const float SpecialMoveCheckFrequency = 0.9f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown

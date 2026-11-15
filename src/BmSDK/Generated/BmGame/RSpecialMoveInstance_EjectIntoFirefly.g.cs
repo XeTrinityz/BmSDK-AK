@@ -78,6 +78,26 @@ public partial class RSpecialMoveInstance_EjectIntoFirefly : BmSDK.BmGame.RSpeci
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_EjectIntoFirefly>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: REQUIRED_RADIUS = 150.0f
+    /// </summary>
+    public const float REQUIRED_RADIUS = 150f;
+
+    /// <summary>
+    /// Const: MAX_REQUIRED_DIST_FOR_ESCAPE = 2000
+    /// </summary>
+    public const int MAX_REQUIRED_DIST_FOR_ESCAPE = 2000;
+
+    /// <summary>
+    /// Const: SHORT_ANIM_TRAVELDIST = 306
+    /// </summary>
+    public const int SHORT_ANIM_TRAVELDIST = 306;
+
+    /// <summary>
+    /// Const: LONG_ANIM_TRAVELDIST = 1100
+    /// </summary>
+    public const int LONG_ANIM_TRAVELDIST = 1100;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove

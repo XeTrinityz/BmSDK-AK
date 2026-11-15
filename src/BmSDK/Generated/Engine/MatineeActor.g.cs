@@ -78,6 +78,11 @@ public partial class MatineeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<MatineeActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_AIGROUP_NUMBER = 10
+    /// </summary>
+    public const int MAX_AIGROUP_NUMBER = 10;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPriorityRefresh;
     /// <summary>
     /// Function: CheckPriorityRefresh

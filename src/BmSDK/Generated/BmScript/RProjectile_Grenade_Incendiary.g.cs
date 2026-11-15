@@ -78,6 +78,11 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         where TComponent : class, Framework.IScriptComponent<RProjectile_Grenade_Incendiary>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: max_charges = 64
+    /// </summary>
+    public const int max_charges = 64;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed

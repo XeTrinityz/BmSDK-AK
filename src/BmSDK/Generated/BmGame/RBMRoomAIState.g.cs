@@ -78,6 +78,56 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RBMRoomAIState>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MINE_OBSTACLE_MESH_CHECK_EXTENT = 60
+    /// </summary>
+    public const int MINE_OBSTACLE_MESH_CHECK_EXTENT = 60;
+
+    /// <summary>
+    /// Const: MAX_DIST_FROM_CURRENT_CAS_TO_MINE = 600
+    /// </summary>
+    public const int MAX_DIST_FROM_CURRENT_CAS_TO_MINE = 600;
+
+    /// <summary>
+    /// Const: MIN_DIST_FROM_CURRENT_CAS_TO_MINE = 300
+    /// </summary>
+    public const int MIN_DIST_FROM_CURRENT_CAS_TO_MINE = 300;
+
+    /// <summary>
+    /// Const: MIN_DIST_BETWEEN_ANY_DEAD_BODY_AND_MINES = 150
+    /// </summary>
+    public const int MIN_DIST_BETWEEN_ANY_DEAD_BODY_AND_MINES = 150;
+
+    /// <summary>
+    /// Const: MIN_DIST_BETWEEN_PLACED_MINES = 220
+    /// </summary>
+    public const int MIN_DIST_BETWEEN_PLACED_MINES = 220;
+
+    /// <summary>
+    /// Const: MIN_DIST_BETWEEN_FLIPGRATE_AND_MINE = 300
+    /// </summary>
+    public const int MIN_DIST_BETWEEN_FLIPGRATE_AND_MINE = 300;
+
+    /// <summary>
+    /// Const: MIN_DIST_BETWEEN_GRATE_AND_MINE = 115
+    /// </summary>
+    public const int MIN_DIST_BETWEEN_GRATE_AND_MINE = 115;
+
+    /// <summary>
+    /// Const: DBG_ANNOUNCER_TEXT_DURATION = 5
+    /// </summary>
+    public const int DBG_ANNOUNCER_TEXT_DURATION = 5;
+
+    /// <summary>
+    /// Const: MaxGuns = 10
+    /// </summary>
+    public const int MaxGuns = 10;
+
+    /// <summary>
+    /// Const: MaxMinesInRoom = 18
+    /// </summary>
+    public const int MaxMinesInRoom = 18;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreSeedVoiceAssignments;
     /// <summary>
     /// Function: PreSeedVoiceAssignments

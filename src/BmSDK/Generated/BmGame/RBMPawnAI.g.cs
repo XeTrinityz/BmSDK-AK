@@ -73,6 +73,21 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
         where TComponent : class, Framework.IScriptComponent<RBMPawnAI>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_DYE_SPRAY_LEVEL = 2
+    /// </summary>
+    public const int MAX_DYE_SPRAY_LEVEL = 2;
+
+    /// <summary>
+    /// Const: MAX_PAINTY_FOOTPRINTS = 30
+    /// </summary>
+    public const int MAX_PAINTY_FOOTPRINTS = 30;
+
+    /// <summary>
+    /// Const: FailHistoryNum = 3
+    /// </summary>
+    public const int FailHistoryNum = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLastStartledByPlayerTime;
     /// <summary>
     /// Function: SetLastStartledByPlayerTime

@@ -79,6 +79,11 @@ public partial class RBarkConvoPawnRef_ClosestForShouting : BmSDK.BmGame.RBarkCo
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: ShoutDist = 1500
+    /// </summary>
+    public const int ShoutDist = 1500;
+
+    /// <summary>
     /// IntProperty: PawnIndex
     /// </summary>
     public unsafe int PawnIndex

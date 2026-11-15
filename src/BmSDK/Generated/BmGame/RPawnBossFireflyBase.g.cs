@@ -73,6 +73,11 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RPawnBossFireflyBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_ENCOUNTERS = 3
+    /// </summary>
+    public const int NUM_ENCOUNTERS = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFFBark;
     /// <summary>
     /// Function: TriggerFFBark

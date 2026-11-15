@@ -78,6 +78,41 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RBMScreenShakeModifier>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: ALLINV = 63
+    /// </summary>
+    public const int ALLINV = 63;
+
+    /// <summary>
+    /// Const: ROTZINV = 32
+    /// </summary>
+    public const int ROTZINV = 32;
+
+    /// <summary>
+    /// Const: ROTYINV = 16
+    /// </summary>
+    public const int ROTYINV = 16;
+
+    /// <summary>
+    /// Const: ROTXINV = 8
+    /// </summary>
+    public const int ROTXINV = 8;
+
+    /// <summary>
+    /// Const: LOCZINV = 4
+    /// </summary>
+    public const int LOCZINV = 4;
+
+    /// <summary>
+    /// Const: LOCYINV = 2
+    /// </summary>
+    public const int LOCYINV = 2;
+
+    /// <summary>
+    /// Const: LOCXINV = 1
+    /// </summary>
+    public const int LOCXINV = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArrayElement;
     /// <summary>
     /// Function: GetArrayElement

@@ -78,6 +78,66 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
         where TComponent : class, Framework.IScriptComponent<RPlayerController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: ShortGlideKickMaximumDistanceDLC = 4500000.0f
+    /// </summary>
+    public const float ShortGlideKickMaximumDistanceDLC = 4500000f;
+
+    /// <summary>
+    /// Const: ShortGlideKickMaximumDistance = 1440000.0f
+    /// </summary>
+    public const float ShortGlideKickMaximumDistance = 1440000f;
+
+    /// <summary>
+    /// Const: MARKER_DISTANCE_FOR_MAX_VISIBILITY = 9000.0f
+    /// </summary>
+    public const float MARKER_DISTANCE_FOR_MAX_VISIBILITY = 9000f;
+
+    /// <summary>
+    /// Const: MARKER_DISTANCE_FOR_MIN_VISIBILITY = 10000.0f
+    /// </summary>
+    public const float MARKER_DISTANCE_FOR_MIN_VISIBILITY = 10000f;
+
+    /// <summary>
+    /// Const: EDGEFLAG_SpecialRoofEdge = 128
+    /// </summary>
+    public const int EDGEFLAG_SpecialRoofEdge = 128;
+
+    /// <summary>
+    /// Const: EDGEFLAG_CanGrapple = 64
+    /// </summary>
+    public const int EDGEFLAG_CanGrapple = 64;
+
+    /// <summary>
+    /// Const: EDGEFLAG_ExtraSloped = 32
+    /// </summary>
+    public const int EDGEFLAG_ExtraSloped = 32;
+
+    /// <summary>
+    /// Const: EDGEFLAG_WireRailing = 16
+    /// </summary>
+    public const int EDGEFLAG_WireRailing = 16;
+
+    /// <summary>
+    /// Const: EDGEFLAG_SlopedEdge = 8
+    /// </summary>
+    public const int EDGEFLAG_SlopedEdge = 8;
+
+    /// <summary>
+    /// Const: EDGEFLAG_ShimmyOnly = 4
+    /// </summary>
+    public const int EDGEFLAG_ShimmyOnly = 4;
+
+    /// <summary>
+    /// Const: EDGEFLAG_Railing = 2
+    /// </summary>
+    public const int EDGEFLAG_Railing = 2;
+
+    /// <summary>
+    /// Const: EDGEFLAG_WideRailing = 1
+    /// </summary>
+    public const int EDGEFLAG_WideRailing = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharacterKeyIndexFromBatmanIndex;
     /// <summary>
     /// Function: GetCharacterKeyIndexFromBatmanIndex

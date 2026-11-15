@@ -73,6 +73,46 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<UISceneClient>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SCENEFILTER_Any = 0xFFFFFFFF
+    /// </summary>
+    public const int SCENEFILTER_Any = unchecked((int)0xFFFFFFFF);
+
+    /// <summary>
+    /// Const: SCENEFILTER_ReceivesFocus = 0x00000020
+    /// </summary>
+    public const int SCENEFILTER_ReceivesFocus = 0x00000020;
+
+    /// <summary>
+    /// Const: SCENEFILTER_UsesPostProcessing = 0x00000010
+    /// </summary>
+    public const int SCENEFILTER_UsesPostProcessing = 0x00000010;
+
+    /// <summary>
+    /// Const: SCENEFILTER_PrimitiveUsersOnly = 0x00000008
+    /// </summary>
+    public const int SCENEFILTER_PrimitiveUsersOnly = 0x00000008;
+
+    /// <summary>
+    /// Const: SCENEFILTER_PausersOnly = 0x00000004
+    /// </summary>
+    public const int SCENEFILTER_PausersOnly = 0x00000004;
+
+    /// <summary>
+    /// Const: SCENEFILTER_InputProcessorOnly = 0x00000002
+    /// </summary>
+    public const int SCENEFILTER_InputProcessorOnly = 0x00000002;
+
+    /// <summary>
+    /// Const: SCENEFILTER_IncludeTransient = 0x00000001
+    /// </summary>
+    public const int SCENEFILTER_IncludeTransient = 0x00000001;
+
+    /// <summary>
+    /// Const: SCENEFILTER_None = 0x00000000
+    /// </summary>
+    public const int SCENEFILTER_None = 0x00000000;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializeSceneClient;
     /// <summary>
     /// Function: InitializeSceneClient

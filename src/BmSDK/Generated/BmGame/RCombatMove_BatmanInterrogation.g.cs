@@ -78,6 +78,26 @@ public partial class RCombatMove_BatmanInterrogation : BmSDK.BmGame.RCombatMove_
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanInterrogation>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxDurationScale = 1.3f
+    /// </summary>
+    public const float MaxDurationScale = 1.3f;
+
+    /// <summary>
+    /// Const: MinDurationScale = 0.9f
+    /// </summary>
+    public const float MinDurationScale = 0.9f;
+
+    /// <summary>
+    /// Const: MaxIntoAnimDist = 1000.f
+    /// </summary>
+    public const float MaxIntoAnimDist = 1000f;
+
+    /// <summary>
+    /// Const: MinIntoAnimDist = 256.f
+    /// </summary>
+    public const float MinIntoAnimDist = 256f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove

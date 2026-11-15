@@ -73,6 +73,16 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RDisruptorSniper>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DISRUPTOR_FIRED_FLAG_SCREENSHAKE = 0x02
+    /// </summary>
+    public const int DISRUPTOR_FIRED_FLAG_SCREENSHAKE = 0x02;
+
+    /// <summary>
+    /// Const: DISRUPTOR_FIRED_FLAG_ANIMATE = 0x01
+    /// </summary>
+    public const int DISRUPTOR_FIRED_FLAG_ANIMATE = 0x01;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayerForgetTrackedTarget;
     /// <summary>
     /// Function: CanPlayerForgetTrackedTarget

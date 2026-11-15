@@ -78,6 +78,16 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RCwCaltropsTrapBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CylinderHeight = 50.0f
+    /// </summary>
+    public const float CylinderHeight = 50f;
+
+    /// <summary>
+    /// Const: DefaultCylinderRadius = 120.0f
+    /// </summary>
+    public const float DefaultCylinderRadius = 120f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCollisionCylinders;
     /// <summary>
     /// Function: RemoveCollisionCylinders

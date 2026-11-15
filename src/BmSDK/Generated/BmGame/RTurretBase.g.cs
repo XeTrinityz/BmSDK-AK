@@ -73,6 +73,11 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
         where TComponent : class, Framework.IScriptComponent<RTurretBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_FIRING_FX = 3
+    /// </summary>
+    public const int NUM_FIRING_FX = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableTurretLights;
     /// <summary>
     /// Function: EnableTurretLights

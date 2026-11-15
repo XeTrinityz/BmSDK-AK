@@ -73,6 +73,11 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<GameplayEvents>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: HeaderFlags_NoEventStrings = 1
+    /// </summary>
+    public const int HeaderFlags_NoEventStrings = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilename;
     /// <summary>
     /// Function: GetFilename

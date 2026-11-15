@@ -78,6 +78,11 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RSaveGameManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: ROUNDROBIN_SAVE_MAX = 2
+    /// </summary>
+    public const int ROUNDROBIN_SAVE_MAX = 2;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocationID;
     /// <summary>
     /// Function: UpdateLocationID

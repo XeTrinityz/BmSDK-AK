@@ -78,6 +78,126 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         where TComponent : class, Framework.IScriptComponent<GameStatsAggregator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_GAME_SPECIFIC = 11000
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_GAME_SPECIFIC = 11000;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PAWN_SPAWN = 10400
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PAWN_SPAWN = 10400;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_WEAPON_FIRED = 10300
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_WEAPON_FIRED = 10300;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WASMELEEHIT = 10207
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WASMELEEHIT = 10207;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_DEALT_MELEEHITS = 10206
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_DEALT_MELEEHITS = 10206;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_MELEE_DAMAGE = 10205
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_MELEE_DAMAGE = 10205;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WEAPON_DAMAGE = 10204
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WEAPON_DAMAGE = 10204;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_DEALT_MELEE_DAMAGE = 10203
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_DEALT_MELEE_DAMAGE = 10203;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_DEALT_WEAPON_DAMAGE = 10202
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_DEALT_WEAPON_DAMAGE = 10202;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_DEATHS = 10201
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_DEATHS = 10201;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_KILLS = 10200
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_KILLS = 10200;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_TEAM_ROUND_WON = 10104
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_TEAM_ROUND_WON = 10104;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_TEAM_MATCH_WON = 10103
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_TEAM_MATCH_WON = 10103;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_TEAM_GAME_SCORE = 10102
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_TEAM_GAME_SCORE = 10102;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_TEAM_DEATHS = 10101
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_TEAM_DEATHS = 10101;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_TEAM_KILLS = 10100
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_TEAM_KILLS = 10100;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WASNORMALKILL = 10007
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_RECEIVED_WASNORMALKILL = 10007;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DAMAGE_DEALT_NORMALKILL = 10006
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DAMAGE_DEALT_NORMALKILL = 10006;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PLAYER_ROUND_WON = 10005
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PLAYER_ROUND_WON = 10005;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PLAYER_MATCH_WON = 10004
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PLAYER_MATCH_WON = 10004;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PLAYER_DEATHS = 10003
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PLAYER_DEATHS = 10003;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PLAYER_KILLS = 10002
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PLAYER_KILLS = 10002;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_PLAYER_TIMEALIVE = 10001
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_PLAYER_TIMEALIVE = 10001;
+
+    /// <summary>
+    /// Const: GAMEEVENT_AGGREGATED_DATA = 10000
+    /// </summary>
+    public const int GAMEEVENT_AGGREGATED_DATA = 10000;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAggregateMappingIDs;
     /// <summary>
     /// Function: GetAggregateMappingIDs

@@ -78,6 +78,11 @@ public partial class GFxAction_OpenMovie : BmSDK.Engine.SequenceAction, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<GFxAction_OpenMovie>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Version = 1
+    /// </summary>
+    public const int Version = 1;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

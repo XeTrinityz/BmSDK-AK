@@ -79,6 +79,11 @@ public partial class RBodyInstancePool : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: MaxNumBodyInstances = 64000
+    /// </summary>
+    public const int MaxNumBodyInstances = 64000;
+
+    /// <summary>
     /// ArrayProperty: FreeBodyInstIndices
     /// </summary>
     public unsafe BmSDK.TArray<int> FreeBodyInstIndices

@@ -73,6 +73,111 @@ public partial class GameObject : BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<GameObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: HalfPi = 1.570796326794896619
+    /// </summary>
+    public const float HalfPi = 1.5707964f;
+
+    /// <summary>
+    /// Const: TwoPi = 6.283185307179586476
+    /// </summary>
+    public const float TwoPi = 6.2831855f;
+
+    /// <summary>
+    /// Const: UnAToDeg = 0.0054931640625
+    /// </summary>
+    public const float UnAToDeg = 0.005493164f;
+
+    /// <summary>
+    /// Const: DegToUnA = 182.044444444444444444
+    /// </summary>
+    public const float DegToUnA = 182.04445f;
+
+    /// <summary>
+    /// Const: UnAToRad = 0.000095873799242852
+    /// </summary>
+    public const float UnAToRad = 9.58738E-05f;
+
+    /// <summary>
+    /// Const: RadToUnA = 10430.378350470452724949
+    /// </summary>
+    public const float RadToUnA = 10430.378f;
+
+    /// <summary>
+    /// Const: InvAspectRatio16x9 = 0.56249
+    /// </summary>
+    public const float InvAspectRatio16x9 = 0.56249f;
+
+    /// <summary>
+    /// Const: InvAspectRatio5x4 = 0.8
+    /// </summary>
+    public const float InvAspectRatio5x4 = 0.8f;
+
+    /// <summary>
+    /// Const: InvAspectRatio4x3 = 0.75
+    /// </summary>
+    public const float InvAspectRatio4x3 = 0.75f;
+
+    /// <summary>
+    /// Const: AspectRatio16x9 = 1.77778
+    /// </summary>
+    public const float AspectRatio16x9 = 1.77778f;
+
+    /// <summary>
+    /// Const: AspectRatio5x4 = 1.25
+    /// </summary>
+    public const float AspectRatio5x4 = 1.25f;
+
+    /// <summary>
+    /// Const: AspectRatio4x3 = 1.33333
+    /// </summary>
+    public const float AspectRatio4x3 = 1.33333f;
+
+    /// <summary>
+    /// Const: INDEX_NONE = -1
+    /// </summary>
+    public const int INDEX_NONE = -1;
+
+    /// <summary>
+    /// Const: UnrRotToDeg = 0.00549316540360483
+    /// </summary>
+    public const float UnrRotToDeg = 0.0054931655f;
+
+    /// <summary>
+    /// Const: DegToUnrRot = 182.0444
+    /// </summary>
+    public const float DegToUnrRot = 182.0444f;
+
+    /// <summary>
+    /// Const: RadToUnrRot = 10430.3783504704527
+    /// </summary>
+    public const float RadToUnrRot = 10430.378f;
+
+    /// <summary>
+    /// Const: UnrRotToRad = 0.00009587379924285
+    /// </summary>
+    public const float UnrRotToRad = 9.58738E-05f;
+
+    /// <summary>
+    /// Const: DegToRad = 0.017453292519943296
+    /// </summary>
+    public const float DegToRad = 0.017453292f;
+
+    /// <summary>
+    /// Const: RadToDeg = 57.295779513082321600
+    /// </summary>
+    public const float RadToDeg = 57.29578f;
+
+    /// <summary>
+    /// Const: Pi = 3.1415926535897932
+    /// </summary>
+    public const float Pi = 3.1415927f;
+
+    /// <summary>
+    /// Const: MaxInt = 0x7fffffff
+    /// </summary>
+    public const int MaxInt = 0x7fffffff;
+
     private static BmSDK.Function __fn_DebugHeapCheck;
     /// <summary>
     /// Function: DebugHeapCheck

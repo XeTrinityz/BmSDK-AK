@@ -78,6 +78,16 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPopulationManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: LocalPopulationDeaths_Firefly = 789
+    /// </summary>
+    public const int LocalPopulationDeaths_Firefly = 789;
+
+    /// <summary>
+    /// Const: LocalPopulationDeaths_PostSaveGame = 5473
+    /// </summary>
+    public const int LocalPopulationDeaths_PostSaveGame = 5473;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireflyRemoveAndAddDronesToPopulation;
     /// <summary>
     /// Function: FireflyRemoveAndAddDronesToPopulation

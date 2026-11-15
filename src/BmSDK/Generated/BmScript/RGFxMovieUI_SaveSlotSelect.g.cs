@@ -78,6 +78,11 @@ public partial class RGFxMovieUI_SaveSlotSelect : BmSDK.BmGame.RGFxMovieUI, BmSD
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_SaveSlotSelect>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: BACKUPDELAY = 20
+    /// </summary>
+    public const int BACKUPDELAY = 20;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeCalibState;
     /// <summary>
     /// Function: ChangeCalibState

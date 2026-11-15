@@ -79,6 +79,11 @@ public partial class Scene : BmSDK.GameObject, BmSDK.IGameObject
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: SDPG_NumBits = 4
+    /// </summary>
+    public const int SDPG_NumBits = 4;
+
+    /// <summary>
     /// Enum: EDetailMode
     /// </summary>
     public enum EDetailMode : byte

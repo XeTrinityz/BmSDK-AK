@@ -73,6 +73,21 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPawnCharacter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SOUND_THRESHOLD = 2.0f
+    /// </summary>
+    public const float SOUND_THRESHOLD = 2f;
+
+    /// <summary>
+    /// Const: SOUND_WINDOW = 0.5f
+    /// </summary>
+    public const float SOUND_WINDOW = 0.5f;
+
+    /// <summary>
+    /// Const: RETRIGGER_WINDOW = 0.1f
+    /// </summary>
+    public const float RETRIGGER_WINDOW = 0.1f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReAddShadowReflectionPlane;
     /// <summary>
     /// Function: ReAddShadowReflectionPlane

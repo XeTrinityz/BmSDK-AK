@@ -78,6 +78,36 @@ public partial class RAEC_BatarangReaction_Master : BmSDK.BmGame.RAlertEventCoor
         where TComponent : class, Framework.IScriptComponent<RAEC_BatarangReaction_Master>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DualHandgunsNoiseRange = 3000.0
+    /// </summary>
+    public const float DualHandgunsNoiseRange = 3000f;
+
+    /// <summary>
+    /// Const: BatarangSightDist = 3000.0
+    /// </summary>
+    public const float BatarangSightDist = 3000f;
+
+    /// <summary>
+    /// Const: WatchRadius = 1000.0
+    /// </summary>
+    public const float WatchRadius = 1000f;
+
+    /// <summary>
+    /// Const: BrokenGlassJumpRange = 1800.0
+    /// </summary>
+    public const float BrokenGlassJumpRange = 1800f;
+
+    /// <summary>
+    /// Const: BatarangJumpRange = 800.0
+    /// </summary>
+    public const float BatarangJumpRange = 800f;
+
+    /// <summary>
+    /// Const: ImpactIsCloseRange = 500.0
+    /// </summary>
+    public const float ImpactIsCloseRange = 500f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoJumpReaction;
     /// <summary>
     /// Function: DoJumpReaction

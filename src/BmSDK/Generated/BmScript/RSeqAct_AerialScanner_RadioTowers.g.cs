@@ -78,6 +78,16 @@ public partial class RSeqAct_AerialScanner_RadioTowers : BmSDK.BmGame.RSeqAct_Mi
         where TComponent : class, Framework.IScriptComponent<RSeqAct_AerialScanner_RadioTowers>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Audio_Index = 1
+    /// </summary>
+    public const int Audio_Index = 1;
+
+    /// <summary>
+    /// Const: Radiation_Index = 0
+    /// </summary>
+    public const int Radiation_Index = 0;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

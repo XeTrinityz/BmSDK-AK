@@ -78,6 +78,16 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Ledge>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MIN_DIST_FROM_ENDS = 50.0f
+    /// </summary>
+    public const float MIN_DIST_FROM_ENDS = 50f;
+
+    /// <summary>
+    /// Const: NUM_LEDGE_LOOK_VARIANTS = 2
+    /// </summary>
+    public const int NUM_LEDGE_LOOK_VARIANTS = 2;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChosenPathLength;
     /// <summary>
     /// Function: GetChosenPathLength

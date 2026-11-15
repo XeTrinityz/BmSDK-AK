@@ -78,6 +78,21 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         where TComponent : class, Framework.IScriptComponent<RDestructibleProp>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: UnrealUnitsPerSecToKilometresPerHour = 0.036f
+    /// </summary>
+    public const float UnrealUnitsPerSecToKilometresPerHour = 0.036f;
+
+    /// <summary>
+    /// Const: ImpactDamageThreshold_DamageDisabled = 9999999999.0f
+    /// </summary>
+    public const float ImpactDamageThreshold_DamageDisabled = 1E+10f;
+
+    /// <summary>
+    /// Const: MaxNumKActorsRestingOnDestructibleProp = 128
+    /// </summary>
+    public const int MaxNumKActorsRestingOnDestructibleProp = 128;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach;
     /// <summary>
     /// Function: Attach

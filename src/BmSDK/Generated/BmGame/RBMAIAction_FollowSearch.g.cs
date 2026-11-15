@@ -78,6 +78,11 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_FollowSearch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SlowScale = 0.8
+    /// </summary>
+    public const float SlowScale = 0.8f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWalkSlow;
     /// <summary>
     /// Function: SetWalkSlow

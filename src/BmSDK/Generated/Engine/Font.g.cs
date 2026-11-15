@@ -78,6 +78,11 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Font>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NULLCHARACTER = 127
+    /// </summary>
+    public const int NULLCHARACTER = 127;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringHeightAndWidth;
     /// <summary>
     /// Function: GetStringHeightAndWidth

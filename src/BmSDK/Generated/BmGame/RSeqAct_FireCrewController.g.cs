@@ -78,6 +78,16 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         where TComponent : class, Framework.IScriptComponent<RSeqAct_FireCrewController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: NUM_TIERS = 2
+    /// </summary>
+    public const int NUM_TIERS = 2;
+
+    /// <summary>
+    /// Const: NUM_ENCOUNTERS = 16
+    /// </summary>
+    public const int NUM_ENCOUNTERS = 16;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

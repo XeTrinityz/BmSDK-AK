@@ -78,6 +78,11 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Grate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MIN_LEG_LENGTH = 300.0f
+    /// </summary>
+    public const float MIN_LEG_LENGTH = 300f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStance;
     /// <summary>
     /// Function: SetStance

@@ -78,6 +78,11 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowdManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kNumTickGroups = 1
+    /// </summary>
+    public const int kNumTickGroups = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceAgentGroup;
     /// <summary>
     /// Function: AdvanceAgentGroup

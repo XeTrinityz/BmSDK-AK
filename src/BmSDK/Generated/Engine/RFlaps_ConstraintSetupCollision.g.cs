@@ -79,6 +79,11 @@ public partial class RFlaps_ConstraintSetupCollision : BmSDK.Engine.RFlaps_Const
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: RFlapsCollisionMaxNumBones = 8
+    /// </summary>
+    public const int RFlapsCollisionMaxNumBones = 8;
+
+    /// <summary>
     /// StructProperty: ConstrainedParticle
     /// </summary>
     public unsafe ref BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference ConstrainedParticle

@@ -73,6 +73,11 @@ public partial class RSeqAct_TakeoverVideoScreenVisibleBase : BmSDK.Engine.Seque
         where TComponent : class, Framework.IScriptComponent<RSeqAct_TakeoverVideoScreenVisibleBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: TAKEOVER_SCREEN_TRIGGER_RADIUS_THRESHOLD = 11000
+    /// </summary>
+    public const int TAKEOVER_SCREEN_TRIGGER_RADIUS_THRESHOLD = 11000;
+
     private static BmSDK.Function __fn_CheckVis;
     /// <summary>
     /// Function: CheckVis

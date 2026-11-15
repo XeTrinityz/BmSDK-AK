@@ -78,6 +78,16 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RNavigationHandle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: PathShortenProportionChecksPerSegmentQuick = 5.f
+    /// </summary>
+    public const float PathShortenProportionChecksPerSegmentQuick = 5f;
+
+    /// <summary>
+    /// Const: PathShortenProportionChecksPerSegment = 10.f
+    /// </summary>
+    public const float PathShortenProportionChecksPerSegment = 10f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheStartStateForDebug;
     /// <summary>
     /// Function: CacheStartStateForDebug

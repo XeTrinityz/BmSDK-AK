@@ -78,6 +78,11 @@ public partial class RAEC_DisruptedJammerReaction : BmSDK.BmGame.RAlertEventCoor
         where TComponent : class, Framework.IScriptComponent<RAEC_DisruptedJammerReaction>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DisruptedJammerStunTime = 10.f
+    /// </summary>
+    public const float DisruptedJammerStunTime = 10f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown

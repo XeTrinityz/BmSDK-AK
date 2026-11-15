@@ -78,6 +78,11 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_SkinSelect>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SKIN_SELECT_MIN_COUNT = 0
+    /// </summary>
+    public const int SKIN_SELECT_MIN_COUNT = 0;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_PreLoad;
     /// <summary>
     /// Function: XI_PreLoad

@@ -78,6 +78,16 @@ public partial class RFreezeClusterTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RFreezeClusterTrapBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: ClusterCylinderHeight = 50.0f
+    /// </summary>
+    public const float ClusterCylinderHeight = 50f;
+
+    /// <summary>
+    /// Const: DefaultClusterCylinderRadius = 300.0f
+    /// </summary>
+    public const float DefaultClusterCylinderRadius = 300f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFindTouchingActors;
     /// <summary>
     /// Function: ForceFindTouchingActors

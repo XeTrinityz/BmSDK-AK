@@ -73,6 +73,11 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RBatarang>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxNoiseTargets = 8
+    /// </summary>
+    public const int MaxNoiseTargets = 8;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerMustBeToldOffForTryingToShootRedHood;
     /// <summary>
     /// Function: PlayerMustBeToldOffForTryingToShootRedHood

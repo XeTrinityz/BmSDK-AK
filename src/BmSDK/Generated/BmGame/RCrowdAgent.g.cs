@@ -78,6 +78,11 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowdAgent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kDisappearScale = 0.001f
+    /// </summary>
+    public const float kDisappearScale = 0.001f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceFlockStage;
     /// <summary>
     /// Function: AdvanceFlockStage

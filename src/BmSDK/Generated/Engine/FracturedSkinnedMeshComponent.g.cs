@@ -79,6 +79,11 @@ public partial class FracturedSkinnedMeshComponent : BmSDK.Engine.FracturedBaseC
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
     /// <summary>
+    /// Const: MAXMATS = 10
+    /// </summary>
+    public const int MAXMATS = 10;
+
+    /// <summary>
     /// StructProperty: ComponentSkinResources
     /// </summary>
     public unsafe System.IntPtr ComponentSkinResources

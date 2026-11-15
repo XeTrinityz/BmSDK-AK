@@ -78,6 +78,11 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RBMBarkCoordinator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: ShoutDistance = 1100
+    /// </summary>
+    public const int ShoutDistance = 1100;
+
     private static BmSDK.Function __fn_GetLinesMatchingFlags;
     /// <summary>
     /// Function: GetLinesMatchingFlags

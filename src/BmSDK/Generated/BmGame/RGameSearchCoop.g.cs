@@ -78,4 +78,38 @@ public partial class RGameSearchCoop : BmSDK.Engine.OnlineGameSearch, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RGameSearchCoop>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: SESSION_MATCH_QUERY_COOP = 0
+    /// </summary>
+    public const int SESSION_MATCH_QUERY_COOP = 0;
+
+    /// <summary>
+    /// Const: CONTEXT_MAP_1 = 1
+    /// </summary>
+    public const int CONTEXT_MAP_1 = 1;
+
+    /// <summary>
+    /// Const: CONTEXT_MAP_0 = 0
+    /// </summary>
+    public const int CONTEXT_MAP_0 = 0;
+
+    /// <summary>
+    /// Const: CONTEXT_CHALLENGE = 0
+    /// </summary>
+    public const int CONTEXT_CHALLENGE = 0;
+
+    /// <summary>
+    /// Const: CONTEXT_GAME_MODE_MODE_CHALLENGE = 1
+    /// </summary>
+    public const int CONTEXT_GAME_MODE_MODE_CHALLENGE = 1;
+
+    /// <summary>
+    /// Const: CONTEXT_GAME_MODE_MODE_STORY = 0
+    /// </summary>
+    public const int CONTEXT_GAME_MODE_MODE_STORY = 0;
+
+    /// <summary>
+    /// Const: CONTEXT_GAME_MODE = 0x0000800B
+    /// </summary>
+    public const int CONTEXT_GAME_MODE = 0x0000800B;
 }

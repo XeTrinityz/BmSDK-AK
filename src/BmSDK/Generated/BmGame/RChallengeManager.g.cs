@@ -78,6 +78,21 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RChallengeManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: POLL_CHALLENGE_DELAY_TIME = 60.0
+    /// </summary>
+    public const float POLL_CHALLENGE_DELAY_TIME = 60f;
+
+    /// <summary>
+    /// Const: POLL_DELAY_TIME = 300.0
+    /// </summary>
+    public const float POLL_DELAY_TIME = 300f;
+
+    /// <summary>
+    /// Const: LeaderboardCache_MasterVersion = 1
+    /// </summary>
+    public const int LeaderboardCache_MasterVersion = 1;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWorldChange;
     /// <summary>
     /// Function: OnWorldChange

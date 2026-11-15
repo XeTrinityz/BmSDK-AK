@@ -78,6 +78,11 @@ public partial class RSeqAct_SetPredatorDroneBehaviour : BmSDK.Engine.SequenceAc
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SetPredatorDroneBehaviour>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: Version = 1
+    /// </summary>
+    public const int Version = 1;
+
     private static BmSDK.Function __fn_GetObjClassVersion;
     /// <summary>
     /// Function: GetObjClassVersion

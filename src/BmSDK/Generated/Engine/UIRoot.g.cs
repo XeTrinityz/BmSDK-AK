@@ -73,6 +73,21 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<UIRoot>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_SUPPORTED_GAMEPADS = 4
+    /// </summary>
+    public const int MAX_SUPPORTED_GAMEPADS = 4;
+
+    /// <summary>
+    /// Const: DEFAULT_SIZE_Y = 768
+    /// </summary>
+    public const int DEFAULT_SIZE_Y = 768;
+
+    /// <summary>
+    /// Const: DEFAULT_SIZE_X = 1024
+    /// </summary>
+    public const int DEFAULT_SIZE_X = 1024;
+
     private static BmSDK.Function __fn_SafeCaps;
     /// <summary>
     /// Function: SafeCaps

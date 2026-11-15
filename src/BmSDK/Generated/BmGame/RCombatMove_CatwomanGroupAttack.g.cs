@@ -78,6 +78,11 @@ public partial class RCombatMove_CatwomanGroupAttack : BmSDK.BmGame.RCombatMove_
         where TComponent : class, Framework.IScriptComponent<RCombatMove_CatwomanGroupAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: kRotOffset = 8192
+    /// </summary>
+    public const int kRotOffset = 8192;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisarmEnemy;
     /// <summary>
     /// Function: DisarmEnemy

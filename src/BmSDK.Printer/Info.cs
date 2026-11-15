@@ -45,6 +45,15 @@ class StructInfo : MemberInfo
     }
 }
 
+sealed class ConstInfo : MemberInfo
+{
+    public string Name = "";
+    public string ManagedName = "";
+    public string Type = "";
+    public string Literal = "";
+    public string Text = "";
+}
+
 sealed class EnumInfo : MemberInfo
 {
     public string Name = "";
@@ -487,6 +496,79 @@ sealed class InfoBuilder(Dump dump)
                     info.Members.Add(Enum(e));
                     break;
             }
+        }
+
+        // Consts go first in the class, and only take names nothing else uses.
+        var taken = new HashSet<string>(StringComparer.Ordinal) { info.ManagedName };
+        foreach (var member in info.Members)
+        {
+            switch (member)
+            {
+                case PropertyInfo p:
+                    taken.Add(p.ManagedName);
+                    for (var i = 0; i < p.ArrayDim; i++)
+                    {
+                        taken.Add(p.ManagedName + "_" + i);
+                    }
+                    break;
+                case FunctionInfo f:
+                    taken.Add(f.ManagedName);
+                    taken.Add("__fn_" + f.ManagedName);
+                    break;
+                case EnumInfo e:
+                    taken.Add(e.ManagedName);
+                    break;
+                case StructInfo s:
+                    taken.Add(s.ManagedName);
+                    break;
+            }
+        }
+
+        var consts = new List<MemberInfo>();
+        foreach (var field in cls.Fields)
+        {
+            if (field is ConstNode c && Const(c) is { } constInfo && taken.Add(constInfo.ManagedName))
+            {
+                consts.Add(constInfo);
+            }
+        }
+        info.Members.InsertRange(0, consts);
+        return info;
+    }
+
+    // UnrealScript keeps a const as the text it was written with. Numbers and booleans get their
+    // C# type, anything else stays a string.
+    ConstInfo? Const(ConstNode c)
+    {
+        var text = c.Value?.Trim();
+        if (text is null)
+        {
+            return null;
+        }
+
+        var info = new ConstInfo { Name = c.Name, ManagedName = FieldNameManaged(c), Text = text };
+        if (int.TryParse(text, System.Globalization.NumberStyles.AllowLeadingSign, System.Globalization.CultureInfo.InvariantCulture, out _))
+        {
+            (info.Type, info.Literal) = ("int", text);
+        }
+        else if (text.StartsWith("0x", StringComparison.OrdinalIgnoreCase) &&
+            uint.TryParse(text.AsSpan(2), System.Globalization.NumberStyles.HexNumber, System.Globalization.CultureInfo.InvariantCulture, out var hex))
+        {
+            (info.Type, info.Literal) = ("int", hex > int.MaxValue ? $"unchecked((int)0x{hex:X})" : text);
+        }
+        else if (float.TryParse(text.TrimEnd('f', 'F'), System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var number) && float.IsFinite(number))
+        {
+            (info.Type, info.Literal) = ("float", number.ToString("R", System.Globalization.CultureInfo.InvariantCulture) + "f");
+        }
+        else if (text is "true" or "false" or "True" or "False")
+        {
+            (info.Type, info.Literal) = ("bool", text.ToLowerInvariant());
+        }
+        else
+        {
+            // A name is written 'Name', a string "text". Both come out as the text inside.
+            var inner = text.Length >= 2 && (text[0] == '\'' || text[0] == '"') && text[^1] == text[0] ? text[1..^1] : text;
+            (info.Type, info.Literal) = ("string", "\"" + inner.Replace("\\", "\\\\").Replace("\"", "\\\"") + "\"");
         }
         return info;
     }

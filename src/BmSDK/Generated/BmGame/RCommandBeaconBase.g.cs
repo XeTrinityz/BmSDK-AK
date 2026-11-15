@@ -73,6 +73,11 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
         where TComponent : class, Framework.IScriptComponent<RCommandBeaconBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: COMMAND_BEACON_CLEAR_DIST = 350.0f
+    /// </summary>
+    public const float COMMAND_BEACON_CLEAR_DIST = 350f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWinchingAllowed;
     /// <summary>
     /// Function: SetWinchingAllowed

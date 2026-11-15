@@ -78,6 +78,31 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_MultiStageThrowThugAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxYawDeltaDeg = 12.f
+    /// </summary>
+    public const float MaxYawDeltaDeg = 12f;
+
+    /// <summary>
+    /// Const: kMaxThrowHeight = 500.f
+    /// </summary>
+    public const float kMaxThrowHeight = 500f;
+
+    /// <summary>
+    /// Const: kMaxThrowVelocity = 1900.f
+    /// </summary>
+    public const float kMaxThrowVelocity = 1900f;
+
+    /// <summary>
+    /// Const: kMaxThrowDist = 2000.f
+    /// </summary>
+    public const float kMaxThrowDist = 2000f;
+
+    /// <summary>
+    /// Const: kBodySearchRange = 500
+    /// </summary>
+    public const int kBodySearchRange = 500;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove

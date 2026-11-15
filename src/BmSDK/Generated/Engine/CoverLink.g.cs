@@ -78,6 +78,26 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CoverLink>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: COVERLINK_DangerDist = 1536.f
+    /// </summary>
+    public const float COVERLINK_DangerDist = 1536f;
+
+    /// <summary>
+    /// Const: COVERLINK_EdgeExposureDot = 0.85f
+    /// </summary>
+    public const float COVERLINK_EdgeExposureDot = 0.85f;
+
+    /// <summary>
+    /// Const: COVERLINK_EdgeCheckDot = 0.25f
+    /// </summary>
+    public const float COVERLINK_EdgeCheckDot = 0.25f;
+
+    /// <summary>
+    /// Const: COVERLINK_ExposureDot = 0.4f
+    /// </summary>
+    public const float COVERLINK_ExposureDot = 0.4f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugAbbrev;
     /// <summary>
     /// Function: GetDebugAbbrev

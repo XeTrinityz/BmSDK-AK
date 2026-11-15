@@ -73,6 +73,16 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CROW_VS_CROW_RANGE = 500
+    /// </summary>
+    public const int CROW_VS_CROW_RANGE = 500;
+
+    /// <summary>
+    /// Const: NUM_CROWS = 3
+    /// </summary>
+    public const int NUM_CROWS = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Startle;
     /// <summary>
     /// Function: Startle

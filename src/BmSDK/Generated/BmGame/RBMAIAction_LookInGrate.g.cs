@@ -78,6 +78,11 @@ public partial class RBMAIAction_LookInGrate : BmSDK.BmGame.RBMAIAction, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_LookInGrate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: DAMAGE_RECURSION_DEPTH = 3
+    /// </summary>
+    public const int DAMAGE_RECURSION_DEPTH = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick

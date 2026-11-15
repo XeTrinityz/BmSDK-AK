@@ -73,6 +73,16 @@ public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame
         where TComponent : class, Framework.IScriptComponent<RVehicleBatmobileBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MaxPassengers = 4
+    /// </summary>
+    public const int MaxPassengers = 4;
+
+    /// <summary>
+    /// Const: kWarningPSCacheSize = 8
+    /// </summary>
+    public const int kWarningPSCacheSize = 8;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraTrackingOffset;
     /// <summary>
     /// Function: GetCameraTrackingOffset

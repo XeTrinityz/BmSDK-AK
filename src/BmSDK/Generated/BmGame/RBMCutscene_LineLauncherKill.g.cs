@@ -78,6 +78,16 @@ public partial class RBMCutscene_LineLauncherKill : BmSDK.BmGame.RBMCutscene_Cam
         where TComponent : class, Framework.IScriptComponent<RBMCutscene_LineLauncherKill>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: RIGHT_DIR = -1
+    /// </summary>
+    public const int RIGHT_DIR = -1;
+
+    /// <summary>
+    /// Const: LEFT_DIR = 1
+    /// </summary>
+    public const int LEFT_DIR = 1;
+
     private static BmSDK.Function __fn_GetTargetBone;
     /// <summary>
     /// Function: GetTargetBone

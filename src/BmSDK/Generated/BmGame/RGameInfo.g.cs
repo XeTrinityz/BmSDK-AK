@@ -78,6 +78,36 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGameInfo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CONVERSATION_RECENTLY_TRIGGERED_THRESHOLD = 4.0f
+    /// </summary>
+    public const float CONVERSATION_RECENTLY_TRIGGERED_THRESHOLD = 4f;
+
+    /// <summary>
+    /// Const: MAX_SENTRYGUN_BEGINPLAYS_PER_FRAME = 1
+    /// </summary>
+    public const int MAX_SENTRYGUN_BEGINPLAYS_PER_FRAME = 1;
+
+    /// <summary>
+    /// Const: MAX_GRATE_BEGINPLAYS_PER_FRAME = 4
+    /// </summary>
+    public const int MAX_GRATE_BEGINPLAYS_PER_FRAME = 4;
+
+    /// <summary>
+    /// Const: MAX_LOOT_POINT_BEGINPLAYS_PER_FRAME = 8
+    /// </summary>
+    public const int MAX_LOOT_POINT_BEGINPLAYS_PER_FRAME = 8;
+
+    /// <summary>
+    /// Const: MAX_INTERVAL_BETWEEN_PATH_ORIENTATION_CHECKS = 6
+    /// </summary>
+    public const int MAX_INTERVAL_BETWEEN_PATH_ORIENTATION_CHECKS = 6;
+
+    /// <summary>
+    /// Const: CosmeticDistanceScalar = 2
+    /// </summary>
+    public const int CosmeticDistanceScalar = 2;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAllEventsOfClass;
     /// <summary>
     /// Function: TriggerAllEventsOfClass

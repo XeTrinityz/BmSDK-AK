@@ -78,6 +78,11 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<AnimTree>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: MAX_ANIMTREE_PREVIEW_EXTRA_MESHES = 3
+    /// </summary>
+    public const int MAX_ANIMTREE_PREVIEW_EXTRA_MESHES = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupIndex;
     /// <summary>
     /// Function: GetGroupIndex

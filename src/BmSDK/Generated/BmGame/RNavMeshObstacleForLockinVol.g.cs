@@ -78,6 +78,11 @@ public partial class RNavMeshObstacleForLockinVol : BmSDK.Engine.NavMeshObstacle
         where TComponent : class, Framework.IScriptComponent<RNavMeshObstacleForLockinVol>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: THUG_KNOCKBACK_EXTENT = 60.0f
+    /// </summary>
+    public const float THUG_KNOCKBACK_EXTENT = 60f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupEncompassCheck;
     /// <summary>
     /// Function: SetupEncompassCheck

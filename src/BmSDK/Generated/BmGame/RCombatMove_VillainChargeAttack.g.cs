@@ -78,6 +78,16 @@ public partial class RCombatMove_VillainChargeAttack : BmSDK.BmGame.RCombatMove_
         where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainChargeAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: GameSlowDownSpeed = 0.4f
+    /// </summary>
+    public const float GameSlowDownSpeed = 0.4f;
+
+    /// <summary>
+    /// Const: WallCollideRange = 560
+    /// </summary>
+    public const int WallCollideRange = 560;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShovePawns;
     /// <summary>
     /// Function: CanShovePawns

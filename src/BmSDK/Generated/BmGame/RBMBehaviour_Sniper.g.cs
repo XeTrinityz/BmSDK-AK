@@ -78,6 +78,11 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_Sniper>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: AudioTimeToLockOnCombat = 2.0f
+    /// </summary>
+    public const float AudioTimeToLockOnCombat = 2f;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HitBySmoke;
     /// <summary>
     /// Function: HitBySmoke

@@ -78,6 +78,136 @@ public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate
         where TComponent : class, Framework.IScriptComponent<RPredatorDroneMini>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    /// <summary>
+    /// Const: CODE_DOWNLOAD_TIME = 3.0
+    /// </summary>
+    public const float CODE_DOWNLOAD_TIME = 3f;
+
+    /// <summary>
+    /// Const: MALFUNCTION_MAX_VIBRATE_ANGLE = 15.0
+    /// </summary>
+    public const float MALFUNCTION_MAX_VIBRATE_ANGLE = 15f;
+
+    /// <summary>
+    /// Const: INVESTIGATE_LOCATION_TIME = 10.0
+    /// </summary>
+    public const float INVESTIGATE_LOCATION_TIME = 10f;
+
+    /// <summary>
+    /// Const: ATTACK_EXPIRE_INVISIBLE_TIME = 20.0
+    /// </summary>
+    public const float ATTACK_EXPIRE_INVISIBLE_TIME = 20f;
+
+    /// <summary>
+    /// Const: ATTACK_LONGER_WEAPON_TIME = 3.0
+    /// </summary>
+    public const float ATTACK_LONGER_WEAPON_TIME = 3f;
+
+    /// <summary>
+    /// Const: ATTACK_DEFAULT_WEAPON_TIME = 0.75
+    /// </summary>
+    public const float ATTACK_DEFAULT_WEAPON_TIME = 0.75f;
+
+    /// <summary>
+    /// Const: ATTACK_DEFAULT_POWERUP_TIME = 0.5
+    /// </summary>
+    public const float ATTACK_DEFAULT_POWERUP_TIME = 0.5f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_HEIGHT = 300.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_HEIGHT = 300f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_MIN_HEIGHT = 100.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_MIN_HEIGHT = 100f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_MAX_HEIGHT = 500.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_MAX_HEIGHT = 500f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_DISTANCE = 600.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_DISTANCE = 600f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_MIN_DISTANCE = 400.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_MIN_DISTANCE = 400f;
+
+    /// <summary>
+    /// Const: ATTACK_VANTAGE_POINT_MAX_DISTANCE = 800.0
+    /// </summary>
+    public const float ATTACK_VANTAGE_POINT_MAX_DISTANCE = 800f;
+
+    /// <summary>
+    /// Const: ATTACK_DISTANCE = 1500.0
+    /// </summary>
+    public const float ATTACK_DISTANCE = 1500f;
+
+    /// <summary>
+    /// Const: TARGET_DEFAULT_VALIDATE_DELAY = 2.5
+    /// </summary>
+    public const float TARGET_DEFAULT_VALIDATE_DELAY = 2.5f;
+
+    /// <summary>
+    /// Const: TARGET_REFRESH_LIST_DELAY = 0.5
+    /// </summary>
+    public const float TARGET_REFRESH_LIST_DELAY = 0.5f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_COLOR_INTERPOLATION = 3.0
+    /// </summary>
+    public const float SEARCHLIGHT_COLOR_INTERPOLATION = 3f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_MOVE_INTERPOLATION = 1.5
+    /// </summary>
+    public const float SEARCHLIGHT_MOVE_INTERPOLATION = 1.5f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_SCAN_INTERPOLATION = 1.0
+    /// </summary>
+    public const float SEARCHLIGHT_SCAN_INTERPOLATION = 1f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_WEAPON_SOCKET = &apos;Muzzle&apos;
+    /// </summary>
+    public const string SEARCHLIGHT_WEAPON_SOCKET = "Muzzle";
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_LIGHT_SOCKET = &apos;SearchLight0&apos;
+    /// </summary>
+    public const string SEARCHLIGHT_LIGHT_SOCKET = "SearchLight0";
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_LIGHT_RADIUS_OUTER = 15.0
+    /// </summary>
+    public const float SEARCHLIGHT_LIGHT_RADIUS_OUTER = 15f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_LIGHT_RADIUS_INNER = 7.5
+    /// </summary>
+    public const float SEARCHLIGHT_LIGHT_RADIUS_INNER = 7.5f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_FAR_VISIBILITY = 2000.0
+    /// </summary>
+    public const float SEARCHLIGHT_FAR_VISIBILITY = 2000f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_SCAN_DISTANCE = 1375.0
+    /// </summary>
+    public const float SEARCHLIGHT_SCAN_DISTANCE = 1375f;
+
+    /// <summary>
+    /// Const: SEARCHLIGHT_COUNT = 3
+    /// </summary>
+    public const int SEARCHLIGHT_COUNT = 3;
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AlertToBatmansPosition;
     /// <summary>
     /// Function: AlertToBatmansPosition
