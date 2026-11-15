@@ -231,6 +231,12 @@ internal static class ScriptManager
                     RedirectManager.ConfigureAllRedirectedFunctions();
                     ScriptComponentManager.AutoAttachTypesToExistingObjs();
                     scripts.ForEach(script => ModGuard.Run(script, script.Name, "OnLoad", script.OnLoad));
+
+                    // A reload in the middle of a game never sees the world load, so it is told it is in one.
+                    if (Game.IsInGame)
+                    {
+                        scripts.ForEach(script => ModGuard.Run(script, script.Name, "OnEnterGame", script.OnEnterGame));
+                    }
                 }
             },
             state: null
@@ -249,8 +255,9 @@ internal static class ScriptManager
 
         if (asm != null)
         {
-            // Whatever input the mod still keeps from the game goes back to it
+            // Whatever input the mod still keeps from the game goes back to it, and its timers stop
             InputManager.ReleaseOwner(asm);
+            TimerManager.CancelOwner(asm);
 
             // Detach components and clear registrations for this mod's assembly
             ScriptComponentManager.UnregisterTypes(asm);

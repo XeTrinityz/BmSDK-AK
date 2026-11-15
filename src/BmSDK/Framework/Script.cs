@@ -30,7 +30,8 @@ public abstract class Script
     public virtual void OnEnterMenu() { }
 
     /// <summary>
-    /// Called every time we load into a new world, after all actors have begun play.
+    /// Called every time we load into a new world, after all actors have begun play, and after a hot
+    /// reload while a world is being played (after <see cref="OnLoad"/>).
     /// Does not get called when levels are streamed in dynamically.
     /// </summary>
     public virtual void OnEnterGame() { }
@@ -59,6 +60,26 @@ public abstract class Script
     /// GameViewportClient.PostRender yourself.
     /// </summary>
     public virtual void OnDraw(Engine.Canvas canvas) { }
+
+    /// <summary>
+    /// Called when a different world takes over: a load, a restart from a checkpoint, going to or from
+    /// the main menu. Every object of the old world is gone or going, so drop what you kept of it.
+    /// </summary>
+    public virtual void OnWorldChanged() { }
+
+    /// <summary>
+    /// Called once a frame after the player's camera has been placed, when every character has been
+    /// moved and posed for the frame. Copy a pose or follow a bone here rather than in <see cref="OnTick"/>,
+    /// which runs at the start of the frame and sees last frame's poses. <see cref="Game.View"/> is
+    /// this frame's view by now.
+    /// </summary>
+    public virtual void OnCameraUpdated() { }
+
+    /// <summary>
+    /// Called once when the game is quitting normally, while the world still exists. Save what needs
+    /// saving here. It doesn't run if the game is killed or crashes.
+    /// </summary>
+    public virtual void OnExit() { }
 
     /// <summary>
     /// Called when the hot reloading system uninstalls

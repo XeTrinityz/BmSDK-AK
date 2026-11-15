@@ -16,6 +16,10 @@ internal static unsafe class Loader
     private const string PostBeginPlayFuncName = ":PostBeginPlay";
     private const string TickFuncName = "BmGame.RGameInfo:Tick";
 
+    // The player's camera, placed once a frame after every mesh is posed (when driving too).
+    private const string CameraFuncName = "BmGame.R3rdPersonCamera:UpdateCamera";
+    private const string ExitFuncSuffix = ":PreExit";
+
     // The game's own functions behind each detour. The detours are [UnmanagedCallersOnly] and the
     // originals plain function pointers: ProcessInternal runs for every UnrealScript call in the game,
     // and a delegate detour paid a marshalling stub both ways on each one.
@@ -95,6 +99,7 @@ internal static unsafe class Loader
         {
             InputManager.Tick(dispatch: s_hasGameInited);
             InputRouting.Tick();
+            TickHelpers();
         }
         catch (Exception ex)
         {
@@ -135,6 +140,16 @@ internal static unsafe class Loader
 
             switch (funcObj.LifecycleKind)
             {
+                // Notify scripts that the game is quitting, once
+                case Function.Lifecycle.Exit when !s_hasExited && s_hasGameInited:
+                    s_hasExited = true;
+                    Debug.Log("The game is quitting.");
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "OnExit", static s => s.OnExit(), script);
+                    }
+                    break;
+
                 // Notify scripts of game init
                 case Function.Lifecycle.Init when !s_hasGameInited:
                     // Kick off DLC scanning early
@@ -188,17 +203,36 @@ internal static unsafe class Loader
             }
 
             // Run redirect and skip base implementation if applicable to this function
-            if (RedirectManager.MayRedirect(funcObj, funcName))
+            // The camera's update can run again inside itself when a mod's redirect runs the original, so
+            // scripts hear about it once, when the outermost one is done.
+            var camera = funcObj.LifecycleKind == Function.Lifecycle.CameraUpdated;
+            if (camera)
             {
-                selfObj = MarshalUtil.GetOrCreateWrapper(self);
-                if (RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result))
-                {
-                    return;
-                }
+                s_cameraDepth++;
             }
 
-            // Call base impl. Redirected implementations are expected to reach this by calling "themselves" a second time.
-            s_processInternalBase(self, Stack, Result);
+            try
+            {
+                var redirected = false;
+                if (RedirectManager.MayRedirect(funcObj, funcName))
+                {
+                    selfObj = MarshalUtil.GetOrCreateWrapper(self);
+                    redirected = RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result);
+                }
+
+                // Call base impl. Redirected implementations are expected to reach this by calling "themselves" a second time.
+                if (!redirected)
+                {
+                    s_processInternalBase(self, Stack, Result);
+                }
+            }
+            finally
+            {
+                if (camera && --s_cameraDepth == 0)
+                {
+                    AfterCamera(self);
+                }
+            }
         }
         catch (Exception ex)
         {
@@ -242,6 +276,72 @@ internal static unsafe class Loader
         return func;
     }
 
+    // Controllers, the world watch and timers. A failure in one is logged and the game carries on,
+    // where a fault in BmSDK's core detour work still ends it.
+    private static void TickHelpers()
+    {
+        try
+        {
+            GamepadManager.Tick();
+
+            if (s_hasGameInited)
+            {
+                if (WorldWatch.Tick())
+                {
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "OnWorldChanged", static s => s.OnWorldChanged(), script);
+                    }
+                }
+
+                TimerManager.Tick();
+            }
+        }
+        catch (Exception ex)
+        {
+            if (!s_helperFailed)
+            {
+                s_helperFailed = true;
+                Debug.LogError("BmSDK's tick helpers failed: " + ex);
+            }
+        }
+    }
+
+    private static bool s_helperFailed;
+    private static bool s_hasExited;
+    private static int s_cameraDepth;
+
+    // The view is only taken from the local player's camera, and scripts only told about that one.
+    private static void AfterCamera(IntPtr self)
+    {
+        if (!s_hasGameInited)
+        {
+            return;
+        }
+
+        try
+        {
+            if (MarshalUtil.GetOrCreateWrapper(self) is not Engine.Camera camera
+                || !Game.TryGetPlayerController(out var controller)
+                || camera.PCOwner != controller)
+            {
+                return;
+            }
+
+            WorldWatch.CaptureView(camera);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("The camera view couldn't be read: " + ex.Message);
+            return;
+        }
+
+        foreach (var script in ScriptManager.Scripts)
+        {
+            ModGuard.Run(script, script.Name, "OnCameraUpdated", static s => s.OnCameraUpdated(), script);
+        }
+    }
+
     /// <summary>Works out a function's path and lifecycle role, once per UFunction wrapper.</summary>
     private static string Classify(Function func)
     {
@@ -252,6 +352,8 @@ internal static unsafe class Loader
             EnterMenuFuncName => Function.Lifecycle.EnterMenu,
             EnterGameFuncName => Function.Lifecycle.EnterGame,
             TickFuncName => Function.Lifecycle.Tick,
+            CameraFuncName => Function.Lifecycle.CameraUpdated,
+            _ when path.EndsWith(ExitFuncSuffix, StringComparison.Ordinal) && IsGameInfoFunction(func) => Function.Lifecycle.Exit,
             _ => Function.Lifecycle.None,
         };
         func.CachedPath = path;
@@ -306,9 +408,15 @@ internal static unsafe class Loader
     private static Keys XButton(nuint wParam) =>
         ((wParam >> 16) & 0xFFFF) == 2 ? Keys.XButton2 : Keys.XButton1;
 
+    // GameInfo's PreExit, or a subclass's override of it.
+    private static bool IsGameInfoFunction(Function func) =>
+        func.Outer is Class owner && MarshalUtil.GetManagedTypeForClassPtr(owner.Ptr).IsAssignableTo(typeof(Engine.GameInfo));
+
     /// <summary>Gives every script its OnDraw, from BmSDK's PostRender redirect.</summary>
     internal static void DispatchDraw(Engine.Canvas canvas)
     {
+        WorldWatch.SetScreen(canvas);
+
         foreach (var script in ScriptManager.Scripts)
         {
             ModGuard.Run(script, script.Name, "OnDraw", static state => state.Script.OnDraw(state.Canvas), (Script: script, Canvas: canvas));

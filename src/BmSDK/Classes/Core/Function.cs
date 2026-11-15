@@ -30,6 +30,8 @@ public partial class Function
         EnterMenu,
         EnterGame,
         Tick,
+        CameraUpdated,
+        Exit,
     }
 
     // Filled in once per UFunction by the ProcessInternal detour, so the hot path never builds a path
