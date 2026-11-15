@@ -674,9 +674,9 @@ public partial class RGFxMovieUI_OptionsGraphics : BmSDK.BmGame.RGFxMovieUI, BmS
     /// <summary>
     /// DelegateProperty: __SortByFPS__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByFPS__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByFPS__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1152); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1152); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1152); }
     }
 }

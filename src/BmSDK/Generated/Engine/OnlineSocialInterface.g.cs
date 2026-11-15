@@ -14,7 +14,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearPostLinkCompleted
     /// </summary>
-    public unsafe virtual void ClearPostLinkCompleted(byte LocalUserNum, System.IntPtr PostLinkDelegate)
+    public unsafe virtual void ClearPostLinkCompleted(byte LocalUserNum, BmSDK.FScriptDelegate PostLinkDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPostLinkCompleted, "Engine.OnlineSocialInterface.ClearPostLinkCompleted", ((BmSDK.GameObject)this));
@@ -30,7 +30,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddPostLinkCompleted
     /// </summary>
-    public unsafe virtual void AddPostLinkCompleted(byte LocalUserNum, System.IntPtr PostLinkDelegate)
+    public unsafe virtual void AddPostLinkCompleted(byte LocalUserNum, BmSDK.FScriptDelegate PostLinkDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPostLinkCompleted, "Engine.OnlineSocialInterface.AddPostLinkCompleted", ((BmSDK.GameObject)this));
@@ -78,7 +78,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearPostImageCompleted
     /// </summary>
-    public unsafe virtual void ClearPostImageCompleted(byte LocalUserNum, System.IntPtr PostImageDelegate)
+    public unsafe virtual void ClearPostImageCompleted(byte LocalUserNum, BmSDK.FScriptDelegate PostImageDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPostImageCompleted, "Engine.OnlineSocialInterface.ClearPostImageCompleted", ((BmSDK.GameObject)this));
@@ -94,7 +94,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddPostImageCompleted
     /// </summary>
-    public unsafe virtual void AddPostImageCompleted(byte LocalUserNum, System.IntPtr PostImageDelegate)
+    public unsafe virtual void AddPostImageCompleted(byte LocalUserNum, BmSDK.FScriptDelegate PostImageDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPostImageCompleted, "Engine.OnlineSocialInterface.AddPostImageCompleted", ((BmSDK.GameObject)this));
@@ -143,7 +143,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearQuerySocialPostPrivilegesCompleted
     /// </summary>
-    public unsafe virtual void ClearQuerySocialPostPrivilegesCompleted(System.IntPtr PostPrivilegesDelegate)
+    public unsafe virtual void ClearQuerySocialPostPrivilegesCompleted(BmSDK.FScriptDelegate PostPrivilegesDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearQuerySocialPostPrivilegesCompleted, "Engine.OnlineSocialInterface.ClearQuerySocialPostPrivilegesCompleted", ((BmSDK.GameObject)this));
@@ -158,7 +158,7 @@ public partial interface OnlineSocialInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddQuerySocialPostPrivilegesCompleted
     /// </summary>
-    public unsafe virtual void AddQuerySocialPostPrivilegesCompleted(System.IntPtr PostPrivilegesDelegate)
+    public unsafe virtual void AddQuerySocialPostPrivilegesCompleted(BmSDK.FScriptDelegate PostPrivilegesDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddQuerySocialPostPrivilegesCompleted, "Engine.OnlineSocialInterface.AddQuerySocialPostPrivilegesCompleted", ((BmSDK.GameObject)this));

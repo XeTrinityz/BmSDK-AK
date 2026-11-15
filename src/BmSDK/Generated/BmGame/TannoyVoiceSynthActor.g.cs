@@ -82,7 +82,7 @@ public partial class TannoyVoiceSynthActor : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// <summary>
     /// Function: PlayLine
     /// </summary>
-    public unsafe virtual bool PlayLine(BmSDK.Engine.Actor Subject, BmSDK.FName flag, BmSDK.BmGame.RAlertEventCoordinatorBase owningEvent, BmSDK.TArray<BmSDK.Engine.Actor> extraSpeakers = default, BmSDK.FName nInvestigateTargetFlag = default, System.IntPtr NewBarkFinished = default)
+    public unsafe virtual bool PlayLine(BmSDK.Engine.Actor Subject, BmSDK.FName flag, BmSDK.BmGame.RAlertEventCoordinatorBase owningEvent, BmSDK.TArray<BmSDK.Engine.Actor> extraSpeakers = default, BmSDK.FName nInvestigateTargetFlag = default, BmSDK.FScriptDelegate NewBarkFinished = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayLine, "BmGame.TannoyVoiceSynthActor.PlayLine", this);

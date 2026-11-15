@@ -282,7 +282,7 @@ sealed class InfoBuilder(Dump dump)
                 return "BmSDK.TMap<object, object> /* TODO */";
 
             case "DelegateProperty":
-                return "System.IntPtr";
+                return "BmSDK.FScriptDelegate";
         }
 
         return "UNKNOWN";

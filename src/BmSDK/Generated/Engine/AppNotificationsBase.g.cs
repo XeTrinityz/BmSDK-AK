@@ -213,18 +213,18 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// <summary>
     /// DelegateProperty: __OnReceivedLocalNotification__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReceivedLocalNotification__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReceivedLocalNotification__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 160); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 160); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 160); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReceivedRemoteNotification__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReceivedRemoteNotification__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReceivedRemoteNotification__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 176); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 176); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 176); }
     }
 

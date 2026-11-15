@@ -514,9 +514,9 @@ public partial class RSpecialMoveInstance_FireGrapple : BmSDK.BmGame.RSpecialMov
     /// <summary>
     /// DelegateProperty: __StartQueuedMovementAnim__Delegate
     /// </summary>
-    public unsafe System.IntPtr __StartQueuedMovementAnim__Delegate
+    public unsafe BmSDK.FScriptDelegate __StartQueuedMovementAnim__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1008); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1008); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1008); }
     }
 }

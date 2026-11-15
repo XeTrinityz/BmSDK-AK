@@ -724,7 +724,7 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: StartAuxEvent
     /// </summary>
-    public unsafe virtual bool StartAuxEvent(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 Position, System.IntPtr SoundCallbackDelegate = default, int SoundCallbackFlags = default)
+    public unsafe virtual bool StartAuxEvent(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 Position, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAuxEvent, "Engine.RAkAudible.StartAuxEvent", this);
@@ -749,7 +749,7 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: StartAudioEvent
     /// </summary>
-    public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartAudioEvent(BmSDK.Engine.AkEvent AudioEvent, System.IntPtr SoundCallbackDelegate = default, int SoundCallbackFlags = default)
+    public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartAudioEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAudioEvent, "Engine.RAkAudible.StartAudioEvent", this);

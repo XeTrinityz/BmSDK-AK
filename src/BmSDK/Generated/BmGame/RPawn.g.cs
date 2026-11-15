@@ -1578,9 +1578,9 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __IsActorSafe__Delegate
     /// </summary>
-    public unsafe System.IntPtr __IsActorSafe__Delegate
+    public unsafe BmSDK.FScriptDelegate __IsActorSafe__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1780); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1780); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1780); }
     }
 }

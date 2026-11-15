@@ -3709,9 +3709,9 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
         /// <summary>
         /// DelegateProperty: OnPlayedQueuedTransition
         /// </summary>
-        public unsafe System.IntPtr OnPlayedQueuedTransition
+        public unsafe BmSDK.FScriptDelegate OnPlayedQueuedTransition
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 240); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 240); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 240); }; }
         }
 
@@ -4435,9 +4435,9 @@ public partial class RAnimNode_Pose : BmSDK.Engine.AnimNode, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __DummyOnPlayedQueuedTransition__Delegate
     /// </summary>
-    public unsafe System.IntPtr __DummyOnPlayedQueuedTransition__Delegate
+    public unsafe BmSDK.FScriptDelegate __DummyOnPlayedQueuedTransition__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1624); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1624); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1624); }
     }
 }

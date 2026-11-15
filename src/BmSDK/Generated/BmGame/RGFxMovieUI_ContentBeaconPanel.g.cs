@@ -411,9 +411,9 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
     /// <summary>
     /// DelegateProperty: __ContentBeaconContentLoaded__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ContentBeaconContentLoaded__Delegate
+    public unsafe BmSDK.FScriptDelegate __ContentBeaconContentLoaded__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1124); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1124); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1124); }
     }
 }

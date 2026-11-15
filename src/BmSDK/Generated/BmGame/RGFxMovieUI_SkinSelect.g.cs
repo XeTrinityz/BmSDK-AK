@@ -631,18 +631,18 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
     /// <summary>
     /// DelegateProperty: __SortByBaseId__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByBaseId__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByBaseId__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1192); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1192); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1192); }
     }
 
     /// <summary>
     /// DelegateProperty: __SortById__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortById__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortById__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1208); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1208); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1208); }
     }
 

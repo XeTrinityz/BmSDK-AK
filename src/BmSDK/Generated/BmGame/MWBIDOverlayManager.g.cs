@@ -312,7 +312,7 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: RegisterDataCallback
     /// </summary>
-    public unsafe virtual void RegisterDataCallback(System.IntPtr cb)
+    public unsafe virtual void RegisterDataCallback(BmSDK.FScriptDelegate cb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterDataCallback, "BmGame.MWBIDOverlayManager.RegisterDataCallback", this);
@@ -660,9 +660,9 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __DataCallbackFnc__Delegate
     /// </summary>
-    public unsafe System.IntPtr __DataCallbackFnc__Delegate
+    public unsafe BmSDK.FScriptDelegate __DataCallbackFnc__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 368); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 368); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 368); }
     }
 

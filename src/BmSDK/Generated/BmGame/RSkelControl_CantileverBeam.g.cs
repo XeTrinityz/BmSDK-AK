@@ -140,9 +140,9 @@ public partial class RSkelControl_CantileverBeam : BmSDK.Engine.SkelControlLookA
     /// <summary>
     /// DelegateProperty: __EntireBeamVelocity__Delegate
     /// </summary>
-    public unsafe System.IntPtr __EntireBeamVelocity__Delegate
+    public unsafe BmSDK.FScriptDelegate __EntireBeamVelocity__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 452); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 452); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 452); }
     }
 }

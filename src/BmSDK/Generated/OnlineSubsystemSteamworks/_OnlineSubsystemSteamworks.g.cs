@@ -104,7 +104,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: FetchSteamDLC
     /// </summary>
-    public unsafe virtual void FetchSteamDLC(BmSDK.GameObject TargetObject, System.IntPtr cback)
+    public unsafe virtual void FetchSteamDLC(BmSDK.GameObject TargetObject, BmSDK.FScriptDelegate cback)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FetchSteamDLC, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FetchSteamDLC", this);
@@ -245,7 +245,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWriteSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteSharedFileCompleteDelegate(System.IntPtr WriteSharedFileCompleteDelegate)
+    public unsafe virtual void ClearWriteSharedFileCompleteDelegate(BmSDK.FScriptDelegate WriteSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteSharedFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteSharedFileCompleteDelegate", this);
@@ -260,7 +260,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWriteSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteSharedFileCompleteDelegate(System.IntPtr WriteSharedFileCompleteDelegate)
+    public unsafe virtual void AddWriteSharedFileCompleteDelegate(BmSDK.FScriptDelegate WriteSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteSharedFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteSharedFileCompleteDelegate", this);
@@ -322,7 +322,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadSharedFileCompleteDelegate(System.IntPtr ReadSharedFileCompleteDelegate)
+    public unsafe virtual void ClearReadSharedFileCompleteDelegate(BmSDK.FScriptDelegate ReadSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadSharedFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadSharedFileCompleteDelegate", this);
@@ -337,7 +337,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadSharedFileCompleteDelegate(System.IntPtr ReadSharedFileCompleteDelegate)
+    public unsafe virtual void AddReadSharedFileCompleteDelegate(BmSDK.FScriptDelegate ReadSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadSharedFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadSharedFileCompleteDelegate", this);
@@ -545,7 +545,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearDeleteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteDownloadFileCompleteDelegate(System.IntPtr DeleteDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearDeleteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate DeleteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearDeleteDownloadFileCompleteDelegate", this);
@@ -560,7 +560,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddDeleteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteDownloadFileCompleteDelegate(System.IntPtr DeleteDownloadFileCompleteDelegate)
+    public unsafe virtual void AddDeleteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate DeleteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddDeleteDownloadFileCompleteDelegate", this);
@@ -615,7 +615,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWriteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteDownloadFileCompleteDelegate(System.IntPtr WriteDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearWriteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate WriteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteDownloadFileCompleteDelegate", this);
@@ -630,7 +630,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWriteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteDownloadFileCompleteDelegate(System.IntPtr WriteDownloadFileCompleteDelegate)
+    public unsafe virtual void AddWriteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate WriteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteDownloadFileCompleteDelegate", this);
@@ -688,7 +688,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadDownloadFileCompleteDelegate(System.IntPtr ReadDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearReadDownloadFileCompleteDelegate(BmSDK.FScriptDelegate ReadDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadDownloadFileCompleteDelegate", this);
@@ -703,7 +703,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadDownloadFileCompleteDelegate(System.IntPtr ReadDownloadFileCompleteDelegate)
+    public unsafe virtual void AddReadDownloadFileCompleteDelegate(BmSDK.FScriptDelegate ReadDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadDownloadFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadDownloadFileCompleteDelegate", this);
@@ -831,7 +831,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearDeleteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteUserFileCompleteDelegate(System.IntPtr DeleteUserFileCompleteDelegate)
+    public unsafe virtual void ClearDeleteUserFileCompleteDelegate(BmSDK.FScriptDelegate DeleteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearDeleteUserFileCompleteDelegate", this);
@@ -846,7 +846,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddDeleteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteUserFileCompleteDelegate(System.IntPtr DeleteUserFileCompleteDelegate)
+    public unsafe virtual void AddDeleteUserFileCompleteDelegate(BmSDK.FScriptDelegate DeleteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddDeleteUserFileCompleteDelegate", this);
@@ -907,7 +907,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWriteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteUserFileCompleteDelegate(System.IntPtr WriteUserFileCompleteDelegate)
+    public unsafe virtual void ClearWriteUserFileCompleteDelegate(BmSDK.FScriptDelegate WriteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteUserFileCompleteDelegate", this);
@@ -922,7 +922,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWriteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteUserFileCompleteDelegate(System.IntPtr WriteUserFileCompleteDelegate)
+    public unsafe virtual void AddWriteUserFileCompleteDelegate(BmSDK.FScriptDelegate WriteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteUserFileCompleteDelegate", this);
@@ -1030,7 +1030,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadUserFileCompleteDelegate(System.IntPtr ReadUserFileCompleteDelegate)
+    public unsafe virtual void ClearReadUserFileCompleteDelegate(BmSDK.FScriptDelegate ReadUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadUserFileCompleteDelegate", this);
@@ -1045,7 +1045,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadUserFileCompleteDelegate(System.IntPtr ReadUserFileCompleteDelegate)
+    public unsafe virtual void AddReadUserFileCompleteDelegate(BmSDK.FScriptDelegate ReadUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadUserFileCompleteDelegate", this);
@@ -1128,7 +1128,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearEnumerateUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearEnumerateUserFileCompleteDelegate(System.IntPtr EnumerateUserFileCompleteDelegate)
+    public unsafe virtual void ClearEnumerateUserFileCompleteDelegate(BmSDK.FScriptDelegate EnumerateUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearEnumerateUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearEnumerateUserFileCompleteDelegate", this);
@@ -1143,7 +1143,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddEnumerateUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddEnumerateUserFileCompleteDelegate(System.IntPtr EnumerateUserFileCompleteDelegate)
+    public unsafe virtual void AddEnumerateUserFileCompleteDelegate(BmSDK.FScriptDelegate EnumerateUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddEnumerateUserFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddEnumerateUserFileCompleteDelegate", this);
@@ -1386,7 +1386,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearRecognitionCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearRecognitionCompleteDelegate(byte LocalUserNum, System.IntPtr RecognitionDelegate)
+    public unsafe virtual void ClearRecognitionCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate RecognitionDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRecognitionCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearRecognitionCompleteDelegate", this);
@@ -1402,7 +1402,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddRecognitionCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRecognitionCompleteDelegate(byte LocalUserNum, System.IntPtr RecognitionDelegate)
+    public unsafe virtual void AddRecognitionCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate RecognitionDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRecognitionCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddRecognitionCompleteDelegate", this);
@@ -1543,7 +1543,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearPlayerTalkingDelegate
     /// </summary>
-    public unsafe virtual void ClearPlayerTalkingDelegate(System.IntPtr TalkerDelegate)
+    public unsafe virtual void ClearPlayerTalkingDelegate(BmSDK.FScriptDelegate TalkerDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPlayerTalkingDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearPlayerTalkingDelegate", this);
@@ -1558,7 +1558,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddPlayerTalkingDelegate
     /// </summary>
-    public unsafe virtual void AddPlayerTalkingDelegate(System.IntPtr TalkerDelegate)
+    public unsafe virtual void AddPlayerTalkingDelegate(BmSDK.FScriptDelegate TalkerDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPlayerTalkingDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddPlayerTalkingDelegate", this);
@@ -1815,7 +1815,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearRequestTitleFileListCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearRequestTitleFileListCompleteDelegate(System.IntPtr RequestTitleFileListDelegate)
+    public unsafe virtual void ClearRequestTitleFileListCompleteDelegate(BmSDK.FScriptDelegate RequestTitleFileListDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRequestTitleFileListCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearRequestTitleFileListCompleteDelegate", this);
@@ -1830,7 +1830,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddRequestTitleFileListCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRequestTitleFileListCompleteDelegate(System.IntPtr RequestTitleFileListDelegate)
+    public unsafe virtual void AddRequestTitleFileListCompleteDelegate(BmSDK.FScriptDelegate RequestTitleFileListDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRequestTitleFileListCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddRequestTitleFileListCompleteDelegate", this);
@@ -1946,7 +1946,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadTitleFileCompleteDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void ClearReadTitleFileCompleteDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadTitleFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadTitleFileCompleteDelegate", this);
@@ -1961,7 +1961,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadTitleFileCompleteDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void AddReadTitleFileCompleteDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadTitleFileCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadTitleFileCompleteDelegate", this);
@@ -2051,7 +2051,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWriteSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void ClearWriteSaveGameDataComplete(byte LocalUserNum, System.IntPtr WriteSaveGameDataCompleteDelegate)
+    public unsafe virtual void ClearWriteSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate WriteSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteSaveGameDataComplete", this);
@@ -2067,7 +2067,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWriteSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void AddWriteSaveGameDataComplete(byte LocalUserNum, System.IntPtr WriteSaveGameDataCompleteDelegate)
+    public unsafe virtual void AddWriteSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate WriteSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteSaveGameDataComplete", this);
@@ -2129,7 +2129,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void ClearReadSaveGameDataComplete(byte LocalUserNum, System.IntPtr ReadSaveGameDataCompleteDelegate)
+    public unsafe virtual void ClearReadSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadSaveGameDataComplete", this);
@@ -2145,7 +2145,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void AddReadSaveGameDataComplete(byte LocalUserNum, System.IntPtr ReadSaveGameDataCompleteDelegate)
+    public unsafe virtual void AddReadSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadSaveGameDataComplete", this);
@@ -2253,7 +2253,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearQueryAvailableDownloadsComplete
     /// </summary>
-    public unsafe virtual void ClearQueryAvailableDownloadsComplete(byte LocalUserNum, System.IntPtr QueryDownloadsDelegate)
+    public unsafe virtual void ClearQueryAvailableDownloadsComplete(byte LocalUserNum, BmSDK.FScriptDelegate QueryDownloadsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearQueryAvailableDownloadsComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearQueryAvailableDownloadsComplete", this);
@@ -2269,7 +2269,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddQueryAvailableDownloadsComplete
     /// </summary>
-    public unsafe virtual void AddQueryAvailableDownloadsComplete(byte LocalUserNum, System.IntPtr QueryDownloadsDelegate)
+    public unsafe virtual void AddQueryAvailableDownloadsComplete(byte LocalUserNum, BmSDK.FScriptDelegate QueryDownloadsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddQueryAvailableDownloadsComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddQueryAvailableDownloadsComplete", this);
@@ -2331,7 +2331,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadCrossTitleSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void ClearReadCrossTitleSaveGameDataComplete(byte LocalUserNum, System.IntPtr ReadSaveGameDataCompleteDelegate)
+    public unsafe virtual void ClearReadCrossTitleSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadCrossTitleSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadCrossTitleSaveGameDataComplete", this);
@@ -2347,7 +2347,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadCrossTitleSaveGameDataComplete
     /// </summary>
-    public unsafe virtual void AddReadCrossTitleSaveGameDataComplete(byte LocalUserNum, System.IntPtr ReadSaveGameDataCompleteDelegate)
+    public unsafe virtual void AddReadCrossTitleSaveGameDataComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadSaveGameDataCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadCrossTitleSaveGameDataComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadCrossTitleSaveGameDataComplete", this);
@@ -2437,7 +2437,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadCrossTitleContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadCrossTitleContentCompleteDelegate(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, System.IntPtr ReadContentCompleteDelegate)
+    public unsafe virtual void ClearReadCrossTitleContentCompleteDelegate(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, BmSDK.FScriptDelegate ReadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadCrossTitleContentCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadCrossTitleContentCompleteDelegate", this);
@@ -2454,7 +2454,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadCrossTitleContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadCrossTitleContentCompleteDelegate(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, System.IntPtr ReadContentCompleteDelegate)
+    public unsafe virtual void AddReadCrossTitleContentCompleteDelegate(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, BmSDK.FScriptDelegate ReadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadCrossTitleContentCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadCrossTitleContentCompleteDelegate", this);
@@ -2658,7 +2658,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearPurchaseInGameStoreContentComplete
     /// </summary>
-    public unsafe virtual void ClearPurchaseInGameStoreContentComplete(byte LocalUserNum, System.IntPtr PurchaseInGameStoreContentComplete)
+    public unsafe virtual void ClearPurchaseInGameStoreContentComplete(byte LocalUserNum, BmSDK.FScriptDelegate PurchaseInGameStoreContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPurchaseInGameStoreContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearPurchaseInGameStoreContentComplete", this);
@@ -2674,7 +2674,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddPurchaseInGameStoreContentComplete
     /// </summary>
-    public unsafe virtual void AddPurchaseInGameStoreContentComplete(byte LocalUserNum, System.IntPtr PurchaseInGameStoreContentComplete)
+    public unsafe virtual void AddPurchaseInGameStoreContentComplete(byte LocalUserNum, BmSDK.FScriptDelegate PurchaseInGameStoreContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPurchaseInGameStoreContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddPurchaseInGameStoreContentComplete", this);
@@ -2772,7 +2772,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadInGameStoreContentComplete
     /// </summary>
-    public unsafe virtual void ClearReadInGameStoreContentComplete(byte LocalUserNum, System.IntPtr ReadInGameStoreContentComplete)
+    public unsafe virtual void ClearReadInGameStoreContentComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadInGameStoreContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadInGameStoreContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadInGameStoreContentComplete", this);
@@ -2788,7 +2788,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadInGameStoreContentComplete
     /// </summary>
-    public unsafe virtual void AddReadInGameStoreContentComplete(byte LocalUserNum, System.IntPtr ReadInGameStoreContentComplete)
+    public unsafe virtual void AddReadInGameStoreContentComplete(byte LocalUserNum, BmSDK.FScriptDelegate ReadInGameStoreContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadInGameStoreContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadInGameStoreContentComplete", this);
@@ -2819,7 +2819,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearContentStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearContentStatusChangeDelegate(System.IntPtr ContentStatusChangeDelegate)
+    public unsafe virtual void ClearContentStatusChangeDelegate(BmSDK.FScriptDelegate ContentStatusChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearContentStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearContentStatusChangeDelegate", this);
@@ -2834,7 +2834,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddContentStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddContentStatusChangeDelegate(System.IntPtr ContentStatusChangeDelegate)
+    public unsafe virtual void AddContentStatusChangeDelegate(BmSDK.FScriptDelegate ContentStatusChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddContentStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddContentStatusChangeDelegate", this);
@@ -2948,7 +2948,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadContentComplete
     /// </summary>
-    public unsafe virtual void ClearReadContentComplete(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, System.IntPtr ReadContentCompleteDelegate)
+    public unsafe virtual void ClearReadContentComplete(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, BmSDK.FScriptDelegate ReadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadContentComplete", this);
@@ -2965,7 +2965,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadContentComplete
     /// </summary>
-    public unsafe virtual void AddReadContentComplete(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, System.IntPtr ReadContentCompleteDelegate)
+    public unsafe virtual void AddReadContentComplete(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, BmSDK.FScriptDelegate ReadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadContentComplete, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadContentComplete", this);
@@ -2997,7 +2997,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearContentChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearContentChangeDelegate(System.IntPtr ContentDelegate, byte LocalUserNum = default)
+    public unsafe virtual void ClearContentChangeDelegate(BmSDK.FScriptDelegate ContentDelegate, byte LocalUserNum = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearContentChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearContentChangeDelegate", this);
@@ -3013,7 +3013,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddContentChangeDelegate
     /// </summary>
-    public unsafe virtual void AddContentChangeDelegate(System.IntPtr ContentDelegate, byte LocalUserNum = default)
+    public unsafe virtual void AddContentChangeDelegate(BmSDK.FScriptDelegate ContentDelegate, byte LocalUserNum = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddContentChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddContentChangeDelegate", this);
@@ -3109,7 +3109,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearRegisterHostStatGuidCompleteDelegateDelegate
     /// </summary>
-    public unsafe virtual void ClearRegisterHostStatGuidCompleteDelegateDelegate(System.IntPtr RegisterHostStatGuidCompleteDelegate)
+    public unsafe virtual void ClearRegisterHostStatGuidCompleteDelegateDelegate(BmSDK.FScriptDelegate RegisterHostStatGuidCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRegisterHostStatGuidCompleteDelegateDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearRegisterHostStatGuidCompleteDelegateDelegate", this);
@@ -3124,7 +3124,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddRegisterHostStatGuidCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRegisterHostStatGuidCompleteDelegate(System.IntPtr RegisterHostStatGuidCompleteDelegate)
+    public unsafe virtual void AddRegisterHostStatGuidCompleteDelegate(BmSDK.FScriptDelegate RegisterHostStatGuidCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRegisterHostStatGuidCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddRegisterHostStatGuidCompleteDelegate", this);
@@ -3268,7 +3268,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearFlushOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearFlushOnlineStatsCompleteDelegate(System.IntPtr FlushOnlineStatsCompleteDelegate)
+    public unsafe virtual void ClearFlushOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate FlushOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFlushOnlineStatsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFlushOnlineStatsCompleteDelegate", this);
@@ -3283,7 +3283,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddFlushOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddFlushOnlineStatsCompleteDelegate(System.IntPtr FlushOnlineStatsCompleteDelegate)
+    public unsafe virtual void AddFlushOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate FlushOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFlushOnlineStatsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFlushOnlineStatsCompleteDelegate", this);
@@ -3382,7 +3382,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadOnlineStatsCompleteDelegate(System.IntPtr ReadOnlineStatsCompleteDelegate)
+    public unsafe virtual void ClearReadOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate ReadOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadOnlineStatsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadOnlineStatsCompleteDelegate", this);
@@ -3397,7 +3397,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadOnlineStatsCompleteDelegate(System.IntPtr ReadOnlineStatsCompleteDelegate)
+    public unsafe virtual void AddReadOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate ReadOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadOnlineStatsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadOnlineStatsCompleteDelegate", this);
@@ -3669,7 +3669,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearCreateOnlineAccountCompletedDelegate
     /// </summary>
-    public unsafe virtual void ClearCreateOnlineAccountCompletedDelegate(System.IntPtr AccountCreateDelegate)
+    public unsafe virtual void ClearCreateOnlineAccountCompletedDelegate(BmSDK.FScriptDelegate AccountCreateDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCreateOnlineAccountCompletedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearCreateOnlineAccountCompletedDelegate", this);
@@ -3684,7 +3684,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddCreateOnlineAccountCompletedDelegate
     /// </summary>
-    public unsafe virtual void AddCreateOnlineAccountCompletedDelegate(System.IntPtr AccountCreateDelegate)
+    public unsafe virtual void AddCreateOnlineAccountCompletedDelegate(BmSDK.FScriptDelegate AccountCreateDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCreateOnlineAccountCompletedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddCreateOnlineAccountCompletedDelegate", this);
@@ -3937,7 +3937,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearGTCCommandDelegate
     /// </summary>
-    public unsafe virtual void ClearGTCCommandDelegate(System.IntPtr GTCCommandDelegate)
+    public unsafe virtual void ClearGTCCommandDelegate(BmSDK.FScriptDelegate GTCCommandDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearGTCCommandDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearGTCCommandDelegate", this);
@@ -3952,7 +3952,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddGTCCommandDelegate
     /// </summary>
-    public unsafe virtual void AddGTCCommandDelegate(System.IntPtr GTCCommandDelegate)
+    public unsafe virtual void AddGTCCommandDelegate(BmSDK.FScriptDelegate GTCCommandDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGTCCommandDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddGTCCommandDelegate", this);
@@ -4198,7 +4198,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ReadOnlineAvatar
     /// </summary>
-    public unsafe virtual void ReadOnlineAvatar(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId, int Size, System.IntPtr ReadOnlineAvatarCompleteDelegate)
+    public unsafe virtual void ReadOnlineAvatar(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId, int Size, BmSDK.FScriptDelegate ReadOnlineAvatarCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadOnlineAvatar, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineAvatar", this);
@@ -4294,7 +4294,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadCrossTitleProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void ClearReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadCrossTitleProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadCrossTitleProfileSettingsCompleteDelegate", this);
@@ -4310,7 +4310,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadCrossTitleProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void AddReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadCrossTitleProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadCrossTitleProfileSettingsCompleteDelegate", this);
@@ -4411,7 +4411,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearNewInfocastDelegate
     /// </summary>
-    public unsafe virtual void ClearNewInfocastDelegate(System.IntPtr InfocastDelegate)
+    public unsafe virtual void ClearNewInfocastDelegate(BmSDK.FScriptDelegate InfocastDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNewInfocastDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearNewInfocastDelegate", this);
@@ -4426,7 +4426,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddNewInfocastDelegate
     /// </summary>
-    public unsafe virtual void AddNewInfocastDelegate(System.IntPtr InfocastDelegate)
+    public unsafe virtual void AddNewInfocastDelegate(BmSDK.FScriptDelegate InfocastDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNewInfocastDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddNewInfocastDelegate", this);
@@ -4543,7 +4543,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearProfileDataChangedDelegate
     /// </summary>
-    public unsafe virtual void ClearProfileDataChangedDelegate(byte LocalUserNum, System.IntPtr ProfileDataChangedDelegate)
+    public unsafe virtual void ClearProfileDataChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ProfileDataChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearProfileDataChangedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearProfileDataChangedDelegate", this);
@@ -4559,7 +4559,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddProfileDataChangedDelegate
     /// </summary>
-    public unsafe virtual void AddProfileDataChangedDelegate(byte LocalUserNum, System.IntPtr ProfileDataChangedDelegate)
+    public unsafe virtual void AddProfileDataChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ProfileDataChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddProfileDataChangedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddProfileDataChangedDelegate", this);
@@ -4658,7 +4658,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearDeviceSelectionDoneDelegate
     /// </summary>
-    public unsafe virtual void ClearDeviceSelectionDoneDelegate(byte LocalUserNum, System.IntPtr DeviceDelegate)
+    public unsafe virtual void ClearDeviceSelectionDoneDelegate(byte LocalUserNum, BmSDK.FScriptDelegate DeviceDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeviceSelectionDoneDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearDeviceSelectionDoneDelegate", this);
@@ -4674,7 +4674,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddDeviceSelectionDoneDelegate
     /// </summary>
-    public unsafe virtual void AddDeviceSelectionDoneDelegate(byte LocalUserNum, System.IntPtr DeviceDelegate)
+    public unsafe virtual void AddDeviceSelectionDoneDelegate(byte LocalUserNum, BmSDK.FScriptDelegate DeviceDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeviceSelectionDoneDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddDeviceSelectionDoneDelegate", this);
@@ -4926,7 +4926,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearMsgBoxUIDelegate
     /// </summary>
-    public unsafe virtual void ClearMsgBoxUIDelegate(System.IntPtr MsgDelegate)
+    public unsafe virtual void ClearMsgBoxUIDelegate(BmSDK.FScriptDelegate MsgDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMsgBoxUIDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearMsgBoxUIDelegate", this);
@@ -4941,7 +4941,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddMsgBoxUIDoneDelegate
     /// </summary>
-    public unsafe virtual void AddMsgBoxUIDoneDelegate(System.IntPtr MsgDelegate)
+    public unsafe virtual void AddMsgBoxUIDoneDelegate(BmSDK.FScriptDelegate MsgDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMsgBoxUIDoneDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddMsgBoxUIDoneDelegate", this);
@@ -5052,7 +5052,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadAchievementsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadAchievementsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadAchievementsCompleteDelegate)
+    public unsafe virtual void ClearReadAchievementsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadAchievementsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadAchievementsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadAchievementsCompleteDelegate", this);
@@ -5068,7 +5068,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadAchievementsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadAchievementsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadAchievementsCompleteDelegate)
+    public unsafe virtual void AddReadAchievementsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadAchievementsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadAchievementsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadAchievementsCompleteDelegate", this);
@@ -5124,7 +5124,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearUnlockAchievementCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearUnlockAchievementCompleteDelegate(byte LocalUserNum, System.IntPtr UnlockAchievementCompleteDelegate)
+    public unsafe virtual void ClearUnlockAchievementCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate UnlockAchievementCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearUnlockAchievementCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearUnlockAchievementCompleteDelegate", this);
@@ -5140,7 +5140,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddUnlockAchievementCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddUnlockAchievementCompleteDelegate(byte LocalUserNum, System.IntPtr UnlockAchievementCompleteDelegate)
+    public unsafe virtual void AddUnlockAchievementCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate UnlockAchievementCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddUnlockAchievementCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddUnlockAchievementCompleteDelegate", this);
@@ -5235,7 +5235,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearFriendMessageReceivedDelegate
     /// </summary>
-    public unsafe virtual void ClearFriendMessageReceivedDelegate(byte LocalUserNum, System.IntPtr MessageDelegate)
+    public unsafe virtual void ClearFriendMessageReceivedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate MessageDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFriendMessageReceivedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendMessageReceivedDelegate", this);
@@ -5251,7 +5251,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddFriendMessageReceivedDelegate
     /// </summary>
-    public unsafe virtual void AddFriendMessageReceivedDelegate(byte LocalUserNum, System.IntPtr MessageDelegate)
+    public unsafe virtual void AddFriendMessageReceivedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate MessageDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFriendMessageReceivedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendMessageReceivedDelegate", this);
@@ -5303,7 +5303,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearJoinFriendGameCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearJoinFriendGameCompleteDelegate(System.IntPtr JoinFriendGameCompleteDelegate)
+    public unsafe virtual void ClearJoinFriendGameCompleteDelegate(BmSDK.FScriptDelegate JoinFriendGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearJoinFriendGameCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearJoinFriendGameCompleteDelegate", this);
@@ -5318,7 +5318,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddJoinFriendGameCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddJoinFriendGameCompleteDelegate(System.IntPtr JoinFriendGameCompleteDelegate)
+    public unsafe virtual void AddJoinFriendGameCompleteDelegate(BmSDK.FScriptDelegate JoinFriendGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddJoinFriendGameCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddJoinFriendGameCompleteDelegate", this);
@@ -5371,7 +5371,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReceivedGameInviteDelegate
     /// </summary>
-    public unsafe virtual void ClearReceivedGameInviteDelegate(byte LocalUserNum, System.IntPtr ReceivedGameInviteDelegate)
+    public unsafe virtual void ClearReceivedGameInviteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReceivedGameInviteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReceivedGameInviteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReceivedGameInviteDelegate", this);
@@ -5387,7 +5387,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReceivedGameInviteDelegate
     /// </summary>
-    public unsafe virtual void AddReceivedGameInviteDelegate(byte LocalUserNum, System.IntPtr ReceivedGameInviteDelegate)
+    public unsafe virtual void AddReceivedGameInviteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReceivedGameInviteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReceivedGameInviteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReceivedGameInviteDelegate", this);
@@ -5495,7 +5495,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearFriendInviteReceivedDelegate
     /// </summary>
-    public unsafe virtual void ClearFriendInviteReceivedDelegate(byte LocalUserNum, System.IntPtr InviteDelegate)
+    public unsafe virtual void ClearFriendInviteReceivedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate InviteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFriendInviteReceivedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendInviteReceivedDelegate", this);
@@ -5511,7 +5511,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddFriendInviteReceivedDelegate
     /// </summary>
-    public unsafe virtual void AddFriendInviteReceivedDelegate(byte LocalUserNum, System.IntPtr InviteDelegate)
+    public unsafe virtual void AddFriendInviteReceivedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate InviteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFriendInviteReceivedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendInviteReceivedDelegate", this);
@@ -5616,7 +5616,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearAddFriendByNameCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearAddFriendByNameCompleteDelegate(byte LocalUserNum, System.IntPtr FriendDelegate)
+    public unsafe virtual void ClearAddFriendByNameCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate FriendDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAddFriendByNameCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearAddFriendByNameCompleteDelegate", this);
@@ -5632,7 +5632,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddAddFriendByNameCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddAddFriendByNameCompleteDelegate(byte LocalUserNum, System.IntPtr FriendDelegate)
+    public unsafe virtual void AddAddFriendByNameCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate FriendDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAddFriendByNameCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddAddFriendByNameCompleteDelegate", this);
@@ -5731,7 +5731,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearKeyboardInputDoneDelegate
     /// </summary>
-    public unsafe virtual void ClearKeyboardInputDoneDelegate(System.IntPtr InputDelegate)
+    public unsafe virtual void ClearKeyboardInputDoneDelegate(BmSDK.FScriptDelegate InputDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearKeyboardInputDoneDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearKeyboardInputDoneDelegate", this);
@@ -5746,7 +5746,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddKeyboardInputDoneDelegate
     /// </summary>
-    public unsafe virtual void AddKeyboardInputDoneDelegate(System.IntPtr InputDelegate)
+    public unsafe virtual void AddKeyboardInputDoneDelegate(BmSDK.FScriptDelegate InputDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddKeyboardInputDoneDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddKeyboardInputDoneDelegate", this);
@@ -5857,7 +5857,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadFriendsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadFriendsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadFriendsCompleteDelegate)
+    public unsafe virtual void ClearReadFriendsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadFriendsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadFriendsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadFriendsCompleteDelegate", this);
@@ -5873,7 +5873,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadFriendsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadFriendsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadFriendsCompleteDelegate)
+    public unsafe virtual void AddReadFriendsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadFriendsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadFriendsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadFriendsCompleteDelegate", this);
@@ -5928,7 +5928,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWritePlayerStorageCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWritePlayerStorageCompleteDelegate(byte LocalUserNum, System.IntPtr WritePlayerStorageCompleteDelegate)
+    public unsafe virtual void ClearWritePlayerStorageCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate WritePlayerStorageCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWritePlayerStorageCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWritePlayerStorageCompleteDelegate", this);
@@ -5944,7 +5944,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWritePlayerStorageCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWritePlayerStorageCompleteDelegate(byte LocalUserNum, System.IntPtr WritePlayerStorageCompleteDelegate)
+    public unsafe virtual void AddWritePlayerStorageCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate WritePlayerStorageCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWritePlayerStorageCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWritePlayerStorageCompleteDelegate", this);
@@ -6008,7 +6008,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadPlayerStorageForNetIdCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadPlayerStorageForNetIdCompleteDelegate(BmSDK.Engine.OnlineSubsystem.FUniqueNetId NetId, System.IntPtr ReadPlayerStorageForNetIdCompleteDelegate)
+    public unsafe virtual void ClearReadPlayerStorageForNetIdCompleteDelegate(BmSDK.Engine.OnlineSubsystem.FUniqueNetId NetId, BmSDK.FScriptDelegate ReadPlayerStorageForNetIdCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadPlayerStorageForNetIdCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadPlayerStorageForNetIdCompleteDelegate", this);
@@ -6024,7 +6024,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadPlayerStorageForNetIdCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadPlayerStorageForNetIdCompleteDelegate(BmSDK.Engine.OnlineSubsystem.FUniqueNetId NetId, System.IntPtr ReadPlayerStorageForNetIdCompleteDelegate)
+    public unsafe virtual void AddReadPlayerStorageForNetIdCompleteDelegate(BmSDK.Engine.OnlineSubsystem.FUniqueNetId NetId, BmSDK.FScriptDelegate ReadPlayerStorageForNetIdCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadPlayerStorageForNetIdCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadPlayerStorageForNetIdCompleteDelegate", this);
@@ -6073,7 +6073,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadPlayerStorageCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadPlayerStorageCompleteDelegate(byte LocalUserNum, System.IntPtr ReadPlayerStorageCompleteDelegate)
+    public unsafe virtual void ClearReadPlayerStorageCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadPlayerStorageCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadPlayerStorageCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadPlayerStorageCompleteDelegate", this);
@@ -6089,7 +6089,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadPlayerStorageCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadPlayerStorageCompleteDelegate(byte LocalUserNum, System.IntPtr ReadPlayerStorageCompleteDelegate)
+    public unsafe virtual void AddReadPlayerStorageCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadPlayerStorageCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadPlayerStorageCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadPlayerStorageCompleteDelegate", this);
@@ -6307,7 +6307,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearGetNumberOfCurrentPlayersCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearGetNumberOfCurrentPlayersCompleteDelegate(System.IntPtr GetNumberOfCurrentPlayersCompleteDelegate)
+    public unsafe virtual void ClearGetNumberOfCurrentPlayersCompleteDelegate(BmSDK.FScriptDelegate GetNumberOfCurrentPlayersCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearGetNumberOfCurrentPlayersCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearGetNumberOfCurrentPlayersCompleteDelegate", this);
@@ -6322,7 +6322,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddGetNumberOfCurrentPlayersCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddGetNumberOfCurrentPlayersCompleteDelegate(System.IntPtr GetNumberOfCurrentPlayersCompleteDelegate)
+    public unsafe virtual void AddGetNumberOfCurrentPlayersCompleteDelegate(BmSDK.FScriptDelegate GetNumberOfCurrentPlayersCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGetNumberOfCurrentPlayersCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddGetNumberOfCurrentPlayersCompleteDelegate", this);
@@ -6373,7 +6373,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearWriteProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr WriteProfileSettingsCompleteDelegate)
+    public unsafe virtual void ClearWriteProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate WriteProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteProfileSettingsCompleteDelegate", this);
@@ -6389,7 +6389,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddWriteProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr WriteProfileSettingsCompleteDelegate)
+    public unsafe virtual void AddWriteProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate WriteProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteProfileSettingsCompleteDelegate", this);
@@ -6459,7 +6459,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearReadProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void ClearReadProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadProfileSettingsCompleteDelegate", this);
@@ -6475,7 +6475,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddReadProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void AddReadProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadProfileSettingsCompleteDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadProfileSettingsCompleteDelegate", this);
@@ -6530,7 +6530,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearFriendsChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearFriendsChangeDelegate(byte LocalUserNum, System.IntPtr FriendsDelegate)
+    public unsafe virtual void ClearFriendsChangeDelegate(byte LocalUserNum, BmSDK.FScriptDelegate FriendsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFriendsChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendsChangeDelegate", this);
@@ -6546,7 +6546,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddFriendsChangeDelegate
     /// </summary>
-    public unsafe virtual void AddFriendsChangeDelegate(byte LocalUserNum, System.IntPtr FriendsDelegate)
+    public unsafe virtual void AddFriendsChangeDelegate(byte LocalUserNum, BmSDK.FScriptDelegate FriendsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFriendsChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendsChangeDelegate", this);
@@ -6562,7 +6562,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearMutingChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearMutingChangeDelegate(System.IntPtr MutingDelegate)
+    public unsafe virtual void ClearMutingChangeDelegate(BmSDK.FScriptDelegate MutingDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMutingChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearMutingChangeDelegate", this);
@@ -6577,7 +6577,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddMutingChangeDelegate
     /// </summary>
-    public unsafe virtual void AddMutingChangeDelegate(System.IntPtr MutingDelegate)
+    public unsafe virtual void AddMutingChangeDelegate(BmSDK.FScriptDelegate MutingDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMutingChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddMutingChangeDelegate", this);
@@ -6592,7 +6592,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLoginCancelledDelegate
     /// </summary>
-    public unsafe virtual void ClearLoginCancelledDelegate(System.IntPtr CancelledDelegate)
+    public unsafe virtual void ClearLoginCancelledDelegate(BmSDK.FScriptDelegate CancelledDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoginCancelledDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginCancelledDelegate", this);
@@ -6607,7 +6607,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLoginCancelledDelegate
     /// </summary>
-    public unsafe virtual void AddLoginCancelledDelegate(System.IntPtr CancelledDelegate)
+    public unsafe virtual void AddLoginCancelledDelegate(BmSDK.FScriptDelegate CancelledDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoginCancelledDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginCancelledDelegate", this);
@@ -6622,7 +6622,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLoginStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearLoginStatusChangeDelegate(System.IntPtr LoginStatusDelegate, byte LocalUserNum)
+    public unsafe virtual void ClearLoginStatusChangeDelegate(BmSDK.FScriptDelegate LoginStatusDelegate, byte LocalUserNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoginStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginStatusChangeDelegate", this);
@@ -6638,7 +6638,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLoginStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddLoginStatusChangeDelegate(System.IntPtr LoginStatusDelegate, byte LocalUserNum)
+    public unsafe virtual void AddLoginStatusChangeDelegate(BmSDK.FScriptDelegate LoginStatusDelegate, byte LocalUserNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoginStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginStatusChangeDelegate", this);
@@ -6670,7 +6670,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLoginChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearLoginChangeDelegate(System.IntPtr LoginDelegate)
+    public unsafe virtual void ClearLoginChangeDelegate(BmSDK.FScriptDelegate LoginDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoginChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginChangeDelegate", this);
@@ -6685,7 +6685,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLoginChangeDelegate
     /// </summary>
-    public unsafe virtual void AddLoginChangeDelegate(System.IntPtr LoginDelegate)
+    public unsafe virtual void AddLoginChangeDelegate(BmSDK.FScriptDelegate LoginDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoginChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginChangeDelegate", this);
@@ -7003,7 +7003,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLogoutCompletedDelegate
     /// </summary>
-    public unsafe virtual void ClearLogoutCompletedDelegate(byte LocalUserNum, System.IntPtr LogoutDelegate)
+    public unsafe virtual void ClearLogoutCompletedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate LogoutDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLogoutCompletedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLogoutCompletedDelegate", this);
@@ -7019,7 +7019,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLogoutCompletedDelegate
     /// </summary>
-    public unsafe virtual void AddLogoutCompletedDelegate(byte LocalUserNum, System.IntPtr LogoutDelegate)
+    public unsafe virtual void AddLogoutCompletedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate LogoutDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLogoutCompletedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLogoutCompletedDelegate", this);
@@ -7072,7 +7072,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLoginFailedDelegate
     /// </summary>
-    public unsafe virtual void ClearLoginFailedDelegate(byte LocalUserNum, System.IntPtr LoginFailedDelegate)
+    public unsafe virtual void ClearLoginFailedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate LoginFailedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoginFailedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginFailedDelegate", this);
@@ -7088,7 +7088,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLoginFailedDelegate
     /// </summary>
-    public unsafe virtual void AddLoginFailedDelegate(byte LocalUserNum, System.IntPtr LoginFailedDelegate)
+    public unsafe virtual void AddLoginFailedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate LoginFailedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoginFailedDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginFailedDelegate", this);
@@ -7261,7 +7261,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearStorageDeviceChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearStorageDeviceChangeDelegate(System.IntPtr StorageDeviceChangeDelegate)
+    public unsafe virtual void ClearStorageDeviceChangeDelegate(BmSDK.FScriptDelegate StorageDeviceChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearStorageDeviceChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearStorageDeviceChangeDelegate", this);
@@ -7276,7 +7276,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddStorageDeviceChangeDelegate
     /// </summary>
-    public unsafe virtual void AddStorageDeviceChangeDelegate(System.IntPtr StorageDeviceChangeDelegate)
+    public unsafe virtual void AddStorageDeviceChangeDelegate(BmSDK.FScriptDelegate StorageDeviceChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddStorageDeviceChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddStorageDeviceChangeDelegate", this);
@@ -7326,7 +7326,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearConnectionStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearConnectionStatusChangeDelegate(System.IntPtr ConnectionStatusDelegate)
+    public unsafe virtual void ClearConnectionStatusChangeDelegate(BmSDK.FScriptDelegate ConnectionStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearConnectionStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearConnectionStatusChangeDelegate", this);
@@ -7341,7 +7341,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddConnectionStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddConnectionStatusChangeDelegate(System.IntPtr ConnectionStatusDelegate)
+    public unsafe virtual void AddConnectionStatusChangeDelegate(BmSDK.FScriptDelegate ConnectionStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddConnectionStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddConnectionStatusChangeDelegate", this);
@@ -7393,7 +7393,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearControllerChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearControllerChangeDelegate(System.IntPtr ControllerChangeDelegate)
+    public unsafe virtual void ClearControllerChangeDelegate(BmSDK.FScriptDelegate ControllerChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearControllerChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearControllerChangeDelegate", this);
@@ -7408,7 +7408,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddControllerChangeDelegate
     /// </summary>
-    public unsafe virtual void AddControllerChangeDelegate(System.IntPtr ControllerChangeDelegate)
+    public unsafe virtual void AddControllerChangeDelegate(BmSDK.FScriptDelegate ControllerChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddControllerChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddControllerChangeDelegate", this);
@@ -7475,7 +7475,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearExternalUIChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearExternalUIChangeDelegate(System.IntPtr ExternalUIDelegate)
+    public unsafe virtual void ClearExternalUIChangeDelegate(BmSDK.FScriptDelegate ExternalUIDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearExternalUIChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearExternalUIChangeDelegate", this);
@@ -7490,7 +7490,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddExternalUIChangeDelegate
     /// </summary>
-    public unsafe virtual void AddExternalUIChangeDelegate(System.IntPtr ExternalUIDelegate)
+    public unsafe virtual void AddExternalUIChangeDelegate(BmSDK.FScriptDelegate ExternalUIDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddExternalUIChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddExternalUIChangeDelegate", this);
@@ -7520,7 +7520,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: ClearLinkStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearLinkStatusChangeDelegate(System.IntPtr LinkStatusDelegate)
+    public unsafe virtual void ClearLinkStatusChangeDelegate(BmSDK.FScriptDelegate LinkStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLinkStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLinkStatusChangeDelegate", this);
@@ -7535,7 +7535,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// Function: AddLinkStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddLinkStatusChangeDelegate(System.IntPtr LinkStatusDelegate)
+    public unsafe virtual void AddLinkStatusChangeDelegate(BmSDK.FScriptDelegate LinkStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLinkStatusChangeDelegate, "OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLinkStatusChangeDelegate", this);
@@ -7740,45 +7740,45 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         /// <summary>
         /// ArrayProperty: ContentChangeDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ContentChangeDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ContentChangeDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 20); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 20); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 20); }; }
         }
 
         /// <summary>
         /// ArrayProperty: ReadCompleteDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ReadCompleteDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadCompleteDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 36); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 36); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 36); }; }
         }
 
         /// <summary>
         /// ArrayProperty: ContentStatusChangeDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ContentStatusChangeDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ContentStatusChangeDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 52); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 52); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 52); }; }
         }
 
         /// <summary>
         /// ArrayProperty: ReadInGameStoreContentCompleteDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ReadInGameStoreContentCompleteDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadInGameStoreContentCompleteDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 68); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 68); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 68); }; }
         }
 
         /// <summary>
         /// ArrayProperty: PurchaseInGameStoreContentCompleteDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> PurchaseInGameStoreContentCompleteDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> PurchaseInGameStoreContentCompleteDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 84); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 84); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 84); }; }
         }
 
@@ -8207,9 +8207,9 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         /// <summary>
         /// DelegateProperty: ReadOnlineAvatarCompleteDelegate
         /// </summary>
-        public unsafe System.IntPtr ReadOnlineAvatarCompleteDelegate
+        public unsafe BmSDK.FScriptDelegate ReadOnlineAvatarCompleteDelegate
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 20); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 20); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 20); }; }
         }
     }
@@ -8232,18 +8232,18 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         /// <summary>
         /// DelegateProperty: DeviceSelectionMulticast
         /// </summary>
-        public unsafe System.IntPtr DeviceSelectionMulticast
+        public unsafe BmSDK.FScriptDelegate DeviceSelectionMulticast
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 4); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 4); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4); }; }
         }
 
         /// <summary>
         /// ArrayProperty: DeviceSelectionDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> DeviceSelectionDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> DeviceSelectionDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 20); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 20); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 20); }; }
         }
     }
@@ -8445,27 +8445,27 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         /// <summary>
         /// ArrayProperty: ReadDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ReadDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 8); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 8); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 8); }; }
         }
 
         /// <summary>
         /// ArrayProperty: WriteDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> WriteDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> WriteDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 24); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 24); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 24); }; }
         }
 
         /// <summary>
         /// ArrayProperty: ProfileDataChangedDelegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> ProfileDataChangedDelegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ProfileDataChangedDelegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 40); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 40); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 40); }; }
         }
     }
@@ -8545,27 +8545,27 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: ConnectionStatusChangeDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ConnectionStatusChangeDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ConnectionStatusChangeDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 700); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 700); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 700); }
     }
 
     /// <summary>
     /// ArrayProperty: ControllerChangeDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ControllerChangeDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ControllerChangeDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 716); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 716); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 716); }
     }
 
     /// <summary>
     /// ArrayProperty: LinkStatusDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LinkStatusDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LinkStatusDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 732); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 732); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 732); }
     }
 
@@ -8659,27 +8659,27 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: FriendInviteReceivedDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> FriendInviteReceivedDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> FriendInviteReceivedDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 828); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 828); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 828); }
     }
 
     /// <summary>
     /// ArrayProperty: FriendMessageReceivedDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> FriendMessageReceivedDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> FriendMessageReceivedDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 844); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 844); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 844); }
     }
 
     /// <summary>
     /// ArrayProperty: AddFriendByNameCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> AddFriendByNameCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> AddFriendByNameCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 860); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 860); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 860); }
     }
 
@@ -8719,36 +8719,36 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: ReceivedGameInviteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReceivedGameInviteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReceivedGameInviteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 980); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 980); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 980); }
     }
 
     /// <summary>
     /// ArrayProperty: JoinFriendGameCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> JoinFriendGameCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> JoinFriendGameCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 996); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 996); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 996); }
     }
 
     /// <summary>
     /// ArrayProperty: GetNumberOfCurrentPlayersCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> GetNumberOfCurrentPlayersCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> GetNumberOfCurrentPlayersCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1012); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1012); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1012); }
     }
 
     /// <summary>
     /// ArrayProperty: RegisterHostStatGuidCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> RegisterHostStatGuidCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> RegisterHostStatGuidCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1028); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1028); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1028); }
     }
 
@@ -8890,81 +8890,81 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: AchievementDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> AchievementDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> AchievementDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1064); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1064); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1064); }
     }
 
     /// <summary>
     /// ArrayProperty: AchievementReadDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> AchievementReadDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> AchievementReadDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1080); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1080); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1080); }
     }
 
     /// <summary>
     /// ArrayProperty: ReadFriendsDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadFriendsDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadFriendsDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1096); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1096); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1096); }
     }
 
     /// <summary>
     /// ArrayProperty: WriteProfileSettingsDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> WriteProfileSettingsDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> WriteProfileSettingsDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1112); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1112); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1112); }
     }
 
     /// <summary>
     /// ArrayProperty: FriendsChangeDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> FriendsChangeDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> FriendsChangeDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1128); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1128); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1128); }
     }
 
     /// <summary>
     /// ArrayProperty: LoginChangeDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LoginChangeDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LoginChangeDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1144); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1144); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1144); }
     }
 
     /// <summary>
     /// ArrayProperty: LoginFailedDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LoginFailedDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LoginFailedDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1160); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1160); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1160); }
     }
 
     /// <summary>
     /// ArrayProperty: LogoutCompletedDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LogoutCompletedDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LogoutCompletedDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1176); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1176); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1176); }
     }
 
     /// <summary>
     /// ArrayProperty: MutingChangeDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> MutingChangeDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> MutingChangeDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1192); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1192); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1192); }
     }
 
@@ -9060,9 +9060,9 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: KeyboardInputDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> KeyboardInputDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> KeyboardInputDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1328); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1328); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1328); }
     }
 
@@ -9078,27 +9078,27 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: LocalPlayerStorageReadDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LocalPlayerStorageReadDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LocalPlayerStorageReadDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1360); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1360); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1360); }
     }
 
     /// <summary>
     /// ArrayProperty: LocalPlayerStorageWriteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LocalPlayerStorageWriteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LocalPlayerStorageWriteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1376); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1376); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1376); }
     }
 
     /// <summary>
     /// ArrayProperty: RemotePlayerStorageReadDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> RemotePlayerStorageReadDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> RemotePlayerStorageReadDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1392); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1392); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1392); }
     }
 
@@ -9129,9 +9129,9 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: AccountCreateDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> AccountCreateDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> AccountCreateDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1476); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1476); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1476); }
     }
 
@@ -9147,18 +9147,18 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: ReadOnlineStatsCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadOnlineStatsCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadOnlineStatsCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1496); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1496); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1496); }
     }
 
     /// <summary>
     /// ArrayProperty: FlushOnlineStatsDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> FlushOnlineStatsDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> FlushOnlineStatsDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1512); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1512); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1512); }
     }
 
@@ -9234,9 +9234,9 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: ReadTitleFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadTitleFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadTitleFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1748); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1748); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1748); }
     }
 
@@ -9252,18 +9252,18 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: SpeechRecognitionCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> SpeechRecognitionCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> SpeechRecognitionCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1780); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1780); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1780); }
     }
 
     /// <summary>
     /// ArrayProperty: TalkingDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> TalkingDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> TalkingDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1796); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1796); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1796); }
     }
 
@@ -9294,63 +9294,63 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: EnumerateUserFilesCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> EnumerateUserFilesCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> EnumerateUserFilesCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1852); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1852); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1852); }
     }
 
     /// <summary>
     /// ArrayProperty: ReadUserFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadUserFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadUserFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1868); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1868); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1868); }
     }
 
     /// <summary>
     /// ArrayProperty: WriteUserFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> WriteUserFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> WriteUserFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1884); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1884); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1884); }
     }
 
     /// <summary>
     /// ArrayProperty: DeleteUserFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> DeleteUserFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> DeleteUserFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1900); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1900); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1900); }
     }
 
     /// <summary>
     /// ArrayProperty: ReadDownloadFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadDownloadFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadDownloadFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1916); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1916); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1916); }
     }
 
     /// <summary>
     /// ArrayProperty: WriteDownloadFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> WriteDownloadFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> WriteDownloadFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1932); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1932); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1932); }
     }
 
     /// <summary>
     /// ArrayProperty: DeleteDownloadFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> DeleteDownloadFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> DeleteDownloadFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1948); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1948); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1948); }
     }
 
@@ -9375,18 +9375,18 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// ArrayProperty: SharedFileReadCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> SharedFileReadCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> SharedFileReadCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1996); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1996); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1996); }
     }
 
     /// <summary>
     /// ArrayProperty: SharedFileWriteCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> SharedFileWriteCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> SharedFileWriteCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 2012); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 2012); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2012); }
     }
 
@@ -9438,567 +9438,567 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
     /// <summary>
     /// DelegateProperty: __OnLinkStatusChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLinkStatusChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLinkStatusChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2080); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2080); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2080); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnExternalUIChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnExternalUIChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnExternalUIChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2096); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2096); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2096); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnControllerChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnControllerChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnControllerChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2112); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2112); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2112); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnConnectionStatusChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnConnectionStatusChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnConnectionStatusChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2128); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2128); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2128); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnStorageDeviceChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnStorageDeviceChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnStorageDeviceChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2144); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2144); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2144); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLoginChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLoginChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLoginChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2160); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2160); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2160); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLoginCancelled__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLoginCancelled__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLoginCancelled__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2176); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2176); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2176); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnMutingChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnMutingChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnMutingChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2192); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2192); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2192); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnFriendsChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnFriendsChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnFriendsChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2208); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2208); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2208); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLoginFailed__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLoginFailed__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLoginFailed__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2224); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2224); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2224); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLogoutCompleted__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLogoutCompleted__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLogoutCompleted__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2240); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2240); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2240); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLoginStatusChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLoginStatusChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLoginStatusChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2256); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2256); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2256); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadProfileSettingsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadProfileSettingsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadProfileSettingsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2272); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2272); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2272); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWriteProfileSettingsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWriteProfileSettingsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWriteProfileSettingsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2288); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2288); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2288); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnGetNumberOfCurrentPlayersComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnGetNumberOfCurrentPlayersComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnGetNumberOfCurrentPlayersComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2304); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2304); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2304); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadPlayerStorageComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadPlayerStorageComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadPlayerStorageComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2320); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2320); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2320); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadPlayerStorageForNetIdComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadPlayerStorageForNetIdComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadPlayerStorageForNetIdComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2336); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2336); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2336); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWritePlayerStorageComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWritePlayerStorageComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWritePlayerStorageComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2352); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2352); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2352); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadFriendsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadFriendsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadFriendsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2368); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2368); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2368); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnKeyboardInputComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnKeyboardInputComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnKeyboardInputComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2384); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2384); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2384); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnAddFriendByNameComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnAddFriendByNameComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnAddFriendByNameComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2400); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2400); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2400); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnFriendInviteReceived__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnFriendInviteReceived__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnFriendInviteReceived__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2416); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2416); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2416); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReceivedGameInvite__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReceivedGameInvite__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReceivedGameInvite__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2432); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2432); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2432); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnJoinFriendGameComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnJoinFriendGameComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnJoinFriendGameComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2448); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2448); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2448); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnFriendMessageReceived__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnFriendMessageReceived__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnFriendMessageReceived__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2464); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2464); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2464); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnUnlockAchievementComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnUnlockAchievementComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnUnlockAchievementComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2480); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2480); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2480); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadAchievementsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadAchievementsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadAchievementsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2496); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2496); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2496); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnMsgBoxUIComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnMsgBoxUIComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnMsgBoxUIComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2512); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2512); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2512); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnDeviceSelectionComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnDeviceSelectionComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnDeviceSelectionComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2528); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2528); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2528); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnProfileDataChanged__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnProfileDataChanged__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnProfileDataChanged__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2544); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2544); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2544); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnNewInfocast__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnNewInfocast__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnNewInfocast__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2560); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2560); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2560); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadCrossTitleProfileSettingsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadCrossTitleProfileSettingsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadCrossTitleProfileSettingsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2576); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2576); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2576); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadOnlineAvatarComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadOnlineAvatarComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadOnlineAvatarComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2592); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2592); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2592); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnGTCCommand__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnGTCCommand__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnGTCCommand__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2608); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2608); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2608); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnCreateOnlineAccountCompleted__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnCreateOnlineAccountCompleted__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnCreateOnlineAccountCompleted__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2624); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2624); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2624); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadOnlineStatsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadOnlineStatsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadOnlineStatsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2640); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2640); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2640); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnFlushOnlineStatsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnFlushOnlineStatsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnFlushOnlineStatsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2656); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2656); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2656); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnRegisterHostStatGuidComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRegisterHostStatGuidComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRegisterHostStatGuidComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2672); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2672); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2672); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnContentChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnContentChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnContentChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2688); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2688); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2688); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2704); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2704); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2704); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnContentStatusChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnContentStatusChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnContentStatusChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2720); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2720); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2720); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadInGameStoreContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadInGameStoreContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadInGameStoreContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2736); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2736); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2736); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnPurchaseInGameStoreContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnPurchaseInGameStoreContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnPurchaseInGameStoreContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2752); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2752); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2752); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadCrossTitleContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadCrossTitleContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadCrossTitleContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2768); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2768); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2768); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadCrossTitleSaveGameDataComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadCrossTitleSaveGameDataComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadCrossTitleSaveGameDataComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2784); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2784); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2784); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnQueryAvailableDownloadsComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnQueryAvailableDownloadsComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnQueryAvailableDownloadsComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2800); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2800); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2800); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadSaveGameDataComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadSaveGameDataComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadSaveGameDataComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2816); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2816); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2816); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWriteSaveGameDataComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWriteSaveGameDataComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWriteSaveGameDataComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2832); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2832); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2832); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadTitleFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadTitleFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadTitleFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2848); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2848); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2848); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnRequestTitleFileListComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRequestTitleFileListComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRequestTitleFileListComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2864); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2864); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2864); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnPlayerTalkingStateChange__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnPlayerTalkingStateChange__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnPlayerTalkingStateChange__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2880); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2880); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2880); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnRecognitionComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRecognitionComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRecognitionComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2896); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2896); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2896); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnEnumerateUserFilesComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnEnumerateUserFilesComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnEnumerateUserFilesComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2912); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2912); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2912); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadUserFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadUserFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadUserFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2928); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2928); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2928); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWriteUserFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWriteUserFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWriteUserFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2944); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2944); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2944); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnDeleteUserFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnDeleteUserFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnDeleteUserFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2960); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2960); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2960); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadDownloadFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadDownloadFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadDownloadFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2976); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2976); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2976); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWriteDownloadFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWriteDownloadFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWriteDownloadFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2992); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2992); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2992); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnDeleteDownloadFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnDeleteDownloadFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnDeleteDownloadFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 3008); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 3008); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 3008); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadSharedFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadSharedFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadSharedFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 3024); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 3024); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 3024); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnWriteSharedFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnWriteSharedFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnWriteSharedFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 3040); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 3040); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 3040); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnRequestComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRequestComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRequestComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 3056); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 3056); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 3056); }
     }
 
     /// <summary>
     /// DelegateProperty: __SteamDLCCallback__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SteamDLCCallback__Delegate
+    public unsafe BmSDK.FScriptDelegate __SteamDLCCallback__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 3072); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 3072); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 3072); }
     }
 }

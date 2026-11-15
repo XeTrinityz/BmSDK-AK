@@ -601,36 +601,36 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
     /// <summary>
     /// DelegateProperty: OnStartSpeech
     /// </summary>
-    public unsafe System.IntPtr OnStartSpeech
+    public unsafe BmSDK.FScriptDelegate OnStartSpeech
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 164); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 164); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 164); }
     }
 
     /// <summary>
     /// DelegateProperty: OnStopSpeech
     /// </summary>
-    public unsafe System.IntPtr OnStopSpeech
+    public unsafe BmSDK.FScriptDelegate OnStopSpeech
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 180); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 180); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 180); }
     }
 
     /// <summary>
     /// DelegateProperty: OnStartDialogueLine
     /// </summary>
-    public unsafe System.IntPtr OnStartDialogueLine
+    public unsafe BmSDK.FScriptDelegate OnStartDialogueLine
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 196); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 196); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 196); }
     }
 
     /// <summary>
     /// DelegateProperty: OnStopDialogueLine
     /// </summary>
-    public unsafe System.IntPtr OnStopDialogueLine
+    public unsafe BmSDK.FScriptDelegate OnStopDialogueLine
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 212); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 212); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 212); }
     }
 

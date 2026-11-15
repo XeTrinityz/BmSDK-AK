@@ -652,36 +652,36 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
     /// <summary>
     /// DelegateProperty: __OnCacheLoadComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnCacheLoadComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnCacheLoadComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 188); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 188); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 188); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnCacheSaveComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnCacheSaveComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnCacheSaveComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 204); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 204); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 204); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnCacheDeleteComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnCacheDeleteComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnCacheDeleteComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 220); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 220); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 220); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnCleanupObsoleteInternal__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnCleanupObsoleteInternal__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnCleanupObsoleteInternal__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 236); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 236); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 236); }
     }
 

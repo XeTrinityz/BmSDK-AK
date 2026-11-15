@@ -31,7 +31,7 @@ public partial interface OnlineSuppliedUIInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearShowOnlineStatsUICompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearShowOnlineStatsUICompleteDelegate(System.IntPtr ShowOnlineStatsUICompleteDelegate)
+    public unsafe virtual void ClearShowOnlineStatsUICompleteDelegate(BmSDK.FScriptDelegate ShowOnlineStatsUICompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearShowOnlineStatsUICompleteDelegate, "Engine.OnlineSuppliedUIInterface.ClearShowOnlineStatsUICompleteDelegate", ((BmSDK.GameObject)this));
@@ -46,7 +46,7 @@ public partial interface OnlineSuppliedUIInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddShowOnlineStatsUICompleteDelegate
     /// </summary>
-    public unsafe virtual void AddShowOnlineStatsUICompleteDelegate(System.IntPtr ShowOnlineStatsUICompleteDelegate)
+    public unsafe virtual void AddShowOnlineStatsUICompleteDelegate(BmSDK.FScriptDelegate ShowOnlineStatsUICompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddShowOnlineStatsUICompleteDelegate, "Engine.OnlineSuppliedUIInterface.AddShowOnlineStatsUICompleteDelegate", ((BmSDK.GameObject)this));

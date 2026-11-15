@@ -78,7 +78,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearDeleteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteDownloadFileCompleteDelegate(System.IntPtr DeleteDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearDeleteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate DeleteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearDeleteDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -93,7 +93,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddDeleteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteDownloadFileCompleteDelegate(System.IntPtr DeleteDownloadFileCompleteDelegate)
+    public unsafe virtual void AddDeleteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate DeleteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.AddDeleteDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -141,7 +141,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearWriteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteDownloadFileCompleteDelegate(System.IntPtr WriteDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearWriteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate WriteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearWriteDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -156,7 +156,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddWriteDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteDownloadFileCompleteDelegate(System.IntPtr WriteDownloadFileCompleteDelegate)
+    public unsafe virtual void AddWriteDownloadFileCompleteDelegate(BmSDK.FScriptDelegate WriteDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.AddWriteDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -207,7 +207,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadDownloadFileCompleteDelegate(System.IntPtr ReadDownloadFileCompleteDelegate)
+    public unsafe virtual void ClearReadDownloadFileCompleteDelegate(BmSDK.FScriptDelegate ReadDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearReadDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -222,7 +222,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadDownloadFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadDownloadFileCompleteDelegate(System.IntPtr ReadDownloadFileCompleteDelegate)
+    public unsafe virtual void AddReadDownloadFileCompleteDelegate(BmSDK.FScriptDelegate ReadDownloadFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadDownloadFileCompleteDelegate, "Engine.UserCloudFileInterface.AddReadDownloadFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -322,7 +322,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearDeleteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteUserFileCompleteDelegate(System.IntPtr DeleteUserFileCompleteDelegate)
+    public unsafe virtual void ClearDeleteUserFileCompleteDelegate(BmSDK.FScriptDelegate DeleteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteUserFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearDeleteUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -337,7 +337,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddDeleteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteUserFileCompleteDelegate(System.IntPtr DeleteUserFileCompleteDelegate)
+    public unsafe virtual void AddDeleteUserFileCompleteDelegate(BmSDK.FScriptDelegate DeleteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteUserFileCompleteDelegate, "Engine.UserCloudFileInterface.AddDeleteUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -391,7 +391,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearWriteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteUserFileCompleteDelegate(System.IntPtr WriteUserFileCompleteDelegate)
+    public unsafe virtual void ClearWriteUserFileCompleteDelegate(BmSDK.FScriptDelegate WriteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteUserFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearWriteUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -406,7 +406,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddWriteUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteUserFileCompleteDelegate(System.IntPtr WriteUserFileCompleteDelegate)
+    public unsafe virtual void AddWriteUserFileCompleteDelegate(BmSDK.FScriptDelegate WriteUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteUserFileCompleteDelegate, "Engine.UserCloudFileInterface.AddWriteUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -459,7 +459,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadUserFileCompleteDelegate(System.IntPtr ReadUserFileCompleteDelegate)
+    public unsafe virtual void ClearReadUserFileCompleteDelegate(BmSDK.FScriptDelegate ReadUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadUserFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearReadUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -474,7 +474,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadUserFileCompleteDelegate(System.IntPtr ReadUserFileCompleteDelegate)
+    public unsafe virtual void AddReadUserFileCompleteDelegate(BmSDK.FScriptDelegate ReadUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadUserFileCompleteDelegate, "Engine.UserCloudFileInterface.AddReadUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -543,7 +543,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearEnumerateUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearEnumerateUserFileCompleteDelegate(System.IntPtr EnumerateUserFileCompleteDelegate)
+    public unsafe virtual void ClearEnumerateUserFileCompleteDelegate(BmSDK.FScriptDelegate EnumerateUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearEnumerateUserFileCompleteDelegate, "Engine.UserCloudFileInterface.ClearEnumerateUserFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -558,7 +558,7 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddEnumerateUserFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddEnumerateUserFileCompleteDelegate(System.IntPtr EnumerateUserFileCompleteDelegate)
+    public unsafe virtual void AddEnumerateUserFileCompleteDelegate(BmSDK.FScriptDelegate EnumerateUserFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddEnumerateUserFileCompleteDelegate, "Engine.UserCloudFileInterface.AddEnumerateUserFileCompleteDelegate", ((BmSDK.GameObject)this));

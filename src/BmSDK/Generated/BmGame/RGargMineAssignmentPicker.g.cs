@@ -169,7 +169,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, System.IntPtr NewMineAssignmentFound, System.IntPtr NewMineAssignmentFailed)
+    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, BmSDK.FScriptDelegate NewMineAssignmentFound, BmSDK.FScriptDelegate NewMineAssignmentFailed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGargMineAssignmentPicker.Init", this);
@@ -286,18 +286,18 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// <summary>
     /// DelegateProperty: __MineAssignmentFound__Delegate
     /// </summary>
-    public unsafe System.IntPtr __MineAssignmentFound__Delegate
+    public unsafe BmSDK.FScriptDelegate __MineAssignmentFound__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 
     /// <summary>
     /// DelegateProperty: __MineAssignmentFailed__Delegate
     /// </summary>
-    public unsafe System.IntPtr __MineAssignmentFailed__Delegate
+    public unsafe BmSDK.FScriptDelegate __MineAssignmentFailed__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 148); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 148); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 148); }
     }
 }

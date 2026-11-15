@@ -77,7 +77,7 @@ public partial interface OnlineVoiceInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearRecognitionCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearRecognitionCompleteDelegate(byte LocalUserNum, System.IntPtr RecognitionDelegate)
+    public unsafe virtual void ClearRecognitionCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate RecognitionDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRecognitionCompleteDelegate, "Engine.OnlineVoiceInterface.ClearRecognitionCompleteDelegate", ((BmSDK.GameObject)this));
@@ -93,7 +93,7 @@ public partial interface OnlineVoiceInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddRecognitionCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRecognitionCompleteDelegate(byte LocalUserNum, System.IntPtr RecognitionDelegate)
+    public unsafe virtual void AddRecognitionCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate RecognitionDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRecognitionCompleteDelegate, "Engine.OnlineVoiceInterface.AddRecognitionCompleteDelegate", ((BmSDK.GameObject)this));
@@ -199,7 +199,7 @@ public partial interface OnlineVoiceInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearPlayerTalkingDelegate
     /// </summary>
-    public unsafe virtual void ClearPlayerTalkingDelegate(System.IntPtr TalkerDelegate)
+    public unsafe virtual void ClearPlayerTalkingDelegate(BmSDK.FScriptDelegate TalkerDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPlayerTalkingDelegate, "Engine.OnlineVoiceInterface.ClearPlayerTalkingDelegate", ((BmSDK.GameObject)this));
@@ -214,7 +214,7 @@ public partial interface OnlineVoiceInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddPlayerTalkingDelegate
     /// </summary>
-    public unsafe virtual void AddPlayerTalkingDelegate(System.IntPtr TalkerDelegate)
+    public unsafe virtual void AddPlayerTalkingDelegate(BmSDK.FScriptDelegate TalkerDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPlayerTalkingDelegate, "Engine.OnlineVoiceInterface.AddPlayerTalkingDelegate", ((BmSDK.GameObject)this));

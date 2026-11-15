@@ -64,7 +64,7 @@ public partial interface OnlineCustomContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FStringArg Category = default)
+    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, BmSDK.FScriptDelegate dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FStringArg Category = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentInterface.StartCustomContentRequest", ((BmSDK.GameObject)this));

@@ -526,9 +526,9 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// <summary>
     /// DelegateProperty: __OnRefreshComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRefreshComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRefreshComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 316); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 316); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 316); }
     }
 }

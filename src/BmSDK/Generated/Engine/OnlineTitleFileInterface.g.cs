@@ -14,7 +14,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearRequestTitleFileListCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearRequestTitleFileListCompleteDelegate(System.IntPtr RequestTitleFileListDelegate)
+    public unsafe virtual void ClearRequestTitleFileListCompleteDelegate(BmSDK.FScriptDelegate RequestTitleFileListDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRequestTitleFileListCompleteDelegate, "Engine.OnlineTitleFileInterface.ClearRequestTitleFileListCompleteDelegate", ((BmSDK.GameObject)this));
@@ -29,7 +29,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddRequestTitleFileListCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRequestTitleFileListCompleteDelegate(System.IntPtr RequestTitleFileListDelegate)
+    public unsafe virtual void AddRequestTitleFileListCompleteDelegate(BmSDK.FScriptDelegate RequestTitleFileListDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRequestTitleFileListCompleteDelegate, "Engine.OnlineTitleFileInterface.AddRequestTitleFileListCompleteDelegate", ((BmSDK.GameObject)this));
@@ -138,7 +138,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadTitleFileCompleteDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void ClearReadTitleFileCompleteDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadTitleFileCompleteDelegate, "Engine.OnlineTitleFileInterface.ClearReadTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -153,7 +153,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadTitleFileCompleteDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void AddReadTitleFileCompleteDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadTitleFileCompleteDelegate, "Engine.OnlineTitleFileInterface.AddReadTitleFileCompleteDelegate", ((BmSDK.GameObject)this));

@@ -107,7 +107,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearPartyMembersInfoChangedDelegate
     /// </summary>
-    public unsafe virtual void ClearPartyMembersInfoChangedDelegate(byte LocalUserNum, System.IntPtr PartyMembersInfoChangedDelegate)
+    public unsafe virtual void ClearPartyMembersInfoChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate PartyMembersInfoChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPartyMembersInfoChangedDelegate, "Engine.OnlinePartyChatInterface.ClearPartyMembersInfoChangedDelegate", ((BmSDK.GameObject)this));
@@ -123,7 +123,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddPartyMembersInfoChangedDelegate
     /// </summary>
-    public unsafe virtual void AddPartyMembersInfoChangedDelegate(byte LocalUserNum, System.IntPtr PartyMembersInfoChangedDelegate)
+    public unsafe virtual void AddPartyMembersInfoChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate PartyMembersInfoChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPartyMembersInfoChangedDelegate, "Engine.OnlinePartyChatInterface.AddPartyMembersInfoChangedDelegate", ((BmSDK.GameObject)this));
@@ -160,7 +160,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearPartyMemberListChangedDelegate
     /// </summary>
-    public unsafe virtual void ClearPartyMemberListChangedDelegate(byte LocalUserNum, System.IntPtr PartyMemberListChangedDelegate)
+    public unsafe virtual void ClearPartyMemberListChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate PartyMemberListChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPartyMemberListChangedDelegate, "Engine.OnlinePartyChatInterface.ClearPartyMemberListChangedDelegate", ((BmSDK.GameObject)this));
@@ -176,7 +176,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddPartyMemberListChangedDelegate
     /// </summary>
-    public unsafe virtual void AddPartyMemberListChangedDelegate(byte LocalUserNum, System.IntPtr PartyMemberListChangedDelegate)
+    public unsafe virtual void AddPartyMemberListChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate PartyMemberListChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPartyMemberListChangedDelegate, "Engine.OnlinePartyChatInterface.AddPartyMemberListChangedDelegate", ((BmSDK.GameObject)this));
@@ -241,7 +241,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearSendPartyGameInvitesCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearSendPartyGameInvitesCompleteDelegate(byte LocalUserNum, System.IntPtr SendPartyGameInvitesCompleteDelegate)
+    public unsafe virtual void ClearSendPartyGameInvitesCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate SendPartyGameInvitesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearSendPartyGameInvitesCompleteDelegate, "Engine.OnlinePartyChatInterface.ClearSendPartyGameInvitesCompleteDelegate", ((BmSDK.GameObject)this));
@@ -257,7 +257,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddSendPartyGameInvitesCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddSendPartyGameInvitesCompleteDelegate(byte LocalUserNum, System.IntPtr SendPartyGameInvitesCompleteDelegate)
+    public unsafe virtual void AddSendPartyGameInvitesCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate SendPartyGameInvitesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSendPartyGameInvitesCompleteDelegate, "Engine.OnlinePartyChatInterface.AddSendPartyGameInvitesCompleteDelegate", ((BmSDK.GameObject)this));

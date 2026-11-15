@@ -715,9 +715,9 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
     /// <summary>
     /// DelegateProperty: __OnBladeKeyboardFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnBladeKeyboardFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnBladeKeyboardFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 336); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 336); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 336); }
     }
 }

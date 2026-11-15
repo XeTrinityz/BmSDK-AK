@@ -403,7 +403,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearServerConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void ClearServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
+    public unsafe virtual void ClearServerConnectionCloseDelegate(BmSDK.FScriptDelegate ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerConnectionCloseDelegate, "Engine.OnlineAuthInterface.ClearServerConnectionCloseDelegate", ((BmSDK.GameObject)this));
@@ -418,7 +418,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddServerConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void AddServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
+    public unsafe virtual void AddServerConnectionCloseDelegate(BmSDK.FScriptDelegate ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerConnectionCloseDelegate, "Engine.OnlineAuthInterface.AddServerConnectionCloseDelegate", ((BmSDK.GameObject)this));
@@ -448,7 +448,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearClientConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void ClearClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
+    public unsafe virtual void ClearClientConnectionCloseDelegate(BmSDK.FScriptDelegate ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientConnectionCloseDelegate, "Engine.OnlineAuthInterface.ClearClientConnectionCloseDelegate", ((BmSDK.GameObject)this));
@@ -463,7 +463,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddClientConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void AddClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
+    public unsafe virtual void AddClientConnectionCloseDelegate(BmSDK.FScriptDelegate ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientConnectionCloseDelegate, "Engine.OnlineAuthInterface.AddClientConnectionCloseDelegate", ((BmSDK.GameObject)this));
@@ -493,7 +493,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearServerAuthRetryRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
+    public unsafe virtual void ClearServerAuthRetryRequestDelegate(BmSDK.FScriptDelegate ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRetryRequestDelegate, "Engine.OnlineAuthInterface.ClearServerAuthRetryRequestDelegate", ((BmSDK.GameObject)this));
@@ -508,7 +508,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddServerAuthRetryRequestDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
+    public unsafe virtual void AddServerAuthRetryRequestDelegate(BmSDK.FScriptDelegate ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRetryRequestDelegate, "Engine.OnlineAuthInterface.AddServerAuthRetryRequestDelegate", ((BmSDK.GameObject)this));
@@ -538,7 +538,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearClientAuthEndSessionRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
+    public unsafe virtual void ClearClientAuthEndSessionRequestDelegate(BmSDK.FScriptDelegate ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthEndSessionRequestDelegate, "Engine.OnlineAuthInterface.ClearClientAuthEndSessionRequestDelegate", ((BmSDK.GameObject)this));
@@ -553,7 +553,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddClientAuthEndSessionRequestDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
+    public unsafe virtual void AddClientAuthEndSessionRequestDelegate(BmSDK.FScriptDelegate ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthEndSessionRequestDelegate, "Engine.OnlineAuthInterface.AddClientAuthEndSessionRequestDelegate", ((BmSDK.GameObject)this));
@@ -583,7 +583,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearServerAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
+    public unsafe virtual void ClearServerAuthCompleteDelegate(BmSDK.FScriptDelegate ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthCompleteDelegate, "Engine.OnlineAuthInterface.ClearServerAuthCompleteDelegate", ((BmSDK.GameObject)this));
@@ -598,7 +598,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddServerAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
+    public unsafe virtual void AddServerAuthCompleteDelegate(BmSDK.FScriptDelegate ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthCompleteDelegate, "Engine.OnlineAuthInterface.AddServerAuthCompleteDelegate", ((BmSDK.GameObject)this));
@@ -632,7 +632,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearClientAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
+    public unsafe virtual void ClearClientAuthCompleteDelegate(BmSDK.FScriptDelegate ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthCompleteDelegate, "Engine.OnlineAuthInterface.ClearClientAuthCompleteDelegate", ((BmSDK.GameObject)this));
@@ -647,7 +647,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddClientAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
+    public unsafe virtual void AddClientAuthCompleteDelegate(BmSDK.FScriptDelegate ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthCompleteDelegate, "Engine.OnlineAuthInterface.AddClientAuthCompleteDelegate", ((BmSDK.GameObject)this));
@@ -681,7 +681,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearServerAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
+    public unsafe virtual void ClearServerAuthResponseDelegate(BmSDK.FScriptDelegate ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthResponseDelegate, "Engine.OnlineAuthInterface.ClearServerAuthResponseDelegate", ((BmSDK.GameObject)this));
@@ -696,7 +696,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddServerAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
+    public unsafe virtual void AddServerAuthResponseDelegate(BmSDK.FScriptDelegate ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthResponseDelegate, "Engine.OnlineAuthInterface.AddServerAuthResponseDelegate", ((BmSDK.GameObject)this));
@@ -728,7 +728,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearClientAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
+    public unsafe virtual void ClearClientAuthResponseDelegate(BmSDK.FScriptDelegate ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthResponseDelegate, "Engine.OnlineAuthInterface.ClearClientAuthResponseDelegate", ((BmSDK.GameObject)this));
@@ -743,7 +743,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddClientAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
+    public unsafe virtual void AddClientAuthResponseDelegate(BmSDK.FScriptDelegate ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthResponseDelegate, "Engine.OnlineAuthInterface.AddClientAuthResponseDelegate", ((BmSDK.GameObject)this));
@@ -775,7 +775,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearServerAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
+    public unsafe virtual void ClearServerAuthRequestDelegate(BmSDK.FScriptDelegate ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRequestDelegate, "Engine.OnlineAuthInterface.ClearServerAuthRequestDelegate", ((BmSDK.GameObject)this));
@@ -790,7 +790,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddServerAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
+    public unsafe virtual void AddServerAuthRequestDelegate(BmSDK.FScriptDelegate ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRequestDelegate, "Engine.OnlineAuthInterface.AddServerAuthRequestDelegate", ((BmSDK.GameObject)this));
@@ -823,7 +823,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearClientAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
+    public unsafe virtual void ClearClientAuthRequestDelegate(BmSDK.FScriptDelegate ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthRequestDelegate, "Engine.OnlineAuthInterface.ClearClientAuthRequestDelegate", ((BmSDK.GameObject)this));
@@ -838,7 +838,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddClientAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
+    public unsafe virtual void AddClientAuthRequestDelegate(BmSDK.FScriptDelegate ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthRequestDelegate, "Engine.OnlineAuthInterface.AddClientAuthRequestDelegate", ((BmSDK.GameObject)this));
@@ -871,7 +871,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearAuthReadyDelegate
     /// </summary>
-    public unsafe virtual void ClearAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
+    public unsafe virtual void ClearAuthReadyDelegate(BmSDK.FScriptDelegate AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAuthReadyDelegate, "Engine.OnlineAuthInterface.ClearAuthReadyDelegate", ((BmSDK.GameObject)this));
@@ -886,7 +886,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddAuthReadyDelegate
     /// </summary>
-    public unsafe virtual void AddAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
+    public unsafe virtual void AddAuthReadyDelegate(BmSDK.FScriptDelegate AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAuthReadyDelegate, "Engine.OnlineAuthInterface.AddAuthReadyDelegate", ((BmSDK.GameObject)this));

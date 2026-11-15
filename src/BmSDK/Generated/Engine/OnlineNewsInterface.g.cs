@@ -30,7 +30,7 @@ public partial interface OnlineNewsInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadNewsCompletedDelegate
     /// </summary>
-    public unsafe virtual void ClearReadNewsCompletedDelegate(System.IntPtr ReadNewsDelegate)
+    public unsafe virtual void ClearReadNewsCompletedDelegate(BmSDK.FScriptDelegate ReadNewsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadNewsCompletedDelegate, "Engine.OnlineNewsInterface.ClearReadNewsCompletedDelegate", ((BmSDK.GameObject)this));
@@ -45,7 +45,7 @@ public partial interface OnlineNewsInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadNewsCompletedDelegate
     /// </summary>
-    public unsafe virtual void AddReadNewsCompletedDelegate(System.IntPtr ReadNewsDelegate)
+    public unsafe virtual void AddReadNewsCompletedDelegate(BmSDK.FScriptDelegate ReadNewsDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadNewsCompletedDelegate, "Engine.OnlineNewsInterface.AddReadNewsCompletedDelegate", ((BmSDK.GameObject)this));

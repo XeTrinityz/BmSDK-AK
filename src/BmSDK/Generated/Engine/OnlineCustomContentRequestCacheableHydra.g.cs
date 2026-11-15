@@ -240,7 +240,7 @@ public partial class OnlineCustomContentRequestCacheableHydra : BmSDK.Engine.Onl
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe override void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dRequestCustomContentComplete)
+    public unsafe override void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, BmSDK.FScriptDelegate dRequestCustomContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequestCacheableHydra.StartCustomContentRequest", this);

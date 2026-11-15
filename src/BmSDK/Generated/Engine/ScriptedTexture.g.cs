@@ -114,9 +114,9 @@ public partial class ScriptedTexture : BmSDK.Engine.TextureRenderTarget2D, BmSDK
     /// <summary>
     /// DelegateProperty: __Render__Delegate
     /// </summary>
-    public unsafe System.IntPtr __Render__Delegate
+    public unsafe BmSDK.FScriptDelegate __Render__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 352); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 352); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 352); }
     }
 }

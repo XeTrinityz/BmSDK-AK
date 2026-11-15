@@ -667,18 +667,18 @@ public partial class RGFxMovieUI_BatCave : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
     /// <summary>
     /// DelegateProperty: __CustomManifestLoadedSC__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomManifestLoadedSC__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomManifestLoadedSC__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1160); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1160); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1160); }
     }
 
     /// <summary>
     /// DelegateProperty: __CustomContentLoadedSC__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomContentLoadedSC__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomContentLoadedSC__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1176); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1176); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1176); }
     }
 }

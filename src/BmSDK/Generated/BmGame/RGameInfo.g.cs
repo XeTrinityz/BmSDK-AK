@@ -1742,7 +1742,7 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     /// <summary>
     /// Function: StoreContentInitiateQuery
     /// </summary>
-    public unsafe virtual bool StoreContentInitiateQuery(int nControllerId, System.IntPtr fnCallback = default, bool bForceUpdate = default, bool bDebugData = default)
+    public unsafe virtual bool StoreContentInitiateQuery(int nControllerId, BmSDK.FScriptDelegate fnCallback = default, bool bForceUpdate = default, bool bDebugData = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StoreContentInitiateQuery, "BmGame.RGameInfo.StoreContentInitiateQuery", this);
@@ -12344,9 +12344,9 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: StoreContentQueryCallback
     /// </summary>
-    public unsafe System.IntPtr StoreContentQueryCallback
+    public unsafe BmSDK.FScriptDelegate StoreContentQueryCallback
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 4300); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 4300); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4300); }
     }
 
@@ -12461,27 +12461,27 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __SortByIndexDist__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByIndexDist__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByIndexDist__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 4496); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 4496); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4496); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnStoreContentQueryComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnStoreContentQueryComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnStoreContentQueryComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 4512); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 4512); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4512); }
     }
 
     /// <summary>
     /// DelegateProperty: __ContentBeaconManifestLoaded__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ContentBeaconManifestLoaded__Delegate
+    public unsafe BmSDK.FScriptDelegate __ContentBeaconManifestLoaded__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 4528); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 4528); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4528); }
     }
 }

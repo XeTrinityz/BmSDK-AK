@@ -82,7 +82,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: ClearDelegate
     /// </summary>
-    public unsafe virtual void ClearDelegate(int DelegateType, System.IntPtr InDelegate)
+    public unsafe virtual void ClearDelegate(int DelegateType, BmSDK.FScriptDelegate InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDelegate, "Engine.PlatformInterfaceBase.ClearDelegate", this);
@@ -98,7 +98,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: AddDelegate
     /// </summary>
-    public unsafe virtual void AddDelegate(int DelegateType, System.IntPtr InDelegate)
+    public unsafe virtual void AddDelegate(int DelegateType, BmSDK.FScriptDelegate InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDelegate, "Engine.PlatformInterfaceBase.AddDelegate", this);
@@ -340,9 +340,9 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __PlatformInterfaceDelegate__Delegate
     /// </summary>
-    public unsafe System.IntPtr __PlatformInterfaceDelegate__Delegate
+    public unsafe BmSDK.FScriptDelegate __PlatformInterfaceDelegate__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 100); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 100); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 100); }
     }
 
@@ -355,9 +355,9 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         /// <summary>
         /// ArrayProperty: Delegates
         /// </summary>
-        public unsafe BmSDK.TArray<System.IntPtr> Delegates
+        public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> Delegates
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 0); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 0); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 0); }; }
         }
     }

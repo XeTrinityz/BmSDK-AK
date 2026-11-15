@@ -3685,7 +3685,7 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     /// <summary>
     /// Function: SetPause
     /// </summary>
-    public unsafe virtual bool SetPause(bool bPause, System.IntPtr CanUnpauseDelegate = default)
+    public unsafe virtual bool SetPause(bool bPause, BmSDK.FScriptDelegate CanUnpauseDelegate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPause, "Engine.PlayerController.SetPause", this);
@@ -6360,9 +6360,9 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
         /// <summary>
         /// DelegateProperty: MatchDelegate
         /// </summary>
-        public unsafe System.IntPtr MatchDelegate
+        public unsafe BmSDK.FScriptDelegate MatchDelegate
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 32); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 32); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 32); }; }
         }
 
@@ -7586,18 +7586,18 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
     /// <summary>
     /// DelegateProperty: __CanUnpause__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CanUnpause__Delegate
+    public unsafe BmSDK.FScriptDelegate __CanUnpause__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1812); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1812); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1812); }
     }
 
     /// <summary>
     /// DelegateProperty: __InputMatchDelegate__Delegate
     /// </summary>
-    public unsafe System.IntPtr __InputMatchDelegate__Delegate
+    public unsafe BmSDK.FScriptDelegate __InputMatchDelegate__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1828); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1828); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1828); }
     }
 }

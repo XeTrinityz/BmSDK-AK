@@ -365,9 +365,9 @@ public partial class RProjectile_GrenadeBase : BmSDK.Engine.Projectile, BmSDK.IG
     /// <summary>
     /// DelegateProperty: __ExplodedCallback__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ExplodedCallback__Delegate
+    public unsafe BmSDK.FScriptDelegate __ExplodedCallback__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 976); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 976); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 976); }
     }
 }

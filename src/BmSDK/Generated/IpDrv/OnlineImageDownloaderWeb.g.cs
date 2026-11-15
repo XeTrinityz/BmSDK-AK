@@ -234,9 +234,9 @@ public partial class OnlineImageDownloaderWeb : BmSDK.GameObject, BmSDK.IGameObj
     /// <summary>
     /// DelegateProperty: __OnOnlineImageDownloaded__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnOnlineImageDownloaded__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnOnlineImageDownloaded__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 104); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 104); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 104); }
     }
 

@@ -258,9 +258,9 @@ public partial class RSpecialMoveInstance_Shimmy : BmSDK.BmGame.RSpecialMoveInst
     /// <summary>
     /// DelegateProperty: __FirstShimmyAnimFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __FirstShimmyAnimFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __FirstShimmyAnimFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1020); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1020); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1020); }
     }
 }

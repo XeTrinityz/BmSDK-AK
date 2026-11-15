@@ -287,9 +287,9 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// <summary>
     /// DelegateProperty: __CheekyOverride__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CheekyOverride__Delegate
+    public unsafe BmSDK.FScriptDelegate __CheekyOverride__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 412); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 412); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 412); }
     }
 }

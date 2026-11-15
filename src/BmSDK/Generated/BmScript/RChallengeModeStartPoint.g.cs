@@ -879,9 +879,9 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// <summary>
     /// DelegateProperty: __CompleteRestartOrAbort__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CompleteRestartOrAbort__Delegate
+    public unsafe BmSDK.FScriptDelegate __CompleteRestartOrAbort__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1540); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1540); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1540); }
     }
 }

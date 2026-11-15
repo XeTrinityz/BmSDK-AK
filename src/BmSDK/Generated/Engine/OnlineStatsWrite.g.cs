@@ -320,9 +320,9 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
     /// <summary>
     /// DelegateProperty: __OnStatsWriteComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnStatsWriteComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnStatsWriteComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 168); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 168); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 168); }
     }
 }

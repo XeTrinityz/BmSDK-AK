@@ -5033,9 +5033,9 @@ public partial class RPawnCharacter : BmSDK.BmGame.RPawn, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __OnPlayedQueuedTransition__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnPlayedQueuedTransition__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnPlayedQueuedTransition__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 2644); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 2644); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 2644); }
     }
 }

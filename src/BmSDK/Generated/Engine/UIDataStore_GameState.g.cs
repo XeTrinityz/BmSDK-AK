@@ -90,9 +90,9 @@ public partial class UIDataStore_GameState : BmSDK.Engine.UIDataStore, BmSDK.IGa
     /// <summary>
     /// DelegateProperty: __OnRefreshDataFieldValue__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRefreshDataFieldValue__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRefreshDataFieldValue__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 148); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 148); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 148); }
     }
 

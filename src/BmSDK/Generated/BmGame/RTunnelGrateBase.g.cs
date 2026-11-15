@@ -1643,18 +1643,18 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
     /// <summary>
     /// DelegateProperty: __SortByDotProd__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByDotProd__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByDotProd__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1056); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1056); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1056); }
     }
 
     /// <summary>
     /// DelegateProperty: __SortByDotProdBiasedAgainstDeadEnds__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByDotProdBiasedAgainstDeadEnds__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByDotProdBiasedAgainstDeadEnds__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1072); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1072); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1072); }
     }
 }

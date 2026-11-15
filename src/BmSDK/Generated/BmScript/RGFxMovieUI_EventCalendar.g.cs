@@ -1045,27 +1045,27 @@ public partial class RGFxMovieUI_EventCalendar : BmSDK.BmGame.RGFxMovieUI, BmSDK
     /// <summary>
     /// DelegateProperty: __CustomManifestLoadedEC__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomManifestLoadedEC__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomManifestLoadedEC__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1176); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1176); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1176); }
     }
 
     /// <summary>
     /// DelegateProperty: __CustomContentLoadedEC__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomContentLoadedEC__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomContentLoadedEC__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1192); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1192); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1192); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnGetSteamDLCAppInfoComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnGetSteamDLCAppInfoComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnGetSteamDLCAppInfoComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1208); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1208); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1208); }
     }
 }

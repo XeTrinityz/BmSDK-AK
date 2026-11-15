@@ -2654,9 +2654,9 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __OnPostAdvance__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnPostAdvance__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnPostAdvance__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 548); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 548); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 548); }
     }
 }

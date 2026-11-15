@@ -189,7 +189,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddDeleteTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteTitleFileCompleteDelegate(System.IntPtr DeleteCompleteDelegate)
+    public unsafe virtual void AddDeleteTitleFileCompleteDelegate(BmSDK.FScriptDelegate DeleteCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.AddDeleteTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -204,7 +204,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearDeleteTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteTitleFileCompleteDelegate(System.IntPtr DeleteCompleteDelegate)
+    public unsafe virtual void ClearDeleteTitleFileCompleteDelegate(BmSDK.FScriptDelegate DeleteCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.ClearDeleteTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -237,7 +237,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearSaveTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearSaveTitleFileCompleteDelegate(System.IntPtr SaveCompleteDelegate)
+    public unsafe virtual void ClearSaveTitleFileCompleteDelegate(BmSDK.FScriptDelegate SaveCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearSaveTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.ClearSaveTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -252,7 +252,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddSaveTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddSaveTitleFileCompleteDelegate(System.IntPtr SaveCompleteDelegate)
+    public unsafe virtual void AddSaveTitleFileCompleteDelegate(BmSDK.FScriptDelegate SaveCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSaveTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.AddSaveTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -305,7 +305,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearLoadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearLoadTitleFileCompleteDelegate(System.IntPtr LoadCompleteDelegate)
+    public unsafe virtual void ClearLoadTitleFileCompleteDelegate(BmSDK.FScriptDelegate LoadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoadTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.ClearLoadTitleFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -320,7 +320,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddLoadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddLoadTitleFileCompleteDelegate(System.IntPtr LoadCompleteDelegate)
+    public unsafe virtual void AddLoadTitleFileCompleteDelegate(BmSDK.FScriptDelegate LoadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoadTitleFileCompleteDelegate, "Engine.OnlineTitleFileCacheInterface.AddLoadTitleFileCompleteDelegate", ((BmSDK.GameObject)this));

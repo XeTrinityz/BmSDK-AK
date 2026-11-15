@@ -172,9 +172,9 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
     /// <summary>
     /// DelegateProperty: __CrcDownloadComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CrcDownloadComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __CrcDownloadComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 192); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 192); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 192); }
     }
 }

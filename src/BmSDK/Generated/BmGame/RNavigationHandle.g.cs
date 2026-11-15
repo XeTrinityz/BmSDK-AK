@@ -2578,36 +2578,36 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
     /// <summary>
     /// DelegateProperty: __PathSuccess__Delegate
     /// </summary>
-    public unsafe System.IntPtr __PathSuccess__Delegate
+    public unsafe BmSDK.FScriptDelegate __PathSuccess__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 864); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 864); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 864); }
     }
 
     /// <summary>
     /// DelegateProperty: __PathFailure__Delegate
     /// </summary>
-    public unsafe System.IntPtr __PathFailure__Delegate
+    public unsafe BmSDK.FScriptDelegate __PathFailure__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 880); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 880); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 880); }
     }
 
     /// <summary>
     /// DelegateProperty: __ReachedGoal__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ReachedGoal__Delegate
+    public unsafe BmSDK.FScriptDelegate __ReachedGoal__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 896); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 896); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 896); }
     }
 
     /// <summary>
     /// DelegateProperty: __ReachedEdge__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ReachedEdge__Delegate
+    public unsafe BmSDK.FScriptDelegate __ReachedEdge__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 912); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 912); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 912); }
     }
 

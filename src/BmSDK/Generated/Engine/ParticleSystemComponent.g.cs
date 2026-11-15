@@ -2820,9 +2820,9 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
     /// <summary>
     /// DelegateProperty: __OnSystemFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnSystemFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnSystemFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 956); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 956); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 956); }
     }
 }

@@ -147,7 +147,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dRequestCustomContentComplete)
+    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, BmSDK.FScriptDelegate dRequestCustomContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequest.StartCustomContentRequest", this);
@@ -207,18 +207,18 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// <summary>
     /// DelegateProperty: RequestCustomContentCompleteDelegate
     /// </summary>
-    public unsafe System.IntPtr RequestCustomContentCompleteDelegate
+    public unsafe BmSDK.FScriptDelegate RequestCustomContentCompleteDelegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 116); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 116); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 116); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnRequestCustomContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnRequestCustomContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnRequestCustomContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 }

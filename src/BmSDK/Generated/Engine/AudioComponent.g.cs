@@ -806,9 +806,9 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
     /// <summary>
     /// DelegateProperty: __OnAudioFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnAudioFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnAudioFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 524); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 524); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 524); }
     }
 }

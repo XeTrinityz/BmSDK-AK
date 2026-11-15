@@ -66,7 +66,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearRegisterHostStatGuidCompleteDelegateDelegate
     /// </summary>
-    public unsafe virtual void ClearRegisterHostStatGuidCompleteDelegateDelegate(System.IntPtr RegisterHostStatGuidCompleteDelegate)
+    public unsafe virtual void ClearRegisterHostStatGuidCompleteDelegateDelegate(BmSDK.FScriptDelegate RegisterHostStatGuidCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRegisterHostStatGuidCompleteDelegateDelegate, "Engine.OnlineStatsInterface.ClearRegisterHostStatGuidCompleteDelegateDelegate", ((BmSDK.GameObject)this));
@@ -81,7 +81,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddRegisterHostStatGuidCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddRegisterHostStatGuidCompleteDelegate(System.IntPtr RegisterHostStatGuidCompleteDelegate)
+    public unsafe virtual void AddRegisterHostStatGuidCompleteDelegate(BmSDK.FScriptDelegate RegisterHostStatGuidCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRegisterHostStatGuidCompleteDelegate, "Engine.OnlineStatsInterface.AddRegisterHostStatGuidCompleteDelegate", ((BmSDK.GameObject)this));
@@ -157,7 +157,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearFlushOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearFlushOnlineStatsCompleteDelegate(System.IntPtr FlushOnlineStatsCompleteDelegate)
+    public unsafe virtual void ClearFlushOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate FlushOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFlushOnlineStatsCompleteDelegate, "Engine.OnlineStatsInterface.ClearFlushOnlineStatsCompleteDelegate", ((BmSDK.GameObject)this));
@@ -172,7 +172,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddFlushOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddFlushOnlineStatsCompleteDelegate(System.IntPtr FlushOnlineStatsCompleteDelegate)
+    public unsafe virtual void AddFlushOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate FlushOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFlushOnlineStatsCompleteDelegate, "Engine.OnlineStatsInterface.AddFlushOnlineStatsCompleteDelegate", ((BmSDK.GameObject)this));
@@ -250,7 +250,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadOnlineStatsCompleteDelegate(System.IntPtr ReadOnlineStatsCompleteDelegate)
+    public unsafe virtual void ClearReadOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate ReadOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadOnlineStatsCompleteDelegate, "Engine.OnlineStatsInterface.ClearReadOnlineStatsCompleteDelegate", ((BmSDK.GameObject)this));
@@ -265,7 +265,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadOnlineStatsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadOnlineStatsCompleteDelegate(System.IntPtr ReadOnlineStatsCompleteDelegate)
+    public unsafe virtual void AddReadOnlineStatsCompleteDelegate(BmSDK.FScriptDelegate ReadOnlineStatsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadOnlineStatsCompleteDelegate, "Engine.OnlineStatsInterface.AddReadOnlineStatsCompleteDelegate", ((BmSDK.GameObject)this));

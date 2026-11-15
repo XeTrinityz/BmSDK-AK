@@ -1440,9 +1440,9 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// <summary>
     /// DelegateProperty: __SortById__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortById__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortById__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1744); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1744); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1744); }
     }
 

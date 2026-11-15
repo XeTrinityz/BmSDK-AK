@@ -3291,7 +3291,7 @@ public partial class RPawnVillain : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RSpot
     /// <summary>
     /// Function: PlayBarkFromIndex
     /// </summary>
-    public unsafe virtual bool PlayBarkFromIndex(BmSDK.FName EventType, BmSDK.BmGame.RAlertEventCoordinatorBase AEC, BmSDK.Engine.Actor BarkSubject = default, BmSDK.TArray<BmSDK.BmGame.RBarkFlagBase.FBarkFlag> ExtraFlags = default, BmSDK.BmGame.RBarkFlagBase.EBarkDeliveryType DeliveryType = default, System.IntPtr NewBarkFinished = default)
+    public unsafe virtual bool PlayBarkFromIndex(BmSDK.FName EventType, BmSDK.BmGame.RAlertEventCoordinatorBase AEC, BmSDK.Engine.Actor BarkSubject = default, BmSDK.TArray<BmSDK.BmGame.RBarkFlagBase.FBarkFlag> ExtraFlags = default, BmSDK.BmGame.RBarkFlagBase.EBarkDeliveryType DeliveryType = default, BmSDK.FScriptDelegate NewBarkFinished = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayBarkFromIndex, "BmGame.RPawnVillain.PlayBarkFromIndex", this);

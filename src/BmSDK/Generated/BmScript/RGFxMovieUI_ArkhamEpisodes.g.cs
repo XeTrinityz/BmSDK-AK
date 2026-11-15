@@ -418,9 +418,9 @@ public partial class RGFxMovieUI_ArkhamEpisodes : BmSDK.BmGame.RGFxMovieUI, BmSD
     /// <summary>
     /// DelegateProperty: __SortByUISortId__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByUISortId__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByUISortId__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1132); }
     }
 

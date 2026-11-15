@@ -499,27 +499,27 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
     /// <summary>
     /// DelegateProperty: __ChaseLocationsFound__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ChaseLocationsFound__Delegate
+    public unsafe BmSDK.FScriptDelegate __ChaseLocationsFound__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 196); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 196); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 196); }
     }
 
     /// <summary>
     /// DelegateProperty: __ChaseSearchFailed__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ChaseSearchFailed__Delegate
+    public unsafe BmSDK.FScriptDelegate __ChaseSearchFailed__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 212); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 212); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 212); }
     }
 
     /// <summary>
     /// DelegateProperty: __ChaseSearchInvalidated__Delegate
     /// </summary>
-    public unsafe System.IntPtr __ChaseSearchInvalidated__Delegate
+    public unsafe BmSDK.FScriptDelegate __ChaseSearchInvalidated__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 228); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 228); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 228); }
     }
 

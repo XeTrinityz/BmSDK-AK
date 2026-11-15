@@ -77,7 +77,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// <summary>
     /// Function: SetProcessRequestCompleteDelegate
     /// </summary>
-    public unsafe virtual BmSDK.Engine.HttpRequestInterface SetProcessRequestCompleteDelegate(System.IntPtr ProcessRequestCompleteDelegate)
+    public unsafe virtual BmSDK.Engine.HttpRequestInterface SetProcessRequestCompleteDelegate(BmSDK.FScriptDelegate ProcessRequestCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetProcessRequestCompleteDelegate, "Engine.HttpRequestInterface.SetProcessRequestCompleteDelegate", this);
@@ -91,9 +91,9 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// <summary>
     /// DelegateProperty: __OnProcessRequestComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnProcessRequestComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnProcessRequestComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 84); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 84); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 84); }
     }
 

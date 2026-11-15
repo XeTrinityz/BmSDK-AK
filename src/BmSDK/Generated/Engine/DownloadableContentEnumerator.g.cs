@@ -163,7 +163,7 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
     /// <summary>
     /// Function: ClearFindDLCDelegate
     /// </summary>
-    public unsafe virtual void ClearFindDLCDelegate(System.IntPtr InDelegate)
+    public unsafe virtual void ClearFindDLCDelegate(BmSDK.FScriptDelegate InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFindDLCDelegate, "Engine.DownloadableContentEnumerator.ClearFindDLCDelegate", this);
@@ -178,7 +178,7 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
     /// <summary>
     /// Function: AddFindDLCDelegate
     /// </summary>
-    public unsafe virtual void AddFindDLCDelegate(System.IntPtr InDelegate)
+    public unsafe virtual void AddFindDLCDelegate(BmSDK.FScriptDelegate InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFindDLCDelegate, "Engine.DownloadableContentEnumerator.AddFindDLCDelegate", this);
@@ -302,18 +302,18 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
     /// <summary>
     /// ArrayProperty: FindDLCDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> FindDLCDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> FindDLCDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 116); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 116); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 116); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnFindDLCComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnFindDLCComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnFindDLCComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 }

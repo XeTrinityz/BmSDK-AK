@@ -31,7 +31,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearGetContentPayloadCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearGetContentPayloadCompleteDelegate(System.IntPtr GetContentPayloadCompleteDelegate)
+    public unsafe virtual void ClearGetContentPayloadCompleteDelegate(BmSDK.FScriptDelegate GetContentPayloadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearGetContentPayloadCompleteDelegate, "Engine.OnlineCommunityContentInterface.ClearGetContentPayloadCompleteDelegate", ((BmSDK.GameObject)this));
@@ -46,7 +46,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddGetContentPayloadCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddGetContentPayloadCompleteDelegate(System.IntPtr GetContentPayloadCompleteDelegate)
+    public unsafe virtual void AddGetContentPayloadCompleteDelegate(BmSDK.FScriptDelegate GetContentPayloadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGetContentPayloadCompleteDelegate, "Engine.OnlineCommunityContentInterface.AddGetContentPayloadCompleteDelegate", ((BmSDK.GameObject)this));
@@ -94,7 +94,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearDownloadContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDownloadContentCompleteDelegate(System.IntPtr DownloadContentCompleteDelegate)
+    public unsafe virtual void ClearDownloadContentCompleteDelegate(BmSDK.FScriptDelegate DownloadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDownloadContentCompleteDelegate, "Engine.OnlineCommunityContentInterface.ClearDownloadContentCompleteDelegate", ((BmSDK.GameObject)this));
@@ -109,7 +109,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddDownloadContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDownloadContentCompleteDelegate(System.IntPtr DownloadContentCompleteDelegate)
+    public unsafe virtual void AddDownloadContentCompleteDelegate(BmSDK.FScriptDelegate DownloadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDownloadContentCompleteDelegate, "Engine.OnlineCommunityContentInterface.AddDownloadContentCompleteDelegate", ((BmSDK.GameObject)this));
@@ -156,7 +156,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearUploadContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearUploadContentCompleteDelegate(System.IntPtr UploadContentCompleteDelegate)
+    public unsafe virtual void ClearUploadContentCompleteDelegate(BmSDK.FScriptDelegate UploadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearUploadContentCompleteDelegate, "Engine.OnlineCommunityContentInterface.ClearUploadContentCompleteDelegate", ((BmSDK.GameObject)this));
@@ -171,7 +171,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddUploadContentCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddUploadContentCompleteDelegate(System.IntPtr UploadContentCompleteDelegate)
+    public unsafe virtual void AddUploadContentCompleteDelegate(BmSDK.FScriptDelegate UploadContentCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddUploadContentCompleteDelegate, "Engine.OnlineCommunityContentInterface.AddUploadContentCompleteDelegate", ((BmSDK.GameObject)this));
@@ -236,7 +236,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadFriendsContentListCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadFriendsContentListCompleteDelegate(System.IntPtr ReadFriendsContentListCompleteDelegate)
+    public unsafe virtual void ClearReadFriendsContentListCompleteDelegate(BmSDK.FScriptDelegate ReadFriendsContentListCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadFriendsContentListCompleteDelegate, "Engine.OnlineCommunityContentInterface.ClearReadFriendsContentListCompleteDelegate", ((BmSDK.GameObject)this));
@@ -251,7 +251,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadFriendsContentListCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadFriendsContentListCompleteDelegate(System.IntPtr ReadFriendsContentListCompleteDelegate)
+    public unsafe virtual void AddReadFriendsContentListCompleteDelegate(BmSDK.FScriptDelegate ReadFriendsContentListCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadFriendsContentListCompleteDelegate, "Engine.OnlineCommunityContentInterface.AddReadFriendsContentListCompleteDelegate", ((BmSDK.GameObject)this));
@@ -315,7 +315,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadContentListCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadContentListCompleteDelegate(System.IntPtr ReadContentListCompleteDelegate)
+    public unsafe virtual void ClearReadContentListCompleteDelegate(BmSDK.FScriptDelegate ReadContentListCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadContentListCompleteDelegate, "Engine.OnlineCommunityContentInterface.ClearReadContentListCompleteDelegate", ((BmSDK.GameObject)this));
@@ -330,7 +330,7 @@ public partial interface OnlineCommunityContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadContentListCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadContentListCompleteDelegate(System.IntPtr ReadContentListCompleteDelegate)
+    public unsafe virtual void AddReadContentListCompleteDelegate(BmSDK.FScriptDelegate ReadContentListCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadContentListCompleteDelegate, "Engine.OnlineCommunityContentInterface.AddReadContentListCompleteDelegate", ((BmSDK.GameObject)this));

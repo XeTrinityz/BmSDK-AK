@@ -152,7 +152,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, System.IntPtr NewGrenadeGrateAssignmentFound, System.IntPtr NewGrenadeGrateAssignmentFailed)
+    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, BmSDK.FScriptDelegate NewGrenadeGrateAssignmentFound, BmSDK.FScriptDelegate NewGrenadeGrateAssignmentFailed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGrenadeGrateAssignmentPicker.Init", this);
@@ -252,18 +252,18 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
     /// <summary>
     /// DelegateProperty: __GrenadeGrateAssignmentFound__Delegate
     /// </summary>
-    public unsafe System.IntPtr __GrenadeGrateAssignmentFound__Delegate
+    public unsafe BmSDK.FScriptDelegate __GrenadeGrateAssignmentFound__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 
     /// <summary>
     /// DelegateProperty: __GrenadeGrateAssignmentFailed__Delegate
     /// </summary>
-    public unsafe System.IntPtr __GrenadeGrateAssignmentFailed__Delegate
+    public unsafe BmSDK.FScriptDelegate __GrenadeGrateAssignmentFailed__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 148); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 148); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 148); }
     }
 }

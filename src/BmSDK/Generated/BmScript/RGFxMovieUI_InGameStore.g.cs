@@ -759,18 +759,18 @@ public partial class RGFxMovieUI_InGameStore : BmSDK.BmGame.RGFxMovieUI, BmSDK.I
     /// <summary>
     /// DelegateProperty: __CustomManifestLoadedIGS__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomManifestLoadedIGS__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomManifestLoadedIGS__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1172); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1172); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1172); }
     }
 
     /// <summary>
     /// DelegateProperty: __CustomContentLoadedIGS__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomContentLoadedIGS__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomContentLoadedIGS__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1188); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1188); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1188); }
     }
 }

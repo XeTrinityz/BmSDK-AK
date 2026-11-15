@@ -195,7 +195,7 @@ public partial class RJokerTannoy : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// <summary>
     /// Function: PlayTakedownResponse
     /// </summary>
-    public unsafe virtual bool PlayTakedownResponse(BmSDK.Engine.Actor Subject, BmSDK.FName flag, BmSDK.BmGame.RAlertEventCoordinatorBase owningEvent, BmSDK.TArray<BmSDK.Engine.Actor> extraSpeakers = default, BmSDK.FName nInvestigateTargetFlag = default, bool bForceCanPlay = default, System.IntPtr NewBarkFinished = default)
+    public unsafe virtual bool PlayTakedownResponse(BmSDK.Engine.Actor Subject, BmSDK.FName flag, BmSDK.BmGame.RAlertEventCoordinatorBase owningEvent, BmSDK.TArray<BmSDK.Engine.Actor> extraSpeakers = default, BmSDK.FName nInvestigateTargetFlag = default, bool bForceCanPlay = default, BmSDK.FScriptDelegate NewBarkFinished = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayTakedownResponse, "BmGame.RJokerTannoy.PlayTakedownResponse", this);

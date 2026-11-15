@@ -843,9 +843,9 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __BarkFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __BarkFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __BarkFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 252); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 252); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 252); }
     }
 }

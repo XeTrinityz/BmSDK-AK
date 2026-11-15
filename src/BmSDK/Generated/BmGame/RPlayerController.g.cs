@@ -37518,18 +37518,18 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
     /// <summary>
     /// DelegateProperty: __MostWantedSortById__Delegate
     /// </summary>
-    public unsafe System.IntPtr __MostWantedSortById__Delegate
+    public unsafe BmSDK.FScriptDelegate __MostWantedSortById__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 7408); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 7408); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 7408); }
     }
 
     /// <summary>
     /// DelegateProperty: __SortByMissionId__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByMissionId__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByMissionId__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 7424); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 7424); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 7424); }
     }
 

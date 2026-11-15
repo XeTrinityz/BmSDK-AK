@@ -28,7 +28,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearStorageDeviceChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearStorageDeviceChangeDelegate(System.IntPtr StorageDeviceChangeDelegate)
+    public unsafe virtual void ClearStorageDeviceChangeDelegate(BmSDK.FScriptDelegate StorageDeviceChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearStorageDeviceChangeDelegate, "Engine.OnlineSystemInterface.ClearStorageDeviceChangeDelegate", ((BmSDK.GameObject)this));
@@ -43,7 +43,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddStorageDeviceChangeDelegate
     /// </summary>
-    public unsafe virtual void AddStorageDeviceChangeDelegate(System.IntPtr StorageDeviceChangeDelegate)
+    public unsafe virtual void AddStorageDeviceChangeDelegate(BmSDK.FScriptDelegate StorageDeviceChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddStorageDeviceChangeDelegate, "Engine.OnlineSystemInterface.AddStorageDeviceChangeDelegate", ((BmSDK.GameObject)this));
@@ -86,7 +86,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearConnectionStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearConnectionStatusChangeDelegate(System.IntPtr ConnectionStatusDelegate)
+    public unsafe virtual void ClearConnectionStatusChangeDelegate(BmSDK.FScriptDelegate ConnectionStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearConnectionStatusChangeDelegate, "Engine.OnlineSystemInterface.ClearConnectionStatusChangeDelegate", ((BmSDK.GameObject)this));
@@ -101,7 +101,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddConnectionStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddConnectionStatusChangeDelegate(System.IntPtr ConnectionStatusDelegate)
+    public unsafe virtual void AddConnectionStatusChangeDelegate(BmSDK.FScriptDelegate ConnectionStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddConnectionStatusChangeDelegate, "Engine.OnlineSystemInterface.AddConnectionStatusChangeDelegate", ((BmSDK.GameObject)this));
@@ -146,7 +146,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearControllerChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearControllerChangeDelegate(System.IntPtr ControllerChangeDelegate)
+    public unsafe virtual void ClearControllerChangeDelegate(BmSDK.FScriptDelegate ControllerChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearControllerChangeDelegate, "Engine.OnlineSystemInterface.ClearControllerChangeDelegate", ((BmSDK.GameObject)this));
@@ -161,7 +161,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddControllerChangeDelegate
     /// </summary>
-    public unsafe virtual void AddControllerChangeDelegate(System.IntPtr ControllerChangeDelegate)
+    public unsafe virtual void AddControllerChangeDelegate(BmSDK.FScriptDelegate ControllerChangeDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddControllerChangeDelegate, "Engine.OnlineSystemInterface.AddControllerChangeDelegate", ((BmSDK.GameObject)this));
@@ -221,7 +221,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearExternalUIChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearExternalUIChangeDelegate(System.IntPtr ExternalUIDelegate)
+    public unsafe virtual void ClearExternalUIChangeDelegate(BmSDK.FScriptDelegate ExternalUIDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearExternalUIChangeDelegate, "Engine.OnlineSystemInterface.ClearExternalUIChangeDelegate", ((BmSDK.GameObject)this));
@@ -236,7 +236,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddExternalUIChangeDelegate
     /// </summary>
-    public unsafe virtual void AddExternalUIChangeDelegate(System.IntPtr ExternalUIDelegate)
+    public unsafe virtual void AddExternalUIChangeDelegate(BmSDK.FScriptDelegate ExternalUIDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddExternalUIChangeDelegate, "Engine.OnlineSystemInterface.AddExternalUIChangeDelegate", ((BmSDK.GameObject)this));
@@ -266,7 +266,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearLinkStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void ClearLinkStatusChangeDelegate(System.IntPtr LinkStatusDelegate)
+    public unsafe virtual void ClearLinkStatusChangeDelegate(BmSDK.FScriptDelegate LinkStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLinkStatusChangeDelegate, "Engine.OnlineSystemInterface.ClearLinkStatusChangeDelegate", ((BmSDK.GameObject)this));
@@ -281,7 +281,7 @@ public partial interface OnlineSystemInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddLinkStatusChangeDelegate
     /// </summary>
-    public unsafe virtual void AddLinkStatusChangeDelegate(System.IntPtr LinkStatusDelegate)
+    public unsafe virtual void AddLinkStatusChangeDelegate(BmSDK.FScriptDelegate LinkStatusDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLinkStatusChangeDelegate, "Engine.OnlineSystemInterface.AddLinkStatusChangeDelegate", ((BmSDK.GameObject)this));

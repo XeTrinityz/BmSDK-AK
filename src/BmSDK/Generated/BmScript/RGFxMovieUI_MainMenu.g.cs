@@ -1684,27 +1684,27 @@ public partial class RGFxMovieUI_MainMenu : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGam
     /// <summary>
     /// DelegateProperty: __OnReadInGameStoreContentComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadInGameStoreContentComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadInGameStoreContentComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1216); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1216); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1216); }
     }
 
     /// <summary>
     /// DelegateProperty: __CustomContentLoadedMOTD__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomContentLoadedMOTD__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomContentLoadedMOTD__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1232); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1232); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1232); }
     }
 
     /// <summary>
     /// DelegateProperty: __CustomManifestLoadedMOTD__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CustomManifestLoadedMOTD__Delegate
+    public unsafe BmSDK.FScriptDelegate __CustomManifestLoadedMOTD__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1248); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1248); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1248); }
     }
 

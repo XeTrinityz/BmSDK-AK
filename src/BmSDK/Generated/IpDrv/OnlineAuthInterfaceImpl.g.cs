@@ -583,7 +583,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearServerConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void ClearServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
+    public unsafe virtual void ClearServerConnectionCloseDelegate(BmSDK.FScriptDelegate ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerConnectionCloseDelegate", this);
@@ -598,7 +598,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddServerConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void AddServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
+    public unsafe virtual void AddServerConnectionCloseDelegate(BmSDK.FScriptDelegate ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerConnectionCloseDelegate", this);
@@ -628,7 +628,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearClientConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void ClearClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
+    public unsafe virtual void ClearClientConnectionCloseDelegate(BmSDK.FScriptDelegate ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientConnectionCloseDelegate", this);
@@ -643,7 +643,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddClientConnectionCloseDelegate
     /// </summary>
-    public unsafe virtual void AddClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
+    public unsafe virtual void AddClientConnectionCloseDelegate(BmSDK.FScriptDelegate ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientConnectionCloseDelegate", this);
@@ -673,7 +673,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearServerAuthRetryRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
+    public unsafe virtual void ClearServerAuthRetryRequestDelegate(BmSDK.FScriptDelegate ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRetryRequestDelegate", this);
@@ -688,7 +688,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddServerAuthRetryRequestDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
+    public unsafe virtual void AddServerAuthRetryRequestDelegate(BmSDK.FScriptDelegate ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRetryRequestDelegate", this);
@@ -718,7 +718,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearClientAuthEndSessionRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
+    public unsafe virtual void ClearClientAuthEndSessionRequestDelegate(BmSDK.FScriptDelegate ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthEndSessionRequestDelegate", this);
@@ -733,7 +733,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddClientAuthEndSessionRequestDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
+    public unsafe virtual void AddClientAuthEndSessionRequestDelegate(BmSDK.FScriptDelegate ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthEndSessionRequestDelegate", this);
@@ -763,7 +763,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearServerAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
+    public unsafe virtual void ClearServerAuthCompleteDelegate(BmSDK.FScriptDelegate ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthCompleteDelegate", this);
@@ -778,7 +778,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddServerAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
+    public unsafe virtual void AddServerAuthCompleteDelegate(BmSDK.FScriptDelegate ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthCompleteDelegate", this);
@@ -812,7 +812,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearClientAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
+    public unsafe virtual void ClearClientAuthCompleteDelegate(BmSDK.FScriptDelegate ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthCompleteDelegate", this);
@@ -827,7 +827,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddClientAuthCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
+    public unsafe virtual void AddClientAuthCompleteDelegate(BmSDK.FScriptDelegate ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthCompleteDelegate", this);
@@ -861,7 +861,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearServerAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
+    public unsafe virtual void ClearServerAuthResponseDelegate(BmSDK.FScriptDelegate ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthResponseDelegate", this);
@@ -876,7 +876,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddServerAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
+    public unsafe virtual void AddServerAuthResponseDelegate(BmSDK.FScriptDelegate ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthResponseDelegate", this);
@@ -908,7 +908,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearClientAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
+    public unsafe virtual void ClearClientAuthResponseDelegate(BmSDK.FScriptDelegate ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthResponseDelegate", this);
@@ -923,7 +923,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddClientAuthResponseDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
+    public unsafe virtual void AddClientAuthResponseDelegate(BmSDK.FScriptDelegate ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthResponseDelegate", this);
@@ -955,7 +955,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearServerAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
+    public unsafe virtual void ClearServerAuthRequestDelegate(BmSDK.FScriptDelegate ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRequestDelegate", this);
@@ -970,7 +970,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddServerAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void AddServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
+    public unsafe virtual void AddServerAuthRequestDelegate(BmSDK.FScriptDelegate ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRequestDelegate", this);
@@ -1003,7 +1003,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearClientAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void ClearClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
+    public unsafe virtual void ClearClientAuthRequestDelegate(BmSDK.FScriptDelegate ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthRequestDelegate", this);
@@ -1018,7 +1018,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddClientAuthRequestDelegate
     /// </summary>
-    public unsafe virtual void AddClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
+    public unsafe virtual void AddClientAuthRequestDelegate(BmSDK.FScriptDelegate ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthRequestDelegate", this);
@@ -1051,7 +1051,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: ClearAuthReadyDelegate
     /// </summary>
-    public unsafe virtual void ClearAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
+    public unsafe virtual void ClearAuthReadyDelegate(BmSDK.FScriptDelegate AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearAuthReadyDelegate", this);
@@ -1066,7 +1066,7 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// Function: AddAuthReadyDelegate
     /// </summary>
-    public unsafe virtual void AddAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
+    public unsafe virtual void AddAuthReadyDelegate(BmSDK.FScriptDelegate AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddAuthReadyDelegate", this);
@@ -1171,198 +1171,198 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
     /// <summary>
     /// ArrayProperty: AuthReadyDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> AuthReadyDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> AuthReadyDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 440); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 440); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 440); }
     }
 
     /// <summary>
     /// ArrayProperty: ClientAuthRequestDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ClientAuthRequestDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ClientAuthRequestDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 456); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 456); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 456); }
     }
 
     /// <summary>
     /// ArrayProperty: ServerAuthRequestDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ServerAuthRequestDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ServerAuthRequestDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 472); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 472); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 472); }
     }
 
     /// <summary>
     /// ArrayProperty: ClientAuthResponseDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ClientAuthResponseDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ClientAuthResponseDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 488); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 488); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 488); }
     }
 
     /// <summary>
     /// ArrayProperty: ServerAuthResponseDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ServerAuthResponseDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ServerAuthResponseDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 504); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 504); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 504); }
     }
 
     /// <summary>
     /// ArrayProperty: ClientAuthCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ClientAuthCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ClientAuthCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 520); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 520); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 520); }
     }
 
     /// <summary>
     /// ArrayProperty: ServerAuthCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ServerAuthCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ServerAuthCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 536); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 536); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 536); }
     }
 
     /// <summary>
     /// ArrayProperty: ClientAuthEndSessionRequestDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ClientAuthEndSessionRequestDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ClientAuthEndSessionRequestDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 552); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 552); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 552); }
     }
 
     /// <summary>
     /// ArrayProperty: ServerAuthRetryRequestDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ServerAuthRetryRequestDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ServerAuthRetryRequestDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 568); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 568); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 568); }
     }
 
     /// <summary>
     /// ArrayProperty: ClientConnectionCloseDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ClientConnectionCloseDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ClientConnectionCloseDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 584); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 584); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 584); }
     }
 
     /// <summary>
     /// ArrayProperty: ServerConnectionCloseDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ServerConnectionCloseDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ServerConnectionCloseDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 600); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 600); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 600); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnAuthReady__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnAuthReady__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnAuthReady__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 616); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 616); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 616); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnClientAuthRequest__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnClientAuthRequest__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnClientAuthRequest__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 632); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 632); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 632); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnServerAuthRequest__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnServerAuthRequest__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnServerAuthRequest__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 648); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 648); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 648); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnClientAuthResponse__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnClientAuthResponse__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnClientAuthResponse__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 664); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 664); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 664); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnServerAuthResponse__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnServerAuthResponse__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnServerAuthResponse__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 680); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 680); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 680); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnClientAuthComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnClientAuthComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnClientAuthComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 696); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 696); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 696); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnServerAuthComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnServerAuthComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnServerAuthComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 712); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 712); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 712); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnClientAuthEndSessionRequest__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnClientAuthEndSessionRequest__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnClientAuthEndSessionRequest__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 728); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 728); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 728); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnServerAuthRetryRequest__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnServerAuthRetryRequest__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnServerAuthRetryRequest__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 744); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 744); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 744); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnClientConnectionClose__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnClientConnectionClose__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnClientConnectionClose__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 760); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 760); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 760); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnServerConnectionClose__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnServerConnectionClose__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnServerConnectionClose__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 776); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 776); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 776); }
     }
 }

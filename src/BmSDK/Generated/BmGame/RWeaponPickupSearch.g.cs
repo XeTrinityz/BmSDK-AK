@@ -371,18 +371,18 @@ public partial class RWeaponPickupSearch : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __WeaponPickupSearchSuccess__Delegate
     /// </summary>
-    public unsafe System.IntPtr __WeaponPickupSearchSuccess__Delegate
+    public unsafe BmSDK.FScriptDelegate __WeaponPickupSearchSuccess__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 140); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 140); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 140); }
     }
 
     /// <summary>
     /// DelegateProperty: __WeaponPickupSearchFailure__Delegate
     /// </summary>
-    public unsafe System.IntPtr __WeaponPickupSearchFailure__Delegate
+    public unsafe BmSDK.FScriptDelegate __WeaponPickupSearchFailure__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 156); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 156); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 156); }
     }
 }

@@ -772,9 +772,9 @@ public partial class RSpecialMoveInstance_RelativeAnimMove : BmSDK.BmGame.RSpeci
     /// <summary>
     /// DelegateProperty: __PlayedQueuedTransition__Delegate
     /// </summary>
-    public unsafe System.IntPtr __PlayedQueuedTransition__Delegate
+    public unsafe BmSDK.FScriptDelegate __PlayedQueuedTransition__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 972); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 972); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 972); }
     }
 }

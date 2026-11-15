@@ -173,7 +173,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ClearGTCCommandDelegate
     /// </summary>
-    public unsafe virtual void ClearGTCCommandDelegate(System.IntPtr GTCCommandDelegate)
+    public unsafe virtual void ClearGTCCommandDelegate(BmSDK.FScriptDelegate GTCCommandDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearGTCCommandDelegate, "Engine.OnlinePlayerInterfaceEx.ClearGTCCommandDelegate", ((BmSDK.GameObject)this));
@@ -188,7 +188,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: AddGTCCommandDelegate
     /// </summary>
-    public unsafe virtual void AddGTCCommandDelegate(System.IntPtr GTCCommandDelegate)
+    public unsafe virtual void AddGTCCommandDelegate(BmSDK.FScriptDelegate GTCCommandDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGTCCommandDelegate, "Engine.OnlinePlayerInterfaceEx.AddGTCCommandDelegate", ((BmSDK.GameObject)this));
@@ -434,7 +434,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ReadOnlineAvatar
     /// </summary>
-    public unsafe virtual void ReadOnlineAvatar(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId, int Size, System.IntPtr ReadOnlineAvatarCompleteDelegate)
+    public unsafe virtual void ReadOnlineAvatar(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId, int Size, BmSDK.FScriptDelegate ReadOnlineAvatarCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadOnlineAvatar, "Engine.OnlinePlayerInterfaceEx.ReadOnlineAvatar", ((BmSDK.GameObject)this));
@@ -523,7 +523,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadCrossTitleProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void ClearReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadCrossTitleProfileSettingsCompleteDelegate, "Engine.OnlinePlayerInterfaceEx.ClearReadCrossTitleProfileSettingsCompleteDelegate", ((BmSDK.GameObject)this));
@@ -539,7 +539,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: AddReadCrossTitleProfileSettingsCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, System.IntPtr ReadProfileSettingsCompleteDelegate)
+    public unsafe virtual void AddReadCrossTitleProfileSettingsCompleteDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ReadProfileSettingsCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadCrossTitleProfileSettingsCompleteDelegate, "Engine.OnlinePlayerInterfaceEx.AddReadCrossTitleProfileSettingsCompleteDelegate", ((BmSDK.GameObject)this));
@@ -633,7 +633,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ClearNewInfocastDelegate
     /// </summary>
-    public unsafe virtual void ClearNewInfocastDelegate(System.IntPtr InfocastDelegate)
+    public unsafe virtual void ClearNewInfocastDelegate(BmSDK.FScriptDelegate InfocastDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNewInfocastDelegate, "Engine.OnlinePlayerInterfaceEx.ClearNewInfocastDelegate", ((BmSDK.GameObject)this));
@@ -648,7 +648,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: AddNewInfocastDelegate
     /// </summary>
-    public unsafe virtual void AddNewInfocastDelegate(System.IntPtr InfocastDelegate)
+    public unsafe virtual void AddNewInfocastDelegate(BmSDK.FScriptDelegate InfocastDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNewInfocastDelegate, "Engine.OnlinePlayerInterfaceEx.AddNewInfocastDelegate", ((BmSDK.GameObject)this));
@@ -744,7 +744,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ClearProfileDataChangedDelegate
     /// </summary>
-    public unsafe virtual void ClearProfileDataChangedDelegate(byte LocalUserNum, System.IntPtr ProfileDataChangedDelegate)
+    public unsafe virtual void ClearProfileDataChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ProfileDataChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearProfileDataChangedDelegate, "Engine.OnlinePlayerInterfaceEx.ClearProfileDataChangedDelegate", ((BmSDK.GameObject)this));
@@ -760,7 +760,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: AddProfileDataChangedDelegate
     /// </summary>
-    public unsafe virtual void AddProfileDataChangedDelegate(byte LocalUserNum, System.IntPtr ProfileDataChangedDelegate)
+    public unsafe virtual void AddProfileDataChangedDelegate(byte LocalUserNum, BmSDK.FScriptDelegate ProfileDataChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddProfileDataChangedDelegate, "Engine.OnlinePlayerInterfaceEx.AddProfileDataChangedDelegate", ((BmSDK.GameObject)this));
@@ -838,7 +838,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ClearDeviceSelectionDoneDelegate
     /// </summary>
-    public unsafe virtual void ClearDeviceSelectionDoneDelegate(byte LocalUserNum, System.IntPtr DeviceDelegate)
+    public unsafe virtual void ClearDeviceSelectionDoneDelegate(byte LocalUserNum, BmSDK.FScriptDelegate DeviceDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeviceSelectionDoneDelegate, "Engine.OnlinePlayerInterfaceEx.ClearDeviceSelectionDoneDelegate", ((BmSDK.GameObject)this));
@@ -854,7 +854,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: AddDeviceSelectionDoneDelegate
     /// </summary>
-    public unsafe virtual void AddDeviceSelectionDoneDelegate(byte LocalUserNum, System.IntPtr DeviceDelegate)
+    public unsafe virtual void AddDeviceSelectionDoneDelegate(byte LocalUserNum, BmSDK.FScriptDelegate DeviceDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeviceSelectionDoneDelegate, "Engine.OnlinePlayerInterfaceEx.AddDeviceSelectionDoneDelegate", ((BmSDK.GameObject)this));

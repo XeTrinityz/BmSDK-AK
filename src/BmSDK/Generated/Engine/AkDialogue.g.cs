@@ -1674,36 +1674,36 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __AkDialogueCallback_OnStartSpeech__Delegate
     /// </summary>
-    public unsafe System.IntPtr __AkDialogueCallback_OnStartSpeech__Delegate
+    public unsafe BmSDK.FScriptDelegate __AkDialogueCallback_OnStartSpeech__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 84); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 84); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 84); }
     }
 
     /// <summary>
     /// DelegateProperty: __AkDialogueCallback_OnStopSpeech__Delegate
     /// </summary>
-    public unsafe System.IntPtr __AkDialogueCallback_OnStopSpeech__Delegate
+    public unsafe BmSDK.FScriptDelegate __AkDialogueCallback_OnStopSpeech__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 100); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 100); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 100); }
     }
 
     /// <summary>
     /// DelegateProperty: __AkDialogueCallback_OnStartDialogueLine__Delegate
     /// </summary>
-    public unsafe System.IntPtr __AkDialogueCallback_OnStartDialogueLine__Delegate
+    public unsafe BmSDK.FScriptDelegate __AkDialogueCallback_OnStartDialogueLine__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 116); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 116); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 116); }
     }
 
     /// <summary>
     /// DelegateProperty: __AkDialogueCallback_OnStopDialogueLine__Delegate
     /// </summary>
-    public unsafe System.IntPtr __AkDialogueCallback_OnStopDialogueLine__Delegate
+    public unsafe BmSDK.FScriptDelegate __AkDialogueCallback_OnStopDialogueLine__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 
@@ -2148,36 +2148,36 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
         /// <summary>
         /// DelegateProperty: OnStartSpeech
         /// </summary>
-        public unsafe System.IntPtr OnStartSpeech
+        public unsafe BmSDK.FScriptDelegate OnStartSpeech
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 0); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 0); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 0); }; }
         }
 
         /// <summary>
         /// DelegateProperty: OnStopSpeech
         /// </summary>
-        public unsafe System.IntPtr OnStopSpeech
+        public unsafe BmSDK.FScriptDelegate OnStopSpeech
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 16); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 16); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 16); }; }
         }
 
         /// <summary>
         /// DelegateProperty: OnStartDialogueLine
         /// </summary>
-        public unsafe System.IntPtr OnStartDialogueLine
+        public unsafe BmSDK.FScriptDelegate OnStartDialogueLine
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 32); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 32); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 32); }; }
         }
 
         /// <summary>
         /// DelegateProperty: OnStopDialogueLine
         /// </summary>
-        public unsafe System.IntPtr OnStopDialogueLine
+        public unsafe BmSDK.FScriptDelegate OnStopDialogueLine
         {
-            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 48); }; }
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 48); }; }
             set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 48); }; }
         }
 

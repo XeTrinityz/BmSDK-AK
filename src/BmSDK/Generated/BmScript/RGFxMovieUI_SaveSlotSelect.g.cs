@@ -1151,27 +1151,27 @@ public partial class RGFxMovieUI_SaveSlotSelect : BmSDK.BmGame.RGFxMovieUI, BmSD
     /// <summary>
     /// DelegateProperty: __SortByFilename__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByFilename__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByFilename__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1224); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1224); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1224); }
     }
 
     /// <summary>
     /// DelegateProperty: __SortByTimeStamp__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByTimeStamp__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByTimeStamp__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1240); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1240); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1240); }
     }
 
     /// <summary>
     /// DelegateProperty: __SortByFuture__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SortByFuture__Delegate
+    public unsafe BmSDK.FScriptDelegate __SortByFuture__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1256); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1256); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1256); }
     }
 

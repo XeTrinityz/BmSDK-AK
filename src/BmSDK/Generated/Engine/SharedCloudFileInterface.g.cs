@@ -14,7 +14,7 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearWriteSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearWriteSharedFileCompleteDelegate(System.IntPtr WriteSharedFileCompleteDelegate)
+    public unsafe virtual void ClearWriteSharedFileCompleteDelegate(BmSDK.FScriptDelegate WriteSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWriteSharedFileCompleteDelegate, "Engine.SharedCloudFileInterface.ClearWriteSharedFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -29,7 +29,7 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddWriteSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddWriteSharedFileCompleteDelegate(System.IntPtr WriteSharedFileCompleteDelegate)
+    public unsafe virtual void AddWriteSharedFileCompleteDelegate(BmSDK.FScriptDelegate WriteSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWriteSharedFileCompleteDelegate, "Engine.SharedCloudFileInterface.AddWriteSharedFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -84,7 +84,7 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearReadSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearReadSharedFileCompleteDelegate(System.IntPtr ReadSharedFileCompleteDelegate)
+    public unsafe virtual void ClearReadSharedFileCompleteDelegate(BmSDK.FScriptDelegate ReadSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadSharedFileCompleteDelegate, "Engine.SharedCloudFileInterface.ClearReadSharedFileCompleteDelegate", ((BmSDK.GameObject)this));
@@ -99,7 +99,7 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddReadSharedFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddReadSharedFileCompleteDelegate(System.IntPtr ReadSharedFileCompleteDelegate)
+    public unsafe virtual void AddReadSharedFileCompleteDelegate(BmSDK.FScriptDelegate ReadSharedFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadSharedFileCompleteDelegate, "Engine.SharedCloudFileInterface.AddReadSharedFileCompleteDelegate", ((BmSDK.GameObject)this));

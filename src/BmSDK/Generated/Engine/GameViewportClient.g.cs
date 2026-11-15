@@ -1815,27 +1815,27 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
     /// <summary>
     /// DelegateProperty: __HandleInputKey__Delegate
     /// </summary>
-    public unsafe System.IntPtr __HandleInputKey__Delegate
+    public unsafe BmSDK.FScriptDelegate __HandleInputKey__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 412); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 412); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 412); }
     }
 
     /// <summary>
     /// DelegateProperty: __HandleInputAxis__Delegate
     /// </summary>
-    public unsafe System.IntPtr __HandleInputAxis__Delegate
+    public unsafe BmSDK.FScriptDelegate __HandleInputAxis__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 428); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 428); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 428); }
     }
 
     /// <summary>
     /// DelegateProperty: __HandleInputChar__Delegate
     /// </summary>
-    public unsafe System.IntPtr __HandleInputChar__Delegate
+    public unsafe BmSDK.FScriptDelegate __HandleInputChar__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 444); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 444); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 444); }
     }
 }

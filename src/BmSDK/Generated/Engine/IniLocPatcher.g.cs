@@ -119,7 +119,7 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: ClearReadFileDelegate
     /// </summary>
-    public unsafe virtual void ClearReadFileDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void ClearReadFileDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadFileDelegate, "Engine.IniLocPatcher.ClearReadFileDelegate", this);
@@ -134,7 +134,7 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: AddReadFileDelegate
     /// </summary>
-    public unsafe virtual void AddReadFileDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
+    public unsafe virtual void AddReadFileDelegate(BmSDK.FScriptDelegate ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadFileDelegate, "Engine.IniLocPatcher.AddReadFileDelegate", this);
@@ -410,27 +410,27 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// ArrayProperty: ReadTitleFileCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> ReadTitleFileCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> ReadTitleFileCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 140); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 140); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 140); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnReadTitleFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnReadTitleFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnReadTitleFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 156); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 156); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 156); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnAllTitleFilesCompleted__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnAllTitleFilesCompleted__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnAllTitleFilesCompleted__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 172); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 172); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 172); }
     }
 

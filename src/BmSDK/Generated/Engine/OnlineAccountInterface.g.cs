@@ -91,7 +91,7 @@ public partial interface OnlineAccountInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearCreateOnlineAccountCompletedDelegate
     /// </summary>
-    public unsafe virtual void ClearCreateOnlineAccountCompletedDelegate(System.IntPtr AccountCreateDelegate)
+    public unsafe virtual void ClearCreateOnlineAccountCompletedDelegate(BmSDK.FScriptDelegate AccountCreateDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCreateOnlineAccountCompletedDelegate, "Engine.OnlineAccountInterface.ClearCreateOnlineAccountCompletedDelegate", ((BmSDK.GameObject)this));
@@ -106,7 +106,7 @@ public partial interface OnlineAccountInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddCreateOnlineAccountCompletedDelegate
     /// </summary>
-    public unsafe virtual void AddCreateOnlineAccountCompletedDelegate(System.IntPtr AccountCreateDelegate)
+    public unsafe virtual void AddCreateOnlineAccountCompletedDelegate(BmSDK.FScriptDelegate AccountCreateDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCreateOnlineAccountCompletedDelegate, "Engine.OnlineAccountInterface.AddCreateOnlineAccountCompletedDelegate", ((BmSDK.GameObject)this));

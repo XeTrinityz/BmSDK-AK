@@ -210,18 +210,18 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
     /// <summary>
     /// ArrayProperty: RefreshSubscriberNotifies
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> RefreshSubscriberNotifies
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> RefreshSubscriberNotifies
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 116); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 116); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 116); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnDataStoreValueUpdated__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnDataStoreValueUpdated__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnDataStoreValueUpdated__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 132); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
     }
 }

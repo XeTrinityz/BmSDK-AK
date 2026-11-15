@@ -152,7 +152,7 @@ public partial class RSentryKitAssignmentPicker : BmSDK.BmGame.RGroupAssignmentP
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, BmSDK.BmGame.RSentryGunPlacementPoint NewTargetPoint, System.IntPtr NewSentryKitAssignmentFound, System.IntPtr NewSentryKitAssignmentFailed)
+    public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, BmSDK.BmGame.RSentryGunPlacementPoint NewTargetPoint, BmSDK.FScriptDelegate NewSentryKitAssignmentFound, BmSDK.FScriptDelegate NewSentryKitAssignmentFailed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RSentryKitAssignmentPicker.Init", this);
@@ -261,18 +261,18 @@ public partial class RSentryKitAssignmentPicker : BmSDK.BmGame.RGroupAssignmentP
     /// <summary>
     /// DelegateProperty: __SentryKitAssignmentFound__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SentryKitAssignmentFound__Delegate
+    public unsafe BmSDK.FScriptDelegate __SentryKitAssignmentFound__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 140); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 140); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 140); }
     }
 
     /// <summary>
     /// DelegateProperty: __SentryKitAssignmentFailed__Delegate
     /// </summary>
-    public unsafe System.IntPtr __SentryKitAssignmentFailed__Delegate
+    public unsafe BmSDK.FScriptDelegate __SentryKitAssignmentFailed__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 156); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 156); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 156); }
     }
 }

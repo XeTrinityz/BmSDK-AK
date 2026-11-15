@@ -683,18 +683,18 @@ public partial class RSpecialMoveInstance_WhipRappel_Catwoman : BmSDK.BmGame.RSp
     /// <summary>
     /// DelegateProperty: __WhippingAnimFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __WhippingAnimFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __WhippingAnimFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1028); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1028); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1028); }
     }
 
     /// <summary>
     /// DelegateProperty: __CartwheelingAnimFinished__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CartwheelingAnimFinished__Delegate
+    public unsafe BmSDK.FScriptDelegate __CartwheelingAnimFinished__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1044); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1044); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1044); }
     }
 }

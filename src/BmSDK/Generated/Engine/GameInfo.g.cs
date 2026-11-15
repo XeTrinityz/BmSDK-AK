@@ -2139,7 +2139,7 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     /// <summary>
     /// Function: SetPause
     /// </summary>
-    public unsafe virtual bool SetPause(BmSDK.Engine.PlayerController PC, System.IntPtr CanUnpauseDelegate = default)
+    public unsafe virtual bool SetPause(BmSDK.Engine.PlayerController PC, BmSDK.FScriptDelegate CanUnpauseDelegate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPause, "Engine.GameInfo.SetPause", this);
@@ -3357,9 +3357,9 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     /// <summary>
     /// ArrayProperty: Pausers
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> Pausers
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> Pausers
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 1344); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 1344); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1344); }
     }
 
@@ -3555,9 +3555,9 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
     /// <summary>
     /// DelegateProperty: __CanUnpause__Delegate
     /// </summary>
-    public unsafe System.IntPtr __CanUnpause__Delegate
+    public unsafe BmSDK.FScriptDelegate __CanUnpause__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 1516); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 1516); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1516); }
     }
 

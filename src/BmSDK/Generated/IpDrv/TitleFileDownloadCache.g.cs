@@ -505,7 +505,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: ClearDeleteTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearDeleteTitleFileCompleteDelegate(System.IntPtr DeleteCompleteDelegate)
+    public unsafe virtual void ClearDeleteTitleFileCompleteDelegate(BmSDK.FScriptDelegate DeleteCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDeleteTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.ClearDeleteTitleFileCompleteDelegate", this);
@@ -520,7 +520,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: AddDeleteTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddDeleteTitleFileCompleteDelegate(System.IntPtr DeleteCompleteDelegate)
+    public unsafe virtual void AddDeleteTitleFileCompleteDelegate(BmSDK.FScriptDelegate DeleteCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDeleteTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.AddDeleteTitleFileCompleteDelegate", this);
@@ -553,7 +553,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: ClearSaveTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearSaveTitleFileCompleteDelegate(System.IntPtr SaveCompleteDelegate)
+    public unsafe virtual void ClearSaveTitleFileCompleteDelegate(BmSDK.FScriptDelegate SaveCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearSaveTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.ClearSaveTitleFileCompleteDelegate", this);
@@ -568,7 +568,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: AddSaveTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddSaveTitleFileCompleteDelegate(System.IntPtr SaveCompleteDelegate)
+    public unsafe virtual void AddSaveTitleFileCompleteDelegate(BmSDK.FScriptDelegate SaveCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSaveTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.AddSaveTitleFileCompleteDelegate", this);
@@ -628,7 +628,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: ClearLoadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void ClearLoadTitleFileCompleteDelegate(System.IntPtr LoadCompleteDelegate)
+    public unsafe virtual void ClearLoadTitleFileCompleteDelegate(BmSDK.FScriptDelegate LoadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoadTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.ClearLoadTitleFileCompleteDelegate", this);
@@ -643,7 +643,7 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// Function: AddLoadTitleFileCompleteDelegate
     /// </summary>
-    public unsafe virtual void AddLoadTitleFileCompleteDelegate(System.IntPtr LoadCompleteDelegate)
+    public unsafe virtual void AddLoadTitleFileCompleteDelegate(BmSDK.FScriptDelegate LoadCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoadTitleFileCompleteDelegate, "IpDrv.TitleFileDownloadCache.AddLoadTitleFileCompleteDelegate", this);
@@ -717,54 +717,54 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
     /// <summary>
     /// ArrayProperty: LoadCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> LoadCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> LoadCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 140); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 140); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 140); }
     }
 
     /// <summary>
     /// ArrayProperty: SaveCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> SaveCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> SaveCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 156); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 156); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 156); }
     }
 
     /// <summary>
     /// ArrayProperty: DeleteCompleteDelegates
     /// </summary>
-    public unsafe BmSDK.TArray<System.IntPtr> DeleteCompleteDelegates
+    public unsafe BmSDK.TArray<BmSDK.FScriptDelegate> DeleteCompleteDelegates
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<System.IntPtr>>(Ptr + 172); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.FScriptDelegate>>(Ptr + 172); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 172); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnLoadTitleFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnLoadTitleFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnLoadTitleFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 188); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 188); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 188); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnSaveTitleFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnSaveTitleFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnSaveTitleFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 204); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 204); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 204); }
     }
 
     /// <summary>
     /// DelegateProperty: __OnDeleteTitleFileComplete__Delegate
     /// </summary>
-    public unsafe System.IntPtr __OnDeleteTitleFileComplete__Delegate
+    public unsafe BmSDK.FScriptDelegate __OnDeleteTitleFileComplete__Delegate
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 220); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FScriptDelegate>(Ptr + 220); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 220); }
     }
 }
