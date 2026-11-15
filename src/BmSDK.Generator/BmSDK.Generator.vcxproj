@@ -8,6 +8,8 @@
     <ClCompile Include="Printer\Printer.cpp" />
     <ClCompile Include="Framework\Debug.cpp" />
     <ClCompile Include="Framework\ClassInfo.cpp" />
+    <ClCompile Include="Dumper\Dumper.cpp" />
+    <ClCompile Include="Dumper\Safe.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Framework\Detours.h" />
@@ -23,6 +25,9 @@
     <ClInclude Include="Engine\TArray.h" />
     <ClInclude Include="Engine\GameOffsets.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Dumper\Dumper.h" />
+    <ClInclude Include="Dumper\Json.h" />
+    <ClInclude Include="Dumper\Safe.h" />
   </ItemGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">

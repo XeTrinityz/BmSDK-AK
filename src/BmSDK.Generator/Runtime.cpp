@@ -6,6 +6,7 @@
 #include "Engine\GameFunctions.h"
 #include "Framework\ClassInfo.h"
 #include "Printer\Printer.h"
+#include "Dumper\Dumper.h"
 
 #include <cstdint>
 #include <fstream>
@@ -19,6 +20,15 @@ DWORD Runtime::MainThreadId = 0;
 GObjectsArray* Runtime::GObjects = 0;
 TArray<FNameEntry*>* Runtime::GNames = 0;
 vector<ClassInfo> Runtime::Classes = {};
+
+using EngineTickFn = void* (*)(void* self);
+static EngineTickFn s_engineTick = nullptr;
+
+static void* EngineTickDetour(void* self)
+{
+    Dumper::Tick();
+    return s_engineTick(self);
+}
 
 void Runtime::OnAttach()
 {
@@ -37,24 +47,49 @@ void Runtime::OnAttach()
     Runtime::GNames = (TArray<FNameEntry*>*) (Runtime::BaseAddress + GameOffsets::GNames);
     GameFunctions::Init(Runtime::BaseAddress);
 
+    // The dumper does its work on the game thread, between frames.
+    Dumper::Init();
+    if (!Detours::DetourFunction(Runtime::BaseAddress + GameOffsets::EngineTick, &s_engineTick, EngineTickDetour))
+    {
+        TRACE("Couldn't hook the engine tick, the dumper won't run");
+    }
+
     // Wait for keypress in another thread
     std::thread(
         []()
         {
             TRACE("Press 'P' to start SDK generation");
+            auto wasO = false;
+            auto wasL = false;
             while (true)
             {
-                if ((GetAsyncKeyState('P') & 0x8000))
+                this_thread::sleep_for(chrono::milliseconds(50));
+
+                DWORD foregroundPID = 0;
+                GetWindowThreadProcessId(GetForegroundWindow(), &foregroundPID);
+
+                // Don't react if the game window isn't focused.
+                if (foregroundPID != GetCurrentProcessId())
                 {
-                    DWORD foregroundPID = 0;
-                    GetWindowThreadProcessId(GetForegroundWindow(), &foregroundPID);
+                    continue;
+                }
 
-                    // Don't generate if the game window isn't focused.
-                    if (foregroundPID != GetCurrentProcessId())
-                    {
-                        continue;
-                    }
+                auto chord = (GetAsyncKeyState(VK_CONTROL) & 0x8000) && (GetAsyncKeyState(VK_SHIFT) & 0x8000);
+                auto isO = chord && (GetAsyncKeyState('O') & 0x8000);
+                auto isL = chord && (GetAsyncKeyState('L') & 0x8000);
+                if (isO && !wasO)
+                {
+                    Dumper::RequestSnapshot();
+                }
+                if (isL && !wasL)
+                {
+                    Dumper::ToggleSweep();
+                }
+                wasO = isO;
+                wasL = isL;
 
+                if (!chord && (GetAsyncKeyState('P') & 0x8000))
+                {
                     HANDLE mainThread = OpenThread(THREAD_SUSPEND_RESUME, FALSE, Runtime::MainThreadId);
                     if (mainThread) SuspendThread(mainThread);
 
@@ -66,7 +101,6 @@ void Runtime::OnAttach()
                     }
                     break;
                 }
-                this_thread::sleep_for(chrono::milliseconds(100));
             }
         })
         .detach();

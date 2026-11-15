@@ -15,6 +15,7 @@ namespace GameOffsets
     inline uintptr_t BeginLoad = 0;
     inline uintptr_t EndLoad = 0;
     inline uintptr_t CollectGarbage = 0;
+    inline uintptr_t EngineTick = 0;
 
     // UObject
     inline uintptr_t ProcessEvent = 0;
@@ -35,6 +36,7 @@ namespace GameOffsets
                 BeginLoad = 0xF58020;
                 EndLoad = 0xF6E5B0;
                 CollectGarbage = 0xF56E80;
+                EngineTick = 0x5D9850;
                 ProcessEvent = 0xFBBCC0;
                 break;
             default:
@@ -46,6 +48,7 @@ namespace GameOffsets
                 BeginLoad = 0xF2D410;
                 EndLoad = 0xF43BF0;
                 CollectGarbage = 0xF2C280;
+                EngineTick = 0x5B1DA0;
                 ProcessEvent = 0xF90CD0;
                 break;
         }
