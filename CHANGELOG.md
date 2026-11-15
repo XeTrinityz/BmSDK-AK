@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.23.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.22.0...v0.23.0) (2026-11-15)
+
+
+### Features
+
+* Build the bindings from the dumps without the game ([51c9c93](https://github.com/XeTrinityz/BmSDK-AK/commit/51c9c93f04cbd41b46b28c4dee8ec2b530844be3))
+* Classes implement their script interfaces ([b947a9b](https://github.com/XeTrinityz/BmSDK-AK/commit/b947a9bae44926918875cd2c7dbb8cd66c7a4858))
+* Delegates are FScriptDelegate instead of IntPtr ([9d00802](https://github.com/XeTrinityz/BmSDK-AK/commit/9d008024cb2882d18e05b6a3f60b3c67ba9d9e7d))
+* **generator:** Dump the engine's reflection data while the game runs ([1c47b8e](https://github.com/XeTrinityz/BmSDK-AK/commit/1c47b8e87726c42578f155bdca963af258e5fee6))
+* **generator:** Load the Season of Infamy maps, and make the output folder if it's missing ([204334d](https://github.com/XeTrinityz/BmSDK-AK/commit/204334d733f250ce7cc4e66292984e30f77a4bcb))
+* Regenerate the bindings from a sweep of every package ([477b1b5](https://github.com/XeTrinityz/BmSDK-AK/commit/477b1b51017b9001e9990e17468d0b476d7ef251))
+* Script consts as C# consts ([3a04cb2](https://github.com/XeTrinityz/BmSDK-AK/commit/3a04cb2ab9fac56b27652141a719dd399371d084))
+* Show each property's default value in its summary ([dbac26e](https://github.com/XeTrinityz/BmSDK-AK/commit/dbac26e1af9683fc2ac7c508e988ebf7e3db28cb))
+* Show where each native function's code is ([8bf2c79](https://github.com/XeTrinityz/BmSDK-AK/commit/8bf2c7915001ed329b29a3cb63e76099b7c716e6))
+
+
+### Bug Fixes
+
+* Log a class that falls back to its parent type as info, not a warning ([c275e97](https://github.com/XeTrinityz/BmSDK-AK/commit/c275e970f7eb0a75bd2b087d40a50856f65d2573))
+* Read Class.ClassFlags from where the engine keeps it ([e707754](https://github.com/XeTrinityz/BmSDK-AK/commit/e70775494f5c6afc8d384b059a39a1df962ce995))
+
 ## [0.22.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.21.0...v0.22.0) (2026-11-15)
 
 
