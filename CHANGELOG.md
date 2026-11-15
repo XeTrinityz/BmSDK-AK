@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.23.0...v0.24.0) (2026-11-15)
+
+
+### Features
+
+* Load a mod from a prebuilt DLL named in mod.toml ([84e497a](https://github.com/XeTrinityz/BmSDK-AK/commit/84e497a40c0d36468a9cc217a116c9fc3cb42040))
+
 ## [0.23.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.22.0...v0.23.0) (2026-11-15)
 
 
