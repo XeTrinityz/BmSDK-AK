@@ -1,3 +1,5 @@
+using BmSDK.Framework.Redirection;
+
 namespace BmSDK.Framework;
 
 /// <summary>
@@ -67,6 +69,16 @@ internal static class FunctionCache
             var looking = FrameStats.Now;
             site = slot = new CallSite(GameObject.StaticFindObjectChecked<Function>(Function.StaticClass(), null, path, true));
             FrameStats.AddNewSite(looking);
+        }
+
+        // Inside a redirect, calling the redirected function on its own object asks for the original,
+        // so it keeps the exact function and the redirect machinery runs what comes next. Dispatching
+        // it would run a subclass's override, which then calls Super and lands here a second time.
+        if (RedirectManager.IsRedirecting && RedirectManager.Current is { } call && call.TargetObj.Ptr == self.Ptr
+            && *(long*)(call.TargetFunc.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer()
+                == *(long*)(site.Declared.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer())
+        {
+            return site.Declared;
         }
 
         var cls = *(IntPtr*)(self.Ptr + GameDefine.MemberOffsets.Object__Class).ToPointer();
