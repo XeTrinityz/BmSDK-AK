@@ -80,7 +80,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDefaultVersionNumber;
     /// <summary>
-    /// Function: SetDefaultVersionNumber
+    /// Function: SetDefaultVersionNumber<br/>
+    /// Native code at BatmanAK.exe+0xB400B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDefaultVersionNumber()
     {
@@ -101,7 +102,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVersionNumber;
     /// <summary>
-    /// Function: GetVersionNumber
+    /// Function: GetVersionNumber<br/>
+    /// Native code at BatmanAK.exe+0xB40060 in the Steam build
     /// </summary>
     public unsafe virtual int GetVersionNumber()
     {
@@ -122,7 +124,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendVersionToSettings;
     /// <summary>
-    /// Function: AppendVersionToSettings
+    /// Function: AppendVersionToSettings<br/>
+    /// Native code at BatmanAK.exe+0xB41010 in the Steam build
     /// </summary>
     public unsafe virtual void AppendVersionToSettings()
     {
@@ -143,7 +146,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetToDefaults;
     /// <summary>
-    /// Function: SetToDefaults
+    /// Function: SetToDefaults<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetToDefaults()
     {
@@ -164,7 +168,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSettingFloat;
     /// <summary>
-    /// Function: AddSettingFloat
+    /// Function: AddSettingFloat<br/>
+    /// Native code at BatmanAK.exe+0xB80540 in the Steam build
     /// </summary>
     public unsafe virtual void AddSettingFloat(int SettingId)
     {
@@ -186,7 +191,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSettingInt;
     /// <summary>
-    /// Function: AddSettingInt
+    /// Function: AddSettingInt<br/>
+    /// Native code at BatmanAK.exe+0x4A2900 in the Steam build
     /// </summary>
     public unsafe virtual void AddSettingInt(int SettingId)
     {
@@ -208,7 +214,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRangedProfileSettingValue;
     /// <summary>
-    /// Function: GetRangedProfileSettingValue
+    /// Function: GetRangedProfileSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xB71630 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRangedProfileSettingValue(int ProfileId, out float OutValue)
     {
@@ -233,7 +240,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRangedProfileSettingValue;
     /// <summary>
-    /// Function: SetRangedProfileSettingValue
+    /// Function: SetRangedProfileSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xB80340 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRangedProfileSettingValue(int ProfileId, float NewValue)
     {
@@ -256,7 +264,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingRange;
     /// <summary>
-    /// Function: GetProfileSettingRange
+    /// Function: GetProfileSettingRange<br/>
+    /// Native code at BatmanAK.exe+0xB800C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingRange(int ProfileId, out float OutMinValue, out float OutMaxValue, out float RangeIncrement, out byte bFormatAsInt)
     {
@@ -290,7 +299,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetProfileSettingMappingIds;
     /// <summary>
-    /// Function: GetProfileSettingMappingIds
+    /// Function: GetProfileSettingMappingIds<br/>
+    /// Native code at BatmanAK.exe+0xBB4850 in the Steam build
     /// </summary>
     public unsafe static bool GetProfileSettingMappingIds(int ProfileId, out BmSDK.TArray<int> Ids)
     {
@@ -312,7 +322,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingMappingType;
     /// <summary>
-    /// Function: GetProfileSettingMappingType
+    /// Function: GetProfileSettingMappingType<br/>
+    /// Native code at BatmanAK.exe+0xB7FF50 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingMappingType(int ProfileId, out BmSDK.Engine.Settings.EPropertyValueMappingType OutType)
     {
@@ -337,7 +348,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProfileSettingValueFloat;
     /// <summary>
-    /// Function: SetProfileSettingValueFloat
+    /// Function: SetProfileSettingValueFloat<br/>
+    /// Native code at BatmanAK.exe+0xB7FD50 in the Steam build
     /// </summary>
     public unsafe virtual bool SetProfileSettingValueFloat(int ProfileSettingId, float Value)
     {
@@ -360,7 +372,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProfileSettingValueInt;
     /// <summary>
-    /// Function: SetProfileSettingValueInt
+    /// Function: SetProfileSettingValueInt<br/>
+    /// Native code at BatmanAK.exe+0xB7FB60 in the Steam build
     /// </summary>
     public unsafe virtual bool SetProfileSettingValueInt(int ProfileSettingId, int Value)
     {
@@ -383,7 +396,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProfileSettingValueId;
     /// <summary>
-    /// Function: SetProfileSettingValueId
+    /// Function: SetProfileSettingValueId<br/>
+    /// Native code at BatmanAK.exe+0xB7F970 in the Steam build
     /// </summary>
     public unsafe virtual bool SetProfileSettingValueId(int ProfileSettingId, int Value)
     {
@@ -406,7 +420,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueFloat;
     /// <summary>
-    /// Function: GetProfileSettingValueFloat
+    /// Function: GetProfileSettingValueFloat<br/>
+    /// Native code at BatmanAK.exe+0xB7F7F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValueFloat(int ProfileSettingId, out float Value)
     {
@@ -431,7 +446,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueInt;
     /// <summary>
-    /// Function: GetProfileSettingValueInt
+    /// Function: GetProfileSettingValueInt<br/>
+    /// Native code at BatmanAK.exe+0xB7F680 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValueInt(int ProfileSettingId, out int Value)
     {
@@ -456,7 +472,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueFromListIndex;
     /// <summary>
-    /// Function: GetProfileSettingValueFromListIndex
+    /// Function: GetProfileSettingValueFromListIndex<br/>
+    /// Native code at BatmanAK.exe+0xB7F450 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValueFromListIndex(int ProfileSettingId, int ListIndex, out int Value)
     {
@@ -482,7 +499,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueId;
     /// <summary>
-    /// Function: GetProfileSettingValueId
+    /// Function: GetProfileSettingValueId<br/>
+    /// Native code at BatmanAK.exe+0xB7F280 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValueId(int ProfileSettingId, out int ValueId, out int ListIndex)
     {
@@ -510,7 +528,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProfileSettingValue;
     /// <summary>
-    /// Function: SetProfileSettingValue
+    /// Function: SetProfileSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xBAB860 in the Steam build
     /// </summary>
     public unsafe virtual bool SetProfileSettingValue(int ProfileSettingId, out BmSDK.FString NewValue)
     {
@@ -533,7 +552,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProfileSettingValueByName;
     /// <summary>
-    /// Function: SetProfileSettingValueByName
+    /// Function: SetProfileSettingValueByName<br/>
+    /// Native code at BatmanAK.exe+0xBAB6C0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetProfileSettingValueByName(BmSDK.FName ProfileSettingName, out BmSDK.FString NewValue)
     {
@@ -556,7 +576,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueByName;
     /// <summary>
-    /// Function: GetProfileSettingValueByName
+    /// Function: GetProfileSettingValueByName<br/>
+    /// Native code at BatmanAK.exe+0xBA9730 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValueByName(BmSDK.FName ProfileSettingName, out BmSDK.FString Value)
     {
@@ -579,7 +600,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValues;
     /// <summary>
-    /// Function: GetProfileSettingValues
+    /// Function: GetProfileSettingValues<br/>
+    /// Native code at BatmanAK.exe+0xBB8530 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValues(int ProfileSettingId, out BmSDK.TArray<BmSDK.FName> Values)
     {
@@ -602,7 +624,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValueName;
     /// <summary>
-    /// Function: GetProfileSettingValueName
+    /// Function: GetProfileSettingValueName<br/>
+    /// Native code at BatmanAK.exe+0xB7F140 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetProfileSettingValueName(int ProfileSettingId)
     {
@@ -624,7 +647,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingValue;
     /// <summary>
-    /// Function: GetProfileSettingValue
+    /// Function: GetProfileSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xBAB4F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingValue(int ProfileSettingId, out BmSDK.FString Value, int ValueMapID = default)
     {
@@ -648,7 +672,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsProfileSettingIdMapped;
     /// <summary>
-    /// Function: IsProfileSettingIdMapped
+    /// Function: IsProfileSettingIdMapped<br/>
+    /// Native code at BatmanAK.exe+0xB7F000 in the Steam build
     /// </summary>
     public unsafe virtual bool IsProfileSettingIdMapped(int ProfileSettingId)
     {
@@ -670,7 +695,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FindDefaultProfileMappingIndexByName;
     /// <summary>
-    /// Function: FindDefaultProfileMappingIndexByName
+    /// Function: FindDefaultProfileMappingIndexByName<br/>
+    /// Native code at BatmanAK.exe+0xB7EEC0 in the Steam build
     /// </summary>
     public unsafe static int FindDefaultProfileMappingIndexByName(BmSDK.FName ProfileSettingName)
     {
@@ -691,7 +717,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindProfileMappingIndexByName;
     /// <summary>
-    /// Function: FindProfileMappingIndexByName
+    /// Function: FindProfileMappingIndexByName<br/>
+    /// Native code at BatmanAK.exe+0xB7EEC0 in the Steam build
     /// </summary>
     public unsafe virtual int FindProfileMappingIndexByName(BmSDK.FName ProfileSettingName)
     {
@@ -713,7 +740,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindProfileMappingIndex;
     /// <summary>
-    /// Function: FindProfileMappingIndex
+    /// Function: FindProfileMappingIndex<br/>
+    /// Native code at BatmanAK.exe+0xB7ED90 in the Steam build
     /// </summary>
     public unsafe virtual int FindProfileMappingIndex(int ProfileSettingId)
     {
@@ -735,7 +763,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindProfileSettingIndex;
     /// <summary>
-    /// Function: FindProfileSettingIndex
+    /// Function: FindProfileSettingIndex<br/>
+    /// Native code at BatmanAK.exe+0xB7EC60 in the Steam build
     /// </summary>
     public unsafe virtual int FindProfileSettingIndex(int ProfileSettingId)
     {
@@ -757,7 +786,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingColumnHeader;
     /// <summary>
-    /// Function: GetProfileSettingColumnHeader
+    /// Function: GetProfileSettingColumnHeader<br/>
+    /// Native code at BatmanAK.exe+0xBAB390 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetProfileSettingColumnHeader(int ProfileSettingId)
     {
@@ -779,7 +809,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingName;
     /// <summary>
-    /// Function: GetProfileSettingName
+    /// Function: GetProfileSettingName<br/>
+    /// Native code at BatmanAK.exe+0xB7EB20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetProfileSettingName(int ProfileSettingId)
     {
@@ -801,7 +832,8 @@ public partial class OnlinePlayerStorage : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingId;
     /// <summary>
-    /// Function: GetProfileSettingId
+    /// Function: GetProfileSettingId<br/>
+    /// Native code at BatmanAK.exe+0xB80B00 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingId(BmSDK.FName ProfileSettingName, out int ProfileSettingId)
     {
@@ -946,7 +978,8 @@ public static class OnlinePlayerStorageStatics
 {
     private static BmSDK.Function __fn_GetProfileSettingMappingIds;
     /// <summary>
-    /// Function: GetProfileSettingMappingIds, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetProfileSettingMappingIds, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB4850 in the Steam build
     /// </summary>
     public unsafe static bool GetProfileSettingMappingIds(this BmSDK.Engine.OnlinePlayerStorage self, int ProfileId, out BmSDK.TArray<int> Ids)
     {
@@ -969,7 +1002,8 @@ public static class OnlinePlayerStorageStatics
 
     private static BmSDK.Function __fn_FindDefaultProfileMappingIndexByName;
     /// <summary>
-    /// Function: FindDefaultProfileMappingIndexByName, run on <paramref name="self"/> rather than the class default object
+    /// Function: FindDefaultProfileMappingIndexByName, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB7EEC0 in the Steam build
     /// </summary>
     public unsafe static int FindDefaultProfileMappingIndexByName(this BmSDK.Engine.OnlinePlayerStorage self, BmSDK.FName ProfileSettingName)
     {

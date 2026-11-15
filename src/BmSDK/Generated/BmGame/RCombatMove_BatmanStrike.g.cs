@@ -1419,7 +1419,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HaveClearPathToTarget;
     /// <summary>
-    /// Function: HaveClearPathToTarget
+    /// Function: HaveClearPathToTarget<br/>
+    /// Native code at BatmanAK.exe+0x489CD0 in the Steam build
     /// </summary>
     public unsafe virtual bool HaveClearPathToTarget()
     {
@@ -1612,7 +1613,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEnvironmentInfo;
     /// <summary>
-    /// Function: GetEnvironmentInfo
+    /// Function: GetEnvironmentInfo<br/>
+    /// Native code at BatmanAK.exe+0x4D2B90 in the Steam build
     /// </summary>
     public unsafe virtual int GetEnvironmentInfo(BmSDK.BmGame.RPawnVillain TargetPawn, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir EnvDir, bool bAllowInvalidWall = default, bool bAllowInNoEnvCounterVolume = default)
     {
@@ -1639,7 +1641,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyInfoSearchParams;
     /// <summary>
-    /// Function: ModifyInfoSearchParams
+    /// Function: ModifyInfoSearchParams<br/>
+    /// Native code at BatmanAK.exe+0x479D70 in the Steam build
     /// </summary>
     public unsafe virtual void ModifyInfoSearchParams(out BmSDK.BmGame.RGameInfo.StrikeDirection InfoDir, out BmSDK.BmGame.RGameInfo.StrikeStrength InfoStrength, out BmSDK.BmGame.RGameInfo.StrikeRange InfoRange, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoRailingDir, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoWallDir)
     {
@@ -1675,7 +1678,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanHitPawn;
     /// <summary>
-    /// Function: CanHitPawn
+    /// Function: CanHitPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FF230 in the Steam build
     /// </summary>
     public unsafe virtual bool CanHitPawn(BmSDK.BmGame.RPawnCombat TargetPawn)
     {
@@ -1697,7 +1701,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeWeaponPickup;
     /// <summary>
-    /// Function: GetScoreForStrikeWeaponPickup
+    /// Function: GetScoreForStrikeWeaponPickup<br/>
+    /// Native code at BatmanAK.exe+0x479CC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeWeaponPickup(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1719,7 +1724,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeWeaponGrabbed;
     /// <summary>
-    /// Function: GetScoreForStrikeWeaponGrabbed
+    /// Function: GetScoreForStrikeWeaponGrabbed<br/>
+    /// Native code at BatmanAK.exe+0x479C10 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeWeaponGrabbed(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1741,7 +1747,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeStartingHeight;
     /// <summary>
-    /// Function: GetScoreForStrikeStartingHeight
+    /// Function: GetScoreForStrikeStartingHeight<br/>
+    /// Native code at BatmanAK.exe+0x479B60 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeStartingHeight(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1763,7 +1770,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeTurnMotion;
     /// <summary>
-    /// Function: GetScoreForStrikeTurnMotion
+    /// Function: GetScoreForStrikeTurnMotion<br/>
+    /// Native code at BatmanAK.exe+0x479AB0 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeTurnMotion(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1785,7 +1793,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeSpeed;
     /// <summary>
-    /// Function: GetScoreForStrikeSpeed
+    /// Function: GetScoreForStrikeSpeed<br/>
+    /// Native code at BatmanAK.exe+0x479A00 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeSpeed(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1807,7 +1816,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForTimeSinceUse;
     /// <summary>
-    /// Function: GetScoreForTimeSinceUse
+    /// Function: GetScoreForTimeSinceUse<br/>
+    /// Native code at BatmanAK.exe+0x479950 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForTimeSinceUse(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1829,7 +1839,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeDir;
     /// <summary>
-    /// Function: GetScoreForStrikeDir
+    /// Function: GetScoreForStrikeDir<br/>
+    /// Native code at BatmanAK.exe+0x4798A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeDir(BmSDK.BmGame.RGameInfo.StrikeDirection TestDir, BmSDK.BmGame.RGameInfo.StrikeDirection DesDir)
     {
@@ -1852,7 +1863,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForStrikeRange;
     /// <summary>
-    /// Function: GetScoreForStrikeRange
+    /// Function: GetScoreForStrikeRange<br/>
+    /// Native code at BatmanAK.exe+0x4797F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForStrikeRange(BmSDK.BmGame.RGameInfo.StrikeRange TestRange, BmSDK.BmGame.RGameInfo.StrikeRange DesRange)
     {
@@ -1875,7 +1887,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreForHandedness;
     /// <summary>
-    /// Function: GetScoreForHandedness
+    /// Function: GetScoreForHandedness<br/>
+    /// Native code at BatmanAK.exe+0x479740 in the Steam build
     /// </summary>
     public unsafe virtual int GetScoreForHandedness(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike)
     {
@@ -1897,7 +1910,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeInfoScore;
     /// <summary>
-    /// Function: GetStrikeInfoScore
+    /// Function: GetStrikeInfoScore<br/>
+    /// Native code at BatmanAK.exe+0x479560 in the Steam build
     /// </summary>
     public unsafe virtual float GetStrikeInfoScore(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike, BmSDK.BmGame.RGameInfo.StrikeDirection StrikeDir, BmSDK.BmGame.RGameInfo.StrikeStrength StrikeStrength, BmSDK.BmGame.RGameInfo.StrikeRange StrikeRange, BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir StrikeRailingDir, BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir StrikeWallDir, System.Numerics.Vector3 ControllerDir)
     {
@@ -1925,7 +1939,8 @@ public partial class RCombatMove_BatmanStrike : BmSDK.BmGame.RCombatMove_BatmanW
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStrikeInfo;
     /// <summary>
-    /// Function: SetStrikeInfo
+    /// Function: SetStrikeInfo<br/>
+    /// Native code at BatmanAK.exe+0x46B4B0 in the Steam build
     /// </summary>
     public unsafe virtual int SetStrikeInfo()
     {

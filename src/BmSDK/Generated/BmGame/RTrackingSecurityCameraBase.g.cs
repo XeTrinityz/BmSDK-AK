@@ -75,7 +75,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LightSetup;
     /// <summary>
-    /// Function: LightSetup
+    /// Function: LightSetup<br/>
+    /// Native code at BatmanAK.exe+0x4B1810 in the Steam build
     /// </summary>
     public unsafe virtual void LightSetup(float innerAngle, float outerAngle, float Radius)
     {
@@ -99,7 +100,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredRotation;
     /// <summary>
-    /// Function: SetDesiredRotation
+    /// Function: SetDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0x46ECB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDesiredRotation(BmSDK.Rotator DesiredRot)
     {
@@ -121,7 +123,8 @@ public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnTowards;
     /// <summary>
-    /// Function: TurnTowards
+    /// Function: TurnTowards<br/>
+    /// Native code at BatmanAK.exe+0x46EC20 in the Steam build
     /// </summary>
     public unsafe virtual void TurnTowards(BmSDK.Rotator WantedRotation)
     {

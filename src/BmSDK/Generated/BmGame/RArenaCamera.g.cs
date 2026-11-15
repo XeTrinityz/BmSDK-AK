@@ -80,7 +80,8 @@ public partial class RArenaCamera : BmSDK.BmGame.RMultiTargetCamera, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCorrection;
     /// <summary>
-    /// Function: UpdateCorrection
+    /// Function: UpdateCorrection<br/>
+    /// Native code at BatmanAK.exe+0x4AF950 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCorrection(float DeltaTime)
     {

@@ -116,7 +116,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ReduceClonesDownToSingleVoice;
     /// <summary>
-    /// Function: ReduceClonesDownToSingleVoice
+    /// Function: ReduceClonesDownToSingleVoice<br/>
+    /// Native code at BatmanAK.exe+0x579550 in the Steam build
     /// </summary>
     public unsafe static bool ReduceClonesDownToSingleVoice(out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> VoicePawnRefList)
     {
@@ -269,7 +270,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StaticInitVoiceWeighting;
     /// <summary>
-    /// Function: StaticInitVoiceWeighting
+    /// Function: StaticInitVoiceWeighting<br/>
+    /// Native code at BatmanAK.exe+0x585580 in the Steam build
     /// </summary>
     public unsafe static void StaticInitVoiceWeighting(BmSDK.TArray<BmSDK.Engine.Actor> AvailableSpeakers, BmSDK.BmGame.RBarkGroupContext TestGroupContext, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting, bool bLocalLogAssignment = default)
     {
@@ -293,7 +295,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StaticGetVoiceSwitchPenalty;
     /// <summary>
-    /// Function: StaticGetVoiceSwitchPenalty
+    /// Function: StaticGetVoiceSwitchPenalty<br/>
+    /// Native code at BatmanAK.exe+0x585230 in the Steam build
     /// </summary>
     public unsafe static int StaticGetVoiceSwitchPenalty(BmSDK.Engine.Actor TestActor, BmSDK.Engine.AkDialogueVoice TestVoice, BmSDK.BmGame.RBarkGroupContext TestGroupContext, BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting)
     {
@@ -317,7 +320,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoLivePawnAndVoiceAssignment;
     /// <summary>
-    /// Function: DoLivePawnAndVoiceAssignment
+    /// Function: DoLivePawnAndVoiceAssignment<br/>
+    /// Native code at BatmanAK.exe+0x5793C0 in the Steam build
     /// </summary>
     public unsafe virtual bool DoLivePawnAndVoiceAssignment(BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> SpeakerSlotStartState, BmSDK.TArray<BmSDK.Engine.Actor> AvailableSpeakers, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FLiveAssignEndState> OutList)
     {
@@ -341,7 +345,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLineRepetitionOkay;
     /// <summary>
-    /// Function: CheckLineRepetitionOkay
+    /// Function: CheckLineRepetitionOkay<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLineRepetitionOkay()
     {
@@ -362,7 +367,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsOnceEverDialogueEvent;
     /// <summary>
-    /// Function: ContainsOnceEverDialogueEvent
+    /// Function: ContainsOnceEverDialogueEvent<br/>
+    /// Native code at BatmanAK.exe+0xB36010 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsOnceEverDialogueEvent()
     {
@@ -383,7 +389,8 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsOnceOnlyDialogueEvent;
     /// <summary>
-    /// Function: ContainsOnceOnlyDialogueEvent
+    /// Function: ContainsOnceOnlyDialogueEvent<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsOnceOnlyDialogueEvent()
     {
@@ -860,7 +867,8 @@ public static class RBarkConvoStatics
 {
     private static BmSDK.Function __fn_ReduceClonesDownToSingleVoice;
     /// <summary>
-    /// Function: ReduceClonesDownToSingleVoice, run on <paramref name="self"/> rather than the class default object
+    /// Function: ReduceClonesDownToSingleVoice, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x579550 in the Steam build
     /// </summary>
     public unsafe static bool ReduceClonesDownToSingleVoice(this BmSDK.BmGame.RBarkConvo self, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> VoicePawnRefList)
     {
@@ -882,7 +890,8 @@ public static class RBarkConvoStatics
 
     private static BmSDK.Function __fn_StaticInitVoiceWeighting;
     /// <summary>
-    /// Function: StaticInitVoiceWeighting, run on <paramref name="self"/> rather than the class default object
+    /// Function: StaticInitVoiceWeighting, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x585580 in the Steam build
     /// </summary>
     public unsafe static void StaticInitVoiceWeighting(this BmSDK.BmGame.RBarkConvo self, BmSDK.TArray<BmSDK.Engine.Actor> AvailableSpeakers, BmSDK.BmGame.RBarkGroupContext TestGroupContext, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting, bool bLocalLogAssignment = default)
     {
@@ -907,7 +916,8 @@ public static class RBarkConvoStatics
 
     private static BmSDK.Function __fn_StaticGetVoiceSwitchPenalty;
     /// <summary>
-    /// Function: StaticGetVoiceSwitchPenalty, run on <paramref name="self"/> rather than the class default object
+    /// Function: StaticGetVoiceSwitchPenalty, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x585230 in the Steam build
     /// </summary>
     public unsafe static int StaticGetVoiceSwitchPenalty(this BmSDK.BmGame.RBarkConvo self, BmSDK.Engine.Actor TestActor, BmSDK.Engine.AkDialogueVoice TestVoice, BmSDK.BmGame.RBarkGroupContext TestGroupContext, BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting)
     {

@@ -166,7 +166,8 @@ public partial class RCrowdAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttractionForce;
     /// <summary>
-    /// Function: GetAttractionForce
+    /// Function: GetAttractionForce<br/>
+    /// Native code at BatmanAK.exe+0x4A9610 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAttractionForce(BmSDK.BmGame.RCrowdAgent Agent, float DeltaTime)
     {

@@ -80,7 +80,8 @@ public partial class AkDialogueTape : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0xFDDCC0 in the Steam build
     /// </summary>
     public unsafe static void Stop(BmSDK.AkAudio.AkDialogueTape dlgTape)
     {
@@ -101,7 +102,8 @@ public partial class AkDialogueTape : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Start;
     /// <summary>
-    /// Function: Start
+    /// Function: Start<br/>
+    /// Native code at BatmanAK.exe+0xFE9170 in the Steam build
     /// </summary>
     public unsafe static int Start(BmSDK.AkAudio.AkDialogueTape dlgTape, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgCallbacks)
     {
@@ -209,7 +211,8 @@ public static class AkDialogueTapeStatics
 {
     private static BmSDK.Function __fn_Stop;
     /// <summary>
-    /// Function: Stop, run on <paramref name="self"/> rather than the class default object
+    /// Function: Stop, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xFDDCC0 in the Steam build
     /// </summary>
     public unsafe static void Stop(this BmSDK.AkAudio.AkDialogueTape self, BmSDK.AkAudio.AkDialogueTape dlgTape)
     {
@@ -231,7 +234,8 @@ public static class AkDialogueTapeStatics
 
     private static BmSDK.Function __fn_Start;
     /// <summary>
-    /// Function: Start, run on <paramref name="self"/> rather than the class default object
+    /// Function: Start, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xFE9170 in the Steam build
     /// </summary>
     public unsafe static int Start(this BmSDK.AkAudio.AkDialogueTape self, BmSDK.AkAudio.AkDialogueTape dlgTape, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgCallbacks)
     {

@@ -94,7 +94,8 @@ public partial class SeqVar_Player : BmSDK.Engine.SeqVar_Object, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayersList;
     /// <summary>
-    /// Function: UpdatePlayersList
+    /// Function: UpdatePlayersList<br/>
+    /// Native code at BatmanAK.exe+0xB2A350 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePlayersList()
     {

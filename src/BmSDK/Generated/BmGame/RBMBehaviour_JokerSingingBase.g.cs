@@ -80,7 +80,8 @@ public partial class RBMBehaviour_JokerSingingBase : BmSDK.BmGame.RBMBehaviour, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSongTime;
     /// <summary>
-    /// Function: GetSongTime
+    /// Function: GetSongTime<br/>
+    /// Native code at BatmanAK.exe+0xB53DA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSongTime(float songLength)
     {

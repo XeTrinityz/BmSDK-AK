@@ -125,7 +125,8 @@ public partial class RVehicleBehaviour_StopAndSpawnBase : BmSDK.BmGame.RVehicleB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckToHitTarget;
     /// <summary>
-    /// Function: CheckToHitTarget
+    /// Function: CheckToHitTarget<br/>
+    /// Native code at BatmanAK.exe+0x46E050 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckToHitTarget()
     {
@@ -146,7 +147,8 @@ public partial class RVehicleBehaviour_StopAndSpawnBase : BmSDK.BmGame.RVehicleB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x526290 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class PawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, BmSDK.Class WeaponType, System.Numerics.Vector3 NewSpawnLoc, BmSDK.Rotator NewSpawnRot)
     {

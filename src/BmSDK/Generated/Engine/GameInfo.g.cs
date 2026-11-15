@@ -168,7 +168,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableStandbyCheatDetection;
     /// <summary>
-    /// Function: EnableStandbyCheatDetection
+    /// Function: EnableStandbyCheatDetection<br/>
+    /// Native code at BatmanAK.exe+0x4AFD00 in the Steam build
     /// </summary>
     public unsafe virtual void EnableStandbyCheatDetection(bool bIsEnabled)
     {
@@ -558,7 +559,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapPlayerControllers;
     /// <summary>
-    /// Function: SwapPlayerControllers
+    /// Function: SwapPlayerControllers<br/>
+    /// Native code at BatmanAK.exe+0xB72BD0 in the Steam build
     /// </summary>
     public unsafe virtual void SwapPlayerControllers(BmSDK.Engine.PlayerController OldPC, BmSDK.Engine.PlayerController NewPC)
     {
@@ -1717,7 +1719,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextPlayerID;
     /// <summary>
-    /// Function: GetNextPlayerID
+    /// Function: GetNextPlayerID<br/>
+    /// Native code at BatmanAK.exe+0xB3B490 in the Steam build
     /// </summary>
     public unsafe virtual int GetNextPlayerID()
     {
@@ -1753,7 +1756,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RejectLogin;
     /// <summary>
-    /// Function: RejectLogin
+    /// Function: RejectLogin<br/>
+    /// Native code at BatmanAK.exe+0xBA6090 in the Steam build
     /// </summary>
     public unsafe static void RejectLogin(BmSDK.Engine.Player InPlayer, BmSDK.FStringArg Error)
     {
@@ -1776,7 +1780,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResumeLogin;
     /// <summary>
-    /// Function: ResumeLogin
+    /// Function: ResumeLogin<br/>
+    /// Native code at BatmanAK.exe+0xB72AB0 in the Steam build
     /// </summary>
     public unsafe static void ResumeLogin(BmSDK.Engine.Player InPlayer)
     {
@@ -1797,7 +1802,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PauseLogin;
     /// <summary>
-    /// Function: PauseLogin
+    /// Function: PauseLogin<br/>
+    /// Native code at BatmanAK.exe+0xB3B440 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Player PauseLogin()
     {
@@ -2101,7 +2107,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceClearUnpauseDelegates;
     /// <summary>
-    /// Function: ForceClearUnpauseDelegates
+    /// Function: ForceClearUnpauseDelegates<br/>
+    /// Native code at BatmanAK.exe+0xB72990 in the Steam build
     /// </summary>
     public unsafe virtual void ForceClearUnpauseDelegates(BmSDK.Engine.Actor PauseActor)
     {
@@ -2181,7 +2188,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNetworkNumber;
     /// <summary>
-    /// Function: GetNetworkNumber
+    /// Function: GetNetworkNumber<br/>
+    /// Native code at BatmanAK.exe+0xBA6010 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetNetworkNumber()
     {
@@ -2277,7 +2285,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoNavFearCostFallOff;
     /// <summary>
-    /// Function: DoNavFearCostFallOff
+    /// Function: DoNavFearCostFallOff<br/>
+    /// Native code at BatmanAK.exe+0xB3B400 in the Steam build
     /// </summary>
     public unsafe virtual void DoNavFearCostFallOff()
     {
@@ -2298,7 +2307,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStartInCinematicMode;
     /// <summary>
-    /// Function: ShouldStartInCinematicMode
+    /// Function: ShouldStartInCinematicMode<br/>
+    /// Native code at BatmanAK.exe+0xB3B220 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldStartInCinematicMode(out int OutHidePlayer, out int OutHideHud, out int OutDisableMovement, out int OutDisableTurning, out int OutDisableInput)
     {
@@ -2426,7 +2436,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapCommonPackageName;
     /// <summary>
-    /// Function: GetMapCommonPackageName
+    /// Function: GetMapCommonPackageName<br/>
+    /// Native code at BatmanAK.exe+0xBA5ED0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetMapCommonPackageName(out BmSDK.FString InFilename, out BmSDK.FString OutCommonPackageName)
     {
@@ -2449,7 +2460,8 @@ public partial class GameInfo : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSupportedGameTypes;
     /// <summary>
-    /// Function: GetSupportedGameTypes
+    /// Function: GetSupportedGameTypes<br/>
+    /// Native code at BatmanAK.exe+0xBBC280 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSupportedGameTypes(out BmSDK.FString InFilename, out BmSDK.Engine.GameInfo.FGameTypePrefix OutGameType, bool bCheckExt = default)
     {
@@ -3718,7 +3730,8 @@ public static class GameInfoStatics
 {
     private static BmSDK.Function __fn_RejectLogin;
     /// <summary>
-    /// Function: RejectLogin, run on <paramref name="self"/> rather than the class default object
+    /// Function: RejectLogin, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA6090 in the Steam build
     /// </summary>
     public unsafe static void RejectLogin(this BmSDK.Engine.GameInfo self, BmSDK.Engine.Player InPlayer, BmSDK.FStringArg Error)
     {
@@ -3742,7 +3755,8 @@ public static class GameInfoStatics
 
     private static BmSDK.Function __fn_ResumeLogin;
     /// <summary>
-    /// Function: ResumeLogin, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResumeLogin, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB72AB0 in the Steam build
     /// </summary>
     public unsafe static void ResumeLogin(this BmSDK.Engine.GameInfo self, BmSDK.Engine.Player InPlayer)
     {
@@ -3764,7 +3778,8 @@ public static class GameInfoStatics
 
     private static BmSDK.Function __fn_PauseLogin;
     /// <summary>
-    /// Function: PauseLogin, run on <paramref name="self"/> rather than the class default object
+    /// Function: PauseLogin, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B440 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Player PauseLogin(this BmSDK.Engine.GameInfo self)
     {

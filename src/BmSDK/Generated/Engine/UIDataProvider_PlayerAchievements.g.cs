@@ -214,7 +214,8 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxTotalGamerScore;
     /// <summary>
-    /// Function: GetMaxTotalGamerScore
+    /// Function: GetMaxTotalGamerScore<br/>
+    /// Native code at BatmanAK.exe+0xB2CF90 in the Steam build
     /// </summary>
     public unsafe virtual int GetMaxTotalGamerScore()
     {
@@ -235,7 +236,8 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalGamerScore;
     /// <summary>
-    /// Function: GetTotalGamerScore
+    /// Function: GetTotalGamerScore<br/>
+    /// Native code at BatmanAK.exe+0xB2CF40 in the Steam build
     /// </summary>
     public unsafe virtual int GetTotalGamerScore()
     {

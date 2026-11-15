@@ -109,7 +109,8 @@ public partial class RMagneticBlastVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFindTouchingActors;
     /// <summary>
-    /// Function: ForceFindTouchingActors
+    /// Function: ForceFindTouchingActors<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceFindTouchingActors()
     {

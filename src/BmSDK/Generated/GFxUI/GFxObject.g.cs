@@ -114,7 +114,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachMovie;
     /// <summary>
-    /// Function: AttachMovie
+    /// Function: AttachMovie<br/>
+    /// Native code at BatmanAK.exe+0x61F5F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject AttachMovie(BmSDK.FStringArg symbolname, BmSDK.FStringArg instancename, int Depth = default, BmSDK.Class Type = default)
     {
@@ -141,7 +142,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateEmptyMovieClip;
     /// <summary>
-    /// Function: CreateEmptyMovieClip
+    /// Function: CreateEmptyMovieClip<br/>
+    /// Native code at BatmanAK.exe+0x61F420 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject CreateEmptyMovieClip(BmSDK.FStringArg instancename, int Depth = default, BmSDK.Class Type = default)
     {
@@ -166,7 +168,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoAndStopI;
     /// <summary>
-    /// Function: GotoAndStopI
+    /// Function: GotoAndStopI<br/>
+    /// Native code at BatmanAK.exe+0x5EB710 in the Steam build
     /// </summary>
     public unsafe virtual void GotoAndStopI(int Frame)
     {
@@ -188,7 +191,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoAndStop;
     /// <summary>
-    /// Function: GotoAndStop
+    /// Function: GotoAndStop<br/>
+    /// Native code at BatmanAK.exe+0x61F2E0 in the Steam build
     /// </summary>
     public unsafe virtual void GotoAndStop(BmSDK.FStringArg Frame)
     {
@@ -211,7 +215,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoAndPlayI;
     /// <summary>
-    /// Function: GotoAndPlayI
+    /// Function: GotoAndPlayI<br/>
+    /// Native code at BatmanAK.exe+0x5EB5F0 in the Steam build
     /// </summary>
     public unsafe virtual void GotoAndPlayI(int Frame)
     {
@@ -233,7 +238,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoAndPlay;
     /// <summary>
-    /// Function: GotoAndPlay
+    /// Function: GotoAndPlay<br/>
+    /// Native code at BatmanAK.exe+0x61F1A0 in the Steam build
     /// </summary>
     public unsafe virtual void GotoAndPlay(BmSDK.FStringArg Frame)
     {
@@ -256,7 +262,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptArray;
     /// <summary>
-    /// Function: ActionScriptArray
+    /// Function: ActionScriptArray<br/>
+    /// Native code at BatmanAK.exe+0x5CBB40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.GFxUI.GFxObject> ActionScriptArray(BmSDK.FStringArg Path)
     {
@@ -279,7 +286,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptObject;
     /// <summary>
-    /// Function: ActionScriptObject
+    /// Function: ActionScriptObject<br/>
+    /// Native code at BatmanAK.exe+0x5CBAB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject ActionScriptObject(BmSDK.FStringArg Path)
     {
@@ -302,7 +310,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptString;
     /// <summary>
-    /// Function: ActionScriptString
+    /// Function: ActionScriptString<br/>
+    /// Native code at BatmanAK.exe+0x5CBA20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ActionScriptString(BmSDK.FStringArg method)
     {
@@ -325,7 +334,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptFloat;
     /// <summary>
-    /// Function: ActionScriptFloat
+    /// Function: ActionScriptFloat<br/>
+    /// Native code at BatmanAK.exe+0x5CB990 in the Steam build
     /// </summary>
     public unsafe virtual float ActionScriptFloat(BmSDK.FStringArg method)
     {
@@ -348,7 +358,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptInt;
     /// <summary>
-    /// Function: ActionScriptInt
+    /// Function: ActionScriptInt<br/>
+    /// Native code at BatmanAK.exe+0x5CB900 in the Steam build
     /// </summary>
     public unsafe virtual int ActionScriptInt(BmSDK.FStringArg method)
     {
@@ -371,7 +382,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptVoid;
     /// <summary>
-    /// Function: ActionScriptVoid
+    /// Function: ActionScriptVoid<br/>
+    /// Native code at BatmanAK.exe+0x5CB870 in the Steam build
     /// </summary>
     public unsafe virtual void ActionScriptVoid(BmSDK.FStringArg method)
     {
@@ -394,7 +406,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Invoke;
     /// <summary>
-    /// Function: Invoke
+    /// Function: Invoke<br/>
+    /// Native code at BatmanAK.exe+0x664B90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue Invoke(BmSDK.FStringArg Member, BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> args)
     {
@@ -418,7 +431,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptSetFunctionOn;
     /// <summary>
-    /// Function: ActionScriptSetFunctionOn
+    /// Function: ActionScriptSetFunctionOn<br/>
+    /// Native code at BatmanAK.exe+0x5C0300 in the Steam build
     /// </summary>
     public unsafe virtual void ActionScriptSetFunctionOn(BmSDK.GFxUI.GFxObject Target, BmSDK.FStringArg Member)
     {
@@ -442,7 +456,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptSetFunction;
     /// <summary>
-    /// Function: ActionScriptSetFunction
+    /// Function: ActionScriptSetFunction<br/>
+    /// Native code at BatmanAK.exe+0x5BFFC0 in the Steam build
     /// </summary>
     public unsafe virtual void ActionScriptSetFunction(BmSDK.FStringArg Member)
     {
@@ -465,7 +480,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMemberString;
     /// <summary>
-    /// Function: SetElementMemberString
+    /// Function: SetElementMemberString<br/>
+    /// Native code at BatmanAK.exe+0x61EEE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMemberString(int Index, BmSDK.FStringArg Member, BmSDK.FStringArg S)
     {
@@ -491,7 +507,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMemberInt;
     /// <summary>
-    /// Function: SetElementMemberInt
+    /// Function: SetElementMemberInt<br/>
+    /// Native code at BatmanAK.exe+0x61EC30 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMemberInt(int Index, BmSDK.FStringArg Member, int I)
     {
@@ -516,7 +533,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMemberFloat;
     /// <summary>
-    /// Function: SetElementMemberFloat
+    /// Function: SetElementMemberFloat<br/>
+    /// Native code at BatmanAK.exe+0x61E960 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMemberFloat(int Index, BmSDK.FStringArg Member, float F)
     {
@@ -541,7 +559,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMemberBool;
     /// <summary>
-    /// Function: SetElementMemberBool
+    /// Function: SetElementMemberBool<br/>
+    /// Native code at BatmanAK.exe+0x61E6B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMemberBool(int Index, BmSDK.FStringArg Member, bool B)
     {
@@ -566,7 +585,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMemberObject;
     /// <summary>
-    /// Function: SetElementMemberObject
+    /// Function: SetElementMemberObject<br/>
+    /// Native code at BatmanAK.exe+0x61E400 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMemberObject(int Index, BmSDK.FStringArg Member, BmSDK.GFxUI.GFxObject val)
     {
@@ -591,7 +611,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementMember;
     /// <summary>
-    /// Function: SetElementMember
+    /// Function: SetElementMember<br/>
+    /// Native code at BatmanAK.exe+0x61E150 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementMember(int Index, BmSDK.FStringArg Member, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
@@ -616,7 +637,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMemberString;
     /// <summary>
-    /// Function: GetElementMemberString
+    /// Function: GetElementMemberString<br/>
+    /// Native code at BatmanAK.exe+0x61DF20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetElementMemberString(int Index, BmSDK.FStringArg Member)
     {
@@ -640,7 +662,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMemberInt;
     /// <summary>
-    /// Function: GetElementMemberInt
+    /// Function: GetElementMemberInt<br/>
+    /// Native code at BatmanAK.exe+0x61DD10 in the Steam build
     /// </summary>
     public unsafe virtual int GetElementMemberInt(int Index, BmSDK.FStringArg Member)
     {
@@ -664,7 +687,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMemberFloat;
     /// <summary>
-    /// Function: GetElementMemberFloat
+    /// Function: GetElementMemberFloat<br/>
+    /// Native code at BatmanAK.exe+0x61DB00 in the Steam build
     /// </summary>
     public unsafe virtual float GetElementMemberFloat(int Index, BmSDK.FStringArg Member)
     {
@@ -688,7 +712,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMemberBool;
     /// <summary>
-    /// Function: GetElementMemberBool
+    /// Function: GetElementMemberBool<br/>
+    /// Native code at BatmanAK.exe+0x61D8F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetElementMemberBool(int Index, BmSDK.FStringArg Member)
     {
@@ -712,7 +737,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMemberObject;
     /// <summary>
-    /// Function: GetElementMemberObject
+    /// Function: GetElementMemberObject<br/>
+    /// Native code at BatmanAK.exe+0x61D680 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetElementMemberObject(int Index, BmSDK.FStringArg Member, BmSDK.Class Type = default)
     {
@@ -737,7 +763,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementMember;
     /// <summary>
-    /// Function: GetElementMember
+    /// Function: GetElementMember<br/>
+    /// Native code at BatmanAK.exe+0x61D440 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue GetElementMember(int Index, BmSDK.FStringArg Member)
     {
@@ -761,7 +788,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementColorTransform;
     /// <summary>
-    /// Function: SetElementColorTransform
+    /// Function: SetElementColorTransform<br/>
+    /// Native code at BatmanAK.exe+0x5EB480 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementColorTransform(int Index, BmSDK.GFxUI.GFxObject.FASColorTransform cxform)
     {
@@ -784,7 +812,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementPosition;
     /// <summary>
-    /// Function: SetElementPosition
+    /// Function: SetElementPosition<br/>
+    /// Native code at BatmanAK.exe+0x5EB1C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementPosition(int Index, float X, float Y)
     {
@@ -808,7 +837,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementVisible;
     /// <summary>
-    /// Function: SetElementVisible
+    /// Function: SetElementVisible<br/>
+    /// Native code at BatmanAK.exe+0x5EAFE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementVisible(int Index, bool Visible)
     {
@@ -831,7 +861,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementDisplayMatrix;
     /// <summary>
-    /// Function: SetElementDisplayMatrix
+    /// Function: SetElementDisplayMatrix<br/>
+    /// Native code at BatmanAK.exe+0x5BFCB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementDisplayMatrix(int Index, BmSDK.GameObject.FMatrix M)
     {
@@ -854,7 +885,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementDisplayInfo;
     /// <summary>
-    /// Function: SetElementDisplayInfo
+    /// Function: SetElementDisplayInfo<br/>
+    /// Native code at BatmanAK.exe+0x5EAE50 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementDisplayInfo(int Index, BmSDK.GFxUI.GFxObject.FASDisplayInfo D)
     {
@@ -877,7 +909,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementDisplayMatrix;
     /// <summary>
-    /// Function: GetElementDisplayMatrix
+    /// Function: GetElementDisplayMatrix<br/>
+    /// Native code at BatmanAK.exe+0x5EACF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetElementDisplayMatrix(int Index)
     {
@@ -899,7 +932,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementDisplayInfo;
     /// <summary>
-    /// Function: GetElementDisplayInfo
+    /// Function: GetElementDisplayInfo<br/>
+    /// Native code at BatmanAK.exe+0x5EABA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASDisplayInfo GetElementDisplayInfo(int Index)
     {
@@ -921,7 +955,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementString;
     /// <summary>
-    /// Function: SetElementString
+    /// Function: SetElementString<br/>
+    /// Native code at BatmanAK.exe+0x61D250 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementString(int Index, BmSDK.FStringArg S)
     {
@@ -945,7 +980,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementInt;
     /// <summary>
-    /// Function: SetElementInt
+    /// Function: SetElementInt<br/>
+    /// Native code at BatmanAK.exe+0x5EA9C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementInt(int Index, int I)
     {
@@ -968,7 +1004,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementFloat;
     /// <summary>
-    /// Function: SetElementFloat
+    /// Function: SetElementFloat<br/>
+    /// Native code at BatmanAK.exe+0x5EA7D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementFloat(int Index, float F)
     {
@@ -991,7 +1028,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementBool;
     /// <summary>
-    /// Function: SetElementBool
+    /// Function: SetElementBool<br/>
+    /// Native code at BatmanAK.exe+0x5EA5F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementBool(int Index, bool B)
     {
@@ -1014,7 +1052,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElementObject;
     /// <summary>
-    /// Function: SetElementObject
+    /// Function: SetElementObject<br/>
+    /// Native code at BatmanAK.exe+0x5EA410 in the Steam build
     /// </summary>
     public unsafe virtual void SetElementObject(int Index, BmSDK.GFxUI.GFxObject val)
     {
@@ -1037,7 +1076,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetElement;
     /// <summary>
-    /// Function: SetElement
+    /// Function: SetElement<br/>
+    /// Native code at BatmanAK.exe+0x61D070 in the Steam build
     /// </summary>
     public unsafe virtual void SetElement(int Index, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
@@ -1060,7 +1100,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementString;
     /// <summary>
-    /// Function: GetElementString
+    /// Function: GetElementString<br/>
+    /// Native code at BatmanAK.exe+0x61CF10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetElementString(int Index)
     {
@@ -1082,7 +1123,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementInt;
     /// <summary>
-    /// Function: GetElementInt
+    /// Function: GetElementInt<br/>
+    /// Native code at BatmanAK.exe+0x5EA2E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetElementInt(int Index)
     {
@@ -1104,7 +1146,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementFloat;
     /// <summary>
-    /// Function: GetElementFloat
+    /// Function: GetElementFloat<br/>
+    /// Native code at BatmanAK.exe+0x5EA1A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetElementFloat(int Index)
     {
@@ -1126,7 +1169,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementBool;
     /// <summary>
-    /// Function: GetElementBool
+    /// Function: GetElementBool<br/>
+    /// Native code at BatmanAK.exe+0x5EA070 in the Steam build
     /// </summary>
     public unsafe virtual bool GetElementBool(int Index)
     {
@@ -1148,7 +1192,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElementObject;
     /// <summary>
-    /// Function: GetElementObject
+    /// Function: GetElementObject<br/>
+    /// Native code at BatmanAK.exe+0x5E9EE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetElementObject(int Index, BmSDK.Class Type = default)
     {
@@ -1171,7 +1216,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetElement;
     /// <summary>
-    /// Function: GetElement
+    /// Function: GetElement<br/>
+    /// Native code at BatmanAK.exe+0x61CD90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue GetElement(int Index)
     {
@@ -1193,7 +1239,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetText;
     /// <summary>
-    /// Function: SetText
+    /// Function: SetText<br/>
+    /// Native code at BatmanAK.exe+0x61CC30 in the Steam build
     /// </summary>
     public unsafe virtual void SetText(BmSDK.FStringArg Text, BmSDK.Engine.TranslationContext InContext = default)
     {
@@ -1217,7 +1264,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetText;
     /// <summary>
-    /// Function: GetText
+    /// Function: GetText<br/>
+    /// Native code at BatmanAK.exe+0x61CBB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetText()
     {
@@ -1238,7 +1286,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisible;
     /// <summary>
-    /// Function: SetVisible
+    /// Function: SetVisible<br/>
+    /// Native code at BatmanAK.exe+0x5E9DC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVisible(bool Visible)
     {
@@ -1260,7 +1309,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteToByteArray;
     /// <summary>
-    /// Function: WriteToByteArray
+    /// Function: WriteToByteArray<br/>
+    /// Native code at BatmanAK.exe+0x638820 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteToByteArray(BmSDK.TArray<byte> A, int bytes)
     {
@@ -1283,7 +1333,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadFromByteArray;
     /// <summary>
-    /// Function: ReadFromByteArray
+    /// Function: ReadFromByteArray<br/>
+    /// Native code at BatmanAK.exe+0x638690 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadFromByteArray(out BmSDK.TArray<byte> A, int bytes)
     {
@@ -1306,7 +1357,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetByteArraySize;
     /// <summary>
-    /// Function: GetByteArraySize
+    /// Function: GetByteArraySize<br/>
+    /// Native code at BatmanAK.exe+0x5E9D70 in the Steam build
     /// </summary>
     public unsafe virtual int GetByteArraySize()
     {
@@ -1327,7 +1379,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsByteArray;
     /// <summary>
-    /// Function: IsByteArray
+    /// Function: IsByteArray<br/>
+    /// Native code at BatmanAK.exe+0x5E9D20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsByteArray()
     {
@@ -1348,7 +1401,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayMatrix3D;
     /// <summary>
-    /// Function: SetDisplayMatrix3D
+    /// Function: SetDisplayMatrix3D<br/>
+    /// Native code at BatmanAK.exe+0x5C17C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisplayMatrix3D(BmSDK.GameObject.FMatrix M)
     {
@@ -1370,7 +1424,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayMatrix;
     /// <summary>
-    /// Function: SetDisplayMatrix
+    /// Function: SetDisplayMatrix<br/>
+    /// Native code at BatmanAK.exe+0x5BE2C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisplayMatrix(BmSDK.GameObject.FMatrix M)
     {
@@ -1392,7 +1447,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetColorTransform;
     /// <summary>
-    /// Function: SetColorTransform
+    /// Function: SetColorTransform<br/>
+    /// Native code at BatmanAK.exe+0x5E9C90 in the Steam build
     /// </summary>
     public unsafe virtual void SetColorTransform(BmSDK.GFxUI.GFxObject.FASColorTransform cxform)
     {
@@ -1414,7 +1470,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPosition;
     /// <summary>
-    /// Function: SetPosition
+    /// Function: SetPosition<br/>
+    /// Native code at BatmanAK.exe+0x5E9A90 in the Steam build
     /// </summary>
     public unsafe virtual void SetPosition(float X, float Y)
     {
@@ -1437,7 +1494,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayInfo;
     /// <summary>
-    /// Function: SetDisplayInfo
+    /// Function: SetDisplayInfo<br/>
+    /// Native code at BatmanAK.exe+0x5E99E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisplayInfo(BmSDK.GFxUI.GFxObject.FASDisplayInfo D)
     {
@@ -1459,7 +1517,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayMatrix3D;
     /// <summary>
-    /// Function: GetDisplayMatrix3D
+    /// Function: GetDisplayMatrix3D<br/>
+    /// Native code at BatmanAK.exe+0x5E9970 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetDisplayMatrix3D()
     {
@@ -1480,7 +1539,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayMatrix;
     /// <summary>
-    /// Function: GetDisplayMatrix
+    /// Function: GetDisplayMatrix<br/>
+    /// Native code at BatmanAK.exe+0x5E9900 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetDisplayMatrix()
     {
@@ -1501,7 +1561,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetColorTransform;
     /// <summary>
-    /// Function: GetColorTransform
+    /// Function: GetColorTransform<br/>
+    /// Native code at BatmanAK.exe+0x5E9880 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASColorTransform GetColorTransform()
     {
@@ -1522,7 +1583,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosition;
     /// <summary>
-    /// Function: GetPosition
+    /// Function: GetPosition<br/>
+    /// Native code at BatmanAK.exe+0x5E9780 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPosition(out float X, out float Y)
     {
@@ -1549,7 +1611,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayInfo;
     /// <summary>
-    /// Function: GetDisplayInfo
+    /// Function: GetDisplayInfo<br/>
+    /// Native code at BatmanAK.exe+0x5E9720 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASDisplayInfo GetDisplayInfo()
     {
@@ -1570,7 +1633,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_TranslateString;
     /// <summary>
-    /// Function: TranslateString
+    /// Function: TranslateString<br/>
+    /// Native code at BatmanAK.exe+0x61CA10 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString TranslateString(BmSDK.FStringArg StringToTranslate, BmSDK.Engine.TranslationContext InContext = default)
     {
@@ -1593,7 +1657,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFunction;
     /// <summary>
-    /// Function: SetFunction
+    /// Function: SetFunction<br/>
+    /// Native code at BatmanAK.exe+0x61C770 in the Steam build
     /// </summary>
     public unsafe virtual void SetFunction(BmSDK.FStringArg Member, BmSDK.GameObject context, BmSDK.FName fname)
     {
@@ -1618,7 +1683,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObject;
     /// <summary>
-    /// Function: SetObject
+    /// Function: SetObject<br/>
+    /// Native code at BatmanAK.exe+0x61C590 in the Steam build
     /// </summary>
     public unsafe virtual void SetObject(BmSDK.FStringArg Member, BmSDK.GFxUI.GFxObject val)
     {
@@ -1642,7 +1708,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetString;
     /// <summary>
-    /// Function: SetString
+    /// Function: SetString<br/>
+    /// Native code at BatmanAK.exe+0x61C350 in the Steam build
     /// </summary>
     public unsafe virtual void SetString(BmSDK.FStringArg Member, BmSDK.FStringArg S, BmSDK.Engine.TranslationContext InContext = default)
     {
@@ -1668,7 +1735,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInt;
     /// <summary>
-    /// Function: SetInt
+    /// Function: SetInt<br/>
+    /// Native code at BatmanAK.exe+0x61C170 in the Steam build
     /// </summary>
     public unsafe virtual void SetInt(BmSDK.FStringArg Member, int I)
     {
@@ -1692,7 +1760,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloat;
     /// <summary>
-    /// Function: SetFloat
+    /// Function: SetFloat<br/>
+    /// Native code at BatmanAK.exe+0x61BF80 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloat(BmSDK.FStringArg Member, float F)
     {
@@ -1716,7 +1785,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBool;
     /// <summary>
-    /// Function: SetBool
+    /// Function: SetBool<br/>
+    /// Native code at BatmanAK.exe+0x61BD90 in the Steam build
     /// </summary>
     public unsafe virtual void SetBool(BmSDK.FStringArg Member, bool B)
     {
@@ -1740,7 +1810,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Set;
     /// <summary>
-    /// Function: Set
+    /// Function: Set<br/>
+    /// Native code at BatmanAK.exe+0x61BB90 in the Steam build
     /// </summary>
     public unsafe virtual void Set(BmSDK.FStringArg Member, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
@@ -1764,7 +1835,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObject;
     /// <summary>
-    /// Function: GetObject
+    /// Function: GetObject<br/>
+    /// Native code at BatmanAK.exe+0x61B9F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetObject(BmSDK.FStringArg Member, BmSDK.Class Type = default)
     {
@@ -1788,7 +1860,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetString;
     /// <summary>
-    /// Function: GetString
+    /// Function: GetString<br/>
+    /// Native code at BatmanAK.exe+0x61B880 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetString(BmSDK.FStringArg Member)
     {
@@ -1811,7 +1884,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInt;
     /// <summary>
-    /// Function: GetInt
+    /// Function: GetInt<br/>
+    /// Native code at BatmanAK.exe+0x61B730 in the Steam build
     /// </summary>
     public unsafe virtual int GetInt(BmSDK.FStringArg Member)
     {
@@ -1834,7 +1908,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloat;
     /// <summary>
-    /// Function: GetFloat
+    /// Function: GetFloat<br/>
+    /// Native code at BatmanAK.exe+0x61B5E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetFloat(BmSDK.FStringArg Member)
     {
@@ -1857,7 +1932,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBool;
     /// <summary>
-    /// Function: GetBool
+    /// Function: GetBool<br/>
+    /// Native code at BatmanAK.exe+0x61B490 in the Steam build
     /// </summary>
     public unsafe virtual bool GetBool(BmSDK.FStringArg Member)
     {
@@ -1880,7 +1956,8 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Get;
     /// <summary>
-    /// Function: Get
+    /// Function: Get<br/>
+    /// Native code at BatmanAK.exe+0x61B300 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue Get(BmSDK.FStringArg Member)
     {
@@ -2251,7 +2328,8 @@ public static class GFxObjectStatics
 {
     private static BmSDK.Function __fn_TranslateString;
     /// <summary>
-    /// Function: TranslateString, run on <paramref name="self"/> rather than the class default object
+    /// Function: TranslateString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x61CA10 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString TranslateString(this BmSDK.GFxUI.GFxObject self, BmSDK.FStringArg StringToTranslate, BmSDK.Engine.TranslationContext InContext = default)
     {

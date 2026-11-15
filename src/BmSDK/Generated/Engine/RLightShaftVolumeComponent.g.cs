@@ -80,7 +80,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB8B5F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool NewEnabled)
     {
@@ -102,7 +103,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBrightness;
     /// <summary>
-    /// Function: UpdateBrightness
+    /// Function: UpdateBrightness<br/>
+    /// Native code at BatmanAK.exe+0xB8B4B0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateBrightness(float NewBrightness)
     {
@@ -124,7 +126,8 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetConeAngleAndRadius;
     /// <summary>
-    /// Function: SetConeAngleAndRadius
+    /// Function: SetConeAngleAndRadius<br/>
+    /// Native code at BatmanAK.exe+0xB8B2A0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetConeAngleAndRadius(float NewConeAngle, float NewRadius)
     {

@@ -85,7 +85,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketWorldLocationAndRotation;
     /// <summary>
-    /// Function: GetSocketWorldLocationAndRotation
+    /// Function: GetSocketWorldLocationAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x4A3D80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation, int Space)
     {
@@ -114,7 +115,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateStaticCollisionBoundingBox;
     /// <summary>
-    /// Function: CalculateStaticCollisionBoundingBox
+    /// Function: CalculateStaticCollisionBoundingBox<br/>
+    /// Native code at BatmanAK.exe+0x46AE90 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateStaticCollisionBoundingBox(out BmSDK.GameObject.FMatrix OutBoundsTransform, out System.Numerics.Vector3 OutBoundsHalfExtents)
     {
@@ -139,7 +141,8 @@ public partial class RApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDamageStateFromSaveGame;
     /// <summary>
-    /// Function: LoadDamageStateFromSaveGame
+    /// Function: LoadDamageStateFromSaveGame<br/>
+    /// Native code at BatmanAK.exe+0x46AE50 in the Steam build
     /// </summary>
     public unsafe virtual void LoadDamageStateFromSaveGame()
     {

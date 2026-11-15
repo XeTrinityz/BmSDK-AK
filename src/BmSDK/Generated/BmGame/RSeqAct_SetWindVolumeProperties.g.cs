@@ -107,7 +107,8 @@ public partial class RSeqAct_SetWindVolumeProperties : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWindVolumeProperties;
     /// <summary>
-    /// Function: SetWindVolumeProperties
+    /// Function: SetWindVolumeProperties<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void SetWindVolumeProperties()
     {

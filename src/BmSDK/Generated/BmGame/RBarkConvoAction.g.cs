@@ -80,7 +80,8 @@ public partial class RBarkConvoAction : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLineRepetitionOkay;
     /// <summary>
-    /// Function: CheckLineRepetitionOkay
+    /// Function: CheckLineRepetitionOkay<br/>
+    /// Native code at BatmanAK.exe+0x4A4220 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLineRepetitionOkay(int SearchID)
     {
@@ -102,7 +103,8 @@ public partial class RBarkConvoAction : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsOnceEverDialogueEvent;
     /// <summary>
-    /// Function: ContainsOnceEverDialogueEvent
+    /// Function: ContainsOnceEverDialogueEvent<br/>
+    /// Native code at BatmanAK.exe+0x4A40E0 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsOnceEverDialogueEvent(int SearchID)
     {
@@ -124,7 +126,8 @@ public partial class RBarkConvoAction : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsOnceOnlyDialogueEvent;
     /// <summary>
-    /// Function: ContainsOnceOnlyDialogueEvent
+    /// Function: ContainsOnceOnlyDialogueEvent<br/>
+    /// Native code at BatmanAK.exe+0x4A3FA0 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsOnceOnlyDialogueEvent(int SearchID)
     {

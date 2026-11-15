@@ -108,7 +108,8 @@ public partial class RSeqAct_AbortVehicleJump : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AbortJump;
     /// <summary>
-    /// Function: AbortJump
+    /// Function: AbortJump<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void AbortJump()
     {

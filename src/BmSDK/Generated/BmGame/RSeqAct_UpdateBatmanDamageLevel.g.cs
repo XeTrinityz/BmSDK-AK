@@ -107,7 +107,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransferData;
     /// <summary>
-    /// Function: TransferData
+    /// Function: TransferData<br/>
+    /// Native code at BatmanAK.exe+0x49A4D0 in the Steam build
     /// </summary>
     public unsafe virtual void TransferData()
     {
@@ -128,7 +129,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDataLoaded;
     /// <summary>
-    /// Function: OnDataLoaded
+    /// Function: OnDataLoaded<br/>
+    /// Native code at BatmanAK.exe+0x48A240 in the Steam build
     /// </summary>
     public unsafe virtual void OnDataLoaded()
     {
@@ -149,7 +151,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseData;
     /// <summary>
-    /// Function: ReleaseData
+    /// Function: ReleaseData<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void ReleaseData()
     {
@@ -170,7 +173,8 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadData;
     /// <summary>
-    /// Function: LoadData
+    /// Function: LoadData<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void LoadData()
     {

@@ -125,7 +125,8 @@ public partial class AkSDEntity : BmSDK.AkAudio.AkSDNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableName;
     /// <summary>
-    /// Function: GetVariableName
+    /// Function: GetVariableName<br/>
+    /// Native code at BatmanAK.exe+0xFDF160 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVariableName()
     {

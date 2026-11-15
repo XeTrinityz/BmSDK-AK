@@ -75,7 +75,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB78D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bEnable)
     {
@@ -97,7 +98,8 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFrameRate;
     /// <summary>
-    /// Function: SetFrameRate
+    /// Function: SetFrameRate<br/>
+    /// Native code at BatmanAK.exe+0xB78C40 in the Steam build
     /// </summary>
     public unsafe virtual void SetFrameRate(float NewFrameRate)
     {

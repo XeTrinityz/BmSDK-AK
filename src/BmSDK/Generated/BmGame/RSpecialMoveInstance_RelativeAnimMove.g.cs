@@ -396,7 +396,8 @@ public partial class RSpecialMoveInstance_RelativeAnimMove : BmSDK.BmGame.RSpeci
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickRandomAnim;
     /// <summary>
-    /// Function: PickRandomAnim
+    /// Function: PickRandomAnim<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void PickRandomAnim()
     {

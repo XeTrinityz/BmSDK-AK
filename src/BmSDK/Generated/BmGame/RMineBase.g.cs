@@ -90,7 +90,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDangerEffectsNative;
     /// <summary>
-    /// Function: SetDangerEffectsNative
+    /// Function: SetDangerEffectsNative<br/>
+    /// Native code at BatmanAK.exe+0x4AF950 in the Steam build
     /// </summary>
     public unsafe virtual void SetDangerEffectsNative(float NewSpeed)
     {
@@ -112,7 +113,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrimedEffects;
     /// <summary>
-    /// Function: SetPrimedEffects
+    /// Function: SetPrimedEffects<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void SetPrimedEffects()
     {
@@ -133,7 +135,8 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisarmedEffects;
     /// <summary>
-    /// Function: SetDisarmedEffects
+    /// Function: SetDisarmedEffects<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisarmedEffects()
     {

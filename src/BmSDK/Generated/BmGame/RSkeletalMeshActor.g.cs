@@ -80,7 +80,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -102,7 +103,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InternalSetMorphWeight;
     /// <summary>
-    /// Function: InternalSetMorphWeight
+    /// Function: InternalSetMorphWeight<br/>
+    /// Native code at BatmanAK.exe+0x4B0330 in the Steam build
     /// </summary>
     public unsafe virtual void InternalSetMorphWeight(BmSDK.FName MorphNodeName, float MorphWeight)
     {
@@ -125,7 +127,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
-    /// Function: MAT_FinishAnimControl
+    /// Function: MAT_FinishAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe override void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -147,7 +150,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimPosition;
     /// <summary>
-    /// Function: MAT_SetAnimPosition
+    /// Function: MAT_SetAnimPosition<br/>
+    /// Native code at BatmanAK.exe+0x4A2FA0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetAnimPosition(BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
@@ -175,7 +179,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4B9700 in the Steam build
     /// </summary>
     public unsafe override void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -394,7 +399,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
-    /// Function: MatineeTeleport
+    /// Function: MatineeTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4A21C0 in the Steam build
     /// </summary>
     public unsafe override void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {
@@ -417,7 +423,8 @@ public partial class RSkeletalMeshActor : BmSDK.Engine.SkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InternalInitAnimTree;
     /// <summary>
-    /// Function: InternalInitAnimTree
+    /// Function: InternalInitAnimTree<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void InternalInitAnimTree()
     {

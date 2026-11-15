@@ -163,7 +163,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPawnRevived;
     /// <summary>
-    /// Function: OnPawnRevived
+    /// Function: OnPawnRevived<br/>
+    /// Native code at BatmanAK.exe+0x48A4A0 in the Steam build
     /// </summary>
     public unsafe virtual void OnPawnRevived()
     {
@@ -184,7 +185,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPawnDied;
     /// <summary>
-    /// Function: OnPawnDied
+    /// Function: OnPawnDied<br/>
+    /// Native code at BatmanAK.exe+0x47F950 in the Steam build
     /// </summary>
     public unsafe virtual bool OnPawnDied()
     {
@@ -205,7 +207,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceTick;
     /// <summary>
-    /// Function: ForceTick
+    /// Function: ForceTick<br/>
+    /// Native code at BatmanAK.exe+0xB2EB20 in the Steam build
     /// </summary>
     public unsafe virtual void ForceTick()
     {
@@ -226,7 +229,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x48A450 in the Steam build
     /// </summary>
     public unsafe virtual bool SpawnPawn()
     {
@@ -247,7 +251,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStreamedCombatWeaponType;
     /// <summary>
-    /// Function: GetStreamedCombatWeaponType
+    /// Function: GetStreamedCombatWeaponType<br/>
+    /// Native code at BatmanAK.exe+0x48A400 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.StreamedCombatWeaponTypes GetStreamedCombatWeaponType()
     {
@@ -268,7 +273,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStreamedPredWeaponType;
     /// <summary>
-    /// Function: GetStreamedPredWeaponType
+    /// Function: GetStreamedPredWeaponType<br/>
+    /// Native code at BatmanAK.exe+0x48A3B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.StreamedPredWeaponTypes GetStreamedPredWeaponType()
     {
@@ -289,7 +295,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWeaponType;
     /// <summary>
-    /// Function: GetWeaponType
+    /// Function: GetWeaponType<br/>
+    /// Native code at BatmanAK.exe+0x48A360 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Class GetWeaponType()
     {
@@ -310,7 +317,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharacterDefine;
     /// <summary>
-    /// Function: GetCharacterDefine
+    /// Function: GetCharacterDefine<br/>
+    /// Native code at BatmanAK.exe+0x48A310 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCharacterDefine GetCharacterDefine()
     {
@@ -331,7 +339,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharactersType;
     /// <summary>
-    /// Function: GetCharactersType
+    /// Function: GetCharactersType<br/>
+    /// Native code at BatmanAK.exe+0x5E94F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Class GetCharactersType()
     {
@@ -352,7 +361,8 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnClass;
     /// <summary>
-    /// Function: GetPawnClass
+    /// Function: GetPawnClass<br/>
+    /// Native code at BatmanAK.exe+0x48A2C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Class GetPawnClass()
     {

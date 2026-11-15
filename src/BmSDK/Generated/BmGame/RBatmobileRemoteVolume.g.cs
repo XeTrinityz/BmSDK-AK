@@ -137,7 +137,8 @@ public partial class RBatmobileRemoteVolume : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsActive;
     /// <summary>
-    /// Function: GetIsActive
+    /// Function: GetIsActive<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual int GetIsActive(BmSDK.BmGame.RGameInfo RGI)
     {

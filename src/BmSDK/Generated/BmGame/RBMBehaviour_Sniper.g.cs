@@ -317,7 +317,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeAlertToBatman;
     /// <summary>
-    /// Function: MakeAlertToBatman
+    /// Function: MakeAlertToBatman<br/>
+    /// Native code at BatmanAK.exe+0x4FE500 in the Steam build
     /// </summary>
     public unsafe virtual void MakeAlertToBatman(BmSDK.Engine.Actor PlayerActor)
     {
@@ -916,7 +917,8 @@ public partial class RBMBehaviour_Sniper : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildSniperPointArray;
     /// <summary>
-    /// Function: BuildSniperPointArray
+    /// Function: BuildSniperPointArray<br/>
+    /// Native code at BatmanAK.exe+0x489890 in the Steam build
     /// </summary>
     public unsafe virtual void BuildSniperPointArray()
     {

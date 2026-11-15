@@ -80,7 +80,8 @@ public partial class PostProcessChain : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPostProcessEffect;
     /// <summary>
-    /// Function: FindPostProcessEffect
+    /// Function: FindPostProcessEffect<br/>
+    /// Native code at BatmanAK.exe+0xB82910 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PostProcessEffect FindPostProcessEffect(BmSDK.FName EffectName)
     {

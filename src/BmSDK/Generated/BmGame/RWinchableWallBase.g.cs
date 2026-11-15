@@ -80,7 +80,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRestingChunks;
     /// <summary>
-    /// Function: UpdateRestingChunks
+    /// Function: UpdateRestingChunks<br/>
+    /// Native code at BatmanAK.exe+0x4F15A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRestingChunks(float DeltaTime)
     {
@@ -334,7 +335,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AdvanceMatinee;
     /// <summary>
-    /// Function: AdvanceMatinee
+    /// Function: AdvanceMatinee<br/>
+    /// Native code at BatmanAK.exe+0x4F13B0 in the Steam build
     /// </summary>
     public unsafe static void AdvanceMatinee(BmSDK.Engine.SeqAct_Interp Interp, float DeltaTime)
     {
@@ -356,7 +358,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PlayMatinee;
     /// <summary>
-    /// Function: PlayMatinee
+    /// Function: PlayMatinee<br/>
+    /// Native code at BatmanAK.exe+0x4F1290 in the Steam build
     /// </summary>
     public unsafe static void PlayMatinee(BmSDK.Engine.SeqAct_Interp Interp)
     {
@@ -377,7 +380,8 @@ public partial class RWinchableWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetMatineePosition;
     /// <summary>
-    /// Function: SetMatineePosition
+    /// Function: SetMatineePosition<br/>
+    /// Native code at BatmanAK.exe+0x4F10A0 in the Steam build
     /// </summary>
     public unsafe static void SetMatineePosition(BmSDK.Engine.SeqAct_Interp Interp, float Position)
     {
@@ -890,7 +894,8 @@ public static class RWinchableWallBaseStatics
 {
     private static BmSDK.Function __fn_AdvanceMatinee;
     /// <summary>
-    /// Function: AdvanceMatinee, run on <paramref name="self"/> rather than the class default object
+    /// Function: AdvanceMatinee, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F13B0 in the Steam build
     /// </summary>
     public unsafe static void AdvanceMatinee(this BmSDK.BmGame.RWinchableWallBase self, BmSDK.Engine.SeqAct_Interp Interp, float DeltaTime)
     {
@@ -913,7 +918,8 @@ public static class RWinchableWallBaseStatics
 
     private static BmSDK.Function __fn_PlayMatinee;
     /// <summary>
-    /// Function: PlayMatinee, run on <paramref name="self"/> rather than the class default object
+    /// Function: PlayMatinee, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F1290 in the Steam build
     /// </summary>
     public unsafe static void PlayMatinee(this BmSDK.BmGame.RWinchableWallBase self, BmSDK.Engine.SeqAct_Interp Interp)
     {
@@ -935,7 +941,8 @@ public static class RWinchableWallBaseStatics
 
     private static BmSDK.Function __fn_SetMatineePosition;
     /// <summary>
-    /// Function: SetMatineePosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetMatineePosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F10A0 in the Steam build
     /// </summary>
     public unsafe static void SetMatineePosition(this BmSDK.BmGame.RWinchableWallBase self, BmSDK.Engine.SeqAct_Interp Interp, float Position)
     {

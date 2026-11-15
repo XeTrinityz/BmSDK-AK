@@ -207,7 +207,8 @@ public partial class LensFlareSource : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
-    /// Function: SetTemplate
+    /// Function: SetTemplate<br/>
+    /// Native code at BatmanAK.exe+0xB96990 in the Steam build
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.LensFlare NewTemplate)
     {

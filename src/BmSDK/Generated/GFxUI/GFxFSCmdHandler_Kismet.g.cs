@@ -80,7 +80,8 @@ public partial class GFxFSCmdHandler_Kismet : BmSDK.GFxUI.GFxFSCmdHandler, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FSCommand;
     /// <summary>
-    /// Function: FSCommand
+    /// Function: FSCommand<br/>
+    /// Native code at BatmanAK.exe+0x61F890 in the Steam build
     /// </summary>
     public unsafe override bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FStringArg Cmd, BmSDK.FStringArg Arg)
     {

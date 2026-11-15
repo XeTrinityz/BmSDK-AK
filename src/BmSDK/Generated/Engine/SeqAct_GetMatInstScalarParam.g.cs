@@ -94,7 +94,8 @@ public partial class SeqAct_GetMatInstScalarParam : BmSDK.Engine.SequenceAction,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScalar;
     /// <summary>
-    /// Function: GetScalar
+    /// Function: GetScalar<br/>
+    /// Native code at BatmanAK.exe+0xB510A0 in the Steam build
     /// </summary>
     public unsafe virtual void GetScalar(out float Scalar)
     {

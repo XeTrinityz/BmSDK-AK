@@ -395,7 +395,8 @@ public partial class RCombatMove_VillainCloseAttack : BmSDK.BmGame.RCombatMove_V
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAttackInfoFromAnim;
     /// <summary>
-    /// Function: SetAttackInfoFromAnim
+    /// Function: SetAttackInfoFromAnim<br/>
+    /// Native code at BatmanAK.exe+0x4D3390 in the Steam build
     /// </summary>
     public unsafe virtual bool SetAttackInfoFromAnim(BmSDK.Engine.AnimSequence AttackAnim)
     {

@@ -164,7 +164,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PutSettings;
     /// <summary>
-    /// Function: PutSettings
+    /// Function: PutSettings<br/>
+    /// Native code at BatmanAK.exe+0x553CA0 in the Steam build
     /// </summary>
     public unsafe virtual void PutSettings(BmSDK.TArray<float> Settings)
     {
@@ -186,7 +187,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSettings;
     /// <summary>
-    /// Function: GetSettings
+    /// Function: GetSettings<br/>
+    /// Native code at BatmanAK.exe+0x553BD0 in the Steam build
     /// </summary>
     public unsafe virtual void GetSettings(out BmSDK.TArray<float> Settings)
     {
@@ -318,7 +320,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyMoveDeltaForOcean;
     /// <summary>
-    /// Function: ModifyMoveDeltaForOcean
+    /// Function: ModifyMoveDeltaForOcean<br/>
+    /// Native code at BatmanAK.exe+0x47A540 in the Steam build
     /// </summary>
     public unsafe virtual void ModifyMoveDeltaForOcean(System.Numerics.Vector3 InitialLocation, out System.Numerics.Vector3 Delta)
     {
@@ -459,7 +462,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Function __fn_UpdateBatmansCapeInternal;
     /// <summary>
-    /// Function: UpdateBatmansCapeInternal
+    /// Function: UpdateBatmansCapeInternal<br/>
+    /// Native code at BatmanAK.exe+0x4D3C30 in the Steam build
     /// </summary>
     public unsafe void UpdateBatmansCapeInternal(BmSDK.BmGame.RCapeComponent CapeComponent)
     {
@@ -495,7 +499,8 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InheritCurrentPPSettings;
     /// <summary>
-    /// Function: InheritCurrentPPSettings
+    /// Function: InheritCurrentPPSettings<br/>
+    /// Native code at BatmanAK.exe+0x47A500 in the Steam build
     /// </summary>
     public unsafe virtual void InheritCurrentPPSettings()
     {

@@ -124,7 +124,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbVolume;
     /// <summary>
-    /// Function: IsWallClimbVolume
+    /// Function: IsWallClimbVolume<br/>
+    /// Native code at BatmanAK.exe+0x46B900 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWallClimbVolume()
     {
@@ -145,7 +146,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCeilingClimbVolume;
     /// <summary>
-    /// Function: IsCeilingClimbVolume
+    /// Function: IsCeilingClimbVolume<br/>
+    /// Native code at BatmanAK.exe+0x46B4B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCeilingClimbVolume()
     {
@@ -166,7 +168,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawVolume;
     /// <summary>
-    /// Function: DebugDrawVolume
+    /// Function: DebugDrawVolume<br/>
+    /// Native code at BatmanAK.exe+0x537C00 in the Steam build
     /// </summary>
     public unsafe virtual void DebugDrawVolume(bool bDrawPersistent = default)
     {
@@ -188,7 +191,8 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlagGrapplePoints;
     /// <summary>
-    /// Function: FlagGrapplePoints
+    /// Function: FlagGrapplePoints<br/>
+    /// Native code at BatmanAK.exe+0x46B880 in the Steam build
     /// </summary>
     public unsafe virtual void FlagGrapplePoints()
     {

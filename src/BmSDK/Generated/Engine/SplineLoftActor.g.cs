@@ -80,7 +80,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineParams;
     /// <summary>
-    /// Function: UpdateSplineParams
+    /// Function: UpdateSplineParams<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSplineParams()
     {
@@ -101,7 +102,8 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLoftMesh;
     /// <summary>
-    /// Function: ClearLoftMesh
+    /// Function: ClearLoftMesh<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearLoftMesh()
     {

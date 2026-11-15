@@ -616,7 +616,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawActorOverlays;
     /// <summary>
-    /// Function: DrawActorOverlays
+    /// Function: DrawActorOverlays<br/>
+    /// Native code at BatmanAK.exe+0xB3AC40 in the Steam build
     /// </summary>
     public unsafe virtual void DrawActorOverlays(System.Numerics.Vector3 ViewPoint, BmSDK.Rotator ViewRotation)
     {
@@ -653,7 +654,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Draw2DLine;
     /// <summary>
-    /// Function: Draw2DLine
+    /// Function: Draw2DLine<br/>
+    /// Native code at BatmanAK.exe+0xB6F770 in the Steam build
     /// </summary>
     public unsafe virtual void Draw2DLine(int X1, int Y1, int X2, int Y2, BmSDK.GameObject.FColor LineColor)
     {
@@ -679,7 +681,8 @@ public partial class HUD : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Draw3DLine;
     /// <summary>
-    /// Function: Draw3DLine
+    /// Function: Draw3DLine<br/>
+    /// Native code at BatmanAK.exe+0xB3AB50 in the Steam build
     /// </summary>
     public unsafe virtual void Draw3DLine(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, BmSDK.GameObject.FColor LineColor)
     {

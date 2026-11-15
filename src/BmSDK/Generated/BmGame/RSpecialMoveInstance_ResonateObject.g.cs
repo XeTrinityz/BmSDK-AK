@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePCResonatorPos;
     /// <summary>
-    /// Function: UpdatePCResonatorPos
+    /// Function: UpdatePCResonatorPos<br/>
+    /// Native code at BatmanAK.exe+0x4E1E20 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePCResonatorPos(BmSDK.BmGame.RPlayerInput Input, float DeltaTime, float TurnSpeed, float Accel, float Decel)
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLeftAndRightAngles;
     /// <summary>
-    /// Function: GetLeftAndRightAngles
+    /// Function: GetLeftAndRightAngles<br/>
+    /// Native code at BatmanAK.exe+0x4E19E0 in the Steam build
     /// </summary>
     public unsafe virtual void GetLeftAndRightAngles(out float LeftAngle, out float RightAngle, float RawLeftX, float RawLeftY, float RawRightX, float RawRightY)
     {
@@ -295,7 +297,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AlignCamera;
     /// <summary>
-    /// Function: AlignCamera
+    /// Function: AlignCamera<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void AlignCamera()
     {
@@ -316,7 +319,8 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpThumb;
     /// <summary>
-    /// Function: InterpThumb
+    /// Function: InterpThumb<br/>
+    /// Native code at BatmanAK.exe+0x4E2BE0 in the Steam build
     /// </summary>
     public unsafe virtual float InterpThumb(float DesiredPos, float CurrentPos, float DeltaTime)
     {

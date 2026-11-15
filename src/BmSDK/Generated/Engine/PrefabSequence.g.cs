@@ -80,7 +80,8 @@ public partial class PrefabSequence : BmSDK.Engine.Sequence, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOwnerPrefab;
     /// <summary>
-    /// Function: GetOwnerPrefab
+    /// Function: GetOwnerPrefab<br/>
+    /// Native code at BatmanAK.exe+0xB51050 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PrefabInstance GetOwnerPrefab()
     {
@@ -101,7 +102,8 @@ public partial class PrefabSequence : BmSDK.Engine.Sequence, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOwnerPrefab;
     /// <summary>
-    /// Function: SetOwnerPrefab
+    /// Function: SetOwnerPrefab<br/>
+    /// Native code at BatmanAK.exe+0xB50F30 in the Steam build
     /// </summary>
     public unsafe virtual void SetOwnerPrefab(BmSDK.Engine.PrefabInstance InOwner)
     {

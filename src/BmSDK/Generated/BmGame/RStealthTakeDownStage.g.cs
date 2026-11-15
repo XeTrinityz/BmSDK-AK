@@ -330,7 +330,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAnimationSpeed;
     /// <summary>
-    /// Function: ResetAnimationSpeed
+    /// Function: ResetAnimationSpeed<br/>
+    /// Native code at BatmanAK.exe+0x51DE30 in the Steam build
     /// </summary>
     public unsafe virtual void ResetAnimationSpeed(BmSDK.BmGame.RPawnCharacter ResetCharacter, BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId ResetTransitionID)
     {
@@ -367,7 +368,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEnvironmentTakedownRestrictions;
     /// <summary>
-    /// Function: CheckEnvironmentTakedownRestrictions
+    /// Function: CheckEnvironmentTakedownRestrictions<br/>
+    /// Native code at BatmanAK.exe+0x51DA30 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckEnvironmentTakedownRestrictions(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, System.Numerics.Vector3 CheckDirection, BmSDK.Engine.AnimSet AttackerAnimSet, BmSDK.FName AttackerAnim, BmSDK.Engine.AnimSet VictimAnimSet, BmSDK.FName VictimAnim)
     {
@@ -394,7 +396,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrateFinishAnimName;
     /// <summary>
-    /// Function: GetGrateFinishAnimName
+    /// Function: GetGrateFinishAnimName<br/>
+    /// Native code at BatmanAK.exe+0x51D780 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetGrateFinishAnimName(BmSDK.FName CurrentAnimName, BmSDK.Engine.AnimSet AttackerSet, BmSDK.Engine.AnimSet VictimSet)
     {
@@ -418,7 +421,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestEnvironmentTakedownAnims;
     /// <summary>
-    /// Function: FindBestEnvironmentTakedownAnims
+    /// Function: FindBestEnvironmentTakedownAnims<br/>
+    /// Native code at BatmanAK.exe+0x582700 in the Steam build
     /// </summary>
     public unsafe virtual bool FindBestEnvironmentTakedownAnims(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, System.Numerics.Vector3 CheckDirection, BmSDK.Engine.AnimSet AttackerSet, BmSDK.FStringArg AnimNamePrefix, out BmSDK.TArray<BmSDK.FName> AttackerNames, BmSDK.Engine.AnimSet VictimSet, out BmSDK.TArray<BmSDK.BmGame.RStealthTakeDownStage.FAnimList> VictimNames)
     {
@@ -449,7 +453,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseAttackerNotifies;
     /// <summary>
-    /// Function: ParseAttackerNotifies
+    /// Function: ParseAttackerNotifies<br/>
+    /// Native code at BatmanAK.exe+0x51D590 in the Steam build
     /// </summary>
     public unsafe virtual void ParseAttackerNotifies(BmSDK.FName Anim, BmSDK.Engine.AnimSet Set)
     {
@@ -472,7 +477,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimNamesByPrefix;
     /// <summary>
-    /// Function: FindAnimNamesByPrefix
+    /// Function: FindAnimNamesByPrefix<br/>
+    /// Native code at BatmanAK.exe+0x586940 in the Steam build
     /// </summary>
     public unsafe virtual void FindAnimNamesByPrefix(out BmSDK.BmGame.RStealthTakeDownStage.FTakeDownStageAnimSet StageAnimInfo, BmSDK.Engine.AnimSet AttackerSet, BmSDK.Engine.AnimSet VictimSet, BmSDK.Engine.AnimSet CameraSet)
     {
@@ -1178,7 +1184,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidAnimSet;
     /// <summary>
-    /// Function: IsValidAnimSet
+    /// Function: IsValidAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x557E80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidAnimSet(BmSDK.FStringArg AnimPrefix, BmSDK.FStringArg AnimSuffix, BmSDK.TArray<BmSDK.FName> AnimNames, BmSDK.Engine.AnimSet TestAnimSet)
     {
@@ -1435,7 +1442,8 @@ public partial class RStealthTakeDownStage : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyReferencePositionForSlope;
     /// <summary>
-    /// Function: ModifyReferencePositionForSlope
+    /// Function: ModifyReferencePositionForSlope<br/>
+    /// Native code at BatmanAK.exe+0x498680 in the Steam build
     /// </summary>
     public unsafe virtual void ModifyReferencePositionForSlope(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {

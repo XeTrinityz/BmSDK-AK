@@ -123,7 +123,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterGrate;
     /// <summary>
-    /// Function: RegisterGrate
+    /// Function: RegisterGrate<br/>
+    /// Native code at BatmanAK.exe+0x4BA270 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterGrate(BmSDK.BmGame.RTunnelGrateBase Grate)
     {
@@ -159,7 +160,8 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPylonListStart;
     /// <summary>
-    /// Function: GetPylonListStart
+    /// Function: GetPylonListStart<br/>
+    /// Native code at BatmanAK.exe+0x481950 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon GetPylonListStart()
     {

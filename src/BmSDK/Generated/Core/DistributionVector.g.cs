@@ -75,7 +75,8 @@ public partial class DistributionVector : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorValue;
     /// <summary>
-    /// Function: GetVectorValue
+    /// Function: GetVectorValue<br/>
+    /// Native code at BatmanAK.exe+0xF7AA30 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVectorValue(float F = default, int LastExtreme = default)
     {

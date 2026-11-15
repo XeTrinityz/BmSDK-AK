@@ -251,7 +251,8 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolume;
     /// <summary>
-    /// Function: GetVolume
+    /// Function: GetVolume<br/>
+    /// Native code at BatmanAK.exe+0xB4AEF0 in the Steam build
     /// </summary>
     public unsafe virtual float GetVolume()
     {
@@ -272,7 +273,8 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolume;
     /// <summary>
-    /// Function: SetVolume
+    /// Function: SetVolume<br/>
+    /// Native code at BatmanAK.exe+0x4F15A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVolume(float Vol)
     {

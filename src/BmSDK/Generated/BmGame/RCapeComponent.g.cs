@@ -110,7 +110,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCoreAnimSet;
     /// <summary>
-    /// Function: RemoveCoreAnimSet
+    /// Function: RemoveCoreAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x4F3280 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveCoreAnimSet(BmSDK.Engine.AnimSet TheAnimSet)
     {
@@ -132,7 +133,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCoreAnimSet;
     /// <summary>
-    /// Function: AddCoreAnimSet
+    /// Function: AddCoreAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x4F3160 in the Steam build
     /// </summary>
     public unsafe virtual void AddCoreAnimSet(BmSDK.Engine.AnimSet TheAnimSet)
     {
@@ -154,7 +156,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InternalChangeCapeStateGeneral;
     /// <summary>
-    /// Function: InternalChangeCapeStateGeneral
+    /// Function: InternalChangeCapeStateGeneral<br/>
+    /// Native code at BatmanAK.exe+0x485630 in the Steam build
     /// </summary>
     public unsafe virtual bool InternalChangeCapeStateGeneral(BmSDK.BmGame.RPhysUtil.FCapeStateChangeData StateChangeData)
     {
@@ -176,7 +179,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvailableStateNames;
     /// <summary>
-    /// Function: GetAvailableStateNames
+    /// Function: GetAvailableStateNames<br/>
+    /// Native code at BatmanAK.exe+0x5556A0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAvailableStateNames(out BmSDK.TArray<BmSDK.FName> OutStateNames, bool bSorted = default)
     {
@@ -199,7 +203,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsCinematicMode;
     /// <summary>
-    /// Function: GetIsCinematicMode
+    /// Function: GetIsCinematicMode<br/>
+    /// Native code at BatmanAK.exe+0x4855E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsCinematicMode()
     {
@@ -220,7 +225,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
-    /// Function: GetThoughts
+    /// Function: GetThoughts<br/>
+    /// Native code at BatmanAK.exe+0x590FC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> OutThoughts)
     {
@@ -242,7 +248,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSkeletalMeshDepthBias;
     /// <summary>
-    /// Function: UpdateSkeletalMeshDepthBias
+    /// Function: UpdateSkeletalMeshDepthBias<br/>
+    /// Native code at BatmanAK.exe+0x4855A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSkeletalMeshDepthBias()
     {
@@ -263,7 +270,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateAngularVelocity;
     /// <summary>
-    /// Function: CalculateAngularVelocity
+    /// Function: CalculateAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0x485550 in the Steam build
     /// </summary>
     public unsafe virtual float CalculateAngularVelocity()
     {
@@ -284,7 +292,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateCapeLocalToWorld;
     /// <summary>
-    /// Function: CalculateCapeLocalToWorld
+    /// Function: CalculateCapeLocalToWorld<br/>
+    /// Native code at BatmanAK.exe+0x4854E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix CalculateCapeLocalToWorld()
     {
@@ -305,7 +314,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateWindProperties;
     /// <summary>
-    /// Function: CalculateWindProperties
+    /// Function: CalculateWindProperties<br/>
+    /// Native code at BatmanAK.exe+0x485440 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateWindProperties(out BmSDK.BmGame.RCapeComponent.FCapeWindAudioProperties OutWindProperties)
     {
@@ -329,7 +339,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyWind;
     /// <summary>
-    /// Function: ApplyWind
+    /// Function: ApplyWind<br/>
+    /// Native code at BatmanAK.exe+0x485350 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyWind(BmSDK.BmGame.RGameInfo.FRWindConfig WindConfig, out BmSDK.BmGame.RGameInfo.FRWindState WindState)
     {
@@ -354,7 +365,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCinematicAnimSet;
     /// <summary>
-    /// Function: AddCinematicAnimSet
+    /// Function: AddCinematicAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x4F3040 in the Steam build
     /// </summary>
     public unsafe virtual void AddCinematicAnimSet(BmSDK.Engine.AnimSet NewAnimSet)
     {
@@ -376,7 +388,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeDebugRenderBone;
     /// <summary>
-    /// Function: SetCapeDebugRenderBone
+    /// Function: SetCapeDebugRenderBone<br/>
+    /// Native code at BatmanAK.exe+0x4F2E60 in the Steam build
     /// </summary>
     public unsafe virtual void SetCapeDebugRenderBone(int DebugRenderBoneChainIndex, int DebugRenderBoneLinkIndex)
     {
@@ -399,7 +412,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoubleFrameTeleport;
     /// <summary>
-    /// Function: DoubleFrameTeleport
+    /// Function: DoubleFrameTeleport<br/>
+    /// Native code at BatmanAK.exe+0x470A00 in the Steam build
     /// </summary>
     public unsafe virtual void DoubleFrameTeleport()
     {
@@ -420,7 +434,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTeleport;
     /// <summary>
-    /// Function: OnTeleport
+    /// Function: OnTeleport<br/>
+    /// Native code at BatmanAK.exe+0x485310 in the Steam build
     /// </summary>
     public unsafe virtual void OnTeleport()
     {
@@ -441,7 +456,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResumeCape;
     /// <summary>
-    /// Function: ResumeCape
+    /// Function: ResumeCape<br/>
+    /// Native code at BatmanAK.exe+0x4852D0 in the Steam build
     /// </summary>
     public unsafe virtual void ResumeCape()
     {
@@ -462,7 +478,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseCape;
     /// <summary>
-    /// Function: PauseCape
+    /// Function: PauseCape<br/>
+    /// Native code at BatmanAK.exe+0x485290 in the Steam build
     /// </summary>
     public unsafe virtual void PauseCape()
     {
@@ -483,7 +500,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialSpeedVariableOverride;
     /// <summary>
-    /// Function: SetMaterialSpeedVariableOverride
+    /// Function: SetMaterialSpeedVariableOverride<br/>
+    /// Native code at BatmanAK.exe+0x485200 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterialSpeedVariableOverride(float OverrideValue = default)
     {
@@ -505,7 +523,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoCapeAnimBlendWeights;
     /// <summary>
-    /// Function: SetAutoCapeAnimBlendWeights
+    /// Function: SetAutoCapeAnimBlendWeights<br/>
+    /// Native code at BatmanAK.exe+0x4F2CC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoCapeAnimBlendWeights(bool IsBlendWeightSettingEnabled, float rootWeight = default, float childWeights = default)
     {
@@ -529,7 +548,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimTreeNodeBlendValue;
     /// <summary>
-    /// Function: SetAnimTreeNodeBlendValue
+    /// Function: SetAnimTreeNodeBlendValue<br/>
+    /// Native code at BatmanAK.exe+0x4F2AC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnimTreeNodeBlendValue(BmSDK.FName setNodeName, float blendValue)
     {
@@ -552,7 +572,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTreeNodeBlendValue;
     /// <summary>
-    /// Function: GetAnimTreeNodeBlendValue
+    /// Function: GetAnimTreeNodeBlendValue<br/>
+    /// Native code at BatmanAK.exe+0x4F2980 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimTreeNodeBlendValue(BmSDK.FName getNodeName)
     {
@@ -574,7 +595,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimStateTreeNode;
     /// <summary>
-    /// Function: GetAnimStateTreeNode
+    /// Function: GetAnimStateTreeNode<br/>
+    /// Native code at BatmanAK.exe+0x4F2840 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetAnimStateTreeNode(BmSDK.FName CapeStateName)
     {
@@ -596,7 +618,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentCapeStateAnimTreeNode;
     /// <summary>
-    /// Function: GetCurrentCapeStateAnimTreeNode
+    /// Function: GetCurrentCapeStateAnimTreeNode<br/>
+    /// Native code at BatmanAK.exe+0x4851B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetCurrentCapeStateAnimTreeNode()
     {
@@ -617,7 +640,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDamageState;
     /// <summary>
-    /// Function: UpdateDamageState
+    /// Function: UpdateDamageState<br/>
+    /// Native code at BatmanAK.exe+0x4F2720 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDamageState(BmSDK.Engine.MaterialInterface NewMat)
     {
@@ -639,7 +663,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInCinematicsState;
     /// <summary>
-    /// Function: GetIsInCinematicsState
+    /// Function: GetIsInCinematicsState<br/>
+    /// Native code at BatmanAK.exe+0x485160 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsInCinematicsState()
     {
@@ -660,7 +685,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceCapeToAnimPose;
     /// <summary>
-    /// Function: ForceCapeToAnimPose
+    /// Function: ForceCapeToAnimPose<br/>
+    /// Native code at BatmanAK.exe+0x485120 in the Steam build
     /// </summary>
     public unsafe virtual void ForceCapeToAnimPose()
     {
@@ -712,7 +738,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Function __fn_GetMirroredTypeFromBool;
     /// <summary>
-    /// Function: GetMirroredTypeFromBool
+    /// Function: GetMirroredTypeFromBool<br/>
+    /// Native code at BatmanAK.exe+0x4F25E0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RPhysUtil.ECapeMirroredType GetMirroredTypeFromBool(bool bMirrored)
     {
@@ -733,7 +760,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsCurrentCapeStateMirrored;
     /// <summary>
-    /// Function: GetIsCurrentCapeStateMirrored
+    /// Function: GetIsCurrentCapeStateMirrored<br/>
+    /// Native code at BatmanAK.exe+0x4850D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsCurrentCapeStateMirrored()
     {
@@ -754,7 +782,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCinematicCapeStateName;
     /// <summary>
-    /// Function: GetCinematicCapeStateName
+    /// Function: GetCinematicCapeStateName<br/>
+    /// Native code at BatmanAK.exe+0x485070 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetCinematicCapeStateName()
     {
@@ -775,7 +804,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentCapeStateName;
     /// <summary>
-    /// Function: GetCurrentCapeStateName
+    /// Function: GetCurrentCapeStateName<br/>
+    /// Native code at BatmanAK.exe+0x485010 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetCurrentCapeStateName()
     {
@@ -796,7 +826,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitUpdate;
     /// <summary>
-    /// Function: InitUpdate
+    /// Function: InitUpdate<br/>
+    /// Native code at BatmanAK.exe+0x484FD0 in the Steam build
     /// </summary>
     public unsafe virtual void InitUpdate()
     {
@@ -817,7 +848,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitEnable;
     /// <summary>
-    /// Function: InitEnable
+    /// Function: InitEnable<br/>
+    /// Native code at BatmanAK.exe+0x4F24A0 in the Steam build
     /// </summary>
     public unsafe virtual void InitEnable(BmSDK.BmGame.RCapeComponent.EInitterType InitType, bool IsEnableInit)
     {
@@ -840,7 +872,8 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInitialised;
     /// <summary>
-    /// Function: GetIsInitialised
+    /// Function: GetIsInitialised<br/>
+    /// Native code at BatmanAK.exe+0x484F80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {
@@ -1446,7 +1479,8 @@ public static class RCapeComponentStatics
 {
     private static BmSDK.Function __fn_GetMirroredTypeFromBool;
     /// <summary>
-    /// Function: GetMirroredTypeFromBool, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetMirroredTypeFromBool, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F25E0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RPhysUtil.ECapeMirroredType GetMirroredTypeFromBool(this BmSDK.BmGame.RCapeComponent self, bool bMirrored)
     {

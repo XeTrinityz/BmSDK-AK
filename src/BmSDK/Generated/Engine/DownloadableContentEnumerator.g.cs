@@ -80,7 +80,8 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFindDLCDelegates;
     /// <summary>
-    /// Function: TriggerFindDLCDelegates
+    /// Function: TriggerFindDLCDelegates<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerFindDLCDelegates()
     {
@@ -101,7 +102,8 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallDLC;
     /// <summary>
-    /// Function: InstallDLC
+    /// Function: InstallDLC<br/>
+    /// Native code at BatmanAK.exe+0xBADB30 in the Steam build
     /// </summary>
     public unsafe virtual void InstallDLC(BmSDK.FStringArg DLCName)
     {
@@ -138,7 +140,8 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteDLC;
     /// <summary>
-    /// Function: DeleteDLC
+    /// Function: DeleteDLC<br/>
+    /// Native code at BatmanAK.exe+0xBAD9F0 in the Steam build
     /// </summary>
     public unsafe virtual void DeleteDLC(BmSDK.FStringArg DLCName)
     {
@@ -262,7 +265,8 @@ public partial class DownloadableContentEnumerator : BmSDK.GameObject, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDLC;
     /// <summary>
-    /// Function: FindDLC
+    /// Function: FindDLC<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void FindDLC()
     {

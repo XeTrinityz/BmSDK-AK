@@ -75,7 +75,8 @@ public partial class RPresurePadBase : BmSDK.Engine.Actor, BmSDK.BmGame.RSecretI
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
-    /// Function: IsStaticForFloorCorrection
+    /// Function: IsStaticForFloorCorrection<br/>
+    /// Native code at BatmanAK.exe+0x46A620 in the Steam build
     /// </summary>
     public unsafe override bool IsStaticForFloorCorrection()
     {

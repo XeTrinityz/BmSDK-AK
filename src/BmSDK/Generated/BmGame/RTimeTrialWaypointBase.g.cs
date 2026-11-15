@@ -231,7 +231,8 @@ public partial class RTimeTrialWaypointBase : BmSDK.Engine.Actor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisplayLines;
     /// <summary>
-    /// Function: UpdateDisplayLines
+    /// Function: UpdateDisplayLines<br/>
+    /// Native code at BatmanAK.exe+0x484830 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDisplayLines()
     {

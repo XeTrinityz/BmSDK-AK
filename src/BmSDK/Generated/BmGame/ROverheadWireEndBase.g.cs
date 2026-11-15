@@ -110,7 +110,8 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToOtherEnd;
     /// <summary>
-    /// Function: LinkToOtherEnd
+    /// Function: LinkToOtherEnd<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void LinkToOtherEnd(BmSDK.BmGame.ROverheadWireEndBase OtherEnd)
     {
@@ -132,7 +133,8 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustWire;
     /// <summary>
-    /// Function: AdjustWire
+    /// Function: AdjustWire<br/>
+    /// Native code at BatmanAK.exe+0x483FD0 in the Steam build
     /// </summary>
     public unsafe virtual void AdjustWire()
     {

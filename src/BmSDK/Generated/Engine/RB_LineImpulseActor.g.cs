@@ -110,7 +110,8 @@ public partial class RB_LineImpulseActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLineImpulse;
     /// <summary>
-    /// Function: FireLineImpulse
+    /// Function: FireLineImpulse<br/>
+    /// Native code at BatmanAK.exe+0xB44CE0 in the Steam build
     /// </summary>
     public unsafe virtual void FireLineImpulse()
     {

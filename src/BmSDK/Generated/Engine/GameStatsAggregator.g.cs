@@ -200,7 +200,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAggregateMappingIDs;
     /// <summary>
-    /// Function: GetAggregateMappingIDs
+    /// Function: GetAggregateMappingIDs<br/>
+    /// Native code at BatmanAK.exe+0xB506E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAggregateMappingIDs(int EventID, out int AggregateID, out int TargetAggregateID)
     {
@@ -228,7 +229,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
-    /// Function: Reset
+    /// Function: Reset<br/>
+    /// Native code at BatmanAK.exe+0xC011B0 in the Steam build
     /// </summary>
     public unsafe virtual void Reset()
     {
@@ -249,7 +251,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PostProcessStream;
     /// <summary>
-    /// Function: PostProcessStream
+    /// Function: PostProcessStream<br/>
+    /// Native code at BatmanAK.exe+0xB506A0 in the Steam build
     /// </summary>
     public unsafe override void PostProcessStream()
     {
@@ -270,7 +273,8 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessStream;
     /// <summary>
-    /// Function: PreProcessStream
+    /// Function: PreProcessStream<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe override void PreProcessStream()
     {

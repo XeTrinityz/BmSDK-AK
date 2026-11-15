@@ -662,7 +662,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetLocation;
     /// <summary>
-    /// Function: GetAutoTargetLocation
+    /// Function: GetAutoTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x493B50 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAutoTargetLocation()
     {
@@ -683,7 +684,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestTriangle;
     /// <summary>
-    /// Function: GetClosestTriangle
+    /// Function: GetClosestTriangle<br/>
+    /// Native code at BatmanAK.exe+0x4939E0 in the Steam build
     /// </summary>
     public unsafe virtual void GetClosestTriangle(System.Numerics.Vector3 P, out System.Numerics.Vector3 v0, out System.Numerics.Vector3 v1, out System.Numerics.Vector3 v2)
     {
@@ -714,7 +716,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineeLength;
     /// <summary>
-    /// Function: GetMatineeLength
+    /// Function: GetMatineeLength<br/>
+    /// Native code at BatmanAK.exe+0x493990 in the Steam build
     /// </summary>
     public unsafe virtual float GetMatineeLength()
     {
@@ -735,7 +738,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineePosition;
     /// <summary>
-    /// Function: GetMatineePosition
+    /// Function: GetMatineePosition<br/>
+    /// Native code at BatmanAK.exe+0x493940 in the Steam build
     /// </summary>
     public unsafe virtual float GetMatineePosition()
     {
@@ -756,7 +760,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StepMatinee;
     /// <summary>
-    /// Function: StepMatinee
+    /// Function: StepMatinee<br/>
+    /// Native code at BatmanAK.exe+0x5108C0 in the Steam build
     /// </summary>
     public unsafe virtual bool StepMatinee(float DeltaTime)
     {
@@ -778,7 +783,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateEditorComponents;
     /// <summary>
-    /// Function: UpdateEditorComponents
+    /// Function: UpdateEditorComponents<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateEditorComponents()
     {
@@ -799,7 +805,8 @@ public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertPosToActorSpace;
     /// <summary>
-    /// Function: ConvertPosToActorSpace
+    /// Function: ConvertPosToActorSpace<br/>
+    /// Native code at BatmanAK.exe+0x510730 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 ConvertPosToActorSpace(BmSDK.Engine.Actor Object, System.Numerics.Vector3 WorldPosition)
     {

@@ -232,7 +232,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickSatNavArrows;
     /// <summary>
-    /// Function: TickSatNavArrows
+    /// Function: TickSatNavArrows<br/>
+    /// Native code at BatmanAK.exe+0x50B930 in the Steam build
     /// </summary>
     public unsafe virtual void TickSatNavArrows(float DeltaTime)
     {
@@ -254,7 +255,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrowsAsync;
     /// <summary>
-    /// Function: UpdateSatNavArrowsAsync
+    /// Function: UpdateSatNavArrowsAsync<br/>
+    /// Native code at BatmanAK.exe+0x50B800 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSatNavArrowsAsync(float DeltaTime)
     {
@@ -276,7 +278,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrowsInternal;
     /// <summary>
-    /// Function: UpdateSatNavArrowsInternal
+    /// Function: UpdateSatNavArrowsInternal<br/>
+    /// Native code at BatmanAK.exe+0x50B610 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateSatNavArrowsInternal(bool GotNewRoute, float DeltaTime)
     {
@@ -299,7 +302,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrows;
     /// <summary>
-    /// Function: UpdateSatNavArrows
+    /// Function: UpdateSatNavArrows<br/>
+    /// Native code at BatmanAK.exe+0x564770 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSatNavArrows(BmSDK.Engine.Actor Destination, float ObjectiveZ, bool OnlyMainRoads, bool SuppressEjectArrow, bool ToRoadAtSameHeight, bool ToRoadBelow, bool AllowArmouredRoads, float DeltaTime, BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FOneWayLink> OneWayLinks)
     {
@@ -433,7 +437,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLOSToCar;
     /// <summary>
-    /// Function: UpdateLOSToCar
+    /// Function: UpdateLOSToCar<br/>
+    /// Native code at BatmanAK.exe+0x48E990 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLOSToCar()
     {
@@ -582,7 +587,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRouteRadar;
     /// <summary>
-    /// Function: DrawRouteRadar
+    /// Function: DrawRouteRadar<br/>
+    /// Native code at BatmanAK.exe+0xB86560 in the Steam build
     /// </summary>
     public unsafe virtual void DrawRouteRadar(BmSDK.Engine.Canvas HudCanvas)
     {
@@ -604,7 +610,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawVehicleTargetRoute;
     /// <summary>
-    /// Function: DrawVehicleTargetRoute
+    /// Function: DrawVehicleTargetRoute<br/>
+    /// Native code at BatmanAK.exe+0x48E950 in the Steam build
     /// </summary>
     public unsafe virtual void DrawVehicleTargetRoute()
     {
@@ -639,7 +646,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVehicleTracker;
     /// <summary>
-    /// Function: UpdateVehicleTracker
+    /// Function: UpdateVehicleTracker<br/>
+    /// Native code at BatmanAK.exe+0x50B4E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVehicleTracker(float DeltaTime)
     {
@@ -850,7 +858,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAllLightEnvironments;
     /// <summary>
-    /// Function: ResetAllLightEnvironments
+    /// Function: ResetAllLightEnvironments<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetAllLightEnvironments()
     {
@@ -945,7 +954,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUsingFilterView;
     /// <summary>
-    /// Function: IsUsingFilterView
+    /// Function: IsUsingFilterView<br/>
+    /// Native code at BatmanAK.exe+0x48E900 in the Steam build
     /// </summary>
     public unsafe virtual bool IsUsingFilterView()
     {
@@ -1131,7 +1141,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAngularDistanceToTarget;
     /// <summary>
-    /// Function: GetAngularDistanceToTarget
+    /// Function: GetAngularDistanceToTarget<br/>
+    /// Native code at BatmanAK.exe+0x48E860 in the Steam build
     /// </summary>
     public unsafe virtual float GetAngularDistanceToTarget(System.Numerics.Vector3 target_location)
     {
@@ -1153,7 +1164,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceToTarget;
     /// <summary>
-    /// Function: GetDistanceToTarget
+    /// Function: GetDistanceToTarget<br/>
+    /// Native code at BatmanAK.exe+0x48E7C0 in the Steam build
     /// </summary>
     public unsafe virtual float GetDistanceToTarget(System.Numerics.Vector3 target_location)
     {
@@ -1261,7 +1273,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowSatnavToTrackedVehicle;
     /// <summary>
-    /// Function: ShouldShowSatnavToTrackedVehicle
+    /// Function: ShouldShowSatnavToTrackedVehicle<br/>
+    /// Native code at BatmanAK.exe+0x48E770 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldShowSatnavToTrackedVehicle()
     {
@@ -1341,7 +1354,8 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
-    /// Function: PlayerTick
+    /// Function: PlayerTick<br/>
+    /// Native code at BatmanAK.exe+0x4F15A0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayerTick(float DeltaTime)
     {

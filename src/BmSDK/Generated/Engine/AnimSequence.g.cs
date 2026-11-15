@@ -80,7 +80,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstNotifyRealTime;
     /// <summary>
-    /// Function: GetFirstNotifyRealTime
+    /// Function: GetFirstNotifyRealTime<br/>
+    /// Native code at BatmanAK.exe+0xB530E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFirstNotifyRealTime(BmSDK.Class NotifyClass, out float Realtime)
     {
@@ -105,7 +106,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstNotifyNormalizedTime;
     /// <summary>
-    /// Function: GetFirstNotifyNormalizedTime
+    /// Function: GetFirstNotifyNormalizedTime<br/>
+    /// Native code at BatmanAK.exe+0xB52F60 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFirstNotifyNormalizedTime(BmSDK.Class NotifyClass, out float NormalizedTime)
     {
@@ -130,7 +132,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToString;
     /// <summary>
-    /// Function: ToString
+    /// Function: ToString<br/>
+    /// Native code at BatmanAK.exe+0xB9CDC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ToString(bool Verbose = default)
     {
@@ -152,7 +155,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRealTimeLength;
     /// <summary>
-    /// Function: GetRealTimeLength
+    /// Function: GetRealTimeLength<br/>
+    /// Native code at BatmanAK.exe+0xB2B0D0 in the Steam build
     /// </summary>
     public unsafe virtual float GetRealTimeLength()
     {
@@ -173,7 +177,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedTimeFromFractionalFrameIndex;
     /// <summary>
-    /// Function: GetNormalizedTimeFromFractionalFrameIndex
+    /// Function: GetNormalizedTimeFromFractionalFrameIndex<br/>
+    /// Native code at BatmanAK.exe+0xB52E20 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromFractionalFrameIndex(float FrameIndex)
     {
@@ -195,7 +200,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTimeFromFractionalFrameIndex;
     /// <summary>
-    /// Function: GetAnimTimeFromFractionalFrameIndex
+    /// Function: GetAnimTimeFromFractionalFrameIndex<br/>
+    /// Native code at BatmanAK.exe+0xB52CE0 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimTimeFromFractionalFrameIndex(float FrameIndex)
     {
@@ -217,7 +223,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedTimeFromFrameIndex;
     /// <summary>
-    /// Function: GetNormalizedTimeFromFrameIndex
+    /// Function: GetNormalizedTimeFromFrameIndex<br/>
+    /// Native code at BatmanAK.exe+0xB52BA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromFrameIndex(int FrameIndex)
     {
@@ -239,7 +246,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTimeFromFrameIndex;
     /// <summary>
-    /// Function: GetAnimTimeFromFrameIndex
+    /// Function: GetAnimTimeFromFrameIndex<br/>
+    /// Native code at BatmanAK.exe+0xB52A60 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimTimeFromFrameIndex(int FrameIndex)
     {
@@ -261,7 +269,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFractionalFrameIndexFromAnimTime;
     /// <summary>
-    /// Function: GetFractionalFrameIndexFromAnimTime
+    /// Function: GetFractionalFrameIndexFromAnimTime<br/>
+    /// Native code at BatmanAK.exe+0xB52920 in the Steam build
     /// </summary>
     public unsafe virtual float GetFractionalFrameIndexFromAnimTime(float AnimTime)
     {
@@ -283,7 +292,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFractionalFrameIndexFromNormalizedTime;
     /// <summary>
-    /// Function: GetFractionalFrameIndexFromNormalizedTime
+    /// Function: GetFractionalFrameIndexFromNormalizedTime<br/>
+    /// Native code at BatmanAK.exe+0xB527E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetFractionalFrameIndexFromNormalizedTime(float NormalizedTime)
     {
@@ -305,7 +315,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedDurationFromAnimDuration;
     /// <summary>
-    /// Function: GetNormalizedDurationFromAnimDuration
+    /// Function: GetNormalizedDurationFromAnimDuration<br/>
+    /// Native code at BatmanAK.exe+0xB526A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedDurationFromAnimDuration(float AnimLength)
     {
@@ -327,7 +338,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedTimeFromAnimTime;
     /// <summary>
-    /// Function: GetNormalizedTimeFromAnimTime
+    /// Function: GetNormalizedTimeFromAnimTime<br/>
+    /// Native code at BatmanAK.exe+0xB52560 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromAnimTime(float AnimTime)
     {
@@ -349,7 +361,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedTimeFromRealTime;
     /// <summary>
-    /// Function: GetNormalizedTimeFromRealTime
+    /// Function: GetNormalizedTimeFromRealTime<br/>
+    /// Native code at BatmanAK.exe+0xB52420 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromRealTime(float Realtime)
     {
@@ -371,7 +384,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRealTimeFromNormalizedTime;
     /// <summary>
-    /// Function: GetRealTimeFromNormalizedTime
+    /// Function: GetRealTimeFromNormalizedTime<br/>
+    /// Native code at BatmanAK.exe+0xB522E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetRealTimeFromNormalizedTime(float NormalizedTime)
     {
@@ -393,7 +407,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTimeFromNormalizedTime;
     /// <summary>
-    /// Function: GetAnimTimeFromNormalizedTime
+    /// Function: GetAnimTimeFromNormalizedTime<br/>
+    /// Native code at BatmanAK.exe+0xB521A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimTimeFromNormalizedTime(float NormalizedTime)
     {
@@ -415,7 +430,8 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNotifyTimeByClass;
     /// <summary>
-    /// Function: GetNotifyTimeByClass
+    /// Function: GetNotifyTimeByClass<br/>
+    /// Native code at BatmanAK.exe+0xB51F20 in the Steam build
     /// </summary>
     public unsafe virtual float GetNotifyTimeByClass(BmSDK.Class NotifyClass, float PlayRate, float StartPosition, out BmSDK.Engine.AnimNotify out_Notify, out float out_Duration)
     {

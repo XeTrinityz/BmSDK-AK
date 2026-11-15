@@ -80,7 +80,8 @@ public partial class RSkelControlWhip : BmSDK.Engine.SkelControlBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWhipExtent;
     /// <summary>
-    /// Function: GetWhipExtent
+    /// Function: GetWhipExtent<br/>
+    /// Native code at BatmanAK.exe+0x4B93A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetWhipExtent(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {

@@ -80,7 +80,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChapterSideStory;
     /// <summary>
-    /// Function: SetChapterSideStory
+    /// Function: SetChapterSideStory<br/>
+    /// Native code at BatmanAK.exe+0x50AB20 in the Steam build
     /// </summary>
     public unsafe virtual void SetChapterSideStory(BmSDK.Engine.Actor.ESideStory SideStory, int Chapter, byte SubChapter)
     {
@@ -104,7 +105,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpFlagList;
     /// <summary>
-    /// Function: DumpFlagList
+    /// Function: DumpFlagList<br/>
+    /// Native code at BatmanAK.exe+0x53A310 in the Steam build
     /// </summary>
     public unsafe virtual void DumpFlagList(BmSDK.FStringArg Description = default)
     {
@@ -127,7 +129,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagListForChallengeMode;
     /// <summary>
-    /// Function: SetFlagListForChallengeMode
+    /// Function: SetFlagListForChallengeMode<br/>
+    /// Native code at BatmanAK.exe+0x56C410 in the Steam build
     /// </summary>
     public unsafe virtual void SetFlagListForChallengeMode(out BmSDK.TArray<BmSDK.FString> flagsList, out BmSDK.TArray<int> flagsValues)
     {
@@ -150,7 +153,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagList;
     /// <summary>
-    /// Function: SetFlagList
+    /// Function: SetFlagList<br/>
+    /// Native code at BatmanAK.exe+0x56C2A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFlagList(out BmSDK.TArray<BmSDK.FString> flagsList, out BmSDK.TArray<int> flagsValues)
     {
@@ -173,7 +177,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagListPIE;
     /// <summary>
-    /// Function: SetFlagListPIE
+    /// Function: SetFlagListPIE<br/>
+    /// Native code at BatmanAK.exe+0x48DAB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFlagListPIE()
     {
@@ -194,7 +199,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSetFlagsLike;
     /// <summary>
-    /// Function: FindSetFlagsLike
+    /// Function: FindSetFlagsLike<br/>
+    /// Native code at BatmanAK.exe+0x56C0E0 in the Steam build
     /// </summary>
     public unsafe virtual void FindSetFlagsLike(BmSDK.FStringArg MatchName, out BmSDK.TArray<BmSDK.FString> MatchingFlags)
     {
@@ -218,7 +224,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNonSavedFlags;
     /// <summary>
-    /// Function: ClearNonSavedFlags
+    /// Function: ClearNonSavedFlags<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearNonSavedFlags()
     {
@@ -239,7 +246,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlags;
     /// <summary>
-    /// Function: SetGlobalFlags
+    /// Function: SetGlobalFlags<br/>
+    /// Native code at BatmanAK.exe+0x61A1B0 in the Steam build
     /// </summary>
     public unsafe virtual int SetGlobalFlags(BmSDK.FStringArg FlagList)
     {
@@ -262,7 +270,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalInt;
     /// <summary>
-    /// Function: SetGlobalInt
+    /// Function: SetGlobalInt<br/>
+    /// Native code at BatmanAK.exe+0x540C40 in the Steam build
     /// </summary>
     public unsafe virtual int SetGlobalInt(BmSDK.FStringArg FlagName, int Value)
     {
@@ -286,7 +295,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalInt;
     /// <summary>
-    /// Function: GetGlobalInt
+    /// Function: GetGlobalInt<br/>
+    /// Native code at BatmanAK.exe+0x540AF0 in the Steam build
     /// </summary>
     public unsafe virtual int GetGlobalInt(BmSDK.FStringArg FlagName)
     {
@@ -309,7 +319,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlagFromWBPlayRewardFlag;
     /// <summary>
-    /// Function: SetGlobalFlagFromWBPlayRewardFlag
+    /// Function: SetGlobalFlagFromWBPlayRewardFlag<br/>
+    /// Native code at BatmanAK.exe+0x5408D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetGlobalFlagFromWBPlayRewardFlag(BmSDK.FStringArg FlagName, bool Value, bool ForChallengeMode = default)
     {
@@ -334,7 +345,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlagForChallengeMode;
     /// <summary>
-    /// Function: SetGlobalFlagForChallengeMode
+    /// Function: SetGlobalFlagForChallengeMode<br/>
+    /// Native code at BatmanAK.exe+0x5406D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetGlobalFlagForChallengeMode(BmSDK.FStringArg FlagName, bool Value)
     {
@@ -358,7 +370,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlag;
     /// <summary>
-    /// Function: SetGlobalFlag
+    /// Function: SetGlobalFlag<br/>
+    /// Native code at BatmanAK.exe+0x5404D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetGlobalFlag(BmSDK.FStringArg FlagName, bool Value)
     {
@@ -382,7 +395,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalFlag;
     /// <summary>
-    /// Function: GetGlobalFlag
+    /// Function: GetGlobalFlag<br/>
+    /// Native code at BatmanAK.exe+0x6B4070 in the Steam build
     /// </summary>
     public unsafe virtual bool GetGlobalFlag(BmSDK.FStringArg FlagName)
     {
@@ -405,7 +419,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectBit;
     /// <summary>
-    /// Function: SetObjectBit
+    /// Function: SetObjectBit<br/>
+    /// Native code at BatmanAK.exe+0x50A880 in the Steam build
     /// </summary>
     public unsafe virtual bool SetObjectBit(BmSDK.GameObject Obj, int BitIndex, bool Value)
     {
@@ -429,7 +444,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectBit;
     /// <summary>
-    /// Function: GetObjectBit
+    /// Function: GetObjectBit<br/>
+    /// Native code at BatmanAK.exe+0x50A690 in the Steam build
     /// </summary>
     public unsafe virtual bool GetObjectBit(BmSDK.GameObject Obj, int BitIndex)
     {
@@ -452,7 +468,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectInt;
     /// <summary>
-    /// Function: SetObjectInt
+    /// Function: SetObjectInt<br/>
+    /// Native code at BatmanAK.exe+0x540220 in the Steam build
     /// </summary>
     public unsafe virtual int SetObjectInt(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, int Value)
     {
@@ -477,7 +494,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectInt;
     /// <summary>
-    /// Function: GetObjectInt
+    /// Function: GetObjectInt<br/>
+    /// Native code at BatmanAK.exe+0x53FFC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetObjectInt(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, out int Found)
     {
@@ -504,7 +522,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectFlag;
     /// <summary>
-    /// Function: SetObjectFlag
+    /// Function: SetObjectFlag<br/>
+    /// Native code at BatmanAK.exe+0x53FD00 in the Steam build
     /// </summary>
     public unsafe virtual bool SetObjectFlag(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, bool Value)
     {
@@ -529,7 +548,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectFlag;
     /// <summary>
-    /// Function: GetObjectFlag
+    /// Function: GetObjectFlag<br/>
+    /// Native code at BatmanAK.exe+0x53FAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetObjectFlag(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName)
     {
@@ -553,7 +573,8 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
-    /// Function: Initialise
+    /// Function: Initialise<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void Initialise()
     {

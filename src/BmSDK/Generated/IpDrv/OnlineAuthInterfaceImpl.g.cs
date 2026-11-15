@@ -117,7 +117,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLocalServerAuthSession;
     /// <summary>
-    /// Function: FindLocalServerAuthSession
+    /// Function: FindLocalServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6AF760 in the Steam build
     /// </summary>
     public unsafe virtual bool FindLocalServerAuthSession(BmSDK.Engine.Player ClientConnection, out BmSDK.Engine.OnlineAuthInterface.FLocalAuthSession OutSessionInfo)
     {
@@ -140,7 +141,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindServerAuthSession;
     /// <summary>
-    /// Function: FindServerAuthSession
+    /// Function: FindServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6AF5E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindServerAuthSession(BmSDK.Engine.Player ServerConnection, out BmSDK.Engine.OnlineAuthInterface.FAuthSession OutSessionInfo)
     {
@@ -163,7 +165,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLocalClientAuthSession;
     /// <summary>
-    /// Function: FindLocalClientAuthSession
+    /// Function: FindLocalClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6AF460 in the Steam build
     /// </summary>
     public unsafe virtual bool FindLocalClientAuthSession(BmSDK.Engine.Player ServerConnection, out BmSDK.Engine.OnlineAuthInterface.FLocalAuthSession OutSessionInfo)
     {
@@ -186,7 +189,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClientAuthSession;
     /// <summary>
-    /// Function: FindClientAuthSession
+    /// Function: FindClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6AF2E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindClientAuthSession(BmSDK.Engine.Player ClientConnection, out BmSDK.Engine.OnlineAuthInterface.FAuthSession OutSessionInfo)
     {
@@ -209,7 +213,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllRemoteServerAuthSessions;
     /// <summary>
-    /// Function: EndAllRemoteServerAuthSessions
+    /// Function: EndAllRemoteServerAuthSessions<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe virtual void EndAllRemoteServerAuthSessions()
     {
@@ -230,7 +235,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllLocalServerAuthSessions;
     /// <summary>
-    /// Function: EndAllLocalServerAuthSessions
+    /// Function: EndAllLocalServerAuthSessions<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void EndAllLocalServerAuthSessions()
     {
@@ -251,7 +257,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndRemoteServerAuthSession;
     /// <summary>
-    /// Function: EndRemoteServerAuthSession
+    /// Function: EndRemoteServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6C0230 in the Steam build
     /// </summary>
     public unsafe virtual void EndRemoteServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP)
     {
@@ -274,7 +281,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLocalServerAuthSession;
     /// <summary>
-    /// Function: EndLocalServerAuthSession
+    /// Function: EndLocalServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6B9D30 in the Steam build
     /// </summary>
     public unsafe virtual void EndLocalServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP)
     {
@@ -334,7 +342,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllRemoteClientAuthSessions;
     /// <summary>
-    /// Function: EndAllRemoteClientAuthSessions
+    /// Function: EndAllRemoteClientAuthSessions<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void EndAllRemoteClientAuthSessions()
     {
@@ -355,7 +364,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllLocalClientAuthSessions;
     /// <summary>
-    /// Function: EndAllLocalClientAuthSessions
+    /// Function: EndAllLocalClientAuthSessions<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void EndAllLocalClientAuthSessions()
     {
@@ -376,7 +386,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndRemoteClientAuthSession;
     /// <summary>
-    /// Function: EndRemoteClientAuthSession
+    /// Function: EndRemoteClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6C00F0 in the Steam build
     /// </summary>
     public unsafe virtual void EndRemoteClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP)
     {
@@ -399,7 +410,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLocalClientAuthSession;
     /// <summary>
-    /// Function: EndLocalClientAuthSession
+    /// Function: EndLocalClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x6B9B40 in the Steam build
     /// </summary>
     public unsafe virtual void EndLocalClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int ServerPort)
     {
@@ -462,7 +474,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthRetryRequest;
     /// <summary>
-    /// Function: SendServerAuthRetryRequest
+    /// Function: SendServerAuthRetryRequest<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool SendServerAuthRetryRequest()
     {
@@ -483,7 +496,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthEndSessionRequest;
     /// <summary>
-    /// Function: SendClientAuthEndSessionRequest
+    /// Function: SendClientAuthEndSessionRequest<br/>
+    /// Native code at BatmanAK.exe+0x5267F0 in the Steam build
     /// </summary>
     public unsafe virtual bool SendClientAuthEndSessionRequest(BmSDK.Engine.Player ClientConnection)
     {
@@ -505,7 +519,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthResponse;
     /// <summary>
-    /// Function: SendServerAuthResponse
+    /// Function: SendServerAuthResponse<br/>
+    /// Native code at BatmanAK.exe+0x6AF0F0 in the Steam build
     /// </summary>
     public unsafe virtual bool SendServerAuthResponse(BmSDK.Engine.Player ClientConnection, int AuthTicketUID)
     {
@@ -528,7 +543,8 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthResponse;
     /// <summary>
-    /// Function: SendClientAuthResponse
+    /// Function: SendClientAuthResponse<br/>
+    /// Native code at BatmanAK.exe+0x4A3FA0 in the Steam build
     /// </summary>
     public unsafe virtual bool SendClientAuthResponse(int AuthTicketUID)
     {

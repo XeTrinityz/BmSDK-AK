@@ -123,7 +123,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPollenDensity;
     /// <summary>
-    /// Function: GetPollenDensity
+    /// Function: GetPollenDensity<br/>
+    /// Native code at BatmanAK.exe+0xB39F30 in the Steam build
     /// </summary>
     public unsafe override float GetPollenDensity()
     {
@@ -144,7 +145,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsidePollenVolume;
     /// <summary>
-    /// Function: IsInsidePollenVolume
+    /// Function: IsInsidePollenVolume<br/>
+    /// Native code at BatmanAK.exe+0xB39E90 in the Steam build
     /// </summary>
     public unsafe override bool IsInsidePollenVolume(System.Numerics.Vector3 TestLocation)
     {
@@ -166,7 +168,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPollenDepth;
     /// <summary>
-    /// Function: GetLocationPollenDepth
+    /// Function: GetLocationPollenDepth<br/>
+    /// Native code at BatmanAK.exe+0xB39DF0 in the Steam build
     /// </summary>
     public unsafe override float GetLocationPollenDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -188,7 +191,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToPollenZ;
     /// <summary>
-    /// Function: SignedDistanceToPollenZ
+    /// Function: SignedDistanceToPollenZ<br/>
+    /// Native code at BatmanAK.exe+0xB39D50 in the Steam build
     /// </summary>
     public unsafe override float SignedDistanceToPollenZ(System.Numerics.Vector3 TestLocation)
     {
@@ -210,7 +214,8 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationPollen;
     /// <summary>
-    /// Function: IsLocationPollen
+    /// Function: IsLocationPollen<br/>
+    /// Native code at BatmanAK.exe+0xB39CB0 in the Steam build
     /// </summary>
     public unsafe override bool IsLocationPollen(System.Numerics.Vector3 TestLocation)
     {

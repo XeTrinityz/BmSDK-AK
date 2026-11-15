@@ -80,7 +80,8 @@ public partial class TranslationContext : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterTranslatorTag;
     /// <summary>
-    /// Function: RegisterTranslatorTag
+    /// Function: RegisterTranslatorTag<br/>
+    /// Native code at BatmanAK.exe+0xB73150 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterTranslatorTag(BmSDK.Engine.TranslatorTag InTagHandler)
     {

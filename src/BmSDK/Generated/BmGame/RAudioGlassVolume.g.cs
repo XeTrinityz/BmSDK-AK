@@ -133,7 +133,8 @@ public partial class RAudioGlassVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleTouch;
     /// <summary>
-    /// Function: HandleTouch
+    /// Function: HandleTouch<br/>
+    /// Native code at BatmanAK.exe+0x554270 in the Steam build
     /// </summary>
     public unsafe virtual void HandleTouch(BmSDK.BmGame.RAudioGlassVolume Volume, bool bEnabled)
     {
@@ -156,7 +157,8 @@ public partial class RAudioGlassVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetFootstepGlassValue;
     /// <summary>
-    /// Function: GetFootstepGlassValue
+    /// Function: GetFootstepGlassValue<br/>
+    /// Native code at BatmanAK.exe+0x5541E0 in the Steam build
     /// </summary>
     public unsafe static float GetFootstepGlassValue(System.Numerics.Vector3 footstepPosition)
     {
@@ -223,7 +225,8 @@ public static class RAudioGlassVolumeStatics
 {
     private static BmSDK.Function __fn_GetFootstepGlassValue;
     /// <summary>
-    /// Function: GetFootstepGlassValue, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetFootstepGlassValue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x5541E0 in the Steam build
     /// </summary>
     public unsafe static float GetFootstepGlassValue(this BmSDK.BmGame.RAudioGlassVolume self, System.Numerics.Vector3 footstepPosition)
     {

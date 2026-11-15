@@ -80,7 +80,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPhysAssetBody;
     /// <summary>
-    /// Function: FindPhysAssetBody
+    /// Function: FindPhysAssetBody<br/>
+    /// Native code at BatmanAK.exe+0x4969D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodySetup FindPhysAssetBody()
     {
@@ -101,7 +102,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPhysAssetBodyIndex;
     /// <summary>
-    /// Function: FindPhysAssetBodyIndex
+    /// Function: FindPhysAssetBodyIndex<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual int FindPhysAssetBodyIndex()
     {
@@ -122,7 +124,8 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindParticleIndex;
     /// <summary>
-    /// Function: FindParticleIndex
+    /// Function: FindParticleIndex<br/>
+    /// Native code at BatmanAK.exe+0xB5D1B0 in the Steam build
     /// </summary>
     public unsafe virtual int FindParticleIndex(BmSDK.FName ParticleName)
     {

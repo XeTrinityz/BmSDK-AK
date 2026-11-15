@@ -139,7 +139,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPlayerDataStoreIndex;
     /// <summary>
-    /// Function: FindPlayerDataStoreIndex
+    /// Function: FindPlayerDataStoreIndex<br/>
+    /// Native code at BatmanAK.exe+0xB58730 in the Steam build
     /// </summary>
     public unsafe virtual int FindPlayerDataStoreIndex(BmSDK.Engine.LocalPlayer PlayerOwner)
     {
@@ -161,7 +162,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterDataStore;
     /// <summary>
-    /// Function: UnregisterDataStore
+    /// Function: UnregisterDataStore<br/>
+    /// Native code at BatmanAK.exe+0xB585F0 in the Steam build
     /// </summary>
     public unsafe virtual bool UnregisterDataStore(BmSDK.Engine.UIDataStore DataStore)
     {
@@ -183,7 +185,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterDataStore;
     /// <summary>
-    /// Function: RegisterDataStore
+    /// Function: RegisterDataStore<br/>
+    /// Native code at BatmanAK.exe+0xB58480 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterDataStore(BmSDK.Engine.UIDataStore DataStore, BmSDK.Engine.LocalPlayer PlayerOwner = default)
     {
@@ -206,7 +209,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateDataStore;
     /// <summary>
-    /// Function: CreateDataStore
+    /// Function: CreateDataStore<br/>
+    /// Native code at BatmanAK.exe+0xB58340 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.UIDataStore CreateDataStore(BmSDK.Class DataStoreClass)
     {
@@ -228,7 +232,8 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDataStore;
     /// <summary>
-    /// Function: FindDataStore
+    /// Function: FindDataStore<br/>
+    /// Native code at BatmanAK.exe+0xB581D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.UIDataStore FindDataStore(BmSDK.FName DataStoreTag, BmSDK.Engine.LocalPlayer PlayerOwner = default)
     {

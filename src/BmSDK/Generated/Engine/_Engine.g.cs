@@ -75,7 +75,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LaunchURL;
     /// <summary>
-    /// Function: LaunchURL
+    /// Function: LaunchURL<br/>
+    /// Native code at BatmanAK.exe+0xBAF080 in the Steam build
     /// </summary>
     public unsafe static void LaunchURL(BmSDK.FStringArg URL)
     {
@@ -97,7 +98,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsFlexEnabled;
     /// <summary>
-    /// Function: IsFlexEnabled
+    /// Function: IsFlexEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB444E0 in the Steam build
     /// </summary>
     public unsafe static bool IsFlexEnabled()
     {
@@ -117,7 +119,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPhysXMeshDebrisEnabled;
     /// <summary>
-    /// Function: IsPhysXMeshDebrisEnabled
+    /// Function: IsPhysXMeshDebrisEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB44490 in the Steam build
     /// </summary>
     public unsafe static bool IsPhysXMeshDebrisEnabled()
     {
@@ -137,7 +140,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsTurbulenceEnabled;
     /// <summary>
-    /// Function: IsTurbulenceEnabled
+    /// Function: IsTurbulenceEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB44440 in the Steam build
     /// </summary>
     public unsafe static bool IsTurbulenceEnabled()
     {
@@ -157,7 +161,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPhysXLevel;
     /// <summary>
-    /// Function: GetPhysXLevel
+    /// Function: GetPhysXLevel<br/>
+    /// Native code at BatmanAK.exe+0xB443E0 in the Steam build
     /// </summary>
     public unsafe static int GetPhysXLevel()
     {
@@ -177,7 +182,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_BasicLoadObject;
     /// <summary>
-    /// Function: BasicLoadObject
+    /// Function: BasicLoadObject<br/>
+    /// Native code at BatmanAK.exe+0xBB5360 in the Steam build
     /// </summary>
     public unsafe static bool BasicLoadObject(BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version)
     {
@@ -202,7 +208,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_BasicSaveObject;
     /// <summary>
-    /// Function: BasicSaveObject
+    /// Function: BasicSaveObject<br/>
+    /// Native code at BatmanAK.exe+0xBB4F90 in the Steam build
     /// </summary>
     public unsafe static bool BasicSaveObject(BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
     {
@@ -228,7 +235,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTextureStreamingSlaveLoc;
     /// <summary>
-    /// Function: AddTextureStreamingSlaveLoc
+    /// Function: AddTextureStreamingSlaveLoc<br/>
+    /// Native code at BatmanAK.exe+0xB8C2E0 in the Steam build
     /// </summary>
     public unsafe virtual void AddTextureStreamingSlaveLoc(System.Numerics.Vector3 InLoc, float BoostFactor, bool bOverrideLocation, float OverrideDuration)
     {
@@ -253,7 +261,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetWorldPostProcessChain;
     /// <summary>
-    /// Function: GetWorldPostProcessChain
+    /// Function: GetWorldPostProcessChain<br/>
+    /// Native code at BatmanAK.exe+0xBB4F40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PostProcessChain GetWorldPostProcessChain()
     {
@@ -273,7 +282,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDefaultPostProcessChain;
     /// <summary>
-    /// Function: GetDefaultPostProcessChain
+    /// Function: GetDefaultPostProcessChain<br/>
+    /// Native code at BatmanAK.exe+0xB8C250 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PostProcessChain GetDefaultPostProcessChain()
     {
@@ -293,7 +303,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetEngine;
     /// <summary>
-    /// Function: GetEngine
+    /// Function: GetEngine<br/>
+    /// Native code at BatmanAK.exe+0xB44390 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine._Engine GetEngine()
     {
@@ -313,7 +324,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsRealDStereoEnabled;
     /// <summary>
-    /// Function: IsRealDStereoEnabled
+    /// Function: IsRealDStereoEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static bool IsRealDStereoEnabled()
     {
@@ -333,7 +345,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDebugData;
     /// <summary>
-    /// Function: GetDebugData
+    /// Function: GetDebugData<br/>
+    /// Native code at BatmanAK.exe+0xB44330 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PersistentDebugData GetDebugData()
     {
@@ -353,7 +366,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddOverlayWrapped;
     /// <summary>
-    /// Function: AddOverlayWrapped
+    /// Function: AddOverlayWrapped<br/>
+    /// Native code at BatmanAK.exe+0xBAEAB0 in the Steam build
     /// </summary>
     public unsafe static void AddOverlayWrapped(BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
     {
@@ -381,7 +395,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddOverlay;
     /// <summary>
-    /// Function: AddOverlay
+    /// Function: AddOverlay<br/>
+    /// Native code at BatmanAK.exe+0xBAE4F0 in the Steam build
     /// </summary>
     public unsafe static void AddOverlay(BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
     {
@@ -409,7 +424,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveAllOverlays;
     /// <summary>
-    /// Function: RemoveAllOverlays
+    /// Function: RemoveAllOverlays<br/>
+    /// Native code at BatmanAK.exe+0xB442F0 in the Steam build
     /// </summary>
     public unsafe static void RemoveAllOverlays()
     {
@@ -429,7 +445,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopMovie;
     /// <summary>
-    /// Function: StopMovie
+    /// Function: StopMovie<br/>
+    /// Native code at BatmanAK.exe+0xB8C120 in the Steam build
     /// </summary>
     public unsafe static void StopMovie(bool bDelayStopUntilGameHasRendered)
     {
@@ -450,7 +467,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PlayLoadMapMovie;
     /// <summary>
-    /// Function: PlayLoadMapMovie
+    /// Function: PlayLoadMapMovie<br/>
+    /// Native code at BatmanAK.exe+0xBBE570 in the Steam build
     /// </summary>
     public unsafe static bool PlayLoadMapMovie()
     {
@@ -470,7 +488,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLastMovieName;
     /// <summary>
-    /// Function: GetLastMovieName
+    /// Function: GetLastMovieName<br/>
+    /// Native code at BatmanAK.exe+0xBAE470 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLastMovieName()
     {
@@ -490,7 +509,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAudioDevice;
     /// <summary>
-    /// Function: GetAudioDevice
+    /// Function: GetAudioDevice<br/>
+    /// Native code at BatmanAK.exe+0xB44280 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AudioDevice GetAudioDevice()
     {
@@ -510,7 +530,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsUsingES2Renderer;
     /// <summary>
-    /// Function: IsUsingES2Renderer
+    /// Function: IsUsingES2Renderer<br/>
+    /// Native code at BatmanAK.exe+0xB44230 in the Steam build
     /// </summary>
     public unsafe static bool IsUsingES2Renderer()
     {
@@ -530,7 +551,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsStereoscopic3D;
     /// <summary>
-    /// Function: IsStereoscopic3D
+    /// Function: IsStereoscopic3D<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static bool IsStereoscopic3D()
     {
@@ -550,7 +572,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSplitScreen;
     /// <summary>
-    /// Function: IsSplitScreen
+    /// Function: IsSplitScreen<br/>
+    /// Native code at BatmanAK.exe+0xB8C0B0 in the Steam build
     /// </summary>
     public unsafe static bool IsSplitScreen()
     {
@@ -570,7 +593,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAdditionalFont;
     /// <summary>
-    /// Function: GetAdditionalFont
+    /// Function: GetAdditionalFont<br/>
+    /// Native code at BatmanAK.exe+0xBAE350 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetAdditionalFont(int AdditionalFontIndex)
     {
@@ -591,7 +615,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSubtitleFont;
     /// <summary>
-    /// Function: GetSubtitleFont
+    /// Function: GetSubtitleFont<br/>
+    /// Native code at BatmanAK.exe+0xB44180 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetSubtitleFont()
     {
@@ -611,7 +636,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLargeFont;
     /// <summary>
-    /// Function: GetLargeFont
+    /// Function: GetLargeFont<br/>
+    /// Native code at BatmanAK.exe+0xB44120 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetLargeFont()
     {
@@ -631,7 +657,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetMediumFont;
     /// <summary>
-    /// Function: GetMediumFont
+    /// Function: GetMediumFont<br/>
+    /// Native code at BatmanAK.exe+0xB440C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetMediumFont()
     {
@@ -651,7 +678,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSmallFont;
     /// <summary>
-    /// Function: GetSmallFont
+    /// Function: GetSmallFont<br/>
+    /// Native code at BatmanAK.exe+0xB44060 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetSmallFont()
     {
@@ -671,7 +699,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetTinyFont;
     /// <summary>
-    /// Function: GetTinyFont
+    /// Function: GetTinyFont<br/>
+    /// Native code at BatmanAK.exe+0xB44000 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetTinyFont()
     {
@@ -691,7 +720,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_HasNetworkConnection;
     /// <summary>
-    /// Function: HasNetworkConnection
+    /// Function: HasNetworkConnection<br/>
+    /// Native code at BatmanAK.exe+0xB43FB0 in the Steam build
     /// </summary>
     public unsafe static bool HasNetworkConnection()
     {
@@ -711,7 +741,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDevicePushNotificationToken;
     /// <summary>
-    /// Function: GetDevicePushNotificationToken
+    /// Function: GetDevicePushNotificationToken<br/>
+    /// Native code at BatmanAK.exe+0xBAE2D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDevicePushNotificationToken()
     {
@@ -731,7 +762,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetOSVersion;
     /// <summary>
-    /// Function: GetOSVersion
+    /// Function: GetOSVersion<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static float GetOSVersion()
     {
@@ -751,7 +783,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDeviceUUID;
     /// <summary>
-    /// Function: GetDeviceUUID
+    /// Function: GetDeviceUUID<br/>
+    /// Native code at BatmanAK.exe+0xBAE250 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDeviceUUID()
     {
@@ -771,7 +804,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetBuildDate;
     /// <summary>
-    /// Function: GetBuildDate
+    /// Function: GetBuildDate<br/>
+    /// Native code at BatmanAK.exe+0xBAE1D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetBuildDate()
     {
@@ -791,7 +825,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetCurrentWorldInfo;
     /// <summary>
-    /// Function: GetCurrentWorldInfo
+    /// Function: GetCurrentWorldInfo<br/>
+    /// Native code at BatmanAK.exe+0xBB4ED0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo GetCurrentWorldInfo()
     {
@@ -811,7 +846,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsGame;
     /// <summary>
-    /// Function: IsGame
+    /// Function: IsGame<br/>
+    /// Native code at BatmanAK.exe+0xB43F60 in the Steam build
     /// </summary>
     public unsafe static bool IsGame()
     {
@@ -831,7 +867,8 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsEditor;
     /// <summary>
-    /// Function: IsEditor
+    /// Function: IsEditor<br/>
+    /// Native code at BatmanAK.exe+0xB43F10 in the Steam build
     /// </summary>
     public unsafe static bool IsEditor()
     {
@@ -3836,7 +3873,8 @@ public static class _EngineStatics
 {
     private static BmSDK.Function __fn_LaunchURL;
     /// <summary>
-    /// Function: LaunchURL, run on <paramref name="self"/> rather than the class default object
+    /// Function: LaunchURL, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAF080 in the Steam build
     /// </summary>
     public unsafe static void LaunchURL(this BmSDK.Engine._Engine self, BmSDK.FStringArg URL)
     {
@@ -3859,7 +3897,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsFlexEnabled;
     /// <summary>
-    /// Function: IsFlexEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsFlexEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB444E0 in the Steam build
     /// </summary>
     public unsafe static bool IsFlexEnabled(this BmSDK.Engine._Engine self)
     {
@@ -3880,7 +3919,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsPhysXMeshDebrisEnabled;
     /// <summary>
-    /// Function: IsPhysXMeshDebrisEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPhysXMeshDebrisEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44490 in the Steam build
     /// </summary>
     public unsafe static bool IsPhysXMeshDebrisEnabled(this BmSDK.Engine._Engine self)
     {
@@ -3901,7 +3941,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsTurbulenceEnabled;
     /// <summary>
-    /// Function: IsTurbulenceEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsTurbulenceEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44440 in the Steam build
     /// </summary>
     public unsafe static bool IsTurbulenceEnabled(this BmSDK.Engine._Engine self)
     {
@@ -3922,7 +3963,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetPhysXLevel;
     /// <summary>
-    /// Function: GetPhysXLevel, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPhysXLevel, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB443E0 in the Steam build
     /// </summary>
     public unsafe static int GetPhysXLevel(this BmSDK.Engine._Engine self)
     {
@@ -3943,7 +3985,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_BasicLoadObject;
     /// <summary>
-    /// Function: BasicLoadObject, run on <paramref name="self"/> rather than the class default object
+    /// Function: BasicLoadObject, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB5360 in the Steam build
     /// </summary>
     public unsafe static bool BasicLoadObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version)
     {
@@ -3969,7 +4012,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_BasicSaveObject;
     /// <summary>
-    /// Function: BasicSaveObject, run on <paramref name="self"/> rather than the class default object
+    /// Function: BasicSaveObject, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB4F90 in the Steam build
     /// </summary>
     public unsafe static bool BasicSaveObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
     {
@@ -3996,7 +4040,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetWorldPostProcessChain;
     /// <summary>
-    /// Function: GetWorldPostProcessChain, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetWorldPostProcessChain, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB4F40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PostProcessChain GetWorldPostProcessChain(this BmSDK.Engine._Engine self)
     {
@@ -4017,7 +4062,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetDefaultPostProcessChain;
     /// <summary>
-    /// Function: GetDefaultPostProcessChain, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDefaultPostProcessChain, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB8C250 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PostProcessChain GetDefaultPostProcessChain(this BmSDK.Engine._Engine self)
     {
@@ -4038,7 +4084,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetEngine;
     /// <summary>
-    /// Function: GetEngine, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetEngine, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44390 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine._Engine GetEngine(this BmSDK.Engine._Engine self)
     {
@@ -4059,7 +4106,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsRealDStereoEnabled;
     /// <summary>
-    /// Function: IsRealDStereoEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsRealDStereoEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static bool IsRealDStereoEnabled(this BmSDK.Engine._Engine self)
     {
@@ -4080,7 +4128,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetDebugData;
     /// <summary>
-    /// Function: GetDebugData, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDebugData, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44330 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PersistentDebugData GetDebugData(this BmSDK.Engine._Engine self)
     {
@@ -4101,7 +4150,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_AddOverlayWrapped;
     /// <summary>
-    /// Function: AddOverlayWrapped, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddOverlayWrapped, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAEAB0 in the Steam build
     /// </summary>
     public unsafe static void AddOverlayWrapped(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
     {
@@ -4130,7 +4180,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_AddOverlay;
     /// <summary>
-    /// Function: AddOverlay, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddOverlay, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE4F0 in the Steam build
     /// </summary>
     public unsafe static void AddOverlay(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
     {
@@ -4159,7 +4210,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_RemoveAllOverlays;
     /// <summary>
-    /// Function: RemoveAllOverlays, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveAllOverlays, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB442F0 in the Steam build
     /// </summary>
     public unsafe static void RemoveAllOverlays(this BmSDK.Engine._Engine self)
     {
@@ -4180,7 +4232,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_StopMovie;
     /// <summary>
-    /// Function: StopMovie, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopMovie, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB8C120 in the Steam build
     /// </summary>
     public unsafe static void StopMovie(this BmSDK.Engine._Engine self, bool bDelayStopUntilGameHasRendered)
     {
@@ -4202,7 +4255,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_PlayLoadMapMovie;
     /// <summary>
-    /// Function: PlayLoadMapMovie, run on <paramref name="self"/> rather than the class default object
+    /// Function: PlayLoadMapMovie, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBE570 in the Steam build
     /// </summary>
     public unsafe static bool PlayLoadMapMovie(this BmSDK.Engine._Engine self)
     {
@@ -4223,7 +4277,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetLastMovieName;
     /// <summary>
-    /// Function: GetLastMovieName, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLastMovieName, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE470 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLastMovieName(this BmSDK.Engine._Engine self)
     {
@@ -4244,7 +4299,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetAudioDevice;
     /// <summary>
-    /// Function: GetAudioDevice, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAudioDevice, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44280 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AudioDevice GetAudioDevice(this BmSDK.Engine._Engine self)
     {
@@ -4265,7 +4321,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsUsingES2Renderer;
     /// <summary>
-    /// Function: IsUsingES2Renderer, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsUsingES2Renderer, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44230 in the Steam build
     /// </summary>
     public unsafe static bool IsUsingES2Renderer(this BmSDK.Engine._Engine self)
     {
@@ -4286,7 +4343,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsStereoscopic3D;
     /// <summary>
-    /// Function: IsStereoscopic3D, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsStereoscopic3D, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static bool IsStereoscopic3D(this BmSDK.Engine._Engine self)
     {
@@ -4307,7 +4365,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsSplitScreen;
     /// <summary>
-    /// Function: IsSplitScreen, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSplitScreen, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB8C0B0 in the Steam build
     /// </summary>
     public unsafe static bool IsSplitScreen(this BmSDK.Engine._Engine self)
     {
@@ -4328,7 +4387,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetAdditionalFont;
     /// <summary>
-    /// Function: GetAdditionalFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAdditionalFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE350 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetAdditionalFont(this BmSDK.Engine._Engine self, int AdditionalFontIndex)
     {
@@ -4350,7 +4410,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetSubtitleFont;
     /// <summary>
-    /// Function: GetSubtitleFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSubtitleFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44180 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetSubtitleFont(this BmSDK.Engine._Engine self)
     {
@@ -4371,7 +4432,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetLargeFont;
     /// <summary>
-    /// Function: GetLargeFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLargeFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44120 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetLargeFont(this BmSDK.Engine._Engine self)
     {
@@ -4392,7 +4454,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetMediumFont;
     /// <summary>
-    /// Function: GetMediumFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetMediumFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB440C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetMediumFont(this BmSDK.Engine._Engine self)
     {
@@ -4413,7 +4476,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetSmallFont;
     /// <summary>
-    /// Function: GetSmallFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSmallFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44060 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetSmallFont(this BmSDK.Engine._Engine self)
     {
@@ -4434,7 +4498,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetTinyFont;
     /// <summary>
-    /// Function: GetTinyFont, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetTinyFont, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44000 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Font GetTinyFont(this BmSDK.Engine._Engine self)
     {
@@ -4455,7 +4520,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_HasNetworkConnection;
     /// <summary>
-    /// Function: HasNetworkConnection, run on <paramref name="self"/> rather than the class default object
+    /// Function: HasNetworkConnection, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43FB0 in the Steam build
     /// </summary>
     public unsafe static bool HasNetworkConnection(this BmSDK.Engine._Engine self)
     {
@@ -4476,7 +4542,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetDevicePushNotificationToken;
     /// <summary>
-    /// Function: GetDevicePushNotificationToken, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDevicePushNotificationToken, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE2D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDevicePushNotificationToken(this BmSDK.Engine._Engine self)
     {
@@ -4497,7 +4564,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetOSVersion;
     /// <summary>
-    /// Function: GetOSVersion, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetOSVersion, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe static float GetOSVersion(this BmSDK.Engine._Engine self)
     {
@@ -4518,7 +4586,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetDeviceUUID;
     /// <summary>
-    /// Function: GetDeviceUUID, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDeviceUUID, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE250 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDeviceUUID(this BmSDK.Engine._Engine self)
     {
@@ -4539,7 +4608,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetBuildDate;
     /// <summary>
-    /// Function: GetBuildDate, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetBuildDate, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAE1D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetBuildDate(this BmSDK.Engine._Engine self)
     {
@@ -4560,7 +4630,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_GetCurrentWorldInfo;
     /// <summary>
-    /// Function: GetCurrentWorldInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetCurrentWorldInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB4ED0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo GetCurrentWorldInfo(this BmSDK.Engine._Engine self)
     {
@@ -4581,7 +4652,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsGame;
     /// <summary>
-    /// Function: IsGame, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsGame, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43F60 in the Steam build
     /// </summary>
     public unsafe static bool IsGame(this BmSDK.Engine._Engine self)
     {
@@ -4602,7 +4674,8 @@ public static class _EngineStatics
 
     private static BmSDK.Function __fn_IsEditor;
     /// <summary>
-    /// Function: IsEditor, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsEditor, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43F10 in the Steam build
     /// </summary>
     public unsafe static bool IsEditor(this BmSDK.Engine._Engine self)
     {

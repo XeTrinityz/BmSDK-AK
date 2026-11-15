@@ -113,7 +113,8 @@ public partial class MatineeActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAIGroupActor;
     /// <summary>
-    /// Function: AddAIGroupActor
+    /// Function: AddAIGroupActor<br/>
+    /// Native code at BatmanAK.exe+0x4DEA00 in the Steam build
     /// </summary>
     public unsafe virtual void AddAIGroupActor(BmSDK.Engine.InterpGroupInstAI AIGroupInst)
     {

@@ -75,7 +75,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RestartPredatorTriggers;
     /// <summary>
-    /// Function: RestartPredatorTriggers
+    /// Function: RestartPredatorTriggers<br/>
+    /// Native code at BatmanAK.exe+0xB3F050 in the Steam build
     /// </summary>
     public unsafe static void RestartPredatorTriggers()
     {
@@ -95,7 +96,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RestartAllTriggers;
     /// <summary>
-    /// Function: RestartAllTriggers
+    /// Function: RestartAllTriggers<br/>
+    /// Native code at BatmanAK.exe+0xB3F010 in the Steam build
     /// </summary>
     public unsafe static void RestartAllTriggers()
     {
@@ -115,7 +117,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ClearDeath;
     /// <summary>
-    /// Function: ClearDeath
+    /// Function: ClearDeath<br/>
+    /// Native code at BatmanAK.exe+0xB3EFD0 in the Steam build
     /// </summary>
     public unsafe static void ClearDeath()
     {
@@ -135,7 +138,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveDiagramsOnDeath;
     /// <summary>
-    /// Function: RemoveDiagramsOnDeath
+    /// Function: RemoveDiagramsOnDeath<br/>
+    /// Native code at BatmanAK.exe+0xB3EF90 in the Steam build
     /// </summary>
     public unsafe static void RemoveDiagramsOnDeath()
     {
@@ -155,7 +159,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetChapterFlag;
     /// <summary>
-    /// Function: GetChapterFlag
+    /// Function: GetChapterFlag<br/>
+    /// Native code at BatmanAK.exe+0xB3EF40 in the Steam build
     /// </summary>
     public unsafe static int GetChapterFlag()
     {
@@ -175,7 +180,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsChapterFlagValid;
     /// <summary>
-    /// Function: IsChapterFlagValid
+    /// Function: IsChapterFlagValid<br/>
+    /// Native code at BatmanAK.exe+0xB794E0 in the Steam build
     /// </summary>
     public unsafe static bool IsChapterFlagValid(int chapterFlag)
     {
@@ -196,7 +202,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LocationAccessibility;
     /// <summary>
-    /// Function: LocationAccessibility
+    /// Function: LocationAccessibility<br/>
+    /// Native code at BatmanAK.exe+0xB3EEA0 in the Steam build
     /// </summary>
     public unsafe static float LocationAccessibility(System.Numerics.Vector3 Location)
     {
@@ -217,7 +224,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LocationRainDensity;
     /// <summary>
-    /// Function: LocationRainDensity
+    /// Function: LocationRainDensity<br/>
+    /// Native code at BatmanAK.exe+0xB3EE00 in the Steam build
     /// </summary>
     public unsafe static float LocationRainDensity(System.Numerics.Vector3 Location)
     {
@@ -238,7 +246,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LocationWetness;
     /// <summary>
-    /// Function: LocationWetness
+    /// Function: LocationWetness<br/>
+    /// Native code at BatmanAK.exe+0xB3ECB0 in the Steam build
     /// </summary>
     public unsafe static float LocationWetness(System.Numerics.Vector3 Location, System.Numerics.Vector3 Normal = default, bool isWorldGeom = default)
     {
@@ -261,7 +270,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Debug_ClearAllFacts;
     /// <summary>
-    /// Function: Debug_ClearAllFacts
+    /// Function: Debug_ClearAllFacts<br/>
+    /// Native code at BatmanAK.exe+0xB3EC70 in the Steam build
     /// </summary>
     public unsafe static void Debug_ClearAllFacts()
     {
@@ -281,7 +291,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetMusicInformation;
     /// <summary>
-    /// Function: SetMusicInformation
+    /// Function: SetMusicInformation<br/>
+    /// Native code at BatmanAK.exe+0xBA7A20 in the Steam build
     /// </summary>
     public unsafe static void SetMusicInformation(BmSDK.FStringArg Text, float TimeOut = default)
     {
@@ -304,7 +315,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_CheckFact;
     /// <summary>
-    /// Function: CheckFact
+    /// Function: CheckFact<br/>
+    /// Native code at BatmanAK.exe+0xBA78D0 in the Steam build
     /// </summary>
     public unsafe static bool CheckFact(BmSDK.FStringArg Fact)
     {
@@ -326,7 +338,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveFact;
     /// <summary>
-    /// Function: RemoveFact
+    /// Function: RemoveFact<br/>
+    /// Native code at BatmanAK.exe+0xBA7740 in the Steam build
     /// </summary>
     public unsafe static void RemoveFact(BmSDK.FStringArg Fact, BmSDK.FStringArg Reason = default)
     {
@@ -350,7 +363,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetFactFalse;
     /// <summary>
-    /// Function: SetFactFalse
+    /// Function: SetFactFalse<br/>
+    /// Native code at BatmanAK.exe+0xBA7600 in the Steam build
     /// </summary>
     public unsafe static void SetFactFalse(BmSDK.FStringArg Fact)
     {
@@ -372,7 +386,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetFactTrue;
     /// <summary>
-    /// Function: SetFactTrue
+    /// Function: SetFactTrue<br/>
+    /// Native code at BatmanAK.exe+0xBA7490 in the Steam build
     /// </summary>
     public unsafe static void SetFactTrue(BmSDK.FStringArg Fact, float setTimeOffset = default)
     {
@@ -395,7 +410,8 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetFact;
     /// <summary>
-    /// Function: SetFact
+    /// Function: SetFact<br/>
+    /// Native code at BatmanAK.exe+0xBA72D0 in the Steam build
     /// </summary>
     public unsafe static void SetFact(BmSDK.FStringArg Fact, BmSDK.FStringArg factSet = default, BmSDK.FStringArg Reason = default)
     {
@@ -427,7 +443,8 @@ public static class AkSoundDirectorStatics
 {
     private static BmSDK.Function __fn_RestartPredatorTriggers;
     /// <summary>
-    /// Function: RestartPredatorTriggers, run on <paramref name="self"/> rather than the class default object
+    /// Function: RestartPredatorTriggers, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3F050 in the Steam build
     /// </summary>
     public unsafe static void RestartPredatorTriggers(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -448,7 +465,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_RestartAllTriggers;
     /// <summary>
-    /// Function: RestartAllTriggers, run on <paramref name="self"/> rather than the class default object
+    /// Function: RestartAllTriggers, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3F010 in the Steam build
     /// </summary>
     public unsafe static void RestartAllTriggers(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -469,7 +487,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_ClearDeath;
     /// <summary>
-    /// Function: ClearDeath, run on <paramref name="self"/> rather than the class default object
+    /// Function: ClearDeath, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EFD0 in the Steam build
     /// </summary>
     public unsafe static void ClearDeath(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -490,7 +509,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_RemoveDiagramsOnDeath;
     /// <summary>
-    /// Function: RemoveDiagramsOnDeath, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveDiagramsOnDeath, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EF90 in the Steam build
     /// </summary>
     public unsafe static void RemoveDiagramsOnDeath(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -511,7 +531,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_GetChapterFlag;
     /// <summary>
-    /// Function: GetChapterFlag, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetChapterFlag, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EF40 in the Steam build
     /// </summary>
     public unsafe static int GetChapterFlag(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -532,7 +553,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_IsChapterFlagValid;
     /// <summary>
-    /// Function: IsChapterFlagValid, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsChapterFlagValid, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB794E0 in the Steam build
     /// </summary>
     public unsafe static bool IsChapterFlagValid(this BmSDK.Engine.AkSoundDirector self, int chapterFlag)
     {
@@ -554,7 +576,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_LocationAccessibility;
     /// <summary>
-    /// Function: LocationAccessibility, run on <paramref name="self"/> rather than the class default object
+    /// Function: LocationAccessibility, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EEA0 in the Steam build
     /// </summary>
     public unsafe static float LocationAccessibility(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location)
     {
@@ -576,7 +599,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_LocationRainDensity;
     /// <summary>
-    /// Function: LocationRainDensity, run on <paramref name="self"/> rather than the class default object
+    /// Function: LocationRainDensity, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EE00 in the Steam build
     /// </summary>
     public unsafe static float LocationRainDensity(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location)
     {
@@ -598,7 +622,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_LocationWetness;
     /// <summary>
-    /// Function: LocationWetness, run on <paramref name="self"/> rather than the class default object
+    /// Function: LocationWetness, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3ECB0 in the Steam build
     /// </summary>
     public unsafe static float LocationWetness(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location, System.Numerics.Vector3 Normal = default, bool isWorldGeom = default)
     {
@@ -622,7 +647,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_Debug_ClearAllFacts;
     /// <summary>
-    /// Function: Debug_ClearAllFacts, run on <paramref name="self"/> rather than the class default object
+    /// Function: Debug_ClearAllFacts, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3EC70 in the Steam build
     /// </summary>
     public unsafe static void Debug_ClearAllFacts(this BmSDK.Engine.AkSoundDirector self)
     {
@@ -643,7 +669,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_SetMusicInformation;
     /// <summary>
-    /// Function: SetMusicInformation, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetMusicInformation, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA7A20 in the Steam build
     /// </summary>
     public unsafe static void SetMusicInformation(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Text, float TimeOut = default)
     {
@@ -667,7 +694,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_CheckFact;
     /// <summary>
-    /// Function: CheckFact, run on <paramref name="self"/> rather than the class default object
+    /// Function: CheckFact, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA78D0 in the Steam build
     /// </summary>
     public unsafe static bool CheckFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Fact)
     {
@@ -690,7 +718,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_RemoveFact;
     /// <summary>
-    /// Function: RemoveFact, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveFact, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA7740 in the Steam build
     /// </summary>
     public unsafe static void RemoveFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Fact, BmSDK.FStringArg Reason = default)
     {
@@ -715,7 +744,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_SetFactFalse;
     /// <summary>
-    /// Function: SetFactFalse, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetFactFalse, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA7600 in the Steam build
     /// </summary>
     public unsafe static void SetFactFalse(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Fact)
     {
@@ -738,7 +768,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_SetFactTrue;
     /// <summary>
-    /// Function: SetFactTrue, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetFactTrue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA7490 in the Steam build
     /// </summary>
     public unsafe static void SetFactTrue(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Fact, float setTimeOffset = default)
     {
@@ -762,7 +793,8 @@ public static class AkSoundDirectorStatics
 
     private static BmSDK.Function __fn_SetFact;
     /// <summary>
-    /// Function: SetFact, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetFact, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA72D0 in the Steam build
     /// </summary>
     public unsafe static void SetFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FStringArg Fact, BmSDK.FStringArg factSet = default, BmSDK.FStringArg Reason = default)
     {

@@ -80,7 +80,8 @@ public partial class OnlineMatchmakingStats : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTimer;
     /// <summary>
-    /// Function: StopTimer
+    /// Function: StopTimer<br/>
+    /// Native code at BatmanAK.exe+0xB3FF80 in the Steam build
     /// </summary>
     public unsafe virtual void StopTimer(out BmSDK.Engine.OnlineMatchmakingStats.FMMStats_Timer Timer)
     {
@@ -104,7 +105,8 @@ public partial class OnlineMatchmakingStats : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTimer;
     /// <summary>
-    /// Function: StartTimer
+    /// Function: StartTimer<br/>
+    /// Native code at BatmanAK.exe+0xB3FEE0 in the Steam build
     /// </summary>
     public unsafe virtual void StartTimer(out BmSDK.Engine.OnlineMatchmakingStats.FMMStats_Timer Timer)
     {

@@ -80,7 +80,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBecomeDynamic;
     /// <summary>
-    /// Function: CanBecomeDynamic
+    /// Function: CanBecomeDynamic<br/>
+    /// Native code at BatmanAK.exe+0x901190 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBecomeDynamic()
     {
@@ -101,7 +102,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsComponentAttached;
     /// <summary>
-    /// Function: IsComponentAttached
+    /// Function: IsComponentAttached<br/>
+    /// Native code at BatmanAK.exe+0x902B50 in the Steam build
     /// </summary>
     public unsafe virtual bool IsComponentAttached(BmSDK.Engine.ActorComponent Component, BmSDK.FName BoneName = default)
     {
@@ -124,7 +126,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketByName;
     /// <summary>
-    /// Function: GetSocketByName
+    /// Function: GetSocketByName<br/>
+    /// Native code at BatmanAK.exe+0x9029D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMeshSocket GetSocketByName(BmSDK.FName InSocketName)
     {
@@ -146,7 +149,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketWorldLocationAndRotation;
     /// <summary>
-    /// Function: GetSocketWorldLocationAndRotation
+    /// Function: GetSocketWorldLocationAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x9027E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation, int Space)
     {
@@ -175,7 +179,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponentToSocket;
     /// <summary>
-    /// Function: AttachComponentToSocket
+    /// Function: AttachComponentToSocket<br/>
+    /// Native code at BatmanAK.exe+0x906790 in the Steam build
     /// </summary>
     public unsafe virtual void AttachComponentToSocket(BmSDK.Engine.ActorComponent Component, BmSDK.FName SocketName)
     {
@@ -198,7 +203,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachComponent;
     /// <summary>
-    /// Function: DetachComponent
+    /// Function: DetachComponent<br/>
+    /// Native code at BatmanAK.exe+0x907CB0 in the Steam build
     /// </summary>
     public unsafe virtual void DetachComponent(BmSDK.Engine.ActorComponent Component)
     {
@@ -220,7 +226,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponent;
     /// <summary>
-    /// Function: AttachComponent
+    /// Function: AttachComponent<br/>
+    /// Native code at BatmanAK.exe+0x9063E0 in the Steam build
     /// </summary>
     public unsafe virtual void AttachComponent(BmSDK.Engine.ActorComponent Component, System.Numerics.Vector3 RelativeLocation = default, BmSDK.Rotator RelativeRotation = default, System.Numerics.Vector3 RelativeScale = default)
     {
@@ -245,7 +252,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
-    /// Function: GetUseSimpleLineCollision
+    /// Function: GetUseSimpleLineCollision<br/>
+    /// Native code at BatmanAK.exe+0x900590 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleLineCollision()
     {
@@ -266,7 +274,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
-    /// Function: GetUseSimpleBoxCollision
+    /// Function: GetUseSimpleBoxCollision<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleBoxCollision()
     {
@@ -287,7 +296,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceStaticDecals;
     /// <summary>
-    /// Function: SetForceStaticDecals
+    /// Function: SetForceStaticDecals<br/>
+    /// Native code at BatmanAK.exe+0x4ED170 in the Steam build
     /// </summary>
     public unsafe virtual void SetForceStaticDecals(bool bInForceStaticDecals)
     {
@@ -309,7 +319,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableRBCollisionWithSMC;
     /// <summary>
-    /// Function: DisableRBCollisionWithSMC
+    /// Function: DisableRBCollisionWithSMC<br/>
+    /// Native code at BatmanAK.exe+0x8A7770 in the Steam build
     /// </summary>
     public unsafe virtual void DisableRBCollisionWithSMC(BmSDK.Engine.PrimitiveComponent OtherSMC, bool bDisabled)
     {
@@ -332,7 +343,8 @@ public partial class StaticMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStaticMesh;
     /// <summary>
-    /// Function: SetStaticMesh
+    /// Function: SetStaticMesh<br/>
+    /// Native code at BatmanAK.exe+0x901020 in the Steam build
     /// </summary>
     public unsafe virtual bool SetStaticMesh(BmSDK.Engine.StaticMesh NewMesh, bool bForce = default)
     {

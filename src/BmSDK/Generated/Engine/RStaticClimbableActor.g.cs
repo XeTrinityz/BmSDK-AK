@@ -75,7 +75,8 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableShimmy;
     /// <summary>
-    /// Function: DisableShimmy
+    /// Function: DisableShimmy<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DisableShimmy()
     {
@@ -96,7 +97,8 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRailings;
     /// <summary>
-    /// Function: EnableRailings
+    /// Function: EnableRailings<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void EnableRailings()
     {
@@ -117,7 +119,8 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmanCanClimb;
     /// <summary>
-    /// Function: SetBatmanCanClimb
+    /// Function: SetBatmanCanClimb<br/>
+    /// Native code at BatmanAK.exe+0xB69FE0 in the Steam build
     /// </summary>
     public unsafe override void SetBatmanCanClimb(bool bCanClimb)
     {

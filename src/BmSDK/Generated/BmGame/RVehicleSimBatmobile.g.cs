@@ -94,7 +94,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SkidToStop;
     /// <summary>
-    /// Function: SkidToStop
+    /// Function: SkidToStop<br/>
+    /// Native code at BatmanAK.exe+0x4F70E0 in the Steam build
     /// </summary>
     public unsafe virtual void SkidToStop(bool OverrideYaw, int YawAngle, bool OverrideEndLocation, System.Numerics.Vector3 EndLocation)
     {
@@ -119,7 +120,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateTyreFriction;
     /// <summary>
-    /// Function: ForceUpdateTyreFriction
+    /// Function: ForceUpdateTyreFriction<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUpdateTyreFriction(BmSDK.Engine.SVehicle Vehicle)
     {
@@ -141,7 +143,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuspensionForDriveMode;
     /// <summary>
-    /// Function: SetSuspensionForDriveMode
+    /// Function: SetSuspensionForDriveMode<br/>
+    /// Native code at BatmanAK.exe+0x4F6FB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSuspensionForDriveMode(float BattleModeFactor)
     {
@@ -163,7 +166,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDriveMode;
     /// <summary>
-    /// Function: SetDriveMode
+    /// Function: SetDriveMode<br/>
+    /// Native code at BatmanAK.exe+0x486C60 in the Steam build
     /// </summary>
     public unsafe virtual void SetDriveMode(BmSDK.BmGame.RVehicleSimBatmobile.EBatmobileDriveMode NewDriveMode)
     {
@@ -185,7 +189,8 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Boost;
     /// <summary>
-    /// Function: Boost
+    /// Function: Boost<br/>
+    /// Native code at BatmanAK.exe+0x486C10 in the Steam build
     /// </summary>
     public unsafe virtual bool Boost()
     {

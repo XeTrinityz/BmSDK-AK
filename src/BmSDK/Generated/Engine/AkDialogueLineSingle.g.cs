@@ -80,7 +80,8 @@ public partial class AkDialogueLineSingle : BmSDK.Engine.AkDialogueLine, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSingleDialogueEventDuration;
     /// <summary>
-    /// Function: GetSingleDialogueEventDuration
+    /// Function: GetSingleDialogueEventDuration<br/>
+    /// Native code at BatmanAK.exe+0xB3E960 in the Steam build
     /// </summary>
     public unsafe virtual float GetSingleDialogueEventDuration()
     {
@@ -101,7 +102,8 @@ public partial class AkDialogueLineSingle : BmSDK.Engine.AkDialogueLine, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSingleDialogueEvent;
     /// <summary>
-    /// Function: GetSingleDialogueEvent
+    /// Function: GetSingleDialogueEvent<br/>
+    /// Native code at BatmanAK.exe+0xB3E910 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetSingleDialogueEvent()
     {

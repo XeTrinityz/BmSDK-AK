@@ -80,7 +80,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAround;
     /// <summary>
-    /// Function: LookAround
+    /// Function: LookAround<br/>
+    /// Native code at BatmanAK.exe+0x515E60 in the Steam build
     /// </summary>
     public unsafe virtual void LookAround(float DeltaTime, BmSDK.Rotator LookInput)
     {
@@ -117,7 +118,8 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OutOfPredatorView;
     /// <summary>
-    /// Function: OutOfPredatorView
+    /// Function: OutOfPredatorView<br/>
+    /// Native code at BatmanAK.exe+0x495E30 in the Steam build
     /// </summary>
     public unsafe virtual bool OutOfPredatorView()
     {

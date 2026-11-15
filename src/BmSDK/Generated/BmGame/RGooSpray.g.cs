@@ -219,7 +219,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MergeServerGelSpray;
     /// <summary>
-    /// Function: MergeServerGelSpray
+    /// Function: MergeServerGelSpray<br/>
+    /// Native code at BatmanAK.exe+0x510140 in the Steam build
     /// </summary>
     public unsafe virtual void MergeServerGelSpray(BmSDK.BmGame.RExplosiveGooMine ServerMine)
     {
@@ -607,7 +608,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTouchingEnemies;
     /// <summary>
-    /// Function: UpdateTouchingEnemies
+    /// Function: UpdateTouchingEnemies<br/>
+    /// Native code at BatmanAK.exe+0x4934A0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateTouchingEnemies()
     {
@@ -855,7 +857,8 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTarget;
     /// <summary>
-    /// Function: IsValidTarget
+    /// Function: IsValidTarget<br/>
+    /// Native code at BatmanAK.exe+0x50FF60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.Engine.Actor Target, BmSDK.Engine.PrimitiveComponent Component)
     {

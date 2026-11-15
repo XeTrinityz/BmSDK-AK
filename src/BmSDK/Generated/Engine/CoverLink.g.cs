@@ -114,7 +114,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDescription;
     /// <summary>
-    /// Function: GetLocationDescription
+    /// Function: GetLocationDescription<br/>
+    /// Native code at BatmanAK.exe+0xB75710 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.CoverLink.ECoverLocationDescription GetLocationDescription(int SlotIdx)
     {
@@ -151,7 +152,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCoverSlot;
     /// <summary>
-    /// Function: AddCoverSlot
+    /// Function: AddCoverSlot<br/>
+    /// Native code at BatmanAK.exe+0xB3BCC0 in the Steam build
     /// </summary>
     public unsafe virtual int AddCoverSlot(System.Numerics.Vector3 SlotLocation, BmSDK.Rotator SlotRotation, int SlotIdx = default, bool bForceSlotUpdate = default, BmSDK.Engine.Scout Scout = default)
     {
@@ -195,7 +197,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSwatTurnTarget;
     /// <summary>
-    /// Function: GetSwatTurnTarget
+    /// Function: GetSwatTurnTarget<br/>
+    /// Native code at BatmanAK.exe+0xB754E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSwatTurnTarget(int SlotIdx, int Direction, out BmSDK.Engine.CoverLink.FCoverInfo out_Info)
     {
@@ -235,7 +238,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEnabled;
     /// <summary>
-    /// Function: IsEnabled
+    /// Function: IsEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB3BC70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEnabled()
     {
@@ -256,7 +260,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoAdjustSlot;
     /// <summary>
-    /// Function: AutoAdjustSlot
+    /// Function: AutoAdjustSlot<br/>
+    /// Native code at BatmanAK.exe+0xB752F0 in the Steam build
     /// </summary>
     public unsafe virtual bool AutoAdjustSlot(int SlotIdx, bool bOnlyCheckLeans)
     {
@@ -279,7 +284,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRightEdgeSlot;
     /// <summary>
-    /// Function: IsRightEdgeSlot
+    /// Function: IsRightEdgeSlot<br/>
+    /// Native code at BatmanAK.exe+0xB75100 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRightEdgeSlot(int SlotIdx, bool bIgnoreLeans)
     {
@@ -302,7 +308,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeftEdgeSlot;
     /// <summary>
-    /// Function: IsLeftEdgeSlot
+    /// Function: IsLeftEdgeSlot<br/>
+    /// Native code at BatmanAK.exe+0xB74F10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLeftEdgeSlot(int SlotIdx, bool bIgnoreLeans)
     {
@@ -325,7 +332,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEdgeSlot;
     /// <summary>
-    /// Function: IsEdgeSlot
+    /// Function: IsEdgeSlot<br/>
+    /// Native code at BatmanAK.exe+0xB74DA0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEdgeSlot(int SlotIdx, bool bIgnoreLeans = default)
     {
@@ -348,7 +356,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSlots;
     /// <summary>
-    /// Function: FindSlots
+    /// Function: FindSlots<br/>
+    /// Native code at BatmanAK.exe+0xB74B90 in the Steam build
     /// </summary>
     public unsafe virtual bool FindSlots(System.Numerics.Vector3 CheckLocation, float MaxDistance, out int LeftSlotIdx, out int RightSlotIdx)
     {
@@ -392,7 +401,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClaimBetween;
     /// <summary>
-    /// Function: IsValidClaimBetween
+    /// Function: IsValidClaimBetween<br/>
+    /// Native code at BatmanAK.exe+0xB74830 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidClaimBetween(BmSDK.Engine.Pawn ChkClaim, int StartSlotIdx, int EndSlotIdx, bool bSkipTeamCheck = default, bool bSkipOverlapCheck = default)
     {
@@ -418,7 +428,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClaim;
     /// <summary>
-    /// Function: IsValidClaim
+    /// Function: IsValidClaim<br/>
+    /// Native code at BatmanAK.exe+0xB745A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidClaim(BmSDK.Engine.Pawn ChkClaim, int SlotIdx, bool bSkipTeamCheck = default, bool bSkipOverlapCheck = default)
     {
@@ -443,7 +454,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotViewPoint;
     /// <summary>
-    /// Function: GetSlotViewPoint
+    /// Function: GetSlotViewPoint<br/>
+    /// Native code at BatmanAK.exe+0xB743F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSlotViewPoint(int SlotIdx, BmSDK.Engine.CoverLink.ECoverType Type = default, BmSDK.Engine.CoverLink.ECoverAction Action = default)
     {
@@ -467,7 +479,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotRotation;
     /// <summary>
-    /// Function: GetSlotRotation
+    /// Function: GetSlotRotation<br/>
+    /// Native code at BatmanAK.exe+0xB74270 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetSlotRotation(int SlotIdx, bool bForceUseOffset = default)
     {
@@ -490,7 +503,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotLocation;
     /// <summary>
-    /// Function: GetSlotLocation
+    /// Function: GetSlotLocation<br/>
+    /// Native code at BatmanAK.exe+0xB740F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSlotLocation(int SlotIdx, bool bForceUseOffset = default)
     {
@@ -513,7 +527,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UnPackFireLinkInteractionInfo;
     /// <summary>
-    /// Function: UnPackFireLinkInteractionInfo
+    /// Function: UnPackFireLinkInteractionInfo<br/>
+    /// Native code at BatmanAK.exe+0xB3BAC0 in the Steam build
     /// </summary>
     public unsafe static void UnPackFireLinkInteractionInfo(byte PackedByte, out BmSDK.Engine.CoverLink.ECoverType SrcType, out BmSDK.Engine.CoverLink.ECoverAction SrcAction, out BmSDK.Engine.CoverLink.ECoverType DestType, out BmSDK.Engine.CoverLink.ECoverAction DestAction)
     {
@@ -546,7 +561,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PackFireLinkInteractionInfo;
     /// <summary>
-    /// Function: PackFireLinkInteractionInfo
+    /// Function: PackFireLinkInteractionInfo<br/>
+    /// Native code at BatmanAK.exe+0xB3B9B0 in the Steam build
     /// </summary>
     public unsafe static byte PackFireLinkInteractionInfo(BmSDK.Engine.CoverLink.ECoverType SrcType, BmSDK.Engine.CoverLink.ECoverAction SrcAction, BmSDK.Engine.CoverLink.ECoverType DestType, BmSDK.Engine.CoverLink.ECoverAction DestAction)
     {
@@ -570,7 +586,8 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFireLinkTargetCoverInfo;
     /// <summary>
-    /// Function: GetFireLinkTargetCoverInfo
+    /// Function: GetFireLinkTargetCoverInfo<br/>
+    /// Native code at BatmanAK.exe+0xB73E80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFireLinkTargetCoverInfo(int SlotIdx, int FireLinkIdx, out BmSDK.Engine.CoverLink.FCoverInfo out_Info, BmSDK.Engine.CoverLink.EFireLinkID ArrayID = default)
     {
@@ -1645,7 +1662,8 @@ public static class CoverLinkStatics
 {
     private static BmSDK.Function __fn_UnPackFireLinkInteractionInfo;
     /// <summary>
-    /// Function: UnPackFireLinkInteractionInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: UnPackFireLinkInteractionInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3BAC0 in the Steam build
     /// </summary>
     public unsafe static void UnPackFireLinkInteractionInfo(this BmSDK.Engine.CoverLink self, byte PackedByte, out BmSDK.Engine.CoverLink.ECoverType SrcType, out BmSDK.Engine.CoverLink.ECoverAction SrcAction, out BmSDK.Engine.CoverLink.ECoverType DestType, out BmSDK.Engine.CoverLink.ECoverAction DestAction)
     {
@@ -1679,7 +1697,8 @@ public static class CoverLinkStatics
 
     private static BmSDK.Function __fn_PackFireLinkInteractionInfo;
     /// <summary>
-    /// Function: PackFireLinkInteractionInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: PackFireLinkInteractionInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B9B0 in the Steam build
     /// </summary>
     public unsafe static byte PackFireLinkInteractionInfo(this BmSDK.Engine.CoverLink self, BmSDK.Engine.CoverLink.ECoverType SrcType, BmSDK.Engine.CoverLink.ECoverAction SrcAction, BmSDK.Engine.CoverLink.ECoverType DestType, BmSDK.Engine.CoverLink.ECoverAction DestAction)
     {

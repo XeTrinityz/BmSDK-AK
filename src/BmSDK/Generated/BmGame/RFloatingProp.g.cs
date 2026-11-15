@@ -80,7 +80,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropCentreOfMass;
     /// <summary>
-    /// Function: GetFloatingAdjustedPropCentreOfMass
+    /// Function: GetFloatingAdjustedPropCentreOfMass<br/>
+    /// Native code at BatmanAK.exe+0x481D60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFloatingAdjustedPropCentreOfMass()
     {
@@ -101,7 +102,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropDensity;
     /// <summary>
-    /// Function: GetFloatingAdjustedPropDensity
+    /// Function: GetFloatingAdjustedPropDensity<br/>
+    /// Native code at BatmanAK.exe+0x493990 in the Steam build
     /// </summary>
     public unsafe virtual float GetFloatingAdjustedPropDensity()
     {
@@ -122,7 +124,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropMass;
     /// <summary>
-    /// Function: GetFloatingAdjustedPropMass
+    /// Function: GetFloatingAdjustedPropMass<br/>
+    /// Native code at BatmanAK.exe+0x493940 in the Steam build
     /// </summary>
     public unsafe virtual float GetFloatingAdjustedPropMass()
     {
@@ -143,7 +146,8 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropMass;
     /// <summary>
-    /// Function: GetPropMass
+    /// Function: GetPropMass<br/>
+    /// Native code at BatmanAK.exe+0xB4AF40 in the Steam build
     /// </summary>
     public unsafe virtual float GetPropMass()
     {

@@ -111,7 +111,8 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCrcDownloadComplete;
     /// <summary>
-    /// Function: OnCrcDownloadComplete
+    /// Function: OnCrcDownloadComplete<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void OnCrcDownloadComplete()
     {
@@ -132,7 +133,8 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
-    /// Function: CancelCustomContentRequest
+    /// Function: CancelCustomContentRequest<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe override void CancelCustomContentRequest()
     {

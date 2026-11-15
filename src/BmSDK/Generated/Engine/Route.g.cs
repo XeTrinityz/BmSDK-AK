@@ -80,7 +80,8 @@ public partial class Route : BmSDK.Engine.Info, BmSDK.Engine.EditorLinkSelection
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveOntoRoutePath;
     /// <summary>
-    /// Function: MoveOntoRoutePath
+    /// Function: MoveOntoRoutePath<br/>
+    /// Native code at BatmanAK.exe+0xB72FB0 in the Steam build
     /// </summary>
     public unsafe virtual int MoveOntoRoutePath(BmSDK.Engine.Pawn P, BmSDK.Engine.Route.ERouteDirection RouteDirection = default, float DistFudgeFactor = default)
     {
@@ -104,7 +105,8 @@ public partial class Route : BmSDK.Engine.Info, BmSDK.Engine.EditorLinkSelection
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveRouteIndex;
     /// <summary>
-    /// Function: ResolveRouteIndex
+    /// Function: ResolveRouteIndex<br/>
+    /// Native code at BatmanAK.exe+0xB72DB0 in the Steam build
     /// </summary>
     public unsafe virtual int ResolveRouteIndex(int Idx, BmSDK.Engine.Route.ERouteDirection RouteDirection, out byte out_bComplete, out byte out_bReverse)
     {

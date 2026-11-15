@@ -247,7 +247,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSToPlayer;
     /// <summary>
-    /// Function: CheckLOSToPlayer
+    /// Function: CheckLOSToPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46BB10 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLOSToPlayer()
     {
@@ -268,7 +269,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootAtCurrentTarget;
     /// <summary>
-    /// Function: CanShootAtCurrentTarget
+    /// Function: CanShootAtCurrentTarget<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe override bool CanShootAtCurrentTarget()
     {
@@ -289,7 +291,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForBMInVolume;
     /// <summary>
-    /// Function: CheckForBMInVolume
+    /// Function: CheckForBMInVolume<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe override void CheckForBMInVolume()
     {
@@ -310,7 +313,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightScale;
     /// <summary>
-    /// Function: SetLightScale
+    /// Function: SetLightScale<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLightScale()
     {
@@ -331,7 +335,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootOrientation;
     /// <summary>
-    /// Function: GetRotationRootOrientation
+    /// Function: GetRotationRootOrientation<br/>
+    /// Native code at BatmanAK.exe+0x46EDF0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetRotationRootOrientation()
     {
@@ -352,7 +357,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootLocation;
     /// <summary>
-    /// Function: GetRotationRootLocation
+    /// Function: GetRotationRootLocation<br/>
+    /// Native code at BatmanAK.exe+0x46ED90 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetRotationRootLocation()
     {
@@ -373,7 +379,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingOrigin;
     /// <summary>
-    /// Function: GetTrackingOrigin
+    /// Function: GetTrackingOrigin<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTrackingOrigin()
     {
@@ -394,7 +401,8 @@ public partial class RTurret_Stagg : BmSDK.BmGame.RTurretBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredRotation;
     /// <summary>
-    /// Function: SetDesiredRotation
+    /// Function: SetDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0x46ECB0 in the Steam build
     /// </summary>
     public unsafe override void SetDesiredRotation(BmSDK.Rotator DesiredRot)
     {

@@ -196,7 +196,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BetweenCameraAndPlayer;
     /// <summary>
-    /// Function: BetweenCameraAndPlayer
+    /// Function: BetweenCameraAndPlayer<br/>
+    /// Native code at BatmanAK.exe+0x489390 in the Steam build
     /// </summary>
     public unsafe virtual bool BetweenCameraAndPlayer()
     {
@@ -1048,7 +1049,8 @@ public partial class RBMBehaviour_CombatAI : BmSDK.BmGame.RBMBehaviour_Combat, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotationAndVelocity;
     /// <summary>
-    /// Function: SetRotationAndVelocity
+    /// Function: SetRotationAndVelocity<br/>
+    /// Native code at BatmanAK.exe+0x4FDBB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRotationAndVelocity(float DeltaTime, System.Numerics.Vector3 DestVelocity)
     {

@@ -105,7 +105,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabledStatusIME;
     /// <summary>
-    /// Function: SetEnabledStatusIME
+    /// Function: SetEnabledStatusIME<br/>
+    /// Native code at BatmanAK.exe+0x51C860 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabledStatusIME(bool bEnable)
     {
@@ -192,7 +193,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLevelPackageIsPresent;
     /// <summary>
-    /// Function: CheckLevelPackageIsPresent
+    /// Function: CheckLevelPackageIsPresent<br/>
+    /// Native code at BatmanAK.exe+0x546A30 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLevelPackageIsPresent(out BmSDK.FString LevelName)
     {
@@ -214,7 +216,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraReportPhotoModeUsed;
     /// <summary>
-    /// Function: SendHydraReportPhotoModeUsed
+    /// Function: SendHydraReportPhotoModeUsed<br/>
+    /// Native code at BatmanAK.exe+0x51C740 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraReportPhotoModeUsed(int TimeSpentInPhotoMode)
     {
@@ -236,7 +239,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraWBPlayRewardClaimedEvent;
     /// <summary>
-    /// Function: SendHydraWBPlayRewardClaimedEvent
+    /// Function: SendHydraWBPlayRewardClaimedEvent<br/>
+    /// Native code at BatmanAK.exe+0x5468F0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraWBPlayRewardClaimedEvent(BmSDK.FStringArg RewardFlag)
     {
@@ -259,7 +263,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraReportGraphicsOptions;
     /// <summary>
-    /// Function: SendHydraReportGraphicsOptions
+    /// Function: SendHydraReportGraphicsOptions<br/>
+    /// Native code at BatmanAK.exe+0x471620 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraReportGraphicsOptions()
     {
@@ -280,7 +285,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetKeyCode;
     /// <summary>
-    /// Function: GetKeyCode
+    /// Function: GetKeyCode<br/>
+    /// Native code at BatmanAK.exe+0x5467A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetKeyCode(BmSDK.FStringArg Key)
     {
@@ -325,7 +331,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMouseVisible;
     /// <summary>
-    /// Function: SetMouseVisible
+    /// Function: SetMouseVisible<br/>
+    /// Native code at BatmanAK.exe+0x51C620 in the Steam build
     /// </summary>
     public unsafe virtual void SetMouseVisible(bool bVisible)
     {
@@ -347,7 +354,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMouseLock;
     /// <summary>
-    /// Function: SetMouseLock
+    /// Function: SetMouseLock<br/>
+    /// Native code at BatmanAK.exe+0x51C500 in the Steam build
     /// </summary>
     public unsafe virtual void SetMouseLock(bool bLock)
     {
@@ -441,7 +449,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HaveWarnerIdCheckForConnection;
     /// <summary>
-    /// Function: HaveWarnerIdCheckForConnection
+    /// Function: HaveWarnerIdCheckForConnection<br/>
+    /// Native code at BatmanAK.exe+0x1080170 in the Steam build
     /// </summary>
     public unsafe virtual void HaveWarnerIdCheckForConnection()
     {
@@ -1319,7 +1328,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MapPromptFind;
     /// <summary>
-    /// Function: MapPromptFind
+    /// Function: MapPromptFind<br/>
+    /// Native code at BatmanAK.exe+0x546650 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHUDPrompt.EControlIcon MapPromptFind(BmSDK.FStringArg VoiceCmd)
     {
@@ -1342,7 +1352,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MapPromptEntry;
     /// <summary>
-    /// Function: MapPromptEntry
+    /// Function: MapPromptEntry<br/>
+    /// Native code at BatmanAK.exe+0x546490 in the Steam build
     /// </summary>
     public unsafe virtual void MapPromptEntry(BmSDK.BmGame.RHUDPrompt.EControlIcon Icon, BmSDK.FStringArg LocDirectRef, BmSDK.FStringArg VoiceCmd = default)
     {
@@ -1368,7 +1379,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetVoicePromptMap;
     /// <summary>
-    /// Function: ResetVoicePromptMap
+    /// Function: ResetVoicePromptMap<br/>
+    /// Native code at BatmanAK.exe+0x497CF0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetVoicePromptMap()
     {
@@ -1947,7 +1959,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreIniFilesModified;
     /// <summary>
-    /// Function: AreIniFilesModified
+    /// Function: AreIniFilesModified<br/>
+    /// Native code at BatmanAK.exe+0x497CA0 in the Steam build
     /// </summary>
     public unsafe virtual bool AreIniFilesModified()
     {
@@ -1968,7 +1981,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBelowMinMemory;
     /// <summary>
-    /// Function: IsBelowMinMemory
+    /// Function: IsBelowMinMemory<br/>
+    /// Native code at BatmanAK.exe+0x51C3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBelowMinMemory(int TotalPhysMem)
     {
@@ -1990,7 +2004,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGPUName;
     /// <summary>
-    /// Function: GetGPUName
+    /// Function: GetGPUName<br/>
+    /// Native code at BatmanAK.exe+0x546410 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetGPUName()
     {
@@ -2011,7 +2026,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinVideoDriverVersion;
     /// <summary>
-    /// Function: GetMinVideoDriverVersion
+    /// Function: GetMinVideoDriverVersion<br/>
+    /// Native code at BatmanAK.exe+0x546390 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetMinVideoDriverVersion()
     {
@@ -2032,7 +2048,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVideoDriverVersion;
     /// <summary>
-    /// Function: GetVideoDriverVersion
+    /// Function: GetVideoDriverVersion<br/>
+    /// Native code at BatmanAK.exe+0x546310 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVideoDriverVersion()
     {
@@ -2053,7 +2070,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinMemoryWarning;
     /// <summary>
-    /// Function: GetMinMemoryWarning
+    /// Function: GetMinMemoryWarning<br/>
+    /// Native code at BatmanAK.exe+0x5461B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetMinMemoryWarning(int TotalPhysMem)
     {
@@ -2075,7 +2093,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSystemTotalMemGBs;
     /// <summary>
-    /// Function: GetSystemTotalMemGBs
+    /// Function: GetSystemTotalMemGBs<br/>
+    /// Native code at BatmanAK.exe+0x497C50 in the Steam build
     /// </summary>
     public unsafe virtual float GetSystemTotalMemGBs()
     {
@@ -2096,7 +2115,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreGiftCallsActive;
     /// <summary>
-    /// Function: AreGiftCallsActive
+    /// Function: AreGiftCallsActive<br/>
+    /// Native code at BatmanAK.exe+0x497C00 in the Steam build
     /// </summary>
     public unsafe virtual bool AreGiftCallsActive()
     {
@@ -2117,7 +2137,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartHydraFetchGiftCalls;
     /// <summary>
-    /// Function: StartHydraFetchGiftCalls
+    /// Function: StartHydraFetchGiftCalls<br/>
+    /// Native code at BatmanAK.exe+0x497BC0 in the Steam build
     /// </summary>
     public unsafe virtual void StartHydraFetchGiftCalls()
     {
@@ -2138,7 +2159,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraInsufficientRAMPopupEvent;
     /// <summary>
-    /// Function: SendHydraInsufficientRAMPopupEvent
+    /// Function: SendHydraInsufficientRAMPopupEvent<br/>
+    /// Native code at BatmanAK.exe+0x51C2A0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraInsufficientRAMPopupEvent(int SystemTotalMemGBs)
     {
@@ -2160,7 +2182,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraOutdatedDriverPopupEvent;
     /// <summary>
-    /// Function: SendHydraOutdatedDriverPopupEvent
+    /// Function: SendHydraOutdatedDriverPopupEvent<br/>
+    /// Native code at BatmanAK.exe+0x546070 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraOutdatedDriverPopupEvent(BmSDK.FStringArg DriverVersion)
     {
@@ -2183,7 +2206,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraGWPageExposeEvent;
     /// <summary>
-    /// Function: SendHydraGWPageExposeEvent
+    /// Function: SendHydraGWPageExposeEvent<br/>
+    /// Native code at BatmanAK.exe+0x545CF0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraGWPageExposeEvent(BmSDK.FStringArg EventType, BmSDK.FStringArg DLCId, BmSDK.FStringArg EventID, int LoadTime)
     {
@@ -2211,7 +2235,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraRedeemCodePressedEvent;
     /// <summary>
-    /// Function: SendHydraRedeemCodePressedEvent
+    /// Function: SendHydraRedeemCodePressedEvent<br/>
+    /// Native code at BatmanAK.exe+0x497B80 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraRedeemCodePressedEvent()
     {
@@ -2232,7 +2257,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraDLCDetailViewEvent;
     /// <summary>
-    /// Function: SendHydraDLCDetailViewEvent
+    /// Function: SendHydraDLCDetailViewEvent<br/>
+    /// Native code at BatmanAK.exe+0x545A30 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraDLCDetailViewEvent(BmSDK.FStringArg DLCId, BmSDK.FStringArg DLCName, int LoadTime)
     {
@@ -2258,7 +2284,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraMOTDClickEvent;
     /// <summary>
-    /// Function: SendHydraMOTDClickEvent
+    /// Function: SendHydraMOTDClickEvent<br/>
+    /// Native code at BatmanAK.exe+0x545820 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraMOTDClickEvent(BmSDK.FStringArg MOTDId, BmSDK.FStringArg MOTDType)
     {
@@ -2283,7 +2310,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReportHydraGWSessionEnd;
     /// <summary>
-    /// Function: ReportHydraGWSessionEnd
+    /// Function: ReportHydraGWSessionEnd<br/>
+    /// Native code at BatmanAK.exe+0x497B40 in the Steam build
     /// </summary>
     public unsafe virtual void ReportHydraGWSessionEnd()
     {
@@ -2304,7 +2332,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReportHydraGWSessionBegin;
     /// <summary>
-    /// Function: ReportHydraGWSessionBegin
+    /// Function: ReportHydraGWSessionBegin<br/>
+    /// Native code at BatmanAK.exe+0x497B00 in the Steam build
     /// </summary>
     public unsafe virtual void ReportHydraGWSessionBegin()
     {
@@ -2325,7 +2354,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAppSeconds;
     /// <summary>
-    /// Function: GetAppSeconds
+    /// Function: GetAppSeconds<br/>
+    /// Native code at BatmanAK.exe+0x497AB0 in the Steam build
     /// </summary>
     public unsafe virtual int GetAppSeconds()
     {
@@ -2346,7 +2376,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentUTCTime;
     /// <summary>
-    /// Function: GetCurrentUTCTime
+    /// Function: GetCurrentUTCTime<br/>
+    /// Native code at BatmanAK.exe+0x497840 in the Steam build
     /// </summary>
     public unsafe virtual void GetCurrentUTCTime(out int Year, out int Month, out int Day, out int Hour, out int Min, out int Sec, out int MSec)
     {
@@ -2388,7 +2419,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMotionBlur;
     /// <summary>
-    /// Function: SetMotionBlur
+    /// Function: SetMotionBlur<br/>
+    /// Native code at BatmanAK.exe+0x51C180 in the Steam build
     /// </summary>
     public unsafe virtual void SetMotionBlur(int Value)
     {
@@ -2410,7 +2442,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMotionBlur;
     /// <summary>
-    /// Function: GetMotionBlur
+    /// Function: GetMotionBlur<br/>
+    /// Native code at BatmanAK.exe+0x4977F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetMotionBlur()
     {
@@ -2431,7 +2464,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultMotionBlur;
     /// <summary>
-    /// Function: GetDefaultMotionBlur
+    /// Function: GetDefaultMotionBlur<br/>
+    /// Native code at BatmanAK.exe+0x4977A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultMotionBlur()
     {
@@ -2452,7 +2486,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureFiltering;
     /// <summary>
-    /// Function: SetTextureFiltering
+    /// Function: SetTextureFiltering<br/>
+    /// Native code at BatmanAK.exe+0x51C060 in the Steam build
     /// </summary>
     public unsafe virtual void SetTextureFiltering(int Value)
     {
@@ -2474,7 +2509,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTextureFiltering;
     /// <summary>
-    /// Function: GetTextureFiltering
+    /// Function: GetTextureFiltering<br/>
+    /// Native code at BatmanAK.exe+0x497750 in the Steam build
     /// </summary>
     public unsafe virtual int GetTextureFiltering()
     {
@@ -2495,7 +2531,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultTextureFiltering;
     /// <summary>
-    /// Function: GetDefaultTextureFiltering
+    /// Function: GetDefaultTextureFiltering<br/>
+    /// Native code at BatmanAK.exe+0x497700 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultTextureFiltering()
     {
@@ -2516,7 +2553,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFilmGrain;
     /// <summary>
-    /// Function: SetFilmGrain
+    /// Function: SetFilmGrain<br/>
+    /// Native code at BatmanAK.exe+0x51BF40 in the Steam build
     /// </summary>
     public unsafe virtual void SetFilmGrain(int Value)
     {
@@ -2538,7 +2576,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilmGrain;
     /// <summary>
-    /// Function: GetFilmGrain
+    /// Function: GetFilmGrain<br/>
+    /// Native code at BatmanAK.exe+0x4976B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetFilmGrain()
     {
@@ -2559,7 +2598,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultFilmGrain;
     /// <summary>
-    /// Function: GetDefaultFilmGrain
+    /// Function: GetDefaultFilmGrain<br/>
+    /// Native code at BatmanAK.exe+0x497660 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultFilmGrain()
     {
@@ -2580,7 +2620,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChromaticAberration;
     /// <summary>
-    /// Function: SetChromaticAberration
+    /// Function: SetChromaticAberration<br/>
+    /// Native code at BatmanAK.exe+0x51BE20 in the Steam build
     /// </summary>
     public unsafe virtual void SetChromaticAberration(int Value)
     {
@@ -2602,7 +2643,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChromaticAberration;
     /// <summary>
-    /// Function: GetChromaticAberration
+    /// Function: GetChromaticAberration<br/>
+    /// Native code at BatmanAK.exe+0x497610 in the Steam build
     /// </summary>
     public unsafe virtual int GetChromaticAberration()
     {
@@ -2623,7 +2665,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultChromaticAberration;
     /// <summary>
-    /// Function: GetDefaultChromaticAberration
+    /// Function: GetDefaultChromaticAberration<br/>
+    /// Native code at BatmanAK.exe+0x4975C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultChromaticAberration()
     {
@@ -2644,7 +2687,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaxFPS;
     /// <summary>
-    /// Function: SetMaxFPS
+    /// Function: SetMaxFPS<br/>
+    /// Native code at BatmanAK.exe+0x51BD00 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaxFPS(int Value)
     {
@@ -2666,7 +2710,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxFPS;
     /// <summary>
-    /// Function: GetMaxFPS
+    /// Function: GetMaxFPS<br/>
+    /// Native code at BatmanAK.exe+0x497570 in the Steam build
     /// </summary>
     public unsafe virtual int GetMaxFPS()
     {
@@ -2687,7 +2732,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultMaxFPS;
     /// <summary>
-    /// Function: GetDefaultMaxFPS
+    /// Function: GetDefaultMaxFPS<br/>
+    /// Native code at BatmanAK.exe+0x497520 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultMaxFPS()
     {
@@ -2708,7 +2754,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAdaptiveVsync;
     /// <summary>
-    /// Function: SetAdaptiveVsync
+    /// Function: SetAdaptiveVsync<br/>
+    /// Native code at BatmanAK.exe+0x51BBE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAdaptiveVsync(int Value)
     {
@@ -2730,7 +2777,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAdaptiveVsync;
     /// <summary>
-    /// Function: GetAdaptiveVsync
+    /// Function: GetAdaptiveVsync<br/>
+    /// Native code at BatmanAK.exe+0x900590 in the Steam build
     /// </summary>
     public unsafe virtual int GetAdaptiveVsync()
     {
@@ -2751,7 +2799,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultAdaptiveVsync;
     /// <summary>
-    /// Function: GetDefaultAdaptiveVsync
+    /// Function: GetDefaultAdaptiveVsync<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultAdaptiveVsync()
     {
@@ -2772,7 +2821,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVsync;
     /// <summary>
-    /// Function: SetVsync
+    /// Function: SetVsync<br/>
+    /// Native code at BatmanAK.exe+0x51BAC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVsync(int Value)
     {
@@ -2794,7 +2844,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVsync;
     /// <summary>
-    /// Function: GetVsync
+    /// Function: GetVsync<br/>
+    /// Native code at BatmanAK.exe+0x497480 in the Steam build
     /// </summary>
     public unsafe virtual int GetVsync()
     {
@@ -2815,7 +2866,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultVsync;
     /// <summary>
-    /// Function: GetDefaultVsync
+    /// Function: GetDefaultVsync<br/>
+    /// Native code at BatmanAK.exe+0x497430 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultVsync()
     {
@@ -2836,7 +2888,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolumetricLighting;
     /// <summary>
-    /// Function: SetVolumetricLighting
+    /// Function: SetVolumetricLighting<br/>
+    /// Native code at BatmanAK.exe+0x51B9A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVolumetricLighting(int Value)
     {
@@ -2858,7 +2911,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumetricLighting;
     /// <summary>
-    /// Function: GetVolumetricLighting
+    /// Function: GetVolumetricLighting<br/>
+    /// Native code at BatmanAK.exe+0x4973E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetVolumetricLighting()
     {
@@ -2879,7 +2933,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultVolumetricLighting;
     /// <summary>
-    /// Function: GetDefaultVolumetricLighting
+    /// Function: GetDefaultVolumetricLighting<br/>
+    /// Native code at BatmanAK.exe+0x497390 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultVolumetricLighting()
     {
@@ -2900,7 +2955,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRainFX;
     /// <summary>
-    /// Function: SetRainFX
+    /// Function: SetRainFX<br/>
+    /// Native code at BatmanAK.exe+0x51B880 in the Steam build
     /// </summary>
     public unsafe virtual void SetRainFX(int Value)
     {
@@ -2922,7 +2978,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRainFX;
     /// <summary>
-    /// Function: GetRainFX
+    /// Function: GetRainFX<br/>
+    /// Native code at BatmanAK.exe+0x497340 in the Steam build
     /// </summary>
     public unsafe virtual int GetRainFX()
     {
@@ -2943,7 +3000,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultRainFX;
     /// <summary>
-    /// Function: GetDefaultRainFX
+    /// Function: GetDefaultRainFX<br/>
+    /// Native code at BatmanAK.exe+0x4972F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultRainFX()
     {
@@ -2964,7 +3022,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInteractiveDebris;
     /// <summary>
-    /// Function: SetInteractiveDebris
+    /// Function: SetInteractiveDebris<br/>
+    /// Native code at BatmanAK.exe+0x51B760 in the Steam build
     /// </summary>
     public unsafe virtual void SetInteractiveDebris(int Value)
     {
@@ -2986,7 +3045,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractiveDebris;
     /// <summary>
-    /// Function: GetInteractiveDebris
+    /// Function: GetInteractiveDebris<br/>
+    /// Native code at BatmanAK.exe+0x4972A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetInteractiveDebris()
     {
@@ -3007,7 +3067,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultInteractiveDebris;
     /// <summary>
-    /// Function: GetDefaultInteractiveDebris
+    /// Function: GetDefaultInteractiveDebris<br/>
+    /// Native code at BatmanAK.exe+0x497250 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultInteractiveDebris()
     {
@@ -3028,7 +3089,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInteractiveSmoke;
     /// <summary>
-    /// Function: SetInteractiveSmoke
+    /// Function: SetInteractiveSmoke<br/>
+    /// Native code at BatmanAK.exe+0x51B640 in the Steam build
     /// </summary>
     public unsafe virtual void SetInteractiveSmoke(int Value)
     {
@@ -3050,7 +3112,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractiveSmoke;
     /// <summary>
-    /// Function: GetInteractiveSmoke
+    /// Function: GetInteractiveSmoke<br/>
+    /// Native code at BatmanAK.exe+0x497200 in the Steam build
     /// </summary>
     public unsafe virtual int GetInteractiveSmoke()
     {
@@ -3071,7 +3134,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultInteractiveSmoke;
     /// <summary>
-    /// Function: GetDefaultInteractiveSmoke
+    /// Function: GetDefaultInteractiveSmoke<br/>
+    /// Native code at BatmanAK.exe+0x107F0C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultInteractiveSmoke()
     {
@@ -3092,7 +3156,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelOfDetail;
     /// <summary>
-    /// Function: SetLevelOfDetail
+    /// Function: SetLevelOfDetail<br/>
+    /// Native code at BatmanAK.exe+0x51B520 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelOfDetail(int Value)
     {
@@ -3114,7 +3179,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLevelOfDetail;
     /// <summary>
-    /// Function: GetLevelOfDetail
+    /// Function: GetLevelOfDetail<br/>
+    /// Native code at BatmanAK.exe+0x4971B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetLevelOfDetail()
     {
@@ -3135,7 +3201,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultLevelOfDetail;
     /// <summary>
-    /// Function: GetDefaultLevelOfDetail
+    /// Function: GetDefaultLevelOfDetail<br/>
+    /// Native code at BatmanAK.exe+0x497160 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultLevelOfDetail()
     {
@@ -3156,7 +3223,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetShadowQuality;
     /// <summary>
-    /// Function: SetShadowQuality
+    /// Function: SetShadowQuality<br/>
+    /// Native code at BatmanAK.exe+0x51B400 in the Steam build
     /// </summary>
     public unsafe virtual void SetShadowQuality(int Value)
     {
@@ -3178,7 +3246,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShadowQuality;
     /// <summary>
-    /// Function: GetShadowQuality
+    /// Function: GetShadowQuality<br/>
+    /// Native code at BatmanAK.exe+0x497110 in the Steam build
     /// </summary>
     public unsafe virtual int GetShadowQuality()
     {
@@ -3199,7 +3268,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultShadowQuality;
     /// <summary>
-    /// Function: GetDefaultShadowQuality
+    /// Function: GetDefaultShadowQuality<br/>
+    /// Native code at BatmanAK.exe+0x4970C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultShadowQuality()
     {
@@ -3220,7 +3290,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureResolution;
     /// <summary>
-    /// Function: SetTextureResolution
+    /// Function: SetTextureResolution<br/>
+    /// Native code at BatmanAK.exe+0x51B2E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTextureResolution(int Value)
     {
@@ -3242,7 +3313,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTextureResolution;
     /// <summary>
-    /// Function: GetTextureResolution
+    /// Function: GetTextureResolution<br/>
+    /// Native code at BatmanAK.exe+0x497070 in the Steam build
     /// </summary>
     public unsafe virtual int GetTextureResolution()
     {
@@ -3263,7 +3335,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultTextureResolution;
     /// <summary>
-    /// Function: GetDefaultTextureResolution
+    /// Function: GetDefaultTextureResolution<br/>
+    /// Native code at BatmanAK.exe+0x470140 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultTextureResolution()
     {
@@ -3284,7 +3357,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAntialiasing;
     /// <summary>
-    /// Function: SetAntialiasing
+    /// Function: SetAntialiasing<br/>
+    /// Native code at BatmanAK.exe+0x51B1C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAntialiasing(int Value)
     {
@@ -3306,7 +3380,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAntialiasing;
     /// <summary>
-    /// Function: GetAntialiasing
+    /// Function: GetAntialiasing<br/>
+    /// Native code at BatmanAK.exe+0x497020 in the Steam build
     /// </summary>
     public unsafe virtual int GetAntialiasing()
     {
@@ -3327,7 +3402,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultAntialiasing;
     /// <summary>
-    /// Function: GetDefaultAntialiasing
+    /// Function: GetDefaultAntialiasing<br/>
+    /// Native code at BatmanAK.exe+0x496FD0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultAntialiasing()
     {
@@ -3348,7 +3424,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentResolutionY;
     /// <summary>
-    /// Function: SetCurrentResolutionY
+    /// Function: SetCurrentResolutionY<br/>
+    /// Native code at BatmanAK.exe+0x51B0A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentResolutionY(int Value)
     {
@@ -3370,7 +3447,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentResolutionX;
     /// <summary>
-    /// Function: SetCurrentResolutionX
+    /// Function: SetCurrentResolutionX<br/>
+    /// Native code at BatmanAK.exe+0x51AF80 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentResolutionX(int Value)
     {
@@ -3392,7 +3470,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetResolution;
     /// <summary>
-    /// Function: SetResolution
+    /// Function: SetResolution<br/>
+    /// Native code at BatmanAK.exe+0x51AE60 in the Steam build
     /// </summary>
     public unsafe virtual void SetResolution(int Value)
     {
@@ -3414,7 +3493,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentResolutionY;
     /// <summary>
-    /// Function: GetCurrentResolutionY
+    /// Function: GetCurrentResolutionY<br/>
+    /// Native code at BatmanAK.exe+0x496F80 in the Steam build
     /// </summary>
     public unsafe virtual int GetCurrentResolutionY()
     {
@@ -3435,7 +3515,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentResolutionX;
     /// <summary>
-    /// Function: GetCurrentResolutionX
+    /// Function: GetCurrentResolutionX<br/>
+    /// Native code at BatmanAK.exe+0x107E5F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetCurrentResolutionX()
     {
@@ -3456,7 +3537,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolution;
     /// <summary>
-    /// Function: GetResolution
+    /// Function: GetResolution<br/>
+    /// Native code at BatmanAK.exe+0x496F30 in the Steam build
     /// </summary>
     public unsafe virtual int GetResolution()
     {
@@ -3477,7 +3559,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultResolution;
     /// <summary>
-    /// Function: GetDefaultResolution
+    /// Function: GetDefaultResolution<br/>
+    /// Native code at BatmanAK.exe+0x496EE0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultResolution()
     {
@@ -3498,7 +3581,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayMode;
     /// <summary>
-    /// Function: SetDisplayMode
+    /// Function: SetDisplayMode<br/>
+    /// Native code at BatmanAK.exe+0x51AD40 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisplayMode(int Value)
     {
@@ -3520,7 +3604,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayMode;
     /// <summary>
-    /// Function: GetDisplayMode
+    /// Function: GetDisplayMode<br/>
+    /// Native code at BatmanAK.exe+0x46FE00 in the Steam build
     /// </summary>
     public unsafe virtual int GetDisplayMode()
     {
@@ -3541,7 +3626,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultDisplayMode;
     /// <summary>
-    /// Function: GetDefaultDisplayMode
+    /// Function: GetDefaultDisplayMode<br/>
+    /// Native code at BatmanAK.exe+0x46FDB0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDefaultDisplayMode()
     {
@@ -3562,7 +3648,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRestartOptionsChanged;
     /// <summary>
-    /// Function: SetRestartOptionsChanged
+    /// Function: SetRestartOptionsChanged<br/>
+    /// Native code at BatmanAK.exe+0x51AC20 in the Steam build
     /// </summary>
     public unsafe virtual void SetRestartOptionsChanged(bool OptionsChanged)
     {
@@ -3584,7 +3671,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRestartOptionsChanged;
     /// <summary>
-    /// Function: GetRestartOptionsChanged
+    /// Function: GetRestartOptionsChanged<br/>
+    /// Native code at BatmanAK.exe+0x496E90 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRestartOptionsChanged()
     {
@@ -3605,7 +3693,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RevertGraphicsOptionsToCopy;
     /// <summary>
-    /// Function: RevertGraphicsOptionsToCopy
+    /// Function: RevertGraphicsOptionsToCopy<br/>
+    /// Native code at BatmanAK.exe+0x496E50 in the Steam build
     /// </summary>
     public unsafe virtual void RevertGraphicsOptionsToCopy()
     {
@@ -3626,7 +3715,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HaveGraphicsOptionsChangedFromCopy;
     /// <summary>
-    /// Function: HaveGraphicsOptionsChangedFromCopy
+    /// Function: HaveGraphicsOptionsChangedFromCopy<br/>
+    /// Native code at BatmanAK.exe+0x496E00 in the Steam build
     /// </summary>
     public unsafe virtual bool HaveGraphicsOptionsChangedFromCopy()
     {
@@ -3647,7 +3737,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeCopyOfGraphicsOptions;
     /// <summary>
-    /// Function: MakeCopyOfGraphicsOptions
+    /// Function: MakeCopyOfGraphicsOptions<br/>
+    /// Native code at BatmanAK.exe+0x496DC0 in the Steam build
     /// </summary>
     public unsafe virtual void MakeCopyOfGraphicsOptions()
     {
@@ -3668,7 +3759,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMenuState;
     /// <summary>
-    /// Function: ClearMenuState
+    /// Function: ClearMenuState<br/>
+    /// Native code at BatmanAK.exe+0x5456E0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearMenuState(BmSDK.FStringArg StorageName)
     {
@@ -3691,7 +3783,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreMenuState;
     /// <summary>
-    /// Function: RestoreMenuState
+    /// Function: RestoreMenuState<br/>
+    /// Native code at BatmanAK.exe+0x5455A0 in the Steam build
     /// </summary>
     public unsafe virtual void RestoreMenuState(BmSDK.FStringArg StorageName)
     {
@@ -3714,7 +3807,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveMenuState;
     /// <summary>
-    /// Function: SaveMenuState
+    /// Function: SaveMenuState<br/>
+    /// Native code at BatmanAK.exe+0x545460 in the Steam build
     /// </summary>
     public unsafe virtual void SaveMenuState(BmSDK.FStringArg StorageName)
     {
@@ -3737,7 +3831,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllMenuStates;
     /// <summary>
-    /// Function: ClearAllMenuStates
+    /// Function: ClearAllMenuStates<br/>
+    /// Native code at BatmanAK.exe+0x496D80 in the Steam build
     /// </summary>
     public unsafe virtual void ClearAllMenuStates()
     {
@@ -3758,7 +3853,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelLoadControllerImagePackageSF;
     /// <summary>
-    /// Function: CancelLoadControllerImagePackageSF
+    /// Function: CancelLoadControllerImagePackageSF<br/>
+    /// Native code at BatmanAK.exe+0x496D40 in the Steam build
     /// </summary>
     public unsafe virtual void CancelLoadControllerImagePackageSF()
     {
@@ -3779,7 +3875,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadControllerImagePackageSF;
     /// <summary>
-    /// Function: LoadControllerImagePackageSF
+    /// Function: LoadControllerImagePackageSF<br/>
+    /// Native code at BatmanAK.exe+0x496D00 in the Steam build
     /// </summary>
     public unsafe virtual void LoadControllerImagePackageSF()
     {
@@ -3814,7 +3911,8 @@ public partial class RGFxMovieUI : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SimpleLoadPackage;
     /// <summary>
-    /// Function: SimpleLoadPackage
+    /// Function: SimpleLoadPackage<br/>
+    /// Native code at BatmanAK.exe+0x545320 in the Steam build
     /// </summary>
     public unsafe virtual void SimpleLoadPackage(BmSDK.FStringArg SwfRef)
     {

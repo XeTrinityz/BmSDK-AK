@@ -95,7 +95,8 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceCloseAd;
     /// <summary>
-    /// Function: ForceCloseAd
+    /// Function: ForceCloseAd<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void ForceCloseAd()
     {
@@ -116,7 +117,8 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBanner;
     /// <summary>
-    /// Function: HideBanner
+    /// Function: HideBanner<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void HideBanner()
     {
@@ -137,7 +139,8 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowBanner;
     /// <summary>
-    /// Function: ShowBanner
+    /// Function: ShowBanner<br/>
+    /// Native code at BatmanAK.exe+0xB5B5B0 in the Steam build
     /// </summary>
     public unsafe virtual void ShowBanner(bool bShowBottomOfScreen)
     {
@@ -159,7 +162,8 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

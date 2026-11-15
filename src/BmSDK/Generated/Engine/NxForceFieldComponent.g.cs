@@ -75,7 +75,8 @@ public partial class NxForceFieldComponent : BmSDK.Engine.PrimitiveComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoInitRBPhys;
     /// <summary>
-    /// Function: DoInitRBPhys
+    /// Function: DoInitRBPhys<br/>
+    /// Native code at BatmanAK.exe+0xB2DB10 in the Steam build
     /// </summary>
     public unsafe virtual void DoInitRBPhys()
     {

@@ -95,7 +95,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToDefaults;
     /// <summary>
-    /// Function: ResetToDefaults
+    /// Function: ResetToDefaults<br/>
+    /// Native code at BatmanAK.exe+0xB34150 in the Steam build
     /// </summary>
     public unsafe virtual void ResetToDefaults()
     {
@@ -116,7 +117,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWaveParameter;
     /// <summary>
-    /// Function: SetWaveParameter
+    /// Function: SetWaveParameter<br/>
+    /// Native code at BatmanAK.exe+0xC02470 in the Steam build
     /// </summary>
     public unsafe virtual void SetWaveParameter(BmSDK.FName InName, BmSDK.Engine.SoundNodeWave InWave)
     {
@@ -139,7 +141,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatParameter;
     /// <summary>
-    /// Function: SetFloatParameter
+    /// Function: SetFloatParameter<br/>
+    /// Native code at BatmanAK.exe+0xC02270 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloatParameter(BmSDK.FName InName, float InFloat)
     {
@@ -162,7 +165,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFadingOut;
     /// <summary>
-    /// Function: IsFadingOut
+    /// Function: IsFadingOut<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFadingOut()
     {
@@ -183,7 +187,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFadingIn;
     /// <summary>
-    /// Function: IsFadingIn
+    /// Function: IsFadingIn<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFadingIn()
     {
@@ -204,7 +209,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlaying;
     /// <summary>
-    /// Function: IsPlaying
+    /// Function: IsPlaying<br/>
+    /// Native code at BatmanAK.exe+0xC011F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlaying()
     {
@@ -225,7 +231,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void Stop()
     {
@@ -246,7 +253,8 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
-    /// Function: Play
+    /// Function: Play<br/>
+    /// Native code at BatmanAK.exe+0xC011B0 in the Steam build
     /// </summary>
     public unsafe virtual void Play()
     {

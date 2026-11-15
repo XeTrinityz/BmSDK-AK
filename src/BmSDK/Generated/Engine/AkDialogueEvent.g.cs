@@ -127,7 +127,8 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomVoiceSubtitle;
     /// <summary>
-    /// Function: GetCustomVoiceSubtitle
+    /// Function: GetCustomVoiceSubtitle<br/>
+    /// Native code at BatmanAK.exe+0xBA2DF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetCustomVoiceSubtitle(BmSDK.FStringArg langExt = default)
     {
@@ -150,7 +151,8 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitle;
     /// <summary>
-    /// Function: GetSubtitle
+    /// Function: GetSubtitle<br/>
+    /// Native code at BatmanAK.exe+0xBA2D70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubtitle()
     {
@@ -185,7 +187,8 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSoundDuration;
     /// <summary>
-    /// Function: GetSoundDuration
+    /// Function: GetSoundDuration<br/>
+    /// Native code at BatmanAK.exe+0xB36190 in the Steam build
     /// </summary>
     public unsafe virtual float GetSoundDuration()
     {
@@ -206,7 +209,8 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSoundEvent;
     /// <summary>
-    /// Function: GetSoundEvent
+    /// Function: GetSoundEvent<br/>
+    /// Native code at BatmanAK.exe+0xB36140 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetSoundEvent()
     {

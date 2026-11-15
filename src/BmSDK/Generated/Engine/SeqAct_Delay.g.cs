@@ -80,7 +80,8 @@ public partial class SeqAct_Delay : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDelayActive;
     /// <summary>
-    /// Function: ResetDelayActive
+    /// Function: ResetDelayActive<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void ResetDelayActive()
     {

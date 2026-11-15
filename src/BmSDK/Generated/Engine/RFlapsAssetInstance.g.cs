@@ -95,7 +95,8 @@ public partial class RFlapsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeUp;
     /// <summary>
-    /// Function: WakeUp
+    /// Function: WakeUp<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void WakeUp()
     {
@@ -116,7 +117,8 @@ public partial class RFlapsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PutToSleep;
     /// <summary>
-    /// Function: PutToSleep
+    /// Function: PutToSleep<br/>
+    /// Native code at BatmanAK.exe+0xB5DCC0 in the Steam build
     /// </summary>
     public unsafe virtual void PutToSleep(bool bDeepSleep)
     {

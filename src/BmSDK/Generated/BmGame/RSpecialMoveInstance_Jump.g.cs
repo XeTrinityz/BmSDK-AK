@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_Jump : BmSDK.BmGame.RSpecialMoveInstan
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CorrectJumpVelocity;
     /// <summary>
-    /// Function: CorrectJumpVelocity
+    /// Function: CorrectJumpVelocity<br/>
+    /// Native code at BatmanAK.exe+0x47F370 in the Steam build
     /// </summary>
     public unsafe virtual bool CorrectJumpVelocity(out System.Numerics.Vector3 InJumpVelocity, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {

@@ -156,7 +156,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldForceTick;
     /// <summary>
-    /// Function: ShouldForceTick
+    /// Function: ShouldForceTick<br/>
+    /// Native code at BatmanAK.exe+0x488100 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldForceTick()
     {
@@ -644,7 +645,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BroadcastBatmanSpottedToSnipers;
     /// <summary>
-    /// Function: BroadcastBatmanSpottedToSnipers
+    /// Function: BroadcastBatmanSpottedToSnipers<br/>
+    /// Native code at BatmanAK.exe+0x4F8850 in the Steam build
     /// </summary>
     public unsafe virtual void BroadcastBatmanSpottedToSnipers(BmSDK.Engine.Actor PlayerActor)
     {
@@ -922,7 +924,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCheckFalling;
     /// <summary>
-    /// Function: CanCheckFalling
+    /// Function: CanCheckFalling<br/>
+    /// Native code at BatmanAK.exe+0x4880B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanCheckFalling()
     {
@@ -1188,7 +1191,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStunned;
     /// <summary>
-    /// Function: IsStunned
+    /// Function: IsStunned<br/>
+    /// Native code at BatmanAK.exe+0x488060 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStunned()
     {
@@ -1328,7 +1332,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickBehaviour;
     /// <summary>
-    /// Function: TickBehaviour
+    /// Function: TickBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x4F8720 in the Steam build
     /// </summary>
     public unsafe virtual void TickBehaviour(float DeltaTime)
     {
@@ -1697,7 +1702,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustAnimatedAimDir;
     /// <summary>
-    /// Function: AdjustAnimatedAimDir
+    /// Function: AdjustAnimatedAimDir<br/>
+    /// Native code at BatmanAK.exe+0x487FB0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustAnimatedAimDir(System.Numerics.Vector3 AnimatedDir)
     {
@@ -1749,7 +1755,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateNotVisibleAlert;
     /// <summary>
-    /// Function: UpdateNotVisibleAlert
+    /// Function: UpdateNotVisibleAlert<br/>
+    /// Native code at BatmanAK.exe+0x4F8530 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateNotVisibleAlert(float DeltaTime, BmSDK.BmGame.AlertInstance A)
     {
@@ -2065,7 +2072,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBehaviourList;
     /// <summary>
-    /// Function: ClearBehaviourList
+    /// Function: ClearBehaviourList<br/>
+    /// Native code at BatmanAK.exe+0x487F70 in the Steam build
     /// </summary>
     public unsafe virtual void ClearBehaviourList()
     {
@@ -2438,7 +2446,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
@@ -2460,7 +2469,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRailingForPoint;
     /// <summary>
-    /// Function: FindRailingForPoint
+    /// Function: FindRailingForPoint<br/>
+    /// Native code at BatmanAK.exe+0x487E90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPathNode_FenceJump FindRailingForPoint(System.Numerics.Vector3 LockPoint, out System.Numerics.Vector3 LockPosition)
     {
@@ -2485,7 +2495,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcVisibilityFor;
     /// <summary>
-    /// Function: CalcVisibilityFor
+    /// Function: CalcVisibilityFor<br/>
+    /// Native code at BatmanAK.exe+0x4F82D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance.VisibilityCategory CalcVisibilityFor(BmSDK.Engine.Actor A, System.Numerics.Vector3 Checkpoint = default, float CanSeePercent = default, System.Numerics.Vector3 LookDir = default)
     {
@@ -2510,7 +2521,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAlertFor;
     /// <summary>
-    /// Function: FindAlertFor
+    /// Function: FindAlertFor<br/>
+    /// Native code at BatmanAK.exe+0x4F8190 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance FindAlertFor(BmSDK.Engine.Actor A)
     {
@@ -2532,7 +2544,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAlertForPlayer;
     /// <summary>
-    /// Function: FindAlertForPlayer
+    /// Function: FindAlertForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x487E40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance FindAlertForPlayer()
     {
@@ -2553,7 +2566,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnIsChunkyTick;
     /// <summary>
-    /// Function: PawnIsChunkyTick
+    /// Function: PawnIsChunkyTick<br/>
+    /// Native code at BatmanAK.exe+0x487DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool PawnIsChunkyTick()
     {
@@ -2574,7 +2588,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnInStasis;
     /// <summary>
-    /// Function: PawnInStasis
+    /// Function: PawnInStasis<br/>
+    /// Native code at BatmanAK.exe+0x48CE20 in the Steam build
     /// </summary>
     public unsafe virtual bool PawnInStasis()
     {
@@ -2595,7 +2610,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDownBehaviour;
     /// <summary>
-    /// Function: ShutDownBehaviour
+    /// Function: ShutDownBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x4F8020 in the Steam build
     /// </summary>
     public unsafe virtual void ShutDownBehaviour(BmSDK.BmGame.RBMBehaviour BehaviourToExit, bool bCallEndInterrupt = default)
     {
@@ -2618,7 +2634,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickBehaviourState;
     /// <summary>
-    /// Function: TickBehaviourState
+    /// Function: TickBehaviourState<br/>
+    /// Native code at BatmanAK.exe+0x4F7EF0 in the Steam build
     /// </summary>
     public unsafe virtual void TickBehaviourState(float DeltaTime)
     {
@@ -2640,7 +2657,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIManager;
     /// <summary>
-    /// Function: GetAIManager
+    /// Function: GetAIManager<br/>
+    /// Native code at BatmanAK.exe+0x487DA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIManager GetAIManager()
     {
@@ -2661,7 +2679,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFaceFXForFear;
     /// <summary>
-    /// Function: DoFaceFXForFear
+    /// Function: DoFaceFXForFear<br/>
+    /// Native code at BatmanAK.exe+0x487D60 in the Steam build
     /// </summary>
     public unsafe virtual void DoFaceFXForFear()
     {
@@ -2682,7 +2701,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSilentPredatorGlanceStanceName;
     /// <summary>
-    /// Function: GetSilentPredatorGlanceStanceName
+    /// Function: GetSilentPredatorGlanceStanceName<br/>
+    /// Native code at BatmanAK.exe+0x487D00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetSilentPredatorGlanceStanceName()
     {
@@ -2703,7 +2723,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSilentPredatorStanceName;
     /// <summary>
-    /// Function: GetSilentPredatorStanceName
+    /// Function: GetSilentPredatorStanceName<br/>
+    /// Native code at BatmanAK.exe+0x487CA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetSilentPredatorStanceName()
     {
@@ -2724,7 +2745,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessSpottedNotifies;
     /// <summary>
-    /// Function: ProcessSpottedNotifies
+    /// Function: ProcessSpottedNotifies<br/>
+    /// Native code at BatmanAK.exe+0x487C60 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessSpottedNotifies()
     {
@@ -2745,7 +2767,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessSpottableAlerts;
     /// <summary>
-    /// Function: ProcessSpottableAlerts
+    /// Function: ProcessSpottableAlerts<br/>
+    /// Native code at BatmanAK.exe+0x4F7DC0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessSpottableAlerts(float DeltaTime)
     {
@@ -2767,7 +2790,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVisionCheckEyeLoc;
     /// <summary>
-    /// Function: GetVisionCheckEyeLoc
+    /// Function: GetVisionCheckEyeLoc<br/>
+    /// Native code at BatmanAK.exe+0x487C00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVisionCheckEyeLoc()
     {
@@ -2788,7 +2812,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewDir;
     /// <summary>
-    /// Function: GetViewDir
+    /// Function: GetViewDir<br/>
+    /// Native code at BatmanAK.exe+0x487B40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetViewDir(bool bFixUpAnimAimDir = default)
     {
@@ -2810,7 +2835,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointInFOVWithLookDir;
     /// <summary>
-    /// Function: IsPointInFOVWithLookDir
+    /// Function: IsPointInFOVWithLookDir<br/>
+    /// Native code at BatmanAK.exe+0x487A10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsPointInFOVWithLookDir(System.Numerics.Vector3 TestPos, System.Numerics.Vector3 LookDir, bool bUseActualAimDirForCloseCheck = default)
     {
@@ -2834,7 +2860,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointInFOV;
     /// <summary>
-    /// Function: IsPointInFOV
+    /// Function: IsPointInFOV<br/>
+    /// Native code at BatmanAK.exe+0x4878F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsPointInFOV(System.Numerics.Vector3 TestPos, bool bFixUpAnimAimDir = default, bool bUseActualAimDirForCloseCheck = default)
     {
@@ -2858,7 +2885,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInFOV;
     /// <summary>
-    /// Function: IsInFOV
+    /// Function: IsInFOV<br/>
+    /// Native code at BatmanAK.exe+0x4F7C00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsInFOV(BmSDK.Engine.Actor TestActor, bool bFixUpAnimAimDir = default, bool bUseActualAimDirForCloseCheck = default)
     {
@@ -2882,7 +2910,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRunningBehaviour;
     /// <summary>
-    /// Function: IsRunningBehaviour
+    /// Function: IsRunningBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x4F7AC0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRunningBehaviour(BmSDK.BmGame.RBMBehaviour TestBehaviour)
     {
@@ -2904,7 +2933,8 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBehaviour;
     /// <summary>
-    /// Function: GetBehaviour
+    /// Function: GetBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x487850 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour GetBehaviour(int Index = default)
     {

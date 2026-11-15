@@ -41,6 +41,9 @@ class StructNode : Node
 sealed class FuncNode : StructNode
 {
     public uint Flags;
+
+    // Where the function's code is, as an offset into the game's exe.
+    public ulong? CodeRva;
 }
 
 sealed class PropNode : Node

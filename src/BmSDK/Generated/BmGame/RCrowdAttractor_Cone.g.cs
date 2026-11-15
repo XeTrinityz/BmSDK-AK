@@ -80,7 +80,8 @@ public partial class RCrowdAttractor_Cone : BmSDK.BmGame.RCrowdAttractor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttractionForce;
     /// <summary>
-    /// Function: GetAttractionForce
+    /// Function: GetAttractionForce<br/>
+    /// Native code at BatmanAK.exe+0x4A9610 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAttractionForce(BmSDK.BmGame.RCrowdAgent Agent, float DeltaTime)
     {

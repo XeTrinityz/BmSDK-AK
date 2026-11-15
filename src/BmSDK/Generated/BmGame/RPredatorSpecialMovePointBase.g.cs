@@ -160,7 +160,8 @@ public partial class RPredatorSpecialMovePointBase : BmSDK.Engine.Actor, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4E95D0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterWithNavMesh(bool bRegister)
     {

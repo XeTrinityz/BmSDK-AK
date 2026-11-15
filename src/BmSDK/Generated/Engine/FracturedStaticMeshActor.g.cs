@@ -139,7 +139,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetVisibility;
     /// <summary>
-    /// Function: ResetVisibility
+    /// Function: ResetVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetVisibility()
     {
@@ -160,7 +161,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OrigBreakOffPartsInRadius;
     /// <summary>
-    /// Function: OrigBreakOffPartsInRadius
+    /// Function: OrigBreakOffPartsInRadius<br/>
+    /// Native code at BatmanAK.exe+0xB4D1E0 in the Steam build
     /// </summary>
     public unsafe virtual void OrigBreakOffPartsInRadius(System.Numerics.Vector3 Origin, float Radius, float RBStrength, bool bWantPhysChunksAndParticles)
     {
@@ -185,7 +187,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RepairAllParts;
     /// <summary>
-    /// Function: RepairAllParts
+    /// Function: RepairAllParts<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void RepairAllParts()
     {
@@ -206,7 +209,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffAllParts;
     /// <summary>
-    /// Function: BreakOffAllParts
+    /// Function: BreakOffAllParts<br/>
+    /// Native code at BatmanAK.exe+0xB4CEA0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffAllParts(System.Numerics.Vector3 ExplodeVelocity, bool bIncludeSupportChunks, bool bWantPhysChunksAndParticles, BmSDK.Engine.Actor BreakInstigator, int ChunkSize = default, bool bAllowDamagedEventFiring = default)
     {
@@ -233,7 +237,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPartsInRadiusConstantVel;
     /// <summary>
-    /// Function: BreakOffPartsInRadiusConstantVel
+    /// Function: BreakOffPartsInRadiusConstantVel<br/>
+    /// Native code at BatmanAK.exe+0xB4CB10 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffPartsInRadiusConstantVel(System.Numerics.Vector3 Origin, float Radius, System.Numerics.Vector3 LinearVel, System.Numerics.Vector3 AngularVel, bool bWantPhysChunksAndParticles, BmSDK.Engine.Actor BreakInstigator, bool bAllowDamagedEventFiring = default)
     {
@@ -261,7 +266,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPartsInRadius;
     /// <summary>
-    /// Function: BreakOffPartsInRadius
+    /// Function: BreakOffPartsInRadius<br/>
+    /// Native code at BatmanAK.exe+0xB4C6A0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffPartsInRadius(System.Numerics.Vector3 Origin, float Radius, float RBStrength, bool bWantPhysChunksAndParticles, BmSDK.Engine.Actor BreakInstigator, bool bAllowDamagedEventFiring = default, System.Numerics.Vector3 BlastOriginOffset = default)
     {
@@ -289,7 +295,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffParts;
     /// <summary>
-    /// Function: BreakOffParts
+    /// Function: BreakOffParts<br/>
+    /// Native code at BatmanAK.exe+0xBB0560 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffParts(BmSDK.TArray<int> PartIndices, bool bWantPhysChunksAndParticles, System.Numerics.Vector3 PartVel, System.Numerics.Vector3 PartAngVel, BmSDK.Engine.Actor BreakInstigator, int NumPartsSpawnedThisFrame = default, bool bAllowDamagedEventFiring = default, bool bSupressStateSaving = default)
     {
@@ -318,7 +325,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPart;
     /// <summary>
-    /// Function: BreakOffPart
+    /// Function: BreakOffPart<br/>
+    /// Native code at BatmanAK.exe+0xB4C2D0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffPart(int PartIndex, bool bWantPhysChunksAndParticles, System.Numerics.Vector3 PartVel, System.Numerics.Vector3 PartAngVel, BmSDK.Engine.Actor BreakInstigator, int NumPartsSpawnedThisFrame = default, bool bAllowDamagedEventFiring = default, bool bSupressStateSaving = default)
     {
@@ -347,7 +355,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LocalBreakOffParts;
     /// <summary>
-    /// Function: LocalBreakOffParts
+    /// Function: LocalBreakOffParts<br/>
+    /// Native code at BatmanAK.exe+0xB4C120 in the Steam build
     /// </summary>
     public unsafe virtual void LocalBreakOffParts(BmSDK.Engine.FracturedStaticMeshActor.FBreakOffPartsData BreakData, BmSDK.Engine.Actor BreakInstigator)
     {
@@ -370,7 +379,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPartsInDirection;
     /// <summary>
-    /// Function: FindPartsInDirection
+    /// Function: FindPartsInDirection<br/>
+    /// Native code at BatmanAK.exe+0xBB02D0 in the Steam build
     /// </summary>
     public unsafe virtual void FindPartsInDirection(System.Numerics.Vector3 Direction, int NumParts, bool bOnlyDestroyableParts, out BmSDK.TArray<int> OutPartIndices)
     {
@@ -431,7 +441,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDecals;
     /// <summary>
-    /// Function: RemoveDecals
+    /// Function: RemoveDecals<br/>
+    /// Native code at BatmanAK.exe+0xB4C000 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDecals(int IndexToRemoveDecalsFrom)
     {
@@ -501,7 +512,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDeferredParts;
     /// <summary>
-    /// Function: SpawnDeferredParts
+    /// Function: SpawnDeferredParts<br/>
+    /// Native code at BatmanAK.exe+0xB43E80 in the Steam build
     /// </summary>
     public unsafe virtual bool SpawnDeferredParts()
     {
@@ -522,7 +534,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffIsolatedIslandsFromComponent;
     /// <summary>
-    /// Function: BreakOffIsolatedIslandsFromComponent
+    /// Function: BreakOffIsolatedIslandsFromComponent<br/>
+    /// Native code at BatmanAK.exe+0xBB6970 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffIsolatedIslandsFromComponent(BmSDK.Engine.FracturedStaticMeshComponent Component, out BmSDK.TArray<byte> FragmentVis, BmSDK.TArray<int> IgnoreFrags, System.Numerics.Vector3 ChunkDir, BmSDK.TArray<BmSDK.Engine.FracturedStaticMeshPart> DisableCollWithPart, bool bWantPhysChunks, bool bAllowDamagedEventFiring = default)
     {
@@ -550,7 +563,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffIsolatedIslands;
     /// <summary>
-    /// Function: BreakOffIsolatedIslands
+    /// Function: BreakOffIsolatedIslands<br/>
+    /// Native code at BatmanAK.exe+0xBB66E0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffIsolatedIslands(out BmSDK.TArray<byte> FragmentVis, BmSDK.TArray<int> IgnoreFrags, System.Numerics.Vector3 ChunkDir, BmSDK.TArray<BmSDK.Engine.FracturedStaticMeshPart> DisableCollWithPart, bool bWantPhysChunks, bool bAllowDamagedEventFiring = default)
     {
@@ -621,7 +635,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetHealth;
     /// <summary>
-    /// Function: ResetHealth
+    /// Function: ResetHealth<br/>
+    /// Native code at BatmanAK.exe+0xB4BFC0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetHealth()
     {
@@ -642,7 +657,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMeshFractureSounds;
     /// <summary>
-    /// Function: FindMeshFractureSounds
+    /// Function: FindMeshFractureSounds<br/>
+    /// Native code at BatmanAK.exe+0xB4BE90 in the Steam build
     /// </summary>
     public unsafe virtual void FindMeshFractureSounds(out BmSDK.Engine.AkEvent ExpFracSound, out BmSDK.Engine.AkEvent ChkFractureSound, out int NumChunksForExp)
     {
@@ -686,7 +702,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPartMulti;
     /// <summary>
-    /// Function: SpawnPartMulti
+    /// Function: SpawnPartMulti<br/>
+    /// Native code at BatmanAK.exe+0x551420 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.FracturedStaticMeshPart SpawnPartMulti(BmSDK.TArray<int> ChunkIndices, System.Numerics.Vector3 InitialVel, System.Numerics.Vector3 InitialAngVel, float RelativeScale, bool bExplosion)
     {
@@ -712,7 +729,8 @@ public partial class FracturedStaticMeshActor : BmSDK.Engine.RStaticClimbableAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPart;
     /// <summary>
-    /// Function: SpawnPart
+    /// Function: SpawnPart<br/>
+    /// Native code at BatmanAK.exe+0xB4BB70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.FracturedStaticMeshPart SpawnPart(int ChunkIndex, System.Numerics.Vector3 InitialVel, System.Numerics.Vector3 InitialAngVel, float RelativeScale, bool bExplosion)
     {

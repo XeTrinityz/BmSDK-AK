@@ -94,7 +94,8 @@ public partial class SeqAct_GetMatInstVectorParam : BmSDK.Engine.SequenceAction,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetColour;
     /// <summary>
-    /// Function: GetColour
+    /// Function: GetColour<br/>
+    /// Native code at BatmanAK.exe+0xB51150 in the Steam build
     /// </summary>
     public unsafe virtual void GetColour(out BmSDK.GameObject.FLinearColor Colour)
     {

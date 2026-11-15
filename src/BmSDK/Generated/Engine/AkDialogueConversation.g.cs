@@ -94,7 +94,8 @@ public partial class AkDialogueConversation : BmSDK.Engine.AkDialogueSpeech, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalPlayCount;
     /// <summary>
-    /// Function: GetTotalPlayCount
+    /// Function: GetTotalPlayCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E520 in the Steam build
     /// </summary>
     public unsafe virtual float GetTotalPlayCount()
     {

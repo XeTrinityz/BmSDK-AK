@@ -80,7 +80,8 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSourceRegions;
     /// <summary>
-    /// Function: ResetSourceRegions
+    /// Function: ResetSourceRegions<br/>
+    /// Native code at BatmanAK.exe+0xB40F10 in the Steam build
     /// </summary>
     public unsafe virtual void ResetSourceRegions()
     {
@@ -101,7 +102,8 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCompositeTexture;
     /// <summary>
-    /// Function: UpdateCompositeTexture
+    /// Function: UpdateCompositeTexture<br/>
+    /// Native code at BatmanAK.exe+0xB843D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCompositeTexture(int NumMipsToGenerate)
     {
@@ -123,7 +125,8 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SourceTexturesFullyStreamedIn;
     /// <summary>
-    /// Function: SourceTexturesFullyStreamedIn
+    /// Function: SourceTexturesFullyStreamedIn<br/>
+    /// Native code at BatmanAK.exe+0xB40EC0 in the Steam build
     /// </summary>
     public unsafe virtual bool SourceTexturesFullyStreamedIn()
     {

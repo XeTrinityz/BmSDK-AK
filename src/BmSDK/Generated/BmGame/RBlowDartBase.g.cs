@@ -75,7 +75,8 @@ public partial class RBlowDartBase : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireGunHitResult;
     /// <summary>
-    /// Function: CalculateFireGunHitResult
+    /// Function: CalculateFireGunHitResult<br/>
+    /// Native code at BatmanAK.exe+0x564E10 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateFireGunHitResult(System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> OutImpactInfo, float CheckBoxExtent = default)
     {

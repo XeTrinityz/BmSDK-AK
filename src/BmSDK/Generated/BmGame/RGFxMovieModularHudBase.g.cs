@@ -172,7 +172,8 @@ public partial class RGFxMovieModularHudBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_PushDeferredCallsToGame;
     /// <summary>
-    /// Function: XI_PushDeferredCallsToGame
+    /// Function: XI_PushDeferredCallsToGame<br/>
+    /// Native code at BatmanAK.exe+0x546D80 in the Steam build
     /// </summary>
     public unsafe virtual void XI_PushDeferredCallsToGame(BmSDK.FStringArg deferred_calls)
     {
@@ -195,7 +196,8 @@ public partial class RGFxMovieModularHudBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAndClearDeferredCalls;
     /// <summary>
-    /// Function: CheckAndClearDeferredCalls
+    /// Function: CheckAndClearDeferredCalls<br/>
+    /// Native code at BatmanAK.exe+0x546D00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString CheckAndClearDeferredCalls()
     {
@@ -246,7 +248,8 @@ public partial class RGFxMovieModularHudBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSwfMovieFullName;
     /// <summary>
-    /// Function: GetSwfMovieFullName
+    /// Function: GetSwfMovieFullName<br/>
+    /// Native code at BatmanAK.exe+0x546B90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSwfMovieFullName(BmSDK.GFxUI.SwfMovie TestMovie)
     {

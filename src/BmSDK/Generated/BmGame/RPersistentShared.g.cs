@@ -865,7 +865,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AwardUpgradePointsForNewlyCompletedChallenges;
     /// <summary>
-    /// Function: AwardUpgradePointsForNewlyCompletedChallenges
+    /// Function: AwardUpgradePointsForNewlyCompletedChallenges<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void AwardUpgradePointsForNewlyCompletedChallenges()
     {
@@ -886,7 +887,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSharedFlagSet;
     /// <summary>
-    /// Function: IsSharedFlagSet
+    /// Function: IsSharedFlagSet<br/>
+    /// Native code at BatmanAK.exe+0xBA7F70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSharedFlagSet(BmSDK.FStringArg FlagName)
     {
@@ -909,7 +911,8 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSharedFlag;
     /// <summary>
-    /// Function: SetSharedFlag
+    /// Function: SetSharedFlag<br/>
+    /// Native code at BatmanAK.exe+0x5430D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSharedFlag(BmSDK.FStringArg FlagName, bool bTrue)
     {

@@ -170,7 +170,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_LogOutBugItAIGoToLogFile;
     /// <summary>
-    /// Function: LogOutBugItAIGoToLogFile
+    /// Function: LogOutBugItAIGoToLogFile<br/>
+    /// Native code at BatmanAK.exe+0xBAD090 in the Steam build
     /// </summary>
     public unsafe void LogOutBugItAIGoToLogFile(BmSDK.FStringArg InScreenShotDesc, BmSDK.FStringArg InGoString, BmSDK.FStringArg InLocString)
     {
@@ -197,7 +198,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_LogOutBugItGoToLogFile;
     /// <summary>
-    /// Function: LogOutBugItGoToLogFile
+    /// Function: LogOutBugItGoToLogFile<br/>
+    /// Native code at BatmanAK.exe+0xBACDC0 in the Steam build
     /// </summary>
     public unsafe void LogOutBugItGoToLogFile(BmSDK.FStringArg InScreenShotDesc, BmSDK.FStringArg InGoString, BmSDK.FStringArg InLocString)
     {
@@ -378,7 +380,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasPeerConnection;
     /// <summary>
-    /// Function: HasPeerConnection
+    /// Function: HasPeerConnection<br/>
+    /// Native code at BatmanAK.exe+0xB420C0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasPeerConnection(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId PeerNetId)
     {
@@ -610,7 +613,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientAddTextureStreamingLoc;
     /// <summary>
-    /// Function: ClientAddTextureStreamingLoc
+    /// Function: ClientAddTextureStreamingLoc<br/>
+    /// Native code at BatmanAK.exe+0xB88EE0 in the Steam build
     /// </summary>
     public unsafe virtual void ClientAddTextureStreamingLoc(System.Numerics.Vector3 InLoc, float Duration, bool bOverrideLocation)
     {
@@ -1459,7 +1463,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsShowingSubtitles;
     /// <summary>
-    /// Function: IsShowingSubtitles
+    /// Function: IsShowingSubtitles<br/>
+    /// Native code at BatmanAK.exe+0xB42070 in the Steam build
     /// </summary>
     public unsafe virtual bool IsShowingSubtitles()
     {
@@ -1480,7 +1485,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetShowSubtitles;
     /// <summary>
-    /// Function: SetShowSubtitles
+    /// Function: SetShowSubtitles<br/>
+    /// Native code at BatmanAK.exe+0xB88DC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetShowSubtitles(bool bValue)
     {
@@ -1622,7 +1628,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_GetPlayerControllerFromNetId;
     /// <summary>
-    /// Function: GetPlayerControllerFromNetId
+    /// Function: GetPlayerControllerFromNetId<br/>
+    /// Native code at BatmanAK.exe+0xB41FE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PlayerController GetPlayerControllerFromNetId(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId)
     {
@@ -1703,7 +1710,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerMuted;
     /// <summary>
-    /// Function: IsPlayerMuted
+    /// Function: IsPlayerMuted<br/>
+    /// Native code at BatmanAK.exe+0xB41F30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerMuted(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId Sender)
     {
@@ -1801,7 +1809,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientFlushLevelStreaming;
     /// <summary>
-    /// Function: ClientFlushLevelStreaming
+    /// Function: ClientFlushLevelStreaming<br/>
+    /// Native code at BatmanAK.exe+0xB41EF0 in the Steam build
     /// </summary>
     public unsafe virtual void ClientFlushLevelStreaming()
     {
@@ -1881,7 +1890,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ServerUpdateLevelVisibility;
     /// <summary>
-    /// Function: ServerUpdateLevelVisibility
+    /// Function: ServerUpdateLevelVisibility<br/>
+    /// Native code at BatmanAK.exe+0xB88BE0 in the Steam build
     /// </summary>
     public unsafe virtual void ServerUpdateLevelVisibility(BmSDK.FName PackageName, bool bIsVisible)
     {
@@ -1904,7 +1914,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientUpdateLevelStreamingStatus;
     /// <summary>
-    /// Function: ClientUpdateLevelStreamingStatus
+    /// Function: ClientUpdateLevelStreamingStatus<br/>
+    /// Native code at BatmanAK.exe+0xB88880 in the Steam build
     /// </summary>
     public unsafe virtual void ClientUpdateLevelStreamingStatus(BmSDK.FName PackageName, bool bNewShouldBeLoaded, bool bNewShouldBeVisible, bool bNewShouldBlockOnLoad)
     {
@@ -2789,7 +2800,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewTarget;
     /// <summary>
-    /// Function: GetViewTarget
+    /// Function: GetViewTarget<br/>
+    /// Native code at BatmanAK.exe+0xB41EA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetViewTarget()
     {
@@ -2845,7 +2857,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
-    /// Function: SetViewTarget
+    /// Function: SetViewTarget<br/>
+    /// Native code at BatmanAK.exe+0xB886D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewTarget(BmSDK.Engine.Actor NewViewTarget, BmSDK.Engine.Camera.FViewTargetTransitionParams TransitionParams = default)
     {
@@ -2868,7 +2881,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocalController;
     /// <summary>
-    /// Function: IsLocalController
+    /// Function: IsLocalController<br/>
+    /// Native code at BatmanAK.exe+0x484190 in the Steam build
     /// </summary>
     public unsafe override bool IsLocalController()
     {
@@ -2889,7 +2903,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocalPlayerController;
     /// <summary>
-    /// Function: IsLocalPlayerController
+    /// Function: IsLocalPlayerController<br/>
+    /// Native code at BatmanAK.exe+0x46B3C0 in the Steam build
     /// </summary>
     public unsafe override bool IsLocalPlayerController()
     {
@@ -3138,7 +3153,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceSingleNetUpdateFor;
     /// <summary>
-    /// Function: ForceSingleNetUpdateFor
+    /// Function: ForceSingleNetUpdateFor<br/>
+    /// Native code at BatmanAK.exe+0xB885B0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceSingleNetUpdateFor(BmSDK.Engine.Actor Target)
     {
@@ -3160,7 +3176,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasClientLoadedCurrentWorld;
     /// <summary>
-    /// Function: HasClientLoadedCurrentWorld
+    /// Function: HasClientLoadedCurrentWorld<br/>
+    /// Native code at BatmanAK.exe+0xB41E50 in the Steam build
     /// </summary>
     public unsafe virtual bool HasClientLoadedCurrentWorld()
     {
@@ -3197,7 +3214,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ServerNotifyLoadedWorld;
     /// <summary>
-    /// Function: ServerNotifyLoadedWorld
+    /// Function: ServerNotifyLoadedWorld<br/>
+    /// Native code at BatmanAK.exe+0xB88490 in the Steam build
     /// </summary>
     public unsafe virtual void ServerNotifyLoadedWorld(BmSDK.FName WorldPackageName)
     {
@@ -4655,7 +4673,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_CreateTTSSoundCue;
     /// <summary>
-    /// Function: CreateTTSSoundCue
+    /// Function: CreateTTSSoundCue<br/>
+    /// Native code at BatmanAK.exe+0xBACBC0 in the Steam build
     /// </summary>
     public unsafe BmSDK.Engine.SoundCue CreateTTSSoundCue(BmSDK.FStringArg StrToSpeak, BmSDK.Engine.PlayerReplicationInfo PRI)
     {
@@ -5013,7 +5032,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMouseAvailable;
     /// <summary>
-    /// Function: IsMouseAvailable
+    /// Function: IsMouseAvailable<br/>
+    /// Native code at BatmanAK.exe+0xB41E00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMouseAvailable()
     {
@@ -5034,7 +5054,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsKeyboardAvailable;
     /// <summary>
-    /// Function: IsKeyboardAvailable
+    /// Function: IsKeyboardAvailable<br/>
+    /// Native code at BatmanAK.exe+0xB41DB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsKeyboardAvailable()
     {
@@ -5055,7 +5076,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUseTiltForwardAndBack;
     /// <summary>
-    /// Function: SetUseTiltForwardAndBack
+    /// Function: SetUseTiltForwardAndBack<br/>
+    /// Native code at BatmanAK.exe+0xB88370 in the Steam build
     /// </summary>
     public unsafe virtual void SetUseTiltForwardAndBack(bool bActive)
     {
@@ -5077,7 +5099,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyUseControllerTiltInput;
     /// <summary>
-    /// Function: SetOnlyUseControllerTiltInput
+    /// Function: SetOnlyUseControllerTiltInput<br/>
+    /// Native code at BatmanAK.exe+0xB88250 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyUseControllerTiltInput(bool bActive)
     {
@@ -5099,7 +5122,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControllerTiltActive;
     /// <summary>
-    /// Function: SetControllerTiltActive
+    /// Function: SetControllerTiltActive<br/>
+    /// Native code at BatmanAK.exe+0x4A2D50 in the Steam build
     /// </summary>
     public unsafe virtual void SetControllerTiltActive(bool bActive)
     {
@@ -5121,7 +5145,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsControllerTiltActive;
     /// <summary>
-    /// Function: IsControllerTiltActive
+    /// Function: IsControllerTiltActive<br/>
+    /// Native code at BatmanAK.exe+0x46A740 in the Steam build
     /// </summary>
     public unsafe virtual bool IsControllerTiltActive()
     {
@@ -5481,7 +5506,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TellPeerToTravelToSession;
     /// <summary>
-    /// Function: TellPeerToTravelToSession
+    /// Function: TellPeerToTravelToSession<br/>
+    /// Native code at BatmanAK.exe+0xB87F30 in the Steam build
     /// </summary>
     public unsafe virtual void TellPeerToTravelToSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ToPeerNetId, BmSDK.FName SessionName, BmSDK.Class SearchClass, byte PlatformSpecificInfo, int PlatformSpecificInfoSize)
     {
@@ -5507,7 +5533,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TellPeerToTravel;
     /// <summary>
-    /// Function: TellPeerToTravel
+    /// Function: TellPeerToTravel<br/>
+    /// Native code at BatmanAK.exe+0xB41D30 in the Steam build
     /// </summary>
     public unsafe virtual void TellPeerToTravel(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ToPeerNetId)
     {
@@ -5529,7 +5556,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PeerTravelAsHost;
     /// <summary>
-    /// Function: PeerTravelAsHost
+    /// Function: PeerTravelAsHost<br/>
+    /// Native code at BatmanAK.exe+0xBAC9B0 in the Steam build
     /// </summary>
     public unsafe virtual void PeerTravelAsHost(float TravelCountdownTimer, BmSDK.FStringArg URL)
     {
@@ -5750,7 +5778,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayForceFeedbackWaveform_Simple;
     /// <summary>
-    /// Function: PlayForceFeedbackWaveform_Simple
+    /// Function: PlayForceFeedbackWaveform_Simple<br/>
+    /// Native code at BatmanAK.exe+0xB87BB0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayForceFeedbackWaveform_Simple(float Duration, int leftStrength, int rightStrength, int rumbleFunction)
     {
@@ -5842,7 +5871,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanUpAudioComponents;
     /// <summary>
-    /// Function: CleanUpAudioComponents
+    /// Function: CleanUpAudioComponents<br/>
+    /// Native code at BatmanAK.exe+0x48CA50 in the Steam build
     /// </summary>
     public unsafe virtual void CleanUpAudioComponents()
     {
@@ -5863,7 +5893,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindStairRotation;
     /// <summary>
-    /// Function: FindStairRotation
+    /// Function: FindStairRotation<br/>
+    /// Native code at BatmanAK.exe+0xB87A70 in the Steam build
     /// </summary>
     public unsafe virtual int FindStairRotation(float DeltaTime)
     {
@@ -5885,7 +5916,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpeedHack;
     /// <summary>
-    /// Function: CheckSpeedHack
+    /// Function: CheckSpeedHack<br/>
+    /// Native code at BatmanAK.exe+0xB87930 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpeedHack(float DeltaTime)
     {
@@ -5907,7 +5939,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_ServerProcessConvolve;
     /// <summary>
-    /// Function: ServerProcessConvolve
+    /// Function: ServerProcessConvolve<br/>
+    /// Native code at BatmanAK.exe+0x53C050 in the Steam build
     /// </summary>
     public unsafe void ServerProcessConvolve(BmSDK.FStringArg C, int H)
     {
@@ -5931,7 +5964,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_ClientConvolve;
     /// <summary>
-    /// Function: ClientConvolve
+    /// Function: ClientConvolve<br/>
+    /// Native code at BatmanAK.exe+0x53C050 in the Steam build
     /// </summary>
     public unsafe void ClientConvolve(BmSDK.FStringArg C, int H)
     {
@@ -5955,7 +5989,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowMatureLanguage;
     /// <summary>
-    /// Function: SetAllowMatureLanguage
+    /// Function: SetAllowMatureLanguage<br/>
+    /// Native code at BatmanAK.exe+0xB87810 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllowMatureLanguage(bool bAllowMatureLanguge)
     {
@@ -5977,7 +6012,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PasteFromClipboard;
     /// <summary>
-    /// Function: PasteFromClipboard
+    /// Function: PasteFromClipboard<br/>
+    /// Native code at BatmanAK.exe+0xBAC930 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString PasteFromClipboard()
     {
@@ -5998,7 +6034,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyToClipboard;
     /// <summary>
-    /// Function: CopyToClipboard
+    /// Function: CopyToClipboard<br/>
+    /// Native code at BatmanAK.exe+0xBAC7F0 in the Steam build
     /// </summary>
     public unsafe virtual void CopyToClipboard(BmSDK.FStringArg Text)
     {
@@ -6021,7 +6058,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultURL;
     /// <summary>
-    /// Function: GetDefaultURL
+    /// Function: GetDefaultURL<br/>
+    /// Native code at BatmanAK.exe+0xBAC680 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetDefaultURL(BmSDK.FStringArg Option)
     {
@@ -6044,7 +6082,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateURL;
     /// <summary>
-    /// Function: UpdateURL
+    /// Function: UpdateURL<br/>
+    /// Native code at BatmanAK.exe+0xBAC3C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateURL(BmSDK.FStringArg NewOption, BmSDK.FStringArg NewValue, bool bSave1Default)
     {
@@ -6070,7 +6109,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientTravel;
     /// <summary>
-    /// Function: ClientTravel
+    /// Function: ClientTravel<br/>
+    /// Native code at BatmanAK.exe+0xBAC1E0 in the Steam build
     /// </summary>
     public unsafe virtual void ClientTravel(BmSDK.FStringArg URL, BmSDK.Engine.Actor.ETravelType TravelType, bool bSeamless = default, BmSDK.GameObject.FGuid MapPackageGuid = default)
     {
@@ -6096,7 +6136,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommand;
     /// <summary>
-    /// Function: ConsoleCommand
+    /// Function: ConsoleCommand<br/>
+    /// Native code at BatmanAK.exe+0xBA34A0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString ConsoleCommand(BmSDK.FStringArg Command, bool bWriteToLog = default)
     {
@@ -6120,7 +6161,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetServerNetworkAddress;
     /// <summary>
-    /// Function: GetServerNetworkAddress
+    /// Function: GetServerNetworkAddress<br/>
+    /// Native code at BatmanAK.exe+0xBAC160 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetServerNetworkAddress()
     {
@@ -6141,7 +6183,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerNetworkAddress;
     /// <summary>
-    /// Function: GetPlayerNetworkAddress
+    /// Function: GetPlayerNetworkAddress<br/>
+    /// Native code at BatmanAK.exe+0xBAC0E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlayerNetworkAddress()
     {
@@ -6162,7 +6205,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNetSpeed;
     /// <summary>
-    /// Function: SetNetSpeed
+    /// Function: SetNetSpeed<br/>
+    /// Native code at BatmanAK.exe+0xB876F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNetSpeed(int NewSpeed)
     {
@@ -6184,7 +6228,8 @@ public partial class PlayerController : BmSDK.Engine.Controller, BmSDK.IGameObje
 
     private static BmSDK.Function __fn_AllowConsole;
     /// <summary>
-    /// Function: AllowConsole
+    /// Function: AllowConsole<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool AllowConsole()
     {
@@ -7629,7 +7674,8 @@ public static class PlayerControllerStatics
 {
     private static BmSDK.Function __fn_GetPlayerControllerFromNetId;
     /// <summary>
-    /// Function: GetPlayerControllerFromNetId, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPlayerControllerFromNetId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB41FE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.PlayerController GetPlayerControllerFromNetId(this BmSDK.Engine.PlayerController self, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId)
     {
@@ -7651,7 +7697,8 @@ public static class PlayerControllerStatics
 
     private static BmSDK.Function __fn_AllowConsole;
     /// <summary>
-    /// Function: AllowConsole, run on <paramref name="self"/> rather than the class default object
+    /// Function: AllowConsole, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool AllowConsole(this BmSDK.Engine.PlayerController self)
     {

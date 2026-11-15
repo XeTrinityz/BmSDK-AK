@@ -80,7 +80,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlinkAll;
     /// <summary>
-    /// Function: HandleUnlinkAll
+    /// Function: HandleUnlinkAll<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void HandleUnlinkAll()
     {
@@ -101,7 +102,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlink;
     /// <summary>
-    /// Function: HandleUnlink
+    /// Function: HandleUnlink<br/>
+    /// Native code at BatmanAK.exe+0xFDD710 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleUnlink(BmSDK.Engine.Actor Target)
     {
@@ -123,7 +125,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleLink;
     /// <summary>
-    /// Function: HandleLink
+    /// Function: HandleLink<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleLink(BmSDK.Engine.Actor Target)
     {
@@ -145,7 +148,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyEmitterSpatial;
     /// <summary>
-    /// Function: ApplyEmitterSpatial
+    /// Function: ApplyEmitterSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe override void ApplyEmitterSpatial()
     {
@@ -166,7 +170,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableEmitter;
     /// <summary>
-    /// Function: DisableEmitter
+    /// Function: DisableEmitter<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe override void DisableEmitter()
     {
@@ -187,7 +192,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEmitter;
     /// <summary>
-    /// Function: EnableEmitter
+    /// Function: EnableEmitter<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe override void EnableEmitter()
     {
@@ -208,7 +214,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
@@ -236,7 +243,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
@@ -258,7 +266,8 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudibleUpdateSourceCallback;
     /// <summary>
-    /// Function: AudibleUpdateSourceCallback
+    /// Function: AudibleUpdateSourceCallback<br/>
+    /// Native code at BatmanAK.exe+0xB69C30 in the Steam build
     /// </summary>
     public unsafe override void AudibleUpdateSourceCallback(BmSDK.Engine.RAkAudible akAud, bool hasSource)
     {

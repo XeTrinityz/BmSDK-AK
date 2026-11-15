@@ -235,7 +235,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMass;
     /// <summary>
-    /// Function: GetMass
+    /// Function: GetMass<br/>
+    /// Native code at BatmanAK.exe+0x482020 in the Steam build
     /// </summary>
     public unsafe virtual float GetMass()
     {
@@ -256,7 +257,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMass;
     /// <summary>
-    /// Function: SetMass
+    /// Function: SetMass<br/>
+    /// Native code at BatmanAK.exe+0x4E9180 in the Steam build
     /// </summary>
     public unsafe virtual void SetMass(float Mass)
     {
@@ -278,7 +280,8 @@ public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMassScale;
     /// <summary>
-    /// Function: SetMassScale
+    /// Function: SetMassScale<br/>
+    /// Native code at BatmanAK.exe+0x4E9050 in the Steam build
     /// </summary>
     public unsafe virtual void SetMassScale(float MassScale)
     {

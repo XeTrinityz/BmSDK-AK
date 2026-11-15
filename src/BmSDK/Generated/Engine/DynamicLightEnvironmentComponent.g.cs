@@ -80,7 +80,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOwnerBounds;
     /// <summary>
-    /// Function: GetOwnerBounds
+    /// Function: GetOwnerBounds<br/>
+    /// Native code at BatmanAK.exe+0xB43240 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBoxSphereBounds GetOwnerBounds()
     {
@@ -101,7 +102,8 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetEnvironment;
     /// <summary>
-    /// Function: ResetEnvironment
+    /// Function: ResetEnvironment<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetEnvironment()
     {

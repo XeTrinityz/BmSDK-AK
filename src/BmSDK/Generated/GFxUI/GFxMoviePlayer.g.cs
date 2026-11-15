@@ -80,7 +80,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilename;
     /// <summary>
-    /// Function: GetFilename
+    /// Function: GetFilename<br/>
+    /// Native code at BatmanAK.exe+0x61B280 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetFilename()
     {
@@ -101,7 +102,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplitscreenLayout;
     /// <summary>
-    /// Function: UpdateSplitscreenLayout
+    /// Function: UpdateSplitscreenLayout<br/>
+    /// Native code at BatmanAK.exe+0x48D6F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSplitscreenLayout()
     {
@@ -288,7 +290,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWidgetPathBinding;
     /// <summary>
-    /// Function: SetWidgetPathBinding
+    /// Function: SetWidgetPathBinding<br/>
+    /// Native code at BatmanAK.exe+0x5E9540 in the Steam build
     /// </summary>
     public unsafe virtual void SetWidgetPathBinding(BmSDK.GFxUI.GFxObject WidgetToBind, BmSDK.FName Path)
     {
@@ -359,7 +362,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptConstructor;
     /// <summary>
-    /// Function: ActionScriptConstructor
+    /// Function: ActionScriptConstructor<br/>
+    /// Native code at BatmanAK.exe+0x5CB800 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject ActionScriptConstructor(BmSDK.FStringArg ClassName)
     {
@@ -382,7 +386,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptObject;
     /// <summary>
-    /// Function: ActionScriptObject
+    /// Function: ActionScriptObject<br/>
+    /// Native code at BatmanAK.exe+0x5CB750 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject ActionScriptObject(BmSDK.FStringArg Path)
     {
@@ -405,7 +410,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptString;
     /// <summary>
-    /// Function: ActionScriptString
+    /// Function: ActionScriptString<br/>
+    /// Native code at BatmanAK.exe+0x5CB690 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ActionScriptString(BmSDK.FStringArg Path)
     {
@@ -428,7 +434,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptFloat;
     /// <summary>
-    /// Function: ActionScriptFloat
+    /// Function: ActionScriptFloat<br/>
+    /// Native code at BatmanAK.exe+0x5CB5D0 in the Steam build
     /// </summary>
     public unsafe virtual float ActionScriptFloat(BmSDK.FStringArg Path)
     {
@@ -451,7 +458,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptInt;
     /// <summary>
-    /// Function: ActionScriptInt
+    /// Function: ActionScriptInt<br/>
+    /// Native code at BatmanAK.exe+0x5CB510 in the Steam build
     /// </summary>
     public unsafe virtual int ActionScriptInt(BmSDK.FStringArg Path)
     {
@@ -474,7 +482,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptVoid;
     /// <summary>
-    /// Function: ActionScriptVoid
+    /// Function: ActionScriptVoid<br/>
+    /// Native code at BatmanAK.exe+0x5CB460 in the Steam build
     /// </summary>
     public unsafe virtual void ActionScriptVoid(BmSDK.FStringArg Path)
     {
@@ -497,7 +506,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Invoke;
     /// <summary>
-    /// Function: Invoke
+    /// Function: Invoke<br/>
+    /// Native code at BatmanAK.exe+0x6649A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue Invoke(BmSDK.FStringArg method, BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> args)
     {
@@ -521,7 +531,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionScriptSetFunction;
     /// <summary>
-    /// Function: ActionScriptSetFunction
+    /// Function: ActionScriptSetFunction<br/>
+    /// Native code at BatmanAK.exe+0x5C06E0 in the Steam build
     /// </summary>
     public unsafe virtual void ActionScriptSetFunction(BmSDK.GFxUI.GFxObject Object, BmSDK.FStringArg Member)
     {
@@ -545,7 +556,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateArray;
     /// <summary>
-    /// Function: CreateArray
+    /// Function: CreateArray<br/>
+    /// Native code at BatmanAK.exe+0x5E94F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject CreateArray()
     {
@@ -566,7 +578,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateObject;
     /// <summary>
-    /// Function: CreateObject
+    /// Function: CreateObject<br/>
+    /// Native code at BatmanAK.exe+0x6988F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject CreateObject(BmSDK.FStringArg ASClass, BmSDK.Class Type = default, BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> args = default)
     {
@@ -591,7 +604,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableStringArray;
     /// <summary>
-    /// Function: SetVariableStringArray
+    /// Function: SetVariableStringArray<br/>
+    /// Native code at BatmanAK.exe+0x664720 in the Steam build
     /// </summary>
     public unsafe virtual bool SetVariableStringArray(BmSDK.FStringArg Path, int Index, BmSDK.TArray<BmSDK.FString> Arg)
     {
@@ -616,7 +630,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableFloatArray;
     /// <summary>
-    /// Function: SetVariableFloatArray
+    /// Function: SetVariableFloatArray<br/>
+    /// Native code at BatmanAK.exe+0x638440 in the Steam build
     /// </summary>
     public unsafe virtual bool SetVariableFloatArray(BmSDK.FStringArg Path, int Index, BmSDK.TArray<float> Arg)
     {
@@ -641,7 +656,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableIntArray;
     /// <summary>
-    /// Function: SetVariableIntArray
+    /// Function: SetVariableIntArray<br/>
+    /// Native code at BatmanAK.exe+0x6381F0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetVariableIntArray(BmSDK.FStringArg Path, int Index, BmSDK.TArray<int> Arg)
     {
@@ -666,7 +682,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableArray;
     /// <summary>
-    /// Function: SetVariableArray
+    /// Function: SetVariableArray<br/>
+    /// Native code at BatmanAK.exe+0x6644A0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetVariableArray(BmSDK.FStringArg Path, int Index, BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> Arg)
     {
@@ -691,7 +708,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableStringArray;
     /// <summary>
-    /// Function: GetVariableStringArray
+    /// Function: GetVariableStringArray<br/>
+    /// Native code at BatmanAK.exe+0x664220 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVariableStringArray(BmSDK.FStringArg Path, int Index, out BmSDK.TArray<BmSDK.FString> Arg)
     {
@@ -716,7 +734,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableFloatArray;
     /// <summary>
-    /// Function: GetVariableFloatArray
+    /// Function: GetVariableFloatArray<br/>
+    /// Native code at BatmanAK.exe+0x637FA0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVariableFloatArray(BmSDK.FStringArg Path, int Index, out BmSDK.TArray<float> Arg)
     {
@@ -741,7 +760,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableIntArray;
     /// <summary>
-    /// Function: GetVariableIntArray
+    /// Function: GetVariableIntArray<br/>
+    /// Native code at BatmanAK.exe+0x637D50 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVariableIntArray(BmSDK.FStringArg Path, int Index, out BmSDK.TArray<int> Arg)
     {
@@ -766,7 +786,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableArray;
     /// <summary>
-    /// Function: GetVariableArray
+    /// Function: GetVariableArray<br/>
+    /// Native code at BatmanAK.exe+0x663FA0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVariableArray(BmSDK.FStringArg Path, int Index, out BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> Arg)
     {
@@ -791,7 +812,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableObject;
     /// <summary>
-    /// Function: SetVariableObject
+    /// Function: SetVariableObject<br/>
+    /// Native code at BatmanAK.exe+0x61B090 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariableObject(BmSDK.FStringArg Path, BmSDK.GFxUI.GFxObject Object)
     {
@@ -815,7 +837,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableString;
     /// <summary>
-    /// Function: SetVariableString
+    /// Function: SetVariableString<br/>
+    /// Native code at BatmanAK.exe+0x61AE80 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariableString(BmSDK.FStringArg Path, BmSDK.FStringArg S)
     {
@@ -840,7 +863,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableInt;
     /// <summary>
-    /// Function: SetVariableInt
+    /// Function: SetVariableInt<br/>
+    /// Native code at BatmanAK.exe+0x61AC90 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariableInt(BmSDK.FStringArg Path, int I)
     {
@@ -864,7 +888,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableNumber;
     /// <summary>
-    /// Function: SetVariableNumber
+    /// Function: SetVariableNumber<br/>
+    /// Native code at BatmanAK.exe+0x61AA90 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariableNumber(BmSDK.FStringArg Path, float F)
     {
@@ -888,7 +913,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariableBool;
     /// <summary>
-    /// Function: SetVariableBool
+    /// Function: SetVariableBool<br/>
+    /// Native code at BatmanAK.exe+0x61A8A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariableBool(BmSDK.FStringArg Path, bool B)
     {
@@ -912,7 +938,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariable;
     /// <summary>
-    /// Function: SetVariable
+    /// Function: SetVariable<br/>
+    /// Native code at BatmanAK.exe+0x637B50 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariable(BmSDK.FStringArg Path, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
@@ -936,7 +963,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableObject;
     /// <summary>
-    /// Function: GetVariableObject
+    /// Function: GetVariableObject<br/>
+    /// Native code at BatmanAK.exe+0x61A720 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetVariableObject(BmSDK.FStringArg Path, BmSDK.Class Type = default)
     {
@@ -960,7 +988,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableString;
     /// <summary>
-    /// Function: GetVariableString
+    /// Function: GetVariableString<br/>
+    /// Native code at BatmanAK.exe+0x61A5A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVariableString(BmSDK.FStringArg Path)
     {
@@ -983,7 +1012,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableInt;
     /// <summary>
-    /// Function: GetVariableInt
+    /// Function: GetVariableInt<br/>
+    /// Native code at BatmanAK.exe+0x61A450 in the Steam build
     /// </summary>
     public unsafe virtual int GetVariableInt(BmSDK.FStringArg Path)
     {
@@ -1006,7 +1036,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableNumber;
     /// <summary>
-    /// Function: GetVariableNumber
+    /// Function: GetVariableNumber<br/>
+    /// Native code at BatmanAK.exe+0x61A300 in the Steam build
     /// </summary>
     public unsafe virtual float GetVariableNumber(BmSDK.FStringArg Path)
     {
@@ -1029,7 +1060,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableBool;
     /// <summary>
-    /// Function: GetVariableBool
+    /// Function: GetVariableBool<br/>
+    /// Native code at BatmanAK.exe+0x61A1B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVariableBool(BmSDK.FStringArg Path)
     {
@@ -1052,7 +1084,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariable;
     /// <summary>
-    /// Function: GetVariable
+    /// Function: GetVariable<br/>
+    /// Native code at BatmanAK.exe+0x6379E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue GetVariable(BmSDK.FStringArg Path)
     {
@@ -1075,7 +1108,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAVMVersion;
     /// <summary>
-    /// Function: GetAVMVersion
+    /// Function: GetAVMVersion<br/>
+    /// Native code at BatmanAK.exe+0x5E94A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetAVMVersion()
     {
@@ -1113,7 +1147,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushPlayerInput;
     /// <summary>
-    /// Function: FlushPlayerInput
+    /// Function: FlushPlayerInput<br/>
+    /// Native code at BatmanAK.exe+0x5E9380 in the Steam build
     /// </summary>
     public unsafe virtual void FlushPlayerInput(bool capturekeysonly)
     {
@@ -1135,7 +1170,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearFocusIgnoreKeys;
     /// <summary>
-    /// Function: ClearFocusIgnoreKeys
+    /// Function: ClearFocusIgnoreKeys<br/>
+    /// Native code at BatmanAK.exe+0x5E9340 in the Steam build
     /// </summary>
     public unsafe virtual void ClearFocusIgnoreKeys()
     {
@@ -1156,7 +1192,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFocusIgnoreKey;
     /// <summary>
-    /// Function: AddFocusIgnoreKey
+    /// Function: AddFocusIgnoreKey<br/>
+    /// Native code at BatmanAK.exe+0x5E9220 in the Steam build
     /// </summary>
     public unsafe virtual void AddFocusIgnoreKey(BmSDK.FName Key)
     {
@@ -1178,7 +1215,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCaptureKeys;
     /// <summary>
-    /// Function: ClearCaptureKeys
+    /// Function: ClearCaptureKeys<br/>
+    /// Native code at BatmanAK.exe+0x5E91E0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearCaptureKeys()
     {
@@ -1199,7 +1237,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCaptureKey;
     /// <summary>
-    /// Function: AddCaptureKey
+    /// Function: AddCaptureKey<br/>
+    /// Native code at BatmanAK.exe+0x5E90C0 in the Steam build
     /// </summary>
     public unsafe virtual void AddCaptureKey(BmSDK.FName Key)
     {
@@ -1221,7 +1260,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMovieCanReceiveInput;
     /// <summary>
-    /// Function: SetMovieCanReceiveInput
+    /// Function: SetMovieCanReceiveInput<br/>
+    /// Native code at BatmanAK.exe+0x5E8FA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetMovieCanReceiveInput(bool bCanReceiveInput)
     {
@@ -1243,7 +1283,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMovieCanReceiveFocus;
     /// <summary>
-    /// Function: SetMovieCanReceiveFocus
+    /// Function: SetMovieCanReceiveFocus<br/>
+    /// Native code at BatmanAK.exe+0x5E8E80 in the Steam build
     /// </summary>
     public unsafe virtual void SetMovieCanReceiveFocus(bool bCanReceiveFocus)
     {
@@ -1265,7 +1306,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFocus;
     /// <summary>
-    /// Function: SetFocus
+    /// Function: SetFocus<br/>
+    /// Native code at BatmanAK.exe+0x5E8D10 in the Steam build
     /// </summary>
     public unsafe virtual void SetFocus(bool CaptureInput, bool Focus = default)
     {
@@ -1288,7 +1330,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStickMagAng;
     /// <summary>
-    /// Function: GetStickMagAng
+    /// Function: GetStickMagAng<br/>
+    /// Native code at BatmanAK.exe+0x5E8BD0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 GetStickMagAng(int Stick)
     {
@@ -1310,7 +1353,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasFocus;
     /// <summary>
-    /// Function: HasFocus
+    /// Function: HasFocus<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasFocus()
     {
@@ -1331,7 +1375,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSceneDPG;
     /// <summary>
-    /// Function: SetSceneDPG
+    /// Function: SetSceneDPG<br/>
+    /// Native code at BatmanAK.exe+0x5E8B50 in the Steam build
     /// </summary>
     public unsafe virtual void SetSceneDPG(BmSDK.Engine.Scene.ESceneDepthPriorityGroup NewDPG)
     {
@@ -1353,7 +1398,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPerspective3D;
     /// <summary>
-    /// Function: SetPerspective3D
+    /// Function: SetPerspective3D<br/>
+    /// Native code at BatmanAK.exe+0x5E8AB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPerspective3D(out BmSDK.GameObject.FMatrix matPersp)
     {
@@ -1375,7 +1421,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetView3D;
     /// <summary>
-    /// Function: SetView3D
+    /// Function: SetView3D<br/>
+    /// Native code at BatmanAK.exe+0x5E8A10 in the Steam build
     /// </summary>
     public unsafe virtual void SetView3D(out BmSDK.GameObject.FMatrix matView)
     {
@@ -1397,7 +1444,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVisibleFrameRect;
     /// <summary>
-    /// Function: GetVisibleFrameRect
+    /// Function: GetVisibleFrameRect<br/>
+    /// Native code at BatmanAK.exe+0x5E8870 in the Steam build
     /// </summary>
     public unsafe virtual void GetVisibleFrameRect(out float x0, out float y0, out float X1, out float Y1)
     {
@@ -1430,7 +1478,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAlignment;
     /// <summary>
-    /// Function: SetAlignment
+    /// Function: SetAlignment<br/>
+    /// Native code at BatmanAK.exe+0x5E87F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAlignment(BmSDK.GFxUI.GFxMoviePlayer.GFxAlign A)
     {
@@ -1452,7 +1501,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewScaleMode;
     /// <summary>
-    /// Function: SetViewScaleMode
+    /// Function: SetViewScaleMode<br/>
+    /// Native code at BatmanAK.exe+0x5E8770 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewScaleMode(BmSDK.GFxUI.GFxMoviePlayer.GFxScaleMode SM)
     {
@@ -1474,7 +1524,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewport;
     /// <summary>
-    /// Function: SetViewport
+    /// Function: SetViewport<br/>
+    /// Native code at BatmanAK.exe+0x5E8420 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewport(int X, int Y, int Width, int Height)
     {
@@ -1499,7 +1550,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameViewportClient;
     /// <summary>
-    /// Function: GetGameViewportClient
+    /// Function: GetGameViewportClient<br/>
+    /// Native code at BatmanAK.exe+0x5E83D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.GameViewportClient GetGameViewportClient()
     {
@@ -1520,7 +1572,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPriority;
     /// <summary>
-    /// Function: SetPriority
+    /// Function: SetPriority<br/>
+    /// Native code at BatmanAK.exe+0x5E8350 in the Steam build
     /// </summary>
     public unsafe virtual void SetPriority(byte NewPriority)
     {
@@ -1542,7 +1595,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetExternalTexture;
     /// <summary>
-    /// Function: SetExternalTexture
+    /// Function: SetExternalTexture<br/>
+    /// Native code at BatmanAK.exe+0x619FB0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetExternalTexture(BmSDK.FStringArg Resource, BmSDK.Engine.Texture Texture)
     {
@@ -1581,7 +1635,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTimingMode;
     /// <summary>
-    /// Function: SetTimingMode
+    /// Function: SetTimingMode<br/>
+    /// Native code at BatmanAK.exe+0x5E82D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTimingMode(BmSDK.GFxUI.GFxMoviePlayer.GFxTimingMode Mode)
     {
@@ -1632,7 +1687,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewportSplitscreenIndex;
     /// <summary>
-    /// Function: SetViewportSplitscreenIndex
+    /// Function: SetViewportSplitscreenIndex<br/>
+    /// Native code at BatmanAK.exe+0x5E81B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewportSplitscreenIndex(int _ViewportSplitscreenIndex)
     {
@@ -1654,7 +1710,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFocusMovie;
     /// <summary>
-    /// Function: GetFocusMovie
+    /// Function: GetFocusMovie<br/>
+    /// Native code at BatmanAK.exe+0x5E8160 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer GetFocusMovie()
     {
@@ -1675,7 +1732,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGamePadStatus;
     /// <summary>
-    /// Function: UpdateGamePadStatus
+    /// Function: UpdateGamePadStatus<br/>
+    /// Native code at BatmanAK.exe+0xB836F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGamePadStatus(bool bIsNotUsingGamePad)
     {
@@ -1697,7 +1755,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnOutroClose;
     /// <summary>
-    /// Function: OnOutroClose
+    /// Function: OnOutroClose<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void OnOutroClose()
     {
@@ -1746,7 +1805,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
-    /// Function: Close
+    /// Function: Close<br/>
+    /// Native code at BatmanAK.exe+0x5E8080 in the Steam build
     /// </summary>
     public unsafe virtual void Close(bool Unload = default)
     {
@@ -1768,7 +1828,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPause;
     /// <summary>
-    /// Function: SetPause
+    /// Function: SetPause<br/>
+    /// Native code at BatmanAK.exe+0x5E7FE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPause(bool bPausePlayback = default)
     {
@@ -1805,7 +1866,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PostAdvance;
     /// <summary>
-    /// Function: PostAdvance
+    /// Function: PostAdvance<br/>
+    /// Native code at BatmanAK.exe+0x5E7EB0 in the Steam build
     /// </summary>
     public unsafe virtual void PostAdvance(float DeltaTime)
     {
@@ -1827,7 +1889,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Advance;
     /// <summary>
-    /// Function: Advance
+    /// Function: Advance<br/>
+    /// Native code at BatmanAK.exe+0x5E7D80 in the Steam build
     /// </summary>
     public unsafe virtual void Advance(float Time)
     {
@@ -1849,7 +1912,8 @@ public partial class GFxMoviePlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Start;
     /// <summary>
-    /// Function: Start
+    /// Function: Start<br/>
+    /// Native code at BatmanAK.exe+0x5E7CD0 in the Steam build
     /// </summary>
     public unsafe virtual bool Start(bool StartPaused = default)
     {

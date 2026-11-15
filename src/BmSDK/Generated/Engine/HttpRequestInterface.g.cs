@@ -116,7 +116,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessRequest;
     /// <summary>
-    /// Function: ProcessRequest
+    /// Function: ProcessRequest<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ProcessRequest()
     {
@@ -137,7 +138,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHeader;
     /// <summary>
-    /// Function: SetHeader
+    /// Function: SetHeader<br/>
+    /// Native code at BatmanAK.exe+0xBA9E00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetHeader(BmSDK.FStringArg HeaderName, BmSDK.FStringArg HeaderValue)
     {
@@ -162,7 +164,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContentAsString;
     /// <summary>
-    /// Function: SetContentAsString
+    /// Function: SetContentAsString<br/>
+    /// Native code at BatmanAK.exe+0xBA9CB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetContentAsString(BmSDK.FStringArg ContentString)
     {
@@ -185,7 +188,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContent;
     /// <summary>
-    /// Function: SetContent
+    /// Function: SetContent<br/>
+    /// Native code at BatmanAK.exe+0xBB43D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetContent(out BmSDK.TArray<byte> ContentPayload)
     {
@@ -207,7 +211,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetURL;
     /// <summary>
-    /// Function: SetURL
+    /// Function: SetURL<br/>
+    /// Native code at BatmanAK.exe+0xBA9B60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetURL(BmSDK.FStringArg URL)
     {
@@ -230,7 +235,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVerb;
     /// <summary>
-    /// Function: SetVerb
+    /// Function: SetVerb<br/>
+    /// Native code at BatmanAK.exe+0xBA9A10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetVerb(BmSDK.FStringArg Verb)
     {
@@ -253,7 +259,8 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVerb;
     /// <summary>
-    /// Function: GetVerb
+    /// Function: GetVerb<br/>
+    /// Native code at BatmanAK.exe+0xBA80C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVerb()
     {

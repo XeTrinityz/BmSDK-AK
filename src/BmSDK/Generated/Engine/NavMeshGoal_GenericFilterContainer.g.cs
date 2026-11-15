@@ -94,7 +94,8 @@ public partial class NavMeshGoal_GenericFilterContainer : BmSDK.Engine.NavMeshPa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGoalPoint;
     /// <summary>
-    /// Function: GetGoalPoint
+    /// Function: GetGoalPoint<br/>
+    /// Native code at BatmanAK.exe+0x483390 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGoalPoint()
     {

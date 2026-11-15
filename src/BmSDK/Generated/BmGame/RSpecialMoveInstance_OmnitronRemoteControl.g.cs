@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_OmnitronRemoteControl : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePCCursorPos;
     /// <summary>
-    /// Function: UpdatePCCursorPos
+    /// Function: UpdatePCCursorPos<br/>
+    /// Native code at BatmanAK.exe+0x4E1350 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePCCursorPos(BmSDK.BmGame.RPlayerInput Input, float DeltaTime, float TurnSpeed, float Accel, float Decel)
     {
@@ -106,7 +107,8 @@ public partial class RSpecialMoveInstance_OmnitronRemoteControl : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpThumb;
     /// <summary>
-    /// Function: InterpThumb
+    /// Function: InterpThumb<br/>
+    /// Native code at BatmanAK.exe+0x4E1060 in the Steam build
     /// </summary>
     public unsafe virtual float InterpThumb(float DesiredPos, float CurrentPos, float DeltaTime)
     {
@@ -300,7 +302,8 @@ public partial class RSpecialMoveInstance_OmnitronRemoteControl : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePoseLean;
     /// <summary>
-    /// Function: UpdatePoseLean
+    /// Function: UpdatePoseLean<br/>
+    /// Native code at BatmanAK.exe+0x4E0F30 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePoseLean(float fDeltaTime)
     {

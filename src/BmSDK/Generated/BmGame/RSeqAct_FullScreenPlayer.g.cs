@@ -206,7 +206,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudio;
     /// <summary>
-    /// Function: StopAudio
+    /// Function: StopAudio<br/>
+    /// Native code at BatmanAK.exe+0x46E0F0 in the Steam build
     /// </summary>
     public unsafe virtual void StopAudio()
     {
@@ -227,7 +228,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFinish;
     /// <summary>
-    /// Function: CheckForFinish
+    /// Function: CheckForFinish<br/>
+    /// Native code at BatmanAK.exe+0x46E0A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForFinish()
     {
@@ -248,7 +250,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPaused;
     /// <summary>
-    /// Function: IsPaused
+    /// Function: IsPaused<br/>
+    /// Native code at BatmanAK.exe+0x46E050 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPaused()
     {
@@ -269,7 +272,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WasSkipped;
     /// <summary>
-    /// Function: WasSkipped
+    /// Function: WasSkipped<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool WasSkipped()
     {
@@ -290,7 +294,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopMovie;
     /// <summary>
-    /// Function: StopMovie
+    /// Function: StopMovie<br/>
+    /// Native code at BatmanAK.exe+0x48A240 in the Steam build
     /// </summary>
     public unsafe virtual void StopMovie()
     {
@@ -311,7 +316,8 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayMovie;
     /// <summary>
-    /// Function: PlayMovie
+    /// Function: PlayMovie<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void PlayMovie()
     {

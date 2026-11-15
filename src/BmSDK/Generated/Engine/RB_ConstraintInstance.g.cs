@@ -80,7 +80,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFramesToCurrent;
     /// <summary>
-    /// Function: UpdateFramesToCurrent
+    /// Function: UpdateFramesToCurrent<br/>
+    /// Native code at BatmanAK.exe+0xB94050 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFramesToCurrent(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.Engine.RB_ConstraintSetup Setup, float Scale)
     {
@@ -104,7 +105,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDistanceJointLimits;
     /// <summary>
-    /// Function: SetDistanceJointLimits
+    /// Function: SetDistanceJointLimits<br/>
+    /// Native code at BatmanAK.exe+0xB93DE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDistanceJointLimits(bool bLimitMinDist, bool bLimitMaxDist, float NewMinDistance = default, float NewMaxDistance = default)
     {
@@ -129,7 +131,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDistanceJointMinLimit;
     /// <summary>
-    /// Function: SetDistanceJointMinLimit
+    /// Function: SetDistanceJointMinLimit<br/>
+    /// Native code at BatmanAK.exe+0xB93C80 in the Steam build
     /// </summary>
     public unsafe virtual void SetDistanceJointMinLimit(bool bLimitMinDist, float NewMinDistance = default)
     {
@@ -152,7 +155,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDistanceJointMaxLimit;
     /// <summary>
-    /// Function: SetDistanceJointMaxLimit
+    /// Function: SetDistanceJointMaxLimit<br/>
+    /// Native code at BatmanAK.exe+0xB93B20 in the Steam build
     /// </summary>
     public unsafe virtual void SetDistanceJointMaxLimit(bool bLimitMaxDist, float NewMaxDistance = default)
     {
@@ -175,7 +179,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceJointMinLimit;
     /// <summary>
-    /// Function: GetDistanceJointMinLimit
+    /// Function: GetDistanceJointMinLimit<br/>
+    /// Native code at BatmanAK.exe+0xB46130 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDistanceJointMinLimit(out float OutMinDistance)
     {
@@ -199,7 +204,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceJointMaxLimit;
     /// <summary>
-    /// Function: GetDistanceJointMaxLimit
+    /// Function: GetDistanceJointMaxLimit<br/>
+    /// Native code at BatmanAK.exe+0xB46070 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDistanceJointMaxLimit(out float OutMaxDistance)
     {
@@ -223,7 +229,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveKinActorTransform;
     /// <summary>
-    /// Function: MoveKinActorTransform
+    /// Function: MoveKinActorTransform<br/>
+    /// Native code at BatmanAK.exe+0xB45FD0 in the Steam build
     /// </summary>
     public unsafe virtual void MoveKinActorTransform(out BmSDK.GameObject.FMatrix NewTM)
     {
@@ -245,7 +252,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearLimitSize;
     /// <summary>
-    /// Function: SetLinearLimitSize
+    /// Function: SetLinearLimitSize<br/>
+    /// Native code at BatmanAK.exe+0xB939F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearLimitSize(float NewLimitSize)
     {
@@ -267,7 +275,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularDOFLimitScale;
     /// <summary>
-    /// Function: SetAngularDOFLimitScale
+    /// Function: SetAngularDOFLimitScale<br/>
+    /// Native code at BatmanAK.exe+0xB93660 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularDOFLimitScale(float InSwing1LimitScale, float InSwing2LimitScale, float InTwistLimitScale, BmSDK.Engine.RB_ConstraintSetup InSetup)
     {
@@ -292,7 +301,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularDriveParams;
     /// <summary>
-    /// Function: SetAngularDriveParams
+    /// Function: SetAngularDriveParams<br/>
+    /// Native code at BatmanAK.exe+0xB93390 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularDriveParams(float InSpring, float InDamping, float InForceLimit)
     {
@@ -316,7 +326,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularVelocityTarget;
     /// <summary>
-    /// Function: SetAngularVelocityTarget
+    /// Function: SetAngularVelocityTarget<br/>
+    /// Native code at BatmanAK.exe+0xB45F40 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularVelocityTarget(System.Numerics.Vector3 InVelTarget)
     {
@@ -338,7 +349,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularPositionTarget;
     /// <summary>
-    /// Function: SetAngularPositionTarget
+    /// Function: SetAngularPositionTarget<br/>
+    /// Native code at BatmanAK.exe+0xB45EA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularPositionTarget(out BmSDK.GameObject.FQuat InPosTarget)
     {
@@ -362,7 +374,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearDriveParams;
     /// <summary>
-    /// Function: SetLinearDriveParams
+    /// Function: SetLinearDriveParams<br/>
+    /// Native code at BatmanAK.exe+0xB930C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearDriveParams(float InSpring, float InDamping, float InForceLimit)
     {
@@ -386,7 +399,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearVelocityTarget;
     /// <summary>
-    /// Function: SetLinearVelocityTarget
+    /// Function: SetLinearVelocityTarget<br/>
+    /// Native code at BatmanAK.exe+0xB45E10 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearVelocityTarget(System.Numerics.Vector3 InVelTarget)
     {
@@ -408,7 +422,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearPositionTarget;
     /// <summary>
-    /// Function: SetLinearPositionTarget
+    /// Function: SetLinearPositionTarget<br/>
+    /// Native code at BatmanAK.exe+0xB45D80 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearPositionTarget(System.Numerics.Vector3 InPosTarget)
     {
@@ -430,7 +445,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularVelocityDrive;
     /// <summary>
-    /// Function: SetAngularVelocityDrive
+    /// Function: SetAngularVelocityDrive<br/>
+    /// Native code at BatmanAK.exe+0xB92EE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive)
     {
@@ -453,7 +469,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularPositionDrive;
     /// <summary>
-    /// Function: SetAngularPositionDrive
+    /// Function: SetAngularPositionDrive<br/>
+    /// Native code at BatmanAK.exe+0xB92D00 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive)
     {
@@ -476,7 +493,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearVelocityDrive;
     /// <summary>
-    /// Function: SetLinearVelocityDrive
+    /// Function: SetLinearVelocityDrive<br/>
+    /// Native code at BatmanAK.exe+0xB92A60 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearVelocityDrive(bool bEnableXDrive, bool bEnableYDrive, bool bEnableZDrive)
     {
@@ -500,7 +518,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearPositionDrive;
     /// <summary>
-    /// Function: SetLinearPositionDrive
+    /// Function: SetLinearPositionDrive<br/>
+    /// Native code at BatmanAK.exe+0xB927C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearPositionDrive(bool bEnableXDrive, bool bEnableYDrive, bool bEnableZDrive)
     {
@@ -524,7 +543,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetConstraintLocation;
     /// <summary>
-    /// Function: GetConstraintLocation
+    /// Function: GetConstraintLocation<br/>
+    /// Native code at BatmanAK.exe+0xB45D20 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetConstraintLocation()
     {
@@ -545,7 +565,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicsAssetInstance;
     /// <summary>
-    /// Function: GetPhysicsAssetInstance
+    /// Function: GetPhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0xB45CD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicsAssetInstance GetPhysicsAssetInstance()
     {
@@ -566,7 +587,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermConstraint;
     /// <summary>
-    /// Function: TermConstraint
+    /// Function: TermConstraint<br/>
+    /// Native code at BatmanAK.exe+0x88F7E0 in the Steam build
     /// </summary>
     public unsafe virtual void TermConstraint()
     {
@@ -587,7 +609,8 @@ public partial class RB_ConstraintInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitConstraint;
     /// <summary>
-    /// Function: InitConstraint
+    /// Function: InitConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB92200 in the Steam build
     /// </summary>
     public unsafe virtual void InitConstraint(BmSDK.Engine.PrimitiveComponent PrimComp1, BmSDK.Engine.PrimitiveComponent PrimComp2, BmSDK.Engine.RB_ConstraintSetup Setup, float Scale, BmSDK.Engine.Actor InOwner, BmSDK.Engine.PrimitiveComponent InPrimComp, bool bMakeKinForBody1)
     {

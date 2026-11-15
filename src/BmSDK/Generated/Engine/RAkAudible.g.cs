@@ -80,7 +80,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuppressLoops;
     /// <summary>
-    /// Function: SetSuppressLoops
+    /// Function: SetSuppressLoops<br/>
+    /// Native code at BatmanAK.exe+0xB62490 in the Steam build
     /// </summary>
     public unsafe virtual void SetSuppressLoops(BmSDK.Engine.AkPredicate suppressCheck)
     {
@@ -102,7 +103,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAlwaysPlayLoops;
     /// <summary>
-    /// Function: SetAlwaysPlayLoops
+    /// Function: SetAlwaysPlayLoops<br/>
+    /// Native code at BatmanAK.exe+0xB62370 in the Steam build
     /// </summary>
     public unsafe virtual void SetAlwaysPlayLoops(bool alwaysPlayLoops)
     {
@@ -124,7 +126,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoKillOnDelete;
     /// <summary>
-    /// Function: SetAutoKillOnDelete
+    /// Function: SetAutoKillOnDelete<br/>
+    /// Native code at BatmanAK.exe+0xB62250 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoKillOnDelete(bool killOnDelete)
     {
@@ -146,7 +149,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDestroyWhenDead;
     /// <summary>
-    /// Function: SetAutoDestroyWhenDead
+    /// Function: SetAutoDestroyWhenDead<br/>
+    /// Native code at BatmanAK.exe+0xB62130 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoDestroyWhenDead(bool autoDestroy)
     {
@@ -168,7 +172,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDestroyWhenHidden;
     /// <summary>
-    /// Function: SetAutoDestroyWhenHidden
+    /// Function: SetAutoDestroyWhenHidden<br/>
+    /// Native code at BatmanAK.exe+0xB62010 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoDestroyWhenHidden(bool autoDestroy)
     {
@@ -190,7 +195,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNeverAutoDestroy;
     /// <summary>
-    /// Function: SetNeverAutoDestroy
+    /// Function: SetNeverAutoDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB61EF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNeverAutoDestroy(bool neverAutoDestroy)
     {
@@ -212,7 +218,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSecondaryOutput;
     /// <summary>
-    /// Function: DisableSecondaryOutput
+    /// Function: DisableSecondaryOutput<br/>
+    /// Native code at BatmanAK.exe+0xB355A0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableSecondaryOutput()
     {
@@ -233,7 +240,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableSecondaryOutput;
     /// <summary>
-    /// Function: EnableSecondaryOutput
+    /// Function: EnableSecondaryOutput<br/>
+    /// Native code at BatmanAK.exe+0xB35500 in the Steam build
     /// </summary>
     public unsafe virtual void EnableSecondaryOutput(bool setViaAux = default)
     {
@@ -255,7 +263,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkFromListenerEvironments;
     /// <summary>
-    /// Function: UnlinkFromListenerEvironments
+    /// Function: UnlinkFromListenerEvironments<br/>
+    /// Native code at BatmanAK.exe+0xB354C0 in the Steam build
     /// </summary>
     public unsafe virtual void UnlinkFromListenerEvironments()
     {
@@ -276,7 +285,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToListenerEnvironments;
     /// <summary>
-    /// Function: LinkToListenerEnvironments
+    /// Function: LinkToListenerEnvironments<br/>
+    /// Native code at BatmanAK.exe+0xB35480 in the Steam build
     /// </summary>
     public unsafe virtual void LinkToListenerEnvironments()
     {
@@ -297,7 +307,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableObstructionOcclusion;
     /// <summary>
-    /// Function: DisableObstructionOcclusion
+    /// Function: DisableObstructionOcclusion<br/>
+    /// Native code at BatmanAK.exe+0xB35440 in the Steam build
     /// </summary>
     public unsafe virtual void DisableObstructionOcclusion()
     {
@@ -318,7 +329,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstructionOcclusion;
     /// <summary>
-    /// Function: EnableObstructionOcclusion
+    /// Function: EnableObstructionOcclusion<br/>
+    /// Native code at BatmanAK.exe+0xB353A0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableObstructionOcclusion(bool setViaParam = default)
     {
@@ -340,7 +352,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceAudibilityRadius;
     /// <summary>
-    /// Function: GetSourceAudibilityRadius
+    /// Function: GetSourceAudibilityRadius<br/>
+    /// Native code at BatmanAK.exe+0xB35350 in the Steam build
     /// </summary>
     public unsafe virtual float GetSourceAudibilityRadius()
     {
@@ -361,7 +374,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceLinearVelocity;
     /// <summary>
-    /// Function: GetSourceLinearVelocity
+    /// Function: GetSourceLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB35300 in the Steam build
     /// </summary>
     public unsafe virtual float GetSourceLinearVelocity()
     {
@@ -382,7 +396,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceDistanceToListener;
     /// <summary>
-    /// Function: GetSourceDistanceToListener
+    /// Function: GetSourceDistanceToListener<br/>
+    /// Native code at BatmanAK.exe+0xB352B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSourceDistanceToListener()
     {
@@ -403,7 +418,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialSocket;
     /// <summary>
-    /// Function: SetSourceSpatialSocket
+    /// Function: SetSourceSpatialSocket<br/>
+    /// Native code at BatmanAK.exe+0xB61D80 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialSocket(BmSDK.FName SocketName, bool autoUpdateSpatial = default)
     {
@@ -426,7 +442,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialBeam;
     /// <summary>
-    /// Function: SetSourceSpatialBeam
+    /// Function: SetSourceSpatialBeam<br/>
+    /// Native code at BatmanAK.exe+0xB35150 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialBeam(System.Numerics.Vector3 beamStartPoint, System.Numerics.Vector3 beamEndPoint, BmSDK.Rotator Orientation = default, bool autoUpdateSpatial = default)
     {
@@ -451,7 +468,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialRay;
     /// <summary>
-    /// Function: SetSourceSpatialRay
+    /// Function: SetSourceSpatialRay<br/>
+    /// Native code at BatmanAK.exe+0xB35030 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialRay(System.Numerics.Vector3 rayOrigin, BmSDK.Rotator rayOrientation, bool autoUpdateSpatial = default)
     {
@@ -475,7 +493,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueSourceSpatial;
     /// <summary>
-    /// Function: SetDialogueSourceSpatial
+    /// Function: SetDialogueSourceSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB34F50 in the Steam build
     /// </summary>
     public unsafe virtual void SetDialogueSourceSpatial(System.Numerics.Vector3 dlgPosition, BmSDK.Rotator dlgOrientation = default)
     {
@@ -498,7 +517,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatial;
     /// <summary>
-    /// Function: SetSourceSpatial
+    /// Function: SetSourceSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB34E30 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatial(System.Numerics.Vector3 sndPosition, BmSDK.Rotator sndOrientation = default, bool autoUpdateSpatial = default)
     {
@@ -522,7 +542,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSwitch;
     /// <summary>
-    /// Function: SetSourceSwitch
+    /// Function: SetSourceSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB61C10 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSwitch(BmSDK.Engine.AkSwitchName SwitchName, bool storeSwitch = default)
     {
@@ -545,7 +566,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceParameter;
     /// <summary>
-    /// Function: SetSourceParameter
+    /// Function: SetSourceParameter<br/>
+    /// Native code at BatmanAK.exe+0xB619D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue, bool storeParam = default)
     {
@@ -569,7 +591,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLoopingAudioEvent;
     /// <summary>
-    /// Function: HasLoopingAudioEvent
+    /// Function: HasLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB61890 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLoopingAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -591,7 +614,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAllLoopingAudioEvents;
     /// <summary>
-    /// Function: RemoveAllLoopingAudioEvents
+    /// Function: RemoveAllLoopingAudioEvents<br/>
+    /// Native code at BatmanAK.exe+0xB34DF0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveAllLoopingAudioEvents()
     {
@@ -612,7 +636,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveLoopingAudioEvent;
     /// <summary>
-    /// Function: RemoveLoopingAudioEvent
+    /// Function: RemoveLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB61770 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveLoopingAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -634,7 +659,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLoopingAudioEvent;
     /// <summary>
-    /// Function: AddLoopingAudioEvent
+    /// Function: AddLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB61650 in the Steam build
     /// </summary>
     public unsafe virtual void AddLoopingAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -656,7 +682,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DropAllSounds;
     /// <summary>
-    /// Function: DropAllSounds
+    /// Function: DropAllSounds<br/>
+    /// Native code at BatmanAK.exe+0xB34DB0 in the Steam build
     /// </summary>
     public unsafe virtual void DropAllSounds()
     {
@@ -677,7 +704,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAllSounds;
     /// <summary>
-    /// Function: KillAllSounds
+    /// Function: KillAllSounds<br/>
+    /// Native code at BatmanAK.exe+0xB34D70 in the Steam build
     /// </summary>
     public unsafe virtual void KillAllSounds()
     {
@@ -698,7 +726,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudioEvent;
     /// <summary>
-    /// Function: StopAudioEvent
+    /// Function: StopAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe virtual void StopAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -722,7 +751,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAuxEvent;
     /// <summary>
-    /// Function: StartAuxEvent
+    /// Function: StartAuxEvent<br/>
+    /// Native code at BatmanAK.exe+0xB61450 in the Steam build
     /// </summary>
     public unsafe virtual bool StartAuxEvent(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 Position, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
@@ -747,7 +777,8 @@ public partial class RAkAudible : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAudioEvent;
     /// <summary>
-    /// Function: StartAudioEvent
+    /// Function: StartAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB61270 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartAudioEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {

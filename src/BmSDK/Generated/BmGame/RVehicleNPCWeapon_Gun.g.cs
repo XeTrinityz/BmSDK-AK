@@ -258,7 +258,8 @@ public partial class RVehicleNPCWeapon_Gun : BmSDK.BmGame.RVehicleNPCWeapon, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnAnim;
     /// <summary>
-    /// Function: UpdatePawnAnim
+    /// Function: UpdatePawnAnim<br/>
+    /// Native code at BatmanAK.exe+0x52AA20 in the Steam build
     /// </summary>
     public unsafe virtual float UpdatePawnAnim(System.Numerics.Vector3 Target, float DeltaTime, bool IsFiring)
     {

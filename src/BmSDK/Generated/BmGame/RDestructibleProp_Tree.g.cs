@@ -103,7 +103,8 @@ public partial class RDestructibleProp_Tree : BmSDK.BmGame.RDestructibleProp, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromChainGun;
     /// <summary>
-    /// Function: TakeDamageFromChainGun
+    /// Function: TakeDamageFromChainGun<br/>
+    /// Native code at BatmanAK.exe+0x4E6F50 in the Steam build
     /// </summary>
     public unsafe virtual void TakeDamageFromChainGun(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {

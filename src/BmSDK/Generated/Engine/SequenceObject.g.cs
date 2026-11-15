@@ -116,7 +116,8 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldInfo;
     /// <summary>
-    /// Function: GetWorldInfo
+    /// Function: GetWorldInfo<br/>
+    /// Native code at BatmanAK.exe+0xB43D90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo GetWorldInfo()
     {
@@ -137,7 +138,8 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptLog;
     /// <summary>
-    /// Function: ScriptLog
+    /// Function: ScriptLog<br/>
+    /// Native code at BatmanAK.exe+0xB9CAF0 in the Steam build
     /// </summary>
     public unsafe virtual void ScriptLog(BmSDK.FStringArg LogText, bool bWarning = default)
     {

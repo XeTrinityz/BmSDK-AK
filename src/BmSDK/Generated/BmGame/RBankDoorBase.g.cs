@@ -153,7 +153,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetExtraTranslation;
     /// <summary>
-    /// Function: GetExtraTranslation
+    /// Function: GetExtraTranslation<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetExtraTranslation()
     {
@@ -345,7 +346,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -368,7 +370,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46AB40 in the Steam build
     /// </summary>
     public unsafe override void UnRegisterObstacle(bool bInstant = default)
     {
@@ -390,7 +393,8 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe override void RegisterObstacle()
     {

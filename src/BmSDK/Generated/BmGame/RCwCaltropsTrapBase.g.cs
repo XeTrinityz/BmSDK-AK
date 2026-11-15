@@ -177,7 +177,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InformEnemiesOfCaltrops;
     /// <summary>
-    /// Function: InformEnemiesOfCaltrops
+    /// Function: InformEnemiesOfCaltrops<br/>
+    /// Native code at BatmanAK.exe+0x494320 in the Steam build
     /// </summary>
     public unsafe virtual void InformEnemiesOfCaltrops(bool bCheckCylinders = default, bool bDebugDraw = default)
     {
@@ -200,7 +201,8 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCollisionCylinderComponents;
     /// <summary>
-    /// Function: UpdateCollisionCylinderComponents
+    /// Function: UpdateCollisionCylinderComponents<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCollisionCylinderComponents()
     {

@@ -80,7 +80,8 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyLaunchRotation;
     /// <summary>
-    /// Function: ModifyLaunchRotation
+    /// Function: ModifyLaunchRotation<br/>
+    /// Native code at BatmanAK.exe+0x49B5C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator ModifyLaunchRotation(BmSDK.Rotator InRotation)
     {

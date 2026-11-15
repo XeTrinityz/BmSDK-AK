@@ -240,7 +240,8 @@ public partial class RWanderPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentPylon;
     /// <summary>
-    /// Function: SetCurrentPylon
+    /// Function: SetCurrentPylon<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentPylon()
     {

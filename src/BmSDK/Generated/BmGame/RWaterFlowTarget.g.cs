@@ -95,7 +95,8 @@ public partial class RWaterFlowTarget : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFlowVelocity;
     /// <summary>
-    /// Function: CalculateFlowVelocity
+    /// Function: CalculateFlowVelocity<br/>
+    /// Native code at BatmanAK.exe+0x486D20 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateFlowVelocity(System.Numerics.Vector3 TestPosition)
     {

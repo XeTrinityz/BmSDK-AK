@@ -80,7 +80,8 @@ public partial class RFloatingIceRaftMesh : BmSDK.Engine.FracturedStaticMeshActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChunkScale;
     /// <summary>
-    /// Function: SetChunkScale
+    /// Function: SetChunkScale<br/>
+    /// Native code at BatmanAK.exe+0x4E76D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetChunkScale(int SpawnedPartIndex, float NewScale)
     {
@@ -103,7 +104,8 @@ public partial class RFloatingIceRaftMesh : BmSDK.Engine.FracturedStaticMeshActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPartMulti;
     /// <summary>
-    /// Function: SpawnPartMulti
+    /// Function: SpawnPartMulti<br/>
+    /// Native code at BatmanAK.exe+0x551420 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.FracturedStaticMeshPart SpawnPartMulti(BmSDK.TArray<int> ChunkIndices, System.Numerics.Vector3 InitialVel, System.Numerics.Vector3 InitialAngVel, float RelativeScale, bool bExplosion)
     {

@@ -108,7 +108,8 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushDynamicEdges;
     /// <summary>
-    /// Function: FlushDynamicEdges
+    /// Function: FlushDynamicEdges<br/>
+    /// Native code at BatmanAK.exe+0x46F0D0 in the Steam build
     /// </summary>
     public unsafe override void FlushDynamicEdges()
     {
@@ -129,7 +130,8 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RebuildDynamicEdges;
     /// <summary>
-    /// Function: RebuildDynamicEdges
+    /// Function: RebuildDynamicEdges<br/>
+    /// Native code at BatmanAK.exe+0xB3BF00 in the Steam build
     /// </summary>
     public unsafe virtual void RebuildDynamicEdges()
     {

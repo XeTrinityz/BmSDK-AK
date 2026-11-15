@@ -131,7 +131,8 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPackage;
     /// <summary>
-    /// Function: LoadPackage
+    /// Function: LoadPackage<br/>
+    /// Native code at BatmanAK.exe+0x547AE0 in the Steam build
     /// </summary>
     public unsafe virtual void LoadPackage(BmSDK.FStringArg PkgName)
     {

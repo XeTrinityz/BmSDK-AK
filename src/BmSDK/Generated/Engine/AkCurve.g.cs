@@ -80,7 +80,8 @@ public partial class AkCurve : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Map;
     /// <summary>
-    /// Function: Map
+    /// Function: Map<br/>
+    /// Native code at BatmanAK.exe+0xB78E90 in the Steam build
     /// </summary>
     public unsafe virtual float Map(float Input)
     {

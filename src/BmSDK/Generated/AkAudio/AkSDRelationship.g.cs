@@ -75,7 +75,8 @@ public partial class AkSDRelationship : BmSDK.AkAudio.AkSDNode, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Evaluate;
     /// <summary>
-    /// Function: Evaluate
+    /// Function: Evaluate<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe virtual float Evaluate()
     {

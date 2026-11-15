@@ -535,7 +535,8 @@ public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RS
 
     private static BmSDK.Function __fn_GetLevelNameOld;
     /// <summary>
-    /// Function: GetLevelNameOld
+    /// Function: GetLevelNameOld<br/>
+    /// Native code at BatmanAK.exe+0x55FDC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLevelNameOld(BmSDK.Engine.Actor ActorToCheck)
     {
@@ -1137,7 +1138,8 @@ public static class RPickupBaseStatics
 {
     private static BmSDK.Function __fn_GetLevelNameOld;
     /// <summary>
-    /// Function: GetLevelNameOld, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLevelNameOld, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x55FDC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLevelNameOld(this BmSDK.BmGame.RPickupBase self, BmSDK.Engine.Actor ActorToCheck)
     {

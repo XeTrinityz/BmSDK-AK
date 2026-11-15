@@ -85,7 +85,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringHeightAndWidth;
     /// <summary>
-    /// Function: GetStringHeightAndWidth
+    /// Function: GetStringHeightAndWidth<br/>
+    /// Native code at BatmanAK.exe+0xBA7E20 in the Steam build
     /// </summary>
     public unsafe virtual void GetStringHeightAndWidth(out BmSDK.FString InString, out int Height, out int Width)
     {
@@ -113,7 +114,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StrWidth;
     /// <summary>
-    /// Function: StrWidth
+    /// Function: StrWidth<br/>
+    /// Native code at BatmanAK.exe+0xBA7CD0 in the Steam build
     /// </summary>
     public unsafe virtual float StrWidth(BmSDK.FStringArg Text)
     {
@@ -136,7 +138,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxCharHeight;
     /// <summary>
-    /// Function: GetMaxCharHeight
+    /// Function: GetMaxCharHeight<br/>
+    /// Native code at BatmanAK.exe+0xB40860 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxCharHeight()
     {
@@ -157,7 +160,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAuthoredViewportHeight;
     /// <summary>
-    /// Function: GetAuthoredViewportHeight
+    /// Function: GetAuthoredViewportHeight<br/>
+    /// Native code at BatmanAK.exe+0xB8EA60 in the Steam build
     /// </summary>
     public unsafe virtual float GetAuthoredViewportHeight(float ViewportHeight)
     {
@@ -179,7 +183,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScalingFactor;
     /// <summary>
-    /// Function: GetScalingFactor
+    /// Function: GetScalingFactor<br/>
+    /// Native code at BatmanAK.exe+0xB79870 in the Steam build
     /// </summary>
     public unsafe virtual float GetScalingFactor(float HeightTest)
     {
@@ -201,7 +206,8 @@ public partial class Font : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolutionPageIndex;
     /// <summary>
-    /// Function: GetResolutionPageIndex
+    /// Function: GetResolutionPageIndex<br/>
+    /// Native code at BatmanAK.exe+0xB79730 in the Steam build
     /// </summary>
     public unsafe virtual int GetResolutionPageIndex(float HeightTest)
     {

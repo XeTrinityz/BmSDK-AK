@@ -80,7 +80,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlink;
     /// <summary>
-    /// Function: HandleUnlink
+    /// Function: HandleUnlink<br/>
+    /// Native code at BatmanAK.exe+0xFDD710 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleUnlink(BmSDK.Engine.Actor Target)
     {
@@ -102,7 +103,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleLink;
     /// <summary>
-    /// Function: HandleLink
+    /// Function: HandleLink<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleLink(BmSDK.Engine.Actor Target)
     {
@@ -124,7 +126,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyEmitterSpatial;
     /// <summary>
-    /// Function: ApplyEmitterSpatial
+    /// Function: ApplyEmitterSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe override void ApplyEmitterSpatial()
     {
@@ -145,7 +148,8 @@ public partial class AkRattleEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {

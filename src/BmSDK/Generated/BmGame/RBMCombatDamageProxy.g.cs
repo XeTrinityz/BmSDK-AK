@@ -80,7 +80,8 @@ public partial class RBMCombatDamageProxy : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterTransform;
     /// <summary>
-    /// Function: RegisterTransform
+    /// Function: RegisterTransform<br/>
+    /// Native code at BatmanAK.exe+0x479020 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterTransform(System.Numerics.Vector3 NewLoc, BmSDK.Rotator NewRot)
     {
@@ -231,7 +232,8 @@ public partial class RBMCombatDamageProxy : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocation;
     /// <summary>
-    /// Function: UpdateLocation
+    /// Function: UpdateLocation<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLocation()
     {

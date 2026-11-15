@@ -174,7 +174,8 @@ public partial class RBMExitCondition : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSyncExitConditions;
     /// <summary>
-    /// Function: ActivateSyncExitConditions
+    /// Function: ActivateSyncExitConditions<br/>
+    /// Native code at BatmanAK.exe+0x48A240 in the Steam build
     /// </summary>
     public unsafe virtual void ActivateSyncExitConditions()
     {
@@ -195,7 +196,8 @@ public partial class RBMExitCondition : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowExitConditionDebug;
     /// <summary>
-    /// Function: ShouldShowExitConditionDebug
+    /// Function: ShouldShowExitConditionDebug<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldShowExitConditionDebug()
     {

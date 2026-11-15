@@ -163,7 +163,8 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanRespondToAttractor;
     /// <summary>
-    /// Function: CanRespondToAttractor
+    /// Function: CanRespondToAttractor<br/>
+    /// Native code at BatmanAK.exe+0x4A94D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanRespondToAttractor(BmSDK.BmGame.RCrowdAttractor Attractor)
     {

@@ -80,7 +80,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForVectorParameterConflicts;
     /// <summary>
-    /// Function: CheckForVectorParameterConflicts
+    /// Function: CheckForVectorParameterConflicts<br/>
+    /// Native code at BatmanAK.exe+0xB96850 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForVectorParameterConflicts(BmSDK.FName ParameterName)
     {
@@ -102,7 +103,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxDurationFromAllParameters;
     /// <summary>
-    /// Function: GetMaxDurationFromAllParameters
+    /// Function: GetMaxDurationFromAllParameters<br/>
+    /// Native code at BatmanAK.exe+0xB48F30 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxDurationFromAllParameters()
     {
@@ -123,7 +125,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameterValues;
     /// <summary>
-    /// Function: ClearParameterValues
+    /// Function: ClearParameterValues<br/>
+    /// Native code at BatmanAK.exe+0xB48EB0 in the Steam build
     /// </summary>
     public unsafe override void ClearParameterValues()
     {
@@ -144,7 +147,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFontParameterValue;
     /// <summary>
-    /// Function: SetFontParameterValue
+    /// Function: SetFontParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95DE0 in the Steam build
     /// </summary>
     public unsafe override void SetFontParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Font FontValue, int FontPage)
     {
@@ -168,7 +172,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorStartTime;
     /// <summary>
-    /// Function: SetVectorStartTime
+    /// Function: SetVectorStartTime<br/>
+    /// Native code at BatmanAK.exe+0xB96650 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorStartTime(BmSDK.FName ParameterName, float Value)
     {
@@ -191,7 +196,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearColorCurveParameterValue;
     /// <summary>
-    /// Function: SetLinearColorCurveParameterValue
+    /// Function: SetLinearColorCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBBB30 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearColorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveLinearColor Value)
     {
@@ -214,7 +220,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearColorParameterValue;
     /// <summary>
-    /// Function: SetLinearColorParameterValue
+    /// Function: SetLinearColorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB964E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearColorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
@@ -239,7 +246,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorCurveParameterValue;
     /// <summary>
-    /// Function: SetVectorCurveParameterValue
+    /// Function: SetVectorCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBB990 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveVector Value)
     {
@@ -262,7 +270,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameterValue;
     /// <summary>
-    /// Function: SetVectorParameterValue
+    /// Function: SetVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95880 in the Steam build
     /// </summary>
     public unsafe override void SetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
@@ -287,7 +296,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureParameterValue;
     /// <summary>
-    /// Function: SetTextureParameterValue
+    /// Function: SetTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95BF0 in the Steam build
     /// </summary>
     public unsafe override void SetTextureParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Texture Value)
     {
@@ -310,7 +320,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDuration;
     /// <summary>
-    /// Function: SetDuration
+    /// Function: SetDuration<br/>
+    /// Native code at BatmanAK.exe+0x4FC290 in the Steam build
     /// </summary>
     public unsafe virtual void SetDuration(float Value)
     {
@@ -332,7 +343,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarStartTime;
     /// <summary>
-    /// Function: SetScalarStartTime
+    /// Function: SetScalarStartTime<br/>
+    /// Native code at BatmanAK.exe+0xB962E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScalarStartTime(BmSDK.FName ParameterName, float Value)
     {
@@ -355,7 +367,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarCurveParameterValue;
     /// <summary>
-    /// Function: SetScalarCurveParameterValue
+    /// Function: SetScalarCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBB7F0 in the Steam build
     /// </summary>
     public unsafe override void SetScalarCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveFloat Value)
     {
@@ -378,7 +391,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarParameterValue;
     /// <summary>
-    /// Function: SetScalarParameterValue
+    /// Function: SetScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB959F0 in the Steam build
     /// </summary>
     public unsafe override void SetScalarParameterValue(BmSDK.FName ParameterName, float Value)
     {
@@ -401,7 +415,8 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParent;
     /// <summary>
-    /// Function: SetParent
+    /// Function: SetParent<br/>
+    /// Native code at BatmanAK.exe+0xB95750 in the Steam build
     /// </summary>
     public unsafe override void SetParent(BmSDK.Engine.MaterialInterface NewParent)
     {

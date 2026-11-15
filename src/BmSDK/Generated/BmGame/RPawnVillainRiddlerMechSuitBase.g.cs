@@ -541,7 +541,8 @@ public partial class RPawnVillainRiddlerMechSuitBase : BmSDK.BmGame.RPawnVillain
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AimAtActor;
     /// <summary>
-    /// Function: AimAtActor
+    /// Function: AimAtActor<br/>
+    /// Native code at BatmanAK.exe+0x4C1210 in the Steam build
     /// </summary>
     public unsafe override void AimAtActor(BmSDK.Engine.Actor Actor, BmSDK.FName Description = default, BmSDK.FName ActorBoneName = default, BmSDK.BmGame.RAnimUtil_PosePlayer.EAllowTurningToAim AllowTurningToAim = default, float LimitScale = default, BmSDK.BmGame.RPoseConfig.FAimingTransitionTimingOverride TimingOverride = default)
     {

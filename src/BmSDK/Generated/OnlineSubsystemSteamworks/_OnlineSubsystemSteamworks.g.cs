@@ -80,7 +80,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelFetchSteamDLC;
     /// <summary>
-    /// Function: CancelFetchSteamDLC
+    /// Function: CancelFetchSteamDLC<br/>
+    /// Native code at BatmanAK.exe+0x1080320 in the Steam build
     /// </summary>
     public unsafe virtual void CancelFetchSteamDLC(BmSDK.GameObject TargetObject)
     {
@@ -102,7 +103,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FetchSteamDLC;
     /// <summary>
-    /// Function: FetchSteamDLC
+    /// Function: FetchSteamDLC<br/>
+    /// Native code at BatmanAK.exe+0x10801B0 in the Steam build
     /// </summary>
     public unsafe virtual void FetchSteamDLC(BmSDK.GameObject TargetObject, BmSDK.FScriptDelegate cback)
     {
@@ -141,7 +143,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Exit;
     /// <summary>
-    /// Function: Exit
+    /// Function: Exit<br/>
+    /// Native code at BatmanAK.exe+0x1080170 in the Steam build
     /// </summary>
     public unsafe override void Exit()
     {
@@ -162,7 +165,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe override bool Init()
     {
@@ -222,7 +226,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSteamID;
     /// <summary>
-    /// Function: GetSteamID
+    /// Function: GetSteamID<br/>
+    /// Native code at BatmanAK.exe+0x10848F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSteamID()
     {
@@ -273,7 +278,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteSharedFile;
     /// <summary>
-    /// Function: WriteSharedFile
+    /// Function: WriteSharedFile<br/>
+    /// Native code at BatmanAK.exe+0x1088340 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteSharedFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> Contents)
     {
@@ -350,7 +356,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadSharedFile;
     /// <summary>
-    /// Function: ReadSharedFile
+    /// Function: ReadSharedFile<br/>
+    /// Native code at BatmanAK.exe+0x10847A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadSharedFile(BmSDK.FStringArg SharedHandle)
     {
@@ -390,7 +397,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearSharedFile;
     /// <summary>
-    /// Function: ClearSharedFile
+    /// Function: ClearSharedFile<br/>
+    /// Native code at BatmanAK.exe+0x1084650 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearSharedFile(BmSDK.FStringArg SharedHandle)
     {
@@ -413,7 +421,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearSharedFiles;
     /// <summary>
-    /// Function: ClearSharedFiles
+    /// Function: ClearSharedFiles<br/>
+    /// Native code at BatmanAK.exe+0x1080120 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearSharedFiles()
     {
@@ -434,7 +443,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSharedFileContents;
     /// <summary>
-    /// Function: GetSharedFileContents
+    /// Function: GetSharedFileContents<br/>
+    /// Native code at BatmanAK.exe+0x10881B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSharedFileContents(BmSDK.FStringArg SharedHandle, out BmSDK.TArray<byte> FileContents)
     {
@@ -458,7 +468,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteFileToScatch;
     /// <summary>
-    /// Function: WriteFileToScatch
+    /// Function: WriteFileToScatch<br/>
+    /// Native code at BatmanAK.exe+0x1087FE0 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteFileToScatch(byte LocalUserNum, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -483,7 +494,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadFileFromScatch;
     /// <summary>
-    /// Function: ReadFileFromScatch
+    /// Function: ReadFileFromScatch<br/>
+    /// Native code at BatmanAK.exe+0x1087E10 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadFileFromScatch(byte LocalUserNum, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> OutFileContents)
     {
@@ -522,7 +534,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelDownloadFileIO;
     /// <summary>
-    /// Function: CancelDownloadFileIO
+    /// Function: CancelDownloadFileIO<br/>
+    /// Native code at BatmanAK.exe+0x10800E0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelDownloadFileIO()
     {
@@ -590,7 +603,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteDownloadFile;
     /// <summary>
-    /// Function: DeleteDownloadFile
+    /// Function: DeleteDownloadFile<br/>
+    /// Native code at BatmanAK.exe+0x1084500 in the Steam build
     /// </summary>
     public unsafe virtual bool DeleteDownloadFile(BmSDK.FStringArg Filename)
     {
@@ -661,7 +675,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteDownloadFile;
     /// <summary>
-    /// Function: WriteDownloadFile
+    /// Function: WriteDownloadFile<br/>
+    /// Native code at BatmanAK.exe+0x1087C20 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteDownloadFile(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents, out BmSDK.FString FileCRC)
     {
@@ -734,7 +749,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadDownloadFile;
     /// <summary>
-    /// Function: ReadDownloadFile
+    /// Function: ReadDownloadFile<br/>
+    /// Native code at BatmanAK.exe+0x1087A30 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadDownloadFile(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> OutFileContents, out BmSDK.FString OutFileCRC)
     {
@@ -759,7 +775,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDownloadFileSize;
     /// <summary>
-    /// Function: GetDownloadFileSize
+    /// Function: GetDownloadFileSize<br/>
+    /// Native code at BatmanAK.exe+0x1084370 in the Steam build
     /// </summary>
     public unsafe virtual int GetDownloadFileSize(BmSDK.FStringArg Filename, bool KeepHandle = default)
     {
@@ -783,7 +800,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnumerateDownloadFiles;
     /// <summary>
-    /// Function: EnumerateDownloadFiles
+    /// Function: EnumerateDownloadFiles<br/>
+    /// Native code at BatmanAK.exe+0x108AB20 in the Steam build
     /// </summary>
     public unsafe virtual void EnumerateDownloadFiles(out BmSDK.TArray<BmSDK.FString> OutFiles, BmSDK.FStringArg Subfolder)
     {
@@ -807,7 +825,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnumerateDownloadFolders;
     /// <summary>
-    /// Function: EnumerateDownloadFolders
+    /// Function: EnumerateDownloadFolders<br/>
+    /// Native code at BatmanAK.exe+0x108AA20 in the Steam build
     /// </summary>
     public unsafe virtual void EnumerateDownloadFolders(out BmSDK.TArray<BmSDK.FString> OutFolders)
     {
@@ -859,7 +878,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteUserFile;
     /// <summary>
-    /// Function: DeleteUserFile
+    /// Function: DeleteUserFile<br/>
+    /// Native code at BatmanAK.exe+0x1083FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool DeleteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, bool bShouldCloudDelete, bool bShouldLocallyDelete)
     {
@@ -935,7 +955,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ManageLocalBackups;
     /// <summary>
-    /// Function: ManageLocalBackups
+    /// Function: ManageLocalBackups<br/>
+    /// Native code at BatmanAK.exe+0x1083E80 in the Steam build
     /// </summary>
     public unsafe virtual bool ManageLocalBackups(BmSDK.FStringArg Filename)
     {
@@ -958,7 +979,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteUserFileLocal;
     /// <summary>
-    /// Function: WriteUserFileLocal
+    /// Function: WriteUserFileLocal<br/>
+    /// Native code at BatmanAK.exe+0x10877E0 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteUserFileLocal(BmSDK.FStringArg SaveName, out BmSDK.TArray<byte> Contents, bool isSteamBackup)
     {
@@ -983,7 +1005,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteUserFile;
     /// <summary>
-    /// Function: WriteUserFile
+    /// Function: WriteUserFile<br/>
+    /// Native code at BatmanAK.exe+0x10875A0 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -1058,7 +1081,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadUserFile;
     /// <summary>
-    /// Function: ReadUserFile
+    /// Function: ReadUserFile<br/>
+    /// Native code at BatmanAK.exe+0x1083C60 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
@@ -1102,7 +1126,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUserFileList;
     /// <summary>
-    /// Function: GetUserFileList
+    /// Function: GetUserFileList<br/>
+    /// Native code at BatmanAK.exe+0x108C690 in the Steam build
     /// </summary>
     public unsafe virtual void GetUserFileList(BmSDK.FStringArg UserId, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FEmsFile> UserFiles)
     {
@@ -1156,7 +1181,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnumerateUserFiles;
     /// <summary>
-    /// Function: EnumerateUserFiles
+    /// Function: EnumerateUserFiles<br/>
+    /// Native code at BatmanAK.exe+0x1083B20 in the Steam build
     /// </summary>
     public unsafe virtual void EnumerateUserFiles(BmSDK.FStringArg UserId)
     {
@@ -1196,7 +1222,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearFile;
     /// <summary>
-    /// Function: ClearFile
+    /// Function: ClearFile<br/>
+    /// Native code at BatmanAK.exe+0x1083900 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
@@ -1221,7 +1248,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearFiles;
     /// <summary>
-    /// Function: ClearFiles
+    /// Function: ClearFiles<br/>
+    /// Native code at BatmanAK.exe+0x10837B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearFiles(BmSDK.FStringArg UserId)
     {
@@ -1244,7 +1272,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFileContents;
     /// <summary>
-    /// Function: GetFileContents
+    /// Function: GetFileContents<br/>
+    /// Native code at BatmanAK.exe+0x1087360 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFileContents(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -1270,7 +1299,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyVOIPPlaybackFinished;
     /// <summary>
-    /// Function: NotifyVOIPPlaybackFinished
+    /// Function: NotifyVOIPPlaybackFinished<br/>
+    /// Native code at BatmanAK.exe+0x107FFB0 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyVOIPPlaybackFinished(BmSDK.Engine.AudioComponent VOIPAudioComponent)
     {
@@ -1338,7 +1368,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpeechRecognitionObject;
     /// <summary>
-    /// Function: SetSpeechRecognitionObject
+    /// Function: SetSpeechRecognitionObject<br/>
+    /// Native code at BatmanAK.exe+0x107FE60 in the Steam build
     /// </summary>
     public unsafe virtual bool SetSpeechRecognitionObject(byte LocalUserNum, BmSDK.Engine.SpeechRecognition SpeechRecogObj)
     {
@@ -1361,7 +1392,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectVocabulary;
     /// <summary>
-    /// Function: SelectVocabulary
+    /// Function: SelectVocabulary<br/>
+    /// Native code at BatmanAK.exe+0x107FD20 in the Steam build
     /// </summary>
     public unsafe virtual bool SelectVocabulary(byte LocalUserNum, int VocabularyId)
     {
@@ -1430,7 +1462,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRecognitionResults;
     /// <summary>
-    /// Function: GetRecognitionResults
+    /// Function: GetRecognitionResults<br/>
+    /// Native code at BatmanAK.exe+0x108C560 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRecognitionResults(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FSpeechRecognizedWord> Words)
     {
@@ -1453,7 +1486,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechRecognition;
     /// <summary>
-    /// Function: StopSpeechRecognition
+    /// Function: StopSpeechRecognition<br/>
+    /// Native code at BatmanAK.exe+0x107FC90 in the Steam build
     /// </summary>
     public unsafe virtual bool StopSpeechRecognition(byte LocalUserNum)
     {
@@ -1475,7 +1509,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechRecognition;
     /// <summary>
-    /// Function: StartSpeechRecognition
+    /// Function: StartSpeechRecognition<br/>
+    /// Native code at BatmanAK.exe+0x107FC00 in the Steam build
     /// </summary>
     public unsafe virtual bool StartSpeechRecognition(byte LocalUserNum)
     {
@@ -1497,7 +1532,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopNetworkedVoice;
     /// <summary>
-    /// Function: StopNetworkedVoice
+    /// Function: StopNetworkedVoice<br/>
+    /// Native code at BatmanAK.exe+0x107FB80 in the Steam build
     /// </summary>
     public unsafe virtual void StopNetworkedVoice(byte LocalUserNum)
     {
@@ -1519,7 +1555,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNetworkedVoice;
     /// <summary>
-    /// Function: StartNetworkedVoice
+    /// Function: StartNetworkedVoice<br/>
+    /// Native code at BatmanAK.exe+0x107FB00 in the Steam build
     /// </summary>
     public unsafe virtual void StartNetworkedVoice(byte LocalUserNum)
     {
@@ -1587,7 +1624,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnmuteRemoteTalker;
     /// <summary>
-    /// Function: UnmuteRemoteTalker
+    /// Function: UnmuteRemoteTalker<br/>
+    /// Native code at BatmanAK.exe+0x107FA10 in the Steam build
     /// </summary>
     public unsafe virtual bool UnmuteRemoteTalker(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bIsSystemWide = default)
     {
@@ -1611,7 +1649,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MuteRemoteTalker;
     /// <summary>
-    /// Function: MuteRemoteTalker
+    /// Function: MuteRemoteTalker<br/>
+    /// Native code at BatmanAK.exe+0x107F920 in the Steam build
     /// </summary>
     public unsafe virtual bool MuteRemoteTalker(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bIsSystemWide = default)
     {
@@ -1635,7 +1674,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRemoteTalkerPriority;
     /// <summary>
-    /// Function: SetRemoteTalkerPriority
+    /// Function: SetRemoteTalkerPriority<br/>
+    /// Native code at BatmanAK.exe+0x107F7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRemoteTalkerPriority(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int Priority)
     {
@@ -1659,7 +1699,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHeadsetPresent;
     /// <summary>
-    /// Function: IsHeadsetPresent
+    /// Function: IsHeadsetPresent<br/>
+    /// Native code at BatmanAK.exe+0x107F720 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHeadsetPresent(byte LocalUserNum)
     {
@@ -1681,7 +1722,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRemotePlayerTalking;
     /// <summary>
-    /// Function: IsRemotePlayerTalking
+    /// Function: IsRemotePlayerTalking<br/>
+    /// Native code at BatmanAK.exe+0x107F690 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRemotePlayerTalking(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -1703,7 +1745,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocalPlayerTalking;
     /// <summary>
-    /// Function: IsLocalPlayerTalking
+    /// Function: IsLocalPlayerTalking<br/>
+    /// Native code at BatmanAK.exe+0x107F600 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocalPlayerTalking(byte LocalUserNum)
     {
@@ -1725,7 +1768,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterRemoteTalker;
     /// <summary>
-    /// Function: UnregisterRemoteTalker
+    /// Function: UnregisterRemoteTalker<br/>
+    /// Native code at BatmanAK.exe+0x107F570 in the Steam build
     /// </summary>
     public unsafe virtual bool UnregisterRemoteTalker(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -1747,7 +1791,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterRemoteTalker;
     /// <summary>
-    /// Function: RegisterRemoteTalker
+    /// Function: RegisterRemoteTalker<br/>
+    /// Native code at BatmanAK.exe+0x107F4E0 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterRemoteTalker(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -1769,7 +1814,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterLocalTalker;
     /// <summary>
-    /// Function: UnregisterLocalTalker
+    /// Function: UnregisterLocalTalker<br/>
+    /// Native code at BatmanAK.exe+0x107F450 in the Steam build
     /// </summary>
     public unsafe virtual bool UnregisterLocalTalker(byte LocalUserNum)
     {
@@ -1791,7 +1837,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterLocalTalker;
     /// <summary>
-    /// Function: RegisterLocalTalker
+    /// Function: RegisterLocalTalker<br/>
+    /// Native code at BatmanAK.exe+0x107F3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterLocalTalker(byte LocalUserNum)
     {
@@ -1920,7 +1967,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleFileContents;
     /// <summary>
-    /// Function: GetTitleFileContents
+    /// Function: GetTitleFileContents<br/>
+    /// Native code at BatmanAK.exe+0x10871D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetTitleFileContents(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -1974,7 +2022,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadTitleFile;
     /// <summary>
-    /// Function: ReadTitleFile
+    /// Function: ReadTitleFile<br/>
+    /// Native code at BatmanAK.exe+0x1083660 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadTitleFile(BmSDK.FStringArg FileToRead)
     {
@@ -2535,7 +2584,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUserLanguage;
     /// <summary>
-    /// Function: GetUserLanguage
+    /// Function: GetUserLanguage<br/>
+    /// Native code at BatmanAK.exe+0x10835E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetUserLanguage()
     {
@@ -2556,7 +2606,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUserCountryCode;
     /// <summary>
-    /// Function: GetUserCountryCode
+    /// Function: GetUserCountryCode<br/>
+    /// Native code at BatmanAK.exe+0x1083560 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetUserCountryCode()
     {
@@ -2608,7 +2659,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BrowseInGameStoreItem;
     /// <summary>
-    /// Function: BrowseInGameStoreItem
+    /// Function: BrowseInGameStoreItem<br/>
+    /// Native code at BatmanAK.exe+0x1083410 in the Steam build
     /// </summary>
     public unsafe virtual void BrowseInGameStoreItem(byte LocalUserNum, BmSDK.FStringArg ItemId)
     {
@@ -2632,7 +2684,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PurchaseInGameStoreItem;
     /// <summary>
-    /// Function: PurchaseInGameStoreItem
+    /// Function: PurchaseInGameStoreItem<br/>
+    /// Native code at BatmanAK.exe+0x10832C0 in the Steam build
     /// </summary>
     public unsafe virtual void PurchaseInGameStoreItem(byte LocalUserNum, BmSDK.FStringArg ItemId)
     {
@@ -2703,7 +2756,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInGameStoreContentList;
     /// <summary>
-    /// Function: GetInGameStoreContentList
+    /// Function: GetInGameStoreContentList<br/>
+    /// Native code at BatmanAK.exe+0x1090E80 in the Steam build
     /// </summary>
     public unsafe virtual void GetInGameStoreContentList(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineStoreContent> ContentList)
     {
@@ -2726,7 +2780,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadInGameStoreContentList;
     /// <summary>
-    /// Function: ReadInGameStoreContentList
+    /// Function: ReadInGameStoreContentList<br/>
+    /// Native code at BatmanAK.exe+0x107F330 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadInGameStoreContentList(byte LocalUserNum)
     {
@@ -2748,7 +2803,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearInGameStoreContentList;
     /// <summary>
-    /// Function: ClearInGameStoreContentList
+    /// Function: ClearInGameStoreContentList<br/>
+    /// Native code at BatmanAK.exe+0x107F2B0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearInGameStoreContentList(byte LocalUserNum)
     {
@@ -2878,7 +2934,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearContentList;
     /// <summary>
-    /// Function: ClearContentList
+    /// Function: ClearContentList<br/>
+    /// Native code at BatmanAK.exe+0x107F200 in the Steam build
     /// </summary>
     public unsafe virtual void ClearContentList(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType)
     {
@@ -2901,7 +2958,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadContentList;
     /// <summary>
-    /// Function: ReadContentList
+    /// Function: ReadContentList<br/>
+    /// Native code at BatmanAK.exe+0x107F110 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadContentList(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.EOnlineContentType ContentType, int DeviceID = default)
     {
@@ -2925,7 +2983,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasContentUpdated;
     /// <summary>
-    /// Function: HasContentUpdated
+    /// Function: HasContentUpdated<br/>
+    /// Native code at BatmanAK.exe+0x107F0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasContentUpdated()
     {
@@ -3063,7 +3122,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterStatGuid;
     /// <summary>
-    /// Function: RegisterStatGuid
+    /// Function: RegisterStatGuid<br/>
+    /// Native code at BatmanAK.exe+0x10831C0 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterStatGuid(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, out BmSDK.FString ClientStatGuid)
     {
@@ -3086,7 +3146,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClientStatGuid;
     /// <summary>
-    /// Function: GetClientStatGuid
+    /// Function: GetClientStatGuid<br/>
+    /// Native code at BatmanAK.exe+0x1083140 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetClientStatGuid()
     {
@@ -3152,7 +3213,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterHostStatGuid;
     /// <summary>
-    /// Function: RegisterHostStatGuid
+    /// Function: RegisterHostStatGuid<br/>
+    /// Native code at BatmanAK.exe+0x1083060 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterHostStatGuid(out BmSDK.FString HostStatGuid)
     {
@@ -3174,7 +3236,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHostStatGuid;
     /// <summary>
-    /// Function: GetHostStatGuid
+    /// Function: GetHostStatGuid<br/>
+    /// Native code at BatmanAK.exe+0x1082FE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetHostStatGuid()
     {
@@ -3195,7 +3258,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteOnlinePlayerScores;
     /// <summary>
-    /// Function: WriteOnlinePlayerScores
+    /// Function: WriteOnlinePlayerScores<br/>
+    /// Native code at BatmanAK.exe+0x1089F90 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteOnlinePlayerScores(BmSDK.FName SessionName, int LeaderboardId, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlinePlayerScore> PlayerScores)
     {
@@ -3219,7 +3283,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateLeaderboard;
     /// <summary>
-    /// Function: CreateLeaderboard
+    /// Function: CreateLeaderboard<br/>
+    /// Native code at BatmanAK.exe+0x1082E60 in the Steam build
     /// </summary>
     public unsafe virtual bool CreateLeaderboard(BmSDK.FStringArg LeaderboardName, BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.ELeaderboardSortType SortType, BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.ELeaderboardFormat DisplayFormat)
     {
@@ -3244,7 +3309,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetStats;
     /// <summary>
-    /// Function: ResetStats
+    /// Function: ResetStats<br/>
+    /// Native code at BatmanAK.exe+0x107EF80 in the Steam build
     /// </summary>
     public unsafe virtual bool ResetStats(bool bResetAchievements)
     {
@@ -3312,7 +3378,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushOnlineStats;
     /// <summary>
-    /// Function: FlushOnlineStats
+    /// Function: FlushOnlineStats<br/>
+    /// Native code at BatmanAK.exe+0x107EE40 in the Steam build
     /// </summary>
     public unsafe virtual bool FlushOnlineStats(BmSDK.FName SessionName)
     {
@@ -3334,7 +3401,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteOnlineStats;
     /// <summary>
-    /// Function: WriteOnlineStats
+    /// Function: WriteOnlineStats<br/>
+    /// Native code at BatmanAK.exe+0x107EC20 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteOnlineStats(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Player, BmSDK.Engine.OnlineStatsWrite StatsWrite)
     {
@@ -3358,7 +3426,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeStats;
     /// <summary>
-    /// Function: FreeStats
+    /// Function: FreeStats<br/>
+    /// Native code at BatmanAK.exe+0x107EAF0 in the Steam build
     /// </summary>
     public unsafe virtual void FreeStats(BmSDK.Engine.OnlineStatsRead StatsRead)
     {
@@ -3425,7 +3494,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadOnlineStatsByRankAroundPlayer;
     /// <summary>
-    /// Function: ReadOnlineStatsByRankAroundPlayer
+    /// Function: ReadOnlineStatsByRankAroundPlayer<br/>
+    /// Native code at BatmanAK.exe+0x107E970 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadOnlineStatsByRankAroundPlayer(byte LocalUserNum, BmSDK.Engine.OnlineStatsRead StatsRead, int NumRows = default)
     {
@@ -3449,7 +3519,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadOnlineStatsByRank;
     /// <summary>
-    /// Function: ReadOnlineStatsByRank
+    /// Function: ReadOnlineStatsByRank<br/>
+    /// Native code at BatmanAK.exe+0x107E7D0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadOnlineStatsByRank(BmSDK.Engine.OnlineStatsRead StatsRead, int StartIndex = default, int NumToRead = default)
     {
@@ -3473,7 +3544,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadOnlineStatsForFriends;
     /// <summary>
-    /// Function: ReadOnlineStatsForFriends
+    /// Function: ReadOnlineStatsForFriends<br/>
+    /// Native code at BatmanAK.exe+0x107E680 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadOnlineStatsForFriends(byte LocalUserNum, BmSDK.Engine.OnlineStatsRead StatsRead)
     {
@@ -3496,7 +3568,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadOnlineStats;
     /// <summary>
-    /// Function: ReadOnlineStats
+    /// Function: ReadOnlineStats<br/>
+    /// Native code at BatmanAK.exe+0x1089E00 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadOnlineStats(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players, BmSDK.Engine.OnlineStatsRead StatsRead)
     {
@@ -3538,7 +3611,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DropOnlineStatsRead;
     /// <summary>
-    /// Function: DropOnlineStatsRead
+    /// Function: DropOnlineStatsRead<br/>
+    /// Native code at BatmanAK.exe+0x107E640 in the Steam build
     /// </summary>
     public unsafe virtual void DropOnlineStatsRead()
     {
@@ -3712,7 +3786,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateOnlineAccount;
     /// <summary>
-    /// Function: CreateOnlineAccount
+    /// Function: CreateOnlineAccount<br/>
+    /// Native code at BatmanAK.exe+0x1082B30 in the Steam build
     /// </summary>
     public unsafe virtual bool CreateOnlineAccount(BmSDK.FStringArg UserName, BmSDK.FStringArg Password, BmSDK.FStringArg EmailAddress, BmSDK.FStringArg ProductKey = default)
     {
@@ -3741,7 +3816,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsExternalRemoteDevice;
     /// <summary>
-    /// Function: IsExternalRemoteDevice
+    /// Function: IsExternalRemoteDevice<br/>
+    /// Native code at BatmanAK.exe+0x107E5F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsExternalRemoteDevice()
     {
@@ -3762,7 +3838,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenWebBrowser;
     /// <summary>
-    /// Function: OpenWebBrowser
+    /// Function: OpenWebBrowser<br/>
+    /// Native code at BatmanAK.exe+0x10829F0 in the Steam build
     /// </summary>
     public unsafe virtual void OpenWebBrowser(BmSDK.FStringArg sURL)
     {
@@ -3815,7 +3892,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StreamingInstall_Poll;
     /// <summary>
-    /// Function: StreamingInstall_Poll
+    /// Function: StreamingInstall_Poll<br/>
+    /// Native code at BatmanAK.exe+0x107E500 in the Steam build
     /// </summary>
     public unsafe virtual int StreamingInstall_Poll(out int Percent, out int Time)
     {
@@ -3842,7 +3920,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StreamingInstall_CheckChunk;
     /// <summary>
-    /// Function: StreamingInstall_CheckChunk
+    /// Function: StreamingInstall_CheckChunk<br/>
+    /// Native code at BatmanAK.exe+0x107E3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool StreamingInstall_CheckChunk(int Chunk)
     {
@@ -3864,7 +3943,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StreamingInstall_IsFinished;
     /// <summary>
-    /// Function: StreamingInstall_IsFinished
+    /// Function: StreamingInstall_IsFinished<br/>
+    /// Native code at BatmanAK.exe+0x46FE00 in the Steam build
     /// </summary>
     public unsafe virtual bool StreamingInstall_IsFinished()
     {
@@ -4196,7 +4276,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadOnlineAvatar;
     /// <summary>
-    /// Function: ReadOnlineAvatar
+    /// Function: ReadOnlineAvatar<br/>
+    /// Native code at BatmanAK.exe+0x107E230 in the Steam build
     /// </summary>
     public unsafe virtual void ReadOnlineAvatar(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerNetId, int Size, BmSDK.FScriptDelegate ReadOnlineAvatarCompleteDelegate)
     {
@@ -4388,7 +4469,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateInfocastSystem;
     /// <summary>
-    /// Function: CreateInfocastSystem
+    /// Function: CreateInfocastSystem<br/>
+    /// Native code at BatmanAK.exe+0x46FD70 in the Steam build
     /// </summary>
     public unsafe virtual void CreateInfocastSystem()
     {
@@ -4455,7 +4537,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowCustomPlayersUI;
     /// <summary>
-    /// Function: ShowCustomPlayersUI
+    /// Function: ShowCustomPlayersUI<br/>
+    /// Native code at BatmanAK.exe+0x1089BA0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowCustomPlayersUI(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players, BmSDK.FStringArg Title, BmSDK.FStringArg Description)
     {
@@ -4482,7 +4565,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowPlayersUI;
     /// <summary>
-    /// Function: ShowPlayersUI
+    /// Function: ShowPlayersUI<br/>
+    /// Native code at BatmanAK.exe+0x107E1A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowPlayersUI(byte LocalUserNum)
     {
@@ -4518,7 +4602,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFriendsInviteUI;
     /// <summary>
-    /// Function: ShowFriendsInviteUI
+    /// Function: ShowFriendsInviteUI<br/>
+    /// Native code at BatmanAK.exe+0x107E0E0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowFriendsInviteUI(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -4587,7 +4672,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockGamerPicture;
     /// <summary>
-    /// Function: UnlockGamerPicture
+    /// Function: UnlockGamerPicture<br/>
+    /// Native code at BatmanAK.exe+0x107DFA0 in the Steam build
     /// </summary>
     public unsafe virtual bool UnlockGamerPicture(byte LocalUserNum, int PictureId)
     {
@@ -4610,7 +4696,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDeviceValid;
     /// <summary>
-    /// Function: IsDeviceValid
+    /// Function: IsDeviceValid<br/>
+    /// Native code at BatmanAK.exe+0x107DE30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDeviceValid(int DeviceID, int SizeNeeded = default)
     {
@@ -4633,7 +4720,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDeviceSelectionResults;
     /// <summary>
-    /// Function: GetDeviceSelectionResults
+    /// Function: GetDeviceSelectionResults<br/>
+    /// Native code at BatmanAK.exe+0x10828F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDeviceSelectionResults(byte LocalUserNum, out BmSDK.FString DeviceName)
     {
@@ -4703,7 +4791,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDeviceSelectionUI;
     /// <summary>
-    /// Function: ShowDeviceSelectionUI
+    /// Function: ShowDeviceSelectionUI<br/>
+    /// Native code at BatmanAK.exe+0x107DC50 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowDeviceSelectionUI(byte LocalUserNum, int SizeNeeded, bool bForceShowUI = default, bool bManageStorage = default)
     {
@@ -4728,7 +4817,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowMembershipMarketplaceUI;
     /// <summary>
-    /// Function: ShowMembershipMarketplaceUI
+    /// Function: ShowMembershipMarketplaceUI<br/>
+    /// Native code at BatmanAK.exe+0x107DBC0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowMembershipMarketplaceUI(byte LocalUserNum)
     {
@@ -4750,7 +4840,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowContentMarketplaceUI;
     /// <summary>
-    /// Function: ShowContentMarketplaceUI
+    /// Function: ShowContentMarketplaceUI<br/>
+    /// Native code at BatmanAK.exe+0x107DAD0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowContentMarketplaceUI(byte LocalUserNum, int CategoryMask = default, int OfferId = default)
     {
@@ -4774,7 +4865,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowInviteUI;
     /// <summary>
-    /// Function: ShowInviteUI
+    /// Function: ShowInviteUI<br/>
+    /// Native code at BatmanAK.exe+0x1082800 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowInviteUI(byte LocalUserNum, BmSDK.FStringArg InviteText = default)
     {
@@ -4798,7 +4890,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowAchievementsUI;
     /// <summary>
-    /// Function: ShowAchievementsUI
+    /// Function: ShowAchievementsUI<br/>
+    /// Native code at BatmanAK.exe+0x107DA40 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowAchievementsUI(byte LocalUserNum)
     {
@@ -4820,7 +4913,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowMessagesUI;
     /// <summary>
-    /// Function: ShowMessagesUI
+    /// Function: ShowMessagesUI<br/>
+    /// Native code at BatmanAK.exe+0x107D9B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowMessagesUI(byte LocalUserNum)
     {
@@ -4876,7 +4970,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowGamerCardUI;
     /// <summary>
-    /// Function: ShowGamerCardUI
+    /// Function: ShowGamerCardUI<br/>
+    /// Native code at BatmanAK.exe+0x10826F0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowGamerCardUI(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, BmSDK.FStringArg NickName = default)
     {
@@ -4901,7 +4996,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFeedbackUI;
     /// <summary>
-    /// Function: ShowFeedbackUI
+    /// Function: ShowFeedbackUI<br/>
+    /// Native code at BatmanAK.exe+0x107D8F0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowFeedbackUI(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -4985,7 +5081,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Function __fn_WriteUserFileInternal;
     /// <summary>
-    /// Function: WriteUserFileInternal
+    /// Function: WriteUserFileInternal<br/>
+    /// Native code at BatmanAK.exe+0x1086F90 in the Steam build
     /// </summary>
     public unsafe bool WriteUserFileInternal(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -5026,7 +5123,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAchievements;
     /// <summary>
-    /// Function: GetAchievements
+    /// Function: GetAchievements<br/>
+    /// Native code at BatmanAK.exe+0x108C430 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetAchievements(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FAchievementDetails> Achievements, int TitleId = default)
     {
@@ -5097,7 +5195,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadAchievements;
     /// <summary>
-    /// Function: ReadAchievements
+    /// Function: ReadAchievements<br/>
+    /// Native code at BatmanAK.exe+0x107D7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadAchievements(byte LocalUserNum, int TitleId = default, bool bShouldReadText = default, bool bShouldReadImages = default)
     {
@@ -5169,7 +5268,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockAchievement;
     /// <summary>
-    /// Function: UnlockAchievement
+    /// Function: UnlockAchievement<br/>
+    /// Native code at BatmanAK.exe+0x107D630 in the Steam build
     /// </summary>
     public unsafe virtual bool UnlockAchievement(byte LocalUserNum, int AchievementId, float PercentComplete = default)
     {
@@ -5193,7 +5293,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayAchievementProgress;
     /// <summary>
-    /// Function: DisplayAchievementProgress
+    /// Function: DisplayAchievementProgress<br/>
+    /// Native code at BatmanAK.exe+0x107D390 in the Steam build
     /// </summary>
     public unsafe virtual bool DisplayAchievementProgress(int AchievementId, int ProgressCount, int MaxProgress)
     {
@@ -5346,7 +5447,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinFriendGame;
     /// <summary>
-    /// Function: JoinFriendGame
+    /// Function: JoinFriendGame<br/>
+    /// Native code at BatmanAK.exe+0x107D2D0 in the Steam build
     /// </summary>
     public unsafe virtual bool JoinFriendGame(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend)
     {
@@ -5418,7 +5520,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendGameInviteToFriends;
     /// <summary>
-    /// Function: SendGameInviteToFriends
+    /// Function: SendGameInviteToFriends<br/>
+    /// Native code at BatmanAK.exe+0x1089A60 in the Steam build
     /// </summary>
     public unsafe virtual bool SendGameInviteToFriends(byte LocalUserNum, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Friends, BmSDK.FStringArg Text = default)
     {
@@ -5443,7 +5546,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendGameInviteToFriend;
     /// <summary>
-    /// Function: SendGameInviteToFriend
+    /// Function: SendGameInviteToFriend<br/>
+    /// Native code at BatmanAK.exe+0x10825E0 in the Steam build
     /// </summary>
     public unsafe virtual bool SendGameInviteToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FStringArg Text = default)
     {
@@ -5468,7 +5572,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendMessageToFriend;
     /// <summary>
-    /// Function: SendMessageToFriend
+    /// Function: SendMessageToFriend<br/>
+    /// Native code at BatmanAK.exe+0x1082470 in the Steam build
     /// </summary>
     public unsafe virtual bool SendMessageToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FStringArg Message)
     {
@@ -5545,7 +5650,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFriend;
     /// <summary>
-    /// Function: RemoveFriend
+    /// Function: RemoveFriend<br/>
+    /// Native code at BatmanAK.exe+0x107D210 in the Steam build
     /// </summary>
     public unsafe virtual bool RemoveFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId FormerFriend)
     {
@@ -5568,7 +5674,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DenyFriendInvite;
     /// <summary>
-    /// Function: DenyFriendInvite
+    /// Function: DenyFriendInvite<br/>
+    /// Native code at BatmanAK.exe+0x107D150 in the Steam build
     /// </summary>
     public unsafe virtual bool DenyFriendInvite(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId RequestingPlayer)
     {
@@ -5591,7 +5698,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AcceptFriendInvite;
     /// <summary>
-    /// Function: AcceptFriendInvite
+    /// Function: AcceptFriendInvite<br/>
+    /// Native code at BatmanAK.exe+0x107D090 in the Steam build
     /// </summary>
     public unsafe virtual bool AcceptFriendInvite(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId RequestingPlayer)
     {
@@ -5661,7 +5769,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFriendByName;
     /// <summary>
-    /// Function: AddFriendByName
+    /// Function: AddFriendByName<br/>
+    /// Native code at BatmanAK.exe+0x10822B0 in the Steam build
     /// </summary>
     public unsafe virtual bool AddFriendByName(byte LocalUserNum, BmSDK.FStringArg FriendName, BmSDK.FStringArg Message = default)
     {
@@ -5687,7 +5796,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFriend;
     /// <summary>
-    /// Function: AddFriend
+    /// Function: AddFriend<br/>
+    /// Native code at BatmanAK.exe+0x10821A0 in the Steam build
     /// </summary>
     public unsafe virtual bool AddFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId NewFriend, BmSDK.FStringArg Message = default)
     {
@@ -5774,7 +5884,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowKeyboardUI;
     /// <summary>
-    /// Function: ShowKeyboardUI
+    /// Function: ShowKeyboardUI<br/>
+    /// Native code at BatmanAK.exe+0x1081EA0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowKeyboardUI(byte LocalUserNum, BmSDK.FStringArg TitleText, BmSDK.FStringArg DescriptionText, bool bIsPassword = default, bool bShouldValidate = default, BmSDK.FStringArg DefaultText = default, int MaxResultLength = default)
     {
@@ -5805,7 +5916,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlineStatus;
     /// <summary>
-    /// Function: SetOnlineStatus
+    /// Function: SetOnlineStatus<br/>
+    /// Native code at BatmanAK.exe+0x1086D60 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlineStatus(byte LocalUserNum, int StatusId, out BmSDK.TArray<BmSDK.Engine.Settings.FLocalizedStringSetting> LocalizedStringSettings, out BmSDK.TArray<BmSDK.Engine.Settings.FSettingsProperty> Properties)
     {
@@ -5830,7 +5942,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFriendsList;
     /// <summary>
-    /// Function: GetFriendsList
+    /// Function: GetFriendsList<br/>
+    /// Native code at BatmanAK.exe+0x108C270 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetFriendsList(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineFriend> Friends, int Count = default, int StartingAt = default)
     {
@@ -5902,7 +6015,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadFriendsList;
     /// <summary>
-    /// Function: ReadFriendsList
+    /// Function: ReadFriendsList<br/>
+    /// Native code at BatmanAK.exe+0x107CFA0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadFriendsList(byte LocalUserNum, int Count = default, int StartingAt = default)
     {
@@ -6136,7 +6250,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFriendJoinURL;
     /// <summary>
-    /// Function: GetFriendJoinURL
+    /// Function: GetFriendJoinURL<br/>
+    /// Native code at BatmanAK.exe+0x1081D30 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFriendJoinURL(BmSDK.Engine.OnlineSubsystem.FUniqueNetId FriendUID, out BmSDK.FString ServerURL, out BmSDK.FString ServerUID)
     {
@@ -6160,7 +6275,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCommandlineJoinURL;
     /// <summary>
-    /// Function: GetCommandlineJoinURL
+    /// Function: GetCommandlineJoinURL<br/>
+    /// Native code at BatmanAK.exe+0x1081B20 in the Steam build
     /// </summary>
     public unsafe virtual bool GetCommandlineJoinURL(bool bMarkAsJoined, out BmSDK.FString ServerURL, out BmSDK.FString ServerUID)
     {
@@ -6184,7 +6300,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Int64ToUniqueNetId;
     /// <summary>
-    /// Function: Int64ToUniqueNetId
+    /// Function: Int64ToUniqueNetId<br/>
+    /// Native code at BatmanAK.exe+0x10819B0 in the Steam build
     /// </summary>
     public unsafe virtual bool Int64ToUniqueNetId(BmSDK.FStringArg UIDString, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId OutUID)
     {
@@ -6210,7 +6327,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UniqueNetIdToInt64;
     /// <summary>
-    /// Function: UniqueNetIdToInt64
+    /// Function: UniqueNetIdToInt64<br/>
+    /// Native code at BatmanAK.exe+0x10818D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString UniqueNetIdToInt64(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId Uid)
     {
@@ -6234,7 +6352,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowProfileUI;
     /// <summary>
-    /// Function: ShowProfileUI
+    /// Function: ShowProfileUI<br/>
+    /// Native code at BatmanAK.exe+0x10817A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowProfileUI(byte LocalUserNum, BmSDK.FStringArg SubURL = default, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerUID = default)
     {
@@ -6259,7 +6378,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UniqueNetIdToPlayerName;
     /// <summary>
-    /// Function: UniqueNetIdToPlayerName
+    /// Function: UniqueNetIdToPlayerName<br/>
+    /// Native code at BatmanAK.exe+0x10816C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString UniqueNetIdToPlayerName(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId Uid)
     {
@@ -6283,7 +6403,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSteamClanData;
     /// <summary>
-    /// Function: GetSteamClanData
+    /// Function: GetSteamClanData<br/>
+    /// Native code at BatmanAK.exe+0x108C150 in the Steam build
     /// </summary>
     public unsafe virtual void GetSteamClanData(out BmSDK.TArray<BmSDK.OnlineSubsystemSteamworks._OnlineSubsystemSteamworks.FSteamPlayerClanData> Results)
     {
@@ -6350,7 +6471,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberOfCurrentPlayers;
     /// <summary>
-    /// Function: GetNumberOfCurrentPlayers
+    /// Function: GetNumberOfCurrentPlayers<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNumberOfCurrentPlayers()
     {
@@ -6419,7 +6541,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteProfileSettings;
     /// <summary>
-    /// Function: WriteProfileSettings
+    /// Function: WriteProfileSettings<br/>
+    /// Native code at BatmanAK.exe+0x107CE50 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteProfileSettings(byte LocalUserNum, BmSDK.Engine.OnlineProfileSettings ProfileSettings)
     {
@@ -6505,7 +6628,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadProfileSettings;
     /// <summary>
-    /// Function: ReadProfileSettings
+    /// Function: ReadProfileSettings<br/>
+    /// Native code at BatmanAK.exe+0x107CD00 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadProfileSettings(byte LocalUserNum, BmSDK.Engine.OnlineProfileSettings ProfileSettings)
     {
@@ -6698,7 +6822,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFriendsUI;
     /// <summary>
-    /// Function: ShowFriendsUI
+    /// Function: ShowFriendsUI<br/>
+    /// Native code at BatmanAK.exe+0x107CC70 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowFriendsUI(byte LocalUserNum)
     {
@@ -6736,7 +6861,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAnyFriends;
     /// <summary>
-    /// Function: AreAnyFriends
+    /// Function: AreAnyFriends<br/>
+    /// Native code at BatmanAK.exe+0x1089960 in the Steam build
     /// </summary>
     public unsafe virtual bool AreAnyFriends(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FFriendsQuery> Query)
     {
@@ -6759,7 +6885,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFriend;
     /// <summary>
-    /// Function: IsFriend
+    /// Function: IsFriend<br/>
+    /// Native code at BatmanAK.exe+0x107CBB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -6842,7 +6969,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCommunicate;
     /// <summary>
-    /// Function: CanCommunicate
+    /// Function: CanCommunicate<br/>
+    /// Native code at BatmanAK.exe+0x107CB20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.EFeaturePrivilegeLevel CanCommunicate(byte LocalUserNum)
     {
@@ -6864,7 +6992,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayOnline;
     /// <summary>
-    /// Function: CanPlayOnline
+    /// Function: CanPlayOnline<br/>
+    /// Native code at BatmanAK.exe+0x107CA90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.EFeaturePrivilegeLevel CanPlayOnline(byte LocalUserNum)
     {
@@ -6979,7 +7108,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLoginStatus;
     /// <summary>
-    /// Function: GetLoginStatus
+    /// Function: GetLoginStatus<br/>
+    /// Native code at BatmanAK.exe+0x107CA00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.ELoginStatus GetLoginStatus(byte LocalUserNum)
     {
@@ -7048,7 +7178,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Logout;
     /// <summary>
-    /// Function: Logout
+    /// Function: Logout<br/>
+    /// Native code at BatmanAK.exe+0x107C970 in the Steam build
     /// </summary>
     public unsafe virtual bool Logout(byte LocalUserNum)
     {
@@ -7118,7 +7249,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoLogin;
     /// <summary>
-    /// Function: AutoLogin
+    /// Function: AutoLogin<br/>
+    /// Native code at BatmanAK.exe+0x107C920 in the Steam build
     /// </summary>
     public unsafe virtual bool AutoLogin()
     {
@@ -7139,7 +7271,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Login;
     /// <summary>
-    /// Function: Login
+    /// Function: Login<br/>
+    /// Native code at BatmanAK.exe+0x1081450 in the Steam build
     /// </summary>
     public unsafe virtual bool Login(byte LocalUserNum, BmSDK.FStringArg LoginName, BmSDK.FStringArg Password, bool bWantsLocalOnly = default)
     {
@@ -7166,7 +7299,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowLoginUI;
     /// <summary>
-    /// Function: ShowLoginUI
+    /// Function: ShowLoginUI<br/>
+    /// Native code at BatmanAK.exe+0x107C870 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowLoginUI(bool bShowOnlineOnly = default)
     {
@@ -7303,7 +7437,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNATType;
     /// <summary>
-    /// Function: GetNATType
+    /// Function: GetNATType<br/>
+    /// Native code at BatmanAK.exe+0x107C820 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.ENATType GetNATType()
     {
@@ -7369,7 +7504,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsControllerConnected;
     /// <summary>
-    /// Function: IsControllerConnected
+    /// Function: IsControllerConnected<br/>
+    /// Native code at BatmanAK.exe+0x107C6E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsControllerConnected(int ControllerId)
     {
@@ -7437,7 +7573,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNetworkNotificationPosition;
     /// <summary>
-    /// Function: SetNetworkNotificationPosition
+    /// Function: SetNetworkNotificationPosition<br/>
+    /// Native code at BatmanAK.exe+0x107C660 in the Steam build
     /// </summary>
     public unsafe virtual void SetNetworkNotificationPosition(BmSDK.Engine.OnlineSubsystem.ENetworkNotificationPosition NewPos)
     {
@@ -7563,7 +7700,8 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLinkConnection;
     /// <summary>
-    /// Function: HasLinkConnection
+    /// Function: HasLinkConnection<br/>
+    /// Native code at BatmanAK.exe+0xB2E960 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLinkConnection()
     {

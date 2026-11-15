@@ -80,7 +80,8 @@ public partial class FaceFXAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnmountFaceFXAnimSet;
     /// <summary>
-    /// Function: UnmountFaceFXAnimSet
+    /// Function: UnmountFaceFXAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void UnmountFaceFXAnimSet(BmSDK.Engine.FaceFXAnimSet AnimSet)
     {
@@ -102,7 +103,8 @@ public partial class FaceFXAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MountFaceFXAnimSet;
     /// <summary>
-    /// Function: MountFaceFXAnimSet
+    /// Function: MountFaceFXAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void MountFaceFXAnimSet(BmSDK.Engine.FaceFXAnimSet AnimSet)
     {

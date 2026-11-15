@@ -75,7 +75,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFromURL;
     /// <summary>
-    /// Function: UpdateFromURL
+    /// Function: UpdateFromURL<br/>
+    /// Native code at BatmanAK.exe+0xBA58B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFromURL(out BmSDK.FString URL, BmSDK.Engine.GameInfo Game)
     {
@@ -98,7 +99,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildURL;
     /// <summary>
-    /// Function: BuildURL
+    /// Function: BuildURL<br/>
+    /// Native code at BatmanAK.exe+0xBA57E0 in the Steam build
     /// </summary>
     public unsafe virtual void BuildURL(out BmSDK.FString URL)
     {
@@ -120,7 +122,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendContextsToURL;
     /// <summary>
-    /// Function: AppendContextsToURL
+    /// Function: AppendContextsToURL<br/>
+    /// Native code at BatmanAK.exe+0xBA5710 in the Steam build
     /// </summary>
     public unsafe virtual void AppendContextsToURL(out BmSDK.FString URL)
     {
@@ -142,7 +145,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendPropertiesToURL;
     /// <summary>
-    /// Function: AppendPropertiesToURL
+    /// Function: AppendPropertiesToURL<br/>
+    /// Native code at BatmanAK.exe+0xBA5640 in the Steam build
     /// </summary>
     public unsafe virtual void AppendPropertiesToURL(out BmSDK.FString URL)
     {
@@ -164,7 +168,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendDataBindingsToURL;
     /// <summary>
-    /// Function: AppendDataBindingsToURL
+    /// Function: AppendDataBindingsToURL<br/>
+    /// Native code at BatmanAK.exe+0xBA5570 in the Steam build
     /// </summary>
     public unsafe virtual void AppendDataBindingsToURL(out BmSDK.FString URL)
     {
@@ -186,7 +191,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetQoSAdvertisedStringSettings;
     /// <summary>
-    /// Function: GetQoSAdvertisedStringSettings
+    /// Function: GetQoSAdvertisedStringSettings<br/>
+    /// Native code at BatmanAK.exe+0xBB2390 in the Steam build
     /// </summary>
     public unsafe virtual void GetQoSAdvertisedStringSettings(out BmSDK.TArray<BmSDK.Engine.Settings.FLocalizedStringSetting> QoSSettings)
     {
@@ -208,7 +214,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetQoSAdvertisedProperties;
     /// <summary>
-    /// Function: GetQoSAdvertisedProperties
+    /// Function: GetQoSAdvertisedProperties<br/>
+    /// Native code at BatmanAK.exe+0xBB2290 in the Steam build
     /// </summary>
     public unsafe virtual void GetQoSAdvertisedProperties(out BmSDK.TArray<BmSDK.Engine.Settings.FSettingsProperty> QoSProps)
     {
@@ -230,7 +237,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRangedPropertyValue;
     /// <summary>
-    /// Function: GetRangedPropertyValue
+    /// Function: GetRangedPropertyValue<br/>
+    /// Native code at BatmanAK.exe+0xB72810 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRangedPropertyValue(int PropertyId, out float OutValue)
     {
@@ -255,7 +263,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRangedPropertyValue;
     /// <summary>
-    /// Function: SetRangedPropertyValue
+    /// Function: SetRangedPropertyValue<br/>
+    /// Native code at BatmanAK.exe+0xB72610 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRangedPropertyValue(int PropertyId, float NewValue)
     {
@@ -278,7 +287,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyRange;
     /// <summary>
-    /// Function: GetPropertyRange
+    /// Function: GetPropertyRange<br/>
+    /// Native code at BatmanAK.exe+0xB72390 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPropertyRange(int PropertyId, out float OutMinValue, out float OutMaxValue, out float RangeIncrement, out byte bFormatAsInt)
     {
@@ -312,7 +322,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyMappingType;
     /// <summary>
-    /// Function: GetPropertyMappingType
+    /// Function: GetPropertyMappingType<br/>
+    /// Native code at BatmanAK.exe+0xB72220 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPropertyMappingType(int PropertyId, out BmSDK.Engine.Settings.EPropertyValueMappingType OutType)
     {
@@ -337,7 +348,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasStringSetting;
     /// <summary>
-    /// Function: HasStringSetting
+    /// Function: HasStringSetting<br/>
+    /// Native code at BatmanAK.exe+0xB720E0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasStringSetting(int SettingId)
     {
@@ -359,7 +371,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasProperty;
     /// <summary>
-    /// Function: HasProperty
+    /// Function: HasProperty<br/>
+    /// Native code at BatmanAK.exe+0xB71FA0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasProperty(int PropertyId)
     {
@@ -381,7 +394,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateProperties;
     /// <summary>
-    /// Function: UpdateProperties
+    /// Function: UpdateProperties<br/>
+    /// Native code at BatmanAK.exe+0xBB2150 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateProperties(out BmSDK.TArray<BmSDK.Engine.Settings.FSettingsProperty> Props, bool bShouldAddIfMissing = default)
     {
@@ -404,7 +418,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStringSettings;
     /// <summary>
-    /// Function: UpdateStringSettings
+    /// Function: UpdateStringSettings<br/>
+    /// Native code at BatmanAK.exe+0xBB2040 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateStringSettings(out BmSDK.TArray<BmSDK.Engine.Settings.FLocalizedStringSetting> Settings, bool bShouldAddIfMissing = default)
     {
@@ -427,7 +442,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyType;
     /// <summary>
-    /// Function: GetPropertyType
+    /// Function: GetPropertyType<br/>
+    /// Native code at BatmanAK.exe+0xB71E60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Settings.ESettingsDataType GetPropertyType(int PropertyId)
     {
@@ -449,7 +465,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyValueId;
     /// <summary>
-    /// Function: GetPropertyValueId
+    /// Function: GetPropertyValueId<br/>
+    /// Native code at BatmanAK.exe+0xB71CF0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPropertyValueId(int PropertyId, out int ValueId)
     {
@@ -474,7 +491,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPropertyValueId;
     /// <summary>
-    /// Function: SetPropertyValueId
+    /// Function: SetPropertyValueId<br/>
+    /// Native code at BatmanAK.exe+0xB71B00 in the Steam build
     /// </summary>
     public unsafe virtual bool SetPropertyValueId(int PropertyId, int ValueId)
     {
@@ -497,7 +515,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringProperty;
     /// <summary>
-    /// Function: GetStringProperty
+    /// Function: GetStringProperty<br/>
+    /// Native code at BatmanAK.exe+0xBA53D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStringProperty(int PropertyId, out BmSDK.FString Value)
     {
@@ -520,7 +539,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringProperty;
     /// <summary>
-    /// Function: SetStringProperty
+    /// Function: SetStringProperty<br/>
+    /// Native code at BatmanAK.exe+0xBA51E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetStringProperty(int PropertyId, BmSDK.FStringArg Value)
     {
@@ -544,7 +564,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntProperty;
     /// <summary>
-    /// Function: GetIntProperty
+    /// Function: GetIntProperty<br/>
+    /// Native code at BatmanAK.exe+0xB71990 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIntProperty(int PropertyId, out int Value)
     {
@@ -569,7 +590,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIntProperty;
     /// <summary>
-    /// Function: SetIntProperty
+    /// Function: SetIntProperty<br/>
+    /// Native code at BatmanAK.exe+0xB717B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetIntProperty(int PropertyId, int Value)
     {
@@ -592,7 +614,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatProperty;
     /// <summary>
-    /// Function: GetFloatProperty
+    /// Function: GetFloatProperty<br/>
+    /// Native code at BatmanAK.exe+0xB71630 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFloatProperty(int PropertyId, out float Value)
     {
@@ -617,7 +640,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatProperty;
     /// <summary>
-    /// Function: SetFloatProperty
+    /// Function: SetFloatProperty<br/>
+    /// Native code at BatmanAK.exe+0xB71440 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloatProperty(int PropertyId, float Value)
     {
@@ -640,7 +664,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPropertyFromStringByName;
     /// <summary>
-    /// Function: SetPropertyFromStringByName
+    /// Function: SetPropertyFromStringByName<br/>
+    /// Native code at BatmanAK.exe+0xBA5040 in the Steam build
     /// </summary>
     public unsafe virtual bool SetPropertyFromStringByName(BmSDK.FName PropertyName, out BmSDK.FString NewValue)
     {
@@ -663,7 +688,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyAsStringByName;
     /// <summary>
-    /// Function: GetPropertyAsStringByName
+    /// Function: GetPropertyAsStringByName<br/>
+    /// Native code at BatmanAK.exe+0xBA4EE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyAsStringByName(BmSDK.FName PropertyName)
     {
@@ -685,7 +711,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyAsString;
     /// <summary>
-    /// Function: GetPropertyAsString
+    /// Function: GetPropertyAsString<br/>
+    /// Native code at BatmanAK.exe+0xBA4D80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyAsString(int PropertyId)
     {
@@ -707,7 +734,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyColumnHeader;
     /// <summary>
-    /// Function: GetPropertyColumnHeader
+    /// Function: GetPropertyColumnHeader<br/>
+    /// Native code at BatmanAK.exe+0xBA4C20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyColumnHeader(int PropertyId)
     {
@@ -729,7 +757,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyName;
     /// <summary>
-    /// Function: GetPropertyName
+    /// Function: GetPropertyName<br/>
+    /// Native code at BatmanAK.exe+0xB71300 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetPropertyName(int PropertyId)
     {
@@ -751,7 +780,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyId;
     /// <summary>
-    /// Function: GetPropertyId
+    /// Function: GetPropertyId<br/>
+    /// Native code at BatmanAK.exe+0xB71180 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPropertyId(BmSDK.FName PropertyName, out int PropertyId)
     {
@@ -776,7 +806,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValueFromStringByName;
     /// <summary>
-    /// Function: SetStringSettingValueFromStringByName
+    /// Function: SetStringSettingValueFromStringByName<br/>
+    /// Native code at BatmanAK.exe+0xBA4A80 in the Steam build
     /// </summary>
     public unsafe virtual bool SetStringSettingValueFromStringByName(BmSDK.FName StringSettingName, out BmSDK.FString NewValue)
     {
@@ -799,7 +830,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueNameByName;
     /// <summary>
-    /// Function: GetStringSettingValueNameByName
+    /// Function: GetStringSettingValueNameByName<br/>
+    /// Native code at BatmanAK.exe+0xB71030 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingValueNameByName(BmSDK.FName StringSettingName)
     {
@@ -821,7 +853,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueName;
     /// <summary>
-    /// Function: GetStringSettingValueName
+    /// Function: GetStringSettingValueName<br/>
+    /// Native code at BatmanAK.exe+0xB70E30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingValueName(int StringSettingId, int ValueIndex)
     {
@@ -844,7 +877,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWildcardStringSetting;
     /// <summary>
-    /// Function: IsWildcardStringSetting
+    /// Function: IsWildcardStringSetting<br/>
+    /// Native code at BatmanAK.exe+0xB70CF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWildcardStringSetting(int StringSettingId)
     {
@@ -866,7 +900,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingColumnHeader;
     /// <summary>
-    /// Function: GetStringSettingColumnHeader
+    /// Function: GetStringSettingColumnHeader<br/>
+    /// Native code at BatmanAK.exe+0xBA4920 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringSettingColumnHeader(int StringSettingId)
     {
@@ -888,7 +923,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingName;
     /// <summary>
-    /// Function: GetStringSettingName
+    /// Function: GetStringSettingName<br/>
+    /// Native code at BatmanAK.exe+0xB70BB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingName(int StringSettingId)
     {
@@ -910,7 +946,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingId;
     /// <summary>
-    /// Function: GetStringSettingId
+    /// Function: GetStringSettingId<br/>
+    /// Native code at BatmanAK.exe+0xB70A30 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStringSettingId(BmSDK.FName StringSettingName, out int StringSettingId)
     {
@@ -935,7 +972,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueByName;
     /// <summary>
-    /// Function: GetStringSettingValueByName
+    /// Function: GetStringSettingValueByName<br/>
+    /// Native code at BatmanAK.exe+0xB708B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStringSettingValueByName(BmSDK.FName StringSettingName, out int ValueIndex)
     {
@@ -960,7 +998,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValueByName;
     /// <summary>
-    /// Function: SetStringSettingValueByName
+    /// Function: SetStringSettingValueByName<br/>
+    /// Native code at BatmanAK.exe+0xB70610 in the Steam build
     /// </summary>
     public unsafe virtual void SetStringSettingValueByName(BmSDK.FName StringSettingName, int ValueIndex, bool bShouldAutoAdd)
     {
@@ -984,7 +1023,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueNames;
     /// <summary>
-    /// Function: GetStringSettingValueNames
+    /// Function: GetStringSettingValueNames<br/>
+    /// Native code at BatmanAK.exe+0xBB76F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStringSettingValueNames(int StringSettingId, out BmSDK.TArray<BmSDK.Engine.Settings.FIdToStringMapping> Values)
     {
@@ -1007,7 +1047,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementStringSettingValue;
     /// <summary>
-    /// Function: IncrementStringSettingValue
+    /// Function: IncrementStringSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xB70370 in the Steam build
     /// </summary>
     public unsafe virtual bool IncrementStringSettingValue(int StringSettingId, int Direction, bool bShouldWrap)
     {
@@ -1031,7 +1072,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValue;
     /// <summary>
-    /// Function: GetStringSettingValue
+    /// Function: GetStringSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xB70200 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStringSettingValue(int StringSettingId, out int ValueIndex)
     {
@@ -1056,7 +1098,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValue;
     /// <summary>
-    /// Function: SetStringSettingValue
+    /// Function: SetStringSettingValue<br/>
+    /// Native code at BatmanAK.exe+0xB6FFE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetStringSettingValue(int StringSettingId, int ValueIndex, bool bShouldAutoAdd = default)
     {
@@ -1080,7 +1123,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSettingsDataDateTime;
     /// <summary>
-    /// Function: GetSettingsDataDateTime
+    /// Function: GetSettingsDataDateTime<br/>
+    /// Native code at BatmanAK.exe+0xB3B050 in the Steam build
     /// </summary>
     public unsafe static void GetSettingsDataDateTime(out BmSDK.Engine.Settings.FSettingsData Data, out int OutInt1, out int OutInt2)
     {
@@ -1109,7 +1153,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSettingsDataBlob;
     /// <summary>
-    /// Function: GetSettingsDataBlob
+    /// Function: GetSettingsDataBlob<br/>
+    /// Native code at BatmanAK.exe+0xBB1F20 in the Steam build
     /// </summary>
     public unsafe static void GetSettingsDataBlob(out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.TArray<byte> OutBlob)
     {
@@ -1133,7 +1178,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSettingsDataInt;
     /// <summary>
-    /// Function: GetSettingsDataInt
+    /// Function: GetSettingsDataInt<br/>
+    /// Native code at BatmanAK.exe+0xB3AF90 in the Steam build
     /// </summary>
     public unsafe static int GetSettingsDataInt(out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1156,7 +1202,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSettingsDataFloat;
     /// <summary>
-    /// Function: GetSettingsDataFloat
+    /// Function: GetSettingsDataFloat<br/>
+    /// Native code at BatmanAK.exe+0xB3AED0 in the Steam build
     /// </summary>
     public unsafe static float GetSettingsDataFloat(out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1179,7 +1226,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EmptySettingsData;
     /// <summary>
-    /// Function: EmptySettingsData
+    /// Function: EmptySettingsData<br/>
+    /// Native code at BatmanAK.exe+0xB3AE20 in the Steam build
     /// </summary>
     public unsafe static void EmptySettingsData(out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1202,7 +1250,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetSettingsData;
     /// <summary>
-    /// Function: SetSettingsData
+    /// Function: SetSettingsData<br/>
+    /// Native code at BatmanAK.exe+0xB3AD10 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsData(out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.Engine.Settings.FSettingsData Data2Copy)
     {
@@ -1228,7 +1277,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetSettingsDataBlob;
     /// <summary>
-    /// Function: SetSettingsDataBlob
+    /// Function: SetSettingsDataBlob<br/>
+    /// Native code at BatmanAK.exe+0xBB1E00 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataBlob(out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.TArray<byte> InBlob)
     {
@@ -1252,7 +1302,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetSettingsDataDateTime;
     /// <summary>
-    /// Function: SetSettingsDataDateTime
+    /// Function: SetSettingsDataDateTime<br/>
+    /// Native code at BatmanAK.exe+0xB6FDC0 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataDateTime(out BmSDK.Engine.Settings.FSettingsData Data, int InInt1, int InInt2)
     {
@@ -1277,7 +1328,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetSettingsDataInt;
     /// <summary>
-    /// Function: SetSettingsDataInt
+    /// Function: SetSettingsDataInt<br/>
+    /// Native code at BatmanAK.exe+0xB6FC60 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataInt(out BmSDK.Engine.Settings.FSettingsData Data, int InInt)
     {
@@ -1301,7 +1353,8 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetSettingsDataFloat;
     /// <summary>
-    /// Function: SetSettingsDataFloat
+    /// Function: SetSettingsDataFloat<br/>
+    /// Native code at BatmanAK.exe+0xB6FAE0 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataFloat(out BmSDK.Engine.Settings.FSettingsData Data, float InFloat)
     {
@@ -1699,7 +1752,8 @@ public static class SettingsStatics
 {
     private static BmSDK.Function __fn_GetSettingsDataDateTime;
     /// <summary>
-    /// Function: GetSettingsDataDateTime, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSettingsDataDateTime, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B050 in the Steam build
     /// </summary>
     public unsafe static void GetSettingsDataDateTime(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, out int OutInt1, out int OutInt2)
     {
@@ -1729,7 +1783,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_GetSettingsDataBlob;
     /// <summary>
-    /// Function: GetSettingsDataBlob, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSettingsDataBlob, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB1F20 in the Steam build
     /// </summary>
     public unsafe static void GetSettingsDataBlob(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.TArray<byte> OutBlob)
     {
@@ -1754,7 +1809,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_GetSettingsDataInt;
     /// <summary>
-    /// Function: GetSettingsDataInt, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSettingsDataInt, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3AF90 in the Steam build
     /// </summary>
     public unsafe static int GetSettingsDataInt(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1778,7 +1834,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_GetSettingsDataFloat;
     /// <summary>
-    /// Function: GetSettingsDataFloat, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSettingsDataFloat, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3AED0 in the Steam build
     /// </summary>
     public unsafe static float GetSettingsDataFloat(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1802,7 +1859,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_EmptySettingsData;
     /// <summary>
-    /// Function: EmptySettingsData, run on <paramref name="self"/> rather than the class default object
+    /// Function: EmptySettingsData, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3AE20 in the Steam build
     /// </summary>
     public unsafe static void EmptySettingsData(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data)
     {
@@ -1826,7 +1884,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_SetSettingsData;
     /// <summary>
-    /// Function: SetSettingsData, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetSettingsData, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3AD10 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsData(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.Engine.Settings.FSettingsData Data2Copy)
     {
@@ -1853,7 +1912,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_SetSettingsDataBlob;
     /// <summary>
-    /// Function: SetSettingsDataBlob, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetSettingsDataBlob, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB1E00 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataBlob(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, out BmSDK.TArray<byte> InBlob)
     {
@@ -1878,7 +1938,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_SetSettingsDataDateTime;
     /// <summary>
-    /// Function: SetSettingsDataDateTime, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetSettingsDataDateTime, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB6FDC0 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataDateTime(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, int InInt1, int InInt2)
     {
@@ -1904,7 +1965,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_SetSettingsDataInt;
     /// <summary>
-    /// Function: SetSettingsDataInt, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetSettingsDataInt, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB6FC60 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataInt(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, int InInt)
     {
@@ -1929,7 +1991,8 @@ public static class SettingsStatics
 
     private static BmSDK.Function __fn_SetSettingsDataFloat;
     /// <summary>
-    /// Function: SetSettingsDataFloat, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetSettingsDataFloat, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB6FAE0 in the Steam build
     /// </summary>
     public unsafe static void SetSettingsDataFloat(this BmSDK.Engine.Settings self, out BmSDK.Engine.Settings.FSettingsData Data, float InFloat)
     {

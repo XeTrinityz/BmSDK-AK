@@ -128,7 +128,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnDifferentNetwork;
     /// <summary>
-    /// Function: IsOnDifferentNetwork
+    /// Function: IsOnDifferentNetwork<br/>
+    /// Native code at BatmanAK.exe+0xB73520 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOnDifferentNetwork(BmSDK.Engine.NavigationPoint Nav)
     {
@@ -150,7 +151,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAllNavInRadius;
     /// <summary>
-    /// Function: GetAllNavInRadius
+    /// Function: GetAllNavInRadius<br/>
+    /// Native code at BatmanAK.exe+0xBB7890 in the Steam build
     /// </summary>
     public unsafe static bool GetAllNavInRadius(BmSDK.Engine.Actor chkActor, System.Numerics.Vector3 ChkPoint, float Radius, out BmSDK.TArray<BmSDK.Engine.NavigationPoint> out_NavList, bool bSkipBlocked = default, int inNetworkID = default, BmSDK.GameObject.FCylinder MinSize = default)
     {
@@ -293,7 +295,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTeleport;
     /// <summary>
-    /// Function: CanTeleport
+    /// Function: CanTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4E5040 in the Steam build
     /// </summary>
     public unsafe virtual bool CanTeleport(BmSDK.Engine.Actor A)
     {
@@ -315,7 +318,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUsableAnchorFor;
     /// <summary>
-    /// Function: IsUsableAnchorFor
+    /// Function: IsUsableAnchorFor<br/>
+    /// Native code at BatmanAK.exe+0x4A94D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsUsableAnchorFor(BmSDK.Engine.Pawn P)
     {
@@ -337,7 +341,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReachSpecTo;
     /// <summary>
-    /// Function: GetReachSpecTo
+    /// Function: GetReachSpecTo<br/>
+    /// Native code at BatmanAK.exe+0xB73290 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ReachSpec GetReachSpecTo(BmSDK.Engine.NavigationPoint Nav, BmSDK.Class SpecClass = default)
     {
@@ -360,7 +365,8 @@ public partial class NavigationPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingCylinder;
     /// <summary>
-    /// Function: GetBoundingCylinder
+    /// Function: GetBoundingCylinder<br/>
+    /// Native code at BatmanAK.exe+0x46A060 in the Steam build
     /// </summary>
     public unsafe override void GetBoundingCylinder(out float CollisionRadius, out float CollisionHeight)
     {
@@ -995,7 +1001,8 @@ public static class NavigationPointStatics
 {
     private static BmSDK.Function __fn_GetAllNavInRadius;
     /// <summary>
-    /// Function: GetAllNavInRadius, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAllNavInRadius, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB7890 in the Steam build
     /// </summary>
     public unsafe static bool GetAllNavInRadius(this BmSDK.Engine.NavigationPoint self, BmSDK.Engine.Actor chkActor, System.Numerics.Vector3 ChkPoint, float Radius, out BmSDK.TArray<BmSDK.Engine.NavigationPoint> out_NavList, bool bSkipBlocked = default, int inNetworkID = default, BmSDK.GameObject.FCylinder MinSize = default)
     {

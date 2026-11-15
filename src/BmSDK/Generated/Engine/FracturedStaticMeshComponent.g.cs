@@ -85,7 +85,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFracturedMeshPhysMaterial;
     /// <summary>
-    /// Function: GetFracturedMeshPhysMaterial
+    /// Function: GetFracturedMeshPhysMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB4BB20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicalMaterial GetFracturedMeshPhysMaterial()
     {
@@ -106,7 +107,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecreatePhysState;
     /// <summary>
-    /// Function: RecreatePhysState
+    /// Function: RecreatePhysState<br/>
+    /// Native code at BatmanAK.exe+0xB4BAE0 in the Steam build
     /// </summary>
     public unsafe virtual void RecreatePhysState()
     {
@@ -127,7 +129,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundaryHiddenFragments;
     /// <summary>
-    /// Function: GetBoundaryHiddenFragments
+    /// Function: GetBoundaryHiddenFragments<br/>
+    /// Native code at BatmanAK.exe+0xBB6600 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<int> GetBoundaryHiddenFragments(BmSDK.TArray<int> AdditionalVisibleFragments)
     {
@@ -149,7 +152,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFragmentGroups;
     /// <summary>
-    /// Function: GetFragmentGroups
+    /// Function: GetFragmentGroups<br/>
+    /// Native code at BatmanAK.exe+0xBBD830 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.FracturedStaticMeshComponent.FFragmentGroup> GetFragmentGroups(BmSDK.TArray<int> IgnoreFragments, float MinConnectionArea)
     {
@@ -172,7 +176,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCoreFragmentIndex;
     /// <summary>
-    /// Function: GetCoreFragmentIndex
+    /// Function: GetCoreFragmentIndex<br/>
+    /// Native code at BatmanAK.exe+0xB4BA90 in the Steam build
     /// </summary>
     public unsafe virtual int GetCoreFragmentIndex()
     {
@@ -193,7 +198,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFragmentAverageExteriorNormal;
     /// <summary>
-    /// Function: GetFragmentAverageExteriorNormal
+    /// Function: GetFragmentAverageExteriorNormal<br/>
+    /// Native code at BatmanAK.exe+0xB4B940 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFragmentAverageExteriorNormal(int FragmentIndex)
     {
@@ -215,7 +221,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFragmentBox;
     /// <summary>
-    /// Function: GetFragmentBox
+    /// Function: GetFragmentBox<br/>
+    /// Native code at BatmanAK.exe+0xB4B7E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBox GetFragmentBox(int FragmentIndex)
     {
@@ -237,7 +244,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNoPhysFragment;
     /// <summary>
-    /// Function: IsNoPhysFragment
+    /// Function: IsNoPhysFragment<br/>
+    /// Native code at BatmanAK.exe+0xB4B6B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNoPhysFragment(int FragmentIndex)
     {
@@ -259,7 +267,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRootFragment;
     /// <summary>
-    /// Function: IsRootFragment
+    /// Function: IsRootFragment<br/>
+    /// Native code at BatmanAK.exe+0xB4B580 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRootFragment(int FragmentIndex)
     {
@@ -281,7 +290,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFragmentDestroyable;
     /// <summary>
-    /// Function: IsFragmentDestroyable
+    /// Function: IsFragmentDestroyable<br/>
+    /// Native code at BatmanAK.exe+0xB4B450 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFragmentDestroyable(int FragmentIndex)
     {
@@ -303,7 +313,8 @@ public partial class FracturedStaticMeshComponent : BmSDK.Engine.FracturedBaseCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisibleFragments;
     /// <summary>
-    /// Function: SetVisibleFragments
+    /// Function: SetVisibleFragments<br/>
+    /// Native code at BatmanAK.exe+0xBB0220 in the Steam build
     /// </summary>
     public unsafe virtual void SetVisibleFragments(BmSDK.TArray<byte> VisibilityFactors)
     {

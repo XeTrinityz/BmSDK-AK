@@ -293,7 +293,8 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAtRotator;
     /// <summary>
-    /// Function: GetLookAtRotator
+    /// Function: GetLookAtRotator<br/>
+    /// Native code at BatmanAK.exe+0x493E50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetLookAtRotator(System.Numerics.Vector3 Direction, System.Numerics.Vector3 Up)
     {

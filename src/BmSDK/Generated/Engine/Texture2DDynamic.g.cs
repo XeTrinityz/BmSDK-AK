@@ -80,7 +80,8 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create
+    /// Function: Create<br/>
+    /// Native code at BatmanAK.exe+0xC64970 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Texture2DDynamic Create(int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, bool InIsResolveTarget = default)
     {
@@ -104,7 +105,8 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMipFromJPEG;
     /// <summary>
-    /// Function: UpdateMipFromJPEG
+    /// Function: UpdateMipFromJPEG<br/>
+    /// Native code at BatmanAK.exe+0xBB4C60 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMipFromJPEG(int MipIdx, out BmSDK.TArray<byte> MipData)
     {
@@ -127,7 +129,8 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMip;
     /// <summary>
-    /// Function: UpdateMip
+    /// Function: UpdateMip<br/>
+    /// Native code at BatmanAK.exe+0xBB4AD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMip(int MipIdx, out BmSDK.TArray<byte> MipData)
     {
@@ -150,7 +153,8 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB844F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init(int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, bool InIsResolveTarget = default)
     {
@@ -226,7 +230,8 @@ public static class Texture2DDynamicStatics
 {
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create, run on <paramref name="self"/> rather than the class default object
+    /// Function: Create, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xC64970 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Texture2DDynamic Create(this BmSDK.Engine.Texture2DDynamic self, int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, bool InIsResolveTarget = default)
     {

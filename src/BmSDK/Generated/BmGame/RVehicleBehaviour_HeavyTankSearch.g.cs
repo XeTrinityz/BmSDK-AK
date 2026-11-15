@@ -183,7 +183,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
 
     private static BmSDK.Function __fn_SendTanksToLocation;
     /// <summary>
-    /// Function: SendTanksToLocation
+    /// Function: SendTanksToLocation<br/>
+    /// Native code at BatmanAK.exe+0x565F30 in the Steam build
     /// </summary>
     public unsafe static void SendTanksToLocation(BmSDK.TArray<System.Numerics.Vector3> PositionsToSearch, BmSDK.BmGame.RRoadNetwork Roads, BmSDK.TArray<BmSDK.BmGame.RVehicleBehaviour_HeavyTankSearch> TankList, bool Kismet)
     {
@@ -554,7 +555,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseRandomNextSearchPoint;
     /// <summary>
-    /// Function: ChooseRandomNextSearchPoint
+    /// Function: ChooseRandomNextSearchPoint<br/>
+    /// Native code at BatmanAK.exe+0x5746A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ChooseRandomNextSearchPoint(int StartPoint, int ExcludeLink, bool NoDeadEnds, out int LinkEndPoint, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -810,7 +812,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpecificallyLookingForPlayer;
     /// <summary>
-    /// Function: SpecificallyLookingForPlayer
+    /// Function: SpecificallyLookingForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe override bool SpecificallyLookingForPlayer()
     {
@@ -831,7 +834,8 @@ public partial class RVehicleBehaviour_HeavyTankSearch : BmSDK.BmGame.RVehicleBe
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AwareOfPlayer;
     /// <summary>
-    /// Function: AwareOfPlayer
+    /// Function: AwareOfPlayer<br/>
+    /// Native code at BatmanAK.exe+0x49A3E0 in the Steam build
     /// </summary>
     public unsafe override bool AwareOfPlayer()
     {
@@ -1339,7 +1343,8 @@ public static class RVehicleBehaviour_HeavyTankSearchStatics
 {
     private static BmSDK.Function __fn_SendTanksToLocation;
     /// <summary>
-    /// Function: SendTanksToLocation, run on <paramref name="self"/> rather than the class default object
+    /// Function: SendTanksToLocation, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x565F30 in the Steam build
     /// </summary>
     public unsafe static void SendTanksToLocation(this BmSDK.BmGame.RVehicleBehaviour_HeavyTankSearch self, BmSDK.TArray<System.Numerics.Vector3> PositionsToSearch, BmSDK.BmGame.RRoadNetwork Roads, BmSDK.TArray<BmSDK.BmGame.RVehicleBehaviour_HeavyTankSearch> TankList, bool Kismet)
     {

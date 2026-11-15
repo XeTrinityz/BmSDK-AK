@@ -113,7 +113,8 @@ public partial class RWindForceFieldVolume : BmSDK.BmGame.RForceFieldVolume, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUntouchActor;
     /// <summary>
-    /// Function: OnUntouchActor
+    /// Function: OnUntouchActor<br/>
+    /// Native code at BatmanAK.exe+0x4BA3A0 in the Steam build
     /// </summary>
     public unsafe virtual void OnUntouchActor(BmSDK.Engine.Actor Other)
     {
@@ -135,7 +136,8 @@ public partial class RWindForceFieldVolume : BmSDK.BmGame.RForceFieldVolume, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTouchActor;
     /// <summary>
-    /// Function: OnTouchActor
+    /// Function: OnTouchActor<br/>
+    /// Native code at BatmanAK.exe+0x4F34C0 in the Steam build
     /// </summary>
     public unsafe virtual void OnTouchActor(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {

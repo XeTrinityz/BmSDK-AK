@@ -243,7 +243,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCameraUpdatedNoMeshTranslate;
     /// <summary>
-    /// Function: OnCameraUpdatedNoMeshTranslate
+    /// Function: OnCameraUpdatedNoMeshTranslate<br/>
+    /// Native code at BatmanAK.exe+0x476DE0 in the Steam build
     /// </summary>
     public unsafe virtual void OnCameraUpdatedNoMeshTranslate()
     {
@@ -264,7 +265,8 @@ public partial class RPawnPlayerFPS : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCameraUpdated;
     /// <summary>
-    /// Function: OnCameraUpdated
+    /// Function: OnCameraUpdated<br/>
+    /// Native code at BatmanAK.exe+0x478D40 in the Steam build
     /// </summary>
     public unsafe virtual void OnCameraUpdated()
     {

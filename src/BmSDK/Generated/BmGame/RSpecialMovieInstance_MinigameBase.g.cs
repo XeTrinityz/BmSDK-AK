@@ -75,7 +75,8 @@ public partial class RSpecialMovieInstance_MinigameBase : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePCResonatorPos;
     /// <summary>
-    /// Function: UpdatePCResonatorPos
+    /// Function: UpdatePCResonatorPos<br/>
+    /// Native code at BatmanAK.exe+0x4E31C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePCResonatorPos(BmSDK.BmGame.RPlayerInput Input, float DeltaTime, float TurnSpeed, float Accel, float Decel)
     {
@@ -101,7 +102,8 @@ public partial class RSpecialMovieInstance_MinigameBase : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLeftAndRightAngles;
     /// <summary>
-    /// Function: GetLeftAndRightAngles
+    /// Function: GetLeftAndRightAngles<br/>
+    /// Native code at BatmanAK.exe+0x4E19E0 in the Steam build
     /// </summary>
     public unsafe virtual void GetLeftAndRightAngles(out float LeftAngle, out float RightAngle, float RawLeftX, float RawLeftY, float RawRightX, float RawRightY)
     {
@@ -132,7 +134,8 @@ public partial class RSpecialMovieInstance_MinigameBase : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpThumbStraight;
     /// <summary>
-    /// Function: InterpThumbStraight
+    /// Function: InterpThumbStraight<br/>
+    /// Native code at BatmanAK.exe+0x4E2ED0 in the Steam build
     /// </summary>
     public unsafe virtual float InterpThumbStraight(float DesiredPos, float CurrentPos, float DeltaTime)
     {
@@ -156,7 +159,8 @@ public partial class RSpecialMovieInstance_MinigameBase : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpThumb;
     /// <summary>
-    /// Function: InterpThumb
+    /// Function: InterpThumb<br/>
+    /// Native code at BatmanAK.exe+0x4E2BE0 in the Steam build
     /// </summary>
     public unsafe virtual float InterpThumb(float DesiredPos, float CurrentPos, float DeltaTime)
     {

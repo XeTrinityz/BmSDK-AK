@@ -80,7 +80,8 @@ public partial class RGangSpectatorPointBase : BmSDK.BmGame.RGangInteractPointBa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawnSpec;
     /// <summary>
-    /// Function: IsValidForPawnSpec
+    /// Function: IsValidForPawnSpec<br/>
+    /// Native code at BatmanAK.exe+0x4E7DA0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.BmGame.RGangInteractPointBase IsValidForPawnSpec(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default)
     {

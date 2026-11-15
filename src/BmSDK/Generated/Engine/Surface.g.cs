@@ -75,7 +75,8 @@ public partial class Surface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSurfaceHeight;
     /// <summary>
-    /// Function: GetSurfaceHeight
+    /// Function: GetSurfaceHeight<br/>
+    /// Native code at BatmanAK.exe+0xC69B10 in the Steam build
     /// </summary>
     public unsafe virtual float GetSurfaceHeight()
     {
@@ -96,7 +97,8 @@ public partial class Surface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSurfaceWidth;
     /// <summary>
-    /// Function: GetSurfaceWidth
+    /// Function: GetSurfaceWidth<br/>
+    /// Native code at BatmanAK.exe+0xC69AC0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSurfaceWidth()
     {

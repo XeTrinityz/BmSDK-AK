@@ -80,7 +80,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPointAtDistanceAlongSplineRope;
     /// <summary>
-    /// Function: GetPointAtDistanceAlongSplineRope
+    /// Function: GetPointAtDistanceAlongSplineRope<br/>
+    /// Native code at BatmanAK.exe+0x4F0530 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPointAtDistanceAlongSplineRope(float DistanceAlongRope)
     {
@@ -102,7 +103,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRope;
     /// <summary>
-    /// Function: FinaliseRope
+    /// Function: FinaliseRope<br/>
+    /// Native code at BatmanAK.exe+0x482D00 in the Steam build
     /// </summary>
     public unsafe override void FinaliseRope()
     {
@@ -123,7 +125,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseRope;
     /// <summary>
-    /// Function: InitialiseRope
+    /// Function: InitialiseRope<br/>
+    /// Native code at BatmanAK.exe+0x482CC0 in the Steam build
     /// </summary>
     public unsafe override void InitialiseRope()
     {
@@ -144,7 +147,8 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRope;
     /// <summary>
-    /// Function: UpdateRope
+    /// Function: UpdateRope<br/>
+    /// Native code at BatmanAK.exe+0xB2DB10 in the Steam build
     /// </summary>
     public unsafe override void UpdateRope()
     {

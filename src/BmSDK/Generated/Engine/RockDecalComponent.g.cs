@@ -80,7 +80,8 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalMaterial;
     /// <summary>
-    /// Function: GetDecalMaterial
+    /// Function: GetDecalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB2C880 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetDecalMaterial()
     {
@@ -101,7 +102,8 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDecalMaterial;
     /// <summary>
-    /// Function: SetDecalMaterial
+    /// Function: SetDecalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB57E70 in the Steam build
     /// </summary>
     public unsafe virtual void SetDecalMaterial(BmSDK.Engine.MaterialInterface NewDecalMaterial)
     {

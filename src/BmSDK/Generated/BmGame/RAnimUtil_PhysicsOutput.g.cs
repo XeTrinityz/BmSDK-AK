@@ -80,7 +80,8 @@ public partial class RAnimUtil_PhysicsOutput : BmSDK.GameObject, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableInheritVelocityForNFrames;
     /// <summary>
-    /// Function: DisableInheritVelocityForNFrames
+    /// Function: DisableInheritVelocityForNFrames<br/>
+    /// Native code at BatmanAK.exe+0x4B20F0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableInheritVelocityForNFrames(int N)
     {

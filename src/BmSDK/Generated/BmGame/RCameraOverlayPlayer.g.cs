@@ -80,7 +80,8 @@ public partial class RCameraOverlayPlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
-    /// Function: StopAnim
+    /// Function: StopAnim<br/>
+    /// Native code at BatmanAK.exe+0x516960 in the Steam build
     /// </summary>
     public unsafe virtual void StopAnim(BmSDK.FName LayerName, float BlendOutTime = default)
     {
@@ -103,7 +104,8 @@ public partial class RCameraOverlayPlayer : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativePlayAnim;
     /// <summary>
-    /// Function: NativePlayAnim
+    /// Function: NativePlayAnim<br/>
+    /// Native code at BatmanAK.exe+0x515FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool NativePlayAnim(BmSDK.FName AnimName, bool bNewMirrored, bool bNewLooping, BmSDK.Engine.AnimSet NewCustomAnimSet, BmSDK.FName LayerName, float Weight, float LinkSpeed, float ZeroFrame, bool IgnoreX, float Rate, System.Numerics.Vector3 ExtraTrans, float TranslationProportionFactor, System.Numerics.Vector3 AnimTranslationMultiplier)
     {

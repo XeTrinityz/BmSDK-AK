@@ -80,7 +80,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
@@ -473,7 +474,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopLatentExecution;
     /// <summary>
-    /// Function: StopLatentExecution
+    /// Function: StopLatentExecution<br/>
+    /// Native code at BatmanAK.exe+0xB41CF0 in the Steam build
     /// </summary>
     public unsafe virtual void StopLatentExecution()
     {
@@ -494,7 +496,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InLatentExecution;
     /// <summary>
-    /// Function: InLatentExecution
+    /// Function: InLatentExecution<br/>
+    /// Native code at BatmanAK.exe+0xB875C0 in the Steam build
     /// </summary>
     public unsafe virtual bool InLatentExecution(int LatentActionNumber)
     {
@@ -753,7 +756,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndClimbLadder;
     /// <summary>
-    /// Function: EndClimbLadder
+    /// Function: EndClimbLadder<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void EndClimbLadder()
     {
@@ -788,7 +792,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WaitForLanding;
     /// <summary>
-    /// Function: WaitForLanding
+    /// Function: WaitForLanding<br/>
+    /// Native code at BatmanAK.exe+0xBCC200 in the Steam build
     /// </summary>
     public unsafe virtual void WaitForLanding(float waitDuration = default)
     {
@@ -810,7 +815,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickWallAdjust;
     /// <summary>
-    /// Function: PickWallAdjust
+    /// Function: PickWallAdjust<br/>
+    /// Native code at BatmanAK.exe+0xB41C50 in the Steam build
     /// </summary>
     public unsafe virtual bool PickWallAdjust(System.Numerics.Vector3 HitNormal)
     {
@@ -848,7 +854,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActorReachable;
     /// <summary>
-    /// Function: ActorReachable
+    /// Function: ActorReachable<br/>
+    /// Native code at BatmanAK.exe+0xB87480 in the Steam build
     /// </summary>
     public unsafe virtual bool ActorReachable(BmSDK.Engine.Actor anActor)
     {
@@ -870,7 +877,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointReachable;
     /// <summary>
-    /// Function: PointReachable
+    /// Function: PointReachable<br/>
+    /// Native code at BatmanAK.exe+0xB41BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool PointReachable(System.Numerics.Vector3 aPoint)
     {
@@ -892,7 +900,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPathToIntercept;
     /// <summary>
-    /// Function: FindPathToIntercept
+    /// Function: FindPathToIntercept<br/>
+    /// Native code at BatmanAK.exe+0xB871C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindPathToIntercept(BmSDK.Engine.Pawn P, BmSDK.Engine.Actor InRouteGoal, bool bWeightDetours = default, int MaxPathLength = default, bool bReturnPartial = default)
     {
@@ -918,7 +927,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRandomDest;
     /// <summary>
-    /// Function: FindRandomDest
+    /// Function: FindRandomDest<br/>
+    /// Native code at BatmanAK.exe+0xB41B60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavigationPoint FindRandomDest()
     {
@@ -939,7 +949,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPathTowardNearest;
     /// <summary>
-    /// Function: FindPathTowardNearest
+    /// Function: FindPathTowardNearest<br/>
+    /// Native code at BatmanAK.exe+0xB86FC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindPathTowardNearest(BmSDK.Class GoalClass, bool bWeightDetours = default, int MaxPathLength = default, bool bReturnPartial = default)
     {
@@ -964,7 +975,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPathToward;
     /// <summary>
-    /// Function: FindPathToward
+    /// Function: FindPathToward<br/>
+    /// Native code at BatmanAK.exe+0xB86DC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindPathToward(BmSDK.Engine.Actor anActor, bool bWeightDetours = default, int MaxPathLength = default, bool bReturnPartial = default)
     {
@@ -989,7 +1001,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPathTo;
     /// <summary>
-    /// Function: FindPathTo
+    /// Function: FindPathTo<br/>
+    /// Native code at BatmanAK.exe+0xB41A50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindPathTo(System.Numerics.Vector3 aPoint, int MaxPathLength = default, bool bReturnPartial = default)
     {
@@ -1013,7 +1026,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishRotation;
     /// <summary>
-    /// Function: FinishRotation
+    /// Function: FinishRotation<br/>
+    /// Native code at BatmanAK.exe+0xB41A10 in the Steam build
     /// </summary>
     public unsafe virtual void FinishRotation()
     {
@@ -1048,7 +1062,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToward;
     /// <summary>
-    /// Function: MoveToward
+    /// Function: MoveToward<br/>
+    /// Native code at BatmanAK.exe+0xBCCC60 in the Steam build
     /// </summary>
     public unsafe virtual void MoveToward(BmSDK.Engine.Actor NewTarget, BmSDK.Engine.Actor ViewFocus = default, float DestinationOffset = default, bool bUseStrafing = default, bool bShouldWalk = default)
     {
@@ -1074,7 +1089,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToDirectNonPathPos;
     /// <summary>
-    /// Function: MoveToDirectNonPathPos
+    /// Function: MoveToDirectNonPathPos<br/>
+    /// Native code at BatmanAK.exe+0xBCC860 in the Steam build
     /// </summary>
     public unsafe virtual void MoveToDirectNonPathPos(System.Numerics.Vector3 NewDestination, BmSDK.Engine.Actor ViewFocus = default, float DestinationOffset = default, bool bShouldWalk = default)
     {
@@ -1099,7 +1115,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveTo;
     /// <summary>
-    /// Function: MoveTo
+    /// Function: MoveTo<br/>
+    /// Native code at BatmanAK.exe+0xBCC860 in the Steam build
     /// </summary>
     public unsafe virtual void MoveTo(System.Numerics.Vector3 NewDestination, BmSDK.Engine.Actor ViewFocus = default, float DestinationOffset = default, bool bShouldWalk = default)
     {
@@ -1185,7 +1202,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickTarget;
     /// <summary>
-    /// Function: PickTarget
+    /// Function: PickTarget<br/>
+    /// Native code at BatmanAK.exe+0xB86AC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pawn PickTarget(BmSDK.Class TargetClass, out float bestAim, out float bestDist, System.Numerics.Vector3 FireDir, System.Numerics.Vector3 projStart, float MaxRange)
     {
@@ -1216,7 +1234,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeByPoints;
     /// <summary>
-    /// Function: CanSeeByPoints
+    /// Function: CanSeeByPoints<br/>
+    /// Native code at BatmanAK.exe+0xB41900 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeByPoints(System.Numerics.Vector3 ViewLocation, System.Numerics.Vector3 TestLocation, BmSDK.Rotator ViewRotation)
     {
@@ -1240,7 +1259,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSee;
     /// <summary>
-    /// Function: CanSee
+    /// Function: CanSee<br/>
+    /// Native code at BatmanAK.exe+0xB86980 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSee(BmSDK.Engine.Pawn Other)
     {
@@ -1262,7 +1282,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LineOfSightTo;
     /// <summary>
-    /// Function: LineOfSightTo
+    /// Function: LineOfSightTo<br/>
+    /// Native code at BatmanAK.exe+0xBCC650 in the Steam build
     /// </summary>
     public unsafe virtual bool LineOfSightTo(BmSDK.Engine.Actor Other, System.Numerics.Vector3 chkLocation = default, bool bTryAlternateTargetLoc = default)
     {
@@ -1580,7 +1601,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe override byte GetTeamNum()
     {
@@ -1648,7 +1670,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeyondFogDistance;
     /// <summary>
-    /// Function: BeyondFogDistance
+    /// Function: BeyondFogDistance<br/>
+    /// Native code at BatmanAK.exe+0xB41820 in the Steam build
     /// </summary>
     public unsafe virtual bool BeyondFogDistance(System.Numerics.Vector3 ViewPoint, System.Numerics.Vector3 OtherPoint)
     {
@@ -1997,7 +2020,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAdjustLocation;
     /// <summary>
-    /// Function: GetAdjustLocation
+    /// Function: GetAdjustLocation<br/>
+    /// Native code at BatmanAK.exe+0xB417C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAdjustLocation()
     {
@@ -2018,7 +2042,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAdjustLocation;
     /// <summary>
-    /// Function: SetAdjustLocation
+    /// Function: SetAdjustLocation<br/>
+    /// Native code at BatmanAK.exe+0xB867E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAdjustLocation(System.Numerics.Vector3 NewLoc, bool bAdjust, bool bOffsetFromBase = default)
     {
@@ -2042,7 +2067,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDestinationPosition;
     /// <summary>
-    /// Function: GetDestinationPosition
+    /// Function: GetDestinationPosition<br/>
+    /// Native code at BatmanAK.exe+0xB41760 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDestinationPosition()
     {
@@ -2063,7 +2089,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestinationPosition;
     /// <summary>
-    /// Function: SetDestinationPosition
+    /// Function: SetDestinationPosition<br/>
+    /// Native code at BatmanAK.exe+0xB41680 in the Steam build
     /// </summary>
     public unsafe virtual void SetDestinationPosition(System.Numerics.Vector3 Dest, bool bOffsetFromBase = default)
     {
@@ -2086,7 +2113,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFocalPoint;
     /// <summary>
-    /// Function: GetFocalPoint
+    /// Function: GetFocalPoint<br/>
+    /// Native code at BatmanAK.exe+0xB41620 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFocalPoint()
     {
@@ -2107,7 +2135,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFocalPoint;
     /// <summary>
-    /// Function: SetFocalPoint
+    /// Function: SetFocalPoint<br/>
+    /// Native code at BatmanAK.exe+0xB41540 in the Steam build
     /// </summary>
     public unsafe virtual void SetFocalPoint(System.Numerics.Vector3 FP, bool bOffsetFromBase = default)
     {
@@ -2130,7 +2159,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RouteCache_RemoveIndex;
     /// <summary>
-    /// Function: RouteCache_RemoveIndex
+    /// Function: RouteCache_RemoveIndex<br/>
+    /// Native code at BatmanAK.exe+0xB86690 in the Steam build
     /// </summary>
     public unsafe virtual void RouteCache_RemoveIndex(int InIndex, int Count = default)
     {
@@ -2153,7 +2183,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RouteCache_RemoveItem;
     /// <summary>
-    /// Function: RouteCache_RemoveItem
+    /// Function: RouteCache_RemoveItem<br/>
+    /// Native code at BatmanAK.exe+0xB86560 in the Steam build
     /// </summary>
     public unsafe virtual void RouteCache_RemoveItem(BmSDK.Engine.NavigationPoint Nav)
     {
@@ -2175,7 +2206,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RouteCache_InsertItem;
     /// <summary>
-    /// Function: RouteCache_InsertItem
+    /// Function: RouteCache_InsertItem<br/>
+    /// Native code at BatmanAK.exe+0xB86400 in the Steam build
     /// </summary>
     public unsafe virtual void RouteCache_InsertItem(BmSDK.Engine.NavigationPoint Nav, int Idx = default)
     {
@@ -2198,7 +2230,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RouteCache_AddItem;
     /// <summary>
-    /// Function: RouteCache_AddItem
+    /// Function: RouteCache_AddItem<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe virtual void RouteCache_AddItem(BmSDK.Engine.NavigationPoint Nav)
     {
@@ -2220,7 +2253,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RouteCache_Empty;
     /// <summary>
-    /// Function: RouteCache_Empty
+    /// Function: RouteCache_Empty<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void RouteCache_Empty()
     {
@@ -2241,7 +2275,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocalController;
     /// <summary>
-    /// Function: IsLocalController
+    /// Function: IsLocalController<br/>
+    /// Native code at BatmanAK.exe+0x484190 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocalController()
     {
@@ -2262,7 +2297,8 @@ public partial class Controller : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocalPlayerController;
     /// <summary>
-    /// Function: IsLocalPlayerController
+    /// Function: IsLocalPlayerController<br/>
+    /// Native code at BatmanAK.exe+0x46B3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocalPlayerController()
     {

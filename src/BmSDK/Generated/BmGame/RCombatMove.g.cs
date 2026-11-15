@@ -1858,7 +1858,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScriptNotifyInfo;
     /// <summary>
-    /// Function: GetScriptNotifyInfo
+    /// Function: GetScriptNotifyInfo<br/>
+    /// Native code at BatmanAK.exe+0x4D2530 in the Steam build
     /// </summary>
     public unsafe virtual bool GetScriptNotifyInfo(BmSDK.Engine.AnimSequence TestAnimmSequence, BmSDK.FName ScriptNameContaining, out float FirstNotifyTime, out int NotifyCount)
     {
@@ -1887,7 +1888,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraFovFromAnimSequence;
     /// <summary>
-    /// Function: GetCameraFovFromAnimSequence
+    /// Function: GetCameraFovFromAnimSequence<br/>
+    /// Native code at BatmanAK.exe+0x4D2270 in the Steam build
     /// </summary>
     public unsafe virtual float GetCameraFovFromAnimSequence(BmSDK.FName AnimName, BmSDK.Engine.AnimSet CameraAnimSet, float SequenceAnimTime)
     {
@@ -1911,7 +1913,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasCameraAnim;
     /// <summary>
-    /// Function: HasCameraAnim
+    /// Function: HasCameraAnim<br/>
+    /// Native code at BatmanAK.exe+0x4D2080 in the Steam build
     /// </summary>
     public unsafe virtual bool HasCameraAnim(BmSDK.Engine.AnimSet CameraAnimSet, BmSDK.FName movename)
     {
@@ -1934,7 +1937,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraAnimName;
     /// <summary>
-    /// Function: GetCameraAnimName
+    /// Function: GetCameraAnimName<br/>
+    /// Native code at BatmanAK.exe+0x5615B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetCameraAnimName(BmSDK.TArray<BmSDK.Engine.AnimSet> CameraAnimsets, BmSDK.FName movename)
     {
@@ -1957,7 +1961,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEnvironmentInDir;
     /// <summary>
-    /// Function: CheckEnvironmentInDir
+    /// Function: CheckEnvironmentInDir<br/>
+    /// Native code at BatmanAK.exe+0x4D1D10 in the Steam build
     /// </summary>
     public unsafe virtual int CheckEnvironmentInDir(System.Numerics.Vector3 CheckDir, float CheckDist, System.Numerics.Vector3 CheckStart, BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 WallLoc, out System.Numerics.Vector3 WallNormal, float TestLeftDist = default, bool bAllowInvalidWall = default)
     {
@@ -1990,7 +1995,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsClearOfEnvironment;
     /// <summary>
-    /// Function: IsClearOfEnvironment
+    /// Function: IsClearOfEnvironment<br/>
+    /// Native code at BatmanAK.exe+0x4D1A20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsClearOfEnvironment(System.Numerics.Vector3 CheckDir, float CheckDist, System.Numerics.Vector3 CheckStart, BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 BlockedLoc, out System.Numerics.Vector3 BlockedNormal)
     {
@@ -2021,7 +2027,8 @@ public partial class RCombatMove : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllTimers;
     /// <summary>
-    /// Function: ClearAllTimers
+    /// Function: ClearAllTimers<br/>
+    /// Native code at BatmanAK.exe+0x46A160 in the Steam build
     /// </summary>
     public unsafe override void ClearAllTimers(BmSDK.GameObject inObj = default)
     {

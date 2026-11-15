@@ -130,7 +130,8 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheFractureEffects;
     /// <summary>
-    /// Function: CacheFractureEffects
+    /// Function: CacheFractureEffects<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void CacheFractureEffects()
     {

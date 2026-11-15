@@ -275,7 +275,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGrappleGunTarget;
     /// <summary>
-    /// Function: UpdateGrappleGunTarget
+    /// Function: UpdateGrappleGunTarget<br/>
+    /// Native code at BatmanAK.exe+0x50E0A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGrappleGunTarget(float DeltaTime)
     {
@@ -353,7 +354,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGrapplePointCollision;
     /// <summary>
-    /// Function: CheckGrapplePointCollision
+    /// Function: CheckGrapplePointCollision<br/>
+    /// Native code at BatmanAK.exe+0x50DE70 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckGrapplePointCollision(System.Numerics.Vector3 GrappleTargetPos, bool SwingGrapple, BmSDK.BmGame.RHidePoint HidePointToCheck = default, BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo GrapplePointToCheck = default)
     {
@@ -378,7 +380,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckCurrentGrapplePointCollision;
     /// <summary>
-    /// Function: CheckCurrentGrapplePointCollision
+    /// Function: CheckCurrentGrapplePointCollision<br/>
+    /// Native code at BatmanAK.exe+0x48F890 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckCurrentGrapplePointCollision()
     {
@@ -399,7 +402,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrappleTargetPosition;
     /// <summary>
-    /// Function: GetGrappleTargetPosition
+    /// Function: GetGrappleTargetPosition<br/>
+    /// Native code at BatmanAK.exe+0x48F830 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGrappleTargetPosition()
     {
@@ -420,7 +424,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseGrappleWayPoints;
     /// <summary>
-    /// Function: InitialiseGrappleWayPoints
+    /// Function: InitialiseGrappleWayPoints<br/>
+    /// Native code at BatmanAK.exe+0x48F7F0 in the Steam build
     /// </summary>
     public unsafe virtual void InitialiseGrappleWayPoints()
     {
@@ -441,7 +446,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcGrappleLength;
     /// <summary>
-    /// Function: CalcGrappleLength
+    /// Function: CalcGrappleLength<br/>
+    /// Native code at BatmanAK.exe+0x48F7B0 in the Steam build
     /// </summary>
     public unsafe virtual void CalcGrappleLength()
     {
@@ -462,7 +468,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForGrappleWaypoints;
     /// <summary>
-    /// Function: CheckForGrappleWaypoints
+    /// Function: CheckForGrappleWaypoints<br/>
+    /// Native code at BatmanAK.exe+0x48F770 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForGrappleWaypoints()
     {
@@ -497,7 +504,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideBeamHidePoint;
     /// <summary>
-    /// Function: OverrideBeamHidePoint
+    /// Function: OverrideBeamHidePoint<br/>
+    /// Native code at BatmanAK.exe+0x50DD50 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideBeamHidePoint(BmSDK.BmGame.RHidePoint_LampPostTop BeamHidePoint)
     {
@@ -592,7 +600,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumAvailableGrapplePoints;
     /// <summary>
-    /// Function: GetNumAvailableGrapplePoints
+    /// Function: GetNumAvailableGrapplePoints<br/>
+    /// Native code at BatmanAK.exe+0x48F720 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumAvailableGrapplePoints()
     {
@@ -713,7 +722,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearGrappleInfo;
     /// <summary>
-    /// Function: ClearGrappleInfo
+    /// Function: ClearGrappleInfo<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearGrappleInfo()
     {
@@ -734,7 +744,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawGrapplePointDebug;
     /// <summary>
-    /// Function: DrawGrapplePointDebug
+    /// Function: DrawGrapplePointDebug<br/>
+    /// Native code at BatmanAK.exe+0x48F6E0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawGrapplePointDebug()
     {
@@ -755,7 +766,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindGrapplePointMultipleConesNative;
     /// <summary>
-    /// Function: FindGrapplePointMultipleConesNative
+    /// Function: FindGrapplePointMultipleConesNative<br/>
+    /// Native code at BatmanAK.exe+0x564F90 in the Steam build
     /// </summary>
     public unsafe virtual void FindGrapplePointMultipleConesNative(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle)
     {
@@ -813,7 +825,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCheckFrame;
     /// <summary>
-    /// Function: UpdateCheckFrame
+    /// Function: UpdateCheckFrame<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCheckFrame()
     {
@@ -834,7 +847,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestCeilingClimbPoint;
     /// <summary>
-    /// Function: FindBestCeilingClimbPoint
+    /// Function: FindBestCeilingClimbPoint<br/>
+    /// Native code at BatmanAK.exe+0x48F630 in the Steam build
     /// </summary>
     public unsafe virtual bool FindBestCeilingClimbPoint(out BmSDK.BmGame.RPawnPlayer.FCeilingClimbPoint CeilingClimbPoint)
     {
@@ -1048,7 +1062,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetGrappleTargets;
     /// <summary>
-    /// Function: ResetGrappleTargets
+    /// Function: ResetGrappleTargets<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetGrappleTargets()
     {
@@ -1098,7 +1113,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrapplePoint;
     /// <summary>
-    /// Function: SetGrapplePoint
+    /// Function: SetGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x50DC30 in the Steam build
     /// </summary>
     public unsafe virtual void SetGrapplePoint(BmSDK.BmGame.RGrapplePoint NewPoint)
     {
@@ -1120,7 +1136,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLastGrapplePoint;
     /// <summary>
-    /// Function: SetLastGrapplePoint
+    /// Function: SetLastGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x48F5F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLastGrapplePoint()
     {
@@ -1141,7 +1158,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InvalidateLastGrapplePoint;
     /// <summary>
-    /// Function: InvalidateLastGrapplePoint
+    /// Function: InvalidateLastGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x48F5B0 in the Steam build
     /// </summary>
     public unsafe virtual void InvalidateLastGrapplePoint()
     {
@@ -1162,7 +1180,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InvalidateGrapplePoint;
     /// <summary>
-    /// Function: InvalidateGrapplePoint
+    /// Function: InvalidateGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x48F570 in the Steam build
     /// </summary>
     public unsafe virtual void InvalidateGrapplePoint()
     {
@@ -1183,7 +1202,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastGrapplePoint;
     /// <summary>
-    /// Function: GetLastGrapplePoint
+    /// Function: GetLastGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x48F4D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetLastGrapplePoint(out BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo GrappleInfo)
     {
@@ -1207,7 +1227,8 @@ public partial class RGrappleGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrapplePoint;
     /// <summary>
-    /// Function: GetGrapplePoint
+    /// Function: GetGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x48F430 in the Steam build
     /// </summary>
     public unsafe virtual void GetGrapplePoint(out BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo GrappleInfo)
     {

@@ -95,7 +95,8 @@ public partial class RVehicleBehaviour_TankStrafe : BmSDK.BmGame.RVehicleBehavio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAvoidOtherTanksRestrictions;
     /// <summary>
-    /// Function: SetAvoidOtherTanksRestrictions
+    /// Function: SetAvoidOtherTanksRestrictions<br/>
+    /// Native code at BatmanAK.exe+0x56E2A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAvoidOtherTanksRestrictions(out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restrict)
     {

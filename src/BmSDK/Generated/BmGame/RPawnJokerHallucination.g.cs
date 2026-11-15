@@ -385,7 +385,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJoker;
     /// <summary>
-    /// Function: UpdateJoker
+    /// Function: UpdateJoker<br/>
+    /// Native code at BatmanAK.exe+0x4CEDC0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateJoker(float DeltaTime)
     {
@@ -479,7 +480,8 @@ public partial class RPawnJokerHallucination : BmSDK.BmGame.RPawnFriendly, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowedToFireAtWithBatmobile;
     /// <summary>
-    /// Function: AllowedToFireAtWithBatmobile
+    /// Function: AllowedToFireAtWithBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x474D90 in the Steam build
     /// </summary>
     public unsafe override bool AllowedToFireAtWithBatmobile()
     {

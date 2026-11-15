@@ -95,7 +95,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestHidePointForRobin;
     /// <summary>
-    /// Function: GetBestHidePointForRobin
+    /// Function: GetBestHidePointForRobin<br/>
+    /// Native code at BatmanAK.exe+0x4D34D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetBestHidePointForRobin(bool IsInjured, bool bCheckCollision = default)
     {
@@ -961,7 +962,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestMoveToPoint;
     /// <summary>
-    /// Function: GetBestMoveToPoint
+    /// Function: GetBestMoveToPoint<br/>
+    /// Native code at BatmanAK.exe+0x47A250 in the Steam build
     /// </summary>
     public unsafe virtual void GetBestMoveToPoint(out System.Numerics.Vector3 TestLocation)
     {
@@ -985,7 +987,8 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.En
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayCombatTaunt;
     /// <summary>
-    /// Function: CanPlayCombatTaunt
+    /// Function: CanPlayCombatTaunt<br/>
+    /// Native code at BatmanAK.exe+0x47A200 in the Steam build
     /// </summary>
     public unsafe virtual bool CanPlayCombatTaunt()
     {

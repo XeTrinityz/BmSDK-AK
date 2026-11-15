@@ -624,7 +624,8 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSelectedByCursor;
     /// <summary>
-    /// Function: IsSelectedByCursor
+    /// Function: IsSelectedByCursor<br/>
+    /// Native code at BatmanAK.exe+0x510A00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSelectedByCursor(BmSDK.Engine.StaticMeshComponent TestMesh, System.Numerics.Vector3 Origin, float Scale, BmSDK.Engine.Canvas Canvas, out System.Numerics.Vector2 cmin, out System.Numerics.Vector2 cmax)
     {

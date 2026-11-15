@@ -80,7 +80,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceToClimbOut;
     /// <summary>
-    /// Function: CheckSpaceToClimbOut
+    /// Function: CheckSpaceToClimbOut<br/>
+    /// Native code at BatmanAK.exe+0x481890 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceToClimbOut(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
@@ -475,7 +476,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFinalGrateRotAndTrans;
     /// <summary>
-    /// Function: GetFinalGrateRotAndTrans
+    /// Function: GetFinalGrateRotAndTrans<br/>
+    /// Native code at BatmanAK.exe+0x4817A0 in the Steam build
     /// </summary>
     public unsafe virtual void GetFinalGrateRotAndTrans(out BmSDK.Rotator GrateRot, out System.Numerics.Vector3 GrateTrans)
     {
@@ -502,7 +504,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCapeCollision;
     /// <summary>
-    /// Function: UpdateCapeCollision
+    /// Function: UpdateCapeCollision<br/>
+    /// Native code at BatmanAK.exe+0x481760 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCapeCollision()
     {
@@ -605,7 +608,8 @@ public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableCapeCollision;
     /// <summary>
-    /// Function: SetDisableCapeCollision
+    /// Function: SetDisableCapeCollision<br/>
+    /// Native code at BatmanAK.exe+0x4E8320 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableCapeCollision(bool bDisabled)
     {

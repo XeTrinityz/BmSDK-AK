@@ -80,7 +80,8 @@ public partial class AkSDRelationshipIsFalse : BmSDK.AkAudio.AkSDRelationship, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Evaluate;
     /// <summary>
-    /// Function: Evaluate
+    /// Function: Evaluate<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe override float Evaluate()
     {

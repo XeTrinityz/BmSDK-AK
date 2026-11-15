@@ -136,7 +136,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRenderGFX;
     /// <summary>
-    /// Function: SetRenderGFX
+    /// Function: SetRenderGFX<br/>
+    /// Native code at BatmanAK.exe+0x4AF6E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRenderGFX(bool bRender)
     {
@@ -158,7 +159,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderDebugQuadTreeMap;
     /// <summary>
-    /// Function: RenderDebugQuadTreeMap
+    /// Function: RenderDebugQuadTreeMap<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void RenderDebugQuadTreeMap()
     {
@@ -179,7 +181,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderDebugMiniMap;
     /// <summary>
-    /// Function: RenderDebugMiniMap
+    /// Function: RenderDebugMiniMap<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void RenderDebugMiniMap()
     {
@@ -200,7 +203,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleDebugMiniMap;
     /// <summary>
-    /// Function: ToggleDebugMiniMap
+    /// Function: ToggleDebugMiniMap<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleDebugMiniMap()
     {
@@ -221,7 +225,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpAssets;
     /// <summary>
-    /// Function: DumpAssets
+    /// Function: DumpAssets<br/>
+    /// Native code at BatmanAK.exe+0x46D7A0 in the Steam build
     /// </summary>
     public unsafe virtual void DumpAssets(bool bViewIt = default)
     {
@@ -243,7 +248,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDuplicateWarningsAndErrors;
     /// <summary>
-    /// Function: ClearDuplicateWarningsAndErrors
+    /// Function: ClearDuplicateWarningsAndErrors<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void ClearDuplicateWarningsAndErrors()
     {
@@ -264,7 +270,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayWarningsAndErrors;
     /// <summary>
-    /// Function: DisplayWarningsAndErrors
+    /// Function: DisplayWarningsAndErrors<br/>
+    /// Native code at BatmanAK.exe+0x4AF430 in the Steam build
     /// </summary>
     public unsafe virtual void DisplayWarningsAndErrors(bool ShowDuplicates, bool Outline, int Max)
     {
@@ -288,7 +295,8 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearWarningsAndErrors;
     /// <summary>
-    /// Function: ClearWarningsAndErrors
+    /// Function: ClearWarningsAndErrors<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void ClearWarningsAndErrors()
     {

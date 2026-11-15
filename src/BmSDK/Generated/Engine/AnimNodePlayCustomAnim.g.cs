@@ -141,7 +141,8 @@ public partial class AnimNodePlayCustomAnim : BmSDK.Engine.AnimNodeBlend, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCustomAnim;
     /// <summary>
-    /// Function: StopCustomAnim
+    /// Function: StopCustomAnim<br/>
+    /// Native code at BatmanAK.exe+0xB54520 in the Steam build
     /// </summary>
     public unsafe virtual void StopCustomAnim(float BlendOutTime)
     {
@@ -163,7 +164,8 @@ public partial class AnimNodePlayCustomAnim : BmSDK.Engine.AnimNodeBlend, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnimByDuration;
     /// <summary>
-    /// Function: PlayCustomAnimByDuration
+    /// Function: PlayCustomAnimByDuration<br/>
+    /// Native code at BatmanAK.exe+0xB54210 in the Steam build
     /// </summary>
     public unsafe virtual void PlayCustomAnimByDuration(BmSDK.FName AnimName, float Duration, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default)
     {
@@ -190,7 +192,8 @@ public partial class AnimNodePlayCustomAnim : BmSDK.Engine.AnimNodeBlend, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnim;
     /// <summary>
-    /// Function: PlayCustomAnim
+    /// Function: PlayCustomAnim<br/>
+    /// Native code at BatmanAK.exe+0xB53EE0 in the Steam build
     /// </summary>
     public unsafe virtual float PlayCustomAnim(BmSDK.FName AnimName, float Rate, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default)
     {

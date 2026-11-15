@@ -75,7 +75,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachFromAny;
     /// <summary>
-    /// Function: DetachFromAny
+    /// Function: DetachFromAny<br/>
+    /// Native code at BatmanAK.exe+0xB34110 in the Steam build
     /// </summary>
     public unsafe virtual void DetachFromAny()
     {
@@ -96,7 +97,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueReattach;
     /// <summary>
-    /// Function: QueueReattach
+    /// Function: QueueReattach<br/>
+    /// Native code at BatmanAK.exe+0xC41430 in the Steam build
     /// </summary>
     public unsafe virtual void QueueReattach(bool bTransformOnly)
     {
@@ -118,7 +120,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdate;
     /// <summary>
-    /// Function: ForceUpdate
+    /// Function: ForceUpdate<br/>
+    /// Native code at BatmanAK.exe+0xC2CD50 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUpdate(bool bTransformOnly)
     {
@@ -140,7 +143,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetComponentRBFixed;
     /// <summary>
-    /// Function: SetComponentRBFixed
+    /// Function: SetComponentRBFixed<br/>
+    /// Native code at BatmanAK.exe+0xB5DDE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetComponentRBFixed(bool bFixed)
     {
@@ -162,7 +166,8 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickGroup;
     /// <summary>
-    /// Function: SetTickGroup
+    /// Function: SetTickGroup<br/>
+    /// Native code at BatmanAK.exe+0xB34090 in the Steam build
     /// </summary>
     public unsafe virtual void SetTickGroup(BmSDK.GameObject.ETickingGroup NewTickGroup)
     {

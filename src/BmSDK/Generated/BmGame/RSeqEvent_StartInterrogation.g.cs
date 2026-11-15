@@ -150,7 +150,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelInterrogationMovesLoading;
     /// <summary>
-    /// Function: CancelInterrogationMovesLoading
+    /// Function: CancelInterrogationMovesLoading<br/>
+    /// Native code at BatmanAK.exe+0x48D6F0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelInterrogationMovesLoading()
     {
@@ -171,7 +172,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitInterrogationMoves;
     /// <summary>
-    /// Function: InitInterrogationMoves
+    /// Function: InitInterrogationMoves<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool InitInterrogationMoves()
     {
@@ -192,7 +194,8 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadInterrogationMoves;
     /// <summary>
-    /// Function: LoadInterrogationMoves
+    /// Function: LoadInterrogationMoves<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadInterrogationMoves()
     {

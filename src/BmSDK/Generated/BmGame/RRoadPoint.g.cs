@@ -110,7 +110,8 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SpawnRoadLink;
     /// <summary>
-    /// Function: SpawnRoadLink
+    /// Function: SpawnRoadLink<br/>
+    /// Native code at BatmanAK.exe+0x4E96F0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RRoadLink SpawnRoadLink(BmSDK.BmGame.RRoadPoint PointA, BmSDK.BmGame.RRoadPoint PointB)
     {
@@ -132,7 +133,8 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisplayLines;
     /// <summary>
-    /// Function: UpdateDisplayLines
+    /// Function: UpdateDisplayLines<br/>
+    /// Native code at BatmanAK.exe+0x484830 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDisplayLines()
     {
@@ -249,7 +251,8 @@ public static class RRoadPointStatics
 {
     private static BmSDK.Function __fn_SpawnRoadLink;
     /// <summary>
-    /// Function: SpawnRoadLink, run on <paramref name="self"/> rather than the class default object
+    /// Function: SpawnRoadLink, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4E96F0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RRoadLink SpawnRoadLink(this BmSDK.BmGame.RRoadPoint self, BmSDK.BmGame.RRoadPoint PointA, BmSDK.BmGame.RRoadPoint PointB)
     {

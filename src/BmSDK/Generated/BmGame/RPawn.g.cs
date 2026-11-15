@@ -194,7 +194,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldContinueSurveillance;
     /// <summary>
-    /// Function: ShouldContinueSurveillance
+    /// Function: ShouldContinueSurveillance<br/>
+    /// Native code at BatmanAK.exe+0x46E050 in the Steam build
     /// </summary>
     public unsafe override bool ShouldContinueSurveillance()
     {
@@ -274,7 +275,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPDD;
     /// <summary>
-    /// Function: GetPDD
+    /// Function: GetPDD<br/>
+    /// Native code at BatmanAK.exe+0x472760 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPersistentDebugData GetPDD()
     {
@@ -392,7 +394,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToThoughtHistory;
     /// <summary>
-    /// Function: AddToThoughtHistory
+    /// Function: AddToThoughtHistory<br/>
+    /// Native code at BatmanAK.exe+0x537270 in the Steam build
     /// </summary>
     public unsafe override void AddToThoughtHistory(BmSDK.FStringArg BehaviourInfoString, BmSDK.Engine.Pawn.PawnHistoryType T = default)
     {
@@ -460,7 +463,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TeleportPhysics;
     /// <summary>
-    /// Function: TeleportPhysics
+    /// Function: TeleportPhysics<br/>
+    /// Native code at BatmanAK.exe+0xB445E0 in the Steam build
     /// </summary>
     public unsafe virtual void TeleportPhysics()
     {
@@ -604,7 +608,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFootstepSurface;
     /// <summary>
-    /// Function: FindFootstepSurface
+    /// Function: FindFootstepSurface<br/>
+    /// Native code at BatmanAK.exe+0x472550 in the Steam build
     /// </summary>
     public unsafe virtual bool FindFootstepSurface(BmSDK.BmGame.RAnimNotify_Footstep.EFootstepSurfaceFinder Type, BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact, out System.Numerics.Vector3 InOut_FootLocation, out System.Numerics.Vector3 Out_Normal, out BmSDK.Engine.PhysicalMaterial Out_Material, out BmSDK.Engine.Actor out_Actor)
     {
@@ -658,7 +663,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFootstepEffectDepth;
     /// <summary>
-    /// Function: GetFootstepEffectDepth
+    /// Function: GetFootstepEffectDepth<br/>
+    /// Native code at BatmanAK.exe+0x4724B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetFootstepEffectDepth(System.Numerics.Vector3 FootLocation)
     {
@@ -864,7 +870,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeComponentDepthPriorityGroup;
     /// <summary>
-    /// Function: ChangeComponentDepthPriorityGroup
+    /// Function: ChangeComponentDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0x472400 in the Steam build
     /// </summary>
     public unsafe virtual void ChangeComponentDepthPriorityGroup(BmSDK.Engine.Scene.ESceneDepthPriorityGroup FromDPG, BmSDK.Engine.Scene.ESceneDepthPriorityGroup ToDPG)
     {
@@ -887,7 +894,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCorrectTickGroupForMeshesWithApexCloth;
     /// <summary>
-    /// Function: SetCorrectTickGroupForMeshesWithApexCloth
+    /// Function: SetCorrectTickGroupForMeshesWithApexCloth<br/>
+    /// Native code at BatmanAK.exe+0x4723C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCorrectTickGroupForMeshesWithApexCloth()
     {
@@ -908,7 +916,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeUpAllRFlaps;
     /// <summary>
-    /// Function: WakeUpAllRFlaps
+    /// Function: WakeUpAllRFlaps<br/>
+    /// Native code at BatmanAK.exe+0x472380 in the Steam build
     /// </summary>
     public unsafe virtual void WakeUpAllRFlaps()
     {
@@ -929,7 +938,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PutAllRFlapsToSleep;
     /// <summary>
-    /// Function: PutAllRFlapsToSleep
+    /// Function: PutAllRFlapsToSleep<br/>
+    /// Native code at BatmanAK.exe+0x4BB3E0 in the Steam build
     /// </summary>
     public unsafe virtual void PutAllRFlapsToSleep(bool bDeepSleep)
     {
@@ -951,7 +961,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsIncapacitated;
     /// <summary>
-    /// Function: IsIncapacitated
+    /// Function: IsIncapacitated<br/>
+    /// Native code at BatmanAK.exe+0x472330 in the Steam build
     /// </summary>
     public unsafe virtual bool IsIncapacitated()
     {
@@ -972,7 +983,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestReachable;
     /// <summary>
-    /// Function: GetNearestReachable
+    /// Function: GetNearestReachable<br/>
+    /// Native code at BatmanAK.exe+0x472240 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestReachable(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 TargetPoint)
     {
@@ -995,7 +1007,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSafePoint;
     /// <summary>
-    /// Function: GetSafePoint
+    /// Function: GetSafePoint<br/>
+    /// Native code at BatmanAK.exe+0x4721F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetSafePoint()
     {
@@ -1016,7 +1029,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSafe;
     /// <summary>
-    /// Function: IsSafe
+    /// Function: IsSafe<br/>
+    /// Native code at BatmanAK.exe+0x4721A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSafe()
     {
@@ -1052,7 +1066,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocationIgnoringCollision;
     /// <summary>
-    /// Function: SetLocationIgnoringCollision
+    /// Function: SetLocationIgnoringCollision<br/>
+    /// Native code at BatmanAK.exe+0x472110 in the Steam build
     /// </summary>
     public unsafe virtual void SetLocationIgnoringCollision(System.Numerics.Vector3 NewLocation)
     {
@@ -1074,7 +1089,8 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeadMesh;
     /// <summary>
-    /// Function: GetHeadMesh
+    /// Function: GetHeadMesh<br/>
+    /// Native code at BatmanAK.exe+0x4720C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshComponent GetHeadMesh()
     {

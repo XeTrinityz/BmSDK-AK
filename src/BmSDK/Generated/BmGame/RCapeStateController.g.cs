@@ -80,7 +80,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeToBoneDataReferencePose;
     /// <summary>
-    /// Function: SetCapeToBoneDataReferencePose
+    /// Function: SetCapeToBoneDataReferencePose<br/>
+    /// Native code at BatmanAK.exe+0x484F00 in the Steam build
     /// </summary>
     public unsafe virtual void SetCapeToBoneDataReferencePose()
     {
@@ -101,7 +102,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeToCurrentAnimPose;
     /// <summary>
-    /// Function: SetCapeToCurrentAnimPose
+    /// Function: SetCapeToCurrentAnimPose<br/>
+    /// Native code at BatmanAK.exe+0x484E60 in the Steam build
     /// </summary>
     public unsafe virtual void SetCapeToCurrentAnimPose(bool IsEvaluateAnim = default)
     {
@@ -123,7 +125,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResumeCape;
     /// <summary>
-    /// Function: ResumeCape
+    /// Function: ResumeCape<br/>
+    /// Native code at BatmanAK.exe+0x484E20 in the Steam build
     /// </summary>
     public unsafe virtual void ResumeCape()
     {
@@ -144,7 +147,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseCape;
     /// <summary>
-    /// Function: PauseCape
+    /// Function: PauseCape<br/>
+    /// Native code at BatmanAK.exe+0x484DE0 in the Steam build
     /// </summary>
     public unsafe virtual void PauseCape()
     {
@@ -165,7 +169,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsPausedOrPendingPaused;
     /// <summary>
-    /// Function: GetIsPausedOrPendingPaused
+    /// Function: GetIsPausedOrPendingPaused<br/>
+    /// Native code at BatmanAK.exe+0x484D90 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsPausedOrPendingPaused()
     {
@@ -186,7 +191,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginCinematicState;
     /// <summary>
-    /// Function: BeginCinematicState
+    /// Function: BeginCinematicState<br/>
+    /// Native code at BatmanAK.exe+0x4F2050 in the Steam build
     /// </summary>
     public unsafe virtual void BeginCinematicState(BmSDK.FName AnimName, BmSDK.BmGame.RCapeStateConfig TemplateStateConfig, float AnimStartTime, float AnimPlayRate = default, BmSDK.FName SyncAnimName = default, float SyncAnimOffset = default, bool bMirrored = default, bool bClearVelocityOnExit = default, bool bTeleportToInitialPose = default)
     {
@@ -216,7 +222,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeStateAndTime;
     /// <summary>
-    /// Function: SetCapeStateAndTime
+    /// Function: SetCapeStateAndTime<br/>
+    /// Native code at BatmanAK.exe+0x4F1CE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCapeStateAndTime(BmSDK.FName NewCapeStateName, float NewCapeStateTime, float AnimPlayRate = default, bool bMirrored = default, BmSDK.FName AnimName = default, BmSDK.FName SyncAnimNameOverride = default, float SyncAnimOffsetOverride = default)
     {
@@ -244,7 +251,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeState;
     /// <summary>
-    /// Function: SetCapeState
+    /// Function: SetCapeState<br/>
+    /// Native code at BatmanAK.exe+0x4F1920 in the Steam build
     /// </summary>
     public unsafe virtual void SetCapeState(BmSDK.FName NewCapeStateName, BmSDK.FName NewCapeAnimName, float AnimStartTime = default, float AnimPlayRate = default, bool ForceRestart = default, bool ForceInitialPose = default, bool bMirrored = default, BmSDK.FName SyncAnimName = default, float SyncAnimOffset = default)
     {
@@ -274,7 +282,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
-    /// Function: Update
+    /// Function: Update<br/>
+    /// Native code at BatmanAK.exe+0x4F17F0 in the Steam build
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
@@ -296,7 +305,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePauseState;
     /// <summary>
-    /// Function: UpdatePauseState
+    /// Function: UpdatePauseState<br/>
+    /// Native code at BatmanAK.exe+0x484D50 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePauseState()
     {
@@ -317,7 +327,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Finalise;
     /// <summary>
-    /// Function: Finalise
+    /// Function: Finalise<br/>
+    /// Native code at BatmanAK.exe+0x484D10 in the Steam build
     /// </summary>
     public unsafe virtual void Finalise()
     {
@@ -338,7 +349,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
-    /// Function: Initialise
+    /// Function: Initialise<br/>
+    /// Native code at BatmanAK.exe+0x4F16D0 in the Steam build
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.FName InitialCapeStateName)
     {
@@ -360,7 +372,8 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInitialised;
     /// <summary>
-    /// Function: GetIsInitialised
+    /// Function: GetIsInitialised<br/>
+    /// Native code at BatmanAK.exe+0x484CC0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {

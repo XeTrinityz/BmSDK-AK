@@ -249,7 +249,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistFromExposureLine;
     /// <summary>
-    /// Function: GetDistFromExposureLine
+    /// Function: GetDistFromExposureLine<br/>
+    /// Native code at BatmanAK.exe+0x4E4C10 in the Steam build
     /// </summary>
     public unsafe virtual float GetDistFromExposureLine(System.Numerics.Vector3 TestPos, System.Numerics.Vector3 HideFromPos, BmSDK.BmGame.RCornerWallMarker AmbushStart, BmSDK.BmGame.RCornerWallMarker AmbushEnd)
     {
@@ -274,7 +275,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeLockedBy;
     /// <summary>
-    /// Function: CanBeLockedBy
+    /// Function: CanBeLockedBy<br/>
+    /// Native code at BatmanAK.exe+0x4A5E30 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeLockedBy(BmSDK.BmGame.RBMAIController TestLockedBy)
     {
@@ -296,7 +298,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCornerFor;
     /// <summary>
-    /// Function: GetCornerFor
+    /// Function: GetCornerFor<br/>
+    /// Native code at BatmanAK.exe+0x4E4A10 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCornerFor(BmSDK.BmGame.RCornerWallMarker StartWall, BmSDK.BmGame.RCornerWallMarker DestWall)
     {
@@ -319,7 +322,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeregisterCornerPointsWithNavMesh;
     /// <summary>
-    /// Function: DeregisterCornerPointsWithNavMesh
+    /// Function: DeregisterCornerPointsWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DeregisterCornerPointsWithNavMesh()
     {
@@ -340,7 +344,8 @@ public partial class RCornerPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterCornerPointsWithNavMesh;
     /// <summary>
-    /// Function: RegisterCornerPointsWithNavMesh
+    /// Function: RegisterCornerPointsWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterCornerPointsWithNavMesh()
     {

@@ -75,7 +75,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDamageLevel;
     /// <summary>
-    /// Function: RefreshDamageLevel
+    /// Function: RefreshDamageLevel<br/>
+    /// Native code at BatmanAK.exe+0x4B14E0 in the Steam build
     /// </summary>
     public unsafe virtual void RefreshDamageLevel(BmSDK.FName PlayerBatmobileName)
     {
@@ -97,7 +98,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileMeshData;
     /// <summary>
-    /// Function: SetBatmobileMeshData
+    /// Function: SetBatmobileMeshData<br/>
+    /// Native code at BatmanAK.exe+0x4B12F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBatmobileMeshData(BmSDK.BmGame.RAddContentBatmobile BatmobileData, BmSDK.BmGame.RAddContentBatmobileMesh MeshData)
     {
@@ -120,7 +122,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachPlayerMesh;
     /// <summary>
-    /// Function: DetachPlayerMesh
+    /// Function: DetachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x46C620 in the Steam build
     /// </summary>
     public unsafe virtual void DetachPlayerMesh()
     {
@@ -141,7 +144,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockOnPlayerMeshAttached;
     /// <summary>
-    /// Function: BlockOnPlayerMeshAttached
+    /// Function: BlockOnPlayerMeshAttached<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe virtual void BlockOnPlayerMeshAttached()
     {
@@ -162,7 +166,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAttachPlayerMesh;
     /// <summary>
-    /// Function: CancelAttachPlayerMesh
+    /// Function: CancelAttachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelAttachPlayerMesh()
     {
@@ -183,7 +188,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachPlayerMesh;
     /// <summary>
-    /// Function: AttachPlayerMesh
+    /// Function: AttachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void AttachPlayerMesh()
     {
@@ -204,7 +210,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkinName;
     /// <summary>
-    /// Function: GetSkinName
+    /// Function: GetSkinName<br/>
+    /// Native code at BatmanAK.exe+0x53AC10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSkinName()
     {
@@ -225,7 +232,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllMeshComponents;
     /// <summary>
-    /// Function: GetAllMeshComponents
+    /// Function: GetAllMeshComponents<br/>
+    /// Native code at BatmanAK.exe+0x552B70 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllMeshComponents(out BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Out)
     {
@@ -319,7 +327,8 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMatineeWithBootVisible;
     /// <summary>
-    /// Function: SkipMatineeWithBootVisible
+    /// Function: SkipMatineeWithBootVisible<br/>
+    /// Native code at BatmanAK.exe+0x4B1100 in the Steam build
     /// </summary>
     public unsafe virtual void SkipMatineeWithBootVisible(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {

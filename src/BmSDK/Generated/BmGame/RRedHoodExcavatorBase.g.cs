@@ -80,7 +80,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimSetList;
     /// <summary>
-    /// Function: UpdateAnimSetList
+    /// Function: UpdateAnimSetList<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAnimSetList()
     {
@@ -101,7 +102,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
-    /// Function: MAT_FinishAnimControl
+    /// Function: MAT_FinishAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x509240 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -161,7 +163,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -213,7 +216,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestNodeToLocation;
     /// <summary>
-    /// Function: GetClosestNodeToLocation
+    /// Function: GetClosestNodeToLocation<br/>
+    /// Native code at BatmanAK.exe+0x48CF40 in the Steam build
     /// </summary>
     public unsafe virtual int GetClosestNodeToLocation(System.Numerics.Vector3 Loc)
     {
@@ -264,7 +268,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDebugs;
     /// <summary>
-    /// Function: SetAutoDebugs
+    /// Function: SetAutoDebugs<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoDebugs()
     {
@@ -285,7 +290,8 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateThroughWallsViewMesh;
     /// <summary>
-    /// Function: CreateThroughWallsViewMesh
+    /// Function: CreateThroughWallsViewMesh<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void CreateThroughWallsViewMesh()
     {

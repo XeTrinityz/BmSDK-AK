@@ -122,7 +122,8 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreObjVar;
     /// <summary>
-    /// Function: StoreObjVar
+    /// Function: StoreObjVar<br/>
+    /// Native code at BatmanAK.exe+0x547F80 in the Steam build
     /// </summary>
     public unsafe virtual void StoreObjVar(BmSDK.FStringArg Ident, int Index, BmSDK.GameObject Obj)
     {

@@ -143,7 +143,8 @@ public partial class UIManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUnpauseInternalUI;
     /// <summary>
-    /// Function: CanUnpauseInternalUI
+    /// Function: CanUnpauseInternalUI<br/>
+    /// Native code at BatmanAK.exe+0xB40D70 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUnpauseInternalUI()
     {
@@ -164,7 +165,8 @@ public partial class UIManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetUIManager;
     /// <summary>
-    /// Function: GetUIManager
+    /// Function: GetUIManager<br/>
+    /// Native code at BatmanAK.exe+0x84B320 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIManager GetUIManager()
     {
@@ -190,7 +192,8 @@ public static class UIManagerStatics
 {
     private static BmSDK.Function __fn_GetUIManager;
     /// <summary>
-    /// Function: GetUIManager, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetUIManager, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x84B320 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIManager GetUIManager(this BmSDK.Engine.UIManager self)
     {

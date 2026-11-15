@@ -265,7 +265,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWeaponRainMaterials;
     /// <summary>
-    /// Function: UpdateWeaponRainMaterials
+    /// Function: UpdateWeaponRainMaterials<br/>
+    /// Native code at BatmanAK.exe+0x4C2FC0 in the Steam build
     /// </summary>
     public unsafe override void UpdateWeaponRainMaterials(BmSDK.FName nWeaponRainParameterName, BmSDK.GameObject.FLinearColor WeaponRainDirectionColour)
     {
@@ -479,7 +480,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceForWallRun;
     /// <summary>
-    /// Function: CheckSpaceForWallRun
+    /// Function: CheckSpaceForWallRun<br/>
+    /// Native code at BatmanAK.exe+0x476950 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayer.EWallRunType CheckSpaceForWallRun(System.Numerics.Vector3 WallNormal)
     {
@@ -602,7 +604,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShimmyMove;
     /// <summary>
-    /// Function: ShimmyMove
+    /// Function: ShimmyMove<br/>
+    /// Native code at BatmanAK.exe+0x4CB5D0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShimmyMove(float RightSpeed, float DeltaTime)
     {
@@ -662,7 +665,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDestructibleChunks;
     /// <summary>
-    /// Function: ClearDestructibleChunks
+    /// Function: ClearDestructibleChunks<br/>
+    /// Native code at BatmanAK.exe+0x4CB470 in the Steam build
     /// </summary>
     public unsafe virtual void ClearDestructibleChunks(System.Numerics.Vector3 ClearLoc, float ClearRadius)
     {
@@ -968,7 +972,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindTouchingLevelVolume;
     /// <summary>
-    /// Function: FindTouchingLevelVolume
+    /// Function: FindTouchingLevelVolume<br/>
+    /// Native code at BatmanAK.exe+0x476900 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLevelVolume FindTouchingLevelVolume()
     {
@@ -989,7 +994,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFractureWall;
     /// <summary>
-    /// Function: CheckForFractureWall
+    /// Function: CheckForFractureWall<br/>
+    /// Native code at BatmanAK.exe+0x476820 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RFractureWallBase CheckForFractureWall(System.Numerics.Vector3 CheckPos, System.Numerics.Vector3 CheckExtent)
     {
@@ -1026,7 +1032,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAliveProjectiles;
     /// <summary>
-    /// Function: UpdateAliveProjectiles
+    /// Function: UpdateAliveProjectiles<br/>
+    /// Native code at BatmanAK.exe+0x4CB340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAliveProjectiles(BmSDK.BmGame.RProjectile NewProjectile)
     {
@@ -1048,7 +1055,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentPylonForTakedownCheck;
     /// <summary>
-    /// Function: SetCurrentPylonForTakedownCheck
+    /// Function: SetCurrentPylonForTakedownCheck<br/>
+    /// Native code at BatmanAK.exe+0x4767E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentPylonForTakedownCheck()
     {
@@ -1069,7 +1077,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCornerPoint;
     /// <summary>
-    /// Function: GetCornerPoint
+    /// Function: GetCornerPoint<br/>
+    /// Native code at BatmanAK.exe+0x4CB200 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCornerWallMarkerBase GetCornerPoint(float Range)
     {
@@ -1119,7 +1128,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWantsToCrouch;
     /// <summary>
-    /// Function: SetWantsToCrouch
+    /// Function: SetWantsToCrouch<br/>
+    /// Native code at BatmanAK.exe+0x4CB0E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetWantsToCrouch(bool NewWantsToCrouch)
     {
@@ -1198,7 +1208,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStaticMeshBounds;
     /// <summary>
-    /// Function: GetStaticMeshBounds
+    /// Function: GetStaticMeshBounds<br/>
+    /// Native code at BatmanAK.exe+0x4CAF70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBoxSphereBounds GetStaticMeshBounds(BmSDK.Engine.StaticMesh M)
     {
@@ -1296,7 +1307,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOffPawn;
     /// <summary>
-    /// Function: JumpOffPawn
+    /// Function: JumpOffPawn<br/>
+    /// Native code at BatmanAK.exe+0x48E300 in the Steam build
     /// </summary>
     public unsafe override void JumpOffPawn()
     {
@@ -1389,7 +1401,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceForFloorInterrogation;
     /// <summary>
-    /// Function: CheckSpaceForFloorInterrogation
+    /// Function: CheckSpaceForFloorInterrogation<br/>
+    /// Native code at BatmanAK.exe+0x4CADA0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceForFloorInterrogation(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, BmSDK.BmGame.RPawnVillain Target, bool bDebugDraw = default)
     {
@@ -1413,7 +1426,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForRagdolls;
     /// <summary>
-    /// Function: CheckForRagdolls
+    /// Function: CheckForRagdolls<br/>
+    /// Native code at BatmanAK.exe+0x4CAAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForRagdolls(System.Numerics.Vector3 CheckStart, System.Numerics.Vector3 CheckEnd, float Radius, BmSDK.BmGame.RPawnVillain Target, bool bDebugDraw = default)
     {
@@ -1453,7 +1467,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRunning;
     /// <summary>
-    /// Function: IsRunning
+    /// Function: IsRunning<br/>
+    /// Native code at BatmanAK.exe+0x476790 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRunning()
     {
@@ -1517,7 +1532,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DynamicCreateNearbyRigidBodies;
     /// <summary>
-    /// Function: DynamicCreateNearbyRigidBodies
+    /// Function: DynamicCreateNearbyRigidBodies<br/>
+    /// Native code at BatmanAK.exe+0x476750 in the Steam build
     /// </summary>
     public unsafe virtual void DynamicCreateNearbyRigidBodies()
     {
@@ -1538,7 +1554,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveApexCloth;
     /// <summary>
-    /// Function: RemoveApexCloth
+    /// Function: RemoveApexCloth<br/>
+    /// Native code at BatmanAK.exe+0x476710 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveApexCloth()
     {
@@ -1648,7 +1665,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyMeshData;
     /// <summary>
-    /// Function: ApplyMeshData
+    /// Function: ApplyMeshData<br/>
+    /// Native code at BatmanAK.exe+0x4CA900 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyMeshData(BmSDK.BmGame.RAddContentPlayerCharacterMesh MeshData, bool InPlay)
     {
@@ -1732,7 +1750,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Function __fn_GetInferredTransitionReferenceForAnim;
     /// <summary>
-    /// Function: GetInferredTransitionReferenceForAnim
+    /// Function: GetInferredTransitionReferenceForAnim<br/>
+    /// Native code at BatmanAK.exe+0x4CA4F0 in the Steam build
     /// </summary>
     public unsafe static bool GetInferredTransitionReferenceForAnim(BmSDK.BmGame.RPawnCharacter Pawn, BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.Engine.AnimSequence AnimSeq, bool Mirrored, out System.Numerics.Vector3 InferredReferencePointPosition, out BmSDK.Rotator InferredReferencePointRotation)
     {
@@ -1762,7 +1781,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Function __fn_GetInferredTransitionReference;
     /// <summary>
-    /// Function: GetInferredTransitionReference
+    /// Function: GetInferredTransitionReference<br/>
+    /// Native code at BatmanAK.exe+0x4CA270 in the Steam build
     /// </summary>
     public unsafe static bool GetInferredTransitionReference(BmSDK.BmGame.RPawnCharacter Pawn, BmSDK.Engine.SkeletalMeshComponent SkelComp, out System.Numerics.Vector3 InferredReferencePointPosition, out BmSDK.Rotator InferredReferencePointRotation)
     {
@@ -1790,7 +1810,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampLineSegmentToRange;
     /// <summary>
-    /// Function: ClampLineSegmentToRange
+    /// Function: ClampLineSegmentToRange<br/>
+    /// Native code at BatmanAK.exe+0x4C9FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool ClampLineSegmentToRange(System.Numerics.Vector3 PointA, System.Numerics.Vector3 PointB, System.Numerics.Vector3 CheckLocation, float Radius, out System.Numerics.Vector3 NewA, out System.Numerics.Vector3 NewB, bool bDebugClamp = default)
     {
@@ -1923,7 +1944,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointAndLineCheck;
     /// <summary>
-    /// Function: PointAndLineCheck
+    /// Function: PointAndLineCheck<br/>
+    /// Native code at BatmanAK.exe+0x476510 in the Steam build
     /// </summary>
     public unsafe virtual bool PointAndLineCheck(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, System.Numerics.Vector3 Extent, int ExtraTraceFlags = default, bool bDebugDraw = default)
     {
@@ -1955,7 +1977,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreeRotation;
     /// <summary>
-    /// Function: GetFreeRotation
+    /// Function: GetFreeRotation<br/>
+    /// Native code at BatmanAK.exe+0x4764B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetFreeRotation()
     {
@@ -2132,7 +2155,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFuturePosition;
     /// <summary>
-    /// Function: GetFuturePosition
+    /// Function: GetFuturePosition<br/>
+    /// Native code at BatmanAK.exe+0x4C9A90 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFuturePosition(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 StartSpeed, float LookAheadTime, int NumIncrements, int IgnoreFirstNChecks, float minZ, out float FlightTimeToHit, out int IterationsToHit, out System.Numerics.Vector3 HitNormal, out System.Numerics.Vector3 EndVelocity, bool bDebugDraw)
     {
@@ -2172,7 +2196,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFutureFallPosition;
     /// <summary>
-    /// Function: GetFutureFallPosition
+    /// Function: GetFutureFallPosition<br/>
+    /// Native code at BatmanAK.exe+0x4C97E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFutureFallPosition(float LookAheadTime, int NumIncrements, out System.Numerics.Vector3 HitNormal)
     {
@@ -2198,7 +2223,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathPosition;
     /// <summary>
-    /// Function: GetFlightPathPosition
+    /// Function: GetFlightPathPosition<br/>
+    /// Native code at BatmanAK.exe+0x4C94F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathPosition(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, System.Numerics.Vector3 StartVelocity, System.Numerics.Vector3 EndVelocity, float T, float FlightTime)
     {
@@ -2225,7 +2251,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFallingTarget;
     /// <summary>
-    /// Function: UpdateFallingTarget
+    /// Function: UpdateFallingTarget<br/>
+    /// Native code at BatmanAK.exe+0x476370 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFallingTarget(System.Numerics.Vector3 TestLocation, System.Numerics.Vector3 TestVelocity, float LookForward = default, bool HighPriorityOnly = default)
     {
@@ -2390,7 +2417,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClimbPointFeatureType;
     /// <summary>
-    /// Function: SetClimbPointFeatureType
+    /// Function: SetClimbPointFeatureType<br/>
+    /// Native code at BatmanAK.exe+0x4762C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClimbPointFeatureType(out BmSDK.BmGame.RPawnPlayer.FCeilingClimbPoint ClimbPoint)
     {
@@ -2709,7 +2737,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
-    /// Function: GetGravityZ
+    /// Function: GetGravityZ<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe override float GetGravityZ()
     {
@@ -2730,7 +2759,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementWireBounce;
     /// <summary>
-    /// Function: IncrementWireBounce
+    /// Function: IncrementWireBounce<br/>
+    /// Native code at BatmanAK.exe+0x4C92F0 in the Steam build
     /// </summary>
     public unsafe virtual void IncrementWireBounce(float Speed, float DeltaTime)
     {
@@ -2753,7 +2783,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffWireBounce;
     /// <summary>
-    /// Function: TurnOffWireBounce
+    /// Function: TurnOffWireBounce<br/>
+    /// Native code at BatmanAK.exe+0x476280 in the Steam build
     /// </summary>
     public unsafe virtual void TurnOffWireBounce()
     {
@@ -2774,7 +2805,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseWireBounce;
     /// <summary>
-    /// Function: InitialiseWireBounce
+    /// Function: InitialiseWireBounce<br/>
+    /// Native code at BatmanAK.exe+0x4C91C0 in the Steam build
     /// </summary>
     public unsafe virtual void InitialiseWireBounce(float InitialBounce)
     {
@@ -2796,7 +2828,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForSmallDropOffRailing;
     /// <summary>
-    /// Function: CheckForSmallDropOffRailing
+    /// Function: CheckForSmallDropOffRailing<br/>
+    /// Native code at BatmanAK.exe+0x476100 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForSmallDropOffRailing(System.Numerics.Vector3 Direction, System.Numerics.Vector3 RailingPerp, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator, bool SteppingOffEnd = default)
     {
@@ -2837,7 +2870,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpecialMoveFinished;
     /// <summary>
-    /// Function: SpecialMoveFinished
+    /// Function: SpecialMoveFinished<br/>
+    /// Native code at BatmanAK.exe+0x4C90A0 in the Steam build
     /// </summary>
     public unsafe virtual void SpecialMoveFinished(BmSDK.BmGame.RSpecialMoveInstance FinishedMove)
     {
@@ -3053,7 +3087,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWireWalking;
     /// <summary>
-    /// Function: SetWireWalking
+    /// Function: SetWireWalking<br/>
+    /// Native code at BatmanAK.exe+0x4C8EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetWireWalking(bool OnOrOff, BmSDK.BmGame.RHidePoint_RopeBase NewWire)
     {
@@ -3076,7 +3111,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRailing;
     /// <summary>
-    /// Function: FindRailing
+    /// Function: FindRailing<br/>
+    /// Native code at BatmanAK.exe+0x476010 in the Steam build
     /// </summary>
     public unsafe virtual bool FindRailing(System.Numerics.Vector3 Direction, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator RailingLoc)
     {
@@ -3101,7 +3137,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearGrapplePointControlPoint;
     /// <summary>
-    /// Function: ClearGrapplePointControlPoint
+    /// Function: ClearGrapplePointControlPoint<br/>
+    /// Native code at BatmanAK.exe+0x475FD0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearGrapplePointControlPoint()
     {
@@ -3122,7 +3159,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateGrappleWireControlPoint;
     /// <summary>
-    /// Function: CreateGrappleWireControlPoint
+    /// Function: CreateGrappleWireControlPoint<br/>
+    /// Native code at BatmanAK.exe+0x4C8D50 in the Steam build
     /// </summary>
     public unsafe virtual void CreateGrappleWireControlPoint(BmSDK.BmGame.RHidePoint_RopeBase Wire, System.Numerics.Vector3 ApproxPosition)
     {
@@ -3145,7 +3183,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLastWirePoint;
     /// <summary>
-    /// Function: SetLastWirePoint
+    /// Function: SetLastWirePoint<br/>
+    /// Native code at BatmanAK.exe+0x4C8C30 in the Steam build
     /// </summary>
     public unsafe virtual void SetLastWirePoint(BmSDK.BmGame.RHidePoint_RopeBase NewWire)
     {
@@ -3167,7 +3206,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WireLimbAllOff;
     /// <summary>
-    /// Function: WireLimbAllOff
+    /// Function: WireLimbAllOff<br/>
+    /// Native code at BatmanAK.exe+0x475F90 in the Steam build
     /// </summary>
     public unsafe virtual void WireLimbAllOff()
     {
@@ -3188,7 +3228,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WireLimbOnOrOff;
     /// <summary>
-    /// Function: WireLimbOnOrOff
+    /// Function: WireLimbOnOrOff<br/>
+    /// Native code at BatmanAK.exe+0x4C8AF0 in the Steam build
     /// </summary>
     public unsafe virtual void WireLimbOnOrOff(BmSDK.BmGame.RPawnPlayer.OverheadRopeControlPointType LimbType, bool bOnOrOff)
     {
@@ -3211,7 +3252,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideUnderEdgeCollection;
     /// <summary>
-    /// Function: OverrideUnderEdgeCollection
+    /// Function: OverrideUnderEdgeCollection<br/>
+    /// Native code at BatmanAK.exe+0x4C89D0 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideUnderEdgeCollection(BmSDK.Engine.PrimitiveComponent Comp)
     {
@@ -3233,7 +3275,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFakeCollisionNormal;
     /// <summary>
-    /// Function: AddFakeCollisionNormal
+    /// Function: AddFakeCollisionNormal<br/>
+    /// Native code at BatmanAK.exe+0x475EF0 in the Steam build
     /// </summary>
     public unsafe virtual void AddFakeCollisionNormal(out System.Numerics.Vector3 CollisionNormal)
     {
@@ -3257,7 +3300,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSecondRailingTop;
     /// <summary>
-    /// Function: GetSecondRailingTop
+    /// Function: GetSecondRailingTop<br/>
+    /// Native code at BatmanAK.exe+0x475E00 in the Steam build
     /// </summary>
     public unsafe virtual void GetSecondRailingTop(out System.Numerics.Vector3 PointA, out System.Numerics.Vector3 PointB)
     {
@@ -3284,7 +3328,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingTop;
     /// <summary>
-    /// Function: GetRailingTop
+    /// Function: GetRailingTop<br/>
+    /// Native code at BatmanAK.exe+0x475D10 in the Steam build
     /// </summary>
     public unsafe virtual void GetRailingTop(out System.Numerics.Vector3 PointA, out System.Numerics.Vector3 PointB)
     {
@@ -3311,7 +3356,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingInfo;
     /// <summary>
-    /// Function: GetRailingInfo
+    /// Function: GetRailingInfo<br/>
+    /// Native code at BatmanAK.exe+0x475BF0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRailingInfo(System.Numerics.Vector3 MoveDirection = default, bool bActuallyLanding = default)
     {
@@ -3433,7 +3479,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetRagdollLinearDamping;
     /// <summary>
-    /// Function: ResetRagdollLinearDamping
+    /// Function: ResetRagdollLinearDamping<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetRagdollLinearDamping()
     {
@@ -3454,7 +3501,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRagdollLinearDampingForGrappleDeath;
     /// <summary>
-    /// Function: SetRagdollLinearDampingForGrappleDeath
+    /// Function: SetRagdollLinearDampingForGrappleDeath<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRagdollLinearDampingForGrappleDeath()
     {
@@ -3533,7 +3581,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerThoughts;
     /// <summary>
-    /// Function: GetPlayerThoughts
+    /// Function: GetPlayerThoughts<br/>
+    /// Native code at BatmanAK.exe+0x58FEC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetPlayerThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
@@ -3831,7 +3880,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventBankXP;
     /// <summary>
-    /// Function: SendHydraEventBankXP
+    /// Function: SendHydraEventBankXP<br/>
+    /// Native code at BatmanAK.exe+0x4C87F0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventBankXP(int XpAwarded, int XpTotal)
     {
@@ -3890,7 +3940,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupLocatorFromCornerPoint;
     /// <summary>
-    /// Function: SetupLocatorFromCornerPoint
+    /// Function: SetupLocatorFromCornerPoint<br/>
+    /// Native code at BatmanAK.exe+0x4C85F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupLocatorFromCornerPoint(BmSDK.BmGame.RCornerWallMarkerBase Corner, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, BmSDK.BmGame.REnvironmentCheckTicker.BatmanCoverCorners ForceCoverDirection = default, bool ForCoverTurn = default)
     {
@@ -3917,7 +3968,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingTopAndNormal;
     /// <summary>
-    /// Function: GetRailingTopAndNormal
+    /// Function: GetRailingTopAndNormal<br/>
+    /// Native code at BatmanAK.exe+0x4C8470 in the Steam build
     /// </summary>
     public unsafe virtual void GetRailingTopAndNormal(BmSDK.Engine.RStaticClimbableActor Railing, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator out_Locator)
     {
@@ -3942,7 +3994,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDeferredVelocity;
     /// <summary>
-    /// Function: SetDeferredVelocity
+    /// Function: SetDeferredVelocity<br/>
+    /// Native code at BatmanAK.exe+0x475B60 in the Steam build
     /// </summary>
     public unsafe virtual void SetDeferredVelocity(System.Numerics.Vector3 NewVelocity)
     {
@@ -4011,7 +4064,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceForGrappleRoll;
     /// <summary>
-    /// Function: CheckSpaceForGrappleRoll
+    /// Function: CheckSpaceForGrappleRoll<br/>
+    /// Native code at BatmanAK.exe+0x475AB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceForGrappleRoll(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
@@ -4033,7 +4087,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPerformLandRoll;
     /// <summary>
-    /// Function: CanPerformLandRoll
+    /// Function: CanPerformLandRoll<br/>
+    /// Native code at BatmanAK.exe+0x4C8290 in the Steam build
     /// </summary>
     public unsafe virtual bool CanPerformLandRoll(System.Numerics.Vector3 LandLocation, System.Numerics.Vector3 Direction, float Distance, bool bCheckDropAtEnd = default)
     {
@@ -4058,7 +4113,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLedgeATunnelLedge;
     /// <summary>
-    /// Function: IsLedgeATunnelLedge
+    /// Function: IsLedgeATunnelLedge<br/>
+    /// Native code at BatmanAK.exe+0x475A00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLedgeATunnelLedge(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
@@ -4080,7 +4136,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Function __fn_IsLedgeADangleLedge;
     /// <summary>
-    /// Function: IsLedgeADangleLedge
+    /// Function: IsLedgeADangleLedge<br/>
+    /// Native code at BatmanAK.exe+0x475950 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.REnvironmentCheckTicker.EHangLedgeType IsLedgeADangleLedge(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
@@ -4101,7 +4158,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroyPhysicsAssetInstance;
     /// <summary>
-    /// Function: OnDestroyPhysicsAssetInstance
+    /// Function: OnDestroyPhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x4C8160 in the Steam build
     /// </summary>
     public unsafe virtual void OnDestroyPhysicsAssetInstance(BmSDK.Engine.SkeletalMeshComponent AffectedComponent)
     {
@@ -4123,7 +4181,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCreatePhysicsAssetInstance;
     /// <summary>
-    /// Function: OnCreatePhysicsAssetInstance
+    /// Function: OnCreatePhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x4C8030 in the Steam build
     /// </summary>
     public unsafe virtual void OnCreatePhysicsAssetInstance(BmSDK.Engine.SkeletalMeshComponent AffectedComponent)
     {
@@ -4145,7 +4204,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGrappleGun;
     /// <summary>
-    /// Function: CheckGrappleGun
+    /// Function: CheckGrappleGun<br/>
+    /// Native code at BatmanAK.exe+0x475900 in the Steam build
     /// </summary>
     public unsafe virtual float CheckGrappleGun()
     {
@@ -4834,7 +4894,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptCheckVisibility;
     /// <summary>
-    /// Function: ScriptCheckVisibility
+    /// Function: ScriptCheckVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4C7EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool ScriptCheckVisibility(BmSDK.BmGame.RBMAIController TestController)
     {
@@ -4929,7 +4990,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGrateExcluder;
     /// <summary>
-    /// Function: UpdateGrateExcluder
+    /// Function: UpdateGrateExcluder<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGrateExcluder()
     {
@@ -4950,7 +5012,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearbyLedge;
     /// <summary>
-    /// Function: FindNearbyLedge
+    /// Function: FindNearbyLedge<br/>
+    /// Native code at BatmanAK.exe+0x4757E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindNearbyLedge(System.Numerics.Vector3 PlayerLocation, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator, float MinimalDrop = default)
     {
@@ -4976,7 +5039,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUnCrouch;
     /// <summary>
-    /// Function: ForceUnCrouch
+    /// Function: ForceUnCrouch<br/>
+    /// Native code at BatmanAK.exe+0x4757A0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUnCrouch()
     {
@@ -4997,7 +5061,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForNearbyEnvironment;
     /// <summary>
-    /// Function: CheckForNearbyEnvironment
+    /// Function: CheckForNearbyEnvironment<br/>
+    /// Native code at BatmanAK.exe+0x4C7C40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator CheckForNearbyEnvironment(BmSDK.BmGame.RPawnCombat CheckPawn, System.Numerics.Vector3 PawnLocation, float FeatureCheckDistance = default, BmSDK.BmGame.RBM2IdleConfig.EInterrogationPose InterrogationPose = default, bool bNoLedges = default, bool bAllowRailingsWithoutDrop = default, bool bRelaxedWallChecks = default)
     {
@@ -5219,7 +5284,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyDistributedForceToRagdoll;
     /// <summary>
-    /// Function: ApplyDistributedForceToRagdoll
+    /// Function: ApplyDistributedForceToRagdoll<br/>
+    /// Native code at BatmanAK.exe+0x475760 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyDistributedForceToRagdoll()
     {
@@ -5257,7 +5323,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPlayerDiedInPredator;
     /// <summary>
-    /// Function: SendHydraEventPlayerDiedInPredator
+    /// Function: SendHydraEventPlayerDiedInPredator<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPlayerDiedInPredator()
     {
@@ -5278,7 +5345,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPlayerDiedInCombat;
     /// <summary>
-    /// Function: SendHydraEventPlayerDiedInCombat
+    /// Function: SendHydraEventPlayerDiedInCombat<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPlayerDiedInCombat()
     {
@@ -5644,7 +5712,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopMoveTo;
     /// <summary>
-    /// Function: StopMoveTo
+    /// Function: StopMoveTo<br/>
+    /// Native code at BatmanAK.exe+0x473AA0 in the Steam build
     /// </summary>
     public unsafe override void StopMoveTo()
     {
@@ -5665,7 +5734,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveInDirection;
     /// <summary>
-    /// Function: MoveInDirection
+    /// Function: MoveInDirection<br/>
+    /// Native code at BatmanAK.exe+0x473A10 in the Steam build
     /// </summary>
     public unsafe override void MoveInDirection(System.Numerics.Vector3 Direction)
     {
@@ -6138,7 +6208,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDLCCharacterLODDistances;
     /// <summary>
-    /// Function: OverrideDLCCharacterLODDistances
+    /// Function: OverrideDLCCharacterLODDistances<br/>
+    /// Native code at BatmanAK.exe+0x475720 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideDLCCharacterLODDistances()
     {
@@ -6159,7 +6230,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
-    /// Function: GetFOVCheckLocation
+    /// Function: GetFOVCheckLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
@@ -6180,7 +6252,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -6234,7 +6307,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsShimmying;
     /// <summary>
-    /// Function: IsShimmying
+    /// Function: IsShimmying<br/>
+    /// Native code at BatmanAK.exe+0x4756D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsShimmying()
     {
@@ -6255,7 +6329,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Function __fn_PointInTriangle2D;
     /// <summary>
-    /// Function: PointInTriangle2D
+    /// Function: PointInTriangle2D<br/>
+    /// Native code at BatmanAK.exe+0x475580 in the Steam build
     /// </summary>
     public unsafe static bool PointInTriangle2D(System.Numerics.Vector3 Point, System.Numerics.Vector3 Vert0, System.Numerics.Vector3 Vert1, System.Numerics.Vector3 Vert2)
     {
@@ -6279,7 +6354,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageLevel;
     /// <summary>
-    /// Function: SetDamageLevel
+    /// Function: SetDamageLevel<br/>
+    /// Native code at BatmanAK.exe+0x4C7A20 in the Steam build
     /// </summary>
     public unsafe virtual void SetDamageLevel(BmSDK.FName PlayerCharacterName, int NewDamageLevel, bool HigherDamageOnly = default)
     {
@@ -6303,7 +6379,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Function __fn_SetDamageLevelFlags;
     /// <summary>
-    /// Function: SetDamageLevelFlags
+    /// Function: SetDamageLevelFlags<br/>
+    /// Native code at BatmanAK.exe+0x4C7840 in the Steam build
     /// </summary>
     public unsafe static void SetDamageLevelFlags(BmSDK.FName PlayerCharacterName, int NewDamageLevel)
     {
@@ -6325,7 +6402,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCapeGlide;
     /// <summary>
-    /// Function: CanCapeGlide
+    /// Function: CanCapeGlide<br/>
+    /// Native code at BatmanAK.exe+0x4C7700 in the Steam build
     /// </summary>
     public unsafe virtual bool CanCapeGlide(bool ActuallyTryingToTriggerGlide)
     {
@@ -6347,7 +6425,8 @@ public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadNetwork;
     /// <summary>
-    /// Function: GetRoadNetwork
+    /// Function: GetRoadNetwork<br/>
+    /// Native code at BatmanAK.exe+0x475530 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRoadNetwork GetRoadNetwork()
     {
@@ -13170,7 +13249,8 @@ public static class RPawnPlayerStatics
 {
     private static BmSDK.Function __fn_GetInferredTransitionReferenceForAnim;
     /// <summary>
-    /// Function: GetInferredTransitionReferenceForAnim, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetInferredTransitionReferenceForAnim, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4CA4F0 in the Steam build
     /// </summary>
     public unsafe static bool GetInferredTransitionReferenceForAnim(this BmSDK.BmGame.RPawnPlayer self, BmSDK.BmGame.RPawnCharacter Pawn, BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.Engine.AnimSequence AnimSeq, bool Mirrored, out System.Numerics.Vector3 InferredReferencePointPosition, out BmSDK.Rotator InferredReferencePointRotation)
     {
@@ -13201,7 +13281,8 @@ public static class RPawnPlayerStatics
 
     private static BmSDK.Function __fn_GetInferredTransitionReference;
     /// <summary>
-    /// Function: GetInferredTransitionReference, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetInferredTransitionReference, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4CA270 in the Steam build
     /// </summary>
     public unsafe static bool GetInferredTransitionReference(this BmSDK.BmGame.RPawnPlayer self, BmSDK.BmGame.RPawnCharacter Pawn, BmSDK.Engine.SkeletalMeshComponent SkelComp, out System.Numerics.Vector3 InferredReferencePointPosition, out BmSDK.Rotator InferredReferencePointRotation)
     {
@@ -13230,7 +13311,8 @@ public static class RPawnPlayerStatics
 
     private static BmSDK.Function __fn_IsLedgeADangleLedge;
     /// <summary>
-    /// Function: IsLedgeADangleLedge, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsLedgeADangleLedge, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x475950 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.REnvironmentCheckTicker.EHangLedgeType IsLedgeADangleLedge(this BmSDK.BmGame.RPawnPlayer self, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
@@ -13252,7 +13334,8 @@ public static class RPawnPlayerStatics
 
     private static BmSDK.Function __fn_PointInTriangle2D;
     /// <summary>
-    /// Function: PointInTriangle2D, run on <paramref name="self"/> rather than the class default object
+    /// Function: PointInTriangle2D, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x475580 in the Steam build
     /// </summary>
     public unsafe static bool PointInTriangle2D(this BmSDK.BmGame.RPawnPlayer self, System.Numerics.Vector3 Point, System.Numerics.Vector3 Vert0, System.Numerics.Vector3 Vert1, System.Numerics.Vector3 Vert2)
     {
@@ -13277,7 +13360,8 @@ public static class RPawnPlayerStatics
 
     private static BmSDK.Function __fn_SetDamageLevelFlags;
     /// <summary>
-    /// Function: SetDamageLevelFlags, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetDamageLevelFlags, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4C7840 in the Steam build
     /// </summary>
     public unsafe static void SetDamageLevelFlags(this BmSDK.BmGame.RPawnPlayer self, BmSDK.FName PlayerCharacterName, int NewDamageLevel)
     {

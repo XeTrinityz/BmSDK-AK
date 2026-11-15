@@ -75,7 +75,8 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB580B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {

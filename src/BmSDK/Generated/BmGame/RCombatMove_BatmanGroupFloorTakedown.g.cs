@@ -328,7 +328,8 @@ public partial class RCombatMove_BatmanGroupFloorTakedown : BmSDK.BmGame.RCombat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLowCeiling;
     /// <summary>
-    /// Function: IsLowCeiling
+    /// Function: IsLowCeiling<br/>
+    /// Native code at BatmanAK.exe+0x4D3010 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLowCeiling(System.Numerics.Vector3 FromPoint, System.Numerics.Vector3 EndPoint, float Radius, out System.Numerics.Vector3 CollidePoint, out System.Numerics.Vector3 CollideNormal)
     {

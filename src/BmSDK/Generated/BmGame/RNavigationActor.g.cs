@@ -122,7 +122,8 @@ public partial class RNavigationActor : BmSDK.Engine.Actor, BmSDK.Engine.Interfa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Release;
     /// <summary>
-    /// Function: Release
+    /// Function: Release<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void Release()
     {

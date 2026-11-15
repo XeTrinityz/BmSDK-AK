@@ -75,7 +75,8 @@ public partial class AkPredicate : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTrue;
     /// <summary>
-    /// Function: IsTrue
+    /// Function: IsTrue<br/>
+    /// Native code at BatmanAK.exe+0xB34C60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTrue()
     {

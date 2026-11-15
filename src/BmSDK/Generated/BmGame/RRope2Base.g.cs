@@ -80,7 +80,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NoteSelectionChange;
     /// <summary>
-    /// Function: NoteSelectionChange
+    /// Function: NoteSelectionChange<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void NoteSelectionChange()
     {
@@ -101,7 +102,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateActorTransform;
     /// <summary>
-    /// Function: UpdateActorTransform
+    /// Function: UpdateActorTransform<br/>
+    /// Native code at BatmanAK.exe+0x482EF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateActorTransform()
     {
@@ -122,7 +124,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkDirtyAndModify;
     /// <summary>
-    /// Function: MarkDirtyAndModify
+    /// Function: MarkDirtyAndModify<br/>
+    /// Native code at BatmanAK.exe+0x482EB0 in the Steam build
     /// </summary>
     public unsafe virtual void MarkDirtyAndModify()
     {
@@ -143,7 +146,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachEndsFromActor;
     /// <summary>
-    /// Function: DetachEndsFromActor
+    /// Function: DetachEndsFromActor<br/>
+    /// Native code at BatmanAK.exe+0x4EDAC0 in the Steam build
     /// </summary>
     public unsafe virtual void DetachEndsFromActor(BmSDK.Engine.Actor LinkTarget)
     {
@@ -165,7 +169,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachEndToWorld;
     /// <summary>
-    /// Function: AttachEndToWorld
+    /// Function: AttachEndToWorld<br/>
+    /// Native code at BatmanAK.exe+0x482E30 in the Steam build
     /// </summary>
     public unsafe virtual void AttachEndToWorld(BmSDK.BmGame.RRope2Component.ERope2EndType NewAttachEnd)
     {
@@ -187,7 +192,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachEndToActor;
     /// <summary>
-    /// Function: AttachEndToActor
+    /// Function: AttachEndToActor<br/>
+    /// Native code at BatmanAK.exe+0x4ED8D0 in the Steam build
     /// </summary>
     public unsafe virtual void AttachEndToActor(BmSDK.BmGame.RRope2Component.ERope2EndType NewAttachEnd, BmSDK.Engine.Actor LinkTarget, System.Numerics.Vector3 AttachPosition = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default)
     {
@@ -212,7 +218,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NofityComponentsOfRopeCut;
     /// <summary>
-    /// Function: NofityComponentsOfRopeCut
+    /// Function: NofityComponentsOfRopeCut<br/>
+    /// Native code at BatmanAK.exe+0x4ED7B0 in the Steam build
     /// </summary>
     public unsafe virtual void NofityComponentsOfRopeCut(BmSDK.Engine.Actor DamageCauser)
     {
@@ -402,7 +409,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyRopeActorParams;
     /// <summary>
-    /// Function: CopyRopeActorParams
+    /// Function: CopyRopeActorParams<br/>
+    /// Native code at BatmanAK.exe+0x4ED690 in the Steam build
     /// </summary>
     public unsafe virtual void CopyRopeActorParams(BmSDK.BmGame.RRope2Base CopyParams)
     {
@@ -438,7 +446,8 @@ public partial class RRope2Base : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangable
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SplitRope;
     /// <summary>
-    /// Function: SplitRope
+    /// Function: SplitRope<br/>
+    /// Native code at BatmanAK.exe+0x4ED4D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2Base SplitRope(float SplitPos, System.Numerics.Vector3 SplitImpulse = default)
     {

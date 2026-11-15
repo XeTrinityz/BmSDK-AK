@@ -80,7 +80,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularDamping;
     /// <summary>
-    /// Function: SetAngularDamping
+    /// Function: SetAngularDamping<br/>
+    /// Native code at BatmanAK.exe+0xB920D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularDamping(float AngularDamping)
     {
@@ -102,7 +103,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDampingRampupProportion;
     /// <summary>
-    /// Function: SetDampingRampupProportion
+    /// Function: SetDampingRampupProportion<br/>
+    /// Native code at BatmanAK.exe+0xB91FA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDampingRampupProportion(float NewDampingRampupProportion)
     {
@@ -124,7 +126,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDampingProperties;
     /// <summary>
-    /// Function: UpdateDampingProperties
+    /// Function: UpdateDampingProperties<br/>
+    /// Native code at BatmanAK.exe+0xB45C90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDampingProperties()
     {
@@ -145,7 +148,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMassProperties;
     /// <summary>
-    /// Function: UpdateMassProperties
+    /// Function: UpdateMassProperties<br/>
+    /// Native code at BatmanAK.exe+0xB91E40 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMassProperties(BmSDK.Engine.RB_BodySetup Setup, float MassOverride = default)
     {
@@ -168,7 +172,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContactReportForceThreshold;
     /// <summary>
-    /// Function: SetContactReportForceThreshold
+    /// Function: SetContactReportForceThreshold<br/>
+    /// Native code at BatmanAK.exe+0xB91D10 in the Steam build
     /// </summary>
     public unsafe virtual void SetContactReportForceThreshold(float Threshold)
     {
@@ -190,7 +195,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCollisionResponse;
     /// <summary>
-    /// Function: EnableCollisionResponse
+    /// Function: EnableCollisionResponse<br/>
+    /// Native code at BatmanAK.exe+0xB91BF0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableCollisionResponse(bool bEnableResponse)
     {
@@ -212,7 +218,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysMaterialOverride;
     /// <summary>
-    /// Function: SetPhysMaterialOverride
+    /// Function: SetPhysMaterialOverride<br/>
+    /// Native code at BatmanAK.exe+0xB91AD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPhysMaterialOverride(BmSDK.Engine.PhysicalMaterial NewPhysMaterial)
     {
@@ -234,7 +241,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlockRigidBody;
     /// <summary>
-    /// Function: SetBlockRigidBody
+    /// Function: SetBlockRigidBody<br/>
+    /// Native code at BatmanAK.exe+0xB918F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlockRigidBody(bool bNewBlockRigidBody, bool bEnableSceneQueries)
     {
@@ -257,7 +265,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldVelocityAtPoint;
     /// <summary>
-    /// Function: GetUnrealWorldVelocityAtPoint
+    /// Function: GetUnrealWorldVelocityAtPoint<br/>
+    /// Native code at BatmanAK.exe+0xB45BE0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealWorldVelocityAtPoint(System.Numerics.Vector3 Point)
     {
@@ -279,7 +288,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealCoMWorldAngularVelocity;
     /// <summary>
-    /// Function: GetUnrealCoMWorldAngularVelocity
+    /// Function: GetUnrealCoMWorldAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB45B80 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealCoMWorldAngularVelocity()
     {
@@ -300,7 +310,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealCoMWorldVelocity;
     /// <summary>
-    /// Function: GetUnrealCoMWorldVelocity
+    /// Function: GetUnrealCoMWorldVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB45B20 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealCoMWorldVelocity()
     {
@@ -321,7 +332,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealCoMWorldOrientation;
     /// <summary>
-    /// Function: GetUnrealCoMWorldOrientation
+    /// Function: GetUnrealCoMWorldOrientation<br/>
+    /// Native code at BatmanAK.exe+0xB45AC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetUnrealCoMWorldOrientation()
     {
@@ -342,7 +354,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealCoMWorldPosition;
     /// <summary>
-    /// Function: GetUnrealCoMWorldPosition
+    /// Function: GetUnrealCoMWorldPosition<br/>
+    /// Native code at BatmanAK.exe+0xB45A60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealCoMWorldPosition()
     {
@@ -363,7 +376,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldOrientation;
     /// <summary>
-    /// Function: GetUnrealWorldOrientation
+    /// Function: GetUnrealWorldOrientation<br/>
+    /// Native code at BatmanAK.exe+0xB45A00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetUnrealWorldOrientation()
     {
@@ -384,7 +398,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldPosition;
     /// <summary>
-    /// Function: GetUnrealWorldPosition
+    /// Function: GetUnrealWorldPosition<br/>
+    /// Native code at BatmanAK.exe+0xB459A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealWorldPosition()
     {
@@ -405,7 +420,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldAngularVelocity;
     /// <summary>
-    /// Function: GetUnrealWorldAngularVelocity
+    /// Function: GetUnrealWorldAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB45940 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealWorldAngularVelocity()
     {
@@ -426,7 +442,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldVelocity;
     /// <summary>
-    /// Function: GetUnrealWorldVelocity
+    /// Function: GetUnrealWorldVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB458E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUnrealWorldVelocity()
     {
@@ -447,7 +464,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldLinearAndAngularVelocity;
     /// <summary>
-    /// Function: GetUnrealWorldLinearAndAngularVelocity
+    /// Function: GetUnrealWorldLinearAndAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB457F0 in the Steam build
     /// </summary>
     public unsafe virtual void GetUnrealWorldLinearAndAngularVelocity(out System.Numerics.Vector3 LinearVelocity, out System.Numerics.Vector3 AngularVelocity)
     {
@@ -474,7 +492,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldBoneAtom;
     /// <summary>
-    /// Function: GetUnrealWorldBoneAtom
+    /// Function: GetUnrealWorldBoneAtom<br/>
+    /// Native code at BatmanAK.exe+0xB45790 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBoneAtom GetUnrealWorldBoneAtom()
     {
@@ -495,7 +514,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnrealWorldTM;
     /// <summary>
-    /// Function: GetUnrealWorldTM
+    /// Function: GetUnrealWorldTM<br/>
+    /// Native code at BatmanAK.exe+0xB45720 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetUnrealWorldTM()
     {
@@ -516,7 +536,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicsAssetInstance;
     /// <summary>
-    /// Function: GetPhysicsAssetInstance
+    /// Function: GetPhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0xB456D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicsAssetInstance GetPhysicsAssetInstance()
     {
@@ -537,7 +558,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidBodyInstance;
     /// <summary>
-    /// Function: IsValidBodyInstance
+    /// Function: IsValidBodyInstance<br/>
+    /// Native code at BatmanAK.exe+0xB455E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidBodyInstance()
     {
@@ -558,7 +580,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFixed;
     /// <summary>
-    /// Function: IsFixed
+    /// Function: IsFixed<br/>
+    /// Native code at BatmanAK.exe+0xB45680 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFixed()
     {
@@ -579,7 +602,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFixed;
     /// <summary>
-    /// Function: SetFixed
+    /// Function: SetFixed<br/>
+    /// Native code at BatmanAK.exe+0xB917D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFixed(bool bNewFixed)
     {
@@ -601,7 +625,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBodyMass;
     /// <summary>
-    /// Function: GetBodyMass
+    /// Function: GetBodyMass<br/>
+    /// Native code at BatmanAK.exe+0xB45630 in the Steam build
     /// </summary>
     public unsafe virtual float GetBodyMass()
     {
@@ -622,7 +647,8 @@ public partial class RB_BodyInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInitialised;
     /// <summary>
-    /// Function: GetIsInitialised
+    /// Function: GetIsInitialised<br/>
+    /// Native code at BatmanAK.exe+0xB455E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {

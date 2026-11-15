@@ -175,7 +175,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerHallucinationsAllowed;
     /// <summary>
-    /// Function: JokerHallucinationsAllowed
+    /// Function: JokerHallucinationsAllowed<br/>
+    /// Native code at BatmanAK.exe+0x478F00 in the Steam build
     /// </summary>
     public unsafe virtual bool JokerHallucinationsAllowed()
     {
@@ -211,7 +212,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugValues;
     /// <summary>
-    /// Function: GetDebugValues
+    /// Function: GetDebugValues<br/>
+    /// Native code at BatmanAK.exe+0x478EC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetDebugValues()
     {
@@ -232,7 +234,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeUpdate;
     /// <summary>
-    /// Function: NativeUpdate
+    /// Function: NativeUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4D1530 in the Steam build
     /// </summary>
     public unsafe virtual bool NativeUpdate(float DeltaTime)
     {
@@ -254,7 +257,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelConversationLoading;
     /// <summary>
-    /// Function: CancelConversationLoading
+    /// Function: CancelConversationLoading<br/>
+    /// Native code at BatmanAK.exe+0x49A4D0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelConversationLoading()
     {
@@ -275,7 +279,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitConversation;
     /// <summary>
-    /// Function: InitConversation
+    /// Function: InitConversation<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool InitConversation()
     {
@@ -296,7 +301,8 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadConversation;
     /// <summary>
-    /// Function: LoadConversation
+    /// Function: LoadConversation<br/>
+    /// Native code at BatmanAK.exe+0x53B950 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadConversation(BmSDK.FStringArg StringPackageName)
     {

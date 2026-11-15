@@ -89,7 +89,8 @@ public partial class RBatDistractProjectile : BmSDK.BmGame.RBatarangProjectile, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeTarget;
     /// <summary>
-    /// Function: CanSeeTarget
+    /// Function: CanSeeTarget<br/>
+    /// Native code at BatmanAK.exe+0x557660 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeTarget(BmSDK.BmGame.RPawnVillain TargetVillain, out BmSDK.TArray<BmSDK.FName> CheckBoneNames)
     {

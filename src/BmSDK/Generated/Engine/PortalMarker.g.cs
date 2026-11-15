@@ -80,7 +80,8 @@ public partial class PortalMarker : BmSDK.Engine.NavigationPoint, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTeleport;
     /// <summary>
-    /// Function: CanTeleport
+    /// Function: CanTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4E5040 in the Steam build
     /// </summary>
     public unsafe override bool CanTeleport(BmSDK.Engine.Actor A)
     {

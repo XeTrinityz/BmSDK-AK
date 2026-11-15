@@ -80,7 +80,8 @@ public partial class PhysicsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyIndex;
     /// <summary>
-    /// Function: FindBodyIndex
+    /// Function: FindBodyIndex<br/>
+    /// Native code at BatmanAK.exe+0xB8ECE0 in the Steam build
     /// </summary>
     public unsafe virtual int FindBodyIndex(BmSDK.FName BodyName)
     {

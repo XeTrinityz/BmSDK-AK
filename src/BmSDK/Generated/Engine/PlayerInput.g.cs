@@ -112,7 +112,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitInputSystem;
     /// <summary>
-    /// Function: InitInputSystem
+    /// Function: InitInputSystem<br/>
+    /// Native code at BatmanAK.exe+0x496400 in the Steam build
     /// </summary>
     public unsafe virtual void InitInputSystem()
     {
@@ -357,7 +358,8 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelMobileInput;
     /// <summary>
-    /// Function: CancelMobileInput
+    /// Function: CancelMobileInput<br/>
+    /// Native code at BatmanAK.exe+0xB2CC80 in the Steam build
     /// </summary>
     public unsafe virtual void CancelMobileInput()
     {

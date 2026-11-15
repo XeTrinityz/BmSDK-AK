@@ -178,7 +178,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelDepthPriorityGroup;
     /// <summary>
-    /// Function: SetLevelDepthPriorityGroup
+    /// Function: SetLevelDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0x4CEB60 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelDepthPriorityGroup(int DepthGroup)
     {
@@ -270,7 +271,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForcePairedAnimLoad;
     /// <summary>
-    /// Function: ForcePairedAnimLoad
+    /// Function: ForcePairedAnimLoad<br/>
+    /// Native code at BatmanAK.exe+0x4777B0 in the Steam build
     /// </summary>
     public unsafe virtual void ForcePairedAnimLoad()
     {
@@ -291,7 +293,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimeSinceLastRender;
     /// <summary>
-    /// Function: UpdateTimeSinceLastRender
+    /// Function: UpdateTimeSinceLastRender<br/>
+    /// Native code at BatmanAK.exe+0x477770 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTimeSinceLastRender()
     {
@@ -312,7 +315,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyOrReturnToPool;
     /// <summary>
-    /// Function: DestroyOrReturnToPool
+    /// Function: DestroyOrReturnToPool<br/>
+    /// Native code at BatmanAK.exe+0x46A790 in the Steam build
     /// </summary>
     public unsafe override void DestroyOrReturnToPool(bool bForce = default, bool bStreamedOut = default)
     {
@@ -335,7 +339,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishWakingFromPool;
     /// <summary>
-    /// Function: FinishWakingFromPool
+    /// Function: FinishWakingFromPool<br/>
+    /// Native code at BatmanAK.exe+0x4CE990 in the Steam build
     /// </summary>
     public unsafe virtual bool FinishWakingFromPool(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation, BmSDK.Class WeaponClass, bool bRequiresNavMesh = default)
     {
@@ -360,7 +365,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeFromPool;
     /// <summary>
-    /// Function: WakeFromPool
+    /// Function: WakeFromPool<br/>
+    /// Native code at BatmanAK.exe+0x4CE780 in the Steam build
     /// </summary>
     public unsafe virtual bool WakeFromPool(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation, BmSDK.Class WeaponClass, bool bRequiresNavMesh = default, bool bSetLocation = default)
     {
@@ -386,7 +392,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SleepInPool;
     /// <summary>
-    /// Function: SleepInPool
+    /// Function: SleepInPool<br/>
+    /// Native code at BatmanAK.exe+0x477680 in the Steam build
     /// </summary>
     public unsafe virtual bool SleepInPool(bool bForce = default, bool bStreamedOut = default)
     {
@@ -531,7 +538,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocationCheap;
     /// <summary>
-    /// Function: SetLocationCheap
+    /// Function: SetLocationCheap<br/>
+    /// Native code at BatmanAK.exe+0x4775F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLocationCheap(System.Numerics.Vector3 NewLocation)
     {
@@ -627,7 +635,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasHeadset;
     /// <summary>
-    /// Function: SetHasHeadset
+    /// Function: SetHasHeadset<br/>
+    /// Native code at BatmanAK.exe+0x4CE660 in the Steam build
     /// </summary>
     public unsafe virtual void SetHasHeadset(bool HasHeadset)
     {
@@ -997,7 +1006,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttemptTeleportToSafeLocation;
     /// <summary>
-    /// Function: AttemptTeleportToSafeLocation
+    /// Function: AttemptTeleportToSafeLocation<br/>
+    /// Native code at BatmanAK.exe+0x4727B0 in the Steam build
     /// </summary>
     public unsafe override void AttemptTeleportToSafeLocation()
     {
@@ -1340,7 +1350,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActionTickAllowed;
     /// <summary>
-    /// Function: IsActionTickAllowed
+    /// Function: IsActionTickAllowed<br/>
+    /// Native code at BatmanAK.exe+0x4775A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsActionTickAllowed()
     {
@@ -1595,7 +1606,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraLookAtPriority;
     /// <summary>
-    /// Function: GetCameraLookAtPriority
+    /// Function: GetCameraLookAtPriority<br/>
+    /// Native code at BatmanAK.exe+0x477550 in the Steam build
     /// </summary>
     public unsafe override float GetCameraLookAtPriority()
     {
@@ -1952,7 +1964,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavHandle_PathBetweenChasePoints;
     /// <summary>
-    /// Function: GetNavHandle_PathBetweenChasePoints
+    /// Function: GetNavHandle_PathBetweenChasePoints<br/>
+    /// Native code at BatmanAK.exe+0x4CE470 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RNavigationHandle GetNavHandle_PathBetweenChasePoints(BmSDK.BmGame.RChasePoint StartPoint, BmSDK.BmGame.RChasePoint EndPoint)
     {
@@ -2055,7 +2068,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavHandle;
     /// <summary>
-    /// Function: GetNavHandle
+    /// Function: GetNavHandle<br/>
+    /// Native code at BatmanAK.exe+0x4CE330 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RNavigationHandle GetNavHandle(BmSDK.FName ClaimName)
     {
@@ -2965,7 +2979,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachSkeletalProps;
     /// <summary>
-    /// Function: AttachSkeletalProps
+    /// Function: AttachSkeletalProps<br/>
+    /// Native code at BatmanAK.exe+0x477510 in the Steam build
     /// </summary>
     public unsafe virtual void AttachSkeletalProps()
     {
@@ -2986,7 +3001,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeExtraMeshesWithRFlaps;
     /// <summary>
-    /// Function: UpgradeExtraMeshesWithRFlaps
+    /// Function: UpgradeExtraMeshesWithRFlaps<br/>
+    /// Native code at BatmanAK.exe+0x4CE140 in the Steam build
     /// </summary>
     public unsafe virtual void UpgradeExtraMeshesWithRFlaps(BmSDK.Engine.SkeletalMeshComponent MainMesh, BmSDK.Engine.SkeletalMeshComponent SubMesh)
     {
@@ -3128,7 +3144,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShrinkAttachmentArrays;
     /// <summary>
-    /// Function: ShrinkAttachmentArrays
+    /// Function: ShrinkAttachmentArrays<br/>
+    /// Native code at BatmanAK.exe+0x4774D0 in the Steam build
     /// </summary>
     public unsafe virtual void ShrinkAttachmentArrays()
     {
@@ -3385,7 +3402,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanMoveToPoint;
     /// <summary>
-    /// Function: CanMoveToPoint
+    /// Function: CanMoveToPoint<br/>
+    /// Native code at BatmanAK.exe+0x477270 in the Steam build
     /// </summary>
     public unsafe virtual bool CanMoveToPoint(System.Numerics.Vector3 MoveToPoint, out float HitTime, out BmSDK.Engine.Actor HitActor, bool bSlopeCheck = default, System.Numerics.Vector3 TestLocation = default, bool bForceExtentCheck = default, bool bDoGroundCheck = default)
     {
@@ -3682,7 +3700,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPostIvyToxinMaterialParameter;
     /// <summary>
-    /// Function: CheckPostIvyToxinMaterialParameter
+    /// Function: CheckPostIvyToxinMaterialParameter<br/>
+    /// Native code at BatmanAK.exe+0x477230 in the Steam build
     /// </summary>
     public unsafe virtual void CheckPostIvyToxinMaterialParameter()
     {
@@ -3808,7 +3827,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachPlayerInteractions;
     /// <summary>
-    /// Function: AttachPlayerInteractions
+    /// Function: AttachPlayerInteractions<br/>
+    /// Native code at BatmanAK.exe+0x4771F0 in the Steam build
     /// </summary>
     public unsafe virtual void AttachPlayerInteractions()
     {
@@ -3885,7 +3905,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowLongRangeHighlight;
     /// <summary>
-    /// Function: ShouldShowLongRangeHighlight
+    /// Function: ShouldShowLongRangeHighlight<br/>
+    /// Native code at BatmanAK.exe+0x4771A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldShowLongRangeHighlight()
     {
@@ -3953,7 +3974,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentPylon;
     /// <summary>
-    /// Function: SetCurrentPylon
+    /// Function: SetCurrentPylon<br/>
+    /// Native code at BatmanAK.exe+0x477160 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentPylon()
     {
@@ -3974,7 +3996,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Function __fn_GetLocalSpaceSocketDelta;
     /// <summary>
-    /// Function: GetLocalSpaceSocketDelta
+    /// Function: GetLocalSpaceSocketDelta<br/>
+    /// Native code at BatmanAK.exe+0x4CDDF0 in the Steam build
     /// </summary>
     public unsafe static bool GetLocalSpaceSocketDelta(BmSDK.Engine.SkeletalMeshComponent SkelComponent, BmSDK.FName FromSocketName, BmSDK.FName ToSocketName, out System.Numerics.Vector3 out_Location, out BmSDK.Rotator out_Rotation)
     {
@@ -4003,7 +4026,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GatherForcesFromWalls;
     /// <summary>
-    /// Function: GatherForcesFromWalls
+    /// Function: GatherForcesFromWalls<br/>
+    /// Native code at BatmanAK.exe+0x4CDAA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GatherForcesFromWalls(System.Numerics.Vector3 SourceLocation, float MaxForce, float MinRange, float MaxSideForceMultiplier = default, System.Numerics.Vector3 ForwardDir = default, bool bShowDebug = default)
     {
@@ -4030,7 +4054,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInactiveInPool;
     /// <summary>
-    /// Function: IsInactiveInPool
+    /// Function: IsInactiveInPool<br/>
+    /// Native code at BatmanAK.exe+0x477110 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInactiveInPool()
     {
@@ -4051,7 +4076,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasGasMask;
     /// <summary>
-    /// Function: HasGasMask
+    /// Function: HasGasMask<br/>
+    /// Native code at BatmanAK.exe+0x4CD960 in the Steam build
     /// </summary>
     public unsafe virtual bool HasGasMask(BmSDK.Engine.SkeletalMesh TestMesh)
     {
@@ -4073,7 +4099,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBodySize;
     /// <summary>
-    /// Function: GetBodySize
+    /// Function: GetBodySize<br/>
+    /// Native code at BatmanAK.exe+0x53B5F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetBodySize(BmSDK.Engine.SkeletalMesh TestMesh, bool bIsHead)
     {
@@ -4096,7 +4123,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeSeenByBatsForXray;
     /// <summary>
-    /// Function: CanBeSeenByBatsForXray
+    /// Function: CanBeSeenByBatsForXray<br/>
+    /// Native code at BatmanAK.exe+0x476EB0 in the Steam build
     /// </summary>
     public unsafe override bool CanBeSeenByBatsForXray()
     {
@@ -4117,7 +4145,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceTickIndividualComponent;
     /// <summary>
-    /// Function: ForceTickIndividualComponent
+    /// Function: ForceTickIndividualComponent<br/>
+    /// Native code at BatmanAK.exe+0x4CD760 in the Steam build
     /// </summary>
     public unsafe virtual void ForceTickIndividualComponent(BmSDK.Engine.ActorComponent CompToTick, float DeltaTime)
     {
@@ -4140,7 +4169,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePropsVisibility;
     /// <summary>
-    /// Function: UpdatePropsVisibility
+    /// Function: UpdatePropsVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4CCEF0 in the Steam build
     /// </summary>
     public unsafe override void UpdatePropsVisibility(float AlphaVal)
     {
@@ -4162,7 +4192,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
@@ -4184,7 +4215,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLastValidNavMeshPoly;
     /// <summary>
-    /// Function: SetLastValidNavMeshPoly
+    /// Function: SetLastValidNavMeshPoly<br/>
+    /// Native code at BatmanAK.exe+0x4CD580 in the Steam build
     /// </summary>
     public unsafe virtual void SetLastValidNavMeshPoly(BmSDK.Engine.Pylon ValidPylon, int ValidPolyID)
     {
@@ -4207,7 +4239,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVertVisibility;
     /// <summary>
-    /// Function: UpdateVertVisibility
+    /// Function: UpdateVertVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4770D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVertVisibility()
     {
@@ -4228,7 +4261,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxSightRange;
     /// <summary>
-    /// Function: GetMaxSightRange
+    /// Function: GetMaxSightRange<br/>
+    /// Native code at BatmanAK.exe+0x477080 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxSightRange()
     {
@@ -4249,7 +4283,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeActorFromPos;
     /// <summary>
-    /// Function: CanSeeActorFromPos
+    /// Function: CanSeeActorFromPos<br/>
+    /// Native code at BatmanAK.exe+0x4CD360 in the Steam build
     /// </summary>
     public unsafe virtual float CanSeeActorFromPos(BmSDK.Engine.Actor TestActor, System.Numerics.Vector3 TestPos, bool bEarlyOut = default, bool bIgnoreSmoke = default, bool bSkipTestedBones = default)
     {
@@ -4275,7 +4310,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeActor;
     /// <summary>
-    /// Function: CanSeeActor
+    /// Function: CanSeeActor<br/>
+    /// Native code at BatmanAK.exe+0x4CD150 in the Steam build
     /// </summary>
     public unsafe virtual float CanSeeActor(BmSDK.Engine.Actor TestActor, bool bEarlyOut = default, bool bIgnoreSmoke = default, bool bSkipTestedBones = default)
     {
@@ -4300,7 +4336,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeePos;
     /// <summary>
-    /// Function: CanSeePos
+    /// Function: CanSeePos<br/>
+    /// Native code at BatmanAK.exe+0x476F60 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeePos(System.Numerics.Vector3 TestPos, bool bIgnoreSmoke = default, bool bStartWithPointCheck = default)
     {
@@ -4324,7 +4361,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnVisionCheckEyeLoc;
     /// <summary>
-    /// Function: GetPawnVisionCheckEyeLoc
+    /// Function: GetPawnVisionCheckEyeLoc<br/>
+    /// Native code at BatmanAK.exe+0x476F00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPawnVisionCheckEyeLoc()
     {
@@ -4345,7 +4383,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateActionOfClass;
     /// <summary>
-    /// Function: CreateActionOfClass
+    /// Function: CreateActionOfClass<br/>
+    /// Native code at BatmanAK.exe+0x53B3A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIAction CreateActionOfClass(BmSDK.Class NewClass, BmSDK.BmGame.RAlertEventCoordinatorSolo NewAEC, BmSDK.FStringArg NewId = default)
     {
@@ -4370,7 +4409,8 @@ public partial class RBMPawnAI : BmSDK.BmGame.RBMPawnAIAnim, BmSDK.Engine.Interf
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCharacter;
     /// <summary>
-    /// Function: InitCharacter
+    /// Function: InitCharacter<br/>
+    /// Native code at BatmanAK.exe+0x572D30 in the Steam build
     /// </summary>
     public unsafe virtual void InitCharacter(BmSDK.BmGame.RBMPawnAI.FInitCharacterDescription Description)
     {
@@ -7482,7 +7522,8 @@ public static class RBMPawnAIStatics
 {
     private static BmSDK.Function __fn_GetLocalSpaceSocketDelta;
     /// <summary>
-    /// Function: GetLocalSpaceSocketDelta, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLocalSpaceSocketDelta, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4CDDF0 in the Steam build
     /// </summary>
     public unsafe static bool GetLocalSpaceSocketDelta(this BmSDK.BmGame.RBMPawnAI self, BmSDK.Engine.SkeletalMeshComponent SkelComponent, BmSDK.FName FromSocketName, BmSDK.FName ToSocketName, out System.Numerics.Vector3 out_Location, out BmSDK.Rotator out_Rotation)
     {

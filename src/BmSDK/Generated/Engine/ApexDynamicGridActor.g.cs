@@ -113,7 +113,8 @@ public partial class ApexDynamicGridActor : BmSDK.Engine.ApexFieldSamplerActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FetchStats;
     /// <summary>
-    /// Function: FetchStats
+    /// Function: FetchStats<br/>
+    /// Native code at BatmanAK.exe+0xB9F480 in the Steam build
     /// </summary>
     public unsafe virtual void FetchStats(out int DGfirstLine, out int DGnumLines, out BmSDK.FString DGstr)
     {

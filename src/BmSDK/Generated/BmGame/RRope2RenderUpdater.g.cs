@@ -75,7 +75,8 @@ public partial class RRope2RenderUpdater : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialOverride;
     /// <summary>
-    /// Function: SetMaterialOverride
+    /// Function: SetMaterialOverride<br/>
+    /// Native code at BatmanAK.exe+0x4EE410 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterialOverride(BmSDK.Engine.MaterialInstanceConstant OverrideMat)
     {

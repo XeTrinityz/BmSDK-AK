@@ -80,7 +80,8 @@ public partial class AnimNodeBlendMultiBone : BmSDK.Engine.AnimNodeBlendBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetStartBone;
     /// <summary>
-    /// Function: SetTargetStartBone
+    /// Function: SetTargetStartBone<br/>
+    /// Native code at BatmanAK.exe+0xC0B6D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTargetStartBone(int TargetIdx, BmSDK.FName StartBoneName, float PerBoneIncrease = default)
     {

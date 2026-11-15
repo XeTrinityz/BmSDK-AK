@@ -283,7 +283,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOverVehicle;
     /// <summary>
-    /// Function: JumpOverVehicle
+    /// Function: JumpOverVehicle<br/>
+    /// Native code at BatmanAK.exe+0x4FC920 in the Steam build
     /// </summary>
     public unsafe virtual bool JumpOverVehicle(BmSDK.BmGame.RVehicle Vehicle, System.Numerics.Vector3 MoveInDirection)
     {
@@ -306,7 +307,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOverProp;
     /// <summary>
-    /// Function: JumpOverProp
+    /// Function: JumpOverProp<br/>
+    /// Native code at BatmanAK.exe+0x4FC7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool JumpOverProp(BmSDK.BmGame.RDestructibleProp Prop, System.Numerics.Vector3 MoveInDirection)
     {
@@ -329,7 +331,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRunToPointForLinkFromPosition;
     /// <summary>
-    /// Function: GetRunToPointForLinkFromPosition
+    /// Function: GetRunToPointForLinkFromPosition<br/>
+    /// Native code at BatmanAK.exe+0x4FC3C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRunToPointForLinkFromPosition(int LinkStartID, int LinkEndID, int RoadLink, System.Numerics.Vector3 CurrentPosition, bool bDebug)
     {
@@ -355,7 +358,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStopRunning;
     /// <summary>
-    /// Function: ShouldStopRunning
+    /// Function: ShouldStopRunning<br/>
+    /// Native code at BatmanAK.exe+0x488C40 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldStopRunning(System.Numerics.Vector3 MoveDirection)
     {
@@ -377,7 +381,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickRunAway;
     /// <summary>
-    /// Function: TickRunAway
+    /// Function: TickRunAway<br/>
+    /// Native code at BatmanAK.exe+0x4FC290 in the Steam build
     /// </summary>
     public unsafe virtual void TickRunAway(float DeltaTime)
     {
@@ -399,7 +404,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRunAwayForce;
     /// <summary>
-    /// Function: GetRunAwayForce
+    /// Function: GetRunAwayForce<br/>
+    /// Native code at BatmanAK.exe+0x4FC0F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRunAwayForce(float DeltaTime, bool bDebug = default)
     {
@@ -422,7 +428,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadDirectionForceForActor;
     /// <summary>
-    /// Function: GetRoadDirectionForceForActor
+    /// Function: GetRoadDirectionForceForActor<br/>
+    /// Native code at BatmanAK.exe+0x4FBF70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRoadDirectionForceForActor(int AvoidIdx, bool bDebug = default)
     {
@@ -445,7 +452,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidAnchorVert;
     /// <summary>
-    /// Function: IsValidAnchorVert
+    /// Function: IsValidAnchorVert<br/>
+    /// Native code at BatmanAK.exe+0x4FBE00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidAnchorVert(int VertID, bool bAllowNonFleeLinksFallback = default)
     {
@@ -468,7 +476,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadOffset;
     /// <summary>
-    /// Function: GetRoadOffset
+    /// Function: GetRoadOffset<br/>
+    /// Native code at BatmanAK.exe+0x4FBA90 in the Steam build
     /// </summary>
     public unsafe virtual float GetRoadOffset(int CurrPoint, int NextPoint, int Link, bool bLeft)
     {
@@ -493,7 +502,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllLinksFromPoint;
     /// <summary>
-    /// Function: GetAllLinksFromPoint
+    /// Function: GetAllLinksFromPoint<br/>
+    /// Native code at BatmanAK.exe+0x555AC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllLinksFromPoint(int PointId, out BmSDK.TArray<int> Links, bool bAllowNonFleeLinksFallback)
     {
@@ -517,7 +527,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceForActor;
     /// <summary>
-    /// Function: GetForceForActor
+    /// Function: GetForceForActor<br/>
+    /// Native code at BatmanAK.exe+0x4FB8D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetForceForActor(int Idx, out System.Numerics.Vector3 TotalForce, out int TotalInfluencers)
     {
@@ -593,7 +604,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUnpathableLink;
     /// <summary>
-    /// Function: AddUnpathableLink
+    /// Function: AddUnpathableLink<br/>
+    /// Native code at BatmanAK.exe+0x4FB6F0 in the Steam build
     /// </summary>
     public unsafe virtual void AddUnpathableLink(int StartVertID, int EndVertID)
     {
@@ -616,7 +628,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativePathNotFound;
     /// <summary>
-    /// Function: NativePathNotFound
+    /// Function: NativePathNotFound<br/>
+    /// Native code at BatmanAK.exe+0x46F590 in the Steam build
     /// </summary>
     public unsafe virtual void NativePathNotFound()
     {
@@ -682,7 +695,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceLinks;
     /// <summary>
-    /// Function: AdvanceLinks
+    /// Function: AdvanceLinks<br/>
+    /// Native code at BatmanAK.exe+0x46F550 in the Steam build
     /// </summary>
     public unsafe virtual void AdvanceLinks()
     {
@@ -703,7 +717,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentLink;
     /// <summary>
-    /// Function: SetCurrentLink
+    /// Function: SetCurrentLink<br/>
+    /// Native code at BatmanAK.exe+0x488BB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentLink(BmSDK.BmGame.RBMBehaviour_AvoidanceRunAway.FStoredLink NewLink)
     {
@@ -725,7 +740,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvoidLocation;
     /// <summary>
-    /// Function: GetAvoidLocation
+    /// Function: GetAvoidLocation<br/>
+    /// Native code at BatmanAK.exe+0x4FB5A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAvoidLocation(int AvoidIdx)
     {
@@ -747,7 +763,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeInit;
     /// <summary>
-    /// Function: NativeInit
+    /// Function: NativeInit<br/>
+    /// Native code at BatmanAK.exe+0x488B70 in the Steam build
     /// </summary>
     public unsafe virtual void NativeInit()
     {
@@ -768,7 +785,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasValidStoredLink;
     /// <summary>
-    /// Function: HasValidStoredLink
+    /// Function: HasValidStoredLink<br/>
+    /// Native code at BatmanAK.exe+0x488AD0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasValidStoredLink(int TestLinkID = default)
     {
@@ -790,7 +808,8 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearStoredLinks;
     /// <summary>
-    /// Function: ClearStoredLinks
+    /// Function: ClearStoredLinks<br/>
+    /// Native code at BatmanAK.exe+0x4887B0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearStoredLinks()
     {

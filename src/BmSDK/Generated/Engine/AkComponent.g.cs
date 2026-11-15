@@ -80,7 +80,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDefault;
     /// <summary>
-    /// Function: IsDefault
+    /// Function: IsDefault<br/>
+    /// Native code at BatmanAK.exe+0xB3D200 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDefault()
     {
@@ -101,7 +102,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeDefault;
     /// <summary>
-    /// Function: MakeDefault
+    /// Function: MakeDefault<br/>
+    /// Native code at BatmanAK.exe+0xB3D170 in the Steam build
     /// </summary>
     public unsafe virtual void MakeDefault(bool setAsDefault = default)
     {
@@ -123,7 +125,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldKillSoundsOnDestroy;
     /// <summary>
-    /// Function: ShouldKillSoundsOnDestroy
+    /// Function: ShouldKillSoundsOnDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB3D120 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldKillSoundsOnDestroy()
     {
@@ -144,7 +147,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillSoundsOnDestroy;
     /// <summary>
-    /// Function: KillSoundsOnDestroy
+    /// Function: KillSoundsOnDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB77DF0 in the Steam build
     /// </summary>
     public unsafe virtual void KillSoundsOnDestroy(bool Kill)
     {
@@ -166,7 +170,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoDestroyedWhenDead;
     /// <summary>
-    /// Function: IsAutoDestroyedWhenDead
+    /// Function: IsAutoDestroyedWhenDead<br/>
+    /// Native code at BatmanAK.exe+0xB3D0D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoDestroyedWhenDead()
     {
@@ -187,7 +192,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoDestroyedWhenHidden;
     /// <summary>
-    /// Function: IsAutoDestroyedWhenHidden
+    /// Function: IsAutoDestroyedWhenHidden<br/>
+    /// Native code at BatmanAK.exe+0xB3D080 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoDestroyedWhenHidden()
     {
@@ -208,7 +214,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNeverAutoDestroyed;
     /// <summary>
-    /// Function: IsNeverAutoDestroyed
+    /// Function: IsNeverAutoDestroyed<br/>
+    /// Native code at BatmanAK.exe+0xB3D030 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNeverAutoDestroyed()
     {
@@ -229,7 +236,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDestroyWhenDead;
     /// <summary>
-    /// Function: SetAutoDestroyWhenDead
+    /// Function: SetAutoDestroyWhenDead<br/>
+    /// Native code at BatmanAK.exe+0xB77CD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoDestroyWhenDead(bool autoDestroy)
     {
@@ -251,7 +259,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDestroyWhenHidden;
     /// <summary>
-    /// Function: SetAutoDestroyWhenHidden
+    /// Function: SetAutoDestroyWhenHidden<br/>
+    /// Native code at BatmanAK.exe+0xB77BB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoDestroyWhenHidden(bool autoDestroy)
     {
@@ -273,7 +282,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNeverAutoDestroy;
     /// <summary>
-    /// Function: SetNeverAutoDestroy
+    /// Function: SetNeverAutoDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB77A90 in the Steam build
     /// </summary>
     public unsafe virtual void SetNeverAutoDestroy(bool neverAutoDestroy)
     {
@@ -295,7 +305,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnerSpeaking;
     /// <summary>
-    /// Function: IsOwnerSpeaking
+    /// Function: IsOwnerSpeaking<br/>
+    /// Native code at BatmanAK.exe+0xB3CFE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnerSpeaking()
     {
@@ -316,7 +327,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnerDead;
     /// <summary>
-    /// Function: IsOwnerDead
+    /// Function: IsOwnerDead<br/>
+    /// Native code at BatmanAK.exe+0xB3CF90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnerDead()
     {
@@ -337,7 +349,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnerOnScreen;
     /// <summary>
-    /// Function: IsOwnerOnScreen
+    /// Function: IsOwnerOnScreen<br/>
+    /// Native code at BatmanAK.exe+0xB3CF40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnerOnScreen()
     {
@@ -358,7 +371,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnerHidden;
     /// <summary>
-    /// Function: IsOwnerHidden
+    /// Function: IsOwnerHidden<br/>
+    /// Native code at BatmanAK.exe+0xB3CEF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnerHidden()
     {
@@ -379,7 +393,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnerPlayer;
     /// <summary>
-    /// Function: IsOwnerPlayer
+    /// Function: IsOwnerPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB3CEA0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnerPlayer()
     {
@@ -400,7 +415,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPeakAudibilityRadius;
     /// <summary>
-    /// Function: SetPeakAudibilityRadius
+    /// Function: SetPeakAudibilityRadius<br/>
+    /// Native code at BatmanAK.exe+0xB77960 in the Steam build
     /// </summary>
     public unsafe virtual void SetPeakAudibilityRadius(float peakRadius)
     {
@@ -422,7 +438,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPeakAudibilityRadius;
     /// <summary>
-    /// Function: GetPeakAudibilityRadius
+    /// Function: GetPeakAudibilityRadius<br/>
+    /// Native code at BatmanAK.exe+0xB3CE50 in the Steam build
     /// </summary>
     public unsafe virtual float GetPeakAudibilityRadius()
     {
@@ -443,7 +460,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceVisibility;
     /// <summary>
-    /// Function: GetSourceVisibility
+    /// Function: GetSourceVisibility<br/>
+    /// Native code at BatmanAK.exe+0xB3CE00 in the Steam build
     /// </summary>
     public unsafe virtual float GetSourceVisibility()
     {
@@ -464,7 +482,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceVelocity;
     /// <summary>
-    /// Function: GetSourceVelocity
+    /// Function: GetSourceVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB3CDA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSourceVelocity()
     {
@@ -485,7 +504,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceToListener;
     /// <summary>
-    /// Function: GetDistanceToListener
+    /// Function: GetDistanceToListener<br/>
+    /// Native code at BatmanAK.exe+0xB3CD50 in the Steam build
     /// </summary>
     public unsafe virtual float GetDistanceToListener()
     {
@@ -506,7 +526,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFalloffEnhancementMultiplier;
     /// <summary>
-    /// Function: GetFalloffEnhancementMultiplier
+    /// Function: GetFalloffEnhancementMultiplier<br/>
+    /// Native code at BatmanAK.exe+0xB3CD00 in the Steam build
     /// </summary>
     public unsafe virtual float GetFalloffEnhancementMultiplier()
     {
@@ -527,7 +548,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFalloffRadiusMultiplier;
     /// <summary>
-    /// Function: GetFalloffRadiusMultiplier
+    /// Function: GetFalloffRadiusMultiplier<br/>
+    /// Native code at BatmanAK.exe+0xB3CCB0 in the Steam build
     /// </summary>
     public unsafe virtual float GetFalloffRadiusMultiplier()
     {
@@ -548,7 +570,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFalloffEnhancementEnabled;
     /// <summary>
-    /// Function: IsFalloffEnhancementEnabled
+    /// Function: IsFalloffEnhancementEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB3CC60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFalloffEnhancementEnabled()
     {
@@ -569,7 +592,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableFalloffEnhancement;
     /// <summary>
-    /// Function: DisableFalloffEnhancement
+    /// Function: DisableFalloffEnhancement<br/>
+    /// Native code at BatmanAK.exe+0xB3CC20 in the Steam build
     /// </summary>
     public unsafe virtual void DisableFalloffEnhancement()
     {
@@ -590,7 +614,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableFalloffEnhancement;
     /// <summary>
-    /// Function: EnableFalloffEnhancement
+    /// Function: EnableFalloffEnhancement<br/>
+    /// Native code at BatmanAK.exe+0xB777E0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableFalloffEnhancement(float enhancementRadius, bool easeIn = default)
     {
@@ -613,7 +638,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyFalloffRadiusMultiplier;
     /// <summary>
-    /// Function: ApplyFalloffRadiusMultiplier
+    /// Function: ApplyFalloffRadiusMultiplier<br/>
+    /// Native code at BatmanAK.exe+0xB775E0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyFalloffRadiusMultiplier(float falloffMultiplier, bool mixInOut)
     {
@@ -636,7 +662,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSecondaryOutput;
     /// <summary>
-    /// Function: DisableSecondaryOutput
+    /// Function: DisableSecondaryOutput<br/>
+    /// Native code at BatmanAK.exe+0xB3CBE0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableSecondaryOutput()
     {
@@ -657,7 +684,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableSecondaryOutput;
     /// <summary>
-    /// Function: EnableSecondaryOutput
+    /// Function: EnableSecondaryOutput<br/>
+    /// Native code at BatmanAK.exe+0xB3CB40 in the Steam build
     /// </summary>
     public unsafe virtual void EnableSecondaryOutput(bool forceViaAux = default)
     {
@@ -679,7 +707,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOcclusionEnabled;
     /// <summary>
-    /// Function: IsOcclusionEnabled
+    /// Function: IsOcclusionEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB3CAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOcclusionEnabled()
     {
@@ -700,7 +729,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableOcclusion;
     /// <summary>
-    /// Function: DisableOcclusion
+    /// Function: DisableOcclusion<br/>
+    /// Native code at BatmanAK.exe+0xB3CAB0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableOcclusion()
     {
@@ -721,7 +751,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableOcclusion;
     /// <summary>
-    /// Function: EnableOcclusion
+    /// Function: EnableOcclusion<br/>
+    /// Native code at BatmanAK.exe+0xB3C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableOcclusion(bool paramOnlyOcc = default, float fastUpdate = default, float slowUpdate = default)
     {
@@ -745,7 +776,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableDialogueMeterEffect;
     /// <summary>
-    /// Function: DisableDialogueMeterEffect
+    /// Function: DisableDialogueMeterEffect<br/>
+    /// Native code at BatmanAK.exe+0xB3C960 in the Steam build
     /// </summary>
     public unsafe virtual void DisableDialogueMeterEffect()
     {
@@ -766,7 +798,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableDialogueMeterEffect;
     /// <summary>
-    /// Function: EnableDialogueMeterEffect
+    /// Function: EnableDialogueMeterEffect<br/>
+    /// Native code at BatmanAK.exe+0xB77400 in the Steam build
     /// </summary>
     public unsafe virtual void EnableDialogueMeterEffect(bool enableMeter, BmSDK.Engine.AkEnvironmentName optionalMeterEffect)
     {
@@ -789,7 +822,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableEnvironmentalEffects;
     /// <summary>
-    /// Function: DisableEnvironmentalEffects
+    /// Function: DisableEnvironmentalEffects<br/>
+    /// Native code at BatmanAK.exe+0xB3C920 in the Steam build
     /// </summary>
     public unsafe virtual void DisableEnvironmentalEffects()
     {
@@ -810,7 +844,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEnvironmentalEffects;
     /// <summary>
-    /// Function: EnableEnvironmentalEffects
+    /// Function: EnableEnvironmentalEffects<br/>
+    /// Native code at BatmanAK.exe+0xB3C8E0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableEnvironmentalEffects()
     {
@@ -831,7 +866,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLinkedToListenerEnvironments;
     /// <summary>
-    /// Function: IsLinkedToListenerEnvironments
+    /// Function: IsLinkedToListenerEnvironments<br/>
+    /// Native code at BatmanAK.exe+0xB3C890 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLinkedToListenerEnvironments()
     {
@@ -852,7 +888,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToListenerEnvironments;
     /// <summary>
-    /// Function: LinkToListenerEnvironments
+    /// Function: LinkToListenerEnvironments<br/>
+    /// Native code at BatmanAK.exe+0xB772E0 in the Steam build
     /// </summary>
     public unsafe virtual void LinkToListenerEnvironments(bool linkListenerEnvs)
     {
@@ -874,7 +911,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterEnvironments;
     /// <summary>
-    /// Function: UnregisterEnvironments
+    /// Function: UnregisterEnvironments<br/>
+    /// Native code at BatmanAK.exe+0xBB8480 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterEnvironments(BmSDK.TArray<BmSDK.Engine.AkWwise.FAkEnvironmentSettings> envs)
     {
@@ -896,7 +934,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterEnvironments;
     /// <summary>
-    /// Function: RegisterEnvironments
+    /// Function: RegisterEnvironments<br/>
+    /// Native code at BatmanAK.exe+0xBB83D0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterEnvironments(BmSDK.TArray<BmSDK.Engine.AkWwise.FAkEnvironmentSettings> envs)
     {
@@ -918,7 +957,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOcclusionBubble;
     /// <summary>
-    /// Function: GetOcclusionBubble
+    /// Function: GetOcclusionBubble<br/>
+    /// Native code at BatmanAK.exe+0xB3C840 in the Steam build
     /// </summary>
     public unsafe virtual float GetOcclusionBubble()
     {
@@ -939,7 +979,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOcclusionBubble;
     /// <summary>
-    /// Function: SetOcclusionBubble
+    /// Function: SetOcclusionBubble<br/>
+    /// Native code at BatmanAK.exe+0xB771B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetOcclusionBubble(float bubbleRadius)
     {
@@ -961,7 +1002,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterOcclusionMultipliers;
     /// <summary>
-    /// Function: UnregisterOcclusionMultipliers
+    /// Function: UnregisterOcclusionMultipliers<br/>
+    /// Native code at BatmanAK.exe+0xB76EE0 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterOcclusionMultipliers(float Multiplier, float multiplierAux, float multiplierDlg)
     {
@@ -985,7 +1027,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterOcclusionMultipliers;
     /// <summary>
-    /// Function: RegisterOcclusionMultipliers
+    /// Function: RegisterOcclusionMultipliers<br/>
+    /// Native code at BatmanAK.exe+0xB76C10 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterOcclusionMultipliers(float Multiplier, float multiplierAux, float multiplierDlg)
     {
@@ -1009,7 +1052,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialBone;
     /// <summary>
-    /// Function: SetSourceSpatialBone
+    /// Function: SetSourceSpatialBone<br/>
+    /// Native code at BatmanAK.exe+0xB76AC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialBone(BmSDK.FName boneToFollow, BmSDK.Engine.AkComponent.EAkComponentUpdate newUpdateType = default)
     {
@@ -1032,7 +1076,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialBeam;
     /// <summary>
-    /// Function: SetSourceSpatialBeam
+    /// Function: SetSourceSpatialBeam<br/>
+    /// Native code at BatmanAK.exe+0xB3C6F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialBeam(System.Numerics.Vector3 beamStartPoint, System.Numerics.Vector3 beamEndPoint, BmSDK.Rotator Orientation = default, BmSDK.Engine.AkComponent.EAkComponentUpdate newUpdateType = default)
     {
@@ -1057,7 +1102,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialRay;
     /// <summary>
-    /// Function: SetSourceSpatialRay
+    /// Function: SetSourceSpatialRay<br/>
+    /// Native code at BatmanAK.exe+0xB3C5A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialRay(System.Numerics.Vector3 rayOrigin, BmSDK.Rotator rayOrientation, BmSDK.Rotator Orientation = default, BmSDK.Engine.AkComponent.EAkComponentUpdate newUpdateType = default)
     {
@@ -1082,7 +1128,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatialMulti;
     /// <summary>
-    /// Function: SetSourceSpatialMulti
+    /// Function: SetSourceSpatialMulti<br/>
+    /// Native code at BatmanAK.exe+0xBB81A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatialMulti(BmSDK.TArray<BmSDK.Engine.AkWwise.FAkSourceSpatial> multiPositions, bool Additive, System.Numerics.Vector3 primaryPosition, BmSDK.Rotator primaryOrientation = default, BmSDK.Engine.AkComponent.EAkComponentUpdate newUpdateType = default)
     {
@@ -1108,7 +1155,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueSourceSpatial;
     /// <summary>
-    /// Function: SetDialogueSourceSpatial
+    /// Function: SetDialogueSourceSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB3C4C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDialogueSourceSpatial(System.Numerics.Vector3 Position, BmSDK.Rotator Orientation = default)
     {
@@ -1131,7 +1179,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSpatial;
     /// <summary>
-    /// Function: SetSourceSpatial
+    /// Function: SetSourceSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB3C3A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSpatial(System.Numerics.Vector3 Position, BmSDK.Rotator Orientation = default, BmSDK.Engine.AkComponent.EAkComponentUpdate newUpdateType = default)
     {
@@ -1155,7 +1204,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDopplerVelocity;
     /// <summary>
-    /// Function: SetDopplerVelocity
+    /// Function: SetDopplerVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB76990 in the Steam build
     /// </summary>
     public unsafe virtual void SetDopplerVelocity(float dopplerVel)
     {
@@ -1177,7 +1227,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSurfaceSwitch;
     /// <summary>
-    /// Function: SetSurfaceSwitch
+    /// Function: SetSurfaceSwitch<br/>
+    /// Native code at BatmanAK.exe+0xBA7020 in the Steam build
     /// </summary>
     public unsafe virtual void SetSurfaceSwitch(BmSDK.Engine.AkSwitchName SwitchName, BmSDK.Engine.AkSwitchName fallbackSwitchName, BmSDK.FStringArg charName)
     {
@@ -1202,7 +1253,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceSwitch;
     /// <summary>
-    /// Function: SetSourceSwitch
+    /// Function: SetSourceSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB76870 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceSwitch(BmSDK.Engine.AkSwitchName SwitchName)
     {
@@ -1224,7 +1276,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceParameter;
     /// <summary>
-    /// Function: GetSourceParameter
+    /// Function: GetSourceParameter<br/>
+    /// Native code at BatmanAK.exe+0xB76730 in the Steam build
     /// </summary>
     public unsafe virtual float GetSourceParameter(BmSDK.Engine.AkParameterName ParamName)
     {
@@ -1246,7 +1299,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceParameter;
     /// <summary>
-    /// Function: SetSourceParameter
+    /// Function: SetSourceParameter<br/>
+    /// Native code at BatmanAK.exe+0xB76540 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -1269,7 +1323,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasAnyLoopingEvents;
     /// <summary>
-    /// Function: HasAnyLoopingEvents
+    /// Function: HasAnyLoopingEvents<br/>
+    /// Native code at BatmanAK.exe+0xB3C350 in the Steam build
     /// </summary>
     public unsafe virtual bool HasAnyLoopingEvents()
     {
@@ -1290,7 +1345,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLoopingEvent;
     /// <summary>
-    /// Function: HasLoopingEvent
+    /// Function: HasLoopingEvent<br/>
+    /// Native code at BatmanAK.exe+0xB76400 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLoopingEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -1312,7 +1368,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAllLoopingEvents;
     /// <summary>
-    /// Function: RemoveAllLoopingEvents
+    /// Function: RemoveAllLoopingEvents<br/>
+    /// Native code at BatmanAK.exe+0xB3C310 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveAllLoopingEvents()
     {
@@ -1333,7 +1390,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveLoopingAudioEvent;
     /// <summary>
-    /// Function: RemoveLoopingAudioEvent
+    /// Function: RemoveLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB762E0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveLoopingAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -1355,7 +1413,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLoopingAudioEvent;
     /// <summary>
-    /// Function: AddLoopingAudioEvent
+    /// Function: AddLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB761C0 in the Steam build
     /// </summary>
     public unsafe virtual void AddLoopingAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -1377,7 +1436,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillSounds;
     /// <summary>
-    /// Function: KillSounds
+    /// Function: KillSounds<br/>
+    /// Native code at BatmanAK.exe+0xB760A0 in the Steam build
     /// </summary>
     public unsafe virtual void KillSounds(bool destroySources)
     {
@@ -1399,7 +1459,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopEvent;
     /// <summary>
-    /// Function: StopEvent
+    /// Function: StopEvent<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe virtual void StopEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -1423,7 +1484,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAuxEvent;
     /// <summary>
-    /// Function: StartAuxEvent
+    /// Function: StartAuxEvent<br/>
+    /// Native code at BatmanAK.exe+0xB75EA0 in the Steam build
     /// </summary>
     public unsafe virtual bool StartAuxEvent(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 Position, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
@@ -1448,7 +1510,8 @@ public partial class AkComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartEvent;
     /// <summary>
-    /// Function: StartEvent
+    /// Function: StartEvent<br/>
+    /// Native code at BatmanAK.exe+0xB75CC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {

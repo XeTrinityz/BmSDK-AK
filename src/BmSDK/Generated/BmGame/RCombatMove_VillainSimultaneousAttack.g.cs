@@ -1376,7 +1376,8 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFormationRotation;
     /// <summary>
-    /// Function: UpdateFormationRotation
+    /// Function: UpdateFormationRotation<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFormationRotation()
     {
@@ -1397,7 +1398,8 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVecSpots;
     /// <summary>
-    /// Function: UpdateVecSpots
+    /// Function: UpdateVecSpots<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVecSpots()
     {
@@ -1418,7 +1420,8 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterInfo;
     /// <summary>
-    /// Function: SetCounterInfo
+    /// Function: SetCounterInfo<br/>
+    /// Native code at BatmanAK.exe+0x500FB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCounterInfo(int CounterInfoIndex, bool bTrackUsage)
     {
@@ -1441,7 +1444,8 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSimultaneousCounterInfoScore;
     /// <summary>
-    /// Function: GetSimultaneousCounterInfoScore
+    /// Function: GetSimultaneousCounterInfoScore<br/>
+    /// Native code at BatmanAK.exe+0x574040 in the Steam build
     /// </summary>
     public unsafe virtual int GetSimultaneousCounterInfoScore(BmSDK.BmGame.RPawnPlayerCombat.FSimultaneousCounterInfo TestCounter, bool bHasWeaponIH)
     {
@@ -1464,7 +1468,8 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCounterInfo;
     /// <summary>
-    /// Function: GetCounterInfo
+    /// Function: GetCounterInfo<br/>
+    /// Native code at BatmanAK.exe+0x48AAE0 in the Steam build
     /// </summary>
     public unsafe virtual int GetCounterInfo(BmSDK.BmGame.RPawnCombat.SimultaneousCounterAnimType FormationType, BmSDK.BmGame.RPawnCombat.SimultaneousCounterBehaviourType BehaviourType)
     {

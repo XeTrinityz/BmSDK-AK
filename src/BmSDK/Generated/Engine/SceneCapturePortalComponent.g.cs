@@ -80,7 +80,8 @@ public partial class SceneCapturePortalComponent : BmSDK.Engine.SceneCaptureComp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
-    /// Function: SetCaptureParameters
+    /// Function: SetCaptureParameters<br/>
+    /// Native code at BatmanAK.exe+0x9D8640 in the Steam build
     /// </summary>
     public unsafe virtual void SetCaptureParameters(BmSDK.Engine.TextureRenderTarget2D NewTextureTarget = default, float NewScaleFOV = default, BmSDK.Engine.Actor NewViewDest = default)
     {

@@ -80,7 +80,8 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterActor;
     /// <summary>
-    /// Function: UnRegisterActor
+    /// Function: UnRegisterActor<br/>
+    /// Native code at BatmanAK.exe+0x503220 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterActor(BmSDK.Engine.RInteractionComponent ActorToRemove)
     {
@@ -102,7 +103,8 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterNewActor;
     /// <summary>
-    /// Function: RegisterNewActor
+    /// Function: RegisterNewActor<br/>
+    /// Native code at BatmanAK.exe+0x5030F0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterNewActor(BmSDK.Engine.RInteractionComponent NewActor)
     {
@@ -124,7 +126,8 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionClass;
     /// <summary>
-    /// Function: GetInteractionClass
+    /// Function: GetInteractionClass<br/>
+    /// Native code at BatmanAK.exe+0xB5BB90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RInteractionClass GetInteractionClass(BmSDK.FName ClassName)
     {

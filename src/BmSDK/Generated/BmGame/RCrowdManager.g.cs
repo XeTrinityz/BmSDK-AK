@@ -243,7 +243,8 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumAgentsInFlock;
     /// <summary>
-    /// Function: GetNumAgentsInFlock
+    /// Function: GetNumAgentsInFlock<br/>
+    /// Native code at BatmanAK.exe+0x4A9820 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumAgentsInFlock(int FlockID)
     {

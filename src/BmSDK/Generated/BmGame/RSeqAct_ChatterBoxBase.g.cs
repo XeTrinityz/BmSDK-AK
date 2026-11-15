@@ -263,7 +263,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnKismetDialogueSuccess;
     /// <summary>
-    /// Function: OnKismetDialogueSuccess
+    /// Function: OnKismetDialogueSuccess<br/>
+    /// Native code at BatmanAK.exe+0x47F800 in the Steam build
     /// </summary>
     public unsafe virtual void OnKismetDialogueSuccess()
     {
@@ -284,7 +285,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnKismetDialogueFail;
     /// <summary>
-    /// Function: OnKismetDialogueFail
+    /// Function: OnKismetDialogueFail<br/>
+    /// Native code at BatmanAK.exe+0x488B70 in the Steam build
     /// </summary>
     public unsafe virtual void OnKismetDialogueFail()
     {
@@ -305,7 +307,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerChatterInterval;
     /// <summary>
-    /// Function: GetRiddlerChatterInterval
+    /// Function: GetRiddlerChatterInterval<br/>
+    /// Native code at BatmanAK.exe+0xB2B880 in the Steam build
     /// </summary>
     public unsafe virtual float GetRiddlerChatterInterval()
     {
@@ -326,7 +329,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScarecrowChatterInterval;
     /// <summary>
-    /// Function: GetScarecrowChatterInterval
+    /// Function: GetScarecrowChatterInterval<br/>
+    /// Native code at BatmanAK.exe+0xB2B830 in the Steam build
     /// </summary>
     public unsafe virtual float GetScarecrowChatterInterval()
     {
@@ -347,7 +351,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLowUrgencyObjectiveActive;
     /// <summary>
-    /// Function: IsLowUrgencyObjectiveActive
+    /// Function: IsLowUrgencyObjectiveActive<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLowUrgencyObjectiveActive()
     {
@@ -368,7 +373,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogNoChatterFound;
     /// <summary>
-    /// Function: LogNoChatterFound
+    /// Function: LogNoChatterFound<br/>
+    /// Native code at BatmanAK.exe+0x4E3F40 in the Steam build
     /// </summary>
     public unsafe virtual void LogNoChatterFound(BmSDK.BmGame.RBarkFlagBase BarkFlags, BmSDK.Engine.Actor subjectActor)
     {
@@ -391,7 +397,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerHelicopterChatter;
     /// <summary>
-    /// Function: TryTriggerHelicopterChatter
+    /// Function: TryTriggerHelicopterChatter<br/>
+    /// Native code at BatmanAK.exe+0x4E4270 in the Steam build
     /// </summary>
     public unsafe virtual bool TryTriggerHelicopterChatter(bool bBMChatterOnly)
     {
@@ -413,7 +420,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerRiddlerBillboardChatter;
     /// <summary>
-    /// Function: TryTriggerRiddlerBillboardChatter
+    /// Function: TryTriggerRiddlerBillboardChatter<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool TryTriggerRiddlerBillboardChatter()
     {
@@ -434,7 +442,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerScarecrowBillboardChatter;
     /// <summary>
-    /// Function: TryTriggerScarecrowBillboardChatter
+    /// Function: TryTriggerScarecrowBillboardChatter<br/>
+    /// Native code at BatmanAK.exe+0x47F7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool TryTriggerScarecrowBillboardChatter()
     {
@@ -455,7 +464,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPawnChatter;
     /// <summary>
-    /// Function: CanPawnChatter
+    /// Function: CanPawnChatter<br/>
+    /// Native code at BatmanAK.exe+0x4E3E00 in the Steam build
     /// </summary>
     public unsafe virtual bool CanPawnChatter(BmSDK.BmGame.RBMPawnAI TestPawn)
     {
@@ -477,7 +487,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ArePawnsInSameGroup;
     /// <summary>
-    /// Function: ArePawnsInSameGroup
+    /// Function: ArePawnsInSameGroup<br/>
+    /// Native code at BatmanAK.exe+0x47F6C0 in the Steam build
     /// </summary>
     public unsafe virtual bool ArePawnsInSameGroup(BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo PawnInfoA, BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo PawnInfoB)
     {
@@ -500,7 +511,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupPawns;
     /// <summary>
-    /// Function: GroupPawns
+    /// Function: GroupPawns<br/>
+    /// Native code at BatmanAK.exe+0x48A450 in the Steam build
     /// </summary>
     public unsafe virtual int GroupPawns()
     {
@@ -521,7 +533,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Function __fn_GlobalCanChatterPlay_Internal;
     /// <summary>
-    /// Function: GlobalCanChatterPlay_Internal
+    /// Function: GlobalCanChatterPlay_Internal<br/>
+    /// Native code at BatmanAK.exe+0x4E3CC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RSeqAct_ChatterBoxBase.GlobalChatterAvailability GlobalCanChatterPlay_Internal(bool bFirecrew)
     {
@@ -542,7 +555,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupAndScorePawns;
     /// <summary>
-    /// Function: GroupAndScorePawns
+    /// Function: GroupAndScorePawns<br/>
+    /// Native code at BatmanAK.exe+0x478F00 in the Steam build
     /// </summary>
     public unsafe virtual bool GroupAndScorePawns()
     {
@@ -563,7 +577,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllValidPawnsInRange;
     /// <summary>
-    /// Function: GetAllValidPawnsInRange
+    /// Function: GetAllValidPawnsInRange<br/>
+    /// Native code at BatmanAK.exe+0x56BBF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo> GetAllValidPawnsInRange()
     {
@@ -584,7 +599,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimers;
     /// <summary>
-    /// Function: UpdateTimers
+    /// Function: UpdateTimers<br/>
+    /// Native code at BatmanAK.exe+0x4E3780 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTimers(float DeltaTime, bool bGlobalLock, bool bAnyoneSpeaking, bool bThugTimerPaused, bool bThugTimerPausedByManbatOnly, bool bInActivePredVol)
     {
@@ -611,7 +627,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Update_Native;
     /// <summary>
-    /// Function: Update_Native
+    /// Function: Update_Native<br/>
+    /// Native code at BatmanAK.exe+0x4AFE20 in the Steam build
     /// </summary>
     public unsafe virtual bool Update_Native(float DeltaTime)
     {
@@ -633,7 +650,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHighestPlayingSpeechPriority_IgnoreManbat;
     /// <summary>
-    /// Function: GetHighestPlayingSpeechPriority_IgnoreManbat
+    /// Function: GetHighestPlayingSpeechPriority_IgnoreManbat<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetHighestPlayingSpeechPriority_IgnoreManbat()
     {
@@ -654,7 +672,8 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetThugChatterTimer;
     /// <summary>
-    /// Function: ResetThugChatterTimer
+    /// Function: ResetThugChatterTimer<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void ResetThugChatterTimer()
     {
@@ -1302,7 +1321,8 @@ public static class RSeqAct_ChatterBoxBaseStatics
 {
     private static BmSDK.Function __fn_GlobalCanChatterPlay_Internal;
     /// <summary>
-    /// Function: GlobalCanChatterPlay_Internal, run on <paramref name="self"/> rather than the class default object
+    /// Function: GlobalCanChatterPlay_Internal, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4E3CC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RSeqAct_ChatterBoxBase.GlobalChatterAvailability GlobalCanChatterPlay_Internal(this BmSDK.BmGame.RSeqAct_ChatterBoxBase self, bool bFirecrew)
     {

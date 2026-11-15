@@ -157,7 +157,8 @@ public partial class RNavMeshInspector : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawLines;
     /// <summary>
-    /// Function: DrawLines
+    /// Function: DrawLines<br/>
+    /// Native code at BatmanAK.exe+0x50F9D0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawLines(BmSDK.Engine.Canvas Canvas)
     {
@@ -179,7 +180,8 @@ public partial class RNavMeshInspector : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawAllReachablePolysFromPoint;
     /// <summary>
-    /// Function: DrawAllReachablePolysFromPoint
+    /// Function: DrawAllReachablePolysFromPoint<br/>
+    /// Native code at BatmanAK.exe+0x492D30 in the Steam build
     /// </summary>
     public unsafe virtual void DrawAllReachablePolysFromPoint(System.Numerics.Vector3 StartLoc)
     {

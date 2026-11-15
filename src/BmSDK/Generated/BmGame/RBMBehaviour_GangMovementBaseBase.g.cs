@@ -103,7 +103,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpookedByTank;
     /// <summary>
-    /// Function: SpookedByTank
+    /// Function: SpookedByTank<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe virtual bool SpookedByTank()
     {
@@ -124,7 +125,8 @@ public partial class RBMBehaviour_GangMovementBaseBase : BmSDK.BmGame.RBMBehavio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrafittiTag;
     /// <summary>
-    /// Function: SetGrafittiTag
+    /// Function: SetGrafittiTag<br/>
+    /// Native code at BatmanAK.exe+0x4E3F40 in the Steam build
     /// </summary>
     public unsafe virtual void SetGrafittiTag(BmSDK.Engine.Emitter GrafTag, BmSDK.Engine.MaterialInterface NewTag)
     {

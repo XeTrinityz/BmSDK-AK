@@ -307,7 +307,8 @@ public partial class RSpecialMoveInstance_HarpoonThug : BmSDK.BmGame.RSpecialMov
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHitVillainHitReaction;
     /// <summary>
-    /// Function: GetHitVillainHitReaction
+    /// Function: GetHitVillainHitReaction<br/>
+    /// Native code at BatmanAK.exe+0x4DF5C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetHitVillainHitReaction(BmSDK.Engine.AnimSet HitReactionAnimSet, bool bDisarmsThug)
     {

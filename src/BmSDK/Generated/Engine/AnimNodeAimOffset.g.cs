@@ -80,7 +80,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveProfileByIndex;
     /// <summary>
-    /// Function: SetActiveProfileByIndex
+    /// Function: SetActiveProfileByIndex<br/>
+    /// Native code at BatmanAK.exe+0xB53610 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveProfileByIndex(int ProfileIndex)
     {
@@ -102,7 +103,8 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveProfileByName;
     /// <summary>
-    /// Function: SetActiveProfileByName
+    /// Function: SetActiveProfileByName<br/>
+    /// Native code at BatmanAK.exe+0xB534E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveProfileByName(BmSDK.FName ProfileName)
     {

@@ -133,7 +133,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollisionDetected;
     /// <summary>
-    /// Function: RigidBodyCollisionDetected
+    /// Function: RigidBodyCollisionDetected<br/>
+    /// Native code at BatmanAK.exe+0x4A5F70 in the Steam build
     /// </summary>
     public unsafe virtual void RigidBodyCollisionDetected(BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 TotalNormalForceVector)
     {
@@ -374,7 +375,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelWeaponLoading;
     /// <summary>
-    /// Function: CancelWeaponLoading
+    /// Function: CancelWeaponLoading<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CancelWeaponLoading()
     {
@@ -395,7 +397,8 @@ public partial class RBMCombatPoint_EnvironmentWeapon : BmSDK.BmGame.RBMCombatPo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadWeapon;
     /// <summary>
-    /// Function: LoadWeapon
+    /// Function: LoadWeapon<br/>
+    /// Native code at BatmanAK.exe+0x537960 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadWeapon(BmSDK.FStringArg WeaponPackageString)
     {

@@ -80,7 +80,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreDefaultSleepFamily;
     /// <summary>
-    /// Function: RestoreDefaultSleepFamily
+    /// Function: RestoreDefaultSleepFamily<br/>
+    /// Native code at BatmanAK.exe+0xB916B0 in the Steam build
     /// </summary>
     public unsafe virtual void RestoreDefaultSleepFamily(BmSDK.Engine.PhysicsAsset InAsset)
     {
@@ -102,7 +103,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideSleepFamily;
     /// <summary>
-    /// Function: OverrideSleepFamily
+    /// Function: OverrideSleepFamily<br/>
+    /// Native code at BatmanAK.exe+0xB454E0 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideSleepFamily(BmSDK.Engine.RB_BodySetup.ESleepFamily SleepFamily)
     {
@@ -124,7 +126,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableCollisionWithKActorsWhenCrouched;
     /// <summary>
-    /// Function: SetEnableCollisionWithKActorsWhenCrouched
+    /// Function: SetEnableCollisionWithKActorsWhenCrouched<br/>
+    /// Native code at BatmanAK.exe+0xB914D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableCollisionWithKActorsWhenCrouched(BmSDK.Engine.PhysicsAsset InPhysicsAsset, bool bEnableHeadCollisionWithKActors)
     {
@@ -147,7 +150,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamping;
     /// <summary>
-    /// Function: SetDamping
+    /// Function: SetDamping<br/>
+    /// Native code at BatmanAK.exe+0xB912D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDamping(float LinearDamping, float AngularDamping)
     {
@@ -170,7 +174,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDampingRampupProportion;
     /// <summary>
-    /// Function: SetDampingRampupProportion
+    /// Function: SetDampingRampupProportion<br/>
+    /// Native code at BatmanAK.exe+0xB911A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDampingRampupProportion(float NewDampingRampupProportion)
     {
@@ -192,7 +197,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintInstance;
     /// <summary>
-    /// Function: FindConstraintInstance
+    /// Function: FindConstraintInstance<br/>
+    /// Native code at BatmanAK.exe+0xB90FB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_ConstraintInstance FindConstraintInstance(BmSDK.FName ConName, BmSDK.Engine.PhysicsAsset InAsset)
     {
@@ -215,7 +221,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyInstance;
     /// <summary>
-    /// Function: FindBodyInstance
+    /// Function: FindBodyInstance<br/>
+    /// Native code at BatmanAK.exe+0xB90DC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance FindBodyInstance(BmSDK.FName BodyName, BmSDK.Engine.PhysicsAsset InAsset)
     {
@@ -238,7 +245,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFullAnimWeightBonesFixed;
     /// <summary>
-    /// Function: SetFullAnimWeightBonesFixed
+    /// Function: SetFullAnimWeightBonesFixed<br/>
+    /// Native code at BatmanAK.exe+0xB90BE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBonesFixed(bool bNewFixed, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
@@ -261,7 +269,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFullAnimWeightBlockRigidBody;
     /// <summary>
-    /// Function: SetFullAnimWeightBlockRigidBody
+    /// Function: SetFullAnimWeightBlockRigidBody<br/>
+    /// Native code at BatmanAK.exe+0xB90A00 in the Steam build
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBlockRigidBody(bool bNewBlockRigidBody, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
@@ -284,7 +293,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedBodiesBlockRigidBody;
     /// <summary>
-    /// Function: SetNamedBodiesBlockRigidBody
+    /// Function: SetNamedBodiesBlockRigidBody<br/>
+    /// Native code at BatmanAK.exe+0xBB9220 in the Steam build
     /// </summary>
     public unsafe virtual void SetNamedBodiesBlockRigidBody(bool bNewBlockRigidBody, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
@@ -308,7 +318,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedMotorsAngularVelocityDrive;
     /// <summary>
-    /// Function: SetNamedMotorsAngularVelocityDrive
+    /// Function: SetNamedMotorsAngularVelocityDrive<br/>
+    /// Native code at BatmanAK.exe+0xBB8EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
@@ -334,7 +345,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedMotorsAngularPositionDrive;
     /// <summary>
-    /// Function: SetNamedMotorsAngularPositionDrive
+    /// Function: SetNamedMotorsAngularPositionDrive<br/>
+    /// Native code at BatmanAK.exe+0xBB8B60 in the Steam build
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
@@ -360,7 +372,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularDriveParams;
     /// <summary>
-    /// Function: SetAllMotorsAngularDriveParams
+    /// Function: SetAllMotorsAngularDriveParams<br/>
+    /// Native code at BatmanAK.exe+0xB90680 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
@@ -386,7 +399,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularVelocityDrive;
     /// <summary>
-    /// Function: SetAllMotorsAngularVelocityDrive
+    /// Function: SetAllMotorsAngularVelocityDrive<br/>
+    /// Native code at BatmanAK.exe+0xB90390 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSkipFullAnimWeightBodies = default)
     {
@@ -411,7 +425,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularPositionDrive;
     /// <summary>
-    /// Function: SetAllMotorsAngularPositionDrive
+    /// Function: SetAllMotorsAngularPositionDrive<br/>
+    /// Native code at BatmanAK.exe+0xB90120 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
@@ -436,7 +451,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceAllBodiesBelowUnfixed;
     /// <summary>
-    /// Function: ForceAllBodiesBelowUnfixed
+    /// Function: ForceAllBodiesBelowUnfixed<br/>
+    /// Native code at BatmanAK.exe+0xB8FE40 in the Steam build
     /// </summary>
     public unsafe virtual void ForceAllBodiesBelowUnfixed(out BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMeshComponent InSkelMesh, bool InbInstanceAlwaysFullAnimWeight)
     {
@@ -463,7 +479,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGroupBodiesFixed;
     /// <summary>
-    /// Function: SetGroupBodiesFixed
+    /// Function: SetGroupBodiesFixed<br/>
+    /// Native code at BatmanAK.exe+0xB8FB50 in the Steam build
     /// </summary>
     public unsafe virtual void SetGroupBodiesFixed(bool bNewFixed, BmSDK.FName GroupName, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default)
     {
@@ -488,7 +505,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedBodiesFixed;
     /// <summary>
-    /// Function: SetNamedBodiesFixed
+    /// Function: SetNamedBodiesFixed<br/>
+    /// Native code at BatmanAK.exe+0xBB88B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNamedBodiesFixed(bool bNewFixed, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default, bool bSkipFullAnimWeightBodies = default)
     {
@@ -514,7 +532,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllBodiesFixed;
     /// <summary>
-    /// Function: SetAllBodiesFixed
+    /// Function: SetAllBodiesFixed<br/>
+    /// Native code at BatmanAK.exe+0xB8FA30 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllBodiesFixed(bool bNewFixed)
     {
@@ -536,7 +555,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalMassBelowBone;
     /// <summary>
-    /// Function: GetTotalMassBelowBone
+    /// Function: GetTotalMassBelowBone<br/>
+    /// Native code at BatmanAK.exe+0xB8F780 in the Steam build
     /// </summary>
     public unsafe virtual float GetTotalMassBelowBone(BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMesh InSkelMesh)
     {
@@ -560,7 +580,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularDriveScale;
     /// <summary>
-    /// Function: SetAngularDriveScale
+    /// Function: SetAngularDriveScale<br/>
+    /// Native code at BatmanAK.exe+0xB8F4B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngularDriveScale(float InAngularSpringScale, float InAngularDampingScale, float InAngularForceLimitScale)
     {
@@ -584,7 +605,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearDriveScale;
     /// <summary>
-    /// Function: SetLinearDriveScale
+    /// Function: SetLinearDriveScale<br/>
+    /// Native code at BatmanAK.exe+0xB8F1E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLinearDriveScale(float InLinearSpringScale, float InLinearDampingScale, float InLinearForceLimitScale)
     {
@@ -608,7 +630,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCollision;
     /// <summary>
-    /// Function: EnableCollision
+    /// Function: EnableCollision<br/>
+    /// Native code at BatmanAK.exe+0xB8F000 in the Steam build
     /// </summary>
     public unsafe virtual void EnableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {
@@ -631,7 +654,8 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCollision;
     /// <summary>
-    /// Function: DisableCollision
+    /// Function: DisableCollision<br/>
+    /// Native code at BatmanAK.exe+0xB8EE20 in the Steam build
     /// </summary>
     public unsafe virtual void DisableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {

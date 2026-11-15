@@ -80,7 +80,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTargetsRefreshList;
     /// <summary>
-    /// Function: UpdateTargetsRefreshList
+    /// Function: UpdateTargetsRefreshList<br/>
+    /// Native code at BatmanAK.exe+0x55FBB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTargetsRefreshList(out BmSDK.TArray<BmSDK.BmGame.RHelicopterIntermediateBase.FTargetData> TargetDatas, BmSDK.Rotator rSearchLightSourceDirection, float fSearchLightScanSpreadCurrent, System.Numerics.Vector3 vSearchLightSourcePosition)
     {
@@ -105,7 +106,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLightSourceLocation;
     /// <summary>
-    /// Function: UpdateSearchLightSourceLocation
+    /// Function: UpdateSearchLightSourceLocation<br/>
+    /// Native code at BatmanAK.exe+0x4AF2A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSearchLightSourceLocation(float fDeltaTime, out BmSDK.BmGame.RHelicopterIntermediateBase.FSearchLightSourceLocationInfo SourceInfo)
     {
@@ -130,7 +132,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLightVisuals;
     /// <summary>
-    /// Function: UpdateSearchLightVisuals
+    /// Function: UpdateSearchLightVisuals<br/>
+    /// Native code at BatmanAK.exe+0x55F810 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSearchLightVisuals(float fDeltaTime, out BmSDK.TArray<BmSDK.BmGame.RHelicopterIntermediateBase.FSearchLightData> SearchLights, System.Numerics.Vector3 vSearchLightSourcePosition, BmSDK.Rotator rSearchLightSourceRotation, float fSearchLightBlindDelay, float fSearchLightMoveInterpolationSpeed)
     {
@@ -157,7 +160,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryIsActorWithinConeArea;
     /// <summary>
-    /// Function: QueryIsActorWithinConeArea
+    /// Function: QueryIsActorWithinConeArea<br/>
+    /// Native code at BatmanAK.exe+0x4AEF50 in the Steam build
     /// </summary>
     public unsafe virtual bool QueryIsActorWithinConeArea(BmSDK.Engine.Actor hActor, System.Numerics.Vector3 vConeSource, System.Numerics.Vector3 vConeDirection, float fConeLength, float fConeSpread)
     {
@@ -183,7 +187,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryHaveLineOfSite;
     /// <summary>
-    /// Function: QueryHaveLineOfSite
+    /// Function: QueryHaveLineOfSite<br/>
+    /// Native code at BatmanAK.exe+0x4AED00 in the Steam build
     /// </summary>
     public unsafe virtual bool QueryHaveLineOfSite(System.Numerics.Vector3 vOrigin, BmSDK.Engine.Actor hActor, out BmSDK.Engine.Actor hHitActor, out System.Numerics.Vector3 vHitLocation)
     {
@@ -227,7 +232,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLight;
     /// <summary>
-    /// Function: UpdateSearchLight
+    /// Function: UpdateSearchLight<br/>
+    /// Native code at BatmanAK.exe+0x4AEB10 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSearchLight(float DeltaTime, bool LookSweep = default, System.Numerics.Vector3 LookAtLocation = default)
     {
@@ -251,7 +257,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSearchLightOrigin;
     /// <summary>
-    /// Function: GetSearchLightOrigin
+    /// Function: GetSearchLightOrigin<br/>
+    /// Native code at BatmanAK.exe+0x47B0B0 in the Steam build
     /// </summary>
     public unsafe virtual void GetSearchLightOrigin()
     {
@@ -272,7 +279,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextPoint;
     /// <summary>
-    /// Function: GetNextPoint
+    /// Function: GetNextPoint<br/>
+    /// Native code at BatmanAK.exe+0x46D710 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPatrolPoint GetNextPoint()
     {
@@ -293,7 +301,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckOptimisedStasis;
     /// <summary>
-    /// Function: CheckOptimisedStasis
+    /// Function: CheckOptimisedStasis<br/>
+    /// Native code at BatmanAK.exe+0x46B2F0 in the Steam build
     /// </summary>
     public unsafe override bool CheckOptimisedStasis()
     {
@@ -314,7 +323,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMoveToward;
     /// <summary>
-    /// Function: DoMoveToward
+    /// Function: DoMoveToward<br/>
+    /// Native code at BatmanAK.exe+0x4AE9D0 in the Steam build
     /// </summary>
     public unsafe virtual bool DoMoveToward(float DeltaTime)
     {
@@ -336,7 +346,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMoveTowardPathLocations;
     /// <summary>
-    /// Function: SetMoveTowardPathLocations
+    /// Function: SetMoveTowardPathLocations<br/>
+    /// Native code at BatmanAK.exe+0x4AE740 in the Steam build
     /// </summary>
     public unsafe virtual bool SetMoveTowardPathLocations(System.Numerics.Vector3 _MoveTowardPathLocation1, System.Numerics.Vector3 _MoveTowardPathLocation2, float DeltaTime, float _MoveTowardSpeed)
     {
@@ -361,7 +372,8 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMoveTowardLocation;
     /// <summary>
-    /// Function: SetMoveTowardLocation
+    /// Function: SetMoveTowardLocation<br/>
+    /// Native code at BatmanAK.exe+0x4AE4A0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetMoveTowardLocation(System.Numerics.Vector3 _MoveTowardLocation, float DeltaTime, float _MoveTowardSpeed, bool _MoveTowardSlowdownOnApproach = default)
     {

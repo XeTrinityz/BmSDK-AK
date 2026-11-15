@@ -406,7 +406,8 @@ public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnchorPointPositionAndRotation;
     /// <summary>
-    /// Function: GetAnchorPointPositionAndRotation
+    /// Function: GetAnchorPointPositionAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x4E8E70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAnchorPointPositionAndRotation(int I, out System.Numerics.Vector3 Out_Position, out BmSDK.Rotator out_Rotation)
     {

@@ -369,7 +369,8 @@ public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle()
     {
@@ -390,7 +391,8 @@ public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -411,7 +413,8 @@ public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelWeaponLoading;
     /// <summary>
-    /// Function: CancelWeaponLoading
+    /// Function: CancelWeaponLoading<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CancelWeaponLoading()
     {
@@ -432,7 +435,8 @@ public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadWeapon;
     /// <summary>
-    /// Function: LoadWeapon
+    /// Function: LoadWeapon<br/>
+    /// Native code at BatmanAK.exe+0x537960 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadWeapon(BmSDK.FStringArg WeaponPackageString)
     {

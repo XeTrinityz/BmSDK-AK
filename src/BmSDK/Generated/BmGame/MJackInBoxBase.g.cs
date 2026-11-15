@@ -507,7 +507,8 @@ public partial class MJackInBoxBase : BmSDK.BmGame.RInventoryGadget, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTouchingEnemies;
     /// <summary>
-    /// Function: UpdateTouchingEnemies
+    /// Function: UpdateTouchingEnemies<br/>
+    /// Native code at BatmanAK.exe+0x557580 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateTouchingEnemies(out BmSDK.TArray<BmSDK.Engine.Actor> NumTouchingEnemies)
     {
@@ -529,7 +530,8 @@ public partial class MJackInBoxBase : BmSDK.BmGame.RInventoryGadget, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComplexTrace;
     /// <summary>
-    /// Function: ComplexTrace
+    /// Function: ComplexTrace<br/>
+    /// Native code at BatmanAK.exe+0x50CFB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor ComplexTrace(BmSDK.Engine.Actor MyOwner, out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Extent, System.Numerics.Vector3 End, System.Numerics.Vector3 Start)
     {

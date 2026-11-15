@@ -94,7 +94,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDefault;
     /// <summary>
-    /// Function: IsDefault
+    /// Function: IsDefault<br/>
+    /// Native code at BatmanAK.exe+0xB36890 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDefault()
     {
@@ -115,7 +116,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDefault;
     /// <summary>
-    /// Function: SetDefault
+    /// Function: SetDefault<br/>
+    /// Native code at BatmanAK.exe+0xB647D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDefault(bool MakeDefault)
     {
@@ -137,7 +139,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldKillDialogueOnDestroy;
     /// <summary>
-    /// Function: ShouldKillDialogueOnDestroy
+    /// Function: ShouldKillDialogueOnDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB36840 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldKillDialogueOnDestroy()
     {
@@ -158,7 +161,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillDialogueOnDestroy;
     /// <summary>
-    /// Function: KillDialogueOnDestroy
+    /// Function: KillDialogueOnDestroy<br/>
+    /// Native code at BatmanAK.exe+0xB646B0 in the Steam build
     /// </summary>
     public unsafe virtual void KillDialogueOnDestroy(bool Kill)
     {
@@ -180,7 +184,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomVoiceSubtitleLookup;
     /// <summary>
-    /// Function: GetCustomVoiceSubtitleLookup
+    /// Function: GetCustomVoiceSubtitleLookup<br/>
+    /// Native code at BatmanAK.exe+0xBA3420 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetCustomVoiceSubtitleLookup()
     {
@@ -201,7 +206,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCustomVoiceSubtitleLookup;
     /// <summary>
-    /// Function: ClearCustomVoiceSubtitleLookup
+    /// Function: ClearCustomVoiceSubtitleLookup<br/>
+    /// Native code at BatmanAK.exe+0xB36800 in the Steam build
     /// </summary>
     public unsafe virtual void ClearCustomVoiceSubtitleLookup()
     {
@@ -222,7 +228,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCustomVoiceSubtitleLookup;
     /// <summary>
-    /// Function: SetCustomVoiceSubtitleLookup
+    /// Function: SetCustomVoiceSubtitleLookup<br/>
+    /// Native code at BatmanAK.exe+0xBA32E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCustomVoiceSubtitleLookup(BmSDK.FStringArg voiceSubLookup)
     {
@@ -245,7 +252,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEmote;
     /// <summary>
-    /// Function: TriggerEmote
+    /// Function: TriggerEmote<br/>
+    /// Native code at BatmanAK.exe+0xBA3150 in the Steam build
     /// </summary>
     public unsafe virtual int TriggerEmote(BmSDK.Engine.AkEmoteType emType, BmSDK.FStringArg dlgTag = default)
     {
@@ -269,7 +277,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoice;
     /// <summary>
-    /// Function: GetVoice
+    /// Function: GetVoice<br/>
+    /// Native code at BatmanAK.exe+0xB367B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetVoice()
     {
@@ -290,7 +299,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVoice;
     /// <summary>
-    /// Function: SetVoice
+    /// Function: SetVoice<br/>
+    /// Native code at BatmanAK.exe+0xB64590 in the Steam build
     /// </summary>
     public unsafe virtual void SetVoice(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -312,7 +322,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEmoting;
     /// <summary>
-    /// Function: IsEmoting
+    /// Function: IsEmoting<br/>
+    /// Native code at BatmanAK.exe+0xB36760 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEmoting()
     {
@@ -333,7 +344,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EmotesAllowed;
     /// <summary>
-    /// Function: EmotesAllowed
+    /// Function: EmotesAllowed<br/>
+    /// Native code at BatmanAK.exe+0xB36710 in the Steam build
     /// </summary>
     public unsafe virtual bool EmotesAllowed()
     {
@@ -354,7 +366,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowEmotes;
     /// <summary>
-    /// Function: AllowEmotes
+    /// Function: AllowEmotes<br/>
+    /// Native code at BatmanAK.exe+0xB64420 in the Steam build
     /// </summary>
     public unsafe virtual void AllowEmotes(bool allow, bool stopEmote = default)
     {
@@ -377,7 +390,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasSpoken;
     /// <summary>
-    /// Function: HasSpoken
+    /// Function: HasSpoken<br/>
+    /// Native code at BatmanAK.exe+0xB36640 in the Steam build
     /// </summary>
     public unsafe virtual bool HasSpoken(out float timeSinceLastSpoke)
     {
@@ -401,7 +415,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeechSuppressingPrompts;
     /// <summary>
-    /// Function: IsSpeechSuppressingPrompts
+    /// Function: IsSpeechSuppressingPrompts<br/>
+    /// Native code at BatmanAK.exe+0xB365F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpeechSuppressingPrompts()
     {
@@ -422,7 +437,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWaitingToSpeak;
     /// <summary>
-    /// Function: IsWaitingToSpeak
+    /// Function: IsWaitingToSpeak<br/>
+    /// Native code at BatmanAK.exe+0xB36510 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWaitingToSpeak(bool rightNow = default, bool withPlayer = default)
     {
@@ -445,7 +461,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeakingLine;
     /// <summary>
-    /// Function: IsSpeakingLine
+    /// Function: IsSpeakingLine<br/>
+    /// Native code at BatmanAK.exe+0xB642E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpeakingLine(BmSDK.Engine.AkDialogueLine thisLine)
     {
@@ -467,7 +484,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeaking;
     /// <summary>
-    /// Function: IsSpeaking
+    /// Function: IsSpeaking<br/>
+    /// Native code at BatmanAK.exe+0xB36400 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpeaking(bool rightNow = default, bool withPlayer = default, bool checkVoiceAlso = default)
     {
@@ -491,7 +509,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptSpeech;
     /// <summary>
-    /// Function: InterruptSpeech
+    /// Function: InterruptSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBA3060 in the Steam build
     /// </summary>
     public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -515,7 +534,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeech;
     /// <summary>
-    /// Function: StopSpeech
+    /// Function: StopSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBA2EE0 in the Steam build
     /// </summary>
     public unsafe virtual void StopSpeech(bool exceptEmotes, BmSDK.FStringArg dlgTag = default)
     {
@@ -539,7 +559,8 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeech;
     /// <summary>
-    /// Function: StartSpeech
+    /// Function: StartSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBBA900 in the Steam build
     /// </summary>
     public unsafe virtual int StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {

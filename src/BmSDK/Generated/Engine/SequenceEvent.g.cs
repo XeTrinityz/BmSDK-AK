@@ -103,7 +103,8 @@ public partial class SequenceEvent : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckActivate;
     /// <summary>
-    /// Function: CheckActivate
+    /// Function: CheckActivate<br/>
+    /// Native code at BatmanAK.exe+0x9885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckActivate(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, bool bTest, out BmSDK.TArray<int> ActivateIndices, bool bPushTop)
     {

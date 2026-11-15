@@ -127,7 +127,8 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAllScheduledLocalNotifications;
     /// <summary>
-    /// Function: CancelAllScheduledLocalNotifications
+    /// Function: CancelAllScheduledLocalNotifications<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void CancelAllScheduledLocalNotifications()
     {
@@ -148,7 +149,8 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ScheduleLocalNotification;
     /// <summary>
-    /// Function: ScheduleLocalNotification
+    /// Function: ScheduleLocalNotification<br/>
+    /// Native code at BatmanAK.exe+0xBBCD70 in the Steam build
     /// </summary>
     public unsafe virtual void ScheduleLocalNotification(out BmSDK.Engine.AppNotificationsBase.FNotificationInfo Notification, int StartOffsetSeconds)
     {
@@ -185,7 +187,8 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

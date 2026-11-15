@@ -174,7 +174,8 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MakeDynamic;
     /// <summary>
-    /// Function: MakeDynamic
+    /// Function: MakeDynamic<br/>
+    /// Native code at BatmanAK.exe+0xB8E100 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.KActorFromStatic MakeDynamic(BmSDK.Engine.StaticMeshComponent MovableMesh)
     {
@@ -195,7 +196,8 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MakeStatic;
     /// <summary>
-    /// Function: MakeStatic
+    /// Function: MakeStatic<br/>
+    /// Native code at BatmanAK.exe+0xB44E60 in the Steam build
     /// </summary>
     public unsafe static void MakeStatic()
     {
@@ -257,7 +259,8 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisablePrecomputedLighting;
     /// <summary>
-    /// Function: DisablePrecomputedLighting
+    /// Function: DisablePrecomputedLighting<br/>
+    /// Native code at BatmanAK.exe+0xB44E20 in the Steam build
     /// </summary>
     public unsafe virtual void DisablePrecomputedLighting()
     {
@@ -303,7 +306,8 @@ public static class KActorFromStaticStatics
 {
     private static BmSDK.Function __fn_MakeDynamic;
     /// <summary>
-    /// Function: MakeDynamic, run on <paramref name="self"/> rather than the class default object
+    /// Function: MakeDynamic, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB8E100 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.KActorFromStatic MakeDynamic(this BmSDK.Engine.KActorFromStatic self, BmSDK.Engine.StaticMeshComponent MovableMesh)
     {
@@ -325,7 +329,8 @@ public static class KActorFromStaticStatics
 
     private static BmSDK.Function __fn_MakeStatic;
     /// <summary>
-    /// Function: MakeStatic, run on <paramref name="self"/> rather than the class default object
+    /// Function: MakeStatic, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44E60 in the Steam build
     /// </summary>
     public unsafe static void MakeStatic(this BmSDK.Engine.KActorFromStatic self)
     {

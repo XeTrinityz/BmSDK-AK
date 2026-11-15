@@ -716,7 +716,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCombatCameraSuppression;
     /// <summary>
-    /// Function: UpdateCombatCameraSuppression
+    /// Function: UpdateCombatCameraSuppression<br/>
+    /// Native code at BatmanAK.exe+0x47ECF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCombatCameraSuppression()
     {
@@ -3936,7 +3937,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallEvadeInfo;
     /// <summary>
-    /// Function: GetWallEvadeInfo
+    /// Function: GetWallEvadeInfo<br/>
+    /// Native code at BatmanAK.exe+0x47EBC0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetWallEvadeInfo(System.Numerics.Vector3 Dir, out System.Numerics.Vector3 WallLocation, out System.Numerics.Vector3 WallNormal)
     {
@@ -4513,7 +4515,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidStrikeTarget;
     /// <summary>
-    /// Function: IsValidStrikeTarget
+    /// Function: IsValidStrikeTarget<br/>
+    /// Native code at BatmanAK.exe+0x4DE220 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidStrikeTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType, BmSDK.BmGame.RPawnVillain TestPawn)
     {
@@ -4537,7 +4540,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindWeaponToPickupCacheUI;
     /// <summary>
-    /// Function: FindWeaponToPickupCacheUI
+    /// Function: FindWeaponToPickupCacheUI<br/>
+    /// Native code at BatmanAK.exe+0x4DE0B0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindWeaponToPickupCacheUI(System.Numerics.Vector3 CheckDir, float CheckDist)
     {
@@ -4560,7 +4564,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindWeaponToPickup;
     /// <summary>
-    /// Function: FindWeaponToPickup
+    /// Function: FindWeaponToPickup<br/>
+    /// Native code at BatmanAK.exe+0x4DDF40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMCombatThrownObject FindWeaponToPickup(System.Numerics.Vector3 CheckDir, float CheckDist)
     {
@@ -4583,7 +4588,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDeadTarget;
     /// <summary>
-    /// Function: FindDeadTarget
+    /// Function: FindDeadTarget<br/>
+    /// Native code at BatmanAK.exe+0x47EA90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindDeadTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default, float CloseRangeDist = default)
     {
@@ -4607,7 +4613,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindStrikeTarget;
     /// <summary>
-    /// Function: FindStrikeTarget
+    /// Function: FindStrikeTarget<br/>
+    /// Native code at BatmanAK.exe+0x47E960 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindStrikeTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default, float CloseRangeDist = default)
     {
@@ -4631,7 +4638,8 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAtEnemy;
     /// <summary>
-    /// Function: GetLookAtEnemy
+    /// Function: GetLookAtEnemy<br/>
+    /// Native code at BatmanAK.exe+0x47E910 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat GetLookAtEnemy()
     {

@@ -81,6 +81,7 @@ sealed class FunctionInfo : MemberInfo
     public bool IsOverride;
     public bool ShouldSuppressOptional;
     public bool HasReturnParam;
+    public ulong? NativeRva;
     public PropertyInfo ReturnParam = new();
     public List<PropertyInfo> Params = [];
 }
@@ -601,6 +602,12 @@ sealed class InfoBuilder(Dump dump)
         }
 
         info.ShouldSuppressOptional = info.Params.Any(p => p.IsOptionalParam && p.IsOutParam);
+
+        // A native with code of its own, which is where a detour would go
+        if (info.IsNative && func.CodeRva is { } rva && rva != dump.ScriptCodeRva)
+        {
+            info.NativeRva = rva;
+        }
         return info;
     }
 

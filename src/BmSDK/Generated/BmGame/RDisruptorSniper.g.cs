@@ -625,7 +625,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
-    /// Function: GetAutoTargetRotation
+    /// Function: GetAutoTargetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetAutoTargetRotation()
     {
@@ -646,7 +647,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnGeometryToHitLocation;
     /// <summary>
-    /// Function: GetNearestPointOnGeometryToHitLocation
+    /// Function: GetNearestPointOnGeometryToHitLocation<br/>
+    /// Native code at BatmanAK.exe+0x542390 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnGeometryToHitLocation(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh Target, System.Numerics.Vector3 vHitLocation)
     {
@@ -669,7 +671,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSniperTarget;
     /// <summary>
-    /// Function: GetSniperTarget
+    /// Function: GetSniperTarget<br/>
+    /// Native code at BatmanAK.exe+0x542110 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSniperTarget(out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh OutTarget, out System.Numerics.Vector3 vHitLocation, out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh NearestTarget, float NearestAngleInDegrees)
     {
@@ -696,7 +699,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHighlightedMeshCurrentTarget;
     /// <summary>
-    /// Function: IsHighlightedMeshCurrentTarget
+    /// Function: IsHighlightedMeshCurrentTarget<br/>
+    /// Native code at BatmanAK.exe+0xFDD710 in the Steam build
     /// </summary>
     public unsafe override bool IsHighlightedMeshCurrentTarget(BmSDK.Engine.MeshComponent CheckHighlightedMesh)
     {
@@ -718,7 +722,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowHighlightToBeHidden;
     /// <summary>
-    /// Function: AllowHighlightToBeHidden
+    /// Function: AllowHighlightToBeHidden<br/>
+    /// Native code at BatmanAK.exe+0x5573C0 in the Steam build
     /// </summary>
     public unsafe override bool AllowHighlightToBeHidden(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -740,7 +745,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewInDisruptorModeOnPrimitiveComponent;
     /// <summary>
-    /// Function: SetViewInDisruptorModeOnPrimitiveComponent
+    /// Function: SetViewInDisruptorModeOnPrimitiveComponent<br/>
+    /// Native code at BatmanAK.exe+0x50DB10 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewInDisruptorModeOnPrimitiveComponent(BmSDK.Engine.PrimitiveComponent TheComponent)
     {
@@ -762,7 +768,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisruptorAimingAtValidDisruptableLocationOnTarget;
     /// <summary>
-    /// Function: IsDisruptorAimingAtValidDisruptableLocationOnTarget
+    /// Function: IsDisruptorAimingAtValidDisruptableLocationOnTarget<br/>
+    /// Native code at BatmanAK.exe+0x50D8E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDisruptorAimingAtValidDisruptableLocationOnTarget(BmSDK.Engine.Actor TargetActor, System.Numerics.Vector3 vTargetLocation, BmSDK.FName nHitBoneName)
     {
@@ -786,7 +793,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCornerCoverLean;
     /// <summary>
-    /// Function: UpdateCornerCoverLean
+    /// Function: UpdateCornerCoverLean<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCornerCoverLean()
     {
@@ -807,7 +815,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisruptorHighlightMaterials;
     /// <summary>
-    /// Function: UpdateDisruptorHighlightMaterials
+    /// Function: UpdateDisruptorHighlightMaterials<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDisruptorHighlightMaterials()
     {
@@ -828,7 +837,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCorrectMIC;
     /// <summary>
-    /// Function: GetCorrectMIC
+    /// Function: GetCorrectMIC<br/>
+    /// Native code at BatmanAK.exe+0x50C5F0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.MaterialInterface GetCorrectMIC(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
@@ -858,7 +868,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCorrectMICOnMesh;
     /// <summary>
-    /// Function: SetCorrectMICOnMesh
+    /// Function: SetCorrectMICOnMesh<br/>
+    /// Native code at BatmanAK.exe+0x50BDB0 in the Steam build
     /// </summary>
     public unsafe override void SetCorrectMICOnMesh(BmSDK.Engine.Actor NewActor, BmSDK.Engine.MeshComponent HighlightMesh, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
@@ -890,7 +901,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateIndividualTargetHighlight;
     /// <summary>
-    /// Function: PrimedUpdateIndividualTargetHighlight
+    /// Function: PrimedUpdateIndividualTargetHighlight<br/>
+    /// Native code at BatmanAK.exe+0xB86560 in the Steam build
     /// </summary>
     public unsafe override void PrimedUpdateIndividualTargetHighlight(BmSDK.Engine.Actor CheckTarget)
     {
@@ -912,7 +924,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HolsteredShouldHighlightBeMaintained;
     /// <summary>
-    /// Function: HolsteredShouldHighlightBeMaintained
+    /// Function: HolsteredShouldHighlightBeMaintained<br/>
+    /// Native code at BatmanAK.exe+0x557200 in the Steam build
     /// </summary>
     public unsafe override bool HolsteredShouldHighlightBeMaintained(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -934,7 +947,8 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateHighlights;
     /// <summary>
-    /// Function: PrimedUpdateHighlights
+    /// Function: PrimedUpdateHighlights<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe override void PrimedUpdateHighlights()
     {

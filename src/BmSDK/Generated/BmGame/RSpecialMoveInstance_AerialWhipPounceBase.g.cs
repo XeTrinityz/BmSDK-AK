@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_AerialWhipPounceBase : BmSDK.BmGame.RS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateReferencePointAndNormal;
     /// <summary>
-    /// Function: CalculateReferencePointAndNormal
+    /// Function: CalculateReferencePointAndNormal<br/>
+    /// Native code at BatmanAK.exe+0x47F0A0 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateReferencePointAndNormal(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, out System.Numerics.Vector3 ReferencePoint, out System.Numerics.Vector3 ReferenceNormal, out System.Numerics.Vector3 WhipTargetPoint)
     {

@@ -94,7 +94,8 @@ public partial class RGroupAssignmentPicker : BmSDK.StateObject, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptInitExecution;
     /// <summary>
-    /// Function: ScriptInitExecution
+    /// Function: ScriptInitExecution<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void ScriptInitExecution()
     {

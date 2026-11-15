@@ -75,7 +75,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumVisibleFragments;
     /// <summary>
-    /// Function: GetNumVisibleFragments
+    /// Function: GetNumVisibleFragments<br/>
+    /// Native code at BatmanAK.exe+0xB4B400 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumVisibleFragments()
     {
@@ -96,7 +97,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumFragments;
     /// <summary>
-    /// Function: GetNumFragments
+    /// Function: GetNumFragments<br/>
+    /// Native code at BatmanAK.exe+0xB4B3B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumFragments()
     {
@@ -117,7 +119,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFragmentVisible;
     /// <summary>
-    /// Function: IsFragmentVisible
+    /// Function: IsFragmentVisible<br/>
+    /// Native code at BatmanAK.exe+0xB4B270 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFragmentVisible(int FragmentIndex)
     {
@@ -139,7 +142,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVisibleFragments;
     /// <summary>
-    /// Function: GetVisibleFragments
+    /// Function: GetVisibleFragments<br/>
+    /// Native code at BatmanAK.exe+0xBB6580 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<byte> GetVisibleFragments()
     {
@@ -160,7 +164,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStaticMesh;
     /// <summary>
-    /// Function: SetStaticMesh
+    /// Function: SetStaticMesh<br/>
+    /// Native code at BatmanAK.exe+0x901020 in the Steam build
     /// </summary>
     public unsafe override bool SetStaticMesh(BmSDK.Engine.StaticMesh NewMesh, bool bForce = default)
     {
@@ -183,7 +188,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
-    /// Function: GetUseSimpleLineCollision
+    /// Function: GetUseSimpleLineCollision<br/>
+    /// Native code at BatmanAK.exe+0x900590 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleLineCollision()
     {
@@ -204,7 +210,8 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
-    /// Function: GetUseSimpleBoxCollision
+    /// Function: GetUseSimpleBoxCollision<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleBoxCollision()
     {

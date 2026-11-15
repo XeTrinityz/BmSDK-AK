@@ -165,7 +165,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetValidValuesForType;
     /// <summary>
-    /// Function: GetValidValuesForType
+    /// Function: GetValidValuesForType<br/>
+    /// Native code at BatmanAK.exe+0x573DA0 in the Steam build
     /// </summary>
     public unsafe static void GetValidValuesForType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum CheckType, out BmSDK.TArray<BmSDK.FName> ValidList)
     {
@@ -187,7 +188,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ValueIsValid;
     /// <summary>
-    /// Function: ValueIsValid
+    /// Function: ValueIsValid<br/>
+    /// Native code at BatmanAK.exe+0x4F7650 in the Steam build
     /// </summary>
     public unsafe virtual bool ValueIsValid(BmSDK.BmGame.RBarkValDef.FlagTypeEnum CheckType, BmSDK.FName CheckValue)
     {
@@ -210,7 +212,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasTheseFlags;
     /// <summary>
-    /// Function: HasTheseFlags
+    /// Function: HasTheseFlags<br/>
+    /// Native code at BatmanAK.exe+0x4F7510 in the Steam build
     /// </summary>
     public unsafe virtual bool HasTheseFlags(BmSDK.BmGame.RBarkFlagBase OtherBase)
     {
@@ -232,7 +235,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllValuesForType;
     /// <summary>
-    /// Function: GetAllValuesForType
+    /// Function: GetAllValuesForType<br/>
+    /// Native code at BatmanAK.exe+0x563990 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FName> GetAllValuesForType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum TestType)
     {
@@ -254,7 +258,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValueForType;
     /// <summary>
-    /// Function: GetValueForType
+    /// Function: GetValueForType<br/>
+    /// Native code at BatmanAK.exe+0x487560 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetValueForType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum TestType, int TestIndex = default)
     {
@@ -338,7 +343,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildFromString;
     /// <summary>
-    /// Function: BuildFromString
+    /// Function: BuildFromString<br/>
+    /// Native code at BatmanAK.exe+0x53F310 in the Steam build
     /// </summary>
     public unsafe virtual bool BuildFromString(BmSDK.FStringArg Input)
     {
@@ -361,7 +367,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ValueFromString;
     /// <summary>
-    /// Function: ValueFromString
+    /// Function: ValueFromString<br/>
+    /// Native code at BatmanAK.exe+0x53F1B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FName ValueFromString(BmSDK.FStringArg Input)
     {
@@ -383,7 +390,8 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_TypeFromString;
     /// <summary>
-    /// Function: TypeFromString
+    /// Function: TypeFromString<br/>
+    /// Native code at BatmanAK.exe+0x53F050 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(BmSDK.FStringArg Input)
     {
@@ -457,7 +465,8 @@ public static class RBarkFlagBaseStatics
 {
     private static BmSDK.Function __fn_GetValidValuesForType;
     /// <summary>
-    /// Function: GetValidValuesForType, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetValidValuesForType, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x573DA0 in the Steam build
     /// </summary>
     public unsafe static void GetValidValuesForType(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.BmGame.RBarkValDef.FlagTypeEnum CheckType, out BmSDK.TArray<BmSDK.FName> ValidList)
     {
@@ -480,7 +489,8 @@ public static class RBarkFlagBaseStatics
 
     private static BmSDK.Function __fn_ValueFromString;
     /// <summary>
-    /// Function: ValueFromString, run on <paramref name="self"/> rather than the class default object
+    /// Function: ValueFromString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x53F1B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FName ValueFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FStringArg Input)
     {
@@ -503,7 +513,8 @@ public static class RBarkFlagBaseStatics
 
     private static BmSDK.Function __fn_TypeFromString;
     /// <summary>
-    /// Function: TypeFromString, run on <paramref name="self"/> rather than the class default object
+    /// Function: TypeFromString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x53F050 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FStringArg Input)
     {

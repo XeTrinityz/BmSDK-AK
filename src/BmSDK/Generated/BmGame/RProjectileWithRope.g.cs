@@ -80,7 +80,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInFearGas;
     /// <summary>
-    /// Function: IsLocationInFearGas
+    /// Function: IsLocationInFearGas<br/>
+    /// Native code at BatmanAK.exe+0x494200 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInFearGas(System.Numerics.Vector3 vTestLocation)
     {
@@ -102,7 +103,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessFearGasCollision;
     /// <summary>
-    /// Function: ProcessFearGasCollision
+    /// Function: ProcessFearGasCollision<br/>
+    /// Native code at BatmanAK.exe+0x4941C0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessFearGasCollision()
     {
@@ -123,7 +125,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationAboveOcean;
     /// <summary>
-    /// Function: IsLocationAboveOcean
+    /// Function: IsLocationAboveOcean<br/>
+    /// Native code at BatmanAK.exe+0x494120 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationAboveOcean(System.Numerics.Vector3 vTestLocation)
     {
@@ -145,7 +148,8 @@ public partial class RProjectileWithRope : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessOceanCollision;
     /// <summary>
-    /// Function: ProcessOceanCollision
+    /// Function: ProcessOceanCollision<br/>
+    /// Native code at BatmanAK.exe+0x4940E0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessOceanCollision()
     {

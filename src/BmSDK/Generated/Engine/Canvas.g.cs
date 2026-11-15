@@ -109,7 +109,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextureDoubleLine;
     /// <summary>
-    /// Function: DrawTextureDoubleLine
+    /// Function: DrawTextureDoubleLine<br/>
+    /// Native code at BatmanAK.exe+0xB6EFF0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTextureDoubleLine(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, float Perc, float Spacing, float Width, BmSDK.GameObject.FColor LineColor, BmSDK.GameObject.FColor AltLineColor, BmSDK.Engine.Texture Tex, float U, float V, float UL, float VL)
     {
@@ -142,7 +143,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextureLine;
     /// <summary>
-    /// Function: DrawTextureLine
+    /// Function: DrawTextureLine<br/>
+    /// Native code at BatmanAK.exe+0xB6E970 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTextureLine(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, float Perc, float Width, BmSDK.GameObject.FColor LineColor, BmSDK.Engine.Texture LineTexture, float U, float V, float UL, float VL)
     {
@@ -173,7 +175,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Draw2DLine;
     /// <summary>
-    /// Function: Draw2DLine
+    /// Function: Draw2DLine<br/>
+    /// Native code at BatmanAK.exe+0x8877B0 in the Steam build
     /// </summary>
     public unsafe virtual void Draw2DLine(float X1, float Y1, float X2, float Y2, BmSDK.GameObject.FColor LineColor)
     {
@@ -214,7 +217,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawColor;
     /// <summary>
-    /// Function: SetDrawColor
+    /// Function: SetDrawColor<br/>
+    /// Native code at BatmanAK.exe+0xB3AA40 in the Steam build
     /// </summary>
     public unsafe virtual void SetDrawColor(byte R, byte G, byte B, byte A = default)
     {
@@ -327,7 +331,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawBlendedTile;
     /// <summary>
-    /// Function: DrawBlendedTile
+    /// Function: DrawBlendedTile<br/>
+    /// Native code at BatmanAK.exe+0xB6E340 in the Steam build
     /// </summary>
     public unsafe virtual void DrawBlendedTile(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.Engine.Canvas.ECanvasBlendMode Blend)
     {
@@ -372,7 +377,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopMaskRegion;
     /// <summary>
-    /// Function: PopMaskRegion
+    /// Function: PopMaskRegion<br/>
+    /// Native code at BatmanAK.exe+0x886210 in the Steam build
     /// </summary>
     public unsafe virtual void PopMaskRegion()
     {
@@ -393,7 +399,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PushMaskRegion;
     /// <summary>
-    /// Function: PushMaskRegion
+    /// Function: PushMaskRegion<br/>
+    /// Native code at BatmanAK.exe+0x885E30 in the Steam build
     /// </summary>
     public unsafe virtual void PushMaskRegion(float X, float Y, float XL, float YL)
     {
@@ -450,7 +457,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPos;
     /// <summary>
-    /// Function: SetPos
+    /// Function: SetPos<br/>
+    /// Native code at BatmanAK.exe+0xB6E0F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPos(float PosX, float PosY, float PosZ = default)
     {
@@ -488,7 +496,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
-    /// Function: Reset
+    /// Function: Reset<br/>
+    /// Native code at BatmanAK.exe+0xB3A9A0 in the Steam build
     /// </summary>
     public unsafe virtual void Reset(bool bKeepOrigin = default)
     {
@@ -510,7 +519,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopTransform;
     /// <summary>
-    /// Function: PopTransform
+    /// Function: PopTransform<br/>
+    /// Native code at BatmanAK.exe+0x873990 in the Steam build
     /// </summary>
     public unsafe virtual void PopTransform()
     {
@@ -531,7 +541,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PushTranslationMatrix;
     /// <summary>
-    /// Function: PushTranslationMatrix
+    /// Function: PushTranslationMatrix<br/>
+    /// Native code at BatmanAK.exe+0x870350 in the Steam build
     /// </summary>
     public unsafe virtual void PushTranslationMatrix(System.Numerics.Vector3 TranslationVector)
     {
@@ -553,7 +564,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectSphereBounds;
     /// <summary>
-    /// Function: ProjectSphereBounds
+    /// Function: ProjectSphereBounds<br/>
+    /// Native code at BatmanAK.exe+0xB6DF00 in the Steam build
     /// </summary>
     public unsafe virtual void ProjectSphereBounds(System.Numerics.Vector3 Center, float Radius, out System.Numerics.Vector2 Min, out System.Numerics.Vector2 Max)
     {
@@ -582,7 +594,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectStaticMeshBounds;
     /// <summary>
-    /// Function: ProjectStaticMeshBounds
+    /// Function: ProjectStaticMeshBounds<br/>
+    /// Native code at BatmanAK.exe+0xB6DD50 in the Steam build
     /// </summary>
     public unsafe virtual bool ProjectStaticMeshBounds(BmSDK.Engine.StaticMeshComponent MeshComponent, out System.Numerics.Vector2 Min, out System.Numerics.Vector2 Max)
     {
@@ -610,7 +623,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WorldToPixel;
     /// <summary>
-    /// Function: WorldToPixel
+    /// Function: WorldToPixel<br/>
+    /// Native code at BatmanAK.exe+0xB3A8C0 in the Steam build
     /// </summary>
     public unsafe virtual bool WorldToPixel(System.Numerics.Vector3 InPosition, out System.Numerics.Vector3 OutPosition)
     {
@@ -635,7 +649,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeProject;
     /// <summary>
-    /// Function: DeProject
+    /// Function: DeProject<br/>
+    /// Native code at BatmanAK.exe+0x86DCB0 in the Steam build
     /// </summary>
     public unsafe virtual void DeProject(System.Numerics.Vector2 ScreenPos, out System.Numerics.Vector3 WorldOrigin, out System.Numerics.Vector3 WorldDirection)
     {
@@ -663,7 +678,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Project;
     /// <summary>
-    /// Function: Project
+    /// Function: Project<br/>
+    /// Native code at BatmanAK.exe+0x86DB70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 Project(System.Numerics.Vector3 Location)
     {
@@ -719,7 +735,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Flash_GetTextExtents;
     /// <summary>
-    /// Function: Flash_GetTextExtents
+    /// Function: Flash_GetTextExtents<br/>
+    /// Native code at BatmanAK.exe+0xBA46E0 in the Steam build
     /// </summary>
     public unsafe virtual void Flash_GetTextExtents(BmSDK.FStringArg TheText, out float outWidth, out float outHeight, float atPointSize = default, float FixedWidth = default)
     {
@@ -750,7 +767,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Flash_DrawText;
     /// <summary>
-    /// Function: Flash_DrawText
+    /// Function: Flash_DrawText<br/>
+    /// Native code at BatmanAK.exe+0xBA4350 in the Steam build
     /// </summary>
     public unsafe virtual float Flash_DrawText(float atX, float atY, BmSDK.FStringArg TheText, BmSDK.GameObject.FColor Colour, float atPointSize = default, BmSDK.Engine.Canvas.FlashText_Align Align = default, float FixedWidth = default)
     {
@@ -779,7 +797,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawText;
     /// <summary>
-    /// Function: DrawText
+    /// Function: DrawText<br/>
+    /// Native code at BatmanAK.exe+0x885480 in the Steam build
     /// </summary>
     public unsafe virtual void DrawText(BmSDK.FStringArg Text, bool CR, float XScale, float YScale, out BmSDK.Engine.Canvas.FFontRenderInfo RenderInfo)
     {
@@ -808,7 +827,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TextSize;
     /// <summary>
-    /// Function: TextSize
+    /// Function: TextSize<br/>
+    /// Native code at BatmanAK.exe+0x877740 in the Steam build
     /// </summary>
     public unsafe virtual void TextSize(BmSDK.FStringArg String, out float XL, out float YL, float XScale = default, float YScale = default)
     {
@@ -839,7 +859,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StrLen;
     /// <summary>
-    /// Function: StrLen
+    /// Function: StrLen<br/>
+    /// Native code at BatmanAK.exe+0x889D10 in the Steam build
     /// </summary>
     public unsafe virtual void StrLen(BmSDK.FStringArg String, out float XL, out float YL)
     {
@@ -886,7 +907,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTris;
     /// <summary>
-    /// Function: DrawTris
+    /// Function: DrawTris<br/>
+    /// Native code at BatmanAK.exe+0xBB7550 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTris(BmSDK.Engine.Texture Tex, BmSDK.TArray<BmSDK.Engine.Canvas.FCanvasUVTri> Triangles, BmSDK.GameObject.FColor InColor)
     {
@@ -910,7 +932,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTileStretched;
     /// <summary>
-    /// Function: DrawTileStretched
+    /// Function: DrawTileStretched<br/>
+    /// Native code at BatmanAK.exe+0x889FF0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTileStretched(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, bool bStretchHorizontally = default, bool bStretchVertically = default, float ScalingFactor = default)
     {
@@ -942,7 +965,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTimer;
     /// <summary>
-    /// Function: DrawTimer
+    /// Function: DrawTimer<br/>
+    /// Native code at BatmanAK.exe+0x886EE0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTimer(BmSDK.Engine.Texture Tex, float StartTime, float TotalTime, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {
@@ -974,7 +998,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRotatedMaterialTile;
     /// <summary>
-    /// Function: DrawRotatedMaterialTile
+    /// Function: DrawRotatedMaterialTile<br/>
+    /// Native code at BatmanAK.exe+0xB6D8F0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawRotatedMaterialTile(BmSDK.Engine.MaterialInterface Mat, BmSDK.Rotator Rotation, float XL, float YL, float U = default, float V = default, float UL = default, float VL = default, float AnchorX = default, float AnchorY = default)
     {
@@ -1005,7 +1030,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRotatedTile;
     /// <summary>
-    /// Function: DrawRotatedTile
+    /// Function: DrawRotatedTile<br/>
+    /// Native code at BatmanAK.exe+0xB6D220 in the Steam build
     /// </summary>
     public unsafe virtual void DrawRotatedTile(BmSDK.Engine.Texture Tex, BmSDK.Rotator Rotation, float XL, float YL, float U, float V, float UL, float VL, float AnchorX = default, float AnchorY = default)
     {
@@ -1036,7 +1062,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawMaterialTile;
     /// <summary>
-    /// Function: DrawMaterialTile
+    /// Function: DrawMaterialTile<br/>
+    /// Native code at BatmanAK.exe+0x87C7C0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawMaterialTile(BmSDK.Engine.MaterialInterface Mat, float XL, float YL, float U = default, float V = default, float UL = default, float VL = default, bool bClipTile = default)
     {
@@ -1065,7 +1092,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreOptimizeDrawTiles;
     /// <summary>
-    /// Function: PreOptimizeDrawTiles
+    /// Function: PreOptimizeDrawTiles<br/>
+    /// Native code at BatmanAK.exe+0x885100 in the Steam build
     /// </summary>
     public unsafe virtual void PreOptimizeDrawTiles(int Num, BmSDK.Engine.Texture Tex, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {
@@ -1089,7 +1117,8 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTile;
     /// <summary>
-    /// Function: DrawTile
+    /// Function: DrawTile<br/>
+    /// Native code at BatmanAK.exe+0x8848C0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTile(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, bool ClipTile = default, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {

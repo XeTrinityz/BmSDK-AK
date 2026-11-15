@@ -80,7 +80,8 @@ public partial class RPhysOnContactHandler : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnContact;
     /// <summary>
-    /// Function: OnContact
+    /// Function: OnContact<br/>
+    /// Native code at BatmanAK.exe+0xB79AF0 in the Steam build
     /// </summary>
     public unsafe virtual void OnContact(BmSDK.Engine.RB_BodyInstance BodyInst0, BmSDK.Engine.RB_BodyInstance BodyInst1)
     {

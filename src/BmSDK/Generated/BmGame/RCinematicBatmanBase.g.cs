@@ -75,7 +75,8 @@ public partial class RCinematicBatmanBase : BmSDK.BmGame.RCinematicPlayerCharact
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
-    /// Function: MatineeTeleport
+    /// Function: MatineeTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4A21C0 in the Steam build
     /// </summary>
     public unsafe override void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {

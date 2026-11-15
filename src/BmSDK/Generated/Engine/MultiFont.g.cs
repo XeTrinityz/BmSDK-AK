@@ -80,7 +80,8 @@ public partial class MultiFont : BmSDK.Engine.Font, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolutionTestTableIndex;
     /// <summary>
-    /// Function: GetResolutionTestTableIndex
+    /// Function: GetResolutionTestTableIndex<br/>
+    /// Native code at BatmanAK.exe+0xB799B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetResolutionTestTableIndex(float HeightTest)
     {

@@ -80,7 +80,8 @@ public partial class RHidePointRope_RopeComponent : BmSDK.BmGame.RRope2Component
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRopeLengthAutoCalculated;
     /// <summary>
-    /// Function: IsRopeLengthAutoCalculated
+    /// Function: IsRopeLengthAutoCalculated<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe override bool IsRopeLengthAutoCalculated()
     {

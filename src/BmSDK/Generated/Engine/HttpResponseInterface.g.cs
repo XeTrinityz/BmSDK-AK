@@ -75,7 +75,8 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentAsString;
     /// <summary>
-    /// Function: GetContentAsString
+    /// Function: GetContentAsString<br/>
+    /// Native code at BatmanAK.exe+0xBAA020 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetContentAsString()
     {
@@ -96,7 +97,8 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResponseCode;
     /// <summary>
-    /// Function: GetResponseCode
+    /// Function: GetResponseCode<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe virtual int GetResponseCode()
     {

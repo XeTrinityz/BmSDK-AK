@@ -390,7 +390,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXRayVisibility;
     /// <summary>
-    /// Function: UpdateXRayVisibility
+    /// Function: UpdateXRayVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4CD020 in the Steam build
     /// </summary>
     public unsafe override void UpdateXRayVisibility(float DeltaTime)
     {
@@ -412,7 +413,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThugStateScore;
     /// <summary>
-    /// Function: GetThugStateScore
+    /// Function: GetThugStateScore<br/>
+    /// Native code at BatmanAK.exe+0x478300 in the Steam build
     /// </summary>
     public unsafe virtual int GetThugStateScore(int CheckState = default)
     {
@@ -434,7 +436,8 @@ public partial class RPawnVillainMultiStageBase : BmSDK.BmGame.RPawnVillain, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPathClear;
     /// <summary>
-    /// Function: IsPathClear
+    /// Function: IsPathClear<br/>
+    /// Native code at BatmanAK.exe+0x4D0D00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPathClear(System.Numerics.Vector3 FromPoint, System.Numerics.Vector3 EndPoint, float Radius, out System.Numerics.Vector3 CollidePoint, out System.Numerics.Vector3 CollideNormal)
     {

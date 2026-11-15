@@ -80,7 +80,8 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBlocker;
     /// <summary>
-    /// Function: RemoveBlocker
+    /// Function: RemoveBlocker<br/>
+    /// Native code at BatmanAK.exe+0x4E5510 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveBlocker(BmSDK.GameObject NewUnblocker)
     {
@@ -102,7 +103,8 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBlocker;
     /// <summary>
-    /// Function: AddBlocker
+    /// Function: AddBlocker<br/>
+    /// Native code at BatmanAK.exe+0x4E53E0 in the Steam build
     /// </summary>
     public unsafe virtual void AddBlocker(BmSDK.GameObject NewBlocker)
     {

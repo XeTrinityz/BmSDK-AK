@@ -98,7 +98,8 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RadioScannerAudioMarker;
     /// <summary>
-    /// Function: RadioScannerAudioMarker
+    /// Function: RadioScannerAudioMarker<br/>
+    /// Native code at BatmanAK.exe+0x51C980 in the Steam build
     /// </summary>
     public unsafe virtual void RadioScannerAudioMarker(BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID)
     {

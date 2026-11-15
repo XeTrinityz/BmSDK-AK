@@ -80,7 +80,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableRandomVolume;
     /// <summary>
-    /// Function: DisableRandomVolume
+    /// Function: DisableRandomVolume<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableRandomVolume()
     {
@@ -101,7 +102,8 @@ public partial class AkRandomVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRandomVolume;
     /// <summary>
-    /// Function: EnableRandomVolume
+    /// Function: EnableRandomVolume<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableRandomVolume()
     {

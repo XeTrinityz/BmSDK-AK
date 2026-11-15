@@ -80,7 +80,8 @@ public partial class MorphTargetSet : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphTarget;
     /// <summary>
-    /// Function: FindMorphTarget
+    /// Function: FindMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0xB57D30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphTarget FindMorphTarget(BmSDK.FName MorphTargetName)
     {

@@ -142,7 +142,8 @@ public partial class RLedgeLookDangerAreaInfo : BmSDK.Engine.Actor, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
-    /// Function: GetAIPointOfInterestExtent
+    /// Function: GetAIPointOfInterestExtent<br/>
+    /// Native code at BatmanAK.exe+0x46A5C0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
@@ -235,7 +236,8 @@ public partial class RLedgeLookDangerAreaInfo : BmSDK.Engine.Actor, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisplayLines;
     /// <summary>
-    /// Function: UpdateDisplayLines
+    /// Function: UpdateDisplayLines<br/>
+    /// Native code at BatmanAK.exe+0x484830 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDisplayLines()
     {
@@ -256,7 +258,8 @@ public partial class RLedgeLookDangerAreaInfo : BmSDK.Engine.Actor, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4E95D0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterWithNavMesh(bool bRegister)
     {

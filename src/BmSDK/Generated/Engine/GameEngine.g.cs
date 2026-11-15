@@ -80,7 +80,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLocHelperSystem;
     /// <summary>
-    /// Function: GetLocHelperSystem
+    /// Function: GetLocHelperSystem<br/>
+    /// Native code at BatmanAK.exe+0xAD4150 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.LocHelper GetLocHelperSystem()
     {
@@ -100,7 +101,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_HasSecondaryScreenActive;
     /// <summary>
-    /// Function: HasSecondaryScreenActive
+    /// Function: HasSecondaryScreenActive<br/>
+    /// Native code at BatmanAK.exe+0xAD40F0 in the Steam build
     /// </summary>
     public unsafe static bool HasSecondaryScreenActive()
     {
@@ -120,7 +122,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDLCManager;
     /// <summary>
-    /// Function: GetDLCManager
+    /// Function: GetDLCManager<br/>
+    /// Native code at BatmanAK.exe+0xAD4030 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DownloadableContentManager GetDLCManager()
     {
@@ -140,7 +143,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDLCEnumerator;
     /// <summary>
-    /// Function: GetDLCEnumerator
+    /// Function: GetDLCEnumerator<br/>
+    /// Native code at BatmanAK.exe+0xAD4090 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DownloadableContentEnumerator GetDLCEnumerator()
     {
@@ -160,7 +164,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetOnlineSubsystem;
     /// <summary>
-    /// Function: GetOnlineSubsystem
+    /// Function: GetOnlineSubsystem<br/>
+    /// Native code at BatmanAK.exe+0xAD0B30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.OnlineSubsystem GetOnlineSubsystem()
     {
@@ -180,7 +185,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyNamedNetDriver;
     /// <summary>
-    /// Function: DestroyNamedNetDriver
+    /// Function: DestroyNamedNetDriver<br/>
+    /// Native code at BatmanAK.exe+0xB8C730 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyNamedNetDriver(BmSDK.FName NetDriverName)
     {
@@ -202,7 +208,8 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateNamedNetDriver;
     /// <summary>
-    /// Function: CreateNamedNetDriver
+    /// Function: CreateNamedNetDriver<br/>
+    /// Native code at BatmanAK.exe+0xB8C5F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CreateNamedNetDriver(BmSDK.FName NetDriverName)
     {
@@ -746,7 +753,8 @@ public static class GameEngineStatics
 {
     private static BmSDK.Function __fn_GetLocHelperSystem;
     /// <summary>
-    /// Function: GetLocHelperSystem, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLocHelperSystem, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xAD4150 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.LocHelper GetLocHelperSystem(this BmSDK.Engine.GameEngine self)
     {
@@ -767,7 +775,8 @@ public static class GameEngineStatics
 
     private static BmSDK.Function __fn_HasSecondaryScreenActive;
     /// <summary>
-    /// Function: HasSecondaryScreenActive, run on <paramref name="self"/> rather than the class default object
+    /// Function: HasSecondaryScreenActive, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xAD40F0 in the Steam build
     /// </summary>
     public unsafe static bool HasSecondaryScreenActive(this BmSDK.Engine.GameEngine self)
     {
@@ -788,7 +797,8 @@ public static class GameEngineStatics
 
     private static BmSDK.Function __fn_GetDLCManager;
     /// <summary>
-    /// Function: GetDLCManager, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDLCManager, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xAD4030 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DownloadableContentManager GetDLCManager(this BmSDK.Engine.GameEngine self)
     {
@@ -809,7 +819,8 @@ public static class GameEngineStatics
 
     private static BmSDK.Function __fn_GetDLCEnumerator;
     /// <summary>
-    /// Function: GetDLCEnumerator, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDLCEnumerator, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xAD4090 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DownloadableContentEnumerator GetDLCEnumerator(this BmSDK.Engine.GameEngine self)
     {
@@ -830,7 +841,8 @@ public static class GameEngineStatics
 
     private static BmSDK.Function __fn_GetOnlineSubsystem;
     /// <summary>
-    /// Function: GetOnlineSubsystem, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetOnlineSubsystem, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xAD0B30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.OnlineSubsystem GetOnlineSubsystem(this BmSDK.Engine.GameEngine self)
     {

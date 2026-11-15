@@ -80,7 +80,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVehicleToEncounter;
     /// <summary>
-    /// Function: AddVehicleToEncounter
+    /// Function: AddVehicleToEncounter<br/>
+    /// Native code at BatmanAK.exe+0x52A8F0 in the Steam build
     /// </summary>
     public unsafe virtual void AddVehicleToEncounter(BmSDK.Engine.Actor NewVehicle)
     {
@@ -130,7 +131,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnGameDifficultyChanged;
     /// <summary>
-    /// Function: OnGameDifficultyChanged
+    /// Function: OnGameDifficultyChanged<br/>
+    /// Native code at BatmanAK.exe+0x49AB80 in the Steam build
     /// </summary>
     public unsafe virtual void OnGameDifficultyChanged()
     {
@@ -151,7 +153,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBigWaveFightActive;
     /// <summary>
-    /// Function: IsBigWaveFightActive
+    /// Function: IsBigWaveFightActive<br/>
+    /// Native code at BatmanAK.exe+0x49AB30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBigWaveFightActive()
     {
@@ -172,7 +175,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeavyTankAttackWarningMod;
     /// <summary>
-    /// Function: GetHeavyTankAttackWarningMod
+    /// Function: GetHeavyTankAttackWarningMod<br/>
+    /// Native code at BatmanAK.exe+0x52A7B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetHeavyTankAttackWarningMod(BmSDK.BmGame.RVehicleHeavyTank Attacker)
     {
@@ -224,7 +228,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedAttackDestAndCantAttack;
     /// <summary>
-    /// Function: ReachedAttackDestAndCantAttack
+    /// Function: ReachedAttackDestAndCantAttack<br/>
+    /// Native code at BatmanAK.exe+0x52A690 in the Steam build
     /// </summary>
     public unsafe virtual void ReachedAttackDestAndCantAttack(BmSDK.BmGame.RVehicleBehaviour_TankStrafe Attacker)
     {
@@ -246,7 +251,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumSectorsBetweenMyCurrentSectorAndDestSector;
     /// <summary>
-    /// Function: GetNumSectorsBetweenMyCurrentSectorAndDestSector
+    /// Function: GetNumSectorsBetweenMyCurrentSectorAndDestSector<br/>
+    /// Native code at BatmanAK.exe+0x52A4B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumSectorsBetweenMyCurrentSectorAndDestSector(BmSDK.Engine.Actor Attacker, int DestSector)
     {
@@ -269,7 +275,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CountsAsInTankBattleForFleeingThugs;
     /// <summary>
-    /// Function: CountsAsInTankBattleForFleeingThugs
+    /// Function: CountsAsInTankBattleForFleeingThugs<br/>
+    /// Native code at BatmanAK.exe+0x49AAE0 in the Steam build
     /// </summary>
     public unsafe virtual bool CountsAsInTankBattleForFleeingThugs()
     {
@@ -290,7 +297,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetActor;
     /// <summary>
-    /// Function: GetTargetActor
+    /// Function: GetTargetActor<br/>
+    /// Native code at BatmanAK.exe+0x52A370 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetTargetActor(BmSDK.BmGame.RVehicleNPC ThisActor)
     {
@@ -312,7 +320,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CommunicatePlayerLocationToNearbyTanks;
     /// <summary>
-    /// Function: CommunicatePlayerLocationToNearbyTanks
+    /// Function: CommunicatePlayerLocationToNearbyTanks<br/>
+    /// Native code at BatmanAK.exe+0x52A200 in the Steam build
     /// </summary>
     public unsafe virtual void CommunicatePlayerLocationToNearbyTanks(BmSDK.BmGame.RVehicleNPC ThisActor, bool bForceCombatRange = default)
     {
@@ -335,7 +344,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVehicleAsFriendly;
     /// <summary>
-    /// Function: SetVehicleAsFriendly
+    /// Function: SetVehicleAsFriendly<br/>
+    /// Native code at BatmanAK.exe+0x52A020 in the Steam build
     /// </summary>
     public unsafe virtual void SetVehicleAsFriendly(BmSDK.BmGame.RVehicleNPC Vehicle, bool Friendly)
     {
@@ -372,7 +382,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCurrentAttackPursuitModeAttack;
     /// <summary>
-    /// Function: IsCurrentAttackPursuitModeAttack
+    /// Function: IsCurrentAttackPursuitModeAttack<br/>
+    /// Native code at BatmanAK.exe+0x529EE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCurrentAttackPursuitModeAttack(BmSDK.BmGame.RVehicleNPC Attacker)
     {
@@ -394,7 +405,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasMissileThreat;
     /// <summary>
-    /// Function: HasMissileThreat
+    /// Function: HasMissileThreat<br/>
+    /// Native code at BatmanAK.exe+0x49AA90 in the Steam build
     /// </summary>
     public unsafe virtual bool HasMissileThreat()
     {
@@ -415,7 +427,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanVehicleAttack;
     /// <summary>
-    /// Function: CanVehicleAttack
+    /// Function: CanVehicleAttack<br/>
+    /// Native code at BatmanAK.exe+0x529DA0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanVehicleAttack(BmSDK.BmGame.RVehicleNPC Attackee)
     {
@@ -437,7 +450,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumTankMissilesToFire;
     /// <summary>
-    /// Function: GetNumTankMissilesToFire
+    /// Function: GetNumTankMissilesToFire<br/>
+    /// Native code at BatmanAK.exe+0x529C60 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumTankMissilesToFire(BmSDK.Engine.Actor TargetActor)
     {
@@ -459,7 +473,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamageMod;
     /// <summary>
-    /// Function: GetDamageMod
+    /// Function: GetDamageMod<br/>
+    /// Native code at BatmanAK.exe+0x529AB0 in the Steam build
     /// </summary>
     public unsafe virtual float GetDamageMod(BmSDK.Engine.Actor DamagedActor, out int HitNumber, bool IncrementCurrentAttackHits = default)
     {
@@ -485,7 +500,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeavyTankExclusionZone;
     /// <summary>
-    /// Function: GetHeavyTankExclusionZone
+    /// Function: GetHeavyTankExclusionZone<br/>
+    /// Native code at BatmanAK.exe+0x49A990 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHeavyTankExclusionZone(out System.Numerics.Vector3 RadiusOrigin, out float Radius)
     {
@@ -512,7 +528,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVehicleInCombat;
     /// <summary>
-    /// Function: IsVehicleInCombat
+    /// Function: IsVehicleInCombat<br/>
+    /// Native code at BatmanAK.exe+0x5298D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsVehicleInCombat(BmSDK.Engine.Actor TestActor, BmSDK.Engine.Actor TargetActor)
     {
@@ -535,7 +552,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAttackDifficulty;
     /// <summary>
-    /// Function: UpdateAttackDifficulty
+    /// Function: UpdateAttackDifficulty<br/>
+    /// Native code at BatmanAK.exe+0x5297B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAttackDifficulty(int AttackIdx)
     {
@@ -602,7 +620,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEncounterType;
     /// <summary>
-    /// Function: SetEncounterType
+    /// Function: SetEncounterType<br/>
+    /// Native code at BatmanAK.exe+0x529670 in the Steam build
     /// </summary>
     public unsafe virtual void SetEncounterType(BmSDK.BmGame.RVehicleNPC.EVehicleCombatEncounterType NewType, int AttackIndex)
     {
@@ -625,7 +644,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestChaser;
     /// <summary>
-    /// Function: GetNearestChaser
+    /// Function: GetNearestChaser<br/>
+    /// Native code at BatmanAK.exe+0xDFBFD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetNearestChaser()
     {
@@ -646,7 +666,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerUnderDirectAttack;
     /// <summary>
-    /// Function: IsPlayerUnderDirectAttack
+    /// Function: IsPlayerUnderDirectAttack<br/>
+    /// Native code at BatmanAK.exe+0x49A940 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerUnderDirectAttack()
     {
@@ -1052,7 +1073,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventBatmobileCombatSuccess;
     /// <summary>
-    /// Function: SendHydraEventBatmobileCombatSuccess
+    /// Function: SendHydraEventBatmobileCombatSuccess<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventBatmobileCombatSuccess()
     {
@@ -1073,7 +1095,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentEncounterType;
     /// <summary>
-    /// Function: GetCurrentEncounterType
+    /// Function: GetCurrentEncounterType<br/>
+    /// Native code at BatmanAK.exe+0x49A8F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleNPC.EVehicleCombatEncounterType GetCurrentEncounterType()
     {
@@ -1137,7 +1160,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumEnemies;
     /// <summary>
-    /// Function: GetNumEnemies
+    /// Function: GetNumEnemies<br/>
+    /// Native code at BatmanAK.exe+0x49A8A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumEnemies()
     {
@@ -1158,7 +1182,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PropogateWeaponFire;
     /// <summary>
-    /// Function: PropogateWeaponFire
+    /// Function: PropogateWeaponFire<br/>
+    /// Native code at BatmanAK.exe+0x5294D0 in the Steam build
     /// </summary>
     public unsafe virtual void PropogateWeaponFire(BmSDK.BmGame.RVehicleWeapon FiringWeapon, System.Numerics.Vector3 WeaponOrigin, System.Numerics.Vector3 FireDirection)
     {
@@ -1182,7 +1207,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PropogateHeavyWeaponImpact;
     /// <summary>
-    /// Function: PropogateHeavyWeaponImpact
+    /// Function: PropogateHeavyWeaponImpact<br/>
+    /// Native code at BatmanAK.exe+0x529340 in the Steam build
     /// </summary>
     public unsafe virtual void PropogateHeavyWeaponImpact(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor)
     {
@@ -1206,7 +1232,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerRadiusSoundReaction;
     /// <summary>
-    /// Function: TriggerRadiusSoundReaction
+    /// Function: TriggerRadiusSoundReaction<br/>
+    /// Native code at BatmanAK.exe+0x5291E0 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerRadiusSoundReaction(System.Numerics.Vector3 StartLocation, float SoundRadiusOrigin)
     {
@@ -1229,7 +1256,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerWeaponSoundReaction_Crows;
     /// <summary>
-    /// Function: TriggerWeaponSoundReaction_Crows
+    /// Function: TriggerWeaponSoundReaction_Crows<br/>
+    /// Native code at BatmanAK.exe+0x528EB0 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerWeaponSoundReaction_Crows(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float SoundRadiusOrigin, float SoundRadiusImpact, float SoundRadiusTrail)
     {
@@ -1255,7 +1283,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerWeaponSoundReaction;
     /// <summary>
-    /// Function: TriggerWeaponSoundReaction
+    /// Function: TriggerWeaponSoundReaction<br/>
+    /// Native code at BatmanAK.exe+0x528B80 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerWeaponSoundReaction(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float SoundRadiusOrigin, float SoundRadiusImpact, float SoundRadiusTrail)
     {
@@ -1299,7 +1328,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TankStrafeBlockedByOtherTank;
     /// <summary>
-    /// Function: TankStrafeBlockedByOtherTank
+    /// Function: TankStrafeBlockedByOtherTank<br/>
+    /// Native code at BatmanAK.exe+0x5289A0 in the Steam build
     /// </summary>
     public unsafe virtual void TankStrafeBlockedByOtherTank(BmSDK.BmGame.RVehicleBehaviour_TankStrafe bLocked, BmSDK.BmGame.RVehicleBehaviour_TankStrafe Blocker)
     {
@@ -1322,7 +1352,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TankStrafeReachedChaseDest;
     /// <summary>
-    /// Function: TankStrafeReachedChaseDest
+    /// Function: TankStrafeReachedChaseDest<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void TankStrafeReachedChaseDest(BmSDK.BmGame.RVehicleBehaviour_TankStrafe TankBehaviour)
     {
@@ -1344,7 +1375,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyTankStrafeDamage;
     /// <summary>
-    /// Function: NotifyTankStrafeDamage
+    /// Function: NotifyTankStrafeDamage<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyTankStrafeDamage(BmSDK.BmGame.RVehicleBehaviour_TankStrafe TankBehaviour)
     {
@@ -1366,7 +1398,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterTankStrafeBehaviour;
     /// <summary>
-    /// Function: UnregisterTankStrafeBehaviour
+    /// Function: UnregisterTankStrafeBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x528880 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterTankStrafeBehaviour(BmSDK.BmGame.RVehicleBehaviour_TankStrafe TankBehaviour)
     {
@@ -1388,7 +1421,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterTankStrafeBehaviour;
     /// <summary>
-    /// Function: RegisterTankStrafeBehaviour
+    /// Function: RegisterTankStrafeBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x528760 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterTankStrafeBehaviour(BmSDK.BmGame.RVehicleBehaviour_TankStrafe TankBehaviour)
     {
@@ -1410,7 +1444,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumEnemiesTargetingBatmobile;
     /// <summary>
-    /// Function: GetNumEnemiesTargetingBatmobile
+    /// Function: GetNumEnemiesTargetingBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x49A800 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumEnemiesTargetingBatmobile(BmSDK.BmGame.RVehicleNPC ExcludingThisVehicle = default)
     {
@@ -1432,7 +1467,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumEnemiesAwareOfOrLookingForPlayer;
     /// <summary>
-    /// Function: GetNumEnemiesAwareOfOrLookingForPlayer
+    /// Function: GetNumEnemiesAwareOfOrLookingForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x49A7B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumEnemiesAwareOfOrLookingForPlayer()
     {
@@ -1453,7 +1489,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumEnemiesAwareOfPlayer;
     /// <summary>
-    /// Function: GetNumEnemiesAwareOfPlayer
+    /// Function: GetNumEnemiesAwareOfPlayer<br/>
+    /// Native code at BatmanAK.exe+0x49A760 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumEnemiesAwareOfPlayer()
     {
@@ -1474,7 +1511,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlyingDroneAvoidance;
     /// <summary>
-    /// Function: UpdateFlyingDroneAvoidance
+    /// Function: UpdateFlyingDroneAvoidance<br/>
+    /// Native code at BatmanAK.exe+0x528630 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFlyingDroneAvoidance(float DeltaTime)
     {
@@ -1496,7 +1534,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NonAsyncTick;
     /// <summary>
-    /// Function: NonAsyncTick
+    /// Function: NonAsyncTick<br/>
+    /// Native code at BatmanAK.exe+0x528500 in the Steam build
     /// </summary>
     public unsafe virtual void NonAsyncTick(float DeltaTime)
     {
@@ -1518,7 +1557,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
-    /// Function: Tick
+    /// Function: Tick<br/>
+    /// Native code at BatmanAK.exe+0x5283D0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
@@ -1540,7 +1580,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReInitForChallenge;
     /// <summary>
-    /// Function: ReInitForChallenge
+    /// Function: ReInitForChallenge<br/>
+    /// Native code at BatmanAK.exe+0xB2E9B0 in the Steam build
     /// </summary>
     public unsafe virtual void ReInitForChallenge()
     {
@@ -1561,7 +1602,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0x5282A0 in the Steam build
     /// </summary>
     public unsafe virtual void Init(BmSDK.Engine.WorldInfo ThisWorldInfo)
     {
@@ -1583,7 +1625,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AmIInMyChosenAttackSector;
     /// <summary>
-    /// Function: AmIInMyChosenAttackSector
+    /// Function: AmIInMyChosenAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x528160 in the Steam build
     /// </summary>
     public unsafe virtual bool AmIInMyChosenAttackSector(BmSDK.Engine.Actor Attacker)
     {
@@ -1605,7 +1648,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSectorFilledProportion;
     /// <summary>
-    /// Function: GetSectorFilledProportion
+    /// Function: GetSectorFilledProportion<br/>
+    /// Native code at BatmanAK.exe+0x527EB0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSectorFilledProportion(BmSDK.Engine.Actor Attacker, bool AerialAttacker, bool SectorsMustBeLocked)
     {
@@ -1629,7 +1673,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSectorAttackPoint;
     /// <summary>
-    /// Function: GetSectorAttackPoint
+    /// Function: GetSectorAttackPoint<br/>
+    /// Native code at BatmanAK.exe+0x49A670 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSectorAttackPoint(out System.Numerics.Vector3 AttackLocation, out BmSDK.BmGame.RVehicleCombatManager.FAttackSector MySector)
     {
@@ -1656,7 +1701,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReserveAdjacentAttackSector;
     /// <summary>
-    /// Function: ReserveAdjacentAttackSector
+    /// Function: ReserveAdjacentAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x527B50 in the Steam build
     /// </summary>
     public unsafe virtual bool ReserveAdjacentAttackSector(BmSDK.Engine.Actor Attacker, float OptimalAttackRange, bool AerialAttacker, System.Numerics.Vector3 Direction, int MaxSteps = default)
     {
@@ -1682,7 +1728,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestAvailableGuardPoint;
     /// <summary>
-    /// Function: GetClosestAvailableGuardPoint
+    /// Function: GetClosestAvailableGuardPoint<br/>
+    /// Native code at BatmanAK.exe+0x527A10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleGuardPoint GetClosestAvailableGuardPoint(BmSDK.BmGame.RVehicleNPC Vehicle)
     {
@@ -1704,7 +1751,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapAttackSector;
     /// <summary>
-    /// Function: SwapAttackSector
+    /// Function: SwapAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x527820 in the Steam build
     /// </summary>
     public unsafe virtual bool SwapAttackSector(BmSDK.Engine.Actor PrevActor, BmSDK.Engine.Actor NewActor)
     {
@@ -1727,7 +1775,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LockAttackSector;
     /// <summary>
-    /// Function: LockAttackSector
+    /// Function: LockAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x527630 in the Steam build
     /// </summary>
     public unsafe virtual void LockAttackSector(BmSDK.Engine.Actor Attacker, bool LockOrUnlock)
     {
@@ -1750,7 +1799,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RandomizeAttackSector;
     /// <summary>
-    /// Function: RandomizeAttackSector
+    /// Function: RandomizeAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x5272B0 in the Steam build
     /// </summary>
     public unsafe virtual bool RandomizeAttackSector(BmSDK.Engine.Actor Attacker, float OptimalAttackRange, bool AerialAttacker, int MaxNumSteps)
     {
@@ -1775,7 +1825,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAttackSectorAerial;
     /// <summary>
-    /// Function: CheckAttackSectorAerial
+    /// Function: CheckAttackSectorAerial<br/>
+    /// Native code at BatmanAK.exe+0x5270B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAttackSectorAerial(System.Numerics.Vector3 CheckOrigin, System.Numerics.Vector3 CheckDirection, BmSDK.Engine.Actor Attacker, out float AttackRange)
     {
@@ -1802,7 +1853,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackSectorIndex;
     /// <summary>
-    /// Function: GetAttackSectorIndex
+    /// Function: GetAttackSectorIndex<br/>
+    /// Native code at BatmanAK.exe+0x526F70 in the Steam build
     /// </summary>
     public unsafe virtual int GetAttackSectorIndex(BmSDK.Engine.Actor Attacker)
     {
@@ -1824,7 +1876,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackSector;
     /// <summary>
-    /// Function: GetAttackSector
+    /// Function: GetAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x526E20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleCombatManager.FAttackSector GetAttackSector(BmSDK.Engine.Actor Attacker)
     {
@@ -1846,7 +1899,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseAttackSector;
     /// <summary>
-    /// Function: ReleaseAttackSector
+    /// Function: ReleaseAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x526CB0 in the Steam build
     /// </summary>
     public unsafe virtual void ReleaseAttackSector(BmSDK.Engine.Actor Attacker, bool CanEmptySectors = default)
     {
@@ -1869,7 +1923,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReserveAttackSector;
     /// <summary>
-    /// Function: ReserveAttackSector
+    /// Function: ReserveAttackSector<br/>
+    /// Native code at BatmanAK.exe+0x526930 in the Steam build
     /// </summary>
     public unsafe virtual bool ReserveAttackSector(BmSDK.Engine.Actor NewAttacker, float OptimalAttackRange, bool AerialAttacker, int AerialSingleCheckIndex)
     {
@@ -1894,7 +1949,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReservedAttackTargetIndex;
     /// <summary>
-    /// Function: GetReservedAttackTargetIndex
+    /// Function: GetReservedAttackTargetIndex<br/>
+    /// Native code at BatmanAK.exe+0x5267F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetReservedAttackTargetIndex(BmSDK.Engine.Actor Attacker)
     {
@@ -1916,7 +1972,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackTargetIndex;
     /// <summary>
-    /// Function: GetAttackTargetIndex
+    /// Function: GetAttackTargetIndex<br/>
+    /// Native code at BatmanAK.exe+0x526670 in the Steam build
     /// </summary>
     public unsafe virtual int GetAttackTargetIndex(BmSDK.Engine.Actor Attacker, bool CanCreateNew = default)
     {
@@ -1939,7 +1996,8 @@ public partial class RVehicleCombatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldLockDoors;
     /// <summary>
-    /// Function: ShouldLockDoors
+    /// Function: ShouldLockDoors<br/>
+    /// Native code at BatmanAK.exe+0x483080 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ECombatLockType ShouldLockDoors()
     {

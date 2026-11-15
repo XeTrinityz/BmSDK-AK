@@ -80,7 +80,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommand;
     /// <summary>
-    /// Function: ConsoleCommand
+    /// Function: ConsoleCommand<br/>
+    /// Native code at BatmanAK.exe+0xBA34A0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString ConsoleCommand(BmSDK.FStringArg Command, bool bWriteToLog = default)
     {
@@ -237,7 +238,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Unselect;
     /// <summary>
-    /// Function: Unselect
+    /// Function: Unselect<br/>
+    /// Native code at BatmanAK.exe+0x47A6E0 in the Steam build
     /// </summary>
     public unsafe virtual void Unselect()
     {
@@ -258,7 +260,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SecondarySelect;
     /// <summary>
-    /// Function: SecondarySelect
+    /// Function: SecondarySelect<br/>
+    /// Native code at BatmanAK.exe+0xB422A0 in the Steam build
     /// </summary>
     public unsafe virtual void SecondarySelect(System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor.FTraceHitInfo HitInfo)
     {
@@ -282,7 +285,8 @@ public partial class DebugCameraController : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimarySelect;
     /// <summary>
-    /// Function: PrimarySelect
+    /// Function: PrimarySelect<br/>
+    /// Native code at BatmanAK.exe+0xB42170 in the Steam build
     /// </summary>
     public unsafe virtual void PrimarySelect(System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor.FTraceHitInfo HitInfo)
     {

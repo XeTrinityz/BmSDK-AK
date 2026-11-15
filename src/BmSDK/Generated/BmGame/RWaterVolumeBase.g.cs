@@ -80,7 +80,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyDefaultFloatingForcesToComponent;
     /// <summary>
-    /// Function: ApplyDefaultFloatingForcesToComponent
+    /// Function: ApplyDefaultFloatingForcesToComponent<br/>
+    /// Native code at BatmanAK.exe+0x4F0D00 in the Steam build
     /// </summary>
     public unsafe virtual bool ApplyDefaultFloatingForcesToComponent(BmSDK.Engine.PrimitiveComponent pComponent, float zbias, float DeltaTime, bool DontApplyDragTorque)
     {
@@ -105,7 +106,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaterLinearVelocityAtPosition;
     /// <summary>
-    /// Function: GetWaterLinearVelocityAtPosition
+    /// Function: GetWaterLinearVelocityAtPosition<br/>
+    /// Native code at BatmanAK.exe+0x482130 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWaterLinearVelocityAtPosition(System.Numerics.Vector3 Position)
     {
@@ -127,7 +129,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRelativeSurfacePosition;
     /// <summary>
-    /// Function: FindRelativeSurfacePosition
+    /// Function: FindRelativeSurfacePosition<br/>
+    /// Native code at BatmanAK.exe+0x4849C0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindRelativeSurfacePosition(System.Numerics.Vector3 TestPosition, System.Numerics.Vector3 TestDirection, out System.Numerics.Vector3 OutSurfacePosition, out System.Numerics.Vector3 OutSurfaceNormal)
     {
@@ -235,7 +238,8 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaterDepth;
     /// <summary>
-    /// Function: GetWaterDepth
+    /// Function: GetWaterDepth<br/>
+    /// Native code at BatmanAK.exe+0x484970 in the Steam build
     /// </summary>
     public unsafe virtual float GetWaterDepth()
     {

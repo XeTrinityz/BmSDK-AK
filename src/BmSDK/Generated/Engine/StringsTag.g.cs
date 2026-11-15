@@ -80,7 +80,8 @@ public partial class StringsTag : BmSDK.Engine.TranslatorTag, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Translate;
     /// <summary>
-    /// Function: Translate
+    /// Function: Translate<br/>
+    /// Native code at BatmanAK.exe+0xBABF60 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString Translate(BmSDK.FStringArg InArgument)
     {

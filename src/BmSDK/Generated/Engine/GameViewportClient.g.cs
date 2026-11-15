@@ -95,7 +95,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugSetUISystemEnabled;
     /// <summary>
-    /// Function: DebugSetUISystemEnabled
+    /// Function: DebugSetUISystemEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB83B20 in the Steam build
     /// </summary>
     public unsafe virtual void DebugSetUISystemEnabled(bool bOldUISystemActive, bool bGFxUISystemActive)
     {
@@ -149,7 +150,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FixupOwnerReferences;
     /// <summary>
-    /// Function: FixupOwnerReferences
+    /// Function: FixupOwnerReferences<br/>
+    /// Native code at BatmanAK.exe+0xBB4A20 in the Steam build
     /// </summary>
     public unsafe virtual void FixupOwnerReferences(BmSDK.TArray<int> IDMappings)
     {
@@ -171,7 +173,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerOwner;
     /// <summary>
-    /// Function: GetPlayerOwner
+    /// Function: GetPlayerOwner<br/>
+    /// Native code at BatmanAK.exe+0xB839F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.LocalPlayer GetPlayerOwner(int PlayerIndex)
     {
@@ -193,7 +196,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDynamicShadows;
     /// <summary>
-    /// Function: SetDynamicShadows
+    /// Function: SetDynamicShadows<br/>
+    /// Native code at BatmanAK.exe+0x509C70 in the Steam build
     /// </summary>
     public unsafe virtual void SetDynamicShadows(bool OnOrOff)
     {
@@ -847,7 +851,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMouse;
     /// <summary>
-    /// Function: SetMouse
+    /// Function: SetMouse<br/>
+    /// Native code at BatmanAK.exe+0xB83810 in the Steam build
     /// </summary>
     public unsafe virtual void SetMouse(int X, int Y)
     {
@@ -870,7 +875,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateMouseCursor;
     /// <summary>
-    /// Function: ForceUpdateMouseCursor
+    /// Function: ForceUpdateMouseCursor<br/>
+    /// Native code at BatmanAK.exe+0xB836F0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUpdateMouseCursor(bool bSetCursor)
     {
@@ -892,7 +898,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifySplitscreenLayoutChanged;
     /// <summary>
-    /// Function: NotifySplitscreenLayoutChanged
+    /// Function: NotifySplitscreenLayoutChanged<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void NotifySplitscreenLayoutChanged()
     {
@@ -913,7 +920,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCustomInteractionObject;
     /// <summary>
-    /// Function: SetCustomInteractionObject
+    /// Function: SetCustomInteractionObject<br/>
+    /// Native code at BatmanAK.exe+0x503220 in the Steam build
     /// </summary>
     public unsafe virtual void SetCustomInteractionObject(BmSDK.Engine.Interaction InInteraction)
     {
@@ -935,7 +943,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomInteractionClass;
     /// <summary>
-    /// Function: GetCustomInteractionClass
+    /// Function: GetCustomInteractionClass<br/>
+    /// Native code at BatmanAK.exe+0xB835B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Class GetCustomInteractionClass(int InIndex)
     {
@@ -957,7 +966,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumCustomInteractions;
     /// <summary>
-    /// Function: GetNumCustomInteractions
+    /// Function: GetNumCustomInteractions<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumCustomInteractions()
     {
@@ -978,7 +988,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldForceFullscreenViewport;
     /// <summary>
-    /// Function: ShouldForceFullscreenViewport
+    /// Function: ShouldForceFullscreenViewport<br/>
+    /// Native code at BatmanAK.exe+0xB40BE0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldForceFullscreenViewport()
     {
@@ -999,7 +1010,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMousePosition;
     /// <summary>
-    /// Function: GetMousePosition
+    /// Function: GetMousePosition<br/>
+    /// Native code at BatmanAK.exe+0xB40B80 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 GetMousePosition()
     {
@@ -1020,7 +1032,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Is4x3;
     /// <summary>
-    /// Function: Is4x3
+    /// Function: Is4x3<br/>
+    /// Native code at BatmanAK.exe+0xB40B30 in the Steam build
     /// </summary>
     public unsafe virtual bool Is4x3()
     {
@@ -1041,7 +1054,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Is16x9;
     /// <summary>
-    /// Function: Is16x9
+    /// Function: Is16x9<br/>
+    /// Native code at BatmanAK.exe+0xB40AE0 in the Steam build
     /// </summary>
     public unsafe virtual bool Is16x9()
     {
@@ -1062,7 +1076,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFullScreenViewport;
     /// <summary>
-    /// Function: IsFullScreenViewport
+    /// Function: IsFullScreenViewport<br/>
+    /// Native code at BatmanAK.exe+0xB40A90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFullScreenViewport()
     {
@@ -1083,7 +1098,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCenterMonitorSize;
     /// <summary>
-    /// Function: GetCenterMonitorSize
+    /// Function: GetCenterMonitorSize<br/>
+    /// Native code at BatmanAK.exe+0xB409F0 in the Steam build
     /// </summary>
     public unsafe virtual void GetCenterMonitorSize(out System.Numerics.Vector2 out_ViewportSize)
     {
@@ -1107,7 +1123,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewportSize;
     /// <summary>
-    /// Function: GetViewportSize
+    /// Function: GetViewportSize<br/>
+    /// Native code at BatmanAK.exe+0xB40950 in the Steam build
     /// </summary>
     public unsafe virtual void GetViewportSize(out System.Numerics.Vector2 out_ViewportSize)
     {
@@ -1131,7 +1148,8 @@ public partial class GameViewportClient : BmSDK.Engine.ScriptViewportClient, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommand;
     /// <summary>
-    /// Function: ConsoleCommand
+    /// Function: ConsoleCommand<br/>
+    /// Native code at BatmanAK.exe+0xBABF60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ConsoleCommand(BmSDK.FStringArg Command)
     {

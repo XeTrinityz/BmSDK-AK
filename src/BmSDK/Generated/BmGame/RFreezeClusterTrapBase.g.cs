@@ -90,7 +90,8 @@ public partial class RFreezeClusterTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFindTouchingActors;
     /// <summary>
-    /// Function: ForceFindTouchingActors
+    /// Function: ForceFindTouchingActors<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void ForceFindTouchingActors()
     {

@@ -80,7 +80,8 @@ public partial class AkLightEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlink;
     /// <summary>
-    /// Function: HandleUnlink
+    /// Function: HandleUnlink<br/>
+    /// Native code at BatmanAK.exe+0xFDD710 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleUnlink(BmSDK.Engine.Actor Target)
     {
@@ -102,7 +103,8 @@ public partial class AkLightEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleLink;
     /// <summary>
-    /// Function: HandleLink
+    /// Function: HandleLink<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleLink(BmSDK.Engine.Actor Target)
     {

@@ -94,7 +94,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendVersionToReadIds;
     /// <summary>
-    /// Function: AppendVersionToReadIds
+    /// Function: AppendVersionToReadIds<br/>
+    /// Native code at BatmanAK.exe+0xB400F0 in the Steam build
     /// </summary>
     public unsafe virtual void AppendVersionToReadIds()
     {
@@ -115,7 +116,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetToDefaults;
     /// <summary>
-    /// Function: SetToDefaults
+    /// Function: SetToDefaults<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe override void SetToDefaults()
     {
@@ -136,7 +138,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultFloat;
     /// <summary>
-    /// Function: GetProfileSettingDefaultFloat
+    /// Function: GetProfileSettingDefaultFloat<br/>
+    /// Native code at BatmanAK.exe+0xB80980 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultFloat(int ProfileSettingId, out float DefaultFloat)
     {
@@ -161,7 +164,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultInt;
     /// <summary>
-    /// Function: GetProfileSettingDefaultInt
+    /// Function: GetProfileSettingDefaultInt<br/>
+    /// Native code at BatmanAK.exe+0xB80810 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultInt(int ProfileSettingId, out int DefaultInt)
     {
@@ -186,7 +190,8 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultId;
     /// <summary>
-    /// Function: GetProfileSettingDefaultId
+    /// Function: GetProfileSettingDefaultId<br/>
+    /// Native code at BatmanAK.exe+0xB80660 in the Steam build
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultId(int ProfileSettingId, out int DefaultId, out int ListIndex)
     {

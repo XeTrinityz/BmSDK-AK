@@ -85,7 +85,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCompleteIndices;
     /// <summary>
-    /// Function: UpdateCompleteIndices
+    /// Function: UpdateCompleteIndices<br/>
+    /// Native code at BatmanAK.exe+0xB2CC00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCompleteIndices()
     {
@@ -106,7 +107,8 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildRuntimeAutoCompleteList;
     /// <summary>
-    /// Function: BuildRuntimeAutoCompleteList
+    /// Function: BuildRuntimeAutoCompleteList<br/>
+    /// Native code at BatmanAK.exe+0xB2CB60 in the Steam build
     /// </summary>
     public unsafe virtual void BuildRuntimeAutoCompleteList(bool bForce = default)
     {

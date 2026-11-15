@@ -94,7 +94,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsResolved;
     /// <summary>
-    /// Function: IsResolved
+    /// Function: IsResolved<br/>
+    /// Native code at BatmanAK.exe+0xB2E270 in the Steam build
     /// </summary>
     public unsafe virtual bool IsResolved()
     {
@@ -115,7 +116,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Unresolve;
     /// <summary>
-    /// Function: Unresolve
+    /// Function: Unresolve<br/>
+    /// Native code at BatmanAK.exe+0xB3E660 in the Steam build
     /// </summary>
     public unsafe virtual void Unresolve()
     {
@@ -136,7 +138,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoResolve;
     /// <summary>
-    /// Function: AutoResolve
+    /// Function: AutoResolve<br/>
+    /// Native code at BatmanAK.exe+0xB3E610 in the Steam build
     /// </summary>
     public unsafe virtual bool AutoResolve()
     {
@@ -157,7 +160,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveFromId;
     /// <summary>
-    /// Function: ResolveFromId
+    /// Function: ResolveFromId<br/>
+    /// Native code at BatmanAK.exe+0xB79110 in the Steam build
     /// </summary>
     public unsafe virtual bool ResolveFromId(int spkrVoiceId)
     {
@@ -179,7 +183,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Resolve;
     /// <summary>
-    /// Function: Resolve
+    /// Function: Resolve<br/>
+    /// Native code at BatmanAK.exe+0xB78FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool Resolve(BmSDK.Engine.AkDialogueVoice spkrVoice)
     {
@@ -201,7 +206,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBarkFallback;
     /// <summary>
-    /// Function: IsBarkFallback
+    /// Function: IsBarkFallback<br/>
+    /// Native code at BatmanAK.exe+0xB3E5C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBarkFallback()
     {
@@ -222,7 +228,8 @@ public partial class AkDialogueLineDynamic : BmSDK.Engine.AkDialogueSpeech, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayCount;
     /// <summary>
-    /// Function: GetPlayCount
+    /// Function: GetPlayCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E570 in the Steam build
     /// </summary>
     public unsafe virtual float GetPlayCount()
     {

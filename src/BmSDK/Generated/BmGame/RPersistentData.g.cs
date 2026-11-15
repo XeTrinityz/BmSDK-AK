@@ -105,7 +105,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDialogue;
     /// <summary>
-    /// Function: LoadDialogue
+    /// Function: LoadDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void LoadDialogue()
     {
@@ -126,7 +127,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDialogue;
     /// <summary>
-    /// Function: SaveDialogue
+    /// Function: SaveDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void SaveDialogue()
     {
@@ -314,7 +316,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStorySynopsisAsString;
     /// <summary>
-    /// Function: GetStorySynopsisAsString
+    /// Function: GetStorySynopsisAsString<br/>
+    /// Native code at BatmanAK.exe+0x542F70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetStorySynopsisAsString(int Index)
     {
@@ -556,7 +559,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncremementBatmobileDriveTutorialTimer;
     /// <summary>
-    /// Function: IncremementBatmobileDriveTutorialTimer
+    /// Function: IncremementBatmobileDriveTutorialTimer<br/>
+    /// Native code at BatmanAK.exe+0x5171C0 in the Steam build
     /// </summary>
     public unsafe virtual void IncremementBatmobileDriveTutorialTimer(float DeltaTime, BmSDK.BmGame.RPersistentData.EBatmobileDriveTutorialStage TutStage)
     {
@@ -1437,7 +1441,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowTutorial;
     /// <summary>
-    /// Function: ShouldShowTutorial
+    /// Function: ShouldShowTutorial<br/>
+    /// Native code at BatmanAK.exe+0x4964C0 in the Steam build
     /// </summary>
     public unsafe virtual int ShouldShowTutorial(BmSDK.BmGame.RPersistentData.ETutorialType NewTut)
     {
@@ -1770,7 +1775,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChapters;
     /// <summary>
-    /// Function: SetChapters
+    /// Function: SetChapters<br/>
+    /// Native code at BatmanAK.exe+0x542D80 in the Steam build
     /// </summary>
     public unsafe virtual void SetChapters(BmSDK.FStringArg ChaptersAsString, BmSDK.BmGame.RFlagManager FlagMan)
     {
@@ -1794,7 +1800,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayableBatmobile;
     /// <summary>
-    /// Function: SetPlayableBatmobile
+    /// Function: SetPlayableBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x5170A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPlayableBatmobile(BmSDK.FName NewBatmobileName)
     {
@@ -1816,7 +1823,8 @@ public partial class RPersistentData : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayableCharacter;
     /// <summary>
-    /// Function: SetPlayableCharacter
+    /// Function: SetPlayableCharacter<br/>
+    /// Native code at BatmanAK.exe+0x516F80 in the Steam build
     /// </summary>
     public unsafe virtual void SetPlayableCharacter(BmSDK.FName NewCharacterName)
     {

@@ -80,7 +80,8 @@ public partial class PathTargetPoint : BmSDK.Engine.Keypoint, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeHiddenBySHOW_NavigationNodes;
     /// <summary>
-    /// Function: ShouldBeHiddenBySHOW_NavigationNodes
+    /// Function: ShouldBeHiddenBySHOW_NavigationNodes<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe override bool ShouldBeHiddenBySHOW_NavigationNodes()
     {

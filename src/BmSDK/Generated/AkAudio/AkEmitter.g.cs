@@ -80,7 +80,8 @@ public partial class AkEmitter : BmSDK.Engine.AkSoundActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyEmitterSpatial;
     /// <summary>
-    /// Function: ApplyEmitterSpatial
+    /// Function: ApplyEmitterSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyEmitterSpatial()
     {
@@ -101,7 +102,8 @@ public partial class AkEmitter : BmSDK.Engine.AkSoundActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableEmitter;
     /// <summary>
-    /// Function: DisableEmitter
+    /// Function: DisableEmitter<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void DisableEmitter()
     {
@@ -122,7 +124,8 @@ public partial class AkEmitter : BmSDK.Engine.AkSoundActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEmitter;
     /// <summary>
-    /// Function: EnableEmitter
+    /// Function: EnableEmitter<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableEmitter()
     {

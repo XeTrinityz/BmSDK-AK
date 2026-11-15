@@ -128,7 +128,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateIncapacitatedPawns;
     /// <summary>
-    /// Function: UpdateIncapacitatedPawns
+    /// Function: UpdateIncapacitatedPawns<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateIncapacitatedPawns()
     {
@@ -163,7 +164,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnPawnToPool;
     /// <summary>
-    /// Function: ReturnPawnToPool
+    /// Function: ReturnPawnToPool<br/>
+    /// Native code at BatmanAK.exe+0x504D60 in the Steam build
     /// </summary>
     public unsafe virtual void ReturnPawnToPool(BmSDK.BmGame.RBMPawnAI Pawn, bool bStreamedOut)
     {
@@ -203,7 +205,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnFromPoolOfClassAndDefine;
     /// <summary>
-    /// Function: GetPawnFromPoolOfClassAndDefine
+    /// Function: GetPawnFromPoolOfClassAndDefine<br/>
+    /// Native code at BatmanAK.exe+0x5049B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI GetPawnFromPoolOfClassAndDefine(BmSDK.Class PawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation, BmSDK.Class WeaponClass, bool bRequiresNavMesh = default, bool bSetLocation = default)
     {
@@ -231,7 +234,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnFromPool;
     /// <summary>
-    /// Function: GetPawnFromPool
+    /// Function: GetPawnFromPool<br/>
+    /// Native code at BatmanAK.exe+0x5047A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI GetPawnFromPool(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation, BmSDK.Class WeaponClass, bool bRequiresNavMesh = default, bool bSetLocation = default)
     {
@@ -345,7 +349,8 @@ public partial class RPawnPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x5043A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, bool bInActive, System.Numerics.Vector3 NewSpawnPoint, BmSDK.Rotator NewSpawnRotation = default)
     {

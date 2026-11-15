@@ -89,7 +89,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToThoughtHistory;
     /// <summary>
-    /// Function: AddToThoughtHistory
+    /// Function: AddToThoughtHistory<br/>
+    /// Native code at BatmanAK.exe+0x537270 in the Steam build
     /// </summary>
     public unsafe virtual void AddToThoughtHistory(BmSDK.FStringArg BehaviourInfoString, BmSDK.Engine.Pawn.PawnHistoryType T = default)
     {
@@ -113,7 +114,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyOrReturnToPool;
     /// <summary>
-    /// Function: DestroyOrReturnToPool
+    /// Function: DestroyOrReturnToPool<br/>
+    /// Native code at BatmanAK.exe+0x46A790 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyOrReturnToPool(bool bForce = default, bool bStreamedOut = default)
     {
@@ -151,7 +153,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarParameterInterp;
     /// <summary>
-    /// Function: SetScalarParameterInterp
+    /// Function: SetScalarParameterInterp<br/>
+    /// Native code at BatmanAK.exe+0xB42B20 in the Steam build
     /// </summary>
     public unsafe virtual void SetScalarParameterInterp(out BmSDK.Engine.Pawn.FScalarParameterInterpStruct ScalarParameterInterp)
     {
@@ -175,7 +178,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootMotionInterpCurrentTime;
     /// <summary>
-    /// Function: SetRootMotionInterpCurrentTime
+    /// Function: SetRootMotionInterpCurrentTime<br/>
+    /// Native code at BatmanAK.exe+0xB8ABE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRootMotionInterpCurrentTime(float inTime, float DeltaTime = default, bool bUpdateSkelPose = default)
     {
@@ -242,7 +246,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearPathStep;
     /// <summary>
-    /// Function: ClearPathStep
+    /// Function: ClearPathStep<br/>
+    /// Native code at BatmanAK.exe+0xB42AE0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearPathStep()
     {
@@ -263,7 +268,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawPathStep;
     /// <summary>
-    /// Function: DrawPathStep
+    /// Function: DrawPathStep<br/>
+    /// Native code at BatmanAK.exe+0xB8AAB0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawPathStep(BmSDK.Engine.Canvas C)
     {
@@ -285,7 +291,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementPathChild;
     /// <summary>
-    /// Function: IncrementPathChild
+    /// Function: IncrementPathChild<br/>
+    /// Native code at BatmanAK.exe+0xB8A8C0 in the Steam build
     /// </summary>
     public unsafe virtual void IncrementPathChild(int Cnt, BmSDK.Engine.Canvas C)
     {
@@ -308,7 +315,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementPathStep;
     /// <summary>
-    /// Function: IncrementPathStep
+    /// Function: IncrementPathStep<br/>
+    /// Native code at BatmanAK.exe+0xB8A6D0 in the Steam build
     /// </summary>
     public unsafe virtual void IncrementPathStep(int Cnt, BmSDK.Engine.Canvas C)
     {
@@ -361,7 +369,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGoalEvaluator;
     /// <summary>
-    /// Function: AddGoalEvaluator
+    /// Function: AddGoalEvaluator<br/>
+    /// Native code at BatmanAK.exe+0x4F9960 in the Steam build
     /// </summary>
     public unsafe virtual void AddGoalEvaluator(BmSDK.Engine.PathGoalEvaluator Evaluator)
     {
@@ -383,7 +392,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPathConstraint;
     /// <summary>
-    /// Function: AddPathConstraint
+    /// Function: AddPathConstraint<br/>
+    /// Native code at BatmanAK.exe+0x4F9830 in the Steam build
     /// </summary>
     public unsafe virtual void AddPathConstraint(BmSDK.Engine.PathConstraint Constraint)
     {
@@ -405,7 +415,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearConstraints;
     /// <summary>
-    /// Function: ClearConstraints
+    /// Function: ClearConstraints<br/>
+    /// Native code at BatmanAK.exe+0x489D20 in the Steam build
     /// </summary>
     public unsafe virtual void ClearConstraints()
     {
@@ -854,7 +865,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVehicleBase;
     /// <summary>
-    /// Function: GetVehicleBase
+    /// Function: GetVehicleBase<br/>
+    /// Native code at BatmanAK.exe+0xB42A90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Vehicle GetVehicleBase()
     {
@@ -1251,7 +1263,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe override byte GetTeamNum()
     {
@@ -1612,7 +1625,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOffPawn;
     /// <summary>
-    /// Function: JumpOffPawn
+    /// Function: JumpOffPawn<br/>
+    /// Native code at BatmanAK.exe+0x48E300 in the Steam build
     /// </summary>
     public unsafe virtual void JumpOffPawn()
     {
@@ -1663,7 +1677,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FaceRotation;
     /// <summary>
-    /// Function: FaceRotation
+    /// Function: FaceRotation<br/>
+    /// Native code at BatmanAK.exe+0x4A36C0 in the Steam build
     /// </summary>
     public unsafe virtual void FaceRotation(BmSDK.Rotator NewRotation, float DeltaTime)
     {
@@ -1758,7 +1773,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVelocity;
     /// <summary>
-    /// Function: AddVelocity
+    /// Function: AddVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB8A4A0 in the Steam build
     /// </summary>
     public unsafe virtual void AddVelocity(System.Numerics.Vector3 NewVelocity, System.Numerics.Vector3 HitLocation, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default)
     {
@@ -1996,7 +2012,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InFreeCam;
     /// <summary>
-    /// Function: InFreeCam
+    /// Function: InFreeCam<br/>
+    /// Native code at BatmanAK.exe+0x499400 in the Steam build
     /// </summary>
     public unsafe virtual bool InFreeCam()
     {
@@ -2060,7 +2077,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnViewLocation;
     /// <summary>
-    /// Function: GetPawnViewLocation
+    /// Function: GetPawnViewLocation<br/>
+    /// Native code at BatmanAK.exe+0xB42A30 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPawnViewLocation()
     {
@@ -2081,7 +2099,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewRotation;
     /// <summary>
-    /// Function: GetViewRotation
+    /// Function: GetViewRotation<br/>
+    /// Native code at BatmanAK.exe+0xB429D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetViewRotation()
     {
@@ -2157,7 +2176,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerPawn;
     /// <summary>
-    /// Function: IsPlayerPawn
+    /// Function: IsPlayerPawn<br/>
+    /// Native code at BatmanAK.exe+0x48B4C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerPawn()
     {
@@ -2178,7 +2198,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocallyControlled;
     /// <summary>
-    /// Function: IsLocallyControlled
+    /// Function: IsLocallyControlled<br/>
+    /// Native code at BatmanAK.exe+0xB42980 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocallyControlled()
     {
@@ -2199,7 +2220,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHumanControlled;
     /// <summary>
-    /// Function: IsHumanControlled
+    /// Function: IsHumanControlled<br/>
+    /// Native code at BatmanAK.exe+0xB428E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHumanControlled(BmSDK.Engine.Controller PawnController = default)
     {
@@ -2844,7 +2866,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermRagdoll;
     /// <summary>
-    /// Function: TermRagdoll
+    /// Function: TermRagdoll<br/>
+    /// Native code at BatmanAK.exe+0x476D00 in the Steam build
     /// </summary>
     public unsafe virtual bool TermRagdoll()
     {
@@ -2865,7 +2888,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitRagdoll;
     /// <summary>
-    /// Function: InitRagdoll
+    /// Function: InitRagdoll<br/>
+    /// Native code at BatmanAK.exe+0x46F110 in the Steam build
     /// </summary>
     public unsafe virtual bool InitRagdoll()
     {
@@ -2886,7 +2910,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingCylinder;
     /// <summary>
-    /// Function: GetBoundingCylinder
+    /// Function: GetBoundingCylinder<br/>
+    /// Native code at BatmanAK.exe+0x46A060 in the Steam build
     /// </summary>
     public unsafe override void GetBoundingCylinder(out float CollisionRadius, out float CollisionHeight)
     {
@@ -2913,7 +2938,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedDesiredRotation;
     /// <summary>
-    /// Function: ReachedDesiredRotation
+    /// Function: ReachedDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0x489CD0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReachedDesiredRotation()
     {
@@ -2934,7 +2960,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPushesRigidBodies;
     /// <summary>
-    /// Function: SetPushesRigidBodies
+    /// Function: SetPushesRigidBodies<br/>
+    /// Native code at BatmanAK.exe+0x4A35A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPushesRigidBodies(bool NewPush)
     {
@@ -2956,7 +2983,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceCrouch;
     /// <summary>
-    /// Function: ForceCrouch
+    /// Function: ForceCrouch<br/>
+    /// Native code at BatmanAK.exe+0x4992F0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceCrouch()
     {
@@ -2977,7 +3005,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedPoint;
     /// <summary>
-    /// Function: ReachedPoint
+    /// Function: ReachedPoint<br/>
+    /// Native code at BatmanAK.exe+0xB8A340 in the Steam build
     /// </summary>
     public unsafe virtual bool ReachedPoint(System.Numerics.Vector3 Point, BmSDK.Engine.Actor NewAnchor)
     {
@@ -3000,7 +3029,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedDestination;
     /// <summary>
-    /// Function: ReachedDestination
+    /// Function: ReachedDestination<br/>
+    /// Native code at BatmanAK.exe+0xB8A200 in the Steam build
     /// </summary>
     public unsafe virtual bool ReachedDestination(BmSDK.Engine.Actor Goal)
     {
@@ -3022,7 +3052,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestAnchor;
     /// <summary>
-    /// Function: GetBestAnchor
+    /// Function: GetBestAnchor<br/>
+    /// Native code at BatmanAK.exe+0xB89EA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavigationPoint GetBestAnchor(BmSDK.Engine.Actor TestActor, System.Numerics.Vector3 TestLocation, bool bStartPoint, bool bOnlyCheckVisible, out float out_Dist)
     {
@@ -3050,7 +3081,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnchor;
     /// <summary>
-    /// Function: SetAnchor
+    /// Function: SetAnchor<br/>
+    /// Native code at BatmanAK.exe+0x4BA9D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnchor(BmSDK.Engine.NavigationPoint NewAnchor)
     {
@@ -3072,7 +3104,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRemoteViewPitch;
     /// <summary>
-    /// Function: SetRemoteViewPitch
+    /// Function: SetRemoteViewPitch<br/>
+    /// Native code at BatmanAK.exe+0xB89D80 in the Steam build
     /// </summary>
     public unsafe virtual void SetRemoteViewPitch(int NewRemoteViewPitch)
     {
@@ -3094,7 +3127,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInvisible;
     /// <summary>
-    /// Function: IsInvisible
+    /// Function: IsInvisible<br/>
+    /// Native code at BatmanAK.exe+0x46EEE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInvisible()
     {
@@ -3115,7 +3149,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidEnemyTargetFor;
     /// <summary>
-    /// Function: IsValidEnemyTargetFor
+    /// Function: IsValidEnemyTargetFor<br/>
+    /// Native code at BatmanAK.exe+0xB89B90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidEnemyTargetFor(BmSDK.Engine.PlayerReplicationInfo PRI, bool bNoPRIisEnemy)
     {
@@ -3138,7 +3173,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFallDuration;
     /// <summary>
-    /// Function: GetFallDuration
+    /// Function: GetFallDuration<br/>
+    /// Native code at BatmanAK.exe+0xB42890 in the Steam build
     /// </summary>
     public unsafe virtual float GetFallDuration()
     {
@@ -3159,7 +3195,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SuggestJumpVelocity;
     /// <summary>
-    /// Function: SuggestJumpVelocity
+    /// Function: SuggestJumpVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB42710 in the Steam build
     /// </summary>
     public unsafe virtual bool SuggestJumpVelocity(out System.Numerics.Vector3 JumpVelocity, System.Numerics.Vector3 Destination, System.Numerics.Vector3 Start, bool bRequireFallLanding = default)
     {
@@ -3186,7 +3223,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ValidAnchor;
     /// <summary>
-    /// Function: ValidAnchor
+    /// Function: ValidAnchor<br/>
+    /// Native code at BatmanAK.exe+0xB426C0 in the Steam build
     /// </summary>
     public unsafe virtual bool ValidAnchor()
     {
@@ -3207,7 +3245,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustDestination;
     /// <summary>
-    /// Function: AdjustDestination
+    /// Function: AdjustDestination<br/>
+    /// Native code at BatmanAK.exe+0xB899D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustDestination(BmSDK.Engine.Actor GoalActor, System.Numerics.Vector3 Dest = default)
     {
@@ -3230,7 +3269,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAliveAndWell;
     /// <summary>
-    /// Function: IsAliveAndWell
+    /// Function: IsAliveAndWell<br/>
+    /// Native code at BatmanAK.exe+0x46B900 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAliveAndWell()
     {
@@ -3478,7 +3518,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetSkelControlStrength;
     /// <summary>
-    /// Function: MAT_SetSkelControlStrength
+    /// Function: MAT_SetSkelControlStrength<br/>
+    /// Native code at BatmanAK.exe+0xB897D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetSkelControlStrength(BmSDK.FName SkelControlName, float ControlStrength)
     {
@@ -3501,7 +3542,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetSkelControlScale;
     /// <summary>
-    /// Function: MAT_SetSkelControlScale
+    /// Function: MAT_SetSkelControlScale<br/>
+    /// Native code at BatmanAK.exe+0xB895D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetSkelControlScale(BmSDK.FName SkelControlName, float Scale)
     {
@@ -3524,7 +3566,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetMorphWeight;
     /// <summary>
-    /// Function: MAT_SetMorphWeight
+    /// Function: MAT_SetMorphWeight<br/>
+    /// Native code at BatmanAK.exe+0xB893D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetMorphWeight(BmSDK.FName MorphNodeName, float MorphWeight)
     {
@@ -3547,7 +3590,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimWeights;
     /// <summary>
-    /// Function: MAT_SetAnimWeights
+    /// Function: MAT_SetAnimWeights<br/>
+    /// Native code at BatmanAK.exe+0xBBC590 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetAnimWeights(BmSDK.TArray<BmSDK.Engine.Actor.FAnimSlotInfo> SlotInfos)
     {
@@ -3569,7 +3613,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimPosition;
     /// <summary>
-    /// Function: MAT_SetAnimPosition
+    /// Function: MAT_SetAnimPosition<br/>
+    /// Native code at BatmanAK.exe+0x4A2FA0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetAnimPosition(BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
@@ -3619,7 +3664,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
-    /// Function: MAT_FinishAnimControl
+    /// Function: MAT_FinishAnimControl<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -3657,7 +3703,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -3723,7 +3770,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAnimSets;
     /// <summary>
-    /// Function: AddAnimSets
+    /// Function: AddAnimSets<br/>
+    /// Native code at BatmanAK.exe+0xBB8710 in the Steam build
     /// </summary>
     public unsafe virtual void AddAnimSets(out BmSDK.TArray<BmSDK.Engine.AnimSet> CustomAnimSets)
     {
@@ -3759,7 +3807,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimSetList;
     /// <summary>
-    /// Function: UpdateAnimSetList
+    /// Function: UpdateAnimSetList<br/>
+    /// Native code at BatmanAK.exe+0xB42680 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAnimSetList()
     {
@@ -3780,7 +3829,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAnimNodes;
     /// <summary>
-    /// Function: ClearAnimNodes
+    /// Function: ClearAnimNodes<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void ClearAnimNodes()
     {
@@ -3801,7 +3851,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheAnimNodes;
     /// <summary>
-    /// Function: CacheAnimNodes
+    /// Function: CacheAnimNodes<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void CacheAnimNodes()
     {
@@ -3822,7 +3873,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDesiredRotationLocked;
     /// <summary>
-    /// Function: IsDesiredRotationLocked
+    /// Function: IsDesiredRotationLocked<br/>
+    /// Native code at BatmanAK.exe+0xB42630 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDesiredRotationLocked()
     {
@@ -3843,7 +3895,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDesiredRotationInUse;
     /// <summary>
-    /// Function: IsDesiredRotationInUse
+    /// Function: IsDesiredRotationInUse<br/>
+    /// Native code at BatmanAK.exe+0xB425E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDesiredRotationInUse()
     {
@@ -3864,7 +3917,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDesiredRotation;
     /// <summary>
-    /// Function: CheckDesiredRotation
+    /// Function: CheckDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0xB425A0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckDesiredRotation()
     {
@@ -3885,7 +3939,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDesiredRotation;
     /// <summary>
-    /// Function: ResetDesiredRotation
+    /// Function: ResetDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0xB42560 in the Steam build
     /// </summary>
     public unsafe virtual void ResetDesiredRotation()
     {
@@ -3906,7 +3961,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LockDesiredRotation;
     /// <summary>
-    /// Function: LockDesiredRotation
+    /// Function: LockDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0xB89260 in the Steam build
     /// </summary>
     public unsafe virtual void LockDesiredRotation(bool Lock, bool InUnlockWhenReached = default)
     {
@@ -3929,7 +3985,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredRotation;
     /// <summary>
-    /// Function: SetDesiredRotation
+    /// Function: SetDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0xB423D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetDesiredRotation(BmSDK.Rotator TargetDesiredRotation, bool InLockDesiredRotation = default, bool InUnlockWhenReached = default, float InterpolationTime = default, bool bResetRotationRate = default)
     {
@@ -3955,7 +4012,8 @@ public partial class Pawn : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickWallAdjust;
     /// <summary>
-    /// Function: PickWallAdjust
+    /// Function: PickWallAdjust<br/>
+    /// Native code at BatmanAK.exe+0xB89100 in the Steam build
     /// </summary>
     public unsafe virtual bool PickWallAdjust(System.Numerics.Vector3 WallHitNormal, BmSDK.Engine.Actor HitActor)
     {

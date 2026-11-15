@@ -75,7 +75,8 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplayAnim;
     /// <summary>
-    /// Function: ReplayAnim
+    /// Function: ReplayAnim<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe virtual void ReplayAnim()
     {
@@ -96,7 +97,8 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
-    /// Function: StopAnim
+    /// Function: StopAnim<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void StopAnim()
     {
@@ -117,7 +119,8 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
-    /// Function: PlayAnim
+    /// Function: PlayAnim<br/>
+    /// Native code at BatmanAK.exe+0x46AA30 in the Steam build
     /// </summary>
     public unsafe virtual void PlayAnim(bool bLoop = default, float Rate = default, float StartTime = default)
     {
@@ -141,7 +144,8 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimNode;
     /// <summary>
-    /// Function: FindAnimNode
+    /// Function: FindAnimNode<br/>
+    /// Native code at BatmanAK.exe+0xB533A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode FindAnimNode(BmSDK.FName InNodeName)
     {

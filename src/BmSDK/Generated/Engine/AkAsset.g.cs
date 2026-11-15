@@ -75,7 +75,8 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAssetBankLoaded;
     /// <summary>
-    /// Function: IsAssetBankLoaded
+    /// Function: IsAssetBankLoaded<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAssetBankLoaded()
     {
@@ -96,7 +97,8 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestAssetBankUnload;
     /// <summary>
-    /// Function: RequestAssetBankUnload
+    /// Function: RequestAssetBankUnload<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void RequestAssetBankUnload()
     {
@@ -117,7 +119,8 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestAssetBankLoad;
     /// <summary>
-    /// Function: RequestAssetBankLoad
+    /// Function: RequestAssetBankLoad<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool RequestAssetBankLoad()
     {

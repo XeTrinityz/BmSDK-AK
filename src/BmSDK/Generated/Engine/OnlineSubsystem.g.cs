@@ -75,7 +75,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ETWEvent;
     /// <summary>
-    /// Function: ETWEvent
+    /// Function: ETWEvent<br/>
+    /// Native code at BatmanAK.exe+0xBA5C50 in the Steam build
     /// </summary>
     public unsafe virtual void ETWEvent(BmSDK.Engine.OnlineSubsystem.EStatEventType InEvent, BmSDK.Engine.PlayerController Player, BmSDK.FStringArg InProperties, System.Numerics.Vector3 InLocation = default)
     {
@@ -101,7 +102,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildVoiceRecMap;
     /// <summary>
-    /// Function: BuildVoiceRecMap
+    /// Function: BuildVoiceRecMap<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void BuildVoiceRecMap()
     {
@@ -195,7 +197,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetNumSupportedLogins;
     /// <summary>
-    /// Function: GetNumSupportedLogins
+    /// Function: GetNumSupportedLogins<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static int GetNumSupportedLogins()
     {
@@ -215,7 +218,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBuildUniqueId;
     /// <summary>
-    /// Function: GetBuildUniqueId
+    /// Function: GetBuildUniqueId<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual int GetBuildUniqueId()
     {
@@ -251,7 +255,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StringToUniqueNetId;
     /// <summary>
-    /// Function: StringToUniqueNetId
+    /// Function: StringToUniqueNetId<br/>
+    /// Native code at BatmanAK.exe+0xBA5B00 in the Steam build
     /// </summary>
     public unsafe static bool StringToUniqueNetId(BmSDK.FStringArg UniqueNetIdString, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId out_UniqueId)
     {
@@ -276,7 +281,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UniqueNetIdToString;
     /// <summary>
-    /// Function: UniqueNetIdToString
+    /// Function: UniqueNetIdToString<br/>
+    /// Native code at BatmanAK.exe+0xBA5A30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString UniqueNetIdToString(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId IdToConvert)
     {
@@ -643,7 +649,8 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe virtual bool Init()
     {
@@ -2819,7 +2826,8 @@ public static class OnlineSubsystemStatics
 {
     private static BmSDK.Function __fn_GetNumSupportedLogins;
     /// <summary>
-    /// Function: GetNumSupportedLogins, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetNumSupportedLogins, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static int GetNumSupportedLogins(this BmSDK.Engine.OnlineSubsystem self)
     {
@@ -2840,7 +2848,8 @@ public static class OnlineSubsystemStatics
 
     private static BmSDK.Function __fn_StringToUniqueNetId;
     /// <summary>
-    /// Function: StringToUniqueNetId, run on <paramref name="self"/> rather than the class default object
+    /// Function: StringToUniqueNetId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA5B00 in the Steam build
     /// </summary>
     public unsafe static bool StringToUniqueNetId(this BmSDK.Engine.OnlineSubsystem self, BmSDK.FStringArg UniqueNetIdString, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId out_UniqueId)
     {
@@ -2866,7 +2875,8 @@ public static class OnlineSubsystemStatics
 
     private static BmSDK.Function __fn_UniqueNetIdToString;
     /// <summary>
-    /// Function: UniqueNetIdToString, run on <paramref name="self"/> rather than the class default object
+    /// Function: UniqueNetIdToString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA5A30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString UniqueNetIdToString(this BmSDK.Engine.OnlineSubsystem self, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId IdToConvert)
     {

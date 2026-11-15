@@ -493,7 +493,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveState;
     /// <summary>
-    /// Function: GetSaveState
+    /// Function: GetSaveState<br/>
+    /// Native code at BatmanAK.exe+0x49B530 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBatmobileWinch.EWinchPullType GetSaveState()
     {
@@ -660,7 +661,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPointDistanceToLineSeg;
     /// <summary>
-    /// Function: GetPointDistanceToLineSeg
+    /// Function: GetPointDistanceToLineSeg<br/>
+    /// Native code at BatmanAK.exe+0x49B420 in the Steam build
     /// </summary>
     public unsafe virtual float GetPointDistanceToLineSeg(System.Numerics.Vector3 Point, System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
@@ -1035,7 +1037,8 @@ public partial class RBatmobileWinch : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchTrace;
     /// <summary>
-    /// Function: WinchTrace
+    /// Function: WinchTrace<br/>
+    /// Native code at BatmanAK.exe+0x49B2B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor WinchTrace(System.Numerics.Vector3 End, System.Numerics.Vector3 Start, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo)
     {

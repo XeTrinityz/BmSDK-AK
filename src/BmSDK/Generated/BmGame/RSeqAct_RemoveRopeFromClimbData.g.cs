@@ -94,7 +94,8 @@ public partial class RSeqAct_RemoveRopeFromClimbData : BmSDK.Engine.SequenceActi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRope;
     /// <summary>
-    /// Function: RemoveRope
+    /// Function: RemoveRope<br/>
+    /// Native code at BatmanAK.exe+0x4B0730 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveRope(BmSDK.Engine.Actor RopeToRemove, System.Numerics.Vector3 RopeLoc1, System.Numerics.Vector3 RopeLoc2, int CollectionIndex)
     {

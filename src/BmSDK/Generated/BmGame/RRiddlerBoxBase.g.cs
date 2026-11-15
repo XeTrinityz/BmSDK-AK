@@ -80,7 +80,8 @@ public partial class RRiddlerBoxBase : BmSDK.BmGame.RMagneticDynamicObjectBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitAllPhysics;
     /// <summary>
-    /// Function: InitAllPhysics
+    /// Function: InitAllPhysics<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void InitAllPhysics()
     {

@@ -333,7 +333,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopLoadingSymbol;
     /// <summary>
-    /// Function: StopLoadingSymbol
+    /// Function: StopLoadingSymbol<br/>
+    /// Native code at BatmanAK.exe+0x494850 in the Steam build
     /// </summary>
     public unsafe virtual void StopLoadingSymbol()
     {
@@ -354,7 +355,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushTexturesStreaming;
     /// <summary>
-    /// Function: FlushTexturesStreaming
+    /// Function: FlushTexturesStreaming<br/>
+    /// Native code at BatmanAK.exe+0x494810 in the Steam build
     /// </summary>
     public unsafe virtual void FlushTexturesStreaming()
     {
@@ -375,7 +377,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMyLevelVolume;
     /// <summary>
-    /// Function: GetMyLevelVolume
+    /// Function: GetMyLevelVolume<br/>
+    /// Native code at BatmanAK.exe+0x4947C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLevelVolume GetMyLevelVolume()
     {
@@ -396,7 +399,8 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGRI;
     /// <summary>
-    /// Function: GetGRI
+    /// Function: GetGRI<br/>
+    /// Native code at BatmanAK.exe+0x494770 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI GetGRI()
     {

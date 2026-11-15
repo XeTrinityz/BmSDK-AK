@@ -183,7 +183,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpawnedDecalDepth;
     /// <summary>
-    /// Function: GetSpawnedDecalDepth
+    /// Function: GetSpawnedDecalDepth<br/>
+    /// Native code at BatmanAK.exe+0xB40860 in the Steam build
     /// </summary>
     public unsafe virtual float GetSpawnedDecalDepth()
     {
@@ -204,7 +205,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUnscaledDecalMatrix;
     /// <summary>
-    /// Function: GetUnscaledDecalMatrix
+    /// Function: GetUnscaledDecalMatrix<br/>
+    /// Native code at BatmanAK.exe+0xB833A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetUnscaledDecalMatrix(System.Numerics.Vector3 Location, BmSDK.Rotator Rotation, float Roll)
     {
@@ -228,7 +230,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalMatrix;
     /// <summary>
-    /// Function: GetDecalMatrix
+    /// Function: GetDecalMatrix<br/>
+    /// Native code at BatmanAK.exe+0xB82F70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetDecalMatrix(System.Numerics.Vector3 Location, BmSDK.Rotator Rotation, float Roll, float Width, float Height, float Depth)
     {
@@ -255,7 +258,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalClipValuesFromScale;
     /// <summary>
-    /// Function: GetDecalClipValuesFromScale
+    /// Function: GetDecalClipValuesFromScale<br/>
+    /// Native code at BatmanAK.exe+0xB82C60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDecalClipValuesFromScale(float Width, float Height, float Depth)
     {
@@ -373,7 +377,8 @@ public partial class RObjectPool : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEmitter;
     /// <summary>
-    /// Function: SpawnEmitter
+    /// Function: SpawnEmitter<br/>
+    /// Native code at BatmanAK.exe+0xB82A50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Emitter SpawnEmitter(BmSDK.Engine.ParticleSystem Template, System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation, int TranslucencySortPriority = default, float DrawScale = default)
     {

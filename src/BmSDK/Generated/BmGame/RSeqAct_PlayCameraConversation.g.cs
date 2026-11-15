@@ -361,7 +361,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharacterForVoice;
     /// <summary>
-    /// Function: GetCharacterForVoice
+    /// Function: GetCharacterForVoice<br/>
+    /// Native code at BatmanAK.exe+0x4E44D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCharacter GetCharacterForVoice(BmSDK.Engine.AkDialogueVoice Voice)
     {
@@ -383,7 +384,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
-    /// Function: StartSpeechNative
+    /// Function: StartSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe override bool StartSpeechNative()
     {
@@ -404,7 +406,8 @@ public partial class RSeqAct_PlayCameraConversation : BmSDK.BmGame.RSeqAct_PlayS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkDirty;
     /// <summary>
-    /// Function: MarkDirty
+    /// Function: MarkDirty<br/>
+    /// Native code at BatmanAK.exe+0x47FA70 in the Steam build
     /// </summary>
     public unsafe virtual void MarkDirty()
     {

@@ -94,7 +94,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateWire;
     /// <summary>
-    /// Function: GenerateWire
+    /// Function: GenerateWire<br/>
+    /// Native code at BatmanAK.exe+0x4E8440 in the Steam build
     /// </summary>
     public unsafe virtual void GenerateWire(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, float SlackAmount)
     {
@@ -276,7 +277,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetOnChallengeRestart;
     /// <summary>
-    /// Function: ResetOnChallengeRestart
+    /// Function: ResetOnChallengeRestart<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetOnChallengeRestart()
     {
@@ -297,7 +299,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DistFromEnd;
     /// <summary>
-    /// Function: DistFromEnd
+    /// Function: DistFromEnd<br/>
+    /// Native code at BatmanAK.exe+0xB39800 in the Steam build
     /// </summary>
     public unsafe virtual float DistFromEnd(System.Numerics.Vector3 CheckLocation)
     {
@@ -319,7 +322,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectToRopePlane;
     /// <summary>
-    /// Function: ProjectToRopePlane
+    /// Function: ProjectToRopePlane<br/>
+    /// Native code at BatmanAK.exe+0x481B80 in the Steam build
     /// </summary>
     public unsafe virtual void ProjectToRopePlane(out System.Numerics.Vector3 ProjLocation)
     {
@@ -343,7 +347,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWireIKNormal;
     /// <summary>
-    /// Function: GetWireIKNormal
+    /// Function: GetWireIKNormal<br/>
+    /// Native code at BatmanAK.exe+0x481AD0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWireIKNormal(System.Numerics.Vector3 CheckLocation)
     {
@@ -365,7 +370,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSettleRopePos;
     /// <summary>
-    /// Function: GetSettleRopePos
+    /// Function: GetSettleRopePos<br/>
+    /// Native code at BatmanAK.exe+0x481A20 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSettleRopePos(System.Numerics.Vector3 CheckLocation)
     {
@@ -387,7 +393,8 @@ public partial class RHidePoint_RopeBase : BmSDK.BmGame.RHidePoint_Walkable, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrapplePosition;
     /// <summary>
-    /// Function: GetGrapplePosition
+    /// Function: GetGrapplePosition<br/>
+    /// Native code at BatmanAK.exe+0x4815D0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetGrapplePosition(System.Numerics.Vector3 CheckLocation, System.Numerics.Vector3 CheckDirection)
     {

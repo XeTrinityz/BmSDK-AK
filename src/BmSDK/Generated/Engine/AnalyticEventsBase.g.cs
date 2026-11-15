@@ -80,7 +80,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogErrorMessage;
     /// <summary>
-    /// Function: LogErrorMessage
+    /// Function: LogErrorMessage<br/>
+    /// Native code at BatmanAK.exe+0xB9DB80 in the Steam build
     /// </summary>
     public unsafe virtual void LogErrorMessage(BmSDK.FStringArg ErrorName, BmSDK.FStringArg ErrorMessage)
     {
@@ -105,7 +106,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEventParamArray;
     /// <summary>
-    /// Function: EndStringEventParamArray
+    /// Function: EndStringEventParamArray<br/>
+    /// Native code at BatmanAK.exe+0xBBC050 in the Steam build
     /// </summary>
     public unsafe virtual void EndStringEventParamArray(BmSDK.FStringArg EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray)
     {
@@ -129,7 +131,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEventParamArray;
     /// <summary>
-    /// Function: LogStringEventParamArray
+    /// Function: LogStringEventParamArray<br/>
+    /// Native code at BatmanAK.exe+0xBBBDC0 in the Steam build
     /// </summary>
     public unsafe virtual void LogStringEventParamArray(BmSDK.FStringArg EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray, bool bTimed)
     {
@@ -154,7 +157,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEventParam;
     /// <summary>
-    /// Function: EndStringEventParam
+    /// Function: EndStringEventParam<br/>
+    /// Native code at BatmanAK.exe+0xB9D8B0 in the Steam build
     /// </summary>
     public unsafe virtual void EndStringEventParam(BmSDK.FStringArg EventName, BmSDK.FStringArg ParamName, BmSDK.FStringArg ParamValue)
     {
@@ -181,7 +185,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEventParam;
     /// <summary>
-    /// Function: LogStringEventParam
+    /// Function: LogStringEventParam<br/>
+    /// Native code at BatmanAK.exe+0xB9D520 in the Steam build
     /// </summary>
     public unsafe virtual void LogStringEventParam(BmSDK.FStringArg EventName, BmSDK.FStringArg ParamName, BmSDK.FStringArg ParamValue, bool bTimed)
     {
@@ -209,7 +214,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEvent;
     /// <summary>
-    /// Function: EndStringEvent
+    /// Function: EndStringEvent<br/>
+    /// Native code at BatmanAK.exe+0xB9D3E0 in the Steam build
     /// </summary>
     public unsafe virtual void EndStringEvent(BmSDK.FStringArg EventName)
     {
@@ -232,7 +238,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEvent;
     /// <summary>
-    /// Function: LogStringEvent
+    /// Function: LogStringEvent<br/>
+    /// Native code at BatmanAK.exe+0xB9D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void LogStringEvent(BmSDK.FStringArg EventName, bool bTimed)
     {
@@ -256,7 +263,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndSession;
     /// <summary>
-    /// Function: EndSession
+    /// Function: EndSession<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void EndSession()
     {
@@ -277,7 +285,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSession;
     /// <summary>
-    /// Function: StartSession
+    /// Function: StartSession<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void StartSession()
     {
@@ -298,7 +307,8 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

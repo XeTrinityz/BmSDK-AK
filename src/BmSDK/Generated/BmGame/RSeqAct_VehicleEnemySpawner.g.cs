@@ -196,7 +196,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateAliveEnemies;
     /// <summary>
-    /// Function: ForceUpdateAliveEnemies
+    /// Function: ForceUpdateAliveEnemies<br/>
+    /// Native code at BatmanAK.exe+0x498C30 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUpdateAliveEnemies()
     {
@@ -217,7 +218,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Function __fn_CheckBoundsVisible;
     /// <summary>
-    /// Function: CheckBoundsVisible
+    /// Function: CheckBoundsVisible<br/>
+    /// Native code at BatmanAK.exe+0x498B20 in the Steam build
     /// </summary>
     public unsafe static bool CheckBoundsVisible(System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 TestLoc, System.Numerics.Vector3 ActorExtent)
     {
@@ -240,7 +242,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActorDied;
     /// <summary>
-    /// Function: ActorDied
+    /// Function: ActorDied<br/>
+    /// Native code at BatmanAK.exe+0x498AE0 in the Steam build
     /// </summary>
     public unsafe virtual void ActorDied()
     {
@@ -261,7 +264,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Function __fn_GetNearestAvailableSpawnPointStatic;
     /// <summary>
-    /// Function: GetNearestAvailableSpawnPointStatic
+    /// Function: GetNearestAvailableSpawnPointStatic<br/>
+    /// Native code at BatmanAK.exe+0x5832B0 in the Steam build
     /// </summary>
     public unsafe static bool GetNearestAvailableSpawnPointStatic(out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot, BmSDK.Engine.Actor TestPlayer, System.Numerics.Vector3 CameraLoc, BmSDK.Engine.Actor TemplateActor, float MinimumRange, float MinimumSpacing, BmSDK.BmGame.RVehicleNPC leader, bool SpawnOnScreen = default, bool _SpawnInLineOfSight = default, BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction = default, System.Numerics.Vector3 TestPlayerLoc = default)
     {
@@ -297,7 +301,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestAvailableSpawnPoint;
     /// <summary>
-    /// Function: GetNearestAvailableSpawnPoint
+    /// Function: GetNearestAvailableSpawnPoint<br/>
+    /// Native code at BatmanAK.exe+0x582B30 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNearestAvailableSpawnPoint(out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot, BmSDK.Engine.Actor TestPlayer, System.Numerics.Vector3 CameraLoc, BmSDK.Engine.Actor TemplateActor, float MinimumRange, float MinimumSpacing, BmSDK.BmGame.RVehicleNPC leader, bool SpawnOnScreen = default, bool _SpawnInLineOfSight = default, BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction = default, System.Numerics.Vector3 TestPlayerLoc = default)
     {
@@ -334,7 +339,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseRandomTurretLocation;
     /// <summary>
-    /// Function: ChooseRandomTurretLocation
+    /// Function: ChooseRandomTurretLocation<br/>
+    /// Native code at BatmanAK.exe+0x51E2F0 in the Steam build
     /// </summary>
     public unsafe virtual bool ChooseRandomTurretLocation(out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot, BmSDK.Engine.Actor TestPlayer, System.Numerics.Vector3 CameraLoc, BmSDK.Engine.Actor TemplateActor, float MinimumRange, float MinimumSpacing, bool _SpawnInLineOfSight = default)
     {
@@ -367,7 +373,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeNumActiveEnemies;
     /// <summary>
-    /// Function: ChangeNumActiveEnemies
+    /// Function: ChangeNumActiveEnemies<br/>
+    /// Native code at BatmanAK.exe+0x51E0C0 in the Steam build
     /// </summary>
     public unsafe virtual void ChangeNumActiveEnemies(int Type, int NewEnemyCount, bool UpdateDesired = default)
     {
@@ -391,7 +398,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumActiveEnemies;
     /// <summary>
-    /// Function: GetNumActiveEnemies
+    /// Function: GetNumActiveEnemies<br/>
+    /// Native code at BatmanAK.exe+0x51DF80 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumActiveEnemies(int Type)
     {
@@ -413,7 +421,8 @@ public partial class RSeqAct_VehicleEnemySpawner : BmSDK.BmGame.RSeqAct_SpawnVeh
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugRenderBehaviourVolumes;
     /// <summary>
-    /// Function: DebugRenderBehaviourVolumes
+    /// Function: DebugRenderBehaviourVolumes<br/>
+    /// Native code at BatmanAK.exe+0x49A4D0 in the Steam build
     /// </summary>
     public unsafe virtual void DebugRenderBehaviourVolumes()
     {
@@ -1279,7 +1288,8 @@ public static class RSeqAct_VehicleEnemySpawnerStatics
 {
     private static BmSDK.Function __fn_CheckBoundsVisible;
     /// <summary>
-    /// Function: CheckBoundsVisible, run on <paramref name="self"/> rather than the class default object
+    /// Function: CheckBoundsVisible, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x498B20 in the Steam build
     /// </summary>
     public unsafe static bool CheckBoundsVisible(this BmSDK.BmGame.RSeqAct_VehicleEnemySpawner self, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 TestLoc, System.Numerics.Vector3 ActorExtent)
     {
@@ -1303,7 +1313,8 @@ public static class RSeqAct_VehicleEnemySpawnerStatics
 
     private static BmSDK.Function __fn_GetNearestAvailableSpawnPointStatic;
     /// <summary>
-    /// Function: GetNearestAvailableSpawnPointStatic, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetNearestAvailableSpawnPointStatic, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x5832B0 in the Steam build
     /// </summary>
     public unsafe static bool GetNearestAvailableSpawnPointStatic(this BmSDK.BmGame.RSeqAct_VehicleEnemySpawner self, out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot, BmSDK.Engine.Actor TestPlayer, System.Numerics.Vector3 CameraLoc, BmSDK.Engine.Actor TemplateActor, float MinimumRange, float MinimumSpacing, BmSDK.BmGame.RVehicleNPC leader, bool SpawnOnScreen = default, bool _SpawnInLineOfSight = default, BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction = default, System.Numerics.Vector3 TestPlayerLoc = default)
     {

@@ -109,7 +109,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSnowDensity;
     /// <summary>
-    /// Function: GetSnowDensity
+    /// Function: GetSnowDensity<br/>
+    /// Native code at BatmanAK.exe+0xB3A2B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSnowDensity()
     {
@@ -130,7 +131,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LocationSnowHeight;
     /// <summary>
-    /// Function: LocationSnowHeight
+    /// Function: LocationSnowHeight<br/>
+    /// Native code at BatmanAK.exe+0xB3A210 in the Steam build
     /// </summary>
     public unsafe virtual float LocationSnowHeight(System.Numerics.Vector3 TestLocation)
     {
@@ -152,7 +154,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DistanceToSnowZ;
     /// <summary>
-    /// Function: DistanceToSnowZ
+    /// Function: DistanceToSnowZ<br/>
+    /// Native code at BatmanAK.exe+0xB3A170 in the Steam build
     /// </summary>
     public unsafe virtual float DistanceToSnowZ(System.Numerics.Vector3 TestLocation)
     {
@@ -174,7 +177,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPuddleDepth;
     /// <summary>
-    /// Function: GetLocationPuddleDepth
+    /// Function: GetLocationPuddleDepth<br/>
+    /// Native code at BatmanAK.exe+0xB396C0 in the Steam build
     /// </summary>
     public unsafe override float GetLocationPuddleDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -196,7 +200,8 @@ public partial class SnowVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationSnowing;
     /// <summary>
-    /// Function: IsLocationSnowing
+    /// Function: IsLocationSnowing<br/>
+    /// Native code at BatmanAK.exe+0xB3A0D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationSnowing(System.Numerics.Vector3 TestLocation)
     {

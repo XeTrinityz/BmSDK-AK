@@ -268,7 +268,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
-    /// Function: Cleanup
+    /// Function: Cleanup<br/>
+    /// Native code at BatmanAK.exe+0xB506A0 in the Steam build
     /// </summary>
     public unsafe override void Cleanup()
     {
@@ -289,7 +290,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInvalidatedState;
     /// <summary>
-    /// Function: HandleInvalidatedState
+    /// Function: HandleInvalidatedState<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe override void HandleInvalidatedState()
     {
@@ -310,7 +312,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
-    /// Function: Update
+    /// Function: Update<br/>
+    /// Native code at BatmanAK.exe+0xB40E40 in the Steam build
     /// </summary>
     public unsafe virtual void Update()
     {
@@ -331,7 +334,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNodeFromTreeForPoint;
     /// <summary>
-    /// Function: FindNodeFromTreeForPoint
+    /// Function: FindNodeFromTreeForPoint<br/>
+    /// Native code at BatmanAK.exe+0x48D2E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RChasePoint FindNodeFromTreeForPoint(System.Numerics.Vector3 TestPoint)
     {
@@ -353,7 +357,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInternalPolys;
     /// <summary>
-    /// Function: GetInternalPolys
+    /// Function: GetInternalPolys<br/>
+    /// Native code at BatmanAK.exe+0x556D00 in the Steam build
     /// </summary>
     public unsafe virtual void GetInternalPolys(out BmSDK.TArray<System.IntPtr> OutPolyList)
     {
@@ -375,7 +380,8 @@ public partial class RChaseLocationSearch : BmSDK.BmGame.RSearchTreeFinder, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindChaseStart;
     /// <summary>
-    /// Function: FindChaseStart
+    /// Function: FindChaseStart<br/>
+    /// Native code at BatmanAK.exe+0x48D230 in the Steam build
     /// </summary>
     public unsafe virtual bool FindChaseStart(out System.Numerics.Vector3 ChaseStart)
     {

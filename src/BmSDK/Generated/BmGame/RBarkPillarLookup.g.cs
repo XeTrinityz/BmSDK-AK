@@ -80,7 +80,8 @@ public partial class RBarkPillarLookup : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasChapterChanged;
     /// <summary>
-    /// Function: HasChapterChanged
+    /// Function: HasChapterChanged<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool HasChapterChanged()
     {

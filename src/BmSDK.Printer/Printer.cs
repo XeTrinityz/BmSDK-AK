@@ -8,6 +8,17 @@ sealed class Printer
 {
     readonly StringBuilder _out = new();
     int _indent;
+    readonly string _build;
+
+    public Printer(string build = "")
+    {
+        _build = build switch
+        {
+            "steam" => "Steam",
+            "epic" => "Epic",
+            _ => build,
+        };
+    }
 
     public override string ToString() => _out.ToString();
 
@@ -410,6 +421,12 @@ sealed class Printer
         {
             // The extension-method form of a static native (see PrintStatics)
             _out.Append(", run on <paramref name=\"self\"/> rather than the class default object");
+        }
+        if (func.NativeRva is { } rva)
+        {
+            _out.Append("<br/>");
+            Endl();
+            Indent().Append($"/// Native code at BatmanAK.exe+0x{rva:X} in the {_build} build");
         }
         Endl();
         Line("/// </summary>");

@@ -188,7 +188,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
-    /// Function: CanReachItem
+    /// Function: CanReachItem<br/>
+    /// Native code at BatmanAK.exe+0x5122C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
@@ -809,7 +810,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPadlockPointInLocalSpace;
     /// <summary>
-    /// Function: GetPadlockPointInLocalSpace
+    /// Function: GetPadlockPointInLocalSpace<br/>
+    /// Native code at BatmanAK.exe+0x4945D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPadlockPointInLocalSpace()
     {
@@ -860,7 +862,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupDoorBlocker;
     /// <summary>
-    /// Function: SetupDoorBlocker
+    /// Function: SetupDoorBlocker<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupDoorBlocker()
     {
@@ -881,7 +884,8 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitFromDoorDefinition;
     /// <summary>
-    /// Function: InitFromDoorDefinition
+    /// Function: InitFromDoorDefinition<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void InitFromDoorDefinition()
     {

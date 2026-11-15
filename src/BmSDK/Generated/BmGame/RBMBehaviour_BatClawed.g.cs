@@ -178,7 +178,8 @@ public partial class RBMBehaviour_BatClawed : BmSDK.BmGame.RBMBehaviour_HitReact
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTripAndFall;
     /// <summary>
-    /// Function: UpdateTripAndFall
+    /// Function: UpdateTripAndFall<br/>
+    /// Native code at BatmanAK.exe+0x4FE3D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTripAndFall(float DeltaTime)
     {

@@ -140,7 +140,8 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FixBrokenDefault;
     /// <summary>
-    /// Function: FixBrokenDefault
+    /// Function: FixBrokenDefault<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void FixBrokenDefault()
     {

@@ -95,7 +95,8 @@ public partial class RJokerIncidentalPoint : BmSDK.BmGame.RDummyTarget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMeshes;
     /// <summary>
-    /// Function: InitMeshes
+    /// Function: InitMeshes<br/>
+    /// Native code at BatmanAK.exe+0x48AD90 in the Steam build
     /// </summary>
     public unsafe virtual void InitMeshes()
     {

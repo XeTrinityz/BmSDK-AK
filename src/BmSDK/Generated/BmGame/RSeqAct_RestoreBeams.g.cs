@@ -94,7 +94,8 @@ public partial class RSeqAct_RestoreBeams : BmSDK.Engine.SequenceAction, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreBeam;
     /// <summary>
-    /// Function: RestoreBeam
+    /// Function: RestoreBeam<br/>
+    /// Native code at BatmanAK.exe+0x4B0990 in the Steam build
     /// </summary>
     public unsafe virtual void RestoreBeam(BmSDK.Engine.RStaticClimbableActor Breakable, int CollectionIndex, int RailingIndex)
     {

@@ -80,7 +80,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
@@ -278,7 +279,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -358,7 +360,8 @@ public partial class RCinematicVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFakeWheelRotation;
     /// <summary>
-    /// Function: UpdateFakeWheelRotation
+    /// Function: UpdateFakeWheelRotation<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFakeWheelRotation()
     {

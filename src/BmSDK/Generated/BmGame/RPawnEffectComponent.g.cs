@@ -155,7 +155,8 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeTick;
     /// <summary>
-    /// Function: NativeTick
+    /// Function: NativeTick<br/>
+    /// Native code at BatmanAK.exe+0x4D1400 in the Steam build
     /// </summary>
     public unsafe virtual void NativeTick(float DeltaTime)
     {

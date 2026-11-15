@@ -75,7 +75,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugFlag;
     /// <summary>
-    /// Function: GetDebugFlag
+    /// Function: GetDebugFlag<br/>
+    /// Native code at BatmanAK.exe+0x4E81E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDebugFlag(BmSDK.BmGame.RBatarang Launcher)
     {
@@ -97,7 +98,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveTouchingActor;
     /// <summary>
-    /// Function: RemoveTouchingActor
+    /// Function: RemoveTouchingActor<br/>
+    /// Native code at BatmanAK.exe+0x5114C0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveTouchingActor(BmSDK.Engine.Actor Other)
     {
@@ -555,7 +557,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMeshRotation;
     /// <summary>
-    /// Function: UpdateMeshRotation
+    /// Function: UpdateMeshRotation<br/>
+    /// Native code at BatmanAK.exe+0x511390 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMeshRotation(float DeltaTime)
     {
@@ -577,7 +580,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlightPath;
     /// <summary>
-    /// Function: UpdateFlightPath
+    /// Function: UpdateFlightPath<br/>
+    /// Native code at BatmanAK.exe+0x5144C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFlightPath(float DeltaTime)
     {
@@ -599,7 +603,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartedFlightPath;
     /// <summary>
-    /// Function: StartedFlightPath
+    /// Function: StartedFlightPath<br/>
+    /// Native code at BatmanAK.exe+0x493CB0 in the Steam build
     /// </summary>
     public unsafe virtual void StartedFlightPath()
     {
@@ -620,7 +625,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathDeltaTangent;
     /// <summary>
-    /// Function: GetFlightPathDeltaTangent
+    /// Function: GetFlightPathDeltaTangent<br/>
+    /// Native code at BatmanAK.exe+0x511240 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathDeltaTangent(float Proportion)
     {
@@ -642,7 +648,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathTangent;
     /// <summary>
-    /// Function: GetFlightPathTangent
+    /// Function: GetFlightPathTangent<br/>
+    /// Native code at BatmanAK.exe+0x5110F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathTangent(float Proportion)
     {
@@ -664,7 +671,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathPosition;
     /// <summary>
-    /// Function: GetFlightPathPosition
+    /// Function: GetFlightPathPosition<br/>
+    /// Native code at BatmanAK.exe+0x510FA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathPosition(float Proportion)
     {
@@ -686,7 +694,8 @@ public partial class RBatarangProjectile : BmSDK.BmGame.RProjectile, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFlightPath;
     /// <summary>
-    /// Function: CalculateFlightPath
+    /// Function: CalculateFlightPath<br/>
+    /// Native code at BatmanAK.exe+0x510DA0 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateFlightPath(System.Numerics.Vector3 DesiredLaunchPosition, System.Numerics.Vector3 TargetPosition, BmSDK.Engine.Actor TargetActor, float CheckSizeMod = default, bool bStraightPath = default)
     {

@@ -90,7 +90,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEdgeForTopLevelScope;
     /// <summary>
-    /// Function: FindEdgeForTopLevelScope
+    /// Function: FindEdgeForTopLevelScope<br/>
+    /// Native code at BatmanAK.exe+0xB5A9F0 in the Steam build
     /// </summary>
     public unsafe virtual int FindEdgeForTopLevelScope(int TopLevelScopeIndex, BmSDK.Engine.ProcBuilding.EScopeEdge Edge)
     {
@@ -113,7 +114,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakFractureComponent;
     /// <summary>
-    /// Function: BreakFractureComponent
+    /// Function: BreakFractureComponent<br/>
+    /// Native code at BatmanAK.exe+0xB5A840 in the Steam build
     /// </summary>
     public unsafe virtual void BreakFractureComponent(BmSDK.Engine.FracturedStaticMeshComponent Comp, System.Numerics.Vector3 BoxMin, System.Numerics.Vector3 BoxMax)
     {
@@ -137,7 +139,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllGroupedProcBuildings;
     /// <summary>
-    /// Function: GetAllGroupedProcBuildings
+    /// Function: GetAllGroupedProcBuildings<br/>
+    /// Native code at BatmanAK.exe+0xBB7200 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllGroupedProcBuildings(out BmSDK.TArray<BmSDK.Engine.ProcBuilding> OutSet)
     {
@@ -159,7 +162,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBaseMostBuilding;
     /// <summary>
-    /// Function: GetBaseMostBuilding
+    /// Function: GetBaseMostBuilding<br/>
+    /// Native code at BatmanAK.exe+0x49ADC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ProcBuilding GetBaseMostBuilding()
     {
@@ -180,7 +184,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindComponentsForTopLevelScope;
     /// <summary>
-    /// Function: FindComponentsForTopLevelScope
+    /// Function: FindComponentsForTopLevelScope<br/>
+    /// Native code at BatmanAK.exe+0xBB9750 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.StaticMeshComponent> FindComponentsForTopLevelScope(int TopLevelScopeIndex)
     {
@@ -202,7 +207,8 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBuildingMeshes;
     /// <summary>
-    /// Function: ClearBuildingMeshes
+    /// Function: ClearBuildingMeshes<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearBuildingMeshes()
     {

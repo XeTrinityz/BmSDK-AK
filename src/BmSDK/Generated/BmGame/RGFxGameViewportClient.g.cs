@@ -213,7 +213,8 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitleMinY;
     /// <summary>
-    /// Function: GetSubtitleMinY
+    /// Function: GetSubtitleMinY<br/>
+    /// Native code at BatmanAK.exe+0x497D80 in the Steam build
     /// </summary>
     public unsafe virtual float GetSubtitleMinY()
     {
@@ -234,7 +235,8 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayGammaReferenceBrightness;
     /// <summary>
-    /// Function: GetDisplayGammaReferenceBrightness
+    /// Function: GetDisplayGammaReferenceBrightness<br/>
+    /// Native code at BatmanAK.exe+0x497D30 in the Steam build
     /// </summary>
     public unsafe virtual float GetDisplayGammaReferenceBrightness()
     {
@@ -255,7 +257,8 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallOurGFxHandlers;
     /// <summary>
-    /// Function: InstallOurGFxHandlers
+    /// Function: InstallOurGFxHandlers<br/>
+    /// Native code at BatmanAK.exe+0xB3E610 in the Steam build
     /// </summary>
     public unsafe virtual bool InstallOurGFxHandlers()
     {
@@ -276,7 +279,8 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupGameFonts;
     /// <summary>
-    /// Function: SetupGameFonts
+    /// Function: SetupGameFonts<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupGameFonts()
     {

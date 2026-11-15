@@ -455,7 +455,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStunning;
     /// <summary>
-    /// Function: UpdateStunning
+    /// Function: UpdateStunning<br/>
+    /// Native code at BatmanAK.exe+0x4D2EE0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateStunning(float DeltaTime)
     {
@@ -477,7 +478,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTarget;
     /// <summary>
-    /// Function: IsValidTarget
+    /// Function: IsValidTarget<br/>
+    /// Native code at BatmanAK.exe+0x504260 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.BmGame.RPawnCombat Enemy)
     {
@@ -499,7 +501,8 @@ public partial class RCombatMove_BatmanStunStrike : BmSDK.BmGame.RCombatMove_Bat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRadiusForAngle;
     /// <summary>
-    /// Function: GetRadiusForAngle
+    /// Function: GetRadiusForAngle<br/>
+    /// Native code at BatmanAK.exe+0x4D2DA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetRadiusForAngle(float TestAngle)
     {

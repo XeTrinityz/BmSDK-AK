@@ -253,7 +253,8 @@ public partial class RBMBehaviour_CombatNinja : BmSDK.BmGame.RBMBehaviour_Combat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointEncroachedByNinjas;
     /// <summary>
-    /// Function: IsPointEncroachedByNinjas
+    /// Function: IsPointEncroachedByNinjas<br/>
+    /// Native code at BatmanAK.exe+0x4894E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPointEncroachedByNinjas(out System.Numerics.Vector3 TestPos)
     {
@@ -277,7 +278,8 @@ public partial class RBMBehaviour_CombatNinja : BmSDK.BmGame.RBMBehaviour_Combat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RateSingleTeleportLocation;
     /// <summary>
-    /// Function: RateSingleTeleportLocation
+    /// Function: RateSingleTeleportLocation<br/>
+    /// Native code at BatmanAK.exe+0x4FDEA0 in the Steam build
     /// </summary>
     public unsafe virtual bool RateSingleTeleportLocation(out System.Numerics.Vector3 TestLoc, out System.Numerics.Vector3 camFuturePos, out System.Numerics.Vector3 camDirNorm, BmSDK.BmGame.RPlayerController PC, out float Score)
     {
@@ -311,7 +313,8 @@ public partial class RBMBehaviour_CombatNinja : BmSDK.BmGame.RBMBehaviour_Combat
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestTeleportLocation;
     /// <summary>
-    /// Function: FindBestTeleportLocation
+    /// Function: FindBestTeleportLocation<br/>
+    /// Native code at BatmanAK.exe+0x4FDD20 in the Steam build
     /// </summary>
     public unsafe virtual bool FindBestTeleportLocation(BmSDK.BmGame.RPlayerController PC, out System.Numerics.Vector3 teleportLocation)
     {

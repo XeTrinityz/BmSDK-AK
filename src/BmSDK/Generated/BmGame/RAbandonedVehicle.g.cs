@@ -80,7 +80,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanupRainSound;
     /// <summary>
-    /// Function: CleanupRainSound
+    /// Function: CleanupRainSound<br/>
+    /// Native code at BatmanAK.exe+0x488370 in the Steam build
     /// </summary>
     public unsafe virtual void CleanupRainSound()
     {
@@ -101,7 +102,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRainSound;
     /// <summary>
-    /// Function: UpdateRainSound
+    /// Function: UpdateRainSound<br/>
+    /// Native code at BatmanAK.exe+0x480CF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRainSound()
     {
@@ -248,7 +250,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXrayMaterial;
     /// <summary>
-    /// Function: UpdateXrayMaterial
+    /// Function: UpdateXrayMaterial<br/>
+    /// Native code at BatmanAK.exe+0x4994E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateXrayMaterial(System.Numerics.Vector3 CameraLocation, bool bAllowCallingConditionalUpdateComponents = default)
     {
@@ -271,7 +274,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFromVehicleArchetype;
     /// <summary>
-    /// Function: UpdateFromVehicleArchetype
+    /// Function: UpdateFromVehicleArchetype<br/>
+    /// Native code at BatmanAK.exe+0x4994A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFromVehicleArchetype()
     {
@@ -292,7 +296,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForVehicleIntersection;
     /// <summary>
-    /// Function: CheckForVehicleIntersection
+    /// Function: CheckForVehicleIntersection<br/>
+    /// Native code at BatmanAK.exe+0x499450 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForVehicleIntersection()
     {
@@ -543,7 +548,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNameNumber;
     /// <summary>
-    /// Function: GetNameNumber
+    /// Function: GetNameNumber<br/>
+    /// Native code at BatmanAK.exe+0x499400 in the Steam build
     /// </summary>
     public unsafe virtual int GetNameNumber()
     {
@@ -564,7 +570,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadNetwork;
     /// <summary>
-    /// Function: GetRoadNetwork
+    /// Function: GetRoadNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4993B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRoadNetwork GetRoadNetwork()
     {
@@ -585,7 +592,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
-    /// Function: UpdateLights
+    /// Function: UpdateLights<br/>
+    /// Native code at BatmanAK.exe+0x4D2EE0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLights(float DeltaTime)
     {
@@ -607,7 +615,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitLights;
     /// <summary>
-    /// Function: InitLights
+    /// Function: InitLights<br/>
+    /// Native code at BatmanAK.exe+0x46F160 in the Steam build
     /// </summary>
     public unsafe virtual void InitLights()
     {
@@ -684,7 +693,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCapeCollisionPhysXActor;
     /// <summary>
-    /// Function: RemoveCapeCollisionPhysXActor
+    /// Function: RemoveCapeCollisionPhysXActor<br/>
+    /// Native code at BatmanAK.exe+0x499370 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveCapeCollisionPhysXActor()
     {
@@ -705,7 +715,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCapeCollisionPhysXActor;
     /// <summary>
-    /// Function: AddCapeCollisionPhysXActor
+    /// Function: AddCapeCollisionPhysXActor<br/>
+    /// Native code at BatmanAK.exe+0x46F0D0 in the Steam build
     /// </summary>
     public unsafe virtual void AddCapeCollisionPhysXActor()
     {
@@ -726,7 +737,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
-    /// Function: ForceObstaclePolysOff
+    /// Function: ForceObstaclePolysOff<br/>
+    /// Native code at BatmanAK.exe+0x499330 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
@@ -747,7 +759,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
-    /// Function: ForceObstaclePolysOn
+    /// Function: ForceObstaclePolysOn<br/>
+    /// Native code at BatmanAK.exe+0x4992F0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
@@ -768,7 +781,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
-    /// Function: ClearNavMeshEdgeCosts
+    /// Function: ClearNavMeshEdgeCosts<br/>
+    /// Native code at BatmanAK.exe+0x4948D0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
@@ -789,7 +803,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNavMeshEdgeCosts;
     /// <summary>
-    /// Function: SetNavMeshEdgeCosts
+    /// Function: SetNavMeshEdgeCosts<br/>
+    /// Native code at BatmanAK.exe+0x46F040 in the Steam build
     /// </summary>
     public unsafe virtual void SetNavMeshEdgeCosts()
     {
@@ -810,7 +825,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstaclePolysFromLoadedPylons;
     /// <summary>
-    /// Function: EnableObstaclePolysFromLoadedPylons
+    /// Function: EnableObstaclePolysFromLoadedPylons<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void EnableObstaclePolysFromLoadedPylons()
     {
@@ -831,7 +847,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstaclePolysFromLoadedPylons;
     /// <summary>
-    /// Function: RemoveObstaclePolysFromLoadedPylons
+    /// Function: RemoveObstaclePolysFromLoadedPylons<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveObstaclePolysFromLoadedPylons()
     {
@@ -852,7 +869,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x499210 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstant = default)
     {
@@ -874,7 +892,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -895,7 +914,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBodyPartWheel;
     /// <summary>
-    /// Function: IsBodyPartWheel
+    /// Function: IsBodyPartWheel<br/>
+    /// Native code at BatmanAK.exe+0x5223C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBodyPartWheel(int BodyIndex)
     {
@@ -917,7 +937,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBodyPartBrokenOff;
     /// <summary>
-    /// Function: IsBodyPartBrokenOff
+    /// Function: IsBodyPartBrokenOff<br/>
+    /// Native code at BatmanAK.exe+0x522290 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBodyPartBrokenOff(int BodyIndex)
     {
@@ -984,7 +1005,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDeadVehicle;
     /// <summary>
-    /// Function: SpawnDeadVehicle
+    /// Function: SpawnDeadVehicle<br/>
+    /// Native code at BatmanAK.exe+0x522150 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDeadVehicle SpawnDeadVehicle(BmSDK.BmGame.RDeadVehicle Archetype)
     {
@@ -1006,7 +1028,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AccumulateCrushed;
     /// <summary>
-    /// Function: AccumulateCrushed
+    /// Function: AccumulateCrushed<br/>
+    /// Native code at BatmanAK.exe+0x521FF0 in the Steam build
     /// </summary>
     public unsafe virtual void AccumulateCrushed(System.Numerics.Vector3 Force, bool IsWheel)
     {
@@ -1288,7 +1311,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -1310,7 +1334,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRigidBodyCollisionEnabled;
     /// <summary>
-    /// Function: SetRigidBodyCollisionEnabled
+    /// Function: SetRigidBodyCollisionEnabled<br/>
+    /// Native code at BatmanAK.exe+0x521ED0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRigidBodyCollisionEnabled(bool Enabled)
     {
@@ -1332,7 +1357,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForNPCCollisionWarning;
     /// <summary>
-    /// Function: CheckForNPCCollisionWarning
+    /// Function: CheckForNPCCollisionWarning<br/>
+    /// Native code at BatmanAK.exe+0x521DA0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForNPCCollisionWarning(float DeltaTime)
     {
@@ -1354,7 +1380,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInDangerOfCollision;
     /// <summary>
-    /// Function: IsLocationInDangerOfCollision
+    /// Function: IsLocationInDangerOfCollision<br/>
+    /// Native code at BatmanAK.exe+0x521A30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInDangerOfCollision(System.Numerics.Vector3 TestLocation, float Speed, System.Numerics.Vector3 Direction, System.Numerics.Vector3 LeftVec, float CheckWidth, float MinCos)
     {
@@ -1381,7 +1408,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadObstacleBounds;
     /// <summary>
-    /// Function: GetRoadObstacleBounds
+    /// Function: GetRoadObstacleBounds<br/>
+    /// Native code at BatmanAK.exe+0x499120 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRoadObstacleBounds(out BmSDK.GameObject.FBox Bounds, bool NoExtrude = default)
     {
@@ -1406,7 +1434,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupInitialAnim;
     /// <summary>
-    /// Function: SetupInitialAnim
+    /// Function: SetupInitialAnim<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupInitialAnim()
     {
@@ -1427,7 +1456,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventCrushBatman;
     /// <summary>
-    /// Function: PreventCrushBatman
+    /// Function: PreventCrushBatman<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void PreventCrushBatman()
     {
@@ -1448,7 +1478,8 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventChunksFallingOutOfWorld;
     /// <summary>
-    /// Function: PreventChunksFallingOutOfWorld
+    /// Function: PreventChunksFallingOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void PreventChunksFallingOutOfWorld()
     {

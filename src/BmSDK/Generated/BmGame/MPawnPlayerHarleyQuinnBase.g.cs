@@ -310,7 +310,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanImportantIdleConversations;
     /// <summary>
-    /// Function: CleanImportantIdleConversations
+    /// Function: CleanImportantIdleConversations<br/>
+    /// Native code at BatmanAK.exe+0x478BC0 in the Steam build
     /// </summary>
     public unsafe virtual void CleanImportantIdleConversations()
     {
@@ -331,7 +332,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerThoughts;
     /// <summary>
-    /// Function: GetPlayerThoughts
+    /// Function: GetPlayerThoughts<br/>
+    /// Native code at BatmanAK.exe+0x58FEC0 in the Steam build
     /// </summary>
     public unsafe override void GetPlayerThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
@@ -353,7 +355,8 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldAutoClimbAfterGrapple;
     /// <summary>
-    /// Function: ShouldAutoClimbAfterGrapple
+    /// Function: ShouldAutoClimbAfterGrapple<br/>
+    /// Native code at BatmanAK.exe+0x478B20 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldAutoClimbAfterGrapple(System.Numerics.Vector3 ApproxClimbLoc)
     {

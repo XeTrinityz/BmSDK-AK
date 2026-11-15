@@ -192,7 +192,8 @@ public partial class RSeqAct_SetTrackingCamera : BmSDK.Engine.SeqAct_Latent, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPercDistAlongPath;
     /// <summary>
-    /// Function: GetPercDistAlongPath
+    /// Function: GetPercDistAlongPath<br/>
+    /// Native code at BatmanAK.exe+0x516AC0 in the Steam build
     /// </summary>
     public unsafe virtual float GetPercDistAlongPath(float TimeDelta)
     {

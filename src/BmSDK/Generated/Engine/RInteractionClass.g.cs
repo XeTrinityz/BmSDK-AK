@@ -80,7 +80,8 @@ public partial class RInteractionClass : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsActor;
     /// <summary>
-    /// Function: ContainsActor
+    /// Function: ContainsActor<br/>
+    /// Native code at BatmanAK.exe+0xB5BA50 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsActor(BmSDK.Engine.Actor TestActor)
     {

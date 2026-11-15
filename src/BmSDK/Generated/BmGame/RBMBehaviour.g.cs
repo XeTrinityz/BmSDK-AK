@@ -669,7 +669,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCheckFalling;
     /// <summary>
-    /// Function: CanCheckFalling
+    /// Function: CanCheckFalling<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanCheckFalling()
     {
@@ -1252,7 +1253,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimers;
     /// <summary>
-    /// Function: UpdateTimers
+    /// Function: UpdateTimers<br/>
+    /// Native code at BatmanAK.exe+0x4FB0D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTimers(float DeltaTime)
     {
@@ -1389,7 +1391,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFreeSpot;
     /// <summary>
-    /// Function: IsFreeSpot
+    /// Function: IsFreeSpot<br/>
+    /// Native code at BatmanAK.exe+0x4FAE90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFreeSpot(System.Numerics.Vector3 Location, float CylinderHeight, float CylinderRadius)
     {
@@ -1413,7 +1416,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Remove;
     /// <summary>
-    /// Function: Remove
+    /// Function: Remove<br/>
+    /// Native code at BatmanAK.exe+0x488730 in the Steam build
     /// </summary>
     public unsafe virtual void Remove()
     {
@@ -1434,7 +1438,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerLOSActor;
     /// <summary>
-    /// Function: GetPlayerLOSActor
+    /// Function: GetPlayerLOSActor<br/>
+    /// Native code at BatmanAK.exe+0x488690 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetPlayerLOSActor(float MaxZOffset = default)
     {
@@ -1456,7 +1461,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivatedByController;
     /// <summary>
-    /// Function: DeactivatedByController
+    /// Function: DeactivatedByController<br/>
+    /// Native code at BatmanAK.exe+0xB2EAE0 in the Steam build
     /// </summary>
     public unsafe virtual void DeactivatedByController()
     {
@@ -1477,7 +1483,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOp;
     /// <summary>
-    /// Function: UpdateOp
+    /// Function: UpdateOp<br/>
+    /// Native code at BatmanAK.exe+0x4FAD50 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateOp(float DeltaTime)
     {
@@ -1499,7 +1506,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnedByController;
     /// <summary>
-    /// Function: SpawnedByController
+    /// Function: SpawnedByController<br/>
+    /// Native code at BatmanAK.exe+0x46E0F0 in the Steam build
     /// </summary>
     public unsafe virtual void SpawnedByController()
     {
@@ -1520,7 +1528,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SleepFrame;
     /// <summary>
-    /// Function: SleepFrame
+    /// Function: SleepFrame<br/>
+    /// Native code at BatmanAK.exe+0x488600 in the Steam build
     /// </summary>
     public unsafe virtual void SleepFrame(int Frames = default)
     {
@@ -1542,7 +1551,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Sleep;
     /// <summary>
-    /// Function: Sleep
+    /// Function: Sleep<br/>
+    /// Native code at BatmanAK.exe+0x4FAC20 in the Steam build
     /// </summary>
     public unsafe virtual void Sleep(float SleepTime)
     {
@@ -1564,7 +1574,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasState;
     /// <summary>
-    /// Function: HasState
+    /// Function: HasState<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasState()
     {
@@ -1585,7 +1596,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CustomPrint;
     /// <summary>
-    /// Function: CustomPrint
+    /// Function: CustomPrint<br/>
+    /// Native code at BatmanAK.exe+0x53F460 in the Steam build
     /// </summary>
     public unsafe virtual void CustomPrint(BmSDK.FStringArg TextToDisplay)
     {
@@ -1608,7 +1620,8 @@ public partial class RBMBehaviour : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowBehaviourDebug;
     /// <summary>
-    /// Function: ShouldShowBehaviourDebug
+    /// Function: ShouldShowBehaviourDebug<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldShowBehaviourDebug()
     {

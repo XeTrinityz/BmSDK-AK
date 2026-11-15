@@ -80,7 +80,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetStream;
     /// <summary>
-    /// Function: ResetStream
+    /// Function: ResetStream<br/>
+    /// Native code at BatmanAK.exe+0x482FC0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetStream()
     {
@@ -101,7 +102,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoFrame;
     /// <summary>
-    /// Function: GotoFrame
+    /// Function: GotoFrame<br/>
+    /// Native code at BatmanAK.exe+0xB84750 in the Steam build
     /// </summary>
     public unsafe virtual void GotoFrame(int frameNumber)
     {
@@ -123,7 +125,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPause;
     /// <summary>
-    /// Function: SetPause
+    /// Function: SetPause<br/>
+    /// Native code at BatmanAK.exe+0xB78B20 in the Steam build
     /// </summary>
     public unsafe virtual void SetPause(bool shouldPause)
     {
@@ -145,7 +148,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0xB40E40 in the Steam build
     /// </summary>
     public unsafe virtual void Stop()
     {
@@ -166,7 +170,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Pause;
     /// <summary>
-    /// Function: Pause
+    /// Function: Pause<br/>
+    /// Native code at BatmanAK.exe+0xB41010 in the Steam build
     /// </summary>
     public unsafe virtual void Pause()
     {
@@ -187,7 +192,8 @@ public partial class TextureMovie : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
-    /// Function: Play
+    /// Function: Play<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void Play()
     {

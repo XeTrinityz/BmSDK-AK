@@ -266,7 +266,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDataStoreClient;
     /// <summary>
-    /// Function: GetDataStoreClient
+    /// Function: GetDataStoreClient<br/>
+    /// Native code at BatmanAK.exe+0xB2CD40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DataStoreClient GetDataStoreClient()
     {
@@ -286,7 +287,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPlayerControllerId;
     /// <summary>
-    /// Function: GetPlayerControllerId
+    /// Function: GetPlayerControllerId<br/>
+    /// Native code at BatmanAK.exe+0xB58980 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerControllerId(int PlayerIndex)
     {
@@ -307,7 +309,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPlayerIndex;
     /// <summary>
-    /// Function: GetPlayerIndex
+    /// Function: GetPlayerIndex<br/>
+    /// Native code at BatmanAK.exe+0xB58870 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerIndex(int ControllerId)
     {
@@ -328,7 +331,8 @@ public partial class UIInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPlayerCount;
     /// <summary>
-    /// Function: GetPlayerCount
+    /// Function: GetPlayerCount<br/>
+    /// Native code at BatmanAK.exe+0xB2CD00 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerCount()
     {
@@ -620,7 +624,8 @@ public static class UIInteractionStatics
 {
     private static BmSDK.Function __fn_GetDataStoreClient;
     /// <summary>
-    /// Function: GetDataStoreClient, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDataStoreClient, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2CD40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.DataStoreClient GetDataStoreClient(this BmSDK.Engine.UIInteraction self)
     {
@@ -641,7 +646,8 @@ public static class UIInteractionStatics
 
     private static BmSDK.Function __fn_GetPlayerControllerId;
     /// <summary>
-    /// Function: GetPlayerControllerId, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPlayerControllerId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB58980 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerControllerId(this BmSDK.Engine.UIInteraction self, int PlayerIndex)
     {
@@ -663,7 +669,8 @@ public static class UIInteractionStatics
 
     private static BmSDK.Function __fn_GetPlayerIndex;
     /// <summary>
-    /// Function: GetPlayerIndex, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPlayerIndex, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB58870 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerIndex(this BmSDK.Engine.UIInteraction self, int ControllerId)
     {
@@ -685,7 +692,8 @@ public static class UIInteractionStatics
 
     private static BmSDK.Function __fn_GetPlayerCount;
     /// <summary>
-    /// Function: GetPlayerCount, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPlayerCount, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2CD00 in the Steam build
     /// </summary>
     public unsafe static int GetPlayerCount(this BmSDK.Engine.UIInteraction self)
     {

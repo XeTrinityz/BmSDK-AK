@@ -93,7 +93,8 @@ public partial class RSeqAct_FakeVehicle : BmSDK.BmGame.RSeqAct_FakeVehicleStart
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickUpdate;
     /// <summary>
-    /// Function: TickUpdate
+    /// Function: TickUpdate<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe override void TickUpdate()
     {

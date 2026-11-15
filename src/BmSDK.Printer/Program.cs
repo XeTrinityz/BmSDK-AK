@@ -67,7 +67,7 @@ Directory.CreateDirectory(outDir);
 var utf8 = new UTF8Encoding(false);
 foreach (var cls in classes)
 {
-    var printer = new Printer();
+    var printer = new Printer(dump.Build);
     printer.PrintFile(cls);
     var dir = Path.Combine(outDir, cls.PackageName);
     Directory.CreateDirectory(dir);

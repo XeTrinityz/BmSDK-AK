@@ -129,7 +129,8 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInverseCanvasToScreen;
     /// <summary>
-    /// Function: GetInverseCanvasToScreen
+    /// Function: GetInverseCanvasToScreen<br/>
+    /// Native code at BatmanAK.exe+0xB2CE90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetInverseCanvasToScreen()
     {
@@ -150,7 +151,8 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCanvasToScreen;
     /// <summary>
-    /// Function: GetCanvasToScreen
+    /// Function: GetCanvasToScreen<br/>
+    /// Native code at BatmanAK.exe+0xB2CE20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetCanvasToScreen()
     {
@@ -171,7 +173,8 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUIActive;
     /// <summary>
-    /// Function: IsUIActive
+    /// Function: IsUIActive<br/>
+    /// Native code at BatmanAK.exe+0xB2CD80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsUIActive(int Flags = default)
     {

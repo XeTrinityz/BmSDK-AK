@@ -166,7 +166,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalMaxWorldHeight;
     /// <summary>
-    /// Function: GetLocalMaxWorldHeight
+    /// Function: GetLocalMaxWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB6B670 in the Steam build
     /// </summary>
     public unsafe virtual float GetLocalMaxWorldHeight(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -190,7 +191,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMinWorldHeight;
     /// <summary>
-    /// Function: GetGlobalMinWorldHeight
+    /// Function: GetGlobalMinWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB3A430 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlobalMinWorldHeight()
     {
@@ -211,7 +213,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMaxWorldHeight;
     /// <summary>
-    /// Function: GetGlobalMaxWorldHeight
+    /// Function: GetGlobalMaxWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB3A3E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlobalMaxWorldHeight()
     {
@@ -232,7 +235,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOceanAttenuation;
     /// <summary>
-    /// Function: GetOceanAttenuation
+    /// Function: GetOceanAttenuation<br/>
+    /// Native code at BatmanAK.exe+0xB6B460 in the Steam build
     /// </summary>
     public unsafe virtual float GetOceanAttenuation(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -256,7 +260,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDataMapAtPos;
     /// <summary>
-    /// Function: GetDataMapAtPos
+    /// Function: GetDataMapAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6B230 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector4 GetDataMapAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -280,7 +285,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMagnitudeAtPos;
     /// <summary>
-    /// Function: GetMagnitudeAtPos
+    /// Function: GetMagnitudeAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6B020 in the Steam build
     /// </summary>
     public unsafe virtual float GetMagnitudeAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -304,7 +310,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOceanPosFastCheck;
     /// <summary>
-    /// Function: IsOceanPosFastCheck
+    /// Function: IsOceanPosFastCheck<br/>
+    /// Native code at BatmanAK.exe+0xB6AE20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOceanPosFastCheck(System.Numerics.Vector2 UV, int SizeX, int SizeY)
     {
@@ -328,7 +335,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOceanAtUV;
     /// <summary>
-    /// Function: IsOceanAtUV
+    /// Function: IsOceanAtUV<br/>
+    /// Native code at BatmanAK.exe+0xB6AC20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOceanAtUV(System.Numerics.Vector2 UV, int xOffset, int yOffset)
     {
@@ -352,7 +360,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOceanShoreDistAtPos;
     /// <summary>
-    /// Function: GetOceanShoreDistAtPos
+    /// Function: GetOceanShoreDistAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6AA10 in the Steam build
     /// </summary>
     public unsafe virtual float GetOceanShoreDistAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -376,7 +385,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOceanAtPos;
     /// <summary>
-    /// Function: IsOceanAtPos
+    /// Function: IsOceanAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6A800 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOceanAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -400,7 +410,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaveSample;
     /// <summary>
-    /// Function: GetWaveSample
+    /// Function: GetWaveSample<br/>
+    /// Native code at BatmanAK.exe+0xB6A5F0 in the Steam build
     /// </summary>
     public unsafe virtual float GetWaveSample(float U, float V)
     {
@@ -423,7 +434,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOceanHeightAtPosition;
     /// <summary>
-    /// Function: GetOceanHeightAtPosition
+    /// Function: GetOceanHeightAtPosition<br/>
+    /// Native code at BatmanAK.exe+0xB3A340 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 GetOceanHeightAtPosition(System.Numerics.Vector3 Position)
     {
@@ -445,7 +457,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopPlayerOceanEffect;
     /// <summary>
-    /// Function: StopPlayerOceanEffect
+    /// Function: StopPlayerOceanEffect<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void StopPlayerOceanEffect()
     {
@@ -466,7 +479,8 @@ public partial class ROceanAttachedToCamera : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerOceanEffect;
     /// <summary>
-    /// Function: UpdatePlayerOceanEffect
+    /// Function: UpdatePlayerOceanEffect<br/>
+    /// Native code at BatmanAK.exe+0x4D3260 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePlayerOceanEffect(float DeltaTime)
     {

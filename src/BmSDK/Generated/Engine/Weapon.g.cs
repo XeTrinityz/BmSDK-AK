@@ -204,7 +204,8 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalFireStartLoc;
     /// <summary>
-    /// Function: GetPhysicalFireStartLoc
+    /// Function: GetPhysicalFireStartLoc<br/>
+    /// Native code at BatmanAK.exe+0xB3B520 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPhysicalFireStartLoc(System.Numerics.Vector3 AimDir = default)
     {

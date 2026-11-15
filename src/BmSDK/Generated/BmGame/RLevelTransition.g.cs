@@ -541,7 +541,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushTexturesStreaming;
     /// <summary>
-    /// Function: FlushTexturesStreaming
+    /// Function: FlushTexturesStreaming<br/>
+    /// Native code at BatmanAK.exe+0x494810 in the Steam build
     /// </summary>
     public unsafe virtual void FlushTexturesStreaming()
     {
@@ -562,7 +563,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerUpdateTransform;
     /// <summary>
-    /// Function: PlayerUpdateTransform
+    /// Function: PlayerUpdateTransform<br/>
+    /// Native code at BatmanAK.exe+0x512030 in the Steam build
     /// </summary>
     public unsafe virtual void PlayerUpdateTransform(BmSDK.BmGame.RPawnCharacter Mesh)
     {
@@ -584,7 +586,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNonCurrentLevel;
     /// <summary>
-    /// Function: GetNonCurrentLevel
+    /// Function: GetNonCurrentLevel<br/>
+    /// Native code at BatmanAK.exe+0x494570 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetNonCurrentLevel()
     {
@@ -605,7 +608,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLevelVolumeInFront;
     /// <summary>
-    /// Function: GetLevelVolumeInFront
+    /// Function: GetLevelVolumeInFront<br/>
+    /// Native code at BatmanAK.exe+0x511EF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLevelVolume GetLevelVolumeInFront(bool InFront)
     {
@@ -627,7 +631,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsConnectedToCurrentLevels;
     /// <summary>
-    /// Function: IsConnectedToCurrentLevels
+    /// Function: IsConnectedToCurrentLevels<br/>
+    /// Native code at BatmanAK.exe+0x46B410 in the Steam build
     /// </summary>
     public unsafe virtual bool IsConnectedToCurrentLevels()
     {
@@ -648,7 +653,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsConnectedToLevel;
     /// <summary>
-    /// Function: IsConnectedToLevel
+    /// Function: IsConnectedToLevel<br/>
+    /// Native code at BatmanAK.exe+0x511DB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsConnectedToLevel(BmSDK.FName Level)
     {
@@ -670,7 +676,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerPassingThrough;
     /// <summary>
-    /// Function: IsPlayerPassingThrough
+    /// Function: IsPlayerPassingThrough<br/>
+    /// Native code at BatmanAK.exe+0x4944D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerPassingThrough(System.Numerics.Vector3 PlayerLocation)
     {
@@ -692,7 +699,8 @@ public partial class RLevelTransition : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGRI;
     /// <summary>
-    /// Function: GetGRI
+    /// Function: GetGRI<br/>
+    /// Native code at BatmanAK.exe+0x47D440 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI GetGRI()
     {

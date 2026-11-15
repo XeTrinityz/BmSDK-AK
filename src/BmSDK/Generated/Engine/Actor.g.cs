@@ -200,7 +200,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
-    /// Function: IsStaticForFloorCorrection
+    /// Function: IsStaticForFloorCorrection<br/>
+    /// Native code at BatmanAK.exe+0x46A620 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStaticForFloorCorrection()
     {
@@ -221,7 +222,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideHighResTextureStreaming;
     /// <summary>
-    /// Function: OverrideHighResTextureStreaming
+    /// Function: OverrideHighResTextureStreaming<br/>
+    /// Native code at BatmanAK.exe+0xB6A100 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideHighResTextureStreaming(float SecondsToOverride)
     {
@@ -243,7 +245,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSince;
     /// <summary>
-    /// Function: GetTimeSince
+    /// Function: GetTimeSince<br/>
+    /// Native code at BatmanAK.exe+0xB394B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeSince(double StartTime)
     {
@@ -265,7 +268,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerStart;
     /// <summary>
-    /// Function: GetTimerStart
+    /// Function: GetTimerStart<br/>
+    /// Native code at BatmanAK.exe+0xB39460 in the Steam build
     /// </summary>
     public unsafe virtual double GetTimerStart()
     {
@@ -286,7 +290,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmanCanClimb;
     /// <summary>
-    /// Function: SetBatmanCanClimb
+    /// Function: SetBatmanCanClimb<br/>
+    /// Native code at BatmanAK.exe+0xB69FE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBatmanCanClimb(bool bCanClimb)
     {
@@ -308,7 +313,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetScriptCallstackAsDetailThoughts;
     /// <summary>
-    /// Function: GetScriptCallstackAsDetailThoughts
+    /// Function: GetScriptCallstackAsDetailThoughts<br/>
+    /// Native code at BatmanAK.exe+0xBBD560 in the Steam build
     /// </summary>
     public unsafe static BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> GetScriptCallstackAsDetailThoughts()
     {
@@ -328,7 +334,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogThoughtInternal;
     /// <summary>
-    /// Function: LogThoughtInternal
+    /// Function: LogThoughtInternal<br/>
+    /// Native code at BatmanAK.exe+0xBBD150 in the Steam build
     /// </summary>
     public unsafe static void LogThoughtInternal(BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FStringArg Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
     {
@@ -370,7 +377,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorSpriteComponent;
     /// <summary>
-    /// Function: GetActorSpriteComponent
+    /// Function: GetActorSpriteComponent<br/>
+    /// Native code at BatmanAK.exe+0xB39410 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SpriteComponent GetActorSpriteComponent()
     {
@@ -391,7 +399,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorMetrics;
     /// <summary>
-    /// Function: GetActorMetrics
+    /// Function: GetActorMetrics<br/>
+    /// Native code at BatmanAK.exe+0xB39380 in the Steam build
     /// </summary>
     public unsafe virtual int GetActorMetrics(BmSDK.Engine.Actor.EActorMetricsType MetricsType)
     {
@@ -444,7 +453,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
-    /// Function: GetAIPointOfInterestExtent
+    /// Function: GetAIPointOfInterestExtent<br/>
+    /// Native code at BatmanAK.exe+0x46A5C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
@@ -465,7 +475,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestPosition;
     /// <summary>
-    /// Function: GetAIPointOfInterestPosition
+    /// Function: GetAIPointOfInterestPosition<br/>
+    /// Native code at BatmanAK.exe+0x46A560 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAIPointOfInterestPosition()
     {
@@ -486,7 +497,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeregisterAsAIPointOfInterestWithNavMesh;
     /// <summary>
-    /// Function: DeregisterAsAIPointOfInterestWithNavMesh
+    /// Function: DeregisterAsAIPointOfInterestWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0xB39340 in the Steam build
     /// </summary>
     public unsafe virtual void DeregisterAsAIPointOfInterestWithNavMesh()
     {
@@ -507,7 +519,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterAsAIPointOfInterestWithNavMesh;
     /// <summary>
-    /// Function: RegisterAsAIPointOfInterestWithNavMesh
+    /// Function: RegisterAsAIPointOfInterestWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0xB39300 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterAsAIPointOfInterestWithNavMesh()
     {
@@ -543,7 +556,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLevelHidden;
     /// <summary>
-    /// Function: IsLevelHidden
+    /// Function: IsLevelHidden<br/>
+    /// Native code at BatmanAK.exe+0xB392B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLevelHidden()
     {
@@ -658,7 +672,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioThoughts;
     /// <summary>
-    /// Function: GetAudioThoughts
+    /// Function: GetAudioThoughts<br/>
+    /// Native code at BatmanAK.exe+0xBBE170 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAudioThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 thoughtLocation)
     {
@@ -683,7 +698,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketSpatial;
     /// <summary>
-    /// Function: GetSocketSpatial
+    /// Function: GetSocketSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB69E20 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSocketSpatial(BmSDK.FName socketOrBone, out System.Numerics.Vector3 sckPosition, out BmSDK.Rotator sckOrientation)
     {
@@ -711,7 +727,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueSpatial;
     /// <summary>
-    /// Function: GetDialogueSpatial
+    /// Function: GetDialogueSpatial<br/>
+    /// Native code at BatmanAK.exe+0xB39190 in the Steam build
     /// </summary>
     public unsafe virtual void GetDialogueSpatial(out System.Numerics.Vector3 dlgPosition, out BmSDK.Rotator dlgOrientation, BmSDK.GameObject caller = default)
     {
@@ -739,7 +756,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe virtual void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
@@ -767,7 +785,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudibleUpdateSourceCallback;
     /// <summary>
-    /// Function: AudibleUpdateSourceCallback
+    /// Function: AudibleUpdateSourceCallback<br/>
+    /// Native code at BatmanAK.exe+0xB69C30 in the Steam build
     /// </summary>
     public unsafe virtual void AudibleUpdateSourceCallback(BmSDK.Engine.RAkAudible akAud, bool hasSource)
     {
@@ -790,7 +809,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAudioCallbacks;
     /// <summary>
-    /// Function: CancelAudioCallbacks
+    /// Function: CancelAudioCallbacks<br/>
+    /// Native code at BatmanAK.exe+0xB39150 in the Steam build
     /// </summary>
     public unsafe virtual void CancelAudioCallbacks()
     {
@@ -811,7 +831,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioSwitch;
     /// <summary>
-    /// Function: SetAudioSwitch
+    /// Function: SetAudioSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB69B10 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioSwitch(BmSDK.Engine.AkSwitchName SwitchName)
     {
@@ -833,7 +854,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioParameter;
     /// <summary>
-    /// Function: SetAudioParameter
+    /// Function: SetAudioParameter<br/>
+    /// Native code at BatmanAK.exe+0xB69920 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -856,7 +878,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPortraitName;
     /// <summary>
-    /// Function: GetPortraitName
+    /// Function: GetPortraitName<br/>
+    /// Native code at BatmanAK.exe+0xBA4250 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPortraitName()
     {
@@ -877,7 +900,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceName;
     /// <summary>
-    /// Function: GetVoiceName
+    /// Function: GetVoiceName<br/>
+    /// Native code at BatmanAK.exe+0xBA4170 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVoiceName(bool forSubtitle = default)
     {
@@ -899,7 +923,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueVoice;
     /// <summary>
-    /// Function: SetDialogueVoice
+    /// Function: SetDialogueVoice<br/>
+    /// Native code at BatmanAK.exe+0xB697F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDialogueVoice(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -921,7 +946,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueVoice;
     /// <summary>
-    /// Function: GetDialogueVoice
+    /// Function: GetDialogueVoice<br/>
+    /// Native code at BatmanAK.exe+0xB39100 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetDialogueVoice()
     {
@@ -994,7 +1020,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeaking;
     /// <summary>
-    /// Function: IsSpeaking
+    /// Function: IsSpeaking<br/>
+    /// Native code at BatmanAK.exe+0xB38FE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpeaking(bool rightNow = default, bool withPlayer = default, bool checkVoiceAlso = default)
     {
@@ -1018,7 +1045,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEmote;
     /// <summary>
-    /// Function: TriggerEmote
+    /// Function: TriggerEmote<br/>
+    /// Native code at BatmanAK.exe+0xBA3FE0 in the Steam build
     /// </summary>
     public unsafe virtual bool TriggerEmote(BmSDK.Engine.AkEmoteType em, BmSDK.FStringArg dlgTag = default)
     {
@@ -1042,7 +1070,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptSpeech;
     /// <summary>
-    /// Function: InterruptSpeech
+    /// Function: InterruptSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBA3EF0 in the Steam build
     /// </summary>
     public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1066,7 +1095,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeech;
     /// <summary>
-    /// Function: StopSpeech
+    /// Function: StopSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBA3DF0 in the Steam build
     /// </summary>
     public unsafe virtual void StopSpeech(bool exceptEmotes = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1090,7 +1120,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeech;
     /// <summary>
-    /// Function: StartSpeech
+    /// Function: StartSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBBCF10 in the Steam build
     /// </summary>
     public unsafe virtual bool StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1115,7 +1146,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLoopingAudioEvent;
     /// <summary>
-    /// Function: HasLoopingAudioEvent
+    /// Function: HasLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB696B0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
@@ -1137,7 +1169,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveLoopingAudioEvent;
     /// <summary>
-    /// Function: RemoveLoopingAudioEvent
+    /// Function: RemoveLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB69590 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
@@ -1159,7 +1192,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLoopingAudioEvent;
     /// <summary>
-    /// Function: AddLoopingAudioEvent
+    /// Function: AddLoopingAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB69470 in the Steam build
     /// </summary>
     public unsafe virtual void AddLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
@@ -1181,7 +1215,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SeekAudioEvent;
     /// <summary>
-    /// Function: SeekAudioEvent
+    /// Function: SeekAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB692F0 in the Steam build
     /// </summary>
     public unsafe virtual void SeekAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, float timeinMS)
     {
@@ -1221,7 +1256,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudioEvent;
     /// <summary>
-    /// Function: StopAudioEvent
+    /// Function: StopAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB38F40 in the Steam build
     /// </summary>
     public unsafe virtual void StopAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -1245,7 +1281,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAudioEvent;
     /// <summary>
-    /// Function: StartAudioEvent
+    /// Function: StartAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB69110 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartAudioEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
@@ -1284,7 +1321,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkDialogueComponent;
     /// <summary>
-    /// Function: GetAkDialogueComponent
+    /// Function: GetAkDialogueComponent<br/>
+    /// Native code at BatmanAK.exe+0x46A390 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueComponent GetAkDialogueComponent(bool allowCreate = default)
     {
@@ -1336,7 +1374,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
@@ -1358,7 +1397,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldContinueSurveillance;
     /// <summary>
-    /// Function: ShouldContinueSurveillance
+    /// Function: ShouldContinueSurveillance<br/>
+    /// Native code at BatmanAK.exe+0x46E050 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldContinueSurveillance()
     {
@@ -1379,7 +1419,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeHiddenBySHOW_NavigationNodes;
     /// <summary>
-    /// Function: ShouldBeHiddenBySHOW_NavigationNodes
+    /// Function: ShouldBeHiddenBySHOW_NavigationNodes<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldBeHiddenBySHOW_NavigationNodes()
     {
@@ -1400,7 +1441,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WillOverlap;
     /// <summary>
-    /// Function: WillOverlap
+    /// Function: WillOverlap<br/>
+    /// Native code at BatmanAK.exe+0xB68DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool WillOverlap(System.Numerics.Vector3 PosA, System.Numerics.Vector3 VelA, System.Numerics.Vector3 PosB, System.Numerics.Vector3 VelB, float StepSize, float Radius, out float Time)
     {
@@ -1430,7 +1472,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvoidanceVector;
     /// <summary>
-    /// Function: GetAvoidanceVector
+    /// Function: GetAvoidanceVector<br/>
+    /// Native code at BatmanAK.exe+0xBB1AA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAvoidanceVector(out BmSDK.TArray<BmSDK.Engine.Actor> Obstacles, System.Numerics.Vector3 GoalLocation, float CollisionRadius, float MaxSpeed, int NumSamples = default, float VelocityStepRate = default, float MaxTimeTilOverlap = default)
     {
@@ -1574,7 +1617,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SupportsKismetModification;
     /// <summary>
-    /// Function: SupportsKismetModification
+    /// Function: SupportsKismetModification<br/>
+    /// Native code at BatmanAK.exe+0xBA3C50 in the Steam build
     /// </summary>
     public unsafe virtual bool SupportsKismetModification(BmSDK.Engine.SequenceOp AskingOp, out BmSDK.FString Reason)
     {
@@ -1597,7 +1641,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTrailParticleSystem;
     /// <summary>
-    /// Function: GetAnimTrailParticleSystem
+    /// Function: GetAnimTrailParticleSystem<br/>
+    /// Native code at BatmanAK.exe+0xB68CB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem GetAnimTrailParticleSystem(BmSDK.Engine.AnimNotify_Trails AnimNotifyData)
     {
@@ -1740,7 +1785,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInPersistentLevel;
     /// <summary>
-    /// Function: IsInPersistentLevel
+    /// Function: IsInPersistentLevel<br/>
+    /// Native code at BatmanAK.exe+0xB38E40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInPersistentLevel(bool bIncludeLevelStreamingPersistent = default)
     {
@@ -1777,7 +1823,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPackageGuid;
     /// <summary>
-    /// Function: GetPackageGuid
+    /// Function: GetPackageGuid<br/>
+    /// Native code at BatmanAK.exe+0xB68B60 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FGuid GetPackageGuid(BmSDK.FName PackageName)
     {
@@ -1922,7 +1969,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativePostRenderFor;
     /// <summary>
-    /// Function: NativePostRenderFor
+    /// Function: NativePostRenderFor<br/>
+    /// Native code at BatmanAK.exe+0xB688E0 in the Steam build
     /// </summary>
     public unsafe virtual void NativePostRenderFor(BmSDK.Engine.PlayerController PC, BmSDK.Engine.Canvas Canvas, System.Numerics.Vector3 CameraPosition, System.Numerics.Vector3 CameraDir)
     {
@@ -1947,7 +1995,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHUDLocation;
     /// <summary>
-    /// Function: SetHUDLocation
+    /// Function: SetHUDLocation<br/>
+    /// Native code at BatmanAK.exe+0xB38DB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHUDLocation(System.Numerics.Vector3 NewHUDLocation)
     {
@@ -2067,7 +2116,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
-    /// Function: GetFOVCheckLocation
+    /// Function: GetFOVCheckLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFOVCheckLocation()
     {
@@ -2088,7 +2138,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -2157,7 +2208,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe virtual byte GetTeamNum()
     {
@@ -2192,7 +2244,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerOwned;
     /// <summary>
-    /// Function: IsPlayerOwned
+    /// Function: IsPlayerOwned<br/>
+    /// Native code at BatmanAK.exe+0xB2E9F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerOwned()
     {
@@ -2455,7 +2508,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
-    /// Function: MatineeTeleport
+    /// Function: MatineeTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4A21C0 in the Steam build
     /// </summary>
     public unsafe virtual void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {
@@ -2698,7 +2752,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures2;
     /// <summary>
-    /// Function: PrestreamTextures2
+    /// Function: PrestreamTextures2<br/>
+    /// Native code at BatmanAK.exe+0xB68550 in the Steam build
     /// </summary>
     public unsafe virtual void PrestreamTextures2(float Seconds, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
@@ -2723,7 +2778,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures;
     /// <summary>
-    /// Function: PrestreamTextures
+    /// Function: PrestreamTextures<br/>
+    /// Native code at BatmanAK.exe+0xB68320 in the Steam build
     /// </summary>
     public unsafe virtual void PrestreamTextures(float Seconds, bool bEnableStreaming, int CinematicTextureGroups = default)
     {
@@ -2761,7 +2817,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNetUpdateTime;
     /// <summary>
-    /// Function: SetNetUpdateTime
+    /// Function: SetNetUpdateTime<br/>
+    /// Native code at BatmanAK.exe+0x4F38A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNetUpdateTime(float NewUpdateTime)
     {
@@ -3331,7 +3388,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
-    /// Function: GetGravityZ
+    /// Function: GetGravityZ<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe virtual float GetGravityZ()
     {
@@ -3594,7 +3652,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetALocalPlayerController;
     /// <summary>
-    /// Function: GetALocalPlayerController
+    /// Function: GetALocalPlayerController<br/>
+    /// Native code at BatmanAK.exe+0xB38D10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PlayerController GetALocalPlayerController()
     {
@@ -3615,7 +3674,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLMap;
     /// <summary>
-    /// Function: GetURLMap
+    /// Function: GetURLMap<br/>
+    /// Native code at BatmanAK.exe+0xBA3BD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetURLMap()
     {
@@ -3666,7 +3726,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDestination;
     /// <summary>
-    /// Function: GetDestination
+    /// Function: GetDestination<br/>
+    /// Native code at BatmanAK.exe+0xB681D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDestination(BmSDK.Engine.Controller C)
     {
@@ -3688,7 +3749,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateMinSpeedTrajectory;
     /// <summary>
-    /// Function: CalculateMinSpeedTrajectory
+    /// Function: CalculateMinSpeedTrajectory<br/>
+    /// Native code at BatmanAK.exe+0xB67DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateMinSpeedTrajectory(out System.Numerics.Vector3 out_Velocity, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, float MaxTossSpeed, float MinTossSpeed, System.Numerics.Vector3 CollisionSize = default, float TerminalVelocity = default, float GravityZ = default, bool bOnlyTraceUp = default)
     {
@@ -3720,7 +3782,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SuggestTossVelocity;
     /// <summary>
-    /// Function: SuggestTossVelocity
+    /// Function: SuggestTossVelocity<br/>
+    /// Native code at BatmanAK.exe+0xBCC310 in the Steam build
     /// </summary>
     public unsafe virtual bool SuggestTossVelocity(out System.Numerics.Vector3 TossVelocity, System.Numerics.Vector3 Destination, System.Numerics.Vector3 Start, float TossSpeed, float BaseTossZ = default, float DesiredZPct = default, System.Numerics.Vector3 CollisionSize = default, float TerminalVelocity = default, float OverrideGravityZ = default, bool bOnlyTraceUp = default)
     {
@@ -3753,7 +3816,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerCanSeeMe;
     /// <summary>
-    /// Function: PlayerCanSeeMe
+    /// Function: PlayerCanSeeMe<br/>
+    /// Native code at BatmanAK.exe+0xB38C60 in the Steam build
     /// </summary>
     public unsafe virtual bool PlayerCanSeeMe(bool bForceLOSCheck = default)
     {
@@ -3775,7 +3839,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeNoise;
     /// <summary>
-    /// Function: MakeNoise
+    /// Function: MakeNoise<br/>
+    /// Native code at BatmanAK.exe+0xB67C60 in the Steam build
     /// </summary>
     public unsafe virtual void MakeNoise(float Loudness, BmSDK.FName NoiseType = default)
     {
@@ -3798,7 +3863,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySound;
     /// <summary>
-    /// Function: PlaySound
+    /// Function: PlaySound<br/>
+    /// Native code at BatmanAK.exe+0x9BCF00 in the Steam build
     /// </summary>
     public unsafe virtual void PlaySound(BmSDK.Engine.SoundCue InSoundCue, bool bNotReplicated = default, bool bNoRepToOwner = default, bool bStopWhenOwnerDestroyed = default, System.Numerics.Vector3 SoundLocation = default, bool bNoRepToRelevant = default)
     {
@@ -3825,7 +3891,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAudioComponent;
     /// <summary>
-    /// Function: CreateAudioComponent
+    /// Function: CreateAudioComponent<br/>
+    /// Native code at BatmanAK.exe+0xB679D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AudioComponent CreateAudioComponent(BmSDK.Engine.SoundCue InSoundCue, bool bPlay = default, bool bStopWhenOwnerDestroyed = default, bool bUseLocation = default, System.Numerics.Vector3 SourceLocation = default, bool bAttachToSelf = default)
     {
@@ -3852,7 +3919,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimerTimeDilation;
     /// <summary>
-    /// Function: ResetTimerTimeDilation
+    /// Function: ResetTimerTimeDilation<br/>
+    /// Native code at BatmanAK.exe+0xB67870 in the Steam build
     /// </summary>
     public unsafe virtual void ResetTimerTimeDilation(BmSDK.FName TimerName, BmSDK.GameObject inObj = default)
     {
@@ -3875,7 +3943,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyTimerTimeDilation;
     /// <summary>
-    /// Function: ModifyTimerTimeDilation
+    /// Function: ModifyTimerTimeDilation<br/>
+    /// Native code at BatmanAK.exe+0xB67640 in the Steam build
     /// </summary>
     public unsafe virtual void ModifyTimerTimeDilation(BmSDK.FName TimerName, float InTimerTimeDilation, BmSDK.GameObject inObj = default)
     {
@@ -3915,7 +3984,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerRate;
     /// <summary>
-    /// Function: GetTimerRate
+    /// Function: GetTimerRate<br/>
+    /// Native code at BatmanAK.exe+0xB38B70 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimerRate(BmSDK.FName TimerFuncName = default, BmSDK.GameObject inObj = default)
     {
@@ -3938,7 +4008,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerCount;
     /// <summary>
-    /// Function: GetTimerCount
+    /// Function: GetTimerCount<br/>
+    /// Native code at BatmanAK.exe+0xB38A80 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimerCount(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
@@ -3961,7 +4032,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTimerActive;
     /// <summary>
-    /// Function: IsTimerActive
+    /// Function: IsTimerActive<br/>
+    /// Native code at BatmanAK.exe+0xB389A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTimerActive(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
@@ -3984,7 +4056,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseTimer;
     /// <summary>
-    /// Function: PauseTimer
+    /// Function: PauseTimer<br/>
+    /// Native code at BatmanAK.exe+0xB67490 in the Steam build
     /// </summary>
     public unsafe virtual void PauseTimer(bool bPause, BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
@@ -4008,7 +4081,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllTimers;
     /// <summary>
-    /// Function: ClearAllTimers
+    /// Function: ClearAllTimers<br/>
+    /// Native code at BatmanAK.exe+0x46A160 in the Steam build
     /// </summary>
     public unsafe virtual void ClearAllTimers(BmSDK.GameObject inObj = default)
     {
@@ -4030,7 +4104,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearTimer;
     /// <summary>
-    /// Function: ClearTimer
+    /// Function: ClearTimer<br/>
+    /// Native code at BatmanAK.exe+0xB388C0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearTimer(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
@@ -4053,7 +4128,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTimer;
     /// <summary>
-    /// Function: SetTimer
+    /// Function: SetTimer<br/>
+    /// Native code at BatmanAK.exe+0xB67220 in the Steam build
     /// </summary>
     public unsafe virtual void SetTimer(float InRate, bool inbLoop = default, BmSDK.FName inTimerFunc = default, bool bRealTimeTimer = default, BmSDK.GameObject inObj = default)
     {
@@ -4093,7 +4169,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroy;
     /// <summary>
-    /// Function: Destroy
+    /// Function: Destroy<br/>
+    /// Native code at BatmanAK.exe+0x9C35A0 in the Steam build
     /// </summary>
     public unsafe virtual bool Destroy()
     {
@@ -4114,7 +4191,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Spawn;
     /// <summary>
-    /// Function: Spawn
+    /// Function: Spawn<br/>
+    /// Native code at BatmanAK.exe+0x9C3270 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor Spawn(BmSDK.Class SpawnClass, BmSDK.Engine.Actor SpawnOwner = default, BmSDK.FName SpawnTag = default, System.Numerics.Vector3 SpawnLocation = default, BmSDK.Rotator SpawnRotation = default, BmSDK.Engine.Actor ActorTemplate = default, bool bNoCollisionFail = default)
     {
@@ -4142,7 +4220,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockedBy;
     /// <summary>
-    /// Function: IsBlockedBy
+    /// Function: IsBlockedBy<br/>
+    /// Native code at BatmanAK.exe+0x9BCDC0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlockedBy(BmSDK.Engine.Actor Other)
     {
@@ -4164,7 +4243,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingCylinder;
     /// <summary>
-    /// Function: GetBoundingCylinder
+    /// Function: GetBoundingCylinder<br/>
+    /// Native code at BatmanAK.exe+0x46A060 in the Steam build
     /// </summary>
     public unsafe virtual void GetBoundingCylinder(out float CollisionRadius, out float CollisionHeight)
     {
@@ -4191,7 +4271,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetComponentsBoundingBox;
     /// <summary>
-    /// Function: GetComponentsBoundingBox
+    /// Function: GetComponentsBoundingBox<br/>
+    /// Native code at BatmanAK.exe+0xB38820 in the Steam build
     /// </summary>
     public unsafe virtual void GetComponentsBoundingBox(out BmSDK.GameObject.FBox ActorBox)
     {
@@ -4215,7 +4296,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOverlapping;
     /// <summary>
-    /// Function: IsOverlapping
+    /// Function: IsOverlapping<br/>
+    /// Native code at BatmanAK.exe+0x9BC970 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOverlapping(BmSDK.Engine.Actor A)
     {
@@ -4237,7 +4319,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsPointNoFilter;
     /// <summary>
-    /// Function: ContainsPointNoFilter
+    /// Function: ContainsPointNoFilter<br/>
+    /// Native code at BatmanAK.exe+0xB38780 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsPointNoFilter(System.Numerics.Vector3 Spot)
     {
@@ -4259,7 +4342,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsPoint;
     /// <summary>
-    /// Function: ContainsPoint
+    /// Function: ContainsPoint<br/>
+    /// Native code at BatmanAK.exe+0xB386E0 in the Steam build
     /// </summary>
     public unsafe virtual bool ContainsPoint(System.Numerics.Vector3 Spot)
     {
@@ -4281,7 +4365,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSpot;
     /// <summary>
-    /// Function: FindSpot
+    /// Function: FindSpot<br/>
+    /// Native code at BatmanAK.exe+0xB385B0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindSpot(System.Numerics.Vector3 BoxExtent, out System.Numerics.Vector3 SpotLocation, bool DontEaryOut = default)
     {
@@ -4307,7 +4392,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceAllPhysicsAssetInteractions;
     /// <summary>
-    /// Function: TraceAllPhysicsAssetInteractions
+    /// Function: TraceAllPhysicsAssetInteractions<br/>
+    /// Native code at BatmanAK.exe+0x9C9B40 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceAllPhysicsAssetInteractions(BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, System.Numerics.Vector3 EndTrace, System.Numerics.Vector3 StartTrace, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> out_Hits, System.Numerics.Vector3 Extent = default)
     {
@@ -4333,7 +4419,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FastTrace;
     /// <summary>
-    /// Function: FastTrace
+    /// Function: FastTrace<br/>
+    /// Native code at BatmanAK.exe+0x9C3010 in the Steam build
     /// </summary>
     public unsafe virtual bool FastTrace(System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart = default, System.Numerics.Vector3 BoxExtent = default, bool bTraceBullet = default)
     {
@@ -4358,7 +4445,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointCheckComponent;
     /// <summary>
-    /// Function: PointCheckComponent
+    /// Function: PointCheckComponent<br/>
+    /// Native code at BatmanAK.exe+0x9BC760 in the Steam build
     /// </summary>
     public unsafe virtual bool PointCheckComponent(BmSDK.Engine.PrimitiveComponent InComponent, System.Numerics.Vector3 PointLocation, System.Numerics.Vector3 PointExtent)
     {
@@ -4382,7 +4470,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceComponent;
     /// <summary>
-    /// Function: TraceComponent
+    /// Function: TraceComponent<br/>
+    /// Native code at BatmanAK.exe+0x9BC2A0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceComponent(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, BmSDK.Engine.PrimitiveComponent InComponent, System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart, System.Numerics.Vector3 Extent, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, bool bComplexCollision)
     {
@@ -4417,7 +4506,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Trace;
     /// <summary>
-    /// Function: Trace
+    /// Function: Trace<br/>
+    /// Native code at BatmanAK.exe+0x9C2BE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor Trace(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart, BmSDK.Component.ECollisionFilter TraceFilter, System.Numerics.Vector3 Extent, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, int ExtraTraceFlags)
     {
@@ -4547,7 +4637,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampRotation;
     /// <summary>
-    /// Function: ClampRotation
+    /// Function: ClampRotation<br/>
+    /// Native code at BatmanAK.exe+0xB38450 in the Steam build
     /// </summary>
     public unsafe virtual bool ClampRotation(out BmSDK.Rotator out_Rot, BmSDK.Rotator rBase, BmSDK.Rotator rUpperLimits, BmSDK.Rotator rLowerLimits)
     {
@@ -4908,7 +4999,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOverrideApexClothSimulationEnabled;
     /// <summary>
-    /// Function: EndOverrideApexClothSimulationEnabled
+    /// Function: EndOverrideApexClothSimulationEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB2E9B0 in the Steam build
     /// </summary>
     public unsafe virtual void EndOverrideApexClothSimulationEnabled()
     {
@@ -4929,7 +5021,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginOverrideApexClothSimulationEnabled;
     /// <summary>
-    /// Function: BeginOverrideApexClothSimulationEnabled
+    /// Function: BeginOverrideApexClothSimulationEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB67030 in the Steam build
     /// </summary>
     public unsafe virtual void BeginOverrideApexClothSimulationEnabled(bool bSimulationEnabled, bool bClothVisible)
     {
@@ -4952,7 +5045,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOverrideApexClothTeleportMode;
     /// <summary>
-    /// Function: EndOverrideApexClothTeleportMode
+    /// Function: EndOverrideApexClothTeleportMode<br/>
+    /// Native code at BatmanAK.exe+0xB38410 in the Steam build
     /// </summary>
     public unsafe virtual void EndOverrideApexClothTeleportMode()
     {
@@ -4973,7 +5067,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginOverrideApexClothTeleportMode;
     /// <summary>
-    /// Function: BeginOverrideApexClothTeleportMode
+    /// Function: BeginOverrideApexClothTeleportMode<br/>
+    /// Native code at BatmanAK.exe+0xB38390 in the Steam build
     /// </summary>
     public unsafe virtual void BeginOverrideApexClothTeleportMode(BmSDK.Engine.Actor.EApexClothTeleportMode TeleportMode)
     {
@@ -4995,7 +5090,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetApexClothSimulationEnabled;
     /// <summary>
-    /// Function: SetApexClothSimulationEnabled
+    /// Function: SetApexClothSimulationEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB66F10 in the Steam build
     /// </summary>
     public unsafe virtual void SetApexClothSimulationEnabled(bool bSimulationEnabled)
     {
@@ -5017,7 +5113,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartASyncLoad;
     /// <summary>
-    /// Function: StartASyncLoad
+    /// Function: StartASyncLoad<br/>
+    /// Native code at BatmanAK.exe+0xBA3A40 in the Steam build
     /// </summary>
     public unsafe virtual bool StartASyncLoad(BmSDK.FStringArg FullPath, bool bIgnoreMissingPackage = default)
     {
@@ -5041,7 +5138,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStasis;
     /// <summary>
-    /// Function: SetStasis
+    /// Function: SetStasis<br/>
+    /// Native code at BatmanAK.exe+0xB66DF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetStasis(bool bInStasis)
     {
@@ -5063,7 +5161,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetTickIsDisabledNative;
     /// <summary>
-    /// Function: OnSetTickIsDisabledNative
+    /// Function: OnSetTickIsDisabledNative<br/>
+    /// Native code at BatmanAK.exe+0xB66CD0 in the Steam build
     /// </summary>
     public unsafe virtual void OnSetTickIsDisabledNative(bool bDisabled)
     {
@@ -5100,7 +5199,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTickIsDisabled(bool bInDisabled)
     {
@@ -5122,7 +5222,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickGroup;
     /// <summary>
-    /// Function: SetTickGroup
+    /// Function: SetTickGroup<br/>
+    /// Native code at BatmanAK.exe+0xB38310 in the Steam build
     /// </summary>
     public unsafe virtual void SetTickGroup(BmSDK.GameObject.ETickingGroup NewTickGroup)
     {
@@ -5144,7 +5245,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReattachComponent;
     /// <summary>
-    /// Function: ReattachComponent
+    /// Function: ReattachComponent<br/>
+    /// Native code at BatmanAK.exe+0xB66BB0 in the Steam build
     /// </summary>
     public unsafe virtual void ReattachComponent(BmSDK.Engine.ActorComponent ComponentToReattach)
     {
@@ -5166,7 +5268,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachComponent;
     /// <summary>
-    /// Function: DetachComponent
+    /// Function: DetachComponent<br/>
+    /// Native code at BatmanAK.exe+0xB66A90 in the Steam build
     /// </summary>
     public unsafe virtual void DetachComponent(BmSDK.Engine.ActorComponent ExComponent)
     {
@@ -5188,7 +5291,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponent;
     /// <summary>
-    /// Function: AttachComponent
+    /// Function: AttachComponent<br/>
+    /// Native code at BatmanAK.exe+0xB66970 in the Steam build
     /// </summary>
     public unsafe virtual void AttachComponent(BmSDK.Engine.ActorComponent NewComponent)
     {
@@ -5210,7 +5314,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnClock;
     /// <summary>
-    /// Function: UnClock
+    /// Function: UnClock<br/>
+    /// Native code at BatmanAK.exe+0xB38260 in the Steam build
     /// </summary>
     public unsafe virtual void UnClock(out float Time)
     {
@@ -5234,7 +5339,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Clock;
     /// <summary>
-    /// Function: Clock
+    /// Function: Clock<br/>
+    /// Native code at BatmanAK.exe+0xB381B0 in the Steam build
     /// </summary>
     public unsafe virtual void Clock(out float Time)
     {
@@ -5258,7 +5364,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysics;
     /// <summary>
-    /// Function: SetPhysics
+    /// Function: SetPhysics<br/>
+    /// Native code at BatmanAK.exe+0x9FFBA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPhysics(BmSDK.Engine.Actor.EPhysics newPhysics, bool WakePhysics = default)
     {
@@ -5281,7 +5388,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyOwnerSee;
     /// <summary>
-    /// Function: SetOnlyOwnerSee
+    /// Function: SetOnlyOwnerSee<br/>
+    /// Native code at BatmanAK.exe+0xB66850 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyOwnerSee(bool bNewOnlyOwnerSee)
     {
@@ -5303,7 +5411,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe virtual void SetHidden(bool bNewHidden)
     {
@@ -5325,7 +5434,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChartData;
     /// <summary>
-    /// Function: ChartData
+    /// Function: ChartData<br/>
+    /// Native code at BatmanAK.exe+0xBA3850 in the Steam build
     /// </summary>
     public unsafe virtual void ChartData(BmSDK.FStringArg DataName, float DataValue)
     {
@@ -5349,7 +5459,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FlushDebugStrings;
     /// <summary>
-    /// Function: FlushDebugStrings
+    /// Function: FlushDebugStrings<br/>
+    /// Native code at BatmanAK.exe+0xB38170 in the Steam build
     /// </summary>
     public unsafe static void FlushDebugStrings()
     {
@@ -5369,7 +5480,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugOrientedBox;
     /// <summary>
-    /// Function: DrawDebugOrientedBox
+    /// Function: DrawDebugOrientedBox<br/>
+    /// Native code at BatmanAK.exe+0xB37FD0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugOrientedBox(BmSDK.GameObject.FMatrix Transform, System.Numerics.Vector3 HalfExtents, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -5395,7 +5507,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugFrustrum;
     /// <summary>
-    /// Function: DrawDebugFrustrum
+    /// Function: DrawDebugFrustrum<br/>
+    /// Native code at BatmanAK.exe+0xB37E50 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugFrustrum(out BmSDK.GameObject.FMatrix FrustumToWorld, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -5420,7 +5533,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugString;
     /// <summary>
-    /// Function: DrawDebugString
+    /// Function: DrawDebugString<br/>
+    /// Native code at BatmanAK.exe+0xBA3650 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugString(System.Numerics.Vector3 TextLocation, BmSDK.FStringArg Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
     {
@@ -5446,7 +5560,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugSolidBox;
     /// <summary>
-    /// Function: DrawDebugSolidBox
+    /// Function: DrawDebugSolidBox<br/>
+    /// Native code at BatmanAK.exe+0xB37C90 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugSolidBox(System.Numerics.Vector3 Center, System.Numerics.Vector3 Extent, byte R, byte G, byte B, byte Opacity, bool bPersistentLines = default)
     {
@@ -5473,7 +5588,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugCone;
     /// <summary>
-    /// Function: DrawDebugCone
+    /// Function: DrawDebugCone<br/>
+    /// Native code at BatmanAK.exe+0xB66400 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCone(System.Numerics.Vector3 Origin, System.Numerics.Vector3 Direction, float Length, float AngleWidth, float AngleHeight, int NumSides, BmSDK.GameObject.FColor DrawColor, bool bPersistentLines = default)
     {
@@ -5501,7 +5617,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugCylinder;
     /// <summary>
-    /// Function: DrawDebugCylinder
+    /// Function: DrawDebugCylinder<br/>
+    /// Native code at BatmanAK.exe+0xB66080 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCylinder(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, float Radius, int Segments, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -5530,7 +5647,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugSphere;
     /// <summary>
-    /// Function: DrawDebugSphere
+    /// Function: DrawDebugSphere<br/>
+    /// Native code at BatmanAK.exe+0xB65D30 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugSphere(System.Numerics.Vector3 Center, float Radius, int Segments, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -5558,7 +5676,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugCoordinateSystem;
     /// <summary>
-    /// Function: DrawDebugCoordinateSystem
+    /// Function: DrawDebugCoordinateSystem<br/>
+    /// Native code at BatmanAK.exe+0xB65B60 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCoordinateSystem(System.Numerics.Vector3 AxisLoc, BmSDK.Rotator AxisRot, float Scale, bool bPersistentLines = default)
     {
@@ -5582,7 +5701,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugStar;
     /// <summary>
-    /// Function: DrawDebugStar
+    /// Function: DrawDebugStar<br/>
+    /// Native code at BatmanAK.exe+0xB65940 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugStar(System.Numerics.Vector3 Position, float Size, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -5608,7 +5728,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugBounds;
     /// <summary>
-    /// Function: DrawDebugBounds
+    /// Function: DrawDebugBounds<br/>
+    /// Native code at BatmanAK.exe+0xB37AC0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugBounds(System.Numerics.Vector3 AxisLoc, BmSDK.Rotator AxisRot, BmSDK.GameObject.FBox Bounds, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -5635,7 +5756,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugBox;
     /// <summary>
-    /// Function: DrawDebugBox
+    /// Function: DrawDebugBox<br/>
+    /// Native code at BatmanAK.exe+0xB378E0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugBox(System.Numerics.Vector3 Center, System.Numerics.Vector3 Extent, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -5662,7 +5784,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugPoint;
     /// <summary>
-    /// Function: DrawDebugPoint
+    /// Function: DrawDebugPoint<br/>
+    /// Native code at BatmanAK.exe+0xB65750 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugPoint(System.Numerics.Vector3 Position, float Size, BmSDK.GameObject.FLinearColor PointColor, bool bPersistentLines = default)
     {
@@ -5686,7 +5809,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DrawDebugLine;
     /// <summary>
-    /// Function: DrawDebugLine
+    /// Function: DrawDebugLine<br/>
+    /// Native code at BatmanAK.exe+0xB37700 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugLine(System.Numerics.Vector3 LineStart, System.Numerics.Vector3 LineEnd, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -5713,7 +5837,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FlushAllPersistentDebugLines;
     /// <summary>
-    /// Function: FlushAllPersistentDebugLines
+    /// Function: FlushAllPersistentDebugLines<br/>
+    /// Native code at BatmanAK.exe+0xB376C0 in the Steam build
     /// </summary>
     public unsafe static void FlushAllPersistentDebugLines()
     {
@@ -5733,7 +5858,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FlushPersistentDebugLines;
     /// <summary>
-    /// Function: FlushPersistentDebugLines
+    /// Function: FlushPersistentDebugLines<br/>
+    /// Native code at BatmanAK.exe+0xB37620 in the Steam build
     /// </summary>
     public unsafe static void FlushPersistentDebugLines(BmSDK.FName DebugName = default)
     {
@@ -5754,7 +5880,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetBasedPosition;
     /// <summary>
-    /// Function: GetBasedPosition
+    /// Function: GetBasedPosition<br/>
+    /// Native code at BatmanAK.exe+0xB37540 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetBasedPosition(BmSDK.Engine.Actor.FBasedPosition BP)
     {
@@ -5775,7 +5902,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetBasedPosition;
     /// <summary>
-    /// Function: SetBasedPosition
+    /// Function: SetBasedPosition<br/>
+    /// Native code at BatmanAK.exe+0xB37410 in the Steam build
     /// </summary>
     public unsafe static void SetBasedPosition(out BmSDK.Engine.Actor.FBasedPosition BP, System.Numerics.Vector3 pos, BmSDK.Engine.Actor ForcedBase = default)
     {
@@ -5800,7 +5928,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_BP2Vect;
     /// <summary>
-    /// Function: BP2Vect
+    /// Function: BP2Vect<br/>
+    /// Native code at BatmanAK.exe+0xB37330 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 BP2Vect(BmSDK.Engine.Actor.FBasedPosition BP)
     {
@@ -5821,7 +5950,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Vect2BP;
     /// <summary>
-    /// Function: Vect2BP
+    /// Function: Vect2BP<br/>
+    /// Native code at BatmanAK.exe+0xB37200 in the Steam build
     /// </summary>
     public unsafe static void Vect2BP(out BmSDK.Engine.Actor.FBasedPosition BP, System.Numerics.Vector3 pos, BmSDK.Engine.Actor ForcedBase = default)
     {
@@ -5846,7 +5976,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForcedInitialReplicatedProperty;
     /// <summary>
-    /// Function: SetForcedInitialReplicatedProperty
+    /// Function: SetForcedInitialReplicatedProperty<br/>
+    /// Native code at BatmanAK.exe+0xB65570 in the Steam build
     /// </summary>
     public unsafe virtual void SetForcedInitialReplicatedProperty(BmSDK.Property PropToReplicate, bool bAdd)
     {
@@ -5884,7 +6015,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAggregateBaseVelocity;
     /// <summary>
-    /// Function: GetAggregateBaseVelocity
+    /// Function: GetAggregateBaseVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB37150 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAggregateBaseVelocity(BmSDK.Engine.Actor TestBase = default)
     {
@@ -5906,7 +6038,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnedBy;
     /// <summary>
-    /// Function: IsOwnedBy
+    /// Function: IsOwnedBy<br/>
+    /// Native code at BatmanAK.exe+0x9BD640 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOwnedBy(BmSDK.Engine.Actor TestActor)
     {
@@ -5928,7 +6061,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBaseMost;
     /// <summary>
-    /// Function: GetBaseMost
+    /// Function: GetBaseMost<br/>
+    /// Native code at BatmanAK.exe+0xB37100 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetBaseMost()
     {
@@ -5949,7 +6083,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBasedOn;
     /// <summary>
-    /// Function: IsBasedOn
+    /// Function: IsBasedOn<br/>
+    /// Native code at BatmanAK.exe+0x9BD4E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBasedOn(BmSDK.Engine.Actor TestActor)
     {
@@ -5971,7 +6106,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForBaseBelow;
     /// <summary>
-    /// Function: SearchForBaseBelow
+    /// Function: SearchForBaseBelow<br/>
+    /// Native code at BatmanAK.exe+0xB653B0 in the Steam build
     /// </summary>
     public unsafe virtual void SearchForBaseBelow(float HeightBelow, out BmSDK.Engine.Actor NewBase, out System.Numerics.Vector3 HitNormal)
     {
@@ -5999,7 +6135,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBase;
     /// <summary>
-    /// Function: FindBase
+    /// Function: FindBase<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void FindBase()
     {
@@ -6020,7 +6157,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOwner;
     /// <summary>
-    /// Function: SetOwner
+    /// Function: SetOwner<br/>
+    /// Native code at BatmanAK.exe+0xB65290 in the Steam build
     /// </summary>
     public unsafe virtual void SetOwner(BmSDK.Engine.Actor NewOwner)
     {
@@ -6042,7 +6180,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBase;
     /// <summary>
-    /// Function: SetBase
+    /// Function: SetBase<br/>
+    /// Native code at BatmanAK.exe+0x9BBF30 in the Steam build
     /// </summary>
     public unsafe virtual void SetBase(BmSDK.Engine.Actor NewBase, System.Numerics.Vector3 NewFloor = default, BmSDK.Engine.SkeletalMeshComponent SkelComp = default, BmSDK.FName AttachName = default)
     {
@@ -6067,7 +6206,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTerminalVelocity;
     /// <summary>
-    /// Function: GetTerminalVelocity
+    /// Function: GetTerminalVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB370B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTerminalVelocity()
     {
@@ -6088,7 +6228,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AutonomousPhysics;
     /// <summary>
-    /// Function: AutonomousPhysics
+    /// Function: AutonomousPhysics<br/>
+    /// Native code at BatmanAK.exe+0xB65160 in the Steam build
     /// </summary>
     public unsafe virtual void AutonomousPhysics(float DeltaSeconds)
     {
@@ -6110,7 +6251,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveSmooth;
     /// <summary>
-    /// Function: MoveSmooth
+    /// Function: MoveSmooth<br/>
+    /// Native code at BatmanAK.exe+0xA14870 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveSmooth(System.Numerics.Vector3 Delta)
     {
@@ -6132,7 +6274,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_fixedTurn;
     /// <summary>
-    /// Function: fixedTurn
+    /// Function: fixedTurn<br/>
+    /// Native code at BatmanAK.exe+0xB64EC0 in the Steam build
     /// </summary>
     public unsafe virtual int fixedTurn(int Current, int Desired, int DeltaRate)
     {
@@ -6156,7 +6299,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHardAttach;
     /// <summary>
-    /// Function: SetHardAttach
+    /// Function: SetHardAttach<br/>
+    /// Native code at BatmanAK.exe+0x9BA570 in the Steam build
     /// </summary>
     public unsafe virtual void SetHardAttach(bool bNewHardAttach = default)
     {
@@ -6178,7 +6322,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRelativeLocation;
     /// <summary>
-    /// Function: SetRelativeLocation
+    /// Function: SetRelativeLocation<br/>
+    /// Native code at BatmanAK.exe+0xB37010 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRelativeLocation(System.Numerics.Vector3 NewLocation)
     {
@@ -6200,7 +6345,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRelativeRotation;
     /// <summary>
-    /// Function: SetRelativeRotation
+    /// Function: SetRelativeRotation<br/>
+    /// Native code at BatmanAK.exe+0xB36F70 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRelativeRotation(BmSDK.Rotator NewRotation)
     {
@@ -6222,7 +6368,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetZone;
     /// <summary>
-    /// Function: SetZone
+    /// Function: SetZone<br/>
+    /// Native code at BatmanAK.exe+0x9BC170 in the Steam build
     /// </summary>
     public unsafe virtual void SetZone(bool bForceRefresh)
     {
@@ -6244,7 +6391,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FarMoveActor;
     /// <summary>
-    /// Function: FarMoveActor
+    /// Function: FarMoveActor<br/>
+    /// Native code at BatmanAK.exe+0xB36DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool FarMoveActor(System.Numerics.Vector3 NewLocation, bool Test = default, bool NoCheck = default, bool AttachedMove = default)
     {
@@ -6269,7 +6417,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MovingWhichWay;
     /// <summary>
-    /// Function: MovingWhichWay
+    /// Function: MovingWhichWay<br/>
+    /// Native code at BatmanAK.exe+0xB36D30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EMoveDir MovingWhichWay(out float Amount)
     {
@@ -6293,7 +6442,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotation;
     /// <summary>
-    /// Function: SetRotation
+    /// Function: SetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB36C90 in the Steam build
     /// </summary>
     public unsafe virtual bool SetRotation(BmSDK.Rotator NewRotation)
     {
@@ -6315,7 +6465,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocation;
     /// <summary>
-    /// Function: SetLocation
+    /// Function: SetLocation<br/>
+    /// Native code at BatmanAK.exe+0xB36BF0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetLocation(System.Numerics.Vector3 NewLocation)
     {
@@ -6337,7 +6488,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Move;
     /// <summary>
-    /// Function: Move
+    /// Function: Move<br/>
+    /// Native code at BatmanAK.exe+0xB36B50 in the Steam build
     /// </summary>
     public unsafe virtual bool Move(System.Numerics.Vector3 Delta)
     {
@@ -6359,7 +6511,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionFilter;
     /// <summary>
-    /// Function: SetCollisionFilter
+    /// Function: SetCollisionFilter<br/>
+    /// Native code at BatmanAK.exe+0xB36AD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollisionFilter(BmSDK.Component.ECollisionFilter Filter)
     {
@@ -6381,7 +6534,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawScale3D;
     /// <summary>
-    /// Function: SetDrawScale3D
+    /// Function: SetDrawScale3D<br/>
+    /// Native code at BatmanAK.exe+0xB36A40 in the Steam build
     /// </summary>
     public unsafe virtual void SetDrawScale3D(System.Numerics.Vector3 NewScale3D)
     {
@@ -6403,7 +6557,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawScale;
     /// <summary>
-    /// Function: SetDrawScale
+    /// Function: SetDrawScale<br/>
+    /// Native code at BatmanAK.exe+0xB64D90 in the Steam build
     /// </summary>
     public unsafe virtual void SetDrawScale(float NewScale)
     {
@@ -6425,7 +6580,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionType;
     /// <summary>
-    /// Function: SetCollisionType
+    /// Function: SetCollisionType<br/>
+    /// Native code at BatmanAK.exe+0xB369C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollisionType(BmSDK.Engine.Actor.ECollisionType NewCollisionType)
     {
@@ -6447,7 +6603,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionSize;
     /// <summary>
-    /// Function: SetCollisionSize
+    /// Function: SetCollisionSize<br/>
+    /// Native code at BatmanAK.exe+0xB64B90 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollisionSize(float NewRadius, float NewHeight)
     {
@@ -6470,7 +6627,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollision;
     /// <summary>
-    /// Function: SetCollision
+    /// Function: SetCollision<br/>
+    /// Native code at BatmanAK.exe+0x9B9D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollision(bool bNewColActors = default, bool bNewBlockActors = default, bool bNewIgnoreEncroachers = default)
     {
@@ -6494,7 +6652,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAnim;
     /// <summary>
-    /// Function: FinishAnim
+    /// Function: FinishAnim<br/>
+    /// Native code at BatmanAK.exe+0xB64A20 in the Steam build
     /// </summary>
     public unsafe virtual void FinishAnim(BmSDK.Engine.AnimNodeSequence SeqNode, bool bFinishOnBlendOut = default)
     {
@@ -6517,7 +6676,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Sleep;
     /// <summary>
-    /// Function: Sleep
+    /// Function: Sleep<br/>
+    /// Native code at BatmanAK.exe+0xB648F0 in the Steam build
     /// </summary>
     public unsafe virtual void Sleep(float Seconds)
     {
@@ -6539,7 +6699,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommand;
     /// <summary>
-    /// Function: ConsoleCommand
+    /// Function: ConsoleCommand<br/>
+    /// Native code at BatmanAK.exe+0xBA34A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ConsoleCommand(BmSDK.FStringArg Command, bool bWriteToLog = default)
     {
@@ -6563,7 +6724,8 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateComponents;
     /// <summary>
-    /// Function: ForceUpdateComponents
+    /// Function: ForceUpdateComponents<br/>
+    /// Native code at BatmanAK.exe+0xB368E0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceUpdateComponents(bool bCollisionUpdate = default, bool bTransformOnly = default)
     {
@@ -9777,7 +9939,8 @@ public static class ActorStatics
 {
     private static BmSDK.Function __fn_GetScriptCallstackAsDetailThoughts;
     /// <summary>
-    /// Function: GetScriptCallstackAsDetailThoughts, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetScriptCallstackAsDetailThoughts, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBD560 in the Steam build
     /// </summary>
     public unsafe static BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> GetScriptCallstackAsDetailThoughts(this BmSDK.Engine.Actor self)
     {
@@ -9798,7 +9961,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_LogThoughtInternal;
     /// <summary>
-    /// Function: LogThoughtInternal, run on <paramref name="self"/> rather than the class default object
+    /// Function: LogThoughtInternal, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBD150 in the Steam build
     /// </summary>
     public unsafe static void LogThoughtInternal(this BmSDK.Engine.Actor self, BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FStringArg Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
     {
@@ -9825,7 +9989,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_GetPackageGuid;
     /// <summary>
-    /// Function: GetPackageGuid, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPackageGuid, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB68B60 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FGuid GetPackageGuid(this BmSDK.Engine.Actor self, BmSDK.FName PackageName)
     {
@@ -9847,7 +10012,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_FlushDebugStrings;
     /// <summary>
-    /// Function: FlushDebugStrings, run on <paramref name="self"/> rather than the class default object
+    /// Function: FlushDebugStrings, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB38170 in the Steam build
     /// </summary>
     public unsafe static void FlushDebugStrings(this BmSDK.Engine.Actor self)
     {
@@ -9868,7 +10034,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugOrientedBox;
     /// <summary>
-    /// Function: DrawDebugOrientedBox, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugOrientedBox, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37FD0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugOrientedBox(this BmSDK.Engine.Actor self, BmSDK.GameObject.FMatrix Transform, System.Numerics.Vector3 HalfExtents, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -9895,7 +10062,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugFrustrum;
     /// <summary>
-    /// Function: DrawDebugFrustrum, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugFrustrum, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37E50 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugFrustrum(this BmSDK.Engine.Actor self, out BmSDK.GameObject.FMatrix FrustumToWorld, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -9921,7 +10089,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugString;
     /// <summary>
-    /// Function: DrawDebugString, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA3650 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugString(this BmSDK.Engine.Actor self, System.Numerics.Vector3 TextLocation, BmSDK.FStringArg Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
     {
@@ -9948,7 +10117,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugSolidBox;
     /// <summary>
-    /// Function: DrawDebugSolidBox, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugSolidBox, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37C90 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugSolidBox(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Center, System.Numerics.Vector3 Extent, byte R, byte G, byte B, byte Opacity, bool bPersistentLines = default)
     {
@@ -9976,7 +10146,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugCone;
     /// <summary>
-    /// Function: DrawDebugCone, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugCone, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB66400 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCone(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Origin, System.Numerics.Vector3 Direction, float Length, float AngleWidth, float AngleHeight, int NumSides, BmSDK.GameObject.FColor DrawColor, bool bPersistentLines = default)
     {
@@ -10005,7 +10176,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugCylinder;
     /// <summary>
-    /// Function: DrawDebugCylinder, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugCylinder, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB66080 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCylinder(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, float Radius, int Segments, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -10035,7 +10207,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugSphere;
     /// <summary>
-    /// Function: DrawDebugSphere, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugSphere, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB65D30 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugSphere(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Center, float Radius, int Segments, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -10064,7 +10237,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugCoordinateSystem;
     /// <summary>
-    /// Function: DrawDebugCoordinateSystem, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugCoordinateSystem, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB65B60 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugCoordinateSystem(this BmSDK.Engine.Actor self, System.Numerics.Vector3 AxisLoc, BmSDK.Rotator AxisRot, float Scale, bool bPersistentLines = default)
     {
@@ -10089,7 +10263,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugStar;
     /// <summary>
-    /// Function: DrawDebugStar, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugStar, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB65940 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugStar(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Position, float Size, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -10116,7 +10291,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugBounds;
     /// <summary>
-    /// Function: DrawDebugBounds, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugBounds, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37AC0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugBounds(this BmSDK.Engine.Actor self, System.Numerics.Vector3 AxisLoc, BmSDK.Rotator AxisRot, BmSDK.GameObject.FBox Bounds, byte R, byte G, byte B, bool bPersistentLines = default)
     {
@@ -10144,7 +10320,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugBox;
     /// <summary>
-    /// Function: DrawDebugBox, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugBox, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB378E0 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugBox(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Center, System.Numerics.Vector3 Extent, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -10172,7 +10349,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugPoint;
     /// <summary>
-    /// Function: DrawDebugPoint, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugPoint, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB65750 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugPoint(this BmSDK.Engine.Actor self, System.Numerics.Vector3 Position, float Size, BmSDK.GameObject.FLinearColor PointColor, bool bPersistentLines = default)
     {
@@ -10197,7 +10375,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_DrawDebugLine;
     /// <summary>
-    /// Function: DrawDebugLine, run on <paramref name="self"/> rather than the class default object
+    /// Function: DrawDebugLine, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37700 in the Steam build
     /// </summary>
     public unsafe static void DrawDebugLine(this BmSDK.Engine.Actor self, System.Numerics.Vector3 LineStart, System.Numerics.Vector3 LineEnd, byte R, byte G, byte B, bool bPersistentLines = default, BmSDK.FName DebugName = default)
     {
@@ -10225,7 +10404,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_FlushAllPersistentDebugLines;
     /// <summary>
-    /// Function: FlushAllPersistentDebugLines, run on <paramref name="self"/> rather than the class default object
+    /// Function: FlushAllPersistentDebugLines, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB376C0 in the Steam build
     /// </summary>
     public unsafe static void FlushAllPersistentDebugLines(this BmSDK.Engine.Actor self)
     {
@@ -10246,7 +10426,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_FlushPersistentDebugLines;
     /// <summary>
-    /// Function: FlushPersistentDebugLines, run on <paramref name="self"/> rather than the class default object
+    /// Function: FlushPersistentDebugLines, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37620 in the Steam build
     /// </summary>
     public unsafe static void FlushPersistentDebugLines(this BmSDK.Engine.Actor self, BmSDK.FName DebugName = default)
     {
@@ -10268,7 +10449,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_GetBasedPosition;
     /// <summary>
-    /// Function: GetBasedPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetBasedPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37540 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetBasedPosition(this BmSDK.Engine.Actor self, BmSDK.Engine.Actor.FBasedPosition BP)
     {
@@ -10290,7 +10472,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_SetBasedPosition;
     /// <summary>
-    /// Function: SetBasedPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetBasedPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37410 in the Steam build
     /// </summary>
     public unsafe static void SetBasedPosition(this BmSDK.Engine.Actor self, out BmSDK.Engine.Actor.FBasedPosition BP, System.Numerics.Vector3 pos, BmSDK.Engine.Actor ForcedBase = default)
     {
@@ -10316,7 +10499,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_BP2Vect;
     /// <summary>
-    /// Function: BP2Vect, run on <paramref name="self"/> rather than the class default object
+    /// Function: BP2Vect, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37330 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 BP2Vect(this BmSDK.Engine.Actor self, BmSDK.Engine.Actor.FBasedPosition BP)
     {
@@ -10338,7 +10522,8 @@ public static class ActorStatics
 
     private static BmSDK.Function __fn_Vect2BP;
     /// <summary>
-    /// Function: Vect2BP, run on <paramref name="self"/> rather than the class default object
+    /// Function: Vect2BP, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB37200 in the Steam build
     /// </summary>
     public unsafe static void Vect2BP(this BmSDK.Engine.Actor self, out BmSDK.Engine.Actor.FBasedPosition BP, System.Numerics.Vector3 pos, BmSDK.Engine.Actor ForcedBase = default)
     {

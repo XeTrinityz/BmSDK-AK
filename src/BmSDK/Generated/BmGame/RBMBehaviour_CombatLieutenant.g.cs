@@ -227,7 +227,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceToGiveToPawn;
     /// <summary>
-    /// Function: GetForceToGiveToPawn
+    /// Function: GetForceToGiveToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FD6A0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
@@ -252,7 +253,8 @@ public partial class RBMBehaviour_CombatLieutenant : BmSDK.BmGame.RBMBehaviour_C
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovementForce;
     /// <summary>
-    /// Function: GetMovementForce
+    /// Function: GetMovementForce<br/>
+    /// Native code at BatmanAK.exe+0x489010 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 SourceLocation = default)
     {

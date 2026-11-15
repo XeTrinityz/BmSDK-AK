@@ -432,7 +432,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableHydraToBypassOnlineSubsystem;
     /// <summary>
-    /// Function: EnableHydraToBypassOnlineSubsystem
+    /// Function: EnableHydraToBypassOnlineSubsystem<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void EnableHydraToBypassOnlineSubsystem()
     {
@@ -453,7 +454,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeOptionsCopy;
     /// <summary>
-    /// Function: TakeOptionsCopy
+    /// Function: TakeOptionsCopy<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void TakeOptionsCopy()
     {
@@ -474,7 +476,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InvalidateMemorySave;
     /// <summary>
-    /// Function: InvalidateMemorySave
+    /// Function: InvalidateMemorySave<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void InvalidateMemorySave()
     {
@@ -495,7 +498,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAllSounds;
     /// <summary>
-    /// Function: KillAllSounds
+    /// Function: KillAllSounds<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void KillAllSounds()
     {
@@ -516,7 +520,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMoviesMenu;
     /// <summary>
-    /// Function: DoMoviesMenu
+    /// Function: DoMoviesMenu<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void DoMoviesMenu()
     {
@@ -537,7 +542,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoAllLevelsMenu;
     /// <summary>
-    /// Function: DoAllLevelsMenu
+    /// Function: DoAllLevelsMenu<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DoAllLevelsMenu()
     {
@@ -558,7 +564,8 @@ public partial class RLevelSelectMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushOpenHandles;
     /// <summary>
-    /// Function: FlushOpenHandles
+    /// Function: FlushOpenHandles<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void FlushOpenHandles()
     {

@@ -159,7 +159,8 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessFacebookRequest;
     /// <summary>
-    /// Function: ProcessFacebookRequest
+    /// Function: ProcessFacebookRequest<br/>
+    /// Native code at BatmanAK.exe+0x1054480 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessFacebookRequest(BmSDK.FStringArg Payload, int ResponseCode)
     {
@@ -199,7 +200,8 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Disconnect;
     /// <summary>
-    /// Function: Disconnect
+    /// Function: Disconnect<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe override void Disconnect()
     {
@@ -220,7 +222,8 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAuthorized;
     /// <summary>
-    /// Function: IsAuthorized
+    /// Function: IsAuthorized<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe override bool IsAuthorized()
     {
@@ -241,7 +244,8 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Authorize;
     /// <summary>
-    /// Function: Authorize
+    /// Function: Authorize<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe override bool Authorize()
     {
@@ -262,7 +266,8 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe override bool Init()
     {

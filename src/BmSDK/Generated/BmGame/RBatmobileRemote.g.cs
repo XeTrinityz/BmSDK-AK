@@ -94,7 +94,8 @@ public partial class RBatmobileRemote : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
-    /// Function: GetAutoTargetRotation
+    /// Function: GetAutoTargetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetAutoTargetRotation()
     {

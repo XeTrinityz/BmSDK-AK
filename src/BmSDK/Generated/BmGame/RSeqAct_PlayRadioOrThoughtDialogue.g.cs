@@ -164,7 +164,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLineFromMovieNotify;
     /// <summary>
-    /// Function: TriggerLineFromMovieNotify
+    /// Function: TriggerLineFromMovieNotify<br/>
+    /// Native code at BatmanAK.exe+0x46F550 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerLineFromMovieNotify()
     {
@@ -574,7 +575,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UndoAutoWaitForNotifies;
     /// <summary>
-    /// Function: UndoAutoWaitForNotifies
+    /// Function: UndoAutoWaitForNotifies<br/>
+    /// Native code at BatmanAK.exe+0x47FA70 in the Steam build
     /// </summary>
     public unsafe virtual void UndoAutoWaitForNotifies()
     {
@@ -624,7 +626,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMovieTypeConvo;
     /// <summary>
-    /// Function: IsMovieTypeConvo
+    /// Function: IsMovieTypeConvo<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe override bool IsMovieTypeConvo()
     {
@@ -645,7 +648,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMoviePlaying;
     /// <summary>
-    /// Function: IsMoviePlaying
+    /// Function: IsMoviePlaying<br/>
+    /// Native code at BatmanAK.exe+0x47F950 in the Steam build
     /// </summary>
     public unsafe override bool IsMoviePlaying()
     {
@@ -666,7 +670,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Function __fn_SearchForMovie_Static;
     /// <summary>
-    /// Function: SearchForMovie_Static
+    /// Function: SearchForMovie_Static<br/>
+    /// Native code at BatmanAK.exe+0x53EDB0 in the Steam build
     /// </summary>
     public unsafe static bool SearchForMovie_Static(BmSDK.FStringArg MovieName)
     {
@@ -688,7 +693,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForMovie;
     /// <summary>
-    /// Function: SearchForMovie
+    /// Function: SearchForMovie<br/>
+    /// Native code at BatmanAK.exe+0x53EB20 in the Steam build
     /// </summary>
     public unsafe override bool SearchForMovie(BmSDK.FStringArg MovieName)
     {
@@ -711,7 +717,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
-    /// Function: StartSpeechNative
+    /// Function: StartSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe override bool StartSpeechNative()
     {
@@ -732,7 +739,8 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartSpeech;
     /// <summary>
-    /// Function: TryStartSpeech
+    /// Function: TryStartSpeech<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe override bool TryStartSpeech()
     {
@@ -1247,7 +1255,8 @@ public static class RSeqAct_PlayRadioOrThoughtDialogueStatics
 {
     private static BmSDK.Function __fn_SearchForMovie_Static;
     /// <summary>
-    /// Function: SearchForMovie_Static, run on <paramref name="self"/> rather than the class default object
+    /// Function: SearchForMovie_Static, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x53EDB0 in the Steam build
     /// </summary>
     public unsafe static bool SearchForMovie_Static(this BmSDK.BmGame.RSeqAct_PlayRadioOrThoughtDialogue self, BmSDK.FStringArg MovieName)
     {

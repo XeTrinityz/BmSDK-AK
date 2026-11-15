@@ -153,7 +153,8 @@ public partial class RBMCombatCollisionProxy : BmSDK.Engine.Actor, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocation;
     /// <summary>
-    /// Function: UpdateLocation
+    /// Function: UpdateLocation<br/>
+    /// Native code at BatmanAK.exe+0x478F90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLocation(System.Numerics.Vector3 NewLocation)
     {

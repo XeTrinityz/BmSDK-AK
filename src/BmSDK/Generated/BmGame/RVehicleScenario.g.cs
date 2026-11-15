@@ -80,7 +80,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestAvailableSpawnPoint;
     /// <summary>
-    /// Function: GetNearestAvailableSpawnPoint
+    /// Function: GetNearestAvailableSpawnPoint<br/>
+    /// Native code at BatmanAK.exe+0x558250 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNearestAvailableSpawnPoint(out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot, out float RoadWidth, System.Numerics.Vector3 TestLoc, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 playerLoc, float MinDistanceFromPlayerLoc, out BmSDK.TArray<System.Numerics.Vector3> AvoidLoc, float MinDistanceFromAvoidLoc, bool ObeyExclusionZones, BmSDK.BmGame.RGameInfo.EDistrict SpawnInDistrict = default)
     {
@@ -118,7 +119,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DestroyVehicles;
     /// <summary>
-    /// Function: DestroyVehicles
+    /// Function: DestroyVehicles<br/>
+    /// Native code at BatmanAK.exe+0x566C90 in the Steam build
     /// </summary>
     public unsafe static bool DestroyVehicles(out BmSDK.TArray<BmSDK.BmGame.RVehicleNPC> VehiclesIn, System.Numerics.Vector3 CameraLoc, float MinDistanceFromCameraLoc, float MinTimeHidden)
     {
@@ -142,7 +144,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnScenarioVehicle;
     /// <summary>
-    /// Function: SpawnScenarioVehicle
+    /// Function: SpawnScenarioVehicle<br/>
+    /// Native code at BatmanAK.exe+0x566840 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleNPC SpawnScenarioVehicle(System.Numerics.Vector3 SpawnLoc, BmSDK.Rotator SpawnRot, float RoadWidth, BmSDK.TArray<BmSDK.Engine.Volume> BehaviourVolumes, BmSDK.BmGame.RPatrolPoint PatrolRoute, bool ObeyExclusionZones, int Index, BmSDK.TArray<BmSDK.BmGame.RVehicleNPC> SpawnedVehicles)
     {
@@ -171,7 +174,8 @@ public partial class RVehicleScenario : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnInstanceEx;
     /// <summary>
-    /// Function: SpawnInstanceEx
+    /// Function: SpawnInstanceEx<br/>
+    /// Native code at BatmanAK.exe+0x5661B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SpawnInstanceEx(System.Numerics.Vector3 SpawnLoc, BmSDK.Rotator SpawnRot, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 playerLoc, float MinDistanceFromPlayerLoc, out BmSDK.TArray<System.Numerics.Vector3> AvoidLoc, float MinDistanceFromAvoidLoc, out BmSDK.TArray<BmSDK.BmGame.RVehicleNPC> VehiclesOut, out BmSDK.TArray<BmSDK.Engine.Volume> BehaviourVolumes, BmSDK.BmGame.RPatrolPoint PatrolRoute, bool bForceSpawnLocation, bool ObeyExclusionZones, BmSDK.BmGame.RGameInfo.EDistrict SpawnInDistrict = default, BmSDK.BmGame.RVehicleNPC.EVehicleSpawnType SpawnType = default)
     {
@@ -451,7 +455,8 @@ public static class RVehicleScenarioStatics
 {
     private static BmSDK.Function __fn_DestroyVehicles;
     /// <summary>
-    /// Function: DestroyVehicles, run on <paramref name="self"/> rather than the class default object
+    /// Function: DestroyVehicles, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x566C90 in the Steam build
     /// </summary>
     public unsafe static bool DestroyVehicles(this BmSDK.BmGame.RVehicleScenario self, out BmSDK.TArray<BmSDK.BmGame.RVehicleNPC> VehiclesIn, System.Numerics.Vector3 CameraLoc, float MinDistanceFromCameraLoc, float MinTimeHidden)
     {

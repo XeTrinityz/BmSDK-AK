@@ -75,7 +75,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrestreamMipLevels;
     /// <summary>
-    /// Function: SetPrestreamMipLevels
+    /// Function: SetPrestreamMipLevels<br/>
+    /// Native code at BatmanAK.exe+0xB953C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPrestreamMipLevels(float ForceDuration, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
@@ -100,7 +101,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceMipLevelsToBeResident;
     /// <summary>
-    /// Function: SetForceMipLevelsToBeResident
+    /// Function: SetForceMipLevelsToBeResident<br/>
+    /// Native code at BatmanAK.exe+0xB950C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident, bool bForceMiplevelsToBeResidentValue, float ForceDuration, int CinematicTextureGroups = default)
     {
@@ -125,7 +127,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileVectorParameterValue;
     /// <summary>
-    /// Function: GetMobileVectorParameterValue
+    /// Function: GetMobileVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94F40 in the Steam build
     /// </summary>
     public unsafe virtual bool GetMobileVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor OutValue)
     {
@@ -150,7 +153,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileTextureParameterValue;
     /// <summary>
-    /// Function: GetMobileTextureParameterValue
+    /// Function: GetMobileTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94DC0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetMobileTextureParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Texture OutValue)
     {
@@ -175,7 +179,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileScalarParameterValue;
     /// <summary>
-    /// Function: GetMobileScalarParameterValue
+    /// Function: GetMobileScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94C40 in the Steam build
     /// </summary>
     public unsafe virtual bool GetMobileScalarParameterValue(BmSDK.FName ParameterName, out float OutValue)
     {
@@ -200,7 +205,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupName;
     /// <summary>
-    /// Function: GetGroupName
+    /// Function: GetGroupName<br/>
+    /// Native code at BatmanAK.exe+0xB94AC0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetGroupName(BmSDK.FName ParameterName, out BmSDK.FName GroupName)
     {
@@ -225,7 +231,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinearColorCurveParameterValue;
     /// <summary>
-    /// Function: GetLinearColorCurveParameterValue
+    /// Function: GetLinearColorCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBC740 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLinearColorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveLinearColor OutValue)
     {
@@ -248,7 +255,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinearColorParameterValue;
     /// <summary>
-    /// Function: GetLinearColorParameterValue
+    /// Function: GetLinearColorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94940 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLinearColorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor OutValue)
     {
@@ -273,7 +281,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorCurveParameterValue;
     /// <summary>
-    /// Function: GetVectorCurveParameterValue
+    /// Function: GetVectorCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBB640 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVectorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveVector OutValue)
     {
@@ -296,7 +305,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorParameterValue;
     /// <summary>
-    /// Function: GetVectorParameterValue
+    /// Function: GetVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB947C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor OutValue)
     {
@@ -321,7 +331,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTextureParameterValue;
     /// <summary>
-    /// Function: GetTextureParameterValue
+    /// Function: GetTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94640 in the Steam build
     /// </summary>
     public unsafe virtual bool GetTextureParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Texture OutValue)
     {
@@ -346,7 +357,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScalarCurveParameterValue;
     /// <summary>
-    /// Function: GetScalarCurveParameterValue
+    /// Function: GetScalarCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBB490 in the Steam build
     /// </summary>
     public unsafe virtual bool GetScalarCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveFloat OutValue)
     {
@@ -369,7 +381,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScalarParameterValue;
     /// <summary>
-    /// Function: GetScalarParameterValue
+    /// Function: GetScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB944C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetScalarParameterValue(BmSDK.FName ParameterName, out float OutValue)
     {
@@ -394,7 +407,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFontParameterValue;
     /// <summary>
-    /// Function: GetFontParameterValue
+    /// Function: GetFontParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94300 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFontParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Font OutFontValue, out int OutFontPage)
     {
@@ -422,7 +436,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetParameterDesc;
     /// <summary>
-    /// Function: GetParameterDesc
+    /// Function: GetParameterDesc<br/>
+    /// Native code at BatmanAK.exe+0xBAF1C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetParameterDesc(BmSDK.FName ParameterName, out BmSDK.FString OutDesc)
     {
@@ -445,7 +460,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalMaterial;
     /// <summary>
-    /// Function: GetPhysicalMaterial
+    /// Function: GetPhysicalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDFC020 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicalMaterial GetPhysicalMaterial()
     {
@@ -466,7 +482,8 @@ public partial class MaterialInterface : BmSDK.Engine.Surface, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
-    /// Function: GetMaterial
+    /// Function: GetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDFBFD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Material GetMaterial()
     {

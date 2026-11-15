@@ -80,7 +80,8 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAlpha;
     /// <summary>
-    /// Function: UpdateAlpha
+    /// Function: UpdateAlpha<br/>
+    /// Native code at BatmanAK.exe+0xB85EF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAlpha(BmSDK.Engine.Camera Camera, float DeltaTime)
     {
@@ -198,7 +199,8 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisabled;
     /// <summary>
-    /// Function: IsDisabled
+    /// Function: IsDisabled<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDisabled()
     {
@@ -219,7 +221,8 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyCamera;
     /// <summary>
-    /// Function: ModifyCamera
+    /// Function: ModifyCamera<br/>
+    /// Native code at BatmanAK.exe+0xB85CA0 in the Steam build
     /// </summary>
     public unsafe virtual bool ModifyCamera(BmSDK.Engine.Camera Camera, float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {

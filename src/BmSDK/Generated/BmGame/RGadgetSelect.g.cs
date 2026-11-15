@@ -300,7 +300,8 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSelectedGadget;
     /// <summary>
-    /// Function: UpdateSelectedGadget
+    /// Function: UpdateSelectedGadget<br/>
+    /// Native code at BatmanAK.exe+0x50BA90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSelectedGadget(float DeltaTime, bool bCanCycleGadgets)
     {

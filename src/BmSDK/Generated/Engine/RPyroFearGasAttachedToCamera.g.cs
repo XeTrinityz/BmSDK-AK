@@ -153,7 +153,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalMaxWorldHeight;
     /// <summary>
-    /// Function: GetLocalMaxWorldHeight
+    /// Function: GetLocalMaxWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB6C2E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetLocalMaxWorldHeight(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -177,7 +178,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMinWorldHeight;
     /// <summary>
-    /// Function: GetGlobalMinWorldHeight
+    /// Function: GetGlobalMinWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB3A5B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlobalMinWorldHeight()
     {
@@ -198,7 +200,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMaxWorldHeight;
     /// <summary>
-    /// Function: GetGlobalMaxWorldHeight
+    /// Function: GetGlobalMaxWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB3A560 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlobalMaxWorldHeight()
     {
@@ -219,7 +222,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDataMapAtPos;
     /// <summary>
-    /// Function: GetDataMapAtPos
+    /// Function: GetDataMapAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6C0B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector4 GetDataMapAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -243,7 +247,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMagnitudeAtPos;
     /// <summary>
-    /// Function: GetMagnitudeAtPos
+    /// Function: GetMagnitudeAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6BCA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetMagnitudeAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -267,7 +272,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasPosFastCheck;
     /// <summary>
-    /// Function: IsPyroFearGasPosFastCheck
+    /// Function: IsPyroFearGasPosFastCheck<br/>
+    /// Native code at BatmanAK.exe+0xB6BEB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPyroFearGasPosFastCheck(System.Numerics.Vector2 UV, int SizeX, int SizeY)
     {
@@ -291,7 +297,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasAtUV;
     /// <summary>
-    /// Function: IsPyroFearGasAtUV
+    /// Function: IsPyroFearGasAtUV<br/>
+    /// Native code at BatmanAK.exe+0xB6BEB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPyroFearGasAtUV(System.Numerics.Vector2 UV, int xOffset, int yOffset)
     {
@@ -315,7 +322,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPyroFearGasShoreDistAtPos;
     /// <summary>
-    /// Function: GetPyroFearGasShoreDistAtPos
+    /// Function: GetPyroFearGasShoreDistAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6BCA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetPyroFearGasShoreDistAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -339,7 +347,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasAtPos;
     /// <summary>
-    /// Function: IsPyroFearGasAtPos
+    /// Function: IsPyroFearGasAtPos<br/>
+    /// Native code at BatmanAK.exe+0xB6BA90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPyroFearGasAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
@@ -363,7 +372,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaveSample;
     /// <summary>
-    /// Function: GetWaveSample
+    /// Function: GetWaveSample<br/>
+    /// Native code at BatmanAK.exe+0xB6B880 in the Steam build
     /// </summary>
     public unsafe virtual float GetWaveSample(float U, float V)
     {
@@ -386,7 +396,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPyroFearGasHeightAtPosition;
     /// <summary>
-    /// Function: GetPyroFearGasHeightAtPosition
+    /// Function: GetPyroFearGasHeightAtPosition<br/>
+    /// Native code at BatmanAK.exe+0xB3A4C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 GetPyroFearGasHeightAtPosition(System.Numerics.Vector3 Position)
     {
@@ -408,7 +419,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopPlayerPyroFearGasEffect;
     /// <summary>
-    /// Function: StopPlayerPyroFearGasEffect
+    /// Function: StopPlayerPyroFearGasEffect<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void StopPlayerPyroFearGasEffect()
     {
@@ -429,7 +441,8 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerPyroFearGasEffect;
     /// <summary>
-    /// Function: UpdatePlayerPyroFearGasEffect
+    /// Function: UpdatePlayerPyroFearGasEffect<br/>
+    /// Native code at BatmanAK.exe+0x4D3260 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePlayerPyroFearGasEffect(float DeltaTime)
     {

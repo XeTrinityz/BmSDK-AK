@@ -166,7 +166,8 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraOverlays;
     /// <summary>
-    /// Function: ApplyCameraOverlays
+    /// Function: ApplyCameraOverlays<br/>
+    /// Native code at BatmanAK.exe+0x513B90 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyCameraOverlays(float DeltaTime)
     {
@@ -188,7 +189,8 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CorrectedAspectRatioFOV;
     /// <summary>
-    /// Function: CorrectedAspectRatioFOV
+    /// Function: CorrectedAspectRatioFOV<br/>
+    /// Native code at BatmanAK.exe+0x513A20 in the Steam build
     /// </summary>
     public unsafe virtual float CorrectedAspectRatioFOV(out float CorrectedFOV, BmSDK.BmGame.R3rdPersonCamera OwnerCam)
     {

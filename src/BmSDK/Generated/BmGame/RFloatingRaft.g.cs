@@ -80,7 +80,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMass;
     /// <summary>
-    /// Function: GetMass
+    /// Function: GetMass<br/>
+    /// Native code at BatmanAK.exe+0x4821E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetMass()
     {
@@ -101,7 +102,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAdjustedForceApplicationPointFromBasePos;
     /// <summary>
-    /// Function: GetAdjustedForceApplicationPointFromBasePos
+    /// Function: GetAdjustedForceApplicationPointFromBasePos<br/>
+    /// Native code at BatmanAK.exe+0x482130 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAdjustedForceApplicationPointFromBasePos(System.Numerics.Vector3 InBasePos)
     {
@@ -123,7 +125,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonTargetPos;
     /// <summary>
-    /// Function: GetHarpoonTargetPos
+    /// Function: GetHarpoonTargetPos<br/>
+    /// Native code at BatmanAK.exe+0x4E92B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHarpoonTargetPos(BmSDK.Engine.Actor TargettingActor, bool TargetAlreadyChosen)
     {
@@ -146,7 +149,8 @@ public partial class RFloatingRaft : BmSDK.BmGame.ROceanSMActor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWakeParticles;
     /// <summary>
-    /// Function: UpdateWakeParticles
+    /// Function: UpdateWakeParticles<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWakeParticles()
     {

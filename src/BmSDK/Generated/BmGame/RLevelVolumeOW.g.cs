@@ -80,7 +80,8 @@ public partial class RLevelVolumeOW : BmSDK.BmGame.RLevelVolume, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateStreaming;
     /// <summary>
-    /// Function: DeactivateStreaming
+    /// Function: DeactivateStreaming<br/>
+    /// Native code at BatmanAK.exe+0x46C620 in the Steam build
     /// </summary>
     public unsafe override void DeactivateStreaming()
     {
@@ -101,7 +102,8 @@ public partial class RLevelVolumeOW : BmSDK.BmGame.RLevelVolume, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateStreaming;
     /// <summary>
-    /// Function: ActivateStreaming
+    /// Function: ActivateStreaming<br/>
+    /// Native code at BatmanAK.exe+0x512400 in the Steam build
     /// </summary>
     public unsafe override void ActivateStreaming(bool LevelStart)
     {

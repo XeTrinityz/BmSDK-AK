@@ -124,7 +124,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValidAge;
     /// <summary>
-    /// Function: GetValidAge
+    /// Function: GetValidAge<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetValidAge()
     {
@@ -145,7 +146,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsCountryValid;
     /// <summary>
-    /// Function: GetIsCountryValid
+    /// Function: GetIsCountryValid<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsCountryValid()
     {
@@ -166,7 +168,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsAgeValid;
     /// <summary>
-    /// Function: GetIsAgeValid
+    /// Function: GetIsAgeValid<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsAgeValid()
     {
@@ -187,7 +190,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCountry;
     /// <summary>
-    /// Function: GetCountry
+    /// Function: GetCountry<br/>
+    /// Native code at BatmanAK.exe+0xBAAA60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetCountry()
     {
@@ -208,7 +212,8 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCountryCodeLookupIndex;
     /// <summary>
-    /// Function: GetCountryCodeLookupIndex
+    /// Function: GetCountryCodeLookupIndex<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe virtual int GetCountryCodeLookupIndex()
     {

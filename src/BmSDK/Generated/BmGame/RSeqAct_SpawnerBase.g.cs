@@ -89,7 +89,8 @@ public partial class RSeqAct_SpawnerBase : BmSDK.Engine.SequenceAction, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCharacterData;
     /// <summary>
-    /// Function: SetCharacterData
+    /// Function: SetCharacterData<br/>
+    /// Native code at BatmanAK.exe+0x561B80 in the Steam build
     /// </summary>
     public unsafe virtual void SetCharacterData(out int Slot, BmSDK.FName PlayableCharacterName, BmSDK.BmGame.RAddContentPlayerCharacter PlayableCharacter, BmSDK.BmGame.RAddContentPlayerCharacterMesh CharacterMesh)
     {
@@ -116,7 +117,8 @@ public partial class RSeqAct_SpawnerBase : BmSDK.Engine.SequenceAction, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreObjVar;
     /// <summary>
-    /// Function: StoreObjVar
+    /// Function: StoreObjVar<br/>
+    /// Native code at BatmanAK.exe+0x547F80 in the Steam build
     /// </summary>
     public unsafe virtual void StoreObjVar(BmSDK.FStringArg Ident, int Index, BmSDK.GameObject Obj)
     {

@@ -114,7 +114,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSearchDestination;
     /// <summary>
-    /// Function: GetSearchDestination
+    /// Function: GetSearchDestination<br/>
+    /// Native code at BatmanAK.exe+0x503A70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSearchDestination(System.Numerics.Vector3 StartPos, BmSDK.Engine.Volume RestrictToVol, out System.Numerics.Vector3 SearchPos)
     {
@@ -140,7 +141,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshLocationFromRailingPoints;
     /// <summary>
-    /// Function: GetNavMeshLocationFromRailingPoints
+    /// Function: GetNavMeshLocationFromRailingPoints<br/>
+    /// Native code at BatmanAK.exe+0x48BD20 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNavMeshLocationFromRailingPoints(System.Numerics.Vector3 CurrLocation, System.Numerics.Vector3 PointA, System.Numerics.Vector3 PointB, out System.Numerics.Vector3 NavMeshLocation)
     {
@@ -167,7 +169,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavHandleTrace;
     /// <summary>
-    /// Function: NavHandleTrace
+    /// Function: NavHandleTrace<br/>
+    /// Native code at BatmanAK.exe+0x48BB80 in the Steam build
     /// </summary>
     public unsafe virtual bool NavHandleTrace(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 HitLoc, out System.Numerics.Vector3 HitNorm)
     {
@@ -197,7 +200,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavHandlePointReachable;
     /// <summary>
-    /// Function: NavHandlePointReachable
+    /// Function: NavHandlePointReachable<br/>
+    /// Native code at BatmanAK.exe+0x48BA70 in the Steam build
     /// </summary>
     public unsafe virtual bool NavHandlePointReachable(System.Numerics.Vector3 EndLoc, System.Numerics.Vector3 StartLoc, System.Numerics.Vector3 Extent)
     {
@@ -344,7 +348,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveChaseLocationSearch;
     /// <summary>
-    /// Function: RemoveChaseLocationSearch
+    /// Function: RemoveChaseLocationSearch<br/>
+    /// Native code at BatmanAK.exe+0x503940 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveChaseLocationSearch(BmSDK.BmGame.RChaseLocationSearch OldSearch)
     {
@@ -452,7 +457,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveSearchRequest;
     /// <summary>
-    /// Function: RemoveSearchRequest
+    /// Function: RemoveSearchRequest<br/>
+    /// Native code at BatmanAK.exe+0x503810 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveSearchRequest(BmSDK.BmGame.RNavigationHandle OldNavHandle)
     {
@@ -474,7 +480,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSearchRequest;
     /// <summary>
-    /// Function: AddSearchRequest
+    /// Function: AddSearchRequest<br/>
+    /// Native code at BatmanAK.exe+0x5282A0 in the Steam build
     /// </summary>
     public unsafe virtual void AddSearchRequest(BmSDK.BmGame.RNavigationHandle NewNavHandle)
     {
@@ -540,7 +547,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInNavMesh;
     /// <summary>
-    /// Function: IsInNavMesh
+    /// Function: IsInNavMesh<br/>
+    /// Native code at BatmanAK.exe+0xB4F0E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInNavMesh(System.Numerics.Vector3 TestPoint)
     {
@@ -562,7 +570,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshExists;
     /// <summary>
-    /// Function: NavMeshExists
+    /// Function: NavMeshExists<br/>
+    /// Native code at BatmanAK.exe+0x48BA20 in the Steam build
     /// </summary>
     public unsafe virtual bool NavMeshExists()
     {
@@ -583,7 +592,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoPathShortening;
     /// <summary>
-    /// Function: CanDoPathShortening
+    /// Function: CanDoPathShortening<br/>
+    /// Native code at BatmanAK.exe+0xB78FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanDoPathShortening(BmSDK.BmGame.RNavigationHandle NavHandle)
     {
@@ -605,7 +615,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayPylonList;
     /// <summary>
-    /// Function: DisplayPylonList
+    /// Function: DisplayPylonList<br/>
+    /// Native code at BatmanAK.exe+0x48B9E0 in the Steam build
     /// </summary>
     public unsafe virtual void DisplayPylonList()
     {
@@ -626,7 +637,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_PostUpdate;
     /// <summary>
-    /// Function: Tick_PostUpdate
+    /// Function: Tick_PostUpdate<br/>
+    /// Native code at BatmanAK.exe+0x5036E0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick_PostUpdate(float DeltaTime)
     {
@@ -648,7 +660,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_DuringAsync;
     /// <summary>
-    /// Function: Tick_DuringAsync
+    /// Function: Tick_DuringAsync<br/>
+    /// Native code at BatmanAK.exe+0x519EC0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick_DuringAsync(float DeltaTime)
     {
@@ -670,7 +683,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_PreAsync;
     /// <summary>
-    /// Function: Tick_PreAsync
+    /// Function: Tick_PreAsync<br/>
+    /// Native code at BatmanAK.exe+0x5035B0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick_PreAsync(float DeltaTime)
     {
@@ -692,7 +706,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickQueuedkDOPRebuilds;
     /// <summary>
-    /// Function: TickQueuedkDOPRebuilds
+    /// Function: TickQueuedkDOPRebuilds<br/>
+    /// Native code at BatmanAK.exe+0x503480 in the Steam build
     /// </summary>
     public unsafe virtual void TickQueuedkDOPRebuilds(float DeltaTime)
     {
@@ -714,7 +729,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueuePylonForObstacleMeshkDOPRebuild;
     /// <summary>
-    /// Function: QueuePylonForObstacleMeshkDOPRebuild
+    /// Function: QueuePylonForObstacleMeshkDOPRebuild<br/>
+    /// Native code at BatmanAK.exe+0x503350 in the Steam build
     /// </summary>
     public unsafe virtual void QueuePylonForObstacleMeshkDOPRebuild(BmSDK.Engine.Pylon RebuildPylon)
     {
@@ -736,7 +752,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SyncOnNavMeshObstacleJob;
     /// <summary>
-    /// Function: SyncOnNavMeshObstacleJob
+    /// Function: SyncOnNavMeshObstacleJob<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void SyncOnNavMeshObstacleJob()
     {
@@ -757,7 +774,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyNavMeshJobInProgress;
     /// <summary>
-    /// Function: AnyNavMeshJobInProgress
+    /// Function: AnyNavMeshJobInProgress<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool AnyNavMeshJobInProgress()
     {
@@ -778,7 +796,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowHandleDebug;
     /// <summary>
-    /// Function: ShowHandleDebug
+    /// Function: ShowHandleDebug<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void ShowHandleDebug()
     {
@@ -799,7 +818,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnNavMeshPathConstraintToPool;
     /// <summary>
-    /// Function: ReturnNavMeshPathConstraintToPool
+    /// Function: ReturnNavMeshPathConstraintToPool<br/>
+    /// Native code at BatmanAK.exe+0x503220 in the Steam build
     /// </summary>
     public unsafe virtual void ReturnNavMeshPathConstraintToPool(BmSDK.Engine.NavMeshPathConstraint PathConstraint)
     {
@@ -821,7 +841,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnNavMeshPathGoalToPool;
     /// <summary>
-    /// Function: ReturnNavMeshPathGoalToPool
+    /// Function: ReturnNavMeshPathGoalToPool<br/>
+    /// Native code at BatmanAK.exe+0x5030F0 in the Steam build
     /// </summary>
     public unsafe virtual void ReturnNavMeshPathGoalToPool(BmSDK.Engine.NavMeshPathGoalEvaluator PathGoal)
     {
@@ -843,7 +864,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathConstraintFromPool;
     /// <summary>
-    /// Function: GetNavMeshPathConstraintFromPool
+    /// Function: GetNavMeshPathConstraintFromPool<br/>
+    /// Native code at BatmanAK.exe+0x502FB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathConstraint GetNavMeshPathConstraintFromPool(BmSDK.Class ConstraintClass)
     {
@@ -865,7 +887,8 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathGoalFromPool;
     /// <summary>
-    /// Function: GetNavMeshPathGoalFromPool
+    /// Function: GetNavMeshPathGoalFromPool<br/>
+    /// Native code at BatmanAK.exe+0x502E70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathGoalEvaluator GetNavMeshPathGoalFromPool(BmSDK.Class GoalClass)
     {

@@ -75,7 +75,8 @@ public partial class RBMCameraEmitter : BmSDK.Engine.REmitter, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocation;
     /// <summary>
-    /// Function: UpdateLocation
+    /// Function: UpdateLocation<br/>
+    /// Native code at BatmanAK.exe+0xB96D40 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLocation(out System.Numerics.Vector3 CamLoc, out BmSDK.Rotator CamRot, float CamFOVDeg)
     {

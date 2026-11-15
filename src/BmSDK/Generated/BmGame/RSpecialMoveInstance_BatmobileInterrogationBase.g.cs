@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_BatmobileInterrogationBase : BmSDK.BmG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRootPointFromBatmanAnimation;
     /// <summary>
-    /// Function: GetRootPointFromBatmanAnimation
+    /// Function: GetRootPointFromBatmanAnimation<br/>
+    /// Native code at BatmanAK.exe+0x50A3D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetRootPointFromBatmanAnimation(BmSDK.Engine.AnimSequence BatmanAnimation, float TimeInAnim, out System.Numerics.Vector3 RootLoc, out BmSDK.Rotator RootRot, int bUseRefPoint = default)
     {

@@ -80,7 +80,8 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocFileName;
     /// <summary>
-    /// Function: UpdateLocFileName
+    /// Function: UpdateLocFileName<br/>
+    /// Native code at BatmanAK.exe+0xBAA0A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString UpdateLocFileName(BmSDK.FStringArg Filename)
     {
@@ -163,7 +164,8 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessIniLocFile;
     /// <summary>
-    /// Function: ProcessIniLocFile
+    /// Function: ProcessIniLocFile<br/>
+    /// Native code at BatmanAK.exe+0xBB4530 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessIniLocFile(BmSDK.FStringArg Filename, bool bIsUnicode, out BmSDK.TArray<byte> FileData)
     {

@@ -124,7 +124,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerMoveTime;
     /// <summary>
-    /// Function: PlayerMoveTime
+    /// Function: PlayerMoveTime<br/>
+    /// Native code at BatmanAK.exe+0xB5C630 in the Steam build
     /// </summary>
     public unsafe virtual void PlayerMoveTime(float AddTimeSeconds)
     {
@@ -146,7 +147,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosePlayer;
     /// <summary>
-    /// Function: ClosePlayer
+    /// Function: ClosePlayer<br/>
+    /// Native code at BatmanAK.exe+0xB41010 in the Steam build
     /// </summary>
     public unsafe virtual void ClosePlayer()
     {
@@ -167,7 +169,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitPlayer;
     /// <summary>
-    /// Function: InitPlayer
+    /// Function: InitPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void InitPlayer()
     {
@@ -188,7 +191,8 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovieDuration;
     /// <summary>
-    /// Function: GetMovieDuration
+    /// Function: GetMovieDuration<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe virtual float GetMovieDuration()
     {

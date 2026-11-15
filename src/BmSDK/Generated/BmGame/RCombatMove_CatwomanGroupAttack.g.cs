@@ -281,7 +281,8 @@ public partial class RCombatMove_CatwomanGroupAttack : BmSDK.BmGame.RCombatMove_
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisarmDirection;
     /// <summary>
-    /// Function: DisarmDirection
+    /// Function: DisarmDirection<br/>
+    /// Native code at BatmanAK.exe+0x522620 in the Steam build
     /// </summary>
     public unsafe virtual void DisarmDirection(int DisarmDir)
     {

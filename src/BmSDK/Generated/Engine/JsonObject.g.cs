@@ -80,7 +80,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DecodeJson;
     /// <summary>
-    /// Function: DecodeJson
+    /// Function: DecodeJson<br/>
+    /// Native code at BatmanAK.exe+0xBAA8D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.JsonObject DecodeJson(BmSDK.FStringArg Str)
     {
@@ -102,7 +103,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EncodeJson;
     /// <summary>
-    /// Function: EncodeJson
+    /// Function: EncodeJson<br/>
+    /// Native code at BatmanAK.exe+0xBAA770 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString EncodeJson(BmSDK.Engine.JsonObject Root)
     {
@@ -174,7 +176,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringValue;
     /// <summary>
-    /// Function: SetStringValue
+    /// Function: SetStringValue<br/>
+    /// Native code at BatmanAK.exe+0xBAA560 in the Steam build
     /// </summary>
     public unsafe virtual void SetStringValue(BmSDK.FStringArg Key, BmSDK.FStringArg Value)
     {
@@ -199,7 +202,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObject;
     /// <summary>
-    /// Function: SetObject
+    /// Function: SetObject<br/>
+    /// Native code at BatmanAK.exe+0xBAA370 in the Steam build
     /// </summary>
     public unsafe virtual void SetObject(BmSDK.FStringArg Key, BmSDK.Engine.JsonObject Object)
     {
@@ -321,7 +325,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringValue;
     /// <summary>
-    /// Function: GetStringValue
+    /// Function: GetStringValue<br/>
+    /// Native code at BatmanAK.exe+0xBAA0A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringValue(BmSDK.FStringArg Key)
     {
@@ -344,7 +349,8 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObject;
     /// <summary>
-    /// Function: GetObject
+    /// Function: GetObject<br/>
+    /// Native code at BatmanAK.exe+0xBAA220 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.JsonObject GetObject(BmSDK.FStringArg Key)
     {
@@ -403,7 +409,8 @@ public static class JsonObjectStatics
 {
     private static BmSDK.Function __fn_DecodeJson;
     /// <summary>
-    /// Function: DecodeJson, run on <paramref name="self"/> rather than the class default object
+    /// Function: DecodeJson, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAA8D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.JsonObject DecodeJson(this BmSDK.Engine.JsonObject self, BmSDK.FStringArg Str)
     {
@@ -426,7 +433,8 @@ public static class JsonObjectStatics
 
     private static BmSDK.Function __fn_EncodeJson;
     /// <summary>
-    /// Function: EncodeJson, run on <paramref name="self"/> rather than the class default object
+    /// Function: EncodeJson, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBAA770 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString EncodeJson(this BmSDK.Engine.JsonObject self, BmSDK.Engine.JsonObject Root)
     {

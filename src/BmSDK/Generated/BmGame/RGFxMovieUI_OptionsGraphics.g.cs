@@ -514,7 +514,8 @@ public partial class RGFxMovieUI_OptionsGraphics : BmSDK.BmGame.RGFxMovieUI, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolutionLabelNames;
     /// <summary>
-    /// Function: GetResolutionLabelNames
+    /// Function: GetResolutionLabelNames<br/>
+    /// Native code at BatmanAK.exe+0x471740 in the Steam build
     /// </summary>
     public unsafe virtual bool GetResolutionLabelNames()
     {
@@ -535,7 +536,8 @@ public partial class RGFxMovieUI_OptionsGraphics : BmSDK.BmGame.RGFxMovieUI, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplySelectedOptions;
     /// <summary>
-    /// Function: ApplySelectedOptions
+    /// Function: ApplySelectedOptions<br/>
+    /// Native code at BatmanAK.exe+0x498500 in the Steam build
     /// </summary>
     public unsafe virtual void ApplySelectedOptions()
     {

@@ -155,7 +155,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TrackPostImpact;
     /// <summary>
-    /// Function: TrackPostImpact
+    /// Function: TrackPostImpact<br/>
+    /// Native code at BatmanAK.exe+0x513F20 in the Steam build
     /// </summary>
     public unsafe virtual void TrackPostImpact(System.Numerics.Vector3 ActorLocation, float DeltaTime)
     {
@@ -237,7 +238,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForIntersectingCollision;
     /// <summary>
-    /// Function: CheckForIntersectingCollision
+    /// Function: CheckForIntersectingCollision<br/>
+    /// Native code at BatmanAK.exe+0x495760 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForIntersectingCollision()
     {
@@ -351,7 +353,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFlipAnimation;
     /// <summary>
-    /// Function: PlayFlipAnimation
+    /// Function: PlayFlipAnimation<br/>
+    /// Native code at BatmanAK.exe+0x513DF0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayFlipAnimation(float Position)
     {
@@ -373,7 +376,8 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrackingPosition;
     /// <summary>
-    /// Function: UpdateTrackingPosition
+    /// Function: UpdateTrackingPosition<br/>
+    /// Native code at BatmanAK.exe+0x513CC0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTrackingPosition(float DeltaTime)
     {

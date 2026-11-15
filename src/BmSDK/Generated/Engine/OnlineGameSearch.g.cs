@@ -80,7 +80,8 @@ public partial class OnlineGameSearch : BmSDK.Engine.Settings, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SortSearchResults;
     /// <summary>
-    /// Function: SortSearchResults
+    /// Function: SortSearchResults<br/>
+    /// Native code at BatmanAK.exe+0x46F840 in the Steam build
     /// </summary>
     public unsafe virtual void SortSearchResults()
     {

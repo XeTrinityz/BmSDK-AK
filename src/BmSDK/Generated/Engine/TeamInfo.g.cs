@@ -80,7 +80,8 @@ public partial class TeamInfo : BmSDK.Engine.ReplicationInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe override byte GetTeamNum()
     {

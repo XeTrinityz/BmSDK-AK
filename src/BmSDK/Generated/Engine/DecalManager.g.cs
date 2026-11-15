@@ -186,7 +186,8 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AreDynamicDecalsEnabled;
     /// <summary>
-    /// Function: AreDynamicDecalsEnabled
+    /// Function: AreDynamicDecalsEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB2C7F0 in the Steam build
     /// </summary>
     public unsafe static bool AreDynamicDecalsEnabled()
     {
@@ -301,7 +302,8 @@ public static class DecalManagerStatics
 {
     private static BmSDK.Function __fn_AreDynamicDecalsEnabled;
     /// <summary>
-    /// Function: AreDynamicDecalsEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: AreDynamicDecalsEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2C7F0 in the Steam build
     /// </summary>
     public unsafe static bool AreDynamicDecalsEnabled(this BmSDK.Engine.DecalManager self)
     {

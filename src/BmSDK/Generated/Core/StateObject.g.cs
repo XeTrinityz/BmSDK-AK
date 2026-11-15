@@ -75,7 +75,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Disable;
     /// <summary>
-    /// Function: Disable
+    /// Function: Disable<br/>
+    /// Native code at BatmanAK.exe+0xF8F890 in the Steam build
     /// </summary>
     public unsafe virtual void Disable(BmSDK.FName ProbeFunc)
     {
@@ -97,7 +98,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Enable;
     /// <summary>
-    /// Function: Enable
+    /// Function: Enable<br/>
+    /// Native code at BatmanAK.exe+0xF8F6E0 in the Steam build
     /// </summary>
     public unsafe virtual void Enable(BmSDK.FName ProbeFunc)
     {
@@ -205,7 +207,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpStateStack;
     /// <summary>
-    /// Function: DumpStateStack
+    /// Function: DumpStateStack<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void DumpStateStack()
     {
@@ -226,7 +229,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopState;
     /// <summary>
-    /// Function: PopState
+    /// Function: PopState<br/>
+    /// Native code at BatmanAK.exe+0xF97330 in the Steam build
     /// </summary>
     public unsafe virtual void PopState(bool bPopAll = default)
     {
@@ -248,7 +252,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PushState;
     /// <summary>
-    /// Function: PushState
+    /// Function: PushState<br/>
+    /// Native code at BatmanAK.exe+0xF8F560 in the Steam build
     /// </summary>
     public unsafe virtual void PushState(BmSDK.FName NewState, BmSDK.FName NewLabel = default)
     {
@@ -271,7 +276,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStateName;
     /// <summary>
-    /// Function: GetStateName
+    /// Function: GetStateName<br/>
+    /// Native code at BatmanAK.exe+0xF88BC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetStateName()
     {
@@ -292,7 +298,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChildState;
     /// <summary>
-    /// Function: IsChildState
+    /// Function: IsChildState<br/>
+    /// Native code at BatmanAK.exe+0xF889A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChildState(BmSDK.FName TestState, BmSDK.FName TestParentState)
     {
@@ -315,7 +322,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInState;
     /// <summary>
-    /// Function: IsInState
+    /// Function: IsInState<br/>
+    /// Native code at BatmanAK.exe+0xF88830 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInState(BmSDK.FName TestState, bool bTestStateStack = default)
     {
@@ -338,7 +346,8 @@ public partial class StateObject : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoState;
     /// <summary>
-    /// Function: GotoState
+    /// Function: GotoState<br/>
+    /// Native code at BatmanAK.exe+0xF8F080 in the Steam build
     /// </summary>
     public unsafe virtual void GotoState(BmSDK.FName NewState, BmSDK.FName Label = default, bool bForceEvents = default, bool bKeepStack = default)
     {

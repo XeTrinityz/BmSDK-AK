@@ -80,7 +80,8 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StringToHash;
     /// <summary>
-    /// Function: StringToHash
+    /// Function: StringToHash<br/>
+    /// Native code at BatmanAK.exe+0xBA0ED0 in the Steam build
     /// </summary>
     public unsafe static int StringToHash(BmSDK.FStringArg strToHash)
     {
@@ -102,7 +103,8 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_HashToString;
     /// <summary>
-    /// Function: HashToString
+    /// Function: HashToString<br/>
+    /// Native code at BatmanAK.exe+0xBA0D70 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString HashToString(int hashToLookup)
     {
@@ -123,7 +125,8 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHashString;
     /// <summary>
-    /// Function: GetHashString
+    /// Function: GetHashString<br/>
+    /// Native code at BatmanAK.exe+0xBA0CF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetHashString()
     {
@@ -144,7 +147,8 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHashValue;
     /// <summary>
-    /// Function: GetHashValue
+    /// Function: GetHashValue<br/>
+    /// Native code at BatmanAK.exe+0xB34930 in the Steam build
     /// </summary>
     public unsafe virtual int GetHashValue()
     {
@@ -189,7 +193,8 @@ public static class AkHashStatics
 {
     private static BmSDK.Function __fn_StringToHash;
     /// <summary>
-    /// Function: StringToHash, run on <paramref name="self"/> rather than the class default object
+    /// Function: StringToHash, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0ED0 in the Steam build
     /// </summary>
     public unsafe static int StringToHash(this BmSDK.Engine.AkHash self, BmSDK.FStringArg strToHash)
     {
@@ -212,7 +217,8 @@ public static class AkHashStatics
 
     private static BmSDK.Function __fn_HashToString;
     /// <summary>
-    /// Function: HashToString, run on <paramref name="self"/> rather than the class default object
+    /// Function: HashToString, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0D70 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString HashToString(this BmSDK.Engine.AkHash self, int hashToLookup)
     {

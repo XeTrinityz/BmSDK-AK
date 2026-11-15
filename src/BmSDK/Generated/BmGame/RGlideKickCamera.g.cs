@@ -80,7 +80,8 @@ public partial class RGlideKickCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCamera;
     /// <summary>
-    /// Function: UpdateCamera
+    /// Function: UpdateCamera<br/>
+    /// Native code at BatmanAK.exe+0x514B10 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCamera(float DeltaTime)
     {

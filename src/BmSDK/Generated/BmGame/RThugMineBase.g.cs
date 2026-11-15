@@ -152,7 +152,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDangerEffectsNative;
     /// <summary>
-    /// Function: SetDangerEffectsNative
+    /// Function: SetDangerEffectsNative<br/>
+    /// Native code at BatmanAK.exe+0x511390 in the Steam build
     /// </summary>
     public unsafe virtual void SetDangerEffectsNative(float NewSpeed)
     {
@@ -174,7 +175,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrimedEffects;
     /// <summary>
-    /// Function: SetPrimedEffects
+    /// Function: SetPrimedEffects<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void SetPrimedEffects()
     {
@@ -195,7 +197,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisarmedEffects;
     /// <summary>
-    /// Function: SetDisarmedEffects
+    /// Function: SetDisarmedEffects<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisarmedEffects()
     {
@@ -216,7 +219,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiddlerProximityTimers;
     /// <summary>
-    /// Function: UpdateRiddlerProximityTimers
+    /// Function: UpdateRiddlerProximityTimers<br/>
+    /// Native code at BatmanAK.exe+0x513B90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRiddlerProximityTimers(float DeltaTime)
     {
@@ -238,7 +242,8 @@ public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptab
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateProximityTimers;
     /// <summary>
-    /// Function: UpdateProximityTimers
+    /// Function: UpdateProximityTimers<br/>
+    /// Native code at BatmanAK.exe+0x4B1610 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateProximityTimers(float DeltaTime, bool bCheckThugs)
     {

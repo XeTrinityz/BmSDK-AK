@@ -110,7 +110,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
-    /// Function: IsStaticForFloorCorrection
+    /// Function: IsStaticForFloorCorrection<br/>
+    /// Native code at BatmanAK.exe+0x46A620 in the Steam build
     /// </summary>
     public unsafe override bool IsStaticForFloorCorrection()
     {
@@ -217,7 +218,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptReformToInitialState;
     /// <summary>
-    /// Function: ScriptReformToInitialState
+    /// Function: ScriptReformToInitialState<br/>
+    /// Native code at BatmanAK.exe+0x489DB0 in the Steam build
     /// </summary>
     public unsafe virtual void ScriptReformToInitialState()
     {
@@ -262,7 +264,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveWhoosh;
     /// <summary>
-    /// Function: RemoveWhoosh
+    /// Function: RemoveWhoosh<br/>
+    /// Native code at BatmanAK.exe+0x480D70 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveWhoosh()
     {
@@ -283,7 +286,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddWhoosh;
     /// <summary>
-    /// Function: AddWhoosh
+    /// Function: AddWhoosh<br/>
+    /// Native code at BatmanAK.exe+0x489D20 in the Steam build
     /// </summary>
     public unsafe virtual void AddWhoosh()
     {
@@ -304,7 +308,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RebuildSpecialNavEdges;
     /// <summary>
-    /// Function: RebuildSpecialNavEdges
+    /// Function: RebuildSpecialNavEdges<br/>
+    /// Native code at BatmanAK.exe+0x480D30 in the Steam build
     /// </summary>
     public unsafe virtual void RebuildSpecialNavEdges()
     {
@@ -648,7 +653,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowBreakOnAnything;
     /// <summary>
-    /// Function: AllowBreakOnAnything
+    /// Function: AllowBreakOnAnything<br/>
+    /// Native code at BatmanAK.exe+0x48E300 in the Steam build
     /// </summary>
     public unsafe virtual void AllowBreakOnAnything()
     {
@@ -669,7 +675,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
@@ -691,7 +698,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDamagedForTheFirstTimeInCurrentStage;
     /// <summary>
-    /// Function: OnDamagedForTheFirstTimeInCurrentStage
+    /// Function: OnDamagedForTheFirstTimeInCurrentStage<br/>
+    /// Native code at BatmanAK.exe+0x4E6340 in the Steam build
     /// </summary>
     public unsafe virtual void OnDamagedForTheFirstTimeInCurrentStage(System.Numerics.Vector3 DamageDirection, System.Numerics.Vector3 DamageCauserPointVelocity, BmSDK.Engine.Actor DamageCauser)
     {
@@ -715,7 +723,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderNavMeshDebug;
     /// <summary>
-    /// Function: RenderNavMeshDebug
+    /// Function: RenderNavMeshDebug<br/>
+    /// Native code at BatmanAK.exe+0x480CF0 in the Steam build
     /// </summary>
     public unsafe virtual void RenderNavMeshDebug()
     {
@@ -736,7 +745,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndGangInteraction;
     /// <summary>
-    /// Function: EndGangInteraction
+    /// Function: EndGangInteraction<br/>
+    /// Native code at BatmanAK.exe+0x480CB0 in the Steam build
     /// </summary>
     public unsafe virtual void EndGangInteraction()
     {
@@ -757,7 +767,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginGangInteraction;
     /// <summary>
-    /// Function: BeginGangInteraction
+    /// Function: BeginGangInteraction<br/>
+    /// Native code at BatmanAK.exe+0x488280 in the Steam build
     /// </summary>
     public unsafe virtual void BeginGangInteraction()
     {
@@ -778,7 +789,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffDecorationMesh;
     /// <summary>
-    /// Function: BreakOffDecorationMesh
+    /// Function: BreakOffDecorationMesh<br/>
+    /// Native code at BatmanAK.exe+0x46C660 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffDecorationMesh()
     {
@@ -799,7 +811,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheFractureEffects;
     /// <summary>
-    /// Function: CacheFractureEffects
+    /// Function: CacheFractureEffects<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe override void CacheFractureEffects()
     {
@@ -820,7 +833,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyRadiusDamageToNearbyRigidBodies;
     /// <summary>
-    /// Function: ApplyRadiusDamageToNearbyRigidBodies
+    /// Function: ApplyRadiusDamageToNearbyRigidBodies<br/>
+    /// Native code at BatmanAK.exe+0x4E5E90 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyRadiusDamageToNearbyRigidBodies(System.Numerics.Vector3 Position, float Radius, float Momentum, BmSDK.Engine.Actor DamageCauser, bool bFullDamage, float FalloffExponent)
     {
@@ -847,7 +861,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace;
     /// <summary>
-    /// Function: GetBoundingBoxForNavMeshObstacleInWorldSpace
+    /// Function: GetBoundingBoxForNavMeshObstacleInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x480BC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetBoundingBoxForNavMeshObstacleInWorldSpace(out BmSDK.GameObject.FMatrix OutObstacleBoxWorldTransform, out System.Numerics.Vector3 OutObstacleBoxExtents)
     {
@@ -872,7 +887,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHighestPointOnBoundsInWorldSpace;
     /// <summary>
-    /// Function: GetHighestPointOnBoundsInWorldSpace
+    /// Function: GetHighestPointOnBoundsInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x480B60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHighestPointOnBoundsInWorldSpace()
     {
@@ -893,7 +909,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLowestPointOnBoundsInWorldSpace;
     /// <summary>
-    /// Function: GetLowestPointOnBoundsInWorldSpace
+    /// Function: GetLowestPointOnBoundsInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x48DFD0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLowestPointOnBoundsInWorldSpace()
     {
@@ -914,7 +931,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCanTakeDamage;
     /// <summary>
-    /// Function: SetCanTakeDamage
+    /// Function: SetCanTakeDamage<br/>
+    /// Native code at BatmanAK.exe+0x4E5CA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCanTakeDamage(bool bCanTakeImpactDamage, bool bCanTakeWeaponDamage)
     {
@@ -937,7 +955,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseNavMeshObstacle;
     /// <summary>
-    /// Function: InitialiseNavMeshObstacle
+    /// Function: InitialiseNavMeshObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4948D0 in the Steam build
     /// </summary>
     public unsafe virtual void InitialiseNavMeshObstacle()
     {
@@ -958,7 +977,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TerminatePhysics;
     /// <summary>
-    /// Function: TerminatePhysics
+    /// Function: TerminatePhysics<br/>
+    /// Native code at BatmanAK.exe+0x46F040 in the Steam build
     /// </summary>
     public unsafe virtual void TerminatePhysics()
     {
@@ -979,7 +999,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -1001,7 +1022,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
-    /// Function: ForceObstaclePolysOff
+    /// Function: ForceObstaclePolysOff<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
@@ -1022,7 +1044,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
-    /// Function: ForceObstaclePolysOn
+    /// Function: ForceObstaclePolysOn<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
@@ -1043,7 +1066,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
-    /// Function: ClearNavMeshEdgeCosts
+    /// Function: ClearNavMeshEdgeCosts<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
@@ -1064,7 +1088,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearActorRefs;
     /// <summary>
-    /// Function: ClearActorRefs
+    /// Function: ClearActorRefs<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void ClearActorRefs()
     {
@@ -1085,7 +1110,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x480AC0 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstat = default)
     {
@@ -1107,7 +1133,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -1128,7 +1155,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHealth;
     /// <summary>
-    /// Function: SetHealth
+    /// Function: SetHealth<br/>
+    /// Native code at BatmanAK.exe+0x4E5B20 in the Steam build
     /// </summary>
     public unsafe virtual float SetHealth(float NewHealth, bool Deferred = default)
     {
@@ -1151,7 +1179,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageStage;
     /// <summary>
-    /// Function: SetDamageStage
+    /// Function: SetDamageStage<br/>
+    /// Native code at BatmanAK.exe+0x4E5A00 in the Steam build
     /// </summary>
     public unsafe virtual void SetDamageStage(int Stage)
     {
@@ -1173,7 +1202,8 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4E58C0 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterWithNavMesh(bool bRegister)
     {

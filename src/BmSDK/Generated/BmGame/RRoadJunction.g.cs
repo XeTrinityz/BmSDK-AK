@@ -110,7 +110,8 @@ public partial class RRoadJunction : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisplayLines;
     /// <summary>
-    /// Function: UpdateDisplayLines
+    /// Function: UpdateDisplayLines<br/>
+    /// Native code at BatmanAK.exe+0x484830 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDisplayLines()
     {

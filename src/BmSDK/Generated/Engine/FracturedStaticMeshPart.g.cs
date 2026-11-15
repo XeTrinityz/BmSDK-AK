@@ -161,7 +161,8 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecyclePart;
     /// <summary>
-    /// Function: RecyclePart
+    /// Function: RecyclePart<br/>
+    /// Native code at BatmanAK.exe+0xB4D840 in the Steam build
     /// </summary>
     public unsafe virtual void RecyclePart(bool bAddToFreePool)
     {
@@ -183,7 +184,8 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialize;
     /// <summary>
-    /// Function: Initialize
+    /// Function: Initialize<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void Initialize()
     {

@@ -101,7 +101,8 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateEditorComponents;
     /// <summary>
-    /// Function: UpdateEditorComponents
+    /// Function: UpdateEditorComponents<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateEditorComponents()
     {
@@ -122,7 +123,8 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForThugsScaring;
     /// <summary>
-    /// Function: CheckForThugsScaring
+    /// Function: CheckForThugsScaring<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForThugsScaring()
     {
@@ -143,7 +145,8 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestVisibleSkelMesh;
     /// <summary>
-    /// Function: FindClosestVisibleSkelMesh
+    /// Function: FindClosestVisibleSkelMesh<br/>
+    /// Native code at BatmanAK.exe+0x4A9960 in the Steam build
     /// </summary>
     public unsafe virtual bool FindClosestVisibleSkelMesh(System.Numerics.Vector3 TestLoc, float Range, out System.Numerics.Vector3 CrowLoc)
     {
@@ -169,7 +172,8 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FindClosestCrowWithinRange;
     /// <summary>
-    /// Function: FindClosestCrowWithinRange
+    /// Function: FindClosestCrowWithinRange<br/>
+    /// Native code at BatmanAK.exe+0x59B440 in the Steam build
     /// </summary>
     public unsafe static bool FindClosestCrowWithinRange(System.Numerics.Vector3 TestLoc, float Range, out System.Numerics.Vector3 CrowLoc, out BmSDK.BmGame.RCrowsBase Crow, bool IgnoreFlying, bool IgnoreIdle)
     {
@@ -321,7 +325,8 @@ public static class RCrowsBaseStatics
 {
     private static BmSDK.Function __fn_FindClosestCrowWithinRange;
     /// <summary>
-    /// Function: FindClosestCrowWithinRange, run on <paramref name="self"/> rather than the class default object
+    /// Function: FindClosestCrowWithinRange, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x59B440 in the Steam build
     /// </summary>
     public unsafe static bool FindClosestCrowWithinRange(this BmSDK.BmGame.RCrowsBase self, System.Numerics.Vector3 TestLoc, float Range, out System.Numerics.Vector3 CrowLoc, out BmSDK.BmGame.RCrowsBase Crow, bool IgnoreFlying, bool IgnoreIdle)
     {

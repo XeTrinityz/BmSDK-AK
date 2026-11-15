@@ -94,7 +94,8 @@ public partial class SeqAct_WaitForLevelsVisible : BmSDK.Engine.SeqAct_Latent, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLevelsVisible;
     /// <summary>
-    /// Function: CheckLevelsVisible
+    /// Function: CheckLevelsVisible<br/>
+    /// Native code at BatmanAK.exe+0xB516D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLevelsVisible()
     {

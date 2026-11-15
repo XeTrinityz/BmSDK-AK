@@ -90,7 +90,8 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShouldKnockHelmetOff;
     /// <summary>
-    /// Function: GetShouldKnockHelmetOff
+    /// Function: GetShouldKnockHelmetOff<br/>
+    /// Native code at BatmanAK.exe+0x50F620 in the Steam build
     /// </summary>
     public unsafe virtual bool GetShouldKnockHelmetOff(BmSDK.FName BoneName)
     {
@@ -112,7 +113,8 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWritheAnimName;
     /// <summary>
-    /// Function: GetWritheAnimName
+    /// Function: GetWritheAnimName<br/>
+    /// Native code at BatmanAK.exe+0x50F4D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetWritheAnimName(BmSDK.FName BoneName)
     {
@@ -134,7 +136,8 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireGunHitResult;
     /// <summary>
-    /// Function: CalculateFireGunHitResult
+    /// Function: CalculateFireGunHitResult<br/>
+    /// Native code at BatmanAK.exe+0x564E10 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateFireGunHitResult(BmSDK.Rotator FireRotation, System.Numerics.Vector3 FirePosition, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> OutImpactInfo, float CheckBoxExtent = default)
     {

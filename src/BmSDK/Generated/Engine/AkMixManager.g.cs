@@ -75,7 +75,8 @@ public partial class AkMixManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveMixTemplate;
     /// <summary>
-    /// Function: RemoveMixTemplate
+    /// Function: RemoveMixTemplate<br/>
+    /// Native code at BatmanAK.exe+0xB79370 in the Steam build
     /// </summary>
     public unsafe static void RemoveMixTemplate(BmSDK.Engine.AkMixTemplate MixTemplate, bool forceRemove = default)
     {
@@ -97,7 +98,8 @@ public partial class AkMixManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddMixTemplate;
     /// <summary>
-    /// Function: AddMixTemplate
+    /// Function: AddMixTemplate<br/>
+    /// Native code at BatmanAK.exe+0xB79250 in the Steam build
     /// </summary>
     public unsafe static void AddMixTemplate(BmSDK.Engine.AkMixTemplate MixTemplate)
     {
@@ -124,7 +126,8 @@ public static class AkMixManagerStatics
 {
     private static BmSDK.Function __fn_RemoveMixTemplate;
     /// <summary>
-    /// Function: RemoveMixTemplate, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveMixTemplate, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB79370 in the Steam build
     /// </summary>
     public unsafe static void RemoveMixTemplate(this BmSDK.Engine.AkMixManager self, BmSDK.Engine.AkMixTemplate MixTemplate, bool forceRemove = default)
     {
@@ -147,7 +150,8 @@ public static class AkMixManagerStatics
 
     private static BmSDK.Function __fn_AddMixTemplate;
     /// <summary>
-    /// Function: AddMixTemplate, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddMixTemplate, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB79250 in the Steam build
     /// </summary>
     public unsafe static void AddMixTemplate(this BmSDK.Engine.AkMixManager self, BmSDK.Engine.AkMixTemplate MixTemplate)
     {

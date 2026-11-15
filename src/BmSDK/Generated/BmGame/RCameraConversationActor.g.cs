@@ -80,7 +80,8 @@ public partial class RCameraConversationActor : BmSDK.Engine.Actor, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCameraDeleted;
     /// <summary>
-    /// Function: NotifyCameraDeleted
+    /// Function: NotifyCameraDeleted<br/>
+    /// Native code at BatmanAK.exe+0x4DEA00 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyCameraDeleted(BmSDK.BmGame.RCameraActor_Conversation Camera)
     {

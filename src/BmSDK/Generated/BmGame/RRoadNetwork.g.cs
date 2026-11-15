@@ -122,7 +122,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanTightAreaRoute;
     /// <summary>
-    /// Function: PlanTightAreaRoute
+    /// Function: PlanTightAreaRoute<br/>
+    /// Native code at BatmanAK.exe+0x555410 in the Steam build
     /// </summary>
     public unsafe virtual bool PlanTightAreaRoute(out BmSDK.TArray<int> Route, out BmSDK.BmGame.RRoadNetwork.FRoadNetworkTightArea TightArea, System.Numerics.Vector3 StartLoc, System.Numerics.Vector3 EndLoc)
     {
@@ -149,7 +150,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateTightArea;
     /// <summary>
-    /// Function: GenerateTightArea
+    /// Function: GenerateTightArea<br/>
+    /// Native code at BatmanAK.exe+0x581A70 in the Steam build
     /// </summary>
     public unsafe virtual void GenerateTightArea(out BmSDK.BmGame.RRoadNetwork.FRoadNetworkTightArea TightArea, System.Numerics.Vector3 centre, byte RoadObstacleAvoidBits, float AvoidExtent, float AreaRadius, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -178,7 +180,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTightAreaVertexForLocation;
     /// <summary>
-    /// Function: GetTightAreaVertexForLocation
+    /// Function: GetTightAreaVertexForLocation<br/>
+    /// Native code at BatmanAK.exe+0x4EB7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetTightAreaVertexForLocation(out BmSDK.BmGame.RRoadNetwork.FRoadNetworkTightArea TightArea, out int X, out int Y, System.Numerics.Vector3 Loc)
     {
@@ -209,7 +212,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTightAreaLocationFromNodeIndex;
     /// <summary>
-    /// Function: GetTightAreaLocationFromNodeIndex
+    /// Function: GetTightAreaLocationFromNodeIndex<br/>
+    /// Native code at BatmanAK.exe+0x4EB630 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTightAreaLocationFromNodeIndex(out BmSDK.BmGame.RRoadNetwork.FRoadNetworkTightArea TightArea, int NodeIndex)
     {
@@ -234,7 +238,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTightAreaLocation;
     /// <summary>
-    /// Function: GetTightAreaLocation
+    /// Function: GetTightAreaLocation<br/>
+    /// Native code at BatmanAK.exe+0x4EB3E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTightAreaLocation(out BmSDK.BmGame.RRoadNetwork.FRoadNetworkTightArea TightArea, int X, int Y)
     {
@@ -260,7 +265,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkLoc;
     /// <summary>
-    /// Function: GetLinkLoc
+    /// Function: GetLinkLoc<br/>
+    /// Native code at BatmanAK.exe+0x4EB1D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLinkLoc(int LinkIndex, float LinkTime)
     {
@@ -283,7 +289,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDeadEnd;
     /// <summary>
-    /// Function: IsDeadEnd
+    /// Function: IsDeadEnd<br/>
+    /// Native code at BatmanAK.exe+0x581330 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDeadEnd(int InitialLinkEndPoint, int InitialLink, System.Numerics.Vector3 AvoidLocation, float AvoidLocationRadius, BmSDK.TArray<int> ExcludeLinks, bool CanJumpDown, bool CanJumpUp, out int ReasonCode, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, int MaxDepth, int Depth, bool bOutputToLog)
     {
@@ -318,7 +325,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkLaneInfoAtEndPoint;
     /// <summary>
-    /// Function: GetLinkLaneInfoAtEndPoint
+    /// Function: GetLinkLaneInfoAtEndPoint<br/>
+    /// Native code at BatmanAK.exe+0x4EAF60 in the Steam build
     /// </summary>
     public unsafe virtual void GetLinkLaneInfoAtEndPoint(out BmSDK.BmGame.RRoadLink.FLaneInfo LeftInfo, out BmSDK.BmGame.RRoadLink.FLaneInfo RightInfo, int LinkIndex, int LinkEndPoint)
     {
@@ -347,7 +355,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkLaneInfoAtClosestPoint;
     /// <summary>
-    /// Function: GetLinkLaneInfoAtClosestPoint
+    /// Function: GetLinkLaneInfoAtClosestPoint<br/>
+    /// Native code at BatmanAK.exe+0x4EAC60 in the Steam build
     /// </summary>
     public unsafe virtual void GetLinkLaneInfoAtClosestPoint(out BmSDK.BmGame.RRoadLink.FLaneInfo LeftInfo, out BmSDK.BmGame.RRoadLink.FLaneInfo RightInfo, System.Numerics.Vector3 RefPoint, int LinkIndex, int LinkEndPoint, out float TimeOnLink)
     {
@@ -380,7 +389,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkHeadRoom;
     /// <summary>
-    /// Function: GetLinkHeadRoom
+    /// Function: GetLinkHeadRoom<br/>
+    /// Native code at BatmanAK.exe+0x4EAB20 in the Steam build
     /// </summary>
     public unsafe virtual float GetLinkHeadRoom(int LinkIndex)
     {
@@ -402,7 +412,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkHasMinHeadroom;
     /// <summary>
-    /// Function: LinkHasMinHeadroom
+    /// Function: LinkHasMinHeadroom<br/>
+    /// Native code at BatmanAK.exe+0x4EA860 in the Steam build
     /// </summary>
     public unsafe virtual bool LinkHasMinHeadroom(int LinkIndex, int LaneIndex, float MinHeadroom)
     {
@@ -458,7 +469,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointAtJunction;
     /// <summary>
-    /// Function: IsPointAtJunction
+    /// Function: IsPointAtJunction<br/>
+    /// Native code at BatmanAK.exe+0x4EA670 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPointAtJunction(int PointIndex, bool ExcludeOpenAreas)
     {
@@ -481,7 +493,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPointInExcludedPointList;
     /// <summary>
-    /// Function: IsPointInExcludedPointList
+    /// Function: IsPointInExcludedPointList<br/>
+    /// Native code at BatmanAK.exe+0x5810A0 in the Steam build
     /// </summary>
     public unsafe static bool IsPointInExcludedPointList(int PointIndex, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -503,7 +516,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPointInAnyVolume;
     /// <summary>
-    /// Function: IsPointInAnyVolume
+    /// Function: IsPointInAnyVolume<br/>
+    /// Native code at BatmanAK.exe+0x580E50 in the Steam build
     /// </summary>
     public unsafe static bool IsPointInAnyVolume(System.Numerics.Vector3 Point, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, out BmSDK.Engine.Volume HitVolume)
     {
@@ -528,7 +542,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceObstacles;
     /// <summary>
-    /// Function: TraceObstacles
+    /// Function: TraceObstacles<br/>
+    /// Native code at BatmanAK.exe+0x4EA480 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceObstacles(BmSDK.BmGame.RVehicle Vehicle, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent)
     {
@@ -553,7 +568,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateObstacleBounds;
     /// <summary>
-    /// Function: UpdateObstacleBounds
+    /// Function: UpdateObstacleBounds<br/>
+    /// Native code at BatmanAK.exe+0x4EA360 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateObstacleBounds(int ObstacleIndex)
     {
@@ -575,7 +591,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstacle;
     /// <summary>
-    /// Function: RemoveObstacle
+    /// Function: RemoveObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4EA240 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveObstacle(int ObstacleIndex)
     {
@@ -597,7 +614,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddObstacle;
     /// <summary>
-    /// Function: AddObstacle
+    /// Function: AddObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4EA060 in the Steam build
     /// </summary>
     public unsafe virtual int AddObstacle(BmSDK.Engine.Actor Obstacle, int FilterBits)
     {
@@ -620,7 +638,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeOnLink;
     /// <summary>
-    /// Function: GetTimeOnLink
+    /// Function: GetTimeOnLink<br/>
+    /// Native code at BatmanAK.exe+0x4E9EB0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeOnLink(int LinkIndex, System.Numerics.Vector3 TestLocation, bool ClampTime = default)
     {
@@ -644,7 +663,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseClosestLinkFromPointToPosition;
     /// <summary>
-    /// Function: ChooseClosestLinkFromPointToPosition
+    /// Function: ChooseClosestLinkFromPointToPosition<br/>
+    /// Native code at BatmanAK.exe+0x5809B0 in the Steam build
     /// </summary>
     public unsafe virtual int ChooseClosestLinkFromPointToPosition(int StartPoint, int ExcludeLink, bool NoDeadEnds, out int LinkEndPoint, System.Numerics.Vector3 Position, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restrictions)
     {
@@ -673,7 +693,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseRandomLinkFromPoint_ExcludeArray_AvoidArray;
     /// <summary>
-    /// Function: ChooseRandomLinkFromPoint_ExcludeArray_AvoidArray
+    /// Function: ChooseRandomLinkFromPoint_ExcludeArray_AvoidArray<br/>
+    /// Native code at BatmanAK.exe+0x580140 in the Steam build
     /// </summary>
     public unsafe virtual int ChooseRandomLinkFromPoint_ExcludeArray_AvoidArray(int StartPoint, BmSDK.TArray<int> ExcludeLinkList, bool NoDeadEnds, out int LinkEndPoint, bool CanJumpDown, bool CanJumpUp, bool TendToGoStraight, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, System.Numerics.Vector3 MoveInDirection, BmSDK.TArray<System.Numerics.Vector3> AvoidLocations, BmSDK.TArray<float> AvoidLocationsConeCos, System.Numerics.Vector3 DeadEndLocation, bool bAllowUTurns, BmSDK.Engine.Actor TestActor, bool bForceDrawDebug, bool bAllowDeadEndAsFallback, int DeadEndRecursionDepth)
     {
@@ -713,7 +734,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseRandomLinkFromPoint_ExcludeArray;
     /// <summary>
-    /// Function: ChooseRandomLinkFromPoint_ExcludeArray
+    /// Function: ChooseRandomLinkFromPoint_ExcludeArray<br/>
+    /// Native code at BatmanAK.exe+0x57F9D0 in the Steam build
     /// </summary>
     public unsafe virtual int ChooseRandomLinkFromPoint_ExcludeArray(int StartPoint, BmSDK.TArray<int> ExcludeLinkList, bool NoDeadEnds, out int LinkEndPoint, bool CanJumpDown, bool CanJumpUp, bool TendToGoStraight, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, System.Numerics.Vector3 MoveInDirection, System.Numerics.Vector3 AvoidLocation, System.Numerics.Vector3 DeadEndLocation, bool bAllowUTurns, BmSDK.Engine.Actor TestActor, bool bForceDrawDebug, bool bAllowDeadEndAsFallback)
     {
@@ -751,7 +773,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseRandomLinkFromPoint;
     /// <summary>
-    /// Function: ChooseRandomLinkFromPoint
+    /// Function: ChooseRandomLinkFromPoint<br/>
+    /// Native code at BatmanAK.exe+0x57F210 in the Steam build
     /// </summary>
     public unsafe virtual int ChooseRandomLinkFromPoint(int StartPoint, int ExcludeLink, bool NoDeadEnds, out int LinkEndPoint, bool CanJumpDown, bool CanJumpUp, bool TendToGoStraight, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, System.Numerics.Vector3 MoveInDirection, System.Numerics.Vector3 AvoidLocation, System.Numerics.Vector3 DeadEndLocation, bool bAllowUTurns, BmSDK.Engine.Actor TestActor, bool bForceDrawDebug, bool bAllowDeadEndAsFallback)
     {
@@ -789,7 +812,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefineRacingLine;
     /// <summary>
-    /// Function: RefineRacingLine
+    /// Function: RefineRacingLine<br/>
+    /// Native code at BatmanAK.exe+0x562EA0 in the Steam build
     /// </summary>
     public unsafe virtual bool RefineRacingLine(out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRacingLineSeg> RacingLine, out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> Spans, BmSDK.BmGame.RVehicle Vehicle, System.Numerics.Vector3 StartLoc, System.Numerics.Vector3 DriveToTarget, out BmSDK.Engine.Actor FirstObstacleAvoided, out int FirstObstacleTypeBits, float LineMinLimit, float LineMaxLimit, bool UsePavementToAvoidObstacles, int NumSpansToLookBehind)
     {
@@ -825,7 +849,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRacingLine;
     /// <summary>
-    /// Function: GetRacingLine
+    /// Function: GetRacingLine<br/>
+    /// Native code at BatmanAK.exe+0x562C00 in the Steam build
     /// </summary>
     public unsafe virtual void GetRacingLine(out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRacingLineSeg> RacingLine, out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> Spans, BmSDK.BmGame.RVehicle Vehicle, float LineMinLimit = default, float LineMaxLimit = default, bool FastInitialApproximation = default)
     {
@@ -852,7 +877,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnRacingLineToPoint;
     /// <summary>
-    /// Function: GetClosestPointOnRacingLineToPoint
+    /// Function: GetClosestPointOnRacingLineToPoint<br/>
+    /// Native code at BatmanAK.exe+0x562740 in the Steam build
     /// </summary>
     public unsafe virtual bool GetClosestPointOnRacingLineToPoint(System.Numerics.Vector3 VehicleLoc, int FirstSpan, out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRacingLineSeg> RacingLine, out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> Spans, System.Numerics.Vector3 RefPoint, float MaxRadius, float MaxRouteDist, out System.Numerics.Vector3 OutPoint, out float OutRadius, out float OutRouteDist)
     {
@@ -889,7 +915,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnRouteSpansToPoint;
     /// <summary>
-    /// Function: GetClosestPointOnRouteSpansToPoint
+    /// Function: GetClosestPointOnRouteSpansToPoint<br/>
+    /// Native code at BatmanAK.exe+0x5624C0 in the Steam build
     /// </summary>
     public unsafe virtual void GetClosestPointOnRouteSpansToPoint(out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> RouteSpans, int FirstSpan, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 TargetLocation, out System.Numerics.Vector3 OutPoint, out int SpanIndex)
     {
@@ -920,7 +947,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestRouteLinkToPoint;
     /// <summary>
-    /// Function: GetClosestRouteLinkToPoint
+    /// Function: GetClosestRouteLinkToPoint<br/>
+    /// Native code at BatmanAK.exe+0x5550A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetClosestRouteLinkToPoint(out BmSDK.TArray<int> Route, int RouteStart, System.Numerics.Vector3 TargetLocation, int MaxIndexInRoute, out int OutLinkStartPoint, out int OutLinkIndexInRoute, System.Numerics.Vector3 TargetDirection)
     {
@@ -952,7 +980,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRouteSpans;
     /// <summary>
-    /// Function: GetRouteSpans
+    /// Function: GetRouteSpans<br/>
+    /// Native code at BatmanAK.exe+0x562060 in the Steam build
     /// </summary>
     public unsafe virtual int GetRouteSpans(out BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> Spans, out BmSDK.TArray<int> Route, int StartPoint, System.Numerics.Vector3 EndPoint, float VehicleHalfWidth, bool ObeyTheLaw, BmSDK.BmGame.RRoadNetwork.EUsePavementMode UsePavement, bool ObeyLaneObstacles = default, int MaxSpans = default)
     {
@@ -982,7 +1011,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestStreamedInLinkPoint;
     /// <summary>
-    /// Function: GetNearestStreamedInLinkPoint
+    /// Function: GetNearestStreamedInLinkPoint<br/>
+    /// Native code at BatmanAK.exe+0x4E9A50 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNearestStreamedInLinkPoint(out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, System.Numerics.Vector3 RefPt, float MaxRangeXY, float MaxRangeZ, float MinDistFromStreamingEdge, float ClearDistFromStreamingEdge)
     {
@@ -1014,7 +1044,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TrimRouteStartToFurthestStreamedInPoint;
     /// <summary>
-    /// Function: TrimRouteStartToFurthestStreamedInPoint
+    /// Function: TrimRouteStartToFurthestStreamedInPoint<br/>
+    /// Native code at BatmanAK.exe+0x554D20 in the Steam build
     /// </summary>
     public unsafe virtual bool TrimRouteStartToFurthestStreamedInPoint(out BmSDK.TArray<int> Route, out int StartPoint, BmSDK.BmGame.RVehicleBatmobileBase Batmobile, float MinDistFromStreamingEdge, float ClearDistFromStreamingEdge)
     {
@@ -1042,7 +1073,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TrimRouteStartToNearestHiddenPoint;
     /// <summary>
-    /// Function: TrimRouteStartToNearestHiddenPoint
+    /// Function: TrimRouteStartToNearestHiddenPoint<br/>
+    /// Native code at BatmanAK.exe+0x554AD0 in the Steam build
     /// </summary>
     public unsafe virtual bool TrimRouteStartToNearestHiddenPoint(out BmSDK.TArray<int> Route, out int StartPoint, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 CameraDir, float MinTrimRangeXY)
     {
@@ -1070,7 +1102,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAheadOnRoute;
     /// <summary>
-    /// Function: GetLookAheadOnRoute
+    /// Function: GetLookAheadOnRoute<br/>
+    /// Native code at BatmanAK.exe+0x5547A0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLookAheadOnRoute(System.Numerics.Vector3 Origin, BmSDK.TArray<int> Route, int RouteStartPt, float LookAheadDist, out System.Numerics.Vector3 Position, out System.Numerics.Vector3 Direction, out int LinkIndex)
     {
@@ -1104,7 +1137,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStraightLineRoute;
     /// <summary>
-    /// Function: GetStraightLineRoute
+    /// Function: GetStraightLineRoute<br/>
+    /// Native code at BatmanAK.exe+0x554450 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStraightLineRoute(out BmSDK.TArray<int> Route, int StartVertex, System.Numerics.Vector3 Direction, float CosMaxAngle, float MaxDistance)
     {
@@ -1130,7 +1164,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRouteBetweenVertices;
     /// <summary>
-    /// Function: PlanRouteBetweenVertices
+    /// Function: PlanRouteBetweenVertices<br/>
+    /// Native code at BatmanAK.exe+0x57EC00 in the Steam build
     /// </summary>
     public unsafe virtual bool PlanRouteBetweenVertices(out BmSDK.TArray<int> Route, int StartVertex, int EndVertex, bool ObeyTheLaw, bool CanJumpDown, bool CanJumpUp, int ExcludeLink, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, int PreferFirstLink, bool OutputPartialRoute, out float TotalCost)
     {
@@ -1164,7 +1199,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRoute;
     /// <summary>
-    /// Function: PlanRoute
+    /// Function: PlanRoute<br/>
+    /// Native code at BatmanAK.exe+0x57E480 in the Steam build
     /// </summary>
     public unsafe virtual bool PlanRoute(out BmSDK.TArray<int> Route, out int StartPoint, int StartLink, float StartT, int EndLink, float EndT, bool ObeyTheLaw, bool CanJumpDown, bool CanJumpUp, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, bool OutputPartialRoute, out float TotalCost)
     {
@@ -1201,7 +1237,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkEndPointInDirection;
     /// <summary>
-    /// Function: GetLinkEndPointInDirection
+    /// Function: GetLinkEndPointInDirection<br/>
+    /// Native code at BatmanAK.exe+0x57E1C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetLinkEndPointInDirection(int LinkIndex, System.Numerics.Vector3 ReferenceDir, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -1225,7 +1262,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllVerticesInRange;
     /// <summary>
-    /// Function: GetAllVerticesInRange
+    /// Function: GetAllVerticesInRange<br/>
+    /// Native code at BatmanAK.exe+0x57DE00 in the Steam build
     /// </summary>
     public unsafe virtual int GetAllVerticesInRange(out BmSDK.TArray<int> VertList, System.Numerics.Vector3 ReferencePoint, float MaxXYOffset, float MinZOffset, float MaxZOffset, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -1252,7 +1290,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestVertex;
     /// <summary>
-    /// Function: GetNearestVertex
+    /// Function: GetNearestVertex<br/>
+    /// Native code at BatmanAK.exe+0x57DAC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNearestVertex(System.Numerics.Vector3 ReferencePoint, float MaxXYOffset, float MinZOffset, float MaxZOffset, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -1278,7 +1317,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointDirectionalBias;
     /// <summary>
-    /// Function: GetNearestPointDirectionalBias
+    /// Function: GetNearestPointDirectionalBias<br/>
+    /// Native code at BatmanAK.exe+0x57D4D0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNearestPointDirectionalBias(out float LinkTime, System.Numerics.Vector3 ReferencePoint, System.Numerics.Vector3 BiasDir, float BiasAmount, float MaxXYOffset, float MinZOffset, float MaxZOffset, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, int LinkBias, int LinkBias2, float LinkBiasAmount, bool AllowDisabledLinks, float DefaultZBias)
     {
@@ -1314,7 +1354,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinksFromLocation;
     /// <summary>
-    /// Function: GetLinksFromLocation
+    /// Function: GetLinksFromLocation<br/>
+    /// Native code at BatmanAK.exe+0x57D270 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLinksFromLocation(out BmSDK.TArray<int> out_Links, System.Numerics.Vector3 TestLocation, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -1338,7 +1379,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPoint2D;
     /// <summary>
-    /// Function: GetNearestPoint2D
+    /// Function: GetNearestPoint2D<br/>
+    /// Native code at BatmanAK.exe+0x57CED0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNearestPoint2D(out float LinkTime, System.Numerics.Vector3 ReferencePoint, float MaxXYOffset, float MinZOffset, float MaxZOffset, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -1367,7 +1409,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPoint;
     /// <summary>
-    /// Function: GetNearestPoint
+    /// Function: GetNearestPoint<br/>
+    /// Native code at BatmanAK.exe+0x57CA90 in the Steam build
     /// </summary>
     public unsafe virtual int GetNearestPoint(out float LinkTime, System.Numerics.Vector3 ReferencePoint, float MaxXYOffset, float MinZOffset, float MaxZOffset, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, bool AllowDisabledLinks, float DefaultZBias)
     {
@@ -1398,7 +1441,8 @@ public partial class RRoadNetwork : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPointLocation;
     /// <summary>
-    /// Function: SetPointLocation
+    /// Function: SetPointLocation<br/>
+    /// Native code at BatmanAK.exe+0x4E98E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPointLocation(int PointIndex, System.Numerics.Vector3 Loc)
     {
@@ -2626,7 +2670,8 @@ public static class RRoadNetworkStatics
 {
     private static BmSDK.Function __fn_IsPointInExcludedPointList;
     /// <summary>
-    /// Function: IsPointInExcludedPointList, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPointInExcludedPointList, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x5810A0 in the Steam build
     /// </summary>
     public unsafe static bool IsPointInExcludedPointList(this BmSDK.BmGame.RRoadNetwork self, int PointIndex, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction)
     {
@@ -2649,7 +2694,8 @@ public static class RRoadNetworkStatics
 
     private static BmSDK.Function __fn_IsPointInAnyVolume;
     /// <summary>
-    /// Function: IsPointInAnyVolume, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPointInAnyVolume, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x580E50 in the Steam build
     /// </summary>
     public unsafe static bool IsPointInAnyVolume(this BmSDK.BmGame.RRoadNetwork self, System.Numerics.Vector3 Point, out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restriction, out BmSDK.Engine.Volume HitVolume)
     {

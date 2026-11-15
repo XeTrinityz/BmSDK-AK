@@ -75,7 +75,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInFearGas;
     /// <summary>
-    /// Function: IsLocationInFearGas
+    /// Function: IsLocationInFearGas<br/>
+    /// Native code at BatmanAK.exe+0x494200 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInFearGas(System.Numerics.Vector3 vTestLocation)
     {
@@ -97,7 +98,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessFearGasCollision;
     /// <summary>
-    /// Function: ProcessFearGasCollision
+    /// Function: ProcessFearGasCollision<br/>
+    /// Native code at BatmanAK.exe+0x493C70 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessFearGasCollision()
     {
@@ -118,7 +120,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationAboveOcean;
     /// <summary>
-    /// Function: IsLocationAboveOcean
+    /// Function: IsLocationAboveOcean<br/>
+    /// Native code at BatmanAK.exe+0x494120 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationAboveOcean(System.Numerics.Vector3 vTestLocation)
     {
@@ -140,7 +143,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessRemoteBatarangOceanCollision;
     /// <summary>
-    /// Function: ProcessRemoteBatarangOceanCollision
+    /// Function: ProcessRemoteBatarangOceanCollision<br/>
+    /// Native code at BatmanAK.exe+0x493C30 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessRemoteBatarangOceanCollision()
     {
@@ -161,7 +165,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessOceanCollision;
     /// <summary>
-    /// Function: ProcessOceanCollision
+    /// Function: ProcessOceanCollision<br/>
+    /// Native code at BatmanAK.exe+0x493BF0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessOceanCollision()
     {
@@ -182,7 +187,8 @@ public partial class RProjectile : BmSDK.Engine.Projectile, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllAttachedComponents;
     /// <summary>
-    /// Function: GetAllAttachedComponents
+    /// Function: GetAllAttachedComponents<br/>
+    /// Native code at BatmanAK.exe+0x5656F0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllAttachedComponents(out BmSDK.TArray<BmSDK.Engine.ActorComponent> AllAttachedComponents)
     {

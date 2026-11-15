@@ -109,7 +109,8 @@ public partial class RVehicleBatmobilePredictor : BmSDK.BmGame.RVehicleNPC, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {

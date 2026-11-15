@@ -80,7 +80,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessRequest;
     /// <summary>
-    /// Function: ProcessRequest
+    /// Function: ProcessRequest<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe override bool ProcessRequest()
     {
@@ -101,7 +102,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHeader;
     /// <summary>
-    /// Function: SetHeader
+    /// Function: SetHeader<br/>
+    /// Native code at BatmanAK.exe+0xBA9E00 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.HttpRequestInterface SetHeader(BmSDK.FStringArg HeaderName, BmSDK.FStringArg HeaderValue)
     {
@@ -126,7 +128,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContentAsString;
     /// <summary>
-    /// Function: SetContentAsString
+    /// Function: SetContentAsString<br/>
+    /// Native code at BatmanAK.exe+0xBA9CB0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.HttpRequestInterface SetContentAsString(BmSDK.FStringArg ContentString)
     {
@@ -149,7 +152,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContent;
     /// <summary>
-    /// Function: SetContent
+    /// Function: SetContent<br/>
+    /// Native code at BatmanAK.exe+0xBB43D0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.HttpRequestInterface SetContent(out BmSDK.TArray<byte> ContentPayload)
     {
@@ -171,7 +175,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetURL;
     /// <summary>
-    /// Function: SetURL
+    /// Function: SetURL<br/>
+    /// Native code at BatmanAK.exe+0xBA9B60 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.HttpRequestInterface SetURL(BmSDK.FStringArg URL)
     {
@@ -194,7 +199,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVerb;
     /// <summary>
-    /// Function: SetVerb
+    /// Function: SetVerb<br/>
+    /// Native code at BatmanAK.exe+0xBA9A10 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.HttpRequestInterface SetVerb(BmSDK.FStringArg Verb)
     {
@@ -217,7 +223,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVerb;
     /// <summary>
-    /// Function: GetVerb
+    /// Function: GetVerb<br/>
+    /// Native code at BatmanAK.exe+0xBA80C0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetVerb()
     {
@@ -238,7 +245,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContent;
     /// <summary>
-    /// Function: GetContent
+    /// Function: GetContent<br/>
+    /// Native code at BatmanAK.exe+0xBB4300 in the Steam build
     /// </summary>
     public unsafe override void GetContent(out BmSDK.TArray<byte> Content)
     {
@@ -260,7 +268,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURL;
     /// <summary>
-    /// Function: GetURL
+    /// Function: GetURL<br/>
+    /// Native code at BatmanAK.exe+0xBA9950 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetURL()
     {
@@ -281,7 +290,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentLength;
     /// <summary>
-    /// Function: GetContentLength
+    /// Function: GetContentLength<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe override int GetContentLength()
     {
@@ -302,7 +312,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentType;
     /// <summary>
-    /// Function: GetContentType
+    /// Function: GetContentType<br/>
+    /// Native code at BatmanAK.exe+0xBA98D0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetContentType()
     {
@@ -323,7 +334,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLParameter;
     /// <summary>
-    /// Function: GetURLParameter
+    /// Function: GetURLParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9EED0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetURLParameter(BmSDK.FStringArg ParameterName)
     {
@@ -346,7 +358,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeaders;
     /// <summary>
-    /// Function: GetHeaders
+    /// Function: GetHeaders<br/>
+    /// Native code at BatmanAK.exe+0xBBC4C0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.TArray<BmSDK.FString> GetHeaders()
     {
@@ -367,7 +380,8 @@ public partial class HttpRequestWindows : BmSDK.Engine.HttpRequestInterface, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeader;
     /// <summary>
-    /// Function: GetHeader
+    /// Function: GetHeader<br/>
+    /// Native code at BatmanAK.exe+0xBABF60 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetHeader(BmSDK.FStringArg HeaderName)
     {

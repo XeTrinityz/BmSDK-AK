@@ -80,7 +80,8 @@ public partial class RThreatBaseAsset : BmSDK.BmGame.RConfig, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldActivate;
     /// <summary>
-    /// Function: ShouldActivate
+    /// Function: ShouldActivate<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldActivate()
     {
@@ -115,7 +116,8 @@ public partial class RThreatBaseAsset : BmSDK.BmGame.RConfig, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDestroyed;
     /// <summary>
-    /// Function: IsDestroyed
+    /// Function: IsDestroyed<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDestroyed()
     {

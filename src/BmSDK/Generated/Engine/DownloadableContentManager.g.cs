@@ -94,7 +94,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPackagesToFullyLoad;
     /// <summary>
-    /// Function: AddPackagesToFullyLoad
+    /// Function: AddPackagesToFullyLoad<br/>
+    /// Native code at BatmanAK.exe+0xBAE090 in the Steam build
     /// </summary>
     public unsafe virtual void AddPackagesToFullyLoad(BmSDK.FStringArg Filename)
     {
@@ -216,7 +217,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallNonPackageFiles;
     /// <summary>
-    /// Function: InstallNonPackageFiles
+    /// Function: InstallNonPackageFiles<br/>
+    /// Native code at BatmanAK.exe+0xBBB170 in the Steam build
     /// </summary>
     public unsafe virtual void InstallNonPackageFiles(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
@@ -238,7 +240,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallPackages;
     /// <summary>
-    /// Function: InstallPackages
+    /// Function: InstallPackages<br/>
+    /// Native code at BatmanAK.exe+0xBBB040 in the Steam build
     /// </summary>
     public unsafe virtual void InstallPackages(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
@@ -260,7 +263,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateObjectLists;
     /// <summary>
-    /// Function: UpdateObjectLists
+    /// Function: UpdateObjectLists<br/>
+    /// Native code at BatmanAK.exe+0xB3F190 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateObjectLists()
     {
@@ -281,7 +285,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkPerObjectConfigPendingKill;
     /// <summary>
-    /// Function: MarkPerObjectConfigPendingKill
+    /// Function: MarkPerObjectConfigPendingKill<br/>
+    /// Native code at BatmanAK.exe+0xBADF50 in the Steam build
     /// </summary>
     public unsafe virtual void MarkPerObjectConfigPendingKill(BmSDK.FStringArg Section)
     {
@@ -304,7 +309,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSectionToObjectList;
     /// <summary>
-    /// Function: AddSectionToObjectList
+    /// Function: AddSectionToObjectList<br/>
+    /// Native code at BatmanAK.exe+0xBADE10 in the Steam build
     /// </summary>
     public unsafe virtual void AddSectionToObjectList(BmSDK.FStringArg Section)
     {
@@ -327,7 +333,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushOpenHandles;
     /// <summary>
-    /// Function: FlushOpenHandles
+    /// Function: FlushOpenHandles<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void FlushOpenHandles()
     {
@@ -348,7 +355,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRockDLCCachePath;
     /// <summary>
-    /// Function: GetRockDLCCachePath
+    /// Function: GetRockDLCCachePath<br/>
+    /// Native code at BatmanAK.exe+0xBAF1C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRockDLCCachePath(BmSDK.FName BaseName, out BmSDK.FString Path)
     {
@@ -371,7 +379,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDLCNonPackageFilePath;
     /// <summary>
-    /// Function: GetDLCNonPackageFilePath
+    /// Function: GetDLCNonPackageFilePath<br/>
+    /// Native code at BatmanAK.exe+0xBADC70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDLCNonPackageFilePath(BmSDK.FName NonPackageFileName, out BmSDK.FString Path)
     {
@@ -394,7 +403,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDLC;
     /// <summary>
-    /// Function: ClearDLC
+    /// Function: ClearDLC<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void ClearDLC()
     {
@@ -415,7 +425,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallDLCs;
     /// <summary>
-    /// Function: InstallDLCs
+    /// Function: InstallDLCs<br/>
+    /// Native code at BatmanAK.exe+0xBBDE80 in the Steam build
     /// </summary>
     public unsafe virtual void InstallDLCs(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> DLCBundles)
     {
@@ -437,7 +448,8 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallDLC;
     /// <summary>
-    /// Function: InstallDLC
+    /// Function: InstallDLC<br/>
+    /// Native code at BatmanAK.exe+0xBBAF00 in the Steam build
     /// </summary>
     public unsafe virtual bool InstallDLC(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {

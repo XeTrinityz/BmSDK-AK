@@ -185,7 +185,8 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockedByActorComp;
     /// <summary>
-    /// Function: IsBlockedByActorComp
+    /// Function: IsBlockedByActorComp<br/>
+    /// Native code at BatmanAK.exe+0x5115E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlockedByActorComp(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp)
     {

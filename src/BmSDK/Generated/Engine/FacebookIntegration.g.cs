@@ -80,7 +80,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Disconnect;
     /// <summary>
-    /// Function: Disconnect
+    /// Function: Disconnect<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void Disconnect()
     {
@@ -101,7 +102,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FacebookDialog;
     /// <summary>
-    /// Function: FacebookDialog
+    /// Function: FacebookDialog<br/>
+    /// Native code at BatmanAK.exe+0xBB98B0 in the Steam build
     /// </summary>
     public unsafe virtual void FacebookDialog(BmSDK.FStringArg Action, BmSDK.TArray<BmSDK.FString> ParamKeysAndValues)
     {
@@ -125,7 +127,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FacebookRequest;
     /// <summary>
-    /// Function: FacebookRequest
+    /// Function: FacebookRequest<br/>
+    /// Native code at BatmanAK.exe+0xB9E590 in the Steam build
     /// </summary>
     public unsafe virtual void FacebookRequest(BmSDK.FStringArg GraphRequest)
     {
@@ -148,7 +151,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAuthorized;
     /// <summary>
-    /// Function: IsAuthorized
+    /// Function: IsAuthorized<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAuthorized()
     {
@@ -169,7 +173,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Authorize;
     /// <summary>
-    /// Function: Authorize
+    /// Function: Authorize<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool Authorize()
     {
@@ -190,7 +195,8 @@ public partial class FacebookIntegration : BmSDK.Engine.PlatformInterfaceBase, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual bool Init()
     {

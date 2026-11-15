@@ -472,7 +472,8 @@ public partial class RBMBehaviour_HitReaction : BmSDK.BmGame.RBMBehaviour, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCheckFalling;
     /// <summary>
-    /// Function: CanCheckFalling
+    /// Function: CanCheckFalling<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe override bool CanCheckFalling()
     {
@@ -493,7 +494,8 @@ public partial class RBMBehaviour_HitReaction : BmSDK.BmGame.RBMBehaviour, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEnvironmentInDirForHitReaction;
     /// <summary>
-    /// Function: FindEnvironmentInDirForHitReaction
+    /// Function: FindEnvironmentInDirForHitReaction<br/>
+    /// Native code at BatmanAK.exe+0x4FE0F0 in the Steam build
     /// </summary>
     public unsafe virtual int FindEnvironmentInDirForHitReaction(System.Numerics.Vector3 CheckDir, float CheckDist, float CheckWidth, out System.Numerics.Vector3 WallLoc, out System.Numerics.Vector3 WallNormal)
     {

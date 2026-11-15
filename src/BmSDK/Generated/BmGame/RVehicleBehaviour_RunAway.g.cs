@@ -275,7 +275,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCorrectionForces;
     /// <summary>
-    /// Function: ApplyCorrectionForces
+    /// Function: ApplyCorrectionForces<br/>
+    /// Native code at BatmanAK.exe+0x526160 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyCorrectionForces(float DeltaTime)
     {
@@ -297,7 +298,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPreferredNextDirection;
     /// <summary>
-    /// Function: GetPreferredNextDirection
+    /// Function: GetPreferredNextDirection<br/>
+    /// Native code at BatmanAK.exe+0x49A590 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPreferredNextDirection()
     {
@@ -318,7 +320,8 @@ public partial class RVehicleBehaviour_RunAway : BmSDK.BmGame.RVehicleBehaviour,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawBehaviourVolumes;
     /// <summary>
-    /// Function: DrawBehaviourVolumes
+    /// Function: DrawBehaviourVolumes<br/>
+    /// Native code at BatmanAK.exe+0x49A550 in the Steam build
     /// </summary>
     public unsafe virtual void DrawBehaviourVolumes()
     {

@@ -85,7 +85,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocationID;
     /// <summary>
-    /// Function: UpdateLocationID
+    /// Function: UpdateLocationID<br/>
+    /// Native code at BatmanAK.exe+0x496400 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLocationID()
     {
@@ -106,7 +107,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringAsHHMMSSFromTime;
     /// <summary>
-    /// Function: GetStringAsHHMMSSFromTime
+    /// Function: GetStringAsHHMMSSFromTime<br/>
+    /// Native code at BatmanAK.exe+0x542C10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringAsHHMMSSFromTime(float TimeSecs)
     {
@@ -128,7 +130,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringForLocationID;
     /// <summary>
-    /// Function: GetStringForLocationID
+    /// Function: GetStringForLocationID<br/>
+    /// Native code at BatmanAK.exe+0x542AB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringForLocationID(int Id)
     {
@@ -150,7 +153,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIDForLocation;
     /// <summary>
-    /// Function: GetIDForLocation
+    /// Function: GetIDForLocation<br/>
+    /// Native code at BatmanAK.exe+0xB2E960 in the Steam build
     /// </summary>
     public unsafe virtual int GetIDForLocation()
     {
@@ -171,7 +175,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeLocalisedDateString;
     /// <summary>
-    /// Function: MakeLocalisedDateString
+    /// Function: MakeLocalisedDateString<br/>
+    /// Native code at BatmanAK.exe+0x5427D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString MakeLocalisedDateString(int Day, int Month, int Year)
     {
@@ -195,7 +200,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessSavedGame;
     /// <summary>
-    /// Function: ProcessSavedGame
+    /// Function: ProcessSavedGame<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessSavedGame()
     {
@@ -216,7 +222,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressSavedGame;
     /// <summary>
-    /// Function: DecompressSavedGame
+    /// Function: DecompressSavedGame<br/>
+    /// Native code at BatmanAK.exe+0x496360 in the Steam build
     /// </summary>
     public unsafe virtual void DecompressSavedGame(bool bHeaderOnly = default)
     {
@@ -238,7 +245,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressShared;
     /// <summary>
-    /// Function: DecompressShared
+    /// Function: DecompressShared<br/>
+    /// Native code at BatmanAK.exe+0x4962C0 in the Steam build
     /// </summary>
     public unsafe virtual void DecompressShared(bool bHeaderOnly = default)
     {
@@ -260,7 +268,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressOptions;
     /// <summary>
-    /// Function: DecompressOptions
+    /// Function: DecompressOptions<br/>
+    /// Native code at BatmanAK.exe+0x496220 in the Steam build
     /// </summary>
     public unsafe virtual void DecompressOptions(bool bHeaderOnly = default)
     {
@@ -282,7 +291,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPDataBuffer;
     /// <summary>
-    /// Function: LoadPDataBuffer
+    /// Function: LoadPDataBuffer<br/>
+    /// Native code at BatmanAK.exe+0x516E60 in the Steam build
     /// </summary>
     public unsafe virtual void LoadPDataBuffer(int AsSlotX)
     {
@@ -304,7 +314,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SavePDataBuffer;
     /// <summary>
-    /// Function: SavePDataBuffer
+    /// Function: SavePDataBuffer<br/>
+    /// Native code at BatmanAK.exe+0x516D40 in the Steam build
     /// </summary>
     public unsafe virtual void SavePDataBuffer(int AsSlotX)
     {
@@ -326,7 +337,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveStorySlotID;
     /// <summary>
-    /// Function: SetActiveStorySlotID
+    /// Function: SetActiveStorySlotID<br/>
+    /// Native code at BatmanAK.exe+0x4961A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveStorySlotID(BmSDK.BmGame.RSaveGameManager.StorySlots SlotID)
     {
@@ -348,7 +360,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveStorySlotID;
     /// <summary>
-    /// Function: GetActiveStorySlotID
+    /// Function: GetActiveStorySlotID<br/>
+    /// Native code at BatmanAK.exe+0x496150 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSaveGameManager.StorySlots GetActiveStorySlotID()
     {
@@ -369,7 +382,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIfSaveDataValidForSlot;
     /// <summary>
-    /// Function: SetIfSaveDataValidForSlot
+    /// Function: SetIfSaveDataValidForSlot<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetIfSaveDataValidForSlot()
     {
@@ -390,7 +404,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSaveDataValidForSlot;
     /// <summary>
-    /// Function: IsSaveDataValidForSlot
+    /// Function: IsSaveDataValidForSlot<br/>
+    /// Native code at BatmanAK.exe+0xB824E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSaveDataValidForSlot(int Slot)
     {
@@ -412,7 +427,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinSaveBuffers;
     /// <summary>
-    /// Function: JoinSaveBuffers
+    /// Function: JoinSaveBuffers<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void JoinSaveBuffers()
     {
@@ -433,7 +449,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreOptionsToMemory;
     /// <summary>
-    /// Function: StoreOptionsToMemory
+    /// Function: StoreOptionsToMemory<br/>
+    /// Native code at BatmanAK.exe+0x516C00 in the Steam build
     /// </summary>
     public unsafe virtual bool StoreOptionsToMemory(bool bSharedToo)
     {
@@ -455,7 +472,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDebugStartPointInfo;
     /// <summary>
-    /// Function: LoadDebugStartPointInfo
+    /// Function: LoadDebugStartPointInfo<br/>
+    /// Native code at BatmanAK.exe+0x574410 in the Steam build
     /// </summary>
     public unsafe virtual void LoadDebugStartPointInfo(BmSDK.BmGame.RPlayerController RPC, BmSDK.FStringArg SaveGameType, out BmSDK.TArray<BmSDK.BmGame.RSaveGameManager.FRSaveGameSummaryInfo> StartPoints)
     {
@@ -480,7 +498,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadBSG;
     /// <summary>
-    /// Function: LoadBSG
+    /// Function: LoadBSG<br/>
+    /// Native code at BatmanAK.exe+0xBA7F70 in the Steam build
     /// </summary>
     public unsafe virtual int LoadBSG(BmSDK.FStringArg Filename)
     {
@@ -503,7 +522,8 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
-    /// Function: Initialise
+    /// Function: Initialise<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void Initialise()
     {

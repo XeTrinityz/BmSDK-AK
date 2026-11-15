@@ -122,7 +122,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB78B20 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bInEnabled)
     {
@@ -144,7 +145,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurOpacity;
     /// <summary>
-    /// Function: SetBlurOpacity
+    /// Function: SetBlurOpacity<br/>
+    /// Native code at BatmanAK.exe+0xB5C630 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlurOpacity(float InBlurOpacity)
     {
@@ -166,7 +168,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurFalloffExponent;
     /// <summary>
-    /// Function: SetBlurFalloffExponent
+    /// Function: SetBlurFalloffExponent<br/>
+    /// Native code at BatmanAK.exe+0xB789F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlurFalloffExponent(float InBlurFalloffExponent)
     {
@@ -188,7 +191,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurScale;
     /// <summary>
-    /// Function: SetBlurScale
+    /// Function: SetBlurScale<br/>
+    /// Native code at BatmanAK.exe+0xB788C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlurScale(float InBlurScale)
     {
@@ -210,7 +214,8 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
-    /// Function: SetMaterial
+    /// Function: SetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB78790 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterial(BmSDK.Engine.MaterialInterface InMaterial)
     {

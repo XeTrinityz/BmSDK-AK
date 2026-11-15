@@ -75,7 +75,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContent;
     /// <summary>
-    /// Function: GetContent
+    /// Function: GetContent<br/>
+    /// Native code at BatmanAK.exe+0xBB4300 in the Steam build
     /// </summary>
     public unsafe virtual void GetContent(out BmSDK.TArray<byte> Content)
     {
@@ -97,7 +98,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURL;
     /// <summary>
-    /// Function: GetURL
+    /// Function: GetURL<br/>
+    /// Native code at BatmanAK.exe+0xBA9950 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetURL()
     {
@@ -118,7 +120,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentLength;
     /// <summary>
-    /// Function: GetContentLength
+    /// Function: GetContentLength<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetContentLength()
     {
@@ -139,7 +142,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentType;
     /// <summary>
-    /// Function: GetContentType
+    /// Function: GetContentType<br/>
+    /// Native code at BatmanAK.exe+0xBA98D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetContentType()
     {
@@ -160,7 +164,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLParameter;
     /// <summary>
-    /// Function: GetURLParameter
+    /// Function: GetURLParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9EED0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetURLParameter(BmSDK.FStringArg ParameterName)
     {
@@ -183,7 +188,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeaders;
     /// <summary>
-    /// Function: GetHeaders
+    /// Function: GetHeaders<br/>
+    /// Native code at BatmanAK.exe+0xBBC4C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FString> GetHeaders()
     {
@@ -204,7 +210,8 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeader;
     /// <summary>
-    /// Function: GetHeader
+    /// Function: GetHeader<br/>
+    /// Native code at BatmanAK.exe+0xBABF60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetHeader(BmSDK.FStringArg HeaderName)
     {

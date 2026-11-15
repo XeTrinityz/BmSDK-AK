@@ -94,7 +94,8 @@ public partial class RSpecialMoveInstance_PlaceActor : BmSDK.BmGame.RSpecialMove
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpawnedOwner;
     /// <summary>
-    /// Function: GetSpawnedOwner
+    /// Function: GetSpawnedOwner<br/>
+    /// Native code at BatmanAK.exe+0x47F2A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetSpawnedOwner()
     {

@@ -139,7 +139,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConditionalSetupPosition;
     /// <summary>
-    /// Function: ConditionalSetupPosition
+    /// Function: ConditionalSetupPosition<br/>
+    /// Native code at BatmanAK.exe+0x494440 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor ConditionalSetupPosition()
     {
@@ -160,7 +161,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComplexTrace;
     /// <summary>
-    /// Function: ComplexTrace
+    /// Function: ComplexTrace<br/>
+    /// Native code at BatmanAK.exe+0x511BA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor ComplexTrace(BmSDK.Engine.Actor MyOwner, out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 End, System.Numerics.Vector3 Start)
     {
@@ -264,7 +266,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTarget;
     /// <summary>
-    /// Function: IsValidTarget
+    /// Function: IsValidTarget<br/>
+    /// Native code at BatmanAK.exe+0x4A94D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.Engine.Actor TestActor)
     {
@@ -441,7 +444,8 @@ public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreLevelsCompatible;
     /// <summary>
-    /// Function: AreLevelsCompatible
+    /// Function: AreLevelsCompatible<br/>
+    /// Native code at BatmanAK.exe+0x5119C0 in the Steam build
     /// </summary>
     public unsafe virtual bool AreLevelsCompatible(BmSDK.Engine.Actor Check1, BmSDK.Engine.Actor Check2)
     {

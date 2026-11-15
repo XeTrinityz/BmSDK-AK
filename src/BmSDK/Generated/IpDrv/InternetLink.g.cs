@@ -109,7 +109,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalIP;
     /// <summary>
-    /// Function: GetLocalIP
+    /// Function: GetLocalIP<br/>
+    /// Native code at BatmanAK.exe+0x6AEBD0 in the Steam build
     /// </summary>
     public unsafe virtual void GetLocalIP(out BmSDK.IpDrv.InternetLink.FIpAddr Arg)
     {
@@ -133,7 +134,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StringToIpAddr;
     /// <summary>
-    /// Function: StringToIpAddr
+    /// Function: StringToIpAddr<br/>
+    /// Native code at BatmanAK.exe+0x6B32D0 in the Steam build
     /// </summary>
     public unsafe virtual bool StringToIpAddr(BmSDK.FStringArg Str, out BmSDK.IpDrv.InternetLink.FIpAddr Addr)
     {
@@ -159,7 +161,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IpAddrToString;
     /// <summary>
-    /// Function: IpAddrToString
+    /// Function: IpAddrToString<br/>
+    /// Native code at BatmanAK.exe+0x6B3200 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString IpAddrToString(BmSDK.IpDrv.InternetLink.FIpAddr Arg)
     {
@@ -181,7 +184,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastError;
     /// <summary>
-    /// Function: GetLastError
+    /// Function: GetLastError<br/>
+    /// Native code at BatmanAK.exe+0x48E900 in the Steam build
     /// </summary>
     public unsafe virtual int GetLastError()
     {
@@ -202,7 +206,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Resolve;
     /// <summary>
-    /// Function: Resolve
+    /// Function: Resolve<br/>
+    /// Native code at BatmanAK.exe+0x6B30C0 in the Steam build
     /// </summary>
     public unsafe virtual void Resolve(BmSDK.FStringArg Domain)
     {
@@ -225,7 +230,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseURL;
     /// <summary>
-    /// Function: ParseURL
+    /// Function: ParseURL<br/>
+    /// Native code at BatmanAK.exe+0x6B2E20 in the Steam build
     /// </summary>
     public unsafe virtual bool ParseURL(BmSDK.FStringArg URL, out BmSDK.FString Addr, out int PortNum, out BmSDK.FString LevelName, out BmSDK.FString EntryName)
     {
@@ -254,7 +260,8 @@ public partial class InternetLink : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDataPending;
     /// <summary>
-    /// Function: IsDataPending
+    /// Function: IsDataPending<br/>
+    /// Native code at BatmanAK.exe+0x46B3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDataPending()
     {

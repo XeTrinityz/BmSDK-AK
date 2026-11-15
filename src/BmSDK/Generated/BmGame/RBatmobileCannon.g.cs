@@ -337,7 +337,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyWindowsAlongRiotSuppressorPath;
     /// <summary>
-    /// Function: DestroyWindowsAlongRiotSuppressorPath
+    /// Function: DestroyWindowsAlongRiotSuppressorPath<br/>
+    /// Native code at BatmanAK.exe+0x49B040 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyWindowsAlongRiotSuppressorPath(System.Numerics.Vector3 FireFrom, System.Numerics.Vector3 FireTo)
     {
@@ -392,7 +393,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFiringOverBarrier;
     /// <summary>
-    /// Function: CheckForFiringOverBarrier
+    /// Function: CheckForFiringOverBarrier<br/>
+    /// Native code at BatmanAK.exe+0x49AF90 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForFiringOverBarrier(out System.Numerics.Vector3 HitLocation)
     {
@@ -432,7 +434,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireChainGun;
     /// <summary>
-    /// Function: FireChainGun
+    /// Function: FireChainGun<br/>
+    /// Native code at BatmanAK.exe+0x49AF40 in the Steam build
     /// </summary>
     public unsafe virtual bool FireChainGun()
     {
@@ -569,7 +572,8 @@ public partial class RBatmobileCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAimPosition;
     /// <summary>
-    /// Function: GetAimPosition
+    /// Function: GetAimPosition<br/>
+    /// Native code at BatmanAK.exe+0x49AE50 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAimPosition(System.Numerics.Vector3 AimOrigin, System.Numerics.Vector3 AimAtPosition)
     {

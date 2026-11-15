@@ -80,7 +80,8 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceLastSighting;
     /// <summary>
-    /// Function: GetTimeSinceLastSighting
+    /// Function: GetTimeSinceLastSighting<br/>
+    /// Native code at BatmanAK.exe+0x4E52A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeSinceLastSighting(int Index)
     {
@@ -102,7 +103,8 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLastSeenTime;
     /// <summary>
-    /// Function: UpdateLastSeenTime
+    /// Function: UpdateLastSeenTime<br/>
+    /// Native code at BatmanAK.exe+0x4E5180 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLastSeenTime(int Index)
     {
@@ -124,7 +126,8 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSafe;
     /// <summary>
-    /// Function: IsSafe
+    /// Function: IsSafe<br/>
+    /// Native code at BatmanAK.exe+0x505F20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSafe(BmSDK.Engine.Pawn TestPawn)
     {

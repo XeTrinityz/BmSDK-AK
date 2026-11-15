@@ -104,7 +104,8 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageStage;
     /// <summary>
-    /// Function: SetDamageStage
+    /// Function: SetDamageStage<br/>
+    /// Native code at BatmanAK.exe+0x4E5A00 in the Steam build
     /// </summary>
     public unsafe override void SetDamageStage(int Stage)
     {

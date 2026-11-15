@@ -75,7 +75,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckChapterFlags;
     /// <summary>
-    /// Function: CheckChapterFlags
+    /// Function: CheckChapterFlags<br/>
+    /// Native code at BatmanAK.exe+0xB36060 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckChapterFlags(bool checkAll = default)
     {
@@ -97,7 +98,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineIndex;
     /// <summary>
-    /// Function: GetLineIndex
+    /// Function: GetLineIndex<br/>
+    /// Native code at BatmanAK.exe+0xB64080 in the Steam build
     /// </summary>
     public unsafe virtual int GetLineIndex(BmSDK.Engine.AkDialogueLine dlgLine)
     {
@@ -119,7 +121,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLine;
     /// <summary>
-    /// Function: GetLine
+    /// Function: GetLine<br/>
+    /// Native code at BatmanAK.exe+0xB63F40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueLine GetLine(int dlgLineIndex)
     {
@@ -141,7 +144,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceCount;
     /// <summary>
-    /// Function: GetVoiceCount
+    /// Function: GetVoiceCount<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe virtual int GetVoiceCount()
     {
@@ -162,7 +166,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineCount;
     /// <summary>
-    /// Function: GetLineCount
+    /// Function: GetLineCount<br/>
+    /// Native code at BatmanAK.exe+0xB36010 in the Steam build
     /// </summary>
     public unsafe virtual int GetLineCount()
     {
@@ -183,7 +188,8 @@ public partial class AkDialogueSpeech : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueType_;
     /// <summary>
-    /// Function: GetDialogueType_
+    /// Function: GetDialogueType_<br/>
+    /// Native code at BatmanAK.exe+0xB35FC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueType GetDialogueType_()
     {

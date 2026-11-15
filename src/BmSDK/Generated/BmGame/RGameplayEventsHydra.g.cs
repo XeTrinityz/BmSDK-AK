@@ -101,7 +101,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventSkipCinematic;
     /// <summary>
-    /// Function: SendHydraEventSkipCinematic
+    /// Function: SendHydraEventSkipCinematic<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventSkipCinematic()
     {
@@ -122,7 +123,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventStartCinematic;
     /// <summary>
-    /// Function: SendHydraEventStartCinematic
+    /// Function: SendHydraEventStartCinematic<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventStartCinematic()
     {
@@ -143,7 +145,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogSystemPollEvents;
     /// <summary>
-    /// Function: LogSystemPollEvents
+    /// Function: LogSystemPollEvents<br/>
+    /// Native code at BatmanAK.exe+0x46A6C0 in the Steam build
     /// </summary>
     public unsafe override void LogSystemPollEvents()
     {
@@ -164,7 +167,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogAllPlayerPositionsEvent;
     /// <summary>
-    /// Function: LogAllPlayerPositionsEvent
+    /// Function: LogAllPlayerPositionsEvent<br/>
+    /// Native code at BatmanAK.exe+0x4A2900 in the Steam build
     /// </summary>
     public unsafe override void LogAllPlayerPositionsEvent(int EventID)
     {
@@ -186,7 +190,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerStringEvent;
     /// <summary>
-    /// Function: LogPlayerStringEvent
+    /// Function: LogPlayerStringEvent<br/>
+    /// Native code at BatmanAK.exe+0x536FB0 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerStringEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.FStringArg EventString)
     {
@@ -211,7 +216,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerFloatEvent;
     /// <summary>
-    /// Function: LogPlayerFloatEvent
+    /// Function: LogPlayerFloatEvent<br/>
+    /// Native code at BatmanAK.exe+0x4A2650 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerFloatEvent(int EventID, BmSDK.Engine.Controller Player, float Value)
     {
@@ -235,7 +241,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerIntEvent;
     /// <summary>
-    /// Function: LogPlayerIntEvent
+    /// Function: LogPlayerIntEvent<br/>
+    /// Native code at BatmanAK.exe+0x4A23B0 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerIntEvent(int EventID, BmSDK.Engine.Controller Player, int Value)
     {
@@ -259,7 +266,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseStatsFile;
     /// <summary>
-    /// Function: CloseStatsFile
+    /// Function: CloseStatsFile<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe override void CloseStatsFile()
     {
@@ -280,7 +288,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SerializeHeader;
     /// <summary>
-    /// Function: SerializeHeader
+    /// Function: SerializeHeader<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe override bool SerializeHeader()
     {
@@ -301,7 +310,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenStatsFile;
     /// <summary>
-    /// Function: OpenStatsFile
+    /// Function: OpenStatsFile<br/>
+    /// Native code at BatmanAK.exe+0x536E60 in the Steam build
     /// </summary>
     public unsafe override bool OpenStatsFile(BmSDK.FStringArg Filename)
     {
@@ -338,7 +348,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGameActionFilter;
     /// <summary>
-    /// Function: SetGameActionFilter
+    /// Function: SetGameActionFilter<br/>
+    /// Native code at BatmanAK.exe+0x539430 in the Steam build
     /// </summary>
     public unsafe virtual void SetGameActionFilter(BmSDK.FStringArg actionName, bool bAllThatStartWithName, bool bEnable)
     {
@@ -363,7 +374,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickHydra;
     /// <summary>
-    /// Function: TickHydra
+    /// Function: TickHydra<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void TickHydra()
     {
@@ -384,7 +396,8 @@ public partial class RGameplayEventsHydra : BmSDK.Engine.GameplayEventsWriter, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB400F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

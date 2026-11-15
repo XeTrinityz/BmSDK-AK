@@ -981,7 +981,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCloseProximity;
     /// <summary>
-    /// Function: CheckForCloseProximity
+    /// Function: CheckForCloseProximity<br/>
+    /// Native code at BatmanAK.exe+0x4FB460 in the Steam build
     /// </summary>
     public unsafe override bool CheckForCloseProximity(float DeltaTime)
     {
@@ -1003,7 +1004,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Check2DProximity;
     /// <summary>
-    /// Function: Check2DProximity
+    /// Function: Check2DProximity<br/>
+    /// Native code at BatmanAK.exe+0x488A10 in the Steam build
     /// </summary>
     public unsafe virtual void Check2DProximity()
     {
@@ -1583,7 +1585,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetEventAndOverlayVars;
     /// <summary>
-    /// Function: ResetEventAndOverlayVars
+    /// Function: ResetEventAndOverlayVars<br/>
+    /// Native code at BatmanAK.exe+0x4FB330 in the Steam build
     /// </summary>
     public unsafe virtual void ResetEventAndOverlayVars(float DeltaTime)
     {
@@ -1605,7 +1608,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGuids;
     /// <summary>
-    /// Function: LogGuids
+    /// Function: LogGuids<br/>
+    /// Native code at BatmanAK.exe+0x488980 in the Steam build
     /// </summary>
     public unsafe virtual void LogGuids(BmSDK.GameObject.FGuid Gid)
     {
@@ -1627,7 +1631,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReadyToPlayDialogueRandomAnimation;
     /// <summary>
-    /// Function: IsReadyToPlayDialogueRandomAnimation
+    /// Function: IsReadyToPlayDialogueRandomAnimation<br/>
+    /// Native code at BatmanAK.exe+0x46FA90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsReadyToPlayDialogueRandomAnimation()
     {
@@ -1648,7 +1653,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReadyToPlayRandomAnimation;
     /// <summary>
-    /// Function: IsReadyToPlayRandomAnimation
+    /// Function: IsReadyToPlayRandomAnimation<br/>
+    /// Native code at BatmanAK.exe+0x488930 in the Steam build
     /// </summary>
     public unsafe virtual bool IsReadyToPlayRandomAnimation()
     {
@@ -1669,7 +1675,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReadyToPlayEvent;
     /// <summary>
-    /// Function: IsReadyToPlayEvent
+    /// Function: IsReadyToPlayEvent<br/>
+    /// Native code at BatmanAK.exe+0x48B4C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsReadyToPlayEvent()
     {
@@ -1690,7 +1697,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReadyToPlayStartledAnimation;
     /// <summary>
-    /// Function: IsReadyToPlayStartledAnimation
+    /// Function: IsReadyToPlayStartledAnimation<br/>
+    /// Native code at BatmanAK.exe+0x48B470 in the Steam build
     /// </summary>
     public unsafe override bool IsReadyToPlayStartledAnimation()
     {
@@ -1711,7 +1719,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNotPlayingTransition;
     /// <summary>
-    /// Function: IsNotPlayingTransition
+    /// Function: IsNotPlayingTransition<br/>
+    /// Native code at BatmanAK.exe+0x46A620 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNotPlayingTransition()
     {
@@ -1732,7 +1741,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTransitionInOver;
     /// <summary>
-    /// Function: IsTransitionInOver
+    /// Function: IsTransitionInOver<br/>
+    /// Native code at BatmanAK.exe+0x4888E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTransitionInOver()
     {
@@ -1753,7 +1763,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInTransitionIn;
     /// <summary>
-    /// Function: IsInTransitionIn
+    /// Function: IsInTransitionIn<br/>
+    /// Native code at BatmanAK.exe+0x488890 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInTransitionIn()
     {
@@ -1774,7 +1785,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsExitAnimationOver;
     /// <summary>
-    /// Function: IsExitAnimationOver
+    /// Function: IsExitAnimationOver<br/>
+    /// Native code at BatmanAK.exe+0x48B420 in the Steam build
     /// </summary>
     public unsafe virtual bool IsExitAnimationOver()
     {
@@ -1795,7 +1807,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNotPlayingOverlay;
     /// <summary>
-    /// Function: IsNotPlayingOverlay
+    /// Function: IsNotPlayingOverlay<br/>
+    /// Native code at BatmanAK.exe+0x488840 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNotPlayingOverlay()
     {
@@ -1816,7 +1829,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitCalled;
     /// <summary>
-    /// Function: ExitCalled
+    /// Function: ExitCalled<br/>
+    /// Native code at BatmanAK.exe+0x4887F0 in the Steam build
     /// </summary>
     public unsafe virtual bool ExitCalled()
     {
@@ -1837,7 +1851,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAbsoluteTeleport;
     /// <summary>
-    /// Function: CheckAbsoluteTeleport
+    /// Function: CheckAbsoluteTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4887B0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckAbsoluteTeleport()
     {
@@ -1858,7 +1873,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeIdleTick;
     /// <summary>
-    /// Function: NativeIdleTick
+    /// Function: NativeIdleTick<br/>
+    /// Native code at BatmanAK.exe+0x4FB200 in the Steam build
     /// </summary>
     public unsafe virtual void NativeIdleTick(float DeltaTime)
     {
@@ -1880,7 +1896,8 @@ public partial class RBM2Behaviour_IdleConfig : BmSDK.BmGame.RBMBehaviour_MoveTo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNotifies;
     /// <summary>
-    /// Function: GetNotifies
+    /// Function: GetNotifies<br/>
+    /// Native code at BatmanAK.exe+0x563E10 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNotifies(out int RunningCounter, out BmSDK.TArray<BmSDK.BmGame.RBM2Behaviour_IdleConfig.FNotifyIdentifier> ListToBuild, BmSDK.FName AnimationName)
     {

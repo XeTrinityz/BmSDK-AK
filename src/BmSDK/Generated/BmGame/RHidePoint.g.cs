@@ -228,7 +228,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointLinked;
     /// <summary>
-    /// Function: IsHidePointLinked
+    /// Function: IsHidePointLinked<br/>
+    /// Native code at BatmanAK.exe+0x4E81E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHidePointLinked(BmSDK.BmGame.RHidePoint TestPoint)
     {
@@ -418,7 +419,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDestroyedState;
     /// <summary>
-    /// Function: LoadDestroyedState
+    /// Function: LoadDestroyedState<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void LoadDestroyedState()
     {
@@ -439,7 +441,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDestroyedState;
     /// <summary>
-    /// Function: SaveDestroyedState
+    /// Function: SaveDestroyedState<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SaveDestroyedState()
     {
@@ -617,7 +620,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerPerchPosition;
     /// <summary>
-    /// Function: GetPlayerPerchPosition
+    /// Function: GetPlayerPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x4E8090 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPlayerPerchPosition(BmSDK.BmGame.RPawnPlayer Player)
     {
@@ -639,7 +643,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRedHoodPerchPosition;
     /// <summary>
-    /// Function: GetRedHoodPerchPosition
+    /// Function: GetRedHoodPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRedHoodPerchPosition()
     {
@@ -660,7 +665,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCatwomanPerchPosition;
     /// <summary>
-    /// Function: GetCatwomanPerchPosition
+    /// Function: GetCatwomanPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x48DDF0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCatwomanPerchPosition()
     {
@@ -681,7 +687,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatmanPerchPosition;
     /// <summary>
-    /// Function: GetBatmanPerchPosition
+    /// Function: GetBatmanPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x4816C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBatmanPerchPosition()
     {
@@ -702,7 +709,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrapplePosition;
     /// <summary>
-    /// Function: GetGrapplePosition
+    /// Function: GetGrapplePosition<br/>
+    /// Native code at BatmanAK.exe+0x4815D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGrapplePosition(System.Numerics.Vector3 CheckLocation, System.Numerics.Vector3 CheckDirection)
     {
@@ -725,7 +733,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateForGrapple;
     /// <summary>
-    /// Function: DeactivateForGrapple
+    /// Function: DeactivateForGrapple<br/>
+    /// Native code at BatmanAK.exe+0x481590 in the Steam build
     /// </summary>
     public unsafe virtual void DeactivateForGrapple()
     {
@@ -746,7 +755,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateForGrapple;
     /// <summary>
-    /// Function: ActivateForGrapple
+    /// Function: ActivateForGrapple<br/>
+    /// Native code at BatmanAK.exe+0x481550 in the Steam build
     /// </summary>
     public unsafe virtual void ActivateForGrapple()
     {
@@ -1075,7 +1085,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestPosition;
     /// <summary>
-    /// Function: GetAIPointOfInterestPosition
+    /// Function: GetAIPointOfInterestPosition<br/>
+    /// Native code at BatmanAK.exe+0x46A560 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestPosition()
     {
@@ -1110,7 +1121,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
-    /// Function: GetFOVCheckLocation
+    /// Function: GetFOVCheckLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
@@ -1131,7 +1143,8 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkedHidePoint;
     /// <summary>
-    /// Function: GetLinkedHidePoint
+    /// Function: GetLinkedHidePoint<br/>
+    /// Native code at BatmanAK.exe+0x4E7F60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetLinkedHidePoint(int I)
     {

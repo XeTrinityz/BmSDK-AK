@@ -75,7 +75,8 @@ public partial class OnlineStats : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewName;
     /// <summary>
-    /// Function: GetViewName
+    /// Function: GetViewName<br/>
+    /// Native code at BatmanAK.exe+0xB7EB20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetViewName(int ViewId)
     {
@@ -97,7 +98,8 @@ public partial class OnlineStats : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewId;
     /// <summary>
-    /// Function: GetViewId
+    /// Function: GetViewId<br/>
+    /// Native code at BatmanAK.exe+0xB80B00 in the Steam build
     /// </summary>
     public unsafe virtual bool GetViewId(BmSDK.FName ViewName, out int ViewId)
     {

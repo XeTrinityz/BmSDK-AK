@@ -183,7 +183,8 @@ public partial class RBMBehaviour_CombatJokerBoxer : BmSDK.BmGame.RBMBehaviour_C
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceToGiveToPawn;
     /// <summary>
-    /// Function: GetForceToGiveToPawn
+    /// Function: GetForceToGiveToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FD6A0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {

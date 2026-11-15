@@ -123,7 +123,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToTimeString;
     /// <summary>
-    /// Function: ToTimeString
+    /// Function: ToTimeString<br/>
+    /// Native code at BatmanAK.exe+0x543740 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ToTimeString(int Value, bool bMilliseconds)
     {
@@ -871,7 +872,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFrontendGroupByID;
     /// <summary>
-    /// Function: GetFrontendGroupByID
+    /// Function: GetFrontendGroupByID<br/>
+    /// Native code at BatmanAK.exe+0x51A590 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.EChallengeFrontendGroup GetFrontendGroupByID(int Id)
     {
@@ -941,7 +943,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeMapIndex;
     /// <summary>
-    /// Function: GetChallengeMapIndex
+    /// Function: GetChallengeMapIndex<br/>
+    /// Native code at BatmanAK.exe+0xB7F000 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeMapIndex(int Id)
     {
@@ -963,7 +966,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRGI;
     /// <summary>
-    /// Function: GetRGI
+    /// Function: GetRGI<br/>
+    /// Native code at BatmanAK.exe+0x4969D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo GetRGI()
     {
@@ -1178,7 +1182,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadLBCache;
     /// <summary>
-    /// Function: LoadLBCache
+    /// Function: LoadLBCache<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void LoadLBCache()
     {
@@ -1199,7 +1204,8 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveLBCache;
     /// <summary>
-    /// Function: SaveLBCache
+    /// Function: SaveLBCache<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void SaveLBCache()
     {

@@ -104,7 +104,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PerformVoiceSynthesiserFloorTrace;
     /// <summary>
-    /// Function: PerformVoiceSynthesiserFloorTrace
+    /// Function: PerformVoiceSynthesiserFloorTrace<br/>
+    /// Native code at BatmanAK.exe+0x510260 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor PerformVoiceSynthesiserFloorTrace(out System.Numerics.Vector3 vHitLocation, out System.Numerics.Vector3 vHitNormal, System.Numerics.Vector3 vCheckEnd, System.Numerics.Vector3 vCheckStart, BmSDK.Component.ECollisionFilter TraceCollisionFilter, System.Numerics.Vector3 vCheckExtent, out BmSDK.Engine.Actor.FTraceHitInfo MyHitInfo, int iTraceFlags)
     {
@@ -139,7 +140,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowHighlightToBeHidden;
     /// <summary>
-    /// Function: AllowHighlightToBeHidden
+    /// Function: AllowHighlightToBeHidden<br/>
+    /// Native code at BatmanAK.exe+0x5573C0 in the Steam build
     /// </summary>
     public unsafe override bool AllowHighlightToBeHidden(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -161,7 +163,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCorrectMIC;
     /// <summary>
-    /// Function: GetCorrectMIC
+    /// Function: GetCorrectMIC<br/>
+    /// Native code at BatmanAK.exe+0x50C5F0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.MaterialInterface GetCorrectMIC(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
@@ -191,7 +194,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateIndividualTargetHighlight;
     /// <summary>
-    /// Function: PrimedUpdateIndividualTargetHighlight
+    /// Function: PrimedUpdateIndividualTargetHighlight<br/>
+    /// Native code at BatmanAK.exe+0xB86560 in the Steam build
     /// </summary>
     public unsafe override void PrimedUpdateIndividualTargetHighlight(BmSDK.Engine.Actor CheckTarget)
     {
@@ -213,7 +217,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateHighlights;
     /// <summary>
-    /// Function: PrimedUpdateHighlights
+    /// Function: PrimedUpdateHighlights<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe override void PrimedUpdateHighlights()
     {
@@ -270,7 +275,8 @@ public partial class RVoiceSynthesiser : BmSDK.BmGame.RInventoryGadget, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPylon;
     /// <summary>
-    /// Function: CheckForPylon
+    /// Function: CheckForPylon<br/>
+    /// Native code at BatmanAK.exe+0x493720 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon CheckForPylon(System.Numerics.Vector3 CheckLocation)
     {

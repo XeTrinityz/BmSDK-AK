@@ -80,7 +80,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetOrigin;
     /// <summary>
-    /// Function: GetAutoTargetOrigin
+    /// Function: GetAutoTargetOrigin<br/>
+    /// Native code at BatmanAK.exe+0x48EC40 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAutoTargetOrigin(BmSDK.Rotator AimDirection)
     {
@@ -102,7 +103,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
-    /// Function: GetAutoTargetRotation
+    /// Function: GetAutoTargetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetAutoTargetRotation()
     {
@@ -166,7 +168,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDumbFireTarget;
     /// <summary>
-    /// Function: GetDumbFireTarget
+    /// Function: GetDumbFireTarget<br/>
+    /// Native code at BatmanAK.exe+0x49B700 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetDumbFireTarget(System.Numerics.Vector3 AimDirection)
     {
@@ -188,7 +191,8 @@ public partial class RBatmobileEMPMissile : BmSDK.BmGame.RPursuitModeMissileLaun
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchLockOnTarget;
     /// <summary>
-    /// Function: SwitchLockOnTarget
+    /// Function: SwitchLockOnTarget<br/>
+    /// Native code at BatmanAK.exe+0x49B670 in the Steam build
     /// </summary>
     public unsafe virtual void SwitchLockOnTarget(System.Numerics.Vector3 WorldDirection)
     {

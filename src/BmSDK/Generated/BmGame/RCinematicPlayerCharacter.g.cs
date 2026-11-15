@@ -75,7 +75,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMeshComponents;
     /// <summary>
-    /// Function: GetMeshComponents
+    /// Function: GetMeshComponents<br/>
+    /// Native code at BatmanAK.exe+0x5529B0 in the Steam build
     /// </summary>
     public unsafe override void GetMeshComponents(int Flags, out BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Out)
     {
@@ -98,7 +99,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDamageLevel;
     /// <summary>
-    /// Function: RefreshDamageLevel
+    /// Function: RefreshDamageLevel<br/>
+    /// Native code at BatmanAK.exe+0x4B0FD0 in the Steam build
     /// </summary>
     public unsafe virtual void RefreshDamageLevel(BmSDK.FName PlayerCharacterName)
     {
@@ -120,7 +122,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCharacterMeshData;
     /// <summary>
-    /// Function: SetCharacterMeshData
+    /// Function: SetCharacterMeshData<br/>
+    /// Native code at BatmanAK.exe+0x4B0EA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCharacterMeshData(BmSDK.BmGame.RAddContentPlayerCharacterMesh MeshData)
     {
@@ -142,7 +145,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachPlayerMesh;
     /// <summary>
-    /// Function: DetachPlayerMesh
+    /// Function: DetachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void DetachPlayerMesh()
     {
@@ -163,7 +167,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockOnPlayerMeshAttached;
     /// <summary>
-    /// Function: BlockOnPlayerMeshAttached
+    /// Function: BlockOnPlayerMeshAttached<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void BlockOnPlayerMeshAttached()
     {
@@ -184,7 +189,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAttachPlayerMesh;
     /// <summary>
-    /// Function: CancelAttachPlayerMesh
+    /// Function: CancelAttachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void CancelAttachPlayerMesh()
     {
@@ -205,7 +211,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachPlayerMesh;
     /// <summary>
-    /// Function: AttachPlayerMesh
+    /// Function: AttachPlayerMesh<br/>
+    /// Native code at BatmanAK.exe+0x46C620 in the Steam build
     /// </summary>
     public unsafe virtual void AttachPlayerMesh()
     {
@@ -226,7 +233,8 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkinName;
     /// <summary>
-    /// Function: GetSkinName
+    /// Function: GetSkinName<br/>
+    /// Native code at BatmanAK.exe+0x53AB90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSkinName()
     {

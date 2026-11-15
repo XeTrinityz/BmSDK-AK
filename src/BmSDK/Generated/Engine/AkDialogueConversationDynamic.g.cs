@@ -95,7 +95,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsResolved;
     /// <summary>
-    /// Function: IsResolved
+    /// Function: IsResolved<br/>
+    /// Native code at BatmanAK.exe+0xB3E880 in the Steam build
     /// </summary>
     public unsafe virtual bool IsResolved()
     {
@@ -116,7 +117,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Unresolve;
     /// <summary>
-    /// Function: Unresolve
+    /// Function: Unresolve<br/>
+    /// Native code at BatmanAK.exe+0xB50A70 in the Steam build
     /// </summary>
     public unsafe virtual void Unresolve()
     {
@@ -137,7 +139,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoResolve;
     /// <summary>
-    /// Function: AutoResolve
+    /// Function: AutoResolve<br/>
+    /// Native code at BatmanAK.exe+0xB3E7D0 in the Steam build
     /// </summary>
     public unsafe virtual bool AutoResolve(bool forceMultiVoiceConv = default)
     {
@@ -159,7 +162,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveFromIds;
     /// <summary>
-    /// Function: ResolveFromIds
+    /// Function: ResolveFromIds<br/>
+    /// Native code at BatmanAK.exe+0xBB4240 in the Steam build
     /// </summary>
     public unsafe virtual bool ResolveFromIds(BmSDK.TArray<int> spkrVoiceIds)
     {
@@ -181,7 +185,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Resolve;
     /// <summary>
-    /// Function: Resolve
+    /// Function: Resolve<br/>
+    /// Native code at BatmanAK.exe+0xBB4180 in the Steam build
     /// </summary>
     public unsafe virtual bool Resolve(BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> spkrVoices)
     {
@@ -203,7 +208,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveAll;
     /// <summary>
-    /// Function: ResolveAll
+    /// Function: ResolveAll<br/>
+    /// Native code at BatmanAK.exe+0xBB40C0 in the Steam build
     /// </summary>
     public unsafe virtual bool ResolveAll(BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> spkrVoices)
     {
@@ -225,7 +231,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceLastPlayed;
     /// <summary>
-    /// Function: GetTimeSinceLastPlayed
+    /// Function: GetTimeSinceLastPlayed<br/>
+    /// Native code at BatmanAK.exe+0xB3E780 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeSinceLastPlayed()
     {
@@ -246,7 +253,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalPlayCount;
     /// <summary>
-    /// Function: GetTotalPlayCount
+    /// Function: GetTotalPlayCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E730 in the Steam build
     /// </summary>
     public unsafe virtual float GetTotalPlayCount()
     {
@@ -267,7 +275,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxPlayCount;
     /// <summary>
-    /// Function: GetMaxPlayCount
+    /// Function: GetMaxPlayCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E6E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxPlayCount()
     {
@@ -288,7 +297,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDynamicVoiceCount;
     /// <summary>
-    /// Function: GetDynamicVoiceCount
+    /// Function: GetDynamicVoiceCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E5C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetDynamicVoiceCount()
     {
@@ -309,7 +319,8 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceCount;
     /// <summary>
-    /// Function: GetVoiceCount
+    /// Function: GetVoiceCount<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe override int GetVoiceCount()
     {

@@ -94,7 +94,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreTurretLockedAngle;
     /// <summary>
-    /// Function: StoreTurretLockedAngle
+    /// Function: StoreTurretLockedAngle<br/>
+    /// Native code at BatmanAK.exe+0x498FE0 in the Steam build
     /// </summary>
     public unsafe virtual void StoreTurretLockedAngle()
     {
@@ -220,7 +221,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerSpotted;
     /// <summary>
-    /// Function: PlayerSpotted
+    /// Function: PlayerSpotted<br/>
+    /// Native code at BatmanAK.exe+0x5214F0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayerSpotted(BmSDK.Engine.Actor Player)
     {
@@ -373,7 +375,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAwareOfPlayer;
     /// <summary>
-    /// Function: SetAwareOfPlayer
+    /// Function: SetAwareOfPlayer<br/>
+    /// Native code at BatmanAK.exe+0x5213D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAwareOfPlayer(bool bAware)
     {
@@ -646,7 +649,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAsFriendlyVehicle;
     /// <summary>
-    /// Function: SetAsFriendlyVehicle
+    /// Function: SetAsFriendlyVehicle<br/>
+    /// Native code at BatmanAK.exe+0x5212B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAsFriendlyVehicle(bool Friendly)
     {
@@ -1503,7 +1507,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveJoiner;
     /// <summary>
-    /// Function: RemoveJoiner
+    /// Function: RemoveJoiner<br/>
+    /// Native code at BatmanAK.exe+0x521190 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveJoiner(BmSDK.BmGame.RVehicleNPC Joiner)
     {
@@ -1525,7 +1530,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddJoiner;
     /// <summary>
-    /// Function: AddJoiner
+    /// Function: AddJoiner<br/>
+    /// Native code at BatmanAK.exe+0x521070 in the Steam build
     /// </summary>
     public unsafe virtual void AddJoiner(BmSDK.BmGame.RVehicleNPC Joiner)
     {
@@ -1547,7 +1553,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFollower;
     /// <summary>
-    /// Function: RemoveFollower
+    /// Function: RemoveFollower<br/>
+    /// Native code at BatmanAK.exe+0x520F50 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveFollower(BmSDK.BmGame.RVehicleNPC follower)
     {
@@ -1569,7 +1576,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFollower;
     /// <summary>
-    /// Function: AddFollower
+    /// Function: AddFollower<br/>
+    /// Native code at BatmanAK.exe+0x520E30 in the Steam build
     /// </summary>
     public unsafe virtual void AddFollower(BmSDK.BmGame.RVehicleNPC follower)
     {
@@ -1736,7 +1744,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InActiveRiotZone;
     /// <summary>
-    /// Function: InActiveRiotZone
+    /// Function: InActiveRiotZone<br/>
+    /// Native code at BatmanAK.exe+0x498F90 in the Steam build
     /// </summary>
     public unsafe virtual bool InActiveRiotZone()
     {
@@ -1757,7 +1766,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNearSpawnedWanderers;
     /// <summary>
-    /// Function: IsNearSpawnedWanderers
+    /// Function: IsNearSpawnedWanderers<br/>
+    /// Native code at BatmanAK.exe+0x520CF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNearSpawnedWanderers(float Range)
     {
@@ -2189,7 +2199,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePassengers;
     /// <summary>
-    /// Function: UpdatePassengers
+    /// Function: UpdatePassengers<br/>
+    /// Native code at BatmanAK.exe+0x520BC0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePassengers(float DeltaTime)
     {
@@ -2211,7 +2222,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayPassengerIdleAnim;
     /// <summary>
-    /// Function: PlayPassengerIdleAnim
+    /// Function: PlayPassengerIdleAnim<br/>
+    /// Native code at BatmanAK.exe+0x520790 in the Steam build
     /// </summary>
     public unsafe virtual void PlayPassengerIdleAnim(int PassengerIndex, BmSDK.Engine.AnimSet AnimSet, BmSDK.FName AnimName, BmSDK.Engine.AnimSet AnimSetFinalPose, BmSDK.FName FinalPoseName)
     {
@@ -2237,7 +2249,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPassengerPose;
     /// <summary>
-    /// Function: SetPassengerPose
+    /// Function: SetPassengerPose<br/>
+    /// Native code at BatmanAK.exe+0x520430 in the Steam build
     /// </summary>
     public unsafe virtual void SetPassengerPose(int PassengerIndex, BmSDK.Engine.AnimSet AnimSet, BmSDK.FName AnimName, bool Clean = default, bool bMirrored = default)
     {
@@ -2321,7 +2334,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSToShoot;
     /// <summary>
-    /// Function: CheckLOSToShoot
+    /// Function: CheckLOSToShoot<br/>
+    /// Native code at BatmanAK.exe+0x5201F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLOSToShoot(System.Numerics.Vector3 ShootLocation, BmSDK.Engine.Actor ShootTarget, bool IsAwareOfPlayer = default, System.Numerics.Vector3 OverrideTargetLocation = default, bool bIgnoreOtherVehicles = default)
     {
@@ -2347,7 +2361,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShootTarget;
     /// <summary>
-    /// Function: GetShootTarget
+    /// Function: GetShootTarget<br/>
+    /// Native code at BatmanAK.exe+0x5200A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetShootTarget(BmSDK.Engine.Actor Target)
     {
@@ -2385,7 +2400,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShoot;
     /// <summary>
-    /// Function: UpdateShoot
+    /// Function: UpdateShoot<br/>
+    /// Native code at BatmanAK.exe+0x51FEA0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateShoot(float DeltaTime, BmSDK.Engine.Actor Target)
     {
@@ -2408,7 +2424,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLineOfSightFromMuzzleToTarget;
     /// <summary>
-    /// Function: HasLineOfSightFromMuzzleToTarget
+    /// Function: HasLineOfSightFromMuzzleToTarget<br/>
+    /// Native code at BatmanAK.exe+0x51FD30 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLineOfSightFromMuzzleToTarget(BmSDK.Engine.Actor Target, float ConeAngleDeg = default)
     {
@@ -2431,7 +2448,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTurretRotator;
     /// <summary>
-    /// Function: GetTurretRotator
+    /// Function: GetTurretRotator<br/>
+    /// Native code at BatmanAK.exe+0x498F30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetTurretRotator()
     {
@@ -2467,7 +2485,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTurretRot;
     /// <summary>
-    /// Function: UpdateTurretRot
+    /// Function: UpdateTurretRot<br/>
+    /// Native code at BatmanAK.exe+0x51FAA0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateTurretRot(float DeltaTime, System.Numerics.Vector3 TargetLocation, BmSDK.Rotator RotationOffset = default, bool UseMachineGun = default, float GoodAimToleranceYaw = default, float GoodAimTolerancePitch = default)
     {
@@ -2508,7 +2527,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForAllPassengersDead;
     /// <summary>
-    /// Function: CheckForAllPassengersDead
+    /// Function: CheckForAllPassengersDead<br/>
+    /// Native code at BatmanAK.exe+0x498EF0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForAllPassengersDead()
     {
@@ -2557,7 +2577,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVehicleStuckSuicide;
     /// <summary>
-    /// Function: UpdateVehicleStuckSuicide
+    /// Function: UpdateVehicleStuckSuicide<br/>
+    /// Native code at BatmanAK.exe+0x51F8B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVehicleStuckSuicide(float DeltaTime, BmSDK.Class DamageType)
     {
@@ -2580,7 +2601,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCrushed;
     /// <summary>
-    /// Function: UpdateCrushed
+    /// Function: UpdateCrushed<br/>
+    /// Native code at BatmanAK.exe+0x51F6C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCrushed(float DeltaTime, BmSDK.Class DamageType)
     {
@@ -2767,7 +2789,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDeadVehicle;
     /// <summary>
-    /// Function: SpawnDeadVehicle
+    /// Function: SpawnDeadVehicle<br/>
+    /// Native code at BatmanAK.exe+0x51F520 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDeadVehicle SpawnDeadVehicle(BmSDK.BmGame.RDeadVehicle Archetype, BmSDK.Rotator RotatioOffset = default)
     {
@@ -2937,7 +2960,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMusicBlindedTime;
     /// <summary>
-    /// Function: SetMusicBlindedTime
+    /// Function: SetMusicBlindedTime<br/>
+    /// Native code at BatmanAK.exe+0x498EB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetMusicBlindedTime()
     {
@@ -2958,7 +2982,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBlindedStatus;
     /// <summary>
-    /// Function: UpdateBlindedStatus
+    /// Function: UpdateBlindedStatus<br/>
+    /// Native code at BatmanAK.exe+0x51F3F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBlindedStatus(float DeltaTime)
     {
@@ -2980,7 +3005,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBlindedTimeRemaining;
     /// <summary>
-    /// Function: GetBlindedTimeRemaining
+    /// Function: GetBlindedTimeRemaining<br/>
+    /// Native code at BatmanAK.exe+0x498E60 in the Steam build
     /// </summary>
     public unsafe virtual float GetBlindedTimeRemaining()
     {
@@ -3001,7 +3027,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
-    /// Function: IsBlinded
+    /// Function: IsBlinded<br/>
+    /// Native code at BatmanAK.exe+0x498E10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlinded()
     {
@@ -3440,7 +3467,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDamageFromEMP;
     /// <summary>
-    /// Function: UpdateDamageFromEMP
+    /// Function: UpdateDamageFromEMP<br/>
+    /// Native code at BatmanAK.exe+0x523FF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDamageFromEMP(float DeltaTime)
     {
@@ -3609,7 +3637,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AccumulateCrushed;
     /// <summary>
-    /// Function: AccumulateCrushed
+    /// Function: AccumulateCrushed<br/>
+    /// Native code at BatmanAK.exe+0x51F290 in the Steam build
     /// </summary>
     public unsafe virtual void AccumulateCrushed(System.Numerics.Vector3 Force, bool IsWheel)
     {
@@ -3668,7 +3697,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumPassengers;
     /// <summary>
-    /// Function: GetNumPassengers
+    /// Function: GetNumPassengers<br/>
+    /// Native code at BatmanAK.exe+0x498DC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumPassengers()
     {
@@ -3759,7 +3789,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpecificallyLookingForPlayer;
     /// <summary>
-    /// Function: SpecificallyLookingForPlayer
+    /// Function: SpecificallyLookingForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x498D70 in the Steam build
     /// </summary>
     public unsafe virtual bool SpecificallyLookingForPlayer()
     {
@@ -3780,7 +3811,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AwareOfPlayer;
     /// <summary>
-    /// Function: AwareOfPlayer
+    /// Function: AwareOfPlayer<br/>
+    /// Native code at BatmanAK.exe+0x498D20 in the Steam build
     /// </summary>
     public unsafe virtual bool AwareOfPlayer()
     {
@@ -3801,7 +3833,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RadialExplosion;
     /// <summary>
-    /// Function: RadialExplosion
+    /// Function: RadialExplosion<br/>
+    /// Native code at BatmanAK.exe+0x51EF60 in the Steam build
     /// </summary>
     public unsafe virtual void RadialExplosion(System.Numerics.Vector3 Origin, float Radius, float Strength, byte Falloff, bool bVelChange)
     {
@@ -3827,7 +3860,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x51EBD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, BmSDK.Class NewWeaponClass)
     {
@@ -3852,7 +3886,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComputeNumLinksToRemoveForRunAway;
     /// <summary>
-    /// Function: ComputeNumLinksToRemoveForRunAway
+    /// Function: ComputeNumLinksToRemoveForRunAway<br/>
+    /// Native code at BatmanAK.exe+0x498C70 in the Steam build
     /// </summary>
     public unsafe virtual int ComputeNumLinksToRemoveForRunAway(out int NumSpansToRemove)
     {
@@ -3876,7 +3911,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSelfDriveStuckTime;
     /// <summary>
-    /// Function: UpdateSelfDriveStuckTime
+    /// Function: UpdateSelfDriveStuckTime<br/>
+    /// Native code at BatmanAK.exe+0x51E9E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSelfDriveStuckTime(bool Reversing, float DeltaTime)
     {
@@ -3899,7 +3935,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe override void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -3921,7 +3958,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRigidBodyCollisionEnabled;
     /// <summary>
-    /// Function: SetRigidBodyCollisionEnabled
+    /// Function: SetRigidBodyCollisionEnabled<br/>
+    /// Native code at BatmanAK.exe+0x4DC4B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRigidBodyCollisionEnabled(bool Enabled)
     {
@@ -3943,7 +3981,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
-    /// Function: UpdateLights
+    /// Function: UpdateLights<br/>
+    /// Native code at BatmanAK.exe+0x4F3D60 in the Steam build
     /// </summary>
     public unsafe override void UpdateLights(float DeltaTime)
     {
@@ -3965,7 +4004,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTakedownTarget;
     /// <summary>
-    /// Function: IsValidTakedownTarget
+    /// Function: IsValidTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x51E8A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTakedownTarget(bool StandingOnVehicle)
     {
@@ -3987,7 +4027,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRockAssertWithMessage;
     /// <summary>
-    /// Function: ForceRockAssertWithMessage
+    /// Function: ForceRockAssertWithMessage<br/>
+    /// Native code at BatmanAK.exe+0x547E40 in the Steam build
     /// </summary>
     public unsafe virtual void ForceRockAssertWithMessage(BmSDK.FStringArg Message)
     {
@@ -4010,7 +4051,8 @@ public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventFallingOutOfWorld;
     /// <summary>
-    /// Function: PreventFallingOutOfWorld
+    /// Function: PreventFallingOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x51E770 in the Steam build
     /// </summary>
     public unsafe virtual void PreventFallingOutOfWorld(float DeltaTime)
     {

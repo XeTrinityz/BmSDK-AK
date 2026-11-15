@@ -665,7 +665,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CallForThugHelper;
     /// <summary>
-    /// Function: CallForThugHelper
+    /// Function: CallForThugHelper<br/>
+    /// Native code at BatmanAK.exe+0x500A10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain CallForThugHelper(BmSDK.BmGame.RPawnVillain ThugInNeed)
     {
@@ -772,7 +773,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnHealthMultiplier;
     /// <summary>
-    /// Function: GetPawnHealthMultiplier
+    /// Function: GetPawnHealthMultiplier<br/>
+    /// Native code at BatmanAK.exe+0x4884A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetPawnHealthMultiplier()
     {
@@ -837,7 +839,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumActiveCombatThugs;
     /// <summary>
-    /// Function: GetNumActiveCombatThugs
+    /// Function: GetNumActiveCombatThugs<br/>
+    /// Native code at BatmanAK.exe+0x48A1B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumActiveCombatThugs()
     {
@@ -858,7 +861,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumJoiningCombatantsForInterrogation;
     /// <summary>
-    /// Function: GetNumJoiningCombatantsForInterrogation
+    /// Function: GetNumJoiningCombatantsForInterrogation<br/>
+    /// Native code at BatmanAK.exe+0x48A160 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumJoiningCombatantsForInterrogation()
     {
@@ -879,7 +883,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumNonStasisJoiningCombatants;
     /// <summary>
-    /// Function: GetNumNonStasisJoiningCombatants
+    /// Function: GetNumNonStasisJoiningCombatants<br/>
+    /// Native code at BatmanAK.exe+0x48A110 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumNonStasisJoiningCombatants()
     {
@@ -900,7 +905,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumJoiningCombatants;
     /// <summary>
-    /// Function: GetNumJoiningCombatants
+    /// Function: GetNumJoiningCombatants<br/>
+    /// Native code at BatmanAK.exe+0x48A0C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumJoiningCombatants()
     {
@@ -921,7 +927,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveJoiningCombatant;
     /// <summary>
-    /// Function: RemoveJoiningCombatant
+    /// Function: RemoveJoiningCombatant<br/>
+    /// Native code at BatmanAK.exe+0x5008E0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveJoiningCombatant(BmSDK.BmGame.RPawnVillain OldCombatant)
     {
@@ -943,7 +950,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddJoiningCombatant;
     /// <summary>
-    /// Function: AddJoiningCombatant
+    /// Function: AddJoiningCombatant<br/>
+    /// Native code at BatmanAK.exe+0x5007B0 in the Steam build
     /// </summary>
     public unsafe virtual void AddJoiningCombatant(BmSDK.BmGame.RPawnVillain NewCombatant)
     {
@@ -979,7 +987,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearWeaponConfigRef;
     /// <summary>
-    /// Function: ClearWeaponConfigRef
+    /// Function: ClearWeaponConfigRef<br/>
+    /// Native code at BatmanAK.exe+0x48A040 in the Steam build
     /// </summary>
     public unsafe virtual void ClearWeaponConfigRef(BmSDK.BmGame.RBMCombatManager.EWeaponConfigType ConfigType)
     {
@@ -1149,7 +1158,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDifficultyValue;
     /// <summary>
-    /// Function: GetDifficultyValue
+    /// Function: GetDifficultyValue<br/>
+    /// Native code at BatmanAK.exe+0x489F80 in the Steam build
     /// </summary>
     public unsafe virtual float GetDifficultyValue(BmSDK.BmGame.RBMCombatManager.EDifficultyType EDT, BmSDK.BmGame.RBMPawnAI TestPawn = default)
     {
@@ -1190,7 +1200,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerCombatEvent;
     /// <summary>
-    /// Function: TriggerCombatEvent
+    /// Function: TriggerCombatEvent<br/>
+    /// Native code at BatmanAK.exe+0x500480 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerCombatEvent(BmSDK.BmGame.RPawnCombat EventInstigator, System.Numerics.Vector3 EventLocation, System.Numerics.Vector3 SightingLocation, float LOSRadius = default, float NoLOSRadius = default, bool bCanAlertInOtherPylons = default, bool bForceSightingTimeUpdate = default, bool bFearTakedownReaction = default, bool bAlertRioters = default)
     {
@@ -1915,7 +1926,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckCameraTarget;
     /// <summary>
-    /// Function: CheckCameraTarget
+    /// Function: CheckCameraTarget<br/>
+    /// Native code at BatmanAK.exe+0x500220 in the Steam build
     /// </summary>
     public unsafe virtual void CheckCameraTarget(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn, BmSDK.Engine.Actor CheckCameraTargetActor, BmSDK.BmGame.RGameInfo.CameraLookAtSpeed CheckCameraLookAtSpeed, System.Numerics.Vector3 CheckCameraTargetOffset)
     {
@@ -1940,7 +1952,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatCameraScoreForPawn;
     /// <summary>
-    /// Function: GetCombatCameraScoreForPawn
+    /// Function: GetCombatCameraScoreForPawn<br/>
+    /// Native code at BatmanAK.exe+0x500030 in the Steam build
     /// </summary>
     public unsafe virtual float GetCombatCameraScoreForPawn(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn, BmSDK.BmGame.RPawnVillain TestPawn)
     {
@@ -2024,7 +2037,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatChapterForEnemySpawn;
     /// <summary>
-    /// Function: GetCombatChapterForEnemySpawn
+    /// Function: GetCombatChapterForEnemySpawn<br/>
+    /// Native code at BatmanAK.exe+0x4FFD90 in the Steam build
     /// </summary>
     public unsafe virtual float GetCombatChapterForEnemySpawn(int ActualChapter, BmSDK.BmGame.RBMPawnAI SpawnedThug, bool bIgnoreDDA)
     {
@@ -2048,7 +2062,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatChapterForEnemyMoves;
     /// <summary>
-    /// Function: GetCombatChapterForEnemyMoves
+    /// Function: GetCombatChapterForEnemyMoves<br/>
+    /// Native code at BatmanAK.exe+0x489F30 in the Steam build
     /// </summary>
     public unsafe virtual float GetCombatChapterForEnemyMoves()
     {
@@ -2069,7 +2084,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatChapter;
     /// <summary>
-    /// Function: GetCombatChapter
+    /// Function: GetCombatChapter<br/>
+    /// Native code at BatmanAK.exe+0x489DF0 in the Steam build
     /// </summary>
     public unsafe virtual float GetCombatChapter(int ActualChapter = default, bool bIgnoreDDA = default, BmSDK.BmGame.RPawnCombat TestPawn = default, bool bIgnorePlayerOverrideVolume = default)
     {
@@ -2313,7 +2329,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemovePawnFromList;
     /// <summary>
-    /// Function: RemovePawnFromList
+    /// Function: RemovePawnFromList<br/>
+    /// Native code at BatmanAK.exe+0x4FFC20 in the Steam build
     /// </summary>
     public unsafe virtual void RemovePawnFromList(BmSDK.BmGame.RPawnCombat ToRemove, bool bRemovedDueToKO = default)
     {
@@ -2380,7 +2397,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindTargetPlayer;
     /// <summary>
-    /// Function: FindTargetPlayer
+    /// Function: FindTargetPlayer<br/>
+    /// Native code at BatmanAK.exe+0x4FFAE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayerCombat FindTargetPlayer(BmSDK.BmGame.RPawnVillain Villain)
     {
@@ -2491,7 +2509,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCombatStepper;
     /// <summary>
-    /// Function: UpdateCombatStepper
+    /// Function: UpdateCombatStepper<br/>
+    /// Native code at BatmanAK.exe+0x489DB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCombatStepper()
     {
@@ -2512,7 +2531,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAllPlayersDead;
     /// <summary>
-    /// Function: AreAllPlayersDead
+    /// Function: AreAllPlayersDead<br/>
+    /// Native code at BatmanAK.exe+0x489D60 in the Steam build
     /// </summary>
     public unsafe virtual bool AreAllPlayersDead()
     {
@@ -2575,7 +2595,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAllPickupableThrownObjectAuras;
     /// <summary>
-    /// Function: UpdateAllPickupableThrownObjectAuras
+    /// Function: UpdateAllPickupableThrownObjectAuras<br/>
+    /// Native code at BatmanAK.exe+0x489D20 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAllPickupableThrownObjectAuras()
     {
@@ -3340,7 +3361,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAnyCombatantsTargettingPawn;
     /// <summary>
-    /// Function: AreAnyCombatantsTargettingPawn
+    /// Function: AreAnyCombatantsTargettingPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FF9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool AreAnyCombatantsTargettingPawn(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
@@ -3362,7 +3384,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiotCombatWallah;
     /// <summary>
-    /// Function: UpdateRiotCombatWallah
+    /// Function: UpdateRiotCombatWallah<br/>
+    /// Native code at BatmanAK.exe+0x4FF870 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRiotCombatWallah(float DeltaTime)
     {
@@ -3384,7 +3407,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartRiotCombatWallah;
     /// <summary>
-    /// Function: StartRiotCombatWallah
+    /// Function: StartRiotCombatWallah<br/>
+    /// Native code at BatmanAK.exe+0x488370 in the Steam build
     /// </summary>
     public unsafe virtual void StartRiotCombatWallah()
     {
@@ -3405,7 +3429,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPosInBatmobileLOSForTakedown;
     /// <summary>
-    /// Function: IsPosInBatmobileLOSForTakedown
+    /// Function: IsPosInBatmobileLOSForTakedown<br/>
+    /// Native code at BatmanAK.exe+0x4FF700 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPosInBatmobileLOSForTakedown(BmSDK.BmGame.RPawnVillain TestVillain, System.Numerics.Vector3 TestLoc)
     {
@@ -3428,7 +3453,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FillDamageProxyCache;
     /// <summary>
-    /// Function: FillDamageProxyCache
+    /// Function: FillDamageProxyCache<br/>
+    /// Native code at BatmanAK.exe+0x4FF5E0 in the Steam build
     /// </summary>
     public unsafe virtual void FillDamageProxyCache(int NumInCache)
     {
@@ -3450,7 +3476,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseDamageProxy;
     /// <summary>
-    /// Function: ReleaseDamageProxy
+    /// Function: ReleaseDamageProxy<br/>
+    /// Native code at BatmanAK.exe+0x4FF4B0 in the Steam build
     /// </summary>
     public unsafe virtual void ReleaseDamageProxy(BmSDK.BmGame.RBMCombatDamageProxy Proxy)
     {
@@ -3472,7 +3499,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamageProxyForPawn;
     /// <summary>
-    /// Function: GetDamageProxyForPawn
+    /// Function: GetDamageProxyForPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FF370 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMCombatDamageProxy GetDamageProxyForPawn(BmSDK.BmGame.RPawnCombat NewPawn)
     {
@@ -3494,7 +3522,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestCombatThugDistance;
     /// <summary>
-    /// Function: GetClosestCombatThugDistance
+    /// Function: GetClosestCombatThugDistance<br/>
+    /// Native code at BatmanAK.exe+0x48E140 in the Steam build
     /// </summary>
     public unsafe virtual float GetClosestCombatThugDistance()
     {
@@ -3515,7 +3544,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInAnyCombat_Audio;
     /// <summary>
-    /// Function: IsInAnyCombat_Audio
+    /// Function: IsInAnyCombat_Audio<br/>
+    /// Native code at BatmanAK.exe+0x46F110 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInAnyCombat_Audio()
     {
@@ -3536,7 +3566,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInDefiniteCombat_Audio;
     /// <summary>
-    /// Function: IsInDefiniteCombat_Audio
+    /// Function: IsInDefiniteCombat_Audio<br/>
+    /// Native code at BatmanAK.exe+0x489CD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInDefiniteCombat_Audio()
     {
@@ -3557,7 +3588,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumSnipers;
     /// <summary>
-    /// Function: GetNumSnipers
+    /// Function: GetNumSnipers<br/>
+    /// Native code at BatmanAK.exe+0x489C80 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumSnipers()
     {
@@ -3578,7 +3610,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRiotCombatActiveInPylon;
     /// <summary>
-    /// Function: IsRiotCombatActiveInPylon
+    /// Function: IsRiotCombatActiveInPylon<br/>
+    /// Native code at BatmanAK.exe+0x4A73B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRiotCombatActiveInPylon(BmSDK.Engine.Pylon CheckPylon)
     {
@@ -3600,7 +3633,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCombatActiveInPylon;
     /// <summary>
-    /// Function: IsCombatActiveInPylon
+    /// Function: IsCombatActiveInPylon<br/>
+    /// Native code at BatmanAK.exe+0x4FF230 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCombatActiveInPylon(BmSDK.Engine.Pylon CheckPylon)
     {
@@ -3622,7 +3656,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInterrogationTarget;
     /// <summary>
-    /// Function: GetInterrogationTarget
+    /// Function: GetInterrogationTarget<br/>
+    /// Native code at BatmanAK.exe+0x489C30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetInterrogationTarget()
     {
@@ -3643,7 +3678,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseInterrogation;
     /// <summary>
-    /// Function: CanUseInterrogation
+    /// Function: CanUseInterrogation<br/>
+    /// Native code at BatmanAK.exe+0x489B50 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUseInterrogation(System.Numerics.Vector3 CheckLocation, bool bIgnoreNumCheck = default)
     {
@@ -3666,7 +3702,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnscreen;
     /// <summary>
-    /// Function: IsOnscreen
+    /// Function: IsOnscreen<br/>
+    /// Native code at BatmanAK.exe+0x4FF020 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOnscreen(System.Numerics.Vector3 CheckLocation, BmSDK.BmGame.RPawnCombat PlayerPawn, System.Numerics.Vector3 CameraPositionOffset = default, float MaxCosMulti = default)
     {
@@ -3691,7 +3728,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAngleFromPawnToPawn;
     /// <summary>
-    /// Function: GetAngleFromPawnToPawn
+    /// Function: GetAngleFromPawnToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FEE30 in the Steam build
     /// </summary>
     public unsafe virtual float GetAngleFromPawnToPawn(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2)
     {
@@ -3714,7 +3752,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnBetweenPoints;
     /// <summary>
-    /// Function: GetPawnBetweenPoints
+    /// Function: GetPawnBetweenPoints<br/>
+    /// Native code at BatmanAK.exe+0x563FE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat GetPawnBetweenPoints(System.Numerics.Vector3 SourceLocation, System.Numerics.Vector3 TargetLocation, out BmSDK.TArray<BmSDK.BmGame.RPawnCombat> IgnorePawnList)
     {
@@ -3738,7 +3777,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LOSFromPawnToPawn;
     /// <summary>
-    /// Function: LOSFromPawnToPawn
+    /// Function: LOSFromPawnToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FEC40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat LOSFromPawnToPawn(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2)
     {
@@ -3761,7 +3801,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDeepInCombat;
     /// <summary>
-    /// Function: IsDeepInCombat
+    /// Function: IsDeepInCombat<br/>
+    /// Native code at BatmanAK.exe+0x489B00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDeepInCombat()
     {
@@ -3782,7 +3823,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAttackersForTarget;
     /// <summary>
-    /// Function: UpdateAttackersForTarget
+    /// Function: UpdateAttackersForTarget<br/>
+    /// Native code at BatmanAK.exe+0x4FEA40 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAttackersForTarget(BmSDK.BmGame.RPawnCombat TargetPawn, float DeltaTime)
     {
@@ -3805,7 +3847,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignAttackerTargets;
     /// <summary>
-    /// Function: AssignAttackerTargets
+    /// Function: AssignAttackerTargets<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void AssignAttackerTargets()
     {
@@ -3826,7 +3869,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAttackers;
     /// <summary>
-    /// Function: UpdateAttackers
+    /// Function: UpdateAttackers<br/>
+    /// Native code at BatmanAK.exe+0x4FE910 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAttackers(float DeltaTime)
     {
@@ -3848,7 +3892,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseCombatPoint;
     /// <summary>
-    /// Function: CanUseCombatPoint
+    /// Function: CanUseCombatPoint<br/>
+    /// Native code at BatmanAK.exe+0x489A50 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUseCombatPoint(bool bIgnoreProportion = default)
     {
@@ -3870,7 +3915,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumCombatantsForInterrogation;
     /// <summary>
-    /// Function: GetNumCombatantsForInterrogation
+    /// Function: GetNumCombatantsForInterrogation<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumCombatantsForInterrogation()
     {
@@ -3891,7 +3937,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumCombatants;
     /// <summary>
-    /// Function: GetNumCombatants
+    /// Function: GetNumCombatants<br/>
+    /// Native code at BatmanAK.exe+0xB43E80 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumCombatants()
     {
@@ -3912,7 +3959,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheNumCombatants;
     /// <summary>
-    /// Function: CacheNumCombatants
+    /// Function: CacheNumCombatants<br/>
+    /// Native code at BatmanAK.exe+0x4899B0 in the Steam build
     /// </summary>
     public unsafe virtual void CacheNumCombatants(bool bRemovedDueToKO = default)
     {
@@ -3934,7 +3982,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldForceCombatCamera;
     /// <summary>
-    /// Function: ShouldForceCombatCamera
+    /// Function: ShouldForceCombatCamera<br/>
+    /// Native code at BatmanAK.exe+0x489960 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldForceCombatCamera()
     {
@@ -3955,7 +4004,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldLockDoors;
     /// <summary>
-    /// Function: ShouldLockDoors
+    /// Function: ShouldLockDoors<br/>
+    /// Native code at BatmanAK.exe+0x489910 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ECombatLockType ShouldLockDoors()
     {
@@ -3976,7 +4026,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnyVillainNearLocation;
     /// <summary>
-    /// Function: IsAnyVillainNearLocation
+    /// Function: IsAnyVillainNearLocation<br/>
+    /// Native code at BatmanAK.exe+0x4FE7A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnyVillainNearLocation(System.Numerics.Vector3 TestLocation, float TestRadius)
     {
@@ -3999,7 +4050,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCombatantNearLocation;
     /// <summary>
-    /// Function: IsCombatantNearLocation
+    /// Function: IsCombatantNearLocation<br/>
+    /// Native code at BatmanAK.exe+0x4FE630 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCombatantNearLocation(System.Numerics.Vector3 TestLocation, float TestRadius)
     {
@@ -4022,7 +4074,8 @@ public partial class RBMCombatManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInCombatArea;
     /// <summary>
-    /// Function: IsLocationInCombatArea
+    /// Function: IsLocationInCombatArea<br/>
+    /// Native code at BatmanAK.exe+0x4944D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInCombatArea(System.Numerics.Vector3 TestLocation)
     {

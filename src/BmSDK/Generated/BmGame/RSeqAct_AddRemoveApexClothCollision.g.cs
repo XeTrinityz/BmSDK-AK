@@ -107,7 +107,8 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveClothCollision;
     /// <summary>
-    /// Function: RemoveClothCollision
+    /// Function: RemoveClothCollision<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveClothCollision()
     {
@@ -128,7 +129,8 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClothCollision;
     /// <summary>
-    /// Function: AddClothCollision
+    /// Function: AddClothCollision<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void AddClothCollision()
     {

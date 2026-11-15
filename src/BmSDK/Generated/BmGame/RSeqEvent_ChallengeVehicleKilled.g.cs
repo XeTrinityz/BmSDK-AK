@@ -95,7 +95,8 @@ public partial class RSeqEvent_ChallengeVehicleKilled : BmSDK.Engine.SequenceEve
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArchetype;
     /// <summary>
-    /// Function: GetArchetype
+    /// Function: GetArchetype<br/>
+    /// Native code at BatmanAK.exe+0x521620 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetArchetype(BmSDK.Engine.Actor hActor)
     {

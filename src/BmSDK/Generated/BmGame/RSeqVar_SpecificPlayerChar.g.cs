@@ -94,7 +94,8 @@ public partial class RSeqVar_SpecificPlayerChar : BmSDK.Engine.SeqVar_Object, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjValue;
     /// <summary>
-    /// Function: SetObjValue
+    /// Function: SetObjValue<br/>
+    /// Native code at BatmanAK.exe+0x48D830 in the Steam build
     /// </summary>
     public unsafe virtual void SetObjValue()
     {

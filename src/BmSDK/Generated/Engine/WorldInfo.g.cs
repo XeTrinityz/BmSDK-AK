@@ -105,7 +105,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawApexClothProfileHUD;
     /// <summary>
-    /// Function: DrawApexClothProfileHUD
+    /// Function: DrawApexClothProfileHUD<br/>
+    /// Native code at BatmanAK.exe+0xB8BF80 in the Steam build
     /// </summary>
     public unsafe virtual void DrawApexClothProfileHUD(BmSDK.Engine.HUD HUD)
     {
@@ -127,7 +128,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearObjectPools;
     /// <summary>
-    /// Function: ClearObjectPools
+    /// Function: ClearObjectPools<br/>
+    /// Native code at BatmanAK.exe+0xB43ED0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearObjectPools()
     {
@@ -148,7 +150,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleHostMigration;
     /// <summary>
-    /// Function: ToggleHostMigration
+    /// Function: ToggleHostMigration<br/>
+    /// Native code at BatmanAK.exe+0xB8BE60 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleHostMigration(bool bEnabled)
     {
@@ -186,7 +189,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginHostMigration;
     /// <summary>
-    /// Function: BeginHostMigration
+    /// Function: BeginHostMigration<br/>
+    /// Native code at BatmanAK.exe+0xB43E80 in the Steam build
     /// </summary>
     public unsafe virtual bool BeginHostMigration()
     {
@@ -221,7 +225,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEnvironmentVolume;
     /// <summary>
-    /// Function: FindEnvironmentVolume
+    /// Function: FindEnvironmentVolume<br/>
+    /// Native code at BatmanAK.exe+0xB43DE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.EnvironmentVolume FindEnvironmentVolume(System.Numerics.Vector3 TestLocation)
     {
@@ -243,7 +248,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetWorldInfo;
     /// <summary>
-    /// Function: GetWorldInfo
+    /// Function: GetWorldInfo<br/>
+    /// Native code at BatmanAK.exe+0xB43D90 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo GetWorldInfo()
     {
@@ -263,7 +269,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldFractureSettings;
     /// <summary>
-    /// Function: GetWorldFractureSettings
+    /// Function: GetWorldFractureSettings<br/>
+    /// Native code at BatmanAK.exe+0xB43D10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo.FWorldFractureSettings GetWorldFractureSettings()
     {
@@ -284,7 +291,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMemoryTracking;
     /// <summary>
-    /// Function: DoMemoryTracking
+    /// Function: DoMemoryTracking<br/>
+    /// Native code at BatmanAK.exe+0xB43CD0 in the Steam build
     /// </summary>
     public unsafe virtual void DoMemoryTracking()
     {
@@ -305,7 +313,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDemoRewindPoints;
     /// <summary>
-    /// Function: GetDemoRewindPoints
+    /// Function: GetDemoRewindPoints<br/>
+    /// Native code at BatmanAK.exe+0xBB4DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDemoRewindPoints(out BmSDK.TArray<int> OutRewindPoints)
     {
@@ -327,7 +336,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDemoFrameInfo;
     /// <summary>
-    /// Function: GetDemoFrameInfo
+    /// Function: GetDemoFrameInfo<br/>
+    /// Native code at BatmanAK.exe+0xB43BC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetDemoFrameInfo(out int CurrentFrame, out int TotalFrames)
     {
@@ -354,7 +364,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingDemo;
     /// <summary>
-    /// Function: IsPlayingDemo
+    /// Function: IsPlayingDemo<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayingDemo()
     {
@@ -375,7 +386,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRecordingDemo;
     /// <summary>
-    /// Function: IsRecordingDemo
+    /// Function: IsRecordingDemo<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRecordingDemo()
     {
@@ -396,7 +408,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDetailMode;
     /// <summary>
-    /// Function: GetDetailMode
+    /// Function: GetDetailMode<br/>
+    /// Native code at BatmanAK.exe+0xB43B70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Scene.EDetailMode GetDetailMode()
     {
@@ -417,7 +430,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapName;
     /// <summary>
-    /// Function: GetMapName
+    /// Function: GetMapName<br/>
+    /// Native code at BatmanAK.exe+0xBAD910 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetMapName(bool bIncludePrefix = default)
     {
@@ -439,7 +453,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetActorChannel;
     /// <summary>
-    /// Function: ResetActorChannel
+    /// Function: ResetActorChannel<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetActorChannel(BmSDK.Engine.Actor ChannelOwner)
     {
@@ -461,7 +476,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMapInfo;
     /// <summary>
-    /// Function: SetMapInfo
+    /// Function: SetMapInfo<br/>
+    /// Native code at BatmanAK.exe+0xB8BD40 in the Steam build
     /// </summary>
     public unsafe virtual void SetMapInfo(BmSDK.Engine.MapInfo NewMapInfo)
     {
@@ -483,7 +499,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapInfo;
     /// <summary>
-    /// Function: GetMapInfo
+    /// Function: GetMapInfo<br/>
+    /// Native code at BatmanAK.exe+0xB43B20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MapInfo GetMapInfo()
     {
@@ -504,7 +521,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSeamlessTravelMidpointPause;
     /// <summary>
-    /// Function: SetSeamlessTravelMidpointPause
+    /// Function: SetSeamlessTravelMidpointPause<br/>
+    /// Native code at BatmanAK.exe+0xB8BC20 in the Steam build
     /// </summary>
     public unsafe virtual void SetSeamlessTravelMidpointPause(bool bNowPaused)
     {
@@ -526,7 +544,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInSeamlessTravel;
     /// <summary>
-    /// Function: IsInSeamlessTravel
+    /// Function: IsInSeamlessTravel<br/>
+    /// Native code at BatmanAK.exe+0xB43AD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInSeamlessTravel()
     {
@@ -547,7 +566,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SeamlessTravel;
     /// <summary>
-    /// Function: SeamlessTravel
+    /// Function: SeamlessTravel<br/>
+    /// Native code at BatmanAK.exe+0xBAD750 in the Steam build
     /// </summary>
     public unsafe virtual void SeamlessTravel(BmSDK.FStringArg URL, bool bAbsolute = default, BmSDK.GameObject.FGuid MapPackageGuid = default)
     {
@@ -572,7 +592,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CommitMapChange;
     /// <summary>
-    /// Function: CommitMapChange
+    /// Function: CommitMapChange<br/>
+    /// Native code at BatmanAK.exe+0xB43A90 in the Steam build
     /// </summary>
     public unsafe virtual void CommitMapChange()
     {
@@ -593,7 +614,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelPendingMapChange;
     /// <summary>
-    /// Function: CancelPendingMapChange
+    /// Function: CancelPendingMapChange<br/>
+    /// Native code at BatmanAK.exe+0xB43A50 in the Steam build
     /// </summary>
     public unsafe virtual void CancelPendingMapChange()
     {
@@ -614,7 +636,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMapChangeReady;
     /// <summary>
-    /// Function: IsMapChangeReady
+    /// Function: IsMapChangeReady<br/>
+    /// Native code at BatmanAK.exe+0xB43A00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMapChangeReady()
     {
@@ -635,7 +658,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPreparingMapChange;
     /// <summary>
-    /// Function: IsPreparingMapChange
+    /// Function: IsPreparingMapChange<br/>
+    /// Native code at BatmanAK.exe+0xB439B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPreparingMapChange()
     {
@@ -656,7 +680,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepareMapChange;
     /// <summary>
-    /// Function: PrepareMapChange
+    /// Function: PrepareMapChange<br/>
+    /// Native code at BatmanAK.exe+0xBB87E0 in the Steam build
     /// </summary>
     public unsafe virtual void PrepareMapChange(out BmSDK.TArray<BmSDK.FName> LevelNames)
     {
@@ -678,7 +703,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMatchStarted;
     /// <summary>
-    /// Function: NotifyMatchStarted
+    /// Function: NotifyMatchStarted<br/>
+    /// Native code at BatmanAK.exe+0xB43890 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyMatchStarted(bool bShouldActivateLevelStartupEvents = default, bool bShouldActivateLevelBeginningEvents = default, bool bShouldActivateLevelLoadedEvents = default)
     {
@@ -702,7 +728,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavigationPointCheck;
     /// <summary>
-    /// Function: NavigationPointCheck
+    /// Function: NavigationPointCheck<br/>
+    /// Native code at BatmanAK.exe+0x9CD700 in the Steam build
     /// </summary>
     public unsafe virtual void NavigationPointCheck(System.Numerics.Vector3 Point, System.Numerics.Vector3 Extent, out BmSDK.TArray<BmSDK.Engine.NavigationPoint> Navs, out BmSDK.TArray<BmSDK.Engine.ReachSpec> Specs)
     {
@@ -816,7 +843,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAddressURL;
     /// <summary>
-    /// Function: GetAddressURL
+    /// Function: GetAddressURL<br/>
+    /// Native code at BatmanAK.exe+0xBAD6D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetAddressURL()
     {
@@ -837,7 +865,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDebugDrawDestructiblesEnabled;
     /// <summary>
-    /// Function: IsDebugDrawDestructiblesEnabled
+    /// Function: IsDebugDrawDestructiblesEnabled<br/>
+    /// Native code at BatmanAK.exe+0x489960 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDebugDrawDestructiblesEnabled()
     {
@@ -858,7 +887,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavList;
     /// <summary>
-    /// Function: VerifyNavList
+    /// Function: VerifyNavList<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void VerifyNavList()
     {
@@ -879,7 +909,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceGarbageCollection;
     /// <summary>
-    /// Function: ForceGarbageCollection
+    /// Function: ForceGarbageCollection<br/>
+    /// Native code at BatmanAK.exe+0xB437F0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceGarbageCollection(bool bFullPurge = default)
     {
@@ -901,7 +932,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPlayInMobilePreview;
     /// <summary>
-    /// Function: IsPlayInMobilePreview
+    /// Function: IsPlayInMobilePreview<br/>
+    /// Native code at BatmanAK.exe+0xB437A0 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInMobilePreview()
     {
@@ -921,7 +953,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPlayInPreview;
     /// <summary>
-    /// Function: IsPlayInPreview
+    /// Function: IsPlayInPreview<br/>
+    /// Native code at BatmanAK.exe+0xB43750 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInPreview()
     {
@@ -941,7 +974,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsPlayInEditor;
     /// <summary>
-    /// Function: IsPlayInEditor
+    /// Function: IsPlayInEditor<br/>
+    /// Native code at BatmanAK.exe+0xB43700 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInEditor()
     {
@@ -961,7 +995,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsShippingTestProfileBuild;
     /// <summary>
-    /// Function: IsShippingTestProfileBuild
+    /// Function: IsShippingTestProfileBuild<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static bool IsShippingTestProfileBuild()
     {
@@ -981,7 +1016,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsShippingBuild;
     /// <summary>
-    /// Function: IsShippingBuild
+    /// Function: IsShippingBuild<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static bool IsShippingBuild()
     {
@@ -1001,7 +1037,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsWithGFx;
     /// <summary>
-    /// Function: IsWithGFx
+    /// Function: IsWithGFx<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool IsWithGFx()
     {
@@ -1021,7 +1058,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsConsoleBuild;
     /// <summary>
-    /// Function: IsConsoleBuild
+    /// Function: IsConsoleBuild<br/>
+    /// Native code at BatmanAK.exe+0xB43670 in the Steam build
     /// </summary>
     public unsafe static bool IsConsoleBuild(BmSDK.Engine.WorldInfo.EConsoleType ConsoleType = default)
     {
@@ -1042,7 +1080,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsDemoBuild;
     /// <summary>
-    /// Function: IsDemoBuild
+    /// Function: IsDemoBuild<br/>
+    /// Native code at BatmanAK.exe+0xB43620 in the Steam build
     /// </summary>
     public unsafe static bool IsDemoBuild()
     {
@@ -1062,7 +1101,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalURL;
     /// <summary>
-    /// Function: GetLocalURL
+    /// Function: GetLocalURL<br/>
+    /// Native code at BatmanAK.exe+0xBAD650 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetLocalURL()
     {
@@ -1083,7 +1123,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelRBGravity;
     /// <summary>
-    /// Function: SetLevelRBGravity
+    /// Function: SetLevelRBGravity<br/>
+    /// Native code at BatmanAK.exe+0xB43590 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelRBGravity(System.Numerics.Vector3 NewGrav)
     {
@@ -1105,7 +1146,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllRootSequences;
     /// <summary>
-    /// Function: GetAllRootSequences
+    /// Function: GetAllRootSequences<br/>
+    /// Native code at BatmanAK.exe+0xBBAE80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.Sequence> GetAllRootSequences()
     {
@@ -1126,7 +1168,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameSequence;
     /// <summary>
-    /// Function: GetGameSequence
+    /// Function: GetGameSequence<br/>
+    /// Native code at BatmanAK.exe+0xB43540 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Sequence GetGameSequence()
     {
@@ -1147,7 +1190,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
-    /// Function: GetGravityZ
+    /// Function: GetGravityZ<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe override float GetGravityZ()
     {
@@ -1168,7 +1212,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsMenuLevel;
     /// <summary>
-    /// Function: IsMenuLevel
+    /// Function: IsMenuLevel<br/>
+    /// Native code at BatmanAK.exe+0x8D9AA0 in the Steam build
     /// </summary>
     public unsafe static bool IsMenuLevel(BmSDK.FStringArg MapName = default)
     {
@@ -1190,7 +1235,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddOnScreenDebugMessage;
     /// <summary>
-    /// Function: AddOnScreenDebugMessage
+    /// Function: AddOnScreenDebugMessage<br/>
+    /// Native code at BatmanAK.exe+0xBAD360 in the Steam build
     /// </summary>
     public unsafe virtual void AddOnScreenDebugMessage(int Key, float TimeToDisplay, BmSDK.GameObject.FColor DisplayColor, BmSDK.FStringArg DebugMessage)
     {
@@ -1231,7 +1277,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathGoalEvaluatorFromCache;
     /// <summary>
-    /// Function: GetNavMeshPathGoalEvaluatorFromCache
+    /// Function: GetNavMeshPathGoalEvaluatorFromCache<br/>
+    /// Native code at BatmanAK.exe+0xB8BA30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathGoalEvaluator GetNavMeshPathGoalEvaluatorFromCache(BmSDK.Class GoalEvalClass, BmSDK.Engine.NavigationHandle Requestor)
     {
@@ -1254,7 +1301,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathConstraintFromCache;
     /// <summary>
-    /// Function: GetNavMeshPathConstraintFromCache
+    /// Function: GetNavMeshPathConstraintFromCache<br/>
+    /// Native code at BatmanAK.exe+0xB8B840 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathConstraint GetNavMeshPathConstraintFromCache(BmSDK.Class ConstraintClass, BmSDK.Engine.NavigationHandle Requestor)
     {
@@ -1277,7 +1325,8 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseCachedConstraintsAndEvaluators;
     /// <summary>
-    /// Function: ReleaseCachedConstraintsAndEvaluators
+    /// Function: ReleaseCachedConstraintsAndEvaluators<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void ReleaseCachedConstraintsAndEvaluators()
     {
@@ -4144,7 +4193,8 @@ public static class WorldInfoStatics
 {
     private static BmSDK.Function __fn_GetWorldInfo;
     /// <summary>
-    /// Function: GetWorldInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetWorldInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43D90 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo GetWorldInfo(this BmSDK.Engine.WorldInfo self)
     {
@@ -4165,7 +4215,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsPlayInMobilePreview;
     /// <summary>
-    /// Function: IsPlayInMobilePreview, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPlayInMobilePreview, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB437A0 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInMobilePreview(this BmSDK.Engine.WorldInfo self)
     {
@@ -4186,7 +4237,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsPlayInPreview;
     /// <summary>
-    /// Function: IsPlayInPreview, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPlayInPreview, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43750 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInPreview(this BmSDK.Engine.WorldInfo self)
     {
@@ -4207,7 +4259,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsPlayInEditor;
     /// <summary>
-    /// Function: IsPlayInEditor, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsPlayInEditor, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43700 in the Steam build
     /// </summary>
     public unsafe static bool IsPlayInEditor(this BmSDK.Engine.WorldInfo self)
     {
@@ -4228,7 +4281,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsShippingTestProfileBuild;
     /// <summary>
-    /// Function: IsShippingTestProfileBuild, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsShippingTestProfileBuild, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static bool IsShippingTestProfileBuild(this BmSDK.Engine.WorldInfo self)
     {
@@ -4249,7 +4303,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsShippingBuild;
     /// <summary>
-    /// Function: IsShippingBuild, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsShippingBuild, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB3B190 in the Steam build
     /// </summary>
     public unsafe static bool IsShippingBuild(this BmSDK.Engine.WorldInfo self)
     {
@@ -4270,7 +4325,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsWithGFx;
     /// <summary>
-    /// Function: IsWithGFx, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsWithGFx, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool IsWithGFx(this BmSDK.Engine.WorldInfo self)
     {
@@ -4291,7 +4347,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsConsoleBuild;
     /// <summary>
-    /// Function: IsConsoleBuild, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsConsoleBuild, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43670 in the Steam build
     /// </summary>
     public unsafe static bool IsConsoleBuild(this BmSDK.Engine.WorldInfo self, BmSDK.Engine.WorldInfo.EConsoleType ConsoleType = default)
     {
@@ -4313,7 +4370,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsDemoBuild;
     /// <summary>
-    /// Function: IsDemoBuild, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsDemoBuild, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB43620 in the Steam build
     /// </summary>
     public unsafe static bool IsDemoBuild(this BmSDK.Engine.WorldInfo self)
     {
@@ -4334,7 +4392,8 @@ public static class WorldInfoStatics
 
     private static BmSDK.Function __fn_IsMenuLevel;
     /// <summary>
-    /// Function: IsMenuLevel, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsMenuLevel, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x8D9AA0 in the Steam build
     /// </summary>
     public unsafe static bool IsMenuLevel(this BmSDK.Engine.WorldInfo self, BmSDK.FStringArg MapName = default)
     {

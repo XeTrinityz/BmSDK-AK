@@ -109,7 +109,8 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterShimmyEdgeMarker;
     /// <summary>
-    /// Function: RegisterShimmyEdgeMarker
+    /// Function: RegisterShimmyEdgeMarker<br/>
+    /// Native code at BatmanAK.exe+0x4840D0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterShimmyEdgeMarker()
     {
@@ -130,7 +131,8 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupEndPoints;
     /// <summary>
-    /// Function: SetupEndPoints
+    /// Function: SetupEndPoints<br/>
+    /// Native code at BatmanAK.exe+0x484090 in the Steam build
     /// </summary>
     public unsafe virtual void SetupEndPoints()
     {

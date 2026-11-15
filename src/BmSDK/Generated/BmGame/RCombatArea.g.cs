@@ -209,7 +209,8 @@ public partial class RCombatArea : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInArea;
     /// <summary>
-    /// Function: IsLocationInArea
+    /// Function: IsLocationInArea<br/>
+    /// Native code at BatmanAK.exe+0x4944D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInArea(System.Numerics.Vector3 TestLocation)
     {

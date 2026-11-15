@@ -128,7 +128,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogProjectileIntEvent;
     /// <summary>
-    /// Function: LogProjectileIntEvent
+    /// Function: LogProjectileIntEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7BD00 in the Steam build
     /// </summary>
     public unsafe override void LogProjectileIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class Proj, int Value)
     {
@@ -153,7 +154,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogDamageEvent;
     /// <summary>
-    /// Function: LogDamageEvent
+    /// Function: LogDamageEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7B8C0 in the Steam build
     /// </summary>
     public unsafe override void LogDamageEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class dmgType, BmSDK.Engine.Controller Target, int Amount)
     {
@@ -179,7 +181,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogWeaponIntEvent;
     /// <summary>
-    /// Function: LogWeaponIntEvent
+    /// Function: LogWeaponIntEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7CCF0 in the Steam build
     /// </summary>
     public unsafe override void LogWeaponIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class WeaponClass, int Value)
     {
@@ -204,7 +207,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerPlayerEvent;
     /// <summary>
-    /// Function: LogPlayerPlayerEvent
+    /// Function: LogPlayerPlayerEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7B620 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerPlayerEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Engine.Controller Target)
     {
@@ -228,7 +232,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerKillDeath;
     /// <summary>
-    /// Function: LogPlayerKillDeath
+    /// Function: LogPlayerKillDeath<br/>
+    /// Native code at BatmanAK.exe+0xB7B200 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerKillDeath(int EventID, int KillType, BmSDK.Engine.Controller Killer, BmSDK.Class dmgType, BmSDK.Engine.Controller Dead)
     {
@@ -254,7 +259,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogAllPlayerPositionsEvent;
     /// <summary>
-    /// Function: LogAllPlayerPositionsEvent
+    /// Function: LogAllPlayerPositionsEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7B0E0 in the Steam build
     /// </summary>
     public unsafe override void LogAllPlayerPositionsEvent(int EventID)
     {
@@ -276,7 +282,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerLoginChange;
     /// <summary>
-    /// Function: LogPlayerLoginChange
+    /// Function: LogPlayerLoginChange<br/>
+    /// Native code at BatmanAK.exe+0xBA8930 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerLoginChange(int EventID, BmSDK.Engine.Controller Player, BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bSplitScreen)
     {
@@ -303,7 +310,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerSpawnEvent;
     /// <summary>
-    /// Function: LogPlayerSpawnEvent
+    /// Function: LogPlayerSpawnEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7AD80 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerSpawnEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class PawnClass, int TeamID)
     {
@@ -328,7 +336,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerStringEvent;
     /// <summary>
-    /// Function: LogPlayerStringEvent
+    /// Function: LogPlayerStringEvent<br/>
+    /// Native code at BatmanAK.exe+0xBA8670 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerStringEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.FStringArg EventString)
     {
@@ -353,7 +362,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerFloatEvent;
     /// <summary>
-    /// Function: LogPlayerFloatEvent
+    /// Function: LogPlayerFloatEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7AAD0 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerFloatEvent(int EventID, BmSDK.Engine.Controller Player, float Value)
     {
@@ -377,7 +387,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerIntEvent;
     /// <summary>
-    /// Function: LogPlayerIntEvent
+    /// Function: LogPlayerIntEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7A830 in the Steam build
     /// </summary>
     public unsafe override void LogPlayerIntEvent(int EventID, BmSDK.Engine.Controller Player, int Value)
     {
@@ -401,7 +412,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamStringEvent;
     /// <summary>
-    /// Function: LogTeamStringEvent
+    /// Function: LogTeamStringEvent<br/>
+    /// Native code at BatmanAK.exe+0xBA83B0 in the Steam build
     /// </summary>
     public unsafe override void LogTeamStringEvent(int EventID, BmSDK.Engine.TeamInfo Team, BmSDK.FStringArg Value)
     {
@@ -426,7 +438,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamFloatEvent;
     /// <summary>
-    /// Function: LogTeamFloatEvent
+    /// Function: LogTeamFloatEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7A580 in the Steam build
     /// </summary>
     public unsafe override void LogTeamFloatEvent(int EventID, BmSDK.Engine.TeamInfo Team, float Value)
     {
@@ -450,7 +463,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamIntEvent;
     /// <summary>
-    /// Function: LogTeamIntEvent
+    /// Function: LogTeamIntEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7A2E0 in the Steam build
     /// </summary>
     public unsafe override void LogTeamIntEvent(int EventID, BmSDK.Engine.TeamInfo Team, int Value)
     {
@@ -474,7 +488,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGamePositionEvent;
     /// <summary>
-    /// Function: LogGamePositionEvent
+    /// Function: LogGamePositionEvent<br/>
+    /// Native code at BatmanAK.exe+0xB7A0B0 in the Steam build
     /// </summary>
     public unsafe override void LogGamePositionEvent(int EventID, out System.Numerics.Vector3 Position, float Value)
     {
@@ -500,7 +515,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameFloatEvent;
     /// <summary>
-    /// Function: LogGameFloatEvent
+    /// Function: LogGameFloatEvent<br/>
+    /// Native code at BatmanAK.exe+0xB79EC0 in the Steam build
     /// </summary>
     public unsafe override void LogGameFloatEvent(int EventID, float Value)
     {
@@ -523,7 +539,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameStringEvent;
     /// <summary>
-    /// Function: LogGameStringEvent
+    /// Function: LogGameStringEvent<br/>
+    /// Native code at BatmanAK.exe+0xBA81C0 in the Steam build
     /// </summary>
     public unsafe override void LogGameStringEvent(int EventID, BmSDK.FStringArg Value)
     {
@@ -547,7 +564,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameIntEvent;
     /// <summary>
-    /// Function: LogGameIntEvent
+    /// Function: LogGameIntEvent<br/>
+    /// Native code at BatmanAK.exe+0xB79CE0 in the Steam build
     /// </summary>
     public unsafe override void LogGameIntEvent(int EventID, int Value)
     {
@@ -570,7 +588,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLogging;
     /// <summary>
-    /// Function: EndLogging
+    /// Function: EndLogging<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe override void EndLogging()
     {
@@ -591,7 +610,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetLogging;
     /// <summary>
-    /// Function: ResetLogging
+    /// Function: ResetLogging<br/>
+    /// Native code at BatmanAK.exe+0xB3F6F0 in the Steam build
     /// </summary>
     public unsafe override void ResetLogging(float HeartbeatDelta = default)
     {
@@ -613,7 +633,8 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLogging;
     /// <summary>
-    /// Function: StartLogging
+    /// Function: StartLogging<br/>
+    /// Native code at BatmanAK.exe+0xB3F660 in the Steam build
     /// </summary>
     public unsafe override void StartLogging(float HeartbeatDelta = default)
     {

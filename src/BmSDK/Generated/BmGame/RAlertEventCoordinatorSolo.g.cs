@@ -375,7 +375,8 @@ public partial class RAlertEventCoordinatorSolo : BmSDK.Engine.Actor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectPointOntoPlane;
     /// <summary>
-    /// Function: ProjectPointOntoPlane
+    /// Function: ProjectPointOntoPlane<br/>
+    /// Native code at BatmanAK.exe+0x487250 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 ProjectPointOntoPlane(out System.Numerics.Vector3 rPlaneNormal, out System.Numerics.Vector3 rPointOnPlane, out System.Numerics.Vector3 rPoint)
     {
@@ -405,7 +406,8 @@ public partial class RAlertEventCoordinatorSolo : BmSDK.Engine.Actor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetParentOfClass;
     /// <summary>
-    /// Function: GetParentOfClass
+    /// Function: GetParentOfClass<br/>
+    /// Native code at BatmanAK.exe+0x4F73D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAlertEventCoordinatorBase GetParentOfClass(BmSDK.Class TestClass)
     {

@@ -107,7 +107,8 @@ public partial class RSeqAct_ReformDestructibleProp : BmSDK.Engine.SequenceActio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReformDestructibleProps;
     /// <summary>
-    /// Function: ReformDestructibleProps
+    /// Function: ReformDestructibleProps<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void ReformDestructibleProps()
     {

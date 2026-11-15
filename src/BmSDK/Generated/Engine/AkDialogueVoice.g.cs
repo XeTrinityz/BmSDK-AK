@@ -94,7 +94,8 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPortrait;
     /// <summary>
-    /// Function: GetPortrait
+    /// Function: GetPortrait<br/>
+    /// Native code at BatmanAK.exe+0xBA2CF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetPortrait()
     {
@@ -115,7 +116,8 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitle;
     /// <summary>
-    /// Function: GetSubtitle
+    /// Function: GetSubtitle<br/>
+    /// Native code at BatmanAK.exe+0xBA2C00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubtitle(BmSDK.FStringArg langExt = default)
     {
@@ -138,7 +140,8 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWildcardVoice;
     /// <summary>
-    /// Function: IsWildcardVoice
+    /// Function: IsWildcardVoice<br/>
+    /// Native code at BatmanAK.exe+0xB35F30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWildcardVoice()
     {

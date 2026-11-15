@@ -75,7 +75,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceActivateOutput;
     /// <summary>
-    /// Function: ForceActivateOutput
+    /// Function: ForceActivateOutput<br/>
+    /// Native code at BatmanAK.exe+0xB50CF0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceActivateOutput(int OutputIdx)
     {
@@ -97,7 +98,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceActivateInput;
     /// <summary>
-    /// Function: ForceActivateInput
+    /// Function: ForceActivateInput<br/>
+    /// Native code at BatmanAK.exe+0xB50BD0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceActivateInput(int InputIdx)
     {
@@ -163,7 +165,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PublishLinkedVariableValue;
     /// <summary>
-    /// Function: PublishLinkedVariableValue
+    /// Function: PublishLinkedVariableValue<br/>
+    /// Native code at BatmanAK.exe+0xB50AB0 in the Steam build
     /// </summary>
     public unsafe virtual void PublishLinkedVariableValue(int LinkIndex)
     {
@@ -185,7 +188,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PublishLinkedVariableValues;
     /// <summary>
-    /// Function: PublishLinkedVariableValues
+    /// Function: PublishLinkedVariableValues<br/>
+    /// Native code at BatmanAK.exe+0xB506A0 in the Steam build
     /// </summary>
     public unsafe virtual void PublishLinkedVariableValues()
     {
@@ -206,7 +210,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulateLinkedVariableValues;
     /// <summary>
-    /// Function: PopulateLinkedVariableValues
+    /// Function: PopulateLinkedVariableValues<br/>
+    /// Native code at BatmanAK.exe+0xB50A70 in the Steam build
     /// </summary>
     public unsafe virtual void PopulateLinkedVariableValues()
     {
@@ -271,7 +276,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateNamedOutputLink;
     /// <summary>
-    /// Function: ActivateNamedOutputLink
+    /// Function: ActivateNamedOutputLink<br/>
+    /// Native code at BatmanAK.exe+0xB9CC70 in the Steam build
     /// </summary>
     public unsafe virtual bool ActivateNamedOutputLink(BmSDK.FStringArg LinkDesc)
     {
@@ -294,7 +300,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateOutputLink;
     /// <summary>
-    /// Function: ActivateOutputLink
+    /// Function: ActivateOutputLink<br/>
+    /// Native code at BatmanAK.exe+0xB50940 in the Steam build
     /// </summary>
     public unsafe virtual bool ActivateOutputLink(int OutputIdx)
     {
@@ -316,7 +323,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatVars;
     /// <summary>
-    /// Function: GetFloatVars
+    /// Function: GetFloatVars<br/>
+    /// Native code at BatmanAK.exe+0x99AB60 in the Steam build
     /// </summary>
     public unsafe virtual void GetFloatVars(out BmSDK.TArray<float> floatVars, BmSDK.FStringArg inDesc = default)
     {
@@ -340,7 +348,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoolVars;
     /// <summary>
-    /// Function: GetBoolVars
+    /// Function: GetBoolVars<br/>
+    /// Native code at BatmanAK.exe+0x99A950 in the Steam build
     /// </summary>
     public unsafe virtual void GetBoolVars(out BmSDK.TArray<byte> boolVars, BmSDK.FStringArg inDesc = default)
     {
@@ -364,7 +373,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInterpDataVars;
     /// <summary>
-    /// Function: GetInterpDataVars
+    /// Function: GetInterpDataVars<br/>
+    /// Native code at BatmanAK.exe+0x9921D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetInterpDataVars(out BmSDK.TArray<BmSDK.Engine.InterpData> outIData, BmSDK.FStringArg inDesc = default)
     {
@@ -388,7 +398,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectVars;
     /// <summary>
-    /// Function: GetObjectVars
+    /// Function: GetObjectVars<br/>
+    /// Native code at BatmanAK.exe+0x9A3440 in the Steam build
     /// </summary>
     public unsafe virtual void GetObjectVars(out BmSDK.TArray<BmSDK.GameObject> ObjVars, BmSDK.FStringArg inDesc = default)
     {
@@ -412,7 +423,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorVars;
     /// <summary>
-    /// Function: GetVectorVars
+    /// Function: GetVectorVars<br/>
+    /// Native code at BatmanAK.exe+0x99A7B0 in the Steam build
     /// </summary>
     public unsafe virtual void GetVectorVars(out BmSDK.TArray<System.Numerics.Vector3> vecVars, BmSDK.FStringArg inDesc = default)
     {
@@ -436,7 +448,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkedObjects;
     /// <summary>
-    /// Function: GetLinkedObjects
+    /// Function: GetLinkedObjects<br/>
+    /// Native code at BatmanAK.exe+0xBB6CC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetLinkedObjects(out BmSDK.TArray<BmSDK.Engine.SequenceObject> out_Objects, BmSDK.Class ObjectType = default, bool bRecurse = default)
     {
@@ -460,7 +473,8 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLinkedOps;
     /// <summary>
-    /// Function: HasLinkedOps
+    /// Function: HasLinkedOps<br/>
+    /// Native code at BatmanAK.exe+0xB50890 in the Steam build
     /// </summary>
     public unsafe virtual bool HasLinkedOps(bool bConsiderInputLinks = default)
     {

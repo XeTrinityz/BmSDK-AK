@@ -80,7 +80,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSnowSound;
     /// <summary>
-    /// Function: DisableSnowSound
+    /// Function: DisableSnowSound<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableSnowSound()
     {
@@ -101,7 +102,8 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableSnowSound;
     /// <summary>
-    /// Function: EnableSnowSound
+    /// Function: EnableSnowSound<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableSnowSound()
     {

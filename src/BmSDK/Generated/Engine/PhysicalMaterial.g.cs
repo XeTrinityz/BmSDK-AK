@@ -80,7 +80,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalMaterialProperty;
     /// <summary>
-    /// Function: GetPhysicalMaterialProperty
+    /// Function: GetPhysicalMaterialProperty<br/>
+    /// Native code at BatmanAK.exe+0xB8EBA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicalMaterialPropertyBase GetPhysicalMaterialProperty(BmSDK.Class DesiredClass)
     {
@@ -102,7 +103,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateSlideStrength;
     /// <summary>
-    /// Function: CalculateSlideStrength
+    /// Function: CalculateSlideStrength<br/>
+    /// Native code at BatmanAK.exe+0xB8EA60 in the Steam build
     /// </summary>
     public unsafe virtual float CalculateSlideStrength(float SlideSpeed)
     {
@@ -124,7 +126,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateImpactStrength;
     /// <summary>
-    /// Function: CalculateImpactStrength
+    /// Function: CalculateImpactStrength<br/>
+    /// Native code at BatmanAK.exe+0xB79870 in the Steam build
     /// </summary>
     public unsafe virtual float CalculateImpactStrength(float ImpactSpeed)
     {
@@ -146,7 +149,8 @@ public partial class PhysicalMaterial : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPhysEffectInfo;
     /// <summary>
-    /// Function: FindPhysEffectInfo
+    /// Function: FindPhysEffectInfo<br/>
+    /// Native code at BatmanAK.exe+0xB453E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.FPhysEffectInfo FindPhysEffectInfo(BmSDK.Engine.PhysicalMaterial.EPhysEffectType Type)
     {

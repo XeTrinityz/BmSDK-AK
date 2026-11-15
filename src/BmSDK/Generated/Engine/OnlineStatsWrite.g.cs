@@ -75,7 +75,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DecrementIntStat;
     /// <summary>
-    /// Function: DecrementIntStat
+    /// Function: DecrementIntStat<br/>
+    /// Native code at BatmanAK.exe+0xB81FB0 in the Steam build
     /// </summary>
     public unsafe virtual void DecrementIntStat(int StatId, int DecBy = default)
     {
@@ -98,7 +99,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DecrementFloatStat;
     /// <summary>
-    /// Function: DecrementFloatStat
+    /// Function: DecrementFloatStat<br/>
+    /// Native code at BatmanAK.exe+0xB81E50 in the Steam build
     /// </summary>
     public unsafe virtual void DecrementFloatStat(int StatId, float DecBy = default)
     {
@@ -121,7 +123,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementIntStat;
     /// <summary>
-    /// Function: IncrementIntStat
+    /// Function: IncrementIntStat<br/>
+    /// Native code at BatmanAK.exe+0xB81D00 in the Steam build
     /// </summary>
     public unsafe virtual void IncrementIntStat(int StatId, int IncBy = default)
     {
@@ -144,7 +147,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementFloatStat;
     /// <summary>
-    /// Function: IncrementFloatStat
+    /// Function: IncrementFloatStat<br/>
+    /// Native code at BatmanAK.exe+0xB81BA0 in the Steam build
     /// </summary>
     public unsafe virtual void IncrementFloatStat(int StatId, float IncBy = default)
     {
@@ -167,7 +171,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIntStat;
     /// <summary>
-    /// Function: SetIntStat
+    /// Function: SetIntStat<br/>
+    /// Native code at BatmanAK.exe+0xB819C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetIntStat(int StatId, int Value)
     {
@@ -190,7 +195,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatStat;
     /// <summary>
-    /// Function: SetFloatStat
+    /// Function: SetFloatStat<br/>
+    /// Native code at BatmanAK.exe+0xB817D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloatStat(int StatId, float Value)
     {
@@ -213,7 +219,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatName;
     /// <summary>
-    /// Function: GetStatName
+    /// Function: GetStatName<br/>
+    /// Native code at BatmanAK.exe+0xB81690 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetStatName(int StatId)
     {
@@ -235,7 +242,8 @@ public partial class OnlineStatsWrite : BmSDK.Engine.OnlineStats, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatId;
     /// <summary>
-    /// Function: GetStatId
+    /// Function: GetStatId<br/>
+    /// Native code at BatmanAK.exe+0xB81510 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStatId(BmSDK.FName StatName, out int StatId)
     {

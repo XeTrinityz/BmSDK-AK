@@ -80,7 +80,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShrinkParameterArrays;
     /// <summary>
-    /// Function: ShrinkParameterArrays
+    /// Function: ShrinkParameterArrays<br/>
+    /// Native code at BatmanAK.exe+0x497F40 in the Steam build
     /// </summary>
     public unsafe virtual void ShrinkParameterArrays()
     {
@@ -101,7 +102,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearVectorParameterValue;
     /// <summary>
-    /// Function: ClearVectorParameterValue
+    /// Function: ClearVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB961B0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearVectorParameterValue(BmSDK.FName ParameterName)
     {
@@ -123,7 +125,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearScalarParameterValue;
     /// <summary>
-    /// Function: ClearScalarParameterValue
+    /// Function: ClearScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB96080 in the Steam build
     /// </summary>
     public unsafe virtual void ClearScalarParameterValue(BmSDK.FName ParameterName)
     {
@@ -145,7 +148,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameterValues;
     /// <summary>
-    /// Function: ClearParameterValues
+    /// Function: ClearParameterValues<br/>
+    /// Native code at BatmanAK.exe+0xB48EB0 in the Steam build
     /// </summary>
     public unsafe override void ClearParameterValues()
     {
@@ -166,7 +170,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileVectorParameterValue;
     /// <summary>
-    /// Function: GetMobileVectorParameterValue
+    /// Function: GetMobileVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94F40 in the Steam build
     /// </summary>
     public unsafe override bool GetMobileVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor OutValue)
     {
@@ -191,7 +196,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileTextureParameterValue;
     /// <summary>
-    /// Function: GetMobileTextureParameterValue
+    /// Function: GetMobileTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94DC0 in the Steam build
     /// </summary>
     public unsafe override bool GetMobileTextureParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Texture OutValue)
     {
@@ -216,7 +222,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMobileScalarParameterValue;
     /// <summary>
-    /// Function: GetMobileScalarParameterValue
+    /// Function: GetMobileScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94C40 in the Steam build
     /// </summary>
     public unsafe override bool GetMobileScalarParameterValue(BmSDK.FName ParameterName, out float OutValue)
     {
@@ -241,7 +248,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFontParameterValue;
     /// <summary>
-    /// Function: SetFontParameterValue
+    /// Function: SetFontParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95DE0 in the Steam build
     /// </summary>
     public unsafe override void SetFontParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Font FontValue, int FontPage)
     {
@@ -265,7 +273,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameterValue;
     /// <summary>
-    /// Function: SetVectorParameterValue
+    /// Function: SetVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95880 in the Steam build
     /// </summary>
     public unsafe override void SetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
@@ -290,7 +299,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureParameterValue;
     /// <summary>
-    /// Function: SetTextureParameterValue
+    /// Function: SetTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95BF0 in the Steam build
     /// </summary>
     public unsafe override void SetTextureParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Texture Value)
     {
@@ -313,7 +323,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarParameterValue;
     /// <summary>
-    /// Function: SetScalarParameterValue
+    /// Function: SetScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB959F0 in the Steam build
     /// </summary>
     public unsafe override void SetScalarParameterValue(BmSDK.FName ParameterName, float Value)
     {
@@ -336,7 +347,8 @@ public partial class MaterialInstanceConstant : BmSDK.Engine.MaterialInstance, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParent;
     /// <summary>
-    /// Function: SetParent
+    /// Function: SetParent<br/>
+    /// Native code at BatmanAK.exe+0xB95750 in the Steam build
     /// </summary>
     public unsafe override void SetParent(BmSDK.Engine.MaterialInterface NewParent)
     {

@@ -212,7 +212,8 @@ public partial class GameReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSameTeam;
     /// <summary>
-    /// Function: OnSameTeam
+    /// Function: OnSameTeam<br/>
+    /// Native code at BatmanAK.exe+0x504F50 in the Steam build
     /// </summary>
     public unsafe virtual bool OnSameTeam(BmSDK.Engine.Actor A, BmSDK.Engine.Actor B)
     {

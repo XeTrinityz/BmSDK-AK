@@ -361,7 +361,8 @@ public partial class RAlertEventCoordinatorBase : BmSDK.Engine.Actor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllSoloChildrenOfClass;
     /// <summary>
-    /// Function: GetAllSoloChildrenOfClass
+    /// Function: GetAllSoloChildrenOfClass<br/>
+    /// Native code at BatmanAK.exe+0x5637D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllSoloChildrenOfClass(BmSDK.Class TestClass, out BmSDK.TArray<BmSDK.BmGame.RAlertEventCoordinatorSolo> OutList)
     {
@@ -384,7 +385,8 @@ public partial class RAlertEventCoordinatorBase : BmSDK.Engine.Actor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllGroupChildrenOfClass;
     /// <summary>
-    /// Function: GetAllGroupChildrenOfClass
+    /// Function: GetAllGroupChildrenOfClass<br/>
+    /// Native code at BatmanAK.exe+0x563640 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllGroupChildrenOfClass(BmSDK.Class TestClass, out BmSDK.TArray<BmSDK.BmGame.RAlertEventCoordinatorBase> OutList)
     {
@@ -407,7 +409,8 @@ public partial class RAlertEventCoordinatorBase : BmSDK.Engine.Actor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetParentOfClass;
     /// <summary>
-    /// Function: GetParentOfClass
+    /// Function: GetParentOfClass<br/>
+    /// Native code at BatmanAK.exe+0x4F73D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAlertEventCoordinatorBase GetParentOfClass(BmSDK.Class TestClass)
     {

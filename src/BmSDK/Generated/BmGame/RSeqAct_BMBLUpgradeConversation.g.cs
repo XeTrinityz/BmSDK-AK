@@ -179,7 +179,8 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechNative;
     /// <summary>
-    /// Function: StopSpeechNative
+    /// Function: StopSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0x48D6F0 in the Steam build
     /// </summary>
     public unsafe override void StopSpeechNative()
     {
@@ -200,7 +201,8 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
-    /// Function: HandleInputLinks
+    /// Function: HandleInputLinks<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe override void HandleInputLinks()
     {

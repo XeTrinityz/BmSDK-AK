@@ -80,7 +80,8 @@ public partial class RWallClimbCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoSmoothCameraCollision;
     /// <summary>
-    /// Function: DoSmoothCameraCollision
+    /// Function: DoSmoothCameraCollision<br/>
+    /// Native code at BatmanAK.exe+0x495F00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 DoSmoothCameraCollision(System.Numerics.Vector3 NewPos, System.Numerics.Vector3 FallBackPosition, bool bDoSmoothing = default)
     {

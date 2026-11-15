@@ -80,7 +80,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsOverstretched;
     /// <summary>
-    /// Function: GetIsOverstretched
+    /// Function: GetIsOverstretched<br/>
+    /// Native code at BatmanAK.exe+0x483D70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsOverstretched(BmSDK.BmGame.RRopeComponentBase.ERopeEndType TestStartEnd, out float OutOverstretchPos, float OverstretchRatio)
     {
@@ -106,7 +107,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRope;
     /// <summary>
-    /// Function: FinaliseRope
+    /// Function: FinaliseRope<br/>
+    /// Native code at BatmanAK.exe+0x482D00 in the Steam build
     /// </summary>
     public unsafe override void FinaliseRope()
     {
@@ -127,7 +129,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseRope;
     /// <summary>
-    /// Function: InitialiseRope
+    /// Function: InitialiseRope<br/>
+    /// Native code at BatmanAK.exe+0x482CC0 in the Steam build
     /// </summary>
     public unsafe override void InitialiseRope()
     {
@@ -148,7 +151,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinRopeLength;
     /// <summary>
-    /// Function: GetMinRopeLength
+    /// Function: GetMinRopeLength<br/>
+    /// Native code at BatmanAK.exe+0x483C80 in the Steam build
     /// </summary>
     public unsafe override float GetMinRopeLength()
     {
@@ -169,7 +173,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinRope;
     /// <summary>
-    /// Function: JoinRope
+    /// Function: JoinRope<br/>
+    /// Native code at BatmanAK.exe+0x4EFBF0 in the Steam build
     /// </summary>
     public unsafe virtual void JoinRope(BmSDK.BmGame.RRopeComponent OtherRope, BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisRopeJoinEnd, BmSDK.BmGame.RRopeComponentBase.ERopeEndType OtherRopeJoinEnd)
     {
@@ -193,7 +198,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SplitRope;
     /// <summary>
-    /// Function: SplitRope
+    /// Function: SplitRope<br/>
+    /// Native code at BatmanAK.exe+0x4EF950 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SplitRope(float SplitPos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisSplitEnd, BmSDK.BmGame.RRopeComponent InOutOtherSplitEnd)
     {
@@ -220,7 +226,8 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRope;
     /// <summary>
-    /// Function: UpdateRope
+    /// Function: UpdateRope<br/>
+    /// Native code at BatmanAK.exe+0xB2DB10 in the Steam build
     /// </summary>
     public unsafe override void UpdateRope()
     {

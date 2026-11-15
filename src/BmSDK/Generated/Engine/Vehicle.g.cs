@@ -225,7 +225,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FaceRotation;
     /// <summary>
-    /// Function: FaceRotation
+    /// Function: FaceRotation<br/>
+    /// Native code at BatmanAK.exe+0x4A36C0 in the Steam build
     /// </summary>
     public unsafe override void FaceRotation(BmSDK.Rotator NewRotation, float DeltaTime)
     {
@@ -800,7 +801,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -823,7 +825,8 @@ public partial class Vehicle : BmSDK.Engine.Pawn, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxRiseForce;
     /// <summary>
-    /// Function: GetMaxRiseForce
+    /// Function: GetMaxRiseForce<br/>
+    /// Native code at BatmanAK.exe+0xB42C00 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxRiseForce()
     {

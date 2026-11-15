@@ -75,7 +75,8 @@ public partial class RRope2PhysicsUpdater : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
-    /// Function: GetThoughts
+    /// Function: GetThoughts<br/>
+    /// Native code at BatmanAK.exe+0x590E10 in the Steam build
     /// </summary>
     public unsafe virtual void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FStringArg IndentString = default)
     {

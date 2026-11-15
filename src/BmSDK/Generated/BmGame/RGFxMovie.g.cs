@@ -80,7 +80,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInFearGasXYZ;
     /// <summary>
-    /// Function: IsLocationInFearGasXYZ
+    /// Function: IsLocationInFearGasXYZ<br/>
+    /// Native code at BatmanAK.exe+0x51A930 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInFearGasXYZ(float X, float Y, float Z)
     {
@@ -104,7 +105,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInFearGas;
     /// <summary>
-    /// Function: IsLocationInFearGas
+    /// Function: IsLocationInFearGas<br/>
+    /// Native code at BatmanAK.exe+0x496C60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInFearGas(System.Numerics.Vector3 vTestLocation)
     {
@@ -161,7 +163,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_LoadPackageSF;
     /// <summary>
-    /// Function: XI_LoadPackageSF
+    /// Function: XI_LoadPackageSF<br/>
+    /// Native code at BatmanAK.exe+0x5450C0 in the Steam build
     /// </summary>
     public unsafe virtual bool XI_LoadPackageSF(BmSDK.FStringArg sPackage, BmSDK.FStringArg sCallback, BmSDK.FStringArg sAsset = default)
     {
@@ -188,7 +191,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_CancelPackageSF;
     /// <summary>
-    /// Function: XI_CancelPackageSF
+    /// Function: XI_CancelPackageSF<br/>
+    /// Native code at BatmanAK.exe+0x545000 in the Steam build
     /// </summary>
     public unsafe virtual void XI_CancelPackageSF(BmSDK.FStringArg sPackage = default)
     {
@@ -241,7 +245,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VS_FakeNetID;
     /// <summary>
-    /// Function: VS_FakeNetID
+    /// Function: VS_FakeNetID<br/>
+    /// Native code at BatmanAK.exe+0x51A7F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.FUniqueNetId VS_FakeNetID(int IconId)
     {
@@ -310,7 +315,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ManualAdvance;
     /// <summary>
-    /// Function: ManualAdvance
+    /// Function: ManualAdvance<br/>
+    /// Native code at BatmanAK.exe+0x496C20 in the Steam build
     /// </summary>
     public unsafe virtual void ManualAdvance()
     {
@@ -331,7 +337,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepareManualAdvance;
     /// <summary>
-    /// Function: PrepareManualAdvance
+    /// Function: PrepareManualAdvance<br/>
+    /// Native code at BatmanAK.exe+0x496BE0 in the Steam build
     /// </summary>
     public unsafe virtual void PrepareManualAdvance()
     {
@@ -383,7 +390,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveSubtitle;
     /// <summary>
-    /// Function: RemoveSubtitle
+    /// Function: RemoveSubtitle<br/>
+    /// Native code at BatmanAK.exe+0xB48EB0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveSubtitle()
     {
@@ -404,7 +412,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSubtitle;
     /// <summary>
-    /// Function: AddSubtitle
+    /// Function: AddSubtitle<br/>
+    /// Native code at BatmanAK.exe+0x544BA0 in the Steam build
     /// </summary>
     public unsafe virtual void AddSubtitle(int SubtitlePriority, float SubtitleDuration, BmSDK.FStringArg SubtitleText, bool bBackScreen, bool bMovie)
     {
@@ -431,7 +440,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioTrackIds;
     /// <summary>
-    /// Function: GetAudioTrackIds
+    /// Function: GetAudioTrackIds<br/>
+    /// Native code at BatmanAK.exe+0x496AB0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAudioTrackIds(out int EffectsAudioTrack, out int DialogueAudioTrack, out int SubtitleTrackId)
     {
@@ -703,7 +713,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LookupLocTags;
     /// <summary>
-    /// Function: LookupLocTags
+    /// Function: LookupLocTags<br/>
+    /// Native code at BatmanAK.exe+0x5449C0 in the Steam build
     /// </summary>
     public unsafe virtual void LookupLocTags(BmSDK.FStringArg BaseStr, out BmSDK.FString PadStr, out BmSDK.FString KeyStr)
     {
@@ -728,7 +739,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LookupLocTag;
     /// <summary>
-    /// Function: LookupLocTag
+    /// Function: LookupLocTag<br/>
+    /// Native code at BatmanAK.exe+0x544730 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString LookupLocTag(BmSDK.FStringArg BaseStr, bool bAsPad, bool bNoExpand = default, bool bIsKey2 = default)
     {
@@ -801,7 +813,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPS3_480i;
     /// <summary>
-    /// Function: IsPS3_480i
+    /// Function: IsPS3_480i<br/>
+    /// Native code at BatmanAK.exe+0x488840 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPS3_480i()
     {
@@ -822,7 +835,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPS3_4x3;
     /// <summary>
-    /// Function: IsPS3_4x3
+    /// Function: IsPS3_4x3<br/>
+    /// Native code at BatmanAK.exe+0x4887F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPS3_4x3()
     {
@@ -858,7 +872,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLanguageExt;
     /// <summary>
-    /// Function: GetLanguageExt
+    /// Function: GetLanguageExt<br/>
+    /// Native code at BatmanAK.exe+0x5446B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetLanguageExt()
     {
@@ -879,7 +894,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointerValid;
     /// <summary>
-    /// Function: IsPointerValid
+    /// Function: IsPointerValid<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPointerValid()
     {
@@ -900,7 +916,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioState;
     /// <summary>
-    /// Function: SetAudioState
+    /// Function: SetAudioState<br/>
+    /// Native code at BatmanAK.exe+0x5444A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioState(BmSDK.FStringArg StateName, BmSDK.FStringArg StateValue)
     {
@@ -925,7 +942,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioParameter;
     /// <summary>
-    /// Function: SetAudioParameter
+    /// Function: SetAudioParameter<br/>
+    /// Native code at BatmanAK.exe+0x5442A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioParameter(BmSDK.FStringArg ParamName, float ParamValue)
     {
@@ -949,7 +967,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillEventInstance;
     /// <summary>
-    /// Function: KillEventInstance
+    /// Function: KillEventInstance<br/>
+    /// Native code at BatmanAK.exe+0x51A6D0 in the Steam build
     /// </summary>
     public unsafe virtual void KillEventInstance(int InstanceID)
     {
@@ -971,7 +990,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAudioEventsQueue;
     /// <summary>
-    /// Function: TriggerAudioEventsQueue
+    /// Function: TriggerAudioEventsQueue<br/>
+    /// Native code at BatmanAK.exe+0x543FF0 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerAudioEventsQueue(int ChannelID, BmSDK.FStringArg Source_Event_Thing__PipeSeparated, int NumEvents)
     {
@@ -996,7 +1016,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAudioEvent;
     /// <summary>
-    /// Function: TriggerAudioEvent
+    /// Function: TriggerAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0x543C60 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerAudioEvent(int ChannelID, BmSDK.FStringArg Source, BmSDK.FStringArg Event, BmSDK.FStringArg Thing)
     {
@@ -1040,7 +1061,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LocaliseCaps;
     /// <summary>
-    /// Function: LocaliseCaps
+    /// Function: LocaliseCaps<br/>
+    /// Native code at BatmanAK.exe+0x543AE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString LocaliseCaps(BmSDK.FStringArg Str)
     {
@@ -1063,7 +1085,8 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Localise;
     /// <summary>
-    /// Function: Localise
+    /// Function: Localise<br/>
+    /// Native code at BatmanAK.exe+0x543960 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString Localise(BmSDK.FStringArg Str)
     {

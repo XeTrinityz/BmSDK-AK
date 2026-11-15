@@ -75,7 +75,8 @@ public partial class ParticleEmitter : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxLifespan;
     /// <summary>
-    /// Function: GetMaxLifespan
+    /// Function: GetMaxLifespan<br/>
+    /// Native code at BatmanAK.exe+0xB9B900 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxLifespan(float InComponentDelay)
     {

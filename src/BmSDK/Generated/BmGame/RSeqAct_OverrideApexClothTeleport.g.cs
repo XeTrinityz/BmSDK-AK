@@ -93,7 +93,8 @@ public partial class RSeqAct_OverrideApexClothTeleport : BmSDK.Engine.SequenceAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
-    /// Function: Activated
+    /// Function: Activated<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe override void Activated()
     {

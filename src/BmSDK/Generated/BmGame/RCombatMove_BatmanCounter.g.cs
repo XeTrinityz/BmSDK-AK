@@ -369,7 +369,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWindingStartTime;
     /// <summary>
-    /// Function: GetWindingStartTime
+    /// Function: GetWindingStartTime<br/>
+    /// Native code at BatmanAK.exe+0x4D29D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetWindingStartTime(BmSDK.FName CounterName, out float BatmanWindingTime, out float ThugWindingTime)
     {
@@ -757,7 +758,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCounterInfoScore;
     /// <summary>
-    /// Function: GetCounterInfoScore
+    /// Function: GetCounterInfoScore<br/>
+    /// Native code at BatmanAK.exe+0x4D27D0 in the Steam build
     /// </summary>
     public unsafe virtual float GetCounterInfoScore(BmSDK.BmGame.RPawnPlayerCombat.FCounterInfo TestCounter, BmSDK.BmGame.RPawnPlayerCombat.CounterMoveDir MoveDir, BmSDK.BmGame.RGameInfo.CounterLimb Limb, BmSDK.BmGame.RPawnPlayerCombat.CounterStrength TestStrength, bool bOnSlope)
     {
@@ -783,7 +785,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterInfo;
     /// <summary>
-    /// Function: SetCounterInfo
+    /// Function: SetCounterInfo<br/>
+    /// Native code at BatmanAK.exe+0x479490 in the Steam build
     /// </summary>
     public unsafe virtual int SetCounterInfo(BmSDK.BmGame.RPawnPlayerCombat.CounterStrength CStrength)
     {
@@ -805,7 +808,8 @@ public partial class RCombatMove_BatmanCounter : BmSDK.BmGame.RCombatMove_Batman
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnvironmentInfo;
     /// <summary>
-    /// Function: SetEnvironmentInfo
+    /// Function: SetEnvironmentInfo<br/>
+    /// Native code at BatmanAK.exe+0x479410 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnvironmentInfo(BmSDK.BmGame.RPawnPlayerCombat.CounterStrength CStrength)
     {

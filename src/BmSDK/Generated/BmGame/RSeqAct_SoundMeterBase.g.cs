@@ -188,7 +188,8 @@ public partial class RSeqAct_SoundMeterBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeUpdate;
     /// <summary>
-    /// Function: NativeUpdate
+    /// Function: NativeUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4B0C30 in the Steam build
     /// </summary>
     public unsafe virtual bool NativeUpdate(float DeltaTime)
     {

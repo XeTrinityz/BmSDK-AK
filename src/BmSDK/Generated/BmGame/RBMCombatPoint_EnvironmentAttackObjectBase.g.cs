@@ -619,7 +619,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidVillain;
     /// <summary>
-    /// Function: IsValidVillain
+    /// Function: IsValidVillain<br/>
+    /// Native code at BatmanAK.exe+0x4A5E30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidVillain(BmSDK.BmGame.RPawnVillain TestPawn)
     {
@@ -641,7 +642,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotatedVectorOnAxis;
     /// <summary>
-    /// Function: GetRotatedVectorOnAxis
+    /// Function: GetRotatedVectorOnAxis<br/>
+    /// Native code at BatmanAK.exe+0x4A5C70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRotatedVectorOnAxis(System.Numerics.Vector3 vec, int Angle, System.Numerics.Vector3 Axis)
     {
@@ -665,7 +667,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLight;
     /// <summary>
-    /// Function: SetLight
+    /// Function: SetLight<br/>
+    /// Native code at BatmanAK.exe+0x4A59D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLight(BmSDK.Engine.PointLightComponent LightComp, BmSDK.FName LightSocket, bool Enable)
     {
@@ -689,7 +692,8 @@ public partial class RBMCombatPoint_EnvironmentAttackObjectBase : BmSDK.BmGame.R
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupLights;
     /// <summary>
-    /// Function: SetupLights
+    /// Function: SetupLights<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void SetupLights()
     {

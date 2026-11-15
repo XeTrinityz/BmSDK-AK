@@ -255,7 +255,8 @@ public partial class RLevelTransitionDoorBunkerNativeBase : BmSDK.BmGame.RLevelT
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInActivationRange;
     /// <summary>
-    /// Function: IsInActivationRange
+    /// Function: IsInActivationRange<br/>
+    /// Native code at BatmanAK.exe+0x512150 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInActivationRange(System.Numerics.Vector3 pos, float Range)
     {
@@ -278,7 +279,8 @@ public partial class RLevelTransitionDoorBunkerNativeBase : BmSDK.BmGame.RLevelT
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoorIsAnimating;
     /// <summary>
-    /// Function: DoorIsAnimating
+    /// Function: DoorIsAnimating<br/>
+    /// Native code at BatmanAK.exe+0x46B4B0 in the Steam build
     /// </summary>
     public unsafe virtual bool DoorIsAnimating()
     {
@@ -299,7 +301,8 @@ public partial class RLevelTransitionDoorBunkerNativeBase : BmSDK.BmGame.RLevelT
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerPassingThrough;
     /// <summary>
-    /// Function: IsPlayerPassingThrough
+    /// Function: IsPlayerPassingThrough<br/>
+    /// Native code at BatmanAK.exe+0x4944D0 in the Steam build
     /// </summary>
     public unsafe override bool IsPlayerPassingThrough(System.Numerics.Vector3 PlayerLocation)
     {

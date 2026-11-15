@@ -80,7 +80,8 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAllBodyPartStatus;
     /// <summary>
-    /// Function: CheckAllBodyPartStatus
+    /// Function: CheckAllBodyPartStatus<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckAllBodyPartStatus()
     {
@@ -287,7 +288,8 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeTick;
     /// <summary>
-    /// Function: NativeTick
+    /// Function: NativeTick<br/>
+    /// Native code at BatmanAK.exe+0x4D1400 in the Steam build
     /// </summary>
     public unsafe override void NativeTick(float DeltaTime)
     {

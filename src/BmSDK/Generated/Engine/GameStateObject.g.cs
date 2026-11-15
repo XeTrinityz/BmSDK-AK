@@ -80,7 +80,8 @@ public partial class GameStateObject : BmSDK.Engine.GameplayEventsHandler, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
-    /// Function: Reset
+    /// Function: Reset<br/>
+    /// Native code at BatmanAK.exe+0xB506A0 in the Steam build
     /// </summary>
     public unsafe virtual void Reset()
     {
@@ -101,7 +102,8 @@ public partial class GameStateObject : BmSDK.Engine.GameplayEventsHandler, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessStream;
     /// <summary>
-    /// Function: PreProcessStream
+    /// Function: PreProcessStream<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe override void PreProcessStream()
     {

@@ -110,7 +110,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StaticGetValidatedAnchorPosition;
     /// <summary>
-    /// Function: StaticGetValidatedAnchorPosition
+    /// Function: StaticGetValidatedAnchorPosition<br/>
+    /// Native code at BatmanAK.exe+0xB50410 in the Steam build
     /// </summary>
     public unsafe static bool StaticGetValidatedAnchorPosition(out System.Numerics.Vector3 out_NewAnchorLoc, System.Numerics.Vector3 StartCheckBaseLocation, System.Numerics.Vector3 Extent)
     {
@@ -135,7 +136,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValidatedAnchorPosition;
     /// <summary>
-    /// Function: GetValidatedAnchorPosition
+    /// Function: GetValidatedAnchorPosition<br/>
+    /// Native code at BatmanAK.exe+0xB502E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetValidatedAnchorPosition(out System.Numerics.Vector3 out_NewAnchorLoc, System.Numerics.Vector3 OverrideStartLoc = default)
     {
@@ -160,7 +162,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulatePathfindingParamCache;
     /// <summary>
-    /// Function: PopulatePathfindingParamCache
+    /// Function: PopulatePathfindingParamCache<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool PopulatePathfindingParamCache()
     {
@@ -181,7 +184,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MoveToDesiredHeightAboveMesh;
     /// <summary>
-    /// Function: MoveToDesiredHeightAboveMesh
+    /// Function: MoveToDesiredHeightAboveMesh<br/>
+    /// Native code at BatmanAK.exe+0xB50160 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 MoveToDesiredHeightAboveMesh(System.Numerics.Vector3 Point, float Height)
     {
@@ -203,7 +207,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyMovePointsFromPathCache;
     /// <summary>
-    /// Function: CopyMovePointsFromPathCache
+    /// Function: CopyMovePointsFromPathCache<br/>
+    /// Native code at BatmanAK.exe+0xBB0F40 in the Steam build
     /// </summary>
     public unsafe virtual void CopyMovePointsFromPathCache(System.Numerics.Vector3 FinalDest, out BmSDK.TArray<System.Numerics.Vector3> out_MovePoints)
     {
@@ -226,7 +231,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculatePathDistance;
     /// <summary>
-    /// Function: CalculatePathDistance
+    /// Function: CalculatePathDistance<br/>
+    /// Native code at BatmanAK.exe+0xB50080 in the Steam build
     /// </summary>
     public unsafe virtual float CalculatePathDistance(System.Numerics.Vector3 FinalDest = default)
     {
@@ -248,7 +254,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstMoveLocation;
     /// <summary>
-    /// Function: GetFirstMoveLocation
+    /// Function: GetFirstMoveLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFirstMoveLocation()
     {
@@ -269,7 +276,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnchorInescapable;
     /// <summary>
-    /// Function: IsAnchorInescapable
+    /// Function: IsAnchorInescapable<br/>
+    /// Native code at BatmanAK.exe+0xB4FFD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnchorInescapable()
     {
@@ -290,7 +298,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LimitPathCacheDistance;
     /// <summary>
-    /// Function: LimitPathCacheDistance
+    /// Function: LimitPathCacheDistance<br/>
+    /// Native code at BatmanAK.exe+0xB4FEA0 in the Steam build
     /// </summary>
     public unsafe virtual void LimitPathCacheDistance(float MaxDist)
     {
@@ -312,7 +321,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetValidPositionsForBox;
     /// <summary>
-    /// Function: GetValidPositionsForBox
+    /// Function: GetValidPositionsForBox<br/>
+    /// Native code at BatmanAK.exe+0xBB0BB0 in the Steam build
     /// </summary>
     public unsafe static void GetValidPositionsForBox(System.Numerics.Vector3 pos, float Radius, System.Numerics.Vector3 Extent, bool bMustBeReachableFromStartPos, out BmSDK.TArray<System.Numerics.Vector3> out_ValidPositions, int MaxPositions = default, float MinRadius = default, System.Numerics.Vector3 ValidBoxAroundStartPos = default)
     {
@@ -340,7 +350,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAllPolyCentersWithinBounds;
     /// <summary>
-    /// Function: GetAllPolyCentersWithinBounds
+    /// Function: GetAllPolyCentersWithinBounds<br/>
+    /// Native code at BatmanAK.exe+0xBB0A70 in the Steam build
     /// </summary>
     public unsafe static void GetAllPolyCentersWithinBounds(System.Numerics.Vector3 pos, System.Numerics.Vector3 Extent, out BmSDK.TArray<System.Numerics.Vector3> out_PolyCtrs)
     {
@@ -363,7 +374,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentEdgeType;
     /// <summary>
-    /// Function: GetCurrentEdgeType
+    /// Function: GetCurrentEdgeType<br/>
+    /// Native code at BatmanAK.exe+0xB4FE50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon.ENavMeshEdgeType GetCurrentEdgeType()
     {
@@ -384,7 +396,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCurrentEdge;
     /// <summary>
-    /// Function: ClearCurrentEdge
+    /// Function: ClearCurrentEdge<br/>
+    /// Native code at BatmanAK.exe+0xB40E40 in the Steam build
     /// </summary>
     public unsafe virtual void ClearCurrentEdge()
     {
@@ -405,7 +418,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentEdgeDebugText;
     /// <summary>
-    /// Function: GetCurrentEdgeDebugText
+    /// Function: GetCurrentEdgeDebugText<br/>
+    /// Native code at BatmanAK.exe+0xB9CA70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentEdgeDebugText()
     {
@@ -426,7 +440,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrintPathCacheDebugText;
     /// <summary>
-    /// Function: PrintPathCacheDebugText
+    /// Function: PrintPathCacheDebugText<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void PrintPathCacheDebugText()
     {
@@ -447,7 +462,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawPathCache;
     /// <summary>
-    /// Function: DrawPathCache
+    /// Function: DrawPathCache<br/>
+    /// Native code at BatmanAK.exe+0xB4FD00 in the Steam build
     /// </summary>
     public unsafe virtual void DrawPathCache(System.Numerics.Vector3 DrawOffset = default, bool bPersistent = default, BmSDK.GameObject.FColor DrawColor = default)
     {
@@ -471,7 +487,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActorReachable;
     /// <summary>
-    /// Function: ActorReachable
+    /// Function: ActorReachable<br/>
+    /// Native code at BatmanAK.exe+0xB4FBC0 in the Steam build
     /// </summary>
     public unsafe virtual bool ActorReachable(BmSDK.Engine.Actor A)
     {
@@ -493,7 +510,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointReachable;
     /// <summary>
-    /// Function: PointReachable
+    /// Function: PointReachable<br/>
+    /// Native code at BatmanAK.exe+0xB4FA70 in the Steam build
     /// </summary>
     public unsafe virtual bool PointReachable(System.Numerics.Vector3 Point, System.Numerics.Vector3 OverrideStartPoint = default, bool bAllowHitsInEndCollisionBox = default)
     {
@@ -517,7 +535,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointCheck;
     /// <summary>
-    /// Function: PointCheck
+    /// Function: PointCheck<br/>
+    /// Native code at BatmanAK.exe+0xB4F990 in the Steam build
     /// </summary>
     public unsafe virtual bool PointCheck(System.Numerics.Vector3 pt, System.Numerics.Vector3 Extent)
     {
@@ -540,7 +559,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LineCheck;
     /// <summary>
-    /// Function: LineCheck
+    /// Function: LineCheck<br/>
+    /// Native code at BatmanAK.exe+0xB4F6E0 in the Steam build
     /// </summary>
     public unsafe static bool LineCheck(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLocation, out System.Numerics.Vector3 out_HitNormal, bool bGetFirstHit, bool bIgnoreDynamicObstacles)
     {
@@ -571,7 +591,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ObstaclePointCheck;
     /// <summary>
-    /// Function: ObstaclePointCheck
+    /// Function: ObstaclePointCheck<br/>
+    /// Native code at BatmanAK.exe+0xB4F600 in the Steam build
     /// </summary>
     public unsafe static bool ObstaclePointCheck(System.Numerics.Vector3 pt, System.Numerics.Vector3 Extent)
     {
@@ -593,7 +614,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ObstacleLineCheckIgnoreWalkable;
     /// <summary>
-    /// Function: ObstacleLineCheckIgnoreWalkable
+    /// Function: ObstacleLineCheckIgnoreWalkable<br/>
+    /// Native code at BatmanAK.exe+0xB4F3A0 in the Steam build
     /// </summary>
     public unsafe static bool ObstacleLineCheckIgnoreWalkable(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLoc, out System.Numerics.Vector3 out_HitNorm, bool bFirstHit)
     {
@@ -623,7 +645,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ObstacleLineCheck;
     /// <summary>
-    /// Function: ObstacleLineCheck
+    /// Function: ObstacleLineCheck<br/>
+    /// Native code at BatmanAK.exe+0xB4F3A0 in the Steam build
     /// </summary>
     public unsafe static bool ObstacleLineCheck(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLoc, out System.Numerics.Vector3 out_HitNorm, bool bFirstHit)
     {
@@ -653,7 +676,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SuggestMovePreparation;
     /// <summary>
-    /// Function: SuggestMovePreparation
+    /// Function: SuggestMovePreparation<br/>
+    /// Native code at BatmanAK.exe+0xB4F230 in the Steam build
     /// </summary>
     public unsafe virtual bool SuggestMovePreparation(out System.Numerics.Vector3 MovePt, BmSDK.Engine.Controller C)
     {
@@ -678,7 +702,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPath;
     /// <summary>
-    /// Function: FindPath
+    /// Function: FindPath<br/>
+    /// Native code at BatmanAK.exe+0x46ABE0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindPath(out BmSDK.Engine.Actor out_DestActor, out int out_DestItem, out int PathRequestsUsed)
     {
@@ -708,7 +733,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComputeValidFinalDestination;
     /// <summary>
-    /// Function: ComputeValidFinalDestination
+    /// Function: ComputeValidFinalDestination<br/>
+    /// Native code at BatmanAK.exe+0xB4F180 in the Steam build
     /// </summary>
     public unsafe virtual bool ComputeValidFinalDestination(out System.Numerics.Vector3 out_ComputedPosition)
     {
@@ -732,7 +758,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFinalDestination;
     /// <summary>
-    /// Function: SetFinalDestination
+    /// Function: SetFinalDestination<br/>
+    /// Native code at BatmanAK.exe+0xB4F0E0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetFinalDestination(System.Numerics.Vector3 FinalDest)
     {
@@ -754,7 +781,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextMoveLocation;
     /// <summary>
-    /// Function: GetNextMoveLocation
+    /// Function: GetNextMoveLocation<br/>
+    /// Native code at BatmanAK.exe+0x4A3BE0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNextMoveLocation(out System.Numerics.Vector3 out_MoveDest, float ArrivalDistance)
     {
@@ -779,7 +807,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetRoutablePolyPylonFromPos;
     /// <summary>
-    /// Function: GetRoutablePolyPylonFromPos
+    /// Function: GetRoutablePolyPylonFromPos<br/>
+    /// Native code at BatmanAK.exe+0xB4F040 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Pylon GetRoutablePolyPylonFromPos(System.Numerics.Vector3 Position)
     {
@@ -800,7 +829,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPylonFromPos;
     /// <summary>
-    /// Function: GetPylonFromPos
+    /// Function: GetPylonFromPos<br/>
+    /// Native code at BatmanAK.exe+0xB4EFA0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Pylon GetPylonFromPos(System.Numerics.Vector3 Position)
     {
@@ -821,7 +851,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPylon;
     /// <summary>
-    /// Function: FindPylon
+    /// Function: FindPylon<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindPylon()
     {
@@ -842,7 +873,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestUnfinishedPathPoint;
     /// <summary>
-    /// Function: GetBestUnfinishedPathPoint
+    /// Function: GetBestUnfinishedPathPoint<br/>
+    /// Native code at BatmanAK.exe+0xB4EF40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBestUnfinishedPathPoint()
     {
@@ -863,7 +895,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathCache_RemoveIndex;
     /// <summary>
-    /// Function: PathCache_RemoveIndex
+    /// Function: PathCache_RemoveIndex<br/>
+    /// Native code at BatmanAK.exe+0xB4EDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool PathCache_RemoveIndex(int InIdx, int Count = default)
     {
@@ -886,7 +919,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathCache_GetGoalPoint;
     /// <summary>
-    /// Function: PathCache_GetGoalPoint
+    /// Function: PathCache_GetGoalPoint<br/>
+    /// Native code at BatmanAK.exe+0xB4ED70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 PathCache_GetGoalPoint()
     {
@@ -907,7 +941,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathCache_Empty;
     /// <summary>
-    /// Function: PathCache_Empty
+    /// Function: PathCache_Empty<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe virtual bool PathCache_Empty()
     {
@@ -972,7 +1007,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAnchorPylonIntegerity;
     /// <summary>
-    /// Function: CheckAnchorPylonIntegerity
+    /// Function: CheckAnchorPylonIntegerity<br/>
+    /// Native code at BatmanAK.exe+0xB4ED20 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAnchorPylonIntegerity()
     {
@@ -993,7 +1029,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesPylonAHaveAPathToPylonB;
     /// <summary>
-    /// Function: DoesPylonAHaveAPathToPylonB
+    /// Function: DoesPylonAHaveAPathToPylonB<br/>
+    /// Native code at BatmanAK.exe+0xB4EB30 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesPylonAHaveAPathToPylonB(BmSDK.Engine.Pylon A, BmSDK.Engine.Pylon B)
     {
@@ -1016,7 +1053,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildFromPylonAToPylonB;
     /// <summary>
-    /// Function: BuildFromPylonAToPylonB
+    /// Function: BuildFromPylonAToPylonB<br/>
+    /// Native code at BatmanAK.exe+0xB4E940 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon BuildFromPylonAToPylonB(BmSDK.Engine.Pylon A, BmSDK.Engine.Pylon B)
     {
@@ -1039,7 +1077,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGoalEvaluator;
     /// <summary>
-    /// Function: AddGoalEvaluator
+    /// Function: AddGoalEvaluator<br/>
+    /// Native code at BatmanAK.exe+0xB4E810 in the Steam build
     /// </summary>
     public unsafe virtual void AddGoalEvaluator(BmSDK.Engine.NavMeshPathGoalEvaluator Evaluator)
     {
@@ -1061,7 +1100,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPathConstraint;
     /// <summary>
-    /// Function: AddPathConstraint
+    /// Function: AddPathConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB4E6E0 in the Steam build
     /// </summary>
     public unsafe virtual void AddPathConstraint(BmSDK.Engine.NavMeshPathConstraint Constraint)
     {
@@ -1083,7 +1123,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearConstraints;
     /// <summary>
-    /// Function: ClearConstraints
+    /// Function: ClearConstraints<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void ClearConstraints()
     {
@@ -1104,7 +1145,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextBreadCrumb;
     /// <summary>
-    /// Function: GetNextBreadCrumb
+    /// Function: GetNextBreadCrumb<br/>
+    /// Native code at BatmanAK.exe+0xB4E630 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNextBreadCrumb(out System.Numerics.Vector3 out_BreadCrumbLoc)
     {
@@ -1128,7 +1170,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBreadCrumbs;
     /// <summary>
-    /// Function: UpdateBreadCrumbs
+    /// Function: UpdateBreadCrumbs<br/>
+    /// Native code at BatmanAK.exe+0xB4E5A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBreadCrumbs(System.Numerics.Vector3 InLocation)
     {
@@ -1150,7 +1193,8 @@ public partial class NavigationHandle : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyPathStoreToPathCache;
     /// <summary>
-    /// Function: CopyPathStoreToPathCache
+    /// Function: CopyPathStoreToPathCache<br/>
+    /// Native code at BatmanAK.exe+0xBB9690 in the Steam build
     /// </summary>
     public unsafe virtual void CopyPathStoreToPathCache(out BmSDK.Engine.NavigationHandle.FPathStore InStore)
     {
@@ -1629,7 +1673,8 @@ public static class NavigationHandleStatics
 {
     private static BmSDK.Function __fn_StaticGetValidatedAnchorPosition;
     /// <summary>
-    /// Function: StaticGetValidatedAnchorPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: StaticGetValidatedAnchorPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB50410 in the Steam build
     /// </summary>
     public unsafe static bool StaticGetValidatedAnchorPosition(this BmSDK.Engine.NavigationHandle self, out System.Numerics.Vector3 out_NewAnchorLoc, System.Numerics.Vector3 StartCheckBaseLocation, System.Numerics.Vector3 Extent)
     {
@@ -1655,7 +1700,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_MoveToDesiredHeightAboveMesh;
     /// <summary>
-    /// Function: MoveToDesiredHeightAboveMesh, run on <paramref name="self"/> rather than the class default object
+    /// Function: MoveToDesiredHeightAboveMesh, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB50160 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 MoveToDesiredHeightAboveMesh(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Point, float Height)
     {
@@ -1678,7 +1724,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_GetValidPositionsForBox;
     /// <summary>
-    /// Function: GetValidPositionsForBox, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetValidPositionsForBox, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB0BB0 in the Steam build
     /// </summary>
     public unsafe static void GetValidPositionsForBox(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 pos, float Radius, System.Numerics.Vector3 Extent, bool bMustBeReachableFromStartPos, out BmSDK.TArray<System.Numerics.Vector3> out_ValidPositions, int MaxPositions = default, float MinRadius = default, System.Numerics.Vector3 ValidBoxAroundStartPos = default)
     {
@@ -1707,7 +1754,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_GetAllPolyCentersWithinBounds;
     /// <summary>
-    /// Function: GetAllPolyCentersWithinBounds, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAllPolyCentersWithinBounds, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB0A70 in the Steam build
     /// </summary>
     public unsafe static void GetAllPolyCentersWithinBounds(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 pos, System.Numerics.Vector3 Extent, out BmSDK.TArray<System.Numerics.Vector3> out_PolyCtrs)
     {
@@ -1731,7 +1779,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_LineCheck;
     /// <summary>
-    /// Function: LineCheck, run on <paramref name="self"/> rather than the class default object
+    /// Function: LineCheck, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4F6E0 in the Steam build
     /// </summary>
     public unsafe static bool LineCheck(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLocation, out System.Numerics.Vector3 out_HitNormal, bool bGetFirstHit, bool bIgnoreDynamicObstacles)
     {
@@ -1763,7 +1812,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_ObstaclePointCheck;
     /// <summary>
-    /// Function: ObstaclePointCheck, run on <paramref name="self"/> rather than the class default object
+    /// Function: ObstaclePointCheck, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4F600 in the Steam build
     /// </summary>
     public unsafe static bool ObstaclePointCheck(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 pt, System.Numerics.Vector3 Extent)
     {
@@ -1786,7 +1836,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_ObstacleLineCheckIgnoreWalkable;
     /// <summary>
-    /// Function: ObstacleLineCheckIgnoreWalkable, run on <paramref name="self"/> rather than the class default object
+    /// Function: ObstacleLineCheckIgnoreWalkable, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4F3A0 in the Steam build
     /// </summary>
     public unsafe static bool ObstacleLineCheckIgnoreWalkable(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLoc, out System.Numerics.Vector3 out_HitNorm, bool bFirstHit)
     {
@@ -1817,7 +1868,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_ObstacleLineCheck;
     /// <summary>
-    /// Function: ObstacleLineCheck, run on <paramref name="self"/> rather than the class default object
+    /// Function: ObstacleLineCheck, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4F3A0 in the Steam build
     /// </summary>
     public unsafe static bool ObstacleLineCheck(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 out_HitLoc, out System.Numerics.Vector3 out_HitNorm, bool bFirstHit)
     {
@@ -1848,7 +1900,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_GetRoutablePolyPylonFromPos;
     /// <summary>
-    /// Function: GetRoutablePolyPylonFromPos, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetRoutablePolyPylonFromPos, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4F040 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Pylon GetRoutablePolyPylonFromPos(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Position)
     {
@@ -1870,7 +1923,8 @@ public static class NavigationHandleStatics
 
     private static BmSDK.Function __fn_GetPylonFromPos;
     /// <summary>
-    /// Function: GetPylonFromPos, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPylonFromPos, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB4EFA0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Pylon GetPylonFromPos(this BmSDK.Engine.NavigationHandle self, System.Numerics.Vector3 Position)
     {

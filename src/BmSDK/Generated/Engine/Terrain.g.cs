@@ -94,7 +94,8 @@ public partial class Terrain : BmSDK.Engine.Info, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcLayerBounds;
     /// <summary>
-    /// Function: CalcLayerBounds
+    /// Function: CalcLayerBounds<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void CalcLayerBounds()
     {

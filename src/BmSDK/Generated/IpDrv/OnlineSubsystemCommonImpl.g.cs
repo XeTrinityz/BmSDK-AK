@@ -75,7 +75,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
-    /// Function: Tick
+    /// Function: Tick<br/>
+    /// Native code at BatmanAK.exe+0x6B0860 in the Steam build
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
@@ -97,7 +98,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
-    /// Function: CancelCustomContentRequest
+    /// Function: CancelCustomContentRequest<br/>
+    /// Native code at BatmanAK.exe+0x6B5120 in the Steam build
     /// </summary>
     public unsafe virtual void CancelCustomContentRequest(BmSDK.FStringArg sCustomId)
     {
@@ -120,7 +122,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContentAsString;
     /// <summary>
-    /// Function: GetCustomContentAsString
+    /// Function: GetCustomContentAsString<br/>
+    /// Native code at BatmanAK.exe+0x6B4F90 in the Steam build
     /// </summary>
     public unsafe virtual void GetCustomContentAsString(BmSDK.FStringArg sCustomId, out BmSDK.FString ContentData)
     {
@@ -144,7 +147,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContent;
     /// <summary>
-    /// Function: GetCustomContent
+    /// Function: GetCustomContent<br/>
+    /// Native code at BatmanAK.exe+0x6B4E00 in the Steam build
     /// </summary>
     public unsafe virtual void GetCustomContent(BmSDK.FStringArg sCustomId, out BmSDK.TArray<byte> ContentData)
     {
@@ -168,7 +172,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCustomContentRequest;
     /// <summary>
-    /// Function: StartCustomContentRequest
+    /// Function: StartCustomContentRequest<br/>
+    /// Native code at BatmanAK.exe+0x6B4B70 in the Steam build
     /// </summary>
     public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, BmSDK.FScriptDelegate dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FStringArg Category = default)
     {
@@ -197,7 +202,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentAccessModeAvailable;
     /// <summary>
-    /// Function: IsCustomContentAccessModeAvailable
+    /// Function: IsCustomContentAccessModeAvailable<br/>
+    /// Native code at BatmanAK.exe+0x6B07D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCustomContentAccessModeAvailable(BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM)
     {
@@ -219,7 +225,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentTypeAvailable;
     /// <summary>
-    /// Function: IsCustomContentTypeAvailable
+    /// Function: IsCustomContentTypeAvailable<br/>
+    /// Native code at BatmanAK.exe+0x6B0740 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCustomContentTypeAvailable(BmSDK.Engine.OnlineSubsystem.ECustomContentType CustomContentType)
     {
@@ -241,7 +248,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentAvailable;
     /// <summary>
-    /// Function: IsCustomContentAvailable
+    /// Function: IsCustomContentAvailable<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCustomContentAvailable()
     {
@@ -278,7 +286,8 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerInSession;
     /// <summary>
-    /// Function: IsPlayerInSession
+    /// Function: IsPlayerInSession<br/>
+    /// Native code at BatmanAK.exe+0x6B0580 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayerInSession(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {

@@ -75,7 +75,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -97,7 +98,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermVehiclePhysics;
     /// <summary>
-    /// Function: TermVehiclePhysics
+    /// Function: TermVehiclePhysics<br/>
+    /// Native code at BatmanAK.exe+0xB449C0 in the Steam build
     /// </summary>
     public unsafe virtual void TermVehiclePhysics()
     {
@@ -334,7 +336,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasWheelsOnGround;
     /// <summary>
-    /// Function: HasWheelsOnGround
+    /// Function: HasWheelsOnGround<br/>
+    /// Native code at BatmanAK.exe+0xB44970 in the Steam build
     /// </summary>
     public unsafe virtual bool HasWheelsOnGround()
     {
@@ -426,7 +429,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVelocity;
     /// <summary>
-    /// Function: AddVelocity
+    /// Function: AddVelocity<br/>
+    /// Native code at BatmanAK.exe+0xB8A4A0 in the Steam build
     /// </summary>
     public unsafe override void AddVelocity(System.Numerics.Vector3 NewVelocity, System.Numerics.Vector3 HitLocation, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default)
     {
@@ -451,7 +455,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitVehicleRagdoll;
     /// <summary>
-    /// Function: InitVehicleRagdoll
+    /// Function: InitVehicleRagdoll<br/>
+    /// Native code at BatmanAK.exe+0xB8D260 in the Steam build
     /// </summary>
     public unsafe virtual void InitVehicleRagdoll(BmSDK.Engine.SkeletalMesh RagdollMesh, BmSDK.Engine.PhysicsAsset RagdollPhysAsset, System.Numerics.Vector3 ActorMove, bool bClearAnimTree)
     {
@@ -569,7 +574,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWheelCollision;
     /// <summary>
-    /// Function: SetWheelCollision
+    /// Function: SetWheelCollision<br/>
+    /// Native code at BatmanAK.exe+0xB8D080 in the Steam build
     /// </summary>
     public unsafe virtual void SetWheelCollision(int WheelNum, bool bCollision)
     {
@@ -592,7 +598,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawGraphsAndPrintTireSurfaceTypes;
     /// <summary>
-    /// Function: DrawGraphsAndPrintTireSurfaceTypes
+    /// Function: DrawGraphsAndPrintTireSurfaceTypes<br/>
+    /// Native code at BatmanAK.exe+0xB8CDC0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawGraphsAndPrintTireSurfaceTypes(BmSDK.Engine.HUD HUD, float YL, float YPos)
     {
@@ -616,7 +623,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSleeping;
     /// <summary>
-    /// Function: IsSleeping
+    /// Function: IsSleeping<br/>
+    /// Native code at BatmanAK.exe+0xB44920 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSleeping()
     {
@@ -637,7 +645,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTorque;
     /// <summary>
-    /// Function: AddTorque
+    /// Function: AddTorque<br/>
+    /// Native code at BatmanAK.exe+0xB44890 in the Steam build
     /// </summary>
     public unsafe virtual void AddTorque(System.Numerics.Vector3 Torque)
     {
@@ -659,7 +668,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddImpulse;
     /// <summary>
-    /// Function: AddImpulse
+    /// Function: AddImpulse<br/>
+    /// Native code at BatmanAK.exe+0xB44800 in the Steam build
     /// </summary>
     public unsafe virtual void AddImpulse(System.Numerics.Vector3 Impulse)
     {
@@ -681,7 +691,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddForce;
     /// <summary>
-    /// Function: AddForce
+    /// Function: AddForce<br/>
+    /// Native code at BatmanAK.exe+0xB44770 in the Steam build
     /// </summary>
     public unsafe virtual void AddForce(System.Numerics.Vector3 Force)
     {
@@ -703,7 +714,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioDrifting;
     /// <summary>
-    /// Function: AudioDrifting
+    /// Function: AudioDrifting<br/>
+    /// Native code at BatmanAK.exe+0xB8CCA0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioDrifting(bool isDrifting)
     {
@@ -725,7 +737,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioWheelSpinning;
     /// <summary>
-    /// Function: AudioWheelSpinning
+    /// Function: AudioWheelSpinning<br/>
+    /// Native code at BatmanAK.exe+0xB8CB80 in the Steam build
     /// </summary>
     public unsafe virtual void AudioWheelSpinning(bool setWheelSpin)
     {
@@ -747,7 +760,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopAllWheels;
     /// <summary>
-    /// Function: AudioStopAllWheels
+    /// Function: AudioStopAllWheels<br/>
+    /// Native code at BatmanAK.exe+0xB44730 in the Steam build
     /// </summary>
     public unsafe virtual void AudioStopAllWheels()
     {
@@ -768,7 +782,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopWheelSqueal;
     /// <summary>
-    /// Function: AudioStopWheelSqueal
+    /// Function: AudioStopWheelSqueal<br/>
+    /// Native code at BatmanAK.exe+0xB8CA50 in the Steam build
     /// </summary>
     public unsafe virtual void AudioStopWheelSqueal(BmSDK.FName WheelBone)
     {
@@ -790,7 +805,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioUpdateWheelSqueal;
     /// <summary>
-    /// Function: AudioUpdateWheelSqueal
+    /// Function: AudioUpdateWheelSqueal<br/>
+    /// Native code at BatmanAK.exe+0xB8C850 in the Steam build
     /// </summary>
     public unsafe virtual void AudioUpdateWheelSqueal(BmSDK.FName WheelBone, float SquealValue)
     {
@@ -813,7 +829,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FreeUniqueVehicleIndex;
     /// <summary>
-    /// Function: FreeUniqueVehicleIndex
+    /// Function: FreeUniqueVehicleIndex<br/>
+    /// Native code at BatmanAK.exe+0xB446B0 in the Steam build
     /// </summary>
     public unsafe static void FreeUniqueVehicleIndex(byte Index)
     {
@@ -834,7 +851,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AllocUniqueVehicleIndex;
     /// <summary>
-    /// Function: AllocUniqueVehicleIndex
+    /// Function: AllocUniqueVehicleIndex<br/>
+    /// Native code at BatmanAK.exe+0xB44660 in the Steam build
     /// </summary>
     public unsafe static byte AllocUniqueVehicleIndex()
     {
@@ -854,7 +872,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideSkidMarks;
     /// <summary>
-    /// Function: HideSkidMarks
+    /// Function: HideSkidMarks<br/>
+    /// Native code at BatmanAK.exe+0xB44620 in the Steam build
     /// </summary>
     public unsafe virtual void HideSkidMarks()
     {
@@ -875,7 +894,8 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAllWheelEffects;
     /// <summary>
-    /// Function: StopAllWheelEffects
+    /// Function: StopAllWheelEffects<br/>
+    /// Native code at BatmanAK.exe+0xB445E0 in the Steam build
     /// </summary>
     public unsafe virtual void StopAllWheelEffects()
     {
@@ -1894,7 +1914,8 @@ public static class SVehicleStatics
 {
     private static BmSDK.Function __fn_FreeUniqueVehicleIndex;
     /// <summary>
-    /// Function: FreeUniqueVehicleIndex, run on <paramref name="self"/> rather than the class default object
+    /// Function: FreeUniqueVehicleIndex, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB446B0 in the Steam build
     /// </summary>
     public unsafe static void FreeUniqueVehicleIndex(this BmSDK.Engine.SVehicle self, byte Index)
     {
@@ -1916,7 +1937,8 @@ public static class SVehicleStatics
 
     private static BmSDK.Function __fn_AllocUniqueVehicleIndex;
     /// <summary>
-    /// Function: AllocUniqueVehicleIndex, run on <paramref name="self"/> rather than the class default object
+    /// Function: AllocUniqueVehicleIndex, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB44660 in the Steam build
     /// </summary>
     public unsafe static byte AllocUniqueVehicleIndex(this BmSDK.Engine.SVehicle self)
     {

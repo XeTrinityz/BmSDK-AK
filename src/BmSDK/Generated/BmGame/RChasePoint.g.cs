@@ -259,7 +259,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Register;
     /// <summary>
-    /// Function: Register
+    /// Function: Register<br/>
+    /// Native code at BatmanAK.exe+0x48AA20 in the Steam build
     /// </summary>
     public unsafe virtual void Register()
     {
@@ -280,7 +281,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecursiveInvalidate;
     /// <summary>
-    /// Function: RecursiveInvalidate
+    /// Function: RecursiveInvalidate<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void RecursiveInvalidate()
     {
@@ -301,7 +303,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLadderJumpDown;
     /// <summary>
-    /// Function: IsLadderJumpDown
+    /// Function: IsLadderJumpDown<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLadderJumpDown()
     {
@@ -322,7 +325,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpecialTraverseEdge;
     /// <summary>
-    /// Function: IsSpecialTraverseEdge
+    /// Function: IsSpecialTraverseEdge<br/>
+    /// Native code at BatmanAK.exe+0xB3E5C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpecialTraverseEdge()
     {
@@ -343,7 +347,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVert2;
     /// <summary>
-    /// Function: GetVert2
+    /// Function: GetVert2<br/>
+    /// Native code at BatmanAK.exe+0x5E94A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetVert2()
     {
@@ -364,7 +369,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVert1;
     /// <summary>
-    /// Function: GetVert1
+    /// Function: GetVert1<br/>
+    /// Native code at BatmanAK.exe+0x4983F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetVert1()
     {
@@ -385,7 +391,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnSubmesh;
     /// <summary>
-    /// Function: IsOnSubmesh
+    /// Function: IsOnSubmesh<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOnSubmesh()
     {
@@ -406,7 +413,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRadiusFromCenter;
     /// <summary>
-    /// Function: GetRadiusFromCenter
+    /// Function: GetRadiusFromCenter<br/>
+    /// Native code at BatmanAK.exe+0x48A940 in the Steam build
     /// </summary>
     public unsafe virtual void GetRadiusFromCenter(System.Numerics.Vector3 TreeLocation, out float MaxRadiusSq)
     {
@@ -431,7 +439,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAveragePointLocation;
     /// <summary>
-    /// Function: GetAveragePointLocation
+    /// Function: GetAveragePointLocation<br/>
+    /// Native code at BatmanAK.exe+0x48A850 in the Steam build
     /// </summary>
     public unsafe virtual void GetAveragePointLocation(out System.Numerics.Vector3 TreeLocation, out int NumPoints)
     {
@@ -458,7 +467,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTreeBounds;
     /// <summary>
-    /// Function: GetTreeBounds
+    /// Function: GetTreeBounds<br/>
+    /// Native code at BatmanAK.exe+0x48A760 in the Steam build
     /// </summary>
     public unsafe virtual void GetTreeBounds(out System.Numerics.Vector3 TreeLocation, out float TreeRadius)
     {
@@ -485,7 +495,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasBeenChecked;
     /// <summary>
-    /// Function: HasBeenChecked
+    /// Function: HasBeenChecked<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool HasBeenChecked()
     {
@@ -506,7 +517,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkAsChecked;
     /// <summary>
-    /// Function: MarkAsChecked
+    /// Function: MarkAsChecked<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void MarkAsChecked()
     {
@@ -527,7 +539,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBranch;
     /// <summary>
-    /// Function: RemoveBranch
+    /// Function: RemoveBranch<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveBranch()
     {
@@ -548,7 +561,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BranchContainsLocation;
     /// <summary>
-    /// Function: BranchContainsLocation
+    /// Function: BranchContainsLocation<br/>
+    /// Native code at BatmanAK.exe+0x48A6C0 in the Steam build
     /// </summary>
     public unsafe virtual bool BranchContainsLocation(System.Numerics.Vector3 TestLocation)
     {
@@ -570,7 +584,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntersectionWithHandlePath;
     /// <summary>
-    /// Function: GetIntersectionWithHandlePath
+    /// Function: GetIntersectionWithHandlePath<br/>
+    /// Native code at BatmanAK.exe+0x502FB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RChasePoint GetIntersectionWithHandlePath(BmSDK.BmGame.RNavigationHandle TestHandle)
     {
@@ -592,7 +607,8 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValid;
     /// <summary>
-    /// Function: IsValid
+    /// Function: IsValid<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValid()
     {

@@ -90,7 +90,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMeshComponents;
     /// <summary>
-    /// Function: GetMeshComponents
+    /// Function: GetMeshComponents<br/>
+    /// Native code at BatmanAK.exe+0x5529B0 in the Steam build
     /// </summary>
     public unsafe virtual void GetMeshComponents(int Flags, out BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Out)
     {
@@ -127,7 +128,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
@@ -170,7 +172,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkDialogueComponent;
     /// <summary>
-    /// Function: GetAkDialogueComponent
+    /// Function: GetAkDialogueComponent<br/>
+    /// Native code at BatmanAK.exe+0x46A390 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.AkDialogueComponent GetAkDialogueComponent(bool allowCreate = default)
     {
@@ -192,7 +195,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
@@ -214,7 +218,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCinematicThoughts;
     /// <summary>
-    /// Function: GetCinematicThoughts
+    /// Function: GetCinematicThoughts<br/>
+    /// Native code at BatmanAK.exe+0x58C440 in the Steam build
     /// </summary>
     public unsafe virtual void GetCinematicThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 thoughtLocation)
     {
@@ -239,7 +244,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
-    /// Function: MAT_FinishAnimControl
+    /// Function: MAT_FinishAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe override void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -261,7 +267,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimPosition;
     /// <summary>
-    /// Function: MAT_SetAnimPosition
+    /// Function: MAT_SetAnimPosition<br/>
+    /// Native code at BatmanAK.exe+0x4A2FA0 in the Steam build
     /// </summary>
     public unsafe override void MAT_SetAnimPosition(BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
@@ -289,7 +296,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4B9700 in the Steam build
     /// </summary>
     public unsafe override void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -583,7 +591,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeExtraMeshesWithRFlaps;
     /// <summary>
-    /// Function: UpgradeExtraMeshesWithRFlaps
+    /// Function: UpgradeExtraMeshesWithRFlaps<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpgradeExtraMeshesWithRFlaps()
     {
@@ -604,7 +613,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0x4A1F80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
@@ -669,7 +679,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionToTouchWindVolumes;
     /// <summary>
-    /// Function: SetCollisionToTouchWindVolumes
+    /// Function: SetCollisionToTouchWindVolumes<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollisionToTouchWindVolumes()
     {
@@ -690,7 +701,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldDriveSelf;
     /// <summary>
-    /// Function: ShouldDriveSelf
+    /// Function: ShouldDriveSelf<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldDriveSelf()
     {
@@ -711,7 +723,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldDriveProxy;
     /// <summary>
-    /// Function: ShouldDriveProxy
+    /// Function: ShouldDriveProxy<br/>
+    /// Native code at BatmanAK.exe+0xB43E80 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldDriveProxy()
     {
@@ -732,7 +745,8 @@ public partial class RCinematicActor : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
-    /// Function: MatineeTeleport
+    /// Function: MatineeTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4A21C0 in the Steam build
     /// </summary>
     public unsafe override void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {

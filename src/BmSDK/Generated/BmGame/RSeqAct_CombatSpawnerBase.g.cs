@@ -75,7 +75,8 @@ public partial class RSeqAct_CombatSpawnerBase : BmSDK.Engine.SeqAct_Latent, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x509D90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, BmSDK.Class NewWeaponClass, BmSDK.Engine.Actor NewSpawnPoint, BmSDK.Engine.Actor OwnerActor)
     {

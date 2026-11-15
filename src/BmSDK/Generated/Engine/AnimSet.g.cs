@@ -80,7 +80,8 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimSequence;
     /// <summary>
-    /// Function: FindAnimSequence
+    /// Function: FindAnimSequence<br/>
+    /// Native code at BatmanAK.exe+0xB57BF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSequence FindAnimSequence(BmSDK.FName SequenceName)
     {

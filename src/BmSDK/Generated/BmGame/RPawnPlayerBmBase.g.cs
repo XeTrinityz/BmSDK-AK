@@ -75,7 +75,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeComponentDepthPriorityGroup;
     /// <summary>
-    /// Function: ChangeComponentDepthPriorityGroup
+    /// Function: ChangeComponentDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0x472400 in the Steam build
     /// </summary>
     public unsafe override void ChangeComponentDepthPriorityGroup(BmSDK.Engine.Scene.ESceneDepthPriorityGroup FromDPG, BmSDK.Engine.Scene.ESceneDepthPriorityGroup ToDPG)
     {
@@ -579,7 +580,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableHeadCollisionWithKActorsWhenCrouched;
     /// <summary>
-    /// Function: SetEnableHeadCollisionWithKActorsWhenCrouched
+    /// Function: SetEnableHeadCollisionWithKActorsWhenCrouched<br/>
+    /// Native code at BatmanAK.exe+0x4D12E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableHeadCollisionWithKActorsWhenCrouched(bool bEnableHeadCollisionWithKActors)
     {
@@ -601,7 +603,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
-    /// Function: MatineeTeleport
+    /// Function: MatineeTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4A21C0 in the Steam build
     /// </summary>
     public unsafe override void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {
@@ -624,7 +627,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroyPhysicsAssetInstance;
     /// <summary>
-    /// Function: OnDestroyPhysicsAssetInstance
+    /// Function: OnDestroyPhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x4C8160 in the Steam build
     /// </summary>
     public unsafe override void OnDestroyPhysicsAssetInstance(BmSDK.Engine.SkeletalMeshComponent AffectedComponent)
     {
@@ -646,7 +650,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCreatePhysicsAssetInstance;
     /// <summary>
-    /// Function: OnCreatePhysicsAssetInstance
+    /// Function: OnCreatePhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x4C8030 in the Steam build
     /// </summary>
     public unsafe override void OnCreatePhysicsAssetInstance(BmSDK.Engine.SkeletalMeshComponent AffectedComponent)
     {
@@ -668,7 +673,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGrappleGun;
     /// <summary>
-    /// Function: CheckGrappleGun
+    /// Function: CheckGrappleGun<br/>
+    /// Native code at BatmanAK.exe+0x475900 in the Steam build
     /// </summary>
     public unsafe override float CheckGrappleGun()
     {
@@ -689,7 +695,8 @@ public partial class RPawnPlayerBmBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EyesNormal;
     /// <summary>
-    /// Function: EyesNormal
+    /// Function: EyesNormal<br/>
+    /// Native code at BatmanAK.exe+0x4783E0 in the Steam build
     /// </summary>
     public unsafe virtual bool EyesNormal()
     {

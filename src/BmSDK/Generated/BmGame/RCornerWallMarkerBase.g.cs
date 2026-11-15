@@ -80,7 +80,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -118,7 +119,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeLockedBy;
     /// <summary>
-    /// Function: CanBeLockedBy
+    /// Function: CanBeLockedBy<br/>
+    /// Native code at BatmanAK.exe+0x4E5040 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeLockedBy(BmSDK.BmGame.RBMAIController TestLockedBy)
     {
@@ -140,7 +142,8 @@ public partial class RCornerWallMarkerBase : BmSDK.Engine.Actor, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatmanCornerPositionAndRotation;
     /// <summary>
-    /// Function: GetBatmanCornerPositionAndRotation
+    /// Function: GetBatmanCornerPositionAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x4E4E80 in the Steam build
     /// </summary>
     public unsafe virtual void GetBatmanCornerPositionAndRotation(float CollisionRadius, out System.Numerics.Vector3 BatmanPosition, out BmSDK.Rotator BatmanCoverRotation)
     {

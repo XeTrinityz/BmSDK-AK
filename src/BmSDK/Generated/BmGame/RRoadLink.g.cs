@@ -95,7 +95,8 @@ public partial class RRoadLink : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisabled;
     /// <summary>
-    /// Function: SetDisabled
+    /// Function: SetDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4E95D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisabled(bool Value)
     {

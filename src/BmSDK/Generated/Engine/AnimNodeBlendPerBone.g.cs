@@ -80,7 +80,8 @@ public partial class AnimNodeBlendPerBone : BmSDK.Engine.AnimNodeBlend, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlendTarget;
     /// <summary>
-    /// Function: SetBlendTarget
+    /// Function: SetBlendTarget<br/>
+    /// Native code at BatmanAK.exe+0xB53730 in the Steam build
     /// </summary>
     public unsafe override void SetBlendTarget(float BlendTarget, float BlendTime)
     {

@@ -132,7 +132,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnJokerHallucination;
     /// <summary>
-    /// Function: SpawnJokerHallucination
+    /// Function: SpawnJokerHallucination<br/>
+    /// Native code at BatmanAK.exe+0x48AFD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnJokerHallucination SpawnJokerHallucination(BmSDK.BmGame.RCharacterDefine CustomDefine = default)
     {
@@ -154,7 +155,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpaceForJokerAnimationCheckWholeAnim;
     /// <summary>
-    /// Function: IsSpaceForJokerAnimationCheckWholeAnim
+    /// Function: IsSpaceForJokerAnimationCheckWholeAnim<br/>
+    /// Native code at BatmanAK.exe+0x501910 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpaceForJokerAnimationCheckWholeAnim(BmSDK.BmGame.RAnimConfig.FCustomAnimConfig AnimConf, BmSDK.BmGame.RPawnCharacter TestPawn, float CheckDistance, System.Numerics.Vector3 refLoc, BmSDK.Rotator RefRot)
     {
@@ -180,7 +182,8 @@ public partial class RJokerHallucinationFrequencyController : BmSDK.GameObject, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpaceForJokerAnimation;
     /// <summary>
-    /// Function: IsSpaceForJokerAnimation
+    /// Function: IsSpaceForJokerAnimation<br/>
+    /// Native code at BatmanAK.exe+0x5015E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpaceForJokerAnimation(BmSDK.FName AnimName, BmSDK.Engine.Actor TestActor, float CheckDistance, System.Numerics.Vector3 TestLoc = default)
     {

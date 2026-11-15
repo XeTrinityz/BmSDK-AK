@@ -93,7 +93,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipToNextDialogueLine;
     /// <summary>
-    /// Function: SkipToNextDialogueLine
+    /// Function: SkipToNextDialogueLine<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool SkipToNextDialogueLine()
     {
@@ -128,7 +129,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPlayerToDirectorTracks;
     /// <summary>
-    /// Function: AddPlayerToDirectorTracks
+    /// Function: AddPlayerToDirectorTracks<br/>
+    /// Native code at BatmanAK.exe+0xB515B0 in the Steam build
     /// </summary>
     public unsafe virtual void AddPlayerToDirectorTracks(BmSDK.Engine.PlayerController PC)
     {
@@ -150,7 +152,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0xB51490 in the Steam build
     /// </summary>
     public unsafe virtual void Stop(bool AlwaysTriggerStoppedOutput)
     {
@@ -172,7 +175,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPosition;
     /// <summary>
-    /// Function: SetPosition
+    /// Function: SetPosition<br/>
+    /// Native code at BatmanAK.exe+0xB51320 in the Steam build
     /// </summary>
     public unsafe virtual void SetPosition(float NewPosition, bool bJump = default)
     {
@@ -195,7 +199,8 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyActorsOfChange;
     /// <summary>
-    /// Function: NotifyActorsOfChange
+    /// Function: NotifyActorsOfChange<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyActorsOfChange()
     {

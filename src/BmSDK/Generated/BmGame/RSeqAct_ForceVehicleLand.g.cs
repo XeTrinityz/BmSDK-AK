@@ -108,7 +108,8 @@ public partial class RSeqAct_ForceVehicleLand : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceLand;
     /// <summary>
-    /// Function: ForceLand
+    /// Function: ForceLand<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void ForceLand()
     {

@@ -210,7 +210,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCameraBlockedFromTarget;
     /// <summary>
-    /// Function: IsCameraBlockedFromTarget
+    /// Function: IsCameraBlockedFromTarget<br/>
+    /// Native code at BatmanAK.exe+0x5152D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCameraBlockedFromTarget(out BmSDK.Engine.Actor BlockActor, out float BlockTime, System.Numerics.Vector3 TestTarget, float normalisedTime, bool DrawDebug = default)
     {
@@ -240,7 +241,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCameraLocationAtTime;
     /// <summary>
-    /// Function: FindCameraLocationAtTime
+    /// Function: FindCameraLocationAtTime<br/>
+    /// Native code at BatmanAK.exe+0x515110 in the Steam build
     /// </summary>
     public unsafe virtual bool FindCameraLocationAtTime(out System.Numerics.Vector3 CameraLocation, out BmSDK.Rotator CameraRotation, float normalisedTime)
     {
@@ -268,7 +270,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnimationPastBlendOutPoint;
     /// <summary>
-    /// Function: IsAnimationPastBlendOutPoint
+    /// Function: IsAnimationPastBlendOutPoint<br/>
+    /// Native code at BatmanAK.exe+0x495A00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnimationPastBlendOutPoint()
     {
@@ -289,7 +292,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AnimStarted;
     /// <summary>
-    /// Function: AnimStarted
+    /// Function: AnimStarted<br/>
+    /// Native code at BatmanAK.exe+0x4959C0 in the Steam build
     /// </summary>
     public unsafe virtual void AnimStarted()
     {
@@ -310,7 +314,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFindAnimation;
     /// <summary>
-    /// Function: CanFindAnimation
+    /// Function: CanFindAnimation<br/>
+    /// Native code at BatmanAK.exe+0x514FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanFindAnimation(BmSDK.FName AnimName)
     {
@@ -332,7 +337,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimation;
     /// <summary>
-    /// Function: UpdateAnimation
+    /// Function: UpdateAnimation<br/>
+    /// Native code at BatmanAK.exe+0x514EA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAnimation(float DeltaTime)
     {
@@ -354,7 +360,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSequenceLength;
     /// <summary>
-    /// Function: GetSequenceLength
+    /// Function: GetSequenceLength<br/>
+    /// Native code at BatmanAK.exe+0x495970 in the Steam build
     /// </summary>
     public unsafe virtual float GetSequenceLength()
     {
@@ -375,7 +382,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTime;
     /// <summary>
-    /// Function: SetTime
+    /// Function: SetTime<br/>
+    /// Native code at BatmanAK.exe+0x514D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetTime(float Realtime)
     {
@@ -397,7 +405,8 @@ public partial class RInGameCinematicCam : BmSDK.BmGame.RCameraActor, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNormalizedTime;
     /// <summary>
-    /// Function: SetNormalizedTime
+    /// Function: SetNormalizedTime<br/>
+    /// Native code at BatmanAK.exe+0x514C40 in the Steam build
     /// </summary>
     public unsafe virtual void SetNormalizedTime(float NormTime)
     {

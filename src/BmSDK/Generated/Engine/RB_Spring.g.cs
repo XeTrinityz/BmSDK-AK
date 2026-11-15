@@ -80,7 +80,8 @@ public partial class RB_Spring : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Clear;
     /// <summary>
-    /// Function: Clear
+    /// Function: Clear<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void Clear()
     {
@@ -101,7 +102,8 @@ public partial class RB_Spring : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetComponents;
     /// <summary>
-    /// Function: SetComponents
+    /// Function: SetComponents<br/>
+    /// Native code at BatmanAK.exe+0xB8E6A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetComponents(BmSDK.Engine.PrimitiveComponent InComponent1, BmSDK.FName InBoneName1, System.Numerics.Vector3 Position1, BmSDK.Engine.PrimitiveComponent InComponent2, BmSDK.FName InBoneName2, System.Numerics.Vector3 Position2)
     {

@@ -231,7 +231,8 @@ public partial class RBMWeaponStunStickBase : BmSDK.BmGame.RBMWeaponMelee, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOn;
     /// <summary>
-    /// Function: IsOn
+    /// Function: IsOn<br/>
+    /// Native code at BatmanAK.exe+0x48A5E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOn()
     {

@@ -140,7 +140,8 @@ public partial class RChallengeWallBase : BmSDK.Engine.Actor, BmSDK.Engine.Inter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle()
     {
@@ -161,7 +162,8 @@ public partial class RChallengeWallBase : BmSDK.Engine.Actor, BmSDK.Engine.Inter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {

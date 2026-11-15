@@ -504,7 +504,8 @@ public partial class RSearchRoutingWrapper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFindBranchStartFor;
     /// <summary>
-    /// Function: CanFindBranchStartFor
+    /// Function: CanFindBranchStartFor<br/>
+    /// Native code at BatmanAK.exe+0x48D020 in the Steam build
     /// </summary>
     public unsafe virtual bool CanFindBranchStartFor(System.Numerics.Vector3 TestSidePoint, System.Numerics.Vector3 PathSegmentStart, System.Numerics.Vector3 PathSegmentEnd, out System.Numerics.Vector3 BranchStart)
     {
@@ -531,7 +532,8 @@ public partial class RSearchRoutingWrapper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeBetween;
     /// <summary>
-    /// Function: CanSeeBetween
+    /// Function: CanSeeBetween<br/>
+    /// Native code at BatmanAK.exe+0x5099D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeBetween(BmSDK.BmGame.RChasePoint StartPoint, BmSDK.BmGame.RChasePoint EndPoint, bool bAssumeVisibleForDynamic)
     {
@@ -555,7 +557,8 @@ public partial class RSearchRoutingWrapper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVisibleFromChosenPath;
     /// <summary>
-    /// Function: IsVisibleFromChosenPath
+    /// Function: IsVisibleFromChosenPath<br/>
+    /// Native code at BatmanAK.exe+0x509890 in the Steam build
     /// </summary>
     public unsafe virtual bool IsVisibleFromChosenPath(BmSDK.BmGame.RChasePoint TargetPoint)
     {
@@ -577,7 +580,8 @@ public partial class RSearchRoutingWrapper : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFarEnoughFromChosenPath;
     /// <summary>
-    /// Function: IsFarEnoughFromChosenPath
+    /// Function: IsFarEnoughFromChosenPath<br/>
+    /// Native code at BatmanAK.exe+0x509750 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFarEnoughFromChosenPath(BmSDK.BmGame.RChasePoint TargetPoint)
     {

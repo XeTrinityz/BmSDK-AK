@@ -80,7 +80,8 @@ public partial class AnimNotify_Trails : BmSDK.Engine.AnimNotify, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumSteps;
     /// <summary>
-    /// Function: GetNumSteps
+    /// Function: GetNumSteps<br/>
+    /// Native code at BatmanAK.exe+0xB53260 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumSteps(int InLastTrailIndex)
     {

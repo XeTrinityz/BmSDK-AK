@@ -132,7 +132,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFSMPart;
     /// <summary>
-    /// Function: GetFSMPart
+    /// Function: GetFSMPart<br/>
+    /// Native code at BatmanAK.exe+0xB4B0C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.FracturedStaticMeshPart GetFSMPart(BmSDK.Engine.FracturedStaticMeshActor Parent, System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation)
     {
@@ -156,7 +157,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetPoolVisibilityForParent;
     /// <summary>
-    /// Function: ResetPoolVisibilityForParent
+    /// Function: ResetPoolVisibilityForParent<br/>
+    /// Native code at BatmanAK.exe+0xB4AF90 in the Steam build
     /// </summary>
     public unsafe virtual void ResetPoolVisibilityForParent(BmSDK.Engine.FracturedStaticMeshActor Parent)
     {
@@ -178,7 +180,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetPoolVisibility;
     /// <summary>
-    /// Function: ResetPoolVisibility
+    /// Function: ResetPoolVisibility<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void ResetPoolVisibility()
     {
@@ -199,7 +202,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateFSMParts;
     /// <summary>
-    /// Function: CreateFSMParts
+    /// Function: CreateFSMParts<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void CreateFSMParts()
     {
@@ -262,7 +266,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFSMFractureCullDistanceScale;
     /// <summary>
-    /// Function: GetFSMFractureCullDistanceScale
+    /// Function: GetFSMFractureCullDistanceScale<br/>
+    /// Native code at BatmanAK.exe+0x493940 in the Steam build
     /// </summary>
     public unsafe virtual float GetFSMFractureCullDistanceScale()
     {
@@ -283,7 +288,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFSMRadialSpawnChanceScale;
     /// <summary>
-    /// Function: GetFSMRadialSpawnChanceScale
+    /// Function: GetFSMRadialSpawnChanceScale<br/>
+    /// Native code at BatmanAK.exe+0xB4AF40 in the Steam build
     /// </summary>
     public unsafe virtual float GetFSMRadialSpawnChanceScale()
     {
@@ -304,7 +310,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFSMDirectSpawnChanceScale;
     /// <summary>
-    /// Function: GetFSMDirectSpawnChanceScale
+    /// Function: GetFSMDirectSpawnChanceScale<br/>
+    /// Native code at BatmanAK.exe+0xB4AEF0 in the Steam build
     /// </summary>
     public unsafe virtual float GetFSMDirectSpawnChanceScale()
     {
@@ -325,7 +332,8 @@ public partial class FractureManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumFSMPartsScale;
     /// <summary>
-    /// Function: GetNumFSMPartsScale
+    /// Function: GetNumFSMPartsScale<br/>
+    /// Native code at BatmanAK.exe+0x484B70 in the Steam build
     /// </summary>
     public unsafe virtual float GetNumFSMPartsScale()
     {

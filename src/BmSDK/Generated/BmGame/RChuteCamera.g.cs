@@ -128,7 +128,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathPosition;
     /// <summary>
-    /// Function: GetCameraPathPosition
+    /// Function: GetCameraPathPosition<br/>
+    /// Native code at BatmanAK.exe+0x514890 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathPosition(float Proportion)
     {
@@ -150,7 +151,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathDeltaTangent;
     /// <summary>
-    /// Function: GetCameraPathDeltaTangent
+    /// Function: GetCameraPathDeltaTangent<br/>
+    /// Native code at BatmanAK.exe+0x514740 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathDeltaTangent(float Proportion)
     {
@@ -172,7 +174,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathTangent;
     /// <summary>
-    /// Function: GetCameraPathTangent
+    /// Function: GetCameraPathTangent<br/>
+    /// Native code at BatmanAK.exe+0x5145F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathTangent(float Proportion)
     {
@@ -194,7 +197,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraPath;
     /// <summary>
-    /// Function: UpdateCameraPath
+    /// Function: UpdateCameraPath<br/>
+    /// Native code at BatmanAK.exe+0x5144C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCameraPath(float DeltaTime)
     {
@@ -216,7 +220,8 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateCameraPath;
     /// <summary>
-    /// Function: CalculateCameraPath
+    /// Function: CalculateCameraPath<br/>
+    /// Native code at BatmanAK.exe+0x514080 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateCameraPath(BmSDK.BmGame.RPawnPlayer Player, BmSDK.BmGame.R3rdPersonCamera PlayerCamera, BmSDK.BmGame.RSwingChutePointBase _ChuteStart, BmSDK.BmGame.RSwingChuteExitBase _ChuteExit, float CheckSizeMod)
     {

@@ -80,7 +80,8 @@ public partial class RMagneticObjectForceField : BmSDK.Engine.NxRadialForceField
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFieldProperties;
     /// <summary>
-    /// Function: SetFieldProperties
+    /// Function: SetFieldProperties<br/>
+    /// Native code at BatmanAK.exe+0x510530 in the Steam build
     /// </summary>
     public unsafe virtual void SetFieldProperties(float Radius, float Strength)
     {

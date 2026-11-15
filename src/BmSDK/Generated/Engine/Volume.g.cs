@@ -174,7 +174,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EncompassesAABB;
     /// <summary>
-    /// Function: EncompassesAABB
+    /// Function: EncompassesAABB<br/>
+    /// Native code at BatmanAK.exe+0xB39540 in the Steam build
     /// </summary>
     public unsafe virtual bool EncompassesAABB(System.Numerics.Vector3 Loc, System.Numerics.Vector3 Extent)
     {
@@ -197,7 +198,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EncompassesPoint;
     /// <summary>
-    /// Function: EncompassesPoint
+    /// Function: EncompassesPoint<br/>
+    /// Native code at BatmanAK.exe+0x9BA3D0 in the Steam build
     /// </summary>
     public unsafe virtual bool EncompassesPoint(System.Numerics.Vector3 Loc)
     {
@@ -219,7 +221,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Encompasses;
     /// <summary>
-    /// Function: Encompasses
+    /// Function: Encompasses<br/>
+    /// Native code at BatmanAK.exe+0x9BD110 in the Steam build
     /// </summary>
     public unsafe virtual bool Encompasses(BmSDK.Engine.Actor Other)
     {
@@ -241,7 +244,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPinGC;
     /// <summary>
-    /// Function: UnPinGC
+    /// Function: UnPinGC<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void UnPinGC()
     {
@@ -262,7 +266,8 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PinGC;
     /// <summary>
-    /// Function: PinGC
+    /// Function: PinGC<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void PinGC()
     {

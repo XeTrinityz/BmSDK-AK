@@ -80,7 +80,8 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create
+    /// Function: Create<br/>
+    /// Native code at BatmanAK.exe+0xC65AF0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Texture2D Create(int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default)
     {
@@ -103,7 +104,8 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrestreamMipLevels;
     /// <summary>
-    /// Function: SetPrestreamMipLevels
+    /// Function: SetPrestreamMipLevels<br/>
+    /// Native code at BatmanAK.exe+0xB83E70 in the Steam build
     /// </summary>
     public unsafe virtual void SetPrestreamMipLevels(float ForceDuration, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
@@ -128,7 +130,8 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceMipLevelsToBeResident;
     /// <summary>
-    /// Function: SetForceMipLevelsToBeResident
+    /// Function: SetForceMipLevelsToBeResident<br/>
+    /// Native code at BatmanAK.exe+0xB83D10 in the Steam build
     /// </summary>
     public unsafe virtual void SetForceMipLevelsToBeResident(float Seconds, int CinematicTextureGroups = default)
     {
@@ -581,7 +584,8 @@ public static class Texture2DStatics
 {
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create, run on <paramref name="self"/> rather than the class default object
+    /// Function: Create, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xC65AF0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Texture2D Create(this BmSDK.Engine.Texture2D self, int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default)
     {

@@ -151,7 +151,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasConstraint;
     /// <summary>
-    /// Function: SetHasConstraint
+    /// Function: SetHasConstraint<br/>
+    /// Native code at BatmanAK.exe+0x4ED3B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHasConstraint(bool bHasConstraint)
     {
@@ -173,7 +174,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRopeTaught;
     /// <summary>
-    /// Function: IsRopeTaught
+    /// Function: IsRopeTaught<br/>
+    /// Native code at BatmanAK.exe+0x482DE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRopeTaught()
     {
@@ -194,7 +196,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnforceLengthUsingSpring;
     /// <summary>
-    /// Function: SetEnforceLengthUsingSpring
+    /// Function: SetEnforceLengthUsingSpring<br/>
+    /// Native code at BatmanAK.exe+0x4ED290 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnforceLengthUsingSpring(bool bEnforceLengthUsingSpring)
     {
@@ -216,7 +219,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnforceMinLength;
     /// <summary>
-    /// Function: SetEnforceMinLength
+    /// Function: SetEnforceMinLength<br/>
+    /// Native code at BatmanAK.exe+0x4ED170 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnforceMinLength(bool bEnforceMinLength)
     {
@@ -238,7 +242,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateDistanceBetweenRopeEnds;
     /// <summary>
-    /// Function: CalculateDistanceBetweenRopeEnds
+    /// Function: CalculateDistanceBetweenRopeEnds<br/>
+    /// Native code at BatmanAK.exe+0x482D90 in the Steam build
     /// </summary>
     public unsafe virtual float CalculateDistanceBetweenRopeEnds()
     {
@@ -259,7 +264,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContinuousAutoLength;
     /// <summary>
-    /// Function: SetContinuousAutoLength
+    /// Function: SetContinuousAutoLength<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void SetContinuousAutoLength(BmSDK.BmGame.RRope2Component.ERope2LengthChangeEndType LengthChangeType)
     {
@@ -281,7 +287,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableRopeSpooling;
     /// <summary>
-    /// Function: SetEnableRopeSpooling
+    /// Function: SetEnableRopeSpooling<br/>
+    /// Native code at BatmanAK.exe+0x4ED050 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableRopeSpooling(bool bEnableRopeSpooling)
     {
@@ -303,7 +310,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinRopeLength;
     /// <summary>
-    /// Function: GetMinRopeLength
+    /// Function: GetMinRopeLength<br/>
+    /// Native code at BatmanAK.exe+0x482D40 in the Steam build
     /// </summary>
     public unsafe virtual float GetMinRopeLength()
     {
@@ -324,7 +332,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRope;
     /// <summary>
-    /// Function: UpdateRope
+    /// Function: UpdateRope<br/>
+    /// Native code at BatmanAK.exe+0x482D00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRope()
     {
@@ -345,7 +354,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGradualRopeLengthChange;
     /// <summary>
-    /// Function: SetGradualRopeLengthChange
+    /// Function: SetGradualRopeLengthChange<br/>
+    /// Native code at BatmanAK.exe+0x4ECE20 in the Steam build
     /// </summary>
     public unsafe virtual void SetGradualRopeLengthChange(float NewRopeLength, BmSDK.BmGame.RRope2Component.ERope2LengthChangeEndType LengthChangeType, float ChangeDuration)
     {
@@ -369,7 +379,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCurrentRopeLengthChange;
     /// <summary>
-    /// Function: StopCurrentRopeLengthChange
+    /// Function: StopCurrentRopeLengthChange<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void StopCurrentRopeLengthChange()
     {
@@ -390,7 +401,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRope;
     /// <summary>
-    /// Function: FinaliseRope
+    /// Function: FinaliseRope<br/>
+    /// Native code at BatmanAK.exe+0x482CC0 in the Steam build
     /// </summary>
     public unsafe virtual void FinaliseRope()
     {
@@ -411,7 +423,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoLength;
     /// <summary>
-    /// Function: SetAutoLength
+    /// Function: SetAutoLength<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void SetAutoLength(BmSDK.BmGame.RRope2Component.ERope2LengthChangeEndType LengthChangeType)
     {
@@ -433,7 +446,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachEndsFromActor;
     /// <summary>
-    /// Function: DetachEndsFromActor
+    /// Function: DetachEndsFromActor<br/>
+    /// Native code at BatmanAK.exe+0x4ECD00 in the Steam build
     /// </summary>
     public unsafe virtual void DetachEndsFromActor(BmSDK.Engine.Actor LinkTarget)
     {
@@ -455,7 +469,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachEndToWorld;
     /// <summary>
-    /// Function: AttachEndToWorld
+    /// Function: AttachEndToWorld<br/>
+    /// Native code at BatmanAK.exe+0x482C00 in the Steam build
     /// </summary>
     public unsafe virtual void AttachEndToWorld(BmSDK.BmGame.RRope2Component.ERope2EndType NewAttachEnd, System.Numerics.Vector3 AttachPositionInWorldSpace)
     {
@@ -478,7 +493,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachEndToSocket;
     /// <summary>
-    /// Function: AttachEndToSocket
+    /// Function: AttachEndToSocket<br/>
+    /// Native code at BatmanAK.exe+0x4ECA20 in the Steam build
     /// </summary>
     public unsafe virtual bool AttachEndToSocket(BmSDK.BmGame.RRope2Component.ERope2EndType NewAttachEnd, BmSDK.Engine.Actor LinkTarget, BmSDK.FName ConnectSocketName, BmSDK.Engine.PrimitiveComponent AttachComponent)
     {
@@ -503,7 +519,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachEndToActor;
     /// <summary>
-    /// Function: AttachEndToActor
+    /// Function: AttachEndToActor<br/>
+    /// Native code at BatmanAK.exe+0x4EC830 in the Steam build
     /// </summary>
     public unsafe virtual bool AttachEndToActor(BmSDK.BmGame.RRope2Component.ERope2EndType NewAttachEnd, BmSDK.Engine.Actor LinkTarget, System.Numerics.Vector3 AttachPositionInComponentLocalSpace = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default)
     {
@@ -528,7 +545,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Reinitialise;
     /// <summary>
-    /// Function: Reinitialise
+    /// Function: Reinitialise<br/>
+    /// Native code at BatmanAK.exe+0xB2DB50 in the Steam build
     /// </summary>
     public unsafe virtual void Reinitialise()
     {
@@ -549,7 +567,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRopeLengthAutoCalculated;
     /// <summary>
-    /// Function: IsRopeLengthAutoCalculated
+    /// Function: IsRopeLengthAutoCalculated<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRopeLengthAutoCalculated()
     {
@@ -570,7 +589,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLengthChangeType;
     /// <summary>
-    /// Function: GetLengthChangeType
+    /// Function: GetLengthChangeType<br/>
+    /// Native code at BatmanAK.exe+0x4EC640 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2Component.ERope2LengthChangeEndType GetLengthChangeType(bool bChangeEnd1, bool bChangeEnd2)
     {
@@ -593,7 +613,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOtherRopeEnd;
     /// <summary>
-    /// Function: GetOtherRopeEnd
+    /// Function: GetOtherRopeEnd<br/>
+    /// Native code at BatmanAK.exe+0x482B70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2Component.ERope2EndType GetOtherRopeEnd(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd)
     {
@@ -615,7 +636,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupRopeComponentAsCopy;
     /// <summary>
-    /// Function: SetupRopeComponentAsCopy
+    /// Function: SetupRopeComponentAsCopy<br/>
+    /// Native code at BatmanAK.exe+0x4EC520 in the Steam build
     /// </summary>
     public unsafe virtual void SetupRopeComponentAsCopy(BmSDK.BmGame.RRope2Component CopyRopeComponent)
     {
@@ -637,7 +659,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUpdater;
     /// <summary>
-    /// Function: AddUpdater
+    /// Function: AddUpdater<br/>
+    /// Native code at BatmanAK.exe+0x4EC3B0 in the Steam build
     /// </summary>
     public unsafe virtual void AddUpdater(BmSDK.Class NewUpdaterType, bool bInitialise = default)
     {
@@ -660,7 +683,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangePhysicsUpdater;
     /// <summary>
-    /// Function: ChangePhysicsUpdater
+    /// Function: ChangePhysicsUpdater<br/>
+    /// Native code at BatmanAK.exe+0x4EC240 in the Steam build
     /// </summary>
     public unsafe virtual void ChangePhysicsUpdater(BmSDK.Class NewPhysicsUpdaterType, bool bInitialise = default)
     {
@@ -683,7 +707,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeRenderUpdater;
     /// <summary>
-    /// Function: ChangeRenderUpdater
+    /// Function: ChangeRenderUpdater<br/>
+    /// Native code at BatmanAK.exe+0x4EC0D0 in the Steam build
     /// </summary>
     public unsafe virtual void ChangeRenderUpdater(BmSDK.Class NewRenderUpdaterType, bool bInitialise = default)
     {
@@ -706,7 +731,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SplitRope;
     /// <summary>
-    /// Function: SplitRope
+    /// Function: SplitRope<br/>
+    /// Native code at BatmanAK.exe+0x4EBE60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SplitRope(float SplitPos, System.Numerics.Vector3 SplitImpulse, BmSDK.BmGame.RRope2Component OutNewRopePart)
     {
@@ -730,7 +756,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeLength;
     /// <summary>
-    /// Function: SetRopeLength
+    /// Function: SetRopeLength<br/>
+    /// Native code at BatmanAK.exe+0x4EBD00 in the Steam build
     /// </summary>
     public unsafe virtual void SetRopeLength(float NewRopeLength, BmSDK.BmGame.RRope2Component.ERope2LengthChangeEndType LengthChangeType)
     {
@@ -753,7 +780,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachRopeEnd;
     /// <summary>
-    /// Function: DetachRopeEnd
+    /// Function: DetachRopeEnd<br/>
+    /// Native code at BatmanAK.exe+0x482AF0 in the Steam build
     /// </summary>
     public unsafe virtual void DetachRopeEnd(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd)
     {
@@ -775,7 +803,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd;
     /// <summary>
-    /// Function: AttachRopeEnd
+    /// Function: AttachRopeEnd<br/>
+    /// Native code at BatmanAK.exe+0x581ED0 in the Steam build
     /// </summary>
     public unsafe virtual void AttachRopeEnd(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd, BmSDK.BmGame.RRope2Component.FRopeEndAttachData EndAttachData)
     {
@@ -798,7 +827,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEndAttachActors;
     /// <summary>
-    /// Function: GetEndAttachActors
+    /// Function: GetEndAttachActors<br/>
+    /// Native code at BatmanAK.exe+0x5555A0 in the Steam build
     /// </summary>
     public unsafe virtual void GetEndAttachActors(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd, out BmSDK.TArray<BmSDK.Engine.Actor> OutAttachedActors)
     {
@@ -821,7 +851,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldSpaceEndAttachPose;
     /// <summary>
-    /// Function: GetWorldSpaceEndAttachPose
+    /// Function: GetWorldSpaceEndAttachPose<br/>
+    /// Native code at BatmanAK.exe+0x482A40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetWorldSpaceEndAttachPose(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd)
     {
@@ -843,7 +874,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEndAttachData;
     /// <summary>
-    /// Function: GetEndAttachData
+    /// Function: GetEndAttachData<br/>
+    /// Native code at BatmanAK.exe+0x581DF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2Component.FRopeEndAttachData GetEndAttachData(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd)
     {
@@ -865,7 +897,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsEndAttachedToActor;
     /// <summary>
-    /// Function: GetIsEndAttachedToActor
+    /// Function: GetIsEndAttachedToActor<br/>
+    /// Native code at BatmanAK.exe+0x4EBBC0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsEndAttachedToActor(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd, BmSDK.Engine.Actor AttachActor)
     {
@@ -888,7 +921,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsEndAttachedToComponent;
     /// <summary>
-    /// Function: GetIsEndAttachedToComponent
+    /// Function: GetIsEndAttachedToComponent<br/>
+    /// Native code at BatmanAK.exe+0x4EBA80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsEndAttachedToComponent(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd, BmSDK.Component AttachComponent)
     {
@@ -911,7 +945,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsEndAttached;
     /// <summary>
-    /// Function: GetIsEndAttached
+    /// Function: GetIsEndAttached<br/>
+    /// Native code at BatmanAK.exe+0x4829B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsEndAttached(BmSDK.BmGame.RRope2Component.ERope2EndType RopeEnd)
     {
@@ -933,7 +968,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPositionOfRopePos;
     /// <summary>
-    /// Function: GetPositionOfRopePos
+    /// Function: GetPositionOfRopePos<br/>
+    /// Native code at BatmanAK.exe+0x4EB930 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPositionOfRopePos(float RopePos)
     {
@@ -955,7 +991,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToPoint;
     /// <summary>
-    /// Function: GetNearestPointOnRopeToPoint
+    /// Function: GetNearestPointOnRopeToPoint<br/>
+    /// Native code at BatmanAK.exe+0x4828B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToPoint(System.Numerics.Vector3 WorldSpacePos, out float OutRopePos)
     {
@@ -980,7 +1017,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToRay;
     /// <summary>
-    /// Function: GetNearestPointOnRopeToRay
+    /// Function: GetNearestPointOnRopeToRay<br/>
+    /// Native code at BatmanAK.exe+0x482700 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToRay(System.Numerics.Vector3 RayStartPos, System.Numerics.Vector3 RayDirection, out float OutRopePos, out float OutRayPos, float BufferLength = default)
     {
@@ -1010,7 +1048,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToLineSegment;
     /// <summary>
-    /// Function: GetNearestPointOnRopeToLineSegment
+    /// Function: GetNearestPointOnRopeToLineSegment<br/>
+    /// Native code at BatmanAK.exe+0x482560 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToLineSegment(System.Numerics.Vector3 LineSegmentStartPos, System.Numerics.Vector3 LineSegmentEndPos, out float OutRopePos, out float OutLineSegmentPos)
     {
@@ -1039,7 +1078,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearSavedDynamicState;
     /// <summary>
-    /// Function: ClearSavedDynamicState
+    /// Function: ClearSavedDynamicState<br/>
+    /// Native code at BatmanAK.exe+0x482520 in the Steam build
     /// </summary>
     public unsafe virtual void ClearSavedDynamicState()
     {
@@ -1060,7 +1100,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDynamicState;
     /// <summary>
-    /// Function: SaveDynamicState
+    /// Function: SaveDynamicState<br/>
+    /// Native code at BatmanAK.exe+0x4824D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveDynamicState()
     {
@@ -1081,7 +1122,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasSavedDynamicState;
     /// <summary>
-    /// Function: GetHasSavedDynamicState
+    /// Function: GetHasSavedDynamicState<br/>
+    /// Native code at BatmanAK.exe+0x482480 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasSavedDynamicState()
     {
@@ -1102,7 +1144,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Finalise;
     /// <summary>
-    /// Function: Finalise
+    /// Function: Finalise<br/>
+    /// Native code at BatmanAK.exe+0x482440 in the Steam build
     /// </summary>
     public unsafe virtual void Finalise()
     {
@@ -1123,7 +1166,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
-    /// Function: Initialise
+    /// Function: Initialise<br/>
+    /// Native code at BatmanAK.exe+0x482400 in the Steam build
     /// </summary>
     public unsafe virtual void Initialise()
     {
@@ -1144,7 +1188,8 @@ public partial class RRope2Component : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInitialised;
     /// <summary>
-    /// Function: GetIsInitialised
+    /// Function: GetIsInitialised<br/>
+    /// Native code at BatmanAK.exe+0x4823B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {

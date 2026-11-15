@@ -246,7 +246,8 @@ public partial class RRHD : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAirshipConnectionSignalStrength;
     /// <summary>
-    /// Function: GetAirshipConnectionSignalStrength
+    /// Function: GetAirshipConnectionSignalStrength<br/>
+    /// Native code at BatmanAK.exe+0x493530 in the Steam build
     /// </summary>
     public unsafe virtual void GetAirshipConnectionSignalStrength(out float SignalStrength, out byte CanTriggerConnection)
     {

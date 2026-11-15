@@ -1112,7 +1112,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
-    /// Function: IsBlinded
+    /// Function: IsBlinded<br/>
+    /// Native code at BatmanAK.exe+0xB44970 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlinded()
     {
@@ -1579,7 +1580,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckOptimisedStasis;
     /// <summary>
-    /// Function: CheckOptimisedStasis
+    /// Function: CheckOptimisedStasis<br/>
+    /// Native code at BatmanAK.exe+0x46B2F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckOptimisedStasis()
     {
@@ -1692,7 +1694,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPointOfInterest;
     /// <summary>
-    /// Function: CheckForPointOfInterest
+    /// Function: CheckForPointOfInterest<br/>
+    /// Native code at BatmanAK.exe+0x46B2B0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForPointOfInterest()
     {
@@ -1713,7 +1716,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingCylinder;
     /// <summary>
-    /// Function: GetBoundingCylinder
+    /// Function: GetBoundingCylinder<br/>
+    /// Native code at BatmanAK.exe+0x46A060 in the Steam build
     /// </summary>
     public unsafe override void GetBoundingCylinder(out float CollisionRadius, out float CollisionHeight)
     {
@@ -1740,7 +1744,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmanInSpotlight;
     /// <summary>
-    /// Function: IsBatmanInSpotlight
+    /// Function: IsBatmanInSpotlight<br/>
+    /// Native code at BatmanAK.exe+0x4A5740 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBatmanInSpotlight(System.Numerics.Vector3 spot_origin, System.Numerics.Vector3 spot_angle, float spot_range, float spot_radius)
     {
@@ -1765,7 +1770,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickWindGust;
     /// <summary>
-    /// Function: TickWindGust
+    /// Function: TickWindGust<br/>
+    /// Native code at BatmanAK.exe+0x4A5610 in the Steam build
     /// </summary>
     public unsafe virtual void TickWindGust(float DeltaTime)
     {
@@ -1787,7 +1793,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RandomWindGust;
     /// <summary>
-    /// Function: RandomWindGust
+    /// Function: RandomWindGust<br/>
+    /// Native code at BatmanAK.exe+0x46B270 in the Steam build
     /// </summary>
     public unsafe virtual void RandomWindGust()
     {
@@ -1808,7 +1815,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlightControlAdjustVirtualLocation;
     /// <summary>
-    /// Function: FlightControlAdjustVirtualLocation
+    /// Function: FlightControlAdjustVirtualLocation<br/>
+    /// Native code at BatmanAK.exe+0x4A5410 in the Steam build
     /// </summary>
     public unsafe virtual void FlightControlAdjustVirtualLocation(float TargetZ, float DeltaTime)
     {
@@ -1831,7 +1839,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceTowardsVirtualLocation;
     /// <summary>
-    /// Function: AdvanceTowardsVirtualLocation
+    /// Function: AdvanceTowardsVirtualLocation<br/>
+    /// Native code at BatmanAK.exe+0x4A52E0 in the Steam build
     /// </summary>
     public unsafe virtual void AdvanceTowardsVirtualLocation(float DeltaTime)
     {
@@ -1853,7 +1862,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVirtualLocationWithConstraints;
     /// <summary>
-    /// Function: SetVirtualLocationWithConstraints
+    /// Function: SetVirtualLocationWithConstraints<br/>
+    /// Native code at BatmanAK.exe+0x4A5170 in the Steam build
     /// </summary>
     public unsafe virtual bool SetVirtualLocationWithConstraints(System.Numerics.Vector3 NewVirtualLocation, float DeltaTime)
     {
@@ -1876,7 +1886,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVirtualLocation;
     /// <summary>
-    /// Function: SetVirtualLocation
+    /// Function: SetVirtualLocation<br/>
+    /// Native code at BatmanAK.exe+0x46B1A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVirtualLocation(System.Numerics.Vector3 NewVirtualLocation, float DeltaTime = default)
     {
@@ -1899,7 +1910,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDeadVehicle;
     /// <summary>
-    /// Function: SpawnDeadVehicle
+    /// Function: SpawnDeadVehicle<br/>
+    /// Native code at BatmanAK.exe+0x4A5030 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDeadVehicle SpawnDeadVehicle(BmSDK.BmGame.RDeadVehicle Archetype)
     {
@@ -1921,7 +1933,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CrashMovement;
     /// <summary>
-    /// Function: CrashMovement
+    /// Function: CrashMovement<br/>
+    /// Native code at BatmanAK.exe+0x4A4C50 in the Steam build
     /// </summary>
     public unsafe virtual bool CrashMovement(float DeltaTime, float Gravity, float crash_altitude, float braking_once_crashed)
     {
@@ -1946,7 +1959,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRotation;
     /// <summary>
-    /// Function: UpdateRotation
+    /// Function: UpdateRotation<br/>
+    /// Native code at BatmanAK.exe+0x4A4AF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRotation(System.Numerics.Vector3 TargetLocation, float DeltaTime)
     {
@@ -1969,7 +1983,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveTowardPath;
     /// <summary>
-    /// Function: MoveTowardPath
+    /// Function: MoveTowardPath<br/>
+    /// Native code at BatmanAK.exe+0x4A4900 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveTowardPath(System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 NextTargetLocation, float DeltaTime, float MaxVelocity = default)
     {
@@ -1994,7 +2009,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToward;
     /// <summary>
-    /// Function: MoveToward
+    /// Function: MoveToward<br/>
+    /// Native code at BatmanAK.exe+0x4A4700 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveToward(System.Numerics.Vector3 TargetLocation, float DeltaTime, float MaxVelocity = default, bool SlowdownOnApproach = default)
     {
@@ -2019,7 +2035,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPathToLocation;
     /// <summary>
-    /// Function: FindPathToLocation
+    /// Function: FindPathToLocation<br/>
+    /// Native code at BatmanAK.exe+0x46B070 in the Steam build
     /// </summary>
     public unsafe virtual bool FindPathToLocation(System.Numerics.Vector3 StartingLocation, System.Numerics.Vector3 TargetLocation, bool FindPointAbove = default)
     {
@@ -2043,7 +2060,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveNoCollision;
     /// <summary>
-    /// Function: MoveNoCollision
+    /// Function: MoveNoCollision<br/>
+    /// Native code at BatmanAK.exe+0x46AFD0 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveNoCollision(System.Numerics.Vector3 Delta)
     {
@@ -2065,7 +2083,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TestLineOfSight;
     /// <summary>
-    /// Function: TestLineOfSight
+    /// Function: TestLineOfSight<br/>
+    /// Native code at BatmanAK.exe+0x46AF80 in the Steam build
     /// </summary>
     public unsafe virtual bool TestLineOfSight()
     {
@@ -2086,7 +2105,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TestSearchLight;
     /// <summary>
-    /// Function: TestSearchLight
+    /// Function: TestSearchLight<br/>
+    /// Native code at BatmanAK.exe+0x472330 in the Steam build
     /// </summary>
     public unsafe virtual bool TestSearchLight()
     {
@@ -2107,7 +2127,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVisibility;
     /// <summary>
-    /// Function: UpdateVisibility
+    /// Function: UpdateVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4A45D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVisibility(float DeltaTime)
     {
@@ -2129,7 +2150,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickNative;
     /// <summary>
-    /// Function: TickNative
+    /// Function: TickNative<br/>
+    /// Native code at BatmanAK.exe+0x4A44A0 in the Steam build
     /// </summary>
     public unsafe virtual void TickNative(float DeltaTime)
     {
@@ -2151,7 +2173,8 @@ public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTakedownTarget;
     /// <summary>
-    /// Function: IsValidTakedownTarget
+    /// Function: IsValidTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x4A4360 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTakedownTarget(bool StandingOnVehicle)
     {

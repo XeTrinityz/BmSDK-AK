@@ -369,7 +369,8 @@ public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlendingOut;
     /// <summary>
-    /// Function: IsBlendingOut
+    /// Function: IsBlendingOut<br/>
+    /// Native code at BatmanAK.exe+0x4E81E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlendingOut(BmSDK.Engine.AnimNodeSequence AnimNode)
     {
@@ -391,7 +392,8 @@ public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle()
     {
@@ -412,7 +414,8 @@ public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {

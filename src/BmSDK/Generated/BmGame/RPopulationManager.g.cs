@@ -463,7 +463,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSpawnInformantOfType;
     /// <summary>
-    /// Function: ShouldSpawnInformantOfType
+    /// Function: ShouldSpawnInformantOfType<br/>
+    /// Native code at BatmanAK.exe+0x48CE70 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldSpawnInformantOfType(BmSDK.BmGame.RPopulationManager.InformantType TestType)
     {
@@ -485,7 +486,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesDistrictSupportInformantType;
     /// <summary>
-    /// Function: DoesDistrictSupportInformantType
+    /// Function: DoesDistrictSupportInformantType<br/>
+    /// Native code at BatmanAK.exe+0x5090E0 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesDistrictSupportInformantType(int DistrictID, BmSDK.BmGame.RPopulationManager.InformantType TestType)
     {
@@ -508,7 +510,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveActiveRiddlerInformant;
     /// <summary>
-    /// Function: RemoveActiveRiddlerInformant
+    /// Function: RemoveActiveRiddlerInformant<br/>
+    /// Native code at BatmanAK.exe+0x508FB0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveActiveRiddlerInformant(BmSDK.BmGame.RPawnVillain OldInformant)
     {
@@ -530,7 +533,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddActiveRiddlerInformant;
     /// <summary>
-    /// Function: AddActiveRiddlerInformant
+    /// Function: AddActiveRiddlerInformant<br/>
+    /// Native code at BatmanAK.exe+0x508E80 in the Steam build
     /// </summary>
     public unsafe virtual void AddActiveRiddlerInformant(BmSDK.BmGame.RPawnVillain NewInformant)
     {
@@ -552,7 +556,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasActiveInformant;
     /// <summary>
-    /// Function: HasActiveInformant
+    /// Function: HasActiveInformant<br/>
+    /// Native code at BatmanAK.exe+0x48CE20 in the Steam build
     /// </summary>
     public unsafe virtual bool HasActiveInformant()
     {
@@ -573,7 +578,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetRiddlerInformantSpawnTimer;
     /// <summary>
-    /// Function: ResetRiddlerInformantSpawnTimer
+    /// Function: ResetRiddlerInformantSpawnTimer<br/>
+    /// Native code at BatmanAK.exe+0x48CDE0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetRiddlerInformantSpawnTimer()
     {
@@ -594,7 +600,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNextRiddlerInformantType;
     /// <summary>
-    /// Function: SetNextRiddlerInformantType
+    /// Function: SetNextRiddlerInformantType<br/>
+    /// Native code at BatmanAK.exe+0x48CDA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNextRiddlerInformantType()
     {
@@ -615,7 +622,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiddlerInformants;
     /// <summary>
-    /// Function: UpdateRiddlerInformants
+    /// Function: UpdateRiddlerInformants<br/>
+    /// Native code at BatmanAK.exe+0x508D50 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRiddlerInformants(float DeltaTime)
     {
@@ -770,7 +778,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxThreat;
     /// <summary>
-    /// Function: GetMaxThreat
+    /// Function: GetMaxThreat<br/>
+    /// Native code at BatmanAK.exe+0x48CD10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPopulationManager.EThreatType GetMaxThreat(BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -792,7 +801,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThreatLevel;
     /// <summary>
-    /// Function: GetThreatLevel
+    /// Function: GetThreatLevel<br/>
+    /// Native code at BatmanAK.exe+0x48CC20 in the Steam build
     /// </summary>
     public unsafe virtual int GetThreatLevel(BmSDK.BmGame.RGameInfo.EDistrict District, BmSDK.BmGame.RPopulationManager.EThreatType ThreatType, bool bForSpecificThreatLevel = default)
     {
@@ -861,7 +871,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCachedThreatLevels;
     /// <summary>
-    /// Function: UpdateCachedThreatLevels
+    /// Function: UpdateCachedThreatLevels<br/>
+    /// Native code at BatmanAK.exe+0x48CB80 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCachedThreatLevels(bool bForceHUDUpdate = default)
     {
@@ -1609,7 +1620,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnWandererForGroup;
     /// <summary>
-    /// Function: SpawnWandererForGroup
+    /// Function: SpawnWandererForGroup<br/>
+    /// Native code at BatmanAK.exe+0x508C30 in the Steam build
     /// </summary>
     public unsafe virtual void SpawnWandererForGroup(int DistrictIndex)
     {
@@ -1631,7 +1643,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnWandererGroup;
     /// <summary>
-    /// Function: SpawnWandererGroup
+    /// Function: SpawnWandererGroup<br/>
+    /// Native code at BatmanAK.exe+0x508B10 in the Steam build
     /// </summary>
     public unsafe virtual void SpawnWandererGroup(int DistrictIndex)
     {
@@ -1653,7 +1666,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindWandererSpawnPoint;
     /// <summary>
-    /// Function: FindWandererSpawnPoint
+    /// Function: FindWandererSpawnPoint<br/>
+    /// Native code at BatmanAK.exe+0x48CA90 in the Steam build
     /// </summary>
     public unsafe virtual bool FindWandererSpawnPoint(out System.Numerics.Vector3 SpawnLoc, out BmSDK.Rotator SpawnRot)
     {
@@ -1680,7 +1694,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WanderersShouldBeDeactivated;
     /// <summary>
-    /// Function: WanderersShouldBeDeactivated
+    /// Function: WanderersShouldBeDeactivated<br/>
+    /// Native code at BatmanAK.exe+0x508880 in the Steam build
     /// </summary>
     public unsafe virtual bool WanderersShouldBeDeactivated(int WandererIndex, System.Numerics.Vector3 playerLoc, System.Numerics.Vector3 PlayerDirection, float PlayerSpeed)
     {
@@ -1705,7 +1720,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWandererThreatActor;
     /// <summary>
-    /// Function: UpdateWandererThreatActor
+    /// Function: UpdateWandererThreatActor<br/>
+    /// Native code at BatmanAK.exe+0x48CA50 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWandererThreatActor()
     {
@@ -1726,7 +1742,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWandererThreatActor;
     /// <summary>
-    /// Function: GetWandererThreatActor
+    /// Function: GetWandererThreatActor<br/>
+    /// Native code at BatmanAK.exe+0x5642B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetWandererThreatActor(BmSDK.BmGame.RPawnPlayer Batman, BmSDK.BmGame.RVehicleBatmobileBase Batmobile, BmSDK.TArray<BmSDK.BmGame.RPawnVillain> WandererList)
     {
@@ -1750,7 +1767,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmobileThreatToWanderer;
     /// <summary>
-    /// Function: IsBatmobileThreatToWanderer
+    /// Function: IsBatmobileThreatToWanderer<br/>
+    /// Native code at BatmanAK.exe+0x508650 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBatmobileThreatToWanderer(BmSDK.BmGame.RVehicleBatmobileBase Batmobile, BmSDK.BmGame.RBMPawnAI LeadWanderer, out int bConsiderBatmobile)
     {
@@ -1776,7 +1794,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForDeletedWanderers;
     /// <summary>
-    /// Function: CheckForDeletedWanderers
+    /// Function: CheckForDeletedWanderers<br/>
+    /// Native code at BatmanAK.exe+0x46C150 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForDeletedWanderers()
     {
@@ -1797,7 +1816,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForWanderersNeedSpawn;
     /// <summary>
-    /// Function: CheckForWanderersNeedSpawn
+    /// Function: CheckForWanderersNeedSpawn<br/>
+    /// Native code at BatmanAK.exe+0x46C110 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForWanderersNeedSpawn()
     {
@@ -1818,7 +1838,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWanderers;
     /// <summary>
-    /// Function: UpdateWanderers
+    /// Function: UpdateWanderers<br/>
+    /// Native code at BatmanAK.exe+0x508520 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWanderers(float DeltaTime)
     {
@@ -1855,7 +1876,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerHallucinationsAllowed;
     /// <summary>
-    /// Function: JokerHallucinationsAllowed
+    /// Function: JokerHallucinationsAllowed<br/>
+    /// Native code at BatmanAK.exe+0x46C0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool JokerHallucinationsAllowed()
     {
@@ -1876,7 +1898,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyJokersCurrentlyActive;
     /// <summary>
-    /// Function: AnyJokersCurrentlyActive
+    /// Function: AnyJokersCurrentlyActive<br/>
+    /// Native code at BatmanAK.exe+0x48CA00 in the Steam build
     /// </summary>
     public unsafe virtual bool AnyJokersCurrentlyActive()
     {
@@ -1925,7 +1948,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJokerInRiots;
     /// <summary>
-    /// Function: UpdateJokerInRiots
+    /// Function: UpdateJokerInRiots<br/>
+    /// Native code at BatmanAK.exe+0x5083F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateJokerInRiots(float DeltaTime)
     {
@@ -1978,7 +2002,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocalPopulationControl;
     /// <summary>
-    /// Function: UpdateLocalPopulationControl
+    /// Function: UpdateLocalPopulationControl<br/>
+    /// Native code at BatmanAK.exe+0x5082C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLocalPopulationControl(float DeltaTime)
     {
@@ -2047,7 +2072,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MightPopulationForDistrictContainTanks;
     /// <summary>
-    /// Function: MightPopulationForDistrictContainTanks
+    /// Function: MightPopulationForDistrictContainTanks<br/>
+    /// Native code at BatmanAK.exe+0x48C970 in the Steam build
     /// </summary>
     public unsafe virtual bool MightPopulationForDistrictContainTanks(BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -2100,7 +2126,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistrictNameForObject;
     /// <summary>
-    /// Function: GetDistrictNameForObject
+    /// Function: GetDistrictNameForObject<br/>
+    /// Native code at BatmanAK.exe+0x53F8D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetDistrictNameForObject(BmSDK.GameObject Obj, bool bIsChallenge)
     {
@@ -2213,7 +2240,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHumveeSpawnTimer;
     /// <summary>
-    /// Function: SetHumveeSpawnTimer
+    /// Function: SetHumveeSpawnTimer<br/>
+    /// Native code at BatmanAK.exe+0x5081A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHumveeSpawnTimer(bool bDistrictChanged)
     {
@@ -2235,7 +2263,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAnyHumveesActive;
     /// <summary>
-    /// Function: AreAnyHumveesActive
+    /// Function: AreAnyHumveesActive<br/>
+    /// Native code at BatmanAK.exe+0x508060 in the Steam build
     /// </summary>
     public unsafe virtual bool AreAnyHumveesActive(int DistrictID)
     {
@@ -2272,7 +2301,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnHumvee;
     /// <summary>
-    /// Function: CanSpawnHumvee
+    /// Function: CanSpawnHumvee<br/>
+    /// Native code at BatmanAK.exe+0x507F20 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSpawnHumvee(int DistrictID)
     {
@@ -2342,7 +2372,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasAnyHumveeScenarios;
     /// <summary>
-    /// Function: HasAnyHumveeScenarios
+    /// Function: HasAnyHumveeScenarios<br/>
+    /// Native code at BatmanAK.exe+0x507DE0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasAnyHumveeScenarios(int DistrictID)
     {
@@ -2439,7 +2470,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumScriptedLightDroneScenarios;
     /// <summary>
-    /// Function: GetNumScriptedLightDroneScenarios
+    /// Function: GetNumScriptedLightDroneScenarios<br/>
+    /// Native code at BatmanAK.exe+0x48C8E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumScriptedLightDroneScenarios(BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -2461,7 +2493,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumScriptedLightDrones;
     /// <summary>
-    /// Function: GetNumScriptedLightDrones
+    /// Function: GetNumScriptedLightDrones<br/>
+    /// Native code at BatmanAK.exe+0x48C810 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumScriptedLightDrones(BmSDK.BmGame.RGameInfo.EDistrict District, bool bForSpecificThreatLevel = default)
     {
@@ -2484,7 +2517,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateScenarioUsageInfo;
     /// <summary>
-    /// Function: UpdateScenarioUsageInfo
+    /// Function: UpdateScenarioUsageInfo<br/>
+    /// Native code at BatmanAK.exe+0x507CB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateScenarioUsageInfo(float DeltaTime)
     {
@@ -2681,7 +2715,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnAPC;
     /// <summary>
-    /// Function: CanSpawnAPC
+    /// Function: CanSpawnAPC<br/>
+    /// Native code at BatmanAK.exe+0x48E6D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSpawnAPC()
     {
@@ -2717,7 +2752,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDistrictValidForAPC;
     /// <summary>
-    /// Function: IsDistrictValidForAPC
+    /// Function: IsDistrictValidForAPC<br/>
+    /// Native code at BatmanAK.exe+0x507B70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDistrictValidForAPC(int DistrictID)
     {
@@ -2865,7 +2901,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnyoneInVehicleArraySpeaking;
     /// <summary>
-    /// Function: IsAnyoneInVehicleArraySpeaking
+    /// Function: IsAnyoneInVehicleArraySpeaking<br/>
+    /// Native code at BatmanAK.exe+0x5641F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnyoneInVehicleArraySpeaking(BmSDK.TArray<BmSDK.BmGame.RVehicleNPC> VehicleArray)
     {
@@ -2887,7 +2924,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVehiclePopulation;
     /// <summary>
-    /// Function: UpdateVehiclePopulation
+    /// Function: UpdateVehiclePopulation<br/>
+    /// Native code at BatmanAK.exe+0x507A40 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVehiclePopulation(float DeltaTime)
     {
@@ -2909,7 +2947,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePopulationVolumes;
     /// <summary>
-    /// Function: UpdatePopulationVolumes
+    /// Function: UpdatePopulationVolumes<br/>
+    /// Native code at BatmanAK.exe+0x507910 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePopulationVolumes(float DeltaTime)
     {
@@ -2931,7 +2970,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivatePopulationVolume;
     /// <summary>
-    /// Function: DeactivatePopulationVolume
+    /// Function: DeactivatePopulationVolume<br/>
+    /// Native code at BatmanAK.exe+0x4F9960 in the Steam build
     /// </summary>
     public unsafe virtual void DeactivatePopulationVolume(BmSDK.BmGame.ROverworldPopulationVolume PopVolume)
     {
@@ -2953,7 +2993,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivatePopulationVolume;
     /// <summary>
-    /// Function: ActivatePopulationVolume
+    /// Function: ActivatePopulationVolume<br/>
+    /// Native code at BatmanAK.exe+0x507730 in the Steam build
     /// </summary>
     public unsafe virtual void ActivatePopulationVolume(BmSDK.BmGame.ROverworldPopulationVolume PopVolume, int MaxPawnsAllowed)
     {
@@ -3091,7 +3132,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableDynamicPopulation;
     /// <summary>
-    /// Function: DisableDynamicPopulation
+    /// Function: DisableDynamicPopulation<br/>
+    /// Native code at BatmanAK.exe+0x48C7C0 in the Steam build
     /// </summary>
     public unsafe virtual bool DisableDynamicPopulation()
     {
@@ -3112,7 +3154,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulationVolumeShouldBeDeactivated;
     /// <summary>
-    /// Function: PopulationVolumeShouldBeDeactivated
+    /// Function: PopulationVolumeShouldBeDeactivated<br/>
+    /// Native code at BatmanAK.exe+0x5074A0 in the Steam build
     /// </summary>
     public unsafe virtual bool PopulationVolumeShouldBeDeactivated(BmSDK.BmGame.ROverworldPopulationVolume TestVolume, System.Numerics.Vector3 PlayerPosition, System.Numerics.Vector3 PlayerDirection, float PlayerSpeed)
     {
@@ -3137,7 +3180,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPopulationVolumeToActivate;
     /// <summary>
-    /// Function: FindPopulationVolumeToActivate
+    /// Function: FindPopulationVolumeToActivate<br/>
+    /// Native code at BatmanAK.exe+0x48C6E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.ROverworldPopulationVolume FindPopulationVolumeToActivate(System.Numerics.Vector3 PlayerPosition, System.Numerics.Vector3 PlayerDirection)
     {
@@ -3160,7 +3204,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointIsVisible;
     /// <summary>
-    /// Function: PointIsVisible
+    /// Function: PointIsVisible<br/>
+    /// Native code at BatmanAK.exe+0x507360 in the Steam build
     /// </summary>
     public unsafe virtual bool PointIsVisible(BmSDK.BmGame.RGangInteractPointBase PointToCheck)
     {
@@ -3182,7 +3227,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanActivatePopulationVolume;
     /// <summary>
-    /// Function: CanActivatePopulationVolume
+    /// Function: CanActivatePopulationVolume<br/>
+    /// Native code at BatmanAK.exe+0x5071B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanActivatePopulationVolume(BmSDK.BmGame.ROverworldPopulationVolume PopVolume, System.Numerics.Vector3 PlayerPosition, System.Numerics.Vector3 PlayerDirection)
     {
@@ -3206,7 +3252,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopVolIsntTempDeactivated;
     /// <summary>
-    /// Function: PopVolIsntTempDeactivated
+    /// Function: PopVolIsntTempDeactivated<br/>
+    /// Native code at BatmanAK.exe+0x507070 in the Steam build
     /// </summary>
     public unsafe virtual bool PopVolIsntTempDeactivated(BmSDK.BmGame.ROverworldPopulationVolume TestVolume)
     {
@@ -3228,7 +3275,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxActivePopulationCost;
     /// <summary>
-    /// Function: GetMaxActivePopulationCost
+    /// Function: GetMaxActivePopulationCost<br/>
+    /// Native code at BatmanAK.exe+0x48C2F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetMaxActivePopulationCost()
     {
@@ -3249,7 +3297,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActivePopulationCost;
     /// <summary>
-    /// Function: GetActivePopulationCost
+    /// Function: GetActivePopulationCost<br/>
+    /// Native code at BatmanAK.exe+0x48C2A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetActivePopulationCost()
     {
@@ -3270,7 +3319,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPopulationVolumeCost;
     /// <summary>
-    /// Function: GetPopulationVolumeCost
+    /// Function: GetPopulationVolumeCost<br/>
+    /// Native code at BatmanAK.exe+0x504260 in the Steam build
     /// </summary>
     public unsafe virtual int GetPopulationVolumeCost(BmSDK.BmGame.ROverworldPopulationVolume TestVolume)
     {
@@ -3292,7 +3342,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VolumeCanSpawnRiotingThugsInDistrict;
     /// <summary>
-    /// Function: VolumeCanSpawnRiotingThugsInDistrict
+    /// Function: VolumeCanSpawnRiotingThugsInDistrict<br/>
+    /// Native code at BatmanAK.exe+0x506F30 in the Steam build
     /// </summary>
     public unsafe virtual bool VolumeCanSpawnRiotingThugsInDistrict(BmSDK.BmGame.ROverworldPopulationVolume PopVolume)
     {
@@ -3314,7 +3365,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OtherRiotZonesPreventSpawn;
     /// <summary>
-    /// Function: OtherRiotZonesPreventSpawn
+    /// Function: OtherRiotZonesPreventSpawn<br/>
+    /// Native code at BatmanAK.exe+0x506DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool OtherRiotZonesPreventSpawn(BmSDK.BmGame.ROverworldPopulationVolume PopVolume)
     {
@@ -3700,7 +3752,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearWanderersInZone;
     /// <summary>
-    /// Function: ClearWanderersInZone
+    /// Function: ClearWanderersInZone<br/>
+    /// Native code at BatmanAK.exe+0x506CC0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearWanderersInZone(BmSDK.Engine.Volume NewVolume)
     {
@@ -3722,7 +3775,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDynamicVehicleExclusionVolume;
     /// <summary>
-    /// Function: RemoveDynamicVehicleExclusionVolume
+    /// Function: RemoveDynamicVehicleExclusionVolume<br/>
+    /// Native code at BatmanAK.exe+0x506B90 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDynamicVehicleExclusionVolume(BmSDK.FName ClaimName)
     {
@@ -3744,7 +3798,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateDynamicVehicleExclusionVolume;
     /// <summary>
-    /// Function: CreateDynamicVehicleExclusionVolume
+    /// Function: CreateDynamicVehicleExclusionVolume<br/>
+    /// Native code at BatmanAK.exe+0x506970 in the Steam build
     /// </summary>
     public unsafe virtual void CreateDynamicVehicleExclusionVolume(System.Numerics.Vector3 Center, float Radius, BmSDK.FName ClaimName)
     {
@@ -3768,7 +3823,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x506630 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, System.Numerics.Vector3 NewSpawnPoint, BmSDK.Rotator NewSpawnRotation = default)
     {
@@ -3794,7 +3850,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnVolume;
     /// <summary>
-    /// Function: GetClosestPointOnVolume
+    /// Function: GetClosestPointOnVolume<br/>
+    /// Native code at BatmanAK.exe+0x506480 in the Steam build
     /// </summary>
     public unsafe virtual bool GetClosestPointOnVolume(BmSDK.Engine.Volume TestVolume, System.Numerics.Vector3 TestPoint, out System.Numerics.Vector3 out_ClosestPoint)
     {
@@ -3820,7 +3877,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPawnToDestroy;
     /// <summary>
-    /// Function: AddPawnToDestroy
+    /// Function: AddPawnToDestroy<br/>
+    /// Native code at BatmanAK.exe+0x506290 in the Steam build
     /// </summary>
     public unsafe virtual void AddPawnToDestroy(BmSDK.BmGame.RBMPawnAI PawnToDestroy, bool bStreamedOut)
     {
@@ -3843,7 +3901,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointIsInExclusionVolume;
     /// <summary>
-    /// Function: PointIsInExclusionVolume
+    /// Function: PointIsInExclusionVolume<br/>
+    /// Native code at BatmanAK.exe+0x506060 in the Steam build
     /// </summary>
     public unsafe virtual bool PointIsInExclusionVolume(System.Numerics.Vector3 TestPoint, bool bTestVehicles, bool bTestRioters)
     {
@@ -3867,7 +3926,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RiotVolumeInHeavyTankVolume;
     /// <summary>
-    /// Function: RiotVolumeInHeavyTankVolume
+    /// Function: RiotVolumeInHeavyTankVolume<br/>
+    /// Native code at BatmanAK.exe+0x505F20 in the Steam build
     /// </summary>
     public unsafe virtual bool RiotVolumeInHeavyTankVolume(BmSDK.BmGame.ROverworldPopulationVolume TestVol)
     {
@@ -3889,7 +3949,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerInHeavyTankVolume;
     /// <summary>
-    /// Function: PlayerInHeavyTankVolume
+    /// Function: PlayerInHeavyTankVolume<br/>
+    /// Native code at BatmanAK.exe+0x48C690 in the Steam build
     /// </summary>
     public unsafe virtual bool PlayerInHeavyTankVolume()
     {
@@ -3910,7 +3971,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBeaconThreatMaxForDistrictID;
     /// <summary>
-    /// Function: GetBeaconThreatMaxForDistrictID
+    /// Function: GetBeaconThreatMaxForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505DC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetBeaconThreatMaxForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -3933,7 +3995,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCheckPointThreatMaxForDistrictID;
     /// <summary>
-    /// Function: GetCheckPointThreatMaxForDistrictID
+    /// Function: GetCheckPointThreatMaxForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505C60 in the Steam build
     /// </summary>
     public unsafe virtual int GetCheckPointThreatMaxForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -3956,7 +4019,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWatchtowerThreatMaxForDistrictID;
     /// <summary>
-    /// Function: GetWatchtowerThreatMaxForDistrictID
+    /// Function: GetWatchtowerThreatMaxForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505B00 in the Steam build
     /// </summary>
     public unsafe virtual int GetWatchtowerThreatMaxForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -3979,7 +4043,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeavyDroneThreatForDistrictID;
     /// <summary>
-    /// Function: GetHeavyDroneThreatForDistrictID
+    /// Function: GetHeavyDroneThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x5058E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetHeavyDroneThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District, bool bForSpecificThreatLevel)
     {
@@ -4003,7 +4068,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLightDroneThreatForDistrictID;
     /// <summary>
-    /// Function: GetLightDroneThreatForDistrictID
+    /// Function: GetLightDroneThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x5056C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetLightDroneThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District, bool bForSpecificThreatLevel)
     {
@@ -4027,7 +4093,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBeaconThreatLeftTotal;
     /// <summary>
-    /// Function: GetBeaconThreatLeftTotal
+    /// Function: GetBeaconThreatLeftTotal<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe virtual int GetBeaconThreatLeftTotal()
     {
@@ -4048,7 +4115,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWatchtowerThreatLeftTotal;
     /// <summary>
-    /// Function: GetWatchtowerThreatLeftTotal
+    /// Function: GetWatchtowerThreatLeftTotal<br/>
+    /// Native code at BatmanAK.exe+0xB43E80 in the Steam build
     /// </summary>
     public unsafe virtual int GetWatchtowerThreatLeftTotal()
     {
@@ -4069,7 +4137,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCheckPointThreatLeftTotal;
     /// <summary>
-    /// Function: GetCheckPointThreatLeftTotal
+    /// Function: GetCheckPointThreatLeftTotal<br/>
+    /// Native code at BatmanAK.exe+0x46B460 in the Steam build
     /// </summary>
     public unsafe virtual int GetCheckPointThreatLeftTotal()
     {
@@ -4090,7 +4159,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBeaconThreatForDistrictID;
     /// <summary>
-    /// Function: GetBeaconThreatForDistrictID
+    /// Function: GetBeaconThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505560 in the Steam build
     /// </summary>
     public unsafe virtual int GetBeaconThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -4113,7 +4183,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCheckPointThreatForDistrictID;
     /// <summary>
-    /// Function: GetCheckPointThreatForDistrictID
+    /// Function: GetCheckPointThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505400 in the Steam build
     /// </summary>
     public unsafe virtual int GetCheckPointThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -4136,7 +4207,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWatchtowerThreatForDistrictID;
     /// <summary>
-    /// Function: GetWatchtowerThreatForDistrictID
+    /// Function: GetWatchtowerThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x5052A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetWatchtowerThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -4159,7 +4231,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAPCThreatForDistrictID;
     /// <summary>
-    /// Function: GetAPCThreatForDistrictID
+    /// Function: GetAPCThreatForDistrictID<br/>
+    /// Native code at BatmanAK.exe+0x505140 in the Steam build
     /// </summary>
     public unsafe virtual int GetAPCThreatForDistrictID(int DistrictID, BmSDK.BmGame.RGameInfo.EDistrict District)
     {
@@ -4182,7 +4255,8 @@ public partial class RPopulationManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AmIBestRiotZoneToFight;
     /// <summary>
-    /// Function: AmIBestRiotZoneToFight
+    /// Function: AmIBestRiotZoneToFight<br/>
+    /// Native code at BatmanAK.exe+0x504F50 in the Steam build
     /// </summary>
     public unsafe virtual bool AmIBestRiotZoneToFight(BmSDK.BmGame.ROverworldPopulationVolume TestVolume, BmSDK.Engine.Actor Threat)
     {

@@ -80,7 +80,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionDuration;
     /// <summary>
-    /// Function: GetSessionDuration
+    /// Function: GetSessionDuration<br/>
+    /// Native code at BatmanAK.exe+0xB3E6E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetSessionDuration()
     {
@@ -101,7 +102,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionEnd;
     /// <summary>
-    /// Function: GetSessionEnd
+    /// Function: GetSessionEnd<br/>
+    /// Native code at BatmanAK.exe+0xB3E520 in the Steam build
     /// </summary>
     public unsafe virtual float GetSessionEnd()
     {
@@ -122,7 +124,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionStart;
     /// <summary>
-    /// Function: GetSessionStart
+    /// Function: GetSessionStart<br/>
+    /// Native code at BatmanAK.exe+0xB3F590 in the Steam build
     /// </summary>
     public unsafe virtual float GetSessionStart()
     {
@@ -143,7 +146,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionTimestamp;
     /// <summary>
-    /// Function: GetSessionTimestamp
+    /// Function: GetSessionTimestamp<br/>
+    /// Native code at BatmanAK.exe+0xBA8140 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSessionTimestamp()
     {
@@ -164,7 +168,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlatform;
     /// <summary>
-    /// Function: GetPlatform
+    /// Function: GetPlatform<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetPlatform()
     {
@@ -185,7 +190,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleID;
     /// <summary>
-    /// Function: GetTitleID
+    /// Function: GetTitleID<br/>
+    /// Native code at BatmanAK.exe+0xB4ED20 in the Steam build
     /// </summary>
     public unsafe virtual int GetTitleID()
     {
@@ -206,7 +212,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionID;
     /// <summary>
-    /// Function: GetSessionID
+    /// Function: GetSessionID<br/>
+    /// Native code at BatmanAK.exe+0xBA80C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetSessionID()
     {
@@ -227,7 +234,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Function __fn_ProcessStreamEnd;
     /// <summary>
-    /// Function: ProcessStreamEnd
+    /// Function: ProcessStreamEnd<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe void ProcessStreamEnd()
     {
@@ -248,7 +256,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessStream;
     /// <summary>
-    /// Function: ProcessStream
+    /// Function: ProcessStream<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessStream()
     {
@@ -269,7 +278,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Function __fn_ProcessStreamStart;
     /// <summary>
-    /// Function: ProcessStreamStart
+    /// Function: ProcessStreamStart<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe void ProcessStreamStart()
     {
@@ -320,7 +330,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SerializeHeader;
     /// <summary>
-    /// Function: SerializeHeader
+    /// Function: SerializeHeader<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool SerializeHeader()
     {
@@ -341,7 +352,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseStatsFile;
     /// <summary>
-    /// Function: CloseStatsFile
+    /// Function: CloseStatsFile<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe override void CloseStatsFile()
     {
@@ -362,7 +374,8 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenStatsFile;
     /// <summary>
-    /// Function: OpenStatsFile
+    /// Function: OpenStatsFile<br/>
+    /// Native code at BatmanAK.exe+0xBA7F70 in the Steam build
     /// </summary>
     public unsafe override bool OpenStatsFile(BmSDK.FStringArg Filename)
     {

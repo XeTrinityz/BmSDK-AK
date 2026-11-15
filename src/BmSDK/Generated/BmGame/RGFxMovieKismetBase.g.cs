@@ -80,7 +80,8 @@ public partial class RGFxMovieKismetBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseWindow;
     /// <summary>
-    /// Function: CloseWindow
+    /// Function: CloseWindow<br/>
+    /// Native code at BatmanAK.exe+0x497F40 in the Steam build
     /// </summary>
     public unsafe virtual void CloseWindow()
     {

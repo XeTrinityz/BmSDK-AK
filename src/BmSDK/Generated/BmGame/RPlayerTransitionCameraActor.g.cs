@@ -80,7 +80,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFollowCamPos;
     /// <summary>
-    /// Function: UpdateFollowCamPos
+    /// Function: UpdateFollowCamPos<br/>
+    /// Native code at BatmanAK.exe+0x515D30 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFollowCamPos(float DeltaTime)
     {
@@ -161,7 +162,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRouteToCustomCamera;
     /// <summary>
-    /// Function: PlanRouteToCustomCamera
+    /// Function: PlanRouteToCustomCamera<br/>
+    /// Native code at BatmanAK.exe+0x515BF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerTransitionCameraActor.ECameraRouteType PlanRouteToCustomCamera(BmSDK.Engine.Actor CusCam)
     {
@@ -183,7 +185,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EvaluatePathSpline;
     /// <summary>
-    /// Function: EvaluatePathSpline
+    /// Function: EvaluatePathSpline<br/>
+    /// Native code at BatmanAK.exe+0x515AA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 EvaluatePathSpline(float SplineTime)
     {
@@ -205,7 +208,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRouteToPlayer;
     /// <summary>
-    /// Function: PlanRouteToPlayer
+    /// Function: PlanRouteToPlayer<br/>
+    /// Native code at BatmanAK.exe+0x495D80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerTransitionCameraActor.ECameraRouteType PlanRouteToPlayer(bool bInVehicleTransition = default)
     {
@@ -227,7 +231,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRoute;
     /// <summary>
-    /// Function: PlanRoute
+    /// Function: PlanRoute<br/>
+    /// Native code at BatmanAK.exe+0x495CA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerTransitionCameraActor.ECameraRouteType PlanRoute(System.Numerics.Vector3 Loc, BmSDK.Rotator EndRot)
     {
@@ -250,7 +255,8 @@ public partial class RPlayerTransitionCameraActor : BmSDK.BmGame.RCameraActor, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlanRouteMain;
     /// <summary>
-    /// Function: PlanRouteMain
+    /// Function: PlanRouteMain<br/>
+    /// Native code at BatmanAK.exe+0x495BC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerTransitionCameraActor.ECameraRouteType PlanRouteMain(System.Numerics.Vector3 Loc, BmSDK.Rotator EndRot)
     {

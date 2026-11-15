@@ -80,7 +80,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlaySpace;
     /// <summary>
-    /// Function: SetPlaySpace
+    /// Function: SetPlaySpace<br/>
+    /// Native code at BatmanAK.exe+0xB41350 in the Steam build
     /// </summary>
     public unsafe virtual void SetPlaySpace(BmSDK.Engine.Camera.ECameraAnimPlaySpace NewSpace, BmSDK.Rotator UserPlaySpace = default)
     {
@@ -103,7 +104,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyTransientScaling;
     /// <summary>
-    /// Function: ApplyTransientScaling
+    /// Function: ApplyTransientScaling<br/>
+    /// Native code at BatmanAK.exe+0xB85B70 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyTransientScaling(float Scalar)
     {
@@ -125,7 +127,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0xB412B0 in the Steam build
     /// </summary>
     public unsafe virtual void Stop(bool bImmediate = default)
     {
@@ -147,7 +150,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceAnim;
     /// <summary>
-    /// Function: AdvanceAnim
+    /// Function: AdvanceAnim<br/>
+    /// Native code at BatmanAK.exe+0xB85970 in the Steam build
     /// </summary>
     public unsafe virtual void AdvanceAnim(float DeltaTime, bool bJump)
     {
@@ -170,7 +174,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
-    /// Function: Update
+    /// Function: Update<br/>
+    /// Native code at BatmanAK.exe+0xB85550 in the Steam build
     /// </summary>
     public unsafe virtual void Update(float NewRate, float NewScale, float NewBlendInTime, float NewBlendOutTime, float NewDuration = default)
     {
@@ -196,7 +201,8 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
-    /// Function: Play
+    /// Function: Play<br/>
+    /// Native code at BatmanAK.exe+0xB84E60 in the Steam build
     /// </summary>
     public unsafe virtual void Play(BmSDK.Engine.CameraAnim Anim, BmSDK.Engine.Actor CamActor, float InRate, float InScale, float InBlendInTime, float InBlendOutTime, bool bInLoop, bool bRandomStartTime, float Duration = default)
     {

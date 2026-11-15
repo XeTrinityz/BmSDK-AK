@@ -177,7 +177,8 @@ public partial class RPawnSpeech : BmSDK.BmGame.RBMPawnAI, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseVoice;
     /// <summary>
-    /// Function: CanUseVoice
+    /// Function: CanUseVoice<br/>
+    /// Native code at BatmanAK.exe+0x4CEC80 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUseVoice(BmSDK.Engine.AkDialogueVoice TestVoice)
     {
@@ -199,7 +200,8 @@ public partial class RPawnSpeech : BmSDK.BmGame.RBMPawnAI, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkDialogueComponent;
     /// <summary>
-    /// Function: GetAkDialogueComponent
+    /// Function: GetAkDialogueComponent<br/>
+    /// Native code at BatmanAK.exe+0x46A390 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.AkDialogueComponent GetAkDialogueComponent(bool allowCreate = default)
     {

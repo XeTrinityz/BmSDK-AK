@@ -80,7 +80,8 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpriteAndUV;
     /// <summary>
-    /// Function: SetSpriteAndUV
+    /// Function: SetSpriteAndUV<br/>
+    /// Native code at BatmanAK.exe+0xB78390 in the Steam build
     /// </summary>
     public unsafe virtual void SetSpriteAndUV(BmSDK.Engine.Texture2D NewSprite, int NewU, int NewUL, int NewV, int NewVL)
     {
@@ -106,7 +107,8 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUV;
     /// <summary>
-    /// Function: SetUV
+    /// Function: SetUV<br/>
+    /// Native code at BatmanAK.exe+0xB78040 in the Steam build
     /// </summary>
     public unsafe virtual void SetUV(int NewU, int NewUL, int NewV, int NewVL)
     {
@@ -131,7 +133,8 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSprite;
     /// <summary>
-    /// Function: SetSprite
+    /// Function: SetSprite<br/>
+    /// Native code at BatmanAK.exe+0xB77F10 in the Steam build
     /// </summary>
     public unsafe virtual void SetSprite(BmSDK.Engine.Texture2D NewSprite)
     {

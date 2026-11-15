@@ -80,7 +80,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCollisionConstraint;
     /// <summary>
-    /// Function: RemoveCollisionConstraint
+    /// Function: RemoveCollisionConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB5DB80 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveCollisionConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference particleRef, BmSDK.FName BoneName)
     {
@@ -103,7 +104,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCollisionConstraint;
     /// <summary>
-    /// Function: AddCollisionConstraint
+    /// Function: AddCollisionConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB5D960 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RFlaps_ConstraintSetup AddCollisionConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference particleRef, BmSDK.FName BoneName, BmSDK.Engine.SkeletalMesh RefSkelMesh)
     {
@@ -127,7 +129,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFlapsBodyIndexFromBodyIndex;
     /// <summary>
-    /// Function: FindFlapsBodyIndexFromBodyIndex
+    /// Function: FindFlapsBodyIndexFromBodyIndex<br/>
+    /// Native code at BatmanAK.exe+0xB5D830 in the Steam build
     /// </summary>
     public unsafe virtual int FindFlapsBodyIndexFromBodyIndex(int BodyIndex)
     {
@@ -149,7 +152,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateConstraintReferences;
     /// <summary>
-    /// Function: UpdateConstraintReferences
+    /// Function: UpdateConstraintReferences<br/>
+    /// Native code at BatmanAK.exe+0xB34050 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateConstraintReferences()
     {
@@ -170,7 +174,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddConstraint;
     /// <summary>
-    /// Function: AddConstraint
+    /// Function: AddConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB5D6B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RFlaps_ConstraintSetup AddConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference ConstrainedParticleRef, BmSDK.Engine.RFlaps_ConstraintSetup.ERFlapsConstraintType ConstraintType, BmSDK.Engine.SkeletalMesh RefSkelMesh)
     {
@@ -194,7 +199,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBody;
     /// <summary>
-    /// Function: RemoveBody
+    /// Function: RemoveBody<br/>
+    /// Native code at BatmanAK.exe+0xB5D570 in the Steam build
     /// </summary>
     public unsafe virtual bool RemoveBody(BmSDK.FName BoneName)
     {
@@ -216,7 +222,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBody;
     /// <summary>
-    /// Function: AddBody
+    /// Function: AddBody<br/>
+    /// Native code at BatmanAK.exe+0xB5D430 in the Steam build
     /// </summary>
     public unsafe virtual int AddBody(BmSDK.FName BoneName)
     {
@@ -238,7 +245,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyIndex;
     /// <summary>
-    /// Function: FindBodyIndex
+    /// Function: FindBodyIndex<br/>
+    /// Native code at BatmanAK.exe+0xB5D2F0 in the Steam build
     /// </summary>
     public unsafe virtual int FindBodyIndex(BmSDK.FName BoneName)
     {
@@ -260,7 +268,8 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumBodies;
     /// <summary>
-    /// Function: GetNumBodies
+    /// Function: GetNumBodies<br/>
+    /// Native code at BatmanAK.exe+0xB34000 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumBodies()
     {

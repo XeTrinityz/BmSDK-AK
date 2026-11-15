@@ -130,7 +130,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
-    /// Function: Update
+    /// Function: Update<br/>
+    /// Native code at BatmanAK.exe+0x4A6B40 in the Steam build
     /// </summary>
     public unsafe virtual void Update(float DeltaTime, System.Numerics.Vector3 CameraLoc, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, out float FOV)
     {
@@ -245,7 +246,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFast;
     /// <summary>
-    /// Function: UpdateFast
+    /// Function: UpdateFast<br/>
+    /// Native code at BatmanAK.exe+0x4A6910 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFast(float DeltaTime, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, out float FOV)
     {
@@ -276,7 +278,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShake;
     /// <summary>
-    /// Function: UpdateShake
+    /// Function: UpdateShake<br/>
+    /// Native code at BatmanAK.exe+0x4A66A0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateShake(float DeltaTime, out BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shake, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, out float FOV)
     {
@@ -310,7 +313,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyShake;
     /// <summary>
-    /// Function: ApplyShake
+    /// Function: ApplyShake<br/>
+    /// Native code at BatmanAK.exe+0x4A63A0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyShake(float DeltaTime, out BmSDK.BmGame.RBMScreenShakeModifier.FBMScreenShakeStruct Shake, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, float ShakePct)
     {
@@ -342,7 +346,8 @@ public partial class RBMScreenShakeModifier : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyJitter;
     /// <summary>
-    /// Function: ApplyJitter
+    /// Function: ApplyJitter<br/>
+    /// Native code at BatmanAK.exe+0x4A6110 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyJitter(out float Amplitude, out float Offset, float Frequency, float DeltaTime)
     {

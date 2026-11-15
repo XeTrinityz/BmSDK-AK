@@ -80,7 +80,8 @@ public partial class AkParameterName : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MapParameterValue;
     /// <summary>
-    /// Function: MapParameterValue
+    /// Function: MapParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB610B0 in the Steam build
     /// </summary>
     public unsafe virtual float MapParameterValue(float curValue, float rangeMin = default, float rangeMax = default)
     {
@@ -104,7 +105,8 @@ public partial class AkParameterName : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampParameterValue;
     /// <summary>
-    /// Function: ClampParameterValue
+    /// Function: ClampParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB60F70 in the Steam build
     /// </summary>
     public unsafe virtual float ClampParameterValue(float curValue)
     {

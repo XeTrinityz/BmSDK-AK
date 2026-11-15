@@ -254,7 +254,8 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJoker;
     /// <summary>
-    /// Function: UpdateJoker
+    /// Function: UpdateJoker<br/>
+    /// Native code at BatmanAK.exe+0x4D0BD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateJoker(float DeltaTime)
     {

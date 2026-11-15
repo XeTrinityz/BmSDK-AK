@@ -162,7 +162,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasVisiblePawn;
     /// <summary>
-    /// Function: HasVisiblePawn
+    /// Function: HasVisiblePawn<br/>
+    /// Native code at BatmanAK.exe+0x4883B0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasVisiblePawn()
     {
@@ -183,7 +184,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPopulationActive;
     /// <summary>
-    /// Function: IsPopulationActive
+    /// Function: IsPopulationActive<br/>
+    /// Native code at BatmanAK.exe+0x476D50 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPopulationActive()
     {
@@ -204,7 +206,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RioterWantsToFight;
     /// <summary>
-    /// Function: RioterWantsToFight
+    /// Function: RioterWantsToFight<br/>
+    /// Native code at BatmanAK.exe+0x4CCD00 in the Steam build
     /// </summary>
     public unsafe virtual bool RioterWantsToFight(BmSDK.BmGame.RPawnVillain Thug, BmSDK.Engine.Actor Threat)
     {
@@ -328,7 +331,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLackOfPawnsWarning;
     /// <summary>
-    /// Function: FireLackOfPawnsWarning
+    /// Function: FireLackOfPawnsWarning<br/>
+    /// Native code at BatmanAK.exe+0x499400 in the Steam build
     /// </summary>
     public unsafe virtual bool FireLackOfPawnsWarning()
     {
@@ -349,7 +353,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeAutoDeactivated;
     /// <summary>
-    /// Function: CanBeAutoDeactivated
+    /// Function: CanBeAutoDeactivated<br/>
+    /// Native code at BatmanAK.exe+0x48C2F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeAutoDeactivated()
     {
@@ -370,7 +375,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeAutoActivated;
     /// <summary>
-    /// Function: CanBeAutoActivated
+    /// Function: CanBeAutoActivated<br/>
+    /// Native code at BatmanAK.exe+0x48C2A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeAutoActivated()
     {
@@ -506,7 +512,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeForcedOnByObjective;
     /// <summary>
-    /// Function: ShouldBeForcedOnByObjective
+    /// Function: ShouldBeForcedOnByObjective<br/>
+    /// Native code at BatmanAK.exe+0x476D00 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldBeForcedOnByObjective()
     {
@@ -586,7 +593,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnLonePawn;
     /// <summary>
-    /// Function: SpawnLonePawn
+    /// Function: SpawnLonePawn<br/>
+    /// Native code at BatmanAK.exe+0x4CCB10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnLonePawn(BmSDK.BmGame.RGangInteractPointBase SuggestedSpawnPoint, bool bWeaponThug)
     {
@@ -609,7 +617,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiotZoneThreatActor;
     /// <summary>
-    /// Function: GetRiotZoneThreatActor
+    /// Function: GetRiotZoneThreatActor<br/>
+    /// Native code at BatmanAK.exe+0x476CB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetRiotZoneThreatActor()
     {
@@ -630,7 +639,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRiotZoneThreatActor;
     /// <summary>
-    /// Function: ForceRiotZoneThreatActor
+    /// Function: ForceRiotZoneThreatActor<br/>
+    /// Native code at BatmanAK.exe+0x506CC0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceRiotZoneThreatActor(BmSDK.Engine.Actor NewThreatActor)
     {
@@ -652,7 +662,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiotZoneThreatActor;
     /// <summary>
-    /// Function: UpdateRiotZoneThreatActor
+    /// Function: UpdateRiotZoneThreatActor<br/>
+    /// Native code at BatmanAK.exe+0x4CC9E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRiotZoneThreatActor(BmSDK.Engine.Actor ForcedThreatActor)
     {
@@ -674,7 +685,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PassivePointsNeedPartners;
     /// <summary>
-    /// Function: PassivePointsNeedPartners
+    /// Function: PassivePointsNeedPartners<br/>
+    /// Native code at BatmanAK.exe+0x4CC8A0 in the Steam build
     /// </summary>
     public unsafe virtual bool PassivePointsNeedPartners(float DeltaTime)
     {
@@ -696,7 +708,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawns;
     /// <summary>
-    /// Function: UpdatePawns
+    /// Function: UpdatePawns<br/>
+    /// Native code at BatmanAK.exe+0x4CC760 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdatePawns(float DeltaTime)
     {
@@ -718,7 +731,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSpawnAnotherPawn;
     /// <summary>
-    /// Function: ShouldSpawnAnotherPawn
+    /// Function: ShouldSpawnAnotherPawn<br/>
+    /// Native code at BatmanAK.exe+0x476C00 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldSpawnAnotherPawn(out int bPassivePointsNeedPartners)
     {
@@ -742,7 +756,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVolume;
     /// <summary>
-    /// Function: UpdateVolume
+    /// Function: UpdateVolume<br/>
+    /// Native code at BatmanAK.exe+0x4CC620 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateVolume(float DeltaTime)
     {
@@ -778,7 +793,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateFleePressPoints;
     /// <summary>
-    /// Function: GenerateFleePressPoints
+    /// Function: GenerateFleePressPoints<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void GenerateFleePressPoints()
     {
@@ -799,7 +815,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindObjectEndPoint;
     /// <summary>
-    /// Function: FindObjectEndPoint
+    /// Function: FindObjectEndPoint<br/>
+    /// Native code at BatmanAK.exe+0x476B30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase FindObjectEndPoint(BmSDK.BmGame.RGangInteractPointBase.ObjectPickupTypes ObjectPickupType)
     {
@@ -821,7 +838,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TestSpawnPoint;
     /// <summary>
-    /// Function: TestSpawnPoint
+    /// Function: TestSpawnPoint<br/>
+    /// Native code at BatmanAK.exe+0x4CC240 in the Steam build
     /// </summary>
     public unsafe virtual bool TestSpawnPoint(BmSDK.BmGame.RGangInteractPointBase _TestSpawnPoint, out System.Numerics.Vector3 SpawnLoc, System.Numerics.Vector3 CameraLocation, System.Numerics.Vector3 CameraDirection, out int WasExpensiveTest, bool bIgnoreProximityTest, BmSDK.FName WeaponName, bool bSkipInUseCheck = default)
     {
@@ -854,7 +872,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSingleSpawnPoint;
     /// <summary>
-    /// Function: FindSingleSpawnPoint
+    /// Function: FindSingleSpawnPoint<br/>
+    /// Native code at BatmanAK.exe+0x4CC010 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindSingleSpawnPoint(out System.Numerics.Vector3 SpawnLoc, bool bPassiveOnly, BmSDK.FName WeaponName)
     {
@@ -896,7 +915,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNewPointOfInterest;
     /// <summary>
-    /// Function: FindNewPointOfInterest
+    /// Function: FindNewPointOfInterest<br/>
+    /// Native code at BatmanAK.exe+0x4CBCA0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindNewPointOfInterest(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest, bool bSkipAngleCheck, BmSDK.BmGame.RGangInteractPointBase SuggestPoint)
     {
@@ -921,7 +941,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x4CB7E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, BmSDK.Class NewWeaponClass, BmSDK.Engine.Actor SpawnActor, System.Numerics.Vector3 NewSpawnPoint, BmSDK.Rotator NewSpawnRotation = default)
     {
@@ -949,7 +970,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopWalla;
     /// <summary>
-    /// Function: StopWalla
+    /// Function: StopWalla<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void StopWalla()
     {
@@ -970,7 +992,8 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartWalla;
     /// <summary>
-    /// Function: StartWalla
+    /// Function: StartWalla<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void StartWalla()
     {

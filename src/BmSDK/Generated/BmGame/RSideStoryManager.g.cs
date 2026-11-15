@@ -1028,7 +1028,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SideStoryEnumToString;
     /// <summary>
-    /// Function: SideStoryEnumToString
+    /// Function: SideStoryEnumToString<br/>
+    /// Native code at BatmanAK.exe+0x547A20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString SideStoryEnumToString(BmSDK.BmGame.RSideStoryManager.ActiveSideStoryEnum SideStory)
     {
@@ -1050,7 +1051,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLineOfSightActor;
     /// <summary>
-    /// Function: FindLineOfSightActor
+    /// Function: FindLineOfSightActor<br/>
+    /// Native code at BatmanAK.exe+0x4983F0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindLineOfSightActor()
     {
@@ -1071,7 +1073,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSideStoryActorVisible;
     /// <summary>
-    /// Function: IsSideStoryActorVisible
+    /// Function: IsSideStoryActorVisible<br/>
+    /// Native code at BatmanAK.exe+0x51D2F0 in the Steam build
     /// </summary>
     public unsafe virtual float IsSideStoryActorVisible(int group_index, int actor_index, bool is_zoomed)
     {
@@ -1095,7 +1098,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
-    /// Function: Tick
+    /// Function: Tick<br/>
+    /// Native code at BatmanAK.exe+0x51D0F0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick(BmSDK.BmGame.RPlayerController RPC, float DeltaTime)
     {
@@ -1118,7 +1122,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnyMissionDialogueLoading;
     /// <summary>
-    /// Function: IsAnyMissionDialogueLoading
+    /// Function: IsAnyMissionDialogueLoading<br/>
+    /// Native code at BatmanAK.exe+0xB3FB60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnyMissionDialogueLoading()
     {
@@ -1139,7 +1144,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWheelDialoguePlayingOfType;
     /// <summary>
-    /// Function: IsWheelDialoguePlayingOfType
+    /// Function: IsWheelDialoguePlayingOfType<br/>
+    /// Native code at BatmanAK.exe+0x498360 in the Steam build
     /// </summary>
     public unsafe virtual int IsWheelDialoguePlayingOfType(byte Type)
     {
@@ -1161,7 +1167,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopOrCancelMissionDialogue;
     /// <summary>
-    /// Function: StopOrCancelMissionDialogue
+    /// Function: StopOrCancelMissionDialogue<br/>
+    /// Native code at BatmanAK.exe+0x51CF10 in the Steam build
     /// </summary>
     public unsafe virtual void StopOrCancelMissionDialogue(int DialogueIndex, bool bUseFade)
     {
@@ -1184,7 +1191,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAllMissionDialogue;
     /// <summary>
-    /// Function: CancelAllMissionDialogue
+    /// Function: CancelAllMissionDialogue<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void CancelAllMissionDialogue()
     {
@@ -1205,7 +1213,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayMissionWheelDialogue;
     /// <summary>
-    /// Function: PlayMissionWheelDialogue
+    /// Function: PlayMissionWheelDialogue<br/>
+    /// Native code at BatmanAK.exe+0x51CDF0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayMissionWheelDialogue(int DialogueIndex)
     {
@@ -1227,7 +1236,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMissionDialogueState_;
     /// <summary>
-    /// Function: SetMissionDialogueState_
+    /// Function: SetMissionDialogueState_<br/>
+    /// Native code at BatmanAK.exe+0x517320 in the Steam build
     /// </summary>
     public unsafe virtual void SetMissionDialogueState_(int DialogueIndex)
     {
@@ -1249,7 +1259,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOfMissionDialogue;
     /// <summary>
-    /// Function: SetOfMissionDialogue
+    /// Function: SetOfMissionDialogue<br/>
+    /// Native code at BatmanAK.exe+0x547800 in the Steam build
     /// </summary>
     public unsafe virtual void SetOfMissionDialogue(BmSDK.FStringArg PackageName, byte Type, bool bUseFadeOnOldDialogue)
     {
@@ -1274,7 +1285,8 @@ public partial class RSideStoryManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickMissionDialogue;
     /// <summary>
-    /// Function: TickMissionDialogue
+    /// Function: TickMissionDialogue<br/>
+    /// Native code at BatmanAK.exe+0x4EE410 in the Steam build
     /// </summary>
     public unsafe virtual void TickMissionDialogue(BmSDK.BmGame.RPlayerController RPC)
     {

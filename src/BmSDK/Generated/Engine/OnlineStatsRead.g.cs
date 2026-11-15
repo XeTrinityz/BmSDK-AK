@@ -75,7 +75,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRankForPlayer;
     /// <summary>
-    /// Function: GetRankForPlayer
+    /// Function: GetRankForPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB40130 in the Steam build
     /// </summary>
     public unsafe virtual int GetRankForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -97,7 +98,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPlayer;
     /// <summary>
-    /// Function: AddPlayer
+    /// Function: AddPlayer<br/>
+    /// Native code at BatmanAK.exe+0xBABBB0 in the Steam build
     /// </summary>
     public unsafe virtual void AddPlayer(BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -121,7 +123,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStatZero;
     /// <summary>
-    /// Function: IsStatZero
+    /// Function: IsStatZero<br/>
+    /// Native code at BatmanAK.exe+0xB813D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStatZero(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo)
     {
@@ -144,7 +147,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatValueForPlayerAsString;
     /// <summary>
-    /// Function: GetStatValueForPlayerAsString
+    /// Function: GetStatValueForPlayerAsString<br/>
+    /// Native code at BatmanAK.exe+0xBABA00 in the Steam build
     /// </summary>
     public unsafe virtual bool GetStatValueForPlayerAsString(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out BmSDK.FString StatValue)
     {
@@ -168,7 +172,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatStatValueForPlayer;
     /// <summary>
-    /// Function: SetFloatStatValueForPlayer
+    /// Function: SetFloatStatValueForPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB811B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetFloatStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, float StatValue)
     {
@@ -192,7 +197,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatStatValueForPlayer;
     /// <summary>
-    /// Function: GetFloatStatValueForPlayer
+    /// Function: GetFloatStatValueForPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB81020 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFloatStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out float StatValue)
     {
@@ -218,7 +224,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIntStatValueForPlayer;
     /// <summary>
-    /// Function: SetIntStatValueForPlayer
+    /// Function: SetIntStatValueForPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB80E10 in the Steam build
     /// </summary>
     public unsafe virtual bool SetIntStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, int StatValue)
     {
@@ -242,7 +249,8 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntStatValueForPlayer;
     /// <summary>
-    /// Function: GetIntStatValueForPlayer
+    /// Function: GetIntStatValueForPlayer<br/>
+    /// Native code at BatmanAK.exe+0xB80C80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIntStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out int StatValue)
     {

@@ -230,7 +230,8 @@ public partial class KActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveRBState;
     /// <summary>
-    /// Function: ResolveRBState
+    /// Function: ResolveRBState<br/>
+    /// Native code at BatmanAK.exe+0xB44DE0 in the Steam build
     /// </summary>
     public unsafe virtual void ResolveRBState()
     {

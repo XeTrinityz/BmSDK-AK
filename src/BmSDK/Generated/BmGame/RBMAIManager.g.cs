@@ -94,7 +94,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPlayerUnZoom;
     /// <summary>
-    /// Function: OnPlayerUnZoom
+    /// Function: OnPlayerUnZoom<br/>
+    /// Native code at BatmanAK.exe+0x488530 in the Steam build
     /// </summary>
     public unsafe virtual void OnPlayerUnZoom()
     {
@@ -204,7 +205,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FilterValList;
     /// <summary>
-    /// Function: FilterValList
+    /// Function: FilterValList<br/>
+    /// Native code at BatmanAK.exe+0x573EA0 in the Steam build
     /// </summary>
     public unsafe virtual void FilterValList(BmSDK.TArray<BmSDK.BmGame.RBarkPillarLookup.FFlagValAndFileName> InList, BmSDK.BmGame.RBarkValDef.FlagTypeEnum TestType, out BmSDK.TArray<BmSDK.FString> OutList)
     {
@@ -228,7 +230,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateCurrentSuffixList;
     /// <summary>
-    /// Function: GenerateCurrentSuffixList
+    /// Function: GenerateCurrentSuffixList<br/>
+    /// Native code at BatmanAK.exe+0x56BFA0 in the Steam build
     /// </summary>
     public unsafe virtual void GenerateCurrentSuffixList(out BmSDK.TArray<BmSDK.FString> SuffixList)
     {
@@ -279,7 +282,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ValidateChaptersOnBarks;
     /// <summary>
-    /// Function: ValidateChaptersOnBarks
+    /// Function: ValidateChaptersOnBarks<br/>
+    /// Native code at BatmanAK.exe+0x4FAAF0 in the Steam build
     /// </summary>
     public unsafe virtual void ValidateChaptersOnBarks(BmSDK.BmGame.RBarkSet TestSet)
     {
@@ -376,7 +380,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRebuildSpecialEdgeActorList;
     /// <summary>
-    /// Function: UpdateRebuildSpecialEdgeActorList
+    /// Function: UpdateRebuildSpecialEdgeActorList<br/>
+    /// Native code at BatmanAK.exe+0x4884F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRebuildSpecialEdgeActorList()
     {
@@ -547,7 +552,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAntiDodgeFactor;
     /// <summary>
-    /// Function: GetAntiDodgeFactor
+    /// Function: GetAntiDodgeFactor<br/>
+    /// Native code at BatmanAK.exe+0x4884A0 in the Steam build
     /// </summary>
     public unsafe virtual float GetAntiDodgeFactor()
     {
@@ -568,7 +574,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInstantHitIfNotRunningRange;
     /// <summary>
-    /// Function: GetInstantHitIfNotRunningRange
+    /// Function: GetInstantHitIfNotRunningRange<br/>
+    /// Native code at BatmanAK.exe+0x488450 in the Steam build
     /// </summary>
     public unsafe virtual float GetInstantHitIfNotRunningRange()
     {
@@ -589,7 +596,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAlwaysHitRange;
     /// <summary>
-    /// Function: GetAlwaysHitRange
+    /// Function: GetAlwaysHitRange<br/>
+    /// Native code at BatmanAK.exe+0x488400 in the Steam build
     /// </summary>
     public unsafe virtual float GetAlwaysHitRange()
     {
@@ -799,7 +807,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BroadcastBatmanSpottedToSnipers;
     /// <summary>
-    /// Function: BroadcastBatmanSpottedToSnipers
+    /// Function: BroadcastBatmanSpottedToSnipers<br/>
+    /// Native code at BatmanAK.exe+0x4FA9C0 in the Steam build
     /// </summary>
     public unsafe virtual void BroadcastBatmanSpottedToSnipers(BmSDK.Engine.Actor PlayerActor)
     {
@@ -821,7 +830,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueBroadcastBatmanSpottedToSnipers;
     /// <summary>
-    /// Function: QueueBroadcastBatmanSpottedToSnipers
+    /// Function: QueueBroadcastBatmanSpottedToSnipers<br/>
+    /// Native code at BatmanAK.exe+0x4FA890 in the Steam build
     /// </summary>
     public unsafe virtual void QueueBroadcastBatmanSpottedToSnipers(BmSDK.Engine.Actor PlayerActor)
     {
@@ -1203,7 +1213,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveController;
     /// <summary>
-    /// Function: RemoveController
+    /// Function: RemoveController<br/>
+    /// Native code at BatmanAK.exe+0x5008E0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveController(BmSDK.BmGame.RBMAIController ToRemove)
     {
@@ -1225,7 +1236,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldForceTickForController;
     /// <summary>
-    /// Function: ShouldForceTickForController
+    /// Function: ShouldForceTickForController<br/>
+    /// Native code at BatmanAK.exe+0x4FA720 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldForceTickForController(BmSDK.BmGame.RBMAIController C, int Idx = default)
     {
@@ -1280,7 +1292,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterController;
     /// <summary>
-    /// Function: RegisterController
+    /// Function: RegisterController<br/>
+    /// Native code at BatmanAK.exe+0x4FA530 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterController(BmSDK.BmGame.RBMAIController NewAIController, bool bForceTick)
     {
@@ -1346,7 +1359,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstacle;
     /// <summary>
-    /// Function: RemoveObstacle
+    /// Function: RemoveObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4FA400 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveObstacle(BmSDK.BmGame.RNavMeshObstacle_Queue Prop)
     {
@@ -1368,7 +1382,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddObstacle;
     /// <summary>
-    /// Function: AddObstacle
+    /// Function: AddObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4FA2D0 in the Steam build
     /// </summary>
     public unsafe virtual void AddObstacle(BmSDK.BmGame.RNavMeshObstacle_Queue Prop)
     {
@@ -1390,7 +1405,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBlockade;
     /// <summary>
-    /// Function: RemoveBlockade
+    /// Function: RemoveBlockade<br/>
+    /// Native code at BatmanAK.exe+0x4FA1A0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveBlockade(BmSDK.BmGame.RCheckpointBlockadeBase Prop)
     {
@@ -1412,7 +1428,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBlockade;
     /// <summary>
-    /// Function: AddBlockade
+    /// Function: AddBlockade<br/>
+    /// Native code at BatmanAK.exe+0x4FA070 in the Steam build
     /// </summary>
     public unsafe virtual void AddBlockade(BmSDK.BmGame.RCheckpointBlockadeBase Prop)
     {
@@ -1434,7 +1451,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDestructibleProp;
     /// <summary>
-    /// Function: RemoveDestructibleProp
+    /// Function: RemoveDestructibleProp<br/>
+    /// Native code at BatmanAK.exe+0x4F9F40 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDestructibleProp(BmSDK.BmGame.RDestructibleProp Prop)
     {
@@ -1456,7 +1474,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDestructibleProp;
     /// <summary>
-    /// Function: AddDestructibleProp
+    /// Function: AddDestructibleProp<br/>
+    /// Native code at BatmanAK.exe+0x4F9E10 in the Steam build
     /// </summary>
     public unsafe virtual void AddDestructibleProp(BmSDK.BmGame.RDestructibleProp Prop)
     {
@@ -1478,7 +1497,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PylonLoaded;
     /// <summary>
-    /// Function: PylonLoaded
+    /// Function: PylonLoaded<br/>
+    /// Native code at BatmanAK.exe+0xB8AAB0 in the Steam build
     /// </summary>
     public unsafe virtual void PylonLoaded(BmSDK.Engine.Pylon NewPylon)
     {
@@ -1500,7 +1520,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UmbraVisibilityCheck;
     /// <summary>
-    /// Function: UmbraVisibilityCheck
+    /// Function: UmbraVisibilityCheck<br/>
+    /// Native code at BatmanAK.exe+0x4F9BD0 in the Steam build
     /// </summary>
     public unsafe virtual bool UmbraVisibilityCheck(System.Numerics.Vector3 TestLocation, float BoundsXY, float BoundsZ)
     {
@@ -1524,7 +1545,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasActiveChasePoint;
     /// <summary>
-    /// Function: HasActiveChasePoint
+    /// Function: HasActiveChasePoint<br/>
+    /// Native code at BatmanAK.exe+0x4F9A90 in the Steam build
     /// </summary>
     public unsafe virtual bool HasActiveChasePoint(BmSDK.BmGame.RChasePoint ToTest)
     {
@@ -1546,7 +1568,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveActiveChasePoint;
     /// <summary>
-    /// Function: RemoveActiveChasePoint
+    /// Function: RemoveActiveChasePoint<br/>
+    /// Native code at BatmanAK.exe+0x4F9960 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveActiveChasePoint(BmSDK.BmGame.RChasePoint ToRemove)
     {
@@ -1568,7 +1591,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddActiveChasePoint;
     /// <summary>
-    /// Function: AddActiveChasePoint
+    /// Function: AddActiveChasePoint<br/>
+    /// Native code at BatmanAK.exe+0x4F9830 in the Steam build
     /// </summary>
     public unsafe virtual void AddActiveChasePoint(BmSDK.BmGame.RChasePoint ToAdd)
     {
@@ -1590,7 +1614,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshObstacleUnregistered;
     /// <summary>
-    /// Function: NavMeshObstacleUnregistered
+    /// Function: NavMeshObstacleUnregistered<br/>
+    /// Native code at BatmanAK.exe+0x4F9700 in the Steam build
     /// </summary>
     public unsafe virtual void NavMeshObstacleUnregistered(BmSDK.Engine.Actor A)
     {
@@ -1612,7 +1637,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshObstacleRegistered;
     /// <summary>
-    /// Function: NavMeshObstacleRegistered
+    /// Function: NavMeshObstacleRegistered<br/>
+    /// Native code at BatmanAK.exe+0x4F95D0 in the Steam build
     /// </summary>
     public unsafe virtual void NavMeshObstacleRegistered(BmSDK.Engine.Actor A)
     {
@@ -1634,7 +1660,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnPawnObject;
     /// <summary>
-    /// Function: CanSpawnPawnObject
+    /// Function: CanSpawnPawnObject<br/>
+    /// Native code at BatmanAK.exe+0x4883B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSpawnPawnObject()
     {
@@ -1655,7 +1682,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnObjectSpawned;
     /// <summary>
-    /// Function: PawnObjectSpawned
+    /// Function: PawnObjectSpawned<br/>
+    /// Native code at BatmanAK.exe+0x488370 in the Steam build
     /// </summary>
     public unsafe virtual void PawnObjectSpawned()
     {
@@ -1676,7 +1704,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUnpoolPawn;
     /// <summary>
-    /// Function: CanUnpoolPawn
+    /// Function: CanUnpoolPawn<br/>
+    /// Native code at BatmanAK.exe+0x4882C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUnpoolPawn(bool bSpawningPassenger = default)
     {
@@ -1698,7 +1727,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnPawn;
     /// <summary>
-    /// Function: CanSpawnPawn
+    /// Function: CanSpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x499400 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSpawnPawn()
     {
@@ -1719,7 +1749,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnUnpooled;
     /// <summary>
-    /// Function: PawnUnpooled
+    /// Function: PawnUnpooled<br/>
+    /// Native code at BatmanAK.exe+0x488280 in the Steam build
     /// </summary>
     public unsafe virtual void PawnUnpooled()
     {
@@ -1740,7 +1771,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnSpawned;
     /// <summary>
-    /// Function: PawnSpawned
+    /// Function: PawnSpawned<br/>
+    /// Native code at BatmanAK.exe+0x46C660 in the Steam build
     /// </summary>
     public unsafe virtual void PawnSpawned()
     {
@@ -1761,7 +1793,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStasisTeleportPawns;
     /// <summary>
-    /// Function: UpdateStasisTeleportPawns
+    /// Function: UpdateStasisTeleportPawns<br/>
+    /// Native code at BatmanAK.exe+0x4A9C30 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateStasisTeleportPawns(float DeltaTime)
     {
@@ -1783,7 +1816,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStasisDestroyPawns;
     /// <summary>
-    /// Function: UpdateStasisDestroyPawns
+    /// Function: UpdateStasisDestroyPawns<br/>
+    /// Native code at BatmanAK.exe+0x4F9490 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateStasisDestroyPawns(float DeltaTime)
     {
@@ -1805,7 +1839,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnToCameraDistances;
     /// <summary>
-    /// Function: UpdatePawnToCameraDistances
+    /// Function: UpdatePawnToCameraDistances<br/>
+    /// Native code at BatmanAK.exe+0x504130 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePawnToCameraDistances(float DeltaTime)
     {
@@ -1827,7 +1862,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePredatorGunLockers;
     /// <summary>
-    /// Function: UpdatePredatorGunLockers
+    /// Function: UpdatePredatorGunLockers<br/>
+    /// Native code at BatmanAK.exe+0x4F9360 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePredatorGunLockers(float DeltaTime)
     {
@@ -1849,7 +1885,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateNavMeshObstacleQueue;
     /// <summary>
-    /// Function: UpdateNavMeshObstacleQueue
+    /// Function: UpdateNavMeshObstacleQueue<br/>
+    /// Native code at BatmanAK.exe+0x4992F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateNavMeshObstacleQueue()
     {
@@ -1870,7 +1907,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ObstacleIsInQueue;
     /// <summary>
-    /// Function: ObstacleIsInQueue
+    /// Function: ObstacleIsInQueue<br/>
+    /// Native code at BatmanAK.exe+0x4F9280 in the Steam build
     /// </summary>
     public unsafe virtual bool ObstacleIsInQueue(BmSDK.Engine.Interface_NavMeshPathObstacle ObstacleToRemove, out int bAddObstacle)
     {
@@ -1895,7 +1933,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveNavMeshPathObstacleFromQueue;
     /// <summary>
-    /// Function: RemoveNavMeshPathObstacleFromQueue
+    /// Function: RemoveNavMeshPathObstacleFromQueue<br/>
+    /// Native code at BatmanAK.exe+0x4F91F0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveNavMeshPathObstacleFromQueue(BmSDK.Engine.Interface_NavMeshPathObstacle ObstacleToRemove)
     {
@@ -1917,7 +1956,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueNavMeshPathObstacleToRemove;
     /// <summary>
-    /// Function: QueueNavMeshPathObstacleToRemove
+    /// Function: QueueNavMeshPathObstacleToRemove<br/>
+    /// Native code at BatmanAK.exe+0x4F9160 in the Steam build
     /// </summary>
     public unsafe virtual void QueueNavMeshPathObstacleToRemove(BmSDK.Engine.Interface_NavMeshPathObstacle ObstacleToQueue)
     {
@@ -1939,7 +1979,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueNavMeshPathObstacleToAdd;
     /// <summary>
-    /// Function: QueueNavMeshPathObstacleToAdd
+    /// Function: QueueNavMeshPathObstacleToAdd<br/>
+    /// Native code at BatmanAK.exe+0x4F90D0 in the Steam build
     /// </summary>
     public unsafe virtual void QueueNavMeshPathObstacleToAdd(BmSDK.Engine.Interface_NavMeshPathObstacle ObstacleToQueue)
     {
@@ -1961,7 +2002,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnVolume;
     /// <summary>
-    /// Function: GetClosestPointOnVolume
+    /// Function: GetClosestPointOnVolume<br/>
+    /// Native code at BatmanAK.exe+0x4F8F20 in the Steam build
     /// </summary>
     public unsafe virtual bool GetClosestPointOnVolume(BmSDK.Engine.Volume TestVolume, System.Numerics.Vector3 TestPoint, out System.Numerics.Vector3 out_ClosestPoint)
     {
@@ -1987,7 +2029,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterBatmanCloseCheckBehaviour;
     /// <summary>
-    /// Function: UnRegisterBatmanCloseCheckBehaviour
+    /// Function: UnRegisterBatmanCloseCheckBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x4F8DF0 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterBatmanCloseCheckBehaviour(BmSDK.BmGame.RBM2Behaviour_IdleConfig BehaviourToRemove)
     {
@@ -2009,7 +2052,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterBatmanCloseCheckBehaviour;
     /// <summary>
-    /// Function: RegisterBatmanCloseCheckBehaviour
+    /// Function: RegisterBatmanCloseCheckBehaviour<br/>
+    /// Native code at BatmanAK.exe+0x4BA600 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterBatmanCloseCheckBehaviour(BmSDK.BmGame.RBM2Behaviour_IdleConfig BehaviourToAdd)
     {
@@ -2031,7 +2075,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBatmanCloseCheckBehaviours;
     /// <summary>
-    /// Function: UpdateBatmanCloseCheckBehaviours
+    /// Function: UpdateBatmanCloseCheckBehaviours<br/>
+    /// Native code at BatmanAK.exe+0x4F8CC0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBatmanCloseCheckBehaviours(float DeltaTime)
     {
@@ -2053,7 +2098,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoIdleConfigLOSCheck;
     /// <summary>
-    /// Function: CanDoIdleConfigLOSCheck
+    /// Function: CanDoIdleConfigLOSCheck<br/>
+    /// Native code at BatmanAK.exe+0x5122C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanDoIdleConfigLOSCheck(BmSDK.BmGame.RBMAIController TestController)
     {
@@ -2075,7 +2121,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFiringCount;
     /// <summary>
-    /// Function: GetFiringCount
+    /// Function: GetFiringCount<br/>
+    /// Native code at BatmanAK.exe+0x46EE50 in the Steam build
     /// </summary>
     public unsafe virtual int GetFiringCount()
     {
@@ -2096,7 +2143,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldLockDoors;
     /// <summary>
-    /// Function: ShouldLockDoors
+    /// Function: ShouldLockDoors<br/>
+    /// Native code at BatmanAK.exe+0x488230 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ECombatLockType ShouldLockDoors()
     {
@@ -2117,7 +2165,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimeSlicers;
     /// <summary>
-    /// Function: UpdateTimeSlicers
+    /// Function: UpdateTimeSlicers<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTimeSlicers()
     {
@@ -2138,7 +2187,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAIState;
     /// <summary>
-    /// Function: UpdateAIState
+    /// Function: UpdateAIState<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAIState()
     {
@@ -2159,7 +2209,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBehaviours;
     /// <summary>
-    /// Function: UpdateBehaviours
+    /// Function: UpdateBehaviours<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBehaviours()
     {
@@ -2180,7 +2231,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBehaviourDeltas;
     /// <summary>
-    /// Function: UpdateBehaviourDeltas
+    /// Function: UpdateBehaviourDeltas<br/>
+    /// Native code at BatmanAK.exe+0x4E9050 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBehaviourDeltas(float DeltaTime)
     {
@@ -2202,7 +2254,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNoneControllers;
     /// <summary>
-    /// Function: ClearNoneControllers
+    /// Function: ClearNoneControllers<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearNoneControllers()
     {
@@ -2223,7 +2276,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoNavMeshCollisionFloorCheck;
     /// <summary>
-    /// Function: CanDoNavMeshCollisionFloorCheck
+    /// Function: CanDoNavMeshCollisionFloorCheck<br/>
+    /// Native code at BatmanAK.exe+0x4A5E30 in the Steam build
     /// </summary>
     public unsafe virtual bool CanDoNavMeshCollisionFloorCheck(BmSDK.BmGame.RPawn TestPawn)
     {
@@ -2245,7 +2299,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUpdateCombatCollision;
     /// <summary>
-    /// Function: CanUpdateCombatCollision
+    /// Function: CanUpdateCombatCollision<br/>
+    /// Native code at BatmanAK.exe+0x4F8B80 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUpdateCombatCollision(BmSDK.BmGame.RPawn TestPawn)
     {
@@ -2267,7 +2322,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnSpawnerActivated;
     /// <summary>
-    /// Function: PawnSpawnerActivated
+    /// Function: PawnSpawnerActivated<br/>
+    /// Native code at BatmanAK.exe+0x4F8980 in the Steam build
     /// </summary>
     public unsafe virtual void PawnSpawnerActivated(BmSDK.GameObject Spawner, float SpawnDelay)
     {
@@ -2290,7 +2346,8 @@ public partial class RBMAIManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPawnSpawnerActivate;
     /// <summary>
-    /// Function: CanPawnSpawnerActivate
+    /// Function: CanPawnSpawnerActivate<br/>
+    /// Native code at BatmanAK.exe+0x4A94D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanPawnSpawnerActivate(BmSDK.GameObject Spawner)
     {

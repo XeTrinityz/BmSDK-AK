@@ -75,7 +75,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowForSpawning;
     /// <summary>
-    /// Function: AllowForSpawning
+    /// Function: AllowForSpawning<br/>
+    /// Native code at BatmanAK.exe+0x48E900 in the Steam build
     /// </summary>
     public unsafe override bool AllowForSpawning()
     {
@@ -181,7 +182,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RebuildTranstionInPoints;
     /// <summary>
-    /// Function: RebuildTranstionInPoints
+    /// Function: RebuildTranstionInPoints<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void RebuildTranstionInPoints()
     {
@@ -202,7 +204,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEntryPointAndRotation;
     /// <summary>
-    /// Function: GetEntryPointAndRotation
+    /// Function: GetEntryPointAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x4E7AD0 in the Steam build
     /// </summary>
     public unsafe override void GetEntryPointAndRotation(BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, int Index, bool bSecondTry = default)
     {
@@ -232,7 +235,8 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawn;
     /// <summary>
-    /// Function: IsValidForPawn
+    /// Function: IsValidForPawn<br/>
+    /// Native code at BatmanAK.exe+0x4E78C0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.BmGame.RGangInteractPointBase IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default, bool bSkipVolCheck = default)
     {

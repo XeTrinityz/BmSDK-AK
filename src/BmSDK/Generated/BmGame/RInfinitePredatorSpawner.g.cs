@@ -150,7 +150,8 @@ public partial class RInfinitePredatorSpawner : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x501190 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine NewCharacterDefine, BmSDK.Class NewCharacterClass, BmSDK.Class NewWeaponClass, BmSDK.Engine.Actor NewSpawnPoint)
     {

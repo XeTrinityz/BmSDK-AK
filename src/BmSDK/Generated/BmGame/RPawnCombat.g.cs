@@ -139,7 +139,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateBattleModeViewMesh;
     /// <summary>
-    /// Function: CreateBattleModeViewMesh
+    /// Function: CreateBattleModeViewMesh<br/>
+    /// Native code at BatmanAK.exe+0x4752C0 in the Steam build
     /// </summary>
     public unsafe virtual void CreateBattleModeViewMesh()
     {
@@ -175,7 +176,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentSpecialMove;
     /// <summary>
-    /// Function: SetCurrentSpecialMove
+    /// Function: SetCurrentSpecialMove<br/>
+    /// Native code at BatmanAK.exe+0x4C5020 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentSpecialMove(BmSDK.BmGame.RSpecialMoveInstance NewMove)
     {
@@ -246,7 +248,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WillFlightPathHit;
     /// <summary>
-    /// Function: WillFlightPathHit
+    /// Function: WillFlightPathHit<br/>
+    /// Native code at BatmanAK.exe+0x4C4DB0 in the Steam build
     /// </summary>
     public unsafe virtual bool WillFlightPathHit(float FlightTime, out System.Numerics.Vector3 OverrideStartPos, float GlideTime, bool bDrawDebug)
     {
@@ -273,7 +276,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearOverridableTransition;
     /// <summary>
-    /// Function: ClearOverridableTransition
+    /// Function: ClearOverridableTransition<br/>
+    /// Native code at BatmanAK.exe+0x475280 in the Steam build
     /// </summary>
     public unsafe virtual void ClearOverridableTransition()
     {
@@ -294,7 +298,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTransitionFootStepPhaseAndTime;
     /// <summary>
-    /// Function: GetTransitionFootStepPhaseAndTime
+    /// Function: GetTransitionFootStepPhaseAndTime<br/>
+    /// Native code at BatmanAK.exe+0x475190 in the Steam build
     /// </summary>
     public unsafe virtual bool GetTransitionFootStepPhaseAndTime(out BmSDK.Engine.RAutomaticTransitions.EFootSyncPoint CurrentFootStage, out float FootStageTime)
     {
@@ -321,7 +326,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CorrectFallingVelocity;
     /// <summary>
-    /// Function: CorrectFallingVelocity
+    /// Function: CorrectFallingVelocity<br/>
+    /// Native code at BatmanAK.exe+0x4C4B70 in the Steam build
     /// </summary>
     public unsafe virtual void CorrectFallingVelocity(out System.Numerics.Vector3 DesiredPosition, float Max2DAccel, float DeltaTime)
     {
@@ -1136,7 +1142,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTargetted;
     /// <summary>
-    /// Function: IsTargetted
+    /// Function: IsTargetted<br/>
+    /// Native code at BatmanAK.exe+0x475140 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTargetted()
     {
@@ -1157,7 +1164,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTargettedBySomeoneOtherThan;
     /// <summary>
-    /// Function: IsTargettedBySomeoneOtherThan
+    /// Function: IsTargettedBySomeoneOtherThan<br/>
+    /// Native code at BatmanAK.exe+0x4C4A30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTargettedBySomeoneOtherThan(BmSDK.BmGame.RPawnCombat TestPawn)
     {
@@ -1179,7 +1187,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTargettedBy;
     /// <summary>
-    /// Function: IsTargettedBy
+    /// Function: IsTargettedBy<br/>
+    /// Native code at BatmanAK.exe+0x4C48F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTargettedBy(BmSDK.BmGame.RPawnCombat TestPawn)
     {
@@ -1355,7 +1364,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStunned;
     /// <summary>
-    /// Function: IsStunned
+    /// Function: IsStunned<br/>
+    /// Native code at BatmanAK.exe+0x47DE10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStunned()
     {
@@ -1434,7 +1444,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeading;
     /// <summary>
-    /// Function: GetHeading
+    /// Function: GetHeading<br/>
+    /// Native code at BatmanAK.exe+0x4750E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHeading()
     {
@@ -2173,7 +2184,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FarMoveMe;
     /// <summary>
-    /// Function: FarMoveMe
+    /// Function: FarMoveMe<br/>
+    /// Native code at BatmanAK.exe+0x474F60 in the Steam build
     /// </summary>
     public unsafe virtual bool FarMoveMe(System.Numerics.Vector3 NewLocation, bool bTest = default, bool bNoCheck = default, bool bAttachedMove = default)
     {
@@ -2198,7 +2210,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartDeathAudio;
     /// <summary>
-    /// Function: StartDeathAudio
+    /// Function: StartDeathAudio<br/>
+    /// Native code at BatmanAK.exe+0x474F20 in the Steam build
     /// </summary>
     public unsafe virtual void StartDeathAudio()
     {
@@ -2219,7 +2232,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageTouchedDestructibles;
     /// <summary>
-    /// Function: DamageTouchedDestructibles
+    /// Function: DamageTouchedDestructibles<br/>
+    /// Native code at BatmanAK.exe+0x4C4410 in the Steam build
     /// </summary>
     public unsafe virtual void DamageTouchedDestructibles(float TimeStep, float DamageRadius, float DamageMomentum, float DamagePositionOffset, System.Numerics.Vector3 DamageExtents = default, System.Numerics.Vector3 StartLocation = default, bool bRequestIsFromFearTakedown = default)
     {
@@ -2247,7 +2261,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NudgeTouchedRigidBodies;
     /// <summary>
-    /// Function: NudgeTouchedRigidBodies
+    /// Function: NudgeTouchedRigidBodies<br/>
+    /// Native code at BatmanAK.exe+0x4C3F00 in the Steam build
     /// </summary>
     public unsafe virtual void NudgeTouchedRigidBodies(System.Numerics.Vector3 CapsuleBasePosition, float CapsuleHeight, float CapsuleRadius, System.Numerics.Vector3 characterVelocity, float forceScale, float characterVelocityLimit, bool applyAsImpulse, bool bAffectAllProps = default)
     {
@@ -2276,7 +2291,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBulletproof;
     /// <summary>
-    /// Function: IsBulletproof
+    /// Function: IsBulletproof<br/>
+    /// Native code at BatmanAK.exe+0x474ED0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBulletproof()
     {
@@ -2297,7 +2313,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlackMaskBoss;
     /// <summary>
-    /// Function: IsBlackMaskBoss
+    /// Function: IsBlackMaskBoss<br/>
+    /// Native code at BatmanAK.exe+0x474E80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlackMaskBoss()
     {
@@ -2318,7 +2335,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNightwingBoss;
     /// <summary>
-    /// Function: IsNightwingBoss
+    /// Function: IsNightwingBoss<br/>
+    /// Native code at BatmanAK.exe+0x474E30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNightwingBoss()
     {
@@ -2339,7 +2357,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRobot;
     /// <summary>
-    /// Function: IsRobot
+    /// Function: IsRobot<br/>
+    /// Native code at BatmanAK.exe+0x474DE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRobot()
     {
@@ -2360,7 +2379,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowedToFireAtWithBatmobile;
     /// <summary>
-    /// Function: AllowedToFireAtWithBatmobile
+    /// Function: AllowedToFireAtWithBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x474D90 in the Steam build
     /// </summary>
     public unsafe virtual bool AllowedToFireAtWithBatmobile()
     {
@@ -2381,7 +2401,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFriendly;
     /// <summary>
-    /// Function: IsFriendly
+    /// Function: IsFriendly<br/>
+    /// Native code at BatmanAK.exe+0x474D40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFriendly()
     {
@@ -2402,7 +2423,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsToughThug;
     /// <summary>
-    /// Function: IsToughThug
+    /// Function: IsToughThug<br/>
+    /// Native code at BatmanAK.exe+0x49A160 in the Steam build
     /// </summary>
     public unsafe virtual bool IsToughThug()
     {
@@ -2423,7 +2445,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOutcast;
     /// <summary>
-    /// Function: IsOutcast
+    /// Function: IsOutcast<br/>
+    /// Native code at BatmanAK.exe+0x474CF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOutcast()
     {
@@ -2444,7 +2467,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNinja;
     /// <summary>
-    /// Function: IsNinja
+    /// Function: IsNinja<br/>
+    /// Native code at BatmanAK.exe+0x474CA0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNinja()
     {
@@ -2465,7 +2489,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLieutenant;
     /// <summary>
-    /// Function: IsLieutenant
+    /// Function: IsLieutenant<br/>
+    /// Native code at BatmanAK.exe+0x474C50 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLieutenant()
     {
@@ -2486,7 +2511,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThug;
     /// <summary>
-    /// Function: IsThug
+    /// Function: IsThug<br/>
+    /// Native code at BatmanAK.exe+0x474C00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsThug()
     {
@@ -2507,7 +2533,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayer;
     /// <summary>
-    /// Function: IsPlayer
+    /// Function: IsPlayer<br/>
+    /// Native code at BatmanAK.exe+0x474BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayer()
     {
@@ -2528,7 +2555,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AngleDiff;
     /// <summary>
-    /// Function: AngleDiff
+    /// Function: AngleDiff<br/>
+    /// Native code at BatmanAK.exe+0x4C3CF0 in the Steam build
     /// </summary>
     public unsafe virtual float AngleDiff(float Angle1, float Angle2)
     {
@@ -2551,7 +2579,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUsingCombatPoint;
     /// <summary>
-    /// Function: IsUsingCombatPoint
+    /// Function: IsUsingCombatPoint<br/>
+    /// Native code at BatmanAK.exe+0x474B60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsUsingCombatPoint()
     {
@@ -2572,7 +2601,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRadialForce;
     /// <summary>
-    /// Function: GetRadialForce
+    /// Function: GetRadialForce<br/>
+    /// Native code at BatmanAK.exe+0x4C3A40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRadialForce(BmSDK.BmGame.RPawnCombat Receiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
@@ -2597,7 +2627,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceToGiveToPawn;
     /// <summary>
-    /// Function: GetForceToGiveToPawn
+    /// Function: GetForceToGiveToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4C3790 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat Receiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
@@ -2622,7 +2653,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalisedTimeThroughCurrentTransition;
     /// <summary>
-    /// Function: GetNormalisedTimeThroughCurrentTransition
+    /// Function: GetNormalisedTimeThroughCurrentTransition<br/>
+    /// Native code at BatmanAK.exe+0x474B10 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalisedTimeThroughCurrentTransition()
     {
@@ -2643,7 +2675,8 @@ public partial class RPawnCombat : BmSDK.BmGame.RPawnCharacter, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedsPawnObjectSpawn;
     /// <summary>
-    /// Function: NeedsPawnObjectSpawn
+    /// Function: NeedsPawnObjectSpawn<br/>
+    /// Native code at BatmanAK.exe+0x47DAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool NeedsPawnObjectSpawn()
     {

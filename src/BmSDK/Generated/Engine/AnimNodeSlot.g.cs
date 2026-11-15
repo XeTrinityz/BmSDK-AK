@@ -80,7 +80,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickChildWeights;
     /// <summary>
-    /// Function: TickChildWeights
+    /// Function: TickChildWeights<br/>
+    /// Native code at BatmanAK.exe+0xB55350 in the Steam build
     /// </summary>
     public unsafe virtual void TickChildWeights(float DeltaSeconds)
     {
@@ -102,7 +103,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneRotationOption;
     /// <summary>
-    /// Function: SetRootBoneRotationOption
+    /// Function: SetRootBoneRotationOption<br/>
+    /// Native code at BatmanAK.exe+0xB2BF60 in the Steam build
     /// </summary>
     public unsafe virtual void SetRootBoneRotationOption(BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisZ = default)
     {
@@ -126,7 +128,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneAxisOption;
     /// <summary>
-    /// Function: SetRootBoneAxisOption
+    /// Function: SetRootBoneAxisOption<br/>
+    /// Native code at BatmanAK.exe+0xB2BE70 in the Steam build
     /// </summary>
     public unsafe virtual void SetRootBoneAxisOption(BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisZ = default)
     {
@@ -150,7 +153,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomAnimNodeSeq;
     /// <summary>
-    /// Function: GetCustomAnimNodeSeq
+    /// Function: GetCustomAnimNodeSeq<br/>
+    /// Native code at BatmanAK.exe+0xB2BE20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetCustomAnimNodeSeq()
     {
@@ -171,7 +175,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorAnimEndNotification;
     /// <summary>
-    /// Function: SetActorAnimEndNotification
+    /// Function: SetActorAnimEndNotification<br/>
+    /// Native code at BatmanAK.exe+0xB55230 in the Steam build
     /// </summary>
     public unsafe virtual void SetActorAnimEndNotification(bool bNewStatus)
     {
@@ -193,7 +198,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCustomAnim;
     /// <summary>
-    /// Function: SetCustomAnim
+    /// Function: SetCustomAnim<br/>
+    /// Native code at BatmanAK.exe+0xB55110 in the Steam build
     /// </summary>
     public unsafe virtual void SetCustomAnim(BmSDK.FName AnimName)
     {
@@ -215,7 +221,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowPauseAnims;
     /// <summary>
-    /// Function: SetAllowPauseAnims
+    /// Function: SetAllowPauseAnims<br/>
+    /// Native code at BatmanAK.exe+0xB54FF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllowPauseAnims(bool bSet)
     {
@@ -237,7 +244,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCustomAnim;
     /// <summary>
-    /// Function: StopCustomAnim
+    /// Function: StopCustomAnim<br/>
+    /// Native code at BatmanAK.exe+0xB54EC0 in the Steam build
     /// </summary>
     public unsafe virtual void StopCustomAnim(float BlendOutTime)
     {
@@ -259,7 +267,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayedAnimation;
     /// <summary>
-    /// Function: GetPlayedAnimation
+    /// Function: GetPlayedAnimation<br/>
+    /// Native code at BatmanAK.exe+0xB2BDC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetPlayedAnimation()
     {
@@ -280,7 +289,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnimByDuration;
     /// <summary>
-    /// Function: PlayCustomAnimByDuration
+    /// Function: PlayCustomAnimByDuration<br/>
+    /// Native code at BatmanAK.exe+0xB54B90 in the Steam build
     /// </summary>
     public unsafe virtual bool PlayCustomAnimByDuration(BmSDK.FName AnimName, float Duration, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default)
     {
@@ -307,7 +317,8 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnim;
     /// <summary>
-    /// Function: PlayCustomAnim
+    /// Function: PlayCustomAnim<br/>
+    /// Native code at BatmanAK.exe+0xB54840 in the Steam build
     /// </summary>
     public unsafe virtual float PlayCustomAnim(BmSDK.FName AnimName, float Rate, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default, float StartTime = default, float EndTime = default)
     {

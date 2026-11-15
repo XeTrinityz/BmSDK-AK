@@ -80,7 +80,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneRotationOption;
     /// <summary>
-    /// Function: SetRootBoneRotationOption
+    /// Function: SetRootBoneRotationOption<br/>
+    /// Native code at BatmanAK.exe+0xB2BA10 in the Steam build
     /// </summary>
     public unsafe virtual void SetRootBoneRotationOption(BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisZ = default)
     {
@@ -104,7 +105,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneAxisOption;
     /// <summary>
-    /// Function: SetRootBoneAxisOption
+    /// Function: SetRootBoneAxisOption<br/>
+    /// Native code at BatmanAK.exe+0xB2B920 in the Steam build
     /// </summary>
     public unsafe virtual void SetRootBoneAxisOption(BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisZ = default)
     {
@@ -128,7 +130,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeLeft;
     /// <summary>
-    /// Function: GetTimeLeft
+    /// Function: GetTimeLeft<br/>
+    /// Native code at BatmanAK.exe+0xB2B8D0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeLeft()
     {
@@ -149,7 +152,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimPlaybackLength;
     /// <summary>
-    /// Function: GetAnimPlaybackLength
+    /// Function: GetAnimPlaybackLength<br/>
+    /// Native code at BatmanAK.exe+0xB2B880 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimPlaybackLength()
     {
@@ -170,7 +174,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalPlayRate;
     /// <summary>
-    /// Function: GetGlobalPlayRate
+    /// Function: GetGlobalPlayRate<br/>
+    /// Native code at BatmanAK.exe+0xB2B830 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlobalPlayRate()
     {
@@ -191,7 +196,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupRelativePosition;
     /// <summary>
-    /// Function: GetGroupRelativePosition
+    /// Function: GetGroupRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB2B7E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetGroupRelativePosition()
     {
@@ -212,7 +218,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindGroupPosition;
     /// <summary>
-    /// Function: FindGroupPosition
+    /// Function: FindGroupPosition<br/>
+    /// Native code at BatmanAK.exe+0xB53DA0 in the Steam build
     /// </summary>
     public unsafe virtual float FindGroupPosition(float GroupRelativePosition)
     {
@@ -234,7 +241,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindGroupRelativePosition;
     /// <summary>
-    /// Function: FindGroupRelativePosition
+    /// Function: FindGroupRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB53C60 in the Steam build
     /// </summary>
     public unsafe virtual float FindGroupRelativePosition(float GroupRelativePosition)
     {
@@ -256,7 +264,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNormalizedPosition;
     /// <summary>
-    /// Function: GetNormalizedPosition
+    /// Function: GetNormalizedPosition<br/>
+    /// Native code at BatmanAK.exe+0xB2B790 in the Steam build
     /// </summary>
     public unsafe virtual float GetNormalizedPosition()
     {
@@ -277,7 +286,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPosition;
     /// <summary>
-    /// Function: SetPosition
+    /// Function: SetPosition<br/>
+    /// Native code at BatmanAK.exe+0xB53A60 in the Steam build
     /// </summary>
     public unsafe virtual void SetPosition(float NewTime, bool bFireNotifies)
     {
@@ -300,7 +310,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplayAnim;
     /// <summary>
-    /// Function: ReplayAnim
+    /// Function: ReplayAnim<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe override void ReplayAnim()
     {
@@ -321,7 +332,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
-    /// Function: StopAnim
+    /// Function: StopAnim<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe override void StopAnim()
     {
@@ -342,7 +354,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
-    /// Function: PlayAnim
+    /// Function: PlayAnim<br/>
+    /// Native code at BatmanAK.exe+0x46AA30 in the Steam build
     /// </summary>
     public unsafe override void PlayAnim(bool bLoop = default, float InRate = default, float StartTime = default)
     {
@@ -366,7 +379,8 @@ public partial class AnimNodeSequence : BmSDK.Engine.AnimNode, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnim;
     /// <summary>
-    /// Function: SetAnim
+    /// Function: SetAnim<br/>
+    /// Native code at BatmanAK.exe+0xB53930 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnim(BmSDK.FName Sequence)
     {

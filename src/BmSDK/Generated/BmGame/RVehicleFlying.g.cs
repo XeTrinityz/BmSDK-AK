@@ -386,7 +386,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
-    /// Function: UpdateLights
+    /// Function: UpdateLights<br/>
+    /// Native code at BatmanAK.exe+0x4F3D60 in the Steam build
     /// </summary>
     public unsafe override void UpdateLights(float DeltaTime)
     {
@@ -408,7 +409,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadNetwork;
     /// <summary>
-    /// Function: GetRoadNetwork
+    /// Function: GetRoadNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4869A0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.BmGame.RRoadNetwork GetRoadNetwork()
     {
@@ -429,7 +431,8 @@ public partial class RVehicleFlying : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {

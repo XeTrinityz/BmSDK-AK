@@ -502,7 +502,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGameLoading;
     /// <summary>
-    /// Function: IsGameLoading
+    /// Function: IsGameLoading<br/>
+    /// Native code at BatmanAK.exe+0x48B3D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGameLoading()
     {
@@ -523,7 +524,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockedByCineMode;
     /// <summary>
-    /// Function: BlockedByCineMode
+    /// Function: BlockedByCineMode<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe virtual bool BlockedByCineMode()
     {
@@ -544,7 +546,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeWaitForNotifies;
     /// <summary>
-    /// Function: ChangeWaitForNotifies
+    /// Function: ChangeWaitForNotifies<br/>
+    /// Native code at BatmanAK.exe+0x4E43B0 in the Steam build
     /// </summary>
     public unsafe virtual void ChangeWaitForNotifies(bool bWait)
     {
@@ -566,7 +569,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWaitingForNotifies;
     /// <summary>
-    /// Function: IsWaitingForNotifies
+    /// Function: IsWaitingForNotifies<br/>
+    /// Native code at BatmanAK.exe+0x4E4270 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWaitingForNotifies(bool waitingNow)
     {
@@ -588,7 +592,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMovieTypeConvo;
     /// <summary>
-    /// Function: IsMovieTypeConvo
+    /// Function: IsMovieTypeConvo<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMovieTypeConvo()
     {
@@ -609,7 +614,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySpeechDesignerInfoNative;
     /// <summary>
-    /// Function: PlaySpeechDesignerInfoNative
+    /// Function: PlaySpeechDesignerInfoNative<br/>
+    /// Native code at BatmanAK.exe+0x53EC70 in the Steam build
     /// </summary>
     public unsafe virtual void PlaySpeechDesignerInfoNative(BmSDK.FStringArg Text)
     {
@@ -632,7 +638,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMoviePlaying;
     /// <summary>
-    /// Function: IsMoviePlaying
+    /// Function: IsMoviePlaying<br/>
+    /// Native code at BatmanAK.exe+0x47F950 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMoviePlaying()
     {
@@ -653,7 +660,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeechMissing;
     /// <summary>
-    /// Function: IsSpeechMissing
+    /// Function: IsSpeechMissing<br/>
+    /// Native code at BatmanAK.exe+0x47F900 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpeechMissing()
     {
@@ -674,7 +682,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForMovie;
     /// <summary>
-    /// Function: SearchForMovie
+    /// Function: SearchForMovie<br/>
+    /// Native code at BatmanAK.exe+0x53EB20 in the Steam build
     /// </summary>
     public unsafe virtual bool SearchForMovie(BmSDK.FStringArg MovieName)
     {
@@ -697,7 +706,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentDialogueTime;
     /// <summary>
-    /// Function: GetCurrentDialogueTime
+    /// Function: GetCurrentDialogueTime<br/>
+    /// Native code at BatmanAK.exe+0x4E4130 in the Steam build
     /// </summary>
     public unsafe virtual float GetCurrentDialogueTime(BmSDK.Engine.Actor SearchActor)
     {
@@ -719,7 +729,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipLineNative;
     /// <summary>
-    /// Function: SkipLineNative
+    /// Function: SkipLineNative<br/>
+    /// Native code at BatmanAK.exe+0x478EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SkipLineNative()
     {
@@ -740,7 +751,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechNative;
     /// <summary>
-    /// Function: StopSpeechNative
+    /// Function: StopSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0x48D6F0 in the Steam build
     /// </summary>
     public unsafe virtual void StopSpeechNative()
     {
@@ -761,7 +773,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
-    /// Function: StartSpeechNative
+    /// Function: StartSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool StartSpeechNative()
     {
@@ -782,7 +795,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartSpeech;
     /// <summary>
-    /// Function: TryStartSpeech
+    /// Function: TryStartSpeech<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool TryStartSpeech()
     {
@@ -803,7 +817,8 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
-    /// Function: HandleInputLinks
+    /// Function: HandleInputLinks<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {

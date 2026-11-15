@@ -80,7 +80,8 @@ public partial class RPickup_InsectCrateBase : BmSDK.BmGame.RHarpoonTriggerBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {

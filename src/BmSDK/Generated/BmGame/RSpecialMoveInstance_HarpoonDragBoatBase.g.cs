@@ -75,7 +75,8 @@ public partial class RSpecialMoveInstance_HarpoonDragBoatBase : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateConstraint;
     /// <summary>
-    /// Function: UpdateConstraint
+    /// Function: UpdateConstraint<br/>
+    /// Native code at BatmanAK.exe+0x4DF430 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateConstraint(System.Numerics.Vector3 WorldPositionConstraint, System.Numerics.Vector3 LocalPositionConstraint, BmSDK.Engine.Actor FloatingBoat)
     {
@@ -99,7 +100,8 @@ public partial class RSpecialMoveInstance_HarpoonDragBoatBase : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupConstraint;
     /// <summary>
-    /// Function: SetupConstraint
+    /// Function: SetupConstraint<br/>
+    /// Native code at BatmanAK.exe+0x4DF2A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupConstraint(System.Numerics.Vector3 WorldPositionConstraint, System.Numerics.Vector3 LocalPositionConstraint, BmSDK.Engine.Actor FloatingBoat)
     {

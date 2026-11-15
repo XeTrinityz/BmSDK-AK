@@ -108,7 +108,8 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTranslation;
     /// <summary>
-    /// Function: SetTranslation
+    /// Function: SetTranslation<br/>
+    /// Native code at BatmanAK.exe+0xB43050 in the Steam build
     /// </summary>
     public unsafe virtual void SetTranslation(System.Numerics.Vector3 NewTranslation)
     {

@@ -80,7 +80,8 @@ public partial class ApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyIsAwake;
     /// <summary>
-    /// Function: RigidBodyIsAwake
+    /// Function: RigidBodyIsAwake<br/>
+    /// Native code at BatmanAK.exe+0x89DC90 in the Steam build
     /// </summary>
     public unsafe override bool RigidBodyIsAwake(BmSDK.FName BoneName = default)
     {
@@ -102,7 +103,8 @@ public partial class ApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
-    /// Function: TakeRadiusDamage
+    /// Function: TakeRadiusDamage<br/>
+    /// Native code at BatmanAK.exe+0xB4DD50 in the Steam build
     /// </summary>
     public unsafe virtual void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default, bool bDamageEventCanBeDeferred = default, int OnlyDamageIslandOfThisChunk = default)
     {
@@ -134,7 +136,8 @@ public partial class ApexStaticDestructibleComponent : BmSDK.Engine.ApexStaticCo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
-    /// Function: TakeDamage
+    /// Function: TakeDamage<br/>
+    /// Native code at BatmanAK.exe+0xB4D960 in the Steam build
     /// </summary>
     public unsafe virtual void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {

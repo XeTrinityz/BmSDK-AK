@@ -560,7 +560,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Release;
     /// <summary>
-    /// Function: Release
+    /// Function: Release<br/>
+    /// Native code at BatmanAK.exe+0x48B9A0 in the Steam build
     /// </summary>
     public unsafe virtual void Release()
     {
@@ -581,7 +582,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Claim;
     /// <summary>
-    /// Function: Claim
+    /// Function: Claim<br/>
+    /// Native code at BatmanAK.exe+0x502D40 in the Steam build
     /// </summary>
     public unsafe virtual void Claim(BmSDK.FName NewClaimName)
     {
@@ -646,7 +648,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OutputStartState;
     /// <summary>
-    /// Function: OutputStartState
+    /// Function: OutputStartState<br/>
+    /// Native code at BatmanAK.exe+0x48B960 in the Steam build
     /// </summary>
     public unsafe virtual void OutputStartState()
     {
@@ -667,7 +670,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToNavHandleHistory;
     /// <summary>
-    /// Function: AddToNavHandleHistory
+    /// Function: AddToNavHandleHistory<br/>
+    /// Native code at BatmanAK.exe+0x53F790 in the Steam build
     /// </summary>
     public unsafe virtual void AddToNavHandleHistory(BmSDK.FStringArg Text)
     {
@@ -690,7 +694,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstaclesOnPath;
     /// <summary>
-    /// Function: GetObstaclesOnPath
+    /// Function: GetObstaclesOnPath<br/>
+    /// Native code at BatmanAK.exe+0x556400 in the Steam build
     /// </summary>
     public unsafe virtual void GetObstaclesOnPath(out BmSDK.TArray<BmSDK.Engine.Actor> Obstacles)
     {
@@ -712,7 +717,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildChasePointPath;
     /// <summary>
-    /// Function: BuildChasePointPath
+    /// Function: BuildChasePointPath<br/>
+    /// Native code at BatmanAK.exe+0x556330 in the Steam build
     /// </summary>
     public unsafe virtual void BuildChasePointPath(out BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath)
     {
@@ -734,7 +740,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Function __fn_GetReachableLocation;
     /// <summary>
-    /// Function: GetReachableLocation
+    /// Function: GetReachableLocation<br/>
+    /// Native code at BatmanAK.exe+0x48B880 in the Steam build
     /// </summary>
     public unsafe static bool GetReachableLocation(System.Numerics.Vector3 NearLocation, out System.Numerics.Vector3 ReachableLocation)
     {
@@ -758,7 +765,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlockedPolyList;
     /// <summary>
-    /// Function: SetBlockedPolyList
+    /// Function: SetBlockedPolyList<br/>
+    /// Native code at BatmanAK.exe+0x556280 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlockedPolyList(BmSDK.TArray<System.IntPtr> NewBlockedPolyList)
     {
@@ -780,7 +788,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Function __fn_GetPylonAndVisibleVertsFromPos;
     /// <summary>
-    /// Function: GetPylonAndVisibleVertsFromPos
+    /// Function: GetPylonAndVisibleVertsFromPos<br/>
+    /// Native code at BatmanAK.exe+0x5560E0 in the Steam build
     /// </summary>
     public unsafe static void GetPylonAndVisibleVertsFromPos(System.Numerics.Vector3 TestPos, out BmSDK.Engine.Pylon BasePylon, out int SourceVert, out BmSDK.TArray<int> VertIDList)
     {
@@ -808,7 +817,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathForNextXDist;
     /// <summary>
-    /// Function: GetPathForNextXDist
+    /// Function: GetPathForNextXDist<br/>
+    /// Native code at BatmanAK.exe+0x555EA0 in the Steam build
     /// </summary>
     public unsafe virtual void GetPathForNextXDist(float LookAheadDist, System.Numerics.Vector3 TestExtents, out BmSDK.TArray<System.Numerics.Vector3> PathPoints, out int bHitSpecialMoveEdge)
     {
@@ -835,7 +845,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBlockedPolyLists;
     /// <summary>
-    /// Function: ClearBlockedPolyLists
+    /// Function: ClearBlockedPolyLists<br/>
+    /// Native code at BatmanAK.exe+0x48B840 in the Steam build
     /// </summary>
     public unsafe virtual void ClearBlockedPolyLists()
     {
@@ -856,7 +867,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendPathCacheFromHandle;
     /// <summary>
-    /// Function: AppendPathCacheFromHandle
+    /// Function: AppendPathCacheFromHandle<br/>
+    /// Native code at BatmanAK.exe+0x502C10 in the Steam build
     /// </summary>
     public unsafe virtual void AppendPathCacheFromHandle(BmSDK.BmGame.RNavigationHandle AppendedHandle)
     {
@@ -878,7 +890,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPylonsFromPathCacheToStoredArray;
     /// <summary>
-    /// Function: AddPylonsFromPathCacheToStoredArray
+    /// Function: AddPylonsFromPathCacheToStoredArray<br/>
+    /// Native code at BatmanAK.exe+0x48B800 in the Steam build
     /// </summary>
     public unsafe virtual void AddPylonsFromPathCacheToStoredArray()
     {
@@ -899,7 +912,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyStoredPathCacheIntoPathCache;
     /// <summary>
-    /// Function: CopyStoredPathCacheIntoPathCache
+    /// Function: CopyStoredPathCacheIntoPathCache<br/>
+    /// Native code at BatmanAK.exe+0x48B7C0 in the Steam build
     /// </summary>
     public unsafe virtual void CopyStoredPathCacheIntoPathCache()
     {
@@ -920,7 +934,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendPathCacheToStoredPathCache;
     /// <summary>
-    /// Function: AppendPathCacheToStoredPathCache
+    /// Function: AppendPathCacheToStoredPathCache<br/>
+    /// Native code at BatmanAK.exe+0x46FD70 in the Steam build
     /// </summary>
     public unsafe virtual void AppendPathCacheToStoredPathCache()
     {
@@ -941,7 +956,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckStoredPathCacheIsValid;
     /// <summary>
-    /// Function: CheckStoredPathCacheIsValid
+    /// Function: CheckStoredPathCacheIsValid<br/>
+    /// Native code at BatmanAK.exe+0x496E90 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckStoredPathCacheIsValid()
     {
@@ -962,7 +978,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoredPathCache_Empty;
     /// <summary>
-    /// Function: StoredPathCache_Empty
+    /// Function: StoredPathCache_Empty<br/>
+    /// Native code at BatmanAK.exe+0x496E50 in the Steam build
     /// </summary>
     public unsafe virtual void StoredPathCache_Empty()
     {
@@ -983,7 +1000,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowPathDebug;
     /// <summary>
-    /// Function: ShowPathDebug
+    /// Function: ShowPathDebug<br/>
+    /// Native code at BatmanAK.exe+0x502770 in the Steam build
     /// </summary>
     public unsafe virtual void ShowPathDebug(bool bShowAll, bool bShowPolys, bool bShowTraversalHistory, int ShortenHistorySize, int EdgeHistorySize, bool bPermanent = default)
     {
@@ -1010,7 +1028,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFinalEdgeIndex;
     /// <summary>
-    /// Function: GetFinalEdgeIndex
+    /// Function: GetFinalEdgeIndex<br/>
+    /// Native code at BatmanAK.exe+0x48B770 in the Steam build
     /// </summary>
     public unsafe virtual int GetFinalEdgeIndex()
     {
@@ -1031,7 +1050,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathObjectsOnPathOfClass;
     /// <summary>
-    /// Function: GetPathObjectsOnPathOfClass
+    /// Function: GetPathObjectsOnPathOfClass<br/>
+    /// Native code at BatmanAK.exe+0x555D10 in the Steam build
     /// </summary>
     public unsafe virtual void GetPathObjectsOnPathOfClass(BmSDK.Class TestClass, out BmSDK.TArray<BmSDK.Engine.Actor> PathObjectList)
     {
@@ -1054,7 +1074,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathContainsPathObject;
     /// <summary>
-    /// Function: PathContainsPathObject
+    /// Function: PathContainsPathObject<br/>
+    /// Native code at BatmanAK.exe+0x502630 in the Steam build
     /// </summary>
     public unsafe virtual bool PathContainsPathObject(BmSDK.Engine.Actor PathObject)
     {
@@ -1076,7 +1097,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNarrowestPointOnPath;
     /// <summary>
-    /// Function: FindNarrowestPointOnPath
+    /// Function: FindNarrowestPointOnPath<br/>
+    /// Native code at BatmanAK.exe+0x502370 in the Steam build
     /// </summary>
     public unsafe virtual void FindNarrowestPointOnPath(float LookAheadDist, float MaxWidth, out float NarrowestOnLeft, out float NarrowestOnRight)
     {
@@ -1105,7 +1127,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPredatorPointOnPath;
     /// <summary>
-    /// Function: FindPredatorPointOnPath
+    /// Function: FindPredatorPointOnPath<br/>
+    /// Native code at BatmanAK.exe+0x5021F0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindPredatorPointOnPath(float DistToCheck, out BmSDK.BmGame.RPredatorSpecialMovePointBase PredatorPoint)
     {
@@ -1130,7 +1153,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCornerPointOnPath;
     /// <summary>
-    /// Function: FindCornerPointOnPath
+    /// Function: FindCornerPointOnPath<br/>
+    /// Native code at BatmanAK.exe+0x502020 in the Steam build
     /// </summary>
     public unsafe virtual bool FindCornerPointOnPath(float DistToCheck, out BmSDK.BmGame.RCornerWallMarker StartPoint, out BmSDK.BmGame.RCornerWallMarker EndPoint)
     {
@@ -1158,7 +1182,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindIntersectionInfo;
     /// <summary>
-    /// Function: FindIntersectionInfo
+    /// Function: FindIntersectionInfo<br/>
+    /// Native code at BatmanAK.exe+0x501CF0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindIntersectionInfo(BmSDK.BmGame.RNavigationHandle OtherNavHandle, out System.Numerics.Vector3 IntersectionStart, out int IntersectionStartID, out System.Numerics.Vector3 IntersectionEnd, out int IntersectionEndID, out float IntersectionStartDist, out float IntersectionLength)
     {
@@ -1198,7 +1223,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHostOnPath;
     /// <summary>
-    /// Function: IsHostOnPath
+    /// Function: IsHostOnPath<br/>
+    /// Native code at BatmanAK.exe+0x48B720 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHostOnPath()
     {
@@ -1219,7 +1245,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathCache_Empty;
     /// <summary>
-    /// Function: PathCache_Empty
+    /// Function: PathCache_Empty<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe override bool PathCache_Empty()
     {
@@ -1240,7 +1267,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextMoveLocation;
     /// <summary>
-    /// Function: GetNextMoveLocation
+    /// Function: GetNextMoveLocation<br/>
+    /// Native code at BatmanAK.exe+0x4A3BE0 in the Steam build
     /// </summary>
     public unsafe override bool GetNextMoveLocation(out System.Numerics.Vector3 out_MoveDest, float ArrivalDistance)
     {
@@ -1265,7 +1293,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGoalDestination;
     /// <summary>
-    /// Function: GetGoalDestination
+    /// Function: GetGoalDestination<br/>
+    /// Native code at BatmanAK.exe+0x48B6C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGoalDestination()
     {
@@ -1286,7 +1315,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathDestination;
     /// <summary>
-    /// Function: GetPathDestination
+    /// Function: GetPathDestination<br/>
+    /// Native code at BatmanAK.exe+0x48B660 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPathDestination()
     {
@@ -1307,7 +1337,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFinalDestination;
     /// <summary>
-    /// Function: GetFinalDestination
+    /// Function: GetFinalDestination<br/>
+    /// Native code at BatmanAK.exe+0x48B600 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFinalDestination()
     {
@@ -1328,7 +1359,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathLength;
     /// <summary>
-    /// Function: GetPathLength
+    /// Function: GetPathLength<br/>
+    /// Native code at BatmanAK.exe+0x48B5B0 in the Steam build
     /// </summary>
     public unsafe virtual float GetPathLength()
     {
@@ -1349,7 +1381,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanMoveToCurrDestinationFromPosition;
     /// <summary>
-    /// Function: CanMoveToCurrDestinationFromPosition
+    /// Function: CanMoveToCurrDestinationFromPosition<br/>
+    /// Native code at BatmanAK.exe+0x48B510 in the Steam build
     /// </summary>
     public unsafe virtual bool CanMoveToCurrDestinationFromPosition(System.Numerics.Vector3 NewPos)
     {
@@ -1371,7 +1404,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UseNextPathObjectEdge;
     /// <summary>
-    /// Function: UseNextPathObjectEdge
+    /// Function: UseNextPathObjectEdge<br/>
+    /// Native code at BatmanAK.exe+0x496C20 in the Steam build
     /// </summary>
     public unsafe virtual void UseNextPathObjectEdge()
     {
@@ -1392,7 +1426,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NextEdgeIsPathObject;
     /// <summary>
-    /// Function: NextEdgeIsPathObject
+    /// Function: NextEdgeIsPathObject<br/>
+    /// Native code at BatmanAK.exe+0x48B4C0 in the Steam build
     /// </summary>
     public unsafe virtual bool NextEdgeIsPathObject()
     {
@@ -1413,7 +1448,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoPathShortening;
     /// <summary>
-    /// Function: CanDoPathShortening
+    /// Function: CanDoPathShortening<br/>
+    /// Native code at BatmanAK.exe+0x48B470 in the Steam build
     /// </summary>
     public unsafe virtual bool CanDoPathShortening()
     {
@@ -1434,7 +1470,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvancePathCache;
     /// <summary>
-    /// Function: AdvancePathCache
+    /// Function: AdvancePathCache<br/>
+    /// Native code at BatmanAK.exe+0x46F590 in the Steam build
     /// </summary>
     public unsafe virtual void AdvancePathCache()
     {
@@ -1455,7 +1492,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AtPathGoal;
     /// <summary>
-    /// Function: AtPathGoal
+    /// Function: AtPathGoal<br/>
+    /// Native code at BatmanAK.exe+0x4888E0 in the Steam build
     /// </summary>
     public unsafe virtual bool AtPathGoal()
     {
@@ -1476,7 +1514,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AtGoal;
     /// <summary>
-    /// Function: AtGoal
+    /// Function: AtGoal<br/>
+    /// Native code at BatmanAK.exe+0x488890 in the Steam build
     /// </summary>
     public unsafe virtual bool AtGoal()
     {
@@ -1497,7 +1536,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasBeenInvalidatedByDynamicUpdate;
     /// <summary>
-    /// Function: HasBeenInvalidatedByDynamicUpdate
+    /// Function: HasBeenInvalidatedByDynamicUpdate<br/>
+    /// Native code at BatmanAK.exe+0x48B420 in the Steam build
     /// </summary>
     public unsafe virtual bool HasBeenInvalidatedByDynamicUpdate()
     {
@@ -1518,7 +1558,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathNotFound;
     /// <summary>
-    /// Function: PathNotFound
+    /// Function: PathNotFound<br/>
+    /// Native code at BatmanAK.exe+0x488840 in the Steam build
     /// </summary>
     public unsafe virtual bool PathNotFound()
     {
@@ -1539,7 +1580,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasPath;
     /// <summary>
-    /// Function: HasPath
+    /// Function: HasPath<br/>
+    /// Native code at BatmanAK.exe+0x4887F0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasPath()
     {
@@ -1560,7 +1602,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PathFound;
     /// <summary>
-    /// Function: PathFound
+    /// Function: PathFound<br/>
+    /// Native code at BatmanAK.exe+0x48B3D0 in the Steam build
     /// </summary>
     public unsafe virtual bool PathFound()
     {
@@ -1581,7 +1624,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSearching;
     /// <summary>
-    /// Function: IsSearching
+    /// Function: IsSearching<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSearching()
     {
@@ -1602,7 +1646,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAvailable;
     /// <summary>
-    /// Function: IsAvailable
+    /// Function: IsAvailable<br/>
+    /// Native code at BatmanAK.exe+0x48B380 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAvailable()
     {
@@ -1623,7 +1668,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearConstraints;
     /// <summary>
-    /// Function: ClearConstraints
+    /// Function: ClearConstraints<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe override void ClearConstraints()
     {
@@ -1644,7 +1690,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPathFinding;
     /// <summary>
-    /// Function: DoPathFinding
+    /// Function: DoPathFinding<br/>
+    /// Native code at BatmanAK.exe+0x48B200 in the Steam build
     /// </summary>
     public unsafe virtual bool DoPathFinding(out BmSDK.Engine.Actor out_DestActor, out int out_DestItem, out int PathRequestsUsed)
     {
@@ -1674,7 +1721,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPath;
     /// <summary>
-    /// Function: FindPath
+    /// Function: FindPath<br/>
+    /// Native code at BatmanAK.exe+0x46ABE0 in the Steam build
     /// </summary>
     public unsafe override bool FindPath(out BmSDK.Engine.Actor out_DestActor, out int out_DestItem, out int PathRequestsUsed)
     {
@@ -1704,7 +1752,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLatentDelegates;
     /// <summary>
-    /// Function: ClearLatentDelegates
+    /// Function: ClearLatentDelegates<br/>
+    /// Native code at BatmanAK.exe+0x48B1C0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearLatentDelegates()
     {
@@ -1725,7 +1774,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLatentDelegate_ReachedEdge;
     /// <summary>
-    /// Function: FireLatentDelegate_ReachedEdge
+    /// Function: FireLatentDelegate_ReachedEdge<br/>
+    /// Native code at BatmanAK.exe+0x501BD0 in the Steam build
     /// </summary>
     public unsafe virtual void FireLatentDelegate_ReachedEdge(int EdgeIdx)
     {
@@ -1747,7 +1797,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLatentDelegate_ReachedGoal;
     /// <summary>
-    /// Function: FireLatentDelegate_ReachedGoal
+    /// Function: FireLatentDelegate_ReachedGoal<br/>
+    /// Native code at BatmanAK.exe+0x488730 in the Steam build
     /// </summary>
     public unsafe virtual void FireLatentDelegate_ReachedGoal()
     {
@@ -1768,7 +1819,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLatentDelegate_PathFailure;
     /// <summary>
-    /// Function: FireLatentDelegate_PathFailure
+    /// Function: FireLatentDelegate_PathFailure<br/>
+    /// Native code at BatmanAK.exe+0xB2EB20 in the Steam build
     /// </summary>
     public unsafe virtual void FireLatentDelegate_PathFailure()
     {
@@ -1789,7 +1841,8 @@ public partial class RNavigationHandle : BmSDK.Engine.NavigationHandle, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLatentDelegate_PathSuccess;
     /// <summary>
-    /// Function: FireLatentDelegate_PathSuccess
+    /// Function: FireLatentDelegate_PathSuccess<br/>
+    /// Native code at BatmanAK.exe+0xB2EAE0 in the Steam build
     /// </summary>
     public unsafe virtual void FireLatentDelegate_PathSuccess()
     {
@@ -2648,7 +2701,8 @@ public static class RNavigationHandleStatics
 {
     private static BmSDK.Function __fn_GetReachableLocation;
     /// <summary>
-    /// Function: GetReachableLocation, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetReachableLocation, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x48B880 in the Steam build
     /// </summary>
     public unsafe static bool GetReachableLocation(this BmSDK.BmGame.RNavigationHandle self, System.Numerics.Vector3 NearLocation, out System.Numerics.Vector3 ReachableLocation)
     {
@@ -2673,7 +2727,8 @@ public static class RNavigationHandleStatics
 
     private static BmSDK.Function __fn_GetPylonAndVisibleVertsFromPos;
     /// <summary>
-    /// Function: GetPylonAndVisibleVertsFromPos, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetPylonAndVisibleVertsFromPos, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x5560E0 in the Steam build
     /// </summary>
     public unsafe static void GetPylonAndVisibleVertsFromPos(this BmSDK.BmGame.RNavigationHandle self, System.Numerics.Vector3 TestPos, out BmSDK.Engine.Pylon BasePylon, out int SourceVert, out BmSDK.TArray<int> VertIDList)
     {

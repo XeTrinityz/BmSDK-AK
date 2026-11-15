@@ -80,7 +80,8 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrimedEffects;
     /// <summary>
-    /// Function: SetPrimedEffects
+    /// Function: SetPrimedEffects<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe override void SetPrimedEffects()
     {
@@ -101,7 +102,8 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisarmedEffects;
     /// <summary>
-    /// Function: SetDisarmedEffects
+    /// Function: SetDisarmedEffects<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe override void SetDisarmedEffects()
     {

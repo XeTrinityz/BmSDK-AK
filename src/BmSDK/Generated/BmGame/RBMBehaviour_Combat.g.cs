@@ -567,7 +567,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckBeenInRange;
     /// <summary>
-    /// Function: CheckBeenInRange
+    /// Function: CheckBeenInRange<br/>
+    /// Native code at BatmanAK.exe+0x4FDA80 in the Steam build
     /// </summary>
     public unsafe virtual void CheckBeenInRange(float DeltaTime)
     {
@@ -589,7 +590,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TargetPlayerChanged;
     /// <summary>
-    /// Function: TargetPlayerChanged
+    /// Function: TargetPlayerChanged<br/>
+    /// Native code at BatmanAK.exe+0x4FD950 in the Steam build
     /// </summary>
     public unsafe virtual void TargetPlayerChanged(BmSDK.BmGame.RPawnPlayerCombat NewTarget)
     {
@@ -611,7 +613,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceToGiveToPawn;
     /// <summary>
-    /// Function: GetForceToGiveToPawn
+    /// Function: GetForceToGiveToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FD6A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
@@ -851,7 +854,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MedicShouldAvoidConflict;
     /// <summary>
-    /// Function: MedicShouldAvoidConflict
+    /// Function: MedicShouldAvoidConflict<br/>
+    /// Native code at BatmanAK.exe+0x489340 in the Steam build
     /// </summary>
     public unsafe virtual bool MedicShouldAvoidConflict()
     {
@@ -872,7 +876,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SnapLocationToNavMeshGround;
     /// <summary>
-    /// Function: SnapLocationToNavMeshGround
+    /// Function: SnapLocationToNavMeshGround<br/>
+    /// Native code at BatmanAK.exe+0x4FD520 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SnapLocationToNavMeshGround(System.Numerics.Vector3 SnapPos, bool bShowDebug)
     {
@@ -895,7 +900,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveToPlayerLocation;
     /// <summary>
-    /// Function: GetMoveToPlayerLocation
+    /// Function: GetMoveToPlayerLocation<br/>
+    /// Native code at BatmanAK.exe+0x489280 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveToPlayerLocation(bool bShowDebug = default)
     {
@@ -917,7 +923,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInFrontOfPawn;
     /// <summary>
-    /// Function: IsInFrontOfPawn
+    /// Function: IsInFrontOfPawn<br/>
+    /// Native code at BatmanAK.exe+0x4FD320 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInFrontOfPawn(BmSDK.BmGame.RPawnCombat TestPawn, float Angle)
     {
@@ -940,7 +947,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistsFromLine;
     /// <summary>
-    /// Function: GetDistsFromLine
+    /// Function: GetDistsFromLine<br/>
+    /// Native code at BatmanAK.exe+0x489100 in the Steam build
     /// </summary>
     public unsafe virtual void GetDistsFromLine(System.Numerics.Vector3 From, System.Numerics.Vector3 To, out float ParallelDist, out float PerpendicularDist)
     {
@@ -969,7 +977,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveAwayFromLineForce;
     /// <summary>
-    /// Function: GetMoveAwayFromLineForce
+    /// Function: GetMoveAwayFromLineForce<br/>
+    /// Native code at BatmanAK.exe+0x4FD150 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveAwayFromLineForce(System.Numerics.Vector3 From, System.Numerics.Vector3 To, float Force)
     {
@@ -993,7 +1002,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovementForce;
     /// <summary>
-    /// Function: GetMovementForce
+    /// Function: GetMovementForce<br/>
+    /// Native code at BatmanAK.exe+0x489010 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 SourceLocation = default)
     {
@@ -1015,7 +1025,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTargetPawnInCombatArea;
     /// <summary>
-    /// Function: IsTargetPawnInCombatArea
+    /// Function: IsTargetPawnInCombatArea<br/>
+    /// Native code at BatmanAK.exe+0x48B470 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTargetPawnInCombatArea()
     {
@@ -1036,7 +1047,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInCombatArea;
     /// <summary>
-    /// Function: IsLocationInCombatArea
+    /// Function: IsLocationInCombatArea<br/>
+    /// Native code at BatmanAK.exe+0x488F70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInCombatArea(System.Numerics.Vector3 TestLocation)
     {
@@ -1058,7 +1070,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GatherForcesFromWalls;
     /// <summary>
-    /// Function: GatherForcesFromWalls
+    /// Function: GatherForcesFromWalls<br/>
+    /// Native code at BatmanAK.exe+0x4FCE00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GatherForcesFromWalls(System.Numerics.Vector3 SourceLocation, float MaxForce, float MinRange, float MaxSideForceMultiplier = default, System.Numerics.Vector3 ForwardDir = default, bool bDebug = default)
     {
@@ -1085,7 +1098,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GatherForcesFromVillains;
     /// <summary>
-    /// Function: GatherForcesFromVillains
+    /// Function: GatherForcesFromVillains<br/>
+    /// Native code at BatmanAK.exe+0x4FCBE0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GatherForcesFromVillains(float MaxForce, float MinRange)
     {
@@ -1108,7 +1122,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasClearPathToCombat;
     /// <summary>
-    /// Function: HasClearPathToCombat
+    /// Function: HasClearPathToCombat<br/>
+    /// Native code at BatmanAK.exe+0x488E50 in the Steam build
     /// </summary>
     public unsafe virtual bool HasClearPathToCombat(bool bForceCheck = default, bool bDefaultValue = default, bool bForceCheckOnActualPosition = default)
     {
@@ -1132,7 +1147,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TargetPawnIsInDanger;
     /// <summary>
-    /// Function: TargetPawnIsInDanger
+    /// Function: TargetPawnIsInDanger<br/>
+    /// Native code at BatmanAK.exe+0x488840 in the Steam build
     /// </summary>
     public unsafe virtual bool TargetPawnIsInDanger()
     {
@@ -1153,7 +1169,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInDanger;
     /// <summary>
-    /// Function: IsInDanger
+    /// Function: IsInDanger<br/>
+    /// Native code at BatmanAK.exe+0x4887F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInDanger()
     {
@@ -1174,7 +1191,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStepDirection;
     /// <summary>
-    /// Function: GetStepDirection
+    /// Function: GetStepDirection<br/>
+    /// Native code at BatmanAK.exe+0x4FCA90 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetStepDirection(BmSDK.Engine.AnimSequence Anim)
     {
@@ -1196,7 +1214,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredPosition;
     /// <summary>
-    /// Function: SetDesiredPosition
+    /// Function: SetDesiredPosition<br/>
+    /// Native code at BatmanAK.exe+0x488DC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDesiredPosition(System.Numerics.Vector3 NewDesiredPosition)
     {
@@ -1218,7 +1237,8 @@ public partial class RBMBehaviour_Combat : BmSDK.BmGame.RBMBehaviour_Controlled,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDesiredPosition;
     /// <summary>
-    /// Function: GetDesiredPosition
+    /// Function: GetDesiredPosition<br/>
+    /// Native code at BatmanAK.exe+0x488D60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDesiredPosition()
     {

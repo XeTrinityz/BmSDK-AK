@@ -119,7 +119,8 @@ public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingOrigin;
     /// <summary>
-    /// Function: GetTrackingOrigin
+    /// Function: GetTrackingOrigin<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTrackingOrigin()
     {
@@ -154,7 +155,8 @@ public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTargetRange;
     /// <summary>
-    /// Function: CheckTargetRange
+    /// Function: CheckTargetRange<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void CheckTargetRange()
     {

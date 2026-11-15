@@ -397,7 +397,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRainCapeAudio;
     /// <summary>
-    /// Function: SetRainCapeAudio
+    /// Function: SetRainCapeAudio<br/>
+    /// Native code at BatmanAK.exe+0x47E7F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRainCapeAudio()
     {
@@ -432,7 +433,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActuallyRunning;
     /// <summary>
-    /// Function: IsActuallyRunning
+    /// Function: IsActuallyRunning<br/>
+    /// Native code at BatmanAK.exe+0x47E7A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsActuallyRunning()
     {
@@ -511,7 +513,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToUnlockChallenge;
     /// <summary>
-    /// Function: TryToUnlockChallenge
+    /// Function: TryToUnlockChallenge<br/>
+    /// Native code at BatmanAK.exe+0x4DDE20 in the Steam build
     /// </summary>
     public unsafe virtual void TryToUnlockChallenge(int ChallengeID)
     {
@@ -789,7 +792,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCombatFailedOrRestarted;
     /// <summary>
-    /// Function: SendHydraEventCombatFailedOrRestarted
+    /// Function: SendHydraEventCombatFailedOrRestarted<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCombatFailedOrRestarted()
     {
@@ -810,7 +814,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventBoughtUpgrade;
     /// <summary>
-    /// Function: SendHydraEventBoughtUpgrade
+    /// Function: SendHydraEventBoughtUpgrade<br/>
+    /// Native code at BatmanAK.exe+0x53E660 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventBoughtUpgrade(BmSDK.FStringArg upgradeBought, int numUpgradesBought, int numUnlockablesToSpendLeft, int numPointsSpent)
     {
@@ -836,7 +841,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetOverrideClimb;
     /// <summary>
-    /// Function: KismetOverrideClimb
+    /// Function: KismetOverrideClimb<br/>
+    /// Native code at BatmanAK.exe+0x47E750 in the Steam build
     /// </summary>
     public unsafe virtual bool KismetOverrideClimb()
     {
@@ -857,7 +863,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlideKickThrougWindowTarget;
     /// <summary>
-    /// Function: GetGlideKickThrougWindowTarget
+    /// Function: GetGlideKickThrougWindowTarget<br/>
+    /// Native code at BatmanAK.exe+0x4DDCB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetGlideKickThrougWindowTarget(BmSDK.BmGame.RDestructibleProp_FractureWall WallTarget, System.Numerics.Vector3 PlayerStartLocation)
     {
@@ -880,7 +887,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmobileUnderRemoteControl;
     /// <summary>
-    /// Function: IsBatmobileUnderRemoteControl
+    /// Function: IsBatmobileUnderRemoteControl<br/>
+    /// Native code at BatmanAK.exe+0x47E700 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBatmobileUnderRemoteControl()
     {
@@ -901,7 +909,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopGadgetProhibitsAction;
     /// <summary>
-    /// Function: StopGadgetProhibitsAction
+    /// Function: StopGadgetProhibitsAction<br/>
+    /// Native code at BatmanAK.exe+0x47E630 in the Steam build
     /// </summary>
     public unsafe virtual bool StopGadgetProhibitsAction(BmSDK.BmGame.RSeqAct_StopPlayerUsingGadgets.EStopPlayerDoingStuff ActionToCheck, bool FireEvents = default)
     {
@@ -1156,7 +1165,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioResetCapeGlide;
     /// <summary>
-    /// Function: AudioResetCapeGlide
+    /// Function: AudioResetCapeGlide<br/>
+    /// Native code at BatmanAK.exe+0x478D40 in the Steam build
     /// </summary>
     public unsafe virtual void AudioResetCapeGlide()
     {
@@ -1469,7 +1479,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAssistTarget;
     /// <summary>
-    /// Function: GetAssistTarget
+    /// Function: GetAssistTarget<br/>
+    /// Native code at BatmanAK.exe+0x47E580 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetAssistTarget(bool bAllowMinigunners = default)
     {
@@ -1623,7 +1634,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeActor;
     /// <summary>
-    /// Function: CanSeeActor
+    /// Function: CanSeeActor<br/>
+    /// Native code at BatmanAK.exe+0x4DDB70 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeActor(BmSDK.Engine.Actor TestActor)
     {
@@ -2158,7 +2170,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingJumpDirection;
     /// <summary>
-    /// Function: GetRailingJumpDirection
+    /// Function: GetRailingJumpDirection<br/>
+    /// Native code at BatmanAK.exe+0x47E520 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRailingJumpDirection()
     {
@@ -2193,7 +2206,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAboveCatwalkTarget;
     /// <summary>
-    /// Function: CheckAboveCatwalkTarget
+    /// Function: CheckAboveCatwalkTarget<br/>
+    /// Native code at BatmanAK.exe+0x4DD9C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAboveCatwalkTarget(BmSDK.BmGame.RPawnVillain Villain, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 AimDirection)
     {
@@ -2217,7 +2231,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCatwalkAboveTakedownTarget;
     /// <summary>
-    /// Function: CheckForCatwalkAboveTakedownTarget
+    /// Function: CheckForCatwalkAboveTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x47E470 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForCatwalkAboveTakedownTarget(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator)
     {
@@ -2239,7 +2254,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForInvertedTakedownTarget;
     /// <summary>
-    /// Function: CheckForInvertedTakedownTarget
+    /// Function: CheckForInvertedTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x47E430 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForInvertedTakedownTarget()
     {
@@ -2605,7 +2621,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopDrivingRumble;
     /// <summary>
-    /// Function: StopDrivingRumble
+    /// Function: StopDrivingRumble<br/>
+    /// Native code at BatmanAK.exe+0x47E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void StopDrivingRumble()
     {
@@ -2626,7 +2643,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDrivingRumble;
     /// <summary>
-    /// Function: UpdateDrivingRumble
+    /// Function: UpdateDrivingRumble<br/>
+    /// Native code at BatmanAK.exe+0x4DD890 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDrivingRumble(float DeltaTime)
     {
@@ -2648,7 +2666,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrivingPlayerMove;
     /// <summary>
-    /// Function: DrivingPlayerMove
+    /// Function: DrivingPlayerMove<br/>
+    /// Native code at BatmanAK.exe+0x4DD760 in the Steam build
     /// </summary>
     public unsafe virtual void DrivingPlayerMove(float DeltaTime)
     {
@@ -2769,7 +2788,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulateRadarWithAllVehicles;
     /// <summary>
-    /// Function: PopulateRadarWithAllVehicles
+    /// Function: PopulateRadarWithAllVehicles<br/>
+    /// Native code at BatmanAK.exe+0x47E3B0 in the Steam build
     /// </summary>
     public unsafe virtual void PopulateRadarWithAllVehicles()
     {
@@ -2790,7 +2810,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulateRadar;
     /// <summary>
-    /// Function: PopulateRadar
+    /// Function: PopulateRadar<br/>
+    /// Native code at BatmanAK.exe+0x47E370 in the Steam build
     /// </summary>
     public unsafe virtual void PopulateRadar()
     {
@@ -2811,7 +2832,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulateRadarWithHeavyTanks;
     /// <summary>
-    /// Function: PopulateRadarWithHeavyTanks
+    /// Function: PopulateRadarWithHeavyTanks<br/>
+    /// Native code at BatmanAK.exe+0x47E330 in the Steam build
     /// </summary>
     public unsafe virtual void PopulateRadarWithHeavyTanks()
     {
@@ -2876,7 +2898,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioDrawVehicleDebug;
     /// <summary>
-    /// Function: AudioDrawVehicleDebug
+    /// Function: AudioDrawVehicleDebug<br/>
+    /// Native code at BatmanAK.exe+0x4DD4C0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioDrawVehicleDebug(BmSDK.Engine.Canvas HudCanvas, BmSDK.BmGame.RVehicle Vehicle, int Y)
     {
@@ -2957,7 +2980,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugArrowAtActorLoc;
     /// <summary>
-    /// Function: DrawDebugArrowAtActorLoc
+    /// Function: DrawDebugArrowAtActorLoc<br/>
+    /// Native code at BatmanAK.exe+0x4DCFB0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawDebugArrowAtActorLoc(BmSDK.Engine.Actor Actor, float Scale, int R, int G, int B, BmSDK.Engine.Canvas HudCanvas)
     {
@@ -3083,7 +3107,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBatmanReachFinalBatmobileLocation;
     /// <summary>
-    /// Function: CanBatmanReachFinalBatmobileLocation
+    /// Function: CanBatmanReachFinalBatmobileLocation<br/>
+    /// Native code at BatmanAK.exe+0x47E220 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBatmanReachFinalBatmobileLocation(System.Numerics.Vector3 FinalBatmobileLocation, System.Numerics.Vector3 BatmanLocation = default)
     {
@@ -3204,7 +3229,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGatmobileCallLocation;
     /// <summary>
-    /// Function: GetGatmobileCallLocation
+    /// Function: GetGatmobileCallLocation<br/>
+    /// Native code at BatmanAK.exe+0x47E130 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGatmobileCallLocation(System.Numerics.Vector3 LookOrigin, BmSDK.Rotator LookRotation)
     {
@@ -3438,7 +3464,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceToRailWalk;
     /// <summary>
-    /// Function: CheckSpaceToRailWalk
+    /// Function: CheckSpaceToRailWalk<br/>
+    /// Native code at BatmanAK.exe+0x47E050 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceToRailWalk(System.Numerics.Vector3 MoveDir, System.Numerics.Vector3 RailDir)
     {
@@ -3503,7 +3530,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RailingPlayerMove;
     /// <summary>
-    /// Function: RailingPlayerMove
+    /// Function: RailingPlayerMove<br/>
+    /// Native code at BatmanAK.exe+0x4DCE70 in the Steam build
     /// </summary>
     public unsafe virtual bool RailingPlayerMove(float DeltaTime)
     {
@@ -3525,7 +3553,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RailingModeModifyPlayerMovement;
     /// <summary>
-    /// Function: RailingModeModifyPlayerMovement
+    /// Function: RailingModeModifyPlayerMovement<br/>
+    /// Native code at BatmanAK.exe+0x4DCC30 in the Steam build
     /// </summary>
     public unsafe virtual float RailingModeModifyPlayerMovement(out System.Numerics.Vector3 MoveDirection, float DeltaTime, bool HoldingRun)
     {
@@ -3595,7 +3624,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDeathCameraLocation;
     /// <summary>
-    /// Function: GetDeathCameraLocation
+    /// Function: GetDeathCameraLocation<br/>
+    /// Native code at BatmanAK.exe+0x47DFA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDeathCameraLocation(System.Numerics.Vector3 DesiredLocation)
     {
@@ -3687,7 +3717,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_GetBenchmarkCurrent;
     /// <summary>
-    /// Function: FE_GetBenchmarkCurrent
+    /// Function: FE_GetBenchmarkCurrent<br/>
+    /// Native code at BatmanAK.exe+0x47DF50 in the Steam build
     /// </summary>
     public unsafe virtual int FE_GetBenchmarkCurrent()
     {
@@ -3708,7 +3739,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_GetBenchmarkAverage;
     /// <summary>
-    /// Function: FE_GetBenchmarkAverage
+    /// Function: FE_GetBenchmarkAverage<br/>
+    /// Native code at BatmanAK.exe+0x47DF00 in the Steam build
     /// </summary>
     public unsafe virtual int FE_GetBenchmarkAverage()
     {
@@ -3729,7 +3761,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_GetBenchmarkMax;
     /// <summary>
-    /// Function: FE_GetBenchmarkMax
+    /// Function: FE_GetBenchmarkMax<br/>
+    /// Native code at BatmanAK.exe+0x47DEB0 in the Steam build
     /// </summary>
     public unsafe virtual int FE_GetBenchmarkMax()
     {
@@ -3750,7 +3783,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_GetBenchmarkMin;
     /// <summary>
-    /// Function: FE_GetBenchmarkMin
+    /// Function: FE_GetBenchmarkMin<br/>
+    /// Native code at BatmanAK.exe+0x47DE60 in the Steam build
     /// </summary>
     public unsafe virtual int FE_GetBenchmarkMin()
     {
@@ -3771,7 +3805,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_IsBenchmarking;
     /// <summary>
-    /// Function: FE_IsBenchmarking
+    /// Function: FE_IsBenchmarking<br/>
+    /// Native code at BatmanAK.exe+0x47DE10 in the Steam build
     /// </summary>
     public unsafe virtual bool FE_IsBenchmarking()
     {
@@ -3792,7 +3827,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetBenchmarkingActive;
     /// <summary>
-    /// Function: FE_SetBenchmarkingActive
+    /// Function: FE_SetBenchmarkingActive<br/>
+    /// Native code at BatmanAK.exe+0x4DCB10 in the Steam build
     /// </summary>
     public unsafe virtual void FE_SetBenchmarkingActive(bool is_active)
     {
@@ -3829,7 +3865,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateControlIcons;
     /// <summary>
-    /// Function: UpdateControlIcons
+    /// Function: UpdateControlIcons<br/>
+    /// Native code at BatmanAK.exe+0x56BAF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateControlIcons(out BmSDK.TArray<BmSDK.FString> NewIcons)
     {
@@ -3977,7 +4014,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Dbg_Break;
     /// <summary>
-    /// Function: Dbg_Break
+    /// Function: Dbg_Break<br/>
+    /// Native code at BatmanAK.exe+0x53E520 in the Steam build
     /// </summary>
     public unsafe virtual void Dbg_Break(BmSDK.FStringArg Message)
     {
@@ -4000,7 +4038,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Dbg_FlushLogs;
     /// <summary>
-    /// Function: Dbg_FlushLogs
+    /// Function: Dbg_FlushLogs<br/>
+    /// Native code at BatmanAK.exe+0x474F20 in the Steam build
     /// </summary>
     public unsafe virtual void Dbg_FlushLogs()
     {
@@ -4035,7 +4074,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGCurrentSaveVersion;
     /// <summary>
-    /// Function: SetGCurrentSaveVersion
+    /// Function: SetGCurrentSaveVersion<br/>
+    /// Native code at BatmanAK.exe+0x4DC9F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetGCurrentSaveVersion(int NewVer)
     {
@@ -4074,7 +4114,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TestFillLBTick;
     /// <summary>
-    /// Function: TestFillLBTick
+    /// Function: TestFillLBTick<br/>
+    /// Native code at BatmanAK.exe+0x47DDD0 in the Steam build
     /// </summary>
     public unsafe virtual void TestFillLBTick()
     {
@@ -4095,7 +4136,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TestFillLB;
     /// <summary>
-    /// Function: TestFillLB
+    /// Function: TestFillLB<br/>
+    /// Native code at BatmanAK.exe+0x53E3A0 in the Steam build
     /// </summary>
     public unsafe virtual void TestFillLB(int Id, BmSDK.FStringArg FileToLoad = default)
     {
@@ -4119,7 +4161,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTimeStampLater;
     /// <summary>
-    /// Function: IsTimeStampLater
+    /// Function: IsTimeStampLater<br/>
+    /// Native code at BatmanAK.exe+0x47DD20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsTimeStampLater(BmSDK.Engine.OnlineSubsystem.FUniqueNetId A, BmSDK.Engine.OnlineSubsystem.FUniqueNetId B)
     {
@@ -4142,7 +4185,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpChallengeList;
     /// <summary>
-    /// Function: DumpChallengeList
+    /// Function: DumpChallengeList<br/>
+    /// Native code at BatmanAK.exe+0x47DCE0 in the Steam build
     /// </summary>
     public unsafe virtual void DumpChallengeList()
     {
@@ -4163,7 +4207,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveLoadValue;
     /// <summary>
-    /// Function: GetSaveLoadValue
+    /// Function: GetSaveLoadValue<br/>
+    /// Native code at BatmanAK.exe+0x47DC90 in the Steam build
     /// </summary>
     public unsafe virtual float GetSaveLoadValue()
     {
@@ -4291,7 +4336,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDebugMapRoads;
     /// <summary>
-    /// Function: ShowDebugMapRoads
+    /// Function: ShowDebugMapRoads<br/>
+    /// Native code at BatmanAK.exe+0x47DC50 in the Steam build
     /// </summary>
     public unsafe virtual void ShowDebugMapRoads()
     {
@@ -4312,7 +4358,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryActiveSave;
     /// <summary>
-    /// Function: QueryActiveSave
+    /// Function: QueryActiveSave<br/>
+    /// Native code at BatmanAK.exe+0x49A230 in the Steam build
     /// </summary>
     public unsafe virtual void QueryActiveSave()
     {
@@ -4333,7 +4380,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupActiveSave;
     /// <summary>
-    /// Function: SetupActiveSave
+    /// Function: SetupActiveSave<br/>
+    /// Native code at BatmanAK.exe+0x553FA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupActiveSave(int SlotID, int SlotxId, BmSDK.TArray<byte> Data)
     {
@@ -4357,7 +4405,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAsChapterSave;
     /// <summary>
-    /// Function: SetAsChapterSave
+    /// Function: SetAsChapterSave<br/>
+    /// Native code at BatmanAK.exe+0x47DC10 in the Steam build
     /// </summary>
     public unsafe virtual void SetAsChapterSave()
     {
@@ -4378,7 +4427,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveSaveName;
     /// <summary>
-    /// Function: SetActiveSaveName
+    /// Function: SetActiveSaveName<br/>
+    /// Native code at BatmanAK.exe+0x4DC810 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveSaveName(int SlotID, int SlotxId)
     {
@@ -4401,7 +4451,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtractSaveInfo;
     /// <summary>
-    /// Function: ExtractSaveInfo
+    /// Function: ExtractSaveInfo<br/>
+    /// Native code at BatmanAK.exe+0x553EE0 in the Steam build
     /// </summary>
     public unsafe virtual int ExtractSaveInfo(BmSDK.TArray<byte> Data)
     {
@@ -4496,7 +4547,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSaveGameWriteFileComplete_Native;
     /// <summary>
-    /// Function: OnSaveGameWriteFileComplete_Native
+    /// Function: OnSaveGameWriteFileComplete_Native<br/>
+    /// Native code at BatmanAK.exe+0x53E0C0 in the Steam build
     /// </summary>
     public unsafe virtual void OnSaveGameWriteFileComplete_Native(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
@@ -4541,7 +4593,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnLoadGameReadFileComplete_Native;
     /// <summary>
-    /// Function: OnLoadGameReadFileComplete_Native
+    /// Function: OnLoadGameReadFileComplete_Native<br/>
+    /// Native code at BatmanAK.exe+0x53DDE0 in the Steam build
     /// </summary>
     public unsafe virtual void OnLoadGameReadFileComplete_Native(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
@@ -4567,7 +4620,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadMemoryFromFile;
     /// <summary>
-    /// Function: LoadMemoryFromFile
+    /// Function: LoadMemoryFromFile<br/>
+    /// Native code at BatmanAK.exe+0x53DCA0 in the Steam build
     /// </summary>
     public unsafe virtual void LoadMemoryFromFile(BmSDK.FStringArg Filename)
     {
@@ -4590,7 +4644,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveMemoryToFile;
     /// <summary>
-    /// Function: SaveMemoryToFile
+    /// Function: SaveMemoryToFile<br/>
+    /// Native code at BatmanAK.exe+0x553D50 in the Steam build
     /// </summary>
     public unsafe virtual void SaveMemoryToFile(BmSDK.FStringArg Filename, BmSDK.TArray<byte> Data)
     {
@@ -4614,7 +4669,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginLoadTravelStep;
     /// <summary>
-    /// Function: BeginLoadTravelStep
+    /// Function: BeginLoadTravelStep<br/>
+    /// Native code at BatmanAK.exe+0x47DBD0 in the Steam build
     /// </summary>
     public unsafe virtual void BeginLoadTravelStep()
     {
@@ -5432,7 +5488,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseGamePostLoadIfNeeded;
     /// <summary>
-    /// Function: PauseGamePostLoadIfNeeded
+    /// Function: PauseGamePostLoadIfNeeded<br/>
+    /// Native code at BatmanAK.exe+0x47DB90 in the Steam build
     /// </summary>
     public unsafe virtual void PauseGamePostLoadIfNeeded()
     {
@@ -5453,7 +5510,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGameRenderingEnabled;
     /// <summary>
-    /// Function: IsGameRenderingEnabled
+    /// Function: IsGameRenderingEnabled<br/>
+    /// Native code at BatmanAK.exe+0x47DB40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGameRenderingEnabled()
     {
@@ -5474,7 +5532,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGuideOpen;
     /// <summary>
-    /// Function: IsGuideOpen
+    /// Function: IsGuideOpen<br/>
+    /// Native code at BatmanAK.exe+0x47DAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGuideOpen()
     {
@@ -5538,7 +5597,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMenuState;
     /// <summary>
-    /// Function: ClearMenuState
+    /// Function: ClearMenuState<br/>
+    /// Native code at BatmanAK.exe+0x53DB60 in the Steam build
     /// </summary>
     public unsafe virtual void ClearMenuState(BmSDK.FStringArg StorageName)
     {
@@ -5655,7 +5715,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PausePlayTextureMovie;
     /// <summary>
-    /// Function: PausePlayTextureMovie
+    /// Function: PausePlayTextureMovie<br/>
+    /// Native code at BatmanAK.exe+0x4DC6F0 in the Steam build
     /// </summary>
     public unsafe virtual void PausePlayTextureMovie(bool bPause)
     {
@@ -5706,7 +5767,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FSM_IsMoviePlaying;
     /// <summary>
-    /// Function: FSM_IsMoviePlaying
+    /// Function: FSM_IsMoviePlaying<br/>
+    /// Native code at BatmanAK.exe+0x47DAA0 in the Steam build
     /// </summary>
     public unsafe virtual bool FSM_IsMoviePlaying()
     {
@@ -5727,7 +5789,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FSM_StopMovie;
     /// <summary>
-    /// Function: FSM_StopMovie
+    /// Function: FSM_StopMovie<br/>
+    /// Native code at BatmanAK.exe+0x47DA60 in the Steam build
     /// </summary>
     public unsafe virtual void FSM_StopMovie()
     {
@@ -5748,7 +5811,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FSM_PlayMovie;
     /// <summary>
-    /// Function: FSM_PlayMovie
+    /// Function: FSM_PlayMovie<br/>
+    /// Native code at BatmanAK.exe+0x53DA20 in the Steam build
     /// </summary>
     public unsafe virtual void FSM_PlayMovie(BmSDK.FStringArg TheMovieName)
     {
@@ -5771,7 +5835,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveFocusMovie;
     /// <summary>
-    /// Function: SetActiveFocusMovie
+    /// Function: SetActiveFocusMovie<br/>
+    /// Native code at BatmanAK.exe+0x53D8E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveFocusMovie(BmSDK.FStringArg ToThis)
     {
@@ -5794,7 +5859,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveFocusMovie;
     /// <summary>
-    /// Function: GetActiveFocusMovie
+    /// Function: GetActiveFocusMovie<br/>
+    /// Native code at BatmanAK.exe+0x53D860 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetActiveFocusMovie()
     {
@@ -5815,7 +5881,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAndRestoreMemorySave;
     /// <summary>
-    /// Function: KillAndRestoreMemorySave
+    /// Function: KillAndRestoreMemorySave<br/>
+    /// Native code at BatmanAK.exe+0x499DF0 in the Steam build
     /// </summary>
     public unsafe virtual void KillAndRestoreMemorySave()
     {
@@ -5836,7 +5903,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockStorageSavingNoWrite;
     /// <summary>
-    /// Function: IsBlockStorageSavingNoWrite
+    /// Function: IsBlockStorageSavingNoWrite<br/>
+    /// Native code at BatmanAK.exe+0x47DA10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlockStorageSavingNoWrite()
     {
@@ -5857,7 +5925,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockStorageSaving;
     /// <summary>
-    /// Function: IsBlockStorageSaving
+    /// Function: IsBlockStorageSaving<br/>
+    /// Native code at BatmanAK.exe+0x47D9C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlockStorageSaving()
     {
@@ -5878,7 +5947,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockStorageSaving;
     /// <summary>
-    /// Function: BlockStorageSaving
+    /// Function: BlockStorageSaving<br/>
+    /// Native code at BatmanAK.exe+0x4DC5D0 in the Steam build
     /// </summary>
     public unsafe virtual void BlockStorageSaving(bool bBlock)
     {
@@ -6276,7 +6346,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NvIsGpuPhysXSupported;
     /// <summary>
-    /// Function: NvIsGpuPhysXSupported
+    /// Function: NvIsGpuPhysXSupported<br/>
+    /// Native code at BatmanAK.exe+0x47D970 in the Steam build
     /// </summary>
     public unsafe virtual bool NvIsGpuPhysXSupported()
     {
@@ -6297,7 +6368,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BackscreenChangeShowFlags;
     /// <summary>
-    /// Function: BackscreenChangeShowFlags
+    /// Function: BackscreenChangeShowFlags<br/>
+    /// Native code at BatmanAK.exe+0x4DC4B0 in the Steam build
     /// </summary>
     public unsafe virtual void BackscreenChangeShowFlags(bool bCheap)
     {
@@ -6477,7 +6549,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveGameState;
     /// <summary>
-    /// Function: GetSaveGameState
+    /// Function: GetSaveGameState<br/>
+    /// Native code at BatmanAK.exe+0x47D920 in the Steam build
     /// </summary>
     public unsafe virtual int GetSaveGameState()
     {
@@ -6498,7 +6571,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReallyDoTheSave;
     /// <summary>
-    /// Function: ReallyDoTheSave
+    /// Function: ReallyDoTheSave<br/>
+    /// Native code at BatmanAK.exe+0x47D8E0 in the Steam build
     /// </summary>
     public unsafe virtual void ReallyDoTheSave()
     {
@@ -6547,7 +6621,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCircleToAccept;
     /// <summary>
-    /// Function: IsCircleToAccept
+    /// Function: IsCircleToAccept<br/>
+    /// Native code at BatmanAK.exe+0x474700 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCircleToAccept()
     {
@@ -6568,7 +6643,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWritingStats;
     /// <summary>
-    /// Function: IsWritingStats
+    /// Function: IsWritingStats<br/>
+    /// Native code at BatmanAK.exe+0x47D890 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWritingStats()
     {
@@ -6589,7 +6665,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetWritingStatsCount;
     /// <summary>
-    /// Function: ResetWritingStatsCount
+    /// Function: ResetWritingStatsCount<br/>
+    /// Native code at BatmanAK.exe+0x47D850 in the Steam build
     /// </summary>
     public unsafe virtual void ResetWritingStatsCount()
     {
@@ -6639,7 +6716,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAmerican;
     /// <summary>
-    /// Function: IsAmerican
+    /// Function: IsAmerican<br/>
+    /// Native code at BatmanAK.exe+0x47D800 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAmerican()
     {
@@ -6660,7 +6738,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCurrentlyLoadingLevels;
     /// <summary>
-    /// Function: IsCurrentlyLoadingLevels
+    /// Function: IsCurrentlyLoadingLevels<br/>
+    /// Native code at BatmanAK.exe+0x47D7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCurrentlyLoadingLevels()
     {
@@ -6851,7 +6930,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGamepadConnected;
     /// <summary>
-    /// Function: IsGamepadConnected
+    /// Function: IsGamepadConnected<br/>
+    /// Native code at BatmanAK.exe+0x47D760 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGamepadConnected()
     {
@@ -6916,7 +6996,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GarbageCollect;
     /// <summary>
-    /// Function: GarbageCollect
+    /// Function: GarbageCollect<br/>
+    /// Native code at BatmanAK.exe+0x47D720 in the Steam build
     /// </summary>
     public unsafe virtual void GarbageCollect()
     {
@@ -6937,7 +7018,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCreditsStringsBm2;
     /// <summary>
-    /// Function: GetCreditsStringsBm2
+    /// Function: GetCreditsStringsBm2<br/>
+    /// Native code at BatmanAK.exe+0x56B760 in the Steam build
     /// </summary>
     public unsafe virtual void GetCreditsStringsBm2(BmSDK.TArray<BmSDK.FString> SectionList, out BmSDK.TArray<BmSDK.FString> LeftStrings, out BmSDK.TArray<BmSDK.FString> RightStrings, bool bPad, bool bTerminate)
     {
@@ -6963,7 +7045,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCreditsStrings;
     /// <summary>
-    /// Function: GetCreditsStrings
+    /// Function: GetCreditsStrings<br/>
+    /// Native code at BatmanAK.exe+0x56B4D0 in the Steam build
     /// </summary>
     public unsafe virtual int GetCreditsStrings(out BmSDK.TArray<BmSDK.FString> OutCredits, BmSDK.TArray<BmSDK.FString> Sections, out BmSDK.TArray<BmSDK.FString> Refs, out BmSDK.TArray<int> RefIndex)
     {
@@ -6988,7 +7071,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVisitedPMapsList;
     /// <summary>
-    /// Function: GetVisitedPMapsList
+    /// Function: GetVisitedPMapsList<br/>
+    /// Native code at BatmanAK.exe+0x56B3D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetVisitedPMapsList(out BmSDK.TArray<BmSDK.FString> PMapNames)
     {
@@ -7010,7 +7094,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CutdownFlagNames;
     /// <summary>
-    /// Function: CutdownFlagNames
+    /// Function: CutdownFlagNames<br/>
+    /// Native code at BatmanAK.exe+0x56B2D0 in the Steam build
     /// </summary>
     public unsafe virtual void CutdownFlagNames(out BmSDK.TArray<BmSDK.FString> FlagNames)
     {
@@ -7032,7 +7117,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetReturnPoint;
     /// <summary>
-    /// Function: SetReturnPoint
+    /// Function: SetReturnPoint<br/>
+    /// Native code at BatmanAK.exe+0x53D720 in the Steam build
     /// </summary>
     public unsafe virtual void SetReturnPoint(BmSDK.FStringArg ScreenName)
     {
@@ -7055,7 +7141,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReturnPoint;
     /// <summary>
-    /// Function: GetReturnPoint
+    /// Function: GetReturnPoint<br/>
+    /// Native code at BatmanAK.exe+0x53D6A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetReturnPoint()
     {
@@ -7076,7 +7163,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMoviePresent;
     /// <summary>
-    /// Function: IsMoviePresent
+    /// Function: IsMoviePresent<br/>
+    /// Native code at BatmanAK.exe+0x53D550 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMoviePresent(BmSDK.FStringArg MovieName)
     {
@@ -7099,7 +7187,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLevelLoadSpecified;
     /// <summary>
-    /// Function: IsLevelLoadSpecified
+    /// Function: IsLevelLoadSpecified<br/>
+    /// Native code at BatmanAK.exe+0x47D6D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLevelLoadSpecified()
     {
@@ -7120,7 +7209,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWBPlayUIPresent;
     /// <summary>
-    /// Function: IsWBPlayUIPresent
+    /// Function: IsWBPlayUIPresent<br/>
+    /// Native code at BatmanAK.exe+0x486950 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWBPlayUIPresent()
     {
@@ -7141,7 +7231,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingFullScreenMovie;
     /// <summary>
-    /// Function: IsPlayingFullScreenMovie
+    /// Function: IsPlayingFullScreenMovie<br/>
+    /// Native code at BatmanAK.exe+0x47D620 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayingFullScreenMovie(bool bIgnoreAudioCrossOver = default)
     {
@@ -7163,7 +7254,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDebugFrontendAvailable;
     /// <summary>
-    /// Function: IsDebugFrontendAvailable
+    /// Function: IsDebugFrontendAvailable<br/>
+    /// Native code at BatmanAK.exe+0x47D5D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDebugFrontendAvailable()
     {
@@ -7184,7 +7276,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsXbox;
     /// <summary>
-    /// Function: IsXbox
+    /// Function: IsXbox<br/>
+    /// Native code at BatmanAK.exe+0x47D580 in the Steam build
     /// </summary>
     public unsafe virtual bool IsXbox()
     {
@@ -7362,7 +7455,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioFade;
     /// <summary>
-    /// Function: SetAudioFade
+    /// Function: SetAudioFade<br/>
+    /// Native code at BatmanAK.exe+0x4DC380 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioFade(float Value)
     {
@@ -7493,7 +7587,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_IsFrontendSaveSet;
     /// <summary>
-    /// Function: FE_IsFrontendSaveSet
+    /// Function: FE_IsFrontendSaveSet<br/>
+    /// Native code at BatmanAK.exe+0x47D530 in the Steam build
     /// </summary>
     public unsafe virtual bool FE_IsFrontendSaveSet()
     {
@@ -7514,7 +7609,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetNeedsFrontendSave;
     /// <summary>
-    /// Function: FE_SetNeedsFrontendSave
+    /// Function: FE_SetNeedsFrontendSave<br/>
+    /// Native code at BatmanAK.exe+0x4DC260 in the Steam build
     /// </summary>
     public unsafe virtual void FE_SetNeedsFrontendSave(bool bState)
     {
@@ -7652,7 +7748,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_AreNotifiesBlocked;
     /// <summary>
-    /// Function: FE_AreNotifiesBlocked
+    /// Function: FE_AreNotifiesBlocked<br/>
+    /// Native code at BatmanAK.exe+0x47D4E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FE_AreNotifiesBlocked()
     {
@@ -7673,7 +7770,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_UnblockInitialNotifies;
     /// <summary>
-    /// Function: FE_UnblockInitialNotifies
+    /// Function: FE_UnblockInitialNotifies<br/>
+    /// Native code at BatmanAK.exe+0x4742E0 in the Steam build
     /// </summary>
     public unsafe virtual void FE_UnblockInitialNotifies()
     {
@@ -8005,7 +8103,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhotoQuickMode;
     /// <summary>
-    /// Function: SetPhotoQuickMode
+    /// Function: SetPhotoQuickMode<br/>
+    /// Native code at BatmanAK.exe+0x4DC140 in the Steam build
     /// </summary>
     public unsafe virtual void SetPhotoQuickMode(bool bEnabled)
     {
@@ -8027,7 +8126,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhotoQuickMode;
     /// <summary>
-    /// Function: GetPhotoQuickMode
+    /// Function: GetPhotoQuickMode<br/>
+    /// Native code at BatmanAK.exe+0x47D490 in the Steam build
     /// </summary>
     public unsafe virtual bool GetPhotoQuickMode()
     {
@@ -8048,7 +8148,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRegularGamePauseFlag;
     /// <summary>
-    /// Function: SetRegularGamePauseFlag
+    /// Function: SetRegularGamePauseFlag<br/>
+    /// Native code at BatmanAK.exe+0x4DC020 in the Steam build
     /// </summary>
     public unsafe virtual void SetRegularGamePauseFlag(bool bState)
     {
@@ -8382,7 +8483,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TimeToHoursMinsSecs;
     /// <summary>
-    /// Function: TimeToHoursMinsSecs
+    /// Function: TimeToHoursMinsSecs<br/>
+    /// Native code at BatmanAK.exe+0x4DBDF0 in the Steam build
     /// </summary>
     public unsafe virtual void TimeToHoursMinsSecs(float inTime, out int outHours, out int outMins, out int outSecs)
     {
@@ -8783,7 +8885,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalFlag;
     /// <summary>
-    /// Function: GetGlobalFlag
+    /// Function: GetGlobalFlag<br/>
+    /// Native code at BatmanAK.exe+0x53D400 in the Steam build
     /// </summary>
     public unsafe virtual bool GetGlobalFlag(BmSDK.FStringArg FlagName)
     {
@@ -8806,7 +8909,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlag;
     /// <summary>
-    /// Function: SetGlobalFlag
+    /// Function: SetGlobalFlag<br/>
+    /// Native code at BatmanAK.exe+0x53D210 in the Steam build
     /// </summary>
     public unsafe virtual void SetGlobalFlag(BmSDK.FStringArg FlagName, bool bValue)
     {
@@ -8942,7 +9046,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Convert_EControlIconEnumToString;
     /// <summary>
-    /// Function: Convert_EControlIconEnumToString
+    /// Function: Convert_EControlIconEnumToString<br/>
+    /// Native code at BatmanAK.exe+0x53D110 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString Convert_EControlIconEnumToString(BmSDK.BmGame.RHUDPrompt.EControlIcon Code, bool bRemoveCI_Prefix = default)
     {
@@ -8965,7 +9070,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUIMouse;
     /// <summary>
-    /// Function: SetUIMouse
+    /// Function: SetUIMouse<br/>
+    /// Native code at BatmanAK.exe+0x4DBCD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetUIMouse(bool bAlwaysShow)
     {
@@ -8987,7 +9093,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveHUDProjectCall;
     /// <summary>
-    /// Function: RemoveHUDProjectCall
+    /// Function: RemoveHUDProjectCall<br/>
+    /// Native code at BatmanAK.exe+0x4DBBB0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveHUDProjectCall(BmSDK.BmGame.RGFxMovie TheRGFxMovie)
     {
@@ -9009,7 +9116,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddHUDProjectCall;
     /// <summary>
-    /// Function: AddHUDProjectCall
+    /// Function: AddHUDProjectCall<br/>
+    /// Native code at BatmanAK.exe+0x4DBA90 in the Steam build
     /// </summary>
     public unsafe virtual void AddHUDProjectCall(BmSDK.BmGame.RGFxMovie TheRGFxMovie)
     {
@@ -9031,7 +9139,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGRI;
     /// <summary>
-    /// Function: GetGRI
+    /// Function: GetGRI<br/>
+    /// Native code at BatmanAK.exe+0x47D440 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI GetGRI()
     {
@@ -9052,7 +9161,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRGI;
     /// <summary>
-    /// Function: GetRGI
+    /// Function: GetRGI<br/>
+    /// Native code at BatmanAK.exe+0x47D3F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo GetRGI()
     {
@@ -9187,7 +9297,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInfocastMsg;
     /// <summary>
-    /// Function: GetInfocastMsg
+    /// Function: GetInfocastMsg<br/>
+    /// Native code at BatmanAK.exe+0x53D090 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetInfocastMsg()
     {
@@ -9208,7 +9319,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInfocastMsg;
     /// <summary>
-    /// Function: SetInfocastMsg
+    /// Function: SetInfocastMsg<br/>
+    /// Native code at BatmanAK.exe+0x53CF50 in the Steam build
     /// </summary>
     public unsafe virtual void SetInfocastMsg(BmSDK.FStringArg msg)
     {
@@ -9273,7 +9385,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckContentExists;
     /// <summary>
-    /// Function: CheckContentExists
+    /// Function: CheckContentExists<br/>
+    /// Native code at BatmanAK.exe+0x53CE00 in the Steam build
     /// </summary>
     public unsafe virtual int CheckContentExists(BmSDK.FStringArg Path)
     {
@@ -9735,7 +9848,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsPastInitialBinding;
     /// <summary>
-    /// Function: Live_IsPastInitialBinding
+    /// Function: Live_IsPastInitialBinding<br/>
+    /// Native code at BatmanAK.exe+0x47D3A0 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsPastInitialBinding()
     {
@@ -9756,7 +9870,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetPastInitialBinding;
     /// <summary>
-    /// Function: Live_SetPastInitialBinding
+    /// Function: Live_SetPastInitialBinding<br/>
+    /// Native code at BatmanAK.exe+0x4DB970 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetPastInitialBinding(bool bYes)
     {
@@ -9778,7 +9893,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetInitialAchievementsDisabled;
     /// <summary>
-    /// Function: Live_SetInitialAchievementsDisabled
+    /// Function: Live_SetInitialAchievementsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x47D360 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetInitialAchievementsDisabled()
     {
@@ -9799,7 +9915,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_DecompressToPersistentData;
     /// <summary>
-    /// Function: Live_DecompressToPersistentData
+    /// Function: Live_DecompressToPersistentData<br/>
+    /// Native code at BatmanAK.exe+0x47D320 in the Steam build
     /// </summary>
     public unsafe virtual void Live_DecompressToPersistentData()
     {
@@ -9820,7 +9937,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_HaveValidSavedStoryData;
     /// <summary>
-    /// Function: Live_HaveValidSavedStoryData
+    /// Function: Live_HaveValidSavedStoryData<br/>
+    /// Native code at BatmanAK.exe+0x47D2D0 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_HaveValidSavedStoryData()
     {
@@ -9841,7 +9959,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckActiveSaveDeviceFreeSpace;
     /// <summary>
-    /// Function: CheckActiveSaveDeviceFreeSpace
+    /// Function: CheckActiveSaveDeviceFreeSpace<br/>
+    /// Native code at BatmanAK.exe+0x4DB830 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckActiveSaveDeviceFreeSpace(int SizeNeeded)
     {
@@ -9863,7 +9982,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveSaveDeviceName;
     /// <summary>
-    /// Function: GetActiveSaveDeviceName
+    /// Function: GetActiveSaveDeviceName<br/>
+    /// Native code at BatmanAK.exe+0x53CD80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetActiveSaveDeviceName()
     {
@@ -9884,7 +10004,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveSaveDevice;
     /// <summary>
-    /// Function: GetActiveSaveDevice
+    /// Function: GetActiveSaveDevice<br/>
+    /// Native code at BatmanAK.exe+0x47D280 in the Steam build
     /// </summary>
     public unsafe virtual int GetActiveSaveDevice()
     {
@@ -9905,7 +10026,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveSaveDevice;
     /// <summary>
-    /// Function: SetActiveSaveDevice
+    /// Function: SetActiveSaveDevice<br/>
+    /// Native code at BatmanAK.exe+0x53CB90 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveSaveDevice(int InDeviceID, BmSDK.FStringArg InDeviceName)
     {
@@ -9929,7 +10051,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_InvalidateStoryData;
     /// <summary>
-    /// Function: Live_InvalidateStoryData
+    /// Function: Live_InvalidateStoryData<br/>
+    /// Native code at BatmanAK.exe+0x47D240 in the Steam build
     /// </summary>
     public unsafe virtual void Live_InvalidateStoryData()
     {
@@ -9950,7 +10073,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_InvalidateMemorySave;
     /// <summary>
-    /// Function: Live_InvalidateMemorySave
+    /// Function: Live_InvalidateMemorySave<br/>
+    /// Native code at BatmanAK.exe+0x47D200 in the Steam build
     /// </summary>
     public unsafe virtual void Live_InvalidateMemorySave()
     {
@@ -9971,7 +10095,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_InvalidateMemorySaveAndStorageDevice;
     /// <summary>
-    /// Function: Live_InvalidateMemorySaveAndStorageDevice
+    /// Function: Live_InvalidateMemorySaveAndStorageDevice<br/>
+    /// Native code at BatmanAK.exe+0x47D1C0 in the Steam build
     /// </summary>
     public unsafe virtual void Live_InvalidateMemorySaveAndStorageDevice()
     {
@@ -9992,7 +10117,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsSavingEnabled;
     /// <summary>
-    /// Function: Live_IsSavingEnabled
+    /// Function: Live_IsSavingEnabled<br/>
+    /// Native code at BatmanAK.exe+0x47D170 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsSavingEnabled()
     {
@@ -10013,7 +10139,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SlotWasSelected;
     /// <summary>
-    /// Function: Live_SlotWasSelected
+    /// Function: Live_SlotWasSelected<br/>
+    /// Native code at BatmanAK.exe+0x47D120 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_SlotWasSelected()
     {
@@ -10034,7 +10161,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetSavingEnabledState;
     /// <summary>
-    /// Function: Live_SetSavingEnabledState
+    /// Function: Live_SetSavingEnabledState<br/>
+    /// Native code at BatmanAK.exe+0x4DB710 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetSavingEnabledState(bool bState)
     {
@@ -10056,7 +10184,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_EnableSaving;
     /// <summary>
-    /// Function: Live_EnableSaving
+    /// Function: Live_EnableSaving<br/>
+    /// Native code at BatmanAK.exe+0x47D0E0 in the Steam build
     /// </summary>
     public unsafe virtual void Live_EnableSaving()
     {
@@ -10077,7 +10206,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_DisableSaving;
     /// <summary>
-    /// Function: Live_DisableSaving
+    /// Function: Live_DisableSaving<br/>
+    /// Native code at BatmanAK.exe+0x473780 in the Steam build
     /// </summary>
     public unsafe virtual void Live_DisableSaving()
     {
@@ -10098,7 +10228,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_GetLastSaveSuccess;
     /// <summary>
-    /// Function: Live_GetLastSaveSuccess
+    /// Function: Live_GetLastSaveSuccess<br/>
+    /// Native code at BatmanAK.exe+0x47D090 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_GetLastSaveSuccess()
     {
@@ -10119,7 +10250,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetLastSaveSuccess;
     /// <summary>
-    /// Function: Live_SetLastSaveSuccess
+    /// Function: Live_SetLastSaveSuccess<br/>
+    /// Native code at BatmanAK.exe+0x4F44E0 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetLastSaveSuccess(bool bSuccess)
     {
@@ -10169,7 +10301,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsMemoryCard;
     /// <summary>
-    /// Function: Live_IsMemoryCard
+    /// Function: Live_IsMemoryCard<br/>
+    /// Native code at BatmanAK.exe+0x4DB5D0 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsMemoryCard(int DeviceID)
     {
@@ -10294,7 +10427,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsStorageSelectPending;
     /// <summary>
-    /// Function: Live_IsStorageSelectPending
+    /// Function: Live_IsStorageSelectPending<br/>
+    /// Native code at BatmanAK.exe+0x47D040 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsStorageSelectPending()
     {
@@ -10315,7 +10449,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetStorageSelectPending;
     /// <summary>
-    /// Function: Live_SetStorageSelectPending
+    /// Function: Live_SetStorageSelectPending<br/>
+    /// Native code at BatmanAK.exe+0x4DB4B0 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetStorageSelectPending(bool bState)
     {
@@ -10826,7 +10961,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetRequestOnline;
     /// <summary>
-    /// Function: Live_SetRequestOnline
+    /// Function: Live_SetRequestOnline<br/>
+    /// Native code at BatmanAK.exe+0x4DB390 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetRequestOnline(bool State)
     {
@@ -10848,7 +10984,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsRequestOnline;
     /// <summary>
-    /// Function: Live_IsRequestOnline
+    /// Function: Live_IsRequestOnline<br/>
+    /// Native code at BatmanAK.exe+0x47CFF0 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsRequestOnline()
     {
@@ -10911,7 +11048,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_GetSuspendedTime;
     /// <summary>
-    /// Function: Live_GetSuspendedTime
+    /// Function: Live_GetSuspendedTime<br/>
+    /// Native code at BatmanAK.exe+0x47CFA0 in the Steam build
     /// </summary>
     public unsafe virtual float Live_GetSuspendedTime()
     {
@@ -10932,7 +11070,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsPLMRebind;
     /// <summary>
-    /// Function: Live_IsPLMRebind
+    /// Function: Live_IsPLMRebind<br/>
+    /// Native code at BatmanAK.exe+0x47CF50 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsPLMRebind()
     {
@@ -10953,7 +11092,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetPLMRebind;
     /// <summary>
-    /// Function: Live_SetPLMRebind
+    /// Function: Live_SetPLMRebind<br/>
+    /// Native code at BatmanAK.exe+0x4DB270 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetPLMRebind(bool bRebind)
     {
@@ -10975,7 +11115,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsNetworkStatusError;
     /// <summary>
-    /// Function: Live_IsNetworkStatusError
+    /// Function: Live_IsNetworkStatusError<br/>
+    /// Native code at BatmanAK.exe+0x47CF00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ELive_LiveError Live_IsNetworkStatusError()
     {
@@ -10996,7 +11137,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetNetworkStatusError;
     /// <summary>
-    /// Function: Live_SetNetworkStatusError
+    /// Function: Live_SetNetworkStatusError<br/>
+    /// Native code at BatmanAK.exe+0x47CE80 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetNetworkStatusError(BmSDK.BmGame.RGameInfo.ELive_LiveError State)
     {
@@ -11018,7 +11160,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsLoginStatusError;
     /// <summary>
-    /// Function: Live_IsLoginStatusError
+    /// Function: Live_IsLoginStatusError<br/>
+    /// Native code at BatmanAK.exe+0x47CE30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ELive_LiveError Live_IsLoginStatusError()
     {
@@ -11039,7 +11182,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetLoginStatusError;
     /// <summary>
-    /// Function: Live_SetLoginStatusError
+    /// Function: Live_SetLoginStatusError<br/>
+    /// Native code at BatmanAK.exe+0x47CDB0 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetLoginStatusError(BmSDK.BmGame.RGameInfo.ELive_LiveError State)
     {
@@ -11061,7 +11205,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_IsNewDLCAvailable;
     /// <summary>
-    /// Function: Live_IsNewDLCAvailable
+    /// Function: Live_IsNewDLCAvailable<br/>
+    /// Native code at BatmanAK.exe+0x47CD60 in the Steam build
     /// </summary>
     public unsafe virtual bool Live_IsNewDLCAvailable()
     {
@@ -11082,7 +11227,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Live_SetNewDLCAvailable;
     /// <summary>
-    /// Function: Live_SetNewDLCAvailable
+    /// Function: Live_SetNewDLCAvailable<br/>
+    /// Native code at BatmanAK.exe+0x4DB100 in the Steam build
     /// </summary>
     public unsafe virtual void Live_SetNewDLCAvailable(bool bState, bool bAlwaysNotify = default)
     {
@@ -11193,7 +11339,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWBIDLogin;
     /// <summary>
-    /// Function: UpdateWBIDLogin
+    /// Function: UpdateWBIDLogin<br/>
+    /// Native code at BatmanAK.exe+0x47CD20 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWBIDLogin()
     {
@@ -11214,7 +11361,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearWBIDLogin;
     /// <summary>
-    /// Function: ClearWBIDLogin
+    /// Function: ClearWBIDLogin<br/>
+    /// Native code at BatmanAK.exe+0x47CCE0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearWBIDLogin()
     {
@@ -11308,7 +11456,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StealthModeModifyPlayerMovement;
     /// <summary>
-    /// Function: StealthModeModifyPlayerMovement
+    /// Function: StealthModeModifyPlayerMovement<br/>
+    /// Native code at BatmanAK.exe+0x4DAF90 in the Steam build
     /// </summary>
     public unsafe virtual float StealthModeModifyPlayerMovement(out System.Numerics.Vector3 MoveDirection, float DeltaTime)
     {
@@ -11333,7 +11482,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AmIInSoftCover;
     /// <summary>
-    /// Function: AmIInSoftCover
+    /// Function: AmIInSoftCover<br/>
+    /// Native code at BatmanAK.exe+0x4DAE50 in the Steam build
     /// </summary>
     public unsafe virtual bool AmIInSoftCover(float DeltaTime)
     {
@@ -11412,7 +11562,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSilentPredLookAt;
     /// <summary>
-    /// Function: UpdateSilentPredLookAt
+    /// Function: UpdateSilentPredLookAt<br/>
+    /// Native code at BatmanAK.exe+0x4DAD20 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSilentPredLookAt(float DeltaTime)
     {
@@ -11434,7 +11585,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForGlideAttackTarget;
     /// <summary>
-    /// Function: CheckForGlideAttackTarget
+    /// Function: CheckForGlideAttackTarget<br/>
+    /// Native code at BatmanAK.exe+0x47CBE0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForGlideAttackTarget(System.Numerics.Vector3 CheckStartLocation, BmSDK.Engine.Actor MyTarget = default, BmSDK.BmGame.RPlayerController.EGlideAttackTargettingType TargettingType = default)
     {
@@ -11458,7 +11610,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceToJump;
     /// <summary>
-    /// Function: CheckSpaceToJump
+    /// Function: CheckSpaceToJump<br/>
+    /// Native code at BatmanAK.exe+0x47CA30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerController.JumpSpaceResult CheckSpaceToJump(System.Numerics.Vector3 StickDirection, out System.Numerics.Vector3 JumpDir, out BmSDK.BmGame.RNoGlideVolume HitGlideVol)
     {
@@ -11586,7 +11739,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckToDropOffLedgeForLowFloor;
     /// <summary>
-    /// Function: CheckToDropOffLedgeForLowFloor
+    /// Function: CheckToDropOffLedgeForLowFloor<br/>
+    /// Native code at BatmanAK.exe+0x47C9E0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckToDropOffLedgeForLowFloor()
     {
@@ -11621,7 +11775,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForClimbingVolume;
     /// <summary>
-    /// Function: CheckForClimbingVolume
+    /// Function: CheckForClimbingVolume<br/>
+    /// Native code at BatmanAK.exe+0x47C940 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForClimbingVolume(System.Numerics.Vector3 TestPosition)
     {
@@ -11713,7 +11868,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldAutoClimbAfterGrapple;
     /// <summary>
-    /// Function: ShouldAutoClimbAfterGrapple
+    /// Function: ShouldAutoClimbAfterGrapple<br/>
+    /// Native code at BatmanAK.exe+0x47C8A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldAutoClimbAfterGrapple(System.Numerics.Vector3 ApproxClimbLoc)
     {
@@ -11749,7 +11905,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceForGrappleLaunch;
     /// <summary>
-    /// Function: CheckSpaceForGrappleLaunch
+    /// Function: CheckSpaceForGrappleLaunch<br/>
+    /// Native code at BatmanAK.exe+0x47C7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceForGrappleLaunch(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, float ExtraHeight = default)
     {
@@ -11774,7 +11931,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeStartGrappleMovement;
     /// <summary>
-    /// Function: NativeStartGrappleMovement
+    /// Function: NativeStartGrappleMovement<br/>
+    /// Native code at BatmanAK.exe+0x47C770 in the Steam build
     /// </summary>
     public unsafe virtual void NativeStartGrappleMovement()
     {
@@ -11795,7 +11953,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoGrappleMovement;
     /// <summary>
-    /// Function: DoGrappleMovement
+    /// Function: DoGrappleMovement<br/>
+    /// Native code at BatmanAK.exe+0x4DABF0 in the Steam build
     /// </summary>
     public unsafe virtual void DoGrappleMovement(float DeltaTime)
     {
@@ -11986,7 +12145,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFallAnim;
     /// <summary>
-    /// Function: UpdateFallAnim
+    /// Function: UpdateFallAnim<br/>
+    /// Native code at BatmanAK.exe+0x4DAA80 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFallAnim(float DeltaTime, float FallScale = default)
     {
@@ -12009,7 +12169,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HaveRoomToCapeGlide;
     /// <summary>
-    /// Function: HaveRoomToCapeGlide
+    /// Function: HaveRoomToCapeGlide<br/>
+    /// Native code at BatmanAK.exe+0x47C6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool HaveRoomToCapeGlide(System.Numerics.Vector3 MoveDir = default)
     {
@@ -12031,7 +12192,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFallingAttackTarget;
     /// <summary>
-    /// Function: GetFallingAttackTarget
+    /// Function: GetFallingAttackTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C650 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetFallingAttackTarget()
     {
@@ -12152,7 +12314,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNextSuperGlideTarget;
     /// <summary>
-    /// Function: FindNextSuperGlideTarget
+    /// Function: FindNextSuperGlideTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C600 in the Steam build
     /// </summary>
     public unsafe virtual bool FindNextSuperGlideTarget()
     {
@@ -12173,7 +12336,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateCapeGlideAltitude;
     /// <summary>
-    /// Function: CalculateCapeGlideAltitude
+    /// Function: CalculateCapeGlideAltitude<br/>
+    /// Native code at BatmanAK.exe+0x47C5B0 in the Steam build
     /// </summary>
     public unsafe virtual float CalculateCapeGlideAltitude()
     {
@@ -12194,7 +12358,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WillIHitCapeGlideTarget;
     /// <summary>
-    /// Function: WillIHitCapeGlideTarget
+    /// Function: WillIHitCapeGlideTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C560 in the Steam build
     /// </summary>
     public unsafe virtual bool WillIHitCapeGlideTarget()
     {
@@ -12215,7 +12380,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CapeGlideSlideOffWall;
     /// <summary>
-    /// Function: CapeGlideSlideOffWall
+    /// Function: CapeGlideSlideOffWall<br/>
+    /// Native code at BatmanAK.exe+0x47C4D0 in the Steam build
     /// </summary>
     public unsafe virtual void CapeGlideSlideOffWall(System.Numerics.Vector3 HitNormal)
     {
@@ -12237,7 +12403,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldIKickOffWall;
     /// <summary>
-    /// Function: ShouldIKickOffWall
+    /// Function: ShouldIKickOffWall<br/>
+    /// Native code at BatmanAK.exe+0x4DA800 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldIKickOffWall(BmSDK.Engine.Actor HitWall, System.Numerics.Vector3 HitNormal, BmSDK.Engine.PrimitiveComponent HitComponent, bool bHardLand = default)
     {
@@ -12262,7 +12429,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldIReallyLand;
     /// <summary>
-    /// Function: ShouldIReallyLand
+    /// Function: ShouldIReallyLand<br/>
+    /// Native code at BatmanAK.exe+0x4DA680 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldIReallyLand(BmSDK.Engine.Actor HitFloor, out System.Numerics.Vector3 HitNormal)
     {
@@ -12287,7 +12455,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCapeKickCameraRotation;
     /// <summary>
-    /// Function: FindCapeKickCameraRotation
+    /// Function: FindCapeKickCameraRotation<br/>
+    /// Native code at BatmanAK.exe+0x47C470 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator FindCapeKickCameraRotation()
     {
@@ -12308,7 +12477,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialKickTarget;
     /// <summary>
-    /// Function: GetAerialKickTarget
+    /// Function: GetAerialKickTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C420 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetAerialKickTarget()
     {
@@ -12329,7 +12499,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckCapeGlide;
     /// <summary>
-    /// Function: CheckCapeGlide
+    /// Function: CheckCapeGlide<br/>
+    /// Native code at BatmanAK.exe+0x47C3D0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckCapeGlide()
     {
@@ -12798,7 +12969,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForAboveTakedownTarget;
     /// <summary>
-    /// Function: CheckForAboveTakedownTarget
+    /// Function: CheckForAboveTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C390 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForAboveTakedownTarget()
     {
@@ -12819,7 +12991,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerWalkingSpecialMove;
     /// <summary>
-    /// Function: TriggerWalkingSpecialMove
+    /// Function: TriggerWalkingSpecialMove<br/>
+    /// Native code at BatmanAK.exe+0x4DA510 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerWalkingSpecialMove(float DeltaTime, System.Numerics.Vector3 MoveDirection)
     {
@@ -12842,7 +13015,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WalkingPlayerMovement;
     /// <summary>
-    /// Function: WalkingPlayerMovement
+    /// Function: WalkingPlayerMovement<br/>
+    /// Native code at BatmanAK.exe+0x4DA3E0 in the Steam build
     /// </summary>
     public unsafe virtual void WalkingPlayerMovement(float DeltaTime)
     {
@@ -12864,7 +13038,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForGlassAttackTarget;
     /// <summary>
-    /// Function: CheckForGlassAttackTarget
+    /// Function: CheckForGlassAttackTarget<br/>
+    /// Native code at BatmanAK.exe+0x47C350 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForGlassAttackTarget()
     {
@@ -12885,7 +13060,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AmIStandingNextToFeature;
     /// <summary>
-    /// Function: AmIStandingNextToFeature
+    /// Function: AmIStandingNextToFeature<br/>
+    /// Native code at BatmanAK.exe+0x4DA1F0 in the Steam build
     /// </summary>
     public unsafe virtual bool AmIStandingNextToFeature(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveTypesContainer FeatureType, float Distance, out System.Numerics.Vector3 FeatureNormal)
     {
@@ -12939,7 +13115,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LandOnRailing;
     /// <summary>
-    /// Function: LandOnRailing
+    /// Function: LandOnRailing<br/>
+    /// Native code at BatmanAK.exe+0x47C2A0 in the Steam build
     /// </summary>
     public unsafe virtual bool LandOnRailing(bool bActuallyLanding = default)
     {
@@ -13052,7 +13229,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNextChainTakedownTarget;
     /// <summary>
-    /// Function: FindNextChainTakedownTarget
+    /// Function: FindNextChainTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x5618B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindNextChainTakedownTarget(out BmSDK.TArray<BmSDK.BmGame.RPawnVillain> CurrentTargets, float Range, System.Numerics.Vector3 CheckDirection = default, bool bCheckFromBatmansPosition = default, bool bPrioritiseEnemiesOnScreen = default, bool bCanTargetAwareEnemies = default)
     {
@@ -13165,7 +13343,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchPlayerInput;
     /// <summary>
-    /// Function: SwitchPlayerInput
+    /// Function: SwitchPlayerInput<br/>
+    /// Native code at BatmanAK.exe+0x4DA0B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SwitchPlayerInput(BmSDK.BmGame.RPlayerController OtherController)
     {
@@ -13187,7 +13366,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldIFallOffEdge;
     /// <summary>
-    /// Function: ShouldIFallOffEdge
+    /// Function: ShouldIFallOffEdge<br/>
+    /// Native code at BatmanAK.exe+0x47C1C0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldIFallOffEdge(bool bCheckForLand = default, bool bForceCheck = default)
     {
@@ -13267,7 +13447,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentGadget;
     /// <summary>
-    /// Function: GetCurrentGadget
+    /// Function: GetCurrentGadget<br/>
+    /// Native code at BatmanAK.exe+0x47C170 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RInventoryGadget GetCurrentGadget()
     {
@@ -13533,7 +13714,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StretchHeadMode;
     /// <summary>
-    /// Function: StretchHeadMode
+    /// Function: StretchHeadMode<br/>
+    /// Native code at BatmanAK.exe+0x4D9F90 in the Steam build
     /// </summary>
     public unsafe virtual void StretchHeadMode(int Value)
     {
@@ -13698,7 +13880,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActualStickDir2d;
     /// <summary>
-    /// Function: GetActualStickDir2d
+    /// Function: GetActualStickDir2d<br/>
+    /// Native code at BatmanAK.exe+0x47C110 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetActualStickDir2d()
     {
@@ -13888,7 +14071,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumOctTreePrimitives;
     /// <summary>
-    /// Function: GetNumOctTreePrimitives
+    /// Function: GetNumOctTreePrimitives<br/>
+    /// Native code at BatmanAK.exe+0x47C0C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumOctTreePrimitives()
     {
@@ -13927,7 +14111,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVModifier;
     /// <summary>
-    /// Function: GetFOVModifier
+    /// Function: GetFOVModifier<br/>
+    /// Native code at BatmanAK.exe+0x47C070 in the Steam build
     /// </summary>
     public unsafe virtual float GetFOVModifier()
     {
@@ -14018,7 +14203,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceOnEithSide;
     /// <summary>
-    /// Function: CheckSpaceOnEithSide
+    /// Function: CheckSpaceOnEithSide<br/>
+    /// Native code at BatmanAK.exe+0x47BF80 in the Steam build
     /// </summary>
     public unsafe virtual void CheckSpaceOnEithSide(out int LeftClear, out int RightClear)
     {
@@ -14076,7 +14262,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CapeGlideTargetOutOfGlideKickAngle;
     /// <summary>
-    /// Function: CapeGlideTargetOutOfGlideKickAngle
+    /// Function: CapeGlideTargetOutOfGlideKickAngle<br/>
+    /// Native code at BatmanAK.exe+0x47BF30 in the Steam build
     /// </summary>
     public unsafe virtual bool CapeGlideTargetOutOfGlideKickAngle()
     {
@@ -14334,7 +14521,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceKillVolume;
     /// <summary>
-    /// Function: TraceKillVolume
+    /// Function: TraceKillVolume<br/>
+    /// Native code at BatmanAK.exe+0x4D9DA0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceKillVolume(out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, BmSDK.Engine.Volume VolumeActor)
     {
@@ -14361,7 +14549,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceWaterVolume;
     /// <summary>
-    /// Function: TraceWaterVolume
+    /// Function: TraceWaterVolume<br/>
+    /// Native code at BatmanAK.exe+0x47BE00 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceWaterVolume(out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 End, System.Numerics.Vector3 Start)
     {
@@ -14699,7 +14888,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDetectiveModeJammed;
     /// <summary>
-    /// Function: IsDetectiveModeJammed
+    /// Function: IsDetectiveModeJammed<br/>
+    /// Native code at BatmanAK.exe+0x47BDB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDetectiveModeJammed()
     {
@@ -14734,7 +14924,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDefaultJammedDetectiveHud;
     /// <summary>
-    /// Function: FindDefaultJammedDetectiveHud
+    /// Function: FindDefaultJammedDetectiveHud<br/>
+    /// Native code at BatmanAK.exe+0x47BD60 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.SwfMovie FindDefaultJammedDetectiveHud()
     {
@@ -14784,7 +14975,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingAlignedAimDir;
     /// <summary>
-    /// Function: GetRailingAlignedAimDir
+    /// Function: GetRailingAlignedAimDir<br/>
+    /// Native code at BatmanAK.exe+0x47BCB0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRailingAlignedAimDir(out System.Numerics.Vector3 AimDirection)
     {
@@ -14808,7 +15000,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForDiveOffEdge;
     /// <summary>
-    /// Function: CheckForDiveOffEdge
+    /// Function: CheckForDiveOffEdge<br/>
+    /// Native code at BatmanAK.exe+0x47BC10 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForDiveOffEdge(System.Numerics.Vector3 Direction)
     {
@@ -15263,7 +15456,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGrateCollision;
     /// <summary>
-    /// Function: UpdateGrateCollision
+    /// Function: UpdateGrateCollision<br/>
+    /// Native code at BatmanAK.exe+0x47BBD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGrateCollision()
     {
@@ -15313,7 +15507,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkWBIDNative;
     /// <summary>
-    /// Function: UnlinkWBIDNative
+    /// Function: UnlinkWBIDNative<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void UnlinkWBIDNative()
     {
@@ -15334,7 +15529,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeDebugOverlayNative;
     /// <summary>
-    /// Function: MatineeDebugOverlayNative
+    /// Function: MatineeDebugOverlayNative<br/>
+    /// Native code at BatmanAK.exe+0x47BB90 in the Steam build
     /// </summary>
     public unsafe virtual void MatineeDebugOverlayNative()
     {
@@ -15355,7 +15551,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerWtfNative;
     /// <summary>
-    /// Function: PlayerWtfNative
+    /// Function: PlayerWtfNative<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayerWtfNative()
     {
@@ -15390,7 +15587,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShowAutomaticTutorialText;
     /// <summary>
-    /// Function: CanShowAutomaticTutorialText
+    /// Function: CanShowAutomaticTutorialText<br/>
+    /// Native code at BatmanAK.exe+0x472C20 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShowAutomaticTutorialText()
     {
@@ -15411,7 +15609,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShowTutorialText;
     /// <summary>
-    /// Function: CanShowTutorialText
+    /// Function: CanShowTutorialText<br/>
+    /// Native code at BatmanAK.exe+0x472BD0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShowTutorialText()
     {
@@ -15828,7 +16027,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControllerTiltActive;
     /// <summary>
-    /// Function: SetControllerTiltActive
+    /// Function: SetControllerTiltActive<br/>
+    /// Native code at BatmanAK.exe+0x4A2D50 in the Steam build
     /// </summary>
     public unsafe override void SetControllerTiltActive(bool bActive)
     {
@@ -15850,7 +16050,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControllerTiltDesiredIfAvailable;
     /// <summary>
-    /// Function: SetControllerTiltDesiredIfAvailable
+    /// Function: SetControllerTiltDesiredIfAvailable<br/>
+    /// Native code at BatmanAK.exe+0xB8DDA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetControllerTiltDesiredIfAvailable(bool bActive)
     {
@@ -15872,7 +16073,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsControllerTiltActive;
     /// <summary>
-    /// Function: IsControllerTiltActive
+    /// Function: IsControllerTiltActive<br/>
+    /// Native code at BatmanAK.exe+0x46A740 in the Steam build
     /// </summary>
     public unsafe override bool IsControllerTiltActive()
     {
@@ -15950,7 +16152,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnInteractDebugging;
     /// <summary>
-    /// Function: TurnOnInteractDebugging
+    /// Function: TurnOnInteractDebugging<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void TurnOnInteractDebugging()
     {
@@ -15971,7 +16174,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnObstructionDebugging;
     /// <summary>
-    /// Function: TurnOnObstructionDebugging
+    /// Function: TurnOnObstructionDebugging<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void TurnOnObstructionDebugging()
     {
@@ -16178,7 +16382,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTouchingActorsPostPossess;
     /// <summary>
-    /// Function: UpdateTouchingActorsPostPossess
+    /// Function: UpdateTouchingActorsPostPossess<br/>
+    /// Native code at BatmanAK.exe+0x47BB50 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTouchingActorsPostPossess()
     {
@@ -16288,7 +16493,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLeftRightAxis;
     /// <summary>
-    /// Function: GetLeftRightAxis
+    /// Function: GetLeftRightAxis<br/>
+    /// Native code at BatmanAK.exe+0x47BA60 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLeftRightAxis(out System.Numerics.Vector3 MoveDirection, int NumDirections = default)
     {
@@ -16457,7 +16663,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessInput;
     /// <summary>
-    /// Function: PreProcessInput
+    /// Function: PreProcessInput<br/>
+    /// Native code at BatmanAK.exe+0x4D9C70 in the Steam build
     /// </summary>
     public unsafe virtual void PreProcessInput(float DeltaTime)
     {
@@ -16528,7 +16735,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckInterrogateTutorial;
     /// <summary>
-    /// Function: CheckInterrogateTutorial
+    /// Function: CheckInterrogateTutorial<br/>
+    /// Native code at BatmanAK.exe+0x47BA20 in the Steam build
     /// </summary>
     public unsafe virtual void CheckInterrogateTutorial()
     {
@@ -16681,7 +16889,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetCapeGlideWeights;
     /// <summary>
-    /// Function: ResetCapeGlideWeights
+    /// Function: ResetCapeGlideWeights<br/>
+    /// Native code at BatmanAK.exe+0x47B9E0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetCapeGlideWeights()
     {
@@ -17249,7 +17458,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInExternalCamera;
     /// <summary>
-    /// Function: IsInExternalCamera
+    /// Function: IsInExternalCamera<br/>
+    /// Native code at BatmanAK.exe+0x47B940 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInExternalCamera(BmSDK.Engine.CameraActor IgnoreThisCamera = default)
     {
@@ -17900,7 +18110,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CapeGlideMovement;
     /// <summary>
-    /// Function: CapeGlideMovement
+    /// Function: CapeGlideMovement<br/>
+    /// Native code at BatmanAK.exe+0x4D9A80 in the Steam build
     /// </summary>
     public unsafe virtual void CapeGlideMovement(BmSDK.Engine.Actor AttackTarget, float DeltaTime)
     {
@@ -17980,7 +18191,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVehicleTakedownTarget;
     /// <summary>
-    /// Function: UpdateVehicleTakedownTarget
+    /// Function: UpdateVehicleTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x47B900 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVehicleTakedownTarget()
     {
@@ -18001,7 +18213,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimationLocalBoneLocRotAtTime;
     /// <summary>
-    /// Function: GetAnimationLocalBoneLocRotAtTime
+    /// Function: GetAnimationLocalBoneLocRotAtTime<br/>
+    /// Native code at BatmanAK.exe+0x4D9660 in the Steam build
     /// </summary>
     public unsafe virtual void GetAnimationLocalBoneLocRotAtTime(BmSDK.BmGame.RPawnCharacter Character, BmSDK.Engine.AnimSequence AnimSeq, BmSDK.FName BoneName, float Time, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation)
     {
@@ -18032,7 +18245,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFreeSpot;
     /// <summary>
-    /// Function: IsFreeSpot
+    /// Function: IsFreeSpot<br/>
+    /// Native code at BatmanAK.exe+0x4D9350 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFreeSpot(out System.Numerics.Vector3 Loc, BmSDK.Rotator Rot, BmSDK.GameObject.FBox Bounds, bool FindFreeSpot, float MaxOffset = default, float RayTestZOffset = default, bool bOnlyCheckAABB = default, System.Numerics.Vector3 vRayCheckLocationOverride = default)
     {
@@ -18063,7 +18277,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeOfLastRagdollNotify;
     /// <summary>
-    /// Function: GetTimeOfLastRagdollNotify
+    /// Function: GetTimeOfLastRagdollNotify<br/>
+    /// Native code at BatmanAK.exe+0x4D9210 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeOfLastRagdollNotify(BmSDK.Engine.AnimSequence AnimSeq)
     {
@@ -18085,7 +18300,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThugStartLocationForTakedown;
     /// <summary>
-    /// Function: GetThugStartLocationForTakedown
+    /// Function: GetThugStartLocationForTakedown<br/>
+    /// Native code at BatmanAK.exe+0x4D8E80 in the Steam build
     /// </summary>
     public unsafe virtual void GetThugStartLocationForTakedown(out System.Numerics.Vector3 vOutPosition, out BmSDK.Rotator rOutRotation, BmSDK.Engine.SkeletalMeshComponent VictimMesh, BmSDK.Engine.AnimSequence Anim, System.Numerics.Vector3 vWorldReferencePosition, BmSDK.Rotator rWorldReferenceRotation, bool bMirrored)
     {
@@ -18117,7 +18333,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimSpaceToWorldSpaceTransform;
     /// <summary>
-    /// Function: GetAnimSpaceToWorldSpaceTransform
+    /// Function: GetAnimSpaceToWorldSpaceTransform<br/>
+    /// Native code at BatmanAK.exe+0x4D8AF0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAnimSpaceToWorldSpaceTransform(out System.Numerics.Vector3 animLoc, out BmSDK.Rotator AnimRot, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, BmSDK.Engine.AnimSequence AnimSeq, bool Mirrored, System.Numerics.Vector3 ReferenceLoc, BmSDK.Rotator ReferenceRot)
     {
@@ -18149,7 +18366,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimationLocalBoundsAtTime;
     /// <summary>
-    /// Function: GetAnimationLocalBoundsAtTime
+    /// Function: GetAnimationLocalBoundsAtTime<br/>
+    /// Native code at BatmanAK.exe+0x4D87A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBox GetAnimationLocalBoundsAtTime(BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, BmSDK.Engine.AnimSequence AnimSeq, float Time, bool bCharacterBonesOnly = default)
     {
@@ -18174,7 +18392,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFreeSpot;
     /// <summary>
-    /// Function: FindFreeSpot
+    /// Function: FindFreeSpot<br/>
+    /// Native code at BatmanAK.exe+0x47B7D0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindFreeSpot(System.Numerics.Vector3 BoxExtent, out System.Numerics.Vector3 SpotLocation, bool bCheckActors = default)
     {
@@ -18200,7 +18419,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesTargetPassAllTheWierdSpecialisedTakedownChecks;
     /// <summary>
-    /// Function: DoesTargetPassAllTheWierdSpecialisedTakedownChecks
+    /// Function: DoesTargetPassAllTheWierdSpecialisedTakedownChecks<br/>
+    /// Native code at BatmanAK.exe+0x4D8660 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesTargetPassAllTheWierdSpecialisedTakedownChecks(BmSDK.BmGame.RPawnVillain Target)
     {
@@ -18222,7 +18442,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTargetBehindGrate;
     /// <summary>
-    /// Function: CheckTargetBehindGrate
+    /// Function: CheckTargetBehindGrate<br/>
+    /// Native code at BatmanAK.exe+0x4D8520 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckTargetBehindGrate(BmSDK.BmGame.RRemoveableGrate Grate)
     {
@@ -18244,7 +18465,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTargetAboveCwFlipGrate;
     /// <summary>
-    /// Function: CheckTargetAboveCwFlipGrate
+    /// Function: CheckTargetAboveCwFlipGrate<br/>
+    /// Native code at BatmanAK.exe+0x47B780 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckTargetAboveCwFlipGrate()
     {
@@ -18265,7 +18487,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTargetAboveGrate;
     /// <summary>
-    /// Function: CheckTargetAboveGrate
+    /// Function: CheckTargetAboveGrate<br/>
+    /// Native code at BatmanAK.exe+0x4D8250 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckTargetAboveGrate(bool bCheckForDoubleTakedown, float Attack2ndTargetSearchRadius, float AttackDoubleTakedownDistance)
     {
@@ -18289,7 +18512,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAboveTargetBasicChecks;
     /// <summary>
-    /// Function: CheckAboveTargetBasicChecks
+    /// Function: CheckAboveTargetBasicChecks<br/>
+    /// Native code at BatmanAK.exe+0x4D8070 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAboveTargetBasicChecks(BmSDK.BmGame.RPawnVillain Victim, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 PawnDirection, bool bServerSideChecks = default)
     {
@@ -18314,7 +18538,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAboveTargetBelow;
     /// <summary>
-    /// Function: CheckAboveTargetBelow
+    /// Function: CheckAboveTargetBelow<br/>
+    /// Native code at BatmanAK.exe+0x4D7D50 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAboveTargetBelow(BmSDK.BmGame.RPawnVillain Victim, System.Numerics.Vector3 FeatureLocation, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 AimDirection, float fMaximumTakedownHeight, bool bIgnoreGlassWalls = default, bool bCheckSpaceBelowFeature = default)
     {
@@ -18342,7 +18567,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAboveTargetInFront;
     /// <summary>
-    /// Function: CheckAboveTargetInFront
+    /// Function: CheckAboveTargetInFront<br/>
+    /// Native code at BatmanAK.exe+0x4D7B70 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAboveTargetInFront(BmSDK.BmGame.RPawnVillain Victim, System.Numerics.Vector3 FeatureLocation, System.Numerics.Vector3 FeatureDirection, bool bCheckSpaceBelowFeature = default)
     {
@@ -18367,7 +18593,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckInterrogationTargetNative;
     /// <summary>
-    /// Function: CheckInterrogationTargetNative
+    /// Function: CheckInterrogationTargetNative<br/>
+    /// Native code at BatmanAK.exe+0x4D76C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckInterrogationTargetNative(BmSDK.BmGame.RPawnVillain Villain, float DistSqr, float AttackRadiusSqr, bool bNeedsReachCheck, bool bAllowedToAttackFlooredEnemies, out System.Numerics.Vector3 AttackCheckPos)
     {
@@ -18396,7 +18623,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckStealthAttackTargetNative;
     /// <summary>
-    /// Function: CheckStealthAttackTargetNative
+    /// Function: CheckStealthAttackTargetNative<br/>
+    /// Native code at BatmanAK.exe+0x4D6EA0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckStealthAttackTargetNative(BmSDK.BmGame.RPawnVillain Villain, float DistSqr, float AttackRadiusSqr, bool NeedsReachCheck, bool bAllowedToAttackFlooredEnemies, bool bAllowAwareEnemies, out System.Numerics.Vector3 AttackCheckPos, BmSDK.Class TakedownDamageType, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator BarrierLocator, float ReachCheckRadius, bool bCheckVillainInFrontLookAway, out BmSDK.Engine.Actor FractureWall, bool Debug, bool DisallowSilentTakedowns, bool bUseIgnoreRailingLineCheck)
     {
@@ -18438,7 +18666,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDoubleStealthAttackTargetNative;
     /// <summary>
-    /// Function: FindDoubleStealthAttackTargetNative
+    /// Function: FindDoubleStealthAttackTargetNative<br/>
+    /// Native code at BatmanAK.exe+0x4D67D0 in the Steam build
     /// </summary>
     public unsafe virtual void FindDoubleStealthAttackTargetNative(out System.Numerics.Vector3 AttackSearchPos, float AttackSearchRadius, float Attack2ndTargetSearchRadius, float AttackDoubleTakedownDistance, out System.Numerics.Vector3 AttackCheckPos, bool NeedsReachCheck, bool bAllowedToAttackFlooredEnemies, BmSDK.Class TakedownDamageType, out BmSDK.BmGame.RPawnVillain Villain1, out BmSDK.BmGame.RPawnVillain Villain2, out BmSDK.Engine.Actor FractureWall, bool bUseIgnoreRailingLineCheck)
     {
@@ -18481,7 +18710,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindStealthAttackTargetNative;
     /// <summary>
-    /// Function: FindStealthAttackTargetNative
+    /// Function: FindStealthAttackTargetNative<br/>
+    /// Native code at BatmanAK.exe+0x4D6220 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindStealthAttackTargetNative(out System.Numerics.Vector3 AttackSearchPos, float AttackSearchRadius, out System.Numerics.Vector3 AttackCheckPos, bool NeedsReachCheck, bool bAllowedToAttackFlooredEnemies, BmSDK.Class TakedownDamageType, bool bCheckForInterrogation, out BmSDK.Engine.Actor FractureWall, bool bUseIgnoreRailingLineCheck)
     {
@@ -18517,7 +18747,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFractureWallBase;
     /// <summary>
-    /// Function: GetFractureWallBase
+    /// Function: GetFractureWallBase<br/>
+    /// Native code at BatmanAK.exe+0x4D6060 in the Steam build
     /// </summary>
     public unsafe virtual void GetFractureWallBase(BmSDK.BmGame.RFractureWallBase Wall, out System.Numerics.Vector3 PointA, out System.Numerics.Vector3 PointB)
     {
@@ -18895,7 +19126,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPredatorSuccess;
     /// <summary>
-    /// Function: SendHydraEventPredatorSuccess
+    /// Function: SendHydraEventPredatorSuccess<br/>
+    /// Native code at BatmanAK.exe+0x47B740 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPredatorSuccess()
     {
@@ -18916,7 +19148,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCombatSuccess;
     /// <summary>
-    /// Function: SendHydraEventCombatSuccess
+    /// Function: SendHydraEventCombatSuccess<br/>
+    /// Native code at BatmanAK.exe+0x47B700 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCombatSuccess()
     {
@@ -18937,7 +19170,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUpgradePointGained;
     /// <summary>
-    /// Function: SendHydraEventUpgradePointGained
+    /// Function: SendHydraEventUpgradePointGained<br/>
+    /// Native code at BatmanAK.exe+0x4D5DC0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUpgradePointGained(int numUpgradesGained, int numUpgradesBought, int numUnlockablesToSpendLeft)
     {
@@ -18961,7 +19195,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventLevelUp;
     /// <summary>
-    /// Function: SendHydraEventLevelUp
+    /// Function: SendHydraEventLevelUp<br/>
+    /// Native code at BatmanAK.exe+0x4D5BE0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventLevelUp(int NewLevel, int numUnlockablesToSpend)
     {
@@ -19561,7 +19796,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessViewRotation;
     /// <summary>
-    /// Function: ProcessViewRotation
+    /// Function: ProcessViewRotation<br/>
+    /// Native code at BatmanAK.exe+0x4D5A20 in the Steam build
     /// </summary>
     public unsafe override void ProcessViewRotation(float DeltaTime, out BmSDK.Rotator out_ViewRotation, BmSDK.Rotator DeltaRot)
     {
@@ -19587,7 +19823,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateControllerRotationFast;
     /// <summary>
-    /// Function: UpdateControllerRotationFast
+    /// Function: UpdateControllerRotationFast<br/>
+    /// Native code at BatmanAK.exe+0x4D58A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateControllerRotationFast(float DeltaTime, out System.Numerics.Vector3 MoveDirection)
     {
@@ -19642,7 +19879,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOcclusion;
     /// <summary>
-    /// Function: SetOcclusion
+    /// Function: SetOcclusion<br/>
+    /// Native code at BatmanAK.exe+0x4D5780 in the Steam build
     /// </summary>
     public unsafe virtual void SetOcclusion(bool bOcclusionOn)
     {
@@ -19763,7 +20001,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovementAxes;
     /// <summary>
-    /// Function: GetMovementAxes
+    /// Function: GetMovementAxes<br/>
+    /// Native code at BatmanAK.exe+0x47B580 in the Steam build
     /// </summary>
     public unsafe virtual void GetMovementAxes(out System.Numerics.Vector3 X, out System.Numerics.Vector3 Y, out System.Numerics.Vector3 Z, bool bForceCurrentCameraPosAndRot = default)
     {
@@ -20133,7 +20372,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInterrogatablePredatorThug;
     /// <summary>
-    /// Function: UpdateInterrogatablePredatorThug
+    /// Function: UpdateInterrogatablePredatorThug<br/>
+    /// Native code at BatmanAK.exe+0x47B540 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateInterrogatablePredatorThug()
     {
@@ -20154,7 +20394,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestPawnFromList;
     /// <summary>
-    /// Function: FindClosestPawnFromList
+    /// Function: FindClosestPawnFromList<br/>
+    /// Native code at BatmanAK.exe+0x561720 in the Steam build
     /// </summary>
     public unsafe virtual bool FindClosestPawnFromList(BmSDK.TArray<BmSDK.BmGame.RPawnVillain> TestPawnList, out float ClosestDist, out BmSDK.BmGame.RPawnVillain ClosestPawn, float HeightRange = default)
     {
@@ -20633,7 +20874,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordMetrics;
     /// <summary>
-    /// Function: RecordMetrics
+    /// Function: RecordMetrics<br/>
+    /// Native code at BatmanAK.exe+0x53C9D0 in the Steam build
     /// </summary>
     public unsafe virtual void RecordMetrics(BmSDK.FStringArg Table, BmSDK.FStringArg ParamNames = default, BmSDK.FStringArg Params = default)
     {
@@ -20660,7 +20902,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChopOffFront;
     /// <summary>
-    /// Function: ChopOffFront
+    /// Function: ChopOffFront<br/>
+    /// Native code at BatmanAK.exe+0x53C770 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ChopOffFront(BmSDK.FStringArg Data, BmSDK.FStringArg ChopOff, bool QuoteIt = default)
     {
@@ -20686,7 +20929,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMetricsPopupEnabled;
     /// <summary>
-    /// Function: SetMetricsPopupEnabled
+    /// Function: SetMetricsPopupEnabled<br/>
+    /// Native code at BatmanAK.exe+0x4D5660 in the Steam build
     /// </summary>
     public unsafe virtual void SetMetricsPopupEnabled(bool Enabled)
     {
@@ -20708,7 +20952,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMetricsPopupEnabled;
     /// <summary>
-    /// Function: IsMetricsPopupEnabled
+    /// Function: IsMetricsPopupEnabled<br/>
+    /// Native code at BatmanAK.exe+0x47B4F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMetricsPopupEnabled()
     {
@@ -20729,7 +20974,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMetricsEnabled;
     /// <summary>
-    /// Function: SetMetricsEnabled
+    /// Function: SetMetricsEnabled<br/>
+    /// Native code at BatmanAK.exe+0x4D5540 in the Steam build
     /// </summary>
     public unsafe virtual void SetMetricsEnabled(bool Enabled)
     {
@@ -20751,7 +20997,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMetricsEnabled;
     /// <summary>
-    /// Function: IsMetricsEnabled
+    /// Function: IsMetricsEnabled<br/>
+    /// Native code at BatmanAK.exe+0x47B4A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMetricsEnabled()
     {
@@ -20860,7 +21107,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleTickGroupHack;
     /// <summary>
-    /// Function: ToggleTickGroupHack
+    /// Function: ToggleTickGroupHack<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleTickGroupHack()
     {
@@ -20881,7 +21129,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUsingGamepad;
     /// <summary>
-    /// Function: SetUsingGamepad
+    /// Function: SetUsingGamepad<br/>
+    /// Native code at BatmanAK.exe+0x4D5420 in the Steam build
     /// </summary>
     public unsafe virtual void SetUsingGamepad(bool UsingGamepad)
     {
@@ -20903,7 +21152,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPlayerClasses;
     /// <summary>
-    /// Function: LoadPlayerClasses
+    /// Function: LoadPlayerClasses<br/>
+    /// Native code at BatmanAK.exe+0x53C630 in the Steam build
     /// </summary>
     public unsafe virtual void LoadPlayerClasses(BmSDK.FStringArg URL)
     {
@@ -21045,7 +21295,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateGauntletProjector;
     /// <summary>
-    /// Function: CreateGauntletProjector
+    /// Function: CreateGauntletProjector<br/>
+    /// Native code at BatmanAK.exe+0x47B450 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGauntletProjector CreateGauntletProjector()
     {
@@ -21066,7 +21317,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateLocalCharacterLight;
     /// <summary>
-    /// Function: CreateLocalCharacterLight
+    /// Function: CreateLocalCharacterLight<br/>
+    /// Native code at BatmanAK.exe+0x47B400 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.LightComponent CreateLocalCharacterLight()
     {
@@ -21143,7 +21395,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveUsingGamePad;
     /// <summary>
-    /// Function: SaveUsingGamePad
+    /// Function: SaveUsingGamePad<br/>
+    /// Native code at BatmanAK.exe+0x4D5300 in the Steam build
     /// </summary>
     public unsafe virtual void SaveUsingGamePad(bool SavedUsingGamePad)
     {
@@ -21165,7 +21418,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitGamePadSettings;
     /// <summary>
-    /// Function: InitGamePadSettings
+    /// Function: InitGamePadSettings<br/>
+    /// Native code at BatmanAK.exe+0x47B3C0 in the Steam build
     /// </summary>
     public unsafe virtual void InitGamePadSettings()
     {
@@ -22213,7 +22467,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraUsersAudioSetup;
     /// <summary>
-    /// Function: SendHydraUsersAudioSetup
+    /// Function: SendHydraUsersAudioSetup<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraUsersAudioSetup()
     {
@@ -22234,7 +22489,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockShowcaseVehicle;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockShowcaseVehicle
+    /// Function: UpdateHydraProfileUnlockShowcaseVehicle<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockShowcaseVehicle(byte VehicleId)
     {
@@ -22256,7 +22512,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockShowcaseCharacter;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockShowcaseCharacter
+    /// Function: UpdateHydraProfileUnlockShowcaseCharacter<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockShowcaseCharacter(byte CharacterId)
     {
@@ -22278,7 +22535,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockTape;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockTape
+    /// Function: UpdateHydraProfileUnlockTape<br/>
+    /// Native code at BatmanAK.exe+0x4D51C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockTape(byte TapeId, int TapeNum)
     {
@@ -22301,7 +22559,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockConceptArt;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockConceptArt
+    /// Function: UpdateHydraProfileUnlockConceptArt<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockConceptArt(byte ConceptArtId)
     {
@@ -22323,7 +22582,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockCharacterBio;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockCharacterBio
+    /// Function: UpdateHydraProfileUnlockCharacterBio<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockCharacterBio(byte VehicleBioId)
     {
@@ -22345,7 +22605,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfileUnlockAchievement;
     /// <summary>
-    /// Function: UpdateHydraProfileUnlockAchievement
+    /// Function: UpdateHydraProfileUnlockAchievement<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfileUnlockAchievement(BmSDK.BmGame.RGameInfo.EAchievementID AchievementId)
     {
@@ -22367,7 +22628,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlaytesterName;
     /// <summary>
-    /// Function: SetPlaytesterName
+    /// Function: SetPlaytesterName<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SetPlaytesterName(BmSDK.FStringArg PlaytesterName)
     {
@@ -22390,7 +22652,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPlayerDeathDamageType;
     /// <summary>
-    /// Function: SendHydraEventPlayerDeathDamageType
+    /// Function: SendHydraEventPlayerDeathDamageType<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPlayerDeathDamageType(BmSDK.FStringArg damageTypeName)
     {
@@ -22413,7 +22676,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventDectiveModeSwitch;
     /// <summary>
-    /// Function: SendHydraEventDectiveModeSwitch
+    /// Function: SendHydraEventDectiveModeSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB57F90 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventDectiveModeSwitch(bool bOn)
     {
@@ -22435,7 +22699,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventMenuSkinSelect;
     /// <summary>
-    /// Function: SendHydraEventMenuSkinSelect
+    /// Function: SendHydraEventMenuSkinSelect<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventMenuSkinSelect(BmSDK.FStringArg SkinSelected)
     {
@@ -22458,7 +22723,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPredatorQuit;
     /// <summary>
-    /// Function: SendHydraEventPredatorQuit
+    /// Function: SendHydraEventPredatorQuit<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPredatorQuit()
     {
@@ -22479,7 +22745,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPredatorStarted;
     /// <summary>
-    /// Function: SendHydraEventPredatorStarted
+    /// Function: SendHydraEventPredatorStarted<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPredatorStarted()
     {
@@ -22500,7 +22767,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPredatorFled;
     /// <summary>
-    /// Function: SendHydraEventPredatorFled
+    /// Function: SendHydraEventPredatorFled<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPredatorFled()
     {
@@ -22521,7 +22789,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCombatStarted;
     /// <summary>
-    /// Function: SendHydraEventCombatStarted
+    /// Function: SendHydraEventCombatStarted<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCombatStarted()
     {
@@ -22542,7 +22811,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCombatFled;
     /// <summary>
-    /// Function: SendHydraEventCombatFled
+    /// Function: SendHydraEventCombatFled<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCombatFled()
     {
@@ -22563,7 +22833,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventEnemyVehicleShotFired;
     /// <summary>
-    /// Function: SendHydraEventEnemyVehicleShotFired
+    /// Function: SendHydraEventEnemyVehicleShotFired<br/>
+    /// Native code at BatmanAK.exe+0x4D5030 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventEnemyVehicleShotFired(System.Numerics.Vector3 enemyLocation, System.Numerics.Vector3 BatmobileLocation, bool bHit)
     {
@@ -22587,7 +22858,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUserSelectedWaypoint;
     /// <summary>
-    /// Function: SendHydraEventUserSelectedWaypoint
+    /// Function: SendHydraEventUserSelectedWaypoint<br/>
+    /// Native code at BatmanAK.exe+0x53C420 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUserSelectedWaypoint(BmSDK.FStringArg WaypointName, BmSDK.FStringArg WaypointTypeName)
     {
@@ -22612,7 +22884,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventMostWantedMissionWheelClosed;
     /// <summary>
-    /// Function: SendHydraEventMostWantedMissionWheelClosed
+    /// Function: SendHydraEventMostWantedMissionWheelClosed<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventMostWantedMissionWheelClosed(BmSDK.FStringArg MostWantedName)
     {
@@ -22635,7 +22908,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUpdateMostWantedStarted;
     /// <summary>
-    /// Function: SendHydraEventUpdateMostWantedStarted
+    /// Function: SendHydraEventUpdateMostWantedStarted<br/>
+    /// Native code at BatmanAK.exe+0x53C230 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUpdateMostWantedStarted(BmSDK.FStringArg SideStoryName, bool bLocked)
     {
@@ -22659,7 +22933,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUpdateMostWantedPerctentageUpdated;
     /// <summary>
-    /// Function: SendHydraEventUpdateMostWantedPerctentageUpdated
+    /// Function: SendHydraEventUpdateMostWantedPerctentageUpdated<br/>
+    /// Native code at BatmanAK.exe+0x53C050 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUpdateMostWantedPerctentageUpdated(BmSDK.FStringArg SideStoryName, int Percentage)
     {
@@ -22683,7 +22958,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUpdateMostWantedProgressUpdated;
     /// <summary>
-    /// Function: SendHydraEventUpdateMostWantedProgressUpdated
+    /// Function: SendHydraEventUpdateMostWantedProgressUpdated<br/>
+    /// Native code at BatmanAK.exe+0x53C050 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUpdateMostWantedProgressUpdated(BmSDK.FStringArg SideStoryName, int ProgressTextId)
     {
@@ -22707,7 +22983,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventUpdateMostWantedSynopsisUpdated;
     /// <summary>
-    /// Function: SendHydraEventUpdateMostWantedSynopsisUpdated
+    /// Function: SendHydraEventUpdateMostWantedSynopsisUpdated<br/>
+    /// Native code at BatmanAK.exe+0x53C050 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventUpdateMostWantedSynopsisUpdated(BmSDK.FStringArg SideStoryName, int SynopsisTextId)
     {
@@ -22731,7 +23008,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventAllMostWantedCompleted;
     /// <summary>
-    /// Function: SendHydraEventAllMostWantedCompleted
+    /// Function: SendHydraEventAllMostWantedCompleted<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventAllMostWantedCompleted()
     {
@@ -22752,7 +23030,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventSubObjectiveCompleted;
     /// <summary>
-    /// Function: SendHydraEventSubObjectiveCompleted
+    /// Function: SendHydraEventSubObjectiveCompleted<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventSubObjectiveCompleted(BmSDK.FStringArg SubObjectiveString)
     {
@@ -22775,7 +23054,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventSubObjectiveAdded;
     /// <summary>
-    /// Function: SendHydraEventSubObjectiveAdded
+    /// Function: SendHydraEventSubObjectiveAdded<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventSubObjectiveAdded(BmSDK.FStringArg SubObjectiveString)
     {
@@ -22798,7 +23078,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPrimaryObjectiveCompleted;
     /// <summary>
-    /// Function: SendHydraEventPrimaryObjectiveCompleted
+    /// Function: SendHydraEventPrimaryObjectiveCompleted<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPrimaryObjectiveCompleted(BmSDK.FStringArg PrimaryObjectiveString)
     {
@@ -22821,7 +23102,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventPrimaryObjectiveAdded;
     /// <summary>
-    /// Function: SendHydraEventPrimaryObjectiveAdded
+    /// Function: SendHydraEventPrimaryObjectiveAdded<br/>
+    /// Native code at BatmanAK.exe+0x53BF10 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventPrimaryObjectiveAdded(BmSDK.FStringArg PrimaryObjectiveString)
     {
@@ -22844,7 +23126,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCompleteKnightfall;
     /// <summary>
-    /// Function: SendHydraEventCompleteKnightfall
+    /// Function: SendHydraEventCompleteKnightfall<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCompleteKnightfall()
     {
@@ -22865,7 +23148,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventCompleteStory;
     /// <summary>
-    /// Function: SendHydraEventCompleteStory
+    /// Function: SendHydraEventCompleteStory<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventCompleteStory()
     {
@@ -22886,7 +23170,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventRestartCheckpoint;
     /// <summary>
-    /// Function: SendHydraEventRestartCheckpoint
+    /// Function: SendHydraEventRestartCheckpoint<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventRestartCheckpoint()
     {
@@ -22907,7 +23192,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventBeatRiddlerChallenge;
     /// <summary>
-    /// Function: SendHydraEventBeatRiddlerChallenge
+    /// Function: SendHydraEventBeatRiddlerChallenge<br/>
+    /// Native code at BatmanAK.exe+0x47B340 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventBeatRiddlerChallenge(BmSDK.BmGame.RPersistentData.EBatmanChallenge ChallengeID)
     {
@@ -22929,7 +23215,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventEndChallenge;
     /// <summary>
-    /// Function: SendHydraEventEndChallenge
+    /// Function: SendHydraEventEndChallenge<br/>
+    /// Native code at BatmanAK.exe+0xB57F90 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventEndChallenge(bool bFailedChallenge)
     {
@@ -22951,7 +23238,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventAbortChallenge;
     /// <summary>
-    /// Function: SendHydraEventAbortChallenge
+    /// Function: SendHydraEventAbortChallenge<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventAbortChallenge()
     {
@@ -22972,7 +23260,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventRestartChallenge;
     /// <summary>
-    /// Function: SendHydraEventRestartChallenge
+    /// Function: SendHydraEventRestartChallenge<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventRestartChallenge()
     {
@@ -22993,7 +23282,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventEnterChallenge;
     /// <summary>
-    /// Function: SendHydraEventEnterChallenge
+    /// Function: SendHydraEventEnterChallenge<br/>
+    /// Native code at BatmanAK.exe+0xB57F90 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventEnterChallenge(bool bInGame)
     {
@@ -23015,7 +23305,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraEventSaveCheckpoint;
     /// <summary>
-    /// Function: SendHydraEventSaveCheckpoint
+    /// Function: SendHydraEventSaveCheckpoint<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraEventSaveCheckpoint()
     {
@@ -23036,7 +23327,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHydraProfile;
     /// <summary>
-    /// Function: UpdateHydraProfile
+    /// Function: UpdateHydraProfile<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHydraProfile()
     {
@@ -23057,7 +23349,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReloadGame;
     /// <summary>
-    /// Function: ReloadGame
+    /// Function: ReloadGame<br/>
+    /// Native code at BatmanAK.exe+0x47B300 in the Steam build
     /// </summary>
     public unsafe virtual void ReloadGame()
     {
@@ -23078,7 +23371,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveGameOptionsToMemory;
     /// <summary>
-    /// Function: SaveGameOptionsToMemory
+    /// Function: SaveGameOptionsToMemory<br/>
+    /// Native code at BatmanAK.exe+0x47B2B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveGameOptionsToMemory()
     {
@@ -23099,7 +23393,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveGame;
     /// <summary>
-    /// Function: SaveGame
+    /// Function: SaveGame<br/>
+    /// Native code at BatmanAK.exe+0x53BDC0 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveGame(BmSDK.FStringArg Filename = default, bool bOptionsOnly = default, bool bMemoryOnly = default)
     {
@@ -23124,7 +23419,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadGame;
     /// <summary>
-    /// Function: LoadGame
+    /// Function: LoadGame<br/>
+    /// Native code at BatmanAK.exe+0x53BCA0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadGame(BmSDK.FStringArg Filename = default, BmSDK.FStringArg Params = default)
     {
@@ -23149,7 +23445,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DelayedSavePoll;
     /// <summary>
-    /// Function: DelayedSavePoll
+    /// Function: DelayedSavePoll<br/>
+    /// Native code at BatmanAK.exe+0x47B270 in the Steam build
     /// </summary>
     public unsafe virtual void DelayedSavePoll()
     {
@@ -23170,7 +23467,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveGameManager;
     /// <summary>
-    /// Function: GetSaveGameManager
+    /// Function: GetSaveGameManager<br/>
+    /// Native code at BatmanAK.exe+0x47B220 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSaveGameManager GetSaveGameManager()
     {
@@ -23234,7 +23532,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateModeButtons;
     /// <summary>
-    /// Function: UpdateModeButtons
+    /// Function: UpdateModeButtons<br/>
+    /// Native code at BatmanAK.exe+0x47B1E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateModeButtons()
     {
@@ -23808,7 +24107,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindInteractableItem;
     /// <summary>
-    /// Function: FindInteractableItem
+    /// Function: FindInteractableItem<br/>
+    /// Native code at BatmanAK.exe+0x47B0F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindInteractableItem(out System.Numerics.Vector3 IILocation, out byte LongRage)
     {
@@ -24215,7 +24515,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAsyncHudUpdate;
     /// <summary>
-    /// Function: StartAsyncHudUpdate
+    /// Function: StartAsyncHudUpdate<br/>
+    /// Native code at BatmanAK.exe+0x47B0B0 in the Steam build
     /// </summary>
     public unsafe virtual void StartAsyncHudUpdate()
     {
@@ -24351,7 +24652,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelFearTakedown;
     /// <summary>
-    /// Function: CancelFearTakedown
+    /// Function: CancelFearTakedown<br/>
+    /// Native code at BatmanAK.exe+0x47B070 in the Steam build
     /// </summary>
     public unsafe virtual void CancelFearTakedown()
     {
@@ -24428,7 +24730,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetNumberOfRemainingFearTakedownsToNone;
     /// <summary>
-    /// Function: ResetNumberOfRemainingFearTakedownsToNone
+    /// Function: ResetNumberOfRemainingFearTakedownsToNone<br/>
+    /// Native code at BatmanAK.exe+0x47B030 in the Steam build
     /// </summary>
     public unsafe virtual void ResetNumberOfRemainingFearTakedownsToNone()
     {
@@ -24449,7 +24752,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetNumberOfRemainingFearTakedownsToFull;
     /// <summary>
-    /// Function: ResetNumberOfRemainingFearTakedownsToFull
+    /// Function: ResetNumberOfRemainingFearTakedownsToFull<br/>
+    /// Native code at BatmanAK.exe+0x47AFF0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetNumberOfRemainingFearTakedownsToFull()
     {
@@ -24470,7 +24774,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesPlayerHaveMoreThanOneFearTakedownTarget;
     /// <summary>
-    /// Function: DoesPlayerHaveMoreThanOneFearTakedownTarget
+    /// Function: DoesPlayerHaveMoreThanOneFearTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x47AFA0 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesPlayerHaveMoreThanOneFearTakedownTarget()
     {
@@ -24491,7 +24796,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesPlayerHaveEnoughEnergyForAFearTakedown;
     /// <summary>
-    /// Function: DoesPlayerHaveEnoughEnergyForAFearTakedown
+    /// Function: DoesPlayerHaveEnoughEnergyForAFearTakedown<br/>
+    /// Native code at BatmanAK.exe+0xB44970 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesPlayerHaveEnoughEnergyForAFearTakedown()
     {
@@ -24512,7 +24818,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpendFearTakedown;
     /// <summary>
-    /// Function: SpendFearTakedown
+    /// Function: SpendFearTakedown<br/>
+    /// Native code at BatmanAK.exe+0x4D4F10 in the Steam build
     /// </summary>
     public unsafe virtual void SpendFearTakedown(int NumLevels)
     {
@@ -24534,7 +24841,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberOfRemainingFearTakedowns;
     /// <summary>
-    /// Function: GetNumberOfRemainingFearTakedowns
+    /// Function: GetNumberOfRemainingFearTakedowns<br/>
+    /// Native code at BatmanAK.exe+0x47AF50 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumberOfRemainingFearTakedowns()
     {
@@ -25559,7 +25867,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDetectiveMode;
     /// <summary>
-    /// Function: CheckDetectiveMode
+    /// Function: CheckDetectiveMode<br/>
+    /// Native code at BatmanAK.exe+0x4D4D10 in the Steam build
     /// </summary>
     public unsafe virtual int CheckDetectiveMode(BmSDK.BmGame.RHelicopterBase RequestingHelicopter, float DeltaT)
     {
@@ -25582,7 +25891,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HelicopterFlightControlNative;
     /// <summary>
-    /// Function: HelicopterFlightControlNative
+    /// Function: HelicopterFlightControlNative<br/>
+    /// Native code at BatmanAK.exe+0x4D4B10 in the Steam build
     /// </summary>
     public unsafe virtual void HelicopterFlightControlNative(BmSDK.BmGame.RHelicopterBase RequestingHelicopter, float DeltaT)
     {
@@ -25928,7 +26238,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VectorToScreen;
     /// <summary>
-    /// Function: VectorToScreen
+    /// Function: VectorToScreen<br/>
+    /// Native code at BatmanAK.exe+0x4D4990 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 VectorToScreen(System.Numerics.Vector3 WorldPosition, BmSDK.Engine.Canvas the_canvas)
     {
@@ -26115,7 +26426,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForensicDecalsForLight;
     /// <summary>
-    /// Function: SetForensicDecalsForLight
+    /// Function: SetForensicDecalsForLight<br/>
+    /// Native code at BatmanAK.exe+0x4D4860 in the Steam build
     /// </summary>
     public unsafe virtual void SetForensicDecalsForLight(BmSDK.Engine.PointLightComponent PLC)
     {
@@ -26186,7 +26498,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RadioScannerAudioMarker;
     /// <summary>
-    /// Function: RadioScannerAudioMarker
+    /// Function: RadioScannerAudioMarker<br/>
+    /// Native code at BatmanAK.exe+0x4D4710 in the Steam build
     /// </summary>
     public unsafe virtual void RadioScannerAudioMarker(BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID)
     {
@@ -26209,7 +26522,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRadioScanner;
     /// <summary>
-    /// Function: FindRadioScanner
+    /// Function: FindRadioScanner<br/>
+    /// Native code at BatmanAK.exe+0x472840 in the Steam build
     /// </summary>
     public unsafe virtual void FindRadioScanner()
     {
@@ -26493,7 +26807,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HackOverrideLocalPlayer;
     /// <summary>
-    /// Function: HackOverrideLocalPlayer
+    /// Function: HackOverrideLocalPlayer<br/>
+    /// Native code at BatmanAK.exe+0x4D45F0 in the Steam build
     /// </summary>
     public unsafe virtual void HackOverrideLocalPlayer(BmSDK.Engine.Player NewPlayer)
     {
@@ -27026,7 +27341,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SubmitBug;
     /// <summary>
-    /// Function: SubmitBug
+    /// Function: SubmitBug<br/>
+    /// Native code at BatmanAK.exe+0x53BB60 in the Steam build
     /// </summary>
     public unsafe virtual void SubmitBug(BmSDK.FStringArg BugDescription)
     {
@@ -27049,7 +27365,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelectedMovementState;
     /// <summary>
-    /// Function: GetSelectedMovementState
+    /// Function: GetSelectedMovementState<br/>
+    /// Native code at BatmanAK.exe+0x47AF00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerController.GroundMovementState GetSelectedMovementState()
     {
@@ -27546,7 +27863,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InTheaterMode;
     /// <summary>
-    /// Function: InTheaterMode
+    /// Function: InTheaterMode<br/>
+    /// Native code at BatmanAK.exe+0x47AEB0 in the Steam build
     /// </summary>
     public unsafe virtual bool InTheaterMode()
     {
@@ -27567,7 +27885,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewportHeight;
     /// <summary>
-    /// Function: GetViewportHeight
+    /// Function: GetViewportHeight<br/>
+    /// Native code at BatmanAK.exe+0x47AE60 in the Steam build
     /// </summary>
     public unsafe virtual float GetViewportHeight()
     {
@@ -27588,7 +27907,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewportWidth;
     /// <summary>
-    /// Function: GetViewportWidth
+    /// Function: GetViewportWidth<br/>
+    /// Native code at BatmanAK.exe+0x47AE10 in the Steam build
     /// </summary>
     public unsafe virtual float GetViewportWidth()
     {
@@ -27609,7 +27929,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMouseY;
     /// <summary>
-    /// Function: GetMouseY
+    /// Function: GetMouseY<br/>
+    /// Native code at BatmanAK.exe+0x47ADC0 in the Steam build
     /// </summary>
     public unsafe virtual float GetMouseY()
     {
@@ -27630,7 +27951,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMouseX;
     /// <summary>
-    /// Function: GetMouseX
+    /// Function: GetMouseX<br/>
+    /// Native code at BatmanAK.exe+0x47AD70 in the Steam build
     /// </summary>
     public unsafe virtual float GetMouseX()
     {
@@ -27651,7 +27973,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewportAspectRatio;
     /// <summary>
-    /// Function: GetViewportAspectRatio
+    /// Function: GetViewportAspectRatio<br/>
+    /// Native code at BatmanAK.exe+0x47AD20 in the Steam build
     /// </summary>
     public unsafe virtual float GetViewportAspectRatio()
     {
@@ -27672,7 +27995,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesAggressiveHelicopterPreventAction;
     /// <summary>
-    /// Function: DoesAggressiveHelicopterPreventAction
+    /// Function: DoesAggressiveHelicopterPreventAction<br/>
+    /// Native code at BatmanAK.exe+0x46AF80 in the Steam build
     /// </summary>
     public unsafe virtual bool DoesAggressiveHelicopterPreventAction()
     {
@@ -27693,7 +28017,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChildState_Cached;
     /// <summary>
-    /// Function: IsChildState_Cached
+    /// Function: IsChildState_Cached<br/>
+    /// Native code at BatmanAK.exe+0x4D4400 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChildState_Cached(BmSDK.FName TestState, BmSDK.FName TestParentState)
     {
@@ -27716,7 +28041,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsQaBatmobileDebugRenderEnabled;
     /// <summary>
-    /// Function: IsQaBatmobileDebugRenderEnabled
+    /// Function: IsQaBatmobileDebugRenderEnabled<br/>
+    /// Native code at BatmanAK.exe+0x472330 in the Steam build
     /// </summary>
     public unsafe virtual bool IsQaBatmobileDebugRenderEnabled()
     {
@@ -27737,7 +28063,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickClosestPawn;
     /// <summary>
-    /// Function: PickClosestPawn
+    /// Function: PickClosestPawn<br/>
+    /// Native code at BatmanAK.exe+0x4D42C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pawn PickClosestPawn(BmSDK.Engine.Pawn SwitchPawn)
     {
@@ -27759,7 +28086,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FadeOutHighlightTunnelNetwork;
     /// <summary>
-    /// Function: FadeOutHighlightTunnelNetwork
+    /// Function: FadeOutHighlightTunnelNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4D4190 in the Steam build
     /// </summary>
     public unsafe virtual void FadeOutHighlightTunnelNetwork(float fDeltaTime)
     {
@@ -27781,7 +28109,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ControlHighlightTunnelNetwork;
     /// <summary>
-    /// Function: ControlHighlightTunnelNetwork
+    /// Function: ControlHighlightTunnelNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4D4070 in the Steam build
     /// </summary>
     public unsafe virtual void ControlHighlightTunnelNetwork(bool bHighlight)
     {
@@ -27803,7 +28132,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HighlightTunnelNetwork;
     /// <summary>
-    /// Function: HighlightTunnelNetwork
+    /// Function: HighlightTunnelNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4D3E90 in the Steam build
     /// </summary>
     public unsafe virtual void HighlightTunnelNetwork(bool bHighlight, bool bRequestIsFromDetectiveMode)
     {
@@ -27826,7 +28156,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForChuteExits;
     /// <summary>
-    /// Function: CheckForChuteExits
+    /// Function: CheckForChuteExits<br/>
+    /// Native code at BatmanAK.exe+0x47ACE0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForChuteExits()
     {
@@ -27847,7 +28178,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerCharacter;
     /// <summary>
-    /// Function: GetPlayerCharacter
+    /// Function: GetPlayerCharacter<br/>
+    /// Native code at BatmanAK.exe+0x47AC90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayer GetPlayerCharacter()
     {
@@ -27868,7 +28200,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshLineCheck;
     /// <summary>
-    /// Function: NavMeshLineCheck
+    /// Function: NavMeshLineCheck<br/>
+    /// Native code at BatmanAK.exe+0x47AB80 in the Steam build
     /// </summary>
     public unsafe virtual bool NavMeshLineCheck(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent)
     {
@@ -27892,7 +28225,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeBreakPoint;
     /// <summary>
-    /// Function: NativeBreakPoint
+    /// Function: NativeBreakPoint<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void NativeBreakPoint()
     {
@@ -27913,7 +28247,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoCapture;
     /// <summary>
-    /// Function: IsAutoCapture
+    /// Function: IsAutoCapture<br/>
+    /// Native code at BatmanAK.exe+0x47AB30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoCapture()
     {
@@ -27934,7 +28269,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugRenderExclusionZones;
     /// <summary>
-    /// Function: DebugRenderExclusionZones
+    /// Function: DebugRenderExclusionZones<br/>
+    /// Native code at BatmanAK.exe+0x47AAF0 in the Steam build
     /// </summary>
     public unsafe virtual void DebugRenderExclusionZones()
     {
@@ -27955,7 +28291,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugRenderOverworldNavigationTarget;
     /// <summary>
-    /// Function: DebugRenderOverworldNavigationTarget
+    /// Function: DebugRenderOverworldNavigationTarget<br/>
+    /// Native code at BatmanAK.exe+0x47AAB0 in the Steam build
     /// </summary>
     public unsafe virtual void DebugRenderOverworldNavigationTarget()
     {
@@ -27976,7 +28313,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOverworldNavigationTarget;
     /// <summary>
-    /// Function: GetOverworldNavigationTarget
+    /// Function: GetOverworldNavigationTarget<br/>
+    /// Native code at BatmanAK.exe+0x47A9C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetOverworldNavigationTarget(System.Numerics.Vector3 ToLocation, System.Numerics.Vector3 fromLocation)
     {
@@ -27999,7 +28337,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleDLECMode;
     /// <summary>
-    /// Function: ToggleDLECMode
+    /// Function: ToggleDLECMode<br/>
+    /// Native code at BatmanAK.exe+0x47A980 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleDLECMode()
     {
@@ -28020,7 +28359,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayRiddlerCaptureMovie;
     /// <summary>
-    /// Function: PlayRiddlerCaptureMovie
+    /// Function: PlayRiddlerCaptureMovie<br/>
+    /// Native code at BatmanAK.exe+0x47A940 in the Steam build
     /// </summary>
     public unsafe virtual void PlayRiddlerCaptureMovie()
     {
@@ -28041,7 +28381,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleMovieRecord;
     /// <summary>
-    /// Function: ToggleMovieRecord
+    /// Function: ToggleMovieRecord<br/>
+    /// Native code at BatmanAK.exe+0x47A900 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleMovieRecord()
     {
@@ -28062,7 +28403,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDebugSphere;
     /// <summary>
-    /// Function: LoadDebugSphere
+    /// Function: LoadDebugSphere<br/>
+    /// Native code at BatmanAK.exe+0x47A8B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMesh LoadDebugSphere()
     {
@@ -28083,7 +28425,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoJezActive;
     /// <summary>
-    /// Function: IsAutoJezActive
+    /// Function: IsAutoJezActive<br/>
+    /// Native code at BatmanAK.exe+0x47A860 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoJezActive()
     {
@@ -28104,7 +28447,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GAS;
     /// <summary>
-    /// Function: GAS
+    /// Function: GAS<br/>
+    /// Native code at BatmanAK.exe+0x53BAA0 in the Steam build
     /// </summary>
     public unsafe virtual void GAS(BmSDK.FStringArg Cmd = default)
     {
@@ -28127,7 +28471,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckFireGrapple;
     /// <summary>
-    /// Function: CheckFireGrapple
+    /// Function: CheckFireGrapple<br/>
+    /// Native code at BatmanAK.exe+0x47A810 in the Steam build
     /// </summary>
     public unsafe virtual int CheckFireGrapple()
     {
@@ -28148,7 +28493,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OwnerIsInEndStateCall;
     /// <summary>
-    /// Function: OwnerIsInEndStateCall
+    /// Function: OwnerIsInEndStateCall<br/>
+    /// Native code at BatmanAK.exe+0x47A7C0 in the Steam build
     /// </summary>
     public unsafe virtual bool OwnerIsInEndStateCall()
     {
@@ -28169,7 +28515,8 @@ public partial class RPlayerController : BmSDK.BmGame.RPlayerControllerBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMissionWheel;
     /// <summary>
-    /// Function: GetMissionWheel
+    /// Function: GetMissionWheel<br/>
+    /// Native code at BatmanAK.exe+0x47A770 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGFxMovieMissionWheel GetMissionWheel()
     {

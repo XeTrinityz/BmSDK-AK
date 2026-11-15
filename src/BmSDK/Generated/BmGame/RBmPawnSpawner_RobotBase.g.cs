@@ -154,7 +154,8 @@ public partial class RBmPawnSpawner_RobotBase : BmSDK.BmGame.RBmPawnSpawner, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
-    /// Function: SpawnPawn
+    /// Function: SpawnPawn<br/>
+    /// Native code at BatmanAK.exe+0x48A450 in the Steam build
     /// </summary>
     public unsafe override bool SpawnPawn()
     {

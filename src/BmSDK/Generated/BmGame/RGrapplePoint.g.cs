@@ -80,7 +80,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawClimbLocatorChain;
     /// <summary>
-    /// Function: DebugDrawClimbLocatorChain
+    /// Function: DebugDrawClimbLocatorChain<br/>
+    /// Native code at BatmanAK.exe+0x4814D0 in the Steam build
     /// </summary>
     public unsafe virtual void DebugDrawClimbLocatorChain()
     {
@@ -101,7 +102,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
 
     private static BmSDK.Function __fn_GetHighPriorityGrapplePointsInSphere;
     /// <summary>
-    /// Function: GetHighPriorityGrapplePointsInSphere
+    /// Function: GetHighPriorityGrapplePointsInSphere<br/>
+    /// Native code at BatmanAK.exe+0x561E70 in the Steam build
     /// </summary>
     public unsafe static void GetHighPriorityGrapplePointsInSphere(out BmSDK.TArray<BmSDK.BmGame.RGrapplePoint> List, out System.Numerics.Vector3 centre, float Radius)
     {
@@ -126,7 +128,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrappleEndPoints;
     /// <summary>
-    /// Function: GetGrappleEndPoints
+    /// Function: GetGrappleEndPoints<br/>
+    /// Native code at BatmanAK.exe+0x4813E0 in the Steam build
     /// </summary>
     public unsafe virtual void GetGrappleEndPoints(out System.Numerics.Vector3 OutPointA, out System.Numerics.Vector3 OutPointB)
     {
@@ -197,7 +200,8 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterGrapplePoint;
     /// <summary>
-    /// Function: RegisterGrapplePoint
+    /// Function: RegisterGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x4813A0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterGrapplePoint()
     {
@@ -842,7 +846,8 @@ public static class RGrapplePointStatics
 {
     private static BmSDK.Function __fn_GetHighPriorityGrapplePointsInSphere;
     /// <summary>
-    /// Function: GetHighPriorityGrapplePointsInSphere, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetHighPriorityGrapplePointsInSphere, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x561E70 in the Steam build
     /// </summary>
     public unsafe static void GetHighPriorityGrapplePointsInSphere(this BmSDK.BmGame.RGrapplePoint self, out BmSDK.TArray<BmSDK.BmGame.RGrapplePoint> List, out System.Numerics.Vector3 centre, float Radius)
     {

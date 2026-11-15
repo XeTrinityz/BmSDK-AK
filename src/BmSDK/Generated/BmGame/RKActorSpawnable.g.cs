@@ -95,7 +95,8 @@ public partial class RKActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateThroughWallsViewMesh;
     /// <summary>
-    /// Function: CreateThroughWallsViewMesh
+    /// Function: CreateThroughWallsViewMesh<br/>
+    /// Native code at BatmanAK.exe+0x4E85E0 in the Steam build
     /// </summary>
     public unsafe virtual void CreateThroughWallsViewMesh(BmSDK.Engine.MaterialInterface ThroughWallsViewMaterial, out BmSDK.Engine.StaticMeshComponent ThroughWallsViewMesh, BmSDK.Engine.Scene.ESceneDepthPriorityGroup DepthGroup, float MinDepthDelta = default)
     {

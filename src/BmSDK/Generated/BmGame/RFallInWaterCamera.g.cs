@@ -108,7 +108,8 @@ public partial class RFallInWaterCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrackingPosition;
     /// <summary>
-    /// Function: UpdateTrackingPosition
+    /// Function: UpdateTrackingPosition<br/>
+    /// Native code at BatmanAK.exe+0x5149E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTrackingPosition(float DeltaTime)
     {

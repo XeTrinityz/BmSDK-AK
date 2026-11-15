@@ -80,7 +80,8 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMeshOwner;
     /// <summary>
-    /// Function: SetMeshOwner
+    /// Function: SetMeshOwner<br/>
+    /// Native code at BatmanAK.exe+0x52BCE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetMeshOwner(BmSDK.Engine.Actor NewOwner, BmSDK.Engine.ActorComponent MeshComp)
     {

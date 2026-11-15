@@ -85,7 +85,8 @@ public partial class RWeaponConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToString;
     /// <summary>
-    /// Function: ToString
+    /// Function: ToString<br/>
+    /// Native code at BatmanAK.exe+0x53AD50 in the Steam build
     /// </summary>
     public unsafe new virtual BmSDK.FString ToString()
     {
@@ -106,7 +107,8 @@ public partial class RWeaponConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Shrink;
     /// <summary>
-    /// Function: Shrink
+    /// Function: Shrink<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void Shrink()
     {

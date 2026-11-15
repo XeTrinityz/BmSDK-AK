@@ -148,7 +148,8 @@ public partial class RSeqAct_ElecFloorRobotSpawnManagerBase : BmSDK.Engine.SeqAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnRobot;
     /// <summary>
-    /// Function: SpawnRobot
+    /// Function: SpawnRobot<br/>
+    /// Native code at BatmanAK.exe+0x48D4C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain SpawnRobot(System.Numerics.Vector3 Location, BmSDK.Rotator Rotation)
     {

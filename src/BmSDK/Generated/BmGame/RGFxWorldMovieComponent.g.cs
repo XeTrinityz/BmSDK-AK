@@ -80,7 +80,8 @@ public partial class RGFxWorldMovieComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTransformedToWorld;
     /// <summary>
-    /// Function: SetTransformedToWorld
+    /// Function: SetTransformedToWorld<br/>
+    /// Native code at BatmanAK.exe+0x496E50 in the Steam build
     /// </summary>
     public unsafe virtual void SetTransformedToWorld()
     {

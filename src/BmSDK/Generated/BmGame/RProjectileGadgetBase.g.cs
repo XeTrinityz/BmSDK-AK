@@ -599,7 +599,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAtRotator;
     /// <summary>
-    /// Function: GetLookAtRotator
+    /// Function: GetLookAtRotator<br/>
+    /// Native code at BatmanAK.exe+0x493330 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetLookAtRotator(System.Numerics.Vector3 Direction, System.Numerics.Vector3 Up)
     {
@@ -622,7 +623,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTrajectory;
     /// <summary>
-    /// Function: DrawTrajectory
+    /// Function: DrawTrajectory<br/>
+    /// Native code at BatmanAK.exe+0x4931F0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTrajectory(System.Numerics.Vector3 StartLoc, System.Numerics.Vector3 EndLoc, System.Numerics.Vector3 v1, float G = default)
     {
@@ -647,7 +649,8 @@ public partial class RProjectileGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSD
 
     private static BmSDK.Function __fn_GetTrajectoryPoint;
     /// <summary>
-    /// Function: GetTrajectoryPoint
+    /// Function: GetTrajectoryPoint<br/>
+    /// Native code at BatmanAK.exe+0x50FCC0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetTrajectoryPoint(System.Numerics.Vector3 S, System.Numerics.Vector3 V, float T, float G)
     {
@@ -1165,7 +1168,8 @@ public static class RProjectileGadgetBaseStatics
 {
     private static BmSDK.Function __fn_GetTrajectoryPoint;
     /// <summary>
-    /// Function: GetTrajectoryPoint, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetTrajectoryPoint, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x50FCC0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetTrajectoryPoint(this BmSDK.BmGame.RProjectileGadgetBase self, System.Numerics.Vector3 S, System.Numerics.Vector3 V, float T, float G)
     {

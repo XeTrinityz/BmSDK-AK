@@ -305,7 +305,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Project;
     /// <summary>
-    /// Function: Project
+    /// Function: Project<br/>
+    /// Native code at BatmanAK.exe+0xB40460 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 Project(System.Numerics.Vector3 WorldLoc)
     {
@@ -327,7 +328,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectMeshBounds;
     /// <summary>
-    /// Function: ProjectMeshBounds
+    /// Function: ProjectMeshBounds<br/>
+    /// Native code at BatmanAK.exe+0xB82760 in the Steam build
     /// </summary>
     public unsafe virtual bool ProjectMeshBounds(BmSDK.Engine.MeshComponent MeshComponent, out System.Numerics.Vector2 Min, out System.Numerics.Vector2 Max)
     {
@@ -355,7 +357,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeProject;
     /// <summary>
-    /// Function: DeProject
+    /// Function: DeProject<br/>
+    /// Native code at BatmanAK.exe+0xB40360 in the Steam build
     /// </summary>
     public unsafe virtual void DeProject(System.Numerics.Vector2 RelativeScreenPos, out System.Numerics.Vector3 WorldOrigin, out System.Numerics.Vector3 WorldDirection)
     {
@@ -383,7 +386,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TouchPlayerPostProcessChain;
     /// <summary>
-    /// Function: TouchPlayerPostProcessChain
+    /// Function: TouchPlayerPostProcessChain<br/>
+    /// Native code at BatmanAK.exe+0xB3F190 in the Steam build
     /// </summary>
     public unsafe virtual void TouchPlayerPostProcessChain()
     {
@@ -404,7 +408,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPostProcessChain;
     /// <summary>
-    /// Function: GetPostProcessChain
+    /// Function: GetPostProcessChain<br/>
+    /// Native code at BatmanAK.exe+0xB82620 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PostProcessChain GetPostProcessChain(int InIndex)
     {
@@ -426,7 +431,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAllPostProcessingChains;
     /// <summary>
-    /// Function: RemoveAllPostProcessingChains
+    /// Function: RemoveAllPostProcessingChains<br/>
+    /// Native code at BatmanAK.exe+0xB36010 in the Steam build
     /// </summary>
     public unsafe virtual bool RemoveAllPostProcessingChains()
     {
@@ -447,7 +453,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemovePostProcessingChain;
     /// <summary>
-    /// Function: RemovePostProcessingChain
+    /// Function: RemovePostProcessingChain<br/>
+    /// Native code at BatmanAK.exe+0xB824E0 in the Steam build
     /// </summary>
     public unsafe virtual bool RemovePostProcessingChain(int InIndex)
     {
@@ -469,7 +476,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InsertPostProcessingChain;
     /// <summary>
-    /// Function: InsertPostProcessingChain
+    /// Function: InsertPostProcessingChain<br/>
+    /// Native code at BatmanAK.exe+0xB82240 in the Steam build
     /// </summary>
     public unsafe virtual bool InsertPostProcessingChain(BmSDK.Engine.PostProcessChain InChain, int InIndex, bool bInClone)
     {
@@ -493,7 +501,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTranslationContext;
     /// <summary>
-    /// Function: GetTranslationContext
+    /// Function: GetTranslationContext<br/>
+    /// Native code at BatmanAK.exe+0xB40310 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.TranslationContext GetTranslationContext()
     {
@@ -529,7 +538,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearPostProcessSettingsOverride;
     /// <summary>
-    /// Function: ClearPostProcessSettingsOverride
+    /// Function: ClearPostProcessSettingsOverride<br/>
+    /// Native code at BatmanAK.exe+0xB40280 in the Steam build
     /// </summary>
     public unsafe virtual void ClearPostProcessSettingsOverride(float BlendOutTime = default)
     {
@@ -551,7 +561,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePostProcessSettingsCurve;
     /// <summary>
-    /// Function: OverridePostProcessSettingsCurve
+    /// Function: OverridePostProcessSettingsCurve<br/>
+    /// Native code at BatmanAK.exe+0xBBDD00 in the Steam build
     /// </summary>
     public unsafe virtual void OverridePostProcessSettingsCurve(BmSDK.Engine.PostProcessVolume.FPostProcessSettings OverrideSettings, out BmSDK.GameObject.FInterpCurveFloat Curve)
     {
@@ -574,7 +585,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePostProcessSettings;
     /// <summary>
-    /// Function: OverridePostProcessSettings
+    /// Function: OverridePostProcessSettings<br/>
+    /// Native code at BatmanAK.exe+0xBBDBB0 in the Steam build
     /// </summary>
     public unsafe virtual void OverridePostProcessSettings(BmSDK.Engine.PostProcessVolume.FPostProcessSettings OverrideSettings, float BlendInTime = default)
     {
@@ -597,7 +609,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorVisibility;
     /// <summary>
-    /// Function: GetActorVisibility
+    /// Function: GetActorVisibility<br/>
+    /// Native code at BatmanAK.exe+0xB82100 in the Steam build
     /// </summary>
     public unsafe virtual bool GetActorVisibility(BmSDK.Engine.Actor TestActor)
     {
@@ -619,7 +632,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendSplitJoin;
     /// <summary>
-    /// Function: SendSplitJoin
+    /// Function: SendSplitJoin<br/>
+    /// Native code at BatmanAK.exe+0xB40240 in the Steam build
     /// </summary>
     public unsafe virtual void SendSplitJoin()
     {
@@ -640,7 +654,8 @@ public partial class LocalPlayer : BmSDK.Engine.Player, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPlayActor;
     /// <summary>
-    /// Function: SpawnPlayActor
+    /// Function: SpawnPlayActor<br/>
+    /// Native code at BatmanAK.exe+0xBABD10 in the Steam build
     /// </summary>
     public unsafe virtual bool SpawnPlayActor(BmSDK.FStringArg URL, out BmSDK.FString OutError)
     {

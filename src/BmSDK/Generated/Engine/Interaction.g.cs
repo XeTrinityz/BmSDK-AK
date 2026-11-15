@@ -154,7 +154,8 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

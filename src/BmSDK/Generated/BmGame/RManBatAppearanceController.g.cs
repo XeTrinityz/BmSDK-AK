@@ -80,7 +80,8 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnManbatAppearance;
     /// <summary>
-    /// Function: SpawnManbatAppearance
+    /// Function: SpawnManbatAppearance<br/>
+    /// Native code at BatmanAK.exe+0x48B0B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnManBatBase SpawnManbatAppearance()
     {
@@ -101,7 +102,8 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpaceForManbatAnimation;
     /// <summary>
-    /// Function: IsSpaceForManbatAnimation
+    /// Function: IsSpaceForManbatAnimation<br/>
+    /// Native code at BatmanAK.exe+0x5015E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsSpaceForManbatAnimation(BmSDK.FName AnimName, BmSDK.Engine.Actor TestActor, float CheckDistance, System.Numerics.Vector3 TestLoc = default)
     {

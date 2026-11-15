@@ -80,7 +80,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateViewSphere;
     /// <summary>
-    /// Function: CalculateViewSphere
+    /// Function: CalculateViewSphere<br/>
+    /// Native code at BatmanAK.exe+0x515780 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateViewSphere(out System.Numerics.Vector3 OutCentre, out float OutRadius, System.Numerics.Vector3 CameraOrigin, System.Numerics.Vector3 Circle1Centre, float Circle1Radius, System.Numerics.Vector3 Circle2Centre, float Circle2Radius)
     {
@@ -172,7 +173,8 @@ public partial class RMultiTargetCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePosition;
     /// <summary>
-    /// Function: UpdatePosition
+    /// Function: UpdatePosition<br/>
+    /// Native code at BatmanAK.exe+0x515650 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePosition(float DeltaTime)
     {

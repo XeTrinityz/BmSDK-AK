@@ -152,7 +152,8 @@ public partial class RStealthTakeDownStage_GrabOnFloor : BmSDK.BmGame.RStealthTa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePosition;
     /// <summary>
-    /// Function: GetReferencePosition
+    /// Function: GetReferencePosition<br/>
+    /// Native code at BatmanAK.exe+0x498770 in the Steam build
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {

@@ -80,7 +80,8 @@ public partial class AkManagedEmitter : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableEmitter;
     /// <summary>
-    /// Function: DisableEmitter
+    /// Function: DisableEmitter<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DisableEmitter()
     {
@@ -101,7 +102,8 @@ public partial class AkManagedEmitter : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEmitter;
     /// <summary>
-    /// Function: EnableEmitter
+    /// Function: EnableEmitter<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void EnableEmitter()
     {

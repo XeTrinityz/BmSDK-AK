@@ -110,7 +110,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathTotalLength;
     /// <summary>
-    /// Function: GetPathTotalLength
+    /// Function: GetPathTotalLength<br/>
+    /// Native code at BatmanAK.exe+0xB2DA00 in the Steam build
     /// </summary>
     public unsafe virtual float GetPathTotalLength()
     {
@@ -131,7 +132,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTangentAtDistanceAlongPath;
     /// <summary>
-    /// Function: GetTangentAtDistanceAlongPath
+    /// Function: GetTangentAtDistanceAlongPath<br/>
+    /// Native code at BatmanAK.exe+0xB5A450 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTangentAtDistanceAlongPath(float Distance)
     {
@@ -153,7 +155,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationAtDistanceAlongPath;
     /// <summary>
-    /// Function: GetLocationAtDistanceAlongPath
+    /// Function: GetLocationAtDistanceAlongPath<br/>
+    /// Native code at BatmanAK.exe+0xB5A300 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationAtDistanceAlongPath(float Distance)
     {
@@ -175,7 +178,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EstimateDistanceAlongPathToClosestPoint;
     /// <summary>
-    /// Function: EstimateDistanceAlongPathToClosestPoint
+    /// Function: EstimateDistanceAlongPathToClosestPoint<br/>
+    /// Native code at BatmanAK.exe+0xB2D960 in the Steam build
     /// </summary>
     public unsafe virtual float EstimateDistanceAlongPathToClosestPoint(System.Numerics.Vector3 TestPointInWorldSpace)
     {
@@ -197,7 +201,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllConnectedSplineActors;
     /// <summary>
-    /// Function: GetAllConnectedSplineActors
+    /// Function: GetAllConnectedSplineActors<br/>
+    /// Native code at BatmanAK.exe+0xBB7130 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllConnectedSplineActors(out BmSDK.TArray<BmSDK.Engine.SplineActor> OutSet)
     {
@@ -219,7 +224,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSplinePathTo;
     /// <summary>
-    /// Function: FindSplinePathTo
+    /// Function: FindSplinePathTo<br/>
+    /// Native code at BatmanAK.exe+0xBB6F90 in the Steam build
     /// </summary>
     public unsafe virtual bool FindSplinePathTo(BmSDK.Engine.SplineActor Goal, out BmSDK.TArray<BmSDK.Engine.SplineActor> OutRoute)
     {
@@ -242,7 +248,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestConnectionInDirection;
     /// <summary>
-    /// Function: GetBestConnectionInDirection
+    /// Function: GetBestConnectionInDirection<br/>
+    /// Native code at BatmanAK.exe+0xB2D880 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SplineActor GetBestConnectionInDirection(System.Numerics.Vector3 DesiredDir, bool bUseLinksFrom = default)
     {
@@ -265,7 +272,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRandomConnection;
     /// <summary>
-    /// Function: GetRandomConnection
+    /// Function: GetRandomConnection<br/>
+    /// Native code at BatmanAK.exe+0xB2D7D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SplineActor GetRandomConnection(bool bUseLinksFrom = default)
     {
@@ -287,7 +295,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakAllConnectionsFrom;
     /// <summary>
-    /// Function: BreakAllConnectionsFrom
+    /// Function: BreakAllConnectionsFrom<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakAllConnectionsFrom()
     {
@@ -308,7 +317,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakAllConnections;
     /// <summary>
-    /// Function: BreakAllConnections
+    /// Function: BreakAllConnections<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakAllConnections()
     {
@@ -329,7 +339,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakConnectionTo;
     /// <summary>
-    /// Function: BreakConnectionTo
+    /// Function: BreakConnectionTo<br/>
+    /// Native code at BatmanAK.exe+0x5224F0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakConnectionTo(BmSDK.Engine.SplineActor NextActor)
     {
@@ -351,7 +362,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindTargetForComponent;
     /// <summary>
-    /// Function: FindTargetForComponent
+    /// Function: FindTargetForComponent<br/>
+    /// Native code at BatmanAK.exe+0xB5A1C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SplineActor FindTargetForComponent(BmSDK.Engine.SplineComponent SplineComp)
     {
@@ -373,7 +385,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSplineComponentTo;
     /// <summary>
-    /// Function: FindSplineComponentTo
+    /// Function: FindSplineComponentTo<br/>
+    /// Native code at BatmanAK.exe+0xB5A080 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SplineComponent FindSplineComponentTo(BmSDK.Engine.SplineActor NextActor)
     {
@@ -395,7 +408,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsConnectedTo;
     /// <summary>
-    /// Function: IsConnectedTo
+    /// Function: IsConnectedTo<br/>
+    /// Native code at BatmanAK.exe+0xB59E90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsConnectedTo(BmSDK.Engine.SplineActor NextActor, bool bCheckForDisableDestination)
     {
@@ -418,7 +432,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddConnectionTo;
     /// <summary>
-    /// Function: AddConnectionTo
+    /// Function: AddConnectionTo<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe virtual void AddConnectionTo(BmSDK.Engine.SplineActor NextActor)
     {
@@ -440,7 +455,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateConnectedSplineComponents;
     /// <summary>
-    /// Function: UpdateConnectedSplineComponents
+    /// Function: UpdateConnectedSplineComponents<br/>
+    /// Native code at BatmanAK.exe+0xB59D70 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateConnectedSplineComponents(bool bFinish)
     {
@@ -462,7 +478,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineComponents;
     /// <summary>
-    /// Function: UpdateSplineComponents
+    /// Function: UpdateSplineComponents<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSplineComponents()
     {
@@ -483,7 +500,8 @@ public partial class SplineActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldSpaceTangent;
     /// <summary>
-    /// Function: GetWorldSpaceTangent
+    /// Function: GetWorldSpaceTangent<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWorldSpaceTangent()
     {

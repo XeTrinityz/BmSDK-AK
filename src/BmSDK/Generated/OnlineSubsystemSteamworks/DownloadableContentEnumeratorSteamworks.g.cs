@@ -96,7 +96,8 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendDLC;
     /// <summary>
-    /// Function: AppendDLC
+    /// Function: AppendDLC<br/>
+    /// Native code at BatmanAK.exe+0x108EAC0 in the Steam build
     /// </summary>
     public unsafe virtual void AppendDLC(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> Bundles)
     {

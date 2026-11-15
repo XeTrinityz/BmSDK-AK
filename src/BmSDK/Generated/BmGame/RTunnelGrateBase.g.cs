@@ -136,7 +136,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFinalGrateRotAndTrans;
     /// <summary>
-    /// Function: GetFinalGrateRotAndTrans
+    /// Function: GetFinalGrateRotAndTrans<br/>
+    /// Native code at BatmanAK.exe+0x484490 in the Steam build
     /// </summary>
     public unsafe virtual void GetFinalGrateRotAndTrans(out BmSDK.Rotator GrateRot, out System.Numerics.Vector3 GrateTrans)
     {
@@ -163,7 +164,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCapeCollision;
     /// <summary>
-    /// Function: UpdateCapeCollision
+    /// Function: UpdateCapeCollision<br/>
+    /// Native code at BatmanAK.exe+0x484450 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCapeCollision()
     {
@@ -451,7 +453,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableCapeCollision;
     /// <summary>
-    /// Function: SetDisableCapeCollision
+    /// Function: SetDisableCapeCollision<br/>
+    /// Native code at BatmanAK.exe+0x4F09A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableCapeCollision(bool bDisabled)
     {
@@ -662,7 +665,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4F0880 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterWithNavMesh(bool bRegister)
     {
@@ -684,7 +688,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestPosition;
     /// <summary>
-    /// Function: GetAIPointOfInterestPosition
+    /// Function: GetAIPointOfInterestPosition<br/>
+    /// Native code at BatmanAK.exe+0x46A560 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestPosition()
     {
@@ -748,7 +753,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRoute;
     /// <summary>
-    /// Function: FindRoute
+    /// Function: FindRoute<br/>
+    /// Native code at BatmanAK.exe+0x5633A0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindRoute(BmSDK.BmGame.RTunnelGrateBase EndGrate, out BmSDK.TArray<BmSDK.BmGame.RTunnelGrateBase> Route)
     {
@@ -771,7 +777,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugAIPointOfInterestOutput;
     /// <summary>
-    /// Function: DebugAIPointOfInterestOutput
+    /// Function: DebugAIPointOfInterestOutput<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void DebugAIPointOfInterestOutput()
     {
@@ -792,7 +799,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllGratesInMyGroup;
     /// <summary>
-    /// Function: GetAllGratesInMyGroup
+    /// Function: GetAllGratesInMyGroup<br/>
+    /// Native code at BatmanAK.exe+0x5632D0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllGratesInMyGroup(out BmSDK.TArray<BmSDK.BmGame.RTunnelGrateBase> outAllGratesInGroup)
     {
@@ -814,7 +822,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNeighbours;
     /// <summary>
-    /// Function: GetNeighbours
+    /// Function: GetNeighbours<br/>
+    /// Native code at BatmanAK.exe+0x484260 in the Steam build
     /// </summary>
     public unsafe virtual void GetNeighbours(out BmSDK.BmGame.RTunnelGrateBase NorthGrate, out BmSDK.BmGame.RTunnelGrateBase SouthGrate, out BmSDK.BmGame.RTunnelGrateBase EastGrate, out BmSDK.BmGame.RTunnelGrateBase WestGrate, out BmSDK.Rotator NorthDir)
     {
@@ -850,7 +859,8 @@ public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceToClimbOut;
     /// <summary>
-    /// Function: CheckSpaceToClimbOut
+    /// Function: CheckSpaceToClimbOut<br/>
+    /// Native code at BatmanAK.exe+0x484580 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceToClimbOut(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {

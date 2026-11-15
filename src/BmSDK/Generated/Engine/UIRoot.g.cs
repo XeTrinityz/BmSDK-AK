@@ -120,7 +120,8 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSceneClient;
     /// <summary>
-    /// Function: GetSceneClient
+    /// Function: GetSceneClient<br/>
+    /// Native code at BatmanAK.exe+0x84B0D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.GameUISceneClient GetSceneClient()
     {
@@ -140,7 +141,8 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetCurrentUIController;
     /// <summary>
-    /// Function: GetCurrentUIController
+    /// Function: GetCurrentUIController<br/>
+    /// Native code at BatmanAK.exe+0x84B070 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIInteraction GetCurrentUIController()
     {
@@ -160,7 +162,8 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetInputPlatformType;
     /// <summary>
-    /// Function: GetInputPlatformType
+    /// Function: GetInputPlatformType<br/>
+    /// Native code at BatmanAK.exe+0x84B140 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIRoot.EInputPlatformType GetInputPlatformType(BmSDK.Engine.LocalPlayer OwningPlayer = default)
     {
@@ -607,7 +610,8 @@ public static class UIRootStatics
 {
     private static BmSDK.Function __fn_GetSceneClient;
     /// <summary>
-    /// Function: GetSceneClient, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSceneClient, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x84B0D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.GameUISceneClient GetSceneClient(this BmSDK.Engine.UIRoot self)
     {
@@ -628,7 +632,8 @@ public static class UIRootStatics
 
     private static BmSDK.Function __fn_GetCurrentUIController;
     /// <summary>
-    /// Function: GetCurrentUIController, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetCurrentUIController, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x84B070 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIInteraction GetCurrentUIController(this BmSDK.Engine.UIRoot self)
     {
@@ -649,7 +654,8 @@ public static class UIRootStatics
 
     private static BmSDK.Function __fn_GetInputPlatformType;
     /// <summary>
-    /// Function: GetInputPlatformType, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetInputPlatformType, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x84B140 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.UIRoot.EInputPlatformType GetInputPlatformType(this BmSDK.Engine.UIRoot self, BmSDK.Engine.LocalPlayer OwningPlayer = default)
     {

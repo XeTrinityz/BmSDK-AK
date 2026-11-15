@@ -80,7 +80,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetView;
     /// <summary>
-    /// Function: SetView
+    /// Function: SetView<br/>
+    /// Native code at BatmanAK.exe+0xB3D810 in the Steam build
     /// </summary>
     public unsafe virtual void SetView(System.Numerics.Vector3 NewLocation, BmSDK.Rotator NewRotation)
     {
@@ -103,7 +104,8 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
-    /// Function: SetCaptureParameters
+    /// Function: SetCaptureParameters<br/>
+    /// Native code at BatmanAK.exe+0x9D8440 in the Steam build
     /// </summary>
     public unsafe virtual void SetCaptureParameters(BmSDK.Engine.TextureRenderTarget2D NewTextureTarget = default, float NewFOV = default, float NewNearPlane = default, float NewFarPlane = default)
     {

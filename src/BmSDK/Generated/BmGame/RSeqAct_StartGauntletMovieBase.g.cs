@@ -75,7 +75,8 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisablePropertySheet;
     /// <summary>
-    /// Function: DisablePropertySheet
+    /// Function: DisablePropertySheet<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void DisablePropertySheet()
     {
@@ -96,7 +97,8 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnablePropertySheet;
     /// <summary>
-    /// Function: EnablePropertySheet
+    /// Function: EnablePropertySheet<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void EnablePropertySheet()
     {

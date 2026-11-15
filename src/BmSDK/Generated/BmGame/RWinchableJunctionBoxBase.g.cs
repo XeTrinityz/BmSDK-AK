@@ -122,7 +122,8 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.BmGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioLoad;
     /// <summary>
-    /// Function: GetAudioLoad
+    /// Function: GetAudioLoad<br/>
+    /// Native code at BatmanAK.exe+0x484B70 in the Steam build
     /// </summary>
     public unsafe virtual float GetAudioLoad()
     {

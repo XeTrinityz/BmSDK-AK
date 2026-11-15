@@ -80,7 +80,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Function __fn_CheckStateChange;
     /// <summary>
-    /// Function: CheckStateChange
+    /// Function: CheckStateChange<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe void CheckStateChange()
     {
@@ -101,7 +102,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
-    /// Function: Tick
+    /// Function: Tick<br/>
+    /// Native code at BatmanAK.exe+0x6B0990 in the Steam build
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
@@ -482,7 +484,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToDeleteQueue;
     /// <summary>
-    /// Function: AddToDeleteQueue
+    /// Function: AddToDeleteQueue<br/>
+    /// Native code at BatmanAK.exe+0x503220 in the Steam build
     /// </summary>
     public unsafe virtual void AddToDeleteQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
@@ -504,7 +507,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToWriteQueue;
     /// <summary>
-    /// Function: AddToWriteQueue
+    /// Function: AddToWriteQueue<br/>
+    /// Native code at BatmanAK.exe+0x5030F0 in the Steam build
     /// </summary>
     public unsafe virtual void AddToWriteQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
@@ -526,7 +530,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFromReadQueue;
     /// <summary>
-    /// Function: RemoveFromReadQueue
+    /// Function: RemoveFromReadQueue<br/>
+    /// Native code at BatmanAK.exe+0xB50570 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveFromReadQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
@@ -548,7 +553,8 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToReadQueue;
     /// <summary>
-    /// Function: AddToReadQueue
+    /// Function: AddToReadQueue<br/>
+    /// Native code at BatmanAK.exe+0x4EE410 in the Steam build
     /// </summary>
     public unsafe virtual void AddToReadQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {

@@ -80,7 +80,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBankStreamPreloaded;
     /// <summary>
-    /// Function: IsBankStreamPreloaded
+    /// Function: IsBankStreamPreloaded<br/>
+    /// Native code at BatmanAK.exe+0xB34A90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBankStreamPreloaded()
     {
@@ -101,7 +102,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreloadBankStreams;
     /// <summary>
-    /// Function: PreloadBankStreams
+    /// Function: PreloadBankStreams<br/>
+    /// Native code at BatmanAK.exe+0xB60C10 in the Steam build
     /// </summary>
     public unsafe virtual bool PreloadBankStreams(bool preload, BmSDK.Engine.AkWwise.EAkIOStreamPriorities Priority = default)
     {
@@ -124,7 +126,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBankLoadComplete;
     /// <summary>
-    /// Function: IsBankLoadComplete
+    /// Function: IsBankLoadComplete<br/>
+    /// Native code at BatmanAK.exe+0xB34A40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBankLoadComplete()
     {
@@ -145,7 +148,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReloadBank;
     /// <summary>
-    /// Function: ReloadBank
+    /// Function: ReloadBank<br/>
+    /// Native code at BatmanAK.exe+0xB34A00 in the Steam build
     /// </summary>
     public unsafe virtual void ReloadBank()
     {
@@ -166,7 +170,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnloadBank;
     /// <summary>
-    /// Function: UnloadBank
+    /// Function: UnloadBank<br/>
+    /// Native code at BatmanAK.exe+0xB60AF0 in the Steam build
     /// </summary>
     public unsafe virtual void UnloadBank(bool performDeferredUnload)
     {
@@ -188,7 +193,8 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadBank;
     /// <summary>
-    /// Function: LoadBank
+    /// Function: LoadBank<br/>
+    /// Native code at BatmanAK.exe+0xB609B0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadBank(bool performDeferredLoad)
     {

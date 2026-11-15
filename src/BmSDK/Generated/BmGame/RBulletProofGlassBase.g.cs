@@ -80,7 +80,8 @@ public partial class RBulletProofGlassBase : BmSDK.Engine.StaticMeshActor, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundsForGlass;
     /// <summary>
-    /// Function: GetBoundsForGlass
+    /// Function: GetBoundsForGlass<br/>
+    /// Native code at BatmanAK.exe+0x48DDF0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoundsForGlass()
     {

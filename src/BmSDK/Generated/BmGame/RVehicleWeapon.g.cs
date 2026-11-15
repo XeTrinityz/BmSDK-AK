@@ -147,7 +147,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessProjectileSound;
     /// <summary>
-    /// Function: ProcessProjectileSound
+    /// Function: ProcessProjectileSound<br/>
+    /// Native code at BatmanAK.exe+0x46B6F0 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessProjectileSound(System.Numerics.Vector3 ProjectileOrigin, System.Numerics.Vector3 ProjectileDestination)
     {
@@ -277,7 +278,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
-    /// Function: GetAutoTargetRotation
+    /// Function: GetAutoTargetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetAutoTargetRotation()
     {
@@ -298,7 +300,8 @@ public partial class RVehicleWeapon : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForProhibittedTarget;
     /// <summary>
-    /// Function: CheckForProhibittedTarget
+    /// Function: CheckForProhibittedTarget<br/>
+    /// Native code at BatmanAK.exe+0x49ADC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor CheckForProhibittedTarget()
     {

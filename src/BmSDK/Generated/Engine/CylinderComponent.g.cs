@@ -94,7 +94,8 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCylinderSize;
     /// <summary>
-    /// Function: SetCylinderSize
+    /// Function: SetCylinderSize<br/>
+    /// Native code at BatmanAK.exe+0xDD7920 in the Steam build
     /// </summary>
     public unsafe virtual void SetCylinderSize(float NewRadius, float NewHeight)
     {

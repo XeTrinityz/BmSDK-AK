@@ -105,7 +105,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CastTemporaryMaterial;
     /// <summary>
-    /// Function: CastTemporaryMaterial
+    /// Function: CastTemporaryMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDDC660 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceConstant CastTemporaryMaterial(BmSDK.Engine.MaterialInterface Material)
     {
@@ -127,7 +128,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures2;
     /// <summary>
-    /// Function: PrestreamTextures2
+    /// Function: PrestreamTextures2<br/>
+    /// Native code at BatmanAK.exe+0xDD6740 in the Steam build
     /// </summary>
     public unsafe virtual void PrestreamTextures2(float Seconds, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
@@ -152,7 +154,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures;
     /// <summary>
-    /// Function: PrestreamTextures
+    /// Function: PrestreamTextures<br/>
+    /// Native code at BatmanAK.exe+0xDD6490 in the Steam build
     /// </summary>
     public unsafe virtual void PrestreamTextures(float Seconds, bool bPrioritizeCharacterTextures, int CinematicTextureGroups = default)
     {
@@ -176,7 +179,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumElements;
     /// <summary>
-    /// Function: GetNumElements
+    /// Function: GetNumElements<br/>
+    /// Native code at BatmanAK.exe+0x496F30 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumElements()
     {
@@ -197,7 +201,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowMaterialSwap;
     /// <summary>
-    /// Function: SetAllowMaterialSwap
+    /// Function: SetAllowMaterialSwap<br/>
+    /// Native code at BatmanAK.exe+0xDD6190 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllowMaterialSwap(bool bAllow)
     {
@@ -219,7 +224,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDLCExtraViewMaterial;
     /// <summary>
-    /// Function: SetDLCExtraViewMaterial
+    /// Function: SetDLCExtraViewMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDE2990 in the Steam build
     /// </summary>
     public unsafe virtual void SetDLCExtraViewMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -242,7 +248,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileViewMaterial;
     /// <summary>
-    /// Function: SetBatmobileViewMaterial
+    /// Function: SetBatmobileViewMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDE27B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBatmobileViewMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -265,7 +272,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThermalMaterial;
     /// <summary>
-    /// Function: SetThermalMaterial
+    /// Function: SetThermalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDE25D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetThermalMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -288,7 +296,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScanMaterial;
     /// <summary>
-    /// Function: SetScanMaterial
+    /// Function: SetScanMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDE23F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScanMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -311,7 +320,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearXRayMaterials;
     /// <summary>
-    /// Function: ClearXRayMaterials
+    /// Function: ClearXRayMaterials<br/>
+    /// Native code at BatmanAK.exe+0xDE2370 in the Steam build
     /// </summary>
     public unsafe virtual void ClearXRayMaterials()
     {
@@ -332,7 +342,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXRayMaterial;
     /// <summary>
-    /// Function: SetXRayMaterial
+    /// Function: SetXRayMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDE2150 in the Steam build
     /// </summary>
     public unsafe virtual void SetXRayMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material, bool bAllowCallingConditionalUpdateComponents = default)
     {
@@ -356,7 +367,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMaterials;
     /// <summary>
-    /// Function: ClearMaterials
+    /// Function: ClearMaterials<br/>
+    /// Native code at BatmanAK.exe+0xDD1310 in the Steam build
     /// </summary>
     public unsafe virtual void ClearMaterials()
     {
@@ -377,7 +389,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
-    /// Function: SetMaterial
+    /// Function: SetMaterial<br/>
+    /// Native code at BatmanAK.exe+0x94FF50 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -400,7 +413,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
-    /// Function: GetMaterial
+    /// Function: GetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDD6350 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetMaterial(int ElementIndex)
     {
@@ -422,7 +436,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
-    /// Function: GetUseSimpleLineCollision
+    /// Function: GetUseSimpleLineCollision<br/>
+    /// Native code at BatmanAK.exe+0x900590 in the Steam build
     /// </summary>
     public unsafe virtual bool GetUseSimpleLineCollision()
     {
@@ -443,7 +458,8 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
-    /// Function: GetUseSimpleBoxCollision
+    /// Function: GetUseSimpleBoxCollision<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetUseSimpleBoxCollision()
     {

@@ -80,7 +80,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimTreeNodeBlendValue;
     /// <summary>
-    /// Function: SetAnimTreeNodeBlendValue
+    /// Function: SetAnimTreeNodeBlendValue<br/>
+    /// Native code at BatmanAK.exe+0x4B28A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnimTreeNodeBlendValue(BmSDK.FName setNodeName, float blendValue)
     {
@@ -103,7 +104,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTreeNodeBlendValue;
     /// <summary>
-    /// Function: GetAnimTreeNodeBlendValue
+    /// Function: GetAnimTreeNodeBlendValue<br/>
+    /// Native code at BatmanAK.exe+0x4B2760 in the Steam build
     /// </summary>
     public unsafe virtual float GetAnimTreeNodeBlendValue(BmSDK.FName getNodeName)
     {
@@ -125,7 +127,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStateAnimNode;
     /// <summary>
-    /// Function: GetStateAnimNode
+    /// Function: GetStateAnimNode<br/>
+    /// Native code at BatmanAK.exe+0x4B2620 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetStateAnimNode(BmSDK.FName AnimStateName)
     {
@@ -147,7 +150,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentCapeAnimNode;
     /// <summary>
-    /// Function: GetCurrentCapeAnimNode
+    /// Function: GetCurrentCapeAnimNode<br/>
+    /// Native code at BatmanAK.exe+0x46F670 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetCurrentCapeAnimNode()
     {
@@ -168,7 +172,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumBonesInCape;
     /// <summary>
-    /// Function: GetNumBonesInCape
+    /// Function: GetNumBonesInCape<br/>
+    /// Native code at BatmanAK.exe+0x46F620 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumBonesInCape()
     {
@@ -189,7 +194,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasCurrentAnimEnded;
     /// <summary>
-    /// Function: GetHasCurrentAnimEnded
+    /// Function: GetHasCurrentAnimEnded<br/>
+    /// Native code at BatmanAK.exe+0x46F5D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasCurrentAnimEnded()
     {
@@ -210,7 +216,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResumeAnim;
     /// <summary>
-    /// Function: ResumeAnim
+    /// Function: ResumeAnim<br/>
+    /// Native code at BatmanAK.exe+0xB48EB0 in the Steam build
     /// </summary>
     public unsafe virtual void ResumeAnim()
     {
@@ -231,7 +238,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseAnim;
     /// <summary>
-    /// Function: PauseAnim
+    /// Function: PauseAnim<br/>
+    /// Native code at BatmanAK.exe+0x46F590 in the Steam build
     /// </summary>
     public unsafe virtual void PauseAnim()
     {
@@ -252,7 +260,8 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeAnim;
     /// <summary>
-    /// Function: ChangeAnim
+    /// Function: ChangeAnim<br/>
+    /// Native code at BatmanAK.exe+0x4B2210 in the Steam build
     /// </summary>
     public unsafe virtual void ChangeAnim(BmSDK.FName NewAnimName, BmSDK.FName NewAnimNodeName = default, bool NewIsMirrored = default, bool isBlendOldAnim = default, float BlendDuration = default, bool bBlendPose = default, float PoseBlendDuration = default, float AnimStartTime = default, float AnimPlayRate = default, BmSDK.FName SetParentTimeSyncAnimName = default, float SetParentTimeSyncAnimOffset = default, bool bSetSyncParentAnimMirroredness = default)
     {

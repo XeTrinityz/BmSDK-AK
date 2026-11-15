@@ -133,7 +133,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePostProcessSettings;
     /// <summary>
-    /// Function: OverridePostProcessSettings
+    /// Function: OverridePostProcessSettings<br/>
+    /// Native code at BatmanAK.exe+0x5741D0 in the Steam build
     /// </summary>
     public unsafe virtual void OverridePostProcessSettings(out BmSDK.Engine.PostProcessVolume.FPostProcessSettings PPSettings)
     {
@@ -155,7 +156,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSkeletalMeshDepthBias;
     /// <summary>
-    /// Function: UpdateSkeletalMeshDepthBias
+    /// Function: UpdateSkeletalMeshDepthBias<br/>
+    /// Native code at BatmanAK.exe+0x5574A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSkeletalMeshDepthBias(out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh UpdateHighlightedMesh)
     {
@@ -177,7 +179,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateNewHighlightStaticMesh;
     /// <summary>
-    /// Function: CreateNewHighlightStaticMesh
+    /// Function: CreateNewHighlightStaticMesh<br/>
+    /// Native code at BatmanAK.exe+0x50CD70 in the Steam build
     /// </summary>
     public unsafe virtual void CreateNewHighlightStaticMesh(int iCachedStaticMeshPosition)
     {
@@ -199,7 +202,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateNewHighlightSkelMesh;
     /// <summary>
-    /// Function: CreateNewHighlightSkelMesh
+    /// Function: CreateNewHighlightSkelMesh<br/>
+    /// Native code at BatmanAK.exe+0x50CC50 in the Steam build
     /// </summary>
     public unsafe virtual void CreateNewHighlightSkelMesh(int iCachedSkelMeshPosition)
     {
@@ -221,7 +225,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHighlightedMeshCurrentTarget;
     /// <summary>
-    /// Function: IsHighlightedMeshCurrentTarget
+    /// Function: IsHighlightedMeshCurrentTarget<br/>
+    /// Native code at BatmanAK.exe+0xFDD710 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHighlightedMeshCurrentTarget(BmSDK.Engine.MeshComponent CheckHighlightedMesh)
     {
@@ -243,7 +248,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowHighlightToBeHidden;
     /// <summary>
-    /// Function: AllowHighlightToBeHidden
+    /// Function: AllowHighlightToBeHidden<br/>
+    /// Native code at BatmanAK.exe+0x5573C0 in the Steam build
     /// </summary>
     public unsafe virtual bool AllowHighlightToBeHidden(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -265,7 +271,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHighlightMeshVisibility;
     /// <summary>
-    /// Function: UpdateHighlightMeshVisibility
+    /// Function: UpdateHighlightMeshVisibility<br/>
+    /// Native code at BatmanAK.exe+0x5572E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateHighlightMeshVisibility(out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -287,7 +294,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCorrectMIC;
     /// <summary>
-    /// Function: GetCorrectMIC
+    /// Function: GetCorrectMIC<br/>
+    /// Native code at BatmanAK.exe+0x50C5F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetCorrectMIC(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
@@ -317,7 +325,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCorrectMICOnMesh;
     /// <summary>
-    /// Function: SetCorrectMICOnMesh
+    /// Function: SetCorrectMICOnMesh<br/>
+    /// Native code at BatmanAK.exe+0x50BDB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCorrectMICOnMesh(BmSDK.Engine.Actor NewActor, BmSDK.Engine.MeshComponent HighlightMesh, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
@@ -349,7 +358,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddHighLightStaticMesh;
     /// <summary>
-    /// Function: AddHighLightStaticMesh
+    /// Function: AddHighLightStaticMesh<br/>
+    /// Native code at BatmanAK.exe+0x541850 in the Steam build
     /// </summary>
     public unsafe virtual void AddHighLightStaticMesh(BmSDK.Engine.Actor NewActor, BmSDK.Engine.StaticMeshComponent StaticMesh, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool IsTagged, bool bSniperHasAmmoLeft, bool bCanStillBeShot, bool bExplosive, bool bNeedsUpgrade, bool bNormalViewMode, BmSDK.FStringArg DescriptionText, bool bForCamouflageThug, bool bSpecialTrackerTarget)
     {
@@ -383,7 +393,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddHighLightSkeletalMesh;
     /// <summary>
-    /// Function: AddHighLightSkeletalMesh
+    /// Function: AddHighLightSkeletalMesh<br/>
+    /// Native code at BatmanAK.exe+0x540F90 in the Steam build
     /// </summary>
     public unsafe virtual void AddHighLightSkeletalMesh(BmSDK.Engine.Actor NewActor, BmSDK.Engine.SkeletalMeshComponent SkelMesh, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool IsTagged, bool bSniperHasAmmoLeft, bool bCanStillBeShot, bool bExplosive, bool bNeedsUpgrade, bool bNormalViewMode, BmSDK.FStringArg DescriptionText, bool bForCamouflageThug, bool bSpecialTrackerTarget)
     {
@@ -417,7 +428,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearOutLeastRelevantStaticMesh;
     /// <summary>
-    /// Function: ClearOutLeastRelevantStaticMesh
+    /// Function: ClearOutLeastRelevantStaticMesh<br/>
+    /// Native code at BatmanAK.exe+0x48EF00 in the Steam build
     /// </summary>
     public unsafe virtual void ClearOutLeastRelevantStaticMesh()
     {
@@ -438,7 +450,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearOutLeastRelevantSkeletalMesh;
     /// <summary>
-    /// Function: ClearOutLeastRelevantSkeletalMesh
+    /// Function: ClearOutLeastRelevantSkeletalMesh<br/>
+    /// Native code at BatmanAK.exe+0x48EEC0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearOutLeastRelevantSkeletalMesh()
     {
@@ -459,7 +472,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearHighlights;
     /// <summary>
-    /// Function: ClearHighlights
+    /// Function: ClearHighlights<br/>
+    /// Native code at BatmanAK.exe+0x48EE20 in the Steam build
     /// </summary>
     public unsafe virtual void ClearHighlights(bool bForceClear = default)
     {
@@ -481,7 +495,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateIndividualTargetHighlight;
     /// <summary>
-    /// Function: PrimedUpdateIndividualTargetHighlight
+    /// Function: PrimedUpdateIndividualTargetHighlight<br/>
+    /// Native code at BatmanAK.exe+0xB86560 in the Steam build
     /// </summary>
     public unsafe virtual void PrimedUpdateIndividualTargetHighlight(BmSDK.Engine.Actor CheckTarget)
     {
@@ -503,7 +518,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateHighlights;
     /// <summary>
-    /// Function: PrimedUpdateHighlights
+    /// Function: PrimedUpdateHighlights<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void PrimedUpdateHighlights()
     {
@@ -524,7 +540,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HolsteredShouldHighlightBeMaintained;
     /// <summary>
-    /// Function: HolsteredShouldHighlightBeMaintained
+    /// Function: HolsteredShouldHighlightBeMaintained<br/>
+    /// Native code at BatmanAK.exe+0x557200 in the Steam build
     /// </summary>
     public unsafe virtual bool HolsteredShouldHighlightBeMaintained(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
@@ -546,7 +563,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HolsteredUpdateHighlights;
     /// <summary>
-    /// Function: HolsteredUpdateHighlights
+    /// Function: HolsteredUpdateHighlights<br/>
+    /// Native code at BatmanAK.exe+0x48EDE0 in the Steam build
     /// </summary>
     public unsafe virtual void HolsteredUpdateHighlights()
     {
@@ -567,7 +585,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupHighlights;
     /// <summary>
-    /// Function: SetupHighlights
+    /// Function: SetupHighlights<br/>
+    /// Native code at BatmanAK.exe+0x48EDA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupHighlights()
     {
@@ -715,7 +734,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAliveProjectiles;
     /// <summary>
-    /// Function: UpdateAliveProjectiles
+    /// Function: UpdateAliveProjectiles<br/>
+    /// Native code at BatmanAK.exe+0x50BC90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAliveProjectiles(BmSDK.BmGame.RProjectile NewProjectile)
     {
@@ -900,7 +920,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActualLaunchLocation;
     /// <summary>
-    /// Function: GetActualLaunchLocation
+    /// Function: GetActualLaunchLocation<br/>
+    /// Native code at BatmanAK.exe+0x48ECF0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetActualLaunchLocation(System.Numerics.Vector3 DesiredLaunchLocation)
     {
@@ -1078,7 +1099,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMultipleTargets;
     /// <summary>
-    /// Function: FindMultipleTargets
+    /// Function: FindMultipleTargets<br/>
+    /// Native code at BatmanAK.exe+0x556EF0 in the Steam build
     /// </summary>
     public unsafe virtual void FindMultipleTargets(System.Numerics.Vector3 LaunchPosition, BmSDK.Rotator LaunchAngle, float Range, float TargetAngle, out BmSDK.TArray<BmSDK.Engine.Actor> Targets, out BmSDK.TArray<int> PositionIndex)
     {
@@ -1144,7 +1166,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPC;
     /// <summary>
-    /// Function: GetPC
+    /// Function: GetPC<br/>
+    /// Native code at BatmanAK.exe+0x47EE20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerController GetPC()
     {
@@ -1265,7 +1288,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetOrigin;
     /// <summary>
-    /// Function: GetAutoTargetOrigin
+    /// Function: GetAutoTargetOrigin<br/>
+    /// Native code at BatmanAK.exe+0x48EC40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAutoTargetOrigin(BmSDK.Rotator AimDirection)
     {
@@ -1287,7 +1311,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCorrectedAutoTargetOrigin;
     /// <summary>
-    /// Function: GetCorrectedAutoTargetOrigin
+    /// Function: GetCorrectedAutoTargetOrigin<br/>
+    /// Native code at BatmanAK.exe+0x48EB40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCorrectedAutoTargetOrigin(out System.Numerics.Vector3 CameraPos, out BmSDK.Rotator AimDirection)
     {
@@ -1314,7 +1339,8 @@ public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
-    /// Function: GetAutoTargetRotation
+    /// Function: GetAutoTargetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB2D770 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetAutoTargetRotation()
     {

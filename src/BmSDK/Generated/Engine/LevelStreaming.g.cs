@@ -75,7 +75,8 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestUnloadAndRemoval;
     /// <summary>
-    /// Function: RequestUnloadAndRemoval
+    /// Function: RequestUnloadAndRemoval<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void RequestUnloadAndRemoval()
     {

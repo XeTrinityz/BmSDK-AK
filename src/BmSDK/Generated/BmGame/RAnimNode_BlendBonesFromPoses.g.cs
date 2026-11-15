@@ -80,7 +80,8 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetBlendWeight;
     /// <summary>
-    /// Function: SetTargetBlendWeight
+    /// Function: SetTargetBlendWeight<br/>
+    /// Native code at BatmanAK.exe+0x4B1EF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTargetBlendWeight(float NewTargetWeight, float NewTargetBlendDuration)
     {
@@ -103,7 +104,8 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlendPosesFromSkeletalMeshComp;
     /// <summary>
-    /// Function: SetBlendPosesFromSkeletalMeshComp
+    /// Function: SetBlendPosesFromSkeletalMeshComp<br/>
+    /// Native code at BatmanAK.exe+0x46F550 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlendPosesFromSkeletalMeshComp()
     {

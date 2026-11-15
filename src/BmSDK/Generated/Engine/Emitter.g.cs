@@ -375,7 +375,8 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
-    /// Function: SetTemplate
+    /// Function: SetTemplate<br/>
+    /// Native code at BatmanAK.exe+0x78CAF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.ParticleSystem NewTemplate, bool bDestroyOnFinish)
     {
@@ -398,7 +399,8 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
-    /// Function: GetAkAudible
+    /// Function: GetAkAudible<br/>
+    /// Native code at BatmanAK.exe+0x46A2E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {

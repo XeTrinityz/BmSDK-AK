@@ -80,7 +80,8 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMorphTarget;
     /// <summary>
-    /// Function: UpdateMorphTarget
+    /// Function: UpdateMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0xB57150 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateMorphTarget(BmSDK.Engine.MorphTarget Target, float InWeight)
     {
@@ -103,7 +104,8 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveMorphTarget;
     /// <summary>
-    /// Function: RemoveMorphTarget
+    /// Function: RemoveMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0xB57030 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveMorphTarget(BmSDK.FName MorphTargetName)
     {
@@ -125,7 +127,8 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMorphTarget;
     /// <summary>
-    /// Function: AddMorphTarget
+    /// Function: AddMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0xB56EC0 in the Steam build
     /// </summary>
     public unsafe virtual bool AddMorphTarget(BmSDK.FName MorphTargetName, float InWeight = default)
     {

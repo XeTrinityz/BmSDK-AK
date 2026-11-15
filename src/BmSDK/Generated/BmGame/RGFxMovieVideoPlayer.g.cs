@@ -305,7 +305,8 @@ public partial class RGFxMovieVideoPlayer : BmSDK.BmGame.RGFxMovie, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetVideoOverriddenTime;
     /// <summary>
-    /// Function: ResetVideoOverriddenTime
+    /// Function: ResetVideoOverriddenTime<br/>
+    /// Native code at BatmanAK.exe+0x496D00 in the Steam build
     /// </summary>
     public unsafe virtual void ResetVideoOverriddenTime()
     {
@@ -450,7 +451,8 @@ public partial class RGFxMovieVideoPlayer : BmSDK.BmGame.RGFxMovie, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFullscreenModeFromVideoResourceName;
     /// <summary>
-    /// Function: CheckForFullscreenModeFromVideoResourceName
+    /// Function: CheckForFullscreenModeFromVideoResourceName<br/>
+    /// Native code at BatmanAK.exe+0x497F40 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForFullscreenModeFromVideoResourceName()
     {

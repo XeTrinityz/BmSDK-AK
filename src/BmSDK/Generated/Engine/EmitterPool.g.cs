@@ -80,7 +80,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEmitterCustomLifetime;
     /// <summary>
-    /// Function: SpawnEmitterCustomLifetime
+    /// Function: SpawnEmitterCustomLifetime<br/>
+    /// Native code at BatmanAK.exe+0xB6D080 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystemComponent SpawnEmitterCustomLifetime(BmSDK.Engine.ParticleSystem EmitterTemplate, bool bSkipAutoActivate = default)
     {
@@ -103,7 +104,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEmitterMeshAttachment;
     /// <summary>
-    /// Function: SpawnEmitterMeshAttachment
+    /// Function: SpawnEmitterMeshAttachment<br/>
+    /// Native code at BatmanAK.exe+0xB6CCC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystemComponent SpawnEmitterMeshAttachment(BmSDK.Engine.ParticleSystem EmitterTemplate, BmSDK.Engine.SkeletalMeshComponent Mesh, BmSDK.FName AttachPointName, bool bAttachToSocket = default, System.Numerics.Vector3 RelativeLoc = default, BmSDK.Rotator RelativeRot = default)
     {
@@ -130,7 +132,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEmitter;
     /// <summary>
-    /// Function: SpawnEmitter
+    /// Function: SpawnEmitter<br/>
+    /// Native code at BatmanAK.exe+0xB6CA30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystemComponent SpawnEmitter(BmSDK.Engine.ParticleSystem EmitterTemplate, System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation = default, BmSDK.Engine.Actor AttachToActor = default, BmSDK.Engine.Actor InInstigator = default, int MaxDLEPooledReuses = default, bool bInheritScaleFromBase = default)
     {
@@ -158,7 +161,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPooledComponent;
     /// <summary>
-    /// Function: GetPooledComponent
+    /// Function: GetPooledComponent<br/>
+    /// Native code at BatmanAK.exe+0xB6C850 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystemComponent GetPooledComponent(BmSDK.Engine.ParticleSystem EmitterTemplate, bool bAutoActivate)
     {
@@ -181,7 +185,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreeMatInstConsts;
     /// <summary>
-    /// Function: GetFreeMatInstConsts
+    /// Function: GetFreeMatInstConsts<br/>
+    /// Native code at BatmanAK.exe+0xB3A7C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceConstant GetFreeMatInstConsts(bool bCreateNewObject = default)
     {
@@ -203,7 +208,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeMaterialInstanceConstants;
     /// <summary>
-    /// Function: FreeMaterialInstanceConstants
+    /// Function: FreeMaterialInstanceConstants<br/>
+    /// Native code at BatmanAK.exe+0xB6C730 in the Steam build
     /// </summary>
     public unsafe virtual void FreeMaterialInstanceConstants(BmSDK.Engine.StaticMeshComponent SMC)
     {
@@ -225,7 +231,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreeStaticMeshComponent;
     /// <summary>
-    /// Function: GetFreeStaticMeshComponent
+    /// Function: GetFreeStaticMeshComponent<br/>
+    /// Native code at BatmanAK.exe+0xB3A720 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMeshComponent GetFreeStaticMeshComponent(bool bCreateNewObject = default)
     {
@@ -247,7 +254,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeStaticMeshComponents;
     /// <summary>
-    /// Function: FreeStaticMeshComponents
+    /// Function: FreeStaticMeshComponents<br/>
+    /// Native code at BatmanAK.exe+0xB6C610 in the Steam build
     /// </summary>
     public unsafe virtual void FreeStaticMeshComponents(BmSDK.Engine.ParticleSystemComponent PSC)
     {
@@ -269,7 +277,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnToPool;
     /// <summary>
-    /// Function: ReturnToPool
+    /// Function: ReturnToPool<br/>
+    /// Native code at BatmanAK.exe+0xB6C4F0 in the Steam build
     /// </summary>
     public unsafe virtual void ReturnToPool(BmSDK.Engine.ParticleSystemComponent PSC)
     {
@@ -291,7 +300,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearPoolComponents;
     /// <summary>
-    /// Function: ClearPoolComponents
+    /// Function: ClearPoolComponents<br/>
+    /// Native code at BatmanAK.exe+0xB3A680 in the Steam build
     /// </summary>
     public unsafe virtual void ClearPoolComponents(bool bClearActive = default)
     {
@@ -313,7 +323,8 @@ public partial class EmitterPool : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnParticleSystemFinished;
     /// <summary>
-    /// Function: OnParticleSystemFinished
+    /// Function: OnParticleSystemFinished<br/>
+    /// Native code at BatmanAK.exe+0x4DEA00 in the Steam build
     /// </summary>
     public unsafe virtual void OnParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent PSC)
     {

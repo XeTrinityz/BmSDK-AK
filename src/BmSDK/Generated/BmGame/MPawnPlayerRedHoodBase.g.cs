@@ -365,7 +365,8 @@ public partial class MPawnPlayerRedHoodBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RicochetRayTest;
     /// <summary>
-    /// Function: RicochetRayTest
+    /// Function: RicochetRayTest<br/>
+    /// Native code at BatmanAK.exe+0x4D1140 in the Steam build
     /// </summary>
     public unsafe virtual void RicochetRayTest(System.Numerics.Vector3 Start, System.Numerics.Vector3 Dir, float Length)
     {
@@ -389,7 +390,8 @@ public partial class MPawnPlayerRedHoodBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGetRicochetTarget;
     /// <summary>
-    /// Function: UpdateGetRicochetTarget
+    /// Function: UpdateGetRicochetTarget<br/>
+    /// Native code at BatmanAK.exe+0x4D0F50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor UpdateGetRicochetTarget(int maxIterations, BmSDK.BmGame.RInventoryGadget Gadget)
     {
@@ -412,7 +414,8 @@ public partial class MPawnPlayerRedHoodBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartGetRicochetTarget;
     /// <summary>
-    /// Function: StartGetRicochetTarget
+    /// Function: StartGetRicochetTarget<br/>
+    /// Native code at BatmanAK.exe+0x478C00 in the Steam build
     /// </summary>
     public unsafe virtual void StartGetRicochetTarget(System.Numerics.Vector3 CameraLoc, BmSDK.Rotator CameraRot, System.Numerics.Vector3 launchPos)
     {

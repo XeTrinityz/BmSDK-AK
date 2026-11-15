@@ -80,7 +80,8 @@ public partial class RSeqEvent_FakeTacticianOrder : BmSDK.Engine.SequenceEvent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariablesFromSynthesiser;
     /// <summary>
-    /// Function: SetVariablesFromSynthesiser
+    /// Function: SetVariablesFromSynthesiser<br/>
+    /// Native code at BatmanAK.exe+0x4B0D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetVariablesFromSynthesiser(BmSDK.BmGame.RVoiceSynthesiser Synthesiser)
     {

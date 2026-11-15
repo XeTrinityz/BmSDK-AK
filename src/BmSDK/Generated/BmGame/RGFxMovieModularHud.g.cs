@@ -1026,7 +1026,8 @@ public partial class RGFxMovieModularHud : BmSDK.BmGame.RGFxMovieModularHudBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNPCCountString_DLCHarleyQuinn;
     /// <summary>
-    /// Function: GetNPCCountString_DLCHarleyQuinn
+    /// Function: GetNPCCountString_DLCHarleyQuinn<br/>
+    /// Native code at BatmanAK.exe+0x5470D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetNPCCountString_DLCHarleyQuinn(int Armed, int UnArmed)
     {
@@ -1049,7 +1050,8 @@ public partial class RGFxMovieModularHud : BmSDK.BmGame.RGFxMovieModularHudBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNPCCountString;
     /// <summary>
-    /// Function: GetNPCCountString
+    /// Function: GetNPCCountString<br/>
+    /// Native code at BatmanAK.exe+0x546EC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetNPCCountString(int Armed, int UnArmed)
     {
@@ -1102,7 +1104,8 @@ public partial class RGFxMovieModularHud : BmSDK.BmGame.RGFxMovieModularHudBase,
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessDeferredInterfaceCallsNative;
     /// <summary>
-    /// Function: ProcessDeferredInterfaceCallsNative
+    /// Function: ProcessDeferredInterfaceCallsNative<br/>
+    /// Native code at BatmanAK.exe+0x547560 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessDeferredInterfaceCallsNative(BmSDK.FStringArg DeferredExternalInterfaceCalls)
     {

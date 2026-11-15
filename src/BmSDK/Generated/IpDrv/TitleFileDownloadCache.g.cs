@@ -110,7 +110,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeleteDownloadFileCompleteInternal;
     /// <summary>
-    /// Function: OnDeleteDownloadFileCompleteInternal
+    /// Function: OnDeleteDownloadFileCompleteInternal<br/>
+    /// Native code at BatmanAK.exe+0x6B4740 in the Steam build
     /// </summary>
     public unsafe virtual bool OnDeleteDownloadFileCompleteInternal(bool bWasSuccessful, BmSDK.FStringArg Filename)
     {
@@ -167,7 +168,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReadDownloadFileCompleteInternal;
     /// <summary>
-    /// Function: OnReadDownloadFileCompleteInternal
+    /// Function: OnReadDownloadFileCompleteInternal<br/>
+    /// Native code at BatmanAK.exe+0x6B4480 in the Steam build
     /// </summary>
     public unsafe virtual bool OnReadDownloadFileCompleteInternal(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesProcessed)
     {
@@ -229,7 +231,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWriteDownloadFileCompleteInternal;
     /// <summary>
-    /// Function: OnWriteDownloadFileCompleteInternal
+    /// Function: OnWriteDownloadFileCompleteInternal<br/>
+    /// Native code at BatmanAK.exe+0x6B41C0 in the Steam build
     /// </summary>
     public unsafe virtual bool OnWriteDownloadFileCompleteInternal(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesProcessed)
     {
@@ -321,7 +324,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteTitleFile;
     /// <summary>
-    /// Function: DeleteTitleFile
+    /// Function: DeleteTitleFile<br/>
+    /// Native code at BatmanAK.exe+0xB9F1F0 in the Steam build
     /// </summary>
     public unsafe virtual bool DeleteTitleFile(BmSDK.FStringArg Filename)
     {
@@ -344,7 +348,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteTitleFiles;
     /// <summary>
-    /// Function: DeleteTitleFiles
+    /// Function: DeleteTitleFiles<br/>
+    /// Native code at BatmanAK.exe+0x6AEFB0 in the Steam build
     /// </summary>
     public unsafe virtual bool DeleteTitleFiles(float MaxAgeSeconds)
     {
@@ -366,7 +371,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCachedFile;
     /// <summary>
-    /// Function: ClearCachedFile
+    /// Function: ClearCachedFile<br/>
+    /// Native code at BatmanAK.exe+0x6B4070 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearCachedFile(BmSDK.FStringArg Filename)
     {
@@ -389,7 +395,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCachedFiles;
     /// <summary>
-    /// Function: ClearCachedFiles
+    /// Function: ClearCachedFiles<br/>
+    /// Native code at BatmanAK.exe+0xB36010 in the Steam build
     /// </summary>
     public unsafe virtual bool ClearCachedFiles()
     {
@@ -410,7 +417,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleFileLogicalName;
     /// <summary>
-    /// Function: GetTitleFileLogicalName
+    /// Function: GetTitleFileLogicalName<br/>
+    /// Native code at BatmanAK.exe+0x6B3EF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetTitleFileLogicalName(BmSDK.FStringArg Filename)
     {
@@ -433,7 +441,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleFileHash;
     /// <summary>
-    /// Function: GetTitleFileHash
+    /// Function: GetTitleFileHash<br/>
+    /// Native code at BatmanAK.exe+0x6B3D70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetTitleFileHash(BmSDK.FStringArg Filename)
     {
@@ -456,7 +465,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleFileState;
     /// <summary>
-    /// Function: GetTitleFileState
+    /// Function: GetTitleFileState<br/>
+    /// Native code at BatmanAK.exe+0x6B3C20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetTitleFileState(BmSDK.FStringArg Filename)
     {
@@ -479,7 +489,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleFileContents;
     /// <summary>
-    /// Function: GetTitleFileContents
+    /// Function: GetTitleFileContents<br/>
+    /// Native code at BatmanAK.exe+0x6B3A90 in the Steam build
     /// </summary>
     public unsafe virtual bool GetTitleFileContents(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents)
     {
@@ -600,7 +611,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveTitleFile;
     /// <summary>
-    /// Function: SaveTitleFile
+    /// Function: SaveTitleFile<br/>
+    /// Native code at BatmanAK.exe+0x6B3830 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveTitleFile(BmSDK.FStringArg Filename, BmSDK.FStringArg LogicalName, BmSDK.TArray<byte> FileContents)
     {
@@ -675,7 +687,8 @@ public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadTitleFile;
     /// <summary>
-    /// Function: LoadTitleFile
+    /// Function: LoadTitleFile<br/>
+    /// Native code at BatmanAK.exe+0x53F310 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadTitleFile(BmSDK.FStringArg Filename)
     {

@@ -75,7 +75,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VehicleBehaviourActivateOutputLink;
     /// <summary>
-    /// Function: VehicleBehaviourActivateOutputLink
+    /// Function: VehicleBehaviourActivateOutputLink<br/>
+    /// Native code at BatmanAK.exe+0x526040 in the Steam build
     /// </summary>
     public unsafe virtual void VehicleBehaviourActivateOutputLink(int Link)
     {
@@ -173,7 +174,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOffsetBehindFollowVehicle;
     /// <summary>
-    /// Function: GetOffsetBehindFollowVehicle
+    /// Function: GetOffsetBehindFollowVehicle<br/>
+    /// Native code at BatmanAK.exe+0x525DA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetOffsetBehindFollowVehicle(BmSDK.BmGame.RVehicleNPC FollowVehicle, System.Numerics.Vector3 Location, int LinkIndex, out float SpanTime)
     {
@@ -460,7 +462,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPointInAnyBehaviourVolume;
     /// <summary>
-    /// Function: IsPointInAnyBehaviourVolume
+    /// Function: IsPointInAnyBehaviourVolume<br/>
+    /// Native code at BatmanAK.exe+0x49A430 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPointInAnyBehaviourVolume(System.Numerics.Vector3 Point)
     {
@@ -837,7 +840,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpecificallyLookingForPlayer;
     /// <summary>
-    /// Function: SpecificallyLookingForPlayer
+    /// Function: SpecificallyLookingForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x4885B0 in the Steam build
     /// </summary>
     public unsafe virtual bool SpecificallyLookingForPlayer()
     {
@@ -858,7 +862,8 @@ public partial class RVehicleBehaviour : BmSDK.Engine.SequenceAction, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AwareOfPlayer;
     /// <summary>
-    /// Function: AwareOfPlayer
+    /// Function: AwareOfPlayer<br/>
+    /// Native code at BatmanAK.exe+0x49A3E0 in the Steam build
     /// </summary>
     public unsafe virtual bool AwareOfPlayer()
     {

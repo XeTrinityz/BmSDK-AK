@@ -80,7 +80,8 @@ public partial class RMap3DRoadComponent : BmSDK.Engine.PrimitiveComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRouteMesh;
     /// <summary>
-    /// Function: UpdateRouteMesh
+    /// Function: UpdateRouteMesh<br/>
+    /// Native code at BatmanAK.exe+0x552840 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRouteMesh(int LinkStart, BmSDK.TArray<int> SatNavRoute)
     {

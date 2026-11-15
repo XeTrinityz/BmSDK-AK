@@ -80,7 +80,8 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRelevantInteraction;
     /// <summary>
-    /// Function: RemoveRelevantInteraction
+    /// Function: RemoveRelevantInteraction<br/>
+    /// Native code at BatmanAK.exe+0xB5B930 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveRelevantInteraction(BmSDK.FName InteractionToRemove)
     {
@@ -102,7 +103,8 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRelevantInteraction;
     /// <summary>
-    /// Function: AddRelevantInteraction
+    /// Function: AddRelevantInteraction<br/>
+    /// Native code at BatmanAK.exe+0xB5B810 in the Steam build
     /// </summary>
     public unsafe virtual void AddRelevantInteraction(BmSDK.FName NewInteraction)
     {

@@ -80,7 +80,8 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverlayScreenDataCallback;
     /// <summary>
-    /// Function: OverlayScreenDataCallback
+    /// Function: OverlayScreenDataCallback<br/>
+    /// Native code at BatmanAK.exe+0x503220 in the Steam build
     /// </summary>
     public unsafe virtual void OverlayScreenDataCallback(BmSDK.BmGame.MWBIDDataMessage Data)
     {
@@ -102,7 +103,8 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNetworkStatus;
     /// <summary>
-    /// Function: GetNetworkStatus
+    /// Function: GetNetworkStatus<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void GetNetworkStatus()
     {
@@ -123,7 +125,8 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsIneligibleAgeDueToFirstParty;
     /// <summary>
-    /// Function: IsIneligibleAgeDueToFirstParty
+    /// Function: IsIneligibleAgeDueToFirstParty<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual bool IsIneligibleAgeDueToFirstParty()
     {
@@ -144,7 +147,8 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatus;
     /// <summary>
-    /// Function: GetStatus
+    /// Function: GetStatus<br/>
+    /// Native code at BatmanAK.exe+0x483080 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MWBIDOverlayManager.WBIDStatus GetStatus()
     {

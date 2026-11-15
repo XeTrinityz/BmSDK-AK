@@ -80,7 +80,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRandomTorqueImpulseToBodies;
     /// <summary>
-    /// Function: AddRandomTorqueImpulseToBodies
+    /// Function: AddRandomTorqueImpulseToBodies<br/>
+    /// Native code at BatmanAK.exe+0x9515B0 in the Steam build
     /// </summary>
     public unsafe virtual void AddRandomTorqueImpulseToBodies(float TorqueMin, float TorqueMax)
     {
@@ -103,7 +104,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Function __fn_AttachChildMeshes;
     /// <summary>
-    /// Function: AttachChildMeshes
+    /// Function: AttachChildMeshes<br/>
+    /// Native code at BatmanAK.exe+0xBB9450 in the Steam build
     /// </summary>
     public unsafe static void AttachChildMeshes(BmSDK.Engine.Actor Actor, BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> ToReattach)
     {
@@ -125,7 +127,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Function __fn_DetachChildMeshes;
     /// <summary>
-    /// Function: DetachChildMeshes
+    /// Function: DetachChildMeshes<br/>
+    /// Native code at BatmanAK.exe+0xBBB2A0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> DetachChildMeshes(BmSDK.Engine.Actor Actor, BmSDK.Engine.SkeletalMeshComponent SkelComponent)
     {
@@ -147,7 +150,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContactModification;
     /// <summary>
-    /// Function: SetContactModification
+    /// Function: SetContactModification<br/>
+    /// Native code at BatmanAK.exe+0x8A3E80 in the Steam build
     /// </summary>
     public unsafe override void SetContactModification(bool isEnableContactModificationCallback)
     {
@@ -169,7 +173,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetRagdollCalmingMeasures;
     /// <summary>
-    /// Function: ResetRagdollCalmingMeasures
+    /// Function: ResetRagdollCalmingMeasures<br/>
+    /// Native code at BatmanAK.exe+0x94E660 in the Steam build
     /// </summary>
     public unsafe virtual void ResetRagdollCalmingMeasures()
     {
@@ -190,7 +195,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableRagdollCalmingMeasures;
     /// <summary>
-    /// Function: SetDisableRagdollCalmingMeasures
+    /// Function: SetDisableRagdollCalmingMeasures<br/>
+    /// Native code at BatmanAK.exe+0x951480 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableRagdollCalmingMeasures(bool bEnabled)
     {
@@ -212,7 +218,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAreRagdollCalmingMeasuresDisabled;
     /// <summary>
-    /// Function: GetAreRagdollCalmingMeasuresDisabled
+    /// Function: GetAreRagdollCalmingMeasuresDisabled<br/>
+    /// Native code at BatmanAK.exe+0x94E5B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAreRagdollCalmingMeasuresDisabled()
     {
@@ -233,7 +240,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
-    /// Function: GetUseSimpleLineCollision
+    /// Function: GetUseSimpleLineCollision<br/>
+    /// Native code at BatmanAK.exe+0x900590 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleLineCollision()
     {
@@ -254,7 +262,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
-    /// Function: GetUseSimpleBoxCollision
+    /// Function: GetUseSimpleBoxCollision<br/>
+    /// Native code at BatmanAK.exe+0x4974D0 in the Steam build
     /// </summary>
     public unsafe override bool GetUseSimpleBoxCollision()
     {
@@ -275,7 +284,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableColourWrites;
     /// <summary>
-    /// Function: SetDisableColourWrites
+    /// Function: SetDisableColourWrites<br/>
+    /// Native code at BatmanAK.exe+0x95B420 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableColourWrites(bool bNewDisableColourWrites)
     {
@@ -297,7 +307,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDepthBias;
     /// <summary>
-    /// Function: SetDepthBias
+    /// Function: SetDepthBias<br/>
+    /// Native code at BatmanAK.exe+0x95B320 in the Steam build
     /// </summary>
     public unsafe virtual void SetDepthBias(BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData NewDepthBiasData)
     {
@@ -319,7 +330,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDepthBiasData;
     /// <summary>
-    /// Function: GetDepthBiasData
+    /// Function: GetDepthBiasData<br/>
+    /// Native code at BatmanAK.exe+0x950EC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetDepthBiasData(out BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData OutDepthBiasData)
     {
@@ -343,7 +355,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
-    /// Function: SetMaterial
+    /// Function: SetMaterial<br/>
+    /// Native code at BatmanAK.exe+0x94FF50 in the Steam build
     /// </summary>
     public unsafe override void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -366,7 +379,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotation;
     /// <summary>
-    /// Function: GetRotation
+    /// Function: GetRotation<br/>
+    /// Native code at BatmanAK.exe+0x94DDB0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Rotator GetRotation()
     {
@@ -387,7 +401,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosition;
     /// <summary>
-    /// Function: GetPosition
+    /// Function: GetPosition<br/>
+    /// Native code at BatmanAK.exe+0x94DB30 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetPosition()
     {
@@ -509,7 +524,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveApexClothCollision;
     /// <summary>
-    /// Function: RemoveApexClothCollision
+    /// Function: RemoveApexClothCollision<br/>
+    /// Native code at BatmanAK.exe+0x931F40 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveApexClothCollision()
     {
@@ -530,7 +546,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0xDD3D80 in the Steam build
     /// </summary>
     public unsafe override void SetHidden(bool NewHidden)
     {
@@ -552,7 +569,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddApexClothCollision;
     /// <summary>
-    /// Function: AddApexClothCollision
+    /// Function: AddApexClothCollision<br/>
+    /// Native code at BatmanAK.exe+0x931DF0 in the Steam build
     /// </summary>
     public unsafe virtual void AddApexClothCollision(BmSDK.Engine.RApexClothBlockingVolume ClothBlockingVolume)
     {
@@ -574,7 +592,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPermanentlyFixed;
     /// <summary>
-    /// Function: IsPermanentlyFixed
+    /// Function: IsPermanentlyFixed<br/>
+    /// Native code at BatmanAK.exe+0x950140 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPermanentlyFixed()
     {
@@ -595,7 +614,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowMaterialSection;
     /// <summary>
-    /// Function: ShowMaterialSection
+    /// Function: ShowMaterialSection<br/>
+    /// Native code at BatmanAK.exe+0x95F460 in the Steam build
     /// </summary>
     public unsafe virtual void ShowMaterialSection(int MaterialID, bool bShow, int LODIndex = default)
     {
@@ -619,7 +639,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalMaterial;
     /// <summary>
-    /// Function: GetPhysicalMaterial
+    /// Function: GetPhysicalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDD6050 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.PhysicalMaterial GetPhysicalMaterial(int BodyIndex = default)
     {
@@ -641,7 +662,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDampingRampUp;
     /// <summary>
-    /// Function: UpdateDampingRampUp
+    /// Function: UpdateDampingRampUp<br/>
+    /// Native code at BatmanAK.exe+0x951A00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDampingRampUp(float DeltaTime, bool bAllowDampingRampup)
     {
@@ -664,7 +686,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePermanentFixing;
     /// <summary>
-    /// Function: UpdatePermanentFixing
+    /// Function: UpdatePermanentFixing<br/>
+    /// Native code at BatmanAK.exe+0x94E7B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePermanentFixing()
     {
@@ -685,7 +708,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasFallenOutOfWorld;
     /// <summary>
-    /// Function: GetHasFallenOutOfWorld
+    /// Function: GetHasFallenOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x94E6C0 in the Steam build
     /// </summary>
     public unsafe override bool GetHasFallenOutOfWorld()
     {
@@ -706,7 +730,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceJointProjection;
     /// <summary>
-    /// Function: SetForceJointProjection
+    /// Function: SetForceJointProjection<br/>
+    /// Native code at BatmanAK.exe+0x9517B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetForceJointProjection(bool bNewForceJointProjection)
     {
@@ -728,7 +753,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMeshForBrokenConstraints;
     /// <summary>
-    /// Function: UpdateMeshForBrokenConstraints
+    /// Function: UpdateMeshForBrokenConstraints<br/>
+    /// Native code at BatmanAK.exe+0x8AFDA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMeshForBrokenConstraints()
     {
@@ -749,7 +775,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnHideBoneByName;
     /// <summary>
-    /// Function: UnHideBoneByName
+    /// Function: UnHideBoneByName<br/>
+    /// Native code at BatmanAK.exe+0x951120 in the Steam build
     /// </summary>
     public unsafe virtual void UnHideBoneByName(BmSDK.FName BoneName)
     {
@@ -771,7 +798,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBoneByName;
     /// <summary>
-    /// Function: HideBoneByName
+    /// Function: HideBoneByName<br/>
+    /// Native code at BatmanAK.exe+0x950FD0 in the Steam build
     /// </summary>
     public unsafe virtual void HideBoneByName(BmSDK.FName BoneName, BmSDK.Engine.SkeletalMeshComponent.EPhysBodyOp PhysBodyOption)
     {
@@ -794,7 +822,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBoneHidden;
     /// <summary>
-    /// Function: IsBoneHidden
+    /// Function: IsBoneHidden<br/>
+    /// Native code at BatmanAK.exe+0x950D90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBoneHidden(int BoneIndex)
     {
@@ -816,7 +845,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnHideBone;
     /// <summary>
-    /// Function: UnHideBone
+    /// Function: UnHideBone<br/>
+    /// Native code at BatmanAK.exe+0x950C70 in the Steam build
     /// </summary>
     public unsafe virtual void UnHideBone(int BoneIndex)
     {
@@ -838,7 +868,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBone;
     /// <summary>
-    /// Function: HideBone
+    /// Function: HideBone<br/>
+    /// Native code at BatmanAK.exe+0x950B20 in the Steam build
     /// </summary>
     public unsafe virtual void HideBone(int BoneIndex, BmSDK.Engine.SkeletalMeshComponent.EPhysBodyOp PhysBodyOption)
     {
@@ -861,7 +892,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetFaceFXRegistersByOwner;
     /// <summary>
-    /// Function: ResetFaceFXRegistersByOwner
+    /// Function: ResetFaceFXRegistersByOwner<br/>
+    /// Native code at BatmanAK.exe+0x300A20 in the Steam build
     /// </summary>
     public unsafe virtual void ResetFaceFXRegistersByOwner(BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegOwner)
     {
@@ -883,7 +915,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAllFaceFXRegisters;
     /// <summary>
-    /// Function: ResetAllFaceFXRegisters
+    /// Function: ResetAllFaceFXRegisters<br/>
+    /// Native code at BatmanAK.exe+0x3007D0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetAllFaceFXRegisters()
     {
@@ -904,7 +937,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFaceFXRegisterByOwner;
     /// <summary>
-    /// Function: SetFaceFXRegisterByOwner
+    /// Function: SetFaceFXRegisterByOwner<br/>
+    /// Native code at BatmanAK.exe+0x955BA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFaceFXRegisterByOwner(BmSDK.FStringArg RegName, float RegVal, BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegOwner, float InterpDuration = default)
     {
@@ -930,7 +964,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFaceFXRegister;
     /// <summary>
-    /// Function: SetFaceFXRegister
+    /// Function: SetFaceFXRegister<br/>
+    /// Native code at BatmanAK.exe+0x955940 in the Steam build
     /// </summary>
     public unsafe virtual void SetFaceFXRegister(BmSDK.FStringArg RegName, float RegVal, BmSDK.Engine.SkeletalMeshComponent.EFaceFXRegOp RegOp, float InterpDuration = default)
     {
@@ -956,7 +991,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingFaceFXAnim;
     /// <summary>
-    /// Function: IsPlayingFaceFXAnim
+    /// Function: IsPlayingFaceFXAnim<br/>
+    /// Native code at BatmanAK.exe+0x94E320 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPlayingFaceFXAnim()
     {
@@ -977,7 +1013,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopFaceFXAnim;
     /// <summary>
-    /// Function: StopFaceFXAnim
+    /// Function: StopFaceFXAnim<br/>
+    /// Native code at BatmanAK.exe+0x94E2E0 in the Steam build
     /// </summary>
     public unsafe virtual void StopFaceFXAnim()
     {
@@ -998,7 +1035,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFaceFXAnim;
     /// <summary>
-    /// Function: PlayFaceFXAnim
+    /// Function: PlayFaceFXAnim<br/>
+    /// Native code at BatmanAK.exe+0x9556D0 in the Steam build
     /// </summary>
     public unsafe virtual bool PlayFaceFXAnim(BmSDK.Engine.FaceFXAnimSet FaceFXAnimSetRef, BmSDK.FStringArg AnimName, BmSDK.FStringArg GroupName, BmSDK.Engine.SoundCue SoundCueToPlay)
     {
@@ -1025,7 +1063,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleInstanceVertexWeights;
     /// <summary>
-    /// Function: ToggleInstanceVertexWeights
+    /// Function: ToggleInstanceVertexWeights<br/>
+    /// Native code at BatmanAK.exe+0x8A6850 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleInstanceVertexWeights(bool bEnable, int LODIdx)
     {
@@ -1048,7 +1087,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInstanceVertexWeightBones;
     /// <summary>
-    /// Function: UpdateInstanceVertexWeightBones
+    /// Function: UpdateInstanceVertexWeightBones<br/>
+    /// Native code at BatmanAK.exe+0x95D5B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateInstanceVertexWeightBones(BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent.FBonePair> BonePairs)
     {
@@ -1070,7 +1110,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindInstanceVertexweightBonePair;
     /// <summary>
-    /// Function: FindInstanceVertexweightBonePair
+    /// Function: FindInstanceVertexweightBonePair<br/>
+    /// Native code at BatmanAK.exe+0x951400 in the Steam build
     /// </summary>
     public unsafe virtual int FindInstanceVertexweightBonePair(BmSDK.Engine.SkeletalMeshComponent.FBonePair Bones)
     {
@@ -1092,7 +1133,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveInstanceVertexWeightBoneParented;
     /// <summary>
-    /// Function: RemoveInstanceVertexWeightBoneParented
+    /// Function: RemoveInstanceVertexWeightBoneParented<br/>
+    /// Native code at BatmanAK.exe+0x951340 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveInstanceVertexWeightBoneParented(BmSDK.FName BoneName)
     {
@@ -1114,7 +1156,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddInstanceVertexWeightBoneParented;
     /// <summary>
-    /// Function: AddInstanceVertexWeightBoneParented
+    /// Function: AddInstanceVertexWeightBoneParented<br/>
+    /// Native code at BatmanAK.exe+0x951240 in the Steam build
     /// </summary>
     public unsafe virtual void AddInstanceVertexWeightBoneParented(BmSDK.FName BoneName, bool bPairWithParent = default)
     {
@@ -1137,7 +1180,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBonesWithinRadius;
     /// <summary>
-    /// Function: GetBonesWithinRadius
+    /// Function: GetBonesWithinRadius<br/>
+    /// Native code at BatmanAK.exe+0x95D320 in the Steam build
     /// </summary>
     public unsafe virtual bool GetBonesWithinRadius(System.Numerics.Vector3 Origin, float Radius, int TraceFlags, out BmSDK.TArray<BmSDK.FName> out_Bones)
     {
@@ -1162,7 +1206,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimations;
     /// <summary>
-    /// Function: UpdateAnimations
+    /// Function: UpdateAnimations<br/>
+    /// Native code at BatmanAK.exe+0x955690 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAnimations()
     {
@@ -1183,7 +1228,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceSkelUpdate;
     /// <summary>
-    /// Function: ForceSkelUpdate
+    /// Function: ForceSkelUpdate<br/>
+    /// Native code at BatmanAK.exe+0x95F420 in the Steam build
     /// </summary>
     public unsafe virtual void ForceSkelUpdate()
     {
@@ -1204,7 +1250,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRBBonesFromSpaceBases;
     /// <summary>
-    /// Function: UpdateRBBonesFromSpaceBases
+    /// Function: UpdateRBBonesFromSpaceBases<br/>
+    /// Native code at BatmanAK.exe+0x2F9530 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRBBonesFromSpaceBases(bool bMoveUnfixedBodies, bool bTeleport)
     {
@@ -1227,7 +1274,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowRFlapsAssetInstance;
     /// <summary>
-    /// Function: SetAllowRFlapsAssetInstance
+    /// Function: SetAllowRFlapsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x8A6EE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAllowRFlapsAssetInstance(bool bHasInstance)
     {
@@ -1249,7 +1297,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasPhysicsAssetInstance;
     /// <summary>
-    /// Function: SetHasPhysicsAssetInstance
+    /// Function: SetHasPhysicsAssetInstance<br/>
+    /// Native code at BatmanAK.exe+0x8A6D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetHasPhysicsAssetInstance(bool bHasInstance, bool bUseCurrentPosition = default)
     {
@@ -1272,7 +1321,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyInstanceNamed;
     /// <summary>
-    /// Function: FindBodyInstanceNamed
+    /// Function: FindBodyInstanceNamed<br/>
+    /// Native code at BatmanAK.exe+0x95B1C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance FindBodyInstanceNamed(BmSDK.FName BoneName)
     {
@@ -1294,7 +1344,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintBoneName;
     /// <summary>
-    /// Function: FindConstraintBoneName
+    /// Function: FindConstraintBoneName<br/>
+    /// Native code at BatmanAK.exe+0x9509B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName FindConstraintBoneName(int ConstraintIndex)
     {
@@ -1316,7 +1367,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintIndex;
     /// <summary>
-    /// Function: FindConstraintIndex
+    /// Function: FindConstraintIndex<br/>
+    /// Native code at BatmanAK.exe+0x950860 in the Steam build
     /// </summary>
     public unsafe virtual int FindConstraintIndex(BmSDK.FName ConstraintName)
     {
@@ -1338,7 +1390,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMorphTargets;
     /// <summary>
-    /// Function: InitMorphTargets
+    /// Function: InitMorphTargets<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void InitMorphTargets()
     {
@@ -1359,7 +1412,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitSkelControls;
     /// <summary>
-    /// Function: InitSkelControls
+    /// Function: InitSkelControls<br/>
+    /// Native code at BatmanAK.exe+0x94E270 in the Steam build
     /// </summary>
     public unsafe virtual void InitSkelControls()
     {
@@ -1380,7 +1434,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateParentBoneMap;
     /// <summary>
-    /// Function: UpdateParentBoneMap
+    /// Function: UpdateParentBoneMap<br/>
+    /// Native code at BatmanAK.exe+0x959EB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateParentBoneMap()
     {
@@ -1401,7 +1456,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParentAnimComponent;
     /// <summary>
-    /// Function: SetParentAnimComponent
+    /// Function: SetParentAnimComponent<br/>
+    /// Native code at BatmanAK.exe+0x95CA90 in the Steam build
     /// </summary>
     public unsafe virtual void SetParentAnimComponent(BmSDK.Engine.SkeletalMeshComponent NewParentAnimComp)
     {
@@ -1423,7 +1479,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimTreeTemplate;
     /// <summary>
-    /// Function: SetAnimTreeTemplate
+    /// Function: SetAnimTreeTemplate<br/>
+    /// Native code at BatmanAK.exe+0x961D50 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnimTreeTemplate(BmSDK.Engine.AnimTree NewTemplate)
     {
@@ -1445,7 +1502,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimations;
     /// <summary>
-    /// Function: SetAnimations
+    /// Function: SetAnimations<br/>
+    /// Native code at BatmanAK.exe+0x2F5FF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAnimations(BmSDK.Engine.AnimNode NewAnimations)
     {
@@ -1467,7 +1525,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestCollidingBoneLocation;
     /// <summary>
-    /// Function: GetClosestCollidingBoneLocation
+    /// Function: GetClosestCollidingBoneLocation<br/>
+    /// Native code at BatmanAK.exe+0x959C00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClosestCollidingBoneLocation(System.Numerics.Vector3 TestLocation, bool bCheckZeroExtent, bool bCheckNonZeroExtent)
     {
@@ -1491,7 +1550,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestBone;
     /// <summary>
-    /// Function: FindClosestBone
+    /// Function: FindClosestBone<br/>
+    /// Native code at BatmanAK.exe+0x955370 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName FindClosestBone(System.Numerics.Vector3 TestLocation, out System.Numerics.Vector3 BoneLocation, float IgnoreScale)
     {
@@ -1517,7 +1577,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformFromBoneSpace;
     /// <summary>
-    /// Function: TransformFromBoneSpace
+    /// Function: TransformFromBoneSpace<br/>
+    /// Native code at BatmanAK.exe+0x9599F0 in the Steam build
     /// </summary>
     public unsafe virtual void TransformFromBoneSpace(BmSDK.FName BoneName, System.Numerics.Vector3 InPosition, BmSDK.Rotator InRotation, out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
@@ -1547,7 +1608,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformToBoneSpace;
     /// <summary>
-    /// Function: TransformToBoneSpace
+    /// Function: TransformToBoneSpace<br/>
+    /// Native code at BatmanAK.exe+0x959590 in the Steam build
     /// </summary>
     public unsafe virtual void TransformToBoneSpace(BmSDK.FName BoneName, System.Numerics.Vector3 InPosition, BmSDK.Rotator InRotation, out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
@@ -1577,7 +1639,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneAxis;
     /// <summary>
-    /// Function: GetBoneAxis
+    /// Function: GetBoneAxis<br/>
+    /// Native code at BatmanAK.exe+0x95CD40 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoneAxis(BmSDK.FName BoneName, BmSDK.GameObject.EAxis Axis)
     {
@@ -1600,7 +1663,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRefPosePosition;
     /// <summary>
-    /// Function: GetRefPosePosition
+    /// Function: GetRefPosePosition<br/>
+    /// Native code at BatmanAK.exe+0x953B70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRefPosePosition(int BoneIndex)
     {
@@ -1622,7 +1686,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BoneIsChildOf;
     /// <summary>
-    /// Function: BoneIsChildOf
+    /// Function: BoneIsChildOf<br/>
+    /// Native code at BatmanAK.exe+0x94FB90 in the Steam build
     /// </summary>
     public unsafe virtual bool BoneIsChildOf(BmSDK.FName BoneName, BmSDK.FName ParentBoneName)
     {
@@ -1645,7 +1710,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneNames;
     /// <summary>
-    /// Function: GetBoneNames
+    /// Function: GetBoneNames<br/>
+    /// Native code at BatmanAK.exe+0x95C510 in the Steam build
     /// </summary>
     public unsafe virtual void GetBoneNames(out BmSDK.TArray<BmSDK.FName> BoneNames)
     {
@@ -1667,7 +1733,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetParentBone;
     /// <summary>
-    /// Function: GetParentBone
+    /// Function: GetParentBone<br/>
+    /// Native code at BatmanAK.exe+0x9539F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetParentBone(BmSDK.FName BoneName)
     {
@@ -1689,7 +1756,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneMatrix;
     /// <summary>
-    /// Function: GetBoneMatrix
+    /// Function: GetBoneMatrix<br/>
+    /// Native code at BatmanAK.exe+0x9579A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetBoneMatrix(int BoneIndex)
     {
@@ -1711,7 +1779,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneName;
     /// <summary>
-    /// Function: GetBoneName
+    /// Function: GetBoneName<br/>
+    /// Native code at BatmanAK.exe+0x953810 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetBoneName(int BoneIndex)
     {
@@ -1733,7 +1802,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MatchRefBone;
     /// <summary>
-    /// Function: MatchRefBone
+    /// Function: MatchRefBone<br/>
+    /// Native code at BatmanAK.exe+0x94FA40 in the Steam build
     /// </summary>
     public unsafe virtual int MatchRefBone(BmSDK.FName BoneName)
     {
@@ -1755,7 +1825,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneLocation;
     /// <summary>
-    /// Function: GetBoneLocation
+    /// Function: GetBoneLocation<br/>
+    /// Native code at BatmanAK.exe+0x95CBC0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoneLocation(BmSDK.FName BoneName, int Space = default)
     {
@@ -1778,7 +1849,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneQuaternion;
     /// <summary>
-    /// Function: GetBoneQuaternion
+    /// Function: GetBoneQuaternion<br/>
+    /// Native code at BatmanAK.exe+0x958EB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetBoneQuaternion(BmSDK.FName BoneName, int Space = default)
     {
@@ -1801,7 +1873,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphNode;
     /// <summary>
-    /// Function: FindMorphNode
+    /// Function: FindMorphNode<br/>
+    /// Native code at BatmanAK.exe+0x950700 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphNodeBase FindMorphNode(BmSDK.FName InNodeName)
     {
@@ -1823,7 +1896,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControls;
     /// <summary>
-    /// Function: FindSkelControls
+    /// Function: FindSkelControls<br/>
+    /// Native code at BatmanAK.exe+0x95CEB0 in the Steam build
     /// </summary>
     public unsafe virtual void FindSkelControls(BmSDK.FName InControlName, out BmSDK.TArray<BmSDK.Engine.SkelControlBase> SkelControls)
     {
@@ -1846,7 +1920,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControl;
     /// <summary>
-    /// Function: FindSkelControl
+    /// Function: FindSkelControl<br/>
+    /// Native code at BatmanAK.exe+0x9554A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkelControlBase FindSkelControl(BmSDK.FName InControlName)
     {
@@ -1868,7 +1943,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimNode;
     /// <summary>
-    /// Function: FindAnimNode
+    /// Function: FindAnimNode<br/>
+    /// Native code at BatmanAK.exe+0x9505B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode FindAnimNode(BmSDK.FName InNodeName)
     {
@@ -1890,7 +1966,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphTarget;
     /// <summary>
-    /// Function: FindMorphTarget
+    /// Function: FindMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0x95DC80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphTarget FindMorphTarget(BmSDK.FName MorphTargetName)
     {
@@ -1943,7 +2020,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreSavedAnimSets;
     /// <summary>
-    /// Function: RestoreSavedAnimSets
+    /// Function: RestoreSavedAnimSets<br/>
+    /// Native code at BatmanAK.exe+0x8BAF60 in the Steam build
     /// </summary>
     public unsafe virtual void RestoreSavedAnimSets()
     {
@@ -1964,7 +2042,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveAnimSets;
     /// <summary>
-    /// Function: SaveAnimSets
+    /// Function: SaveAnimSets<br/>
+    /// Native code at BatmanAK.exe+0x8BC480 in the Steam build
     /// </summary>
     public unsafe virtual void SaveAnimSets()
     {
@@ -1985,7 +2064,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimSequence;
     /// <summary>
-    /// Function: FindAnimSequence
+    /// Function: FindAnimSequence<br/>
+    /// Native code at BatmanAK.exe+0x954520 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSequence FindAnimSequence(BmSDK.FName AnimSeqName)
     {
@@ -2007,7 +2087,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeSoftBody;
     /// <summary>
-    /// Function: WakeSoftBody
+    /// Function: WakeSoftBody<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void WakeSoftBody()
     {
@@ -2028,7 +2109,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSoftBodyFrozen;
     /// <summary>
-    /// Function: SetSoftBodyFrozen
+    /// Function: SetSoftBodyFrozen<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSoftBodyFrozen(bool bNewFrozen)
     {
@@ -2050,7 +2132,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSoftBodyParams;
     /// <summary>
-    /// Function: UpdateSoftBodyParams
+    /// Function: UpdateSoftBodyParams<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSoftBodyParams()
     {
@@ -2071,7 +2154,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothValidBounds;
     /// <summary>
-    /// Function: SetClothValidBounds
+    /// Function: SetClothValidBounds<br/>
+    /// Native code at BatmanAK.exe+0x89E400 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothValidBounds(System.Numerics.Vector3 ClothValidBoundsMin, System.Numerics.Vector3 ClothValidBoundsMax)
     {
@@ -2094,7 +2178,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableClothValidBounds;
     /// <summary>
-    /// Function: EnableClothValidBounds
+    /// Function: EnableClothValidBounds<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableClothValidBounds(bool IfEnableClothValidBounds)
     {
@@ -2116,7 +2201,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachClothToCollidingShapes;
     /// <summary>
-    /// Function: AttachClothToCollidingShapes
+    /// Function: AttachClothToCollidingShapes<br/>
+    /// Native code at BatmanAK.exe+0x8A6850 in the Steam build
     /// </summary>
     public unsafe virtual void AttachClothToCollidingShapes(bool AttatchTwoWay, bool AttachTearable)
     {
@@ -2139,7 +2225,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothVelocity;
     /// <summary>
-    /// Function: SetClothVelocity
+    /// Function: SetClothVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89E3A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothVelocity(System.Numerics.Vector3 VelocityOffSet)
     {
@@ -2161,7 +2248,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothPosition;
     /// <summary>
-    /// Function: SetClothPosition
+    /// Function: SetClothPosition<br/>
+    /// Native code at BatmanAK.exe+0x89E3A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothPosition(System.Numerics.Vector3 ClothOffSet)
     {
@@ -2183,7 +2271,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSleep;
     /// <summary>
-    /// Function: SetClothSleep
+    /// Function: SetClothSleep<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothSleep(bool IfClothSleep)
     {
@@ -2205,7 +2294,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothThickness;
     /// <summary>
-    /// Function: SetClothThickness
+    /// Function: SetClothThickness<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothThickness(float ClothThickness)
     {
@@ -2227,7 +2317,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothTearFactor;
     /// <summary>
-    /// Function: SetClothTearFactor
+    /// Function: SetClothTearFactor<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothTearFactor(float ClothTearFactor)
     {
@@ -2249,7 +2340,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothStretchingStiffness;
     /// <summary>
-    /// Function: SetClothStretchingStiffness
+    /// Function: SetClothStretchingStiffness<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothStretchingStiffness(float ClothStretchingStiffness)
     {
@@ -2271,7 +2363,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSolverIterations;
     /// <summary>
-    /// Function: SetClothSolverIterations
+    /// Function: SetClothSolverIterations<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothSolverIterations(int ClothSolverIterations)
     {
@@ -2293,7 +2386,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSleepLinearVelocity;
     /// <summary>
-    /// Function: SetClothSleepLinearVelocity
+    /// Function: SetClothSleepLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothSleepLinearVelocity(float ClothSleepLinearVelocity)
     {
@@ -2315,7 +2409,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothPressure;
     /// <summary>
-    /// Function: SetClothPressure
+    /// Function: SetClothPressure<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothPressure(float ClothPressure)
     {
@@ -2337,7 +2432,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFriction;
     /// <summary>
-    /// Function: SetClothFriction
+    /// Function: SetClothFriction<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothFriction(float ClothFriction)
     {
@@ -2359,7 +2455,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFlags;
     /// <summary>
-    /// Function: SetClothFlags
+    /// Function: SetClothFlags<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothFlags(int ClothFlags)
     {
@@ -2381,7 +2478,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothDampingCoefficient;
     /// <summary>
-    /// Function: SetClothDampingCoefficient
+    /// Function: SetClothDampingCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothDampingCoefficient(float ClothDampingCoefficient)
     {
@@ -2403,7 +2501,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothCollisionResponseCoefficient;
     /// <summary>
-    /// Function: SetClothCollisionResponseCoefficient
+    /// Function: SetClothCollisionResponseCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothCollisionResponseCoefficient(float ClothCollisionResponseCoefficient)
     {
@@ -2425,7 +2524,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothBendingStiffness;
     /// <summary>
-    /// Function: SetClothBendingStiffness
+    /// Function: SetClothBendingStiffness<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothBendingStiffness(float ClothBendingStiffness)
     {
@@ -2447,7 +2547,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothAttachmentTearFactor;
     /// <summary>
-    /// Function: SetClothAttachmentTearFactor
+    /// Function: SetClothAttachmentTearFactor<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothAttachmentTearFactor(float ClothAttachTearFactor)
     {
@@ -2469,7 +2570,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothAttachmentResponseCoefficient;
     /// <summary>
-    /// Function: SetClothAttachmentResponseCoefficient
+    /// Function: SetClothAttachmentResponseCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x8A6790 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothAttachmentResponseCoefficient(float ClothAttachmentResponseCoefficient)
     {
@@ -2491,7 +2593,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothThickness;
     /// <summary>
-    /// Function: GetClothThickness
+    /// Function: GetClothThickness<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothThickness()
     {
@@ -2512,7 +2615,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothTearFactor;
     /// <summary>
-    /// Function: GetClothTearFactor
+    /// Function: GetClothTearFactor<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothTearFactor()
     {
@@ -2533,7 +2637,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothStretchingStiffness;
     /// <summary>
-    /// Function: GetClothStretchingStiffness
+    /// Function: GetClothStretchingStiffness<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothStretchingStiffness()
     {
@@ -2554,7 +2659,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothSolverIterations;
     /// <summary>
-    /// Function: GetClothSolverIterations
+    /// Function: GetClothSolverIterations<br/>
+    /// Native code at BatmanAK.exe+0x89E350 in the Steam build
     /// </summary>
     public unsafe virtual int GetClothSolverIterations()
     {
@@ -2575,7 +2681,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothSleepLinearVelocity;
     /// <summary>
-    /// Function: GetClothSleepLinearVelocity
+    /// Function: GetClothSleepLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothSleepLinearVelocity()
     {
@@ -2596,7 +2703,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothPressure;
     /// <summary>
-    /// Function: GetClothPressure
+    /// Function: GetClothPressure<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothPressure()
     {
@@ -2617,7 +2725,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothFriction;
     /// <summary>
-    /// Function: GetClothFriction
+    /// Function: GetClothFriction<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothFriction()
     {
@@ -2638,7 +2747,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothFlags;
     /// <summary>
-    /// Function: GetClothFlags
+    /// Function: GetClothFlags<br/>
+    /// Native code at BatmanAK.exe+0x89E350 in the Steam build
     /// </summary>
     public unsafe virtual int GetClothFlags()
     {
@@ -2659,7 +2769,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothDampingCoefficient;
     /// <summary>
-    /// Function: GetClothDampingCoefficient
+    /// Function: GetClothDampingCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothDampingCoefficient()
     {
@@ -2680,7 +2791,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothCollisionResponseCoefficient;
     /// <summary>
-    /// Function: GetClothCollisionResponseCoefficient
+    /// Function: GetClothCollisionResponseCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothCollisionResponseCoefficient()
     {
@@ -2701,7 +2813,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothBendingStiffness;
     /// <summary>
-    /// Function: GetClothBendingStiffness
+    /// Function: GetClothBendingStiffness<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothBendingStiffness()
     {
@@ -2722,7 +2835,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothAttachmentTearFactor;
     /// <summary>
-    /// Function: GetClothAttachmentTearFactor
+    /// Function: GetClothAttachmentTearFactor<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothAttachmentTearFactor()
     {
@@ -2743,7 +2857,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothAttachmentResponseCoefficient;
     /// <summary>
-    /// Function: GetClothAttachmentResponseCoefficient
+    /// Function: GetClothAttachmentResponseCoefficient<br/>
+    /// Native code at BatmanAK.exe+0x89E300 in the Steam build
     /// </summary>
     public unsafe virtual float GetClothAttachmentResponseCoefficient()
     {
@@ -2764,7 +2879,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableApexClothing;
     /// <summary>
-    /// Function: EnableApexClothing
+    /// Function: EnableApexClothing<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableApexClothing()
     {
@@ -2785,7 +2901,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableApexClothing;
     /// <summary>
-    /// Function: DisableApexClothing
+    /// Function: DisableApexClothing<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableApexClothing()
     {
@@ -2806,7 +2923,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceApexClothingTeleport;
     /// <summary>
-    /// Function: ForceApexClothingTeleport
+    /// Function: ForceApexClothingTeleport<br/>
+    /// Native code at BatmanAK.exe+0x89E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceApexClothingTeleport()
     {
@@ -2827,7 +2945,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceApexClothingTeleportAndReset;
     /// <summary>
-    /// Function: ForceApexClothingTeleportAndReset
+    /// Function: ForceApexClothingTeleportAndReset<br/>
+    /// Native code at BatmanAK.exe+0x89E240 in the Steam build
     /// </summary>
     public unsafe virtual void ForceApexClothingTeleportAndReset()
     {
@@ -2848,7 +2967,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetClothVertsToRefPose;
     /// <summary>
-    /// Function: ResetClothVertsToRefPose
+    /// Function: ResetClothVertsToRefPose<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetClothVertsToRefPose()
     {
@@ -2869,7 +2989,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAttachClothVertsToBaseBody;
     /// <summary>
-    /// Function: SetAttachClothVertsToBaseBody
+    /// Function: SetAttachClothVertsToBaseBody<br/>
+    /// Native code at BatmanAK.exe+0x8A66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAttachClothVertsToBaseBody(bool bAttachVerts)
     {
@@ -2891,7 +3012,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothExternalForce;
     /// <summary>
-    /// Function: SetClothExternalForce
+    /// Function: SetClothExternalForce<br/>
+    /// Native code at BatmanAK.exe+0x89E540 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothExternalForce(System.Numerics.Vector3 InForce)
     {
@@ -2913,7 +3035,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateClothParams;
     /// <summary>
-    /// Function: UpdateClothParams
+    /// Function: UpdateClothParams<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateClothParams()
     {
@@ -2934,7 +3057,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableClothingSimulation;
     /// <summary>
-    /// Function: SetEnableClothingSimulation
+    /// Function: SetEnableClothingSimulation<br/>
+    /// Native code at BatmanAK.exe+0x931CC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableClothingSimulation(bool bInEnable)
     {
@@ -2956,7 +3080,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFrozen;
     /// <summary>
-    /// Function: SetClothFrozen
+    /// Function: SetClothFrozen<br/>
+    /// Native code at BatmanAK.exe+0x8A7060 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothFrozen(bool bNewFrozen)
     {
@@ -2978,7 +3103,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableClothSimulation;
     /// <summary>
-    /// Function: SetEnableClothSimulation
+    /// Function: SetEnableClothSimulation<br/>
+    /// Native code at BatmanAK.exe+0x953D10 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableClothSimulation(bool bInEnable)
     {
@@ -3000,7 +3126,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothRBCollidesWithChannel;
     /// <summary>
-    /// Function: SetClothRBCollidesWithChannel
+    /// Function: SetClothRBCollidesWithChannel<br/>
+    /// Native code at BatmanAK.exe+0x94FDB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetClothRBCollidesWithChannel(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel Channel, bool bNewCollides)
     {
@@ -3023,7 +3150,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceRefPose;
     /// <summary>
-    /// Function: SetForceRefPose
+    /// Function: SetForceRefPose<br/>
+    /// Native code at BatmanAK.exe+0x950480 in the Steam build
     /// </summary>
     public unsafe virtual void SetForceRefPose(bool bNewForceRefPose)
     {
@@ -3045,7 +3173,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysicsAsset;
     /// <summary>
-    /// Function: SetPhysicsAsset
+    /// Function: SetPhysicsAsset<br/>
+    /// Native code at BatmanAK.exe+0x95C920 in the Steam build
     /// </summary>
     public unsafe virtual void SetPhysicsAsset(BmSDK.Engine.PhysicsAsset NewPhysicsAsset, bool bForceReInit = default)
     {
@@ -3068,7 +3197,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkeletalMesh;
     /// <summary>
-    /// Function: SetSkeletalMesh
+    /// Function: SetSkeletalMesh<br/>
+    /// Native code at BatmanAK.exe+0x961BD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSkeletalMesh(BmSDK.Engine.SkeletalMesh NewMesh, bool bKeepSpaceBases = default)
     {
@@ -3091,7 +3221,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTransformMatrix;
     /// <summary>
-    /// Function: GetTransformMatrix
+    /// Function: GetTransformMatrix<br/>
+    /// Native code at BatmanAK.exe+0x95C8B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetTransformMatrix()
     {
@@ -3112,7 +3243,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsComponentAttached;
     /// <summary>
-    /// Function: IsComponentAttached
+    /// Function: IsComponentAttached<br/>
+    /// Native code at BatmanAK.exe+0x954810 in the Steam build
     /// </summary>
     public unsafe virtual bool IsComponentAttached(BmSDK.Engine.ActorComponent Component, BmSDK.FName BoneName = default)
     {
@@ -3135,7 +3267,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindComponentAttachedToBone;
     /// <summary>
-    /// Function: FindComponentAttachedToBone
+    /// Function: FindComponentAttachedToBone<br/>
+    /// Native code at BatmanAK.exe+0x9546A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ActorComponent FindComponentAttachedToBone(BmSDK.FName InBoneName)
     {
@@ -3157,7 +3290,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketBoneName;
     /// <summary>
-    /// Function: GetSocketBoneName
+    /// Function: GetSocketBoneName<br/>
+    /// Native code at BatmanAK.exe+0x950340 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetSocketBoneName(BmSDK.FName InSocketName)
     {
@@ -3179,7 +3313,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketByName;
     /// <summary>
-    /// Function: GetSocketByName
+    /// Function: GetSocketByName<br/>
+    /// Native code at BatmanAK.exe+0x950200 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshSocket GetSocketByName(BmSDK.FName InSocketName)
     {
@@ -3201,7 +3336,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketWorldLocationAndRotation;
     /// <summary>
-    /// Function: GetSocketWorldLocationAndRotation
+    /// Function: GetSocketWorldLocationAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x9581A0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation, int Space)
     {
@@ -3230,7 +3366,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponentToSocket;
     /// <summary>
-    /// Function: AttachComponentToSocket
+    /// Function: AttachComponentToSocket<br/>
+    /// Native code at BatmanAK.exe+0x963810 in the Steam build
     /// </summary>
     public unsafe virtual void AttachComponentToSocket(BmSDK.Engine.ActorComponent Component, BmSDK.FName SocketName)
     {
@@ -3253,7 +3390,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideApexClothingMaxDistanceScale;
     /// <summary>
-    /// Function: OverrideApexClothingMaxDistanceScale
+    /// Function: OverrideApexClothingMaxDistanceScale<br/>
+    /// Native code at BatmanAK.exe+0x9354A0 in the Steam build
     /// </summary>
     public unsafe virtual void OverrideApexClothingMaxDistanceScale(float StartScale, float EndScale, float Duration)
     {
@@ -3277,7 +3415,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachComponent;
     /// <summary>
-    /// Function: DetachComponent
+    /// Function: DetachComponent<br/>
+    /// Native code at BatmanAK.exe+0x9636E0 in the Steam build
     /// </summary>
     public unsafe virtual void DetachComponent(BmSDK.Engine.ActorComponent Component)
     {
@@ -3299,7 +3438,8 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponent;
     /// <summary>
-    /// Function: AttachComponent
+    /// Function: AttachComponent<br/>
+    /// Native code at BatmanAK.exe+0x963390 in the Steam build
     /// </summary>
     public unsafe virtual void AttachComponent(BmSDK.Engine.ActorComponent Component, BmSDK.FName BoneName, System.Numerics.Vector3 RelativeLocation = default, BmSDK.Rotator RelativeRotation = default, System.Numerics.Vector3 RelativeScale = default)
     {
@@ -6112,7 +6252,8 @@ public static class SkeletalMeshComponentStatics
 {
     private static BmSDK.Function __fn_AttachChildMeshes;
     /// <summary>
-    /// Function: AttachChildMeshes, run on <paramref name="self"/> rather than the class default object
+    /// Function: AttachChildMeshes, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB9450 in the Steam build
     /// </summary>
     public unsafe static void AttachChildMeshes(this BmSDK.Engine.SkeletalMeshComponent self, BmSDK.Engine.Actor Actor, BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> ToReattach)
     {
@@ -6135,7 +6276,8 @@ public static class SkeletalMeshComponentStatics
 
     private static BmSDK.Function __fn_DetachChildMeshes;
     /// <summary>
-    /// Function: DetachChildMeshes, run on <paramref name="self"/> rather than the class default object
+    /// Function: DetachChildMeshes, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBB2A0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> DetachChildMeshes(this BmSDK.Engine.SkeletalMeshComponent self, BmSDK.Engine.Actor Actor, BmSDK.Engine.SkeletalMeshComponent SkelComponent)
     {

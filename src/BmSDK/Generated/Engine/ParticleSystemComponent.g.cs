@@ -80,7 +80,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStopSpawning;
     /// <summary>
-    /// Function: SetStopSpawning
+    /// Function: SetStopSpawning<br/>
+    /// Native code at BatmanAK.exe+0xB9B720 in the Steam build
     /// </summary>
     public unsafe virtual void SetStopSpawning(int InEmitterIndex, bool bInStopSpawning)
     {
@@ -103,7 +104,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToDefaults;
     /// <summary>
-    /// Function: ResetToDefaults
+    /// Function: ResetToDefaults<br/>
+    /// Native code at BatmanAK.exe+0xB49890 in the Steam build
     /// </summary>
     public unsafe virtual void ResetToDefaults()
     {
@@ -124,7 +126,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActive;
     /// <summary>
-    /// Function: SetActive
+    /// Function: SetActive<br/>
+    /// Native code at BatmanAK.exe+0xB9B5B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActive(bool bNowActive, bool bFlagAsJustAttached = default)
     {
@@ -147,7 +150,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorArrayElementParameter;
     /// <summary>
-    /// Function: SetVectorArrayElementParameter
+    /// Function: SetVectorArrayElementParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9B390 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorArrayElementParameter(BmSDK.FName ParameterName, int Index, System.Numerics.Vector3 Param)
     {
@@ -171,7 +175,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorArrayParameter;
     /// <summary>
-    /// Function: SetVectorArrayParameter
+    /// Function: SetVectorArrayParameter<br/>
+    /// Native code at BatmanAK.exe+0xBB56F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorArrayParameter(BmSDK.FName ParameterName, out BmSDK.TArray<System.Numerics.Vector3> Param)
     {
@@ -194,7 +199,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameter;
     /// <summary>
-    /// Function: ClearParameter
+    /// Function: ClearParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9B240 in the Steam build
     /// </summary>
     public unsafe virtual void ClearParameter(BmSDK.FName ParameterName, BmSDK.Engine.ParticleSystemComponent.EParticleSysParamType ParameterType = default)
     {
@@ -217,7 +223,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterialParameter;
     /// <summary>
-    /// Function: GetMaterialParameter
+    /// Function: GetMaterialParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9B0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetMaterialParameter(BmSDK.FName InName, out BmSDK.Engine.MaterialInterface OutMaterial)
     {
@@ -242,7 +249,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorParameter;
     /// <summary>
-    /// Function: GetActorParameter
+    /// Function: GetActorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9AF40 in the Steam build
     /// </summary>
     public unsafe virtual bool GetActorParameter(BmSDK.FName InName, out BmSDK.Engine.Actor OutActor)
     {
@@ -267,7 +275,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetColorParameter;
     /// <summary>
-    /// Function: GetColorParameter
+    /// Function: GetColorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9ADD0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetColorParameter(BmSDK.FName InName, out BmSDK.GameObject.FColor OutColor)
     {
@@ -292,7 +301,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorParameter;
     /// <summary>
-    /// Function: GetVectorParameter
+    /// Function: GetVectorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9AC50 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVectorParameter(BmSDK.FName InName, out System.Numerics.Vector3 OutVector)
     {
@@ -317,7 +327,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatParameter;
     /// <summary>
-    /// Function: GetFloatParameter
+    /// Function: GetFloatParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9AAD0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFloatParameter(BmSDK.FName InName, out float OutFloat)
     {
@@ -342,7 +353,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpawnScale;
     /// <summary>
-    /// Function: SetSpawnScale
+    /// Function: SetSpawnScale<br/>
+    /// Native code at BatmanAK.exe+0xB9A9A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSpawnScale(float Value)
     {
@@ -364,7 +376,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpawnScale;
     /// <summary>
-    /// Function: GetSpawnScale
+    /// Function: GetSpawnScale<br/>
+    /// Native code at BatmanAK.exe+0xB49840 in the Steam build
     /// </summary>
     public unsafe virtual float GetSpawnScale()
     {
@@ -385,7 +398,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialParameter;
     /// <summary>
-    /// Function: SetMaterialParameter
+    /// Function: SetMaterialParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9A7C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterialParameter(BmSDK.FName ParameterName, BmSDK.Engine.MaterialInterface Param)
     {
@@ -408,7 +422,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorParameter;
     /// <summary>
-    /// Function: SetActorParameter
+    /// Function: SetActorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9A5E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActorParameter(BmSDK.FName ParameterName, BmSDK.Engine.Actor Param)
     {
@@ -431,7 +446,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetColorParameter;
     /// <summary>
-    /// Function: SetColorParameter
+    /// Function: SetColorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9A4A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetColorParameter(BmSDK.FName ParameterName, BmSDK.GameObject.FColor Param)
     {
@@ -454,7 +470,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorRandParameter;
     /// <summary>
-    /// Function: SetVectorRandParameter
+    /// Function: SetVectorRandParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9A2F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorRandParameter(BmSDK.FName ParameterName, out System.Numerics.Vector3 Param, out System.Numerics.Vector3 ParamLow)
     {
@@ -482,7 +499,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameter;
     /// <summary>
-    /// Function: SetVectorParameter
+    /// Function: SetVectorParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9A180 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorParameter(BmSDK.FName ParameterName, System.Numerics.Vector3 Param)
     {
@@ -505,7 +523,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatRandParameter;
     /// <summary>
-    /// Function: SetFloatRandParameter
+    /// Function: SetFloatRandParameter<br/>
+    /// Native code at BatmanAK.exe+0xB99EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloatRandParameter(BmSDK.FName ParameterName, float Param, float ParamLow)
     {
@@ -529,7 +548,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatParameter;
     /// <summary>
-    /// Function: SetFloatParameter
+    /// Function: SetFloatParameter<br/>
+    /// Native code at BatmanAK.exe+0xB99CC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFloatParameter(BmSDK.FName ParameterName, float Param)
     {
@@ -552,7 +572,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEditorLODLevel;
     /// <summary>
-    /// Function: GetEditorLODLevel
+    /// Function: GetEditorLODLevel<br/>
+    /// Native code at BatmanAK.exe+0xB497F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetEditorLODLevel()
     {
@@ -573,7 +594,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODLevel;
     /// <summary>
-    /// Function: GetLODLevel
+    /// Function: GetLODLevel<br/>
+    /// Native code at BatmanAK.exe+0xB497A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetLODLevel()
     {
@@ -594,7 +616,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEditorLODLevel;
     /// <summary>
-    /// Function: SetEditorLODLevel
+    /// Function: SetEditorLODLevel<br/>
+    /// Native code at BatmanAK.exe+0xB99BA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEditorLODLevel(int InLODLevel)
     {
@@ -616,7 +639,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLODLevel;
     /// <summary>
-    /// Function: SetLODLevel
+    /// Function: SetLODLevel<br/>
+    /// Native code at BatmanAK.exe+0xB99A80 in the Steam build
     /// </summary>
     public unsafe virtual void SetLODLevel(int InLODLevel)
     {
@@ -638,7 +662,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEmitterRate;
     /// <summary>
-    /// Function: SetEmitterRate
+    /// Function: SetEmitterRate<br/>
+    /// Native code at BatmanAK.exe+0xB997C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEmitterRate(int EmitterIndex, float MinRate, float MaxRate)
     {
@@ -662,7 +687,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SystemHasCompleted;
     /// <summary>
-    /// Function: SystemHasCompleted
+    /// Function: SystemHasCompleted<br/>
+    /// Native code at BatmanAK.exe+0x497AB0 in the Steam build
     /// </summary>
     public unsafe virtual bool SystemHasCompleted()
     {
@@ -683,7 +709,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxLifespan;
     /// <summary>
-    /// Function: GetMaxLifespan
+    /// Function: GetMaxLifespan<br/>
+    /// Native code at BatmanAK.exe+0xB49750 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxLifespan()
     {
@@ -704,7 +731,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyParticlesActive;
     /// <summary>
-    /// Function: AnyParticlesActive
+    /// Function: AnyParticlesActive<br/>
+    /// Native code at BatmanAK.exe+0xB49700 in the Steam build
     /// </summary>
     public unsafe virtual bool AnyParticlesActive()
     {
@@ -725,7 +753,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBaseVelocityRadial;
     /// <summary>
-    /// Function: SetBaseVelocityRadial
+    /// Function: SetBaseVelocityRadial<br/>
+    /// Native code at BatmanAK.exe+0xB994A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBaseVelocityRadial(System.Numerics.Vector3 pos, float velInner, float velOuter, float Radius)
     {
@@ -750,7 +779,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetermineLODLevelForLocation;
     /// <summary>
-    /// Function: DetermineLODLevelForLocation
+    /// Function: DetermineLODLevelForLocation<br/>
+    /// Native code at BatmanAK.exe+0xB49650 in the Steam build
     /// </summary>
     public unsafe virtual int DetermineLODLevelForLocation(out System.Numerics.Vector3 EffectLocation)
     {
@@ -774,7 +804,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetStrength;
     /// <summary>
-    /// Function: SetBeamTargetStrength
+    /// Function: SetBeamTargetStrength<br/>
+    /// Native code at BatmanAK.exe+0xB991F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamTargetStrength(int EmitterIndex, float NewTargetStrength, int TargetIndex)
     {
@@ -798,7 +829,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetTangent;
     /// <summary>
-    /// Function: SetBeamTargetTangent
+    /// Function: SetBeamTargetTangent<br/>
+    /// Native code at BatmanAK.exe+0xB98FD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamTargetTangent(int EmitterIndex, System.Numerics.Vector3 NewTangentPoint, int TargetIndex)
     {
@@ -822,7 +854,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetActor;
     /// <summary>
-    /// Function: SetBeamTargetActor
+    /// Function: SetBeamTargetActor<br/>
+    /// Native code at BatmanAK.exe+0xB98DE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamTargetActor(int EmitterIndex, BmSDK.Engine.Actor Actor)
     {
@@ -845,7 +878,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetPoint;
     /// <summary>
-    /// Function: SetBeamTargetPoint
+    /// Function: SetBeamTargetPoint<br/>
+    /// Native code at BatmanAK.exe+0xB98BC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamTargetPoint(int EmitterIndex, System.Numerics.Vector3 NewTargetPoint, int TargetIndex)
     {
@@ -869,7 +903,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceStrength;
     /// <summary>
-    /// Function: SetBeamSourceStrength
+    /// Function: SetBeamSourceStrength<br/>
+    /// Native code at BatmanAK.exe+0xB98910 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamSourceStrength(int EmitterIndex, float NewSourceStrength, int SourceIndex)
     {
@@ -893,7 +928,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceTangent;
     /// <summary>
-    /// Function: SetBeamSourceTangent
+    /// Function: SetBeamSourceTangent<br/>
+    /// Native code at BatmanAK.exe+0xB986F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamSourceTangent(int EmitterIndex, System.Numerics.Vector3 NewTangentPoint, int SourceIndex)
     {
@@ -917,7 +953,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceActor;
     /// <summary>
-    /// Function: SetBeamSourceActor
+    /// Function: SetBeamSourceActor<br/>
+    /// Native code at BatmanAK.exe+0xB98500 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamSourceActor(int EmitterIndex, BmSDK.Engine.Actor Actor)
     {
@@ -940,7 +977,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourcePoint;
     /// <summary>
-    /// Function: SetBeamSourcePoint
+    /// Function: SetBeamSourcePoint<br/>
+    /// Native code at BatmanAK.exe+0xB982E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamSourcePoint(int EmitterIndex, System.Numerics.Vector3 NewSourcePoint, int SourceIndex)
     {
@@ -964,7 +1002,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamDistance;
     /// <summary>
-    /// Function: SetBeamDistance
+    /// Function: SetBeamDistance<br/>
+    /// Native code at BatmanAK.exe+0xB980F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamDistance(int EmitterIndex, float Distance)
     {
@@ -987,7 +1026,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamEndPoint;
     /// <summary>
-    /// Function: SetBeamEndPoint
+    /// Function: SetBeamEndPoint<br/>
+    /// Native code at BatmanAK.exe+0xB97F80 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamEndPoint(int EmitterIndex, System.Numerics.Vector3 NewEndPoint)
     {
@@ -1010,7 +1050,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTessellationFactor;
     /// <summary>
-    /// Function: SetBeamTessellationFactor
+    /// Function: SetBeamTessellationFactor<br/>
+    /// Native code at BatmanAK.exe+0xB97D90 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamTessellationFactor(int EmitterIndex, float NewFactor)
     {
@@ -1033,7 +1074,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamType;
     /// <summary>
-    /// Function: SetBeamType
+    /// Function: SetBeamType<br/>
+    /// Native code at BatmanAK.exe+0xB97BB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetBeamType(int EmitterIndex, int NewMethod)
     {
@@ -1056,7 +1098,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RewindEmitterInstances;
     /// <summary>
-    /// Function: RewindEmitterInstances
+    /// Function: RewindEmitterInstances<br/>
+    /// Native code at BatmanAK.exe+0x482D00 in the Steam build
     /// </summary>
     public unsafe virtual void RewindEmitterInstances()
     {
@@ -1077,7 +1120,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RewindEmitterInstance;
     /// <summary>
-    /// Function: RewindEmitterInstance
+    /// Function: RewindEmitterInstance<br/>
+    /// Native code at BatmanAK.exe+0x51BBE0 in the Steam build
     /// </summary>
     public unsafe virtual void RewindEmitterInstance(int EmitterIndex)
     {
@@ -1099,7 +1143,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetKillOnCompleted;
     /// <summary>
-    /// Function: SetKillOnCompleted
+    /// Function: SetKillOnCompleted<br/>
+    /// Native code at BatmanAK.exe+0xB979D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetKillOnCompleted(int EmitterIndex, bool bKill)
     {
@@ -1122,7 +1167,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetKillOnDeactivate;
     /// <summary>
-    /// Function: SetKillOnDeactivate
+    /// Function: SetKillOnDeactivate<br/>
+    /// Native code at BatmanAK.exe+0xB977F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetKillOnDeactivate(int EmitterIndex, bool bKill)
     {
@@ -1145,7 +1191,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkipBoundsUpdate;
     /// <summary>
-    /// Function: GetSkipBoundsUpdate
+    /// Function: GetSkipBoundsUpdate<br/>
+    /// Native code at BatmanAK.exe+0xB49600 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSkipBoundsUpdate()
     {
@@ -1166,7 +1213,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkipBoundsUpdate;
     /// <summary>
-    /// Function: SetSkipBoundsUpdate
+    /// Function: SetSkipBoundsUpdate<br/>
+    /// Native code at BatmanAK.exe+0xB976D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSkipBoundsUpdate(bool bInSkipBoundsUpdate)
     {
@@ -1188,7 +1236,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkipUpdateDynamicDataDuringTick;
     /// <summary>
-    /// Function: GetSkipUpdateDynamicDataDuringTick
+    /// Function: GetSkipUpdateDynamicDataDuringTick<br/>
+    /// Native code at BatmanAK.exe+0xB495B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetSkipUpdateDynamicDataDuringTick()
     {
@@ -1209,7 +1258,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkipUpdateDynamicDataDuringTick;
     /// <summary>
-    /// Function: SetSkipUpdateDynamicDataDuringTick
+    /// Function: SetSkipUpdateDynamicDataDuringTick<br/>
+    /// Native code at BatmanAK.exe+0xB975B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSkipUpdateDynamicDataDuringTick(bool bInSkipUpdateDynamicDataDuringTick)
     {
@@ -1231,7 +1281,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillParticlesInEmitter;
     /// <summary>
-    /// Function: KillParticlesInEmitter
+    /// Function: KillParticlesInEmitter<br/>
+    /// Native code at BatmanAK.exe+0xB97490 in the Steam build
     /// </summary>
     public unsafe virtual void KillParticlesInEmitter(BmSDK.FName InEmitterName)
     {
@@ -1253,7 +1304,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceKillParticlesWithEvents;
     /// <summary>
-    /// Function: ForceKillParticlesWithEvents
+    /// Function: ForceKillParticlesWithEvents<br/>
+    /// Native code at BatmanAK.exe+0xB49570 in the Steam build
     /// </summary>
     public unsafe virtual void ForceKillParticlesWithEvents()
     {
@@ -1274,7 +1326,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSpawnFraction;
     /// <summary>
-    /// Function: ResetSpawnFraction
+    /// Function: ResetSpawnFraction<br/>
+    /// Native code at BatmanAK.exe+0xB49530 in the Steam build
     /// </summary>
     public unsafe virtual void ResetSpawnFraction()
     {
@@ -1295,7 +1348,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyEnteringStasis;
     /// <summary>
-    /// Function: NotifyEnteringStasis
+    /// Function: NotifyEnteringStasis<br/>
+    /// Native code at BatmanAK.exe+0xB494F0 in the Steam build
     /// </summary>
     public unsafe virtual void NotifyEnteringStasis()
     {
@@ -1316,7 +1370,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KillParticlesForced;
     /// <summary>
-    /// Function: KillParticlesForced
+    /// Function: KillParticlesForced<br/>
+    /// Native code at BatmanAK.exe+0xB494B0 in the Steam build
     /// </summary>
     public unsafe virtual void KillParticlesForced()
     {
@@ -1337,7 +1392,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateSystemDeferred;
     /// <summary>
-    /// Function: DeactivateSystemDeferred
+    /// Function: DeactivateSystemDeferred<br/>
+    /// Native code at BatmanAK.exe+0xB49470 in the Steam build
     /// </summary>
     public unsafe virtual void DeactivateSystemDeferred()
     {
@@ -1358,7 +1414,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateSystem;
     /// <summary>
-    /// Function: DeactivateSystem
+    /// Function: DeactivateSystem<br/>
+    /// Native code at BatmanAK.exe+0xB49430 in the Steam build
     /// </summary>
     public unsafe virtual void DeactivateSystem()
     {
@@ -1379,7 +1436,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSystemDeferred;
     /// <summary>
-    /// Function: ActivateSystemDeferred
+    /// Function: ActivateSystemDeferred<br/>
+    /// Native code at BatmanAK.exe+0xB49350 in the Steam build
     /// </summary>
     public unsafe virtual void ActivateSystemDeferred(bool bFlagAsJustAttached = default, bool DontUpdateTransform = default)
     {
@@ -1402,7 +1460,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSystem;
     /// <summary>
-    /// Function: ActivateSystem
+    /// Function: ActivateSystem<br/>
+    /// Native code at BatmanAK.exe+0xB49270 in the Steam build
     /// </summary>
     public unsafe virtual void ActivateSystem(bool bFlagAsJustAttached = default, bool DontUpdateTransform = default)
     {
@@ -1425,7 +1484,8 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
-    /// Function: SetTemplate
+    /// Function: SetTemplate<br/>
+    /// Native code at BatmanAK.exe+0xB97370 in the Steam build
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.ParticleSystem NewTemplate)
     {

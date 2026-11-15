@@ -637,7 +637,8 @@ public partial class RCombatMove_BatmanAttack : BmSDK.BmGame.RCombatMove, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLaserGridInDirection;
     /// <summary>
-    /// Function: GetLaserGridInDirection
+    /// Function: GetLaserGridInDirection<br/>
+    /// Native code at BatmanAK.exe+0x4792F0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDisruptableLaserGridBase GetLaserGridInDirection(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 Direction, float CheckDist = default)
     {
@@ -661,7 +662,8 @@ public partial class RCombatMove_BatmanAttack : BmSDK.BmGame.RCombatMove, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferenceRotation;
     /// <summary>
-    /// Function: GetReferenceRotation
+    /// Function: GetReferenceRotation<br/>
+    /// Native code at BatmanAK.exe+0x479200 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetReferenceRotation(System.Numerics.Vector3 ReferencePosition, System.Numerics.Vector3 ReferenceRotation)
     {

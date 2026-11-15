@@ -93,7 +93,8 @@ public partial class RSeqAct_OverrideApexClothSimulationEnabled : BmSDK.Engine.S
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
-    /// Function: Activated
+    /// Function: Activated<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe override void Activated()
     {

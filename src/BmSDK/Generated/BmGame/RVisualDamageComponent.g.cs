@@ -132,7 +132,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
-    /// Function: Tick
+    /// Function: Tick<br/>
+    /// Native code at BatmanAK.exe+0x52BBB0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
@@ -154,7 +155,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPartBrokenOff;
     /// <summary>
-    /// Function: IsPartBrokenOff
+    /// Function: IsPartBrokenOff<br/>
+    /// Native code at BatmanAK.exe+0x52B9D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPartBrokenOff(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName)
     {
@@ -177,7 +179,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBonesOnSmashed;
     /// <summary>
-    /// Function: HideBonesOnSmashed
+    /// Function: HideBonesOnSmashed<br/>
+    /// Native code at BatmanAK.exe+0x52B8B0 in the Steam build
     /// </summary>
     public unsafe virtual void HideBonesOnSmashed(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
@@ -199,7 +202,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HidePart;
     /// <summary>
-    /// Function: HidePart
+    /// Function: HidePart<br/>
+    /// Native code at BatmanAK.exe+0x52B6D0 in the Steam build
     /// </summary>
     public unsafe virtual void HidePart(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName)
     {
@@ -222,7 +226,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPart;
     /// <summary>
-    /// Function: BreakOffPart
+    /// Function: BreakOffPart<br/>
+    /// Native code at BatmanAK.exe+0x52B4B0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffPart(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName, bool KeepConstraint = default)
     {
@@ -246,7 +251,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VehicleExploded;
     /// <summary>
-    /// Function: VehicleExploded
+    /// Function: VehicleExploded<br/>
+    /// Native code at BatmanAK.exe+0x52B390 in the Steam build
     /// </summary>
     public unsafe virtual void VehicleExploded(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
@@ -268,7 +274,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEffects;
     /// <summary>
-    /// Function: SpawnEffects
+    /// Function: SpawnEffects<br/>
+    /// Native code at BatmanAK.exe+0x52B180 in the Steam build
     /// </summary>
     public unsafe virtual void SpawnEffects(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName, BmSDK.BmGame.RVisualDamageComponent.EVehicleDamageEffectCond Condition)
     {
@@ -292,7 +299,8 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyVisualDamage;
     /// <summary>
-    /// Function: ApplyVisualDamage
+    /// Function: ApplyVisualDamage<br/>
+    /// Native code at BatmanAK.exe+0x52AC50 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyVisualDamage(BmSDK.Engine.SkeletalMeshComponent SkelComp, System.Numerics.Vector3 WorldPos, float Radius, float Amount, bool bDeformAllowed, bool bSmashGlass, float PartBreakOffImpulse)
     {

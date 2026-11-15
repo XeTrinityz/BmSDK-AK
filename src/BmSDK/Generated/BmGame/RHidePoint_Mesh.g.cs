@@ -417,7 +417,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReformToInitialState;
     /// <summary>
-    /// Function: ReformToInitialState
+    /// Function: ReformToInitialState<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void ReformToInitialState()
     {
@@ -438,7 +439,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGargoyleCollisionShortlyAfterTakingDamage;
     /// <summary>
-    /// Function: UpdateGargoyleCollisionShortlyAfterTakingDamage
+    /// Function: UpdateGargoyleCollisionShortlyAfterTakingDamage<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGargoyleCollisionShortlyAfterTakingDamage()
     {
@@ -459,7 +461,8 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVantagePointMeshComponent;
     /// <summary>
-    /// Function: GetVantagePointMeshComponent
+    /// Function: GetVantagePointMeshComponent<br/>
+    /// Native code at BatmanAK.exe+0x481950 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MeshComponent GetVantagePointMeshComponent()
     {

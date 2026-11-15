@@ -123,7 +123,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxHealth;
     /// <summary>
-    /// Function: GetMaxHealth
+    /// Function: GetMaxHealth<br/>
+    /// Native code at BatmanAK.exe+0x486BC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetMaxHealth()
     {
@@ -235,7 +236,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVelocityAtPos;
     /// <summary>
-    /// Function: GetVelocityAtPos
+    /// Function: GetVelocityAtPos<br/>
+    /// Native code at BatmanAK.exe+0x486B10 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVelocityAtPos(System.Numerics.Vector3 WorldPos)
     {
@@ -257,7 +259,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateThroughWallsViewMesh;
     /// <summary>
-    /// Function: CreateThroughWallsViewMesh
+    /// Function: CreateThroughWallsViewMesh<br/>
+    /// Native code at BatmanAK.exe+0x4F6E10 in the Steam build
     /// </summary>
     public unsafe virtual void CreateThroughWallsViewMesh(BmSDK.Engine.MaterialInterface ThroughWallsViewMaterial, out BmSDK.Engine.SkeletalMeshComponent ThroughWallsViewMesh, BmSDK.Engine.Scene.ESceneDepthPriorityGroup depth_group)
     {
@@ -495,7 +498,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVehicleHalfLongAxis;
     /// <summary>
-    /// Function: GetVehicleHalfLongAxis
+    /// Function: GetVehicleHalfLongAxis<br/>
+    /// Native code at BatmanAK.exe+0x486AC0 in the Steam build
     /// </summary>
     public unsafe virtual float GetVehicleHalfLongAxis()
     {
@@ -516,7 +520,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVehicleHalfWidth;
     /// <summary>
-    /// Function: GetVehicleHalfWidth
+    /// Function: GetVehicleHalfWidth<br/>
+    /// Native code at BatmanAK.exe+0x486A70 in the Steam build
     /// </summary>
     public unsafe virtual float GetVehicleHalfWidth()
     {
@@ -565,7 +570,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetCOMOffset;
     /// <summary>
-    /// Function: ResetCOMOffset
+    /// Function: ResetCOMOffset<br/>
+    /// Native code at BatmanAK.exe+0x486A30 in the Steam build
     /// </summary>
     public unsafe virtual void ResetCOMOffset()
     {
@@ -752,7 +758,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
-    /// Function: CanReachItem
+    /// Function: CanReachItem<br/>
+    /// Native code at BatmanAK.exe+0x4F6CD0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
@@ -963,7 +970,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForNPCCollisionWarning;
     /// <summary>
-    /// Function: CheckForNPCCollisionWarning
+    /// Function: CheckForNPCCollisionWarning<br/>
+    /// Native code at BatmanAK.exe+0x4F6BA0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForNPCCollisionWarning(float DeltaTime)
     {
@@ -985,7 +993,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThugBehindCollision;
     /// <summary>
-    /// Function: IsThugBehindCollision
+    /// Function: IsThugBehindCollision<br/>
+    /// Native code at BatmanAK.exe+0x4F6A60 in the Steam build
     /// </summary>
     public unsafe virtual bool IsThugBehindCollision(BmSDK.BmGame.RPawnVillain TestThug)
     {
@@ -1007,7 +1016,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInDangerOfCollision;
     /// <summary>
-    /// Function: IsLocationInDangerOfCollision
+    /// Function: IsLocationInDangerOfCollision<br/>
+    /// Native code at BatmanAK.exe+0x4F66B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInDangerOfCollision(System.Numerics.Vector3 TestLocation, float Speed, System.Numerics.Vector3 Direction, System.Numerics.Vector3 LeftVec, float CheckWidth, float MinCos, out int bZap)
     {
@@ -1051,7 +1061,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSelfDrive;
     /// <summary>
-    /// Function: CancelSelfDrive
+    /// Function: CancelSelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4869F0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelSelfDrive()
     {
@@ -1088,7 +1099,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeSpansFromSplineAndTeleport;
     /// <summary>
-    /// Function: MakeSpansFromSplineAndTeleport
+    /// Function: MakeSpansFromSplineAndTeleport<br/>
+    /// Native code at BatmanAK.exe+0x4F6410 in the Steam build
     /// </summary>
     public unsafe virtual void MakeSpansFromSplineAndTeleport(BmSDK.BmGame.RRoadSplinePoint StartPoint, bool ControlThrottle, bool Teleport)
     {
@@ -1199,7 +1211,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadNetwork;
     /// <summary>
-    /// Function: GetRoadNetwork
+    /// Function: GetRoadNetwork<br/>
+    /// Native code at BatmanAK.exe+0x4869A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRoadNetwork GetRoadNetwork()
     {
@@ -1248,7 +1261,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParentVehicleToCurrentLevel;
     /// <summary>
-    /// Function: ParentVehicleToCurrentLevel
+    /// Function: ParentVehicleToCurrentLevel<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ParentVehicleToCurrentLevel()
     {
@@ -1670,7 +1684,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_UpdateFakeRoadAsyncAll;
     /// <summary>
-    /// Function: UpdateFakeRoadAsyncAll
+    /// Function: UpdateFakeRoadAsyncAll<br/>
+    /// Native code at BatmanAK.exe+0x4F6220 in the Steam build
     /// </summary>
     public unsafe static void UpdateFakeRoadAsyncAll(BmSDK.Engine.WorldInfo TheWorldInfo, float DeltaTime)
     {
@@ -1692,7 +1707,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_SelfDriveAsyncAll;
     /// <summary>
-    /// Function: SelfDriveAsyncAll
+    /// Function: SelfDriveAsyncAll<br/>
+    /// Native code at BatmanAK.exe+0x4F6030 in the Steam build
     /// </summary>
     public unsafe static void SelfDriveAsyncAll(BmSDK.Engine.WorldInfo TheWorldInfo, float DeltaTime)
     {
@@ -1741,7 +1757,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldCameraZFollowVehicleUp;
     /// <summary>
-    /// Function: ShouldCameraZFollowVehicleUp
+    /// Function: ShouldCameraZFollowVehicleUp<br/>
+    /// Native code at BatmanAK.exe+0x486950 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldCameraZFollowVehicleUp()
     {
@@ -1762,7 +1779,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_GetNearestRoadLocationStaticScript;
     /// <summary>
-    /// Function: GetNearestRoadLocationStaticScript
+    /// Function: GetNearestRoadLocationStaticScript<br/>
+    /// Native code at BatmanAK.exe+0x4F5EC0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetNearestRoadLocationStaticScript(System.Numerics.Vector3 CheckLocation, bool bMainRoadsOnly)
     {
@@ -1784,7 +1802,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_GetRoadNetworkStaticScript;
     /// <summary>
-    /// Function: GetRoadNetworkStaticScript
+    /// Function: GetRoadNetworkStaticScript<br/>
+    /// Native code at BatmanAK.exe+0x4F5D50 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RRoadNetwork GetRoadNetworkStaticScript(System.Numerics.Vector3 CheckLocation, float LevelSearchBias)
     {
@@ -1806,7 +1825,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReattachMesh;
     /// <summary>
-    /// Function: ReattachMesh
+    /// Function: ReattachMesh<br/>
+    /// Native code at BatmanAK.exe+0x486910 in the Steam build
     /// </summary>
     public unsafe virtual void ReattachMesh()
     {
@@ -1827,7 +1847,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXrayMaterial;
     /// <summary>
-    /// Function: UpdateXrayMaterial
+    /// Function: UpdateXrayMaterial<br/>
+    /// Native code at BatmanAK.exe+0x486800 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateXrayMaterial(System.Numerics.Vector3 CameraLocation, bool bAllowCallingConditionalUpdateComponents = default, bool bAlwaysVisible = default)
     {
@@ -1851,7 +1872,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RebuildSpecialNavEdges;
     /// <summary>
-    /// Function: RebuildSpecialNavEdges
+    /// Function: RebuildSpecialNavEdges<br/>
+    /// Native code at BatmanAK.exe+0x4867C0 in the Steam build
     /// </summary>
     public unsafe virtual void RebuildSpecialNavEdges()
     {
@@ -1872,7 +1894,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPushesRigidBodies;
     /// <summary>
-    /// Function: SetPushesRigidBodies
+    /// Function: SetPushesRigidBodies<br/>
+    /// Native code at BatmanAK.exe+0x4A35A0 in the Steam build
     /// </summary>
     public unsafe override void SetPushesRigidBodies(bool NewPush)
     {
@@ -1894,7 +1917,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrailEffects;
     /// <summary>
-    /// Function: UpdateTrailEffects
+    /// Function: UpdateTrailEffects<br/>
+    /// Native code at BatmanAK.exe+0x4C18E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTrailEffects(float DeltaTime)
     {
@@ -1916,7 +1940,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableInterVehicleCollision;
     /// <summary>
-    /// Function: EnableInterVehicleCollision
+    /// Function: EnableInterVehicleCollision<br/>
+    /// Native code at BatmanAK.exe+0x486780 in the Steam build
     /// </summary>
     public unsafe virtual void EnableInterVehicleCollision()
     {
@@ -1937,7 +1962,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableInterVehicleCollision;
     /// <summary>
-    /// Function: DisableInterVehicleCollision
+    /// Function: DisableInterVehicleCollision<br/>
+    /// Native code at BatmanAK.exe+0x486740 in the Steam build
     /// </summary>
     public unsafe virtual void DisableInterVehicleCollision()
     {
@@ -1958,7 +1984,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCentreOfMass;
     /// <summary>
-    /// Function: GetCentreOfMass
+    /// Function: GetCentreOfMass<br/>
+    /// Native code at BatmanAK.exe+0x4866E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCentreOfMass()
     {
@@ -1979,7 +2006,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickWheelsFake;
     /// <summary>
-    /// Function: TickWheelsFake
+    /// Function: TickWheelsFake<br/>
+    /// Native code at BatmanAK.exe+0x4F5B50 in the Steam build
     /// </summary>
     public unsafe virtual void TickWheelsFake(float DeltaTime, bool DropIfNoCollision)
     {
@@ -2002,7 +2030,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SnapWheelsToGround;
     /// <summary>
-    /// Function: SnapWheelsToGround
+    /// Function: SnapWheelsToGround<br/>
+    /// Native code at BatmanAK.exe+0x4866A0 in the Steam build
     /// </summary>
     public unsafe virtual void SnapWheelsToGround()
     {
@@ -2023,7 +2052,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_DetachFromMatinee;
     /// <summary>
-    /// Function: MAT_DetachFromMatinee
+    /// Function: MAT_DetachFromMatinee<br/>
+    /// Native code at BatmanAK.exe+0x4F5A20 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_DetachFromMatinee(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -2045,7 +2075,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_PostMatineeUpdate;
     /// <summary>
-    /// Function: MAT_PostMatineeUpdate
+    /// Function: MAT_PostMatineeUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4F5820 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_PostMatineeUpdate(float DeltaTime, float CurInterpTime)
     {
@@ -2068,7 +2099,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimPosition;
     /// <summary>
-    /// Function: MAT_SetAnimPosition
+    /// Function: MAT_SetAnimPosition<br/>
+    /// Native code at BatmanAK.exe+0x4A2FA0 in the Steam build
     /// </summary>
     public unsafe override void MAT_SetAnimPosition(BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
@@ -2096,7 +2128,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
-    /// Function: MAT_FinishAnimControl
+    /// Function: MAT_FinishAnimControl<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe override void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -2118,7 +2151,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
-    /// Function: MAT_BeginAnimControl
+    /// Function: MAT_BeginAnimControl<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe override void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
@@ -2140,7 +2174,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCapeCollisionPhysXActor;
     /// <summary>
-    /// Function: RemoveCapeCollisionPhysXActor
+    /// Function: RemoveCapeCollisionPhysXActor<br/>
+    /// Native code at BatmanAK.exe+0x486660 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveCapeCollisionPhysXActor()
     {
@@ -2161,7 +2196,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCapeCollisionPhysXActor;
     /// <summary>
-    /// Function: AddCapeCollisionPhysXActor
+    /// Function: AddCapeCollisionPhysXActor<br/>
+    /// Native code at BatmanAK.exe+0x486620 in the Steam build
     /// </summary>
     public unsafe virtual void AddCapeCollisionPhysXActor()
     {
@@ -2182,7 +2218,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableCapeCollisionPhysXActor;
     /// <summary>
-    /// Function: SetEnableCapeCollisionPhysXActor
+    /// Function: SetEnableCapeCollisionPhysXActor<br/>
+    /// Native code at BatmanAK.exe+0x4F5700 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnableCapeCollisionPhysXActor(bool bEnableCapeCollision)
     {
@@ -2204,7 +2241,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x486580 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstant = default)
     {
@@ -2226,7 +2264,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x486540 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -2247,7 +2286,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVehicleStuck;
     /// <summary>
-    /// Function: IsVehicleStuck
+    /// Function: IsVehicleStuck<br/>
+    /// Native code at BatmanAK.exe+0x47D490 in the Steam build
     /// </summary>
     public unsafe virtual bool IsVehicleStuck()
     {
@@ -2268,7 +2308,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnMovingGround;
     /// <summary>
-    /// Function: IsOnMovingGround
+    /// Function: IsOnMovingGround<br/>
+    /// Native code at BatmanAK.exe+0x4864F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOnMovingGround()
     {
@@ -2289,7 +2330,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBodyPartBrokenOff;
     /// <summary>
-    /// Function: IsBodyPartBrokenOff
+    /// Function: IsBodyPartBrokenOff<br/>
+    /// Native code at BatmanAK.exe+0x4F55D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBodyPartBrokenOff(int BodyIndex)
     {
@@ -2311,7 +2353,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroySeaWallPhysxActor;
     /// <summary>
-    /// Function: DestroySeaWallPhysxActor
+    /// Function: DestroySeaWallPhysxActor<br/>
+    /// Native code at BatmanAK.exe+0x4864B0 in the Steam build
     /// </summary>
     public unsafe virtual void DestroySeaWallPhysxActor()
     {
@@ -2332,7 +2375,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFakeSeaWallCollision;
     /// <summary>
-    /// Function: UpdateFakeSeaWallCollision
+    /// Function: UpdateFakeSeaWallCollision<br/>
+    /// Native code at BatmanAK.exe+0x486470 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFakeSeaWallCollision()
     {
@@ -2353,7 +2397,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyRoadPhysxActor;
     /// <summary>
-    /// Function: DestroyRoadPhysxActor
+    /// Function: DestroyRoadPhysxActor<br/>
+    /// Native code at BatmanAK.exe+0x486430 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyRoadPhysxActor()
     {
@@ -2374,7 +2419,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFakeRoadCollision;
     /// <summary>
-    /// Function: UpdateFakeRoadCollision
+    /// Function: UpdateFakeRoadCollision<br/>
+    /// Native code at BatmanAK.exe+0x4F53E0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFakeRoadCollision(bool ForceUpdateStatic, float DeltaTime)
     {
@@ -2397,7 +2443,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveRescue;
     /// <summary>
-    /// Function: SelfDriveRescue
+    /// Function: SelfDriveRescue<br/>
+    /// Native code at BatmanAK.exe+0x486390 in the Steam build
     /// </summary>
     public unsafe virtual bool SelfDriveRescue(float MoveForwardAmount = default)
     {
@@ -2419,7 +2466,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceFromPlayerCamera;
     /// <summary>
-    /// Function: GetDistanceFromPlayerCamera
+    /// Function: GetDistanceFromPlayerCamera<br/>
+    /// Native code at BatmanAK.exe+0x486340 in the Steam build
     /// </summary>
     public unsafe virtual float GetDistanceFromPlayerCamera()
     {
@@ -2440,7 +2488,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InPlayerCameraFrustum;
     /// <summary>
-    /// Function: InPlayerCameraFrustum
+    /// Function: InPlayerCameraFrustum<br/>
+    /// Native code at BatmanAK.exe+0x4862F0 in the Steam build
     /// </summary>
     public unsafe virtual bool InPlayerCameraFrustum()
     {
@@ -2461,7 +2510,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAudioDrivingMode;
     /// <summary>
-    /// Function: UpdateAudioDrivingMode
+    /// Function: UpdateAudioDrivingMode<br/>
+    /// Native code at BatmanAK.exe+0x4862B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateAudioDrivingMode()
     {
@@ -2482,7 +2532,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSelfDriveMode;
     /// <summary>
-    /// Function: SetSelfDriveMode
+    /// Function: SetSelfDriveMode<br/>
+    /// Native code at BatmanAK.exe+0x486230 in the Steam build
     /// </summary>
     public unsafe virtual void SetSelfDriveMode(BmSDK.BmGame.RVehicle.ESelfDriveMode Mode)
     {
@@ -2504,7 +2555,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnRacingLineToPoint;
     /// <summary>
-    /// Function: GetClosestPointOnRacingLineToPoint
+    /// Function: GetClosestPointOnRacingLineToPoint<br/>
+    /// Native code at BatmanAK.exe+0x4F50B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetClosestPointOnRacingLineToPoint(System.Numerics.Vector3 RefPoint, float MaxRadius, float MaxRouteDist, out System.Numerics.Vector3 OutPoint, out float OutRadius, out float OutRouteDist)
     {
@@ -2537,7 +2589,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRouteDebug;
     /// <summary>
-    /// Function: DrawRouteDebug
+    /// Function: DrawRouteDebug<br/>
+    /// Native code at BatmanAK.exe+0x4861A0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawRouteDebug(System.Numerics.Vector3 TargetLoc)
     {
@@ -2559,7 +2612,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelfDrivePrevRoadLink;
     /// <summary>
-    /// Function: GetSelfDrivePrevRoadLink
+    /// Function: GetSelfDrivePrevRoadLink<br/>
+    /// Native code at BatmanAK.exe+0x486150 in the Steam build
     /// </summary>
     public unsafe virtual int GetSelfDrivePrevRoadLink()
     {
@@ -2580,7 +2634,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelfDriveNextRoadLink;
     /// <summary>
-    /// Function: GetSelfDriveNextRoadLink
+    /// Function: GetSelfDriveNextRoadLink<br/>
+    /// Native code at BatmanAK.exe+0x486100 in the Steam build
     /// </summary>
     public unsafe virtual int GetSelfDriveNextRoadLink()
     {
@@ -2601,7 +2656,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelfDriveNextLink;
     /// <summary>
-    /// Function: GetSelfDriveNextLink
+    /// Function: GetSelfDriveNextLink<br/>
+    /// Native code at BatmanAK.exe+0x4860B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetSelfDriveNextLink()
     {
@@ -2622,7 +2678,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeAcrossNextSelfDriveSpan;
     /// <summary>
-    /// Function: GetTimeAcrossNextSelfDriveSpan
+    /// Function: GetTimeAcrossNextSelfDriveSpan<br/>
+    /// Native code at BatmanAK.exe+0x486060 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeAcrossNextSelfDriveSpan()
     {
@@ -2643,7 +2700,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceToSelfDriveSpan;
     /// <summary>
-    /// Function: GetDistanceToSelfDriveSpan
+    /// Function: GetDistanceToSelfDriveSpan<br/>
+    /// Native code at BatmanAK.exe+0x4F4F70 in the Steam build
     /// </summary>
     public unsafe virtual float GetDistanceToSelfDriveSpan(int selfDriveSpanIndex)
     {
@@ -2665,7 +2723,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideSelfDriveSpans;
     /// <summary>
-    /// Function: IsInsideSelfDriveSpans
+    /// Function: IsInsideSelfDriveSpans<br/>
+    /// Native code at BatmanAK.exe+0x486010 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInsideSelfDriveSpans()
     {
@@ -2686,7 +2745,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAheadLocNeutralLine;
     /// <summary>
-    /// Function: GetLookAheadLocNeutralLine
+    /// Function: GetLookAheadLocNeutralLine<br/>
+    /// Native code at BatmanAK.exe+0x4F4CE0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLookAheadLocNeutralLine(float DistToNextSpan, float LookAheadDist, out int ResultingNextSpan)
     {
@@ -2712,7 +2772,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAheadLoc;
     /// <summary>
-    /// Function: GetLookAheadLoc
+    /// Function: GetLookAheadLoc<br/>
+    /// Native code at BatmanAK.exe+0x4F4AC0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLookAheadLoc(float DistToNextSpan, float LookAheadDist)
     {
@@ -2735,7 +2796,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSelfDriveNextSpanToNearest;
     /// <summary>
-    /// Function: SetSelfDriveNextSpanToNearest
+    /// Function: SetSelfDriveNextSpanToNearest<br/>
+    /// Native code at BatmanAK.exe+0x473AE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSelfDriveNextSpanToNearest()
     {
@@ -2756,7 +2818,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceSelfDriveNextSpan;
     /// <summary>
-    /// Function: AdvanceSelfDriveNextSpan
+    /// Function: AdvanceSelfDriveNextSpan<br/>
+    /// Native code at BatmanAK.exe+0x485F60 in the Steam build
     /// </summary>
     public unsafe virtual float AdvanceSelfDriveNextSpan(bool ForceAdvance = default)
     {
@@ -2778,7 +2841,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComputeSelfDriveRouteLengthNeutralDelta;
     /// <summary>
-    /// Function: ComputeSelfDriveRouteLengthNeutralDelta
+    /// Function: ComputeSelfDriveRouteLengthNeutralDelta<br/>
+    /// Native code at BatmanAK.exe+0x485EC0 in the Steam build
     /// </summary>
     public unsafe virtual float ComputeSelfDriveRouteLengthNeutralDelta(int NumSpansAhead = default)
     {
@@ -2800,7 +2864,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ComputeSelfDriveEndPointDistance;
     /// <summary>
-    /// Function: ComputeSelfDriveEndPointDistance
+    /// Function: ComputeSelfDriveEndPointDistance<br/>
+    /// Native code at BatmanAK.exe+0x485E30 in the Steam build
     /// </summary>
     public unsafe virtual void ComputeSelfDriveEndPointDistance(float DistToNextSpan = default)
     {
@@ -2822,7 +2887,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveDirect;
     /// <summary>
-    /// Function: SelfDriveDirect
+    /// Function: SelfDriveDirect<br/>
+    /// Native code at BatmanAK.exe+0x4F4870 in the Steam build
     /// </summary>
     public unsafe virtual bool SelfDriveDirect(float DeltaTime, System.Numerics.Vector3 Destination, float MaintainDistance)
     {
@@ -2846,7 +2912,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe virtual bool SelfDrive(float DeltaTime)
     {
@@ -2868,7 +2935,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveAsync;
     /// <summary>
-    /// Function: SelfDriveAsync
+    /// Function: SelfDriveAsync<br/>
+    /// Native code at BatmanAK.exe+0x4F4600 in the Steam build
     /// </summary>
     public unsafe virtual void SelfDriveAsync(float DeltaTime)
     {
@@ -2890,7 +2958,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIndexOfFirstSpanAhead;
     /// <summary>
-    /// Function: GetIndexOfFirstSpanAhead
+    /// Function: GetIndexOfFirstSpanAhead<br/>
+    /// Native code at BatmanAK.exe+0x563540 in the Steam build
     /// </summary>
     public unsafe virtual int GetIndexOfFirstSpanAhead(BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FRoadNetworkSpan> Spans, System.Numerics.Vector3 VehicleLoc)
     {
@@ -2913,7 +2982,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ZeroForwardVel;
     /// <summary>
-    /// Function: ZeroForwardVel
+    /// Function: ZeroForwardVel<br/>
+    /// Native code at BatmanAK.exe+0x473800 in the Steam build
     /// </summary>
     public unsafe virtual void ZeroForwardVel()
     {
@@ -2934,7 +3004,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnStickTyres;
     /// <summary>
-    /// Function: UnStickTyres
+    /// Function: UnStickTyres<br/>
+    /// Native code at BatmanAK.exe+0x4737C0 in the Steam build
     /// </summary>
     public unsafe virtual void UnStickTyres()
     {
@@ -2955,7 +3026,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocationNoCollisionFail;
     /// <summary>
-    /// Function: SetLocationNoCollisionFail
+    /// Function: SetLocationNoCollisionFail<br/>
+    /// Native code at BatmanAK.exe+0x485DA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLocationNoCollisionFail(System.Numerics.Vector3 NewLocation)
     {
@@ -2977,7 +3049,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBTransform;
     /// <summary>
-    /// Function: SetRBTransform
+    /// Function: SetRBTransform<br/>
+    /// Native code at BatmanAK.exe+0x485C80 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBTransform(System.Numerics.Vector3 Loc, BmSDK.Rotator Rot, bool ZeroVelocity = default)
     {
@@ -3001,7 +3074,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBTransform;
     /// <summary>
-    /// Function: GetRBTransform
+    /// Function: GetRBTransform<br/>
+    /// Native code at BatmanAK.exe+0x485B90 in the Steam build
     /// </summary>
     public unsafe virtual bool GetRBTransform(out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot)
     {
@@ -3028,7 +3102,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRigidBodyFixedNPC;
     /// <summary>
-    /// Function: SetRigidBodyFixedNPC
+    /// Function: SetRigidBodyFixedNPC<br/>
+    /// Native code at BatmanAK.exe+0x4F44E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRigidBodyFixedNPC(bool Fixed)
     {
@@ -3050,7 +3125,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
@@ -3072,7 +3148,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRigidBodyFixed;
     /// <summary>
-    /// Function: SetRigidBodyFixed
+    /// Function: SetRigidBodyFixed<br/>
+    /// Native code at BatmanAK.exe+0x4F43C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRigidBodyFixed(bool Fixed)
     {
@@ -3094,7 +3171,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyRightingRoll;
     /// <summary>
-    /// Function: ApplyRightingRoll
+    /// Function: ApplyRightingRoll<br/>
+    /// Native code at BatmanAK.exe+0x4F41C0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyRightingRoll(float Scale, float Limit)
     {
@@ -3117,7 +3195,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyRightingTorque;
     /// <summary>
-    /// Function: ApplyRightingTorque
+    /// Function: ApplyRightingTorque<br/>
+    /// Native code at BatmanAK.exe+0x4F3FC0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyRightingTorque(float Scale, float Limit)
     {
@@ -3140,7 +3219,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateReflectionShadow;
     /// <summary>
-    /// Function: UpdateReflectionShadow
+    /// Function: UpdateReflectionShadow<br/>
+    /// Native code at BatmanAK.exe+0x4F3E90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateReflectionShadow(float DeltaTime)
     {
@@ -3162,7 +3242,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
-    /// Function: UpdateLights
+    /// Function: UpdateLights<br/>
+    /// Native code at BatmanAK.exe+0x4F3D60 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLights(float DeltaTime)
     {
@@ -3184,7 +3265,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInFearGasDensity;
     /// <summary>
-    /// Function: UpdateInFearGasDensity
+    /// Function: UpdateInFearGasDensity<br/>
+    /// Native code at BatmanAK.exe+0x4F3C30 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateInFearGasDensity(float DeltaTime)
     {
@@ -3206,7 +3288,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRain;
     /// <summary>
-    /// Function: UpdateRain
+    /// Function: UpdateRain<br/>
+    /// Native code at BatmanAK.exe+0x4F3B00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRain(float DeltaTime)
     {
@@ -3228,7 +3311,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateIsOrWasOnJump;
     /// <summary>
-    /// Function: UpdateIsOrWasOnJump
+    /// Function: UpdateIsOrWasOnJump<br/>
+    /// Native code at BatmanAK.exe+0x4F39D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateIsOrWasOnJump(float DeltaTime)
     {
@@ -3250,7 +3334,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAnyWheelOnAnotherVehicle;
     /// <summary>
-    /// Function: IsAnyWheelOnAnotherVehicle
+    /// Function: IsAnyWheelOnAnotherVehicle<br/>
+    /// Native code at BatmanAK.exe+0x485B40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAnyWheelOnAnotherVehicle()
     {
@@ -3271,7 +3356,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideVehicleExclusionZone;
     /// <summary>
-    /// Function: IsInsideVehicleExclusionZone
+    /// Function: IsInsideVehicleExclusionZone<br/>
+    /// Native code at BatmanAK.exe+0x485AF0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInsideVehicleExclusionZone()
     {
@@ -3292,7 +3378,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCityDistrict;
     /// <summary>
-    /// Function: UpdateCityDistrict
+    /// Function: UpdateCityDistrict<br/>
+    /// Native code at BatmanAK.exe+0x485AB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCityDistrict()
     {
@@ -3313,7 +3400,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPDD;
     /// <summary>
-    /// Function: GetPDD
+    /// Function: GetPDD<br/>
+    /// Native code at BatmanAK.exe+0x472760 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPersistentDebugData GetPDD()
     {
@@ -3334,7 +3422,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_StopTickCycleCounter;
     /// <summary>
-    /// Function: StopTickCycleCounter
+    /// Function: StopTickCycleCounter<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe static void StopTickCycleCounter()
     {
@@ -3354,7 +3443,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Function __fn_StartTickCycleCounter;
     /// <summary>
-    /// Function: StartTickCycleCounter
+    /// Function: StartTickCycleCounter<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe static void StartTickCycleCounter()
     {
@@ -3374,7 +3464,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickBreadCrumbs;
     /// <summary>
-    /// Function: TickBreadCrumbs
+    /// Function: TickBreadCrumbs<br/>
+    /// Native code at BatmanAK.exe+0x4F38A0 in the Steam build
     /// </summary>
     public unsafe virtual void TickBreadCrumbs(float DeltaTime)
     {
@@ -3396,7 +3487,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugRenderRestrictionVolumes;
     /// <summary>
-    /// Function: DebugRenderRestrictionVolumes
+    /// Function: DebugRenderRestrictionVolumes<br/>
+    /// Native code at BatmanAK.exe+0x56BC70 in the Steam build
     /// </summary>
     public unsafe virtual void DebugRenderRestrictionVolumes(out BmSDK.BmGame.RRoadNetwork.FRoadRouteRestriction Restrictions)
     {
@@ -3418,7 +3510,8 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_N
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyNearbyProps;
     /// <summary>
-    /// Function: DestroyNearbyProps
+    /// Function: DestroyNearbyProps<br/>
+    /// Native code at BatmanAK.exe+0x4F3740 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyNearbyProps(System.Numerics.Vector3 Loc, float Radius)
     {
@@ -5681,7 +5774,8 @@ public static class RVehicleStatics
 {
     private static BmSDK.Function __fn_UpdateFakeRoadAsyncAll;
     /// <summary>
-    /// Function: UpdateFakeRoadAsyncAll, run on <paramref name="self"/> rather than the class default object
+    /// Function: UpdateFakeRoadAsyncAll, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F6220 in the Steam build
     /// </summary>
     public unsafe static void UpdateFakeRoadAsyncAll(this BmSDK.BmGame.RVehicle self, BmSDK.Engine.WorldInfo TheWorldInfo, float DeltaTime)
     {
@@ -5704,7 +5798,8 @@ public static class RVehicleStatics
 
     private static BmSDK.Function __fn_SelfDriveAsyncAll;
     /// <summary>
-    /// Function: SelfDriveAsyncAll, run on <paramref name="self"/> rather than the class default object
+    /// Function: SelfDriveAsyncAll, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F6030 in the Steam build
     /// </summary>
     public unsafe static void SelfDriveAsyncAll(this BmSDK.BmGame.RVehicle self, BmSDK.Engine.WorldInfo TheWorldInfo, float DeltaTime)
     {
@@ -5727,7 +5822,8 @@ public static class RVehicleStatics
 
     private static BmSDK.Function __fn_GetNearestRoadLocationStaticScript;
     /// <summary>
-    /// Function: GetNearestRoadLocationStaticScript, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetNearestRoadLocationStaticScript, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F5EC0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetNearestRoadLocationStaticScript(this BmSDK.BmGame.RVehicle self, System.Numerics.Vector3 CheckLocation, bool bMainRoadsOnly)
     {
@@ -5750,7 +5846,8 @@ public static class RVehicleStatics
 
     private static BmSDK.Function __fn_GetRoadNetworkStaticScript;
     /// <summary>
-    /// Function: GetRoadNetworkStaticScript, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetRoadNetworkStaticScript, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4F5D50 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RRoadNetwork GetRoadNetworkStaticScript(this BmSDK.BmGame.RVehicle self, System.Numerics.Vector3 CheckLocation, float LevelSearchBias)
     {
@@ -5773,7 +5870,8 @@ public static class RVehicleStatics
 
     private static BmSDK.Function __fn_StopTickCycleCounter;
     /// <summary>
-    /// Function: StopTickCycleCounter, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopTickCycleCounter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe static void StopTickCycleCounter(this BmSDK.BmGame.RVehicle self)
     {
@@ -5794,7 +5892,8 @@ public static class RVehicleStatics
 
     private static BmSDK.Function __fn_StartTickCycleCounter;
     /// <summary>
-    /// Function: StartTickCycleCounter, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartTickCycleCounter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe static void StartTickCycleCounter(this BmSDK.BmGame.RVehicle self)
     {

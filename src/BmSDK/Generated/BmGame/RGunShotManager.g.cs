@@ -80,7 +80,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceTraceOff;
     /// <summary>
-    /// Function: ForceTraceOff
+    /// Function: ForceTraceOff<br/>
+    /// Native code at BatmanAK.exe+0x4CC9E0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceTraceOff(BmSDK.Engine.Actor A)
     {
@@ -102,7 +103,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceTraceOn;
     /// <summary>
-    /// Function: ForceTraceOn
+    /// Function: ForceTraceOn<br/>
+    /// Native code at BatmanAK.exe+0x4BB280 in the Steam build
     /// </summary>
     public unsafe virtual void ForceTraceOn(BmSDK.Engine.Actor A, float timeForTrace = default)
     {
@@ -125,7 +127,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReassignWeapon;
     /// <summary>
-    /// Function: ReassignWeapon
+    /// Function: ReassignWeapon<br/>
+    /// Native code at BatmanAK.exe+0x4BB090 in the Steam build
     /// </summary>
     public unsafe virtual void ReassignWeapon(BmSDK.Engine.Actor Weapon, BmSDK.Engine.Actor A)
     {
@@ -148,7 +151,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFireAudio;
     /// <summary>
-    /// Function: StartFireAudio
+    /// Function: StartFireAudio<br/>
+    /// Native code at BatmanAK.exe+0x4BAC40 in the Steam build
     /// </summary>
     public unsafe virtual void StartFireAudio(BmSDK.Engine.Actor Weapon, BmSDK.Engine.Actor A, bool doLoop, BmSDK.Engine.AkEvent loopingFireSound, BmSDK.Engine.AkEvent FireSound)
     {
@@ -174,7 +178,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEnemyFiring;
     /// <summary>
-    /// Function: IsEnemyFiring
+    /// Function: IsEnemyFiring<br/>
+    /// Native code at BatmanAK.exe+0x4BAB00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEnemyFiring(BmSDK.Engine.Actor A)
     {
@@ -196,7 +201,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterEnemy;
     /// <summary>
-    /// Function: UnregisterEnemy
+    /// Function: UnregisterEnemy<br/>
+    /// Native code at BatmanAK.exe+0x4BA9D0 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterEnemy(BmSDK.Engine.Actor A)
     {
@@ -218,7 +224,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterEnemy;
     /// <summary>
-    /// Function: RegisterEnemy
+    /// Function: RegisterEnemy<br/>
+    /// Native code at BatmanAK.exe+0x4BA730 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterEnemy(BmSDK.Engine.Actor A, BmSDK.Engine.ParticleSystemComponent bulletTrace, bool IsFiring = default, BmSDK.BmGame.RGunShotManager.EGunType Gun = default, int GunIndex = default)
     {
@@ -244,7 +251,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFlyingVehicle;
     /// <summary>
-    /// Function: RemoveFlyingVehicle
+    /// Function: RemoveFlyingVehicle<br/>
+    /// Native code at BatmanAK.exe+0x4BA600 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveFlyingVehicle(BmSDK.Engine.Actor A)
     {
@@ -266,7 +274,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFlyingVehicle;
     /// <summary>
-    /// Function: AddFlyingVehicle
+    /// Function: AddFlyingVehicle<br/>
+    /// Native code at BatmanAK.exe+0x4BA4D0 in the Steam build
     /// </summary>
     public unsafe virtual void AddFlyingVehicle(BmSDK.Engine.Actor A)
     {
@@ -288,7 +297,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveVehicle;
     /// <summary>
-    /// Function: RemoveVehicle
+    /// Function: RemoveVehicle<br/>
+    /// Native code at BatmanAK.exe+0x50F9D0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveVehicle(BmSDK.Engine.Actor A)
     {
@@ -310,7 +320,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVehicle;
     /// <summary>
-    /// Function: AddVehicle
+    /// Function: AddVehicle<br/>
+    /// Native code at BatmanAK.exe+0x4BA3A0 in the Steam build
     /// </summary>
     public unsafe virtual void AddVehicle(BmSDK.Engine.Actor A)
     {
@@ -332,7 +343,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveVehicleFiring;
     /// <summary>
-    /// Function: RemoveVehicleFiring
+    /// Function: RemoveVehicleFiring<br/>
+    /// Native code at BatmanAK.exe+0x4BA270 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveVehicleFiring(BmSDK.Engine.Actor A)
     {
@@ -354,7 +366,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowVehicleAudio;
     /// <summary>
-    /// Function: AllowVehicleAudio
+    /// Function: AllowVehicleAudio<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual bool AllowVehicleAudio(BmSDK.Engine.Actor A)
     {
@@ -376,7 +389,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVehicleFiring;
     /// <summary>
-    /// Function: AddVehicleFiring
+    /// Function: AddVehicleFiring<br/>
+    /// Native code at BatmanAK.exe+0x4BA070 in the Steam build
     /// </summary>
     public unsafe virtual void AddVehicleFiring(BmSDK.Engine.Actor A, float DecayTime)
     {
@@ -399,7 +413,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowEnemyAudio;
     /// <summary>
-    /// Function: AllowEnemyAudio
+    /// Function: AllowEnemyAudio<br/>
+    /// Native code at BatmanAK.exe+0x4D3390 in the Steam build
     /// </summary>
     public unsafe virtual bool AllowEnemyAudio(BmSDK.Engine.Actor A)
     {
@@ -421,7 +436,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveEnemyFiring;
     /// <summary>
-    /// Function: RemoveEnemyFiring
+    /// Function: RemoveEnemyFiring<br/>
+    /// Native code at BatmanAK.exe+0x4B9E80 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveEnemyFiring(BmSDK.Engine.Actor A, BmSDK.Engine.Actor Weapon)
     {
@@ -444,7 +460,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddEnemyFiring;
     /// <summary>
-    /// Function: AddEnemyFiring
+    /// Function: AddEnemyFiring<br/>
+    /// Native code at BatmanAK.exe+0x509240 in the Steam build
     /// </summary>
     public unsafe virtual void AddEnemyFiring(BmSDK.Engine.Actor A)
     {
@@ -466,7 +483,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickDuringPostUpdate;
     /// <summary>
-    /// Function: TickDuringPostUpdate
+    /// Function: TickDuringPostUpdate<br/>
+    /// Native code at BatmanAK.exe+0x5144C0 in the Steam build
     /// </summary>
     public unsafe virtual void TickDuringPostUpdate(float dt)
     {
@@ -488,7 +506,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickSpecial;
     /// <summary>
-    /// Function: TickSpecial
+    /// Function: TickSpecial<br/>
+    /// Native code at BatmanAK.exe+0x4B9D50 in the Steam build
     /// </summary>
     public unsafe virtual void TickSpecial(float dt)
     {
@@ -510,7 +529,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGunShot;
     /// <summary>
-    /// Function: AddGunShot
+    /// Function: AddGunShot<br/>
+    /// Native code at BatmanAK.exe+0x4B9830 in the Steam build
     /// </summary>
     public unsafe virtual void AddGunShot(BmSDK.Engine.Actor weaponOwner, System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos, BmSDK.Rotator trajectory, BmSDK.Engine.Actor.FImpactInfo Impact, BmSDK.Engine.RPhysicalMaterialProperty ImpactMaterial, BmSDK.Engine.AkEvent BulletBy, bool hasHitPlayer, BmSDK.Engine.RPhysicalMaterialProperty.EPhysMaterialImpactTypes FireType = default)
     {
@@ -540,7 +560,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRocket;
     /// <summary>
-    /// Function: RemoveRocket
+    /// Function: RemoveRocket<br/>
+    /// Native code at BatmanAK.exe+0x4B9700 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveRocket(BmSDK.Engine.Actor trackingRocket)
     {
@@ -562,7 +583,8 @@ public partial class RGunShotManager : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRocket;
     /// <summary>
-    /// Function: AddRocket
+    /// Function: AddRocket<br/>
+    /// Native code at BatmanAK.exe+0x4B94E0 in the Steam build
     /// </summary>
     public unsafe virtual void AddRocket(BmSDK.Engine.Actor trackingRocket, BmSDK.Engine.AkEvent rocketByEvent, float timeAwayToTrigger = default)
     {

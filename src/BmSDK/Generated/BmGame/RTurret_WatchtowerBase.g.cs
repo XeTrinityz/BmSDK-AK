@@ -146,7 +146,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAngleDistToBM;
     /// <summary>
-    /// Function: GetAngleDistToBM
+    /// Function: GetAngleDistToBM<br/>
+    /// Native code at BatmanAK.exe+0x46F1A0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAngleDistToBM(System.Numerics.Vector3 BMLoc)
     {
@@ -168,7 +169,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootAtCurrentTarget;
     /// <summary>
-    /// Function: CanShootAtCurrentTarget
+    /// Function: CanShootAtCurrentTarget<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe override bool CanShootAtCurrentTarget()
     {
@@ -189,7 +191,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachLights;
     /// <summary>
-    /// Function: AttachLights
+    /// Function: AttachLights<br/>
+    /// Native code at BatmanAK.exe+0x46F160 in the Steam build
     /// </summary>
     public unsafe virtual void AttachLights()
     {
@@ -210,7 +213,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForBMInVolume;
     /// <summary>
-    /// Function: CheckForBMInVolume
+    /// Function: CheckForBMInVolume<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe override void CheckForBMInVolume()
     {
@@ -231,7 +235,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSToPlayer;
     /// <summary>
-    /// Function: CheckLOSToPlayer
+    /// Function: CheckLOSToPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46F110 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLOSToPlayer()
     {
@@ -252,7 +257,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMuzzleLoc;
     /// <summary>
-    /// Function: UpdateMuzzleLoc
+    /// Function: UpdateMuzzleLoc<br/>
+    /// Native code at BatmanAK.exe+0x46F0D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMuzzleLoc()
     {
@@ -273,7 +279,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingOrigin;
     /// <summary>
-    /// Function: GetTrackingOrigin
+    /// Function: GetTrackingOrigin<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTrackingOrigin()
     {
@@ -294,7 +301,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLightConeAngleForPlayerSpotlight;
     /// <summary>
-    /// Function: GetLightConeAngleForPlayerSpotlight
+    /// Function: GetLightConeAngleForPlayerSpotlight<br/>
+    /// Native code at BatmanAK.exe+0x48C250 in the Steam build
     /// </summary>
     public unsafe virtual float GetLightConeAngleForPlayerSpotlight()
     {
@@ -315,7 +323,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RaycastForLightRadius;
     /// <summary>
-    /// Function: RaycastForLightRadius
+    /// Function: RaycastForLightRadius<br/>
+    /// Native code at BatmanAK.exe+0x46F080 in the Steam build
     /// </summary>
     public unsafe virtual float RaycastForLightRadius()
     {
@@ -336,7 +345,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLight;
     /// <summary>
-    /// Function: UpdateLight
+    /// Function: UpdateLight<br/>
+    /// Native code at BatmanAK.exe+0x4B1C00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLight(float DeltaTime)
     {
@@ -358,7 +368,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredRotation;
     /// <summary>
-    /// Function: SetDesiredRotation
+    /// Function: SetDesiredRotation<br/>
+    /// Native code at BatmanAK.exe+0x46ECB0 in the Steam build
     /// </summary>
     public unsafe override void SetDesiredRotation(BmSDK.Rotator DesiredRot)
     {
@@ -380,7 +391,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickJammed;
     /// <summary>
-    /// Function: TickJammed
+    /// Function: TickJammed<br/>
+    /// Native code at BatmanAK.exe+0x46F040 in the Steam build
     /// </summary>
     public unsafe virtual void TickJammed()
     {
@@ -401,7 +413,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBlindedTimeRemaining;
     /// <summary>
-    /// Function: GetBlindedTimeRemaining
+    /// Function: GetBlindedTimeRemaining<br/>
+    /// Native code at BatmanAK.exe+0x46EFF0 in the Steam build
     /// </summary>
     public unsafe override float GetBlindedTimeRemaining()
     {
@@ -422,7 +435,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnBlind;
     /// <summary>
-    /// Function: UnBlind
+    /// Function: UnBlind<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe override void UnBlind()
     {
@@ -443,7 +457,8 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
-    /// Function: IsBlinded
+    /// Function: IsBlinded<br/>
+    /// Native code at BatmanAK.exe+0x46EFA0 in the Steam build
     /// </summary>
     public unsafe override bool IsBlinded()
     {

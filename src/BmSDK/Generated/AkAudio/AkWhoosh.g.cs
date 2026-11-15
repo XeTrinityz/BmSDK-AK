@@ -80,7 +80,8 @@ public partial class AkWhoosh : BmSDK.Engine.AkActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableWhoosh;
     /// <summary>
-    /// Function: DisableWhoosh
+    /// Function: DisableWhoosh<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void DisableWhoosh()
     {
@@ -101,7 +102,8 @@ public partial class AkWhoosh : BmSDK.Engine.AkActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableWhoosh;
     /// <summary>
-    /// Function: EnableWhoosh
+    /// Function: EnableWhoosh<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void EnableWhoosh()
     {

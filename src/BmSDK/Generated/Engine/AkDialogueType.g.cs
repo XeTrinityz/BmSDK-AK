@@ -80,7 +80,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPersistent;
     /// <summary>
-    /// Function: IsPersistent
+    /// Function: IsPersistent<br/>
+    /// Native code at BatmanAK.exe+0xB362D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPersistent()
     {
@@ -101,7 +102,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowSubtitles;
     /// <summary>
-    /// Function: ShowSubtitles
+    /// Function: ShowSubtitles<br/>
+    /// Native code at BatmanAK.exe+0xB36280 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowSubtitles()
     {
@@ -122,7 +124,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEmote;
     /// <summary>
-    /// Function: IsEmote
+    /// Function: IsEmote<br/>
+    /// Native code at BatmanAK.exe+0xB36230 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEmote()
     {
@@ -143,7 +146,8 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BasePriority;
     /// <summary>
-    /// Function: BasePriority
+    /// Function: BasePriority<br/>
+    /// Native code at BatmanAK.exe+0xB361E0 in the Steam build
     /// </summary>
     public unsafe virtual int BasePriority()
     {

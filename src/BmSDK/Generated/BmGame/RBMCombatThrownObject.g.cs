@@ -118,7 +118,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWeaponSnatchAura;
     /// <summary>
-    /// Function: UpdateWeaponSnatchAura
+    /// Function: UpdateWeaponSnatchAura<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWeaponSnatchAura()
     {
@@ -139,7 +140,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBePickedUpByPlayer;
     /// <summary>
-    /// Function: CanBePickedUpByPlayer
+    /// Function: CanBePickedUpByPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46B900 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBePickedUpByPlayer()
     {
@@ -535,7 +537,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyGravityMultiplier;
     /// <summary>
-    /// Function: ApplyGravityMultiplier
+    /// Function: ApplyGravityMultiplier<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyGravityMultiplier()
     {
@@ -831,7 +834,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPickupLocation;
     /// <summary>
-    /// Function: SetPickupLocation
+    /// Function: SetPickupLocation<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPickupLocation()
     {
@@ -1045,7 +1049,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelDepthPriorityGroup;
     /// <summary>
-    /// Function: SetLevelDepthPriorityGroup
+    /// Function: SetLevelDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0x4D1900 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelDepthPriorityGroup(int DepthGroup)
     {
@@ -1067,7 +1072,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpeed;
     /// <summary>
-    /// Function: GetSpeed
+    /// Function: GetSpeed<br/>
+    /// Native code at BatmanAK.exe+0x479130 in the Steam build
     /// </summary>
     public unsafe virtual float GetSpeed()
     {
@@ -1088,7 +1094,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInRangeOfMagneticSurface;
     /// <summary>
-    /// Function: IsInRangeOfMagneticSurface
+    /// Function: IsInRangeOfMagneticSurface<br/>
+    /// Native code at BatmanAK.exe+0x4D1670 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 IsInRangeOfMagneticSurface(out System.Numerics.Vector3 SourceLocation, bool bInformMagneticSurface, out float Strength, out float ChargeTimer, out float ChargeDuration)
     {
@@ -1122,7 +1129,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyMagneticMultiplier;
     /// <summary>
-    /// Function: ApplyMagneticMultiplier
+    /// Function: ApplyMagneticMultiplier<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyMagneticMultiplier()
     {
@@ -1143,7 +1151,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyIfFallenOutOfWorld;
     /// <summary>
-    /// Function: DestroyIfFallenOutOfWorld
+    /// Function: DestroyIfFallenOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyIfFallenOutOfWorld()
     {
@@ -1164,7 +1173,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPawnCollision;
     /// <summary>
-    /// Function: CheckPawnCollision
+    /// Function: CheckPawnCollision<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CheckPawnCollision()
     {
@@ -1185,7 +1195,8 @@ public partial class RBMCombatThrownObject : BmSDK.Engine.KAsset, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContactModification;
     /// <summary>
-    /// Function: SetContactModification
+    /// Function: SetContactModification<br/>
+    /// Native code at BatmanAK.exe+0x4E95D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetContactModification(bool Enable)
     {

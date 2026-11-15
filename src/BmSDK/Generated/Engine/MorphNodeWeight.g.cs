@@ -80,7 +80,8 @@ public partial class MorphNodeWeight : BmSDK.Engine.MorphNodeWeightBase, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNodeWeight;
     /// <summary>
-    /// Function: SetNodeWeight
+    /// Function: SetNodeWeight<br/>
+    /// Native code at BatmanAK.exe+0xB57470 in the Steam build
     /// </summary>
     public unsafe virtual void SetNodeWeight(float NewWeight)
     {

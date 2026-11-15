@@ -94,7 +94,8 @@ public partial class RSeqAct_GetNumPawnsInVolume : BmSDK.Engine.SequenceAction, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnFromActor;
     /// <summary>
-    /// Function: GetPawnFromActor
+    /// Function: GetPawnFromActor<br/>
+    /// Native code at BatmanAK.exe+0x521620 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pawn GetPawnFromActor(BmSDK.Engine.Actor act)
     {
@@ -116,7 +117,8 @@ public partial class RSeqAct_GetNumPawnsInVolume : BmSDK.Engine.SequenceAction, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPawns;
     /// <summary>
-    /// Function: CheckPawns
+    /// Function: CheckPawns<br/>
+    /// Native code at BatmanAK.exe+0x4E48F0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckPawns(bool bForceEncompassCheck)
     {
@@ -138,7 +140,8 @@ public partial class RSeqAct_GetNumPawnsInVolume : BmSDK.Engine.SequenceAction, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldCheckPawn;
     /// <summary>
-    /// Function: ShouldCheckPawn
+    /// Function: ShouldCheckPawn<br/>
+    /// Native code at BatmanAK.exe+0x4E47B0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldCheckPawn(BmSDK.BmGame.RPawnCharacter TestPawn)
     {

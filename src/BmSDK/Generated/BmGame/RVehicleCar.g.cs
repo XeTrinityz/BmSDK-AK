@@ -259,7 +259,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesImpactHitWeakSpot;
     /// <summary>
-    /// Function: DoesImpactHitWeakSpot
+    /// Function: DoesImpactHitWeakSpot<br/>
+    /// Native code at BatmanAK.exe+0x49A080 in the Steam build
     /// </summary>
     public unsafe override bool DoesImpactHitWeakSpot(System.Numerics.Vector3 WorldImpactPos)
     {
@@ -398,7 +399,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventCrushBatman;
     /// <summary>
-    /// Function: PreventCrushBatman
+    /// Function: PreventCrushBatman<br/>
+    /// Native code at BatmanAK.exe+0x49A1F0 in the Steam build
     /// </summary>
     public unsafe virtual void PreventCrushBatman()
     {
@@ -419,7 +421,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveDirect;
     /// <summary>
-    /// Function: SelfDriveDirect
+    /// Function: SelfDriveDirect<br/>
+    /// Native code at BatmanAK.exe+0x4F4870 in the Steam build
     /// </summary>
     public unsafe override bool SelfDriveDirect(float DeltaTime, System.Numerics.Vector3 Destination, float MaintainDistance)
     {
@@ -443,7 +446,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {
@@ -465,7 +469,8 @@ public partial class RVehicleCar : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveAsync;
     /// <summary>
-    /// Function: SelfDriveAsync
+    /// Function: SelfDriveAsync<br/>
+    /// Native code at BatmanAK.exe+0x4F4600 in the Steam build
     /// </summary>
     public unsafe override void SelfDriveAsync(float DeltaTime)
     {

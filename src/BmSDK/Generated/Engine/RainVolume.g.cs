@@ -109,7 +109,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRainDensity;
     /// <summary>
-    /// Function: GetRainDensity
+    /// Function: GetRainDensity<br/>
+    /// Native code at BatmanAK.exe+0xB42890 in the Steam build
     /// </summary>
     public unsafe override float GetRainDensity()
     {
@@ -130,7 +131,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LocationRainHeight;
     /// <summary>
-    /// Function: LocationRainHeight
+    /// Function: LocationRainHeight<br/>
+    /// Native code at BatmanAK.exe+0xB39800 in the Steam build
     /// </summary>
     public unsafe override float LocationRainHeight(System.Numerics.Vector3 TestLocation)
     {
@@ -152,7 +154,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DistanceToRainZ;
     /// <summary>
-    /// Function: DistanceToRainZ
+    /// Function: DistanceToRainZ<br/>
+    /// Native code at BatmanAK.exe+0xB39760 in the Steam build
     /// </summary>
     public unsafe override float DistanceToRainZ(System.Numerics.Vector3 TestLocation)
     {
@@ -174,7 +177,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPuddleDepth;
     /// <summary>
-    /// Function: GetLocationPuddleDepth
+    /// Function: GetLocationPuddleDepth<br/>
+    /// Native code at BatmanAK.exe+0xB396C0 in the Steam build
     /// </summary>
     public unsafe override float GetLocationPuddleDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -196,7 +200,8 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationRaining;
     /// <summary>
-    /// Function: IsLocationRaining
+    /// Function: IsLocationRaining<br/>
+    /// Native code at BatmanAK.exe+0xB39620 in the Steam build
     /// </summary>
     public unsafe override bool IsLocationRaining(System.Numerics.Vector3 TestLocation)
     {

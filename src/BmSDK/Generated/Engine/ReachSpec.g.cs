@@ -100,7 +100,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDirection;
     /// <summary>
-    /// Function: GetDirection
+    /// Function: GetDirection<br/>
+    /// Native code at BatmanAK.exe+0x9DB510 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDirection()
     {
@@ -121,7 +122,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEnd;
     /// <summary>
-    /// Function: GetEnd
+    /// Function: GetEnd<br/>
+    /// Native code at BatmanAK.exe+0x9DB370 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavigationPoint GetEnd()
     {
@@ -142,7 +144,8 @@ public partial class ReachSpec : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CostFor;
     /// <summary>
-    /// Function: CostFor
+    /// Function: CostFor<br/>
+    /// Native code at BatmanAK.exe+0xB73150 in the Steam build
     /// </summary>
     public unsafe virtual int CostFor(BmSDK.Engine.Pawn P)
     {

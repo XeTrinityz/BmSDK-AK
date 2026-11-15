@@ -75,7 +75,8 @@ public partial class DistributionFloat : BmSDK.Component, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatValue;
     /// <summary>
-    /// Function: GetFloatValue
+    /// Function: GetFloatValue<br/>
+    /// Native code at BatmanAK.exe+0xF7A990 in the Steam build
     /// </summary>
     public unsafe virtual float GetFloatValue(float F = default)
     {

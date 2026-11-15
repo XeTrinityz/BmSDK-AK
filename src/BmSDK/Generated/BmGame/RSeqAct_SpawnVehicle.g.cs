@@ -94,7 +94,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnCars;
     /// <summary>
-    /// Function: SpawnCars
+    /// Function: SpawnCars<br/>
+    /// Native code at BatmanAK.exe+0x558190 in the Steam build
     /// </summary>
     public unsafe virtual bool SpawnCars(BmSDK.TArray<BmSDK.GameObject> SpawnPoints)
     {
@@ -174,7 +175,8 @@ public partial class RSeqAct_SpawnVehicle : BmSDK.BmGame.RSeqAct_SpawnVehicleBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreObjVar;
     /// <summary>
-    /// Function: StoreObjVar
+    /// Function: StoreObjVar<br/>
+    /// Native code at BatmanAK.exe+0x547F80 in the Steam build
     /// </summary>
     public unsafe virtual void StoreObjVar(BmSDK.FStringArg Ident, int Index, BmSDK.GameObject Obj)
     {

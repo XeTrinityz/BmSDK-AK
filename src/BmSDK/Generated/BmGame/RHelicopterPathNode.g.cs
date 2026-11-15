@@ -110,7 +110,8 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.Engine.E
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnLinkPath;
     /// <summary>
-    /// Function: UnLinkPath
+    /// Function: UnLinkPath<br/>
+    /// Native code at BatmanAK.exe+0x4BA9D0 in the Steam build
     /// </summary>
     public unsafe virtual void UnLinkPath(BmSDK.BmGame.RHelicopterPathNode Target)
     {
@@ -132,7 +133,8 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.Engine.E
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkPath;
     /// <summary>
-    /// Function: LinkPath
+    /// Function: LinkPath<br/>
+    /// Native code at BatmanAK.exe+0x4F8DF0 in the Steam build
     /// </summary>
     public unsafe virtual void LinkPath(BmSDK.BmGame.RHelicopterPathNode Target)
     {

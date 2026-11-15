@@ -75,7 +75,8 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueType;
     /// <summary>
-    /// Function: SetDialogueType
+    /// Function: SetDialogueType<br/>
+    /// Native code at BatmanAK.exe+0xB641C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDialogueType(BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -97,7 +98,8 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBarkFallback;
     /// <summary>
-    /// Function: IsBarkFallback
+    /// Function: IsBarkFallback<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBarkFallback()
     {
@@ -118,7 +120,8 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineVoice;
     /// <summary>
-    /// Function: GetLineVoice
+    /// Function: GetLineVoice<br/>
+    /// Native code at BatmanAK.exe+0xB36360 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetLineVoice()
     {
@@ -139,7 +142,8 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayCount;
     /// <summary>
-    /// Function: GetPlayCount
+    /// Function: GetPlayCount<br/>
+    /// Native code at BatmanAK.exe+0xB3E570 in the Steam build
     /// </summary>
     public unsafe virtual float GetPlayCount()
     {

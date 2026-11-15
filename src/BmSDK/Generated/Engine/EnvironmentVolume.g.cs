@@ -122,7 +122,8 @@ public partial class EnvironmentVolume : BmSDK.Engine.Volume, BmSDK.Engine.Inter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSplitNavMesh;
     /// <summary>
-    /// Function: SetSplitNavMesh
+    /// Function: SetSplitNavMesh<br/>
+    /// Native code at BatmanAK.exe+0xB4E480 in the Steam build
     /// </summary>
     public unsafe virtual void SetSplitNavMesh(bool bNewValue)
     {

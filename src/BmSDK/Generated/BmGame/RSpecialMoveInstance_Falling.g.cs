@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFallAnim;
     /// <summary>
-    /// Function: UpdateFallAnim
+    /// Function: UpdateFallAnim<br/>
+    /// Native code at BatmanAK.exe+0x4DF130 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFallAnim(float DeltaTime, float FallScale = default)
     {

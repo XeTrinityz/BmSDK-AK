@@ -99,7 +99,8 @@ public partial class RGFxMovieUI_StorySynopsis : BmSDK.BmGame.RGFxMovieUI, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_LoadSynopsisPackageSF;
     /// <summary>
-    /// Function: XI_LoadSynopsisPackageSF
+    /// Function: XI_LoadSynopsisPackageSF<br/>
+    /// Native code at BatmanAK.exe+0x547C20 in the Steam build
     /// </summary>
     public unsafe virtual bool XI_LoadSynopsisPackageSF(BmSDK.FStringArg sPackage, BmSDK.FStringArg sCallback)
     {
@@ -124,7 +125,8 @@ public partial class RGFxMovieUI_StorySynopsis : BmSDK.BmGame.RGFxMovieUI, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSynopsisPackagesSF;
     /// <summary>
-    /// Function: CancelSynopsisPackagesSF
+    /// Function: CancelSynopsisPackagesSF<br/>
+    /// Native code at BatmanAK.exe+0x498500 in the Steam build
     /// </summary>
     public unsafe virtual void CancelSynopsisPackagesSF()
     {

@@ -75,7 +75,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelDepthPriorityGroup;
     /// <summary>
-    /// Function: SetLevelDepthPriorityGroup
+    /// Function: SetLevelDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0x4A6EE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelDepthPriorityGroup(int DepthGroup)
     {
@@ -810,7 +811,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeSeenByBatsForXray;
     /// <summary>
-    /// Function: CanBeSeenByBatsForXray
+    /// Function: CanBeSeenByBatsForXray<br/>
+    /// Native code at BatmanAK.exe+0x46B4B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeSeenByBatsForXray()
     {
@@ -831,7 +833,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXRayVisibility;
     /// <summary>
-    /// Function: UpdateXRayVisibility
+    /// Function: UpdateXRayVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4A6DB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateXRayVisibility(float DeltaTime)
     {
@@ -1443,7 +1446,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelBarkSetLoading;
     /// <summary>
-    /// Function: CancelBarkSetLoading
+    /// Function: CancelBarkSetLoading<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void CancelBarkSetLoading()
     {
@@ -1464,7 +1468,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitBarkSet;
     /// <summary>
-    /// Function: InitBarkSet
+    /// Function: InitBarkSet<br/>
+    /// Native code at BatmanAK.exe+0x46B460 in the Steam build
     /// </summary>
     public unsafe virtual bool InitBarkSet()
     {
@@ -1485,7 +1490,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadBarkSet;
     /// <summary>
-    /// Function: LoadBarkSet
+    /// Function: LoadBarkSet<br/>
+    /// Native code at BatmanAK.exe+0x537AB0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadBarkSet(BmSDK.FStringArg BarkSetString)
     {
@@ -1508,7 +1514,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelPairedAnimsetLoadingBot;
     /// <summary>
-    /// Function: CancelPairedAnimsetLoadingBot
+    /// Function: CancelPairedAnimsetLoadingBot<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void CancelPairedAnimsetLoadingBot()
     {
@@ -1529,7 +1536,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPairedAnimsetForBot;
     /// <summary>
-    /// Function: LoadPairedAnimsetForBot
+    /// Function: LoadPairedAnimsetForBot<br/>
+    /// Native code at BatmanAK.exe+0x46B410 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadPairedAnimsetForBot()
     {
@@ -1550,7 +1558,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelPairedAnimsetLoading;
     /// <summary>
-    /// Function: CancelPairedAnimsetLoading
+    /// Function: CancelPairedAnimsetLoading<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CancelPairedAnimsetLoading()
     {
@@ -1571,7 +1580,8 @@ public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPairedAnimsetForPlayer;
     /// <summary>
-    /// Function: LoadPairedAnimsetForPlayer
+    /// Function: LoadPairedAnimsetForPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46B3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadPairedAnimsetForPlayer()
     {

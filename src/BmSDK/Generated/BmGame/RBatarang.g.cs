@@ -108,7 +108,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceLevelLimits;
     /// <summary>
-    /// Function: TraceLevelLimits
+    /// Function: TraceLevelLimits<br/>
+    /// Native code at BatmanAK.exe+0x48EFC0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceLevelLimits(out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 CheckEnd, System.Numerics.Vector3 CheckStart)
     {
@@ -475,7 +476,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckBatarangRange;
     /// <summary>
-    /// Function: CheckBatarangRange
+    /// Function: CheckBatarangRange<br/>
+    /// Native code at BatmanAK.exe+0x50D410 in the Steam build
     /// </summary>
     public unsafe virtual float CheckBatarangRange(System.Numerics.Vector3 BatarangStartPos, float BatarangSpeed)
     {
@@ -498,7 +500,8 @@ public partial class RBatarang : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindInterceptDirection;
     /// <summary>
-    /// Function: FindInterceptDirection
+    /// Function: FindInterceptDirection<br/>
+    /// Native code at BatmanAK.exe+0x50D220 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindInterceptDirection(System.Numerics.Vector3 BatarangStartPos, float BatarangSpeed, System.Numerics.Vector3 BatarangTargetPosition, System.Numerics.Vector3 BatarangTargetVelocity)
     {

@@ -95,7 +95,8 @@ public partial class RDeadBody : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMeshes;
     /// <summary>
-    /// Function: InitMeshes
+    /// Function: InitMeshes<br/>
+    /// Native code at BatmanAK.exe+0x48AC10 in the Steam build
     /// </summary>
     public unsafe virtual void InitMeshes()
     {

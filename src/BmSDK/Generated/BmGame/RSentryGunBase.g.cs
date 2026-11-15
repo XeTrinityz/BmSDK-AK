@@ -1279,7 +1279,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootOrientation;
     /// <summary>
-    /// Function: GetRotationRootOrientation
+    /// Function: GetRotationRootOrientation<br/>
+    /// Native code at BatmanAK.exe+0x48C3A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotationRootOrientation()
     {
@@ -1300,7 +1301,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootLocation;
     /// <summary>
-    /// Function: GetRotationRootLocation
+    /// Function: GetRotationRootLocation<br/>
+    /// Native code at BatmanAK.exe+0x48C340 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRotationRootLocation()
     {
@@ -1321,7 +1323,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextAimTargetIndex;
     /// <summary>
-    /// Function: GetNextAimTargetIndex
+    /// Function: GetNextAimTargetIndex<br/>
+    /// Native code at BatmanAK.exe+0x48C2F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNextAimTargetIndex()
     {
@@ -1342,7 +1345,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestAimTarget;
     /// <summary>
-    /// Function: GetClosestAimTarget
+    /// Function: GetClosestAimTarget<br/>
+    /// Native code at BatmanAK.exe+0x48C2A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetClosestAimTarget()
     {
@@ -1363,7 +1367,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerVis;
     /// <summary>
-    /// Function: UpdatePlayerVis
+    /// Function: UpdatePlayerVis<br/>
+    /// Native code at BatmanAK.exe+0x504260 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdatePlayerVis(BmSDK.Engine.Actor actorToTest)
     {
@@ -1385,7 +1390,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllRobotsInCone;
     /// <summary>
-    /// Function: GetAllRobotsInCone
+    /// Function: GetAllRobotsInCone<br/>
+    /// Native code at BatmanAK.exe+0x564120 in the Steam build
     /// </summary>
     public unsafe virtual void GetAllRobotsInCone(out BmSDK.TArray<BmSDK.BmGame.RPawnVillainThug> activeRobots)
     {
@@ -1407,7 +1413,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCurrentRotationRate;
     /// <summary>
-    /// Function: UpdateCurrentRotationRate
+    /// Function: UpdateCurrentRotationRate<br/>
+    /// Native code at BatmanAK.exe+0x504130 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCurrentRotationRate(float DeltaTime)
     {
@@ -1429,7 +1436,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeTillMaxRotationRate;
     /// <summary>
-    /// Function: GetTimeTillMaxRotationRate
+    /// Function: GetTimeTillMaxRotationRate<br/>
+    /// Native code at BatmanAK.exe+0x48C250 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeTillMaxRotationRate()
     {
@@ -1450,7 +1458,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootCustom;
     /// <summary>
-    /// Function: CanShootCustom
+    /// Function: CanShootCustom<br/>
+    /// Native code at BatmanAK.exe+0x48C200 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShootCustom()
     {
@@ -1471,7 +1480,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootPlayer;
     /// <summary>
-    /// Function: CanShootPlayer
+    /// Function: CanShootPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46BBB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShootPlayer()
     {
@@ -1492,7 +1502,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOrientation;
     /// <summary>
-    /// Function: UpdateOrientation
+    /// Function: UpdateOrientation<br/>
+    /// Native code at BatmanAK.exe+0x504000 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateOrientation(float DeltaTime)
     {
@@ -1514,7 +1525,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightMode;
     /// <summary>
-    /// Function: SetLightMode
+    /// Function: SetLightMode<br/>
+    /// Native code at BatmanAK.exe+0x48C180 in the Steam build
     /// </summary>
     public unsafe virtual void SetLightMode(BmSDK.BmGame.RSentryGunLightsBase.eLightMode lightMode)
     {
@@ -1536,7 +1548,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLight;
     /// <summary>
-    /// Function: UpdateLight
+    /// Function: UpdateLight<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLight()
     {
@@ -1557,7 +1570,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopFiringSound;
     /// <summary>
-    /// Function: StopFiringSound
+    /// Function: StopFiringSound<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void StopFiringSound()
     {
@@ -1578,7 +1592,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFiringSound;
     /// <summary>
-    /// Function: StartFiringSound
+    /// Function: StartFiringSound<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void StartFiringSound()
     {
@@ -1599,7 +1614,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRobotAttacking;
     /// <summary>
-    /// Function: UpdateRobotAttacking
+    /// Function: UpdateRobotAttacking<br/>
+    /// Native code at BatmanAK.exe+0x50E0A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRobotAttacking(float DeltaTime)
     {
@@ -1621,7 +1637,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPoweredDown;
     /// <summary>
-    /// Function: IsPoweredDown
+    /// Function: IsPoweredDown<br/>
+    /// Native code at BatmanAK.exe+0x489B00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPoweredDown()
     {
@@ -1642,7 +1659,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
-    /// Function: IsBlinded
+    /// Function: IsBlinded<br/>
+    /// Native code at BatmanAK.exe+0x46BA20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBlinded()
     {
@@ -1663,7 +1681,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBlindedTimeRemaining;
     /// <summary>
-    /// Function: GetBlindedTimeRemaining
+    /// Function: GetBlindedTimeRemaining<br/>
+    /// Native code at BatmanAK.exe+0x48C0F0 in the Steam build
     /// </summary>
     public unsafe virtual float GetBlindedTimeRemaining()
     {
@@ -1684,7 +1703,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
-    /// Function: GetFOVCheckLocation
+    /// Function: GetFOVCheckLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
@@ -1705,7 +1725,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -1728,7 +1749,8 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RaycastForLightRadius;
     /// <summary>
-    /// Function: RaycastForLightRadius
+    /// Function: RaycastForLightRadius<br/>
+    /// Native code at BatmanAK.exe+0x48C0A0 in the Steam build
     /// </summary>
     public unsafe virtual float RaycastForLightRadius()
     {

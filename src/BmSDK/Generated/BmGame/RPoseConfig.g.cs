@@ -80,7 +80,8 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToString;
     /// <summary>
-    /// Function: ToString
+    /// Function: ToString<br/>
+    /// Native code at BatmanAK.exe+0x53ACD0 in the Steam build
     /// </summary>
     public unsafe new virtual BmSDK.FString ToString()
     {

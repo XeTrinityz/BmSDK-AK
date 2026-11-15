@@ -80,7 +80,8 @@ public partial class RAnimNode_VehicleMotionExtraction : BmSDK.Engine.AnimNodeSe
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
-    /// Function: PlayAnim
+    /// Function: PlayAnim<br/>
+    /// Native code at BatmanAK.exe+0x46AA30 in the Steam build
     /// </summary>
     public unsafe override void PlayAnim(bool bLoop = default, float InRate = default, float StartTime = default)
     {

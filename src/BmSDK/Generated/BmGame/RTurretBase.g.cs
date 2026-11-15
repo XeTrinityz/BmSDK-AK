@@ -123,7 +123,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingOrigin;
     /// <summary>
-    /// Function: GetTrackingOrigin
+    /// Function: GetTrackingOrigin<br/>
+    /// Native code at BatmanAK.exe+0x46EB40 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTrackingOrigin()
     {
@@ -200,7 +201,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisrupted;
     /// <summary>
-    /// Function: IsDisrupted
+    /// Function: IsDisrupted<br/>
+    /// Native code at BatmanAK.exe+0x46EEE0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDisrupted()
     {
@@ -351,7 +353,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveTarget;
     /// <summary>
-    /// Function: RemoveTarget
+    /// Function: RemoveTarget<br/>
+    /// Native code at BatmanAK.exe+0x4B1AE0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveTarget(int Index)
     {
@@ -373,7 +376,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveTargetFromList;
     /// <summary>
-    /// Function: RemoveTargetFromList
+    /// Function: RemoveTargetFromList<br/>
+    /// Native code at BatmanAK.exe+0x4BA4D0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveTargetFromList(BmSDK.Engine.Actor ActorToRemove)
     {
@@ -395,7 +399,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForBMInVolume;
     /// <summary>
-    /// Function: CheckForBMInVolume
+    /// Function: CheckForBMInVolume<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForBMInVolume()
     {
@@ -495,7 +500,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestTargetIndex;
     /// <summary>
-    /// Function: GetClosestTargetIndex
+    /// Function: GetClosestTargetIndex<br/>
+    /// Native code at BatmanAK.exe+0x46EE50 in the Steam build
     /// </summary>
     public unsafe virtual int GetClosestTargetIndex()
     {
@@ -600,7 +606,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootOrientation;
     /// <summary>
-    /// Function: GetRotationRootOrientation
+    /// Function: GetRotationRootOrientation<br/>
+    /// Native code at BatmanAK.exe+0x46EDF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotationRootOrientation()
     {
@@ -621,7 +628,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootLocation;
     /// <summary>
-    /// Function: GetRotationRootLocation
+    /// Function: GetRotationRootLocation<br/>
+    /// Native code at BatmanAK.exe+0x46ED90 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRotationRootLocation()
     {
@@ -642,7 +650,8 @@ public partial class RTurretBase : BmSDK.BmGame.RTrackingSecurityCameraBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootAtCurrentTarget;
     /// <summary>
-    /// Function: CanShootAtCurrentTarget
+    /// Function: CanShootAtCurrentTarget<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShootAtCurrentTarget()
     {

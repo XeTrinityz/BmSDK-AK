@@ -119,7 +119,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AlignLineLauncherSwingToRoadNetwork;
     /// <summary>
-    /// Function: AlignLineLauncherSwingToRoadNetwork
+    /// Function: AlignLineLauncherSwingToRoadNetwork<br/>
+    /// Native code at BatmanAK.exe+0x492A80 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AlignLineLauncherSwingToRoadNetwork(System.Numerics.Vector3 SwingLocation, System.Numerics.Vector3 SwingDirection)
     {
@@ -199,7 +200,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckToBreakRope;
     /// <summary>
-    /// Function: CheckToBreakRope
+    /// Function: CheckToBreakRope<br/>
+    /// Native code at BatmanAK.exe+0x50F760 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckToBreakRope(System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos, bool OnlyCheckInterpActorsInFront, bool DoAccuratePawnsTest)
     {
@@ -362,7 +364,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLineLaunchFearGasSafe;
     /// <summary>
-    /// Function: IsLineLaunchFearGasSafe
+    /// Function: IsLineLaunchFearGasSafe<br/>
+    /// Native code at BatmanAK.exe+0x4929A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLineLaunchFearGasSafe(System.Numerics.Vector3 vStartPoint, System.Numerics.Vector3 vEndPoint)
     {
@@ -385,7 +388,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLineLaunchOceanSafe;
     /// <summary>
-    /// Function: IsLineLaunchOceanSafe
+    /// Function: IsLineLaunchOceanSafe<br/>
+    /// Native code at BatmanAK.exe+0x4928C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLineLaunchOceanSafe(System.Numerics.Vector3 vStartPoint, System.Numerics.Vector3 vEndPoint)
     {
@@ -408,7 +412,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceForOutOfBounds;
     /// <summary>
-    /// Function: TraceForOutOfBounds
+    /// Function: TraceForOutOfBounds<br/>
+    /// Native code at BatmanAK.exe+0x4927E0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceForOutOfBounds(System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
@@ -431,7 +436,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceForHostageTakers;
     /// <summary>
-    /// Function: TraceForHostageTakers
+    /// Function: TraceForHostageTakers<br/>
+    /// Native code at BatmanAK.exe+0x492700 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceForHostageTakers(System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
@@ -454,7 +460,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGuidingVolume;
     /// <summary>
-    /// Function: TraceGuidingVolume
+    /// Function: TraceGuidingVolume<br/>
+    /// Native code at BatmanAK.exe+0x4925C0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceGuidingVolume(System.Numerics.Vector3 PlayerLocation, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.BmGame.RLineLauncherGuidingVolume GuidingVolume)
     {
@@ -481,7 +488,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceRescueVolume;
     /// <summary>
-    /// Function: TraceRescueVolume
+    /// Function: TraceRescueVolume<br/>
+    /// Native code at BatmanAK.exe+0x492450 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceRescueVolume(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.BmGame.RLineLauncherRescueVolume HostagePickupVolume, out BmSDK.BmGame.RLineLauncherRescueVolume RescueSafeZoneVolume)
     {
@@ -510,7 +518,8 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineLauncherTetherPoints;
     /// <summary>
-    /// Function: GetLineLauncherTetherPoints
+    /// Function: GetLineLauncherTetherPoints<br/>
+    /// Native code at BatmanAK.exe+0x492160 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLineLauncherTetherPoints(out System.Numerics.Vector3 RearPoint, out System.Numerics.Vector3 FrontPoint, out System.Numerics.Vector3 ActorStartPoint, out System.Numerics.Vector3 ActorEndPoint, System.Numerics.Vector3 CurrentPosition, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 CurrentFacing, System.Numerics.Vector3 TargetLoc = default, bool bDebugTrace = default)
     {

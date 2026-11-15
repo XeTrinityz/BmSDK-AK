@@ -105,7 +105,8 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNewGamePlus;
     /// <summary>
-    /// Function: IsNewGamePlus
+    /// Function: IsNewGamePlus<br/>
+    /// Native code at BatmanAK.exe+0x48D6A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNewGamePlus()
     {
@@ -126,7 +127,8 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateNewGamePlus;
     /// <summary>
-    /// Function: UpdateNewGamePlus
+    /// Function: UpdateNewGamePlus<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateNewGamePlus()
     {

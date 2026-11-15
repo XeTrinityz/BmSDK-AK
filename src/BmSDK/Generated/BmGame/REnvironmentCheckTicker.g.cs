@@ -94,7 +94,8 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FrontBarrierIsEdge;
     /// <summary>
-    /// Function: FrontBarrierIsEdge
+    /// Function: FrontBarrierIsEdge<br/>
+    /// Native code at BatmanAK.exe+0x474A80 in the Steam build
     /// </summary>
     public unsafe virtual bool FrontBarrierIsEdge()
     {
@@ -115,7 +116,8 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShimmyEnv;
     /// <summary>
-    /// Function: UpdateShimmyEnv
+    /// Function: UpdateShimmyEnv<br/>
+    /// Native code at BatmanAK.exe+0x4C3450 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateShimmyEnv(float CollisionHeight, float CollisionRadius, float DeltaTime, bool bForClimbingDown = default)
     {
@@ -140,7 +142,8 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSurroundingEnvironment;
     /// <summary>
-    /// Function: CheckSurroundingEnvironment
+    /// Function: CheckSurroundingEnvironment<br/>
+    /// Native code at BatmanAK.exe+0x4C3130 in the Steam build
     /// </summary>
     public unsafe virtual void CheckSurroundingEnvironment(float CollisionHeight, float CollisionRadius, float DeltaTime, BmSDK.Engine.PrimitiveComponent HintPrimitive = default)
     {

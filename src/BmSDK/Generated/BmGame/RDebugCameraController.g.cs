@@ -223,7 +223,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFocusSettings;
     /// <summary>
-    /// Function: UpdateFocusSettings
+    /// Function: UpdateFocusSettings<br/>
+    /// Native code at BatmanAK.exe+0x47A400 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFocusSettings()
     {
@@ -709,7 +710,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Set360ShotFileName;
     /// <summary>
-    /// Function: Set360ShotFileName
+    /// Function: Set360ShotFileName<br/>
+    /// Native code at BatmanAK.exe+0x4D3A10 in the Steam build
     /// </summary>
     public unsafe virtual void Set360ShotFileName(out int Series, int Index, bool bOrbit)
     {
@@ -735,7 +737,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOrbitCamera;
     /// <summary>
-    /// Function: SetOrbitCamera
+    /// Function: SetOrbitCamera<br/>
+    /// Native code at BatmanAK.exe+0x4D3780 in the Steam build
     /// </summary>
     public unsafe virtual void SetOrbitCamera(System.Numerics.Vector3 Pivot, System.Numerics.Vector3 StartPos, BmSDK.Rotator StartRotation, float fOrbitPos, bool bOrbitOnXYPlane)
     {
@@ -761,7 +764,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnCamera;
     /// <summary>
-    /// Function: TurnCamera
+    /// Function: TurnCamera<br/>
+    /// Native code at BatmanAK.exe+0x47A370 in the Steam build
     /// </summary>
     public unsafe virtual void TurnCamera(BmSDK.Rotator R)
     {
@@ -1164,7 +1168,8 @@ public partial class RDebugCameraController : BmSDK.Engine.DebugCameraController
 
     private static BmSDK.Function __fn_UpdateBatmansCapeInternal;
     /// <summary>
-    /// Function: UpdateBatmansCapeInternal
+    /// Function: UpdateBatmansCapeInternal<br/>
+    /// Native code at BatmanAK.exe+0x4D3650 in the Steam build
     /// </summary>
     public unsafe void UpdateBatmansCapeInternal(BmSDK.BmGame.RCapeComponent CapeComponent)
     {

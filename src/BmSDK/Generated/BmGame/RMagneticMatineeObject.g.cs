@@ -166,7 +166,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCaches;
     /// <summary>
-    /// Function: UpdateCaches
+    /// Function: UpdateCaches<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCaches()
     {
@@ -187,7 +188,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatineeToInitialPosition;
     /// <summary>
-    /// Function: SetMatineeToInitialPosition
+    /// Function: SetMatineeToInitialPosition<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void SetMatineeToInitialPosition()
     {
@@ -208,7 +210,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtractMatineeEvents;
     /// <summary>
-    /// Function: ExtractMatineeEvents
+    /// Function: ExtractMatineeEvents<br/>
+    /// Native code at BatmanAK.exe+0x46B460 in the Steam build
     /// </summary>
     public unsafe virtual bool ExtractMatineeEvents()
     {
@@ -229,7 +232,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineeLength;
     /// <summary>
-    /// Function: GetMatineeLength
+    /// Function: GetMatineeLength<br/>
+    /// Native code at BatmanAK.exe+0x493990 in the Steam build
     /// </summary>
     public unsafe virtual float GetMatineeLength()
     {
@@ -250,7 +254,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineePosition;
     /// <summary>
-    /// Function: GetMatineePosition
+    /// Function: GetMatineePosition<br/>
+    /// Native code at BatmanAK.exe+0x493940 in the Steam build
     /// </summary>
     public unsafe virtual float GetMatineePosition()
     {
@@ -271,7 +276,8 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StepMatinee;
     /// <summary>
-    /// Function: StepMatinee
+    /// Function: StepMatinee<br/>
+    /// Native code at BatmanAK.exe+0x5108C0 in the Steam build
     /// </summary>
     public unsafe virtual bool StepMatinee(float DeltaTime)
     {

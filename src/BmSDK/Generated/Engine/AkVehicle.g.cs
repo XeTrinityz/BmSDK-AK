@@ -108,7 +108,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioRemoteWheelSpin;
     /// <summary>
-    /// Function: AudioRemoteWheelSpin
+    /// Function: AudioRemoteWheelSpin<br/>
+    /// Native code at BatmanAK.exe+0xB8DDA0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioRemoteWheelSpin(bool Active)
     {
@@ -130,7 +131,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioRemoteCalledIn;
     /// <summary>
-    /// Function: AudioRemoteCalledIn
+    /// Function: AudioRemoteCalledIn<br/>
+    /// Native code at BatmanAK.exe+0xB8DC80 in the Steam build
     /// </summary>
     public unsafe virtual void AudioRemoteCalledIn(bool remoting)
     {
@@ -259,7 +261,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioSkidToStop;
     /// <summary>
-    /// Function: AudioSkidToStop
+    /// Function: AudioSkidToStop<br/>
+    /// Native code at BatmanAK.exe+0xB8DB50 in the Steam build
     /// </summary>
     public unsafe virtual void AudioSkidToStop(float timeBeforeSkidStops)
     {
@@ -281,7 +284,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioSetDrivingHillFactor;
     /// <summary>
-    /// Function: AudioSetDrivingHillFactor
+    /// Function: AudioSetDrivingHillFactor<br/>
+    /// Native code at BatmanAK.exe+0xB8DA20 in the Steam build
     /// </summary>
     public unsafe virtual void AudioSetDrivingHillFactor(float factor)
     {
@@ -303,7 +307,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioSetDrivingMode;
     /// <summary>
-    /// Function: AudioSetDrivingMode
+    /// Function: AudioSetDrivingMode<br/>
+    /// Native code at BatmanAK.exe+0xB44BE0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioSetDrivingMode(BmSDK.Engine.AkVehicleSoundInfo.EDrivingModes DrivingMode)
     {
@@ -325,7 +330,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioVehicleHasBeenTeleported;
     /// <summary>
-    /// Function: AudioVehicleHasBeenTeleported
+    /// Function: AudioVehicleHasBeenTeleported<br/>
+    /// Native code at BatmanAK.exe+0xB8D8F0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioVehicleHasBeenTeleported(float SecondToSettle)
     {
@@ -347,7 +353,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetClutch;
     /// <summary>
-    /// Function: AudioGetClutch
+    /// Function: AudioGetClutch<br/>
+    /// Native code at BatmanAK.exe+0xB44B90 in the Steam build
     /// </summary>
     public unsafe virtual bool AudioGetClutch()
     {
@@ -368,7 +375,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioSquealing;
     /// <summary>
-    /// Function: AudioSquealing
+    /// Function: AudioSquealing<br/>
+    /// Native code at BatmanAK.exe+0xB8D7C0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioSquealing(float squealAmount)
     {
@@ -390,7 +398,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioDrifting;
     /// <summary>
-    /// Function: AudioDrifting
+    /// Function: AudioDrifting<br/>
+    /// Native code at BatmanAK.exe+0xB8CCA0 in the Steam build
     /// </summary>
     public unsafe override void AudioDrifting(bool isDrifting)
     {
@@ -412,7 +421,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioWheelSpinning;
     /// <summary>
-    /// Function: AudioWheelSpinning
+    /// Function: AudioWheelSpinning<br/>
+    /// Native code at BatmanAK.exe+0xB8CB80 in the Steam build
     /// </summary>
     public unsafe override void AudioWheelSpinning(bool setWheelSpinning)
     {
@@ -434,7 +444,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioForceBrake;
     /// <summary>
-    /// Function: AudioForceBrake
+    /// Function: AudioForceBrake<br/>
+    /// Native code at BatmanAK.exe+0xB8D6A0 in the Steam build
     /// </summary>
     public unsafe virtual void AudioForceBrake(bool setForceBrake)
     {
@@ -456,7 +467,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopAllWheels;
     /// <summary>
-    /// Function: AudioStopAllWheels
+    /// Function: AudioStopAllWheels<br/>
+    /// Native code at BatmanAK.exe+0xB44730 in the Steam build
     /// </summary>
     public unsafe override void AudioStopAllWheels()
     {
@@ -477,7 +489,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopWheelSqueal;
     /// <summary>
-    /// Function: AudioStopWheelSqueal
+    /// Function: AudioStopWheelSqueal<br/>
+    /// Native code at BatmanAK.exe+0xB8CA50 in the Steam build
     /// </summary>
     public unsafe override void AudioStopWheelSqueal(BmSDK.FName WheelBone)
     {
@@ -499,7 +512,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioUpdateWheelSqueal;
     /// <summary>
-    /// Function: AudioUpdateWheelSqueal
+    /// Function: AudioUpdateWheelSqueal<br/>
+    /// Native code at BatmanAK.exe+0xB8C850 in the Steam build
     /// </summary>
     public unsafe override void AudioUpdateWheelSqueal(BmSDK.FName WheelBone, float SquealValue)
     {
@@ -522,7 +536,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumSteerableWheelsOnGround;
     /// <summary>
-    /// Function: GetNumSteerableWheelsOnGround
+    /// Function: GetNumSteerableWheelsOnGround<br/>
+    /// Native code at BatmanAK.exe+0xB44B40 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumSteerableWheelsOnGround()
     {
@@ -543,7 +558,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumWheelsOnFlatGround;
     /// <summary>
-    /// Function: GetNumWheelsOnFlatGround
+    /// Function: GetNumWheelsOnFlatGround<br/>
+    /// Native code at BatmanAK.exe+0xB8D560 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumWheelsOnFlatGround(float flatNormalZ)
     {
@@ -565,7 +581,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumWheelsOnGround;
     /// <summary>
-    /// Function: GetNumWheelsOnGround
+    /// Function: GetNumWheelsOnGround<br/>
+    /// Native code at BatmanAK.exe+0xB44AF0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumWheelsOnGround()
     {
@@ -586,7 +603,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioVehicleRotating;
     /// <summary>
-    /// Function: AudioVehicleRotating
+    /// Function: AudioVehicleRotating<br/>
+    /// Native code at BatmanAK.exe+0x46A9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool AudioVehicleRotating()
     {
@@ -607,7 +625,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioAltGetForceWheelSpin;
     /// <summary>
-    /// Function: AudioAltGetForceWheelSpin
+    /// Function: AudioAltGetForceWheelSpin<br/>
+    /// Native code at BatmanAK.exe+0x47B4F0 in the Steam build
     /// </summary>
     public unsafe virtual bool AudioAltGetForceWheelSpin()
     {
@@ -628,7 +647,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetForceStop;
     /// <summary>
-    /// Function: AudioGetForceStop
+    /// Function: AudioGetForceStop<br/>
+    /// Native code at BatmanAK.exe+0x46A950 in the Steam build
     /// </summary>
     public unsafe virtual bool AudioGetForceStop()
     {
@@ -649,7 +669,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioAltRPMIsPriority;
     /// <summary>
-    /// Function: AudioAltRPMIsPriority
+    /// Function: AudioAltRPMIsPriority<br/>
+    /// Native code at BatmanAK.exe+0x4A3AA0 in the Steam build
     /// </summary>
     public unsafe virtual bool AudioAltRPMIsPriority(int Mode)
     {
@@ -671,7 +692,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetAlternateLoad;
     /// <summary>
-    /// Function: AudioGetAlternateLoad
+    /// Function: AudioGetAlternateLoad<br/>
+    /// Native code at BatmanAK.exe+0x4A3960 in the Steam build
     /// </summary>
     public unsafe virtual float AudioGetAlternateLoad(int Mode)
     {
@@ -693,7 +715,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetAlternateRPMVector;
     /// <summary>
-    /// Function: AudioGetAlternateRPMVector
+    /// Function: AudioGetAlternateRPMVector<br/>
+    /// Native code at BatmanAK.exe+0x46A8F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AudioGetAlternateRPMVector()
     {
@@ -714,7 +737,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetAlternateRPM;
     /// <summary>
-    /// Function: AudioGetAlternateRPM
+    /// Function: AudioGetAlternateRPM<br/>
+    /// Native code at BatmanAK.exe+0x4A3820 in the Steam build
     /// </summary>
     public unsafe virtual float AudioGetAlternateRPM(int Mode)
     {
@@ -736,7 +760,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioInAlternativeMode;
     /// <summary>
-    /// Function: AudioInAlternativeMode
+    /// Function: AudioInAlternativeMode<br/>
+    /// Native code at BatmanAK.exe+0x47B2B0 in the Steam build
     /// </summary>
     public unsafe virtual int AudioInAlternativeMode()
     {
@@ -757,7 +782,8 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetRPM;
     /// <summary>
-    /// Function: AudioGetRPM
+    /// Function: AudioGetRPM<br/>
+    /// Native code at BatmanAK.exe+0xB44A40 in the Steam build
     /// </summary>
     public unsafe virtual float AudioGetRPM(bool unlerped = default)
     {

@@ -95,7 +95,8 @@ public partial class RRiotPointHolder : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifySpawnVolume;
     /// <summary>
-    /// Function: NotifySpawnVolume
+    /// Function: NotifySpawnVolume<br/>
+    /// Native code at BatmanAK.exe+0x46B3C0 in the Steam build
     /// </summary>
     public unsafe virtual bool NotifySpawnVolume()
     {

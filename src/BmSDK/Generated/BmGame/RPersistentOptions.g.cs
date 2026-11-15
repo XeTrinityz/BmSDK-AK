@@ -94,7 +94,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWBPlayRewardInHydra;
     /// <summary>
-    /// Function: SetWBPlayRewardInHydra
+    /// Function: SetWBPlayRewardInHydra<br/>
+    /// Native code at BatmanAK.exe+0x543600 in the Steam build
     /// </summary>
     public unsafe virtual void SetWBPlayRewardInHydra(BmSDK.FStringArg FlagName)
     {
@@ -117,7 +118,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWBPlayRewardFlagSet;
     /// <summary>
-    /// Function: IsWBPlayRewardFlagSet
+    /// Function: IsWBPlayRewardFlagSet<br/>
+    /// Native code at BatmanAK.exe+0x5434B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWBPlayRewardFlagSet(BmSDK.FStringArg FlagName)
     {
@@ -140,7 +142,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWBPlayRewardFlag;
     /// <summary>
-    /// Function: SetWBPlayRewardFlag
+    /// Function: SetWBPlayRewardFlag<br/>
+    /// Native code at BatmanAK.exe+0x5432C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetWBPlayRewardFlag(BmSDK.FStringArg FlagName, bool bTrue)
     {
@@ -164,7 +167,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimeStamp;
     /// <summary>
-    /// Function: UpdateTimeStamp
+    /// Function: UpdateTimeStamp<br/>
+    /// Native code at BatmanAK.exe+0xB50A70 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTimeStamp()
     {
@@ -1051,7 +1055,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Apply3DSettings;
     /// <summary>
-    /// Function: Apply3DSettings
+    /// Function: Apply3DSettings<br/>
+    /// Native code at BatmanAK.exe+0x496400 in the Steam build
     /// </summary>
     public unsafe virtual void Apply3DSettings()
     {
@@ -1072,7 +1077,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolumeMusic;
     /// <summary>
-    /// Function: SetVolumeMusic
+    /// Function: SetVolumeMusic<br/>
+    /// Native code at BatmanAK.exe+0x51A410 in the Steam build
     /// </summary>
     public unsafe virtual void SetVolumeMusic(float Value, bool UserNotify = default)
     {
@@ -1095,7 +1101,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumeMusic;
     /// <summary>
-    /// Function: GetVolumeMusic
+    /// Function: GetVolumeMusic<br/>
+    /// Native code at BatmanAK.exe+0xB2E270 in the Steam build
     /// </summary>
     public unsafe virtual int GetVolumeMusic()
     {
@@ -1130,7 +1137,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolumeDialogue;
     /// <summary>
-    /// Function: SetVolumeDialogue
+    /// Function: SetVolumeDialogue<br/>
+    /// Native code at BatmanAK.exe+0x51A290 in the Steam build
     /// </summary>
     public unsafe virtual void SetVolumeDialogue(float Value, bool UserNotify = default)
     {
@@ -1153,7 +1161,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumeDialogue;
     /// <summary>
-    /// Function: GetVolumeDialogue
+    /// Function: GetVolumeDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB3E610 in the Steam build
     /// </summary>
     public unsafe virtual int GetVolumeDialogue()
     {
@@ -1188,7 +1197,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolumeSFX;
     /// <summary>
-    /// Function: SetVolumeSFX
+    /// Function: SetVolumeSFX<br/>
+    /// Native code at BatmanAK.exe+0x51A110 in the Steam build
     /// </summary>
     public unsafe virtual void SetVolumeSFX(float Value, bool UserNotify = default)
     {
@@ -1211,7 +1221,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumeSFX;
     /// <summary>
-    /// Function: GetVolumeSFX
+    /// Function: GetVolumeSFX<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetVolumeSFX()
     {
@@ -1246,7 +1257,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPadSpeaker;
     /// <summary>
-    /// Function: SetPadSpeaker
+    /// Function: SetPadSpeaker<br/>
+    /// Native code at BatmanAK.exe+0x519FF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPadSpeaker(int Value)
     {
@@ -1268,7 +1280,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPadSpeaker;
     /// <summary>
-    /// Function: GetPadSpeaker
+    /// Function: GetPadSpeaker<br/>
+    /// Native code at BatmanAK.exe+0x5E94A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetPadSpeaker()
     {
@@ -1303,7 +1316,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGamma;
     /// <summary>
-    /// Function: SetGamma
+    /// Function: SetGamma<br/>
+    /// Native code at BatmanAK.exe+0x519EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetGamma(float Value)
     {
@@ -1325,7 +1339,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEngineGamma;
     /// <summary>
-    /// Function: GetEngineGamma
+    /// Function: GetEngineGamma<br/>
+    /// Native code at BatmanAK.exe+0x496780 in the Steam build
     /// </summary>
     public unsafe virtual float GetEngineGamma()
     {
@@ -1346,7 +1361,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGamma;
     /// <summary>
-    /// Function: GetGamma
+    /// Function: GetGamma<br/>
+    /// Native code at BatmanAK.exe+0x496730 in the Steam build
     /// </summary>
     public unsafe virtual float GetGamma()
     {
@@ -1381,7 +1397,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioDynRange;
     /// <summary>
-    /// Function: SetAudioDynRange
+    /// Function: SetAudioDynRange<br/>
+    /// Native code at BatmanAK.exe+0x519D50 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioDynRange(int Value, bool AutoSetPadSpeaker = default)
     {
@@ -1432,7 +1449,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnglishVoiceCast;
     /// <summary>
-    /// Function: SetEnglishVoiceCast
+    /// Function: SetEnglishVoiceCast<br/>
+    /// Native code at BatmanAK.exe+0x519C30 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnglishVoiceCast(int Value)
     {
@@ -1454,7 +1472,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEnglishVoiceCast;
     /// <summary>
-    /// Function: GetEnglishVoiceCast
+    /// Function: GetEnglishVoiceCast<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual int GetEnglishVoiceCast()
     {
@@ -1927,7 +1946,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeNew;
     /// <summary>
-    /// Function: SetChallengeNew
+    /// Function: SetChallengeNew<br/>
+    /// Native code at BatmanAK.exe+0x519A50 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeNew(int ChallengeID, bool bNew)
     {
@@ -1950,7 +1970,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeAwarded;
     /// <summary>
-    /// Function: SetChallengeAwarded
+    /// Function: SetChallengeAwarded<br/>
+    /// Native code at BatmanAK.exe+0x519870 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeAwarded(int ChallengeID, bool bAwarded)
     {
@@ -1973,7 +1994,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeDirty;
     /// <summary>
-    /// Function: SetChallengeDirty
+    /// Function: SetChallengeDirty<br/>
+    /// Native code at BatmanAK.exe+0x519690 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeDirty(int ChallengeID, bool bDirty)
     {
@@ -1996,7 +2018,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeRequirementMet;
     /// <summary>
-    /// Function: SetChallengeRequirementMet
+    /// Function: SetChallengeRequirementMet<br/>
+    /// Native code at BatmanAK.exe+0x5193F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeRequirementMet(int ChallengeID, int Requirement, bool bMet)
     {
@@ -2020,7 +2043,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeUnlocked;
     /// <summary>
-    /// Function: SetChallengeUnlocked
+    /// Function: SetChallengeUnlocked<br/>
+    /// Native code at BatmanAK.exe+0x519210 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeUnlocked(int ChallengeID, bool bUnlocked)
     {
@@ -2043,7 +2067,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeRevealed;
     /// <summary>
-    /// Function: SetChallengeRevealed
+    /// Function: SetChallengeRevealed<br/>
+    /// Native code at BatmanAK.exe+0x519030 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeRevealed(int ChallengeID, bool bRevealed)
     {
@@ -2066,7 +2091,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeActiveCharacter;
     /// <summary>
-    /// Function: SetChallengeActiveCharacter
+    /// Function: SetChallengeActiveCharacter<br/>
+    /// Native code at BatmanAK.exe+0x518E50 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeActiveCharacter(int ChallengeID, int nCharacterId)
     {
@@ -2089,7 +2115,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeDefaultCharacter;
     /// <summary>
-    /// Function: SetChallengeDefaultCharacter
+    /// Function: SetChallengeDefaultCharacter<br/>
+    /// Native code at BatmanAK.exe+0x518C70 in the Steam build
     /// </summary>
     public unsafe virtual void SetChallengeDefaultCharacter(int ChallengeID, int nCharacterId)
     {
@@ -2112,7 +2139,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeNew;
     /// <summary>
-    /// Function: IsChallengeNew
+    /// Function: IsChallengeNew<br/>
+    /// Native code at BatmanAK.exe+0x518B40 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeNew(int ChallengeID)
     {
@@ -2134,7 +2162,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeAwarded;
     /// <summary>
-    /// Function: IsChallengeAwarded
+    /// Function: IsChallengeAwarded<br/>
+    /// Native code at BatmanAK.exe+0x518A10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeAwarded(int ChallengeID)
     {
@@ -2156,7 +2185,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeDirty;
     /// <summary>
-    /// Function: IsChallengeDirty
+    /// Function: IsChallengeDirty<br/>
+    /// Native code at BatmanAK.exe+0x5188E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeDirty(int ChallengeID)
     {
@@ -2178,7 +2208,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeRequirementMet;
     /// <summary>
-    /// Function: IsChallengeRequirementMet
+    /// Function: IsChallengeRequirementMet<br/>
+    /// Native code at BatmanAK.exe+0x5186F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeRequirementMet(int ChallengeID, int Requirement)
     {
@@ -2201,7 +2232,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeUnlocked;
     /// <summary>
-    /// Function: IsChallengeUnlocked
+    /// Function: IsChallengeUnlocked<br/>
+    /// Native code at BatmanAK.exe+0x5185C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeUnlocked(int ChallengeID)
     {
@@ -2223,7 +2255,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeRevealed;
     /// <summary>
-    /// Function: IsChallengeRevealed
+    /// Function: IsChallengeRevealed<br/>
+    /// Native code at BatmanAK.exe+0x518490 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeRevealed(int ChallengeID)
     {
@@ -2245,7 +2278,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNewChallengeCount;
     /// <summary>
-    /// Function: GetNewChallengeCount
+    /// Function: GetNewChallengeCount<br/>
+    /// Native code at BatmanAK.exe+0x4966E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNewChallengeCount()
     {
@@ -2266,7 +2300,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRevealedChallengeCount;
     /// <summary>
-    /// Function: GetRevealedChallengeCount
+    /// Function: GetRevealedChallengeCount<br/>
+    /// Native code at BatmanAK.exe+0x496690 in the Steam build
     /// </summary>
     public unsafe virtual int GetRevealedChallengeCount()
     {
@@ -2287,7 +2322,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalChallengesAwarded;
     /// <summary>
-    /// Function: GetTotalChallengesAwarded
+    /// Function: GetTotalChallengesAwarded<br/>
+    /// Native code at BatmanAK.exe+0x496590 in the Steam build
     /// </summary>
     public unsafe virtual int GetTotalChallengesAwarded(out int TotalPossible, bool bTraining)
     {
@@ -2312,7 +2348,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalChallengeMedalsForCategory;
     /// <summary>
-    /// Function: GetTotalChallengeMedalsForCategory
+    /// Function: GetTotalChallengeMedalsForCategory<br/>
+    /// Native code at BatmanAK.exe+0x518260 in the Steam build
     /// </summary>
     public unsafe virtual int GetTotalChallengeMedalsForCategory(int CharacterId, byte EChallengeCategory, out int TotalPossible, out int RivalPoints)
     {
@@ -2341,7 +2378,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalChallengeMedals;
     /// <summary>
-    /// Function: GetTotalChallengeMedals
+    /// Function: GetTotalChallengeMedals<br/>
+    /// Native code at BatmanAK.exe+0x518090 in the Steam build
     /// </summary>
     public unsafe virtual int GetTotalChallengeMedals(int CharacterId, out int TotalPossible, out int RivalPoints)
     {
@@ -2369,7 +2407,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeRating;
     /// <summary>
-    /// Function: GetChallengeRating
+    /// Function: GetChallengeRating<br/>
+    /// Native code at BatmanAK.exe+0x517EA0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeRating(int ChallengeID, int CharacterId)
     {
@@ -2392,7 +2431,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeRivalPoints;
     /// <summary>
-    /// Function: GetChallengeRivalPoints
+    /// Function: GetChallengeRivalPoints<br/>
+    /// Native code at BatmanAK.exe+0x517CB0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeRivalPoints(int ChallengeID, int CharacterId)
     {
@@ -2415,7 +2455,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeMedals;
     /// <summary>
-    /// Function: GetChallengeMedals
+    /// Function: GetChallengeMedals<br/>
+    /// Native code at BatmanAK.exe+0x517AC0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeMedals(int ChallengeID, int CharacterId)
     {
@@ -2438,7 +2479,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeScore;
     /// <summary>
-    /// Function: GetChallengeScore
+    /// Function: GetChallengeScore<br/>
+    /// Native code at BatmanAK.exe+0x5178D0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeScore(int ChallengeID, int CharacterId)
     {
@@ -2461,7 +2503,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeActiveCharacter;
     /// <summary>
-    /// Function: GetChallengeActiveCharacter
+    /// Function: GetChallengeActiveCharacter<br/>
+    /// Native code at BatmanAK.exe+0x5177A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeActiveCharacter(int ChallengeID)
     {
@@ -2483,7 +2526,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeCharacterIndex;
     /// <summary>
-    /// Function: GetChallengeCharacterIndex
+    /// Function: GetChallengeCharacterIndex<br/>
+    /// Native code at BatmanAK.exe+0x5175B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeCharacterIndex(int ChallengeID, int CharacterId)
     {
@@ -2506,7 +2550,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeIndex;
     /// <summary>
-    /// Function: GetChallengeIndex
+    /// Function: GetChallengeIndex<br/>
+    /// Native code at BatmanAK.exe+0x517440 in the Steam build
     /// </summary>
     public unsafe virtual int GetChallengeIndex(int ChallengeID, bool bAddNew = default)
     {
@@ -2679,7 +2724,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUserSaveSlot;
     /// <summary>
-    /// Function: GetUserSaveSlot
+    /// Function: GetUserSaveSlot<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetUserSaveSlot()
     {
@@ -2700,7 +2746,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUserGUID;
     /// <summary>
-    /// Function: GetUserGUID
+    /// Function: GetUserGUID<br/>
+    /// Native code at BatmanAK.exe+0xBA98D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetUserGUID()
     {
@@ -2721,7 +2768,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUserSaveSlot;
     /// <summary>
-    /// Function: SetUserSaveSlot
+    /// Function: SetUserSaveSlot<br/>
+    /// Native code at BatmanAK.exe+0x517320 in the Steam build
     /// </summary>
     public unsafe virtual void SetUserSaveSlot(int SlotNumber)
     {
@@ -2743,7 +2791,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOptionsFlagSet;
     /// <summary>
-    /// Function: IsOptionsFlagSet
+    /// Function: IsOptionsFlagSet<br/>
+    /// Native code at BatmanAK.exe+0xBA7F70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsOptionsFlagSet(BmSDK.FStringArg FlagName)
     {
@@ -2766,7 +2815,8 @@ public partial class RPersistentOptions : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOptionsFlag;
     /// <summary>
-    /// Function: SetOptionsFlag
+    /// Function: SetOptionsFlag<br/>
+    /// Native code at BatmanAK.exe+0x5430D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetOptionsFlag(BmSDK.FStringArg FlagName, bool bTrue)
     {

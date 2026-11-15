@@ -293,7 +293,8 @@ public partial class MThrowGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireGunHitResult;
     /// <summary>
-    /// Function: CalculateFireGunHitResult
+    /// Function: CalculateFireGunHitResult<br/>
+    /// Native code at BatmanAK.exe+0x48F130 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateFireGunHitResult(BmSDK.Rotator FireRotation, System.Numerics.Vector3 FirePosition, out BmSDK.Engine.Actor.FImpactInfo OutImpactInfo, float CheckBoxExtent = default)
     {
@@ -320,7 +321,8 @@ public partial class MThrowGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateAutoTargetHitResult;
     /// <summary>
-    /// Function: CalculateAutoTargetHitResult
+    /// Function: CalculateAutoTargetHitResult<br/>
+    /// Native code at BatmanAK.exe+0x50D580 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateAutoTargetHitResult(System.Numerics.Vector3 LaunchPosition, BmSDK.Rotator LaunchAngle, float Range, float TargetAngle, out BmSDK.Engine.Actor.FImpactInfo OutImpactInfo, float CheckBoxExtent = default)
     {

@@ -138,7 +138,8 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCapeComponent;
     /// <summary>
-    /// Function: GetCapeComponent
+    /// Function: GetCapeComponent<br/>
+    /// Native code at BatmanAK.exe+0x485750 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCapeComponent GetCapeComponent()
     {

@@ -97,7 +97,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Tick;
     /// <summary>
-    /// Function: XI_Tick
+    /// Function: XI_Tick<br/>
+    /// Native code at BatmanAK.exe+0x4982E0 in the Steam build
     /// </summary>
     public unsafe override void XI_Tick()
     {
@@ -118,7 +119,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotatorShortestDiff;
     /// <summary>
-    /// Function: GetRotatorShortestDiff
+    /// Function: GetRotatorShortestDiff<br/>
+    /// Native code at BatmanAK.exe+0x498230 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotatorShortestDiff(BmSDK.Rotator Diff)
     {
@@ -384,7 +386,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEvictCachesAfterAllocFail;
     /// <summary>
-    /// Function: SetEvictCachesAfterAllocFail
+    /// Function: SetEvictCachesAfterAllocFail<br/>
+    /// Native code at BatmanAK.exe+0x51CCD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEvictCachesAfterAllocFail(bool Set)
     {
@@ -406,7 +409,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetXPNeededStr;
     /// <summary>
-    /// Function: GetXPNeededStr
+    /// Function: GetXPNeededStr<br/>
+    /// Native code at BatmanAK.exe+0x5476A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetXPNeededStr(int XPNeeded)
     {
@@ -428,7 +432,8 @@ public partial class RGFxMovieBackScreen : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetMousePosition;
     /// <summary>
-    /// Function: ResetMousePosition
+    /// Function: ResetMousePosition<br/>
+    /// Native code at BatmanAK.exe+0x51CAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetMousePosition(float x_prop, float y_prop)
     {

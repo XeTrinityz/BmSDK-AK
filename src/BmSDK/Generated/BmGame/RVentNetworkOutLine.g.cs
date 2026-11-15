@@ -80,7 +80,8 @@ public partial class RVentNetworkOutLine : BmSDK.Engine.StaticMeshActor, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HighlightTunnelNetwork;
     /// <summary>
-    /// Function: HighlightTunnelNetwork
+    /// Function: HighlightTunnelNetwork<br/>
+    /// Native code at BatmanAK.exe+0xB59D70 in the Steam build
     /// </summary>
     public unsafe virtual void HighlightTunnelNetwork(bool bHighlight)
     {

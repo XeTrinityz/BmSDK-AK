@@ -80,7 +80,8 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetComponents;
     /// <summary>
-    /// Function: ResetComponents
+    /// Function: ResetComponents<br/>
+    /// Native code at BatmanAK.exe+0xB44EA0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetComponents()
     {

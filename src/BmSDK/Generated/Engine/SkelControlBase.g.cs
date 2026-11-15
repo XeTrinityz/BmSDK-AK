@@ -75,7 +75,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetControlMetadataWeight;
     /// <summary>
-    /// Function: GetControlMetadataWeight
+    /// Function: GetControlMetadataWeight<br/>
+    /// Native code at BatmanAK.exe+0xB2C290 in the Steam build
     /// </summary>
     public unsafe virtual float GetControlMetadataWeight()
     {
@@ -112,7 +113,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkelControlStrength;
     /// <summary>
-    /// Function: SetSkelControlStrength
+    /// Function: SetSkelControlStrength<br/>
+    /// Native code at BatmanAK.exe+0xB576C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSkelControlStrength(float NewStrength, float InBlendTime)
     {
@@ -135,7 +137,8 @@ public partial class SkelControlBase : BmSDK.Engine.AnimObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkelControlActive;
     /// <summary>
-    /// Function: SetSkelControlActive
+    /// Function: SetSkelControlActive<br/>
+    /// Native code at BatmanAK.exe+0xB575A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSkelControlActive(bool bInActive)
     {

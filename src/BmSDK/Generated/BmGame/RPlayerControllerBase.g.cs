@@ -266,7 +266,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InCinematicMode;
     /// <summary>
-    /// Function: InCinematicMode
+    /// Function: InCinematicMode<br/>
+    /// Native code at BatmanAK.exe+0x47A720 in the Steam build
     /// </summary>
     public unsafe virtual bool InCinematicMode()
     {
@@ -387,7 +388,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TTOffset;
     /// <summary>
-    /// Function: TTOffset
+    /// Function: TTOffset<br/>
+    /// Native code at BatmanAK.exe+0x4D3D60 in the Steam build
     /// </summary>
     public unsafe virtual void TTOffset(float O)
     {
@@ -409,7 +411,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleGfx;
     /// <summary>
-    /// Function: ToggleGfx
+    /// Function: ToggleGfx<br/>
+    /// Native code at BatmanAK.exe+0x47A6E0 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleGfx()
     {
@@ -430,7 +433,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GPU;
     /// <summary>
-    /// Function: GPU
+    /// Function: GPU<br/>
+    /// Native code at BatmanAK.exe+0x47A6A0 in the Steam build
     /// </summary>
     public unsafe virtual void GPU()
     {
@@ -451,7 +455,8 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushPressedKeys;
     /// <summary>
-    /// Function: FlushPressedKeys
+    /// Function: FlushPressedKeys<br/>
+    /// Native code at BatmanAK.exe+0x47A660 in the Steam build
     /// </summary>
     public unsafe virtual void FlushPressedKeys()
     {

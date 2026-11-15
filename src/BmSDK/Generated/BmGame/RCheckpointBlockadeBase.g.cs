@@ -80,7 +80,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
-    /// Function: IsStaticForFloorCorrection
+    /// Function: IsStaticForFloorCorrection<br/>
+    /// Native code at BatmanAK.exe+0x46A620 in the Steam build
     /// </summary>
     public unsafe override bool IsStaticForFloorCorrection()
     {
@@ -101,7 +102,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSound;
     /// <summary>
-    /// Function: TriggerSound
+    /// Function: TriggerSound<br/>
+    /// Native code at BatmanAK.exe+0x4BA3A0 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerSound(BmSDK.Engine.AkEvent UpDownEvent)
     {
@@ -123,7 +125,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanupSound;
     /// <summary>
-    /// Function: CleanupSound
+    /// Function: CleanupSound<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void CleanupSound()
     {
@@ -144,7 +147,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupSound;
     /// <summary>
-    /// Function: SetupSound
+    /// Function: SetupSound<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetupSound()
     {
@@ -237,7 +241,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
-    /// Function: ForceObstaclePolysOn
+    /// Function: ForceObstaclePolysOn<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
@@ -258,7 +263,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
-    /// Function: ForceObstaclePolysOff
+    /// Function: ForceObstaclePolysOff<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
@@ -279,7 +285,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
-    /// Function: ClearNavMeshEdgeCosts
+    /// Function: ClearNavMeshEdgeCosts<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
@@ -300,7 +307,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNavMeshEdgeCosts;
     /// <summary>
-    /// Function: SetNavMeshEdgeCosts
+    /// Function: SetNavMeshEdgeCosts<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNavMeshEdgeCosts()
     {
@@ -321,7 +329,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstaclePolysFromLoadedPylons;
     /// <summary>
-    /// Function: EnableObstaclePolysFromLoadedPylons
+    /// Function: EnableObstaclePolysFromLoadedPylons<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void EnableObstaclePolysFromLoadedPylons()
     {
@@ -342,7 +351,8 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstaclePolysFromLoadedPylons;
     /// <summary>
-    /// Function: RemoveObstaclePolysFromLoadedPylons
+    /// Function: RemoveObstaclePolysFromLoadedPylons<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveObstaclePolysFromLoadedPylons()
     {

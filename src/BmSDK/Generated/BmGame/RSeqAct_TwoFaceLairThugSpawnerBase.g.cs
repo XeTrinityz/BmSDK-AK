@@ -75,7 +75,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThugsOnHigherBalconies;
     /// <summary>
-    /// Function: GetThugsOnHigherBalconies
+    /// Function: GetThugsOnHigherBalconies<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe virtual int GetThugsOnHigherBalconies()
     {
@@ -96,7 +97,8 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateThugs;
     /// <summary>
-    /// Function: UpdateThugs
+    /// Function: UpdateThugs<br/>
+    /// Native code at BatmanAK.exe+0x50A290 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateThugs(float DeltaTime)
     {

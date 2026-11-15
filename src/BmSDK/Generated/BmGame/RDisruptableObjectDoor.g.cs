@@ -165,7 +165,8 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSplitNavMesh;
     /// <summary>
-    /// Function: SetSplitNavMesh
+    /// Function: SetSplitNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4F0AC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetSplitNavMesh(bool bSplit)
     {
@@ -187,7 +188,8 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcCharge;
     /// <summary>
-    /// Function: CalcCharge
+    /// Function: CalcCharge<br/>
+    /// Native code at BatmanAK.exe+0x494C50 in the Steam build
     /// </summary>
     public unsafe virtual float CalcCharge(System.Numerics.Vector3 InLoc, out float Dist)
     {

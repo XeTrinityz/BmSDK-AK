@@ -127,7 +127,8 @@ public partial class RWaterRescueVolumeBase : BmSDK.Engine.Volume, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerWake;
     /// <summary>
-    /// Function: UpdatePlayerWake
+    /// Function: UpdatePlayerWake<br/>
+    /// Native code at BatmanAK.exe+0x4848F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePlayerWake()
     {

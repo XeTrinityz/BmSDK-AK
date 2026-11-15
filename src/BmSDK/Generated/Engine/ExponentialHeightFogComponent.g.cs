@@ -80,7 +80,8 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB57F90 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {

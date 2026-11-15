@@ -80,7 +80,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
-    /// Function: Touch
+    /// Function: Touch<br/>
+    /// Native code at BatmanAK.exe+0xB59720 in the Steam build
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
@@ -105,7 +106,8 @@ public partial class InteractiveFoliageActor : BmSDK.Engine.StaticMeshActor, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
-    /// Function: TakeDamage
+    /// Function: TakeDamage<br/>
+    /// Native code at BatmanAK.exe+0xB59330 in the Steam build
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {

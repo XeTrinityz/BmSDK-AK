@@ -85,7 +85,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCameraAnim;
     /// <summary>
-    /// Function: StopCameraAnim
+    /// Function: StopCameraAnim<br/>
+    /// Native code at BatmanAK.exe+0xB84CF0 in the Steam build
     /// </summary>
     public unsafe virtual void StopCameraAnim(BmSDK.Engine.CameraAnimInst AnimInst, bool bImmediate = default)
     {
@@ -108,7 +109,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAllCameraAnimsByType;
     /// <summary>
-    /// Function: StopAllCameraAnimsByType
+    /// Function: StopAllCameraAnimsByType<br/>
+    /// Native code at BatmanAK.exe+0xB84B80 in the Steam build
     /// </summary>
     public unsafe virtual void StopAllCameraAnimsByType(BmSDK.Engine.CameraAnim Anim, bool bImmediate = default)
     {
@@ -131,7 +133,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAllCameraAnims;
     /// <summary>
-    /// Function: StopAllCameraAnims
+    /// Function: StopAllCameraAnims<br/>
+    /// Native code at BatmanAK.exe+0x4899B0 in the Steam build
     /// </summary>
     public unsafe virtual void StopAllCameraAnims(bool bImmediate = default)
     {
@@ -153,7 +156,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCameraAnim;
     /// <summary>
-    /// Function: PlayCameraAnim
+    /// Function: PlayCameraAnim<br/>
+    /// Native code at BatmanAK.exe+0xB84870 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.CameraAnimInst PlayCameraAnim(BmSDK.Engine.CameraAnim Anim, float Rate = default, float Scale = default, float BlendInTime = default, float BlendOutTime = default, bool bLoop = default, bool bRandomStartTime = default, float Duration = default, bool bSingleInstance = default)
     {
@@ -370,7 +374,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
-    /// Function: SetViewTarget
+    /// Function: SetViewTarget<br/>
+    /// Native code at BatmanAK.exe+0x4A2BA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewTarget(BmSDK.Engine.Actor NewViewTarget, BmSDK.Engine.Camera.FViewTargetTransitionParams TransitionParams = default)
     {
@@ -411,7 +416,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckViewTarget;
     /// <summary>
-    /// Function: CheckViewTarget
+    /// Function: CheckViewTarget<br/>
+    /// Native code at BatmanAK.exe+0xB41190 in the Steam build
     /// </summary>
     public unsafe virtual void CheckViewTarget(out BmSDK.Engine.Camera.FTViewTarget VT)
     {
@@ -473,7 +479,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyAudioFade;
     /// <summary>
-    /// Function: ApplyAudioFade
+    /// Function: ApplyAudioFade<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyAudioFade()
     {
@@ -632,7 +639,8 @@ public partial class Camera : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraModifiers;
     /// <summary>
-    /// Function: ApplyCameraModifiers
+    /// Function: ApplyCameraModifiers<br/>
+    /// Native code at BatmanAK.exe+0x4A2A20 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyCameraModifiers(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {

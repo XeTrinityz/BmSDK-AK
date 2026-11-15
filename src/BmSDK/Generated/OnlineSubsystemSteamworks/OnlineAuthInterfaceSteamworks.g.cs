@@ -80,7 +80,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetServerAddr;
     /// <summary>
-    /// Function: GetServerAddr
+    /// Function: GetServerAddr<br/>
+    /// Native code at BatmanAK.exe+0x107BE60 in the Steam build
     /// </summary>
     public unsafe override bool GetServerAddr(out int OutServerIP, out int OutServerPort)
     {
@@ -107,7 +108,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetServerUniqueId;
     /// <summary>
-    /// Function: GetServerUniqueId
+    /// Function: GetServerUniqueId<br/>
+    /// Native code at BatmanAK.exe+0x107BDB0 in the Steam build
     /// </summary>
     public unsafe override bool GetServerUniqueId(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId OutServerUID)
     {
@@ -131,7 +133,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyServerAuthSession;
     /// <summary>
-    /// Function: VerifyServerAuthSession
+    /// Function: VerifyServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x107BBA0 in the Steam build
     /// </summary>
     public unsafe override bool VerifyServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int AuthTicketUID)
     {
@@ -155,7 +158,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateServerAuthSession;
     /// <summary>
-    /// Function: CreateServerAuthSession
+    /// Function: CreateServerAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x107B950 in the Steam build
     /// </summary>
     public unsafe override bool CreateServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort, out int OutAuthTicketUID)
     {
@@ -182,7 +186,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyClientAuthSession;
     /// <summary>
-    /// Function: VerifyClientAuthSession
+    /// Function: VerifyClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x107B690 in the Steam build
     /// </summary>
     public unsafe override bool VerifyClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort, int AuthTicketUID)
     {
@@ -207,7 +212,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateClientAuthSession;
     /// <summary>
-    /// Function: CreateClientAuthSession
+    /// Function: CreateClientAuthSession<br/>
+    /// Native code at BatmanAK.exe+0x107B380 in the Steam build
     /// </summary>
     public unsafe override bool CreateClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int ServerPort, bool bSecure, out int OutAuthTicketUID)
     {
@@ -235,7 +241,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthRequest;
     /// <summary>
-    /// Function: SendServerAuthRequest
+    /// Function: SendServerAuthRequest<br/>
+    /// Native code at BatmanAK.exe+0x107B2F0 in the Steam build
     /// </summary>
     public unsafe override bool SendServerAuthRequest(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID)
     {
@@ -257,7 +264,8 @@ public partial class OnlineAuthInterfaceSteamworks : BmSDK.IpDrv.OnlineAuthInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthRequest;
     /// <summary>
-    /// Function: SendClientAuthRequest
+    /// Function: SendClientAuthRequest<br/>
+    /// Native code at BatmanAK.exe+0x107B190 in the Steam build
     /// </summary>
     public unsafe override bool SendClientAuthRequest(BmSDK.Engine.Player ClientConnection, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID)
     {

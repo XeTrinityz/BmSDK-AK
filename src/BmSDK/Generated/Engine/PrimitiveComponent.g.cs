@@ -75,7 +75,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosestPointOnComponentToComponent;
     /// <summary>
-    /// Function: ClosestPointOnComponentToComponent
+    /// Function: ClosestPointOnComponentToComponent<br/>
+    /// Native code at BatmanAK.exe+0xB34300 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PrimitiveComponent.GJKResult ClosestPointOnComponentToComponent(out BmSDK.Engine.PrimitiveComponent OtherComponent, out System.Numerics.Vector3 PointOnComponentA, out System.Numerics.Vector3 PointOnComponentB)
     {
@@ -105,7 +106,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosestPointOnComponentToPoint;
     /// <summary>
-    /// Function: ClosestPointOnComponentToPoint
+    /// Function: ClosestPointOnComponentToPoint<br/>
+    /// Native code at BatmanAK.exe+0xB34190 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PrimitiveComponent.GJKResult ClosestPointOnComponentToPoint(out System.Numerics.Vector3 POI, out System.Numerics.Vector3 Extent, out System.Numerics.Vector3 OutPointA, out System.Numerics.Vector3 OutPointB)
     {
@@ -138,7 +140,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalMaterial;
     /// <summary>
-    /// Function: GetPhysicalMaterial
+    /// Function: GetPhysicalMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDD6050 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.PhysicalMaterial GetPhysicalMaterial(int BodyIndex = default)
     {
@@ -160,7 +163,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasFallenOutOfWorld;
     /// <summary>
-    /// Function: GetHasFallenOutOfWorld
+    /// Function: GetHasFallenOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x94E6C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasFallenOutOfWorld()
     {
@@ -181,7 +185,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotation;
     /// <summary>
-    /// Function: GetRotation
+    /// Function: GetRotation<br/>
+    /// Native code at BatmanAK.exe+0xDD10A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotation()
     {
@@ -202,7 +207,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosition;
     /// <summary>
-    /// Function: GetPosition
+    /// Function: GetPosition<br/>
+    /// Native code at BatmanAK.exe+0xDD1020 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPosition()
     {
@@ -223,7 +229,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAbsolute;
     /// <summary>
-    /// Function: SetAbsolute
+    /// Function: SetAbsolute<br/>
+    /// Native code at BatmanAK.exe+0xDD0EC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAbsolute(bool NewAbsoluteTranslation = default, bool NewAbsoluteRotation = default, bool NewAbsoluteScale = default)
     {
@@ -247,7 +254,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScale3D;
     /// <summary>
-    /// Function: SetScale3D
+    /// Function: SetScale3D<br/>
+    /// Native code at BatmanAK.exe+0xDD0E00 in the Steam build
     /// </summary>
     public unsafe virtual void SetScale3D(System.Numerics.Vector3 NewScale3D)
     {
@@ -269,7 +277,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScale;
     /// <summary>
-    /// Function: SetScale
+    /// Function: SetScale<br/>
+    /// Native code at BatmanAK.exe+0xDD5DE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScale(float NewScale)
     {
@@ -291,7 +300,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotation;
     /// <summary>
-    /// Function: SetRotation
+    /// Function: SetRotation<br/>
+    /// Native code at BatmanAK.exe+0xDD5D20 in the Steam build
     /// </summary>
     public unsafe virtual void SetRotation(BmSDK.Rotator NewRotation)
     {
@@ -313,7 +323,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTranslation;
     /// <summary>
-    /// Function: SetTranslation
+    /// Function: SetTranslation<br/>
+    /// Native code at BatmanAK.exe+0xDD0CF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTranslation(System.Numerics.Vector3 NewTranslation)
     {
@@ -335,7 +346,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorCollision;
     /// <summary>
-    /// Function: SetActorCollision
+    /// Function: SetActorCollision<br/>
+    /// Native code at BatmanAK.exe+0xDDC100 in the Steam build
     /// </summary>
     public unsafe virtual void SetActorCollision(bool NewCollideActors, bool NewBlockActors)
     {
@@ -358,7 +370,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTraceBlocking;
     /// <summary>
-    /// Function: SetTraceBlocking
+    /// Function: SetTraceBlocking<br/>
+    /// Native code at BatmanAK.exe+0xDDBEF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTraceBlocking(bool NewBlockZeroExtent, bool NewBlockNonZeroExtent)
     {
@@ -381,7 +394,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDepthPriorityGroup;
     /// <summary>
-    /// Function: SetDepthPriorityGroup
+    /// Function: SetDepthPriorityGroup<br/>
+    /// Native code at BatmanAK.exe+0xDD0710 in the Steam build
     /// </summary>
     public unsafe virtual void SetDepthPriorityGroup(BmSDK.Engine.Scene.ESceneDepthPriorityGroup NewDepthPriorityGroup)
     {
@@ -403,7 +417,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightingChannels;
     /// <summary>
-    /// Function: SetLightingChannels
+    /// Function: SetLightingChannels<br/>
+    /// Native code at BatmanAK.exe+0xDD0670 in the Steam build
     /// </summary>
     public unsafe virtual void SetLightingChannels(BmSDK.Engine.LightComponent.FLightingChannelContainer NewLightingChannels)
     {
@@ -425,7 +440,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCullDistance;
     /// <summary>
-    /// Function: SetCullDistance
+    /// Function: SetCullDistance<br/>
+    /// Native code at BatmanAK.exe+0xDD5BF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCullDistance(float NewCullDistance)
     {
@@ -447,7 +463,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIgnoreOwnerHidden;
     /// <summary>
-    /// Function: SetIgnoreOwnerHidden
+    /// Function: SetIgnoreOwnerHidden<br/>
+    /// Native code at BatmanAK.exe+0xDD3C60 in the Steam build
     /// </summary>
     public unsafe virtual void SetIgnoreOwnerHidden(bool bNewIgnoreOwnerHidden)
     {
@@ -469,7 +486,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightXrayViewDepthPriorityGroupInDLCExtraView;
     /// <summary>
-    /// Function: SetHighlightXrayViewDepthPriorityGroupInDLCExtraView
+    /// Function: SetHighlightXrayViewDepthPriorityGroupInDLCExtraView<br/>
+    /// Native code at BatmanAK.exe+0xDD5AA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightXrayViewDepthPriorityGroupInDLCExtraView(bool bNewHighlightXrayViewDepthPriorityGroupInDLCExtraView)
     {
@@ -491,7 +509,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightViewDepthPriorityGroupInDLCExtraView;
     /// <summary>
-    /// Function: SetHighlightViewDepthPriorityGroupInDLCExtraView
+    /// Function: SetHighlightViewDepthPriorityGroupInDLCExtraView<br/>
+    /// Native code at BatmanAK.exe+0xDD5950 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightViewDepthPriorityGroupInDLCExtraView(bool bNewHighlightViewDepthPriorityGroupInDLCExtraView)
     {
@@ -513,7 +532,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawAsGauntletProjectionMesh;
     /// <summary>
-    /// Function: SetDrawAsGauntletProjectionMesh
+    /// Function: SetDrawAsGauntletProjectionMesh<br/>
+    /// Native code at BatmanAK.exe+0xDD5800 in the Steam build
     /// </summary>
     public unsafe virtual void SetDrawAsGauntletProjectionMesh(bool bNewDrawAsGauntletProjectionMesh)
     {
@@ -535,7 +555,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightBatmobileViewDepthPriorityGroupInBatmobileView;
     /// <summary>
-    /// Function: SetHighlightBatmobileViewDepthPriorityGroupInBatmobileView
+    /// Function: SetHighlightBatmobileViewDepthPriorityGroupInBatmobileView<br/>
+    /// Native code at BatmanAK.exe+0xDD56B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightBatmobileViewDepthPriorityGroupInBatmobileView(bool bNewHighlightBatmobileViewDepthPriorityGroupInBatmobileView)
     {
@@ -557,7 +578,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightDepthPriorityGroupInBatmobileView;
     /// <summary>
-    /// Function: SetHighlightDepthPriorityGroupInBatmobileView
+    /// Function: SetHighlightDepthPriorityGroupInBatmobileView<br/>
+    /// Native code at BatmanAK.exe+0xDD5560 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightDepthPriorityGroupInBatmobileView(bool bNewHighlightDepthPriorityGroupInBatmobileView)
     {
@@ -579,7 +601,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightThermalDepthPriorityGroupInThermal;
     /// <summary>
-    /// Function: SetHighlightThermalDepthPriorityGroupInThermal
+    /// Function: SetHighlightThermalDepthPriorityGroupInThermal<br/>
+    /// Native code at BatmanAK.exe+0xDD5410 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightThermalDepthPriorityGroupInThermal(bool bNewHighlightThermalDepthPriorityGroupInThermal)
     {
@@ -601,7 +624,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightDepthPriorityGroupInThermal;
     /// <summary>
-    /// Function: SetHighlightDepthPriorityGroupInThermal
+    /// Function: SetHighlightDepthPriorityGroupInThermal<br/>
+    /// Native code at BatmanAK.exe+0xDD52C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightDepthPriorityGroupInThermal(bool bNewHighlightDepthPriorityGroupInThermal)
     {
@@ -623,7 +647,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightXrayDepthPriorityGroupInScan;
     /// <summary>
-    /// Function: SetHighlightXrayDepthPriorityGroupInScan
+    /// Function: SetHighlightXrayDepthPriorityGroupInScan<br/>
+    /// Native code at BatmanAK.exe+0xDD5170 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightXrayDepthPriorityGroupInScan(bool bNewHighlightXrayDepthPriorityGroupInScan)
     {
@@ -645,7 +670,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightDepthPriorityGroupInScan;
     /// <summary>
-    /// Function: SetHighlightDepthPriorityGroupInScan
+    /// Function: SetHighlightDepthPriorityGroupInScan<br/>
+    /// Native code at BatmanAK.exe+0xDD5020 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightDepthPriorityGroupInScan(bool bNewHighlightDepthPriorityGroupInScan)
     {
@@ -667,7 +693,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightXrayDepthPriorityGroupInXray;
     /// <summary>
-    /// Function: SetHighlightXrayDepthPriorityGroupInXray
+    /// Function: SetHighlightXrayDepthPriorityGroupInXray<br/>
+    /// Native code at BatmanAK.exe+0xDD4E90 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightXrayDepthPriorityGroupInXray(bool bNewHighlightXrayDepthPriorityGroupInXray, bool bAllowCallingConditionalUpdateComponents = default)
     {
@@ -690,7 +717,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighlightDepthPriorityGroupInXray;
     /// <summary>
-    /// Function: SetHighlightDepthPriorityGroupInXray
+    /// Function: SetHighlightDepthPriorityGroupInXray<br/>
+    /// Native code at BatmanAK.exe+0xDD4D40 in the Steam build
     /// </summary>
     public unsafe virtual void SetHighlightDepthPriorityGroupInXray(bool bNewHighlightDepthPriorityGroupInXray)
     {
@@ -712,7 +740,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDontDrawThisFrame;
     /// <summary>
-    /// Function: SetDontDrawThisFrame
+    /// Function: SetDontDrawThisFrame<br/>
+    /// Native code at BatmanAK.exe+0xDD4C00 in the Steam build
     /// </summary>
     public unsafe virtual void SetDontDrawThisFrame(bool bNewDontDrawThisFrame)
     {
@@ -734,7 +763,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetReflectionNoSee;
     /// <summary>
-    /// Function: SetReflectionNoSee
+    /// Function: SetReflectionNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD4AB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetReflectionNoSee(bool NewReflectionNoSee)
     {
@@ -756,7 +786,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyBatmobileViewSee;
     /// <summary>
-    /// Function: SetOnlyBatmobileViewSee
+    /// Function: SetOnlyBatmobileViewSee<br/>
+    /// Native code at BatmanAK.exe+0xDD4960 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyBatmobileViewSee(bool bNewOnlyBatmobileViewSee)
     {
@@ -778,7 +809,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileViewNoSee;
     /// <summary>
-    /// Function: SetBatmobileViewNoSee
+    /// Function: SetBatmobileViewNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD4810 in the Steam build
     /// </summary>
     public unsafe virtual void SetBatmobileViewNoSee(bool bNewBatmobileViewNoSee)
     {
@@ -800,7 +832,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyThermalSee;
     /// <summary>
-    /// Function: SetOnlyThermalSee
+    /// Function: SetOnlyThermalSee<br/>
+    /// Native code at BatmanAK.exe+0xDD46C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyThermalSee(bool bNewOnlyThermalSee)
     {
@@ -822,7 +855,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThermalNoSee;
     /// <summary>
-    /// Function: SetThermalNoSee
+    /// Function: SetThermalNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD4570 in the Steam build
     /// </summary>
     public unsafe virtual void SetThermalNoSee(bool bNewThermalNoSee)
     {
@@ -844,7 +878,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyScanModeSee;
     /// <summary>
-    /// Function: SetOnlyScanModeSee
+    /// Function: SetOnlyScanModeSee<br/>
+    /// Native code at BatmanAK.exe+0xDD4420 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyScanModeSee(bool bNewOnlyScanModeSee)
     {
@@ -866,7 +901,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScanModeNoSee;
     /// <summary>
-    /// Function: SetScanModeNoSee
+    /// Function: SetScanModeNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD42D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScanModeNoSee(bool bNewScanModeNoSee)
     {
@@ -888,7 +924,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyXraySee;
     /// <summary>
-    /// Function: SetOnlyXraySee
+    /// Function: SetOnlyXraySee<br/>
+    /// Native code at BatmanAK.exe+0xDD4180 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyXraySee(bool bNewOnlyXraySee)
     {
@@ -910,7 +947,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXrayNoSee;
     /// <summary>
-    /// Function: SetXrayNoSee
+    /// Function: SetXrayNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD3FF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetXrayNoSee(bool bNewXrayNoSee, bool bAllowCallingConditionalUpdateComponents = default)
     {
@@ -933,7 +971,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyOwnerSee;
     /// <summary>
-    /// Function: SetOnlyOwnerSee
+    /// Function: SetOnlyOwnerSee<br/>
+    /// Native code at BatmanAK.exe+0xDD3B40 in the Steam build
     /// </summary>
     public unsafe virtual void SetOnlyOwnerSee(bool bNewOnlyOwnerSee)
     {
@@ -955,7 +994,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOwnerNoSee;
     /// <summary>
-    /// Function: SetOwnerNoSee
+    /// Function: SetOwnerNoSee<br/>
+    /// Native code at BatmanAK.exe+0xDD3A20 in the Steam build
     /// </summary>
     public unsafe virtual void SetOwnerNoSee(bool bNewOwnerNoSee)
     {
@@ -977,7 +1017,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHiddenEditor;
     /// <summary>
-    /// Function: SetHiddenEditor
+    /// Function: SetHiddenEditor<br/>
+    /// Native code at BatmanAK.exe+0xDD3EA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetHiddenEditor(bool NewHidden)
     {
@@ -999,7 +1040,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
-    /// Function: SetHidden
+    /// Function: SetHidden<br/>
+    /// Native code at BatmanAK.exe+0xDD3D80 in the Steam build
     /// </summary>
     public unsafe virtual void SetHidden(bool NewHidden)
     {
@@ -1021,7 +1063,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldComponentAddToScene;
     /// <summary>
-    /// Function: ShouldComponentAddToScene
+    /// Function: ShouldComponentAddToScene<br/>
+    /// Native code at BatmanAK.exe+0xB34430 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldComponentAddToScene()
     {
@@ -1042,7 +1085,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBDominanceGroup;
     /// <summary>
-    /// Function: SetRBDominanceGroup
+    /// Function: SetRBDominanceGroup<br/>
+    /// Native code at BatmanAK.exe+0x89D670 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBDominanceGroup(byte InDomGroup)
     {
@@ -1064,7 +1108,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRootBodyInstance;
     /// <summary>
-    /// Function: GetRootBodyInstance
+    /// Function: GetRootBodyInstance<br/>
+    /// Native code at BatmanAK.exe+0x89D730 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance GetRootBodyInstance()
     {
@@ -1085,7 +1130,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysMaterialOverride;
     /// <summary>
-    /// Function: SetPhysMaterialOverride
+    /// Function: SetPhysMaterialOverride<br/>
+    /// Native code at BatmanAK.exe+0x8A40C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPhysMaterialOverride(BmSDK.Engine.PhysicalMaterial NewPhysMaterial)
     {
@@ -1107,7 +1153,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitRBPhys;
     /// <summary>
-    /// Function: InitRBPhys
+    /// Function: InitRBPhys<br/>
+    /// Native code at BatmanAK.exe+0x89D5D0 in the Steam build
     /// </summary>
     public unsafe virtual void InitRBPhys()
     {
@@ -1128,7 +1175,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContactModification;
     /// <summary>
-    /// Function: SetContactModification
+    /// Function: SetContactModification<br/>
+    /// Native code at BatmanAK.exe+0x8A3E80 in the Steam build
     /// </summary>
     public unsafe virtual void SetContactModification(bool isEnableContactModificationCallback)
     {
@@ -1150,7 +1198,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNotifyRigidBodyCollision;
     /// <summary>
-    /// Function: SetNotifyRigidBodyCollision
+    /// Function: SetNotifyRigidBodyCollision<br/>
+    /// Native code at BatmanAK.exe+0x8A3FA0 in the Steam build
     /// </summary>
     public unsafe virtual void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision)
     {
@@ -1172,7 +1221,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBChannelAndRBCollisionChannels;
     /// <summary>
-    /// Function: SetRBChannelAndRBCollisionChannels
+    /// Function: SetRBChannelAndRBCollisionChannels<br/>
+    /// Native code at BatmanAK.exe+0x8A57C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBChannelAndRBCollisionChannels(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel Channel, BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer Channels)
     {
@@ -1195,7 +1245,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBChannel;
     /// <summary>
-    /// Function: SetRBChannel
+    /// Function: SetRBChannel<br/>
+    /// Native code at BatmanAK.exe+0x89E160 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBChannel(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel Channel)
     {
@@ -1217,7 +1268,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBCollisionChannels;
     /// <summary>
-    /// Function: SetRBCollisionChannels
+    /// Function: SetRBCollisionChannels<br/>
+    /// Native code at BatmanAK.exe+0x8A5690 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBCollisionChannels(BmSDK.Engine.PrimitiveComponent.FRBCollisionChannelContainer Channels)
     {
@@ -1239,7 +1291,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBCollidesWithChannel;
     /// <summary>
-    /// Function: SetRBCollidesWithChannel
+    /// Function: SetRBCollidesWithChannel<br/>
+    /// Native code at BatmanAK.exe+0x8A5540 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBCollidesWithChannel(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel Channel, bool bNewCollides)
     {
@@ -1262,7 +1315,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlockRigidBody;
     /// <summary>
-    /// Function: SetBlockRigidBody
+    /// Function: SetBlockRigidBody<br/>
+    /// Native code at BatmanAK.exe+0x8A3C60 in the Steam build
     /// </summary>
     public unsafe virtual void SetBlockRigidBody(bool bNewBlockRigidBody)
     {
@@ -1284,7 +1338,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyIsAwake;
     /// <summary>
-    /// Function: RigidBodyIsAwake
+    /// Function: RigidBodyIsAwake<br/>
+    /// Native code at BatmanAK.exe+0x89DC90 in the Steam build
     /// </summary>
     public unsafe virtual bool RigidBodyIsAwake(BmSDK.FName BoneName = default)
     {
@@ -1306,7 +1361,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyIsFullyDynamic;
     /// <summary>
-    /// Function: RigidBodyIsFullyDynamic
+    /// Function: RigidBodyIsFullyDynamic<br/>
+    /// Native code at BatmanAK.exe+0x89DBD0 in the Steam build
     /// </summary>
     public unsafe virtual bool RigidBodyIsFullyDynamic(BmSDK.FName BoneName = default)
     {
@@ -1328,7 +1384,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PutRigidBodyToSleep;
     /// <summary>
-    /// Function: PutRigidBodyToSleep
+    /// Function: PutRigidBodyToSleep<br/>
+    /// Native code at BatmanAK.exe+0x89D3B0 in the Steam build
     /// </summary>
     public unsafe virtual void PutRigidBodyToSleep(BmSDK.FName BoneName = default)
     {
@@ -1350,7 +1407,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeRigidBody;
     /// <summary>
-    /// Function: WakeRigidBody
+    /// Function: WakeRigidBody<br/>
+    /// Native code at BatmanAK.exe+0x89D300 in the Steam build
     /// </summary>
     public unsafe virtual void WakeRigidBody(BmSDK.FName BoneName = default)
     {
@@ -1372,7 +1430,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBRotation;
     /// <summary>
-    /// Function: SetRBRotation
+    /// Function: SetRBRotation<br/>
+    /// Native code at BatmanAK.exe+0x89DAC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBRotation(BmSDK.Rotator NewRot, BmSDK.FName BoneName = default)
     {
@@ -1395,7 +1454,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBPosition;
     /// <summary>
-    /// Function: SetRBPosition
+    /// Function: SetRBPosition<br/>
+    /// Native code at BatmanAK.exe+0x89D9E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBPosition(System.Numerics.Vector3 NewPos, BmSDK.FName BoneName = default)
     {
@@ -1418,7 +1478,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RetardRBLinearVelocity;
     /// <summary>
-    /// Function: RetardRBLinearVelocity
+    /// Function: RetardRBLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0x8A45F0 in the Steam build
     /// </summary>
     public unsafe virtual void RetardRBLinearVelocity(System.Numerics.Vector3 RetardDir, float VelScale)
     {
@@ -1441,7 +1502,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBAngularVelocity;
     /// <summary>
-    /// Function: SetRBAngularVelocity
+    /// Function: SetRBAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89D910 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBAngularVelocity(System.Numerics.Vector3 NewAngVel, bool bAddToCurrent = default)
     {
@@ -1464,7 +1526,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBMass;
     /// <summary>
-    /// Function: GetRBMass
+    /// Function: GetRBMass<br/>
+    /// Native code at BatmanAK.exe+0x8ADEA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetRBMass()
     {
@@ -1485,7 +1548,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBAngularVelocity;
     /// <summary>
-    /// Function: GetRBAngularVelocity
+    /// Function: GetRBAngularVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89D8B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRBAngularVelocity()
     {
@@ -1506,7 +1570,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBLinearVelocity;
     /// <summary>
-    /// Function: GetRBLinearVelocity
+    /// Function: GetRBLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89D850 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRBLinearVelocity()
     {
@@ -1527,7 +1592,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRBLinearVelocity;
     /// <summary>
-    /// Function: SetRBLinearVelocity
+    /// Function: SetRBLinearVelocity<br/>
+    /// Native code at BatmanAK.exe+0x89D780 in the Steam build
     /// </summary>
     public unsafe virtual void SetRBLinearVelocity(System.Numerics.Vector3 NewVel, bool bAddToCurrent = default)
     {
@@ -1550,7 +1616,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTorqueImpulse;
     /// <summary>
-    /// Function: AddTorqueImpulse
+    /// Function: AddTorqueImpulse<br/>
+    /// Native code at BatmanAK.exe+0x8AE8E0 in the Steam build
     /// </summary>
     public unsafe virtual void AddTorqueImpulse(System.Numerics.Vector3 Torgue, BmSDK.FName BoneName = default)
     {
@@ -1573,7 +1640,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTorqueForce;
     /// <summary>
-    /// Function: AddTorqueForce
+    /// Function: AddTorqueForce<br/>
+    /// Native code at BatmanAK.exe+0x8AE700 in the Steam build
     /// </summary>
     public unsafe virtual void AddTorqueForce(System.Numerics.Vector3 Torgue, BmSDK.FName BoneName = default)
     {
@@ -1596,7 +1664,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTorque;
     /// <summary>
-    /// Function: AddTorque
+    /// Function: AddTorque<br/>
+    /// Native code at BatmanAK.exe+0x8AE610 in the Steam build
     /// </summary>
     public unsafe virtual void AddTorque(System.Numerics.Vector3 Torque, BmSDK.FName BoneName = default)
     {
@@ -1619,7 +1688,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRadialForce;
     /// <summary>
-    /// Function: AddRadialForce
+    /// Function: AddRadialForce<br/>
+    /// Native code at BatmanAK.exe+0x8A4F30 in the Steam build
     /// </summary>
     public unsafe virtual void AddRadialForce(System.Numerics.Vector3 Origin, float Radius, float Strength, BmSDK.Engine.PrimitiveComponent.ERadialImpulseFalloff Falloff)
     {
@@ -1644,7 +1714,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddForce;
     /// <summary>
-    /// Function: AddForce
+    /// Function: AddForce<br/>
+    /// Native code at BatmanAK.exe+0x8AE3C0 in the Steam build
     /// </summary>
     public unsafe virtual void AddForce(System.Numerics.Vector3 Force, System.Numerics.Vector3 Position = default, BmSDK.FName BoneName = default)
     {
@@ -1668,7 +1739,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRadialImpulse;
     /// <summary>
-    /// Function: AddRadialImpulse
+    /// Function: AddRadialImpulse<br/>
+    /// Native code at BatmanAK.exe+0x8A4C50 in the Steam build
     /// </summary>
     public unsafe virtual void AddRadialImpulse(System.Numerics.Vector3 Origin, float Radius, float Strength, BmSDK.Engine.PrimitiveComponent.ERadialImpulseFalloff Falloff, BmSDK.Engine.PrimitiveComponent.ERadialImpulseType RadialImpulseType = default, bool bAccurateRadiusTest = default)
     {
@@ -1695,7 +1767,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddImpulse;
     /// <summary>
-    /// Function: AddImpulse
+    /// Function: AddImpulse<br/>
+    /// Native code at BatmanAK.exe+0x89DE80 in the Steam build
     /// </summary>
     public unsafe virtual void AddImpulse(System.Numerics.Vector3 Impulse, System.Numerics.Vector3 Position = default, BmSDK.FName BoneName = default, bool bVelChange = default, bool bAffectAllBodies = default)
     {
@@ -1721,7 +1794,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableAllRigidBody;
     /// <summary>
-    /// Function: SetDisableAllRigidBody
+    /// Function: SetDisableAllRigidBody<br/>
+    /// Native code at BatmanAK.exe+0x8A4B30 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableAllRigidBody(bool bNewDisableAllRigidBody)
     {
@@ -1743,7 +1817,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionFilter;
     /// <summary>
-    /// Function: SetCollisionFilter
+    /// Function: SetCollisionFilter<br/>
+    /// Native code at BatmanAK.exe+0x8A49C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCollisionFilter(BmSDK.Component.ECollisionFilter Filter, bool OverrideFilter)
     {
@@ -1766,7 +1841,8 @@ public partial class PrimitiveComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCollisionFilter;
     /// <summary>
-    /// Function: GetCollisionFilter
+    /// Function: GetCollisionFilter<br/>
+    /// Native code at BatmanAK.exe+0x89DD80 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Component.ECollisionFilter GetCollisionFilter()
     {

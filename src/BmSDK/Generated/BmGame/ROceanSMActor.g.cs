@@ -80,7 +80,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateEditorComponents;
     /// <summary>
-    /// Function: UpdateEditorComponents
+    /// Function: UpdateEditorComponents<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateEditorComponents()
     {
@@ -134,7 +135,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUntouchWaterVolume;
     /// <summary>
-    /// Function: OnUntouchWaterVolume
+    /// Function: OnUntouchWaterVolume<br/>
+    /// Native code at BatmanAK.exe+0xB862D0 in the Steam build
     /// </summary>
     public unsafe virtual void OnUntouchWaterVolume(BmSDK.BmGame.RWaterVolumeBase WaterVolume)
     {
@@ -156,7 +158,8 @@ public partial class ROceanSMActor : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTouchWaterVolume;
     /// <summary>
-    /// Function: OnTouchWaterVolume
+    /// Function: OnTouchWaterVolume<br/>
+    /// Native code at BatmanAK.exe+0x4AFA80 in the Steam build
     /// </summary>
     public unsafe virtual void OnTouchWaterVolume(BmSDK.BmGame.RWaterVolumeBase WaterVolume, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {

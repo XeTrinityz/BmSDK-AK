@@ -75,7 +75,8 @@ public partial class ForceFeedbackManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayForceFeedbackWaveform;
     /// <summary>
-    /// Function: PlayForceFeedbackWaveform
+    /// Function: PlayForceFeedbackWaveform<br/>
+    /// Native code at BatmanAK.exe+0xB79AF0 in the Steam build
     /// </summary>
     public unsafe virtual void PlayForceFeedbackWaveform(BmSDK.Engine.ForceFeedbackWaveform WaveForm, BmSDK.Engine.Actor WaveInstigator)
     {

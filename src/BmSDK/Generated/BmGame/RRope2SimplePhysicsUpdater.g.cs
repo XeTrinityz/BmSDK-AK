@@ -80,7 +80,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PutToSleep;
     /// <summary>
-    /// Function: PutToSleep
+    /// Function: PutToSleep<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void PutToSleep()
     {
@@ -101,7 +102,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
-    /// Function: GetThoughts
+    /// Function: GetThoughts<br/>
+    /// Native code at BatmanAK.exe+0x590E10 in the Steam build
     /// </summary>
     public unsafe override void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FStringArg IndentString = default)
     {
@@ -128,7 +130,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetTighteningFactor;
     /// <summary>
-    /// Function: SetTargetTighteningFactor
+    /// Function: SetTargetTighteningFactor<br/>
+    /// Native code at BatmanAK.exe+0x4EE2E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTargetTighteningFactor(float NewTargetTighteningFactor)
     {
@@ -150,7 +153,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateLowestDanglePointNearXYPos;
     /// <summary>
-    /// Function: CalculateLowestDanglePointNearXYPos
+    /// Function: CalculateLowestDanglePointNearXYPos<br/>
+    /// Native code at BatmanAK.exe+0x4EE0E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateLowestDanglePointNearXYPos(BmSDK.BmGame.RRope2Component RopeComp, System.Numerics.Vector3 XYPos, out float RopePos)
     {
@@ -176,7 +180,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateLowestDanglePointForRopePos;
     /// <summary>
-    /// Function: CalculateLowestDanglePointForRopePos
+    /// Function: CalculateLowestDanglePointForRopePos<br/>
+    /// Native code at BatmanAK.exe+0x4EDF90 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateLowestDanglePointForRopePos(float RopePos)
     {
@@ -198,7 +203,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllControlPoints;
     /// <summary>
-    /// Function: ClearAllControlPoints
+    /// Function: ClearAllControlPoints<br/>
+    /// Native code at BatmanAK.exe+0x482FC0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearAllControlPoints()
     {
@@ -219,7 +225,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveControlPoint;
     /// <summary>
-    /// Function: RemoveControlPoint
+    /// Function: RemoveControlPoint<br/>
+    /// Native code at BatmanAK.exe+0x4EDE60 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveControlPoint(BmSDK.BmGame.RRope2SimplePhysicsControlPoint RemovePoint)
     {
@@ -241,7 +248,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddControlPoint;
     /// <summary>
-    /// Function: AddControlPoint
+    /// Function: AddControlPoint<br/>
+    /// Native code at BatmanAK.exe+0x4EDD20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2SimplePhysicsControlPoint AddControlPoint(float AddRopePosition)
     {
@@ -263,7 +271,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetControlPoint;
     /// <summary>
-    /// Function: GetControlPoint
+    /// Function: GetControlPoint<br/>
+    /// Native code at BatmanAK.exe+0x4EDBE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2SimplePhysicsControlPoint GetControlPoint(int ControlPointIndex)
     {
@@ -285,7 +294,8 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumControlPoints;
     /// <summary>
-    /// Function: GetNumControlPoints
+    /// Function: GetNumControlPoints<br/>
+    /// Native code at BatmanAK.exe+0x482F70 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumControlPoints()
     {

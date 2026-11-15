@@ -108,7 +108,8 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickUpdate;
     /// <summary>
-    /// Function: TickUpdate
+    /// Function: TickUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4E3650 in the Steam build
     /// </summary>
     public unsafe virtual void TickUpdate(float DeltaTime)
     {

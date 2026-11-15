@@ -204,7 +204,8 @@ public partial class RMagneticBlastReceiver : BmSDK.BmGame.RProjectile, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBeamInfo;
     /// <summary>
-    /// Function: UpdateBeamInfo
+    /// Function: UpdateBeamInfo<br/>
+    /// Native code at BatmanAK.exe+0x582310 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RMagneticBlastReceiver.FBeamInfo UpdateBeamInfo(BmSDK.BmGame.RMagneticBlastReceiver.FBeamInfo Info, System.Numerics.Vector3 MagLocation, float Str, bool bAffectedByGenerator, bool bSecondary, out float fEffectiveStrength)
     {
@@ -233,7 +234,8 @@ public partial class RMagneticBlastReceiver : BmSDK.BmGame.RProjectile, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBeamEffectStrength;
     /// <summary>
-    /// Function: GetBeamEffectStrength
+    /// Function: GetBeamEffectStrength<br/>
+    /// Native code at BatmanAK.exe+0x5117C0 in the Steam build
     /// </summary>
     public unsafe virtual float GetBeamEffectStrength(bool bAffectedByGenerator, BmSDK.Engine.Actor Target)
     {
@@ -660,7 +662,8 @@ public partial class RMagneticBlastReceiver : BmSDK.BmGame.RProjectile, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveProjectile;
     /// <summary>
-    /// Function: MoveProjectile
+    /// Function: MoveProjectile<br/>
+    /// Native code at BatmanAK.exe+0x494000 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveProjectile(System.Numerics.Vector3 Delta)
     {

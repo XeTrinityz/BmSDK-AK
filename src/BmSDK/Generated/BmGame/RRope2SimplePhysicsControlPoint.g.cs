@@ -80,7 +80,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Invalidate;
     /// <summary>
-    /// Function: Invalidate
+    /// Function: Invalidate<br/>
+    /// Native code at BatmanAK.exe+0x483490 in the Steam build
     /// </summary>
     public unsafe virtual void Invalidate()
     {
@@ -101,7 +102,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsValid;
     /// <summary>
-    /// Function: GetIsValid
+    /// Function: GetIsValid<br/>
+    /// Native code at BatmanAK.exe+0x6B06F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsValid()
     {
@@ -122,7 +124,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVelocity;
     /// <summary>
-    /// Function: SetVelocity
+    /// Function: SetVelocity<br/>
+    /// Native code at BatmanAK.exe+0x4833F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetVelocity(out System.Numerics.Vector3 NewVelocity)
     {
@@ -146,7 +149,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVelocity;
     /// <summary>
-    /// Function: GetVelocity
+    /// Function: GetVelocity<br/>
+    /// Native code at BatmanAK.exe+0x483390 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVelocity()
     {
@@ -167,7 +171,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPosition;
     /// <summary>
-    /// Function: SetPosition
+    /// Function: SetPosition<br/>
+    /// Native code at BatmanAK.exe+0x4832F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPosition(out System.Numerics.Vector3 NewPosition)
     {
@@ -191,7 +196,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosition;
     /// <summary>
-    /// Function: GetPosition
+    /// Function: GetPosition<br/>
+    /// Native code at BatmanAK.exe+0x483290 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPosition()
     {
@@ -212,7 +218,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearForces;
     /// <summary>
-    /// Function: ClearForces
+    /// Function: ClearForces<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void ClearForces()
     {
@@ -233,7 +240,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyImpulse;
     /// <summary>
-    /// Function: ApplyImpulse
+    /// Function: ApplyImpulse<br/>
+    /// Native code at BatmanAK.exe+0x4831F0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyImpulse(out System.Numerics.Vector3 ImpulseToApply)
     {
@@ -257,7 +265,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyForce;
     /// <summary>
-    /// Function: ApplyForce
+    /// Function: ApplyForce<br/>
+    /// Native code at BatmanAK.exe+0x483150 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyForce(out System.Numerics.Vector3 ForceToApply)
     {
@@ -281,7 +290,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControlPointPhysicsType;
     /// <summary>
-    /// Function: SetControlPointPhysicsType
+    /// Function: SetControlPointPhysicsType<br/>
+    /// Native code at BatmanAK.exe+0x4830D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetControlPointPhysicsType(BmSDK.BmGame.RRope2SimplePhysicsControlPoint.ControlPointPhysicsType NewPhysicsType)
     {
@@ -303,7 +313,8 @@ public partial class RRope2SimplePhysicsControlPoint : BmSDK.GameObject, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetControlPointPhysicsType;
     /// <summary>
-    /// Function: GetControlPointPhysicsType
+    /// Function: GetControlPointPhysicsType<br/>
+    /// Native code at BatmanAK.exe+0x483080 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2SimplePhysicsControlPoint.ControlPointPhysicsType GetControlPointPhysicsType()
     {

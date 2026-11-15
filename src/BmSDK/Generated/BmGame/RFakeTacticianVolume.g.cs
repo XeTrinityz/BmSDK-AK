@@ -80,7 +80,8 @@ public partial class RFakeTacticianVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawVolume;
     /// <summary>
-    /// Function: DebugDrawVolume
+    /// Function: DebugDrawVolume<br/>
+    /// Native code at BatmanAK.exe+0x4E7380 in the Steam build
     /// </summary>
     public unsafe virtual void DebugDrawVolume(int Red, int Green, int Blue, bool bDrawPersistent)
     {

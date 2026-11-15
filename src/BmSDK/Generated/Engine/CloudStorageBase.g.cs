@@ -80,7 +80,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeLocalStorageToCloud;
     /// <summary>
-    /// Function: UpgradeLocalStorageToCloud
+    /// Function: UpgradeLocalStorageToCloud<br/>
+    /// Native code at BatmanAK.exe+0xB5B4D0 in the Steam build
     /// </summary>
     public unsafe virtual bool UpgradeLocalStorageToCloud(BmSDK.Engine.CloudStorageUpgradeHelper UpgradeHelper, bool bForceSearchAgain = default)
     {
@@ -103,7 +104,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveConflictWithVersionIndex;
     /// <summary>
-    /// Function: ResolveConflictWithVersionIndex
+    /// Function: ResolveConflictWithVersionIndex<br/>
+    /// Native code at BatmanAK.exe+0xB5B390 in the Steam build
     /// </summary>
     public unsafe virtual bool ResolveConflictWithVersionIndex(int Index)
     {
@@ -125,7 +127,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveConflictWithNewestDocument;
     /// <summary>
-    /// Function: ResolveConflictWithNewestDocument
+    /// Function: ResolveConflictWithNewestDocument<br/>
+    /// Native code at BatmanAK.exe+0xB2E360 in the Steam build
     /// </summary>
     public unsafe virtual bool ResolveConflictWithNewestDocument()
     {
@@ -146,7 +149,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WaitForWritesToFinish;
     /// <summary>
-    /// Function: WaitForWritesToFinish
+    /// Function: WaitForWritesToFinish<br/>
+    /// Native code at BatmanAK.exe+0xB2E2C0 in the Steam build
     /// </summary>
     public unsafe virtual bool WaitForWritesToFinish(float MaxTimeSeconds = default)
     {
@@ -168,7 +172,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStillWritingFiles;
     /// <summary>
-    /// Function: IsStillWritingFiles
+    /// Function: IsStillWritingFiles<br/>
+    /// Native code at BatmanAK.exe+0xB2E270 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStillWritingFiles()
     {
@@ -189,7 +194,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDocumentWithObject;
     /// <summary>
-    /// Function: SaveDocumentWithObject
+    /// Function: SaveDocumentWithObject<br/>
+    /// Native code at BatmanAK.exe+0xB5B0F0 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveDocumentWithObject(int Index, BmSDK.GameObject ObjectData, int SaveVersion)
     {
@@ -213,7 +219,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDocumentWithBytes;
     /// <summary>
-    /// Function: SaveDocumentWithBytes
+    /// Function: SaveDocumentWithBytes<br/>
+    /// Native code at BatmanAK.exe+0xBB1590 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveDocumentWithBytes(int Index, BmSDK.TArray<byte> ByteData)
     {
@@ -236,7 +243,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDocumentWithString;
     /// <summary>
-    /// Function: SaveDocumentWithString
+    /// Function: SaveDocumentWithString<br/>
+    /// Native code at BatmanAK.exe+0xB9E380 in the Steam build
     /// </summary>
     public unsafe virtual bool SaveDocumentWithString(int Index, BmSDK.FStringArg StringData)
     {
@@ -260,7 +268,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteCloudDocument;
     /// <summary>
-    /// Function: WriteCloudDocument
+    /// Function: WriteCloudDocument<br/>
+    /// Native code at BatmanAK.exe+0xB5AFB0 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteCloudDocument(int Index)
     {
@@ -282,7 +291,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseDocumentAsObject;
     /// <summary>
-    /// Function: ParseDocumentAsObject
+    /// Function: ParseDocumentAsObject<br/>
+    /// Native code at BatmanAK.exe+0xB5ACC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject ParseDocumentAsObject(int Index, BmSDK.Class ObjectClass, int ExpectedVersion, bool bIsForConflict = default)
     {
@@ -307,7 +317,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseDocumentAsBytes;
     /// <summary>
-    /// Function: ParseDocumentAsBytes
+    /// Function: ParseDocumentAsBytes<br/>
+    /// Native code at BatmanAK.exe+0xBB13C0 in the Steam build
     /// </summary>
     public unsafe virtual void ParseDocumentAsBytes(int Index, out BmSDK.TArray<byte> ByteData, bool bIsForConflict = default)
     {
@@ -331,7 +342,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseDocumentAsString;
     /// <summary>
-    /// Function: ParseDocumentAsString
+    /// Function: ParseDocumentAsString<br/>
+    /// Native code at BatmanAK.exe+0xB9E1E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString ParseDocumentAsString(int Index, bool bIsForConflict = default)
     {
@@ -354,7 +366,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadCloudDocument;
     /// <summary>
-    /// Function: ReadCloudDocument
+    /// Function: ReadCloudDocument<br/>
+    /// Native code at BatmanAK.exe+0xB5AB50 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadCloudDocument(int Index, bool bIsForConflict = default)
     {
@@ -377,7 +390,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateCloudDocument;
     /// <summary>
-    /// Function: CreateCloudDocument
+    /// Function: CreateCloudDocument<br/>
+    /// Native code at BatmanAK.exe+0xB9E090 in the Steam build
     /// </summary>
     public unsafe virtual int CreateCloudDocument(BmSDK.FStringArg Filename)
     {
@@ -400,7 +414,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCloudDocumentName;
     /// <summary>
-    /// Function: GetCloudDocumentName
+    /// Function: GetCloudDocumentName<br/>
+    /// Native code at BatmanAK.exe+0xB9DF30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetCloudDocumentName(int Index)
     {
@@ -422,7 +437,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumCloudDocuments;
     /// <summary>
-    /// Function: GetNumCloudDocuments
+    /// Function: GetNumCloudDocuments<br/>
+    /// Native code at BatmanAK.exe+0xB2E1C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumCloudDocuments(bool bIsForConflict = default)
     {
@@ -444,7 +460,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryForCloudDocuments;
     /// <summary>
-    /// Function: QueryForCloudDocuments
+    /// Function: QueryForCloudDocuments<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual bool QueryForCloudDocuments()
     {
@@ -465,7 +482,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteKeyValue;
     /// <summary>
-    /// Function: WriteKeyValue
+    /// Function: WriteKeyValue<br/>
+    /// Native code at BatmanAK.exe+0xB9DD90 in the Steam build
     /// </summary>
     public unsafe virtual bool WriteKeyValue(BmSDK.FStringArg KeyName, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceData Value)
     {
@@ -489,7 +507,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadKeyValue;
     /// <summary>
-    /// Function: ReadKeyValue
+    /// Function: ReadKeyValue<br/>
+    /// Native code at BatmanAK.exe+0xBB11F0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadKeyValue(BmSDK.FStringArg KeyName, BmSDK.Engine.PlatformInterfaceBase.EPlatformInterfaceDataType Type, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult Value)
     {
@@ -514,7 +533,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUsingLocalStorage;
     /// <summary>
-    /// Function: IsUsingLocalStorage
+    /// Function: IsUsingLocalStorage<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool IsUsingLocalStorage()
     {
@@ -535,7 +555,8 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

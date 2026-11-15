@@ -731,7 +731,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectPointOntoPlane;
     /// <summary>
-    /// Function: ProjectPointOntoPlane
+    /// Function: ProjectPointOntoPlane<br/>
+    /// Native code at BatmanAK.exe+0x4780F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 ProjectPointOntoPlane(out System.Numerics.Vector3 rPlaneNormal, out System.Numerics.Vector3 rPointOnPlane, out System.Numerics.Vector3 rPoint)
     {
@@ -761,7 +762,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveNoCollision;
     /// <summary>
-    /// Function: MoveNoCollision
+    /// Function: MoveNoCollision<br/>
+    /// Native code at BatmanAK.exe+0x478050 in the Steam build
     /// </summary>
     public unsafe virtual bool MoveNoCollision(System.Numerics.Vector3 Delta)
     {
@@ -783,7 +785,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRotation;
     /// <summary>
-    /// Function: UpdateRotation
+    /// Function: UpdateRotation<br/>
+    /// Native code at BatmanAK.exe+0x4D07D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRotation(float DeltaTime, System.Numerics.Vector3 Destination, float currMaxSpeed, float cruisingMaxSpeed, float evasionMaxSpeed)
     {
@@ -809,7 +812,8 @@ public partial class RPawnBossFireflyBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AccelerateTowards;
     /// <summary>
-    /// Function: AccelerateTowards
+    /// Function: AccelerateTowards<br/>
+    /// Native code at BatmanAK.exe+0x4D03D0 in the Steam build
     /// </summary>
     public unsafe virtual void AccelerateTowards(float DeltaTime, System.Numerics.Vector3 Destination, float currMaxSpeed, float cruisingMaxSpeed, float evasionMaxSpeed)
     {

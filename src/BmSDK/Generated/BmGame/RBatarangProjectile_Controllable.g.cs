@@ -89,7 +89,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceLaserSight;
     /// <summary>
-    /// Function: TraceLaserSight
+    /// Function: TraceLaserSight<br/>
+    /// Native code at BatmanAK.exe+0x493D30 in the Steam build
     /// </summary>
     public unsafe virtual void TraceLaserSight(out System.Numerics.Vector3 ForwardCheckLocation)
     {
@@ -494,7 +495,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnIsInBombThugScanRange;
     /// <summary>
-    /// Function: PawnIsInBombThugScanRange
+    /// Function: PawnIsInBombThugScanRange<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe virtual bool PawnIsInBombThugScanRange(BmSDK.BmGame.RPawnVillain TestPawn)
     {
@@ -516,7 +518,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBombThugScan;
     /// <summary>
-    /// Function: UpdateBombThugScan
+    /// Function: UpdateBombThugScan<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBombThugScan()
     {
@@ -537,7 +540,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtraHitCheck;
     /// <summary>
-    /// Function: ExtraHitCheck
+    /// Function: ExtraHitCheck<br/>
+    /// Native code at BatmanAK.exe+0x493CF0 in the Steam build
     /// </summary>
     public unsafe virtual void ExtraHitCheck()
     {
@@ -558,7 +562,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFlipAnimation;
     /// <summary>
-    /// Function: PlayFlipAnimation
+    /// Function: PlayFlipAnimation<br/>
+    /// Native code at BatmanAK.exe+0x4E9180 in the Steam build
     /// </summary>
     public unsafe virtual void PlayFlipAnimation(float InPosition)
     {
@@ -580,7 +585,8 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlightPath;
     /// <summary>
-    /// Function: UpdateFlightPath
+    /// Function: UpdateFlightPath<br/>
+    /// Native code at BatmanAK.exe+0x5144C0 in the Steam build
     /// </summary>
     public unsafe override void UpdateFlightPath(float DeltaTime)
     {

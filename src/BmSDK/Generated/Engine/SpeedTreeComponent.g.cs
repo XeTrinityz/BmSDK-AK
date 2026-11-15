@@ -80,7 +80,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
-    /// Function: SetMaterial
+    /// Function: SetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB599A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterial(BmSDK.Engine.SpeedTreeComponent.ESpeedTreeMeshType MeshType, BmSDK.Engine.MaterialInterface Material)
     {
@@ -103,7 +104,8 @@ public partial class SpeedTreeComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
-    /// Function: GetMaterial
+    /// Function: GetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xB2D380 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetMaterial(BmSDK.Engine.SpeedTreeComponent.ESpeedTreeMeshType MeshType)
     {

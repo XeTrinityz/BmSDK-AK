@@ -143,7 +143,8 @@ public partial class OnlineGameInterfaceSteamworks : BmSDK.IpDrv.OnlineGameInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterPlayer;
     /// <summary>
-    /// Function: UnregisterPlayer
+    /// Function: UnregisterPlayer<br/>
+    /// Native code at BatmanAK.exe+0x107C4F0 in the Steam build
     /// </summary>
     public unsafe override bool UnregisterPlayer(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
@@ -213,7 +214,8 @@ public partial class OnlineGameInterfaceSteamworks : BmSDK.IpDrv.OnlineGameInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterPlayer;
     /// <summary>
-    /// Function: RegisterPlayer
+    /// Function: RegisterPlayer<br/>
+    /// Native code at BatmanAK.exe+0x107C2D0 in the Steam build
     /// </summary>
     public unsafe override bool RegisterPlayer(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bWasInvited)
     {
@@ -237,7 +239,8 @@ public partial class OnlineGameInterfaceSteamworks : BmSDK.IpDrv.OnlineGameInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AcceptGameInvite;
     /// <summary>
-    /// Function: AcceptGameInvite
+    /// Function: AcceptGameInvite<br/>
+    /// Native code at BatmanAK.exe+0x107C180 in the Steam build
     /// </summary>
     public unsafe override bool AcceptGameInvite(byte LocalUserNum, BmSDK.FName SessionName)
     {
@@ -309,7 +312,8 @@ public partial class OnlineGameInterfaceSteamworks : BmSDK.IpDrv.OnlineGameInter
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOnlineGame;
     /// <summary>
-    /// Function: UpdateOnlineGame
+    /// Function: UpdateOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x107BF50 in the Steam build
     /// </summary>
     public unsafe override bool UpdateOnlineGame(BmSDK.FName SessionName, BmSDK.Engine.OnlineGameSettings UpdatedGameSettings, bool bShouldRefreshOnlineData = default)
     {

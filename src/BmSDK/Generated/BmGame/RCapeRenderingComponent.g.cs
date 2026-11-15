@@ -80,7 +80,8 @@ public partial class RCapeRenderingComponent : BmSDK.Engine.ActorComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleDebugLineDrawing;
     /// <summary>
-    /// Function: HandleDebugLineDrawing
+    /// Function: HandleDebugLineDrawing<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void HandleDebugLineDrawing()
     {

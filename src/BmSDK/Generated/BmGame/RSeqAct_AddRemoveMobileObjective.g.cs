@@ -80,7 +80,8 @@ public partial class RSeqAct_AddRemoveMobileObjective : BmSDK.Engine.SequenceAct
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CollectLinkedWaveSpawners;
     /// <summary>
-    /// Function: CollectLinkedWaveSpawners
+    /// Function: CollectLinkedWaveSpawners<br/>
+    /// Native code at BatmanAK.exe+0x47FC70 in the Steam build
     /// </summary>
     public unsafe virtual void CollectLinkedWaveSpawners()
     {

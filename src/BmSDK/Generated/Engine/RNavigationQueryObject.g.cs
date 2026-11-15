@@ -80,7 +80,8 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInvalidatedState;
     /// <summary>
-    /// Function: HandleInvalidatedState
+    /// Function: HandleInvalidatedState<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void HandleInvalidatedState()
     {
@@ -101,7 +102,8 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterWithNavMeshWorld;
     /// <summary>
-    /// Function: UnregisterWithNavMeshWorld
+    /// Function: UnregisterWithNavMeshWorld<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterWithNavMeshWorld()
     {
@@ -122,7 +124,8 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMeshWorld;
     /// <summary>
-    /// Function: RegisterWithNavMeshWorld
+    /// Function: RegisterWithNavMeshWorld<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterWithNavMeshWorld()
     {

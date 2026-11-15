@@ -80,7 +80,8 @@ public partial class AnimNodeBlendList : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveChild;
     /// <summary>
-    /// Function: SetActiveChild
+    /// Function: SetActiveChild<br/>
+    /// Native code at BatmanAK.exe+0xB54650 in the Steam build
     /// </summary>
     public unsafe virtual void SetActiveChild(int ChildIndex, float BlendTime)
     {

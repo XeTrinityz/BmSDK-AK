@@ -763,7 +763,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessDeferredInterfaceCallsNative;
     /// <summary>
-    /// Function: ProcessDeferredInterfaceCallsNative
+    /// Function: ProcessDeferredInterfaceCallsNative<br/>
+    /// Native code at BatmanAK.exe+0x547560 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessDeferredInterfaceCallsNative(BmSDK.FStringArg DeferredExternalInterfaceCalls)
     {
@@ -786,7 +787,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGadgetWheel;
     /// <summary>
-    /// Function: CheckGadgetWheel
+    /// Function: CheckGadgetWheel<br/>
+    /// Native code at BatmanAK.exe+0x498160 in the Steam build
     /// </summary>
     public unsafe virtual int CheckGadgetWheel()
     {
@@ -807,7 +809,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_PushDeferredCallsToGame;
     /// <summary>
-    /// Function: XI_PushDeferredCallsToGame
+    /// Function: XI_PushDeferredCallsToGame<br/>
+    /// Native code at BatmanAK.exe+0x547420 in the Steam build
     /// </summary>
     public unsafe virtual void XI_PushDeferredCallsToGame(BmSDK.FStringArg deferred_calls)
     {
@@ -830,7 +833,8 @@ public partial class RGFxMovieRadialGadgetSelect : BmSDK.BmGame.RGFxMovie, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAndClearDeferredCalls;
     /// <summary>
-    /// Function: CheckAndClearDeferredCalls
+    /// Function: CheckAndClearDeferredCalls<br/>
+    /// Native code at BatmanAK.exe+0x5473A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString CheckAndClearDeferredCalls()
     {

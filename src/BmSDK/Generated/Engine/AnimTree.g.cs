@@ -85,7 +85,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupIndex;
     /// <summary>
-    /// Function: GetGroupIndex
+    /// Function: GetGroupIndex<br/>
+    /// Native code at BatmanAK.exe+0xB56D80 in the Steam build
     /// </summary>
     public unsafe virtual int GetGroupIndex(BmSDK.FName GroupName)
     {
@@ -107,7 +108,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupRateScale;
     /// <summary>
-    /// Function: GetGroupRateScale
+    /// Function: GetGroupRateScale<br/>
+    /// Native code at BatmanAK.exe+0xB56C40 in the Steam build
     /// </summary>
     public unsafe virtual float GetGroupRateScale(BmSDK.FName GroupName)
     {
@@ -129,7 +131,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGroupRateScale;
     /// <summary>
-    /// Function: SetGroupRateScale
+    /// Function: SetGroupRateScale<br/>
+    /// Native code at BatmanAK.exe+0xB56A40 in the Steam build
     /// </summary>
     public unsafe virtual void SetGroupRateScale(BmSDK.FName GroupName, float NewRateScale)
     {
@@ -152,7 +155,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupRelativePosition;
     /// <summary>
-    /// Function: GetGroupRelativePosition
+    /// Function: GetGroupRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB56900 in the Steam build
     /// </summary>
     public unsafe virtual float GetGroupRelativePosition(BmSDK.FName GroupName)
     {
@@ -174,7 +178,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceGroupRelativePosition;
     /// <summary>
-    /// Function: ForceGroupRelativePosition
+    /// Function: ForceGroupRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB56700 in the Steam build
     /// </summary>
     public unsafe virtual void ForceGroupRelativePosition(BmSDK.FName GroupName, float RelativePosition)
     {
@@ -197,7 +202,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupNotifyMaster;
     /// <summary>
-    /// Function: GetGroupNotifyMaster
+    /// Function: GetGroupNotifyMaster<br/>
+    /// Native code at BatmanAK.exe+0xB565C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetGroupNotifyMaster(BmSDK.FName GroupName)
     {
@@ -219,7 +225,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGroupSynchMaster;
     /// <summary>
-    /// Function: GetGroupSynchMaster
+    /// Function: GetGroupSynchMaster<br/>
+    /// Native code at BatmanAK.exe+0xB56480 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetGroupSynchMaster(BmSDK.FName GroupName)
     {
@@ -241,7 +248,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimGroupForNode;
     /// <summary>
-    /// Function: SetAnimGroupForNode
+    /// Function: SetAnimGroupForNode<br/>
+    /// Native code at BatmanAK.exe+0xB56260 in the Steam build
     /// </summary>
     public unsafe virtual bool SetAnimGroupForNode(BmSDK.Engine.AnimNodeSequence SeqNode, BmSDK.FName GroupName, bool bCreateIfNotFound = default)
     {
@@ -265,7 +273,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUseSavedPose;
     /// <summary>
-    /// Function: SetUseSavedPose
+    /// Function: SetUseSavedPose<br/>
+    /// Native code at BatmanAK.exe+0xB56140 in the Steam build
     /// </summary>
     public unsafe virtual void SetUseSavedPose(bool bUseSaved)
     {
@@ -287,7 +296,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphNode;
     /// <summary>
-    /// Function: FindMorphNode
+    /// Function: FindMorphNode<br/>
+    /// Native code at BatmanAK.exe+0xB56000 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphNodeBase FindMorphNode(BmSDK.FName InNodeName)
     {
@@ -309,7 +319,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControls;
     /// <summary>
-    /// Function: FindSkelControls
+    /// Function: FindSkelControls<br/>
+    /// Native code at BatmanAK.exe+0xBB6E00 in the Steam build
     /// </summary>
     public unsafe virtual void FindSkelControls(BmSDK.FName InControlName, out BmSDK.TArray<BmSDK.Engine.SkelControlBase> SkelControls)
     {
@@ -332,7 +343,8 @@ public partial class AnimTree : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControl;
     /// <summary>
-    /// Function: FindSkelControl
+    /// Function: FindSkelControl<br/>
+    /// Native code at BatmanAK.exe+0xB55EC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkelControlBase FindSkelControl(BmSDK.FName InControlName)
     {

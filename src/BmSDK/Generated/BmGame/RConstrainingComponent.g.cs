@@ -108,7 +108,8 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRBConstraints;
     /// <summary>
-    /// Function: UpdateRBConstraints
+    /// Function: UpdateRBConstraints<br/>
+    /// Native code at BatmanAK.exe+0x485840 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateRBConstraints(bool bNoPhys = default)
     {
@@ -130,7 +131,8 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearRBConstraints;
     /// <summary>
-    /// Function: ClearRBConstraints
+    /// Function: ClearRBConstraints<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearRBConstraints()
     {
@@ -151,7 +153,8 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRBConstraint;
     /// <summary>
-    /// Function: AddRBConstraint
+    /// Function: AddRBConstraint<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void AddRBConstraint(BmSDK.Engine.RB_ConstraintSetup ConstraintSetup)
     {
@@ -173,7 +176,8 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsSyncronised;
     /// <summary>
-    /// Function: GetIsSyncronised
+    /// Function: GetIsSyncronised<br/>
+    /// Native code at BatmanAK.exe+0x4857F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsSyncronised()
     {
@@ -194,7 +198,8 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasRBConstraints;
     /// <summary>
-    /// Function: GetHasRBConstraints
+    /// Function: GetHasRBConstraints<br/>
+    /// Native code at BatmanAK.exe+0x4857A0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasRBConstraints()
     {

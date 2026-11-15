@@ -80,7 +80,8 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCancelSwing;
     /// <summary>
-    /// Function: CanCancelSwing
+    /// Function: CanCancelSwing<br/>
+    /// Native code at BatmanAK.exe+0x47F530 in the Steam build
     /// </summary>
     public unsafe virtual bool CanCancelSwing()
     {
@@ -345,7 +346,8 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrajectory;
     /// <summary>
-    /// Function: UpdateTrajectory
+    /// Function: UpdateTrajectory<br/>
+    /// Native code at BatmanAK.exe+0x4E2A10 in the Steam build
     /// </summary>
     public unsafe virtual float UpdateTrajectory(float DeltaTime, out System.Numerics.Vector3 Position, out BmSDK.Rotator PlayerRotation)
     {
@@ -373,7 +375,8 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupTrajectory;
     /// <summary>
-    /// Function: SetupTrajectory
+    /// Function: SetupTrajectory<br/>
+    /// Native code at BatmanAK.exe+0x4E2550 in the Steam build
     /// </summary>
     public unsafe virtual void SetupTrajectory(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float DefaultDistance, float DefaultRadius, float AnimationDuration, float DurationPower, bool SwingFromPointAboveTarget)
     {
@@ -401,7 +404,8 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireToPoint;
     /// <summary>
-    /// Function: CalculateFireToPoint
+    /// Function: CalculateFireToPoint<br/>
+    /// Native code at BatmanAK.exe+0x4E22B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateFireToPoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float DefaultDistance, float DefaultRadius)
     {

@@ -126,7 +126,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BindPlatformSpecificSessionToSearch;
     /// <summary>
-    /// Function: BindPlatformSpecificSessionToSearch
+    /// Function: BindPlatformSpecificSessionToSearch<br/>
+    /// Native code at BatmanAK.exe+0x6B03E0 in the Steam build
     /// </summary>
     public unsafe virtual bool BindPlatformSpecificSessionToSearch(byte SearchingPlayerNum, BmSDK.Engine.OnlineGameSearch SearchSettings, byte PlatformSpecificInfo)
     {
@@ -168,7 +169,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadPlatformSpecificSessionInfo;
     /// <summary>
-    /// Function: ReadPlatformSpecificSessionInfo
+    /// Function: ReadPlatformSpecificSessionInfo<br/>
+    /// Native code at BatmanAK.exe+0x6B02D0 in the Steam build
     /// </summary>
     public unsafe virtual bool ReadPlatformSpecificSessionInfo(out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult DesiredGame, out byte PlatformSpecificInfo)
     {
@@ -587,7 +589,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOnlineGame;
     /// <summary>
-    /// Function: EndOnlineGame
+    /// Function: EndOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x6B0190 in the Steam build
     /// </summary>
     public unsafe virtual bool EndOnlineGame(BmSDK.FName SessionName)
     {
@@ -655,7 +658,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartOnlineGame;
     /// <summary>
-    /// Function: StartOnlineGame
+    /// Function: StartOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x6B0050 in the Steam build
     /// </summary>
     public unsafe virtual bool StartOnlineGame(BmSDK.FName SessionName)
     {
@@ -836,7 +840,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolvedConnectString;
     /// <summary>
-    /// Function: GetResolvedConnectString
+    /// Function: GetResolvedConnectString<br/>
+    /// Native code at BatmanAK.exe+0x6B4950 in the Steam build
     /// </summary>
     public unsafe virtual bool GetResolvedConnectString(BmSDK.FName SessionName, out BmSDK.FString ConnectInfo)
     {
@@ -905,7 +910,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinOnlineGame;
     /// <summary>
-    /// Function: JoinOnlineGame
+    /// Function: JoinOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x6AFEC0 in the Steam build
     /// </summary>
     public unsafe virtual bool JoinOnlineGame(byte PlayerNum, BmSDK.FName SessionName, out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult DesiredGame)
     {
@@ -931,7 +937,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeSearchResults;
     /// <summary>
-    /// Function: FreeSearchResults
+    /// Function: FreeSearchResults<br/>
+    /// Native code at BatmanAK.exe+0x6AFD80 in the Steam build
     /// </summary>
     public unsafe virtual bool FreeSearchResults(BmSDK.Engine.OnlineGameSearch Search)
     {
@@ -998,7 +1005,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelFindOnlineGames;
     /// <summary>
-    /// Function: CancelFindOnlineGames
+    /// Function: CancelFindOnlineGames<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool CancelFindOnlineGames()
     {
@@ -1049,7 +1057,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindOnlineGames;
     /// <summary>
-    /// Function: FindOnlineGames
+    /// Function: FindOnlineGames<br/>
+    /// Native code at BatmanAK.exe+0x6AFC30 in the Steam build
     /// </summary>
     public unsafe virtual bool FindOnlineGames(byte SearchingPlayerNum, BmSDK.Engine.OnlineGameSearch SearchSettings)
     {
@@ -1118,7 +1127,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyOnlineGame;
     /// <summary>
-    /// Function: DestroyOnlineGame
+    /// Function: DestroyOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x6AFAF0 in the Steam build
     /// </summary>
     public unsafe virtual bool DestroyOnlineGame(BmSDK.FName SessionName)
     {
@@ -1249,7 +1259,8 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.Engine.On
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateOnlineGame;
     /// <summary>
-    /// Function: CreateOnlineGame
+    /// Function: CreateOnlineGame<br/>
+    /// Native code at BatmanAK.exe+0x6AF8E0 in the Steam build
     /// </summary>
     public unsafe virtual bool CreateOnlineGame(byte HostingPlayerNum, BmSDK.FName SessionName, BmSDK.Engine.OnlineGameSettings NewGameSettings)
     {

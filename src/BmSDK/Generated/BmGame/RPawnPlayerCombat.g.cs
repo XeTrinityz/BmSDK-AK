@@ -372,7 +372,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInBatmobile;
     /// <summary>
-    /// Function: IsInBatmobile
+    /// Function: IsInBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x4754E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInBatmobile()
     {
@@ -1120,7 +1121,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentPylon;
     /// <summary>
-    /// Function: SetCurrentPylon
+    /// Function: SetCurrentPylon<br/>
+    /// Native code at BatmanAK.exe+0x4754A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentPylon()
     {
@@ -2558,7 +2560,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeContactTime;
     /// <summary>
-    /// Function: GetStrikeContactTime
+    /// Function: GetStrikeContactTime<br/>
+    /// Native code at BatmanAK.exe+0x4C75C0 in the Steam build
     /// </summary>
     public unsafe virtual float GetStrikeContactTime(BmSDK.Engine.AnimSequence StrikeAnimSequence)
     {
@@ -2580,7 +2583,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberOfCounterHits;
     /// <summary>
-    /// Function: GetNumberOfCounterHits
+    /// Function: GetNumberOfCounterHits<br/>
+    /// Native code at BatmanAK.exe+0x553530 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumberOfCounterHits(BmSDK.Engine.AnimSequence StrikeAnimSequence, out BmSDK.TArray<float> SlowMoHitTimes, out float FirstCounterHitTime)
     {
@@ -3595,7 +3599,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemovePairedAnimset;
     /// <summary>
-    /// Function: RemovePairedAnimset
+    /// Function: RemovePairedAnimset<br/>
+    /// Native code at BatmanAK.exe+0x4C7490 in the Steam build
     /// </summary>
     public unsafe virtual void RemovePairedAnimset(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -3765,7 +3770,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPairedAnimAudioWeaponSwitch;
     /// <summary>
-    /// Function: SetPairedAnimAudioWeaponSwitch
+    /// Function: SetPairedAnimAudioWeaponSwitch<br/>
+    /// Native code at BatmanAK.exe+0x4C7360 in the Steam build
     /// </summary>
     public unsafe virtual void SetPairedAnimAudioWeaponSwitch(BmSDK.Engine.AkSwitchName SwitchName)
     {
@@ -3787,7 +3793,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryAddSimultaneousCounter;
     /// <summary>
-    /// Function: TryAddSimultaneousCounter
+    /// Function: TryAddSimultaneousCounter<br/>
+    /// Native code at BatmanAK.exe+0x4C6F20 in the Steam build
     /// </summary>
     public unsafe virtual void TryAddSimultaneousCounter(BmSDK.BmGame.RPawnVillain Target, BmSDK.Engine.AnimSequence Sequence, BmSDK.BmGame.RAnimNotify_SimultaneousCounterHit SCounterEvent, BmSDK.Engine.AnimSet NewCounterAnimSet, BmSDK.Engine.AnimSet NewCounterTargetAnimSet)
     {
@@ -3813,7 +3820,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceToGiveToPawn;
     /// <summary>
-    /// Function: GetForceToGiveToPawn
+    /// Function: GetForceToGiveToPawn<br/>
+    /// Native code at BatmanAK.exe+0x4C3790 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat Receiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
@@ -3838,7 +3846,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindHighestPriorityTarget;
     /// <summary>
-    /// Function: FindHighestPriorityTarget
+    /// Function: FindHighestPriorityTarget<br/>
+    /// Native code at BatmanAK.exe+0x561460 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindHighestPriorityTarget(BmSDK.TArray<BmSDK.BmGame.RPawnPlayerCombat.FStrikeTargetInfo> TargetList, System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default)
     {
@@ -3862,7 +3871,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignTargetScores;
     /// <summary>
-    /// Function: AssignTargetScores
+    /// Function: AssignTargetScores<br/>
+    /// Native code at BatmanAK.exe+0x5612F0 in the Steam build
     /// </summary>
     public unsafe virtual void AssignTargetScores(out BmSDK.TArray<BmSDK.BmGame.RPawnPlayerCombat.FStrikeTargetInfo> TargetList, System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default)
     {
@@ -3886,7 +3896,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveTargetsOutsideTargetCone;
     /// <summary>
-    /// Function: RemoveTargetsOutsideTargetCone
+    /// Function: RemoveTargetsOutsideTargetCone<br/>
+    /// Native code at BatmanAK.exe+0x560FA0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveTargetsOutsideTargetCone(out BmSDK.TArray<BmSDK.BmGame.RPawnPlayerCombat.FStrikeTargetInfo> TargetList, float MaxDist, float MaxChargingDist, System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType)
     {
@@ -3912,7 +3923,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidFacingActorForStrike;
     /// <summary>
-    /// Function: IsValidFacingActorForStrike
+    /// Function: IsValidFacingActorForStrike<br/>
+    /// Native code at BatmanAK.exe+0x4C6B30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidFacingActorForStrike(BmSDK.BmGame.RPawnVillain TestPawn, float MaxDist, float MaxChargingDist, System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType)
     {
@@ -3938,7 +3950,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindValidFacingActorsForStrike;
     /// <summary>
-    /// Function: FindValidFacingActorsForStrike
+    /// Function: FindValidFacingActorsForStrike<br/>
+    /// Native code at BatmanAK.exe+0x560C50 in the Steam build
     /// </summary>
     public unsafe virtual void FindValidFacingActorsForStrike(out BmSDK.TArray<BmSDK.BmGame.RPawnPlayerCombat.FStrikeTargetInfo> ValidTargets, float MaxDist, float MaxChargingDist, System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType)
     {
@@ -3964,7 +3977,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFacingActorForStrike;
     /// <summary>
-    /// Function: FindFacingActorForStrike
+    /// Function: FindFacingActorForStrike<br/>
+    /// Native code at BatmanAK.exe+0x475300 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindFacingActorForStrike(float MaxDist = default, float MaxChargingDist = default, System.Numerics.Vector3 FacingDir = default, BmSDK.Class dmgType = default)
     {
@@ -3989,7 +4003,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidDeadTarget;
     /// <summary>
-    /// Function: IsValidDeadTarget
+    /// Function: IsValidDeadTarget<br/>
+    /// Native code at BatmanAK.exe+0x4C6940 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidDeadTarget(BmSDK.BmGame.RPawnVillain TestPawn, BmSDK.Class DamageType)
     {
@@ -4012,7 +4027,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTargetForStrike_Expensive;
     /// <summary>
-    /// Function: IsValidTargetForStrike_Expensive
+    /// Function: IsValidTargetForStrike_Expensive<br/>
+    /// Native code at BatmanAK.exe+0x4C6750 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTargetForStrike_Expensive(BmSDK.BmGame.RPawnVillain TestPawn, BmSDK.Class DamageType)
     {
@@ -4035,7 +4051,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTargetForStrike_Cheap;
     /// <summary>
-    /// Function: IsValidTargetForStrike_Cheap
+    /// Function: IsValidTargetForStrike_Cheap<br/>
+    /// Native code at BatmanAK.exe+0x4C6560 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTargetForStrike_Cheap(BmSDK.BmGame.RPawnVillain TestPawn, BmSDK.Class DamageType)
     {
@@ -4058,7 +4075,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedWeaponSnatch;
     /// <summary>
-    /// Function: RemoveDetectedWeaponSnatch
+    /// Function: RemoveDetectedWeaponSnatch<br/>
+    /// Native code at BatmanAK.exe+0x4C6430 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedWeaponSnatch(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4080,7 +4098,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectWeaponSnatch;
     /// <summary>
-    /// Function: DetectWeaponSnatch
+    /// Function: DetectWeaponSnatch<br/>
+    /// Native code at BatmanAK.exe+0x4C6240 in the Steam build
     /// </summary>
     public unsafe virtual void DetectWeaponSnatch(BmSDK.Engine.AnimSet NewWeaponSnatchBMAnimSet, BmSDK.Engine.AnimSet NewWeaponSnatchTargetAnimSet)
     {
@@ -4103,7 +4122,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedWeaponDestroy;
     /// <summary>
-    /// Function: RemoveDetectedWeaponDestroy
+    /// Function: RemoveDetectedWeaponDestroy<br/>
+    /// Native code at BatmanAK.exe+0x4C6110 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedWeaponDestroy(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4125,7 +4145,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedThrows;
     /// <summary>
-    /// Function: RemoveDetectedThrows
+    /// Function: RemoveDetectedThrows<br/>
+    /// Native code at BatmanAK.exe+0x4C5FE0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedThrows(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4147,7 +4168,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedTakedowns;
     /// <summary>
-    /// Function: RemoveDetectedTakedowns
+    /// Function: RemoveDetectedTakedowns<br/>
+    /// Native code at BatmanAK.exe+0x4C5EB0 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedTakedowns(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4169,7 +4191,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedCounters;
     /// <summary>
-    /// Function: RemoveDetectedCounters
+    /// Function: RemoveDetectedCounters<br/>
+    /// Native code at BatmanAK.exe+0x4C5D80 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedCounters(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4191,7 +4214,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectedStrikes;
     /// <summary>
-    /// Function: RemoveDetectedStrikes
+    /// Function: RemoveDetectedStrikes<br/>
+    /// Native code at BatmanAK.exe+0x4C5C50 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDetectedStrikes(BmSDK.Engine.AnimSet RemoveAnimset)
     {
@@ -4213,7 +4237,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectWeaponDestroy;
     /// <summary>
-    /// Function: DetectWeaponDestroy
+    /// Function: DetectWeaponDestroy<br/>
+    /// Native code at BatmanAK.exe+0x4C5A60 in the Steam build
     /// </summary>
     public unsafe virtual void DetectWeaponDestroy(BmSDK.Engine.AnimSet NewWeaponDestroyAnimSet, BmSDK.Engine.AnimSet NewWeaponDestroyTargetAnimSet)
     {
@@ -4236,7 +4261,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectThrows;
     /// <summary>
-    /// Function: DetectThrows
+    /// Function: DetectThrows<br/>
+    /// Native code at BatmanAK.exe+0x4C5870 in the Steam build
     /// </summary>
     public unsafe virtual void DetectThrows(BmSDK.Engine.AnimSet NewThrowAnimSet, BmSDK.Engine.AnimSet NewThrowTargetAnimSet)
     {
@@ -4259,7 +4285,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectTakedowns;
     /// <summary>
-    /// Function: DetectTakedowns
+    /// Function: DetectTakedowns<br/>
+    /// Native code at BatmanAK.exe+0x4C5680 in the Steam build
     /// </summary>
     public unsafe virtual void DetectTakedowns(BmSDK.Engine.AnimSet NewTakedownAnimSet, BmSDK.Engine.AnimSet NewTakedownTargetAnimSet)
     {
@@ -4282,7 +4309,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectCounters;
     /// <summary>
-    /// Function: DetectCounters
+    /// Function: DetectCounters<br/>
+    /// Native code at BatmanAK.exe+0x4C53E0 in the Steam build
     /// </summary>
     public unsafe virtual void DetectCounters(BmSDK.BmGame.RPawnVillain Target, BmSDK.Engine.AnimSet NewCounterAnimSet, BmSDK.Engine.AnimSet NewCounterTargetAnimSet)
     {
@@ -4306,7 +4334,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectStrikesWithOptionalBeatdownEnds;
     /// <summary>
-    /// Function: DetectStrikesWithOptionalBeatdownEnds
+    /// Function: DetectStrikesWithOptionalBeatdownEnds<br/>
+    /// Native code at BatmanAK.exe+0x4C5270 in the Steam build
     /// </summary>
     public unsafe virtual void DetectStrikesWithOptionalBeatdownEnds(BmSDK.Engine.AnimSet NewStrikeAnimSet, bool bIncludeBeatdownEnds = default)
     {
@@ -4329,7 +4358,8 @@ public partial class RPawnPlayerCombat : BmSDK.BmGame.RPawnPlayerAnim, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectStrikes;
     /// <summary>
-    /// Function: DetectStrikes
+    /// Function: DetectStrikes<br/>
+    /// Native code at BatmanAK.exe+0x4C5140 in the Steam build
     /// </summary>
     public unsafe virtual void DetectStrikes(BmSDK.Engine.AnimSet NewStrikeAnimSet)
     {

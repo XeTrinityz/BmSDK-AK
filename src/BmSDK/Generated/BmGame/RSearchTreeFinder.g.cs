@@ -103,7 +103,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
-    /// Function: Cleanup
+    /// Function: Cleanup<br/>
+    /// Native code at BatmanAK.exe+0xB506A0 in the Steam build
     /// </summary>
     public unsafe virtual void Cleanup()
     {
@@ -124,7 +125,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInvalidatedState;
     /// <summary>
-    /// Function: HandleInvalidatedState
+    /// Function: HandleInvalidatedState<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe override void HandleInvalidatedState()
     {
@@ -145,7 +147,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Function __fn_SmoothCPPath;
     /// <summary>
-    /// Function: SmoothCPPath
+    /// Function: SmoothCPPath<br/>
+    /// Native code at BatmanAK.exe+0x556C40 in the Steam build
     /// </summary>
     public unsafe static bool SmoothCPPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath)
     {
@@ -166,7 +169,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCornerPointOnPath;
     /// <summary>
-    /// Function: FindCornerPointOnPath
+    /// Function: FindCornerPointOnPath<br/>
+    /// Native code at BatmanAK.exe+0x5569E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindCornerPointOnPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath, BmSDK.BmGame.RBMAIController TestLockCon, out BmSDK.BmGame.RCornerWallMarker StartPoint, out BmSDK.BmGame.RCornerWallMarker EndPoint, out float DistAlongPath)
     {
@@ -198,7 +202,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindWeakWallOnPath;
     /// <summary>
-    /// Function: FindWeakWallOnPath
+    /// Function: FindWeakWallOnPath<br/>
+    /// Native code at BatmanAK.exe+0x556840 in the Steam build
     /// </summary>
     public unsafe virtual bool FindWeakWallOnPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath, out BmSDK.BmGame.RDestructibleProp_FractureWall WeakWall, out System.Numerics.Vector3 StartPoint, out float DistAlongPath)
     {
@@ -229,7 +234,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRailingOnPath;
     /// <summary>
-    /// Function: FindRailingOnPath
+    /// Function: FindRailingOnPath<br/>
+    /// Native code at BatmanAK.exe+0x5644F0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindRailingOnPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath, BmSDK.TArray<BmSDK.BmGame.RLedgeLookDangerAreaInfo> DoNotUseLedgeList, out BmSDK.BmGame.RLedgeLookDangerAreaInfo DangerInfo, out System.Numerics.Vector3 WalkStart, out System.Numerics.Vector3 WalkEnd, out float DistAlongPath, out byte bExitsZone)
     {
@@ -267,7 +273,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLastGrateOnPath;
     /// <summary>
-    /// Function: FindLastGrateOnPath
+    /// Function: FindLastGrateOnPath<br/>
+    /// Native code at BatmanAK.exe+0x556610 in the Steam build
     /// </summary>
     public unsafe virtual bool FindLastGrateOnPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath, byte TunnelID, BmSDK.BmGame.RTunnelGrateBase StartGrate, out BmSDK.BmGame.RTunnelGrateBase EndGrate, out System.Numerics.Vector3 StandAtEndPoint)
     {
@@ -297,7 +304,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFirstGrateOnPath;
     /// <summary>
-    /// Function: FindFirstGrateOnPath
+    /// Function: FindFirstGrateOnPath<br/>
+    /// Native code at BatmanAK.exe+0x5564D0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindFirstGrateOnPath(BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath, out BmSDK.BmGame.RTunnelGrateBase Grate, out float DistAlongPath)
     {
@@ -325,7 +333,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDuplicateUnseenVerts;
     /// <summary>
-    /// Function: RemoveDuplicateUnseenVerts
+    /// Function: RemoveDuplicateUnseenVerts<br/>
+    /// Native code at BatmanAK.exe+0xB38410 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDuplicateUnseenVerts()
     {
@@ -346,7 +355,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateBranchLengths;
     /// <summary>
-    /// Function: CalculateBranchLengths
+    /// Function: CalculateBranchLengths<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateBranchLengths()
     {
@@ -367,7 +377,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CountBranchPoints;
     /// <summary>
-    /// Function: CountBranchPoints
+    /// Function: CountBranchPoints<br/>
+    /// Native code at BatmanAK.exe+0x48D7B0 in the Steam build
     /// </summary>
     public unsafe virtual void CountBranchPoints()
     {
@@ -388,7 +399,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildSearchPaths;
     /// <summary>
-    /// Function: BuildSearchPaths
+    /// Function: BuildSearchPaths<br/>
+    /// Native code at BatmanAK.exe+0x48B9E0 in the Steam build
     /// </summary>
     public unsafe virtual void BuildSearchPaths()
     {
@@ -409,7 +421,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUnseenVerts;
     /// <summary>
-    /// Function: AddUnseenVerts
+    /// Function: AddUnseenVerts<br/>
+    /// Native code at BatmanAK.exe+0x48D1B0 in the Steam build
     /// </summary>
     public unsafe virtual void AddUnseenVerts()
     {
@@ -430,7 +443,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReduceBranches;
     /// <summary>
-    /// Function: ReduceBranches
+    /// Function: ReduceBranches<br/>
+    /// Native code at BatmanAK.exe+0x483490 in the Steam build
     /// </summary>
     public unsafe virtual void ReduceBranches()
     {
@@ -451,7 +465,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessAntiBackTracking;
     /// <summary>
-    /// Function: ProcessAntiBackTracking
+    /// Function: ProcessAntiBackTracking<br/>
+    /// Native code at BatmanAK.exe+0xB2CC00 in the Steam build
     /// </summary>
     public unsafe virtual void ProcessAntiBackTracking()
     {
@@ -472,7 +487,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConnectVisitedEdges;
     /// <summary>
-    /// Function: ConnectVisitedEdges
+    /// Function: ConnectVisitedEdges<br/>
+    /// Native code at BatmanAK.exe+0xB3F190 in the Steam build
     /// </summary>
     public unsafe virtual void ConnectVisitedEdges()
     {
@@ -493,7 +509,8 @@ public partial class RSearchTreeFinder : BmSDK.Engine.RNavigationQueryObject, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugShowPaths;
     /// <summary>
-    /// Function: DebugShowPaths
+    /// Function: DebugShowPaths<br/>
+    /// Native code at BatmanAK.exe+0x509C70 in the Steam build
     /// </summary>
     public unsafe virtual void DebugShowPaths(bool bPersistent)
     {
@@ -739,7 +756,8 @@ public static class RSearchTreeFinderStatics
 {
     private static BmSDK.Function __fn_SmoothCPPath;
     /// <summary>
-    /// Function: SmoothCPPath, run on <paramref name="self"/> rather than the class default object
+    /// Function: SmoothCPPath, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x556C40 in the Steam build
     /// </summary>
     public unsafe static bool SmoothCPPath(this BmSDK.BmGame.RSearchTreeFinder self, BmSDK.TArray<BmSDK.BmGame.RChasePoint> CPPath)
     {

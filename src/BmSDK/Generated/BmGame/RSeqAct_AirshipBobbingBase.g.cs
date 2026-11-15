@@ -122,7 +122,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateManualControl;
     /// <summary>
-    /// Function: UpdateManualControl
+    /// Function: UpdateManualControl<br/>
+    /// Native code at BatmanAK.exe+0xB5CC00 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateManualControl(float DeltaTime)
     {
@@ -144,7 +145,8 @@ public partial class RSeqAct_AirshipBobbingBase : BmSDK.Engine.SeqAct_Latent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOWBob;
     /// <summary>
-    /// Function: UpdateOWBob
+    /// Function: UpdateOWBob<br/>
+    /// Native code at BatmanAK.exe+0x4E4610 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator UpdateOWBob(float DeltaTime, out System.Numerics.Vector3 BobEuler)
     {

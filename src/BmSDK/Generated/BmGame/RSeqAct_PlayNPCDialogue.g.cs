@@ -182,7 +182,8 @@ public partial class RSeqAct_PlayNPCDialogue : BmSDK.BmGame.RSeqAct_PlaySpeechBa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
-    /// Function: StartSpeechNative
+    /// Function: StartSpeechNative<br/>
+    /// Native code at BatmanAK.exe+0xB38EF0 in the Steam build
     /// </summary>
     public unsafe override bool StartSpeechNative()
     {
@@ -203,7 +204,8 @@ public partial class RSeqAct_PlayNPCDialogue : BmSDK.BmGame.RSeqAct_PlaySpeechBa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockedByCineMode;
     /// <summary>
-    /// Function: BlockedByCineMode
+    /// Function: BlockedByCineMode<br/>
+    /// Native code at BatmanAK.exe+0x496A60 in the Steam build
     /// </summary>
     public unsafe override bool BlockedByCineMode()
     {

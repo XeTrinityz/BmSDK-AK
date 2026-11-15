@@ -80,7 +80,8 @@ public partial class RBMBehaviour_Conversation : BmSDK.BmGame.RBMBehaviour_Contr
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCheckFalling;
     /// <summary>
-    /// Function: CanCheckFalling
+    /// Function: CanCheckFalling<br/>
+    /// Native code at BatmanAK.exe+0x47F9A0 in the Steam build
     /// </summary>
     public unsafe override bool CanCheckFalling()
     {

@@ -80,7 +80,8 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StaticCreatePawn;
     /// <summary>
-    /// Function: StaticCreatePawn
+    /// Function: StaticCreatePawn<br/>
+    /// Native code at BatmanAK.exe+0x4A8EE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBMPawnAI StaticCreatePawn(System.Numerics.Vector3 Location, BmSDK.Rotator Rotation, BmSDK.Engine.Actor UseSpawnPoint, BmSDK.Class SpawnPawnClass, BmSDK.Class SpawnCharactersType, bool SnapToGround, BmSDK.FName InitialMovementStance, BmSDK.FName InitialWeaponStance)
     {
@@ -797,7 +798,8 @@ public static class RCharacterStatics
 {
     private static BmSDK.Function __fn_StaticCreatePawn;
     /// <summary>
-    /// Function: StaticCreatePawn, run on <paramref name="self"/> rather than the class default object
+    /// Function: StaticCreatePawn, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4A8EE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBMPawnAI StaticCreatePawn(this BmSDK.BmGame.RCharacter self, System.Numerics.Vector3 Location, BmSDK.Rotator Rotation, BmSDK.Engine.Actor UseSpawnPoint, BmSDK.Class SpawnPawnClass, BmSDK.Class SpawnCharactersType, bool SnapToGround, BmSDK.FName InitialMovementStance, BmSDK.FName InitialWeaponStance)
     {

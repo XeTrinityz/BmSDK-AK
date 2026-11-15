@@ -117,7 +117,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimEndLocation;
     /// <summary>
-    /// Function: GetAnimEndLocation
+    /// Function: GetAnimEndLocation<br/>
+    /// Native code at BatmanAK.exe+0x4DEDB0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAnimEndLocation(BmSDK.FName AnimName, BmSDK.Engine.AnimSet AnimSet, System.Numerics.Vector3 AnimLocation, BmSDK.Rotator AnimRotation, bool Mirrored, bool WhenCollisionTurnsOn = default)
     {
@@ -144,7 +145,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceAtEndOfAnim;
     /// <summary>
-    /// Function: CheckSpaceAtEndOfAnim
+    /// Function: CheckSpaceAtEndOfAnim<br/>
+    /// Native code at BatmanAK.exe+0x4DEB30 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceAtEndOfAnim(BmSDK.FName AnimName, BmSDK.Engine.AnimSet AnimSet, System.Numerics.Vector3 AnimLocation, BmSDK.Rotator AnimRotation)
     {
@@ -358,7 +360,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimSet;
     /// <summary>
-    /// Function: GetAnimSet
+    /// Function: GetAnimSet<br/>
+    /// Native code at BatmanAK.exe+0x47EE20 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetAnimSet()
     {
@@ -1023,7 +1026,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAudioState;
     /// <summary>
-    /// Function: ResetAudioState
+    /// Function: ResetAudioState<br/>
+    /// Native code at BatmanAK.exe+0x4B9700 in the Steam build
     /// </summary>
     public unsafe virtual void ResetAudioState(BmSDK.Engine.AkStateName StateName)
     {
@@ -1045,7 +1049,8 @@ public partial class RSpecialMoveInstance : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioState;
     /// <summary>
-    /// Function: SetAudioState
+    /// Function: SetAudioState<br/>
+    /// Native code at BatmanAK.exe+0x4DEA00 in the Steam build
     /// </summary>
     public unsafe virtual void SetAudioState(BmSDK.Engine.AkStateName StateName)
     {

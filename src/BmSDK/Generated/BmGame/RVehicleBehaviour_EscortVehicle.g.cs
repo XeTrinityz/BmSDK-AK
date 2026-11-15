@@ -230,7 +230,8 @@ public partial class RVehicleBehaviour_EscortVehicle : BmSDK.BmGame.RVehicleBeha
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FillPassengerVariables;
     /// <summary>
-    /// Function: FillPassengerVariables
+    /// Function: FillPassengerVariables<br/>
+    /// Native code at BatmanAK.exe+0x49A4D0 in the Steam build
     /// </summary>
     public unsafe virtual void FillPassengerVariables()
     {

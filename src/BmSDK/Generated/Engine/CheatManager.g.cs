@@ -327,7 +327,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TelemetryTogglePause;
     /// <summary>
-    /// Function: TelemetryTogglePause
+    /// Function: TelemetryTogglePause<br/>
+    /// Native code at BatmanAK.exe+0xB3F190 in the Steam build
     /// </summary>
     public unsafe virtual void TelemetryTogglePause()
     {
@@ -348,7 +349,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpCoverStats;
     /// <summary>
-    /// Function: DumpCoverStats
+    /// Function: DumpCoverStats<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe virtual void DumpCoverStats()
     {
@@ -513,7 +515,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavMeshCoverRefs;
     /// <summary>
-    /// Function: VerifyNavMeshCoverRefs
+    /// Function: VerifyNavMeshCoverRefs<br/>
+    /// Native code at BatmanAK.exe+0xB2E3F0 in the Steam build
     /// </summary>
     public unsafe virtual void VerifyNavMeshCoverRefs()
     {
@@ -534,7 +537,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrintNavMeshObstacles;
     /// <summary>
-    /// Function: PrintNavMeshObstacles
+    /// Function: PrintNavMeshObstacles<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void PrintNavMeshObstacles()
     {
@@ -555,7 +559,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PrintAllPathObjectEdges;
     /// <summary>
-    /// Function: PrintAllPathObjectEdges
+    /// Function: PrintAllPathObjectEdges<br/>
+    /// Native code at BatmanAK.exe+0x5E8120 in the Steam build
     /// </summary>
     public unsafe virtual void PrintAllPathObjectEdges()
     {
@@ -591,7 +596,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawUnsupportingEdges;
     /// <summary>
-    /// Function: DrawUnsupportingEdges
+    /// Function: DrawUnsupportingEdges<br/>
+    /// Native code at BatmanAK.exe+0xBA7B90 in the Steam build
     /// </summary>
     public unsafe virtual void DrawUnsupportingEdges(BmSDK.FStringArg PawnClassName)
     {
@@ -614,7 +620,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavMeshObjects;
     /// <summary>
-    /// Function: VerifyNavMeshObjects
+    /// Function: VerifyNavMeshObjects<br/>
+    /// Native code at BatmanAK.exe+0xB2E030 in the Steam build
     /// </summary>
     public unsafe virtual void VerifyNavMeshObjects()
     {
@@ -635,7 +642,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogParticleActivateSystemCalls;
     /// <summary>
-    /// Function: LogParticleActivateSystemCalls
+    /// Function: LogParticleActivateSystemCalls<br/>
+    /// Native code at BatmanAK.exe+0xB79610 in the Steam build
     /// </summary>
     public unsafe virtual void LogParticleActivateSystemCalls(bool bShouldLog)
     {
@@ -657,7 +665,8 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlaySoundCalls;
     /// <summary>
-    /// Function: LogPlaySoundCalls
+    /// Function: LogPlaySoundCalls<br/>
+    /// Native code at BatmanAK.exe+0xB5DCC0 in the Steam build
     /// </summary>
     public unsafe virtual void LogPlaySoundCalls(bool bShouldLog)
     {

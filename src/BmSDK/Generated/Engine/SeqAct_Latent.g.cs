@@ -90,7 +90,8 @@ public partial class SeqAct_Latent : BmSDK.Engine.SequenceAction, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AbortFor;
     /// <summary>
-    /// Function: AbortFor
+    /// Function: AbortFor<br/>
+    /// Native code at BatmanAK.exe+0xB511F0 in the Steam build
     /// </summary>
     public unsafe virtual void AbortFor(BmSDK.Engine.Actor latentActor)
     {

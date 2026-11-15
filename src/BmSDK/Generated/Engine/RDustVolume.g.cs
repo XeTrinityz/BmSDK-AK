@@ -211,7 +211,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveFearGasDensity;
     /// <summary>
-    /// Function: GetActiveFearGasDensity
+    /// Function: GetActiveFearGasDensity<br/>
+    /// Native code at BatmanAK.exe+0x46F080 in the Steam build
     /// </summary>
     public unsafe override float GetActiveFearGasDensity()
     {
@@ -232,7 +233,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasDensity;
     /// <summary>
-    /// Function: GetFearGasDensity
+    /// Function: GetFearGasDensity<br/>
+    /// Native code at BatmanAK.exe+0xB39C60 in the Steam build
     /// </summary>
     public unsafe override float GetFearGasDensity()
     {
@@ -253,7 +255,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideFearGasVolume;
     /// <summary>
-    /// Function: IsInsideFearGasVolume
+    /// Function: IsInsideFearGasVolume<br/>
+    /// Native code at BatmanAK.exe+0xB39BC0 in the Steam build
     /// </summary>
     public unsafe override bool IsInsideFearGasVolume(System.Numerics.Vector3 TestLocation)
     {
@@ -275,7 +278,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDustDepth;
     /// <summary>
-    /// Function: GetLocationDustDepth
+    /// Function: GetLocationDustDepth<br/>
+    /// Native code at BatmanAK.exe+0xB39B20 in the Steam build
     /// </summary>
     public unsafe override float GetLocationDustDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -297,7 +301,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FearGasTransitionAlpha;
     /// <summary>
-    /// Function: FearGasTransitionAlpha
+    /// Function: FearGasTransitionAlpha<br/>
+    /// Native code at BatmanAK.exe+0xB39A80 in the Steam build
     /// </summary>
     public unsafe override float FearGasTransitionAlpha(System.Numerics.Vector3 TestLocation)
     {
@@ -319,7 +324,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasWorldHeight;
     /// <summary>
-    /// Function: GetFearGasWorldHeight
+    /// Function: GetFearGasWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB399E0 in the Steam build
     /// </summary>
     public unsafe override float GetFearGasWorldHeight(System.Numerics.Vector3 TestLocation)
     {
@@ -341,7 +347,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToFearGasZ;
     /// <summary>
-    /// Function: SignedDistanceToFearGasZ
+    /// Function: SignedDistanceToFearGasZ<br/>
+    /// Native code at BatmanAK.exe+0xB39940 in the Steam build
     /// </summary>
     public unsafe override float SignedDistanceToFearGasZ(System.Numerics.Vector3 TestLocation)
     {
@@ -363,7 +370,8 @@ public partial class RDustVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationFearGas;
     /// <summary>
-    /// Function: IsLocationFearGas
+    /// Function: IsLocationFearGas<br/>
+    /// Native code at BatmanAK.exe+0xB398A0 in the Steam build
     /// </summary>
     public unsafe override bool IsLocationFearGas(System.Numerics.Vector3 TestLocation)
     {

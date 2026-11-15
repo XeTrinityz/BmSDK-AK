@@ -80,7 +80,8 @@ public partial class RAnimNode_AnimCapture : BmSDK.Engine.AnimNodeBlendBase, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Capture;
     /// <summary>
-    /// Function: Capture
+    /// Function: Capture<br/>
+    /// Native code at BatmanAK.exe+0x4B1DC0 in the Steam build
     /// </summary>
     public unsafe virtual void Capture(BmSDK.Engine.SkeletalMeshComponent Mesh)
     {

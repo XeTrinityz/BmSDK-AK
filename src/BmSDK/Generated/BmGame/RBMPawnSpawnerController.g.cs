@@ -136,7 +136,8 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnSpawner;
     /// <summary>
-    /// Function: GetPawnSpawner
+    /// Function: GetPawnSpawner<br/>
+    /// Native code at BatmanAK.exe+0x500E70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBmPawnSpawner GetPawnSpawner(int Index)
     {
@@ -158,7 +159,8 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberActive;
     /// <summary>
-    /// Function: GetNumberActive
+    /// Function: GetNumberActive<br/>
+    /// Native code at BatmanAK.exe+0x500D30 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumberActive(int Index)
     {
@@ -180,7 +182,8 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActiveNumberAltered;
     /// <summary>
-    /// Function: ActiveNumberAltered
+    /// Function: ActiveNumberAltered<br/>
+    /// Native code at BatmanAK.exe+0x500B50 in the Steam build
     /// </summary>
     public unsafe virtual void ActiveNumberAltered(int Index, int NewNumber)
     {

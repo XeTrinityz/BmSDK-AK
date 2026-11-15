@@ -80,7 +80,8 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStatus;
     /// <summary>
-    /// Function: UpdateStatus
+    /// Function: UpdateStatus<br/>
+    /// Native code at BatmanAK.exe+0x48D7B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateStatus()
     {

@@ -75,7 +75,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastGrapplePointFromClimbInfo;
     /// <summary>
-    /// Function: GetLastGrapplePointFromClimbInfo
+    /// Function: GetLastGrapplePointFromClimbInfo<br/>
+    /// Native code at BatmanAK.exe+0x56E040 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo GetLastGrapplePointFromClimbInfo(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
@@ -97,7 +98,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrapplePointFromClimbInfo;
     /// <summary>
-    /// Function: SetGrapplePointFromClimbInfo
+    /// Function: SetGrapplePointFromClimbInfo<br/>
+    /// Native code at BatmanAK.exe+0x56DF60 in the Steam build
     /// </summary>
     public unsafe virtual void SetGrapplePointFromClimbInfo(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
@@ -119,7 +121,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointAndLineCheck;
     /// <summary>
-    /// Function: PointAndLineCheck
+    /// Function: PointAndLineCheck<br/>
+    /// Native code at BatmanAK.exe+0x491D40 in the Steam build
     /// </summary>
     public unsafe virtual bool PointAndLineCheck(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, System.Numerics.Vector3 Extent, int ExtraTraceFlags = default, bool bIgnoreRailings = default, bool bDebugDraw = default)
     {
@@ -152,7 +155,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChainStartLocator;
     /// <summary>
-    /// Function: GetChainStartLocator
+    /// Function: GetChainStartLocator<br/>
+    /// Native code at BatmanAK.exe+0x491CA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RClimbLocator GetChainStartLocator(System.Numerics.Vector3 PlayerLocation)
     {
@@ -174,7 +178,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocatorChainLocation;
     /// <summary>
-    /// Function: GetLocatorChainLocation
+    /// Function: GetLocatorChainLocation<br/>
+    /// Native code at BatmanAK.exe+0x50F2D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocatorChainLocation(BmSDK.BmGame.RClimbLocator LowestChainLocator, System.Numerics.Vector3 InLocation, System.Numerics.Vector3 TargetLocation, bool bAlignLowerPoints = default)
     {
@@ -199,7 +204,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleGlobalPounceTargeting;
     /// <summary>
-    /// Function: HandleGlobalPounceTargeting
+    /// Function: HandleGlobalPounceTargeting<br/>
+    /// Native code at BatmanAK.exe+0x491C60 in the Steam build
     /// </summary>
     public unsafe virtual void HandleGlobalPounceTargeting()
     {
@@ -220,7 +226,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PickNextLowerSwingHeight;
     /// <summary>
-    /// Function: PickNextLowerSwingHeight
+    /// Function: PickNextLowerSwingHeight<br/>
+    /// Native code at BatmanAK.exe+0x56DE70 in the Steam build
     /// </summary>
     public unsafe virtual bool PickNextLowerSwingHeight(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
@@ -242,7 +249,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCeilingTarget;
     /// <summary>
-    /// Function: CheckForCeilingTarget
+    /// Function: CheckForCeilingTarget<br/>
+    /// Native code at BatmanAK.exe+0x491BB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckForCeilingTarget(out System.Numerics.Vector3 CeilingTargetLocation)
     {
@@ -266,7 +274,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckThisGrapple;
     /// <summary>
-    /// Function: CheckThisGrapple
+    /// Function: CheckThisGrapple<br/>
+    /// Native code at BatmanAK.exe+0x491AF0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckThisGrapple(BmSDK.BmGame.RGrapplePoint ThisGrapplePoint = default, BmSDK.BmGame.RHidePoint ThisHidePoint = default)
     {
@@ -289,7 +298,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInBoundVector;
     /// <summary>
-    /// Function: GetInBoundVector
+    /// Function: GetInBoundVector<br/>
+    /// Native code at BatmanAK.exe+0x491A00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetInBoundVector(System.Numerics.Vector3 StartVelocity, System.Numerics.Vector3 EndVelocity)
     {
@@ -312,7 +322,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreCurrentClimbInfo;
     /// <summary>
-    /// Function: StoreCurrentClimbInfo
+    /// Function: StoreCurrentClimbInfo<br/>
+    /// Native code at BatmanAK.exe+0x4919C0 in the Steam build
     /// </summary>
     public unsafe virtual void StoreCurrentClimbInfo()
     {
@@ -333,7 +344,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawPounceBlockingVolumes;
     /// <summary>
-    /// Function: DrawPounceBlockingVolumes
+    /// Function: DrawPounceBlockingVolumes<br/>
+    /// Native code at BatmanAK.exe+0x56DCC0 in the Steam build
     /// </summary>
     public unsafe virtual bool DrawPounceBlockingVolumes(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bDrawPersistent)
     {
@@ -356,7 +368,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckWallPounce;
     /// <summary>
-    /// Function: CheckWallPounce
+    /// Function: CheckWallPounce<br/>
+    /// Native code at BatmanAK.exe+0x56D9A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckWallPounce(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, int FromPoint, bool bOptimisePass, bool bTweakFinalPounce = default)
     {
@@ -382,7 +395,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OptimisePath;
     /// <summary>
-    /// Function: OptimisePath
+    /// Function: OptimisePath<br/>
+    /// Native code at BatmanAK.exe+0x56D800 in the Steam build
     /// </summary>
     public unsafe virtual void OptimisePath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bIgnoreDangleEdges)
     {
@@ -405,7 +419,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestLandEdge;
     /// <summary>
-    /// Function: GetClosestLandEdge
+    /// Function: GetClosestLandEdge<br/>
+    /// Native code at BatmanAK.exe+0x565130 in the Steam build
     /// </summary>
     public unsafe virtual bool GetClosestLandEdge(System.Numerics.Vector3 OriginalLocation, System.Numerics.Vector3 OriginalNormal, out BmSDK.TArray<BmSDK.BmGame.RCwGrappleGunBase.FClimbLedges> Ledges, float HTolerance, float VToleranceUp, float VExtraDangleToleranceUp, float VToleranceDown, bool bIgnoreLimits, bool bIgnoreDangle)
     {
@@ -483,7 +498,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanClimbToHidePoint;
     /// <summary>
-    /// Function: CanClimbToHidePoint
+    /// Function: CanClimbToHidePoint<br/>
+    /// Native code at BatmanAK.exe+0x4918B0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanClimbToHidePoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 GrappleLocation, System.Numerics.Vector3 WallNormal)
     {
@@ -507,7 +523,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanClimbToGrapplePoint;
     /// <summary>
-    /// Function: CanClimbToGrapplePoint
+    /// Function: CanClimbToGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x4917A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanClimbToGrapplePoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 GrappleLocation, System.Numerics.Vector3 WallNormal)
     {
@@ -531,7 +548,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampToLineSegment;
     /// <summary>
-    /// Function: ClampToLineSegment
+    /// Function: ClampToLineSegment<br/>
+    /// Native code at BatmanAK.exe+0x491670 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 ClampToLineSegment(System.Numerics.Vector3 P, System.Numerics.Vector3 A, System.Numerics.Vector3 B)
     {
@@ -555,7 +573,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialWallCheck;
     /// <summary>
-    /// Function: InitialWallCheck
+    /// Function: InitialWallCheck<br/>
+    /// Native code at BatmanAK.exe+0x56D370 in the Steam build
     /// </summary>
     public unsafe virtual bool InitialWallCheck(System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 Right, float OutTolerance, float InTolerance, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 TargetWallLocation, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, BmSDK.BmGame.RCwGrappleGunBase.EStartPoints StartCheck, bool bForcePounceCheck, out System.Numerics.Vector3 NewWallLocation)
     {
@@ -589,7 +608,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateClimbRoute;
     /// <summary>
-    /// Function: CreateClimbRoute
+    /// Function: CreateClimbRoute<br/>
+    /// Native code at BatmanAK.exe+0x491560 in the Steam build
     /// </summary>
     public unsafe virtual bool CreateClimbRoute(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bPersistent = default)
     {
@@ -614,7 +634,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPounceToGrapple;
     /// <summary>
-    /// Function: CheckPounceToGrapple
+    /// Function: CheckPounceToGrapple<br/>
+    /// Native code at BatmanAK.exe+0x4913E0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckPounceToGrapple(System.Numerics.Vector3 TargetLoc, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 playerLoc, bool bDrawDebug = default, bool bDrawPersistent = default)
     {
@@ -640,7 +661,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialPathCheck;
     /// <summary>
-    /// Function: InitialPathCheck
+    /// Function: InitialPathCheck<br/>
+    /// Native code at BatmanAK.exe+0x56D0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool InitialPathCheck(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 TargetWallLocation, System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 CheckExtent, bool bLimitCheckToPlane)
     {
@@ -668,7 +690,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPounceToWall;
     /// <summary>
-    /// Function: CheckPounceToWall
+    /// Function: CheckPounceToWall<br/>
+    /// Native code at BatmanAK.exe+0x50F0A0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckPounceToWall(System.Numerics.Vector3 WallLoc, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 playerLoc, bool bLimitCheckToPlane, bool bDrawDebug = default, bool bDrawPersistent = default)
     {
@@ -695,7 +718,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestWallClimbIndex;
     /// <summary>
-    /// Function: GetBestWallClimbIndex
+    /// Function: GetBestWallClimbIndex<br/>
+    /// Native code at BatmanAK.exe+0x491340 in the Steam build
     /// </summary>
     public unsafe virtual int GetBestWallClimbIndex(System.Numerics.Vector3 EndLocation)
     {
@@ -717,7 +741,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingGrappleTarget;
     /// <summary>
-    /// Function: GetAerialSwingGrappleTarget
+    /// Function: GetAerialSwingGrappleTarget<br/>
+    /// Native code at BatmanAK.exe+0x4912E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingGrappleTarget()
     {
@@ -738,7 +763,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingTargetNormal;
     /// <summary>
-    /// Function: GetAerialSwingTargetNormal
+    /// Function: GetAerialSwingTargetNormal<br/>
+    /// Native code at BatmanAK.exe+0x490720 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingTargetNormal(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
@@ -761,7 +787,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingTargetLocation;
     /// <summary>
-    /// Function: GetAerialSwingTargetLocation
+    /// Function: GetAerialSwingTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x491150 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingTargetLocation(bool bOnlyEstimate = default, bool bOnWall = default, bool bDebugDraw = default, bool bDrawPersistent = default)
     {
@@ -786,7 +813,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingEstimatedTarget;
     /// <summary>
-    /// Function: GetAerialSwingEstimatedTarget
+    /// Function: GetAerialSwingEstimatedTarget<br/>
+    /// Native code at BatmanAK.exe+0x491030 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingEstimatedTarget(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
@@ -832,7 +860,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingWallEndParams;
     /// <summary>
-    /// Function: GetAerialSwingWallEndParams
+    /// Function: GetAerialSwingWallEndParams<br/>
+    /// Native code at BatmanAK.exe+0x490F80 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAerialSwingWallEndParams(out System.Numerics.Vector3 PlayerLocation)
     {
@@ -856,7 +885,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingEndParams;
     /// <summary>
-    /// Function: GetAerialSwingEndParams
+    /// Function: GetAerialSwingEndParams<br/>
+    /// Native code at BatmanAK.exe+0x490E60 in the Steam build
     /// </summary>
     public unsafe virtual void GetAerialSwingEndParams(out System.Numerics.Vector3 PlayerLocation, bool bOnlyEstimate = default, bool bDebugDraw = default)
     {
@@ -882,7 +912,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingStartParams;
     /// <summary>
-    /// Function: GetAerialSwingStartParams
+    /// Function: GetAerialSwingStartParams<br/>
+    /// Native code at BatmanAK.exe+0x490C70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAerialSwingStartParams(out System.Numerics.Vector3 Origin, out System.Numerics.Vector3 StartVelocity, out float StartTime, bool bDrawDebug)
     {
@@ -913,7 +944,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClimbStartPoint;
     /// <summary>
-    /// Function: IsValidClimbStartPoint
+    /// Function: IsValidClimbStartPoint<br/>
+    /// Native code at BatmanAK.exe+0x56CF80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidClimbStartPoint(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath CheckPath, bool bNewPath = default)
     {
@@ -936,7 +968,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingGrappleTarget;
     /// <summary>
-    /// Function: GetEdgeSwingGrappleTarget
+    /// Function: GetEdgeSwingGrappleTarget<br/>
+    /// Native code at BatmanAK.exe+0x490C10 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingGrappleTarget()
     {
@@ -957,7 +990,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingGrappleTargetingParams;
     /// <summary>
-    /// Function: GetEdgeSwingGrappleTargetingParams
+    /// Function: GetEdgeSwingGrappleTargetingParams<br/>
+    /// Native code at BatmanAK.exe+0x490B10 in the Steam build
     /// </summary>
     public unsafe virtual void GetEdgeSwingGrappleTargetingParams(out System.Numerics.Vector3 Origin, out BmSDK.Rotator AimDirection)
     {
@@ -984,7 +1018,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingWallLocation;
     /// <summary>
-    /// Function: GetEdgeSwingWallLocation
+    /// Function: GetEdgeSwingWallLocation<br/>
+    /// Native code at BatmanAK.exe+0x490A00 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingWallLocation(out System.Numerics.Vector3 WallNormal)
     {
@@ -1008,7 +1043,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingWallEndParams;
     /// <summary>
-    /// Function: GetEdgeSwingWallEndParams
+    /// Function: GetEdgeSwingWallEndParams<br/>
+    /// Native code at BatmanAK.exe+0x490960 in the Steam build
     /// </summary>
     public unsafe virtual void GetEdgeSwingWallEndParams(out System.Numerics.Vector3 PlayerLocation)
     {
@@ -1032,7 +1068,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingEndParams;
     /// <summary>
-    /// Function: GetEdgeSwingEndParams
+    /// Function: GetEdgeSwingEndParams<br/>
+    /// Native code at BatmanAK.exe+0x490840 in the Steam build
     /// </summary>
     public unsafe virtual void GetEdgeSwingEndParams(out System.Numerics.Vector3 PlayerLocation, bool bOnlyEstimate = default, bool bDebugDraw = default)
     {
@@ -1058,7 +1095,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingTargetNormal;
     /// <summary>
-    /// Function: GetEdgeSwingTargetNormal
+    /// Function: GetEdgeSwingTargetNormal<br/>
+    /// Native code at BatmanAK.exe+0x490720 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingTargetNormal(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
@@ -1081,7 +1119,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingTargetLocation;
     /// <summary>
-    /// Function: GetEdgeSwingTargetLocation
+    /// Function: GetEdgeSwingTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x4905E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingTargetLocation(bool bOnlyEstimate = default, bool bOnWall = default, bool bDebugDraw = default)
     {
@@ -1105,7 +1144,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingEstimatedTarget;
     /// <summary>
-    /// Function: GetEdgeSwingEstimatedTarget
+    /// Function: GetEdgeSwingEstimatedTarget<br/>
+    /// Native code at BatmanAK.exe+0x4904C0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingEstimatedTarget(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
@@ -1128,7 +1168,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingStartParams;
     /// <summary>
-    /// Function: GetEdgeSwingStartParams
+    /// Function: GetEdgeSwingStartParams<br/>
+    /// Native code at BatmanAK.exe+0x4902D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetEdgeSwingStartParams(out System.Numerics.Vector3 Origin, out System.Numerics.Vector3 StartVelocity, out float StartTime, bool bDrawDebug)
     {
@@ -1159,7 +1200,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbStartInDirectPounceRange;
     /// <summary>
-    /// Function: IsWallClimbStartInDirectPounceRange
+    /// Function: IsWallClimbStartInDirectPounceRange<br/>
+    /// Native code at BatmanAK.exe+0x490280 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWallClimbStartInDirectPounceRange()
     {
@@ -1180,7 +1222,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointInClimbDistance;
     /// <summary>
-    /// Function: IsHidePointInClimbDistance
+    /// Function: IsHidePointInClimbDistance<br/>
+    /// Native code at BatmanAK.exe+0x490230 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHidePointInClimbDistance()
     {
@@ -1201,7 +1244,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointInPounceDistance;
     /// <summary>
-    /// Function: IsHidePointInPounceDistance
+    /// Function: IsHidePointInPounceDistance<br/>
+    /// Native code at BatmanAK.exe+0x4901E0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHidePointInPounceDistance()
     {
@@ -1222,7 +1266,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGrapplePointInClimbDistance;
     /// <summary>
-    /// Function: IsGrapplePointInClimbDistance
+    /// Function: IsGrapplePointInClimbDistance<br/>
+    /// Native code at BatmanAK.exe+0x490190 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGrapplePointInClimbDistance()
     {
@@ -1243,7 +1288,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGrapplePointInPounceDistance;
     /// <summary>
-    /// Function: IsGrapplePointInPounceDistance
+    /// Function: IsGrapplePointInPounceDistance<br/>
+    /// Native code at BatmanAK.exe+0x490140 in the Steam build
     /// </summary>
     public unsafe virtual bool IsGrapplePointInPounceDistance()
     {
@@ -1264,7 +1310,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGroundPath;
     /// <summary>
-    /// Function: TraceGroundPath
+    /// Function: TraceGroundPath<br/>
+    /// Native code at BatmanAK.exe+0x50EDE0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceGroundPath(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 DirXY, int Steps, float HeightTolerance, bool bDebugExtraPounce = default)
     {
@@ -1291,7 +1338,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGround;
     /// <summary>
-    /// Function: TraceGround
+    /// Function: TraceGround<br/>
+    /// Native code at BatmanAK.exe+0x50EBF0 in the Steam build
     /// </summary>
     public unsafe virtual bool TraceGround(out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Direction, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bDebugExtraPounce)
     {
@@ -1320,7 +1368,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLongPounce;
     /// <summary>
-    /// Function: CanLongPounce
+    /// Function: CanLongPounce<br/>
+    /// Native code at BatmanAK.exe+0x56CD00 in the Steam build
     /// </summary>
     public unsafe virtual bool CanLongPounce(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bHideOrGrapplePoint, System.Numerics.Vector3 WallLocation, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bDebugLongPounce = default)
     {
@@ -1348,7 +1397,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLongPounceFloor;
     /// <summary>
-    /// Function: CheckLongPounceFloor
+    /// Function: CheckLongPounceFloor<br/>
+    /// Native code at BatmanAK.exe+0x48FFA0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLongPounceFloor(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, bool bDebugDraw = default, bool bDebugLongPounce = default)
     {
@@ -1376,7 +1426,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLongPounceDist;
     /// <summary>
-    /// Function: IsLongPounceDist
+    /// Function: IsLongPounceDist<br/>
+    /// Native code at BatmanAK.exe+0x48FE80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLongPounceDist(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 WallLocation, bool bDirectPounceCheck = default)
     {
@@ -1400,7 +1451,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAerialSwing;
     /// <summary>
-    /// Function: CheckAerialSwing
+    /// Function: CheckAerialSwing<br/>
+    /// Native code at BatmanAK.exe+0x48FE30 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAerialSwing()
     {
@@ -1421,7 +1473,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAerialSwingCollision;
     /// <summary>
-    /// Function: CheckAerialSwingCollision
+    /// Function: CheckAerialSwingCollision<br/>
+    /// Native code at BatmanAK.exe+0x48FD80 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckAerialSwingCollision(out System.Numerics.Vector3 FirstHitLocation)
     {
@@ -1445,7 +1498,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEdgeSwingCollision;
     /// <summary>
-    /// Function: CheckEdgeSwingCollision
+    /// Function: CheckEdgeSwingCollision<br/>
+    /// Native code at BatmanAK.exe+0x48FC90 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckEdgeSwingCollision(out System.Numerics.Vector3 FirstHitLocation, bool bTryShortJump = default)
     {
@@ -1470,7 +1524,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInitialLocator;
     /// <summary>
-    /// Function: UpdateInitialLocator
+    /// Function: UpdateInitialLocator<br/>
+    /// Native code at BatmanAK.exe+0x56CB80 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateInitialLocator(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath CheckPath, bool bNewPath = default)
     {
@@ -1496,7 +1551,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSwingFromEdge;
     /// <summary>
-    /// Function: CheckSwingFromEdge
+    /// Function: CheckSwingFromEdge<br/>
+    /// Native code at BatmanAK.exe+0x48FC40 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSwingFromEdge()
     {
@@ -1517,7 +1573,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotSwingTargetPoint;
     /// <summary>
-    /// Function: GotSwingTargetPoint
+    /// Function: GotSwingTargetPoint<br/>
+    /// Native code at BatmanAK.exe+0x48FBF0 in the Steam build
     /// </summary>
     public unsafe virtual bool GotSwingTargetPoint()
     {
@@ -1538,7 +1595,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GotEdgeSwingTargetPoint;
     /// <summary>
-    /// Function: GotEdgeSwingTargetPoint
+    /// Function: GotEdgeSwingTargetPoint<br/>
+    /// Native code at BatmanAK.exe+0x48FBA0 in the Steam build
     /// </summary>
     public unsafe virtual bool GotEdgeSwingTargetPoint()
     {
@@ -1559,7 +1617,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwingToGargoyle;
     /// <summary>
-    /// Function: IsAutoSwingToGargoyle
+    /// Function: IsAutoSwingToGargoyle<br/>
+    /// Native code at BatmanAK.exe+0x48FB50 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoSwingToGargoyle()
     {
@@ -1580,7 +1639,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwing;
     /// <summary>
-    /// Function: IsAutoSwing
+    /// Function: IsAutoSwing<br/>
+    /// Native code at BatmanAK.exe+0x48FB00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAutoSwing()
     {
@@ -1601,7 +1661,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDelayedSwing;
     /// <summary>
-    /// Function: CheckDelayedSwing
+    /// Function: CheckDelayedSwing<br/>
+    /// Native code at BatmanAK.exe+0x48FAB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckDelayedSwing()
     {
@@ -1622,7 +1683,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlePounceTargeting;
     /// <summary>
-    /// Function: HandlePounceTargeting
+    /// Function: HandlePounceTargeting<br/>
+    /// Native code at BatmanAK.exe+0x48F9E0 in the Steam build
     /// </summary>
     public unsafe virtual void HandlePounceTargeting(bool bGrappleCheck = default, int Iteration = default)
     {
@@ -1645,7 +1707,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSwingPaths;
     /// <summary>
-    /// Function: UpdateSwingPaths
+    /// Function: UpdateSwingPaths<br/>
+    /// Native code at BatmanAK.exe+0x48F990 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdateSwingPaths()
     {
@@ -1666,7 +1729,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwingLineCheck;
     /// <summary>
-    /// Function: SwingLineCheck
+    /// Function: SwingLineCheck<br/>
+    /// Native code at BatmanAK.exe+0x50E960 in the Steam build
     /// </summary>
     public unsafe virtual bool SwingLineCheck(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 EndLocation, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 CheckExtent, bool bStartWithPointCheck, bool bDrawDebug = default)
     {
@@ -1698,7 +1762,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJumpVelocity;
     /// <summary>
-    /// Function: GetJumpVelocity
+    /// Function: GetJumpVelocity<br/>
+    /// Native code at BatmanAK.exe+0x48F8E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetJumpVelocity(System.Numerics.Vector3 Direction)
     {
@@ -1720,7 +1785,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlightPath;
     /// <summary>
-    /// Function: UpdateFlightPath
+    /// Function: UpdateFlightPath<br/>
+    /// Native code at BatmanAK.exe+0x50E6B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFlightPath(float DeltaTime, bool bModifyTranitionTime, bool bFirstFrame)
     {
@@ -1744,7 +1810,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathDeltaTangent;
     /// <summary>
-    /// Function: GetFlightPathDeltaTangent
+    /// Function: GetFlightPathDeltaTangent<br/>
+    /// Native code at BatmanAK.exe+0x50E510 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathDeltaTangent(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
@@ -1769,7 +1836,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathTangent;
     /// <summary>
-    /// Function: GetFlightPathTangent
+    /// Function: GetFlightPathTangent<br/>
+    /// Native code at BatmanAK.exe+0x50E370 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathTangent(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
@@ -1794,7 +1862,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathPosition;
     /// <summary>
-    /// Function: GetFlightPathPosition
+    /// Function: GetFlightPathPosition<br/>
+    /// Native code at BatmanAK.exe+0x50E1D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathPosition(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
@@ -1819,7 +1888,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawSwingPath;
     /// <summary>
-    /// Function: DrawSwingPath
+    /// Function: DrawSwingPath<br/>
+    /// Native code at BatmanAK.exe+0x56CA50 in the Steam build
     /// </summary>
     public unsafe virtual void DrawSwingPath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo, bool bPersistent = default)
     {
@@ -1842,7 +1912,8 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateSwingPath;
     /// <summary>
-    /// Function: CalculateSwingPath
+    /// Function: CalculateSwingPath<br/>
+    /// Native code at BatmanAK.exe+0x56C580 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateSwingPath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo, System.Numerics.Vector3 DesiredStartLocation, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 StartVelocity, System.Numerics.Vector3 EndVelocity, float IdealSwingTime, float IdealSwingLength, float CheckSizeMod, out System.Numerics.Vector3 FirstHitLocation, bool bDebugDraw, bool bDrawPersistent)
     {

@@ -122,7 +122,8 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckUnTouchActivate;
     /// <summary>
-    /// Function: CheckUnTouchActivate
+    /// Function: CheckUnTouchActivate<br/>
+    /// Native code at BatmanAK.exe+0x9836F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckUnTouchActivate(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, bool bTest = default)
     {
@@ -146,7 +147,8 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTouchActivate;
     /// <summary>
-    /// Function: CheckTouchActivate
+    /// Function: CheckTouchActivate<br/>
+    /// Native code at BatmanAK.exe+0x9834C0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckTouchActivate(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, bool bTest = default)
     {

@@ -80,7 +80,8 @@ public partial class MorphNodePose : BmSDK.Engine.MorphNodeBase, BmSDK.IGameObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMorphTarget;
     /// <summary>
-    /// Function: SetMorphTarget
+    /// Function: SetMorphTarget<br/>
+    /// Native code at BatmanAK.exe+0xB57350 in the Steam build
     /// </summary>
     public unsafe virtual void SetMorphTarget(BmSDK.FName MorphTargetName)
     {

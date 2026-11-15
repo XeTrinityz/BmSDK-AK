@@ -80,7 +80,8 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProductIndex;
     /// <summary>
-    /// Function: GetProductIndex
+    /// Function: GetProductIndex<br/>
+    /// Native code at BatmanAK.exe+0xB9E8C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetProductIndex(BmSDK.FStringArg Identifier)
     {
@@ -103,7 +104,8 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginPurchase;
     /// <summary>
-    /// Function: BeginPurchase
+    /// Function: BeginPurchase<br/>
+    /// Native code at BatmanAK.exe+0xB5B6D0 in the Steam build
     /// </summary>
     public unsafe virtual bool BeginPurchase(int Index)
     {
@@ -125,7 +127,8 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAllowedToMakePurchases;
     /// <summary>
-    /// Function: IsAllowedToMakePurchases
+    /// Function: IsAllowedToMakePurchases<br/>
+    /// Native code at BatmanAK.exe+0xB3FDD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAllowedToMakePurchases()
     {
@@ -146,7 +149,8 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryForAvailablePurchases;
     /// <summary>
-    /// Function: QueryForAvailablePurchases
+    /// Function: QueryForAvailablePurchases<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool QueryForAvailablePurchases()
     {
@@ -167,7 +171,8 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

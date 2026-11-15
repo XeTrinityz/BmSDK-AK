@@ -80,7 +80,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableRainSound;
     /// <summary>
-    /// Function: DisableRainSound
+    /// Function: DisableRainSound<br/>
+    /// Native code at BatmanAK.exe+0xB3D590 in the Steam build
     /// </summary>
     public unsafe virtual void DisableRainSound()
     {
@@ -101,7 +102,8 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRainSound;
     /// <summary>
-    /// Function: EnableRainSound
+    /// Function: EnableRainSound<br/>
+    /// Native code at BatmanAK.exe+0xB3D550 in the Steam build
     /// </summary>
     public unsafe virtual void EnableRainSound()
     {

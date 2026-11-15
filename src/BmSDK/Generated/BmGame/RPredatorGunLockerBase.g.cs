@@ -398,7 +398,8 @@ public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXrayMaterials;
     /// <summary>
-    /// Function: SetXrayMaterials
+    /// Function: SetXrayMaterials<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetXrayMaterials()
     {
@@ -419,7 +420,8 @@ public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x4AFD00 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bInstant)
     {
@@ -441,7 +443,8 @@ public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -462,7 +465,8 @@ public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelWeaponLoading;
     /// <summary>
-    /// Function: CancelWeaponLoading
+    /// Function: CancelWeaponLoading<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void CancelWeaponLoading()
     {
@@ -483,7 +487,8 @@ public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadWeapon;
     /// <summary>
-    /// Function: LoadWeapon
+    /// Function: LoadWeapon<br/>
+    /// Native code at BatmanAK.exe+0x537960 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadWeapon(BmSDK.FStringArg WeaponPackageString)
     {

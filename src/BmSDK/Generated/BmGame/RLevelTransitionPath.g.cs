@@ -80,7 +80,8 @@ public partial class RLevelTransitionPath : BmSDK.BmGame.RLevelTransition, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerPassingThrough;
     /// <summary>
-    /// Function: IsPlayerPassingThrough
+    /// Function: IsPlayerPassingThrough<br/>
+    /// Native code at BatmanAK.exe+0x4944D0 in the Steam build
     /// </summary>
     public unsafe override bool IsPlayerPassingThrough(System.Numerics.Vector3 PlayerLocation)
     {

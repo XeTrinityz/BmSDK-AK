@@ -80,7 +80,8 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Clear;
     /// <summary>
-    /// Function: Clear
+    /// Function: Clear<br/>
+    /// Native code at BatmanAK.exe+0xB410D0 in the Steam build
     /// </summary>
     public unsafe virtual void Clear()
     {
@@ -101,7 +102,8 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
 
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create
+    /// Function: Create<br/>
+    /// Native code at BatmanAK.exe+0xC51970 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.TextureRenderTarget2D Create(int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, BmSDK.GameObject.FLinearColor InClearColor = default, bool bOnlyRenderOnce = default)
     {
@@ -194,7 +196,8 @@ public static class TextureRenderTarget2DStatics
 {
     private static BmSDK.Function __fn_Create;
     /// <summary>
-    /// Function: Create, run on <paramref name="self"/> rather than the class default object
+    /// Function: Create, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xC51970 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.TextureRenderTarget2D Create(this BmSDK.Engine.TextureRenderTarget2D self, int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, BmSDK.GameObject.FLinearColor InClearColor = default, bool bOnlyRenderOnce = default)
     {

@@ -75,7 +75,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDialogueSubtitle;
     /// <summary>
-    /// Function: GetDialogueSubtitle
+    /// Function: GetDialogueSubtitle<br/>
+    /// Native code at BatmanAK.exe+0xBA2940 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDialogueSubtitle(BmSDK.Engine.AkDialogueLine dlgLine, BmSDK.Engine.AkDialogueEvent dlgEvent, BmSDK.Engine.Actor dlgSpeaker, out float subDur)
     {
@@ -101,7 +102,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetGauntletMeter;
     /// <summary>
-    /// Function: GetGauntletMeter
+    /// Function: GetGauntletMeter<br/>
+    /// Native code at BatmanAK.exe+0xB35EE0 in the Steam build
     /// </summary>
     public unsafe static float GetGauntletMeter()
     {
@@ -121,7 +123,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSurveillanceMeter;
     /// <summary>
-    /// Function: GetSurveillanceMeter
+    /// Function: GetSurveillanceMeter<br/>
+    /// Native code at BatmanAK.exe+0xB35E90 in the Steam build
     /// </summary>
     public unsafe static float GetSurveillanceMeter()
     {
@@ -141,7 +144,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDialogueMeter;
     /// <summary>
-    /// Function: GetDialogueMeter
+    /// Function: GetDialogueMeter<br/>
+    /// Native code at BatmanAK.exe+0xB35E40 in the Steam build
     /// </summary>
     public unsafe static float GetDialogueMeter()
     {
@@ -161,7 +165,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AllowAnimOnlyDialogue;
     /// <summary>
-    /// Function: AllowAnimOnlyDialogue
+    /// Function: AllowAnimOnlyDialogue<br/>
+    /// Native code at BatmanAK.exe+0xBA27C0 in the Steam build
     /// </summary>
     public unsafe static void AllowAnimOnlyDialogue(bool dlgAllowed, BmSDK.FStringArg strDebug = default)
     {
@@ -184,7 +189,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsAnimOnlyDialogueAllowed;
     /// <summary>
-    /// Function: IsAnimOnlyDialogueAllowed
+    /// Function: IsAnimOnlyDialogueAllowed<br/>
+    /// Native code at BatmanAK.exe+0xB35DF0 in the Steam build
     /// </summary>
     public unsafe static bool IsAnimOnlyDialogueAllowed()
     {
@@ -204,7 +210,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSurveillanceFocus;
     /// <summary>
-    /// Function: GetSurveillanceFocus
+    /// Function: GetSurveillanceFocus<br/>
+    /// Native code at BatmanAK.exe+0xB35DA0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Actor GetSurveillanceFocus()
     {
@@ -224,7 +231,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSurveillanceUIVisible;
     /// <summary>
-    /// Function: IsSurveillanceUIVisible
+    /// Function: IsSurveillanceUIVisible<br/>
+    /// Native code at BatmanAK.exe+0xB35D50 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceUIVisible()
     {
@@ -244,7 +252,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSurveillanceDialogueAllowed;
     /// <summary>
-    /// Function: IsSurveillanceDialogueAllowed
+    /// Function: IsSurveillanceDialogueAllowed<br/>
+    /// Native code at BatmanAK.exe+0xB35CA0 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceDialogueAllowed(bool broadcastIntercept = default)
     {
@@ -265,7 +274,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DisableSurveillanceDialogue;
     /// <summary>
-    /// Function: DisableSurveillanceDialogue
+    /// Function: DisableSurveillanceDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB35C60 in the Steam build
     /// </summary>
     public unsafe static void DisableSurveillanceDialogue()
     {
@@ -285,7 +295,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EnableSurveillanceDialogue;
     /// <summary>
-    /// Function: EnableSurveillanceDialogue
+    /// Function: EnableSurveillanceDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB35C20 in the Steam build
     /// </summary>
     public unsafe static void EnableSurveillanceDialogue()
     {
@@ -305,7 +316,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSurveillanceDialogueActive;
     /// <summary>
-    /// Function: IsSurveillanceDialogueActive
+    /// Function: IsSurveillanceDialogueActive<br/>
+    /// Native code at BatmanAK.exe+0xB35BD0 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceDialogueActive()
     {
@@ -325,7 +337,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetSurveillanceDialogue;
     /// <summary>
-    /// Function: ResetSurveillanceDialogue
+    /// Function: ResetSurveillanceDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB35B90 in the Steam build
     /// </summary>
     public unsafe static void ResetSurveillanceDialogue()
     {
@@ -345,7 +358,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_NotifySurveillanceDialogue;
     /// <summary>
-    /// Function: NotifySurveillanceDialogue
+    /// Function: NotifySurveillanceDialogue<br/>
+    /// Native code at BatmanAK.exe+0xBA2410 in the Steam build
     /// </summary>
     public unsafe static void NotifySurveillanceDialogue(BmSDK.Engine.Actor dlgSpeaker, int dlgSpeechId = default, float survMinRange = default, float survMidRange = default, float survMaxRange = default, float survDistortionRange = default, bool broadcastIntercept = default, BmSDK.FStringArg broadcastStation = default, BmSDK.FStringArg broadcastSpeaker = default, bool surveillanceOcclusion = default, bool interrupted = default)
     {
@@ -378,7 +392,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_NotifyFocusDialogue;
     /// <summary>
-    /// Function: NotifyFocusDialogue
+    /// Function: NotifyFocusDialogue<br/>
+    /// Native code at BatmanAK.exe+0xB63D60 in the Steam build
     /// </summary>
     public unsafe static void NotifyFocusDialogue(BmSDK.Engine.Actor dlgSpeaker, bool speakerHasFocus)
     {
@@ -400,7 +415,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsAudible;
     /// <summary>
-    /// Function: IsAudible
+    /// Function: IsAudible<br/>
+    /// Native code at BatmanAK.exe+0xBB1870 in the Steam build
     /// </summary>
     public unsafe static bool IsAudible(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, bool checkLocks)
     {
@@ -423,7 +439,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FullReset;
     /// <summary>
-    /// Function: FullReset
+    /// Function: FullReset<br/>
+    /// Native code at BatmanAK.exe+0xB35B50 in the Steam build
     /// </summary>
     public unsafe static void FullReset()
     {
@@ -443,7 +460,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsForciblyDucked;
     /// <summary>
-    /// Function: IsForciblyDucked
+    /// Function: IsForciblyDucked<br/>
+    /// Native code at BatmanAK.exe+0xB35B00 in the Steam build
     /// </summary>
     public unsafe static bool IsForciblyDucked()
     {
@@ -463,7 +481,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DisableForceDucking;
     /// <summary>
-    /// Function: DisableForceDucking
+    /// Function: DisableForceDucking<br/>
+    /// Native code at BatmanAK.exe+0xBA2310 in the Steam build
     /// </summary>
     public unsafe static void DisableForceDucking(bool fullyUnduck = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -486,7 +505,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EnableForceDucking;
     /// <summary>
-    /// Function: EnableForceDucking
+    /// Function: EnableForceDucking<br/>
+    /// Native code at BatmanAK.exe+0xBA2210 in the Steam build
     /// </summary>
     public unsafe static void EnableForceDucking(bool fullyDuck = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -509,7 +529,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetDuckingInfo;
     /// <summary>
-    /// Function: ResetDuckingInfo
+    /// Function: ResetDuckingInfo<br/>
+    /// Native code at BatmanAK.exe+0xB35AC0 in the Steam build
     /// </summary>
     public unsafe static void ResetDuckingInfo()
     {
@@ -529,7 +550,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetDuckingInfo;
     /// <summary>
-    /// Function: SetDuckingInfo
+    /// Function: SetDuckingInfo<br/>
+    /// Native code at BatmanAK.exe+0xB35A30 in the Steam build
     /// </summary>
     public unsafe static void SetDuckingInfo(BmSDK.Engine.AkDialogue.FAkDuckingInfo dckInfo)
     {
@@ -550,7 +572,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDuckingInfo;
     /// <summary>
-    /// Function: GetDuckingInfo
+    /// Function: GetDuckingInfo<br/>
+    /// Native code at BatmanAK.exe+0xB359C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkDialogue.FAkDuckingInfo GetDuckingInfo()
     {
@@ -570,7 +593,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying_SuppressPrompts;
     /// <summary>
-    /// Function: IsSpeechPlaying_SuppressPrompts
+    /// Function: IsSpeechPlaying_SuppressPrompts<br/>
+    /// Native code at BatmanAK.exe+0xB35970 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_SuppressPrompts()
     {
@@ -590,7 +614,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying_Persistent;
     /// <summary>
-    /// Function: IsSpeechPlaying_Persistent
+    /// Function: IsSpeechPlaying_Persistent<br/>
+    /// Native code at BatmanAK.exe+0xB35920 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_Persistent()
     {
@@ -610,7 +635,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying_Instance;
     /// <summary>
-    /// Function: IsSpeechPlaying_Instance
+    /// Function: IsSpeechPlaying_Instance<br/>
+    /// Native code at BatmanAK.exe+0xB63C30 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_Instance(int dlgSpeechId)
     {
@@ -631,7 +657,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying_TypeId;
     /// <summary>
-    /// Function: IsSpeechPlaying_TypeId
+    /// Function: IsSpeechPlaying_TypeId<br/>
+    /// Native code at BatmanAK.exe+0xB63AF0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_TypeId(BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -652,7 +679,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying_VoiceId;
     /// <summary>
-    /// Function: IsSpeechPlaying_VoiceId
+    /// Function: IsSpeechPlaying_VoiceId<br/>
+    /// Native code at BatmanAK.exe+0xB639B0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_VoiceId(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -673,7 +701,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechPlaying;
     /// <summary>
-    /// Function: IsSpeechPlaying
+    /// Function: IsSpeechPlaying<br/>
+    /// Native code at BatmanAK.exe+0xB358D0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying()
     {
@@ -693,7 +722,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_All;
     /// <summary>
-    /// Function: StopSpeech_All
+    /// Function: StopSpeech_All<br/>
+    /// Native code at BatmanAK.exe+0xBA2160 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_All(BmSDK.FStringArg dlgTag = default)
     {
@@ -715,7 +745,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_SuppressPrompts;
     /// <summary>
-    /// Function: StopSpeech_SuppressPrompts
+    /// Function: StopSpeech_SuppressPrompts<br/>
+    /// Native code at BatmanAK.exe+0xBA20B0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_SuppressPrompts(BmSDK.FStringArg dlgTag = default)
     {
@@ -737,7 +768,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_Persistent;
     /// <summary>
-    /// Function: StopSpeech_Persistent
+    /// Function: StopSpeech_Persistent<br/>
+    /// Native code at BatmanAK.exe+0xBA2000 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Persistent(BmSDK.FStringArg dlgTag = default)
     {
@@ -759,7 +791,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_Emotes;
     /// <summary>
-    /// Function: StopSpeech_Emotes
+    /// Function: StopSpeech_Emotes<br/>
+    /// Native code at BatmanAK.exe+0xBA1F50 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Emotes(BmSDK.FStringArg dlgTag = default)
     {
@@ -781,7 +814,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_TypeId;
     /// <summary>
-    /// Function: StopSpeech_TypeId
+    /// Function: StopSpeech_TypeId<br/>
+    /// Native code at BatmanAK.exe+0xBA1DD0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_TypeId(BmSDK.Engine.AkDialogueType dlgType, BmSDK.FStringArg dlgTag = default)
     {
@@ -804,7 +838,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_VoiceId;
     /// <summary>
-    /// Function: StopSpeech_VoiceId
+    /// Function: StopSpeech_VoiceId<br/>
+    /// Native code at BatmanAK.exe+0xBA1C50 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_VoiceId(BmSDK.Engine.AkDialogueVoice dlgVoice, BmSDK.FStringArg dlgTag = default)
     {
@@ -827,7 +862,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_Speakers;
     /// <summary>
-    /// Function: StopSpeech_Speakers
+    /// Function: StopSpeech_Speakers<br/>
+    /// Native code at BatmanAK.exe+0xBB1720 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Speakers(BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, bool exceptEmotes = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -851,7 +887,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech_Speech;
     /// <summary>
-    /// Function: StopSpeech_Speech
+    /// Function: StopSpeech_Speech<br/>
+    /// Native code at BatmanAK.exe+0xBA1AD0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Speech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.FStringArg dlgTag = default)
     {
@@ -874,7 +911,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopSpeech;
     /// <summary>
-    /// Function: StopSpeech
+    /// Function: StopSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBA1960 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech(int speechId, BmSDK.FStringArg dlgTag = default)
     {
@@ -897,7 +935,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StartSpeechGlobal;
     /// <summary>
-    /// Function: StartSpeechGlobal
+    /// Function: StartSpeechGlobal<br/>
+    /// Native code at BatmanAK.exe+0xBBA700 in the Steam build
     /// </summary>
     public unsafe static int StartSpeechGlobal(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {
@@ -921,7 +960,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StartSpeech;
     /// <summary>
-    /// Function: StartSpeech
+    /// Function: StartSpeech<br/>
+    /// Native code at BatmanAK.exe+0xBBA4C0 in the Steam build
     /// </summary>
     public unsafe static int StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {
@@ -946,7 +986,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsVoiceLocked;
     /// <summary>
-    /// Function: IsVoiceLocked
+    /// Function: IsVoiceLocked<br/>
+    /// Native code at BatmanAK.exe+0xB63870 in the Steam build
     /// </summary>
     public unsafe static bool IsVoiceLocked(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -967,7 +1008,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsTypeLocked;
     /// <summary>
-    /// Function: IsTypeLocked
+    /// Function: IsTypeLocked<br/>
+    /// Native code at BatmanAK.exe+0xB63730 in the Steam build
     /// </summary>
     public unsafe static bool IsTypeLocked(BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -988,7 +1030,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UnlockAllTypes;
     /// <summary>
-    /// Function: UnlockAllTypes
+    /// Function: UnlockAllTypes<br/>
+    /// Native code at BatmanAK.exe+0xB35890 in the Steam build
     /// </summary>
     public unsafe static void UnlockAllTypes()
     {
@@ -1008,7 +1051,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UnlockType;
     /// <summary>
-    /// Function: UnlockType
+    /// Function: UnlockType<br/>
+    /// Native code at BatmanAK.exe+0xB63610 in the Steam build
     /// </summary>
     public unsafe static void UnlockType(BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -1029,7 +1073,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LockType;
     /// <summary>
-    /// Function: LockType
+    /// Function: LockType<br/>
+    /// Native code at BatmanAK.exe+0xB63610 in the Steam build
     /// </summary>
     public unsafe static void LockType(BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -1050,7 +1095,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UnlockAllVoices;
     /// <summary>
-    /// Function: UnlockAllVoices
+    /// Function: UnlockAllVoices<br/>
+    /// Native code at BatmanAK.exe+0xB35850 in the Steam build
     /// </summary>
     public unsafe static void UnlockAllVoices()
     {
@@ -1070,7 +1116,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UnlockVoice;
     /// <summary>
-    /// Function: UnlockVoice
+    /// Function: UnlockVoice<br/>
+    /// Native code at BatmanAK.exe+0xB634A0 in the Steam build
     /// </summary>
     public unsafe static void UnlockVoice(BmSDK.Engine.AkDialogueVoice dlgVoice, bool full = default)
     {
@@ -1092,7 +1139,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LockVoice;
     /// <summary>
-    /// Function: LockVoice
+    /// Function: LockVoice<br/>
+    /// Native code at BatmanAK.exe+0xB63380 in the Steam build
     /// </summary>
     public unsafe static void LockVoice(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -1113,7 +1161,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PlayerChanged;
     /// <summary>
-    /// Function: PlayerChanged
+    /// Function: PlayerChanged<br/>
+    /// Native code at BatmanAK.exe+0xB35810 in the Steam build
     /// </summary>
     public unsafe static void PlayerChanged()
     {
@@ -1133,7 +1182,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_JumpToSpeechLine;
     /// <summary>
-    /// Function: JumpToSpeechLine
+    /// Function: JumpToSpeechLine<br/>
+    /// Native code at BatmanAK.exe+0xBA16E0 in the Steam build
     /// </summary>
     public unsafe static void JumpToSpeechLine(int speechId, int lineIdx, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1158,7 +1208,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SkipSpeechLine;
     /// <summary>
-    /// Function: SkipSpeechLine
+    /// Function: SkipSpeechLine<br/>
+    /// Native code at BatmanAK.exe+0xBA1530 in the Steam build
     /// </summary>
     public unsafe static void SkipSpeechLine(int speechId, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1182,7 +1233,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InterruptSpeech_Type;
     /// <summary>
-    /// Function: InterruptSpeech_Type
+    /// Function: InterruptSpeech_Type<br/>
+    /// Native code at BatmanAK.exe+0xBA1380 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Type(BmSDK.Engine.AkDialogueType dlgType, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1206,7 +1258,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InterruptSpeech_Speech;
     /// <summary>
-    /// Function: InterruptSpeech_Speech
+    /// Function: InterruptSpeech_Speech<br/>
+    /// Native code at BatmanAK.exe+0xBA11D0 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Speech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1230,7 +1283,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InterruptSpeech_Id;
     /// <summary>
-    /// Function: InterruptSpeech_Id
+    /// Function: InterruptSpeech_Id<br/>
+    /// Native code at BatmanAK.exe+0xBA1020 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Id(int speechId, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -1254,7 +1308,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_CancelSpeechCallbacks;
     /// <summary>
-    /// Function: CancelSpeechCallbacks
+    /// Function: CancelSpeechCallbacks<br/>
+    /// Native code at BatmanAK.exe+0xB63260 in the Steam build
     /// </summary>
     public unsafe static void CancelSpeechCallbacks(BmSDK.GameObject Obj)
     {
@@ -1275,7 +1330,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ChangeSpeechOption_DisableSubtitles;
     /// <summary>
-    /// Function: ChangeSpeechOption_DisableSubtitles
+    /// Function: ChangeSpeechOption_DisableSubtitles<br/>
+    /// Native code at BatmanAK.exe+0xB63080 in the Steam build
     /// </summary>
     public unsafe static void ChangeSpeechOption_DisableSubtitles(int speechId, bool Disable)
     {
@@ -1297,7 +1353,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ChangeSpeechOption_WaitForNotifies;
     /// <summary>
-    /// Function: ChangeSpeechOption_WaitForNotifies
+    /// Function: ChangeSpeechOption_WaitForNotifies<br/>
+    /// Native code at BatmanAK.exe+0xB62EA0 in the Steam build
     /// </summary>
     public unsafe static void ChangeSpeechOption_WaitForNotifies(int speechId, bool wait)
     {
@@ -1319,7 +1376,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsSpeechWaitingForNotifies;
     /// <summary>
-    /// Function: IsSpeechWaitingForNotifies
+    /// Function: IsSpeechWaitingForNotifies<br/>
+    /// Native code at BatmanAK.exe+0xB62CB0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechWaitingForNotifies(int speechId, bool waitingNow)
     {
@@ -1341,7 +1399,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_CheckSpeechChapterFlags;
     /// <summary>
-    /// Function: CheckSpeechChapterFlags
+    /// Function: CheckSpeechChapterFlags<br/>
+    /// Native code at BatmanAK.exe+0xB62B40 in the Steam build
     /// </summary>
     public unsafe static bool CheckSpeechChapterFlags(BmSDK.Engine.AkDialogueSpeech dlgSpeech, bool checkAll = default)
     {
@@ -1363,7 +1422,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSpeechMinMaxDuration;
     /// <summary>
-    /// Function: GetSpeechMinMaxDuration
+    /// Function: GetSpeechMinMaxDuration<br/>
+    /// Native code at BatmanAK.exe+0xB62970 in the Steam build
     /// </summary>
     public unsafe static void GetSpeechMinMaxDuration(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out float minDur, out float maxDur)
     {
@@ -1390,7 +1450,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAverageNoSpeechInterval;
     /// <summary>
-    /// Function: GetAverageNoSpeechInterval
+    /// Function: GetAverageNoSpeechInterval<br/>
+    /// Native code at BatmanAK.exe+0xB357C0 in the Steam build
     /// </summary>
     public unsafe static float GetAverageNoSpeechInterval()
     {
@@ -1410,7 +1471,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAverageSpeechInterval;
     /// <summary>
-    /// Function: GetAverageSpeechInterval
+    /// Function: GetAverageSpeechInterval<br/>
+    /// Native code at BatmanAK.exe+0xB35770 in the Steam build
     /// </summary>
     public unsafe static float GetAverageSpeechInterval()
     {
@@ -1430,7 +1492,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetTimeSinceAnySpeech;
     /// <summary>
-    /// Function: GetTimeSinceAnySpeech
+    /// Function: GetTimeSinceAnySpeech<br/>
+    /// Native code at BatmanAK.exe+0xB357C0 in the Steam build
     /// </summary>
     public unsafe static float GetTimeSinceAnySpeech()
     {
@@ -1450,7 +1513,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSpeechCurrentLineIndex;
     /// <summary>
-    /// Function: GetSpeechCurrentLineIndex
+    /// Function: GetSpeechCurrentLineIndex<br/>
+    /// Native code at BatmanAK.exe+0xB62840 in the Steam build
     /// </summary>
     public unsafe static int GetSpeechCurrentLineIndex(int speechId)
     {
@@ -1471,7 +1535,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSpeechElapsedTime;
     /// <summary>
-    /// Function: GetSpeechElapsedTime
+    /// Function: GetSpeechElapsedTime<br/>
+    /// Native code at BatmanAK.exe+0xB626D0 in the Steam build
     /// </summary>
     public unsafe static float GetSpeechElapsedTime(int speechId, bool currentLineOnly = default)
     {
@@ -1493,7 +1558,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetSpeechPriority;
     /// <summary>
-    /// Function: GetSpeechPriority
+    /// Function: GetSpeechPriority<br/>
+    /// Native code at BatmanAK.exe+0xBBA200 in the Steam build
     /// </summary>
     public unsafe static bool GetSpeechPriority(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, bool dlgForPlayer, out int dlgPriority)
     {
@@ -1519,7 +1585,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetHighestActiveSpeechPriority;
     /// <summary>
-    /// Function: GetHighestActiveSpeechPriority
+    /// Function: GetHighestActiveSpeechPriority<br/>
+    /// Native code at BatmanAK.exe+0xB356C0 in the Steam build
     /// </summary>
     public unsafe static int GetHighestActiveSpeechPriority(bool dlgExceptEmotes = default)
     {
@@ -1540,7 +1607,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetCurrentSpeechInstances;
     /// <summary>
-    /// Function: GetCurrentSpeechInstances
+    /// Function: GetCurrentSpeechInstances<br/>
+    /// Native code at BatmanAK.exe+0xB35670 in the Steam build
     /// </summary>
     public unsafe static int GetCurrentSpeechInstances()
     {
@@ -1560,7 +1628,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetMaxSpeechInstances;
     /// <summary>
-    /// Function: GetMaxSpeechInstances
+    /// Function: GetMaxSpeechInstances<br/>
+    /// Native code at BatmanAK.exe+0xB35620 in the Steam build
     /// </summary>
     public unsafe static int GetMaxSpeechInstances()
     {
@@ -1580,7 +1649,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetMaxSpeechInstances;
     /// <summary>
-    /// Function: ResetMaxSpeechInstances
+    /// Function: ResetMaxSpeechInstances<br/>
+    /// Native code at BatmanAK.exe+0xB355E0 in the Steam build
     /// </summary>
     public unsafe static void ResetMaxSpeechInstances()
     {
@@ -1600,7 +1670,8 @@ public partial class AkDialogue : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetMaxSpeechInstances;
     /// <summary>
-    /// Function: SetMaxSpeechInstances
+    /// Function: SetMaxSpeechInstances<br/>
+    /// Native code at BatmanAK.exe+0xB625B0 in the Steam build
     /// </summary>
     public unsafe static void SetMaxSpeechInstances(int maxSpeechInstances)
     {
@@ -2269,7 +2340,8 @@ public static class AkDialogueStatics
 {
     private static BmSDK.Function __fn_GetDialogueSubtitle;
     /// <summary>
-    /// Function: GetDialogueSubtitle, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDialogueSubtitle, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2940 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetDialogueSubtitle(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueLine dlgLine, BmSDK.Engine.AkDialogueEvent dlgEvent, BmSDK.Engine.Actor dlgSpeaker, out float subDur)
     {
@@ -2296,7 +2368,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetGauntletMeter;
     /// <summary>
-    /// Function: GetGauntletMeter, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetGauntletMeter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35EE0 in the Steam build
     /// </summary>
     public unsafe static float GetGauntletMeter(this BmSDK.Engine.AkDialogue self)
     {
@@ -2317,7 +2390,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSurveillanceMeter;
     /// <summary>
-    /// Function: GetSurveillanceMeter, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSurveillanceMeter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35E90 in the Steam build
     /// </summary>
     public unsafe static float GetSurveillanceMeter(this BmSDK.Engine.AkDialogue self)
     {
@@ -2338,7 +2412,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetDialogueMeter;
     /// <summary>
-    /// Function: GetDialogueMeter, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDialogueMeter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35E40 in the Steam build
     /// </summary>
     public unsafe static float GetDialogueMeter(this BmSDK.Engine.AkDialogue self)
     {
@@ -2359,7 +2434,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_AllowAnimOnlyDialogue;
     /// <summary>
-    /// Function: AllowAnimOnlyDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: AllowAnimOnlyDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA27C0 in the Steam build
     /// </summary>
     public unsafe static void AllowAnimOnlyDialogue(this BmSDK.Engine.AkDialogue self, bool dlgAllowed, BmSDK.FStringArg strDebug = default)
     {
@@ -2383,7 +2459,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsAnimOnlyDialogueAllowed;
     /// <summary>
-    /// Function: IsAnimOnlyDialogueAllowed, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsAnimOnlyDialogueAllowed, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35DF0 in the Steam build
     /// </summary>
     public unsafe static bool IsAnimOnlyDialogueAllowed(this BmSDK.Engine.AkDialogue self)
     {
@@ -2404,7 +2481,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSurveillanceFocus;
     /// <summary>
-    /// Function: GetSurveillanceFocus, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSurveillanceFocus, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35DA0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.Actor GetSurveillanceFocus(this BmSDK.Engine.AkDialogue self)
     {
@@ -2425,7 +2503,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSurveillanceUIVisible;
     /// <summary>
-    /// Function: IsSurveillanceUIVisible, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSurveillanceUIVisible, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35D50 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceUIVisible(this BmSDK.Engine.AkDialogue self)
     {
@@ -2446,7 +2525,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSurveillanceDialogueAllowed;
     /// <summary>
-    /// Function: IsSurveillanceDialogueAllowed, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSurveillanceDialogueAllowed, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35CA0 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceDialogueAllowed(this BmSDK.Engine.AkDialogue self, bool broadcastIntercept = default)
     {
@@ -2468,7 +2548,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_DisableSurveillanceDialogue;
     /// <summary>
-    /// Function: DisableSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: DisableSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35C60 in the Steam build
     /// </summary>
     public unsafe static void DisableSurveillanceDialogue(this BmSDK.Engine.AkDialogue self)
     {
@@ -2489,7 +2570,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_EnableSurveillanceDialogue;
     /// <summary>
-    /// Function: EnableSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: EnableSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35C20 in the Steam build
     /// </summary>
     public unsafe static void EnableSurveillanceDialogue(this BmSDK.Engine.AkDialogue self)
     {
@@ -2510,7 +2592,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSurveillanceDialogueActive;
     /// <summary>
-    /// Function: IsSurveillanceDialogueActive, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSurveillanceDialogueActive, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35BD0 in the Steam build
     /// </summary>
     public unsafe static bool IsSurveillanceDialogueActive(this BmSDK.Engine.AkDialogue self)
     {
@@ -2531,7 +2614,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_ResetSurveillanceDialogue;
     /// <summary>
-    /// Function: ResetSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetSurveillanceDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35B90 in the Steam build
     /// </summary>
     public unsafe static void ResetSurveillanceDialogue(this BmSDK.Engine.AkDialogue self)
     {
@@ -2552,7 +2636,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_NotifySurveillanceDialogue;
     /// <summary>
-    /// Function: NotifySurveillanceDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: NotifySurveillanceDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2410 in the Steam build
     /// </summary>
     public unsafe static void NotifySurveillanceDialogue(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.Actor dlgSpeaker, int dlgSpeechId = default, float survMinRange = default, float survMidRange = default, float survMaxRange = default, float survDistortionRange = default, bool broadcastIntercept = default, BmSDK.FStringArg broadcastStation = default, BmSDK.FStringArg broadcastSpeaker = default, bool surveillanceOcclusion = default, bool interrupted = default)
     {
@@ -2586,7 +2671,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_NotifyFocusDialogue;
     /// <summary>
-    /// Function: NotifyFocusDialogue, run on <paramref name="self"/> rather than the class default object
+    /// Function: NotifyFocusDialogue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63D60 in the Steam build
     /// </summary>
     public unsafe static void NotifyFocusDialogue(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.Actor dlgSpeaker, bool speakerHasFocus)
     {
@@ -2609,7 +2695,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsAudible;
     /// <summary>
-    /// Function: IsAudible, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsAudible, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB1870 in the Steam build
     /// </summary>
     public unsafe static bool IsAudible(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, bool checkLocks)
     {
@@ -2633,7 +2720,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_FullReset;
     /// <summary>
-    /// Function: FullReset, run on <paramref name="self"/> rather than the class default object
+    /// Function: FullReset, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35B50 in the Steam build
     /// </summary>
     public unsafe static void FullReset(this BmSDK.Engine.AkDialogue self)
     {
@@ -2654,7 +2742,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsForciblyDucked;
     /// <summary>
-    /// Function: IsForciblyDucked, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsForciblyDucked, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35B00 in the Steam build
     /// </summary>
     public unsafe static bool IsForciblyDucked(this BmSDK.Engine.AkDialogue self)
     {
@@ -2675,7 +2764,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_DisableForceDucking;
     /// <summary>
-    /// Function: DisableForceDucking, run on <paramref name="self"/> rather than the class default object
+    /// Function: DisableForceDucking, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2310 in the Steam build
     /// </summary>
     public unsafe static void DisableForceDucking(this BmSDK.Engine.AkDialogue self, bool fullyUnduck = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -2699,7 +2789,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_EnableForceDucking;
     /// <summary>
-    /// Function: EnableForceDucking, run on <paramref name="self"/> rather than the class default object
+    /// Function: EnableForceDucking, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2210 in the Steam build
     /// </summary>
     public unsafe static void EnableForceDucking(this BmSDK.Engine.AkDialogue self, bool fullyDuck = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -2723,7 +2814,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_ResetDuckingInfo;
     /// <summary>
-    /// Function: ResetDuckingInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetDuckingInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35AC0 in the Steam build
     /// </summary>
     public unsafe static void ResetDuckingInfo(this BmSDK.Engine.AkDialogue self)
     {
@@ -2744,7 +2836,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_SetDuckingInfo;
     /// <summary>
-    /// Function: SetDuckingInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetDuckingInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35A30 in the Steam build
     /// </summary>
     public unsafe static void SetDuckingInfo(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogue.FAkDuckingInfo dckInfo)
     {
@@ -2766,7 +2859,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetDuckingInfo;
     /// <summary>
-    /// Function: GetDuckingInfo, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetDuckingInfo, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB359C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkDialogue.FAkDuckingInfo GetDuckingInfo(this BmSDK.Engine.AkDialogue self)
     {
@@ -2787,7 +2881,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying_SuppressPrompts;
     /// <summary>
-    /// Function: IsSpeechPlaying_SuppressPrompts, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying_SuppressPrompts, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35970 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_SuppressPrompts(this BmSDK.Engine.AkDialogue self)
     {
@@ -2808,7 +2903,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying_Persistent;
     /// <summary>
-    /// Function: IsSpeechPlaying_Persistent, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying_Persistent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35920 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_Persistent(this BmSDK.Engine.AkDialogue self)
     {
@@ -2829,7 +2925,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying_Instance;
     /// <summary>
-    /// Function: IsSpeechPlaying_Instance, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying_Instance, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63C30 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_Instance(this BmSDK.Engine.AkDialogue self, int dlgSpeechId)
     {
@@ -2851,7 +2948,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying_TypeId;
     /// <summary>
-    /// Function: IsSpeechPlaying_TypeId, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying_TypeId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63AF0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_TypeId(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -2873,7 +2971,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying_VoiceId;
     /// <summary>
-    /// Function: IsSpeechPlaying_VoiceId, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying_VoiceId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB639B0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying_VoiceId(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -2895,7 +2994,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechPlaying;
     /// <summary>
-    /// Function: IsSpeechPlaying, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechPlaying, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB358D0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechPlaying(this BmSDK.Engine.AkDialogue self)
     {
@@ -2916,7 +3016,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_All;
     /// <summary>
-    /// Function: StopSpeech_All, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_All, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2160 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_All(this BmSDK.Engine.AkDialogue self, BmSDK.FStringArg dlgTag = default)
     {
@@ -2939,7 +3040,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_SuppressPrompts;
     /// <summary>
-    /// Function: StopSpeech_SuppressPrompts, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_SuppressPrompts, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA20B0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_SuppressPrompts(this BmSDK.Engine.AkDialogue self, BmSDK.FStringArg dlgTag = default)
     {
@@ -2962,7 +3064,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_Persistent;
     /// <summary>
-    /// Function: StopSpeech_Persistent, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_Persistent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA2000 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Persistent(this BmSDK.Engine.AkDialogue self, BmSDK.FStringArg dlgTag = default)
     {
@@ -2985,7 +3088,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_Emotes;
     /// <summary>
-    /// Function: StopSpeech_Emotes, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_Emotes, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1F50 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Emotes(this BmSDK.Engine.AkDialogue self, BmSDK.FStringArg dlgTag = default)
     {
@@ -3008,7 +3112,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_TypeId;
     /// <summary>
-    /// Function: StopSpeech_TypeId, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_TypeId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1DD0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_TypeId(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType, BmSDK.FStringArg dlgTag = default)
     {
@@ -3032,7 +3137,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_VoiceId;
     /// <summary>
-    /// Function: StopSpeech_VoiceId, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_VoiceId, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1C50 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_VoiceId(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueVoice dlgVoice, BmSDK.FStringArg dlgTag = default)
     {
@@ -3056,7 +3162,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_Speakers;
     /// <summary>
-    /// Function: StopSpeech_Speakers, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_Speakers, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB1720 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Speakers(this BmSDK.Engine.AkDialogue self, BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, bool exceptEmotes = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3081,7 +3188,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech_Speech;
     /// <summary>
-    /// Function: StopSpeech_Speech, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech_Speech, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1AD0 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech_Speech(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.FStringArg dlgTag = default)
     {
@@ -3105,7 +3213,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StopSpeech;
     /// <summary>
-    /// Function: StopSpeech, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopSpeech, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1960 in the Steam build
     /// </summary>
     public unsafe static void StopSpeech(this BmSDK.Engine.AkDialogue self, int speechId, BmSDK.FStringArg dlgTag = default)
     {
@@ -3129,7 +3238,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StartSpeechGlobal;
     /// <summary>
-    /// Function: StartSpeechGlobal, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartSpeechGlobal, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBA700 in the Steam build
     /// </summary>
     public unsafe static int StartSpeechGlobal(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {
@@ -3154,7 +3264,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_StartSpeech;
     /// <summary>
-    /// Function: StartSpeech, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartSpeech, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBA4C0 in the Steam build
     /// </summary>
     public unsafe static int StartSpeech(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.TArray<BmSDK.Engine.Actor> dlgSpeakers, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {
@@ -3180,7 +3291,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsVoiceLocked;
     /// <summary>
-    /// Function: IsVoiceLocked, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsVoiceLocked, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63870 in the Steam build
     /// </summary>
     public unsafe static bool IsVoiceLocked(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -3202,7 +3314,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsTypeLocked;
     /// <summary>
-    /// Function: IsTypeLocked, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsTypeLocked, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63730 in the Steam build
     /// </summary>
     public unsafe static bool IsTypeLocked(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -3224,7 +3337,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_UnlockAllTypes;
     /// <summary>
-    /// Function: UnlockAllTypes, run on <paramref name="self"/> rather than the class default object
+    /// Function: UnlockAllTypes, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35890 in the Steam build
     /// </summary>
     public unsafe static void UnlockAllTypes(this BmSDK.Engine.AkDialogue self)
     {
@@ -3245,7 +3359,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_UnlockType;
     /// <summary>
-    /// Function: UnlockType, run on <paramref name="self"/> rather than the class default object
+    /// Function: UnlockType, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63610 in the Steam build
     /// </summary>
     public unsafe static void UnlockType(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -3267,7 +3382,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_LockType;
     /// <summary>
-    /// Function: LockType, run on <paramref name="self"/> rather than the class default object
+    /// Function: LockType, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63610 in the Steam build
     /// </summary>
     public unsafe static void LockType(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType)
     {
@@ -3289,7 +3405,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_UnlockAllVoices;
     /// <summary>
-    /// Function: UnlockAllVoices, run on <paramref name="self"/> rather than the class default object
+    /// Function: UnlockAllVoices, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35850 in the Steam build
     /// </summary>
     public unsafe static void UnlockAllVoices(this BmSDK.Engine.AkDialogue self)
     {
@@ -3310,7 +3427,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_UnlockVoice;
     /// <summary>
-    /// Function: UnlockVoice, run on <paramref name="self"/> rather than the class default object
+    /// Function: UnlockVoice, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB634A0 in the Steam build
     /// </summary>
     public unsafe static void UnlockVoice(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueVoice dlgVoice, bool full = default)
     {
@@ -3333,7 +3451,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_LockVoice;
     /// <summary>
-    /// Function: LockVoice, run on <paramref name="self"/> rather than the class default object
+    /// Function: LockVoice, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63380 in the Steam build
     /// </summary>
     public unsafe static void LockVoice(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
@@ -3355,7 +3474,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_PlayerChanged;
     /// <summary>
-    /// Function: PlayerChanged, run on <paramref name="self"/> rather than the class default object
+    /// Function: PlayerChanged, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35810 in the Steam build
     /// </summary>
     public unsafe static void PlayerChanged(this BmSDK.Engine.AkDialogue self)
     {
@@ -3376,7 +3496,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_JumpToSpeechLine;
     /// <summary>
-    /// Function: JumpToSpeechLine, run on <paramref name="self"/> rather than the class default object
+    /// Function: JumpToSpeechLine, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA16E0 in the Steam build
     /// </summary>
     public unsafe static void JumpToSpeechLine(this BmSDK.Engine.AkDialogue self, int speechId, int lineIdx, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3402,7 +3523,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_SkipSpeechLine;
     /// <summary>
-    /// Function: SkipSpeechLine, run on <paramref name="self"/> rather than the class default object
+    /// Function: SkipSpeechLine, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1530 in the Steam build
     /// </summary>
     public unsafe static void SkipSpeechLine(this BmSDK.Engine.AkDialogue self, int speechId, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3427,7 +3549,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_InterruptSpeech_Type;
     /// <summary>
-    /// Function: InterruptSpeech_Type, run on <paramref name="self"/> rather than the class default object
+    /// Function: InterruptSpeech_Type, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1380 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Type(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueType dlgType, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3452,7 +3575,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_InterruptSpeech_Speech;
     /// <summary>
-    /// Function: InterruptSpeech_Speech, run on <paramref name="self"/> rather than the class default object
+    /// Function: InterruptSpeech_Speech, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA11D0 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Speech(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3477,7 +3601,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_InterruptSpeech_Id;
     /// <summary>
-    /// Function: InterruptSpeech_Id, run on <paramref name="self"/> rather than the class default object
+    /// Function: InterruptSpeech_Id, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA1020 in the Steam build
     /// </summary>
     public unsafe static void InterruptSpeech_Id(this BmSDK.Engine.AkDialogue self, int speechId, float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
@@ -3502,7 +3627,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_CancelSpeechCallbacks;
     /// <summary>
-    /// Function: CancelSpeechCallbacks, run on <paramref name="self"/> rather than the class default object
+    /// Function: CancelSpeechCallbacks, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63260 in the Steam build
     /// </summary>
     public unsafe static void CancelSpeechCallbacks(this BmSDK.Engine.AkDialogue self, BmSDK.GameObject Obj)
     {
@@ -3524,7 +3650,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_ChangeSpeechOption_DisableSubtitles;
     /// <summary>
-    /// Function: ChangeSpeechOption_DisableSubtitles, run on <paramref name="self"/> rather than the class default object
+    /// Function: ChangeSpeechOption_DisableSubtitles, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB63080 in the Steam build
     /// </summary>
     public unsafe static void ChangeSpeechOption_DisableSubtitles(this BmSDK.Engine.AkDialogue self, int speechId, bool Disable)
     {
@@ -3547,7 +3674,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_ChangeSpeechOption_WaitForNotifies;
     /// <summary>
-    /// Function: ChangeSpeechOption_WaitForNotifies, run on <paramref name="self"/> rather than the class default object
+    /// Function: ChangeSpeechOption_WaitForNotifies, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB62EA0 in the Steam build
     /// </summary>
     public unsafe static void ChangeSpeechOption_WaitForNotifies(this BmSDK.Engine.AkDialogue self, int speechId, bool wait)
     {
@@ -3570,7 +3698,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_IsSpeechWaitingForNotifies;
     /// <summary>
-    /// Function: IsSpeechWaitingForNotifies, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsSpeechWaitingForNotifies, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB62CB0 in the Steam build
     /// </summary>
     public unsafe static bool IsSpeechWaitingForNotifies(this BmSDK.Engine.AkDialogue self, int speechId, bool waitingNow)
     {
@@ -3593,7 +3722,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_CheckSpeechChapterFlags;
     /// <summary>
-    /// Function: CheckSpeechChapterFlags, run on <paramref name="self"/> rather than the class default object
+    /// Function: CheckSpeechChapterFlags, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB62B40 in the Steam build
     /// </summary>
     public unsafe static bool CheckSpeechChapterFlags(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, bool checkAll = default)
     {
@@ -3616,7 +3746,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSpeechMinMaxDuration;
     /// <summary>
-    /// Function: GetSpeechMinMaxDuration, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSpeechMinMaxDuration, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB62970 in the Steam build
     /// </summary>
     public unsafe static void GetSpeechMinMaxDuration(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, out float minDur, out float maxDur)
     {
@@ -3644,7 +3775,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetAverageNoSpeechInterval;
     /// <summary>
-    /// Function: GetAverageNoSpeechInterval, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAverageNoSpeechInterval, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB357C0 in the Steam build
     /// </summary>
     public unsafe static float GetAverageNoSpeechInterval(this BmSDK.Engine.AkDialogue self)
     {
@@ -3665,7 +3797,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetAverageSpeechInterval;
     /// <summary>
-    /// Function: GetAverageSpeechInterval, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAverageSpeechInterval, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35770 in the Steam build
     /// </summary>
     public unsafe static float GetAverageSpeechInterval(this BmSDK.Engine.AkDialogue self)
     {
@@ -3686,7 +3819,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetTimeSinceAnySpeech;
     /// <summary>
-    /// Function: GetTimeSinceAnySpeech, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetTimeSinceAnySpeech, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB357C0 in the Steam build
     /// </summary>
     public unsafe static float GetTimeSinceAnySpeech(this BmSDK.Engine.AkDialogue self)
     {
@@ -3707,7 +3841,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSpeechCurrentLineIndex;
     /// <summary>
-    /// Function: GetSpeechCurrentLineIndex, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSpeechCurrentLineIndex, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB62840 in the Steam build
     /// </summary>
     public unsafe static int GetSpeechCurrentLineIndex(this BmSDK.Engine.AkDialogue self, int speechId)
     {
@@ -3729,7 +3864,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSpeechElapsedTime;
     /// <summary>
-    /// Function: GetSpeechElapsedTime, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSpeechElapsedTime, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB626D0 in the Steam build
     /// </summary>
     public unsafe static float GetSpeechElapsedTime(this BmSDK.Engine.AkDialogue self, int speechId, bool currentLineOnly = default)
     {
@@ -3752,7 +3888,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetSpeechPriority;
     /// <summary>
-    /// Function: GetSpeechPriority, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetSpeechPriority, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBBA200 in the Steam build
     /// </summary>
     public unsafe static bool GetSpeechPriority(this BmSDK.Engine.AkDialogue self, BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, bool dlgForPlayer, out int dlgPriority)
     {
@@ -3779,7 +3916,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetHighestActiveSpeechPriority;
     /// <summary>
-    /// Function: GetHighestActiveSpeechPriority, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetHighestActiveSpeechPriority, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB356C0 in the Steam build
     /// </summary>
     public unsafe static int GetHighestActiveSpeechPriority(this BmSDK.Engine.AkDialogue self, bool dlgExceptEmotes = default)
     {
@@ -3801,7 +3939,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetCurrentSpeechInstances;
     /// <summary>
-    /// Function: GetCurrentSpeechInstances, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetCurrentSpeechInstances, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35670 in the Steam build
     /// </summary>
     public unsafe static int GetCurrentSpeechInstances(this BmSDK.Engine.AkDialogue self)
     {
@@ -3822,7 +3961,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_GetMaxSpeechInstances;
     /// <summary>
-    /// Function: GetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB35620 in the Steam build
     /// </summary>
     public unsafe static int GetMaxSpeechInstances(this BmSDK.Engine.AkDialogue self)
     {
@@ -3843,7 +3983,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_ResetMaxSpeechInstances;
     /// <summary>
-    /// Function: ResetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB355E0 in the Steam build
     /// </summary>
     public unsafe static void ResetMaxSpeechInstances(this BmSDK.Engine.AkDialogue self)
     {
@@ -3864,7 +4005,8 @@ public static class AkDialogueStatics
 
     private static BmSDK.Function __fn_SetMaxSpeechInstances;
     /// <summary>
-    /// Function: SetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetMaxSpeechInstances, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB625B0 in the Steam build
     /// </summary>
     public unsafe static void SetMaxSpeechInstances(this BmSDK.Engine.AkDialogue self, int maxSpeechInstances)
     {

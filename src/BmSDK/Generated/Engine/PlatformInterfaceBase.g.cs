@@ -112,7 +112,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetInAppMessageInterface;
     /// <summary>
-    /// Function: GetInAppMessageInterface
+    /// Function: GetInAppMessageInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DF60 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.InAppMessageBase GetInAppMessageInterface()
     {
@@ -132,7 +133,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAppNotificationsInterface;
     /// <summary>
-    /// Function: GetAppNotificationsInterface
+    /// Function: GetAppNotificationsInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DF10 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AppNotificationsBase GetAppNotificationsInterface()
     {
@@ -152,7 +154,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetTwitterIntegration;
     /// <summary>
-    /// Function: GetTwitterIntegration
+    /// Function: GetTwitterIntegration<br/>
+    /// Native code at BatmanAK.exe+0xB2DEC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.TwitterIntegrationBase GetTwitterIntegration()
     {
@@ -172,7 +175,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAnalyticEventsInterface;
     /// <summary>
-    /// Function: GetAnalyticEventsInterface
+    /// Function: GetAnalyticEventsInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DE70 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AnalyticEventsBase GetAnalyticEventsInterface()
     {
@@ -192,7 +196,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetMicroTransactionInterface;
     /// <summary>
-    /// Function: GetMicroTransactionInterface
+    /// Function: GetMicroTransactionInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DE20 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.MicroTransactionBase GetMicroTransactionInterface()
     {
@@ -212,7 +217,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetInGameAdManager;
     /// <summary>
-    /// Function: GetInGameAdManager
+    /// Function: GetInGameAdManager<br/>
+    /// Native code at BatmanAK.exe+0xB2DDD0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.InGameAdManager GetInGameAdManager()
     {
@@ -232,7 +238,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetFacebookIntegration;
     /// <summary>
-    /// Function: GetFacebookIntegration
+    /// Function: GetFacebookIntegration<br/>
+    /// Native code at BatmanAK.exe+0xB2DD80 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.FacebookIntegration GetFacebookIntegration()
     {
@@ -252,7 +259,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLocalStorageInterface;
     /// <summary>
-    /// Function: GetLocalStorageInterface
+    /// Function: GetLocalStorageInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DD30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.CloudStorageBase GetLocalStorageInterface()
     {
@@ -272,7 +280,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetCloudStorageInterface;
     /// <summary>
-    /// Function: GetCloudStorageInterface
+    /// Function: GetCloudStorageInterface<br/>
+    /// Native code at BatmanAK.exe+0xB2DCE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.CloudStorageBase GetCloudStorageInterface()
     {
@@ -292,7 +301,8 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CallDelegates;
     /// <summary>
-    /// Function: CallDelegates
+    /// Function: CallDelegates<br/>
+    /// Native code at BatmanAK.exe+0xBB1050 in the Steam build
     /// </summary>
     public unsafe virtual void CallDelegates(int DelegateType, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult DelegateResult)
     {
@@ -470,7 +480,8 @@ public static class PlatformInterfaceBaseStatics
 {
     private static BmSDK.Function __fn_GetInAppMessageInterface;
     /// <summary>
-    /// Function: GetInAppMessageInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetInAppMessageInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DF60 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.InAppMessageBase GetInAppMessageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -491,7 +502,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetAppNotificationsInterface;
     /// <summary>
-    /// Function: GetAppNotificationsInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAppNotificationsInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DF10 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AppNotificationsBase GetAppNotificationsInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -512,7 +524,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetTwitterIntegration;
     /// <summary>
-    /// Function: GetTwitterIntegration, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetTwitterIntegration, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DEC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.TwitterIntegrationBase GetTwitterIntegration(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -533,7 +546,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetAnalyticEventsInterface;
     /// <summary>
-    /// Function: GetAnalyticEventsInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAnalyticEventsInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DE70 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AnalyticEventsBase GetAnalyticEventsInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -554,7 +568,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetMicroTransactionInterface;
     /// <summary>
-    /// Function: GetMicroTransactionInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetMicroTransactionInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DE20 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.MicroTransactionBase GetMicroTransactionInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -575,7 +590,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetInGameAdManager;
     /// <summary>
-    /// Function: GetInGameAdManager, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetInGameAdManager, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DDD0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.InGameAdManager GetInGameAdManager(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -596,7 +612,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetFacebookIntegration;
     /// <summary>
-    /// Function: GetFacebookIntegration, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetFacebookIntegration, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DD80 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.FacebookIntegration GetFacebookIntegration(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -617,7 +634,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetLocalStorageInterface;
     /// <summary>
-    /// Function: GetLocalStorageInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetLocalStorageInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DD30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.CloudStorageBase GetLocalStorageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {
@@ -638,7 +656,8 @@ public static class PlatformInterfaceBaseStatics
 
     private static BmSDK.Function __fn_GetCloudStorageInterface;
     /// <summary>
-    /// Function: GetCloudStorageInterface, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetCloudStorageInterface, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2DCE0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.CloudStorageBase GetCloudStorageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
     {

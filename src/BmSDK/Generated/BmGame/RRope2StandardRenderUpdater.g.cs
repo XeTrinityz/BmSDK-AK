@@ -80,7 +80,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeRenderInterpolationScaleTarget;
     /// <summary>
-    /// Function: SetRopeRenderInterpolationScaleTarget
+    /// Function: SetRopeRenderInterpolationScaleTarget<br/>
+    /// Native code at BatmanAK.exe+0x5035B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRopeRenderInterpolationScaleTarget(float NewInterpolationScaleTarget)
     {
@@ -102,7 +103,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeRenderInterpolationScale;
     /// <summary>
-    /// Function: SetRopeRenderInterpolationScale
+    /// Function: SetRopeRenderInterpolationScale<br/>
+    /// Native code at BatmanAK.exe+0x503480 in the Steam build
     /// </summary>
     public unsafe virtual void SetRopeRenderInterpolationScale(float NewInterpolationScale)
     {
@@ -124,7 +126,8 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialOverride;
     /// <summary>
-    /// Function: SetMaterialOverride
+    /// Function: SetMaterialOverride<br/>
+    /// Native code at BatmanAK.exe+0x4EE410 in the Steam build
     /// </summary>
     public unsafe override void SetMaterialOverride(BmSDK.Engine.MaterialInstanceConstant OverrideMat)
     {

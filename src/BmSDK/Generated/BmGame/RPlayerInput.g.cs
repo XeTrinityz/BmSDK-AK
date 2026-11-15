@@ -298,7 +298,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMouseButtonPressed;
     /// <summary>
-    /// Function: IsMouseButtonPressed
+    /// Function: IsMouseButtonPressed<br/>
+    /// Native code at BatmanAK.exe+0x47ED30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsMouseButtonPressed(bool CheckRightButton = default)
     {
@@ -320,7 +321,8 @@ public partial class RPlayerInput : BmSDK.Engine.PlayerInput, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FastPlayerInput;
     /// <summary>
-    /// Function: FastPlayerInput
+    /// Function: FastPlayerInput<br/>
+    /// Native code at BatmanAK.exe+0x4DE450 in the Steam build
     /// </summary>
     public unsafe virtual void FastPlayerInput(float DeltaTime, bool bMoveInputIgnored, bool bLookInputIgnored)
     {

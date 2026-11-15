@@ -94,7 +94,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalMaterialInstance;
     /// <summary>
-    /// Function: GetDecalMaterialInstance
+    /// Function: GetDecalMaterialInstance<br/>
+    /// Native code at BatmanAK.exe+0x4E8D30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstance GetDecalMaterialInstance(BmSDK.FName DecalTypeName)
     {
@@ -116,7 +117,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalData;
     /// <summary>
-    /// Function: GetDecalData
+    /// Function: GetDecalData<br/>
+    /// Native code at BatmanAK.exe+0x4E8BD0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSmashablePropConfig.FRSmashablePropDecalData GetDecalData(BmSDK.FName DecalTypeName)
     {
@@ -218,7 +220,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakProp;
     /// <summary>
-    /// Function: BreakProp
+    /// Function: BreakProp<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakProp()
     {
@@ -239,7 +242,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Function __fn_HandleCollision;
     /// <summary>
-    /// Function: HandleCollision
+    /// Function: HandleCollision<br/>
+    /// Native code at BatmanAK.exe+0x4E88E0 in the Steam build
     /// </summary>
     public unsafe bool HandleCollision(System.Numerics.Vector3 TotalNormalForceVector, BmSDK.Engine.Actor CollideActor0, BmSDK.Engine.Actor CollideActor1, bool IsAlwaysSmash)
     {
@@ -264,7 +268,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Function __fn_SetupProp;
     /// <summary>
-    /// Function: SetupProp
+    /// Function: SetupProp<br/>
+    /// Native code at BatmanAK.exe+0x4A2E70 in the Steam build
     /// </summary>
     public unsafe void SetupProp(BmSDK.BmGame.RSmashablePropConfig propSetupData)
     {
@@ -363,7 +368,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasSubParts;
     /// <summary>
-    /// Function: GetHasSubParts
+    /// Function: GetHasSubParts<br/>
+    /// Native code at BatmanAK.exe+0x481FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasSubParts()
     {
@@ -384,7 +390,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerBreakProp;
     /// <summary>
-    /// Function: TriggerBreakProp
+    /// Function: TriggerBreakProp<br/>
+    /// Native code at BatmanAK.exe+0x481E80 in the Steam build
     /// </summary>
     public unsafe virtual void TriggerBreakProp(System.Numerics.Vector3 BreakNormalForce, float breakTimerVal = default, BmSDK.Engine.Actor CollideActor0 = default, BmSDK.Engine.Actor CollideActor1 = default)
     {
@@ -409,7 +416,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIsStatic;
     /// <summary>
-    /// Function: SetIsStatic
+    /// Function: SetIsStatic<br/>
+    /// Native code at BatmanAK.exe+0x4E87C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetIsStatic(bool isStatic)
     {
@@ -431,7 +439,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBreakableType;
     /// <summary>
-    /// Function: SetBreakableType
+    /// Function: SetBreakableType<br/>
+    /// Native code at BatmanAK.exe+0x481E00 in the Steam build
     /// </summary>
     public unsafe virtual void SetBreakableType(BmSDK.BmGame.RSmashablePropConfig.EBreakableType breakableType)
     {
@@ -453,7 +462,8 @@ public partial class RSmashableProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasSubMeshes;
     /// <summary>
-    /// Function: GetHasSubMeshes
+    /// Function: GetHasSubMeshes<br/>
+    /// Native code at BatmanAK.exe+0x481FD0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasSubMeshes()
     {

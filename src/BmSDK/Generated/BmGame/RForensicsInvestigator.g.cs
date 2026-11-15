@@ -80,7 +80,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
-    /// Function: DrawHUD
+    /// Function: DrawHUD<br/>
+    /// Native code at BatmanAK.exe+0x4AA6C0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.Canvas HudCanvas, BmSDK.BmGame.RPlayerController RPC)
     {
@@ -103,7 +104,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateActorsToUpdate;
     /// <summary>
-    /// Function: CalculateActorsToUpdate
+    /// Function: CalculateActorsToUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4AA4D0 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateActorsToUpdate(BmSDK.Engine.Canvas HudCanvas, BmSDK.BmGame.RPlayerController RPC)
     {
@@ -126,7 +128,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SyncAsyncTask;
     /// <summary>
-    /// Function: SyncAsyncTask
+    /// Function: SyncAsyncTask<br/>
+    /// Native code at BatmanAK.exe+0x46C9A0 in the Steam build
     /// </summary>
     public unsafe virtual void SyncAsyncTask()
     {
@@ -147,7 +150,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreRender;
     /// <summary>
-    /// Function: PreRender
+    /// Function: PreRender<br/>
+    /// Native code at BatmanAK.exe+0x4AA2E0 in the Steam build
     /// </summary>
     public unsafe virtual void PreRender(BmSDK.Engine.Canvas HudCanvas, BmSDK.BmGame.RPlayerController RPC)
     {
@@ -170,7 +174,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAsyncTask;
     /// <summary>
-    /// Function: StartAsyncTask
+    /// Function: StartAsyncTask<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void StartAsyncTask()
     {
@@ -191,7 +196,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHUDActive;
     /// <summary>
-    /// Function: IsHUDActive
+    /// Function: IsHUDActive<br/>
+    /// Native code at BatmanAK.exe+0x5267F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHUDActive(BmSDK.BmGame.RPlayerController RPC)
     {
@@ -382,7 +388,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInfoCursor;
     /// <summary>
-    /// Function: SetInfoCursor
+    /// Function: SetInfoCursor<br/>
+    /// Native code at BatmanAK.exe+0x539000 in the Steam build
     /// </summary>
     public unsafe virtual void SetInfoCursor(BmSDK.BmGame.RPlayerController RPC, out BmSDK.FString Title, out BmSDK.FString Message, bool bWarning, float ViewDepth)
     {
@@ -408,7 +415,8 @@ public partial class RForensicsInvestigator : BmSDK.GameObject, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeItemTest;
     /// <summary>
-    /// Function: CanSeeItemTest
+    /// Function: CanSeeItemTest<br/>
+    /// Native code at BatmanAK.exe+0x4A9FB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeItemTest(BmSDK.Engine.Actor Bats, BmSDK.Engine.Actor Item, System.Numerics.Vector3 ViewPoint, System.Numerics.Vector3 InvestigateLocation, bool bAllowBats = default, bool bComplex = default, bool bForceDefer = default)
     {

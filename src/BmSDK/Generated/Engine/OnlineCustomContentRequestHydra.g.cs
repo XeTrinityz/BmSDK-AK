@@ -80,7 +80,8 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
-    /// Function: CancelCustomContentRequest
+    /// Function: CancelCustomContentRequest<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe override void CancelCustomContentRequest()
     {
@@ -101,7 +102,8 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContentAsString;
     /// <summary>
-    /// Function: GetCustomContentAsString
+    /// Function: GetCustomContentAsString<br/>
+    /// Native code at BatmanAK.exe+0xBAAD20 in the Steam build
     /// </summary>
     public unsafe override void GetCustomContentAsString(out BmSDK.FString ContentData)
     {
@@ -123,7 +125,8 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContent;
     /// <summary>
-    /// Function: GetCustomContent
+    /// Function: GetCustomContent<br/>
+    /// Native code at BatmanAK.exe+0xBB4780 in the Steam build
     /// </summary>
     public unsafe override void GetCustomContent(out BmSDK.TArray<byte> ContentData)
     {
@@ -145,7 +148,8 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCustomContentRequest;
     /// <summary>
-    /// Function: StartCustomContentRequest
+    /// Function: StartCustomContentRequest<br/>
+    /// Native code at BatmanAK.exe+0xBAAAE0 in the Steam build
     /// </summary>
     public unsafe override void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, BmSDK.FScriptDelegate dRequestCustomContentComplete)
     {

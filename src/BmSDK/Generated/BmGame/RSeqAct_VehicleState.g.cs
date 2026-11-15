@@ -108,7 +108,8 @@ public partial class RSeqAct_VehicleState : BmSDK.Engine.SeqAct_Latent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVehicleState;
     /// <summary>
-    /// Function: SetVehicleState
+    /// Function: SetVehicleState<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void SetVehicleState()
     {

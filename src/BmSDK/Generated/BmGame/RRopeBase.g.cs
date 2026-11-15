@@ -248,7 +248,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinRope;
     /// <summary>
-    /// Function: JoinRope
+    /// Function: JoinRope<br/>
+    /// Native code at BatmanAK.exe+0x4F03B0 in the Steam build
     /// </summary>
     public unsafe virtual void JoinRope(BmSDK.BmGame.RRopeBase OtherRope, BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisRopeJoinEnd, BmSDK.BmGame.RRopeComponentBase.ERopeEndType OtherRopeJoinEnd)
     {
@@ -272,7 +273,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SplitRope;
     /// <summary>
-    /// Function: SplitRope
+    /// Function: SplitRope<br/>
+    /// Native code at BatmanAK.exe+0x4F0200 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRopeBase SplitRope(float SplitPos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisSplitEnd)
     {
@@ -298,7 +300,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AlignRagdollYaw;
     /// <summary>
-    /// Function: AlignRagdollYaw
+    /// Function: AlignRagdollYaw<br/>
+    /// Native code at BatmanAK.exe+0x4EFFE0 in the Steam build
     /// </summary>
     public unsafe virtual void AlignRagdollYaw(System.Numerics.Vector3 FwdDir, float Torque, BmSDK.Engine.SkeletalMeshComponent Ragdoll)
     {
@@ -322,7 +325,8 @@ public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableI
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstrainRagdollToBoxXY;
     /// <summary>
-    /// Function: ConstrainRagdollToBoxXY
+    /// Function: ConstrainRagdollToBoxXY<br/>
+    /// Native code at BatmanAK.exe+0x4EFD70 in the Steam build
     /// </summary>
     public unsafe virtual void ConstrainRagdollToBoxXY(System.Numerics.Vector3 BoxPos, System.Numerics.Vector3 BoxDir, float BoxRadius, BmSDK.Engine.SkeletalMeshComponent Ragdoll)
     {

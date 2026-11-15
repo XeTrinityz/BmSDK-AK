@@ -265,7 +265,8 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTarget;
     /// <summary>
-    /// Function: IsValidTarget
+    /// Function: IsValidTarget<br/>
+    /// Native code at BatmanAK.exe+0x4A94D0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.Engine.Actor TestActor)
     {

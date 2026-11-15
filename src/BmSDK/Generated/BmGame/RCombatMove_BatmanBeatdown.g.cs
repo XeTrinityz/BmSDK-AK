@@ -566,7 +566,8 @@ public partial class RCombatMove_BatmanBeatdown : BmSDK.BmGame.RCombatMove_Batma
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyInfoSearchParams;
     /// <summary>
-    /// Function: ModifyInfoSearchParams
+    /// Function: ModifyInfoSearchParams<br/>
+    /// Native code at BatmanAK.exe+0x479D70 in the Steam build
     /// </summary>
     public unsafe override void ModifyInfoSearchParams(out BmSDK.BmGame.RGameInfo.StrikeDirection InfoDir, out BmSDK.BmGame.RGameInfo.StrikeStrength InfoStrength, out BmSDK.BmGame.RGameInfo.StrikeRange InfoRange, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoRailingDir, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoWallDir)
     {
@@ -602,7 +603,8 @@ public partial class RCombatMove_BatmanBeatdown : BmSDK.BmGame.RCombatMove_Batma
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeInfoScore;
     /// <summary>
-    /// Function: GetStrikeInfoScore
+    /// Function: GetStrikeInfoScore<br/>
+    /// Native code at BatmanAK.exe+0x479560 in the Steam build
     /// </summary>
     public unsafe override float GetStrikeInfoScore(BmSDK.BmGame.RPawnPlayerCombat.FStrikeInfo TestStrike, BmSDK.BmGame.RGameInfo.StrikeDirection StrikeDir, BmSDK.BmGame.RGameInfo.StrikeStrength StrikeStrength, BmSDK.BmGame.RGameInfo.StrikeRange StrikeRange, BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir StrikeRailingDir, BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir StrikeWallDir, System.Numerics.Vector3 ControllerDir)
     {
@@ -630,7 +632,8 @@ public partial class RCombatMove_BatmanBeatdown : BmSDK.BmGame.RCombatMove_Batma
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldKillInstantly;
     /// <summary>
-    /// Function: ShouldKillInstantly
+    /// Function: ShouldKillInstantly<br/>
+    /// Native code at BatmanAK.exe+0x46F110 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldKillInstantly()
     {

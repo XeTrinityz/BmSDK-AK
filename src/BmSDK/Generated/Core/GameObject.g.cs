@@ -180,7 +180,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DebugHeapCheck;
     /// <summary>
-    /// Function: DebugHeapCheck
+    /// Function: DebugHeapCheck<br/>
+    /// Native code at BatmanAK.exe+0xF79490 in the Steam build
     /// </summary>
     public unsafe static void DebugHeapCheck()
     {
@@ -200,7 +201,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetStringFromGuid;
     /// <summary>
-    /// Function: GetStringFromGuid
+    /// Function: GetStringFromGuid<br/>
+    /// Native code at BatmanAK.exe+0xF95E20 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetStringFromGuid(out BmSDK.GameObject.FGuid InGuid)
     {
@@ -223,7 +225,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetGuidFromString;
     /// <summary>
-    /// Function: GetGuidFromString
+    /// Function: GetGuidFromString<br/>
+    /// Native code at BatmanAK.exe+0xF90FD0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FGuid GetGuidFromString(out BmSDK.FString InGuidString)
     {
@@ -244,7 +247,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_CreateGuid;
     /// <summary>
-    /// Function: CreateGuid
+    /// Function: CreateGuid<br/>
+    /// Native code at BatmanAK.exe+0xF79430 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FGuid CreateGuid()
     {
@@ -264,7 +268,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsGuidValid;
     /// <summary>
-    /// Function: IsGuidValid
+    /// Function: IsGuidValid<br/>
+    /// Native code at BatmanAK.exe+0xF79380 in the Steam build
     /// </summary>
     public unsafe static bool IsGuidValid(out BmSDK.GameObject.FGuid InGuid)
     {
@@ -287,7 +292,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InvalidateGuid;
     /// <summary>
-    /// Function: InvalidateGuid
+    /// Function: InvalidateGuid<br/>
+    /// Native code at BatmanAK.exe+0xF792F0 in the Steam build
     /// </summary>
     public unsafe static void InvalidateGuid(out BmSDK.GameObject.FGuid InGuid)
     {
@@ -310,7 +316,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLanguage;
     /// <summary>
-    /// Function: GetLanguage
+    /// Function: GetLanguage<br/>
+    /// Native code at BatmanAK.exe+0xF894C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLanguage()
     {
@@ -345,7 +352,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBuildChangelistNumber;
     /// <summary>
-    /// Function: GetBuildChangelistNumber
+    /// Function: GetBuildChangelistNumber<br/>
+    /// Native code at BatmanAK.exe+0xF792A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetBuildChangelistNumber()
     {
@@ -366,7 +374,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEngineVersion;
     /// <summary>
-    /// Function: GetEngineVersion
+    /// Function: GetEngineVersion<br/>
+    /// Native code at BatmanAK.exe+0xF79250 in the Steam build
     /// </summary>
     public unsafe virtual int GetEngineVersion()
     {
@@ -387,7 +396,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSystemTime;
     /// <summary>
-    /// Function: GetSystemTime
+    /// Function: GetSystemTime<br/>
+    /// Native code at BatmanAK.exe+0xF78EC0 in the Steam build
     /// </summary>
     public unsafe virtual void GetSystemTime(out int Year, out int Month, out int DayOfWeek, out int Day, out int Hour, out int Min, out int Sec, out int MSec)
     {
@@ -432,7 +442,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TimeStamp;
     /// <summary>
-    /// Function: TimeStamp
+    /// Function: TimeStamp<br/>
+    /// Native code at BatmanAK.exe+0xF959B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString TimeStamp()
     {
@@ -453,7 +464,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformVectorByRotation;
     /// <summary>
-    /// Function: TransformVectorByRotation
+    /// Function: TransformVectorByRotation<br/>
+    /// Native code at BatmanAK.exe+0xF88EA0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformVectorByRotation(BmSDK.Rotator SourceRotation, System.Numerics.Vector3 SourceVector, bool bInverse = default)
     {
@@ -477,7 +489,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCapturingMovie;
     /// <summary>
-    /// Function: IsCapturingMovie
+    /// Function: IsCapturingMovie<br/>
+    /// Native code at BatmanAK.exe+0xF78E70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCapturingMovie()
     {
@@ -498,7 +511,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInPIE;
     /// <summary>
-    /// Function: IsInPIE
+    /// Function: IsInPIE<br/>
+    /// Native code at BatmanAK.exe+0xF78E20 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInPIE()
     {
@@ -533,7 +547,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPendingKill;
     /// <summary>
-    /// Function: IsPendingKill
+    /// Function: IsPendingKill<br/>
+    /// Native code at BatmanAK.exe+0xF78DD0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPendingKill()
     {
@@ -645,7 +660,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAngularFromDotDist;
     /// <summary>
-    /// Function: GetAngularFromDotDist
+    /// Function: GetAngularFromDotDist<br/>
+    /// Native code at BatmanAK.exe+0xF746F0 in the Steam build
     /// </summary>
     public unsafe static void GetAngularFromDotDist(out System.Numerics.Vector2 OutAngDist, System.Numerics.Vector2 DotDist)
     {
@@ -669,7 +685,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAngularDistance;
     /// <summary>
-    /// Function: GetAngularDistance
+    /// Function: GetAngularDistance<br/>
+    /// Native code at BatmanAK.exe+0xF745B0 in the Steam build
     /// </summary>
     public unsafe static bool GetAngularDistance(out System.Numerics.Vector2 OutAngularDist, System.Numerics.Vector3 Direction, System.Numerics.Vector3 AxisX, System.Numerics.Vector3 AxisY, System.Numerics.Vector3 AxisZ)
     {
@@ -696,7 +713,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetDotDistance;
     /// <summary>
-    /// Function: GetDotDistance
+    /// Function: GetDotDistance<br/>
+    /// Native code at BatmanAK.exe+0xF74470 in the Steam build
     /// </summary>
     public unsafe static bool GetDotDistance(out System.Numerics.Vector2 OutDotDist, System.Numerics.Vector3 Direction, System.Numerics.Vector3 AxisX, System.Numerics.Vector3 AxisY, System.Numerics.Vector3 AxisZ)
     {
@@ -723,7 +741,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PointProjectToPlane;
     /// <summary>
-    /// Function: PointProjectToPlane
+    /// Function: PointProjectToPlane<br/>
+    /// Native code at BatmanAK.exe+0xF742B0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 PointProjectToPlane(System.Numerics.Vector3 Point, System.Numerics.Vector3 A, System.Numerics.Vector3 B, System.Numerics.Vector3 C)
     {
@@ -767,7 +786,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTForSegmentPlaneIntersect;
     /// <summary>
-    /// Function: GetTForSegmentPlaneIntersect
+    /// Function: GetTForSegmentPlaneIntersect<br/>
+    /// Native code at BatmanAK.exe+0xF74040 in the Steam build
     /// </summary>
     public unsafe virtual float GetTForSegmentPlaneIntersect(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, BmSDK.GameObject.FPlane testPlane)
     {
@@ -791,7 +811,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SegmentDistToSegment;
     /// <summary>
-    /// Function: SegmentDistToSegment
+    /// Function: SegmentDistToSegment<br/>
+    /// Native code at BatmanAK.exe+0xF73E90 in the Steam build
     /// </summary>
     public unsafe virtual void SegmentDistToSegment(System.Numerics.Vector3 A1, System.Numerics.Vector3 B1, System.Numerics.Vector3 A2, System.Numerics.Vector3 B2, out System.Numerics.Vector3 OutP1, out System.Numerics.Vector3 OutP2)
     {
@@ -822,7 +843,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SphereIntersectingLine;
     /// <summary>
-    /// Function: SphereIntersectingLine
+    /// Function: SphereIntersectingLine<br/>
+    /// Native code at BatmanAK.exe+0xF848D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SphereIntersectingLine(System.Numerics.Vector3 SphereOrigin, float SphereRadius, System.Numerics.Vector3 LineStart, System.Numerics.Vector3 LineEnd, out System.Numerics.Vector3 ClosestPoint1, out System.Numerics.Vector3 ClosestPoint2)
     {
@@ -853,7 +875,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointDistSquaredToLineSegment;
     /// <summary>
-    /// Function: PointDistSquaredToLineSegment
+    /// Function: PointDistSquaredToLineSegment<br/>
+    /// Native code at BatmanAK.exe+0xF73DC0 in the Steam build
     /// </summary>
     public unsafe virtual float PointDistSquaredToLineSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
@@ -877,7 +900,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointDistAlongLineSegment;
     /// <summary>
-    /// Function: PointDistAlongLineSegment
+    /// Function: PointDistAlongLineSegment<br/>
+    /// Native code at BatmanAK.exe+0xF73CF0 in the Steam build
     /// </summary>
     public unsafe virtual float PointDistAlongLineSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
@@ -901,7 +925,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointDistAlongLine;
     /// <summary>
-    /// Function: PointDistAlongLine
+    /// Function: PointDistAlongLine<br/>
+    /// Native code at BatmanAK.exe+0xF73C20 in the Steam build
     /// </summary>
     public unsafe virtual float PointDistAlongLine(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
@@ -925,7 +950,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointDistToSegment;
     /// <summary>
-    /// Function: PointDistToSegment
+    /// Function: PointDistToSegment<br/>
+    /// Native code at BatmanAK.exe+0xF74170 in the Steam build
     /// </summary>
     public unsafe virtual float PointDistToSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, out System.Numerics.Vector3 OutClosestPoint)
     {
@@ -952,7 +978,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PointDistToLine;
     /// <summary>
-    /// Function: PointDistToLine
+    /// Function: PointDistToLine<br/>
+    /// Native code at BatmanAK.exe+0xF73AE0 in the Steam build
     /// </summary>
     public unsafe virtual float PointDistToLine(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin, out System.Numerics.Vector3 OutClosestPoint)
     {
@@ -979,7 +1006,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetConfigString;
     /// <summary>
-    /// Function: GetConfigString
+    /// Function: GetConfigString<br/>
+    /// Native code at BatmanAK.exe+0xF8FC80 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetConfigString(BmSDK.FStringArg Section, BmSDK.FStringArg Key)
     {
@@ -1003,7 +1031,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetPerObjectConfigSections;
     /// <summary>
-    /// Function: GetPerObjectConfigSections
+    /// Function: GetPerObjectConfigSections<br/>
+    /// Native code at BatmanAK.exe+0xF973D0 in the Steam build
     /// </summary>
     public unsafe static bool GetPerObjectConfigSections(BmSDK.Class SearchClass, out BmSDK.TArray<BmSDK.FString> out_SectionNames, BmSDK.GameObject ObjectOuter = default, int MaxResults = default)
     {
@@ -1027,7 +1056,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ImportJSON;
     /// <summary>
-    /// Function: ImportJSON
+    /// Function: ImportJSON<br/>
+    /// Native code at BatmanAK.exe+0xF8FA30 in the Steam build
     /// </summary>
     public unsafe static void ImportJSON(BmSDK.FStringArg PropertyName, out BmSDK.FString JSON)
     {
@@ -1050,7 +1080,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StaticSaveConfig;
     /// <summary>
-    /// Function: StaticSaveConfig
+    /// Function: StaticSaveConfig<br/>
+    /// Native code at BatmanAK.exe+0xF958D0 in the Steam build
     /// </summary>
     public unsafe static void StaticSaveConfig()
     {
@@ -1070,7 +1101,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveConfig;
     /// <summary>
-    /// Function: SaveConfig
+    /// Function: SaveConfig<br/>
+    /// Native code at BatmanAK.exe+0xF78B80 in the Steam build
     /// </summary>
     public unsafe virtual void SaveConfig()
     {
@@ -1091,7 +1123,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FindObject;
     /// <summary>
-    /// Function: FindObject
+    /// Function: FindObject<br/>
+    /// Native code at BatmanAK.exe+0xF90390 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject FindObject(BmSDK.FStringArg ObjectName, BmSDK.Class ObjectClass)
     {
@@ -1114,7 +1147,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DynamicLoadObject;
     /// <summary>
-    /// Function: DynamicLoadObject
+    /// Function: DynamicLoadObject<br/>
+    /// Native code at BatmanAK.exe+0xF90120 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject DynamicLoadObject(BmSDK.FStringArg ObjectName, BmSDK.Class ObjectClass, bool MayFail = default)
     {
@@ -1138,7 +1172,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetEnum;
     /// <summary>
-    /// Function: GetEnum
+    /// Function: GetEnum<br/>
+    /// Native code at BatmanAK.exe+0xF8FF30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FName GetEnum(BmSDK.GameObject E, int I)
     {
@@ -1160,7 +1195,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsUTracing;
     /// <summary>
-    /// Function: IsUTracing
+    /// Function: IsUTracing<br/>
+    /// Native code at BatmanAK.exe+0xF78D70 in the Steam build
     /// </summary>
     public unsafe static bool IsUTracing()
     {
@@ -1180,7 +1216,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetUTracing;
     /// <summary>
-    /// Function: SetUTracing
+    /// Function: SetUTracing<br/>
+    /// Native code at BatmanAK.exe+0xF88C60 in the Steam build
     /// </summary>
     public unsafe static void SetUTracing(bool bShouldUTrace)
     {
@@ -1201,7 +1238,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetFuncName;
     /// <summary>
-    /// Function: GetFuncName
+    /// Function: GetFuncName<br/>
+    /// Native code at BatmanAK.exe+0xF78C40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FName GetFuncName()
     {
@@ -1221,7 +1259,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DebugBreak;
     /// <summary>
-    /// Function: DebugBreak
+    /// Function: DebugBreak<br/>
+    /// Native code at BatmanAK.exe+0xF78CD0 in the Steam build
     /// </summary>
     public unsafe static void DebugBreak(int UserFlags = default, BmSDK.GameObject.EDebugBreakType DebuggerType = default)
     {
@@ -1243,7 +1282,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetScriptTrace;
     /// <summary>
-    /// Function: GetScriptTrace
+    /// Function: GetScriptTrace<br/>
+    /// Native code at BatmanAK.exe+0xF95920 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetScriptTrace()
     {
@@ -1263,7 +1303,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ScriptTrace;
     /// <summary>
-    /// Function: ScriptTrace
+    /// Function: ScriptTrace<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe static void ScriptTrace()
     {
@@ -1283,7 +1324,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternalUI;
     /// <summary>
-    /// Function: LogInternalUI
+    /// Function: LogInternalUI<br/>
+    /// Native code at BatmanAK.exe+0xF8E0E0 in the Steam build
     /// </summary>
     public unsafe static bool LogInternalUI(BmSDK.FStringArg S)
     {
@@ -1305,7 +1347,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternalBoss;
     /// <summary>
-    /// Function: LogInternalBoss
+    /// Function: LogInternalBoss<br/>
+    /// Native code at BatmanAK.exe+0xF8E0E0 in the Steam build
     /// </summary>
     public unsafe static bool LogInternalBoss(BmSDK.FStringArg S)
     {
@@ -1327,7 +1370,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternalPlayer;
     /// <summary>
-    /// Function: LogInternalPlayer
+    /// Function: LogInternalPlayer<br/>
+    /// Native code at BatmanAK.exe+0xF8E0E0 in the Steam build
     /// </summary>
     public unsafe static bool LogInternalPlayer(BmSDK.FStringArg S)
     {
@@ -1349,7 +1393,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternalAI;
     /// <summary>
-    /// Function: LogInternalAI
+    /// Function: LogInternalAI<br/>
+    /// Native code at BatmanAK.exe+0xF8E0E0 in the Steam build
     /// </summary>
     public unsafe static bool LogInternalAI(BmSDK.FStringArg S)
     {
@@ -1371,7 +1416,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternalAudio;
     /// <summary>
-    /// Function: LogInternalAudio
+    /// Function: LogInternalAudio<br/>
+    /// Native code at BatmanAK.exe+0xF8E0E0 in the Steam build
     /// </summary>
     public unsafe static bool LogInternalAudio(BmSDK.FStringArg S)
     {
@@ -1393,7 +1439,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DoesLocalisedStringExist;
     /// <summary>
-    /// Function: DoesLocalisedStringExist
+    /// Function: DoesLocalisedStringExist<br/>
+    /// Native code at BatmanAK.exe+0xF8EAA0 in the Steam build
     /// </summary>
     public unsafe static bool DoesLocalisedStringExist(BmSDK.FStringArg PackageName, BmSDK.FStringArg SectionName, BmSDK.FStringArg KeyName)
     {
@@ -1419,7 +1466,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DoesLocalisedExist;
     /// <summary>
-    /// Function: DoesLocalisedExist
+    /// Function: DoesLocalisedExist<br/>
+    /// Native code at BatmanAK.exe+0xF96F00 in the Steam build
     /// </summary>
     public unsafe static bool DoesLocalisedExist(BmSDK.FStringArg PackageSectionKeyName)
     {
@@ -1441,7 +1489,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLocalised;
     /// <summary>
-    /// Function: GetLocalised
+    /// Function: GetLocalised<br/>
+    /// Native code at BatmanAK.exe+0xF96C90 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLocalised(BmSDK.FStringArg PackageSectionKeyName)
     {
@@ -1463,7 +1512,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetLocalisedString;
     /// <summary>
-    /// Function: GetLocalisedString
+    /// Function: GetLocalisedString<br/>
+    /// Native code at BatmanAK.exe+0xF8E680 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString GetLocalisedString(BmSDK.FStringArg PackageName, BmSDK.FStringArg SectionName, BmSDK.FStringArg KeyName, bool bUsingPad = default)
     {
@@ -1505,7 +1555,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Localize;
     /// <summary>
-    /// Function: Localize
+    /// Function: Localize<br/>
+    /// Native code at BatmanAK.exe+0xF8E310 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Localize(BmSDK.FStringArg SectionName, BmSDK.FStringArg KeyName, BmSDK.FStringArg PackageName)
     {
@@ -1531,7 +1582,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_DesignerWarnInternal;
     /// <summary>
-    /// Function: DesignerWarnInternal
+    /// Function: DesignerWarnInternal<br/>
+    /// Native code at BatmanAK.exe+0xF8E1D0 in the Steam build
     /// </summary>
     public unsafe static void DesignerWarnInternal(BmSDK.FStringArg S)
     {
@@ -1553,7 +1605,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_WarnInternal;
     /// <summary>
-    /// Function: WarnInternal
+    /// Function: WarnInternal<br/>
+    /// Native code at BatmanAK.exe+0xF8DFA0 in the Steam build
     /// </summary>
     public unsafe static void WarnInternal(BmSDK.FStringArg S)
     {
@@ -1575,7 +1628,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_LogInternal;
     /// <summary>
-    /// Function: LogInternal
+    /// Function: LogInternal<br/>
+    /// Native code at BatmanAK.exe+0xF8DE60 in the Steam build
     /// </summary>
     public unsafe static bool LogInternal(BmSDK.FStringArg S, BmSDK.FName Tag = default)
     {
@@ -1598,7 +1652,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsLogEnabled;
     /// <summary>
-    /// Function: IsLogEnabled
+    /// Function: IsLogEnabled<br/>
+    /// Native code at BatmanAK.exe+0xF88570 in the Steam build
     /// </summary>
     public unsafe static bool IsLogEnabled(BmSDK.FName Tag)
     {
@@ -1697,7 +1752,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EvalInterpCurveVector2D;
     /// <summary>
-    /// Function: EvalInterpCurveVector2D
+    /// Function: EvalInterpCurveVector2D<br/>
+    /// Native code at BatmanAK.exe+0xF99B00 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector2 EvalInterpCurveVector2D(out BmSDK.GameObject.FInterpCurveVector2D Vector2DCurve, float InVal)
     {
@@ -1719,7 +1775,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EvalInterpCurveVector;
     /// <summary>
-    /// Function: EvalInterpCurveVector
+    /// Function: EvalInterpCurveVector<br/>
+    /// Native code at BatmanAK.exe+0xF99920 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 EvalInterpCurveVector(out BmSDK.GameObject.FInterpCurveVector VectorCurve, float InVal)
     {
@@ -1741,7 +1798,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EvalInterpCurveFloat;
     /// <summary>
-    /// Function: EvalInterpCurveFloat
+    /// Function: EvalInterpCurveFloat<br/>
+    /// Native code at BatmanAK.exe+0xF99760 in the Steam build
     /// </summary>
     public unsafe static float EvalInterpCurveFloat(out BmSDK.GameObject.FInterpCurveFloat FloatCurve, float InVal)
     {
@@ -1778,7 +1836,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetMappedRangeValue;
     /// <summary>
-    /// Function: GetMappedRangeValue
+    /// Function: GetMappedRangeValue<br/>
+    /// Native code at BatmanAK.exe+0xF87B00 in the Steam build
     /// </summary>
     public unsafe static float GetMappedRangeValue(System.Numerics.Vector2 InputRange, System.Numerics.Vector2 OutputRange, float Value)
     {
@@ -1831,7 +1890,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatSlerp;
     /// <summary>
-    /// Function: QuatSlerp
+    /// Function: QuatSlerp<br/>
+    /// Native code at BatmanAK.exe+0xF87350 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatSlerp(BmSDK.GameObject.FQuat A, BmSDK.GameObject.FQuat B, float Alpha, bool bShortestPath = default)
     {
@@ -1855,7 +1915,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatToRotator;
     /// <summary>
-    /// Function: QuatToRotator
+    /// Function: QuatToRotator<br/>
+    /// Native code at BatmanAK.exe+0xF78160 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator QuatToRotator(BmSDK.GameObject.FQuat A)
     {
@@ -1876,7 +1937,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatFromRotator;
     /// <summary>
-    /// Function: QuatFromRotator
+    /// Function: QuatFromRotator<br/>
+    /// Native code at BatmanAK.exe+0xF77DF0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatFromRotator(BmSDK.Rotator A)
     {
@@ -1897,7 +1959,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatFromAxisAndAngle;
     /// <summary>
-    /// Function: QuatFromAxisAndAngle
+    /// Function: QuatFromAxisAndAngle<br/>
+    /// Native code at BatmanAK.exe+0xF870D0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatFromAxisAndAngle(System.Numerics.Vector3 Axis, float Angle)
     {
@@ -1919,7 +1982,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatFindBetween;
     /// <summary>
-    /// Function: QuatFindBetween
+    /// Function: QuatFindBetween<br/>
+    /// Native code at BatmanAK.exe+0xF77D40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatFindBetween(System.Numerics.Vector3 A, System.Numerics.Vector3 B)
     {
@@ -1941,7 +2005,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatRotateVector;
     /// <summary>
-    /// Function: QuatRotateVector
+    /// Function: QuatRotateVector<br/>
+    /// Native code at BatmanAK.exe+0xF77C70 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 QuatRotateVector(BmSDK.GameObject.FQuat A, System.Numerics.Vector3 B)
     {
@@ -1963,7 +2028,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatInvert;
     /// <summary>
-    /// Function: QuatInvert
+    /// Function: QuatInvert<br/>
+    /// Native code at BatmanAK.exe+0xF77BC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatInvert(BmSDK.GameObject.FQuat A)
     {
@@ -1984,7 +2050,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatDot;
     /// <summary>
-    /// Function: QuatDot
+    /// Function: QuatDot<br/>
+    /// Native code at BatmanAK.exe+0xF77AF0 in the Steam build
     /// </summary>
     public unsafe static float QuatDot(BmSDK.GameObject.FQuat A, BmSDK.GameObject.FQuat B)
     {
@@ -2006,7 +2073,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_QuatProduct;
     /// <summary>
-    /// Function: QuatProduct
+    /// Function: QuatProduct<br/>
+    /// Native code at BatmanAK.exe+0xF77A00 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FQuat QuatProduct(BmSDK.GameObject.FQuat A, BmSDK.GameObject.FQuat B)
     {
@@ -2028,7 +2096,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MatrixGetAxis;
     /// <summary>
-    /// Function: MatrixGetAxis
+    /// Function: MatrixGetAxis<br/>
+    /// Native code at BatmanAK.exe+0xF778E0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 MatrixGetAxis(BmSDK.GameObject.FMatrix TM, BmSDK.GameObject.EAxis Axis)
     {
@@ -2050,7 +2119,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MatrixGetOrigin;
     /// <summary>
-    /// Function: MatrixGetOrigin
+    /// Function: MatrixGetOrigin<br/>
+    /// Native code at BatmanAK.exe+0xF77840 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 MatrixGetOrigin(BmSDK.GameObject.FMatrix TM)
     {
@@ -2071,7 +2141,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MatrixGetRotator;
     /// <summary>
-    /// Function: MatrixGetRotator
+    /// Function: MatrixGetRotator<br/>
+    /// Native code at BatmanAK.exe+0xF777B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator MatrixGetRotator(BmSDK.GameObject.FMatrix TM)
     {
@@ -2092,7 +2163,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MakeRotationMatrix;
     /// <summary>
-    /// Function: MakeRotationMatrix
+    /// Function: MakeRotationMatrix<br/>
+    /// Native code at BatmanAK.exe+0xF77710 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FMatrix MakeRotationMatrix(BmSDK.Rotator Rotation)
     {
@@ -2113,7 +2185,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MakeRotationTranslationMatrix;
     /// <summary>
-    /// Function: MakeRotationTranslationMatrix
+    /// Function: MakeRotationTranslationMatrix<br/>
+    /// Native code at BatmanAK.exe+0xF77640 in the Steam build
     /// </summary>
     public unsafe static BmSDK.GameObject.FMatrix MakeRotationTranslationMatrix(System.Numerics.Vector3 Translation, BmSDK.Rotator Rotation)
     {
@@ -2135,7 +2208,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InverseTransformNormal;
     /// <summary>
-    /// Function: InverseTransformNormal
+    /// Function: InverseTransformNormal<br/>
+    /// Native code at BatmanAK.exe+0xF86F80 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 InverseTransformNormal(BmSDK.GameObject.FMatrix TM, System.Numerics.Vector3 A)
     {
@@ -2157,7 +2231,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_TransformNormal;
     /// <summary>
-    /// Function: TransformNormal
+    /// Function: TransformNormal<br/>
+    /// Native code at BatmanAK.exe+0xF774F0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 TransformNormal(BmSDK.GameObject.FMatrix TM, System.Numerics.Vector3 A)
     {
@@ -2179,7 +2254,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InverseTransformVector;
     /// <summary>
-    /// Function: InverseTransformVector
+    /// Function: InverseTransformVector<br/>
+    /// Native code at BatmanAK.exe+0xF86E20 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 InverseTransformVector(BmSDK.GameObject.FMatrix TM, System.Numerics.Vector3 A)
     {
@@ -2201,7 +2277,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_TransformVector;
     /// <summary>
-    /// Function: TransformVector
+    /// Function: TransformVector<br/>
+    /// Native code at BatmanAK.exe+0xF773A0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 TransformVector(BmSDK.GameObject.FMatrix TM, System.Numerics.Vector3 A)
     {
@@ -2223,7 +2300,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsA;
     /// <summary>
-    /// Function: IsA
+    /// Function: IsA<br/>
+    /// Native code at BatmanAK.exe+0xF88D30 in the Steam build
     /// </summary>
     public unsafe virtual bool IsA(BmSDK.FName ClassName)
     {
@@ -2245,7 +2323,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ClassIsChildOf;
     /// <summary>
-    /// Function: ClassIsChildOf
+    /// Function: ClassIsChildOf<br/>
+    /// Native code at BatmanAK.exe+0xF88640 in the Steam build
     /// </summary>
     public unsafe static bool ClassIsChildOf(BmSDK.Class TestClass, BmSDK.Class ParentClass)
     {
@@ -2267,7 +2346,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_PathName;
     /// <summary>
-    /// Function: PathName
+    /// Function: PathName<br/>
+    /// Native code at BatmanAK.exe+0xF90590 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString PathName(BmSDK.GameObject CheckObject, bool bForceNonFriendly = default)
     {
@@ -2309,7 +2389,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ParseStringIntoArray;
     /// <summary>
-    /// Function: ParseStringIntoArray
+    /// Function: ParseStringIntoArray<br/>
+    /// Native code at BatmanAK.exe+0xF96960 in the Steam build
     /// </summary>
     public unsafe static void ParseStringIntoArray(BmSDK.FStringArg BaseString, out BmSDK.TArray<BmSDK.FString> Pieces, BmSDK.FStringArg delim, bool bCullEmpty)
     {
@@ -2388,7 +2469,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsNumber;
     /// <summary>
-    /// Function: IsNumber
+    /// Function: IsNumber<br/>
+    /// Native code at BatmanAK.exe+0xF8DD20 in the Steam build
     /// </summary>
     public unsafe static bool IsNumber(BmSDK.FStringArg S)
     {
@@ -2410,7 +2492,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SpaceWords;
     /// <summary>
-    /// Function: SpaceWords
+    /// Function: SpaceWords<br/>
+    /// Native code at BatmanAK.exe+0xF8DBC0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString SpaceWords(BmSDK.FStringArg S)
     {
@@ -2432,7 +2515,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Capitalise;
     /// <summary>
-    /// Function: Capitalise
+    /// Function: Capitalise<br/>
+    /// Native code at BatmanAK.exe+0xF95770 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Capitalise(BmSDK.FStringArg S)
     {
@@ -2454,7 +2538,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Repl;
     /// <summary>
-    /// Function: Repl
+    /// Function: Repl<br/>
+    /// Native code at BatmanAK.exe+0xF8D850 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Repl(BmSDK.FStringArg Src, BmSDK.FStringArg Match, BmSDK.FStringArg With, bool bCaseSensitive = default)
     {
@@ -2481,7 +2566,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Asc;
     /// <summary>
-    /// Function: Asc
+    /// Function: Asc<br/>
+    /// Native code at BatmanAK.exe+0xF8D700 in the Steam build
     /// </summary>
     public unsafe static int Asc(BmSDK.FStringArg S)
     {
@@ -2503,7 +2589,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Chr;
     /// <summary>
-    /// Function: Chr
+    /// Function: Chr<br/>
+    /// Native code at BatmanAK.exe+0xF87CB0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Chr(int I)
     {
@@ -2524,7 +2611,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Locs;
     /// <summary>
-    /// Function: Locs
+    /// Function: Locs<br/>
+    /// Native code at BatmanAK.exe+0xF95610 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Locs(BmSDK.FStringArg S)
     {
@@ -2546,7 +2634,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Caps;
     /// <summary>
-    /// Function: Caps
+    /// Function: Caps<br/>
+    /// Native code at BatmanAK.exe+0xF954B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Caps(BmSDK.FStringArg S)
     {
@@ -2568,7 +2657,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Right;
     /// <summary>
-    /// Function: Right
+    /// Function: Right<br/>
+    /// Native code at BatmanAK.exe+0xF952B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Right(BmSDK.FStringArg S, int I)
     {
@@ -2591,7 +2681,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Left;
     /// <summary>
-    /// Function: Left
+    /// Function: Left<br/>
+    /// Native code at BatmanAK.exe+0xF950B0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Left(BmSDK.FStringArg S, int I)
     {
@@ -2614,7 +2705,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Mid;
     /// <summary>
-    /// Function: Mid
+    /// Function: Mid<br/>
+    /// Native code at BatmanAK.exe+0xF94E60 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString Mid(BmSDK.FStringArg S, int I, int J = default)
     {
@@ -2638,7 +2730,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InStr;
     /// <summary>
-    /// Function: InStr
+    /// Function: InStr<br/>
+    /// Native code at BatmanAK.exe+0xF8D490 in the Steam build
     /// </summary>
     public unsafe static int InStr(BmSDK.FStringArg S, BmSDK.FStringArg T, bool bSearchFromRight = default, bool bIgnoreCase = default, int StartPos = default)
     {
@@ -2665,7 +2758,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Len;
     /// <summary>
-    /// Function: Len
+    /// Function: Len<br/>
+    /// Native code at BatmanAK.exe+0xF8D340 in the Steam build
     /// </summary>
     public unsafe static int Len(BmSDK.FStringArg S)
     {
@@ -2775,7 +2869,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RSize;
     /// <summary>
-    /// Function: RSize
+    /// Function: RSize<br/>
+    /// Native code at BatmanAK.exe+0xF77100 in the Steam build
     /// </summary>
     public unsafe static float RSize(BmSDK.Rotator R)
     {
@@ -2796,7 +2891,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RDiff;
     /// <summary>
-    /// Function: RDiff
+    /// Function: RDiff<br/>
+    /// Native code at BatmanAK.exe+0xF76F60 in the Steam build
     /// </summary>
     public unsafe static float RDiff(BmSDK.Rotator A, BmSDK.Rotator B)
     {
@@ -2818,7 +2914,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_NormalizeRotAxis;
     /// <summary>
-    /// Function: NormalizeRotAxis
+    /// Function: NormalizeRotAxis<br/>
+    /// Native code at BatmanAK.exe+0xF86B10 in the Steam build
     /// </summary>
     public unsafe static int NormalizeRotAxis(int Angle)
     {
@@ -2839,7 +2936,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RInterpTo;
     /// <summary>
-    /// Function: RInterpTo
+    /// Function: RInterpTo<br/>
+    /// Native code at BatmanAK.exe+0xF86850 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator RInterpTo(BmSDK.Rotator Current, BmSDK.Rotator Target, float DeltaTime, float InterpSpeed, bool bConstantInterpSpeed = default)
     {
@@ -2864,7 +2962,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RTransform;
     /// <summary>
-    /// Function: RTransform
+    /// Function: RTransform<br/>
+    /// Native code at BatmanAK.exe+0xF76D40 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator RTransform(BmSDK.Rotator R, BmSDK.Rotator RBasis)
     {
@@ -2886,7 +2985,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RLerp;
     /// <summary>
-    /// Function: RLerp
+    /// Function: RLerp<br/>
+    /// Native code at BatmanAK.exe+0xF865F0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator RLerp(BmSDK.Rotator A, BmSDK.Rotator B, float Alpha, bool bShortestPath = default)
     {
@@ -2910,7 +3010,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Normalize;
     /// <summary>
-    /// Function: Normalize
+    /// Function: Normalize<br/>
+    /// Native code at BatmanAK.exe+0xF76C90 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator Normalize(BmSDK.Rotator Rot)
     {
@@ -2931,7 +3032,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_OrthoRotation;
     /// <summary>
-    /// Function: OrthoRotation
+    /// Function: OrthoRotation<br/>
+    /// Native code at BatmanAK.exe+0xF76B30 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator OrthoRotation(System.Numerics.Vector3 X, System.Numerics.Vector3 Y, System.Numerics.Vector3 Z)
     {
@@ -2954,7 +3056,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RotRand;
     /// <summary>
-    /// Function: RotRand
+    /// Function: RotRand<br/>
+    /// Native code at BatmanAK.exe+0xF75DB0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Rotator RotRand(bool bRoll = default)
     {
@@ -2975,7 +3078,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetRotatorAxis;
     /// <summary>
-    /// Function: GetRotatorAxis
+    /// Function: GetRotatorAxis<br/>
+    /// Native code at BatmanAK.exe+0xF86460 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetRotatorAxis(BmSDK.Rotator A, int Axis)
     {
@@ -2997,7 +3101,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetUnAxes;
     /// <summary>
-    /// Function: GetUnAxes
+    /// Function: GetUnAxes<br/>
+    /// Native code at BatmanAK.exe+0xF76950 in the Steam build
     /// </summary>
     public unsafe static void GetUnAxes(BmSDK.Rotator A, out System.Numerics.Vector3 X, out System.Numerics.Vector3 Y, out System.Numerics.Vector3 Z)
     {
@@ -3027,7 +3132,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAxes;
     /// <summary>
-    /// Function: GetAxes
+    /// Function: GetAxes<br/>
+    /// Native code at BatmanAK.exe+0xF76770 in the Steam build
     /// </summary>
     public unsafe static void GetAxes(BmSDK.Rotator A, out System.Numerics.Vector3 X, out System.Numerics.Vector3 Y, out System.Numerics.Vector3 Z)
     {
@@ -3076,7 +3182,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_NoZDot;
     /// <summary>
-    /// Function: NoZDot
+    /// Function: NoZDot<br/>
+    /// Native code at BatmanAK.exe+0xF75B70 in the Steam build
     /// </summary>
     public unsafe static float NoZDot(System.Numerics.Vector3 A, System.Numerics.Vector3 B)
     {
@@ -3098,7 +3205,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ClampLength;
     /// <summary>
-    /// Function: ClampLength
+    /// Function: ClampLength<br/>
+    /// Native code at BatmanAK.exe+0xF85720 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 ClampLength(System.Numerics.Vector3 V, float MaxLength)
     {
@@ -3120,7 +3228,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VInterpTo;
     /// <summary>
-    /// Function: VInterpTo
+    /// Function: VInterpTo<br/>
+    /// Native code at BatmanAK.exe+0xF854B0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VInterpTo(System.Numerics.Vector3 Current, System.Numerics.Vector3 Target, float DeltaTime, float InterpSpeed)
     {
@@ -3194,7 +3303,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VRandRange;
     /// <summary>
-    /// Function: VRandRange
+    /// Function: VRandRange<br/>
+    /// Native code at BatmanAK.exe+0xF75AC0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VRandRange(System.Numerics.Vector3 MinRange, System.Numerics.Vector3 MaxRange)
     {
@@ -3216,7 +3326,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsZero;
     /// <summary>
-    /// Function: IsZero
+    /// Function: IsZero<br/>
+    /// Native code at BatmanAK.exe+0xF76200 in the Steam build
     /// </summary>
     public unsafe static bool IsZero(System.Numerics.Vector3 A)
     {
@@ -3237,7 +3348,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ProjectOnTo;
     /// <summary>
-    /// Function: ProjectOnTo
+    /// Function: ProjectOnTo<br/>
+    /// Native code at BatmanAK.exe+0xF760D0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 ProjectOnTo(System.Numerics.Vector3 X, System.Numerics.Vector3 Y)
     {
@@ -3259,7 +3371,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MirrorVectorByNormal;
     /// <summary>
-    /// Function: MirrorVectorByNormal
+    /// Function: MirrorVectorByNormal<br/>
+    /// Native code at BatmanAK.exe+0xF75ED0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 MirrorVectorByNormal(System.Numerics.Vector3 InVect, System.Numerics.Vector3 InNormal)
     {
@@ -3281,7 +3394,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VRandCone2;
     /// <summary>
-    /// Function: VRandCone2
+    /// Function: VRandCone2<br/>
+    /// Native code at BatmanAK.exe+0xF859E0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VRandCone2(System.Numerics.Vector3 Dir, float HorizontalConeHalfAngleRadians, float VerticalConeHalfAngleRadians)
     {
@@ -3304,7 +3418,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VRandCone;
     /// <summary>
-    /// Function: VRandCone
+    /// Function: VRandCone<br/>
+    /// Native code at BatmanAK.exe+0xF85880 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VRandCone(System.Numerics.Vector3 Dir, float ConeHalfAngleRadians)
     {
@@ -3326,7 +3441,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VRand;
     /// <summary>
-    /// Function: VRand
+    /// Function: VRand<br/>
+    /// Native code at BatmanAK.exe+0xF75D60 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VRand()
     {
@@ -3346,7 +3462,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VLerp;
     /// <summary>
-    /// Function: VLerp
+    /// Function: VLerp<br/>
+    /// Native code at BatmanAK.exe+0xF852F0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 VLerp(System.Numerics.Vector3 A, System.Numerics.Vector3 B, float Alpha)
     {
@@ -3369,7 +3486,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Normal2D;
     /// <summary>
-    /// Function: Normal2D
+    /// Function: Normal2D<br/>
+    /// Native code at BatmanAK.exe+0xF75970 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 Normal2D(System.Numerics.Vector3 A)
     {
@@ -3390,7 +3508,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Normal;
     /// <summary>
-    /// Function: Normal
+    /// Function: Normal<br/>
+    /// Native code at BatmanAK.exe+0xF75840 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 Normal(System.Numerics.Vector3 A)
     {
@@ -3411,7 +3530,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VSizeSq2D;
     /// <summary>
-    /// Function: VSizeSq2D
+    /// Function: VSizeSq2D<br/>
+    /// Native code at BatmanAK.exe+0xF757C0 in the Steam build
     /// </summary>
     public unsafe static float VSizeSq2D(System.Numerics.Vector3 A)
     {
@@ -3432,7 +3552,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VSizeSq;
     /// <summary>
-    /// Function: VSizeSq
+    /// Function: VSizeSq<br/>
+    /// Native code at BatmanAK.exe+0xF75730 in the Steam build
     /// </summary>
     public unsafe static float VSizeSq(System.Numerics.Vector3 A)
     {
@@ -3453,7 +3574,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VSize2D;
     /// <summary>
-    /// Function: VSize2D
+    /// Function: VSize2D<br/>
+    /// Native code at BatmanAK.exe+0xF756A0 in the Steam build
     /// </summary>
     public unsafe static float VSize2D(System.Numerics.Vector3 A)
     {
@@ -3474,7 +3596,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VSize;
     /// <summary>
-    /// Function: VSize
+    /// Function: VSize<br/>
+    /// Native code at BatmanAK.exe+0xF75600 in the Steam build
     /// </summary>
     public unsafe static float VSize(System.Numerics.Vector3 A)
     {
@@ -3495,7 +3618,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FInterpConstantTo;
     /// <summary>
-    /// Function: FInterpConstantTo
+    /// Function: FInterpConstantTo<br/>
+    /// Native code at BatmanAK.exe+0xF84540 in the Steam build
     /// </summary>
     public unsafe static float FInterpConstantTo(float Current, float Target, float DeltaTime, float InterpSpeed)
     {
@@ -3519,7 +3643,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FInterpTo;
     /// <summary>
-    /// Function: FInterpTo
+    /// Function: FInterpTo<br/>
+    /// Native code at BatmanAK.exe+0xF841B0 in the Steam build
     /// </summary>
     public unsafe static float FInterpTo(float Current, float Target, float DeltaTime, float InterpSpeed)
     {
@@ -3589,7 +3714,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FInterpEaseInOut;
     /// <summary>
-    /// Function: FInterpEaseInOut
+    /// Function: FInterpEaseInOut<br/>
+    /// Native code at BatmanAK.exe+0xF83E20 in the Steam build
     /// </summary>
     public unsafe static float FInterpEaseInOut(float A, float B, float Alpha, float Exp)
     {
@@ -3647,7 +3773,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FCubicInterp;
     /// <summary>
-    /// Function: FCubicInterp
+    /// Function: FCubicInterp<br/>
+    /// Native code at BatmanAK.exe+0xF83910 in the Steam build
     /// </summary>
     public unsafe static float FCubicInterp(float P0, float T0, float P1, float T1, float A)
     {
@@ -3672,7 +3799,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Sgn;
     /// <summary>
-    /// Function: Sgn
+    /// Function: Sgn<br/>
+    /// Native code at BatmanAK.exe+0xF82E60 in the Steam build
     /// </summary>
     public unsafe static float Sgn(float A)
     {
@@ -3693,7 +3821,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FCeil;
     /// <summary>
-    /// Function: FCeil
+    /// Function: FCeil<br/>
+    /// Native code at BatmanAK.exe+0xF82D30 in the Steam build
     /// </summary>
     public unsafe static int FCeil(float A)
     {
@@ -3714,7 +3843,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FFloor;
     /// <summary>
-    /// Function: FFloor
+    /// Function: FFloor<br/>
+    /// Native code at BatmanAK.exe+0xF82C00 in the Steam build
     /// </summary>
     public unsafe static int FFloor(float A)
     {
@@ -3735,7 +3865,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Round;
     /// <summary>
-    /// Function: Round
+    /// Function: Round<br/>
+    /// Native code at BatmanAK.exe+0xF82AD0 in the Steam build
     /// </summary>
     public unsafe static int Round(float A)
     {
@@ -3756,7 +3887,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Lerp;
     /// <summary>
-    /// Function: Lerp
+    /// Function: Lerp<br/>
+    /// Native code at BatmanAK.exe+0xF83650 in the Steam build
     /// </summary>
     public unsafe static float Lerp(float A, float B, float Alpha)
     {
@@ -3779,7 +3911,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FClamp;
     /// <summary>
-    /// Function: FClamp
+    /// Function: FClamp<br/>
+    /// Native code at BatmanAK.exe+0xF83380 in the Steam build
     /// </summary>
     public unsafe static float FClamp(float V, float A, float B)
     {
@@ -3802,7 +3935,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FMax;
     /// <summary>
-    /// Function: FMax
+    /// Function: FMax<br/>
+    /// Native code at BatmanAK.exe+0xF83190 in the Steam build
     /// </summary>
     public unsafe static float FMax(float A, float B)
     {
@@ -3824,7 +3958,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FMin;
     /// <summary>
-    /// Function: FMin
+    /// Function: FMin<br/>
+    /// Native code at BatmanAK.exe+0xF82FA0 in the Steam build
     /// </summary>
     public unsafe static float FMin(float A, float B)
     {
@@ -3846,7 +3981,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FRand;
     /// <summary>
-    /// Function: FRand
+    /// Function: FRand<br/>
+    /// Native code at BatmanAK.exe+0xF73A20 in the Steam build
     /// </summary>
     public unsafe static float FRand()
     {
@@ -3866,7 +4002,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Square;
     /// <summary>
-    /// Function: Square
+    /// Function: Square<br/>
+    /// Native code at BatmanAK.exe+0xF829B0 in the Steam build
     /// </summary>
     public unsafe static float Square(float A)
     {
@@ -3887,7 +4024,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Sqrt;
     /// <summary>
-    /// Function: Sqrt
+    /// Function: Sqrt<br/>
+    /// Native code at BatmanAK.exe+0xF82880 in the Steam build
     /// </summary>
     public unsafe static float Sqrt(float A)
     {
@@ -3908,7 +4046,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Pow;
     /// <summary>
-    /// Function: Pow
+    /// Function: Pow<br/>
+    /// Native code at BatmanAK.exe+0xF7FD50 in the Steam build
     /// </summary>
     public unsafe static float Pow(float Base, float Exp)
     {
@@ -3930,7 +4069,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Loge;
     /// <summary>
-    /// Function: Loge
+    /// Function: Loge<br/>
+    /// Native code at BatmanAK.exe+0xF82760 in the Steam build
     /// </summary>
     public unsafe static float Loge(float A)
     {
@@ -3951,7 +4091,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Exp;
     /// <summary>
-    /// Function: Exp
+    /// Function: Exp<br/>
+    /// Native code at BatmanAK.exe+0xF82640 in the Steam build
     /// </summary>
     public unsafe static float Exp(float A)
     {
@@ -3972,7 +4113,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Atan2;
     /// <summary>
-    /// Function: Atan2
+    /// Function: Atan2<br/>
+    /// Native code at BatmanAK.exe+0xF82450 in the Steam build
     /// </summary>
     public unsafe static float Atan2(float A, float B)
     {
@@ -3994,7 +4136,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Atan;
     /// <summary>
-    /// Function: Atan
+    /// Function: Atan<br/>
+    /// Native code at BatmanAK.exe+0xF82330 in the Steam build
     /// </summary>
     public unsafe static float Atan(float A)
     {
@@ -4015,7 +4158,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Tan;
     /// <summary>
-    /// Function: Tan
+    /// Function: Tan<br/>
+    /// Native code at BatmanAK.exe+0xF82210 in the Steam build
     /// </summary>
     public unsafe static float Tan(float A)
     {
@@ -4036,7 +4180,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Acos;
     /// <summary>
-    /// Function: Acos
+    /// Function: Acos<br/>
+    /// Native code at BatmanAK.exe+0xF820E0 in the Steam build
     /// </summary>
     public unsafe static float Acos(float A)
     {
@@ -4057,7 +4202,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Cos;
     /// <summary>
-    /// Function: Cos
+    /// Function: Cos<br/>
+    /// Native code at BatmanAK.exe+0xF81FC0 in the Steam build
     /// </summary>
     public unsafe static float Cos(float A)
     {
@@ -4078,7 +4224,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Asin;
     /// <summary>
-    /// Function: Asin
+    /// Function: Asin<br/>
+    /// Native code at BatmanAK.exe+0xF81E90 in the Steam build
     /// </summary>
     public unsafe static float Asin(float A)
     {
@@ -4099,7 +4246,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Sin;
     /// <summary>
-    /// Function: Sin
+    /// Function: Sin<br/>
+    /// Native code at BatmanAK.exe+0xF81D70 in the Steam build
     /// </summary>
     public unsafe static float Sin(float A)
     {
@@ -4120,7 +4268,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Abs;
     /// <summary>
-    /// Function: Abs
+    /// Function: Abs<br/>
+    /// Native code at BatmanAK.exe+0xF81C50 in the Steam build
     /// </summary>
     public unsafe static float Abs(float A)
     {
@@ -4156,7 +4305,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ToHex;
     /// <summary>
-    /// Function: ToHex
+    /// Function: ToHex<br/>
+    /// Native code at BatmanAK.exe+0xF8B9E0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.FString ToHex(int A)
     {
@@ -4177,7 +4327,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Clamp;
     /// <summary>
-    /// Function: Clamp
+    /// Function: Clamp<br/>
+    /// Native code at BatmanAK.exe+0xF7F9A0 in the Steam build
     /// </summary>
     public unsafe static int Clamp(int V, int A, int B)
     {
@@ -4200,7 +4351,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Max;
     /// <summary>
-    /// Function: Max
+    /// Function: Max<br/>
+    /// Native code at BatmanAK.exe+0xF7F7D0 in the Steam build
     /// </summary>
     public unsafe static int Max(int A, int B)
     {
@@ -4222,7 +4374,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Min;
     /// <summary>
-    /// Function: Min
+    /// Function: Min<br/>
+    /// Native code at BatmanAK.exe+0xF7F600 in the Steam build
     /// </summary>
     public unsafe static int Min(int A, int B)
     {
@@ -4244,7 +4397,8 @@ public partial class GameObject : BmSDK.IGameObject
 
     private static BmSDK.Function __fn_Rand;
     /// <summary>
-    /// Function: Rand
+    /// Function: Rand<br/>
+    /// Native code at BatmanAK.exe+0xF7F4B0 in the Steam build
     /// </summary>
     public unsafe static int Rand(int Max)
     {

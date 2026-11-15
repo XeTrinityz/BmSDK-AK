@@ -128,7 +128,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimPosition;
     /// <summary>
-    /// Function: MAT_SetAnimPosition
+    /// Function: MAT_SetAnimPosition<br/>
+    /// Native code at BatmanAK.exe+0xB51920 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetAnimPosition(BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
@@ -178,7 +179,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAnimNodes;
     /// <summary>
-    /// Function: ClearAnimNodes
+    /// Function: ClearAnimNodes<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearAnimNodes()
     {
@@ -199,7 +201,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheAnimNodes;
     /// <summary>
-    /// Function: CacheAnimNodes
+    /// Function: CacheAnimNodes<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void CacheAnimNodes()
     {
@@ -234,7 +237,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetSkelControlStrength;
     /// <summary>
-    /// Function: MAT_SetSkelControlStrength
+    /// Function: MAT_SetSkelControlStrength<br/>
+    /// Native code at BatmanAK.exe+0xB893D0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetSkelControlStrength(BmSDK.FName SkelControlName, float ControlStrength)
     {
@@ -257,7 +261,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetSkelControlScale;
     /// <summary>
-    /// Function: MAT_SetSkelControlScale
+    /// Function: MAT_SetSkelControlScale<br/>
+    /// Native code at BatmanAK.exe+0x4B0330 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetSkelControlScale(BmSDK.FName SkelControlName, float Scale)
     {
@@ -280,7 +285,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetMorphWeight;
     /// <summary>
-    /// Function: MAT_SetMorphWeight
+    /// Function: MAT_SetMorphWeight<br/>
+    /// Native code at BatmanAK.exe+0xB51720 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetMorphWeight(BmSDK.FName MorphNodeName, float MorphWeight)
     {
@@ -303,7 +309,8 @@ public partial class SkeletalMeshActorMAT : BmSDK.Engine.SkeletalMeshCinematicAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_SetAnimWeights;
     /// <summary>
-    /// Function: MAT_SetAnimWeights
+    /// Function: MAT_SetAnimWeights<br/>
+    /// Native code at BatmanAK.exe+0xBBBCD0 in the Steam build
     /// </summary>
     public unsafe virtual void MAT_SetAnimWeights(BmSDK.TArray<BmSDK.Engine.Actor.FAnimSlotInfo> SlotInfos)
     {

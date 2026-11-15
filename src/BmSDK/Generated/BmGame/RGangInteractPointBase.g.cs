@@ -232,7 +232,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowForSpawning;
     /// <summary>
-    /// Function: AllowForSpawning
+    /// Function: AllowForSpawning<br/>
+    /// Native code at BatmanAK.exe+0x48E900 in the Steam build
     /// </summary>
     public unsafe virtual bool AllowForSpawning()
     {
@@ -300,7 +301,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEntryPointAndRotation;
     /// <summary>
-    /// Function: GetEntryPointAndRotation
+    /// Function: GetEntryPointAndRotation<br/>
+    /// Native code at BatmanAK.exe+0x4E7AD0 in the Steam build
     /// </summary>
     public unsafe virtual void GetEntryPointAndRotation(BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, int Index, bool bSecondTry = default)
     {
@@ -330,7 +332,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawn;
     /// <summary>
-    /// Function: IsValidForPawn
+    /// Function: IsValidForPawn<br/>
+    /// Native code at BatmanAK.exe+0x4E78C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default, bool bSkipVolCheck = default)
     {
@@ -355,7 +358,8 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGid;
     /// <summary>
-    /// Function: GetGid
+    /// Function: GetGid<br/>
+    /// Native code at BatmanAK.exe+0x4812B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FGuid GetGid()
     {

@@ -331,7 +331,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnsOnTile;
     /// <summary>
-    /// Function: UpdatePawnsOnTile
+    /// Function: UpdatePawnsOnTile<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePawnsOnTile()
     {
@@ -352,7 +353,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPawnsOnTile;
     /// <summary>
-    /// Function: CheckForPawnsOnTile
+    /// Function: CheckForPawnsOnTile<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForPawnsOnTile()
     {
@@ -373,7 +375,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShockedCharactersEffect;
     /// <summary>
-    /// Function: UpdateShockedCharactersEffect
+    /// Function: UpdateShockedCharactersEffect<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateShockedCharactersEffect()
     {
@@ -436,7 +439,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Intialise;
     /// <summary>
-    /// Function: Intialise
+    /// Function: Intialise<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void Intialise()
     {
@@ -457,7 +461,8 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetState;
     /// <summary>
-    /// Function: SetState
+    /// Function: SetState<br/>
+    /// Native code at BatmanAK.exe+0x46C6A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetState(BmSDK.BmGame.RElectrifiedFloorPanel.FloorPanelStates NewState)
     {

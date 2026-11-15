@@ -246,7 +246,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermGrateConstraint;
     /// <summary>
-    /// Function: TermGrateConstraint
+    /// Function: TermGrateConstraint<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void TermGrateConstraint()
     {
@@ -267,7 +268,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitGrateConstraint;
     /// <summary>
-    /// Function: InitGrateConstraint
+    /// Function: InitGrateConstraint<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void InitGrateConstraint()
     {
@@ -655,7 +657,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetGrateRBCollision;
     /// <summary>
-    /// Function: ResetGrateRBCollision
+    /// Function: ResetGrateRBCollision<br/>
+    /// Native code at BatmanAK.exe+0x484220 in the Steam build
     /// </summary>
     public unsafe virtual void ResetGrateRBCollision()
     {
@@ -719,7 +722,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyImpactEffects;
     /// <summary>
-    /// Function: DestroyImpactEffects
+    /// Function: DestroyImpactEffects<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyImpactEffects()
     {
@@ -740,7 +744,8 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateImpactEffects;
     /// <summary>
-    /// Function: UpdateImpactEffects
+    /// Function: UpdateImpactEffects<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateImpactEffects()
     {

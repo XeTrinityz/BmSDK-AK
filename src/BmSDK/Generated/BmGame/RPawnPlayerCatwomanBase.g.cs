@@ -238,7 +238,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushDebugDraws;
     /// <summary>
-    /// Function: FlushDebugDraws
+    /// Function: FlushDebugDraws<br/>
+    /// Native code at BatmanAK.exe+0x478A90 in the Steam build
     /// </summary>
     public unsafe virtual void FlushDebugDraws(bool bOnlyOncePerFrame = default)
     {
@@ -277,7 +278,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampPointToCeilingVolumes;
     /// <summary>
-    /// Function: ClampPointToCeilingVolumes
+    /// Function: ClampPointToCeilingVolumes<br/>
+    /// Native code at BatmanAK.exe+0x478970 in the Steam build
     /// </summary>
     public unsafe virtual bool ClampPointToCeilingVolumes(out System.Numerics.Vector3 Point, float ExtraShiftInwards = default, bool bDebugDraw = default)
     {
@@ -303,7 +305,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTouchingCeilingVolume;
     /// <summary>
-    /// Function: UpdateTouchingCeilingVolume
+    /// Function: UpdateTouchingCeilingVolume<br/>
+    /// Native code at BatmanAK.exe+0x478930 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTouchingCeilingVolume()
     {
@@ -573,7 +576,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWhipTargetPose;
     /// <summary>
-    /// Function: SetWhipTargetPose
+    /// Function: SetWhipTargetPose<br/>
+    /// Native code at BatmanAK.exe+0x478840 in the Steam build
     /// </summary>
     public unsafe virtual void SetWhipTargetPose(System.Numerics.Vector3 NewPosition, BmSDK.Rotator NewRotation = default)
     {
@@ -596,7 +600,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWhipTargetPose;
     /// <summary>
-    /// Function: GetWhipTargetPose
+    /// Function: GetWhipTargetPose<br/>
+    /// Native code at BatmanAK.exe+0x478750 in the Steam build
     /// </summary>
     public unsafe virtual void GetWhipTargetPose(out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
@@ -623,7 +628,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearbyLedgeFromCeiling;
     /// <summary>
-    /// Function: FindNearbyLedgeFromCeiling
+    /// Function: FindNearbyLedgeFromCeiling<br/>
+    /// Native code at BatmanAK.exe+0x478660 in the Steam build
     /// </summary>
     public unsafe virtual bool FindNearbyLedgeFromCeiling(System.Numerics.Vector3 PlayerLocation, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator)
     {
@@ -648,7 +654,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddEdgeCollisionNormals;
     /// <summary>
-    /// Function: AddEdgeCollisionNormals
+    /// Function: AddEdgeCollisionNormals<br/>
+    /// Native code at BatmanAK.exe+0x4785D0 in the Steam build
     /// </summary>
     public unsafe virtual void AddEdgeCollisionNormals(System.Numerics.Vector3 Delta)
     {
@@ -670,7 +677,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SlideOffCeilingVolumeBorders;
     /// <summary>
-    /// Function: SlideOffCeilingVolumeBorders
+    /// Function: SlideOffCeilingVolumeBorders<br/>
+    /// Native code at BatmanAK.exe+0x478520 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SlideOffCeilingVolumeBorders(System.Numerics.Vector3 Delta)
     {
@@ -692,7 +700,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RestrictMoveToCeiling;
     /// <summary>
-    /// Function: RestrictMoveToCeiling
+    /// Function: RestrictMoveToCeiling<br/>
+    /// Native code at BatmanAK.exe+0x478470 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 RestrictMoveToCeiling(System.Numerics.Vector3 Delta)
     {
@@ -714,7 +723,8 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerThoughts;
     /// <summary>
-    /// Function: GetPlayerThoughts
+    /// Function: GetPlayerThoughts<br/>
+    /// Native code at BatmanAK.exe+0x58FEC0 in the Steam build
     /// </summary>
     public unsafe override void GetPlayerThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {

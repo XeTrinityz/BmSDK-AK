@@ -413,7 +413,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShootTarget;
     /// <summary>
-    /// Function: GetShootTarget
+    /// Function: GetShootTarget<br/>
+    /// Native code at BatmanAK.exe+0x5200A0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetShootTarget(BmSDK.Engine.Actor Target)
     {
@@ -496,7 +497,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDamageFromEMP;
     /// <summary>
-    /// Function: UpdateDamageFromEMP
+    /// Function: UpdateDamageFromEMP<br/>
+    /// Native code at BatmanAK.exe+0x523FF0 in the Steam build
     /// </summary>
     public unsafe override void UpdateDamageFromEMP(float DeltaTime)
     {
@@ -656,7 +658,8 @@ public partial class RVehicleHeavyTank : BmSDK.BmGame.RVehicleTank, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLaserAudioSource;
     /// <summary>
-    /// Function: UpdateLaserAudioSource
+    /// Function: UpdateLaserAudioSource<br/>
+    /// Native code at BatmanAK.exe+0x525C70 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLaserAudioSource(float DeltaTime)
     {

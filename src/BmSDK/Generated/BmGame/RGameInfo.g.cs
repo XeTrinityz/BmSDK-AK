@@ -126,7 +126,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Hack_FixupMissingBundleNames;
     /// <summary>
-    /// Function: Hack_FixupMissingBundleNames
+    /// Function: Hack_FixupMissingBundleNames<br/>
+    /// Native code at BatmanAK.exe+0x46C2B0 in the Steam build
     /// </summary>
     public unsafe virtual void Hack_FixupMissingBundleNames()
     {
@@ -147,7 +148,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HydraSyncWBRewards;
     /// <summary>
-    /// Function: HydraSyncWBRewards
+    /// Function: HydraSyncWBRewards<br/>
+    /// Native code at BatmanAK.exe+0x46C270 in the Steam build
     /// </summary>
     public unsafe virtual void HydraSyncWBRewards()
     {
@@ -168,7 +170,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvailableBAKRewards;
     /// <summary>
-    /// Function: GetAvailableBAKRewards
+    /// Function: GetAvailableBAKRewards<br/>
+    /// Native code at BatmanAK.exe+0x5699F0 in the Steam build
     /// </summary>
     public unsafe virtual void GetAvailableBAKRewards(out BmSDK.TArray<BmSDK.FString> Rewards)
     {
@@ -190,7 +193,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPawnRunningTowards;
     /// <summary>
-    /// Function: IsPawnRunningTowards
+    /// Function: IsPawnRunningTowards<br/>
+    /// Native code at BatmanAK.exe+0x4A8D70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPawnRunningTowards(BmSDK.Engine.Pawn TestPawn, System.Numerics.Vector3 Loc)
     {
@@ -285,7 +289,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLanguageCode;
     /// <summary>
-    /// Function: GetLanguageCode
+    /// Function: GetLanguageCode<br/>
+    /// Native code at BatmanAK.exe+0x5386E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetLanguageCode()
     {
@@ -306,7 +311,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRegionCode;
     /// <summary>
-    /// Function: GetRegionCode
+    /// Function: GetRegionCode<br/>
+    /// Native code at BatmanAK.exe+0x538660 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetRegionCode()
     {
@@ -327,7 +333,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBMBLInRange;
     /// <summary>
-    /// Function: IsBMBLInRange
+    /// Function: IsBMBLInRange<br/>
+    /// Native code at BatmanAK.exe+0x4A8C00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsBMBLInRange(System.Numerics.Vector3 InLoc, float Range)
     {
@@ -350,7 +357,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckObjectiveActive;
     /// <summary>
-    /// Function: CheckObjectiveActive
+    /// Function: CheckObjectiveActive<br/>
+    /// Native code at BatmanAK.exe+0x538510 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckObjectiveActive(BmSDK.FStringArg StringToCheck)
     {
@@ -373,7 +381,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentObjectiveString;
     /// <summary>
-    /// Function: SetCurrentObjectiveString
+    /// Function: SetCurrentObjectiveString<br/>
+    /// Native code at BatmanAK.exe+0x5383D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentObjectiveString(BmSDK.FStringArg NewObjective)
     {
@@ -411,7 +420,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCheatCodeValue;
     /// <summary>
-    /// Function: SetCheatCodeValue
+    /// Function: SetCheatCodeValue<br/>
+    /// Native code at BatmanAK.exe+0x4A8AB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCheatCodeValue(BmSDK.BmGame.RGameInfo.ECheatCode Id, int Value)
     {
@@ -434,7 +444,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCheatCodeValue;
     /// <summary>
-    /// Function: GetCheatCodeValue
+    /// Function: GetCheatCodeValue<br/>
+    /// Native code at BatmanAK.exe+0x46C1E0 in the Steam build
     /// </summary>
     public unsafe virtual int GetCheatCodeValue(BmSDK.BmGame.RGameInfo.ECheatCode Id)
     {
@@ -730,7 +741,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Is3DTVPresent;
     /// <summary>
-    /// Function: Is3DTVPresent
+    /// Function: Is3DTVPresent<br/>
+    /// Native code at BatmanAK.exe+0x46C190 in the Steam build
     /// </summary>
     public unsafe virtual bool Is3DTVPresent()
     {
@@ -751,7 +763,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetOceanHeightAtLocation;
     /// <summary>
-    /// Function: GetOceanHeightAtLocation
+    /// Function: GetOceanHeightAtLocation<br/>
+    /// Native code at BatmanAK.exe+0x551E10 in the Steam build
     /// </summary>
     public unsafe static float GetOceanHeightAtLocation(System.Numerics.Vector3 vTestLocation)
     {
@@ -772,7 +785,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetFearGasHeightAtLocation;
     /// <summary>
-    /// Function: GetFearGasHeightAtLocation
+    /// Function: GetFearGasHeightAtLocation<br/>
+    /// Native code at BatmanAK.exe+0x551D70 in the Steam build
     /// </summary>
     public unsafe static float GetFearGasHeightAtLocation(System.Numerics.Vector3 vTestLocation)
     {
@@ -793,7 +807,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsLocationInFearGas;
     /// <summary>
-    /// Function: IsLocationInFearGas
+    /// Function: IsLocationInFearGas<br/>
+    /// Native code at BatmanAK.exe+0x494200 in the Steam build
     /// </summary>
     public unsafe static bool IsLocationInFearGas(System.Numerics.Vector3 vTestLocation)
     {
@@ -814,7 +829,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsFearGasActive;
     /// <summary>
-    /// Function: IsFearGasActive
+    /// Function: IsFearGasActive<br/>
+    /// Native code at BatmanAK.exe+0x538380 in the Steam build
     /// </summary>
     public unsafe static bool IsFearGasActive()
     {
@@ -834,7 +850,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLevelTransitionOffset;
     /// <summary>
-    /// Function: GetLevelTransitionOffset
+    /// Function: GetLevelTransitionOffset<br/>
+    /// Native code at BatmanAK.exe+0x538160 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLevelTransitionOffset(BmSDK.FName CurrentLevel, BmSDK.FStringArg TargetLevel)
     {
@@ -888,7 +905,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMostProminentSwappableBillboard;
     /// <summary>
-    /// Function: GetMostProminentSwappableBillboard
+    /// Function: GetMostProminentSwappableBillboard<br/>
+    /// Native code at BatmanAK.exe+0x4A8970 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RJokerSwappableBase GetMostProminentSwappableBillboard(float DeltaTime)
     {
@@ -924,7 +942,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJokerBillboards;
     /// <summary>
-    /// Function: UpdateJokerBillboards
+    /// Function: UpdateJokerBillboards<br/>
+    /// Native code at BatmanAK.exe+0x4A8840 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateJokerBillboards(float DeltaTime)
     {
@@ -946,7 +965,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOWLightFade;
     /// <summary>
-    /// Function: UpdateOWLightFade
+    /// Function: UpdateOWLightFade<br/>
+    /// Native code at BatmanAK.exe+0x4A8650 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateOWLightFade(float DeltaTime, BmSDK.Engine.PlayerController PC)
     {
@@ -1987,7 +2007,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDLCChallengeCharacterIds;
     /// <summary>
-    /// Function: AddDLCChallengeCharacterIds
+    /// Function: AddDLCChallengeCharacterIds<br/>
+    /// Native code at BatmanAK.exe+0x46C150 in the Steam build
     /// </summary>
     public unsafe virtual void AddDLCChallengeCharacterIds()
     {
@@ -2613,7 +2634,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGameRestartOneshot;
     /// <summary>
-    /// Function: SetGameRestartOneshot
+    /// Function: SetGameRestartOneshot<br/>
+    /// Native code at BatmanAK.exe+0x46C110 in the Steam build
     /// </summary>
     public unsafe virtual void SetGameRestartOneshot()
     {
@@ -2829,7 +2851,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameTimePlayedString;
     /// <summary>
-    /// Function: GetGameTimePlayedString
+    /// Function: GetGameTimePlayedString<br/>
+    /// Native code at BatmanAK.exe+0x5380E0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.FString GetGameTimePlayedString()
     {
@@ -2864,7 +2887,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_VoiceHasEmote;
     /// <summary>
-    /// Function: VoiceHasEmote
+    /// Function: VoiceHasEmote<br/>
+    /// Native code at BatmanAK.exe+0x4A8470 in the Steam build
     /// </summary>
     public unsafe static bool VoiceHasEmote(BmSDK.Engine.AkDialogueVoice Voice, BmSDK.Engine.AkEmoteType emType)
     {
@@ -2886,7 +2910,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFrontend;
     /// <summary>
-    /// Function: IsFrontend
+    /// Function: IsFrontend<br/>
+    /// Native code at BatmanAK.exe+0x46C0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsFrontend()
     {
@@ -2907,7 +2932,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeMode;
     /// <summary>
-    /// Function: IsChallengeMode
+    /// Function: IsChallengeMode<br/>
+    /// Native code at BatmanAK.exe+0x48CA00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsChallengeMode()
     {
@@ -2928,7 +2954,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStoryMode;
     /// <summary>
-    /// Function: IsStoryMode
+    /// Function: IsStoryMode<br/>
+    /// Native code at BatmanAK.exe+0x48A1B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsStoryMode()
     {
@@ -2963,7 +2990,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPredatorVolumeForPoint;
     /// <summary>
-    /// Function: FindPredatorVolumeForPoint
+    /// Function: FindPredatorVolumeForPoint<br/>
+    /// Native code at BatmanAK.exe+0x55F3E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPredatorVolume FindPredatorVolumeForPoint(System.Numerics.Vector3 TestPoint, BmSDK.Engine.Level L = default)
     {
@@ -2986,7 +3014,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPredatorVolumeFor;
     /// <summary>
-    /// Function: FindPredatorVolumeFor
+    /// Function: FindPredatorVolumeFor<br/>
+    /// Native code at BatmanAK.exe+0x569830 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPredatorVolume FindPredatorVolumeFor(BmSDK.Engine.Actor TestActor, bool bMustBeSameLevel = default)
     {
@@ -3375,7 +3404,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyViewStateParamsForRenderThread;
     /// <summary>
-    /// Function: CopyViewStateParamsForRenderThread
+    /// Function: CopyViewStateParamsForRenderThread<br/>
+    /// Native code at BatmanAK.exe+0x46C080 in the Steam build
     /// </summary>
     public unsafe virtual void CopyViewStateParamsForRenderThread()
     {
@@ -3396,7 +3426,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWindAtPoint;
     /// <summary>
-    /// Function: GetWindAtPoint
+    /// Function: GetWindAtPoint<br/>
+    /// Native code at BatmanAK.exe+0x46BF90 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWindAtPoint(System.Numerics.Vector3 ObjectPosition, System.Numerics.Vector3 ObjectVelocity)
     {
@@ -3419,7 +3450,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGlobalWind;
     /// <summary>
-    /// Function: UpdateGlobalWind
+    /// Function: UpdateGlobalWind<br/>
+    /// Native code at BatmanAK.exe+0x4A8340 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateGlobalWind(float DeltaTime)
     {
@@ -3441,7 +3473,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickPostUpdate;
     /// <summary>
-    /// Function: TickPostUpdate
+    /// Function: TickPostUpdate<br/>
+    /// Native code at BatmanAK.exe+0x46BF50 in the Steam build
     /// </summary>
     public unsafe virtual void TickPostUpdate()
     {
@@ -3746,7 +3779,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLevelVolumeList;
     /// <summary>
-    /// Function: UpdateLevelVolumeList
+    /// Function: UpdateLevelVolumeList<br/>
+    /// Native code at BatmanAK.exe+0x46BF10 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLevelVolumeList()
     {
@@ -3767,7 +3801,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SendHydraBeginGameplayEvent;
     /// <summary>
-    /// Function: SendHydraBeginGameplayEvent
+    /// Function: SendHydraBeginGameplayEvent<br/>
+    /// Native code at BatmanAK.exe+0x46BED0 in the Steam build
     /// </summary>
     public unsafe virtual void SendHydraBeginGameplayEvent()
     {
@@ -4032,7 +4067,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCurrentPredZoneAlerted;
     /// <summary>
-    /// Function: IsCurrentPredZoneAlerted
+    /// Function: IsCurrentPredZoneAlerted<br/>
+    /// Native code at BatmanAK.exe+0x46BE80 in the Steam build
     /// </summary>
     public unsafe virtual bool IsCurrentPredZoneAlerted()
     {
@@ -4053,7 +4089,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindProjectileArc;
     /// <summary>
-    /// Function: FindProjectileArc
+    /// Function: FindProjectileArc<br/>
+    /// Native code at BatmanAK.exe+0x4A8110 in the Steam build
     /// </summary>
     public unsafe virtual bool FindProjectileArc(BmSDK.Engine.Actor TraceActor, out System.Numerics.Vector3 ThrowVelocity, out float FlightTime, System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 Target)
     {
@@ -4083,7 +4120,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SecuROMProtectionCheck4;
     /// <summary>
-    /// Function: SecuROMProtectionCheck4
+    /// Function: SecuROMProtectionCheck4<br/>
+    /// Native code at BatmanAK.exe+0x4A7F20 in the Steam build
     /// </summary>
     public unsafe virtual int SecuROMProtectionCheck4(int A, int B)
     {
@@ -4106,7 +4144,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SecuROMProtectionCheck3;
     /// <summary>
-    /// Function: SecuROMProtectionCheck3
+    /// Function: SecuROMProtectionCheck3<br/>
+    /// Native code at BatmanAK.exe+0x46BE30 in the Steam build
     /// </summary>
     public unsafe virtual int SecuROMProtectionCheck3()
     {
@@ -4127,7 +4166,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SecuROMProtectionCheck2;
     /// <summary>
-    /// Function: SecuROMProtectionCheck2
+    /// Function: SecuROMProtectionCheck2<br/>
+    /// Native code at BatmanAK.exe+0x48E6D0 in the Steam build
     /// </summary>
     public unsafe virtual bool SecuROMProtectionCheck2()
     {
@@ -4148,7 +4188,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SecuROMProtectionCheck1;
     /// <summary>
-    /// Function: SecuROMProtectionCheck1
+    /// Function: SecuROMProtectionCheck1<br/>
+    /// Native code at BatmanAK.exe+0x46BDE0 in the Steam build
     /// </summary>
     public unsafe virtual bool SecuROMProtectionCheck1()
     {
@@ -4169,7 +4210,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLanguageForScriptCode;
     /// <summary>
-    /// Function: GetLanguageForScriptCode
+    /// Function: GetLanguageForScriptCode<br/>
+    /// Native code at BatmanAK.exe+0x538060 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetLanguageForScriptCode()
     {
@@ -4190,7 +4232,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatmobile;
     /// <summary>
-    /// Function: GetBatmobile
+    /// Function: GetBatmobile<br/>
+    /// Native code at BatmanAK.exe+0x46BD90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleBatmobileBase GetBatmobile()
     {
@@ -4211,7 +4254,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlyrPawn;
     /// <summary>
-    /// Function: GetPlyrPawn
+    /// Function: GetPlyrPawn<br/>
+    /// Native code at BatmanAK.exe+0x46BD40 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayer GetPlyrPawn()
     {
@@ -4232,7 +4276,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPC;
     /// <summary>
-    /// Function: GetPC
+    /// Function: GetPC<br/>
+    /// Native code at BatmanAK.exe+0x46BCF0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerControllerCombat GetPC()
     {
@@ -4253,7 +4298,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumLocalPlayers;
     /// <summary>
-    /// Function: GetNumLocalPlayers
+    /// Function: GetNumLocalPlayers<br/>
+    /// Native code at BatmanAK.exe+0x489D60 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumLocalPlayers()
     {
@@ -4274,7 +4320,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLevelVolumeFor;
     /// <summary>
-    /// Function: GetLevelVolumeFor
+    /// Function: GetLevelVolumeFor<br/>
+    /// Native code at BatmanAK.exe+0x4A7DE0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLevelVolume GetLevelVolumeFor(BmSDK.GameObject Obj)
     {
@@ -4296,7 +4343,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetXrayFadeValueForItem;
     /// <summary>
-    /// Function: GetXrayFadeValueForItem
+    /// Function: GetXrayFadeValueForItem<br/>
+    /// Native code at BatmanAK.exe+0x4A7C70 in the Steam build
     /// </summary>
     public unsafe virtual float GetXrayFadeValueForItem(BmSDK.Engine.Actor TestActor, BmSDK.Engine.MeshComponent MainMesh = default)
     {
@@ -4396,7 +4444,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterBatmobileForensicsSideStory;
     /// <summary>
-    /// Function: UnregisterBatmobileForensicsSideStory
+    /// Function: UnregisterBatmobileForensicsSideStory<br/>
+    /// Native code at BatmanAK.exe+0x4A7B40 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterBatmobileForensicsSideStory(BmSDK.BmGame.RSeqAct_BatmobileForensicsSideStory the_seqact)
     {
@@ -4418,7 +4467,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterBatmobileForensicsSideStory;
     /// <summary>
-    /// Function: RegisterBatmobileForensicsSideStory
+    /// Function: RegisterBatmobileForensicsSideStory<br/>
+    /// Native code at BatmanAK.exe+0x4A7A10 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterBatmobileForensicsSideStory(BmSDK.BmGame.RSeqAct_BatmobileForensicsSideStory the_seqact)
     {
@@ -4440,7 +4490,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceAnySpeech;
     /// <summary>
-    /// Function: GetTimeSinceAnySpeech
+    /// Function: GetTimeSinceAnySpeech<br/>
+    /// Native code at BatmanAK.exe+0x46BCA0 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeSinceAnySpeech()
     {
@@ -4461,7 +4512,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInPlayerCameraFrustum;
     /// <summary>
-    /// Function: IsLocationInPlayerCameraFrustum
+    /// Function: IsLocationInPlayerCameraFrustum<br/>
+    /// Native code at BatmanAK.exe+0x46BC00 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationInPlayerCameraFrustum(System.Numerics.Vector3 InLoc)
     {
@@ -4483,7 +4535,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsSaveInProgress;
     /// <summary>
-    /// Function: GetIsSaveInProgress
+    /// Function: GetIsSaveInProgress<br/>
+    /// Native code at BatmanAK.exe+0x48C2F0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetIsSaveInProgress()
     {
@@ -4504,7 +4557,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveGameSize;
     /// <summary>
-    /// Function: GetSaveGameSize
+    /// Function: GetSaveGameSize<br/>
+    /// Native code at BatmanAK.exe+0x48C2A0 in the Steam build
     /// </summary>
     public unsafe virtual int GetSaveGameSize()
     {
@@ -4525,7 +4579,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDLCInstalled;
     /// <summary>
-    /// Function: IsDLCInstalled
+    /// Function: IsDLCInstalled<br/>
+    /// Native code at BatmanAK.exe+0x537F10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsDLCInstalled(BmSDK.FStringArg DLCBundleName)
     {
@@ -4548,7 +4603,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLevelLoadedAndVisible;
     /// <summary>
-    /// Function: GetLevelLoadedAndVisible
+    /// Function: GetLevelLoadedAndVisible<br/>
+    /// Native code at BatmanAK.exe+0x4A78D0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetLevelLoadedAndVisible(BmSDK.FName LevelName)
     {
@@ -4570,7 +4626,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelVisible;
     /// <summary>
-    /// Function: SetLevelVisible
+    /// Function: SetLevelVisible<br/>
+    /// Native code at BatmanAK.exe+0x4A76E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelVisible(BmSDK.FName LevelName, bool Visible)
     {
@@ -4593,7 +4650,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelLoaded;
     /// <summary>
-    /// Function: SetLevelLoaded
+    /// Function: SetLevelLoaded<br/>
+    /// Native code at BatmanAK.exe+0x4A74F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLevelLoaded(BmSDK.FName LevelName, bool Loaded)
     {
@@ -4616,7 +4674,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPackageLevelLoaded;
     /// <summary>
-    /// Function: SetPackageLevelLoaded
+    /// Function: SetPackageLevelLoaded<br/>
+    /// Native code at BatmanAK.exe+0x537D20 in the Steam build
     /// </summary>
     public unsafe virtual void SetPackageLevelLoaded(BmSDK.FStringArg PackageName, bool Loaded)
     {
@@ -4640,7 +4699,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyChatterSuppressingObjectsOfClass;
     /// <summary>
-    /// Function: AnyChatterSuppressingObjectsOfClass
+    /// Function: AnyChatterSuppressingObjectsOfClass<br/>
+    /// Native code at BatmanAK.exe+0x4A73B0 in the Steam build
     /// </summary>
     public unsafe virtual bool AnyChatterSuppressingObjectsOfClass(BmSDK.Class ClassType)
     {
@@ -4806,7 +4866,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WBPlayRewardsFlowEnabled;
     /// <summary>
-    /// Function: WBPlayRewardsFlowEnabled
+    /// Function: WBPlayRewardsFlowEnabled<br/>
+    /// Native code at BatmanAK.exe+0x46BBB0 in the Steam build
     /// </summary>
     public unsafe virtual bool WBPlayRewardsFlowEnabled()
     {
@@ -4827,7 +4888,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WBIDEnabled;
     /// <summary>
-    /// Function: WBIDEnabled
+    /// Function: WBIDEnabled<br/>
+    /// Native code at BatmanAK.exe+0x46BB60 in the Steam build
     /// </summary>
     public unsafe virtual bool WBIDEnabled()
     {
@@ -4848,7 +4910,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWBPlayEmail;
     /// <summary>
-    /// Function: GetWBPlayEmail
+    /// Function: GetWBPlayEmail<br/>
+    /// Native code at BatmanAK.exe+0x537CA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetWBPlayEmail()
     {
@@ -4869,7 +4932,8 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedInToWBPlay;
     /// <summary>
-    /// Function: SignedInToWBPlay
+    /// Function: SignedInToWBPlay<br/>
+    /// Native code at BatmanAK.exe+0x46BB10 in the Steam build
     /// </summary>
     public unsafe virtual bool SignedInToWBPlay()
     {
@@ -12598,7 +12662,8 @@ public static class RGameInfoStatics
 {
     private static BmSDK.Function __fn_GetOceanHeightAtLocation;
     /// <summary>
-    /// Function: GetOceanHeightAtLocation, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetOceanHeightAtLocation, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x551E10 in the Steam build
     /// </summary>
     public unsafe static float GetOceanHeightAtLocation(this BmSDK.BmGame.RGameInfo self, System.Numerics.Vector3 vTestLocation)
     {
@@ -12620,7 +12685,8 @@ public static class RGameInfoStatics
 
     private static BmSDK.Function __fn_GetFearGasHeightAtLocation;
     /// <summary>
-    /// Function: GetFearGasHeightAtLocation, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetFearGasHeightAtLocation, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x551D70 in the Steam build
     /// </summary>
     public unsafe static float GetFearGasHeightAtLocation(this BmSDK.BmGame.RGameInfo self, System.Numerics.Vector3 vTestLocation)
     {
@@ -12642,7 +12708,8 @@ public static class RGameInfoStatics
 
     private static BmSDK.Function __fn_IsLocationInFearGas;
     /// <summary>
-    /// Function: IsLocationInFearGas, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsLocationInFearGas, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x494200 in the Steam build
     /// </summary>
     public unsafe static bool IsLocationInFearGas(this BmSDK.BmGame.RGameInfo self, System.Numerics.Vector3 vTestLocation)
     {
@@ -12664,7 +12731,8 @@ public static class RGameInfoStatics
 
     private static BmSDK.Function __fn_IsFearGasActive;
     /// <summary>
-    /// Function: IsFearGasActive, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsFearGasActive, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x538380 in the Steam build
     /// </summary>
     public unsafe static bool IsFearGasActive(this BmSDK.BmGame.RGameInfo self)
     {
@@ -12685,7 +12753,8 @@ public static class RGameInfoStatics
 
     private static BmSDK.Function __fn_VoiceHasEmote;
     /// <summary>
-    /// Function: VoiceHasEmote, run on <paramref name="self"/> rather than the class default object
+    /// Function: VoiceHasEmote, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x4A8470 in the Steam build
     /// </summary>
     public unsafe static bool VoiceHasEmote(this BmSDK.BmGame.RGameInfo self, BmSDK.Engine.AkDialogueVoice Voice, BmSDK.Engine.AkEmoteType emType)
     {

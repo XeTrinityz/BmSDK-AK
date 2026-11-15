@@ -250,7 +250,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueLockedByObjectOfClass;
     /// <summary>
-    /// Function: DialogueLockedByObjectOfClass
+    /// Function: DialogueLockedByObjectOfClass<br/>
+    /// Native code at BatmanAK.exe+0x4A5E30 in the Steam build
     /// </summary>
     public unsafe virtual bool DialogueLockedByObjectOfClass(BmSDK.Class TestClass)
     {
@@ -538,7 +539,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueLocked;
     /// <summary>
-    /// Function: DialogueLocked
+    /// Function: DialogueLocked<br/>
+    /// Native code at BatmanAK.exe+0x46B410 in the Steam build
     /// </summary>
     public unsafe virtual bool DialogueLocked()
     {
@@ -559,7 +561,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasRunningBarks;
     /// <summary>
-    /// Function: HasRunningBarks
+    /// Function: HasRunningBarks<br/>
+    /// Native code at BatmanAK.exe+0x484190 in the Steam build
     /// </summary>
     public unsafe virtual bool HasRunningBarks()
     {
@@ -580,7 +583,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetAllBarksFromAnySpeakersInList;
     /// <summary>
-    /// Function: GetAllBarksFromAnySpeakersInList
+    /// Function: GetAllBarksFromAnySpeakersInList<br/>
+    /// Native code at BatmanAK.exe+0x563D00 in the Steam build
     /// </summary>
     public unsafe static void GetAllBarksFromAnySpeakersInList(BmSDK.TArray<BmSDK.Engine.Actor> SpeakerList, out BmSDK.TArray<BmSDK.BmGame.RBarkSet> OutList)
     {
@@ -602,7 +606,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetBarkFromBarksetList;
     /// <summary>
-    /// Function: GetBarkFromBarksetList
+    /// Function: GetBarkFromBarksetList<br/>
+    /// Native code at BatmanAK.exe+0x563A50 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBarkConvo GetBarkFromBarksetList(BmSDK.TArray<BmSDK.BmGame.RBarkSet> BarkSetList, BmSDK.BmGame.RBarkFlagBase ContextFlags, BmSDK.TArray<BmSDK.Engine.Actor> OrderedSpeakers, out float Score, BmSDK.GameObject fallbackConvoParent, out int bFoundSomethingThatMatchedFlags)
     {
@@ -632,7 +637,8 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBarkConvo;
     /// <summary>
-    /// Function: GetBarkConvo
+    /// Function: GetBarkConvo<br/>
+    /// Native code at BatmanAK.exe+0x4F78D0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBarkConvo GetBarkConvo(BmSDK.BmGame.RPawnVillain Barker, BmSDK.BmGame.RBarkFlagBase ContextFlags)
     {
@@ -817,7 +823,8 @@ public static class RBMBarkCoordinatorStatics
 {
     private static BmSDK.Function __fn_GetAllBarksFromAnySpeakersInList;
     /// <summary>
-    /// Function: GetAllBarksFromAnySpeakersInList, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetAllBarksFromAnySpeakersInList, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x563D00 in the Steam build
     /// </summary>
     public unsafe static void GetAllBarksFromAnySpeakersInList(this BmSDK.BmGame.RBMBarkCoordinator self, BmSDK.TArray<BmSDK.Engine.Actor> SpeakerList, out BmSDK.TArray<BmSDK.BmGame.RBarkSet> OutList)
     {
@@ -840,7 +847,8 @@ public static class RBMBarkCoordinatorStatics
 
     private static BmSDK.Function __fn_GetBarkFromBarksetList;
     /// <summary>
-    /// Function: GetBarkFromBarksetList, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetBarkFromBarksetList, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x563A50 in the Steam build
     /// </summary>
     public unsafe static BmSDK.BmGame.RBarkConvo GetBarkFromBarksetList(this BmSDK.BmGame.RBMBarkCoordinator self, BmSDK.TArray<BmSDK.BmGame.RBarkSet> BarkSetList, BmSDK.BmGame.RBarkFlagBase ContextFlags, BmSDK.TArray<BmSDK.Engine.Actor> OrderedSpeakers, out float Score, BmSDK.GameObject fallbackConvoParent, out int bFoundSomethingThatMatchedFlags)
     {

@@ -126,7 +126,8 @@ public partial class RAttackEdgeSearch : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDebug;
     /// <summary>
-    /// Function: ShowDebug
+    /// Function: ShowDebug<br/>
+    /// Native code at BatmanAK.exe+0xB2E070 in the Steam build
     /// </summary>
     public unsafe virtual void ShowDebug()
     {
@@ -147,7 +148,8 @@ public partial class RAttackEdgeSearch : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchFinished;
     /// <summary>
-    /// Function: SearchFinished
+    /// Function: SearchFinished<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool SearchFinished()
     {
@@ -168,7 +170,8 @@ public partial class RAttackEdgeSearch : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAvailable;
     /// <summary>
-    /// Function: IsAvailable
+    /// Function: IsAvailable<br/>
+    /// Native code at BatmanAK.exe+0xB41470 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAvailable()
     {
@@ -189,7 +192,8 @@ public partial class RAttackEdgeSearch : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Search;
     /// <summary>
-    /// Function: Search
+    /// Function: Search<br/>
+    /// Native code at BatmanAK.exe+0x4D1400 in the Steam build
     /// </summary>
     public unsafe virtual void Search(float DeltaTime)
     {

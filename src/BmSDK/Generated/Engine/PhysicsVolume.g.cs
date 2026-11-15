@@ -264,7 +264,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetZoneVelocityForActor;
     /// <summary>
-    /// Function: GetZoneVelocityForActor
+    /// Function: GetZoneVelocityForActor<br/>
+    /// Native code at BatmanAK.exe+0xB6A230 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetZoneVelocityForActor(BmSDK.Engine.Actor TheActor)
     {
@@ -286,7 +287,8 @@ public partial class PhysicsVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
-    /// Function: GetGravityZ
+    /// Function: GetGravityZ<br/>
+    /// Native code at BatmanAK.exe+0xFDA930 in the Steam build
     /// </summary>
     public unsafe override float GetGravityZ()
     {

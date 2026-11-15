@@ -244,7 +244,8 @@ public partial class DroppedPickup : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFromNavigation;
     /// <summary>
-    /// Function: RemoveFromNavigation
+    /// Function: RemoveFromNavigation<br/>
+    /// Native code at BatmanAK.exe+0xB3A640 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveFromNavigation()
     {
@@ -265,7 +266,8 @@ public partial class DroppedPickup : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToNavigation;
     /// <summary>
-    /// Function: AddToNavigation
+    /// Function: AddToNavigation<br/>
+    /// Native code at BatmanAK.exe+0xB3A600 in the Steam build
     /// </summary>
     public unsafe virtual void AddToNavigation()
     {

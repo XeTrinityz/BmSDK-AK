@@ -80,7 +80,8 @@ public partial class RSkelControlTankTrack : BmSDK.Engine.SkelControlBase, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuspensionPositions;
     /// <summary>
-    /// Function: SetSuspensionPositions
+    /// Function: SetSuspensionPositions<br/>
+    /// Native code at BatmanAK.exe+0x521760 in the Steam build
     /// </summary>
     public unsafe virtual void SetSuspensionPositions(float Stride, float Front, float Rear)
     {

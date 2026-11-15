@@ -141,7 +141,8 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterGameAction;
     /// <summary>
-    /// Function: RegisterGameAction
+    /// Function: RegisterGameAction<br/>
+    /// Native code at BatmanAK.exe+0x4AF800 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterGameAction(BmSDK.Engine.Controller Player, BmSDK.BmGame.RGameInfo.EGameAction TheGameAction)
     {

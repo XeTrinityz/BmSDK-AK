@@ -200,7 +200,8 @@ public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interfac
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFloorCheck;
     /// <summary>
-    /// Function: DoFloorCheck
+    /// Function: DoFloorCheck<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void DoFloorCheck()
     {
@@ -221,7 +222,8 @@ public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interfac
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46AB40 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bInstant = default)
     {
@@ -243,7 +245,8 @@ public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interfac
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -264,7 +267,8 @@ public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interfac
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingShape;
     /// <summary>
-    /// Function: GetBoundingShape
+    /// Function: GetBoundingShape<br/>
+    /// Native code at BatmanAK.exe+0xBB08E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetBoundingShape(out BmSDK.TArray<System.Numerics.Vector3> out_PolyShape, int ShapeIdx)
     {

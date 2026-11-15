@@ -80,7 +80,8 @@ public partial class RPhysicsTriggerVolume : BmSDK.Engine.Volume, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActive;
     /// <summary>
-    /// Function: SetActive
+    /// Function: SetActive<br/>
+    /// Native code at BatmanAK.exe+0x4E94B0 in the Steam build
     /// </summary>
     public unsafe virtual void SetActive(bool bNewActive)
     {

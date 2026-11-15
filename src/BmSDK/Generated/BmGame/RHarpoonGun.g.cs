@@ -606,7 +606,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRopeObstruction;
     /// <summary>
-    /// Function: GetRopeObstruction
+    /// Function: GetRopeObstruction<br/>
+    /// Native code at BatmanAK.exe+0x491FC0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetRopeObstruction(System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos)
     {
@@ -629,7 +630,8 @@ public partial class RHarpoonGun : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HarpoonFired;
     /// <summary>
-    /// Function: HarpoonFired
+    /// Function: HarpoonFired<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void HarpoonFired()
     {

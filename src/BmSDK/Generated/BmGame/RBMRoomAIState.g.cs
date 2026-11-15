@@ -130,7 +130,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreSeedVoiceAssignments;
     /// <summary>
-    /// Function: PreSeedVoiceAssignments
+    /// Function: PreSeedVoiceAssignments<br/>
+    /// Native code at BatmanAK.exe+0xB40E40 in the Steam build
     /// </summary>
     public unsafe virtual void PreSeedVoiceAssignments()
     {
@@ -409,7 +410,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCornerPointVisibility;
     /// <summary>
-    /// Function: UpdateCornerPointVisibility
+    /// Function: UpdateCornerPointVisibility<br/>
+    /// Native code at BatmanAK.exe+0x487790 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCornerPointVisibility()
     {
@@ -1654,7 +1656,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHostileCount;
     /// <summary>
-    /// Function: GetHostileCount
+    /// Function: GetHostileCount<br/>
+    /// Native code at BatmanAK.exe+0x4876B0 in the Steam build
     /// </summary>
     public unsafe virtual int GetHostileCount(bool bIgnoreDeadPawns = default, bool bIncludePotentialRevives = default)
     {
@@ -2415,7 +2418,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVertVisibility;
     /// <summary>
-    /// Function: UpdateVertVisibility
+    /// Function: UpdateVertVisibility<br/>
+    /// Native code at BatmanAK.exe+0xB41010 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateVertVisibility()
     {
@@ -2612,7 +2616,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumSnipers;
     /// <summary>
-    /// Function: GetNumSnipers
+    /// Function: GetNumSnipers<br/>
+    /// Native code at BatmanAK.exe+0x487660 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumSnipers()
     {
@@ -2764,7 +2769,8 @@ public partial class RBMRoomAIState : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMineAndArmbandFX;
     /// <summary>
-    /// Function: UpdateMineAndArmbandFX
+    /// Function: UpdateMineAndArmbandFX<br/>
+    /// Native code at BatmanAK.exe+0x4F77A0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMineAndArmbandFX(float DeltaTime)
     {

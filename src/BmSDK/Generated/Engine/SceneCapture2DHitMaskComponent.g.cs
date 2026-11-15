@@ -80,7 +80,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFadingStartTimeSinceHit;
     /// <summary>
-    /// Function: SetFadingStartTimeSinceHit
+    /// Function: SetFadingStartTimeSinceHit<br/>
+    /// Native code at BatmanAK.exe+0x9C09A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFadingStartTimeSinceHit(float InFadingStartTimeSinceHit)
     {
@@ -102,7 +103,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
-    /// Function: SetCaptureParameters
+    /// Function: SetCaptureParameters<br/>
+    /// Native code at BatmanAK.exe+0x9CFB50 in the Steam build
     /// </summary>
     public unsafe virtual void SetCaptureParameters(System.Numerics.Vector3 InMaskPosition, float InMaskRadius, System.Numerics.Vector3 InStartupPosition, bool bOnlyWhenFacing, System.Numerics.Vector3 InChannelMask)
     {
@@ -128,7 +130,8 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureTargetTexture;
     /// <summary>
-    /// Function: SetCaptureTargetTexture
+    /// Function: SetCaptureTargetTexture<br/>
+    /// Native code at BatmanAK.exe+0x9BBAD0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCaptureTargetTexture(BmSDK.Engine.TextureRenderTarget2D InTextureTarget)
     {

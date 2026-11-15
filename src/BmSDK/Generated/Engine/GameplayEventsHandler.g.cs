@@ -133,7 +133,8 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessStream;
     /// <summary>
-    /// Function: PreProcessStream
+    /// Function: PreProcessStream<br/>
+    /// Native code at BatmanAK.exe+0x48DA70 in the Steam build
     /// </summary>
     public unsafe virtual void PreProcessStream()
     {

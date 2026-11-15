@@ -95,7 +95,8 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMeshes;
     /// <summary>
-    /// Function: InitMeshes
+    /// Function: InitMeshes<br/>
+    /// Native code at BatmanAK.exe+0x48AE10 in the Steam build
     /// </summary>
     public unsafe virtual void InitMeshes()
     {

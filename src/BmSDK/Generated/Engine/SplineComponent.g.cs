@@ -80,7 +80,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTangentAtDistanceAlongSpline;
     /// <summary>
-    /// Function: GetTangentAtDistanceAlongSpline
+    /// Function: GetTangentAtDistanceAlongSpline<br/>
+    /// Native code at BatmanAK.exe+0xB5A6F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTangentAtDistanceAlongSpline(float Distance)
     {
@@ -102,7 +103,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationAtDistanceAlongSpline;
     /// <summary>
-    /// Function: GetLocationAtDistanceAlongSpline
+    /// Function: GetLocationAtDistanceAlongSpline<br/>
+    /// Native code at BatmanAK.exe+0xB5A5A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationAtDistanceAlongSpline(float Distance)
     {
@@ -124,7 +126,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSplineLength;
     /// <summary>
-    /// Function: GetSplineLength
+    /// Function: GetSplineLength<br/>
+    /// Native code at BatmanAK.exe+0xB2DB90 in the Steam build
     /// </summary>
     public unsafe virtual float GetSplineLength()
     {
@@ -145,7 +148,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineReparamTable;
     /// <summary>
-    /// Function: UpdateSplineReparamTable
+    /// Function: UpdateSplineReparamTable<br/>
+    /// Native code at BatmanAK.exe+0xB2DB50 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSplineReparamTable()
     {
@@ -166,7 +170,8 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineCurviness;
     /// <summary>
-    /// Function: UpdateSplineCurviness
+    /// Function: UpdateSplineCurviness<br/>
+    /// Native code at BatmanAK.exe+0xB2DB10 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSplineCurviness()
     {

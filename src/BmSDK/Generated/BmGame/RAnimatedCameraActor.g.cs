@@ -98,7 +98,8 @@ public partial class RAnimatedCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeGetCameraView;
     /// <summary>
-    /// Function: NativeGetCameraView
+    /// Function: NativeGetCameraView<br/>
+    /// Native code at BatmanAK.exe+0x4956C0 in the Steam build
     /// </summary>
     public unsafe virtual void NativeGetCameraView(out BmSDK.GameObject.FTPOV OutPOV)
     {

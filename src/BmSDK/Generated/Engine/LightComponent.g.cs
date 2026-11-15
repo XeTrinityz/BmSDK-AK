@@ -145,7 +145,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLightEffectorFactor;
     /// <summary>
-    /// Function: GetLightEffectorFactor
+    /// Function: GetLightEffectorFactor<br/>
+    /// Native code at BatmanAK.exe+0xE57C80 in the Steam build
     /// </summary>
     public unsafe virtual float GetLightEffectorFactor(float WorldTime)
     {
@@ -167,7 +168,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLightShaftParameters;
     /// <summary>
-    /// Function: UpdateLightShaftParameters
+    /// Function: UpdateLightShaftParameters<br/>
+    /// Native code at BatmanAK.exe+0xE57DC0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateLightShaftParameters()
     {
@@ -188,7 +190,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateColorAndBrightness;
     /// <summary>
-    /// Function: UpdateColorAndBrightness
+    /// Function: UpdateColorAndBrightness<br/>
+    /// Native code at BatmanAK.exe+0xE546D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateColorAndBrightness()
     {
@@ -209,7 +212,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDirection;
     /// <summary>
-    /// Function: GetDirection
+    /// Function: GetDirection<br/>
+    /// Native code at BatmanAK.exe+0xE54650 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDirection()
     {
@@ -230,7 +234,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOrigin;
     /// <summary>
-    /// Function: GetOrigin
+    /// Function: GetOrigin<br/>
+    /// Native code at BatmanAK.exe+0xE545D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetOrigin()
     {
@@ -251,7 +256,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightProperties;
     /// <summary>
-    /// Function: SetLightProperties
+    /// Function: SetLightProperties<br/>
+    /// Native code at BatmanAK.exe+0xE54470 in the Steam build
     /// </summary>
     public unsafe virtual void SetLightProperties(float NewBrightness = default, BmSDK.GameObject.FColor NewLightColor = default, BmSDK.Engine.LightFunction NewLightFunction = default)
     {
@@ -275,7 +281,8 @@ public partial class LightComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xE542A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {

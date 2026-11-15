@@ -111,7 +111,8 @@ public partial class RVehicleNPCWeapon_APCMissileLauncher : BmSDK.BmGame.RVehicl
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnAnim;
     /// <summary>
-    /// Function: UpdatePawnAnim
+    /// Function: UpdatePawnAnim<br/>
+    /// Native code at BatmanAK.exe+0x52AA20 in the Steam build
     /// </summary>
     public unsafe override float UpdatePawnAnim(System.Numerics.Vector3 Target, float DeltaTime, bool IsFiring)
     {

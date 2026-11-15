@@ -94,7 +94,8 @@ public partial class RFakeVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioGetRPM;
     /// <summary>
-    /// Function: AudioGetRPM
+    /// Function: AudioGetRPM<br/>
+    /// Native code at BatmanAK.exe+0xB44A40 in the Steam build
     /// </summary>
     public unsafe override float AudioGetRPM(bool unlerped = default)
     {

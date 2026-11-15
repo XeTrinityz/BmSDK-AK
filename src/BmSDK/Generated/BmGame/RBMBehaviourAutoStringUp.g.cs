@@ -178,7 +178,8 @@ public partial class RBMBehaviourAutoStringUp : BmSDK.BmGame.RBMBehaviour, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRope;
     /// <summary>
-    /// Function: SetRope
+    /// Function: SetRope<br/>
+    /// Native code at BatmanAK.exe+0x53F5A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRope(BmSDK.BmGame.RRopeBase NewSpawn, BmSDK.FStringArg RopeName)
     {

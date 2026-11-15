@@ -362,7 +362,8 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermCharacterSelectPhysics;
     /// <summary>
-    /// Function: TermCharacterSelectPhysics
+    /// Function: TermCharacterSelectPhysics<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void TermCharacterSelectPhysics()
     {
@@ -383,7 +384,8 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCharacterSelectPhysics;
     /// <summary>
-    /// Function: InitCharacterSelectPhysics
+    /// Function: InitCharacterSelectPhysics<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void InitCharacterSelectPhysics()
     {

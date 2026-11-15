@@ -137,7 +137,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSpaceForTightRope;
     /// <summary>
-    /// Function: CheckSpaceForTightRope
+    /// Function: CheckSpaceForTightRope<br/>
+    /// Native code at BatmanAK.exe+0x4E0DF0 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckSpaceForTightRope(float ForwardTravelTime)
     {
@@ -159,7 +160,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForRailingComingUp;
     /// <summary>
-    /// Function: CheckForRailingComingUp
+    /// Function: CheckForRailingComingUp<br/>
+    /// Native code at BatmanAK.exe+0x47EFE0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckForRailingComingUp()
     {
@@ -394,7 +396,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTakedownTarget;
     /// <summary>
-    /// Function: GetTakedownTarget
+    /// Function: GetTakedownTarget<br/>
+    /// Native code at BatmanAK.exe+0x4E0CB0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetTakedownTarget(float DropTime)
     {
@@ -416,7 +419,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrabTarget;
     /// <summary>
-    /// Function: GetGrabTarget
+    /// Function: GetGrabTarget<br/>
+    /// Native code at BatmanAK.exe+0x4E0780 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI GetGrabTarget(float GrabTime, float MinOffsetForGrab, float MaxSpeed, float LineLauncherAccel, bool bOnlyGrabHostage, out BmSDK.BmGame.RSpecialMoveInstance_LineLauncher.LineLauncherGrabType GrabType, out BmSDK.BmGame.RBMPawnAI _PotentialGrabTarget)
     {
@@ -448,7 +452,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetKickTarget;
     /// <summary>
-    /// Function: GetKickTarget
+    /// Function: GetKickTarget<br/>
+    /// Native code at BatmanAK.exe+0x4E01B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetKickTarget(float KickTime, float LeftKickTime, float RightKickTime, float MinOffsetForFwdKick, float MaxSpeed, float LineLauncherAccel, out BmSDK.BmGame.RSpecialMoveInstance_LineLauncher.LineLauncherKickDirection KickDir)
     {
@@ -478,7 +483,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldIDoLandAnim;
     /// <summary>
-    /// Function: ShouldIDoLandAnim
+    /// Function: ShouldIDoLandAnim<br/>
+    /// Native code at BatmanAK.exe+0x4DFF50 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSpecialMoveInstance_LineLauncher.LineLauncherDismountType ShouldIDoLandAnim(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator, float MinLandHeight, float MaxLandHeight)
     {
@@ -504,7 +510,8 @@ public partial class RSpecialMoveInstance_LineLauncher : BmSDK.BmGame.RSpecialMo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LineLauncherMovement;
     /// <summary>
-    /// Function: LineLauncherMovement
+    /// Function: LineLauncherMovement<br/>
+    /// Native code at BatmanAK.exe+0x4DFAA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSpecialMoveInstance_LineLauncher.LineLauncherMovementResult LineLauncherMovement(float DeltaTime, float HorizontalSpeed, float VerticalAccel, float MaxVerticalSpeed, float WallLookAheadTime)
     {

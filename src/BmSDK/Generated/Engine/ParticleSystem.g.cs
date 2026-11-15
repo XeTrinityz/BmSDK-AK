@@ -80,7 +80,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxLifespan;
     /// <summary>
-    /// Function: GetMaxLifespan
+    /// Function: GetMaxLifespan<br/>
+    /// Native code at BatmanAK.exe+0xB97230 in the Steam build
     /// </summary>
     public unsafe virtual float GetMaxLifespan(float InComponentDelay)
     {
@@ -102,7 +103,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLODDistance;
     /// <summary>
-    /// Function: SetLODDistance
+    /// Function: SetLODDistance<br/>
+    /// Native code at BatmanAK.exe+0xB97030 in the Steam build
     /// </summary>
     public unsafe virtual bool SetLODDistance(int LODLevelIndex, float InDistance)
     {
@@ -125,7 +127,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentLODMethod;
     /// <summary>
-    /// Function: SetCurrentLODMethod
+    /// Function: SetCurrentLODMethod<br/>
+    /// Native code at BatmanAK.exe+0xB491F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentLODMethod(BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod InMethod)
     {
@@ -147,7 +150,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODDistance;
     /// <summary>
-    /// Function: GetLODDistance
+    /// Function: GetLODDistance<br/>
+    /// Native code at BatmanAK.exe+0xB96EF0 in the Steam build
     /// </summary>
     public unsafe virtual float GetLODDistance(int LODLevelIndex)
     {
@@ -169,7 +173,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODLevelCount;
     /// <summary>
-    /// Function: GetLODLevelCount
+    /// Function: GetLODLevelCount<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual int GetLODLevelCount()
     {
@@ -190,7 +195,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentLODMethod;
     /// <summary>
-    /// Function: GetCurrentLODMethod
+    /// Function: GetCurrentLODMethod<br/>
+    /// Native code at BatmanAK.exe+0xB491A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod GetCurrentLODMethod()
     {
@@ -211,7 +217,8 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_EffectiveParticleSystemAfterPhysXOverride;
     /// <summary>
-    /// Function: EffectiveParticleSystemAfterPhysXOverride
+    /// Function: EffectiveParticleSystemAfterPhysXOverride<br/>
+    /// Native code at BatmanAK.exe+0xB49150 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem EffectiveParticleSystemAfterPhysXOverride()
     {

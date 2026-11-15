@@ -80,7 +80,8 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowInAppEmailUI;
     /// <summary>
-    /// Function: ShowInAppEmailUI
+    /// Function: ShowInAppEmailUI<br/>
+    /// Native code at BatmanAK.exe+0xB9E7A0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowInAppEmailUI(BmSDK.FStringArg InitialSubject = default, BmSDK.FStringArg InitialMessage = default)
     {
@@ -105,7 +106,8 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowInAppSMSUI;
     /// <summary>
-    /// Function: ShowInAppSMSUI
+    /// Function: ShowInAppSMSUI<br/>
+    /// Native code at BatmanAK.exe+0xB9E6D0 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowInAppSMSUI(BmSDK.FStringArg InitialMessage = default)
     {
@@ -128,7 +130,8 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

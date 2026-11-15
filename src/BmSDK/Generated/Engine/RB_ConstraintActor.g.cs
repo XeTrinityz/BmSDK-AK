@@ -134,7 +134,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TermConstraint;
     /// <summary>
-    /// Function: TermConstraint
+    /// Function: TermConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB44CA0 in the Steam build
     /// </summary>
     public unsafe virtual void TermConstraint()
     {
@@ -155,7 +156,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleConstraint;
     /// <summary>
-    /// Function: ToggleConstraint
+    /// Function: ToggleConstraint<br/>
+    /// Native code at BatmanAK.exe+0xB8DFE0 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleConstraint(bool bEnable)
     {
@@ -177,7 +179,8 @@ public partial class RB_ConstraintActor : BmSDK.Engine.RigidBodyBase, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableCollision;
     /// <summary>
-    /// Function: SetDisableCollision
+    /// Function: SetDisableCollision<br/>
+    /// Native code at BatmanAK.exe+0xB8DEC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisableCollision(bool NewDisableCollision)
     {

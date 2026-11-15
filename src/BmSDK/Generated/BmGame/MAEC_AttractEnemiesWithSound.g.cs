@@ -334,7 +334,8 @@ public partial class MAEC_AttractEnemiesWithSound : BmSDK.BmGame.RAlertEventCoor
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttractThugs;
     /// <summary>
-    /// Function: AttractThugs
+    /// Function: AttractThugs<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void AttractThugs()
     {

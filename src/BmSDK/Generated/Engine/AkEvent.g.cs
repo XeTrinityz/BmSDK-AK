@@ -80,7 +80,8 @@ public partial class AkEvent : BmSDK.Engine.AkAsset, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAudibleAt;
     /// <summary>
-    /// Function: IsAudibleAt
+    /// Function: IsAudibleAt<br/>
+    /// Native code at BatmanAK.exe+0xB60D70 in the Steam build
     /// </summary>
     public unsafe virtual bool IsAudibleAt(float distanceUU, bool resultIfUnknown)
     {

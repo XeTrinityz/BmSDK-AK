@@ -80,7 +80,8 @@ public partial class NavMeshGoal_ClosestActorInList : BmSDK.Engine.NavMeshPathGo
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleInternal;
     /// <summary>
-    /// Function: RecycleInternal
+    /// Function: RecycleInternal<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe virtual void RecycleInternal()
     {

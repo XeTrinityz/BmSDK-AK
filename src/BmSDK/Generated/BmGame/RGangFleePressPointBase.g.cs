@@ -137,7 +137,8 @@ public partial class RGangFleePressPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawn;
     /// <summary>
-    /// Function: IsValidForPawn
+    /// Function: IsValidForPawn<br/>
+    /// Native code at BatmanAK.exe+0x504F50 in the Steam build
     /// </summary>
     public unsafe virtual bool IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, BmSDK.Engine.Actor ThreatActor)
     {

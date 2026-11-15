@@ -91,7 +91,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CreatePortalTexture;
     /// <summary>
-    /// Function: CreatePortalTexture
+    /// Function: CreatePortalTexture<br/>
+    /// Native code at BatmanAK.exe+0xB3C2C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.TextureRenderTarget2D CreatePortalTexture()
     {
@@ -112,7 +113,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformHitLocation;
     /// <summary>
-    /// Function: TransformHitLocation
+    /// Function: TransformHitLocation<br/>
+    /// Native code at BatmanAK.exe+0xB3C210 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformHitLocation(System.Numerics.Vector3 HitLocation)
     {
@@ -134,7 +136,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformVectorDir;
     /// <summary>
-    /// Function: TransformVectorDir
+    /// Function: TransformVectorDir<br/>
+    /// Native code at BatmanAK.exe+0xB3C160 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformVectorDir(System.Numerics.Vector3 V)
     {
@@ -156,7 +159,8 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformActor;
     /// <summary>
-    /// Function: TransformActor
+    /// Function: TransformActor<br/>
+    /// Native code at BatmanAK.exe+0xB75B80 in the Steam build
     /// </summary>
     public unsafe virtual bool TransformActor(BmSDK.Engine.Actor A)
     {

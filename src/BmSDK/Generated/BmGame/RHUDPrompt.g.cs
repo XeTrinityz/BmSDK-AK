@@ -144,7 +144,8 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreRender;
     /// <summary>
-    /// Function: PreRender
+    /// Function: PreRender<br/>
+    /// Native code at BatmanAK.exe+0x57A600 in the Steam build
     /// </summary>
     public unsafe virtual void PreRender()
     {
@@ -165,7 +166,8 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetLines;
     /// <summary>
-    /// Function: ResetLines
+    /// Function: ResetLines<br/>
+    /// Native code at BatmanAK.exe+0x56A340 in the Steam build
     /// </summary>
     public unsafe virtual void ResetLines()
     {
@@ -186,7 +188,8 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLine;
     /// <summary>
-    /// Function: AddLine
+    /// Function: AddLine<br/>
+    /// Native code at BatmanAK.exe+0x56A0F0 in the Steam build
     /// </summary>
     public unsafe virtual void AddLine(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
     {
@@ -214,7 +217,8 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HelpLinesMatch;
     /// <summary>
-    /// Function: HelpLinesMatch
+    /// Function: HelpLinesMatch<br/>
+    /// Native code at BatmanAK.exe+0x5526C0 in the Steam build
     /// </summary>
     public unsafe virtual bool HelpLinesMatch(out BmSDK.BmGame.RHUDPrompt.FHelpLine HL1, out BmSDK.BmGame.RHUDPrompt.FHelpLine HL2)
     {

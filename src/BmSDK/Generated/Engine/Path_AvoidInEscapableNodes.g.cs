@@ -108,7 +108,8 @@ public partial class Path_AvoidInEscapableNodes : BmSDK.Engine.PathConstraint, B
 
     private static BmSDK.Function __fn_CachePawnReacFlags;
     /// <summary>
-    /// Function: CachePawnReacFlags
+    /// Function: CachePawnReacFlags<br/>
+    /// Native code at BatmanAK.exe+0xB50570 in the Steam build
     /// </summary>
     public unsafe void CachePawnReacFlags(BmSDK.Engine.Pawn P)
     {

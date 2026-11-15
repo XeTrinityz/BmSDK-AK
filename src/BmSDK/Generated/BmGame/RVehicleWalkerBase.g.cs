@@ -75,7 +75,8 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFallingLocation;
     /// <summary>
-    /// Function: UpdateFallingLocation
+    /// Function: UpdateFallingLocation<br/>
+    /// Native code at BatmanAK.exe+0x49A360 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFallingLocation()
     {
@@ -96,7 +97,8 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToDodgeHeavyCannon;
     /// <summary>
-    /// Function: TryToDodgeHeavyCannon
+    /// Function: TryToDodgeHeavyCannon<br/>
+    /// Native code at BatmanAK.exe+0x49A270 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TryToDodgeHeavyCannon(System.Numerics.Vector3 WeaponOrigin, System.Numerics.Vector3 FireDirection)
     {
@@ -119,7 +121,8 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {

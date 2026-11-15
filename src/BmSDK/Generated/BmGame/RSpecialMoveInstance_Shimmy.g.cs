@@ -184,7 +184,8 @@ public partial class RSpecialMoveInstance_Shimmy : BmSDK.BmGame.RSpecialMoveInst
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCornerPoint;
     /// <summary>
-    /// Function: FindCornerPoint
+    /// Function: FindCornerPoint<br/>
+    /// Native code at BatmanAK.exe+0x4E17E0 in the Steam build
     /// </summary>
     public unsafe virtual bool FindCornerPoint(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, BmSDK.FName StartAnimName, out System.Numerics.Vector3 CornerLoc, out BmSDK.Rotator CornerRot)
     {

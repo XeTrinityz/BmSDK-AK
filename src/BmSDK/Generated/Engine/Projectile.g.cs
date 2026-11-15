@@ -75,7 +75,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddWhoosh;
     /// <summary>
-    /// Function: AddWhoosh
+    /// Function: AddWhoosh<br/>
+    /// Native code at BatmanAK.exe+0x4B9700 in the Steam build
     /// </summary>
     public unsafe virtual void AddWhoosh(BmSDK.Engine.AkEvent WhooshEvent)
     {
@@ -351,7 +352,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe override byte GetTeamNum()
     {
@@ -372,7 +374,8 @@ public partial class Projectile : BmSDK.Engine.Actor, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0x478F90 in the Steam build
     /// </summary>
     public unsafe virtual void Init(System.Numerics.Vector3 Direction)
     {

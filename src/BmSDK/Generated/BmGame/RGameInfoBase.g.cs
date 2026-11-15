@@ -253,7 +253,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSideStoryManager;
     /// <summary>
-    /// Function: GetSideStoryManager
+    /// Function: GetSideStoryManager<br/>
+    /// Native code at BatmanAK.exe+0x494770 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSideStoryManager GetSideStoryManager()
     {
@@ -274,7 +275,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearErrorThoughts;
     /// <summary>
-    /// Function: ClearErrorThoughts
+    /// Function: ClearErrorThoughts<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearErrorThoughts()
     {
@@ -295,7 +297,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawThoughts;
     /// <summary>
-    /// Function: DrawThoughts
+    /// Function: DrawThoughts<br/>
+    /// Native code at BatmanAK.exe+0x4F33A0 in the Steam build
     /// </summary>
     public unsafe virtual void DrawThoughts(BmSDK.Engine.Canvas Canvas)
     {
@@ -317,7 +320,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TickThoughts;
     /// <summary>
-    /// Function: TickThoughts
+    /// Function: TickThoughts<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void TickThoughts()
     {
@@ -338,7 +342,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyChallengeManager;
     /// <summary>
-    /// Function: DestroyChallengeManager
+    /// Function: DestroyChallengeManager<br/>
+    /// Native code at BatmanAK.exe+0x46BA70 in the Steam build
     /// </summary>
     public unsafe virtual void DestroyChallengeManager()
     {
@@ -359,7 +364,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenChallengeManager;
     /// <summary>
-    /// Function: OpenChallengeManager
+    /// Function: OpenChallengeManager<br/>
+    /// Native code at BatmanAK.exe+0x4A72B0 in the Steam build
     /// </summary>
     public unsafe virtual void OpenChallengeManager()
     {
@@ -380,7 +386,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugSoundEmitters;
     /// <summary>
-    /// Function: DebugSoundEmitters
+    /// Function: DebugSoundEmitters<br/>
+    /// Native code at BatmanAK.exe+0xB441E0 in the Steam build
     /// </summary>
     public unsafe virtual bool DebugSoundEmitters()
     {
@@ -401,7 +408,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLOption;
     /// <summary>
-    /// Function: GetURLOption
+    /// Function: GetURLOption<br/>
+    /// Native code at BatmanAK.exe+0x551BA0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetURLOption(BmSDK.FStringArg Option, out BmSDK.FString Value, BmSDK.FStringArg DefaultValue = default)
     {
@@ -427,7 +435,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ParseIntoArray;
     /// <summary>
-    /// Function: ParseIntoArray
+    /// Function: ParseIntoArray<br/>
+    /// Native code at BatmanAK.exe+0x5695E0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FName> ParseIntoArray(BmSDK.FStringArg List, BmSDK.FStringArg delim, bool CullEmpty = default)
     {
@@ -453,7 +462,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheLevelList;
     /// <summary>
-    /// Function: CacheLevelList
+    /// Function: CacheLevelList<br/>
+    /// Native code at BatmanAK.exe+0x59B3D0 in the Steam build
     /// </summary>
     public unsafe virtual void CacheLevelList()
     {
@@ -474,7 +484,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsKnightfallChapter;
     /// <summary>
-    /// Function: IsKnightfallChapter
+    /// Function: IsKnightfallChapter<br/>
+    /// Native code at BatmanAK.exe+0x48C690 in the Steam build
     /// </summary>
     public unsafe virtual bool IsKnightfallChapter()
     {
@@ -495,7 +506,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubChapterNumber;
     /// <summary>
-    /// Function: GetSubChapterNumber
+    /// Function: GetSubChapterNumber<br/>
+    /// Native code at BatmanAK.exe+0x489B00 in the Steam build
     /// </summary>
     public unsafe virtual int GetSubChapterNumber()
     {
@@ -516,7 +528,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChapterNumber;
     /// <summary>
-    /// Function: GetChapterNumber
+    /// Function: GetChapterNumber<br/>
+    /// Native code at BatmanAK.exe+0x46BA20 in the Steam build
     /// </summary>
     public unsafe virtual int GetChapterNumber()
     {
@@ -537,7 +550,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreeMB;
     /// <summary>
-    /// Function: GetFreeMB
+    /// Function: GetFreeMB<br/>
+    /// Native code at BatmanAK.exe+0x46B950 in the Steam build
     /// </summary>
     public unsafe virtual int GetFreeMB(bool bFreeGPU = default)
     {
@@ -559,7 +573,8 @@ public partial class RGameInfoBase : BmSDK.Engine.GameInfo, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateRemoteEvent;
     /// <summary>
-    /// Function: ActivateRemoteEvent
+    /// Function: ActivateRemoteEvent<br/>
+    /// Native code at BatmanAK.exe+0x551A60 in the Steam build
     /// </summary>
     public unsafe virtual bool ActivateRemoteEvent(BmSDK.FName EventName)
     {

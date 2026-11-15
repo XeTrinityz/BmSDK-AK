@@ -80,7 +80,8 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchController;
     /// <summary>
-    /// Function: SwitchController
+    /// Function: SwitchController<br/>
+    /// Native code at BatmanAK.exe+0x4EE410 in the Steam build
     /// </summary>
     public unsafe virtual void SwitchController(BmSDK.Engine.PlayerController PC)
     {

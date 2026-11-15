@@ -138,7 +138,8 @@ public partial class MHackingGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.I
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewInHackingModeOnPrimitiveComponent;
     /// <summary>
-    /// Function: SetViewInHackingModeOnPrimitiveComponent
+    /// Function: SetViewInHackingModeOnPrimitiveComponent<br/>
+    /// Native code at BatmanAK.exe+0x50CE90 in the Steam build
     /// </summary>
     public unsafe virtual void SetViewInHackingModeOnPrimitiveComponent(BmSDK.Engine.PrimitiveComponent TheComponent)
     {

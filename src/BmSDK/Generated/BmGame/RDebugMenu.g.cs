@@ -80,7 +80,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteBloatFile;
     /// <summary>
-    /// Function: WriteBloatFile
+    /// Function: WriteBloatFile<br/>
+    /// Native code at BatmanAK.exe+0x4A9E90 in the Steam build
     /// </summary>
     public unsafe virtual void WriteBloatFile(int SizeToBloat)
     {
@@ -102,7 +103,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FormatCache;
     /// <summary>
-    /// Function: FormatCache
+    /// Function: FormatCache<br/>
+    /// Native code at BatmanAK.exe+0x489D20 in the Steam build
     /// </summary>
     public unsafe virtual void FormatCache()
     {
@@ -123,7 +125,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CorruptCacheFile;
     /// <summary>
-    /// Function: CorruptCacheFile
+    /// Function: CorruptCacheFile<br/>
+    /// Native code at BatmanAK.exe+0x538EC0 in the Steam build
     /// </summary>
     public unsafe virtual void CorruptCacheFile(BmSDK.FStringArg Filename)
     {
@@ -146,7 +149,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteCacheFile;
     /// <summary>
-    /// Function: DeleteCacheFile
+    /// Function: DeleteCacheFile<br/>
+    /// Native code at BatmanAK.exe+0x538D80 in the Steam build
     /// </summary>
     public unsafe virtual void DeleteCacheFile(BmSDK.FStringArg Filename)
     {
@@ -321,7 +325,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPhysicsDebugMenuOptions;
     /// <summary>
-    /// Function: AddPhysicsDebugMenuOptions
+    /// Function: AddPhysicsDebugMenuOptions<br/>
+    /// Native code at BatmanAK.exe+0x488370 in the Steam build
     /// </summary>
     public unsafe virtual void AddPhysicsDebugMenuOptions()
     {
@@ -342,7 +347,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayUnlocalisedStrings;
     /// <summary>
-    /// Function: SetDisplayUnlocalisedStrings
+    /// Function: SetDisplayUnlocalisedStrings<br/>
+    /// Native code at BatmanAK.exe+0x4A9D70 in the Steam build
     /// </summary>
     public unsafe virtual void SetDisplayUnlocalisedStrings(bool NewUnlocalisedStrings)
     {
@@ -364,7 +370,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayUnlocalisedStrings;
     /// <summary>
-    /// Function: GetDisplayUnlocalisedStrings
+    /// Function: GetDisplayUnlocalisedStrings<br/>
+    /// Native code at BatmanAK.exe+0x499400 in the Steam build
     /// </summary>
     public unsafe virtual bool GetDisplayUnlocalisedStrings()
     {
@@ -385,7 +392,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleApexVisualisation;
     /// <summary>
-    /// Function: ToggleApexVisualisation
+    /// Function: ToggleApexVisualisation<br/>
+    /// Native code at BatmanAK.exe+0x538B90 in the Steam build
     /// </summary>
     public unsafe virtual void ToggleApexVisualisation(BmSDK.FStringArg VisualisationOption, bool bEnable)
     {
@@ -409,7 +417,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDestructibleChunksAroundPlayer;
     /// <summary>
-    /// Function: RemoveDestructibleChunksAroundPlayer
+    /// Function: RemoveDestructibleChunksAroundPlayer<br/>
+    /// Native code at BatmanAK.exe+0x46C660 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveDestructibleChunksAroundPlayer()
     {
@@ -430,7 +439,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecibelValue;
     /// <summary>
-    /// Function: GetDecibelValue
+    /// Function: GetDecibelValue<br/>
+    /// Native code at BatmanAK.exe+0x4A9C30 in the Steam build
     /// </summary>
     public unsafe virtual int GetDecibelValue(float Value)
     {
@@ -452,7 +462,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommandButton;
     /// <summary>
-    /// Function: ConsoleCommandButton
+    /// Function: ConsoleCommandButton<br/>
+    /// Native code at BatmanAK.exe+0x538980 in the Steam build
     /// </summary>
     public unsafe virtual void ConsoleCommandButton(BmSDK.FStringArg MenuText, BmSDK.FStringArg ConsoleCommand)
     {
@@ -477,7 +488,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreatherBufferToggle;
     /// <summary>
-    /// Function: BreatherBufferToggle
+    /// Function: BreatherBufferToggle<br/>
+    /// Native code at BatmanAK.exe+0x94E2B0 in the Steam build
     /// </summary>
     public unsafe virtual void BreatherBufferToggle()
     {
@@ -498,7 +510,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForcePause;
     /// <summary>
-    /// Function: ForcePause
+    /// Function: ForcePause<br/>
+    /// Native code at BatmanAK.exe+0x4A9B10 in the Steam build
     /// </summary>
     public unsafe virtual void ForcePause(bool Pause)
     {
@@ -520,7 +533,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadLevel;
     /// <summary>
-    /// Function: LoadLevel
+    /// Function: LoadLevel<br/>
+    /// Native code at BatmanAK.exe+0x538840 in the Steam build
     /// </summary>
     public unsafe virtual void LoadLevel(BmSDK.FStringArg LevelName)
     {
@@ -543,7 +557,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVersionInfo;
     /// <summary>
-    /// Function: GetVersionInfo
+    /// Function: GetVersionInfo<br/>
+    /// Native code at BatmanAK.exe+0x5387C0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVersionInfo()
     {
@@ -564,7 +579,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoHydraCacheActivityMenu;
     /// <summary>
-    /// Function: DoHydraCacheActivityMenu
+    /// Function: DoHydraCacheActivityMenu<br/>
+    /// Native code at BatmanAK.exe+0x4948D0 in the Steam build
     /// </summary>
     public unsafe virtual void DoHydraCacheActivityMenu()
     {
@@ -585,7 +601,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoHydraCacheContentsMenu;
     /// <summary>
-    /// Function: DoHydraCacheContentsMenu
+    /// Function: DoHydraCacheContentsMenu<br/>
+    /// Native code at BatmanAK.exe+0x46F040 in the Steam build
     /// </summary>
     public unsafe virtual void DoHydraCacheContentsMenu()
     {
@@ -606,7 +623,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoHydraMenu;
     /// <summary>
-    /// Function: DoHydraMenu
+    /// Function: DoHydraMenu<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void DoHydraMenu()
     {
@@ -627,7 +645,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoTelemetryMenu;
     /// <summary>
-    /// Function: DoTelemetryMenu
+    /// Function: DoTelemetryMenu<br/>
+    /// Native code at BatmanAK.exe+0x4992B0 in the Steam build
     /// </summary>
     public unsafe virtual void DoTelemetryMenu()
     {
@@ -648,7 +667,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoVoiceRecMenu;
     /// <summary>
-    /// Function: DoVoiceRecMenu
+    /// Function: DoVoiceRecMenu<br/>
+    /// Native code at BatmanAK.exe+0x476BC0 in the Steam build
     /// </summary>
     public unsafe virtual void DoVoiceRecMenu()
     {
@@ -669,7 +689,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoLogFiltersMenu;
     /// <summary>
-    /// Function: DoLogFiltersMenu
+    /// Function: DoLogFiltersMenu<br/>
+    /// Native code at BatmanAK.exe+0x48C140 in the Steam build
     /// </summary>
     public unsafe virtual void DoLogFiltersMenu()
     {
@@ -690,7 +711,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoOrbisDebugMenu;
     /// <summary>
-    /// Function: DoOrbisDebugMenu
+    /// Function: DoOrbisDebugMenu<br/>
+    /// Native code at BatmanAK.exe+0x46C620 in the Steam build
     /// </summary>
     public unsafe virtual void DoOrbisDebugMenu()
     {
@@ -711,7 +733,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoSteamworksDebugMenu;
     /// <summary>
-    /// Function: DoSteamworksDebugMenu
+    /// Function: DoSteamworksDebugMenu<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe virtual void DoSteamworksDebugMenu()
     {
@@ -732,7 +755,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoDurangoDebugMenu;
     /// <summary>
-    /// Function: DoDurangoDebugMenu
+    /// Function: DoDurangoDebugMenu<br/>
+    /// Native code at BatmanAK.exe+0x46EEA0 in the Steam build
     /// </summary>
     public unsafe virtual void DoDurangoDebugMenu()
     {
@@ -753,7 +777,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoDLECMenu;
     /// <summary>
-    /// Function: DoDLECMenu
+    /// Function: DoDLECMenu<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void DoDLECMenu()
     {
@@ -774,7 +799,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoSecuROMMenu;
     /// <summary>
-    /// Function: DoSecuROMMenu
+    /// Function: DoSecuROMMenu<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void DoSecuROMMenu()
     {
@@ -795,7 +821,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoWwiseMenu;
     /// <summary>
-    /// Function: DoWwiseMenu
+    /// Function: DoWwiseMenu<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void DoWwiseMenu()
     {
@@ -816,7 +843,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFrameRateLimitingSetting;
     /// <summary>
-    /// Function: DoFrameRateLimitingSetting
+    /// Function: DoFrameRateLimitingSetting<br/>
+    /// Native code at BatmanAK.exe+0x4881F0 in the Steam build
     /// </summary>
     public unsafe virtual void DoFrameRateLimitingSetting()
     {
@@ -837,7 +865,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFlagsMenu;
     /// <summary>
-    /// Function: DoFlagsMenu
+    /// Function: DoFlagsMenu<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void DoFlagsMenu()
     {
@@ -858,7 +887,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoViewModeMenu;
     /// <summary>
-    /// Function: DoViewModeMenu
+    /// Function: DoViewModeMenu<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void DoViewModeMenu()
     {
@@ -879,7 +909,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoBrightnessMenu;
     /// <summary>
-    /// Function: DoBrightnessMenu
+    /// Function: DoBrightnessMenu<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void DoBrightnessMenu()
     {
@@ -900,7 +931,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoRenderingMenu;
     /// <summary>
-    /// Function: DoRenderingMenu
+    /// Function: DoRenderingMenu<br/>
+    /// Native code at BatmanAK.exe+0x46DF30 in the Steam build
     /// </summary>
     public unsafe virtual void DoRenderingMenu()
     {
@@ -921,7 +953,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoProfileAndMemoryMenu;
     /// <summary>
-    /// Function: DoProfileAndMemoryMenu
+    /// Function: DoProfileAndMemoryMenu<br/>
+    /// Native code at BatmanAK.exe+0x46DE30 in the Steam build
     /// </summary>
     public unsafe virtual void DoProfileAndMemoryMenu()
     {
@@ -942,7 +975,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFPSMenu;
     /// <summary>
-    /// Function: DoFPSMenu
+    /// Function: DoFPSMenu<br/>
+    /// Native code at BatmanAK.exe+0x493900 in the Steam build
     /// </summary>
     public unsafe virtual void DoFPSMenu()
     {
@@ -963,7 +997,8 @@ public partial class RDebugMenu : BmSDK.BmGame.RDynamicMenu, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoDebugMenu;
     /// <summary>
-    /// Function: DoDebugMenu
+    /// Function: DoDebugMenu<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void DoDebugMenu()
     {

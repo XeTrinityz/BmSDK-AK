@@ -80,7 +80,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TwitterRequest;
     /// <summary>
-    /// Function: TwitterRequest
+    /// Function: TwitterRequest<br/>
+    /// Native code at BatmanAK.exe+0xBB9A70 in the Steam build
     /// </summary>
     public unsafe virtual bool TwitterRequest(BmSDK.FStringArg URL, BmSDK.TArray<BmSDK.FString> ParamKeysAndValues, BmSDK.Engine.TwitterIntegrationBase.ETwitterRequestMethod RequestMethod, int AccountIndex)
     {
@@ -106,7 +107,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAccountId;
     /// <summary>
-    /// Function: GetAccountId
+    /// Function: GetAccountId<br/>
+    /// Native code at BatmanAK.exe+0xB9DF30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetAccountId(int AccountIndex)
     {
@@ -128,7 +130,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAccountName;
     /// <summary>
-    /// Function: GetAccountName
+    /// Function: GetAccountName<br/>
+    /// Native code at BatmanAK.exe+0xB9EB70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetAccountName(int AccountIndex)
     {
@@ -150,7 +153,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumAccounts;
     /// <summary>
-    /// Function: GetNumAccounts
+    /// Function: GetNumAccounts<br/>
+    /// Native code at BatmanAK.exe+0xB2E170 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumAccounts()
     {
@@ -171,7 +175,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AuthorizeAccounts;
     /// <summary>
-    /// Function: AuthorizeAccounts
+    /// Function: AuthorizeAccounts<br/>
+    /// Native code at BatmanAK.exe+0xB3F9B0 in the Steam build
     /// </summary>
     public unsafe virtual bool AuthorizeAccounts()
     {
@@ -192,7 +197,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowTweetUI;
     /// <summary>
-    /// Function: ShowTweetUI
+    /// Function: ShowTweetUI<br/>
+    /// Native code at BatmanAK.exe+0xB9EA10 in the Steam build
     /// </summary>
     public unsafe virtual bool ShowTweetUI(BmSDK.FStringArg InitialMessage = default, BmSDK.FStringArg URL = default, BmSDK.FStringArg Picture = default)
     {
@@ -219,7 +225,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShowTweetUI;
     /// <summary>
-    /// Function: CanShowTweetUI
+    /// Function: CanShowTweetUI<br/>
+    /// Native code at BatmanAK.exe+0xB2E570 in the Steam build
     /// </summary>
     public unsafe virtual bool CanShowTweetUI()
     {
@@ -240,7 +247,8 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
-    /// Function: Init
+    /// Function: Init<br/>
+    /// Native code at BatmanAK.exe+0xB2E4F0 in the Steam build
     /// </summary>
     public unsafe virtual void Init()
     {

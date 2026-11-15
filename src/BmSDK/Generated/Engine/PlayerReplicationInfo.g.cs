@@ -136,7 +136,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
-    /// Function: GetTeamNum
+    /// Function: GetTeamNum<br/>
+    /// Native code at BatmanAK.exe+0xB38D60 in the Steam build
     /// </summary>
     public unsafe override byte GetTeamNum()
     {
@@ -355,7 +356,8 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePing;
     /// <summary>
-    /// Function: UpdatePing
+    /// Function: UpdatePing<br/>
+    /// Native code at BatmanAK.exe+0xB8B710 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePing(float TimeStamp)
     {

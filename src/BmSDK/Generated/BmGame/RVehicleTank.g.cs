@@ -109,7 +109,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTankWheels;
     /// <summary>
-    /// Function: DrawTankWheels
+    /// Function: DrawTankWheels<br/>
+    /// Native code at BatmanAK.exe+0x49A230 in the Steam build
     /// </summary>
     public unsafe virtual void DrawTankWheels()
     {
@@ -175,7 +176,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerSpotted;
     /// <summary>
-    /// Function: PlayerSpotted
+    /// Function: PlayerSpotted<br/>
+    /// Native code at BatmanAK.exe+0x5214F0 in the Steam build
     /// </summary>
     public unsafe override void PlayerSpotted(BmSDK.Engine.Actor Player)
     {
@@ -596,7 +598,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShootTarget;
     /// <summary>
-    /// Function: GetShootTarget
+    /// Function: GetShootTarget<br/>
+    /// Native code at BatmanAK.exe+0x5200A0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetShootTarget(BmSDK.Engine.Actor Target)
     {
@@ -692,7 +695,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTracks;
     /// <summary>
-    /// Function: UpdateTracks
+    /// Function: UpdateTracks<br/>
+    /// Native code at BatmanAK.exe+0x525B40 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTracks(float DeltaTime)
     {
@@ -756,7 +760,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
-    /// Function: UpdateLights
+    /// Function: UpdateLights<br/>
+    /// Native code at BatmanAK.exe+0x4F3D60 in the Steam build
     /// </summary>
     public unsafe override void UpdateLights(float DeltaTime)
     {
@@ -778,7 +783,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateTurretToMuzzleOffset;
     /// <summary>
-    /// Function: CalculateTurretToMuzzleOffset
+    /// Function: CalculateTurretToMuzzleOffset<br/>
+    /// Native code at BatmanAK.exe+0x49A1F0 in the Steam build
     /// </summary>
     public unsafe virtual void CalculateTurretToMuzzleOffset()
     {
@@ -799,7 +805,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
-    /// Function: SelfDrive
+    /// Function: SelfDrive<br/>
+    /// Native code at BatmanAK.exe+0x4F4730 in the Steam build
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {
@@ -821,7 +828,8 @@ public partial class RVehicleTank : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDriveAsync;
     /// <summary>
-    /// Function: SelfDriveAsync
+    /// Function: SelfDriveAsync<br/>
+    /// Native code at BatmanAK.exe+0x4F4600 in the Steam build
     /// </summary>
     public unsafe override void SelfDriveAsync(float DeltaTime)
     {

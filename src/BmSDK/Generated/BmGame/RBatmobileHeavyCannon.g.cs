@@ -256,7 +256,8 @@ public partial class RBatmobileHeavyCannon : BmSDK.BmGame.RVehicleWeapon, BmSDK.
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyCannonImpulse;
     /// <summary>
-    /// Function: ModifyCannonImpulse
+    /// Function: ModifyCannonImpulse<br/>
+    /// Native code at BatmanAK.exe+0x49B110 in the Steam build
     /// </summary>
     public unsafe virtual void ModifyCannonImpulse(BmSDK.Rotator InRotation, out System.Numerics.Vector3 ImpulseDirection, out System.Numerics.Vector3 ImpulseLocation)
     {

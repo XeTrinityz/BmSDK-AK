@@ -80,7 +80,8 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireImpulse;
     /// <summary>
-    /// Function: FireImpulse
+    /// Function: FireImpulse<br/>
+    /// Native code at BatmanAK.exe+0xB44F20 in the Steam build
     /// </summary>
     public unsafe virtual void FireImpulse(System.Numerics.Vector3 Origin)
     {

@@ -262,7 +262,8 @@ public partial class RCombatMove_CatwomanGroupTrip : BmSDK.BmGame.RCombatMove_Pl
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrip;
     /// <summary>
-    /// Function: UpdateTrip
+    /// Function: UpdateTrip<br/>
+    /// Native code at BatmanAK.exe+0x4D3260 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateTrip(float DeltaTime)
     {

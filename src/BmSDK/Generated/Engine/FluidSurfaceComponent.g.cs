@@ -80,7 +80,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSimulationPosition;
     /// <summary>
-    /// Function: SetSimulationPosition
+    /// Function: SetSimulationPosition<br/>
+    /// Native code at BatmanAK.exe+0xB2D560 in the Steam build
     /// </summary>
     public unsafe virtual void SetSimulationPosition(System.Numerics.Vector3 WorldPos)
     {
@@ -102,7 +103,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetailPosition;
     /// <summary>
-    /// Function: SetDetailPosition
+    /// Function: SetDetailPosition<br/>
+    /// Native code at BatmanAK.exe+0xB2D4D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDetailPosition(System.Numerics.Vector3 WorldPos)
     {
@@ -124,7 +126,8 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyForce;
     /// <summary>
-    /// Function: ApplyForce
+    /// Function: ApplyForce<br/>
+    /// Native code at BatmanAK.exe+0xB59AF0 in the Steam build
     /// </summary>
     public unsafe virtual void ApplyForce(System.Numerics.Vector3 WorldPos, float Strength, float Radius, bool bImpulse = default)
     {

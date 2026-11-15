@@ -80,7 +80,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAlphaModifier;
     /// <summary>
-    /// Function: SetAlphaModifier
+    /// Function: SetAlphaModifier<br/>
+    /// Native code at BatmanAK.exe+0x5144C0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAlphaModifier(float newAlphaMod)
     {
@@ -102,7 +103,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetConeAngleAndRadius;
     /// <summary>
-    /// Function: SetConeAngleAndRadius
+    /// Function: SetConeAngleAndRadius<br/>
+    /// Native code at BatmanAK.exe+0x503C20 in the Steam build
     /// </summary>
     public unsafe virtual bool SetConeAngleAndRadius(float innerAngle, float outerAngle, float Radius, float shaftBrightnessModifier)
     {
@@ -127,7 +129,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightMode;
     /// <summary>
-    /// Function: SetLightMode
+    /// Function: SetLightMode<br/>
+    /// Native code at BatmanAK.exe+0x48BFD0 in the Steam build
     /// </summary>
     public unsafe virtual bool SetLightMode(BmSDK.BmGame.RSentryGunLightsBase.eLightMode NewMode)
     {
@@ -149,7 +152,8 @@ public partial class RSentryGunLightsBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetColour;
     /// <summary>
-    /// Function: GetColour
+    /// Function: GetColour<br/>
+    /// Native code at BatmanAK.exe+0x48BF70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FColor GetColour()
     {

@@ -255,7 +255,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToGameMaps;
     /// <summary>
-    /// Function: SwitchToGameMaps
+    /// Function: SwitchToGameMaps<br/>
+    /// Native code at BatmanAK.exe+0x4992F0 in the Steam build
     /// </summary>
     public unsafe virtual void SwitchToGameMaps()
     {
@@ -276,7 +277,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToChallengeMaps;
     /// <summary>
-    /// Function: SwitchToChallengeMaps
+    /// Function: SwitchToChallengeMaps<br/>
+    /// Native code at BatmanAK.exe+0x4948D0 in the Steam build
     /// </summary>
     public unsafe virtual void SwitchToChallengeMaps()
     {
@@ -297,7 +299,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnpreloadChallengeMaps;
     /// <summary>
-    /// Function: UnpreloadChallengeMaps
+    /// Function: UnpreloadChallengeMaps<br/>
+    /// Native code at BatmanAK.exe+0x46F040 in the Steam build
     /// </summary>
     public unsafe virtual void UnpreloadChallengeMaps()
     {
@@ -318,7 +321,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreloadChallengeMaps;
     /// <summary>
-    /// Function: PreloadChallengeMaps
+    /// Function: PreloadChallengeMaps<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void PreloadChallengeMaps()
     {
@@ -339,7 +343,8 @@ public partial class RChallengeModeStartPointBase : BmSDK.BmGame.RPlayerStartInL
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPreloading;
     /// <summary>
-    /// Function: IsPreloading
+    /// Function: IsPreloading<br/>
+    /// Native code at BatmanAK.exe+0x46BB10 in the Steam build
     /// </summary>
     public unsafe virtual bool IsPreloading()
     {

@@ -75,7 +75,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInMapOrTransientPackage;
     /// <summary>
-    /// Function: IsInMapOrTransientPackage
+    /// Function: IsInMapOrTransientPackage<br/>
+    /// Native code at BatmanAK.exe+0x48A450 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInMapOrTransientPackage()
     {
@@ -96,7 +97,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameterValues;
     /// <summary>
-    /// Function: ClearParameterValues
+    /// Function: ClearParameterValues<br/>
+    /// Native code at BatmanAK.exe+0xB48EB0 in the Steam build
     /// </summary>
     public unsafe virtual void ClearParameterValues()
     {
@@ -117,7 +119,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFontParameterValue;
     /// <summary>
-    /// Function: SetFontParameterValue
+    /// Function: SetFontParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95DE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFontParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Font FontValue, int FontPage)
     {
@@ -141,7 +144,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTextureParameterValue;
     /// <summary>
-    /// Function: GetTextureParameterValue
+    /// Function: GetTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB94640 in the Steam build
     /// </summary>
     public unsafe override bool GetTextureParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Texture Value)
     {
@@ -166,7 +170,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureParameterValue;
     /// <summary>
-    /// Function: SetTextureParameterValue
+    /// Function: SetTextureParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95BF0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTextureParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Texture Value)
     {
@@ -189,7 +194,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarCurveParameterValue;
     /// <summary>
-    /// Function: SetScalarCurveParameterValue
+    /// Function: SetScalarCurveParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xBBB7F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScalarCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveFloat Value)
     {
@@ -212,7 +218,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarParameterValue;
     /// <summary>
-    /// Function: SetScalarParameterValue
+    /// Function: SetScalarParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB959F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetScalarParameterValue(BmSDK.FName ParameterName, float Value)
     {
@@ -235,7 +242,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameterValue;
     /// <summary>
-    /// Function: SetVectorParameterValue
+    /// Function: SetVectorParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB95880 in the Steam build
     /// </summary>
     public unsafe virtual void SetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
@@ -260,7 +268,8 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParent;
     /// <summary>
-    /// Function: SetParent
+    /// Function: SetParent<br/>
+    /// Native code at BatmanAK.exe+0xB95750 in the Steam build
     /// </summary>
     public unsafe virtual void SetParent(BmSDK.Engine.MaterialInterface NewParent)
     {

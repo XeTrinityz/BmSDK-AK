@@ -256,7 +256,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraAnimName;
     /// <summary>
-    /// Function: GetCameraAnimName
+    /// Function: GetCameraAnimName<br/>
+    /// Native code at BatmanAK.exe+0x4DF7B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetCameraAnimName(BmSDK.FName CharacterAnim, out BmSDK.FName CameraAnim, BmSDK.Engine.AnimSet CustomAnimSet, int Index)
     {
@@ -283,7 +284,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelConversationLoading;
     /// <summary>
-    /// Function: CancelConversationLoading
+    /// Function: CancelConversationLoading<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void CancelConversationLoading()
     {
@@ -304,7 +306,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitConversation;
     /// <summary>
-    /// Function: InitConversation
+    /// Function: InitConversation<br/>
+    /// Native code at BatmanAK.exe+0x46ED40 in the Steam build
     /// </summary>
     public unsafe virtual bool InitConversation()
     {
@@ -325,7 +328,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadConversation;
     /// <summary>
-    /// Function: LoadConversation
+    /// Function: LoadConversation<br/>
+    /// Native code at BatmanAK.exe+0x53E9D0 in the Steam build
     /// </summary>
     public unsafe virtual bool LoadConversation(BmSDK.FStringArg StringPackageName)
     {
@@ -606,7 +610,8 @@ public partial class RSpecialMoveInstance_Interrogation : BmSDK.BmGame.RSpecialM
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInferredReferenceLocation;
     /// <summary>
-    /// Function: GetInferredReferenceLocation
+    /// Function: GetInferredReferenceLocation<br/>
+    /// Native code at BatmanAK.exe+0x47EF30 in the Steam build
     /// </summary>
     public unsafe virtual bool GetInferredReferenceLocation(out System.Numerics.Vector3 RefLocation)
     {

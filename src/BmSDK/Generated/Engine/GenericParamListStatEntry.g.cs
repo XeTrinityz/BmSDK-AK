@@ -80,7 +80,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CommitToDisk;
     /// <summary>
-    /// Function: CommitToDisk
+    /// Function: CommitToDisk<br/>
+    /// Native code at BatmanAK.exe+0xB3F190 in the Steam build
     /// </summary>
     public unsafe virtual void CommitToDisk()
     {
@@ -101,7 +102,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetString;
     /// <summary>
-    /// Function: GetString
+    /// Function: GetString<br/>
+    /// Native code at BatmanAK.exe+0xBA9730 in the Steam build
     /// </summary>
     public unsafe virtual bool GetString(BmSDK.FName ParamName, out BmSDK.FString out_string)
     {
@@ -124,7 +126,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVector;
     /// <summary>
-    /// Function: GetVector
+    /// Function: GetVector<br/>
+    /// Native code at BatmanAK.exe+0xB7E8E0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetVector(BmSDK.FName ParamName, out System.Numerics.Vector3 out_vector)
     {
@@ -149,7 +152,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInt;
     /// <summary>
-    /// Function: GetInt
+    /// Function: GetInt<br/>
+    /// Native code at BatmanAK.exe+0xB708B0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetInt(BmSDK.FName ParamName, out int out_int)
     {
@@ -174,7 +178,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloat;
     /// <summary>
-    /// Function: GetFloat
+    /// Function: GetFloat<br/>
+    /// Native code at BatmanAK.exe+0xB7E760 in the Steam build
     /// </summary>
     public unsafe virtual bool GetFloat(BmSDK.FName ParamName, out float out_Float)
     {
@@ -199,7 +204,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddString;
     /// <summary>
-    /// Function: AddString
+    /// Function: AddString<br/>
+    /// Native code at BatmanAK.exe+0xBA9540 in the Steam build
     /// </summary>
     public unsafe virtual void AddString(BmSDK.FName ParamName, BmSDK.FStringArg Value)
     {
@@ -223,7 +229,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVector;
     /// <summary>
-    /// Function: AddVector
+    /// Function: AddVector<br/>
+    /// Native code at BatmanAK.exe+0xB7E5F0 in the Steam build
     /// </summary>
     public unsafe virtual void AddVector(BmSDK.FName ParamName, System.Numerics.Vector3 Value)
     {
@@ -246,7 +253,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddInt;
     /// <summary>
-    /// Function: AddInt
+    /// Function: AddInt<br/>
+    /// Native code at BatmanAK.exe+0xB7E410 in the Steam build
     /// </summary>
     public unsafe virtual void AddInt(BmSDK.FName ParamName, int Value)
     {
@@ -269,7 +277,8 @@ public partial class GenericParamListStatEntry : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFloat;
     /// <summary>
-    /// Function: AddFloat
+    /// Function: AddFloat<br/>
+    /// Native code at BatmanAK.exe+0xB7E210 in the Steam build
     /// </summary>
     public unsafe virtual void AddFloat(BmSDK.FName ParamName, float Value)
     {

@@ -616,7 +616,8 @@ public partial class RPawnVillainGunBase : BmSDK.BmGame.RPawnVillain, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FireRockAssert;
     /// <summary>
-    /// Function: FireRockAssert
+    /// Function: FireRockAssert<br/>
+    /// Native code at BatmanAK.exe+0x53B810 in the Steam build
     /// </summary>
     public unsafe virtual void FireRockAssert(BmSDK.FStringArg AssertMsg)
     {

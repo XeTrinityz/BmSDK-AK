@@ -143,7 +143,8 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDof;
     /// <summary>
-    /// Function: SetDof
+    /// Function: SetDof<br/>
+    /// Native code at BatmanAK.exe+0x5742F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetDof(out BmSDK.Engine.PostProcessVolume.FPostProcessSettings PP)
     {

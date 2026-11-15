@@ -198,7 +198,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToGrapplePoint;
     /// <summary>
-    /// Function: LinkToGrapplePoint
+    /// Function: LinkToGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x4E6D70 in the Steam build
     /// </summary>
     public unsafe virtual bool LinkToGrapplePoint(BmSDK.Engine.Actor LinkActor, bool LinkOrUnlink)
     {
@@ -284,7 +285,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46C5E0 in the Steam build
     /// </summary>
     public unsafe override void RegisterObstacle()
     {
@@ -381,7 +383,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
-    /// Function: GetAIPointOfInterestExtent
+    /// Function: GetAIPointOfInterestExtent<br/>
+    /// Native code at BatmanAK.exe+0x46A5C0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
@@ -605,7 +608,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDamagedForTheFirstTimeInCurrentStage;
     /// <summary>
-    /// Function: OnDamagedForTheFirstTimeInCurrentStage
+    /// Function: OnDamagedForTheFirstTimeInCurrentStage<br/>
+    /// Native code at BatmanAK.exe+0x4E6340 in the Steam build
     /// </summary>
     public unsafe override void OnDamagedForTheFirstTimeInCurrentStage(System.Numerics.Vector3 DamageDirection, System.Numerics.Vector3 DamageCauserPointVelocity, BmSDK.Engine.Actor DamageCauser)
     {
@@ -629,7 +633,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateHighlighted;
     /// <summary>
-    /// Function: SetInvestigateHighlighted
+    /// Function: SetInvestigateHighlighted<br/>
+    /// Native code at BatmanAK.exe+0x4E6B80 in the Steam build
     /// </summary>
     public unsafe override void SetInvestigateHighlighted(BmSDK.Engine.MaterialInstanceConstant highMat, bool On)
     {
@@ -652,7 +657,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace;
     /// <summary>
-    /// Function: GetBoundingBoxForNavMeshObstacleInWorldSpace
+    /// Function: GetBoundingBoxForNavMeshObstacleInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x480BC0 in the Steam build
     /// </summary>
     public unsafe override void GetBoundingBoxForNavMeshObstacleInWorldSpace(out BmSDK.GameObject.FMatrix OutObstacleBoxWorldTransform, out System.Numerics.Vector3 OutObstacleBoxExtents)
     {
@@ -677,7 +683,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseInvestigationMesh;
     /// <summary>
-    /// Function: InitialiseInvestigationMesh
+    /// Function: InitialiseInvestigationMesh<br/>
+    /// Native code at BatmanAK.exe+0x46C110 in the Steam build
     /// </summary>
     public unsafe virtual void InitialiseInvestigationMesh()
     {
@@ -698,7 +705,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockOverBasedPawns;
     /// <summary>
-    /// Function: KnockOverBasedPawns
+    /// Function: KnockOverBasedPawns<br/>
+    /// Native code at BatmanAK.exe+0x481060 in the Steam build
     /// </summary>
     public unsafe virtual int KnockOverBasedPawns()
     {
@@ -719,7 +727,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearestPointOnEdge;
     /// <summary>
-    /// Function: FindNearestPointOnEdge
+    /// Function: FindNearestPointOnEdge<br/>
+    /// Native code at BatmanAK.exe+0x480FB0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindNearestPointOnEdge(System.Numerics.Vector3 TestPoint)
     {
@@ -741,7 +750,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHorizontal;
     /// <summary>
-    /// Function: IsHorizontal
+    /// Function: IsHorizontal<br/>
+    /// Native code at BatmanAK.exe+0x46C0C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHorizontal()
     {
@@ -762,7 +772,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPartsInRadiusConstantVel;
     /// <summary>
-    /// Function: BreakOffPartsInRadiusConstantVel
+    /// Function: BreakOffPartsInRadiusConstantVel<br/>
+    /// Native code at BatmanAK.exe+0x4E67F0 in the Steam build
     /// </summary>
     public unsafe virtual void BreakOffPartsInRadiusConstantVel(System.Numerics.Vector3 Origin, float Radius, System.Numerics.Vector3 LinearVel, System.Numerics.Vector3 AngularVel, bool bWantPhysChunksAndParticles, BmSDK.Engine.Actor BreakInstigator, bool bAllowDamagedEventFiring = default)
     {
@@ -790,7 +801,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallSideForPoint;
     /// <summary>
-    /// Function: GetWallSideForPoint
+    /// Function: GetWallSideForPoint<br/>
+    /// Native code at BatmanAK.exe+0x480F10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDestructibleProp_FractureWall.EDestructibleWallSide GetWallSideForPoint(System.Numerics.Vector3 TestPoint)
     {
@@ -812,7 +824,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x4E58C0 in the Steam build
     /// </summary>
     public unsafe override bool RegisterWithNavMesh(bool bRegister)
     {
@@ -834,7 +847,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPathObstacleActive;
     /// <summary>
-    /// Function: SetPathObstacleActive
+    /// Function: SetPathObstacleActive<br/>
+    /// Native code at BatmanAK.exe+0x4E66D0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPathObstacleActive(bool bNewActive)
     {
@@ -856,7 +870,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSafeLocationOnWallForTakedown;
     /// <summary>
-    /// Function: GetSafeLocationOnWallForTakedown
+    /// Function: GetSafeLocationOnWallForTakedown<br/>
+    /// Native code at BatmanAK.exe+0x4E64D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSafeLocationOnWallForTakedown(BmSDK.Engine.Pawn Villain, BmSDK.Engine.Pawn Batman)
     {
@@ -879,7 +894,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallNormalForSide;
     /// <summary>
-    /// Function: GetWallNormalForSide
+    /// Function: GetWallNormalForSide<br/>
+    /// Native code at BatmanAK.exe+0x480E70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallNormalForSide(BmSDK.BmGame.RDestructibleProp_FractureWall.EDestructibleWallSide FractureWallSide)
     {
@@ -901,7 +917,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentreInLocalSpace;
     /// <summary>
-    /// Function: GetWallCentreInLocalSpace
+    /// Function: GetWallCentreInLocalSpace<br/>
+    /// Native code at BatmanAK.exe+0x480E10 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentreInLocalSpace()
     {
@@ -922,7 +939,8 @@ public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructible
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentreInWorldSpace;
     /// <summary>
-    /// Function: GetWallCentreInWorldSpace
+    /// Function: GetWallCentreInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x480DB0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentreInWorldSpace()
     {

@@ -80,7 +80,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlink;
     /// <summary>
-    /// Function: HandleUnlink
+    /// Function: HandleUnlink<br/>
+    /// Native code at BatmanAK.exe+0xFDDB80 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleUnlink(BmSDK.Engine.Actor Target)
     {
@@ -102,7 +103,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleLink;
     /// <summary>
-    /// Function: HandleLink
+    /// Function: HandleLink<br/>
+    /// Native code at BatmanAK.exe+0x5122C0 in the Steam build
     /// </summary>
     public unsafe virtual bool HandleLink(BmSDK.Engine.Actor Target)
     {
@@ -124,7 +126,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshTouching;
     /// <summary>
-    /// Function: RefreshTouching
+    /// Function: RefreshTouching<br/>
+    /// Native code at BatmanAK.exe+0x48F3B0 in the Steam build
     /// </summary>
     public unsafe virtual void RefreshTouching()
     {
@@ -145,7 +148,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleTouchInOut;
     /// <summary>
-    /// Function: HandleTouchInOut
+    /// Function: HandleTouchInOut<br/>
+    /// Native code at BatmanAK.exe+0xFDD990 in the Steam build
     /// </summary>
     public unsafe virtual void HandleTouchInOut(BmSDK.Engine.Actor Other, bool otherIsTouching)
     {
@@ -168,7 +172,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
@@ -196,7 +201,8 @@ public partial class AkAudioVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
-    /// Function: UnlinkToActor
+    /// Function: UnlinkToActor<br/>
+    /// Native code at BatmanAK.exe+0xFDD850 in the Steam build
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {

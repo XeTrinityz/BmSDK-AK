@@ -80,7 +80,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOrientation;
     /// <summary>
-    /// Function: GetOrientation
+    /// Function: GetOrientation<br/>
+    /// Native code at BatmanAK.exe+0xB45180 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetOrientation()
     {
@@ -101,7 +102,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOrientation;
     /// <summary>
-    /// Function: SetOrientation
+    /// Function: SetOrientation<br/>
+    /// Native code at BatmanAK.exe+0xB450E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetOrientation(out BmSDK.GameObject.FQuat NewOrientation)
     {
@@ -125,7 +127,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSmoothLocation;
     /// <summary>
-    /// Function: UpdateSmoothLocation
+    /// Function: UpdateSmoothLocation<br/>
+    /// Native code at BatmanAK.exe+0xB45040 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateSmoothLocation(out System.Numerics.Vector3 NewLocation)
     {
@@ -149,7 +152,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSmoothLocation;
     /// <summary>
-    /// Function: SetSmoothLocation
+    /// Function: SetSmoothLocation<br/>
+    /// Native code at BatmanAK.exe+0xB8E540 in the Steam build
     /// </summary>
     public unsafe virtual void SetSmoothLocation(System.Numerics.Vector3 NewLocation, float MoveTime)
     {
@@ -172,7 +176,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocation;
     /// <summary>
-    /// Function: SetLocation
+    /// Function: SetLocation<br/>
+    /// Native code at BatmanAK.exe+0xB44FB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLocation(System.Numerics.Vector3 NewLocation)
     {
@@ -194,7 +199,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseComponent;
     /// <summary>
-    /// Function: ReleaseComponent
+    /// Function: ReleaseComponent<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void ReleaseComponent()
     {
@@ -215,7 +221,8 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GrabComponent;
     /// <summary>
-    /// Function: GrabComponent
+    /// Function: GrabComponent<br/>
+    /// Native code at BatmanAK.exe+0xB8E240 in the Steam build
     /// </summary>
     public unsafe virtual void GrabComponent(BmSDK.Engine.PrimitiveComponent Component, BmSDK.FName InBoneName, System.Numerics.Vector3 GrabLocation, bool bConstrainRotation)
     {

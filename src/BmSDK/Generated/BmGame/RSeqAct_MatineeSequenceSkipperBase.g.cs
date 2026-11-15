@@ -75,7 +75,8 @@ public partial class RSeqAct_MatineeSequenceSkipperBase : BmSDK.Engine.SequenceA
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForwardMatineeToPosition;
     /// <summary>
-    /// Function: ForwardMatineeToPosition
+    /// Function: ForwardMatineeToPosition<br/>
+    /// Native code at BatmanAK.exe+0x4B0530 in the Steam build
     /// </summary>
     public unsafe virtual void ForwardMatineeToPosition(BmSDK.Engine.SeqAct_Interp Matinee, float NewPosition)
     {

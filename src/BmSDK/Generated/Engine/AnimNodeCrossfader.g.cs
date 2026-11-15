@@ -80,7 +80,8 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveChild;
     /// <summary>
-    /// Function: GetActiveChild
+    /// Function: GetActiveChild<br/>
+    /// Native code at BatmanAK.exe+0xB2B700 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetActiveChild()
     {
@@ -101,7 +102,8 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimName;
     /// <summary>
-    /// Function: GetAnimName
+    /// Function: GetAnimName<br/>
+    /// Native code at BatmanAK.exe+0xB2B6A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetAnimName()
     {
@@ -122,7 +124,8 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendToLoopingAnim;
     /// <summary>
-    /// Function: BlendToLoopingAnim
+    /// Function: BlendToLoopingAnim<br/>
+    /// Native code at BatmanAK.exe+0xC21970 in the Steam build
     /// </summary>
     public unsafe virtual void BlendToLoopingAnim(BmSDK.FName AnimSeqName, float BlendInTime = default, float Rate = default)
     {
@@ -146,7 +149,8 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayOneShotAnim;
     /// <summary>
-    /// Function: PlayOneShotAnim
+    /// Function: PlayOneShotAnim<br/>
+    /// Native code at BatmanAK.exe+0xC21660 in the Steam build
     /// </summary>
     public unsafe virtual void PlayOneShotAnim(BmSDK.FName AnimSeqName, float BlendInTime = default, float BlendOutTime = default, bool bDontBlendOut = default, float Rate = default)
     {

@@ -80,7 +80,8 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyCamera;
     /// <summary>
-    /// Function: ModifyCamera
+    /// Function: ModifyCamera<br/>
+    /// Native code at BatmanAK.exe+0xB85CA0 in the Steam build
     /// </summary>
     public unsafe override bool ModifyCamera(BmSDK.Engine.Camera Camera, float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
@@ -106,7 +107,8 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraShake;
     /// <summary>
-    /// Function: UpdateCameraShake
+    /// Function: UpdateCameraShake<br/>
+    /// Native code at BatmanAK.exe+0xB860F0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCameraShake(float DeltaTime, out BmSDK.Engine.CameraModifier_CameraShake.FCameraShakeInstance Shake, out BmSDK.GameObject.FTPOV OutPOV)
     {

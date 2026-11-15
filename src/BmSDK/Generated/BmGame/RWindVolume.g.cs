@@ -95,7 +95,8 @@ public partial class RWindVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateEditorComponents;
     /// <summary>
-    /// Function: UpdateEditorComponents
+    /// Function: UpdateEditorComponents<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateEditorComponents()
     {

@@ -80,7 +80,8 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB50E10 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bInEnabled)
     {
@@ -116,7 +117,8 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSeqObjectsByName;
     /// <summary>
-    /// Function: FindSeqObjectsByName
+    /// Function: FindSeqObjectsByName<br/>
+    /// Native code at BatmanAK.exe+0x9B3250 in the Steam build
     /// </summary>
     public unsafe virtual void FindSeqObjectsByName(BmSDK.FStringArg SeqObjName, bool bCheckComment, out BmSDK.TArray<BmSDK.Engine.SequenceObject> OutputObjects, bool bRecursive = default, bool bUseFullLevelName = default)
     {
@@ -143,7 +145,8 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSeqObjectsByClass;
     /// <summary>
-    /// Function: FindSeqObjectsByClass
+    /// Function: FindSeqObjectsByClass<br/>
+    /// Native code at BatmanAK.exe+0x9B3010 in the Steam build
     /// </summary>
     public unsafe virtual void FindSeqObjectsByClass(BmSDK.Class DesiredClass, bool bRecursive, out BmSDK.TArray<BmSDK.Engine.SequenceObject> OutputObjects)
     {

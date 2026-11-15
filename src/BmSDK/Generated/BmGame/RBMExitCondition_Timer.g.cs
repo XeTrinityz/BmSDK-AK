@@ -122,7 +122,8 @@ public partial class RBMExitCondition_Timer : BmSDK.BmGame.RBMExitCondition, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSyncExitConditions;
     /// <summary>
-    /// Function: ActivateSyncExitConditions
+    /// Function: ActivateSyncExitConditions<br/>
+    /// Native code at BatmanAK.exe+0x48A240 in the Steam build
     /// </summary>
     public unsafe override void ActivateSyncExitConditions()
     {
@@ -143,7 +144,8 @@ public partial class RBMExitCondition_Timer : BmSDK.BmGame.RBMExitCondition, BmS
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAllSyncedTimers;
     /// <summary>
-    /// Function: StartAllSyncedTimers
+    /// Function: StartAllSyncedTimers<br/>
+    /// Native code at BatmanAK.exe+0x49A4D0 in the Steam build
     /// </summary>
     public unsafe virtual void StartAllSyncedTimers()
     {

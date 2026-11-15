@@ -80,7 +80,8 @@ public partial class AnimNodeSequenceBlendByAim : BmSDK.Engine.AnimNodeSequenceB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAnimsUpToDate;
     /// <summary>
-    /// Function: CheckAnimsUpToDate
+    /// Function: CheckAnimsUpToDate<br/>
+    /// Native code at BatmanAK.exe+0x46F590 in the Steam build
     /// </summary>
     public unsafe virtual void CheckAnimsUpToDate()
     {

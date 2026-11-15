@@ -80,7 +80,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestCentrePoint;
     /// <summary>
-    /// Function: FindBestCentrePoint
+    /// Function: FindBestCentrePoint<br/>
+    /// Native code at BatmanAK.exe+0x495A50 in the Steam build
     /// </summary>
     public unsafe virtual void FindBestCentrePoint(out System.Numerics.Vector3 StartPoint, out System.Numerics.Vector3 EndPoint)
     {
@@ -107,7 +108,8 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupPosition;
     /// <summary>
-    /// Function: SetupPosition
+    /// Function: SetupPosition<br/>
+    /// Native code at BatmanAK.exe+0x515520 in the Steam build
     /// </summary>
     public unsafe virtual void SetupPosition(float DeltaTime)
     {

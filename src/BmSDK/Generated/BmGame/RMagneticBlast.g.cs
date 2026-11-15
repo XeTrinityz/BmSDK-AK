@@ -451,7 +451,8 @@ public partial class RMagneticBlast : BmSDK.BmGame.RInventoryGadget, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceTargets;
     /// <summary>
-    /// Function: TraceTargets
+    /// Function: TraceTargets<br/>
+    /// Native code at BatmanAK.exe+0x492B70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor TraceTargets(out System.Numerics.Vector3 HitLocation, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart)
     {

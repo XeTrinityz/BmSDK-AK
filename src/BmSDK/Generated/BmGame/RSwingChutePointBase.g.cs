@@ -168,7 +168,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrapplePosition;
     /// <summary>
-    /// Function: GetGrapplePosition
+    /// Function: GetGrapplePosition<br/>
+    /// Native code at BatmanAK.exe+0x4815D0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetGrapplePosition(System.Numerics.Vector3 CheckLocation, System.Numerics.Vector3 CheckDirection)
     {
@@ -191,7 +192,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCatwomanPerchPosition;
     /// <summary>
-    /// Function: GetCatwomanPerchPosition
+    /// Function: GetCatwomanPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x48DDF0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetCatwomanPerchPosition()
     {
@@ -212,7 +214,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatmanPerchPosition;
     /// <summary>
-    /// Function: GetBatmanPerchPosition
+    /// Function: GetBatmanPerchPosition<br/>
+    /// Native code at BatmanAK.exe+0x4816C0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetBatmanPerchPosition()
     {
@@ -233,7 +236,8 @@ public partial class RSwingChutePointBase : BmSDK.BmGame.RHidePoint, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinksUpdated;
     /// <summary>
-    /// Function: LinksUpdated
+    /// Function: LinksUpdated<br/>
+    /// Native code at BatmanAK.exe+0x48AAA0 in the Steam build
     /// </summary>
     public unsafe virtual void LinksUpdated()
     {

@@ -1109,7 +1109,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioUpdateLight;
     /// <summary>
-    /// Function: AudioUpdateLight
+    /// Function: AudioUpdateLight<br/>
+    /// Native code at BatmanAK.exe+0x4F0680 in the Steam build
     /// </summary>
     public unsafe virtual void AudioUpdateLight(BmSDK.Engine.PointLightComponent Light, float dt)
     {
@@ -1132,7 +1133,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckBMBLRange;
     /// <summary>
-    /// Function: CheckBMBLRange
+    /// Function: CheckBMBLRange<br/>
+    /// Native code at BatmanAK.exe+0x48AA60 in the Steam build
     /// </summary>
     public unsafe virtual void CheckBMBLRange()
     {
@@ -1153,7 +1155,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerBMBLAttack;
     /// <summary>
-    /// Function: TryTriggerBMBLAttack
+    /// Function: TryTriggerBMBLAttack<br/>
+    /// Native code at BatmanAK.exe+0x4881B0 in the Steam build
     /// </summary>
     public unsafe virtual void TryTriggerBMBLAttack()
     {
@@ -1174,7 +1177,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHostileRange;
     /// <summary>
-    /// Function: GetHostileRange
+    /// Function: GetHostileRange<br/>
+    /// Native code at BatmanAK.exe+0x493940 in the Steam build
     /// </summary>
     public unsafe virtual float GetHostileRange()
     {
@@ -1195,7 +1199,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFriendlyRange;
     /// <summary>
-    /// Function: GetFriendlyRange
+    /// Function: GetFriendlyRange<br/>
+    /// Native code at BatmanAK.exe+0xB4AF40 in the Steam build
     /// </summary>
     public unsafe virtual float GetFriendlyRange()
     {
@@ -1216,7 +1221,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeInPoweredDownState;
     /// <summary>
-    /// Function: ShouldBeInPoweredDownState
+    /// Function: ShouldBeInPoweredDownState<br/>
+    /// Native code at BatmanAK.exe+0x484190 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldBeInPoweredDownState()
     {
@@ -1237,7 +1243,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InStasis;
     /// <summary>
-    /// Function: InStasis
+    /// Function: InStasis<br/>
+    /// Native code at BatmanAK.exe+0x48B720 in the Steam build
     /// </summary>
     public unsafe virtual bool InStasis()
     {
@@ -1258,7 +1265,8 @@ public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_Native;
     /// <summary>
-    /// Function: Tick_Native
+    /// Function: Tick_Native<br/>
+    /// Native code at BatmanAK.exe+0x4F15A0 in the Steam build
     /// </summary>
     public unsafe virtual void Tick_Native(float DeltaTime)
     {

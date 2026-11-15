@@ -94,7 +94,8 @@ public partial class RBMBehaviour_AttachToEvents : BmSDK.BmGame.RBMBehaviour, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToEvents;
     /// <summary>
-    /// Function: AttachToEvents
+    /// Function: AttachToEvents<br/>
+    /// Native code at BatmanAK.exe+0x489890 in the Steam build
     /// </summary>
     public unsafe virtual void AttachToEvents()
     {

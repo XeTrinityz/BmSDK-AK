@@ -271,7 +271,8 @@ public partial class RCheckPointMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDis
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTankInRange;
     /// <summary>
-    /// Function: GetTankInRange
+    /// Function: GetTankInRange<br/>
+    /// Native code at BatmanAK.exe+0x4E5780 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleTank GetTankInRange(float Range)
     {
@@ -293,7 +294,8 @@ public partial class RCheckPointMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDis
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOtherVehicleInRange;
     /// <summary>
-    /// Function: GetOtherVehicleInRange
+    /// Function: GetOtherVehicleInRange<br/>
+    /// Native code at BatmanAK.exe+0x4E5640 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicle GetOtherVehicleInRange(float Range)
     {

@@ -108,7 +108,8 @@ public partial class RSeqAct_ActivateElectrifiedFloorPanels : BmSDK.Engine.SeqAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeUpdate;
     /// <summary>
-    /// Function: NativeUpdate
+    /// Function: NativeUpdate<br/>
+    /// Native code at BatmanAK.exe+0x4AFE20 in the Steam build
     /// </summary>
     public unsafe virtual bool NativeUpdate(float DeltaTime)
     {
@@ -144,7 +145,8 @@ public partial class RSeqAct_ActivateElectrifiedFloorPanels : BmSDK.Engine.SeqAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestCurrent;
     /// <summary>
-    /// Function: GetClosestCurrent
+    /// Function: GetClosestCurrent<br/>
+    /// Native code at BatmanAK.exe+0x48A240 in the Steam build
     /// </summary>
     public unsafe virtual void GetClosestCurrent()
     {
@@ -165,7 +167,8 @@ public partial class RSeqAct_ActivateElectrifiedFloorPanels : BmSDK.Engine.SeqAc
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlateDistances;
     /// <summary>
-    /// Function: GetPlateDistances
+    /// Function: GetPlateDistances<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void GetPlateDistances()
     {

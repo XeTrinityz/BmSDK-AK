@@ -224,7 +224,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_IsSaving;
     /// <summary>
-    /// Function: XI_IsSaving
+    /// Function: XI_IsSaving<br/>
+    /// Native code at BatmanAK.exe+0x497EB0 in the Steam build
     /// </summary>
     public unsafe virtual int XI_IsSaving()
     {
@@ -769,7 +770,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAspectRatio;
     /// <summary>
-    /// Function: GetAspectRatio
+    /// Function: GetAspectRatio<br/>
+    /// Native code at BatmanAK.exe+0xB48F30 in the Steam build
     /// </summary>
     public unsafe virtual float GetAspectRatio()
     {
@@ -790,7 +792,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVideoCardName;
     /// <summary>
-    /// Function: GetVideoCardName
+    /// Function: GetVideoCardName<br/>
+    /// Native code at BatmanAK.exe+0x546B10 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetVideoCardName()
     {
@@ -811,7 +814,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalAvailableVRam;
     /// <summary>
-    /// Function: GetTotalAvailableVRam
+    /// Function: GetTotalAvailableVRam<br/>
+    /// Native code at BatmanAK.exe+0x497E60 in the Steam build
     /// </summary>
     public unsafe virtual float GetTotalAvailableVRam()
     {
@@ -832,7 +836,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentVRamUsage;
     /// <summary>
-    /// Function: GetCurrentVRamUsage
+    /// Function: GetCurrentVRamUsage<br/>
+    /// Native code at BatmanAK.exe+0x497E10 in the Steam build
     /// </summary>
     public unsafe virtual float GetCurrentVRamUsage()
     {
@@ -853,7 +858,8 @@ public partial class RGFxMovieFrontMost : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldFade;
     /// <summary>
-    /// Function: ShouldFade
+    /// Function: ShouldFade<br/>
+    /// Native code at BatmanAK.exe+0x48B720 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldFade()
     {

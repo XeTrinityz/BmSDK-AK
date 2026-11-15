@@ -131,7 +131,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeSeenByBatsForXray;
     /// <summary>
-    /// Function: CanBeSeenByBatsForXray
+    /// Function: CanBeSeenByBatsForXray<br/>
+    /// Native code at BatmanAK.exe+0x476EB0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanBeSeenByBatsForXray()
     {
@@ -152,7 +153,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldUpdateXRayVisibility;
     /// <summary>
-    /// Function: ShouldUpdateXRayVisibility
+    /// Function: ShouldUpdateXRayVisibility<br/>
+    /// Native code at BatmanAK.exe+0x476E60 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldUpdateXRayVisibility()
     {
@@ -173,7 +175,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXRayVisibility;
     /// <summary>
-    /// Function: UpdateXRayVisibility
+    /// Function: UpdateXRayVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4CD020 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateXRayVisibility(float DeltaTime)
     {
@@ -195,7 +198,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePropsVisibility;
     /// <summary>
-    /// Function: UpdatePropsVisibility
+    /// Function: UpdatePropsVisibility<br/>
+    /// Native code at BatmanAK.exe+0x4CCEF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdatePropsVisibility(float AlphaVal)
     {
@@ -232,7 +236,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshClothingMaterials;
     /// <summary>
-    /// Function: RefreshClothingMaterials
+    /// Function: RefreshClothingMaterials<br/>
+    /// Native code at BatmanAK.exe+0x476E20 in the Steam build
     /// </summary>
     public unsafe virtual void RefreshClothingMaterials()
     {
@@ -386,7 +391,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetXrayEnvironments;
     /// <summary>
-    /// Function: ResetXrayEnvironments
+    /// Function: ResetXrayEnvironments<br/>
+    /// Native code at BatmanAK.exe+0x476DE0 in the Steam build
     /// </summary>
     public unsafe virtual void ResetXrayEnvironments()
     {
@@ -555,7 +561,8 @@ public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXra
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayDebugPropertiesAsThoughts;
     /// <summary>
-    /// Function: GetDisplayDebugPropertiesAsThoughts
+    /// Function: GetDisplayDebugPropertiesAsThoughts<br/>
+    /// Native code at BatmanAK.exe+0x58FFD0 in the Steam build
     /// </summary>
     public unsafe virtual void GetDisplayDebugPropertiesAsThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {

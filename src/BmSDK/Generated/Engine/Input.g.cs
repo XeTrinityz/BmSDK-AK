@@ -80,7 +80,8 @@ public partial class Input : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThumbMouseButton2Pressed;
     /// <summary>
-    /// Function: IsThumbMouseButton2Pressed
+    /// Function: IsThumbMouseButton2Pressed<br/>
+    /// Native code at BatmanAK.exe+0xB363B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsThumbMouseButton2Pressed()
     {
@@ -101,7 +102,8 @@ public partial class Input : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThumbMouseButtonPressed;
     /// <summary>
-    /// Function: IsThumbMouseButtonPressed
+    /// Function: IsThumbMouseButtonPressed<br/>
+    /// Native code at BatmanAK.exe+0xB3E5C0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsThumbMouseButtonPressed()
     {
@@ -122,7 +124,8 @@ public partial class Input : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeftShiftPressed;
     /// <summary>
-    /// Function: IsLeftShiftPressed
+    /// Function: IsLeftShiftPressed<br/>
+    /// Native code at BatmanAK.exe+0x5E94A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLeftShiftPressed()
     {
@@ -143,7 +146,8 @@ public partial class Input : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeftCtrlPressed;
     /// <summary>
-    /// Function: IsLeftCtrlPressed
+    /// Function: IsLeftCtrlPressed<br/>
+    /// Native code at BatmanAK.exe+0x4983F0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLeftCtrlPressed()
     {
@@ -181,7 +185,8 @@ public partial class Input : BmSDK.Engine.Interaction, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetInput;
     /// <summary>
-    /// Function: ResetInput
+    /// Function: ResetInput<br/>
+    /// Native code at BatmanAK.exe+0xB2CC00 in the Steam build
     /// </summary>
     public unsafe virtual void ResetInput()
     {

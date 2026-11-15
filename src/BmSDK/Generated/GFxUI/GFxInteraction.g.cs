@@ -80,7 +80,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseAllMoviePlayers;
     /// <summary>
-    /// Function: CloseAllMoviePlayers
+    /// Function: CloseAllMoviePlayers<br/>
+    /// Native code at BatmanAK.exe+0x48D1F0 in the Steam build
     /// </summary>
     public unsafe virtual void CloseAllMoviePlayers()
     {
@@ -101,7 +102,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifySplitscreenLayoutChanged;
     /// <summary>
-    /// Function: NotifySplitscreenLayoutChanged
+    /// Function: NotifySplitscreenLayoutChanged<br/>
+    /// Native code at BatmanAK.exe+0x48D7B0 in the Steam build
     /// </summary>
     public unsafe virtual void NotifySplitscreenLayoutChanged()
     {
@@ -122,7 +124,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyPlayerRemoved;
     /// <summary>
-    /// Function: NotifyPlayerRemoved
+    /// Function: NotifyPlayerRemoved<br/>
+    /// Native code at BatmanAK.exe+0x5E7AE0 in the Steam build
     /// </summary>
     public unsafe override void NotifyPlayerRemoved(int PlayerIndex, BmSDK.Engine.LocalPlayer RemovedPlayer)
     {
@@ -145,7 +148,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyPlayerAdded;
     /// <summary>
-    /// Function: NotifyPlayerAdded
+    /// Function: NotifyPlayerAdded<br/>
+    /// Native code at BatmanAK.exe+0x5E78F0 in the Steam build
     /// </summary>
     public unsafe override void NotifyPlayerAdded(int PlayerIndex, BmSDK.Engine.LocalPlayer AddedPlayer)
     {
@@ -168,7 +172,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyGameSessionEnded;
     /// <summary>
-    /// Function: NotifyGameSessionEnded
+    /// Function: NotifyGameSessionEnded<br/>
+    /// Native code at BatmanAK.exe+0x483490 in the Steam build
     /// </summary>
     public unsafe override void NotifyGameSessionEnded()
     {
@@ -189,7 +194,8 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFocusMovie;
     /// <summary>
-    /// Function: GetFocusMovie
+    /// Function: GetFocusMovie<br/>
+    /// Native code at BatmanAK.exe+0x5E77B0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer GetFocusMovie(int ControllerId)
     {

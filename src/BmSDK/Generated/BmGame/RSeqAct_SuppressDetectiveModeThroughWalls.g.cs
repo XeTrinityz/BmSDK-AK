@@ -95,7 +95,8 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterWithNavMeshWorld;
     /// <summary>
-    /// Function: UnregisterWithNavMeshWorld
+    /// Function: UnregisterWithNavMeshWorld<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void UnregisterWithNavMeshWorld()
     {
@@ -116,7 +117,8 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMeshWorld;
     /// <summary>
-    /// Function: RegisterWithNavMeshWorld
+    /// Function: RegisterWithNavMeshWorld<br/>
+    /// Native code at BatmanAK.exe+0x47F640 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterWithNavMeshWorld()
     {

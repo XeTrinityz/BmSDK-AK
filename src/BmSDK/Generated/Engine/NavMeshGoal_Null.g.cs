@@ -94,7 +94,8 @@ public partial class NavMeshGoal_Null : BmSDK.Engine.NavMeshPathGoalEvaluator, B
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleNative;
     /// <summary>
-    /// Function: RecycleNative
+    /// Function: RecycleNative<br/>
+    /// Native code at BatmanAK.exe+0xB50530 in the Steam build
     /// </summary>
     public unsafe virtual void RecycleNative()
     {

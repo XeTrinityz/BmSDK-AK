@@ -80,7 +80,8 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeaderValue;
     /// <summary>
-    /// Function: GetHeaderValue
+    /// Function: GetHeaderValue<br/>
+    /// Native code at BatmanAK.exe+0xB9EED0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetHeaderValue(BmSDK.FStringArg HeaderName)
     {
@@ -103,7 +104,8 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeader;
     /// <summary>
-    /// Function: GetHeader
+    /// Function: GetHeader<br/>
+    /// Native code at BatmanAK.exe+0xB9ECD0 in the Steam build
     /// </summary>
     public unsafe virtual void GetHeader(int HeaderIndex, out BmSDK.FString Header, out BmSDK.FString Value)
     {
@@ -127,7 +129,8 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumHeaders;
     /// <summary>
-    /// Function: GetNumHeaders
+    /// Function: GetNumHeaders<br/>
+    /// Native code at BatmanAK.exe+0x48A670 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumHeaders()
     {

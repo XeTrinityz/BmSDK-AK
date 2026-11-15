@@ -80,7 +80,8 @@ public partial class RBarkCharacterDefInstance : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilenameFromBarkSetName;
     /// <summary>
-    /// Function: GetFilenameFromBarkSetName
+    /// Function: GetFilenameFromBarkSetName<br/>
+    /// Native code at BatmanAK.exe+0x53EF00 in the Steam build
     /// </summary>
     public unsafe virtual void GetFilenameFromBarkSetName(out BmSDK.BmGame.RBarkCharacterDefInstance.FBarkSetName ThisName, out BmSDK.FString OutString)
     {
@@ -103,7 +104,8 @@ public partial class RBarkCharacterDefInstance : BmSDK.GameObject, BmSDK.IGameOb
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDynamicSetList;
     /// <summary>
-    /// Function: UpdateDynamicSetList
+    /// Function: UpdateDynamicSetList<br/>
+    /// Native code at BatmanAK.exe+0x56BDB0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDynamicSetList(BmSDK.TArray<BmSDK.FString> SuffixList)
     {

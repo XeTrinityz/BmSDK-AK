@@ -75,7 +75,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetMusicRandom;
     /// <summary>
-    /// Function: ResetMusicRandom
+    /// Function: ResetMusicRandom<br/>
+    /// Native code at BatmanAK.exe+0xB348F0 in the Steam build
     /// </summary>
     public unsafe static void ResetMusicRandom()
     {
@@ -95,7 +96,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_EnsureWadsLoaded;
     /// <summary>
-    /// Function: EnsureWadsLoaded
+    /// Function: EnsureWadsLoaded<br/>
+    /// Native code at BatmanAK.exe+0xB348B0 in the Steam build
     /// </summary>
     public unsafe static void EnsureWadsLoaded()
     {
@@ -115,7 +117,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UseLocalisedWads;
     /// <summary>
-    /// Function: UseLocalisedWads
+    /// Function: UseLocalisedWads<br/>
+    /// Native code at BatmanAK.exe+0xB607D0 in the Steam build
     /// </summary>
     public unsafe static void UseLocalisedWads(bool useLocWads, bool ensureLoaded)
     {
@@ -137,7 +140,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UpdateWhoosh;
     /// <summary>
-    /// Function: UpdateWhoosh
+    /// Function: UpdateWhoosh<br/>
+    /// Native code at BatmanAK.exe+0xB606B0 in the Steam build
     /// </summary>
     public unsafe static void UpdateWhoosh(BmSDK.Engine.Actor A)
     {
@@ -158,7 +162,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_InstallChunk;
     /// <summary>
-    /// Function: InstallChunk
+    /// Function: InstallChunk<br/>
+    /// Native code at BatmanAK.exe+0xB604D0 in the Steam build
     /// </summary>
     public unsafe static void InstallChunk(int uChunkID, bool bCheckPrevious)
     {
@@ -180,7 +185,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_IsWwiseDebugEnabled;
     /// <summary>
-    /// Function: IsWwiseDebugEnabled
+    /// Function: IsWwiseDebugEnabled<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool IsWwiseDebugEnabled()
     {
@@ -200,7 +206,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_FullReset;
     /// <summary>
-    /// Function: FullReset
+    /// Function: FullReset<br/>
+    /// Native code at BatmanAK.exe+0xB34810 in the Steam build
     /// </summary>
     public unsafe static void FullReset(bool Restarting = default)
     {
@@ -221,7 +228,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetActiveListenerPosition;
     /// <summary>
-    /// Function: GetActiveListenerPosition
+    /// Function: GetActiveListenerPosition<br/>
+    /// Native code at BatmanAK.exe+0xB347B0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetActiveListenerPosition()
     {
@@ -241,7 +249,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StartAuxMultipointAudioEvents;
     /// <summary>
-    /// Function: StartAuxMultipointAudioEvents
+    /// Function: StartAuxMultipointAudioEvents<br/>
+    /// Native code at BatmanAK.exe+0xBB72D0 in the Steam build
     /// </summary>
     public unsafe static void StartAuxMultipointAudioEvents(BmSDK.TArray<BmSDK.Engine.AkEvent> AudioEvents, BmSDK.TArray<System.Numerics.Vector3> NodePositions, bool Positional, bool Environmental)
     {
@@ -265,7 +274,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ClearMultipointNetwork;
     /// <summary>
-    /// Function: ClearMultipointNetwork
+    /// Function: ClearMultipointNetwork<br/>
+    /// Native code at BatmanAK.exe+0xBA0BB0 in the Steam build
     /// </summary>
     public unsafe static void ClearMultipointNetwork(BmSDK.FStringArg NetworkName)
     {
@@ -287,7 +297,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MoveMultipointNetworkNode;
     /// <summary>
-    /// Function: MoveMultipointNetworkNode
+    /// Function: MoveMultipointNetworkNode<br/>
+    /// Native code at BatmanAK.exe+0xBA0980 in the Steam build
     /// </summary>
     public unsafe static void MoveMultipointNetworkNode(BmSDK.FStringArg NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
     {
@@ -311,7 +322,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveMultipointNetworkPosition;
     /// <summary>
-    /// Function: RemoveMultipointNetworkPosition
+    /// Function: RemoveMultipointNetworkPosition<br/>
+    /// Native code at BatmanAK.exe+0xBA0800 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointNetworkPosition(BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition)
     {
@@ -334,7 +346,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveMultipointNetworkNode;
     /// <summary>
-    /// Function: RemoveMultipointNetworkNode
+    /// Function: RemoveMultipointNetworkNode<br/>
+    /// Native code at BatmanAK.exe+0xBA06A0 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointNetworkNode(BmSDK.FStringArg NetworkName, out int NodeID)
     {
@@ -359,7 +372,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddMultipointNetwork;
     /// <summary>
-    /// Function: AddMultipointNetwork
+    /// Function: AddMultipointNetwork<br/>
+    /// Native code at BatmanAK.exe+0xBA0460 in the Steam build
     /// </summary>
     public unsafe static int AddMultipointNetwork(BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
     {
@@ -383,7 +397,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ClearMultipointAudioEvent;
     /// <summary>
-    /// Function: ClearMultipointAudioEvent
+    /// Function: ClearMultipointAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB603B0 in the Steam build
     /// </summary>
     public unsafe static void ClearMultipointAudioEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -404,7 +419,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_MoveMultipointAudioEventNode;
     /// <summary>
-    /// Function: MoveMultipointAudioEventNode
+    /// Function: MoveMultipointAudioEventNode<br/>
+    /// Native code at BatmanAK.exe+0xB60190 in the Steam build
     /// </summary>
     public unsafe static void MoveMultipointAudioEventNode(BmSDK.Engine.AkEvent AudioEvent, int NodeID, System.Numerics.Vector3 NodePosition)
     {
@@ -427,7 +443,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveMultipointAudioEventPosition;
     /// <summary>
-    /// Function: RemoveMultipointAudioEventPosition
+    /// Function: RemoveMultipointAudioEventPosition<br/>
+    /// Native code at BatmanAK.exe+0xB60020 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointAudioEventPosition(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 NodePosition)
     {
@@ -449,7 +466,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveMultipointAudioEventNode;
     /// <summary>
-    /// Function: RemoveMultipointAudioEventNode
+    /// Function: RemoveMultipointAudioEventNode<br/>
+    /// Native code at BatmanAK.exe+0xB5FEB0 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointAudioEventNode(BmSDK.Engine.AkEvent AudioEvent, out int NodeID)
     {
@@ -473,7 +491,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddMultipointAudioEvent;
     /// <summary>
-    /// Function: AddMultipointAudioEvent
+    /// Function: AddMultipointAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB5FC80 in the Steam build
     /// </summary>
     public unsafe static int AddMultipointAudioEvent(BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 NodePosition, bool Positional)
     {
@@ -496,7 +515,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetCustomGlobalState;
     /// <summary>
-    /// Function: SetCustomGlobalState
+    /// Function: SetCustomGlobalState<br/>
+    /// Native code at BatmanAK.exe+0xBA0250 in the Steam build
     /// </summary>
     public unsafe static void SetCustomGlobalState(BmSDK.FStringArg StateGroup, BmSDK.FStringArg StateName)
     {
@@ -520,7 +540,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetCustomSourceSwitch;
     /// <summary>
-    /// Function: SetCustomSourceSwitch
+    /// Function: SetCustomSourceSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB9FF80 in the Steam build
     /// </summary>
     public unsafe static void SetCustomSourceSwitch(BmSDK.Engine.Actor Parent, BmSDK.FStringArg SwitchGroup, BmSDK.FStringArg SwitchName)
     {
@@ -545,7 +566,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetCustomSourceParameter;
     /// <summary>
-    /// Function: SetCustomSourceParameter
+    /// Function: SetCustomSourceParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9FCA0 in the Steam build
     /// </summary>
     public unsafe static void SetCustomSourceParameter(BmSDK.Engine.Actor Parent, BmSDK.FStringArg ParamName, float ParamValue)
     {
@@ -569,7 +591,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetCustomGlobalParameter;
     /// <summary>
-    /// Function: SetCustomGlobalParameter
+    /// Function: SetCustomGlobalParameter<br/>
+    /// Native code at BatmanAK.exe+0xB9FAB0 in the Steam build
     /// </summary>
     public unsafe static void SetCustomGlobalParameter(BmSDK.FStringArg ParamName, float ParamValue)
     {
@@ -592,7 +615,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopCustomAudioEvent;
     /// <summary>
-    /// Function: StopCustomAudioEvent
+    /// Function: StopCustomAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe static void StopCustomAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -615,7 +639,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StartCustomAudioEvent;
     /// <summary>
-    /// Function: StartCustomAudioEvent
+    /// Function: StartCustomAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB9F920 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(BmSDK.FStringArg EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -638,7 +663,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_GetMeterParameterValue;
     /// <summary>
-    /// Function: GetMeterParameterValue
+    /// Function: GetMeterParameterValue<br/>
+    /// Native code at BatmanAK.exe+0xB9F710 in the Steam build
     /// </summary>
     public unsafe static float GetMeterParameterValue(BmSDK.FStringArg MeterName, float DefaultMeterValue)
     {
@@ -661,7 +687,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetMixChapterState;
     /// <summary>
-    /// Function: SetMixChapterState
+    /// Function: SetMixChapterState<br/>
+    /// Native code at BatmanAK.exe+0xB9F5D0 in the Steam build
     /// </summary>
     public unsafe static void SetMixChapterState(BmSDK.FStringArg ChapterName)
     {
@@ -683,7 +710,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_CancelAudioCallbacks;
     /// <summary>
-    /// Function: CancelAudioCallbacks
+    /// Function: CancelAudioCallbacks<br/>
+    /// Native code at BatmanAK.exe+0xB5FB60 in the Steam build
     /// </summary>
     public unsafe static void CancelAudioCallbacks(BmSDK.GameObject OwnerObject)
     {
@@ -704,7 +732,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_HasSoundPlayed;
     /// <summary>
-    /// Function: HasSoundPlayed
+    /// Function: HasSoundPlayed<br/>
+    /// Native code at BatmanAK.exe+0xB34670 in the Steam build
     /// </summary>
     public unsafe static bool HasSoundPlayed(BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandleToTest)
     {
@@ -725,7 +754,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetGlobalAudioState;
     /// <summary>
-    /// Function: ResetGlobalAudioState
+    /// Function: ResetGlobalAudioState<br/>
+    /// Native code at BatmanAK.exe+0xB5FA40 in the Steam build
     /// </summary>
     public unsafe static void ResetGlobalAudioState(BmSDK.Engine.AkStateName StateName)
     {
@@ -746,7 +776,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetGlobalAudioState;
     /// <summary>
-    /// Function: SetGlobalAudioState
+    /// Function: SetGlobalAudioState<br/>
+    /// Native code at BatmanAK.exe+0xB5F920 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioState(BmSDK.Engine.AkStateName StateName)
     {
@@ -767,7 +798,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetGlobalAudioSwitch;
     /// <summary>
-    /// Function: SetGlobalAudioSwitch
+    /// Function: SetGlobalAudioSwitch<br/>
+    /// Native code at BatmanAK.exe+0xB5F7D0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioSwitch(BmSDK.Engine.AkSwitchName SwitchName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -789,7 +821,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetGlobalStickyParameterEx;
     /// <summary>
-    /// Function: SetGlobalStickyParameterEx
+    /// Function: SetGlobalStickyParameterEx<br/>
+    /// Native code at BatmanAK.exe+0xB5F1A0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalStickyParameterEx(BmSDK.Engine.AkParameterName ParamName, float ParamValue, float NewReleaseValue, float NewReleaseTime, float NewSustainTime, float NewAttackTime, bool AllowPause)
     {
@@ -816,7 +849,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetGlobalStickyParameter;
     /// <summary>
-    /// Function: SetGlobalStickyParameter
+    /// Function: SetGlobalStickyParameter<br/>
+    /// Native code at BatmanAK.exe+0xB5EFB0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalStickyParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -838,7 +872,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_ResetGlobalAudioParameter;
     /// <summary>
-    /// Function: ResetGlobalAudioParameter
+    /// Function: ResetGlobalAudioParameter<br/>
+    /// Native code at BatmanAK.exe+0xB5EE90 in the Steam build
     /// </summary>
     public unsafe static void ResetGlobalAudioParameter(BmSDK.Engine.AkParameterName ParamName)
     {
@@ -859,7 +894,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_SetGlobalAudioParameter;
     /// <summary>
-    /// Function: SetGlobalAudioParameter
+    /// Function: SetGlobalAudioParameter<br/>
+    /// Native code at BatmanAK.exe+0xB5ECA0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -881,7 +917,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_NotifyGlobalPhysicsAudioEvent;
     /// <summary>
-    /// Function: NotifyGlobalPhysicsAudioEvent
+    /// Function: NotifyGlobalPhysicsAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB5E750 in the Steam build
     /// </summary>
     public unsafe static void NotifyGlobalPhysicsAudioEvent(BmSDK.GameObject priObj, BmSDK.Engine.AkWwise.EAkPhysicsNotifyType colType, System.Numerics.Vector3 colPos, float colVel, float colMag, float colWet, BmSDK.Engine.AkEvent priEvent, out BmSDK.Engine.AkWwise.FAkPhysInfo priInfo)
     {
@@ -911,7 +948,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_RemoveGlobalLoopingEvent;
     /// <summary>
-    /// Function: RemoveGlobalLoopingEvent
+    /// Function: RemoveGlobalLoopingEvent<br/>
+    /// Native code at BatmanAK.exe+0xB5E630 in the Steam build
     /// </summary>
     public unsafe static void RemoveGlobalLoopingEvent(BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -932,7 +970,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_AddGlobalLoopingEvent;
     /// <summary>
-    /// Function: AddGlobalLoopingEvent
+    /// Function: AddGlobalLoopingEvent<br/>
+    /// Native code at BatmanAK.exe+0xB5E4D0 in the Steam build
     /// </summary>
     public unsafe static bool AddGlobalLoopingEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -954,7 +993,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StopGlobalAudioEvent;
     /// <summary>
-    /// Function: StopGlobalAudioEvent
+    /// Function: StopGlobalAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe static void StopGlobalAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -977,7 +1017,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_StartGlobalAudioEvent;
     /// <summary>
-    /// Function: StartGlobalAudioEvent
+    /// Function: StartGlobalAudioEvent<br/>
+    /// Native code at BatmanAK.exe+0xB5E2C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartGlobalAudioEvent(BmSDK.Engine.AkEvent AudioEvent, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
@@ -1001,7 +1042,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_WUtoMPH_F;
     /// <summary>
-    /// Function: WUtoMPH_F
+    /// Function: WUtoMPH_F<br/>
+    /// Native code at BatmanAK.exe+0xB5E180 in the Steam build
     /// </summary>
     public unsafe static float WUtoMPH_F(float wu)
     {
@@ -1022,7 +1064,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UUtoMPH_F;
     /// <summary>
-    /// Function: UUtoMPH_F
+    /// Function: UUtoMPH_F<br/>
+    /// Native code at BatmanAK.exe+0xB5E040 in the Steam build
     /// </summary>
     public unsafe static float UUtoMPH_F(float uu)
     {
@@ -1043,7 +1086,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UUtoWU_V;
     /// <summary>
-    /// Function: UUtoWU_V
+    /// Function: UUtoWU_V<br/>
+    /// Native code at BatmanAK.exe+0xB345C0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 UUtoWU_V(System.Numerics.Vector3 uu)
     {
@@ -1064,7 +1108,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Function __fn_UUtoWU_F;
     /// <summary>
-    /// Function: UUtoWU_F
+    /// Function: UUtoWU_F<br/>
+    /// Native code at BatmanAK.exe+0xB5DF00 in the Steam build
     /// </summary>
     public unsafe static float UUtoWU_F(float uu)
     {
@@ -2510,7 +2555,8 @@ public static class AkWwiseStatics
 {
     private static BmSDK.Function __fn_ResetMusicRandom;
     /// <summary>
-    /// Function: ResetMusicRandom, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetMusicRandom, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB348F0 in the Steam build
     /// </summary>
     public unsafe static void ResetMusicRandom(this BmSDK.Engine.AkWwise self)
     {
@@ -2531,7 +2577,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_EnsureWadsLoaded;
     /// <summary>
-    /// Function: EnsureWadsLoaded, run on <paramref name="self"/> rather than the class default object
+    /// Function: EnsureWadsLoaded, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB348B0 in the Steam build
     /// </summary>
     public unsafe static void EnsureWadsLoaded(this BmSDK.Engine.AkWwise self)
     {
@@ -2552,7 +2599,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_UseLocalisedWads;
     /// <summary>
-    /// Function: UseLocalisedWads, run on <paramref name="self"/> rather than the class default object
+    /// Function: UseLocalisedWads, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB607D0 in the Steam build
     /// </summary>
     public unsafe static void UseLocalisedWads(this BmSDK.Engine.AkWwise self, bool useLocWads, bool ensureLoaded)
     {
@@ -2575,7 +2623,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_UpdateWhoosh;
     /// <summary>
-    /// Function: UpdateWhoosh, run on <paramref name="self"/> rather than the class default object
+    /// Function: UpdateWhoosh, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB606B0 in the Steam build
     /// </summary>
     public unsafe static void UpdateWhoosh(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor A)
     {
@@ -2597,7 +2646,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_InstallChunk;
     /// <summary>
-    /// Function: InstallChunk, run on <paramref name="self"/> rather than the class default object
+    /// Function: InstallChunk, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB604D0 in the Steam build
     /// </summary>
     public unsafe static void InstallChunk(this BmSDK.Engine.AkWwise self, int uChunkID, bool bCheckPrevious)
     {
@@ -2620,7 +2670,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_IsWwiseDebugEnabled;
     /// <summary>
-    /// Function: IsWwiseDebugEnabled, run on <paramref name="self"/> rather than the class default object
+    /// Function: IsWwiseDebugEnabled, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0x499BB0 in the Steam build
     /// </summary>
     public unsafe static bool IsWwiseDebugEnabled(this BmSDK.Engine.AkWwise self)
     {
@@ -2641,7 +2692,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_FullReset;
     /// <summary>
-    /// Function: FullReset, run on <paramref name="self"/> rather than the class default object
+    /// Function: FullReset, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB34810 in the Steam build
     /// </summary>
     public unsafe static void FullReset(this BmSDK.Engine.AkWwise self, bool Restarting = default)
     {
@@ -2663,7 +2715,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_GetActiveListenerPosition;
     /// <summary>
-    /// Function: GetActiveListenerPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetActiveListenerPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB347B0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 GetActiveListenerPosition(this BmSDK.Engine.AkWwise self)
     {
@@ -2684,7 +2737,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_StartAuxMultipointAudioEvents;
     /// <summary>
-    /// Function: StartAuxMultipointAudioEvents, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartAuxMultipointAudioEvents, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBB72D0 in the Steam build
     /// </summary>
     public unsafe static void StartAuxMultipointAudioEvents(this BmSDK.Engine.AkWwise self, BmSDK.TArray<BmSDK.Engine.AkEvent> AudioEvents, BmSDK.TArray<System.Numerics.Vector3> NodePositions, bool Positional, bool Environmental)
     {
@@ -2709,7 +2763,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_ClearMultipointNetwork;
     /// <summary>
-    /// Function: ClearMultipointNetwork, run on <paramref name="self"/> rather than the class default object
+    /// Function: ClearMultipointNetwork, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0BB0 in the Steam build
     /// </summary>
     public unsafe static void ClearMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName)
     {
@@ -2732,7 +2787,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_MoveMultipointNetworkNode;
     /// <summary>
-    /// Function: MoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object
+    /// Function: MoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0980 in the Steam build
     /// </summary>
     public unsafe static void MoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
     {
@@ -2757,7 +2813,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_RemoveMultipointNetworkPosition;
     /// <summary>
-    /// Function: RemoveMultipointNetworkPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveMultipointNetworkPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0800 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointNetworkPosition(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition)
     {
@@ -2781,7 +2838,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_RemoveMultipointNetworkNode;
     /// <summary>
-    /// Function: RemoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA06A0 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, out int NodeID)
     {
@@ -2807,7 +2865,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_AddMultipointNetwork;
     /// <summary>
-    /// Function: AddMultipointNetwork, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddMultipointNetwork, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0460 in the Steam build
     /// </summary>
     public unsafe static int AddMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
     {
@@ -2832,7 +2891,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_ClearMultipointAudioEvent;
     /// <summary>
-    /// Function: ClearMultipointAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: ClearMultipointAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB603B0 in the Steam build
     /// </summary>
     public unsafe static void ClearMultipointAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -2854,7 +2914,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_MoveMultipointAudioEventNode;
     /// <summary>
-    /// Function: MoveMultipointAudioEventNode, run on <paramref name="self"/> rather than the class default object
+    /// Function: MoveMultipointAudioEventNode, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB60190 in the Steam build
     /// </summary>
     public unsafe static void MoveMultipointAudioEventNode(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, int NodeID, System.Numerics.Vector3 NodePosition)
     {
@@ -2878,7 +2939,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_RemoveMultipointAudioEventPosition;
     /// <summary>
-    /// Function: RemoveMultipointAudioEventPosition, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveMultipointAudioEventPosition, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB60020 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointAudioEventPosition(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 NodePosition)
     {
@@ -2901,7 +2963,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_RemoveMultipointAudioEventNode;
     /// <summary>
-    /// Function: RemoveMultipointAudioEventNode, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveMultipointAudioEventNode, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5FEB0 in the Steam build
     /// </summary>
     public unsafe static void RemoveMultipointAudioEventNode(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, out int NodeID)
     {
@@ -2926,7 +2989,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_AddMultipointAudioEvent;
     /// <summary>
-    /// Function: AddMultipointAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddMultipointAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5FC80 in the Steam build
     /// </summary>
     public unsafe static int AddMultipointAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, System.Numerics.Vector3 NodePosition, bool Positional)
     {
@@ -2950,7 +3014,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetCustomGlobalState;
     /// <summary>
-    /// Function: SetCustomGlobalState, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetCustomGlobalState, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xBA0250 in the Steam build
     /// </summary>
     public unsafe static void SetCustomGlobalState(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg StateGroup, BmSDK.FStringArg StateName)
     {
@@ -2975,7 +3040,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetCustomSourceSwitch;
     /// <summary>
-    /// Function: SetCustomSourceSwitch, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetCustomSourceSwitch, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9FF80 in the Steam build
     /// </summary>
     public unsafe static void SetCustomSourceSwitch(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FStringArg SwitchGroup, BmSDK.FStringArg SwitchName)
     {
@@ -3001,7 +3067,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetCustomSourceParameter;
     /// <summary>
-    /// Function: SetCustomSourceParameter, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetCustomSourceParameter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9FCA0 in the Steam build
     /// </summary>
     public unsafe static void SetCustomSourceParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FStringArg ParamName, float ParamValue)
     {
@@ -3026,7 +3093,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetCustomGlobalParameter;
     /// <summary>
-    /// Function: SetCustomGlobalParameter, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetCustomGlobalParameter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9FAB0 in the Steam build
     /// </summary>
     public unsafe static void SetCustomGlobalParameter(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg ParamName, float ParamValue)
     {
@@ -3050,7 +3118,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_StopCustomAudioEvent;
     /// <summary>
-    /// Function: StopCustomAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopCustomAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe static void StopCustomAudioEvent(this BmSDK.Engine.AkWwise self, out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -3074,7 +3143,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_StartCustomAudioEvent;
     /// <summary>
-    /// Function: StartCustomAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartCustomAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9F920 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -3098,7 +3168,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_GetMeterParameterValue;
     /// <summary>
-    /// Function: GetMeterParameterValue, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetMeterParameterValue, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9F710 in the Steam build
     /// </summary>
     public unsafe static float GetMeterParameterValue(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg MeterName, float DefaultMeterValue)
     {
@@ -3122,7 +3193,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetMixChapterState;
     /// <summary>
-    /// Function: SetMixChapterState, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetMixChapterState, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB9F5D0 in the Steam build
     /// </summary>
     public unsafe static void SetMixChapterState(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg ChapterName)
     {
@@ -3145,7 +3217,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_CancelAudioCallbacks;
     /// <summary>
-    /// Function: CancelAudioCallbacks, run on <paramref name="self"/> rather than the class default object
+    /// Function: CancelAudioCallbacks, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5FB60 in the Steam build
     /// </summary>
     public unsafe static void CancelAudioCallbacks(this BmSDK.Engine.AkWwise self, BmSDK.GameObject OwnerObject)
     {
@@ -3167,7 +3240,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_HasSoundPlayed;
     /// <summary>
-    /// Function: HasSoundPlayed, run on <paramref name="self"/> rather than the class default object
+    /// Function: HasSoundPlayed, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB34670 in the Steam build
     /// </summary>
     public unsafe static bool HasSoundPlayed(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandleToTest)
     {
@@ -3189,7 +3263,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_ResetGlobalAudioState;
     /// <summary>
-    /// Function: ResetGlobalAudioState, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetGlobalAudioState, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5FA40 in the Steam build
     /// </summary>
     public unsafe static void ResetGlobalAudioState(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkStateName StateName)
     {
@@ -3211,7 +3286,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetGlobalAudioState;
     /// <summary>
-    /// Function: SetGlobalAudioState, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetGlobalAudioState, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5F920 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioState(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkStateName StateName)
     {
@@ -3233,7 +3309,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetGlobalAudioSwitch;
     /// <summary>
-    /// Function: SetGlobalAudioSwitch, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetGlobalAudioSwitch, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5F7D0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioSwitch(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkSwitchName SwitchName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -3256,7 +3333,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetGlobalStickyParameterEx;
     /// <summary>
-    /// Function: SetGlobalStickyParameterEx, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetGlobalStickyParameterEx, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5F1A0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalStickyParameterEx(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkParameterName ParamName, float ParamValue, float NewReleaseValue, float NewReleaseTime, float NewSustainTime, float NewAttackTime, bool AllowPause)
     {
@@ -3284,7 +3362,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetGlobalStickyParameter;
     /// <summary>
-    /// Function: SetGlobalStickyParameter, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetGlobalStickyParameter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5EFB0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalStickyParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -3307,7 +3386,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_ResetGlobalAudioParameter;
     /// <summary>
-    /// Function: ResetGlobalAudioParameter, run on <paramref name="self"/> rather than the class default object
+    /// Function: ResetGlobalAudioParameter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5EE90 in the Steam build
     /// </summary>
     public unsafe static void ResetGlobalAudioParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkParameterName ParamName)
     {
@@ -3329,7 +3409,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_SetGlobalAudioParameter;
     /// <summary>
-    /// Function: SetGlobalAudioParameter, run on <paramref name="self"/> rather than the class default object
+    /// Function: SetGlobalAudioParameter, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5ECA0 in the Steam build
     /// </summary>
     public unsafe static void SetGlobalAudioParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
@@ -3352,7 +3433,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_NotifyGlobalPhysicsAudioEvent;
     /// <summary>
-    /// Function: NotifyGlobalPhysicsAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: NotifyGlobalPhysicsAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E750 in the Steam build
     /// </summary>
     public unsafe static void NotifyGlobalPhysicsAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.GameObject priObj, BmSDK.Engine.AkWwise.EAkPhysicsNotifyType colType, System.Numerics.Vector3 colPos, float colVel, float colMag, float colWet, BmSDK.Engine.AkEvent priEvent, out BmSDK.Engine.AkWwise.FAkPhysInfo priInfo)
     {
@@ -3383,7 +3465,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_RemoveGlobalLoopingEvent;
     /// <summary>
-    /// Function: RemoveGlobalLoopingEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: RemoveGlobalLoopingEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E630 in the Steam build
     /// </summary>
     public unsafe static void RemoveGlobalLoopingEvent(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent)
     {
@@ -3405,7 +3488,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_AddGlobalLoopingEvent;
     /// <summary>
-    /// Function: AddGlobalLoopingEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: AddGlobalLoopingEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E4D0 in the Steam build
     /// </summary>
     public unsafe static bool AddGlobalLoopingEvent(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
@@ -3428,7 +3512,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_StopGlobalAudioEvent;
     /// <summary>
-    /// Function: StopGlobalAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: StopGlobalAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB34710 in the Steam build
     /// </summary>
     public unsafe static void StopGlobalAudioEvent(this BmSDK.Engine.AkWwise self, out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
@@ -3452,7 +3537,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_StartGlobalAudioEvent;
     /// <summary>
-    /// Function: StartGlobalAudioEvent, run on <paramref name="self"/> rather than the class default object
+    /// Function: StartGlobalAudioEvent, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E2C0 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartGlobalAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.Engine.AkEvent AudioEvent, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource, BmSDK.FScriptDelegate SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
@@ -3477,7 +3563,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_WUtoMPH_F;
     /// <summary>
-    /// Function: WUtoMPH_F, run on <paramref name="self"/> rather than the class default object
+    /// Function: WUtoMPH_F, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E180 in the Steam build
     /// </summary>
     public unsafe static float WUtoMPH_F(this BmSDK.Engine.AkWwise self, float wu)
     {
@@ -3499,7 +3586,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_UUtoMPH_F;
     /// <summary>
-    /// Function: UUtoMPH_F, run on <paramref name="self"/> rather than the class default object
+    /// Function: UUtoMPH_F, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5E040 in the Steam build
     /// </summary>
     public unsafe static float UUtoMPH_F(this BmSDK.Engine.AkWwise self, float uu)
     {
@@ -3521,7 +3609,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_UUtoWU_V;
     /// <summary>
-    /// Function: UUtoWU_V, run on <paramref name="self"/> rather than the class default object
+    /// Function: UUtoWU_V, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB345C0 in the Steam build
     /// </summary>
     public unsafe static System.Numerics.Vector3 UUtoWU_V(this BmSDK.Engine.AkWwise self, System.Numerics.Vector3 uu)
     {
@@ -3543,7 +3632,8 @@ public static class AkWwiseStatics
 
     private static BmSDK.Function __fn_UUtoWU_F;
     /// <summary>
-    /// Function: UUtoWU_F, run on <paramref name="self"/> rather than the class default object
+    /// Function: UUtoWU_F, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB5DF00 in the Steam build
     /// </summary>
     public unsafe static float UUtoWU_F(this BmSDK.Engine.AkWwise self, float uu)
     {

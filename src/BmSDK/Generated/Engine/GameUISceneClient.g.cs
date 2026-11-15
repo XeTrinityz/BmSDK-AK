@@ -176,7 +176,8 @@ public partial class GameUISceneClient : BmSDK.Engine.UISceneClient, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUnpauseInternalUI;
     /// <summary>
-    /// Function: CanUnpauseInternalUI
+    /// Function: CanUnpauseInternalUI<br/>
+    /// Native code at BatmanAK.exe+0xB2D1F0 in the Steam build
     /// </summary>
     public unsafe virtual bool CanUnpauseInternalUI()
     {
@@ -197,7 +198,8 @@ public partial class GameUISceneClient : BmSDK.Engine.UISceneClient, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestInputProcessingUpdate;
     /// <summary>
-    /// Function: RequestInputProcessingUpdate
+    /// Function: RequestInputProcessingUpdate<br/>
+    /// Native code at BatmanAK.exe+0xB2D1B0 in the Steam build
     /// </summary>
     public unsafe virtual void RequestInputProcessingUpdate()
     {
@@ -218,7 +220,8 @@ public partial class GameUISceneClient : BmSDK.Engine.UISceneClient, BmSDK.IGame
 
     private static BmSDK.Function __fn_GetCurrentNetMode;
     /// <summary>
-    /// Function: GetCurrentNetMode
+    /// Function: GetCurrentNetMode<br/>
+    /// Native code at BatmanAK.exe+0xB2D160 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo.ENetMode GetCurrentNetMode()
     {
@@ -339,7 +342,8 @@ public static class GameUISceneClientStatics
 {
     private static BmSDK.Function __fn_GetCurrentNetMode;
     /// <summary>
-    /// Function: GetCurrentNetMode, run on <paramref name="self"/> rather than the class default object
+    /// Function: GetCurrentNetMode, run on <paramref name="self"/> rather than the class default object<br/>
+    /// Native code at BatmanAK.exe+0xB2D160 in the Steam build
     /// </summary>
     public unsafe static BmSDK.Engine.WorldInfo.ENetMode GetCurrentNetMode(this BmSDK.Engine.GameUISceneClient self)
     {

@@ -190,7 +190,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPlayerShotDamage;
     /// <summary>
-    /// Function: DoPlayerShotDamage
+    /// Function: DoPlayerShotDamage<br/>
+    /// Native code at BatmanAK.exe+0x46B6F0 in the Steam build
     /// </summary>
     public unsafe virtual void DoPlayerShotDamage(System.Numerics.Vector3 CameraPos, System.Numerics.Vector3 AimPos)
     {
@@ -551,7 +552,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeOfCylinder;
     /// <summary>
-    /// Function: GetEdgeOfCylinder
+    /// Function: GetEdgeOfCylinder<br/>
+    /// Native code at BatmanAK.exe+0x4A7000 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeOfCylinder(System.Numerics.Vector3 AimFromPoint, System.Numerics.Vector3 CurrentAimDir, System.Numerics.Vector3 CylinderCentre, float CylinderRadius, float CylinderHeight)
     {
@@ -577,7 +579,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
-    /// Function: GetAudioSpatial
+    /// Function: GetAudioSpatial<br/>
+    /// Native code at BatmanAK.exe+0x46A440 in the Steam build
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
@@ -691,7 +694,8 @@ public partial class RBMWeaponRanged : BmSDK.BmGame.RBMWeapon, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
-    /// Function: SetTickIsDisabled
+    /// Function: SetTickIsDisabled<br/>
+    /// Native code at BatmanAK.exe+0x4A20A0 in the Steam build
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {

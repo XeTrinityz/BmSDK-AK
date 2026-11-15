@@ -80,7 +80,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachPylon;
     /// <summary>
-    /// Function: CanReachPylon
+    /// Function: CanReachPylon<br/>
+    /// Native code at BatmanAK.exe+0xB73C90 in the Steam build
     /// </summary>
     public unsafe virtual bool CanReachPylon(BmSDK.Engine.Pylon DestPylon, BmSDK.Engine.Controller C)
     {
@@ -276,7 +277,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushDynamicEdges;
     /// <summary>
-    /// Function: FlushDynamicEdges
+    /// Function: FlushDynamicEdges<br/>
+    /// Native code at BatmanAK.exe+0x46F0D0 in the Steam build
     /// </summary>
     public unsafe virtual void FlushDynamicEdges()
     {
@@ -297,7 +299,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMeshForPreExistingNavMeshObstacles;
     /// <summary>
-    /// Function: UpdateMeshForPreExistingNavMeshObstacles
+    /// Function: UpdateMeshForPreExistingNavMeshObstacles<br/>
+    /// Native code at BatmanAK.exe+0x499330 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateMeshForPreExistingNavMeshObstacles()
     {
@@ -318,7 +321,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPylonStatusChange;
     /// <summary>
-    /// Function: OnPylonStatusChange
+    /// Function: OnPylonStatusChange<br/>
+    /// Native code at BatmanAK.exe+0x4992F0 in the Steam build
     /// </summary>
     public unsafe virtual void OnPylonStatusChange()
     {
@@ -339,7 +343,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_OutputPathObjectEdges;
     /// <summary>
-    /// Function: OutputPathObjectEdges
+    /// Function: OutputPathObjectEdges<br/>
+    /// Native code at BatmanAK.exe+0xB3B920 in the Steam build
     /// </summary>
     public unsafe virtual void OutputPathObjectEdges(BmSDK.Engine.Actor TestForActor = default)
     {
@@ -361,7 +366,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasVisibilityInfo;
     /// <summary>
-    /// Function: HasVisibilityInfo
+    /// Function: HasVisibilityInfo<br/>
+    /// Native code at BatmanAK.exe+0x46BB60 in the Steam build
     /// </summary>
     public unsafe virtual bool HasVisibilityInfo()
     {
@@ -382,7 +388,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceVertSeen;
     /// <summary>
-    /// Function: GetTimeSinceVertSeen
+    /// Function: GetTimeSinceVertSeen<br/>
+    /// Native code at BatmanAK.exe+0xB73B50 in the Steam build
     /// </summary>
     public unsafe virtual float GetTimeSinceVertSeen(int VertID)
     {
@@ -404,7 +411,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkVertAsSeen;
     /// <summary>
-    /// Function: MarkVertAsSeen
+    /// Function: MarkVertAsSeen<br/>
+    /// Native code at BatmanAK.exe+0xB73A30 in the Steam build
     /// </summary>
     public unsafe virtual void MarkVertAsSeen(int VertID)
     {
@@ -426,7 +434,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeVertFromVert;
     /// <summary>
-    /// Function: CanSeeVertFromVert
+    /// Function: CanSeeVertFromVert<br/>
+    /// Native code at BatmanAK.exe+0xB73840 in the Steam build
     /// </summary>
     public unsafe virtual bool CanSeeVertFromVert(int LookToVertID, int LookFromVertID)
     {
@@ -449,7 +458,8 @@ public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLi
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVertLocation;
     /// <summary>
-    /// Function: GetVertLocation
+    /// Function: GetVertLocation<br/>
+    /// Native code at BatmanAK.exe+0xB736F0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVertLocation(int VertID)
     {

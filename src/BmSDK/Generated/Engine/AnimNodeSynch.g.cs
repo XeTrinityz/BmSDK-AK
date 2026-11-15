@@ -80,7 +80,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGroupRateScale;
     /// <summary>
-    /// Function: SetGroupRateScale
+    /// Function: SetGroupRateScale<br/>
+    /// Native code at BatmanAK.exe+0xB55CC0 in the Steam build
     /// </summary>
     public unsafe virtual void SetGroupRateScale(BmSDK.FName GroupName, float NewRateScale)
     {
@@ -103,7 +104,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRelativePosition;
     /// <summary>
-    /// Function: GetRelativePosition
+    /// Function: GetRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB55B80 in the Steam build
     /// </summary>
     public unsafe virtual float GetRelativePosition(BmSDK.FName GroupName)
     {
@@ -125,7 +127,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRelativePosition;
     /// <summary>
-    /// Function: ForceRelativePosition
+    /// Function: ForceRelativePosition<br/>
+    /// Native code at BatmanAK.exe+0xB55980 in the Steam build
     /// </summary>
     public unsafe virtual void ForceRelativePosition(BmSDK.FName GroupName, float RelativePosition)
     {
@@ -148,7 +151,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMasterNodeOfGroup;
     /// <summary>
-    /// Function: GetMasterNodeOfGroup
+    /// Function: GetMasterNodeOfGroup<br/>
+    /// Native code at BatmanAK.exe+0xB55840 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetMasterNodeOfGroup(BmSDK.FName GroupName)
     {
@@ -170,7 +174,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveNodeFromGroup;
     /// <summary>
-    /// Function: RemoveNodeFromGroup
+    /// Function: RemoveNodeFromGroup<br/>
+    /// Native code at BatmanAK.exe+0xB55660 in the Steam build
     /// </summary>
     public unsafe virtual void RemoveNodeFromGroup(BmSDK.Engine.AnimNodeSequence SeqNode, BmSDK.FName GroupName)
     {
@@ -193,7 +198,8 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_AddNodeToGroup;
     /// <summary>
-    /// Function: AddNodeToGroup
+    /// Function: AddNodeToGroup<br/>
+    /// Native code at BatmanAK.exe+0xB55480 in the Steam build
     /// </summary>
     public unsafe virtual void AddNodeToGroup(BmSDK.Engine.AnimNodeSequence SeqNode, BmSDK.FName GroupName)
     {

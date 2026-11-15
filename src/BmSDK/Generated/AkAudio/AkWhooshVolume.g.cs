@@ -113,7 +113,8 @@ public partial class AkWhooshVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleTouchInOut;
     /// <summary>
-    /// Function: HandleTouchInOut
+    /// Function: HandleTouchInOut<br/>
+    /// Native code at BatmanAK.exe+0xFDDDE0 in the Steam build
     /// </summary>
     public unsafe virtual void HandleTouchInOut(BmSDK.Engine.Actor Other, bool otherIsTouching)
     {

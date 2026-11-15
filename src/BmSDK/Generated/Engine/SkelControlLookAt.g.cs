@@ -80,7 +80,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLookAtPoint;
     /// <summary>
-    /// Function: CanLookAtPoint
+    /// Function: CanLookAtPoint<br/>
+    /// Native code at BatmanAK.exe+0xB2C470 in the Steam build
     /// </summary>
     public unsafe virtual bool CanLookAtPoint(System.Numerics.Vector3 PointLoc, bool bDrawDebugInfo = default, bool bDebugUsePersistentLines = default, bool bDebugFlushLinesFirst = default)
     {
@@ -105,7 +106,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLookAtAlpha;
     /// <summary>
-    /// Function: SetLookAtAlpha
+    /// Function: SetLookAtAlpha<br/>
+    /// Native code at BatmanAK.exe+0xB579F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetLookAtAlpha(float DesiredAlpha, float DesiredBlendTime)
     {
@@ -128,7 +130,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolateTargetLocation;
     /// <summary>
-    /// Function: InterpolateTargetLocation
+    /// Function: InterpolateTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0xB578C0 in the Steam build
     /// </summary>
     public unsafe virtual void InterpolateTargetLocation(float DeltaTime)
     {
@@ -150,7 +153,8 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetLocation;
     /// <summary>
-    /// Function: SetTargetLocation
+    /// Function: SetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0xB2C3E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTargetLocation(System.Numerics.Vector3 NewTargetLocation)
     {

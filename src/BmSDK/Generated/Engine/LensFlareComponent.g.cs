@@ -95,7 +95,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
-    /// Function: SetMaterial
+    /// Function: SetMaterial<br/>
+    /// Native code at BatmanAK.exe+0x94FF50 in the Steam build
     /// </summary>
     public unsafe virtual void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
@@ -118,7 +119,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
-    /// Function: GetMaterial
+    /// Function: GetMaterial<br/>
+    /// Native code at BatmanAK.exe+0xDD6350 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetMaterial(int ElementIndex)
     {
@@ -140,7 +142,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIsActive;
     /// <summary>
-    /// Function: SetIsActive
+    /// Function: SetIsActive<br/>
+    /// Native code at BatmanAK.exe+0xB96C20 in the Steam build
     /// </summary>
     public unsafe virtual void SetIsActive(bool bInIsActive)
     {
@@ -162,7 +165,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceColor;
     /// <summary>
-    /// Function: SetSourceColor
+    /// Function: SetSourceColor<br/>
+    /// Native code at BatmanAK.exe+0xB49040 in the Steam build
     /// </summary>
     public unsafe virtual void SetSourceColor(BmSDK.GameObject.FLinearColor InSourceColor)
     {
@@ -184,7 +188,8 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
-    /// Function: SetTemplate
+    /// Function: SetTemplate<br/>
+    /// Native code at BatmanAK.exe+0xB96AB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.LensFlare NewTemplate, bool bForceSet = default)
     {

@@ -80,7 +80,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_WindAtPosition;
     /// <summary>
-    /// Function: WindAtPosition
+    /// Function: WindAtPosition<br/>
+    /// Native code at BatmanAK.exe+0xB3A020 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 WindAtPosition(System.Numerics.Vector3 TestLocation)
     {
@@ -102,7 +103,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SkydomeOcclusion;
     /// <summary>
-    /// Function: SkydomeOcclusion
+    /// Function: SkydomeOcclusion<br/>
+    /// Native code at BatmanAK.exe+0xB39F80 in the Steam build
     /// </summary>
     public unsafe virtual float SkydomeOcclusion(System.Numerics.Vector3 TestLocation)
     {
@@ -124,7 +126,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeightIntersectionFromPos;
     /// <summary>
-    /// Function: GetHeightIntersectionFromPos
+    /// Function: GetHeightIntersectionFromPos<br/>
+    /// Native code at BatmanAK.exe+0xB6A3B0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHeightIntersectionFromPos(System.Numerics.Vector3 TestLocation, int OffsetX, int OffsetY)
     {
@@ -148,7 +151,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumeWeatherType;
     /// <summary>
-    /// Function: GetVolumeWeatherType
+    /// Function: GetVolumeWeatherType<br/>
+    /// Native code at BatmanAK.exe+0x48C2F0 in the Steam build
     /// </summary>
     public unsafe virtual int GetVolumeWeatherType()
     {
@@ -169,7 +173,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPollenDensity;
     /// <summary>
-    /// Function: GetPollenDensity
+    /// Function: GetPollenDensity<br/>
+    /// Native code at BatmanAK.exe+0xB39F30 in the Steam build
     /// </summary>
     public unsafe virtual float GetPollenDensity()
     {
@@ -190,7 +195,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsidePollenVolume;
     /// <summary>
-    /// Function: IsInsidePollenVolume
+    /// Function: IsInsidePollenVolume<br/>
+    /// Native code at BatmanAK.exe+0xB39E90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInsidePollenVolume(System.Numerics.Vector3 TestLocation)
     {
@@ -212,7 +218,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPollenDepth;
     /// <summary>
-    /// Function: GetLocationPollenDepth
+    /// Function: GetLocationPollenDepth<br/>
+    /// Native code at BatmanAK.exe+0xB39DF0 in the Steam build
     /// </summary>
     public unsafe virtual float GetLocationPollenDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -234,7 +241,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToPollenZ;
     /// <summary>
-    /// Function: SignedDistanceToPollenZ
+    /// Function: SignedDistanceToPollenZ<br/>
+    /// Native code at BatmanAK.exe+0xB39D50 in the Steam build
     /// </summary>
     public unsafe virtual float SignedDistanceToPollenZ(System.Numerics.Vector3 TestLocation)
     {
@@ -256,7 +264,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationPollen;
     /// <summary>
-    /// Function: IsLocationPollen
+    /// Function: IsLocationPollen<br/>
+    /// Native code at BatmanAK.exe+0xB39CB0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationPollen(System.Numerics.Vector3 TestLocation)
     {
@@ -278,7 +287,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveFearGasDensity;
     /// <summary>
-    /// Function: GetActiveFearGasDensity
+    /// Function: GetActiveFearGasDensity<br/>
+    /// Native code at BatmanAK.exe+0x46F080 in the Steam build
     /// </summary>
     public unsafe virtual float GetActiveFearGasDensity()
     {
@@ -299,7 +309,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasDensity;
     /// <summary>
-    /// Function: GetFearGasDensity
+    /// Function: GetFearGasDensity<br/>
+    /// Native code at BatmanAK.exe+0xB39C60 in the Steam build
     /// </summary>
     public unsafe virtual float GetFearGasDensity()
     {
@@ -320,7 +331,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideFearGasVolume;
     /// <summary>
-    /// Function: IsInsideFearGasVolume
+    /// Function: IsInsideFearGasVolume<br/>
+    /// Native code at BatmanAK.exe+0xB39BC0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsInsideFearGasVolume(System.Numerics.Vector3 TestLocation)
     {
@@ -342,7 +354,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDustDepth;
     /// <summary>
-    /// Function: GetLocationDustDepth
+    /// Function: GetLocationDustDepth<br/>
+    /// Native code at BatmanAK.exe+0xB39B20 in the Steam build
     /// </summary>
     public unsafe virtual float GetLocationDustDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -364,7 +377,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FearGasTransitionAlpha;
     /// <summary>
-    /// Function: FearGasTransitionAlpha
+    /// Function: FearGasTransitionAlpha<br/>
+    /// Native code at BatmanAK.exe+0xB39A80 in the Steam build
     /// </summary>
     public unsafe virtual float FearGasTransitionAlpha(System.Numerics.Vector3 TestLocation)
     {
@@ -386,7 +400,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasWorldHeight;
     /// <summary>
-    /// Function: GetFearGasWorldHeight
+    /// Function: GetFearGasWorldHeight<br/>
+    /// Native code at BatmanAK.exe+0xB399E0 in the Steam build
     /// </summary>
     public unsafe virtual float GetFearGasWorldHeight(System.Numerics.Vector3 TestLocation)
     {
@@ -408,7 +423,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToFearGasZ;
     /// <summary>
-    /// Function: SignedDistanceToFearGasZ
+    /// Function: SignedDistanceToFearGasZ<br/>
+    /// Native code at BatmanAK.exe+0xB39940 in the Steam build
     /// </summary>
     public unsafe virtual float SignedDistanceToFearGasZ(System.Numerics.Vector3 TestLocation)
     {
@@ -430,7 +446,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationFearGas;
     /// <summary>
-    /// Function: IsLocationFearGas
+    /// Function: IsLocationFearGas<br/>
+    /// Native code at BatmanAK.exe+0xB398A0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationFearGas(System.Numerics.Vector3 TestLocation)
     {
@@ -452,7 +469,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRainDensity;
     /// <summary>
-    /// Function: GetRainDensity
+    /// Function: GetRainDensity<br/>
+    /// Native code at BatmanAK.exe+0xB42890 in the Steam build
     /// </summary>
     public unsafe virtual float GetRainDensity()
     {
@@ -473,7 +491,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LocationRainHeight;
     /// <summary>
-    /// Function: LocationRainHeight
+    /// Function: LocationRainHeight<br/>
+    /// Native code at BatmanAK.exe+0xB39800 in the Steam build
     /// </summary>
     public unsafe virtual float LocationRainHeight(System.Numerics.Vector3 TestLocation)
     {
@@ -495,7 +514,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DistanceToRainZ;
     /// <summary>
-    /// Function: DistanceToRainZ
+    /// Function: DistanceToRainZ<br/>
+    /// Native code at BatmanAK.exe+0xB39760 in the Steam build
     /// </summary>
     public unsafe virtual float DistanceToRainZ(System.Numerics.Vector3 TestLocation)
     {
@@ -517,7 +537,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPuddleDepth;
     /// <summary>
-    /// Function: GetLocationPuddleDepth
+    /// Function: GetLocationPuddleDepth<br/>
+    /// Native code at BatmanAK.exe+0xB396C0 in the Steam build
     /// </summary>
     public unsafe virtual float GetLocationPuddleDepth(System.Numerics.Vector3 TestLocation)
     {
@@ -539,7 +560,8 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationRaining;
     /// <summary>
-    /// Function: IsLocationRaining
+    /// Function: IsLocationRaining<br/>
+    /// Native code at BatmanAK.exe+0xB39620 in the Steam build
     /// </summary>
     public unsafe virtual bool IsLocationRaining(System.Numerics.Vector3 TestLocation)
     {

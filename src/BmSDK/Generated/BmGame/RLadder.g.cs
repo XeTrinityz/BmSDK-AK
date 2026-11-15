@@ -219,7 +219,8 @@ public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawLadderDebug;
     /// <summary>
-    /// Function: DrawLadderDebug
+    /// Function: DrawLadderDebug<br/>
+    /// Native code at BatmanAK.exe+0xB2AF90 in the Steam build
     /// </summary>
     public unsafe virtual void DrawLadderDebug()
     {

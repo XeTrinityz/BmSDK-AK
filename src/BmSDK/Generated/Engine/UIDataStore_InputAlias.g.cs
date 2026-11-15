@@ -80,7 +80,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HasAliasMappingForPlatform;
     /// <summary>
-    /// Function: HasAliasMappingForPlatform
+    /// Function: HasAliasMappingForPlatform<br/>
+    /// Native code at BatmanAK.exe+0xB591D0 in the Steam build
     /// </summary>
     public unsafe virtual bool HasAliasMappingForPlatform(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType DesiredPlatform)
     {
@@ -103,7 +104,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindInputAliasIndex;
     /// <summary>
-    /// Function: FindInputAliasIndex
+    /// Function: FindInputAliasIndex<br/>
+    /// Native code at BatmanAK.exe+0xB59090 in the Steam build
     /// </summary>
     public unsafe virtual int FindInputAliasIndex(BmSDK.FName DesiredAlias)
     {
@@ -125,7 +127,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasInputKeyDataByIndex;
     /// <summary>
-    /// Function: GetAliasInputKeyDataByIndex
+    /// Function: GetAliasInputKeyDataByIndex<br/>
+    /// Native code at BatmanAK.exe+0xB58F00 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAliasInputKeyDataByIndex(out BmSDK.Engine.UIRoot.FRawInputKeyEventData out_InputKeyData, int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
@@ -151,7 +154,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasInputKeyData;
     /// <summary>
-    /// Function: GetAliasInputKeyData
+    /// Function: GetAliasInputKeyData<br/>
+    /// Native code at BatmanAK.exe+0xB58D70 in the Steam build
     /// </summary>
     public unsafe virtual bool GetAliasInputKeyData(out BmSDK.Engine.UIRoot.FRawInputKeyEventData out_InputKeyData, BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
@@ -177,7 +181,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasInputKeyNameByIndex;
     /// <summary>
-    /// Function: GetAliasInputKeyNameByIndex
+    /// Function: GetAliasInputKeyNameByIndex<br/>
+    /// Native code at BatmanAK.exe+0xB58C00 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetAliasInputKeyNameByIndex(int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
@@ -200,7 +205,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasInputKeyName;
     /// <summary>
-    /// Function: GetAliasInputKeyName
+    /// Function: GetAliasInputKeyName<br/>
+    /// Native code at BatmanAK.exe+0xB58A90 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FName GetAliasInputKeyName(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
@@ -223,7 +229,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasFontMarkupByIndex;
     /// <summary>
-    /// Function: GetAliasFontMarkupByIndex
+    /// Function: GetAliasFontMarkupByIndex<br/>
+    /// Native code at BatmanAK.exe+0xB9D030 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetAliasFontMarkupByIndex(int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
@@ -246,7 +253,8 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAliasFontMarkup;
     /// <summary>
-    /// Function: GetAliasFontMarkup
+    /// Function: GetAliasFontMarkup<br/>
+    /// Native code at BatmanAK.exe+0xB9CEA0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetAliasFontMarkup(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {

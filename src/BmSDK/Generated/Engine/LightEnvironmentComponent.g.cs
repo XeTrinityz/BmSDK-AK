@@ -80,7 +80,8 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEnabled;
     /// <summary>
-    /// Function: IsEnabled
+    /// Function: IsEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB431B0 in the Steam build
     /// </summary>
     public unsafe virtual bool IsEnabled()
     {
@@ -101,7 +102,8 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB8B180 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool bNewEnabled)
     {

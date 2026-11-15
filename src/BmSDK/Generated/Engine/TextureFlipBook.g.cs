@@ -80,7 +80,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentFrame;
     /// <summary>
-    /// Function: SetCurrentFrame
+    /// Function: SetCurrentFrame<br/>
+    /// Native code at BatmanAK.exe+0xB841F0 in the Steam build
     /// </summary>
     public unsafe virtual void SetCurrentFrame(int Row, int Col)
     {
@@ -103,7 +104,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
-    /// Function: Stop
+    /// Function: Stop<br/>
+    /// Native code at BatmanAK.exe+0xB40E40 in the Steam build
     /// </summary>
     public unsafe virtual void Stop()
     {
@@ -124,7 +126,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Pause;
     /// <summary>
-    /// Function: Pause
+    /// Function: Pause<br/>
+    /// Native code at BatmanAK.exe+0xB41010 in the Steam build
     /// </summary>
     public unsafe virtual void Pause()
     {
@@ -145,7 +148,8 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
-    /// Function: Play
+    /// Function: Play<br/>
+    /// Native code at BatmanAK.exe+0x46CAC0 in the Steam build
     /// </summary>
     public unsafe virtual void Play()
     {

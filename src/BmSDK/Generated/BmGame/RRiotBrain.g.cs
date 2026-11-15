@@ -100,7 +100,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpJokerFlaps;
     /// <summary>
-    /// Function: SetUpJokerFlaps
+    /// Function: SetUpJokerFlaps<br/>
+    /// Native code at BatmanAK.exe+0x509560 in the Steam build
     /// </summary>
     public unsafe virtual void SetUpJokerFlaps(BmSDK.BmGame.RBMPawnAI HostPawn, BmSDK.Engine.SkeletalMeshComponent JokerMesh)
     {
@@ -182,7 +183,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiotBrain;
     /// <summary>
-    /// Function: UpdateRiotBrain
+    /// Function: UpdateRiotBrain<br/>
+    /// Native code at BatmanAK.exe+0x509370 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateRiotBrain(float DeltaTime, BmSDK.BmGame.RBMAIController OwnerController)
     {
@@ -236,7 +238,8 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRiotPointValidForRioter;
     /// <summary>
-    /// Function: IsRiotPointValidForRioter
+    /// Function: IsRiotPointValidForRioter<br/>
+    /// Native code at BatmanAK.exe+0xB73150 in the Steam build
     /// </summary>
     public unsafe virtual bool IsRiotPointValidForRioter(BmSDK.BmGame.RGangInteractPointBase TestPoint)
     {

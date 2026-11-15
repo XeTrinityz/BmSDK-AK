@@ -75,7 +75,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
-    /// Function: SetEnabled
+    /// Function: SetEnabled<br/>
+    /// Native code at BatmanAK.exe+0xB5D090 in the Steam build
     /// </summary>
     public unsafe virtual void SetEnabled(bool Enabled)
     {
@@ -97,7 +98,8 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoInitRBPhys;
     /// <summary>
-    /// Function: DoInitRBPhys
+    /// Function: DoInitRBPhys<br/>
+    /// Native code at BatmanAK.exe+0xB2DB10 in the Steam build
     /// </summary>
     public unsafe virtual void DoInitRBPhys()
     {

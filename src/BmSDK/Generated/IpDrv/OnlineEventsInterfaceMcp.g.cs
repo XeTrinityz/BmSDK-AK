@@ -80,7 +80,8 @@ public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UploadMatchmakingStats;
     /// <summary>
-    /// Function: UploadMatchmakingStats
+    /// Function: UploadMatchmakingStats<br/>
+    /// Native code at BatmanAK.exe+0x6AEE60 in the Steam build
     /// </summary>
     public unsafe virtual bool UploadMatchmakingStats(BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqueId, BmSDK.Engine.OnlineMatchmakingStats MMStats)
     {
@@ -103,7 +104,8 @@ public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlaylistPopulation;
     /// <summary>
-    /// Function: UpdatePlaylistPopulation
+    /// Function: UpdatePlaylistPopulation<br/>
+    /// Native code at BatmanAK.exe+0x6AEC70 in the Steam build
     /// </summary>
     public unsafe virtual bool UpdatePlaylistPopulation(int PlaylistId, int NumPlayers)
     {
@@ -126,7 +128,8 @@ public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UploadGameplayEventsData;
     /// <summary>
-    /// Function: UploadGameplayEventsData
+    /// Function: UploadGameplayEventsData<br/>
+    /// Native code at BatmanAK.exe+0x6B3730 in the Steam build
     /// </summary>
     public unsafe virtual bool UploadGameplayEventsData(BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqueId, out BmSDK.TArray<byte> Payload)
     {
@@ -149,7 +152,8 @@ public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UploadPlayerData;
     /// <summary>
-    /// Function: UploadPlayerData
+    /// Function: UploadPlayerData<br/>
+    /// Native code at BatmanAK.exe+0x6B3440 in the Steam build
     /// </summary>
     public unsafe virtual bool UploadPlayerData(BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqueId, BmSDK.FStringArg PlayerNick, BmSDK.Engine.OnlineProfileSettings ProfileSettings, BmSDK.Engine.OnlinePlayerStorage PlayerStorage)
     {

@@ -123,7 +123,8 @@ public partial class RBMPathNode_VariablePositionTraverseProxy : BmSDK.BmGame.RB
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntersectionPoint;
     /// <summary>
-    /// Function: GetIntersectionPoint
+    /// Function: GetIntersectionPoint<br/>
+    /// Native code at BatmanAK.exe+0x480590 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetIntersectionPoint(System.Numerics.Vector3 pawnLoc, System.Numerics.Vector3 DestLoc)
     {

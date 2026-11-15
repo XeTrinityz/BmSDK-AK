@@ -271,7 +271,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatineePlaypack;
     /// <summary>
-    /// Function: SetMatineePlaypack
+    /// Function: SetMatineePlaypack<br/>
+    /// Native code at BatmanAK.exe+0x4FAC20 in the Steam build
     /// </summary>
     public unsafe virtual void SetMatineePlaypack(float playback_speed)
     {
@@ -293,7 +294,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorHidden;
     /// <summary>
-    /// Function: SetActorHidden
+    /// Function: SetActorHidden<br/>
+    /// Native code at BatmanAK.exe+0x4B0140 in the Steam build
     /// </summary>
     public unsafe virtual void SetActorHidden(BmSDK.Engine.Actor the_actor, bool is_hidden)
     {
@@ -316,7 +318,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDirectorAndSloMoGroup;
     /// <summary>
-    /// Function: SetDirectorAndSloMoGroup
+    /// Function: SetDirectorAndSloMoGroup<br/>
+    /// Native code at BatmanAK.exe+0x4AFF60 in the Steam build
     /// </summary>
     public unsafe virtual void SetDirectorAndSloMoGroup(int director_index, int slomo_index)
     {
@@ -339,7 +342,8 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseMatinee;
     /// <summary>
-    /// Function: InitialiseMatinee
+    /// Function: InitialiseMatinee<br/>
+    /// Native code at BatmanAK.exe+0x47F680 in the Steam build
     /// </summary>
     public unsafe virtual void InitialiseMatinee()
     {

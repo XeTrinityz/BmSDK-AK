@@ -75,7 +75,8 @@ public partial class RNinjaSpawnPointBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnNinja;
     /// <summary>
-    /// Function: SpawnNinja
+    /// Function: SpawnNinja<br/>
+    /// Native code at BatmanAK.exe+0x48C580 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI SpawnNinja()
     {

@@ -80,7 +80,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngleAndRadius;
     /// <summary>
-    /// Function: SetAngleAndRadius
+    /// Function: SetAngleAndRadius<br/>
+    /// Native code at BatmanAK.exe+0xB8AEB0 in the Steam build
     /// </summary>
     public unsafe virtual void SetAngleAndRadius(float NewInnerConeAngle, float NewOuterConeAngle, float NewRadius)
     {
@@ -104,7 +105,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAbsoluteRotation;
     /// <summary>
-    /// Function: SetAbsoluteRotation
+    /// Function: SetAbsoluteRotation<br/>
+    /// Native code at BatmanAK.exe+0xB8AD90 in the Steam build
     /// </summary>
     public unsafe virtual void SetAbsoluteRotation(bool bNewAbsoluteRotation)
     {
@@ -126,7 +128,8 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotation;
     /// <summary>
-    /// Function: SetRotation
+    /// Function: SetRotation<br/>
+    /// Native code at BatmanAK.exe+0xB430E0 in the Steam build
     /// </summary>
     public unsafe virtual void SetRotation(BmSDK.Rotator NewRotation)
     {

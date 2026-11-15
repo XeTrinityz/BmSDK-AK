@@ -145,7 +145,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToGrapplePoint;
     /// <summary>
-    /// Function: LinkToGrapplePoint
+    /// Function: LinkToGrapplePoint<br/>
+    /// Native code at BatmanAK.exe+0x50B300 in the Steam build
     /// </summary>
     public unsafe virtual bool LinkToGrapplePoint(BmSDK.Engine.Actor LinkActor, bool LinkOrUnlink)
     {
@@ -321,7 +322,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
-    /// Function: GetAIPointOfInterestExtent
+    /// Function: GetAIPointOfInterestExtent<br/>
+    /// Native code at BatmanAK.exe+0x46A5C0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
@@ -399,7 +401,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
-    /// Function: RegisterWithNavMesh
+    /// Function: RegisterWithNavMesh<br/>
+    /// Native code at BatmanAK.exe+0x50B1C0 in the Steam build
     /// </summary>
     public unsafe virtual bool RegisterWithNavMesh(bool bRegister)
     {
@@ -421,7 +424,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHorizontal;
     /// <summary>
-    /// Function: IsHorizontal
+    /// Function: IsHorizontal<br/>
+    /// Native code at BatmanAK.exe+0x48E720 in the Steam build
     /// </summary>
     public unsafe virtual bool IsHorizontal()
     {
@@ -442,7 +446,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumVisibleFragments;
     /// <summary>
-    /// Function: GetNumVisibleFragments
+    /// Function: GetNumVisibleFragments<br/>
+    /// Native code at BatmanAK.exe+0x46BE30 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumVisibleFragments()
     {
@@ -463,7 +468,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumFragments;
     /// <summary>
-    /// Function: GetNumFragments
+    /// Function: GetNumFragments<br/>
+    /// Native code at BatmanAK.exe+0x48E6D0 in the Steam build
     /// </summary>
     public unsafe virtual int GetNumFragments()
     {
@@ -484,7 +490,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPartMulti;
     /// <summary>
-    /// Function: SpawnPartMulti
+    /// Function: SpawnPartMulti<br/>
+    /// Native code at BatmanAK.exe+0x551420 in the Steam build
     /// </summary>
     public unsafe override BmSDK.Engine.FracturedStaticMeshPart SpawnPartMulti(BmSDK.TArray<int> ChunkIndices, System.Numerics.Vector3 InitialVel, System.Numerics.Vector3 InitialAngVel, float RelativeScale, bool bExplosion)
     {
@@ -510,7 +517,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWallState;
     /// <summary>
-    /// Function: UpdateWallState
+    /// Function: UpdateWallState<br/>
+    /// Native code at BatmanAK.exe+0x48E690 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateWallState()
     {
@@ -531,7 +539,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearestPointOnEdge;
     /// <summary>
-    /// Function: FindNearestPointOnEdge
+    /// Function: FindNearestPointOnEdge<br/>
+    /// Native code at BatmanAK.exe+0x48E5E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindNearestPointOnEdge(System.Numerics.Vector3 TestPoint)
     {
@@ -553,7 +562,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleExplode;
     /// <summary>
-    /// Function: HandleExplode
+    /// Function: HandleExplode<br/>
+    /// Native code at BatmanAK.exe+0x48E540 in the Steam build
     /// </summary>
     public unsafe virtual void HandleExplode(BmSDK.BmGame.RFractureWallBase.FRFractureWallExplosionTriggerData Explosion)
     {
@@ -575,7 +585,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallSideForPoint;
     /// <summary>
-    /// Function: GetWallSideForPoint
+    /// Function: GetWallSideForPoint<br/>
+    /// Native code at BatmanAK.exe+0x48E4A0 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RFractureWallBase.EFractureWallSide GetWallSideForPoint(System.Numerics.Vector3 TestPoint)
     {
@@ -597,7 +608,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallNormalForSide;
     /// <summary>
-    /// Function: GetWallNormalForSide
+    /// Function: GetWallNormalForSide<br/>
+    /// Native code at BatmanAK.exe+0x48E400 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallNormalForSide(BmSDK.BmGame.RFractureWallBase.EFractureWallSide FractureWallSide)
     {
@@ -633,7 +645,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCollisionBoundsExtents;
     /// <summary>
-    /// Function: GetCollisionBoundsExtents
+    /// Function: GetCollisionBoundsExtents<br/>
+    /// Native code at BatmanAK.exe+0x48E3A0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCollisionBoundsExtents()
     {
@@ -654,7 +667,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCollisionBoundsCentreInWorldSpace;
     /// <summary>
-    /// Function: GetCollisionBoundsCentreInWorldSpace
+    /// Function: GetCollisionBoundsCentreInWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x48E340 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCollisionBoundsCentreInWorldSpace()
     {
@@ -675,7 +689,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPathObstacleActive;
     /// <summary>
-    /// Function: SetPathObstacleActive
+    /// Function: SetPathObstacleActive<br/>
+    /// Native code at BatmanAK.exe+0x50B0A0 in the Steam build
     /// </summary>
     public unsafe virtual void SetPathObstacleActive(bool bNewActive)
     {
@@ -697,7 +712,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Function __fn_LoadFractureState;
     /// <summary>
-    /// Function: LoadFractureState
+    /// Function: LoadFractureState<br/>
+    /// Native code at BatmanAK.exe+0x480D30 in the Steam build
     /// </summary>
     public unsafe void LoadFractureState()
     {
@@ -718,7 +734,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Function __fn_SaveFractureState;
     /// <summary>
-    /// Function: SaveFractureState
+    /// Function: SaveFractureState<br/>
+    /// Native code at BatmanAK.exe+0x48E300 in the Steam build
     /// </summary>
     public unsafe void SaveFractureState()
     {
@@ -739,7 +756,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockOverBasedPawns;
     /// <summary>
-    /// Function: KnockOverBasedPawns
+    /// Function: KnockOverBasedPawns<br/>
+    /// Native code at BatmanAK.exe+0x48E2B0 in the Steam build
     /// </summary>
     public unsafe virtual int KnockOverBasedPawns()
     {
@@ -760,7 +778,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterExplodeSide;
     /// <summary>
-    /// Function: RegisterExplodeSide
+    /// Function: RegisterExplodeSide<br/>
+    /// Native code at BatmanAK.exe+0x48E1E0 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterExplodeSide(BmSDK.Engine.FracturedStaticMeshActor.FBreakOffPartsData BreakData)
     {
@@ -782,7 +801,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLastSloMoTime;
     /// <summary>
-    /// Function: CheckLastSloMoTime
+    /// Function: CheckLastSloMoTime<br/>
+    /// Native code at BatmanAK.exe+0x48E190 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckLastSloMoTime()
     {
@@ -803,7 +823,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonTargetLocation;
     /// <summary>
-    /// Function: GetHarpoonTargetLocation
+    /// Function: GetHarpoonTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x50AF20 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHarpoonTargetLocation(int ChunkIndex, System.Numerics.Vector3 PlayerLocation)
     {
@@ -826,7 +847,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChunkLocation;
     /// <summary>
-    /// Function: GetChunkLocation
+    /// Function: GetChunkLocation<br/>
+    /// Native code at BatmanAK.exe+0x50ADD0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetChunkLocation(int ChunkIndex)
     {
@@ -848,7 +870,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonChunkIndex;
     /// <summary>
-    /// Function: GetHarpoonChunkIndex
+    /// Function: GetHarpoonChunkIndex<br/>
+    /// Native code at BatmanAK.exe+0x50AC90 in the Steam build
     /// </summary>
     public unsafe virtual int GetHarpoonChunkIndex(int HarpoonChunk)
     {
@@ -870,7 +893,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBasePos;
     /// <summary>
-    /// Function: GetWallBasePos
+    /// Function: GetWallBasePos<br/>
+    /// Native code at BatmanAK.exe+0xB429D0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallBasePos()
     {
@@ -891,7 +915,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBoundsRadius;
     /// <summary>
-    /// Function: GetWallBoundsRadius
+    /// Function: GetWallBoundsRadius<br/>
+    /// Native code at BatmanAK.exe+0x48E140 in the Steam build
     /// </summary>
     public unsafe virtual float GetWallBoundsRadius()
     {
@@ -912,7 +937,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBounds;
     /// <summary>
-    /// Function: GetWallBounds
+    /// Function: GetWallBounds<br/>
+    /// Native code at BatmanAK.exe+0x48E0E0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallBounds()
     {
@@ -933,7 +959,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosOnWall;
     /// <summary>
-    /// Function: GetPosOnWall
+    /// Function: GetPosOnWall<br/>
+    /// Native code at BatmanAK.exe+0x48E030 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPosOnWall(System.Numerics.Vector3 LocalPos)
     {
@@ -955,7 +982,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentreInLocalSpace;
     /// <summary>
-    /// Function: GetWallCentreInLocalSpace
+    /// Function: GetWallCentreInLocalSpace<br/>
+    /// Native code at BatmanAK.exe+0x48DFD0 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentreInLocalSpace()
     {
@@ -976,7 +1004,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentre;
     /// <summary>
-    /// Function: GetWallCentre
+    /// Function: GetWallCentre<br/>
+    /// Native code at BatmanAK.exe+0x48DF70 in the Steam build
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentre()
     {
@@ -997,7 +1026,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
-    /// Function: GetFOVCheckLocation
+    /// Function: GetFOVCheckLocation<br/>
+    /// Native code at BatmanAK.exe+0xB50020 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
@@ -1018,7 +1048,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
-    /// Function: GetTargetLocation
+    /// Function: GetTargetLocation<br/>
+    /// Native code at BatmanAK.exe+0x46A1F0 in the Steam build
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
@@ -1041,7 +1072,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFragmentSaveName;
     /// <summary>
-    /// Function: GetFragmentSaveName
+    /// Function: GetFragmentSaveName<br/>
+    /// Native code at BatmanAK.exe+0x540E30 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetFragmentSaveName(int FragmentIndex)
     {
@@ -1063,7 +1095,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasExplodedToSide;
     /// <summary>
-    /// Function: GetHasExplodedToSide
+    /// Function: GetHasExplodedToSide<br/>
+    /// Native code at BatmanAK.exe+0x48DEE0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasExplodedToSide(BmSDK.BmGame.RFractureWallBase.EFractureWallSide TestSide)
     {
@@ -1085,7 +1118,8 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasInvisibleWallParts;
     /// <summary>
-    /// Function: GetHasInvisibleWallParts
+    /// Function: GetHasInvisibleWallParts<br/>
+    /// Native code at BatmanAK.exe+0x48DE90 in the Steam build
     /// </summary>
     public unsafe virtual bool GetHasInvisibleWallParts()
     {

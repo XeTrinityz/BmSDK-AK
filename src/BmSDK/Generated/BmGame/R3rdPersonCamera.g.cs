@@ -80,7 +80,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBonnetCameraLookSpring;
     /// <summary>
-    /// Function: UpdateBonnetCameraLookSpring
+    /// Function: UpdateBonnetCameraLookSpring<br/>
+    /// Native code at BatmanAK.exe+0x5138B0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateBonnetCameraLookSpring(float DeltaTime, System.Numerics.Vector3 Input)
     {
@@ -103,7 +104,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraPosition;
     /// <summary>
-    /// Function: UpdateCameraPosition
+    /// Function: UpdateCameraPosition<br/>
+    /// Native code at BatmanAK.exe+0x513730 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCameraPosition(float DeltaTime, bool ProperReset = default)
     {
@@ -197,7 +199,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertCameraWanderToWorldSpace;
     /// <summary>
-    /// Function: ConvertCameraWanderToWorldSpace
+    /// Function: ConvertCameraWanderToWorldSpace<br/>
+    /// Native code at BatmanAK.exe+0x48DF70 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.Rotator ConvertCameraWanderToWorldSpace()
     {
@@ -289,7 +292,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBatmobileJumpCameraGoLeft;
     /// <summary>
-    /// Function: ShouldBatmobileJumpCameraGoLeft
+    /// Function: ShouldBatmobileJumpCameraGoLeft<br/>
+    /// Native code at BatmanAK.exe+0x495630 in the Steam build
     /// </summary>
     public unsafe virtual bool ShouldBatmobileJumpCameraGoLeft()
     {
@@ -310,7 +314,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DrivingCameraTick;
     /// <summary>
-    /// Function: DrivingCameraTick
+    /// Function: DrivingCameraTick<br/>
+    /// Native code at BatmanAK.exe+0x513600 in the Steam build
     /// </summary>
     public unsafe virtual void DrivingCameraTick(float DeltaTime)
     {
@@ -346,7 +351,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTunnelCameraDirection;
     /// <summary>
-    /// Function: GetTunnelCameraDirection
+    /// Function: GetTunnelCameraDirection<br/>
+    /// Native code at BatmanAK.exe+0x495590 in the Steam build
     /// </summary>
     public unsafe virtual void GetTunnelCameraDirection(out System.Numerics.Vector3 InDirection)
     {
@@ -474,7 +480,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FillCameraCache;
     /// <summary>
-    /// Function: FillCameraCache
+    /// Function: FillCameraCache<br/>
+    /// Native code at BatmanAK.exe+0x4954F0 in the Steam build
     /// </summary>
     public unsafe override void FillCameraCache(out BmSDK.GameObject.FTPOV NewPOV)
     {
@@ -498,7 +505,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideClippingObjects;
     /// <summary>
-    /// Function: HideClippingObjects
+    /// Function: HideClippingObjects<br/>
+    /// Native code at BatmanAK.exe+0x495450 in the Steam build
     /// </summary>
     public unsafe virtual void HideClippingObjects(out BmSDK.GameObject.FTPOV NewPOV)
     {
@@ -522,7 +530,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateZoomFocus;
     /// <summary>
-    /// Function: UpdateZoomFocus
+    /// Function: UpdateZoomFocus<br/>
+    /// Native code at BatmanAK.exe+0x5134D0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateZoomFocus(float DeltaTime)
     {
@@ -544,7 +553,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
-    /// Function: SetViewTarget
+    /// Function: SetViewTarget<br/>
+    /// Native code at BatmanAK.exe+0x4A2BA0 in the Steam build
     /// </summary>
     public unsafe override void SetViewTarget(BmSDK.Engine.Actor NewViewTarget, BmSDK.Engine.Camera.FViewTargetTransitionParams TransitionParams = default)
     {
@@ -567,7 +577,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendViewTargets;
     /// <summary>
-    /// Function: BlendViewTargets
+    /// Function: BlendViewTargets<br/>
+    /// Native code at BatmanAK.exe+0x5132C0 in the Steam build
     /// </summary>
     public unsafe override BmSDK.GameObject.FTPOV BlendViewTargets(out BmSDK.Engine.Camera.FTViewTarget A, out BmSDK.Engine.Camera.FTViewTarget B, float Alpha)
     {
@@ -938,7 +949,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCameraDrag;
     /// <summary>
-    /// Function: DisableCameraDrag
+    /// Function: DisableCameraDrag<br/>
+    /// Native code at BatmanAK.exe+0x4953C0 in the Steam build
     /// </summary>
     public unsafe virtual void DisableCameraDrag(float Time = default)
     {
@@ -1065,7 +1077,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraModifiers;
     /// <summary>
-    /// Function: ApplyCameraModifiers
+    /// Function: ApplyCameraModifiers<br/>
+    /// Native code at BatmanAK.exe+0x4A2A20 in the Steam build
     /// </summary>
     public unsafe override void ApplyCameraModifiers(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
@@ -1197,7 +1210,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlidingCameraSmoothingStrength;
     /// <summary>
-    /// Function: GetGlidingCameraSmoothingStrength
+    /// Function: GetGlidingCameraSmoothingStrength<br/>
+    /// Native code at BatmanAK.exe+0x513180 in the Steam build
     /// </summary>
     public unsafe virtual float GetGlidingCameraSmoothingStrength(BmSDK.FName StateName)
     {
@@ -1338,7 +1352,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendToCameraTarget;
     /// <summary>
-    /// Function: BlendToCameraTarget
+    /// Function: BlendToCameraTarget<br/>
+    /// Native code at BatmanAK.exe+0x512E70 in the Steam build
     /// </summary>
     public unsafe virtual void BlendToCameraTarget(BmSDK.Engine.Actor Target, float BlendTime, bool bResetCam = default, BmSDK.Rotator ResetRotation = default, bool BlendBatmanRelativePosition = default, bool bDontAffectRotation = default)
     {
@@ -1365,7 +1380,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginWalkCamera;
     /// <summary>
-    /// Function: BeginWalkCamera
+    /// Function: BeginWalkCamera<br/>
+    /// Native code at BatmanAK.exe+0x495380 in the Steam build
     /// </summary>
     public unsafe virtual void BeginWalkCamera()
     {
@@ -1386,7 +1402,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginBrawlCombatCamera;
     /// <summary>
-    /// Function: BeginBrawlCombatCamera
+    /// Function: BeginBrawlCombatCamera<br/>
+    /// Native code at BatmanAK.exe+0x495340 in the Steam build
     /// </summary>
     public unsafe virtual void BeginBrawlCombatCamera()
     {
@@ -1407,7 +1424,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginFree3rdPersonCam;
     /// <summary>
-    /// Function: BeginFree3rdPersonCam
+    /// Function: BeginFree3rdPersonCam<br/>
+    /// Native code at BatmanAK.exe+0x495300 in the Steam build
     /// </summary>
     public unsafe virtual void BeginFree3rdPersonCam()
     {
@@ -1428,7 +1446,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFreeCam;
     /// <summary>
-    /// Function: UpdateFreeCam
+    /// Function: UpdateFreeCam<br/>
+    /// Native code at BatmanAK.exe+0x512BF0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateFreeCam(System.Numerics.Vector3 DesiredCameraPosition, BmSDK.Rotator DesiredCameraRotation, float DesiredCameraFOV, float DeltaTime)
     {
@@ -1453,7 +1472,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_TransitionInterpolate;
     /// <summary>
-    /// Function: TransitionInterpolate
+    /// Function: TransitionInterpolate<br/>
+    /// Native code at BatmanAK.exe+0x512AC0 in the Steam build
     /// </summary>
     public unsafe virtual void TransitionInterpolate(float DeltaTime)
     {
@@ -1520,7 +1540,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDrivingCamSettings;
     /// <summary>
-    /// Function: UpdateDrivingCamSettings
+    /// Function: UpdateDrivingCamSettings<br/>
+    /// Native code at BatmanAK.exe+0x494890 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateDrivingCamSettings()
     {
@@ -1541,7 +1562,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_nativeResetCameraFree3rdPersonCam;
     /// <summary>
-    /// Function: nativeResetCameraFree3rdPersonCam
+    /// Function: nativeResetCameraFree3rdPersonCam<br/>
+    /// Native code at BatmanAK.exe+0x4951C0 in the Steam build
     /// </summary>
     public unsafe virtual void nativeResetCameraFree3rdPersonCam(BmSDK.Rotator ResetRotation = default, bool bResetForBlend = default, bool bResetSmoother = default)
     {
@@ -1565,7 +1587,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_nativeResetCamera;
     /// <summary>
-    /// Function: nativeResetCamera
+    /// Function: nativeResetCamera<br/>
+    /// Native code at BatmanAK.exe+0x495080 in the Steam build
     /// </summary>
     public unsafe virtual void nativeResetCamera(BmSDK.Rotator ResetRotation = default, bool bResetForBlend = default, bool bResetSmoother = default)
     {
@@ -1589,7 +1612,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateViewTarget;
     /// <summary>
-    /// Function: UpdateViewTarget
+    /// Function: UpdateViewTarget<br/>
+    /// Native code at BatmanAK.exe+0x512940 in the Steam build
     /// </summary>
     public unsafe override void UpdateViewTarget(out BmSDK.Engine.Camera.FTViewTarget OutVT, float DeltaTime)
     {
@@ -1650,7 +1674,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DoUpdateCameraNative;
     /// <summary>
-    /// Function: DoUpdateCameraNative
+    /// Function: DoUpdateCameraNative<br/>
+    /// Native code at BatmanAK.exe+0x512810 in the Steam build
     /// </summary>
     public unsafe virtual void DoUpdateCameraNative(float DeltaTime)
     {
@@ -1672,7 +1697,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessViewRotation;
     /// <summary>
-    /// Function: ProcessViewRotation
+    /// Function: ProcessViewRotation<br/>
+    /// Native code at BatmanAK.exe+0x512650 in the Steam build
     /// </summary>
     public unsafe override void ProcessViewRotation(float DeltaTime, out BmSDK.Rotator out_ViewRotation, out BmSDK.Rotator out_DeltaRot)
     {
@@ -1715,7 +1741,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FollowCameraRotation;
     /// <summary>
-    /// Function: FollowCameraRotation
+    /// Function: FollowCameraRotation<br/>
+    /// Native code at BatmanAK.exe+0x495030 in the Steam build
     /// </summary>
     public unsafe virtual bool FollowCameraRotation()
     {
@@ -1781,7 +1808,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveFreeCameraConfig;
     /// <summary>
-    /// Function: SaveFreeCameraConfig
+    /// Function: SaveFreeCameraConfig<br/>
+    /// Native code at BatmanAK.exe+0x494F80 in the Steam build
     /// </summary>
     public unsafe virtual void SaveFreeCameraConfig(out BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig ConfigToSave)
     {
@@ -1805,7 +1833,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFreeCameraConfig;
     /// <summary>
-    /// Function: SetFreeCameraConfig
+    /// Function: SetFreeCameraConfig<br/>
+    /// Native code at BatmanAK.exe+0x494EE0 in the Steam build
     /// </summary>
     public unsafe virtual void SetFreeCameraConfig(BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig NewConfig)
     {
@@ -2074,7 +2103,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWideScreenDisplay;
     /// <summary>
-    /// Function: IsWideScreenDisplay
+    /// Function: IsWideScreenDisplay<br/>
+    /// Native code at BatmanAK.exe+0x494E90 in the Steam build
     /// </summary>
     public unsafe virtual bool IsWideScreenDisplay()
     {
@@ -2095,7 +2125,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGrateCameraPivot;
     /// <summary>
-    /// Function: CheckGrateCameraPivot
+    /// Function: CheckGrateCameraPivot<br/>
+    /// Native code at BatmanAK.exe+0x494E40 in the Steam build
     /// </summary>
     public unsafe virtual bool CheckGrateCameraPivot()
     {
@@ -2116,7 +2147,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLocation;
     /// <summary>
-    /// Function: CheckLocation
+    /// Function: CheckLocation<br/>
+    /// Native code at BatmanAK.exe+0x46BAD0 in the Steam build
     /// </summary>
     public unsafe virtual void CheckLocation()
     {
@@ -2137,7 +2169,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSmoother;
     /// <summary>
-    /// Function: ResetSmoother
+    /// Function: ResetSmoother<br/>
+    /// Native code at BatmanAK.exe+0x494E00 in the Steam build
     /// </summary>
     public unsafe virtual void ResetSmoother()
     {
@@ -2158,7 +2191,8 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraWander;
     /// <summary>
-    /// Function: UpdateCameraWander
+    /// Function: UpdateCameraWander<br/>
+    /// Native code at BatmanAK.exe+0x512520 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateCameraWander(float DeltaTime)
     {

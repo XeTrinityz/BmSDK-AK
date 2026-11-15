@@ -80,7 +80,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateDiscoveryMethod;
     /// <summary>
-    /// Function: CalculateDiscoveryMethod
+    /// Function: CalculateDiscoveryMethod<br/>
+    /// Native code at BatmanAK.exe+0x50FB00 in the Steam build
     /// </summary>
     public unsafe virtual bool CalculateDiscoveryMethod(BmSDK.Engine.Actor Actor, BmSDK.Engine.Actor.FTraceHitInfo Hit)
     {
@@ -103,7 +104,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PhysObjectDetectorUpdate;
     /// <summary>
-    /// Function: PhysObjectDetectorUpdate
+    /// Function: PhysObjectDetectorUpdate<br/>
+    /// Native code at BatmanAK.exe+0x492EF0 in the Steam build
     /// </summary>
     public unsafe virtual bool PhysObjectDetectorUpdate(System.Numerics.Vector3 GrabberLocation, BmSDK.Rotator GrabberRotation, out float OutUnrealHitDistance, out BmSDK.Engine.Actor OutHitActor, out BmSDK.Engine.RB_BodyInstance OutHitBodyInstance, out System.Numerics.Vector3 OutHitShapeBoundsCentre, out System.Numerics.Vector3 OutHitShapeBoundsExtents, out System.Numerics.Vector3 OutHitLocation, out System.Numerics.Vector3 OutHitNormal)
     {
@@ -252,7 +254,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBBodyInstancePointerString;
     /// <summary>
-    /// Function: GetRBBodyInstancePointerString
+    /// Function: GetRBBodyInstancePointerString<br/>
+    /// Native code at BatmanAK.exe+0x542750 in the Steam build
     /// </summary>
     public unsafe virtual BmSDK.FString GetRBBodyInstancePointerString()
     {
@@ -479,7 +482,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStartEndTracePoints;
     /// <summary>
-    /// Function: GetStartEndTracePoints
+    /// Function: GetStartEndTracePoints<br/>
+    /// Native code at BatmanAK.exe+0x492E00 in the Steam build
     /// </summary>
     public unsafe virtual void GetStartEndTracePoints(out System.Numerics.Vector3 TraceStart, out System.Numerics.Vector3 TraceEnd)
     {
@@ -506,7 +510,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetApexDestructibleChunkIndex;
     /// <summary>
-    /// Function: GetApexDestructibleChunkIndex
+    /// Function: GetApexDestructibleChunkIndex<br/>
+    /// Native code at BatmanAK.exe+0x5122C0 in the Steam build
     /// </summary>
     public unsafe virtual int GetApexDestructibleChunkIndex(BmSDK.BmGame.RApexStaticDestructibleComponent ApexComponent)
     {
@@ -528,7 +533,8 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshInfo;
     /// <summary>
-    /// Function: GetNavMeshInfo
+    /// Function: GetNavMeshInfo<br/>
+    /// Native code at BatmanAK.exe+0x5424C0 in the Steam build
     /// </summary>
     public unsafe virtual bool GetNavMeshInfo(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.FString NavMeshString, out System.Numerics.Vector3 NavMeshHitPoint, out System.Numerics.Vector3 NavMeshHitNormal, out int StringR, out int StringG, out int StringB)
     {

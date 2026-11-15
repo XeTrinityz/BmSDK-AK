@@ -80,7 +80,8 @@ public partial class RSpecialMoveControllerCW : BmSDK.BmGame.RSpecialMoveControl
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestSpecialMove;
     /// <summary>
-    /// Function: FindBestSpecialMove
+    /// Function: FindBestSpecialMove<br/>
+    /// Native code at BatmanAK.exe+0x4DE700 in the Steam build
     /// </summary>
     public unsafe override BmSDK.BmGame.RSpecialMoveConfig FindBestSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Feature, BmSDK.Engine.Pawn Instigator, float DeltaTime, BmSDK.Rotator CheckDirection, System.Numerics.Vector3 StickDir = default)
     {

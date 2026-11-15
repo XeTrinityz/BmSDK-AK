@@ -15,6 +15,10 @@ sealed class Dump
     public readonly Dictionary<string, Node> Index = new(StringComparer.Ordinal);
     public readonly List<string> Report = [];
 
+    // The build the dump came from, and the code every script function points at.
+    public string Build = "";
+    public ulong ScriptCodeRva;
+
     sealed class Candidate
     {
         public required ClassNode Class;
@@ -30,6 +34,7 @@ sealed class Dump
         var candidates = new Dictionary<string, List<Candidate>>(StringComparer.Ordinal);
         var failed = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         var order = 0;
+        var build = "";
 
         foreach (var file in files)
         {
@@ -37,6 +42,12 @@ sealed class Dump
             var count = 0;
             foreach (var line in File.ReadLines(file))
             {
+                if (line.StartsWith("{\"t\":\"meta\"", StringComparison.Ordinal))
+                {
+                    using var meta = JsonDocument.Parse(line);
+                    build = meta.RootElement.GetProperty("build").GetString() ?? "";
+                    continue;
+                }
                 if (line.StartsWith("{\"t\":\"package\"", StringComparison.Ordinal))
                 {
                     using var pkg = JsonDocument.Parse(line);
@@ -71,7 +82,7 @@ sealed class Dump
             Console.WriteLine($"{Path.GetFileName(file)}: {count} classes");
         }
 
-        var dump = new Dump();
+        var dump = new Dump { Build = build };
         foreach (var (path, list) in candidates)
         {
             var usable = list.Where(c => c.Class.Size > 0 && !c.Sources.All(failed.Contains)).ToList();
@@ -104,6 +115,12 @@ sealed class Dump
         {
             dump.AddToIndex(cls);
         }
+
+        // Script functions all run through the same code, ProcessInternal
+        dump.ScriptCodeRva = dump.Index.Values.OfType<FuncNode>()
+            .Where(f => (f.Flags & Flags.FUNC_Native) == 0 && f.CodeRva is not null)
+            .GroupBy(f => f.CodeRva!.Value)
+            .MaxBy(g => g.Count())?.Key ?? 0;
         return dump;
     }
 
@@ -240,6 +257,10 @@ sealed class Dump
                     : new StructNode { Name = name, Path = path, Outer = outer, Kind = kind };
                 node.SuperPath = Str(f, "super");
                 node.Size = f.GetProperty("size").GetInt32();
+                if (node is FuncNode func && f.TryGetProperty("ptrs", out var ptrs))
+                {
+                    func.CodeRva = CodeRva(ptrs);
+                }
                 node.Align = f.TryGetProperty("align", out var a) ? a.GetInt32() : 0;
                 ReadFields(f, node, node.Fields);
                 node.Defaults = ReadDefaults(f);
@@ -292,6 +313,22 @@ sealed class Dump
             }
         }
         return node;
+    }
+
+    // A UFunction holds the pointer to its code at offset 188.
+    const int FunctionCode = 188;
+
+    static ulong? CodeRva(JsonElement ptrs)
+    {
+        foreach (var ptr in ptrs.EnumerateArray())
+        {
+            var target = ptr[1].GetString()!;
+            if (ptr[0].GetInt32() == FunctionCode && target.StartsWith("rva:0x", StringComparison.Ordinal))
+            {
+                return ulong.Parse(target.AsSpan(6), NumberStyles.HexNumber, CultureInfo.InvariantCulture);
+            }
+        }
+        return null;
     }
 
     static Dictionary<string, JsonElement>? ReadDefaults(JsonElement e)

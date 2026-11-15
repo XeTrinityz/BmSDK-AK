@@ -296,7 +296,8 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNaN;
     /// <summary>
-    /// Function: IsNaN
+    /// Function: IsNaN<br/>
+    /// Native code at BatmanAK.exe+0x480430 in the Steam build
     /// </summary>
     public unsafe virtual bool IsNaN(System.Numerics.Vector3 TestVector)
     {

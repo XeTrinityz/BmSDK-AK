@@ -305,7 +305,8 @@ public partial class RCombatMove_BatmanAirStrike : BmSDK.BmGame.RCombatMove_Batm
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyInfoSearchParams;
     /// <summary>
-    /// Function: ModifyInfoSearchParams
+    /// Function: ModifyInfoSearchParams<br/>
+    /// Native code at BatmanAK.exe+0x479D70 in the Steam build
     /// </summary>
     public unsafe override void ModifyInfoSearchParams(out BmSDK.BmGame.RGameInfo.StrikeDirection InfoDir, out BmSDK.BmGame.RGameInfo.StrikeStrength InfoStrength, out BmSDK.BmGame.RGameInfo.StrikeRange InfoRange, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoRailingDir, out BmSDK.BmGame.RPawnPlayerCombat.StrikeEnvironmentDir InfoWallDir)
     {

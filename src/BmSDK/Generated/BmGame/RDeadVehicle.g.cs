@@ -127,7 +127,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
-    /// Function: UnRegisterObstacle
+    /// Function: UnRegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x499600 in the Steam build
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstant = default)
     {
@@ -149,7 +150,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
-    /// Function: RegisterObstacle
+    /// Function: RegisterObstacle<br/>
+    /// Native code at BatmanAK.exe+0x46C620 in the Steam build
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
@@ -376,7 +378,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideTurret;
     /// <summary>
-    /// Function: HideTurret
+    /// Function: HideTurret<br/>
+    /// Native code at BatmanAK.exe+0x522A60 in the Steam build
     /// </summary>
     public unsafe virtual void HideTurret(BmSDK.FName TurretBoneName)
     {
@@ -398,7 +401,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideAllButTurret;
     /// <summary>
-    /// Function: HideAllButTurret
+    /// Function: HideAllButTurret<br/>
+    /// Native code at BatmanAK.exe+0x522930 in the Steam build
     /// </summary>
     public unsafe virtual void HideAllButTurret(BmSDK.FName TurretBoneName)
     {
@@ -420,7 +424,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBonesForBrokenOffParts;
     /// <summary>
-    /// Function: HideBonesForBrokenOffParts
+    /// Function: HideBonesForBrokenOffParts<br/>
+    /// Native code at BatmanAK.exe+0x522740 in the Steam build
     /// </summary>
     public unsafe virtual void HideBonesForBrokenOffParts(BmSDK.BmGame.RVisualDamageComponent VisualDamageComp, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp)
     {
@@ -443,7 +448,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateConstraintFramesForDeformation;
     /// <summary>
-    /// Function: UpdateConstraintFramesForDeformation
+    /// Function: UpdateConstraintFramesForDeformation<br/>
+    /// Native code at BatmanAK.exe+0x4995C0 in the Steam build
     /// </summary>
     public unsafe virtual void UpdateConstraintFramesForDeformation()
     {
@@ -464,7 +470,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakRandomConstraints;
     /// <summary>
-    /// Function: BreakRandomConstraints
+    /// Function: BreakRandomConstraints<br/>
+    /// Native code at BatmanAK.exe+0x522620 in the Steam build
     /// </summary>
     public unsafe virtual void BreakRandomConstraints(int PercentChanceOfBreak)
     {
@@ -486,7 +493,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideChunksInVolume;
     /// <summary>
-    /// Function: HideChunksInVolume
+    /// Function: HideChunksInVolume<br/>
+    /// Native code at BatmanAK.exe+0x5224F0 in the Steam build
     /// </summary>
     public unsafe virtual void HideChunksInVolume(BmSDK.Engine.Volume InVolume)
     {
@@ -508,7 +516,8 @@ public partial class RDeadVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.Engin
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventChunksFallingOutOfWorld;
     /// <summary>
-    /// Function: PreventChunksFallingOutOfWorld
+    /// Function: PreventChunksFallingOutOfWorld<br/>
+    /// Native code at BatmanAK.exe+0x46D840 in the Steam build
     /// </summary>
     public unsafe virtual void PreventChunksFallingOutOfWorld()
     {
