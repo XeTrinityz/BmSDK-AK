@@ -82,7 +82,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// <summary>
     /// Function: ToString
     /// </summary>
-    public unsafe virtual BmSDK.FString ToString()
+    public unsafe new virtual BmSDK.FString ToString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToString, "BmGame.RPoseConfig.ToString", this);

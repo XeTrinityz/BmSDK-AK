@@ -550,6 +550,13 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
             }
             else
             {
+                // A script function named like one of object's own methods hides it on purpose.
+                if (func.Params.empty() && !func.IsStatic
+                    && (func.ManagedName == "ToString" || func.ManagedName == "GetHashCode" || func.ManagedName == "GetType"))
+                {
+                    out << "new ";
+                }
+
                 out << "virtual ";
             }
         }

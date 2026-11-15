@@ -82,7 +82,7 @@ public partial class RWeaponConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// <summary>
     /// Function: ToString
     /// </summary>
-    public unsafe virtual BmSDK.FString ToString()
+    public unsafe new virtual BmSDK.FString ToString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToString, "BmGame.RWeaponConfig.ToString", this);
