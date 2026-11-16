@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.24.1](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.24.0...v0.24.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* Load a package again when an object it needs is gone ([3a4d6f7](https://github.com/XeTrinityz/BmSDK-AK/commit/3a4d6f7c40dba121e23f19d2f8f81156930d4878))
+* Run the original when two redirects both call RunOriginal ([75341b2](https://github.com/XeTrinityz/BmSDK-AK/commit/75341b22578f2d1a51ffbc7398f4c7ca2350bf68))
+
 ## [0.24.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.23.0...v0.24.0) (2026-11-15)
 
 
