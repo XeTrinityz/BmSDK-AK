@@ -86,18 +86,28 @@ public static partial class Game
     /// already. The name is the file's, with or without the "_SF" a cooked package has on the end.
     /// Loading a package that isn't installed can leave the game broken, and one too big for the
     /// object table ends it, so both are checked first.
+    /// A package can stay in memory after the game has collected the objects in it. Pass the full
+    /// path of an object you need as <paramref name="needs"/> and the file is read again when that
+    /// object is gone. Then this only returns true if the object is there after the load.
     /// </summary>
     /// <param name="name">The package's file name, without ".upk".</param>
     /// <param name="package">The package, when this returns true.</param>
     /// <param name="spareObjects">Room to leave free on top of what the package needs, for what the
     /// world streams in around it.</param>
-    public static bool TryLoadPackage(string name, [NotNullWhen(true)] out Package? package, int spareObjects = 12000)
+    /// <param name="needs">The full path of an object needed from the package, like
+    /// "Anim_Scarecrow.Code.Stagg_B3_Anim_SC_BM". Leave it null to accept the package if it is loaded.</param>
+    public static bool TryLoadPackage(string name, [NotNullWhen(true)] out Package? package, int spareObjects = 12000, string? needs = null)
     {
         package = null;
         foreach (var candidate in PackageFiles.Candidates(name))
         {
             if (FindObject<Package>(candidate) is { IsValid: true } loaded)
             {
+                if (needs is not null && !HasObject(needs))
+                {
+                    break;
+                }
+
                 package = loaded;
                 return true;
             }
@@ -117,8 +127,22 @@ public static partial class Game
         }
 
         package = LoadPackage(file.Name);
-        return package is { IsValid: true };
+        if (package is not { IsValid: true })
+        {
+            return false;
+        }
+
+        if (needs is not null && !HasObject(needs))
+        {
+            PackageFiles.WarnOnce(name, $"Package {name} was loaded but {needs} isn't in it.");
+            package = null;
+            return false;
+        }
+
+        return true;
     }
+
+    private static bool HasObject(string path) => FindObject<GameObject>(path) is { IsValid: true };
 }
 
 /// <summary>
