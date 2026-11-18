@@ -140,8 +140,21 @@ public partial class GameObject
     {
         Guard.Require(component.IsOwner(this), "Component is not attached to this object");
 
-        // Invoke detach callback
-        component.OnDetach();
+        // Invoke detach callback. It also runs while the game destroys the object and on a hot reload,
+        // where an exception from the mod ended the game or left the reload half done. The game destroys
+        // objects on its loading threads too, so this only logs and keeps clear of ModGuard's state.
+        try
+        {
+            component.OnDetach();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"{component.GetType().Name}: OnDetach threw {ex.GetType().Name}: {ex.Message}", skipSender: true);
+            if (ex.StackTrace is { } trace)
+            {
+                Debug.Log(trace, skipSender: true);
+            }
+        }
 
         // Unregister any [ComponentRedirect] methods
         RedirectManager.Local.UnregisterComponentRedirectors(component);
