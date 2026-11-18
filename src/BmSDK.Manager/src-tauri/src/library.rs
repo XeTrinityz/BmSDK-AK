@@ -434,10 +434,21 @@ pub fn import_existing(state: &mut State, game: &Path) -> usize {
         ));
     }
 
-    for file in read_files(&game.join("BmGame").join("Scripts")) {
+    let scripts_dir = game.join("BmGame").join("Scripts");
+    for file in read_files(&scripts_dir) {
         let name = file.file_name().unwrap_or_default().to_string_lossy().to_string();
         if name.to_ascii_lowercase().ends_with(".cs") {
             found.push((name.clone(), Kind::LooseScripts, "BmSDK script".into(), vec![format!("BmGame/Scripts/{name}")]));
+        }
+    }
+    // BmSDK compiles scripts in folders under Scripts too. Left out, they'd still load with every mod turned off.
+    for entry in read_dirs(&scripts_dir) {
+        let folder = entry.file_name().unwrap_or_default().to_string_lossy().to_string();
+        let files = under(&entry, &format!("BmGame/Scripts/{folder}"));
+        let scripts = files.iter().filter(|f| f.to_ascii_lowercase().ends_with(".cs")).count();
+        if scripts > 0 {
+            let description = format!("BmSDK scripts, {scripts} in this folder");
+            found.push((folder, Kind::LooseScripts, description, files));
         }
     }
 
@@ -788,6 +799,36 @@ mod tests {
         assert!(lock_instance().is_err());
         drop(first);
         assert!(lock_instance().is_ok());
+    }
+
+    #[test]
+    fn scripts_in_a_folder_under_scripts_are_found_as_one_mod() {
+        let (_guard, _dir, game) = setup();
+        let scripts = game.join("BmGame").join("Scripts");
+        fs::create_dir_all(scripts.join("Pack").join("Core")).unwrap();
+        fs::create_dir_all(scripts.join("Notes")).unwrap();
+        fs::write(scripts.join("Top.cs"), "top").unwrap();
+        fs::write(scripts.join("Pack").join("Entry.cs"), "entry").unwrap();
+        fs::write(scripts.join("Pack").join("Core").join("Util.cs"), "util").unwrap();
+        fs::write(scripts.join("Pack").join("settings.toml"), "x").unwrap();
+        fs::write(scripts.join("Notes").join("readme.txt"), "no scripts here").unwrap();
+
+        let mut state = State::default();
+        assert_eq!(import_existing(&mut state, &game), 2);
+        let pack = state.mods.iter().find(|m| m.name == "Pack").unwrap();
+        assert_eq!(pack.kind, Kind::LooseScripts);
+        assert_eq!(pack.files.len(), 3);
+        let id = pack.id.clone();
+
+        // A second look doesn't list it again
+        assert_eq!(import_existing(&mut state, &game), 0);
+
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+        d.disable(&id).unwrap();
+        assert!(!scripts.join("Pack").exists());
+        assert!(scripts.join("Top.cs").exists());
+        d.enable(&id).unwrap();
+        assert_eq!(fs::read_to_string(scripts.join("Pack").join("Core").join("Util.cs")).unwrap(), "util");
     }
 
     #[test]
