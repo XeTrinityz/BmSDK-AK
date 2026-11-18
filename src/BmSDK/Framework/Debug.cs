@@ -5,7 +5,11 @@ namespace BmSDK.Framework;
 
 public static class Debug
 {
-    private static readonly Stack<string> s_senderStack = new();
+    // One per thread. A line logged from a mod's own thread, or from a hot reload, would otherwise get
+    // the name of whatever script the engine thread is running at that moment.
+    [ThreadStatic]
+    private static Stack<string>? t_senderStack;
+
     private static readonly ConsoleColor s_defaultColor = Console.ForegroundColor;
 
     /// <summary>
@@ -83,7 +87,7 @@ public static class Debug
         }
 
         // Get sender, else fall back to the source file name.
-        if (!s_senderStack.TryPeek(out var sender))
+        if (t_senderStack is not { } senders || !senders.TryPeek(out var sender))
         {
             sender = callerFilePath is null ? "UNKNOWN" : Path.GetFileName(callerFilePath);
         }
@@ -93,24 +97,24 @@ public static class Debug
 
     internal static void PushSender(string sender)
     {
-        s_senderStack.Push(sender);
+        (t_senderStack ??= new()).Push(sender);
     }
 
     internal static void PopSender()
     {
-        s_senderStack.Pop();
+        t_senderStack?.Pop();
     }
 
     internal static void RunWithSender(string sender, Action action)
     {
-        s_senderStack.Push(sender);
+        PushSender(sender);
         try
         {
             action();
         }
         finally
         {
-            s_senderStack.Pop();
+            PopSender();
         }
     }
 }

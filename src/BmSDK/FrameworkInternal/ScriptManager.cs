@@ -180,7 +180,8 @@ internal static class ScriptManager
         // Compiling is the slow part of starting up and each mod's is its own, so they run side by side.
         // The mods are still loaded one by one, in the same order as before.
         var compiled = new (MemoryStream? Pe, MemoryStream? Pdb, string? Dll)[jobs.Count];
-        Parallel.For(0, jobs.Count, i =>
+        // The log sender is kept per thread, so each worker names itself like the thread that started it.
+        Parallel.For(0, jobs.Count, i => Debug.RunWithSender("Loader", () =>
         {
             try
             {
@@ -199,7 +200,7 @@ internal static class ScriptManager
             {
                 Debug.LogError($"Failed to load {jobs[i].What}: {e.Message}");
             }
-        });
+        }));
 
         for (var i = 0; i < jobs.Count; i++)
         {
@@ -870,7 +871,7 @@ internal static class ScriptManager
         {
             if (!s_debounceTimers.TryGetValue(modDirPath, out var timer))
             {
-                timer = new Timer(_ => ReloadMod(modDirPath));
+                timer = new Timer(_ => Debug.RunWithSender("Loader", () => ReloadMod(modDirPath)));
                 s_debounceTimers[modDirPath] = timer;
             }
 
