@@ -7,10 +7,13 @@ namespace BmSDK.Framework;
 
 public static partial class Game
 {
+    // Every script meets these on the main menu or in a load. Constants, so a call that works pays nothing.
+    private const string Missing = " right now (main menu, loading or shutting down). Check with Game.";
+
     /// <summary>
     /// Gets the world info object for the currently-loaded world.
     /// </summary>
-    public static WorldInfo GetWorldInfo() => Guard.NotNull(WorldInfo.GetWorldInfo());
+    public static WorldInfo GetWorldInfo() => Guard.NotNull(WorldInfo.GetWorldInfo(), "There is no world" + Missing + nameof(TryGetWorldInfo) + " first.");
 
     /// <summary>
     /// Gets the player controller belonging to the local player.
@@ -18,7 +21,10 @@ public static partial class Game
     public static RPlayerController GetPlayerController(int controllerId = 0)
     {
         var player = GetGameViewportClient().FindPlayerByControllerId(controllerId);
-        return Guard.NotNull(player.Actor as RPlayerController);
+        return Guard.NotNull(
+            player?.Actor as RPlayerController,
+            "There is no player controller" + Missing + nameof(TryGetPlayerController) + " first."
+        );
     }
 
     /// <summary>
@@ -48,7 +54,7 @@ public static partial class Game
     public static RGameInfo GetGameInfo()
     {
         var worldInfo = GetWorldInfo();
-        return Guard.NotNull(worldInfo.Game as RGameInfo);
+        return Guard.NotNull(worldInfo.Game as RGameInfo, "There is no game info" + Missing + nameof(TryGetGameInfo) + " first.");
     }
 
     /// <summary>
@@ -57,7 +63,7 @@ public static partial class Game
     public static RGameRI GetGameRI()
     {
         var worldInfo = GetWorldInfo();
-        return Guard.NotNull(worldInfo.GRI as RGameRI);
+        return Guard.NotNull(worldInfo.GRI as RGameRI, "There is no replication info" + Missing + nameof(TryGetGameRI) + " first.");
     }
 
     /// <summary>
@@ -66,7 +72,10 @@ public static partial class Game
     public static RPersistentData GetPersistentData()
     {
         var gameInfo = GetGameInfo();
-        return Guard.NotNull(gameInfo.PersistentData);
+        return Guard.NotNull(
+            gameInfo.PersistentData,
+            "There is no persistent data" + Missing + nameof(TryGetPersistentData) + " first."
+        );
     }
 
     /// <summary>
@@ -75,13 +84,17 @@ public static partial class Game
     public static RPopulationManager GetPopulationManager()
     {
         var gameInfo = GetGameInfo();
-        return Guard.NotNull(gameInfo.PopulationManager);
+        return Guard.NotNull(
+            gameInfo.PopulationManager,
+            "There is no population manager" + Missing + nameof(TryGetPopulationManager) + " first."
+        );
     }
 
     /// <summary>
     /// Gets the global engine object.
     /// </summary>
-    public static GameEngine GetEngine() => Guard.NotNull(_Engine.GetEngine() as GameEngine);
+    public static GameEngine GetEngine() =>
+        Guard.NotNull(_Engine.GetEngine() as GameEngine, "There is no engine" + Missing + nameof(TryGetEngine) + " first.");
 
     /// <summary>
     /// Gets the global viewport client object.
@@ -89,7 +102,10 @@ public static partial class Game
     public static RGFxGameViewportClient GetGameViewportClient()
     {
         var engine = GetEngine();
-        return Guard.NotNull(engine.GameViewport as RGFxGameViewportClient);
+        return Guard.NotNull(
+            engine.GameViewport as RGFxGameViewportClient,
+            "There is no viewport client" + Missing + nameof(TryGetGameViewportClient) + " first."
+        );
     }
 
     /// <summary>
