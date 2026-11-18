@@ -800,6 +800,12 @@ pub fn run() {
         .plugin(tauri_plugin_dialog::init())
         .manage(App { state: Mutex::new(initial), pending: Mutex::new(HashMap::new()) })
         .setup(|app| {
+            #[cfg(windows)]
+            if let Some(window) = app.get_webview_window("main") {
+                if let Ok(hwnd) = window.hwnd() {
+                    winapi::hide_window_border(hwnd.0 as *mut _);
+                }
+            }
             // A launch without mods that the manager didn't see through, such as after it was closed or crashed
             let waiting = app.state::<App>().state.lock().map(|s| !s.suspended.is_empty()).unwrap_or(false);
             if waiting {

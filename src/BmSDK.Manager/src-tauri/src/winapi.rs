@@ -105,3 +105,19 @@ pub fn process_running(name: &str) -> bool {
         found
     }
 }
+
+/// Hides the light 1px border Windows 11 draws around borderless windows, and keeps the rounded corners.
+/// Both calls do nothing on Windows 10.
+pub fn hide_window_border(hwnd: *mut core::ffi::c_void) {
+    use windows::Win32::Foundation::HWND;
+    use windows::Win32::Graphics::Dwm::{DwmSetWindowAttribute, DWMWA_BORDER_COLOR, DWMWA_WINDOW_CORNER_PREFERENCE, DWMWCP_ROUND};
+
+    const DWMWA_COLOR_NONE: u32 = 0xFFFF_FFFE;
+    let hwnd = HWND(hwnd);
+    let color = DWMWA_COLOR_NONE;
+    let corners = DWMWCP_ROUND.0;
+    unsafe {
+        let _ = DwmSetWindowAttribute(hwnd, DWMWA_BORDER_COLOR, &color as *const u32 as *const _, size_of::<u32>() as u32);
+        let _ = DwmSetWindowAttribute(hwnd, DWMWA_WINDOW_CORNER_PREFERENCE, &corners as *const i32 as *const _, size_of::<i32>() as u32);
+    }
+}
