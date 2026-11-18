@@ -9,7 +9,10 @@
         "src/BmSDK/BmSDK.csproj",
         "src/BmSDK.Manager/src-tauri/Cargo.toml",
         { "type": "json", "path": "src/BmSDK.Manager/src-tauri/tauri.conf.json", "jsonpath": "$.version" },
-        { "type": "json", "path": "src/BmSDK.Manager/package.json", "jsonpath": "$.version" }
+        { "type": "json", "path": "src/BmSDK.Manager/package.json", "jsonpath": "$.version" },
+        { "type": "json", "path": "src/BmSDK.Manager/package-lock.json", "jsonpath": "$.version" },
+        { "type": "json", "path": "src/BmSDK.Manager/package-lock.json", "jsonpath": "$.packages[''].version" },
+        { "type": "toml", "path": "src/BmSDK.Manager/src-tauri/Cargo.lock", "jsonpath": "$.package[?(@.name.value=='bmsdk-manager')].version" }
       ],
 
       "changelog-path": "CHANGELOG.md",
