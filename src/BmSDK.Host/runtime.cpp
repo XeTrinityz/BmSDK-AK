@@ -2,7 +2,6 @@
 #include <filesystem>
 
 #include <Windows.h>
-#include <cassert>
 
 #include <coreclr_delegates.h>
 #include <hostfxr.h>
@@ -37,16 +36,16 @@ namespace runtime {
 
     static path get_game_dir() { return get_plugin_path().parent_path(); }
 
-    static void* load_library(const char_t* path) {
-        HMODULE h = LoadLibraryW(path);
-        assert(h != nullptr);
-        return (void*)h;
-    }
-
-    static void* get_export(void* h, const char* name) {
-        void* f = GetProcAddress((HMODULE)h, name);
-        assert(f != nullptr);
-        return f;
+    // Tells the player why mods won't load. The game then starts without BmSDK.
+    static void report_failure(const wstring& what, int code = 0) {
+        wstring text = L"BmSDK couldn't start, so the game will run without mods.\n\n" + what;
+        if (code != 0) {
+            wchar_t hex[16];
+            swprintf_s(hex, L"0x%08X", (unsigned)code);
+            text += wstring(L" (error ") + hex + L")";
+        }
+        text += L"\n\nInstall BmSDK again with BmSDK Manager to put its files back.";
+        MessageBoxW(nullptr, text.c_str(), L"BmSDK", MB_OK | MB_ICONWARNING | MB_SETFOREGROUND | MB_TOPMOST);
     }
 
     // Using the nethost library, discover the location of hostfxr and get exports
@@ -63,21 +62,24 @@ namespace runtime {
             return false;
 
         // Load hostfxr and get desired exports
-        void* lib = load_library(buffer);
-        hostInitFn = (HostInitFn)get_export(lib, "hostfxr_initialize_for_dotnet_command_line");
-        hostGetDelegateFn = (HostGetDelegateFn)get_export(lib, "hostfxr_get_runtime_delegate");
-        hostCloseFn = (HostCloseFn)get_export(lib, "hostfxr_close");
+        HMODULE lib = LoadLibraryW(buffer);
+        if (lib == nullptr)
+            return false;
+
+        hostInitFn = (HostInitFn)GetProcAddress(lib, "hostfxr_initialize_for_dotnet_command_line");
+        hostGetDelegateFn = (HostGetDelegateFn)GetProcAddress(lib, "hostfxr_get_runtime_delegate");
+        hostCloseFn = (HostCloseFn)GetProcAddress(lib, "hostfxr_close");
 
         return (hostInitFn && hostGetDelegateFn && hostCloseFn);
     }
 
     // Load and initialize .NET Core and get desired function pointer for scenario
-    static HostLoadAssemblyFn get_dotnet_load_assembly(const char_t* assembly_path) {
+    static HostLoadAssemblyFn get_dotnet_load_assembly(const char_t* assembly_path, int& rc) {
         // Load .NET Core
         void* hostLoadAssemblyFn = nullptr;
         hostfxr_handle cxt = nullptr;
         const char_t* argv[] = { assembly_path };
-        int rc = hostInitFn(1, argv, nullptr, &cxt);
+        rc = hostInitFn(1, argv, nullptr, &cxt);
         if (rc != 0 || cxt == nullptr) {
             std::cerr << "Init failed: " << std::hex << std::showbase << rc << std::endl;
             hostCloseFn(cxt);
@@ -99,7 +101,7 @@ namespace runtime {
     void load_dll() {
         // Load HostFxr and get exported hosting functions
         if (!load_hostfxr()) {
-            assert(false && "Failure: load_hostfxr()");
+            report_failure(L"The .NET files in Binaries\\Win64\\sdk are missing or damaged.");
             return;
         }
 
@@ -107,8 +109,12 @@ namespace runtime {
         const wstring basePath = get_game_dir();
         const wstring asmPath = L"\\sdk\\BmSDK";
         const wstring dotnetDllPath = basePath + L"\\sdk\\BmSDK.dll";
-        hostLoadAssemblyFn = get_dotnet_load_assembly(dotnetDllPath.c_str());
-        assert(hostLoadAssemblyFn != nullptr && "Failure: get_dotnet_load_assembly()");
+        int rc = 0;
+        hostLoadAssemblyFn = get_dotnet_load_assembly(dotnetDllPath.c_str(), rc);
+        if (hostLoadAssemblyFn == nullptr) {
+            report_failure(L".NET couldn't start from Binaries\\Win64\\sdk.", rc);
+            return;
+        }
 
         // Load managed assembly and get function pointer to a managed method
         const wstring dotnetType = L"BmSDK.Framework.Loader, BmSDK";
@@ -116,7 +122,7 @@ namespace runtime {
 
         // Function pointer to managed delegate
         ComponentEntryFn GuardedDllMain = nullptr;
-        int rc = hostLoadAssemblyFn(
+        rc = hostLoadAssemblyFn(
             dotnetDllPath.c_str(),
             dotnetType.c_str(),
             dotnetMethod.c_str(),
@@ -125,7 +131,7 @@ namespace runtime {
             (void**)&GuardedDllMain);
 
         if (rc != 0 || GuardedDllMain == nullptr) {
-            assert(false && "Failure: hostLoadAssemblyFn()");
+            report_failure(L"BmSDK.dll in Binaries\\Win64\\sdk couldn't be loaded.", rc);
             return;
         }
 
