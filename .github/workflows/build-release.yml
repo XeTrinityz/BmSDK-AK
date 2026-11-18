@@ -128,7 +128,7 @@ jobs:
         unzip -d './dinput8-x64/' './dinput8-x64.zip'
         mv './dinput8-x64/dinput8.dll' '${{ env.STAGING_DIR }}/Binaries/Win64/'
 
-    - name: "Copy over ScriptsDev and example scripts"
+    - name: "Copy over ScriptsDev"
       run: |
         # Maps source paths relative to the repo root to
         # destination paths relative to the export directory
@@ -136,12 +136,10 @@ jobs:
           ['README.md']='README.md'
           ['LICENSE.md']='LICENSE.md'
           ['bin/Binaries/Win64/steam_appid.txt']='Binaries/Win64/steam_appid.txt'
-          ['bin/BmGame/Scripts/MinimalScript.cs']='BmGame/Scripts/MinimalScript.cs'
           ['bin/BmGame/ScriptsDev/ScriptsDev.csproj']='BmGame/ScriptsDev/ScriptsDev.csproj'
           ['bin/BmGame/ScriptsDev/ScriptsDev.slnx']='BmGame/ScriptsDev/ScriptsDev.slnx'
           ['bin/BmGame/ScriptsDev/ScriptsDev.code-workspace']='BmGame/ScriptsDev/ScriptsDev.code-workspace'
           ['bin/BmGame/ScriptsDev/Properties/']='BmGame/ScriptsDev/Properties/'
-          ['bin/BmGame/Mods/ModTemplate/']='BmGame/Mods/ModTemplate/'
         )
 
         # Copy over files to export directory

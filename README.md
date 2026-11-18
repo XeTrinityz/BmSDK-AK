@@ -112,7 +112,7 @@ Follow these steps to set up your environment for building, running, and debuggi
 7. Follow the [docs](https://bmsdk.dev/docs/guides/first-mod/) to write your first script.
 
 ### Making a mod
-A mod is a folder in `%GameDir%\BmGame\Mods` with a `mod.toml` file and a `scripts` folder next to it. BmSDK installs one called `ModTemplate`. Copy it, rename the copy and start from there.
+A mod is a folder in `%GameDir%\BmGame\Mods` with a `mod.toml` file and a `scripts` folder next to it. The template in `bin\BmGame\Mods\ModTemplate` in this repo is a good starting point. Copy it into your `Mods` folder and rename it.
 
 ```toml
 name = "My Mod"
