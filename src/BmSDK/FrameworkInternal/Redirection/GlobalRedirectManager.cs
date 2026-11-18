@@ -27,9 +27,18 @@ internal sealed class GlobalRedirectManager(BindingFlags genericRedirSearchFlags
         {
             foreach (var func in type.GetMethods(_globalRedirSearchFlags))
             {
-                foreach (var redirAttr in func.GetCustomAttributes<RedirectAttribute>())
+                // A redirect that can't be set up is left out and the rest of the mod still loads. A
+                // prebuilt mod gets here when it redirects a function this BmSDK no longer has.
+                try
                 {
-                    RegisterRedirector(redirAttr, func);
+                    foreach (var redirAttr in func.GetCustomAttributes<RedirectAttribute>())
+                    {
+                        RegisterRedirector(redirAttr, func);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"The redirect {type.FullName}.{func.Name} was left out: {e.Message}", skipSender: true);
                 }
             }
         }

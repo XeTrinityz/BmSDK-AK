@@ -37,16 +37,24 @@ internal static class ScriptComponentManager
     {
         foreach (var componentType in asm.GetTypes())
         {
-            if (!IsTypeAScriptComponent(componentType, out var attribute, out var objType))
+            // A component that can't be set up is left out and the rest of the mod still loads
+            try
             {
-                continue;
+                if (!IsTypeAScriptComponent(componentType, out var attribute, out var objType))
+                {
+                    continue;
+                }
+
+                RedirectManager.Local.CacheRedirectors(componentType, objType);
+
+                if (attribute.AutoAttach)
+                {
+                    RegisterAutoAttachType(componentType, objType, attribute.AllowSubtypes);
+                }
             }
-
-            RedirectManager.Local.CacheRedirectors(componentType, objType);
-
-            if (attribute.AutoAttach)
+            catch (Exception e)
             {
-                RegisterAutoAttachType(componentType, objType, attribute.AllowSubtypes);
+                Debug.LogError($"The script component {componentType.FullName} couldn't be set up: {e.Message}", skipSender: true);
             }
         }
     }
