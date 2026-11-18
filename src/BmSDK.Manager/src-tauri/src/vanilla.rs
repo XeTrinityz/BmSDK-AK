@@ -150,11 +150,19 @@ fn not_owned_dlc(game: &Path, rel: &str) -> bool {
     }
 }
 
+/// False when this copy's Steam build or depots aren't the list's. A copy with no app manifest to read counts as the same.
+fn same_build_as(list: &List, game: &Path) -> bool {
+    steam_install(game).is_none_or(|(build, depots)| build == list.build && depots == list.depots)
+}
+
+/// False when this copy is another Steam build or language than the list that ships, so files Steam did
+/// install can look added.
+pub fn same_build(game: &Path) -> bool {
+    same_build_as(&parse(STEAM_LIST), game)
+}
+
 fn check_with(list: &List, game: &Path, owned: &HashSet<String>, progress: &mut dyn FnMut(u64, u64)) -> Result<Findings, String> {
-    let mut findings = Findings { same_build: true, ..Default::default() };
-    if let Some((build, depots)) = steam_install(game) {
-        findings.same_build = build == list.build && depots == list.depots;
-    }
+    let mut findings = Findings { same_build: same_build_as(list, game), ..Default::default() };
 
     let total = list.files.len() as u64;
     for (done, (k, expected)) in list.files.iter().enumerate() {
@@ -289,6 +297,32 @@ mod tests {
         )
         .unwrap();
         assert_eq!(steam_install(&game), Some(("42".into(), vec!["208651".into(), "208652".into()])));
+    }
+
+    #[test]
+    fn another_build_or_language_is_told_apart() {
+        let dir = tempfile::tempdir().unwrap();
+        let game = dir.path().join("steamapps").join("common").join("BAK");
+        fs::create_dir_all(&game).unwrap();
+        let list = parse("build 42\ndepots 208651 208652\n");
+        let manifest = |depots: &[&str]| {
+            let blocks: String = depots.iter().map(|d| format!("\t\t\"{d}\"\n\t\t{{\n\t\t}}\n")).collect();
+            fs::write(
+                dir.path().join("steamapps").join("appmanifest_208650.acf"),
+                format!("\"AppState\"\n{{\n\t\"buildid\"\t\t\"42\"\n\t\"InstalledDepots\"\n\t{{\n{blocks}\t}}\n}}\n"),
+            )
+            .unwrap();
+        };
+
+        // Nothing to compare with
+        assert!(same_build_as(&list, &game));
+
+        manifest(&["208652", "208651"]);
+        assert!(same_build_as(&list, &game));
+
+        // One more depot, like another language
+        manifest(&["208652", "208651", "208653"]);
+        assert!(!same_build_as(&list, &game));
     }
 
     // Run on purpose, on a game just verified in Steam with nothing added:

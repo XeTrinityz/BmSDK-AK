@@ -192,7 +192,8 @@ export default function SettingsView({
           <div className="flex flex-col gap-2.5">
             {!findings.sameBuild && (
               <p className="m-0 text-[12px] text-[#f4cf8e]">
-                Your Steam build or language differs from the list, so some files may show up that are fine.
+                Your Steam build or language differs from the list, so some files may show up that are fine. Added
+                files can't be recycled from here because of that.
               </p>
             )}
             {findings.changed.length + findings.missing.length + findings.added.length === 0 && (
@@ -221,7 +222,7 @@ export default function SettingsView({
                   </div>
                 ),
             )}
-            {findings.added.length > 0 && (
+            {findings.added.length > 0 && findings.sameBuild && (
               <div className="flex items-center gap-2.5">
                 <button
                   type="button"

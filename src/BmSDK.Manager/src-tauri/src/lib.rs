@@ -694,6 +694,10 @@ fn managed_files(state: &State) -> std::collections::HashSet<String> {
 fn recycle_added(app: AppHandle, paths: Vec<String>) -> Res<usize> {
     let mut state = lock(&app);
     let dir = ready_to_change(&state)?;
+    // With another build or language, files Steam did install look added too
+    if !vanilla::same_build(&dir) {
+        return Err("Your Steam build or language differs from the manager's list, so it can't tell which files were added. Nothing was removed.".into());
+    }
     let owned = managed_files(&state);
     let added = vanilla::added_files(&dir);
 
