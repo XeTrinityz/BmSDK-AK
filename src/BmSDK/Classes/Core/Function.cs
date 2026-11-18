@@ -61,8 +61,23 @@ public partial class Function
             ))
             .ToArray();
 
-    internal int GetParamsBytes() =>
-        ParamsBytes >= 0 ? ParamsBytes : ParamsBytes = EnumerateParams().Sum(p => p.ElementSize);
+    // How many bytes of a call frame the parameters take up. They are aligned, so this runs to the end
+    // of the last one: a byte followed by a float leaves a gap, and their sizes added up fall short.
+    internal int GetParamsBytes()
+    {
+        if (ParamsBytes < 0)
+        {
+            var end = 0;
+            foreach (var param in GetParamLayout())
+            {
+                end = Math.Max(end, param.Offset + param.Size);
+            }
+
+            ParamsBytes = end;
+        }
+
+        return ParamsBytes;
+    }
 
     internal void ResolveReturn()
     {
