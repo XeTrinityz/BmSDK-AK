@@ -50,6 +50,7 @@ public partial class Function
     internal bool ReturnResolved;
     internal int ReturnOffset;
     internal int ReturnSize;
+    internal bool ReturnWarned;
 
     internal ParamLayout[] GetParamLayout() =>
         Params ??= EnumerateParams()

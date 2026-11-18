@@ -217,6 +217,43 @@ internal static class RedirectManager
 
     private const string RedirectWhat = "redirect";
 
+    // Without this a redirect method with too few parameters (a forgotten self, a left out optional
+    // one) fails with "Index was outside the bounds of the array", and one with too many with
+    // "Parameter count mismatch".
+    public static void CheckParamCount(MethodInfo redirect, int has, int functionParams, bool self)
+    {
+        var needs = functionParams + (self ? 1 : 0);
+        if (has != needs)
+        {
+            throw new ArgumentException(
+                $"{redirect.Name} takes {has} {CommonUtils.FormatPlural(has, "parameter")} and needs {needs}: "
+                    + $"{(self ? "self, then " : "")}the function's {functionParams} in the same order."
+            );
+        }
+    }
+
+    // For a function that returns nothing, the result pointer the engine hands over is the end of the
+    // caller's parameters. A value written there lands in memory that isn't the function's.
+    public static bool TakesResult(Function func, MethodInfo redirect)
+    {
+        func.ResolveReturn();
+        if (func.ReturnSize > 0)
+        {
+            return true;
+        }
+
+        if (!func.ReturnWarned)
+        {
+            func.ReturnWarned = true;
+            Debug.LogWarning(
+                $"{redirect.DeclaringType?.FullName}.{redirect.Name} returns a value, but {func.GetPathName()} returns nothing. The value is dropped.",
+                skipSender: true
+            );
+        }
+
+        return false;
+    }
+
     // Whether a function is the target or overrides it: the target is in its super chain. Read from
     // the functions' memory, since this runs for every call made inside a redirect.
     private static unsafe bool IsSelfOrOverrideOf(Function func, Function target)

@@ -40,6 +40,8 @@ internal sealed record GlobalRedirectorInfo(
 {
     public MethodInvoker Invoker { get; } = MethodInvoker.Create(RedirectMethod);
 
+    public int ParamCount { get; } = RedirectMethod.GetParameters().Length;
+
     private Type[]? _paramTypes;
 
     public Type[] GetParamTypes(Function func)

@@ -176,6 +176,7 @@ internal sealed class LocalRedirectManager(BindingFlags genericRedirSearchFlags)
         var redirFunc = localRedirInfo.RedirectMethod;
 
         // Marshal args
+        RedirectManager.CheckParamCount(redirFunc, localRedirInfo.ParamTypes.Length, funcObj.GetParamLayout().Length, self: false);
         var args = stackPtr->ParamsToManaged(localRedirInfo.ParamTypes, 0);
 
         // Execute detour
@@ -185,7 +186,7 @@ internal sealed class LocalRedirectManager(BindingFlags genericRedirSearchFlags)
         stackPtr->WriteBackParams(localRedirInfo.ParamTypes, args, 0);
 
         // Marshal result back (if non-void)
-        if (result != null && redirFunc.ReturnType != typeof(void))
+        if (result != null && redirFunc.ReturnType != typeof(void) && RedirectManager.TakesResult(funcObj, redirFunc))
         {
             MarshalUtil.ToUnmanaged(result, Result, redirFunc.ReturnType);
         }

@@ -150,6 +150,7 @@ internal sealed class GlobalRedirectManager(BindingFlags genericRedirSearchFlags
 
         // Marshal args, with self as the first one when the function isn't static.
         var first = funcObj.IsStatic ? 0 : 1;
+        RedirectManager.CheckParamCount(redirMethod, redirInfo.ParamCount, funcObj.GetParamLayout().Length, self: first == 1);
         var args = stackPtr->ParamsToManaged(redirInfo.GetParamTypes(funcObj), first);
         if (first == 1)
         {
@@ -163,7 +164,7 @@ internal sealed class GlobalRedirectManager(BindingFlags genericRedirSearchFlags
         stackPtr->WriteBackParams(redirInfo.GetParamTypes(funcObj), args, funcObj.IsStatic ? 0 : 1);
 
         // Marshal result back (if non-void)
-        if (result != null && redirMethod.ReturnType != typeof(void))
+        if (result != null && redirMethod.ReturnType != typeof(void) && RedirectManager.TakesResult(funcObj, redirMethod))
         {
             MarshalUtil.ToUnmanaged(result, Result, redirMethod.ReturnType);
         }
