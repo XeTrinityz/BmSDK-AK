@@ -122,7 +122,7 @@ version = "1.0.0"
 
 - BmSDK compiles every `.cs` file under `scripts` into the mod, subfolders included.
 - Save a script while the game is running and BmSDK builds the mod again and reloads it, so you don't have to restart the game.
-- Build errors show up on screen in the game and in `%GameDir%\Binaries\Win64\BmSDK.log`. The manager's Logs page shows the same file.
+- Build errors show up on screen in the game for 20 seconds and stay in `%GameDir%\Binaries\Win64\BmSDK.log`. The manager's Logs page shows the same file.
 - BmSDK Manager shows `name`, `description` and `version` in its mod list.
 - To ship a built DLL instead of source, set `assembly = "MyMod.dll"` in `mod.toml`. The comments in the template's `mod.toml` explain how.
 

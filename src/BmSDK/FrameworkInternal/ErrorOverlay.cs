@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using BmSDK.Engine;
 
 namespace BmSDK.Framework;
@@ -9,11 +10,17 @@ namespace BmSDK.Framework;
 internal static class ErrorOverlay
 {
     private static readonly Lock s_lock = new();
-    private static readonly List<string> s_lines = [];
+
+    // Shown is 0 until the line is first drawn, so a line logged during a load still gets its full time.
+    private static readonly List<(string Text, long Shown)> s_lines = [];
 
     private const float MarginX = 16f;
     private const float MarginY = 16f;
     private const float LineHeight = 16f;
+
+    // A player can't fix a mod's error and a prebuilt mod never reloads, so a line that stayed for good
+    // would sit over the game until it closed. Every line is in BmSDK.log as well.
+    private const double ShowSeconds = 20;
 
     // Every line is a draw call each frame, and a mod that no longer compiles can log hundreds. The
     // first ones say what went wrong, the rest are counted and stay in BmSDK.log.
@@ -26,7 +33,7 @@ internal static class ErrorOverlay
         {
             if (s_lines.Count < MaxLines)
             {
-                s_lines.Add(line);
+                s_lines.Add((line, 0));
             }
             else
             {
@@ -63,7 +70,25 @@ internal static class ErrorOverlay
                 return;
             }
 
-            snapshot = s_more == 0 ? [.. s_lines] : [.. s_lines, $"...and {s_more} more. See BmSDK.log."];
+            var now = Stopwatch.GetTimestamp();
+            for (var i = 0; i < s_lines.Count; i++)
+            {
+                if (s_lines[i].Shown == 0)
+                {
+                    s_lines[i] = (s_lines[i].Text, now);
+                }
+            }
+
+            s_lines.RemoveAll(line => Stopwatch.GetElapsedTime(line.Shown, now).TotalSeconds > ShowSeconds);
+            if (s_lines.Count == 0)
+            {
+                // The lines that didn't fit go with the last of the ones shown, so new errors get the room
+                s_more = 0;
+                return;
+            }
+
+            var lines = s_lines.Select(line => line.Text);
+            snapshot = s_more == 0 ? [.. lines] : [.. lines, $"...and {s_more} more. See BmSDK.log."];
         }
 
         Draw(canvas, snapshot);
