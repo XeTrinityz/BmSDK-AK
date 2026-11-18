@@ -15,11 +15,23 @@ internal static class ErrorOverlay
     private const float MarginY = 16f;
     private const float LineHeight = 16f;
 
+    // Every line is a draw call each frame, and a mod that no longer compiles can log hundreds. The
+    // first ones say what went wrong, the rest are counted and stay in BmSDK.log.
+    private const int MaxLines = 30;
+    private static int s_more;
+
     public static void Add(string line)
     {
         lock (s_lock)
         {
-            s_lines.Add(line);
+            if (s_lines.Count < MaxLines)
+            {
+                s_lines.Add(line);
+            }
+            else
+            {
+                s_more++;
+            }
         }
     }
 
@@ -28,6 +40,7 @@ internal static class ErrorOverlay
         lock (s_lock)
         {
             s_lines.Clear();
+            s_more = 0;
         }
     }
 
@@ -49,7 +62,7 @@ internal static class ErrorOverlay
                 return;
             }
 
-            snapshot = [.. s_lines];
+            snapshot = s_more == 0 ? [.. s_lines] : [.. s_lines, $"...and {s_more} more. See BmSDK.log."];
         }
 
         Draw(canvas, snapshot);
