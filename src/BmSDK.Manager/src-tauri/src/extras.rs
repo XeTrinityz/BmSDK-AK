@@ -164,26 +164,48 @@ pub fn play_clean(app: AppHandle) -> Res<usize> {
     Ok(count)
 }
 
+/// Turns the suspended mods back on. One that fails keeps waiting, and the rest still come back.
+fn restore_set(state: &mut State, dir: PathBuf) -> Res<usize> {
+    let ids: Vec<String> =
+        state.suspended.iter().filter(|id| state.mods.iter().any(|m| &m.id == *id && !m.enabled)).cloned().collect();
+
+    let mut deployer = Deployer { state: &mut *state, game: dir };
+    let mut failed: Vec<(String, String)> = Vec::new();
+    for id in &ids {
+        if let Err(e) = deployer.enable(id) {
+            failed.push((id.clone(), e));
+        }
+    }
+
+    let done = ids.len() - failed.len();
+    state.suspended.retain(|id| failed.iter().any(|(f, _)| f == id));
+    if done > 0 {
+        state.log("success", format!("Turned {done} mod{} back on", if done == 1 { "" } else { "s" }));
+    }
+
+    let mut first = None;
+    for (id, e) in &failed {
+        let name = state.mods.iter().find(|m| &m.id == id).map(|m| m.name.clone()).unwrap_or_default();
+        let text = format!("Couldn't turn {name} back on: {e}");
+        state.log("error", text.clone());
+        first.get_or_insert(text);
+    }
+    match first {
+        None => Ok(done),
+        Some(text) if failed.len() == 1 => Err(text),
+        Some(text) => Err(format!("{text} {} more failed too, see Activity.", failed.len() - 1)),
+    }
+}
+
 fn restore_inner(app: &AppHandle) -> Res<usize> {
     let mut state = lock(app);
     if state.suspended.is_empty() {
         return Ok(0);
     }
     let dir = ready_to_change(&state)?;
-    let ids: Vec<String> =
-        state.suspended.iter().filter(|id| state.mods.iter().any(|m| &m.id == *id && !m.enabled)).cloned().collect();
-
-    let mut deployer = Deployer { state: &mut state, game: dir };
-    let result = ids.iter().try_for_each(|id| deployer.enable(id));
-    match &result {
-        Ok(()) => {
-            state.suspended.clear();
-            state.log("success", format!("Turned {} mod{} back on", ids.len(), if ids.len() == 1 { "" } else { "s" }));
-        }
-        Err(e) => state.log("error", format!("Couldn't turn your mods back on: {e}")),
-    }
+    let result = restore_set(&mut state, dir);
     state.save()?;
-    result.map(|_| ids.len())
+    result
 }
 
 #[tauri::command(async)]
@@ -323,6 +345,47 @@ mod tests {
         assert_eq!(redact(r"C:\Users\Alice\x and ALICE", "alice", "<user>"), r"C:\Users\<user>\x and <user>");
         // Too short to be safe to replace everywhere
         assert_eq!(redact("an a", "a", "<user>"), "an a");
+    }
+
+    #[test]
+    fn a_mod_that_cant_come_back_doesnt_hold_up_the_rest() {
+        let _guard = library::ENV_LOCK.lock().unwrap_or_else(|e| e.into_inner());
+        let dir = tempfile::tempdir().unwrap();
+        std::env::set_var("LOCALAPPDATA", dir.path().join("appdata"));
+        let game = dir.path().join("game");
+        let stage = dir.path().join("stage");
+        let plugins = game.join("Binaries").join("Win64").join("plugins");
+
+        let mut state = State::default();
+        let mut ids = Vec::new();
+        for name in ["A", "B", "C"] {
+            let rel = format!("Binaries/Win64/plugins/{name}.asi");
+            let file = stage.join(rel.split('/').collect::<PathBuf>());
+            fs::create_dir_all(file.parent().unwrap()).unwrap();
+            fs::write(file, name).unwrap();
+            let found = Detected {
+                name: name.into(),
+                kind: Kind::AsiPlugin,
+                description: String::new(),
+                files: vec![detect::Mapping { src: rel.clone(), dest: rel }],
+            };
+            let mut deployer = Deployer { state: &mut state, game: game.clone() };
+            let id = deployer.add(&stage, &found, "x.zip", &mut || {}).unwrap();
+            deployer.disable(&id).unwrap();
+            ids.push(id);
+        }
+        state.suspended = ids.clone();
+
+        // B's copy in the library is gone, the way an antivirus takes a plugin
+        fs::remove_file(library::library_dir().join(&ids[1]).join("Binaries").join("Win64").join("plugins").join("B.asi")).unwrap();
+
+        let error = restore_set(&mut state, game.clone()).unwrap_err();
+        assert!(error.contains("B"), "{error}");
+        assert!(plugins.join("A.asi").is_file());
+        assert!(plugins.join("C.asi").is_file());
+        assert!(!plugins.join("B.asi").exists());
+        // Only the one that failed still waits
+        assert_eq!(state.suspended, vec![ids[1].clone()]);
     }
 
     #[test]
