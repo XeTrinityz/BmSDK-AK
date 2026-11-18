@@ -127,6 +127,16 @@ public static partial class Game
         return Alive(playerController);
     }
 
+    /// <summary>
+    /// Gets the pawn the local player controls, or false when there is none: on the main menu, during a
+    /// load, or before the controller has one.
+    /// </summary>
+    public static bool TryGetPlayerPawn([NotNullWhen(true)] out RPawnPlayer? pawn, int controllerId = 0)
+    {
+        pawn = TryGetPlayerController(out var playerController, controllerId) ? playerController.CombatPawn : null;
+        return Alive(pawn);
+    }
+
     /// <summary>Gets the game info object, or false when no world is loaded.</summary>
     public static bool TryGetGameInfo([NotNullWhen(true)] out RGameInfo? gameInfo)
     {
