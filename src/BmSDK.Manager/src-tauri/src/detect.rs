@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 use std::fs;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 /// The DLC folder mods go in when they don't name one. It's the one known to load mods reliably.
 pub const DEFAULT_DLC_FOLDER: &str = "356474";
@@ -10,6 +10,14 @@ const GAME_TOP_FOLDERS: [&str; 4] = ["bmgame", "binaries", "engine", "dlc"];
 
 const DOC_EXTENSIONS: [&str; 14] =
     ["txt", "md", "rtf", "pdf", "nfo", "url", "html", "htm", "jpg", "jpeg", "png", "gif", "bmp", "webp"];
+
+/// DLL names the game loads from its exe folder, which loaders and injectors like ReShade take over.
+const PROXY_DLLS: [&str; 8] =
+    ["dxgi.dll", "d3d11.dll", "d3d9.dll", "dinput8.dll", "winmm.dll", "version.dll", "xinput1_3.dll", "xinput9_1_0.dll"];
+
+/// Game folders a loose file can be matched to by name. Other folders hold mods and backups.
+const GAME_CONTENT_DIRS: [&str; 6] =
+    ["BmGame/Config", "BmGame/CookedPCConsole", "BmGame/Localization", "BmGame/Movies", "BmGame/Splash", "Engine"];
 
 #[derive(Serialize, Deserialize, Clone, Copy, PartialEq, Eq, Debug)]
 #[serde(rename_all = "camelCase")]
@@ -189,7 +197,8 @@ fn looks_like_dlc_config(path: &Path) -> bool {
 }
 
 /// Works out which mods a folder holds and where each file goes in the game.
-pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
+/// `game` lets loose files that share a name with one of the game's own go where that file is.
+pub fn detect(root: &Path, fallback_name: &str, game: Option<&Path>) -> Vec<Detected> {
     let files = list_files(root);
     let mut dirs: HashSet<String> = HashSet::new();
     for f in &files {
@@ -206,9 +215,28 @@ pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
     let claim = |claimed: &mut HashSet<String>, f: &str| claimed.insert(f.to_ascii_lowercase());
     let is_claimed = |claimed: &HashSet<String>, f: &str| claimed.contains(&f.to_ascii_lowercase());
 
+    // TFC Installer mods patch the game's packages and inis in place. Copying only their plain files
+    // would leave the game half modded, so the whole folder waits for TFC Installer.
+    let tfc_roots = outermost(files.iter().filter_map(|f| tfc_root(f)).collect());
+    for r in &tfc_roots {
+        for f in files.iter().filter(|f| inside(f, r)) {
+            claim(&mut claimed, f);
+        }
+        found.push(Detected {
+            name: name_of(r),
+            kind: Kind::TfcInstaller,
+            description: "Package and texture patches made for TFC Installer. Install it with TFC Installer. When it is in, the manager lists it so you can remove it.".into(),
+            files: Vec::new(),
+        });
+    }
+
     // Script mods: a folder with mod.toml goes to BmGame\Mods\<folder>
     let script_roots = outermost(
-        files.iter().filter(|f| file_name(f).eq_ignore_ascii_case("mod.toml")).map(|f| parent(f).to_string()).collect(),
+        files
+            .iter()
+            .filter(|f| file_name(f).eq_ignore_ascii_case("mod.toml") && !is_claimed(&claimed, f))
+            .map(|f| parent(f).to_string())
+            .collect(),
     );
     let mut script_found: Vec<(usize, String)> = Vec::new();
     for r in &script_roots {
@@ -367,19 +395,10 @@ pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
         }
         let is_asi = mappings.iter().all(|m| first_segment(&m.dest) == "binaries")
             && mappings.iter().any(|m| ext(&m.dest) == "asi");
-        let mut tops: Vec<String> = mappings.iter().map(|m| m.dest.split('/').next().unwrap_or_default().to_string()).collect();
-        tops.sort();
-        tops.dedup();
-        let count = mappings.len();
-        found.push(Detected {
-            name: name_of(&d),
-            kind: if is_asi { Kind::AsiPlugin } else { Kind::Replacer },
-            description: if is_asi {
-                "ASI plugin loaded by the ASI loader".into()
-            } else {
-                format!("Replaces or adds {count} game file{} in {}", plural(count), tops.join(", "))
-            },
-            files: mappings,
+        found.push(if is_asi {
+            Detected { name: name_of(&d), kind: Kind::AsiPlugin, description: "ASI plugin loaded by the ASI loader".into(), files: mappings }
+        } else {
+            replacer(name_of(&d), mappings)
         });
     }
 
@@ -400,6 +419,50 @@ pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
         found.push(Detected { name, kind: Kind::AsiPlugin, description: "ASI plugin loaded by the ASI loader".into(), files: mappings });
     }
 
+    // Loose files named like exactly one of the game's own go where that file is
+    if let Some(game) = game {
+        let loose: Vec<&String> = files.iter().filter(|f| !is_claimed(&claimed, f) && !is_document(f) && !is_proxy(f)).collect();
+        if !loose.is_empty() {
+            let index = game_files_by_name(game);
+            let mut seen: HashMap<String, usize> = HashMap::new();
+            for f in &loose {
+                *seen.entry(file_name(f).to_ascii_lowercase()).or_default() += 1;
+            }
+            let mappings: Vec<Mapping> = loose
+                .iter()
+                .filter_map(|f| {
+                    let key = file_name(f).to_ascii_lowercase();
+                    // The same name twice in one archive is usually variants to pick from, so neither is guessed
+                    match index.get(&key) {
+                        Some(paths) if paths.len() == 1 && seen[&key] == 1 => Some(Mapping { src: (*f).clone(), dest: paths[0].clone() }),
+                        _ => None,
+                    }
+                })
+                .collect();
+            if !mappings.is_empty() {
+                for m in &mappings {
+                    claim(&mut claimed, &m.src);
+                }
+                found.push(replacer(sanitize_folder(fallback_name), mappings));
+            }
+        }
+    }
+
+    // Loaders and injectors like ReShade go next to the exe, with the folders they came with
+    let proxy_roots =
+        outermost(files.iter().filter(|f| !is_claimed(&claimed, f) && is_proxy(f)).map(|f| parent(f).to_string()).collect());
+    for d in proxy_roots {
+        let mappings: Vec<Mapping> = files
+            .iter()
+            .filter(|f| inside(f, &d) && !is_claimed(&claimed, f) && !is_document(f))
+            .map(|f| Mapping { src: f.clone(), dest: join("Binaries/Win64", rel(f, &d)) })
+            .collect();
+        for m in &mappings {
+            claim(&mut claimed, &m.src);
+        }
+        found.push(replacer(name_of(&d), mappings));
+    }
+
     let leftovers: Vec<&String> = files.iter().filter(|f| !is_claimed(&claimed, f) && !is_document(f)).collect();
 
     // An archive of bare .cs files: they all go in BmGame\Scripts
@@ -416,18 +479,7 @@ pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
         return found;
     }
 
-    let tfc: Vec<&&String> = leftovers
-        .iter()
-        .filter(|f| matches!(ext(f).as_str(), "packagepatch" | "tfcmapping" | "tfc"))
-        .collect();
-    if !tfc.is_empty() {
-        found.push(Detected {
-            name: sanitize_folder(fallback_name),
-            kind: Kind::TfcInstaller,
-            description: "Texture patches made for TFC Installer. Install them with TFC Installer instead.".into(),
-            files: Vec::new(),
-        });
-    } else if found.is_empty() && !leftovers.is_empty() && leftovers.iter().all(|f| ext(f) == "dds") {
+    if found.is_empty() && !leftovers.is_empty() && leftovers.iter().all(|f| ext(f) == "dds") {
         found.push(Detected {
             name: sanitize_folder(fallback_name),
             kind: Kind::ResoRep,
@@ -437,6 +489,73 @@ pub fn detect(root: &Path, fallback_name: &str) -> Vec<Detected> {
     }
 
     found
+}
+
+fn replacer(name: String, files: Vec<Mapping>) -> Detected {
+    let mut tops: Vec<&str> = files.iter().map(|m| m.dest.split('/').next().unwrap_or_default()).collect();
+    tops.sort_unstable();
+    tops.dedup();
+    let count = files.len();
+    let description = format!("Replaces or adds {count} game file{} in {}", plural(count), tops.join(", "));
+    Detected { name, kind: Kind::Replacer, description, files }
+}
+
+fn is_proxy(path: &str) -> bool {
+    PROXY_DLLS.contains(&file_name(path).to_ascii_lowercase().as_str())
+}
+
+/// The folder a TFC Installer mod sits in, found from one of its patch or mapping files.
+/// Such a mod keeps its files in Game, System and TexturePack, or flat in its own folder in old ones.
+fn tfc_root(f: &str) -> Option<String> {
+    let e = ext(f);
+    // IniPatch also covers IniPatchReadOnly and IniPatchCreateOrUpdate
+    if !(e == "packagepatch" || e == "tfcmapping" || e.starts_with("inipatch")) {
+        return None;
+    }
+    let segs: Vec<&str> = f.split('/').collect();
+    let layout = segs[..segs.len() - 1]
+        .iter()
+        .position(|s| ["game", "system", "texturepack"].contains(&s.to_ascii_lowercase().as_str()));
+    Some(match layout {
+        Some(i) => segs[..i].join("/"),
+        None => parent(f).to_string(),
+    })
+}
+
+/// The game's own files by lower-case name, as game-relative paths.
+fn game_files_by_name(game: &Path) -> HashMap<String, Vec<String>> {
+    let mut index: HashMap<String, Vec<String>> = HashMap::new();
+    for rel in vanilla_files(game) {
+        index.entry(file_name(&rel).to_ascii_lowercase()).or_default().push(rel);
+    }
+    index
+}
+
+/// Game-relative paths, with `/`, of every file in the folders that hold the game's own files.
+/// Mod folders, backups, logs and saves sit elsewhere and aren't in it.
+pub fn vanilla_files(game: &Path) -> Vec<String> {
+    let mut dirs: Vec<String> = GAME_CONTENT_DIRS.iter().map(|d| d.to_string()).collect();
+    // Only the official content. The other folders under DLC\<number> are mods.
+    for entry in fs::read_dir(game.join("DLC")).into_iter().flatten().flatten() {
+        let n = entry.file_name().to_string_lossy().to_string();
+        if is_digits(&n) {
+            dirs.push(format!("DLC/{n}/Content"));
+        }
+    }
+
+    let mut out = Vec::new();
+    for d in &dirs {
+        for f in list_files(&game.join(d.split('/').collect::<PathBuf>())) {
+            out.push(format!("{d}/{f}"));
+        }
+    }
+    // Just the exe's folder. plugins and sdk under it belong to mods.
+    for entry in fs::read_dir(game.join("Binaries").join("Win64")).into_iter().flatten().flatten() {
+        if entry.path().is_file() {
+            out.push(format!("Binaries/Win64/{}", entry.file_name().to_string_lossy()));
+        }
+    }
+    out
 }
 
 fn dlc_number(dir: &str) -> Option<String> {
@@ -512,7 +631,7 @@ mod tests {
         write(root, "Textures/tex.PackagePatch", "x");
         write(root, "readme.txt", "x");
 
-        let found = detect(root, "Pack");
+        let found = detect(root, "Pack", None);
         let by = |k: Kind| found.iter().find(|d| d.kind == k).unwrap_or_else(|| panic!("no {k:?} in {found:#?}"));
 
         let script = by(Kind::PrebuiltDll);
@@ -535,7 +654,7 @@ mod tests {
     fn official_dlc_content_is_a_replacer() {
         let dir = tempfile::tempdir().unwrap();
         write(dir.path(), "DLC/356474/Content/BmGame/CookedPCConsole/a.upk", "x");
-        let found = detect(dir.path(), "Fix");
+        let found = detect(dir.path(), "Fix", None);
         assert_eq!(found.len(), 1);
         assert_eq!(found[0].kind, Kind::Replacer);
         assert_eq!(dests(&found[0]), vec!["DLC/356474/Content/BmGame/CookedPCConsole/a.upk"]);
@@ -545,14 +664,14 @@ mod tests {
     fn bare_scripts_and_asi() {
         let dir = tempfile::tempdir().unwrap();
         write(dir.path(), "MyScript.cs", "x");
-        let found = detect(dir.path(), "S");
+        let found = detect(dir.path(), "S", None);
         assert_eq!(found[0].kind, Kind::LooseScripts);
         assert_eq!(dests(&found[0]), vec!["BmGame/Scripts/MyScript.cs"]);
 
         let dir = tempfile::tempdir().unwrap();
         write(dir.path(), "Fov/Fov.asi", "x");
         write(dir.path(), "Fov/Fov.ini", "x");
-        let found = detect(dir.path(), "Fov");
+        let found = detect(dir.path(), "Fov", None);
         assert_eq!(found[0].kind, Kind::AsiPlugin);
         assert_eq!(dests(&found[0]), vec!["Binaries/Win64/plugins/Fov.asi", "Binaries/Win64/plugins/Fov.ini"]);
     }
@@ -562,7 +681,71 @@ mod tests {
         let dir = tempfile::tempdir().unwrap();
         write(dir.path(), "a.dds", "x");
         write(dir.path(), "preview.png", "x");
-        let found = detect(dir.path(), "Tex");
+        let found = detect(dir.path(), "Tex", None);
         assert_eq!(found[0].kind, Kind::ResoRep);
+    }
+
+    #[test]
+    fn tfc_installer_mod_is_never_half_installed() {
+        let dir = tempfile::tempdir().unwrap();
+        write(dir.path(), "Patch/GameProfile.xml", "x");
+        write(dir.path(), "Patch/Game/BmGame/CookedPCConsole/BmGame.upk.PackagePatch", "x");
+        write(dir.path(), "Patch/Game/DLC/356474/NewSuit/BmGame/Config/BmGame.ini", "[BmGame.RGameInfo]");
+        write(dir.path(), "Patch/TexturePack/Skins.TFCMapping", "x");
+        write(dir.path(), "Other/BmGame/Config/BmEngine.ini", "x");
+        let found = detect(dir.path(), "Pack", None);
+        assert_eq!(found.len(), 2);
+        let tfc = found.iter().find(|d| d.kind == Kind::TfcInstaller).unwrap();
+        assert_eq!(tfc.name, "Patch");
+        assert!(tfc.files.is_empty());
+        assert_eq!(dests(found.iter().find(|d| d.kind == Kind::Replacer).unwrap()), vec!["BmGame/Config/BmEngine.ini"]);
+
+        // Plain files in TFC Installer's Game folder, with nothing to patch, copy like any other layout
+        let dir = tempfile::tempdir().unwrap();
+        write(dir.path(), "Game/BmGame/Movies/Intro.bik", "x");
+        let found = detect(dir.path(), "Movie", None);
+        assert_eq!(found[0].kind, Kind::Replacer);
+        assert_eq!(dests(&found[0]), vec!["BmGame/Movies/Intro.bik"]);
+    }
+
+    #[test]
+    fn loose_files_match_game_files_by_name() {
+        let game = tempfile::tempdir().unwrap();
+        write(game.path(), "BmGame/CookedPCConsole/Playable_Batman_SF.upk", "x");
+        write(game.path(), "BmGame/Localization/INT/Hud.int", "x");
+        write(game.path(), "BmGame/Localization/FRA/Hud.int", "x");
+        write(game.path(), "DLC/356474/Content/BmGame/CookedPCConsole/Suit_SF.upk", "x");
+        write(game.path(), "DLC/356474/SomeMod/BmGame/CookedPCConsole/Theirs.upk", "x");
+
+        let dir = tempfile::tempdir().unwrap();
+        write(dir.path(), "playable_batman_sf.upk", "x");
+        write(dir.path(), "Suit_SF.upk", "x");
+        write(dir.path(), "Hud.int", "x");
+        write(dir.path(), "Theirs.upk", "x");
+        write(dir.path(), "4K/BmEngine.ini", "x");
+        write(dir.path(), "1080p/BmEngine.ini", "x");
+        let found = detect(dir.path(), "Pack", Some(game.path()));
+        assert_eq!(found.len(), 1);
+        assert_eq!(found[0].kind, Kind::Replacer);
+        // Hud.int is in two languages, Theirs.upk is another mod's and BmEngine.ini comes in two variants
+        assert_eq!(
+            dests(&found[0]),
+            vec!["BmGame/CookedPCConsole/Playable_Batman_SF.upk", "DLC/356474/Content/BmGame/CookedPCConsole/Suit_SF.upk"]
+        );
+    }
+
+    #[test]
+    fn proxy_dll_pack_goes_next_to_the_exe() {
+        let dir = tempfile::tempdir().unwrap();
+        write(dir.path(), "ReShade/dxgi.dll", "x");
+        write(dir.path(), "ReShade/ReShade.ini", "x");
+        write(dir.path(), "ReShade/reshade-shaders/Shaders/a.fx", "x");
+        write(dir.path(), "ReShade/readme.txt", "x");
+        let found = detect(dir.path(), "Pack", None);
+        assert_eq!(found[0].name, "ReShade");
+        assert_eq!(
+            dests(&found[0]),
+            vec!["Binaries/Win64/ReShade.ini", "Binaries/Win64/dxgi.dll", "Binaries/Win64/reshade-shaders/Shaders/a.fx"]
+        );
     }
 }

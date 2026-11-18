@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import type { Actions } from "../App";
-import { copyDiagnostics } from "../diagnostics";
 import { api, type Overview, type Updates } from "../api";
 import { Icons } from "../components/Icons";
-import { IconTile, SpinIcon, ViewHeader, formatTime, plural, type Theme } from "../components/ui";
+import { IconTile, SpinIcon, ViewHeader, formatTime, pinTip, plural, type Theme } from "../components/ui";
 
 const ACTIVITY_THEME: Record<string, { theme: Theme; icon: () => JSX.Element }> = {
   info: { theme: "blue", icon: Icons.Info },
@@ -40,7 +39,20 @@ export default function HomeView({
     const t = setTimeout(() => setConfirmVerify(false), 6000);
     return () => clearTimeout(t);
   }, [confirmVerify]);
+  const verifyButton = useRef<HTMLButtonElement>(null);
+
+  // The warning is a pinned tooltip, so it takes the place of the plain one and doesn't cover it
+  useEffect(() => {
+    if (!confirmVerify) return;
+    pinTip(
+      verifyButton.current,
+      "Steam puts back any game file that was changed, which includes mods that replace game files. Turn replacers on again afterwards.",
+      "warning",
+    );
+    return () => pinTip(null);
+  }, [confirmVerify]);
   const installing = actions.busy === "Installing BmSDK";
+  const logsAlarm = !!overview.logsAlert.crash || overview.logsAlert.errors > 0;
 
   const installSdk = () =>
     actions.run("Installing BmSDK", async () => {
@@ -75,6 +87,19 @@ export default function HomeView({
             : `${plural(enabled.length, "mod")} on${installed ? `, BmSDK ${installed}` : ", BmSDK isn't installed yet"}`
         }
       >
+        {logsAlarm && (
+          <button
+            type="button"
+            className="btn border-[rgba(237,86,108,.4)] text-[#ffa8b4]"
+            title="Opens the logs. Copy diagnostics is there too."
+            onClick={() => actions.openLogs()}
+          >
+            <Icons.Alert />
+            {overview.logsAlert.crash
+              ? "Game crashed"
+              : `${overview.logsAlert.errors} error${overview.logsAlert.errors === 1 ? "" : "s"} logged`}
+          </button>
+        )}
         <button type="button" className="btn" onClick={() => actions.attempt(api.openFolder("game"), "Opened the game folder")}>
           <Icons.Folder />
           Open game folder
@@ -135,26 +160,6 @@ export default function HomeView({
         >
           <button type="button" className="btn btn-primary" disabled={working} onClick={() => void installSdk()}>
             {installing ? "Repairing…" : "Repair install"}
-          </button>
-        </Banner>
-      )}
-
-      {(overview.logsAlert.crash || overview.logsAlert.errors > 0) && (
-        <Banner
-          theme="rose"
-          icon={<Icons.Alert />}
-          text={
-            overview.logsAlert.crash
-              ? "The game crashed last time. The crash report and BmSDK's log are ready to look at."
-              : `BmSDK logged ${overview.logsAlert.errors} error${overview.logsAlert.errors === 1 ? "" : "s"} in the last session.`
-          }
-        >
-          <button type="button" className="btn" onClick={() => actions.openLogs()}>
-            <Icons.Logs />
-            View logs
-          </button>
-          <button type="button" className="btn" onClick={() => void copyDiagnostics(actions)}>
-            Copy diagnostics
           </button>
         </Banner>
       )}
@@ -247,17 +252,9 @@ export default function HomeView({
           </div>
           <div className="flex-1" />
           {game.store === "Steam" && (
-            <div className="relative">
-              {confirmVerify && (
-                <p
-                  role="note"
-                  className="view-in absolute bottom-[calc(100%+8px)] left-0 right-0 z-20 m-0 rounded-[12px] border border-[rgba(237,180,86,.35)] bg-[#1b1a1c] px-3 py-2.5 text-[11.5px] leading-snug text-[#f4cf8e] shadow-[0_18px_40px_-12px_rgba(0,0,0,.8)]"
-                >
-                  Steam puts back any game file that was changed, which includes mods that replace game files. Turn
-                  replacers on again afterwards.
-                </p>
-              )}
+            <div>
               <button
+                ref={verifyButton}
                 type="button"
                 className={`btn w-full ${confirmVerify ? "btn-primary" : ""}`}
                 disabled={game.running || working}

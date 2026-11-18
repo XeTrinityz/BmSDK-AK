@@ -3,10 +3,9 @@ import { open } from "@tauri-apps/plugin-dialog";
 import type { Actions } from "../App";
 import { api, errorText, type GameInstall, type Overview, type Progress, type Updates } from "../api";
 import { Icons } from "../components/Icons";
-import { KindTile, ProgressBar, formatBytes, plural } from "../components/ui";
-import { pickMods } from "./ModsView";
+import { ProgressBar, formatBytes } from "../components/ui";
 
-const STEPS = ["Find the game", "Install BmSDK", "Add mods"];
+const STEPS = ["Find the game", "Install BmSDK"];
 
 export default function SetupWizard({
   overview,
@@ -57,8 +56,7 @@ export default function SetupWizard({
       </ol>
 
       {step === 0 && <FindGame overview={overview} actions={actions} onNext={() => setStep(1)} />}
-      {step === 1 && <InstallSdk overview={overview} actions={actions} busy={busy} progress={progress} onBack={() => setStep(0)} onNext={() => setStep(2)} />}
-      {step === 2 && <AddMods overview={overview} actions={actions} onBack={() => setStep(1)} />}
+      {step === 1 && <InstallSdk overview={overview} actions={actions} busy={busy} progress={progress} onBack={() => setStep(0)} />}
     </div>
   );
 }
@@ -158,14 +156,12 @@ function InstallSdk({
   busy,
   progress,
   onBack,
-  onNext,
 }: {
   overview: Overview;
   actions: Actions;
   busy: string | null;
   progress: Progress | null;
   onBack: () => void;
-  onNext: () => void;
 }) {
   const [updates, setUpdates] = useState<Updates | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -181,6 +177,11 @@ function InstallSdk({
     api.checkUpdates().then(setUpdates, (e) => setError(errorText(e)));
   };
   useEffect(check, []);
+
+  const finish = async () => {
+    await api.finishSetup();
+    await actions.refresh();
+  };
 
   const install = () => actions.run("Installing BmSDK", async () => {
     await api.installSdk();
@@ -259,49 +260,8 @@ function InstallSdk({
             {updates && updates.sdkSize > 0 && <span className="font-normal opacity-75">({formatBytes(updates.sdkSize)})</span>}
           </button>
         )}
-        <button type="button" className={upToDate ? "btn btn-primary h-10 px-[18px]" : "btn h-10"} disabled={!!busy} onClick={onNext}>
-          {upToDate ? "Next" : "Skip"}
-        </button>
-      </Footer>
-    </>
-  );
-}
-
-function AddMods({ overview, actions, onBack }: { overview: Overview; actions: Actions; onBack: () => void }) {
-  const finish = async () => {
-    await api.finishSetup();
-    await actions.refresh();
-  };
-
-  return (
-    <>
-      <main className="mx-auto flex w-[640px] flex-1 flex-col justify-center gap-5">
-        <Hero
-          title={overview.mods.length > 0 ? `Found ${plural(overview.mods.length, "mod")} you already have` : "Add some mods"}
-          text="Drop mod archives or folders anywhere in this window. The manager works out what each one is and where it goes."
-        />
-        {overview.mods.length > 0 && (
-          <div className="flex max-h-[150px] flex-col gap-1 overflow-y-auto rounded-[14px] border border-[var(--border-default)] bg-[rgba(255,255,255,.03)] p-2">
-            {overview.mods.map((m) => (
-              <div key={m.id} className="flex items-center gap-3 px-2 py-1">
-                <KindTile kind={m.kind} size={26} />
-                <span className="min-w-0 flex-1 truncate text-[12.5px] font-semibold">{m.name}</span>
-                <span className="truncate font-mono text-[11px] text-[var(--text-muted)]">{m.location}</span>
-              </div>
-            ))}
-          </div>
-        )}
-        <button type="button" className="drop-zone h-[88px] [&_svg]:h-5 [&_svg]:w-5" onClick={() => void pickMods(actions)}>
-          <Icons.Upload />
-          Drop mods here, or click to choose files
-        </button>
-      </main>
-      <Footer>
-        <button type="button" className="btn h-10" onClick={onBack}>
-          Back
-        </button>
-        <button type="button" className="btn btn-primary h-10 px-[18px]" onClick={() => void finish()}>
-          Finish
+        <button type="button" className={upToDate ? "btn btn-primary h-10 px-[18px]" : "btn h-10"} disabled={!!busy} onClick={() => void finish()}>
+          {upToDate ? "Finish" : "Skip"}
         </button>
       </Footer>
     </>

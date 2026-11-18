@@ -50,6 +50,7 @@ const PROGRESS_LABEL: Record<Progress["task"], string> = {
   manager: "Downloading the new manager",
   files: "Copying mod files",
   mods: "Changing mods",
+  baseline: "Reading the game files",
 };
 
 export default function App() {

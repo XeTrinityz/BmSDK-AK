@@ -231,6 +231,8 @@ button:not(:disabled),
   font: 600 12px "Manrope", sans-serif;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  line-height: 1;
   gap: 7px;
 }
 .chip[aria-pressed="true"] {
@@ -526,8 +528,10 @@ input[type="radio"]:disabled {
   max-width: 260px;
   padding: 7px 11px;
   border-radius: 10px;
-  border: 1px solid var(--border-strong);
-  background: #101b2e;
+  --tip-bg: #101b2e;
+  --tip-border: var(--border-strong);
+  border: 1px solid var(--tip-border);
+  background: var(--tip-bg);
   color: #e4ecf8;
   font: 600 11.5px/1.45 "Manrope", sans-serif;
   box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.05);
@@ -538,16 +542,21 @@ input[type="radio"]:disabled {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #101b2e;
-  border: 1px solid var(--border-strong);
+  background: var(--tip-bg);
+  border: 1px solid var(--tip-border);
   border-top: 0;
   border-left: 0;
   transform: rotate(45deg);
 }
 .tooltip-bubble:has(.tooltip-arrow[style*="top"]) .tooltip-arrow {
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--tip-border);
   border-bottom: 0;
   border-right: 0;
+}
+.tooltip-warning {
+  --tip-bg: #1d1a14;
+  --tip-border: rgba(237, 180, 86, 0.45);
+  color: #f4cf8e;
 }
 @keyframes tooltip-in {
   from {

@@ -399,6 +399,8 @@ pub fn import_existing(state: &mut State, game: &Path) -> usize {
         }
     }
 
+    // Folders TFC Installer made are listed with its own entry, so they are not picked up as separate mods
+    let tfc_made = crate::tfc::made_folders(game);
     for number in read_dirs(&game.join("DLC")) {
         let n = number.file_name().unwrap_or_default().to_string_lossy().to_string();
         if !n.bytes().all(|b| b.is_ascii_digit()) {
@@ -406,7 +408,7 @@ pub fn import_existing(state: &mut State, game: &Path) -> usize {
         }
         for entry in read_dirs(&number) {
             let folder = entry.file_name().unwrap_or_default().to_string_lossy().to_string();
-            if eq(&folder, "Content") {
+            if eq(&folder, "Content") || tfc_made.contains(&format!("dlc/{n}/{folder}").to_ascii_lowercase()) {
                 continue;
             }
             let files = under(&entry, &format!("DLC/{n}/{folder}"));
@@ -552,12 +554,14 @@ pub fn location(m: &ModRecord) -> String {
     text.replace('/', "\\")
 }
 
+// Tests that point LOCALAPPDATA at a temp folder share this, so they never overlap
+#[cfg(test)]
+pub(crate) static ENV_LOCK: std::sync::Mutex<()> = std::sync::Mutex::new(());
+
 #[cfg(test)]
 mod tests {
     use super::*;
     use crate::detect::Mapping;
-
-    static ENV_LOCK: std::sync::Mutex<()> = std::sync::Mutex::new(());
 
     // Runs in a temp LOCALAPPDATA so the library lands there too. The lock keeps tests from sharing it.
     fn setup() -> (std::sync::MutexGuard<'static, ()>, tempfile::TempDir, PathBuf) {

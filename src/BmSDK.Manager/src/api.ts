@@ -57,6 +57,24 @@ export interface Activity {
   text: string;
 }
 
+export interface BaselineView {
+  created: number;
+  files: number;
+}
+
+export interface BaselineFindings {
+  changed: string[];
+  missing: string[];
+  added: string[];
+}
+
+export interface TfcInstall {
+  number: number;
+  name: string;
+  changed: number;
+  added: number;
+}
+
 export interface Overview {
   managerVersion: string;
   repo: string;
@@ -70,6 +88,8 @@ export interface Overview {
   profiles: ProfileView[];
   suspended: number;
   logsAlert: LogsAlert;
+  tfc: TfcInstall[];
+  baseline: BaselineView | null;
 }
 
 export interface ProfileView {
@@ -81,12 +101,6 @@ export interface ProfileView {
 export interface LogsAlert {
   errors: number;
   crash: string | null;
-}
-
-export interface ImportResult {
-  turnedOn: number;
-  turnedOff: number;
-  missing: string[];
 }
 
 export interface GameInstall {
@@ -127,7 +141,7 @@ export interface Review {
 }
 
 export interface Progress {
-  task: "sdk" | "manager" | "files" | "mods";
+  task: "sdk" | "manager" | "files" | "mods" | "baseline";
   done: number;
   total: number;
 }
@@ -184,11 +198,13 @@ export const api = {
   applyProfile: (name: string) => invoke<void>("apply_profile", { name }),
   deleteProfile: (name: string) => invoke<void>("delete_profile", { name }),
   playClean: () => invoke<number>("play_clean"),
+  createBaseline: () => invoke<number>("create_baseline"),
+  recycleAdded: (paths: string[]) => invoke<number>("recycle_added", { paths }),
+  checkBaseline: () => invoke<BaselineFindings>("check_baseline"),
+  restoreTfc: (number: number) => invoke<number>("restore_tfc", { number }),
   restoreSuspended: () => invoke<number>("restore_suspended"),
   ackLogs: () => invoke<void>("ack_logs"),
   diagnostics: () => invoke<string>("diagnostics"),
-  exportList: (path: string) => invoke<number>("export_list", { path }),
-  importList: (path: string) => invoke<ImportResult>("import_list", { path }),
   verifyGameFiles: () => invoke<void>("verify_game_files"),
   setNexusLink: (id: string, text: string) => invoke<void>("set_nexus_link", { id, text }),
   checkNexus: () => invoke<NexusCheck>("check_nexus"),

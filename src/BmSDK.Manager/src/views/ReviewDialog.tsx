@@ -79,7 +79,7 @@ export default function ReviewDialog({
               return (
                 <label
                   key={`${r.id}-${m.index}`}
-                  className="flex gap-3.5 rounded-[14px] border p-3.5"
+                  className="block rounded-[14px] border p-3.5"
                   style={{
                     opacity: m.supported ? 1 : 0.7,
                     borderColor: warn ? "rgba(237,180,86,.28)" : "rgba(255,255,255,.06)",
@@ -87,15 +87,16 @@ export default function ReviewDialog({
                     cursor: m.supported ? "pointer" : "default",
                   }}
                 >
-                  <input
-                    type="checkbox"
-                    className="mt-0.5 h-5 w-5 flex-none accent-[#3b9eff]"
-                    checked={checked}
-                    disabled={!m.supported}
-                    onChange={() => toggle(r.id, m.index)}
-                  />
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-3">
+                      {m.supported && (
+                        <input
+                          type="checkbox"
+                          className="h-[18px] w-[18px] flex-none accent-[#3b9eff]"
+                          checked={checked}
+                          onChange={() => toggle(r.id, m.index)}
+                        />
+                      )}
                       <p className="m-0 flex-1 truncate text-[13.5px] font-bold">{m.name}</p>
                       <KindBadge kind={m.kind} />
                     </div>

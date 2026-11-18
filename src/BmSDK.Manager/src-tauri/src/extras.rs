@@ -1,8 +1,7 @@
-//! Profiles, launching without mods, crash diagnostics and sharing a mod list.
+//! Profiles, launching without mods, crash diagnostics.
 
 use super::*;
 use library::Profile;
-use serde::Deserialize;
 use std::collections::HashSet;
 use std::time::Duration;
 
@@ -315,91 +314,6 @@ pub fn diagnostics(app: AppHandle) -> Res<String> {
     Ok(out)
 }
 
-#[derive(Serialize, Deserialize)]
-struct ListEntry {
-    name: String,
-    kind: Kind,
-    enabled: bool,
-    #[serde(default, skip_serializing_if = "Option::is_none")]
-    version: Option<String>,
-}
-
-#[derive(Serialize, Deserialize)]
-struct ListFile {
-    manager: String,
-    sdk: Option<String>,
-    mods: Vec<ListEntry>,
-}
-
-#[derive(Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct ImportResult {
-    pub turned_on: usize,
-    pub turned_off: usize,
-    /// Mods the list wants on that aren't in this library.
-    pub missing: Vec<String>,
-}
-
-#[tauri::command(async)]
-pub fn export_list(app: AppHandle, path: String) -> Res<usize> {
-    let state = lock(&app);
-    let dir = state.game().ok();
-    let list = ListFile {
-        manager: release::manager_version().into(),
-        sdk: dir.as_ref().and_then(|d| game::sdk_version(d)),
-        mods: state
-            .mods
-            .iter()
-            .map(|m| ListEntry {
-                name: m.name.clone(),
-                kind: m.kind,
-                enabled: m.enabled,
-                version: library::version_of(m, dir.as_deref()),
-            })
-            .collect(),
-    };
-
-    let mut path = PathBuf::from(path);
-    if !path.extension().is_some_and(|e| e.eq_ignore_ascii_case("json")) {
-        path.set_extension("json");
-    }
-    let json = serde_json::to_vec_pretty(&list).map_err(|e| e.to_string())?;
-    fs::write(&path, json).map_err(|e| format!("Couldn't save the list: {e}"))?;
-    Ok(list.mods.len())
-}
-
-/// Turns on the mods a shared list has on, for the ones this library has. The list has no files, so it can't install any.
-#[tauri::command(async)]
-pub fn import_list(app: AppHandle, path: String) -> Res<ImportResult> {
-    let path = Path::new(&path);
-    if fs::metadata(path).map(|m| m.len()).unwrap_or(0) > 1024 * 1024 {
-        return Err("That file is too big to be a mod list.".into());
-    }
-    let text = fs::read_to_string(path).map_err(|e| format!("Couldn't read the list: {e}"))?;
-    let list: ListFile = serde_json::from_str(&text).map_err(|_| "That file isn't a mod list from BmSDK Manager.".to_string())?;
-
-    let mut state = lock(&app);
-    let dir = ready_to_change(&state)?;
-
-    let mut wanted = Vec::new();
-    let mut missing = Vec::new();
-    for entry in list.mods.iter().filter(|e| e.enabled) {
-        match state.mods.iter().find(|m| m.kind == entry.kind && m.name.eq_ignore_ascii_case(&entry.name)) {
-            Some(m) => wanted.push(m.id.clone()),
-            None => missing.push(entry.name.clone()),
-        }
-    }
-
-    let result = apply_set(&app, &mut state, &dir, &wanted);
-    match &result {
-        Ok(_) => state.log("info", "Applied a shared mod list"),
-        Err(e) => state.log("error", format!("Couldn't apply the mod list: {e}")),
-    }
-    state.save()?;
-    let (turned_on, turned_off) = result?;
-    Ok(ImportResult { turned_on, turned_off, missing })
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -420,11 +334,4 @@ mod tests {
         assert_eq!(version_cmp("beta", "1.0"), None);
     }
 
-    #[test]
-    fn list_round_trips() {
-        let json = r#"{"manager":"0.24.1","sdk":null,"mods":[{"name":"Cam","kind":"scriptMod","enabled":true}]}"#;
-        let list: ListFile = serde_json::from_str(json).unwrap();
-        assert_eq!(list.mods[0].kind, Kind::ScriptMod);
-        assert!(list.mods[0].version.is_none());
-    }
 }

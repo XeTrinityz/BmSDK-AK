@@ -18,8 +18,17 @@ export async function pickMods(actions: Actions) {
   const picked = await open({
     multiple: true,
     title: "Choose mods to install",
-    filters: [{ name: "Mods", extensions: ["zip", "7z", "rar", "cs", "asi"] }],
+    filters: [
+      { name: "Mods", extensions: ["zip", "7z", "rar", "cs", "asi"] },
+      { name: "Any file", extensions: ["*"] },
+    ],
   });
+  if (picked) await actions.scan(Array.isArray(picked) ? picked : [picked]);
+}
+
+// Windows can't offer files and folders in one dialog, so unpacked mods get their own picker
+export async function pickFolders(actions: Actions) {
+  const picked = await open({ directory: true, multiple: true, title: "Choose mod folders to install" });
   if (picked) await actions.scan(Array.isArray(picked) ? picked : [picked]);
 }
 
@@ -46,6 +55,7 @@ export default function ModsView({ overview: loaded, actions }: { overview: Over
   const [menu, setMenu] = useState<{ x: number; y: number; id: string } | null>(null);
   const [menuConfirm, setMenuConfirm] = useState(false);
   const nameInput = useRef<HTMLInputElement>(null);
+  const [confirmTfc, setConfirmTfc] = useState<number | null>(null);
 
   useEffect(() => {
     if (naming) nameInput.current?.focus();
@@ -135,6 +145,10 @@ export default function ModsView({ overview: loaded, actions }: { overview: Over
           <button type="button" className="btn" aria-pressed={selecting} onClick={() => setSelecting((s) => !s)}>
             <Icons.Check />
             {selecting ? "Done" : "Select"}
+          </button>
+          <button type="button" className="btn" disabled={!!actions.busy} onClick={() => void pickFolders(actions)}>
+            <Icons.Folder />
+            Add folder
           </button>
           <button type="button" className="btn btn-primary" disabled={!!actions.busy} onClick={() => void pickMods(actions)}>
             <Icons.Plus />
@@ -244,6 +258,38 @@ export default function ModsView({ overview: loaded, actions }: { overview: Over
             </button>
           )}
         </div>
+
+        {overview.tfc.length > 0 && (
+          <section className="nv-card flex flex-none flex-col gap-2 border-[rgba(237,180,86,.28)] p-3">
+            <p className="m-0 text-[12px] leading-snug text-[var(--text-muted)]">
+              TFC Installer changed your game files. The manager can't install these, but it can put the game back. Removing
+              one also removes the ones TFC Installer ran after it.
+            </p>
+            {overview.tfc.map((t) => (
+              <div key={t.number} className="flex items-center gap-3">
+                <div className="min-w-0 flex-1">
+                  <p className="m-0 truncate text-[13px] font-bold">{t.name}</p>
+                  <p className="m-0 mt-0.5 text-[11.5px] text-[var(--text-muted)]">
+                    {plural(t.changed, "game file")} changed, {plural(t.added, "file or folder")} added
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className={`btn ${confirmTfc === t.number ? "btn-primary" : ""}`}
+                  disabled={!!actions.busy}
+                  onBlur={() => setConfirmTfc(null)}
+                  onClick={async () => {
+                    if (confirmTfc !== t.number) return setConfirmTfc(t.number);
+                    setConfirmTfc(null);
+                    await actions.run(`Removing ${t.name}`, () => api.restoreTfc(t.number), `${t.name} removed. The game files are back.`);
+                  }}
+                >
+                  {confirmTfc === t.number ? "Remove it" : "Remove"}
+                </button>
+              </div>
+            ))}
+          </section>
+        )}
 
         <div className="flex flex-wrap items-center gap-2">
           {FILTERS.map((f) => {

@@ -1,4 +1,5 @@
 mod archive;
+mod baseline;
 mod detect;
 mod extras;
 mod game;
@@ -6,6 +7,7 @@ mod library;
 mod logs;
 mod nexus;
 mod release;
+mod tfc;
 #[cfg(windows)]
 mod winapi;
 
@@ -78,6 +80,10 @@ struct Overview {
     /// Mods waiting to come back on after a launch without mods.
     suspended: usize,
     logs_alert: extras::LogsAlert,
+    /// Mods TFC Installer put in the game, found from its backup folder.
+    tfc: Vec<tfc::TfcInstall>,
+    /// The snapshot of the game's own files, if one was taken for this game folder.
+    baseline: Option<baseline::BaselineView>,
 }
 
 #[derive(Serialize)]
@@ -234,6 +240,8 @@ fn get_overview(app: AppHandle) -> Overview {
             Some(dir) => extras::logs_alert(&state, dir),
             None => extras::LogsAlert { errors: 0, crash: None },
         },
+        tfc: game_dir.as_deref().map(tfc::list).unwrap_or_default(),
+        baseline: game_dir.as_deref().and_then(|g| baseline::Baseline::load()?.view_for(g)),
     }
 }
 
@@ -395,18 +403,18 @@ fn scan_paths(app: AppHandle, paths: Vec<String>) -> Res<Vec<Review>> {
                 return Err(format!("{source}: {e}"));
             }
             (dir, true, file_size(&path))
-        } else if path.extension().is_some_and(|e| e.eq_ignore_ascii_case("cs") || e.eq_ignore_ascii_case("asi")) {
-            // A single script or plugin: stage it on its own so detection sees just that file
+        } else if path.is_file() {
+            // A single file, like a script, a plugin or a game file: stage it on its own so detection sees just that file
             let dir = library::staging_dir().join(&id);
             library::copy_file(&path, &dir.join(&source))?;
             (dir, true, file_size(&path))
         } else {
-            return Err(format!("{source}: drop a .zip, .7z or .rar, a folder, a .cs script or an .asi plugin."));
+            return Err(format!("{source}: that file or folder can't be found."));
         };
 
-        let found = detect::detect(&dir, &stem);
+        let game_dir = lock(&app).game_dir.clone().map(PathBuf::from);
+        let found = detect::detect(&dir, &stem, game_dir.as_deref());
         let state = lock(&app);
-        let game_dir = state.game_dir.clone().map(PathBuf::from);
 
         let mods = found
             .iter()
@@ -662,6 +670,102 @@ fn disable_all(app: AppHandle) -> Res<usize> {
     result.map(|_| count)
 }
 
+/// Puts the game back the way it was before this TFC Installer run, and every run after it.
+#[tauri::command(async)]
+fn restore_tfc(app: AppHandle, number: u32) -> Res<usize> {
+    let mut state = lock(&app);
+    let dir = ready_to_change(&state)?;
+    let name = tfc::list(&dir).into_iter().find(|r| r.number == number).map(|r| r.name).unwrap_or_default();
+    let result = tfc::restore(&dir, number);
+
+    match &result {
+        Ok(n) => state.log("success", format!("Removed {name} and what TFC Installer ran after it ({n} files and folders)")),
+        Err(e) => state.log("error", format!("Couldn't remove {name}: {e}")),
+    }
+    state.save()?;
+    result
+}
+
+/// Lower-case game-relative paths of every file a mod in the manager's list put in the game.
+fn managed_files(state: &State) -> std::collections::HashSet<String> {
+    state.mods.iter().filter(|m| m.enabled).flat_map(|m| m.files.iter().map(|f| f.to_ascii_lowercase())).collect()
+}
+
+/// Takes a snapshot of the game's own files. It trusts that the game is clean, so it refuses when the
+/// manager knows something is in it.
+#[tauri::command(async)]
+fn create_baseline(app: AppHandle) -> Res<usize> {
+    let dir = {
+        let state = lock(&app);
+        let dir = state.game()?;
+        if game::is_running() {
+            return Err("Close the game first.".into());
+        }
+        if !tfc::list(&dir).is_empty() {
+            return Err("TFC Installer's changes are still in the game. Remove them first, then verify the files in Steam.".into());
+        }
+        let owned = managed_files(&state);
+        if let Some(rel) = detect::vanilla_files(&dir).into_iter().find(|f| owned.contains(&f.to_ascii_lowercase())) {
+            return Err(format!("A mod you installed changes {rel}. Turn off the mods that replace game files first."));
+        }
+        if !state.originals.is_empty() {
+            return Err("Some of the game's files are backed up while a mod replaces them. Turn those mods off first.".into());
+        }
+        dir
+    };
+
+    // Lock is let go while hashing, which takes a few minutes
+    let result = baseline::create(&dir, &mut |done, total| emit(&app, "baseline", done, total));
+    let mut state = lock(&app);
+    match &result {
+        Ok(b) => state.log("success", format!("Took a snapshot of the game's files ({} files)", b.view_for(&dir).map(|v| v.files).unwrap_or(0))),
+        Err(e) => state.log("error", format!("Couldn't take the snapshot: {e}")),
+    }
+    state.save()?;
+    result.map(|b| b.view_for(&dir).map(|v| v.files).unwrap_or(0))
+}
+
+/// Sends files the snapshot doesn't know to the Recycle Bin. Only files that are in the game's own folders,
+/// not in the snapshot and not from a mod the manager installed are accepted, whatever the caller sends.
+#[tauri::command(async)]
+fn recycle_added(app: AppHandle, paths: Vec<String>) -> Res<usize> {
+    let mut state = lock(&app);
+    let dir = ready_to_change(&state)?;
+    let owned = managed_files(&state);
+    let snapshot = baseline::Baseline::load().filter(|b| b.view_for(&dir).is_some()).ok_or("There's no snapshot of this game folder yet.")?;
+    let allowed: std::collections::HashSet<String> = baseline::scope(&dir).into_iter().map(|f| f.to_ascii_lowercase()).collect();
+
+    let mut done = 0;
+    for rel in paths {
+        let k = rel.to_ascii_lowercase();
+        if !allowed.contains(&k) || !snapshot.lacks(&rel) || owned.contains(&k) {
+            continue;
+        }
+        let file = dir.join(rel.split('/').collect::<PathBuf>());
+        #[cfg(all(windows, not(test)))]
+        let gone = winapi::recycle(&file);
+        #[cfg(not(all(windows, not(test))))]
+        let gone = fs::remove_file(&file).is_ok();
+        if gone {
+            done += 1;
+        }
+    }
+    state.log("info", format!("Moved {done} added game file{} to the Recycle Bin", if done == 1 { "" } else { "s" }));
+    state.save()?;
+    Ok(done)
+}
+
+/// Lists game files that differ from the snapshot and aren't ones the manager installed.
+#[tauri::command(async)]
+fn check_baseline(app: AppHandle) -> Res<baseline::Findings> {
+    let (dir, owned) = {
+        let state = lock(&app);
+        (state.game()?, managed_files(&state))
+    };
+    let mut snapshot = baseline::Baseline::load().filter(|b| b.view_for(&dir).is_some()).ok_or("There's no snapshot of this game folder yet.")?;
+    baseline::check(&dir, &mut snapshot, &owned, &mut |done, total| emit(&app, "baseline", done, total))
+}
+
 #[tauri::command(async)]
 fn rescan_game(app: AppHandle) -> Res<usize> {
     let mut state = lock(&app);
@@ -831,6 +935,10 @@ pub fn run() {
             bulk_mods,
             disable_all,
             rescan_game,
+            restore_tfc,
+            create_baseline,
+            check_baseline,
+            recycle_added,
             finish_setup,
             set_check_on_start,
             open_folder,
@@ -850,8 +958,6 @@ pub fn run() {
             extras::restore_suspended,
             extras::ack_logs,
             extras::diagnostics,
-            extras::export_list,
-            extras::import_list,
             open_url,
         ])
         .run(tauri::generate_context!())

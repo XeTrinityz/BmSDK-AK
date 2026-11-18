@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { open, save } from "@tauri-apps/plugin-dialog";
+import { open } from "@tauri-apps/plugin-dialog";
 import type { Actions } from "../App";
-import { api, type GameInstall, type Overview, type Updates } from "../api";
+import { api, type BaselineFindings, type GameInstall, type Overview, type Updates } from "../api";
 import { Icons } from "../components/Icons";
 import { IconTile, SpinIcon, Toggle, ViewHeader, formatBytes, plural } from "../components/ui";
 
@@ -21,6 +21,9 @@ export default function SettingsView({
   const [installs, setInstalls] = useState<GameInstall[]>([]);
   const game = overview.game!;
   const [librarySize, setLibrarySize] = useState<number | null>(null);
+  const [findings, setFindings] = useState<BaselineFindings | null>(null);
+  const [confirmBaseline, setConfirmBaseline] = useState(false);
+  const [confirmRecycle, setConfirmRecycle] = useState(false);
   const biggest = [...overview.mods].filter((m) => m.size > 0).sort((a, b) => b.size - a.size).slice(0, 4);
 
   useEffect(() => {
@@ -30,28 +33,6 @@ export default function SettingsView({
   useEffect(() => {
     void api.librarySize().then(setLibrarySize);
   }, [overview.mods.length]);
-
-  const exportList = async () => {
-    const path = await save({
-      title: "Save your mod list",
-      defaultPath: "BmSDK mod list.json",
-      filters: [{ name: "Mod list", extensions: ["json"] }],
-    });
-    if (path) actions.attempt(api.exportList(path), "Saved your mod list");
-  };
-
-  const importList = async () => {
-    const path = await open({ title: "Choose a mod list", filters: [{ name: "Mod list", extensions: ["json"] }] });
-    if (typeof path !== "string") return;
-    await actions.run("Applying the mod list", async () => {
-      const r = await api.importList(path);
-      const missing =
-        r.missing.length > 0
-          ? ` ${r.missing.length} aren't in your library: ${r.missing.slice(0, 3).join(", ")}${r.missing.length > 3 ? " and more" : ""}.`
-          : "";
-      actions.toast(`Turned on ${r.turnedOn} and off ${r.turnedOff}.${missing}`, "info");
-    });
-  };
 
   const useFolder = (path: string) =>
     actions.run("Switching game folder", async () => {
@@ -189,19 +170,106 @@ export default function SettingsView({
       </section>
 
       <section className="nv-card flex flex-none flex-col gap-3 p-[18px]">
-        <Heading icon={<Icons.Upload />} title="Share your setup" theme="blue" />
-        <div className="flex items-center gap-3">
-          <p className="m-0 min-w-0 flex-1 text-[12px] leading-relaxed text-[var(--text-muted)]">
-            Save the list of your mods as a small file to send to a friend. When they import it, the mods they already have
-            are turned on to match. The list holds no mod files, so they still need to get any they're missing.
+        <Heading icon={<Icons.Shield />} title="Game file snapshot" theme="purple" />
+        <p className="m-0 text-[12px] leading-relaxed text-[var(--text-muted)]">
+          A snapshot remembers what the game's own files look like, so the manager can tell you which ones something else
+          changed. It trusts that the game was clean when you took it: verify the files in Steam first, with no mods in
+          the game. If it wasn't clean, mods that were already in will look like part of the game.
+        </p>
+        {overview.baseline ? (
+          <p className="m-0 text-[12px] text-[var(--text-secondary)]">
+            Taken {new Date(overview.baseline.created * 1000).toLocaleDateString()}, {plural(overview.baseline.files, "file")}.
           </p>
-          <button type="button" className="btn flex-none" disabled={!!actions.busy} onClick={() => void exportList()}>
-            Export list
-          </button>
-          <button type="button" className="btn flex-none" disabled={!!actions.busy} onClick={() => void importList()}>
-            Import list
+        ) : (
+          <p className="m-0 text-[12px] text-[#f4cf8e]">No snapshot of this game folder yet.</p>
+        )}
+        <div className="flex items-center gap-2.5">
+          {overview.baseline && (
+            <button
+              type="button"
+              className="btn"
+              disabled={!!actions.busy}
+              onClick={() =>
+                void actions.run("Checking the game files", async () => {
+                  setFindings(await api.checkBaseline());
+                })
+              }
+            >
+              Check for changes
+            </button>
+          )}
+          <button
+            type="button"
+            className={`btn ${confirmBaseline ? "btn-primary" : ""}`}
+            disabled={!!actions.busy || game.running}
+            onBlur={() => setConfirmBaseline(false)}
+            onClick={async () => {
+              if (!confirmBaseline) return setConfirmBaseline(true);
+              setConfirmBaseline(false);
+              setFindings(null);
+              await actions.run("Taking a snapshot", () => api.createBaseline(), "Snapshot taken.");
+            }}
+          >
+            {confirmBaseline ? "The game is verified and clean" : overview.baseline ? "Take a new snapshot" : "Take a snapshot"}
           </button>
         </div>
+        {findings && (
+          <div className="flex flex-col gap-2.5">
+            {findings.changed.length + findings.missing.length + findings.added.length === 0 && (
+              <p className="m-0 text-[12px] text-[#7fe9c0]">Every game file matches the snapshot.</p>
+            )}
+            {(
+              [
+                ["Changed", findings.changed, "Differ from the snapshot. A mod, or a game update."],
+                ["Missing", findings.missing, "In the snapshot, gone now."],
+                ["Added", findings.added, "Not in the snapshot, and not from a mod you installed here."],
+              ] as const
+            ).map(
+              ([title, list, note]) =>
+                list.length > 0 && (
+                  <div key={title} className="flex flex-col gap-1">
+                    <p className="label m-0">
+                      {title} ({list.length}) <span className="normal-case tracking-normal opacity-70">{note}</span>
+                    </p>
+                    <div className="path-box m-0 flex max-h-[120px] flex-col gap-0.5 overflow-y-auto">
+                      {list.map((f) => (
+                        <span key={f} className="truncate">
+                          {f}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ),
+            )}
+            {findings.added.length > 0 && (
+              <div className="flex items-center gap-2.5">
+                <button
+                  type="button"
+                  className={`btn ${confirmRecycle ? "btn-primary" : ""}`}
+                  disabled={!!actions.busy || game.running}
+                  onBlur={() => setConfirmRecycle(false)}
+                  onClick={async () => {
+                    if (!confirmRecycle) return setConfirmRecycle(true);
+                    setConfirmRecycle(false);
+                    await actions.run("Recycling added files", async () => {
+                      const n = await api.recycleAdded(findings.added);
+                      actions.toast(`Moved ${plural(n, "file")} to the Recycle Bin.`, "success");
+                      setFindings(await api.checkBaseline());
+                    });
+                  }}
+                >
+                  {confirmRecycle ? `Recycle ${plural(findings.added.length, "file")}` : "Recycle added files"}
+                </button>
+                <p className="m-0 text-[11.5px] text-[var(--text-muted)]">They go to the Recycle Bin, so you can get them back.</p>
+              </div>
+            )}
+            {findings.changed.length > 0 && (
+              <p className="m-0 text-[11.5px] text-[var(--text-muted)]">
+                Verify game files in Steam on the Home page puts changed and missing files back.
+              </p>
+            )}
+          </div>
+        )}
       </section>
 
       <div className="min-h-0 flex-1" />

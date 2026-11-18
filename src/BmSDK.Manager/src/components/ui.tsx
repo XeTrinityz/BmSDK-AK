@@ -298,12 +298,17 @@ export function Select({
 const TIP_GAP = 10;
 const TIP_MARGIN = 8;
 
+/** Keeps a tooltip on `el` until it's called again with nothing. Used for warnings that wait for a second click. */
+export function pinTip(el: Element | null, text = "", tone: "warning" | "plain" = "plain") {
+  window.dispatchEvent(new CustomEvent("pin-tip", { detail: el && text ? { el, text, tone } : null }));
+}
+
 /**
  * Replaces the browser's plain tooltips. Anything with a `title` attribute gets this one instead: the title
  * moves to `data-tip` the first time it's hovered, so the browser never draws its own. Mount it once.
  */
 export function Tooltips() {
-  const [tip, setTip] = useState<{ text: string; rect: DOMRect } | null>(null);
+  const [tip, setTip] = useState<{ text: string; rect: DOMRect; tone: "warning" | "plain" } | null>(null);
   const [pos, setPos] = useState<{ left: number; top: number; below: boolean; arrow: number } | null>(null);
   const bubble = useRef<HTMLDivElement>(null);
 
@@ -311,13 +316,28 @@ export function Tooltips() {
     let timer: number | undefined;
     let anchor: Element | null = null;
     let visible = false;
+    let pinned = false;
 
-    const hide = () => {
+    const hide = (force?: unknown) => {
+      // A pinned warning stays through clicks and scrolling until it's unpinned
+      if (pinned && force !== true) return;
+      pinned = false;
       window.clearTimeout(timer);
       anchor = null;
       visible = false;
       setTip(null);
       setPos(null);
+    };
+
+    const pin = (e: Event) => {
+      const detail = (e as CustomEvent<{ el: Element; text: string; tone: "warning" | "plain" } | null>).detail;
+      if (!detail) return hide(true);
+      window.clearTimeout(timer);
+      pinned = true;
+      anchor = detail.el;
+      visible = true;
+      setPos(null);
+      setTip({ text: detail.text, rect: detail.el.getBoundingClientRect(), tone: detail.tone });
     };
 
     const show = (el: Element, delay: number) => {
@@ -329,11 +349,12 @@ export function Tooltips() {
         if (!el.isConnected) return hide();
         visible = true;
         setPos(null);
-        setTip({ text, rect: el.getBoundingClientRect() });
+        setTip({ text, rect: el.getBoundingClientRect(), tone: "plain" });
       }, delay);
     };
 
     const over = (e: Event) => {
+      if (pinned) return;
       const el = (e.target as Element | null)?.closest?.("[title],[data-tip]") ?? null;
       if (!el) return;
       // Taking the title away stops the browser from showing its own tooltip
@@ -349,6 +370,8 @@ export function Tooltips() {
       const el = (e.target as Element | null)?.closest?.("[data-tip]");
       if (el && el === anchor) hide();
     };
+
+    window.addEventListener("pin-tip", pin);
 
     document.addEventListener("mouseover", over);
     document.addEventListener("focusin", over);
@@ -368,6 +391,7 @@ export function Tooltips() {
       document.removeEventListener("keydown", hide);
       window.removeEventListener("wheel", hide);
       window.removeEventListener("blur", hide);
+      window.removeEventListener("pin-tip", pin);
     };
   }, []);
 
@@ -391,7 +415,7 @@ export function Tooltips() {
     <div
       ref={bubble}
       role="tooltip"
-      className="tooltip-bubble"
+      className={`tooltip-bubble ${tip.tone === "warning" ? "tooltip-warning" : ""}`}
       style={{
         left: pos?.left ?? 0,
         top: pos?.top ?? 0,
