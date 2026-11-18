@@ -57,15 +57,11 @@ export interface Activity {
   text: string;
 }
 
-export interface BaselineView {
-  created: number;
-  files: number;
-}
-
-export interface BaselineFindings {
+export interface GameFileFindings {
   changed: string[];
   missing: string[];
   added: string[];
+  sameBuild: boolean;
 }
 
 export interface TfcInstall {
@@ -89,7 +85,6 @@ export interface Overview {
   suspended: number;
   logsAlert: LogsAlert;
   tfc: TfcInstall[];
-  baseline: BaselineView | null;
 }
 
 export interface ProfileView {
@@ -198,9 +193,8 @@ export const api = {
   applyProfile: (name: string) => invoke<void>("apply_profile", { name }),
   deleteProfile: (name: string) => invoke<void>("delete_profile", { name }),
   playClean: () => invoke<number>("play_clean"),
-  createBaseline: () => invoke<number>("create_baseline"),
   recycleAdded: (paths: string[]) => invoke<number>("recycle_added", { paths }),
-  checkBaseline: () => invoke<BaselineFindings>("check_baseline"),
+  checkGameFiles: () => invoke<GameFileFindings>("check_game_files"),
   restoreTfc: (number: number) => invoke<number>("restore_tfc", { number }),
   restoreSuspended: () => invoke<number>("restore_suspended"),
   ackLogs: () => invoke<void>("ack_logs"),

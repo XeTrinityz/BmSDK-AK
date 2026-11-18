@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { open } from "@tauri-apps/plugin-dialog";
 import type { Actions } from "../App";
-import { api, type BaselineFindings, type GameInstall, type Overview, type Updates } from "../api";
+import { api, type GameFileFindings, type GameInstall, type Overview, type Updates } from "../api";
 import { Icons } from "../components/Icons";
 import { IconTile, SpinIcon, Toggle, ViewHeader, formatBytes, plural } from "../components/ui";
 
@@ -21,8 +21,7 @@ export default function SettingsView({
   const [installs, setInstalls] = useState<GameInstall[]>([]);
   const game = overview.game!;
   const [librarySize, setLibrarySize] = useState<number | null>(null);
-  const [findings, setFindings] = useState<BaselineFindings | null>(null);
-  const [confirmBaseline, setConfirmBaseline] = useState(false);
+  const [findings, setFindings] = useState<GameFileFindings | null>(null);
   const [confirmRecycle, setConfirmRecycle] = useState(false);
   const biggest = [...overview.mods].filter((m) => m.size > 0).sort((a, b) => b.size - a.size).slice(0, 4);
 
@@ -170,59 +169,40 @@ export default function SettingsView({
       </section>
 
       <section className="nv-card flex flex-none flex-col gap-3 p-[18px]">
-        <Heading icon={<Icons.Shield />} title="Game file snapshot" theme="purple" />
+        <Heading icon={<Icons.Shield />} title="Game files" theme="purple" />
         <p className="m-0 text-[12px] leading-relaxed text-[var(--text-muted)]">
-          A snapshot remembers what the game's own files look like, so the manager can tell you which ones something else
-          changed. It trusts that the game was clean when you took it: verify the files in Steam first, with no mods in
-          the game. If it wasn't clean, mods that were already in will look like part of the game.
+          Compares your game with the list of files Steam installs, so you can see which ones something else changed or
+          added. Files from mods you installed here are left out. It only works on Steam copies.
         </p>
-        {overview.baseline ? (
-          <p className="m-0 text-[12px] text-[var(--text-secondary)]">
-            Taken {new Date(overview.baseline.created * 1000).toLocaleDateString()}, {plural(overview.baseline.files, "file")}.
-          </p>
-        ) : (
-          <p className="m-0 text-[12px] text-[#f4cf8e]">No snapshot of this game folder yet.</p>
-        )}
         <div className="flex items-center gap-2.5">
-          {overview.baseline && (
-            <button
-              type="button"
-              className="btn"
-              disabled={!!actions.busy}
-              onClick={() =>
-                void actions.run("Checking the game files", async () => {
-                  setFindings(await api.checkBaseline());
-                })
-              }
-            >
-              Check for changes
-            </button>
-          )}
           <button
             type="button"
-            className={`btn ${confirmBaseline ? "btn-primary" : ""}`}
-            disabled={!!actions.busy || game.running}
-            onBlur={() => setConfirmBaseline(false)}
-            onClick={async () => {
-              if (!confirmBaseline) return setConfirmBaseline(true);
-              setConfirmBaseline(false);
-              setFindings(null);
-              await actions.run("Taking a snapshot", () => api.createBaseline(), "Snapshot taken.");
-            }}
+            className="btn"
+            disabled={!!actions.busy}
+            onClick={() =>
+              void actions.run("Checking the game files", async () => {
+                setFindings(await api.checkGameFiles());
+              })
+            }
           >
-            {confirmBaseline ? "The game is verified and clean" : overview.baseline ? "Take a new snapshot" : "Take a snapshot"}
+            Check game files
           </button>
         </div>
         {findings && (
           <div className="flex flex-col gap-2.5">
+            {!findings.sameBuild && (
+              <p className="m-0 text-[12px] text-[#f4cf8e]">
+                Your Steam build or language differs from the list, so some files may show up that are fine.
+              </p>
+            )}
             {findings.changed.length + findings.missing.length + findings.added.length === 0 && (
-              <p className="m-0 text-[12px] text-[#7fe9c0]">Every game file matches the snapshot.</p>
+              <p className="m-0 text-[12px] text-[#7fe9c0]">Every game file matches Steam's.</p>
             )}
             {(
               [
-                ["Changed", findings.changed, "Differ from the snapshot. A mod, or a game update."],
-                ["Missing", findings.missing, "In the snapshot, gone now."],
-                ["Added", findings.added, "Not in the snapshot, and not from a mod you installed here."],
+                ["Changed", findings.changed, "Differ from Steam's. A mod, or a setting the game saved."],
+                ["Missing", findings.missing, "Steam installs these, and they aren't there."],
+                ["Added", findings.added, "Not from Steam, and not from a mod you installed here."],
               ] as const
             ).map(
               ([title, list, note]) =>
@@ -254,7 +234,7 @@ export default function SettingsView({
                     await actions.run("Recycling added files", async () => {
                       const n = await api.recycleAdded(findings.added);
                       actions.toast(`Moved ${plural(n, "file")} to the Recycle Bin.`, "success");
-                      setFindings(await api.checkBaseline());
+                      setFindings(await api.checkGameFiles());
                     });
                   }}
                 >

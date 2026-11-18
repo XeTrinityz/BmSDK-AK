@@ -1,5 +1,4 @@
 mod archive;
-mod baseline;
 mod detect;
 mod extras;
 mod game;
@@ -8,6 +7,7 @@ mod logs;
 mod nexus;
 mod release;
 mod tfc;
+mod vanilla;
 #[cfg(windows)]
 mod winapi;
 
@@ -82,8 +82,6 @@ struct Overview {
     logs_alert: extras::LogsAlert,
     /// Mods TFC Installer put in the game, found from its backup folder.
     tfc: Vec<tfc::TfcInstall>,
-    /// The snapshot of the game's own files, if one was taken for this game folder.
-    baseline: Option<baseline::BaselineView>,
 }
 
 #[derive(Serialize)]
@@ -241,7 +239,6 @@ fn get_overview(app: AppHandle) -> Overview {
             None => extras::LogsAlert { errors: 0, crash: None },
         },
         tfc: game_dir.as_deref().map(tfc::list).unwrap_or_default(),
-        baseline: game_dir.as_deref().and_then(|g| baseline::Baseline::load()?.view_for(g)),
     }
 }
 
@@ -691,54 +688,19 @@ fn managed_files(state: &State) -> std::collections::HashSet<String> {
     state.mods.iter().filter(|m| m.enabled).flat_map(|m| m.files.iter().map(|f| f.to_ascii_lowercase())).collect()
 }
 
-/// Takes a snapshot of the game's own files. It trusts that the game is clean, so it refuses when the
-/// manager knows something is in it.
-#[tauri::command(async)]
-fn create_baseline(app: AppHandle) -> Res<usize> {
-    let dir = {
-        let state = lock(&app);
-        let dir = state.game()?;
-        if game::is_running() {
-            return Err("Close the game first.".into());
-        }
-        if !tfc::list(&dir).is_empty() {
-            return Err("TFC Installer's changes are still in the game. Remove them first, then verify the files in Steam.".into());
-        }
-        let owned = managed_files(&state);
-        if let Some(rel) = detect::vanilla_files(&dir).into_iter().find(|f| owned.contains(&f.to_ascii_lowercase())) {
-            return Err(format!("A mod you installed changes {rel}. Turn off the mods that replace game files first."));
-        }
-        if !state.originals.is_empty() {
-            return Err("Some of the game's files are backed up while a mod replaces them. Turn those mods off first.".into());
-        }
-        dir
-    };
-
-    // Lock is let go while hashing, which takes a few minutes
-    let result = baseline::create(&dir, &mut |done, total| emit(&app, "baseline", done, total));
-    let mut state = lock(&app);
-    match &result {
-        Ok(b) => state.log("success", format!("Took a snapshot of the game's files ({} files)", b.view_for(&dir).map(|v| v.files).unwrap_or(0))),
-        Err(e) => state.log("error", format!("Couldn't take the snapshot: {e}")),
-    }
-    state.save()?;
-    result.map(|b| b.view_for(&dir).map(|v| v.files).unwrap_or(0))
-}
-
-/// Sends files the snapshot doesn't know to the Recycle Bin. Only files that are in the game's own folders,
-/// not in the snapshot and not from a mod the manager installed are accepted, whatever the caller sends.
+/// Sends files that aren't part of the game to the Recycle Bin. Only files in the game's own folders that
+/// Steam didn't put there and the manager didn't either are accepted, whatever the caller sends.
 #[tauri::command(async)]
 fn recycle_added(app: AppHandle, paths: Vec<String>) -> Res<usize> {
     let mut state = lock(&app);
     let dir = ready_to_change(&state)?;
     let owned = managed_files(&state);
-    let snapshot = baseline::Baseline::load().filter(|b| b.view_for(&dir).is_some()).ok_or("There's no snapshot of this game folder yet.")?;
-    let allowed: std::collections::HashSet<String> = baseline::scope(&dir).into_iter().map(|f| f.to_ascii_lowercase()).collect();
+    let added = vanilla::added_files(&dir);
 
     let mut done = 0;
     for rel in paths {
         let k = rel.to_ascii_lowercase();
-        if !allowed.contains(&k) || !snapshot.lacks(&rel) || owned.contains(&k) {
+        if owned.contains(&k) || !added.contains(&k) {
             continue;
         }
         let file = dir.join(rel.split('/').collect::<PathBuf>());
@@ -755,15 +717,14 @@ fn recycle_added(app: AppHandle, paths: Vec<String>) -> Res<usize> {
     Ok(done)
 }
 
-/// Lists game files that differ from the snapshot and aren't ones the manager installed.
+/// Compares the game's files with the list of Steam's own, ignoring files the manager installed.
 #[tauri::command(async)]
-fn check_baseline(app: AppHandle) -> Res<baseline::Findings> {
+fn check_game_files(app: AppHandle) -> Res<vanilla::Findings> {
     let (dir, owned) = {
         let state = lock(&app);
         (state.game()?, managed_files(&state))
     };
-    let mut snapshot = baseline::Baseline::load().filter(|b| b.view_for(&dir).is_some()).ok_or("There's no snapshot of this game folder yet.")?;
-    baseline::check(&dir, &mut snapshot, &owned, &mut |done, total| emit(&app, "baseline", done, total))
+    vanilla::check(&dir, &owned, &mut |done, total| emit(&app, "baseline", done, total))
 }
 
 #[tauri::command(async)]
@@ -936,8 +897,7 @@ pub fn run() {
             disable_all,
             rescan_game,
             restore_tfc,
-            create_baseline,
-            check_baseline,
+            check_game_files,
             recycle_added,
             finish_setup,
             set_check_on_start,
