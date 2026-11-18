@@ -57,7 +57,8 @@ public class DemoScript : Script
     {
         if (key != Keys.J) return;
 
-        var player = Game.GetPlayerPawn();
+        // There is no pawn on the main menu or during a load
+        if (Game.GetPlayerPawn() is not { } player) return;
         var population = Game.GetPopulationManager();
 
         // Spawn Joker combat enemy
