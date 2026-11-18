@@ -107,7 +107,7 @@ Follow these steps to set up your environment for building, running, and debuggi
 2. Go to [visualstudio.microsoft.com/downloads](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Stable) and run the Visual Studio Installer.
 3. In the Visual Studio Installer, select "**.NET desktop development**" from the _Workloads_ tab.
 4. Start Visual Studio and open the solution in `%GameDir%\BmGame\ScriptsDev`.
-5. Write your code in any C# source file in `%GameDir%\BmGame\Scripts`.
+5. Add a `.cs` file to `%GameDir%\BmGame\Scripts` and write your code in it. Make the folder if it isn't there.
 6. Run your code by pressing **F5** in Visual Studio.
 7. Follow the [docs](https://bmsdk.dev/docs/guides/first-mod/) to write your first script.
 
