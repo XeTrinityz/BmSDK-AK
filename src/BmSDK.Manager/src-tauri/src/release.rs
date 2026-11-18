@@ -46,8 +46,12 @@ pub struct ReleaseInfo {
 }
 
 fn client() -> Result<reqwest::Client, String> {
+    // A connection that stalls (Wi-Fi drops, the PC sleeps) otherwise hangs the check or the download forever,
+    // and the manager stays busy until it is closed. The read limit is per read, so a slow download still finishes.
     reqwest::Client::builder()
         .user_agent(format!("BmSDK-Manager/{}", manager_version()))
+        .connect_timeout(std::time::Duration::from_secs(20))
+        .read_timeout(std::time::Duration::from_secs(30))
         .build()
         .map_err(|e| e.to_string())
 }
