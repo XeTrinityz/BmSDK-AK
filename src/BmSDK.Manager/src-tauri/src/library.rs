@@ -184,6 +184,14 @@ impl State {
     fn is_original(&self, rel: &str) -> bool {
         self.originals.iter().any(|o| eq(o, rel))
     }
+
+    /// Points profiles at the new copy of a mod that was updated. An update gets a new id, and a profile
+    /// still naming the old one would turn the mod off the next time it's applied.
+    pub fn replace_in_profiles(&mut self, old: &str, new: &str) {
+        for id in self.profiles.iter_mut().flat_map(|p| p.mods.iter_mut()).filter(|id| *id == old) {
+            *id = new.to_string();
+        }
+    }
 }
 
 pub struct Deployer<'a> {

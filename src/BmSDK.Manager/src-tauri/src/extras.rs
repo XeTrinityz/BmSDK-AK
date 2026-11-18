@@ -395,6 +395,41 @@ mod tests {
         assert_eq!(state.suspended, vec![ids[1].clone()]);
     }
 
+    // The order an update runs in: the new copy goes in, the old one is uninstalled, then profiles follow
+    #[test]
+    fn a_profile_keeps_a_mod_through_an_update() {
+        let _guard = library::ENV_LOCK.lock().unwrap_or_else(|e| e.into_inner());
+        let dir = tempfile::tempdir().unwrap();
+        std::env::set_var("LOCALAPPDATA", dir.path().join("appdata"));
+        let game = dir.path().join("game");
+        let stage = dir.path().join("stage");
+        let rel = "Binaries/Win64/plugins/Fov.asi".to_string();
+        let file = stage.join(rel.split('/').collect::<PathBuf>());
+        fs::create_dir_all(file.parent().unwrap()).unwrap();
+        fs::write(file, "v1").unwrap();
+        let found = Detected {
+            name: "Fov".into(),
+            kind: Kind::AsiPlugin,
+            description: String::new(),
+            files: vec![detect::Mapping { src: rel.clone(), dest: rel }],
+        };
+
+        let mut state = State::default();
+        let mut deployer = Deployer { state: &mut state, game: game.clone() };
+        let old = deployer.add(&stage, &found, "fov1.zip", &mut || {}).unwrap();
+        state.profiles.push(Profile { name: "Mine".into(), mods: vec![old.clone()] });
+        assert!(profile_views(&state)[0].active);
+
+        let mut deployer = Deployer { state: &mut state, game: game.clone() };
+        let new = deployer.add(&stage, &found, "fov2.zip", &mut || {}).unwrap();
+        deployer.uninstall(&old).unwrap();
+        state.replace_in_profiles(&old, &new);
+
+        let view = &profile_views(&state)[0];
+        assert_eq!((view.count, view.active), (1, true));
+        assert_eq!(state.profiles[0].mods, vec![new]);
+    }
+
     #[test]
     fn compares_versions() {
         use std::cmp::Ordering::*;

@@ -552,6 +552,7 @@ fn install_review(app: AppHandle, id: String, indices: Vec<usize>) -> Res<()> {
                         result = Err(e);
                         break;
                     }
+                    state.replace_in_profiles(&old, &new_id);
                 }
                 // A Nexus-named download links itself. A reinstall keeps the old link when the file says nothing new.
                 let from_name = nexus::parse_file_name(&pending.source);
