@@ -13,12 +13,31 @@ public static class Debug
     /// </summary>
     internal static void InitFileLog()
     {
-        var writer = new StreamWriter(Path.Combine(FileUtils.GetBinariesPath(), "BmSDK.log"))
+        // The log can't always be made next to the game: the folder may be read-only (an Epic copy
+        // under Program Files) or a game that hasn't finished closing may still hold the file. That
+        // isn't worth ending the game over, so the log goes to the temp folder instead.
+        string? problem = null;
+        foreach (var dir in new[] { FileUtils.GetBinariesPath(), Path.GetTempPath() })
         {
-            AutoFlush = true,
-        };
+            var path = Path.Combine(dir, "BmSDK.log");
+            try
+            {
+                var writer = new StreamWriter(path) { AutoFlush = true };
+                Trace.Listeners.Add(new TextWriterTraceListener(writer));
+            }
+            catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+            {
+                problem ??= e.Message;
+                continue;
+            }
 
-        Trace.Listeners.Add(new TextWriterTraceListener(writer));
+            if (problem != null)
+            {
+                LogWarning($"BmSDK.log couldn't be written in the game folder, so it is at {path}: {problem}");
+            }
+
+            return;
+        }
     }
 
     public static void Log(
