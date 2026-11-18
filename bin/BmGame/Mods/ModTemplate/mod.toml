@@ -1,8 +1,19 @@
 name = "Mod Template"
 description = "A template mod to use as a base"
 
+# BmSDK Manager shows the version next to the mod's name. When someone installs a new copy,
+# it tells them if that copy is newer or older than the one they have.
+version = "1.0.0"
+
 # To ship a built DLL instead of scripts, name it here. The path is relative to this folder.
 # A .pdb with the same name next to it is loaded too. When the DLL is there it's used over the scripts.
 # Build it against the same BmSDK.dll players have. BmSDK's global usings aren't added for it,
 # so the project has to declare its own.
 # assembly = "MyMod.dll"
+
+# Packages to load once when the game starts, before any world does, and objects to keep in memory
+# after that. A package is named like its .upk file without the extension, an object by its full path.
+# Keep this table at the end of the file. A key written after it would become part of it.
+# [preload]
+# packages = ["MyPackage_SF"]
+# keep_alive = ["MyPackage.MyObject"]
