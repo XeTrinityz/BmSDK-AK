@@ -84,6 +84,9 @@ internal static class ScriptManager
     private static readonly Dictionary<string, Timer> s_debounceTimers = [];
     private static readonly Lock s_lockObj = new();
 
+    // Mods compile side by side at startup. Without this, two broken mods mix their error lines.
+    private static readonly Lock s_errorsLock = new();
+
     private const int DebounceMillis = 500;
 
     // Every loaded script, rebuilt when a mod loads or unloads. The tick, draw and key callbacks walk
@@ -673,11 +676,20 @@ internal static class ScriptManager
             .GroupBy(error => error.Location.SourceTree?.FilePath ?? "(no file)")
             .ToDictionary(group => group.Key, group => group.ToArray());
 
+        lock (s_errorsLock)
+        {
+            LogErrors(errorsByFilePath, scriptsDir, modName);
+        }
+    }
+
+    private static void LogErrors(Dictionary<string, Diagnostic[]> errorsByFilePath, string scriptsDir, string modName)
+    {
         foreach (var filePath in errorsByFilePath.Keys)
         {
             var shortPath = Path.GetRelativePath(scriptsDir, filePath);
+            var count = errorsByFilePath[filePath].Length;
             Debug.LogError(
-                $"[{modName}] {shortPath}: {errorsByFilePath[filePath].Length} errors:",
+                $"[{modName}] {shortPath}: {count} {CommonUtils.FormatPlural(count, "error")}:",
                 skipSender: true
             );
 
@@ -846,12 +858,17 @@ internal static class ScriptManager
 
     private static void ScheduleReload(string modDirPath)
     {
-        if (!s_debounceTimers.TryGetValue(modDirPath, out var timer))
+        // The Mods and Scripts watchers raise events on their own threads, and ScriptsDev saves files in
+        // both at once. A throw here would be unhandled on a pool thread and end the game.
+        lock (s_debounceTimers)
         {
-            timer = new Timer(_ => ReloadMod(modDirPath));
-            s_debounceTimers[modDirPath] = timer;
-        }
+            if (!s_debounceTimers.TryGetValue(modDirPath, out var timer))
+            {
+                timer = new Timer(_ => ReloadMod(modDirPath));
+                s_debounceTimers[modDirPath] = timer;
+            }
 
-        timer.Change(DebounceMillis, Timeout.Infinite);
+            timer.Change(DebounceMillis, Timeout.Infinite);
+        }
     }
 }
