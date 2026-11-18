@@ -152,6 +152,14 @@ export default function HomeView({
         </Banner>
       )}
 
+      {game.store === "GOG" && (
+        <Banner
+          theme="amber"
+          icon={<Icons.Alert />}
+          text="This is a GOG copy of the game. BmSDK only works with the Steam and Epic Games versions for now, so script mods won't load."
+        />
+      )}
+
       {installed && !game.asiLoader && (
         <Banner
           theme="amber"
@@ -320,7 +328,7 @@ export default function HomeView({
   );
 }
 
-function Banner({ theme, icon, text, children }: { theme: Theme; icon: ReactNode; text: string; children: ReactNode }) {
+function Banner({ theme, icon, text, children }: { theme: Theme; icon: ReactNode; text: string; children?: ReactNode }) {
   return (
     <section
       className="nv-card flex flex-none items-center gap-3.5 px-4 py-3"
@@ -330,7 +338,7 @@ function Banner({ theme, icon, text, children }: { theme: Theme; icon: ReactNode
         {icon}
       </IconTile>
       <p className="m-0 min-w-0 flex-1 text-[13px] leading-snug text-[var(--text-secondary)]">{text}</p>
-      <div className="flex flex-none gap-2">{children}</div>
+      {children && <div className="flex flex-none gap-2">{children}</div>}
     </section>
   );
 }

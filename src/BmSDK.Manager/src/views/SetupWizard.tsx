@@ -189,8 +189,14 @@ function InstallSdk({
   });
 
   const downloading = busy === "Installing BmSDK";
+  const gog = game.store === "GOG";
   const items: { text: string; state: "done" | "doing" | "todo" | "warn" }[] = [
-    { text: `Found Arkham Knight (${game.store})`, state: "done" },
+    {
+      text: gog
+        ? "This is a GOG copy. BmSDK only works with the Steam and Epic Games versions for now."
+        : `Found Arkham Knight (${game.store})`,
+      state: gog ? "warn" : "done",
+    },
     { text: game.writable ? "The game folder can be written to" : "Windows will ask once to allow changes to the game folder", state: game.writable ? "done" : "warn" },
     {
       text: updates ? `Latest BmSDK is ${updates.latest}` : error ? "Couldn't reach GitHub" : "Checking GitHub for the latest release",
