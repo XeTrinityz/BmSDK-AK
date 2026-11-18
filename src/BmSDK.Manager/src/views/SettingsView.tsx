@@ -80,9 +80,10 @@ export default function SettingsView({
             Look for mods in the game
           </button>
         </div>
-        {others.length > 0 && (
+        {overview.mods.some((m) => m.enabled) && (
           <p className="m-0 text-[11.5px] text-[var(--text-muted)]">
-            Switching folders leaves the mods that are on in the old one. Mods that are off can go in the new one.
+            The manager looks after one game folder. Turn your mods off before you switch, so the game files they replaced
+            are put back. They can go in the new folder after that.
           </p>
         )}
       </section>

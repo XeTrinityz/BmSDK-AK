@@ -113,6 +113,8 @@ struct Review {
     source: String,
     size: u64,
     mods: Vec<ReviewMod>,
+    /// Why this one couldn't be opened. The others dropped with it are still offered.
+    error: Option<String>,
 }
 
 #[derive(Serialize)]
@@ -255,7 +257,20 @@ fn set_game_dir(app: AppHandle, path: String) -> Res<usize> {
 
     let same = state.game_dir.as_ref().is_some_and(|d| game::same_path(Path::new(d), &dir));
     if !same {
-        // Mods that are on stay with the old folder. Ones that are off live in the library and can go in the new one.
+        // The manager only keeps track of one folder. Switching away from one that's still there would forget the
+        // mods that are on in it and the game files they replaced, and nothing could put those back afterwards.
+        let on = state.mods.iter().filter(|m| m.enabled).count();
+        if on > 0 && state.game_dir.as_ref().is_some_and(|d| game::find_root(Path::new(d)).is_some()) {
+            return Err(format!(
+                "{on} mod{} {} on in the current game folder. Turn {} off first (Backups, Turn everything off), so the game files they replaced are put back, then switch.",
+                if on == 1 { "" } else { "s" },
+                if on == 1 { "is" } else { "are" },
+                if on == 1 { "it" } else { "them" },
+            ));
+        }
+
+        // The old folder is gone, so the mods that were on in it went with it. Ones that are off live in the library
+        // and can go in the new one.
         for m in state.mods.iter().filter(|m| m.enabled) {
             let _ = fs::remove_dir_all(library::library_dir().join(&m.id));
         }
@@ -390,23 +405,26 @@ fn scan_paths(app: AppHandle, paths: Vec<String>) -> Res<Vec<Review>> {
         let stem = path.file_stem().unwrap_or_default().to_string_lossy().into_owned();
         let id = lock(&app).next_id();
 
-        let (dir, extracted, size) = if path.is_dir() {
+        let staged = if path.is_dir() {
             let size = detect::list_files(&path).iter().map(|f| file_size(&path.join(f))).sum();
-            (path.clone(), false, size)
+            Ok((path.clone(), false, size))
         } else if archive::is_archive(&path) {
             let dir = library::staging_dir().join(&id);
-            if let Err(e) = archive::extract(&path, &dir) {
-                let _ = fs::remove_dir_all(&dir);
-                return Err(format!("{source}: {e}"));
-            }
-            (dir, true, file_size(&path))
+            archive::extract(&path, &dir).map(|()| (dir, true, file_size(&path)))
         } else if path.is_file() {
             // A single file, like a script, a plugin or a game file: stage it on its own so detection sees just that file
             let dir = library::staging_dir().join(&id);
-            library::copy_file(&path, &dir.join(&source))?;
-            (dir, true, file_size(&path))
+            library::copy_file(&path, &dir.join(&source)).map(|()| (dir, true, file_size(&path)))
         } else {
-            return Err(format!("{source}: that file or folder can't be found."));
+            Err("that file or folder can't be found.".into())
+        };
+        let (dir, extracted, size) = match staged {
+            Ok(staged) => staged,
+            Err(e) => {
+                let _ = fs::remove_dir_all(library::staging_dir().join(&id));
+                reviews.push(Review { id, source: source.clone(), size: 0, mods: Vec::new(), error: Some(format!("{source}: {e}")) });
+                continue;
+            }
         };
 
         let game_dir = lock(&app).game_dir.clone().map(PathBuf::from);
@@ -470,10 +488,14 @@ fn scan_paths(app: AppHandle, paths: Vec<String>) -> Res<Vec<Review>> {
             .collect();
         drop(state);
 
-        reviews.push(Review { id: id.clone(), source: source.clone(), size, mods });
+        reviews.push(Review { id: id.clone(), source: source.clone(), size, mods, error: None });
         app.state::<App>().pending.lock().unwrap_or_else(|e| e.into_inner()).insert(id, Pending { source, dir, extracted, found });
     }
 
+    // With nothing opened there's nothing to review, so the reasons go back as the error
+    if !reviews.is_empty() && reviews.iter().all(|r| r.error.is_some()) {
+        return Err(reviews.into_iter().filter_map(|r| r.error).collect::<Vec<_>>().join("\n"));
+    }
     Ok(reviews)
 }
 

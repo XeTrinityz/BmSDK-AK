@@ -133,6 +133,8 @@ export interface Review {
   source: string;
   size: number;
   mods: ReviewMod[];
+  /** Why this one couldn't be opened. The others dropped with it are still offered. */
+  error: string | null;
 }
 
 export interface Progress {

@@ -20,6 +20,7 @@ export default function ReviewDialog({
   const total = Object.values(chosen).reduce((n, s) => n + s.size, 0);
   const found = reviews.reduce((n, r) => n + r.mods.length, 0);
   const anyBackups = reviews.some((r) => r.mods.some((m) => chosen[r.id].has(m.index) && m.backsUp > 0));
+  const errors = reviews.flatMap((r) => (r.error ? [r.error] : []));
 
   const toggle = (id: string, index: number) =>
     setChosen((c) => {
@@ -60,12 +61,24 @@ export default function ReviewDialog({
               {title}
             </h2>
             <p className="m-0 mt-0.5 truncate font-mono text-[11.5px] text-[var(--text-muted)]">
-              {reviews.map((r) => `${r.source} · ${formatBytes(r.size)}`).join(", ")}
+              {reviews
+                .filter((r) => !r.error)
+                .map((r) => `${r.source} · ${formatBytes(r.size)}`)
+                .join(", ")}
             </p>
           </div>
         </div>
 
         <div className="flex min-h-0 flex-col gap-2 overflow-y-auto pr-1">
+          {errors.map((e) => (
+            <div
+              key={e}
+              className="flex items-start gap-2.5 rounded-xl border border-[rgba(237,86,108,.28)] bg-[rgba(237,86,108,.06)] px-3 py-2.5 text-[12px] leading-normal text-[#ffa8b4] [&_svg]:mt-px [&_svg]:h-4 [&_svg]:w-4 [&_svg]:flex-none"
+            >
+              <Icons.Alert />
+              <span className="min-w-0 break-words">{e}</span>
+            </div>
+          ))}
           {found === 0 && (
             <p className="m-0 text-[13px] leading-relaxed text-[var(--text-secondary)]">
               Nothing in here looks like an Arkham Knight mod the manager knows how to install. Check the mod's readme for
