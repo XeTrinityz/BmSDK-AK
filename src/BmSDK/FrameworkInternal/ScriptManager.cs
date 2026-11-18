@@ -354,6 +354,9 @@ internal static class ScriptManager
 
         if (!Directory.Exists(scriptsDir))
         {
+            Debug.LogWarning(
+                $"[{mod.Name}] No scripts folder at .\\{Path.GetRelativePath(baseDir, scriptsDir)}, so nothing was loaded"
+            );
             return (null, null);
         }
 
