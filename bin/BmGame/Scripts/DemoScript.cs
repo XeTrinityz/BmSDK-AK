@@ -11,7 +11,7 @@ using BmSDK.Engine;
 public class DemoScript : Script
 {
     /// <summary>
-    /// Called called once when the engine first becomes ready.
+    /// Called once when the engine first becomes ready.
     /// Do basic set up here.
     /// </summary>
     public override void Main()
@@ -50,8 +50,8 @@ public class DemoScript : Script
     }
 
     /// <summary>
-    /// Called when a key is pressed during gameplay
-    /// (not in pause screen).
+    /// Called when a key or mouse button is pressed.
+    /// It runs in menus and while the game is paused too.
     /// </summary>
     public override void OnKeyDown(Keys key)
     {
