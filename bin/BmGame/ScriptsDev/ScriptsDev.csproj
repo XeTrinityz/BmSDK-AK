@@ -41,6 +41,8 @@
   <!-- Importing scripts -->
   <ItemGroup>
     <Compile Include=".\..\Scripts\**\*.cs" />
-    <Compile Include=".\..\Mods\**\*.cs" />
+    <!-- Same files the game compiles: a mod's scripts folder only, and no obj folders -->
+    <Compile Include=".\..\Mods\*\scripts\**\*.cs" />
+    <Compile Remove=".\..\Scripts\**\obj\**;.\..\Mods\*\scripts\**\obj\**" />
   </ItemGroup>
 </Project>
