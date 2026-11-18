@@ -280,6 +280,7 @@ impl Deployer<'_> {
         let my_order = self.state.mods[index].enabled_at;
 
         let mut gone: Vec<&String> = Vec::new();
+        let mut done: Vec<&String> = Vec::new();
         for rel in &files {
             let newer_owner = self.state.top_owner(rel, Some(id)).is_some_and(|o| o.enabled_at > my_order);
             if newer_owner {
@@ -288,14 +289,23 @@ impl Deployer<'_> {
             }
             let lib = Self::lib_file(id, rel);
             let target = self.game_file(rel);
-            if self.game_copy_wins(rel, &target, &lib) {
-                move_file(&target, &lib)?;
+            let result = if self.game_copy_wins(rel, &target, &lib) { move_file(&target, &lib) } else { Ok(()) };
+            if let Err(e) = result.and_then(|()| self.restore_below(rel, id)) {
+                // Stopping here would leave the mod on with some of its files already swapped back, and the next
+                // try would take the game files put back for it as the mod's own. So it goes back to fully on.
+                if !target.exists() {
+                    let _ = self.put_file(id, rel);
+                }
+                for rel in done.iter().rev() {
+                    let _ = self.put_file(id, rel);
+                }
+                return Err(e);
             }
-            self.restore_below(rel, id)?;
             // Deleted in the game before the library ever had a copy. Turning the mod on would fail on it.
             if !lib.is_file() {
                 gone.push(rel);
             }
+            done.push(rel);
         }
 
         let m = &mut self.state.mods[index];
@@ -744,6 +754,40 @@ mod tests {
         assert_eq!(fs::read_to_string(scripts.join("Kept.cs")).unwrap(), "kept");
         assert!(!scripts.join("Old.cs").exists());
         assert_eq!(d.state.mods[0].files.len(), 2);
+    }
+
+    #[test]
+    fn a_locked_file_doesnt_leave_a_mod_half_off() {
+        use std::os::windows::fs::OpenOptionsExt;
+        let (_guard, dir, game) = setup();
+        let stage = dir.path().join("stage");
+        let ini = "BmGame/Config/BmEngine.ini";
+        let added = "BmGame/Config/Added.ini";
+        let mut state = State::default();
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+
+        let a = Detected {
+            name: "A".into(),
+            kind: Kind::Replacer,
+            description: String::new(),
+            files: vec![staged(&stage, ini, "a"), staged(&stage, added, "added")],
+        };
+        let id = d.add(&stage, &a, "a.zip", &mut || {}).unwrap();
+        d.enable(&id).unwrap();
+
+        // Another program has the second file open, so it can't be removed
+        let lock = fs::OpenOptions::new().read(true).share_mode(0).open(game.join(to_native(added))).unwrap();
+        assert!(d.disable(&id).is_err());
+        assert!(d.state.mods[0].enabled);
+        assert_eq!(fs::read_to_string(game.join(to_native(ini))).unwrap(), "a");
+        drop(lock);
+
+        // Trying again once the file is free puts the game's own file back, not the mod's
+        d.disable(&id).unwrap();
+        assert_eq!(fs::read_to_string(game.join(to_native(ini))).unwrap(), "original");
+        assert!(!game.join(to_native(added)).exists());
+        d.enable(&id).unwrap();
+        assert_eq!(fs::read_to_string(game.join(to_native(ini))).unwrap(), "a");
     }
 
     #[test]
