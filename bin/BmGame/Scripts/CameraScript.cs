@@ -117,9 +117,9 @@ class CameraController(RPlayerControllerCombat controller0, RPlayerControllerCom
         Controller0.MultiTargetCamera.SetRotation(
             new()
             {
-                Pitch = -90 * 180,
-                Yaw = 0 * 180,
-                Roll = 0 * 180,
+                Pitch = -90,
+                Yaw = 0,
+                Roll = 0,
             }
         );
     }
