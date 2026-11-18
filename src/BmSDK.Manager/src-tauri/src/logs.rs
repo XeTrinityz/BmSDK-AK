@@ -62,6 +62,8 @@ fn collect(game: &Path, crash_cap: Option<usize>) -> Vec<LogSource> {
     let mut out = Vec::new();
 
     out.extend(source(&sdk_log(game), "BmSDK.log".into(), "sdk"));
+    // BmSDK keeps the log of the session before, for when the game was started again after a crash
+    out.extend(source(&sdk_log_before(game), "BmSDK.log, session before".into(), "sdk"));
 
     let mut mod_dirs: Vec<PathBuf> = files_in(&game.join("BmGame").join("Mods")).into_iter().filter(|p| p.is_dir()).collect();
     mod_dirs.sort();
@@ -162,6 +164,11 @@ pub fn sdk_log(game: &Path) -> PathBuf {
     game.join("Binaries").join("Win64").join("BmSDK.log")
 }
 
+/// Where BmSDK keeps the log of the session before the last one.
+pub fn sdk_log_before(game: &Path) -> PathBuf {
+    sdk_log(game).with_extension("prev.log")
+}
+
 /// How many error lines the last session's BmSDK.log has, and when it was written.
 pub fn sdk_errors(game: &Path) -> (usize, u64) {
     match read_tail(&sdk_log(game), 512 * 1024) {
@@ -252,6 +259,19 @@ mod tests {
         assert!(mod_dir.join("mod.toml").exists());
         assert!(logs.join("crash.dmp").exists());
         assert!(list(game).is_empty());
+    }
+
+    #[test]
+    fn the_session_before_is_listed_after_the_current_log() {
+        let dir = tempfile::tempdir().unwrap();
+        let sdk = dir.path().join("Binaries").join("Win64");
+        fs::create_dir_all(&sdk).unwrap();
+        fs::write(sdk.join("BmSDK.log"), "now").unwrap();
+        fs::write(sdk.join("BmSDK.prev.log"), "before").unwrap();
+
+        let titles: Vec<String> = list(dir.path()).into_iter().map(|s| s.title).collect();
+        assert_eq!(titles, vec!["BmSDK.log", "BmSDK.log, session before"]);
+        assert_eq!(clear(dir.path()).deleted, 2);
     }
 
     #[test]

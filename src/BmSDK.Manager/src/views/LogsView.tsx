@@ -340,7 +340,10 @@ export default function LogsView({
               <div className="flex flex-none items-center gap-2">
                 <p className="m-0 min-w-0 flex-1 text-[11.5px] leading-snug text-[var(--text-muted)]">
                   {plural(counts.error, "error")}, {plural(counts.warn, "warning")}
-                  {current.group === "sdk" && " · A new log starts each time the game launches, so this is the last session."}
+                  {current.group === "sdk" &&
+                    (current.path.toLowerCase().endsWith(".prev.log")
+                      ? " · The session before the last one. BmSDK keeps it in case the game was started again after a crash."
+                      : " · A new log starts each time the game launches, so this is the last session.")}
                   {current.group === "crash" && " · The game writes these when it crashes. Newest first."}
                 </p>
                 <label className="flex cursor-pointer items-center gap-2 text-[12px] font-semibold text-[var(--text-secondary)]">

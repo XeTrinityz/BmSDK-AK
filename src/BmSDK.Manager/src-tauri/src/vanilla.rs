@@ -16,12 +16,13 @@ const WHOLE_LIMIT: u64 = 1 << 20;
 const PIECE: u64 = 64 << 10;
 
 /// Files that sit in the game's folders but don't come from Steam: BmSDK's ASI loader, the file that lets
-/// the exe start without Steam, the SDK's log, and a hooking library some old tools drop next to the exe.
-const NOT_STEAM: [&str; 4] = [
+/// the exe start without Steam, the SDK's logs, and a hooking library some old tools drop next to the exe.
+const NOT_STEAM: [&str; 5] = [
     "Binaries/Win64/dinput8.dll",
     "Binaries/Win64/steam_appid.txt",
     "Binaries/Win64/EasyHook64.dll",
     "Binaries/Win64/BmSDK.log",
+    "Binaries/Win64/BmSDK.prev.log",
 ];
 
 struct Expected {

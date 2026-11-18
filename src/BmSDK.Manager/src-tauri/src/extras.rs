@@ -320,6 +320,13 @@ pub fn diagnostics(app: AppHandle) -> Res<String> {
         Err(_) => out += "\n--- BmSDK.log: none ---\n",
     }
 
+    // After a crash the game has usually been started again, so the session before is the one with the reason
+    if let Ok(log) = logs::read_tail(&logs::sdk_log_before(&dir), 256 * 1024) {
+        let lines: Vec<&str> = log.text.lines().collect();
+        let tail = &lines[lines.len().saturating_sub(60)..];
+        out += &format!("\n--- BmSDK.log of the session before, last {} lines ---\n{}\n", tail.len(), tail.join("\n"));
+    }
+
     if let Some(crash) = logs::newest_crash(&dir) {
         if let Ok(report) = logs::read_tail(Path::new(&crash.path), 64 * 1024) {
             // The first line names the PC and the account, so it stays out

@@ -26,6 +26,7 @@ public static class Debug
             var path = Path.Combine(dir, "BmSDK.log");
             try
             {
+                KeepLastLog(path);
                 var writer = new StreamWriter(path) { AutoFlush = true };
                 Trace.Listeners.Add(new TextWriterTraceListener(writer));
             }
@@ -41,6 +42,23 @@ public static class Debug
             }
 
             return;
+        }
+    }
+
+    // After a crash most people start the game again before they look, and that start would wipe the
+    // log that says what happened. So the last session's log is kept beside the new one.
+    private static void KeepLastLog(string path)
+    {
+        try
+        {
+            if (File.Exists(path))
+            {
+                File.Move(path, Path.ChangeExtension(path, ".prev.log"), overwrite: true);
+            }
+        }
+        catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+        {
+            // Still held by a game that hasn't finished closing, or the folder is read-only
         }
     }
 
