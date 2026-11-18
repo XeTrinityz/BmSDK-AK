@@ -53,6 +53,7 @@ internal static class ErrorOverlay
 
         // Scripts draw next, under the error banner.
         Loader.DispatchDraw(canvas);
+        SdkUpdate.Draw(canvas);
 
         string[] snapshot;
         lock (s_lock)
