@@ -240,10 +240,16 @@ internal static class ScriptComponentManager
                 }
                 catch (Exception e)
                 {
+                    // The constructor runs through reflection, which hides what it threw
+                    var real = ModGuard.Unwrap(e);
                     Debug.LogError(
-                        $"Failed to auto-attach {componentType.Name} to '{obj.GetFullName()}': \n{e.Message}",
+                        $"Failed to auto-attach {componentType.Name} to '{obj.GetFullName()}': \n{real.GetType().Name}: {real.Message}",
                         skipSender: true
                     );
+                    if (real.StackTrace is { } trace)
+                    {
+                        Debug.Log(trace, skipSender: true);
+                    }
                 }
             }
         }

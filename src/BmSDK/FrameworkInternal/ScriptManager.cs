@@ -755,10 +755,16 @@ internal static class ScriptManager
             }
             catch (Exception e)
             {
+                // The constructor runs through reflection, which hides what it threw
+                var real = ModGuard.Unwrap(e);
                 Debug.LogError(
-                    $"[{mod.Name}] Failed to create instance of script {scriptName}: {e.Message}",
+                    $"[{mod.Name}] Failed to create instance of script {scriptName}: {real.GetType().Name}: {real.Message}",
                     skipSender: true
                 );
+                if (real.StackTrace is { } trace)
+                {
+                    Debug.Log(trace, skipSender: true);
+                }
 
                 continue;
             }

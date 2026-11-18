@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace BmSDK.Framework;
 
 /// <summary>
@@ -114,10 +116,23 @@ internal static class ModGuard
         s_disabled.Clear();
     }
 
+    // The exception the mod's own code threw. A constructor run through reflection and a static
+    // initializer that fails both wrap it in one whose message doesn't say what went wrong.
+    public static Exception Unwrap(Exception ex)
+    {
+        while (ex is TargetInvocationException or TypeInitializationException && ex.InnerException is { } inner)
+        {
+            ex = inner;
+        }
+
+        return ex;
+    }
+
     private static void Report((object Owner, string What) key, Exception ex, string describe)
     {
         var count = s_failures.GetValueOrDefault(key) + 1;
         s_failures[key] = count;
+        ex = Unwrap(ex);
 
         // The first line reaches the on-screen overlay; the stack trace goes to the log only.
         Debug.LogError($"{describe} threw {ex.GetType().Name}: {ex.Message}");
