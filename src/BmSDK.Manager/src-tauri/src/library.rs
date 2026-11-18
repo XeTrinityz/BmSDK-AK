@@ -123,7 +123,22 @@ fn to_native(rel: &str) -> PathBuf {
 
 impl State {
     pub fn load() -> State {
-        fs::read_to_string(state_path()).ok().and_then(|t| serde_json::from_str(&t).ok()).unwrap_or_default()
+        let path = state_path();
+        let Ok(bytes) = fs::read(&path) else { return State::default() };
+        serde_json::from_slice(&bytes).unwrap_or_else(|_| {
+            // Starting fresh overwrites the file on the next save, so what was there is kept beside it
+            let kept = fs::copy(&path, path.with_extension("json.bad")).is_ok();
+            let mut state = State::default();
+            state.log(
+                "error",
+                if kept {
+                    "The manager's saved list couldn't be read, so it started fresh. The old file is kept as state.json.bad."
+                } else {
+                    "The manager's saved list couldn't be read, so it started fresh."
+                },
+            );
+            state
+        })
     }
 
     pub fn save(&self) -> Result<(), String> {
@@ -193,10 +208,21 @@ impl Deployer<'_> {
     fn preserve(&self, owner_id: &str, rel: &str) -> Result<(), String> {
         let lib = Self::lib_file(owner_id, rel);
         let target = self.game_file(rel);
-        if !lib.exists() && target.exists() {
+        if self.game_copy_wins(rel, &target, &lib) {
             copy_file(&target, &lib)?;
         }
         Ok(())
+    }
+
+    /// True when the copy in the game should go into the library: the library has none, or the file was
+    /// changed in the game since it was put there, like a plugin's .ini or a script someone is working on.
+    /// A file that replaced one of the game's own never counts as changed. Steam puts its own copy back
+    /// there when it verifies or updates the game, and that must not end up as the mod's file.
+    fn game_copy_wins(&self, rel: &str, target: &Path, lib: &Path) -> bool {
+        let Ok(in_game) = fs::metadata(target) else { return false };
+        let Ok(in_lib) = fs::metadata(lib) else { return true };
+        // Copies keep the modified time, so an untouched file matches on both
+        !self.state.is_original(rel) && (in_game.len() != in_lib.len() || in_game.modified().ok() != in_lib.modified().ok())
     }
 
     pub fn enable(&mut self, id: &str) -> Result<(), String> {
@@ -261,7 +287,7 @@ impl Deployer<'_> {
             }
             let lib = Self::lib_file(id, rel);
             let target = self.game_file(rel);
-            if !lib.exists() && target.exists() {
+            if self.game_copy_wins(rel, &target, &lib) {
                 move_file(&target, &lib)?;
             }
             self.restore_below(rel, id)?;
@@ -301,7 +327,7 @@ impl Deployer<'_> {
     pub fn uninstall(&mut self, id: &str) -> Result<(), String> {
         self.disable(id)?;
         let index = self.state.find(id)?;
-        let _ = fs::remove_dir_all(library_dir().join(id));
+        discard(&library_dir().join(id));
         self.state.mods.remove(index);
         Ok(())
     }
@@ -430,6 +456,17 @@ pub fn import_existing(state: &mut State, game: &Path) -> usize {
         added += 1;
     }
     added
+}
+
+/// Gets rid of an uninstalled mod's files. They go to the Recycle Bin when there is one, because for a mod
+/// that was found in the game this is the only copy, and it can be a whole folder someone is working in.
+fn discard(dir: &Path) {
+    // Tests would fill the real Recycle Bin
+    #[cfg(all(windows, not(test)))]
+    if crate::winapi::recycle(dir) {
+        return;
+    }
+    let _ = fs::remove_dir_all(dir);
 }
 
 fn read_dirs(dir: &Path) -> Vec<PathBuf> {
@@ -592,5 +629,105 @@ mod tests {
 
         d.enable(&id).unwrap();
         assert_eq!(fs::read_to_string(mod_dir.join("a.upk")).unwrap(), "suit");
+    }
+
+    // The order an update runs in: the new copy goes in first, then the old one is uninstalled
+    #[test]
+    fn a_failed_update_leaves_the_old_mod() {
+        let (_guard, dir, game) = setup();
+        let stage = dir.path().join("stage");
+        let dll = "BmGame/Mods/Cam/Cam.dll";
+        let extra = "BmGame/Mods/Cam/old-only.txt";
+        let mut state = State::default();
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+
+        let v1 = Detected {
+            name: "Cam".into(),
+            kind: Kind::PrebuiltDll,
+            description: String::new(),
+            files: vec![staged(&stage, dll, "v1"), staged(&stage, extra, "x")],
+        };
+        let old = d.add(&stage, &v1, "cam1.zip", &mut || {}).unwrap();
+
+        // A file the archive listed can't be copied
+        let broken = Detected {
+            name: "Cam".into(),
+            kind: Kind::PrebuiltDll,
+            description: String::new(),
+            files: vec![staged(&stage, dll, "v2"), Mapping { src: "missing.dll".into(), dest: "BmGame/Mods/Cam/missing.dll".into() }],
+        };
+        assert!(d.add(&stage, &broken, "cam2.zip", &mut || {}).is_err());
+        assert_eq!(d.state.mods.len(), 1);
+        assert!(d.state.mods[0].enabled);
+        assert_eq!(fs::read_to_string(game.join(to_native(dll))).unwrap(), "v1");
+
+        let v2 = Detected { name: "Cam".into(), kind: Kind::PrebuiltDll, description: String::new(), files: vec![staged(&stage, dll, "v2")] };
+        d.add(&stage, &v2, "cam2.zip", &mut || {}).unwrap();
+        d.uninstall(&old).unwrap();
+        assert_eq!(d.state.mods.len(), 1);
+        assert_eq!(fs::read_to_string(game.join(to_native(dll))).unwrap(), "v2");
+        assert!(!game.join(to_native(extra)).exists());
+    }
+
+    #[test]
+    fn a_state_file_that_cant_be_read_is_kept() {
+        let (_guard, _dir, _game) = setup();
+        fs::create_dir_all(data_dir()).unwrap();
+        fs::write(state_path(), "{ \"mods\": [ { \"id\": 1 } ] }").unwrap();
+
+        let state = State::load();
+        assert!(state.mods.is_empty());
+        assert!(state.activity[0].text.contains("state.json.bad"));
+        assert_eq!(fs::read_to_string(state_path().with_extension("json.bad")).unwrap(), "{ \"mods\": [ { \"id\": 1 } ] }");
+
+        // A good file loads as before and leaves no note
+        State::default().save().unwrap();
+        assert!(State::load().activity.is_empty());
+    }
+
+    #[test]
+    fn edits_in_the_game_survive_disable_and_enable() {
+        let (_guard, dir, game) = setup();
+        let stage = dir.path().join("stage");
+        let ini = "Binaries/Win64/plugins/Fov.ini";
+        let ini_path = game.join(to_native(ini));
+        let mut state = State::default();
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+
+        let fov = Detected { name: "Fov".into(), kind: Kind::AsiPlugin, description: String::new(), files: vec![staged(&stage, ini, "fov=90")] };
+        let id = d.add(&stage, &fov, "fov.zip", &mut || {}).unwrap();
+
+        fs::write(&ini_path, "fov=110").unwrap();
+        d.disable(&id).unwrap();
+        assert!(!ini_path.exists());
+        d.enable(&id).unwrap();
+        assert_eq!(fs::read_to_string(&ini_path).unwrap(), "fov=110");
+
+        // A second mod taking the file over keeps the first one's edit too
+        fs::write(&ini_path, "fov=120").unwrap();
+        let other = Detected { name: "Other".into(), kind: Kind::AsiPlugin, description: String::new(), files: vec![staged(&stage, ini, "fov=60")] };
+        let other_id = d.add(&stage, &other, "other.zip", &mut || {}).unwrap();
+        assert_eq!(fs::read_to_string(&ini_path).unwrap(), "fov=60");
+        d.uninstall(&other_id).unwrap();
+        assert_eq!(fs::read_to_string(&ini_path).unwrap(), "fov=120");
+    }
+
+    #[test]
+    fn a_game_file_steam_put_back_is_not_taken_as_the_mods() {
+        let (_guard, dir, game) = setup();
+        let stage = dir.path().join("stage");
+        let ini = "BmGame/Config/BmEngine.ini";
+        let ini_path = game.join(to_native(ini));
+        let mut state = State::default();
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+
+        let a = Detected { name: "A".into(), kind: Kind::Replacer, description: String::new(), files: vec![staged(&stage, ini, "a")] };
+        let id = d.add(&stage, &a, "a.zip", &mut || {}).unwrap();
+
+        fs::write(&ini_path, "verified by steam").unwrap();
+        d.disable(&id).unwrap();
+        assert_eq!(fs::read_to_string(&ini_path).unwrap(), "original");
+        d.enable(&id).unwrap();
+        assert_eq!(fs::read_to_string(&ini_path).unwrap(), "a");
     }
 }

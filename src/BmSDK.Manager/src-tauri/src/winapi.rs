@@ -79,6 +79,24 @@ pub fn run_elevated(program: &str, parameters: &str) -> Option<u32> {
     }
 }
 
+/// Moves a file or folder to the Recycle Bin. False when Windows couldn't, like on a drive that has none.
+#[cfg(not(test))]
+pub fn recycle(path: &Path) -> bool {
+    use windows::Win32::UI::Shell::{
+        SHFileOperationW, FOF_ALLOWUNDO, FOF_NOCONFIRMATION, FOF_NOERRORUI, FOF_SILENT, FO_DELETE, SHFILEOPSTRUCTW,
+    };
+
+    // The list of paths ends with a second null
+    let from: Vec<u16> = path.as_os_str().encode_wide().chain([0, 0]).collect();
+    let mut op = SHFILEOPSTRUCTW {
+        wFunc: FO_DELETE,
+        pFrom: PCWSTR(from.as_ptr()),
+        fFlags: (FOF_ALLOWUNDO.0 | FOF_NOCONFIRMATION.0 | FOF_NOERRORUI.0 | FOF_SILENT.0) as u16,
+        ..Default::default()
+    };
+    unsafe { SHFileOperationW(&mut op) == 0 && !op.fAnyOperationsAborted.as_bool() }
+}
+
 /// True when a process with this exe name is running. Reads the process list directly, which is much faster than spawning tasklist.
 pub fn process_running(name: &str) -> bool {
     unsafe {

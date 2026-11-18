@@ -504,26 +504,28 @@ fn install_review(app: AppHandle, id: String, indices: Vec<usize>) -> Res<()> {
 
     for d in chosen {
         let mut deployer = Deployer { state: &mut state, game: dir.clone() };
-        let mut carried: Option<library::NexusLink> = None;
-        if let Some((old, link)) = deployer
+        let replaced = deployer
             .state
             .mods
             .iter()
             .find(|m| m.kind == d.kind && m.name.eq_ignore_ascii_case(&d.name))
-            .map(|m| (m.id.clone(), m.nexus.clone()))
-        {
-            carried = link;
-            if let Err(e) = deployer.uninstall(&old) {
-                result = Err(e);
-                break;
-            }
-        }
+            .map(|m| (m.id.clone(), m.nexus.clone()));
         let mut tick = || {
             done += 1;
             emit(&app, "files", done, total);
         };
         match deployer.add(&pending.dir, d, &pending.source, &mut tick) {
             Ok(new_id) => {
+                // The copy this replaces only goes now, so an install that fails leaves it working
+                let mut carried: Option<library::NexusLink> = None;
+                if let Some((old, link)) = replaced {
+                    carried = link;
+                    if let Err(e) = deployer.uninstall(&old) {
+                        state.log("error", format!("Installed {}, but couldn't remove the old copy: {e}", d.name));
+                        result = Err(e);
+                        break;
+                    }
+                }
                 // A Nexus-named download links itself. A reinstall keeps the old link when the file says nothing new.
                 let from_name = nexus::parse_file_name(&pending.source);
                 let link = match (from_name, carried) {
