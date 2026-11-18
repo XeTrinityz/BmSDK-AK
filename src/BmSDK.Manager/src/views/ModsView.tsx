@@ -260,22 +260,23 @@ export default function ModsView({ overview: loaded, actions }: { overview: Over
         </div>
 
         {overview.tfc.length > 0 && (
-          <section className="nv-card flex flex-none flex-col gap-2 border-[rgba(237,180,86,.28)] p-3">
-            <p className="m-0 text-[12px] leading-snug text-[var(--text-muted)]">
-              TFC Installer changed your game files. The manager can't install these, but it can put the game back. Removing
-              one also removes the ones TFC Installer ran after it.
-            </p>
+          <section className="nv-card flex flex-none flex-col gap-1.5 border-[rgba(237,180,86,.28)] px-3 py-2">
             {overview.tfc.map((t) => (
-              <div key={t.number} className="flex items-center gap-3">
-                <div className="min-w-0 flex-1">
-                  <p className="m-0 truncate text-[13px] font-bold">{t.name}</p>
-                  <p className="m-0 mt-0.5 text-[11.5px] text-[var(--text-muted)]">
-                    {plural(t.changed, "game file")} changed, {plural(t.added, "file or folder")} added
-                  </p>
-                </div>
+              <div key={t.number} className="flex h-8 items-center gap-3">
+                <span className="flex flex-none text-[#f4cf8e] [&_svg]:h-4 [&_svg]:w-4">
+                  <Icons.Alert />
+                </span>
+                <p className="m-0 min-w-0 flex-1 truncate text-[12.5px]">
+                  <span className="font-bold">{t.name}</span>
+                  <span className="text-[var(--text-muted)]">
+                    {" "}
+                    · installed with TFC Installer, {t.changed} game files changed, {t.added} added
+                  </span>
+                </p>
                 <button
                   type="button"
-                  className={`btn ${confirmTfc === t.number ? "btn-primary" : ""}`}
+                  className={`btn btn-sm ${confirmTfc === t.number ? "btn-primary" : ""}`}
+                  title="Puts the game files back. The manager can't install TFC Installer mods, only remove them. This also removes any TFC Installer ran after it."
                   disabled={!!actions.busy}
                   onBlur={() => setConfirmTfc(null)}
                   onClick={async () => {
