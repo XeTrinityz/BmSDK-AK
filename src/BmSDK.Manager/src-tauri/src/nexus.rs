@@ -146,6 +146,16 @@ pub struct NexusView {
     pub update_available: bool,
 }
 
+/// A mod's link with the version its mod.toml has now. The saved one goes stale when the mod is edited
+/// or updated in the game folder.
+pub fn current(m: &library::ModRecord, game: Option<&Path>) -> Option<NexusLink> {
+    let mut link = m.nexus.clone()?;
+    if let Some(version) = library::version_of(m, game) {
+        link.installed = Some(version);
+    }
+    Some(link)
+}
+
 pub fn view(link: &NexusLink) -> NexusView {
     NexusView {
         mod_id: link.mod_id,
@@ -211,10 +221,10 @@ pub async fn check_nexus(app: AppHandle) -> Res<NexusCheck> {
         link.author = f.author.clone().or(link.author);
         link.latest = f.version.clone().or(link.latest);
         link.fetched = now;
-        // With no known version, trust the mod's own mod.toml, else assume the latest is what's installed
-        if link.installed.is_none() {
-            link.installed = library::version_of(&state.mods[i], game.as_deref()).or_else(|| link.latest.clone());
-        }
+        // The mod's own mod.toml says what is installed. Without one, keep what the download's name said,
+        // else assume the latest is what's installed
+        link.installed =
+            library::version_of(&state.mods[i], game.as_deref()).or(link.installed).or_else(|| link.latest.clone());
         state.mods[i].nexus = Some(link);
     }
     state.save()?;

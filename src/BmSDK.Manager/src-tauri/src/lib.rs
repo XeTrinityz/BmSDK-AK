@@ -217,7 +217,7 @@ fn get_overview(app: AppHandle) -> Overview {
                 shares_with: if m.enabled { shares_with(&state, &m.files, Some(&m.id)) } else { Vec::new() },
                 added: m.added,
                 version: library::version_of(m, game_dir.as_deref()),
-                nexus: m.nexus.as_ref().map(nexus::view),
+                nexus: nexus::current(m, game_dir.as_deref()).as_ref().map(nexus::view),
             }
         })
         .collect();
