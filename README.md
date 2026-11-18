@@ -111,6 +111,23 @@ Follow these steps to set up your environment for building, running, and debuggi
 6. Run your code by pressing **F5** in Visual Studio.
 7. Follow the [docs](https://bmsdk.dev/docs/guides/first-mod/) to write your first script.
 
+### Making a mod
+A mod is a folder in `%GameDir%\BmGame\Mods` with a `mod.toml` file and a `scripts` folder next to it. BmSDK installs one called `ModTemplate`. Copy it, rename the copy and start from there.
+
+```toml
+name = "My Mod"
+description = "What it does"
+version = "1.0.0"
+```
+
+- BmSDK compiles every `.cs` file under `scripts` into the mod, subfolders included.
+- Save a script while the game is running and BmSDK builds the mod again and reloads it, so you don't have to restart the game.
+- Build errors show up on screen in the game and in `%GameDir%\Binaries\Win64\BmSDK.log`. The manager's Logs page shows the same file.
+- BmSDK Manager shows `name`, `description` and `version` in its mod list.
+- To ship a built DLL instead of source, set `assembly = "MyMod.dll"` in `mod.toml`. The comments in the template's `mod.toml` explain how.
+
+Loose `.cs` files in `BmGame\Scripts` still work. BmSDK compiles them together as one mod called `Scripts`.
+
 ## 🛠️ Contributing
 To get started contributing to BmSDK, see the docs for instructions: [Building from source](https://bmsdk.dev/docs/contributing/building/)
 
