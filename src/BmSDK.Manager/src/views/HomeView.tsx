@@ -253,7 +253,7 @@ export default function HomeView({
               <p className="m-0 mt-0.5 text-[12px] text-[var(--text-muted)]">{game.store} copy</p>
             </div>
           </div>
-          <p className="path-box m-0">{game.path}</p>
+          <p className="path-box m-0 overflow-x-auto whitespace-nowrap">{game.path}</p>
           <div className="grid grid-cols-2 gap-2">
             <Dot ok={game.writable} yes="Writable" no="Needs access" />
             <Dot ok={game.asiLoader} yes="ASI loader" no="No ASI loader" />

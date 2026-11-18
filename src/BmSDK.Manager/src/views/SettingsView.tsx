@@ -52,7 +52,7 @@ export default function SettingsView({
 
       <section className="nv-card flex flex-none flex-col gap-3 p-[18px]">
         <Heading icon={<Icons.Gamepad />} title="Game folder" theme="purple" />
-        <p className="path-box m-0">{game.path}</p>
+        <p className="path-box m-0 overflow-x-auto whitespace-nowrap">{game.path}</p>
         {others.map((i) => (
           <div key={i.path} className="flex items-center gap-3">
             <p className="m-0 min-w-0 flex-1 truncate font-mono text-[11.5px] text-[var(--text-muted)]">{i.path}</p>
