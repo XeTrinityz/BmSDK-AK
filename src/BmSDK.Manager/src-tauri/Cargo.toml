@@ -1,0 +1,52 @@
+[package]
+name = "bmsdk-manager"
+version = "0.24.1" # x-release-please-version
+description = "Installs and updates BmSDK and manages Batman: Arkham Knight mods"
+edition = "2021"
+rust-version = "1.82"
+
+[lib]
+name = "bmsdk_manager_lib"
+crate-type = ["lib"]
+
+[[bin]]
+name = "BmSDK-Manager"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
+futures-util = "0.3"
+zip = { version = "2.2", default-features = false, features = ["deflate", "deflate64", "bzip2", "lzma", "zstd"] }
+sevenz-rust = "0.6"
+unrar = "0.5"
+semver = "1"
+opener = "0.7"
+winreg = "0.52"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.58", features = [
+  "Win32_Foundation",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Registry",
+  "Win32_System_Diagnostics_ToolHelp",
+  "Win32_System_Threading",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

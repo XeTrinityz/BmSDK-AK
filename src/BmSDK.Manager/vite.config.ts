@@ -1,0 +1,17 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  base: "./",
+  clearScreen: false,
+  server: {
+    port: 1430,
+    strictPort: true,
+    watch: { ignored: ["**/src-tauri/**"] },
+  },
+  build: {
+    target: "chrome105",
+  },
+});

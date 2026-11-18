@@ -81,11 +81,12 @@ Check out the [documentation](https://bmsdk.dev/docs) for more info!
 
 ## 🚀 Getting started
 If you want to use mods, here's how you get set up:
-1. Download [the latest installer](../../releases/latest/download/BmSDK-AK-Installer.exe) and run it.
+1. Download [BmSDK Manager](../../releases/latest/download/BmSDK-Manager.exe) and run it. You only need to download it once. It updates itself and BmSDK from the latest release.
 2. Pick your Arkham Knight folder. Steam and Epic Games installations are detected automatically, and you can browse for one yourself if yours isn't listed.
-3. Press **Install**, then start the game. Script mods go in your `BmGame\Scripts` folder as .cs files.
+3. Press **Install** to get the latest BmSDK.
+4. Drop mods into the manager window to install them. It works out what each one is and where it goes: script mods, prebuilt DLL mods, loose scripts, suits and other DLC mods, file replacers and ASI plugins. Game files a mod replaces are backed up and put back when you turn the mod off.
 
-The installer isn't code-signed, so Windows SmartScreen may warn you the first time you run it. Choose "More info" → "Run anyway" to continue.
+The manager isn't code-signed, so Windows SmartScreen may warn you the first time you run it. Choose "More info" → "Run anyway" to continue. It needs the WebView2 runtime, which comes with Windows 10 and 11.
 
 <details>
 <summary>Installing manually instead</summary>

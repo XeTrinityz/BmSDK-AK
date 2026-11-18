@@ -27,9 +27,9 @@ on:
       artifact-id:
         description: "Artifact ID of final binary"
         value: ${{ jobs.create-package.outputs.artifact-id }}
-      installer-artifact-id:
-        description: "Artifact ID of the installer executable"
-        value: ${{ jobs.build-installer.outputs.artifact-id }}
+      manager-artifact-id:
+        description: "Artifact ID of the manager executable"
+        value: ${{ jobs.build-manager.outputs.artifact-id }}
 
 env:
   TARGET_REF: ${{ inputs.target_ref || 'main-bm4' }}
@@ -161,54 +161,49 @@ jobs:
         if-no-files-found: error
         compression-level: 9
 
-  build-installer:
-    name: "Build the installer executable"
-    needs: create-package
+  build-manager:
+    name: "Build BmSDK Manager"
     outputs:
       artifact-id: ${{ steps.upload-artifact.outputs.artifact-id }}
     runs-on: windows-latest
     env:
-      PROJ_PATH: '${{ github.workspace }}/src/BmSDK.Installer/BmSDK.Installer.csproj'
-      INSTALLER_DIR: '${{ github.workspace }}/publish/installer/'
-      PAYLOAD_DIR: '${{ github.workspace }}/publish/payload/'
+      APP_DIR: '${{ github.workspace }}/src/BmSDK.Manager'
+      MANAGER_DIR: '${{ github.workspace }}/publish/manager/'
+      # Baked into the exe so it updates from the repo that released it
+      BMSDK_REPO: ${{ github.repository }}
     steps:
     - name: "Checkout target commit"
       uses: actions/checkout@v7
       with:
         ref: ${{ env.TARGET_REF }}
 
-    - name: "Set up .NET SDK"
-      uses: actions/setup-dotnet@v5
+    - name: "Set up Node"
+      uses: actions/setup-node@v4
       with:
-        dotnet-version: "10.0.x"
+        node-version: "22"
+        cache: npm
+        cache-dependency-path: src/BmSDK.Manager/package-lock.json
 
-    - name: "Get the packaged release ZIP"
-      uses: actions/download-artifact@v8
+    - name: "Cache Rust build"
+      uses: Swatinem/rust-cache@v2
       with:
-        artifact-ids: ${{ needs.create-package.outputs.artifact-id }}
-        path: ${{ env.PAYLOAD_DIR }}
-        skip-decompress: true
+        workspaces: "src/BmSDK.Manager/src-tauri -> target"
 
-    - name: "Build BmSDK.Installer in Release mode"
+    - name: "Build the manager"
+      working-directory: ${{ env.APP_DIR }}
       run: |
-        $payload = Get-ChildItem '${{ env.PAYLOAD_DIR }}/*.zip' | Select-Object -First 1
-        if (-not $payload) { throw "No release ZIP found to embed as the installer payload" }
+        npm ci --no-audit --no-fund
+        npx tauri build
 
-        dotnet publish '${{ env.PROJ_PATH }}' -c Release `
-          -o '${{ env.INSTALLER_DIR }}' --nologo `
-          -p:PayloadZip="$($payload.FullName)"
-
-    - name: "Verify the installer published as a single file"
+    - name: "Collect the exe"
       run: |
-        $files = Get-ChildItem '${{ env.INSTALLER_DIR }}' -File
-        if ($files.Count -ne 1) {
-          throw "Expected one published file, got: $($files.Name -join ', ')"
-        }
+        New-Item -ItemType Directory -Force '${{ env.MANAGER_DIR }}' | Out-Null
+        Copy-Item '${{ env.APP_DIR }}/src-tauri/target/release/BmSDK-Manager.exe' '${{ env.MANAGER_DIR }}'
 
-    - name: "Uploading installer"
+    - name: "Uploading manager"
       id: upload-artifact
       uses: actions/upload-artifact@v7
       with:
-        name: "Installer"
-        path: ${{ env.INSTALLER_DIR }}
+        name: "Manager"
+        path: ${{ env.MANAGER_DIR }}
         if-no-files-found: error

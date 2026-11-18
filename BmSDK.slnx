@@ -13,8 +13,5 @@
   <Project Path="src/BmSDK.Printer/BmSDK.Printer.csproj">
     <Build Project="false" />
   </Project>
-  <Project Path="src/BmSDK.Installer/BmSDK.Installer.csproj">
-    <Build Project="false" />
-  </Project>
   <Project Path="src/BmSDK/BmSDK.csproj" />
 </Solution>

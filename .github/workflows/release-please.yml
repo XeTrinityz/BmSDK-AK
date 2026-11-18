@@ -45,10 +45,10 @@ jobs:
           path: '${{ github.workspace }}/publish/'
           skip-decompress: true
 
-      - name: "Get installer artifact"
+      - name: "Get manager artifact"
         uses: actions/download-artifact@v8
         with:
-          artifact-ids: ${{ needs.build-release.outputs.installer-artifact-id }}
+          artifact-ids: ${{ needs.build-release.outputs.manager-artifact-id }}
           path: '${{ github.workspace }}/publish/'
 
       - name: "Upload artifacts to release"

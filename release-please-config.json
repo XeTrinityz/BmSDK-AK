@@ -7,7 +7,9 @@
       "bump-patch-for-minor-pre-major": false,
       "extra-files": [
         "src/BmSDK/BmSDK.csproj",
-        "src/BmSDK.Installer/BmSDK.Installer.csproj"
+        "src/BmSDK.Manager/src-tauri/Cargo.toml",
+        { "type": "json", "path": "src/BmSDK.Manager/src-tauri/tauri.conf.json", "jsonpath": "$.version" },
+        { "type": "json", "path": "src/BmSDK.Manager/package.json", "jsonpath": "$.version" }
       ],
 
       "changelog-path": "CHANGELOG.md",
