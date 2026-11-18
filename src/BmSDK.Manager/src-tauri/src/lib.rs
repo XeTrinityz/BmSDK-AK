@@ -872,6 +872,23 @@ fn open_url(url: String) -> Res<()> {
 }
 
 pub fn run() {
+    // After an update the old copy is still closing when this one starts, so it gets a few seconds
+    let mut tries = if std::env::args().any(|a| a == release::AFTER_UPDATE) { 50 } else { 1 };
+    let _lock = loop {
+        match library::lock_instance() {
+            Ok(lock) => break lock,
+            Err(library::AlreadyRunning) => {
+                tries -= 1;
+                if tries == 0 {
+                    #[cfg(windows)]
+                    winapi::show_window("BmSDK Manager");
+                    return;
+                }
+                std::thread::sleep(std::time::Duration::from_millis(200));
+            }
+        }
+    };
+
     release::cleanup_after_update();
     let _ = fs::remove_dir_all(library::staging_dir());
 

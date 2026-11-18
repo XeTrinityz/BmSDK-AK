@@ -113,6 +113,23 @@ fn state_path() -> PathBuf {
     data_dir().join("state.json")
 }
 
+pub struct AlreadyRunning;
+
+/// Taken at startup and held until the manager closes. A second copy would load its own list of mods and
+/// save all of it over what the first one changed.
+pub fn lock_instance() -> Result<Option<fs::File>, AlreadyRunning> {
+    use std::os::windows::fs::OpenOptionsExt;
+    const SHARING_VIOLATION: i32 = 32;
+
+    let _ = fs::create_dir_all(data_dir());
+    match fs::OpenOptions::new().write(true).create(true).share_mode(0).open(data_dir().join("manager.lock")) {
+        Ok(file) => Ok(Some(file)),
+        Err(e) if e.raw_os_error() == Some(SHARING_VIOLATION) => Err(AlreadyRunning),
+        // A folder that can't be written to shouldn't keep the manager from starting
+        Err(_) => Ok(None),
+    }
+}
+
 fn eq(a: &str, b: &str) -> bool {
     a.eq_ignore_ascii_case(b)
 }
@@ -762,6 +779,15 @@ mod tests {
         assert_eq!(fs::read_to_string(scripts.join("Kept.cs")).unwrap(), "kept");
         assert!(!scripts.join("Old.cs").exists());
         assert_eq!(d.state.mods[0].files.len(), 2);
+    }
+
+    #[test]
+    fn only_one_copy_of_the_manager_gets_the_lock() {
+        let (_guard, _dir, _game) = setup();
+        let first = lock_instance().ok().flatten().expect("the first copy takes the lock");
+        assert!(lock_instance().is_err());
+        drop(first);
+        assert!(lock_instance().is_ok());
     }
 
     #[test]

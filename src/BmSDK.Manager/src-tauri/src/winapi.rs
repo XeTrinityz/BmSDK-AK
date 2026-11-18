@@ -124,6 +124,25 @@ pub fn process_running(name: &str) -> bool {
     }
 }
 
+/// Brings the window with this title to the front, out of the taskbar if it's minimized.
+pub fn show_window(title: &str) {
+    use windows::Win32::UI::WindowsAndMessaging::{FindWindowW, IsIconic, SetForegroundWindow, ShowWindow, SW_RESTORE};
+
+    let title = wide(title);
+    unsafe {
+        let Ok(hwnd) = FindWindowW(PCWSTR::null(), PCWSTR(title.as_ptr())) else {
+            return;
+        };
+        if hwnd.is_invalid() {
+            return;
+        }
+        if IsIconic(hwnd).as_bool() {
+            let _ = ShowWindow(hwnd, SW_RESTORE);
+        }
+        let _ = SetForegroundWindow(hwnd);
+    }
+}
+
 /// Hides the light 1px border Windows 11 draws around borderless windows, and keeps the rounded corners.
 /// Both calls do nothing on Windows 10.
 pub fn hide_window_border(hwnd: *mut core::ffi::c_void) {

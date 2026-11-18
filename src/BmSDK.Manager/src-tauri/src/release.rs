@@ -214,9 +214,12 @@ pub fn replace_running_exe(new_exe: &Path) -> Result<(), String> {
     }
     let _ = fs::remove_file(new_exe);
 
-    std::process::Command::new(&exe).spawn().map_err(|e| format!("Updated, but couldn't restart: {e}"))?;
+    std::process::Command::new(&exe).arg(AFTER_UPDATE).spawn().map_err(|e| format!("Updated, but couldn't restart: {e}"))?;
     Ok(())
 }
+
+/// Tells the copy started after an update to wait for this one to close.
+pub const AFTER_UPDATE: &str = "--after-update";
 
 #[cfg(test)]
 mod tests {
