@@ -58,8 +58,6 @@ jobs:
           TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
         run: |
           cd "${{ steps.download-build.outputs.download-path }}"
-          # A hash next to each file lets the manager check its download before installing it
-          for f in *; do sha256sum "$f" > "$f.sha256"; done
           files=(*)
           gh release upload "${{ env.TAG_NAME }}" "${files[@]}"
           gh release edit "${{ env.TAG_NAME }}" --draft=false

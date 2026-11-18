@@ -28,6 +28,9 @@ pub struct GhAsset {
     pub name: String,
     pub browser_download_url: String,
     pub size: u64,
+    /// "sha256:<hex>", which GitHub works out for every asset it stores.
+    #[serde(default, skip_serializing)]
+    pub digest: Option<String>,
 }
 
 #[derive(Serialize, Clone)]
@@ -37,7 +40,7 @@ pub struct ReleaseInfo {
     pub url: String,
     pub sdk_zip: Option<GhAsset>,
     pub manager_exe: Option<GhAsset>,
-    /// Every asset, for finding the .sha256 file that goes with a download.
+    /// Every asset, for finding the .sha256 file that goes with a download in older releases.
     #[serde(skip)]
     pub assets: Vec<GhAsset>,
 }
@@ -98,24 +101,34 @@ fn parse_sha256(text: &str) -> Option<String> {
     (hash.len() == 64 && hash.bytes().all(|b| b.is_ascii_hexdigit())).then_some(hash)
 }
 
-/// Checks a download against the .sha256 file published next to it. Releases from before hashes were published
-/// have none, and those pass. A file that doesn't match is deleted.
-pub async fn verify_download(release: &ReleaseInfo, asset: &GhAsset, file: &Path) -> Result<(), String> {
-    let wanted = format!("{}.sha256", asset.name);
-    let Some(hash_asset) = release.assets.iter().find(|a| a.name.eq_ignore_ascii_case(&wanted)) else {
-        return Ok(());
-    };
+/// The hash GitHub lists for an asset.
+fn digest_hash(asset: &GhAsset) -> Option<String> {
+    parse_sha256(asset.digest.as_deref()?.strip_prefix("sha256:")?)
+}
 
-    let text = client()?
-        .get(&hash_asset.browser_download_url)
-        .send()
-        .await
-        .and_then(|r| r.error_for_status())
-        .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?
-        .text()
-        .await
-        .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?;
-    let expected = parse_sha256(&text).ok_or("The release's checksum file is damaged.")?;
+/// Checks a download against the hash GitHub lists for it. Releases 0.26.0 and 0.25.0 also have a .sha256 file
+/// next to each download, which is used when there's no digest. A release with neither passes. A file that
+/// doesn't match is deleted.
+pub async fn verify_download(release: &ReleaseInfo, asset: &GhAsset, file: &Path) -> Result<(), String> {
+    let expected = match digest_hash(asset) {
+        Some(hash) => hash,
+        None => {
+            let wanted = format!("{}.sha256", asset.name);
+            let Some(hash_asset) = release.assets.iter().find(|a| a.name.eq_ignore_ascii_case(&wanted)) else {
+                return Ok(());
+            };
+            let text = client()?
+                .get(&hash_asset.browser_download_url)
+                .send()
+                .await
+                .and_then(|r| r.error_for_status())
+                .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?
+                .text()
+                .await
+                .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?;
+            parse_sha256(&text).ok_or("The release's checksum file is damaged.")?
+        }
+    };
 
     let path = file.to_path_buf();
     let actual = tauri::async_runtime::spawn_blocking(move || sha256_file(&path)).await.map_err(|e| e.to_string())??;
@@ -216,6 +229,11 @@ mod tests {
         assert_eq!(parse_sha256(&format!("{}  BmSDK-Manager.exe\n", abc.to_uppercase())).as_deref(), Some(abc));
         assert_eq!(parse_sha256("not a hash  file"), None);
         assert_eq!(parse_sha256(""), None);
+
+        let asset = |digest: Option<&str>| GhAsset { name: "a".into(), browser_download_url: String::new(), size: 0, digest: digest.map(String::from) };
+        assert_eq!(digest_hash(&asset(Some(&format!("sha256:{abc}")))).as_deref(), Some(abc));
+        assert_eq!(digest_hash(&asset(Some("sha1:abc"))), None);
+        assert_eq!(digest_hash(&asset(None)), None);
     }
 
     #[test]
