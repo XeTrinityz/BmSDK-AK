@@ -211,9 +211,9 @@ export default function SettingsView({
                     <p className="label m-0">
                       {title} ({list.length}) <span className="normal-case tracking-normal opacity-70">{note}</span>
                     </p>
-                    <div className="path-box m-0 flex max-h-[120px] flex-col gap-0.5 overflow-y-auto">
+                    <div className="path-box m-0 max-h-[160px] overflow-y-auto">
                       {list.map((f) => (
-                        <span key={f} className="truncate">
+                        <span key={f} className="block truncate leading-[1.6]">
                           {f}
                         </span>
                       ))}
