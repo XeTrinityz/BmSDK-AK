@@ -291,11 +291,12 @@ async fn check_updates(app: AppHandle) -> Res<Updates> {
 async fn install_sdk(app: AppHandle) -> Res<String> {
     let dir = ready_to_change(&lock(&app))?;
     let latest = release::latest().await?;
-    let asset = latest.sdk_zip.ok_or("The latest release has no BmSDK ZIP attached.")?;
+    let asset = latest.sdk_zip.clone().ok_or("The latest release has no BmSDK ZIP attached.")?;
 
     let zip = library::data_dir().join("Downloads").join(&asset.name);
     let progress_app = app.clone();
     release::download(&asset.browser_download_url, &zip, |done, total| emit(&progress_app, "sdk", done, total)).await?;
+    release::verify_download(&latest, &asset, &zip).await?;
 
     let zip_for_task = zip.clone();
     let dir_for_task = dir.clone();
@@ -326,7 +327,7 @@ async fn install_sdk(app: AppHandle) -> Res<String> {
 #[tauri::command]
 async fn update_manager(app: AppHandle) -> Res<()> {
     let latest = release::latest().await?;
-    let asset = latest.manager_exe.ok_or("The latest release has no manager attached.")?;
+    let asset = latest.manager_exe.clone().ok_or("The latest release has no manager attached.")?;
     let exe = std::env::current_exe().map_err(|e| e.to_string())?;
     let new_exe = exe.with_extension("exe.new");
 
@@ -334,6 +335,7 @@ async fn update_manager(app: AppHandle) -> Res<()> {
     release::download(&asset.browser_download_url, &new_exe, |done, total| emit(&progress_app, "manager", done, total))
         .await
         .map_err(|e| format!("{e} If the manager is in a protected folder, move it somewhere like Downloads."))?;
+    release::verify_download(&latest, &asset, &new_exe).await?;
 
     {
         let mut state = lock(&app);

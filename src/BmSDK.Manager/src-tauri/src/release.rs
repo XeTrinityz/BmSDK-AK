@@ -37,6 +37,9 @@ pub struct ReleaseInfo {
     pub url: String,
     pub sdk_zip: Option<GhAsset>,
     pub manager_exe: Option<GhAsset>,
+    /// Every asset, for finding the .sha256 file that goes with a download.
+    #[serde(skip)]
+    pub assets: Vec<GhAsset>,
 }
 
 fn client() -> Result<reqwest::Client, String> {
@@ -76,7 +79,51 @@ pub async fn latest() -> Result<ReleaseInfo, String> {
         url: release.html_url,
         sdk_zip,
         manager_exe,
+        assets: release.assets,
     })
+}
+
+/// The SHA-256 of a file, as lowercase hex.
+pub fn sha256_file(path: &Path) -> Result<String, String> {
+    use sha2::{Digest, Sha256};
+    let mut file = fs::File::open(path).map_err(|e| e.to_string())?;
+    let mut hasher = Sha256::new();
+    std::io::copy(&mut file, &mut hasher).map_err(|e| e.to_string())?;
+    Ok(hasher.finalize().iter().map(|b| format!("{b:02x}")).collect())
+}
+
+/// The hash from a sha256sum line like "<64 hex digits>  BmSDK-Manager.exe".
+fn parse_sha256(text: &str) -> Option<String> {
+    let hash = text.split_whitespace().next()?.to_ascii_lowercase();
+    (hash.len() == 64 && hash.bytes().all(|b| b.is_ascii_hexdigit())).then_some(hash)
+}
+
+/// Checks a download against the .sha256 file published next to it. Releases from before hashes were published
+/// have none, and those pass. A file that doesn't match is deleted.
+pub async fn verify_download(release: &ReleaseInfo, asset: &GhAsset, file: &Path) -> Result<(), String> {
+    let wanted = format!("{}.sha256", asset.name);
+    let Some(hash_asset) = release.assets.iter().find(|a| a.name.eq_ignore_ascii_case(&wanted)) else {
+        return Ok(());
+    };
+
+    let text = client()?
+        .get(&hash_asset.browser_download_url)
+        .send()
+        .await
+        .and_then(|r| r.error_for_status())
+        .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?
+        .text()
+        .await
+        .map_err(|e| format!("Couldn't get the file's checksum: {e}"))?;
+    let expected = parse_sha256(&text).ok_or("The release's checksum file is damaged.")?;
+
+    let path = file.to_path_buf();
+    let actual = tauri::async_runtime::spawn_blocking(move || sha256_file(&path)).await.map_err(|e| e.to_string())??;
+    if actual != expected {
+        let _ = fs::remove_file(file);
+        return Err(format!("{} didn't match its checksum, so it wasn't installed. Please try again.", asset.name));
+    }
+    Ok(())
 }
 
 /// True when `latest` is a newer version than `current`. Unparseable versions never count as newer.
@@ -157,6 +204,19 @@ pub fn replace_running_exe(new_exe: &Path) -> Result<(), String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn hashes_and_reads_checksums() {
+        let dir = tempfile::tempdir().unwrap();
+        let file = dir.path().join("abc.txt");
+        fs::write(&file, "abc").unwrap();
+        let abc = "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad";
+        assert_eq!(sha256_file(&file).unwrap(), abc);
+
+        assert_eq!(parse_sha256(&format!("{}  BmSDK-Manager.exe\n", abc.to_uppercase())).as_deref(), Some(abc));
+        assert_eq!(parse_sha256("not a hash  file"), None);
+        assert_eq!(parse_sha256(""), None);
+    }
 
     #[test]
     fn compares_versions() {

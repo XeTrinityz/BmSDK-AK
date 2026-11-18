@@ -27,6 +27,7 @@ zip = { version = "2.2", default-features = false, features = ["deflate", "defla
 sevenz-rust = "0.6"
 unrar = "0.5"
 semver = "1"
+sha2 = "0.10"
 opener = "0.7"
 winreg = "0.52"
 

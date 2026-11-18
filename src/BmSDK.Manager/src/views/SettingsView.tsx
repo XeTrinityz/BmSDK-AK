@@ -1,11 +1,23 @@
 import { useEffect, useState } from "react";
 import { open, save } from "@tauri-apps/plugin-dialog";
 import type { Actions } from "../App";
-import { api, type GameInstall, type Overview } from "../api";
+import { api, type GameInstall, type Overview, type Updates } from "../api";
 import { Icons } from "../components/Icons";
-import { IconTile, Toggle, ViewHeader, formatBytes, plural } from "../components/ui";
+import { IconTile, SpinIcon, Toggle, ViewHeader, formatBytes, plural } from "../components/ui";
 
-export default function SettingsView({ overview, actions }: { overview: Overview; actions: Actions }) {
+export default function SettingsView({
+  overview,
+  actions,
+  updates,
+  checking,
+  updateError,
+}: {
+  overview: Overview;
+  actions: Actions;
+  updates: Updates | null;
+  checking: boolean;
+  updateError: string | null;
+}) {
   const [installs, setInstalls] = useState<GameInstall[]>([]);
   const game = overview.game!;
   const [librarySize, setLibrarySize] = useState<number | null>(null);
@@ -109,6 +121,41 @@ export default function SettingsView({ overview, actions }: { overview: Overview
             label="Check for updates on start"
             onChange={(v) => void api.setCheckOnStart(v).then(actions.refresh)}
           />
+        </div>
+        <div className="flex items-center gap-3 border-t border-[var(--border-default)] pt-3">
+          <div className="min-w-0 flex-1 text-[12px] leading-relaxed text-[var(--text-secondary)]">
+            <p className="m-0">
+              Manager {overview.managerVersion}
+              {updates?.managerUpdate ? (
+                <span className="font-semibold text-[#9ad0ff]"> · {updates.latest} is ready</span>
+              ) : updates ? (
+                <span className="text-[#7fe9c0]"> · up to date</span>
+              ) : null}
+            </p>
+            <p className="m-0">
+              BmSDK {game.sdkVersion ?? "not installed"}
+              {updates?.sdkUpdate ? (
+                <span className="font-semibold text-[#9ad0ff]"> · {updates.latest} is ready</span>
+              ) : updates && game.sdkVersion ? (
+                <span className="text-[#7fe9c0]"> · up to date</span>
+              ) : null}
+            </p>
+            {updateError && <p className="m-0 text-[#f4cf8e]">{updateError}</p>}
+          </div>
+          <button type="button" className="btn flex-none" disabled={checking || !!actions.busy} onClick={() => void actions.checkUpdates()}>
+            <SpinIcon active={checking} />
+            Check now
+          </button>
+          {updates?.managerUpdate && (
+            <button
+              type="button"
+              className="btn btn-primary flex-none"
+              disabled={!!actions.busy}
+              onClick={() => void actions.run("Updating the manager", api.updateManager)}
+            >
+              {actions.busy === "Updating the manager" ? "Updating…" : "Update and restart"}
+            </button>
+          )}
         </div>
       </section>
 

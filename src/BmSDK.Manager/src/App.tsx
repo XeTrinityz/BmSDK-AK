@@ -279,6 +279,13 @@ export default function App() {
                 onClick={() => actions.navigate(item.id)}
               >
                 <item.icon />
+                {item.id === "settings" && (updates?.managerUpdate || updates?.sdkUpdate) && view !== "settings" && (
+                  <span
+                    aria-label="An update is ready"
+                    title={updates.managerUpdate ? `Manager ${updates.latest} is ready` : `BmSDK ${updates.latest} is ready`}
+                    className="absolute right-1.5 top-1.5 h-2.5 w-2.5 rounded-full border-2 border-[#0a1322] bg-[#5db1ff]"
+                  />
+                )}
                 {item.id === "logs" && alertNow && view !== "logs" && (
                   <span
                     aria-label="The last session had errors"
@@ -302,7 +309,9 @@ export default function App() {
             {view === "mods" && <ModsView overview={overview} actions={actions} />}
             {view === "backups" && <BackupsView overview={overview} actions={actions} />}
             {view === "logs" && <LogsView actions={actions} mods={overview.mods} initialMod={logMod} />}
-            {view === "settings" && <SettingsView overview={overview} actions={actions} />}
+            {view === "settings" && (
+              <SettingsView overview={overview} actions={actions} updates={updates} checking={checking} updateError={updateError} />
+            )}
           </main>
         </div>
       )}
