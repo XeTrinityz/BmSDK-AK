@@ -1,5 +1,50 @@
 # Changelog
 
+## [0.27.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.26.0...v0.27.0) (2026-11-18)
+
+
+### Features
+
+* Add Game.TryGetPlayerPawn ([175086c](https://github.com/XeTrinityz/BmSDK-AK/commit/175086ceb17fc216d0f969460d79268ce9aff3eb))
+* Check for a newer BmSDK and say so for a few seconds in game ([3a52a63](https://github.com/XeTrinityz/BmSDK-AK/commit/3a52a63474852cf5f3245ba56d2e561eec2835aa))
+* Keep the log of the session before and show it in the manager ([71d695e](https://github.com/XeTrinityz/BmSDK-AK/commit/71d695ee007685d0c3a500153b12da379f4875e1))
+* Say in the manager that BmSDK doesn't work on a GOG copy ([3d87701](https://github.com/XeTrinityz/BmSDK-AK/commit/3d877016347cc336ff80e8fcf626f4b65d7abdc4))
+
+
+### Bug Fixes
+
+* A file deleted from a mod in the game no longer stops it turning back on ([342465d](https://github.com/XeTrinityz/BmSDK-AK/commit/342465decb62b39220c787c8e2f5faa51397a43c))
+* AsyncTestScript no longer closes the game when there is no player controller ([c249604](https://github.com/XeTrinityz/BmSDK-AK/commit/c24960455ebee68b960445ae10a2273f5e2a6543))
+* Check a redirect's parameters and result against the game function ([4e792a8](https://github.com/XeTrinityz/BmSDK-AK/commit/4e792a8798b4cbe0454e45e06aefb74809d3ce42))
+* Check downloads against GitHub's hash instead of extra .sha256 files ([3a2915e](https://github.com/XeTrinityz/BmSDK-AK/commit/3a2915e88e498aa1f6564dc973a8cf99a83ee15e))
+* Clear error lines from the screen after 20 seconds ([97f2fcf](https://github.com/XeTrinityz/BmSDK-AK/commit/97f2fcf3160ed4e5d644d67529c6cb1ac77ef5a0))
+* Don't flag BmEngine.ini as changed because of the settings the game saves in it ([b72225a](https://github.com/XeTrinityz/BmSDK-AK/commit/b72225a1bc84f2a2596aef1e5c27a3e7ba89d217))
+* Don't flag BmSDK.log as an added game file ([b8e4351](https://github.com/XeTrinityz/BmSDK-AK/commit/b8e43516cd08270ff8ec57dfd4cf0b619714cc32))
+* Don't let a second copy of the manager run and overwrite the first one's list ([96d8e71](https://github.com/XeTrinityz/BmSDK-AK/commit/96d8e71d1c457ef3f2ce9cff5d9f49d13000bd23))
+* Don't offer to recycle added files when the Steam build or language differs ([5d844a4](https://github.com/XeTrinityz/BmSDK-AK/commit/5d844a463275544066047d6e19b220ada93dddc4))
+* Don't throw in the redirect and camera samples when there is no player ([9ad248c](https://github.com/XeTrinityz/BmSDK-AK/commit/9ad248c6224578bedf95c96c2396fb2cb12956f0))
+* Don't use the author's source path as a prebuilt script's name ([f85d457](https://github.com/XeTrinityz/BmSDK-AK/commit/f85d457bf32e6c81da2cc1156a72c5ed85699008))
+* Give up on a stalled update download instead of hanging ([28529e2](https://github.com/XeTrinityz/BmSDK-AK/commit/28529e2ea9ca0cd285eb5119f46a2d835ca5fc8f))
+* Install every dropped mod after allowing access, not just the last ([fe78757](https://github.com/XeTrinityz/BmSDK-AK/commit/fe78757799d85b658073a06e239f9d4210ee1925))
+* Keep a mod in its profiles when it's updated ([b488c43](https://github.com/XeTrinityz/BmSDK-AK/commit/b488c43a16d4ffd0cfdb6bdf38d8e5d0db15cfe3))
+* Keep each mod's compile errors together and lock the reload timers ([d155674](https://github.com/XeTrinityz/BmSDK-AK/commit/d155674b362636951a135e3fef2fcdb52e5872fb))
+* Keep the game running when a script component's OnDetach throws ([10bd9b5](https://github.com/XeTrinityz/BmSDK-AK/commit/10bd9b52ea6726ee2d7a7c8aaed7135dd85f6072))
+* Keep the log sender per thread so background lines aren't given another mod's name ([c8d7c72](https://github.com/XeTrinityz/BmSDK-AK/commit/c8d7c72403bd83fd404f98da2c4eb0d91689622c))
+* Leave out a redirect or component that can't be set up instead of half loading the mod ([b0618f3](https://github.com/XeTrinityz/BmSDK-AK/commit/b0618f3dc459fe26d95603a853d04bb8151a2d0e))
+* Let the game path scroll sideways instead of wrapping ([100ed23](https://github.com/XeTrinityz/BmSDK-AK/commit/100ed23481ec931af1d647598dfe59d0dcf2644c))
+* List scripts in folders under BmGame\Scripts so they can be turned off ([17f0bfa](https://github.com/XeTrinityz/BmSDK-AK/commit/17f0bfa16d0acfe1a9fb290386750f8b677003e3))
+* Log the exception when a mod's own thread or timer closes the game ([67626a0](https://github.com/XeTrinityz/BmSDK-AK/commit/67626a007bbbeb6ca0799b7583c403034bc608a6))
+* Make the Mods and Scripts folders at startup so a first mod loads without a restart ([84beadd](https://github.com/XeTrinityz/BmSDK-AK/commit/84beadd3d0bda6be763ba5d83da21936b11551a5))
+* Notice when the game starts or closes instead of showing a stale Running ([3020191](https://github.com/XeTrinityz/BmSDK-AK/commit/30201911dd9e88e4828c955a99c44103701ce078))
+* Put a mod back on fully when turning it off fails part way ([bafc6d1](https://github.com/XeTrinityz/BmSDK-AK/commit/bafc6d1fb6f8ec09745292f45c31d2624be0a8e0))
+* Read mod.toml with a BOM or comments the same way BmSDK does ([24d786b](https://github.com/XeTrinityz/BmSDK-AK/commit/24d786b7e9c8046ece2b5c34cf5f59a78cdf00ab))
+* Say so when the game exe isn't a supported build instead of crashing ([9c995d0](https://github.com/XeTrinityz/BmSDK-AK/commit/9c995d0a6ca79d0c823852541c01ed8759baa9f2))
+* Say what is missing when a Game.Get call has nothing to return ([8c356e8](https://github.com/XeTrinityz/BmSDK-AK/commit/8c356e8136fbdca18f7a2f023e4d6700c5710c7c))
+* Show the version from mod.toml as the one you have on Nexus ([d41a0bf](https://github.com/XeTrinityz/BmSDK-AK/commit/d41a0bf991e4ccb56d094d825c350192e02d4d56))
+* Show what a script's constructor or static field threw ([190a2be](https://github.com/XeTrinityz/BmSDK-AK/commit/190a2be960ecb0aea079a9192ebbaa875c86cd84))
+* Still offer the other dropped mods when one archive can't be opened, and ask to turn mods off before switching the game folder ([3869865](https://github.com/XeTrinityz/BmSDK-AK/commit/3869865208595823ac9e672d82f1869fd97fc70e))
+* Turn the other mods back on when one can't be after playing without mods ([3e5c414](https://github.com/XeTrinityz/BmSDK-AK/commit/3e5c414ecc585dd9557775d2188ad80e1a9648f1))
+
 ## [0.26.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.25.0...v0.26.0) (2026-11-18)
 
 
