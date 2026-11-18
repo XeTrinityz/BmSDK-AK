@@ -904,6 +904,20 @@ pub fn run() {
             if waiting {
                 extras::watch_and_restore(app.handle().clone(), false);
             }
+            // The window only learns whether the game is running when it asks for the overview. Without this, Play
+            // and the header keep saying "Running" after the game has closed, or miss a game started from Steam.
+            let handle = app.handle().clone();
+            std::thread::spawn(move || {
+                let mut running = game::is_running();
+                loop {
+                    std::thread::sleep(std::time::Duration::from_secs(2));
+                    let now = game::is_running();
+                    if now != running {
+                        running = now;
+                        let _ = handle.emit("state-changed", ());
+                    }
+                }
+            });
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
