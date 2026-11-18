@@ -34,7 +34,12 @@ public class RedirectTestScript : Script
             return;
         }
 
-        var rpp = Game.GetPlayerPawn();
+        // There is no pawn on the main menu or during a load
+        if (!Game.TryGetPlayerController(out var controller) || controller.CombatPawn is not { } rpp)
+        {
+            return;
+        }
+
         // You may only attach one ScriptComponent instance of a given type
         // Therefore, we can check if the SC is attached using generics
         if (!rpp.HasScriptComponent<RegenReductionComponent>())

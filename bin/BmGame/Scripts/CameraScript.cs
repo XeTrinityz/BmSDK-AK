@@ -24,8 +24,12 @@ public class CameraScript : Script
 
             if (_cameraController == null)
             {
-                // Spawn new CameraController
-                _cameraController = new CameraController(controller0, controller1);
+                // Neither is a combat controller on the main menu
+                if (controller0 != null && controller1 != null)
+                {
+                    // Spawn new CameraController
+                    _cameraController = new CameraController(controller0, controller1);
+                }
             }
             else
             {
