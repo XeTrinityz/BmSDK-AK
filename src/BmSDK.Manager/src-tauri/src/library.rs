@@ -279,6 +279,7 @@ impl Deployer<'_> {
         let files = self.state.mods[index].files.clone();
         let my_order = self.state.mods[index].enabled_at;
 
+        let mut gone: Vec<&String> = Vec::new();
         for rel in &files {
             let newer_owner = self.state.top_owner(rel, Some(id)).is_some_and(|o| o.enabled_at > my_order);
             if newer_owner {
@@ -291,9 +292,15 @@ impl Deployer<'_> {
                 move_file(&target, &lib)?;
             }
             self.restore_below(rel, id)?;
+            // Deleted in the game before the library ever had a copy. Turning the mod on would fail on it.
+            if !lib.is_file() {
+                gone.push(rel);
+            }
         }
 
-        self.state.mods[index].enabled = false;
+        let m = &mut self.state.mods[index];
+        m.enabled = false;
+        m.files.retain(|f| !gone.contains(&f));
         Ok(())
     }
 
@@ -714,6 +721,29 @@ mod tests {
         assert_eq!(fs::read_to_string(&ini_path).unwrap(), "fov=60");
         d.uninstall(&other_id).unwrap();
         assert_eq!(fs::read_to_string(&ini_path).unwrap(), "fov=120");
+    }
+
+    #[test]
+    fn a_file_deleted_in_the_game_doesnt_stop_the_mod_turning_back_on() {
+        let (_guard, _dir, game) = setup();
+        let scripts = game.join("BmGame").join("Mods").join("Mine").join("scripts");
+        fs::create_dir_all(&scripts).unwrap();
+        fs::write(game.join("BmGame").join("Mods").join("Mine").join("mod.toml"), "name = \"Mine\"").unwrap();
+        fs::write(scripts.join("Old.cs"), "old").unwrap();
+        fs::write(scripts.join("Kept.cs"), "kept").unwrap();
+
+        let mut state = State::default();
+        assert_eq!(import_existing(&mut state, &game), 1);
+        let id = state.mods[0].id.clone();
+        let mut d = Deployer { state: &mut state, game: game.clone() };
+
+        // Renamed or deleted while working on the mod, so no copy of it exists anywhere
+        fs::remove_file(scripts.join("Old.cs")).unwrap();
+        d.disable(&id).unwrap();
+        d.enable(&id).unwrap();
+        assert_eq!(fs::read_to_string(scripts.join("Kept.cs")).unwrap(), "kept");
+        assert!(!scripts.join("Old.cs").exists());
+        assert_eq!(d.state.mods[0].files.len(), 2);
     }
 
     #[test]
