@@ -109,6 +109,7 @@ internal static class ScriptManager
         }
 
         PrepareCompilation();
+        EnsureModFolders();
         LoadAllMods();
         WatchForChanges();
         s_isInitialized = true;
@@ -123,14 +124,31 @@ internal static class ScriptManager
                 .FirstOrDefault(asm => asm.GetName().ToString() == e.Name);
     }
 
+    // A fresh install has neither folder. A folder that isn't there can't be watched, so the first mod
+    // made while the game runs wouldn't load until the next start.
+    private static void EnsureModFolders()
+    {
+        foreach (var dir in new[] { FileUtils.GetModsPath(), FileUtils.GetScriptsPath() })
+        {
+            try
+            {
+                Directory.CreateDirectory(dir);
+            }
+            catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+            {
+                // A game folder that can't be written to. Mods can't be made in it either.
+            }
+        }
+    }
+
     private static void LoadAllMods()
     {
         var modsDir = FileUtils.GetModsPath();
         var scriptsDir = FileUtils.GetScriptsPath();
         var jobs = new List<(Mod Mod, string ScriptsDir, string What)>();
 
-        // Implicit "Scripts" mod from BmGame/Scripts/
-        if (Directory.Exists(scriptsDir))
+        // Implicit "Scripts" mod from BmGame/Scripts/. The folder is always there, so an empty one is normal.
+        if (HasSources(scriptsDir))
         {
             jobs.Add((Mod.CreateDefault(scriptsDir), scriptsDir, "loose scripts"));
         }
