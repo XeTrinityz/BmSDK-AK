@@ -94,6 +94,39 @@ pub fn sample_hash(path: &Path, size: u64) -> Result<String, String> {
     Ok(hasher.finalize()[..8].iter().map(|b| format!("{b:02x}")).collect())
 }
 
+/// Sections the engine writes into its own .ini files as it runs. The game saves the Windows sticky keys
+/// settings into BmEngine.ini when it closes, so that file never matches Steam's after the first play.
+const RUNTIME_SECTIONS: [&str; 1] = ["[WinDrv.Accessibility]"];
+
+/// Size and hash of a file as the list counts it: .ini files without the sections the engine writes itself.
+fn fingerprint(path: &Path, size: u64) -> Result<(u64, String), String> {
+    let is_ini = path.extension().is_some_and(|e| e.eq_ignore_ascii_case("ini"));
+    if !is_ini || size > WHOLE_LIMIT {
+        return Ok((size, sample_hash(path, size)?));
+    }
+    use sha2::{Digest, Sha256};
+    let bytes = fs::read(path).map_err(|e| format!("Couldn't read {}: {e}", path.display()))?;
+    let kept = without_runtime_sections(&bytes);
+    let hash = Sha256::digest(&kept)[..8].iter().map(|b| format!("{b:02x}")).collect();
+    Ok((kept.len() as u64, hash))
+}
+
+/// Drops each runtime section, from its header up to the next section or the end.
+fn without_runtime_sections(bytes: &[u8]) -> Vec<u8> {
+    let mut out = Vec::with_capacity(bytes.len());
+    let mut skipping = false;
+    for line in bytes.split_inclusive(|b| *b == b'\n') {
+        let trimmed = line.trim_ascii();
+        if trimmed.starts_with(b"[") {
+            skipping = RUNTIME_SECTIONS.iter().any(|s| trimmed.eq_ignore_ascii_case(s.as_bytes()));
+        }
+        if !skipping {
+            out.extend_from_slice(line);
+        }
+    }
+    out
+}
+
 /// The game's own files, minus the ones listed as not from Steam.
 fn scope(game: &Path) -> Vec<String> {
     let mut rels = detect::vanilla_files(game);
@@ -178,7 +211,7 @@ fn check_with(list: &List, game: &Path, owned: &HashSet<String>, progress: &mut 
             }
             continue;
         };
-        if meta.len() != expected.size || sample_hash(&file, meta.len())? != expected.hash {
+        if fingerprint(&file, meta.len())? != (expected.size, expected.hash.clone()) {
             findings.changed.push(expected.path.clone());
         }
     }
@@ -221,8 +254,8 @@ fn write_list(game: &Path, out: &Path) -> Result<usize, String> {
     text.push_str(&format!("build {build}\ndepots {}\n", depots.join(" ")));
     for rel in &rels {
         let file = game.join(native(rel));
-        let size = fs::metadata(&file).map_err(|e| e.to_string())?.len();
-        text.push_str(&format!("{size}\t{}\t{rel}\n", sample_hash(&file, size)?));
+        let (size, hash) = fingerprint(&file, fs::metadata(&file).map_err(|e| e.to_string())?.len())?;
+        text.push_str(&format!("{size}\t{hash}\t{rel}\n"));
     }
     fs::write(out, text).map_err(|e| e.to_string())?;
     Ok(rels.len())
@@ -242,10 +275,31 @@ mod tests {
         let mut text = String::from("build 1\ndepots 2\n");
         for rel in scope(game) {
             let f = game.join(native(&rel));
-            let size = fs::metadata(&f).unwrap().len();
-            text.push_str(&format!("{size}\t{}\t{rel}\n", sample_hash(&f, size).unwrap()));
+            let (size, hash) = fingerprint(&f, fs::metadata(&f).unwrap().len()).unwrap();
+            text.push_str(&format!("{size}\t{hash}\t{rel}\n"));
         }
         parse(&text)
+    }
+
+    #[test]
+    fn what_the_engine_writes_into_its_ini_isnt_a_change() {
+        let dir = tempfile::tempdir().unwrap();
+        let game = dir.path();
+        let ini = "BmGame/Config/BmEngine.ini";
+        write(game, ini, b"[URL]\r\nMap=Frontend.umap\r\n\r\n[AppCompat]\r\nCompatLevelComposite=0\r\n\r\n");
+        let list = list_of(game);
+
+        // Saved by the game when it closes
+        write(
+            game,
+            ini,
+            b"[URL]\r\nMap=Frontend.umap\r\n\r\n[AppCompat]\r\nCompatLevelComposite=0\r\n\r\n[WinDrv.Accessibility]\r\nStickyKeysHotkey=False\r\n",
+        );
+        assert!(check_with(&list, game, &HashSet::new(), &mut |_, _| {}).unwrap().changed.is_empty());
+
+        // A mod's own edit still counts
+        write(game, ini, b"[URL]\r\nMap=Other.umap\r\n\r\n[AppCompat]\r\nCompatLevelComposite=0\r\n\r\n");
+        assert_eq!(check_with(&list, game, &HashSet::new(), &mut |_, _| {}).unwrap().changed, vec![ini]);
     }
 
     #[test]
