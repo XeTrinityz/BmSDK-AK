@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.26.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.25.0...v0.26.0) (2026-11-18)
+
+
+### Features
+
+* Show manager updates in Settings and check downloads against checksums ([d96915f](https://github.com/XeTrinityz/BmSDK-AK/commit/d96915fa92ef8beeac0f8407c94d560cd0ef7596))
+
+
+### Bug Fixes
+
+* Cap the on-screen error list at 30 lines ([9ae97df](https://github.com/XeTrinityz/BmSDK-AK/commit/9ae97dfdd9d7f2c693a3db2f500249d34210d393))
+* Hide the browser right-click menu in release builds ([0f8154b](https://github.com/XeTrinityz/BmSDK-AK/commit/0f8154b162bf726c74ce48ed8928f61cc4ca979f))
+* Keep edits, the saved list and old copies safe when the manager changes mods ([fa31caa](https://github.com/XeTrinityz/BmSDK-AK/commit/fa31caa74c7da2c6e2d80d0d395d930f9258575b))
+* Keep mod project files out of ScriptsDev ([b1ee585](https://github.com/XeTrinityz/BmSDK-AK/commit/b1ee585d00ba42287352b564cf120391c66f8e8c))
+* Pass every parameter to the original when a redirect runs it ([55c30f2](https://github.com/XeTrinityz/BmSDK-AK/commit/55c30f270e569648322f8b40d08689199fe0dbdf))
+* Remove the light border Windows 11 draws around the window ([edde489](https://github.com/XeTrinityz/BmSDK-AK/commit/edde489f5cb7e288bcac9dfbc3cffc73a1b1a48d))
+* Show a plain message when the host can't start .NET ([db6059b](https://github.com/XeTrinityz/BmSDK-AK/commit/db6059b8bb395088226c0fb926e2f4f606817c5a))
+* Start the game when BmSDK.log can't be written ([ebbe13e](https://github.com/XeTrinityz/BmSDK-AK/commit/ebbe13e8e517396af54d1c5a2fded34b0376caf0))
+* Use degrees for the camera pitch in the CameraScript sample ([962d51b](https://github.com/XeTrinityz/BmSDK-AK/commit/962d51bd3264965c163445a3938e09151c96bef4))
+* Warn when a mod has no scripts folder ([52e2895](https://github.com/XeTrinityz/BmSDK-AK/commit/52e2895c61372b3ef6e98fa9a0e2add8c49c00fc))
+
 ## [0.25.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.24.1...v0.25.0) (2026-11-18)
 
 

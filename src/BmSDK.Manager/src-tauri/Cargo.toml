@@ -1,6 +1,6 @@
 [package]
 name = "bmsdk-manager"
-version = "0.25.0" # x-release-please-version
+version = "0.26.0" # x-release-please-version
 description = "Installs and updates BmSDK and manages Batman: Arkham Knight mods"
 edition = "2021"
 rust-version = "1.82"
