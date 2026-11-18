@@ -64,7 +64,7 @@ export default function App() {
   const [progress, setProgress] = useState<Progress | null>(null);
   const [reviews, setReviews] = useState<Review[] | null>(null);
   const [dragging, setDragging] = useState(false);
-  const [adminRetry, setAdminRetry] = useState<(() => void) | null>(null);
+  const [adminRetry, setAdminRetry] = useState<(() => Promise<void>) | null>(null);
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [slow, setSlow] = useState(false);
   const [card, setCard] = useState<{ label: string; progress: Progress | null; done: boolean } | null>(null);
@@ -139,7 +139,12 @@ export default function App() {
       } catch (e) {
         const text = errorText(e);
         if (text === NEEDS_ADMIN) {
-          setAdminRetry(() => () => void run(label, task, success));
+          // Several tasks can get here before the answer, like a few archives installed in a row.
+          // They all run again afterwards, in the order they came.
+          setAdminRetry((waiting) => async () => {
+            await waiting?.();
+            await run(label, task, success);
+          });
         } else {
           toast(text, "error");
         }
@@ -359,7 +364,7 @@ export default function App() {
                   const retry = adminRetry;
                   setAdminRetry(null);
                   try {
-                    if (await api.grantAccess()) retry();
+                    if (await api.grantAccess()) void retry();
                     else toast("Access wasn't granted, so nothing changed.", "error");
                   } catch (e) {
                     toast(errorText(e), "error");
