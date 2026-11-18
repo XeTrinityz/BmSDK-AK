@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.25.0](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.24.1...v0.25.0) (2026-11-18)
+
+
+### Features
+
+* Replace the installer with BmSDK Manager ([49c4220](https://github.com/XeTrinityz/BmSDK-AK/commit/49c4220b75666fde66593c75e6ba624fac3fd678))
+
 ## [0.24.1](https://github.com/XeTrinityz/BmSDK-AK/compare/v0.24.0...v0.24.1) (2026-11-16)
 
 
