@@ -42,6 +42,18 @@ internal static unsafe class Loader
         EngineSynchronizationContext.InitOnThread();
 
         Debug.InitFileLog();
+
+        // Mod code that throws on a timer or a thread of its own ends the game. Without this the log
+        // just stops, and nobody can tell which mod did it.
+        AppDomain.CurrentDomain.UnhandledException += static (_, e) =>
+        {
+            if (e.ExceptionObject is Exception ex)
+            {
+                Debug.LogError($"An exception nothing caught is closing the game: {ex.GetType().Name}: {ex.Message}", skipSender: true);
+                Debug.Log(ex.ToString(), skipSender: true);
+            }
+        };
+
         Debug.Log($"Detected {GameDefine.Current.Name} build");
 
         // Perform static init (before engine load)
