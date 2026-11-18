@@ -20,8 +20,9 @@ public class AsyncTestScript : Script
         {
             // NOTE: Now we may manipulate the game
             PrintCurrentThread();   // IsMainThread: true
-            var rpc = Game.GetPlayerController();
-            if (!rpc.IsValid)
+            // There is no player controller while a world loads, and GetPlayerController() throws then.
+            // Send() passes the exception on to this timer's thread, where nothing catches it and the game closes.
+            if (!Game.TryGetPlayerController(out var rpc))
             {
                 return;
             }
