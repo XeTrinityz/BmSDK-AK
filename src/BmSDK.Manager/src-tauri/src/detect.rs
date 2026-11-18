@@ -152,20 +152,24 @@ pub struct ModToml {
 }
 
 pub fn read_mod_toml(path: &Path) -> ModToml {
-    let text = fs::read_to_string(path).unwrap_or_default();
+    parse_mod_toml(&fs::read_to_string(path).unwrap_or_default())
+}
+
+/// Reads the top level string keys the way BmSDK's TOML reader does. Visual Studio saves with a BOM, values
+/// can have a comment after them, and anything after a [table] line belongs to that table.
+fn parse_mod_toml(text: &str) -> ModToml {
     let mut toml = ModToml { name: None, description: None, assembly: None, version: None };
 
-    for line in text.lines() {
+    for line in text.trim_start_matches('\u{feff}').lines() {
         let line = line.trim();
+        if line.starts_with('[') {
+            break;
+        }
         if line.starts_with('#') {
             continue;
         }
         let Some((key, value)) = line.split_once('=') else { continue };
-        let value = value.trim();
-        if !(value.len() >= 2 && value.starts_with('"') && value.ends_with('"')) {
-            continue;
-        }
-        let value = value[1..value.len() - 1].to_string();
+        let Some(value) = toml_string(value.trim()) else { continue };
         match key.trim() {
             "name" => toml.name = Some(value),
             "description" => toml.description = Some(value),
@@ -176,6 +180,26 @@ pub fn read_mod_toml(path: &Path) -> ModToml {
     }
 
     toml
+}
+
+/// A one line TOML string, "basic" or 'literal', with only a comment allowed after it.
+fn toml_string(value: &str) -> Option<String> {
+    let mut chars = value.chars();
+    let quote = chars.next().filter(|c| *c == '"' || *c == '\'')?;
+    let mut out = String::new();
+    loop {
+        match chars.next()? {
+            c if c == quote => break,
+            '\\' if quote == '"' => match chars.next()? {
+                'n' => out.push('\n'),
+                't' => out.push('\t'),
+                c => out.push(c),
+            },
+            c => out.push(c),
+        }
+    }
+    let rest = chars.as_str().trim_start();
+    (rest.is_empty() || rest.starts_with('#')).then_some(out)
 }
 
 /// The game-relative path of a script mod's mod.toml among its files.
@@ -615,6 +639,18 @@ mod tests {
         let mut v: Vec<&str> = d.files.iter().map(|m| m.dest.as_str()).collect();
         v.sort();
         v
+    }
+
+    #[test]
+    fn reads_mod_toml_like_bmsdk() {
+        let toml = parse_mod_toml(
+            "\u{feff}name = \"Cam \\\"Tools\\\"\"\nversion = \"1.2.0\"  # bump on release\nassembly = 'bin\\Cam.dll'\n\
+             description = \"a\" junk\n[preload]\ndescription = \"in the table\"\n",
+        );
+        assert_eq!(toml.name.as_deref(), Some("Cam \"Tools\""));
+        assert_eq!(toml.version.as_deref(), Some("1.2.0"));
+        assert_eq!(toml.assembly.as_deref(), Some("bin\\Cam.dll"));
+        assert_eq!(toml.description, None);
     }
 
     #[test]
